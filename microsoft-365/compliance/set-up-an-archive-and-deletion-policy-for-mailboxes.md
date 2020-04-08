@@ -1,5 +1,5 @@
 ---
-title: "Set up an archive and deletion policy for mailboxes in your Office 365 organization"
+title: Set up an archive and deletion policy for mailboxes in Office 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -19,6 +19,7 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: "Create an archiving and deletion policy in Office 365  that automatically moves items to a user's archive mailbox."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up an archive and deletion policy for mailboxes in your Office 365 organization

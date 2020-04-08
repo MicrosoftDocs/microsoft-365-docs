@@ -1,5 +1,5 @@
 ---
-title: "Protect on-premises mailboxes with Exchange Online Protection"
+title: Protect on-premises mailbox - Exchange Online Protection
 f1.keywords:
 - NOCSH
 ms.author: tracyp

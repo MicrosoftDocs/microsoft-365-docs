@@ -1,5 +1,5 @@
 ---
-title: "Manage quarantined messages and files as an admin in Office 365"
+title: Manage quarantined messages and files as an admin
 ms.author: chrisda
 author: chrisda
 manager: dansimp

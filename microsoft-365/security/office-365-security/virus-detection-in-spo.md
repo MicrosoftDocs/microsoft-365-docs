@@ -17,7 +17,8 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: "Learn about antivirus protection in SharePoint Online."
+description: Learn about how SharePoint Online detects viruses in files that users upload and prevents users from downloading or syncing the files.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Virus detection in SharePoint Online

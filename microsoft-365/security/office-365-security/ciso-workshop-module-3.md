@@ -1,5 +1,5 @@
 ---
-title: "Chief Information Security Officer (CISO) Workshop, Module 3:Identity, and Access Management"
+title: CISO Workshop Module 3 - Identity and Access Management
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -12,7 +12,9 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: "In this module, learn how to better protect corporate data inside and outside your network perimeter with identity and zero trust user access strategies."
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+ - seo-marvel-mar2020
+ - seo-marvel-apr2020
 ---
 
 # CISO Workshop Module 3: Identity and Zero Trust User Access

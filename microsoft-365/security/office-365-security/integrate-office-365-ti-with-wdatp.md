@@ -1,5 +1,5 @@
 ---
-title: Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection
+title: Integrate Office 365 ATP with Microsoft Defender ATP
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -17,6 +17,7 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection: 
 - M365-security-compliance
 description: Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection to see more detailed threat management information.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Integrate Office 365 Advanced Threat Protection with Microsoft Defender Advanced Threat Protection

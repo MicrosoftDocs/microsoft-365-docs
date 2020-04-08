@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: "Summary: Deploy a new isolated SharePoint Online team site with these step-by-step instructions."
+description: Use this step-by-step deployment guide to create and configure an isolated SharePoint Online team site in Microsoft Office 365.
 ---
 
 # Deploy an isolated SharePoint Online team site

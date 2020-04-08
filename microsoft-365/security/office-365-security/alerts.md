@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
-description: "Find out about alerts you can set to help with security in Office 365."
+description: Learn about how to use the alerts features in the Office 365 Security & Compliance Center to view and manage alerts, including managing advanced alerts.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Alerts in the Office 365 Security &amp; Compliance Center

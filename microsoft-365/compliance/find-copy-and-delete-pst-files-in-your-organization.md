@@ -1,5 +1,5 @@
 ---
-title: "Use the PST Collection tool to find, copy, and delete PST files in your organization"
+title: Use the PST Collection tool to find, copy, and delete PST files
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,12 +13,13 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: "Use the Microsoft PST Collection Tool to search your organization's network to get an inventory of PST files that are scattered throughout your organization. After you find PST files, you can use the PST Collection Tool to copy them in a central location so you can import them to Office 365."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use the PST Collection tool to find, copy, and delete PST files in your organization
 
 > [!IMPORTANT]
-> The PST Collection tool described in this article isn’t supported under any Microsoft standard support program or service. The tool is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the tool and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the tool be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the tool or documentation, even if Microsoft has been advised of the possibility of such damages.
+> The PST Collection tool described in this article isn't supported under any Microsoft standard support program or service. The tool is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the tool and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the tool be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the tool or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 You can use the Microsoft PST Collection tool to search your organization's network for PST files. The tool helps you get an inventory of PST files that are scattered throughout your organization. After you find PST files, you can use the PST Collection tool to copy them in a central location. Having PSTs in a one place then allows you to import them to Exchange Online mailboxes (or a single Exchange Online mailbox), where you can then apply the rich set of compliance features in Office 365. This includes importing PSTs to users' archive mailboxes, searching for specific messages in the PST files that you imported by using eDiscovery search tools, retaining messages by using eDiscovery holds and Office 365 retention policies, and managing the life cycle of these messages using the messaging records management features in Exchange Online. After you're confident that the PST files that you collected have been successfully imported to Office 365, you can use the tool to delete them from their original location on your network. 
   

@@ -1,5 +1,5 @@
 ---
-title: "How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing"
+title: How Sender Policy Framework (SPF) prevents spoofing
 f1.keywords:
 - CSH
 ms.author: tracyp

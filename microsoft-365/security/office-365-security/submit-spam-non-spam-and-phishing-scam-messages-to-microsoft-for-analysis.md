@@ -1,5 +1,5 @@
 ---
-title: "Submit spam, non-spam, and phishing scam messages to Microsoft for analysis"
+title: Submit scam messages to Microsoft for analysis
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,6 +16,7 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: "You and your users can submit false negative and false positive spam messages to Microsoft for analysis. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Submit spam, non-spam, and phishing scam messages to Microsoft for analysis
