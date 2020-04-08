@@ -7,9 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to collaborate with guests in Teams."
+description: "Learn about the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests in Teams."
 ---
 
 # Collaborate with guests in a team
