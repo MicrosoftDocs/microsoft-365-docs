@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations"
+title: Microsoft Security Guidance - Political campaigns & nonprofits
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -16,7 +16,9 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: Strat_O365_Enterprise
+ms.custom: 
+ - Strat_O365_Enterprise
+ - seo-marvel-apr2020
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Summary: Planning and implementation guidance for fast-moving organizations that have an increased threat profile."
 ---

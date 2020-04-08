@@ -1,5 +1,5 @@
 ---
-title: "Zero-hour auto purge (ZAP) - retroactive protection against spam, malware, and phishing."
+title: Zero-hour auto purge (ZAP) - Email protection feature
 f1.keywords:
 - NOCSH
 ms.author: chrisda

@@ -1,6 +1,6 @@
 ---
 title: What's new in Office 365 Advanced Threat Protection
-description: Lists the new features and functionality in Office 365 ATP
+description: Learn about the new features and functionality available in the latest release of Microsoft Office 365 ATP.
 keywords: what's new in Office 365 atp, ga, generally available, capabilities, available, new
 search.appverid: met150
 ms.service: O365-seccomp
@@ -16,6 +16,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/21/2020
+ms.custom: seo-marvel-apr2020
 ---
 
 # What's new in Office 365 ATP

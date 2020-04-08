@@ -1,5 +1,5 @@
 ---
-title: "Configure the default connection filter policy, IP Allow List, IP Block List, enable or disable safe list"
+title: Configure the default connection filter policy
 f1.keywords:
 - NOCSH
 ms.author: chrisda

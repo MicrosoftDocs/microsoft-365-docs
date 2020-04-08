@@ -1,5 +1,5 @@
 ---
-title: "Create a schedule for a report in the Security &amp; Compliance Center"
+title: Create schedule for report - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
-description: "Learn how to set up a schedule for a report in the Security &amp; Compliance Center."
+description: Admin can learn how to set up a schedule for a report in the Security &amp; Compliance Center in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Create a schedule for a report in the Security &amp; Compliance Center

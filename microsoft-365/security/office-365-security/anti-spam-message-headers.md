@@ -14,7 +14,8 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: "Learn about the header fields and values that are added to messages by Exchange Online Protection."
+description: Learn about the header fields that Exchange Online Protection adds to messages to provide information about the message and how it was processed.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Anti-spam message headers in Office 365

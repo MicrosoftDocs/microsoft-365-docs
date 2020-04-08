@@ -1,5 +1,5 @@
 ---
-title: "Protection features in Azure Information Protection rolling out to existing Office 365 tenants"
+title: Protection features change - Azure Information Protection
 f1.keywords:
 - NOCSH
 ms.author: krowley

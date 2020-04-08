@@ -1,5 +1,5 @@
 ---
-title: "Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams"
+title: Office 365 ATP - SharePoint, OneDrive, and Teams
 f1.keywords:
 - NOCSH
 ms.author: tracyp

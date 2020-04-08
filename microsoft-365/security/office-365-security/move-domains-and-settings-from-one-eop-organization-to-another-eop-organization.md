@@ -1,5 +1,5 @@
 ---
-title: "Move domains and settings from one EOP organization to another EOP organization"
+title: Move domains & settings from one EOP organization to another
 f1.keywords:
 - NOCSH
 ms.author: chrisda

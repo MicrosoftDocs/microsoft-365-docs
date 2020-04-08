@@ -1,5 +1,5 @@
 ---
-title: "Find and release quarantined messages as a user in Office 365"
+title: Find and release quarantined messages as a user
 f1.keywords:
 - NOCSH
 ms.author: chrisda

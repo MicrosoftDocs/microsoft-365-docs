@@ -15,7 +15,8 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: "Learn how to recognize and remediate the illicit consent grants attack in Office 365."
+description: Admin can learn how to recognize and remediate the illicit consent grants attack in Microsoft Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 # Detect and Remediate Illicit Consent Grants in Office 365
 

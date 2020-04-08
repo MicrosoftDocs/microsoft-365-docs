@@ -1,5 +1,5 @@
 ---
-title: "Find and investigate malicious email that was delivered in Office 365, remediate, remedy, remediation, threat protection, threat explorer, protection"
+title: Find and investigate malicious email
 keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers
 f1.keywords:
 - NOCSH
@@ -17,6 +17,7 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: 
 - M365-security-compliance
 description: "Learn how to use threat investigation and response capabilities to find and investigate malicious email."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Investigate and remediate malicious email that was delivered in Office 365

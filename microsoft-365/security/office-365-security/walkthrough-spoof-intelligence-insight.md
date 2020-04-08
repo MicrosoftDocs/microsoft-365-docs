@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: "See how the new spoof intelligence insight works."
+description: Learn how the new spoof intelligence insight works, including how to quickly determine which senders are legitimately sending you unauthenticated email.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Walkthrough: spoof intelligence insight
