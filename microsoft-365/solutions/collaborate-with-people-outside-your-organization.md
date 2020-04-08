@@ -9,7 +9,8 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."
+description: Learn about how to configure Microsoft 365 for collaboration with people outside your organization.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Collaborating with people outside your organization

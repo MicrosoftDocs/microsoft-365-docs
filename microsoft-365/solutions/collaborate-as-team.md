@@ -9,7 +9,8 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to collaborate with guests in Teams."
+description: Learn to collaborate with guests in Teams across documents, tasks, and conversations with persistent chat and  customizable and extensible collaboration tools.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Collaborate with guests in a team

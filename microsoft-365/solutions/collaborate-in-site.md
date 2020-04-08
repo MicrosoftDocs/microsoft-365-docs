@@ -9,7 +9,8 @@ ms.service: sharepoint-online
 ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to collaborate with guests in a SharePoint site."
+description: Learn how to collaborate with guests in a SharePoint site using Office 365 Groups, which manage site membership and provide collaboration tools.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Collaborate with guests in a site
