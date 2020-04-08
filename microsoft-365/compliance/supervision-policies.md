@@ -1,6 +1,6 @@
 ---
 title: "Supervision policies"
-description: "Learn about supervision policies in Office 365"
+description: Learn about using supervision policies in Office 365 to capture employee communications for examination by designated reviewers.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
+ms.custom: seo-marvel-apr2020
 ---
 
 # Supervision policies in Office 365

@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Use this article as a guide for troubleshooting information barriers."
+description: Use this article as a guide for troubleshooting issues with information barriers, such as users blocked from communicating with each other in Microsoft Teams.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Troubleshooting information barriers

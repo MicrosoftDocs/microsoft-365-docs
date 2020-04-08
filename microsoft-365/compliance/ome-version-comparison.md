@@ -15,7 +15,8 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "Helps explain the differences between the versions of Office 365 Message Encryption."
+description: This article helps explain the differences between the legacy Office 365 Message Encryption and the newer Office 365 Advanced Message Encryption.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Compare versions of OME
@@ -103,6 +104,6 @@ Even though both versions of OME can coexist, we highly recommend that you edit 
 
 Typically, the new OME capabilities are automatically enabled for your Office 365 organization. For more information about the new OME capabilities within your organization, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md).
 
-The legacy version of OME is automatically enabled for your Office 365 organization if you have enabled Azure Information Protection. In the past, legacy OME worked even if Azure Information Protection wasn’t enabled. This is no longer the case.
+The legacy version of OME is automatically enabled for your Office 365 organization if you have enabled Azure Information Protection. In the past, legacy OME worked even if Azure Information Protection wasn't enabled. This is no longer the case.
 
 To start using legacy OME, if you have enabled Azure Information Protection, configure mail flow rules that use the rule action **Apply the previous version of OME**. For instructions, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).

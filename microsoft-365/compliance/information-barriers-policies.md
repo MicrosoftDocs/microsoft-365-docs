@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Learn how to define policies for information barriers in Microsoft Teams."
+description: Learn how to define policies for information barriers that can help your organization maintain compliance with industry standards in Microsoft Teams.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Define information barrier policies

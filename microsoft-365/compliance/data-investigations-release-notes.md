@@ -17,14 +17,15 @@ search.appverid:
 ms.assetid: 
 ms.custom:
 - seo-marvel-mar2020
-description: In this article, you will find release notes for the Data Investigations (Preview) tool in Microsoft 365.
+- seo-marvel-apr2020
+description: In this article, you will find release notes that contain changes and new features for the Data Investigations (Preview) tool in Microsoft 365.
 ---
 
 # Release notes for Data Investigations (Preview) in Microsoft 365
 
 You can use the new Data Investigations (Preview) tool in in Microsoft 365 to triage, investigate, and remediate data related incidents, such as a data spillage incident or an internal investigation. The Public Preview of Data Investigations provides you with early access to the upcoming functionality and updates. To get early access to the newest features, create a new investigation in Data Investigations (Preview) in the Security & Compliance Center. To learn how, see [Manage a data spillage incident in Microsoft 365](manage-data-spillage-incidents.md).
 
-## What’s new 
+## What's new 
 
 - **Investigations** - You can group searches and incidents by creating an investigation. Manage who can access the investigation by adding or removing members.  You can also select and mark your favorite investigations. Track and monitor activity within and across investigations using new dashboards. After you complete your investigation, you can close or delete it.
 
