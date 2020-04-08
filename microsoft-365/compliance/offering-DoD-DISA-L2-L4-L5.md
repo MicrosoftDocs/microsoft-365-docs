@@ -78,7 +78,7 @@ Once granted a DoD PA, Microsoft cloud services are monitored and assessed annua
 
 ## Fast track your deployment of DoD solutions on Azure
 
-Get a head start on taking advantage of the benefits of the cloud in government with the Azure Security and Compliance Department of Defense Blueprint. This blueprint provides tools and guidance to get you started building DoD-compliant solutions today. [Start using the Azure DoD Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
+Get a head start on taking advantage of the benefits of the cloud in government with the blueprint sample for Department of Defense L4. This blueprint provides tools and guidance to get you started building DoD-compliant solutions today. [Start using the Azure blueprint for DoD L4](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
 ## Frequently asked questions
 
