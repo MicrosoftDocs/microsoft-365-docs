@@ -325,7 +325,7 @@ For these reasons, the guidance for creating rules with different match accuraci
     
 ## Using a retention label as a condition in a DLP policy
 
-When you use a previously created and published [retention label](labels.ms) as a condition in a DLP policy, there are some things to be aware of:
+When you use a previously created and published [retention label](labels.md) as a condition in a DLP policy, there are some things to be aware of:
 
 - You have to have previously created, published and applied the retention label before you attempt to use it as a condition in a DLP policy.
 - Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, [How long it takes for retention labels to take effect](/labels.md/#How-long-it-takes-for-retention-labels-to-take-effect) for detailed information.
