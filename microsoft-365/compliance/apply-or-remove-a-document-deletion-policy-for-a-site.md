@@ -15,7 +15,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
-description: "Organizations are often subject to compliance, legal, or other regulations that require them to retain documents for a certain period of time. However, retaining documents for longer than required can expose the organization to legal risk. For this reason, your organization may have created a document deletion policy for your site — for example, general business documents might be required to be deleted five years after they were created."
+ms.custom:
+  - seo-marvel-apr2020
+description: "Learn how to create, delete, and manage a document deletion policy in an Office 365 site collection."
 ---
 
 # Apply or remove a document deletion policy for a site
