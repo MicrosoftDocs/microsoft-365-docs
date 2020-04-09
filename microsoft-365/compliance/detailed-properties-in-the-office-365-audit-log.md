@@ -88,7 +88,7 @@ The following table describes the properties that are included (depending on the
 ||||
 
 > [!NOTE]
-><sup>1</sup> Duplicate audit records (with the same value for the ID property) might appear in the audit log. This is by design as an error correction method to avoid missing audit events.<br/><br/><sup>2</sup> For Azure Active Directory-related events, the value for an administrator isn't used in an audit record. Audit records for activities performed by administrators will indicate that a regular user (for example, **UserType: 0**) performed the activity. The **UserID** property will identify the person (regular user or administrator) who performed the activity.<br/><br/>The same event might appear in the audit log more than once. This is by design as an error correction method to avoid missing audit events.
+><sup>1</sup> Duplicate audit records (with the same value for the ID property) might appear in the audit log. This is by design as an error correction method to avoid missing audit events.<br/><br/><sup>2</sup> For Azure Active Directory-related events, the value for an administrator isn't used in an audit record. Audit records for activities performed by administrators will indicate that a regular user (for example, **UserType: 0**) performed the activity. The **UserID** property will identify the person (regular user or administrator) who performed the activity.
 
 The properties described above are also displayed when you click **More information** when viewing the details of a specific event.
   
