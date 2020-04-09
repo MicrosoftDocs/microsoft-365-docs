@@ -102,7 +102,7 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
 
-2. In the left nave of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
 
 3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then click **Create a case**.
 

@@ -414,8 +414,14 @@
             href: clone-a-content-search.md
     - name: Core eDiscovery
       items:
-        - name: Manage eDiscovery cases
-          href: ediscovery-cases.md
+        - name: Get started with Core eDiscovery
+          href: get-started-core-ediscovery.md
+        - name: Create eDiscovery holds
+          href: create-ediscovery-holds.md
+        - name: Search for content in a case
+          href: search-for-content-in-core-ediscovery.md
+        - name: Export content from a case
+          href: export-content-in-core-ediscovery
         - name: Core eDiscovery reference
           items:
           - name: Assign eDiscovery permissions
@@ -430,7 +436,9 @@
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
           - name: Create a report on eDiscovery holds
             href: create-a-report-on-holds-in-ediscovery-cases.md
-          - name: Search and purge spilled data
+          - name: Export a search report
+            href: export-a-content-search-report.md
+            - name: Search and purge spilled data
             href: data-spillage-scenariosearch-and-purge.md
           - name: Preserve Bcc recipients for search
             href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
