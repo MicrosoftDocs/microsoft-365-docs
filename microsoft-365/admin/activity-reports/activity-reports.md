@@ -82,6 +82,7 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 Depending on your subscription, here are the available reports.
   
 - [Email activity](email-activity.md)
+- [Forms activity](forms-activity.md)
     
 - [Mailbox usage](mailbox-usage.md)
     
@@ -96,6 +97,7 @@ Depending on your subscription, here are the available reports.
 - [OneDrive for Business user activity](onedrive-for-business-activity.md)
   
 - [OneDrive for Business usage](onedrive-for-business-usage.md)
+- [ProPlus usage](microsoft365-apps-usage.md)
   
 - [SharePoint site usage](sharepoint-site-usage.md)
   
