@@ -22,13 +22,15 @@ description: "Teams will now have access to safe links at the time of your click
 > [!IMPORTANT]
 > This feature is in **Public Preview** for customers in the Microsoft Teams Technology Adoption Program (TAP) as of Feb 28, 2020. This note will be removed from the article when Safe Links for Teams is more widely available.
 
-Microsoft Teams, an Office 365 Cloud-based application for managing your work, already uses safe attachments (for Office 365), but it will now have access to safe links at the time of your click. Whether you're using chats 1-on-1 Chats, between Groups, or in Channels, and Tabs, if you have a subscription to Office 365 ATP, you will have the ability to enable and use this safety measure.
+Microsoft Teams, an Office 365 Cloud-based application for managing your work, already uses safe attachments (for Office 365), but it will now have access to safe links at the time of your click. Whether you're using chats 1-on-1 Chats, between Groups, or in Channels, and Tabs, if you have a subscription to Office 365 ATP, you will have the ability to enable and use this safety measure.To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Here's how it works: 
 
 1. When you start the Teams application, Office 365 will check to make sure the user belongs to an organization that has Office 365 ATP, and that the user is part of an active safe links policy with its protection enabled for Microsoft Teams.
 
 2. If the above are true, then URLs will be validated at the time of click in Chats, Group Chats, Channels, and in Tabs for that user.
+
+3. If a user is configured for ATP Safe links, any links that are send to the user from exteranl users like Guest and Federated users will be validated.
  
 ## What will users experience? 
 
