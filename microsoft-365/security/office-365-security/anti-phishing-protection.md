@@ -16,33 +16,45 @@ ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
 ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: "Office 365 offers a variety of protection against phishing attacks by default and also through additional offerings such as ATP anti-phishing. This topic introduces the online resources you can use to learn about and implement anti-phishing options and strategies in Office 365."
+description: "Office 365 offers a variety of protection against phishing attacks by default and also through additional features in Office 365 Advanced Threat Protection (ATP). This topic introduces the online resources you can use to learn about and implement anti-phishing options and strategies in Office 365."
 ---
 
 # Anti-phishing protection in Office 365
 
-Phishing attacks come in a variety of forms from commodity-based attacks to targeted spear phishing or whaling. With the growing complexity, it's difficult for even a trained eye to identify some of these sophisticated attacks. Fortunately, Office 365 Advanced Threat Protection can help. You can set up an ATP anti-phishing policy to help ensure that your organization is protected against such attacks.
+*Phishing* an email attack that tries to steal sensitive information in messages that appear to be from legitimate or trusted senders. There are specific categories of phishing. For example:
 
-Office 365 offers a variety of protection against phishing attacks by default and also through additional offerings such as ATP anti-phishing. This topic introduces the online resources you can use to learn about and implement anti-phishing options and strategies in Office 365.
+- **Spear phishing** uses very focused and customized content that's specifically tailored to the targeted recipients (typically, after reconnaissance on the recipients by the attacker).
 
-## Protect your organization against phishing attacks in Office 365
+- **Whaling** is directed at executives or other high value targets within an organization for maximum effect.
 
-As an Office 365 administrator, use these resources to learn how to use Office 365 to protect against impersonation-based phishing attacks and to help you educate your end users so that they don't fall prey to malicious phishing attacks.
+- **Business email compromise (BEC)** uses forged trusted senders (financial officers, customers, trusted partners, etc.) in an effort to trick the recipient into approving payments, transferring funds, or disclosing customer data.
 
-Before you make any changes to your Office 365 configuration, ensure that you're up to date on the latest that Office 365 has to offer. [Visit the Microsoft Safety &amp; Security Center](https://www.microsoft.com/security/default.aspx).
+- **Ransomware** that encrypts your data and demands payment to decrypt it almost always starts out in phishing messages. Anti-phishing protection can't help you decrypt encrypted files, but it can help detect the initial phishing messages that are associated with the ransomware campaign. For more information about recovering from a ransomware attack, see [Recover from a ransomware attack in Office 365](recover-from-ransomware.md).
 
-The most important thing you can do to secure your environment is to educate your users about the dangers and the warning signs of phishing attacks. To get started, familiarize your users with the information in [Protect yourself from phishing schemes and other forms of online fraud](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
+With the growing complexity of attacks, it's even difficult for trained users to identify sophisticated phishing messages. Fortunately, Exchange Online Protection (EOP) and the additional features in Office 365 Advanced Threat Protection (ATP) can help.
 
-For Office 365 organizations with Office Enterprise E5, you can use ATP anti-phishing in the Security &amp; Compliance Center. ATP anti-phishing applies a set of machine learning models together with impersonation detection algorithms to incoming messages to provide protection for commodity and spear phishing attacks. ATP anti-phishing protects your organization according to policies that are set by your Office 365 global or security administrators. To learn more, see [ATP anti-phishing capabilities in Office 365](atp-anti-phishing.md) and [Set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
+## Anti-phishing protection in EOP
 
-For more details about how Office 365 is configured by default to protect you from phishing attacks, see [How Office 365 validates the From: address to prevent phishing](how-office-365-validates-the-from-address.md).
+EOP (that is, Office 365 organizations without ATP) contains features that can help protect your organization from phishing threats:
 
-## Related topics
+- **Spoof intelligence**: Allow or block specific spoofed internal and external senders, and specify the action for spoofed messages from unidentified senders (deliver to Junk Email or quarantine). For more information, see [Anti-spoofing protection in Office 365](anti-spoofing-protection.md).
 
-[How Office 365 validates the From: address to prevent phishing](how-office-365-validates-the-from-address.md)
+- **Anti-phishing policies**: Enable or disable anti-spoofing protection. For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-[Protect yourself from phishing schemes and other forms of online fraud](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
+- **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Office 365](email-validation-and-authentication.md).
 
-[Office 365 Advanced Threat Protection](office-365-atp.md)
+## Additional anti-phishing protection in Office 365 ATP
 
-[ATP anti-phishing capabilities in Office 365](atp-anti-phishing.md)
+Office 365 ATP contains additional and more advanced anti-phishing capabilities:
+
+- **ATP anti-phishing policies**: Configure anti-impersonation settings, mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md). For more details about the differences between anti-phishing policies and ATP anti-phishing policies, see [Anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
+
+- **Campaign Views**: Machine learning and other heuristics to identify and analyze messages that are involved in coordinated phishing attacks against the service and your organization. For more information, see  [Campaign Views in Office 365 ATP](campaigns.md).
+
+- **Attack simulator**: Admins can create fake phishing messages and send them to internal users as an education tool. For more information, see [Attack Simulator in Office 365 ATP](attack-simulator.md).
+
+## Other anti-phishing resources
+
+- For end-users: [Protect yourself from phishing schemes and other forms of online fraud](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
+
+- [How Office 365 validates the From address to prevent phishing](how-office-365-validates-the-from-address.md).

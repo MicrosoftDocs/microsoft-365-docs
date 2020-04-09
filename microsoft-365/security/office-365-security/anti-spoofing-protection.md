@@ -24,15 +24,15 @@ description: ""
 
 If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP includes features to help protect your organization from spoofed (forged) senders.
 
-When it comes to protecting its users, Microsoft takes the threat of phishing seriously. Spoofing is a common technique that's used by attackers. The message appears to originate from someone or somewhere other than the actual source. This technique is often used in phishing campaigns that are designed to obtain user credentials. The anti-spoofing technology in EOP specifically examines forgery of the **From** header in the message body (used to display the message sender in email clients). When EOP has high confidence that the **From** header is forged, the message is identified as spoofed.
+When it comes to protecting its users, Microsoft takes the threat of phishing seriously. Spoofing is a common technique that's used by attackers. The message appears to originate from someone or somewhere other than the actual source. This technique is often used in phishing campaigns that are designed to obtain user credentials. The anti-spoofing technology in EOP specifically examines forgery of the From header in the message body (used to display the message sender in email clients). When EOP has high confidence that the From header is forged, the message is identified as spoofed.
 
 The following anti-spoofing technologies are available in EOP:
 
 - **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
-- **Anti-phishing policies**: Basic anti-phishing policies are available in EOP, and more advanced anti-phishing policies are available in Office 365 Advanced Threat Protection (ATP). For more information, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
+- **Anti-phishing policies**: In EOP, the built-in anti-phishing policy allows you to turn spoof intelligence on or off. More advanced anti-phishing policies that are available in Office 365 Advanced Threat Protection (ATP) contain anti-impersonation settings, mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
 
-- **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by using SPF, DKIM, and DMARC. For more information, see [Email authentication in Office 365](email-validation-and-authentication.md).
+- **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by using SPF, DKIM, and DMARC. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Office 365 requires email authentication for sender domains. For more information, see [Email authentication in Office 365](email-validation-and-authentication.md).
 
 The rest of this topic describes 
 This article describes how Office 365 mitigates against phishing attacks that use forged sender domains, that is, domains that are spoofed. It accomplishes this by analyzing the messages and blocking the ones that cannot be authenticated using standard email authentication methods, nor other sender reputation techniques. This change was implemented to reduce the number of phishing attacks to which organizations in Office 365 are exposed.
@@ -113,7 +113,7 @@ For both intra-org and cross-domain spoofing, the following red safety tip is st
 
 You can only differentiate between intra-org spoofing and cross-domain spoofing when you compare the From address to the recipient's address, or by inspecting the message headers.
 
-The following table summarizes how spoofed email is treated:
+The following table summarizes how spoofed email is treated in Office 365:
 
 |||||
 |---|---|---|---|
@@ -123,23 +123,13 @@ The following table summarizes how spoofed email is treated:
 |Cross-domain|SPOOF|Yes|Office 365 ATP|
 |
 
-For more information about the Category and compauth values, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
+For more information about the Category and compauth values that are related to spoofing, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
 
 ## Spoofed message reports of how many messages were marked as spoofed
 
-EOP organizations can the **Spoof detections** report in the reports dashboard. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+EOP organizations can the **Spoof detections** report in the reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
-Office 365 ATP organization can use Threat Explorer to view information about phishing attempts. For more information, see [Office 365 threat investigation and response](office-365-ti.md).
-
-### Predicting how many messages will be marked as spoof
-
-Once Office 365 updates its settings to let you turn the anti-spoofing enforcement Off, or on with Basic or High enforcement, you will be given the ability to see how message disposition will change at the various settings. That is, if anti-spoofing is Off, you will be able to see how many messages will be detected as Spoof if you turn to Basic; or, if it's Basic, you will be able to see how many more messages will be detected as Spoof if you turn it to High.
-
-This feature is currently under development. As more details are defined, this page will be updated both with screenshots of the Security & Compliance Center, and with PowerShell examples.
-
-!["What If" report for enabling anti-spoofing](../../media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
-
-![Possible UX for allowing a spoofed sender](../../media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
+Office 365 ATP organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Office 365 threat investigation and response](office-365-ti.md).
 
 ### Legitimate scenarios to disable anti-spoofing
 

@@ -57,9 +57,9 @@ While SPF, DKIM, and DMARC are all useful by themselves, they don't communicate 
 
 > Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-The values are explained at [Authentication-results message header fields used by Office 365 email authentication](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication).
+These values are explained at [Authentication-results message header fields used by Office 365 email authentication](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication).
 
-By looking at the headers of a message, admins or even end users can determine how Office 365 arrived at the conclusion that the sender is spoofed.
+By examining the message headers, admins or even end users can determine how Office 365 determined that the sender is spoofed.
 
 ## Why email authentication is not always enough to stop spoofing
 
