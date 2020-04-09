@@ -6,7 +6,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 audience: Admin
-ms.topic: troubleshooting
+article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 

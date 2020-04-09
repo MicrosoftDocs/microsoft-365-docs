@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: troubleshooting
+article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
