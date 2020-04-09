@@ -90,6 +90,8 @@ The following table describes the properties that are included (depending on the
 > [!NOTE]
 ><sup>1</sup> For Azure Active Directory-related events, the value for an administrator isn't used in an audit record. Audit records for activities performed by administrators will indicate that a regular user (for example, **UserType: 0**) performed the activity. The **UserID** property will identify the person (regular user or administrator) who performed the activity.<br/>
 
+> [!NOTE] When exporting the results of an audit log search, an event might be injected twice or more if it has faced any error, this is to avoid missing/losing any audit event, this is by design.
+
 The properties described above are also displayed when you click **More information** when viewing the details of a specific event.
   
 ![Click More information to view the detailed properties of the audit log event record](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
