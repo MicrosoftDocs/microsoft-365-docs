@@ -32,7 +32,7 @@ When we detect significant issues within Microsoft's global network or with inte
 
 | Location | Issue Type | Detail |
 | --- | --- | --- |
-| **No current issues** |  |  |
+| Tennessee, United States of America  | ISP Infrastructure (External) | Availability issues detected within Internet Service Provider infrastructure in Tennessee could result in a poor Microsoft 365 user experience. Please check the Service Health dashboard for more details. |
 
 ## Recommendations to improve network experience
 
