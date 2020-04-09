@@ -63,11 +63,11 @@ If you have previously set up MFA with baseline policies, [you must turn them of
 
 ## Move from baseline policies to security defaults
 
-1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Setup**.
+1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Show all**, and then **Azure Active Directory** under **Admin centers**.
 
-2. Next to **Sign-in and security**, under **Make sign-in more secure**, select **View**.
+2. In the  **Azure Active Directory admin center** choose **Azure Active Directory** > **Security**.
 
-3. Under **Make sign-in more secure**, select **Manage**. 
+3. On the **Security | Getting started** page, choose **Conditional Access**. 
 
 4. On the **Azure portal Conditional Access - Policies** page,  choose each Baseline policy that is **On**, and set them to **Off**.
 5. Go to [Azure Active Directory Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) page.
