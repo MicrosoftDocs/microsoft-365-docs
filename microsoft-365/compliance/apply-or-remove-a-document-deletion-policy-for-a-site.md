@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: "Learn how to create, delete, and manage a document deletion policy in an Office 365 site collection."
 ---
 

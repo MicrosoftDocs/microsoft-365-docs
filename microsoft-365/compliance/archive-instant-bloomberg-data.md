@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom:
-  - seo-marvel-apr2020
+- seo-marvel-apr2020
 description: "Set up a connector to import data from Instant Bloomberg to Microsoft 365 so you can use various compliance tools."
 ---
 
