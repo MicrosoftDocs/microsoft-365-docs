@@ -44,3 +44,5 @@ Here's how to turn Integrated Apps on or off.
 <a name="__toc379982114"> </a>
 
 To learn about how to configure your consent settings in Azure active directory, read [Configure the admin consent workflow](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow).
+
+To learn about managing consent to apps, read [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-consent-requests).
