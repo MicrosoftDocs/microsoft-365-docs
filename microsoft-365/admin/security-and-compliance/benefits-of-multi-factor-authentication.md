@@ -104,6 +104,11 @@ This table shows the results of enabling MFA with security defaults, Conditional
 | **Per-user account** | Overrides security defaults being disabled and no Conditional Access policies requiring MFA  | Overridden by security defaults and Conditional Access policies  | User-specified, overrides use of Microsoft Authenticator app if security defaults is enabled |
 ||||
 
+
+## Your next step
+
+Go to [Plan for multi-factor authentication](multi-factor-authentication-plan.md).
+
 ## Related articles
 
 [Set up multi-factor authentication for Office 365 users](set-up-multi-factor-authentication.md)
