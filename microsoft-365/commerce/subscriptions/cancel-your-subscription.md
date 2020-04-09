@@ -38,9 +38,6 @@ If you added your own domain name to use with your subscription, you must remove
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
 2. Find the subscription that you want to cancel, and under **Settings & Actions**, select **Cancel subscription**.
