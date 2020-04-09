@@ -15,6 +15,8 @@ search.appverid:
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: "Learn how the high risk delivery pool is used to protect the reputation of email servers in the Office 365 datacenters."
 ---
 

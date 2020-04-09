@@ -16,8 +16,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Investigate, troubleshoot, and resolve common issues in Office 365 eDiscovery."
+description: Learn about basic troubleshooting steps you can take to resolve common issues in Office 365 eDiscovery.
 siblings_only: true
+ms.custom: seo-marvel-apr2020
 ---
 
 # Investigate, troubleshoot, and resolve common eDiscovery issues
@@ -108,9 +109,9 @@ When exporting search results from eDiscovery or Content Search in the Security 
 
 ### Resolution
 
-1.	Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
+1.    Try using the steps identified in the article [Increase Download Speeds](https://docs.microsoft.com/office365/securitycompliance/increase-download-speeds-when-exporting-ediscovery-results).
 
-2.	If you still have issues, connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
+2.    If you still have issues, connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL
@@ -154,11 +155,11 @@ When running an eDiscovery search, if the search continually fails with error si
 
 eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
-> "Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.”
+> "Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours."
 
 ### Resolution
 
-1.	Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
+1.    Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
 
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -172,7 +173,7 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
 2. Examine the value in the DistributionDetail parameter for errors like the following:
  
-   > Error: Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours.” 
+   > Error: Resources: It's taking longer than expected to deploy the policy. It might take an additional 2 hours to update the final deployment status, so check back in a couple hours." 
    
 3. Try running the RetryDistribution parameter on the policy in question:
    

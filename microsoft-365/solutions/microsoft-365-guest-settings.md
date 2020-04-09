@@ -7,10 +7,11 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
 ms.collection: SPO_Content
+ms.custom: seo-marvel-apr2020
 f1.keywords: NOCSH
 ms.custom: 
 localization_priority: Priority
-description: "Learn about the guest sharing settings available in  Microsoft 365."
+description: "Learn about the guest sharing settings available in Microsoft 365 that can affect sharing with people outside your organization."
 ---
 
 # Microsoft 365 guest sharing settings reference

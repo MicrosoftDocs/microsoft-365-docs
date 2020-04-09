@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn about how the spam confidence level (SCL) determines how likely or unlikely a message is spam, and the default actions that spam filtering takes on messages based on the SCL."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, admins can learn about how the spam confidence level (SCL) determines the likeliness of a message as spam."
 ---
 
 # Spam confidence level (SCL) in Office 365

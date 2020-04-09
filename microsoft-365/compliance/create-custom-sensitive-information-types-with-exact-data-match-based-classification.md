@@ -15,7 +15,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Create custom sensitive information types with Exact Data Match based classification."
+description: Create custom sensitive information types with Exact Data Match based classification to help prevent accidental sharing of sensitive information.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Create custom sensitive information types with Exact Data Match based classification
@@ -384,7 +385,7 @@ $csvext = '.csv'
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ‘ /HashLocation’ + $hashLocation
+$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation
 \# Set up actions associated with the task
 $actions = @()
 $actions += New-ScheduledTaskAction -Execute $edmuploader -Argument $uploadDataArgs -WorkingDirectory $edminstallpath

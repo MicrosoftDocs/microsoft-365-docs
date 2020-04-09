@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: "Use Attack Simulator to run simulated phishing and password attacks in your Office 365 E5 or ATP Plan 2 organization, which can help you identify vulnerable users before a real attack hits your business."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to use Attack Simulator to run simulated phishing and password attacks in your Office 365 E5 or ATP Plan 2 organization."
 ---
 
 # Attack Simulator in Office 365 ATP

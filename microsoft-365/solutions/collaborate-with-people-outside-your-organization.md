@@ -7,10 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Learn about how to configure Microsoft 365 for collaboration with people outside your organization.
-ms.custom: seo-marvel-apr2020
+description: "In this article, you'll learn how to configure Microsoft 365 for collaboration with people outside your organization."
 ---
 
 # Collaborating with people outside your organization

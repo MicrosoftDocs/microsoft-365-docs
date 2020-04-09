@@ -14,7 +14,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: "landing page for protecting information"
+description: This landing page provides links and information about protecting information in Microsoft 365 and Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Protect information

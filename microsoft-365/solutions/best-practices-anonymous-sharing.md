@@ -7,9 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
+ms.custom: seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: "Learn best practices for sharing files and folders with unauthenticated users."
+description: "In this article, you'll learn about the best practices for sharing files and folders with unauthenticated users."
 ---
 
 # Best practices for sharing files and folders with unauthenticated users

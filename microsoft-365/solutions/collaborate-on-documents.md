@@ -7,10 +7,10 @@ audience: ITPro
 ms.topic: article
 ms.service: sharepoint-online
 ms.collection: SPO_Content
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Learn how to collaborate with guests on a document in SharePoint and OneDrive by sending them a sharing link to the document.
-ms.custom: seo-marvel-apr2020
+description: "In this article, you'll learn how to collaborate with guests on a document in SharePoint and OneDrive."
 ---
 
 # Collaborate with guests on a document

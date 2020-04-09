@@ -15,7 +15,8 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: "An overview of encryption in the Microsoft Cloud."
+description: In this article, read an overview of the various forms of encryption used to keep customer data safe in the Microsoft Cloud.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Encryption in the Microsoft Cloud

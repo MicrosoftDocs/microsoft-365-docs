@@ -16,13 +16,13 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - IT_Networking
-- seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
-description: "Learn to customize, organize, and manage your team site."
+description: "In this article, you'll learn how to customize, organize, and manage your team site for file storage and sharing."
 ---
 
 # Customize your team site for file storage and sharing

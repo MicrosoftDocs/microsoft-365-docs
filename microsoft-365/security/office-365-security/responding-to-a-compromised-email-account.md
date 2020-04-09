@@ -10,12 +10,14 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.custom: TopSMBIssues
+ms.custom: 
+ - TopSMBIssues
+ - seo-marvel-apr2020
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to recognize and respond to a compromised email account in Office 365"
+description: Learn how to recognize and respond to a compromised email account using tools available in Office 365.
 ---
 # Responding to a Compromised Email Account in Office 365
 
