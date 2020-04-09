@@ -96,10 +96,10 @@ Here's the resulting configuration with the identity elements highlighted.
 
 ![Identity elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-For [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md), deploy:
+For [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md):
 
-- The infrastructure to deploy new devices with Windows 10 Enterprise and to upgrade of your Windows 7 or Windows 8.1 devices to Windows 10 Enterprise
-- Enabling comprehensive security features for identity, threat, and information protection
+- Deploy the infrastructure to deploy new devices with Windows 10 Enterprise and to upgrade your Windows 7 or Windows 8.1 devices to Windows 10 Enterprise
+- Enable comprehensive security features for identity, threat, and information protection
 
 Here's the resulting configuration with Windows 10 Enterprise devices.
 
