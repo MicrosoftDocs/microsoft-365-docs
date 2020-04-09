@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/13/2017
+ms.date: 
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -26,6 +26,7 @@ description: "Understand why estimated and actual search results may vary in sea
 This topic applies to searches that you can run using one of the following Microsoft eDiscovery tools: 
 
 - Content Search in the Security & Compliance Center  <br/>  
+- Searches associated with Core eDiscovery cases
 - In-Place eDiscovery in the Exchange admin center (EAC)  <br/>  
 - The eDiscovery Center in SharePoint Online  <br/> 
    
@@ -79,5 +80,3 @@ In the eDiscovery Center in SharePoint Online, you have the option to include un
   
 > [!NOTE]
 > If you don't select the **Include items that are encrypted or have an unrecognized format** option when you export search results or just download the reports, the index error reports are downloaded but they don't have any entries. This doesn't mean there aren't any indexing errors. It just means that unindexed items weren't included in the export. 
-  
-
