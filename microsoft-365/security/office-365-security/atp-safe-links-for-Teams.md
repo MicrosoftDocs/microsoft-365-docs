@@ -31,7 +31,7 @@ Here's how it works:
 2. If the above are true, then URLs will be validated at the time of click in Chats, Group Chats, Channels, and in Tabs for that user.
 
 > [!NOTE]
-> Safe links safeguards users from links sent by Guest users, Federated users, tenant users.
+> Safe links safeguards users from links sent by Guest users, Federated users, tenant users. If the user logged in has safe links for Teams enabled, then safe links protections will apply.
  
 ## What will users experience? 
 
