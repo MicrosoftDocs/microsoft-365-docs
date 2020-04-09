@@ -119,9 +119,15 @@ To get you started using core eDiscovery, here's a simple workflow of creating e
 
 ![Core eDiscovery workflow](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Create an eDiscovery hold](create-ediscovery-holds.md)**.  
+1. **[Create an eDiscovery hold](create-ediscovery-holds.md)**. The first step after creating a case is placing a hold (also called an *eDiscovery hold*) on the content locations of the people of interest in your investigation. While this step is optional, creating an eDiscovery hold preserves any content that may be relevant to the case during the investigation. When you create an eDiscovery hold you can preserve all content in the selected content locations or you can create a query-based hold to preserve only the content that matches a hold query. In addition to preserving content, another good reason to create eDiscovery holds is to quickly search the content locations on hold (instead of having to select each location to search) when you create and run searches in the next step. After you complete your investigation, you can release any hold that you created.
 
-2. **[Search for content](search-for-content-in-core-ediscovery.md)**. 
+2. **[Search for content](search-for-content-in-core-ediscovery.md)**. After you create eDiscovery holds, use the built-in search tool to search the content locations on hold. You can also search other content locations for data that may be relevant to the case. You can create and run different searches that are associated with the case. You use keywords, properties, and conditions to [build search queries](keyword-queries-and-search-conditions.md) that return search results with the data that's most likely relevant to the case. You can also:
 
-3. **[Export and download search results](export-content-in-core-ediscovery.md)**. 
+   - View search statistics that may help you refine a search query to narrow the results.
+
+   - Preview the search results to quickly verify whether the relevant data is being found.
+
+   - Revise a query and rerun the search.
+
+3. **[Export and download search results](export-content-in-core-ediscovery.md)**. After you search for and find data that's relevant to your investigation, you can export it out of Office 365 for review by people outside of the investigation team. Exporting data is a two-step process. The first step is to export the results of a search in the case out of Office 365. This is accomplished by copying the results of a search to a Microsoft-provided Azure Storage location. The next step is to use the eDiscovery Export tool to download the content to a local computer. In addition to the exported data files, the contains of the export package also contains an export report, a summary report, and an error report.
 
