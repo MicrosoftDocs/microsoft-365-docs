@@ -114,7 +114,7 @@ For more information about setting up groups, see:
 
 4. Select **Create policy** to create and configure a new policy from a template or to create and configure a custom policy.
 
-    If you choose a policy template to create a policy, you will:
+    If you choose a built-in policy template to create a policy, you will:
 
     - Confirm or update the policy name. Policy names cannot be changed once the policy is created.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
@@ -130,7 +130,11 @@ For more information about setting up groups, see:
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
     - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
-    - Choose if you'd like to enable the offensive language classifier. This  classifier detects inappropriate language sent or received in the body of email messages.
+    - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language sent or received in the body of email messages or other types of text.
+
+    >[!CAUTION]
+    >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
+
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.
 
