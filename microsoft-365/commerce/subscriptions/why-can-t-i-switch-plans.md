@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
