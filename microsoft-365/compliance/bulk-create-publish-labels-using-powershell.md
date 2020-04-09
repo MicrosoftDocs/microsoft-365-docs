@@ -15,7 +15,9 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "In Office 365, you can use retention labels to implement a retention schedule for your organization. By using the script and .csv files provided, you can bulk create and publish retention labels and retention label policies by using PowerShell."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to use Office 365 retention labels to implement a retention schedule for your organization by using PowerShell."
 ---
 
 # Bulk create and publish retention labels by using PowerShell
@@ -88,17 +90,17 @@ Copy and paste the below PowerShell script into Notepad. Save the file by using 
 ```
 <#
 . Steps: Import and Publish Compliance Tag
-	○ Load compliance tag csv file 
-	○ Validate csv file input
+    ○ Load compliance tag csv file 
+    ○ Validate csv file input
     ○ Create compliance tag
     ○ Create compliance policy
-	○ Publish compliance tag for the policy
+    ○ Publish compliance tag for the policy
     ○ Generate the log for tags creation
     ○ Generate the csv result for the tags created and published
 . Syntax
-	.\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
+    .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
-	1) [-LabelListCSV <string>]
+    1) [-LabelListCSV <string>]
     -LabelListCSV ".\SampleInputFile_LabelList.csv"
     Load compliance tag for creation.
     2) [-PolicyListCSV <string>]
@@ -336,7 +338,7 @@ Function CreateComplianceTag
     }
     catch
     {
-	    WriteToLog -Type "Failed" "Error in input"
+        WriteToLog -Type "Failed" "Error in input"
     }
 }
 # -------------------
