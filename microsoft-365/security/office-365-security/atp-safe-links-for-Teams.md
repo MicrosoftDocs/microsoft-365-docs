@@ -29,6 +29,9 @@ Here's how it works:
 1. When you start the Teams application, Office 365 will check to make sure the user belongs to an organization that has Office 365 ATP, and that the user is part of an active safe links policy with its protection enabled for Microsoft Teams.
 
 2. If the above are true, then URLs will be validated at the time of click in Chats, Group Chats, Channels, and in Tabs for that user.
+
+> [!NOTE]
+> Safe links safeguards users from links sent by Guest users, Federated users, tenant users. If the user logged in has safe links for Teams enabled, then safe links protections will apply.
  
 ## What will users experience? 
 

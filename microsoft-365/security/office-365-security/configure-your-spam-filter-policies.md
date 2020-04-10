@@ -34,7 +34,7 @@ The basic elements of an anti-spam policy in EOP are:
 
 - **The spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a spam filter policy.
 
-The difference between these two elements isn't obvious when you manage anti-spam polices in the Security & Compliance Center:
+The difference between these two elements isn't obvious when you manage anti-spam policies in the Security & Compliance Center:
 
 - When you create an anti-spam policy in the Security & Compliance Center, you're actually creating a spam filter rule and the associated spam filter policy at the same time using the same name for both.
 
@@ -275,7 +275,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
 3. Click **Edit policy**.
 
-For custom anti-spam policies, the available settings in the flyout that appears are identical to those described in the [Use the Security & Compliance Center to create anti-spam policies](#use-the-security--compliance-center-to-create-anti-spam-policies) section.
+The settings in the flyout that appears are identical to the settings that are available in the [Use the Security & Compliance Center to create anti-spam policies](#use-the-security--compliance-center-to-create-anti-spam-policies) section.
 
 For the default anti-spam policy named **Default spam filter policy**, the **Applied to** section isn't available (the policy applies to everyone), and you can't rename the policy.
 
@@ -297,7 +297,7 @@ You can't disable the default anti-spam policy.
 
 ### Set the priority of custom anti-spam policies
 
-By default, anti-spam policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority.
+By default, anti-spam policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority.
 
 Custom anti-spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default anti-spam policy named **Default spam filter policy** has the priority value **Lowest**, and you can't change it.
 
@@ -455,7 +455,7 @@ For detailed syntax and parameter information, see [Get-HostedContentFilterPolic
 To view existing spam filter rules, use the following syntax:
 
 ```PowerShell
-Get-HostedContentFilterRule [-Identity "<RuleIdentity>] [-State <Enabled | Disabled]
+Get-HostedContentFilterRule [-Identity "<RuleIdentity>"] [-State <Enabled | Disabled]
 ```
 
 To return a summary list of all spam filter rules, run this command:

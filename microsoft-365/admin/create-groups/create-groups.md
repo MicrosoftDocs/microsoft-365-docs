@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -118,4 +118,4 @@ After creating a new group and adding members, you can further configure your gr
 
 [Choose the domain to use when creating Office 365 groups](choose-domain-to-create-groups.md)
 
-[Upgrade distribution lists to Office 365 groups](../manage/upgrade-distribution-lists.md)
+[Upgrade distribution lists to Office 365 Groups](../manage/upgrade-distribution-lists.md)
