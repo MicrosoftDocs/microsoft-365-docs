@@ -51,9 +51,19 @@ The rest of this topic describes the settings that are available in EOP and ATP 
 
 The following spoof settings are available in anti-phishing policies and ATP anti-phishing policies:
 
-- **Anti-spoofing protection**: Enable or disable anti-spoofing protection. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders, and to specify the action for spoofed messages from unidentified senders (deliver to Junk Email or quarantine). For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+- **Anti-spoofing protection**: Enables or disables anti-spoofing protection. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
-- **Unauthenticated Sender**: Enable or disable the Unauthenticated Sender feature. This feature that adds a question mark (?) in the sender's photo if the sender fails email authentication checks. For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206).
+  For messages from unidentified or blocked spoofed senders (in other words, any spoofed senders that aren't specifically allowed), you can also specify the action to take on the messages:
+
+  - **Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+
+  - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following topics:
+
+    - [Quarantine in Office 365](quarantine-email-messages.md)
+    - [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md)
+    - [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+
+- **Unauthenticated Sender**: Enables or disables unidentified sender identification that adds a question mark in the sender's photo if the sender fails email authentication checks. For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206).
 
 ## Exclusive settings in ATP anti-phishing policies
 
@@ -132,6 +142,6 @@ The following advanced phishing thresholds are only available in ATP anti-phishi
 
 - **3 - More aggressive**: Messages that are identified as phishing with a medium or high degree of confidence are treated as if they were identified with a very high degree of confidence.
 
-**4 - Most aggressive**: Messages that are identified as phishing with a low, medium, or high degree of confidence are treated as if they were identified with a very high degree of confidence.
+- **4 - Most aggressive**: Messages that are identified as phishing with a low, medium, or high degree of confidence are treated as if they were identified with a very high degree of confidence.
 
-The chance of false positives (good messages marked as bad) increases as you increase this setting. For information about the recommended standard and strict settings, see [Office ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
+The chance of false positives (good messages marked as bad) increases as you increase this setting. For information about the recommended settings, see [Office ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).

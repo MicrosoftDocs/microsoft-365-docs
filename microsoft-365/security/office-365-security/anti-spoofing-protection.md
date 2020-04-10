@@ -30,7 +30,7 @@ The following anti-spoofing technologies are available in EOP:
 
 - **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
-- **Anti-phishing policies**: In EOP, the built-in anti-phishing policy allows you to turn spoof intelligence on or off. More advanced anti-phishing policies that are available in Office 365 Advanced Threat Protection (ATP) contain anti-impersonation settings, mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
+- **Anti-phishing policies**: In EOP, the built-in anti-phishing policy allows you to turn spoof intelligence on or off, turn unauthenticated sender identification on or off (adds a question mark to the sender's photo if the message fails email authentication checks), and specify the action for unidentified or blocked spoofed senders (move to Junk Email folder or quarantine). More advanced anti-phishing policies that are available in Office 365 Advanced Threat Protection (ATP) also contain anti-impersonation settings (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
 
 - **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by using SPF, DKIM, and DMARC. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Office 365 requires email authentication for sender domains. For more information, see [Email authentication in Office 365](email-validation-and-authentication.md).
 
@@ -124,6 +124,8 @@ The following table summarizes how spoofed email is treated in Office 365:
 |
 
 For more information about the Category and compauth values that are related to spoofing, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
+
+For more information about DMARC, see [Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md).
 
 ## Spoofed message reports of how many messages were marked as spoofed
 
