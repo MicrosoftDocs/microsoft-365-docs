@@ -52,8 +52,8 @@ There are two different methods for automatically applying a sensitivity label:
     For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) on this page.
     
     Specific to auto-labeling for SharePoint and OneDrive:
-    - Maximum of 25,000 files (Word, PowerPoint, or Excel) in your tenant per day
-        - Maximum of 5 files per licensed user per day
+    - Maximum of 25,000 automatically labeled files (Word, PowerPoint, or Excel) in your tenant per day
+        - Maximum of 5 automatically labeled files per licensed user per day
     - Maximum of 10 sites collections across all policies
     - Maximum of 10 policies across your tenant
 
