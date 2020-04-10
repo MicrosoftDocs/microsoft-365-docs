@@ -40,7 +40,7 @@ Here's a quick overview of the process.
 
 1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created (also called the *main archive*), and the warning quota for the archive mailbox is set to 90 GB.
 
-2. An administrator enables auto-expanding archiving for the mailbox. When the archive mailbox (including the Recoverable Items folder) reaches 90 GB, it's converted to an auto-expanding archive, and Office 365 adds storage space to the archive. This additional archive storage space is also called the *auxiliary archive*. It can take up to 30 days for the additional storage space to be provisioned.
+2. An administrator enables auto-expanding archiving for the mailbox. When the archive mailbox (including the Recoverable Items folder) reaches 90 GB, it's converted to an auto-expanding archive, and Office 365 adds storage space to the archive. This additional archive storage is also called the *auxiliary archive*. It can take up to 30 days for the additional storage space to be provisioned.
 
    > [!NOTE]
    > If a mailbox is placed on hold or assigned to an Office 365 retention policy, the storage quota for the archive mailbox is increased to 110 GB when auto-expanding archiving is enabled. Similarly, the archive warning quota is increased to 100 GB.
