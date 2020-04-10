@@ -830,7 +830,7 @@
       items: 
         - name: Financial services security and compliance
           href: ../solutions/financial-services-secure-collaboration.md
-       - name: Energy services security and compliance
+        - name: Energy services security and compliance
           href: ../solutions/energy-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
