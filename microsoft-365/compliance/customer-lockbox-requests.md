@@ -65,7 +65,7 @@ The following steps outline the typical workflow when a Microsoft engineer initi
 
 ## Turn Customer Lockbox requests on or off
 
-You can turn on Customer Lockbox controls in the Microsoft 365 admin center. When you turn on Customer Lockbox, Microsoft must obtain your organization’s approval before accessing any of your tenant's content.
+You can turn on Customer Lockbox controls in the Microsoft 365 admin center. When you turn on Customer Lockbox, Microsoft must obtain your organization's approval before accessing any of your tenant's content.
 
 1. Using a work or school account that has either the global administrator or the **Customer Lockbox access approver** role assigned, go to [https://admin.microsoft.com](https://admin.microsoft.com) and sign in.
 
