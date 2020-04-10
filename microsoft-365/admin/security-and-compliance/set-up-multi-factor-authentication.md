@@ -32,6 +32,7 @@ monikerRange: 'o365-worldwide'
 Every new Office 365 for business or Microsoft 365 Business subscription will automatically have security defaults turned on. This means that every user will have to set up MFA and install the Microsoft Authenticator app on their mobile device. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).  
 
 The following nine administrator roles will be required to perform additional authentication every time they sign in:
+
 - Global administrator
 - SharePoint administrator
 - Exchange administrator
@@ -42,7 +43,7 @@ The following nine administrator roles will be required to perform additional au
 - User administrator
 - Authentication administrator
 
-All other users will be asked to perform additional authentication when needed. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+All other users will be asked to perform additional authentication when needed. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 > [!NOTE]
 > You must be an Office 365 global admin to set up or modify MFA. <br><br>
@@ -55,9 +56,8 @@ If you have previously set up MFA with baseline policies, [you must turn them of
 
 ## Manage security defaults
 
-1. Sign in to [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822) with your Global admin credentials.
+1. Sign in to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822) with your Global admin credentials.
 2. Go to [Azure Active Directory Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
-
 3. At the bottom of the page, choose **Manage Security defaults**.
 4. Choose **Yes** to enable security defaults or **No** to disable security defaults, and then choose **Save**.
 
@@ -69,22 +69,23 @@ If you have previously set up MFA with baseline policies, [you must turn them of
 
 3. On the **Security | Getting started** page, choose **Conditional Access**. 
 
-4. On the **Azure portal Conditional Access - Policies** page,  choose each Baseline policy that is **On**, and set them to **Off**.
+4. On the **Conditional Access - Policies** page, choose each Baseline policy that is **On**, and set them to **Off**.
 5. Go to [Azure Active Directory Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) page.
-6. On the bottom of the page, choose **Manage Security defaults**, and in the **Enable Security defaults** pane, set **Enable Security defaults** toggle to **Yes**. 
+6. On the bottom of the page, choose **Manage Security defaults**, and in the **Enable Security defaults** pane, set **Enable Security defaults** toggle to **Yes**, and then choose **Save**. 
 
-## Enable Modern authentication for your organization
+## Enable modern authentication for your Office 365 subscription
 
 All Office 2016 client applications support MFA through the use of the Active Directory Authentication Library (ADAL). This means that app passwords aren't required for Office 2016 clients. However, you need to make sure your Office 365 subscription is enabled for ADAL, or modern authentication.
 
 1. To enable modern authentication, from the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Settings** \> **Settings** and then in the **Services** tab, choose **Modern authentication** from the list.
 
-2. Check the **Enable modern authentication** box in the **Modern authentication** panel. 
+2. Check the **Enable modern authentication (recommended)** box in the **Modern authentication** panel, and then choose **Save changes**. 
 
     ![Modern authentication panel with enable checkbox checked.](../../media/enablemodernauth.png)
     
 > [!IMPORTANT]
 > As of August of 2017, all new Office 365 tenants that include Skype for Business online and Exchange online have modern authentication enabled by default. To check your modern authentication status for Skype for Business online, you can use Skype for Business online PowerShell with Global Admin credentials. Run Get-CsOAuthConfiguration to check the output of -ClientADALAuthOverride. If -ClientADALAuthOverride is 'Allowed', modern authentication is on.
+
 To check your MA status for Exchange Online, please visit [Enable modern authentication in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online).
 
 ## Related articles
