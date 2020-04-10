@@ -233,7 +233,7 @@ When you can quickly recover your keys, you are less likely to experience an ext
   
 To enable Soft Delete on your key vaults, complete these steps:
   
-1. Sign in to your Azure subscription with Windows Powershell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Sign in to your Azure subscription with Windows PowerShell. For instructions, see [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
 
 2. Run the [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) cmdlet. In this example, *vault name* is the name of the key vault for which you are enabling soft delete:
 
