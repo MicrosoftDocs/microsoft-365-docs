@@ -30,7 +30,8 @@ Here's how it works:
 
 2. If the above are true, then URLs will be validated at the time of click in Chats, Group Chats, Channels, and in Tabs for that user.
 
-3. If a user is configured for ATP Safe Links, any links that are sent to the user from external users like Guest and Federated users will be validated.
+> [!NOTE]
+> Safe links safeguards users from links sent by Guest users, Federated users, tenant users. If the user logged in has safe links for Teams enabled, then safe links protections will apply.
  
 ## What will users experience? 
 
