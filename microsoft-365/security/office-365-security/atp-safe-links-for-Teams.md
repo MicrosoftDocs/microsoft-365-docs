@@ -30,7 +30,7 @@ Here's how it works:
 
 2. If the above are true, then URLs will be validated at the time of click in Chats, Group Chats, Channels, and in Tabs for that user.
 
-3. If a user is configured for ATP Safe links, any links that are send to the user from exteranl users like Guest and Federated users will be validated.
+3. If a user is configured for ATP Safe Links, any links that are sent to the user from external users like Guest and Federated users will be validated.
  
 ## What will users experience? 
 
@@ -48,4 +48,3 @@ Clicking the *Go Back* button on this page in Teams will close it out (or may re
 
 > [!NOTE]
 >Some Office 365 Admins will enable the **Continue Anyway** message on the blocking page. However, if safe links measures the reputation of a site and finds it lacking, no further click-through should be undertaken. It is not recommended that users bypass safety measures. Please weigh this into your considerations before enabling Continue Anyway. 
-
