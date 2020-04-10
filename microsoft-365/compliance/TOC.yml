@@ -421,7 +421,7 @@
         - name: Search for content in a case
           href: search-for-content-in-core-ediscovery.md
         - name: Export content from a case
-          href: export-content-in-core-ediscovery
+          href: export-content-in-core-ediscovery.md
         - name: Core eDiscovery reference
           items:
           - name: Assign eDiscovery permissions
