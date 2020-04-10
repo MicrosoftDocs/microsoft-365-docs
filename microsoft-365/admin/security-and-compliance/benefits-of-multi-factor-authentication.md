@@ -1,5 +1,5 @@
 ---
-title: "Benefits of multi-factor authentication for Microsoft 365 users"
+title: "Benefits of multi-factor authentication for Microsoft 365 sign-ins"
 f1.keywords:
 - NOCSH
 ms.author: josephd_msft
@@ -20,7 +20,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
-description: "Learn how to use security defaults to set up multi-factor authentication for Office 365 users."
+description: "Learn about multi-factor authentication for Microsoft 365 sign-ins."
 monikerRange: 'o365-worldwide'
 ---
 
@@ -69,7 +69,7 @@ Users have 14 days to register for MFA with the Microsoft Authenticator app from
 
 Security defaults ensure that all organizations have a basic level of security for user sign-in that is enabled by default. You can disable security defaults in favor of MFA for individual accounts or with Conditional Access.
 
-You enable or disable security defaults from the **Properties pane** for Azure Active Directory (Azure AD) in the Azure portal.
+You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
 
 ![](../../media/benefits-of-multi-factor-authentication/security-defaults-mfa.png)
 
@@ -92,8 +92,14 @@ You configure Conditional Access policies from the **Security** pane for Azure A
 Keep in mind the following:
 
 - You cannot enable security defaults if you have any Conditional Access policies enabled.
-- If security defaults are enabled and you configure MFA for an individual user account, the secondary authentication method registered by the user is the one used for sign-ins.
-  For example, when you enable security defaults, all users must use the Microsoft Authenticator app on a smart phone for secondary authentication. However, if a user has an older phone that can receive text messages but cannot run the Microsoft Authenticator app, you can enable MFA on that user account and have them register using the text message secondary authentication method.
+- You cannot enable any Conditional Access policies if you have security defaults enabled.
+
+If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app. However, if a user has an older phone that can receive text messages but cannot run the Microsoft Authenticator app, you can enable MFA on that user account and have them register using the text code secondary authentication method with these steps:
+
+1. Disable security defaults in the Azure portal.
+2. Enable MFA for the user account in the Microsoft 365 admin center.
+3. Have the user sign in and register for MFA and the text code authentication method.
+4. When complete, enable security defaults in the Azure portal
 
 This table shows the results of enabling MFA with security defaults, Conditional Access policies, and per-user account settings.
 
@@ -101,7 +107,7 @@ This table shows the results of enabling MFA with security defaults, Conditional
 |:-------|:-----|:-------|:-------|
 | **Security defaults**  | Can’t use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
 | **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are not enabled, you can enable security defaults  | User-specified  |
-| **Per-user account** | Overrides security defaults being disabled and no Conditional Access policies requiring MFA  | Overridden by security defaults and Conditional Access policies  | User-specified, overrides use of Microsoft Authenticator app if security defaults is enabled |
+| **Per-user account** | Overridden by security defaults and Conditional Access policies requiring MFA  | Overridden by security defaults and Conditional Access policies  | Microsoft Authenticator app if security defaults is enabled <br> Text code with workaround |
 ||||
 
 
