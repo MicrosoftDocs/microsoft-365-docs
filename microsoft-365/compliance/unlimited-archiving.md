@@ -87,7 +87,7 @@ Consider the following when using Outlook or Outlook on the web to access messag
 
 - You can search for items that were moved to an additional storage area only by searching the folder itself. This means you have to select the archive folder in the folder list to select the **Current Folder** option as the search scope. Similarly, if a folder in an auto-expanded storage area contains subfolders, you have to search each subfolder separately.
 
-- You can delete items in a subfolder that points to an auto-expanded storage area, but the folder itself can't be deleted. In fact when auto-expanding archiving is enabled for a mailbox, you can't delete any folders in the main archive mailbox or in an auto-expanded storage area.
+- You can delete items in a subfolder that points to an auto-expanded storage area, but the folder itself can't be deleted. In fact when auto-expanding archiving is enabled for a mailbox, you can't delete any folders in the main archive or in an auto-expanded storage area.
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
 
