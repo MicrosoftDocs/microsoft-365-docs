@@ -32,7 +32,7 @@ When we detect significant issues within Microsoft's global network or with inte
 
 | Location | Issue Type | Detail |
 | --- | --- | --- |
-| **No current issues** |  |  |
+| **No current issues**  |  |  |
 
 ## Recommendations to improve network experience
 
