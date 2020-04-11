@@ -6,7 +6,7 @@ ms.author: v-sharos
 author: shars
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -44,13 +44,13 @@ The setup wizard guides you through the following steps:
 
 3. Add new users and assign licenses to them so that they can download and install Office 365 apps.
 
-4. Connect your domain.
+4. Connect'your domain.
 
 ## Use the Setup page to complete and manage your configuration
 
-To access the **Setup** page in the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the navigation pane. Based on products you’ve purchased, features you’ve set up, and your admin role, tasks and related information from across Office 365 are surfaced here.
+To access the **Setup** page in the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), select **Setup** in the navigation pane. Based on products you've purchased, features you've set up, and your admin role, tasks and related information from across Office 365 are surfaced here.
 
-You’ll see the complete list of setup tasks arranged in logical categories, including those that you completed in the setup wizard.
+You'll see the complete list of setup tasks arranged in logical categories, including those that you completed in the setup wizard.
 
 ![Office 365 for Business Setup page](../../media/o365b-setup-page.png)
 
