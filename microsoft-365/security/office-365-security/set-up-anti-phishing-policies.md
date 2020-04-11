@@ -18,26 +18,33 @@ description: "Learn about the basic anti-phishing policy in Exchange Online Prot
 
 # Anti-phishing policies in Office 365
 
-Polices to configure anti-phishing protection settings are available in Office 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (ATP) organizations.
+Policies to configure anti-phishing protection settings are available in Office 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (ATP) organizations.
 
-ATP anti-phishing polices are only available in organizations that have Office 365 ATP. For example:
+ATP anti-phishing policies are only available in organizations that have Office 365 ATP. For example:
 
 - Office 365 Enterprise E5, Office 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Office 365 ATP as an add-on](https://products.office.com/exchange/advance-threat-protection)
 
-If you don't have any of these subscriptions, you have anti-phishing policies. The high-level differences between anti-phishing policies and ATP anti-phishing policies are described in the following table:
+ATP anti-phishing policies include a built-in default anti-phishing policy, and you can create additional custom ATP anti-phishing policies.
 
-|||||
-|---|:---:|:---:|:---:|
-|**Features**|**Anti-phishing policies**|**ATP anti-phishing policies**|
+Other Office 365 organizations with Exchange Online mailboxes or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have a built-in default anti-phishing policy, but you can't create additional policies. Only organizations with Exchange Online mailboxes can modify their default anti-phishing policy.
+
+The high-level differences between anti-phishing policies and ATP anti-phishing policies are described in the following table:
+
+||||
+|---|:---:|:---:|
+|**Feature**|**Anti-phishing policies**|**ATP anti-phishing policies**|
 |Automatically created default policy|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Create custom policies||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Policy settings|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impersonation settings||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Spoof settings|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Advanced phishing thresholds||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
+
+<sup>\*</sup> You can see, but you can't change the policy name, you can't add a policy description, and you can't specify who the policy applies to (the default policy applies to all recipients).
 
 To configure anti-phishing policies, see the following topics:
 
@@ -69,19 +76,41 @@ The following spoof settings are available in anti-phishing policies and ATP ant
 
 This section describes the policy settings that are only available in ATP anti-phishing policies.
 
+## Policy settings in ATP anti-phishing policies
+
+The following policy settings are only available in ATP anti-phishing policies:
+
+- **Name**: You can't rename the default anti-phishing policy, but you can name and rename custom policies that you create.
+
+- **Description** You can't add a description to the default anti-phishing policy, but you can add and change the description for custom policies that you create.
+
+- **Applied to**: Identifies internal recipients that the ATP anti-phishing policy applies to. This value is required in custom policies, and not available in the default policy (the default policy applies to all recipients).
+
+    You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
+
+  - **Recipient is**: One or more mailboxes, mail users, or mail contacts in your organization.
+  - **Recipient is a member of**: One or more groups in your organization.
+  - **The recipient domain is**: One or more of the configured accepted domains in Office 365.
+
+  - **Except when**: Exceptions for the rule. The settings and behavior are exactly like the conditions:
+
+    - **Recipient is**
+    - **Recipient is a member of**
+    - **The recipient domain is**
+
 ### Impersonation settings in ATP anti-phishing policies
 
 The following impersonation settings are only available in ATP anti-phishing policies:
 
-- **Users to protect**: Prevents the specified internal or external users from being used in the From address in spoofed messages. For example, executives (internal) and board members (external). You can add up to 60 internal and external addresses. This list of protected users is different from the list of recipients that the policy applies to (the **Applied to** setting).
+- **Users to protect**: Prevents the specified internal or external users from being impersonated. For example, executives (internal) and board members (external). You can add up to 60 internal and external addresses. This list of protected users is different from the list of recipients that the policy applies to in the **Applied to** setting.
 
-  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where the where Felipe Apodaca is spoofed in the From address will be be acted on by the policy.
+  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where the where Felipe Apodaca is impersonated will be acted on by the policy (the action you configure for impersonated users).
 
-- **Domains to protect**: Prevent the specified domains from being used in the From address in spoofed messages from external senders. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domain you own or partner domains). This list of protected domains is different from the list of domains that the policy applies to (the **Applied to** setting).
+- **Domains to protect**: Prevent the specified domains from being impersonated. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of protected domains is different from the list of domains that the policy applies to in the **Applied to** setting.
 
-  For example, you specify tailspintoys.com as a protected domain in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where the where tailspintoys.com is spoofed in the From address will be be acted on by the policy.
+  For example, you specify tailspintoys.com as a protected domain in a policy that applies to members of the group named Executives. Inbound messages sent to members of the Executives group where the where tailspintoys.com is impersonated will be acted on by the policy (the action you configure for impersonated domains).
 
-- **Actions for protected users or domains**: Specifies what to do with spoofed messages that contain a protected user or domain in the From address (you can specify different actions for protected users vs. protected domains):
+- **Actions for protected users or domains**: Choose the action to take on inbound messages that contain impersonation attempts against the protected users and protected domains in the policy. You can specify different actions for impersonation of protected users vs. impersonation of protected domains:
 
   - **Don't apply any action**
 
@@ -99,10 +128,10 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
   - **Delete the message before it's delivered**: Silently deletes the entire message, including all attachments.
 
-- **Safety tips**: Enables or disables the following impersonation safety tips that will appear in the delivered email messages:
+- **Safety tips**: Enables or disables the following impersonation safety tips that will appear messages that fail impersonation checks:
 
-  - **Impersonated users**: The From address contains a protected users.
-  - **Impersonated domains**: The From address contains a protected domains.
+  - **Impersonated users**: The From address contains a protected user.
+  - **Impersonated domains**: The From address contains a protected domain.
   - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters).
 
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
@@ -116,21 +145,7 @@ The following impersonation settings are only available in ATP anti-phishing pol
   - **Deliver the message and add other addresses to the Bcc line**
   - **Delete the message before it's delivered**
 
-- **Trusted senders and domains**: Exceptions to the policy. Messages that contain the specified email addresses and domains in the From address are never classified as impersonation-based attacks by the policy (in other words, the actions specified by the policy aren't applied to messages from those trusted senders or domains). The maximum limit for these lists is approximately 1000 entries.
-
-- **Applied to**: Only available in custom anti-phishing policies (the default anti-phishing policy automatically applies to everyone). Identifies the internal recipients that the policy applies to. This value is required in custom policies.
-
-    You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<recipient1\>_ or _\<recipient2\>_). Different conditions or exceptions use AND logic (for example, _\<recipient1\>_ and _\<member of group 1\>_).
-
-  - **Recipient is**: One or more mailboxes, mail users, or mail contacts in your organization.
-  - **Recipient is a member of**: One or more groups in your organization.
-  - **The recipient domain is**: One or more of the configured accepted domains in Office 365.
-
-  - **Except when**: Exceptions for the rule. The settings and behavior are exactly like the conditions:
-
-    - **Recipient is**
-    - **Recipient is a member of**
-    - **The recipient domain is**
+- **Trusted senders and domains**: Exceptions to the impersonation protection settings. Messages from the specified senders and sender domains are never classified as impersonation-based attacks by the policy. In other words, the action for protected senders, protected domains, or mailbox intelligence protection aren't applied to these trusted senders or sender domains. The maximum limit for these lists is approximately 1000 entries.
 
 ### Advanced phishing thresholds in ATP anti-phishing policies
 

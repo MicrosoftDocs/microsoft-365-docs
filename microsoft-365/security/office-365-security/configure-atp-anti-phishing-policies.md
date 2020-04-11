@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: ""
+description: "Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Office 365 Advanced Threat Protection (ATP)."
 ---
 
 # Configure ATP anti-phishing policies in Office 365
 
 ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks. For more information about the differences between anti-phishing policies and ATP anti-phishing policies, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
 
-For information about configuring the built-in anti-phishing policy that's available in Exchange Online Protection (that is, Office 365 organizations without ATP), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
-
 Admins can view, edit, and configure (but not delete) the default ATP anti-phishing policy. For greater granularity, you can also create custom ATP anti-phishing policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
 You can configure ATP anti-phishing policies in the Office 365 Security & Compliance Center or in Exchange Online PowerShell.
+
+For information about configuring the more limited built-in anti-phishing policy that's available in Exchange Online Protection organizations (that is, Office 365 organizations without ATP), see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
 
 ## ATP anti-phishing policies in the Office 365 Security & Compliance Center vs Exchange Online PowerShell
 
@@ -237,11 +237,11 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
 6. **Spoof**: Click **Edit** to enable or disable spoof intelligence, unauthenticated sender identification (adds a question mark to the sender's photo if the message fails email authentication checks), and the action to apply to messages from unidentified or blocked spoofed senders. For more information, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings).
 
-   Note that these settings are identical to settings that are available in the default anti-phishing policy in EOP.
+   Note that these settings are identical to the settings that are available in the default anti-phishing policy in EOP.
 
-   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it on, slide the toggle to **Off**. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
-   - **Enable Unauthenticated Sender feature**: The default value is **On**. To turn it on, slide the toggle to **Off**.
+   - **Enable Unauthenticated Sender feature**: The default value is **On**. To turn it off, slide the toggle to **Off**.
 
    - **Actions**: Specify the action to take on messages that fail spoof intelligence:
 
@@ -281,7 +281,7 @@ The default anti-phishing policy is named Office365 AntiPhish Default, and it do
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
 
-2. On the **Anti-phishing** page, click **Default**.
+2. On the **Anti-phishing** page, click **Default policy**.
 
 3. The **Edit your policy Office365 AntiPhish Default** page appears. The following sections are available, which contain identical settings for when you [modify a custom policy](#use-the-security--compliance-center-to-modify-custom-atp-anti-phishing-policies):
 
@@ -307,7 +307,7 @@ The default anti-phishing policy is named Office365 AntiPhish Default, and it do
 
    - Slide the toggle to **On** to enable the policy.
 
-You can't disable the default anti-spam policy.
+You can't disable the default anti-phishing policy.
 
 ### Set the priority of custom ATP anti-phishing policies
 
@@ -329,7 +329,7 @@ To change the priority of a policy, you click **Increase priority** or **Decreas
 
    - The custom ATP anti-phishing policy with the lowest **Priority** value (for example, **3**) has only the **Increase priority** button available.
 
-   - If you have three or more custom anti-spam policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.
+   - If you have three or more custom anti-phishing policies, policies between the highest and lowest priority values have both the **Increase priority** and **Decrease priority** buttons available.
 
 4. Click **Increase priority** or **Decrease priority** to change the **Priority** value.
 
@@ -475,11 +475,37 @@ This example returns all the property values for the anti-phish rule named Conto
 Get-AntiPhishRule -Identity "Contoso Executives"
 ```
 
-For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Get-AntiPhishrule).
+For detailed syntax and parameter information, see [Get-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Get-AntiPhishrule).
 
 ### Use PowerShell to modify anti-phish policies
 
+Other than the following items, the same settings are available when you modify an anti-phish policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an anti-phish policy](#step-1-use-powershell-to-create-an-anti-phish-policy) section earlier in this topic.
+
+- The _MakeDefault_ switch that turns the specified policy into the default policy (applied to everyone, always **Lowest** priority, and you can't delete it) is only available when you modify an anti-phish policy in PowerShell.
+
+- You can't rename an anti-phish policy (the **Set-AntiPhishPolicy** cmdlet has no _Name_ parameter). When you rename an anti-phishing policy in the Security & Compliance Center, you're only renaming the anti-phish _rule_.
+
+To modify an anti-phish policy, use this syntax:
+
+```PowerShell
+Set-AntiPhishPolicy -Identity "<PolicyName>" <Settings>
+```
+
+For detailed syntax and parameter information, see [Set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy).
+
 ### Use PowerShell to modify anti-phish rules
+
+The only setting that isn't available when you modify an anti-phish rule in PowerShell is the _Enabled_ parameter that allows you to create a disabled rule. To enable or disable existing anti-phish rules, see the next section.
+
+Otherwise, no additional settings are available when you modify an anti-phish rule in PowerShell. The same settings are available when you create a rule as described in the [Step 2: Use PowerShell to create an anti-phish rule](#step-2-use-powershell-to-create-an-anti-phish-rule) section earlier in this topic.
+
+To modify an anti-phish rule, use this syntax:
+
+```PowerShell
+Set-AntiPhishRule -Identity "<RuleName>" <Settings>
+```
+
+For detailed syntax and parameter information, see [Set-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishrule).
 
 ### Use PowerShell to enable or disable anti-phish rules
 
@@ -543,7 +569,7 @@ This example removes the anti-phish policy named Marketing Department.
 Remove-AntiPhishPolicy -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/remove-AntiPhishPolicy).
+For detailed syntax and parameter information, see [Remove-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishPolicy).
 
 ### Use PowerShell to remove anti-phish rules
 
@@ -561,29 +587,23 @@ This example removes the anti-phish rule named Marketing Department.
 Remove-AntiPhishRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/remove-AntiPhishrule).
+For detailed syntax and parameter information, see [Remove-AntiPhishRule](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Remove-AntiPhishRule).
 
+## How do you know these procedures worked?
 
-## Example: Anti-phishing policy to protect a user and a domain
+To verify that you've successfully configured ATP anti-phishing policies, do any of the following steps:
 
-This example sets up a policy called "Domain and CEO" that provides both user and domain protection from impersonation and then applies the policy to all email received by users within the domain `contoso.com`. The security administrator has determined that the policy must meet these business requirements:
+- In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**. Verify the list of policies, their **Status** values, and their **Priority** values. To view more details do either of the following steps:
 
-- The policy needs to provide protection for the CEO's email account and the entire domain.
+  - Select the policy from the list, and view the details in the flyout.
+  - Click **Default policy** and view the details in the flyout.
 
-- Messages that are determined to be impersonation attempts against the CEO's user account need to be redirected to the security administrator's email address.
+- In Exchange Online PowerShell, replace \<Name\> with the name of the policy or rule, and run the following command and verify the settings:
 
-- Messages that are determined to be impersonation attempts against the domain are less urgent and should be quarantined for later review.
+  ```PowerShell
+  Get-AntiPhishPolicy -Identity "<Name>"
+  ```
 
-The security administrator at Contoso might use values like the following in order to create an anti-phishing policy that meets these needs.
-
-|||
-|:-----|:-----|
-|**Setting or option**|**Example**|
-|Name|Domain and CEO|
-|Description|Ensure that the CEO and our domain are not being impersonated.|
-|Add users to protect|The CEO's email address at a minimum.|
-|Add domains to protect|The organizational domain that includes the office of the CEO.|
-|Choose actions|If email is sent by an impersonated user: Choose **Redirect message to another email address** and then type the email address of the security administrator (for example, `securityadmin@contoso.com`).  <br/> If email is sent by an impersonated domain: Choose **Quarantine message**.|
-|Mailbox intelligence|By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.|
-|Add trusted senders and domains|For this example, don't define any overrides.|
-|Applied to|Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the checkbox next to the name of the domain (for example, `contoso.com`) in the list and then select **Add**. Select **Done**.|
+  ```PowerShell
+  Get-AntiPhishRule -Identity "<Name>"
+  ```

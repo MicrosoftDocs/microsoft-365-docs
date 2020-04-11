@@ -21,11 +21,11 @@ description: "Lear about the requirements on From email addresses for inbound me
 
 # How Office 365 validates the From address to prevent phishing
 
-Office 365 and Outlook.com email accounts receive an increasingly large number of phishing attacks. In addition to using [spoofed (forged) the sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November, 2017.
+Office 365 and Outlook.com email accounts receive an increasingly large number of phishing attacks. In addition to using [spoofed (forged) the sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
 
 **Notes**:
 
-- If you regularly receive email from organizations with legacy email systems that have malformed From addresses as described in this topic, encourage those organizations to update their email servers to comply with modern security standards.
+- If you regularly receive email from organizations with legacy email systems that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.
 
 - The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -122,4 +122,4 @@ You can't override the From address requirements for outbound email that you sen
 
 ## Other ways to prevent and protect against cybercrimes in Office 365
 
-For more information on how you can strengthen your organization against cybercrimes like phishing, spamming, data breaches, and other threats, see [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../../admin/security-and-compliance/secure-your-business-data.md).
+For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../../admin/security-and-compliance/secure-your-business-data.md).
