@@ -23,9 +23,18 @@ Organizations in the energy industry work with and exchange numerous types of in
 
 In North America, the North America Electric Reliability Corporation (NERC) enforces reliability standards that are referred to as NERC [Critical Infrastructure Protection (CIP) standards](https://www.nerc.com/pa/Stand/Pages/CIPStandards.aspx). NERC is subject to oversight by the U.S. Federal Energy Regulatory Commission (FERC) and governmental authorities in Canada. All bulk power system owners, operators, and users must register with NERC and must comply with NERC CIP standards. Cloud Service Providers and third-party vendors such as Microsoft are not subject to NERC CIP standards; however, the CIP standards include objectives that should be considered when Registered Entities use vendors in the operation of the Bulk Electric System (BES). Microsoft customers operating Bulk Electric Systems are wholly responsible for ensuring their own compliance with NERC CIP standards. 
 
+For information about Microsoft cloud services and NERC, see the following resources:
+- [NERC CIP Standards and Cloud Computing](https://aka.ms/AzureNERC)
+- [Cloud Implementation Guide for NERC Audits](https://aka.ms/AzureNERCGuide)
+
 Regulatory standards that are recommended for consideration by energy organizations include FedRAMP (US Federal Risk and Authorization Management Program) which is based on and augments the NIST SP 800-53 Rev 4 standard (National Institute of Standards and Technology). 
 - Microsoft Office 365 and Office 365 U.S. Government have each been granted a FedRAMP ATO (Authorization to Operate) at the Moderate Impact Level. 
 - Azure and Azure Government have each been granted a FedRAMP High P-ATO (Provisional Authorization to Operate), which represents the highest level of FedRAMP authorization. 
+
+For information about Microsoft cloud services and FedRAMP, see the following resources:
+- [Microsoft FedRAMP overview](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Office 365 FedRAMP reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
+
 
 These achievements are significant for the energy industry because a comparison between the FedRAMP Moderate control set and NERC CIP requirements shows that FedRAMP Moderate controls encompass all the NERC CIP requirements. For additional information, Microsoft has developed a [Cloud Implementation Guide for NERC Audits](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=68df41b2-873d-4e4b-a7c8-8a0d4fdefb88&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides) that includes a control mapping between the current set of NERC CIP standards and FedRAMP Moderate control set as documented in NIST 800-53 Rev 4.
 
@@ -42,6 +51,8 @@ Microsoft 365 is a modern workplace cloud environment that can provide secure an
 - Govern Data by Effectively Managing Records
 - Compliance with FERC and FTC Regulations for Energy Markets
 - Protect Against Data Exfiltration and Insider Risk
+
+As a Microsoft partner, Protiviti contributed to and provided material feedback to this article.
 
 ## Provide a Comprehensive Collaboration Platform with Microsoft Teams
 Collaboration typically requires multiple forms of communication, the ability to store and access documents, and the ability to integrate other applications as needed. Whether they are global enterprises or local companies, employees in the energy sector typically need to collaborate and communicate with members of other departments or across teams. They also often need to communicate with external partners, vendors or clients. As a result, utilizing systems that create silos or make it difficult to share information is typically not recommended. That said, we still want to ensure that employees are sharing information securely and according to policy. 
