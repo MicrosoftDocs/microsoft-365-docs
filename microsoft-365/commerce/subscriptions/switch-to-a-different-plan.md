@@ -69,7 +69,7 @@ When you use the **Switch plans** button, you're led through the process of buyi
 
 ## The Switch plans button isn't there
 
-If the **Switch plans** button isn't available, you can try to [switch plans manually](switch-plans-manually.md) or [call Support](../../admin/contact-support-for-business-products.md). For more information, see [Why can't I switch plans?](why-can-t-i-switch-plans.md)
+If the **Switch plans** button isn't available, you can try to [switch plans manually](switch-plans-manually.md). For more information, see [Why can't I switch plans?](why-can-t-i-switch-plans.md)
   
 Here's why this can happen:
   
