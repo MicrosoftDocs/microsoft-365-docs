@@ -288,7 +288,7 @@ This example returns documents on SharePoint and OneDrive for Business sites tha
   
  **Search query syntax**
   
- `SensitiveType:"Credit Card Number(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
   
  **Search query logic**
   

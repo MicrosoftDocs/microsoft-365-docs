@@ -2,8 +2,8 @@
 title: "Quarantine in Office 365"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 ms.date:
 audience: Admin
@@ -28,7 +28,7 @@ If you're an Office 365 customer with mailboxes in Exchange Online or a standalo
 
 Anti-malware policies automatically quarantine a message if *any* attachment is found to contain malware. For more information, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-By default, anti-spam polices quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+By default, anti-spam policies quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 Both users and admins can work with quarantined messages:
 
