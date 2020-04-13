@@ -19,7 +19,7 @@ search.appverid:
 description: "Administrators can enable sensitivity label support for Word, Excel, and PowerPoint files in SharePoint and OneDrive."
 ---
 
-# Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)
+# Enable sensitivity labels for Office files in SharePoint and OneDrive
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
