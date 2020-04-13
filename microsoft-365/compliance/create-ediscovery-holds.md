@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "You can create a hold that's associated with a Core eDiscovery case to preserve content that may be relevant to an investigation. "
+description: "You can create a hold that's associated with a Core eDiscovery case to preserve content that may be relevant to an investigation."
 ---
 
 # Create an eDiscovery hold
