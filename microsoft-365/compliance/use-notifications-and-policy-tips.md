@@ -64,13 +64,13 @@ When you create a DLP policy, you can enable **User notifications**. When user n
     
 6. To choose the locations that you want the DLP policy to protect, do one of the following:
     
-  - Choose **All locations in Office 365** \> **Next**.
+   - Choose **All locations in Office 365** \> **Next**.
     
-  - Choose **Let me choose specific locations** \> **Next**.
+   - Choose **Let me choose specific locations** \> **Next**.
     
-    To include or exclude an entire location such as all Exchange email or all OneDrive accounts, switch the **Status** of that location on or off. 
+   To include or exclude an entire location such as all Exchange email or all OneDrive accounts, switch the **Status** of that location on or off. 
     
-    To include only specific SharePoint sites or OneDrive accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. 
+   To include only specific SharePoint sites or OneDrive accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. 
     
 7. Choose **Use advanced settings** \> **Next**.
     
@@ -162,7 +162,7 @@ When a document on a OneDrive for Business site or SharePoint Online site matche
     
 2. If the rule blocks access to the document, the blocked icon appears.
     
-![Policy tip icons on documents in a OneDrive account](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
+   ![Policy tip icons on documents in a OneDrive account](../media/d3e9f772-03f9-4d28-82f8-3064784332a2.png)
   
 To take action on a document, you can select an item \> choose **Information** ![Information pane icon](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) in the upper-right corner of the page to open the details pane \> **View policy tip**.
   
