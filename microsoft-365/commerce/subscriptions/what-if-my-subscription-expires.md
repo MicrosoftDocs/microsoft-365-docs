@@ -194,7 +194,7 @@ When your trial ends, you won't be able to continue using Microsoft 365 for free
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-- **Buy Microsoft 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Microsoft 365. To learn how to convert your trial into a paid subscription, see [Buy or try subscriptions for Microsoft 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
+- **Buy Office 365.** When your trial expires, it moves into a grace period, giving you another 30 days (for most trials, in most countries and regions) to purchase Office 365. To learn how to convert your trial into a paid subscription, see [Buy or try subscriptions for Office 365 operated by 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md).
 
 ::: moniker-end
 
