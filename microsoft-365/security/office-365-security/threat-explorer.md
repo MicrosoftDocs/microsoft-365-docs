@@ -170,6 +170,8 @@ Suppose that you want to see email messages that users in your organization have
 
 2. In the **View** menu, choose **Email** > **Submissions**. (This was formerly called **User-reported**.)
 
+   ![View menu for Explorer](../../media/explorer-view-menu-email-user-reported.png)
+
 3. Click **Sender**, and then choose **Basic** > **Report type**.
 
 4. Select an option, such as **Phish**, and then click the **Refresh** button.
