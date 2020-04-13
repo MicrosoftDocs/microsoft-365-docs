@@ -51,7 +51,7 @@ To learn more about your bill or invoice, see [View your bill or invoice](view-y
 
 ::: moniker range="o365-21vianet"
 
-If you're using Microsoft 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Microsoft 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
+If you're using Office 365 operated by 21Vianet in China, see [View your bill or get Fapiaos for Office 365 operated by 21Vianet](../../admin/services-in-china/view-your-bill-or-get-a-fapiao.md).
 
 ::: moniker-end
 
@@ -114,7 +114,7 @@ If you're using Microsoft 365 operated by 21Vianet in China, see [View your bill
   
 3. On the **Change payment details** page, update your billing address, and then select **Submit**.
 
-    You can [Change your payment method for Microsoft 365 operated by 21Vianet](change-payment-method.md) from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
+    You can [Change your payment method for Office 365 operated by 21Vianet](change-payment-method.md) from Invoice to Online payment using Alipay or China UnionPay, or vice versa.
 
 ::: moniker-end
 
