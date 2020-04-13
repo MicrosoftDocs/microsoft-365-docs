@@ -55,12 +55,12 @@ The sidebar lists the device's full name and exposure level. It also provides so
 
 ## Response actions
 
-[Response actions](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) offer a quick way to defend against and analyze threats.
+Response actions offer a quick way to defend against and analyze threats.
 
 ![Image of action bar for device profile](../../media/mtp-machine-profile/hybrid-device-action-bar.PNG)
 
 > [!IMPORTANT]
-> * Response actions are only available if the device is enrolled in Microsoft Defender ATP.
+> * [Response actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender ATP.
 > * Devices that are enrolled in Microsoft Defender ATP may display different numbers of response actions, based on the device's OS and version number.
 
 Actions available on the device profile page include:
