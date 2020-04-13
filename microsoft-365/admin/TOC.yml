@@ -169,8 +169,6 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: Use Centralized Deployment to deploy add-ins
           href: manage/manage-deployment-of-add-ins.md
-        - name: Centralized Deployment FAQ
-          href: manage/centralized-deployment-FAQ.md
         - name: Find your partner or reseller
           href: manage/find-your-partner-or-reseller.md
         - name: Room and equipment mailboxes
@@ -189,8 +187,8 @@
           href: manage/remove-licenses-from-users.md
         - name: Resolve license conflicts
           href: manage/resolve-license-conflicts.md
-        - name: Show or hide new features using What's New Management
-          href: manage/show-hide-new-features.md
+        - name: Manage messages in the Message center
+          href: manage/manage-messages.md
     - name: Subscriptions and billing
       items: 
         - name: Manage your subscriptions

@@ -20,9 +20,9 @@ titleSuffix: Microsoft Compliance
 
 ## SOC 1, 2, and 3 Reports overview
 
-Increasingly, businesses outsource basic functions such as data storage and access to applications to cloud service providers (CSPs) and other service organizations. In response, the American Institute of Certified Public Accountants (AICPA) has developed the Service Organization Controls (SOC) framework, a standard for controls that safeguard the confidentiality and privacy of information stored and processed in the cloud. This framework aligns with the International Standard on Assurance Engagements (ISAE), the reporting standard for international service organizations.
+Increasingly, businesses outsource basic functions such as data storage and access to applications to cloud service providers (CSPs) and other service organizations. In response, the American Institute of Certified Public Accountants (AICPA) has developed the Service Organization Controls (SOC) framework, a standard for controls that safeguard the confidentiality and privacy of information stored and processed in the cloud. This aligns with the International Standard on Assurance Engagements (ISAE), the reporting standard for international service organizations.
 
-Service audits based on the SOC framework fall into either SOC 1 and SOC 2 categories that apply to in-scope Microsoft cloud services.
+Service audits based on the SOC framework fall into two categories — SOC 1 and SOC 2 — that apply to in-scope Microsoft cloud services.
 
 A SOC 1 audit, intended for CPA firms that audit financial statements, evaluates the effectiveness of a CSP's internal controls that affect the financial reports of a customer using the provider's cloud services. The Statement on Standards for Attestation Engagements (SSAE 18) and the International Standards for Assurance Engagements No. 3402 (ISAE 3402) are the standards under which the audit is performed, and is the basis of the SOC 1 report.
 
@@ -30,7 +30,7 @@ A SOC 2 audit gauges the effectiveness of a CSP's system based on the AICPA Trus
 
 At the conclusion of a SOC 1 or SOC 2 audit, the service auditor renders an opinion in a SOC 1 Type 2 or SOC 2 Type 2 report, which describes the CSP's system and assesses the fairness of the CSP's description of its controls. It also evaluates whether the CSP's controls are designed appropriately, were in operation on a specified date, and were operating effectively over a specified time period.
 
-Auditors can also create a SOC 3 report (an abbreviated version of the SOC 2 Type 2 audit report) for users who want assurance about the CSP's controls but don't need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
+Auditors can also create a SOC 3 report — an abbreviated version of the SOC 2 Type 2 audit report — for users who want assurance about the CSP's controls but don't need a full SOC 2 report. A SOC 3 report can be conferred only if the CSP has an unqualified audit opinion for SOC 2.
 
 ## Microsoft and SOC 1, 2, and 3 Reports
 
@@ -110,7 +110,7 @@ With the reports, your auditors can compare Microsoft business cloud services re
 
 **How often are Azure SOC reports issued?**
 
-SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued semi-annually (period ends are March 31 and September 30). Bridge letters are issued on a quarterly basis, usually in the first week of each month following the quarter end. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
+SOC reports for Azure, Cloud App Security, Flow, Graph, Intune, Power BI, PowerApps, Stream, and Microsoft Datacenters are based on a rolling 12-month run window (audit period) with new reports issued semi-annually (period ends are March 31 and September 30). Bridge letters are issued in January to cover the period of 10/1 – 12/31 and July to cover the period of 4/1 – 6/30. Customers can [download](https://aka.ms/stp) the latest reports from the Service Trust Portal.
 
 **Do I need to conduct my own audit of Microsoft datacenters?**
 

@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 f1_keywords:
 - 'ZTDTroubleshootDeviceErrors'
 - 'O365E_ZTDTroubleshootDeviceErrors'

@@ -61,7 +61,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
    - **Message ID**
 
-   - **Policy name**: This property shows the policy that caused the message to be quarantined. You can give this information to your admin.
+   - **Policy name**
 
    - **Size**
 

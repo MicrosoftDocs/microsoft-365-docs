@@ -70,7 +70,7 @@ The following sections describe the changes you need to make, if any, and what y
 You don't need to do any changes to your current subscription or data before migrating, which includes:
 
 - Subscription configuration, such as DNS records and domain names.
-- User and group accounts and authentication settings, such as multi factor authentication or Conditional Access policies.
+- User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
 - Productivity service configurations and their data, such as Teams, Exchange Online mailboxes, SharePoint Online sites, OneDrive for Business folders, and OneNote notebooks.
 
 ### Windows 10

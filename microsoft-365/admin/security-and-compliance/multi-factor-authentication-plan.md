@@ -56,11 +56,11 @@ You get a different subset of capabilities depending on whether you have a cloud
   
 |**Where do you manage Microsoft 365?**|**MFA second factor options**|
 |:-----|:-----|
-|Cloud only  <br/> |Azure Multi-Factor Authentication (text or phone call)  <br/> |
-|Hybrid setup, managed on-premises  <br/> | If you manage user identity on-premises, you have the following choices:  <br/>  Physical or virtual smart card (when using AD FS)  <br/> [Azure Multi-Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=526677) (module for AD FS)  <br/>  Azure Active Directory (Azure AD) Multi-Factor Authentication  <br/> |
+|Cloud only  <br/> |Azure Active Directory MFA (text or phone call)  <br/> |
+|Hybrid setup, managed on-premises  <br/> | If you manage user identity on-premises, you have the following choices:  <br/>  Physical or virtual smart card (AD FS)  <br/> [Azure MFA](https://go.microsoft.com/fwlink/p/?LinkId=526677) (module for AD FS)  <br/>  Azure AD MFA  <br/> |
    
   
-The following figure shows how the updated Office 2013 device apps (on Windows) enable users to sign in with MFA. The Office 2013 device apps support multi-factor authentication through the use of the [Active Directory Authentication Library (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hosts a webpage where users can sign in. The identity provider can be Azure AD or a federated identity provider like AD FS. The authentication for federated users follows these steps:
+The following figure shows how the updated Office 2013 device apps (on Windows) enable users to sign in with MFA. TheOffice 2013 device apps support multi-factor authentication through the use of the [Active Directory Authentication Library (ADAL)](https://go.microsoft.com/fwlink/p/?LinkId=526684). Azure AD hosts a webpage where users can sign in. The identity provider can be Azure AD or a federated identity provider like AD FS. The authentication for federated users follows these steps:
   
 1. Azure AD redirects the user to the sign-in web page hosted by the identity provider of record for the organization. The identity provider is determined by the domain specified in the user's sign in name.
     
@@ -122,7 +122,7 @@ To enable MFA, you have to complete the following:
     
   - [Enable Modern Authentication for Office 2013 on Windows devices](enable-modern-authentication.md) . 
     
-  - Set up Azure Multi-Factor Authentication with third-party directory services.
+  - Set up Azure MFA with third-party directory services.
     
     See the [Advanced scenarios with Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for information on specific identity providers accepted to this program. 
     
@@ -131,7 +131,7 @@ To enable MFA, you have to complete the following:
 3. Tell individual users how to sign in by MFA: [Sign in to Microsoft 365 with 2-step verification](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
     
 > [!IMPORTANT]
-> If you have enabled your users for Azure Multi-Factor Authentication and they have any devices running Office 2013 that are not enabled for Modern Authentication, they will need to use AppPasswords on those devices. More information on AppPasswords and when/where/how they should be used can be found here: [App Passwords with Azure Multi_Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
+> If you have enabled your users for Azure AD MFA and they have any devices running Office 2013 that are not enabled for Modern Authentication, they will need to use AppPasswords on those devices. More information on AppPasswords and when/where/how they should be used can be found here: [App Passwords with Azure Multi_Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
   
 ## FAQ
 
@@ -143,7 +143,7 @@ To enable MFA, you have to complete the following:
   
  **Troubleshooting Azure Multi-Factor Authentication:**
   
-See [Troubleshoot Azure Multi-Factor Authentication](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
+See [Troubleshoot Azure MFA](https://support.microsoft.com/help/2937344/troubleshooting-azure-multi-factor-authentication-issues).
   
 [How to troubleshoot sign-in issues with Office 2013 modern authentication when you use AD FS](https://support.microsoft.com/kb/3052203/)
   

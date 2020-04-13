@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 

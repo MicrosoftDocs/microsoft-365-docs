@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -31,18 +31,10 @@ ms.custom: okr_smb
 ### Step 1: Find the TXT record value and verify
 
 1. In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
-
-::: moniker range="o365-germany"
-
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
-
-::: moniker-end
+    
+    If you're using Microsoft 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page. 
+    
+    If you're using Microsoft 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
     
 2. On the **Domains** page, select your domain, then select **Start setup**. You'll go back to the domains setup wizard to see the specific value you need to add.
     
@@ -60,17 +52,9 @@ ms.custom: okr_smb
 
 1. In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
-::: moniker range="o365-germany"
-
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
-
-::: moniker-end
+    If you're using Microsoft 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page. 
+    
+    If you're using Microsoft 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
     
 2. On the **Domains** page, select your domain. 
     

@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -55,7 +55,7 @@ Depending on the size of the target audience, you may want to add or remove roll
 Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
   
-1. In the Microsoft 365 admin center, go to the **Settings** > **Add-ins** page.
+1. In the admin center, go to the **Settings** \> **Add-ins** page.
     
 2. Select **Deploy Add-in** at the top of the page. On the overview page, select **Next**.
     
@@ -70,7 +70,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 7. A green tick will appear when the add-in has been deployed. You can follow the on-page instructions to test that the add-in has deployed successfully.
 
 > [!NOTE]
-> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 24 hours to appear on users' ribbons.
+> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 12 hours to appear on users' ribbons.
     
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** in order to deploy to more users.
 
@@ -96,19 +96,12 @@ The option that is right for your organization depends on your configuration. Ho
   
 ### Add-in states
 
-Admins can turn on or off the add-ins they deploy for all users from the Microsoft 365 admin center.
-
-1.    In the admin center, go to the **Settings** > **Add-ins** page. 
-2.    Select the deployed add-in. 
-3.    Click the **Status** toggle to turn the add-in **On** or **Off**. 
-4.    Save the changes.  
-
-One of three add-in states is also available.
- 
+An add-in can either be in the **On** or **Off** state.
+  
 |**State**|**How the state occurs**|**Impact**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |Admin uploaded the add-in and assigned it to users or groups.  <br/> |Users and groups assigned to the add-in see it in the relevant clients.  <br/> |
-|**Turned off**  <br/> |Admin turned off the add-in.  <br/> |Users and groups assigned to the add-in no longer have access to it.  <br/> If the add-in state is changed to **Active**, the users and groups will have access to it again.  <br/> |
+|**Turned off**  <br/> |Admin turned off the add-in.  <br/> |Users and groups assigned to the add-in no longer have access to it.  <br/> If the add-in state is changed to Active, the users and groups will have access to it again.  <br/> |
 |**Deleted**  <br/> |Admin deleted the add-in.  <br/> |Users and groups assigned the add-in no longer have access to it.  <br/> |
    
 Consider deleting an add-in if no one is using it any more. Turning off an add-in may make sense if an add-in is used only during specific times of the year.

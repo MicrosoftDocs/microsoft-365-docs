@@ -38,17 +38,17 @@ Here's a quick overview of the process.
 
 ![Overview of the auto-expanding archiving process](../media/74355385-d990-44fe-8a87-6c3639d1f63f.png)
 
-1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created (also called the *main archive*), and the warning quota for the archive mailbox is set to 90 GB.
+1. Archiving is enabled for a user mailbox or a shared mailbox. An archive mailbox with 100 GB of storage space is created, and the warning quota for the archive mailbox is set to 90 GB.
 
-2. An administrator enables auto-expanding archiving for the mailbox. When the archive mailbox (including the Recoverable Items folder) reaches 90 GB, it's converted to an auto-expanding archive, and Office 365 adds storage space to the archive. This additional archive storage is also called the *auxiliary archive*. It can take up to 30 days for the additional storage space to be provisioned.
+2. An administrator enables auto-expanding archiving for the mailbox. When the archive mailbox (including the Recoverable Items folder) reaches 90 GB, it's converted to an auto-expanding archive, and Office 365 adds storage space to the archive. It can take up to 30 days for the additional storage space to be provisioned.
 
    > [!NOTE]
    > If a mailbox is placed on hold or assigned to an Office 365 retention policy, the storage quota for the archive mailbox is increased to 110 GB when auto-expanding archiving is enabled. Similarly, the archive warning quota is increased to 100 GB.
 
-3. Office 365 automatically adds more storage space to the auxiliary archive when necessary.
+3. Office 365 automatically adds more storage space when necessary.
 
 > [!IMPORTANT]
-> Auto-expanding archiving is only supported for mailboxes used for individual users (or shared mailboxes) with a growth rate that doesn't exceed 1 GB per day. A user's archive mailbox is intended for just that user. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox is not permitted. Microsoft reserves the right to deny unlimited archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of inappropriate use.
+> Auto-expanding archive is only supported for mailboxes used for individual users (or shared mailboxes) with a growth rate that doesn't exceed 1 GB per day. A user's archive mailbox is intended for just that user. Using journaling, transport rules, or auto-forwarding rules to copy messages to an archive mailbox is not permitted. Microsoft reserves the right to deny unlimited archiving in instances where a user's archive mailbox is used to store archive data for other users or in other cases of the inappropriate use.
 
 ## What gets moved to the additional archive storage space?
 
@@ -81,15 +81,15 @@ To access messages that are stored in an auto-expanded archive, users have to us
 
 - Outlook 2016 or Outlook 2019 for Mac
 
-Consider the following when using Outlook or Outlook on the web to access messages stored in an auto-expanded archive.
+Here are some things to consider when using Outlook or Outlook on the web to access messages stored in an auto-expanded archive.
 
 - You can access any folder in your archive mailbox, including ones that were moved to the auto-expanded storage area.
 
-- You can search for items that were moved to an additional storage area only by searching the folder itself. This means you have to select the archive folder in the folder list to select the **Current Folder** option as the search scope. Similarly, if a folder in an auto-expanded storage area contains subfolders, you have to search each subfolder separately.
-
-- You can delete items in a subfolder that points to an auto-expanded storage area, but the folder itself can't be deleted. In fact when auto-expanding archiving is enabled for a mailbox, you can't delete any folders in the main archive or in an auto-expanded storage area.
+- You can search for items that were moved to an additional storage area only by searching the folder itself. This means that you have to select the archive folder in the folder list to select the **Current Folder** option as the search scope. Similarly, if a folder in an auto-expanded storage area contains subfolders, you have to search each subfolder separately.
 
 - Item counts in Outlook and Read/Unread counts (in Outlook and Outlook on the web) in an auto-expanded archive might not be accurate.
+
+- You can delete items in a subfolder that points to an auto-expanded storage area, but the folder itself can't be deleted.
 
 - You can't use the Recover Deleted Items feature to recover an item that was deleted from an auto-expanded storage area.
 
@@ -97,9 +97,9 @@ Consider the following when using Outlook or Outlook on the web to access messag
 
 This section explains the functionality between auto-expanding archiving and other Office 365 compliance and data governance features.
 
-- **eDiscovery:** When you use an Office 365 eDiscovery tool, such as Content Search, Core eDiscovery, or Advanced eDiscovery, the additional storage areas in an auto-expanded archive are also searched.
+- **eDiscovery:** When you use an Office 365 eDiscovery tool, such as Content Search or In-Place eDiscovery, the additional storage areas in an auto-expanded archive are also searched.
 
-- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery holds and retention policies in the security and compliance center, content located in an auto-expanded archive is also placed on hold.
+- **Retention:** When you put a mailbox on hold by using tools such as Litigation Hold in Exchange Online or eDiscovery case holds and retention policies in the security and compliance center, content located in an auto-expanded archive is also placed on hold.
 
 - **Messaging records management (MRM):** If you use MRM deletion policies in Exchange Online to permanently delete expired mailbox items, expired items located in the auto-expanded archive will also be deleted.
 

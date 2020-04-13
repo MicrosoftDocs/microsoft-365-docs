@@ -2,8 +2,8 @@
 title: "Add custom tiles to the app launcher"
 f1.keywords:
 - CSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
