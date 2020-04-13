@@ -33,7 +33,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 -  Helps protect, preserve, and back up your data with Exchange Online Archiving.  
 -   App protection for Office and other mobile apps with Intune App Protection. 
 -  Device management for Windows 10 PCs, MacOS, and mobile devices with Intune device management. 
--  Identity protection with multi-factor authentication, self-service password reset, and conditional access.
+-  Identity protection with multi-factor authentication (MFA), self-service password reset, and Conditional Access.
 -  Consistent security configuration across devices&mdash;protection of company data across devices; Windows Defender, which is always on and up to date. 
  
  
@@ -156,6 +156,7 @@ No, customers that require Windows Defender Advanced Threat Protection need eith
 ## Partner opportunity
 
 ### Where can I learn more about the opportunities and benefits in becoming a Microsoft Partner? 
+
 IT service providers that are not already Microsoft partners can learn more about the Microsoft Cloud Solution Provider program at
 [https://partners.office.com/microsoft365business](https://partners.office.com/microsoft365business).
 

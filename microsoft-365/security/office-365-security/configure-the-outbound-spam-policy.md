@@ -38,7 +38,7 @@ The basic elements of an outbound spam policy in EOP are:
 
 - **The outbound spam filter rule**: Specifies the priority and recipient filters (who the policy applies to) for a outbound spam filter policy.
 
-The difference between these two elements isn't obvious when you manage outbound spam polices in the Security & Compliance Center:
+The difference between these two elements isn't obvious when you manage outbound spam policies in the Security & Compliance Center:
 
 - When you create an outbound spam policy in the Security & Compliance Center, you're actually creating a outbound spam filter rule and the associated outbound spam filter policy at the same time using the same name for both.
 
@@ -223,7 +223,7 @@ You can't disable the default outbound spam policy.
 
 ### Set the priority of custom outbound spam policies
 
-By default, outbound spam policies are given a priority that's based on the order they were created in (newer polices are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority.
+By default, outbound spam policies are given a priority that's based on the order they were created in (newer policies are lower priority than older policies). A lower priority number indicates a higher priority for the policy (0 is the highest), and policies are processed in priority order (higher priority policies are processed before lower priority policies). No two policies can have the same priority.
 
 Custom outbound spam policies are displayed in the order they're processed (the first policy has the **Priority** value 0). The default outbound spam policy named **Outbound spam filter policy** has the priority value **Lowest**, and you can't change it.
 

@@ -1,6 +1,6 @@
 ---
 title: Phase 5 - Mobile device management 
-description: Microsoft 365 Enterprise includes mobile device management using Microsoft Intune. Review the requirements and prerequisites, set up Intune using your Azure Active Directory resource, enroll iOS, macOS, Android, and Windows devices, deploy apps, create a configure profile, use a compliance policy, and enable conditional access for mobile device management with Microsoft 365 Enterprise.
+description: Microsoft 365 Enterprise includes mobile device management using Microsoft Intune. Review the requirements and prerequisites, set up Intune using your Azure Active Directory resource, enroll iOS, macOS, Android, and Windows devices, deploy apps, create a configure profile, use a compliance policy, and enable Conditional Access for mobile device management with Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, mobile device management, Intune
 author: JoeDavies-MSFT 
 f1.keywords:
@@ -101,11 +101,11 @@ The [Add apps](https://docs.microsoft.com/intune/apps/apps-add) article lists th
 |![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
-## Step 6: Turn on compliance and conditional access
+## Step 6: Turn on compliance and Conditional Access
 
-In the previous steps, you set up your environment, and enabled Intune. Now, you're ready to create some policies using compliance and conditional access.
+In the previous steps, you set up your environment, and enabled Intune. Now, you're ready to create some policies using compliance and Conditional Access.
 
-Compliance and conditional access are important to managing devices. [Compliance policies](https://docs.microsoft.com/intune/device-compliance-get-started) are created to help protect your organization's resources. When you create a compliance policy, you're defining the standard or the "baseline" of what a device must have. For example, you can choose an acceptable (or unacceptable) threat level, block jailbroken devices, require a password length, and more. If these devices don't meet your rules, meaning they aren't compliant, then you can block access to your resources.
+Compliance and Conditional Access are important to managing devices. [Compliance policies](https://docs.microsoft.com/intune/device-compliance-get-started) are created to help protect your organization's resources. When you create a compliance policy, you're defining the standard or the "baseline" of what a device must have. For example, you can choose an acceptable (or unacceptable) threat level, block jailbroken devices, require a password length, and more. If these devices don't meet your rules, meaning they aren't compliant, then you can block access to your resources.
 
 This "blocking" introduces [Conditional Access](https://docs.microsoft.com/intune/conditional-access). If a device is considered not-compliant, then you can block access to email, SharePoint, and more.
 
@@ -115,7 +115,7 @@ See [Get started with device compliance policies](https://docs.microsoft.com/int
 
 ## Step 7: Apply features and settings
 
-These features and settings are often considered the "cool" part of Intune, and are very powerful. Once you've successfully enforced some compliance policies using conditional access, you're ready to create **Device profiles**.
+These features and settings are often considered the "cool" part of Intune, and are very powerful. Once you've successfully enforced some compliance policies using Conditional Access, you're ready to create **Device profiles**.
 
 Intune in the [Azure portal](https://portal.azure.com) lets you create different profiles based on your device platform - iOS, macOS, Android, and Windows. For example, you can:
 
@@ -133,7 +133,7 @@ Remember, start small, and use a staged approach. Assign the profile to a pilot 
 Intune is a powerful service and includes many features. Here are some other tasks you can do using Intune:
 
 - Manage software and updates on Windows [devices](https://docs.microsoft.com/intune/windows-update-for-business-configure) & [PCs](https://docs.microsoft.com/intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune), and [iOS](https://docs.microsoft.com/intune/software-updates-ios) devices
-- Turn on [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) on your Windows 10 devices, and use compliance and conditional access to protect access to corporate resources, such as SharePoint or Exchange Online
+- Turn on [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) on your Windows 10 devices, and use compliance and Conditional Access to protect access to corporate resources, such as SharePoint or Exchange Online
 - Use [Lookout](https://docs.microsoft.com/intune/lookout-mobile-threat-defense-connector), [Symantec](https://docs.microsoft.com/intune/skycure-mobile-threat-defense-connector), and other mobile defense threat partners
 - Add a [partner certification authority (CA)](https://docs.microsoft.com/intune/certificate-authority-add-scep-overview) to issue and renew certificates
 - [Provide guidance to your end users](https://docs.microsoft.com/intune/end-user-educate) on the Company Portal app, getting apps, and more

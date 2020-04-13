@@ -64,6 +64,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Payment Services Directive 2 and Strong Customer Authentication
       href: billing-and-payments/psd2.md
+    - name: Tax information
+      href: billing-and-payments/tax-information.md
 - name: Billing accounts
   items: 
     - name: Manage billing accounts

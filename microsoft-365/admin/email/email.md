@@ -109,11 +109,11 @@ Learn how to manage email for your Microsoft 365 mailboxes.
                     <div class="cardText">
                         <h3>Set up email</h3>
                         <p><a href="https://support.office.com/article/d0cf6608-4862-4a7b-82fc-f5fef235c966">Video: Import email</a></p>
-                        <p><a href="https://support.office.com/article/a3e3bddb-582e-4133-8670-e61b9f58627e">Migrate email and contacts</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/admin/setup/migrate-email-and-contacts-admin">Migrate email and contacts</a></p>
                         <p><a href="create-a-shared-mailbox.md">Create shared mailboxes</a></p>
                         <p><a href="add-another-email-alias-for-a-user.md">Add additional email addresses to a user</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/owa-for-devices-contact-sync">Let users sync email contacts with their iPhone or iPad</a></p>
-                        <p><a href="https://support.office.com/article/69f58e99-c550-4274-ad18-c805d654b4c4">Set up a multifunction device to send email</a></p>
+                        <p><a href="https://docs.microsoft.com/Exchange/mail-flow-best-practices/how-to-set-up-a-multifunction-device-or-application-to-send-email-using-office-3">Set up a multifunction device to send email</a></p>
                     </div>
                 </div>
             </div>
@@ -126,10 +126,10 @@ Learn how to manage email for your Microsoft 365 mailboxes.
                     <div class="cardText">
                         <h3>Protect your email</h3>
                         <p><a href="create-edit-or-delete-a-security-group.md">Create, edit, or delete a security group</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection">Email anti-spam protection</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/block-email-spam-to-prevent-false-negatives">How to set up the spam filter settings to help block spam</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/anti-spam-and-anti-malware-protection">Anti-spam and anti-malware protection</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/prevent-email-from-being-marked-as-spam">Prevent email from being marked as spam</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection">Email anti-spam protection</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/create-block-sender-lists-in-office-365">Create blocked sender lists</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection">Anti-spam and anti-malware protection</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection#manage-errors-in-spam-filtering">Prevent email from being marked as spam</a></p>
                     </div>
                 </div>
             </div>
@@ -143,10 +143,9 @@ Learn how to manage email for your Microsoft 365 mailboxes.
                         <h3>Solve email connection and delivery problems</a></h3>
                         <p><a href="https://diagnostics.outlook.com/#/">Fix Outlook connection problems in Microsoft 365 and Exchange Online</a></p>
                         <p><a href="https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox">Recover deleted items in a user's mailbox</a></p>
-                        <p><a href="https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6">Find and fix email delivery issues</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues">Find and fix email delivery issues</a></p>
                         <p><a href="../get-help-with-domains/find-and-fix-issues.md">Find and fix issues (including issues with email) after adding your domain or DNS records</a></p>
-                        <p><a href="https://support.office.com/article/51daa6b9-2e35-49c4-a0c9-df85bf8533c3">Look up NDR error codes in Email non-delivery reports</a></p>
-                        <p><a href="https://go.microsoft.com/fwlink/?LinkID=618675">Troubleshoot Outlook issues</a></p>
+                        <p><a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online">Look up NDR error codes in Email non-delivery reports</a></p>
                     </div>
                 </div>
             </div>
@@ -162,7 +161,7 @@ Learn how to manage email for your Microsoft 365 mailboxes.
                         <p><a href="https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration">Ways to migrate multiple email accounts to Microsoft 365</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-hybrid">Exchange hybrid deployment content</a></p>
                         <p><a href="https://docs.microsoft.com/exchange/exchange-online">Exchange Online</a></p>
-                        <p><a href="https://docs.microsoft.com/office365/securitycompliance/eop/exchange-online-protection-overview">Exchange Online Protection</a></p>
+                        <p><a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview">Exchange Online Protection</a></p>
                     </div>
                 </div>
             </div>

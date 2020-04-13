@@ -92,7 +92,7 @@ The following sections describe what changes you need to make, if any, and what 
 You don't need to make any changes to your current subscription or data before migrating, which includes:
 
 - Subscription configuration, such as DNS domain names.
-- User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
+- User and group accounts and authentication settings, such as multi factor authentication or Conditional Access policies.
 - Productivity service configurations and their data, such as Teams, Exchange Online mailboxes, SharePoint Online sites, OneDrive for Business folders, and OneNote notebooks.
 
 Your users can now enjoy unlimited storage in the Exchange Online mailboxes and OneDrive for Business folders.

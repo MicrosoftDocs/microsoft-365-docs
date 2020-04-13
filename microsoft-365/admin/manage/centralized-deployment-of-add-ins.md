@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -25,7 +25,7 @@ description: "Determine if your tenant and users meet the requirements, so that 
 
 Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your tenant and users meet the requirements so that you can use Centralized Deployment.
 Centralized Deployment supports Windows, Mac, iOS, Android and Online Office apps.
-It can take up to 12 hours for an add-in to show up for client for all users.
+It can take up to 24 hours for an add-in to show up for client for all users.
   
 ## Requirements
 

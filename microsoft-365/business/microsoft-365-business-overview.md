@@ -71,7 +71,7 @@ Microsoft 365 for business helps **defended against threats** by:
 
 - Enabling anti-phishing policies that use machine learning models and impersonation detection to provide protection against advanced attacks (ATP anti-phishing intelligence). 
 
-- Setting up advanced policies that disable access from untrusted locations or bypass multifactor authentication from trusted places such as your office network (Azure MFA including trusted IPs, and Conditional Access). 
+- Setting up advanced policies that disable access from untrusted locations or bypass multifactor authentication from trusted places such as your office network (Azure Multi-Factor Authentication including trusted IPs, and Conditional Access). 
 
 - Enforcing malware protection across all your organization's Windows 10 devices and protecting files in key system folders from changes made by ransomware (Windows Defender)
 

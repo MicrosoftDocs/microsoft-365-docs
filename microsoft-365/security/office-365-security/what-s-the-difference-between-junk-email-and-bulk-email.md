@@ -36,7 +36,7 @@ Microsoft 365 customers with mailboxes in Exchange Online or standalone Exchange
 
 Because of the mixed reaction to bulk email, there isn't universal guidance that applies to every organization.
 
-Anti-spam polices have a default BCL threshold that's used to identify bulk email as spam. Admins can increase or decrease the threshold. For more information, see the following topics:
+Anti-spam policies have a default BCL threshold that's used to identify bulk email as spam. Admins can increase or decrease the threshold. For more information, see the following topics:
 
 - [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
