@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 description: "Learn about remediation actions in automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
-# Remediation actions following an automated investigation
+# Remediation actions in Microsoft 365
 
 ## Remediation actions
 

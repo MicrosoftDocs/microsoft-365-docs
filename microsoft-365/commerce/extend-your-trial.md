@@ -62,5 +62,4 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 ::: moniker-end
 
-
-When you're ready to buy, see [Buy your trial version of Microsoft 365 for business](buy-a-subscription-from-your-free-trial.md).
+When you're ready to buy, see [Buy your trial version](buy-a-subscription-from-your-free-trial.md).

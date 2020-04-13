@@ -22,7 +22,7 @@ The public preview of Compliance Manager provides you with early access to upcom
 
 You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) tool on the [Service Trust Portal](https://servicetrust.microsoft.com) to track, assign, and verify regulatory compliance activities related to Microsoft cloud services.
 
-## What's new in Compliance Manager (Preview)
+## Improved template creation and update process
 
 - **Role-based access to Compliance Manager:** The default **Guest access** role has been removed. In order for a user to access Compliance Manager, the global admin must [assign each user a permission](compliance-manager-overview.md#permissions).
 
@@ -87,7 +87,3 @@ The following sections cover known issues to be resolved in upcoming releases of
 ### Session timeout
 
 - When a session times out, a "Something went wrong" error may appear. To resolve, go to [Compliance Manager](https://servicetrust.microsoft.com/ComplianceManager) and log in again.
- 
-### Language support
-
-- All languages aren't supported for all webpages. If your local language is unsupported, view in US English.

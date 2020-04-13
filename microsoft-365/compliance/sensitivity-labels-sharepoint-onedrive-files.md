@@ -45,9 +45,10 @@ Before this preview, when you applied sensitivity labels that included encryptio
 >
 > The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint before you enable the preview. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you enable the preview. For example, they will then be returned in search and eDiscovery results.
 
-You can also now apply sensitivity labels to Microsoft Teams, Office 365 Groups, and SharePoint sites. For more information about this separate preview, see [Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md).
-
-You always have the choice to opt out of this preview at any time.
+When you enable this preview, three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied using Office on the web:
+- **Applied sensitivity label to file**
+- **Changed sensitivity label applied to file**
+- **Removed sensitivity label from file**
 
 Watch the following video (no audio) to see these new capabilities in action:
 

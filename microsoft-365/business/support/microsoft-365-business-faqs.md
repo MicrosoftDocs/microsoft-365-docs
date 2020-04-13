@@ -132,8 +132,9 @@ The most direct path to a successful Microsoft 365 Business Premium deployment i
 Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management and configuration of WiFi profiles, VPN certificates, can be managed in the full Intune console. 
   
 
-### Does Azure Active Directory Premium P1 come with Microsoft 365 Business Premium? 
-Microsoft 365 Business Premium includes select Azure AD Premium P1 (AADP P1) features such as self-service password reset with AD write-back, Azure MFA, and conditional access. It does not include the entirety of AADP P1. For more information, see the [Microsoft 365 Business Premium Service Description](https://technet.microsoft.com/library/b042d1fd-c997-46d8-8c02-1df4c932f148).
+### Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business? 
+
+Formerly Microsoft 365 Business had a subset of Azure AD Premium Plan 1 capabilities including Conditional Access, self-service password reset, and Multi-Factor Authentication. We are now rolling out the full Azure AD Premium P1 license to Microsoft 365 Business subscribers, initially to new customers and then to current subscribers. For more information, see [Microsoft 365 Business Service Description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) and this [blog](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/azure-active-directory-premium-p1-is-coming-to-microsoft-365/ba-p/1275496).
  
  
 ### Does Microsoft 365 Business Premium allow customers to manage Macs? 

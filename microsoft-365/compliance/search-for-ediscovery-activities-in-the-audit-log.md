@@ -18,7 +18,7 @@ description: "Learn how to search the audit log for events that are logged when 
 
 # Search for eDiscovery activities in the audit log
 
-Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding Windows PowerShell cmdlets are logged in the audit log. Events are logged when administrators or compliance administrators (or any user that's assigned eDiscovery permissions) perform the following Content Search and eDiscovery-related tasks in the Security & Compliance Center:
+Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Security & Compliance Center:
   
 - Creating and managing eDiscovery cases
     
