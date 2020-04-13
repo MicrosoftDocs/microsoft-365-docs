@@ -168,7 +168,7 @@ Suppose that you want to see email messages that users in your organization have
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Submissions**. (This was formerly called **User-reported**.)
+2. In the **View** menu, choose **Email** > **Submissions**.
 
    ![View menu for Explorer](../../media/ExplorerViewMenuEmailUserReported.png)
 
@@ -229,7 +229,3 @@ To learn more about roles and permissions, see the following resources:
 
 - The **real-time detections** report is available in Office 365 ATP Plan 1, whereas **Threat Explorer** is available in Office 365 ATP Plan 2.
 - The **real-time detections** report allows you to view detections in real-time. **Threat Explorer** does this as well, but also allows you to view additional details for a given attack.
-- An **All email** view is available in **Threat Explorer** (and is not in the **real-time detections** report).
-- More filtering capabilities and available actions are included in **Threat Explorer**.
-
-For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)

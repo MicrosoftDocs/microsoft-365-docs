@@ -75,7 +75,7 @@ Advanced features in Microsoft 365 Business Premium are available to help you pr
 
     Conditional Access can help protect your organization from sign-in risk, access attempts from an unexpected network or locale, access attempts from risky device types, and so on. Conditional Access policies are enforced after the first authentication is completed, and it uses signals from the first authentication event to determine if the attempted access should be approved, denied, or if more proof (such as a second form of identification) is required.
 
-    The Conditional Access features included are:
+    The conditional access features included are:
 
     - Access based on username, group, and role
     - Access [based on an app](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) 

@@ -37,6 +37,9 @@ When you add a subscription through the admin center, the new subscription is as
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+
 1. Sign in to the admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339), and then go to **Billing** \> **Purchase services**.
 
 2. On the **Purchase services** page, the subscriptions that are available to your organization are listed. Choose the Microsoft 365 plan that you want to try or buy.
@@ -62,13 +65,16 @@ When you add a subscription through the admin center, the new subscription is as
 
 11. On the **order receipt** page, select **continue**.
 
+#### Not using the new admin center yet?
+
+If you have new admin center turned off, watch the videos in this article to learn how to sign up for a trial Microsoft 365 subscription: [Sign up for a subscription](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. Sign in to the admin center at [https://portal.office.de](https://go.microsoft.com/fwlink/?linkid=847686), and then go to **Billing** \> **Purchase services**.
 
-2. On the **Purchase services** page, the subscriptions that are available to your organization are listed.
+2. On the **Purchase services** page, the subscriptions that are available to your organization are listed. 
 
 3. Select the ellipses under the Microsoft 365 plan that you want to try or buy, and then select **Start free trial**, which gives you 25 user licenses for a one-month term, or you can select **Buy now**.
 
@@ -94,7 +100,6 @@ When you add a subscription through the admin center, the new subscription is as
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. Sign in to the admin center at [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/?linkid=850628), and then go to **Billing** \> **Purchase services**.
 
 2. On the **Purchase services** page, the subscriptions that are available to your organization are listed. 
@@ -122,9 +127,10 @@ When you add a subscription through the admin center, the new subscription is as
 
 ::: moniker-end
 
+
 ## Next steps
 
-After you get the new subscription, you have to assign a license to the users who will use that subscription. To learn how, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md).
+After you get the new subscription, you have to assign a license to the users who will use that subscription. To learn how, see [Assign licenses to users](../admin/manage/assign-licenses-to-users.md) .
 
 ## Related articles
 
@@ -133,3 +139,4 @@ After you get the new subscription, you have to assign a license to the users wh
 [Buy or edit an add-on for Office 365 for business](buy-or-edit-an-add-on.md)
 
 [Add storage space for your subscription](add-storage-space.md)
+

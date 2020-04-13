@@ -108,7 +108,7 @@ The conditions now available can determine if:
   
 - Content contains a type of sensitive information.
     
-- Content contains a label. For more information, see the below section [Using a retention label as a condition in a DLP policy](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+- Content contains a label. For more information, see the below section [Using a label as a condition in a DLP policy](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - Content is shared with people outside or inside your organization.
 
@@ -323,23 +323,35 @@ For these reasons, the guidance for creating rules with different match accuraci
     
 - Any in-between confidence levels typically range from just above the lower confidence level to just below the higher confidence level.
     
-## Using a retention label as a condition in a DLP policy
+## Using a label as a condition in a DLP policy
 
-When you use a previously created and published [retention label](labels.md) as a condition in a DLP policy, there are some things to be aware of:
-
-- You have to have previously created, published and applied the retention label before you attempt to use it as a condition in a DLP policy.
-- Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, [How long it takes for retention labels to take effect](labels.md#how-long-it-takes-for-retention-labels-to-take-effect) for detailed information.
-- Using a retention label in a policy ***is only supported for items in SharePoint Online and OneDrive for Business***.
-
+You can create a label and then:
+<!-- what kind of label? -->
+  
+- **Publish** it, so that end users can see and manually apply the label to content. 
+    
+- **Auto-apply** it to content that matches the conditions that you choose. 
+    
+For more information about labels, see [Overview of retention labels](labels.md).
+  
+After you create a label, you can then use that label as a condition in your DLP policies. 
 
 ![Labels as a condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-You might want to use a retention label in a DLP policy if you have items that are under retention and disposition, and you also want to apply other controls to them, for example:
+For example, you might want to do this because:
+  
+- You published a label named **Confidential**, so that people in your organization can manually apply the label to confidential email and documents. By using this label as a condition in your DLP policy, you can restrict content labeled **Confidential** from being shared with people outside your organization. 
+    
+- You created a label named **Alpine House** for a project of that name, and then applied that label automatically to content containing the keywords "Alpine House". By using this label as a condition in your DLP policy, you can show a policy tip to end users when they're about to share this content with someone outside your organization. 
+    
+- You published a label named **Tax record**, so that your records manager can manually apply the label to content that needs to be classified as a record. By using this label as a condition in your DLP policy, you can look for content with this label along with other types of sensitive information such as ITINs or SSNs; apply protection actions to content labeled **Tax record**; and get detailed activity reports about the DLP policy from the DLP reports and audit log data. 
+    
+- You published a label named **Executive Leadership Team - Sensitive** to the Exchange mailboxes and OneDrive accounts of a group of executives. By using this label as a condition in your DLP policy, you can enforce both retention and protection actions on the same subset of content and users. 
+    
+By using labels as a condition in your DLP rules, can you selectively enforce protection actions on a specific set of content, locations, or users. 
 
-- You published a retention label named **tax year 2018**, which when applied to tax documents from 2018 that are stored in SharePoint retains them for 10 years then disposes of them. You also don't want those items being shared outside your organization, which you can do with a DLP policy.
-
-> [!IMPORTANT]
-> You'll get this error if you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location: **"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."** This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
+> [!NOTE]
+> If you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location, you will receive the following error: "Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location." This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
 
 ### Support for sensitivity labels is coming
 

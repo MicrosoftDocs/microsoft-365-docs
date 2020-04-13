@@ -6,7 +6,7 @@ ms.author: v-sharos
 author: shars
 manager: mnirkhe
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -44,7 +44,7 @@ The setup wizard guides you through the following steps:
 
 3. Add new users and assign licenses to them so that they can download and install Microsoft 365 apps.
 
-4. Connect'your domain.
+4. Connect your domain.
 
 ## Use the Setup page to complete and manage your configuration
 

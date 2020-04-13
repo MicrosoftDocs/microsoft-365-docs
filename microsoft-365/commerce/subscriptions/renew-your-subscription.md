@@ -43,6 +43,9 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
 2. Choose the subscription for which you want to manage recurring billing.
@@ -62,7 +65,11 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ::: moniker range="o365-germany"
   
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
+
+    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
+
+    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
 2. Choose the subscription for which you want to manage recurring billing.
  
@@ -81,7 +88,11 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ::: moniker range="o365-21vianet"
   
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
+
+    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
+
+    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
 2. Choose the subscription for which you want to manage recurring billing.
  
@@ -101,7 +112,9 @@ If you prepaid for your subscription with a product key, your subscription will 
 ## Related articles
 
 [Reactivate your subscription](reactivate-your-subscription.md)
-
+  
+[Add, update, or remove a credit card or bank account](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+  
 [What happens to my data and access when my subscription ends?](what-if-my-subscription-expires.md)
 
 [Add, update, or remove your payment methods](../billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)

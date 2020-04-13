@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -33,7 +33,7 @@ Administrators can specify an expiration period and any inactive group that reac
 Groups that are actively in use are renewed automatically. Any of the following actions will auto-renew a group:
 - SharePoint - view, edit, download, move, share, or upload files.
 - Outlook - join group, read or write group message from the group, and like a message (Outlook on the web).
-- Teams - visiting a teams channe'.
+- Teams - visiting a teams channel.
 
 > [!IMPORTANT]
 > When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.

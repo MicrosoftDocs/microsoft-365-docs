@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -23,7 +23,7 @@ description: "Learn to create and delete Office 365 groups, add and remove group
 
 # Create a group in the Microsoft 365 admin center
   
-While users can create an Office 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work. You can do this in the Microsoft 365 admin center if you are a global admin or a groups admin. 
+While users can create an Office 365 group from Outlook or other apps, as an admin, you may need to create or delete groups, add or remove members, and customize how they work. The Microsoft 365 admin center is the place to do this. 
 
 > [!TIP]
 > Office 365 connected Yammer groups must be created in Yammer, but can be managed in the Microsoft 365 admin center like other Office 365 groups. To learn more, see [Yammer and Office 365 Groups](https://support.office.com/article/d8c239dc-a48b-47ab-b85e-6b4b8191a869.aspx). 

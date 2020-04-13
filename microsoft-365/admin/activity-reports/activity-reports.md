@@ -82,7 +82,6 @@ To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [A
 Depending on your subscription, here are the available reports.
   
 - [Email activity](email-activity.md)
-- [Forms activity](forms-activity.md)
     
 - [Mailbox usage](mailbox-usage.md)
     
@@ -97,7 +96,6 @@ Depending on your subscription, here are the available reports.
 - [OneDrive for Business user activity](onedrive-for-business-activity.md)
   
 - [OneDrive for Business usage](onedrive-for-business-usage.md)
-- [ProPlus usage](microsoft365-apps-usage.md)
   
 - [SharePoint site usage](sharepoint-site-usage.md)
   
@@ -177,5 +175,5 @@ However, when you select a particular day (see number 3), up to 28 days from the
   
 ## Related articles
 
-[Reports in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
+[Reports in the Security &amp; Compliance Center](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a)
   

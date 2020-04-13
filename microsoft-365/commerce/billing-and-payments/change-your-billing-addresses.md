@@ -57,6 +57,9 @@ If you're using Microsoft 365 operated by 21Vianet in China, see [View your bill
 
 ::: moniker range="o365-worldwide"
 
+> [!NOTE]
+> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+
 ::: moniker-end
 
 ## Change your Sold-To address
@@ -168,9 +171,7 @@ By default, your organization's billing notifications are sent to the Microsoft 
 ## Change the alternate email address for another admin
 
 You can also change the alternate email address of other global and billing admins in your organization.
-
-::: moniker range="o365-worldwide"
-
+  
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 
 ::: moniker-end
@@ -197,4 +198,6 @@ You can also change the alternate email address of other global and billing admi
 
 [Understand your invoice](understand-your-invoice2.md)
 
-[Pay for your subscription](pay-for-your-subscription.md)
+[Pay for yoursubscription](pay-for-your-subscription.md)
+
+[Subscriptions and billing - Admin Help](../index.yml)

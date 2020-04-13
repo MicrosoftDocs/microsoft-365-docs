@@ -38,7 +38,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
-| **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Threat, Profanity, and Harassment language classifiers |
+| **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Offensive language classifier |
 | **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns and types, custom dictionary option, attachments larger than 1 MB |
 | **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange, Teams, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
 
@@ -128,7 +128,7 @@ Configure custom keyword dictionaries (or lexicons) to provide simple management
 
 Built-in classifiers scan sent or received messages across all communication channels in your organization for different types of compliance issues. Classifiers use a combination of artificial intelligence and keywords to identify language in messages likely to violate anti-harassment policies. Built-in classifiers currently support only English keywords in messages.
 
-Communication compliance uses built-in classifiers to scan communications for terms and sentiment for the following types of language:
+Communication compliance built-in classifiers scan communications for terms and sentiment for the following types of language:
 
 - **Threat**: Scans for threats to commit violence or physical harm to a person or property.
 - **Harassment**: Scans for offensive conduct targeting people regarding race, color, religion, national origin.

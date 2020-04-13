@@ -6,7 +6,7 @@ ms.author: janellem
 author: janellem
 manager: eliree
 audience: Admin
-article
+ms.topic: troubleshooting
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:

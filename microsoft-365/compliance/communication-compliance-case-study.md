@@ -48,21 +48,10 @@ Contoso IT administrators and compliance specialists attended online webinars ab
 The first step is to confirm that Contoso's Microsoft 365 licensing includes support for the communication compliance solution. To access and use communication compliance, Contoso IT administrators need to verify that Contoso has one of the following:
 
 - Microsoft 365 E5 subscription (paid or trial version)
-- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
-- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
-- Microsoft 365 A5 subscription (paid or trial version)
-- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
-- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
-- Microsoft 365 G5 subscription (paid or trial version)
-- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
-- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Office 365 Enterprise E3 license with the Advanced Compliance add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
-- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
-They must also confirm that users included in communication compliance policies must be assigned one of the licenses above.
-
->[!IMPORTANT]
->Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
+They must also confirm that users included in communication compliance policies must be assigned to one of the licenses listed above.
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 

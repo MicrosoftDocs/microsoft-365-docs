@@ -116,10 +116,10 @@ In this workflow step, you identify your compliance requirements and configure a
 
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
-- **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in Threat, Profanity, and Harassment classifiers to automatically detect content that may be considered abusive or offensive.
+- **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in classifier to automatically detect content that may be considered abusive or offensive.
 - **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access.
 - **Regulatory compliance**: Use this template to create a policy to scan communications for references to standard financial terms associated with regulatory standards.
-- **Custom policy**: Use this template to configure specific communication channels, classifiers, individual detection conditions, and the amount of content to review for supervision in your organization.
+- **Custom policy**: Use this template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
 ### Investigate
 

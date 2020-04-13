@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: article
+ms.topic: get-started-article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: 

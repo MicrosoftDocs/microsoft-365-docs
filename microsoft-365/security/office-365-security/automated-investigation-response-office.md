@@ -70,7 +70,7 @@ As part of AIR, security playbooks are rolling out in phases. Phase 1 is now gen
 
 Phase 1 also includes support for administrator triggered e-mail investigations (using [Threat Explorer](threat-explorer.md)).
 
-Phase 2 is now in progress with the following playbooks in **public preview**, providing recommendations for actions and aiding security administrators in investigating issues:
+Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions and aiding security administrators in investigating issues:
 - User reported as compromised (public preview)
 
 Further playbooks will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
