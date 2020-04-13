@@ -18,18 +18,12 @@ search.appverid: met150
 
 The Microsoft 365 security portal provides you with Device profile pages, so you can quickly assess the health and status of devices on your network.
 
-The page displays a wealth of information, gathered from [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP), and from the cloud-based [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) platform.
-
 > [!IMPORTANT]
 > The Device profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender ATP, Azure ATP, or both.
-
-On the Device profile, you can view security alerts, as well as many details about the device, such as which operating system it is running or which users have logged in to use it.
 
 If the device is enrolled in Microsoft Defender ATP, you can also use the Device profile page to perform some common security tasks.
 
 ## Navigating the Device profile page
-
-You can access the Device profile page for any device, by selecting the device name from the Incidents list, Incidents overview page, or the Incidents list flyout.
 
 The profile page is broken up into several broad sections.
 
@@ -49,7 +43,7 @@ Beside the main content area of the Device profile page is the sidebar.
 
 The sidebar lists the device's full name and exposure level. It also provides some important basic information in small subsections which can be toggled open or closed, such as:
 
-* **Tags** - Any Microsoft Defender ATP, Azure ATP, or custom tags associated with the device.
+* **Tags** - Any Microsoft Defender ATP, Azure ATP, or custom tags associated with the device. Tags from Azure ATP are not editable.
 * **Security info** - Open incidents and active alerts. Devices enrolled in Microsoft Defender ATP will also display exposure level and risk level.
 
 > [!TIP]
@@ -61,14 +55,15 @@ The sidebar lists the device's full name and exposure level. It also provides so
 
 ## Response actions
 
-Response actions offer a quick way to defend against and analyze threats. These actions are only available if the device is enrolled in Microsoft Defender ATP.
+[Response actions](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) offer a quick way to defend against and analyze threats.
 
 ![Image of action bar for device profile](../../media/mtp-machine-profile/hybrid-device-action-bar.PNG)
 
 > [!IMPORTANT]
-> Devices that aren't enrolled in Microsoft Defender ATP won't have any response actions listed in their Device profiles.
+> * Response actions are only available if the device is enrolled in Microsoft Defender ATP.
+> * Devices that are enrolled in Microsoft Defender ATP may display different numbers of response actions, based on the device's OS and version number.
 
-Devices that are enrolled in Microsoft Defender ATP will display the following response actions:
+Actions available on the device profile page include:
 
 * **Manage tags** - Updates custom tags you have applied to this device.
 * **Isolate device** - Isolates the device from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the device is isolated, for communication purposes.
