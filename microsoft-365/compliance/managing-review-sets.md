@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to manage review sets so you can analyze, query, view, tag, and export data in an Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Manage review sets in Advanced eDiscovery

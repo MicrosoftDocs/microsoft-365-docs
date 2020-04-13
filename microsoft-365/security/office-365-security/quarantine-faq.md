@@ -15,7 +15,8 @@ search.appverid:
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
-description: "Answers to frequently asked questions about quarantine in Office 365."
+description: Frequently asked questions and answers about quarantine for Office 365 mailboxes in Exchange Online or standalone EOP without Exchange Online mailboxes.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Quarantine FAQ in Office 365

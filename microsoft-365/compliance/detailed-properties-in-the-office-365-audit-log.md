@@ -17,7 +17,8 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: "Descriptions of additional properties included in an Office 365 audit log record."
+description: This article provides descriptions of additional properties included when you export results for an Office 365 audit log record.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Detailed properties in the Office 365 audit log

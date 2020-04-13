@@ -14,9 +14,11 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 
-description: "Use this topic to learn more about configuring privileged access management."
+description: Use this article to learn more about enabling and configuring privileged access management in Office 365.
 ---
 
 # Get started with privileged access management

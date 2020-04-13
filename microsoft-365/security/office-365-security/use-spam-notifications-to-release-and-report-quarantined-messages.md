@@ -1,5 +1,5 @@
 ---
-title: "End-user spam notifications in Office 36"
+title: "End-user spam notifications in Office 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,7 +17,9 @@ search.appverid:
 ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
-description: "When an admin enables end-user spam notifications in anti-spam policies, message recipients will receive periodic notifications about their quarantined messages."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you will learn about end-user spam notifications for quarantined messages."
 ---
 
 # End-user spam notifications in Office 365

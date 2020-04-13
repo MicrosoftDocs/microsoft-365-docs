@@ -10,12 +10,14 @@ ms.date: 02/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
+ms.custom: 
+- TN2DMC
+- seo-marvel-apr2020
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
-description: "This introductory document will help you understand Exchange Online Protection (EOP) and some important terminology. This is applicable for Office 365 customers who are protecting Exchange Online cloud-hosted mailboxes and EOP standalone customers who are protecting on-premises mailboxes such as Exchange Server 2016."
+description: "In this article, you'll learn about Exchange Online Protection (EOP), a cloud-based email filtering service."
 ---
 
 # What is Exchange Online Protection (EOP)

@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: "Introduces safety tips for email messages filtered by the EOP and Office 365 spam filter."
+description: Learn about how EOP and Office 365 protect you with spam, phishing, and malware prevention by adding a saftey tip to the top of emails.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Safety tips in email messages in Office 365

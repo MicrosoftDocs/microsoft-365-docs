@@ -17,7 +17,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to search for and find personal data in Office 365."
+description: Learn how to search for and find personal data subject to  General Data Protection Regulations (GDPR) in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 # Search for and find personal data
 
@@ -25,7 +26,7 @@ Personal data is defined very broadly under the GDPR as any data that relates to
 
 Article 4 – Definitions
 
-> ‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;
+> 'personal data' means any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;
 
 This article demonstrates how to find personal data stored in SharePoint Online and OneDrive for Business (which includes the sites for all Office 365 groups and Microsoft Teams).
 
@@ -98,7 +99,7 @@ At this time sensitive information types cannot be used to find data at rest in 
 <td align="left"><p>Create a new search item for each sensitive information type</p></td>
 <td align="left"><p>Use the following syntax:</p>
 <blockquote>
-<p>SensitiveType:”&lt;type&gt;”</p>
+<p>SensitiveType:"&lt;type&gt;"</p>
 </blockquote>
 <p>For example:</p>
 <blockquote>
@@ -113,7 +114,7 @@ At this time sensitive information types cannot be used to find data at rest in 
 <p><li>Many false positives</li></p>
 <p><li>Missing known instances of data</li></p>
 <p>See <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Export Content Search results from the Office 365 Security &amp; Compliance Center</a>.</p>
-<p>Note: if you’re using Mozilla Firefox or Chrome, you might need to first download reports using Internet Explorer or Edge in order to install the required add-in.</p></td>
+<p>Note: if you're using Mozilla Firefox or Chrome, you might need to first download reports using Internet Explorer or Edge in order to install the required add-in.</p></td>
 </tr>
 </tbody>
 </table>
@@ -148,7 +149,7 @@ Start with these sensitive information types. Many more sensitive information ty
 >
 > France Social Security Number (INSEE)
 >
-> German Driver’s License Number
+> German Driver's License Number
 >
 > Germany Identity Card Number
 >
@@ -162,9 +163,9 @@ Start with these sensitive information types. Many more sensitive information ty
 >
 > Ireland Personal Public Service (PPS) Number
 >
-> Italy’s Driver’s License Number
+> Italy's Driver's License Number
 >
-> Netherlands Citizen’s Service (BSN) Number
+> Netherlands Citizen's Service (BSN) Number
 >
 > Norway Identity Number
 >
@@ -182,7 +183,7 @@ Start with these sensitive information types. Many more sensitive information ty
 >
 > Sweden Passport Number
 >
-> U.K. Driver’s License Number
+> U.K. Driver's License Number
 >
 > U.K. Electoral Roll Number
 >
@@ -196,20 +197,20 @@ Start with these sensitive information types. Many more sensitive information ty
 
 You can add these parameters to a sensitive information type query:
 
--   Count range — define the number of occurrences of sensitive information a document needs to contain before it’s included in the query results.
+-   Count range — define the number of occurrences of sensitive information a document needs to contain before it's included in the query results.
 
 -   Confidence range — the level of confidence that the detected sensitive type is actually a match, such as 85 (85%).
 
 Syntax:
 
--   SensitiveType:”\<type\>|\<count range\>|\<confidence range\>”
+-   SensitiveType:"\<type\>|\<count range\>|\<confidence range\>"
 
 Examples:
 
--   SensitiveType:“Credit Card Number|5” (return only documents that contain exactly five credit card numbers)
+-   SensitiveType:"Credit Card Number|5" (return only documents that contain exactly five credit card numbers)
 
--   SensitiveType:“Credit Card Number|\*|85..” (confidence range is 85 percent or higher)
+-   SensitiveType:"Credit Card Number|\*|85.." (confidence range is 85 percent or higher)
 
-Note: “SensitiveType” is case sensitive, but the rest of the query is not.
+Note: "SensitiveType" is case sensitive, but the rest of the query is not.
 
 You can also use properties, and operators to illustrate how you can refine your queries. For more information and examples, see [Form a query to find sensitive data stored on sites](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).

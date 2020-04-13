@@ -14,7 +14,9 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "To prevent phishing messages from reaching your mailbox, Outlook.com and Outlook on the web verify that the sender is who they say they are and mark suspicious messages as junk email."
+ms.custom:
+- seo-marvel-apr2020
+description: "This article will guide you on, how to prevent phishing messages from reaching your mailbox, Outlook.com and Outlook on the web."
 ---
 
 # Unverified Sender

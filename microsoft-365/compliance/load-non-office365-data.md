@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use the Non-Office 365 content import feature to upload non-Office 365 documents into evidence in a data investigation.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Load non-Office 365 data into evidence

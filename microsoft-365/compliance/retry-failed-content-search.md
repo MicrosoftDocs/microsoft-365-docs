@@ -14,7 +14,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Use the Retry button for resolve Content Searches that have content location errors."
+description: During an investigation, you can use the Retry button to resolve Content Searches that have content location errors.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Retry a Content Search to resolve a content location error

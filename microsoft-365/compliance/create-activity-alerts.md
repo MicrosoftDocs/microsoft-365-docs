@@ -16,7 +16,9 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
-description: "Add and manage activity alerts in the security and compliance center so that Office 365 will send you email notifications when users perform specific activities in Office 365."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to create and deactivate activity alerts in the security and compliance center for Office 365."
 ---
 
 # Create activity alerts in the Office 365

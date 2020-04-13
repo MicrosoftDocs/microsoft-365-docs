@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
-description: "This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Office 365 and best practices for bulk mailing to Office 365 customers."
+ms.custom:
+- seo-marvel-apr2020
+description: "This article provides troubleshooting information for issues with sending email to inboxes in Office 365 & best practices for bulk mailing to Office 365 customers."
 ---
 
 # Troubleshooting mail sent to Office 365
