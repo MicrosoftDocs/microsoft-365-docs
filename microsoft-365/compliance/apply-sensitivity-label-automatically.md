@@ -90,7 +90,11 @@ The labels are ordered for evaluation according to their position that you speci
 
 ## Don't configure a parent label to be applied automatically or recommended
 
-Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client. For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
+Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended in Office apps, and don't select a parent label for an auto-labeling policy. If you do, the parent label won't be applied to content.
+
+To use automatic labeling with sublabels, make sure you publish both the parent label and the sublabel.
+
+For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
 
 ## How to configure auto-labeling for Office apps
 
