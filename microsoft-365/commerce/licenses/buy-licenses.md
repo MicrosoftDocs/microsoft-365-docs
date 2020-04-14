@@ -33,9 +33,9 @@ You can add or remove licenses from your subscriptions using these steps.
 
 You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [remove licenses from users](../../admin/manage/remove-licenses-from-users.md) before you can remove the license from the subscription.
 
-::: moniker range="o365-worldwide"
+## Add or remove licenses for your business subscription
 
-## What you need to know about buying licenses for your business subscription
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
