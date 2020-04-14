@@ -16,14 +16,14 @@ search.appverid: met150
 
 # Device profile page
 
-The Microsoft 365 security portal provides you with Device profile pages, so you can quickly assess the health and status of devices on your network.
+The Microsoft 365 security portal provides you with device profile pages, so you can quickly assess the health and status of devices on your network.
 
 > [!IMPORTANT]
-> The Device profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender ATP, Azure ATP, or both.
+> The device profile page may appear slightly different, depending on whether the device is enrolled in Microsoft Defender ATP, Azure ATP, or both.
 
-If the device is enrolled in Microsoft Defender ATP, you can also use the Device profile page to perform some common security tasks.
+If the device is enrolled in Microsoft Defender ATP, you can also use the device profile page to perform some common security tasks.
 
-## Navigating the Device profile page
+## Navigating the device profile page
 
 The profile page is broken up into several broad sections.
 
@@ -37,7 +37,7 @@ If the device is enrolled in Microsoft Defender ATP, you will also see a list of
 
 ## Sidebar
 
-Beside the main content area of the Device profile page is the sidebar.
+Beside the main content area of the device profile page is the sidebar.
 
 ![Image of sidebar tab for device profile](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
@@ -77,7 +77,7 @@ Actions available on the device profile page include:
 
 ## Tabs section
 
-The Device profile tabs allow you to toggle through an overview of security details about the device, and tables containing a list of alerts.
+The device profile tabs allow you to toggle through an overview of security details about the device, and tables containing a list of alerts.
 
 Devices enrolled in Microsoft Defender ATP will also display tabs that feature a timeline, a list of security recommendations, a software inventory, a list of discovered vulnerabilities, and missing KBs (security updates).
 
