@@ -106,9 +106,9 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
 
 The short answer is yes! PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send email, the Office 365 service encrypts PDF file attachments not the Outlook client. 
 
-Once you've enabled PDF file attachment encryption, you can seamlessly encrypt PDFs you send from Outlook on the web, Outlook for iOS, and Outlook for Android, without any additional steps.
+Once you've enabled PDF file attachment encryption, you can encrypt PDFs you send without any additional steps from Outlook on the web, Outlook for iOS, and Outlook for Android.
 
-Outlook desktop does not natively support encryption of PDF file attachments. To work around this, you can still enable PDF file attachement encryption in your organization. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
+Outlook desktop does not natively support encryption of PDF file attachments. To work around this, you can still enable PDF file attachment encryption in your organization. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
 
 To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
