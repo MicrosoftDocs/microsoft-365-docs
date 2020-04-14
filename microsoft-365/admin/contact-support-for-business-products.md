@@ -236,7 +236,7 @@ This article applies to customers of Office 365 Germany, which has domains endin
 As an admin for Office 365 Germany, you get free access to our knowledgeable support agents for help resolving technical issues, as well as for pre-sales, account, and billing support. You can also contact us on behalf of Office 365 Germany users in your organization.
 
 > [!NOTE]
-> All of the support options below are for Microsoft Cloud Germany. For more information about how Microsoft uses the data that you provide when you contact Microsoft Office 365 support, please see the [privacy statement](https://go.microsoft.com/fwlink/p/?LinkId=512132).
+> All of the support options below are for Microsoft Cloud Germany. For more information about how Microsoft uses the data that you provide when you contact Microsoft support, please see the [privacy statement](https://go.microsoft.com/fwlink/p/?LinkId=512132).
 
 ### Get assisted support
 
@@ -253,6 +253,6 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 
 ### Let our community help
 
-You can also [search the Office 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
+You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
 
 ::: moniker-end

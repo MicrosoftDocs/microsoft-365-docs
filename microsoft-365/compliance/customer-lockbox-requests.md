@@ -21,7 +21,7 @@ description: "Learn about Customer Lockbox requests that allow you to control ho
 
 # Customer Lockbox in Office 365
 
-This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other Office 365 services, please submit a request at [Office 365 UserVoice](https://office365.uservoice.com/).
+This article provides deployment and configuration guidance for Customer Lockbox. Customer Lockbox supports requests to access data in Exchange Online, SharePoint Online, and OneDrive for Business. To recommend support for other services, please submit a request at [Office 365 UserVoice](https://office365.uservoice.com/).
 
 To see the options for licensing your users to benefit from Microsoft 365 compliance offerings, including this one, as of April 1, 2020, see the [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).
 
@@ -37,7 +37,7 @@ Occasionally, Microsoft engineers help troubleshoot and fix customer reported is
 
 The following steps outline the typical workflow when a Microsoft engineer initiates a Customer Lockbox request:
 
-1. Someone at an organization experiences an issue with their Office 365 mailbox.
+1. Someone at an organization experiences an issue with their Microsoft 365 mailbox.
 
 2. After the user troubleshoots the issue, but can't fix it, they open a support request with Microsoft Support.
 
@@ -172,7 +172,7 @@ The actions performed by a Microsoft engineer after a Customer Lockbox request i
 
 ## Frequently asked questions
 
-#### Which Office 365 services does Customer Lockbox apply to?
+#### Which Microsoft 365 services does Customer Lockbox apply to?
 
 Customer Lockbox is currently supported in Exchange Online, SharePoint Online, and OneDrive for Business.
 
@@ -182,7 +182,7 @@ Customer Lockbox is included with the Microsoft 365 or Office 365 E5 subscriptio
 
 #### What is customer content?
 
-Customer content is the data created by users of Office 365 services and applications. Examples of customer content include:
+Customer content is the data created by users of Microsoft 365 services and applications. Examples of customer content include:
 
 - Email body or email attachments
 
@@ -230,7 +230,7 @@ Only a global administrator in your organization can specify who can approve Cus
 
 #### What if I need more information about a content access request to approve it?
 
-Each Customer Lockbox request contains an Office 365 service request number. You can contact Microsoft Support and reference this service number to get more information about the request.
+Each Customer Lockbox request contains an Microsoft 365 service request number. You can contact Microsoft Support and reference this service number to get more information about the request.
 
 #### When a Customer Lockbox request is approved, how long are the permissions valid?
 
@@ -260,15 +260,15 @@ See the [Microsoft Trust Center](https://www.microsoft.com/trustcenter/default.a
 
 #### How does Microsoft ensure that a member of its staff doesn't have standing access to customer content in Office 365 applications?
 
-Microsoft implements extensive preventive measures through access control systems, and detective measures to identify and address attempts to circumvent these access control systems. Office 365 operates with the principles of least privilege and just-in-time access. Therefore, no Microsoft personnel have permission to access customer content on an ongoing basis. If permission is granted, it is for a limited duration. 
+Microsoft implements extensive preventive measures through access control systems, and detective measures to identify and address attempts to circumvent these access control systems. Microsoft 365 operates with the principles of least privilege and just-in-time access. Therefore, no Microsoft personnel have permission to access customer content on an ongoing basis. If permission is granted, it is for a limited duration. 
 
-Office 365 uses an access control system called *Lockbox* to process requests for permissions that grant the ability to perform operational and administrative functions within the service. An operator must request access to customer content using Lockbox, which then requires a second person to take action on the request (e.g., approve it) before access is granted. That second person can't be the requestor and must be designated to approve access to customer content. Only if the request is approved does the operator acquire temporary access to customer content. After the elevation period expires, Lockbox revokes access.
+Microsoft 365 uses an access control system called *Lockbox* to process requests for permissions that grant the ability to perform operational and administrative functions within the service. An operator must request access to customer content using Lockbox, which then requires a second person to take action on the request (e.g., approve it) before access is granted. That second person can't be the requestor and must be designated to approve access to customer content. Only if the request is approved does the operator acquire temporary access to customer content. After the elevation period expires, Lockbox revokes access.
 
 Please refer to the [Online Services Terms](https://www.microsoft.com/licensing/product-licensing/products) for more details about Microsoft general security practices.
 
 #### Under what circumstances do Microsoft engineers need access to my content?
 
-The most common scenario where Microsoft engineers need access customer content is when the customer makes a support request requiring access for troubleshooting. A foundational principle of Office 365 is that the service operates without Microsoft access to customer content. Nearly all service operations performed by Microsoft are fully automated and human involvement is highly controlled and abstracted away from customer content. The goal for Office 365 is access to customer content to support the service isn't needed until the customer approves a specific request for Microsoft access.
+The most common scenario where Microsoft engineers need access customer content is when the customer makes a support request requiring access for troubleshooting. A foundational principle of Microsoft 365 is that the service operates without Microsoft access to customer content. Nearly all service operations performed by Microsoft are fully automated and human involvement is highly controlled and abstracted away from customer content. The goal for Microsoft 365 is access to customer content to support the service isn't needed until the customer approves a specific request for Microsoft access.
 
 #### I already thought my data was secure with the Microsoft cloud, so why do I need Customer Lockbox?
 

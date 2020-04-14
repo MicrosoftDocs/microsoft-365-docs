@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: "Find out how much tax you will be charged for your Office 365 for business subscription in different regions. "
+description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
 ms.custom: okr_SMB
 ---
 

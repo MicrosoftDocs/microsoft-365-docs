@@ -1,5 +1,5 @@
 ---
-title: "Switch Office 365 for business plans manually"
+title: "Switch Microsoft 365 for business plans manually"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,10 +21,10 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: "Switch Office 365 for business subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+description: "Switch Microsoft 365 for business subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
 ---
 
-# Switch Office 365 for business plans manually
+# Switch Microsoft 365 for business plans manually
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
@@ -49,11 +49,11 @@ To continue with a manual switch, read [Step 2: Buy a new subscription](#step-2-
   
 - OR -
   
- **Purchase a new subscription and licenses:** Follow the steps in [Buy another Office 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
+ **Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
   
 Make sure you purchase a subscription for the same organization that the users are in now. For example, check the email addresses for the users you want to move. If their email addresses include @contoso.com, you must purchase a new subscription for contoso.com. Include a license for each user that you want to move.
   
- **If you need help choosing a plan**, see the [Office 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page, or [call support](../../admin/contact-support-for-business-products.md).
+ **If you need help choosing a plan**, see the [Microsoft 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page, or [call support](../../admin/contact-support-for-business-products.md).
   
 ## Step 3: Check your new subscription and licenses
 
@@ -67,7 +67,7 @@ Make sure you purchase a subscription for the same organization that the users a
 
     The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Check that both subscriptions are listed under **ACTIVE**. [The new subscription isn't listed, or isn't active](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **The new Office 365 for business subscription with available licenses**
+   **The new Microsoft 365 for business subscription with available licenses**
 
     ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
   
@@ -75,7 +75,7 @@ Make sure you purchase a subscription for the same organization that the users a
 
     Each user needs a license that matches their subscription. So if you want to move ten users to Office 365 Enterprise E5, you'll need to make sure ten licenses are available. In the picture here, ten licenses were purchased for Office 365 Enterprise E5, and all ten licenses are available for assignment.
 
-4. **Need more licenses for the new subscription?** Go to the **Subscriptions** page and [Buy licenses for your Office 365 for business subscription](../licenses/buy-licenses.md).
+4. **Need more licenses for the new subscription?** Go to the **Subscriptions** page and [Buy licenses for your Microsoft 365 for business subscription](../licenses/buy-licenses.md).
   
     [What about the old licenses?](#what-about-the-old-licenses)
 

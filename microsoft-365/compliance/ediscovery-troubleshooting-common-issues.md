@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Investigate, troubleshoot, and resolve common issues in Office 365 eDiscovery."
+description: "Investigate, troubleshoot, and resolve common issues in eDiscovery."
 siblings_only: true
 ---
 

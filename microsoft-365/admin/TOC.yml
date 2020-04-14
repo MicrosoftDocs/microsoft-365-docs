@@ -87,7 +87,7 @@
       items: 
         - name: Email in Office 365
           href: email/email.md
-        - name: Office 365 user email settings
+        - name: User email settings
           href: email/office-365-user-email-settings.md
         - name: Add another email alias for a user
           href: email/add-another-email-alias-for-a-user.md
@@ -233,7 +233,7 @@
           href: create-groups/office-365-groups.md
         - name: Compare groups
           href: create-groups/compare-groups.md
-        - name: Create an Office 365 Group
+        - name: Create an Office 365 group
           href: create-groups/create-groups.md
         - name: Manage an Office 365 group
           href: create-groups/manage-groups.md

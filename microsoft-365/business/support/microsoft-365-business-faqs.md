@@ -29,7 +29,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
  
 **Enterprise-grade device management and security capabilities** 
 - Helps provide protection from external threats like phishing and sophisticated malware with Office 365 Advanced Threat Protection Plan 1 and Windows Defender Exploit Guard. 
--  Helps control and manage how sensitive information is accessed and transmitted with Office 365 data loss prevention policies and Azure Information Protection Plan 1. 
+-  Helps control and manage how sensitive information is accessed and transmitted with data loss prevention policies and Azure Information Protection Plan 1. 
 -  Helps protect, preserve, and back up your data with Exchange Online Archiving.  
 -   App protection for Office and other mobile apps with Intune App Protection. 
 -  Device management for Windows 10 PCs, MacOS, and mobile devices with Intune device management. 

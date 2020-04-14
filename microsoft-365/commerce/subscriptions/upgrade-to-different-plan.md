@@ -31,7 +31,7 @@ monikerRange: 'o365-worldwide'
 When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
 
 > [!NOTE]
-> This article applies to the new admin center. If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page. To view the article about the old admin center, see [Switch to a different Office 365 for business plan](switch-to-a-different-plan.md).
+> This article applies to the new admin center. If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page. To view the article about the old admin center, see [Switch to a different Microsoft 365 for business plan](switch-to-a-different-plan.md).
 
 ## Use the Upgrade tab
 
@@ -175,4 +175,4 @@ The day your plan upgrade is complete, the billing on your old subscription will
 
 [Change plans manually](change-plans-manually.md)
 
-[Back up data before switching Office 365 for business plans](back-up-data-before-switching-plans.md)
+[Back up data before switching Microsoft 365 for business plans](back-up-data-before-switching-plans.md)

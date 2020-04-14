@@ -134,9 +134,9 @@ After you get the new subscription, you have to assign a license to the users wh
 
 ## Related articles
 
-[Buy another Office 365 for business subscription](buy-another-subscription.md)
+[Buy another Microsoft 365 for business subscription](buy-another-subscription.md)
 
-[Buy or edit an add-on for Office 365 for business](buy-or-edit-an-add-on.md)
+[Buy or edit an add-on for Microsoft 365 for business](buy-or-edit-an-add-on.md)
 
 [Add storage space for your subscription](add-storage-space.md)
 

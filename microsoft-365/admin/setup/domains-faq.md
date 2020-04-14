@@ -20,7 +20,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: "Learn more about domains in Office 365 by finding answers to your questions in FAQ."
+description: "Learn more about domains by finding answers to your questions in FAQ."
 ms.custom: okr_smb
 ---
 
@@ -58,7 +58,7 @@ It's important that you have or create **only one TXT record for SPF**. If you a
 
 There are two options for DNS management with Office 365:
   
-1. You change your nameserver (NS) records, and then Office 365 takes care of all the service-specific records, like setting up your MX record for email. **(Recommended)**
+1. You change your nameserver (NS) records, and then Microsoft takes care of all the service-specific records, like setting up your MX record for email. **(Recommended)**
     
 2. You add DNS records for email and other Office 365 services at your DNS host yourself. **(Experts only)**
     
@@ -82,7 +82,7 @@ There are two options for DNS management with Office 365:
  
 #### Disadvantages
 You have to set up the DNS records for Office 365 services yourself (unless you have a GoDaddy domain). 
--  If your current DNS host doesn't support all of the required record types for Office 365, some Office 365 features won't be available and you might need to switch to a different DNS host. 
+-  If your current DNS host doesn't support all of the required record types for Microsoft 365, some features won't be available and you might need to switch to a different DNS host. 
 - When Office 365 changes requirements for DNS records, or adds new services, you have to make updates yourself at your DNS host. 
    
 ## What is a domain name?

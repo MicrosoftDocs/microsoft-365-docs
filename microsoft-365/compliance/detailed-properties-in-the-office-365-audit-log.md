@@ -22,16 +22,16 @@ description: "Descriptions of additional properties included in an audit log rec
 
 # Detailed properties in the audit log
 
-When you export the results of an audit log search from the Security & Compliance Center, you have the option to download all the results that meet your search criteria. You do this by selecting **Export results** \> **Download all results** on the **Audit log search** page. For more information, see [Search the audit log in the Office 365](search-the-audit-log-in-security-and-compliance.md).
+When you export the results of an audit log search from the Security & Compliance Center, you have the option to download all the results that meet your search criteria. You do this by selecting **Export results** \> **Download all results** on the **Audit log search** page. For more information, see [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
   
- When your export all results for an audit log search, the raw data from the Office 365 unified audit log is copied to a comma-separated value (CSV) file that is downloaded to your local computer. This file contains additional information from each audit record in a column named **AuditData**. This column contains a multi-value property for multiple properties from the audit log record. Each of the **property: value** pairs in this multi-value property are separated by a comma. 
+ When your export all results for an audit log search, the raw data from the unified audit log is copied to a comma-separated value (CSV) file that is downloaded to your local computer. This file contains additional information from each audit record in a column named **AuditData**. This column contains a multi-value property for multiple properties from the audit log record. Each of the **property: value** pairs in this multi-value property are separated by a comma. 
   
-The following table describes the properties that are included (depending on the Office 365 service in which an event occurs) in the multi-property **AuditData** column. The **Office 365 service that has this property** column indicates the service and type of activity (user or admin) that includes the property. For more detailed information about these properties or about properties that may not be listed in this topic, see [Office 365 Management Activity API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993).
+The following table describes the properties that are included (depending on the service in which an event occurs) in the multi-property **AuditData** column. The **Office 365 service that has this property** column indicates the service and type of activity (user or admin) that includes the property. For more detailed information about these properties or about properties that may not be listed in this topic, see [Management Activity API Schema](https://go.microsoft.com/fwlink/p/?LinkId=717993).
   
 > [!TIP]
 > You can use the JSON transform feature in Power Query in Excel to split the **AuditData** column into multiple columns so that each property has its own column. This lets you sort and filter on one or more of these properties. To learn how to do this, see [Export, configure, and view audit log records](export-view-audit-log-records.md). 
   
-|**Property**|**Description**|**Office 365 service that has this property**|
+|**Property**|**Description**|**Microsoft 365 service that has this property**|
 |:-----|:-----|:-----|
 |Actor|The user or service account that performed the action.|Azure Active Directory|
 |AddOnName|The name of an add-on that was added, removed, or updated in a team. The type of add-ons in Microsoft Teams is a bot, a connector, or a tab.|Microsoft Teams|
@@ -82,9 +82,9 @@ The following table describes the properties that are included (depending on the
 |UserId|The user who performed the action (specified in the **Operation** property) that resulted in the record being logged. Audit records for activity performed by system accounts (such as SHAREPOINT\system or NT AUTHORITY\SYSTEM) are also included in the audit log. Another common value for the UserId property is app@sharepoint. This indicates that the "user" who performed the activity was an application that has the necessary permissions in SharePoint to perform organization-wide actions (such as search a SharePoint site or OneDrive account) on behalf of a user, admin, or service. For more information, see [The app\@sharepoint user in audit records](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records). |All|
 |UserKey|An alternative ID for the user identified in the **UserID** property. For example, this property is populated with the passport unique ID (PUID) for events performed by users in SharePoint. This property also might specify the same value as the **UserID** property for events occurring in other services and events performed by system accounts.|All|
 |UserSharedWith|The user that a resource was shared with. This property is included if the value for the **Operation** property is **SharingSet**. This user is also listed in the **Shared with** column in the report.|SharePoint|
-|UserType|The type of user that performed the operation. The following values indicate the user type. <br/> <br/> **0** - A regular user. <br/>**2** - An administrator in your Office 365  organization.<sup>1</sup> <br/>**3** - A Microsoft datacenter administrator or datacenter system account. <br/>**4** - A system account. <br/>**5** - An application. <br/>**6** - A service principal.<br/>**7** - A custom policy.<br/>**8** - A system policy.|All|
+|UserType|The type of user that performed the operation. The following values indicate the user type. <br/> <br/> **0** - A regular user. <br/>**2** - An administrator in your Microsoft 365 organization.<sup>1</sup> <br/>**3** - A Microsoft datacenter administrator or datacenter system account. <br/>**4** - A system account. <br/>**5** - An application. <br/>**6** - A service principal.<br/>**7** - A custom policy.<br/>**8** - A system policy.|All|
 |Version|Indicates the version number of the activity (identified by the **Operation** property) that's logged.|All|
-|Workload|The Office 365 service where the activity occurred.|All|
+|Workload|The Microsoft 365 service where the activity occurred.|All|
 ||||
 
 > [!NOTE]

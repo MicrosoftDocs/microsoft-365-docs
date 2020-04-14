@@ -29,7 +29,7 @@ description: "Find your invoice or billing statement in the Microsoft 365 admin 
 
 # View your bill or invoice
 
-This article is for people who have an Office 365 for business subscription. You must be a Global Admin or Billing Admin to do the steps described in this article.
+This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
 If you need help interpreting the charges you see on your bill, see [Understand your invoice](understand-your-invoice2.md) for a detailed walkthrough.
   

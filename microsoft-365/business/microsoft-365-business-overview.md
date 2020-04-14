@@ -87,7 +87,7 @@ Your **business data is protected** by:
 
 Your **devices are secured** by:
 
-- Controlling which devices and users can access your Office 365 data, with options to block users from signing in from home computers, unapproved apps, or outside of work hours (Conditional Access).
+- Controlling which devices and users can access your Microsoft data, with options to block users from signing in from home computers, unapproved apps, or outside of work hours (Conditional Access).
 
 - Applying security policies to protect business data on iOS and Android devices. For example, you can require users to provide a PIN or fingerprint to access business data, and encrypt data on mobile devices (App protection for Office mobile apps).
 

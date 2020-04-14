@@ -59,9 +59,9 @@ When you buy Office 365 for business, you choose to pay by credit card or bank a
 > [!NOTE]
 > After you switch payment methods, your users will continue to have the same license assignments as before.
   
- **Want to change your payment frequency?** If you want to change how frequently you pay for your subscription, either from annual to monthly or monthly to annual, you'll need to [call Office 365 support](../../admin/contact-support-for-business-products.md) for help.
+ **Want to change your payment frequency?** If you want to change how frequently you pay for your subscription, either from annual to monthly or monthly to annual, you'll need to [call Microsoft support](../../admin/contact-support-for-business-products.md) for help.
   
- **Just want to change your credit card or bank account information?** See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
+ **Just want to change your credit card or bank account information?** See [Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md).
   
  **What if I have an outstanding balance?**
   
@@ -155,16 +155,16 @@ When you return to the **Subscriptions** page, you will see the old subscription
 ::: moniker range="o365-worldwide"
 ## Change from credit card or bank account to invoice
 
-You can change to pay by invoice only if your order is above a certain quantity. If you do not meet the requirement, you see the message “Your order quantity isn’t large enough to qualify for invoice with check wire.”
+You can change to pay by invoice only if your order is above a certain quantity. If you do not meet the requirement, you see the message "Your order quantity isn't large enough to qualify for invoice with check wire."
 
-If your order quantity is too high, a credit check might be required. If so, you see the message “Not eligible to change to invoice. Your order requires a credit check.” In this case, you change to pay by invoice manually. Use the following steps to complete the manual change.
+If your order quantity is too high, a credit check might be required. If so, you see the message "Not eligible to change to invoice. Your order requires a credit check." In this case, you change to pay by invoice manually. Use the following steps to complete the manual change.
 
 If no credit check is required, use the steps in [Use the new admin center to change from credit card or bank account to invoice](#use-the-new-admin-center-to-change-from-credit-card-or-bank-account-to-invoice).
 
 1. Go to <a href="https://Office365.com" target="_blank">Office365.com</a> and buy the same subscription as the one you currently have. At check-out, choose the option to pay by invoice.
 
 > [!IMPORTANT]
-> You can’t use the **Products & services** page in the admin center to buy the subscription. You must use  <a href="https://Office365.com" target="_blank">Office365.com</a>.
+> You can't use the **Products & services** page in the admin center to buy the subscription. You must use  <a href="https://Office365.com" target="_blank">Office365.com</a>.
 
 2. After the purchase is complete, cancel the original subscription. Your users are automatically moved to the new subscription.
 

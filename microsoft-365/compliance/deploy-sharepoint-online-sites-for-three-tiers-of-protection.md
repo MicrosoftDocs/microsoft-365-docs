@@ -95,7 +95,7 @@ The members of the site, through group membership in one of the access groups, c
   
 ## Next step
 
-[Protect SharePoint Online files with Office 365 labels and DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+[Protect SharePoint Online files with labels and DLP](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## See also
 
