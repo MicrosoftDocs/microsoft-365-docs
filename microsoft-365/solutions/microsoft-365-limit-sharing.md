@@ -24,7 +24,7 @@ The methods of sharing files are listed in the table below. Click the link in th
 
 |Sharing method|Description|Limiting options|
 |:-------------|:----------|:-------------|
-|[Office 365 group or team](#office-365-group-or-team)|People granted access to a Microsoft Teams team or Office 365 group have edit access to files in the associated SharePoint site.|If the group or team is private, sharing invitations to join the team go to the owner for approval. Admins can disable guest access to prevent access by people from outside the organization.|
+|[Microsoft 365 group or team](#office-365-group-or-team)|People granted access to a Microsoft Teams team or Microsoft 365 group have edit access to files in the associated SharePoint site.|If the group or team is private, sharing invitations to join the team go to the owner for approval. Admins can disable guest access to prevent access by people from outside the organization.|
 |[SharePoint site](#sharepoint-site)|People can be granted Owner, Member, or Visitor access to a SharePoint site and will have that level of access to files in the site.|Site permissions can be restricted so that only site owners can share the site.|
 |[Sharing with specific people](#sharing-with-specific-people)|Site members and people with edit permissions can give direct permissions to files and folders or share them by using *Specific people* links.|Site permissions can be restricted so that only site owners can share files and folders. In this case, direct access and *Specific people* link sharing by site members goes to site owner for approval.|
 |[SharePoint guest sharing](#sharepoint-guest-sharing)|SharePoint site owners and members can share files and folders with people outside the organization.|Guest sharing can be disabled for the entire organization or for individual sites.|
@@ -36,9 +36,9 @@ While you can use the admin controls described in this article to limit sharing 
 
 To understand how sharing is being used in your organization, [run a report on file and folder sharing](https://docs.microsoft.com/sharepoint/sharing-reports).
 
-## Office 365 group or team
+## Microsoft 365 group or team
 
-If you want to limit sharing in an Office 365 group or Microsoft Teams team, it's important to make the group or team private. People inside your organization can join a public group or team anytime. Unless the group or team is private, there's no way to limit sharing of the team or its files within the organization.
+If you want to limit sharing in a Microsoft 365 group or Microsoft Teams team, it's important to make the group or team private. People inside your organization can join a public group or team anytime. Unless the group or team is private, there's no way to limit sharing of the team or its files within the organization.
 
 ### Guest sharing
 
@@ -49,15 +49,15 @@ To turn off guest sharing for Teams
 2. Turn off **Allow guest access in Teams**.
 3. Click **Save**.
 
-If you want to prevent guest access in Office 365 Groups, you can turn off the groups guest access settings in the Microsoft 365 admin center.
+If you want to prevent guest access in Microsoft 365 Groups, you can turn off the groups guest access settings in the Microsoft 365 admin center.
 
-To turn off guest sharing in Office 365 Groups
+To turn off guest sharing in Microsoft 365 Groups
 1. In the Microsoft 365 admin center, click **Settings**, and then click **Settings**.
-2. On the **Services** tab, click **Office 365 Groups**.
+2. On the **Services** tab, click **Microsoft 365 Groups**.
 3. Clear the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes.
 4. Click **Save changes**.
 
-    ![Screenshot of Office 365 Groups sharing settings in the Microsoft 365 admin center](../media/office-365-groups-guest-settings-off.png)
+    ![Screenshot of Microsoft 365 Groups sharing settings in the Microsoft 365 admin center](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
 > If you want to prevent guest sharing for a particular group or team, you can do so by using Microsoft PowerShell. See [Block guest users from a specific group](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#block-guest-users-from-a-specific-group) for details.
@@ -74,7 +74,7 @@ To allow sharing invitations only from specified domains
 
 ## SharePoint site
 
-You can limit SharePoint site sharing to site owners only. This prevents site members from sharing the site. Keep in mind that if the site is connected to an Office 365 group, group members can invite others to the group and those users will have site access.
+You can limit SharePoint site sharing to site owners only. This prevents site members from sharing the site. Keep in mind that if the site is connected to a Microsoft 365 group, group members can invite others to the group and those users will have site access.
 
 To limit site sharing to owners
 1. In the site, click the gear icon, and then click **Site permissions**.

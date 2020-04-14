@@ -233,11 +233,11 @@
           href: create-groups/office-365-groups.md
         - name: Compare groups
           href: create-groups/compare-groups.md
-        - name: Create an Office 365 group
+        - name: Create an Microsoft 365 group
           href: create-groups/create-groups.md
-        - name: Manage an Office 365 group
+        - name: Manage an Microsoft 365 group
           href: create-groups/manage-groups.md
-        - name: Plan for governance in Office 365 Groups
+        - name: Plan for governance in Microsoft 365 groups
           href: create-groups/plan-for-groups-governance.md
         - name: Manage creation of Groups
           href: create-groups/manage-creation-of-groups.md
@@ -249,7 +249,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: Add or remove members from groups
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Office 365 Group Expiration Policy
+        - name: Microsoft 365 group Expiration Policy
           href: create-groups/office-365-groups-expiration-policy.md
         - name: Restore deleted Group
           href: create-groups/restore-deleted-group.md

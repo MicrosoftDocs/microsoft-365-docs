@@ -33,7 +33,7 @@
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Office activations](/Office365/Admin/activity-reports/microsoft-office-activations?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams device usage](/Office365/Admin/activity-reports/microsoft-teams-device-usage?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams user activity](/Office365/Admin/activity-reports/microsoft-teams-user-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Microsoft 365 Reports in the admin center - Office 365 groups](/Office365/Admin/activity-reports/office-365-groups?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft 365 groups](/Office365/Admin/activity-reports/office-365-groups?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - OneDrive for Business activity](/Office365/Admin/activity-reports/onedrive-for-business-activity?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - OneDrive for Business usage](/Office365/Admin/activity-reports/onedrive-for-business-usage?view=o365-worldwide) | modified |
 | 1/10/2020 | [Microsoft 365 Reports in the admin center - SharePoint activity](/Office365/Admin/activity-reports/sharepoint-activity?view=o365-worldwide) | modified |
@@ -56,9 +56,9 @@
 | 1/10/2020 | [What Microsoft 365 for business subscription do I have?](/Office365/Admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide) | modified |
 | 1/10/2020 | [Contact support for business products - Admin Help](/Office365/Admin/contact-support-for-business-products?view=o365-worldwide) | modified |
 | 1/10/2020 | [Compare groups in Office 365](/Office365/Admin/create-groups/compare-groups?view=o365-worldwide) | modified |
-| 1/10/2020 | [Create an Office 365 group in the admin center](/Office365/Admin/create-groups/create-groups?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Group Expiration Policy](/Office365/Admin/create-groups/office-365-groups-expiration-policy?view=o365-worldwide) | modified |
-| 1/10/2020 | [Overview of Office 365 Groups for administrators](/Office365/Admin/create-groups/office-365-groups?view=o365-worldwide) | modified |
+| 1/10/2020 | [Create a Microsoft 365 group in the admin center](/Office365/Admin/create-groups/create-groups?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Group Expiration Policy](/Office365/Admin/create-groups/office-365-groups-expiration-policy?view=o365-worldwide) | modified |
+| 1/10/2020 | [Overview of Microsoft 365 Groups for administrators](/Office365/Admin/create-groups/office-365-groups?view=o365-worldwide) | modified |
 | 1/10/2020 | [Add or edit custom DNS records in Office 365](/Office365/Admin/dns/add-or-edit-custom-dns-records?view=o365-worldwide) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with 1&1 IONOS](/Office365/Admin/dns/change-nameservers-at-1-1-internet?view=o365-worldwide) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with Amazon Web Services (AWS)](/Office365/Admin/dns/change-nameservers-at-aws?view=o365-worldwide) | modified |

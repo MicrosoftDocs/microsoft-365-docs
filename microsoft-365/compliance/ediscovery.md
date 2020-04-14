@@ -14,12 +14,12 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: "Office 365 offers a number of different eDiscovery tools that you can use to search for and hold content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Office 365 groups, and Skype for Business conversations."
+description: "Office 365 offers a number of different eDiscovery tools that you can use to search for and hold content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 groups, and Skype for Business conversations."
 ---
 
 # eDiscovery
 
-Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery in Office 365 to search for content in Exchange Online mailboxes, Office 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, and Skype for Business conversations. You can search mailboxes and sites in the same eDiscovery search by using the Content Search tool in the Security & Compliance Center. And you can use eDiscovery cases in the Security & Compliance Center to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 subscription, you can further analyze content by using the Advanced eDiscovery solution in Microsoft 365.
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery in Office 365 to search for content in Exchange Online mailboxes, Microsoft 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, and Skype for Business conversations. You can search mailboxes and sites in the same eDiscovery search by using the Content Search tool in the Security & Compliance Center. And you can use eDiscovery cases in the Security & Compliance Center to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 subscription, you can further analyze content by using the Advanced eDiscovery solution in Microsoft 365.
   
 Office 365 provides the following eDiscovery tools:
   
@@ -35,7 +35,7 @@ The following table contains links to topics that will help you use the Content 
   
 |**Topic**|**Description**|
 |:-----|:-----|
-|[Run a Content Search](content-search.md) <br/> |Learn how to use the Content Search tool to search mailboxes, public folders, Office 365 Groups, Microsoft Teams, SharePoint Online sites, One Drive for Business locations, and Skype for Business conversations in your organization in a single search.  <br/> |
+|[Run a Content Search](content-search.md) <br/> |Learn how to use the Content Search tool to search mailboxes, public folders, Microsoft 365 Groups, Microsoft Teams, SharePoint Online sites, One Drive for Business locations, and Skype for Business conversations in your organization in a single search.  <br/> |
 |[Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md) <br/> |Learn about the email and file properties and search conditions you can use to search for content in mailboxes and sites in your organization.  <br/> |
 |[View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md) <br/> |Learn how to use search statistics to display and compare the statistics for one or more content searches, and to configure new and existing searches to return statistics for each keyword in the search query.  <br/> |
 |[Bulk edit Content Searches in the Security & Compliance Center](bulk-edit-content-searches.md) <br/> |Learn how to bulk edit the search queries and content locations of one or more Content Searches.  <br/> |

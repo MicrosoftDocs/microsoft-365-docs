@@ -183,7 +183,7 @@ Sign in to the Office 365 portal with your user account name and Azure Multi-Fac
 
 
 <a name="crit-identity-self-service-groups"></a>
-### Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
+### Optional: Self-service group management is enabled for specific Azure AD security and Microsoft 365 groups
 
 You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
 

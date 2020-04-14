@@ -314,7 +314,7 @@ For example, you need to create a RESEARCH sensitivity label to protect the emai
 - Researchers must have the ability to change documents marked with the RESEARCH sensitivity label.
 - Non-research employees only need to have the ability to view documents marked with the RESEARCH sensitivity label. 
 
-This means you need to create and manage two additional Office 365 groups:
+This means you need to create and manage two additional Microsoft 365 groups:
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -400,7 +400,7 @@ After the build-out and configuration of your Microsoft 365 for enterprise infra
   - COND-ACCESS-EXCLUDE
   - The appropriate AD DS or Azure AD security groups that are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups 
   - Workgroup, departmental, and regional groups
-  - Sensitivity label Office 365 groups (as needed)
+  - Sensitivity label Microsoft 365 groups (as needed)
 - Azure AD sign-in Conditional Access policies that use the BASELINE, SENSITIVE, and HIGHLY-REGULATED, and COND-ACCESS-EXCLUDE Azure AD groups.
 - Intune application and device compliance policies.
 - Custom sensitive information types (as needed).

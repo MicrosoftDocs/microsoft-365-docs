@@ -28,11 +28,11 @@ To manage investigations in response to a DSR submitted by a person in your orga
   
 - Any user mailbox in your organization. This includes Skype for Business conversations and one-to-one chats in Microsoft Teams
     
-- All mailboxes associated with an Office 365 Group and all team mailboxes in Microsoft Teams
+- All mailboxes associated with an Microsoft 365 Group and all team mailboxes in Microsoft Teams
     
 - All SharePoint Online sites and OneDrive for Business accounts in your organization
     
-- All Teams sites and Office 365 Group sites in your organization
+- All Teams sites and Microsoft 365 Group sites in your organization
     
 - All public folders in Exchange Online
     
@@ -280,7 +280,7 @@ The following sections contain more information about using the DSR case tool to
 
 [Exporting partially indexed items](#exporting-partially-indexed-items)
 
-[Searching and exporting data from Microsoft Teams and Office 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+[Searching and exporting data from Microsoft Teams and Microsoft 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
 
 [Searching Exchange public folders](#searching-exchange-public-folders)
   
@@ -390,15 +390,15 @@ For more information about partially indexed items, see:
 
 - [Exporting partially indexed items](export-search-results.md#exporting-partially-indexed-items)
     
-### Searching and exporting data from Microsoft Teams and Office 365 Groups
+### Searching and exporting data from Microsoft Teams and Microsoft 365 Groups
 
 Conversations that are part of the Chat list in Microsoft Teams (called Team chats or one-to-one chats) are stored in the Exchange Online mailbox of the users who participate in the chats. Also, the files a person shares in a one-to-one chat are stored in the OneDrive account of the person who shares the file. Because the built-in search searches all mailboxes and OneDrive accounts in the organization, team chats and documents shared in a chat session (that the data subject created or uploaded) are returned by built-in search in a DSR case.
   
 Alternatively, conversations that are part of a Teams channel (also called channel messages) are stored in the mailbox that's associated with a team. These types of conversations that the data subject participated in are also returned by the built-in search because all mailboxes associated with Teams are searched. Additionally, files that a data subject shares in a Teams channel are stored on the team's SharePoint site. Files created or uploaded by the data subject are returned by the built-in search in a DSR case because the sites associated with Teams are included in the search.
   
-Similarly, mailboxes and SharePoint sites that correspond to an Office 365 Group are also included in the built-in search. This means that email messages sent or received by the data subject and files created or uploaded by the data subject are returned. 
+Similarly, mailboxes and SharePoint sites that correspond to an Microsoft 365 Group are also included in the built-in search. This means that email messages sent or received by the data subject and files created or uploaded by the data subject are returned. 
   
-For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of members, see the "Searching Microsoft Teams and Office 365 Groups" section in [Content Search in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
+For more information about using Content Search to search for items in Microsoft Teams and Microsoft 365 Groups or to see how to get a list of members, see the "Searching Microsoft Teams and Microsoft 365 Groups" section in [Content Search in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
   
 ### Searching Exchange public folders
 

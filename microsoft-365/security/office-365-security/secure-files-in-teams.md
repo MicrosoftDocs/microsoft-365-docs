@@ -130,7 +130,7 @@ Using retention labels is recommended for environments with sensitive data. Afte
 
 - You can apply DLP policies that are based on retention labels.
 
-- People in your organization can apply a label manually to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Office 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate DLP policy applied.
+- People in your organization can apply a label manually to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate DLP policy applied.
 
 As illustrated, this solution includes creating the following retention labels:
 

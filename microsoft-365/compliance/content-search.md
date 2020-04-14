@@ -18,7 +18,7 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Office 365 groups, Yammer Groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content related to a GDPR data subject request."
+description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Microsoft 365 groups, Yammer Groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content related to a GDPR data subject request."
 ---
 
 # Content Search
@@ -33,7 +33,7 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
     
 - Microsoft Teams 
 
-- Office 365 Groups
+- Microsoft 365 Groups
 
 - Yammer Groups 
     
@@ -80,7 +80,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
        - **Locations:** Choose the content locations to search.
     
-      - **All locations:** Use this option to search all content locations in your organization. This includes email in all Exchange mailboxes (including all inactive mailboxes, and mailboxes for all Microsoft Teams, Yammer Groups, and Office 365 Groups), all Skype for Business conversations, all SharePoint and OneDrive for Business sites (including the sites for all Microsoft Teams, Yammer Groups, and Office 365 Groups), and items in all Exchange public folders.
+      - **All locations:** Use this option to search all content locations in your organization. This includes email in all Exchange mailboxes (including all inactive mailboxes, and mailboxes for all Microsoft Teams, Yammer Groups, and Microsoft 365 Groups), all Skype for Business conversations, all SharePoint and OneDrive for Business sites (including the sites for all Microsoft Teams, Yammer Groups, and Microsoft 365 Groups), and items in all Exchange public folders.
     
       - **Specific locations:** Use this option to search specific content locations. You can search all content locations for a specific Office 365 service (such as searching all Exchange mailboxes or search all SharePoint sites) or you can search for content in specific locations of any of the Office 365 services that are displayed. 
     
@@ -173,7 +173,7 @@ See the following sections for more information about content searches.
   
 [Searching OneDrive accounts](#searching-onedrive-accounts)
   
-[Searching Microsoft Teams and Office 365 Groups](#searching-microsoft-teams-and-office-365-groups)
+[Searching Microsoft Teams and Microsoft 365 Groups](#searching-microsoft-teams-and-office-365-groups)
 
 [Searching Yammer Groups](#searching-yammer-groups)
   
@@ -234,15 +234,15 @@ Keep the following things in mind when using the keyword list to create a search
     
     In the rare case of a person's user principal name (UPN) being changed, the URL for their OneDrive location is changed to incorporate the new UPN. If this happens, you have to modify a content search by adding the user's new OneDrive URL and removing the old one.
   
-### Searching Microsoft Teams and Office 365 Groups
+### Searching Microsoft Teams and Microsoft 365 Groups
 
-You can search the mailbox that's associated with an Office 365 Group or a Microsoft Team. Because Microsoft Teams is built on Office 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
+You can search the mailbox that's associated with an Microsoft 365 Group or a Microsoft Team. Because Microsoft Teams is built on Microsoft 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
   
-Keep the following things in mind when searching for content in Microsoft Teams and Office 365 Groups.
+Keep the following things in mind when searching for content in Microsoft Teams and Microsoft 365 Groups.
   
-- To search for content located in Teams and Office 365 Groups, you have to specify the mailbox and SharePoint site that are associated with a team or group.
+- To search for content located in Teams and Microsoft 365 Groups, you have to specify the mailbox and SharePoint site that are associated with a team or group.
     
-- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or an Office 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Office 365 Group named Senior Leadership Team: 
+- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or an Microsoft 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Microsoft 365 Group named Senior Leadership Team: 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -255,9 +255,9 @@ Keep the following things in mind when searching for content in Microsoft Teams 
     > [!NOTE]
     > To run the **Get-UnifiedGroup** cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role. 
   
-- When a user's mailbox is searched, any team or Office 365 Group that the user is a member of won't be searched. Similarly, when you search a team or an Office 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
+- When a user's mailbox is searched, any team or Microsoft 365 Group that the user is a member of won't be searched. Similarly, when you search a team or an Microsoft 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
     
-- To get a list of the members of a team or an Office 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
+- To get a list of the members of a team or an Microsoft 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 

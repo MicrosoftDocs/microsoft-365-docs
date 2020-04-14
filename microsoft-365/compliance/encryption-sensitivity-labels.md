@@ -151,7 +151,7 @@ When you assign permissions, you can choose:
 
 - Everyone in your organization (all tenant members). This setting excludes guest accounts.
 - Any authenticated users. Make sure you understand the [requirements and limitations](#requirements-and-limitations-for-add-any-authenticated-users) of this setting before selecting it.
-- Any specific user or email-enabled security group, distribution group, Office 365 group, or dynamic distribution group. 
+- Any specific user or email-enabled security group, distribution group, Microsoft 365 group, or dynamic distribution group. 
 - Any email address or domain. Use this option to specify all users in another organization who uses Azure AD, by entering any domain name from that organization. You can also use this option for social providers, by entering their domain name such as **gmail.com**, **hotmail.com**, or **outlook.com**.
 
 > [!NOTE]

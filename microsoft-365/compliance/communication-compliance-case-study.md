@@ -138,7 +138,7 @@ Contoso compliance specialists want to add all employee to the communication pol
 They need to create a new group to include all Contoso employees, so they take the following steps:
 
 1. Contoso IT administrators IT sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Groups** > **Groups**.
-2. They select **Add a group** and complete the wizard to create a new *Office 365 group* or *Distribution group*.
+2. They select **Add a group** and complete the wizard to create a new *Microsoft 365 group* or *Distribution group*.
 
 ![Groups](../media/communication-compliance-case-all-employees.png)
 

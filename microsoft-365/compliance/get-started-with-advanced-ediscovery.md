@@ -140,7 +140,7 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
   
    - You can place a hold on custodian data. This preserves data that may be relevant to the case during the investigation.
   
-   - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Office 365 Group with a custodian) so this data can be re-indexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
+   - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Microsoft 365 Group with a custodian) so this data can be re-indexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
 
    - You can use the [communications workflow](managing-custodian-communications.md) in Advanced eDiscovery to send a legal hold notification to custodians.
 

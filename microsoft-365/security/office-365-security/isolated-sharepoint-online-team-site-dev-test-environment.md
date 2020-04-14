@@ -137,7 +137,7 @@ Figure 1 shows the access groups and their membership.
 
 **Figure 1**
 
-![The Office 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![The Microsoft 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## Phase 3: Create a new ProjectX SharePoint Online team site and isolate it
 

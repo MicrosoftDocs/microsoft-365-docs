@@ -42,7 +42,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
     
 - [Email anti-spam protection](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) and malware filters for the organization. 
     
-- Manage Office 365 Groups
+- Manage Microsoft 365 groups
     
 ## Exchange Online role groups
 

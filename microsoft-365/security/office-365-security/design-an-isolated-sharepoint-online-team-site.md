@@ -64,7 +64,7 @@ Using the default SharePoint groups as an example:
     
  **Best practice:** Although you can manage permissions through individual user accounts, we recommend that you use a single Azure AD group, known as an access group, instead. This simplifies the management of permissions through membership in the access group, rather than managing the list of user accounts for each SharePoint group.
   
-Azure AD groups for Office 365 are different than Office 365 groups. Azure AD groups appear in the Microsoft 365 admin center with their **Type** set to **Security** and do not have an email address. Azure AD groups can be managed within:
+Azure AD groups for Office 365 are different than Microsoft 365 groups. Azure AD groups appear in the Microsoft 365 admin center with their **Type** set to **Security** and do not have an email address. Azure AD groups can be managed within:
   
 - Active Directory Domain Services (AD DS)
     
@@ -117,7 +117,7 @@ To use nested Azure AD groups:
 3.  For the appropriate level of access for the container access group, identify the SharePoint group and corresponding permission level.
     
 > [!NOTE]
-> You cannot use nested Office 365 groups. 
+> You cannot use nested Microsoft 365 groups. 
   
 Here is an example of nested Azure AD groups for the ProjectX member access group.
   

@@ -17,7 +17,7 @@ description: "Use the Content Search eDiscovery tool in the Security & Complianc
 
 # Search for content
 
-Use the Content Search tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in Office 365 collaboration tools such as Microsoft Teams and Office 365 Groups.
+Use the Content Search tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in Office 365 collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
   
 ## Search for content
 

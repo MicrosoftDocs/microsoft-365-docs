@@ -26,7 +26,7 @@ description: "Learn to customize, organize, and manage your team site."
 
 # Customize your team site for file storage and sharing
 
-If you have a small business with a few employees, one of the best ways to set up and facilitate file sharing and online collaboration is to use OneDrive and a SharePoint team site together. We recommend creating a team site that's connected to an Office 365 group. If you want to use chat, you can create this site by creating a team in Microsoft Teams. For more info about Teams, see [Video: What is Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). If you don't want to use Teams, you can create a team site from the SharePoint start page. 
+If you have a small business with a few employees, one of the best ways to set up and facilitate file sharing and online collaboration is to use OneDrive and a SharePoint team site together. We recommend creating a team site that's connected to a Microsoft 365 group. If you want to use chat, you can create this site by creating a team in Microsoft Teams. For more info about Teams, see [Video: What is Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). If you don't want to use Teams, you can create a team site from the SharePoint start page. 
   
 [What is a SharePoint team site?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -97,7 +97,7 @@ As you manage your team site, you may have to add or remove users. Here's inform
   
 View a video on groups with [Understand and manage groups](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx). 
   
-To add users to an Office 365 group, see [Add users individually or in bulk to Microsoft 365 - Admin Help](../add-users/add-users.md).
+To add users to a Microsoft 365 group, see [Add users individually or in bulk to Microsoft 365 - Admin Help](../add-users/add-users.md).
   
 Learn how to handle access requests with [Set up and manage access requests](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx).
   

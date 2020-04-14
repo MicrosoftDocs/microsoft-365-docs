@@ -59,7 +59,7 @@ The following table shows the mailbox types that are currently supported by mail
 |:---------|:---------:|:---------:|
 |User mailboxes|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |Shared mailboxes|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
-|Office 365 Group mailboxes|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|Microsoft 365 Group mailboxes|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |Resource mailboxes||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Public folder mailboxes||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 
@@ -126,13 +126,13 @@ The following table describes the mailbox actions that are available in mailbox 
 > [!IMPORTANT]
 > If you customized the mailbox actions to audit for any logon type *before* mailbox auditing on by default was enabled in your organization, the customized settings are preserved on the mailbox and aren't overwritten by the default mailbox actions as described in this section. To revert the audit mailbox actions to their default values (which you can do at any time), see the [Restore the default mailbox actions](#restore-the-default-mailbox-actions) section later in this topic.
 
-### Mailbox actions for Office 365 Group mailboxes
+### Mailbox actions for Microsoft 365 Group mailboxes
 
-Mailbox auditing on by default brings mailbox audit logging to Office 365 Group mailboxes, but you can't customize what's being logged (you can't add or remove mailbox actions that are logged for any logon type).
+Mailbox auditing on by default brings mailbox audit logging to Microsoft 365 Group mailboxes, but you can't customize what's being logged (you can't add or remove mailbox actions that are logged for any logon type).
 
-The following table describes the mailbox actions that are logged by default on Office 365 Group mailboxes for each logon type.
+The following table describes the mailbox actions that are logged by default on Microsoft 365 Group mailboxes for each logon type.
 
-Remember, an admin with Full Access permission to an Office 365 Group mailbox is considered a delegate.
+Remember, an admin with Full Access permission to an Microsoft 365 Group mailbox is considered a delegate.
 
 |**Mailbox action**|**Description**|**Admin**|**Delegate**|**Owner**|
 |:---------|:---------|:---------:|:---------:|:---------:|
@@ -154,7 +154,7 @@ To display the value on user mailboxes or shared mailboxes, replace \<MailboxIde
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-To display the value on Office 365 group mailboxes, replace \<MailboxIdentity\> with the name, alias, or email address of the shared mailbox and run the following command in Exchange Online PowerShell:
+To display the value on Microsoft 365 group mailboxes, replace \<MailboxIdentity\> with the name, alias, or email address of the shared mailbox and run the following command in Exchange Online PowerShell:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -162,7 +162,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 The value `Admin, Delegate, Owner` indicates:
 
-- The default mailbox actions for all three logon types are being audited. This is the only value you'll see on Office 365 Group mailboxes.
+- The default mailbox actions for all three logon types are being audited. This is the only value you'll see on Microsoft 365 Group mailboxes.
 
 - An admin *has not* changed the audited mailbox actions for any logon type on a user mailbox or a shared mailbox. Note this is the default state after mailbox auditing on by default is initially turned on in your organization.
 
@@ -183,7 +183,7 @@ For more information, see the [Change or restore mailbox actions logged by defau
 To see the mailbox actions that are currently being logged on user mailboxes or shared mailboxes, replace \<MailboxIdentity\> with the name, alias, email address, or user principal name (username) of the mailbox, and run one or more of the following commands in Exchange Online PowerShell.
 
 > [!NOTE]
-> Although you can add the `-GroupMailbox` switch to the following **Get-Mailbox** commands for Office 365 Group mailboxes, don't believe the values that are returned. The default and static mailbox actions that are audited for Office 365 Group mailboxes are described in the [Mailbox actions for Office 365 Group mailboxes](#mailbox-actions-for-office-365-group-mailboxes) section earlier in this topic.
+> Although you can add the `-GroupMailbox` switch to the following **Get-Mailbox** commands for Microsoft 365 Group mailboxes, don't believe the values that are returned. The default and static mailbox actions that are audited for Microsoft 365 Group mailboxes are described in the [Mailbox actions for Microsoft 365 Group mailboxes](#mailbox-actions-for-office-365-group-mailboxes) section earlier in this topic.
 
 #### Owner actions
 
@@ -214,7 +214,7 @@ However, your organization might be required to audit a different set of mailbox
 
 ### Change the mailbox actions to audit
 
-You can use the *AuditAdmin*, *AuditDelegate*, or *AuditOwner* parameters on the **Set-Mailbox** cmdlet to change the mailbox actions that are audited for user mailboxes and shared mailboxes (audited actions for Office 365 group mailboxes can't be customized).
+You can use the *AuditAdmin*, *AuditDelegate*, or *AuditOwner* parameters on the **Set-Mailbox** cmdlet to change the mailbox actions that are audited for user mailboxes and shared mailboxes (audited actions for Microsoft 365 group mailboxes can't be customized).
 
 You can use two different methods to specify the mailbox actions:
 
@@ -256,7 +256,7 @@ Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Own
 
 You can specify multiple *DefaultAuditSet* values separated by commas
 
-**Note**: The following procedures don't apply to Office 365 Group mailboxes (they're limited to the default actions as described [here](#mailbox-actions-for-office-365-group-mailboxes)).
+**Note**: The following procedures don't apply to Microsoft 365 Group mailboxes (they're limited to the default actions as described [here](#mailbox-actions-for-office-365-group-mailboxes)).
 
 This example restores the default audited mailbox actions for all logon types on the mailbox mark@contoso.onmicrosoft.com.
 
@@ -361,7 +361,7 @@ The value **True** indicates that mailbox audit logging is bypassed for the user
 
 - If you've changed the *AuditLogAgeLimit* property for a mailbox prior to mailbox auditing on by default being turned on for organization, the mailbox's existing audit log age limit isn't changed. In other words, mailbox auditing on by default doesn't affect the current age limit for mailbox audit records.
 
-- To change the *AuditLogAgeLimit* value on an Office 365 Group mailbox, you need to include the `-GroupMailbox` switch in the **Set-Mailbox** command.
+- To change the *AuditLogAgeLimit* value on an Microsoft 365 Group mailbox, you need to include the `-GroupMailbox` switch in the **Set-Mailbox** command.
 
 - Mailbox audit log records are stored in a subfolder (named *Audits*) in the Recoverable Items folder in each user's mailbox. Keep the following things in mind about mailbox audit records and the Recoverable Items folder:
 

@@ -59,7 +59,7 @@ For the configuration details, see [Protect files in teams with retention labels
 Contoso admins created a new Office 365 sensitivity label named **Project 2X** that:
 
 - Requires encryption.
-- Allows Co-Author permissions for the Project 2X Office 365 group.
+- Allows Co-Author permissions for the Project 2X Microsoft 365 group.
 
 Here is the resulting configuration of the Project 2X team.
 
@@ -67,7 +67,7 @@ Here is the resulting configuration of the Project 2X team.
  
 Files in the Documents section of the underlying Project 2X SharePoint site were protected by:
 
-- The site permissions, which only allow access to members of the Project 2X Office 365 group.
+- The site permissions, which only allow access to members of the Project 2X Microsoft 365 group.
 - The  Highly Confidential retention label, which is automatically assigned to new files.
 - A DLP policy that uses the Highly Confidential retention label and settings that block the file from being shared with external users.
 - The Project 2X sensitivity label, with encryption and permissions that travel with the file if it is moved or copied from the site.

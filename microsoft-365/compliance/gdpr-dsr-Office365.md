@@ -88,7 +88,7 @@ A quick way to identify the Office 365 applications that people in your organiza
 
 ## Using the Content Search eDiscovery tool to respond to DSRs
 
-When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you're looking for. Microsoft estimates that over 90% of an organization's data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Microsoft 365 Apps for enterprise or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user's OneDrive for Business account, or in a user's Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Office 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
+When looking for personal data within the larger set of data your organization creates and stores using in Office 365, you may want to first consider which applications people have most likely used to author the data you're looking for. Microsoft estimates that over 90% of an organization's data that is stored in Office 365 is authored in Word, Excel, PowerPoint, OneNote, and Outlook. Documents authored in these Office applications, even if purchased through Microsoft 365 Apps for enterprise or an Office perpetual license, are most likely stored on a SharePoint Online site, in a user's OneDrive for Business account, or in a user's Exchange Online mailbox. That means you can use the Content Search eDiscovery tool to search (and perform other DSR-related actions) across SharePoint Online sites, OneDrive for Business accounts, and Exchange Online mailboxes (including the sites and mailboxes associated with Microsoft 365 Groups, Microsoft Teams, EDU Assignments) to find documents and mailbox items that may be relevant to the DSR you're investigating. You can also use the Content Search tool to discover Customer Data authored in other Office 365 applications.
 
 The following table lists the Office 365 applications that people use to create Customer Authored Content and that can be discovered by using Content Search. This section of the DSR guide provides guidance about how to discover, access, export, and delete data created with these Office 365 applications.
 
@@ -126,9 +126,9 @@ After you find the data, you can then perform the specific action to satisfy the
 
 You can search the following types of content locations with the Content Search tool.
 
-- Exchange Online mailboxes. This includes the mailboxes associated with Office 365 Groups and Microsoft Teams
+- Exchange Online mailboxes. This includes the mailboxes associated with Microsoft 365 Groups and Microsoft Teams
 - Exchange Online public folders
-- SharePoint Online sites. This includes the sites associated with Office 365 Groups and Microsoft Teams
+- SharePoint Online sites. This includes the sites associated with Microsoft 365 Groups and Microsoft Teams
 - OneDrive for Business accounts
 
 >[!NOTE]
@@ -1035,7 +1035,7 @@ The following sections explain how to use the in-app functionality in Microsoft 
 
 #### Discover
 
-Planner plans are associated with an Office 365 Group, and the files for Office 365 Groups are stored in an associated SharePoint Online site for the group. That means that you can use Content Search to find Planner files by searching the site for the Office 365 Group. To do this, you need to have the URL for the Office 365 Group. See [Searching Microsoft Teams and Office 365 Groups](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) in the "Content Search in Office 365" help topic for tips about getting information about Office 365 Groups to help you search for Planner files in the corresponding SharePoint Online site.
+Planner plans are associated with an Microsoft 365 Group, and the files for Microsoft 365 Groups are stored in an associated SharePoint Online site for the group. That means that you can use Content Search to find Planner files by searching the site for the Microsoft 365 Group. To do this, you need to have the URL for the Microsoft 365 Group. See [Searching Microsoft Teams and Microsoft 365 Groups](https://support.office.com/article/Content-Search-in-Office-365-53390468-eec6-45cb-b6cd-7511f9c909e4) in the "Content Search in Office 365" help topic for tips about getting information about Microsoft 365 Groups to help you search for Planner files in the corresponding SharePoint Online site.
 
 #### Access
 
@@ -1660,9 +1660,9 @@ We recommend that you use the DSR case tool in Security & Compliance Center to m
 
 - Use the built-in to search for all content related to a specific data subject. When you create a case and start the search, these content locations are searched:
 
-   - All mailboxes in your organization (including the mailboxes associated with all Microsoft Teams and Office 365 Groups)
+   - All mailboxes in your organization (including the mailboxes associated with all Microsoft Teams and Microsoft 365 Groups)
    - All SharePoint Online sites and OneDrive for Business accounts in your organization
-   - All Microsoft Teams sites and Office 365 group sites in your organization
+   - All Microsoft Teams sites and Microsoft 365 group sites in your organization
    - All public folders in Exchange Online
 
 - Revise the default search query and rerun the search to narrow the search results.

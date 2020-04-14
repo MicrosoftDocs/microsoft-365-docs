@@ -37,7 +37,7 @@ Some important notes about this solution:
 
 ## Admin setup
 
-To accomplish this additional level of security for files in a specific SharePoint Online team site, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated data. Only members of the Office 365 group for the SharePoint Online team site will see the customized label or sublabel in their list of labels.
+To accomplish this additional level of security for files in a specific SharePoint Online team site, you must configure a customized sensitivity label that is either its own label or a sublabel of the general label for highly regulated data. Only members of the Microsoft 365 group for the SharePoint Online team site will see the customized label or sublabel in their list of labels.
 
 - Use a sensitivity label when you need a small number of labels for both global use and individual private teams.
 
@@ -47,7 +47,7 @@ Use [these instructions](encryption-sensitivity-labels.md) to configure a separa
 
 - The name of the label or sublabel contains the name of the team site
 - Encryption is enabled
-- The Office 365 group for the team site has Co-Author permissions
+- The Microsoft 365 group for the team site has Co-Author permissions
 
 After creating, publish the new label or sublabel for your users, who can then apply them to files either locally before uploading them to the team or later once the file is stored in the team.
  
@@ -59,8 +59,8 @@ Once your uses can select the sensitivity label from the **Sensitivity** option 
 ## Adding permissions for external users
 There are two ways you can grant external users access to files protected with a sensitivity label. In both cases, external users must have an Azure AD account. If external users aren't members of an organization that uses Azure AD, they can obtain an Azure AD account as an individual by using this signup page: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
 
- - Add external users to the Office 365 group for the team site. You'll need to first add the account as a B2B user in your directory. It can take a couple of hours for [group membership caching by Azure Rights Management](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection).  
- - Add external user accounts directly to the label configuration. You can add all users from an organization (e.g. Fabrikam.com), an Office 365 group (such as a finance group within an organization), or user. For example, you can add an external team of regulators to the permissions of your sensitivity label.
+ - Add external users to the Microsoft 365 group for the team site. You'll need to first add the account as a B2B user in your directory. It can take a couple of hours for [group membership caching by Azure Rights Management](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection).  
+ - Add external user accounts directly to the label configuration. You can add all users from an organization (e.g. Fabrikam.com), a Microsoft 365 group (such as a finance group within an organization), or user. For example, you can add an external team of regulators to the permissions of your sensitivity label.
 
 ## See Also
 

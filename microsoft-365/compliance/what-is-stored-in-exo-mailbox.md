@@ -28,10 +28,10 @@ The following table lists the Office 365 apps that either stores or associates d
 |Office 365 app|Description|
 |:---------|:---------|
 |Forms|Forms (stored as a PDF file) and responses to a form (stored in a CSV file) are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
-|Office 365 Groups|Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with an Office 365 group.|
+|Microsoft 365 Groups|Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with a Microsoft 365 group.|
 |Outlook/Exchange Online|Email messages, calendar items, contacts (People), notes, and tasks are stored in a user's mailbox.|
 |People|Contacts in the People app (which are the same contacts as the ones accessible in Outlook) are stored in a user's mailbox.|
-|Class Schedule|Plans created in Class Schedule are stored in the mailbox of the corresponding Office 365 Group that is provisioned when a new plan is created. The alias for the group mailbox is the name of the plan.|
+|Class Schedule|Plans created in Class Schedule are stored in the mailbox of the corresponding Microsoft 365 Group that is provisioned when a new plan is created. The alias for the group mailbox is the name of the plan.|
 |Skype for Business|Conversations in Skype for Business are stored in the Conversation History folder in a user's mailbox. If the mailbox of a participant of a Skype meeting is placed on Litigation Hold or assigned to a retention policy, files attached to a meeting are retained in the participants mailbox.|
 |Sway|Sways are stored as an HTML file that is attached to an email message and stored in a hidden folder in the mailbox of the user who created the sway. When you export content from Sway in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following GUID) **905fcf26-4eb7-48a0-9ff0-8dcc7194b5ba**.|
 |Tasks|Tasks in the Tasks app (which are the same tasks as the ones accessible in Outlook) are stored in a user's mailbox.|
