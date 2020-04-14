@@ -53,7 +53,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
 
 ::: moniker-end
 

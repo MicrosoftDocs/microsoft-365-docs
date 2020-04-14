@@ -278,7 +278,7 @@ You can choose to receive a copy of your billing statement as an email attachmen
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
 
 ::: moniker-end
 
