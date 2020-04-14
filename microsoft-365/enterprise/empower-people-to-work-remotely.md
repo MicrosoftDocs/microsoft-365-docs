@@ -204,6 +204,12 @@ Retrain your users as needed.
 
 Your remote workers can use their Windows 10 Enterprise or other devices and Office 365 ProPlus to access and work on shared Microsoft 365 Enterprise cloud services and resources in a secure environment, and they’re meeting, creating, and collaborating in real time.
 
+## Additional Microsoft features to support remote workers
+
+You can use [Azure Point-to-Site VPN connections](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) to connect remote workers to servers running in an Azure virtual network.
+
+You can use [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) for desktop and app virtualization hosted by Azure.
+
 ## See also
 
 [Workloads and scenarios](deploy-workloads.md)
