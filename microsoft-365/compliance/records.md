@@ -21,6 +21,8 @@ description: "To implement a records management strategy in your Office 365 or M
 
 # Overview of records
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 Managing records in Microsoft 365 helps an organization comply with their corporate policies, legal and regulatory obligations while reducing risk and legal liability.
 
 At a high level, declaring content as a record means that:
@@ -75,10 +77,6 @@ When you create a retention label, you have the option to use the retention labe
 
 3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
 
-> [!NOTE]
-> Declaring an item as a record using [retention labels](labels.md) requires an Office 365 Enterprise E5 license or equivalent for each user who has permissions to edit content in this location. Users who have read-only access don't require a license.
-
-
 ### Applying a retention label to content
 
 For Exchange, any user with write-access to the mailbox can apply a record label to an email message. For content in SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply a record label to content. Only a site collection admin can remove or change that record label after it's been applied. As previously explained, a retention label that classifies content as a record can be auto-applied to content.
@@ -104,9 +102,6 @@ Record versioning is automatically available for any document that has a retenti
 <br/><br/>
 
 ![Record status property on document tagged as a record](../media/recordversioning8.png)
-
-> [!NOTE]
-> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared a record in a SharePoint site or OneDrive account. Users who have read-only access don't require this license.
 
 ### Locking and unlocking a record
 

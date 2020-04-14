@@ -24,7 +24,7 @@ Microsoft 365 lets administrators import and archive third-party data from socia
   
 - **Social:** Facebook, LinkedIn, Twitter, and Yammer
 
-- **Instant messaging:** ICE Chat, Yahoo Messenger, and GoogleTalk
+- **Instant messaging:** Yahoo Messenger and GoogleTalk
 
 - **Document collaboration:** Box and DropBox
 
@@ -36,7 +36,7 @@ After third-party data is imported, you can apply Microsoft 365 compliance featu
 
 There are two ways to import and archive third-party data in Microsoft 365:
 
-- **Use a third-party data connector in the Security & Compliance Center:** Use a custom data connector that's available in the Microsoft 365 compliance center. After you set up and configure the connector, it connects to the third-party data source, converts the content of an item to an email message format, and then imports the item to a mailbox in Microsoft 365. Currently, you can implement connectors to import and archive data from Facebook Business pages, corporate Twitter accounts, LinkedIn, Instant Bloomberg, ICE Chat, and your organization's human resources (HR) data. For the step-by-step instructions to set up one of these connectors, see:
+- **Use a third-party data connector in the Security & Compliance Center:** Use a custom data connector that's available in the Microsoft 365 compliance center. After you set up and configure the connector, it connects to the third-party data source, converts the content of an item to an email message format, and then imports the item to a mailbox in Microsoft 365. Currently, you can implement connectors to import and archive data from Facebook Business pages, corporate Twitter accounts, LinkedIn, Instant Bloomberg, and your organization's human resources (HR) data. For the step-by-step instructions to set up one of these connectors, see:
 
    - **Facebook:** [Use a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md)
 
@@ -45,8 +45,6 @@ There are two ways to import and archive third-party data in Microsoft 365:
    - **LinkedIn:** [Set up a connector to archive LinkedIn data](archive-linkedin-data.md)
 
    - **Instant Bloomberg:** [Set up a connector to archive Instant Bloomberg data](archive-instant-bloomberg-data.md)
-
-   - **ICE Chat:** [Set up a connector to archive ICE Chat data (preview)](archive-icechat-data.md)
 
    - **HR data:** [Set up a connector to import HR data](import-hr-data.md)
 

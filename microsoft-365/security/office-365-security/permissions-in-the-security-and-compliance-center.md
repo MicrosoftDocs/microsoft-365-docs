@@ -37,8 +37,6 @@ The Security & Compliance Center includes default role groups for the most commo
 
 ![Diagram showing relationship of role groups to roles and members](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-You can edit or delete the existing role groups, but we don't recommend this. Instead of editing a default role group, you can copy it, modify it, and then save it with a different name.
-
 ## Permissions needed to use features in the Security & Compliance Center
 
 The following table lists the default role groups that are available in the Security & Compliance Center, and the roles that are assigned to the role groups by default. To grant permissions to a user to perform a compliance task, add them to the appropriate Security & Compliance Center role group.

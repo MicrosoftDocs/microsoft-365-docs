@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/19/2019
+ms.date: 4/3/2020
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -23,7 +23,8 @@ description: "View a complete list of root certificates and certificate authorit
 
 Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that customers may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all worldwide and national cloud instances of Office 365.
 
-**ITAR customers (Defense & GCC High):** please contact your Cloud TAM or SDM for the correct P7b package.
+>[!NOTE]
+>For certificate information that applies to **DOD and GCC High** customers, see [Office 365 encryption chains - DOD and GCC High](encryption-office-365-certificate-chains-itar.md).
 
 | **Certificate type** | **P7b download** | **CRL Endpoints** | **OCSP Endpoints** | **AIA Endpoints** |
 | --- | --- | --- | --- | --- |
