@@ -1,5 +1,5 @@
 ---
-title: "How to help ensure that a message isn't marked as spam"
+title: "How to help ensure that a message isn&apos;t marked as spam"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
