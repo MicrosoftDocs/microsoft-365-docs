@@ -52,5 +52,9 @@ You'll know you have preview features turned on when you see that the **Turn on 
 
 
 ## Preview features
-This section will be updates with a list of features that are in preview as they become available for you to try. 
+The following features and enhancements are currently available on preview:
+
+- **[Custom detections](custom-detections-overview.md)** — use advanced hunting queries to create rules that automatically search for misconfigured devices, breach activity, and other items of interest at regular intervals. Matches to the queries trigger alerts and perform your preferred response actions.
+
+- **[Identity and app tables](advanced-hunting-schema-tables)** — get visibility into authentication events, LDAP queries, and app-related activity with the [IdentityLogonEvents](advanced-hunting-identitylogonevents-table), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table), and [AppFileEvents](advanced-hunting-appfileevents-table) tables in the advanced hunting schema.
 
