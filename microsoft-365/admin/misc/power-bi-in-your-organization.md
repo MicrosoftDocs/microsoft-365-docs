@@ -55,7 +55,7 @@ In this scenario, the user has an email address in your organization's domain (f
 There are no administrative actions your organization needs to take to take advantage of Power BI.
   
 > [!IMPORTANT]
-> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, before any users create your primary tenant, add all email address domains to that tenant before any users create your primary tenant. There is no automated mechanism to move users across tenants after they have been created. For more information on this process, see [If I have multiple domains, can I control the Microsoft 365 tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to) later in this article and [Add a domain to Office 365](../setup/add-domain.md) online. 
+> If your organization has multiple email domains and you prefer all email address extensions to be in the same tenant, before any users create your primary tenant, add all email address domains to that tenant before any users create your primary tenant. There is no automated mechanism to move users across tenants after they have been created. For more information on this process, see [If I have multiple domains, can I control the tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) later in this article and [Add a domain to Office 365](../setup/add-domain.md) online. 
   
 ## How will this change the way I manage identities for users in my organization today?
 
@@ -104,7 +104,7 @@ If a tenant was created by Microsoft, you can claim and manage that tenant by fo
     > [!NOTE]
     >  If this option doesn't appear, there is already an administrator in place. 
   
-## If I have multiple domains, can I control the Office 365 tenant that users are added to?
+## If I have multiple domains, can I control the tenant that users are added to?
 
 If you do nothing, a tenant will be created for each user email domain and subdomain.
   
@@ -118,13 +118,13 @@ If you want all users to be in the same tenant regardless of their email address
 > [!IMPORTANT]
 > For additional information and guidance on managing tenants, see [What is Power BI administration?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization). 
   
-## How can I prevent users from joining my existing Office 365 tenant?
+## How can I prevent users from joining my existing tenant?
 
-There are steps you can take as an admin to prevent users from joining your existing Office 365 tenant. If you do block this, users' attempts to sign in will fail and they will be directed to contact their organization's admin. You do not need to repeat this process if you have already disabled automatic license distribution before (e.g. Office 365 Education for Students, Faculty and Staff).
+There are steps you can take as an admin to prevent users from joining your existing tenant. If you do block this, users' attempts to sign in will fail and they will be directed to contact their organization's admin. You do not need to repeat this process if you have already disabled automatic license distribution before (e.g. Office 365 Education for Students, Faculty and Staff).
   
 These steps require the use of Windows PowerShell. To get started with Windows PowerShell, see the [PowerShell getting started guide](https://go.microsoft.com/fwlink/p/?LinkID=286814).
   
-To perform the following steps, you must install the latest 64-bit version of the [Azure Active Directory Module for Windows PowerShell](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
+To perform the following steps, you must install the latest 64-bit version of the [Azure Active Directory V2 PowerShell Module](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5).
   
 After you select the link, select **Run** to run the installer package. 
   
@@ -137,7 +137,7 @@ To enable automatic tenant join for new users:  `Set-MsolCompanySettings -AllowE
 > [!NOTE]
 > This blocking prevents new users in your organization from signing up for Power BI. Users that sign up for Power BI prior to disabling new signups for your organization will still retain their licenses. See the [How do I remove Power BI for users that already signed up?](#how-do-i-remove-power-bi-for-users-that-already-signed-up) for instructions on how you can remove access to Power BI for users that had previously signed up for the service. 
   
-## How can I allow users to join my existing Office 365 tenant?
+## How can I allow users to join my existing tenant?
 
 To allow users to join your tenant, run the opposite command as described in the question above:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
@@ -221,7 +221,7 @@ You might experience an increase in password reset requests. For information abo
   
 You can remove a user from your tenant via the standard process in the admin center. However, if the user still has an active email address from your organization, they will be able to rejoin unless you block all users from joining.
   
-## Why did 1 million licenses for Microsoft Power BI show up in my Office 365 tenant?
+## Why did 1 million licenses for Microsoft Power BI show up in my tenant?
 
 As a qualifying organization, users in your organization are eligible to use the Microsoft Power BI service and these licenses represent the available capacity for new Power BI users in your tenant. There is no charge for these licenses. If you've chosen to allow users to sign up for Power BI themselves, they will be assigned one of these available free licenses when they complete the sign up process. You can also choose to assign these licenses to users yourself through the admin center.
   

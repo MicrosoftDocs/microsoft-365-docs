@@ -106,7 +106,7 @@ The auto-labeling settings for Office apps are available when you [create or edi
 
 ## How to configure auto-labeling for Office apps
 
-One of the most powerful features of sensitivity labels is the ability to apply them automatically to content that matches specific conditions. In this case, people in your organization don't need to apply the sensitivity labels — Office 365 does the work for them.
+One of the most powerful features of sensitivity labels is the ability to apply them automatically to content that matches specific conditions. In this case, people in your organization don't need to apply the sensitivity labels—Microsoft 365 does the work for them.
 
 You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or classifers:
 

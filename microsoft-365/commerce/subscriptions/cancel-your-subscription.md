@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: "Learn how to cancel your Office 365 for business or Microsoft 365 trial or paid subscription."
+description: "Learn how to cancel your Microsoft 365 for business or Microsoft 365 trial or paid subscription."
 ---
 
 # Cancel your subscription
 
-*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Office 365 for business trial or paid subscription online in the admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
+*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
 
 *Refund:* Any prorated credit will be returned to you within the next billing cycle.
 
@@ -47,7 +47,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 3. Review the important dates, provide feedback about why you are cancelling, then select **Cancel subscription**.
 
-    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Office 365 for business subscription is canceled, see [What happens to my data and access when my Office 365 for business subscription ends?](what-if-my-subscription-expires.md)
+    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -63,7 +63,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 4. Review the important dates, provide feedback about why you are cancelling, then select **Cancel subscription**.
 
-    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Office 365 for business subscription is canceled, see [What happens to my data and access when my Office 365 for business subscription ends?](what-if-my-subscription-expires.md)
+    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Microsoft 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -79,7 +79,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 4. Review the important dates, provide feedback about why you are cancelling, then select **Cancel subscription**.
 
-    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Office 365 for business subscription is canceled, see [What happens to my data and access when my Office 365 for business subscription ends?](what-if-my-subscription-expires.md)
+    Your subscription now appears in a **Disabled** state, and has reduced functionality until it's deleted. For more information about what you can expect when a paid Office 365 for business subscription is canceled, see [What happens to my data and access when my Microsoft 365 for business subscription ends?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -108,7 +108,7 @@ If you use a custom domain with your subscription, there are a few extra steps t
 
 If you set up a custom domain, you added DNS records so the domain would work with Office 365 services. Before you remove your domain, be sure to update the DNS records, such as your domain MX record, at your DNS host.
 
-For example, change the MX record at your DNS host. Email sent to your domain stops coming to your Office 365 address and goes to your new email provider instead. (An MX record determines where email for your domain is sent.)
+For example, change the MX record at your DNS host. Email sent to your domain stops coming to your Microsoft address and goes to your new email provider instead. (An MX record determines where email for your domain is sent.)
 
 - If your nameserver (NS) records [are pointing to Office 365 nameservers](../../admin/setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
 

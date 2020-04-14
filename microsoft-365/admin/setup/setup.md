@@ -1,5 +1,5 @@
 ---
-title: "Set up Office 365 for business"
+title: "Set up Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,20 +24,20 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
-description: "Learn how to set up your Office 365 Business Premium, Office 365 Business Essentials, Office 365 Business, or Office 365 Education subscription."
+description: "Learn how to set up your Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education subscription."
 ---
 
-# Set up Office 365 for business
+# Set up Microsoft 365 for business
 
-Follow these steps to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Office 365 Business Premium](https://go.microsoft.com/fwlink/p/?LinkId=627220), Office 365 Business Essentials, Office 365 Business, or Office 365 Education.
+Follow these steps to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education.
   
-Not a business? See [Set up for Office 365 Home or Office 365 Personal](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx).
+Not a business? See [Set up for Microsoft 365 Family or Microsoft 365 Personal](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx).
   
 ## Business Premium
   
- *These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/p/?LinkId=627221) that have the **[Office 365 Business Premium plan.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
+ *These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/p/?LinkId=627221) that have the **[Microsoft 365 Business Standard plan.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
 
-Watch a short video about setting up Office 365 Business Premium.<br><br>
+Watch a short video about setting up Microsoft 365 Business Standard.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
 
@@ -45,15 +45,15 @@ If you found this video helpful, check out the [complete training series for sma
 
 ### 1. Sign up and set up
 
-1. To sign up for an Office 365 business plan, go to the [Office Products site](https://www.aka.ms/office365signup) and select **Buy now**.
+1. To sign up for a Microsoft 365 for business plan, go to the [Office Products site](https://www.aka.ms/office365signup) and select **Buy now**.
 
-2. Choose the plan you want to sign up for, such as **Office 365 Business Premium**.
+2. Choose the plan you want to sign up for, such as **Microsoft 365 Business Standard**.
 
-3. Follow the steps to sign up for an Office 365 business plan.
+3. Follow the steps to sign up for an Microsoft 365 for business plan.
 
     When the signup process is complete, you'll be directed to the admin center, where you'll follow a wizard to install Office apps, add your domain, add users, and assign licenses. After you complete the initial setup, you can use the **Setup** page in the admin center to continue setting up and configuring the services that come with your subscriptions.
 
-    For more information about the Office 365 setup wizard and the admin center **Setup** page, see [Difference between the Office 365 setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
+    For more information about the setup wizard and the admin center **Setup** page, see [Difference between the setup wizard and the Setup page](o365-setup-wizard-and-setup-page.md).
 
 ### 2. Set up Outlook for email
 
@@ -65,7 +65,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 2. Choose **File** \> **Info** \> **Add Account**.
 
-3. Enter your Office 365 email address and select **Connect**.
+3. Enter your Microsoft email address and select **Connect**.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
@@ -73,7 +73,7 @@ More at [Set up Outlook for email](https://support.office.com/article/f5bf0cd1-e
   
 ### 3. Import email
 
-If you were using Outlook with another email account, you can import your previous email, calendar, and contacts into your new Office 365 account.
+If you were using Outlook with another email account, you can import your previous email, calendar, and contacts into your new Microsoft account.
   
 1. **Export your old email**
 
@@ -93,7 +93,7 @@ More at [Import email with Outlook](https://support.office.com/article/6a3771d4-
   
 ### 4. Use a public website
 
-Office 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
+Microsoft 365 doesn't include a public website for your business. If you want to set one up, consider using a Microsoft partner, such as GoDaddy or WIX.
   
 1. From the admin center, go to **Resources**, and then select **Public website**.
 
@@ -105,11 +105,11 @@ More at [Use a public website](https://support.office.com/article/3325d50e-d131-
   
 ## Business Essentials
   
-*Use these steps to set up your **[Office 365 Business Essentials](https://go.microsoft.com/fwlink/p/?LinkId=627218)** subscription. With this plan, you connect to Office 365 online. You don't install the Office apps.*
+*Use these steps to set up your **[Microsoft 365 Business Basic](https://go.microsoft.com/fwlink/p/?LinkId=627218)** subscription. With this plan, you connect to Office 365 online. You don't install the Office apps.*
 
-### 1. Create Office 365 accounts and add your domain
+### 1. Create Microsoft 365 accounts and add your domain
 
-In this step, you use the Setup wizard to create Office 365 accounts for your users and add your own domain. The wizard lets you personalize everyone's user ID and email for your business, like rob@contoso.com.
+In this step, you use the Setup wizard to create Microsoft 365 accounts for your users and add your own domain. The wizard lets you personalize everyone's user ID and email for your business, like rob@contoso.com.
   
 ::: moniker range="o365-worldwide"
 
@@ -135,17 +135,17 @@ To start the wizard, select **Go to setup**.
   
 ### 2. Import email
 
-Move your existing email and contacts from other email systems to your Office 365 mailbox so you can see it all in one place.
+Move your existing email and contacts from other email systems to your Microsoft mailbox so you can see it all in one place.
   
 For migration options, see [Migrate email and contacts](migrate-email-and-contacts-admin.md).
   
 ### 3. Connect email accounts
 
-In addition to managing your Office 365 email in Outlook, you can connect other email accounts to Outlook, too, such as your Gmail and Yahoo accounts. This lets you manage all of your email in one place. You can connect up to 5 email accounts to Outlook.
+In addition to managing your Microsoft email in Outlook, you can connect other email accounts to Outlook, too, such as your Gmail and Yahoo accounts. This lets you manage all of your email in one place. You can connect up to 5 email accounts to Outlook.
   
 ::: moniker range="o365-worldwide"
 
-Sign in to Office 365 with your work or school account at [https://www.office.com/signin](https://www.office.com/signin).
+Sign in to Microsoft 365 with your work or school account at [https://www.office.com/signin](https://www.office.com/signin).
 
 ::: moniker-end
 
@@ -206,11 +206,11 @@ If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.m
 
 ### 5. Store files online
 
-Office 365 makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Office 365 accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
-1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
+1. On your computer, use File Explorer to open OneDrive. Or, from [Microsoft 365](https://www.office.com), open **OneDrive** from the app launcher.
 
 2. View and upload personal files, or share documents or folders by selecting **Share** and then either inviting others to view the documents or sending them a link. To learn more, see [Share OneDrive files and folders](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07.aspx#OS_Type=OneDrive_-_Business).
 
@@ -218,11 +218,11 @@ More at [Upload files to a library](https://support.office.com/article/da549fb1-
   
 ### Get started using Office
 
-To take a tour of Office 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
+To take a tour of Microsoft 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
   
 ## Business
   
-*The **[Office 365 Business Plan](https://go.microsoft.com/fwlink/p/?LinkId=627219)** plan does not include Office 365 email or Skype for Business. In these setup steps, we show you how to add your existing email account (such as Gmail) to Outlook.*
+*The **[Microsoft 365 Apps for business plan](https://go.microsoft.com/fwlink/p/?LinkId=627219)** plan does not include Microsoft email or Skype for Business. In these setup steps, we show you how to add your existing email account (such as Gmail) to Outlook.*
 
 ### 1. Add users
 
@@ -278,15 +278,15 @@ Need more detailed steps or want to install the 64-bit version of Office? See [S
   
 ### 3. Set up mobile
 
-Install Office on your mobile device, and set up Outlook to work with your new Office 365 mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
+Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
   
 Get the steps for your device: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
   
 ### 4. Store files online
 
-Office 365 makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
   
-Everyone gets a **OneDrive** cloud storage location automatically when you create Office 365 accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
+Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
 1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
 
@@ -296,7 +296,7 @@ More at [Upload files to a library](https://support.office.com/article/da549fb1-
   
 ### Get started using Office
 
-To take a tour of Office 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
+To take a tour of Microsoft 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
   
 ## Education
   
@@ -304,7 +304,7 @@ To take a tour of Office 365 and learn how to use all the Office mobile apps, se
 
 ### Get ready for Office 365
 
-- **First, verify that you qualify for an education subscription** Follow the steps to [Verify your Office 365 domain to prove ownership, nonprofit or education status, or to activate Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590), so Office 365 can give you the go-ahead for using an education plan. Then you can get Office 365 set up for your school by following the guidance in this article.
+- **First, verify that you qualify for an education subscription** Follow the steps to [Verify your domain to prove ownership, nonprofit or education status, or to activate Yammer](https://support.office.com/article/87d1844e-aa47-4dc0-a61b-1b773fd4e590), so Microsoft can give you the go-ahead for using an education plan. Then you can get Office 365 set up for your school by following the guidance in this article.
 
 - **Get help?** If you want help with a more advanced deployment, **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** is a great place to start. You can also [find a partner](https://go.microsoft.com/fwlink/p/?linkid=391089) to help you.
 
@@ -312,7 +312,7 @@ To take a tour of Office 365 and learn how to use all the Office mobile apps, se
 
 ### 1. Add your school domain or connect your directory
 
-In this step, you sign in to the Office 365 portal and add your school domain to your subscription. This will verify to Microsoft that you qualify for an education subscription.
+In this step, you sign in to the Microsoft 365 admin center and add your school domain to your subscription. This will verify to Microsoft that you qualify for an education subscription.
   
 ::: moniker range="o365-worldwide"
 
@@ -334,7 +334,7 @@ If you're using Office 365 operated by 21Vianet, go to [this admin center.](http
 
 To start the wizard, select **Go to setup**.
 
-For a walkthrough of what happens when you run the wizard, see [Using the Office 365 setup wizard](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
+For a walkthrough of what happens when you run the wizard, see [Using the setup wizard](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
   
 If you want to synchronize your users from an on-premises directory or use Single Sign-On, **do not use the setup wizard to add users**. Instead, read this guide to understand your options: [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9). You'll either set up:
   
@@ -376,4 +376,4 @@ For other countries, see [Contact support for business products - Admin Help](..
   
 ## See also
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

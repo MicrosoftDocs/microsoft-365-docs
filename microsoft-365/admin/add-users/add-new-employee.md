@@ -28,7 +28,7 @@ This article helps you onboard a new employee to Microsoft 365 for business. We 
   
 You're in the right place if your new employee needs Microsoft 365, and you're using a [Microsoft 365 plan](https://products.office.com/business/compare-office-365-for-business-plans) that lets you install Office apps like Word and Excel on a computer. 
   
- **Not an admin?** [Learn your way around Microsoft 365](https://support.office.com/article/office-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) helps business and home users with Office 365 set up. 
+ **Not an admin?** [Learn your way around Microsoft 365](https://support.office.com/article/office-basics-video-training-396b8d9e-e118-42d0-8a0d-87d1f2f055fb) helps business and home users with set up. 
   
  **No Office apps in your plan?** Follow the steps below, but skip the sections for installing apps. Use the [Online versions of Office](https://support.office.com/article/91a4ec74-67fe-4a84-a268-f6bdf3da1804.aspx) instead. 
   

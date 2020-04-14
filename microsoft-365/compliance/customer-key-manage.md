@@ -65,7 +65,7 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 
 ## Manage data encryption policies (DEPs) with Customer Key
 
-Customer Key handles DEPs differently between the different Office 365 services. For example, you can create a different number of DEPs for the different services.
+Customer Key handles DEPs differently between the different services. For example, you can create a different number of DEPs for the different services.
 
 **Exchange Online and Skype for Business:** You can create up to 50 DEPs. For instructions, see [Create a data encryption policy (DEP) for use with Exchange Online and Skype for Business](customer-key-set-up.md#create-a-data-encryption-policy-dep-for-use-with-exchange-online-and-skype-for-business).
 
@@ -87,7 +87,7 @@ To view a list of all the DEPs you've created for Exchange Online and Skype for 
 
 ### Assign a DEP before you migrate a mailbox to the cloud
 
-When you assign the DEP, Office 365 encrypts the contents of the mailbox using the assigned DEP during the migration. This process is more efficient than migrating the mailbox, assigning the DEP, and then waiting for encryption to take place, which can take hours or possibly days.
+When you assign the DEP, Microsoft 365 encrypts the contents of the mailbox using the assigned DEP during the migration. This process is more efficient than migrating the mailbox, assigning the DEP, and then waiting for encryption to take place, which can take hours or possibly days.
 
 To assign a DEP to a mailbox before you migrate it to Office 365, run the Set-MailUser cmdlet in Exchange Online PowerShell:
 
@@ -173,13 +173,13 @@ The output from this cmdlet includes:
 
 You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes.
 
-Office 365 audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
+Microsoft 365 audits and validates the data purge path. For more information, see the SSAE 18 SOC 2 Report available on the [Service Trust Portal](https://servicetrust.microsoft.com/). In addition, Microsoft recommends the following documents:
 
 - [Risk Assessment and Compliance Guide for Financial Institutions in the Microsoft Cloud](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [O365 Exit Planning Considerations](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-The data purge path differs slightly between the different Office 365 services.
+The data purge path differs slightly between the different services.
 
 ### Revoke your Customer Keys and the availability key for Exchange Online and Skype for Business
 
@@ -230,14 +230,14 @@ To initiate the data purge path for SharePoint Online, OneDrive for Business
 
 ## Related articles
 
-- [Service encryption with Customer Key for Office 365](customer-key-overview.md)
+- [Service encryption with Customer Key](customer-key-overview.md)
 
 - [Learn about the availability key](customer-key-availability-key-understand.md)
 
-- [Set up Customer Key for Office 365](customer-key-set-up.md)
+- [Set up Customer Key](customer-key-set-up.md)
 
 - [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md)
 
-- [Customer Lockbox in Office 365](customer-lockbox-requests.md)
+- [Customer Lockbox](customer-lockbox-requests.md)
 
-- [Office 365 Service Encryption](office-365-service-encryption.md)
+- [Service Encryption](office-365-service-encryption.md)

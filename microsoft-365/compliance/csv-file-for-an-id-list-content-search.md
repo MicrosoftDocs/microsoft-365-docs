@@ -79,7 +79,7 @@ The next step is to create a new ID list Content Search and submit the CSV file 
 
 3. On the **Search by ID List** flyout, name the search (and optionally describe it) and then click **Browse** and select the CSV file that you prepared in the previous step.
 
-    Office 365 attempts to validate the CSV file. If the validation is unsuccessful, an error message is displayed that might help you troubleshoot the validation errors. The CSV file has to be successfully validated to create an ID list search.
+    Microsoft 365 attempts to validate the CSV file. If the validation is unsuccessful, an error message is displayed that might help you troubleshoot the validation errors. The CSV file has to be successfully validated to create an ID list search.
 
 4. After the CSV file is successfully validated, click **Search** to create the ID list search.
 

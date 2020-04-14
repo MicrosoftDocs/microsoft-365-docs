@@ -19,11 +19,11 @@ search.appverid:
 - MET150
 ms.custom: 
 ms.assetid:
-description: "Learn how to modify or create new Office 365 sensitive information types for GDPR."
+description: "Learn how to modify or create new sensitive information types for GDPR."
 ---
 # Customize or create a new sensitive information type
 
-This article provides three examples to demonstrate how to modify or create new Office 365 sensitive information types for GDPR.
+This article provides three examples to demonstrate how to modify or create new sensitive information types for GDPR.
 
 - Modify an existing sensitive information type — EU Debit Card Number
 
@@ -73,7 +73,7 @@ To customize a sensitive information type:
 
 Improving the accuracy of DLP rules in any system requires testing against a sample data set, and may require fine tuning through repetitive modifications and tests. This example demonstrates modifications to the 'EU Debit Card Number' sensitive information type to improve its accuracy.
 
-When searching for an EU Debit Card Number in our example, the definition of that number is strictly defined as 16 digits using a complex pattern, and being subject to the validation of a checksum. We cannot alter this pattern due to the string definition of this sensitive information type. However, we can make the following adjustments to improve the accuracy of how Office 365 DLP finds this sensitive information type within Office 365.
+When searching for an EU Debit Card Number in our example, the definition of that number is strictly defined as 16 digits using a complex pattern, and being subject to the validation of a checksum. We cannot alter this pattern due to the string definition of this sensitive information type. However, we can make the following adjustments to improve the accuracy of how DLP finds this sensitive information type within Office 365.
 
 ### Proximity modification
 
@@ -288,7 +288,7 @@ Example CCNs:
 >
 > 17040O1118
 
-Contoso always refers to customers by using a CCN in internal correspondence, external correspondence, documents, etc. They would like to create a custom sensitive information type to detect the use of CCN in Office 365 so that they may apply protection to the use of this form of personal data.
+Contoso always refers to customers by using a CCN in internal correspondence, external correspondence, documents, etc. They would like to create a custom sensitive information type to detect the use of CCN so that they may apply protection to the use of this form of personal data.
 
 ### Create a new sensitive information type for Contoso customer number
 

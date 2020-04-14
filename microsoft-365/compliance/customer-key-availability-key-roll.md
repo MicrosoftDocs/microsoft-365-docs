@@ -22,7 +22,7 @@ description: "Learn how to roll the customer root keys stored in Azure Key Vault
 
 ## About rolling the availability key
 
-Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. Office 365 rolls the availability keys on an internally-defined schedule. There is no customer-facing, service-level agreement (SLA) for these key rolls. Office 365 rotates the availability key using Office 365 service code in an automated, non-manual process. Microsoft administrators may initiate the roll process. The key is rolled using automated mechanisms without direct access to the key store. Access to the availability key secret store is not provisioned to Microsoft administrators. Availability key rolling leverages the same mechanism used to initially generate the key. For more information about the availability key, see [Understand the availability key](customer-key-availability-key-understand.md).
+Microsoft does not expose direct control of the availability key to customers. For example, you can only roll (rotate) the keys that you own in Azure Key Vault. Microsoft 365 rolls the availability keys on an internally-defined schedule. There is no customer-facing, service-level agreement (SLA) for these key rolls. Microsoft 365 rotates the availability key using Microsoft 365 service code in an automated, non-manual process. Microsoft administrators may initiate the roll process. The key is rolled using automated mechanisms without direct access to the key store. Access to the availability key secret store is not provisioned to Microsoft administrators. Availability key rolling leverages the same mechanism used to initially generate the key. For more information about the availability key, see [Understand the availability key](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
 > Exchange Online and Skype for Business availability keys can be effectively rolled by customers creating a new DEP, since a unique availability key is generated for each DEP you create. Availability keys for SharePoint Online, OneDrive for Business, and Teams files exist at the forest level and are shared across DEPs and customers, which means rolling only occurs at a Microsoft internally defined schedule. To mitigate the risk of not rolling the availability key each time a new DEP is created, SharePoint, OneDrive, and Teams roll the tenant intermediate key (TIK), the key wrapped by the customer root keys and availability key, each time a new DEP is created.
@@ -47,7 +47,7 @@ For example:
 
 When you roll either of the Azure Key Vault keys associated with a DEP used with Exchange Online and Skype for Business, you must update the DEP to point to the new key. This does not rotate the availability key.
 
-To instruct Customer Key to use the new key to encrypt mailboxes in Office 365 run the Set-DataEncryptionPolicy cmdlet as follows:
+To instruct Customer Key to use the new key to encrypt mailboxes, run the Set-DataEncryptionPolicy cmdlet as follows:
 
 1. Run the Set-DataEncryptionPolicy cmdlet in Azure PowerShell:
   

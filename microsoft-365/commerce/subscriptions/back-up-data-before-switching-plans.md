@@ -1,5 +1,5 @@
 ---
-title: "Back up data before switching Office 365 for business plans"
+title: "Back up data before switching Microsoft 365 for business plans"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,9 +23,9 @@ ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: "Backup Outlook, OneDrive, Yammer, and SharePoint content before switching Microsoft 365 subscriptions or if a user leaves the organization."
 ---
 
-# Back up data before switching Office 365 for business plans
+# Back up data before switching Microsoft 365 for business plans
 
-If a user will be switched to another subscription that has fewer data-related services or a user leaves the organization, a copy of their data that's stored in Office 365 can be downloaded before they are switched to the new subscription.
+If a user will be switched to another subscription that has fewer data-related services or a user leaves the organization, a copy of their data that's stored in Microsoft 365 can be downloaded before they are switched to the new subscription.
   
 ## Save a copy of Outlook information
 
@@ -43,7 +43,7 @@ Admins can export all messages, notes, files, topics, users, and groups to a .zi
   
 ## How to save SharePoint information
 
-If a user is switched from a subscription that has SharePoint Online to one that doesn't have it, the **SharePoint** tile will no longer appear in their Office 365 menu.
+If a user is switched from a subscription that has SharePoint Online to one that doesn't have it, the **SharePoint** tile will no longer appear in their Microsoft 365 menu.
   
 However, as long as the new subscription is within the same organization as the one they are switched from, users will still be able to access the SharePoint team site. They can view and update notebooks, documents, tasks, and calendars by using the direct URL to the team site.
   

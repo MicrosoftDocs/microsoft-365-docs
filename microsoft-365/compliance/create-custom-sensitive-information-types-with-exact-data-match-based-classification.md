@@ -96,7 +96,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
       </EdmSchema>
       ```
 
-4. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 5. To upload the database schema, run the following cmdlets, one at a time:
 
@@ -129,7 +129,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
 
-2. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 3. To update your database schema, run the following cmdlets, one at a time:
 
@@ -158,7 +158,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 (As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
-1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 2. Run the following PowerShell cmdlets, substituting the data store name of "patientrecords" with the one you want to remove:
 
@@ -441,11 +441,11 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
 
-Office 365 DLP for Exchange Online (email), OneDrive for Business (files), Microsoft Teams (conversations) and Microsoft Cloud App Security DLP policies will support EDM sensitive information types.
+DLP for Exchange Online (email), OneDrive for Business (files), Microsoft Teams (conversations) and Microsoft Cloud App Security DLP policies will support EDM sensitive information types.
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 
-- Office 365 DLP for SharePoint (files)
+- DLP for SharePoint (files)
 - Auto-classification of sensitivity labels and retention labels
 
 #### To create a DLP policy with EDM

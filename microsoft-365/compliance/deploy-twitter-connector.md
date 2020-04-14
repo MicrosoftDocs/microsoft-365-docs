@@ -17,7 +17,7 @@ description: "Administrators can set up a native connector to import and archive
 
 # Deploy a connector to archive Twitter data
 
-This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from your organization's Twitter account to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Twitter connector, see [Set up a connector to archive Twitter data ](archive-twitter-data-with-sample-connector.md). 
+This article contains the step-by-step process to deploy a connector that uses the Microsoft 365 Import service to import data from your organization's Twitter account to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Twitter connector, see [Set up a connector to archive Twitter data ](archive-twitter-data-with-sample-connector.md). 
 
 ## Step 1: Create an app in Azure Active Directory
 
@@ -191,7 +191,7 @@ The Twitter developer app is now ready to use.
 
 12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Twitter items will be imported to, and then click **Next**.
 
-13. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Office 365 Import service to access data in your organization.
+13. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Microsoft 365 Import service to access data in your organization.
 
 14. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
 

@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
-description: "Use the Bulk Search Editor in the security and compliance center in Office 365 or Microsoft 365 to quickly change the query and content locations for one or more Content Searches."
+description: "Use the Bulk Search Editor in the security and compliance centes in Office 365 or Microsoft 365 to quickly change the query and content locations for one or more Content Searches."
 ---
 
 # Bulk edit Content Searches

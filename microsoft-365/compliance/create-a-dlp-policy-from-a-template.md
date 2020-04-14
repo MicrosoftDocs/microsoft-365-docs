@@ -24,7 +24,7 @@ description: "The easiest, most common way to get started with DLP policies is t
 
 The easiest, most common way to get started with DLP policies is to use one of the templates included in Office 365. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
   
-Office 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. For example, there are DLP policy templates for:
+Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. For example, there are DLP policy templates for:
   
 - Gramm-Leach-Bliley Act (GLBA)
     

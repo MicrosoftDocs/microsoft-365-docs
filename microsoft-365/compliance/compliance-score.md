@@ -26,11 +26,11 @@ Microsoft Compliance Score helps to simplify the way you manage compliance and r
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a preview feature in the Microsoft 365 compliance center to help you understand your organization’s compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards.
+Microsoft Compliance Score is a preview feature in the Microsoft 365 compliance center to help you understand your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards.
 
 You can use Compliance Score as a tool to track all of your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
 
-If you currently use [Compliance Manager](compliance-manager-overview.md), you’ll notice that Compliance Score is now a standalone feature with a simpler, more user-friendly design to help you manage compliance more easily. 
+If you currently use [Compliance Manager](compliance-manager-overview.md), you'll notice that Compliance Score is now a standalone feature with a simpler, more user-friendly design to help you manage compliance more easily. 
 
 The main Compliance Score page is your custom dashboard. It shows your current score, helps you see what needs attention, and guides you to actions to improve your score. Your Compliance Score dashboard will look like this:
 
@@ -68,7 +68,7 @@ Learn more about [how your compliance score is calculated and continuously monit
 
 ## Key components: controls, assessments, templates, groups
 
-Compliance Score uses several components to help you manage your compliance activities. As you use Compliance Score to assign, test, and monitor compliance activities, it’s helpful to have a basic understanding of these key components. This diagram shows the relationships among them:
+Compliance Score uses several components to help you manage your compliance activities. As you use Compliance Score to assign, test, and monitor compliance activities, it's helpful to have a basic understanding of these key components. This diagram shows the relationships among them:
 
 ![Relationships in Compliance Manager Version 3](../media/compliance-manager-relationships.png "Compliance Score components")
 
@@ -83,7 +83,7 @@ Compliance Score tracks two types of controls:
  
 ### Assessments
 
-An assessment is an evaluation of a template that initiates the scoring process for your organization. Assessments group the actions necessary to meet the requirements of a standard, regulation, or law. For example, you may have an assessment that, when you complete all actions within it, brings your Office 365 settings in line with ISO 27001 requirements.
+An assessment is an evaluation of a template that initiates the scoring process for your organization. Assessments group the actions necessary to meet the requirements of a standard, regulation, or law. For example, you may have an assessment that, when you complete all actions within it, brings your settings in line with ISO 27001 requirements.
 
 By default, Compliance Score provides your organization with an assessment based on the Microsoft 365 data protection baseline, a recommendation for reducing your data protection and compliance risks ([learn more](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)).
 
@@ -101,7 +101,7 @@ View detailed instructions for [working with assessments in Compliance Manager](
 
 ### Templates
 
-Compliance Score provides pre-configured templates for assessments. Compliance Score also allows you to create templates for your own assessments to suit your needs. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn’t covered by one of the pre-configured templates.  By creating your own templates, you can create custom assessments to ensure that Compliance Score tracks not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
+Compliance Score provides pre-configured templates for assessments. Compliance Score also allows you to create templates for your own assessments to suit your needs. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn't covered by one of the pre-configured templates.  By creating your own templates, you can create custom assessments to ensure that Compliance Score tracks not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
 
 You can create new templates by copying an existing template, or by importing controls information from an Excel file. View detailed instructions for [creating templates in Compliance Manager](working-with-compliance-manager.md#templates).
 

@@ -20,7 +20,7 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: "Learn about domains and their associated DNS records to help you manage your Office 365 domains."
+description: "Learn about domains and their associated DNS records to help you manage your domains."
 ---
 
 # DNS basics
@@ -29,7 +29,7 @@ description: "Learn about domains and their associated DNS records to help you m
   
 ::: moniker range="o365-worldwide"
 
-Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains in Office 365.
+Domain names, like contoso.com, are managed by using a worldwide system of domain registrars and databases. The Domain Name System (DNS) provides a mapping between human-readable computer hostnames and the IP addresses used by networking equipment. An understanding of DNS and domain registrar basics can help you manage domains.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c005f2a4-90ad-46fe-b1ab-90f41f2a9d53?autoplay=false]
   
@@ -139,7 +139,7 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 ::: moniker-end
 
 > [!NOTE]
-> If you set up your domain in Office 365 so that [Office 365 sets up and manages your DNS records](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) for you, then as part of setup, you'll [Change DNS management to Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
+> If you set up your domain in Office 365 so that [Microsoft sets up and manages your DNS records](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) for you, then as part of setup, you'll [Change DNS management to Office 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
  
 
 ::: moniker range="o365-worldwide"
@@ -149,7 +149,7 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 Adding a custom domain, like fourthcoffee.com, to Office 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) when you sign up for a Office 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Office 365 for email. 
   
 > [!NOTE]
-> If you just want to download and use Office 365 apps, like Outlook or Word, you don't need to add a domain: [Install Office on your PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
+> If you just want to download and use Microsoft apps, like Outlook or Word, you don't need to add a domain: [Install Office on your PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx). 
   
 You can use your domain name in Office 365 with your email, public website, and instant messaging address.
   
@@ -184,7 +184,7 @@ You can use your domain name in Office 365 with your email, public website, and 
 
 There are a number of DNS records required for Office 365 to work with your domain. In addition to setting up your domain's MX record so email will be sent to Office 365, there are records to help with tasks like making sure Outlook can automatically connect to the right Exchange server, setting up instant messaging, and helping to prevent spam email.
   
-You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the Office 365 portal. 
+You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the Microsoft 365 admin center. 
   
 Or, if you're planning a deployment, you may want to review a list of all the DNS records required for Office 365, what their function is, and example values. Check out [External Domain Name System records for Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0).
   
