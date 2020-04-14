@@ -89,11 +89,20 @@ Here are two examples of queries to find suspicious email messages.
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
+Here is an example use of the search query by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets specifying to search on all mailboxes.
+
+```powershell
+$Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation "All" -ContentMatchQuery "(Received:4/13/2016..4/14/2016) AND (Subject:'Action required')"
+Start-ComplianceSearch -Identity $Search.Identity
+```
+
 ## Step 2: Connect to Security & Compliance Center PowerShell
 
 The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 If your Office 365 account uses multi-factor authentication (MFA) or federated authentication, you can't use the instructions in the previous topic on connecting to Security & Compliance Center PowerShell. Instead, see the instructions in the topic [Connect to Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+
+Once connected to Security & Compliance Center PowerShell, run the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets that you prepared on the previous step.
   
 ## Step 3: Delete the message
 
@@ -102,13 +111,15 @@ After you've created and refined a Content Search to return the message that you
 In the following example, the command soft-deletes the search results returned by a Content Search named "Remove Phishing Message". 
 
 ```powershell
-New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
+$SearchName="Remove Phishing Message"
+New-ComplianceSearchAction -SearchName $SearchName -Purge -PurgeType SoftDelete
 ```
 
 To hard-delete the items returned by the  "Remove Phishing Message" content search, you would run this command:
 
 ```powershell
-New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+$SearchName="Remove Phishing Message"
+New-ComplianceSearchAction -SearchName $SearchName -Purge -PurgeType HardDelete
 ```
 
 When you run the previous command to soft- or hard-delete messages, the search specified by the  *SearchName*  parameter is the Content Search that you created in Step 1. 
