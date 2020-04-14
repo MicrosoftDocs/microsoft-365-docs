@@ -19,7 +19,7 @@ search.appverid:
 description: "This article describes how to manage Core eDiscovery cases. This includes closing a case, reopening a closed case, and deleting a case."
 ---
 
-# Close, reopen, and delete Core eDiscovery cases
+# Close, reopen, and delete a Core eDiscovery case
 
 This article describes how to close, reopen, and delete Core eDiscovery cases in Microsoft 365.
 

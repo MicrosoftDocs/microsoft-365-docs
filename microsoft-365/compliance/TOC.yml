@@ -422,7 +422,7 @@
           href: search-for-content-in-core-ediscovery.md
         - name: Export content from a case
           href: export-content-in-core-ediscovery.md
-        - name: Close, reopen, and delete cases
+        - name: Close, reopen, and delete a case
           href: close-reopen-delete-core-ediscovery-cases.md
         - name: Core eDiscovery reference
           items:
