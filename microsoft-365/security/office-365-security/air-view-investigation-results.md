@@ -197,7 +197,7 @@ You can:
 
 ### Playbook log
 
-On the **Log** tab, you can see all the playbook steps that have occurred during the investigation. The log captures a complete inventory of all analyzers and actions completed by Office 365 auto-investigation capabilities as part of AIR. It provides a clear view of all the steps taken, including the action itself, a description, and the duration of the actual from start to finish. 
+On the **Log** tab, you can see all the playbook steps that have occurred during the investigation. The log captures a complete inventory of all analyzers and actions completed by auto-investigation capabilities as part of AIR. It provides a clear view of all the steps taken, including the action itself, a description, and the duration of the actual from start to finish. 
 
 ![AIR investigation log page](../../media/air-investigationlogpage.png)
 
@@ -208,7 +208,7 @@ You can:
 
 |Analyzer | Description |
 |-----|-----|
-|DLP violations investigation |Investigate any violations detected by [Office 365 Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
+|DLP violations investigation |Investigate any violations detected by [Microsoft 365 Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
 |Email indicators extraction |Extract indicators from the header, body, and content of an email message for investigation |
 |File Hash Reputation |Detect anomalies based on file hashes for users and machines in your organization |
 |Mail cluster identification |Email cluster analysis based on header, body, content, and URLs |

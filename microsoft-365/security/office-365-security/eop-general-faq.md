@@ -46,19 +46,19 @@ A. EOP is licensed by user. For the latest pricing information, see the [Exchang
 
 A. When you change your MX record, as per the steps outlined in [Set up your EOP service](set-up-your-eop-service.md), and your mail flows through EOP, filtering begins immediately. The MX record may take as long as 24-48 hours to propagate via DNS. You can fine tune your protection settings in the Exchange admin center (EAC) at any time during this process.
 
-**Q. Do I have to use all features of Microsoft Office 365 to use EOP? What if I just want EOP protection and that's all?**
+**Q. Do I have to use all features of Microsoft 365 to use EOP? What if I just want EOP protection and that's all?**
 
-A. You can use EOP to protect your on-premises mailboxes without using any other features of Office 365. This is known as a standalone subscription. A list of EOP features can be found in the [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
+A. You can use EOP to protect your on-premises mailboxes without using any other features of Microsoft 365. This is known as a standalone subscription. A list of EOP features can be found in the [Exchange Online Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description).
 
-**Q. Why do I need an Office 365 tenant when signing up for email filtering through EOP?**
+**Q. Why do I need a Microsoft 365 tenant when signing up for email filtering through EOP?**
 
-A. Office 365 is the name given to a collection of products and services that may be accessed through an Office 365 tenant. Think of the Office 365 tenant as the starting point to which you may add licenses for email filtering.
+A. Microsoft 365 is the name given to a collection of products and services that may be accessed through an Microsoft 365 tenant. Think of the Microsoft 365 tenant as the starting point to which you may add licenses for email filtering.
 
 **Q. Does EOP have a communication portal where I can find out about known issues and expected resolutions? What about new features?**
 
 A. The Microsoft 365 admin center will have some of this information. If you are impacted by a Service Level Event then you should see a communication alert (typically accompanied by a bell icon) after signing in to the Microsoft 365 admin center. We recommend that you read and act on any items as appropriate.
 
-Regarding new EOP features, the [Office 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. We'll also be posting blog articles about new features to the [Microsoft 365 Blogs](https://www.microsoft.com/microsoft-365/blog/) website.
+Regarding new EOP features, the [Microsoft 365 for business roadmap](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) is a good resource for finding out information about upcoming new features. We'll also be posting blog articles about new features to the [Microsoft 365 Blogs](https://www.microsoft.com/microsoft-365/blog/) website.
 
 **Q. Does the service work with legacy Exchange versions (such as Exchange Server 2010) and non-Exchange environments?**
 

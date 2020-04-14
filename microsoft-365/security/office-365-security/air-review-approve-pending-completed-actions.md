@@ -1,5 +1,5 @@
 ---
-title: "Review and approve pending remediation actions in Office 365 automated investigation and response"
+title: "Review and approve pending remediation actions in automated investigation and response"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH

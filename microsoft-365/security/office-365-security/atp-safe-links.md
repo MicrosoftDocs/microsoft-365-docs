@@ -50,11 +50,11 @@ As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-
 **Next, make sure your ATP Safe Links policies are defined**. (See [Set up Office 365 ATP Safe Links policies](set-up-atp-safe-links-policies.md).)
 ATP Safe Links features are active when:
   
-- ATP Safe Links policies are set up for email and for Office documents. (See [Set up ATP safe links policies in Office 365](set-up-atp-safe-links-policies.md).)
+- ATP Safe Links policies are set up for email and for Office documents. (See [Set up ATP safe links policies](set-up-atp-safe-links-policies.md).)
 
-- Office 365 client apps are configured to use Modern Authentication (this is for ATP Safe Links protection in Office documents). (See [Modern Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).) 
+- Microsoft 365 client apps are configured to use Modern Authentication (this is for ATP Safe Links protection in Office documents). (See [Modern Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).) 
     
-- Users have signed into Office 365 using their work or school account. (See [Sign in to Office or Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Users have signed in using their work or school account. (See [Sign in to Office or Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
     
 - Your organization's email passes through Exchange Online Protection.  
 
@@ -62,7 +62,7 @@ ATP Safe Links features are active when:
 
 |Role  |Where/how assigned  |
 |---------|---------|
-|global administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
+|global administrator |The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
 |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
     

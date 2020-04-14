@@ -34,7 +34,7 @@ Every SharePoint Online team site by default is created with the following Share
     
 - \<site name> Owners
     
-These groups are separate from Office 365 and Azure Active Directory (AD) groups and are the basis for assigning permissions for the resources of the site.
+These groups are separate from Microsoft 365 and Azure Active Directory (AD) groups and are the basis for assigning permissions for the resources of the site.
   
 The set of specific permissions that determines what a member of a SharePoint group can do in a site is a permission level. There are three permission levels by default for a SharePoint Online team site: Edit, Read, and Full control. The following table shows the default correlation of SharePoint groups and assigned permission levels:
   
@@ -52,7 +52,7 @@ Here are the default SharePoint groups and permission levels.
   
 ## Phase 2: Assign permissions to users with access groups
 
-You can assign permissions to users by adding their user account, or an Office 365 or Azure AD group of which the user account is a member, to the SharePoint groups. Once added, the user accounts, either directly or indirectly via membership in an Office 365 or Azure AD group, are assigned the permission level associated with the SharePoint group.
+You can assign permissions to users by adding their user account, or an Microsoft 365 or Azure AD group of which the user account is a member, to the SharePoint groups. Once added, the user accounts, either directly or indirectly via membership in an Microsoft 365 or Azure AD group, are assigned the permission level associated with the SharePoint group.
   
 Using the default SharePoint groups as an example:
   
@@ -64,7 +64,7 @@ Using the default SharePoint groups as an example:
     
  **Best practice:** Although you can manage permissions through individual user accounts, we recommend that you use a single Azure AD group, known as an access group, instead. This simplifies the management of permissions through membership in the access group, rather than managing the list of user accounts for each SharePoint group.
   
-Azure AD groups for Office 365 are different than Microsoft 365 groups. Azure AD groups appear in the Microsoft 365 admin center with their **Type** set to **Security** and do not have an email address. Azure AD groups can be managed within:
+Azure AD groups for Microsoft 365 are different than Microsoft 365 groups. Azure AD groups appear in the Microsoft 365 admin center with their **Type** set to **Security** and do not have an email address. Azure AD groups can be managed within:
   
 - Active Directory Domain Services (AD DS)
     
@@ -84,7 +84,7 @@ For isolated SharePoint Online team sites, the recommended group structure looks
 |\<site name> Visitors  <br/> |\<site name> Viewers  <br/> |Read  <br/> |
 |\<site name> Owners  <br/> |\<site name> Admins  <br/> |Full control  <br/> |
    
- **Best practice:** Although you can use either Office 365 or Azure AD groups as members of SharePoint groups, we recommend that you use Azure AD groups. Azure AD groups, managed either through AD DS or Office 365, give you more flexibility to use nested groups to assign permissions.
+ **Best practice:** Although you can use either Microsoft 365 or Azure AD groups as members of SharePoint groups, we recommend that you use Azure AD groups. Azure AD groups, managed either through AD DS or Microsoft 365, give you more flexibility to use nested groups to assign permissions.
   
 Here are the default SharePoint groups configured to use Azure AD-based access groups.
   
