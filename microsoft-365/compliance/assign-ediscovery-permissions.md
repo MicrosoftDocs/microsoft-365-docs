@@ -25,9 +25,9 @@ If you want people to use any of the eDiscovery-related tools in the Security & 
   
 The primary eDiscovery-related role group in Security & Compliance Center is called **eDiscovery Manager**. There are two subgroups within this role group. 
   
-- **eDiscovery Managers** - An eDiscovery Manager can use the Content Search tool in the Security & Compliance Center to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage eDiscovery cases and Advanced eDiscovery cases, add and remove members to a case, create case holds, run searches associated with a case, and access case data. eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases created by other eDiscovery Managers. 
+- **eDiscovery Managers** - An eDiscovery Manager can use the Content Search tool in the Security & Compliance Center to search content locations in the organization, and perform various search-related actions such as preview and export search results. Members can also create and manage eDiscovery cases and Advanced eDiscovery cases, add and remove members to a case, create case holds, run searches associated with a case, and access case data. eDiscovery Managers can only access and manage the cases they create. They can't access or manage cases created by other eDiscovery Managers.
     
-- **eDiscovery Administrators** - An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same content search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can: 
+- **eDiscovery Administrators** - An eDiscovery Administrator is a member of the eDiscovery Manager role group, and can perform the same content search and case management-related tasks that an eDiscovery Manager can perform. Additionally, an eDiscovery Administrator can:
     
   - Access all cases that are listed on the **eDiscovery** and **Advanced eDiscovery** pages in the Security & Compliance Center. 
 
@@ -35,10 +35,10 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
     
   - Manage any eDiscovery case after they add themselves as a member of the case.
   
-  See the [More information](#more-information) section for reasons why you might want eDiscovery Administrators in your organization. 
+  See the [More information](#more-information) section for reasons why you might want eDiscovery Administrators in your organization.
 
 > [!NOTE]
-> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 or Microsoft E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced Compliance add-on license; users with a Microsoft 365 E1 or E3 license can be assigned an E5 Compliance add-on license. Administrators and compliance officers who are assigned to cases and use Advanced eDiscovery to analyze data don't need an E5 license.  
+> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft E5 license. Alternatively, users with an E1 or E3 license can be assigned an E5 add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about licensing, see [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/complianceSD).
   
 ## Before you begin
 

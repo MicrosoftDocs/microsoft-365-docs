@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
@@ -52,7 +52,8 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
     
     ![Create schedule](../../media/atpfiletypes-createschedule.png)
 
-    (NOTE: Not all reports have the **+ Create schedule** button.)
+    > [!NOTE]
+    > Not all reports have the **+ Create schedule** button.
   
     The **Create schedule** dialog box opens. 
     

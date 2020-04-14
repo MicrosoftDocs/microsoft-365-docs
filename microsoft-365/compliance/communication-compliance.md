@@ -48,7 +48,7 @@ Communication compliance policies can assist with reviewing messages in your org
 
 - **Regulatory compliance**
 
-    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money laundering, insider trading, collusion, or bribery activities. Communication compliance policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications.
+    Most organizations must comply with some type of regulatory compliance standards as part of their normal operating procedures. These regulations often require organizations to implement some type of supervisory or oversight process for messaging that is appropriate for their industry. The Financial Industry Regulatory Authority (FINRA) Rule 3110 is a good example of a requirement for organizations to have supervisory procedures in place to scan employee communications and the types of businesses in which it engages. Another example may be a need to review broker-dealer communications in your organization to safeguard against potential money laundering, insider trading, collusion, or bribery activities. Communication compliance policies can help your organization meet these requirements by providing a process to both scan and report on corporate communications. For more information on support for financial organizations, see [Key compliance and security considerations for US banking and capital markets](../solutions/financial-services-secure-collaboration.md).
 
 ## New enhancements
 
@@ -116,10 +116,10 @@ In this workflow step, you identify your compliance requirements and configure a
 
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
-- **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in classifier to automatically detect content that may be considered abusive or offensive.
+- **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in Threat, Profanity, and Harassment classifiers to automatically detect content that may be considered abusive or offensive.
 - **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access.
 - **Regulatory compliance**: Use this template to create a policy to scan communications for references to standard financial terms associated with regulatory standards.
-- **Custom policy**: Use this template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
+- **Custom policy**: Use this template to configure specific communication channels, classifiers, individual detection conditions, and the amount of content to review for supervision in your organization.
 
 ### Investigate
 
@@ -150,4 +150,4 @@ Keeping track and managing compliance issues identified by communication complia
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md).
+To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams and Exchange Online communications.

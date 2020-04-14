@@ -185,12 +185,11 @@ Do not track when users click safe links|Disabled|Disabled|This is for both poli
 |Redirect attachment on detection|Enabled|Enabled|Redirect to email address for a security administrator that knows how to determine if the attachment is malware or not|
 |ATP Safe attachments response if malware scanning for attachments times out or error occurs|Enabled|Enabled||
 
-
 ## Related topics
 
 - Are you looking for best practices with **Exchange Mail Flow / Exchange Transport Rules**? Please see [this article](https://docs.microsoft.com/microsoft-365/security/office-365-security/best-practices-for-configuring-eop) for details.
 
-- Send suspicious mails, suspected spam, phish, or URLs to Microsoft for scan. Use the **Admin Submissions** directions in [this article](https://docs.microsoft.com/microsoft-365/security/office-365-security/admin-submission).
+- Admins and users can submit false positives (good email marked as bad) and false negatives (bad email allowed) to Microsoft for analysis. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 - Use these links for info on how to **set up** your [EOP service](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-your-eop-service), and **configure** [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp). (Don't forget to see the helpful directions in '[Protect Against Threats in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats)'.)
 
