@@ -173,7 +173,7 @@ See the following sections for more information about content searches.
   
 [Searching OneDrive accounts](#searching-onedrive-accounts)
   
-[Searching Microsoft Teams and Microsoft 365 Groups](#searching-microsoft-teams-and-office-365-groups)
+[Searching Microsoft Teams and Microsoft 365 Groups](#searching-microsoft-teams-and-micrcosoft-365-groups)
 
 [Searching Yammer Groups](#searching-yammer-groups)
   

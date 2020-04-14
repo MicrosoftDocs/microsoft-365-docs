@@ -280,7 +280,7 @@ The following sections contain more information about using the DSR case tool to
 
 [Exporting partially indexed items](#exporting-partially-indexed-items)
 
-[Searching and exporting data from Microsoft Teams and Microsoft 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+[Searching and exporting data from Microsoft Teams and Microsoft 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups)
 
 [Searching Exchange public folders](#searching-exchange-public-folders)
   
@@ -398,7 +398,7 @@ Alternatively, conversations that are part of a Teams channel (also called chann
   
 Similarly, mailboxes and SharePoint sites that correspond to an Microsoft 365 Group are also included in the built-in search. This means that email messages sent or received by the data subject and files created or uploaded by the data subject are returned. 
   
-For more information about using Content Search to search for items in Microsoft Teams and Microsoft 365 Groups or to see how to get a list of members, see the "Searching Microsoft Teams and Microsoft 365 Groups" section in [Content Search in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
+For more information about using Content Search to search for items in Microsoft Teams and Microsoft 365 Groups or to see how to get a list of members, see the "Searching Microsoft Teams and Microsoft 365 Groups" section in [Content Search in Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups). 
   
 ### Searching Exchange public folders
 
