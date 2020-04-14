@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -49,6 +49,13 @@ Edge devices include firewalls, SSL Break and Inspect, packet inspection devices
 
 Note that you are only bypassing normal proxy and network security processing for traffic to Microsoft 365 Optimize and Allow categories endpoints. All other general Internet traffic will be proxied and be subject to your existing network security processing.
 
+## Optimizing traffic for remote workers that use VPN connections
+
+Virtual private network (VPN) connections are commonly used by remote workers to access resources on an organization intranet. A conventional VPN connection routes ALL traffic, including Internet traffic, to the organization intranet. The Internet traffic gets routed to the organization's edge network and packet processing devices. This traffic is subject to travel and processing delays that can dramatically decrease performance and impact the productivity of your remote workers. 
+
+Split tunneling is the capability of a VPN connection to route specified traffic over the Internet rather than sending it over the VPN connection to your intranet. For the best performance for remote workers to critical Microsoft 365 services such as Teams, SharePoint Online, and Exchange Online, configure your split tunneling VPN connections to send traffic to Optimize category Office 365 endpoints directly over the Internet. 
+
+For detailed information, see [Optimize Office 365 connectivity for remote users using VPN split tunnelling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
 
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step4) for this step.
 
