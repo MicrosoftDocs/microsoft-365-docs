@@ -68,7 +68,7 @@ The [Microsoft 365 for enterprise foundation infrastructure poster](../media/dep
 
 [![Image for the Microsoft 365 for enterprise foundation infrastructure poster](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.png)](../media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf)
 
-To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
+To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-foundation-infrastructure/Microsoft365EnterpriseFoundInfra.pdf).
 
 
 ## Infrastructure configuration vs. user rollout
@@ -83,23 +83,23 @@ For example, you create the settings for:
 
 | Phase | Results |
 |:-------|:-----|
-| Identity | Account synchronization and groups for identity-based conditional access policies. |
+| Identity | Account synchronization and groups for identity-based Conditional Access policies. |
 | Windows 10 Enterprise | Groups to automatically upgrade computers running Windows 7 or Windows 8.1 to Windows 10 Enterprise in place. |
 | Office 365 ProPlus | Groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
-| Mobile device management | Groups for device enrollment and device-based conditional access policies. |
+| Mobile device management | Groups for device enrollment and device-based Conditional Access policies. |
 | Information protection | Groups for Office 365 sensitivity labels. |
 
 When you are ready to rollout elements of this infrastructure to users, you:
 
 | Phase | Rollout action |
 |:-------|:-----|
-| Identity | Add user accounts to the groups for identity-based conditional access policies. |
+| Identity | Add user accounts to the groups for identity-based Conditional Access policies. |
 | Windows 10 Enterprise | Add accounts to the groups to automatically deploy Windows 10 Enterprise in place for users with Windows 7 or Windows 8.1. |
 | Office 365 ProPlus | Add user accounts to the groups to automatically deploy Office 365 ProPlus for users with Office 2010, Office 2013, or Office 2016. |
-| Mobile device management | Add accounts to the groups for device enrollment and device-based conditional access policies. |
+| Mobile device management | Add accounts to the groups for device enrollment and device-based Conditional Access policies. |
 | Information protection | Add user accounts to the groups for sensitivity labels. |
 
-Once phases or elements of the foundation infrastructure are completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Office 365 ProPlus, and cloud-based services and protections, such as device enrollment and conditional access policies, to your users in the manner that best fits your business goals and IT resources.
+Once phases or elements of the foundation infrastructure are completed, tested, and piloted, you can roll out installed software, such as Windows 10 Enterprise and Office 365 ProPlus, and cloud-based services and protections, such as device enrollment and Conditional Access policies, to your users in the manner that best fits your business goals and IT resources.
 
 ## Deployment and project management strategies
 

@@ -44,7 +44,7 @@ When it comes to deciding on what to keep when moving to a new PC or a new versi
 
 Whether this is an option in your organization will depend on the scale of the migration you are planning. Clearly it is limited to the time and physics involved in working directly with users, understanding their needs, copying files across to their new, or freshly updated PC.
 
-If you are opting for a manual migration, you may need to assess whether you will be able to complete the task by January 2020, when support for Windows 7 ends. If this looks doubtful, look into using one of the automated options below, or request more people to help.
+If you are opting for a manual migration, look into using one of the automated options below, or request more people to help.
 
 ## Automated Migration using USMT 
 
