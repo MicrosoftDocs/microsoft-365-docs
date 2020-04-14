@@ -18,7 +18,7 @@ description: "Admins can learn how to create, modify, and delete the advanced an
 
 # Configure ATP anti-phishing policies in Office 365
 
-ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks. For more information about the differences between anti-phishing policies and ATP anti-phishing policies, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
+ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks. For more information about the differences between anti-phishing policies in Exchange Online Protection (EOP) and ATP anti-phishing policies, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
 
 Admins can view, edit, and configure (but not delete) the default ATP anti-phishing policy. For greater granularity, you can also create custom ATP anti-phishing policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
@@ -123,6 +123,8 @@ When you create an ATP anti-phishing policy, you can only specify the policy nam
    When you're finished, click **Create this policy**.
 
 6. Click **OK** in the confirmation dialog that appears.
+
+After you create the ATP anti-phishing policy with these general policy settings, use the instructions in the next section to configure the protection settings in the policy.
 
 ## Use the Security & Compliance Center to modify ATP anti-phishing policies
 
@@ -241,6 +243,9 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
    - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
+     > [!NOTE]
+     > You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
    - **Enable Unauthenticated Sender feature**: The default value is **On**. To turn it off, slide the toggle to **Off**.
 
    - **Actions**: Specify the action to take on messages that fail spoof intelligence:
@@ -295,7 +300,7 @@ The default anti-phishing policy is named Office365 AntiPhish Default, and it do
    - You can't delete the default policy.
    - You can't change the priority of the default policy (it's always applied last).
 
-4. On the **Edit your policy \<Name\>** page, review your settings and then click **Close**.
+4. On the **Edit your policy Office365 AntiPhish Default** page, review your settings and then click **Close**.
 
 ### Enable or disable custom ATP anti-phishing policies
 

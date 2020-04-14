@@ -43,9 +43,9 @@ External domains frequently send spoofed email, and many of these reasons are le
 
 - An external company is sending email on behalf of another company (for example, an automated report, or a software-as-a-service company).
 
-You need a way to ensure that the mail sent by legitimate spoofers doesn't get caught up in spam filters in Office 365 or external email systems. Normally, Office 365 treats these email messages as spam. As an Office 365 admin, you have the ability to prevent this by setting up spoof filters in the Security & Compliance Center. If you own the domain, you can configure SPF, DKIM, and DMARC to allow for these senders.
+You need a way to ensure that the spoofed email sent by legitimate senders doesn't get caught up in spam filters in Office 365 or external email systems. Normally, Office 365 treats these email messages as spam. As an Office 365 admin, you have the ability to prevent this by setting up spoof filters in the Security & Compliance Center. If you own the domain, you can configure SPF, DKIM, and DMARC to allow for these senders.
 
-On the other hand, malicious spoofers, those senders that are spoofing your domain, or external domains, to send spam or phishing email, need to be blocked. Spoofing is also a common way for attackers to get user credentials. Office 365 has built-in spoof protection to help shield your organization from senders of these malicious emails. Spoof protection for your organization's domains is always on for all Office 365 customers, and external domain spoof protection is on by default for Advanced Threat Protection customers and as of October, 2018 EOP customers as well. To further strengthen this protection, tell us which senders are authorized to spoof your organization's domains and send email on your behalf, and if any external domains are permitted to spoof. Any email sent from a sender that you don't authorize will be treated as spam or spoofing by Office 365. Keep an eye on the senders spoofing your domain and help us improve spoof intelligence by using the Security & Compliance Center.
+On the other hand, attackers who spoof your domains or external domains to send spam or phishing email, need to be blocked. Spoofing is also a common way for attackers to get user credentials. Office 365 has built-in spoof protection to help shield your organization from senders of these malicious emails. Spoof protection for your organization's domains is always on for all Office 365 customers, and external domain spoof protection is on by default for Advanced Threat Protection customers and as of October, 2018 EOP customers as well. To further strengthen this protection, tell us which senders are authorized to spoof your organization's domains and send email on your behalf, and if any external domains are permitted to spoof. Any email sent from a sender that you don't authorize will be treated as spam or spoofing by Office 365. Keep an eye on the senders spoofing your domain and help us improve spoof intelligence by using the Security & Compliance Center.
 
 ## Managing spoof intelligence in the Security & Compliance Center
 
@@ -65,7 +65,7 @@ You can review the senders who are spoofing your domain, or external domains, an
 |Allowed to spoof?| Displays whether or not this sender is allowed to send email on behalf of the spoofed user. Possible values include:  <br/> **Yes** All spoofed addresses from this spoofing sender will be allowed to spoof your organization.  <br/> **No** Spoofed addresses from this spoofing sender won't be allowed to spoof your organization. Instead, messages from this sender will be marked as spam by Office 365.  <br/> **Some users** If a sender is spoofing multiple users, some spoofed addresses from this sender will be allowed to spoof your organization, the rest will be marked as spam. Use the **Detailed** tab to see the specific addresses.|
 |Spoof Type|This value is **Internal** if the domain is one of your organization's provisioned domains, otherwise the value is **External**.|
 
- **To manage senders who are spoofing your domain by using the Security & Compliance Center**
+### To manage senders who are spoofing your domain by using the Security & Compliance Center
 
 1. Go to the [Security & Compliance Center](https://protection.office.com).
 
@@ -107,7 +107,7 @@ Office 365 includes default anti-spoofing protection that's always running. This
 
 Even though the anti-spoofing policy appears under the anti-phishing policy in the Security & Compliance Center, it does not inherit its default behavior from the existing phishing setting under the Anti-spam configuration. If you have settings under **Anti-spam** \> **Phishing** that you want to replicate for anti-spoofing, you will need to create an anti-phishing policy, then edit the spoof portion of the anti-phishing policy to reflect your spoof settings as described in the following section, rather than accepting the default settings that run in the background.
 
- **To configure anti-spoofing protection within an anti-phishing policy by using the Security & Compliance Center**
+### To configure anti-spoofing protection within an anti-phishing policy by using the Security & Compliance Center
 
 1. Go to the [Security & Compliance Center](https://protection.office.com).
 
@@ -121,12 +121,11 @@ Even though the anti-spoofing policy appears under the anti-phishing policy in t
 
 6. Next, configure the actions to take when a message is detected as a cross-domain spoof. The default behavior is to move the message to the recipient's junk email folder. The other option is to send the message to the quarantine. For more information about managing messages sent to quarantine, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
 
-    ![Screenshot showing anti-spoofing policy edit options](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
+   ![Screenshot showing anti-spoofing policy edit options](../../media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
 
 7. Make your choice and then choose **Save**.
 
 ## Other ways to manage spoofing and phishing with Office 365
-<a name="Managespooflist"> </a>
 
 Be diligent about spoofing and phishing protection. Here are related ways to check on senders spoofing your domain and help prevent them from damaging your organization:
 

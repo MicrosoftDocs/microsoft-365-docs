@@ -44,7 +44,7 @@ The high-level differences between anti-phishing policies and ATP anti-phishing 
 |Advanced phishing thresholds||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |
 
-<sup>\*</sup> You can see, but you can't change the policy name, you can't add a policy description, and you can't specify who the policy applies to (the default policy applies to all recipients).
+<sup>\*</sup> The policy name and description are read-only (the description is blank), and you can't specify who the policy applies to (the default policy applies to all recipients).
 
 To configure anti-phishing policies, see the following topics:
 
@@ -56,9 +56,11 @@ The rest of this topic describes the settings that are available in EOP and ATP 
 
 ## Spoof settings
 
+Spoofing is when the From address in an email message (the sender address that's show in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Office 365](anti-spoofing-protection.md).
+
 The following spoof settings are available in anti-phishing policies and ATP anti-phishing policies:
 
-- **Anti-spoofing protection**: Enables or disables anti-spoofing protection. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+- **Anti-spoofing protection**: Enables or disables anti-spoofing protection. We recommend that you leave it enabled. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
   For messages from unidentified or blocked spoofed senders (in other words, any spoofed senders that aren't specifically allowed), you can also specify the action to take on the messages:
 
@@ -72,11 +74,14 @@ The following spoof settings are available in anti-phishing policies and ATP ant
 
 - **Unauthenticated Sender**: Enables or disables unidentified sender identification that adds a question mark in the sender's photo if the sender fails email authentication checks. For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206).
 
+> [!NOTE]
+> You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+
 ## Exclusive settings in ATP anti-phishing policies
 
 This section describes the policy settings that are only available in ATP anti-phishing policies.
 
-## Policy settings in ATP anti-phishing policies
+### Policy settings in ATP anti-phishing policies
 
 The following policy settings are only available in ATP anti-phishing policies:
 
@@ -99,6 +104,14 @@ The following policy settings are only available in ATP anti-phishing policies:
     - **The recipient domain is**
 
 ### Impersonation settings in ATP anti-phishing policies
+
+Impersonation is where the sender or the sender's email domain in a message looks very similar to a real sender or domain:
+
+- An example impersonation of the domain contoso.com is ćóntoso.com.
+
+- An example impersonation of the user michelle@contoso.com is michele@contoso.com.
+
+An impersonated domain might otherwise be considered legitimate (registered domain, configured email authentication records, etc.), except its intent is to deceive recipients.
 
 The following impersonation settings are only available in ATP anti-phishing policies:
 
@@ -132,11 +145,11 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
   - **Impersonated users**: The From address contains a protected user.
   - **Impersonated domains**: The From address contains a protected domain.
-  - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters).
+  - **Unusual characters**: The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
 
-- **Mailbox intelligence based impersonation protection**: Enables or disables enhanced impersonation results based on each user's individual sender map. This intelligence allows Office 365 to customize user impersonation detection and better handle false positives. When user impersonation is detected, you can define the action to take on the message (the same actions that are available for protected users and domains):
+- **Mailbox intelligence based impersonation protection**: Enables or disables enhanced impersonation results based on each user's individual sender map. This intelligence allows Office 365 to customize user impersonation detection and better handle false positives. When user impersonation is detected, you can define a specific action to take on the message:
 
   - **Don't apply any action**
   - **Redirect message to other email addresses**
