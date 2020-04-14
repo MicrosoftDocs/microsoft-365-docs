@@ -73,7 +73,7 @@ If you have previously set up MFA with baseline policies, [you must turn them of
 5. Go to [Azure Active Directory Properties](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties) page.
 6. On the bottom of the page, choose **Manage Security defaults**, and in the **Enable Security defaults** pane, set **Enable Security defaults** toggle to **Yes**, and then choose **Save**. 
 
-## Enable modern authentication for your Office 365 subscription
+## Enable modern authentication for your organization
 
 All Office 2016 client applications support MFA through the use of the Active Directory Authentication Library (ADAL). This means that app passwords aren't required for Office 2016 clients. However, you need to make sure your Office 365 subscription is enabled for ADAL, or modern authentication.
 
