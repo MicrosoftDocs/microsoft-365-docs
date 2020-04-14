@@ -2847,29 +2847,34 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
    
 ## Finland Passport Number
 
-Format
+### Format
 Combination of nine letters and digits
-Pattern
+
+### Pattern
 Combination of nine letters and digits:
 Two letters (not case sensitive) 
 Seven digits
-Checksum
+
+### Checksum
 No
-Definition
+
+### Definition
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The regular expression Regex_finland_passport_number finds content that matches the pattern.
-A keyword from Keyword_finland_passport_number is found.
+- The regular expression Regex_finland_passport_number finds content that matches the pattern.
+- A keyword from Keyword_finland_passport_number is found.
 <!-- Finland Passport Number -->
+```xml
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
      <IdMatch idRef="Regex_finland_passport_number"/>
      <Match idRef="Keyword_finland_passport_number"/>
   </Pattern>
 </Entity>
-Keywords
-Keyword_finland_passport_number
-Passport
-Passi
+```
+### Keywords
+- Keyword_finland_passport_number
+- Passport
+- Passi
    
 ## France Driver's License Number
 
