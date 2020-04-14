@@ -38,7 +38,7 @@ For more information about the different permissions you can give to users in th
 
 ## Use the admin center to give another user access to the Security & Compliance Center
 
-1. [Sign in to Office 365 and go to the Admin center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
+1. [Sign in and go to the admin center](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center).
 
 2. In the Microsoft 365 admin center, open **Admin centers** and then click **Security & Compliance**.
 

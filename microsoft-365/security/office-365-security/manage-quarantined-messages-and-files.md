@@ -40,7 +40,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
   - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign into Office 365 and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
   - Messages that contain malware: 15 days.
 
@@ -68,7 +68,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
    - **Policy type**<sup>\*</sup>
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security and Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
    - **Recipient**
 
@@ -329,7 +329,7 @@ When you select multiple quarantined files in the list (up to 100), the **Bulk a
 
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
 
-1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in to Office 365 and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## Use Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to view and manage quarantined messages and files
 

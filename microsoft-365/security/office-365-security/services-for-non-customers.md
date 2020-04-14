@@ -30,7 +30,7 @@ This overview provides information about benefits we provide to your organizatio
 |:-----|:-----|
 |This online help content| Provides:  <br/>  A starting point for any questions related to delivering communications to EOP users  <br/>  Includes a simple online guide with our policies and requirements  <br/>  An overview of the junk email filters and authentication technologies employed by Microsoft|
 |[Microsoft support](#microsoft-support)|Provides self-help and escalation support for delivery issues.|
-|[Office 365 Anti-Spam IP Delist Portal](#office-365-anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
+|[Anti-Spam IP Delist Portal](#anti-spam-ip-delist-portal)|A tool to submit IP delist request. Before submitting this request it is the sender's responsibility to ensure that any further mail originating from the IP in question is not abusive or malicious.|
 |[Abuse and spam reporting for junk email originating from Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Keeps spam and other unwanted mail from being sent from Exchange Online and cluttering up the Internet and your mail system.|
 
 ## Microsoft support
@@ -49,7 +49,7 @@ Microsoft offers several support options for people having trouble sending mail 
 
   For more information about Microsoft Technical support for Office 365, see [Support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
 
-## Office 365 Anti-Spam IP Delist Portal
+## Anti-Spam IP Delist Portal
 
 This is a self-service portal you can use to remove yourself from the Microsoft 365 blocked senders list. Use this portal if you are you getting an error message when you try to send an email to a recipient whose email address is in Microsoft 365 and you don't think you should be. For more information, see [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 

@@ -1,5 +1,5 @@
 ---
-title: "Create blocked sender lists in Office 365"
+title: "Create blocked sender lists"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: "Admins can learn about the available options in Office 365 and EOP to block inbound messages."
+description: "Admins can learn about the available options in Microsoft 365 and EOP to block inbound messages."
 ---
 
-# Create blocked sender lists in Office 365
+# Create blocked sender lists
 
-If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. These options include Outlook Blocked Senders, blocked sender lists or blocked domain lists in anti-spam policies, Exchange mail flow rules (also known as transport rules), and the IP Block List (connection filtering). Collectively, you can think of these options as _blocked sender lists_.
+If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. These options include Outlook Blocked Senders, blocked sender lists or blocked domain lists in anti-spam policies, Exchange mail flow rules (also known as transport rules), and the IP Block List (connection filtering). Collectively, you can think of these options as _blocked sender lists_.
 
 The best method to block senders varies on the scope of impact. For a single user, the right solution could be Outlook Blocked Senders. For many users, one of the other options would be more appropriate. The following options are ranked by both impact scope and breadth. The list goes from narrow to broad, but *read the specifics* for full recommendations.
 
@@ -32,11 +32,11 @@ The best method to block senders varies on the scope of impact. For a single use
 > [!NOTE]
 > While you can use organization-wide block settings to address false negatives (missed spam), you should also submit those messages to Microsoft for analysis. Managing false negatives by using block lists significantly increases your administrative overhead. If you use block lists to deflect missed spam, you need to keep the topic [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md) at the ready.
 
-In contrast, you also have several options to always allow email from specific sources using _safe sender lists_. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+In contrast, you also have several options to always allow email from specific sources using _safe sender lists_. For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 ## Use Outlook Blocked Senders
 
-When only a small number of users received unwanted email, users or admins can add the sender email addresses to the Blocked Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+When only a small number of users received unwanted email, users or admins can add the sender email addresses to the Blocked Senders list in the mailbox. For instructions, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
 
 When messages are successfully blocked due to a user's Blocked Senders list, the **X-Forefront-Antispam-Report** header field will contain the value `SFV:BLK`.
 
@@ -45,7 +45,7 @@ When messages are successfully blocked due to a user's Blocked Senders list, the
 
 ## Use blocked sender lists or blocked domain lists
 
-When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **Spam**, and the action that you've configured for the **Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **Spam**, and the action that you've configured for the **Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
 The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You need to use PowerShell to add more than 30 entries.
 

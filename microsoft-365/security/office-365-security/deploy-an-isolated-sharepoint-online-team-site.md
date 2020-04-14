@@ -33,19 +33,19 @@ In this phase, you create the three Azure AD-based access groups for the three d
 
 Determine the set of user accounts corresponding to the SharePoint Online admins for the isolated team site.
   
-If you are managing user accounts and groups through Office 365 and want to use Windows PowerShell, make a list of their user principal names (UPNs) (example UPN: belindan@contoso.com).
+If you are managing user accounts and groups through Microsoft 365 and want to use Windows PowerShell, make a list of their user principal names (UPNs) (example UPN: belindan@contoso.com).
   
 ### Step 2: List the members for the site
 
 Determine the set of user accounts corresponding to the members for the isolated team site, those who will be collaborating on resources stored within the site.
   
-If you are managing user accounts and groups through Office 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
+If you are managing user accounts and groups through Microsoft 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
   
 ### Step 3: List the viewers for the site
 
 Determine the set of user accounts corresponding to the viewers of the isolated team site, those who can view the resources stored in the site but not modify them or directly collaborate on their contents.
   
-If you are managing user accounts and groups through Office 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
+If you are managing user accounts and groups through Microsoft 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
   
 Viewers for the site might include executive management, legal counsel, or inter-departmental stakeholders.
   

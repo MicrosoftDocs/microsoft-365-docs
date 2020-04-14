@@ -31,7 +31,7 @@ To find out what permissions you need to manage EOP features, see the following 
 |Mail flow rules|Organization Management <br/><br/> Records Management|
 |Domains|Organization Management <br/><br/> View-Only Organization Management|
 |Advanced Threat Protection (ATP)|Organization Management <br/><br/> Hygiene Management|
-|Office 365 connectors|Organization Management|
+|Microsoft 365 connectors|Organization Management|
 |Message trace|Organization Management <br/><br/> View-Only Organization Management|
 |Organization configuration|Organization Management|
 |Quarantine|Organization Management <br/><br/> View-Only Organization Management <br/><br/> Hygiene Management|
