@@ -17,7 +17,7 @@ description: "Administrators can set up a native connector to import and archive
 
 # Deploy a connector to archive Facebook Business pages data
 
-This article contains the step-by-step process to deploy a connector that uses the Microsoft 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md). 
+This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md). 
 
 ## Step 1: Create an app in Azure Active Directory
 
@@ -220,7 +220,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 12. On the **Choose storage location** page, type the email address of Microsoft 365 mailbox that the Facebook items will be imported to, and then click **Next**.
 
-13. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Microsoft 365 Import service to access data in your organization.
+13. On the **Provide admin consent**, click **Provide consent** and then follow the steps. You must be a global admin to provide consent for the Office 365 Import service to access data in your organization.
 
 14. Click **Next** to review the connector settings and then click **Finish** to complete the connector setup.
 

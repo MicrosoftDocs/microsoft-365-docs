@@ -131,7 +131,7 @@ The following table describes other tools that you can use to replace the existi
 <li><p>Tagging suggestions to help identify attorney  client privilege content</p></li></ul>
 <p>For more information, see <a href="https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20">Overview of the Advanced eDiscovery solution in Microsoft 365</a>.</p>
 <p>
-<p>Alternatively, you can export search results to PST files and then use Microsoft 365 Import service to import the PSTs to a discovery mailbox. For step-by-step instruction, see <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Use network upload to import PST files to Office 365</a>.
+<p>Alternatively, you can export search results to PST files and then use Office 365 Import service to import the PSTs to a discovery mailbox. For step-by-step instruction, see <a href="https://docs.microsoft.com/microsoft-365/compliance/use-network-upload-to-import-pst-files">Use network upload to import PST files to Office 365</a>.
 </tr>
 <tr class=even>
   <td>Copy messages from one mailbox to a different mailbox</td>
