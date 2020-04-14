@@ -27,7 +27,7 @@ If the device is enrolled in Microsoft Defender ATP, you can also use the Device
 
 The profile page is broken up into several broad sections.
 
-![Image of device profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-machine-profile/hybrid-device-overall.PNG)
+![Image of device profile page with (1) Tab area (2) Sidebar and (3) Actions highlighted in red](../../media/mtp-device-profile/hybrid-device-overall.png)
 
 The sidebar (1) lists basic details about the device.
 
@@ -39,7 +39,7 @@ If the device is enrolled in Microsoft Defender ATP, you will also see a list of
 
 Beside the main content area of the Device profile page is the sidebar.
 
-![Image of sidebar tab for device profile](../../media/mtp-machine-profile/azure-atp-only-device-sidebar.PNG)
+![Image of sidebar tab for device profile](../../media/mtp-device-profile/azure-atp-only-device-sidebar.png)
 
 The sidebar lists the device's full name and exposure level. It also provides some important basic information in small subsections which can be toggled open or closed, such as:
 
@@ -57,7 +57,7 @@ The sidebar lists the device's full name and exposure level. It also provides so
 
 Response actions offer a quick way to defend against and analyze threats.
 
-![Image of action bar for device profile](../../media/mtp-machine-profile/hybrid-device-action-bar.PNG)
+![Image of action bar for device profile](../../media/mtp-device-profile/hybrid-device-action-bar.png)
 
 > [!IMPORTANT]
 > * [Response actions](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) are only available if the device is enrolled in Microsoft Defender ATP.
@@ -68,7 +68,7 @@ Actions available on the device profile page include:
 * **Manage tags** - Updates custom tags you have applied to this device.
 * **Isolate device** - Isolates the device from your organization's network while keeping it connected to Microsoft Defender Advanced Threat Protection. You can choose to allow Outlook, Teams, and Skype for Business to run while the device is isolated, for communication purposes.
 * **Action center** - View the status of submitted actions. Only available if another action has already been selected.
-* **Restrict app execution** - Prevents applications that are not signed by Microsoft from running
+* **Restrict app execution** - Prevents applications that are not signed by Microsoft from running.
 * **Run antivirus scan** - Updates Windows Defender Antivirus definitions and immediately runs an antivirus scan. Choose between Quick scan or Full scan.
 * **Collect investigation package** - Gathers information about the device. When the investigation is completed, you can download it.
 * **Initiate Live Response Session** - Loads a remote shell on the device for [in-depth security investigations](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response).
@@ -85,7 +85,7 @@ Devices enrolled in Microsoft Defender ATP will also display tabs that feature a
 
 The default tab is **Overview**. It provides a quick look at the most important security fact about the device.
 
-![Image of overview tab for device profile](../../media/mtp-machine-profile/hybrid-device-tab-overview.png)
+![Image of overview tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-overview.png)
 
 Here, you can get a quick look at the device's active alerts, and any currently logged on users.
 
@@ -95,7 +95,7 @@ If the device is enrolled in Microsoft Defender ATP, you will also see the devic
 
 The **Alerts** tab contains a list of alerts that have been raised on the device, from both Azure ATP and Microsoft Defender ATP.
 
-![Image of alerts tab for device profile](../../media/mtp-machine-profile/hybrid-device-tab-alerts.png)
+![Image of alerts tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-alerts.png)
 
 You can customize the number of items displayed, as well as which columns are displayed for each item. The default behavior is to list thirty items per page.
 
@@ -113,7 +113,7 @@ The **Timeline** tab includes an interactive, chronological chart of all events 
 
 Below the chart is a list of events for the selected range of dates.
 
-![Image of timeline tab for device profile](../../media/mtp-machine-profile/hybrid-device-tab-timeline.png)
+![Image of timeline tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
 
 The number of items displayed and the columns on the list can both be customized. The default columns list the event time, active user, action type, entities (processes), and additional information about the event.
 
@@ -127,7 +127,7 @@ The list can also be exported to a CSV file, for download. Although the file is 
 
 The **Security recommendations** tab lists actions you can take to protect the device. Selecting an item on this list will open a flyout where you can get instructions on how to apply the recommendation.
 
-![Image of security recommendations tab for device profile](../../media/mtp-machine-profile/hybrid-device-tab-security-recs.png)
+![Image of security recommendations tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
 As with the previous tabs, the number of items displayed per page, as well as which columns are visible, can be customized.
 
@@ -137,7 +137,7 @@ The default view includes columns that detail the security weaknesses addressed,
 
 The **Software inventory** tab lists software installed on the device.
 
-![Image of software inventory tab for device profile](../../media/mtp-machine-profile/hybrid-device-tab-software-inventory.png)
+![Image of software inventory tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-software-inventory.png)
 
 The default view displays the software vendor, installed version number, number of known software weaknesses, threat insights, product code, and tags. The number of items displayed and which columns are displayed can both be customized.
 
@@ -149,7 +149,7 @@ This list can be filtered by product code.
 
 The **Discovered vulnerabilities** tab lists any Common Vulnerabilities and Exploits (CVEs) that may affect the device.
 
-![Image of discovered vulnerabilities tab for device profile](../../media/mtp-machine-profile/hybrid-device-tab-discovered-vulnerabilities.png)
+![Image of discovered vulnerabilities tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
 The default view lists the severity of the CVE, the Common Vulnerability Score (CVS), the software related to the CVE, when the CVE was published, when the CVE was last updated, and threats associated with the CVE.
 
@@ -161,7 +161,7 @@ Selecting an item from this list will open a flyout that describes the CVE.
 
 The **Missing KBs** tab lists any Microsoft Updates that have yet to be applied to the device. The "KBs" in question are [Knowledge Base articles](https://support.microsoft.com/help/242450/how-to-query-the-microsoft-knowledge-base-by-using-keywords-and-query) which describe these updates; for example, [KB4551762](https://support.microsoft.com/help/4551762/windows-10-update-kb4551762).
 
-![Image of missing kbs tab for device profile](../../media/mtp-machine-profile/hybrid-device-tab-missing-kbs.PNG)
+![Image of missing kbs tab for device profile](../../media/mtp-device-profile/hybrid-device-tab-missing-kbs.PNG)
 
 The default view lists the bulletin containing the updates, OS version, products affected, CVEs addressed, the KB number, and tags.
 
