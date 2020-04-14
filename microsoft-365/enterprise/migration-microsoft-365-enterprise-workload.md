@@ -111,10 +111,9 @@ Rather than upgrading your server products in the Office 2007 release with serve
 
 ### Office Server 2010
 
-For server products in the Office 2010 release, the end of support is **October 13, 2020** for the following:
+The end of support for [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support) is **October 13, 2020**.
 
-- [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+The end of support for [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) is **April 13, 2021**.
 
 Rather than upgrading these server products in the Office 2010 release with server products in the Office 2013 or Office 2016 release, consider:
 

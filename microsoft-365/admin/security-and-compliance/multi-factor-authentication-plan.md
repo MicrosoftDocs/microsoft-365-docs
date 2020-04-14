@@ -24,7 +24,7 @@ description: "Learn about multi-factor authentication in Microsoft 365, and the 
 
 # Plan for multi-factor authentication for Microsoft 365 Deployments
 
-Multi-factor authentication (MFA) is a method of authentication that requires the use of more than one verification method and adds a second layer of security to user sign-ins and transactions. It works by requiring any two or more of the following verification methods:
+Multi-factor authentication (MFA) is a method of authentication that requires the use of more than one verification method and adds a second layer of security to user sign-ins and transactions. It works by requiring an addition verification step with information beyond the user account password, such as:
   
 - A randomly generated pass code
     
@@ -38,7 +38,7 @@ Multi-factor authentication (MFA) is a method of authentication that requires th
 
 Microsoft 365 uses multi-factor authentication to help provide the extra security and is managed from the Microsoft 365 admin center. Microsoft 365 offers the following subset of Azure multi-factor authentication capabilities as a part of the subscription: 
   
-- The ability to enable and enforce multi-factor authentication for end users
+- The ability to enable and enforce MFA for end users
     
 - The use of a mobile app (online and one-time password [OTP]) as a second authentication factor
     
@@ -46,7 +46,7 @@ Microsoft 365 uses multi-factor authentication to help provide the extra securit
     
 - The use of a Short Message Service (SMS) message as a second authentication factor
     
-- Application passwords for non browser clients (for example, the Microsoft Lync 2013 communications software)
+- Application passwords for non-browser clients (for example, the Microsoft Lync 2013 communications software)
     
 - Default Microsoft greetings during authentication phone calls
     
@@ -70,11 +70,8 @@ The following figure shows how the updated Office 2013 device apps (on Windows) 
     
 4. Azure AD returns a JSON Web Token (JWT) to the Office device app, and the device app is authenticated by using a JWT with Microsoft 365. 
     
-This is detailed in the following figure:
   
-![Modern authentication for Office 2013 device apps.](../../media/dc37645c-b899-4715-b162-d7653bd0aebd.png)
-  
-## Software requirements
+## Requirements for Office 2013 client apps
 
 To enable MFA for Office 2013 client apps, you must have the following software installed (the version listed below, or a later version) based on whether you have a [Click-to-run based installations](#click-to-run-based-installations) or an [MSI-based installations](#msi-based-installations).
   
@@ -86,11 +83,13 @@ To determine whether your Office installation is Click-to-run or MSI-base:
     
 3. For Outlook 2013 Click-to-Run installations, an **Update Options** item is displayed. For MSI-based installations, the **Update Options** item is not displayed. 
     
-    ![Graphic that shows how to tell if Office 2013 install is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+    ![How to tell if your Office 2013 installation is click-to-run or MSI-based](../../media/1e75143f-9e37-4e0c-9610-43a80771571e.png)
+
+Sor more information, see the [FAQ about Modern Authentication wiki article](https://go.microsoft.com/fwlink/p/?LinkId=530064).
   
 ### Click-to-run based installations
 
-For Click-to-run based installations, you must have the following software installed, at file version listed below or a later file version. If your file version is not equal to or greater than the file version listed, update it using the steps below.
+For Click-to-run based installations, you must have the following software installed, with the file version listed below or a later file version. If your file version is not equal to or greater than the file version listed, update it using the steps below.
   
 |**File name**|**Install path on your computer**|**File version**|
 |:-----|:-----|:-----|
@@ -116,29 +115,27 @@ For MSI-based installations, you must have the following software installed, at 
    
 ## Enable MFA
 
-To enable MFA, you have to complete the following:
+To enable MFA for your Office 365 subscription, follow these steps:
   
-1. Enable clients for modern authentication:
-    
-  - [Enable Modern Authentication for Office 2013 on Windows devices](enable-modern-authentication.md) . 
+1. If needed, [enable Modern Authentication for Office 2013 on Windows devices](enable-modern-authentication.md).
     
   - Set up Azure MFA with third-party directory services.
     
-    See the [Advanced scenarios with Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for information on specific identity providers accepted to this program. 
+    See [advanced scenarios with Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for information on specific identity providers accepted to this program. 
     
 2. [Set up multi-factor authentication for Microsoft 365](set-up-multi-factor-authentication.md)
     
 3. Tell individual users how to sign in by MFA: [Sign in to Microsoft 365 with 2-step verification](https://support.office.com/article/2b856342-170a-438e-9a4f-3c092394d3cb.aspx).
-    
+
 > [!IMPORTANT]
-> If you have enabled your users for Azure AD MFA and they have any devices running Office 2013 that are not enabled for Modern Authentication, they will need to use AppPasswords on those devices. More information on AppPasswords and when/where/how they should be used can be found here: [App Passwords with Azure Multi_Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178). 
+> If you have enabled your users for Azure AD MFA and they have any devices running Office 2013 that are not enabled for Modern Authentication, they will need to use AppPasswords on those devices. More information on AppPasswords and when/where/how they should be used can be found here: [App Passwords with Azure Multi_Factor Authentication](https://go.microsoft.com/fwlink/p/?LinkId=528178).
   
 ## FAQ
 
 [FAQ about Modern Authentication wiki article](https://go.microsoft.com/fwlink/p/?LinkId=530064)
   
- **Known issues:**
-  
+## Known issues
+
 [Office 2013 and Microsoft 365 Apps for enterprise modern authentication : Things to know before onboarding](https://social.technet.microsoft.com/wiki/contents/articles/30214.office-2013-and-office-365-proplus-modern-authentication-things-to-know-before-onboarding.aspx)
   
  **Troubleshooting Azure Multi-Factor Authentication:**
