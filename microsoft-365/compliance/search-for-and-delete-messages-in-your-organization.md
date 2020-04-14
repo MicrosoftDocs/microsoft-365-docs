@@ -102,7 +102,7 @@ The next step is to connect to Security & Compliance Center PowerShell for your 
   
 If your Office 365 account uses multi-factor authentication (MFA) or federated authentication, you can't use the instructions in the previous topic on connecting to Security & Compliance Center PowerShell. Instead, see the instructions in the topic [Connect to Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
 
-Once connected to Security & Compliance Center PowerShell, run the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets that you prepared on the previous step.
+After you've connected to Security & Compliance Center PowerShell, run the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets that you prepared in the previous step.
   
 ## Step 3: Delete the message
 
@@ -114,7 +114,7 @@ In the following example, the command soft-deletes the search results returned b
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-To hard-delete the items returned by the  "Remove Phishing Message" content search, you would run this command:
+To hard-delete the items returned by the "Remove Phishing Message" content search, you would run this command:
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
