@@ -14,7 +14,7 @@ description: "Learn how to collaborate with guests in a SharePoint site."
 
 # Collaborate with guests in a site
 
-If you need to collaborate with guests across documents, data, and lists, you can use a SharePoint site. Modern SharePoint sites are connected to Office 365 Groups and can manage the site membership and provide additional collaboration tools such as a shared mailbox and calendar.
+If you need to collaborate with guests across documents, data, and lists, you can use a SharePoint site. Modern SharePoint sites are connected to Microsoft 365 Groups and can manage the site membership and provide additional collaboration tools such as a shared mailbox and calendar.
 
 In this article, we'll walk through the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests.
 
@@ -43,17 +43,17 @@ To set organizational relationship settings
 
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
-## Office 365 Groups guest settings
+## Microsoft 365 Groups guest settings
 
-Modern SharePoint sites use Office 365 Groups to control site access. The Office 365 Groups guest settings must be turned on in order for guest access in SharePoint sites to work.
+Modern SharePoint sites use Microsoft 365 Groups to control site access. The Microsoft 365 Groups guest settings must be turned on in order for guest access in SharePoint sites to work.
 
-![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
 
-To set Office 365 Groups guest settings
+To set Microsoft 365 Groups guest settings
 
 1. In the Microsoft 365 admin center, in the left navigation, expand **Settings**.
 2. Click **Services & add-ins**.
-3. In the list, click **Office 365 Groups**.
+3. In the list, click **Microsoft 365 Groups**.
 4. Ensure that the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes are both checked.
 5. If you made changes, click **Save changes**.
 
@@ -108,7 +108,7 @@ To set site-level sharing settings
 
 ## Invite users
 
-Guest sharing settings are now configured, so you can start adding internal users and guests to your site. Site access is controlled through the associated Office 365 Group, so we'll be adding users there.
+Guest sharing settings are now configured, so you can start adding internal users and guests to your site. Site access is controlled through the associated Microsoft 365 Group, so we'll be adding users there.
 
 To invite internal users to a group
 1. Navigate to the site where you want to add users.

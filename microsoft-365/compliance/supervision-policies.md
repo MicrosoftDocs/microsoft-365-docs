@@ -73,7 +73,7 @@ You create supervision policies in the Compliance center. These policies define 
 
 ### Supervised users
 
-Before you start using supervision, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Office 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from supervision with a supervised group or a list of groups.
+Before you start using supervision, you must determine who needs their communications reviewed. In the policy, user email addresses identify individuals or groups of people to supervise. Some examples of these groups are Microsoft 365 Groups, Exchange-based distribution lists, and Microsoft Teams channels. You also can exclude specific users or groups from supervision with a supervised group or a list of groups.
 
 >[!IMPORTANT]
 >Users monitored by supervision policies must have a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription, or be included in a Microsoft 365 E5 subscription.If you don't have an existing Enterprise E5 plan and want to try supervision, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
@@ -86,7 +86,7 @@ When you create a supervision policy, you must determine who will perform the re
 
 To simplify your setup, create groups for people who need their communications reviewed and groups for people who review those communications. If you're using groups, you might need several. For example, if you want to monitor communications between two distinct groups of people, or if you want to specify a group that isn't supervised.
 
-When you select an Office 365 group for supervised users, the policy monitors the content of the shared Office 365 mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.
+When you select a Microsoft 365 group for supervised users, the policy monitors the content of the shared Office 365 mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.
 
 ### Supported communication types
 
@@ -97,7 +97,7 @@ With supervision policies, you can choose to monitor messages in one or more of 
 - **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be supervised. Teams chats matching supervision policy conditions are processed once every 24 hours and then are available for monitoring and in supervision reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
     - **For Teams chat supervision:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the supervision policy. This is for 1-to-1 or 1-to-many user/chat relationships.
-    - **For Teams Channel communications:** Assign every Microsoft Team channel or Office 365 group you want to monitor that contains a specific user to the supervision policy. If you add the same user to other Microsoft Teams channels or Office 365 groups, be sure to add these new channels and groups to the supervision policy.
+    - **For Teams Channel communications:** Assign every Microsoft Team channel or Microsoft 365 group you want to monitor that contains a specific user to the supervision policy. If you add the same user to other Microsoft Teams channels or Microsoft 365 groups, be sure to add these new channels and groups to the supervision policy.
 
 - **Skype for Business Online:** Chat communications and associated attachments in Skype for Business Online can be supervised. Skype for Business Online chats matching supervision policy conditions are processed once every 24 hours and then are available for monitoring and in supervision reports. Supervised chat conversations are sourced from [previous conversations saved in Skype for Business Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use the following group management configuration to supervise user chat communications in Skype for Business Online:
 

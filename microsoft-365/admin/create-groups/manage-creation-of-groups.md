@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
-description: "Learn how to control which users can create Office 365 groups."
+description: "Learn how to control which users can create Microsoft 365 groups."
 ---
 
 # Manage who can create Groups
 
   
-Because it's so easy for users to create Office 365 groups, you aren't inundated with requests to create them on behalf of other people. Depending on your business, however, you might want to control who has the ability to create groups.
+Because it's so easy for users to create Microsoft 365 groups, you aren't inundated with requests to create them on behalf of other people. Depending on your business, however, you might want to control who has the ability to create groups.
   
 This article explains how to disable the ability to create groups in all Microsoft 365 services that use groups, including:
   
@@ -48,7 +48,7 @@ This article explains how to disable the ability to create groups in all Microso
 
 - Roadmap
     
-You can restrict Office 365 group creation to the members of a particular security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
+You can restrict Microsoft 365 group creation to the members of a particular security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
   
 The steps in this article won't prevent members of certain roles from creating Groups. Global admins can create Groups via any means, such as the Microsoft 365 admin center, Planner, Teams, Exchange, and SharePoint Online. Other roles can create Groups via limited means, listed below.
         
@@ -66,7 +66,7 @@ The steps in this article won't prevent members of certain roles from creating G
   
   - User Management Administrator: Microsoft 365 Admin center, Yammer, Azure AD
      
-If you're a member of one of these roles, you can create Office 365 groups for restricted users, and then assign the user as the owner of the group. Users that have this role are able to create connected groups in Yammer, regardless of any PowerShell settings that might prevent creation.
+If you're a member of one of these roles, you can create Microsoft 365 groups for restricted users, and then assign the user as the owner of the group. Users that have this role are able to create connected groups in Yammer, regardless of any PowerShell settings that might prevent creation.
 
 ## Licensing requirements
 
@@ -77,16 +77,16 @@ To manage who creates Groups, the following people need Azure AD Premium license
 
 The following people don't need Azure AD Premium or Azure AD Basic EDU licenses assigned to them:
 
-- People who are members of Office 365 groups and who don't have the ability to create other groups.
+- People who are members of Microsoft 365 groups and who don't have the ability to create other groups.
 
-## Step 1: Create a security group for users who need to create Office 365 groups
+## Step 1: Create a security group for users who need to create Microsoft 365 groups
 
 Only one security group in your organization can be used to control who is able to create Groups. But, you can nest other security groups as members of this group. For example, the group named Allow Group Creation is the designated security group, and the groups named Microsoft Planner Users and Exchange Online Users are members of that group.
 
 Admins in the roles listed above do not need to be members of this group: they retain their ability to create groups.
 
 > [!IMPORTANT]
-> Be sure to use a **security group** to restrict who can create groups. If you try to use an Office 365 group, members won't be able to create a group from SharePoint because it checks for a security group. 
+> Be sure to use a **security group** to restrict who can create groups. If you try to use a Microsoft 365 group, members won't be able to create a group from SharePoint because it checks for a security group. 
     
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
 

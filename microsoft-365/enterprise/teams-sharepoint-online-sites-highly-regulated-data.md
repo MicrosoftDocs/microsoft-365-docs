@@ -36,7 +36,7 @@ A Microsoft 365 Enterprise cloud-based scenario that meets this business need re
 
 - Store files (documents, slide decks, spreadsheets, etc.) in a SharePoint team site.
 - Lock down the site to prevent:
-  - Access to users who are not members of the Office 365 group for the site.
+  - Access to users who are not members of the Microsoft 365 group for the site.
   - Members of the site from granting access to others.
   - Non-members of the site from requesting access to the site.
 - Configure an Office 365 retention label for your SharePoint sites as a default way to	block users from sending files outside the organization.
@@ -49,7 +49,7 @@ The following table maps the requirements of this scenario to a feature of Micro
 |:-------|:-----|
 | **Requirement** | **Microsoft 365 Enterprise feature** |
 | Store files | SharePoint team sites |
-| Lock down the site | Office 365 groups and SharePoint team site permissions |
+| Lock down the site | Microsoft 365 groups and SharePoint team site permissions |
 | Label the files of the site | Office 365 retention labels |
 | Block users when sending files outside the organization | Data Loss Prevention (DLP) policies in Office 365 |
 | Encrypt all of the files of the site | Office 365 sensitivity labels or sublabels |
@@ -121,7 +121,7 @@ You have determined the following:
 
 In this phase, you take the settings determined in Phase 1 and implement them to create a SharePoint site for highly regulated data.
 
-### Step 1: Create a private SharePoint team site with owners and members of the corresponding Office 365 group
+### Step 1: Create a private SharePoint team site with owners and members of the corresponding Microsoft 365 group
 
 Follow [these instructions]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8) to create a private SharePoint team site.
 

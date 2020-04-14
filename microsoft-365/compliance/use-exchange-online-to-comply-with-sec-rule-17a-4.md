@@ -70,4 +70,4 @@ Currently, there are a few limitations for Exchange Online:
 - Likes are not retained for Teams chat and channel messages.
 
 > [!NOTE]
-> Item-level auditing is now available for Office 365 Group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+> Item-level auditing is now available for Microsoft 365 Group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).

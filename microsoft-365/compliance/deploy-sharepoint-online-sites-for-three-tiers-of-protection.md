@@ -28,7 +28,7 @@ Use the steps in this article to design and deploy baseline, sensitive, and high
   
 ## Baseline SharePoint Online team sites
 
-Baseline protection includes both public and private team sites. Public team sites can be discovered and accessed by anybody in the organization. Private sites can only be discovered and accessed by members of the Office 365 group associated with the team site. Both of these types of team sites allow members to share the site with others.
+Baseline protection includes both public and private team sites. Public team sites can be discovered and accessed by anybody in the organization. Private sites can only be discovered and accessed by members of the Microsoft 365 group associated with the team site. Both of these types of team sites allow members to share the site with others.
   
 ### Public
 

@@ -150,7 +150,7 @@ After you've either modified the default template or created new branding templa
 
 - If the email was manually encrypted by the end user from the Outlook or Outlook on the web (formerly known as Outlook Web App) clients
 
-- If the email was automatically encrypted by an Exchange mail flow rule or Office 365 Data Loss Prevention policy
+- If the email was automatically encrypted by an Exchange mail flow rule or Data Loss Prevention policy
 
 For information on how to create an Exchange mail flow rule that applies encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 

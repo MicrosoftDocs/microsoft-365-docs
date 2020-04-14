@@ -65,7 +65,7 @@ Notes:
   
 - Teams (chat) content is stored in Exchange, where the policy is applied based on message type (email or conversation).
     
-- A retention policy applied to an Office 365 group includes both the group mailbox and site.
+- A retention policy applied to a Microsoft 365 group includes both the group mailbox and site.
 
 - The Preservation Hold library consumes storage quota for the site.
     
@@ -234,7 +234,7 @@ One of the most powerful features of a retention policy is that it can apply to 
     
 - OneDrive accounts
     
-- Office 365 groups (applies to content in the group's mailbox and associated SharePoint site.)
+- Microsoft 365 groups (applies to content in the group's mailbox and associated SharePoint site.)
     
 - Exchange public folders
     
@@ -255,7 +255,7 @@ Like an org-wide policy, if a policy applies to any combination of entire locati
 
 ### A policy with specific inclusions or exclusions
 
-You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
+You can also apply a retention policy to specific users, Microsoft 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites. 
   
 However, note that the following limits exist for a retention policy that includes or excludes over 1,000 specific locations:
   
@@ -279,7 +279,7 @@ Note that **Conversation History**, a folder in Outlook, is a feature that has n
 
 ### SharePoint locations
 
-Your retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Office 365 Groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** locations.
+Your retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Microsoft 365 Groups, and classic sites. Team sites connected by Microsoft 365 groups aren't supported with this option and instead, use the **Microsoft 365 groups** locations.
 
 If you specify sites that aren't supported, these are ignored by the retention policy.
 
@@ -294,7 +294,7 @@ If this check fails, you see a message that validation failed for the URL you en
 
 You can use a retention policy to retain chats and channel messages in Teams. Teams chats are stored in a hidden folder in the mailbox of each user included in the chat, and Teams channel messages are stored in a similar hidden folder in the group mailbox for the team. However, it's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data forever. For this reason, we strongly recommend that you use the Teams location to retain and delete Teams data. Using the Teams location will permanently delete data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information, see [Overview of security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258).
   
-Teams chats and channel messages are not affected by retention policies applied to user or group mailboxes in the Exchange or Office 365 Groups locations. Even though Teams chats and channel messages are stored in Exchange, they're affected only by a retention policy that's applied to the Teams location.
+Teams chats and channel messages are not affected by retention policies applied to user or group mailboxes in the Exchange or Microsoft 365 Groups locations. Even though Teams chats and channel messages are stored in Exchange, they're affected only by a retention policy that's applied to the Teams location.
 
 > [!NOTE]
 > If a user is included in an active retention policy that retains Teams data, then deleting a mailbox of such a user is not allowed since the storage of the data needs to be retained. To delete a mailbox of such a user, the admin needs to exclude the user from the retention policy first.
@@ -325,7 +325,7 @@ We're continuously working on optimizing retention functionality in Teams, and w
    > [!NOTE]
    > It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation. Now the retention period for Teams content can be any number of days you choose and as short as one day. If you do have a retention period of one day, it will take up to three days after the retention period expires before messages are permanently deleted.
     
-In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the team. Therefore, to retain or delete files in Teams, you need to create a retention policy that applies to OneDrive and Office 365 Group locations. If you want to apply a policy to the files shared in Teams of just a specific user or team, you can choose the OneDrive or Office 365 Group locations and include the specific user or team.
+In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the team. Therefore, to retain or delete files in Teams, you need to create a retention policy that applies to OneDrive and Microsoft 365 Group locations. If you want to apply a policy to the files shared in Teams of just a specific user or team, you can choose the OneDrive or Microsoft 365 Group locations and include the specific user or team.
   
 A retention policy that applies to Teams can use [Preservation Lock](#locking-a-retention-policy).
   
@@ -334,9 +334,9 @@ A retention policy that applies to Teams can use [Preservation Lock](#locking-a-
 > [!NOTE]
 > If you create retention policies for Skype or Teams locations in your organization, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.  
 
-### Office 365 groups locations
+### Microsoft 365 groups locations
 
-To retain content for an Office 365 group, you need to use the Office 365 Groups location. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Office 365 group mailboxes. A retention policy applied to an Office 365 group includes both the group mailbox and site. A retention policy applied to an Office 365 group protects the resources created by an Office 365 group, which would include Microsoft Teams.
+To retain content for a Microsoft 365 group, you need to use the Microsoft 365 Groups location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes. A retention policy applied to a Microsoft 365 group includes both the group mailbox and site. A retention policy applied to a Microsoft 365 group protects the resources created by a Microsoft 365 group, which would include Microsoft Teams.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location. 
 
@@ -410,7 +410,7 @@ Finally, a retention policy or label cannot permanently delete any content that'
   
 ## Use a retention policy instead of these features
 
-A single retention policy can easily apply to an entire organization and locations across Office 365, including Exchange Online, SharePoint Online, OneDrive for Business, and Office 365 Groups. If you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy. (You can also use labels with retention settings. For more information, see [Overview of labels](labels.md).)
+A single retention policy can easily apply to an entire organization and locations across Office 365, including Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft 365 Groups. If you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy. (You can also use labels with retention settings. For more information, see [Overview of labels](labels.md).)
   
 There are several other features that have previously been used to retain or delete content in Office 365. These are listed below. These features will continue to work side by side with retention policies and retention labels. But moving forward, for information governance, we recommend that you use a retention policy or labels instead of all of these features. A retention policy is the only feature that can both retain and delete content across Office 365.
   

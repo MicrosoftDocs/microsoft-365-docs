@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: "Learn how to create a naming policy for Office 365 Groups."
+description: "Learn how to create a naming policy for Microsoft 365 groups."
 ---
 
 # Groups naming policy
@@ -29,7 +29,7 @@ You use a group naming policy to enforce a consistent naming strategy for groups
 The naming policy is applied to groups that are created across all groups workloads (like Outlook, Microsoft Teams, SharePoint, Planner, Yammer, etc.). It gets applied to both the group name and group alias. It gets applied when a user creates a group and when group name or alias is edited for an existing group.
 
 > [!TIP]
-> An Office 365 group naming policy only applies to Office 365 Groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> A Microsoft 365 group naming policy only applies to Microsoft 365 groups. It doesn't apply to distribution groups created in Exchange Online. To create a naming policy for distribution groups, see [Create a distribution group naming policy](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 The group naming policy consists of the following features:
 
@@ -39,7 +39,7 @@ The group naming policy consists of the following features:
 
 ## Licensing requirements
 
-Using Azure AD naming policy for Office 365 groups requires that you possess but not necessarily assign an Azure Active Directory Premium P1 license or Azure AD Basic EDU license for each unique user (including guests) that is a member of one or more Office 365 groups.
+Using Azure AD naming policy for Microsoft 365 groups requires that you possess but not necessarily assign an Azure Active Directory Premium P1 license or Azure AD Basic EDU license for each unique user (including guests) that is a member of one or more Microsoft 365 groups.
 
 This is also required for the administrator that creates the Groups naming policy.
 
@@ -121,10 +121,10 @@ To set up a naming policy:
 ![Screenshot of the groups naming policy settings in Azure Active Directory](../../media/groups-naming-policy-azure.png)
 
 > [!NOTE]
-> StaffHub teams do not follow the naming policy, but the underlying Office 365 group does. StaffHub team name does not apply the prefixes and suffixes and does not check for custom blocked words. But StaffHub does apply the prefixes and suffixes and removes blocked words from the underlying Office 365 group.
+> StaffHub teams do not follow the naming policy, but the underlying Microsoft 365 group does. StaffHub team name does not apply the prefixes and suffixes and does not check for custom blocked words. But StaffHub does apply the prefixes and suffixes and removes blocked words from the underlying Microsoft 365 group.
 
 ## More articles on naming policy
 
-[Enforce a naming policy for Office 365 Groups in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
+[Enforce a naming policy for Microsoft 365 groups in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=868340)
 
 [Azure Active Directory cmdlets for configuring group settings](https://go.microsoft.com/fwlink/?linkid=868341)

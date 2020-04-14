@@ -1,5 +1,5 @@
 ---
-title: "Add or remove members from Office 365 groups"
+title: "Add or remove members from Microsoft 365 groups"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -22,9 +22,9 @@ ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: "Learn how to add a member to a group, remove member from group, and manage group owner status in the Microsoft 365 admin center."
 ---
 
-# Add or remove members from Office 365 groups using the admin center
+# Add or remove members from Microsoft 365 groups using the admin center
 
-In Office 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners. If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change. Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes. [What is an Office 365 group?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
+In Microsoft 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners. If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change. Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes. [What is a Microsoft 365 group?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
 > If you're not an admin, you can [add or remove members using Outlook](https://support.office.com/article/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de.aspx). 
@@ -275,12 +275,12 @@ By default, the person who created the group is the group owner. Often a group w
     
 ## Articles about managing groups
     
-- [Upgrade distribution lists to Office 365 Groups in Outlook](../manage/upgrade-distribution-lists.md)
+- [Upgrade distribution lists to Microsoft 365 groups in Outlook](../manage/upgrade-distribution-lists.md)
     
 - [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
 
-- [Manage guest access in Office 365 Groups](manage-guest-access-in-groups.md)    
+- [Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md)    
     
-- [Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples
+- [Manage Microsoft 365 groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples
     
-- [Office 365 Groups naming policy](groups-naming-policy.md)
+- [Microsoft 365 groups naming policy](groups-naming-policy.md)
