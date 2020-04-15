@@ -29,7 +29,8 @@ feedback_system: None
 
 ::: moniker range="o365-worldwide"
 
-> [!IMPORTANT] You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/help/contactus).
+> [!IMPORTANT]
+> You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/help/contactus).
 
 ## Online support
 
