@@ -16,8 +16,8 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: "We're continuously adding new features to the Microsoft 365 compliance center, fixing issues we learn about, and making changes based on your feedback. Find out what we've been up to this month."
-ms.custom: seo-marvel-mar2020
+ms.custom: seo-marvel-apr2020
+description: "Learn about new features added to the Microsoft 365 compliance center & issues that have been fixed. Find out what is new in the Microsoft 365 compliance center this month."
 ---
 
 # What's new in the Microsoft 365 compliance center

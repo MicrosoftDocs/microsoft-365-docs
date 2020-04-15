@@ -15,7 +15,8 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 2fe71b05-f5a2-4182-ade7-4dc5cabdfd51
-description: "Frequently asked questions for administrators about using the Office 365 Import Service to import your organization's PST files to Office 365 mailboxes. "
+ms.custom: seo-marvel-apr2020
+description: "This article contains answers to some frequently asked questions for administrators about importing PST files to Office 365 using the Office 365 Import Service."
 ---
 
 # FAQ about importing PST files to Office 365
