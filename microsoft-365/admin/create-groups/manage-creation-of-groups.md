@@ -164,7 +164,7 @@ If in the future you want to change which security group is used, you can rerun 
 
 If you want to turn off the group creation restriction and again allow all users to create groups, set $GroupName to "" and $AllowGroupCreation to "True" and rerun the script.
     
-## Step 4: Verify that it works
+## Step 3: Verify that it works
 
 1. Sign in to Office 365 with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
     
