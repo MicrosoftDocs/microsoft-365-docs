@@ -72,7 +72,7 @@ To map mailboxes, sites, or teams to a specific custodian:
   
    ![Map Additional Data Sources](../media/AddCustodianStep3.PNG)
 
-2. On the flyout page, you can specify a data source from any of the following Office 365 services:
+2. On the flyout page, you can specify a data source from any of the following services:
   
    -  **Exchange email** - Click **Choose users, groups, or Teams** and then click **Choose users, groups, or teams** again. Use the search box to find mailboxes to associate with the custodian. To specify mailboxes to assign to the selected custodian, use the search box to find user mailboxes and distribution groups. You can also assign the associated mailbox for a Microsoft 365 group or a Microsoft Team. Select the user, group, team check box, click **Choose**, and then click **Done**.
 

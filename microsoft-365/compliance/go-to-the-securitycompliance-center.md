@@ -22,7 +22,7 @@ description: "Before you can use the Security & Compliance Center, you need the 
 
 Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator:
   
-- For more information about the global administrator role, see [About Office 365 admin roles](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+- For more information about the global administrator role, see [About Microsoft 365 admin roles](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
 
 - For information on assigning Security & Compliance Center roles to other users, see [Give users access to the Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 

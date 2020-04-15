@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 ms.collection:
 - M365-security-compliance
-description: "Compare encryption options in Office 365 including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
+description: "Compare encryption options including Office Message Encryption (OME), S/MIME, Information Rights Management (IRM), and learn about Transport Layer Security (TLS)."
 ---
 
 # Email encryption
@@ -73,13 +73,13 @@ For information about email encryption options for your Microsoft 365 subscripti
 
 - Encryption of data at rest (through BitLocker)
 
-You can also use third-party encryption tools with Office 365, for example, PGP (Pretty Good Privacy). Office 365 does not support PGP/MIME and you can only use PGP/Inline to send and receive PGP-encrypted emails.
+You can also use third-party encryption tools with Microsoft 365, for example, PGP (Pretty Good Privacy). Microsoft 365 does not support PGP/MIME and you can only use PGP/Inline to send and receive PGP-encrypted emails.
 
 ## What about encryption for data at rest?
 
-"Data at rest" refers to data that isn't actively in transit. In Office 365, email data at rest is encrypted using BitLocker Drive Encryption. BitLocker encrypts the hard drives in Office 365 datacenters to provide enhanced protection against unauthorized access. To learn more, see [BitLocker Overview](https://go.microsoft.com/fwlink/p/?LinkId=394737).
+"Data at rest" refers to data that isn't actively in transit. In Microsoft 365, email data at rest is encrypted using BitLocker Drive Encryption. BitLocker encrypts the hard drives in Microsoft datacenters to provide enhanced protection against unauthorized access. To learn more, see [BitLocker Overview](https://go.microsoft.com/fwlink/p/?LinkId=394737).
   
-## More information about email encryption options in Office 365
+## More information about email encryption options
 
 For more information about the email encryption options in this article as well as TLS, see these articles:
   
@@ -103,4 +103,4 @@ For more information about the email encryption options in this article as well 
   
 **TLS**
   
-[Configure custom mail flow by using connectors in Office 365](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)
+[Configure custom mail flow by using connectors](https://technet.microsoft.com/library/jj723138%28v=exchg.150%29.aspx)

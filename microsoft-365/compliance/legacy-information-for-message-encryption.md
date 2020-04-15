@@ -126,7 +126,7 @@ The following table provides technical details for the Office 365 Message Encryp
 |Supported message types  <br/> |Office 365 Message Encryption is only supported for items that have a message class ID of **IPM.Note**. For more information, see [Item types and message classes](https://msdn.microsoft.com/library/office/ff861573.aspx).  <br/> |
 |Message size limits  <br/> |Office 365 Message Encryption can encrypt messages of up to 25 megabytes. For more details about message size limits, see [Exchange Online Limits](https://technet.microsoft.com/library/exchange-online-limits.aspx).  <br/> |
 |Exchange Online email retention policies  <br/> |Exchange Online doesn't store the encrypted messages.  <br/> |
-|Language support for Office 365 Message Encryption  <br/> | Office 365 Message encryption supports Office 365 languages, as follows:  <br/>  Incoming email messages and attached HTML files are localized based on the sender's language settings.  <br/>  The viewing portal is localized based on the recipient's browser settings.  <br/>  The body (content) of the encrypted message isn't localized.  <br/> |
+|Language support for Office 365 Message Encryption  <br/> | Office 365 Message encryption supports Microsoft 365 languages, as follows:  <br/>  Incoming email messages and attached HTML files are localized based on the sender's language settings.  <br/>  The viewing portal is localized based on the recipient's browser settings.  <br/>  The body (content) of the encrypted message isn't localized.  <br/> |
 |Privacy information for OME Portal and OME Viewer App  <br/> |The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.  <br/> |
 
 ## Frequently Asked Questions about legacy OME
@@ -136,15 +136,15 @@ Got questions about Office 365 Message Encryption? Here are some answers. If you
   
  **Q. My users send encrypted email messages to recipients outside our organization. Is there anything that external recipients have to do in order to read and reply to email messages that are encrypted with Office 365 Message Encryption?**
   
-Recipients outside your organization who receive Office 365 encrypted messages can view them in one of two ways:
+Recipients outside your organization who receive Microsoft 365 encrypted messages can view them in one of two ways:
   
 - By signing in with a Microsoft account or a work or school account associated with Office 365.
 
 - By using a one-time pass code.
 
- **Q. Are Office 365 encrypted messages stored in the cloud or on Microsoft servers?**
+ **Q. Are Microsoft 365 encrypted messages stored in the cloud or on Microsoft servers?**
   
-No, the encrypted messages are kept on the recipient's email system, and when the recipient opens the message, it is temporarily posted for viewing on Office 365 servers. The messages are not stored there.
+No, the encrypted messages are kept on the recipient's email system, and when the recipient opens the message, it is temporarily posted for viewing on Microsoft servers. The messages are not stored there.
   
  **Q. Can I customize encrypted email messages with my brand?**
   
@@ -198,9 +198,9 @@ All EHE customers have been upgraded to Office 365 Message Encryption. For more 
   
  **Q. Do I need to open any URLs, IP addresses, or ports in my organization's firewall to support Office 365 Message Encryption?**
   
-Yes. You have to add URLs for Exchange Online to the allow list for your organization to enable authentication for messages encrypted by Office 365 Message Encryption. For a list of Exchange Online URLs, see [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+Yes. You have to add URLs for Exchange Online to the allow list for your organization to enable authentication for messages encrypted by Office 365 Message Encryption. For a list of Exchange Online URLs, see [Microsoft 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
   
- **Q. How many recipients can I send an Office 365 encrypted message to?**
+ **Q. How many recipients can I send an Microsoft 365 encrypted message to?**
   
 The recipient limit is 500 recipients per message, or, when combined after distribution list expansion, 11,980 characters in the message's **To** field, whichever comes first.
   

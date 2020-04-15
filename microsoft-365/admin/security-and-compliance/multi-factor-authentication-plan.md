@@ -115,7 +115,7 @@ For MSI-based installations, you must have the following software installed, at 
    
 ## Enable MFA
 
-To enable MFA for your Office 365 subscription, follow these steps:
+To enable MFA for your subscription, follow these steps:
   
 1. If needed, [enable Modern Authentication for Office 2013 on Windows devices](enable-modern-authentication.md).
     

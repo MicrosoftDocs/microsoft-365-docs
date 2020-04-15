@@ -28,7 +28,7 @@ You can use the updated [Compliance Manager](https://servicetrust.microsoft.com/
 
 - **Updated Compliance Score**: Compliance Score now includes scores for Microsoft-managed actions. Your score will increase as a result.
 
-- **Actions Items:** Action Items are now individual items and many include telemetry collection from the Microsoft Secure Score Graph API. Where possible, technical action recommendations now have links to the applicable configuration page in the Office 365 service.
+- **Actions Items:** Action Items are now individual items and many include telemetry collection from the Microsoft Secure Score Graph API. Where possible, technical action recommendations now have links to the applicable configuration page in the Microsoft 365 service.
 
 - **Tenant Management:** New interface for managing new data elements in Compliance Manager (Preview):
     - **Dimensions:** View, add and customize metadata for Templates, Assessments, and Action Items that allow you to create custom pivots for filters.

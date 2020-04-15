@@ -14,7 +14,7 @@ If needed, [Step 1](../infoprotect-define-sec-infoprotect-levels.md) can help yo
 <a name="crit-infoprotect-step3"></a>
 ### Required: Increased security for Microsoft 365 is configured
 
-You've configured the following settings for [Office 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
+You've configured the following settings for [Microsoft 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
 - Threat management policies in the Microsoft 365 security Center
 - Additional Exchange Online tenant-wide settings

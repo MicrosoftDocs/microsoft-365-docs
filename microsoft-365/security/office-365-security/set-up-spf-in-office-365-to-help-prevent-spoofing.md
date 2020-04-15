@@ -70,7 +70,7 @@ Gather this information:
 
    `v=spf1 include:spf.protection.outlook.com -all`
 
-   This is the most common Office 365 SPF TXT record. This record works for just about everyone, regardless of whether your Office 365 datacenter is located in the United States, or in Europe (including Germany), or in another location.
+   This is the most common SPF TXT record. This record works for just about everyone, regardless of whether your Microsoft datacenter is located in the United States, or in Europe (including Germany), or in another location.
 
    However, if you have purchased Office 365 Germany, part of Microsoft Cloud Germany, you should use the include statement from line 4 instead of line 2. For example, if you are fully-hosted in Office 365 Germany, that is, you have no on-premises mail servers, your SPF TXT record would include rows 1, 4, and 7 and would look like this:
 

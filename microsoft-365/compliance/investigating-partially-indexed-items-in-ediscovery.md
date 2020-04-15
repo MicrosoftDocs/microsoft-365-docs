@@ -98,12 +98,12 @@ The following is a list of indexing errors and a description of the possible cau
 | `attachmentsize` <br/> |A file attached to an email message was too large and couldn't be processed.  <br/> |
 | `indexingtruncated` <br/> |When writing the processed email message to the index, one of the indexable properties was too large and was truncated. The truncated properties are listed in Error Properties field.  <br/> |
 | `invalidunicode` <br/> |An email message contained text that couldn't be processed as valid Unicode. Indexing for this item may be incomplete.  <br/> |
-| `parserencrypted` <br/> |The content of attachment or email message is encrypted, and Office 365 couldn't decode the content.  <br/> |
+| `parserencrypted` <br/> |The content of attachment or email message is encrypted, and Microsoft 365 couldn't decode the content.  <br/> |
 | `parsererror` <br/> |An unknown error occurred during parsing. This typically results from a software bug or a service crash.  <br/> |
 | `parserinputsize` <br/> |An attachment was too large for the parser to handle, and the parsing of that attachment didn't happen or wasn't completed.  <br/> |
 | `parsermalformed` <br/> |An attachment was malformed and couldn't be handled by the parser. This result from can old file formats, files created by incompatible software, or viruses pretending to be something other than claimed.  <br/> |
 | `parseroutputsize` <br/> |The output from the parsing of an attachment was too large and had to be truncated.  <br/> |
-| `parserunknowntype` <br/> |An attachment had a file type that Office 365 couldn't detect.  <br/> |
+| `parserunknowntype` <br/> |An attachment had a file type that Microsoft 365 couldn't detect.  <br/> |
 | `parserunsupportedtype` <br/> |An attachment had a file type that Office 365could detect, but parsing that file type isn't supported.  <br/> |
 | `propertytoobig` <br/> |The value of an email property in Exchange Store was too large to be retrieved and the message couldn't be processed. This typically only happens to the body property of an email message.  <br/> |
 | `retrieverrms` <br/> |The content retriever failed to decode an RMS-protected message.  <br/> |

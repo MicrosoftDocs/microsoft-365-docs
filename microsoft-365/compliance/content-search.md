@@ -23,7 +23,7 @@ description: "Use the Content Search tool in the compliance center in Office 365
 
 # Content Search
 
-You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these Office 365 services:
+You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these services:
   
 - Exchange Online mailboxes and public folders
     

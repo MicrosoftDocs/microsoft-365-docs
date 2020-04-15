@@ -35,7 +35,7 @@ There are still certain things you need to do with these apps:
 
 - **Assign licenses** - You are responsible for obtaining and assigning the appropriate licenses to end users for Microsoft 365 Apps for enterprise.
 - **Add users to security groups** - If you're using Microsoft Project or Visio, your IT administrator must add those users to the appropriate deployment groups. IT administrators are also responsible for reclaiming licenses from those users if they leave the company.
-- **Deploy Office 365 Addons** - If you need any Addons for any of the Microsoft 365 Apps for enterprise apps, deploy them centrally like any other Windows 32 app. 
+- **Deploy Microsoft 365 Add-ons** - If you need any Add-ons for any of the Microsoft 365 Apps for enterprise apps, deploy them centrally like any other Windows 32 app. 
 
 ## Apps you provide
 
