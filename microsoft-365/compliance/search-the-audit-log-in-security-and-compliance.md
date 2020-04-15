@@ -308,6 +308,7 @@ Click one of the following links to go to a specific table.
 |[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
 |[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)
 |[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
+|[Retention and label activities](#retention-and-label-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)||
 ||||
 
 ### File and page activities
@@ -551,6 +552,7 @@ The following table lists the activities that can be logged by mailbox audit log
 |Updated inbox rules from Outlook client|UpdateInboxRules|A mailbox owner or other user with access to the mailbox modified an inbox rule in the Outlook client.|
 |Updated message|Update|A message or its properties was changed.|
 |User signed in to mailbox|MailboxLogin|The user signed in to their mailbox.|
+|Label message as a record||A user applied a retention label to an email message and that label is configured to declare the item a record. |
 ||||
 
 ### Sway activities
@@ -877,6 +879,24 @@ The following table describes the auditing activities and information in the aud
 |Response activities|External|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
 |Response activities|Anonymous|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
 ||||
+
+
+## Retention and label activities
+
+|**Activity**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+| Created retention configuration for a retention policy |NewRetentionComplianceRule |Administrator configures the retention settings for a new retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) cmdlet.|
+| Created retention label |NewComplianceTag |Administrator creates a new retention label.|
+| Created retention policy |NewRetentionCompliancePolicy|Administrator creates a new retention policy.|
+| Deleted retention configuration for a retention policy| RemoveRetentionComplianceRule<br/>| Administrator deletes the configuration settings of a retention policy. Most likely, this activity is logged when an administrator deletes a retention policy or runs the **Remove-RetentionComplianceRule** cmdlet.|
+| Deleted retention label |RemoveComplianceTag | Administrator deletes a retention label.|
+| Deleted retention policy |RemoveRetentionCompliancePolicy<br/> |Administrator deletes a retention policy. |
+| Enable regulatory compliance features<br/> |SetRestrictiveRetentionUI |Administrator enables regulatory compliance features by running the **Set-RegulatoryComplianceUI** cmdlet. After this cmdlet is run, administrators can lock a retention policy and specify a retention label as a regulatory record by using the Security & Compliance Center UI. Until an organization uses the **Set-RegulatoryComplianceUI** cmdlet to enable these features, locking a retention policy and creating an regulatory retention label can only be accomplished by using PowerShell.|
+| Updated retention configuration for a retention policy | SetRetentionComplianceRule | Administrator changes the retention settings for an existing retention policy. Retention settings include how long items are retained, and what happens to items when the retention period expires (such as deleting items, retaining items, or retaining and then deleting them). This activity also corresponds to running the [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) cmdlet. |
+| Updated retention label |SetComplianceTag  | Administrator updates an existing retention label.|
+| Updated retention policy |SetRetentionCompliancePolicy |Administrator updates an existing a retention policy. Updates that trigger this event include adding or excluding content locations that the retention policy is applied to.|
+
+
 
 ### Sensitivity label activities
 
