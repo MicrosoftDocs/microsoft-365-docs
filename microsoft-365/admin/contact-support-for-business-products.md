@@ -29,8 +29,9 @@ feedback_system: None
 
 ::: moniker range="o365-worldwide"
 
+> [!IMPORTANT] You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/help/contactus).
 
-## [Online support](#tab/online)
+## Online support
 
 Save time by starting your service request online. We'll help you find a solution or connect you to an expert who will contact you by email or phone. [Learn about initial support response times](https://go.microsoft.com/fwlink/p/?LinkId=518251).
 
@@ -44,9 +45,9 @@ Save time by starting your service request online. We'll help you find a solutio
 
 5. Enter a description if you like, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Need help?** pane.
 
-## [Phone support ](#tab/phone)
+## Phone support
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.  <br/>Technical support is provided in English 24 hours a day, 7 days a week. <br/> Admins, have your account details ready when you call.<br/>
+Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.<br/>Technical support is provided in English 24 hours a day, 7 days a week.<br/> Admins, have your account details ready when you call.
 
 - **In the United States, call 1 800 865 9408.**
 
@@ -62,7 +63,7 @@ If your Office 365 or Microsoft 365 Business support phone number isn't listed a
 
 To learn how to open a service request, select the **Online support** tab above.
 
-## [In-store support](#tab/instore)
+## In-store support
 
 You can now make an appointment at your local Microsoft Store with an Answer Desk expert to help resolve your Office 365 or Microsoft 365 issue.
 
