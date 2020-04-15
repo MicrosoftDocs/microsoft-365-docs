@@ -18,7 +18,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
-description: "Use the Security & Compliance Center in Office 365 to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
+ms.custom: seo-marvel-apr2020
+description: "Learn how to use the security & compliance center in Office 365 to enable archive mailboxes to support your organization's message retention, eDiscovery, and hold requirements."
 ---
 
 # Enable archive mailboxes in the Security & Compliance Center

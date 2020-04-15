@@ -18,8 +18,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "A policy tip is a notification or warning that appears when someone is working with content that conflicts with a DLP policy. You can use email notifications and policy tips to increase awareness and help educate people about your organization's policies. You can also give people the option to override the policy, so that they're not blocked if they have a valid business need or if the policy is detecting a false positive.
-"
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn how to send email notifications and show policy tips for DLP policies in the Office 365 security and compliance center."
 ---
 
 # Send email notifications and show policy tips for DLP policies
