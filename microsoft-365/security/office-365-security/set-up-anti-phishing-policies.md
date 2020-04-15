@@ -64,7 +64,7 @@ The following spoof settings are available in anti-phishing policies and ATP ant
 
   For messages from unidentified or blocked spoofed senders (in other words, any spoofed senders that aren't specifically allowed), you can also specify the action to take on the messages:
 
-  - **Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Move message to Junk Email folder**: This is the default value. The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following topics:
 
@@ -75,11 +75,14 @@ The following spoof settings are available in anti-phishing policies and ATP ant
 - **Unauthenticated Sender**: Enables or disables unidentified sender identification that adds a question mark in the sender's photo if the sender fails email authentication checks. For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206).
 
 > [!NOTE]
-> You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+> Spoof settings are enabled by default in the default anti-phishing policy in EOP, the default ATP anti-phishing policy, and in new custom ATP anti-phishing policies that you create. <br/><br/> You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
 ## Exclusive settings in ATP anti-phishing policies
 
 This section describes the policy settings that are only available in ATP anti-phishing policies.
+
+> [!NOTE]
+> By default, the ATP exclusive settings are not configured or turned on, even in the default policy. To take advantage of these features, you need to enable and configure them in the default ATP anti-phishing policy, or create and configure custom ATP anti-phishing policies.
 
 ### Policy settings in ATP anti-phishing policies
 

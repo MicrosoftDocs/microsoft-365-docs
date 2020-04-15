@@ -171,56 +171,6 @@ If all else fails, you can report the message as a false positive to Microsoft. 
 
 You may also contact your admin who can raise it as a support ticket with Microsoft. The Microsoft engineering team will investigate why the message was marked as a spoof.
 
-## Prepare for anti-spoofing protection
+## Considerations for anti-spoofing protection
 
-- Office 365 customers who use Office 365 to send outbound email:
-
-  - [Configure SPF records](set-up-spf-in-office-365-to-help-prevent-spoofing.md) for your domains.
-
-  - [Configure DKIM records](use-dkim-to-validate-outbound-email.md) for your primary domains.
-
-  - [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine your legitimate senders.
-
-  Microsoft doesn't provide detailed implementation guidelines for SPF, DKIM, and DMARC records. However, there's a lot of information available online. There are also 3rd party companies dedicated to helping your organization set up email authentication records.
-
-- Information for non-Office 365 customers:
-
-  - Even if you didn't need to publish email authentication records in the past, you should do so if you send email to Microsoft. Your participation can help in the fight against phishing, and can reduce the possibility that you or organizations that you send email to will get phished.
-
-  - You should set up SPF to publish your domain's sending IP addresses, and also set up DKIM (if available) to digitally sign messages. You should also consider setting up DMARC records.
-
-  - If you use bulk senders to send email on your behalf, verify that the domain in the From address (if it belongs to you) aligns with the domain that passes SPF or DMARC.
-
-  - Verify the following locations are included in your SPF record if you use them:
-  
-    - On-premises email servers.
-    - You send email from a software-as-a-service (SaaS) provider.
-    - You send email from a cloud-hosting service (Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services, etc.).
-
-  - For small domains that are hosted by an ISP, configure your SPF record according to the instructions from your ISP.
-
-### You don't know all sources for your email
-
-Many domains don't publish SPF records because they don't know all of the email sources for messages in their domain. Start by publishing an SPF record that contains all of the email sources you know about (especially where your corporate traffic is located), and publish the neutral SPF policy `?all`. For example:
-
-```text
-fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
-```
-
-The neutral SPF policy means that email from your corporate infrastructure will pass email authentication. Email from unknown sources will fall back to neutral.
-
-Office 365 will treat inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof (depending upon whether Office 365 can implicitly authenticate it). However, this is still an improvement from all email being marked as spoof by Office 365.
-
-Once you've gotten started with an SPF fallback policy of `?all`, you can gradually discover and include more email sources for your messages, and then update your SPF record with a stricter policy.
-
-### You're an infrastructure provider (ISP, ESP, or cloud hosting service)
-
-If you host a domain's email or provide hosting infrastructure that can send email, you should do the following steps:
-
-- Ensure your customers have documentation that explains how your customers should configure their SPF records
-
-- Consider signing DKIM-signatures on outbound email, even if the customer doesn't explicitly set it up (sign with a default domain). You can even double-sign the email with DKIM signatures (once with the customer's domain if they have set it up, and a second time with your company's DKIM signature)
-
-Deliverability to Microsoft is not guaranteed even if you authenticate email originating from your platform, but at least it ensures that Microsoft does not junk your email because it isn't authenticated.
-
-For more details on service providers best practices, see [M3AAWG Mobile Messaging Best Practices for Service Providers](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
+If you're an admin who currently sends messages to Office 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phish. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).

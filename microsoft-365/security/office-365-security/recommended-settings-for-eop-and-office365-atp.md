@@ -115,6 +115,8 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 ### EOP default anti-phishing policy settings
 
+You can only configure these settings in Office 365 organizations with Exchange Online mailboxes. To configure these settings, see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
+
 |||||
 |---|---|---|---|
 |**Security feature name**|**Standard**|**Strict**|**Comment**|
@@ -136,7 +138,7 @@ If you've added an Office 365 ATP subscription to your EOP, set the following co
 
 ### Office ATP anti-phishing policy settings
 
-EOP customers get basic anti-phishing as previously described, but Office 365 ATP includes more features and control to help prevent, detect, and remediate against attacks.
+EOP customers get basic anti-phishing as previously described, but Office 365 ATP includes more features and control to help prevent, detect, and remediate against attacks. To create and configure these policies, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
 
 #### Impersonation settings in ATP anti-phishing policies
 

@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: "Lear about the requirements on From email addresses for inbound messages in Office 365 and Outlook.com. In November, 2017, to help reduce phishing, the service now requires RFC-compliant From addresses."
+description: "Lear about the requirements on From email addresses for inbound messages in Office 365. As of November 2017, the service now requires RFC-compliant From addresses to help prevent spoofing."
 ---
 
 # How Office 365 validates the From address to prevent phishing
 
-Office 365 and Outlook.com email accounts receive an increasingly large number of phishing attacks. In addition to using [spoofed (forged) the sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
+Office 365 email accounts receive an increasingly large number of phishing attacks. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
 
 **Notes**:
 
@@ -116,7 +116,7 @@ For more information about publishing a null MX, see [RFC 7505](https://tools.ie
 
 ## Override From address enforcement
 
-To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md). However, as with any exceptions to spam filtering, we recommend that you don't do this because these exceptions can open your organization to spoofing and other attacks.
+To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
 You can't override the From address requirements for outbound email that you send from Office 365. In addition, Outlook.com will not allow overrides of any kind, even through support.
 
