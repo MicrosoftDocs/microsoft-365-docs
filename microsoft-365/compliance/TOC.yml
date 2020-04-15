@@ -345,6 +345,8 @@
               href: https://go.microsoft.com/fwlink/?linkid=867039
 - name: Manage eDiscovery
   items:
+    - name: eDiscovery in Microsoft 365
+      href: ediscovery.md
     - name: Content search
       items:
         - name: Overview of content search
