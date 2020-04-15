@@ -689,7 +689,7 @@ The following table lists activities that result from IT and legal professionals
 |Deleted review set search|DeleteWorkingSetSearch|User deleted a search query in a review set.|
 |Deleted tag|DeleteTag|User deleted a tag or a tag group in a review set.|
 |Downloaded document|DownloadDocument|User downloaded a document from a review set.|
-|Edited tag|DownloadDocument|User changed a tag in a review set.|
+|Edited tag|UpdateTag|User changed a tag in a review set.|
 |Exported documents from review set|ExportJob|User exported documents from a review set.|
 |Modified case setting|UpdateCaseSettings|User modified the settings for a case. Case settings include case information, access permissions, and settings that control search and analytics behavior.|
 |Modified review set search|UpdateWorkingSetSearch|User edited a search query in a review set.|
