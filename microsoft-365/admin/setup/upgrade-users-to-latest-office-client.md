@@ -6,7 +6,6 @@ ms.author: kwekuako
 author: kwekuako
 manager: scotv
 audience: Admin
-article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
