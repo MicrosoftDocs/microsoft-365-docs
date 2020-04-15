@@ -126,7 +126,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 3. Select **Publish labels** to start the **Create policy wizard**.
 
 4. Select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
-
+    
+    If you select a sublabel, make sure you also select its parent label.
+    
 5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
 
 6. Follow the prompts to configure the policy settings.
