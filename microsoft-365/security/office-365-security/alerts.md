@@ -23,9 +23,9 @@ description: "Find out about alerts you can set to help with security in Office 
 
 Use the alerts features in the Security &amp; Compliance Center to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
   
-## How to get to the Office 365 alerts features
+## How to get to the alerts features
 
-Alerts in Office 365 are in the Security &amp; Compliance Center. Here's how to get to the page.
+Alerts are in the Security &amp; Compliance Center. Here's how to get to the page.
   
  **To go directly to the Security &amp; Compliance Center:**
   

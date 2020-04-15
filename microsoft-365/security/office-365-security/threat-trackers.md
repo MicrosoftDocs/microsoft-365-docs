@@ -58,7 +58,7 @@ Trending trackers give you an idea of new threats you should review to ensure yo
   
 ### Tracked queries
 
-Tracked queries leverage your saved queries to periodically assess Office 365 activity in your organization. This gives you event trending, with more to come in the coming months. Tracked queries run automatically, giving you up-to-date information without having to remember to re-run your queries.
+Tracked queries leverage your saved queries to periodically assess Microsoft 365 activity in your organization. This gives you event trending, with more to come in the coming months. Tracked queries run automatically, giving you up-to-date information without having to remember to re-run your queries.
   
 ![Example of tracked queries with one selected](../../media/0c556174-06eb-4ae5-b32a-5ff76b9e4f13.png)
   

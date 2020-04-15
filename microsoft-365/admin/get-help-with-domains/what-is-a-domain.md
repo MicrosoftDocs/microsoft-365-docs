@@ -49,6 +49,6 @@ You can use a default domain like  *yourcompany.onmicrosoft.<span>com*  to log i
   
 ## Feeling stuck?
 
-Call Office 365 Support - [Get help setting up a domain with Office 365](../contact-support-for-business-products.md)
+Call Microsoft Support - [Get help setting up a domain](../contact-support-for-business-products.md)
   
 

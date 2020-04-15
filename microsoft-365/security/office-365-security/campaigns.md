@@ -35,7 +35,7 @@ Campaign Views lets you see the big picture of an attack faster and more complet
 
 A campaign is a coordinated email attack against one or many organizations. Email attacks that steal credentials and company data are a big and lucrative industry. As technologies increase in an effort to stop attacks, attackers modify their methods in an effort to ensure continued success.
 
-Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire Office 365 service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
+Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
 
 - **Attack source**: Source IP addresses and sender email domains.
 

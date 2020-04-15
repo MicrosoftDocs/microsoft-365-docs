@@ -39,7 +39,7 @@ You create and manage document deletion policies by using the Document Deletion 
   
 ## When to use document deletion policies
 
-In addition to document deletion policies, Office 365 provides these retention policies for site content:
+In addition to document deletion policies, Microsoft provides these retention policies for site content:
   
 - [Records management](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     

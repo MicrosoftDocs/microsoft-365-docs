@@ -275,7 +275,7 @@ For years organizations have relied on distribution groups to communicate and co
 - [SharePoint Modernization Scanner](https://github.com/SharePoint/sp-dev-modernization/tree/master/Tools/SharePoint.Modernization) (a tool located on GitHub)
 
 ### <a name="groups-reporting"></a>Groups reporting
-The Microsoft 365 Reports dashboard shows you the activity overview across the Office 365 products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product.
+The Microsoft 365 Reports dashboard shows you the activity overview across the Microsoft products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product.
 > [!TIP]
 >- You can use the Groups reports to gain insights into the activity of Microsoft 365 groups in your organization and see how many groups are being created and used.
 >-The Microsoft 365 Groups report can be viewed for trends over the last 7 days, 30 days, 90 days, or 180 days.

@@ -14,14 +14,14 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
-description: "Office 365 offers a number of different eDiscovery tools that you can use to search for and hold content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 groups, and Skype for Business conversations."
+description: "You can use eDiscovery tools to search for and hold content found in different locations such as Exchange mailboxes, SharePoint and OneDrive for Business sites, Microsoft 365 groups, and Skype for Business conversations."
 ---
 
 # eDiscovery
 
-Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery in Office 365 to search for content in Exchange Online mailboxes, Microsoft 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, and Skype for Business conversations. You can search mailboxes and sites in the same eDiscovery search by using the Content Search tool in the Security & Compliance Center. And you can use eDiscovery cases in the Security & Compliance Center to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 subscription, you can further analyze content by using the Advanced eDiscovery solution in Microsoft 365.
+Electronic discovery, or eDiscovery, is the process of identifying and delivering electronic information that can be used as evidence in legal cases. You can use eDiscovery to search for content in Exchange Online mailboxes, Microsoft 365 Groups, Microsoft Teams, SharePoint Online and OneDrive for Business sites, and Skype for Business conversations. You can search mailboxes and sites in the same eDiscovery search by using the Content Search tool in the Security & Compliance Center. And you can use eDiscovery cases in the Security & Compliance Center to identify, hold, and export content found in mailboxes and sites. If your organization has an Office 365 E5 subscription, you can further analyze content by using the Advanced eDiscovery solution in Microsoft 365.
   
-Office 365 provides the following eDiscovery tools:
+eDiscovery tools:
   
 - [Content Search in the Security & Compliance Center](#content-search-in-the-security--compliance-center)
     
@@ -52,7 +52,7 @@ The following table contains links to topics that will help you use the Content 
 |[Clone a Content Search in the Security & Compliance Center](clone-a-content-search.md) <br/> |Learn how to use the Windows PowerShell script in this article to quickly clone an existing Content Search. This can help you compare the results of different keyword search queries run on the same content locations or save time because you don't have to re-enter a large number of content locations when you create a new search.  <br/> |
 |[Configure permissions filtering for Content Search](permissions-filtering-for-content-search.md) <br/> |Learn how to use permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your organization.  <br/> |
 |[Prepare a CSV file for a targeted Content Search](csv-file-for-an-id-list-content-search.md) <br/> |Learn how to use a Results.csv file or Unindexed Items.csv file (both which contain information about the results of a content search) to create a targeted search for specific mailbox items.  <br/> |
-|[Use Content Search in Office 365 for targeted collections](use-content-search-for-targeted-collections.md) <br/> |Learn how to use the Windows PowerShell script in this article to perform targeted collections using Content Search. A targeted collection means you want to search a specific folder because you're confident that items responsive to a case (or privileged items) are located in that folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search.  <br/> |
+|[Use Content Search for targeted collections](use-content-search-for-targeted-collections.md) <br/> |Learn how to use the Windows PowerShell script in this article to perform targeted collections using Content Search. A targeted collection means you want to search a specific folder because you're confident that items responsive to a case (or privileged items) are located in that folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search.  <br/> |
 |[Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md) <br/> |Learn how to use the  `kind` and  `itemclass` message properties to search third-party data that you imported to Office 365.  <br/> |
   
 ## eDiscovery Cases in the Security & Compliance Center

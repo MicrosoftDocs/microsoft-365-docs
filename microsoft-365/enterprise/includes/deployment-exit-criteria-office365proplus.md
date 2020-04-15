@@ -2,7 +2,7 @@
 
     - Client device details
     - Deployment tools
-    - Office 365 licensing and accounts
+    - Microsoft 365 licensing and accounts
     - Network capability
     - Application compatibility
 
