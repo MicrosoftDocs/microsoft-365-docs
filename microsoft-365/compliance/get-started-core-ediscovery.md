@@ -29,9 +29,7 @@ This article discusses the steps necessary to set up Core eDiscovery. This inclu
 
 Licensing for Core eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access Core eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center and use the hold and export features, your organization must have one of the following:
-
-  - Microsoft 365 E3 or Office 365 E3 subscription or higher
+- **Organization subscription:** To access Core eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center and use the hold and export features, your organization must have a Microsoft 365 E3 or Office 365 E3 subscription or higher.
 
 - **Per-user licensing:** To place an eDiscovery hold on user mailboxes, that user must be assigned one of the following licenses, depending on your organization subscription:
 
