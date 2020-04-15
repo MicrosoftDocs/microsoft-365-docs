@@ -95,7 +95,7 @@ A: Mail flow rules or block and allow organizational settings take precedence. T
 
 ### Q: What if a message is moved to another folder (e.g. Inbox rules)?
 
-A: ZAP still works as long as the message hasn't been deleted or moved to the Junk Email folder.
+A:  ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the phish policy is set to quarantine and the user or administrator has already junked the email, then quarantine will take action to quarantine the file.
 
 ### Q: Does ZAP change the message header?
 
