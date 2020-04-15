@@ -1,5 +1,5 @@
 ---
-title: "Manage legal investigations in Office 365"
+title: "Manage legal investigations in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.custom: seo-marvel-apr2020
 description: "Use eDiscovery cases in the security and compliance Center in Office 365 to manage your organization's legal investigation."
 ---
 
-# Manage legal investigations in Office 365
+# Manage legal investigations in Microsoft 365
 
 Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks. You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
   
@@ -48,9 +48,9 @@ Like the previous section that listed scripts for content search scenarios, we'v
 
 The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *Advanced eDiscovery*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case.
 
-Advanced eDiscovery requires an E5 subscription for your Office 365 or Microsoft 365 organization. Alternatively, users with an E3 license require the Advanced Compliance add-on subscription so you can manage them as custodians in an Advanced eDiscovery case.
+Advanced eDiscovery requires an E5 subscription for your Microsoft 365 or Office 365 organization. For more information about licensing, see [Get started with Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
-Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
+Here's a quick overview of the built-in workflow in Advanced eDiscovery. For more information, see [Explore the Advanced eDiscovery workflow](get-started-with-advanced-ediscovery.md#explore-the-advanced-ediscovery-workflow).
 
 - [Create a case](create-new-ediscovery-case.md) to get started
 

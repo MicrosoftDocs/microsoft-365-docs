@@ -13,9 +13,9 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom:
+ms.custom: seo-marvel-apr2020
 
-description: Understand the resources you can use to deploy Microsoft 365 for enterprise in your organization.
+description: Learn about the different resources you can use to deploy Microsoft 365 for enterprise in your organization.
 ---
 
 # Deploy Microsoft 365 for enterprise
@@ -71,7 +71,7 @@ Get self-started on your end-to-end deployment journey [here](deploy-foundation-
 
 ## Take a test drive
 
-“*For the things we have to learn before we can do them, we learn by doing them.*” - Aristotle
+"*For the things we have to learn before we can do them, we learn by doing them.*" - Aristotle
 
 If you're new to Microsoft 365 for enterprise or to a specific product or feature, one of the best ways to gain understanding is to build it out yourself and see it working.
 
@@ -91,7 +91,7 @@ To get a better picture of how to move your entire organization to the products 
 
 This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
-You can also [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## How did others do it?
 

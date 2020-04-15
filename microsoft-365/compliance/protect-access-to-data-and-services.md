@@ -14,7 +14,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: "landing page for protecting access to O365 data and services"
+description: Learn how to protect user and device access to Office 365 data and services and defend against data loss.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Protect user and device access

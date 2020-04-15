@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -25,7 +25,7 @@ description: "Determine if your Office 365 tenant and users meet the requirement
 
 Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your Office 365 organization. If you're an admin, use this guidance to determine if your tenant and users meet the requirements so that you can use Centralized Deployment.
 Centralized Deployment supports Windows, Mac, iOS, Android and Online Office apps.
-It can take up to 12 hours for an add-in to show up for client for all users.
+It can take up to 24 hours for an add-in to show up for client for all users.
   
 ## Requirements
 
@@ -51,7 +51,7 @@ Centralized Deployment doesn't support the following:
 - For Word, Excel, and PowerPoint add-ins, your users must be using one of the following:
   - On a Windows device, Version 1704 or later of Office 365 ProPlus.
   - On a Mac, Version 15.34 or later.
-      - On iOS (iPad only), Version 2.9.18010804 or later.
+
 - For Outlook, your users must be using one of the following: 
   - Version 1701 or later of Office 365 ProPlus.
   - Version 1808 or later of Office Professional Plus 2019 or Office Standard 2019.

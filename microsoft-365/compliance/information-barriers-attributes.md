@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Use this article as a reference for various attributes you can use in information barrier policies."
+description: This article serves as a reference for various attributes you can use in information barrier policies for Azure Active Directory.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Attributes for information barrier policies
@@ -83,10 +84,10 @@ The following table lists the attributes that you can use with information barri
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName	|UserPrincipalName	|
-|Mail	|WindowsEmailAddress	|
-|Description	|Description	|
-|MemberOf	|MemberOfGroup	|
+|UserPrincipalName    |UserPrincipalName    |
+|Mail    |WindowsEmailAddress    |
+|Description    |Description    |
+|MemberOf    |MemberOfGroup    |
 
 ## Related topics
 

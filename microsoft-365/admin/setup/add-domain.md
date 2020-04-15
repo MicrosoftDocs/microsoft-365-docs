@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -62,7 +62,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
 
 ::: moniker-end
     
-2. Go to the **Settings** > **Domains** page. 
+2. Go to the **Setup** > **Domains** page. 
 
 3. Select **Add domain**.
     

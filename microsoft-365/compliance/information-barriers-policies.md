@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Learn how to define policies for information barriers in Microsoft Teams."
+description: Learn how to define policies for information barriers that can help your organization maintain compliance with industry standards in Microsoft Teams.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Define information barrier policies
@@ -242,7 +243,7 @@ Information barrier policies are not in effect until you set them to active stat
 
     Syntax: `Start-InformationBarrierPoliciesApplication`
 
-    After approximately a half hour, policies are applied, user by user, for your organization. If your organization is large, it can take 24 hours (or more) for this process to complete. (As a general guideline, it takes about an hour to process 5,000 user accounts.)
+    After you run `Start-InformationBarrierPoliciesApplication` allow 30 minutes for the system to start applying the policies. The system applies policies user by user. In general the system processes about 5,000 user accounts per hour.
 
 ## View status of user accounts, segments, policies, or policy application
 

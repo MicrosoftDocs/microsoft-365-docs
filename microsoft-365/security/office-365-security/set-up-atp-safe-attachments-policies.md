@@ -79,7 +79,7 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 6. Choose **Save**.
 
-Consider setting up multiple ATP Safe Attachments policies for your organization. These policies will be applied in the order they're listed on the **ATP Safe Attachments** page. After a policy has been defined or edited, allow at least 30 minutes for the polices to take effect throughout Microsoft datacenters.
+Consider setting up multiple ATP Safe Attachments policies for your organization. These policies will be applied in the order they're listed on the **ATP Safe Attachments** page. After a policy has been defined or edited, allow at least 30 minutes for the policies to take effect throughout Microsoft datacenters.
 
 ## Step 3: Learn about ATP Safe Attachments policy options
 

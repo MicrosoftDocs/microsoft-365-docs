@@ -13,6 +13,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
+- remotework
 ms.custom:
 
 description: Understand how planning and implementing business continuity looks different when cloud services are part of your IT offering. 
