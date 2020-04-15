@@ -179,11 +179,15 @@ You can also apply a retention policy to specific users, specific Office 365 gro
   
 However, using this configuration, there are some limits when your retention policy includes or excludes over 1,000 specific locations:
   
-- Maximum of 1,000 mailboxes
-- Maximum of 100 sites
-- Maximum of 10,000 retention policies
+- Maximum numbers for the retention policy:
+    - 1,000 mailboxes
+    - 1,000 Office 365 groups
+    - 1,000 users for Teams private chats
+    - 100 sites (OneDrive or SharePoint)
 
-If your retention policies are likely to be subject to these limitations, choose the configuration option that applies to entire locations, or use an org-wide policy.
+- A tenant can contain no more than 10,000 retention policies.
+
+If your retention policies are likely to be subject to these limitations, choose the configuration options that apply to entire locations, or use an org-wide policy.
 
 ## Find the PowerShell cmdlets for retention policies
 
