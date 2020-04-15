@@ -95,7 +95,7 @@ Auto-apply a retention label, based on the conditions that you specify.
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
-    For information about configuring the locations, see the [Retention label policies and locations](#retention-label-and-locations) section on this page.
+    For information about configuring the locations, see the next section on this page, [Retention labels and locations](#retention-labels-and-locations).
 
 ## Retention labels and locations
 
