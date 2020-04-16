@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -30,17 +30,21 @@ ms.custom: okr_smb
   
 ### Step 1: Find the TXT record value and verify
 
+::: moniker range="o365-worldwide"
+
 1. In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+
+::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
 
 ::: moniker-end
     
@@ -58,17 +62,21 @@ ms.custom: okr_smb
     
 ### Step 2: Find the MX record value for email and more
 
+::: moniker range="o365-worldwide"
+
 1. In the Microsoft 365 admin center, go to the **Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
+
+::: moniker-end
     
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
 
 ::: moniker-end
     

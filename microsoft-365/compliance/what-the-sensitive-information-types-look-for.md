@@ -1083,7 +1083,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Identiteit
 - Registratie
 - Identificatie 
-- Carte d’identité 
+- Carte d'identité 
 - numéro d'immatriculation
 - numéro d'identification
 - identité 
@@ -2109,7 +2109,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- date d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -2847,29 +2847,34 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
    
 ## Finland Passport Number
 
-Format
+### Format
 Combination of nine letters and digits
-Pattern
+
+### Pattern
 Combination of nine letters and digits:
 Two letters (not case sensitive) 
 Seven digits
-Checksum
+
+### Checksum
 No
-Definition
+
+### Definition
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The regular expression Regex_finland_passport_number finds content that matches the pattern.
-A keyword from Keyword_finland_passport_number is found.
+- The regular expression Regex_finland_passport_number finds content that matches the pattern.
+- A keyword from Keyword_finland_passport_number is found.
 <!-- Finland Passport Number -->
+```xml
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
      <IdMatch idRef="Regex_finland_passport_number"/>
      <Match idRef="Keyword_finland_passport_number"/>
   </Pattern>
 </Entity>
-Keywords
-Keyword_finland_passport_number
-Passport
-Passi
+```
+### Keywords
+- Keyword_finland_passport_number
+- Passport
+- Passi
    
 ## France Driver's License Number
 
@@ -5909,7 +5914,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 ```xml
 <Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
-	<Pattern confidenceLevel="75">
+    <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
         <Match idRef="Keyword_us_drivers_license" />

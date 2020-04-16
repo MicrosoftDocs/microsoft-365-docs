@@ -257,13 +257,17 @@ Like an org-wide policy, if a policy applies to any combination of entire locati
 
 You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
   
-However, note that the following limits exist for a retention policy that includes or excludes over 1,000 specific locations:
+However, note that the following limits exist when you configure a retention policy that includes or excludes over 1,000 specific locations:
   
-- Such a retention policy can contain no more than 1,000 mailboxes and 100 site collections.
-    
+- Maximum numbers for the retention policy:
+    - 1,000 mailboxes
+    - 1,000 Office 365 groups
+    - 1,000 users for Teams private chats
+    - 100 sites (OneDrive or SharePoint)
+
 - A tenant can contain no more than 10,000 retention policies.
     
-Although these limits exist, understand that you can get over these limits by applying either an org-wide policy or a policy that applies to entire locations.
+Although these limits exist, you can avoid them by applying either an org-wide policy or a policy that applies to entire locations.
   
 ### Skype locations
 
@@ -297,7 +301,7 @@ You can use a retention policy to retain chats and channel messages in Teams. Te
 Teams chats and channel messages are not affected by retention policies applied to user or group mailboxes in the Exchange or Office 365 groups locations. Even though Teams chats and channel messages are stored in Exchange, they're affected only by a retention policy that's applied to the Teams location.
 
 > [!NOTE]
-> If a user is included in an active retention policy that retains Teams data, then deleting a mailbox of such a user is not allowed since the storage of the data needs to be retained. To delete a mailbox of such a user, the admin needs to exclude the user from the retention policy first.
+> If a user is included in an active retention policy that retains Teams data and you a delete a mailbox of a user who is included in this policy, to retain the data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this data for the user, exclude the user from the retention policy before you delete their mailbox.
   
 After a retention policy is assigned to a team, chat and channel messages can follow one of two paths:
 
