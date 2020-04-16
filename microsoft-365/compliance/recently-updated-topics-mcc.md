@@ -36,33 +36,7 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 
 [Manage mailbox auditing](enable-mailbox-auditing.md#logon-types-and-mailbox-actions) (updated)<br>Added info about the new MailItemsAccessed mailbox action, which was introduced with advanced audit.
 
-<<<<<<< HEAD
-### Records management
-
-[Disposition of records](disposition-records.md#permissions-for-disposition) (updated)<br>Resolved a long-standing support issue by clarifying that the View-Only Audit Logs role must be assigned in the Exchange admin center.
-
-### Sensitivity labels
-
-[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md) (new)<br>Steps and recommended flow to create/configure/publish sensitivity labels. Also details about additional settings that require PowerShell, including an example for configuring a label for different languages.
-
-[Learn about sensitivity labels](sensitivity-labels.md) (updated)<br>Formerly 'Overview of sensitivity labels', this article is overhauled to provide a better reading experience, updated screenshots, clarifications for sublabels and visual markings, and reset expectations to wait up to 24 hours rather than "within an hour".
-
-[Use sensitivity labels with Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md#change-site-and-group-settings-for-a-label) (updated)<br>Per customer feedback, added explicit step-by-step Powershell instructions for how to change site and group settings for a label.
-
-[Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md) (updated)<br>Various updates, including an embedded video, clarifications for limitations, and info about how SharePoint behavior doesn't change if using "hold your own key" (HYOK).
-
-[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) (updated)<br>Added info how to change the Office update channel and sign up for private previews if you want to test new features.
-
-[Known issues with sensitivity labels in Office](https://support.office.com/en-us/article/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc) (updated)<br>Added new issues, including how sensitivity labels that don't apply encryption can be removed with document inspection and problems with visual markings if replacing those set by by the Azure Information Protection client (classic).
-
-## December 2019
-
-### Communication compliance and Supervision policies
-
-[Communication compliance feature reference](communication-compliance-feature-reference.md) and [Supervision policies in Office 365](supervision-policies.md) (updated)<br>Clarified that search values for message and attachments should be comma-separated instead of line-separated in the policy wizards.
-=======
 [Search the audit log](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (updated)<br>Added new descriptions for sensitivity label activities and additional info about auditing [Forms collaboration activities](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders).
->>>>>>> ad22126cefb6504f3c5b59200eee4a41dae5d029
 
 ### Compliance offerings
 
