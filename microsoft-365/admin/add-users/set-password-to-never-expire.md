@@ -32,7 +32,7 @@ description: "Learn how to set some individual user passwords to never expire, u
 
 ## Set the password expiration policy for individual users
 
-A global admin for a Microsoft cloud service can use the Azure Active Directory PowerShell for Graph to set passwords not to expire for specific users. You can also use AzureAD cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
+A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) to set passwords not to expire for specific users. You can also use [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
 
 This guide applies to other providers, such as Intune and Office 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
 
