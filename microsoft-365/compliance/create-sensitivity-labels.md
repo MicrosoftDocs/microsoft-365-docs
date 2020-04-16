@@ -133,8 +133,6 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 6. Follow the prompts to configure the policy settings.
     
-    If you accept the default to publish to all users and groups, the labels become available to all users (but not guests) in your tenant. Alternatively, if you choose users and groups, the groups you can select are email-enabled security groups, distribution groups, Office 365 groups, and [dynamic distribution groups](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Security groups that aren't email-enabled and dynamic distribution lists from Exchange Online aren't supported for these label policies.
-    
     For more information about the policy settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information.
 
 7. Repeat these steps if you need different policy settings for different users or locations. For example, you want additional labels for a group of users, or a different default label for a subset of users.
