@@ -60,12 +60,12 @@ Spoofing is when the From address in an email message (the sender address that's
 
 The following spoof settings are available in anti-phishing policies and ATP anti-phishing policies:
 
-- **Anti-spoofing protection**: Enables or disables anti-spoofing protection. We recommend that you leave it enabled. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+- **Anti-spoofing protection**: Enables or disables anti-spoofing protection. We recommend that you leave it enabled. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
   > Spoof settings are enabled by default in the default anti-phishing policy in EOP, the default ATP anti-phishing policy, and in new custom ATP anti-phishing policies that you create. <br/><br/> You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-  For messages from unidentified or blocked spoofed senders (in other words, any spoofed senders that aren't allowed), you can also specify the action to take on the messages:
+  For messages from blocked spoofed senders, you can also specify the action to take on the messages:
 
   - **Move message to Junk Email folder**: This is the default value. The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
@@ -75,13 +75,22 @@ The following spoof settings are available in anti-phishing policies and ATP ant
     - [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md)
     - [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Unauthenticated Sender**: Enables or disables unidentified sender identification that adds a question mark in the sender's photo if the sender fails email authentication checks.
+- **Unauthenticated Sender**: Enables or disables unidentified sender identification in Outlook. Specifically:
 
-  ![Message did not pass verification](../../media/message-did-not-pass-verification.jpg)
+  - A question mark (?) is added to the sender's photo if the message does not pass SPF or DKIM checks **and** the message does not pass DMARC or [composite authentication](email-validation-and-authentication.md#composite-authentication).
 
-  Note that we don't apply unauthenticated sender identification if the message was delivered to the Inbox via mail flow rules (also known as transport rules) or the Safe Domain List (anti-spam policies).
+  - The via tag (chris@contoso.com <u>via</u> michelle@fabrikam.com) is added if the domain in the From address (the message sender that's displayed in email clients) is different from the domain in the DKIM signature or the **MAIL FROM** address. For more information about these addresses, see [An overview of email message standards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
 
- For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206).
+  To prevent these identifiers from being added to messages from specific senders, you have the following options:
+
+  - Allow the sender to spoof in the spoof intelligence policy. For instructions, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
+
+  - [Configure email authentication](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) for the sender domain.
+  
+    - For the question mark in the sender's photo, SPF or DKIM are the most important.
+    - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
+
+  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## Exclusive settings in ATP anti-phishing policies
 
