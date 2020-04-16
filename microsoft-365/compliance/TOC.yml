@@ -557,8 +557,6 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
-            - name: Advanced eDiscovery reports (preview)
-              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (classic)
@@ -830,6 +828,8 @@
       items: 
         - name: Financial services security and compliance
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: Energy services security and compliance
+          href: ../solutions/energy-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
     - name: ISO - Recommended action plan

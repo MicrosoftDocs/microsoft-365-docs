@@ -20,11 +20,11 @@ description: "Summary: Understand data encryption at the service layer in Micros
 
 In addition to using BitLocker for volume-level encryption, Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business, and Teams also use Service Encryption to encrypt customer data. Service Encryption allows for two key management options:
 
-- Microsoft manages all cryptographic keys. This option is currently available in SharePoint Online, OneDrive for Business, Skype for Business, and Teams chats. Your data is encrypted by default with Microsoft managed keys.
+- Microsoft manages all cryptographic keys. This option is currently available in SharePoint Online, OneDrive for Business, Skype for Business, and Teams chats. Your data is encrypted by default with Microsoft-managed keys.
 
-- Your organization supplies the root keys. You manage these keys using Azure Key Vault. This option is called Customer Key. Customer Key is currently available for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, and Teams files. If you use Customer Key, these keys replace Microsoft managed keys to encrypt your data.
+- Your organization supplies the root keys. You manage these keys using Azure Key Vault. This option is called Customer Key. Customer Key is currently available for Exchange Online, SharePoint Online, OneDrive for Business, Skype for Business, and Teams files. If you use Customer Key, these keys replace Microsoft-managed keys to encrypt your data.
 
-Regardless of the option you choose, service encryption provides multiple benefits:
+Whatever option you choose, service encryption provides multiple benefits:
 
 - Enforces user authentication to retrieve and decrypt data requested by an authorized user.
 
