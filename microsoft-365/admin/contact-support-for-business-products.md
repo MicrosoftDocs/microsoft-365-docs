@@ -32,9 +32,11 @@ feedback_system: None
 > [!IMPORTANT]
 > You must be an admin for a business subscription to use these support methods. If you're not a business admin, please use [this support page](https://support.microsoft.com/help/contactus).
 
+Start by [checking the current health of your Office 365 services](https://docs.microsoft.com/office365/enterprise/view-service-health). You can view detailed information about current and past issues on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Service health dashboard</a>. If you're experiencing an issue that isn't listed, you can get support in one of the following ways:
+
 ## Online support
 
-Save time by starting your service request online. We'll help you find a solution or connect you to an expert. See "Comparison of technical phone support options for Office 365 Business and Enterprise plans" in [Learn about initial support response times](https://go.microsoft.com/fwlink/p/?LinkId=518251).
+Save time by starting your service request online. We'll help you find a solution or connect you to an expert.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. [Who has admin permissions in my business?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
@@ -249,8 +251,8 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 
 | Region | Phone number | Hours |
 |-----------------------------------------------------|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Germany | 0800 589 2330 | Billing Support:  German: Mon-Fri 9-5 Berlin English: Mon-Fri 9-5 Berlin  Technical Support:  German: 24 hours a day, 7 days a week English: 24 hours a day, 7 days a week  Alternative Phone Number: 069 380 789 305 (Local call charges apply) |
-| All other markets within the European Economic Area | +49 69 380 789 305 | Billing Support:  German: Mon-Fri 9-5 Berlin(UTC+1) English: Mon-Fri 9-5 Berlin (UTC +1)  Technical Support:  German: 24 hours a day, 7 days a week English: 24 hours a day, 7 days a week  Telephone support is available via international call to Germany. International call charges apply. Call charges can be avoided by submitting a support ticket through the admin center. |
+| Germany | 0800 589 2330 | Billing Support: German: Mon-Fri 9-5 Berlin\ English: Mon-Fri 9-5 Berlin\ Technical Support: German: 24 hours a day, 7 days a week\ English: 24 hours a day, 7 days a week\ Alternative Phone Number: 069 380 789 305 (Local call charges apply) |
+| All other markets within the European Economic Area | +49 69 380 789 305 | Billing Support: German: Mon-Fri 9-5 Berlin(UTC+1)\ English: Mon-Fri 9-5 Berlin (UTC +1)\ Technical Support:  German: 24 hours a day, 7 days a week\ English: 24 hours a day, 7 days a week\ Telephone support is available via international call to Germany. International call charges apply. Call charges can be avoided by submitting a support ticket through the admin center. |
 
 ### Let our community help
 
