@@ -32,7 +32,7 @@ There are two major factors that determine which policy is applied to a message:
   |1|Malware|CAT:MALW|[Configure anti-malware policies in Office 365](configure-anti-malware-policies.md)|
   |2|Phishing|CAT:PHSH|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
   |3|High confidence spam|CAT:HSPM|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
-  |4|Spoofing|CAT:SPOOF|[Learn more about spoof intelligence](learn-about-spoof-intelligence.md)|
+  |4|Spoofing|CAT:SPOOF|[Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md)|
   |5|Spam|CAT:SPM|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
   |6|Bulk|CAT:BULK|[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)|
   |7<sup>\*</sup>|Domain impersonation (protected users)|DIMP|[Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md)|
