@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-description: "Have a question about how the new message protection capabilities in Office 365 work? Check for an answer here."
+description: "Have a question about how the new message protection capabilities work? Check for an answer here."
 ---
 
 # Message Encryption FAQ
 
-Have a question about how the new message protection capabilities in Office 365 work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
+Have a question about how the new message protection capabilities work? Check for an answer here. Also, take a look at [Frequently asked questions about data protection in Azure Information Protection](https://docs.microsoft.com/information-protection/get-started/faqs-rms) for answers to questions about the data protection service, Azure Rights Management, in Azure Information Protection.
 
 ## What is Office 365 Message Encryption (OME)?
 
@@ -86,7 +86,7 @@ No. If you are using Exchange Online with Active Directory Rights Management ser
   
 ## My organization has an Exchange Hybrid deployment. Can I use this feature?
 
-On-premises users can send encrypted mail using Exchange Online mail flow rules. In order to do this, you need to route email through Exchange Online. For more information, see [Part 2: Configure mail to flow from your email server to Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
+On-premises users can send encrypted mail using Exchange Online mail flow rules. In order to do this, you need to route email through Exchange Online. For more information, see [Part 2: Configure mail to flow from your email server to Microsoft 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## What email client do I need to use in order to create an OME encrypted message? What applications are supported for sending protected messages?
 
@@ -143,7 +143,7 @@ There is an Encryption report in the Security and Compliance Center. See [View e
   
 ## Can I use message encryption with compliance features such as eDiscovery?
 
-Yes. All encrypted email messages are discoverable by Office 365 compliance features.
+Yes. All encrypted email messages are discoverable by Microsoft 365 compliance features.
 
 ## Can I remove encryption from email?
 

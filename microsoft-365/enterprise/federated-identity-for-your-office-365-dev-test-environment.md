@@ -48,7 +48,7 @@ There are five phases to setting up this test environment:
     
 4. Create a self-signed certificate and configure ADFS1 and PROXY1.
     
-5. Configure Office 365 for federated identity.
+5. Configure Microsoft 365 for federated identity.
     
 > [!NOTE]
 > You cannot configure this test environment with an Azure Trial subscription. 
@@ -66,7 +66,7 @@ This configuration consists of:
 
 ## Phase 2: Create the AD FS server
 
-An AD FS server provides federated authentication between Office 365 and the accounts in the corp.contoso.com domain hosted on DC1.
+An AD FS server provides federated authentication between Microsoft 365 and the accounts in the corp.contoso.com domain hosted on DC1.
   
 To create an Azure virtual machine for ADFS1, fill in the name of your subscription and the resource group and Azure location for your Base Configuration, and then run these commands at the Azure PowerShell command prompt on your local computer.
   
@@ -344,7 +344,7 @@ Use these steps to configure the web application proxy service to use ADFS1 as i
 8. On the **Results** page, click **Close**.
 
     
-## Phase 5: Configure Office 365 for federated identity
+## Phase 5: Configure Microsoft 365 for federated identity
 
 Use the [Azure portal](https://portal.azure.com) to connect to the APP1 virtual machine with the CORP\\User1 account credentials.
   
@@ -384,7 +384,7 @@ To demonstrate that federated authentication is working:
     
 2. For the sign-in credentials, type **user1@**\<the domain created in Phase 1>. 
     
-    For example, if your test domain is **testlab.contoso.com**, you would type "user1@testlab.contoso.com". Press TAB or allow Office 365 to automatically redirect you.
+    For example, if your test domain is **testlab.contoso.com**, you would type "user1@testlab.contoso.com". Press TAB or allow Microsoft 365 to automatically redirect you.
     
     You should now see a **Your connection is not private** page. You are seeing this because you installed a self-signed certificate on ADFS1 that your desktop computer cannot validate. In a production deployment of federated authentication, you would use a certificate from a trusted certification authority and your users would not see this page.
     
@@ -398,9 +398,9 @@ To demonstrate that federated authentication is working:
     
     You should see the **Microsoft Office Home** page.
     
-This procedure demonstrates that your Office 365 trial subscription is federated with the AD DS corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:
+This procedure demonstrates that your trial subscription is federated with the AD DS corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:
   
-1. When you use the federated domain that you created in Phase 1 within the sign-in account name, Office 365 redirects your browser to your federation service FQDN and PROXY1.
+1. When you use the federated domain that you created in Phase 1 within the sign-in account name, Microsoft 365 redirects your browser to your federation service FQDN and PROXY1.
     
 2. PROXY1 sends your local computer the fictional company sign-in page.
     
@@ -408,13 +408,13 @@ This procedure demonstrates that your Office 365 trial subscription is federated
     
 4. ADFS1 validates CORP\\User1 and the password with DC1 and sends your local computer a security token.
     
-5. Your local computer sends the security token to Office 365.
+5. Your local computer sends the security token to Microsoft 365.
     
-6. Office 365 validates that the security token was created by ADFS1 and allows access.
+6. Microsoft 365 validates that the security token was created by ADFS1 and allows access.
     
-Your Office 365 trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.
+Your trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.
   
 ## Next step
 
-When you are ready to deploy production-ready, high availability federated authentication for Microsoft 365 or Office 365 in Azure, see [Deploy high availability federated authentication for Office 365 in Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
+When you are ready to deploy production-ready, high availability federated authentication for Microsoft 365 or Office 365 in Azure, see [Deploy high availability federated authentication for Microsoft 365 in Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
   

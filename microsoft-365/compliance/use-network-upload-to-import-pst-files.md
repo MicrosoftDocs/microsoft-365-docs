@@ -332,11 +332,11 @@ Here's an illustration and description of the network upload process to import P
 
 - Why import PST files to Office 365?
     
-  - It's a good way to import your organization's archival messaging data to Office 365.
+  - It's a good way to import your organization's archival messaging data to Microsoft 365.
     
   - The data is available to the user from all devices because it's stored in the cloud.
     
-  - It helps address compliance needs of your organization by letting you apply Office 365 compliance features to the data from the PST files that you imported. This includes:
+  - It helps address compliance needs of your organization by letting you apply Microsoft 365 compliance features to the data from the PST files that you imported. This includes:
     
   - Enabling [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-unlimited-archiving.md) to give users additional mailbox storage space to store the data that you imported. 
     
@@ -344,7 +344,7 @@ Here's an illustration and description of the network upload process to import P
     
   - Using Microsoft [eDiscovery tools](search-for-content.md) to search the data that you imported. 
     
-  - Using [Office 365 retention policies](retention-policies.md) to control how long the data that you imported will be retained, and what action to take after the retention period expires. 
+  - Using [Microsoft 365 retention policies](retention-policies.md) to control how long the data that you imported will be retained, and what action to take after the retention period expires. 
     
   - Searching the [audit log](search-the-audit-log-in-security-and-compliance.md) for mailbox-related events that affect the data that you imported. 
     
@@ -352,7 +352,7 @@ Here's an illustration and description of the network upload process to import P
     
   - Using [data loss prevention policies](data-loss-prevention-policies.md) to prevent sensitive data from leaking outside your organization. 
   
-- Here's an example of the Shared Access Signature (SAS) URL that's obtained in Step 1. This example also contains the syntax for the command that you run in the AzCopy.exe tool to upload PST files to Office 365. Be sure to take precautions to protect the SAS URL just like you would protect passwords or other security-related information.
+- Here's an example of the Shared Access Signature (SAS) URL that's obtained in Step 1. This example also contains the syntax for the command that you run in the AzCopy.exe tool to upload PST files. Be sure to take precautions to protect the SAS URL just like you would protect passwords or other security-related information.
 
     ```text
     SAS URL: https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D

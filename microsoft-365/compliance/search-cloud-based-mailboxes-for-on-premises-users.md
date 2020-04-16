@@ -25,7 +25,7 @@ If your organization has an Exchange hybrid deployment (or your organization syn
   
 Here are the requirements and limitations for setting up cloud-based mailboxes for on-premises users:
   
-- The user accounts in your on-premises directory service (such as Active Directory) must be synchronized with Azure Active Directory, the directory service in Office 365. This means that a mail user account is created in Office 365 and is associated with a user whose primary mailbox is located in the on-premises organization.
+- The user accounts in your on-premises directory service (such as Active Directory) must be synchronized with Azure Active Directory, the directory service in Microsoft 365. This means that a mail user account is created in Microsoft 365 and is associated with a user whose primary mailbox is located in the on-premises organization.
 
 - The user whose primary mailbox is located in the on-premises organization must be assigned a Microsoft Teams license and a minimum of an Exchange Online Plan 1 license.
 
@@ -54,9 +54,9 @@ Include the following information when you submit the request to Microsoft Suppo
   
 - The default domain name of your organization.
 
-- The tenant name and tenant ID of your organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Office 365 tenant ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- The tenant name and tenant ID of your organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Microsoft 365 tenant ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
 
-- The following title or description of the purpose of the support request: "Enable Application Content Search for On-premises Users". This helps route the request to the Office 365 eDiscovery engineering team who will implement the request.
+- The following title or description of the purpose of the support request: "Enable Application Content Search for On-premises Users". This helps route the request to the eDiscovery engineering team who will implement the request.
 
 After the engineering change is made, Microsoft Support will send you an estimated deployment date. The deployment process usually takes 2–3 weeks after you submit the support request.
   
@@ -148,7 +148,7 @@ Cloud-based mailboxes are created and stored in the same datacenter as your orga
   
 No. When you migrate the primary mailbox of an on-premises user to the cloud, the Teams chat data for that user will be migrated to their new cloud-based primary mailbox.
   
- **Can I apply an eDiscovery hold or Office 365 retention policies to on-premises users?**
+ **Can I apply an eDiscovery hold or retention policies to on-premises users?**
   
 Yes. You can apply eDiscovery holds or retention policies for Teams chats and channel messages to cloud-based mailboxes for on-premises users.
   

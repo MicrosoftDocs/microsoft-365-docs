@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
-description: "The audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services:"
+description: "The audit log is a unified audit log. Why a unified audit log? Because events from most services that your organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services:"
 ---
 
 # Search the audit log for user and admin activity
 
-The audit log is a unified audit log. Why a unified audit log? Because events from most Office 365 services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services: 
+The audit log is a unified audit log. Why a unified audit log? Because events from most services that you're organization subscribes to are recorded in a single audit log that you can search. That means you can search for user and admin activity in these services: 
   
 - SharePoint
 - OneDrive
@@ -41,7 +41,7 @@ There's few things you have to do before you can search the audit log.
     
  ## Search the audit log
   
-After you turn on auditing, you search for hundreds of individual types of events from multiple Office 365 services.
+After you turn on auditing, you search for hundreds of individual types of events from multiple Microsoft 365 services.
   
 - [Search the audit log](search-the-audit-log-in-security-and-compliance.md) for user and admin activities 
     

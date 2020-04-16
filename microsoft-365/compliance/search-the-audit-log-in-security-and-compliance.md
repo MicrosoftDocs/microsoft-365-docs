@@ -69,7 +69,7 @@ Be sure to read the following items before you start searching the audit log.
   > [!NOTE]
   > We're in the process of turning on auditing by default. Until then, you can turn it on as previously described.
 
-- You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Note Global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Note global administrators in Office 365 and Microsoft 365 are automatically added as members of the Organization Management role group in Exchange Online. To give a user the ability to search the audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see [Manage role groups in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
   > [!IMPORTANT]
   > If you assign a user the View-Only Audit Logs or Audit Logs role on the **Permissions** page in the Security & Compliance Center, they won't be able to search the audit log. You have to assign the permissions in Exchange Online. This is because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet.
@@ -108,7 +108,7 @@ Be sure to read the following items before you start searching the audit log.
 
 - It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Office 365.
 
-  |**Office 365 service**|**30 minutes**|**24 hours**|
+  |**Microsoft 365 service**|**30 minutes**|**24 hours**|
   |:-----|:-----:|:-----:|
   |Advanced Threat Protection and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -169,7 +169,7 @@ Here's the process for searching the audit log in Office 365.
 
     a. **Activities**: Click the drop-down list to display the activities that you can search for. User and admin activities are organized in to groups of related activities. You can select specific activities or you can click the activity group name to select all activities in the group. You can also click a selected activity to clear the selection. After you run the search, only the audit log entries for the selected activities are displayed. Selecting **Show results for all activities** displays results for all activities performed by the selected user or group of users.
 
-    Over 100 user and admin activities are logged in the audit log. Click the **Audited activities** tab at the topic of this article to see the descriptions of every activity in each of the different Office 365 services.
+    Over 100 user and admin activities are logged in the audit log. Click the **Audited activities** tab at the topic of this article to see the descriptions of every activity in each of the different services.
 
     b. **Start date** and **End date**: The last seven days are selected by default. Select a date and time range to display the events that occurred within that period. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is 90 days. An error is displayed if the selected date range is greater than 90 days.
 
@@ -234,7 +234,7 @@ The results contain the following information about each event returned by the s
 
 #### View the details for a specific event
 
-You can view more details about an event by clicking the event record in the list of search results. A **Details** page is displayed that contains the detailed properties from the event record. The properties that are displayed depend on the Office 365 service in which the event occurs. To display these details, click **More information**. For descriptions, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
+You can view more details about an event by clicking the event record in the list of search results. A **Details** page is displayed that contains the detailed properties from the event record. The properties that are displayed depend on the service in which the event occurs. To display these details, click **More information**. For descriptions, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
 
 ![Click More information to view the detailed properties of the audit log event record](../media/6df582ae-d339-4735-b1a6-80914fb77a08.png)
 
@@ -284,7 +284,7 @@ You can export the results of an audit log search to a comma-separated value (CS
 
 - The **Download all results** option downloads the raw data from the audit log to a CSV file. This file contains different column names (CreationDate, UserIds, Operation, AuditData) than the file that's downloaded if you select the **Save loaded results** option. The values in the two different CSV files for the same activity may also be different. For example, the activity in the **Action** column in the CSV file and may have a different value than the "user-friendly" name that's displayed in the **Activity** column on the **Audit log search** page. For example, MailboxLogin vs. User signed in to mailbox.
 
-- When you download all results from a search query that contains events from different Office 365 services, the **AuditData** column in the CSV file contains different properties depending on which service the action was performed in. For example, entries from Exchange and Azure AD audit logs include a property named **ResultStatus** that indicates if the action was successful or not. This property isn't included for events in SharePoint. Similarly, SharePoint events have a property that identifies the site URL for file and folder-related activities. To mitigate this behavior, consider using different searches to export the results for activities from a single service.
+- When you download all results from a search query that contains events from different services, the **AuditData** column in the CSV file contains different properties depending on which service the action was performed in. For example, entries from Exchange and Azure AD audit logs include a property named **ResultStatus** that indicates if the action was successful or not. This property isn't included for events in SharePoint. Similarly, SharePoint events have a property that identifies the site URL for file and folder-related activities. To mitigate this behavior, consider using different searches to export the results for activities from a single service.
 
   For a description of many of the properties that are listed in the **AuditData** column in the CSV file when you download all results, and the service each one applies to, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
 
@@ -292,7 +292,7 @@ You can export the results of an audit log search to a comma-separated value (CS
 
 The tables in this section describe the activities that are audited in Office 365. You can search for these events by searching the audit log in the security and compliance center.
 
-These tables group related activities or the activities from a specific Office 365 service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
+These tables group related activities or the activities from a specific service. The tables include the friendly name that's displayed in the **Activities** drop-down list and the name of the corresponding operation that appears in the detailed information of an audit record and in the CSV file when you export the search results. For descriptions of the detailed information, see [Detailed properties in the audit log](detailed-properties-in-the-office-365-audit-log.md).
 
 Click one of the following links to go to a specific table.
 
@@ -494,12 +494,12 @@ The following table lists events that result from site administration tasks in S
 |Added exempt user agent|ExemptUserAgentSet|A SharePoint or global administrator added a user agent to the list of exempt user agents in the SharePoint admin center.|
 |Added geo location admin|GeoAdminAdded|A SharePoint or global administrator added a user as a geo admin of a location.|
 |Allowed user to create groups|AllowGroupCreationSet|Site administrator or owner adds a permission level to a site that allows a user assigned that permission to create a group for that site.|
-|Cancelled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
-|Changed a sharing policy|SharingPolicyChanged|A SharePoint or global administrator changed a SharePoint sharing policy by using the Office 365 admin portal, SharePoint admin portal, or SharePoint Online Management Shell. Any change to the settings in the sharing policy in your organization will be logged. The policy that was changed is identified in the **ModifiedProperties** field in the detailed properties of the event record.|
-|Changed device access policy|DeviceAccessPolicyChanged|A SharePoint or global administrator changed the unmanaged devices policy for your organization. This policy controls access to SharePoint, OneDrive, and Office 365 from devices that aren't joined to your organization. Configuring this policy requires an Enterprise Mobility + Security subscription. For more information, see [Control access from unmanaged devices](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
+|Cancelled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Changed a sharing policy|SharingPolicyChanged|A SharePoint or global administrator changed a SharePoint sharing policy by using the Microsoft 365 admin portal, SharePoint admin portal, or SharePoint Online Management Shell. Any change to the settings in the sharing policy in your organization will be logged. The policy that was changed is identified in the **ModifiedProperties** field in the detailed properties of the event record.|
+|Changed device access policy|DeviceAccessPolicyChanged|A SharePoint or global administrator changed the unmanaged devices policy for your organization. This policy controls access to SharePoint, OneDrive, and Microsoft 365 from devices that aren't joined to your organization. Configuring this policy requires an Enterprise Mobility + Security subscription. For more information, see [Control access from unmanaged devices](https://support.office.com/article/5ae550c4-bd20-4257-847b-5c20fb053622).|
 |Changed exempt user agents|CustomizeExemptUsers|A SharePoint or global administrator customized the list of exempt user agents in the SharePoint admin center. You can specify which user agents to exempt from receiving an entire web page to index. This means when a user agent you've specified as exempt encounters an InfoPath form, the form will be returned as an XML file, instead of an entire web page. This makes indexing InfoPath forms faster.|
 |Changed network access policy|NetworkAccessPolicyChanged|A SharePoint or global administrator changed the location-based access policy (also called a trusted network boundary) in the SharePoint admin center or by using SharePoint Online PowerShell. This type of policy controls who can access SharePoint and OneDrive resources in your organization based on authorized IP address ranges that you specify. For more information, see [Control access to SharePoint Online and OneDrive data based on network location](https://support.office.com/article/b5a5f1f1-1174-4c6b-91d0-9273a6b6971f).|
-|Completed site geo move|SiteGeoMoveCompleted|A site geo move that was scheduled by a global administrator in your organization was successfully completed. The Multi-Geo capability lets an organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Completed site geo move|SiteGeoMoveCompleted|A site geo move that was scheduled by a global administrator in your organization was successfully completed. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Created Sent To connection|SendToConnectionAdded|A SharePoint or global administrator creates a new Send To connection on the Records management page in the SharePoint admin center. A Send To connection specifies settings for a document repository or a records center. When you create a Send To connection, a Content Organizer can submit documents to the specified location.|
 |Created site collection|SiteCollectionCreated|A SharePoint or global administrator creates a site collection in your SharePoint Online organization or a user provisions their OneDrive for Business site.|
 |Deleted orphaned hub site|HubSiteOrphanHubDeleted|A SharePoint or global administrator deleted an orphan hub site, which is a hub site that doesn't have any sites associated with it. An orphaned hub is likely caused by the deletion of the original hub site.|
@@ -515,7 +515,7 @@ The following table lists events that result from site administration tasks in S
 |Removed allowed data location|AllowedDataLocationDeleted|A SharePoint or global administrator removed an allowed data location in a multi-geo environment.|
 |Removed geo location admin|GeoAdminDeleted|A SharePoint or global administrator removed a user as a geo admin of a location.|
 |Renamed site|SiteRenamed|Site administrator or owner renames a site|
-|Scheduled site geo move|SiteGeoMoveScheduled|A SharePoint or global administrator successfully schedules a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Office 365 datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Scheduled site geo move|SiteGeoMoveScheduled|A SharePoint or global administrator successfully schedules a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online in Office 365](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Set host site|HostSiteSet|A SharePoint or global administrator changes the designated site to host personal or OneDrive for Business sites.|
 |Set storage quota for geo location|GeoQuotaAllocated|A SharePoint or global administrator configured the storage quota for a geo location in a multi-geo environment.|
 |Unjoined site from hub site|HubSiteUnjoined|A site owner disassociates their site from a hub site.|
@@ -555,7 +555,7 @@ The following table lists the activities that can be logged by mailbox audit log
 
 ### Sway activities
 
-The following table lists user and admin activities in Sway. Sway is an Office 365 app that helps users gather, format, and share ideas, stories, and presentations on an interactive, web-based canvas. For more information, see [Frequently asked questions about Sway - Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
+The following table lists user and admin activities in Sway. Sway is an Microsoft 365 app that helps users gather, format, and share ideas, stories, and presentations on an interactive, web-based canvas. For more information, see [Frequently asked questions about Sway - Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -625,9 +625,9 @@ The following table lists Azure AD role administration activities that are logge
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Add member to Role|Add role member to role|Added a user to an admin role in Office 365.|
-|Removed a user from a directory role|Remove role member from role|Removed a user to from an admin role in Office 365.|
-|Set company contact information|Set company contact information|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Office 365, and technical notifications about Office 365 services.|
+|Add member to Role|Add role member to role|Added a user to an admin role in Microsoft 365.|
+|Removed a user from a directory role|Remove role member from role|Removed a user to from an admin role in Microsoft 365.|
+|Set company contact information|Set company contact information|Updated the company-level contact preferences for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about services.|
 ||||
 
 ### Directory administration activities
@@ -640,7 +640,7 @@ The following table lists Azure AD directory and domain-related activities that 
 |Added a partner to the directory|Add partner to company|Added a partner (delegated administrator) to your organization.|
 |Removed domain from company|Remove domain from company|Removed a domain from your organization.|
 |Removed a partner from the directory|Remove partner from company|Removed a partner (delegated administrator) from your organization.|
-|Set company information|Set company information|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Office 365, and technical notifications about Office 365 services.|
+|Set company information|Set company information|Updated the company information for your organization. This includes email addresses for subscription-related email sent by Microsoft 365, and technical notifications about Microsoft 365 services.|
 |Set domain authentication|Set domain authentication|Changed the domain authentication setting for your organization.|
 |Updated the federation settings for a domain|Set federation settings on domain|Changed the federation (external sharing) settings for your organization.|
 |Set password policy|Set password policy|Changed the length and character constraints for user passwords in your organization.|
@@ -677,7 +677,7 @@ The following table lists activities that result from IT and legal professionals
 |:-----|:-----|:-----|
 |Added data to another review set|AddWorkingSetQueryToWorkingSet|User added documents from one review set to a different review set.|
 |Added data to review set|AddQueryToWorkingSet|User added the search results from a content search associated with an Advanced eDiscovery case to a review set.|
-|Added non-Office 365 data to review set|AddNonOffice365DataToWorkingSet|User added non-Office 365 data to a review set.|
+|Added non-Microsoft 365 data to review set|AddNonOffice365DataToWorkingSet|User added non-Microsoft 365 data to a review set.|
 |Added remediated documents to review set|AddRemediatedData|User uploads documents that had indexing errors that were fixed to a review set.|
 |Analyzed data in review set|RunAlgo|User ran  analytics on the  documents in a review set.|
 |Annotated document in review set|AnnotateDocument|User annotated a document in a review set. Annotation includes redacting content in a document.|
@@ -896,7 +896,7 @@ The following table lists events that result from labeling activities for ShareP
 Exchange administrator audit logging (which is enabled by default in Office 365) logs an event in the audit log when an administrator (or a user who has been assigned administrative permissions) makes a change in your Exchange Online organization. Changes made by using the Exchange admin center or by running a cmdlet in Exchange Online PowerShell are logged in the Exchange admin audit log. Cmdlets that begin with the verbs **Get-**, **Search-**, or **Test-** are not logged in the audit log. For more detailed information about admin audit logging in Exchange, see [Administrator audit logging](https://go.microsoft.com/fwlink/p/?LinkID=619225).
 
 > [!IMPORTANT]
-> Some Exchange Online cmdlets that aren't logged in the Exchange admin audit log (or in the audit log). Many of these cmdlets are related to maintaining the Exchange Online service and are run by Microsoft datacenter personnel or service accounts. These cmdlets aren't logged because they would result in a large number of "noisy" auditing events. If there's an Exchange Online cmdlet that isn't being audited, please submit a suggestion to the [Office 365 Security & Compliance User Voice forum](https://office365.uservoice.com/forums/289138-office-365-security-compliance) and request that it is enabled for auditing. You can also submit a design change request (DCR) to Microsoft Support.
+> Some Exchange Online cmdlets that aren't logged in the Exchange admin audit log (or in the audit log). Many of these cmdlets are related to maintaining the Exchange Online service and are run by Microsoft datacenter personnel or service accounts. These cmdlets aren't logged because they would result in a large number of "noisy" auditing events. If there's an Exchange Online cmdlet that isn't being audited, please submit a suggestion to the [Security & Compliance User Voice forum](https://office365.uservoice.com/forums/289138-office-365-security-compliance) and request that it is enabled for auditing. You can also submit a design change request (DCR) to Microsoft Support.
 
 Here are some tips for searching for Exchange admin activities when searching the audit log:
 
@@ -921,17 +921,17 @@ Here are some tips for searching for Exchange admin activities when searching th
 
 ## Frequently asked questions
 
-**What are different Office 365 services that are currently audited?**
+**What are different Microsoft 365 services that are currently audited?**
 
-The most used Office 365 services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
+The most used services like Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Advanced Threat Protection, and Power BI are audited. See the [beginning of this article](search-the-audit-log-in-security-and-compliance.md) for a list of services that are audited.
 
 **What activities are audited by auditing service in Office 365?**
 
-See the [Audited activities](#audited-activities) section in this article for a list and description of the activities that are audited in Office 365.
+See the [Audited activities](#audited-activities) section in this article for a list and description of the activities that are audited.
 
 **How long does it take for an auditing record to be available after an event has occurred?**
 
-Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you begin](#before-you-begin) section of this article that shows the time it takes for events in the different Office 365 services to be available.
+Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you begin](#before-you-begin) section of this article that shows the time it takes for events in the different services to be available.
 
 **How long are the audit records retained for?**
 
@@ -949,17 +949,17 @@ Yes. The Office 365 Management Activity API is used to fetch the audit logs prog
 
 **Are there other ways to get auditing logs other than using the security and compliance center or the Office 365 Management Activity API?**
 
-No. These are the only two ways to get data from the Office 365 auditing service.
+No. These are the only two ways to get data from the auditing service.
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 
-In most Office 365 services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Before you begin](#before-you-begin) section in this article).
+In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Before you begin](#before-you-begin) section in this article).
 
-**Does the Office 365 auditing service support de-duplication of records?**
+**Does the auditing service support de-duplication of records?**
 
 No. The auditing service pipeline is near real time, and therefore can't support de-duplication.
 
-**Does Office 365 auditing data flow across geographies?**
+**Does auditing data flow across geographies?**
 
 No. We currently have auditing pipeline deployments in the NA (North America), EMEA (Europe, Middle East, and Africa) and APAC (Asia Pacific) regions. However, we may flow the data across these regions for load-balancing and only during live-site issues. When we do perform these activities, the data in transit is encrypted.
 

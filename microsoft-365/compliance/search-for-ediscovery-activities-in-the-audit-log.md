@@ -18,7 +18,7 @@ description: "Learn how to search the audit log for events that are logged when 
 
 # Search for eDiscovery activities in the audit log
 
-Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding PowerShell cmdlets are logged in the Office 365 audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Security & Compliance Center:
+Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Security & Compliance Center:
   
 - Creating and managing eDiscovery cases
     
@@ -180,6 +180,6 @@ The following table describes the properties that are included when you click **
 |UserId  <br/> |The user who performed the activity (specified in the Operation property) that resulted in the record being logged. Note that records for eDiscovery activity performed by system accounts (such as NT AUTHORITY\SYSTEM) are also included in the audit log.  <br/> |
 |UserKey  <br/> |An alternative ID for the user identified in the UserId property. For eDiscovery activities, the value for this property is typically the same as the UserId property.  <br/> |
 |UserServicePlan  <br/> |The Microsoft 365 subscription used by your organization. For eDiscovery activities, this property is typically blank.  <br/> |
-|UserType  <br/> |The type of user that performed the operation. The following values indicate the user type.  <br/> 0   A regular user. 2   An administrator in your Office 365  organization. 3   A Microsoft datacenter administrator or datacenter system account. 4   A system account. 5   An application. 6   A service principal. |
+|UserType  <br/> |The type of user that performed the operation. The following values indicate the user type.  <br/> 0   A regular user. 2   An administrator in your Microsoft 365  organization. 3   A Microsoft datacenter administrator or datacenter system account. 4   A system account. 5   An application. 6   A service principal. |
 |Version  <br/> |Indicates the version number of the activity (identified by the Operation property) that's logged.  <br/> |
-|Workload  <br/> |The Office 365 service where the activity occurred. For eDiscovery activities, the value is **SecurityComplianceCenter**.  <br/> |
+|Workload  <br/> |The service where the activity occurred. For eDiscovery activities, the value is **SecurityComplianceCenter**.  <br/> |

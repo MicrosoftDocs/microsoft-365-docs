@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "As an Office 365 administrator, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
+description: "As an administrator, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
 ---
 
 # Revoke email encrypted by Advanced Message Encryption
@@ -24,13 +24,13 @@ Email revocation is offered as part of Office 365 Advanced Message Encryption. O
 
 This article is part of a larger series of articles about [Office 365 Message Encryption](ome.md).
 
-If a message was encrypted using Office 365 Advanced Message Encryption, and you are an Office 365 admin, you can revoke the message under certain conditions. This article describes the circumstances under which revocation is possible and how to do it.
+If a message was encrypted using Office 365 Advanced Message Encryption, and you are a Microsoft 365 admin, you can revoke the message under certain conditions. This article describes the circumstances under which revocation is possible and how to do it.
   
 ## Encrypted emails that you can revoke
 
 You can revoke encrypted emails if the recipient received a link-based, branded encrypted email. If the recipient received a native inline experience in a supported Outlook client, then you can't revoke those.
 
-Whether a recipient receives a link-based experience or an inline experience depends on the recipient identity type: Office 365 and Microsoft Account recipients (for example, outlook.com users) get an inline experience in supported Outlook clients. All other recipient types, such as Gmail recipients, get a link-based experience.
+Whether a recipient receives a link-based experience or an inline experience depends on the recipient identity type: Office 365 and Microsoft account recipients (for example, outlook.com users) get an inline experience in supported Outlook clients. All other recipient types, such as Gmail recipients, get a link-based experience.
 
 ## Recipient experience for revoked encrypted emails
 
@@ -40,7 +40,7 @@ Once an email has been revoked, the recipient receives an error when they access
 
 ## How to revoke an encrypted email
 
-Office 365 administrators follow these general steps to revoke an eligible encrypted email:
+Microsoft 365 administrators follow these general steps to revoke an eligible encrypted email:
 
 - Get the Message ID of the email.
 - Verify that you can revoke the message.

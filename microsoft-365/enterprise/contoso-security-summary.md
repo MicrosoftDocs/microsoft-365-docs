@@ -58,7 +58,7 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   Contoso's security administrators have assigned lesser admin roles to accounts that are appropriate to that IT person's job function and responsibility.
 
-  For more information, see [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+  For more information, see [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
 - MFA for all user accounts
 
@@ -103,9 +103,9 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
 - Protect sensitive and highly regulated digital assets with Azure Information Protection labels
 
-  Contoso determined three levels of data protection and deployed [Office 365 sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses sensitivity sublabels highly regulated data that encrypts content and restricts access to specific user accounts and groups.
+  Contoso determined three levels of data protection and deployed [Microsoft 365 sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) that users apply to digital assets. For its trade secrets and other intellectual property, Contoso uses sensitivity sublabels highly regulated data that encrypts content and restricts access to specific user accounts and groups.
 
-- Prevent intranet data leaks with Office 365 Data Loss Prevention
+- Prevent intranet data leaks with Data Loss Prevention
 
   Contoso has configured [Data Loss Prevention](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) policies for Exchange Online, SharePoint, and OneDrive for Business to prevent users from accidentally or intentionally sharing sensitive data.
 

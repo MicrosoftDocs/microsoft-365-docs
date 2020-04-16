@@ -79,7 +79,7 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 We're still adding functionality to the Microsoft 365 compliance center. If you can't find something, such as audit log search, use the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). Your configurations are saved in both the existing Security & Compliance Center and in the new Microsoft 365 compliance center automatically.
 
-To go there, in the Microsoft 365 compliance center, in the navigation pane on the left side of the screen, choose **More resources**, and then, under **Office 365 security & compliance center**, choose **Open**.
+To go there, in the Microsoft 365 compliance center, in the navigation pane on the left side of the screen, choose **More resources**, and then, under **Office 365 Security & Compliance Center**, choose **Open**.
 
 ![More resources](../media/m365-compliance-center-more-resources.png)
 
