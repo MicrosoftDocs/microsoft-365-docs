@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough Spoof intelligence insight"
+title: "Walkthrough - Spoof intelligence insight"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,15 +19,13 @@ ms.collection:
 description: "See how the spoof intelligence insight works in Office 365 Advanced Threat Protection."
 ---
 
-# Walkthrough: Spoof intelligence insight in Office 365 ATP
-
-In Office 365 organizations with Exchange Online mailboxes, and in standalone Exchange Online Protection (EOP) without Exchange Online mailboxes, you can use spoof intelligence to monitor and manage senders you are sending you unauthenticated messages. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+# Walkthrough - ATP Spoof intelligence insight in Office 365
 
 In Office 365 organizations with Advanced Threat Protection (ATP), you can use the spoof intelligence insight to quickly determine which senders are legitimately sending you unauthenticated email. By permitting them to send spoofed messages, you can reduce the risk of any false positives going to your users. You can also use the spoof intelligence insight to monitor and manage permitted domain-pairs to provide an additional layer of security and prevent unsafe messages from arriving in your organization.
 
 If you're new to [reports and insights in the Office 365 Security & Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a dashboard to an insight and recommended actions.
 
-This is one of several walkthroughs for the Security & Compliance Center. To about navigating reports and insights, see the walkthroughs in the Related topics section.
+This walkthrough is one of several for the Security & Compliance Center. To about navigating reports and insights, see the walkthroughs in the Related topics section.
 
 ## What do you need to know before you begin?
 
@@ -35,9 +33,11 @@ This is one of several walkthroughs for the Security & Compliance Center. To abo
 
   You can view the spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly perform the same tasks.
 
-- You need to be assigned permissions before you can perform these procedures. To use the the spoof intelligence insight, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform these procedures. To use the spoof intelligence insight, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - You enable and disable spoof intelligence in ATP anti-phishing policies. For more information, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
+
+- In Office 365 organizations with Exchange Online mailboxes, and in standalone Exchange Online Protection (EOP) without Exchange Online mailboxes, you can use spoof intelligence to monitor and manage senders you are sending you unauthenticated messages. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
 
 ## Open the spoof intelligence insight in the Security & Compliance Center
 
@@ -91,7 +91,7 @@ You add or remove a domain from the AllowedToSpoof safe sender list while review
 
 This modifies the unique domain pair combination of the spoofed domain and the sending infrastructure and does not provide coverage for the entire spoofed domain or the sending infrastructure in isolation.
 
-For example, if you add the following domain pair to the 'AllowedToSpoof' sender allow list:  *Spoofed Domain*  "gmail.com" and  *Sending Infrastructure*  "tms  *.mx.com",*  then only mail from that domain pair will be allowed to spoof. Other senders attempting to spoof "gmail.com", and other domains that "tms.mx.com" attempt to spoof will continue to be protected by spoof intelligence.
+For example, if you add the following domain pair to the 'AllowedToSpoof' sender allow list:  *Spoofed Domain*  "gmail.com" and *Sending Infrastructure* "tms *.mx.com",* then only mail from that domain pair will be allowed to spoof. Other senders attempting to spoof "gmail.com", and other domains that "tms.mx.com" attempt to spoof will continue to be protected by spoof intelligence.
 
 ## Related topics
 

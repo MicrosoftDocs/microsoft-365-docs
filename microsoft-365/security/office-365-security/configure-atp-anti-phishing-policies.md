@@ -50,9 +50,9 @@ In Exchange Online PowerShell, the difference between anti-phish policies and an
 
 - When you remove an anti-phish policy from PowerShell, the corresponding anti-phish rule isn't automatically removed, and vice versa.
 
-### Default anti-phishing policy
+### Default ATP anti-phishing policy
 
-Every organization has a built-in anti-phishing policy named Office365 AntiPhish Default that has these properties:
+Every ATP organization has a built-in ATP anti-phishing policy named Office365 AntiPhish Default that has these properties:
 
 - The anti-phish policy named Office365 AntiPhish Default is applied to all recipients in the organization, even though there's no anti-phish rule (recipient filters) associated with the policy.
 
@@ -80,7 +80,7 @@ To increase the effectiveness of anti-phishing protection, you can create custom
 
 Creating a custom ATP anti-phishing policy in the Security & Compliance Center creates the anti-phish rule and the associated anti-phish policy at the same time using the same name for both.
 
-When you create an ATP anti-phishing policy, you can only specify the policy name, description and the recipient filter that identifies who the policy applies to. After you create the policy, you can modify the policy to change or review the default anti-phishing settings.
+When you create an ATP anti-phishing policy, you can only specify the policy name, description, and the recipient filter that identifies who the policy applies to. After you create the policy, you can modify the policy to change or review the default anti-phishing settings.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
 
@@ -280,9 +280,9 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
 8. Back on the **Edit your policy \<Name\>** page, review your settings and then click **Close**.
 
-### Use the Security & Compliance Center to modify the default anti-phishing policy
+### Use the Security & Compliance Center to modify the default ATP anti-phishing policy
 
-The default anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies. To modify the default anti-phishing policy, do the following steps:
+The default ATP anti-phishing policy is named Office365 AntiPhish Default, and it doesn't appear in the list of policies. To modify the default ATP anti-phishing policy, do the following steps:
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing**.
 

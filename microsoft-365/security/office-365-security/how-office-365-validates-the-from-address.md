@@ -25,7 +25,7 @@ Office 365 email accounts receive an increasingly large number of phishing attac
 
 **Notes**:
 
-- If you regularly receive email from organizations with legacy email systems that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.
+- If you regularly receive email from organizations that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.
 
 - The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
@@ -37,7 +37,7 @@ A standard SMTP email message consists of a *message envelope* and message conte
 
 - The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this topic.
 
-The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)). There are many variations on addressing and what's considered valid or invalid. To keep it simple, We recommend the following format and definitions:
+The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)). There are many variations on addressing and what's considered valid or invalid. To keep it simple, we recommend the following format and definitions:
 
 `From: "Display Name" <EmailAddress>`
 
@@ -50,7 +50,7 @@ The From address is defined in detail across several RFCs (for example, RFC 5322
 - **EmailAddress**: An email address uses the format `local-part@domain`:
 
   - **local-part**: A string that identifies the mailbox associated with the address. This value is unique within the domain. Often, the mailbox owner's username or GUID is used.
-  - **domain**: The fully-qualified domain name (FQDN) of the email server that hosts the mailbox identified by the local-part of the email address.
+  - **domain**: The fully qualified domain name (FQDN) of the email server that hosts the mailbox identified by the local-part of the email address.
 
   These are some additional considerations for the EmailAddress value:
 
@@ -80,7 +80,7 @@ The following From email addresses are invalid:
 
   `From: <>`
 
-  Now, message with a blank From address are no longer accepted.
+  Now, messages with a blank From address are no longer accepted.
 
 - `From: Office 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
 
