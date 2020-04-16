@@ -216,7 +216,7 @@ The computer you use to export data has to meet the following system requirement
     
 9. Click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Download results** at the top of the export flyout page. 
     
-10. In the pop-up window at the bottom of the page, click **Open** to open the **Microsoft Office 365 eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
+10. In the pop-up window at the bottom of the page, click **Open** to open the **eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
     
 11. In the **eDiscovery Export Tool**, paste the export key that you copied in step 8 in the appropriate box.
     
@@ -347,7 +347,7 @@ When you export data from the Office Roaming Service, the data is saved to a sep
     
 8. Click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Download results** at the top of the export flyout page. 
     
-9. In the pop-up window at the bottom of the page, click **Open** to open the **Microsoft Office 365 eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
+9. In the pop-up window at the bottom of the page, click **Open** to open the **eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
     
 10. In the **eDiscovery Export Tool**, paste the export key that you copied in step 7 in the appropriate box.
     

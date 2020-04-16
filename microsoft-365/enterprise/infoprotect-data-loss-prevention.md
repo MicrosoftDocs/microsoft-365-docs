@@ -1,5 +1,5 @@
 ---
-title: "Step 5: Configure Office 365 Data Loss Prevention"
+title: "Step 5: Configure Data Loss Prevention"
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,10 +14,10 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 ms.custom:
-description: Understand and deploy Office 365 Data Loss Prevention in Microsoft 365.
+description: Understand and deploy Data Loss Prevention in Microsoft 365.
 ---
 
-# Step 5: Configure Office 365 Data Loss Prevention
+# Step 5: Configure Data Loss Prevention
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 

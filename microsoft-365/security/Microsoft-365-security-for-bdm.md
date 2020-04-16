@@ -139,6 +139,6 @@ The following diagram illustrates these capabilities.
 ![Recommended capabilities for continuous monitoring and auditing](../media/m365-security-bdm-illustrations-monitoring-auditing.png)
 
 Top recommended monitoring actions:
-- **Review Microsoft Secure Score weekly** — Secure score is a central location to access the security status of your Office 365 tenant and to take actions based on top recommendations. It is recommended to perform this check weekly. Secure Score includes recommendations from across Azure AD, Intune, Cloud App Security, and Microsoft Defender Advanced Threat Protection, as well as Office 365. 
+- **Review Microsoft Secure Score weekly** — Secure score is a central location to access the security status of your tenant and to take actions based on top recommendations. It is recommended to perform this check weekly. Secure Score includes recommendations from across Azure AD, Intune, Cloud App Security, and Microsoft Defender Advanced Threat Protection, as well as Office 365. 
 - **Review risky logins weekly** — Use the Azure AD admin center to review risky sign-ins weekly. The recommended identity and device access ruleset includes a policy to enforce password change on risky sign-ins.  
 - **Review top malware and phished users weekly** — Use Office Advanced Threat Protection Threat Explorer to review top users targeted with malware and phish and to find out the root cause of why these users are affected.

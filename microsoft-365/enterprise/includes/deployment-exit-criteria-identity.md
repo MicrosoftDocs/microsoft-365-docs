@@ -17,7 +17,7 @@ Use these steps to verify that you've protected your global administrator accoun
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require Azure Multi-Factor Authentication and the strongest form of secondary authentication available in your organization.
+2. Sign in using each of the accounts from step 1. Each sign in must require Azure Multi-Factor Authentication and the strongest form of secondary authentication available in your organization.
 
 > [!Note]
 > See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.
@@ -66,11 +66,11 @@ If you skip this option, your users might be prompted to provide credentials whe
 If needed, [Step 2](../identity-secure-your-passwords.md#identity-sso) can help you with this option.
 
 <a name="crit-identity-custom-sign-in"></a>
-### Optional: The Office 365 sign-in screen is personalized for your organization
+### Optional: The sign-in screen is personalized for your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
+You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization’s branding to the sign-in page.
 
-If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
+If you skip this option, your users will see a generic sign-in screen and might not be confident that they’re signing into your organization’s site.
 
 If needed, [Step 2](../identity-secure-your-passwords.md#identity-custom-sign-in) can help you with this option.
 

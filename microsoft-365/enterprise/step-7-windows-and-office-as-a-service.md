@@ -88,7 +88,7 @@ Windows 10 offers three servicing channels:
 - **Semi-Annual Channel** provides new functionality with Feature Update releases twice per year
 - **Long Term Servicing Channel** is designed only for specialized devices needing a longer servicing option
 
-Office 365 offers four servicing channels:
+Microsoft 365 offers four servicing channels:
 
 - [**Office Insider Program**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
 - **Monthly Channel** to provide users with the newest Office features as soon as they're available

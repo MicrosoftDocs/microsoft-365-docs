@@ -29,7 +29,7 @@ Ensure that your configuration meets the following required criteria for Microso
 
     - Client device details
     - Deployment tools
-    - Office 365 licensing and accounts
+    - Microsoft 365 licensing and accounts
     - Network capability
     - Application compatibility
 
