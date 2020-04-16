@@ -56,7 +56,7 @@ Rather than upgrading your computers running Office 2007 with Office 2010, Offic
 2. Uninstalling Office 2007 on their computers.
 3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md).
 
-Microsoft 365 Apps for enterprise installs updates automatically and can take advantage of cloud-based services in Office 365 for enhanced security and productivity.
+Microsoft 365 Apps for enterprise installs updates automatically and can take advantage of cloud-based services for enhanced security and productivity.
 
 ### Office 2010
 

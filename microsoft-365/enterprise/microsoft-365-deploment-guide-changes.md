@@ -166,7 +166,7 @@ description: See the new content and changes to the content in the Microsoft 365
 ### New content 
 
 - [Identity and device access](identity-device-access-m365-test-environment.md) prerequisite Test Lab Guides
-- [Windows Information Protection](infoprotect-deploy-windows-information-protection.md) and [Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md) steps for [Phase 6: Information Protection](infoprotect-infrastructure.md)
+- [Windows Information Protection](infoprotect-deploy-windows-information-protection.md) and [Data Loss Prevention](infoprotect-data-loss-prevention.md) steps for [Phase 6: Information Protection](infoprotect-infrastructure.md)
 
 
 ## See also

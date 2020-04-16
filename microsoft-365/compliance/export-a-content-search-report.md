@@ -122,7 +122,7 @@ The next step is to download the report from the Azure Storage area to your loca
   
 3. Click **Download report**.
     
-4. If you're prompted to install the **MicrosoftOffice 365 eDiscovery Export Tool**, click **Install**.
+4. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
     
 5. In the **eDiscovery Export Tool**, paste the export key that you copied in step 2 in the appropriate box.
     

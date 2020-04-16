@@ -34,9 +34,9 @@ The elements of configuration for a team for highly regulated data are:
 - Additional security on the underlying SharePoint site for the team that:
   - Prevents members of the site from granting access to others.
   - Prevents non-members of the site from requesting access to the site.
-- An Office 365 retention label for the underlying SharePoint site that is automatically applied to new files on the site as a default way to define retention policies.
+- A retention label for the underlying SharePoint site that is automatically applied to new files on the site as a default way to define retention policies.
 - A Data Loss Prevention (DLP) policy that uses the retention label and blocks users from sharing or sending files outside the organization.
-- An Office 365 sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Microsoft 365 group of the team. Users apply the label or sublabel to files stored in **Files** section of the team from the **Sensitivity** menu bar option in Word, Excel, and PowerPoint.
+- A sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Microsoft 365 group of the team. Users apply the label or sublabel to files stored in **Files** section of the team from the **Sensitivity** menu bar option in Word, Excel, and PowerPoint.
 
 Here is the resulting configuration with a sensitivity label.
 

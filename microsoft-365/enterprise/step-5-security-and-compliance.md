@@ -34,7 +34,7 @@ description: Learn about the important Windows and Office security and complianc
 >Security and Compliance is the fifth step in our recommended deployment process wheel covering Windows 10 and Microsoft 365 Apps for enterprise security and compliance considerations. To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
-Now it's time to review options for targeting new security and compliance capabilities as part of your Windows 10 and Microsoft 365 Apps for enterprise deployment, along with the considerations and common blockers when moving from previous versions of Windows and Office. Many of the security-related capabilities in Windows 10 alone are driving the shift to the newer platform. Also, integration with cloud services in Office 365 and identity options using Azure Active Directory brings access to new and continually updated protections for your data, devices and users.
+Now it's time to review options for targeting new security and compliance capabilities as part of your Windows 10 and Microsoft 365 Apps for enterprise deployment, along with the considerations and common blockers when moving from previous versions of Windows and Office. Many of the security-related capabilities in Windows 10 alone are driving the shift to the newer platform. Also, integration with cloud services and identity options using Azure Active Directory brings access to new and continually updated protections for your data, devices and users.
 
 ## Overcoming Potential Security-Related Deployment Blockers
 
@@ -70,7 +70,7 @@ Now, those were considerations for moving your current protections forward and t
 
 ### Identity and Access Management
 
-Starting with identity and access management. Azure Active Directory is the identity control plane for apps, devices and Cloud services and is the modern way to connect to Office 365 and other Cloud services. Conditional access allows you to define different authentication requirements based on where you are logging in from, which device you're using, as well as things like anomalous behaviors.
+Starting with identity and access management. Azure Active Directory is the identity control plane for apps, devices and Cloud services and is the modern way to connect to Microsoft 365 and other Cloud services. Conditional access allows you to define different authentication requirements based on where you are logging in from, which device you're using, as well as things like anomalous behaviors.
 
 At the device level, biometrics can provide unique identifiers for simpler and more secure access to your devices and apps - as you move toward the goal of eliminating passwords. Windows Hello offers device-based, multi-factor authentication. It relies on the device itself, your PIN, or unique biometric identifier such as your face or fingerprint, which you can enforce via policy.
 

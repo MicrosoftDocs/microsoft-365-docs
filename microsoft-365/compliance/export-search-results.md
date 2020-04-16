@@ -155,7 +155,7 @@ As previously explained, you can increase the download speed by configuring a Wi
   
 3. Click **Download results**.
     
-4. If you're prompted to install the **MicrosoftOffice 365 eDiscovery Export Tool**, click **Install**.
+4. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
     
 5. In the **eDiscovery Export Tool**, paste the export key that you copied in step 2 in the appropriate box.
     

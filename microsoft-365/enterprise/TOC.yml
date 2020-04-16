@@ -19,7 +19,7 @@
               href: networking-avoid-network-hairpins.md
             - name: Step 4 - Configure traffic bypass
               href: networking-configure-proxies-firewalls.md
-            - name: Step 5 - Optimize client and Office 365 service performance
+            - name: Step 5 - Optimize client and service performance
               href: networking-optimize-tcp-performance.md
             - name: Networking exit criteria
               href: networking-exit-criteria.md
@@ -76,7 +76,7 @@
               href: infoprotect-configure-increased-security-office-365.md
             - name: Step 4 - Configure Windows Information Protection
               href: infoprotect-deploy-windows-information-protection.md
-            - name: Step 5 - Configure Office 365 Data Loss Prevention
+            - name: Step 5 - Configure Data Loss Prevention
               href: infoprotect-data-loss-prevention.md
             - name: Step 6 - Configure email encryption
               href: infoprotect-email-encryption.md

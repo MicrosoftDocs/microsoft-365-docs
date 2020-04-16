@@ -37,7 +37,7 @@ Make sure that the following requirements are met:
 
 #### Preview role permissions
 
-To perform certain actions, such as viewing message headers or downloading email message content, you must have a new role called *Preview* added to another appropriate Office 365 role group. The following table clarifies required roles and permissions.
+To perform certain actions, such as viewing message headers or downloading email message content, you must have a new role called *Preview* added to another appropriate role group. The following table clarifies required roles and permissions.
 
 |Activity  |Role group |Preview role needed?  |
 |---------|---------|---------|

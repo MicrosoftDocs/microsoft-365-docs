@@ -117,7 +117,7 @@ To demonstrate information protection-related features and capabilities, see:
   
 - [Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure and apply Office 365 labels to a document in a SharePoint Online team site.
+   Configure and apply labels to a document in a SharePoint Online team site.
     
 - [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     

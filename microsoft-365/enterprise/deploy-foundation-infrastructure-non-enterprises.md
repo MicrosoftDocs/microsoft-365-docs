@@ -424,7 +424,7 @@ After their onboarding, each employee should have:
    - LICENSED
    - The appropriate AD DS or Azure AD security groups, which are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups for Conditional Access policies 
    - The appropriate workgroup, departmental, and regional groups
-   - Sensitivity label Office 365  groups (as needed)
+   - Sensitivity label Microsoft 365 groups (as needed)
 - A Windows 10 Enterprise device that:
    - Is joined to the Azure AD tenant (cloud-only) or to both the Azure AD tenant and your AD DS domain (hybrid).
    - Automatically updates itself with the latest Windows 10 Enterprise product improvements and security enhancements.

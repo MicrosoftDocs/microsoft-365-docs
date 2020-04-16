@@ -61,7 +61,7 @@ An eDiscovery or content search may yield the following error:
 
 If you receive this error, we recommend that you verify the locations that failed in the search  then rerun the search only on the failed locations.
 
-1. Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
+1. Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command:
 
     ```powershell
     Get-ComplianceSearch <searchname> | FL 
@@ -158,7 +158,7 @@ eDiscovery Case Hold Policy Sync Distribution error. The error reads:
 
 ### Resolution
 
-1.    Connect to [Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
+1.    Connect to [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) and then run the following command for an eDiscovery case hold:
 
     ```powershell
     Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
