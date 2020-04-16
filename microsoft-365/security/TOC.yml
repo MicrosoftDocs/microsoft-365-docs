@@ -303,7 +303,7 @@
               href: ./office-365-security/anti-spoofing-protection.md
               items: 
                 - name: Anti-spoofing protection FAQ
-                  href: ./office-365-security/anti-spoofing-faq.md
+                  href: ./office-365-security/anti-spoofing-protection-faq.md
                 - name: Configure spoof intelligence
                   href: ./office-365-security/learn-about-spoof-intelligence.md
                 - name: Walkthrough - ATP Spoof intelligence insight
@@ -320,7 +320,7 @@
                 - name: End-user spam notifications
                   href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
             - name: Email authentication
-            - href: ./office-365-security/email-validation-and-authentication.md
+              href: ./office-365-security/email-validation-and-authentication.md
               items: 
                 - name: How Office 365 uses SPF to prevent spoofing
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md

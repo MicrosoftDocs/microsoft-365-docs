@@ -1,11 +1,10 @@
 ---
-title: "Anti-spam protection FAQ
+title: "Anti-spam protection FAQ"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
-ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
