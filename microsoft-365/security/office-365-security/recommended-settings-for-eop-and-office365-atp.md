@@ -40,7 +40,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
 |**Spam** detection action <br/><br/> _SpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
 |**High confidence spam** detection action <br/><br/> _HighConfidenceSpamAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
@@ -64,7 +64,7 @@ There are several other Advanced Spam Filter (ASF) settings in anti-spam policie
 
 We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
-|**Security feature name**|**Comments**|
+| Security feature name | Comments |
 |----|---|
 |**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
 |**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
@@ -86,7 +86,7 @@ We recommend that you turn these ASF settings **Off** for both **Standard** and 
 
 To create and configure outbound spam policies, see [Configure outbound spam filtering in Office 365](configure-the-outbound-spam-policy.md).
 
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
 |**Maximum number of recipients per user: External hourly limit** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**Maximum number of recipients per user: Internal hourly limit** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
@@ -97,7 +97,7 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 
 To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
 |**Do you want to notify recipients if their messages are quarantined?** <br/><br/> _Action_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
 |**Common Attachment Types Filter** <br/><br/> _EnableFileFilter_|On <br/><br/> `$true`|On <br/><br/> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
@@ -109,7 +109,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 You can only configure these settings in Office 365 organizations with Exchange Online mailboxes. To configure these settings, see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
 
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).|
@@ -153,7 +153,7 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 
 #### Impersonation settings in ATP anti-phishing policies
 
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
 |Protected users: **Add users to protect** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|On <br/><br/> `$true` <br/><br/> \<list of users\>|On <br/><br/> `$true` <br/><br/> \<list of users\>|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
 |Protected domains: **Automatically include the domains I own** <br/><br/> _EnableOrganizationDomainsProtection_|On <br/><br/> `$true`|On <br/><br/> `$true`||
@@ -173,7 +173,7 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 
 Note that these are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
 
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).|
@@ -181,7 +181,7 @@ Note that these are the same settings that are available in [anti-spam policy se
 
 #### Advanced settings in ATP anti-phishing policies
 
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
 |**Advanced phishing thresholds** <br/><br/> _PhishThresholdLevel_|**2 - Aggressive** <br/><br/> `2`|**3 - More aggressive** <br/><br/> `3`||
 
