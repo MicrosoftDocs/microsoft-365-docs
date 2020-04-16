@@ -54,7 +54,7 @@ To meet these criteria for remote workers, use the following Microsoft 365 Enter
 - Secure access to resources
   - Groups and permissions for Teams, SharePoint sites, and OneDrive so that only authenticated and permitted users have access
 - Protection for leaked files
-  - Office 365 DLP policies
+  - DLP policies
   - Sensitivity labels for encryption and permissions that travel with files
 - Device management and security with Microsoft Intune
   - Enrollment for managed devices
@@ -123,8 +123,8 @@ Here's the resulting configuration with Intune enrolled devices and policies hig
  
 For [Phase 6: Information protection](infoprotect-infrastructure.md), design and configure protection for your digital assets with:
 
-- Office 365 DLP policies.
-- Office 365 sensitivity labels for encryption and permissions that travel with files.
+- DLP policies.
+- Microsoft 365 sensitivity labels for encryption and permissions that travel with files.
 
 Here's the resulting configuration with DLP policies and sensitivity labels highlighted.
 

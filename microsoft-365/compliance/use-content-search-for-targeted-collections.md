@@ -214,7 +214,7 @@ After you've run the script to collect a list of folder IDs or documentlinks for
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using the account and credentials that you used to run the script in Step 1.
+2. Sign in using the account and credentials that you used to run the script in Step 1.
     
 3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**, and then click **New** ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif).
     

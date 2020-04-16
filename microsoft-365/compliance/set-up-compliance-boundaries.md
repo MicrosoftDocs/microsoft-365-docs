@@ -78,7 +78,7 @@ Include the following information when you submit the request to Microsoft suppo
     
 - The name of the Azure Active Directory attribute (from Step 1)
     
-- The following title or description of the purpose of the support request: "Enable OneDrive for Business Synchronization with Azure Active Directory for Compliance Security Filters". This helps route the request to the Office 365 eDiscovery engineering team who implements the request.
+- The following title or description of the purpose of the support request: "Enable OneDrive for Business Synchronization with Azure Active Directory for Compliance Security Filters". This helps route the request to the eDiscovery engineering team who implements the request.
     
 After the engineering change is made and the attribute is synchronized to OneDrive, Microsoft Support will send you the build number that the change was made in and an estimated deployment date. The deployment process usually takes 4–6 weeks after you submit the support request.
   
@@ -236,7 +236,7 @@ Keep the following things in mind when searching and exporting content in multi-
     
 - When searching for content in SharePoint and OneDrive, the **Region** parameter directs searches to either the main or satellite location where the eDiscovery manager will conduct eDiscovery investigations. If an eDiscovery manager searches SharePoint and OneDrive sites outside of the region that's specified in the search permissions filter, no search results are returned. 
     
-- When exporting search results, content from all content locations (including Exchange, Skype for Business, SharePoint, OneDrive, and other Office 365 services that you can search by using the Content Search tool) are uploaded to the Azure Storage location in the datacenter that's specified by the **Region** parameter. This helps organizations stay within compliance by not allowing content to be exported across controlled borders. If no region is specified in the search permissions filter, content is uploaded to the organization's default region. 
+- When exporting search results, content from all content locations (including Exchange, Skype for Business, SharePoint, OneDrive, and other services that you can search by using the Content Search tool) are uploaded to the Azure Storage location in the datacenter that's specified by the **Region** parameter. This helps organizations stay within compliance by not allowing content to be exported across controlled borders. If no region is specified in the search permissions filter, content is uploaded to the organization's default region. 
     
 - You can edit an existing search permissions filter to add or change the region by running the following command:
 
@@ -262,7 +262,7 @@ It takes up to three days for a search permissions filter to enforce the complia
   
 Yes. This can be done by adding the user to role groups that have visibility to both agencies.
   
- **Do search permissions filters work for eDiscovery case holds, Office 365 retention policies, or DLP?**
+ **Do search permissions filters work for eDiscovery case holds, Microsoft 365 retention policies, or DLP?**
   
 No, not at this time.
   

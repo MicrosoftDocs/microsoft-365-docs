@@ -17,17 +17,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
-description: "For administrators: Learn how to bulk-import your organization's PST files to Office 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
+description: "For administrators: Learn how to bulk-import your organization's PST files to Microsoft 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
 "
 ---
 
-# Use drive shipping to import your organization's PST files to Office 365
+# Use drive shipping to import your organization's PST files
 
 **This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
 Use the Office 365 Import service and drive shipping to bulk-import PST files to user mailboxes. Drive shipping means that you copy the PST files to a hard disk drive and then physically ship the drive to Microsoft. When Microsoft receives your hard drive, data center personnel copies the data from the hard drive to a storage area in the Microsoft cloud. Then you have the opportunity to trim the PST data that's imported to the target mailboxes by setting filters that control what data gets imported. After you start the import job, the Import service imports the PST data from the storage area to user mailboxes. Using drive shipping to import PST files to user mailboxes is one way to migrate your organization's email to Office 365.
   
-Here are the steps required to use drive shipping to import PST files to Office 365 mailboxes:
+Here are the steps required to use drive shipping to import PST files to Microsoft 365 mailboxes:
   
 [Step 1: Download the secure storage key and PST Import tool](#step-1-download-the-secure-storage-key-and-pst-import-tool)
 
@@ -48,7 +48,7 @@ For frequently asked questions about using drive shipping to import PST files to
   
 ## Before you begin
 
-- You have to be assigned the Mailbox Import Export role in Exchange Online to import PST files to Office 365 mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+- You have to be assigned the Mailbox Import Export role in Exchange Online to import PST files to Microsoft 365 mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
     Additionally, to create import jobs in the Security & Compliance Center, one of the following must be true:
     
@@ -74,7 +74,7 @@ For frequently asked questions about using drive shipping to import PST files to
     
 - Drive shipping is available through a Microsoft Enterprise Agreement (EA). Drive shipping isn't available through a Microsoft Products and Services Agreement (MPSA).
     
-- The cost to import PST files to Office 365 mailboxes using drive shipping is $2 USD per GB of data. For example, if you ship a hard drive that contains 1,000 GB (1 TB) of PST files, the cost is $2,000 USD. You can work with a partner to pay the import fee. For information about finding a partner, see [Find your Office 365 partner or reseller](https://go.microsoft.com/fwlink/p/?LinkId=785197).
+- The cost to import PST files to Microsoft 365 mailboxes using drive shipping is $2 USD per GB of data. For example, if you ship a hard drive that contains 1,000 GB (1 TB) of PST files, the cost is $2,000 USD. You can work with a partner to pay the import fee. For information about finding a partner, see [Find your Microsoft partner or reseller](https://go.microsoft.com/fwlink/p/?LinkId=785197).
     
 - You or your organization must have an account with FedEx or DHL.
     
@@ -88,9 +88,9 @@ For frequently asked questions about using drive shipping to import PST files to
     
 - This procedure involves copying and saving a secure storage key and a BitLocker encryption key. Be sure to take precautions to protect these keys like you would protect passwords or other security-related information. For example, you might save them to a password-protected Microsoft Word document or save them to an encrypted USB drive. See the [More information](#more-information) section for an example of these keys. 
     
-- After PST files are imported to an Office 365 mailbox, the retention hold setting for the mailbox is turned on for an indefinite duration. This means that the retention policy assigned to the mailbox won't be processed until you turn off the retention hold or set a date to turn off the hold. Why do we do this? If messages imported to a mailbox are old, they might be permanently deleted (purged) because their retention period has expired based on the retention settings configured for the mailbox. Placing the mailbox on retention hold gives the mailbox owner time to manage these newly imported messages or give you time to change the retention settings for the mailbox. See the [More information](#more-information) section for suggestions about managing the retention hold. 
+- After PST files are imported to a Microsoft 365 mailbox, the retention hold setting for the mailbox is turned on for an indefinite duration. This means that the retention policy assigned to the mailbox won't be processed until you turn off the retention hold or set a date to turn off the hold. Why do we do this? If messages imported to a mailbox are old, they might be permanently deleted (purged) because their retention period has expired based on the retention settings configured for the mailbox. Placing the mailbox on retention hold gives the mailbox owner time to manage these newly imported messages or give you time to change the retention settings for the mailbox. See the [More information](#more-information) section for suggestions about managing the retention hold. 
     
-- By default, the maximum message size that can be received by an Office 365 mailbox is 35 MB. That's because the default value for the  *MaxReceiveSize*  property for a mailbox is set to 35 MB. However, the limit for the maximum message receive size in Office 365 is 150 MB. So if you import a PST file that contains an item larger than 35 MB, the Office 365 Import service we will automatically change the value of the  *MaxReceiveSize*  property on the target mailbox to 150 MB. This allows messages up to 150 MB to be imported to user mailboxes. 
+- By default, the maximum message size that can be received by a Microsoft 365 mailbox is 35 MB. That's because the default value for the  *MaxReceiveSize*  property for a mailbox is set to 35 MB. However, the limit for the maximum message receive size in Microsoft 365 is 150 MB. So if you import a PST file that contains an item larger than 35 MB, the Office 365 Import service we will automatically change the value of the  *MaxReceiveSize*  property on the target mailbox to 150 MB. This allows messages up to 150 MB to be imported to user mailboxes. 
     
     > [!TIP]
     > To identify the message receive size for a mailbox, you can run this command in Exchange Online PowerShell:  `Get-Mailbox <user mailbox> | FL MaxReceiveSize`. 
@@ -230,7 +230,7 @@ After Microsoft data center personnel upload the PST files from the hard drive t
     
     |**Parameter**|**Description**|**Example**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |Specifies the Office 365 service that data will be imported to. To import PST files to user mailboxes, use  `Exchange`.  <br/> | `Exchange` <br/> |
+    | `Workload` <br/> |Specifies the service that data will be imported to. To import PST files to user mailboxes, use  `Exchange`.  <br/> | `Exchange` <br/> |
     | `FilePath` <br/> | Specifies the folder location in the Azure Storage area that PST files will be copied to when the hard drive is shipped to Microsoft.  <br/>  What you add in this column in the CSV file depends on what you specified in for the  `/dstdir:` parameter in the previous step. If you have subfolders on the source location, then the value in the `FilePath` parameter must contain the relative path for the subfolder; for example, /folder1/user1/.  <br/>  If you used  `/dstdir:"ingestiondata/"`, then leave this parameter blank in the CSV file.  <br/>  If you included an optional pathname for the value of the  `/dstdir:` parameter (for example,  `/dstdir:"ingestiondata/FILESERVER01/PSTs"`, then use that pathname (not including "ingestiondata") for this parameter in the CSV file. The value for this parameter is case-sensitive.  <br/>  Either way,  *don't*  include "ingestiondata" in the value for the  `FilePath` parameter. Leave this parameter blank or specify only the optional pathname.  <br/> > [!IMPORTANT]>  The case for the file path name must be the same case that you specified in the  `/dstdir:` parameter in the previous step. For example, if you used  `"ingestiondata/FILESERVER01/PSTs"` for the subfolder name in the previous step, but then used  `fileserver01/psts` in the  `FilePath` parameter in CSV file, the import for the PST file will fail. Be sure to use the same case in both instances.           |(leave blank)  <br/> Or  <br/>  `FILESERVER01/PSTs` <br/> |
     | `Name` <br/> |Specifies the name of the PST file that will be imported to the user mailbox. The value for this parameter is case-sensitive.  <br/> > [!IMPORTANT]> The case for the PST file name in the CSV file must be the same as the PST file that was uploaded to the Azure Storage location in Step 2. For example, if you use  `annb.pst` in the  `Name` parameter in the CSV file, but the name of the actual PST file is  `AnnB.pst`, the import for that PST file will fail. Be sure that the name of the PST in the CSV file uses the same case as the actual PST file.           | `annb.pst` <br/> |
     | `Mailbox` <br/> |Specifies the email address of the mailbox that the PST file will be imported to. You can't specify a public folder because the PST Import Service doesn't support importing PST files to public folders.  <br/> To import a PST file to an inactive mailbox, you have to specify the mailbox GUID for this parameter. To obtain this GUID, run the following PowerShell command in Exchange Online:  `Get-Mailbox <identity of inactive mailbox> -InactiveMailboxOnly | FL Guid` <br/> > [!NOTE]> Sometimes, you may have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have to specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox <identity of active mailbox> | FL Guid`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command:  `Get-Mailbox <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`.           | `annb@contoso.onmicrosoft.com` <br/> Or  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
@@ -298,7 +298,7 @@ The next step is to create the PST Import job in the Import service in Office 36
     
 14. On the **Provide contact information** page, type your contact information in the applicable boxes. 
     
-    The address for the Microsoft location that you ship your hard drives to is displayed. This address is auto-generated based on your Office 365 data center location. Copy this address to a file or take a screenshot.
+    The address for the Microsoft location that you ship your hard drives to is displayed. This address is auto-generated based on your Microsoft datacenter location. Copy this address to a file or take a screenshot.
     
 15. Read the terms and conditions document, click the checkbox, and then click **Save** to submit the import job. 
     
@@ -355,7 +355,7 @@ After you've shipped the hard drive to Microsoft, complete the following procedu
 
 After your hard drive is received by Microsoft, the status for the import job on the **Import PST files** page will change to **Drives received**. Data center personnel use the information in the journal file to upload your PST files to the Azure Storage area for your organization. At this point, the status changes to **Import in-progress**. As previously stated, it will take between 7 and 10 business days after receiving your hard drive to upload the PST files.
   
-After PST files are uploaded to Azure, the status is changed to **Analysis in progress**. This indicates that Office 365 is analyzing the data in the PST files (in a safe and secure manner) to identify the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, the status for the import job is changed to **Analysis completed**. At this point, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
+After PST files are uploaded to Azure, the status is changed to **Analysis in progress**. This indicates that Microsoft 365 is analyzing the data in the PST files (in a safe and secure manner) to identify the age of the items and the different message types included in the PST files. When the analysis is completed and the data is ready to import, the status for the import job is changed to **Analysis completed**. At this point, you have the option to import all the data contained in the PST files or you can trim the data that's imported by setting filters that control what data gets imported.
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in using the credentials for an administrator account in your organization. 
     
@@ -363,7 +363,7 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
     
 3. On the **Import PST files** page, click **Ready to import to Office 365** for the import job that you created in Step 4. 
     
-    ![Click Ready to import to Office 365 next to the import job you created](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+    ![Click Ready to import to Microsoft 365 next to the import job you created](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
     A fly out page is displayed with information about the PST files and other information about the import job.
     
@@ -387,13 +387,13 @@ After PST files are uploaded to Azure, the status is changed to **Analysis in pr
     
     The status of the import job is displayed on the **Import PST files** page. Click ![Refresh icon](../media/O365-MDM-Policy-RefreshIcon.gif) **Refresh** to update the status information that's displayed in the **Status** column. Click the import job to display the status flyout page, which displays status information about each PST file being imported. When the import is complete and PST files have been imported to user mailboxes, the status will be changed to **Completed**.
 
-## View a list of the PST files uploaded to Office 365
+## View a list of the PST files uploaded to Microsoft 365
 
 You can install and use the Microsoft Azure Storage Explorer (which is a free, open-source tool) to view the list of the PST files that we're uploaded (by Microsoft data center personnel) to the Azure Storage area for your organization. You can do this to verify that PST files from the hard drives that you sent to Microsoft were successfully uploaded to the Azure Storage area.
   
 The Microsoft Azure Storage Explorer is in Preview.
   
- **Important:** You can't use the Azure Storage Explorer to upload or modify PST files. The only supported method for importing PST files to Office 365 is to use AzCopy. Also, you can't delete PST files that you've uploaded to the Azure blob. If you try to delete a PST file, you receive an error about not having the required permissions. All PST files are automatically deleted from your Azure Storage area. If there are no import jobs in progress, then all PST files in the ** ingestiondata ** container are deleted 30 days after the most recent import job was created. 
+ **Important:** You can't use the Azure Storage Explorer to upload or modify PST files. The only supported method for importing PST files to Microsoft 365 is to use AzCopy. Also, you can't delete PST files that you've uploaded to the Azure blob. If you try to delete a PST file, you receive an error about not having the required permissions. All PST files are automatically deleted from your Azure Storage area. If there are no import jobs in progress, then all PST files in the ** ingestiondata ** container are deleted 30 days after the most recent import job was created. 
   
 To install the Azure Storage Explorer and connect to your Azure Storage area:
   
@@ -447,7 +447,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
   
 ## More information
 
-- Drive shipping is an effective way to import large amounts of archival messaging data to Office 365 to take advantage of the compliance features that are available to your organization. After archival data is imported to user mailboxes, you can:
+- Drive shipping is an effective way to import large amounts of archival messaging data to Microsoft 365 to take advantage of the compliance features that are available to your organization. After archival data is imported to user mailboxes, you can:
     
   - Enable [archive mailboxes](enable-archive-mailboxes.md) and [auto-expanding archiving](enable-unlimited-archiving.md) to give users more mailbox storage space for the data. 
     
@@ -455,7 +455,7 @@ To install the Azure Storage Explorer and connect to your Azure Storage area:
     
   - Use Microsoft [eDiscovery tools](search-for-content.md) to search the data. 
     
-  - Apply [Office 365 retention policies](retention-policies.md) to control how long the data is retained, and what action to take after the retention period expires. 
+  - Apply [Microsoft 365 retention policies](retention-policies.md) to control how long the data is retained, and what action to take after the retention period expires. 
     
   - Search the [audit log](search-the-audit-log-in-security-and-compliance.md) for events related to this data. 
     

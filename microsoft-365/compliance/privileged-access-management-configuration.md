@@ -21,7 +21,7 @@ description: "Use this topic to learn more about configuring privileged access m
 
 # Get started with privileged access management
 
-This topic guides you through enabling and configuring privileged access management in your Office 365 organization. You can use either the Microsoft 365 Admin Center or Exchange Management PowerShell to manage and use privileged access.
+This topic guides you through enabling and configuring privileged access management in your organization. You can use either the Microsoft 365 admin center or Exchange Management PowerShell to manage and use privileged access.
 
 ## Before you begin
 
@@ -72,7 +72,7 @@ After approval is granted, the requesting user can execute the intended task and
 
 ## Step 1: Create an approver's group
 
-1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.
+1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
 2. In the Admin Center, go to **Groups** > **Add a group**.
 

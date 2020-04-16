@@ -29,7 +29,7 @@ Follow the steps below to ensure that the new OME capabilities are available in 
 
 The new OME capabilities leverage the protection features in [Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), the technology used by [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) to protect emails and documents via encryption and access controls.
 
-The only prerequisite for using the new OME capabilities is that [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) must be activated in your organization's tenant. If it is, Office 365 activates the new OME capabilities automatically and you don't need to do anything.
+The only prerequisite for using the new OME capabilities is that [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) must be activated in your organization's tenant. If it is, Microsoft 365 activates the new OME capabilities automatically and you don't need to do anything.
 
 Azure RMS is also activated automatically for most eligible plans, so you probably don't have to do anything in this regard either. See [Activating Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service) for more information.
 
@@ -56,9 +56,9 @@ There are many reasons, for example compliance requirements, that may necessitat
 
 ## Verify new OME configuration in Exchange Online PowerShell
 
-You can verify that your Office 365 tenant is properly configured to use the new OME capabilities in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
+You can verify that your Microsoft 365 tenant is properly configured to use the new OME capabilities in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
   
-1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) using an account with global administrator permissions in your Office 365 tenant.
+1. [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) using an account with global administrator permissions in your Microsoft 365 tenant.
 
 2. Run the Get-IRMConfiguration cmdlet.
 
@@ -76,7 +76,7 @@ You can verify that your Office 365 tenant is properly configured to use the new
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
 
-     - Providing a sender email is optional, but forces the system to perform additional checks. Use the email address of any user in your Office 365 tenant.
+     - Providing a sender email is optional, but forces the system to perform additional checks. Use the email address of any user in your Microsoft 365 tenant.
 
      Your results should be similar to:
 

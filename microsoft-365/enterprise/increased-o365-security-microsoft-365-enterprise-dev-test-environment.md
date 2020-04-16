@@ -38,7 +38,7 @@ If you want to configure increased Microsoft 365 security in a simulated enterpr
 
 ## Phase 2: Configure increased Microsoft 365 security
 
-In this phase, you enable increased Microsoft 365 security for your Microsoft 365 Enterprise test environment. For additional details and settings, see [Configure your Office 365 tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+In this phase, you enable increased Microsoft 365 security for your Microsoft 365 Enterprise test environment. For additional details and settings, see [Configure your tenant for increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 ### Configure SharePoint Online to block apps that don't support modern authentication
 

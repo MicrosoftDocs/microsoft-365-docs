@@ -100,7 +100,7 @@ conceptualContent:
           text: Apps with Intune
         - url: https://docs.microsoft.com/office365/
           itemType: get-started
-          text: Office 365 services
+          text: Microsoft 365 services
 
 # additionalContent section (optional)
 # Card with summary style

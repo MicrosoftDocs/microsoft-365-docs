@@ -45,18 +45,18 @@ For the configuration details, see [SharePoint settings for a highly regulated t
 
 ## Step 2: Configured a DLP policy and the underlying site for a retention label 
 
-First, Contoso admins applied the existing **Highly Confidential** Office 365 retention label to the **Documents** section of the underlying SharePoint site of the Project 2X team.
+First, Contoso admins applied the existing **Highly Confidential** retention label to the **Documents** section of the underlying SharePoint site of the Project 2X team.
 
-Next, they created a new Office 365 DLP policy named **Project 2X** that:
+Next, they created a new DLP policy named **Project 2X** that:
 
-- Uses the Highly Confidential Office 365 retention label.
+- Uses the Highly Confidential retention label.
 - Blocks users when they attempt to share a file in the Project 2X team outside of Contoso.
 
 For the configuration details, see [Protect files in teams with retention labels and DLP](https://docs.microsoft.com/microsoft-365/security/office-365-security/deploy-teams-retention-dlp).
 
-## Step 3: Created an Office 365 sensitivity label for the Project 2X team
+## Step 3: Created a sensitivity label for the Project 2X team
 
-Contoso admins created a new Office 365 sensitivity label named **Project 2X** that:
+Contoso admins created a new sensitivity label named **Project 2X** that:
 
 - Requires encryption.
 - Allows Co-Author permissions for the Project 2X Microsoft 365 group.

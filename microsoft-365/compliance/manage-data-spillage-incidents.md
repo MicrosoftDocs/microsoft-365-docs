@@ -25,7 +25,7 @@ Data spillage is when a document containing confidential, sensitive, or maliciou
 
 ## Scope of this article
 
-This article provides a list of instructions on how to permanently delete items from Office 365 mailboxes so they are no longer accessible or recoverable by users or admins. 
+This article provides a list of instructions on how to permanently delete items from Microsoft 365 mailboxes so they are no longer accessible or recoverable by users or admins. 
 
 > [!NOTE]
 > When you delete items located in a SharePoint or OneDrive for Business site, they are retained for 93 days from the time you delete them from their original location.
@@ -64,7 +64,7 @@ To create an investigation in the Data Investigations (Preview) tool:
 
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using an account that is a member of the Data Investigator role group.
+2. Sign in using an account that is a member of the Data Investigator role group.
     
 3. In the security and compliance center, click **Data Investigations**.
  

@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: "Learn how to prepare the results of a Content Search in the Security & Compliance Center in Office 365 for further analysis with the Advanced eDiscovery tool."
+description: "Learn how to prepare the results of a Content Search in the Security & Compliance Center for further analysis with the Advanced eDiscovery tool."
 ---
 
 # Prepare search results for Advanced eDiscovery (classic)
@@ -42,7 +42,7 @@ After a search that's associated with an eDiscovery case in the Security & Compl
     
 - **Predictive coding** - Lets you train the system on what you're looking for, by allowing you to make decisions (about whether something is relevant or not) on a small set of documents. Advanced eDiscovery then applies that learning (based on your guidance) when analyzing all of the documents in the data set. Based on that learning, Advanced eDiscovery provides a relevance ranking so you can decide which documents to review based on what document are the most likely to be relevant to the case. 
     
-- **Exporting data for review applications**  - You can export data from Advanced eDiscovery and Office 365 after you've completed your analysis and reduced the data set. The export package includes a CSV file that contains the properties from the exported content and analytics metadata. This export package can then be imported to an eDiscovery review application. 
+- **Exporting data for review applications**  - You can export data from Advanced eDiscovery and Microsoft 365 after you've completed your analysis and reduced the data set. The export package includes a CSV file that contains the properties from the exported content and analytics metadata. This export package can then be imported to an eDiscovery review application. 
     
 ## Before you begin
 

@@ -33,7 +33,7 @@ Before this preview, when you applied sensitivity labels that included encryptio
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto labeling when you edit these documents.
 
-- Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
+- eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
 
 - Three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied using Office on the web:
   - **Applied sensitivity label to file**
@@ -123,7 +123,7 @@ Before you enable the preview, ensure that you're running SharePoint Online Mana
 
 To enable the preview, use the Set-SPOTenant cmdlet:
 
-1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Using a work or school account that has global administrator or SharePoint admin privileges, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
     Note: If you have Office 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 

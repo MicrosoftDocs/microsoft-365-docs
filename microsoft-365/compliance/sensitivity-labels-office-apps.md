@@ -158,9 +158,9 @@ Otherwise:
 
 To use the Office built-in labeling client with Office on the web for documents in OneDrive for Business or SharePoint Online, make sure you've opted-in to the preview to [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## When Office 365 applies content marking and encryption
+## When Microsoft 365 applies content marking and encryption
 
-Office 365 applies content marking and encryption with a sensitivity label differently, depending on the app you use.
+Microsoft 365 applies content marking and encryption with a sensitivity label differently, depending on the app you use.
 
 | App | Content marking | Encryption |
 | --- | --- | --- |
