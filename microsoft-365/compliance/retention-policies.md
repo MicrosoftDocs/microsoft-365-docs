@@ -257,13 +257,17 @@ Like an org-wide policy, if a policy applies to any combination of entire locati
 
 You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
   
-However, note that the following limits exist for a retention policy that includes or excludes over 1,000 specific locations:
+However, note that the following limits exist when you configure a retention policy that includes or excludes over 1,000 specific locations:
   
-- Such a retention policy can contain no more than 1,000 mailboxes and 100 site collections.
-    
+- Maximum numbers for the retention policy:
+    - 1,000 mailboxes
+    - 1,000 Office 365 groups
+    - 1,000 users for Teams private chats
+    - 100 sites (OneDrive or SharePoint)
+
 - A tenant can contain no more than 10,000 retention policies.
     
-Although these limits exist, understand that you can get over these limits by applying either an org-wide policy or a policy that applies to entire locations.
+Although these limits exist, you can avoid them by applying either an org-wide policy or a policy that applies to entire locations.
   
 ### Skype locations
 

@@ -11,7 +11,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: "Admins can learn to identify the reasons why and how a phishing messages got through, and what to do to prevent more phishing messages in the future."
+description: "Admins can learn to identify the reasons why and how a phishing message got through, and what to do to prevent more phishing messages in the future."
 ---
 
 # Tune anti-phishing protection in Office 365
@@ -28,7 +28,7 @@ If your subscription includes Advanced Threat Protection (ATP), you can use [Off
 
 - [ATP Safe Attachments](set-up-atp-safe-attachments-policies.md)
 
-- [ATP anti-phishing policies](set-up-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
+- [ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md). Note that you can temporarily increase the **Advanced phishing thresholds** in the policy from **Standard** to **Aggressive**, **More aggressive**, or **Most aggressive**.
 
 Verify these ATP features are turned on.
 
@@ -40,17 +40,17 @@ Reporting phishing messages is helpful in tuning the filters that are used to pr
 
 You can examine the headers of the phishing message to see if there's anything that you can do yourself to prevent more phishing messages from coming through. In other words, examining the messages headers can help you identify any settings in your organization that were responsible for allowing the phishing messages in.
 
-Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped spam or phish filtering in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phish verdicts that were determined by the service. For more details on how to get message headers and the complete list of all available anti-spam and anti-phish message headers, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
+Specifically, you should check the **X-Forefront-Antispam-Report** header field in the message headers for indications of skipped spam or phish filtering in the Spam Filtering Verdict (SFV) value. Messages that skip filtering will have an entry of `SCL:-1`, which means one of your settings allowed this message through by overriding the spam or phish verdicts that were determined by the service. For more information on how to get message headers and the complete list of all available anti-spam and anti-phish message headers, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
 
 ## Best practices to stay protected
 
 - On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your Office 365 organization's security settings.
 
-- Periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md) and [enable anti-spoofing protection in the anti-phishing policy](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) to **quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
+- Periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md) and [configure spoof intelligence](set-up-anti-phishing-policies.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
 - Periodically review the [Threat Protection Status report](view-reports-for-atp.md#threat-protection-status-report).
 
-- Some customers inadvertently allow phishing messages through by putting their own domains in the Allow sender or Allow domain list in anti-spam policies. If you choose to do this, you must use extreme caution. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the Office 365 spam and/or phish filters.
+- Some customers inadvertently allow phishing messages through by putting their own domains in the Allowed sender or Allowed domain lists in anti-spam policies. If you choose to do this, you must use extreme caution. Although this configuration will allow some legitimate messages through, it will also allow malicious messages that would normally be blocked by the Office 365 spam and/or phish filters.
 
   The best way to deal with legitimate messages that are blocked by Office 365 (false positives) that involve senders in your domain is to fully and completely configure the SPF, DKIM, and DMARC records in DNS for _all_ of your email domains in Office 365:
 
@@ -68,6 +68,6 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - Whenever possible, we recommend that you deliver email for your domain directly to Office 365. In other words, point your Office 365 domain's MX record to Office 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Office 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- Multi factor authentication (MFA) is a really good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+- Multi factor authentication (MFA) is a good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 - Forwarding rules to external recipients are often used by attackers to extract data. Use the **Review mailbox forwarding rules** information in [Microsoft Secure Score](../mtp/microsoft-secure-score.md) to find and even prevent forwarding rules to external recipients. For more information, see [Mitigating Client External Forwarding Rules with Secure Score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
