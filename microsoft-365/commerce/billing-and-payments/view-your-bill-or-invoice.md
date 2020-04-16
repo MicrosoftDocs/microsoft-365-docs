@@ -57,6 +57,12 @@ If you found this video helpful, check out the [complete training series for sma
 
 ::: moniker-end
 
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.
+
+::: moniker-end
+
 2. Select a date range from the drop-down list, and then choose the order you want to view.
 
 3. On the summary page, you can see the following:

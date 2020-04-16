@@ -44,7 +44,7 @@ ms.custom: okr_smb
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
 
 ::: moniker-end
     
@@ -76,7 +76,7 @@ ms.custom: okr_smb
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Setup** <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
+1. In the admin center, go to the **Setup** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains</a> page.
 
 ::: moniker-end
     
