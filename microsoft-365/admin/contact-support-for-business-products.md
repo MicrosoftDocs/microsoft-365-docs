@@ -34,7 +34,7 @@ feedback_system: None
 
 ## Online support
 
-Save time by starting your service request online. We'll help you find a solution or connect you to an expert who will contact you by email or phone. [Learn about initial support response times](https://go.microsoft.com/fwlink/p/?LinkId=518251).
+Save time by starting your service request online. We'll help you find a solution or connect you to an expert. See "Comparison of technical phone support options for Office 365 Business and Enterprise plans" in [Learn about initial support response times](https://go.microsoft.com/fwlink/p/?LinkId=518251).
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. [Who has admin permissions in my business?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
@@ -48,7 +48,9 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## Phone support
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.<br/>Technical support is provided in English 24 hours a day, 7 days a week.<br/> Admins, have your account details ready when you call.
+Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
+Technical support is provided in English 24 hours a day, 7 days a week.\
+Admins, have your account details ready when you call.
 
 - **In the United States, call 1 800 865 9408.**
 
