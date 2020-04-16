@@ -37,7 +37,7 @@ This walkthrough is one of several for the Security & Compliance Center. To abou
 
 - You enable and disable spoof intelligence in ATP anti-phishing policies. For more information, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
 
-- In Office 365 organizations with Exchange Online mailboxes, and in standalone Exchange Online Protection (EOP) without Exchange Online mailboxes, you can use spoof intelligence to monitor and manage senders you are sending you unauthenticated messages. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+- In Office 365 organizations with Exchange Online mailboxes, and in standalone Exchange Online Protection (EOP) without Exchange Online mailboxes, you can use spoof intelligence to monitor and manage senders you are sending you unauthenticated messages. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
 ## Open the spoof intelligence insight in the Security & Compliance Center
 

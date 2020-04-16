@@ -50,12 +50,12 @@ The default anti-phishing policy is named Office365 AntiPhish Default, and it do
 
    Note that these settings are identical to the spoof settings that are available in ATP anti-phishing policies.
 
-   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Enable Unauthenticated Sender feature**: Adds a question mark to the sender's photo if the message fails email authentication checks. The default value is **On**. To turn it off, slide the toggle to **Off**.
+   - **Enable Unauthenticated Sender feature**: Adds a question mark to the sender's photo if the message fails email authentication checks. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings). The default value is **On**. To turn it off, slide the toggle to **Off**.
 
    - **Actions**: Specify the action to take on messages that fail spoof intelligence:
 
