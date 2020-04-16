@@ -1,11 +1,10 @@
 ---
-title: "Anti-spam protection in Office 365 FAQ"
+title: "Anti-spam protection FAQ"
 f1.keywords:
 - NOCSH
-ms.author: krowley
-author: kccross
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/9/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,10 +14,10 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: "This topic provides frequently asked questions and answers about anti-spam protection. Answers are applicable for Microsoft Exchange Online and Exchange Online Protection (EOP) customers."
+description: "Frequently asked questions and answers for admins about anti-spam protection in Exchange Online and standalone Exchange Online Protection (EOP)."
 ---
 
-# Anti-spam protection in Office 365 FAQ
+# Anti-spam protection FAQ in Office 365
 
 This topic provides frequently asked questions and answers about anti-spam protection for Office 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes.
 
@@ -26,14 +25,16 @@ For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-
 
 For questions and answers about anti-malware protection, see [Anti-malware protection FAQ](anti-malware-protection-faq-eop.md).
 
+For questions and answers about anti-spoofing protection, see [Anti-spoofing protection FAQ](anti-spoofing-protection-faq.md).
+
 ## Q. By default, what happens to a spam-detected message?
 
-A. **For inbound messages:** The majority of spam is deleted via connection filtering, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as spam, bulk, or phishing. By default, messages that are classified as spam or bulk are delivered to the recipient's Junk Email folder, while messages classified as phishing are quarantined. You can modify the default anti-spam policy (applies to all recipients), or you can create custom anti-spam policies with stricter settings for specific groups of users (for example, you can quarantine spam that's sent to executives). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
+A. **For inbound messages**: The majority of spam is deleted via connection filtering, which is based on the IP address of the source email server. Anti-spam policies (also known as spam filter policies or content filter policies) inspect and classify messages as spam, bulk, or phishing. By default, messages that are classified as spam or bulk are delivered to the recipient's Junk Email folder, while messages classified as phishing are quarantined. You can modify the default anti-spam policy (applies to all recipients), or you can create custom anti-spam policies with stricter settings for specific groups of users (for example, you can quarantine spam that's sent to executives). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) and [Recommended anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
 > [!IMPORTANT]
 > In hybrid deployments where EOP protects on-premises mailboxes, you need to configure two Exchange mail flow rules (also known as transport rules) in your on-premises Exchange organization to detect the EOP spam filtering headers that are added to messages. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
- **For outbound messages:** The message is either routed through the [high-risk delivery pool](high-risk-delivery-pool-for-outbound-messages.md) or is returned to the sender in a non-delivery report (also known as an NDR or bounce message). For more information about outbound spam protection, see [Outbound spam controls in Office 365](outbound-spam-controls.md).
+ **For outbound messages**: The message is either routed through the [high-risk delivery pool](high-risk-delivery-pool-for-outbound-messages.md) or is returned to the sender in a non-delivery report (also known as an NDR or bounce message). For more information about outbound spam protection, see [Outbound spam controls in Office 365](outbound-spam-controls.md).
 
 ## Q. What's a zero-day spam variant and how is it handled by the service?
 
