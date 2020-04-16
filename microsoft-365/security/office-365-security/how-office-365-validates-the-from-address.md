@@ -2,10 +2,10 @@
 title: "How Microsoft 365 validates the From address to prevent phishing"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/11/2017
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -23,35 +23,34 @@ description: "To help prevent phishing, Microsoft 365 and Outlook.com now requir
 
 Microsoft 365 and Outlook.com email accounts receive an increasingly large number of phishing attacks. One technique phishers use is to send messages that have values for the From: address that are not compliant with [RFC 5322](https://tools.ietf.org/html/rfc5322). The From: address is also called the 5322.From address. To help prevent this type of phishing, Microsoft 365 and Outlook.com require messages received by the service to include an RFC-compliant From: address as described in this article.
 
-> [!NOTE]
-> The information in this article requires you to have a basic understanding of the general format of email addresses. For more information, see [RFC 5322](https://tools.ietf.org/html/rfc5322) (particularly sections 3.2.3, 3.4, and 3.4.1), [RFC 5321](https://tools.ietf.org/html/rfc5321), as well as [RFC 3696](https://tools.ietf.org/html/rfc3696). This article is about policy enforcement for the 5322.From address. This article is not about the 5321.MailFrom address.
+**Notes**:
 
-Unfortunately, there are still some legacy email servers on the Internet that continue to send "legitimate" email messages that have a missing or malformed From: address. If you regularly receive email from organizations that use these legacy systems, encourage those organizations to update their mail servers to comply with modern security standards.
+- If you regularly receive email from organizations that have malformed From addresses as described in this topic, encourage these organizations to update their email servers to comply with modern security standards.
 
-Microsoft will start rolling out enforcement of the policies described in this article on November 9, 2017.
+- The related Sender field (used by Send on Behalf and mailing lists) isn't affected by these requirements. For more information, see the following blog post: [What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
 ## How Microsoft 365 enforces the use of a valid From: address to prevent phishing attacks
 
 Microsoft 365 is making changes to the way it enforces the use of the From: address in messages it receives in order to better protect you from phishing attacks. In this article:
 
-- [All messages must include a valid From: address](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
+- The `5321.MailFrom` address (also known as the **MAIL FROM** address, P1 sender, or envelope sender) is the email address that's used in the SMTP transmission of the message. This email address is typically recorded in the **Return-Path** header field in the message header (although it's possible for the sender to designate a different **Return-Path** email address).
 
-- [Format of the From: address if you don't include a display name](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
+- The `5322.From` (also known as the From address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients. The From address is the focus of the requirements in this topic.
 
-- [Format of the From: address if you include a display name](how-office-365-validates-the-from-address.md#FormatDisplayName)
+The From address is defined in detail across several RFCs (for example, RFC 5322 sections 3.2.3, 3.4, and 3.4.1, and [RFC 3696](https://tools.ietf.org/html/rfc3696)). There are many variations on addressing and what's considered valid or invalid. To keep it simple, we recommend the following format and definitions:
 
-- [Additional examples of valid and invalid From: addresses](how-office-365-validates-the-from-address.md#Examples)
+`From: "Display Name" <EmailAddress>`
 
-- [Suppress auto-replies to your custom domain without breaking the From: policy](how-office-365-validates-the-from-address.md#SuppressAutoReply)
+- **Display Name**: An optional phrase that describes the owner of the email address.
 
 - [Overriding the Microsoft 365 From: address enforcement policy](how-office-365-validates-the-from-address.md#Override)
 
 - [Other ways to prevent and protect against cybercrimes in Microsoft 365](how-office-365-validates-the-from-address.md#OtherProtection)
 
-Sending on behalf of another user is not affected by this change, for more details, read Terry Zink's blog "[What do we mean when we refer to the 'sender' of an email?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/)".
+  - **local-part**: A string that identifies the mailbox associated with the address. This value is unique within the domain. Often, the mailbox owner's username or GUID is used.
+  - **domain**: The fully qualified domain name (FQDN) of the email server that hosts the mailbox identified by the local-part of the email address.
 
-### All messages must include a valid From: address
-<a name="MustIncludeFromAddress"> </a>
+  These are some additional considerations for the EmailAddress value:
 
 Some automated messages don't include a From: address when they are sent. In the past, when Microsoft 365 or Outlook.com received a message without a From: address, the service added the following default From: address to the message in order to make it deliverable:
 
@@ -120,87 +119,71 @@ For From: addresses that include a value for the display name, the following rul
 
 - If the sender address includes a display name, and the display name includes a comma, then the display name must be enclosed within quotation marks. For example:
 
-    The following example is valid:
+The following From email addresses are valid:
 
-  ```
-  From: "Sender, Example" <sender.example@contoso.com>
-  ```
+- `From: sender@contoso.com`
 
-    The following example is not valid:
+- `From: <sender@contoso.com>`
 
-  ```
-  From: Sender, Example <sender.example@contoso.com>
-  ```
+- `From: < sender@contoso.com >` (Not recommended because there are spaces between the angle brackets and the email address.)
 
-    Not enclosing the display name in quotation marks if that display name includes a comma is invalid according to RFC 5322.
+- `From: "Sender, Example" <sender.example@contoso.com>`
 
-    As a best practice, put quote marks around the display name regardless of whether or not there is a comma within the display name.
+- `From: "Office 365" <sender@contoso.com>`
 
-- If the sender address includes a display name, then the email address must be enclosed within angle brackets.
+- `From: Office 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)
 
-    As a best practice, Microsoft strongly recommends that you insert a space between the display name and the email address.
+The following From email addresses are invalid:
 
-### Additional examples of valid and invalid From: addresses
-<a name="Examples"> </a>
+- **No From address**: Some automated messages don't include a From address. In the past, when Office 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:
 
-- Valid:
+  `From: <>`
 
   ```
   From: "Microsoft 365" <sender@contoso.com>
   ```
 
-- Invalid. The email address is not enclosed with angle brackets:
+- `From: Office 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
 
   ```
   From: Microsoft 365 sender@contoso.com
   ```
 
-- Valid, but not recommended. The display name is not in quotes. As a best practice, always put quotation marks around the display name:
+- `From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but is not enclosed in double quotation marks.)
 
   ```
   From: Microsoft 365 <sender@contoso.com>
   ```
 
-- Invalid. Everything is enclosed within quotation marks, not just the display name:
+- `From: "Office 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
 
   ```
   From: "Microsoft 365 <sender@contoso.com>"
   ```
 
-- Invalid. There are no angle brackets around the email address:
+- `From: "Office 365"<sender@contoso.com>` (No space between the closing double quotation mark and the left angle bracket.)
 
   ```
   From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com
   ```
 
-- Invalid. There is no space between the display name and left angle bracket:
+You can't use the value `From: <>` to suppress auto-replies. Instead, you need to set up a null MX record for your custom domain. Auto-replies (and all replies) are naturally suppressed because there is no published address that the responding server can send messages to.
 
   ```
   From: Microsoft 365<sender@contoso.com>
   ```
 
-- Invalid. There is no space between the closing quotation mark around the display name and the left angle bracket.
+- The null MX record for this domain consists of a single period.
 
   ```
   From: "Microsoft 365"<sender@contoso.com>
   ```
 
-### Suppress auto-replies to your custom domain without breaking the From: policy
-<a name="SuppressAutoReply"> </a>
+```text
+noreply.contoso.com IN MX .
+```
 
-With the new From: policy enforcement, you can no longer use From: \<\> to suppress auto-replies. Instead, you need to set up a null MX record for your custom domain.
-
-The mail exchanger (MX) record is a resource record in DNS that identifies the mail server that receives mail for your domain. Auto-replies (and all replies) are naturally suppressed because there is no published address to which the responding server can send messages.
-
-When you set up a null MX record for your custom domain:
-
-- Choose a domain from which to send messages that doesn't accept (receive) email. For example, if your primary domain is contoso.com, you might choose noreply.contoso.com.
-
-- Set up the null MX record for your domain. A null MX record consists of a single dot, for example:
-
-  ```
-  noreply.contoso.com IN MX .
-  ```
+For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
@@ -222,6 +205,6 @@ You cannot override this policy for outbound mail you send in Microsoft 365. In 
 
 For more information on how you can strengthen your organization against cybercrimes like phishing, spamming, data breaches, and other threats, see [Security best practices for Microsoft 365](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data).
 
-## Related Topics
+## Other ways to prevent and protect against cybercrimes in Office 365
 
-[Backscatter messages and EOP](backscatter-messages-and-eop.md)
+For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../../admin/security-and-compliance/secure-your-business-data.md).

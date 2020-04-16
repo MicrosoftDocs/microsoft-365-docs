@@ -689,7 +689,7 @@ The following table lists activities that result from IT and legal professionals
 |Deleted review set search|DeleteWorkingSetSearch|User deleted a search query in a review set.|
 |Deleted tag|DeleteTag|User deleted a tag or a tag group in a review set.|
 |Downloaded document|DownloadDocument|User downloaded a document from a review set.|
-|Edited tag|DownloadDocument|User changed a tag in a review set.|
+|Edited tag|UpdateTag|User changed a tag in a review set.|
 |Exported documents from review set|ExportJob|User exported documents from a review set.|
 |Modified case setting|UpdateCaseSettings|User modified the settings for a case. Case settings include case information, access permissions, and settings that control search and analytics behavior.|
 |Modified review set search|UpdateWorkingSetSearch|User edited a search query in a review set.|
@@ -886,9 +886,9 @@ The following table lists events that result from labeling activities for ShareP
 |:-----|:-----|:-----|
 |Applied sensitivity label to site|SensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
 |Removed sensitivity label from site|SensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
-|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web.|
-|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web.|
-|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web.|
+|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
+|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
+|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web or an auto-labeling policy.|
 ||||
 
 ### Exchange admin audit log

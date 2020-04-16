@@ -24,9 +24,9 @@ description: "This article describes how Microsoft 365 mitigates against phishin
 
 This article describes how Microsoft 365 mitigates against phishing attacks that use forged sender domains, that is, domains that are spoofed. It accomplishes this by analyzing the messages and blocking the ones that cannot be authenticated using standard email authentication methods, nor other sender reputation techniques. This change was implemented to reduce the number of phishing attacks to which organizations are exposed.
 
-This article also describes why this change is being made, how customers can prepare for this change, how to view messages that will be affected, how to report on messages, how to mitigate false positives, as well as how senders to Microsoft should prepare for this change.
+When it comes to protecting its users, Microsoft takes the threat of phishing seriously. Spoofing is a common technique that's used by attackers. **Spoofed messages appear to originate from someone or somewhere other than the actual source**. This technique is often used in phishing campaigns that are designed to obtain user credentials. The anti-spoofing technology in EOP specifically examines forgery of the From header in the message body (used to display the message sender in email clients). When EOP has high confidence that the From header is forged, the message is identified as spoofed.
 
-Microsoft's anti-spoofing technology was initially deployed to its organizations that had an Office 365 Enterprise E5 subscription or had purchased the Office 365 Advanced Threat Protection (ATP) add-on for their subscription. As of October, 2018 we extended the protection to organizations that have Exchange Online Protection (EOP) as well. Additionally, because of the way all of our filters learn from each other, Outlook.com users may also be affected.
+The following anti-spoofing technologies are available in EOP:
 
 ## How spoofing is used in phishing attacks
 
@@ -297,22 +297,15 @@ Unlike a policy that you create, you cannot delete the default policy, modify it
 
 ![Anti-phishing default policy details](../../media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
 
-To set up your default protection by using PowerShell:
+- **Anti-phishing policies**: In EOP, the built-in anti-phishing policy allows you to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to the Junk Email folder or quarantine). Advanced anti-phishing policies that are available in Office 365 Advanced Threat Protection (ATP) also contain anti-impersonation settings (protected senders and domains), mailbox intelligence settings, and adjustable advanced phishing thresholds. For more information, see [Anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
 
-```powershell
-$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
-Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
-```
+- **Email authentication**: An integral part of any anti-spoofing effort is the use of email authentication (also known as email validation) by SPF, DKIM, and DMARC records in DNS. You can configure these records for your domains so destination email systems can check the validity of messages that claim to be from senders in your domains. For inbound messages, Office 365 requires email authentication for sender domains. For more information, see [Email authentication in Office 365](email-validation-and-authentication.md).
 
 You should only disable anti-spoofing protection if you have another mail server or servers in front of Microsoft 365 (see Legitimate scenarios to disable anti-spoofing for more details).
 
-```powershell
-$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
-Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false
-```
+EOP analyzes and blocks messages that can't be authenticated by the combination of standard email authentication methods and sender reputation techniques.
 
-> [!IMPORTANT]
-> If the first hop in your email path is Office 365, and you are getting too many legitimate emails marked as spoof, you should first set up your senders that are allowed to send spoofed email to your domain (see the  [Managing legitimate senders who are sending unauthenticated email](#managing-legitimate-senders-who-are-sending-unauthenticated-email) section in this topic. If you are still getting too many false positives (that is, legitimate messages marked as spoof), we do NOT recommend disabling anti-spoofing protection altogether. Instead, we recommend choosing Basic instead of High protection. It is better to work through false positives than to expose your organization to spoofed email which could end up imposing significantly higher costs in the long term.
+![EOP anti-spoofing checks](../../media/eop-anti-spoofing-protection.png)
 
 ### Managing legitimate senders who are sending unauthenticated email
 
@@ -408,110 +401,89 @@ However, there is a legitimate scenario where anti-spoofing should be disabled, 
 
 ![Customer MX record does not point to Office 365](../../media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
 
-The other server may be an Exchange on-premises mail server, a mail filtering device such as Ironport, or another cloud hosted service.
+Spoofing messages have the following negative implications for users:
 
-If the MX record of the recipient domain does not point to Office 365, then there is no need to disable anti-spoofing because Microsoft 365 looks up your receiving domain's MX record and suppresses anti-spoofing if it points to another service. If you don't know if your domain has another server in front, you can use a website like MX Toolbox to look up the MX record. It might say something like the following:
+- **Spoofed messages deceive users**: A spoofed message might trick the recipient into clicking a link and giving up their credentials, downloading malware, or replying to a message with sensitive content (known as a business email compromise or BEC).
 
-![MX record indicates domain does not point to Office 365](../../media/d868bb9f-3462-49aa-baea-9447a3ce4877.jpg)
+  The following message is an example of phishing that uses the spoofed sender msoutlook94@service.outlook.com:
 
-This domain has an MX record that does not point to Office 365, so Office 365 would not apply anti-spoofing enforcement.
+  ![Phishing message impersonating service.outlook.com](../../media/1a441f21-8ef7-41c7-90c0-847272dc5350.jpg)
 
-However, if the MX record of the recipient domain  *does*  point to Office 365, even though there is another service in front of Office 365, then you should disable anti-spoofing. The most common example is through the use of a recipient rewrite:
+  This message didn't come from service.outlook.com, but the attacker spoofed the **From** header field to make it look like it did. This was an attempt to trick the recipient into clicking the **change your password** link and giving up their credentials.
 
-![Routing diagram for recipient rewrite](../../media/070d90d1-50a0-42e4-9fd3-920bc99a7cad.jpg)
+  The following message is an example of BEC that uses the spoofed email domain contoso.com:
 
-The domain contoso.com's MX record points to the on-premises server, while the domain @office365.contoso.net's MX record points to Office 365 because it contains \*.protection.outlook.com, or \*.eo.outlook.com in the MX record:
+  ![Phishing message - business email compromise](../../media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
 
-![MX record points to Office 365, therefore probably recipient rewrite](../../media/4101ad51-ef92-4907-b466-b41d14d344ca.jpg)
+  The message looks legitimate, but the sender is spoofed.
 
-Be sure to differentiate when a recipient domain's MX record does not point to Office 365, and when it has undergone a recipient rewrite. It is important to tell the difference between these two cases.
+- **Users confuse real messages for fake ones**: Even users who know about phishing might have difficulty seeing the differences between real messages and spoofed messages.
 
-If you are unsure whether or not your receiving domain has undergone a recipient-rewrite, sometimes you can tell by looking at the message headers.
+  The following message is an example of a real password reset message from the Microsoft Security account:
 
-a) First, look at the headers in the message for the recipient domain in the Authentication-Results header:
+  ![Microsoft legitimate password reset](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-```text
-Authentication-Results: spf=fail (sender IP is 1.2.3.4)
-  smtp.mailfrom=fabrikam.com; office365.contoso.net; dkim=fail
-  (body hash did not verify) header.d=simple.fabrikam.com;
-  office365.contoso.net; dmarc=none action=none
-  header.from=fabrikam.com; compauth=fail reason=001
-```
+  The message really did come from Microsoft, but users have been conditioned to be suspicious. Because it's difficult to the difference between a real password reset message and a fake one, users might ignore the message, report it as spam, or unnecessarily report the message to Microsoft as phishing.
 
-The recipient domain is found in the bold red text above, in this case office365.contoso.net. This may be different that the recipient in the To: header:
+## Different types of spoofing
 
-To: Example Recipient \<recipient @ contoso.com\>
+Microsoft differentiates between two different types of spoofed messages:
 
-Perform an MX-record lookup of the actual recipient domain. If it contains \*.protection.outlook.com, mail.messaging.microsoft.com, \*.eo.outlook.com, or mail.global.frontbridge.com, that means that the MX points to Office 365.
+- **Intra-org spoofing**: Also known as _self-to-self_ spoofing. For example:
 
-If it does not contain those values, then it means that the MX does not point to Office 365. One tool you can use to verify this is MX Toolbox.
+  - The sender and recipient are in the same domain:
+    > From: chris@contoso.com <br/> To: michelle@contoso.com
 
-For this particular example, the following says that contoso.com, the domain that looks like the recipient since it was the To: header, has MX record points to an on-prem server:
+  - The sender and the recipient are in subdomains of the same domain:
+    > From: laura@marketing.fabrikam.com <br/> To: julia@engineering.fabrikam.com
 
-![MX record points to on-premises server](../../media/2444144a-9a90-4319-96b2-d115041f669f.jpg)
+  - The sender and recipient are in different domains that belong to the same organization (that is, both domains are configured as [accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in the same organization):
+    > From: sender @ microsoft.com <br/> To: recipient @ bing.com
 
-However, the actual recipient is office365.contoso.net whose MX record does point to Office 365:
+    Spaces are used in the email addresses to prevent spambot harvesting.
 
-![MX points to Office 365, must be recipient rewrite](../../media/10cf3245-9b50-475a-b655-d8a51f99d812.jpg)
+  Messages that fail [composite authentication](email-validation-and-authentication.md#composite-authentication) due to intra-org spoofing contain the following header values:
 
-Therefore, this message has likely undergone a recipient-rewrite.
+  `Authentication-Results: ... compauth=fail reason=6xx`
 
-b) Second, be sure to distinguish between common use cases of recipient rewrites. If you are going to rewrite the recipient domain to \*.onmicrosoft.com, instead rewrite it to \*.mail.onmicrosoft.com.
+  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
 
-Once you have identified the final recipient domain that is routed behind another server and the recipient domain's MX record actually points to Office 365 (as published in its DNS records), you may proceed to disable anti-spoofing.
+  - `reason=6xx` indicates intra-org spoofing.
 
-Remember, you don't want to disable anti-spoofing if the domain's first hop in the routing path is Office 365, only when it's behind one or more services.
+  - CAT is the category of the message, and it is normally SPM (spam), but occasionally might be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns were detected in the message.
 
-### How to disable anti-spoofing
+  - SFTY is the safety level of the message. 9 indicates phishing, .11 indicates intra-org spoofing.
 
-If you already have an Anti-phishing policy created, set the *EnableAntispoofEnforcement* parameter to $false:
+- **Cross-domain spoofing**: The sender and recipient domains are different, and have no relationship to each other (also known as external domains). For example:
+    > From: chris@contoso.com <br/> To: michelle@tailspintoys.com
 
-```powershell
-$name = "<name of policy>"
-Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
-```
+  Messages that fail [composite authentication](email-validation-and-authentication.md#composite-authentication) due to cross-domain spoofing contain the following headers values:
 
-If you don't know the name of the policy (or policies) to disable, you can display them:
+  `Authentication-Results: ... compauth=fail reason=000/001`
 
-```powershell
-Get-AntiphishPolicy | Format-List Name
-```
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-If you don't have any existing anti-phishing policies, you can create one and then disable it (even if you don't have a policy, anti-spoofing is still applied; later on in 2018, a default policy will be created for you and you can then disable that instead of creating one). You will have to do this in multiple steps:
+  - `reason=000` value indicates the message failed explicit email authentication. `reason=001` indicates the message failed implicit email authentication.
 
-```powershell
-$org = Get-OrganizationConfig
-$name = "My first anti-phishing policy for " + $org.Name
-# Note: If the name is more than 64 characters, you will need to choose a smaller one
-```
+  - SFTY is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
 
-```powershell
-# Next, create a new anti-phishing policy with the default values
-New-AntiphishPolicy -Name $Name
-# Select the domains to scope it to
-# Multiple domains are specified in a comma-separated list
-$domains = "domain1.com, domain2.com, domain3.com"
-# Next, create the anti-phishing rule, scope it to the anti-phishing rule
-New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
-# Finally, scope the anti-phishing policy to the domains
-Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
-```
+For more information about the Category and composite authentication (compauth) values that are related to spoofing, see [Anti-spam message headers in Office 365](anti-spam-message-headers.md).
 
-Disabling anti-spoofing is only available via cmdlet (later it will be available in the Security & Compliance Center). If you do not have access to PowerShell, create a support ticket.
+For more information about DMARC, see [Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md).
 
-Remember, this should only be applied to domains that undergo indirect routing when sent to Office 365. Resist the temptation to disable anti-spoofing because of some false positives, it will be better in the long run to work through them.
+## Reports of how many messages were marked as spoofed
 
-### Information for individual users
+EOP organizations can use the **Spoof detections** report in the reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
-Individual users are limited in how they can interact with the anti-spoofing safety tip. However, there are several things you can do to resolve common scenarios.
+Office 365 ATP organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Office 365 threat investigation and response](office-365-ti.md).
 
-### Common scenario: Discussion lists
+## Problems with anti-spoofing protection
 
-Discussion lists are known to have problems with anti-spoofing due to the way they forward the message and modify its contents yet retain the original From: address.
+Mailing lists (also known as discussion lists) are known to have problems with anti-spoofing due to the way they forward and modify messages.
 
-For example, suppose Gabriela Laureano (glaureano @ contoso.com) is interested in bird watching and joins the discussion list birdwatchers @ fabrikam.com. When she send a message to the discussion list, it looks like this:
+For example, Gabriela Laureano (glaureano@contoso.com) is interested in bird watching, joins the mailing list birdwatchers@fabrikam.com, and sends the following message to the list:
 
-> **From:** Gabriela Laureano \<glaureano @ contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers @ fabrikam.com\> <br/> 
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> 
 **Subject:** Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/>Anyone want to check out the viewing this week from Mt. Rainier?
 
 When the email list receives the message, they format the message, modify its contents, and replay it to the rest of the members on the discussion list which, is made up of participants from many different email receivers.
@@ -625,32 +597,32 @@ Microsoft itself first adopted this feature several weeks before deploying it to
 
 Microsoft's anti-spoofing technology was initially deployed to its organizations that had an Office 365 Enterprise E5 subscription or had purchased the Office 365 Advanced Threat Protection (ATP) add-on for their subscription. As of October, 2018 we've extended the protection to organizations that have Exchange Online Protection (EOP) as well. In the future, we may release it for Outlook.com. However, if we do, there may be some capabilities that are not applied such as reporting and custom overrides.
 
-### How can I report spam or non-spam messages back to Microsoft?
+> **From:** "Gabriela Laureano" \<glaureano@contoso.com\> <br/> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br/> **Subject:** [BIRDWATCHERS] Great viewing of blue jays at the top of Mt. Rainier this week <br/><br/> Anyone want to check out the viewing this week from Mt. Rainier? <br/><br/> This message was sent to the Birdwatchers Discussion List. You can unsubscribe at any time.
 
-See [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+To help mailing list messages pass anti-spoofing checks, do following steps based on whether you control the mailing list:
 
-### I'm a domain administrator who doesn't know who all my senders are!
+- Your organization owns the mailing list:
 
-Please see [Administrators of domains that are not customers](#administrators-of-domains-that-are-not-customers).
+  - Check the FAQ at DMARC.org: [I operate a mailing list and I want to interoperate with DMARC, what should I do?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F).
 
-### What happens if I disable anti-spoofing protection for my organization, even though Microsoft 365 is my primary filter?
+  - Read the instructions at this blog post: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/).
 
-We do not recommend this because you will be exposed to more missed phishing and spam messages. Not all phishing is spoofing, and not all spoofs will be missed. However, your risk will be higher than a customer who enables anti-spoofing.
+  - Consider installing updates on your mailing list server to support ARC, see [https://arc-spec.org](https://arc-spec.org/)
 
-### Does enabling anti-spoofing protection mean I will be protected from all phishing?
+- Your organization doesn't own the mailing list:
 
-Unfortunately, no, because phishers will adapt to use other techniques such as compromised accounts, or setting up accounts of free services. However, anti-phishing protection works much better to detect these other types of phishing methods because Office 365's protection layers are designed work together and build on top of each other.
+  - Ask the maintainer of the mailing list to configure email authentication for the domain that the mailing list is relaying from.
 
-### Do other large email receivers block unauthenticated email?
+    When enough senders reply back to domain owners that they should set up email authentication records, it spurs them into taking action. While Microsoft also works with domain owners to publish the required records, it helps even more when individual users request it.
 
 Nearly all large email receivers implement traditional SPF, DKIM, and DMARC. Some receivers have other checks that are more strict than just those standards, but few go as far as Microsoft 365 to block unauthenticated email and treat them as a spoof. However, most of the industry is becoming more and more strict about this particular type of email, particularly because of the problem of phishing.
 
-### Do I still need to enable the Advanced Spam Filter (ASF) setting "SPF record: hard fail" (_MarkAsSpamSpfRecordHardFail_) if I enable anti-spoofing?
+  - Create a support ticket with Office 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).
 
-No, this option is no longer required because the anti-spoofing feature not only considers SPF hard fails, but a much wider set of criteria. If you have anti-spoofing enabled and the **SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_) turned on, you will probably get more false positives.
+If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-We recommend disabling this feature as it would provide almost no additional catch for spam or phish, and would instead generate mostly false positives. For more information, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+You may also contact your admin who can raise it as a support ticket with Microsoft. The Microsoft engineering team will investigate why the message was marked as a spoof.
 
-### Does Sender Rewriting Scheme (SRS) help fix forwarded email?
+## Considerations for anti-spoofing protection
 
-SRS only partially fixes the problem of forwarded email. By rewriting the SMTP MAIL FROM, SRS can ensure that the forwarded message passes SPF at the next destination. However, because anti-spoofing is based upon the From: address in combination with either the MAIL FROM or DKIM-signing domain (or other signals), it is not enough to prevent forwarded email from being marked as spoofed.
+If you're an admin who currently sends messages to Office 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phish. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
