@@ -35,7 +35,7 @@ Here are the step-by-step instructions required to use network upload to bulk-im
 
 [Step 4: Create the PST Import mapping file](#step-4-create-the-pst-import-mapping-file)
 
-[Step 5: Create a PST Import job](#step-5-create-a-pst-import-job-in-office-365)
+[Step 5: Create a PST Import job](#step-5-create-a-pst-import-job)
 
 [Step 6: Filter data and start the PST Import job](#step-6-filter-data-and-start-the-pst-import-job)
 
