@@ -31,15 +31,15 @@ To learn about recent changes, see [What's new in Microsoft Secure Score?](micro
 
 To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
 
-- Delete/block accounts not used in last 30 days
-- Designate fewer than 5 global admins
 - Apply IRM protections to documents
 - Apply Data Loss Prevention policies
 
-### Adding additional control support in the preview version
+### Adding Azure AD improvement action in the preview version
+
 - Do not allow users to grant consent to unmanaged applications (currently available in released version)
 
-#### Support for additional Microsoft Cloud App Security improvement actions
+### Adding Azure ATP improvement actions in the preview version
+
 - Disable Print spooler service on domain controllers
 - Modify unsecure Kerberos delegations to prevent impersonation
 - Protect and manage local admin passwords with Microsoft LAPS
@@ -51,5 +51,6 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Stop legacy protocols communication
 - Stop weak cipher usage
 
-#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
+### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations in the preview version
+
 - All released security recommendations supplied by TVM will now also be available in Microsoft Secure Score
