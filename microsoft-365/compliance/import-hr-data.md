@@ -30,7 +30,7 @@ You can set up a data connector in the Microsoft 365 compliance center to import
 
 ## Step 1: Create an app in Azure Active Directory
 
-The first step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3.  Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in later steps is this process.
+The first step is to create and register a new app in Azure Active Directory (AAD). The app will correspond to the HR connector that you create in Step 3. Creating this app will allow AAD to authenticate the HR connector when it runs and attempts to access your organization. This app will also be used to authenticate the script that you run in Step 4 to upload your HR data to the Microsoft cloud. During the creation of this AAD app, be sure to save the following information. These values will be used in later steps.
 
 - AAD application ID (also called the *app Id* or *client Id*)
 
@@ -38,7 +38,7 @@ The first step is to create and register a new app in Azure Active Directory (AA
 
 - Tenant Id (also called the *directory Id*)
 
-For step-by-step instructions for creating an app in AAD, see [Creating an AAD Application](https://docs.microsoft.com/azure/kusto/management/access-control/how-to-provision-aad-app)
+For step-by-step instructions for creating an app in AAD, see [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
 
 ## Step 2: Prepare a CSV file with your HR data
 
@@ -154,13 +154,13 @@ After you create the HR connector and run the script to upload your HR data, you
 
    ![HR connector log file displays number rows from CSV file that were uploaded](../media/HRConnectorLogFile.png)
 
-   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains 4 rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
+   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
 If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
 
 ## (Optional) Step 6: Schedule the script to run automatically
 
-To make sure that the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
+To make sure the latest HR data from your organization is available to tools like the insider risk management solution, we recommend that you schedule the script to run automatically on a recurring basis, such as once a day. This also requires that you update the HR data in the CSV file on a similar (if not the same) schedule so that it contains the latest information about employees who leave your organization. The goal is to upload the most current HR data so that the HR connector can make it available to the insider risk management solution.
 
 You can user the Task Scheduler app in Windows to automatically run the script every day.
 

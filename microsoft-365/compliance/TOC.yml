@@ -46,6 +46,8 @@
           href: communication-compliance-investigate-remediate.md
         - name: Feature reference for communication compliance
           href: communication-compliance-feature-reference.md
+        - name: Case study - Contoso quickly configures an offensive language policy 
+          href: communication-compliance-case-study.md
         - name: Supervision policies in Office 365
           href: supervision-policies.md
         - name: Configure supervision policies for Office 365
@@ -147,6 +149,10 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
+    - name: Encryption in M365
+      href: encryption.md
+    - name: Office 365 Service Encryption
+      href: office-365-service-encryption.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -198,16 +204,18 @@
               href: legacy-information-for-message-encryption.md
             - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Set up IRM in SharePoint admin center
+      href: set-up-irm-in-sp-admin-center.md
     - name: Understand data classification (preview)
       href: data-classification-overview.md
       items: 
-        - name: View labeled content (preview)
+        - name: Get started with content explorer (preview)
           href: data-classification-content-explorer.md
-        - name: View label activity (preview)
+        - name: Get started with activity explorer (preview)
           href: data-classification-activity-explorer.md
         - name: Data classification public preview release notes (preview)
           href: data-classification-pub-preview-relnotes.md
-        - name: Getting started with trainable classifiers (preview)
+        - name: Get started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
         - name: Using a built-in classifier (preview)
           href: classifier-using-a-ready-to-use-classifier.md
@@ -352,6 +360,8 @@
             href: export-search-results.md
           - name: Export a search report
             href: export-a-content-search-report.md
+          - name: Use Microsoft Edge to download search results
+            href: configure-edge-to-export-search-results.md
           - name: Search for and delete email messages
             href: search-for-and-delete-messages-in-your-organization.md
           - name: Search the cloud-based mailboxes of on-premises users
@@ -428,6 +438,8 @@
             href: ediscovery-troubleshooting-common-issues.md
           - name: Retry a failed search
             href: retry-failed-content-search.md
+          - name: Use Microsoft Edge to download search results
+            href: configure-edge-to-export-search-results.md
     - name: Advanced eDiscovery
       items:
         - name: Overview of Advanced eDiscovery
@@ -489,14 +501,14 @@
               href: manage-load-sets-in-advanced-ediscovery.md
         - name: Review case data
           items: 
+            - name: Use the review set dashboard (preview)
+              href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md
             - name: Query the data in a review set
               href: review-set-search.md
             - name: Tag documents in a review set
               href: tagging-documents.md
-            - name: Use the review set dashboard (preview)
-              href: advanced-ediscovery-dashboard.md
         - name: Analyze case data
           href: analyzing-data-in-review-set.md
           items: 
@@ -545,8 +557,6 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
-            - name: Advanced eDiscovery reports (preview)
-              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (classic)
@@ -632,6 +642,8 @@
               href: use-advanced-ediscovery-utilities.md
             - name: Run reports
               href: run-reports-in-advanced-ediscovery.md
+    - name: Retirement of legacy eDiscovery tools
+      href: legacy-ediscovery-retirement.md
 - name: Manage data investigations
   items: 
     - name: Overview of data investigations
@@ -757,26 +769,26 @@
       href: get-started-with-service-trust-portal.md
     - name: Compliance Score and Compliance Manager
       items: 
-        - name: Compliance Score (Preview)
+        - name: Compliance Score (preview)
           href: compliance-score.md
-        - name: Set up Compliance Score (Preview)
+        - name: Set up Compliance Score (preview)
           href: compliance-score-setup.md
-        - name: Working with Compliance Score (Preview)
+        - name: Working with Compliance Score (preview)
           href: working-with-compliance-score.md
-        - name: Compliance Score calculation (Preview)
+        - name: Compliance Score calculation (preview)
           href: compliance-score-methodology.md
-        - name: Compliance Score release notes (Preview)
+        - name: Compliance Score release notes (preview)
           href: compliance-score-release-notes.md
-        - name: Compliance Score FAQ (Preview)
+        - name: Compliance Score FAQ (preview)
           href: compliance-score-faq.md
-        - name: Compliance Manager (Preview)
+        - name: Compliance Manager (preview)
           href: compliance-manager-overview.md
           items: 
-            - name: What's new in Compliance Manager (Preview)
+            - name: Compliance Manager (preview) release notes
               href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (Preview)
+            - name: Working with Compliance Manager (preview)
               href: working-with-compliance-manager.md
-            - name: Compliance Manager (Classic)
+            - name: Compliance Manager (classic)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
@@ -812,6 +824,12 @@
           href: gdpr-for-office-online-server.md
         - name: GDPR for on-premises Windows Server file shares
           href: gdpr-for-on-premises-file-shares.md
+    - name: Industry-specific guidance
+      items: 
+        - name: Financial services security and compliance
+          href: ../solutions/financial-services-secure-collaboration.md
+        - name: Energy services security and compliance
+          href: ../solutions/energy-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
     - name: ISO - Recommended action plan

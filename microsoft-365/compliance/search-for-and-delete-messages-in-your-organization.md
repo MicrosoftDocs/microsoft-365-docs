@@ -19,20 +19,20 @@ ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: "Use the search and purge feature in the Security & Compliance Center in Office 365 to search for and delete an email message from all mailboxes in your organization."
 ---
 
-# Search for and delete email messages in your Office 365 organization
+# Search for and delete email messages
 
-**This article is for administrators. Are you trying to find items in your mailbox that you want to delete? See [Find a message or item with Instant Search](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
+**This article is for administrators. Are you trying to find items in your mailbox that you want to delete? See [Find a message or item with Instant Search](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**.
    
 You can use the Content Search feature in Office 365 to search for and delete an email message from all mailboxes in your organization. This can help you find and remove potentially harmful or high-risk email, such as:
   
 - Messages that contain dangerous attachments or viruses
-    
+
 - Phishing messages
-    
+
 - Messages that contain sensitive data
-    
+
 > [!CAUTION]
-> Search and purge is a powerful feature that allows anyone that is assigned the necessary permissions to delete email messages from mailboxes in your organization. 
+> Search and purge is a powerful feature that allows anyone that is assigned the necessary permissions to delete email messages from mailboxes in your organization.
   
 ## Before you begin
 
@@ -89,11 +89,20 @@ Here are two examples of queries to find suspicious email messages.
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
+Here's an example of using a query to create and start a search by running the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets to search all mailboxes in the organization:
+
+```powershell
+$Search=New-ComplianceSearch -Name "Remove Phishing Message" -ExchangeLocation All -ContentMatchQuery '(Received:4/13/2016..4/14/2016) AND (Subject:"Action required")'
+Start-ComplianceSearch -Identity $Search.Identity
+```
+
 ## Step 2: Connect to Security & Compliance Center PowerShell
 
 The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
 If your Office 365 account uses multi-factor authentication (MFA) or federated authentication, you can't use the instructions in the previous topic on connecting to Security & Compliance Center PowerShell. Instead, see the instructions in the topic [Connect to Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+
+After you've connected to Security & Compliance Center PowerShell, run the **New-ComplianceSearch** and **Start-ComplianceSearch** cmdlets that you prepared in the previous step.
   
 ## Step 3: Delete the message
 
@@ -105,7 +114,7 @@ In the following example, the command soft-deletes the search results returned b
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-To hard-delete the items returned by the  "Remove Phishing Message" content search, you would run this command:
+To hard-delete the items returned by the "Remove Phishing Message" content search, you would run this command:
 
 ```powershell
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete

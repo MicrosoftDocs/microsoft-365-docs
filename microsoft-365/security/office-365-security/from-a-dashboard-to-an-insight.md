@@ -37,7 +37,7 @@ Let's walk through the flow from a dashboard to a report to an insight and actio
     
 4. Selecting an item in the list opens a details pane where we can see additional information, including similar email messages that were detected. (Click an item in the list, and review the information and recommendations.)<br>![Selecting an item opens a details pane](../../media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. Notice that at the top of the pane, we have the option to add the sender to our organization's allowed senders list. (Do not select **Add to 'AllowedtoSpoof' sender allow list** until you are sure you want to do this. [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).)<br>![You can authorize a sender](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. Notice that at the top of the pane, we have the option to add the sender to our organization's allowed senders list. (Do not select **Add to 'AllowedtoSpoof' sender allow list** until you are sure you want to do this. [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).)<br>![You can authorize a sender](../../media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 In this way, we can move from a dashboard to insights and recommended actions.
   

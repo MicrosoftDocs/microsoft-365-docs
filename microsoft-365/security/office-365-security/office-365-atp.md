@@ -39,9 +39,11 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 The following table summarizes what's included in each plan.
 
-|Office 365 ATP Plan 1 |Office 365 ATP Plan 2|
-|---------|---------|
-|Configuration, protection, and detection capabilities:<br/>- [Safe Attachments](atp-safe-attachments.md)<br/>- [Safe Links](atp-safe-links.md)<br/>- [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>- [Advanced antiphishing protection](atp-anti-phishing.md)<br/>- [Real-time detections](threat-explorer.md)     |Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>- [Threat Trackers](threat-trackers.md)<br/>- [Threat Explorer](threat-explorer.md)<br/>- [Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>- [Attack Simulator](attack-simulator.md)|
+|||
+|---|---|
+|**Office 365 ATP Plan 1**|**Office 365 ATP Plan 2**|
+|Configuration, protection, and detection capabilities:<br/>• [Safe Attachments](atp-safe-attachments.md)<br/>• [Safe Links](atp-safe-links.md)<br/>• [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP anti-phishing protection](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Real-time detections](threat-explorer.md)|Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>• [Threat Trackers](threat-trackers.md)<br/>• [Threat Explorer](threat-explorer.md)<br/>• [Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Attack Simulator](attack-simulator.md)|
+|
 
 - Office 365 ATP Plan 2 is included in Office 365 E5, Office 365 A5, and Microsoft 365 E5.
 
@@ -66,7 +68,7 @@ The policies that are defined for your organization determine the behavior and p
 
 - **[ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)**: Protects your organization when users collaborate and share files, by identifying and blocking malicious files in team sites and document libraries. To learn more, see [Turn on Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
-- **[ATP anti-phishing protection](atp-anti-phishing.md)**: Detects attempts to impersonate your users and custom domains. It applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks. To learn more, see [Set up Office 365 ATP anti-phishing and anti-phishing policies](set-up-anti-phishing-policies.md).
+- **[ATP anti-phishing protection](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)**: Detects attempts to impersonate your users and internal or custom domains. It applies machine learning models and advanced impersonation-detection algorithms to avert phishing attacks. To learn more, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
 
 ## View Office 365 ATP reports
 
@@ -92,7 +94,7 @@ Office 365 ATP Plan 2 includes best-of-class [threat investigation and response 
 
 - **[Threat Explorer (or real-time detections)](threat-explorer.md)** (also referred to as Explorer) is a real-time report that allows you to identify and analyze recent threats. You can configure Explorer to show data for custom periods.
 
-- **[Attack Simulator](attack-simulator.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilites. Simulations of current types of attacks are available, including a [credential harvest spear-phishing attack](attack-simulator.md#credential-harvest-spear-phishing-attack), a [password-spray attack](attack-simulator.md#password-spray-attack), a [brute-force password attack](attack-simulator.md#brute-force-password-attack), and more.
+- **[Attack Simulator](attack-simulator.md)** allows you to run realistic attack scenarios in your organization to identify vulnerabilities. Simulations of current types of attacks are available, including spear phishing credential harvest and attachment attacks, and password spray and brute force password attacks.
 
 ## Save time with automated investigation and response
 

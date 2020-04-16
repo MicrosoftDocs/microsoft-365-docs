@@ -20,6 +20,8 @@ description: "Monitor the disposal of records, whether you configure a retention
 
 # Disposition of records
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 After declaring content as a [record by applying a retention label](records.md#using-retention-labels-to-declare-records), you can respond to disposition reviews and view all record deletions by using the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center.
 
 > [!NOTE]

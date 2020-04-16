@@ -2,10 +2,10 @@
 title: "Admin submissions in Office 365, O365 submissions, Office 365 spam problem, O365 false negative, submit phish in office 365, submit email for scanning, suspicious email in Office 365, scan a mail, have Microsoft scan for phish, have Microsoft scan for spam, submit e-mail, submit email, dodgy email, bad actor mail, suspicious, untrusted mail, report phish emails to Microsoft, report phish emails to Microsoft, report malicious email to Microsoft, report scam email to Microsoft, report malware in email to Microsoft, spam email in inbox office 365, virus in email office 365"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 08/06/2019
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,23 @@ ms.collection:
 description: "Learn how to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files from your Office 365 tenant to Microsoft for scanning."
 ---
 
-# How to submit suspected spam, phish, URLs, and files to Microsoft for Office 365 scanning
+# Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
 
-Admins can send emails by using file or network message ID, URLs, and files for scanning by Microsoft in Office 365.
-The updated submissions section still includes user reported messages and available to all customers using EOP.
+If you're an admin in an Office 365 organization with mailboxes in Exchange Online, you can use the Submissions portal in the Office 365 Security & Compliance Center to submit email messages, URLs and attachments to Microsoft for scanning.
 
 When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
+
+For other ways to submit email messages, URLs, and attachments to Microsoft, see 
+
+## What do you need to know before you begin?
+
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Submission** page, use <https://protection.office.com/reportsubmission>.
+
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+
+- You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+
+- For more information about how users can submit messages and files to Microsoft see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## How to direct suspicious content to Microsoft for Office 365 scanning
 
@@ -36,7 +47,7 @@ To submit content to Microsoft click the **New submission** button in the top le
 
 2. Specify the recipient(s) that you would like to run the policy check against. The policy check will determine if the email bypassed scanning due to user or tenant level policies.
 
-3. Specify if the email should have been blocked or not. If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware. If you are not sure what type it might be, use your best judgement.
+3. Specify if the email should have been blocked or not. If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware. If you are not sure what type it might be, use your best judgment.
 
    - If the filter was bypassed due to policies upon submission, you'll see information about that policy.
 
@@ -61,11 +72,3 @@ To submit content to Microsoft click the **New submission** button in the top le
 1. To submit a file select **File** from the flyout and upload the file you would like to scan.
 
 2. Click the **Submit** button.
-
-## Related topics
-
-[Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)
-
-[Protect against threats in Office 365](protect-against-threats.md)
-
-[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)

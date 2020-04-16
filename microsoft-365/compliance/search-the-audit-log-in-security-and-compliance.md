@@ -306,7 +306,8 @@ Click one of the following links to go to a specific table.
 |[Advanced eDiscovery activities](#advanced-ediscovery-activities)|[Power BI activities](#power-bi-activities)|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)|
 |[Microsoft Teams activities](#microsoft-teams-activities)|[Microsoft Teams Healthcare activities](#microsoft-teams-healthcare-activities)|[Yammer activities](#yammer-activities)|
 |[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|[Microsoft Stream activities](#microsoft-stream-activities)|
-|[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)||
+|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|[Microsoft Forms activities](#microsoft-forms-activities)
+|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|||
 ||||
 
 ### File and page activities
@@ -582,9 +583,9 @@ The following table lists user administration activities that are logged when an
 |:-----|:-----|:-----|
 |Added user|Add user|An Office 365 user account was created.|
 |Changed user license|Change user license|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
-|Changed user password|Change user password|Administrator changed the password for a user.|
+|Changed user password|Change user password|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Deleted user|Delete user|An Office 365 user account was deleted.|
-|Reset user password|Reset user password|Administrator reset the password for a user.|
+|Reset user password|Reset user password|Administrator resets the password for a user.|
 |Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user sign in to Office 365.|
 |Set license properties|Set license properties|Administrator modifies the properties of a licensed assigned to a user.|
 |Updated user|Update user|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
@@ -688,7 +689,7 @@ The following table lists activities that result from IT and legal professionals
 |Deleted review set search|DeleteWorkingSetSearch|User deleted a search query in a review set.|
 |Deleted tag|DeleteTag|User deleted a tag or a tag group in a review set.|
 |Downloaded document|DownloadDocument|User downloaded a document from a review set.|
-|Edited tag|DownloadDocument|User changed a tag in a review set.|
+|Edited tag|UpdateTag|User changed a tag in a review set.|
 |Exported documents from review set|ExportJob|User exported documents from a review set.|
 |Modified case setting|UpdateCaseSettings|User modified the settings for a case. Case settings include case information, access permissions, and settings that control search and analytics behavior.|
 |Modified review set search|UpdateWorkingSetSearch|User edited a search query in a review set.|
@@ -797,7 +798,29 @@ You can search the audit log for app-related activities in Power Apps. These act
 
 ### Microsoft Stream activities
 
-You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Activities logged in Microsoft Stream" section in [Audit Logs in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
+You can search the audit log for activities in Microsoft Stream. These activities include video activities performed by users, group channel activities, and admin activities such as managing users, managing organization settings, and exporting reports. For a description of these activities, see the "Actions logged in Stream" section in [Audit Logs in Microsoft Stream](https://docs.microsoft.com/stream/audit-logs#actions-logged-in-stream).
+
+### Content explorer activities
+
+The following table lists the activities in content explorer that are logged in the Office 365 audit log. Content explorer, which is accessed on the Data classifications tool in the Microsoft 365 compliance center. For more information, see [Using data classification content explorer](data-classification-content-explorer.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Accessed item|LabelContentExplorerAccessedItem|An admin (or a user who's a member of the Content Explorer Content Viewer role group) uses content explorer to view an email message or SharePoint/OneDrive document.|
+||||
+
+### Quarantine activities
+
+The following table lists the quarantine activities that you can search for in the audit log. For more information about quarantine, see [Quarantine email messages in Office 365](../security/office-365-security/quarantine-email-messages.md).
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Deleted quarantine message|QuarantineDelete|A user deleted an email message that was deemed to be harmful.|
+|Exported quarantine message|QuarantineExport|A user exported an email message that was deemed to be harmful.|
+|Previewed quarantine message|QuarantinePreview|A user previewed an email message that was deemed to be harmful.|
+|Released quarantine message|QuarantineRelease|A user released an email message from quarantine that was deemed to be harmful.|
+|Viewed quarantine message's header|QuarantineViewHeader|A user viewed the header an email message that was deemed to be harmful.|
+||||
 
 ### Microsoft Forms activities
 
@@ -863,9 +886,9 @@ The following table lists events that result from labeling activities for ShareP
 |:-----|:-----|:-----|
 |Applied sensitivity label to site|SensitivityLabelApplied|A sensitivity label was applied to a SharePoint or Teams site.|
 |Removed sensitivity label from site|SensitivityLabelRemoved|A sensitivity label was removed from a SharePoint or Teams site.|
-|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web.|
-|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web.|
-|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web.|
+|Applied sensitivity label to file|FileSensitivityLabelApplied|A sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
+|Changed sensitivity label applied to file|FileSensitivityLabelChanged|A different sensitivity label was applied to a document by using Office on the web or an auto-labeling policy.|
+|Removed sensitivity label from file|FileSensitivityLabelRemoved|A sensitivity label was removed from a document by using Office on the web or an auto-labeling policy.|
 ||||
 
 ### Exchange admin audit log

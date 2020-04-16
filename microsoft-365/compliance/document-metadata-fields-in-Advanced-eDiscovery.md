@@ -23,13 +23,16 @@ description: "This article defines the metadata fields for documents in a review
 
 The following table lists the metadata fields for documents in a review set in a case in Advanced eDiscovery. The table provides the following information:
 
-- **Field name** and **Display field name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Note that some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).
+- **Field name** and **Display field name:** The name of the metadata field and the name of the field that's displayed when viewing the file metadata of a selected document in a review set. Some metadata fields aren't included when viewing the file metadata of a document. These fields are highlighted with an asterisk (*).
 
 - **Searchable field name:** The name of the property that you can search for when running a [review set query](review-set-search.md). A blank cell means that you can't search for the field in a review set query.
 
--  **Exported field name:** The name of the metadata field that included when documents are exported.  A blank cell means the field isn't included with the exported metadata.
+- **Exported field name:** The name of the metadata field that included when documents are exported.  A blank cell means the field isn't included with the exported metadata.
 
 - **Description:** A description of the metadata field.
+
+> [!NOTE]
+> The **Keywords** field in [review set search](https://docs.microsoft.com/microsoft-365/compliance/review-set-search) uses Keyword Query Language (KQL). The fields listed in the **Searchable field name** column can be used in the **Keywords** field in a review set search to form complex queries without you having to use the query builder. For more information about KQL, see [Keyword Query Language syntax reference](https://go.microsoft.com/fwlink/?LinkId=269603).
 
 |**Field name** and **Display field name**|**Searchable field name**|**Exported field name**|**Description**|
 |:-----|:-----|:-----|:-----|
@@ -73,7 +76,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Email Security|EmailSecurity|Email_security|Security setting of the message: **0** - None; **1** - Signed; **2** -  Encrypted; **3** -  Encrypted and signed.|
 |Email Sensitivity|EmailSensitivity|email_sensitivity|Sensitivity setting of the message: **0** - None; **1** Personal; **2** - Private; **3** - CompanyConfidential.|
 |Email set|EmailSet|Email_set|Group ID for all messages in the same email set.|
-|EmailThread*||Email_thread|Position of the message within the email set; consists of node IDs from the root to the current message; ,period-separated.|
+|EmailThread*||Email_thread|Position of the message within the email set; consists of node IDs from the root to the current message and are separated by periods (.).|
 |Extracted content type||Extracted_content_type|Extracted content type, in the form of mime type; for example, **image/jpeg**|
 |ExtractedTextLength*||Extracted_text_length|Number of characters in the extracted text.|
 |Family relevance score Case issue 1*||Family_relevance_score_case_issue_1|Family relevance score Case issue 1 from Relevance.|
@@ -89,7 +92,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Has attachment|HasAttachment|Email_has_attachment|Indicates whether or not the message has attachments.|
 |Has attorney|HasAttorney||**True** when at least one of the participants is found in the attorney list; otherwise, the value is **False**.|
 |HasText*||Has_text|Indicates whether or not the item has text; possible values are **True** and **False**.|
-|Immutable ID|ImmutableId|Immutable_ID|Immutable Id as stored in Office 365.|
+|Immutable ID||Immutable_ID|This Id is used to uniquely identify a document within a review set. This field can't be used in a review set search and the Id can't be used to access a document in its native location.|
 |Inclusive type|InclusiveType|Inclusive_type|Inclusive type calculated for analytics: **0** - not inclusive; **1** - inclusive; **2** - inclusive minus; **3** - inclusive copy.|
 |In Reply To Id||In_reply_to_ID|In reply to Id from the message.|
 |Is Representative|IsRepresentative|Is_representative|One document in every set of exact duplicates is marked as representative.|
@@ -107,8 +110,8 @@ The following table lists the metadata fields for documents in a review set in a
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
 |NativeMD5||Native_MD5|MD5 hash of file stream.|
-|ND/ET Sort: Excluding attachments|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of email set and ND set for efficient sorting at review time; **D** is added as a prefix to ND sets and **E** is added to email sets.|
-|ND/ET Sort: including attachments|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenation of email set and ND set for efficient sorting at review time; **D** is added as a prefix to ND sets and **E** is added to email sets. Each email within an email set is followed by its appropriate attachments.|
+|ND/ET Sort: Excluding attachments|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of the email thread (ET) set and Near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets.|
+|ND/ET Sort: Including attachments|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenation of an email thread (ET) set and near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets. Each email item in an ET set is followed by its appropriate attachments.|
 |Normalized relevance score Case issue 1||Normalized_relevance_score_case_issue_1|Normalized relevance score Case issue 1 from Relevance.|
 |O365 authors||O365_authors|Author from SharePoint.|
 |O365 created by||O365_created_by|Created by from SharePoint.|

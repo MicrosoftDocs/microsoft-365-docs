@@ -51,7 +51,7 @@ Apps that do not support modern authentication cannot have [identity and device 
   - If you are using the simulated enterprise Microsoft 365 test environment, use the [Azure portal](https://portal.azure.com) to connect to the CLIENT1 virtual machine, and then sign in from CLIENT1.
  
 2. On the new **Microsoft 365 admin center** tab, under **Admin centers** in the left navigation pane, click **SharePoint**.
-3. On the new **SharePoint admin center** tab, click **Access control**.
+3. On the new **SharePoint admin center** tab, click **Policies > Access control**.
 4. Click **Apps that don’t support modern authentication**, select **Block access**, and then click **Save**.
 
 

@@ -13,6 +13,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
+- remotework
 ms.custom:
 
 description: Configure the infrastructure and security that allows your employees to work remotely from anywhere and at any time.
@@ -73,7 +74,7 @@ For a 1-page summary of this scenario, see the [Empower remote workers poster](.
 
 [![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf)
 
-You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/empower-remote-workers-scenario.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/empower-people-to-work-remotely/Empower-Remote-Workers-Poster.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
 
 
 ## Phase 1: Deploy Microsoft 365 features and capabilities for remote workers
@@ -95,10 +96,10 @@ Here's the resulting configuration with the identity elements highlighted.
 
 ![Identity elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-id-phase.png)
  
-For [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md), deploy:
+For [Phase 3: Windows 10 Enterprise](windows10-infrastructure.md):
 
-- The infrastructure to deploy new devices with Windows 10 Enterprise and to upgrade of your Windows 7 or Windows 8.1 devices to Windows 10 Enterprise
-- Enabling comprehensive security features for identity, threat, and information protection
+- Deploy the infrastructure to deploy new devices with Windows 10 Enterprise and to upgrade your Windows 7 or Windows 8.1 devices to Windows 10 Enterprise
+- Enable comprehensive security features for identity, threat, and information protection
 
 Here's the resulting configuration with Windows 10 Enterprise devices.
 
@@ -202,6 +203,12 @@ Retrain your users as needed.
 ### User adoption results
 
 Your remote workers can use their Windows 10 Enterprise or other devices and Office 365 ProPlus to access and work on shared Microsoft 365 Enterprise cloud services and resources in a secure environment, and they’re meeting, creating, and collaborating in real time.
+
+## Additional Microsoft features to support remote workers
+
+You can use [Azure Point-to-Site VPN connections](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about) to connect remote workers to servers running in an Azure virtual network.
+
+You can use [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) for desktop and app virtualization hosted by Azure.
 
 ## See also
 

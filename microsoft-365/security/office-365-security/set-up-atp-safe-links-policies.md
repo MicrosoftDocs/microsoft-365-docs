@@ -25,6 +25,8 @@ description: "Set up Safe Links policies to protect your organization from malic
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [ATP Safe Links](atp-safe-links.md), a feature of [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), can help protect your organization from malicious links used in phishing and other attacks. If you have the necessary [permissions for the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can set up ATP Safe Links policies to help ensure that when people click web addresses (URLs), your organization is protected. Your ATP Safe Links policies can be configured to scan URLs in email and URLs in Office documents.
+
+With ATP Safe Links enabled, if a user clicks on a link in an email and the URL has been blocked by your organization's custom blocked URL list or if the URL is determined to be malicious, a warning page will open.
   
 [New features are continually being added to ATP](office-365-atp.md#new-features-in-office-365-atp). As new features are added, you may need to make adjustments to your existing ATP Safe Links policies.
 
@@ -88,26 +90,28 @@ After you have reviewed (or edited) the default ATP Safe Links policy that appli
   
 5. Specify the name, description, and settings for your policy.<br/>**Example:** To set up a policy called "no direct click through" that does not allow people in a certain group in your organization to click through to a specific website without ATP Safe Links protection, you might specify the following recommended settings: 
     
-  - In the **Name** box, type no direct click through.
-    
-  - In the **Description** box, type a description like, Prevents people in certain groups from clicking through to a website without ATP Safe Links verification.
-    
-  - In the **Select the action** section, choose **On**.
-    
-  - Select **Apply real-time URL scanning for suspicious links and links that point to files** if you would like to enable URL detonation for suspicious and file-pointing URLs (recommended). And select **Wait for URL scanning to complete before delivering the message** if you wish to only have users receive messages after the URLs have been fully scanned.
-    
-  - Select **Apply Safe Links to messages sent within the organization** if you would like to enable Safe Links for messages sent between users within your organization (recommended).
-    
-  - Select **Do not allow user to click through to original URL** if you do not wish the individual users to override a *scan in progress* or *URL blocked* notification pages.
-    
-  - (This is optional) In the **Do not rewrite the following URLs** section, specify one or more URLs that are considered to be safe for your organization. (See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
-    
-  - In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
+    - In the **Name** box, type no direct click through.
+
+    - In the **Description** box, type a description like, Prevents people in certain groups from clicking through to a website without ATP Safe Links verification.
+
+    - Under **Select the action for unknown potentially malicious URLs in messages**, choose **On**.
+
+    - If you see **Select the action for unknown or potentially malicious URLs within Microsoft Teams**, choose **On**. <br/>
+
+    - Select **Apply real-time URL scanning for suspicious links and links that point to files** if you would like to enable URL detonation for suspicious and file-pointing URLs (recommended). And select **Wait for URL scanning to complete before delivering the message** if you wish to only have users receive messages after the URLs have been fully scanned.
+
+    - Select **Apply Safe Links to messages sent within the organization** if you would like to enable Safe Links for messages sent between users within your organization (recommended).
+
+    - Select **Do not allow user to click through to original URL** if you do not wish the individual users to override a *scan in progress* or *URL blocked* notification pages.
+
+    - (This is optional) In the **Do not rewrite the following URLs** section, specify one or more URLs that are considered to be safe for your organization. (See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md))
+
+    - In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
     
 6. Choose **Save**.
 
 > [!NOTE]
-> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more polices, only the higher priority policy will take effect.
+> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more policies, only the higher priority policy will take effect.
     
 ## Step 4: Learn about ATP Safe Links policy options
 
@@ -132,16 +136,17 @@ Default policy options apply to everyone in your organization.
 |---------|---------|
 |**Off** <br/> |Does not scan URLs in email messages.  <br/> Enables you to define an exception rule, such as a rule that does not scan URLs in email messages for a specific group of recipients.  <br/> |
 |**On** <br/> |Rewrites URLs to route users through ATP Safe Links protection when the users click URLs in email messages and enables ATP Safe Links within Outlook (C2R) on Windows.  <br/> Checks a URL when clicked against a list of blocked or malicious URLs and triggers a detonation of the URL in the background asynchronously if the URL does not have a valid reputation.  <br/> |
+|**Unknown or potentially malicious URLs within Microsoft Teams** |When this option is available and selected, it turns on ATP Safe Links in Microsoft Teams chats and channels. When a user clicks on a URL in a Microsoft Teams chat or channel, the link is checked. The URL is checked against a list of blocked or malicious URLs and triggers a detonation of the URL in the background asynchronously if the URL does not have a valid reputation. |
 |**Apply real-time URL scanning for suspicious links and links that point to files** <br/> |When this option is selected, suspicious URLs and links that point to downloadable content are scanned.  <br/> |
 |**Wait for URL scanning to complete before delivering the message** <br/> |When this option is selected, messages that contain URLs to be scanned will be held until the URLs finish scanning and are confirmed to be safe before the messages are delivered.  <br/> |
-|**Apply Safe Links to messages sent within the organization** <br/> | When this option is available and selected, ATP Safe Links protection is applied to email messages sent between people in your organization, provided the email accounts are hosted in Office 365.  <br/> |
+|**Apply Safe Links to messages sent within the organization** <br/> | When this option is selected, ATP Safe Links protection is applied to email messages sent between people in your organization, provided the email accounts are hosted in Office 365.  <br/> |
 |**Do not track user clicks** <br/> |When this option is selected, click data for URLs in email from external senders is not stored. URL click tracking for links within email messages sent within the organization is currently not supported.  <br/> |
 |**Do not allow users to click through to original URL** <br/> |When this option is selected, users cannot proceed past a [warning page](atp-safe-links-warning-pages.md) to a URL that is determined to be malicious.  <br/> |
 |**Do not rewrite the following URLs** <br/> |Leaves URLs as they are. Keeps a custom list of safe URLs that don't need scanning for a specific group of email recipients in your organization.  See [Set up a custom "Do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) for more details, including recent changes to support for wildcard asterisks (\*).  <br/> |
    
 ## Next steps
 
-Once your ATP Safe Links policies are in place, you can see how ATP is working for your orgnization by viewing reports. See the following resources to learn more:
+Once your ATP Safe Links policies are in place, you can see how ATP is working for your organization by viewing reports. See the following resources to learn more:
 
 - [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
 

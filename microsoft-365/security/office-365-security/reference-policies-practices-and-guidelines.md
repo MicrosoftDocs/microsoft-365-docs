@@ -84,7 +84,7 @@ Microsoft actively works with industry bodies and service providers in order to 
 
 ## Abuse and spam reporting
 
-To report unlawful, abusive, unwanted or malicious email, please [Report junk email and phishing scams in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Sending these types of communications is a violation of Microsoft policy and appropriate action will be taken on confirmed reports.
+To report unlawful, abusive, unwanted or malicious email, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md). Sending these types of communications is a violation of Microsoft policy, and appropriate action will be taken on confirmed reports.
 
 ## Law enforcement
 

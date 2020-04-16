@@ -131,7 +131,7 @@ Marketing emails, especially newsletters, should always include a way of unsubsc
 
  `This email was sent to example@contoso.com by sender@fabrikam.com.`
 
- `Update Profile/Email Address | Instant removal with SafeUnsubscribe™ | Privacy Policy`
+ `Update Profile/Email Address | Instant removal with SafeUnsubscribe&trade; | Privacy Policy`
 
 Some senders include this option by requiring recipients to send an email to a certain alias with "Unsubscribe" in the subject. This is not preferable to the one-click example above. If you do choose to require recipients to send a mail, ensure that when they click the link, all the required fields are pre-populated.
 
@@ -165,7 +165,7 @@ Just as important as the way the emails are sent is the content they contain. Wh
 
   `unsubscribe.bulkmailer.com`
 
-  `profiles.excite.com`
+  `profile.excite.com`
 
   `options.yahoo.com`
 
