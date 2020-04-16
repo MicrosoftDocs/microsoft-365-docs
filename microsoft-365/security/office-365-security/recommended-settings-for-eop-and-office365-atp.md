@@ -59,7 +59,6 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Spam ZAP** <br/><br/> _SpamZapEnabled_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
 |**Phish ZAP** <br/><br/> _PhishZapEnabled_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
 |_MarkAsSpamBulkMail_|On|On|This setting is only available in PowerShell.|
-|
 
 There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
 
@@ -82,7 +81,6 @@ We recommend that you turn these ASF settings **Off** for both **Standard** and 
 |**SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
 |**Conditional Sender ID filtering: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
 |**NDR backscatter** (_MarkAsSpamNdrBackscatter_)||
-|
 
 #### EOP outbound spam policy settings
 
@@ -94,7 +92,6 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 |**Maximum number of recipients per user: Internal hourly limit** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
 |**Maximum number of recipients per user: Daily limit** <br/><br/> _RecipientLimitPerDay_|1000|800||
 |**Action when a user exceeds the limits** <br/><br/> _ActionWhenThresholdReached_|**Restrict the user from sending mail** <br/><br/> `BlockUser`|**Restrict the user from sending mail** <br/><br/> `BlockUser`||
-|
 
 ### EOP anti-malware policy settings
 
@@ -107,7 +104,6 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 |**Malware Zero-hour Auto Purge** <br/><br/> _ZapEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Notify internal senders** of the undelivered message <br/><br/> _EnableInternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
 |**Notify external senders** of the undelivered message <br/><br/> _EnableExternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
-|
 
 ### EOP default anti-phishing policy settings
 
@@ -118,7 +114,6 @@ You can only configure these settings in Office 365 organizations with Exchange 
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).|
 |**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
-|
 
 ## Office 365 Advanced Threat Protection security
 
@@ -183,7 +178,6 @@ Note that these are the same settings that are available in [anti-spam policy se
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).|
 |**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
-|
 
 #### Advanced settings in ATP anti-phishing policies
 
