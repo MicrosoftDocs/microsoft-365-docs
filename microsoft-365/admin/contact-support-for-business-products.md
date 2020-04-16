@@ -22,7 +22,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: "Get technical and billing support using phone numbers listed for your region or locale, or by submitting your service request online, or by visiting a Microsoft store."
+description: "Get technical and billing support by submitting your service request online, by using phone numbers listed for your region or locale, or by visiting a Microsoft store."
 feedback_system: None
 ---
 # Contact support for business products - Admin Help
@@ -58,11 +58,13 @@ Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), 
 
 - **In the United Kingdom, call 0800 032 6417.**
 
+### Phone numbers for other countries
+
 If your Office 365 or Microsoft 365 Business support phone number isn't listed above, use the drop-down menu below to choose your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-To learn how to open a service request, select the **Online support** tab above.
+To learn how to open a service request, select [Online support](#online-support).
 
 ## In-store support
 
