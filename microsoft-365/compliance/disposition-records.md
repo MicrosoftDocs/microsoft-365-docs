@@ -49,7 +49,7 @@ For instructions to grant users the **Disposition Management** role and create y
 
 When you configure a retention label and specific an end period, your deletion options at the end of that period are to automatically delete the content or trigger a disposition review.
 
-If you choose the option **Delete the content automatically**, no further action is needed from you. However, you can confirm that the content was deleted.  For more information, see the [View pending dispositions and disposed items](view-pending-dispositions-and-disposed-items) section on this page.
+If you choose the option **Delete the content automatically**, no further action is needed from you. However, you can confirm that the content was deleted.  For more information, see the [View pending dispositions and disposed items](#view-pending-dispositions-and-disposed-items) section on this page.
 
 If you choose the option **Trigger a disposition review**, additional action is needed before the content is deleted. For more information, see the next section.
 
