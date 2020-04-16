@@ -52,7 +52,7 @@ Windows 10 Enterprise including Windows Update for Business | [Manage connection
 Delivery Optimization | [Configure Delivery Optimization for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Office 365 | [Office 365 URL and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
-Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)
+Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Network endpoints for Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP endpoints](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
 
 <!---
