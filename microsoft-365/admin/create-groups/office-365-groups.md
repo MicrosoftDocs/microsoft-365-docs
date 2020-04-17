@@ -28,6 +28,7 @@ Microsoft 365 Groups is the foundational membership service that drives all team
 - A shared calendar
 - A SharePoint document library
 - A Planner
+- A OneNote notebook
 - Power BI
 - Yammer (if the group was created from Yammer)
 - A Team (if the group was created from Teams)

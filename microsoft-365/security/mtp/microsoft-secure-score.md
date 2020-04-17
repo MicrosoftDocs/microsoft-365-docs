@@ -162,6 +162,8 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
 - Set up versioning on SharePoint online document libraries
+- Delete/block accounts not used in last 30 days
+- Designate fewer than 5 global admins
 
 #### Removed "not scored" improvement actions
 
