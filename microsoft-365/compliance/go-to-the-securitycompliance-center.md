@@ -15,7 +15,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: "Before you can use the Security & Compliance Center, you need the right permissions. Your work or school account must either be assigned the Office 365 global administrator role or have been assigned to one or more Security & Compliance Center role groups by a global administrator."
+ms.custom:
+- seo-marvel-apr2020
+description: After you have secured the necessary permissions, learn how to access the Office 365 Security & Compliance Center.
 ---
 
 # Go to the Office 365 Security & Compliance Center
