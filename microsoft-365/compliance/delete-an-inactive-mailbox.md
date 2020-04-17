@@ -15,6 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
+ms.custom:
+- seo-marvel-apr2020
 description: "When you no longer need to preserve the contents of an Office 365 inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. After removing the hold, the inactive mailbox is marked for deletion and is permanently deleted after it's processed."
 ---
 
