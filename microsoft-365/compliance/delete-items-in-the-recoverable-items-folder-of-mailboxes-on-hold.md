@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: "For administrators: Delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold. This is an effective way to delete data that's been accidentally spilled into Office 365."
+description: Learn how to delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 ms.custom: seo-marvel-apr2020
 ---
 
