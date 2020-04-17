@@ -26,7 +26,7 @@ Office 365 offers several ways that your organization can prevent mailbox conten
 
 - **[Litigation Hold](create-a-litigation-hold.md):** Holds that are applied to user mailboxes in Exchange Online.
 
-- **[eDiscovery hold](ediscovery-cases.md#step-4-place-content-locations-on-hold):** Holds that are associated with an eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Office 365 Groups and Microsoft Teams.
+- **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with an eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Office 365 Groups and Microsoft Teams.
 
 - **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the Exchange admin center in Exchange Online.
 
