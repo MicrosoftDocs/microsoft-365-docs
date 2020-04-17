@@ -81,9 +81,6 @@ When a disposition review is triggered at the end of the retention period:
     
 - Reviewers can view either pending or completed dispositions, and export that list as a .csv file.
 
-> [!NOTE]
-> Each person that participates in a disposition review requires an Office 365 Enterprise E5 subscription.
-  
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
   
 ![Dispositions page in Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
@@ -95,7 +92,7 @@ This is the basic workflow for a disposition review when a retention label is pu
   
 ![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-A disposition review is an option when you create a retention label. This option is not available in a retention policy but only in a retention label that's configured to retain content.
+Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. This option is not available in a retention policy.
   
 For more information about retention labels, see [Overview of retention labels](labels.md).
   
