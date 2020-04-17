@@ -311,11 +311,11 @@ EOP analyzes and blocks messages that can't be authenticated by the combination 
 
 Microsoft 365 keeps track of who is sending unauthenticated email to your organization. If the service thinks the sender is not legitimate, it will mark it as a *compauth* failure. This will be classified as SPOOF although it depends on your anti-spoofing policy that was applied to the message.
 
-However, as an administrator, you can specify which senders are permitted to send spoofed email, overriding Office 365's decision.
+However, as an administrator, you can specify which senders are permitted to send spoofed email, overriding Microsoft 365's decision.
 
 #### Method 1 - If your organization owns the domain, set up email authentication
 
-This method can be used to resolve intra-org spoofing, and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Office 365, and also third parties that are hosted in other providers.
+This method can be used to resolve intra-org spoofing, and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Microsoft 365, and also third parties that are hosted in other providers.
 
 For more details, see [Customers of Microsoft 365 for business](#customers-of-microsoft-365-for-business).
 
@@ -527,11 +527,11 @@ If you are an administrator who currently sends messages to Microsoft, either Of
 
 ### Customers of Microsoft 365 for business
 
-If you are a customer and you use Office 365 to send outbound email:
+If you are a customer and you use Microsoft 365 to send outbound email:
 
-- For your domains, [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- For your domains, [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-- For your primary domains, [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)
+- For your primary domains, [Use DKIM to validate outbound email sent from your custom domain](use-dkim-to-validate-outbound-email.md)
 
 - [Consider setting up DMARC records](use-dmarc-to-validate-email.md) for your domain to determine who are your legitimate senders
 
@@ -561,7 +561,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 The neutral SPF policy means that any email that comes out of your corporate infrastructure will pass email authentication at all other email receivers. Email that comes from senders you don't know about will fall back to neutral, which is almost the same as publishing no SPF record at all.
 
-When sending to Office 365, email that comes from your corporate traffic will be marked as authenticated, but the email that comes from sources you don't know about may still be marked as spoof (depending upon whether or not Office 365 can implicitly authenticate it). However, this is still an improvement from all email being marked as spoof by Office 365.
+When sending to Microsoft 365, email that comes from your corporate traffic will be marked as authenticated, but the email that comes from sources you don't know about may still be marked as spoof (depending upon whether or not Microsoft 365 can implicitly authenticate it). However, this is still an improvement from all email being marked as spoof by Microsoft 365.
 
 Once you've gotten started with an SPF record with a fallback policy of ?all, you can gradually include more and more sending infrastructure and then publish a stricter policy.
 
@@ -617,7 +617,7 @@ To help mailing list messages pass anti-spoofing checks, do following steps base
 
 Nearly all large email receivers implement traditional SPF, DKIM, and DMARC. Some receivers have other checks that are more strict than just those standards, but few go as far as Microsoft 365 to block unauthenticated email and treat them as a spoof. However, most of the industry is becoming more and more strict about this particular type of email, particularly because of the problem of phishing.
 
-  - Create a support ticket with Office 365 to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).
+  - Create a support ticket with Microsoft to create an override for the mailing list to treat it as legitimate. For more information, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).
 
 If all else fails, you can report the message as a false positive to Microsoft. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -625,4 +625,4 @@ You may also contact your admin who can raise it as a support ticket with Micros
 
 ## Considerations for anti-spoofing protection
 
-If you're an admin who currently sends messages to Office 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phish. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
+If you're an admin who currently sends messages to Microsoft 365, you need to ensure that your email is properly authenticated. Otherwise, it might be marked as spam or phish. For more information, see [Solutions for legitimate senders who are sending unauthenticated email](email-validation-and-authentication.md#solutions-for-legitimate-senders-who-are-sending-unauthenticated-email).
