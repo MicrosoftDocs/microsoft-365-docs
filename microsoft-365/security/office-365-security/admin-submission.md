@@ -23,7 +23,7 @@ If you're an admin in an Office 365 organization with mailboxes in Exchange Onli
 
 When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
 
-For other ways to submit email messages, URLs, and attachments to Microsoft, see 
+For other ways to submit email messages, URLs, and attachments to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## What do you need to know before you begin?
 
@@ -37,13 +37,15 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ## How to direct suspicious content to Microsoft for Office 365 scanning
 
-To submit content to Microsoft click the **New submission** button in the top left hand side of the submissions page. A flyout on the right side of the page appears with the option to submit either an email, URL, or file.
+1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+
+2. On the **Submissions** page that appears, click the **New submission** button.
+
+3. Use **New submission** flyout that appears to submit the message, URL, or attachment as described in the following sections.
 
 ### Submit a questionable email to Microsoft
 
-![Email submission example](../../media/submission-flyout-email.PNG)
-
-1. To submit an email, select **email** and specify the email **network message ID** or upload the email file.
+1. In the **Object type** section, select **email** and specify the email **network message ID** or upload the email file.
 
 2. Specify the recipient(s) that you would like to run the policy check against. The policy check will determine if the email bypassed scanning due to user or tenant level policies.
 
@@ -55,20 +57,22 @@ To submit content to Microsoft click the **New submission** button in the top le
 
 4. Click the **Submit** button.
 
+![Email submission example](../../media/submission-flyout-email.PNG)
+
 ### Send a suspect URL to Microsoft
 
-![Email submission example](../../media/submission-url-flyout.png)
-
-1. To submit a URL select **URL** from the flyout. Type in the full URL including the protocol (**https://**).
+1. In the **Object type** section, select **URL** from the flyout. Type in the full URL including the protocol (**https://**).
 
    If you selected **Should have been filtered**, specify if the URL is phishing or malware.
 
 2. Click the **Submit** button.
 
+![Email submission example](../../media/submission-url-flyout.png)
+
 ### Submit a suspected file to Microsoft
 
-![Email submission example](../../media/submission-file-flyout.PNG)
-
-1. To submit a file select **File** from the flyout and upload the file you would like to scan.
+1. In the **Object type** section, select **File** from the flyout and upload the file you would like to scan.
 
 2. Click the **Submit** button.
+
+![Email submission example](../../media/submission-file-flyout.PNG)
