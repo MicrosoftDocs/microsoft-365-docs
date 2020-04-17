@@ -51,7 +51,7 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Advanced eDiscovery or added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
+To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
@@ -85,7 +85,7 @@ There are two subgroups in the eDiscovery Manager role group. The difference bet
 
   Because of the broad scope of access, an organization should have only a few admins who are members of the eDiscovery Administrators subgroup.
 
-For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions in the Security & Compliance Center](assign-ediscovery-permissions.md).
+For more information about eDiscovery permissions and a description of each role that's assigned to the eDiscovery Manager role group, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
 ## Step 3: Configure global settings for Advanced eDiscovery
 
@@ -102,7 +102,7 @@ The next step is to create a case and start using Advanced eDiscovery. Complete 
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and sign in using the credentials for user account that has been assigned the appropriate eDiscovery permissions. Members of the Organization Management role group can also create Advanced eDiscovery cases.
 
-2. In the left nave of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
+2. In the left navigation pane of the Microsoft 365 compliance center, click **Show all**, and then click **eDiscovery > Advanced**.
 
 3. On the **Advanced eDiscovery** page, click the **Cases** tab, and then click **Create a case**.
 
