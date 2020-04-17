@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: "You can create an inactive mailbox in Office 365 by applying a hold or Office 365 retention policy to the mailbox and then deleting the corresponding Office 365 user account. Items in an inactive mailbox are retained for the duration of the hold or retention policy that was applied to it before it was made inactive. To permanently delete an inactive mailbox, just remove the hold or retention policy."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to to retain the contents of deleted mailboxes by using the inactive mailboxes feature in Office 365.
 ---
 
 # Create and manage inactive mailboxes in Office 365
