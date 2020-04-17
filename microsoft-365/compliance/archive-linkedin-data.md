@@ -11,9 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Set up a connector to import LinkedIn data to Microsoft 365 so you can use compliance tools such as legal hold, Content Search, and retention policies."
+ms.custom: seo-marvel-apr2020
+description: "Learn how administrators can setup & use a native connector to import data from a LinkedIn Company Page to Microsoft 365."
 ---
 
 # Set up a connector to archive LinkedIn data

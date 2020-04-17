@@ -11,7 +11,8 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-description: "This topic shows what a data loss prevention (DLP) policy looks for when it detects the EU Driver's License Number sensitive information type. This sensitive information type defines different patterns, keywords, and other evidence for each country."
+ms.custom: seo-marvel-apr2020
+description: "This article presents a data loss prevention (DLP) policy for detecting sensitive information type from EU drivers license number."
 ---
 
 # EU Driver's License Number

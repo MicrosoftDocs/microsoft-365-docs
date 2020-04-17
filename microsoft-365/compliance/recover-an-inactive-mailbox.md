@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: "If a former employee returns to your organization, or if a new employee is hired to take on the job responsibilities of a departed employee, you can recover the contents of the inactive mailbox in Office 365. When you recover an inactive mailbox, it's converted to a new mailbox that contains the contents of the inactive mailbox. "
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn how to recover the contents of the inactive mailbox in Microsoft Office 365."
 ---
 
 # Recover an inactive mailbox in Office 365

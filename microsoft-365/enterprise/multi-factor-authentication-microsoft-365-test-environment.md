@@ -1,5 +1,5 @@
 ---
-title: "Multi-factor authentication for your Microsoft 365 Enterprise test environment"
+title: Microsoft 365 Enterprise test environment multi-factor authentication
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -16,6 +16,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 description: "Configure multi-factor authentication using text messages sent to a smart phone in your Microsoft 365 Enterprise test environment."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Multi-factor authentication for your Microsoft 365 Enterprise test environment

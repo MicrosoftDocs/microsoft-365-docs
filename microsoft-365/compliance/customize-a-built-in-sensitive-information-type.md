@@ -15,7 +15,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "When looking for sensitive information in content, you need to describe that information in what's called a rule. Data loss prevention (DLP) includes rules for the most-common sensitive information types that you can use right away. To use these rules, you have to include them in a policy. You might find that you want to adjust these built-in rules to meet your organization's specific needs, and you can do that by creating a custom sensitive information type. This topic shows you how to customize the XML file that contains the existing rule collection to detect a wider range of potential credit-card information."
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn how to customize a built-in sensitive information type to meet your organization specific needs."
 ---
 
 # Customize a built-in sensitive information type
