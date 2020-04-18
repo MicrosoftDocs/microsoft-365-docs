@@ -90,7 +90,7 @@ Existing desktop (Win32) application compatibility is strong in Windows 10, with
 
 Windows 10 Business is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business.
 
-Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threads. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
+Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threats. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
 
 If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business provides an upgrade to Windows 10 Pro, which is the prerequisite for deploying Windows 10 Business.
 > [!IMPORTANT]
