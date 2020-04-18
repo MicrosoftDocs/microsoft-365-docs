@@ -32,7 +32,7 @@ When we detect significant issues within Microsoft's global network or with inte
 
 | Location | Issue Type | Detail |
 | --- | --- | --- |
-| Mexico | ISP Infrastructure (External) | Availability issues detected within Internet Service Provider infrastructure in Mexico could result in a poor Microsoft 365 user experience. Please check the Service Health dashboard for more details. |
+| No current issues | | |
 
 ## Recommendations to improve network experience
 
