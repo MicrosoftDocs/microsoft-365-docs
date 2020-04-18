@@ -29,7 +29,7 @@ description: "Learn how to edit or add a custom DNS record in Office 365. "
 
 1. Sign in to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.   
 
-2. Go to the **Settings** \> **Domains** page.
+2. Go to the **Setup** \> **Domains** page.
 
 3. On the **Domains** page, select a domain. 
     
