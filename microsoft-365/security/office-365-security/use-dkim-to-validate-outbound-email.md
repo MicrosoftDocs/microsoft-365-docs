@@ -120,12 +120,6 @@ Run the following commands to create the selector records:
     Get-DkimSigningConfig -Identity <domain> | fl Selector1CNAME, Selector2CNAME
 ```
 
-Create CNAMEs referenced in Get-DkimSigningConfig output
-
-```powershell
-    Set-DkimSigningConfig -Identity <domain> -Enabled $true
-```
-
 Office 365 performs automatic key rotation using the two records that you establish. If you have provisioned custom domains in addition to the initial domain in Office 365, you must publish two CNAME records for each additional domain. So, if you have two domains, you must publish two additional CNAME records, and so on.
 
 Use the following format for the CNAME records.
