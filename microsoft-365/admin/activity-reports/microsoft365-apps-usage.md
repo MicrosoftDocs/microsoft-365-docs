@@ -18,7 +18,7 @@
  - GEA150
  ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
  description: "Learn how to get a ProPlus for usage report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
- ---
+---
 
 # Microsoft 365 Reports in the admin center - ProPlus usage
 
