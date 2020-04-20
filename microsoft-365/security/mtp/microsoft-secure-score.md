@@ -132,9 +132,7 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 ## What's new?
 
-To make Microsoft Secure Score a better representative of your security posture we have made some changes.
-
-To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+To make Microsoft Secure Score a better representative of your security posture we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 ### March 2020
 
