@@ -37,8 +37,6 @@ When you add a subscription through the admin center, the new subscription is as
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. Sign in to the admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339), and then go to **Billing** \> **Purchase services**.
 
@@ -65,9 +63,6 @@ When you add a subscription through the admin center, the new subscription is as
 
 11. On the **order receipt** page, select **continue**.
 
-#### Not using the new admin center yet?
-
-If you have new admin center turned off, watch the videos in this article to learn how to sign up for a trial Microsoft 365 subscription: [Sign up for a subscription](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ::: moniker-end
 

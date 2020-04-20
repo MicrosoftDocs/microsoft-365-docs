@@ -36,8 +36,6 @@ After purchasing a new subscription, you'll need to assign the users who you wan
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 
@@ -104,7 +102,6 @@ After purchasing a new subscription, you'll need to assign the users who you wan
 8. On the confirmation page, select **Go to Admin Home**.
 
 ::: moniker-end
-
 
 ## Related articles
 

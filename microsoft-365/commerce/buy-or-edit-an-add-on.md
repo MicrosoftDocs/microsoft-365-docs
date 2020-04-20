@@ -29,13 +29,6 @@ ms.custom: okr_SMB
 Several of the Microsoft 365 for business plans have add-ons that you can buy for your subscription. An add-on provides additional functionality to the subscription that you buy it for.
 
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end 
-
 ## Buy an add-on
 
 ::: moniker range="o365-worldwide"

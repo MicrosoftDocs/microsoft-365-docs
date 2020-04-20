@@ -55,12 +55,6 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 ::: moniker-end
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
 
 ## Change your Sold-To address
 
@@ -198,6 +192,6 @@ You can also change the alternate email address of other global and billing admi
 
 [Understand your invoice](understand-your-invoice2.md)
 
-[Pay for yoursubscription](pay-for-your-subscription.md)
+[Pay for your subscription](pay-for-your-subscription.md)
 
 [Subscriptions and billing - Admin Help](../index.yml)
