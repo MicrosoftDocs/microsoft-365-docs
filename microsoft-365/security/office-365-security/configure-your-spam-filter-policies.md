@@ -337,10 +337,10 @@ When a spam filtering verdict quarantines a message, you can configure end-user 
 
    - **Send end-user spam notifications every (days)**: Select how frequently notifications are sent. The default value is 3 days. You can enter 1 to 15 days.
    
-    - **Notification Behaviour**: There are 3 cycles of End User Spam Notification within a 24 hour period. The first notification cycle starts at 1am UTC, the second notification cycle starts at 8am UTC, and the third notification starts at 4pm UTC. 
+     There are 3 cycles of end-user spam notification within a 24 hour period that start at the following times: 01:00 UTC, 08:00 UTC, and 16:00 UTC. 
     
      > [!NOTE]
-   > If we missed a notification during a previous cycle, subsequent cycle will push the notification. This may give the appearance of multiple notifications within the same day.
+     > If we missed a notification during a previous cycle, a subsequent cycle will push the notification. This may give the appearance of multiple notifications within the same day.
 
    - **Notification language**: Click the drop down an select an available language from the list. The default value is **Default**, which means end-user quarantine notifications use the default language of the EOP organization.
 
