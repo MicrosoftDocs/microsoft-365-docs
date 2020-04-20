@@ -48,10 +48,21 @@ Contoso IT administrators and compliance specialists attended online webinars ab
 The first step is to confirm that Contoso's Microsoft 365 licensing includes support for the communication compliance solution. To access and use communication compliance, Contoso IT administrators need to verify that Contoso has one of the following:
 
 - Microsoft 365 E5 subscription (paid or trial version)
-- Office 365 Enterprise E3 license with the Advanced Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
-They must also confirm that users included in communication compliance policies must be assigned to one of the licenses listed above.
+They must also confirm that users included in communication compliance policies must be assigned one of the licenses above.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 
@@ -65,7 +76,7 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 By default, Global Administrators do not have access to communication compliance features. [Permissions must be configured](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) so that Contoso IT administrators and compliance specialists have access to communication compliance.
 
-1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Office 365.
+1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
 2. After selecting **Create**, they give the new role group a friendly name of "*Communication compliance*" and select **Next**.
 3. They select **Choose roles** and then select **Add**. They add the required roles by selecting the checkbox for *Supervisory Review Administrator*, *Case Management*, *Compliance Administrator*, and *Review*, then they select **Add**, **Done,** and **Next**.
 
@@ -111,7 +122,7 @@ To access communication compliance when starting from the Microsoft 365 admin ce
 
 This opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft 365 compliance center** provided in the banner at the top of the page.
 
-![Security &amp; Compliance Center](../media/communication-compliance-case-scc.png)
+![Office 365 security and compliance center](../media/communication-compliance-case-scc.png)
 
 Once in the **Microsoft 365 compliance center**, Contoso IT administrators select **Show all** to display the full list of compliance solutions.
 
@@ -125,7 +136,7 @@ After selecting **Show all**, the Contoso IT administrators can access the commu
 
 To get started with a communication compliance policy, there are several prerequisites that Contoso IT administrators need to configure before setting up the new policy to monitor for offensive language. After these prerequisites have been completed, Contoso IT administrators and compliance specialists can configure the new policy and compliance specialists can start investigation and remediating any generated alerts.
 
-### Enabling auditing in Office 365
+### Enabling auditing in Microsoft 365
 
 Communication compliance requires audit logs to show alerts and track remediation actions taken by reviewers. The audit logs are a summary of all activities associated with a defined organizational policy or anytime there is a change to a communication compliance policy.
 
