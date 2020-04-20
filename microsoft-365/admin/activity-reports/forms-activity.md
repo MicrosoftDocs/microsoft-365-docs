@@ -36,9 +36,9 @@ For example, you can understand the activity of every user licensed to use Micro
     
 2. From the **Select a report** drop-down, select **Forms** \> **activity**.
 
-## Interpret the email activity report
+## Interpret the forms activity report
 
-You can get a view into your user's email activity by looking at the **Activity** and **Users** charts. 
+You can get a view into your user's forms activity by looking at the **Activity** and **Users** charts. 
 
 ![Forms activity report](../../media/adminformsactivity.png)
 

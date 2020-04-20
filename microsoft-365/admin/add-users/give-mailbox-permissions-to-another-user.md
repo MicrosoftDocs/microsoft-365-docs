@@ -44,11 +44,11 @@ Mailbox permissions allow you to give read/write access to a mailbox to another 
   
 The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
   
-- [Read email from another user's mailbox](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [Read email from another user's mailbox](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [Send email from another user's mailbox](https://support.office.com/article/Send-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E?#bkmk_sendemailanotheruser)
-    
-- [Send email on behalf of a user](https://support.office.com/article/Send-email-on-behalf-of-another-user-in-Office-365-C5E7749D-244E-477F-998E-55D3876C22EC?#bkmk_sendbehalflanotheruser)
+- [Send email from another user's mailbox](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [Send email on behalf of another user](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **Changing propagation:**
   
