@@ -251,15 +251,15 @@ Other apps and services that you can't currently use the sensitivity labels that
 
 ## Classic Azure AD group classification
 
-Office 365 no longer supports the old classifications for new groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classifications unless you convert them to use sensitivity labels. Old classifications include the "modern" sites classification you set up, possibly through Azure AD PowerShell or the PnP Core library, that defined values for the `ClassificationList` setting.
+Office 365 no longer supports the old classifications for new Office 365 groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classification values unless you convert them to use sensitivity labels.
 
-For example, in PowerShell:
+As an example of how you might have used the old group classification for SharePoint, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
+
+These classifications were configured by using Azure AD PowerShell or the PnP Core library and defining values for the `ClassificationList` setting. If your tenant has classification values defined, they are shown when you run the following command from the [AzureADPreview PowerShell module](https://www.powershellgallery.com/packages/AzureADPreview):
 
 ```powershell
    ($setting["ClassificationList"])
 ```
-
-As an example of how you might have used the old group classification for SharePoint, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
 To convert your old classifications to sensitivity labels, do one of the following:
 
