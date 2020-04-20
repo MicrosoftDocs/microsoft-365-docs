@@ -192,7 +192,7 @@
         - name: Manage messages in the Message center
           href: manage/manage-messages.md
         - name: Show or hide new features using What's New Management
-          href: show-hide-new-features.md
+          href: manage/show-hide-new-features.md
     - name: Subscriptions and billing
       items: 
         - name: Manage your subscriptions
