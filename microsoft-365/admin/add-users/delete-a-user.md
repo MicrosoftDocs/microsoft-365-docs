@@ -95,7 +95,7 @@ Since the guided experience walks through the steps to delete a user, here's how
 
 
 > [!IMPORTANT]
-> Don't delete a user's account if you've [converted it to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md) or if you've set up email forwarding on the account. Those functions need the account to remain. A shared mailbox does not require a user license. If you've converted the account to a shared mailbox you can [Stop paying for the license](#stop-paying-for-the-license). If you have set up email forwarding on the account, you cannot remove the license. Doing so will stop email forwarding and deactivate the mailbox.
+> Don't delete a user's account if you've [converted it to a shared mailbox](../email/convert-user-mailbox-to-shared-mailbox.md) or if you've set up email forwarding on the account. Those functions still need the account. A shared mailbox doesn't require a license. If you've converted the account to a shared mailbox you can [Stop paying for the license](#stop-paying-for-the-license). If you've set up email forwarding on the account, you can't remove the license. Doing so will stop email forwarding and deactivate the mailbox.
   
 ::: moniker range="o365-worldwide"
 
