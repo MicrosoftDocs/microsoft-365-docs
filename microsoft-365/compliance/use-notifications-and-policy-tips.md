@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn how to send email notifications and show policy tips for DLP policies in the Office 365 security and compliance center."
+description: Learn how to add a policy tip to a data loss prevention (DLP) policy to notify a user that they are working with content that conflicts with a DLP policy.
 ---
 
 # Send email notifications and show policy tips for DLP policies

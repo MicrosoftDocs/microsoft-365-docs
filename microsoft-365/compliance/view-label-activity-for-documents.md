@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: "Learn how to view label activity for content across SharePoint & OneDrive for business with the label activity explorer in the Office 365 security & compliance center."
+description: Learn how to use the Label Activity Explorer in the Office 365 Security & Compliance Center to search and view label activity.
 ---
 
 # View label activity for documents
