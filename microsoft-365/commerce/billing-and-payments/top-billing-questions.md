@@ -14,7 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
-ms.custom:s
+ms.custom:
 - TopSMBIssues
 - okr_SMB
 search.appverid:
