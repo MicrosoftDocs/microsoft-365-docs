@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn how to recover the contents of the inactive mailbox in Microsoft Office 365."
+description: Learn how to recover the contents of an inactive mailbox in Office 365 by converting it to a new mailbox that contains the contents of the inactive mailbox.
 ---
 
 # Recover an inactive mailbox in Office 365

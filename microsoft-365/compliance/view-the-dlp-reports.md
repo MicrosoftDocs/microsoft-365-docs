@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn how to view the reports for data loss prevention in the Office 365 security and compliance center."
+description: Use the DLP reports in Office 365 to view the number of DLP policy matches, overrides, or false positives and see whether they're trending up or down over time.
 ---
 
 # View the reports for data loss prevention
