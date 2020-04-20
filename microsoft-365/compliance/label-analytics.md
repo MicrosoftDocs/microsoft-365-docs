@@ -15,7 +15,9 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "After you create your retention labels and sensitivity labels, you’ll want to see how they’re being used across your tenant. With label analytics in the Microsoft 365 compliance center and Microsoft 365 security center, you can quickly see which labels are used the most and where they’re being applied."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to quickly see which retention labels and sensitivity labels are used the most and where they’re being applied.
 ---
 
 # View label usage with label analytics
