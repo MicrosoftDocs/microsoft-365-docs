@@ -44,7 +44,7 @@ Learn how to accelerate your HITRUST deployment with our Azure Security and Comp
 
 The HITRUST CSF certification of Azure and Office 365 is valid for two years.
 
-- [Azure HITRUST Letter of Certification](https://aka.ms/AzureHiTrustLetterofCertification)
+- [Azure HITRUST Letter of Certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 - [Office 365 HITRUST Letter of Certification](https://aka.ms/O365HITRUSTcertification)
 
 ## Accelerate your deployment of HIPAA/HITRUST solutions on Azure
@@ -73,7 +73,7 @@ Yes. If your business requires a HITRUST certification for implementations deplo
 
 **How can I get a copy of the HITRUST certification?**
 
-You can download a copy of letter of certification for [Azure](https://aka.ms/AzureHiTrustLetterofCertification) and [Office 365](https://aka.ms/O365HITRUSTcertification).
+You can download a copy of letter of certification for [Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports) and [Office 365](https://aka.ms/O365HITRUSTcertification).
 
 **What are the in-scope services for Office 365?**
 
@@ -101,7 +101,7 @@ Log in to the HITRUST MyCSF® tool and pre-populate your assessment for your sol
 ## Resources
 
 - [HITRUST Alliance](https://hitrustalliance.net/)
-- [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)
+- [HITRUST CSF 9.3](https://hitrustalliance.net/csf-license-agreement/)
 - [Understanding and Leveraging the CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Find out more about the HITRUST Shared Responsibility Program](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

@@ -237,11 +237,11 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
    When you're finished, click **Save** on any page.
 
-6. **Spoof**: Click **Edit** to enable or disable spoof intelligence, unauthenticated sender identification (adds a question mark to the sender's photo if the message fails email authentication checks), and the action to apply to messages from unidentified or blocked spoofed senders. For more information, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings).
+6. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
    Note that these settings are identical to the settings that are available in the default anti-phishing policy in EOP.
 
-   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
      > You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).

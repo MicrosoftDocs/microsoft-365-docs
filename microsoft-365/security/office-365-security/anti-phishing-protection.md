@@ -37,9 +37,9 @@ With the growing complexity of attacks, it's even difficult for trained users to
 
 EOP (that is, Office 365 organizations without ATP) contains features that can help protect your organization from phishing threats:
 
-- **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Learn more about spoof intelligence](learn-about-spoof-intelligence.md).
+- **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
-- **Default anti-phishing policy**: Turn spoof intelligence on or off, turn unauthenticated sender identification on or off (adds a question mark to the sender's photo if the message fails email authentication checks), and specify the action for unidentified or blocked spoofed senders (move to Junk Email folder or quarantine). For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+- **Default anti-phishing policy**: Turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to Junk Email folder or quarantine). For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
 - **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Office 365](email-validation-and-authentication.md).
 
