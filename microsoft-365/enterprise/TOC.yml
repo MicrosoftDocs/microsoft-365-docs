@@ -188,6 +188,9 @@
           href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
     - name: Changes to Microsoft 365 for enterprise deployment content
       href: microsoft-365-deploment-guide-changes.md
+    - name: Microsoft 365 service health status
+      href: microsoft-365-service-health.md
+      
 - name: Desktop Deployment Center
   href: desktop-deployment-center-home.md
   items: 
