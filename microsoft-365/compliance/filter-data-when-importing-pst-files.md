@@ -13,7 +13,9 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: "Use the new Intelligent Import feature in the Office 365 Import service to filter the items that actually get imported to the target mailboxes. Intelligent Import lets you proactively decide what data to import and what to leave behind. Intelligent Import also provides insights on the data that you're importing to Office 365.
 "

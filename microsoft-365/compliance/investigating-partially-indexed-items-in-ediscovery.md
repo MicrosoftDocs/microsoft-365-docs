@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: "Partially indexed items (also call unindexed items) are Exchange mailbox items and documents on SharePoint and OneDrive sites that for some reason weren't completely indexed for Content Search. In this article, you can learn why items can't be indexed for search and are returned as partially indexed items, identify search errors for partially indexed items, and use a PowerShell script to determine your organization's exposure to partially indexed email items."
 ---

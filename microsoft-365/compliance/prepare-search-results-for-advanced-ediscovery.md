@@ -14,7 +14,9 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: "Learn how to prepare the results of a Content Search in the Security & Compliance Center in Office 365 for further analysis with the Advanced eDiscovery tool."
 ---

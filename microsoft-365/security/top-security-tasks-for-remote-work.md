@@ -9,6 +9,8 @@ audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection:
 - M365-security-compliance
 - remotework

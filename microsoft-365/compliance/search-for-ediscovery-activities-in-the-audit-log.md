@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: "Learn how to search the Office 365 audit log for events that are logged when compliance administrators perform Content Search and eDiscovery case tasks in the Security & Compliance Center."
 ---

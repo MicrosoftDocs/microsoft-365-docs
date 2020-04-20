@@ -10,6 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection: M365-security-compliance
 description: "Administrators can set up a connector to import third-party data from data sources such as Facebook Business pages, Twitter, LinkedIn Company pages, and Instant Bloomberg. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the governance of your organization's third-party data."
 ---
