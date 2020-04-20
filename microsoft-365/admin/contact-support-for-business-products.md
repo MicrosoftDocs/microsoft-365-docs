@@ -22,7 +22,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: "Get technical and billing support by submitting your service request online, by using phone numbers listed for your region or locale, or by visiting a Microsoft store."
+description: "Get technical and billing support by submitting your service request online, by using phone numbers listed for your country or region, or by visiting a Microsoft store."
 feedback_system: None
 ---
 # Contact support for business products - Admin Help
@@ -36,7 +36,7 @@ Start by [checking the current health of your Office 365 services](https://docs.
 
 ## Online support
 
-Save time by starting your service request online. We'll help you find a solution or connect you to an expert.
+Save time by starting your service request online. We'll help you find a solution or connect you to technical support.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. [Who has admin permissions in my business?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
@@ -64,11 +64,11 @@ Admins, have your account details ready when you call.
 
 ### Phone numbers for other countries
 
-If your Office 365 or Microsoft 365 Business support phone number isn't listed above, use the drop-down menu below to choose your country or region.
+If your support phone number isn't listed above, use the drop-down menu below to choose your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-To learn how to open a service request, select [Online support](#online-support).
+To learn how to open a service request, see [Online support](#online-support).
 
 ## In-store support
 
