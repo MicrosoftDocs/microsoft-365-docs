@@ -15,9 +15,35 @@ localization_priority: None
 description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
 ---
 
-# Learn about Information barriers
+# Information barriers
 
 ## Overview
+
+<!--
+
+# Information barriers (click-through test)
+
+## Overview
+
+
+
+ [![Click-Through for Information Barriers](./media/information-barriers/clickthrough-information-barriers-thumbnail.png)](./media/information-barriers/clickthrough-information-barriers.pdf)
+
+
+Click through an overview of Information Barriers: [PDF](./media/information-barriers/clickthrough-information-barriers.pdf) | [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/Clickthrough-Information-Barriers.pptx)
+
+OLD: Move comment field here
+
+ [![Click-Through for Information Barriers](./media/information-barriers/Clickthrough_InformationBarriers_Thumbnail.png)](./media/information-barriers/Clickthrough_InformationBarriers.pdf)
+
+For the PowerPoint slide of this Click-Through, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/Click-Through-Test/microsoft-365/compliance/media/information-barriers/InfoBarriersExample.pptx).
+
+>[!Tip]
+>Try this new [Click-Through on information barriers](media/information-barriers/Clickthrough_InformationBarriers.pdf) for a quick overview of the essential facts.
+>
+
+--> 
+
 
 Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communications between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communications between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communications among specific groups of users when necessary? With information barriers, you can! 
 
@@ -68,11 +94,11 @@ For more details, see [Compliance Solutions](https://products.office.com/busines
 To [define or edit information barrier policies](information-barriers-policies.md), you must be assigned one of the following roles:
 
 - Microsoft 365 global administrator
-- global administrator
+- Office 365 global administrator
 - Compliance administrator
 - IB Compliance Management (this is a new role!)
 
-(To learn more about roles and permissions, see [Permissions in the Security & Compliance Center](../security/office-365-security/protect-against-threats.md).)
+(To learn more about roles and permissions, see [Permissions in the Office 365 Security & Compliance Center](../security/office-365-security/protect-against-threats.md).)
 
 You must be familiar with PowerShell cmdlets in order to define, validate, or edit information barrier policies. Although we provide several examples of PowerShell cmdlets in the [how-to article](information-barriers-policies.md), you'll need to know additional details, such as parameters, for your organization.
 

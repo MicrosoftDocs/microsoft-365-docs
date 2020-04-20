@@ -17,7 +17,7 @@ ms.collection:
 description: "Admin can learn how to configure support for anonymous inbound email from IPv6 sources in Exchange Online and Exchange Online Protection."
 ---
 
-# Add support for anonymous inbound email over IPv6 in Office 365
+# Add support for anonymous inbound email over IPv6 in Microsoft 365
 
 Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes support anonymous inbound email over IPv6. The source IPv6 email server must meet both of the following requirements:
 
@@ -25,15 +25,7 @@ Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchan
 
 - The sender must pass either SPF verification (defined in [RFC 7208](https://tools.ietf.org/html/rfc7208)) or [DKIM verification](https://dkim.org/) (defined in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
 
-Before your organization can receive anonymous inbound email over IPv6, an admin needs to contact Microsoft support and ask for it:
-
-1. Open the Microsoft 365 admin center at <https://admin.microsoft.com/adminportal/home> and click **Help** (?).
-
-2. In the **Need help?** flyout that appears, type something descriptive in the search box (for example, "request anonymous inbound IPv6 email"), and then press ENTER.
-
-3. At the bottom of the page, click **Contact support**.
-
-4. In the **Contact support** page that appears, fill out and verify the information (scroll down as necessary), and then click **Contact me**.
+Before your organization can receive anonymous inbound email over IPv6, an admin needs to contact Microsoft support and ask for it. For instructions about how to open a support request, see [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).
 
 After anonymous inbound IPv6 message support is enabled in your organization, the message will go through the normal message filtering that's provided by the service.
 

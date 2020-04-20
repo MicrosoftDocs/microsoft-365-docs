@@ -70,6 +70,7 @@ Primarily for technical and business decision makers, these topics detail the di
 - [Microsoft Managed Desktop roles and responsibilities](roles-and-responsibilities.md)
 - [Microsoft Managed Desktop technologies](technologies.md)
 - [Microsoft Managed Desktop and ITIL](../MMD-and-ITSM.md)
+- [Compliance](compliance.md)
 - [Microsoft Managed Desktop service description](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Get ready for enrollment**
@@ -109,4 +110,3 @@ This section includes information about your day-to-day life with the service, s
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

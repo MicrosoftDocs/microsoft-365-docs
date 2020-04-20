@@ -43,7 +43,7 @@ Here’s a summary of how the change process is shared between Microsoft and cus
 
 <table>
 <tr><th></th><th><p>Microsoft's role:</p></th><th><p>Customer's role:</p></th></tr>
-<tr><td>Before a change</td><td><ul><li>Set expectations for service changes.</li><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Understand what to expect for changes and communications.</li><li>Read Microsoft Managed Desktop Message Center regularly.</li><li>Review and update internal change management processes.</li><li>Understand, and check compliance with Microsoft Managed Desktop requirements. </li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Release and deploy monthly security and non-security updates for Windows 10 and Microsoft 365 clients.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Check the Microsoft Managed Desktop Message Center and review any additional information.</li><li>	Take any action required, if applicable, and test applications.</li><li>If a break/fix scenario is experienced, create a Support request.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Work with people in your organization to adopt the change.</li><li>	Review change and adoption management processes for opportunities to gain efficiencies.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
+<tr><td>Before a change</td><td><ul><li>Set expectations for service changes.</li><li>Notify customers 5 days in advance for changes that require administrator action.</li><li>For emergency changes, apply a mitigation prior to notifying.</li></ul></td><td><ul><li>Understand what to expect for changes and communications.</li><li>Read Microsoft Managed Desktop Message Center regularly.</li><li>Review and update internal change management processes.</li><li>Understand, and check compliance with Microsoft Managed Desktop requirements. </li><li>Acknowledge and approve, when required.</li></ul></td></tr><tr><td>During a change</td><td><ul><li>Release and deploy monthly security and non-security updates for Windows 10 and Office 365 clients.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Check the Microsoft Managed Desktop Message Center and review any additional information.</li><li>	Take any action required, if applicable, and test applications.</li><li>If a break/fix scenario is experienced, create a Support request.</li></ul></td></tr><tr><td>After a change</td><td><ul><li>Collect customer feedback to improve rollout of future changes.</li><li>Monitor data signals and support queues for impact.</li></ul></td><td><ul><li>Work with people in your organization to adopt the change.</li><li>	Review change and adoption management processes for opportunities to gain efficiencies.</li><li>Provide general feedback and specific feedback in the admin feedback tool.</li><li>Train users to provide app-specific feedback using the Windows Feedback Hub and the Smile button in Office apps.</li></ul></td></tr>
 <table> 
 
 
@@ -62,7 +62,7 @@ Not all changes have the same impact on your users or require action. Some are p
 **Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security patches
 **Advance notice** | 5 days notice for changes that require action |	No, these are included in the monthly release	| No, these are included in the monthly release 
 **Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert
-**Requires tenant admin action** | Sometimes |	Rarely |	Rarely 
+**Requires global admin action** | Sometimes |	Rarely |	Rarely 
 **Type of action** | Change settings | Communicate changes to users | Change admin settings 	
 **Requires testing** | Check business applications, including remote access services |	Sometimes - testing the fix against processes or customizations |	Rarely 
 **Examples of change** | - Feature updates: IT Admin Portal simplified support ticket submission and review<br>- New features or applications: Semi-annual release of a Windows 10 feature update |	Hotfixes based on customer reported bugs |	
@@ -93,22 +93,22 @@ The Microsoft Managed Desktop Operations Team can perform a factory reset of dev
 
 There are a few requirements:
 
-- The customer’s tenant administrator must submit a service request
-- We need the computer name for the device
-- User account must be in Azure AD before we do the reset
+- Your global administrator must submit a service request.
+- Include the device's computer name in the request.
+- The user account must be in Azure AD before we reset the device.
 
-Managed Desktop Operations Team will:
+Managed Desktop Operations team will do the following:
 
 - Look up the device name in Intune
 - Send the factory reset command to the device
 
 >[!NOTE]
->Do not remove the user account from Azure AD before the factory reset. If the user isn’t in Azure AD, Intune can’t send the factory reset command to the device. 
+>Do not remove the user account from Azure AD before the device is reset. If the user isn’t in Azure AD, Intune can’t send the factory reset command to the device. 
 
-The device will boot into OOBE, and all preinstalled applications and settings will be applied again. The device’s user needs to provide initial set up information again. 
+The device will boot into the "out of box experience," and all preinstalled applications and settings will be applied again. The user of the device needs to provide initial setup information again. 
 
 When the device has been reset, you can give it to a different person in your organization. None of the previous user’s data or enterprise data will be on the device. The next user will go through the same process that the previous person did with a new Microsoft Managed Desktop device.
 
-BitLocker is a key component of data security in this process. With BitLocker encryption on Microsoft Managed Desktop devices, data on the drive remains secure even after Factory reset has been applied to the device. Any data that was on the drive will not be available to the next user of the device. For more information, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker is a key component of data security in this process. With BitLocker encryption on Microsoft Managed Desktop devices, data on the drive remains secure even after the device as been factory-reset. Any data that was on the drive will not be available to the next user of the device. For more information, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 For more information, see [Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 

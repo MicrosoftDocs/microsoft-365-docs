@@ -21,16 +21,14 @@ description: "Learn how to find and use email security reports for your organiza
 
 # View email security reports in the Security & Compliance Center
 
-A variety of reports are available in the [Security & Compliance Center](https://protection.office.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Office 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**.
+A variety of reports are available in the [Security & Compliance Center](https://protection.office.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features in Microsoft 365 are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security & Compliance Center by going to **Reports** \> **Dashboard**.
 
 ![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-A variety of reports are available in the [Security &amp; Compliance Center](https://protection.office.com) to help you see how email security features, such as anti-spam, anti-malware, and encryption features are protecting your organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security &amp; Compliance Center by going to **Reports** \> **Dashboard**.
-  
-![Dashboard where you see how Advanced Threat Protection is working](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
-  
 Your email security reports include the following:
-- [Compromised Users report (**NEW!**)](#compromised-users-report-new)
+
+- [URL Threat Protection report](#url-threat-protection-report-new) (**NEW!**)
+- [Compromised Users report](#compromised-users-report)
 - [Encryption report](#encryption-report)
 - [Threat Protection Status report](#threat-protection-status-report)
 - [Malware Detections report](#malware-detections-report)
@@ -41,12 +39,32 @@ Your email security reports include the following:
 - [Sent and received email report](#sent-and-received-email-report)
 - [User-reported messages report](#user-reported-messages-report)
 
+## URL Threat Protection report (**NEW!**)
 
-## Compromised Users report (**NEW!**) 
+The URL Threat Protection report is available to anyone with:
+
+- An Exchange Online Protection, *and* Advanced Threat Protection add-on (Plan 1 *or* Plan 2)
+- A Microsoft 365 E5 subscription
+
+This is a 'click-centric' report that has two aggregated views.
+
+1. The first view is by *URL click-protection action*, which is focused on showing the number of URL clicks by users within the tenant, and the result of the click. A click here indicates that the user has clicked through the block page to the malicious website (this can be disabled by the administrator within a Safe Links policy).
+
+2. The second view is *URL click by applications*, which shows the number of URLs click in different applications that support Safe Links today, such as in an email client or in Microsoft Word. Data in both aggregated views are refreshed once every 4 hours.
+
+The details table of the URL Threat Protection report provides a near-real-time view of all clicks that happen within the tenant, and it includes investigative information such as *username*, *URL*, the *network message ID* (if the URL was clicked from an email), and other valuable pieces of information useful for investigations and analyses.
+
+By default, the report only shows data on clicks from URLs that were blocked by Safe Links, but it is also possible to see information for all URL clicks through selecting *Allowed URLs* checkbox in the filters.
+
+This report will not have data of clicks from users where the Safe Links policy applied has the *Do not track user clicks* option selected.
+
+![Graphic of the URL Threat Protection Report in action.](../../media/tp-URLThreatProRpt1.PNG)
+
+## Compromised Users report
 
 This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant.
 
-![The compromised users report](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![The compromised users report as it appears in Microsoft 365.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## Encryption report
 
@@ -68,7 +86,7 @@ And, you can use the **View data by** menu to change the view to see counts of e
 
 ![Encryption report view data by menu](../../media/encryptionreport-viewdataby.png)
 
-With the flexibility of the new Encryption report, you can view trends and take appropriate actions. For example, if you see a high number of email messages encrypted by users, you might want to add an encryption policy to automate encryption for certain use cases. (To get help with that, see [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).) As another example, if you have a number of encryption templates available but no one is using them, you might explore whether users need training for that feature. 
+With the flexibility of the new Encryption report, you can view trends and take appropriate actions. For example, if you see a high number of email messages encrypted by users, you might want to add an encryption policy to automate encryption for certain use cases. (To get help with that, see [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).) As another example, if you have a number of encryption templates available but no one is using them, you might explore whether users need training for that feature.
 
 Use this report enables your organization's security and compliance team to monitor how message encryption is being used, and whether further actions are needed. To learn more about encryption, see [Email encryption in Microsoft 365](../../compliance/email-encryption.md).
 
@@ -146,9 +164,9 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 ![In the Security & Compliance Center, go to Reports \> Dashboard \> Spoof Mail](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
 
 When you hover over a day in the chart, you can see how many spoof mail messages came through.
-  
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spoofing-protection).
-  
+
+Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
+
 ## Spam Detections report
 
 The **Spam Detections** report shows all the spam content blocked by Exchange Online. Messages are counted per message, and not per recipient. For example, if an email message was sent to 100 recipients in your organization, it is counted as one message.
@@ -162,9 +180,9 @@ When you hover over a day in the chart, you can see how many items were blocked 
 Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
 
 ![The Spam Detections report tells you how many spam messages were blocked or filtered out](../../media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
-  
-Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Microsoft email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
-  
+
+Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Office 365 email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+
 ## Sent and received email report
 
 The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good."
@@ -186,7 +204,7 @@ Below the chart, you'll see a list of email categories, such as **GoodMail**, **
 ![This report tells you about anti-malware, anti-spam, and other message detections](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
 To learn more about email intelligence, see [Mail flow intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
-  
+
 ## User-reported messages report
 
 The **User-reported messages** report shows information about email messages that users have reported as junk, phishing attempts, or good mail by using the [Report Message add-in](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in).
@@ -204,8 +222,8 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 ![In the Security & Compliance Center, choose Threat management \> Review \> User reported messages](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> In order for the User-reported messages report to work correctly, **audit logging must be turned on** for your Microsoft 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). 
-  
+> In order for the User-reported messages report to work correctly, **audit logging must be turned on** for your Office 365 environment. This is typically done by someone who has the Audit Logs role assigned in Exchange Online. For more information, see [Turn Microsoft 365 audit log search on or off](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off).
+
 ## What permissions are needed to view these reports?
 
 In order to view and use the reports described in this article, **you must have an appropriate role assigned for both the Security & Compliance Center and the Exchange admin center**.
@@ -225,26 +243,19 @@ In order to view and use the reports described in this article, **you must have 
 
 To learn more, see the following resources:
 
-- [Permissions in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
-
+- [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
+ 
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## What if the reports aren't showing data?
 
 If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
-  
+
 ## Related topics
 
-[Microsoft Email Anti-Spam Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
-  
-[Reports and insights in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
-  
-[Create a schedule for a report in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
-  
-[Set up and download a custom report in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)
-  
+[Microsoft 365 Email Anti-Spam Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
-[Reports and insights in the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[Reports and insights in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
 
 [Create a schedule for a report in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
 

@@ -25,14 +25,14 @@ But what if you need to identify and protect a different type of sensitive infor
   
 This topic shows you how to create an XML file that defines your own custom sensitive information type. You need to know how to create a regular expression. As an example, this topic creates a custom sensitive information type that identifies an employee ID. You can use this example XML as a starting point for your own XML file.
   
-After you've created a well-formed XML file, you can upload it to Microsoft 365 by using Office 365 PowerShell. Then you're ready to use your custom sensitive information type in your DLP policies and test that it's detecting the sensitive information as you intended.
+After you've created a well-formed XML file, you can upload it to Microsoft 365 by using Microsoft 365 PowerShell. Then you're ready to use your custom sensitive information type in your DLP policies and test that it's detecting the sensitive information as you intended.
 
 > [!NOTE]
 > You can also create less complex custom sensitive information types in the Security & Compliance Center UI. For more information, see [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md).
 
 ## Important disclaimer
 <!-- this is worded much better than the previous one is -->
-Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns. For custom content-matching development, testing, and debugging, customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content-matching development will fulfill the customer's requirements or obligations.  As an example of the type of support that can be provided, sample regular expression patterns may be provided for testing purposes. Or, support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
+Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns. For custom content-matching development, testing, and debugging, Microsoft 365 customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content-matching development will fulfill the customer's requirements or obligations.  As an example of the type of support that can be provided, sample regular expression patterns may be provided for testing purposes. Or, support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
 
  For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
     
@@ -44,79 +44,79 @@ Here's the sample XML of the rule package that we'll create in this topic. Eleme
 <?xml version="1.0" encoding="UTF-16"?>
 <RulePackage xmlns="https://schemas.microsoft.com/office/2011/mce">
 <RulePack id="DAD86A92-AB18-43BB-AB35-96F7C594ADAA">
-    <Version build="0" major="1" minor="0" revision="0"/>
-    <Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
-    <Details defaultLangCode="en-us">
-        <LocalizedDetails langcode="en-us">
-            <PublisherName>Contoso</PublisherName>
-            <Name>Employee ID Custom Rule Pack</Name>
-            <Description>
-            This rule package contains the custom Employee ID entity.
-            </Description>
-        </LocalizedDetails>
-    </Details>
+	<Version build="0" major="1" minor="0" revision="0"/>
+	<Publisher id="619DD8C3-7B80-4998-A312-4DF0402BAC04"/>
+	<Details defaultLangCode="en-us">
+		<LocalizedDetails langcode="en-us">
+			<PublisherName>Contoso</PublisherName>
+			<Name>Employee ID Custom Rule Pack</Name>
+			<Description>
+			This rule package contains the custom Employee ID entity.
+			</Description>
+		</LocalizedDetails>
+	</Details>
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-        <Pattern confidenceLevel="60">
-            <IdMatch idRef="Regex_employee_id"/>
-        </Pattern>
-        <Pattern confidenceLevel="70">
-            <IdMatch idRef="Regex_employee_id"/>
-            <Match idRef="Func_us_date"/>
-        </Pattern>
-        <Pattern confidenceLevel="80">
-            <IdMatch idRef="Regex_employee_id"/>
-            <Match idRef="Func_us_date"/>
-            <Any minMatches="1">
-                <Match idRef="Keyword_badge" minCount="2"/>
-                <Match idRef="Keyword_employee"/>
-            </Any>
-            <Any minMatches="0" maxMatches="0">
-                <Match idRef="Keyword_false_positives_local"/>
-                <Match idRef="Keyword_false_positives_intl"/>
-            </Any>
-        </Pattern>
-    </Entity>
-    <Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
-    <Keyword id="Keyword_employee">
-        <Group matchStyle="word">
-            <Term>Identification</Term>
-            <Term>Contoso Employee</Term>
-        </Group>
-    </Keyword>
-    <Keyword id="Keyword_badge">
-        <Group matchStyle="string">
-            <Term>card</Term>
-            <Term>badge</Term>
-            <Term caseSensitive="true">ID</Term>
-        </Group>
-    </Keyword>
-    <Keyword id="Keyword_false_positives_local">
-        <Group matchStyle="word">
-            <Term>credit card</Term>
-            <Term>national ID</Term>
-        </Group>
-    </Keyword>
-    <Keyword id="Keyword_false_positives_intl">
-        <Group matchStyle="word">
-            <Term>identity card</Term>
-            <Term>national ID</Term>
-            <Term>EU debit card</Term>
-        </Group>
-    </Keyword>
-    <LocalizedStrings>
-        <Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
-            <Name default="true" langcode="en-us">Employee ID</Name>
-            <Description default="true" langcode="en-us">
-            A custom classification for detecting Employee IDs.
-            </Description>
-            <Description default="false" langcode="de-de">
-            Description for German locale.
-            </Description>
-        </Resource>
-    </LocalizedStrings>
+	<Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
+		<Pattern confidenceLevel="60">
+			<IdMatch idRef="Regex_employee_id"/>
+		</Pattern>
+		<Pattern confidenceLevel="70">
+			<IdMatch idRef="Regex_employee_id"/>
+			<Match idRef="Func_us_date"/>
+		</Pattern>
+		<Pattern confidenceLevel="80">
+			<IdMatch idRef="Regex_employee_id"/>
+			<Match idRef="Func_us_date"/>
+			<Any minMatches="1">
+				<Match idRef="Keyword_badge" minCount="2"/>
+				<Match idRef="Keyword_employee"/>
+			</Any>
+			<Any minMatches="0" maxMatches="0">
+				<Match idRef="Keyword_false_positives_local"/>
+				<Match idRef="Keyword_false_positives_intl"/>
+			</Any>
+		</Pattern>
+	</Entity>
+	<Regex id="Regex_employee_id">(\s)(\d{9})(\s)</Regex>
+	<Keyword id="Keyword_employee">
+		<Group matchStyle="word">
+			<Term>Identification</Term>
+			<Term>Contoso Employee</Term>
+		</Group>
+	</Keyword>
+	<Keyword id="Keyword_badge">
+		<Group matchStyle="string">
+			<Term>card</Term>
+			<Term>badge</Term>
+			<Term caseSensitive="true">ID</Term>
+		</Group>
+	</Keyword>
+	<Keyword id="Keyword_false_positives_local">
+		<Group matchStyle="word">
+			<Term>credit card</Term>
+			<Term>national ID</Term>
+		</Group>
+	</Keyword>
+	<Keyword id="Keyword_false_positives_intl">
+		<Group matchStyle="word">
+			<Term>identity card</Term>
+			<Term>national ID</Term>
+			<Term>EU debit card</Term>
+		</Group>
+	</Keyword>
+	<LocalizedStrings>
+		<Resource idRef="E1CC861E-3FE9-4A58-82DF-4BD259EAB378">
+			<Name default="true" langcode="en-us">Employee ID</Name>
+			<Description default="true" langcode="en-us">
+			A custom classification for detecting Employee IDs.
+			</Description>
+			<Description default="false" langcode="de-de">
+			Description for German locale.
+			</Description>
+		</Resource>
+	</LocalizedStrings>
 </Rules>
 </RulePackage>
 ```
@@ -299,7 +299,7 @@ In addition to confidenceLevel for each Pattern, the Entity has a recommendedCon
   
 ## Do you want to support other languages in the UI of the Security &amp; Compliance Center? [LocalizedStrings element]
 
-If your compliance team uses the Security &amp; Compliance Center to create DLP policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
+If your compliance team uses the Microsoft 365 Security &amp; Compliance Center to create DLP policies in different locales and in different languages, you can provide localized versions of the name and description of your custom sensitive information type. When your compliance team uses Microsoft 365 in a language that you support, they'll see the localized name in the UI.
   
 ![Instance count and match accuracy options](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -333,7 +333,7 @@ The Version element is also important. When you upload your rule package for the
   </RulePack>
   
  <Rules>
-    . . .
+	. . .
  </Rules>
 </RulePackage>
 
@@ -438,7 +438,7 @@ If a custom sensitive information type contains an issue that may affect perform
 
 DLP uses the search crawler to identify and classify sensitive information in site content. Content in SharePoint Online and OneDrive for Business sites is recrawled automatically whenever it's updated. But to identify your new custom type of sensitive information in all existing content, that content must be recrawled.
   
-In Office 365, you can't manually request a recrawl of an entire tenant, but you can do this for a site collection, list, or library - see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).
+In Microsoft 365, you can't manually request a recrawl of an entire tenant, but you can do this for a site collection, list, or library - see [Manually request crawling and re-indexing of a site, a library or a list](https://docs.microsoft.com/sharepoint/crawl-site-content).
   
 ## Remove a custom sensitive information type
 

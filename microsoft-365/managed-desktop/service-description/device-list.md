@@ -41,10 +41,11 @@ The links to devices here are for your reference only. If you want to order devi
 | [HP EliteBook x360 830 G6 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | **\*[HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
 | **\*[HP EliteBook x360 1030 G4 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV | Feb 28, 2021 | Feb 28, 2024 |
-| **\*[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | Nov 30, 2020 | Nov 30, 2023 |
+|[HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV| Nov 30, 2020 | Nov 30, 2023 |
 | [HP EliteDesk 800 G4 DM](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-mini-349547--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |
 | [HP EliteDesk 800 G4 SFF](https://store.hp.com/us/en/mdp/desktops/elitedesk-800-small-form-factor-349548--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |
 | [HP EliteOne 800 G4 23.8in AIO](https://store.hp.com/us/en/mdp/desktops/eliteone-800-all-in-one-349552--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | Jul 18, 2020 | Jul 18, 2023 |
+| **\*[HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html--1#!&tab=features)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Dec 31, 2020 | Dec 31, 2023 |
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV, IR camera or fingerprint reader required | Jun 6, 2020 | Jun 6, 2023 |
 | [HP Z2 Mini G4 Workstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Jan 31, 2021 | Jan 31, 2024 |
 |[HP ZBook 14u/15u G6 Mobile Workstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS02AV, IR camera required | Nov 30, 2020 | Nov 30, 2023 |
@@ -69,7 +70,6 @@ These resources can help answer questions that you might have about specific dev
 - For more questions on Dell devices contact <a href="mailto:MMD_at_dell@dell.com">MMD_at_dell@dell.com</a>.
 
 - For more questions on HP devices and device ordering instructions, contact: Americas (<a href="mailto:mmd-americas@hp.com">mmd-americas@hp.com</a>); Europe/Middle East/Africa (<a href="mailto:mmd-emea@hp.com">mmd-emea@hp.com</a>); Asia Pacific/Japan (<a href="mailto:mmd-apj@hp.com">mmd-apj@hp.com</a>); Global (<a href="mailto:mmd@hp.com">mmd@hp.com</a>)
-
 
 
 

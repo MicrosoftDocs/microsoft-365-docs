@@ -19,25 +19,25 @@ ms.collection:
 description: "See how the spoof intelligence insight works in Office 365 Advanced Threat Protection."
 ---
 
-# Walkthrough - ATP Spoof intelligence insight in Office 365
+# Walkthrough - ATP Spoof intelligence insight in Microsoft 365
 
-In Office 365 organizations with Advanced Threat Protection (ATP), you can use the spoof intelligence insight to quickly determine which senders are legitimately sending you unauthenticated email. By permitting them to send spoofed messages, you can reduce the risk of any false positives going to your users. You can also use the spoof intelligence insight to monitor and manage permitted domain-pairs to provide an additional layer of security and prevent unsafe messages from arriving in your organization.
+In Microsoft 365 organizations with Advanced Threat Protection (ATP), you can use the spoof intelligence insight to quickly determine which senders are legitimately sending you unauthenticated email. By permitting them to send spoofed messages, you can reduce the risk of any false positives going to your users. You can also use the spoof intelligence insight to monitor and manage permitted domain-pairs to provide an additional layer of security and prevent unsafe messages from arriving in your organization.
 
-If you're new to [reports and insights in the Office 365 Security & Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a dashboard to an insight and recommended actions.
+If you're new to [reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a dashboard to an insight and recommended actions.
 
-You can use the spoof intelligence insight in the Security &amp; Compliance Center if your work or school account has been given global administrator, security administrator, or security reader permissions. For more information, see [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+This walkthrough is one of several for the Security & Compliance Center. To about navigating reports and insights, see the walkthroughs in the Related topics section.
 
-If you're new to [reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md), it might help to see how you can easily navigate from a dashboard to an insight and recommended actions.
+## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Security dashboard** page, use <https://protection.office.com/searchandinvestigation/dashboard>.
 
   You can view the spoof intelligence insight from more than one dashboard in the Security & Compliance Center. Regardless of which dashboard you're looking at, the insight provides the same details and allows you to quickly perform the same tasks.
 
-- You need to be assigned permissions before you can perform these procedures. To use the spoof intelligence insight, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform these procedures. To use the spoof intelligence insight, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- You enable and disable spoof intelligence in ATP anti-phishing policies. For more information, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
+- You enable and disable spoof intelligence in ATP anti-phishing policies. For more information, see [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
-- In Office 365 organizations with Exchange Online mailboxes, and in standalone Exchange Online Protection (EOP) without Exchange Online mailboxes, you can use spoof intelligence to monitor and manage senders you are sending you unauthenticated messages. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
+- In Microsoft 365 organizations with Exchange Online mailboxes, and in standalone Exchange Online Protection (EOP) without Exchange Online mailboxes, you can use spoof intelligence to monitor and manage senders you are sending you unauthenticated messages. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## Open the spoof intelligence insight in the Security & Compliance Center
 
@@ -63,17 +63,17 @@ If you're new to [reports and insights in the Security &amp; Compliance Center](
 
    A **domain pair** is a combination of the From address and the sending infrastructure:
 
-- **High-confidence spoof**. Microsoft 365 received strong signals that these domains are suspicious, based on the historical sending patterns and the reputation score of the domains. Microsoft 365 is highly confident that the domains are spoofing and that messages sent from these domains are less likely to be legitimate. 
+   - The From address is the sender's email address that's displayed in email clients. This address identifies the author of the email. That is, the mailbox of the person or system responsible for writing the message. This address is also known as the `5322.From` address.
 
-- **Moderate confidence spoof**. Microsoft 365 received moderate signals that these domains are suspicious, based on historical sending patterns and the reputation score of the domains. Microsoft 365 is moderately confident that the domains are spoofing and that messages sent from these domains are legitimate. This bucket has a greater chance of containing false positives (FPs) than the high-confidence spoof bucket.
+   - The sending infrastructure, or sender, is the organizational domain of the reverse DNS lookup (PTR record) of the sending IP address. If the sending IP address has no PTR record, then the sender is identified by the sending IP with the 255.255.255.0 subnet mask in CIDR notation (/24). For example, if the IP address is 192.168.100.100 then the complete IP address of the sender is 192.168.100.100/24.
 
- **Non-suspicious domain pairs** include **rescued spoof**. Rescued spoof are domains that have failed the explicit authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) but passed our extended authentication checks. As a result of this, Microsoft 365 rescued the mail on your behalf and no anti-spoofing action was taken on the mail.
+   **Suspicious domain pairs** include:
 
-   - **High-confidence spoof**: Office 365 received strong signals that these domains are suspicious, based on the historical sending patterns and the reputation score of the domains. Office 365 is highly confident that the domains are spoofing and that messages sent from these domains are less likely to be legitimate.
+   - **High-confidence spoof**: Microsoft 365 received strong signals that these domains are suspicious, based on the historical sending patterns and the reputation score of the domains. Microsoft 365 is highly confident that the domains are spoofing and that messages sent from these domains are less likely to be legitimate.
 
-   - **Moderate confidence spoof**: Office 365 received moderate signals that these domains are suspicious, based on historical sending patterns and the reputation score of the domains. Office 365 is moderately confident that the domains are spoofing and that messages sent from these domains are legitimate. This bucket has a greater chance of containing false positives (FPs) than the high-confidence spoof bucket.
+   - **Moderate confidence spoof**: Microsoft 365 received moderate signals that these domains are suspicious, based on historical sending patterns and the reputation score of the domains. Office 365 is moderately confident that the domains are spoofing and that messages sent from these domains are legitimate. This bucket has a greater chance of containing false positives (FPs) than the high-confidence spoof bucket.
 
-   - **Non-suspicious domain pairs** (includes **rescued spoof**): Rescued spoof are domains that have failed the explicit authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) but passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, Office 365 rescued the mail on your behalf and no anti-spoofing action was taken on the message.
+   - **Non-suspicious domain pairs** (includes **rescued spoof**): Rescued spoof are domains that have failed the explicit authentication checks [SPF](how-office-365-uses-spf-to-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), [DMARC](use-dmarc-to-validate-email.md)) but passed our implicit email authentication checks ([composite authentication](email-validation-and-authentication.md#composite-authentication)). As a result, Microsoft 365 rescued the mail on your behalf and no anti-spoofing action was taken on the message.
 
 ### View detailed information about suspicious domain pairs from the spoof intelligence insight
 
@@ -95,7 +95,7 @@ For example, if you add the following domain pair to the 'AllowedToSpoof' sender
 
 ## Related topics
 
-[Anti-spoofing protection](anti-spoofing-protection.md)
+[Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md)
 
 [Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
 

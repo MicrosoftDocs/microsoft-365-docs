@@ -133,7 +133,7 @@ For more information about setting up groups, see:
     - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language sent or received in the body of email messages or other types of text.
 
     >[!CAUTION]
-    >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead. - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language sent or received in the body of email messages or other types of text.
+    >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
     
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.

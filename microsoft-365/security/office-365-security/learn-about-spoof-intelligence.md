@@ -19,9 +19,9 @@ ms.collection:
 description: "Admins can learn how to configure spoofed senders to allow or not allow, and other spoof intelligence settings in Exchange Online and Exchange Online Protection (EOP)."
 ---
 
-# Configure spoof intelligence in Office 365
+# Configure spoof intelligence in Microsoft 365
 
-If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing by EOP as of October 2018. EOP uses spoof intelligence as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in Office 365](anti-spoofing-protection.md).
+If you're an Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, inbound email messages are automatically protected against spoofing by EOP as of October 2018. EOP uses spoof intelligence as part of your organization's overall defense against phishing. For more information, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
 
 When a sender spoofs an email address, they appear to be a user in one of your organization's domains, or a user in an external domain that sends email to your organization. Attackers who spoof senders to send spam or phishing email need to be blocked. But there are scenarios where legitimate senders are spoofing. For example:
 
@@ -41,11 +41,11 @@ When a sender spoofs an email address, they appear to be a user in one of your o
 
   - An external company sends email on behalf of another company (for example, an automated report or a software-as-a-service company).
 
-Spoof intelligence, and specifically the default (and only) spoof intelligence policy, helps ensure that the spoofed email sent by legitimate senders doesn't get caught up in spam filters in Office 365 or external email systems, while protecting your users from spam or phishing attacks.
+Spoof intelligence, and specifically the default (and only) spoof intelligence policy, helps ensure that the spoofed email sent by legitimate senders doesn't get caught up in spam filters in Microsoft 365 or external email systems, while protecting your users from spam or phishing attacks.
 
-You can manage spoof intelligence in the Office 365 Security & Compliance Center, or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
+You can manage spoof intelligence in the Microsoft 365 Security & Compliance Center, or in PowerShell (Exchange Online PowerShell for Microsoft 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
 
-On the other hand, malicious spoofers, those senders that are spoofing your domain, or external domains, to send spam or phishing email, need to be blocked. Spoofing is also a common way for phishers to get user credentials. Office 365 has built-in spoof protection to help shield your organization from senders of these malicious emails. Spoof protection for your organization's domains is always on for all customers, and external domain spoof protection is on by default for Advanced Threat Protection customers and as of October, 2018 EOP customers as well. To further strengthen this protection, tell us which senders are authorized to spoof your organization's domains and send email on your behalf, and if any external domains are permitted to spoof. Any email sent from a sender that you don't authorize will be treated as spam or spoofing by Office 365. Keep an eye on the senders spoofing your domain and help us improve spoof intelligence by using the Security &amp; Compliance Center.
+## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/antispam>. To go directly to the **Anti-phishing** page, use <https://protection.office.com/antiphishing>.
 
@@ -165,9 +165,9 @@ Your available options depend on your subscription:
 
 - Standalone EOP organizations without Exchange Online mailboxes can't configure spoof intelligence settings.
 
-- Office 365 organizations with Exchange Online mailboxes can configure spoof intelligence settings in the default (and only) anti-phishing policy. For instructions, see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
+- Microsoft 365 organizations with Exchange Online mailboxes can configure spoof intelligence settings in the default (and only) anti-phishing policy. For instructions, see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
 
-- Office 365 organizations with ATP can configure spoof intelligence settings in the default ATP anti-phishing policy, and also in custom ATP anti-phishing policies. For instructions, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
+- Microsoft 365 organizations with ATP can configure spoof intelligence settings in the default ATP anti-phishing policy, and also in custom ATP anti-phishing policies. For instructions, see [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## How do you know these procedures worked?
 
@@ -190,7 +190,7 @@ To verify that you've configured spoof intelligence with senders who are allowed
    Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
    ```
 
-- In Office 365 organizations with Exchange Online mailboxes, do either of the following steps:
+- In Microsoft 365 organizations with Exchange Online mailboxes, do either of the following steps:
 
   - In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-phishing** \> click **Default policy** and view the details in the flyout.
 
@@ -200,7 +200,7 @@ To verify that you've configured spoof intelligence with senders who are allowed
     Get-AntiPhishPolicy -Identity "Office365 AntiPhish Default"
     ```
 
-- In Office 365 ATP organizations, do either of the following steps:
+- In Microsoft 365 ATP organizations, do either of the following steps:
 
   - In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **ATP anti-phishing** and do either of the following steps:
 
@@ -219,7 +219,7 @@ Be diligent about spoofing and phishing protection. Here are related ways to che
 
 - Check the **Spoof Mail Report**. You can use this report often to view and help manage spoofed senders. For information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
-- Review your Sender Policy Framework (SPF) configuration. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Office 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
+- Review your Sender Policy Framework (SPF) configuration. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Office 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
 - Review your DomainKeys Identified Mail (DKIM) configuration. You should use DKIM in addition to SPF and DMARC to help prevent attackers from sending messages that look like they are coming from your domain. DKIM lets you add a digital signature to email messages in the message header. For information, see [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
 

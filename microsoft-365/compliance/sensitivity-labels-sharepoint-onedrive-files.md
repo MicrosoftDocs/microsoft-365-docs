@@ -23,7 +23,9 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Before this preview, when you applied sensitivity labels that included encryption to Office files stored in SharePoint and OneDrive, the service couldn't process the content of these files. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. This preview enables these features for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
+Before this preview, you couldn't apply your [sensitivity labels](sensitivity-labels.md) in Office on the web. You didn't see the **Sensitivity** option on the ribbon, or the applied label name on the status bar. In addition, if you used desktop apps to label your files and then save them on SharePoint or Onedrive, the service couldn't process the content of these files if the label applied encryption. Coauthoring, eDiscovery, Data Loss Prevention, search, Delve, and other collaborative features didn't work under these circumstances. 
+
+This preview enables all these capabilities. In addition to displaying sensitivity labels to users, for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
 
 - SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, the encryption from Azure Information Protection is removed so that the file contents can be processed. For information about how documents are protected while they are stored in SharePoint, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
 
@@ -31,17 +33,12 @@ Before this preview, when you applied sensitivity labels that included encryptio
 
 - For SharePoint to remove the encryption from the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't remove encryption from files if the user can't open them outside SharePoint.
 
-- Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto labeling when you edit these documents.
+- Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto-labeling when you edit these documents.
 
-- eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
-
-- Three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied using Office on the web:
-  - **Applied sensitivity label to file**
-  - **Changed sensitivity label applied to file**
-  - **Removed sensitivity label from file**
+- Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
 
 > [!NOTE]
-> If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior doesn't change with this preview.
+> If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior for processing the file contents doesn't change with this preview.
 >
 > The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint before you enable the preview. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you enable the preview. For example, they will then be returned in search and eDiscovery results.
 
@@ -53,6 +50,8 @@ When you enable this preview, three new [audit events](search-the-audit-log-in-s
 Watch the following video (no audio) to see these new capabilities in action:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
+
+You always have the choice to opt out of this preview at any time.
 
 ## Requirements
 
@@ -114,7 +113,7 @@ Before you enable the preview, ensure that you're running SharePoint Online Mana
 
 4. Select your language and then click **Download**.
 
-5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don't know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 
 6. After you have downloaded the file, run the file and follow the steps in the Setup Wizard.
@@ -123,7 +122,7 @@ Before you enable the preview, ensure that you're running SharePoint Online Mana
 
 To enable the preview, use the Set-SPOTenant cmdlet:
 
-1. Using a work or school account that has global administrator or SharePoint admin privileges, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
     Note: If you have Office 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 
@@ -136,7 +135,7 @@ To enable the preview, use the Set-SPOTenant cmdlet:
 
 ## Schedule roll-out after you create or change a sensitivity label
 
-After you create or change a sensitivity label in the Microsoft 365 compliance center, publish it in stages. If you publish labels that haven't fully synchronized, when users apply the labels to files and upload them to SharePoint, the files can't be opened in the web versions of the Office apps. Search and eDiscovery also don't work for the files.
+After you create or change a sensitivity label in the Microsoft 365 compliance center, publish it in stages. If you publish labels that haven't fully synchronized, when users apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also don't work for the files.
 
 We recommend that you follow these steps:
 
@@ -152,10 +151,14 @@ If you disable this preview, files that you uploaded during the preview continue
 
 To disable the preview, use the Set-SPOTenant cmdlet:
 
-1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Using a work or school account that has global administrator or SharePoint admin privileges, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 2. Run the following command:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $false
     ```
+
+## Next steps
+
+Now that you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling these files by using auto-labeling policies. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).

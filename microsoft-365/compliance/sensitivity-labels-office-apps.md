@@ -25,11 +25,17 @@ When you have [published](create-sensitivity-labels.md#publish-sensitivity-label
 
 Use the information in this article to help you successfully manage sensitivity labels in Office apps. For example, identify the minimum versions of apps you need to support built-in labeling, and understand interactions with the Azure Information Protection unified labeling client and compatibility with other apps and services.
 
+## Labeling client for desktop apps
+
+To use sensitivity labels that are built into Office desktop apps for Windows and Mac, you must use a subscription edition of Office. This labeling client doesn't support standalone editions of Office, such as Office 2016 or Office 2019.
+
+To use sensitivity labels with these standalone editions of Office on Windows computers, install the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2).
+
 ## Support for sensitivity label capabilities in apps
 
 For each capability, the following tables list the minimum version you need for that app to support sensitivity labels using built-in labeling. Or, if the label capability is in public preview or under review for a future release.
 
-New versions of the apps are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
+New versions of the apps are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
 
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
@@ -74,7 +80,7 @@ The Office built-in labeling client downloads sensitivity labels and sensitivity
 
 - Microsoft 365 compliance center
 - Microsoft 365 security center
-- Security & Compliance Center
+- Office 365 Security & Compliance Center
 
 To use the Office built-in labeling client, you must have one or more [label policies published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to users from one of the listed admin centers and a [supported version of Office](#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -158,9 +164,9 @@ Otherwise:
 
 To use the Office built-in labeling client with Office on the web for documents in OneDrive for Business or SharePoint Online, make sure you've opted-in to the preview to [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## When Microsoft 365 applies content marking and encryption
+## When Office 365 applies content marking and encryption
 
-Microsoft 365 applies content marking and encryption with a sensitivity label differently, depending on the app you use.
+Office 365 applies content marking and encryption with a sensitivity label differently, depending on the app you use.
 
 | App | Content marking | Encryption |
 | --- | --- | --- |
