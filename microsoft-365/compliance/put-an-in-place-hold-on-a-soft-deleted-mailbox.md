@@ -11,7 +11,9 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
-description: "Learn how to create an In-Place Hold for a soft-deleted mailbox to make it inactive and preserve its contents. Then you can use Microsoft eDiscovery tools to search the inactive mailbox."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to create an In-Place Hold for a soft-deleted mailbox to make it inactive and preserve its contents.
 ---
 
 # Put an In-Place Hold on a soft-deleted mailbox in Exchange Online

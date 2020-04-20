@@ -14,7 +14,9 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "With records management in Microsoft 365, you can apply your organization’s specific retention schedules into a file plan to manage retention, records declaration, and disposition in support of the full content lifecycle."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how you can apply your organization’s specific retention schedules into a Microsoft 365 file plan.
 ---
 
 # Records management in Microsoft 365
