@@ -15,7 +15,7 @@ search.appverid:
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-description: "With Office 365 Advanced Message Encryption capabilities on top of Office 365 Message Encryption (OME), you can extend your email security by setting an expiration date on emails through a custom branded template."
+description: Use Office 365 Advanced Message Encryption to extend your email security by setting an expiration date on emails through a custom branded template.
 ms.custom: seo-marvel-apr2020
 ---
 
