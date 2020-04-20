@@ -28,6 +28,7 @@ Office 365 groups is the foundational membership service that drives all teamwor
 - A shared calendar
 - A SharePoint document library
 - A Planner
+- A OneNote notebook
 - Power BI
 - Yammer (if the group was created from Yammer)
 - A Team (if the group was created from Teams)

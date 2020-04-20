@@ -90,8 +90,6 @@ When the retention policy is to retain and delete:
     > [!NOTE]
     > To help prevent inadvertent data loss, content is never automatically deleted from the Preservation Hold library but moves to the second-stage Recycle Bin. There, the grace period of 93 days lets admins recover this content, if necessary.
     
-2. **If the content is not modified or deleted** during the retention period, it's moved to the first-stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first- and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first- or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold.
-
 2. **If the content is not modified or deleted** during the retention period: At the end of the retention period, the document is moved to the first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold. 
 
 When the retention policy is retain-only, or delete-only, the contents paths are variations of retain and delete:
@@ -257,13 +255,17 @@ Like an org-wide policy, if a policy applies to any combination of entire locati
 
 You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
   
-However, note that the following limits exist for a retention policy that includes or excludes over 1,000 specific locations:
+However, note that the following limits exist when you configure a retention policy that includes or excludes over 1,000 specific locations:
   
-- Such a retention policy can contain no more than 1,000 mailboxes and 100 site collections.
-    
+- Maximum numbers for the retention policy:
+    - 1,000 mailboxes
+    - 1,000 Office 365 groups
+    - 1,000 users for Teams private chats
+    - 100 sites (OneDrive or SharePoint)
+
 - A tenant can contain no more than 10,000 retention policies.
     
-Although these limits exist, understand that you can get over these limits by applying either an org-wide policy or a policy that applies to entire locations.
+Although these limits exist, you can avoid them by applying either an org-wide policy or a policy that applies to entire locations.
   
 ### Skype locations
 
