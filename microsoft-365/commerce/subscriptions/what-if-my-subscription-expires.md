@@ -39,7 +39,7 @@ The following table explains what you can expect when a paid Office 365 for busi
 |------------------------------------------------------------------------|------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | *Data accessible to all*                                               | *Data accessible to all*                                                     | *Data accessible to admins only*                                             | **Data deleted<br/>Azure Active Directory is removed, if not in use by other services** |
 | Users have normal access to Office 365, data, and Office applications  | Users have normal access to Office 365, files, and applications              | Users can't access Office 365, files, or applications                        | Users can't access Office 365, files, or applications                                     |
-| Admins have normal access to Office 365, data, and Office applications | Admins can access the admin center, but can't assign licenses to users   | Admins can access the admin center, but can't assign licenses to users       | Admins can access the admin center to purchase and manage other subscriptions             |
+| Admins have normal access to Office 365, data, and Office applications | Admins can access the admin center   | Admins can access the admin center, but can't assign licenses to users       | Admins can access the admin center to purchase and manage other subscriptions             |
 |                                                                        | Global or billing admins can reactivate the subscription in the admin center | Global or billing admins can reactivate the subscription in the admin center |                                                                                           |
 
 *For most offers, in most countries and regions.
@@ -138,7 +138,7 @@ Here's what you can expect when your subscription is in each state.
 
 In this state, users have normal access to the Office 365 portal, Office applications, and services such as email and SharePoint Online.
   
-As an admin, you still have access to the admin center, but can't assign licenses to users. Global or billing admins can [reactivate the subscription](reactivate-your-subscription.md) and continue using Office 365. If you don't reactivate, be sure to [back up your data](back-up-data-before-switching-plans.md).
+As an admin, you still have access to the admin center. Global or billing admins can [reactivate the subscription](reactivate-your-subscription.md) and continue using Office 365. If you don't reactivate, be sure to [back up your data](back-up-data-before-switching-plans.md).
   
 ### State: Disabled
   
