@@ -29,11 +29,26 @@ Use communication compliance policies to capture employee communications for exa
 
 ## Before you begin
 
-Before you get started with communication compliance, you should confirm your Microsoft 365 subscription. Users included in communication compliance policies must have a Microsoft 365 E5 Compliance license, an Office 365 Enterprise E3 license with the Advanced Compliance add-on, or be included in an Office 365 Enterprise E5 subscription, or be included in a Microsoft 365 E5 subscription.
+Before you get started with communication compliance, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use communication compliance, your organization must have one of the following subscriptions or add-ons:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
+- Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
+
+Users included in communication compliance policies must be assigned one of the licenses above.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
 If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try insider risk management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
-  
-Complete these steps to set up and use communication compliance in your Microsoft 365 organization:
 
 ## Step 1 (required): Enable permissions for communication compliance
 
@@ -99,7 +114,7 @@ For more information about setting up groups, see:
 
 4. Select **Create policy** to create and configure a new policy from a template or to create and configure a custom policy.
 
-    If you choose a policy template to create a policy, you will:
+    If you choose a built-in policy template to create a policy, you will:
 
     - Confirm or update the policy name. Policy names cannot be changed once the policy is created.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
@@ -115,7 +130,11 @@ For more information about setting up groups, see:
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
     - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
-    - Choose if you'd like to enable the offensive language classifier. This  classifier detects inappropriate language sent or received in the body of email messages.
+    - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language sent or received in the body of email messages or other types of text.
+
+    >[!CAUTION]
+    >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
+
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.
 

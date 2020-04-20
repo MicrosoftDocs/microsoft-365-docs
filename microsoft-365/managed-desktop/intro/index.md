@@ -60,7 +60,7 @@ We also monitor device health and provide you with insights about device perform
 
 
 ## Need more details?
-For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam) and a downloadable [one-page summary](https://aka.ms/AA6ob3h). You can find the latest news at the Microsoft Managed Desktop [blog](https://aka.ms/AA6l2dd).
+For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam), a [Forrester Total Economic Impact case study](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf), and a downloadable [one-page summary](https://aka.ms/AA6ob3h). You can find the latest news at the Microsoft Managed Desktop [blog](https://aka.ms/AA6l2dd).
 
 If Microsoft Managed Desktop seems right for your organization, you can delve into additional documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your end users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
 
@@ -70,6 +70,7 @@ Primarily for technical and business decision makers, these topics detail the di
 - [Microsoft Managed Desktop roles and responsibilities](roles-and-responsibilities.md)
 - [Microsoft Managed Desktop technologies](technologies.md)
 - [Microsoft Managed Desktop and ITIL](../MMD-and-ITSM.md)
+- [Compliance](compliance.md)
 - [Microsoft Managed Desktop service description](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Get ready for enrollment**

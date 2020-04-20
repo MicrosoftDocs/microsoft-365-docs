@@ -40,9 +40,8 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-|||||
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
 |**Spam** detection action <br/><br/> _SpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
 |**High confidence spam** detection action <br/><br/> _HighConfidenceSpamAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
 |**Phishing email** detection action <br/><br/> _PhishSpamAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
@@ -52,7 +51,7 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |Quarantine retention period <br/><br/> _QuarantineRetentionPeriod_|30 days|30 days||
 |**Safety Tips** <br/><br/> _InlineSafetyTipsEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |Allowed Senders <br/><br/> _AllowedSenders_|None|None||
-|Allowed Sender Domains <br/><br/> _AllowedSenderDomains_|None|None|Adding domains that you own (also known as _accepted domains_) to the allowed senders list is not required. In fact, it's considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out. Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing either domains that are part of your organization, or spoofing external domains.|
+|Allowed Sender Domains <br/><br/> _AllowedSenderDomains_|None|None|Adding domains that you own (also known as _accepted domains_) to the allowed senders list is not required. In fact, it's considered high risk since it creates opportunities for bad actors to send you mail that would otherwise be filtered out. Use [spoof intelligence](learn-about-spoof-intelligence.md) in the Security & Compliance Center on the **Anti-spam settings** page to review all senders who are spoofing sender email addresses in your organization's email domains or spoofing sender email addresses in external domains.|
 |Blocked Senders <br/><br/> _BlockedSenders_|None|None||
 |Blocked Sender Domains <br/><br/> _BlockedSenderDomains_|None|None||
 |**Enable end-user spam notifications** <br/><br/> _EnableEndUserSpamNotifications_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
@@ -60,15 +59,13 @@ To create and configure anti-spam policies, see [Configure anti-spam policies in
 |**Spam ZAP** <br/><br/> _SpamZapEnabled_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
 |**Phish ZAP** <br/><br/> _PhishZapEnabled_|Enabled <br/><br/> `$true`|Enabled <br/><br/> `$true`||
 |_MarkAsSpamBulkMail_|On|On|This setting is only available in PowerShell.|
-|
 
 There are several other Advanced Spam Filter (ASF) settings in anti-spam policies that are in the process of being deprecated. More information on the timelines for the depreciation of these features will be communicated outside of this topic.
 
 We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
-|||
+| Security feature name | Comments |
 |----|---|
-|**Security feature name**|**Comments**|
 |**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
 |**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
 |**UL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
@@ -84,42 +81,39 @@ We recommend that you turn these ASF settings **Off** for both **Standard** and 
 |**SPF record: hard fail** (_MarkAsSpamSpfRecordHardFail_)||
 |**Conditional Sender ID filtering: hard fail** (_MarkAsSpamFromAddressAuthFail_)||
 |**NDR backscatter** (_MarkAsSpamNdrBackscatter_)||
-|
 
 #### EOP outbound spam policy settings
 
 To create and configure outbound spam policies, see [Configure outbound spam filtering in Office 365](configure-the-outbound-spam-policy.md).
 
-||||
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
 |**Maximum number of recipients per user: External hourly limit** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**Maximum number of recipients per user: Internal hourly limit** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
 |**Maximum number of recipients per user: Daily limit** <br/><br/> _RecipientLimitPerDay_|1000|800||
 |**Action when a user exceeds the limits** <br/><br/> _ActionWhenThresholdReached_|**Restrict the user from sending mail** <br/><br/> `BlockUser`|**Restrict the user from sending mail** <br/><br/> `BlockUser`||
-|
 
 ### EOP anti-malware policy settings
 
 To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-|||||
+| Security feature name | Standard | Strict | Comment |
 |---|---|---|---|
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
 |**Do you want to notify recipients if their messages are quarantined?** <br/><br/> _Action_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
 |**Common Attachment Types Filter** <br/><br/> _EnableFileFilter_|On <br/><br/> `$true`|On <br/><br/> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
 |**Malware Zero-hour Auto Purge** <br/><br/> _ZapEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Notify internal senders** of the undelivered message <br/><br/> _EnableInternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
 |**Notify external senders** of the undelivered message <br/><br/> _EnableExternalSenderNotifications_|Disabled <br/><br/> `$false`|Disabled <br/><br/> `$false`||
-|
 
-### EOP anti-phishing policy settings
+### EOP default anti-phishing policy settings
 
-|Security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Enable anti-spoofing protection|On|On||
-|Enable Unauthenticated Sender (tagging)|On|On||
-|If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
+You can only configure these settings in Office 365 organizations with Exchange Online mailboxes. To configure these settings, see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
+
+| Security feature name | Standard | Strict | Comment |
+|---|---|---|---|
+|**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
 
 ## Office 365 Advanced Threat Protection security
 
@@ -134,7 +128,7 @@ If you've added an Office 365 ATP subscription to your EOP, set the following co
 
 ### Office ATP anti-phishing policy settings
 
-EOP customers get basic anti-phishing as previously described, but Office 365 ATP includes more features and control to help prevent, detect, and remediate against attacks.
+EOP customers get basic anti-phishing as previously described, but Office 365 ATP includes more features and control to help prevent, detect, and remediate against attacks. To create and configure these policies, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
 
 |Impersonation security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
@@ -156,13 +150,40 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 |Enable anti-spoofing protection|On|On||
 |Enable Unauthenticated Sender (tagging)|On|On||
 |If email is sent by someone who's not allowed to spoof your domain|Move message to the recipients' Junk Email folders|Quarantine the message||
-|EnableSuspiciousSafetyTip|False|True|This setting is only available in PowerShell|
-|TreatSoftPassAsAuthenticated|True|False|This setting is only available in PowerShell|
 
+#### Impersonation settings in ATP anti-phishing policies
 
-|Advanced settings security feature name|Standard|Strict|Comment|
-|---------|---------|---------|---------|
-|Advanced phishing thresholds|2 - Aggressive|3 - More aggressive||
+| Security feature name | Standard | Strict | Comment |
+|---|---|---|---|
+|Protected users: **Add users to protect** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|On <br/><br/> `$true` <br/><br/> \<list of users\>|On <br/><br/> `$true` <br/><br/> \<list of users\>|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
+|Protected domains: **Automatically include the domains I own** <br/><br/> _EnableOrganizationDomainsProtection_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|Protected domains: **Include custom domains** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|On <br/><br/> `$true` <br/><br/> \<list of domains\>|On <br/><br/> `$true` <br/><br/> \<list of domains\>|Depends on your organization, but we recommend adding domains you frequently interact with that you don't own.|
+|Protected users: **If email is sent by an impersonated user** <br/><br/> _TargetedUserProtectionAction_|**Quarantine the message** <br/><br/> `Quarantine`|**Quarantine the message** <br/><br/> `Quarantine`||
+|Protected domains: **If email is sent by an impersonated domain** <br/><br/> _TargetedUserProtectionAction_|**Quarantine the message** <br/><br/> `Quarantine`|**Quarantine the message** <br/><br/> `Quarantine`||
+|**Show tip for impersonated users** <br/><br/> _EnableSimilarUsersSafetyTips_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Show tip for impersonated domains** <br/><br/> _EnableSimilarDomainsSafetyTips_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Show tip for unusual characters** <br/><br/> _EnableUnusualCharactersSafetyTips_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Enable Mailbox intelligence?** <br/><br/> _EnableMailboxIntelligence_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Enable Mailbox intelligence based impersonation protection?** <br/><br/> _EnableMailboxIntelligenceProtection_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**If email is sent by an impersonated user protected by mailbox intelligence** <br/><br/> _MailboxIntelligenceProtectionAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`||
+|**Trusted senders** <br/><br/> _ExcludedSenders_|None|None|Depends on your organization, but we recommend adding users that incorrectly get marked as phish due to impersonation only and not other filters.|
+|**Trusted domains** <br/><br/> _ExcludedDomains_|None|None|Depends on your organization, but we recommend adding domains that incorrectly get marked as phish due to impersonation only and not other filters.|
+
+#### Spoof settings in ATP anti-phishing policies
+
+Note that these are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
+
+| Security feature name | Standard | Strict | Comment |
+|---|---|---|---|
+|**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
+|**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).|
+|**If email is sent by someone who's not allowed to spoof your domain** <br/><br/> _AuthenticationFailAction_|**Move message to the recipients' Junk Email folders** <br/><br/> `MoveToJmf`|**Quarantine the message** <br/><br/> `Quarantine`|This applies to blocked senders in [spoof intelligence](learn-about-spoof-intelligence.md).|
+
+#### Advanced settings in ATP anti-phishing policies
+
+| Security feature name | Standard | Strict | Comment |
+|---|---|---|---|
+|**Advanced phishing thresholds** <br/><br/> _PhishThresholdLevel_|**2 - Aggressive** <br/><br/> `2`|**3 - More aggressive** <br/><br/> `3`||
 
 ### Safe Links settings
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/19/2019
+ms.date: 04/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -40,7 +40,7 @@ Microsoft 365 for enterprise is available in three plans.
 |:-------|:-----|
 | E3 | Access core products and features within Microsoft 365 to enhance workplace productivity and drive innovation, securely. |
 | E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools.. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
-| F1 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
+| F3 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
 |||
 
 If you have Microsoft 365 E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -50,7 +50,7 @@ If you have Microsoft 365 E3, you can also get these [offerings](https://www.mic
 
 These offerings contain additional features that are included with Microsoft 365 E5.
 
-For more information, see [Features and capabilities for each plan](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+For more information about what's included with each plan, see [Transform your enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
 ## Get the big picture
 
@@ -69,7 +69,7 @@ To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, download the [transition poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Image for the Transition to Microsoft 365 poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
@@ -79,15 +79,14 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 ## Avoid end of support for Windows 7 and Office 2010 clients and servers
 
-The following products reached end of support on **January 14, 2020**:
-
-- [Windows 7](https://aka.ms/win7upgrade)
+[Windows 7](https://aka.ms/win7upgrade) reached end of support on **January 14, 2020**.
 
 The following products will reach end of support on **October 13, 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) will reach end of support on **April 13, 2021**.
 
 For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, see the [end of support poster](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 

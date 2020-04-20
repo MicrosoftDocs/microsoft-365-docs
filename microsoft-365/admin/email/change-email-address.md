@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -72,7 +72,7 @@ You must have a global admin account to perform these steps.
 
 ::: moniker-end 
 
-2. Go to the **Settings** > **Domains** page. 
+2. Go to the **Setup** > **Domains** page. 
 
 3. On the **Domains** page, select **Add domain**.
     

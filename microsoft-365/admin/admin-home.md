@@ -144,7 +144,7 @@ Learn about resources available for admins.
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/microsoft-365/#pivot=home&panel=home-all">
+        <a href="https://docs.microsoft.com/microsoft-365">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

@@ -39,44 +39,43 @@ If you start to run out of storage for your SharePoint Online site collections, 
 ::: moniker range="o365-worldwide"
 
 1. Sign in to https://admin.microsoft.com as a global or SharePoint admin. (If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.)
-    
-2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center. 
-    
+
+2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center.
+
 3. In the left pane of the new SharePoint admin center, select **Active sites**.
 
-4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. (If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.) 
+4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. (If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.)
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Sign in to https://portal.office.de as a global or SharePoint admin, and then select the Admin tile to open the admin center. (If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.)
-    
-2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center. 
-    
+
+2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center.
+
 3. In the left pane of the new SharePoint admin center, select **Active sites**.
 
-4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. 
+4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. Sign in to https://login.partner.microsoftonline.cn/ as a global or SharePoint admin, and then select the Admin tile to open the admin center. (If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.)
-     
-2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center. 
-    
+
+2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center.
+
 3. In the left pane of the new SharePoint admin center, select **Active sites**.
 
 4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription.  
 
 ::: moniker-end
 
-
 ![Storage bar on the Active sites page](https://docs.microsoft.com/sharepoint/sharepointonline/media/active-sites-storage-bar.png)
 
 > [!NOTE]
-> The storage used doesn't include changes made within the last 24-48 hours. 
+> The storage used doesn't include changes made within the last 24-48 hours.
 
 After you've determined how much storage you're using, you can add or remove storage space for your subscription. To find out how much it will cost to add storage space, follow the steps in this article, and review the pricing information before you purchase.
   
@@ -87,9 +86,6 @@ For information about setting site collection storage limits, see [Manage site c
 If you haven't yet purchased extra storage for your subscription, you can do that.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 
@@ -157,15 +153,11 @@ If you haven't yet purchased extra storage for your subscription, you can do tha
 
 ::: moniker-end
 
-
 ## Increase or decrease storage
 
 If you have already purchased extra file storage via the **Office 365 Extra File Storage** add-on, you can use these steps to increase or decrease the extra storage space for your subscription. You can reduce the storage to as low as 1 gigabyte. To remove all of the extra storage space, you need to [contact support](../admin/contact-support-for-business-products.md).
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
@@ -180,7 +172,6 @@ If you have already purchased extra file storage via the **Office 365 Extra File
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
 
 2. On the **Subscriptions** page, select **Add-ons**.
 
@@ -223,8 +214,6 @@ If you have already purchased extra file storage via the **Office 365 Extra File
 5. Select **Close**.
 
 ::: moniker-end
-
-
 
 ## Is my plan eligible for Office 365 Extra File Storage?
 

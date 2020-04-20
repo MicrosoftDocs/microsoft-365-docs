@@ -21,6 +21,8 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 # Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Office 365 groups, and SharePoint sites. Use the following label settings to help protect the content in those containers:
 
 - Privacy (public or private) of Office 365 group-connected teams sites
@@ -47,7 +49,9 @@ After you enable and configure this preview, users can additionally see and appl
 
 1. Because this feature uses Azure AD functionality, follow the instructions in the Azure AD documentation to enable the preview: [Assign sensitivity labels to Office 365 groups in Azure Active Directory (preview)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
-2. Open a PowerShell session with the **Run as Administrator** option, and connect to the Security & Compliance Center by using a work or school account that has global admin privileges. For example:
+2. Now [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
@@ -55,8 +59,6 @@ After you enable and configure this preview, users can additionally see and appl
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session -DisableNameChecking
     ```
-    
-    For full instructions, see [Connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Office 365 groups:
     
@@ -176,30 +178,44 @@ To view the applied sensitivity labels, use the **Active sites** page in the new
 
 ## Change site and group settings for a label
 
-Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings. As a best practice, don't the change site and group settings for a label after you've applied the label to several teams, groups, or sites.
+Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings. As a best practice, don't the change site and group settings for a label after you've applied the sensitivity label to several teams, groups, or sites.
 
-1. In a PowerShell session that you open with the **Run as Administrator** option, run the following commands to connect to Office 365 Security & Compliance Center PowerShell and get the list of sensitivity labels and their GUIDs.
+1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
     
     ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
-    Import-PSSession $Session
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) cmdlet:
+    
+    ```powershell
     Get-Label |ft Name, Guid
     ```
 
-2. Make a note of the GUID for the label or labels you have changed.
+3. Make a note of the GUID for the label or labels you have changed.
 
-3. Now connect to Exchange Online PowerShell and run the Get-UnifiedGroup cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+    
+    For example:
     
     ```powershell
     $UserCredential = Get-Credential
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
     Import-PSSession $Session
+    ```
+    
+5. Run the [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+    
+    ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
     ```
 
-4. For each group, reapply the sensitivity label, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":
+6. For each group, reapply the sensitivity label, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":
     
     ```powershell
     foreach ($g in $groups)
@@ -233,17 +249,17 @@ Other apps and services that you can't currently use the sensitivity labels that
 - Exchange admin center
 
 
-## Classic Azure AD site classification
+## Classic Azure AD group classification
 
-Office 365 no longer supports the old classifications for new groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classifications unless you convert them to use sensitivity labels. Old classifications include the "modern" sites classification you set up, possibly through Azure AD PowerShell or the PnP Core library, that defined values for the `ClassificationList` setting.
+Office 365 no longer supports the old classifications for new Office 365 groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classification values unless you convert them to use sensitivity labels.
 
-For example, in PowerShell:
+As an example of how you might have used the old group classification for SharePoint, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
+
+These classifications were configured by using Azure AD PowerShell or the PnP Core library and defining values for the `ClassificationList` setting. If your tenant has classification values defined, they are shown when you run the following command from the [AzureADPreview PowerShell module](https://www.powershellgallery.com/packages/AzureADPreview):
 
 ```powershell
    ($setting["ClassificationList"])
 ```
-
-For more information about the old classification method, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
 To convert your old classifications to sensitivity labels, do one of the following:
 
@@ -261,35 +277,42 @@ Although you can't prevent users from creating new groups in apps and services t
 
 #### Use PowerShell to convert classifications for Office 365 groups to sensitivity labels
 
-1. Ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above. If you already have the latest version, skip to step 4.
-
-2. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
+1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
     
-    ```PowerShell
-    Update-Module -Name Microsoft.Online.SharePoint.PowerShell
-    ```
-
-3. If you have installed a previous version of the SharePoint Online Management Shell from the Microsoft Download Center, go to **Add or remove programs** and uninstall the SharePoint Online Management Shell. Then, install the latest SharePoint Online Management Shell from the [Download Center](https://go.microsoft.com/fwlink/p/?LinkId=255251).
-
-4. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint Online Management Shell. To learn how, see [Getting started with SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-
-5. Run the following commands to get the list of sensitivity labels and their GUIDs.
-
-    ```PowerShell
+    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
+    
+    ```powershell
     Set-ExecutionPolicy RemoteSigned
     $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $UserCredential
-    Import-PSSession $Session
-    Get-Label |ft Name, Guid  
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
     ```
 
-6. Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups.
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) cmdlet:
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
 
-7. Use the following command as an example to get the list of groups that currently have the classification of "General":
+3. Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups.
 
-   ```PowerShell
-   $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
-   ```
+4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+    
+    For example:
+    
+    ```powershell
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session
+    ```
+
+5. Run the [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) cmdlet to get the list of Office 365 groups that have one of the classifications you've specified.
+    
+    For example, to get a list of Office 365 groups that have the classification of "General": 
+    
+    ```powershell
+    $Groups= Get-UnifiedGroup | Where {$_.classification -eq "General"}
+    ```
 
 6. For each group, add the new sensitivity label GUID. For example:
 
@@ -297,6 +320,8 @@ Although you can't prevent users from creating new groups in apps and services t
     foreach ($g in $groups)
     {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
     ```
+
+7. Repeat steps 5 and 6 for your remaining group classifications.
 
 ## Auditing sensitivity label activities
 

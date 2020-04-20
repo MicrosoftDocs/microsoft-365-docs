@@ -6,7 +6,7 @@ ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -28,6 +28,7 @@ Office 365 groups is the foundational membership service that drives all teamwor
 - A shared calendar
 - A SharePoint document library
 - A Planner
+- A OneNote notebook
 - Power BI
 - Yammer (if the group was created from Yammer)
 - A Team (if the group was created from Teams)

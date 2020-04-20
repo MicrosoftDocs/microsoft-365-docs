@@ -71,7 +71,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Lock down your global administrator accounts with conditional access policies.
+   Lock down your global administrator accounts with Conditional Access policies.
 
 - [Password writeback](password-writeback-m365-ent-test-environment.md)
 
@@ -91,7 +91,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Identity and device access](identity-device-access-m365-test-environment.md)
 
-   Create an environment to test recommended identity and device access configurations and conditional access policies.
+   Create an environment to test recommended identity and device access configurations and Conditional Access policies.
 
 
 ## Mobile device management
