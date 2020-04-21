@@ -89,6 +89,28 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 8. Choose **Save**.
 
+## Create mail flow rules to remove encryption for outgoing email messages with the new OME capabilities
+
+You can define mail flow rules for triggering remove message encryption with the new OME capabilities by using the EAC.
+
+### Use the EAC to create a rule for removing encryption from email messages with the new OME capabilities
+
+1. In a web browser, using a work or school account that has been granted admin permissions, [sign in to Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+
+2. Choose the **Admin** tile.
+
+3. In the Microsoft 365 admin center, choose **Admin centers** \> **Exchange**.
+
+4. In the EAC, go to **Mail flow** \> **Rules** and select **New** ![New icon](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **Create a new rule**. For more information about using the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+
+5. In **Name**, type a name for the rule, such as Remove encryption from incoming mail.
+
+6. In **Apply this rule if** select the conditions where encryption should be removed from messages, Add **The sender is located** \> **Inside the organization**. Now add additional conditions to target specific recipients, such as **The recipient is located** \> **Outside the organization**.
+
+7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection**.
+
+8. Select **Save**.
+
 ## Create mail flow rules for Office 365 Message Encryption without the new capabilities
 
 If you haven't yet moved your organization to the new OME capabilities, use these tasks to define mail flow rules to encrypt messages for your organization. Microsoft recommends that you make a plan to move to the new OME capabilities as soon as it is reasonable for your organization. For instructions, see [Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection](set-up-new-message-encryption-capabilities.md).
