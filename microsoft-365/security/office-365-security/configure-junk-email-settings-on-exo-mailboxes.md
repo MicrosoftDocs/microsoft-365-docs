@@ -104,7 +104,7 @@ The safelist collection on a mailbox includes the Safe Senders list, the Safe Re
 |_TrustedSendersAndDomains_<sup>\*</sup>|**Don't move email from these senders to my Junk Email folder**|
 |
 
-<sup>\*</sup>**Notes**:
+<sup>\*</sup> **Notes**:
 
 - In Exchange Online, **domain entries** in the Safe Senders list or _TrustedSendersAndDomains_ parameter aren't recognized, so only use email addresses. In standalone EOP with directory synchronization, domain entries aren't synchronized by default, but you can enable synchronization for domains. For more information, see [KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange).
 
