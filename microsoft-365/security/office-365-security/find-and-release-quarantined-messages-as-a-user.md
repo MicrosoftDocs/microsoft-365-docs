@@ -103,7 +103,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
 
-   After you've entered the search criteria, click ![Refresh button](../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
+   After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
