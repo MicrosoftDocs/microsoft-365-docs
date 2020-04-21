@@ -55,9 +55,11 @@ Filters and breakdowns of the information allow for more granular categorization
 
 ![Threat Protection Status report dropdown showing 'break down by'.](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-These views give you the option to export, via a button click (in Email > Phish, Email > Malware, and Content > Malware views). The aggregated data exported to your computer can be opened in Excel.
+These views give you the option to export, via a button click (in **Email** \> **Phish**, **Email** \> **Malware**, and **Content** \> **Malware** views). The aggregated data exported to your computer can be opened in Excel.
 
 ![This graphic shows Export as an option in the menu for the Malware view, right between Create Schedule, and Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**Note**: The maximum number of entries that can be exported for **Phish** and **Malware** is just under 10000. If you export a view, only the most recent 10000 entries are exported.
 
 The Overview and Emails views will display information within hours of processing rather than in 24 hours (demand re. increased speeds here has been a clear signal)!
 
