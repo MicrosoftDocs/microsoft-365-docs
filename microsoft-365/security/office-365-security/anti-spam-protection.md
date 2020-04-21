@@ -66,7 +66,7 @@ Here are some best practices that apply to either scenario:
 
 - **Use email authentication**: If you own an email domain, you can use DNS to help insure that messages from senders in that domain are legitimate. To help prevent spam and unwanted spoofing in EOP, use all of the following email authentication methods:
 
-  - **SPF**: Sender Policy Framework verifies the source IP address of the message against the owner of the sending domain. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF in Microsoft 365 to help prevent spoofing](set-up-spf-in-Microsoft-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-Microsoft-365-uses-spf-to-prevent-spoofing.md).
+  - **SPF**: Sender Policy Framework verifies the source IP address of the message against the owner of the sending domain. For a quick introduction to SPF and to get it configured quickly, see [Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). For a more in-depth understanding of how Microsoft 365 uses SPF, or for troubleshooting or non-standard deployments such as hybrid deployments, start with [How Microsoft 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 
   - **DKIM**: DomainKeys Identified Mail adds a digital signature to the message header of messages sent from your domain. For information, see [Use DKIM to validate outbound email sent from your custom domain in Microsoft 365](use-dkim-to-validate-outbound-email.md).
 
@@ -76,11 +76,11 @@ Here are some best practices that apply to either scenario:
 
 ### Prevent the delivery of spam to the Inbox
 
-- **Verify your organization settings**: Watch out for settings that allow messages to skip spam filtering (for example, if you add your own domain to the allowed domains list in anti-spam policies). For our recommended settings, see [Recommended settings for EOP and Microsoft 365 ATP security](recommended-settings-for-eop-and-office365-atp.md) and [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-Microsoft-365.md).
+- **Verify your organization settings**: Watch out for settings that allow messages to skip spam filtering (for example, if you add your own domain to the allowed domains list in anti-spam policies). For our recommended settings, see [Recommended settings for EOP and Microsoft 365 ATP security](recommended-settings-for-eop-and-office365-atp.md) and [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Verify the junk email rule is enabled in the user's mailbox**: It's enabled by default, but if it's isn't messages marked as junk can't be moved into the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Use the available blocked sender lists**: For information, see [Create blocked sender lists in Microsoft 365](create-block-sender-lists-in-Microsoft-365.md).
+- **Use the available blocked sender lists**: For information, see [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
 
 - **Unsubscribe from bulk email** If the message was something that the user signed up for (newsletters, product announcements, etc.) and contains an unsubscribe link from a reputable source, consider asking them to simply unsubscribe.
 
@@ -98,7 +98,7 @@ Here are some steps that you can take to help prevent false positives:
 
   For more information about these settings, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Use the available safe sender lists**: For information, see [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-Microsoft-365.md).
+- **Use the available safe sender lists**: For information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md.
 
 - **Verify users are within the sending and receiving limits** as described in [Receiving and sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) in the Exchange Online service description.
 
