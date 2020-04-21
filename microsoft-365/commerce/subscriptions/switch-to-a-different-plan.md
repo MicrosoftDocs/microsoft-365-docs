@@ -98,4 +98,4 @@ If you want to switch to a plan with fewer services, you can [switch plans manua
   
 ## Call support to help you switch plans
 
-![Phone](../../media/88eae4a1-b8d9-4a12-bc4a-44af244f084b.png) [Call support](../../admin/contact-support-for-business-products.md)
+[Call support](../../admin/contact-support-for-business-products.md)
