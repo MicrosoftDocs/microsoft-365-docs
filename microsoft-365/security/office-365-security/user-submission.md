@@ -27,6 +27,8 @@ In Office 365 organizations with Exchange Online mailboxes, you can specify a ma
 
 You can also configure third-party message reporting tools to forward messages to the mailbox that you specify.
 
+Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
+
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
