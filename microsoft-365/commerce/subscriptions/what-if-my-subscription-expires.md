@@ -215,7 +215,7 @@ Here's what to expect for you and your users if you cancel a subscription.
 To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> If you want your subscription data to be deleted before the typical Disabled period is over, you can request expedited deprovisioning. When you request expedited deprovisioning, your subscription data is deleted within 3 days of cancellation. To use expedited deprovisioning, [call support](../../admin/contact-support-for-business-products.md).
+> If you want your subscription data to be deleted before the typical Disabled period is over, you can [close your account](../close-your-account.md).
 
 > [!NOTE]
 > The information on this page is subject to the [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651). Return to this site periodically to review any changes.
