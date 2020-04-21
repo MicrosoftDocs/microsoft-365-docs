@@ -37,6 +37,7 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 
 ::: moniker range="o365-worldwide"
 
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
 2. Find the subscription to which you want to add licenses. In the **Licenses** section, select **Add more licenses**.
@@ -93,6 +94,7 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 ## Extend the expiration date of your subscription
 
 ::: moniker range="o365-worldwide"
+
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 

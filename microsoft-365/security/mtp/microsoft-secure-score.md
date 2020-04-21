@@ -47,7 +47,7 @@ Most are scored in a binary fashion — if you implement the improvement action,
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
+Currently there are recommendations for including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -61,7 +61,6 @@ With read and write access, you can make changes and directly interact with Secu
 * Security administrator
 * Exchange administrator
 * SharePoint administrator
-* Account administrator
 
 ### Read-only roles
 
@@ -132,11 +131,9 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 ## What's new?
 
-To make Microsoft Secure Score a better representative of your security posture we have made some changes.
+To make Microsoft Secure Score a better representative of your security posture we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
-
-### March 2020
+### January - March 2020
 
 #### Supporting security defaults for Azure AD improvement actions
 

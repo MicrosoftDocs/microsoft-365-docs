@@ -1,5 +1,5 @@
 ---
-title: "Top billing questions for Office 365 for business"
+title: "Top billing questions for Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,10 +24,10 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: "Find answers to your top billing questions for your business subscription."
+description: "Find answers to your top billing questions for Microsoft 365 for business subscription. "
 ---
 
-# Top billing questions for business subscriptions
+# Top billing questions for Microsoft 365 for business
 
 Have questions about your billing statement? Here are the answers to the top billing questions.
   

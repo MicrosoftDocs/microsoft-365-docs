@@ -19,7 +19,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
-description: "Learn how to manage your own DNS records or let Office 365 manage your DNS records for you."
+description: "Learn how to manage your own DNS records or let Microsoft manage your DNS records for you."
 ms.custom: okr_smb
 ---
 
@@ -27,7 +27,7 @@ ms.custom: okr_smb
 
 To start using a custom domain (contoso.com) with Office 365, you need to verify your domain and configure your domain's DNS records. 
   
-You can add and manage DNS records using the administrative tools at your domain host, or give Office 365 control of your domain records and we'll set them up for you.
+You can add and manage DNS records using the administrative tools at your domain host, or give Microsoft control of your domain records and we'll set them up for you.
   
 Select your domain host below for the exact steps. If you're not sure who your host is, see [Find your domain registrar](find-your-domain-registrar.md).
   

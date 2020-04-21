@@ -1,5 +1,5 @@
 ---
-title: "Resolve license conflicts in Office 365 for business"
+title: "Resolve license conflicts"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -19,10 +19,10 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
-description: "Learn how to resolve license conflicts with your Office 365 for business subscription."
+description: "Learn how to resolve license conflicts with your Microsoft 365 for business subscription."
 ---
 
-# Resolve license conflicts in Office 365 for business
+# Resolve license conflicts
 
 We recommend that you buy the licenses that you need for your subscription before you create new users. That way, a license can be assigned to new users as user accounts are created. If you have already assigned all of your licenses to users, but some of the licenses have expired, or you try to remove a license that is already assigned to a user, you will have license conflicts. For more information, see [Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md).
   
