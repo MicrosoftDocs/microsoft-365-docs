@@ -19,16 +19,16 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "This article explains quarantine in Office 365. Quarantine holds potentially dangerous or unwanted messages."
+description: "This article explains quarantine in Microsoft 365. Quarantine holds potentially dangerous or unwanted messages."
 ---
 
-# Quarantine in Office 365
+# Quarantine email messages
 
-If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
+If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, quarantine is available to hold potentially dangerous or unwanted messages.
 
 Anti-malware policies automatically quarantine a message if *any* attachment is found to contain malware. For more information, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-By default, anti-spam policies quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+By default, anti-spam polices quarantine phishing messages, and deliver spam and bulk email messages to the user's Junk Email folder. But, you can also create and customize anti-spam policies to quarantine spam and bulk-email messages. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 Both users and admins can work with quarantined messages:
 

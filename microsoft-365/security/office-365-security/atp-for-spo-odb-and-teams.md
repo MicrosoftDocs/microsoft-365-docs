@@ -1,5 +1,5 @@
 ---
-title: Office 365 ATP - SharePoint, OneDrive, and Teams
+title: "ATP for SharePoint, OneDrive, and Microsoft Teams"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -22,7 +22,7 @@ ms.custom:
 description: "Learn about Office 365 Advanced Threat Protection for files in SharePoint Online, OneDrive for Business, and Microsoft Teams."
 ---
 
-# Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
+# ATP for SharePoint, OneDrive, and Microsoft Teams
 
 ## Overview of Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams
 
@@ -38,7 +38,7 @@ Although the blocked file is still listed in the document library and web, mobil
 
 ![Deleting a blocked file from OneDrive for Business from the OneDrive mobile app](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
-Depending on how Office 365 is configured, people might or might not have the ability to download a blocked file. Here's what downloading a blocked file looks like on a user's mobile device:
+Depending on how Microsoft 365 is configured, people might or might not have the ability to download a blocked file. Here's what downloading a blocked file looks like on a user's mobile device:
 
 ![Downloading a blocked file in OneDrive for Business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
@@ -62,7 +62,7 @@ To learn more, see [Turn on Office 365 ATP for SharePoint, OneDrive, and Microso
 
 When a file in SharePoint Online, OneDrive for Business, or Microsoft Teams is identified as malicious, in addition to ATP blocking the file from being opened or shared, that file is included in a list of quarantined items. (In the Security &amp; Compliance Center, go to **Threat management** \> **Review** \> **Quarantine** and filter for **Content**.)
 
-If you're part of your organization's Office 365 security team and have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can download, release, report, and delete files that are detected as malicious by ATP from quarantine.
+If you're part of your organization's Microsoft 365 for business security team and have the necessary [permissions assigned in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md), you can download, release, report, and delete files that are detected as malicious by ATP from quarantine.
 
 - **Releasing and reporting** a file removes the ATP block on the file in the respective team site or document library for SharePoint, OneDrive, or Microsoft Teams. Users are then able to open, share, and download the file. And, when the **Send report to Microsoft** option is selected, the file is reported as a false positive to Microsoft.
 

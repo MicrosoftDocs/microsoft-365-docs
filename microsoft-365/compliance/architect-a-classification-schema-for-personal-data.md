@@ -27,11 +27,11 @@ Note: Defining a classification schema for an organization and configuring polic
 
 ## Decide if you're using labels in addition to sensitive data types
 
-You can take one of two approaches for classification in Office 365 for personal information. Either of these can be used for GDPR protection. If you decide to use only sensitive information types for classification, you can skip the rest of this topic.
+You can take one of two approaches for classification in Microsoft 365 for personal information. Either of these can be used for GDPR protection. If you decide to use only sensitive information types for classification, you can skip the rest of this topic.
 
 Choose one of the following options.
 
-### Option 1: Use only Office 365 sensitive information types
+### Option 1: Use only Microsoft 365 sensitive information types
 
 - Sensitive information types work well to identify and protect personal data subject to GDPR and other types of regulations.
 

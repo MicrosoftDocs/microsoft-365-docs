@@ -1,5 +1,5 @@
 ---
-title: "Technical reference details about encryption in Office 365"
+title: "Technical reference details about encryption"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,7 +19,7 @@ description: Learn about the various certificates, technologies, and TLS cipher 
 ms.custom: seo-marvel-apr2020
 ---
 
-# Technical reference details about encryption in Office 365
+# Technical reference details about encryption
 
 Refer to this article to learn about certificates, technologies, and TLS cipher suites used for [encryption in Office 365](encryption.md). This article also provides details about planned deprecations.
   

@@ -713,7 +713,7 @@ if ($ResultCSV)
 
 Follow the steps here:
   
-- [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+- [Connect to Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 ## Step 5: Run the PowerShell script to create and publish the retention labels
 

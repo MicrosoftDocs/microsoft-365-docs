@@ -28,7 +28,7 @@ Article 4 – Definitions
 
 > 'personal data' means any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;
 
-This article demonstrates how to find personal data stored in SharePoint Online and OneDrive for Business (which includes the sites for all Office 365 groups and Microsoft Teams).
+This article demonstrates how to find personal data stored in SharePoint Online and OneDrive for Business (which includes the sites for all Microsoft 365 groups and Microsoft Teams).
 
 Finding personal data subject to GDPR relies on using sensitive information types in Office 365. These define how the automated process recognizes specific information types such as health service numbers and credit card numbers. You can use data loss prevention policies to find personal data in mail while in transit. You can use the sensitive information types you curate for GDPR to find and protect personal information as it is sent through email. Also see [Managed GDPR data subject requests with the DSR case tool in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/manage-gdpr-data-subject-requests-with-the-dsr-case-tool).
 
@@ -93,7 +93,7 @@ At this time sensitive information types cannot be used to find data at rest in 
 <tbody>
 <tr class="odd"><td align="left"><p>Go to Content Search in the Security and Compliance Center</p></td>
 <td align="left"><p>In the left pane of the Security &amp; Compliance Center, click **Search &amp; investigation** &gt; **Content search**.</p>
-<p>See <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Run a Content Search in the Office 365 Security &amp; Compliance Center</a>.</p></td>
+<p>See <a href="https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a">Run a Content Search in the Security &amp; Compliance Center</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Create a new search item for each sensitive information type</p></td>
@@ -113,7 +113,7 @@ At this time sensitive information types cannot be used to find data at rest in 
 <td align="left"><p>Look for these types of issues to determine if the query accuracy is on target:</p>
 <p><li>Many false positives</li></p>
 <p><li>Missing known instances of data</li></p>
-<p>See <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Export Content Search results from the Office 365 Security &amp; Compliance Center</a>.</p>
+<p>See <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Export Content Search results from the Security &amp; Compliance Center</a>.</p>
 <p>Note: if you're using Mozilla Firefox or Chrome, you might need to first download reports using Internet Explorer or Edge in order to install the required add-in.</p></td>
 </tr>
 </tbody>

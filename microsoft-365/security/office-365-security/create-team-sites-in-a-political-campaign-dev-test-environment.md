@@ -30,11 +30,11 @@ Use the instructions in this article to create a dev/test environment that inclu
 
 First, follow the instructions in [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) to create your subscriptions, users, and groups.
   
-## Phase 2: Create Office 365 labels
+## Phase 2: Create labels
 
 In this phase, you create the labels for the different levels of security for SharePoint Online team site document folders.
   
-1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. From the **Microsoft Office Home** tab, click the **Admin** tile.
     

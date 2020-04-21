@@ -35,19 +35,19 @@ In this phase, you create the three Azure AD-based access groups for the three d
 
 Determine the set of user accounts corresponding to the SharePoint Online admins for the isolated team site.
   
-If you are managing user accounts and groups through Office 365 and want to use Windows PowerShell, make a list of their user principal names (UPNs) (example UPN: belindan@contoso.com).
+If you are managing user accounts and groups through Microsoft 365 and want to use Windows PowerShell, make a list of their user principal names (UPNs) (example UPN: belindan@contoso.com).
   
 ### Step 2: List the members for the site
 
 Determine the set of user accounts corresponding to the members for the isolated team site, those who will be collaborating on resources stored within the site.
   
-If you are managing user accounts and groups through Office 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
+If you are managing user accounts and groups through Microsoft 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
   
 ### Step 3: List the viewers for the site
 
 Determine the set of user accounts corresponding to the viewers of the isolated team site, those who can view the resources stored in the site but not modify them or directly collaborate on their contents.
   
-If you are managing user accounts and groups through Office 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
+If you are managing user accounts and groups through Microsoft 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
   
 Viewers for the site might include executive management, legal counsel, or inter-departmental stakeholders.
   
@@ -98,7 +98,7 @@ In this step, do the following:
     
 3. Add the list of users from step 3 to the site viewers access group
     
-If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Office 365 subscription.
+If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Microsoft 365 subscription.
   
 If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell. If you have duplicate group names for any of the access groups, you should use the Microsoft 365 admin center.
   
@@ -152,7 +152,7 @@ Here is your resulting configuration with the three site access groups populated
   
 ## Phase 2: Create and configure the isolated team site
 
-In this phase, you create the isolated SharePoint Online site and configure the permissions for the default SharePoint Online permission levels to use your new Azure AD-based access groups. By default, new team sites include an Office 365 group and other related resources, but in this case, we'll create a team site without an Office 365 group. This allows maintaining permissions entirely through SharePoint.
+In this phase, you create the isolated SharePoint Online site and configure the permissions for the default SharePoint Online permission levels to use your new Azure AD-based access groups. By default, new team sites include a Microsoft 365 group and other related resources, but in this case, we'll create a team site without a Microsoft 365 group. This allows maintaining permissions entirely through SharePoint.
   
 First, create the SharePoint Online team site with these steps.
   

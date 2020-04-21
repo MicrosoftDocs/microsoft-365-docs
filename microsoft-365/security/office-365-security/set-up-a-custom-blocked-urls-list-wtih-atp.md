@@ -1,5 +1,5 @@
 ---
-title: Set up custom blocked URLs with ATP Safe Links
+title: "Set up a custom blocked URLs list using ATP Safe Links"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -21,7 +21,7 @@ ms.custom:
 description: "Learn how to set up a list of blocked URLs for your organization using Office 365 Advanced Threat Protection."
 ---
 
-# Set up a custom blocked URLs list using Office 365 ATP Safe Links
+# Set up a custom blocked URLs list using ATP Safe Links
 
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are a home user looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -30,7 +30,7 @@ With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your orga
   
 ![This site is blocked](../../media/6b4bda2d-a1e6-419e-8b10-588e83c3af3f.png)
   
-The blocked URLs list is defined by your organization's Office 365 security team, and that list applies to everyone in the organization who is covered by Office 365 ATP Safe Links policies. 
+The blocked URLs list is defined by your organization's Microsoft 365 for business security team, and that list applies to everyone in the organization who is covered by Office 365 ATP Safe Links policies. 
   
 Read this article to learn how to set up your organization's custom blocked URLs list for [ATP Safe Links in Office 365](atp-safe-links.md).
   
@@ -42,12 +42,12 @@ To edit (or define) ATP policies, you must be assigned one of the roles describe
 
 |Role  |Where/how assigned  |
 |---------|---------|
-|Office 365 Global Administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
+|global administrator |The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)         |
 |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Exchange Online Organization Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)) |
 
 > [!TIP]
-> To learn more about roles and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> To learn more about roles and permissions, see [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ### To view or edit a custom blocked URLs list
   

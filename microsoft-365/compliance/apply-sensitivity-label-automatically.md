@@ -53,7 +53,6 @@ There are two different methods for automatically applying a sensitivity label:
     
     Specific to auto-labeling for SharePoint and OneDrive:
     - Maximum of 25,000 automatically labeled files (Word, PowerPoint, or Excel) in your tenant per day
-        - Maximum of 5 automatically labeled files per licensed user per day
     - Maximum of 10 sites collections across all policies
     - Maximum of 10 policies across your tenant
 
@@ -90,7 +89,11 @@ The labels are ordered for evaluation according to their position that you speci
 
 ## Don't configure a parent label to be applied automatically or recommended
 
-Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended, because the parent label won't be applied to content in Office apps that use the Azure Information Protection unified labeling client. For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
+Remember, you can't apply a parent label (a label with sublabels) to content. Make sure that you don't configure a parent label to be auto-applied or recommended in Office apps, and don't select a parent label for an auto-labeling policy. If you do, the parent label won't be applied to content.
+
+To use automatic labeling with sublabels, make sure you publish both the parent label and the sublabel.
+
+For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
 
 ## How to configure auto-labeling for Office apps
 
@@ -133,7 +136,7 @@ For more information about these classifers, see [Getting started with trainable
 
 During the preview period, the following apps support classifers for sensitivity labels:
 
-- Office 365 ProPlus desktop apps for Windows, from [Office Insider](https://office.com/insider):
+- Microsoft365 Apps for enterprise desktop apps for Windows, from [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
@@ -144,7 +147,7 @@ During the preview period, the following apps support classifers for sensitivity
     - PowerPoint
     - Outlook
 
-### Recommend that the user applies a sensitivity label in Office apps
+### Recommend that the user applies a sensitivity label
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
@@ -154,7 +157,7 @@ Here's an example of a prompt from the Azure Information Protection unified labe
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### When automatic or recommended labels are applied in Office apps
+### When automatic or recommended labels are applied
 
 The implementation of automatic and recommended labeling in Office apps depend on whether you're using labeling that's built into Office, or the Azure Information Protection unified labeling client. In both cases, however:
 
@@ -184,7 +187,7 @@ Specific to the Azure Information Protection unified labeling client:
 
 ### Prerequisites for auto-labeling policies
 
-- Auditing for Office 365 must be turned on for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Auditing for Microsoft 365 must be turned on for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -284,5 +287,4 @@ You can also see the results of your auto-labeling policy by using [content expl
 
 > [!TIP]
 > You can also use content explorer to identify locations that have unlabeled documents that contain sensitive information. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
-
 

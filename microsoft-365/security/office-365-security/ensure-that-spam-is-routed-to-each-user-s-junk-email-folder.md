@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 # Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments
 
 > [!IMPORTANT]
-> This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Office 365 customers with Exchange Online mailboxes.
+> This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Microsoft 365 customers with Exchange Online mailboxes.
 
 If you're a standalone Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize and translate the spam filtering verdicts of EOP, so the junk email rule in the on-premises mailbox can move messages to the Junk Email folder.
 

@@ -21,7 +21,7 @@ search.appverid:
 
 # What's coming in Microsoft Secure Score?
 
-To make Microsoft Secure Score a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
 To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
@@ -31,15 +31,19 @@ To learn about recent changes, see [What's new in Microsoft Secure Score?](micro
 
 To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
 
-- Delete/block accounts not used in last 30 days
-- Designate fewer than 5 global admins
 - Apply IRM protections to documents
 - Apply Data Loss Prevention policies
 
-### Adding additional control support in the preview version
+### Adding Azure AD improvement action to preview
+
+Adding the following Azure Active Directory improvement action to the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md):
+
 - Do not allow users to grant consent to unmanaged applications (currently available in released version)
 
-#### Support for additional Microsoft Cloud App Security improvement actions
+### Adding Azure ATP improvement actions to preview
+
+Adding the following Azure Advanced Threat Protection improvement actions to the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md):
+
 - Disable Print spooler service on domain controllers
 - Modify unsecure Kerberos delegations to prevent impersonation
 - Protect and manage local admin passwords with Microsoft LAPS
@@ -51,5 +55,6 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Stop legacy protocols communication
 - Stop weak cipher usage
 
-#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
-- All released security recommendations supplied by TVM will now also be available in Microsoft Secure Score
+### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations in preview
+
+All released security recommendations supplied by TVM will now also be available the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md).
