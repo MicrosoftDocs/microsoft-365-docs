@@ -19,7 +19,7 @@ description: "Learn how to submit suspicious emails, suspected phishing mails, s
 
 # Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
 
-If you're an admin in a Microsoft 365 organization with mailboxes in Exchange Online, you can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs and attachments to Microsoft for scanning.
+If you're an admin in a Microsoft 365 organization with mailboxes in Exchange Online, you can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs, and attachments to Microsoft for scanning.
 
 When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
 
@@ -33,7 +33,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- For more information about how users can submit messages and files to Microsoft see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+- For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## How to direct suspicious content to Microsoft scanning
 
@@ -47,9 +47,9 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 1. In the **Object type** section, select **Email**. In the **Submission format** section, use one of the following options:
 
-   - **Network Message ID**
+   - **Network Message ID**: This is a GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header in the message.
 
-   - **File**: Click **Choose file** file. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
+   - **File**: Click **Choose file**. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
 2. In the **Recipients** section, specify one or more recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 

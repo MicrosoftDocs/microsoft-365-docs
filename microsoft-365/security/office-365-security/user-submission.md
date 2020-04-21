@@ -22,9 +22,10 @@ description: "Admins can learn how to configure a mailbox to collect spam and ph
 In Office 365 organizations with Exchange Online mailboxes, you can specify a mailbox to receive messages that users report as malicious or not malicious. You can configure this mailbox to intercept or receive copies of messages that users report to Microsoft. This feature works with the following message reporting options:
 
 - [The Report Message add-in](enable-the-report-message-add-in.md)
+
 - [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
 
-You can also configure third-party tools to forward messages to the mailbox that you specify.
+You can also configure third-party message reporting tools to forward messages to the mailbox that you specify.
 
 ## What do you need to know before you begin?
 
@@ -57,8 +58,10 @@ You can also configure third-party tools to forward messages to the mailbox that
    - **Send the reported messages to**: Make one of the following selections:
 
      - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
-     - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing mailbox, or the email address of the mailbox that you want to create.
-     - **Custom mailbox**: In the box that appears, enter the email address of an existing mailbox, or the email address of the mailbox that you want to create.
+
+     - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox.
+
+     - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox.
 
      When you're finished, click **Confirm**.
 
