@@ -42,7 +42,7 @@ Save time by starting your service request online. We'll help you find a solutio
 
 2. Select the **Need help?** button.
 
-3. In the **Need help?** pane, tell us what you need help with, and then press Enter.
+3. In the **Need help?** pane, tell us what you need help with, and then press **Enter**.
 
 4. If the results don't help, select **Contact support**.
 
