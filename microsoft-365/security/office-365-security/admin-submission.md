@@ -29,7 +29,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Submission** page, use <https://protection.office.com/reportsubmission>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 - You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -45,34 +45,54 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 ### Submit a questionable email to Microsoft
 
-1. In the **Object type** section, select **email** and specify the email **network message ID** or upload the email file.
+1. In the **Object type** section, select **Email**. In the **Submission format** section, use one of the following options:
 
-2. Specify the recipient(s) that you would like to run the policy check against. The policy check will determine if the email bypassed scanning due to user or tenant level policies.
+   - **Network Message ID**
 
-3. Specify if the email should have been blocked or not. If the email should have been blocked, specify if it should have been blocked as Spam, Phishing, or Malware. If you are not sure what type it might be, use your best judgment.
+   - **File**: Click **Choose file** file. In the dialog that opens, find and select the .eml or .msg file, and then click **Open**.
 
-   - If the filter was bypassed due to policies upon submission, you'll see information about that policy.
+2. In the **Recipients** section, specify one or more recipients that you would like to run a policy check against. The policy check will determine if the email bypassed scanning due to user or organization policies.
 
-   - If the filter was not bypassed due to one or more policies, the scan will complete in several minutes. You'll see additional information about the submission by clicking on the status link. This includes the results of the policy check and the rescan verdict. Note this does not run the email through the Office 365 ATP full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.
+3. In the **Reason for submission** section, select one of the following options:
 
-4. Click the **Submit** button.
+   - **Should not have been blocked**
 
-![Email submission example](../../media/submission-flyout-email.PNG)
+   - **Should have been blocked**: Select **Spam**, **Phishing**, or **Malware**. If you're not sure, use your best judgment.
+
+4. If the filter was bypassed due to policies upon submission, you'll see information about that policy.
+
+   If the filter was not bypassed due to one or more policies, the scan will complete in several minutes. You'll see additional information about the submission by clicking on the status link. This includes the results of the policy check and the rescan verdict. Note this does not run the email through the Office 365 ATP full filtering stack again but runs a partial rescan based on certain attributes of the mail, URL, or file.
+
+5. When you're finished, click the **Submit** button.
+
+![URL submission example](../../media/submission-flyout-email.PNG)
 
 ### Send a suspect URL to Microsoft
 
-1. In the **Object type** section, select **URL** from the flyout. Type in the full URL including the protocol (**https://**).
+1. In the **Object type** section, select **URL**. In the box that appears, enter the full URL (for example, <https://www.fabrikam.com/marketing.html>.
 
-   If you selected **Should have been filtered**, specify if the URL is phishing or malware.
+2. In the **Reason for submission** section, select one of the following options:
 
-2. Click the **Submit** button.
+   - **Should not have been blocked**
+
+   - **Should have been blocked**: Select **Phishing** or **Malware**.
+
+3. When you're finished, click the **Submit** button.
 
 ![Email submission example](../../media/submission-url-flyout.png)
 
 ### Submit a suspected file to Microsoft
 
-1. In the **Object type** section, select **File** from the flyout and upload the file you would like to scan.
+1. In the **Object type** section, select **Attachment**.
 
-2. Click the **Submit** button.
+2. Click **Choose File**. In the dialog that opens, find and select the file, and then click **Open**.
 
-![Email submission example](../../media/submission-file-flyout.PNG)
+3. In the **Reason for submission** section, select one of the following options:
+
+   - **Should not have been blocked**
+
+   - **Should have been blocked**: **Malware** is the only choice, and is automatically selected..
+
+4. When you're finished, click the **Submit** button.
+
+![Attachment submission example](../../media/submission-file-flyout.PNG)

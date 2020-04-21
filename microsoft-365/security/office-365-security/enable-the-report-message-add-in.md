@@ -49,6 +49,8 @@ If you're an Office 365 global administrator or an Exchange Online administrator
   - Mailboxes in on-premises Exchange organizations
   - GCC, GCC HIGH, or DoD subscriptions
 
+- You can configure reported messages to be copied or redirected to a mailbox that you specify. For more information, see [Specify a mailbox for user submissions of spam and phishing messages in Office 365](user-submission.md).
+
 - Your existing web browser should work with the Report Message add-in. But, if you notice the add-in is not available or not working as expected, try a different browser.
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).

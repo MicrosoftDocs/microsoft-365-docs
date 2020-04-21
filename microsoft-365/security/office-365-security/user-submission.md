@@ -40,11 +40,15 @@ You can also configure third-party tools to forward messages to the mailbox that
 
 2. In the **User submissions** page that appears, select one of the following options:
 
-   - **Enable the Report Message feature for Outlook (Recommended)**: Select this option if you use the Report Message add-in or the built-in reporting in Outlook on the web, and configure the following settings:
+   - **Enable the Report Message feature for Outlook (Recommended)**: Select this option if you use the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
      - **Customize the end-user confirmation message**: Click this link. In the **Customize confirmation message** flyout that appears, configure the following settings:
 
-       - **Before submission**: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in. You can use the variable %type% to include the submission type (spam, phish, etc.).
+       - **Before submission**: In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see before they report a message using the Report Message add-in. You can use the variable %type% to include the submission type (junk, not junk, phish, etc.).
+
+         As noted, the following text is also added to the notification:
+
+         > Your email will be submitted as-is to Microsoft for analysis. Some emails might contain personal or sensitive information.
 
        - **After submission**: Click ![Expand icon](../../media/scc-expand-icon.png). In the **Title** and **Confirmation message** boxes, enter the descriptive text that users see after they report a message using the Report Message add-in. You can use the variable %type% to include the submission type.
 
@@ -58,8 +62,12 @@ You can also configure third-party tools to forward messages to the mailbox that
 
      When you're finished, click **Confirm**.
 
-   - **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in or the built-in reporting in Outlook on the web.
+     ![Send reported messages to Microsoft and a custom mailbox](../../media/user-submission-enable-outlook-report-message.png)
+
+   - **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
      Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing mailbox, or the email address of the mailbox that you want to create.
 
      When you're finished, click **Confirm**.
+
+     ![Send reported messages to a custom mailbox using third-party tools](../../media/user-submission-disable-outlook-report-message.png)
