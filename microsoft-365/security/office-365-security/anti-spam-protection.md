@@ -78,7 +78,7 @@ Here are some best practices that apply to either scenario:
 
 - **Verify your organization settings**: Watch out for settings that allow messages to skip spam filtering (for example, if you add your own domain to the allowed domains list in anti-spam policies). For our recommended settings, see [Recommended settings for EOP and Microsoft 365 ATP security](recommended-settings-for-eop-and-office365-atp.md) and [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
-- **Verify the junk email rule is enabled in the user's mailbox**: It's enabled by default, but if it's isn't messages marked as junk can't be moved into the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Verify the junk email rule is enabled in the user's mailbox**: It's enabled by default, but if it's disabled, messages marked as junk can't be moved into the Junk Email folder. For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Use the available blocked sender lists**: For information, see [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
 
