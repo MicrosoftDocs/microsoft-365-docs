@@ -47,7 +47,7 @@ Before you use your domain with Office 365, we have to make sure that you own it
     
 2. On the **Resources** page, select **Hosted Zones**.
     
-3. On the ** Hosted Zones ** page, in the **Domain Name** column, select the name of the domain that you want to edit. 
+3. On the **Hosted Zones** page, in the **Domain Name** column, select the name of the domain that you want to edit. 
     
 4. Select **Create Record Set**.
     
