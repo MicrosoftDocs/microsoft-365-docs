@@ -31,7 +31,7 @@ landingContent:
           - text: Microsoft 365 security center
             url: mtp/overview-security-center.md
   
-  # Card (optional)
+  # Card
   - title: Microsoft Defender ATP
     linkLists:
       - linkListType: overview
@@ -40,7 +40,14 @@ landingContent:
             url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
           - text: Overview of capabilities
             url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
- 
+  # Card
+  - title: Secure your remote workforce
+    linkLists:
+      - linkListType: get-started
+        links:
+        - text: Secure your remote workforce
+          url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
+
    # Card
   - title: Office 365 ATP
     linkLists:
