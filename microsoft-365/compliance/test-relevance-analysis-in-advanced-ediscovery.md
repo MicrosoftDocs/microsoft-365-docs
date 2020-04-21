@@ -1,5 +1,5 @@
 ---
-title: "Test Relevance analysis in Office 365 Advanced eDiscovery"
+title: "Test Relevance analysis in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
-description: "Learn how to use the Test tab after Batch calculation in Office 365 Advanced eDiscovery to test, compare, and validate the overall quality of processing. 
+description: "Learn how to use the Test tab after Batch calculation in Advanced eDiscovery to test, compare, and validate the overall quality of processing. 
 "
 ---
 

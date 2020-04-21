@@ -1,5 +1,5 @@
 ---
-title: "Remediation actions in Office 365 automated investigation and response"
+title: "Remediation actions in Microsoft 365 automated investigation and response"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 description: "Learn about remediation actions in automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ---
 
-# Remediation actions in Office 365
+# Remediation actions in Microsoft 365
 
 ## Remediation actions
 
@@ -55,9 +55,9 @@ The following table summarizes threats and appropriate remediation actions in Of
 
 ## Next steps
 
-- [View details and results of an automated investigation in Office 365](air-view-investigation-results.md)
+- [View details and results of an automated investigation in Microsoft 365](air-view-investigation-results.md)
 
-- [View pending or completed remediation actions following an automated investigation in Office 365](air-review-approve-pending-completed-actions.md)
+- [View pending or completed remediation actions following an automated investigation in Microsoft 365](air-review-approve-pending-completed-actions.md)
 
 
 ## Related articles

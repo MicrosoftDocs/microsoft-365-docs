@@ -1,5 +1,5 @@
 ---
-title: "Customize the Office 365 theme for your organization"
+title: "Customize the theme for your organization"
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: "Learn to change the default theme of Office 365 and customize it to match your company logo or color. "
+description: "Learn to change the default theme of Microsoft 365 and customize it to match your company logo or color. "
 ---
 
-# Customize the Office 365 theme for your organization
+# Customize the theme for your organization
 
-Learn how to customize your theme in the Microsoft 365 admin center. As the admin of your Office 365 for business subscription, you can change the default theme that appears in the top navigation bar for everyone in the organization. You can add your company logo and change the colors to match the rest of your brand. You can even add a destination link for users to navigate to when they select your logo. You can see here the default theme and custom theme result in Office 365.
+Learn how to customize your theme in the Microsoft 365 admin center. As the admin of your Microsoft 365 for business subscription, you can change the default theme that appears in the top navigation bar for everyone in the organization. You can add your company logo and change the colors to match the rest of your brand. You can even add a destination link for users to navigate to when they select your logo. You can see here the default theme and custom theme result in Microsoft 365.
   
-![Default Office 365 theme and Custom Office 365 theme](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
+![Default Microsoft 365 theme and Custom Microsoft 365 theme](../../media/e2cbc922-b424-4683-8c5c-fdbcbd0ce844.png)
   
 ## Customize your theme in the admin center
 
@@ -38,7 +38,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
     - **Use a custom logo image**: Choose whether to use an image from a URL or to upload an image. If you use a URL, please ensure that the URL uses HTTPS and is 200 x 30 pixels of any format of any size. You may upload a logo under 10 KB that is 200 x 30 pixels in JPG, PNG, GIF, or SVG format.
 
       > [!NOTE]
-      > For the logo to appear in the SharePoint mobile app, use only SVG images. Images uploaded in any other format don’t display in the app. Logos are not clickable in the SharePoint Mobile app.
+      > For the logo to appear in the SharePoint mobile app, use only SVG images. Images uploaded in any other format don't display in the app. Logos are not clickable in the SharePoint Mobile app.
 
     - **Make logo clickable**: You may use your logo in the navigation bar as a link to any company resource. You may enter the URL for the logo here, starting with http:// or https://. This is optional.
 
@@ -59,7 +59,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
     
 4. Select **Save changes**.
     
-You'll see your new theme on the admin center right away and after a short delay, you'll see it throughout Office 365, including pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). See the following graphic for an example of where you an customize theme changes from the admin center.
+You'll see your new theme on the admin center right away and after a short delay, you'll see it throughout Microsoft 365, including pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). See the following graphic for an example of where you an customize theme changes from the admin center.
 
 ![m365-admin-tenant-theme-conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -75,7 +75,7 @@ When choosing custom colors, pick an **Accent color** that shows up well on a wh
   
 The recommended contrast ratio between text, icon, or button color and background color is 4.5:1.
 
-Here is a simple flow chart to help you quickly get set up with a visually appealing custom Office 365 theme for your organization:
+Here is a simple flow chart to help you quickly get set up with a visually appealing custom Microsoft 365 theme for your organization:
   - I would like to use a colorful version of our logo.
     - We recommend the following settings:
       - **Logo image**: Your organization's colorful logo.

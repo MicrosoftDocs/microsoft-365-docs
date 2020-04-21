@@ -44,7 +44,7 @@ When you use the **Licenses** page to assign licenses, you assign licenses for a
 3. Select **Assign licenses**.
 4. In the **Assign licenses to users** pane, begin typing a name, and then choose it from the results to add it to the list. You can add up to 20 users at a time.
 5. Select **Turn apps and services on or off** to assign or remove access to specific items.
-6. When you’re finished, select **Assign**, then select **Close**.
+6. When you're finished, select **Assign**, then select **Close**.
 
 If there's a conflict, a message displays, tells you what the problem is, and how to fix it. For example, if you selected licenses that contain conflicting services, the error message says to review the services included with each license and try again.
 
@@ -219,7 +219,7 @@ If you have more than one subscription, and you have users who already have a li
 
 ## What you need to know about assigning licenses to users
 
-- You must be a Global admin, Billing admin, License admin, or User management admin. For more information, see [About Office 365 admin roles](../add-users/about-admin-roles.md).
+- You must be a Global admin, Billing admin, License admin, or User management admin. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
 
 - You can [assign licenses to user accounts with Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=850410).
 
@@ -231,7 +231,7 @@ If you have more than one subscription, and you have users who already have a li
 
 [Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md)
 
-[Resolve license conflicts in Office 365 for business](resolve-license-conflicts.md)
+[Resolve license conflicts in Microsoft 365 for business](resolve-license-conflicts.md)
 
 [Remove licenses from users](remove-licenses-from-users.md)
 

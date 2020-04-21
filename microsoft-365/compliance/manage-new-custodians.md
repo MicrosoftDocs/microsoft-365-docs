@@ -127,7 +127,7 @@ To release a custodian:
 
 4. On the flyout page, click **Release custodian**.
 
-   A warning page is displayed explaining that if a hold is placed on a data source associated with the custodian, the hold will be removed, and that any other hold associated with a different Advanced eDiscovery case will still apply. That includes other types of preservation and retention features in Office 365 (such as an Office 365 retention policy).
+   A warning page is displayed explaining that if a hold is placed on a data source associated with the custodian, the hold will be removed, and that any other hold associated with a different Advanced eDiscovery case will still apply. That includes other types of preservation and retention features (such as a Microsoft 365 retention policy).
 
 5. Click **Yes** to confirm that you want to release the custodian. 
 
