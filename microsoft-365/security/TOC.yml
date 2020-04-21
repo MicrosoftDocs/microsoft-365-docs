@@ -233,7 +233,7 @@
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: Configure anti-spam policies
                       href: ./office-365-security/configure-your-spam-filter-policies.md
-                    - name: Configure the connection filter policy
+                    - name: Configure connection filtering
                       href: ./office-365-security/configure-the-connection-filter-policy.md
                     - name: Create block sender lists
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
