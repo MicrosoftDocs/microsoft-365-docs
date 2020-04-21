@@ -47,7 +47,7 @@ When messages are successfully blocked due to a user's Blocked Senders list, the
 
 When multiple users are affected, the scope is wider, so the next best option is blocked sender lists or blocked domain lists in anti-spam policies. Messages from senders on the lists are marked as **Spam**, and the action that you've configured for the **Spam** filter verdict is taken on the message. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
-The maximum limit for these lists is approximately 1000 entries; although, you will only be able to enter 30 entries into the portal. You need to use PowerShell to add more than 30 entries.
+The maximum limit for these lists is approximately 1000 entries.
 
 ## Use mail flow rules
 
