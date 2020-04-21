@@ -212,7 +212,7 @@ Microsoft 365 is configured like this because some legitimate email may fail DMA
 
 - Administrators create an Exchange mail flow rule (also known as a transport rule) for all users that allows messages for those particular senders.
 
-For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365).
+For more information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 ## How Microsoft 365 utilizes Authenticated Received Chain (ARC)
 <a name="ARC"> </a>
