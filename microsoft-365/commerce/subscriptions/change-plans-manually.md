@@ -58,7 +58,7 @@ Include a license for each user that you want to move.
    The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Check that both subscriptions are active. [The new subscription isn't listed, or isn't active](#the-new-subscription-isnt-listed-or-isnt-active).
 
 3. **Check that you have enough licenses for each user**
-   Each user needs a license that matches their subscription. So if you want to move ten users to Office 365 Enterprise E5, you'll need
+   Each user needs a license that matches their subscription. So if you want to move ten users to Microsoft 365 Business Premium, you'll need
     to make sure ten licenses are available.
 
 4. **Need more licenses for the new subscription?**

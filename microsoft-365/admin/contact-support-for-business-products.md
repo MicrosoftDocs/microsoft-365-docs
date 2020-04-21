@@ -22,13 +22,12 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: "Get technical and billing support using phone numbers listed for your region or locale, or by submitting your service request online, or by visiting a Microsoft store."
+description: "Get technical and billing support using phone numbers listed for your country or region, or by submitting your service request online, or by visiting a Microsoft store."
 feedback_system: None
 ---
 # Contact support for business products - Admin Help
 
 ::: moniker range="o365-worldwide"
-
 
 ## [Online support](#tab/online)
 
@@ -46,7 +45,9 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## [Phone support ](#tab/phone)
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.  <br/>Technical support is provided in English 24 hours a day, 7 days a week. <br/> Admins, have your account details ready when you call.<br/>
+Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
+Technical support is provided in English 24 hours a day, 7 days a week.\
+Admins, have your account details ready when you call.\
 
 - **In the United States, call 1 800 865 9408.**
 

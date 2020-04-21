@@ -79,13 +79,9 @@ Make sure you purchase a subscription for the same organization that the users a
 
     The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Check that both subscriptions are listed under **ACTIVE**. [The new subscription isn't listed, or isn't active](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **The new Microsoft 365 for business subscription with available licenses**
-
-    ![The subscription page showing the number of licenses for the new subscription.](../../media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **Check that you have enough licenses for each user**
 
-    Each user needs a license that matches their subscription. So if you want to move ten users to Office 365 Enterprise E5, you'll need to make sure ten licenses are available. In the picture here, ten licenses were purchased for Office 365 Enterprise E5, and all ten licenses are available for assignment.
+    Each user needs a license that matches their subscription. So if you want to move ten users to Microsoft 365 Business Premium, you'll need to make sure ten licenses are available. 
 
 4. **Need more licenses for the new subscription?** Go to the **Subscriptions** page and [Buy licenses for your Microsoft 365 for business subscription](../licenses/buy-licenses.md).
   
@@ -134,8 +130,6 @@ The licenses for the current subscription will be removed later; you'll only pay
     > [!TIP]
     > To limit which services are available to the user, switch the toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
   
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. Switch the toggle to the **Off** position for licenses that this user no longer needs.
 
 6. At the bottom of the **Product licenses** pane, select **Assign** \> **Close** \> **Close**.
@@ -144,19 +138,19 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 ::: moniker range="o365-worldwide"
 
-1. In the Admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page, or select **Users** \> **Active users**.
+1. In the Admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
 ::: moniker-end
 
@@ -171,8 +165,6 @@ The licenses for the current subscription will be removed later; you'll only pay
     > [!TIP]
     > - To limit which services are available to the user, switch to toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
     > - Any previous license assignments for the selected users will be removed.
-  
-    ![Setting license assignments for a user.](../../media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close**.
 

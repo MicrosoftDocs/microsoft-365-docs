@@ -20,24 +20,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b1bc0bef-4608-4601-813a-cdd9f746709a
-description: "Learn how to cancel your Microsoft 365 for business or Microsoft 365 trial or paid subscription."
+description: "Learn how to cancel your Microsoft 365 for business trial or paid subscription."
 ---
 
 # Cancel your subscription
 
-*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
+*Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the Microsoft 365 admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
 
 *Refund:* Any prorated credit will be returned to you within the next billing cycle.
 
 > [!NOTE]
-> If you have multiple subscriptions to the same product, such as Office 365 Enterprise E3, cancelling one of them will not impact the purchased licenses or services inside the other subscriptions.
+> If you have multiple subscriptions to the same product, such as Microsoft 365 Business Premium, canceling one of them will not impact the purchased licenses or services inside the other subscriptions.
 
 ## Steps to cancel your subscription
 
-If you added your own domain name to use with your subscription, you must remove the domain before you cancel your subscription. For more information, see [Remove a domain from Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+If you added your own domain name to use with your subscription, you must remove the domain before you cancel your subscription. For more information, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
-
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
@@ -104,11 +103,11 @@ If you use a custom domain with your subscription, there are a few extra steps t
 
 #### Change your domain nameserver records (if needed)
 
-If you set up a custom domain, you added DNS records so the domain would work with Office 365 services. Before you remove your domain, be sure to update the DNS records, such as your domain MX record, at your DNS host.
+If you set up a custom domain, you added DNS records so the domain would work with Microsoft 365 services. Before you remove your domain, be sure to update the DNS records, such as your domain MX record, at your DNS host.
 
 For example, change the MX record at your DNS host. Email sent to your domain stops coming to your Microsoft address and goes to your new email provider instead. (An MX record determines where email for your domain is sent.)
 
-- If your nameserver (NS) records [are pointing to Office 365 nameservers](../../admin/setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
+- If your nameserver (NS) records [are pointing to Microsoft 365 nameservers](../../admin/setup/add-domain.md), changes to your MX record don't take effect until you change your NS records to point to your new DNS host (see Step 2).
 
 - Before you update the MX record, let your users know the date you plan to switch their email, and the new email provider you plan to use. Also, if your users want to move their existing Microsoft email to the new provider, they must take extra steps.
 
@@ -116,11 +115,11 @@ For example, change the MX record at your DNS host. Email sent to your domain st
 
 #### Update your domain MX and other DNS records (if you're using a custom domain)
 
-If you switched your nameserver (NS) records to Office 365 when you set up your domain, you must set up or update your MX record and other DNS records at the DNS host you plan to use, and then change your NS record to that DNS host.
+If you switched your nameserver (NS) records to Microsoft 365 when you set up your domain, you must set up or update your MX record and other DNS records at the DNS host you plan to use, and then change your NS record to that DNS host.
 
 If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
 
-For more information, see [How does Office 365 manage my DNS records?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). To change your NS records, see [Remove a domain from Office 365](../../admin/get-help-with-domains/remove-a-domain.md).
+For more information, see [How does Microsoft 365 manage my DNS records?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). To change your NS records, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### Save your data
 
@@ -132,7 +131,7 @@ When the cancellation becomes effective, your users lose access to their data. B
 
 ### Uninstall Office (optional)
 
-If you canceled your subscription, and didn't move users to a different subscription that includes Office, Office 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Office 365 applications display [Unlicensed Product notifications](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). To avoid any confusion, have your users [uninstall Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) from their machines.
+If you canceled your subscription, and didn't move users to a different subscription that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). To avoid any confusion, have your users [uninstall Office](https://support.office.com/article/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) from their machines.
 
 ## Related articles
 
