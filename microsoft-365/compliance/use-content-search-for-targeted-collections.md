@@ -15,7 +15,8 @@ ms.collection:
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
-description: "Use Content Search in the Security & Compliance Center to perform targeted collections. A targeted collection means that you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search."
+ms.custom: seo-marvel-apr2020
+description: Use Content Search in the Security & Compliance Center to perform targeted collections, which ensure items are located in a specific mailbox or site folder.
 ---
 
 # Use Content Search in Office 365 for targeted collections
@@ -63,22 +64,22 @@ To display a list of mailbox folders or site documentlink (path) names:
     
   ```powershell
   #########################################################################################################
-  # This PowerShell script will prompt you for:								#
-  #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange	#
-  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.			#
-  # The script will then:											#
-  #    * If an email address is supplied: list the folders for the target mailbox.			#
+  # This PowerShell script will prompt you for:                                #
+  #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+  # The script will then:                                            #
+  #    * If an email address is supplied: list the folders for the target mailbox.            #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
-  #    * for the site.	                                                                                #
-  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)	#
-  #      appended to the folder ID or documentlink to use in a Content Search.				#
-  # Notes:												#
-  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the 	#
-  #      the current folder and all sub-folders are searched.						#
-  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder	#
-  #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for	#
-  #      each sub-folder that you want to search.								#
-  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.		#
+  #    * for the site.                                                                                    #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
+  #      appended to the folder ID or documentlink to use in a Content Search.                #
+  # Notes:                                                #
+  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
+  #      the current folder and all sub-folders are searched.                        #
+  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
+  #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
+  #      each sub-folder that you want to search.                                #
+  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"

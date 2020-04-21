@@ -2,8 +2,8 @@
 title: "Views in Threat Explorer and real-time detections"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/07/2019
 audience: ITPro
@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid:
 ms.collection: 
 - M365-security-compliance
-description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security &amp; Compliance Center.
 ms.custom: seo-marvel-apr2020
 ---
 

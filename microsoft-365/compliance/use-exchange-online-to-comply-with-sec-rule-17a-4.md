@@ -14,10 +14,13 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Cohasset Associates has validated that when Exchange Online and the Security & Compliance Center are configured as recommended, they meet the relevant storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4. You can download the assessment."
+description: Configure Exchange Online and the Security & Compliance Center to meet the storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4
+
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 If your organization needs to comply with regulatory standards for retaining your data, the Office 365 Security & Compliance Center provides features to manage the lifecycle of your data in Exchange Online. This includes the ability to retain, audit, search, and export your data. These capabilities are sufficient to meet the needs of most organizations.
 
@@ -37,7 +40,7 @@ You can [download the Cohasset assessment here](https://servicetrust.microsoft.c
 
 Note that this assessment is specific to Exchange Online. The assessment does not include other Office 365 services such as SharePoint Online or OneDrive for Business, although we are planning support for those services with respect to SEC 17a-4 in the future.
 
-It’s important to understand that Skype for Business and Teams also store data in Exchange Online. Therefore, the assessment does cover messages from Skype for Business and channel and chat messages from Teams.
+It's important to understand that Skype for Business and Teams also store data in Exchange Online. Therefore, the assessment does cover messages from Skype for Business and channel and chat messages from Teams.
 
 ## Using Preservation Lock is key to the recommended configuration
 

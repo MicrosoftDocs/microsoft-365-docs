@@ -11,9 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Set up a connector to import Facebook data to Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies."
+ms.custom: seo-marvel-apr2020
+description: "Learn how to setup & use a connector in the Microsoft 365 compliance center to import & archive data from Facebook Business pages to Microsoft 365."
 ---
 
 # Set up a connector to archive Facebook data

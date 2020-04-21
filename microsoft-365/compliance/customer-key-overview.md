@@ -12,7 +12,8 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "With Customer Key, you control your organization's encryption keys and then configure Office 365 to use them to encrypt your data at rest in Microsoft's data centers."
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn about how service encryption works with the customer key in Office 365."
 ---
 
 # Service encryption with Customer Key in Office 365
@@ -44,7 +45,7 @@ Customer Key only encrypts data at rest in the cloud. Customer Key does not work
 
 ## About the data encryption policy (DEP)
 
-A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using PowerShell cmdlets, which are different for each service, and assign those to encrypt application data. For example:
+A data encryption policy defines the encryption hierarchy to encrypt data using each of the keys you provide as well as the availability key protected by Microsoft. You create DEPs using PowerShell cmdlets, which are different for each service, and assign those DEPs to encrypt application data. For example:
 
 **Exchange Online and Skype for Business** You can create up to 50 DEPs per tenant. You associate DEPs to your Customer Keys in Azure Key Vault and then assign DEPs to individual mailboxes. When you assign a DEP to a mailbox:
 

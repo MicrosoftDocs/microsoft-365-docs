@@ -18,7 +18,8 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: "You can turn on the Audit log search feature in the Security & Compliance Center. If you change you mind, you can turn if off at any time. When Audit log search is off, admins can't search the Office 365 audit log for user and admin activity in your organization."
+ms.custom: seo-marvel-apr2020
+description: How to turn on or off the Audit log search feature in the Security & Compliance Center to enable or disable the ability of admins to search the audit log.
 ---
 
 # Turn Office 365 audit log search on or off

@@ -15,10 +15,13 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "With retention labels, you can base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them. Event-driven retention is typically used as part of a records-management process."
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn how can you base retention periods on specific event types with retention labels in Office 365."
 ---
 
 # Overview of event-driven retention
+
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 When you retain content, the retention period is often based on the age of the content - for example, you might retain documents for seven years after they're created and then delete them. But with retention labels in Office 365, you can also base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them.
   

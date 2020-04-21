@@ -35,9 +35,6 @@ You can't remove a license from a subscription if it's assigned to a user. If yo
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 ## What you need to know about buying licenses for your business subscription
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
@@ -82,7 +79,7 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 ## What if I don't see the Add/Remove licenses link?
 
-This table describes the reasons why the **Add/Remove licenses** link might not be available, and what you can do about it. 
+This table describes the reasons why the **Add/Remove licenses** link might not be available, and what you can do about it.
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|

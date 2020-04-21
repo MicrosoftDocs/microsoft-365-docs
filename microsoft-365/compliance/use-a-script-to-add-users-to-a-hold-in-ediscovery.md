@@ -17,7 +17,8 @@ search.appverid:
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: "Run a script to quickly add mailboxes and OneDrive for Business sites to a new hold that's associated with an eDiscovery case in the Security & Compliance Center."
+ms.custom: seo-marvel-apr2020
+description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Security & Compliance Center."
 ---
 
 # Use a script to add users to a hold in an eDiscovery case in the Security & Compliance Center

@@ -17,23 +17,22 @@ search.appverid:
 ms.assetid: 
 
 description: Learn how to use the Non-Office 365 content import feature to upload non-Office 365 documents into evidence in a data investigation.
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+ - seo-marvel-mar2020
+ - seo-marvel-apr2020
 ---
 
 # Load non-Office 365 data into evidence
 
 Not all documents that you may need to analyze in a data investigation will be located in Office 365. With the Non-Office 365 content import feature you can upload documents that don't live in Office 365 into evidence so they can be analyzed in a data investigation.
 
->[!Note]
->Data investigation requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can sign up for a trial of Office 365 Enterprise E5.
-
 ## Before you begin
 
 Using the upload Non-Office 365 feature as described in this procedure requires that you have:
 
-- An Office 365 E3 with Advanced Compliance add-on or E5 subscription.
+- A Microsoft 365 or Office 365 E5 subscription.
 
-- All custodians whose non-Office 365 content will be uploaded must have E3 with Advanced Compliance add-on or E5 licenses.
+- All people of interest whose non-Office 365 content will be uploaded must have the appropriate E5 or E5 add-on license.
 
 - An existing eDiscovery case.
 
@@ -42,11 +41,11 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 - An account that is either an eDiscovery Manager or eDiscovery Administrator
 Microsoft Azure Storage Tools installed on a computer that has access to the non-Office 365 content folder structure.
 
-- Install AzCopy, which you can do from here: https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- Install AzCopy, which you can do from [Get started with AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy).
 
 ## Upload non-Office 365 content in to a data investigation
 
-1. Open ****Data Investigations**, then the investigation that the non-Office 365 data will be uploaded to.  Click the **Evidence** tab, then select the evidence set you wish to load the Non-Office 365 data to.  If you have not already created an evidence set, you can do so now.  Finally, click **Manage evidence** then **View uploads** in the Non-Office 365 data section
+1. Open **Data Investigations** and go to the investigation that the non-Office 365 data will be uploaded to.  Click the **Evidence** tab, then select the evidence set you wish to load the Non-Office 365 data to.  If you have not already created an evidence set, you can do so now.  Finally, click **Manage evidence** then **View uploads** in the Non-Office 365 data section
 
 2. Click the **Upload files** button to start the Non-Office 365 data import wizard.
 

@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Use these Test Lab Guides to set up demonstration, proof of concept, or dev/test environments for Microsoft 365 for enterprise.
 ---
@@ -31,7 +32,7 @@ You can also use TLGs to create representative environments for development and 
   
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
+Go to the [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
 
 [![The Microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
 
@@ -71,7 +72,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Protect global administrator accounts](protect-global-administrator-accounts-microsoft-365-test-environment.md)
  
-   Lock down your global administrator accounts with conditional access policies.
+   Lock down your global administrator accounts with Conditional Access policies.
 
 - [Password writeback](password-writeback-m365-ent-test-environment.md)
 
@@ -91,7 +92,7 @@ To demonstrate identity-related features and capabilities, see:
 
 - [Identity and device access](identity-device-access-m365-test-environment.md)
 
-   Create an environment to test recommended identity and device access configurations and conditional access policies.
+   Create an environment to test recommended identity and device access configurations and Conditional Access policies.
 
 
 ## Mobile device management

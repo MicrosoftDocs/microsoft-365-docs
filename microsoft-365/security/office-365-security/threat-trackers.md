@@ -2,8 +2,8 @@
 title: "Threat Trackers - New and Noteworthy"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: ITPro
 ms.topic: overview

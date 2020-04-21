@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to use the custodian management tool in Advanced eDiscovery to manage data for a legal case.

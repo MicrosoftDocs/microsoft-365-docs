@@ -2,8 +2,8 @@
 title: View reports for Advanced Threat Protection
 f1.keywords:
 - CSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 02/07/2020
 audience: ITPro

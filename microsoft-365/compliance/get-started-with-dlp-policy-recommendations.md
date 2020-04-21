@@ -15,7 +15,6 @@ localization_priority: Normal
 ms.custom:
 - seo-marvel-apr2020
 description: Learn how to create and edit the recommended data loss prevention (DLP) policy for your organization.
-
 ---
 
 # Get started with DLP policy recommendations

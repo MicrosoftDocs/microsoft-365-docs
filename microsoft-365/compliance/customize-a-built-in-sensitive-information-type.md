@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how to  create a custom sensitive information type that will allow you to use rules that meet your organization's needs.
+description: Learn how to create a custom sensitive information type that will allow you to use rules that meet your organization's needs.
 ---
 
 # Customize a built-in sensitive information type

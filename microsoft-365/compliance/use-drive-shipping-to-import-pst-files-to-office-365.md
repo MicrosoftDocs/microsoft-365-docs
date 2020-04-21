@@ -17,8 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
-description: "For administrators: Learn how to bulk-import your organization's PST files to Office 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
-"
+ms.custom: seo-marvel-apr2020
+description: Admin can learn how to bulk-import PST files to Office 365 mailboxes by copying PST files to a hard drive and then shipping it to Microsoft.
 ---
 
 # Use drive shipping to import your organization's PST files to Office 365
