@@ -126,7 +126,7 @@ To import new retention labels and modify existing retention labels:
 
    ![Blank file plan template open in Excel](../media/file-plan-blank-template.png)
 
-3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template.<br/>
+3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template. For import, each value has a maximum length of 64 characters. <br/>
 
    |**Property**|**Type**|**Valid values**|
    |:-----|:-----|:-----|
