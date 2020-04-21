@@ -39,7 +39,7 @@ Use [these instructions](https://docs.microsoft.com/microsoft-365/compliance/enc
 
 - The name of the label or sublabel contains the name of the team
 - Encryption is enabled
-- The Office 365 group for the team has Co-Author permissions
+- The Microsoft 365 group for the team has Co-Author permissions
 
 After creating, publish the new label or sublabel for your users, who can then apply them to files either locally before uploading them to the team or later once the file is stored in the team.
 

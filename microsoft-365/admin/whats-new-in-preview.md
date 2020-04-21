@@ -31,59 +31,10 @@ We're continuously adding new features to [the Microsoft 365 admin center](micro
 > **"Classic" admin center retirement starting in March**<br><br>
 When you sign-in to admin.microsoft.com, you'll now go to the new admin center every time. And in March, we will start disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: March 2, 2020*
 
-And if you're interested in what's new in other Microsoft cloud services:
+And if you're interested in what's new in other admin centers:
 
-- [What's New in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
-- [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
-- [Office updates](https://docs.microsoft.com/OfficeUpdates/)
-
-## March 2020
-
-### Featured Feedback Fix: Improve "add user" reliability for licensing
-
-We received a lot of feedback from admins about the how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you to try again.
-
-:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Add user confirmation page with the error.":::
-
-### Microsoft Teams home page card
-
-With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
-
-:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams home page card":::
-
-### Customize your organization's SharePoint mobile app theme
-
-Using the Microsoft 365 admin center, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
-
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram mapping the admin center settings to the mobile app.":::
-
-:::image-end:::
-
-### Improvements to the "Add a group" wizard
-
-When admins created a new group - and made it a Team at they same time, they could assign owners who don't have a license that includes Teams. And that created some headaches. We've updated the wizard flow to verify that owners have a Teams license and if they don't the option to turn the group into a Team is disabled.
-
-### Microsoft 365 offerings for small and medium businesses
-
-We know that this is an announcement for next month, but we want to make sure you're prepared.
-
-Starting on April 21, we're making changes related to our Office 365 subscriptions for small and medium businesses – and to Office 365 ProPlus. These products will now use the Microsoft 365 brand.
-
-The new product names go into effect on April 21, 2020. This is a change to the product name only, and there are no pricing or feature changes at this time.
-
-|Current name |New name  |
-|---------|---------|
-|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
-|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
-|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       | 
-|Office 365 ProPlus    |   Microsoft 365 apps for enterprise      |
-
-### Videos, training, and docs
-
-[What's New in Microsoft 365 web series](https://go.microsoft.com/fwlink/p/?linkid=2118096): In this month's episode, we highlight the 3-year anniversary of Microsoft Teams and cover new features including improved audio quality in online meetings, Targeted Communications for firstline managers with the Shifts app, Teams and Skype consumer interoperability, and more.
 
 ## February 2020
 
@@ -106,7 +57,7 @@ That's literally it!!!
 A couple of changes in the groups area this month:
 
 - **Sort by group name**: You can sort the groups list alphabetically, by selecting the **Group name** column.
-- **Restore deleted Office 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Office 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
+- **Restore deleted Microsoft 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Microsoft 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
 
 ### Videos, training, and docs
 
@@ -155,7 +106,7 @@ Check out the small business admin training that we released in January:
 - [Get help or support](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Delete a user](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Choose a Microsoft subscription](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 Business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Overview of Microsoft 365 for business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## November and December 2019
 
@@ -194,7 +145,7 @@ In November, we released quite a few learning paths to [Microsoft Learn](https:/
 
 - [Microsoft 365 fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Extend Office fundamentals](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Office 365 ProPlus](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Manage your enterprise deployment with Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Upgrade Microsoft Office for IT at scale](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Deliver remote desktops and apps from Azure with Windows Virtual Desktop
@@ -316,7 +267,7 @@ The Message center has been updated to the new design and it looks amazing!
 
 We've got some exciting changes to help you get your organization set up. First off, let's discuss the difference between **setup** and the **Setup page**. **Setup** refers to the initial setup wizard that you used to onboard to Microsoft's online services. That usually includes three specific steps: **Connect a domain**, **Add users**, and **Download the Office apps**. The **Setup page** is the page in the admin center that has recommended set up tasks to ensure that you're getting the most out of your subscriptions - like turning on features you've purchased licenses for.
 
-- **Setup** - The initial setup wizard has been updated for **Office 365 for Business** subscriptions. This new design will help new organizations get through the wizard faster and with greater success.
+- **Setup** - The initial setup wizard has been updated for **Microsoft 365 for business** subscriptions. This new design will help new organizations get through the wizard faster and with greater success.
 - **Setup page** - The **Setup** page helps you finish setting up and securing the services that come with your subscriptions. You can also see any dismissed recommendations on the **Setup** page. To see if it's available for your subscriptions yet, go to the **Microsoft 365 admin center** > **Setup**.
 
 ### Billing & subscriptions
@@ -411,7 +362,7 @@ We've made a few more changes to **user management**, here's a quick list:
 
 - There's a new setup banner on the **Home** page that you'll see if you haven't finished the set up steps, like adding a domain, adding users, and downloading the Office apps.
 - The **Group** list and details pane have been updated to the new style. Go to **Groups** > **Groups** to view the changes.
-  - Speaking of groups, we've also added a **Microsoft Teams** tab to the groups details pane where you can turn any Office 365 group into a Team. To "teamify" a group select any Office 365 group from the list, select the **Microsoft Teams** tab, and then **Create Team**. If the group is already a Team, you'll get a link to manage it from the **Teams admin center**.
+  - Speaking of groups, we've also added a **Microsoft Teams** tab to the groups details pane where you can turn any Microsoft 365 group into a Team. To "teamify" a group select any Microsoft 365 group from the list, select the **Microsoft Teams** tab, and then **Create Team**. If the group is already a Team, you'll get a link to manage it from the **Teams admin center**.
   - Finally, you can add the **Teams status** to the **groups** list. On the column header, select **Choose columns** > **Teams status** > **Save**.
 - **New limited admin roles** - We've release some new admin roles so that you can give users only the access they need.
   - **Kaizala admin**: Users in this role have permission to perform all management tasks within Microsoft Kaizala, including create and manage users in Kaizala directory, manage Kaizala groups, manage action cards and connectors, and create service requests.

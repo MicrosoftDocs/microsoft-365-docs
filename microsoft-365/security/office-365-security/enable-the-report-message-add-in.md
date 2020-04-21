@@ -18,10 +18,10 @@ ms.collection:
 description: "Learn how to enable the Report Message add-in for Outlook and Outlook on the web, for individual users or your entire organization."
 ---
 
-# Enable the Report Message add-in in Office 365
+# Enable the Report Message add-in
 
 > [!NOTE]
-> If you're an admin in an Office 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Office 365 Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 The Report Message add-in for Outlook and Outlook on the web (formerly known as Outlook Web App) enables people to easily report false positives (good email marked as bad) or false negatives (bad email allowed) to Microsoft and its affiliates for analysis. Microsoft uses these submissions to improve the effectiveness of email protection technologies.
 
@@ -33,16 +33,16 @@ Admins can enable the Report Message add-in for the organization, and individual
 
 If you're an individual user, you can [enable the Report Message add-in for yourself](#get-the-report-message-add-in-for-yourself).
 
-If you're an Office 365 global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization). The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
+If you're a global administrator or an Exchange Online administrator, and Exchange is configured to use OAuth authentication, you can [enable the Report Message add-in for your organization](#get-and-enable-the-report-message-add-in-for-your-organization). The Report Message Add-In is now available through [Centralized Deployment](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins).
 
 ## What do you need to know before you begin?
 
-- The Report Message add-in works with most Office 365 subscriptions and the following products:
+- The Report Message add-in works with most Microsoft 365 subscriptions and the following products:
 
   - Outlook on the web
   - Outlook 2013 SP1 or later
   - Outlook 2016 for Mac
-  - Outlook included with Office 365 ProPlus
+  - Outlook included with Microsoft 365 apps for Enterprise
 
 - The Report Message add-in is currently not available for:
 
@@ -55,7 +55,7 @@ If you're an Office 365 global administrator or an Exchange Online administrator
 
 - For organizational installs, the organization needs to be configured to use OAuth authentication. For more information, see [Determine if Centralized Deployment of add-ins works for your organization](../../admin/manage/centralized-deployment-of-add-ins.md).
 
-- Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Admins need to be a member of the Global admins role group. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Get the Report Message add-in for yourself
 
@@ -67,7 +67,7 @@ If you're an Office 365 global administrator or an Exchange Online administrator
 
 3. In the dialog that appears, review the terms of use and privacy policy, and then click **Continue**.
 
-4. Sign in to Office 365 using your work or school account (for business use) or your Microsoft account (for personal use).
+4. Sign in using your work or school account (for business use) or your Microsoft account (for personal use).
 
 After the add-in is installed and enabled, you'll see the following icons:
 

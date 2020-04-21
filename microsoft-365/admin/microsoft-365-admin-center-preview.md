@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,7 +22,7 @@ description: "Learn about the new Microsoft 365 admin center."
 
 # About the new Microsoft 365 admin center
 
-The new Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 and Office 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
+The new Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
   
 The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers will work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) later in this article. 
   
@@ -70,7 +70,7 @@ Yes. The new admin center is fully functional and has all the capabilities of th
 
 Microsoft 365 is a complete, intelligent solution that includes Office 365, Windows 10, and Enterprise Mobility + Security that empowers everyone to be creative and work together, securely. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
   
-- Microsoft 365 Business
+- Microsoft 365 for business
 - Microsoft 365 Enterprise E3
 - Microsoft 365 Enterprise E5
     

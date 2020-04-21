@@ -1,11 +1,11 @@
 ---
-title: "Differences between estimated and actual eDiscovery search results in Office 365"
+title: "Differences between estimated and actual eDiscovery search results"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 
+ms.date: 4/13/2017
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -21,12 +21,11 @@ description: "Understand why estimated and actual search results may vary in sea
 "
 ---
 
-# Differences between estimated and actual eDiscovery search results in Office 365
+# Differences between estimated and actual eDiscovery search results
 
 This topic applies to searches that you can run using one of the following Microsoft eDiscovery tools: 
 
 - Content Search in the Security & Compliance Center  <br/>  
-- Searches associated with Core eDiscovery cases
 - In-Place eDiscovery in the Exchange admin center (EAC)  <br/>  
 - The eDiscovery Center in SharePoint Online  <br/> 
    
@@ -52,7 +51,7 @@ Here are some reasons for these differences:
   
 - **The way results are estimated** - An estimate of the search results are just that, an estimate (and not an actual count) of the items that meet the search query criteria. To compile the estimate of Exchange items, a list of the message IDs that meet the search criteria is requested from the Exchange database by the eDiscovery tool you're using. But when you export the search results, the search is re-run and the actual messages are retrieved from the Exchange database. So these differences might result because of how the estimated number of items and the actual number of items are determined. 
     
-- **Changes that happen between the time when estimating and exporting search results** - When you export search results, the search is re-started to collect that most recent items in the search index that meet the search criteria. It's possible there are additional items were created, sent, or received that meet the search criteria in the time between when the estimated search results were collected and when the search results were exported. It's also possible that items that were in the search index when the search results were estimated are no longer there because they were purged from the content location before the search results are exported. One way to mitigate this issue is to specify a date range for an eDiscovery search. Another way is to place a hold on content locations so that items are preserved and can't be purged. Although very rare, even in the case when a hold is applied, maintenance of built-in calendar items (which are not editable by the user, but are included in many search results) may be removed from time to time. This periodic removal of calendar items will result in fewer items that are exported.
+- **Changes that happen between the time when estimating and exporting search results** - When you export search results, the search is re-started to collect that most recent items in the search index that meet the search criteria. It's possible there are additional items were created, sent, or received that meet the search criteria in the time between when the estimated search results were collected and when the search results were exported. It's also possible that items that were in the search index when the search results were estimated are no longer there because they were purged from the content location before the search results are exported. One way to mitigate this issue is to specify a date range for an eDiscovery search. Another way is to place a hold on content locations so that items are preserved and can't be purged. 
     
 - **Unindexed items** - Items that are unindexed for search can cause differences between estimated and actual search results. For example, In-Place eDiscovery in Exchange and the eDiscovery Center in SharePoint don't include unindexed items (that don't meet the search criteria) when you run a search to estimate the search results. But you can include unindexed items when you export the search results. If you include unindexed items when exporting search results, there might be more items that are exported. This will cause a difference between the estimated and exported search results. 
     
@@ -76,7 +75,9 @@ Here are some reasons for these differences:
 
 In the eDiscovery Center in SharePoint Online, you have the option to include unindexed content (from Exchange and SharePoint) when you export the results of an eDiscovery search. You do this by selecting the **Include items that are encrypted or have an unrecognized format** option. Unindexed items (also called uncrawlable in SharePoint) are items in Exchange and SharePoint that for some reason weren't indexed for search. Unindexed Exchange items are listed in the **Exchange Index Errors** report that's included when you export search results. Similarly, unindexed SharePoint items are listed in **SharePoint Index Errors** report. When you export unindexed items, they're downloaded to a folder named **Uncrawlable**. Unindexed Exchange items are included in a PST file; each unindexed document from SharePoint is downloaded too. The number of unindexed items (if there are any) are listed in each index errors report. The number of unindexed items in the reports should match the number of unindexed items that are downloaded. 
   
- **What are some reasons if the number of exported unindexed items don't match the number of items in the index error report?** As previously explained, it's possible that items have been purged from Office 365 between the time the search estimate was run and the time the search results were exported. A similar discrepancy can occur for unindexed items. For example, the search index might be out date when search results are exported. This would mean that an unindexed item that was exported with the search results might not be listed in the index errors report because the item wasn't indexed at the time the search results were exported. This would result in more unindexed items being export than are listed in the index error report. Similarly, an unindexed item listed in the index error report could have been purged from Office 365 before the search index was updated. This would result in fewer unindexed items being export than are listed in the index error report. 
+ **What are some reasons if the number of exported unindexed items don't match the number of items in the index error report?** As previously explained, it's possible that items have been purged from Microsoft 365 between the time the search estimate was run and the time the search results were exported. A similar discrepancy can occur for unindexed items. For example, the search index might be out date when search results are exported. This would mean that an unindexed item that was exported with the search results might not be listed in the index errors report because the item wasn't indexed at the time the search results were exported. This would result in more unindexed items being export than are listed in the index error report. Similarly, an unindexed item listed in the index error report could have been purged from Microsoft 365 before the search index was updated. This would result in fewer unindexed items being export than are listed in the index error report. 
   
 > [!NOTE]
 > If you don't select the **Include items that are encrypted or have an unrecognized format** option when you export search results or just download the reports, the index error reports are downloaded but they don't have any entries. This doesn't mean there aren't any indexing errors. It just means that unindexed items weren't included in the export. 
+  
+

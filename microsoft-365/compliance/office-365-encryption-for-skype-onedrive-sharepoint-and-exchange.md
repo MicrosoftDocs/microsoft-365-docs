@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Encryption for Skype, OneDrive, SharePoint, and Exchange"
+title: "Encryption for Skype, OneDrive, SharePoint, and Exchange"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -19,9 +19,9 @@ ms.collection:
 description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, and Exchange Online."
 ---
 
-# Office 365 Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
+# Encryption for Skype for Business, OneDrive for Business, SharePoint Online, and Exchange Online
 
-Office 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security.
+Microsoft 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security.
 
 ## Skype for Business
 
@@ -31,7 +31,7 @@ Skype for Business customer data may be stored at rest in the form of files or p
 
 All customer files in SharePoint Online are protected by unique, per-file keys that are always exclusive to a single tenant. The keys are either created and managed by the SharePoint Online service, or when Customer Key is used, created and managed by customers. When a file is uploaded, encryption is performed by SharePoint Online within the context of the upload request, before being sent to Azure storage. When a file is downloaded, SharePoint Online retrieves the encrypted customer data from Azure storage based on the unique document identifier and decrypts the customer data before sending it to the user. Azure storage has no ability to decrypt, or even identify or understand the customer data. All encryption and decryption happen in the same systems that enforce tenant isolation, which are Azure Active Directory and SharePoint Online.
 
-Several workloads in Office 365 store data in SharePoint Online, including Microsoft Teams, which stores all files in SharePoint Online, and OneDrive for Business, which uses SharePoint Online for its storage. All customer data stored in SharePoint Online is encrypted (with one or more AES 256-bit keys) and distributed across the datacenter as follows. (Every step of this encryption process is FIPS 140-2 Level 2 validated. For additional information about FIPS 140-2 compliance, see [FIPS 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).)
+Several workloads in Microsoft 365 store data in SharePoint Online, including Microsoft Teams, which stores all files in SharePoint Online, and OneDrive for Business, which uses SharePoint Online for its storage. All customer data stored in SharePoint Online is encrypted (with one or more AES 256-bit keys) and distributed across the datacenter as follows. (Every step of this encryption process is FIPS 140-2 Level 2 validated. For additional information about FIPS 140-2 compliance, see [FIPS 140-2 Compliance](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb326611(v=sql.105)).)
 
 - Each file is split into one or more chunks, depending on file size. Each chunk is encrypted using its own unique AES 256-bit key.
 - When a file is updated, the update is handled in the same way: the change is split into one or more chunks, and each chunk is encrypted with a separate unique key.
@@ -78,6 +78,6 @@ In OneDrive for Business and SharePoint Online, there are two scenarios in which
 
 Exchange Online uses BitLocker for all mailbox data, and the BitLocker configuration is described in [BitLocker for Encryption](office-365-bitlocker-and-distributed-key-manager-for-encryption.md). Service-level encryption encrypts all mailbox data at the mailbox level. 
 
-In addition to service-encryption, Office 365 supports Customer Key, which is built on top of service-encryption. Customer Key is a Microsoft-managed key option for Exchange Online service encryption that is also on Microsoft's roadmap. This method of encryption provides increased protection not afforded by BitLocker because it provides separation of server administrators and the cryptographic keys necessary for decryption of data, and because the encryption is applied directly to the data (in contrast with BitLocker, which applies encryption at the logical disk volume) any customer data copied from an Exchange server remains encrypted.
+In addition to service-encryption, Microsoft 365 supports Customer Key, which is built on top of service-encryption. Customer Key is a Microsoft-managed key option for Exchange Online service encryption that is also on Microsoft's Roadmap. This method of encryption provides increased protection not afforded by BitLocker because it provides separation of server administrators and the cryptographic keys necessary for decryption of data, and because the encryption is applied directly to the data (in contrast with BitLocker, which applies encryption at the logical disk volume) any customer data copied from an Exchange server remains encrypted.
 
-The scope for Exchange Online service encryption is customer data that is stored at rest within Exchange Online. (Skype for Business stores nearly all user-generated content within the user’s Exchange Online mailbox and therefore inherits the service encryption feature of Exchange Online.)
+The scope for Exchange Online service encryption is customer data that is stored at rest within Exchange Online. (Skype for Business stores nearly all user-generated content within the user's Exchange Online mailbox and therefore inherits the service encryption feature of Exchange Online.)

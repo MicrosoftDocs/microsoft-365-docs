@@ -4,7 +4,7 @@
   href: ../admin/admin-home.md
 - name: Try or buy
   items:
-    - name: Sign up for Office 365 trial
+    - name: Sign up for Microsoft 365 trial
       href: sign-up-for-office-365-trial.md
     - name: Try or buy Microsoft 365
       href: try-or-buy-microsoft-365.md
@@ -64,8 +64,6 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Payment Services Directive 2 and Strong Customer Authentication
       href: billing-and-payments/psd2.md
-    - name: Tax information
-      href: billing-and-payments/tax-information.md
 - name: Billing accounts
   items: 
     - name: Manage billing accounts

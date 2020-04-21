@@ -20,7 +20,7 @@ description: "Admins can learn about the different ways to report good and bad m
 
 # Report messages and files to Microsoft
 
-Users and admins in Office 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have several different methods for reporting messages and files to Microsoft.
+Users and admins in Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have several different methods for reporting messages and files to Microsoft.
 
 |||
 |---|---|
@@ -33,4 +33,4 @@ Users and admins in Office 365 organizations with mailboxes in Exchange Online, 
 |[Submit malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Use the Microsoft Security Intelligence site to submit attachments and other files.|
 |
 
-If the spam or phishing messages were quarantined instead of delivered, users can report the messages to Microsoft from the Quarantine portal in the Office 365 Security & Compliance Center. For details, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
+If the spam or phishing messages were quarantined instead of delivered, users can report the messages to Microsoft from the Quarantine portal in the Security & Compliance Center. For details, see [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md).

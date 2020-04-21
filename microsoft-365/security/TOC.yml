@@ -193,20 +193,18 @@
               href: ./mtp/tickets.md
 
 
-    - name: Office 365 Security
+    - name: Microsoft 365 Security
       items: 
         - name: Get started
           items: 
-            - name: Office 365 security roadmap
+            - name: Security roadmap
               href: ./office-365-security/security-roadmap.md
-            - name: Configure your Office 365 tenant for increased security
+            - name: Configure your tenant for increased security
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
-            - name: Permissions in the Office 365 Security & Compliance Center
+            - name: Permissions in the Security & Compliance Center
               href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Permissions in the Microsoft 365 compliance center and Microsoft 365 security center
-              href: ./office-365-security/permissions-microsoft-365-compliance-security.md
             - name: Give users access to the Security center
               href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
         - name: Protect against threats
@@ -233,7 +231,7 @@
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: Configure anti-spam policies
                       href: ./office-365-security/configure-your-spam-filter-policies.md
-                    - name: Configure the connection filter policy
+                    - name: Configure connection filtering
                       href: ./office-365-security/configure-the-connection-filter-policy.md
                     - name: Create block sender lists
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
@@ -283,7 +281,7 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: Safety tips in email messages
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: Use the delist portal to remove yourself from the Office 365 blocked senders list
+                - name: Use the delist portal to remove yourself from the blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
             - name: Anti-phishing protection
               href: ./office-365-security/anti-phishing-protection.md
@@ -322,9 +320,9 @@
             - name: Email authentication
               href: ./office-365-security/email-validation-and-authentication.md
               items: 
-                - name: How Office 365 uses SPF to prevent spoofing
+                - name: How Microsoft 365 uses SPF to prevent spoofing
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
-                - name: Set up SPF in Office 365 to help prevent spoofing
+                - name: Set up SPF to help prevent spoofing
                   href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
                 - name: Use DKIM to validate outbound email
                   href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -607,7 +605,7 @@
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 Enterprise
           href: https://docs.microsoft.com/office-365-security/Enterprise
-        - name: Office 365 for Business
+        - name: Microsoft 365 for business
           href: https://docs.microsoft.com/microsoft-365/admin/admin-home
 
     - name: Microsoft 365 Compliance

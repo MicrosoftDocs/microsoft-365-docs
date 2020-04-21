@@ -1,5 +1,5 @@
 ---
-title: "Admin submissions in Office 365, O365 submissions, Office 365 spam problem, O365 false negative, submit phish in office 365, submit email for scanning, suspicious email in Office 365, scan a mail, have Microsoft scan for phish, have Microsoft scan for spam, submit e-mail, submit email, dodgy email, bad actor mail, suspicious, untrusted mail, report phish emails to Microsoft, report phish emails to Microsoft, report malicious email to Microsoft, report scam email to Microsoft, report malware in email to Microsoft, spam email in inbox office 365, virus in email office 365"
+title: "Admin submissions, submissions, spam problem, false negative, submit phish, submit email for scanning, suspicious email in Office 365, scan a mail, have Microsoft scan for phish, have Microsoft scan for spam, submit e-mail, submit email, dodgy email, bad actor mail, suspicious, untrusted mail, report phish emails to Microsoft, report phish emails to Microsoft, report malicious email to Microsoft, report scam email to Microsoft, report malware in email to Microsoft, spam email in inbox, virus in email"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Learn how to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files from your Office 365 tenant to Microsoft for scanning."
+description: "Learn how to submit suspicious emails, suspected phishing mails, spam, and other potentially harmful messages, URLs, and files from your company to Microsoft for scanning."
 ---
 
 # Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft
 
-If you're an admin in an Office 365 organization with mailboxes in Exchange Online, you can use the Submissions portal in the Office 365 Security & Compliance Center to submit email messages, URLs and attachments to Microsoft for scanning.
+If you're an admin in a Microsoft 365 organization with mailboxes in Exchange Online, you can use the Submissions portal in the Security & Compliance Center to submit email messages, URLs and attachments to Microsoft for scanning.
 
 When you submit an email, you will get information about any policies that may have allowed the incoming email into your tenant, as well as examination of any URLs and attachments in the mail. Policies that may have allowed a mail include an individual user's safe sender list as well as tenant level policies such as Exchange mail flow rules (also known as transport rules).
 
@@ -31,11 +31,11 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - For more information about how users can submit messages and files to Microsoft see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## How to direct suspicious content to Microsoft for Office 365 scanning
+## How to direct suspicious content to Microsoft scanning
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
 
