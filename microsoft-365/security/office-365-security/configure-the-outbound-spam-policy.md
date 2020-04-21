@@ -136,7 +136,10 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
      To disable this setting, clear the check box.
 
 5. (Optional) Expand the **Recipient Limits** section to configure the limits and actions for suspicious outbound email messages:
-]
+
+   > [!NOTE]
+   > These settings are only applicable to cloud-based mailboxes.
+     
    - **Maximum number of recipients per user**
 
      A valid value is 0 to 10000. The default value is 0, which means the service defaults are used. For more information, see [Sending limits across Office 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
