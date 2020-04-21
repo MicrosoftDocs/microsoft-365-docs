@@ -89,11 +89,11 @@ landingContent:
             url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
 
   # Card
-  - title: Azure Sentinel (Preview)
+  - title: Azure Sentinel 
     linkLists:
       - linkListType: overview
         links:
-          - text: What is Azure Sentinel? (Preview)
+          - text: What is Azure Sentinel? 
             url: https://docs.microsoft.com/azure/sentinel/overview
 
   # Card

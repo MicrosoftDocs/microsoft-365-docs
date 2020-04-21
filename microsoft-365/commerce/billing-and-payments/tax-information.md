@@ -89,7 +89,7 @@ Find out what tax you're charged in the following regions. You can also [apply f
   
 ### Europe, the Middle East, and Africa (EMEA)
 
-When you buy Office 365 services in the European Union, this purchase is subject to Value-Added Tax (VAT).
+When you buy Microsoft 365 services in the European Union, this purchase is subject to Value-Added Tax (VAT).
   
 - If you're located in a European Union Member State and you do not provide your valid local VAT ID, Microsoft Ireland Operations Ltd. will apply current local VAT rate, based on the billing country your account is set to.
 
@@ -149,7 +149,7 @@ If you're billed from another location, the current local tax is applied. You'll
 
 In the United States and Canada, various tax rates apply depending on your location. In Puerto Rico, local Value-Added Tax (VAT) charges apply.
   
-If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md)), and you signed up for Office 365 outside of the United States, Canada, and Puerto Rico, then tax is generally not charged.
+If your billing is done by Microsoft Corporation ([see your invoice](view-your-bill-or-invoice.md)), and you signed up for Microsoft 365 outside of the United States, Canada, and Puerto Rico, then tax is generally not charged.
 
 ## How taxes are calculated
 

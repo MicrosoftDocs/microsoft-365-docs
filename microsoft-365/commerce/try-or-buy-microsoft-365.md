@@ -27,9 +27,9 @@ Microsoft 365 is a complete solution that combines Office 365 and Windows 10 wit
   
 - Microsoft 365 Business Premium
 
-- Microsoft 365 Enterprise E3
+- Office 365 Enterprise E3
 
-- Microsoft 365 Enterprise E5
+- Office 365 Enterprise E5
 
 When you add a subscription through the admin center, the new subscription is associated with the same organization (domain namespace) as your existing subscription. This makes it easier to move users in your organization between subscriptions, or to assign them a license for the additional subscription they need.
   
