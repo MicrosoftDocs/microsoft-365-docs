@@ -28,7 +28,7 @@ This article discusses the steps necessary to set up Advanced eDiscovery. This i
 
 Licensing for Advanced eDiscovery requires the appropriate organization subscription and per-user licensing.
 
-- **Organization subscription:** To access Advanced eDiscovery in the Microsoft 365 compliance center or the Office 365 Security & Compliance Center, your organization must have one of the following:
+- **Organization subscription:** To access Advanced eDiscovery in the Microsoft 365 compliance center or the Security & Compliance Center, your organization must have one of the following:
 
   - Microsoft 365 E5 or Office 365 E5 subscription
   
@@ -36,7 +36,7 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
   - Microsoft 365 E3 subscription with E5 eDiscovery and Audit add-on
 
-  If you don't have an existing Microsoft 365 E5 plan and want to try Advanced eDiscovery, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 E5.
+  If you don't have an existing Microsoft 365 E5 plan and want to try Advanced eDiscovery, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 E5.
 
 - **Per-user licensing:** To add a user as a custodian in an Advance eDiscovery case, that user must be assigned one of the following licenses, depending on your organization subscription:
 
@@ -51,7 +51,7 @@ Licensing for Advanced eDiscovery requires the appropriate organization subscrip
 
 ## Step 2: Assign eDiscovery permissions
 
-To access Advanced eDiscovery or be added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Office 365 Security & Compliance Center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
+To access Advanced eDiscovery or added as a member of an Advanced eDiscovery case, a user must be assigned the appropriate permissions. Specifically, a user must be added as a member of the eDiscovery Manager role group in the Security & Compliance Center. Members of this role group can create and manage Advanced eDiscovery cases. They can add and remove members, place custodians and content locations on hold, manage legal hold notifications, create and edit searches associated in a case, add search results to a review set, analyze data in a review set, and export and download from an Advanced eDiscovery case.
 
 Complete the following steps to add users to the eDiscovery Manager role group:
 
@@ -140,7 +140,7 @@ To get you started using Advanced eDiscovery, here's a simple workflow that alig
   
    - You can place a hold on custodian data. This preserves data that may be relevant to the case during the investigation.
   
-   - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Office 365 Group with a custodian) so this data can be re-indexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
+   - You can associate other data sources with a custodian (for example, you can associate a SharePoint site or Microsoft 365 Group with a custodian) so this data can be re-indexed, placed on hold, and searched, just like the data in the custodian's mailbox or OneDrive account.
 
    - You can use the [communications workflow](managing-custodian-communications.md) in Advanced eDiscovery to send a legal hold notification to custodians.
 

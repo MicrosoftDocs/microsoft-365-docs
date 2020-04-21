@@ -54,14 +54,14 @@ To meet these criteria for remote workers, use the following Microsoft 365 Enter
 - Secure access to resources
   - Groups and permissions for Teams, SharePoint sites, and OneDrive so that only authenticated and permitted users have access
 - Protection for leaked files
-  - Office 365 DLP policies
+  - DLP policies
   - Sensitivity labels for encryption and permissions that travel with files
 - Device management and security with Microsoft Intune
   - Enrollment for managed devices
   - App settings for personal devices
   - Device and app policies
 - Productivity apps for devices
-  - Office 365 ProPlus apps for collaborative experiences with Teams, SharePoint, and OneDrive 
+  - Microsoft 365 Apps for enterprise apps for collaborative experiences with Teams, SharePoint, and OneDrive 
 - Windows 10 Enterprise
   - Comprehensive security features to protect against cyberattacks and prevent data leakage
 - Access to on-premises apps
@@ -105,11 +105,11 @@ Here's the resulting configuration with Windows 10 Enterprise devices.
 
 ![Windows 10 Enterprise elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-win10-phase.png)
  
-For [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md), deploy the infrastructure to install Office 365 ProPlus or upgrade your currently installed Office suite, such as Office 2010 or Office 2013, to Office 365 ProPlus on your organization devices. This will give your users the best security and collaborative experiences.
+For [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md), deploy the infrastructure to install Microsoft 365 Apps for enterprise or upgrade your currently installed Office suite, such as Office 2010 or Office 2013, to Microsoft 365 Apps for enterprise on your organization devices. This will give your users the best security and collaborative experiences.
 
-Here's the resulting configuration with Office 365 ProPlus installed on devices.
+Here's the resulting configuration with Microsoft 365 Apps for enterprise installed on devices.
 
-![Office 365 ProPlus elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
+![Microsoft 365 Apps for enterprise elements for remote workers](../media/empower-people-to-work-remotely/remote-workers-proplus-phase.png)
  
 For [Phase 5: Mobile device management](mobility-infrastructure.md), deploy Intune device and app management for:
 
@@ -123,8 +123,8 @@ Here's the resulting configuration with Intune enrolled devices and policies hig
  
 For [Phase 6: Information protection](infoprotect-infrastructure.md), design and configure protection for your digital assets with:
 
-- Office 365 DLP policies.
-- Office 365 sensitivity labels for encryption and permissions that travel with files.
+- DLP policies.
+- Microsoft 365 sensitivity labels for encryption and permissions that travel with files.
 
 Here's the resulting configuration with DLP policies and sensitivity labels highlighted.
 
@@ -150,7 +150,7 @@ Here's the resulting configuration with the workloads highlighted.
  
 ### Deployment results
 
-After deploying the foundation infrastructure and workloads and rolling out Windows 10 Enterprise and Office 365 ProPlus, remote workers:
+After deploying the foundation infrastructure and workloads and rolling out Windows 10 Enterprise and Microsoft 365 Apps for enterprise, remote workers:
 
 - Are subject to strong authentication and identity protection.
 - Have the latest and most secure version of Windows on their Windows devices.
@@ -202,7 +202,7 @@ Retrain your users as needed.
 
 ### User adoption results
 
-Your remote workers can use their Windows 10 Enterprise or other devices and Office 365 ProPlus to access and work on shared Microsoft 365 Enterprise cloud services and resources in a secure environment, and they’re meeting, creating, and collaborating in real time.
+Your remote workers can use their Windows 10 Enterprise or other devices and Microsoft 365 Apps for enterprise to access and work on shared Microsoft 365 Enterprise cloud services and resources in a secure environment, and they’re meeting, creating, and collaborating in real time.
 
 ## Additional Microsoft features to support remote workers
 

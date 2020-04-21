@@ -26,7 +26,7 @@ ms.topic: article
 
 
 
-[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Office 365 emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
+[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Microsoft emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
 
 ## Obtain user accounts from email addresses
 When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. To do this use the *local-host* from the email address:

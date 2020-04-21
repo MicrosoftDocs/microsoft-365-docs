@@ -20,7 +20,7 @@ Microsoft Exchange Online Protection (EOP) offers many different reports that ca
 
 ## Usage reports
 
-**Office 365 groups activity**: View information about the number of Office 365 groups that are created and used.
+**Microsoft 365 groups activity**: View information about the number of Microsoft 365 groups that are created and used.
 
 **Email activity**: View information about the number of messages sent, received and read in your whole organization, and by specific users.
 
@@ -30,13 +30,13 @@ Microsoft Exchange Online Protection (EOP) offers many different reports that ca
 
 See the following resources for more information:
 
-- [Office 365 Reports in the admin center - Office 365 groups](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
 
-- [Office 365 Reports in the Admin Center - Email activity](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365 Reports in the Admin Center - Email activity](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
 
-- [Office 365 Reports in the Admin Center - Email apps usage](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365 Reports in the Admin Center - Email apps usage](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
 
-- [Office 365 Reports in the Admin Center - Mailbox usage](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365 Reports in the Admin Center - Mailbox usage](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
 
 ## Security & compliance reports in the Microsoft 365 admin center
 

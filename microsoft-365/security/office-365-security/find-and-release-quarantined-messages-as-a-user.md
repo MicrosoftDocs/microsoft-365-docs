@@ -1,5 +1,5 @@
 ---
-title: "Find and release quarantined messages as a user in Office 365"
+title: "Find and release quarantined messages as a user"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,18 +16,18 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Office 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
+description: "As an Microsoft 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
 ---
 
-# Find and release quarantined messages as a user in Office 365
+# Find and release quarantined messages as a user
 
-Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
+Quarantine holds potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
 As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. You view and manage your quarantined messages in the Security & Compliance Center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## What do you need to know before you begin?
 
-- To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
+- To open the Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
 
 - Admins can configure how long messages are kept in quarantine before they're permanently deleted (anti-spam policies). Messages that have expired from quarantine are unrecoverable. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
@@ -61,7 +61,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
    - **Message ID**
 
-   - **Policy name**: This property shows the policy that caused the message to be quarantined. You can give this information to your admin.
+   - **Policy name**
 
    - **Size**
 
@@ -145,7 +145,7 @@ After you select a message, you have options for what to do with the messages in
 
   When you're finished, click **Release messages**.
 
-- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
+- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
 
 - **Preview message**: In the flyout pane that appears, choose one of the following options:
 

@@ -28,12 +28,12 @@ Watch the video to get an overview, and then read this article to learn more.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
 
-Depending on what your organization's Office 365 subscription includes, the Security Dashboard includes several widgets, such as Threat Management Summary, Threat Protection Status, Global Weekly Threat Detections, Malware, and more, as described in the following sections.
+Depending on what your organization's subscription includes, the Security Dashboard includes several widgets, such as Threat Management Summary, Threat Protection Status, Global Weekly Threat Detections, Malware, and more, as described in the following sections.
 
-To view the Security Dashboard, in the [Office 365 Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md), go to **Threat management** \> **Dashboard**.
+To view the Security Dashboard, in the [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md), go to **Threat management** \> **Dashboard**.
 
 > [!NOTE]
-> You must be an Office 365 global administrator, a security administrator, or a security reader to view the Security Dashboard. Some widgets require additional permissions to view. To learn more, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> You must be a global administrator, a security administrator, or a security reader to view the Security Dashboard. Some widgets require additional permissions to view. To learn more, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Threat Management Summary
 
@@ -56,7 +56,7 @@ The Threat Protection Status widget shows threat protection effectiveness with a
 
 ![Threat protection status widget](../../media/tpswidget.png)
 
-The details depend on whether your Office 365 subscription includes [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) with or without [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
+The details depend on whether your Microsoft 365 subscription includes [Exchange Online Protection](exchange-online-protection-eop.md) (EOP) with or without [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP).
 
 |||
 |---|---|
@@ -96,7 +96,7 @@ Insights not only surface key issues you should review, they also include recomm
 
 ![Smart insights](../../media/smartinsights.png)
 
-For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Office 365 Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
+For example, you might see that phishing email messages are being delivered because some users have disabled their junk mail options. To learn more about how insights work, see [Reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md).
 
 ## Threat investigation and response
 
@@ -110,7 +110,7 @@ Near the bottom of the Security Dashboard is a **Trends** section, which summari
 
 ![The Trends section summarizes email flow trends for the organization](../../media/trends.png)
 
-And, if your organization's Office 365 subscription includes [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), you will also have a **Recent threat management alerts** report in this section that enables your security team to view and take action on high-priority security alerts.
+And, if your organization's subscription includes [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), you will also have a **Recent threat management alerts** report in this section that enables your security team to view and take action on high-priority security alerts.
 
 To view or access the Sent and Received Email widget, you must have permissions to view Advanced Threat Protection reports. To learn more, see [What permissions are needed to view the ATP reports?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports).
 

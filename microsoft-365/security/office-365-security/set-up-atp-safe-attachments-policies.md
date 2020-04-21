@@ -38,29 +38,28 @@ People regularly send, receive, and share attachments, such as documents, presen
 
 - Make sure that your organization has [Office 365 Advanced Threat Protection](office-365-atp.md).
 
-- Make sure that you have the necessary permissions. To define (or edit) ATP policies, you must be assigned either an Exchange Online Organization Management role (Office 365 Global Administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles. For more details, see the following table:
+- Make sure that you have the necessary permissions. To define (or edit) ATP policies, you must be assigned either an Exchange Online Organization Management role (global administrator is assigned to this role by default) or both Exchange Online Hygiene Management and Security Administrator roles. For more details, see the following table:
 
-  |||
-  |---|---|
-  |**Role**|**Where/how assigned**|
-  |Office 365 Global Administrator |The person who signs up to buy Office 365 is a global admin by default. (See [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
+  |Role|Where/how assigned|
+  |---------|---------|
+  |global administrator |The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
   |Security Administrator |Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
   |Exchange Online Organization Management, Exchange Online Hygiene Management |Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
   |
 
-  To learn more about roles and permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+  To learn more about roles and permissions, see [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - [Learn about ATP Safe Attachments policy options](#step-3-learn-about-atp-safe-attachments-policy-options) (in this article). Some options, such as the Monitor or Replace options, can result in a minor delay of email while attachments are scanned. To avoid message delays, consider using [Dynamic Delivery and previewing](dynamic-delivery-and-previewing.md).
 
-- Allow up to 30 minutes for your new or updated policy to spread to all Office 365 datacenters.
+- Allow up to 30 minutes for your new or updated policy to spread to all Microsoft 365 datacenters.
 
 ## Step 2: Set up (or edit) an ATP Safe Attachments policy
 
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account.
 
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Safe Attachments**.
 
-3. If you see **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**, we recommend that you select this option. This will enable [Office 365 Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) for your Office 365 environment.
+3. If you see **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams**, we recommend that you select this option. This will enable [Office 365 Advanced Threat Protection for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) for your Microsoft 365 environment.
 
 4. Choose **New** (the New button resembles a plus sign ( **+**)) to start creating your policy.
 
@@ -72,13 +71,13 @@ People regularly send, receive, and share attachments, such as documents, presen
 
    - In the response section, choose the **Dynamic Delivery** option. ([Learn more about Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).)
 
-   - In the **Redirect attachment** section, select the option to enable redirect and type the email address of your Office 365 global administrator, security administrator, or security analyst who will investigate malicious attachments.
+   - In the **Redirect attachment** section, select the option to enable redirect and type the email address of your global administrator, security administrator, or security analyst who will investigate malicious attachments.
 
    - In the **Applied To** section, choose **The recipient domain is**, and then select your domain. Choose **Add**, and then choose **OK**.
 
 6. Choose **Save**.
 
-Consider setting up multiple ATP Safe Attachments policies for your organization. These policies will be applied in the order they're listed on the **ATP Safe Attachments** page. After a policy has been defined or edited, allow at least 30 minutes for the policies to take effect throughout Microsoft datacenters.
+Consider setting up multiple ATP Safe Attachments policies for your organization. These policies will be applied in the order they're listed on the **ATP Safe Attachments** page. After a policy has been defined or edited, allow at least 30 minutes for the polices to take effect throughout Microsoft datacenters.
 
 ## Step 3: Learn about ATP Safe Attachments policy options
 

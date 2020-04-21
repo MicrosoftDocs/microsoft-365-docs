@@ -177,7 +177,7 @@ Learn about resources available for admins.
                     </div>
                     <div class="cardText">
                         <h3>For your small business</h3>
-                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Build your small business with Office 365.</a></p>
+                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Build your small business with Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -194,7 +194,7 @@ Learn about resources available for admins.
                     </div>
                     <div class="cardText">
                         <h3>For the Enterprise</h3>
-                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Guidance for IT Professionals who are deploying, configuring, and managing Office 365 in enterprise organizations.</a></p>
+                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Guidance for IT Professionals who are deploying, configuring, and managing Microsoft 365 in enterprise organizations.</a></p>
                     </div>
                 </div>
             </div>
@@ -244,7 +244,7 @@ Learn about resources available for admins.
                     <div class="cardText">
                         <h3>Troubleshoot</h3>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=522692">Fix Office install issues</a></p>
-                        <p><a href="https://diagnostics.outlook.com/">Fix Outlook and Office 365 problems with the Microsoft Support and Recovery Assistant</a></p>
+                        <p><a href="https://diagnostics.outlook.com/">Fix Outlook and Microsoft 365 problems with the Microsoft Support and Recovery Assistant</a></p>
                         <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Fix email issues</a></p>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=866431">Fix OneDrive for Business sync issues</a></p>
                     </div>

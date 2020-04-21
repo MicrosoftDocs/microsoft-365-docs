@@ -1,5 +1,5 @@
 ---
-title: "Email authentication in Office 365"
+title: "Email authentication in Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: "Learn about how Exchange Online and Exchange Online Protection (EOP) in Office 365 use email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam."
+description: "Learn about how Exchange Online and Exchange Online Protection (EOP) in Microsoft 365 use email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam."
 ---
 
-# Email authentication in Office 365
+# Email authentication in Microsoft 365
 
-Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In Office 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP useses the standards to verify inbound email:
+Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP useses the standards to verify inbound email:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
@@ -50,7 +50,7 @@ This is a big problem because while enterprises may not be aware of how email au
 
 Implicit email authentication is built on numerous extensions to regular email authentication policies. These extensions include sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques. A message sent from a domain that doesn't use email authentication policies will be marked as spoof unless it contains other signals to indicate that it's legitimate.
 
-To see Microsoft's general announcement, see [A Sea of Phish Part 2 - Enhanced Anti-spoofing in Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
+To see Microsoft's general announcement, see [A Sea of Phish Part 2 - Enhanced Anti-spoofing in Microsoft 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Schooling-A-Sea-of-Phish-Part-2-Enhanced-Anti-spoofing/ba-p/176209).
 
 ## Composite authentication
 
@@ -58,9 +58,9 @@ While SPF, DKIM, and DMARC are all useful by themselves, they don't communicate 
 
 > Authentication-Results:<br/>&nbsp;&nbsp;&nbsp;compauth=\<fail | pass | softpass | none\> reason=\<yyy\>
 
-These values are explained at [Authentication-results message header fields used by Office 365 email authentication](anti-spam-message-headers.md#authentication-results-message-header-fields-used-by-office-365-email-authentication).
+These values are explained at [Authentication-results message header](anti-spam-message-headers.md#authentication-results-message-header).
 
-By examining the message headers, admins or even end users can determine how Office 365 determined that the sender is spoofed.
+By examining the message headers, admins or even end users can determine how Microsoft 365 determined that the sender is spoofed.
 
 ## Why email authentication is not always enough to stop spoofing
 
@@ -123,11 +123,11 @@ To: michelle@fabrikam.com
 
 ## Solutions for legitimate senders who are sending unauthenticated email
 
-Office 365 keeps track of who is sending unauthenticated email to your organization. If the service thinks the sender is not legitimate, it will mark it as a composite authentication failure. To avoid this, you can use the recommendations in this section.
+Microsoft 365 keeps track of who is sending unauthenticated email to your organization. If the service thinks the sender is not legitimate, it will mark it as a composite authentication failure. To avoid this, you can use the recommendations in this section.
 
 ### Configure email authentication for domains you own
 
-You can use this method to resolve intra-org spoofing and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Office 365 or third parties that are hosted by other providers.
+You can use this method to resolve intra-org spoofing and cross-domain spoofing in cases where you own or interact with multiple tenants. It also helps resolve cross-domain spoofing where you send to other customers within Microsoft 365 or third parties that are hosted by other providers.
 
 - [Configure SPF records](set-up-spf-in-office-365-to-help-prevent-spoofing.md) for your domains.
 
@@ -147,7 +147,7 @@ fabrikam.com IN TXT "v=spf1 include:spf.fabrikam.com ?all"
 
 This example means that email from your corporate infrastructure will pass email authentication, but email from unknown sources will fall back to neutral.
 
-Office 365 will treat inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof (depending upon whether Office 365 can implicitly authenticate it). However, this is still an improvement from all email being marked as spoof by Office 365.
+Microsoft 365 will treat inbound email from your corporate infrastructure as authenticated, but email from unidentified sources might still be marked as spoof (depending upon whether Microsoft 365 can implicitly authenticate it). However, this is still an improvement from all email being marked as spoof by Microsoft 365.
 
 Once you've gotten started with an SPF fallback policy of `?all`, you can gradually discover and include more email sources for your messages, and then update your SPF record with a stricter policy.
 
@@ -165,7 +165,7 @@ To permit this sender to send unauthenticated email, change the **No** to a **Ye
 
 ### Create an allow entry for the sender/recipient pair
 
-To bypass spam filtering, some parts of phish filtering, but not malware filtering for specific senders, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+To bypass spam filtering, some parts of phish filtering, but not malware filtering for specific senders, see [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
 ### Ask the sender to configure email authentication for domains you don't own
 
