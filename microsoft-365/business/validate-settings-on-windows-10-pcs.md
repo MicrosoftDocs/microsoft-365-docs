@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: "Learn how to verify that Microsoft 365 Business app protection settings took effect on your users' Windows 10 devices."
+description: "Learn how to verify that Microsoft 365 for business app protection settings took effect on your users' Windows 10 devices."
 ---
 
 # Validate device protection settings on Windows 10 PCs
@@ -55,11 +55,11 @@ After you [set up devices policies](protection-settings-for-windows-10-pcs.md), 
   
 ## Related Topics
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Get started with Microsoft 365 Business](microsoft-365-business-overview.md)
+[Get started with Microsoft 365 for business](microsoft-365-business-overview.md)
   
-[Manage Microsoft 365 Business](manage.md)
+[Manage Microsoft 365 for business](manage.md)
   
 [Set device configurations for Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
   

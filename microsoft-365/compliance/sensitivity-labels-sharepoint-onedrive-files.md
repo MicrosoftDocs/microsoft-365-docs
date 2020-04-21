@@ -151,7 +151,7 @@ If you disable this preview, files that you uploaded during the preview continue
 
 To disable the preview, use the Set-SPOTenant cmdlet:
 
-1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Using a work or school account that has global administrator or SharePoint admin privileges, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
 
 2. Run the following command:
 
