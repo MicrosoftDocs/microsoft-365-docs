@@ -1,5 +1,5 @@
 ---
-title: "Configure communication compliance"
+title: "Get started with communication compliance"
 description: "Set up communication compliance policies to configure employee communications for review."
 f1.keywords:
 - NOCSH
@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ---
 
-# Configure communication compliance in Microsoft 365
+# Get started with communication compliance
 
 >[!IMPORTANT]
 >This topic applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure Supervision policies for a Microsoft 365 subscription, see [Configure supervision for Microsoft 365](supervision-policies.md).
