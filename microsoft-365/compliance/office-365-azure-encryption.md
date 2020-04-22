@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Learn about the different encryption features available in Azure for Office 365, such as Azure Disk Encryption.
+description: Learn about encryption available in Azure for Office 365, such as Azure Disk Encryption
 ms.custom: seo-marvel-apr2020
 ---
 

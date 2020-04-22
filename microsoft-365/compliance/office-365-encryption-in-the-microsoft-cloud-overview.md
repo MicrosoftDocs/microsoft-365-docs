@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: In this article, read an overview of the various forms of encryption used to keep customer data safe in the Microsoft Cloud.
+description: In this article, read an overview of the various forms of encryption used to keep customer data safe in the Microsoft cloud.
 ms.custom: seo-marvel-apr2020
 ---
 

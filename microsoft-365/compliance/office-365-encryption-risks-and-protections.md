@@ -17,7 +17,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - seo-marvel-mar2020
-description: In this article, you'll learn about risks to the Microsoft 365 service and the encryption technologies available for protection.
+description: In this article, you'll learn about risks to Office 365 and the encryption technologies available for protection.
 ---
 
 # Encryption Risks and Protections

@@ -15,7 +15,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Create custom sensitive information types with Exact Data Match based classification to help prevent accidental sharing of sensitive information.
+description: Learn how to create custom sensitive information types with Exact Data Match based classification.
 ms.custom: seo-marvel-apr2020
 ---
 

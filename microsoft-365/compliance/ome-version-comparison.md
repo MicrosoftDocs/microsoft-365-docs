@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: This article helps explain the differences between the legacy Office 365 Message Encryption and the newer Microsoft 365 Advanced Message Encryption.
+description: This article helps explain the differences between different versions of Office 365 Message Encryption.
 ms.custom: seo-marvel-apr2020
 ---
 

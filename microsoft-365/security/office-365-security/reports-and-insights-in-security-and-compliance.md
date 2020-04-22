@@ -1,5 +1,5 @@
 ---
-title: Smart reports, insights - Security & Compliance Center
+title: Smart reports, insights - Microsoft 365 Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
