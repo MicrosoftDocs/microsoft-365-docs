@@ -19,36 +19,25 @@ search.appverid:
 description: "Learn about retention behavior that applies specifically to Exchange email and Exchange public folders."
 ---
 
-# Learn about retention for Exchange
-
->*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+# Learn about retention policies for Exchange
 
 The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Exchange.
 
-## How retention works with Exchange items
+## How a retention policy works with Exchange locations
 
-For a retention policy:
+For a user's mail, calendar, and other items, a retention policy is applied at the level of a mailbox.
 
-- For a user's mail, calendar, and other items, a retention policy is applied at the level of a mailbox.
-
-- For a public folder, a retention policy is applied at the folder level, not the mailbox level. 
-
-For a retention label:
-
-- You can apply a retention label to a folder or individual mail messages in a mailbox.
-
+For a public folder, a retention policy is applied at the folder level, not the mailbox level. 
 
 Both a mailbox and a public folder use the Recoverable Items folder to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
   
 When a person deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. When a person deletes an item in the Deleted Items folder, the message is moved to the Recoverable Items folder. However, a user can soft-delete an item (SHIFT+DELETE) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
   
-When you apply retention settings to an Exchange location or item, a process periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
+When you apply a retention policy to an Exchange location, a process periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
   
 When a user attempts to change properties of a mailbox item — such as the subject, body, attachments, senders and recipients, or date sent or received for a message — a copy of the original item is saved to the Recoverable Items folder before the change is committed. This action happens for each subsequent change. At the end of the retention period, copies in the Recoverable Items folder are permanently deleted.
-  
-If a user leaves your organization, and their mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Office 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md).
 
-After retention settings are assigned to an Exchange location or item, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
+After a retention policy is assigned to a mailbox or public folder, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
 
 When the retention settings are to retain and delete:
 
@@ -92,14 +81,4 @@ For the **Choose locations** page of the wizard, select one of the following opt
 - **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
 
 - **Let me choose specific locations** > **Exchange email** and **Exchange public folders**
-
-## How to configure a retention label for Exchange
-
-See [Create, publish, and auto-apply retention labels](create-retention-labels.md).
-
-For the **Choose locations** page of the wizard, select one of the following options:
-
-- **All locations. Includes content in Exchange email, OneDrive and SharePoint documents.**
-
-- **Let me choose specific locations** > **Exchange email**
 
