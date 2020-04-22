@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -26,7 +26,7 @@ description: "Learn to customize, organize, and manage your team site."
 
 # Customize your team site for file storage and sharing
 
-If you have a small business with a few employees, one of the best ways to set up and facilitate file sharing and online collaboration is to use OneDrive and a SharePoint team site together. We recommend creating a team site that's connected to an Office 365 group. If you want to use chat, you can create this site by creating a team in Microsoft Teams. For more info about Teams, see [Video: What is Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). If you don't want to use Teams, you can create a team site from the SharePoint start page. 
+If you have a small business with a few employees, one of the best ways to set up and facilitate file sharing and online collaboration is to use OneDrive and a SharePoint team site together. We recommend creating a team site that's connected to a Microsoft 365 group. If you want to use chat, you can create this site by creating a team in Microsoft Teams. For more info about Teams, see [Video: What is Microsoft Teams?](https://support.office.com/article/b98d533f-118e-4bae-bf44-3df2470c2b12.aspx). If you don't want to use Teams, you can create a team site from the SharePoint start page. 
   
 [What is a SharePoint team site?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx)
   
@@ -71,7 +71,7 @@ For info on expanding your lists with more columns, see [Create a column in a Sh
   
 If you're storing a lot of data in a list, see [Manage large lists and libraries in SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-View a video on adding calendars to your site, see [Create a shared calendar in Office 365](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+View a video on adding calendars to your site, see [Create a shared calendar](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
 
 ## Organize sites into hubs
 
@@ -87,7 +87,7 @@ To learn how to add sites to a hub site, see [Associate a SharePoint site with a
 
 While storage and organizing is a start, sharing with your team and external clients is also important. Here are some links to topics that will help you manage users and share your data. 
   
-For file sharing with your team, see [Share SharePoint files or folders in Office 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
+For file sharing with your team, see [Share SharePoint files or folders in Microsoft 365](https://support.office.com/article/1fe37332-0f9a-4719-970e-d2578da4941c.aspx).
   
 To understand sharing outside your team, see [External sharing overview](/sharepoint/external-sharing-overview).
   
@@ -97,7 +97,7 @@ As you manage your team site, you may have to add or remove users. Here's inform
   
 View a video on groups with [Understand and manage groups](https://support.office.com/article/9c1037b7-de0b-41cd-b8f0-79a95aac854d.aspx). 
   
-To add users to an Office 365 group, see [Add users individually or in bulk to Office 365 - Admin Help](../add-users/add-users.md).
+To add users to a Microsoft 365 group, see [Add users individually or in bulk to Microsoft 365 - Admin Help](../add-users/add-users.md).
   
 Learn how to handle access requests with [Set up and manage access requests](https://support.office.com/article/94B26E0B-2822-49D4-929A-8455698654B3.aspx).
   
@@ -105,11 +105,11 @@ Learn how to handle access requests with [Set up and manage access requests](htt
 
 - **Set up Office apps on your tablets and phones**. You need to do this so you can edit files that are stored on your team site from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files on your team site, but not edit them. 
     
-  - [Install and set up Office on an Android with Office 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
+  - [Install and set up Office on an Android with Microsoft 365](https://support.office.com/article/cafe9d6f-8b0c-4b03-b20a-12438a82a22d.aspx)
     
-  - [Install and set up Office on an iPhone or iPad with Office 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
+  - [Install and set up Office on an iPhone or iPad with Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Set up Office on Windows Phone with Office 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Set up Office on Windows Phone with Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
     
 - [Learn more about using OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     

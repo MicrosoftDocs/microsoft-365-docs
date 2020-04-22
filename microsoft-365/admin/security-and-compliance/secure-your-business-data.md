@@ -1,5 +1,5 @@
 ---
-title: "Top 10 ways to secure Office 365 and Microsoft 365 Business plans"
+title: "Top 10 ways to secure Microsoft 365 for business plans"
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -22,13 +22,13 @@ ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments. "
 ---
 
-# Top 10 ways to secure Office 365 and Microsoft 365 Business plans
+# Top 10 ways to secure Microsoft 365 for business plans
 
 If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cyber criminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409).
   
 Microsoft recommends that you complete the tasks listed in the following table that apply to your service plan. 
   
-||**Task**|**Office 365 Business Premium**|**Microsoft 365 Business**|
+||**Task**|**Microsoft 365 Business Standard**|**Microsoft 365 Business Premium**|
 |:-----|:-----|:-----|:-----|
 |1  <br/> |[Set up multi-factor authentication](secure-your-business-data.md#setup) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |2  <br/> |[Train your users](secure-your-business-data.md#train) <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
@@ -41,7 +41,7 @@ Microsoft recommends that you complete the tasks listed in the following table t
 |9  <br/> |[Protect against malicious attachments and files with ATP Safe Attachments](secure-your-business-data.md#atp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
 |10  <br/> |[Protect against phishing attacks with ATP Safe Links](secure-your-business-data.md#phishingatp) <br/> ||![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)           <br/> |
    
-Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization’s security health.
+Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) in the Microsoft 365 security center. From a centralized dashboard, you can monitor and improve the security for your Microsoft 365 identities, data, apps, devices, and infrastructure. You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing recommendations with a third-party application or software. With additional insights and more visibility into a broader set of Microsoft products and services, you can feel confident reporting about your organization's security health.
   
 ![Screenshot of Microsoft Secure Score](../../media/secure-score.png)
   
@@ -50,7 +50,7 @@ Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft
 
 Using multi-factor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multi-factor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multi-factor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/?linkid=2016403&amp;clcid=0x409).
   
-For businesses using Office 365 and Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
+For businesses using Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
 To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787) and [user set up](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225).
   
 To set up multi-factor authentication:
@@ -66,9 +66,9 @@ To set up multi-factor authentication:
 5. In the pop-up window, choose **Enable Multi-Factor Authentication**.
 
 
-After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Office 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
   
-For full details and complete recommendations, see [Set up multi-factor authentication for Office 365 users](set-up-multi-factor-authentication.md).
+For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
   
 ## 2: Train your users
 <a name="train"> </a>
@@ -92,7 +92,7 @@ Microsoft also recommends that users protect their personal email accounts by ta
 ## 3: Use dedicated admin accounts
 <a name="admin"> </a>
 
-The administrative accounts you use to administer your Office 365 or Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber criminals. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
+The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyber criminals. Use admin accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. Additional recommendations:
   
 - Be sure admin accounts are also set up for multi-factor authentication. 
     
@@ -103,11 +103,11 @@ The administrative accounts you use to administer your Office 365 or Microsoft 3
 ## 4: Raise the level of protection against malware in mail
 <a name="malware"> </a>
 
-Your Office 365 or Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0), or complete the following steps:
+Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
     
 3. Double-click the default policy to edit this company-wide policy.
     
@@ -213,7 +213,7 @@ In Outlook.com, select **Protect** in the email. The default protection is **Do 
   
 ### To receive encrypted email
 
-If the recipient has Outlook 2013 or Outlook 2016 and an Office 365 email account, they'll see an alert about the item's restricted permissions in the Reading pane. After opening the message, the recipient can view the message just like any other.
+If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account, they'll see an alert about the item's restricted permissions in the Reading pane. After opening the message, the recipient can view the message just like any other.
   
 If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder. 
   
@@ -222,7 +222,7 @@ For more information, see [Send, view, and reply to encrypted messages in Outloo
 ## 8. Protect your email from phishing attacks
 <a name="phishing"> </a>
 
-If you've configured one or more custom domains for your Office 365 or Microsoft 365 environment, you can configure targeted anti-phishing protection. ATP anti-phishing protection, part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
+If you've configured one or more custom domains for your Microsoft 365 environment, you can configure targeted anti-phishing protection. ATP anti-phishing protection, part of Office 365 Advanced Threat Protection, can help protect your organization from malicious impersonation-based phishing attacks and other phishing attacks. If you haven't configured a custom domain, you do not need to do this.
   
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain. 
   
@@ -232,7 +232,7 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
   
 1. Go to [https://protection.office.com](https://protection.office.com). 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
     
 3. On the Policy page, select **ATP anti-phishing**.
     
@@ -265,7 +265,7 @@ To create an ATP safe attachment policy, view a [short training video](https://s
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
     
 3. On the Policy page, select **ATP safe attachments**.
     
@@ -303,7 +303,7 @@ To get to ATP Safe Links, view a [short training video](https://support.office.c
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, select **Policy**.
     
 3. On the Policy page, select **ATP Safe Links**.
     
@@ -311,7 +311,7 @@ To modify the default policy:
   
 1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy. 
     
-2. Under **Settings that apply to content except email**, select **Office 365 ProPlus, Office for iOS and Android**.
+2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
     
 3. Select **Save**. 
     

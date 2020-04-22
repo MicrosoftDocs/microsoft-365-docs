@@ -21,6 +21,8 @@ description: "To implement a records management strategy in your Office 365 or M
 
 # Overview of records
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 Managing records in Microsoft 365 helps an organization comply with their corporate policies, legal and regulatory obligations while reducing risk and legal liability.
 
 At a high level, declaring content as a record means that:
@@ -74,10 +76,6 @@ When you create a retention label, you have the option to use the retention labe
    ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
 
 3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
-
-> [!NOTE]
-> Declaring an item as a record using [retention labels](labels.md) requires an Office 365 Enterprise E5 license or equivalent for each user who has permissions to edit content in this location. Users who have read-only access don't require a license.
-
 
 ### Applying a retention label to content
 
@@ -153,7 +151,7 @@ The Preservation Hold library is visible only to site collection admins. Also, t
 
 ### Searching the audit log for record versioning events
 
-The actions of locking and unlocking records are logged in the Office 365 audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the **Audit log search** page in the security and compliance center.
+The actions of locking and unlocking records are logged in the audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the **Audit log search** page in the security and compliance center.
 <br/><br/>
 
 ![Search the audit log for record versioning events](../media/recordversioning13.png)

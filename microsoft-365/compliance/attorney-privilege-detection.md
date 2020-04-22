@@ -15,7 +15,6 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-ROBOTS: NOINDEX, NOFOLLOW 
 description: "Use the attorney-client privilege detection model to use the machine learning-based detection of privileged content when reviewing content in an Advanced eDiscovery case."
 ---
 

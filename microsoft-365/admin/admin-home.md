@@ -22,6 +22,36 @@ ms.custom: okr_smb
 
 Learn about resources available for admins.
 
+<ul class="panelContent cardsJ">
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/whats-new-megaphone-blue.svg" alt="What's new megaphone symbol" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Office 365 will become Microsoft 365</h3>
+                        <p>We're changing some of our Office 365 and Microsoft 365 subscription names. You don't need to do a thing. Your services, apps and features are staying the same, along with the price of your subscription. Your subscription name will automatically update in the Microsoft 365 admin center and your billing statements will update on or after April 21st, 2020.</p>
+                        <ul>
+                            <li><p><b>Office 365 Business Essentials</b> is now <b>Microsoft 365 Business Basic</b>.</p></li>
+                            <li><p><b>Office 365 Business Premium</b> is now <b>Microsoft 365 Business Standard</b>.</p></li>
+                            <li><p><b>Microsoft 365 Business</b> is now <b>Microsoft 365 Business Premium</b>.</p></li>
+                            <li><p><b>Office 365 Business</b> is now <b>Microsoft 365 Apps for business</b>.</p></li>
+                            <li><p><b>Office 365 ProPlus</b> is now <b>Microsoft 365 Apps for enterprise</b>.</p></li>
+                        </ul>
+                        <p><a href="https://go.microsoft.com/fwlink/?linkid=2120533">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+
+---
+
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="https://products.office.com/compare-all-microsoft-office-products?tab=2">
@@ -30,7 +60,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/sign-up.svg" alt="Buy Office" />
+                            <img src="https://docs.microsoft.com/office/media/icons/sign-up-blue.svg" alt="Buy Office" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -48,7 +78,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/get-started.svg" alt="Setup" />
+                            <img src="https://docs.microsoft.com/office/media/icons/get-started-blue.svg" alt="Setup" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -66,7 +96,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/headset.svg" alt="Contact support" />
+                            <img src="https://docs.microsoft.com/office/media/icons/headset-blue.svg" alt="Contact support" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -84,7 +114,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/radar.svg" alt="Get new features" />
+                            <img src="https://docs.microsoft.com/office/media/icons/radar-blue.svg" alt="Get new features" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -114,7 +144,7 @@ Learn about resources available for admins.
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/microsoft-365/#pivot=home&panel=home-all">
+        <a href="https://docs.microsoft.com/microsoft-365">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -142,12 +172,12 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/small-business.svg" alt="Small business" />
+                            <img src="https://docs.microsoft.com/office/media/icons/small-business-blue.svg" alt="Small business" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>For your small business</h3>
-                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Build your small business with Office 365.</a></p>
+                        <p><a href="/office365/smallbusiness/build-your-small-business/build-your-small-business" target="_blank">Build your small business with Microsoft 365.</a></p>
                     </div>
                 </div>
             </div>
@@ -159,12 +189,12 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/on-premises.svg" alt="Enterprise" />
+                            <img src="https://docs.microsoft.com/office/media/icons/on-premises-blue.svg" alt="Enterprise" />
                         </div>
                     </div>
                     <div class="cardText">
                         <h3>For the Enterprise</h3>
-                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Guidance for IT Professionals who are deploying, configuring, and managing Office 365 in enterprise organizations.</a></p>
+                        <p><a href="https://docs.microsoft.com/Office365/Enterprise/">Guidance for IT Professionals who are deploying, configuring, and managing Microsoft 365 in enterprise organizations.</a></p>
                     </div>
                 </div>
             </div>
@@ -176,7 +206,7 @@ Learn about resources available for admins.
                 <div class="card">
                     <div class="cardImageOuter">
                         <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial.svg" alt="Training" />
+                            <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg" alt="Training" />
                         </div>
                     </div>
                     <div class="cardText">
@@ -214,7 +244,7 @@ Learn about resources available for admins.
                     <div class="cardText">
                         <h3>Troubleshoot</h3>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=522692">Fix Office install issues</a></p>
-                        <p><a href="https://diagnostics.outlook.com/">Fix Outlook and Office 365 problems with the Microsoft Support and Recovery Assistant</a></p>
+                        <p><a href="https://diagnostics.outlook.com/">Fix Outlook and Microsoft 365 problems with the Microsoft Support and Recovery Assistant</a></p>
                         <p><a href="https://docs.microsoft.com/office365/troubleshoot/troubleshooting/troubleshoot-email-issues">Fix email issues</a></p>
                         <p><a href="https://go.microsoft.com/fwlink/?linkid=866431">Fix OneDrive for Business sync issues</a></p>
                     </div>

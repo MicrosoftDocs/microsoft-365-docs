@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 4/30/2019
+ms.date: 4/1/2020
 search.appverid:
 - MET150
 - MOE150
@@ -17,16 +17,18 @@ ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-description: "As an Office 365 global administrator, you can apply your organization's branding to  your organization's encrypted email messages and to the contents of the encryption portal."
+description: "As a global administrator, you can apply your organization's branding to  your organization's encrypted email messages and to the contents of the encryption portal."
 ---
 
 # Add your organization's brand to your encrypted messages
 
-As an Exchange Online or Exchange Online Protection administrator, you can apply your company branding to customize the look of your organization's Office 365 Message Encryption email messages and the contents of the encryption portal. Using the Get-OMEConfiguration and Set-OMEConfiguration Windows PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
+As an Exchange Online or Exchange Online Protection administrator, you can apply your company branding to customize the look of your organization's Microsoft 365 for business Message Encryption email messages and the contents of the encryption portal. Using the Get-OMEConfiguration and Set-OMEConfiguration Windows PowerShell cmdlets, you can customize the following aspects of the viewing experience for recipients of encrypted email messages:
   
 - Introductory text of the email that contains the encrypted message
 
 - Disclaimer text of the email that contains the encrypted message
+
+- URL of the privacy statement for your organization
 
 - Text that appears in the OME portal
 
@@ -52,7 +54,7 @@ Once you've created the templates, you can apply them to encrypted emails by usi
 
 ## Work with OME branding templates
 
-You can modify several features within a branding template. You can modify, but not remove, the default template. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates. Use Windows PowerShell to work with one branding template at a time. You'll need a work or school account that has global administrator permissions in your Office 365 organization to use these cmdlets.
+You can modify several features within a branding template. You can modify, but not remove, the default template. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates. Use Windows PowerShell to work with one branding template at a time. You'll need a work or school account that has global administrator permissions in your organization to use these cmdlets.
 
 - [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) - Modify the default branding template or a custom branding template that you created.
 - [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) - Create a new branding template, Advanced Message Encryption only.
@@ -62,7 +64,7 @@ You can modify several features within a branding template. You can modify, but 
 
 Use Windows PowerShell to modify one branding template at a time. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates.
 
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Modify the template by using the Set-OMEConfiguration cmdlet as described in [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) or use the following graphic and table for guidance.
 
@@ -74,7 +76,8 @@ Use Windows PowerShell to modify one branding template at a time. If you have Ad
 |Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels. If your image exceeds these dimensions, the service resizes your logo for display in the portal. The service doesn't modify the graphic file itself. For best results, use the optimal size.|
 |Text next to the sender's name and email address|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Text that appears on the "Read Message" button|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|Text that appears above below the "Read Message" button|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|Text that appears below the "Read Message" button|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|URL for the Privacy Statement link|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PrivacyStatementURL "<URL>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
 |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
 |Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
 |To enable or disable authentication with a one-time pass code for this custom template|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **Examples:** <br/>To enable one-time passcodes for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> To disable one-time passcodes for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
@@ -86,7 +89,7 @@ If you have Office 365 Advanced Message Encryption, you can create custom brandi
 
 To create a new custom branding template:
 
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Use the [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) cmdlet to create a new template.
 
@@ -104,7 +107,7 @@ To create a new custom branding template:
 
 To remove all modifications from the default template, including brand customizations, and so on, complete these steps:
   
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Use the **Set-OMEConfiguration** cmdlet as described in [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string, `""`. For all image values, such as Logo, set the value to  `"$null"`.
 
@@ -125,7 +128,7 @@ You can only remove or delete branding templates that you've made. You can't rem
 
 To remove a custom branding template:
   
-1. Using a work or school account that has global administrator permissions in your Office 365 organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
 2. Use the **Remove-OMEConfiguration** cmdlet as follows:
 
@@ -147,7 +150,7 @@ After you've either modified the default template or created new branding templa
 
 - If the email was manually encrypted by the end user from the Outlook or Outlook on the web (formerly known as Outlook Web App) clients
 
-- If the email was automatically encrypted by an Exchange mail flow rule or Office 365 Data Loss Prevention policy
+- If the email was automatically encrypted by an Exchange mail flow rule or Data Loss Prevention policy
 
 For information on how to create an Exchange mail flow rule that applies encryption, see [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
@@ -164,7 +167,7 @@ For information on how to create an Exchange mail flow rule that applies encrypt
 6. In **Apply this rule if**, select the condition **The sender is located inside the organization** as well as other conditions you want from the list of available conditions. For example, you might want to apply a particular branding template to:
 
    - All encrypted emails sent from members of the finance department
-   - Encrypted emails sent with a certain keyword such as “External” or “Partner”
+   - Encrypted emails sent with a certain keyword such as "External" or "Partner"
    - Encrypted emails sent to a particular domain
 
 7. From **Do the following**, select **Modify the message security** > **Apply custom branding to OME messages**. Next, from the drop-down, select a branding template from those you created or modified.

@@ -32,7 +32,7 @@ When you define policies for information barriers, you'll work with user account
 
 - User account attributes are defined in Azure Active Directory (or Exchange Online). These attributes can include department, job title, location, team name, and other job profile details. 
 
-- Segments are sets of users that are defined in the Office 365 Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).) 
+- Segments are sets of users that are defined in the Security & Compliance Center using a selected **user account attribute**. (See the [list of supported attributes](information-barriers-attributes.md).) 
 
 - Information barrier policies determine communication limits or restrictions. When you define information barrier policies, you choose from two kinds of policies:
     - "Block" policies prevent one segment from communicating with another segment.
@@ -62,12 +62,12 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - Scoped directory search - Before you define your organization's first information barrier policy, you must [enable scoped directory search in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/teams-scoped-directory-search). Wait at least 24 hours after enabling scoped directory search before you set up or define information barrier policies.
 
-- Audit logging - In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Audit logging - In order to look up the status of a policy application, audit logging must be turned on. We recommend doing this before you begin to define segments or policies. To learn more, see [Turn the audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
 - PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the AzureRM module.
-    - [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
+    - [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Install the Azure PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
 - Admin consent for information barriers in Microsoft Teams -  When your policies are in place, information barriers can remove people from chat sessions they are not supposed to be in. This helps ensure your organization remains compliant with policies and regulations. Use the following procedure to enable information barrier policies to work as expected in Microsoft Teams. 
@@ -238,11 +238,11 @@ Information barrier policies are not in effect until you set them to active stat
 
     Repeat this step as appropriate for each policy.
 
-3. When you have finished setting your information barrier policies to active status, use the **Start-InformationBarrierPoliciesApplication** cmdlet in the Office 365 Security & Compliance Center.
+3. When you have finished setting your information barrier policies to active status, use the **Start-InformationBarrierPoliciesApplication** cmdlet in the Security & Compliance Center.
 
     Syntax: `Start-InformationBarrierPoliciesApplication`
 
-    After approximately a half hour, policies are applied, user by user, for your organization. If your organization is large, it can take 24 hours (or more) for this process to complete. (As a general guideline, it takes about an hour to process 5,000 user accounts.)
+    After you run `Start-InformationBarrierPoliciesApplication` allow 30 minutes for the system to start applying the policies. The system applies policies user by user. In general the system processes about 5,000 user accounts per hour.
 
 ## View status of user accounts, segments, policies, or policy application
 

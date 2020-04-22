@@ -36,10 +36,10 @@ A Microsoft 365 Enterprise cloud-based scenario that meets this business need re
 
 - Store files (documents, slide decks, spreadsheets, etc.) in a SharePoint team site.
 - Lock down the site to prevent:
-  - Access to users who are not members of the Office 365 group for the site.
+  - Access to users who are not members of the Microsoft 365 group for the site.
   - Members of the site from granting access to others.
   - Non-members of the site from requesting access to the site.
-- Configure an Office 365 retention label for your SharePoint sites as a default way to	block users from sending files outside the organization.
+- Configure a retention label for your SharePoint sites as a default way to	block users from sending files outside the organization.
 - Encrypt the most sensitive files of the site with encryption that travels with the file.
 - Add permissions to the most sensitive files so that if even if they get shared outside of the site, opening the file still requires the valid credentials of a user account that has permission.
 
@@ -49,11 +49,11 @@ The following table maps the requirements of this scenario to a feature of Micro
 |:-------|:-----|
 | **Requirement** | **Microsoft 365 Enterprise feature** |
 | Store files | SharePoint team sites |
-| Lock down the site | Office 365 groups and SharePoint team site permissions |
-| Label the files of the site | Office 365 retention labels |
-| Block users when sending files outside the organization | Data Loss Prevention (DLP) policies in Office 365 |
-| Encrypt all of the files of the site | Office 365 sensitivity labels or sublabels |
-| Add permissions to the files of the site | Office 365 sensitivity labels or sublabels |
+| Lock down the site | Microsoft 365 groups and SharePoint team site permissions |
+| Label the files of the site | Microsoft 365 retention labels |
+| Block users when sending files outside the organization | Data Loss Prevention (DLP) policies |
+| Encrypt all of the files of the site | Microsoft 365 sensitivity labels or sublabels |
+| Add permissions to the files of the site | Microsoft 365 sensitivity labels or sublabels |
 |||
 
 Here is an example configuration for a secure SharePoint site.
@@ -72,7 +72,7 @@ For a 1-page summary of this scenario, see the [SharePoint sites for highly regu
 
 [![SharePoint sites for highly regulated data poster](../media/teams-sharepoint-online-sites-highly-regulated-data/sharepoint-sites-highly-regulated-data-poster.png)](../media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf)
 
-You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePointSitesHighlyRegulatedData.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/teams-sharepoint-online-sites-highly-regulated-data/SharePoint-Sites-Highly-Regulated-Data.pptx) formats and print it on letter, legal, or tabloid (11 x 17)-sized paper.
 
 
 ## Identity and device access prerequisites
@@ -85,26 +85,26 @@ To create a SharePoint site for highly regulated data, you must first identify i
 
 That purpose will drive the determination of essential configuration items such as:
 
-- The Office 365 retention label to assign to the Documents portion of the site and DLP policies for the label
-- The settings of an Office 365 sensitivity sublabel that users apply to highly sensitive files stored in the site
+- The retention label to assign to the Documents portion of the site and DLP policies for the label
+- The settings of a sensitivity sublabel that users apply to highly sensitive files stored in the site
 
 Once determined, you use these settings to configure the site in Phase 2. 
 
-### Step 1 Office 365 retention labels and DLP policies
+### Step 1 Microsoft 365 retention labels and DLP policies
 
-When applied to the Documents portion of a SharePoint team site, Office 365 retention labels provide a default method of classifying all files stored on the site.
+When applied to the Documents portion of a SharePoint team site, retention labels provide a default method of classifying all files stored on the site.
  
-For SharePoint sites for highly regulated data, you need to determine which Office 365 retention label to use.
+For SharePoint sites for highly regulated data, you need to determine which retention label to use.
 
-For the design considerations of Office 365 labels, see [Office 365 classification and labels](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
+For the design considerations of labels, see [Microsoft 365 classification and labels](https://docs.microsoft.com/office365/securitycompliance/secure-sharepoint-online-sites-and-files#office-365-retention-labels).
 
 To protect sensitive information and prevent its accidental or intentional disclosure, you use DLP policies. For more information, see this [overview](https://docs.microsoft.com/office365/securitycompliance/data-loss-prevention-policies).
 
-For SharePoint sites, you must configure a DLP policy for the Office 365 retention label assigned to the site to block users when they attempt to share files with external users. 
+For SharePoint sites, you must configure a DLP policy for the retention label assigned to the site to block users when they attempt to share files with external users. 
 
-### Step 2: Your Office 365 sensitivity sublabel
+### Step 2: Your Microsoft 365 sensitivity sublabel
 
-To provide encryption and a set of permissions to your most sensitive files, users must apply an Office 365 sensitivity label or sublabel. A sublabel exists under an existing label. 
+To provide encryption and a set of permissions to your most sensitive files, users must apply a sensitivity label or sublabel. A sublabel exists under an existing label. 
 
 Use a sensitivity label when you need is a small number of labels for both global use and individual private teams. Use a sensitivity sublabel when you have a large number of labels or want to organize labels for secure sites the under your highly regulated label. 
 
@@ -114,14 +114,14 @@ The settings of the applied label or sublabel travel with the file. Even if it i
 
 You have determined the following:
 
-- The appropriate Office 365 retention label and the DLP policy that is associated with the label
-- The settings of the Office 365 sensitivity sublabel that include encryption and permissions
+- The appropriate retention label and the DLP policy that is associated with the label
+- The settings of the sensitivity sublabel that include encryption and permissions
 
 ## Phase 2: Configure
 
 In this phase, you take the settings determined in Phase 1 and implement them to create a SharePoint site for highly regulated data.
 
-### Step 1: Create a private SharePoint team site with owners and members of the corresponding Office 365 group
+### Step 1: Create a private SharePoint team site with owners and members of the corresponding Microsoft 365 group
 
 Follow [these instructions]( https://support.office.com/article/create-a-site-in-sharepoint-online-4d1e11bf-8ddc-499d-b889-2b48d10b1ce8) to create a private SharePoint team site.
 
@@ -136,15 +136,15 @@ From the SharePoint site, configure these permission settings.
 
 With these settings, the ability for site group members to share the site with other members or for non-members to request access to the site is disabled.
 
-### Step 3: Configure the site for an Office 365 retention label
+### Step 3: Configure the site for a retention label
 
-Use the instructions in [Protect SharePoint files with Office 365 labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
+Use the instructions in [Protect SharePoint files with labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp) to:
 
 1. Create and publish a retention label for highly regulated data (if needed).
 2. Configure the site for the retention label created in step 1.
 3. Create a DLP policy for highly regulated data that uses the retention label created in step 2 and blocks users from sending files outside the organization
 
-#### Step 4: Create an Office 365 sensitivity sublabel for the site
+#### Step 4: Create a sensitivity sublabel for the site
 
 Unlike a sensitivity label for highly regulated data that anyone can apply to any file, a secure site needs its own sublabel so that files with the sublabel assigned:
 
@@ -164,9 +164,9 @@ Use the instructions [here](https://docs.microsoft.com/microsoft-365/compliance/
 You have configured the following:
 
 - More restrictive permission settings on the SharePoint site
-- An Office 365 retention label assigned to the Documents portion of the SharePoint site
-- A DLP policy for the Office 365 retention label
-- An Office 365 sensitivity label or sublabel that users can apply to the most sensitive files stored in the site, which encrypts the file and only allows Co-Author access for members of the team site group 
+- A retention label assigned to the Documents portion of the SharePoint site
+- A DLP policy for the retention label
+- A sensitivity label or sublabel that users can apply to the most sensitive files stored in the site, which encrypts the file and only allows Co-Author access for members of the team site group 
 
 Here is the resulting configuration that uses a sublabel of the Highly regulated label.
 

@@ -1,5 +1,5 @@
 ---
-title: "Restore a user in Office 365"
+title: "Restore a user"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,22 +21,22 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: "Learn how to restore deleted Office 365 user accounts and all associated data."
+description: "Learn how to restore deleted user accounts and all associated data."
 ---
 
-# Restore a user in Office 365
+# Restore a user
    
 When you restore a user account within 30 days after deleting it, the account and all associated data are restored. The user can sign in with the same work or school account. Their mailbox will be fully restored. To find out how much time remains before a specific user account can no longer be restored, [contact us](../contact-support-for-business-products.md).
   
 Here are a couple of tips:
   
-- Make sure there are Office 365 licenses available that you can assign to the account.
+- Make sure licenses are available to assign to the account.
     
 - If your business uses Active Directory, see [How to troubleshoot deleted user accounts in Office 365](https://support.microsoft.com/kb/2619308) for instructions on restoring a user account. 
     
 ## Restore one or more user accounts
 
-You must be a global admin or user management admin in Office 365 to do these steps. 
+You must be a Microsoft 365 global admin or user management admin to do these steps. 
   
  
 ::: moniker range="o365-worldwide"
@@ -112,7 +112,7 @@ To fix this, replace the active user account with the one that you are restoring
 
 A proxy address conflict occurs when you delete a user account that contains a proxy address, assign the same proxy address to another account, and then try to restore the deleted account. Follow the steps below to fix this issue.
   
-You must have [admin permissions](about-admin-roles.md) in Office 365 to do this. 
+You must have [admin permissions](about-admin-roles.md) in Microsoft 365 to do this. 
   
 
 ::: moniker range="o365-worldwide"
@@ -143,4 +143,3 @@ Go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=848041), and 
 
 [Delete a user](delete-a-user.md)
   
-

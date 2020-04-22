@@ -75,7 +75,7 @@ For example, you might have a DLP policy that helps you detect the presence of i
   
 ### Locations
 
-A DLP policy can find and protect sensitive information across Office 365, whether that information is located in Exchange Online, SharePoint Online, OneDrive for Business, or Microsoft Teams. You can choose to protect content in Exchange email, Microsoft Teams chats and channel messages, and all SharePoint or OneDrive libraries, or select specific locations for a policy.
+A DLP policy can find and protect sensitive information across Microsoft 365, whether that information is located in Exchange Online, SharePoint Online, OneDrive for Business, or Microsoft Teams. You can choose to protect content in Exchange email, Microsoft Teams chats and channel messages, and all SharePoint or OneDrive libraries, or select specific locations for a policy.
   
 ![Options for locations where a DLP policy can be applied](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
@@ -108,7 +108,7 @@ The conditions now available can determine if:
   
 - Content contains a type of sensitive information.
     
-- Content contains a label. For more information, see the below section [Using a label as a condition in a DLP policy](#using-a-label-as-a-condition-in-a-dlp-policy).
+- Content contains a label. For more information, see the below section [Using a retention label as a condition in a DLP policy](#using-a-retention-label-as-a-condition-in-a-dlp-policy).
     
 - Content is shared with people outside or inside your organization.
 
@@ -117,7 +117,7 @@ The conditions now available can determine if:
     
 #### Types of sensitive information
 
-A DLP policy can help protect sensitive information, which is defined as a **sensitive information type**. Office 365 includes definitions for many common sensitive information types across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers. 
+A DLP policy can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes definitions for many common sensitive information types across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers. 
   
 ![List of available sensitive information types](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -323,35 +323,23 @@ For these reasons, the guidance for creating rules with different match accuraci
     
 - Any in-between confidence levels typically range from just above the lower confidence level to just below the higher confidence level.
     
-## Using a label as a condition in a DLP policy
+## Using a retention label as a condition in a DLP policy
 
-You can create a label and then:
-<!-- what kind of label? -->
-  
-- **Publish** it, so that end users can see and manually apply the label to content. 
-    
-- **Auto-apply** it to content that matches the conditions that you choose. 
-    
-For more information about labels, see [Overview of retention labels](labels.md).
-  
-After you create a label, you can then use that label as a condition in your DLP policies. 
+When you use a previously created and published [retention label](labels.md) as a condition in a DLP policy, there are some things to be aware of:
+
+- You have to have previously created, published and applied the retention label before you attempt to use it as a condition in a DLP policy.
+- Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, [How long it takes for retention labels to take effect](labels.md#how-long-it-takes-for-retention-labels-to-take-effect) for detailed information.
+- Using a retention label in a policy ***is only supported for items in SharePoint Online and OneDrive for Business***.
+
 
 ![Labels as a condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
 
-For example, you might want to do this because:
-  
-- You published a label named **Confidential**, so that people in your organization can manually apply the label to confidential email and documents. By using this label as a condition in your DLP policy, you can restrict content labeled **Confidential** from being shared with people outside your organization. 
-    
-- You created a label named **Alpine House** for a project of that name, and then applied that label automatically to content containing the keywords "Alpine House". By using this label as a condition in your DLP policy, you can show a policy tip to end users when they're about to share this content with someone outside your organization. 
-    
-- You published a label named **Tax record**, so that your records manager can manually apply the label to content that needs to be classified as a record. By using this label as a condition in your DLP policy, you can look for content with this label along with other types of sensitive information such as ITINs or SSNs; apply protection actions to content labeled **Tax record**; and get detailed activity reports about the DLP policy from the DLP reports and audit log data. 
-    
-- You published a label named **Executive Leadership Team - Sensitive** to the Exchange mailboxes and OneDrive accounts of a group of executives. By using this label as a condition in your DLP policy, you can enforce both retention and protection actions on the same subset of content and users. 
-    
-By using labels as a condition in your DLP rules, can you selectively enforce protection actions on a specific set of content, locations, or users. 
+You might want to use a retention label in a DLP policy if you have items that are under retention and disposition, and you also want to apply other controls to them, for example:
 
-> [!NOTE]
-> If you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location, you will receive the following error: "Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location." This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
+- You published a retention label named **tax year 2018**, which when applied to tax documents from 2018 that are stored in SharePoint retains them for 10 years then disposes of them. You also don't want those items being shared outside your organization, which you can do with a DLP policy.
+
+> [!IMPORTANT]
+> You'll get this error if you specify a retention label as a condition in a DLP policy and you also include Exchange and/or Teams as a location: **"Protecting labeled content in email and teams messages isn't supported. Either remove the label below or turn off Exchange and Teams as a location."** This is because Exchange transport does not evaluate the label metadata during message submission and delivery. 
 
 ### Support for sensitivity labels is coming
 
@@ -405,7 +393,7 @@ To jump to a section quickly, click an item in the top navigation of the rule ed
 
 The first step in creating a DLP policy is choosing what information to protect. By starting with a DLP template, you save the work of building a new set of rules from scratch, and figuring out which types of information should be included by default. You can then add to or modify these requirements to fine tune the rule to meet your organization's specific requirements.
   
-A preconfigured DLP policy template can help you detect specific types of sensitive information, such as HIPAA data, PCI-DSS data, Gramm-Leach-Bliley Act data, or even locale-specific personally identifiable information (P.I.). To make it easy for you to find and protect common types of sensitive information, the policy templates included in Office 365 already contain the most common sensitive information types necessary for you to get started.
+A preconfigured DLP policy template can help you detect specific types of sensitive information, such as HIPAA data, PCI-DSS data, Gramm-Leach-Bliley Act data, or even locale-specific personally identifiable information (P.I.). To make it easy for you to find and protect common types of sensitive information, the policy templates included in Microsoft 365 already contain the most common sensitive information types necessary for you to get started.
   
 ![List of templates for data loss prevention policies with focus on template for U.S. Patriot Act](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -510,11 +498,11 @@ When you create a DLP policy that includes Microsoft Teams as a location, the po
 
 Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
   
-1. Create a group in Office 365 and add compliance officers to it.
+1. Create a group in Microsoft 365 and add compliance officers to it.
     
 2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
     
-3. Add the Office 365 group to the role group.
+3. Add the Microsoft 365 group to the role group.
     
 For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
@@ -528,7 +516,7 @@ To use most of the cmdlets for the Security &amp; Compliance Center, you need to
     
 2. Use any of these [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-However, DLP reports need pull data from across Office 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
+However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
   
 1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
@@ -553,4 +541,3 @@ However, DLP reports need pull data from across Office 365, including Exchange O
 - [What the DLP functions look for](what-the-dlp-functions-look-for.md)
     
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
-    

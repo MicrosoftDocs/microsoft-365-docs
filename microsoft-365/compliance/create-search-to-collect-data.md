@@ -35,7 +35,7 @@ Choose custodian content locations to search by specifying that custodians you h
 
 ## Choose non-custodial locations
 
-In some cases, you may want to search data sources that are not associated with a custodian. In this case, you can specify the locations you want to search, or choose to search all content locations for a specific Office 365 service (such as searching all Exchange mailboxes or all SharePoint sites and OneDrive accounts).
+In some cases, you may want to search data sources that are not associated with a custodian. In this case, you can specify the locations you want to search, or choose to search all content locations for a specific Microsoft service (such as searching all Exchange mailboxes or all SharePoint sites and OneDrive accounts).
 
 ## Define the search query and conditions
 

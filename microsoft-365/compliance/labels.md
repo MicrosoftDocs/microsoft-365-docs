@@ -21,6 +21,8 @@ description: "Use retention labels to classify data across your organization for
 
 # Overview of retention labels
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 Across your organization, you probably have different types of content that require different actions taken on them in order to comply with industry regulations and internal policies. For example, you might have:
   
 - Tax forms that need to be **retained** for a minimum period of time. 
@@ -31,11 +33,11 @@ Across your organization, you probably have different types of content that requ
     
 - Work visas that must be **marked as a record** so that they can't be edited or deleted. 
     
-In all of these cases, retention labels in Office 365 can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
+In all of these cases, retention labels can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
   
 With retention labels, you can:
   
-- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Office 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
+- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
     
@@ -57,7 +59,7 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that arrive in that location inherit the default retention label.  
     
-You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center.
+You create retention labels in the Microsoft 365 compliance center, Microsoft 365 security center, or the Security & Compliance Center.
 
 ## How retention labels work with retention label policies
 
@@ -69,7 +71,7 @@ Retention labels are independent, reusable building blocks that are included in 
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. When you publish retention labels, they're included in a retention label policy. Please note, retention label names are immutable and cannot be edited once created.
+1. When you publish retention labels, they're included in a retention label policy. Retention label names are immutable, which means that they and cannot be edited after they're created.
 
 
 2. A single retention label can be included in many retention label policies.
@@ -92,7 +94,7 @@ It's important to know that content like an email or document can have only a si
     
 Manually assigned labels are explicitly assigned; auto-apply labels are implicitly assigned; an explicit retention label takes precedence over an implicit label. For more information, see the below section on [The principles of retention, or what takes precedence?](#the-principles-of-retention-or-what-takes-precedence).
 
-All of the information in this section applies only to retention labels. Note that an item of content can also have one sensitivity label applied to it, in addition to one retention label.
+All the information in this section applies only to retention labels. Note that an item of content can also have one sensitivity label applied to it, in addition to one retention label.
   
 ## How long it takes for retention labels to take effect
 
@@ -144,9 +146,9 @@ Different types of retention labels can be published to different locations, dep
   
 |**If the retention label is…**|**Then the label policy can be applied to…**|
 |:-----|:-----|
-|Published to end users  <br/> |Exchange, SharePoint, OneDrive, Office 365 groups  <br/> |
+|Published to end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
 |Auto-applied based on sensitive information types  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
-|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Office 365 groups  <br/> |
+|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
    
 In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
   
@@ -176,9 +178,9 @@ If your retention label will be assigned to content by end users, you can publis
     
 - SharePoint
     
-- Office 365 groups (both the group site and group mailbox in Outlook on the web)
+- Microsoft 365 groups (both the group site and group mailbox in Outlook on the web)
     
-The sections below show how labels appear in different apps to people in your organization.
+The sections that follow explain how labels appear in different apps to people in your organization.
   
 ### Outlook on the web
 
@@ -228,17 +230,17 @@ You can also create a view of the library that contains the **Labels** column or
   
 ![Library column for labels shown in custom view](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
   
-### Office 365 groups
+### Microsoft 365 Groups
 
-When you publish retention labels to an Office 365 group, the retention labels appear in both the group site and group mailbox in Outlook on the web. The experience of applying a retention label to content is identical to that shown above for email and documents.
+When you publish retention labels to a Microsoft 365 group, the retention labels appear in both the group site and group mailbox in Outlook on the web. The experience of applying a retention label to content is identical to that shown above for email and documents.
 
-To retain content for an Office 365 group, you need to use the Office 365 groups location. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Office 365 group mailboxes.
+To retain content for a Microsoft 365 group, you need to use the Microsoft 365 Groups location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
   
 ## Applying a retention label automatically based on conditions
 
-One of the most powerful features of retention labels is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the retention labels. Office 365 does the work for them.
+One of the most powerful features of retention labels is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
 ![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
@@ -366,7 +368,7 @@ You can use retention labels to declare content as a record. This lets you imple
 
 A retention label can enforce retention actions on content. In addition, you can use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
   
-For more information, see [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
+For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## Monitor retention labels
 
@@ -411,10 +413,22 @@ To understand how different labels with retention actions are applied to content
 Understand that the principles of retention work as a tie-breaking flow from top to bottom: If the rules applied by all policies or labels are the same at one level, the flow moves down to the next level to determine precedence for which rule is applied.
   
 Finally, a retention policy or label cannot permanently delete any content that's on hold for eDiscovery. When the hold is released, the content again becomes eligible for the cleanup process described above.
-  
+
+### Precedence for auto-labeling with trainable classifiers
+
+All retention labels that are configured for trainable classifiers are evaluated simultaneously. If an item is detected by more than one trainable classifier, the following criteria is used to determine which retention label to apply:
+
+1. Retention labels configured for retain-only or retain and then delete have a higher priority over retention labels that are configured for delete-only.
+
+2. For retention labels that are configured for retain-only or retain and then delete, the retention label that is configured for the longest retention period wins.
+
+3. For retention labels that are configured for delete-only, the retention label that has been configured for the shortest period wins.
+
+4. Retention labels with the same action and the same period result in a retention label selection that is non-deterministic.
+
 ## Use retention labels instead of these features
 
-Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Office 365 groups. If you need to classify content or manage records anywhere in Office 365, we recommend that you use retention labels.
+Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Microsoft 365 Groups. If you need to classify content or manage records anywhere in Microsoft 365, we recommend that you use retention labels.
   
 There are several other features that have previously been used to classify content or manage records in Office 365. These are listed below. These features will continue to work side by side with retention labels. While there are instances where the implementation of retention labels differs from previous features, the evolution of retention labels will drive the future of records management across Office 365. Therefore, moving forward, for data governance, we recommend that you use retention labels instead of these features.
   
@@ -434,16 +448,16 @@ There are several other features that have previously been used to classify cont
 
 Members of your compliance team who will create retention labels need permissions to the Security &amp; Compliance Center. By default, your tenant admin has access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the Security &amp; Compliance Center, edit the **Compliance Administrator** role group, and add members to that role group. 
   
-For more information, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, see [Give users access to the Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 These permissions are required only to create and apply retention labels and a label policy. Policy enforcement does not require access to the content.  
 ## Find the PowerShell cmdlets for labels
 
 To use the label cmdlets, you need to:
   
-1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connect to the Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. Use these Office 365 Security & Compliance Center cmdlets:
+2. Use these Security & Compliance Center cmdlets:
 
   - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-compliancetag)
 

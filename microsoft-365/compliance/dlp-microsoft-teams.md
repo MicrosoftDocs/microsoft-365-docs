@@ -62,7 +62,7 @@ The **What's this?** link opens an [article](data-loss-prevention-policies.md) a
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Choose **Data loss prevention** > **Policy**.
 
@@ -82,7 +82,7 @@ Allow approximately one hour for your changes to work their way through your dat
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Choose **Data loss prevention** > **Policy**.
 
@@ -100,7 +100,7 @@ Allow approximately one hour for your changes to work their way through your dat
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Choose **Data loss prevention** > **Policy** > **+ Create a policy**.
 

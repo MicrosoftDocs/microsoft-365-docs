@@ -87,7 +87,7 @@
       items: 
         - name: Email in Office 365
           href: email/email.md
-        - name: Office 365 user email settings
+        - name: User email settings
           href: email/office-365-user-email-settings.md
         - name: Add another email alias for a user
           href: email/add-another-email-alias-for-a-user.md
@@ -169,6 +169,8 @@
           href: manage/centralized-deployment-of-add-ins.md
         - name: Use Centralized Deployment to deploy add-ins
           href: manage/manage-deployment-of-add-ins.md
+        - name: Centralized Deployment FAQ
+          href: manage/centralized-deployment-FAQ.md
         - name: Find your partner or reseller
           href: manage/find-your-partner-or-reseller.md
         - name: Room and equipment mailboxes
@@ -189,6 +191,8 @@
           href: manage/resolve-license-conflicts.md
         - name: Manage messages in the Message center
           href: manage/manage-messages.md
+        - name: Show or hide new features using What's New Management
+          href: manage/show-hide-new-features.md
     - name: Subscriptions and billing
       items: 
         - name: Manage your subscriptions
@@ -233,11 +237,11 @@
           href: create-groups/office-365-groups.md
         - name: Compare groups
           href: create-groups/compare-groups.md
-        - name: Create an Office 365 Group
+        - name: Create an Microsoft 365 group
           href: create-groups/create-groups.md
-        - name: Manage an Office 365 group
+        - name: Manage an Microsoft 365 group
           href: create-groups/manage-groups.md
-        - name: Plan for governance in Office 365 Groups
+        - name: Plan for governance in Microsoft 365 groups
           href: create-groups/plan-for-groups-governance.md
         - name: Manage creation of Groups
           href: create-groups/manage-creation-of-groups.md
@@ -249,7 +253,7 @@
           href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
         - name: Add or remove members from groups
           href: create-groups/add-or-remove-members-from-groups.md
-        - name: Office 365 Group Expiration Policy
+        - name: Microsoft 365 group Expiration Policy
           href: create-groups/office-365-groups-expiration-policy.md
         - name: Restore deleted Group
           href: create-groups/restore-deleted-group.md

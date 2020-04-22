@@ -11,18 +11,18 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
-description: "You can use mail flow rules (transport rules) to identify and take action on messages that flow through your Office 365 organization."
+description: "You can use mail flow rules (transport rules) to identify and take action on messages that flow through your organization."
 ---
 
 # Mail flow rules (transport rules) in Exchange Online Protection
 
-You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your Office 365 organization. Mail flow rules are similar to the Inbox rules that are available in Outlook and Outlook on the web. The main difference is mail flow rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Mail flow rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
+You can use mail flow rules (also known as transport rules) to identify and take action on messages that flow through your organization. Mail flow rules are similar to the Inbox rules that are available in Outlook and Outlook on the web. The main difference is mail flow rules take action on messages while they're in transit, and not after the message is delivered to the mailbox. Mail flow rules contain a richer set of conditions, exceptions, and actions, which provides you with the flexibility to implement many types of messaging policies.
 
 This article explains the components of mail flow rules, and how they work.
 
 For steps to create, copy, and manage mail flow rules, see [Manage mail flow rules in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules). For each rule, you have the option of enforcing it, testing it, or testing it and notifying the sender. To learn more about the testing options, see [Test mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and [Policy Tips in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips).
 
-For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports in Office 365 to view data about malware, spam, and rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
+For summary and detail reports about messages that matched mail flow rules, see [Use mail protection reports to view data about malware, spam, and rule detections](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports).
 
 To implement specific messaging policies by using mail flow rules, see these topics:
 
@@ -121,6 +121,6 @@ There are several types of messages that pass through an organization. The follo
 
 [Use mail flow rules to inspect message attachments in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
-[Email encryption in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption)
+[Email encryption in Office 365](../../compliance/email-encryption.md)
 
 [Journal, transport, and inbox rule limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

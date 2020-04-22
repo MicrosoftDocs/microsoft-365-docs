@@ -20,6 +20,8 @@ description: "File plan manager provides advanced management capabilities for re
 
 # Overview of file plan manager
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition. 
 
 To access file plan manager in the security and compliance center, go to **Records management** > **File plan**.
@@ -28,11 +30,7 @@ To access file plan manager in the security and compliance center, go to **Recor
 
 ## Accessing file plan manager
 
-There are two requirements to access file plan manager, they are:
-
-- An Office 365 Enterprise E5 subscription.
-
-- The user has been in assigned one of the following roles in the security and compliance center:
+To access file plan manager, must have one of the following admin roles:
     
     - Retention Manager
     
@@ -128,7 +126,7 @@ To import new retention labels and modify existing retention labels:
 
    ![Blank file plan template open in Excel](../media/file-plan-blank-template.png)
 
-3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template.<br/>
+3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template. For import, each value has a maximum length of 64 characters. <br/>
 
    |**Property**|**Type**|**Valid values**|
    |:-----|:-----|:-----|
@@ -149,7 +147,7 @@ To import new retention labels and modify existing retention labels:
    |CitationUrl|String|This property specifies the URL that's displayed in the **Provision/citation** file plan descriptor.|
    |CitationJurisdiction|String|This property specifies the jurisdiction or agency that's displayed in the **Provision/citation** file plan descriptor; for example, "U.S. Securities and Exchange Commission (SEC)".|
    |Regulatory|String|Leave blank. This property isn't used at this time.|
-   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that if you export labels from one Office 365 organization, you can't use the values for the EventType  property from that organization when importing labels to a different Office 365 organization. That because the EventType values are unique to an organization. |
+   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that if you export labels from one organization, you can't use the values for the EventType  property from that organization when importing labels to a different organization. That because the EventType values are unique to an organization. |
    |||
 
    Here's an example the template containing the information about retention labels.

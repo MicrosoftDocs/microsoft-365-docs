@@ -1,5 +1,5 @@
 ---
-title: "Prepare for Office client deployment by Microsoft 365 Business"
+title: "Prepare for Office client deployment by Microsoft 365 for business"
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -23,11 +23,11 @@ ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: "Learn how to automatically install the 32-bit Office apps on Windows 10 computers and keep them updated."
 ---
 
-# Prepare for Office client deployment by Microsoft 365 Business
+# Prepare for Office client deployment by Microsoft 365 for business
 
 ## Prepare to automatically install Office apps to client computers
 
-You can use Microsoft 365 Business to automatically install the 32-bit Office apps on Windows 10 computers and keep them current with updates.
+You can use Microsoft 365 for business to automatically install the 32-bit Office apps on Windows 10 computers and keep them current with updates.
   
 Automatic installation works best if the end user's computer is on Windows 10 Business and:
   
@@ -45,15 +45,15 @@ To determine if you have the Click-to-Run version of Office, in any Office app g
   
 The end user whose PC:
   
-- **Has**  a Windows 10 Business user license, an active Microsoft 365 Business license, Windows 10 Creators Update, and is joined to Azure Active Directory. 
+- **Has**  a Windows 10 Business user license, an active Microsoft 365 for business license, Windows 10 Creators Update, and is joined to Azure Active Directory. 
     
-- **Doesn't have** 64-bit Office apps (example: Word, Excel, PowerPoint). If 64-bit Office apps are required, then this feature isn't a good fit because there's no support for triggering a 64-bit 2016 Click-to-Run version of Office from the Microsoft 365 Business admin console. 
+- **Doesn't have** 64-bit Office apps (example: Word, Excel, PowerPoint). If 64-bit Office apps are required, then this feature isn't a good fit because there's no support for triggering a 64-bit 2016 Click-to-Run version of Office from the Microsoft 365 for business admin console. 
     
-- **Doesn't have** any 2016 Windows Installer (MSI) standalone apps (for example, Visio or Project). Microsoft 365 Business upgrades Office to the Click-to-Run version of Office 2016 and that doesn't work with Office 2016 MSI standalone apps. 
+- **Doesn't have** any 2016 Windows Installer (MSI) standalone apps (for example, Visio or Project). Microsoft 365 for business upgrades Office to the Click-to-Run version of Office 2016 and that doesn't work with Office 2016 MSI standalone apps. 
     
-The following table shows what action the end users/admins may need to take, depending on their beginning state, to have a successful 32-bit Click-to-Run version of Office deployment from the Microsoft 365 Business admin console.
+The following table shows what action the end users/admins may need to take, depending on their beginning state, to have a successful 32-bit Click-to-Run version of Office deployment from the Microsoft 365 for business admin console.
   
-|**Starting Office install status**|**Action to take before Microsoft 365 Business Office install**|**End state**|
+|**Starting Office install status**|**Action to take before Microsoft 365 for business Office install**|**End state**|
 |:-----|:-----|:-----|
 |No Office suite installed  <br/> |None  <br/> |Office 2016 32-bit is installed by using Click-to-Run  <br/> |
 |Existing Click-to-Run 32-bit version of Office (2016 or earlier) and no standalone apps  <br/> |None  <br/> |Upgraded to the latest 32-bit Click-to-Run version of Office 2016, as needed **\*** <br/> |

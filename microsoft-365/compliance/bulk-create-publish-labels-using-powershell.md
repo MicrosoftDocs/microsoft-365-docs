@@ -20,6 +20,8 @@ description: "In Office 365, you can use retention labels to implement a retenti
 
 # Bulk create and publish retention labels by using PowerShell
 
+>*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
+
 In Office 365, you can use retention labels to implement a retention schedule for your organization. As a record manager or compliance officer, you might have hundreds of retention labels to create and publish. You can do this through the UI in the Security &amp; Compliance Center, but creating retention labels one at a time is time-consuming and inefficient.
   
 By using the script and .csv files provided below, you can bulk create retention labels and publish retention label policies. First you create a list of the retention labels and a list of the retention label policies in Excel, and then you use PowerShell to bulk create the retention labels and retention label policies in those lists. This makes it easier to create and publish all of the retention labels that your retention schedule requires at one time.
@@ -88,17 +90,17 @@ Copy and paste the below PowerShell script into Notepad. Save the file by using 
 ```
 <#
 . Steps: Import and Publish Compliance Tag
-	○ Load compliance tag csv file 
-	○ Validate csv file input
+    ○ Load compliance tag csv file 
+    ○ Validate csv file input
     ○ Create compliance tag
     ○ Create compliance policy
-	○ Publish compliance tag for the policy
+    ○ Publish compliance tag for the policy
     ○ Generate the log for tags creation
     ○ Generate the csv result for the tags created and published
 . Syntax
-	.\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
+    .\Publish-ComplianceTag.ps1 [-LabelListCSV <string>] [-PolicyListCSV <string>] 
 . Detailed Description
-	1) [-LabelListCSV <string>]
+    1) [-LabelListCSV <string>]
     -LabelListCSV ".\SampleInputFile_LabelList.csv"
     Load compliance tag for creation.
     2) [-PolicyListCSV <string>]
@@ -336,7 +338,7 @@ Function CreateComplianceTag
     }
     catch
     {
-	    WriteToLog -Type "Failed" "Error in input"
+        WriteToLog -Type "Failed" "Error in input"
     }
 }
 # -------------------
@@ -709,7 +711,7 @@ if ($ResultCSV)
 
 Follow the steps here:
   
-- [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
+- [Connect to Security &amp; Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=799771)
     
 ## Step 5: Run the PowerShell script to create and publish the retention labels
 

@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -62,7 +62,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
 
 ::: moniker-end
     
-2. Go to the **Settings** > **Domains** page. 
+2. Go to the **Setup** > **Domains** page. 
 
 3. Select **Add domain**.
     
@@ -70,7 +70,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
     
 5. Choose how you want to verify that you own the domain.
     
-    1. If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Office 365 [will set up your records automatically](../get-help-with-domains/domain-connect.md).
+    1. If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Microsoft[will set up your records automatically](../get-help-with-domains/domain-connect.md).
     
     2. You can have an email sent to the registered contact for the domain with a verification code. If you don't recognize or have access to the email on record, you can use the third option.
     
@@ -107,4 +107,4 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
 
 [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.md)
+[Get help with domains](../get-help-with-domains/get-help-with-domains.md)
