@@ -39,6 +39,7 @@ It is important to understand that PCI DSS compliance status for Azure, OneDrive
 - Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Graph
 - Intune
+- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - OneDrive for Business and SharePoint Online (United States only)
