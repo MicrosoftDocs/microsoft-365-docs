@@ -34,7 +34,7 @@ With Explorer (or real-time detections), you have a powerful report that enables
 
 With this report, you can:
 
-- [See malware detected by Office 365 security features](#see-malware-detected-in-email-by-technology)
+- [See malware detected by Microsoft 365 security features](#see-malware-detected-in-email-by-technology)
 - [View data about phishing URLs and click verdict](#view-data-about-phishing-urls-and-click-verdict)
 - [Start an automated investigation and response process from a view in Explorer](#start-automated-investigation-and-response) (ATP Plan 2 only)
 - ... [Investigate malicious email, and more](#more-ways-to-use-explorer-or-real-time-detections)!
@@ -51,7 +51,7 @@ These new features are outlined below.
 
 ### Preview email header and download email body
 
-The ability to preview an email header and download the email body are new features available in Threat Explorer. Admins will be able to analyze downloaded headers/email messages for threats. Because downloading email messages can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, *Preview*, must be added to another Office 365 role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
+The ability to preview an email header and download the email body are new features available in Threat Explorer. Admins will be able to analyze downloaded headers/email messages for threats. Because downloading email messages can risk the exposure of information, this process is controlled by roles-based access control (RBAC). A new role, *Preview*, must be added to another role group (such as Security Operations or Security Administrator) to grant the ability to download mails and preview headers in all-email messages view.
 
 But Explorer (and real-time detections) also adds fresh new fields designed to give you a more complete picture of where your email messages land. Part of the goal of this change is to make hunting easier for Security Ops people, but the net result is knowing the location of problem email messages at a glance.
 
@@ -112,7 +112,7 @@ You can get to the same location in the real-time detections report as follows:
 
 ## See malware detected in email by technology
 
-Suppose you want to see malware detected in email, by Office 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or real-time detections).
+Suppose you want to see malware detected in email, by Microsoft 365 technology. To do this, use the [Email > Malware](threat-explorer-views.md#email--malware) view of Explorer (or real-time detections).
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
@@ -171,7 +171,7 @@ Suppose that you want to see email messages that users in your organization have
 
 1. In the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)), choose **Threat management** > **Explorer** (or **Real-time detections**). (This example uses Explorer.)
 
-2. In the **View** menu, choose **Email** > **Submissions**. (This was formerly called **User-reported**.)
+2. In the **View** menu, choose **Email** > **Submissions**.
 
    ![View menu for Explorer](../../media/explorer-view-menu-email-user-reported.png)
 
@@ -225,7 +225,7 @@ To view and use Explorer or real-time detections, you must have appropriate perm
 
 To learn more about roles and permissions, see the following resources:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
 ## Some differences between Threat Explorer and real-time detections
@@ -235,4 +235,4 @@ To learn more about roles and permissions, see the following resources:
 - An **All email** view is available in **Threat Explorer** (and is not in the **real-time detections** report).
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
-For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

@@ -1,5 +1,5 @@
 ---
-title: "Decision based on the results in Office 365 Advanced eDiscovery"
+title: "Decision based on the results in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: "Learn how the Decide tab in Office 365 Advanced eDiscovery provides data that can help you determine the correct size of the review set of case files. "
+description: "Learn how the Decide tab in Advanced eDiscovery provides data that can help you determine the correct size of the review set of case files. "
 ---
 
 # Decision based on the results in Advanced eDiscovery (classic)

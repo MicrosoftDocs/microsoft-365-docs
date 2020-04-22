@@ -35,6 +35,7 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 
 ::: moniker range="o365-worldwide"
 
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
 2. On the **Products & services** page, find the subscription that you want to reactivate. In the **Billing** section, select **Reactivate**.
@@ -43,12 +44,12 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 
 3. Confirm your payment details. You can update your existing payment information here. When you're finished entering your payment method, select **Reactivate**.
 
-    - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, follow the steps to [Turn Recurring billing on or off](renew-your-subscription.md).
+      - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, [turn Recurring billing on](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > The ability to pay by bank account isn't available in some countries or regions.
   
-    - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
+      - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
 
 ::: moniker-end
 
@@ -64,12 +65,12 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 
 3. Enter your payment details. You can update your existing payment information here.
 
-    - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, follow the steps to [Turn Recurring billing on or off](renew-your-subscription.md).
+      - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, [turn Recurring billing on](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > The ability to pay by bank account isn't available in some countries or regions.
   
-    - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
+      - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
 
 ::: moniker-end
 
@@ -85,11 +86,11 @@ If your subscription expires, or was disabled by Microsoft, or if you cancelled 
 
 3. Enter your payment details. You can update your existing payment information here.
 
-    - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, follow the steps to [Turn Recurring billing on or off](renew-your-subscription.md).
+  - If your subscription was expired, then after you submit your payment details, your subscription returns to an active state, and the **Next billing** date extends by either one month or one year, depending on your current subscription commitment. If you pay by credit card or bank account, your credit card or bank account will be charged for the extension. If you pay by invoice, you'll see the extension reflected on your next invoice. To make sure that your subscription doesn't expire again, [turn Recurring billing on](renew-your-subscription.md#turn-recurring-billing-off-or-on).
 
     > [!NOTE]
     > The ability to pay by bank account isn't available in some countries or regions.
   
-    - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
+  - If your subscription was cancelled, or was disabled because a payment wasn't received, it returns to an active state, and your **Next billing** date stays the same.
 
-  ::: moniker-end
+::: moniker-end

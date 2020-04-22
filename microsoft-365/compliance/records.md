@@ -103,6 +103,9 @@ Record versioning is automatically available for any document that has a retenti
 
 ![Record status property on document tagged as a record](../media/recordversioning8.png)
 
+> [!NOTE]
+> Record versioning requires an Office 365 Enterprise E5 license for each user who has permissions to edit content that's been declared a record in a SharePoint site or OneDrive account. Users who have read-only access don't require this license.
+
 ### Locking and unlocking a record
 
 After a record label is assigned to a document, any user with Contribute permissions or a narrower permission level can unlock a record or lock an unlocked record.
@@ -148,7 +151,7 @@ The Preservation Hold library is visible only to site collection admins. Also, t
 
 ### Searching the audit log for record versioning events
 
-The actions of locking and unlocking records are logged in the Office 365 audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the **Audit log search** page in the security and compliance center.
+The actions of locking and unlocking records are logged in the audit log. You can search for the specific activities **Changed record status to locked** and **Changed record status to unlocked**, which are located in the **File and page activities** section in the **Activities** dropdown list on the **Audit log search** page in the security and compliance center.
 <br/><br/>
 
 ![Search the audit log for record versioning events](../media/recordversioning13.png)

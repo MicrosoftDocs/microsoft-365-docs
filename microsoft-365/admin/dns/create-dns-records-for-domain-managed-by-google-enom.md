@@ -26,7 +26,7 @@ description: "Learn to access eNom and create DNS through the Google Domains pag
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
-To migrate your mail accounts to Office 365, you need to create a DNS record at your domain registrar.
+To migrate your mail accounts to Microsoft, you need to create a DNS record at your domain registrar.
   
 If you purchased your domain through Google while signing up for your **Google Apps for Work** account, your DNS records are managed by Google but registered with eNom. 
   
@@ -84,7 +84,7 @@ You can access eNom, and create DNS, through the Google **Domains** page. Just f
     |@  <br/> ||TXT  <br/> |
 
     > [!NOTE]
-    > This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365. 
+    > This is an example. Use your specific **Destination or Points to Address** value here, from the table. 
   
     [How do I find this?](../get-help-with-domains/information-for-dns-records.md)
   
