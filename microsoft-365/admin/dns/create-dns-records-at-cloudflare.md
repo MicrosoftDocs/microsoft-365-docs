@@ -43,7 +43,7 @@ To learn about webhosting and DNS for websites with Office 365, see [Use a publi
   
 When you signed up for Cloudflare, you added a domain by using the Cloudflare **Setup** process. 
   
-The domain that you added was purchased from Cloudflare or a separate domain registrar. To verify and create DNS records for your domain in Office 365, you first need to change the nameservers at your domain registrar so that they use Cloudflare's nameservers.
+The domain that you added was purchased from Cloudflare or a separate domain registrar. To verify and create DNS records for your domain in Microsoft 365, you first need to change the nameservers at your domain registrar so that they use Cloudflare's nameservers.
   
 To change your domain's name servers at your domain registrar's website yourself, follow these steps.
   
