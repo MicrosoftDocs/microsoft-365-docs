@@ -29,7 +29,7 @@ description: "Find your invoice or billing statement in the Microsoft 365 admin 
 
 # View your bill or invoice
 
-This article is for people who have an Office 365 for business subscription. You must be a Global Admin or Billing Admin to do the steps described in this article.
+This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
 If you need help interpreting the charges you see on your bill, see [Understand your invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
@@ -45,10 +45,23 @@ If you found this video helpful, check out the [complete training series for sma
   
 ## View a bill or invoice
 
+::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
 
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.
+
+::: moniker-end
 
 2. Select a date range from the drop-down list, and then choose the order you want to view.
 

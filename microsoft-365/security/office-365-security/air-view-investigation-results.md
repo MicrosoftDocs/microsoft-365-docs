@@ -1,5 +1,5 @@
 ---
-title: "View the results of an automated investigation in Office 365"
+title: "View the results of an automated investigation in Microsoft 365"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
@@ -14,10 +14,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "During and after an automated investigation in Office 365, you can view the results and key findings."
+description: "During and after an automated investigation in Microsoft 365, you can view the results and key findings."
 ---
 
-# Details and results of an automated investigation in Office 365
+# Details and results of an automated investigation in Microsoft 365
 
 When an [automated investigation](office-365-air.md) occurs in [Office 365 Advanced Threat Protection](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
@@ -41,7 +41,7 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details of an investigation
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Do one of the following:
 
@@ -61,9 +61,9 @@ The investigation status indicates the progress of the analysis and actions. As 
 
 ## View details about an alert related to an investigation
 
-Certain kinds of alerts trigger automated investigation in Office 365. To learn more, see [Alerts](automated-investigation-response-office.md#alerts). Use the following procedure to view details about an alert that is associated with an automated investigation.
+Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [Alerts](automated-investigation-response-office.md#alerts). Use the following procedure to view details about an alert that is associated with an automated investigation.
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in. 
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in. 
 
 2. Go to **Threat management** > **Investigations**.
 
@@ -210,7 +210,7 @@ You can:
 
 |Analyzer | Description |
 |-----|-----|
-|DLP violations investigation |Investigate any violations detected by [Office 365 Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
+|DLP violations investigation |Investigate any violations detected by [Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
 |Email indicators extraction |Extract indicators from the header, body, and content of an email message for investigation |
 |File Hash Reputation |Detect anomalies based on file hashes for users and machines in your organization |
 |Mail cluster identification |Email cluster analysis based on header, body, content, and URLs |

@@ -53,7 +53,6 @@ There are two different methods for automatically applying a sensitivity label:
     
     Specific to auto-labeling for SharePoint and OneDrive:
     - Maximum of 25,000 automatically labeled files (Word, PowerPoint, or Excel) in your tenant per day
-        - Maximum of 5 automatically labeled files per licensed user per day
     - Maximum of 10 sites collections across all policies
     - Maximum of 10 policies across your tenant
 
@@ -137,7 +136,7 @@ For more information about these classifers, see [Getting started with trainable
 
 During the preview period, the following apps support classifers for sensitivity labels:
 
-- Office 365 ProPlus desktop apps for Windows, from [Office Insider](https://office.com/insider):
+- Microsoft365 Apps for enterprise desktop apps for Windows, from [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
@@ -148,7 +147,7 @@ During the preview period, the following apps support classifers for sensitivity
     - PowerPoint
     - Outlook
 
-### Recommend that the user applies a sensitivity label in Office apps
+### Recommend that the user applies a sensitivity label
 
 If you prefer, you can recommend to your users that they apply the label. With this option, your users can accept the classification and any associated protection, or dismiss the recommendation if the label isn't suitable for their content.
 
@@ -158,7 +157,7 @@ Here's an example of a prompt from the Azure Information Protection unified labe
 
 ![Prompt to apply a recommended label](../media/Sensitivity-label-Prompt-for-required-label.png)
 
-### When automatic or recommended labels are applied in Office apps
+### When automatic or recommended labels are applied
 
 The implementation of automatic and recommended labeling in Office apps depend on whether you're using labeling that's built into Office, or the Azure Information Protection unified labeling client. In both cases, however:
 
@@ -188,7 +187,7 @@ Specific to the Azure Information Protection unified labeling client:
 
 ### Prerequisites for auto-labeling policies
 
-- Auditing for Office 365 must be turned on for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Auditing for Microsoft 365 must be turned on for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -198,9 +197,10 @@ Specific to the Azure Information Protection unified labeling client:
     - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
-- One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policy. For these labels:
+- One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
     - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
+    - If the labels apply encryption, they must be configured for the **Apply permissions now** setting.
 
 ### Learn about simulation mode
 
@@ -235,6 +235,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 2. Select the **Auto-labeling (preview)** tab:
     
     ![Auto-labeling (preview) tab](../media/auto-labeling-tab.png)
+    
+    This new tab is still rolling out to tenants. If you don't see it, try again in a few days.
 
 3. Select **+ Create policy**.
 
@@ -288,5 +290,4 @@ You can also see the results of your auto-labeling policy by using [content expl
 
 > [!TIP]
 > You can also use content explorer to identify locations that have unlabeled documents that contain sensitive information. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
-
 

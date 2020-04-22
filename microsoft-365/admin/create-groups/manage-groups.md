@@ -1,5 +1,5 @@
 ---
-title: "Manage Office 365 group in the admin center"
+title: "Manage a group in the admin center"
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
-description: "Learn to manage Office 365 groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
+description: "Learn to manage Microsoft 365 groups, including adding remove group members, editing the email address, group name, or description, and customizing how the group works."
 ---
 
-# Manage an Office 365 group in the Microsoft 365 admin center
+# Manage a group in the Microsoft 365 admin center
 
-After you have [created an Office 365 group](create-groups.md) and added group members, you can configure your group. You can edit the group name or description, manage owners or members, and specify whether external senders can email the group and whether to send copies of group conversations to members. 
+After you have [created a Microsoft 365 group](create-groups.md) and added group members, you can configure your group. You can edit the group name or description, manage owners or members, and specify whether external senders can email the group and whether to send copies of group conversations to members. 
 
 ## Edit the group name or description
 
@@ -187,14 +187,14 @@ This option is great if you want to have a company email address such as info@co
 
 ## Related articles
 
-[Create an Office 365 group](create-groups.md)
+[Create a Microsoft 365 group](create-groups.md)
 
-[Manage guest access to Office 365 groups](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Manage guest access to Microsoft 365 groups](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
 
-[Choose the domain to use when creating Office 365 Groups](choose-domain-to-create-groups.md)
+[Choose the domain to use when creating Microsoft 365 groups](choose-domain-to-create-groups.md)
 
-[Allow members to send as or send on behalf of an Office 365 Group](allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[Allow members to send as or send on behalf of a Microsoft 365 group](allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
-[Upgrade distribution lists to Office 365 Groups](../manage/upgrade-distribution-lists.md)
+[Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Office 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Manage Microsoft 365 groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
