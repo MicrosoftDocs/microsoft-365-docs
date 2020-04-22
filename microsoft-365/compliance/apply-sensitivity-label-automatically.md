@@ -234,6 +234,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 2. Select the **Auto-labeling (preview)** tab:
     
     ![Auto-labeling (preview) tab](../media/auto-labeling-tab.png)
+    
+    This new tab is still rolling out to tenants. If you don't see it, try again in a few days.
 
 3. Select **+ Create policy**.
 
@@ -268,6 +270,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 10. Back on the **Set up rules to define what content is labeled** page: Select **+ Create rule** again if you need another rule to identify the content to label, and repeat the previous step. When you have defined all the rules you need, and confirmed their status is on, select **Next**.
 
 11. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
+    
+    If you choose a label that applies encryption, it must be configured for the **Apply permisisons now** setting. 
 
 12. For the **Choose a mode for the policy** page: Select **Test it out** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave it turned off**. Select **Next**. 
 
