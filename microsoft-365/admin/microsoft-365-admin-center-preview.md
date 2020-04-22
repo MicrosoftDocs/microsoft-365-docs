@@ -23,8 +23,18 @@ description: "Learn about the new Microsoft 365 admin center."
 # About the new Microsoft 365 admin center
 
 The new Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
-  
-The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers will work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) later in this article. 
+
+::: moniker range="o365-worldwide"
+
+The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers will work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) later in this article.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed at [https://portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813). Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers will work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) later in this article.
+
+::: moniker-end
   
 As new features become available in the Microsoft 365 admin center, you'll be able to opt in to the new admin center and share your feedback with Microsoft so that we can continue to improve the admin experience. If you opt in, there will be no impact to your users, and you can switch back to the old admin center at any time.
 [What's new in the NEW Microsoft 365 admin center](whats-new-in-preview.md).
@@ -36,9 +46,18 @@ As new features become available in the Microsoft 365 admin center, you'll be ab
 We would love for you to participate in the new Microsoft 365 admin center so you can prepare for change and give us feedback.
 
 ### Turn on Targeted release
+::: moniker range="o365-worldwide"
 
 1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** \> **Organization profile**.
-    
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Sign in at [portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), go to the navigation pane and select **Settings** \> **Organization profile**.
+
+::: moniker-end
+
 2. Go to the **Release preferences** card, and then select **Edit**. 
     
 3.  Select either **Targeted release for everyone** or **Targeted release for selected users**. If you choose Targeted release for selected users, make sure that you add your admin account (and any other admins in your org who want to participate) to the list of selected users.
