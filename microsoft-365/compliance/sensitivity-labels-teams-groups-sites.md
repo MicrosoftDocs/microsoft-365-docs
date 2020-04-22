@@ -23,7 +23,7 @@ description: "Use sensitivity labels to protect content in SharePoint and Micros
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Microsoft 365 groups, and SharePoint sites. Use the following label settings to help protect the content in those containers:
+When you create sensitivity labels in the [Microsoft 365 compliance center](https://protection.office.com/), you can now apply them to the following containers: Microsoft Teams sites, Microsoft 365 groups (formerly Office 365 groups), and SharePoint sites. Use the following label settings to help protect the content in those containers:
 
 - Privacy (public or private) of Microsoft 365 group-connected teams sites
 - External users access
@@ -74,7 +74,7 @@ If you need help with creating or editing a sensitivity label, see the instructi
 
 On this new **Site and group settings** page, configure the settings:
 
-- **Privacy of Microsoft 365 group-connected teams sites**: The default setting of **None - let user chose who can access the site** is currently rolling out to tenants. Keep this default setting when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
+- **Privacy of Office 365 group-connected teams sites**: The default setting of **None - let user chose who can access the site** is currently rolling out to tenants. Keep this default setting when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
     
     Select **Public** or**Private** to set and lock the privacy setting when you apply this label to the container. Choose **Public** if you want anyone in your organization to access the team site or group where this label is applied, or **Private** if you want access to be restricted to only approved members in your organization. 
     
