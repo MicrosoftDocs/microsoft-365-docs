@@ -33,8 +33,8 @@ Learn about resources available for admins.
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Office 365 will become Microsoft 365</h3>
-                        <p>We're changing some of our Office 365 and Microsoft 365 subscription names. You don't need to do a thing. Your services, apps and features are staying the same, along with the price of your subscription. Your subscription name will automatically update in the Microsoft 365 admin center and your billing statements will update on or after April 21st, 2020.</p>
+                        <h3>Office 365 is now Microsoft 365</h3>
+                        <p>We've changed some of our Office 365 and Microsoft 365 subscription names. You don't need to do a thing. Your services, apps and features are staying the same, along with the price of your subscription. Your subscription name will automatically update in the Microsoft 365 admin center and your billing statements will update on or after April 21st, 2020.</p>
                         <ul>
                             <li><p><b>Office 365 Business Essentials</b> is now <b>Microsoft 365 Business Basic</b>.</p></li>
                             <li><p><b>Office 365 Business Premium</b> is now <b>Microsoft 365 Business Standard</b>.</p></li>
