@@ -60,7 +60,7 @@ The following section covers known issues in the current release of Compliance M
 
 ### Dimension values
 
-As a result of data migration in the April 2020 release, some organizations may see a **Product** or **Certification** value of "custom" on their assessments and templates. This value was inserted automatically if those fields were blank prior to the migration. The "custom" value will not have any affect on data workflows.
+As a result of data migration during the April 2020 release, some organizations may see a **Product** or **Certification** value of "custom" in their assessments and templates. This value was inserted automatically if the **Product** or **Certification** fields were blank, and there won't be an effect on data workflows.
 
 ### Compliance Score
 
