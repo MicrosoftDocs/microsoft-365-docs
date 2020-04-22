@@ -76,7 +76,7 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 By default, Global Administrators do not have access to communication compliance features. [Permissions must be configured](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) so that Contoso IT administrators and compliance specialists have access to communication compliance.
 
-1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Office 365.
+1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
 2. After selecting **Create**, they give the new role group a friendly name of "*Communication compliance*" and select **Next**.
 3. They select **Choose roles** and then select **Add**. They add the required roles by selecting the checkbox for *Supervisory Review Administrator*, *Case Management*, *Compliance Administrator*, and *Review*, then they select **Add**, **Done,** and **Next**.
 
@@ -136,7 +136,7 @@ After selecting **Show all**, the Contoso IT administrators can access the commu
 
 To get started with a communication compliance policy, there are several prerequisites that Contoso IT administrators need to configure before setting up the new policy to monitor for offensive language. After these prerequisites have been completed, Contoso IT administrators and compliance specialists can configure the new policy and compliance specialists can start investigation and remediating any generated alerts.
 
-### Enabling auditing in Office 365
+### Enabling auditing in Microsoft 365
 
 Communication compliance requires audit logs to show alerts and track remediation actions taken by reviewers. The audit logs are a summary of all activities associated with a defined organizational policy or anytime there is a change to a communication compliance policy.
 
@@ -149,7 +149,7 @@ Contoso compliance specialists want to add all employee to the communication pol
 They need to create a new group to include all Contoso employees, so they take the following steps:
 
 1. Contoso IT administrators IT sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Groups** > **Groups**.
-2. They select **Add a group** and complete the wizard to create a new *Office 365 group* or *Distribution group*.
+2. They select **Add a group** and complete the wizard to create a new *Microsoft 365 group* or *Distribution group*.
 
 ![Groups](../media/communication-compliance-case-all-employees.png)
 

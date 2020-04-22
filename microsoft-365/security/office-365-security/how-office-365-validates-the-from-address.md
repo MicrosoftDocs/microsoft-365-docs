@@ -1,5 +1,5 @@
 ---
-title: "How Office 365 validates the From address to prevent phishing"
+title: "How Microsoft 365 validates the From address to prevent phishing"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: "Lear about the requirements on From email addresses for inbound messages in Office 365. As of November 2017, the service now requires RFC-compliant From addresses to help prevent spoofing."
+description: "Lear about the requirements on From email addresses for inbound messages in Microsoft 365. As of November 2017, the service now requires RFC-compliant From addresses to help prevent spoofing."
 ---
 
-# How Office 365 validates the From address to prevent phishing
+# How Microsoft 365 validates the From address to prevent phishing
 
-Office 365 email accounts receive an increasingly large number of phishing attacks. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Office 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
+Microsoft 365 email accounts receive an increasingly large number of phishing attacks. In addition to using [spoofed (forged) sender email addresses](anti-spoofing-protection.md), attackers often use values in the From address that violate internet standards. To help prevent this type of phishing, Microsoft 365 and Outlook.com now require inbound messages to include an RFC-compliant From address as described in this topic. This enforcement was enabled in November 2017.
 
 **Notes**:
 
@@ -70,31 +70,31 @@ The following From email addresses are valid:
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
-- `From: "Office 365" <sender@contoso.com>`
+- `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Office 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)
+- `From: Microsoft 365 <sender@contoso.com>` (Not recommended because the display name is not enclosed in double quotation marks.)
 
 The following From email addresses are invalid:
 
-- **No From address**: Some automated messages don't include a From address. In the past, when Office 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:
+- **No From address**: Some automated messages don't include a From address. In the past, when Microsoft 365 or Outlook.com received a message without a From address, the service added the following default From: address to make the message deliverable:
 
   `From: <>`
 
   Now, messages with a blank From address are no longer accepted.
 
-- `From: Office 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
+- `From: Microsoft 365 sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
 
-- `From: "Office 365" <sender@contoso.com> (Sent by a process)` (Text after the email address.)
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Text after the email address.)
 
 - `From: Sender, Example <sender.example@contoso.com>` (The display name contains a comma, but is not enclosed in double quotation marks.)
 
-- `From: "Office 365 <sender@contoso.com>"` (The whole value is incorrectly enclosed in double quotation marks.)
+- `From: "Microsoft 365 <sender@contoso.com>"` (The whole value is incorrectly enclosed in double quotation marks.)
 
-- `From: "Office 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (The display name is present, but the email address is not enclosed in angle brackets.)
 
-- `From: Office 365<sender@contoso.com>` (No space between the display name and the left angle bracket.)
+- `From: Microsoft 365<sender@contoso.com>` (No space between the display name and the left angle bracket.)
 
-- `From: "Office 365"<sender@contoso.com>` (No space between the closing double quotation mark and the left angle bracket.)
+- `From: "Microsoft 365"<sender@contoso.com>` (No space between the closing double quotation mark and the left angle bracket.)
 
 ## Suppress auto-replies to your custom domain
 
@@ -110,16 +110,16 @@ For example:
 noreply.contoso.com IN MX .
 ```
 
-For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+For more information about setting up MX records, see [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 For more information about publishing a null MX, see [RFC 7505](https://tools.ietf.org/html/rfc7505).
 
 ## Override From address enforcement
 
-To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+To bypass the From address requirements for inbound email, you can use the IP Allow List (connection filtering) or mail flow rules (also known as transport rules) as described in [Create safe sender lists in Microsoft 365](create-safe-sender-lists-in-office-365.md).
 
-You can't override the From address requirements for outbound email that you send from Office 365. In addition, Outlook.com will not allow overrides of any kind, even through support.
+You can't override the From address requirements for outbound email that you send from Microsoft 365. In addition, Outlook.com will not allow overrides of any kind, even through support.
 
-## Other ways to prevent and protect against cybercrimes in Office 365
+## Other ways to prevent and protect against cybercrimes in Microsoft 365
 
-For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../../admin/security-and-compliance/secure-your-business-data.md).
+For more information on how you can strengthen your organization against phishing, spam, data breaches, and other threats, see [Top 10 ways to secure Microsoft 365 for business plans](../../admin/security-and-compliance/secure-your-business-data.md).

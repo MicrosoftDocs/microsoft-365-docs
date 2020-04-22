@@ -116,10 +116,10 @@ In this workflow step, you identify your compliance requirements and configure a
 
 You can choose from the following policy templates in the Microsoft 365 compliance center:
 
-- **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in Threat, Profanity, and Harassment classifiers to automatically detect content that may be considered abusive or offensive.
+- **Offensive language and anti-harassment**: Use this template to quickly create a policy that uses the built-in classifier to automatically detect content that may be considered abusive or offensive.
 - **Sensitive information**: Use this template to create a policy to scan communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access.
 - **Regulatory compliance**: Use this template to create a policy to scan communications for references to standard financial terms associated with regulatory standards.
-- **Custom policy**: Use this template to configure specific communication channels, classifiers, individual detection conditions, and the amount of content to review for supervision in your organization.
+- **Custom policy**: Use this template to configure specific communication channels, individual detection conditions, and the amount of content to review for supervision in your organization.
 
 ### Investigate
 
@@ -146,7 +146,7 @@ The next step is to remediate communication compliance issues you've investigate
 
 Keeping track and managing compliance issues identified by communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates, and new policies may need to be created.
 
-- **Monitor and report**: Use communication compliance dashboards, reports, export logs, and events recorded in the unified Office 365 audit logs to continually evaluate and improve your compliance posture.
+- **Monitor and report**: Use communication compliance dashboards, reports, export logs, and events recorded in the unified audit logs to continually evaluate and improve your compliance posture.
 
 ## Ready to get started?
 

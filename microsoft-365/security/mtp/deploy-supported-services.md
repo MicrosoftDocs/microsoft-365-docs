@@ -57,7 +57,7 @@ The table below lists how each supported service provides additional data, oppor
 | Service | Data (signals & correlated info) | Remediation & response scope |
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | - Endpoint states and raw events<br />- Endpoint detections and alerts, including antivirus, EDR, attack surface reduction<br />- Info on files and other entities observed on endpoints | Endpoints |
-| Office 365 ATP | - Mail and mailbox states and raw events<br />- Email, attachment, and link detections | - Mailboxes<br />- Office 365 accounts |
+| Office 365 ATP | - Mail and mailbox states and raw events<br />- Email, attachment, and link detections | - Mailboxes<br />- Microsoft 365 accounts |
 | Azure ATP | - Active Directory signals, including authentication events<br />- Identity-related behavioral detections | Identities |
 | Microsoft Cloud App Security | - Detection of unsanctioned cloud apps and services (shadow IT)<br />- Exposure of data to cloud apps<br />- Threat activity associated with cloud apps | Cloud apps |
 

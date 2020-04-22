@@ -1,5 +1,5 @@
 ---
-title: "Create a report on holds in eDiscovery cases in Office 365"
+title: "Create a report on holds in eDiscovery cases"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,7 +18,7 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: "Use the script in this article to generate a report that contains information about all the holds that are associated with eDiscovery cases in the compliance center in Office 365 or Microsoft 365."
 ---
 
-# Create a report on holds in eDiscovery cases in Office 365
+# Create a report on holds in eDiscovery cases
   
 The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the the compliance center in Office 365 or Microsoft 365. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
