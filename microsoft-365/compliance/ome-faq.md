@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 12/03/2019
+ms.date: 04/13/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -104,15 +104,18 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
   
 ## Are PDF file attachments supported?
 
-Yes! You can enable encryption for PDF attachments for your organizations. To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
+The short answer is yes! PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send email, the Office 365 service encrypts PDF file attachments not the Outlook client. 
+
+Once you've enabled PDF file attachment encryption, you can encrypt PDFs you send without any additional steps from Outlook on the web, Outlook for iOS, and Outlook for Android.
+
+Outlook desktop does not natively support encryption of PDF file attachments. To work around this, you can still enable PDF file attachment encryption in your organization. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
+
+To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. For all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Also, if an Outlook on the web user attaches an unprotected PDF document and applies protection to message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
-
-  
 ## Are OneDrive for Business attachments supported?
 
 Not yet. OneDrive for Business attachments are not supported and end-users can't encrypt a mail that contains a cloud OneDrive for Business attachment.
