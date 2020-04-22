@@ -54,7 +54,7 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Products & services</a> page.
 
 2. Find the subscription to which you want to add licenses. Select the **More actions** drop-down list, and then choose **Renew or add license with token**.
 
@@ -73,7 +73,7 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+1. In the admin center, go to the **Billing** \>  <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Products & services</a> page.
 
 2. Find the subscription to which you want to add licenses. Select the **More actions** drop-down list, and then choose **Renew or add license with token**.
 
@@ -111,7 +111,7 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Your products</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Products & services</a> page.
 
 2. Find the subscription which you want to extend. Select the **More actions** drop-down list, and then select **Renew or add license with token**.
 
@@ -130,7 +130,7 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Your products</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Products & services</a> page.
 
 2. Find the subscription which you want to extend. Select the **More actions** drop-down list, and then select **Renew or add license with token**.
 

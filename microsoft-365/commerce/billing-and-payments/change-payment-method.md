@@ -59,9 +59,9 @@ When you buy Office 365 for business, you choose to pay by credit card or bank a
 > [!NOTE]
 > After you switch payment methods, your users will continue to have the same license assignments as before.
   
- **Want to change your payment frequency?** If you want to change how frequently you pay for your subscription, either from annual to monthly or monthly to annual, you'll need to [call Office 365 support](../../admin/contact-support-for-business-products.md) for help.
+ **Want to change your payment frequency?** If you want to change how frequently you pay for your subscription, either from annual to monthly or monthly to annual, you'll need to [call Microsoft support](../../admin/contact-support-for-business-products.md) for help.
   
- **Just want to change your credit card or bank account information?** See [Add, update, or remove a credit card or bank account in Office 365 for business](add-update-or-remove-credit-card-or-bank-account.md).
+ **Just want to change your credit card or bank account information?** See [Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md).
   
  **What if I have an outstanding balance?**
   
@@ -138,10 +138,10 @@ You can change to pay by invoice only if your order is above a certain quantity.
 
 If your order quantity is too high, a credit check might be required. If so, you see the message "Not eligible to change to invoice. Your order requires a credit check." In this case, you change to pay by invoice manually. Use the following steps to complete the manual change.
 
-1. Go to <a href="https://Office365.com" target="_blank">Office365.com</a> and buy the same subscription as the one you currently have. At check-out, choose the option to pay by invoice.
+1. Go to <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> and buy the same subscription as the one you currently have. At check-out, choose the option to pay by invoice.
 
-> [!IMPORTANT]
-> You can't use the **Your products** page in the admin center to buy the subscription. You must use  <a href="https://Office365.com" target="_blank">Office365.com</a>.
+    > [!IMPORTANT]
+    > You can't use the **Your products** page in the admin center to buy the subscription. You must use  <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
 
 2. After the purchase is complete, cancel the original subscription. Your users are automatically moved to the new subscription.
 
@@ -170,7 +170,7 @@ If no credit check is required, use the following steps to change to paying by i
 ## Change from credit card or bank account to invoice
 
 > [!NOTE]
-> The option to pay by invoice is only available if your subscription costs over a certain amount (which varies by service location). A credit check might be required for larger invoice payments. To learn more, see [Pay for your Office 365 for business subscription](pay-for-your-subscription.md).
+> The option to pay by invoice is only available if your subscription costs over a certain amount (which varies by service location). A credit check might be required for larger invoice payments. To learn more, see [Pay for your subscription](pay-for-your-subscription.md).
 
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
 
@@ -196,6 +196,12 @@ You can use the following steps at any time to verify the payment method that's 
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to verify. The payment method that's configured for the subscription appears in the **Billing** section.
+
+### Use the old admin center to verify which payment method is configured
+
+1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
+
+2. Find the subscription that you want to verify. The payment method that's configured for the subscription appears under **Payment method**.
 
 ::: moniker-end
 

@@ -43,22 +43,22 @@ Then they configured additional permission settings for the site to prevent rese
 
 ## Step 2: Configured the site for a restrictive DLP policy
 
-First, Contoso admins applied the existing **Highly Confidential** Office 365 retention label to the Documents folder of the **Research** site.
+First, Contoso admins applied the existing **Highly Confidential** retention label to the Documents folder of the **Research** site.
 
-Next, they created a new Office 365 DLP policy named **Research** that:
+Next, they created a new DLP policy named **Research** that:
 
-- Uses the **Highly Confidential** Office 365 retention label. 
+- Uses the **Highly Confidential** retention label. 
 - Blocks users when they attempt to share a digital asset on the **Research** site outside of Contoso.
 
 For the configuration details, see [Protect SharePoint files with retention labels and DLP](https://docs.microsoft.com/office365/enterprise/protect-sharepoint-online-files-with-office-365-labels-and-dlp).
 
-## Step 3: Created an Office 365 sensitivity sublabel for the site
+## Step 3: Created a sensitivity sublabel for the site
 
-Contoso admins created a new Office 365 sensitivity sublabel named **Research Teams** of the **Highly Confidential** label that:
+Contoso admins created a new sensitivity sublabel named **Research Teams** of the **Highly Confidential** label that:
 
 - Requires encryption.
-- Allows Co-Author permissions for the **Research** Office 365 group
-- Applies to the **Research** Office 365 group
+- Allows Co-Author permissions for the **Research** Microsoft 365 group
+- Applies to the **Research** Microsoft 365 group
 
 Here is the resulting configuration of the **Research** team site for highly confidential assets.
 
@@ -66,7 +66,7 @@ Here is the resulting configuration of the **Research** team site for highly con
 
 Files in folders of the **Research** site are protected by:
 
-- The site permissions, which only allow access to members of the **Research** Office 365 group.
+- The site permissions, which only allow access to members of the **Research** Microsoft 365 group.
 - The **Research** DLP policy, which uses the **Highly Confidential** retention label and settings that prevent the file from being shared with external users.
 - The **Research Teams** sensitivity sublabel, with encryption and permissions that travel with the file if it is moved or copied from the **Research** site.
 
@@ -81,7 +81,7 @@ Contoso admins moved all of the on-premises research files in the on-premises Sh
 
 ## Step 5: Trained their researchers
 
-Contoso security staff trained the members of the **Research** Office 365 group in a mandatory course that stepped them through:
+Contoso security staff trained the members of the **Research** Microsoft 365 group in a mandatory course that stepped them through:
 
 - How to access the new **Research** site and its existing files.
 - How to create new files on the site and upload new files stored locally.
@@ -91,7 +91,7 @@ Contoso security staff trained the members of the **Research** Office 365 group 
 
 The end result is a secure environment in which the researchers can collaborate across Contoso in a secure environment on files containing research information. 
 
-If a research document with the **Research Teams** sublabel leaves the **Research** site, it is encrypted and accessible only to members of the **Research** Office 365 group with valid user account credentials.
+If a research document with the **Research Teams** sublabel leaves the **Research** site, it is encrypted and accessible only to members of the **Research** Microsoft 365 group with valid user account credentials.
 
 ## Next step
 

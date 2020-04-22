@@ -54,7 +54,7 @@ When generally available, EDM-based classification will be included in these sub
 |---------|---------|
 |[Part 1: Set up EDM-based classification](#part-1-set-up-edm-based-classification)<br/><br/>(As needed)<br/>- [Edit the database schema](#editing-the-schema-for-edm-based-classification) <br/>- [Remove the schema](#removing-the-schema-for-edm-based-classification) |- Read access to the sensitive data<br/>- Database schema in .xml format (example provided)<br/>- Rule package in .xml format (example provided)<br/>- Admin permissions to the Security & Compliance Center (using PowerShell) |
 |[Part 2: Index and upload the sensitive data](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(As needed)<br/>[Refresh the data](#refreshing-your-sensitive-information-database) |- Custom security group and user account<br/>- Local admin access to machine with EDM Upload Agent<br/>- Read access to the sensitive data<br/>- Process and schedule for refreshing the data|
-|[Part 3: Use EDM-based classification with your Microsoft cloud services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Office 365 subscription with DLP<br/>- EDM-based classification feature enabled |
+|[Part 3: Use EDM-based classification with your Microsoft cloud services](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Microsoft 365 subscription with DLP<br/>- EDM-based classification feature enabled |
 
 ### Part 1: Set up EDM-based classification
 
@@ -96,7 +96,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
       </EdmSchema>
       ```
 
-4. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 5. To upload the database schema, run the following cmdlets, one at a time:
 
@@ -129,7 +129,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
 
-2. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 3. To update your database schema, run the following cmdlets, one at a time:
 
@@ -158,7 +158,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 (As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
-1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 2. Run the following PowerShell cmdlets, substituting the data store name of "patientrecords" with the one you want to remove:
 
@@ -384,7 +384,7 @@ $csvext = '.csv'
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
-$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ‘ /HashLocation’ + $hashLocation
+$uploadDataArgs = '/UploadData /DataStoreName ' + $dataStoreName + ' /DataFile ' + $dataFile + ' /HashLocation' + $hashLocation
 \# Set up actions associated with the task
 $actions = @()
 $actions += New-ScheduledTaskAction -Execute $edmuploader -Argument $uploadDataArgs -WorkingDirectory $edminstallpath
@@ -441,11 +441,11 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
 
-Office 365 DLP for Exchange Online (email), OneDrive for Business (files), Microsoft Teams (conversations) and Microsoft Cloud App Security DLP policies will support EDM sensitive information types.
+DLP for Exchange Online (email), OneDrive for Business (files), Microsoft Teams (conversations) and Microsoft Cloud App Security DLP policies will support EDM sensitive information types.
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 
-- Office 365 DLP for SharePoint (files)
+- DLP for SharePoint (files)
 - Auto-classification of sensitivity labels and retention labels
 
 #### To create a DLP policy with EDM
