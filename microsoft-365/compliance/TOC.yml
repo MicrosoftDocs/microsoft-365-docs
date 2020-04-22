@@ -263,14 +263,14 @@
       items: 
         - name: Learn about retention policies
           href: retention-policies.md
+        - name: Create and configure retention policies
+          href: create-retention-policies.md
         - name: Retention for SharePoint and OneDrive
           href: retention-policies-sharepoint.md
         - name: Retention for Microsoft Teams
           href: retention-policies-teams.md
         - name: Retention for Exchange
           href: retention-policies-exchange.md
-        - name: Create and configure retention policies
-          href: create-retention-policies.md
         - name: File plan manager
           href: file-plan-manager.md
         - name: Learn about retention labels
