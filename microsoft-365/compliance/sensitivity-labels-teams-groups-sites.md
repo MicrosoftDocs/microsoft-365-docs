@@ -251,7 +251,7 @@ Other apps and services that you can't currently use the sensitivity labels that
 
 ## Classic Azure AD group classification
 
-Microsoft 365 no longer supports the old classifications for new Office 365 groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classification values unless you convert them to use sensitivity labels.
+Microsoft 365 no longer supports the old classifications for new Microsoft 365 groups and SharePoint sites when you enable this preview. However, existing groups and sites still display the old classification values unless you convert them to use sensitivity labels.
 
 As an example of how you might have used the old group classification for SharePoint, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
@@ -294,7 +294,7 @@ Although you can't prevent users from creating new groups in apps and services t
     Get-Label |ft Name, Guid
     ```
 
-3. Make a note of the GUIDs for the sensitivity labels you want to apply to your Office 365 groups.
+3. Make a note of the GUIDs for the sensitivity labels you want to apply to your Microsoft 365 groups.
 
 4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
