@@ -1,5 +1,5 @@
 ---
-title: "Export report fields in Office 365 Advanced eDiscovery"
+title: "Export report fields in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox

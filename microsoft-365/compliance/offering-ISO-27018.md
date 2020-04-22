@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## ISO/IEC 27018 overview
 
-The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world’s largest developer of voluntary international standards. The ISO/IEC 27000 family of standards helps organizations of every type and size keep information assets secure.
+The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world's largest developer of voluntary international standards. The ISO/IEC 27000 family of standards helps organizations of every type and size keep information assets secure.
 
 In 2014, the ISO adopted ISO/IEC 27018:2014, an addendum to ISO/IEC 27001, the first international code of practice for cloud privacy. Based on EU data-protection laws, it gives specific guidance to cloud service providers (CSPs) acting as processors of personally identifiable information (PII) on assessing risks and implementing state-of-the-art controls for protecting PII.
 
@@ -31,8 +31,8 @@ At least once a year, Microsoft Azure and Azure Germany are audited for complian
 By following the standards of ISO/IEC 27001 and the code of practice embodied in ISO/IEC 27018, Microsoft — the first major cloud provider to incorporate this code of practice — demonstrates that its privacy policies and procedures are robust and in line with its high standards.
 
 - **Customers of Microsoft cloud services know where their data is stored.** Because ISO/IEC 27018 requires certified CSPs to inform customers of the countries in which their data may be stored, Microsoft cloud service customers have the visibility they need to comply with any applicable information security rules.
-- **Customer data won’t be used for marketing or advertising without explicit consent.** Some CSPs use customer data for their own commercial ends, including for targeted advertising. Because Microsoft has adopted ISO/IEC 27018 for its in-scope enterprise cloud services, customers can rest assured that their data will never be used for such purposes without explicit consent, and that consent cannot be a condition for use of the cloud service.
-- **Microsoft customers know what’s happening with their PII.** ISO/IEC 27018 requires a policy that allows for the return, transfer, and secure disposal of personal information within a reasonable period of time. If Microsoft works with other companies that need access to your customer data, Microsoft proactively discloses the identities of those sub-processors.
+- **Customer data won't be used for marketing or advertising without explicit consent.** Some CSPs use customer data for their own commercial ends, including for targeted advertising. Because Microsoft has adopted ISO/IEC 27018 for its in-scope enterprise cloud services, customers can rest assured that their data will never be used for such purposes without explicit consent, and that consent cannot be a condition for use of the cloud service.
+- **Microsoft customers know what's happening with their PII.** ISO/IEC 27018 requires a policy that allows for the return, transfer, and secure disposal of personal information within a reasonable period of time. If Microsoft works with other companies that need access to your customer data, Microsoft proactively discloses the identities of those sub-processors.
 - **Microsoft complies only with legally binding requests for disclosure of customer data.** If Microsoft must comply with such a request — as in the case of a criminal investigation — it will always notify the customer unless it is prohibited by law from doing so.
 
 Learn about the benefits of ISO-Iec-27018 on the Microsoft Cloud: [Download the ISO/IEC 27017 backgrounder](https://aka.ms/iso27017-backgrounder)
@@ -41,7 +41,7 @@ Learn about the benefits of ISO-Iec-27018 on the Microsoft Cloud: [Download the 
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Cloud App Security
-- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Office 365
+- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Microsoft 365 for business
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Genomics
 - Graph
@@ -101,7 +101,7 @@ This code of practice applies to CSPs that process PII under contract for other 
 
 In the context of ISO/IEC 27018:
 
-- 'Controllers' control the collection, holding, processing, or use of personal information; they include those who control it on another company’s behalf.
+- 'Controllers' control the collection, holding, processing, or use of personal information; they include those who control it on another company's behalf.
 - 'Processors' process information on behalf of controllers; they do not make decisions as to how to use the information or the purposes of the processing. In providing its enterprise cloud services, Microsoft — as a vendor to you — is an information processor.
 
 **Where can I view Microsoft compliance information for ISO/IEC 27018?**
@@ -110,15 +110,15 @@ In the context of ISO/IEC 27018:
 - You can also review ISO/IEC 27001 certificates from BSI upon which ISO/IEC 27018 certification is based for [Dynamics 365](https://aka.ms/Dynamics-CRM-Online-Cert), [Office 365](https://aka.ms/Office365-Cert), and [Azure DevOps Services](https://go.microsoft.com/fwlink/p/?linkid=2062159).
 - To review the BSI reports, the independent auditor that validated Microsoft compliance with ISO/IEC 27018, visit the [Service Trust Portal](https://aka.ms/stphelp).
 
-**Can I use Microsoft’s compliance in my organization’s certification process?**
+**Can I use Microsoft's compliance in my organization's certification process?**
 
-Yes. If compliance with ISO/IEC 27018 is important for your business and implementations deployed on any of Microsoft in-scope enterprise cloud services, you can use Microsoft’s attestation of compliance with ISO/IEC 27018 with Microsoft’s certification for ISO/IEC 27001 in your compliance assessment.
+Yes. If compliance with ISO/IEC 27018 is important for your business and implementations deployed on any of Microsoft in-scope enterprise cloud services, you can use Microsoft's attestation of compliance with ISO/IEC 27018 with Microsoft's certification for ISO/IEC 27001 in your compliance assessment.
 
 However, you are responsible for engaging an assessor to evaluate your implementation for compliance, and for the controls and processes within your own organization.
 
 ## Use Microsoft Compliance Score to assess your risk
 
-[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [ISO 27018 template](https://go.microsoft.com/fwlink/?linkid=2117523) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [ISO 27018 template](https://go.microsoft.com/fwlink/?linkid=2117523) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
 
 ## Resources
 

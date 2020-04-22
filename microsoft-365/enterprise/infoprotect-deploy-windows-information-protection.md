@@ -46,6 +46,6 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![Step 5](../media/stepnumbers/Step5.png)|[Configure Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md)|
+|![Step 5](../media/stepnumbers/Step5.png)|[Configure Data Loss Prevention](infoprotect-data-loss-prevention.md)|
 
 

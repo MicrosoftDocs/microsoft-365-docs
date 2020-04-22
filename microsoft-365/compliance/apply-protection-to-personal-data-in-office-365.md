@@ -1,5 +1,5 @@
 ---
-title: "Apply protection to personal data in Office 365"
+title: "Apply protection to personal data"
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,15 +18,15 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use data loss prevention (DLP) policies to protect personal data in Office 365."
+description: "Learn how to use data loss prevention (DLP) policies to protect personal data in Microsoft 365."
 ---
-# Apply protection to personal data in Office 365
+# Apply protection to personal data
 
-Protection of personal information in Office 365 includes using data loss prevention capabilities. With data loss prevention (DLP) policies in the compliance center, you can identify, monitor, and automatically protect sensitive information across Office 365.
+Protection of personal information in Microsoft 365 includes using data loss prevention capabilities. With data loss prevention (DLP) policies in the compliance center, you can identify, monitor, and automatically protect sensitive information across Microsoft 365.
 
 This topic describes how to use DLP to protect personal data. This topic also lists other protection capabilities that can be used to achieve GDPR compliance, including setting permissions in SharePoint libraries and using device access policies.
 
-## Apply protection using data loss prevention in Office 365
+## Apply protection using data loss prevention in Microsoft 365
 
 With DLP, you can:
 
@@ -36,7 +36,7 @@ With DLP, you can:
 
 -   Help users learn how to stay compliant without interrupting their workflow.
 
--   View DLP reports showing content that matches your organization’s DLP policies.
+-   View DLP reports showing content that matches your organization's DLP policies.
 
 For more information, see [Overview of data loss prevention policies](https://support.office.com/article/Overview-of-data-loss-prevention-policies-1966b2a7-d1e2-4d92-ab61-42efbb137f5e).
 
@@ -56,9 +56,9 @@ This illustration shows the options for creating a DLP policy:
 
 ### Using DLP for GDPR compliance
 
-One of the primary uses of Office 365 DLP is to identify personal data related to EU data subjects in your Office 365 environment. Office 365 DLP can notify your compliance teams of where personal information is stored in SharePoint Online and OneDrive for Business, or when users send email containing personal information. DLP can also provide policy tips to your employees when working with personal information related to EU residents.
+One of the primary uses of Microsoft 365 DLP is to identify personal data related to EU data subjects in your Microsoft 365 environment. Microsoft 365 DLP can notify your compliance teams of where personal information is stored in SharePoint Online and OneDrive for Business, or when users send email containing personal information. DLP can also provide policy tips to your employees when working with personal information related to EU residents.
 
-Educating and raising awareness to where EU resident data is stored in your environment and how your employees are permitted to handle it represents one level of information protection using Office 365 DLP. Often, employees who already have access to this type of information require this access to do their day to day work. Enforcing DLP policies to help comply with GDPR may not require restricting access.
+Educating and raising awareness to where EU resident data is stored in your environment and how your employees are permitted to handle it represents one level of information protection using Microsoft 365 DLP. Often, employees who already have access to this type of information require this access to do their day to day work. Enforcing DLP policies to help comply with GDPR may not require restricting access.
 
 However, complying with GDPR typically involves a risk-based assessment of the organization from both a legal and information security perspective, identification of what type and where personal information is stored, as well as if there's a legal justification to store and process that information. Based on this assessment, implementing policies to protect the organization and comply with GDPR might require removing access for employees to documents that contain personal information for EU data subjects. In cases where further protection is required, additional DLP protection can be configured.
 
@@ -126,26 +126,26 @@ Description: Display policy tips to employees, notify compliance teams when this
 </tr>
 <tr class="even">
 <td align="left">Locations</td>
-<td align="left">All locations in Office 365</td>
+<td align="left">All locations in Microsoft 365</td>
 </tr>
 <tr class="odd">
 <td align="left">Find content that contains</td>
-<td align="left">Click ‘Edit’ and add all the sensitive information types you curated for your environment.</td>
+<td align="left">Click 'Edit' and add all the sensitive information types you curated for your environment.</td>
 </tr>
 <tr class="even">
 <td align="left">Detect when this content is shared</td>
-<td align="left">Check this box and select ‘with people outside my organization.’</td>
+<td align="left">Check this box and select 'with people outside my organization.'</td>
 </tr>
 <tr class="odd">
 <td align="left">Notify users when content matches the policy settings</td>
-<td align="left"><p>Check this box (“Show policy tips to users and send them an email notification.”)</p>
-<p>Click ‘Customize the tip and email’ and update these for your environment. See the default notifications in this article: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Send email notifications and show policy tips for DLP policies</a>.</p></td>
+<td align="left"><p>Check this box ("Show policy tips to users and send them an email notification.")</p>
+<p>Click 'Customize the tip and email' and update these for your environment. See the default notifications in this article: <a href="https://support.office.com/article/Send-email-notifications-and-show-policy-tips-for-DLP-policies-87496bc5-9601-4473-8021-cb05c71369c1?ui=en-US&amp;rs=en-US&amp;ad=US">Send email notifications and show policy tips for DLP policies</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left">Detect when a specific amount of sensitive info is being shared at one time</td>
-<td align="left"><p>‘Detect when content that’s being shared contains: At least ____ instances of the same sensitive info type’ — Set this to 1.</p>
-<p>‘Send incident reports in email’ — check this box. Click ‘Choose what to include in the report and who receives it.’ Be sure to add your compliance team.</p>
-<p>‘Restrict who can access the content and override the policy’ — clear this checkbox to receive notifications about sensitive information without preventing users from access that information.</p></td>
+<td align="left"><p>'Detect when content that's being shared contains: At least ____ instances of the same sensitive info type' — Set this to 1.</p>
+<p>'Send incident reports in email' — check this box. Click 'Choose what to include in the report and who receives it.' Be sure to add your compliance team.</p>
+<p>'Restrict who can access the content and override the policy' — clear this checkbox to receive notifications about sensitive information without preventing users from access that information.</p></td>
 </tr>
 </tbody>
 </table>
@@ -158,9 +158,9 @@ All locations includes:
 
 - Exchange mailboxes
 
-Because Content Search doesn’t currently let you test sensitive information types with email, consider creating separate policies for Exchange with a subset of sensitive information types in each policy and monitoring the rollout of these policies.
+Because Content Search doesn't currently let you test sensitive information types with email, consider creating separate policies for Exchange with a subset of sensitive information types in each policy and monitoring the rollout of these policies.
 
-## Additional protection you can apply to protect personal data in Office 365
+## Additional protection you can apply to protect personal data in Microsoft 365
 
 Sensitive information types, labels, and data loss protection policies help you identify documents containing specific data and apply protection. However, these protections depend on appropriate permissions being set for access to data, users with accounts that aren't compromised, and devices that are healthy.
 
@@ -183,7 +183,7 @@ For accessibility, the following table provides the same information in the illu
 <td align="left"><p>Sensitive information types</p>
 <p>Office labels</p>
 <p>Data loss prevention policies</p>
-<p>Office 365 Message Encryption for email</p></td>
+<p>Microsoft 365 Message Encryption for email</p></td>
 </tr>
 <tr class="even">
 <td align="left">Site and library-level protection (includes SharePoint Online and OneDrive for Business sites)</td>
@@ -192,7 +192,7 @@ For accessibility, the following table provides the same information in the illu
 <p>Site-level device access policies</p></td>
 </tr>
 <tr class="odd">
-<td align="left">Service access protection (includes access to all services in Office 365)</td>
+<td align="left">Service access protection (includes access to all services in Microsoft 365)</td>
 <td align="left"><p>Identity and device access protection in Enterprise Mobility + Security (EMS) suite</p>
 <p>Privileged access management</p>
 <p>Windows 10 security capabilities</p></td>
@@ -206,7 +206,7 @@ The rest of this article provides more information on each of these categories o
 
 You can use the following capabilities in an environment configured for GDPR compliance. These capabilities are not necessary for GDPR compliance, but they can be used without adversely affecting your ability to discover, protect, monitor, and report on data related to GDPR compliance.
 
-Customer Key — Allows customers to provide and retain control over the encryption keys that are used to encrypt data at rest within Office 365. Recommended only for customers with a regulatory need to manage their own encryption keys.
+Customer Key — Allows customers to provide and retain control over the encryption keys that are used to encrypt data at rest within Microsoft 365. Recommended only for customers with a regulatory need to manage their own encryption keys.
 
 Customer Lockbox — Customer lockbox allows you to control how a Microsoft support engineer accesses your data, if needed, to fix a technical issue on a case by case basis. You can control whether to give the support engineer access to your data or not. An expiration time is provided with each request.
 
@@ -253,7 +253,7 @@ More information:
 
 Many organizations allow external sharing to support collaboration. Find out how your tenant-wide settings are configured. Then review the external sharing settings for sites that contain personal data.
 
-An external user is someone outside of your organization who is invited to access your SharePoint Online sites and documents but doesn't have a license for your SharePoint Online or Microsoft Office 365 subscription.
+An external user is someone outside of your organization who is invited to access your SharePoint Online sites and documents but doesn't have a license for your SharePoint Online or Microsoft Microsoft 365 subscription.
 
 External sharing policies apply to both SharePoint Online and OneDrive for Business.
 
@@ -273,7 +273,7 @@ The following table summarizes the controls you can configure.
 <tbody>
 <tr class="odd">
 <td align="left">Type of sharing</td>
-<td align="left"><p>Don’t allow sharing outside your organization (can be set for individual site collections)</p>
+<td align="left"><p>Don't allow sharing outside your organization (can be set for individual site collections)</p>
 <p>Allow sharing to authenticated external users only (allow new or limit to existing, can be set for individual site collections)*</p>
 <p>Allow sharing to external users with an anonymous access link (can be set for individual site collections)</p>
 <p>Limit external sharing using domains (allow and deny list)</p>
@@ -282,7 +282,7 @@ The following table summarizes the controls you can configure.
 </tr>
 <tr class="even">
 <td align="left">What external users can do</td>
-<td align="left"><p>Prevent external users from sharing files, folders, sites they don’t own</p>
+<td align="left"><p>Prevent external users from sharing files, folders, sites they don't own</p>
 <p>Require external users to accept sharing invitations with the same account the invitation was sent to</p></td>
 </tr>
 <tr class="odd">
@@ -352,7 +352,7 @@ More information: [SharePoint Online admin center: Control access from unmanaged
 
 ## Service access protection for identities and devices
 
-Microsoft recommends you configure protection for identities and devices that access the service. The work you put into protecting access to Office 365 services can also be used to protect access to other SaaS services, PaaS services, and even apps in other cloud providers.
+Microsoft recommends you configure protection for identities and devices that access the service. The work you put into protecting access to Microsoft 365 services can also be used to protect access to other SaaS services, PaaS services, and even apps in other cloud providers.
 
 Access protection for identities and devices provides a baseline of protection to ensure that identities aren't compromised, devices are safe, and organization data that is accessed on devices is isolated and protected.
 
@@ -360,7 +360,7 @@ For starting point recommendations and configuration guidance, see [Microsoft se
 
 For hybrid identity environments with AD FS, see [Recommended security policies and configurations](https://docs.microsoft.com/microsoft-365-enterprise/microsoft-security-guidance).
 
-The following illustration describes how cloud services (SaaS, PaaS), account types (tenant domain accounts vs. B2B accounts), and service access capabilities relate. It’s important to note which capabilities can be used with B2B accounts.
+The following illustration describes how cloud services (SaaS, PaaS), account types (tenant domain accounts vs. B2B accounts), and service access capabilities relate. It's important to note which capabilities can be used with B2B accounts.
 
 ![Cloud services, account types, and access capabilities](../media/Apply-protection-to-personal-data-in-Office-365-image4.png)
 
@@ -368,11 +368,11 @@ For accessibility, the rest of this section describes this illustration.
 
 ### Cloud services
 
-Azure Active Directory provides identity access to any cloud service, including non-Microsoft providers such as Amazon Web Services. The illustration shows Office 365, “Other SaaS app,” and “PaaS app.” Arrows point from Azure Active Directory to each of these services, showing that Azure Active Directory can be used for authentication to all of these app types.
+Azure Active Directory provides identity access to any cloud service, including non-Microsoft providers such as Amazon Web Services. The illustration shows Microsoft 365, "Other SaaS app," and "PaaS app." Arrows point from Azure Active Directory to each of these services, showing that Azure Active Directory can be used for authentication to all of these app types.
 
 ### Types of accounts
 
-Tenant domain accounts are account you add to your tenant and manage directly. B2B accounts are accounts for users outside your organization you invite to collaborate with. These can be other Office 365 accounts, other organization accounts, or consumer accounts (such as Gmail). The illustration shows both account types within Azure Active Directory.
+Tenant domain accounts are account you add to your tenant and manage directly. B2B accounts are accounts for users outside your organization you invite to collaborate with. These can be other Microsoft 365 accounts, other organization accounts, or consumer accounts (such as Gmail). The illustration shows both account types within Azure Active Directory.
 
 ### Capabilities
 
