@@ -197,9 +197,10 @@ Specific to the Azure Information Protection unified labeling client:
     - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
-- One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policy. For these labels:
+- One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
     - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
+    - If the labels apply encryption, they must be configured for the **Apply permissions now** setting.
 
 ### Learn about simulation mode
 
@@ -234,6 +235,8 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 2. Select the **Auto-labeling (preview)** tab:
     
     ![Auto-labeling (preview) tab](../media/auto-labeling-tab.png)
+    
+    This new tab is still rolling out to tenants. If you don't see it, try again in a few days.
 
 3. Select **+ Create policy**.
 
