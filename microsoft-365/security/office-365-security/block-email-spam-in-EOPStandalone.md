@@ -1,12 +1,12 @@
 ---
-title: "Block email spam in EOP Standalone"
+title: "Customize anti-spam filtering in standalone EOP"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: msfttracyp
+ms.author: chrisda
+author: chrisda
 ms.reviewer: andypunt
 manager: dansimp
-ms.date: 2/25/2019
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,19 +20,19 @@ ms.collection:
 description: "Document for EOP Standalone admins to help prevent spam false negatives"
 ---
 
-# Customize the anti-spam filter with these settings
+# Customize anti-spam filtering in standalone EOP
 
 An Admin can use several spam filter settings to help prevent email spam from being sent to a user inbox. The spam filter will become better able to block email spam and prevent false negative messages if you use the options listed here. In this context, a false negative refers to email spam or junk messages that are getting sent to a user inbox.
 
-## Block IP addresses with a connection filter
+## Block source IP addresses in the default connection filter policy
 
 Customize your spam filter by adding the sender IP address to the connection filter IP block list:
 
 1. Obtain the headers for the message you want to block in your mail client such as Outlook or Outlook on the web (formerly known as Outlook Web App), as described in [View internet message headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
-2. Search for the IP address following the CIP tag in the X-Forefront-Antispam-Report header using the [message header analyzer](https://testconnectivity.microsoft.com/?tabid=mha) or manually.
+2. Search for the IP address following the CIP tag in the **X-Forefront-Antispam-Report** header using the [message header analyzer](https://testconnectivity.microsoft.com/?tabid=mha) or manually.
 
-3. Add the IP address to the IP Block list by following the steps in "Use the EAC to edit the default connection filter policy" in [Configure the Connection Filter Policy](configure-the-connection-filter-policy.md).
+3. Add the IP address to the IP Allow List in the default connection filter policy. For instructions, see [Configure connection filtering](configure-the-connection-filter-policy.md).
 
 ### Block bulk mail with mail flow rules (transport rules) or the spam filter
 
@@ -42,7 +42,7 @@ Is the spam primarily bulk mail, for example, newsletters or promotions? You can
 
 ### Block email spam using spam filter block lists
 
-[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) to add the sender address to the blocked sender list or domain to the blocked domain list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam.
+[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) to add the sender's email address to the blocked sender list or the sender's domain to the blocked domain list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam.
 
 ## Email users can also help ensure that false negative and email spam is blocked with spam filter
 
@@ -53,11 +53,11 @@ It will help your anti-spam efforts to prevent false negatives and junk mail if 
 > [!NOTE]
 > For more detailed information about safe sender lists, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-## EOP-only customers: Set up directory synchronization
+## Standalone EOP customers: Set up directory synchronization
 
 It will help you to avoid false negative email spam if you sync user settings with the service via directory synchronization to ensure that your blocked senders are respected. For more information, see "Use directory synchronization to manage mail users" in Manage mail users in EOP.
 
-## EOP-only customers who are not using directory synchronization
+## Standalone EOP customers who aren't using directory synchronization
 
 The EOP service is designed to honor the user's safe and blocked senders, if the information has been shared with the service. If you are an EOP customer using Outlook, but do not have Directory Synchronization configured to sync your users to Office 365, you can still stop messages from being delivered to your users' inbox using blocked senders. However, you may have to set up some Exchange mail flow rules in the following situations:
 

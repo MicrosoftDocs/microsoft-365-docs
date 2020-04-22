@@ -50,7 +50,7 @@ For more information, see the following topics:
 
 [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md)
 
-[Configure anti- policy](configure-the-connection-filter-policy.md)
+[Configure connection filtering](configure-the-connection-filter-policy.md)
 
 [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
 

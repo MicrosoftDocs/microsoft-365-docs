@@ -36,7 +36,7 @@ To help reduce junk email, EOP includes junk email protection that uses propriet
 
 The anti-spam settings in EOP are made of the following technologies:
 
-- **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering in Microsoft 365](configure-the-connection-filter-policy.md).
+- **Connection filtering**: Identifies good and bad email source servers early in the inbound email connection via the IP Allow List, IP Block List, and the *safe list* (a dynamic but non-editable list of trusted senders maintained by Microsoft). You configure these settings in the connection filter policy. Learn more at [Configure connection filtering](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
   > Spoof intelligence uses connection filtering to create allow and block lists of senders who are spoofing your email domain. For more information, see [Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
