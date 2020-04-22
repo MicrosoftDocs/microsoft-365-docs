@@ -70,6 +70,8 @@ You enable or disable security defaults from the **Properties** pane for Azure A
 
 ![](../../media/benefits-of-multi-factor-authentication/security-defaults-mfa.png)
 
+For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+
 ### Conditional Access
 
 Conditional Access policies are a set of rules that specify the conditions under which sign-ins are evaluated and allowed. For MFA, you can create a Conditional Access policy that states:
@@ -83,6 +85,8 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
 
 ![](../../media/benefits-of-multi-factor-authentication/conditional-access-mfa.png)
+
+For more information, see [What is Conditional Access?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### MFA for an individual user account
 
