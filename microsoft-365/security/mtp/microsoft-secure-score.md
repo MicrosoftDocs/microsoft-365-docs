@@ -133,6 +133,15 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
+### April 21st 2020
+
+#### Removing improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
+
+To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
+
+- Apply IRM protections to documents
+- Apply Data Loss Prevention policies
+
 ### January - March 2020
 
 #### Supporting security defaults for Azure AD improvement actions

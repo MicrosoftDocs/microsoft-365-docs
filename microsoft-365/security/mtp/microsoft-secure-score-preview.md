@@ -149,7 +149,32 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 ## What's new? 
 
-To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
+
+### Adding Azure AD improvement action
+
+Added the following Azure Active Directory improvement action:
+
+- Do not allow users to grant consent to unmanaged applications (currently available in released version)
+
+### Adding Azure ATP improvement actions
+
+Added the following Azure Advanced Threat Protection improvement actions:
+
+- Disable Print spooler service on domain controllers
+- Modify unsecure Kerberos delegations to prevent impersonation
+- Protect and manage local admin passwords with Microsoft LAPS
+- Reduce lateral movement path risk to sensitive entities
+- Remove dormant accounts from sensitive groups
+- Remove unsecure SID history attributes from entities
+- Resolve unsecure account attributes
+- Stop clear text credentials exposure
+- Stop legacy protocols communication
+- Stop weak cipher usage
+
+### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
+
+All released security recommendations supplied by TVM are now available.
 
 ### Updated interface and functionality
 
@@ -169,6 +194,7 @@ For these reasons, all improvement actions that were not scored or required a re
 ### Simplification of the point system
 
 To standardize points across multiple experiences, each Secure Score improvement action point total has been updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.
+
 
 ## We want to hear from you
 
