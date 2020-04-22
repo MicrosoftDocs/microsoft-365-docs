@@ -13,8 +13,9 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-ms.custom: seo-marvel-apr2020
-description: "Learn about reasons why items can't be indexed for search and are returned as partially indexed items when you run a Content Search."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to manage partially indexed (or unindexed) items from Exchange, SharePoint, and OneDrive within your organization.
 ---
 
 # Investigating partially indexed items in Office 365 eDiscovery

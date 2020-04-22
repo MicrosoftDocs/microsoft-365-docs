@@ -13,7 +13,9 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool. Use it to track, assign, and verify regulatory compliance activities related to Microsoft products."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use Compliance Manager to track, assign, and verify regulatory compliance activities related to Microsoft products.
 ---
 
 # Working with Microsoft Compliance Manager (preview)

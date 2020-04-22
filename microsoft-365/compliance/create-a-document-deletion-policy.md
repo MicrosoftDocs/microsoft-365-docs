@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 ms.assetid: 41b2ed73-eb8d-4429-945e-a8197894585a
-description: "Organizations are often required to retain documents for a certain period of time due to compliance, legal, or other regulations. However, retaining documents for longer than required can expose the organization to legal risk."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to create a document deletion policy and how to assign that policy to a site collection in Microsoft 365.
 ---
 
 # Create a document deletion policy

@@ -15,8 +15,9 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
-ms.custom: seo-marvel-apr2020
-description: "In this article, you will find message encryption information for Office 365 organizations with old message encryption (OME) capabilities."
+ms.custom:
+- seo-marvel-apr2020
+description: Understand how to transition legacy files to Office 365 Message Encryption (OME) for your organization. 
 ---
 
 # Legacy information for Office 365 Message Encryption

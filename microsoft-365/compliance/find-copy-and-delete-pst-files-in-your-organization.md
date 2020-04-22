@@ -12,8 +12,7 @@ localization_priority: Normal
 ms.collection: 
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
-ms.custom: seo-marvel-apr2020
-description: "Learn how to use the Microsoft PST collection tool to find, copy, and delete PST files in your organization's network."
+description: Use the Microsoft PST Collection Tool to search your organization's network to get an inventory of PST files that are scattered throughout your organization.
 ms.custom: seo-marvel-apr2020
 ---
 

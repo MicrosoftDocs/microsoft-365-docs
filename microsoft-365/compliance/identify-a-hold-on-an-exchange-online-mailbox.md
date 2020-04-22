@@ -14,7 +14,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: "Learn how to identify the different types of hold that can be placed on an Office 365 mailbox. These types of holds include Litigation Hold, eDiscovery holds, and Office 365 retention policies. You can also determine if a user has been excluded from an organization-wide retention policy"
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to identify the different types of hold that can be placed on an Exchange Online mailbox in Office 365.
 
 ---
 

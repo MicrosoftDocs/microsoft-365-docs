@@ -15,8 +15,9 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn how to customize a built-in sensitive information type to meet your organization specific needs."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to create a custom sensitive information type that will allow you to use rules that meet your organization's needs.
 ---
 
 # Customize a built-in sensitive information type

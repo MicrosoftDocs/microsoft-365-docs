@@ -1,6 +1,6 @@
 ---
 title: "GDPR discovery, protection, and reporting in the Office 365 dev/test environment"
-description: Learn how to configure and demonstrate personally identifiable information (PII) for GDPR an in Office 365 dev/test environment.
+description: Learn how to configure and demonstrate personally identifiable information (PII) for GDPR in an Office 365 dev/test environment.
 f1.keywords:
 - NOCSH
 ms.author: bcarter

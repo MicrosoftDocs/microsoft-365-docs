@@ -16,7 +16,9 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use retention labels to classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use retention labels to classify data across your organization for governance, and enforce retention rules based on that classification.
 ---
 
 # Overview of retention labels

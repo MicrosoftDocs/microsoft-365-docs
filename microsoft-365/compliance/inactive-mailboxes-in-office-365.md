@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: "Learn about retaining mailbox content for former employees by turning the mailbox into an inactive mailbox. You can do this by placing the mailbox on Litigation Hold or applying an Office 365 retention policy to the mailbox and then removing the corresponding Office 365 account."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to retain mailbox content for former employees by turning the mailbox into an inactive mailbox.
 ---
 
 # Overview of inactive mailboxes in Office 365

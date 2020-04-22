@@ -16,8 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-ms.custom: seo-marvel-apr2020
-description: "In this article administrators can learn, how to delete items from the recoverable items folder for cloud-based mailboxes that are on hold."
+description: Learn how to delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold.
 ms.custom: seo-marvel-apr2020
 ---
 

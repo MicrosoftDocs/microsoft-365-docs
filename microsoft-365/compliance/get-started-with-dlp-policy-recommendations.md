@@ -12,8 +12,9 @@ ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
 localization_priority: Normal
-ms.custom: seo-marvel-apr2020
-description: "In this article you will find recommendations that will help your organization keep sensitive content secure when there's a possible gap in your DLP policy coverage."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to create and edit the recommended data loss prevention (DLP) policy for your organization.
 ---
 
 # Get started with DLP policy recommendations

@@ -18,7 +18,9 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "With a data loss prevention (DLP) policy in the Security &amp; Compliance Center, you can identify, monitor, and automatically protect sensitive information across Office 365."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to identify, monitor, and automatically protect your organization's sensitive information across Office 365.
 ---
 
 # Overview of data loss prevention

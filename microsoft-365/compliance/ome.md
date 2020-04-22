@@ -16,7 +16,9 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
-description: "With Office 365 Message Encryption, your organization can send and receive encrypted email messages between people inside and outside your organization. Email message encryption helps ensure that only intended recipients can view message content."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to send and receive encrypted email messages between people inside and outside your organization.
 ---
 
 # Office 365 Message Encryption

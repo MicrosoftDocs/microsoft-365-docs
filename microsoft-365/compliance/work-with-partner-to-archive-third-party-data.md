@@ -11,8 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-ms.custom: seo-marvel-apr2020
-description: "Learn how your organization can work with a Microsoft partner to set up a custom connector to import and archive third-party data from data sources in Office 365."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer. 
 ---
 
 # Work with a partner to archive third-party data in Office 365

@@ -16,9 +16,9 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - SPO_Content
-ms.custom: seo-marvel-apr2020
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: "Learn how to manage GDPR data subject requests with DSR case tool in Security and Compliance Center."
+description: Learn how to manage EU General Data Protection Regulation (GDPR) data subject requests with the DSR case tool.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Manage GDPR data subject requests with the DSR case tool in the Security & Compliance Center

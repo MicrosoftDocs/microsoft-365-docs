@@ -16,8 +16,9 @@ ms.assetid: 09f6737e-f03f-4bc8-8281-e46d24ee2a74
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: seo-marvel-apr2020
-description: "In this article, you will learn how to customize the configuration of your deployment after setting up Office 365 Message Encryption (OME)."
+ms.custom:
+- seo-marvel-apr2020
+description: Once you've finished setting up Office 365 Message Encryption (OME), learn how to customize your deployment in several ways.
 ---
 
 # Manage Office 365 Message Encryption
