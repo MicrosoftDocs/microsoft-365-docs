@@ -30,18 +30,18 @@ Passwords, the most common method of authenticating a sign-in to a computer or o
 
 Even when people choose more difficult passwords, they are still vulnerable to social engineering attacks such as phishing emails. Here’s an example:
 
-1.	The attacker sends an official-looking email requesting that the recipient change their password. 
+1.	The attacker sends an official-looking email requesting that the recipient changes their password. 
 2.	The user clicks on the link in the email, which takes them to a site that looks official and in which they enter their old password and a new one. 
 3.	The attacker now has the user’s password and signs in to their service, such as Microsoft 365 or Office 365, duplicates the password change so the user can still sign in.
 
 At this point, the attacker can begin roaming around your organization’s subscription, looking for sensitive data and trying to gain higher levels of access, and perhaps invite other attackers to do the same.
 
-To provide an additional level of security for sign-ins, you must use multi-factor authentication (MFA), which uses both a password, which must still be as strong as possible, and a secondary authentication method based on:
+To provide an additional level of security for sign-ins, you must use multi-factor authentication (MFA), which uses both a password, which must still be as strong as possible, and an additional verification method based on:
 
 - Something you have with you that is not easily duplicated, such as a smart phone.
 - Something you uniquely and biologically have, such as your fingerprints, face, or other biometric attribute.
 
-The secondary authentication method is not employed until after the user’s password has been verified. With MFA, even if a strong user password is compromised, the attacker does not have your smart phone or your fingerprint to complete the sign-in.
+The additional verification method is not employed until after the user’s password has been verified. With MFA, even if a strong user password is compromised, the attacker does not have your smart phone or your fingerprint to complete the sign-in.
 
 ## MFA in Microsoft 365 and Office 365
 
@@ -50,7 +50,7 @@ By default, both Microsoft 365 and Office 365 support MFA for user accounts usin
 - A text message sent to a phone that requires the user to type a verification code.
 - The Microsoft Authenticator smart phone app.
 
-In both cases, the MFA sign-in is using the “something you have with you that is not easily duplicated” method for the secondary authentication.
+In both cases, the MFA sign-in is using the “something you have with you that is not easily duplicated” method for the additional verification.
 
 There are multiple ways in which you can enable MFA for Microsoft 365 and Office 365:
 
@@ -92,7 +92,7 @@ You enable MFA for individual user accounts from the **Active user** pane of the
 
 ![](../../media/benefits-of-multi-factor-authentication/per-user-mfa.png)
 
-After being enabled, the next time the user signs in, they will be prompted to register for MFA and to choose and test the secondary authentication method.
+After being enabled, the next time the user signs in, they will be prompted to register for MFA and to choose and test the additional verification method.
 
 ### Using these three methods together
 
@@ -103,7 +103,7 @@ Keep in mind the following:
 
 If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app. 
 
-However, if a user has an older phone that can receive text messages but cannot run the Microsoft Authenticator app, you can enable MFA on that user account and have them register using the text code secondary authentication method with these steps:
+However, if a user has an older phone that can receive text messages but cannot run the Microsoft Authenticator app, you can enable MFA on that user account and have them register using the text code additional verification method with these steps:
 
 1. Disable security defaults in the Azure portal.
 2. Enable MFA for the user account in the Microsoft 365 admin center.
