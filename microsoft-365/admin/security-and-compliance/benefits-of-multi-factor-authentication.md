@@ -126,7 +126,7 @@ This table shows the results of enabling MFA with security defaults, Conditional
 
 ## Your next step
 
-[Plan for multi-factor authentication](multi-factor-authentication-plan.md).
+[Plan for multi-factor authentication](multi-factor-authentication-plan.md)
 
 ## Related articles
 
