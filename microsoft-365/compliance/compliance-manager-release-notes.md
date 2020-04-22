@@ -58,6 +58,10 @@ Compliance Manager is now available in the following languages in addition to En
 
 The following section covers known issues in the current release of Compliance Manager.
 
+### Dimension values
+
+As a result of data migration in the April 2020 release, some organizations may see a **Product** or **Certification** value of "custom" on their assessments and templates. This value was inserted automatically if those fields were blank prior to the migration. The "custom" value will not have any affect on data workflows.
+
 ### Compliance Score
 
 - For Action Items marked as **Not in Scope**, the score assigned to the Action Item isn't excluded from the compliance score calculation. Action Items marked **Not in Scope** don't increase your compliance score.
