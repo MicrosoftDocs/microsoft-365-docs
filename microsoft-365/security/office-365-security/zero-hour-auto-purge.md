@@ -25,7 +25,7 @@ description: "Learn about Zero-hour auto purge (ZAP), an email protection featur
 
 # Zero-hour auto purge (ZAP) - protection against spam and malware in Office 365
 
-## Overview
+## Basic features of ZAP
 
 Zero-hour auto purge (ZAP) is an email protection feature in Office 365 that retroactively detects and neutralizes malicious phishing, spam, or malware messages that have already been delivered to Exchange Online mailboxes.
 
