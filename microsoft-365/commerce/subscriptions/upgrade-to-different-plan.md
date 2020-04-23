@@ -58,7 +58,7 @@ When you finish checkout, it might take a few minutes to finalize the upgrade. Y
 
 ## The Upgrade tab is empty
 
-If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md) or [call support](../../admin/contact-support-for-business-products.md). For more information, see [Why can't I upgrade plans?](#why-cant-i-upgrade-plans).
+If the **Upgrade** tab is empty, you'll see an explanation of why you can't upgrade at this time. You can try to [change plans manually](change-plans-manually.md). For more information, see [Why can't I upgrade plans?](#why-cant-i-upgrade-plans).
 
 ## I don't see the plan I want
 
