@@ -50,7 +50,7 @@ Any entity that processes or stores US government CUI — research institutions,
 
 ## How to implement
 
-- [NIST SP 800–171 Blueprint](https://aka.ms/NIST-800-171-Blueprint): Get support for implementing workloads in Azure that comply with NIST SP 800–171.
+- [Azure Blueprint samples](https://docs.microsoft.com/azure/governance/blueprints/samples/): Get support for implementing workloads that comply with NIST-based controls.
 
 ## Frequently asked questions
 
