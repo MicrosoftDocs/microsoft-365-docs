@@ -258,7 +258,6 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Recipient is
     - Attachment's file extension is
     - Attachment is password protected
-    - Document property is
     - Any email attachment's content could not be scanned
     - Any email attachment's content didn't complete scanning
 
@@ -278,13 +277,17 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
-Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Simulation** section. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). Select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Simulation** or **Off** section section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
-You can modify your policy directly from this interface by selecting the **Edit** option at the top of the page, from either tab:
+You can modify your policy directly from this interface:
 
-![Edit auto-labeling policy option](../media/auto-labeling-edit.png)
+- For a policy in the **Off** section, select the **Edit policy** button.
 
-When you're ready to run the policy without simulation, select the **Turn on policy** option.
+- For policy in the **Simulation** section, select the **Edit** option at the top of the page, from either tab:
+    
+    ![Edit auto-labeling policy option](../media/auto-labeling-edit.png)
+    
+    When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 - **Content Explorer List viewer** lets you see a file's label but not the file's contents.
