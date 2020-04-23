@@ -25,4 +25,8 @@ To make [Microsoft Secure Score](microsoft-secure-score.md) a better representat
 
 To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## No upcoming changes
+## May 2020
+
+### Adding Azure ATP improvement actions
+
+- Enable security features on Active Directory trusts
