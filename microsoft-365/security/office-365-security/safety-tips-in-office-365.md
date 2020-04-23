@@ -23,7 +23,7 @@ description: "Introduces safety tips for email messages filtered by the EOP and 
 
 Exchange Online Protection (EOP) and Microsoft 365 protect you with spam, phishing, and malware prevention. Today, some of these attacks are so well crafted that they look legitimate. Sending messages to the Junk Email folder isn't always enough. Now, when you check your email in Outlook or Outlook on the web or any email client, EOP automatically checks the sender and adds a safety tip to the top of the email.
 
-Safety Tips in Outlook doesn't depend on what version of Outlook you're using because we crack open and insert the Safety Tip directly into the message body. That means that whatever email client you're using will show the Safety Tip. It's done at the email filter level and not rendered at the mail client level. And that means that not only does it show up in any version of Outlook, it shows up in any email client.
+Safety tips in Outlook do not depend on what version of Outlook you're using because the safety tip is cracked open and inserted directly into the message body. This means that the safety tip will show up in whatever email client you're using. It's done at the email filter level and not rendered at the mail client level, so not only does it show up in any version of Outlook, it also shows up in any email client.
 
 The safety tip—a color-coded message—will warn you about potentially harmful messages. Most messages in your inbox won't have a safety tip. You'll only see them when EOP and Microsoft 365 have information you need to help prevent spam, phishing, and malware attacks. If safety tips do show up on in your inbox, you can use the following examples to learn more about each type of safety tip.
 
