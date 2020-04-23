@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: 
@@ -27,7 +27,7 @@ description: "Create a shared mailbox to enable multiple users in your business 
 
 > [!NOTE]
 > If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> If you're not sure if you should create a shared mailbox or an Office 365 Group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. Note that currently, it's not possible to migrate a shared mailbox to an Office 365 Group. If this is something you want, let us know by [voting here](https://go.microsoft.com/fwlink/?linkid=871518).
+> If you're not sure if you should create a shared mailbox or a Microsoft 365 group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. Note that currently, it's not possible to migrate a shared mailbox to a Microsoft 365 group. If this is something you want, let us know by [voting here](https://go.microsoft.com/fwlink/?linkid=871518).
 
 It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
@@ -37,7 +37,7 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ## Create a shared mailbox and add members
   
-1. Sign in with an Office 365 global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin. 
+1. Sign in with a global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin. 
 
 ::: moniker range="o365-worldwide"
 
@@ -153,7 +153,7 @@ You can access a shared mailbox on a mobile device in two ways:
     
     For instructions, see <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Add a shared mailbox to Outlook mobile</a>.
 
-- Open your browser, sign in to Office 365, and then go to Outlook on the web. From Outlook on the web you'll be able to access the shared mailbox.
+- Open your browser, sign in, and then go to Outlook on the web. From Outlook on the web you'll be able to access the shared mailbox.
 
     For instructions, see <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Add a shared mailbox to Outlook on the web</a>.
 

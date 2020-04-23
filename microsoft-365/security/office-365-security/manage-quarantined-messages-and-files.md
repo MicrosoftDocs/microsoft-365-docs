@@ -1,5 +1,5 @@
 ---
-title: "Manage quarantined messages and files as an admin in Office 365"
+title: "Manage quarantined messages and files as an admin"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -18,29 +18,29 @@ ms.collection:
 description: "Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (transport rules)."
 ---
 
-# Manage quarantined messages and files as an admin in Office 365
+# Manage quarantined messages and files as an administrator
 
-Quarantine holds potentially dangerous or unwanted messages in Office 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
+Quarantine holds potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
 Admins can view, release, and delete all types of quarantined messages for all users. Only admins can manage messages that were quarantined as malware, high confidence phishing, or as a result of mail flow rules (also known as transport rules). Admins can also report false positives to Microsoft.
 
 Admins in organizations with Office 365 Advance Threat Protection (ATP) can also view, download, and delete quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
-You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Office 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
+You view and manage quarantined messages in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
 
 ## What do you need to know before you begin?
 
-- To open the Office 365 Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
+- To open the Security & Compliance Center, go to <https://protection.office.com>. To open the Quarantine page directly, go to <https://protection.office.com/quarantine>.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center. By default, this role is assigned to the **Organization Management** (Global admins), **Quarantine Administrator**, and **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can manage the quarantine as an admin. The permissions are controlled by the **Quarantine** role in the Security & Compliance Center. By default, this role is assigned to the **Organization Management** (Global admins), **Quarantine Administrator**, and **Security Administrator** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - Quarantined messages are retained for a default period of time before they're automatically deleted:
 
-  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+  - Messages quarantined by anti-spam policies (spam, phishing, and bulk email): 30 days. This is the default and maximum value. To configure this value, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
 
-  - Messages quarantined by mail flow rules (the rule action is **Deliver the message to the hosted quarantine**): 30 days. You can't change this value.
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
   - Messages that contain malware: 15 days.
 
@@ -68,7 +68,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
    - **Policy type**<sup>\*</sup>
 
-   - **Expires**<sup>\*</sup>
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
    - **Recipient**
 
@@ -126,7 +126,7 @@ You view and manage quarantined messages in the Security & Compliance Center or 
 
    - **Subject**: Use the entire subject of the message. The search is not case-sensitive.
 
-   After you've entered the search criteria, click ![Refresh button](../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
+   After you've entered the search criteria, click ![Refresh button](../../media/scc-quarantine-refresh.png) **Refresh** to filter the results.
 
 After you find a specific quarantined message, select the message to view details about it, and to take action on it (for example, view, release, download, or delete the message).
 
@@ -184,7 +184,7 @@ After you select a message, you have several options for what to do with the mes
 
   - Only recipients who haven't received the message will appear in the list of potential recipients.
 
-- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Office 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
+- **View message header**: Choose this link to see the message header text. To analyze the header fields and values in depth, copy the message header text to your clipboard, and then choose **Microsoft Message Header Analyzer** to go to the Remote Connectivity Analyzer (right-click and choose **Open in a new tab** if you don't want to leave Microsoft 365 to complete this task). Paste the message header onto the page in the Message Header Analyzer section, and choose **Analyze headers**:
 
 - **Preview message**: In the flyout pane that appears, choose one of the following options:
 
@@ -329,7 +329,7 @@ When you select multiple quarantined files in the list (up to 100), the **Bulk a
 
 - **Delete files**:  After you click **Yes** in the warning that appears, the files are immediately deleted.
 
-When you're finished, click **Close**.
+1. Using a work or school account that has global administrator privileges (or appropriate Security & Compliance Center roles) in your organization, sign in and [go to the Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md).
 
 ## Use Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to view and manage quarantined messages and files
 

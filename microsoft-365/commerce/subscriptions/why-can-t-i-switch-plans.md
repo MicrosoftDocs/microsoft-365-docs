@@ -1,12 +1,12 @@
 ---
-title: "Why can't I switch Office 365 for business plans?"
+title: "Why can't I switch Microsoft 365 for business plans?"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -25,7 +25,7 @@ ROBOTS: NOINDEX
 description: "Understand the reasons why sometimes switching plans has to be done manually or by calling support."
 ---
 
-# Why can't I switch Office 365 for business plans?
+# Why can't I switch Microsoft 365 for business plans?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]

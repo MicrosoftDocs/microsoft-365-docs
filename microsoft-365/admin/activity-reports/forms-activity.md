@@ -16,7 +16,6 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: "Learn how to get a Microsoft Forms activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
 ---
 
@@ -36,9 +35,9 @@ For example, you can understand the activity of every user licensed to use Micro
     
 2. From the **Select a report** drop-down, select **Forms** \> **activity**.
 
-## Interpret the email activity report
+## Interpret the forms activity report
 
-You can get a view into your user's email activity by looking at the **Activity** and **Users** charts. 
+You can get a view into your user's forms activity by looking at the **Activity** and **Users** charts. 
 
 ![Forms activity report](../../media/adminformsactivity.png)
 

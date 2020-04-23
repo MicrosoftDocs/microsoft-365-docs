@@ -20,9 +20,9 @@ description: Create a secure team to store your most valuable and sensitive file
 
 # Teams for highly regulated data
 
-This article provides you with recommendations and steps to configure a private team in Microsoft Teams that locks down access to Teams features—such as chats, meetings, and files—to only members and owners of the Office 365 group for the team. 
+This article provides you with recommendations and steps to configure a private team in Microsoft Teams that locks down access to Teams features—such as chats, meetings, and files—to only members and owners of the Microsoft 365 group for the team. 
 
-Beyond the private access based on the Office 365 group, this article describes how to configure the underlying private SharePoint team site, which you can access from the **Files** section of a team channel, for the additional security needed to store highly regulated data. On this SharePoint team site, you can store and collaborate on files, pages, a shared calendar, tasks, a notebook, and lists.
+Beyond the private access based on the Microsoft 365 group, this article describes how to configure the underlying private SharePoint team site, which you can access from the **Files** section of a team channel, for the additional security needed to store highly regulated data. On this SharePoint team site, you can store and collaborate on files, pages, a shared calendar, tasks, a notebook, and lists.
 
 >[!Note]
 > A similar scenario using SharePoint is [here](teams-sharepoint-online-sites-highly-regulated-data.md).
@@ -30,13 +30,13 @@ Beyond the private access based on the Office 365 group, this article describes 
 
 The elements of configuration for a team for highly regulated data are:
 
-- A private team with a corresponding Office 365 group that has owner and member user accounts.
+- A private team with a corresponding Microsoft 365 group that has owner and member user accounts.
 - Additional security on the underlying SharePoint site for the team that:
   - Prevents members of the site from granting access to others.
   - Prevents non-members of the site from requesting access to the site.
-- An Office 365 retention label for the underlying SharePoint site that is automatically applied to new files on the site as a default way to define retention policies.
+- A retention label for the underlying SharePoint site that is automatically applied to new files on the site as a default way to define retention policies.
 - A Data Loss Prevention (DLP) policy that uses the retention label and blocks users from sharing or sending files outside the organization.
-- An Office 365 sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Office 365 group of the team. Users apply the label or sublabel to files stored in **Files** section of the team from the **Sensitivity** menu bar option in Word, Excel, and PowerPoint.
+- A sensitivity label or a sublabel of a highly regulated label that has encryption enabled and Co-Author permissions for the Microsoft 365 group of the team. Users apply the label or sublabel to files stored in **Files** section of the team from the **Sensitivity** menu bar option in Word, Excel, and PowerPoint.
 
 Here is the resulting configuration with a sensitivity label.
 
@@ -73,7 +73,7 @@ Use [these instructions](https://support.office.com/article/create-a-team-from-s
 
 When you create a private team, here are the default permissions:
 
-- The Office 365 group for the team (the Team Group) has group owners and group members
+- The Microsoft 365 group for the team (the Team Group) has group owners and group members
 - For the underlying SharePoint site for the team (the Team Site):
   - The Site Collection Administrators is configured for the Team Group owners
   - For the Team Site: 

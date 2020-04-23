@@ -20,7 +20,7 @@ description: Use this Test Lab Guide to add Intune device compliance policies to
 
 *This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
 
-With the instructions in this article, you add an Intune device compliance policy for Windows 10 devices and Office 365 ProPlus to your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you add an Intune device compliance policy for Windows 10 devices and Microsoft 365 Apps for enterprise to your Microsoft 365 Enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -75,7 +75,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
 
 17. In the **Add App** pane, select **App Suite Information**.
  
-18. In the **App Suite Information** pane, type **Office 365 ProPlus** in both **Suite Name** and **Suite Description**.
+18. In the **App Suite Information** pane, type **Microsoft 365 Apps for enterprise** in both **Suite Name** and **Suite Description**.
 Click OK.
 
 19. In the **Add App** pane, select **Configure App Suite**, and then click **OK**.

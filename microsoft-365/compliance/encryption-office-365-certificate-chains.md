@@ -1,5 +1,5 @@
 ---
-title: "Office 365 encryption chains"
+title: "Encryption chains"
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -19,7 +19,7 @@ ms.collection:
 description: "View a complete list of root certificates and certificate authorities (CAs) in Office 365."
 ---
 
-# Office 365 encryption chains
+# Encryption chains
 
 Office 365 leverages a number of different certificate providers. The following describes the complete list of known Office 365 root certificates that customers may encounter when accessing Office 365. For information on the certificates you may need to install in your own infrastructure, see [Plan for third-party SSL certificates for Office 365](https://docs.microsoft.com/office365/enterprise/plan-for-third-party-ssl-certificates). The following certificate information applies to all worldwide and national cloud instances of Office 365.
 

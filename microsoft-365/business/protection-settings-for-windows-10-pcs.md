@@ -21,14 +21,14 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: "Learn about default and other settings available in Microsoft 365 Business to secure Windows 10 devices."
+description: "Learn about default and other settings available in Microsoft 365 for business to secure Windows 10 devices."
 ---
 
 # Set device protection settings for Windows 10 PCs
 
 ## Secure Windows 10 devices
 
-View a video on how to secure Windows 10 devices with Microsoft 365 Business:
+View a video on how to secure Windows 10 devices with Microsoft 365 for business:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -54,7 +54,7 @@ View a video on how to secure Windows 10 devices with Microsoft 365 Business:
 
 By default all settings are **On**. The following settings are available.
   
-For more information, see [How do protection features in Microsoft 365 Business map to Intune settings](map-protection-features-to-intune-settings.md). 
+For more information, see [How do protection features in Microsoft 365 Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 |||
 |:-----|:-----|

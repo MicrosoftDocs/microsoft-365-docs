@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
-description: "landing page for protecting access to O365 data and services"
+description: "landing page for protecting access to Microsoft 365 data and services"
 ---
 
 # Protect user and device access
 
-Protecting access to your Office 365 data and services is crucial to defending against cyberattacks and guarding against data loss. The same protections can be applied to other SaaS applications in your environment and even to on-premises applications published with Azure Active Directory Application Proxy.
+Protecting access to your Microsoft 365 data and services is crucial to defending against cyberattacks and guarding against data loss. The same protections can be applied to other SaaS applications in your environment and even to on-premises applications published with Azure Active Directory Application Proxy.
   
 ## Step 1: Review recommendations
 
@@ -28,7 +28,7 @@ Recommended capabilities for protecting identities and devices that access Offic
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [More languages](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## Step 2: Protect administrator accounts and access
-The administrative accounts you use to administer your Office 365 environment include elevated privileges. These are valuable targets for hackers and cyberattackers. 
+The administrative accounts you use to administer your Microsoft 365 environment include elevated privileges. These are valuable targets for hackers and cyberattackers. 
 
 Begin by using administrator accounts only for administration. Admins should have a separate user account for regular, non-administrative use and only use their administrative account when necessary to complete a task associated with their job function.
 

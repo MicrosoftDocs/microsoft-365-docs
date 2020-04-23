@@ -28,7 +28,7 @@ Microsoft Managed Desktop has achieved the following certifications:
 - [Service Organization Controls (SOC) 1, 2, 3](../../compliance/offering-SOC.md)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](../../compliance/offering-PCI-DSS.md)
 
-## Auditor reports and client certificates
+## Auditor reports and compliance certificates
 
 You can find relevant information, including control and technical requirements, in the [Service Trust Portal (STP)](https://servicetrust.microsoft.com/), the central repository for such information about Microsoft Cloud Service offerings. You can download auditor reports, compliance certificates, and more from the [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) section of the STP.
 

@@ -20,7 +20,7 @@ description: "Admins can learn how to set the SCL of messages in Exchange Online
 
 # Use mail flow rules to set the spam confidence level (SCL) in messages
 
-If you're an Office 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 If you want to mark specific messages as spam before they're even scanned by spam filtering, or mark messages so they'll skip spam filtering, you can create mail flow rules (also known as transport rules) to identify the messages and set the spam confidence level (SCL). For more information about the SCL, see [Spam confidence level (SCL) in Office 365](spam-confidence-levels.md).
 

@@ -55,7 +55,7 @@ You can save a new or existing query so that it is only accessible to you or sha
 2. Select **Delete** and confirm deletion. Or select **Rename** and provide a new name for the query.
 
 ## Access queries in the GitHub repository  
-Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://github.com/microsoft/MTP-AHQ). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/).
+Microsoft security researchers regularly share advanced hunting queries in a [designated public repository on GitHub](https://aka.ms/hunting-queries). This repository is open to contributions. To contribute, [join GitHub for free](https://github.com/).
 
 >[!tip]
 >Microsoft security researchers also provide advanced hunting queries that you can use to locate activities and indicators associated with emerging threats. These queries are provided as part of the [threat analytics](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) reports in Microsoft Defender Security Center.
