@@ -280,7 +280,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Simulation** section. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). Select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
-You can modify your policy directly from this interface by selecting the **Edit** option at the top of the page.
+You can modify your policy directly from this interface by selecting the **Edit** option at the top of the page, from either tab:
+
+![Edit auto-labeling policy option](../media/auto-labeling-edit.png)
 
 When you're ready to run the policy without simulation, select the **Turn On** option.
 
