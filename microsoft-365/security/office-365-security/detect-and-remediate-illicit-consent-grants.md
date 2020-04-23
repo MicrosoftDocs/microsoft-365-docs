@@ -42,7 +42,7 @@ You need to search the **audit log** to find signs, also called Indicators of Co
 
 3. Search (all activities and all users) and enter the start date and end date if required and then click **Search**. 
 
-4. Filter the results for Consent to application, and Add OAuth2PermissionGrant.
+4. Click **Filter results** and enter Consent to application in the **Activity** field.
 
 5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
 
