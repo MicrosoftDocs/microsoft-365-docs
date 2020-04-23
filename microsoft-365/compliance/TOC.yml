@@ -513,8 +513,6 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: add-data-to-review-set-from-another-review-set.md
-            - name: Manage load sets
-              href: manage-load-sets-in-advanced-ediscovery.md
         - name: Review case data
           items: 
             - name: Use the review set dashboard (preview)
