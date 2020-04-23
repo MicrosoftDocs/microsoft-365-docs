@@ -192,7 +192,7 @@ The additional CNAME records created in the following procedure enable Skype for
     
 5. In the **Subdomain Overview** section, find the **lyncdiscover** subdomain that you just created, and then select the **Panel (v)** control for that subdomain. <br/>In the **Subdomain Settings** area, select **Edit DNS Settings**.
     
-6. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
+6. In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.
     
 7. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table. <br/>
     
@@ -218,7 +218,7 @@ The additional CNAME records created in the following procedure enable Skype for
     
 14. In the **Subdomain Overview** section, find the **sip** subdomain that you just created, and then select the **Panel (v)** control for that subdomain. <br/>In the **Subdomain Settings** area, select **Edit DNS Settings**.
     
-15. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
+15. In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.
     
 16. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table. 
     
