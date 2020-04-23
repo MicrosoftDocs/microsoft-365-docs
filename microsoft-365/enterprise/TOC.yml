@@ -90,6 +90,10 @@
           href: deploy-with-existing-infrastructure.md
         - name: Deploy for non-enterprises
           href: deploy-foundation-infrastructure-non-enterprises.md
+        - name: Deployment and update channel example configurations
+          href: deploy-update-channels-examples.md
+             - name: Rapid deployment channel configuration
+               href: deploy-update-channels-examples-rapid-deploy.md
     - name: Deploy workloads and scenarios
       href: deploy-workloads.md
       items: 
