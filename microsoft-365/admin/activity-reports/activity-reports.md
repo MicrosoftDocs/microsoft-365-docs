@@ -99,7 +99,7 @@ Depending on your subscription, here are the available reports.
   
 - [OneDrive for Business usage](onedrive-for-business-usage.md)
 
-- [ProPlus usage](microsoft365-apps-usage.md)
+- [Microsoft 365 Apps usage](microsoft365-apps-usage.md)
   
 - [SharePoint site usage](sharepoint-site-usage.md)
   
