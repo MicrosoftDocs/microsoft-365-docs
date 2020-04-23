@@ -25,6 +25,6 @@ Microsoft Exchange Online Protection (EOP) offers several ways to manage your ma
 |[Manage recipients in EOP](manage-recipients-in-eop.md)|Describes the types of recipients in EOP (mail users and groups), how to add, remove, and edit recipients, where to locate recipients in the EAC, and other aspects of managing recipients.|
 |[Manage admin role group permissions in EOP](manage-admin-role-group-permissions-in-eop.md)|Describes where to locate a list of admin roles in the EAC, how to add or remove users from an existing admin role group, and what permissions you need in order to manage specific EOP features.|
 
-## For more information
+## Related topics
 
 [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)

@@ -24,6 +24,6 @@ description: "Learn as an Exchange Online or Exchange Online Protection (EOP) ad
 
 As an Exchange Online or Exchange Online Protection (EOP) administrator, you can help ensure that an email message traveling through the service isn't marked as spam. See the updated version of the tips and procedures to accomplish this in [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
 
-## See also
+## Related topics
 
 [Anti-spam protection in Office 365](anti-spam-protection.md)

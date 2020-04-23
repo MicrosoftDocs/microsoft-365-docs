@@ -14,6 +14,8 @@ search.appverid:
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: "Admin can learn how to configure support for anonymous inbound email from IPv6 sources in Exchange Online and Exchange Online Protection."
 ---
 
@@ -43,6 +45,6 @@ After anonymous inbound IPv6 message support is enabled in your organization, th
 
   > 550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.
 
-## For more information
+## Related topics
 
 [Support for validation of DKIM signed messages](support-for-validation-of-dkim-signed-messages.md)
