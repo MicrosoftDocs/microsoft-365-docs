@@ -284,7 +284,7 @@ You can modify your policy directly from this interface by selecting the **Edit*
 
 ![Edit auto-labeling policy option](../media/auto-labeling-edit.png)
 
-When you're ready to run the policy without simulation, select the **Turn On** option.
+When you're ready to run the policy without simulation, select the **Turn on policy** option.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
 - **Content Explorer List viewer** lets you see a file's label but not the file's contents.
