@@ -20,12 +20,11 @@ description: How example organizations deploy and update using channels.
 
 # Deployment and update channel example configurations
 
-
+Intro text
 
 ## Next step
 
 See the [rapid deployment example for a multi-national organization](deploy-update-channels-examples-rapid-deploy.md).
-
 
 ## See also
 

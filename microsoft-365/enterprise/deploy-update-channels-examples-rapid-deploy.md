@@ -15,7 +15,7 @@ ms.collection:
 - M365-subscription-management
 ms.custom:
 
-description: How a rapid deployment organizations uses channels.
+description: How a rapid deployment organization uses channels.
 ---
 
 # Rapid deployment channel configuration example
@@ -25,11 +25,12 @@ Intro text
 ## The example organization
 
 Number of employees: 100000
-Multinational Yes, offices in the Americas, Europe, Africa, and Asia
-Other The IT infrastructure is largely homogeneous, with Windows, Office, and Microsoft cloud services comprising 95% of the installed base. A few legacy systems remain after an intensive, multi-year effort to simplify and streamline the IT infrastructure.
+
+A multinational with offices in the Americas, Europe, Africa, and Asia
+
+The IT infrastructure is largely homogeneous, with Windows, Office, and Microsoft cloud services comprising 95% of the installed base. A few legacy systems remain after an intensive, multi-year effort to simplify and streamline the IT infrastructure.
 
 The IT department is highly experienced and tasked with keeping users and their devices productive by following Microsoft’s lead in their releases.
-
 
 ## Business priorities
 
@@ -41,13 +42,13 @@ The IT department is highly experienced and tasked with keeping users and their 
 ## Deployment stages
 
 1. Use a preview or pilot deployment
-   Test and iterate with early adopters, IT staff, users with representative configurations, and training staff
+   Test and iterate with early adopters, IT staff, users with representative configurations, and training staff.
 2. Production deployment
-   Roll out to users by region/department/other
+   Roll out to users by region/department/other.
 
 ## Deployment configuration for Windows 10
 
-Deployment goal: Give a group of representative users a sneak peek of features that will be released in a few months, without major disruptions to the organization. See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
+**Deployment goal:** Give a group of representative users a sneak peek of features that will be released in a few months, without major disruptions to the organization. See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
 
 
 | Channel | Deployment groups |
@@ -61,6 +62,18 @@ Ongoing updates process:
 2. Win10PreviewChannel members confirm that Preview Channel changes are working to IT deployment staff.
 3. Feature changes are deployed to the rest of the organization. 
 
+## Deployment configuration for Microsoft 365 Apps
+
+To be added
+
+
+## Deployment configuration for Microsoft Edge
+
+To be added
+
+## Visual summary
+
+![The resulting configuration of a rapid deployment organizaton](../media/deploy-update-channels-examples-rapid-deploy/channel-summary.png)
 
 ## Next step
 
