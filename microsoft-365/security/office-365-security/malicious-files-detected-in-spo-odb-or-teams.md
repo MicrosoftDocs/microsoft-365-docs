@@ -1,5 +1,5 @@
 ---
-title: View information about malicious files detected by ATP
+title: View information about malicious files detected by Office 365 ATP
 f1.keywords:
 - NOCSH
 ms.author: tracyp

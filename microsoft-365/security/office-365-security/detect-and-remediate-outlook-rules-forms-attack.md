@@ -1,5 +1,5 @@
 ---
-title: "Detect and Remediate Outlook rules and custom Forms Injections attacks"
+title: "Detect and remediate the Outlook rules and custom forms injections attacks."
 f1.keywords:
 - NOCSH
 ms.author: chrfox

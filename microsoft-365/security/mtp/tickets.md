@@ -1,6 +1,6 @@
 ---
 title: Create and track tickets through ServiceNow
-description: In this article, you'll learn how to create and track tickets in ServiceNow from Microsoft 365 security center.
+description: Learn how to create and track tickets in ServiceNow from Microsoft 365 security center.
 keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, tickets, tasks
 ms.prod: w10
 ms.mktglfcycl: deploy

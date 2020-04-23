@@ -1,5 +1,5 @@
 ---
-title: Threat investigation & response capabilities - ATP Plan 2
+title: Threat investigation & response capabilities - Office 365 ATP Plan 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp

@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: Learn about the threat protection features features in Office 365, including a quick-start guide you can use to configure threat protection features.
+description: Learn about Office 365 threat protection and configure how to use it for your organization.
 ms.custom: seo-marvel-apr2020
 ---
 

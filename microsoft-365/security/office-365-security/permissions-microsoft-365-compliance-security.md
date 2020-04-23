@@ -1,5 +1,5 @@
 ---
-title: Permissions in the security and compliance centers
+title: Permissions in the Microsoft 365 security and compliance centers
 f1.keywords:
 - NOCSH
 ms.author: cabailey
