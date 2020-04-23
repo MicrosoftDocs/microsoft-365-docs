@@ -62,7 +62,7 @@ Follows email messages as they travel through EOP. You can determine if an email
 
 You can use this information to efficiently answer your user's questions, troubleshoot mail flow issues, validate policy changes, and alleviates the need to contact technical support for assistance.
 
-See [Trace an email message](https://docs.microsoft.com/exchange/monitoring/trace-an-email-message/trace-an-email-message)
+See [Message trace in the Security & Compliance Center](message-trace-scc.md).
 
 ## Audit logging
 

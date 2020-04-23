@@ -78,22 +78,7 @@ To request removal from this list, you can [Use the delist portal to remove your
 
 ### My email landed in the recipient's junk folder in EOP
 
-If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. Depending on the results of the analysis, the service-wide spam content filter rules may be adjusted to allow the message through. You use email to submit messages to Microsoft that should not be classified as spam. When doing so, be sure to use the steps in the following procedure.
-
-### To use email to submit false positive messages to the Microsoft Spam Analysis Team
-
-1. Save the message you want to submit as non-spam.
-
-2. Create a new, blank message and attach the non-spam message to it.
-
-    You can attach multiple non-spam messages if needed.
-
-3. Copy and paste the original message subject line into the new message subject line.
-
-    > [!IMPORTANT]
-    > Leave the body of the new message empty.
-
-4. Send your new message to [not_junk@office365.microsoft.com](mailto:not_junk@office365.microsoft.com).
+If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ### Traffic from my IP address is throttled by EOP
 

@@ -328,9 +328,9 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |**Value**|**Description**|
 |:-----|:-----|
 |`SFV=NSPM`|The message was marked as non-spam and was sent to the intended recipients.|
-|`SFV=SPM`|The message was marked as spam by the content filter.|
+|`SFV=SPM`|The message was marked as spam by anti-spam filtering (also known as content filtering).|
 |`SFV=BLK`|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
-|`SFV=SKS`|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a Transport rule to automatically mark it as spam and bypass all additional filtering.|
+|`SFV=SKS`|The message was marked as spam prior to being processed by anti-spam filtering. This includes messages where the message matched a mail flow rule (also known as a transport rule) to automatically mark it as spam and bypass all additional filtering.|
 |`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](spam-confidence-levels.md).|
 |`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|The sender of the message was blocked.|

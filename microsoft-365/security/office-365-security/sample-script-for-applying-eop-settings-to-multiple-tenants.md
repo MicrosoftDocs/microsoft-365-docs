@@ -26,25 +26,25 @@ The following sample script lets Microsoft Exchange Online Protection (EOP) admi
 
 3. For each row in the .csv file, add the tenant's admin name in the UserName column and the cmdlet to run for that tenant in the Cmdlet column. For example, use admin@contoso.com and Get-AcceptedDomain.
 
-4. Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script to an editor like Notepad, and then save the file to a location (like c:\scripts) that makes .ps1 files easy to find.
+4. Copy the [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) script into Notepad, and then save the file to a location that's easy to find  (for example, c:\scripts).
 
 5. Run the script by using the following syntax:
 
-   ```Powershell
+   ```powershell
    & "<file path>\RunCmdletOnMultipleTenants.ps1" "<file path>\inputfile.csv"
    ```
 
    Here's an example:
 
-   ```Powershell
+   ```powershell
    & "c:\scripts\RunCmdletOnMultipleTenanats.ps1" "c:\scripts\inputfile.csv"
    ```
 
-6. Each tenant will be logged on to, and the cmdlet will be run.
+6. Each tenant will be logged on to, and the script will be run.
 
 ## RunCmdletOnMultipleTenants.ps1
 
-```Powershell
+```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.
 # Usage: RunCmdletOnMultipleTenants.ps1 inputfile.csv
 #

@@ -34,11 +34,13 @@ Customize your spam filter by adding the sender IP address to the connection fil
 
 3. Add the IP address to the IP Allow List in the default connection filter policy. For instructions, see [Configure connection filtering](configure-the-connection-filter-policy.md).
 
-### Block bulk mail with mail flow rules (transport rules) or the spam filter
+### Mark bulk email as spam in anti-spam policies or by using mail flow rules (transport rules)
 
-Is the spam primarily bulk mail, for example, newsletters or promotions? You can customize the spam filter if you [Use mail flow rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md) or turn on the **Bulk mail** setting in your spam filter's [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md). In the Exchange admin center, get started by clicking **Protection** \> **Content filter** and then double click the filter policy you want to adjust. Click **Spam and bulk mail actions** to adjust the settings, as shown here.
+Is the spam primarily [bulk mail](what-s-the-difference-between-junk-email-and-bulk-email.md) (for example, newsletters or promotions)?
 
-![Setting the bulk mail filter in Exchange Online](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
+- Customize the bulk complaint threshold (BCL) value that marks bulk email as spam. For more information, see [Configure anti-spam policies](configure-your-spam-filter-policies.md).
+
+- [Use mail flow rules to filter bulk email](use-transport-rules-to-configure-bulk-email-filtering.md)
 
 ### Block email spam using spam filter block lists
 
