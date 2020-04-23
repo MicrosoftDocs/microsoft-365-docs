@@ -272,13 +272,13 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 11. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
 
-12. For the **Choose a mode for the policy** page: Select **Test it out** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave it turned off**. Select **Next**. 
+12. For the **Decide if you want to run policy simulation now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**. 
 
 13. For the **Summary** page: Review the configuration of the your auto-labeling policy and make any changes that needed, and complete the wizard.
     
     Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
-Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Testing** section. Select your policy to see the details of the configuration and status (for example, still testing or test complete). Select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Simulation** section. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). Select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
 You can modify your policy directly from this interface by selecting the **Edit** option at the top of the page.
 
