@@ -88,7 +88,7 @@ If you're planning to move from an existing email service to Microsoft 365, it u
   
 If you're going to use Microsoft 365 for your email:
   
-- To move your business email address (such as *rob@contoso.com*) from another email service to Microsoft 365, you need to direct your mail to be delivered to your new Microsoft 365 mailbox. You do this by selecting **Migrate your users' data** on the **Setup** page, where we guide you through the updates you need to make at your domain host, step by step.
+- To move your business email address (such as *rob\@contoso.com*) from another email service to Microsoft 365, you need to direct your mail to be delivered to your new Microsoft 365 mailbox. You do this by selecting **Migrate your users' data** on the **Setup** page, where we guide you through the updates you need to make at your domain host, step by step.
 
 - After you update your domain host, the changes typically take effect in just an hour or two. But be aware that it can sometimes take up to 72 hours for the changes to update across the internet.
 
