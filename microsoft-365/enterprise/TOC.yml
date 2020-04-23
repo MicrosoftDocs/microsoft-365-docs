@@ -88,6 +88,11 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: Deploy with existing infrastructure
           href: deploy-with-existing-infrastructure.md
+        - name: Deployment and update channel example configurations
+          href: deploy-update-channels-examples.md
+          items: 
+             - name: Rapid deployment channel configuration
+               href: deploy-update-channels-examples-rapid-deploy.md
         - name: Deploy for non-enterprises
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: Deploy workloads and scenarios
@@ -107,11 +112,6 @@
           href: secure-teams-highly-regulated-data-scenario.md
         - name: SharePoint sites for highly regulated data
           href: teams-sharepoint-online-sites-highly-regulated-data.md
-        - name: Deployment and update channel example configurations
-          href: deploy-update-channels-examples.md
-          items: 
-             - name: Rapid deployment channel configuration
-               href: deploy-update-channels-examples-rapid-deploy.md
     - name: Test Lab Guides
       href: m365-enterprise-test-lab-guides.md
       items: 

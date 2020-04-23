@@ -32,14 +32,14 @@ The IT infrastructure is largely homogeneous, with Windows, Office, and Microsof
 
 The IT department is highly experienced and tasked with keeping users and their devices productive by following Microsoft’s lead in their releases.
 
-## Business priorities
+Business priorities
 
 - Ensure business continuity with Microsoft apps and services.
 - Maximize user productivity with the latest features from Microsoft.
 - Maximize device, service, and data security with the latest features and fixes from Microsoft.
 - Find a balance between rapid deployment and proper testing with a representative subset of users and devices to prevent widespread functionality outages.
 
-## Deployment stages
+## Deployment and update stages
 
 1. Use a preview or pilot deployment
    Test and iterate with early adopters, IT staff, users with representative configurations, and training staff.
