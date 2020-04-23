@@ -19,9 +19,10 @@ description: "Learn about remediation actions in automated investigation and res
 
 # View pending or completed remediation actions following an automated investigation in Office 365
 
-## Approve (or reject) pending actions
 
 ![AIR investigations action page](../../media/air-investigationactionspage.png)
+
+## Approve (or reject) pending actions
 
 While viewing the [details of an investigation](air-view-investigation-results.md), you can approve or reject any pending remediation actions. We recommend doing this as soon as possible so that your automated investigations complete.
 
