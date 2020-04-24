@@ -29,8 +29,6 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Submission** page, use <https://protection.office.com/reportsubmission>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
-
 - You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
@@ -96,3 +94,163 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 4. When you're finished, click the **Submit** button.
 
 ![Attachment submission example](../../media/submission-file-flyout.PNG)
+
+## View user submissions to Microsoft
+
+If you've deployed the [Report Message add-in](enable-the-report-message-add-in.md), or people use the [built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md), you can see what users are reporting on the **User submissions** tab.
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+
+2. On the **Submissions** page that appears, click the **User submissions** tab.
+
+You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
+
+- **Submitted on**
+- **Submitted by**<sup>\*</sup>
+- **Subject**<sup>\*</sup>
+- **Sender**
+- **Sender IP**<sup>\*</sup>
+- **Submission type**
+
+<sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
+
+Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Sender** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+
+To change the filter criteria, click the **Sender** button and choose one of the following values:
+
+- **Sender domain**
+- **Subject**
+- **Submitted by**
+- **Submission type**
+- **Sender IP**
+
+![Filter options for user submissions](../../media/user-submissions-filter-options.png)
+
+To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+## View user submissions to the custom mailbox
+
+If you've [configured a custom mailbox](user-submission.md) to receive user reported messages, you can view and also submit messages that were delivered to the reporting mailbox.
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+
+2. On the **Submissions** page that appears, click the **Custom mailbox** tab.
+
+You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
+
+- **Submitted on**
+- **Submitted by**<sup>\*</sup>
+- **Subject**<sup>\*</sup>
+- **Sender**
+- **Sender IP**<sup>\*</sup>
+- **Submission type**
+
+Near the top of the page, you can enter a start date, an end date, and you can filter by **Submitted by** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+
+To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+### Submit messages to Microsoft from the custom mailbox
+
+If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
+
+1. On the **Custom mailbox** tab, click the **Action** button.
+
+## View admin submissions
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
+
+2. On the **Submissions** page that appears, verify that the **Admin submissions** tab is selected.
+
+Below the graph, there are three tabs available: **Email** (default), **URL**, and **Attachment**.
+
+### View admin email submissions
+
+Click the **Email** tab.
+
+You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
+
+- **Date**
+- **Submission ID**
+- **Submitted by**<sup>\*</sup>
+- **Subject**<sup>\*</sup>
+- **Sender**
+- **Sender IP**<sup>\*</sup>
+- **Submission type**
+- **Delivery reason**
+- **Status**<sup>\*</sup>
+- **Control type**
+- **Control source**
+
+  <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
+
+Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+
+To change the filter criteria, click the **Submission ID** button and choose one of the following values:
+
+- **Sender**
+- **Subject/URL/File name**
+- **Submitted by**
+- **Submission type**
+- **Status**
+
+![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+
+To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+### View admin URL submissions
+
+Click the **URL** tab.
+
+You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
+
+- **Date**
+- **Submission ID**
+- **Submitted by**<sup>\*</sup>
+- **URL**<sup>\*</sup>
+- **Submission type**
+- **Status**<sup>\*</sup>
+
+  <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
+
+Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+
+To change the filter criteria, click the **Submission ID** button and choose one of the following values:
+
+- **Sender**
+- **Subject/URL/File name**
+- **Submitted by**
+- **Submission type**
+- **Status**<sup>\*</sup>
+
+![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+
+To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+### View admin attachment submissions
+
+Click the **Attachments** tab.
+
+You can click the **Column options** button near the bottom of the page to add or remove columns from the view:
+
+- **Date**
+- **Submission ID**
+- **Submitted by**<sup>\*</sup>
+- **File name**<sup>\*</sup>
+- **Submission type**
+- **Status**<sup>\*</sup>
+
+  <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
+
+Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+
+To change the filter criteria, click the **Submission ID** button and choose one of the following values:
+
+- **Sender**
+- **Subject/URL/File name**
+- **Submitted by**
+- **Submission type**
+- **Status**
+
+![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+
+To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
