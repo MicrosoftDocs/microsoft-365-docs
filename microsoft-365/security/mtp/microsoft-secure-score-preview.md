@@ -155,15 +155,11 @@ To make Microsoft Secure Score a better representative of your security posture,
 
 ### April 21st 2020
 
-#### Added Azure AD improvement action
-
-Added the following Azure Active Directory improvement action:
+#### Added Azure Active Directory improvement action
 
 - Do not allow users to grant consent to unmanaged applications (currently available in released version)
 
-#### Added Azure ATP improvement actions
-
-Added the following Azure Advanced Threat Protection improvement actions:
+#### Added Azure Advanced Threat Protection improvement actions
 
 - Disable Print spooler service on domain controllers
 - Modify unsecure Kerberos delegations to prevent impersonation

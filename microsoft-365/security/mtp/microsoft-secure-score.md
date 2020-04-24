@@ -115,9 +115,7 @@ When you select a specific improvement action, a fly out appears. To complete th
 
 3. Select **Ignore** because you have decided to accept the risk and not enact the improvement action. Once you ignore an improvement action, the total number of secure score points you can achieve is reduced. You can view this action in history or undo it at any time.
 
-4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score is reduced.
-
-![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../../media/secure-score/secure-score2x450.png)
+![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png)
 
 *Figures 2 & 3: Improvement action flyouts*
 
