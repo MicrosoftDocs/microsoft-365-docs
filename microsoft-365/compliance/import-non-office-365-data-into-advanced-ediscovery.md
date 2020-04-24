@@ -15,6 +15,7 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: "How to steps to import content that is not stored in O365 into an Azure blob so that it can be analyzed with AeD"
+ms.custom: seo-marvel-apr2020
 ---
 
 # Import non-Office 365 content for Advanced eDiscovery (classic) analysis
@@ -27,7 +28,7 @@ Not all documents that you may need to analyze with Office 365 Advanced eDiscove
 > [!NOTE]
 > You can purchase an Office 365 Advanced eDiscovery data storage add-on subscription for your non-Office 365 content. This is exclusively available for content that is to be analyzed with Advanced eDiscovery. Follow the steps in [Buy or edit and add-on for Office 365 for business](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) and purchase the Office 365 Advanced eDiscovery storage add-on. 
   
-## Before you begin
+## Requirements to upload non-Office 365 content
 
 Using the upload Non-Office 365 feature as described in this procedure requires that you have:
   

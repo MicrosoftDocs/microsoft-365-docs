@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
 description: Learn how to place a mailbox on Litigation Hold, retaining all the mailbox content during an investigation.
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 ---
 
 # Create a Litigation Hold
@@ -30,7 +32,7 @@ Here's what happens when you create a Litigation Hold.
     
 - Items in the user's primary and the archive mailboxes are retained
     
-## Before you begin
+## Assign an Exchange Online Plan 2 license
 
 - To place an Exchange Online mailbox on Litigation Hold, it must be assigned an Exchange Online Plan 2 license. If a mailbox is assigned an Exchange Online Plan 1 license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.
     

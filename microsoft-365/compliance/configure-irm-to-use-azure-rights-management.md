@@ -16,7 +16,7 @@ ms.assetid: 1b1f8c8b-f3b4-439b-910c-cf2f89a07a15
 ms.collection:
 - M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: "Learn about the changes made to IRM configuration process after the release of the new capabilities for Office 365 Message Encryption (OME)."
+description: "This article contains information about the new capabilities for Office 365 Message Encryption (OME)."
 ---
 
 # Configure IRM to use Azure Rights Management
