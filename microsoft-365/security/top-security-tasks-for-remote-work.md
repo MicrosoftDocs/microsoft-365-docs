@@ -20,7 +20,7 @@ description: "Protect your business email and data from cyber threats, including
 If you are like [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) and suddenly find yourself supporting a primarily home-based workforce, we want to help you ensure your organization is working as securely as possible. This article prioritizes tasks to help security teams implement the most important security capabilities as quickly as possible. 
 
 If you are a small or medium-size organization using one of Microsoft's business plans, see these resources instead:
-- [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](../admin/security-and-compliance/secure-your-business-data.md) 
+- [Top 10 ways to secure Office 365 and Microsoft 365 for business plans](../admin/security-and-compliance/secure-your-business-data.md) 
 - [Microsoft 365 for Campaigns](https://docs.microsoft.com/microsoft-365/campaigns/?view=o365-worldwide) (includes a recommended security configuration for Microsoft 365 Business)
 
   
@@ -31,7 +31,7 @@ For customers using our enterprise plans, Microsoft recommends you complete the 
 ||**Task**| All Office 365 Enterprise plans|**Microsoft 365 E3** |**Microsoft 365 E5**|
 |:-----|:-----|:-----|:-----|:-----|
 |1      |[Enable Azure Multi-Factor Authentication (MFA)](#1-enable-azure-multi-factor-authentication-mfa)   |   ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)  |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)   | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
-|2     | [Protect against threats in Office 365 ](#2-protect-against-threats-in-office-365) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
+|2     | [Protect against threats](#2-protect-against-threats) |![Included](../media/d238e041-6854-4a78-9141-049224df0795.png) |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)       | 
 |3      |  [Configure Office 365 Advanced Threat Protection](#3-configure-office-365-advanced-threat-protection)  |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |4      | [Configure Azure Advanced Threat Protection (ATP)](#4-configure-azure-advanced-threat-protection)   |   |      |  ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)     | 
 |5     |   [Turn on Microsoft Advanced Threat Protection](#5-turn-on-microsoft-advanced-threat-protection)  |  |      | ![Included](../media/d238e041-6854-4a78-9141-049224df0795.png)      | 
@@ -60,16 +60,16 @@ Applying these policies will take only a few minutes, but be prepared to support
 
 |Plan  |Recommendation  |
 |---------|---------|
-|Office 365 plans (without Azure AD P1 or P2)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
+|Microsoft 365 plans (without Azure AD P1 or P2)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
 |Microsoft 365 E3 (with Azure AD P1)     | Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (with Azure AD P2)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Block clients that don't support modern authentication](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 
   
-## 2: Protect against threats in Office 365
+## 2: Protect against threats
 
-All Office 365 plans include a variety of threat protection features. Bumping up protection for these features takes just a few minutes.
+All Microsoft 365 plans include a variety of threat protection features. Bumping up protection for these features takes just a few minutes.
 - Anti-malware protection
 - Protection from malicious URLs and files
 - Anti-phishing protection
@@ -176,11 +176,11 @@ Some of the protections that have traditionally been provided by routing traffic
 
 
 See these resources on Docs for more information:
-- [Overview: Optimize Office 365 connectivity for remote users using VPN split tunnelling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Overview: Optimize connectivity for remote users using VPN split tunnelling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 - [Implementing VPN split tunnelling for Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Recent blog articles on this topic:
-- [How to quickly optimize Office 365 traffic for remote staff & reduce the load on your infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
+- [How to quickly optimize traffic for remote staff & reduce the load on your infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
 - [Alternative ways for security professionals and IT to achieve modern security controls in today's unique remote work scenarios](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 

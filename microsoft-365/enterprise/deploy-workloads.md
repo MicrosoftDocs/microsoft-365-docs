@@ -55,7 +55,7 @@ See the [Microsoft 365 Productivity Library](https://aka.ms/productivitylibrary)
 | Network | Your network is updated for optimum performance to Microsoft 365 cloud services. |
 | Identity | Identity is synchronized and secured with strong authentication for user accounts and protection for admin accounts. |
 | Windows 10 Enterprise | Your computers running Windows 7 or Windows 8.1 can upgrade to Windows 10 Enterprise and new devices are installed with Windows 10 Enterprise. |
-| Office 365 ProPlus | Your existing users of Microsoft Office can upgrade to Office 365 ProPlus. |
+| Microsoft 365 Apps for enterprise | Your existing users of Microsoft Office can upgrade to Microsoft 365 Apps for enterprise. |
 | Mobile device management | Your devices can be enrolled and managed. |
 | Information protection | Microsoft 365 information protection features are configured and your sensitivity or Azure Information Protection labels are ready to protect documents and email. |
 
@@ -64,7 +64,7 @@ Remember that this is ideal and can take some time to plan for, configure, test,
 Here are some common workloads to deploy right away: 
 
 - After the **Identity** phase of the foundation infrastructure is rolled out to users, many organizations deploy:
-  - [Office 365 ProPlus](office365proplus-infrastructure.md) combined with [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Office 365 ProPlus provides the security of modern authentication and the user experience of the latest Microsoft Office client. The migration of user's personal files to OneDrive reduces infrastructure and the need to support home folders and drives.
+  - [Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md) combined with [OneDrive](https://docs.microsoft.com/onedrive/plan-onedrive-enterprise). Microsoft 365 Apps for enterprise provides the security of modern authentication and the user experience of the latest Microsoft Office client. The migration of user's personal files to OneDrive reduces infrastructure and the need to support home folders and drives.
   - [Exchange Online](exchangeonline-workload.md) so that users can begin using cloud-based email.
 - If you don't have an immediate need for storing highly regulated digital assets in the cloud, deploy [Microsoft Teams](teams-workload.md) and [SharePoint](sharepoint-online-onedrive-workload.md) for your users prior to the **Information protection** phase.
 

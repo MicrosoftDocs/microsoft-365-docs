@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: "Learn how to upload devices using AutoPilot in Microsoft 365 Business. You can assign a profile to a device or a group of devices."
+description: "Learn how to upload devices using AutoPilot in Microsoft 365 Business Premium. You can assign a profile to a device or a group of devices."
 ---
 
 # Create and edit AutoPilot devices
@@ -39,7 +39,7 @@ Devices must meet these requirements:
     
 - New devices that haven't been through Windows out-of-box experience
 
-1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.
+1. In the Microsoft 365 admin center, choose **Devices** \> **AutoPilot**.
   
 2. On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.
     
