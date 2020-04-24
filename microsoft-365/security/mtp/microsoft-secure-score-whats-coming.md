@@ -25,36 +25,8 @@ To make [Microsoft Secure Score](microsoft-secure-score.md) a better representat
 
 To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## April 21st 2020
+## May 2020
 
-### Removing improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
+### Adding Azure Advanced Threat Protection improvement actions to preview
 
-To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
-
-- Apply IRM protections to documents
-- Apply Data Loss Prevention policies
-
-### Adding Azure AD improvement action to preview
-
-Adding the following Azure Active Directory improvement action to the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md):
-
-- Do not allow users to grant consent to unmanaged applications (currently available in released version)
-
-### Adding Azure ATP improvement actions to preview
-
-Adding the following Azure Advanced Threat Protection improvement actions to the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md):
-
-- Disable Print spooler service on domain controllers
-- Modify unsecure Kerberos delegations to prevent impersonation
-- Protect and manage local admin passwords with Microsoft LAPS
-- Reduce lateral movement path risk to sensitive entities
-- Remove dormant accounts from sensitive groups
-- Remove unsecure SID history attributes from entities
-- Resolve unsecure account attributes
-- Stop clear text credentials exposure
-- Stop legacy protocols communication
-- Stop weak cipher usage
-
-### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations in preview
-
-All released security recommendations supplied by TVM will now also be available the [preview release of Microsoft Secure Score](microsoft-secure-score-preview.md).
+- Enable security features on Active Directory trusts
