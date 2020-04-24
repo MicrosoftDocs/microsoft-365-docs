@@ -26,7 +26,7 @@ ms.custom:
 
 Not all documents that you may need to analyze in a data investigation will be located in Office 365. With the Non-Office 365 content import feature you can upload documents that don't live in Office 365 into evidence so they can be analyzed in a data investigation.
 
-## Before you begin
+## Requirements to upload non-Office 365 content
 
 Using the upload Non-Office 365 feature as described in this procedure requires that you have:
 

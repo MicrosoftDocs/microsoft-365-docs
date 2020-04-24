@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Learn about how Office 365 servers use BitLocker encryption, eliminating the potential for data theft due to lost or stolen computers and disks.
+description: Learn about how Office 365 uses BitLocker encryption, reducing the potential for data theft due to lost or stolen computers and disks.
 ms.custom: seo-marvel-apr2020
 ---
 

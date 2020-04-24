@@ -13,11 +13,10 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Information barriers
-
-## Overview
 
 <!--
 
