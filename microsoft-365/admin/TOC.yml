@@ -219,8 +219,6 @@
           href: get-help-with-domains/information-for-dns-records.md
         - name: Find and fix issues
           href: get-help-with-domains/find-and-fix-issues.md
-        - name: Domain Connect
-          href: get-help-with-domains/domain-connect.md
         - name: Set up your domain (host-specific instructions)
           href: get-help-with-domains/set-up-your-domain-host-specific-instructions.md
         - name: Change nameservers at any domain registrar
