@@ -33,7 +33,7 @@ For other ways to submit email messages, URLs, and attachments to Microsoft, see
 
 - For more information about how users can submit messages and files to Microsoft, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## How to direct suspicious content to Microsoft scanning
+## Report suspicious content to Microsoft
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Review** \> **Admin submission messages**.
 
@@ -151,9 +151,16 @@ To export the results, click **Export** near the top of the page and select **Ch
 
 ### Submit messages to Microsoft from the custom mailbox
 
-If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis.
+If you've configured the custom mailbox to intercept user-reported messages without sending the messages to Microsoft, you can find and send specific messages to Microsoft for analysis. This effectively moves a user submission to an admin submission.
 
-1. On the **Custom mailbox** tab, click the **Action** button.
+On the **Custom mailbox** tab, select a message in the list, click the **Action** button, and make one of the following selections:
+
+- **Report clean**
+- **Report phishing**
+- **Report malware**
+- **Report spam**
+
+![Options on the Action button](../../media/user-submission-custom-mailbox-action-button.png)
 
 ## View admin submissions
 
@@ -161,7 +168,21 @@ If you've configured the custom mailbox to intercept user-reported messages with
 
 2. On the **Submissions** page that appears, verify that the **Admin submissions** tab is selected.
 
-Below the graph, there are three tabs available: **Email** (default), **URL**, and **Attachment**.
+Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
+
+To change the filter criteria, click the **Submission ID** button and choose one of the following values:
+
+- **Sender**
+- **Subject/URL/File name**
+- **Submitted by**
+- **Submission type**
+- **Status**
+
+![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
+
+To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
+
+Below the graph, there are three tabs: **Email** (default), **URL**, and **Attachment**.
 
 ### View admin email submissions
 
@@ -183,20 +204,6 @@ You can click the **Column options** button near the bottom of the page to add o
 
   <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
 
-Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
-
-To change the filter criteria, click the **Submission ID** button and choose one of the following values:
-
-- **Sender**
-- **Subject/URL/File name**
-- **Submitted by**
-- **Submission type**
-- **Status**
-
-![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
-
-To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
-
 ### View admin URL submissions
 
 Click the **URL** tab.
@@ -212,20 +219,6 @@ You can click the **Column options** button near the bottom of the page to add o
 
   <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
 
-Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
-
-To change the filter criteria, click the **Submission ID** button and choose one of the following values:
-
-- **Sender**
-- **Subject/URL/File name**
-- **Submitted by**
-- **Submission type**
-- **Status**<sup>\*</sup>
-
-![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
-
-To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
-
 ### View admin attachment submissions
 
 Click the **Attachments** tab.
@@ -240,17 +233,3 @@ You can click the **Column options** button near the bottom of the page to add o
 - **Status**<sup>\*</sup>
 
   <sup>\*</sup> If you click this value, detailed information is displayed in a flyout.
-
-Near the top of the page, you can enter a start date, an end date, and (by default) you can filter by **Submission ID** by entering a value in the box and clicking ![Refresh button](../../media/scc-quarantine-refresh.png). You can enter multiple values separated by commas.
-
-To change the filter criteria, click the **Submission ID** button and choose one of the following values:
-
-- **Sender**
-- **Subject/URL/File name**
-- **Submitted by**
-- **Submission type**
-- **Status**
-
-![Filter options for admin submissions](../../media/admin-submission-email-filter-options.png)
-
-To export the results, click **Export** near the top of the page and select **Chart data** or **Table**. In the dialog that appears, save the .csv file.
