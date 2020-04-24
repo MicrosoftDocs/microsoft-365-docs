@@ -1,5 +1,5 @@
 ---
-title: "Configure junk email settings on Exchange Online mailboxes in Office 365"
+title: "Configure junk email settings on Exchange Online mailboxes"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -18,7 +18,7 @@ ms.collection:
 description: "Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web."
 ---
 
-# Configure junk email settings on Exchange Online mailboxes in Office 365
+# Configure junk email settings on Exchange Online mailboxes
 
 Organizational anti-spam settings in Exchange Online are controlled by Exchange Online Protection (EOP). For more information, see [Anti-spam protection in Office 365](anti-spam-protection.md).
 
@@ -43,6 +43,8 @@ Admins can use Exchange Online PowerShell to disable, enable, and view the statu
 - You need to be assigned permissions before you can do these procedures. Specifically, you need the **Mail Recipients** role (which is assigned to the **Organization Management**, **Recipient Management**, and **Custom Mail Recipients** role groups by default) or the **User Options** role (which is assigned to the **Organization Management** and **Help Desk** role groups by default). To add users to role groups in Exchange Online, see [Modify role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups). Note that a user with default permissions can do these same procedures on their own mailbox, as long as they have [access to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell).
 
 - In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+
+- Safe Senders for shared mailboxes are not synchronized to Azure AD and EOP by design.
 
 ## Use Exchange Online PowerShell to enable or disable the junk email rule in a mailbox
 
@@ -176,3 +178,38 @@ When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Ju
 So, the Outlook Junk Email Filter is able to use the mailbox's safelist collection and its own spam classification to move messages to the Junk Email folder, even if the junk email rule is disabled in the mailbox.
 
 Outlook and Outlook on the web both support the safelist collection. The safelist collection is saved in the Exchange Online mailbox, so changes to the safelist collection in Outlook appear in Outlook on the web, and vice-versa.
+
+## Limits for junk email settings
+
+The safelist collection (the Safe Senders list, Safe Recipients list, and Blocked Senders list) that's stored in the user's mailbox is also synchronized to EOP. With directory synchronization, the safelist collection is synchronized to Azure AD.
+
+- The safelist collection in the user's mailbox has a limit of 510 KB, which includes all lists, plus additional junk email filter settings. If a user exceeds this limit, they will receive an Outlook error that looks like this:
+
+  > Cannot/Unable add to the server Junk E-mail lists. You are over the size allowed on the server. The Junk E-mail filter on the server will be disabled until your Junk E-mail lists have been reduced to the size allowed by the server.
+
+  For more information about this limit and how to change it, see [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+
+- The synchronized safelist collection in EOP has the following synchronization limits:
+
+  - 1024 total entries in the Safe Senders list, the Safe Recipients list, and external contacts if **Trust email from my contacts** is enabled.
+  - 500 total entries in the Blocked Senders list and Blocked Domains list.
+
+  When the 1024 entry limit is reached, the following things happen:
+  
+  - The list stops accepting entries in PowerShell and Outlook on the web, but no error is displayed.
+
+    Outlook users can continue to add more than 1024 entries until they reach the Outlook limit of 510 KB. Outlook can use these additional entries, as long as an EOP filter doesn't block the message before delivery to the mailbox (mail flow rules, anti-spoofing, etc.).
+
+- With directory synchronization, the entries are synchronized to Azure AD in the following order:
+
+  1. Mail contacts if **Trust email from my contacts** is enabled.
+  2. The Safe Sender list and Safe Recipient list are combined, de-duplicated, and sorted alphabetically whenever a change is made for the first 1024 entries.
+
+  The first 1024 entries are used, and relevant information is stamped in the message headers.
+  
+  Entries over 1024 that weren't synchronized to Azure AD are processed by Outlook (not Outlook on the web), and no information is stamped in the message headers.
+
+As you can see, enabling the **Trust email from my contacts** setting reduces the number of Safe Senders and Safe Recipients that can be synchronized. If this is a concern, then we recommend using Group Policy to turn this feature off:
+
+- File name: outlk16.opax
+- Policy setting: **Trust e-mail from contacts**
