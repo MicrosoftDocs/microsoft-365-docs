@@ -309,7 +309,12 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview",
       "redirect_document_id": true
     },
-	{
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfobeta-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfo-table",
+      "redirect_document_id": true
+    },
+	  {
       "source_path": "microsoft-365/security/mtp/mtp-preview.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/preview",
       "redirect_document_id": true
