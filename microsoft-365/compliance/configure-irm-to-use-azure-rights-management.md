@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn how to configure Information Rights Management (IRM) to use Azure Rights Management in Office 365 Message Encryption (OME)."
+description: "This article contains information about the new capabilities of Office 365 Message Encryption (OME)."
 ---
 
 # Configure IRM to use Azure Rights Management
