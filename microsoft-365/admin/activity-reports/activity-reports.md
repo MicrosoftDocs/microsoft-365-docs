@@ -53,7 +53,7 @@ Watch this video for on overview: on how you can use the reports:
 ::: moniker-end
 
    
-2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (email, OneDrive, etc) to see more information. <br/>![The Usage dashboard](../../media/usage-report-dashboard.png)
+2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (such as email or OneDrive) to see more information. <br/>![The Usage dashboard](../../media/usage-report-dashboard.png)
   
 ## Who can see reports
 
@@ -99,7 +99,7 @@ Depending on your subscription, here are the available reports.
   
 - [OneDrive for Business usage](onedrive-for-business-usage.md)
 
-- [ProPlus usage](microsoft365-apps-usage.md)
+- [Microsoft 365 Apps usage](microsoft365-apps-usage.md)
   
 - [SharePoint site usage](sharepoint-site-usage.md)
   
