@@ -133,13 +133,13 @@ To view search statistics:
     
 3. In the **Individual results** drop down list, click **Search statistics**.
     
-4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view. 
+4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view:
     
-  - **Summary:** Displays statistics for each type of content locations searched. This contents the number of content locations that contained items that matched the search query, and the total number and size of search result items. This is the default setting.
-    
-  - **Queries:** Displays statistics about the search query. This includes the type of content location the query statistics are applicable to, part of the search query the statistics are applicable to (note that **Primary** indicates the entire search query), the number of the content locations that contain items that match the search query, and the total number and size and items that were found (in the specified content location) that match the search query. Statistics for unindexed items (also called *partially indexed items*) are also displayed. However, only partially indexed items from mailboxes are included in the statistics. Partially indexed items from SharePoint and OneDrive are not included in the statistics.
-    
-  - **Top locations:** Displays statistics about the number of items that match the search query in each content location. The top 1,000 locations are displayed.
+    - **Summary:** Displays statistics for each type of content locations searched. This contents the number of content locations that contained items that matched the search query, and the total number and size of search result items. This is the default setting.
+
+    - **Queries:** Displays statistics about the search query. This includes the type of content location the query statistics are applicable to, part of the search query the statistics are applicable to (note that **Primary** indicates the entire search query), the number of the content locations that contain items that match the search query, and the total number and size and items that were found (in the specified content location) that match the search query. Statistics for unindexed items (also called *partially indexed items*) are also displayed. However, only partially indexed items from mailboxes are included in the statistics. Partially indexed items from SharePoint and OneDrive are not included in the statistics.
+
+    - **Top locations:** Displays statistics about the number of items that match the search query in each content location. The top 1,000 locations are displayed.
     
 For more detailed information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
   
