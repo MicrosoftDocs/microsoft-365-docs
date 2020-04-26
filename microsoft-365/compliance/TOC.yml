@@ -283,7 +283,7 @@
           href: automate-event-driven-retention.md
         - name: Manage the lifecycle of SharePoint documents
           href: auto-apply-retention-labels-scenario.md
-    - name: Dispose of content
+    - name: Dispose of data
       href: disposition.md
     - name: Manage inactive mailboxes
       items: 
