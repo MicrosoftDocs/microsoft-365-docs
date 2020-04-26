@@ -338,7 +338,7 @@
             - name: Automate event-based retention
               href: automate-event-driven-retention.md
         - name: Disposition
-          href: disposition-records.md
+          href: disposition.md
         - name: More about records management
           items: 
             - name: Watch videos about records management
