@@ -16,13 +16,13 @@ ms.collection:
 description: "Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Office 365 Advanced Threat Protection (ATP)."
 ---
 
-# Configure ATP anti-phishing policies in Office 365
+# Configure ATP anti-phishing policies
 
-ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks. For more information about the differences between anti-phishing policies in Exchange Online Protection (EOP) and ATP anti-phishing policies, see [Anti-phishing protection in Office 365](anti-phishing-protection.md).
+ATP anti-phishing policies are part of [Office 365 Advanced Threat Protection](office-365-atp.md). ATP anti-phishing policies can help protect your organization from malicious impersonation-based phishing attacks and other types of phishing attacks. For more information about the differences between anti-phishing policies in Exchange Online Protection (EOP) and ATP anti-phishing policies, see [Anti-phishing protection](anti-phishing-protection.md).
 
 Admins can view, edit, and configure (but not delete) the default ATP anti-phishing policy. For greater granularity, you can also create custom ATP anti-phishing policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
-You can configure ATP anti-phishing policies in the Office 365 Security & Compliance Center or in Exchange Online PowerShell.
+You can configure ATP anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.
 
 For information about configuring the more limited built-in anti-phishing policy that's available in Exchange Online Protection organizations (that is, Office 365 organizations without ATP), see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
 
@@ -68,7 +68,7 @@ To increase the effectiveness of anti-phishing protection, you can create custom
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
-- You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to anti-phishing policies, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-phishing policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to anti-phishing policies, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - For our recommended settings for ATP anti-phishing policies, see [Office ATP anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#office-atp-anti-phishing-policy-settings).
 

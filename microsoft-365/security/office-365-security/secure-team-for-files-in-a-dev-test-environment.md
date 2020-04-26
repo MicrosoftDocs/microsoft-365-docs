@@ -59,9 +59,9 @@ First, create two groups for a typical organization with the Azure portal.
       
 5. Click **Create**, and then close the **Group** blade.
     
-6.	Repeat steps 3-5 for a new group named **Marketing staff**.
+6.    Repeat steps 3-5 for a new group named **Marketing staff**.
     
-Next, you configure automatic licensing so that members of your groups are automatically assigned licenses for your Office 365 and EMS subscriptions.
+Next, you configure automatic licensing so that members of your groups are automatically assigned licenses for your Microsoft 365 and EMS subscriptions.
   
 1. In the Azure portal, click **Azure Active Directory > Licenses > All products**.
     
@@ -121,7 +121,7 @@ Use these steps to verify that group-based licensing is working correctly.
     
 4. In the pane that lists the properties of the **CEO** user account, verify that it has been assigned the **Microsoft 365 Enterprise E5** license (in **Product licenses**).
     
-## Phase 3: Create Office 365 retention labels
+## Phase 3: Create retention labels
 
 In this phase, you create the retention labels for the different levels of security for underlying SharePoint site documents folders.
 
@@ -167,18 +167,18 @@ To create a sensitive-level team for members of the marketing group to collabora
 
 1. [Create a new private team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Marketing Campaigns**.
 2. Open the **Marketing Campaigns** team.
-3.	In the tool bar for the team, click **Files**.
-4.	Click the ellipsis, and then click **Open in SharePoint**.
-5.	In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
-6.	In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
-7.	Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**, and then click **Save**.
+3.    In the tool bar for the team, click **Files**.
+4.    Click the ellipsis, and then click **Open in SharePoint**.
+5.    In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
+6.    In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
+7.    Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**, and then click **Save**.
 
 Next, configure the documents folder of the underlying Marketing Campaigns SharePoint site for the Sensitive label.
 
-1.	In the **Marketing Campaigns-Home** tab of your browser, click **Documents**.
-2.	Click the settings icon, and then click **Library settings**.
-3.	Under **Permissions and Management**, click **Apply label to items in this library**.
-4.	In **Settings-Apply Label**, select **Sensitive**, and then click **Save**. 
+1.    In the **Marketing Campaigns-Home** tab of your browser, click **Documents**.
+2.    Click the settings icon, and then click **Library settings**.
+3.    Under **Permissions and Management**, click **Apply label to items in this library**.
+4.    In **Settings-Apply Label**, select **Sensitive**, and then click **Save**. 
 
 Next, configure a data loss prevention (DLP) policy that notifies users when they share a document on the underlying SharePoint site with the Sensitive label, which includes the Marketing Campaigns site, outside the organization.
 
@@ -232,19 +232,19 @@ To create a highly confidential-level team for members of the senior leadership 
 
 1. [Create a new private team](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b) with the name **Company Strategy**.
 2. Open the **Company Strategy** team.
-3.	In the tool bar for the team, click **Files**.
-4.	Click the ellipsis, and then click **Open in SharePoint**.
-5.	In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
-6.	In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
-7.	Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
-8.	Turn off **Allow access requests**, and then click **Save**.
+3.    In the tool bar for the team, click **Files**.
+4.    Click the ellipsis, and then click **Open in SharePoint**.
+5.    In the tool bar of the underlying SharePoint site, click the settings icon, and then click **Site permissions**.
+6.    In the **Site permissions** pane, under **Sharing Settings**, click **Change sharing settings**.
+7.    Under **Sharing permissions**, choose **Only site owners can share files, folders, and the site**.
+8.    Turn off **Allow access requests**, and then click **Save**.
 
 Next, configure the documents folder of the underlying Company Strategy SharePoint site for the Highly Confidential label.
 
-1.	In the **Company Strategy-Home** tab of your browser, click **Documents**.
-2.	Click the settings icon, and then click **Library settings**.
-3.	Under **Permissions and Management**, click **Apply label to items in this library**.
-4.	In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**. 
+1.    In the **Company Strategy-Home** tab of your browser, click **Documents**.
+2.    Click the settings icon, and then click **Library settings**.
+3.    Under **Permissions and Management**, click **Apply label to items in this library**.
+4.    In **Settings-Apply Label**, select **Highly Confidential**, and then click **Save**. 
 
 Next, configure a DLP policy that blocks users when they share a document on an underlying SharePoint site with the Highly Confidential label, which includes the Company Strategy site, outside the organization.
   

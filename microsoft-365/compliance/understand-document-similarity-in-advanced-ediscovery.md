@@ -1,5 +1,5 @@
 ---
-title: "Understand document similarity in Office 365 Advanced eDiscovery"
+title: "Understand document similarity in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: "Review how document Similarity value, the minimal level of resemblance for two files to be considered near-duplicates, works in Office 365 Advanced eDiscovery.
+description: "Review how document Similarity value, the minimal level of resemblance for two files to be considered near-duplicates, works in Advanced eDiscovery.
 "
 ---
 

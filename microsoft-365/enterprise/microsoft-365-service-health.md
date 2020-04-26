@@ -3,7 +3,7 @@ title: "Microsoft 365 service health status"
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 4/8/2020
+ms.date: 04/19/2020
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -32,7 +32,7 @@ When we detect significant issues within Microsoft's global network or with inte
 
 | Location | Issue Type | Detail |
 | --- | --- | --- |
-| Mexico | ISP Infrastructure (External) | Availability issues detected within Internet Service Provider infrastructure in Mexico could result in a poor Microsoft 365 user experience. Please check the Service Health dashboard for more details. |
+| No current issues | | |
 
 ## Recommendations to improve network experience
 

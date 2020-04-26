@@ -23,7 +23,7 @@ description: "Processing in Advanced eDiscovery includes re-indexing of custodia
 
 *Processing* is the process of file identification, expansion of embedded documents and attachments, text extraction, and OCR (Optical Character Recognition) of image files and the subsequent indexing of that content.  
 
-When you add a custodian to a case on the **Custodians** tab, all partially indexed items from Office 365 are processed to make them fully searchable. Likewise, when content is added to a review set from both Office 365 and non-Office 365 data sources, this content is also processed.
+When you add a custodian to a case on the **Custodians** tab, all partially indexed items from Microsoft 365 are processed to make them fully searchable. Likewise, when content is added to a review set from both Microsoft 365 and non-Microsoft 365 data sources, this content is also processed.
 
 The **Processing** tab in Advanced eDiscovery provides insight into the status of advanced indexing for different processing scenarios.
 
