@@ -83,11 +83,11 @@ Cortana sends a personalized briefing email with tasks and commitments you made 
 
 ### How to opt out of Briefing email
 
-Admins can configure Briefing for their organization using a [toggle](https://docs.microsoft.com/en-us/briefing/be-admin) in the Microsoft 365 admin center. Individuals can opt out of Cortana's Briefing email by selecting Unsubscribe in the footer of the message.
+Admins can configure Briefing for their organization using a [toggle](https://docs.microsoft.com/briefing/be-admin) in the Microsoft 365 admin center. Individuals can opt out of Cortana's Briefing email by selecting Unsubscribe in the footer of the message.
 
 We'll continue to introduce more Cortana in Office 365 features to help increase your organization's productivity.
 
-Learn more about [Microsoft Compliance offerings](https://docs.microsoft.com/en-us/microsoft-365/compliance/offering-home).
+Learn more about [Microsoft Compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home).
 
 ## How is Cortana in Office 365 different from other Cortana features I may have previously experienced?
 
