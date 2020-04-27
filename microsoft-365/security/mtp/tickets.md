@@ -21,7 +21,9 @@ search.appverid:
 
 # Manage tickets through ServiceNow
 
-Microsoft 365 security center is being enhanced with the ability to natively create and track tickets in ServiceNow. Security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created.
+ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Learn more about ServiceNow](https://www.servicenow.com/)
+
+Microsoft 365 security center is now enhanced with the ability to natively create and track tickets in ServiceNow. Security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created. They can then be tracked in the Microsoft security center home page, and ServiceNow.
 
 ## Prerequisites
 
