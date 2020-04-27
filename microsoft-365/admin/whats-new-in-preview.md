@@ -25,6 +25,13 @@ ms.custom:
 
 # What's new in the Microsoft 365 admin center
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Some of the information in this article may not apply to Office 365 operated by 21Vianet.
+
+::: moniker-end
+
 We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 > [!IMPORTANT]
