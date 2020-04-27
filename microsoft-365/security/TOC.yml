@@ -135,8 +135,8 @@
                       href: mtp/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
-                    - name: DeviceFileCertificateInfoBeta
-                      href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
+                    - name: DeviceFileCertificateInfo
+                      href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -185,19 +185,21 @@
                   href: mtp/mtp-permissions.md
                 - name: Set time zone
                   href: mtp/mtp-time-zone.md
+            - name: View device profiles
+              href: mtp:/device-profile.md
             - name: Provide feedback
               href: mtp/feedback.md
             - name: Manage tickets through ServiceNow
               href: ./mtp/tickets.md
 
 
-    - name: Office 365 Security
+    - name: Microsoft 365 Security
       items: 
         - name: Get started
           items: 
-            - name: Office 365 security roadmap
+            - name: Security roadmap
               href: ./office-365-security/security-roadmap.md
-            - name: Configure your Office 365 tenant for increased security
+            - name: Configure your tenant for increased security
               href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
@@ -229,7 +231,7 @@
                       href: ./office-365-security/anti-spam-protection-faq.md
                     - name: Configure anti-spam policies
                       href: ./office-365-security/configure-your-spam-filter-policies.md
-                    - name: Configure the connection filter policy
+                    - name: Configure connection filtering
                       href: ./office-365-security/configure-the-connection-filter-policy.md
                     - name: Create block sender lists
                       href: ./office-365-security/Create-block-sender-lists-in-office-365.md
@@ -279,28 +281,31 @@
                   href: ./office-365-security/zero-hour-auto-purge.md
                 - name: Safety tips in email messages
                   href: ./office-365-security/safety-tips-in-office-365.md
-                - name: Use the delist portal to remove yourself from the Office 365 blocked senders list
+                - name: Use the delist portal to remove yourself from the blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-            - name: Anti-phishing protection in Office 365
+            - name: Anti-phishing protection
               href: ./office-365-security/anti-phishing-protection.md
               items: 
+                - name: Anti-phishing policies
+                  href: ./office-365-security/set-up-anti-phishing-policies.md
+                  items: 
+                  - name: Configure the default anti-phishing policy in EOP
+                    href: ./office-365-security/configure-anti-phishing-policies-eop.md
+                  - name: Configure ATP anti-phishing policies
+                    href: ./office-365-security/configure-atp-anti-phishing-policies.md
+                - name: How Office 365 validates the From address to prevent phishing
+                  href: ./office-365-security/how-office-365-validates-the-from-address.md
                 - name: Tune anti-phishing protection
                   href: ./office-365-security/tuning-anti-phishing.md
-                - name: ATP anti-phishing capabilities in Office 365
-                  href: ./office-365-security/atp-anti-phishing.md
-                - name: Set up anti-phishing and ATP anti-phishing policies
-                  href: ./office-365-security/set-up-anti-phishing-policies.md
-                - name: "How Office 365 validates the From: address to prevent phishing"
-                  href: ./office-365-security/how-office-365-validates-the-from-address.md
-            - name: Anti-spoofing protection in Office 365
+            - name: Anti-spoofing protection
               href: ./office-365-security/anti-spoofing-protection.md
               items: 
-                - name: Learn more about spoof intelligence
+                - name: Anti-spoofing protection FAQ
+                  href: ./office-365-security/anti-spoofing-protection-faq.md
+                - name: Configure spoof intelligence
                   href: ./office-365-security/learn-about-spoof-intelligence.md
-                - name: Walkthrough spoof intelligence insight
+                - name: Walkthrough - ATP Spoof intelligence insight
                   href: ./office-365-security/walkthrough-spoof-intelligence-insight.md
-                - name: Identify suspicious messages in Outlook.com and Outlook on the web
-                  href: ./office-365-security/unverified-sender-feature.md
             - name: Quarantine
               href: ./office-365-security/quarantine-email-messages.md
               items: 
@@ -312,11 +317,12 @@
                   href: ./office-365-security/find-and-release-quarantined-messages-as-a-user.md
                 - name: End-user spam notifications
                   href: ./office-365-security/use-spam-notifications-to-release-and-report-quarantined-messages.md
-            - name: Email validation and authentication
+            - name: Email authentication
+              href: ./office-365-security/email-validation-and-authentication.md
               items: 
-                - name: How Office 365 uses SPF to prevent spoofing
+                - name: How Microsoft 365 uses SPF to prevent spoofing
                   href: ./office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md
-                - name: Set up SPF in Office 365 to help prevent spoofing
+                - name: Set up SPF to help prevent spoofing
                   href: ./office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md
                 - name: Use DKIM to validate outbound email
                   href: ./office-365-security/use-dkim-to-validate-outbound-email.md
@@ -599,7 +605,7 @@
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Office 365 Enterprise
           href: https://docs.microsoft.com/office-365-security/Enterprise
-        - name: Office 365 for Business
+        - name: Microsoft 365 for business
           href: https://docs.microsoft.com/microsoft-365/admin/admin-home
 
     - name: Microsoft 365 Compliance
