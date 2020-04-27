@@ -34,7 +34,7 @@ The Microsoft 365 admin center is the common entry point for all Microsoft 365 a
 
 The new Microsoft 365 admin center, which is currently in preview, is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
 
-The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed by logging in at [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627). Additionally, specialist workspaces, like Security and Device management, allow for more granular control. You can access the specialist workspaces from the navigation pane in the Microsoft 365 admin center.
+The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed by logging in at [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627). Additionally, specialist workspaces, like Azure Active Directory and Exchange, allow for more granular control. You can access the specialist workspaces from the navigation pane in the Microsoft 365 admin center.
 
 ::: moniker-end
 
