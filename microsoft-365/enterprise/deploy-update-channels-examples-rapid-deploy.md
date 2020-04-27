@@ -82,10 +82,6 @@ To be added
 
 ![The resulting configuration of a rapid deployment organizaton](../media/deploy-update-channels-examples-rapid-deploy/channel-summary.png)
 
-## Next step
-
-See the [rapid deployment example for a multi-national organization]().
-
 
 ## See also
 
