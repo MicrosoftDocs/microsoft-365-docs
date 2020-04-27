@@ -1,5 +1,5 @@
 ---
-title: "Give mailbox permissions to another user in Office 365 - Admin Help"
+title: "Give mailbox permissions to another user - Admin Help"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,7 +23,7 @@ ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Learn how to give a user the right to access another user's mailbox. This will give the user the right to read mails and send mails from the other user's mailbox. "
 ---
 
-# Give mailbox permissions to another user in Office 365 - Admin Help
+# Give mailbox permissions to another user - Admin Help
 
 ::: moniker range="o365-worldwide"
 
@@ -44,11 +44,11 @@ Mailbox permissions allow you to give read/write access to a mailbox to another 
   
 The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
   
-- [Read email from another user's mailbox](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [Read email from another user's mailbox](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [Send email from another user's mailbox](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
-    
-- [Send email on behalf of a user](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user)
+- [Send email from another user's mailbox](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [Send email on behalf of another user](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **Changing propagation:**
   

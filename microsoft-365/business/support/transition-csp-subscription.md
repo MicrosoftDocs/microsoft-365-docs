@@ -86,7 +86,7 @@ The following table summarizes the impact to the app management policies on mobi
 | **Reset PIN when login fails** | Restricted access to apps | No app-level access restriction |
 | **Require users to sign in again after Office apps have been idle** | Sign-in required | No sign-in required |
 | **Deny access to work files on jailbroken or rooted devices** | Work files can't be accessed on jailbroken/rooted devices | Work files can be accessed on jailbroken/rooted devices |
-| **Allow users to copy content from Office apps to Personal apps** | Copy/paste restricted to apps available as part of Microsoft 365 Business subscription | Copy/paste available to all apps |
+| **Allow users to copy content from Office apps to Personal apps** | Copy/paste restricted to apps available as part of Microsoft 365 subscription | Copy/paste available to all apps |
 
 ## Windows 10 PC impacts upon subscription expiration
 

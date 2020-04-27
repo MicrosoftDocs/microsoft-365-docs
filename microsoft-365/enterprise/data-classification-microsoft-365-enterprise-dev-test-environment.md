@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom: Ent_TLGs
 ms.assetid: 1aa9639b-2862-49c4-bc33-1586dda636b8
-description: Use this Test Lab Guide to create and use Office 365 retention labels on documents in your Microsoft 365 Enterprise test environment.
+description: Use this Test Lab Guide to create and use retention labels on documents in your Microsoft 365 Enterprise test environment.
 ---
 
 # Data classification for your Microsoft 365 Enterprise test environment
 
 *This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
 
-With the instructions in this article, you configure data classification using Office 365 retention labels in your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you configure data classification using retention labels in your Microsoft 365 Enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
@@ -29,14 +29,14 @@ With the instructions in this article, you configure data classification using O
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
-If you just want to configure Office 365 retention labels in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
+If you just want to configure retention labels in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
-If you want to configure Office 365 retention labels in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
+If you want to configure retention labels in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing Office 365 retention labels does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
+> Testing retention labels does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test automated licensing and group membership and experiment with it in an environment that represents a typical organization. 
 
-## Phase 2: Create Office 365 retention labels
+## Phase 2: Create retention labels
 
 In this phase, you create the retention labels for the different levels of retention for SharePoint Online documents folders.
 
@@ -80,7 +80,7 @@ In this phase, you create the retention labels for the different levels of reten
  
 Note that it might take a few minutes for the retention labels to be published.
 
-## Phase 3: Apply Office 365 retention labels to documents
+## Phase 3: Apply retention labels to documents
 
 In this phase, you discover the default retention label behavior for files in the Documents folder of a SharePoint Online site and manually change the retention label of a document.
 
@@ -128,7 +128,7 @@ Next, create a new document in the SensitiveFiles site and change its retention 
     
 7. In the **Document.docx** pane, under **Apply retention label**, select the **Highly Confidential** label, and then click **Save**.
 
-See the [Configure classification for your environment](infoprotect-configure-classification.md) step in the **Information protection** phase for information and links to how to deploy Office 365 retention labels in production.
+See the [Configure classification for your environment](infoprotect-configure-classification.md) step in the **Information protection** phase for information and links to how to deploy retention labels in production.
 
 ## Next step
 
