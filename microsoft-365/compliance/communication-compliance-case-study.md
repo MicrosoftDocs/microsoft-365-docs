@@ -1,6 +1,6 @@
 ---
 title: "Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications"
-description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications"
+description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
