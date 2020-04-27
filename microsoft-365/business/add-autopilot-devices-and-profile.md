@@ -76,7 +76,7 @@ If you haven't created device groups or profiles yet, the best way to get starte
     
     - Create sign-in experience with your company brand.
     
-    - Connect your devices to Azure Active Directory accounts, and automatically enroll them to be managed by Microsoft 365 Business.
+    - Connect your devices to Azure Active Directory accounts, and automatically enroll them to be managed by Microsoft 365 Business Premium.
     
     For more information, see [About AutoPilot Profile settings](autopilot-profile-settings.md). 
     

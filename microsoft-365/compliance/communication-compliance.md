@@ -146,7 +146,7 @@ The next step is to remediate communication compliance issues you've investigate
 
 Keeping track and managing compliance issues identified by communication compliance policies spans the entire workflow process. As alerts are generated and investigation and remediation actions are implemented, existing policies may need review and updates, and new policies may need to be created.
 
-- **Monitor and report**: Use communication compliance dashboards, reports, export logs, and events recorded in the unified Office 365 audit logs to continually evaluate and improve your compliance posture.
+- **Monitor and report**: Use communication compliance dashboards, reports, export logs, and events recorded in the unified audit logs to continually evaluate and improve your compliance posture.
 
 ## Ready to get started?
 

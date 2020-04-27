@@ -22,14 +22,14 @@ description: "Learn about antivirus protection in SharePoint Online."
 
 # Virus detection in SharePoint Online
 
-Office 365 can help protect your environment from malware by detecting viruses in files that users upload to SharePoint Online. Files may be scanned for viruses after they are uploaded. If a file is found to be infected, a property is set so that users can't download or sync the file.
+Microsoft 365 can help protect your environment from malware by detecting viruses in files that users upload to SharePoint Online. Files may be scanned for viruses after they are uploaded. If a file is found to be infected, a property is set so that users can't download or sync the file.
 
 > [!IMPORTANT]
 > These antivirus capabilities in SharePoint Online are a way to contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to assess and implement antimalware protection at various layers and apply best practices for securing your enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
 
 ## What happens when an infected file is uploaded to SharePoint Online?
 
-Office 365 uses a common virus detection engine. The engine runs asynchronously within SharePoint Online, and scans some files after they're uploaded. Heuristics are used to determine which files are scanned. When a file is found to contain a virus, it's flagged so that it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
+Microsoft 365 uses a common virus detection engine. The engine runs asynchronously within SharePoint Online, and scans some files after they're uploaded. Heuristics are used to determine which files are scanned. When a file is found to contain a virus, it's flagged so that it can't be downloaded again. In April 2018, we removed the 25 MB limit for scanned files.
 
 Here's what happens:
 

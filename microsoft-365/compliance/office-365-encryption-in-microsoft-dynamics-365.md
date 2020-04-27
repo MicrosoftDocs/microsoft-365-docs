@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Encryption in Microsoft Dynamics 365"
+title: "Encryption in Microsoft Dynamics 365"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,7 +15,7 @@ ms.collection: Strat_O365_Enterprise
 description: "Summary: Understand encryption in Microsoft Dynamics 365."
 ---
 
-# Office 365 Encryption in Microsoft Dynamics 365
+# Encryption in Microsoft Dynamics 365
 
 Microsoft uses encryption technology to protect customer data in Dynamics 365 while at rest in a Microsoft database and while it is in transit between user devices and our datacenters. Connections established between customers and Microsoft datacenters are encrypted, and all public endpoints are secured using industry-standard TLS. TLS effectively establishes a security-enhanced browser-to-server connection to help ensure data confidentiality and integrity between desktops and datacenters. After data encryption is activated, it cannot be turned off. For more information, see [Field-level data encryption](https://msdn.microsoft.com/library/dn481562.aspx).
 

@@ -19,9 +19,9 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 # Windows and Office Deployment Lab Kit
 
-These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
+These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
+This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you're currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -64,7 +64,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### Office and LOB App Delivery
 
-  - Office 365 ProPlus deployment 
+  - Microsoft 365 Apps for enterprise
   - Enterprise Managed Deployment using Configuration Manager and Microsoft Intune
   - Application deployment and management using Microsoft Intune
   - App deployment and self-service installation using Microsoft Store for Business
@@ -120,7 +120,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Deployment guide for Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Deployment guide for Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
 
   - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

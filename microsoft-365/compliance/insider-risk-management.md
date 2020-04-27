@@ -36,7 +36,7 @@ Managing and minimizing risk in your organization starts with understanding the 
 
 Employees in the modern workplace have access to create, manage, and share data across a broad spectrum of platforms and services. In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting employee privacy standards.
 
-Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and take action on risk activity. By using logs from Office 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators. These policies allow you to identify risky activities and to take action to mitigate these risks.
+Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and take action on risk activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators. These policies allow you to identify risky activities and to take action to mitigate these risks.
 
 Insider risk management is centered around the following principles:
 

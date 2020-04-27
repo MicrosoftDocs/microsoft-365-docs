@@ -24,7 +24,9 @@ search.appverid:
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the Microsoft 365 security center.
+
+Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
 Secure Score helps organizations:  
 
@@ -50,7 +52,7 @@ Each improvement action is worth 10 points or less. Most are scored in a binary 
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Microsoft Defender ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
+Currently there are recommendations for Microsoft 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Microsoft Defender ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -64,6 +66,7 @@ With read and write access, you can make changes and directly interact with Secu
 * Security administrator
 * Exchange administrator
 * SharePoint administrator
+* Account administrator
 
 ### Read-only roles
 
@@ -146,28 +149,36 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 
 Microsoft Secure Score is a numerical summary of your security posture based on system configurations, user behavior and other security related measurements; it is not an absolute measurement of how likely your system or data will be breached. Rather, it represents the extent to which you have adopted security controls in your Microsoft environment which can help offset the risk of being breached. No online service is completely immune from security breaches, and secure score should not be interpreted as a guarantee against security breach in any manner.
 
-## What's coming?
-
-### MFA improvement action updates
-
-To reflect the need for businesses to ensure the upmost security while applying policies that work with their business, Microsoft Secure Score is removing three improvement actions centered around multi-factor authentication, and adding two.
-
-The three that will be removed:
-- Register all users for multi-factor authentication
-- Require MFA for all users
-- Require MFA for Azure AD privileged roles
-
-New improvement actions:
-- Ensure all users can complete multi-factor authentication for secure access
-- Require MFA for administrative roles
-
- These new improvement actions will require registering your users or admins for multi-factor authentication (MFA) across your directory and establishing the right set of policies that fit your organizational needs. The main goal is have flexibility while ensuring all your users and admins can authenticate with multiple factors or risk-based identity verification prompts. That can take the form of setting security defaults that let Microsoft decide when to challenge users for MFA, or having multiple policies that apply scoped decisions.
-
 ## What's new? 
 
-To make Microsoft Secure Score a better representative of your security posture and improve usability, we have made some changes. Your score and the maximum possible score have changed. However, this does not imply a change in your security posture.
+To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### Updated interface and functionality
+### April 21st 2020
+
+#### Added Azure Active Directory improvement action
+
+- Do not allow users to grant consent to unmanaged applications (currently available in released version)
+
+#### Added Azure Advanced Threat Protection improvement actions
+
+- Disable Print spooler service on domain controllers
+- Modify unsecure Kerberos delegations to prevent impersonation
+- Protect and manage local admin passwords with Microsoft LAPS
+- Reduce lateral movement path risk to sensitive entities
+- Remove dormant accounts from sensitive groups
+- Remove unsecure SID history attributes from entities
+- Resolve unsecure account attributes
+- Stop clear text credentials exposure
+- Stop legacy protocols communication
+- Stop weak cipher usage
+
+#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
+
+All released security recommendations supplied by TVM are now available.
+
+### January - March 2020
+
+#### Updated interface and functionality
 
 * All new metrics and trends views for CISO and lead level discussions
 * New ways to track and benchmark your score
@@ -176,13 +187,13 @@ To make Microsoft Secure Score a better representative of your security posture 
 * Manage towards your future goals using score projections and planned actions
 * And more!
 
-### Removed "not scored" and "review" improvement actions
+#### Removed "not scored" and "review" improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.
 
 For these reasons, all improvement actions that were not scored or required a review cadence have been temporarily removed. No action is needed on your part.
 
-### Simplification of the point system
+#### Simplification of the point system
 
 To standardize points across multiple experiences, each Secure Score improvement action point total has been updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.
 

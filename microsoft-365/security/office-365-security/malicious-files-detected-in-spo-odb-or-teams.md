@@ -22,13 +22,13 @@ description: "Learn where to go to view information about malicious files detect
 
 [Office 365 ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md) protects your organization from malicious files in document libraries and team sites. When a malicious file is detected, that file is blocked so that no one can open, copy, move, or share it until further actions are taken by the organization's security team. Read this article to learn how to view information about detected files and what actions to take. 
 
-In order to perform the tasks described in this article, you must have the necessary [permissions for the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+In order to perform the tasks described in this article, you must have the necessary [permissions for the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## View reports with information about detected files
 
 To view status and detailed information about files that were detected by Office 365 ATP, you can use the Threat Protection Status report.
   
-1. In the [Office 365 Security &amp; Compliance Center](https://protection.office.com), choose **Reports** \> **Dashboard** \> **Threat Protection Status**.
+1. In the [Security &amp; Compliance Center](https://protection.office.com), choose **Reports** \> **Dashboard** \> **Threat Protection Status**.
     
 2. In the upper right corner of the report, choose **View details table**.
     
@@ -40,7 +40,7 @@ To view status and detailed information about files that were detected by Office
   
 ## View and take action on files in quarantine
 
-1. In the Office 365 Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**. (You can also go directly to [https://protection.office.com/quarantine](https://protection.office.com/quarantine).)
+1. In the Security &amp; Compliance Center, choose **Threat management** \> **Review** \> **Quarantine**. (You can also go directly to [https://protection.office.com/quarantine](https://protection.office.com/quarantine).)
     
 2. In the upper left corner, change the drop-down menu from **Emails** to **Files**. If the list of results includes too many items, use the **Filter** functionality to narrow down the selection.
     

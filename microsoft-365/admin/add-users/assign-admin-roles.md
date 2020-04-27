@@ -6,7 +6,7 @@ ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -121,7 +121,7 @@ You might not have the correct permissions and so you don't have access to assig
 
 [Assign roles to user accounts with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
-[Authorize or remove partner relationships](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner)
+[Authorize or remove partner relationships](../misc/add-partner.md)
 
 [Add an alternative email address using the Exchange admin center](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
 

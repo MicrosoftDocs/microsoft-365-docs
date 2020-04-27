@@ -89,11 +89,11 @@ The following clients are recommended when a secure documents policy has been ap
 
 <sup>*</sup> Learn more about using conditional access with the [OneDrive sync client](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
 
-### Office 365 client support
-For more information about Office 365 client support, see the following articles:
-- [Office 365 Client App Support - Conditional Access](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Office 365 Client App Support - Mobile Application Management](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Office 365 Client App Support - Modern Authentication](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+### Microsoft 365 client support
+For more information about client support, see the following articles:
+- [Microsoft 365 Client App Support - Conditional Access](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Microsoft 365 Client App Support - Mobile Application Management](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Microsoft 365 Client App Support - Modern Authentication](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## Protecting administrator accounts
 Azure AD provides a simple way for you to begin protecting administrator access with a preconfigured conditional access policy. In Azure AD, go to **Conditional access** and look for this policy — **Baseline policy: Require MFA for admins (preview)**. Select this policy and then select **Use policy immediately**. 
@@ -110,7 +110,7 @@ For more information, see [Baseline security policy for Azure AD admin accounts]
 Additional recommendations include the following:
 - Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. See [Start using PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
 - [Use privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
-- Use administrator accounts only for administration. Admins should have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. [Office 365 administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) roles have substantially more privileges than Office 365 services.
+- Use administrator accounts only for administration. Admins should have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. [Microsoft 365 administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) roles have substantially more privileges than Microsoft 365 services.
 - Follow best practices for securing privileged accounts in Azure AD as described in this [article](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
 ## Next steps
