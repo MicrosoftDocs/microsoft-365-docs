@@ -62,7 +62,7 @@ Here are some things to know about how this feature currently works as of Januar
     
 ## Prevent last password from being used again
 
-If you want to prevent your users from recycling old passwords, you can do so in Azure AD. See [Enfore password history](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
+If you want to prevent your users from recycling old passwords, you can do so in Azure AD. See [Enforce password history](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
 
 In addition, if an employee used a mobile device to access Microsoft 365, you can wipe it to ensure the password is no longer stored and recycled from there. To learn more, see [Wipe and block a former employee's mobile device](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 
