@@ -1,6 +1,6 @@
 ---
-title: "Case study - Contoso quickly configures an offensive language policy for Microsoft Teams and Exchange communications"
-description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for offensive language in Microsoft Teams and Exchange Online communications"
+title: "Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications"
+description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 ---
 
-# Case study - Contoso quickly configures an offensive language policy for Microsoft Teams and Exchange communications
+# Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications
 
 Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 
@@ -36,7 +36,7 @@ This case study will cover the basics for quickly configuring a communication co
 
 ## Step 1 - Planning for communication compliance
 
-Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft 365 and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will monitor for offensive language for chats sent in Microsoft Teams in email messages sent in Exchange Online. Their plan includes identifying:
+Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft 365 and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will monitor for offensive language for chats sent in Microsoft Teams, private messages and community conversations in Yammer, and in email messages sent in Exchange Online. Their plan includes identifying:
 
 - The IT administrators that need access to communication compliance features.
 - The compliance specialists that need to create and manage communication policies.
