@@ -31,7 +31,7 @@ When you first open Explorer (or the real-time detections report), the default v
 |---------|---------|---------|
 |ATP P1 trial     | Real-time detections        |   7      |
 |ATP P1 paid     |   Real-time detections      |    30     |
-|ATP P1 paid testing ATP P2 trial     | Threat Explorer   |   7      |
+|ATP P1 paid testing ATP P2 trial     | Threat Explorer   |   7   |
 |ATP P2 trail     |  Threat Explorer       |     7    |
 |ATP P2 paid     |     Threat Explorer    |  30       |
 
