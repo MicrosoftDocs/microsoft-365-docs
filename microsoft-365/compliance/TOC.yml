@@ -243,15 +243,17 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Set up a connector to archive Facebook data
+        - name: Archive Facebook data
           href: archive-facebook-data-with-sample-connector.md
-        - name: Set up a connector to archive Twitter data
+        - name: Archive Twitter data
           href: archive-twitter-data-with-sample-connector.md
-        - name: Set up a connector to archive LinkedIn data
+        - name: Archive LinkedIn data
           href: archive-linkedin-data.md
-        - name: Set up a connector to archive Instant Bloomberg data
+        - name: Archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
-        - name: Set up a connector to import HR data
+        - name: Archive Bloomberg Message data
+          href: archive-bloomberg-message-data.md
+        - name: Import HR data
           href: import-hr-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md

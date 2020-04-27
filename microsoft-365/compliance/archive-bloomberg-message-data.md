@@ -15,9 +15,9 @@ description: "Administrators can set up a data connector to import data from the
 ---
 
 
-# Set up a connector to archive Bloomberg Message data
+# Set up a connector to archive Bloomberg Message data (preview)
 
-Use a data connector in the Microsoft 365 compliance center to import and archive financial services email data from the [<span class="underline">Bloomberg Message</span>](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP (SFTP) site once every day, and imports email items to mailboxes in Microsoft 365.
+Use a data connector in the Microsoft 365 compliance center to import and archive financial services email data from the [Bloomberg Message](https://www.bloomberg.com/professional/product/collaboration/) collaboration tool. After you set up and configure a connector, it connects to your organization's Bloomberg secure FTP (SFTP) site once every day, and imports email items to mailboxes in Microsoft 365.
 
 After Bloomberg Message data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation hold, content search, In-place archiving, auditing, Communication compliance, and Microsoft 365 retention policies to Bloomberg Message data. For example, you can search Bloomberg Message emails using the content search tool or associate the mailbox that contains the Bloomberg Message data with a custodian in an Advanced eDiscovery case. Using a Bloomberg Message connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
@@ -49,9 +49,9 @@ Many of the implementation steps required to archive Bloomberg Message data are 
 
    For information about Bloomberg SFTP (also called *BB-SFTP*):
 
-   - See the "SFTP Connectivity Standards" document at [<span class="underline">Bloomberg Support</span>](https://www.bloomberg.com/professional/support/documentation/).
+   - See the "SFTP Connectivity Standards" document at [Bloomberg Support](https://www.bloomberg.com/professional/support/documentation/).
 
-   - Contact [<span class="underline">Bloomberg customer support</span>](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
+   - Contact [Bloomberg customer support](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
 
    > [!NOTE]
    > If your organization already deployed a connector to archive Instant Bloomberg data, you don't need to set up another SFTP site. You can use the same SFTP site for the Bloomberg Message connector.
