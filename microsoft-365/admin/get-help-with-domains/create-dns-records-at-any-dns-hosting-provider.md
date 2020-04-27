@@ -122,15 +122,15 @@ Find the page where you can create records for your domain.
 
 ::: moniker-end
 
-1. On your DNS host's website, add a new MX record.
+4. On your DNS host's website, add a new MX record.
     
     Now you'll [get the information for the MX record](../get-help-with-domains/information-for-dns-records.md) from Microsoft 365. 
     
-2. For the MX record (in the step above), copy the **Points to address** value. 
+5. For the MX record (in the step above), copy the **Points to address** value. 
     
     You'll use this value in the record you're creating on your DNS host's site, as described in the next step.
     
-3. In the new MX record on your DNS host's site, make sure that the fields are set to precisely the following values:
+6. In the new MX record on your DNS host's site, make sure that the fields are set to precisely the following values:
     
    - **Record Type**: **MX**
     
@@ -144,7 +144,7 @@ Find the page where you can create records for your domain.
     
    - **TTL**: Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. 
     
-4. Save the record.
+7. Save the record.
     
 Remove any other MX records.
   
@@ -226,11 +226,11 @@ On your DNS host's website, you'll create three new CNAME records, typically one
 > [!IMPORTANT]
 > If you have Mobile Device Management (MDM) for Microsoft 365, then you must create two additional CNAME records. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > (If you do not have MDM, you can skip this step.) 
   
-    |||||
-    |:-----|:-----|:-----|:-----|
-    |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-    |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
-    |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 hour  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |1 hour  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment.manage.microsoft.com  <br/> |1 hour  <br/> |
    
 ::: moniker-end
 
@@ -239,11 +239,11 @@ On your DNS host's website, you'll create three new CNAME records, typically one
 > [!IMPORTANT]
 > If you have Mobile Device Management (MDM) for Microsoft 365, then you must create two additional CNAME records. Follow the procedure that you used for the other four CNAME records, but supply the values from the following table. > (If you do not have MDM, you can skip this step.) 
   
-    |||||
-    |:-----|:-----|:-----|:-----|
-    |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
-    |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hour  <br/> |
-    |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 hour  <br/> |
+   |||||
+   |:-----|:-----|:-----|:-----|
+   |**Record Type** <br/> |**Host** <br/> |**Points to** <br/> |**TTL** <br/> |
+   |CNAME (Alias)  <br/> |enterpriseregistration  <br/> |enterpriseregistration.microsoftonline.de  <br/> |1 hour  <br/> |
+   |CNAME (Alias)  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |1 hour  <br/> |
    
 ::: moniker-end
 
@@ -348,8 +348,8 @@ On your DNS host's website, you'll create two new SRV records, typically one at 
     >  For **Priority**, **Weight**, and **Port**: If your DNS host doesn't provide these fields for SRV records, you must specify them as the record's **Target** value. (Note: Depending on your DNS host, the **Target** field might be called something else, like: **Content**, **IP Address**, or **Target Host**.) To set up the combined value, you create a single string, separating the values with spaces and ending with a dot. The values must be included in this order: Priority, Weight, Port, Target. For example: **Target**: 100 1 443 sipdir.online.lync.com. 
     > 
     >  Variation for **Priority**, **Weight**, and **Port**: Some DNS hosts provide some, but not all, of the required fields separately. For these DNS host sites, specify the values that aren't shown separately as a combined string, in order, for the record's **Target** value. (Note: Depending on your DNS host, the **Target** field might be called something else, like: **Content**, **IP Address**, or **Target Host**.) To set up the combined value, you create a single string for the fields that aren't shown individually, separating the values with spaces. The values must be included  *in order*  , leaving out the values that have separate fields available: Priority, Weight, Port, Target. For example, when Priority has a separate field, concatenate only the Weight, Port, and Target values: **Target**: 1 443 sipdir.online.lync.com 
-
-> For **TTL**: Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. 
+    > 
+    > For **TTL**: Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. 
   
 2. When you've finished, save the records.
     
