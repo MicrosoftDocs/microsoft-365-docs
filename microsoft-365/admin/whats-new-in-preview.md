@@ -257,7 +257,7 @@ Technically, this isn't the Microsoft 365 admin center's news to tell, but we're
 > [!IMPORTANT]
 > You can now get to YOUR SharePoint admin center with a regular URL: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
-For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 
 ## September 2019
 
