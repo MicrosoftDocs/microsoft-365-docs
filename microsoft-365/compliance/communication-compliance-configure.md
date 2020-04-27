@@ -101,7 +101,16 @@ For more information about setting up groups, see:
 - [Create and manage distribution groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Overview of Microsoft 365 Groups](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
 
-## Step 4 (required): Create a communication compliance policy
+## Step 4 (optional): Verify your Yammer tenant is in Native Mode
+
+In Native Mode, all Yammer users are in Azure Active Directory (AAD), all groups are Office 365 Groups, and all files are stored in SharePoint Online. You Yammer tenant must be in NAtive Mode for communication compliance policies to scan and identify risky conversations in private messages and community conversations in Yammer.
+
+For more information about configuring Yammer in Native Mode, see:
+
+- [Overview of Yammer Native Mode in Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode)
+- [Configure your Yammer network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode)
+
+## Step 5 (required): Create a communication compliance policy
   
 >[!Important]
 >Using PowerShell to create and manage communication compliance policies is not supported. To create and manage these policies, you must use the policy management controls in the [Microsoft 365 communication compliance solution](https://compliance.microsoft.com/supervisoryreview).
@@ -142,7 +151,7 @@ For more information about setting up groups, see:
 
 6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
-## Step 5 (optional): Create employee notice templates
+## Step 6 (optional): Create employee notice templates
 
 If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
 
@@ -162,7 +171,7 @@ If you want to have the option of responding to a policy alert by sending a remi
 
 5. Select **Save** to create and save the notice template.
 
-## Step 6 (optional): Test your communication compliance policy
+## Step 7 (optional): Test your communication compliance policy
 
 After you create a communication compliance policy, it's a good idea to test it to make sure that the conditions you defined are being properly enforced by the policy. You may also want to [test your data loss prevention (DLP) policies](create-test-tune-dlp-policy.md) if your communication compliance policies include sensitive information types. Make sure you give your policies time to activate so that the communications you want to test are captured.
 
