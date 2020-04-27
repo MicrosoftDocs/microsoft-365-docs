@@ -97,13 +97,13 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 - If you delete a label that's been applied to a document in SharePoint, rather than remove the label from the applicable label policy, the document when downloaded won't be labeled or encrypted. In comparison, if the labeled document is stored outside SharePoint, the document remains encrypted if the label is deleted. Note that although you might delete labels during a testing phase, it's very rare to delete a label in a production environment.
 
-## Enable sensitivity labels for SharePoint and OneDrive (opt-in)
+## How to enable sensitivity labels for SharePoint and OneDrive (opt-in)
 
-You must use PowerShell to enable these new capabilities.
+You must use PowerShell to enable these new capabilities that support sensitivity labels for Office files in SharePoint and OneDrive.
 
 ### Prepare the SharePoint Online Management Shell
 
-Before you enable sensitivity labels for Office files in SharePoint and OneDrive, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above. If you already have the latest version, you can skip to next procedure to run the PowerShell command.
+Before you enable sensitivity labels for Office files in SharePoint and OneDrive, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or later. If you already have the latest version, you can skip to next procedure to run the PowerShell command.
 
 1. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
 
@@ -122,7 +122,7 @@ Before you enable sensitivity labels for Office files in SharePoint and OneDrive
 
 6. After you have downloaded the file, run the file and follow the steps in the Setup Wizard.
 
-## Use Powershell to enable support for sensitivity labels
+### Use Powershell to enable support for sensitivity labels
 
 To enable the new capabilities, use the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet:
 
@@ -149,7 +149,7 @@ We recommend that you follow these steps:
 
 3. Publish the label more broadly.
 
-## Disable sensitivity labels for SharePoint and OneDrive (opt-out)
+## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 
 If you disable these new capabilities, files that you uploaded after you enabled sensitivity labels for SharePoint and OneDrive continue to be protected by the label because the label settings continue to be enforced. When you apply sensitivity labels to new files after you disable these new capabilities, full-text search, eDiscovery, and coauthoring will no longer work.
 
