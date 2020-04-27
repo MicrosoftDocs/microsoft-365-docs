@@ -35,4 +35,4 @@ By turning on Microsoft Threat Protection (MTP), you consent to the following te
 For more information on the data storage and privacy information of the specific products see:
 - [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Cloud App Security data security and privacy](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
-- [Office 365 privacy, security, and transparency](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Microsoft 365 privacy, security, and transparency](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

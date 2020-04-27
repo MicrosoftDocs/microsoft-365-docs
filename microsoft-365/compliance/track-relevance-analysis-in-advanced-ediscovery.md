@@ -1,5 +1,5 @@
 ---
-title: "Track Relevance analysis in Office 365 Advanced eDiscovery"
+title: "Track Relevance analysis in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: "Learn how to view and interpret the Relevance training status and results for case issues in Office 365 Advanced eDiscovery. 
+description: "Learn how to view and interpret the Relevance training status and results for case issues in Advanced eDiscovery. 
 "
 ---
 

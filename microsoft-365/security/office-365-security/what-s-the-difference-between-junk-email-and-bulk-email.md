@@ -20,7 +20,7 @@ description: "This topic explains the difference between junk email (spam) and b
 
 # What's the difference between junk email and bulk email?
 
-Office 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes sometimes ask: "what's the difference between junk email and bulk email?" This topic explains the difference and describes the controls that are available in EOP.
+Microsoft 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes sometimes ask: "what's the difference between junk email and bulk email?" This topic explains the difference and describes the controls that are available in EOP.
 
 - **Junk email** is spam, which are unsolicited and universally unwanted messages (when identified correctly). By default, the EOP rejects spam based on the reputation of the source email server. If a message passes source IP inspection, it's sent to spam filtering. If the message is classified as spam by spam filtering, the message is (by default) delivered to the intended recipients and moved to their Junk Email folder.
 
@@ -36,7 +36,7 @@ Office 365 customers with mailboxes in Exchange Online or standalone Exchange On
 
 Because of the mixed reaction to bulk email, there isn't universal guidance that applies to every organization.
 
-Anti-spam policies have a default BCL threshold that's used to identify bulk email as spam. Admins can increase or decrease the threshold. For more information, see the following topics:
+Anti-spam polices have a default BCL threshold that's used to identify bulk email as spam. Admins can increase or decrease the threshold. For more information, see the following topics:
 
 - [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 

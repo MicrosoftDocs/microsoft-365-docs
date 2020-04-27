@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: "Learn how to make a CSV file for AutoPilo tin Microsoft 365 Business."
+description: "Learn how to make a CSV file for AutoPilot in Microsoft 365 for business."
 ---
 
 # Device list CSV-file
@@ -44,9 +44,9 @@ When you add devices, you also need to add them to a Profile. A profile is used 
   
 ## Related articles
 
-[Microsoft 365 Business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Get started with Microsoft 365 Business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Get started with Microsoft 365 for business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
   
-[Manage Microsoft 365 Business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[Manage Microsoft 365 for business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
   

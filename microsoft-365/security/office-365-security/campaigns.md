@@ -1,5 +1,5 @@
 ---
-title: "Campaigns Views in Office 365 ATP"
+title: "Campaigns Views in ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,9 +19,9 @@ ms.collection:
 description: "Learn about Campaign Views in Office 365 Advanced Threat Protection."
 ---
 
-# Campaign Views in Office 365 ATP
+# Campaign Views in ATP
 
-Campaign Views is a feature in Advanced Threat Protection (ATP) in the Office 365 Security & Compliance Center that identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
+Campaign Views is a feature in Advanced Threat Protection (ATP) in the Security & Compliance Center that identifies and categorizes phishing attacks in the service. Campaign Views can help you to:
 
 - Efficiently investigate and respond to phishing attacks.
 
@@ -35,7 +35,7 @@ Campaign Views lets you see the big picture of an attack faster and more complet
 
 A campaign is a coordinated email attack against one or many organizations. Email attacks that steal credentials and company data are a big and lucrative industry. As technologies increase in an effort to stop attacks, attackers modify their methods in an effort to ensure continued success.
 
-Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire Office 365 service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
+Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
 
 - **Attack source**: Source IP addresses and sender email domains.
 
@@ -47,7 +47,7 @@ Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malwa
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
-## Campaign Views the Office 365 Security & Compliance Center
+## Campaign Views the Security & Compliance Center
 
 Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**.
 

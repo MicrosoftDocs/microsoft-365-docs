@@ -16,7 +16,7 @@ ms.collection:
 description: "Learn about the basic anti-phishing policy in Exchange Online Protection (EOP) and the advanced ATP anti-phishing policies in Office 365 Advanced Threat Protection."
 ---
 
-# Anti-phishing policies in Office 365
+# Anti-phishing policies in Microsoft 365
 
 Policies to configure anti-phishing protection settings are available in Office 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (ATP) organizations.
 
@@ -29,7 +29,7 @@ ATP anti-phishing policies are only available in organizations that have Office 
 
 ATP anti-phishing policies include a built-in default anti-phishing policy, and you can create additional custom ATP anti-phishing policies.
 
-Other Office 365 organizations with Exchange Online mailboxes or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have a built-in default anti-phishing policy, but you can't create additional policies. Only organizations with Exchange Online mailboxes can modify their default anti-phishing policy.
+Other Microsoft 365 organizations with Exchange Online mailboxes or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have a built-in default anti-phishing policy, but you can't create additional policies. Only organizations with Exchange Online mailboxes can modify their default anti-phishing policy.
 
 The high-level differences between anti-phishing policies and ATP anti-phishing policies are described in the following table:
 
@@ -50,30 +50,30 @@ To configure anti-phishing policies, see the following topics:
 
 - [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md)
 
-- [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md)
+- [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
 The rest of this topic describes the settings that are available in EOP and ATP anti-phishing policies.
 
 ## Spoof settings
 
-Spoofing is when the From address in an email message (the sender address that's show in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Office 365](anti-spoofing-protection.md).
+Spoofing is when the From address in an email message (the sender address that's show in email clients) doesn't match the domain of the email source. For more information about spoofing, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
 
 The following spoof settings are available in anti-phishing policies and ATP anti-phishing policies:
 
-- **Anti-spoofing protection**: Enables or disables anti-spoofing protection. We recommend that you leave it enabled. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
+- **Anti-spoofing protection**: Enables or disables anti-spoofing protection. We recommend that you leave it enabled. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Spoof settings are enabled by default in the default anti-phishing policy in EOP, the default ATP anti-phishing policy, and in new custom ATP anti-phishing policies that you create. <br/><br/> You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Spoof settings are enabled by default in the default anti-phishing policy in EOP, the default ATP anti-phishing policy, and in new custom ATP anti-phishing policies that you create. <br/><br/> You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   For messages from blocked spoofed senders, you can also specify the action to take on the messages:
 
-  - **Move message to Junk Email folder**: This is the default value. The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Move message to Junk Email folder**: This is the default value. The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following topics:
 
-    - [Quarantine in Office 365](quarantine-email-messages.md)
-    - [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md)
-    - [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Quarantine in Microsoft 365](quarantine-email-messages.md)
+    - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
 - **Unauthenticated Sender**: Enables or disables unidentified sender identification in Outlook. Specifically:
 
@@ -83,7 +83,7 @@ The following spoof settings are available in anti-phishing policies and ATP ant
 
   To prevent these identifiers from being added to messages from specific senders, you have the following options:
 
-  - Allow the sender to spoof in the spoof intelligence policy. For instructions, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
+  - Allow the sender to spoof in the spoof intelligence policy. For instructions, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   - [Configure email authentication](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) for the sender domain.
   
@@ -113,7 +113,7 @@ The following policy settings are only available in ATP anti-phishing policies:
 
   - **Recipient is**: One or more mailboxes, mail users, or mail contacts in your organization.
   - **Recipient is a member of**: One or more groups in your organization.
-  - **The recipient domain is**: One or more of the configured accepted domains in Office 365.
+  - **The recipient domain is**: One or more of the configured accepted domains in Microsoft 365.
 
   - **Except when**: Exceptions for the rule. The settings and behavior are exactly like the conditions:
 
@@ -147,13 +147,13 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
   - **Redirect message to other email addresses**: Sends the message to the specified recipients instead of the intended recipients.
 
-  - **Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Move message to Junk Email folder**: The message is delivered to the mailbox and moved to the Junk Email folder. In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
     - **Quarantine the message**: Sends the message to quarantine instead of the intended recipients. For information about quarantine, see the following topics:
 
-    - [Quarantine in Office 365](quarantine-email-messages.md)
-    - [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md)
-    - [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+    - [Quarantine in Microsoft 365](quarantine-email-messages.md)
+    - [Manage quarantined messages and files as an admin in Microsoft 365](manage-quarantined-messages-and-files.md)
+    - [Find and release quarantined messages as a user in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
   - **Deliver the message and add other addresses to the Bcc line**: Deliver the message to the intended recipients and silently deliver the message to the specified recipients.
 
@@ -167,7 +167,7 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
 - **Mailbox intelligence**: Enables or disables artificial intelligence (AI) that determines user email patterns with their frequent contacts. This setting helps the AI distinguish between legitimate and spoofed email from those contacts. Mailbox intelligence is only available for Exchange Online mailboxes.
 
-- **Mailbox intelligence based impersonation protection**: Enables or disables enhanced impersonation results based on each user's individual sender map. This intelligence allows Office 365 to customize user impersonation detection and better handle false positives. When user impersonation is detected, you can define a specific action to take on the message:
+- **Mailbox intelligence based impersonation protection**: Enables or disables enhanced impersonation results based on each user's individual sender map. This intelligence allows Microsoft 365 to customize user impersonation detection and better handle false positives. When user impersonation is detected, you can define a specific action to take on the message:
 
   - **Don't apply any action**
   - **Redirect message to other email addresses**
