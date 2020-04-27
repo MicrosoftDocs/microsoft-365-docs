@@ -1,5 +1,5 @@
 ---
-title: "Customize the Microsoft 365 theme for your organization"
+title: "Customize the theme for your organization"
 f1.keywords:
 - CSH
 ms.author: twerner
@@ -38,7 +38,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
     - **Use a custom logo image**: Choose whether to use an image from a URL or to upload an image. If you use a URL, please ensure that the URL uses HTTPS and is 200 x 30 pixels of any format of any size. You may upload a logo under 10 KB that is 200 x 30 pixels in JPG, PNG, GIF, or SVG format.
 
       > [!NOTE]
-      > For the logo to appear in SharePoint mobile app, use only SVG images. Images uploaded in any other format don’t display in the app. After you upload the SVG image, users see this new logo on their primary tabs in SharePoint mobile app, like News, Find, and Me. Make sure to relaunch SharePoint mobile app for the logo to render properly. Logos are not clickable in SharePoint mobile app.
+      > For the logo to appear in the SharePoint mobile app, use only SVG images. Images uploaded in any other format don't display in the app. Logos are not clickable in the SharePoint Mobile app.
 
     - **Make logo clickable**: You may use your logo in the navigation bar as a link to any company resource. You may enter the URL for the logo here, starting with http:// or https://. This is optional.
 

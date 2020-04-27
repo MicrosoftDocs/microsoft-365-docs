@@ -76,7 +76,7 @@ To limit external sharing to members of a security group
     b. **Let only users in selected security groups share with authenticated external users and using anonymous links** to specify a security group that can share with authenticated users and by using Anyone links
 4. Click **OK**.
 
-Note that this affects files, folders, and sites, but not Office 365 groups or Teams. When members invite guests to a private Office 365 group or a private team in Microsoft Teams, the invitation is sent to the group or team owner for approval.
+Note that this affects files, folders, and sites, but not Microsoft 365 groups or Teams. When members invite guests to a private Microsoft 365 group or a private team in Microsoft Teams, the invitation is sent to the group or team owner for approval.
 
 ## See Also
 

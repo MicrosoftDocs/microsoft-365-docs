@@ -10,17 +10,34 @@ ms.collection: M365-modern-desktop
 
 # Microsoft Managed Desktop supported regions and languages
 
-This topic provides details about regions and languages supported by Microsoft Managed Desktop. 
+This article provides details about regions and languages supported by Microsoft Managed Desktop and the regions where you can use it.
 
-- **Regions:** United States, Canada (excluding Quebec), United Kingdom, Belgium, Luxembourg, the Netherlands, Australia, and New Zealand
-- **Languages:** English is the only supported language currently available to users on managed devices. This is applicable to both [Admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [End-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support) options. 
+## Supported languages
 
-However, customers can still use managed devices outside of the regions listed above without an interruption to the Microsoft Managed Desktop service. For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America.
-
-For more information about user support with Microsoft Managed Desktop, see [support for Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
-
-If a user prefers to work in a language other than English, they can request that their local IT administrator centrally deploy additional language packs on managed devices through the Intune Company Portal app. Starting with Windows 10, version 1803, language packs are delivered as appx packages from Microsoft Store. To learn more, see [Microsoft Store for Business apps](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/deploy-apps#msfb-apps).
+English is the only language available to users of Microsoft Managed Desktop. This includes all user interfaces for both end users and administrators and all interactions with both [admin support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/admin-support) and [end-user support](https://docs.microsoft.com/microsoft-365/managed-desktop/working-with-managed-desktop/end-user-support).
 
 
->[!NOTE]
->The GetHelp app on a Microsoft Managed Desktop device supports English only. For users to obtain help with Microsoft Managed Desktop through the GetHelp app, they must switch the display language to English.
+You can still use managed devices outside of English-speaking regions without an interruption to the Microsoft Managed Desktop service. For example, an employee based in the United Kingdom can work securely and receive updates on their managed device while traveling Asia, Europe, or South America. 
+
+For more information about user support with Microsoft Managed Desktop, see [Support for Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/support).
+
+## Availability of the service
+
+Organizations in the following countries can subscribe to Microsoft Managed Desktop:
+
+- United States
+- Canada (excluding Quebec)
+- United Kingdom
+- Ireland
+- Belgium
+- Luxembourg
+- Netherlands
+- Sweden
+- Finland
+- Norway
+- Denmark
+- Iceland
+- Australia
+- New Zealand
+
+Both end users and administrators in these regions must use English for their devices and management tools. 

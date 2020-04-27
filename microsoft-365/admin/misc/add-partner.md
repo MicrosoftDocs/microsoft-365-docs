@@ -6,7 +6,7 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: "Learn how to add a subscription advisor partner as partner of record at the time of Office 365 purchase, change the partner, or delete a partner from a subscription."
+description: "Learn how to add a subscription advisor partner as partner of record at the time of Microsoft 365 purchase, change the partner, or delete a partner from a subscription."
 ---
 
 # Add, change, or delete a subscription advisor partner
@@ -32,13 +32,13 @@ description: "Learn how to add a subscription advisor partner as partner of reco
 
 ::: moniker range="o365-worldwide"
 
-An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Office 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website. 
+An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Microsoft 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website. 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+The partner you choose depends on the Microsoft services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
 
 ::: moniker-end
 
@@ -267,4 +267,4 @@ If you are removing a reseller relationship the **Delete** option is grayed out,
 
 ## Related articles
 
-[Find your Office 365 partner or reseller](../manage/find-your-partner-or-reseller.md)
+[Find your Microsoft 365 partner or reseller](../manage/find-your-partner-or-reseller.md)

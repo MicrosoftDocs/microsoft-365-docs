@@ -50,7 +50,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the left pane of the security and compliance center, select **Permissions**, and then select the checkbox next to **eDiscovery Manager**.
     
@@ -89,7 +89,7 @@ This role lets users create, edit, delete, and control access to eDiscovery and 
 
 ### Compliance Search
 
-This role lets users run the Content Search tool in the Security & Compliance Center to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Office 365 Groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but additional roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
+This role lets users run the Content Search tool in the Security & Compliance Center to search mailboxes and public folders, SharePoint Online sites, OneDrive for Business sites, Skype for Business conversations, Microsoft 365 groups, and Microsoft Teams, and Yammer groups. This role allows a user to get an estimate of the search results and create export reports, but additional roles are needed to initiate content search actions such as previewing, exporting, or deleting search results.
 
 Users who are assigned the Compliance Search role but don't have the Preview role can preview the results of a search in which the preview action has been initiated by a user who is assigned the Preview role. The user without the Preview role can preview results for up to two weeks after the initial preview action was created.
 
@@ -105,7 +105,7 @@ For more information about exporting search results, see [Export search results 
 
 ### Hold
 
-This role lets users place content on hold in mailboxes, public folders, sites, Skype for Business conversations, and Office 365 groups. When content is on hold, content owners can still modify or delete the original content, but the content will be preserved until the hold is removed or until the hold duration expires. 
+This role lets users place content on hold in mailboxes, public folders, sites, Skype for Business conversations, and Microsoft 365 groups. When content is on hold, content owners can still modify or delete the original content, but the content will be preserved until the hold is removed or until the hold duration expires. 
 
 For more information about holds, see:
 
@@ -130,7 +130,7 @@ This role lets users decrypt rights-protected email messages when exporting sear
 
 ### Search And Purge
 
-This role lets users perform bulk removal of data matching the criteria of a content search. For more information, see [Search for and delete email messages in your Office 365 organization](search-for-and-delete-messages-in-your-organization.md). 
+This role lets users perform bulk removal of data matching the criteria of a content search. For more information, see [Search for and delete email messages in your organization](search-for-and-delete-messages-in-your-organization.md). 
 
 ## More information
 
@@ -146,7 +146,7 @@ This role lets users perform bulk removal of data matching the criteria of a con
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
   ```
 
-    Exchange distribution groups and Office 365 groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by using the `New-DistributionGroup -Type Security` command. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the Microsoft 365 admin center. It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
+    Exchange distribution groups and Microsoft 365 Groups aren't supported. You must use a mail-enabled security group, which you can create in Exchange Online PowerShell by using the `New-DistributionGroup -Type Security` command. You can also create a mail-enabled security group (and add members) in the Exchange admin center or in the Microsoft 365 admin center. It might take up to 60 minutes after you create it for a new mail-enabled security to be available to add to the eDiscovery Managers role group. 
     
     Also as previously stated, you can't make a mail-enabled security group an eDiscovery Administrator by using the **Add-eDiscoveryCaseAdmin** cmdlet in Security & Compliance Center PowerShell. You can only add individual users as eDiscovery Administrators. 
     

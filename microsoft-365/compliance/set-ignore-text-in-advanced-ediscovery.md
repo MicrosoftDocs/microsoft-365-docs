@@ -1,5 +1,5 @@
 ---
-title: "Set Ignore Text option for Analyze in Office 365 Advanced eDiscovery"
+title: "Set Ignore Text option for Analyze in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: "Learn how to define the rule to ignore specific text when using the Analyze and Process modules in Office 365 Advanced eDiscovery. 
+description: "Learn how to define the rule to ignore specific text when using the Analyze and Process modules in Advanced eDiscovery. 
 "
 ---
 
