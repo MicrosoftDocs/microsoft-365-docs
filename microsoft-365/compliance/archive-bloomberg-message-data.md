@@ -39,19 +39,20 @@ The following overview explains the process of using a connector to archive Bloo
 
 Many of the implementation steps required to archive Bloomberg Message data are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
 
-  - > Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [<span class="underline">this page</span>](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request. You have to complete this step before you can successfully create the Bloomberg Message connector in Step 3.
+- Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [<span class="underline">this page</span>](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request. You have to complete this step before you can successfully create the Bloomberg Message connector in Step 3.
 
-  - > Subscribe to [<span class="underline">Bloomberg Anywhere</span>](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). This is required so that you can log in to Bloomberg Anywhere to access the Bloomberg SFTP site that you have to set up and configure.
+- Subscribe to [<span class="underline">Bloomberg Anywhere</span>](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA). This is required so that you can log in to Bloomberg Anywhere to access the Bloomberg SFTP site that you have to set up and configure.
 
-  - > Set up a Bloomberg SFTP (Secure file transfer protocol) site. After working with Bloomberg to set up the SFTP site, data from Bloomberg Message is uploaded to the SFTP site every day. The connector you create in Step 2 connects to this SFTP site and transfers the email data to Microsoft 365 mailboxes. SFTP also encrypts the Bloomberg Message data that is sent to mailboxes during the transfer process.
+- Set up a Bloomberg SFTP (Secure file transfer protocol) site. After working with Bloomberg to set up the SFTP site, data from Bloomberg Message is uploaded to the SFTP site every day. The connector you create in Step 2 connects to this SFTP site and transfers the email data to Microsoft 365 mailboxes. SFTP also encrypts the Bloomberg Message data that is sent to mailboxes during the transfer process.
 
-> **Note:** If your organization already deployed a connector to archive Instant Bloomberg data, you don't need to set up another SFTP site. You can use the same SFTP site for the Bloomberg Message connector.
+   > [!NOTE]
+   > If your organization already deployed a connector to archive Instant Bloomberg data, you don't need to set up another SFTP site. You can use the same SFTP site for the Bloomberg Message connector.
 > 
-> For information about Bloomberg SFTP (also called *BB-SFTP*):
+   For information about Bloomberg SFTP (also called *BB-SFTP*):
 
-  - See the "SFTP Connectivity Standards" document at [<span class="underline">Bloomberg Support</span>](https://www.bloomberg.com/professional/support/documentation/).
+   - See the "SFTP Connectivity Standards" document at [<span class="underline">Bloomberg Support</span>](https://www.bloomberg.com/professional/support/documentation/).
 
-  - Contact [<span class="underline">Bloomberg customer support</span>](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
+   - Contact [<span class="underline">Bloomberg customer support</span>](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc).
 
 > After you work with Bloomberg to set up an SFTP site, Bloomberg will provide some information to you after you respond to the Bloomberg implementation email message. Save a copy of the following information. You use it to set up a connector in Step 3.
 
@@ -62,8 +63,6 @@ Many of the implementation steps required to archive Bloomberg Message data are 
   - URL for Bloomberg SFTP site (for example, sftp.bloomberg.com). In addition, Bloomberg may also provide a corresponding IP address for the Bloomberg SFTP site, which also can be used to set up the connector.
 
   - Port number for Bloomberg SFTP site
-
-<!-- end list -->
 
   - > The user who creates a Bloomberg Message connector in Step 3 (and who downloads the public keys and IP address in Step 1) must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [<span class="underline">Create role groups</span>](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [<span class="underline">Modify role groups</span>](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
