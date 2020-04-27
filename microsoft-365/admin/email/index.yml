@@ -1,0 +1,61 @@
+### YamlMime:Landing
+
+title: Manage email and calendars # < 60 chars
+summary: Manage email settings, distribution groups, security settings, and set up shared mailboxes. # < 160 chars
+
+metadata:
+  title: Manage email and calendars # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Manage email settings, distribution groups, security settings, and set up shared mailboxes # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: sirkkuw #Required; your GitHub user alias, with correct capitalization.
+  ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
+  ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Manage email
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage Microsoft 365 email settings
+            url: office-365-user-email-settings.md
+          - text: Add another email alias
+            url: add-another-email-alias-for-a-user.md
+          - text: Change email address
+            url: change-email-address.md
+          - text: Set up email forwarding
+            url: configure-email-forwarding.md
+          - text: Email collaboration
+            url: email-collaboration.md
+          - text: Work with security groups
+            url: create-edit-or-delete-a-security-group.md
+          - text: Release options
+            url: release-options-in-office-365.md
+  # Card (optional)
+  - title: Manage calendars
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage your calendar and contacts in outlook
+            url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
+          - text: Create a shared calendar
+            url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
+  # Card (optional)
+  - title: Manage shared mailboxes
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Set up a shared mailbox
+            url: configure-a-shared-mailbox.md
+          - text: Convert a users mailbox to a shared mailbox
+            url: convert-user-mailbox-to-shared-mailbox.md
+          - text: Remove a license from a shared mailbox 
+            url: remove-license-from-shared-mailbox.md
+          - text: Troubleshoot shared mailboxes
+            url: resolve-issues-with-shared-mailboxes.md
