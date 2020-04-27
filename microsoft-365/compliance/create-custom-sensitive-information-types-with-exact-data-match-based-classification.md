@@ -45,8 +45,8 @@ When generally available, EDM-based classification will be included in these sub
 
 - Office 365 E5
 - Microsoft 365 E5
-- Microsoft 365 Information Protection and Compliance
-- Office 365 Advanced Compliance
+- Microsoft 365 E5 Compliance
+- Microsoft E5/A5 Information Protection and Governance
 
 ## The work flow at a glance
 
