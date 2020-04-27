@@ -87,7 +87,7 @@ This infrastructure consists of:
 
 ## Next step
 
-[Learn](contoso-o365pp.md) how Contoso is leveraging its Configuration Manager infrastructure to deploy and keep current Office 365 ProPlus across its organization. 
+[Learn](contoso-o365pp.md) how Contoso is leveraging its Configuration Manager infrastructure to deploy and keep current Microsoft 365 Apps for enterprise across its organization. 
 
 ## See also
 

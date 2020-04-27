@@ -44,11 +44,11 @@ Step through the following required and optional conditions for your Windows 10 
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## Exit criteria for Office 365 ProPlus (phase 4)
+## Exit criteria for Microsoft 365 Apps for enterprise (phase 4)
 
-Meet the requirements for assessment, deployment planning, and deployment of your Office 365 ProPlus infrastructure.
+Meet the requirements for assessment, deployment planning, and deployment of your Microsoft 365 Apps for enterprise infrastructure.
 
-[!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+[!INCLUDE [Deployment exit criteria for Microsoft 365 Apps for enterprise](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## Exit criteria for mobile device management (phase 5)
 

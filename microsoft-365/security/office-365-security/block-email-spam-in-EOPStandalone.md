@@ -20,13 +20,13 @@ ms.collection:
 description: "Document for EOP Standalone admins to help prevent spam false negatives"
 ---
 
-# Customize the Office 365 anti-spam filter with these settings
+# Customize the anti-spam filter with these settings
 
-An Admin can use several Office 365 spam filter settings to help prevent email spam from being sent to a user inbox. The Office 365 spam filter will become better able to block email spam and prevent false negative messages if you use the options listed here. In this context, a false negative refers to email spam or junk messages that are getting sent to a user inbox.
+An Admin can use several spam filter settings to help prevent email spam from being sent to a user inbox. The spam filter will become better able to block email spam and prevent false negative messages if you use the options listed here. In this context, a false negative refers to email spam or junk messages that are getting sent to a user inbox.
 
 ## Block IP addresses with a connection filter
 
-Customize your Office 365 spam filter by adding the sender IP address to the connection filter IP block list:
+Customize your spam filter by adding the sender IP address to the connection filter IP block list:
 
 1. Obtain the headers for the message you want to block in your mail client such as Outlook or Outlook on the web (formerly known as Outlook Web App), as described in [View internet message headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
 
@@ -36,7 +36,7 @@ Customize your Office 365 spam filter by adding the sender IP address to the con
 
 ### Block bulk mail with mail flow rules (transport rules) or the spam filter
 
-Is the spam primarily bulk mail, for example, newsletters or promotions? You can customize the spam filter in Office 365 if you [Use mail flow rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md) or turn on the **Bulk mail** setting in your spam filter's [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md). In the Exchange admin center, get started by clicking **Protection** \> **Content filter** and then double click the filter policy you want to adjust. Click **Spam and bulk mail actions** to adjust the settings, as shown here.
+Is the spam primarily bulk mail, for example, newsletters or promotions? You can customize the spam filter if you [Use mail flow rules to configure bulk email filtering](use-transport-rules-to-configure-bulk-email-filtering.md) or turn on the **Bulk mail** setting in your spam filter's [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md). In the Exchange admin center, get started by clicking **Protection** \> **Content filter** and then double click the filter policy you want to adjust. Click **Spam and bulk mail actions** to adjust the settings, as shown here.
 
 ![Setting the bulk mail filter in Exchange Online](../../media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
 
@@ -44,9 +44,9 @@ Is the spam primarily bulk mail, for example, newsletters or promotions? You can
 
 [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md) to add the sender address to the blocked sender list or domain to the blocked domain list in the spam filter. Emails from a sender or domain on a spam filter block list will marked as spam.
 
-## Email users can also help ensure that false negative and email spam is blocked with Office 365 spam filter
+## Email users can also help ensure that false negative and email spam is blocked with spam filter
 
-It will help your Office 365 anti-spam efforts to prevent false negatives and junk mail if you tell your users to add the spam sender address to their blocked sender list in [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) or [Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). In Outlook on the web, get started by clicking **Settings** \> **Options** \> **Block or allow**, and then adding the address to the **Blocked senders** list, as shown here.
+It will help your anti-spam efforts to prevent false negatives and junk mail if you tell your users to add the spam sender address to their blocked sender list in [Outlook](https://support.office.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) or [Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d). In Outlook on the web, get started by clicking **Settings** \> **Options** \> **Block or allow**, and then adding the address to the **Blocked senders** list, as shown here.
 
 ![Blocking a sender in Outlook on the web](../../media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
 
@@ -82,4 +82,6 @@ The EOP service is designed to honor the user's safe and blocked senders, if the
 
 ## See Also
 
-[Office 365 Email Anti-Spam Protection](anti-spam-protection.md)
+[Microsoft Email Anti-Spam Protection](anti-spam-protection.md)
+
+[Prevent false positive email marked as spam with a safelist or other techniques](prevent-email-from-being-marked-as-spam.md)

@@ -21,7 +21,7 @@ description: "Use these steps to protect global administrator accounts in your M
 
 *This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
 
-You can prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. This article describes how to use Azure Active Directory (Azure AD) Conditional Access policies to protect global administrator accounts.
+You can prevent digital attacks on your organization by ensuring that your administrator accounts are as secure as possible. This article describes how to use Azure Active Directory (Azure AD) conditional access policies to protect global administrator accounts.
 
 There are two phases to protecting global administrator accounts in your Microsoft 365 Enterprise test environment:
 
@@ -42,7 +42,7 @@ If you want to test global administrator account protection in a simulated enter
 > [!NOTE]
 > Testing global administrator account protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS). It is provided here as an option so that you can test global administrator account protection and experiment with it in an environment that represents a typical organization. 
   
-## Phase 2: Configure Conditional Access policies
+## Phase 2: Configure conditional access policies
 
 First, create a new user account as a dedicated global administrator.
 
@@ -66,7 +66,7 @@ Next, create a new group named GlobalAdmins and add the DedicatedAdmin account t
 8. In the **GlobalAdmins** pane, click **Members**, and then click **View all and manage members**.
 9. In the **GlobalAdmins** pane, click **Add members**, select the **DedicatedAdmin** account and your global admin account, and then click **Save > Close > Close**.
 
-Next, create Conditional Access policies to require multifactor authentication for global administrator accounts and to deny authentication if the sign-in risk is medium or high.
+Next, create conditional access policies to require multifactor authentication for global administrator accounts and to deny authentication if the sign-in risk is medium or high.
 
 This first policy requires that all global administrator accounts use MFA.
 

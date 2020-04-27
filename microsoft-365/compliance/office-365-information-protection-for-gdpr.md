@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Information Protection for GDPR"
+title: "Information Protection for GDPR"
 f1.keywords:
 - CSH
 ms.author: bcarter
@@ -19,7 +19,7 @@ search.appverid:
 description: "This solution demonstrates how to protect sensitive data that is stored in Office 365 services."
 ---
 
-# Office 365 Information Protection for GDPR
+# Information Protection for GDPR
 
  **Summary:** This solution demonstrates how to protect sensitive data that is stored in Office 365 services.
   

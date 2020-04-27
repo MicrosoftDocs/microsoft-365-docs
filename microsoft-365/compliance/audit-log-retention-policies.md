@@ -80,7 +80,7 @@ At this time, there's no indication that the retention policy was successfully c
 
 ## Create an audit log retention policy in PowerShell
 
-You can also use Office 365 Security & Compliance Center PowerShell to create audit log retention policies. 
+You can also use Security & Compliance Center PowerShell to create audit log retention policies. 
 
 1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
