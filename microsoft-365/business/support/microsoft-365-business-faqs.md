@@ -44,7 +44,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 * Streamlined deployment of PCs with Windows AutoPilot.
 
 **Other entitlements** 
-- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for busines service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### Who should consider adopting Microsoft 365 Business Premium? 
 Microsoft 365 Business Premium is a comprehensive, cloud-based security solution that lets you:  
