@@ -87,11 +87,9 @@ Microsoft differentiates between two different types of spoofed messages:
 
   `Authentication-Results: ... compauth=fail reason=6xx`
 
-  `X-Forefront-Antispam-Report: ...CAT:SPM/HSPM/PHSH;...SFTY:9.11`
+  `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.11`
 
   - `reason=6xx` indicates intra-org spoofing.
-
-  - CAT is the category of the message, and it is normally SPM (spam), but occasionally might be HSPM (high confidence spam) or PHISH (phishing) depending upon what other types of patterns were detected in the message.
 
   - SFTY is the safety level of the message. 9 indicates phishing, .11 indicates intra-org spoofing.
 
@@ -104,7 +102,7 @@ Microsoft differentiates between two different types of spoofed messages:
 
   `X-Forefront-Antispam-Report: ...CAT:SPOOF;...SFTY:9.22`
 
-  - `reason=000` value indicates the message failed explicit email authentication. `reason=001` indicates the message failed implicit email authentication.
+  - `reason=000` indicates the message failed explicit email authentication. `reason=001` indicates the message failed implicit email authentication.
 
   - SFTY is the safety level of the message. 9 indicates phishing, .22 indicates cross-domain spoofing.
 
