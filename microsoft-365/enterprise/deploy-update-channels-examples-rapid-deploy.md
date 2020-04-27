@@ -72,7 +72,13 @@ To be added
 
 To be added
 
-## Visual summary
+## Visual summaries
+
+### Deployment groups
+
+![Deployment groups for a rapid deployment organizaton](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
+
+## Channels and timing
 
 ![The resulting configuration of a rapid deployment organizaton](../media/deploy-update-channels-examples-rapid-deploy/channel-summary.png)
 
