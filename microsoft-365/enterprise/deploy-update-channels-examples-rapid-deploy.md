@@ -23,16 +23,16 @@ description: How a rapid deployment organization uses channels for Windows 10, M
 This channel configuration example is for an organization that uses rapid deployment to fit these business priorities:
 
 - Ensure business continuity with Microsoft apps and services.
-- Maximize user productivity with the latest features from Microsoft.
 - Maximize device, service, and data security with the latest features and fixes from Microsoft.
-- Find a balance between rapid deployment and proper testing with a representative subset of users and devices to prevent widespread functionality outages.
+- Maximize user productivity with the latest features from Microsoft.
 
-Our example organization has 100,000 in multiple campuses across the world in the Europe, Africa, Asia, and America.
+These goals translate to the IT task of finding the balance between rapid production deployment and proper testing with a representative subset of users and devices to prevent widespread functionality outages.
+
+Our example organization has 100,000 in multiple campuses across the world in Europe, Africa, Asia, and the Americas.
 
 This organization's IT infrastructure: 
 
 - Is largely homogeneous, with Windows, Office, and Microsoft cloud services comprising 95% of the installed base. A few legacy systems remain after an intensive, multi-year effort to simplify and streamline the IT infrastructure.
-
 - Is maintained by highly experienced staff and tasked with keeping users and their devices productive by following Microsoft’s lead in their releases.
 
 
@@ -47,7 +47,9 @@ Based on rapid deployment goals, this example organization uses a two-step deplo
 
 ## Deployment configuration for Windows 10
 
-The overall deployment goal is to give a group of representative users a sneak peek of new Window 10 features that will be released in a month or longer without major disruptions to the organization. See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
+The overall deployment goal is to give a group of representative users a sneak peek of new Window 10 features that will be released in a month or longer without major disruptions to the organization. 
+
+See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
 
 
 | Channel | Deployment groups |
