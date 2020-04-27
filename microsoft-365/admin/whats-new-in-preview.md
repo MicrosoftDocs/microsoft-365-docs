@@ -37,6 +37,7 @@ And if you're interested in what's new in other Microsoft cloud services:
 - [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
 ## March 2020
@@ -84,6 +85,7 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 ### Videos, training, and docs
 
 [What's New in Microsoft 365 web series](https://go.microsoft.com/fwlink/p/?linkid=2118096): In this month's episode, we highlight the 3-year anniversary of Microsoft Teams and cover new features including improved audio quality in online meetings, Targeted Communications for firstline managers with the Shifts app, Teams and Skype consumer interoperability, and more.
+
 
 ## February 2020
 
