@@ -15,31 +15,30 @@ ms.collection:
 - M365-subscription-management
 ms.custom:
 
-description: How a rapid deployment organization uses channels.
+description: How a rapid deployment organization uses channels for Windows 10, Microsoft 365 apps, and Microsoft Edge.
 ---
 
 # Rapid deployment channel configuration example
 
-Intro text
-
-## The example organization
-
-Number of employees: 100000
-
-A multinational with offices in the Americas, Europe, Africa, and Asia
-
-The IT infrastructure is largely homogeneous, with Windows, Office, and Microsoft cloud services comprising 95% of the installed base. A few legacy systems remain after an intensive, multi-year effort to simplify and streamline the IT infrastructure.
-
-The IT department is highly experienced and tasked with keeping users and their devices productive by following Microsoft’s lead in their releases.
-
-Business priorities
+This channel configuration example is for an organization that uses rapid deployment to fit these business priorities:
 
 - Ensure business continuity with Microsoft apps and services.
 - Maximize user productivity with the latest features from Microsoft.
 - Maximize device, service, and data security with the latest features and fixes from Microsoft.
 - Find a balance between rapid deployment and proper testing with a representative subset of users and devices to prevent widespread functionality outages.
 
+Our example organization has 100,000 in multiple campuses across the world in the Europe, Africa, Asia, and America.
+
+This organization's IT infrastructure: 
+
+- Is largely homogeneous, with Windows, Office, and Microsoft cloud services comprising 95% of the installed base. A few legacy systems remain after an intensive, multi-year effort to simplify and streamline the IT infrastructure.
+
+- Is maintained by highly experienced staff and tasked with keeping users and their devices productive by following Microsoft’s lead in their releases.
+
+
 ## Deployment and update stages
+
+Based on rapid deployment goals, this example organization uses a two-step deployment process for initial deployment and updates.
 
 1. Use a preview or pilot deployment
    Test and iterate with early adopters, IT staff, users with representative configurations, and training staff.
@@ -48,7 +47,7 @@ Business priorities
 
 ## Deployment configuration for Windows 10
 
-**Deployment goal:** Give a group of representative users a sneak peek of features that will be released in a few months, without major disruptions to the organization. See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
+The overall deployment goal is to give a group of representative users a sneak peek of new Window 10 features that will be released in a month or longer without major disruptions to the organization. See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
 
 
 | Channel | Deployment groups |
