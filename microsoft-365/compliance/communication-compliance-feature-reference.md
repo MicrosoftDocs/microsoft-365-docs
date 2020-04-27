@@ -81,7 +81,6 @@ With communication compliance policies, you can choose to scan messages in one o
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
     - [Facebook](archive-facebook-data-with-sample-connector.md)
     - [LinkedIn](archive-linkedin-data.md)
-    - SAP SuccessFactors
     - [Twitter](archive-twitter-data-with-sample-connector.md)
     - [Custom data connector](archiving-third-party-data.md)
 
