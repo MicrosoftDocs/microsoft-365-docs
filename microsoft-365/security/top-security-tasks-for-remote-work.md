@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - remotework
-description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments. "
+description: "Protect your business email and data from cyber threats, including ransomware, phishing, and malicious attachments."
 ---
 
 # Top 12 tasks for security teams to support working from home
@@ -186,7 +186,7 @@ Recent blog articles on this topic:
 
 ## 10: Train users
 
-When users don't know about threat protection features at work in your organization, they can get frustrated by protection features that are perceived as slowing them down or preventing them from getting their work done. In addition, if they know ahead of time what to watch for with respect to suspicious email messages or URLs, they'll be far less likely to open questionable artifacts. Training users can save your users and security operations team a lot of time and frustration.
+Training users can save your users and security operations team a lot of time and frustration. Savvy users are less likely to open attachments or click links in questionable email messages, and they are more likely to avoid suspicious websites. 
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks. 
 
