@@ -144,7 +144,6 @@ Before you run the command to enable sensitivity labels for Office files in Shar
 
 5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
-
 6. After you have downloaded the file, run the file and follow the steps in the Setup Wizard.
 
 #### Run the PowerShell command to enable support for sensitivity labels
@@ -178,16 +177,14 @@ We recommend that you follow these steps:
 
 If you disable these new capabilities, files that you uploaded after you enabled sensitivity labels for SharePoint and OneDrive continue to be protected by the label because the label settings continue to be enforced. When you apply sensitivity labels to new files after you disable these new capabilities, full-text search, eDiscovery, and coauthoring will no longer work.
 
-To disable these new capabilities, use the Set-SPOTenant cmdlet again and set the same value to false:
-
-1. Using a work or school account that has global administrator or SharePoint admin privileges, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
-
-2. Run the following command:
+To disable these new capabilities, you must use PowerShell. Using the SharePoint Online Management Shell and the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet, specify the same *EnableAIPIntegration* parameter as described in the [Use PowerShell to enable support for sensitivity labels](use-powerShell-to-enable-support-for-sensitivity-labels) section. But this time, set the parameter value to false and press **Y** to confirm:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $false
     ```
 
+If you have Office 365 Multi-Geo, you must run this command for each of your geo-locations.
+
 ## Next steps
 
-Now that you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling these files by using auto-labeling policies. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+After you've enabled sensitivity labels for Office files in SharePoint and OneDrive, consider automatically labeling these files by using auto-labeling policies. For more information, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
