@@ -23,6 +23,17 @@ titleSuffix: Microsoft 365 Compliance
 
 # Supervision policies
 
+>[!IMPORTANT]
+>Following the release of Communication Compliance in Microsoft 365 Compliance in February 2020, Supervision in Office 365 is being retired. Supervision policies will no longer be available for creation, and policies will eventually be removed, after an extended period of read only access.
+>
+>If you use Supervision, be aware that:
+>
+>- Beginning June 15th, 2020, tenants will not have the ability to create new Supervision policies.
+>- Beginning August 31st, 2020, existing policies will stop capturing new messages.
+>- Beginning October 26th, 2020, existing policies will be deleted.
+>
+>We actively encourage customers who are currently exploring or using Supervision in Office 365 to use the new [Communication Compliance]((communication-compliance.md)) solution to address your communications monitoring or regulatory requirements with a much richer set of intelligent capabilities.
+
 Supervision policies in Microsoft 365 allow you to capture employee communications for examination by designated reviewers. You can define specific policies that capture internal and external email, Microsoft Teams, or 3rd-party communications in your organization. Reviewers can then examine the messages to make sure that they are compliant with your organization's message standards and resolve them with classification type.
 
 These policies can also help you overcome many modern compliance challenges, including:
@@ -34,10 +45,6 @@ These policies can also help you overcome many modern compliance challenges, inc
 In some organizations, there may be a separation of duties between IT support and the compliance management group. Microsoft 365 supports the separation between supervision policy feature configuration and the configuration of policies for captured communications. For example, the IT group for an organization may be responsible for setting up role permissions and groups to support supervision policies that are configured and managed by the organization's compliance team.
 
 For a quick overview of Supervision policies, see the [Supervision policy video](https://youtu.be/C3Y8WZ7o_dI) on the [Microsoft Mechanics channel](https://www.youtube.com/user/OfficeGarageSeries).
-
-To learn more about upcoming Supervision feature improvements and availability, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
-
-Want to try the new Communication compliance experience in Microsoft 365? Check out the new and improved features available in [Communication compliance in Microsoft 365](communication-compliance.md).
 
 ## Transitioning from Supervision
 
