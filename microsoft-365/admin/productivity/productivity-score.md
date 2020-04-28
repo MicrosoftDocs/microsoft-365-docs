@@ -45,12 +45,12 @@ Your Productivity Score is based on the combined scores of your employee experie
 
 ### Score categories 
 
-Content collaboration (100 points)
-Communication (100 points)
-Mobility (100 points)
-Endpoint analytics (100 points)
-Network connectivity (100 points)
-**Total possible = 500 points**
+- Content collaboration (100 points)
+- Communication (100 points)
+- Mobility (100 points)
+- Endpoint analytics (100 points)
+- Network connectivity (100 points)
+- **Total possible = 500 points**
  
  In each category, we identify patterns for key activities that are indicators for how people use Microsoft 365 products to collaborate, communicate, and work across platforms. We provide 28-day and 180-day views of the key activities. We also provide supporting metrics that are not part of the score calculation but are important for helping you identify underlying behaviors and settings that you can act on to drive change.
 
