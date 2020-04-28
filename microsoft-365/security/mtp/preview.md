@@ -34,7 +34,7 @@ Learn about new features in the Microsoft Threat Protection preview release and 
 For more information on new capabilities that are generally available, see [What's new in Microsoft Threat Protection](whats-new.md).
 
 ## Turn on preview features
-You'll have access to upcoming features which you can provide feedback on to help improve the overall experience before features are generally available.
+You'll have access to upcoming features on which you can provide feedback to help improve the overall experience before features are generally available.
 
 Turn on the preview experience setting to be among the first to try upcoming features.
 
