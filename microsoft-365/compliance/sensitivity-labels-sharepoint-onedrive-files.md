@@ -99,11 +99,29 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 ## How to enable sensitivity labels for SharePoint and OneDrive (opt-in)
 
-You must use PowerShell to enable these new capabilities that support sensitivity labels for Office files in SharePoint and OneDrive.
+You can enable the new capabilities by using the Microsoft 365 compliance center, or by using PowerShell.
 
-### Prepare the SharePoint Online Management Shell
+### Use the compliance center to enable support for sensitivity labels
 
-Before you enable sensitivity labels for Office files in SharePoint and OneDrive, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or later. If you already have the latest version, you can skip to next procedure to run the PowerShell command.
+This option is currently rolling out to tenants, and is the easiest way to enable sensitivity labels for SharePoint and OneDrive.
+
+The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
+
+1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com/), and navigate to **Solutions** > **Information protection**:
+    
+    If you don't immediately see this option, first select **Show all**. 
+
+2. On the **Labels** tab, if you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
+    
+    !Turn on now button to enable sensitivity labels for Office Online](../media/sensitivity-labels-turn-on-banner.png)
+
+### Use PowerShell to enable support for sensitivity labels
+
+As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet from SharePoint Online PowerShell. 
+
+#### Prepare the SharePoint Online Management Shell
+
+Before you run the command to enable sensitivity labels for Office files in SharePoint and OneDrive, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or later. If you already have the latest version, you can skip to next procedure to run the PowerShell command.
 
 1. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
 
@@ -122,7 +140,7 @@ Before you enable sensitivity labels for Office files in SharePoint and OneDrive
 
 6. After you have downloaded the file, run the file and follow the steps in the Setup Wizard.
 
-### Use Powershell to enable support for sensitivity labels
+#### Run the PowerShell command to enable support for sensitivity labels
 
 To enable the new capabilities, use the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet:
 
