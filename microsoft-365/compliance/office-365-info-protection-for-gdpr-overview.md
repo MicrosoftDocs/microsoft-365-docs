@@ -93,7 +93,7 @@ Protection for access to Office 365 and other cloud services include:
 
 - Windows 10 security capabilities
 
-For more information about applying proteciton, see [Apply protection to personal data in Office 365](apply-protection-to-personal-data-in-office-365.md).
+For more information about applying protection, see [Apply protection to personal data in Office 365](apply-protection-to-personal-data-in-office-365.md).
 
 ### Step 5 — Monitor for leaks of personal data
 
