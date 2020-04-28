@@ -2,8 +2,8 @@
 title: "Customize the theme for your organization"
 f1.keywords:
 - CSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
