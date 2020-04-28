@@ -162,7 +162,7 @@
         - name: Troubleshoot domain issues
           href: get-help-with-domains/find-and-fix-issues.md
     - name: Manage your data and services
-      href: index.yml
+      href: manage/index.yml
       items:
          - name: Upgrade your organization to the latest apps 
            href: setup/upgrade-users-to-latest-office-client.md

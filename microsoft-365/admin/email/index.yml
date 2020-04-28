@@ -21,22 +21,22 @@ landingContent:
   # Card (optional)
   - title: Manage email
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
           - text: Manage Microsoft 365 email settings
             url: office-365-user-email-settings.md
+          - text: Email collaboration
+            url: email-collaboration.md
+      - linkListType: how-to-guide
+        links:
           - text: Add another email alias
             url: add-another-email-alias-for-a-user.md
           - text: Change email address
             url: change-email-address.md
           - text: Set up email forwarding
             url: configure-email-forwarding.md
-          - text: Email collaboration
-            url: email-collaboration.md
           - text: Work with security groups
             url: create-edit-or-delete-a-security-group.md
-          - text: Release options
-            url: release-options-in-office-365.md
   # Card (optional)
   - title: Manage calendars
     linkLists:

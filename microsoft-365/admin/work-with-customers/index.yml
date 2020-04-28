@@ -21,7 +21,7 @@ landingContent:
   # Card (optional)
   - title: Work with customers
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: video
         links:
           - text: Create a team with guests
             url: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7

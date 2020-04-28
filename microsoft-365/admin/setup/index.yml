@@ -21,7 +21,7 @@ landingContent:
   # Card (optional)
   - title: Sign up
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: video
         links:
           - text: Sign up and set up Microsoft Business Basic
             url: setup.md
@@ -32,10 +32,12 @@ landingContent:
   # Card (optional)
   - title: Guided set up
     linkLists:
-      - linkListType: how-to-guide
+      - linkListType: overview
         links:
           - text: Plan your set up
-            url: index.yml
+            url: plan-your-setup.md
+      - linkListType: how-to-guide
+        links:
           - text: Set up Microsoft Business Standard
             url: setup.md
           - text: Set up Microsoft Business Premium
@@ -49,6 +51,8 @@ landingContent:
             url: migrate-email-and-contacts-admin.md
           - text: Install apps
             url: install-applications.md
+          - text: Roll out Teams
+            url: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams
       - linkListType: video
         links:      
           - text: Install apps on Android

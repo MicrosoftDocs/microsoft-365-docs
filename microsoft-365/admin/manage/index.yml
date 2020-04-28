@@ -21,13 +21,17 @@ landingContent:
   # Card (optional)
   - title: Monitor the status of our service
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage subscriptions and billing
+            url: ../../commerce/index.yml
       - linkListType: how-to-guide
         links:
           - text: Manage subscriptions and billing
             url: ../../commerce/index.yml
           - text: Monitor user activity
             url: ../activity-reports/activity-reports.md
-          - text: Usage analytics
+          - text: Monitor usage analytics
             url: ../usage-analytics/usage-analytics.md
           - text: Enable usage analytics
             url: ../usage-analytics/enable-usage-analytics.md
@@ -38,7 +42,7 @@ landingContent:
           - text: Release options
             url: release-options-in-office-365.md
   # Card (optional)
-  - title: Back up data
+  - title: Block user access and back up data
     linkLists:
       - linkListType: how-to-guide
         links:
