@@ -99,7 +99,7 @@ For this preview, use the OneDrive sync app version 19.002.0121.0008 or later on
 
 ## Prepare the SharePoint Online Management Shell for the preview
 
-Before you enable the preview, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above. If you already have the latest version, you can go ahead and enable the preview.
+To enable the preview by using PowerShell, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or above. If you already have the latest version, you can go ahead and enable the preview.
 
 1. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
 
@@ -114,7 +114,6 @@ Before you enable the preview, ensure that you're running SharePoint Online Mana
 4. Select your language and then click **Download**.
 
 5. Choose between the x64 and x86 .msi file. Download the x64 file if you run the 64-bit version of Windows or the x86 file if you run the 32-bit version. If you don’t know, see [Which version of Windows operating system am I running?](https://support.microsoft.com/help/13443/windows-which-operating-system)
-
 
 6. After you have downloaded the file, run the file and follow the steps in the Setup Wizard.
 
@@ -132,6 +131,25 @@ To enable the preview, use the Set-SPOTenant cmdlet:
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
 3. For Office 365 Multi-Geo: Repeat steps 1 and 2 for each of your remaining geo-locations.
+
+## Use the compliance center to enable support for sensitivity labels
+
+This option is currently rolling out to tenants, and is the easiest way to enable sensitivity labels for SharePoint and OneDrive.
+
+The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
+
+1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com/), and navigate to **Solutions** > **Information protection**
+    
+    If you don't immediately see this option, first select **Show all**. 
+
+2. On the **Labels** tab, if you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
+    
+    ![Turn on now button to enable sensitivity labels for Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    
+    The command runs immediately and when the page is next refreshed, you no longer see the message or button. 
+
+> [!NOTE]
+> If you have Office 365 Multi-Geo, you must use PowerShell to enable these capabilities for all your geo-locations. For instructions, see the previous sections.
 
 ## Schedule roll-out after you create or change a sensitivity label
 
