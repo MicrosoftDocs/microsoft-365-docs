@@ -134,7 +134,7 @@ To enable the preview, use the Set-SPOTenant cmdlet:
 
 ## Use the compliance center to enable support for sensitivity labels
 
-This option is currently rolling out to tenants, and is the easiest way to enable sensitivity labels for SharePoint and OneDrive.
+This option is currently rolling out to tenants as an alternative method to enable the preview.
 
 The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
