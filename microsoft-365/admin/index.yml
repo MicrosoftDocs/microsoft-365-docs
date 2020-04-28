@@ -26,7 +26,7 @@ productDirectory:
     - title: Get started
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Sign up and set up Microsoft 365 for business.
+      summary: Sign up and set up Microsoft 365.
       url: setup/index
     # Card
     - title: Migrate data
