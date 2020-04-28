@@ -128,7 +128,7 @@ If you have Office 365 Multi-Geo, you must use PowerShell to enable this support
 
 #### Prepare the SharePoint Online Management Shell
 
-Before you run the command to enable sensitivity labels for Office files in SharePoint and OneDrive, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or later. If you already have the latest version, you can skip to next procedure to run the PowerShell command.
+Before you run the PowerShell command to enable sensitivity labels for Office files in SharePoint and OneDrive, ensure that you're running SharePoint Online Management Shell version 16.0.19418.12000 or later. If you already have the latest version, you can skip to next procedure to run the PowerShell command.
 
 1. If you have installed a previous version of the SharePoint Online Management Shell from PowerShell gallery, you can update the module by running the following cmdlet.
 
@@ -179,9 +179,9 @@ If you disable these new capabilities, files that you uploaded after you enabled
 
 To disable these new capabilities, you must use PowerShell. Using the SharePoint Online Management Shell and the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet, specify the same *EnableAIPIntegration* parameter as described in the [Use PowerShell to enable support for sensitivity labels](#use-powershell-to-enable-support-for-sensitivity-labels) section. But this time, set the parameter value to false and press **Y** to confirm:
 
-    ```PowerShell
-    Set-SPOTenant -EnableAIPIntegration $false
-    ```
+```PowerShell
+Set-SPOTenant -EnableAIPIntegration $false
+```
 
 If you have Office 365 Multi-Geo, you must run this command for each of your geo-locations.
 
