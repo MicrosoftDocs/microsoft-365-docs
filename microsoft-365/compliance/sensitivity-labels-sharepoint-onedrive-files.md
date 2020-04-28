@@ -114,10 +114,17 @@ The global admin for your organization has full permissions to create and manage
 2. On the **Labels** tab, if you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
     
     !Turn on now button to enable sensitivity labels for Office Online](../media/sensitivity-labels-turn-on-banner.png)
+    
+    The command runs immediately and when the page is next refreshed, you no longer see the message or button. 
+
+> [!NOTE]
+> If you have Office 365 Multi-Geo, you must use PowerShell to enable these capabilities for all your geo-locations. See the next section for details.
 
 ### Use PowerShell to enable support for sensitivity labels
 
 As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet from SharePoint Online PowerShell. 
+
+You must also use PowerShell to enable this support for all your geo-locations if you have Office 365 Multi-Geo.
 
 #### Prepare the SharePoint Online Management Shell
 
@@ -148,7 +155,7 @@ To enable the new capabilities, use the [Set-SPOTenant](https://docs.microsoft.c
     
     Note: If you have Office 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 
-2. Run the following command:
+2. Run the following command and press **Y** to confirm:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
