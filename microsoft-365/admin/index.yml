@@ -68,7 +68,7 @@ additionalContent:
         # Card
         - title: Domains
           summary: Learn about domains, set up and manage domains, and update DNS records.
-          url: get-help-with-domains/get-help-with-domains.md    
+          url: setup/add-domain.md    
         # Card
         - title: Your data and service
           summary: Monitor the status of your service, back up data, install add-ins, and upgrade to the latest apps.
