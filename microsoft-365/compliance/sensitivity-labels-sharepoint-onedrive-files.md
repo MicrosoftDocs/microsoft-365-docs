@@ -124,7 +124,7 @@ The global admin for your organization has full permissions to create and manage
 
 As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet from SharePoint Online PowerShell. 
 
-You must also use PowerShell to enable this support for all your geo-locations if you have Office 365 Multi-Geo.
+If you have Office 365 Multi-Geo, you must use PowerShell to enable this support for all your geo-locations.
 
 #### Prepare the SharePoint Online Management Shell
 
