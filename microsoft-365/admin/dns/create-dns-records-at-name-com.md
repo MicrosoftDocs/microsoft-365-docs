@@ -51,7 +51,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
     ![Name-BP-Configure-1-2](../../media/c8b96e1e-aa35-4fb1-8209-450f587fec4d.png)
   
-3. In the **Details** column, select ** DNS Records **. 
+3. In the **Details** column, select **DNS Records**. 
     
     ![Name-BP-Configure-1-3](../../media/c5da31e2-2f77-4d0c-b31d-189e6fb7b205.png)
   

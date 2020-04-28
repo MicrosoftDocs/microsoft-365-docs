@@ -44,7 +44,7 @@ Gather this information:
 
 - The current SPF TXT record for your custom domain. For instructions, see [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records).
 
-- IP addresses of all on-premises messaging servers. For example, **192.168.0.1**.
+- External IP addresses of all on-premises messaging servers. For example, **131.107.2.200**.
 
 - Domain names to use for all third-party domains that you need to include in your SPF TXT record. Some bulk mail providers have set up subdomains to use for their customers. For example, the company MailChimp has set up **servers.mcsv.net**.
 
