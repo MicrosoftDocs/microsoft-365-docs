@@ -24,7 +24,7 @@ titleSuffix: Office 365 Compliance
 # Configure supervision policies in Office 365
 
 >[!IMPORTANT]
->Following the release of Communication Compliance in Microsoft 365 Compliance in February 2020, Supervision in Office 365 is being retired. Supervision policies will no longer be available for creation, and policies will eventually be removed, after an extended period of read only access.
+>Following the release of communication compliance in Microsoft 365 Compliance in February 2020, Supervision in Office 365 is being retired. Supervision policies will no longer be available for creation, and policies will eventually be removed, after an extended period of read only access.
 >
 >If you use Supervision, be aware that:
 >
@@ -32,7 +32,7 @@ titleSuffix: Office 365 Compliance
 >- Beginning August 31st, 2020, existing policies will stop capturing new messages.
 >- Beginning October 26th, 2020, existing policies will be deleted.
 >
->We actively encourage customers who are currently exploring or using Supervision in Office 365 to use the new [Communication Compliance]((communication-compliance.md)) solution to address your communications monitoring or regulatory requirements with a much richer set of intelligent capabilities.
+>We actively encourage customers who are currently exploring or using Supervision in Office 365 to use the new [communication compliance](communication-compliance.md) solution to address your communications monitoring or regulatory requirements with a much richer set of intelligent capabilities.
 
 Use supervision policies to capture employee communications for examination by internal or external reviewers. For more information about how supervision policies can help you monitor communications in your organization, see [Supervision policies in Office 365](supervision-policies.md).
 
