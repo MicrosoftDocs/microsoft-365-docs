@@ -86,7 +86,7 @@ Here’s a simplified pilot user experience as an example:
 
 - In December, I need to use my smart phone for MFA. (Identity)
 - In March, I get Windows 10 Enterprise installed on my Windows 8.1 desktop. (Windows 10 Enterprise)
-- In June, I get Office 365 ProPlus installed, replacing Office 2013. (Office 365 ProPlus)
+- In June, I get Microsoft 365 Apps for enterprise installed, replacing Office 2013. (Microsoft 365 Apps for enterprise)
 - In September, I get device enrollment and app and device policies applied. (Mobile device management)
 - In December, I get the Azure Information Protection client installed and get trained on how to apply labels to documents. (Information protection)
 
@@ -96,7 +96,7 @@ Here’s a simplified end-user experience as an example:
 
 - In January, I need to use my smart phone for MFA. (Identity)
 - In April, I get Windows 10 Enterprise installed on my Windows 8.1 desktop. (Windows 10 Enterprise)
-- In July, I get Office 365 ProPlus installed, replacing Office 2013. (Office 365 ProPlus)
+- In July, I get Microsoft 365 Apps for enterprise installed, replacing Office 2013. (Microsoft 365 Apps for enterprise)
 - In October, I get device enrollment and app and device policies applied. (Mobile device management)
 - In January of the following year, I get the Azure Information Protection client installed and get trained on how to apply labels to documents. (Information protection)
 
@@ -117,7 +117,7 @@ Here’s a simplified pilot user experience as an example:
 
 - In December, I need to use my smart phone for MFA. (Identity)
 - In February, I get Windows 10 Enterprise installed on my Windows 8.1 desktop. (Windows 10 Enterprise)
-- In April, I get Office 365 ProPlus installed, replacing Office 2013. (Office 365 ProPlus)
+- In April, I get Microsoft 365 Apps for enterprise installed, replacing Office 2013. (Microsoft 365 Apps for enterprise)
 - In June, I get device enrollment and app and device policies applied. (Mobile device management)
 - In August, I get the Azure Information Protection client installed and get trained on how to apply labels to documents. (Information protection)
 
@@ -127,7 +127,7 @@ Here’s a simplified end-user experience as an example:
 
 - In January, I need to use my smart phone for MFA. (Identity)
 - In March, I get Windows 10 Enterprise installed on my Windows 8.1 desktop. (Windows 10 Enterprise)
-- In May, I get Office 365 ProPlus installed, replacing Office 2013. (Office 365 ProPlus)
+- In May, I get Microsoft 365 Apps for enterprise installed, replacing Office 2013. (Microsoft 365 Apps for enterprise)
 - In July, I get device enrollment and app and device policies applied. (Mobile device management)
 - In September, I get the Azure Information Protection client installed and get trained on how to apply labels to documents. (Information protection)
 
@@ -155,7 +155,7 @@ Here’s a simplified pilot user experience as an example:
 
 - In December, I need to use my smart phone for MFA. (Identity)
 - In January, I get Windows 10 Enterprise installed on my Windows 8.1 desktop. (Windows 10 Enterprise)
-- In February, I get Office 365 ProPlus installed, replacing Office 2013. (Office 365 ProPlus)
+- In February, I get Microsoft 365 Apps for enterprise installed, replacing Office 2013. (Microsoft 365 Apps for enterprise)
 - In March, I get device enrollment and app and device policies applied. (Mobile device management)
 - In April, I get the Azure Information Protection client installed and get trained on how to apply labels to documents. (Information protection)
 
@@ -165,7 +165,7 @@ Here’s a simplified end-user experience as an example:
 
 - In January, I need to use my smart phone for MFA. (Identity)
 - In February, I get Windows 10 Enterprise installed on my Windows 8.1 desktop. (Windows 10 Enterprise)
-- In March, I get Office 365 ProPlus installed, replacing Office 2013. (Office 365 ProPlus)
+- In March, I get Microsoft 365 Apps for enterprise installed, replacing Office 2013. (Microsoft 365 Apps for enterprise)
 - In April, I get device enrollment and app and device policies applied. (Mobile device management)
 - In May, I get the Azure Information Protection client installed and get trained on how to apply labels to documents. (Information protection)
 
@@ -183,7 +183,7 @@ The IT department configures the infrastructure for phases 2-6, then rolls out t
 
 - MFA and other identity features (Identity)
 - Windows 10 Enterprise on Windows devices (Windows 10 Enterprise)
-- Office 365 ProPlus for the Office suite (Office 365 ProPlus)
+- Microsoft 365 Apps for enterprise for the Office suite (Microsoft 365 Apps for enterprise)
 - App and device policies (Mobile device management)
 - Azure Information Protection client installed and training on how to apply labels to documents (Information protection)
 

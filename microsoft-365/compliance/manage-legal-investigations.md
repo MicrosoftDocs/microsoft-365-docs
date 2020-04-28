@@ -21,7 +21,7 @@ description: "Use eDiscovery cases in the Microsoft 365 compliance center to man
 
 Organizations have many reasons to respond to a legal case involving certain executives or other employees in your organization. This might involve quickly finding and retaining for further investigation-specific information in email, documents, instant messaging conversations, and other content locations used by people in their day-to-day work tasks. You can perform these and many other similar activities by using the eDiscovery case tools in the security and compliance center.
   
-**Want to know how Microsoft manages its eDiscovery investigations?** Here's a [technical white paper](https://go.microsoft.com/fwlink/?linkid=852161) you can download that explains how we use the same Office 365 search and investigation tools to manage our internal eDiscovery workflow.
+**Want to know how Microsoft manages its eDiscovery investigations?** Here's a [technical white paper](https://go.microsoft.com/fwlink/?linkid=852161) you can download that explains how we use the same search and investigation tools to manage our internal eDiscovery workflow.
    
 ## Manage legal investigations with eDiscovery cases
 
@@ -59,7 +59,7 @@ Here's a quick overview of the built-in workflow in Advanced eDiscovery. For mor
 
 - [Index custodian data](processing-data-for-case.md) and fix indexing errors so you can effectively collect data for your investigations
 
-- [Collect data](collecting-data-for-ediscovery.md) for a case and add [add it to a review set](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set) for further investigation
+- [Collect data](collecting-data-for-ediscovery.md) for a case and add [add it to a review set](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) for further investigation
 
 - [View ](view-documents-in-review-set.md) documents, [query](review-set-search.md) data, and [tag](tagging-documents.md) items in a review set
 

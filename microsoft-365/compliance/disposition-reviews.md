@@ -32,7 +32,7 @@ When content reaches the end of its retention period, there are several reasons 
     
 - Return the content to clients or transfer it to another organization.
     
-When you create a retention label in the Microsoft 365 compliance center, Microsoft 365 security center, or Office 365 Security & Compliance Center, you can choose to trigger a disposition review at the end of the retention period. In a disposition review:
+When you create a retention label in the Microsoft 365 compliance center, Microsoft 365 security center, or the Security & Compliance Center, you can choose to trigger a disposition review at the end of the retention period. In a disposition review:
   
 - The people you choose receive an email notification that they have content to review. Note that notifications are sent on a weekly basis.
     
@@ -48,7 +48,7 @@ When you create a retention label in the Microsoft 365 compliance center, Micros
     
 - Reviewers can view either pending or completed dispositions, and export that list as a .csv file.
 
-A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Office 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
+A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
   
 ![Dispositions page in Security and Compliance Center](../media/Retention-Dispositions-v2-page.png)
 
@@ -66,7 +66,7 @@ For more information about retention labels, see [Overview of retention labels](
 ![Retention settings for a label](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> When you specify the option **Notify these people when there are items ready to review**, specify a user. Office 365 groups are not supported for this option.
+> When you specify the option **Notify these people when there are items ready to review**, specify a user. Microsoft 365 groups are not supported for this option.
 
 ## Disposing content
 
@@ -90,7 +90,7 @@ A reviewer can also use the link to view the document in its original location, 
   
 Note that the email notifications are sent automatically to reviewers on a weekly basis. Therefore, when content reaches the end of its retention period, it may take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-Also note that all disposition actions are audited. To ensure this, you must turn on auditing at least one day prior to the first disposition action - for more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+Also note that all disposition actions are audited. To ensure this, you must turn on auditing at least one day prior to the first disposition action - for more information, see [Search the audit log in the Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
   
 ## Permissions for disposition
 
@@ -100,7 +100,7 @@ Specific to the **View-Only Audit Logs** role:
 
 - Because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, you must assign users this role by using the [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), rather than by using the **Permissions** page in the Security & Compliance Center. For instructions, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Office 365 Groups aren't supported for this role. Instead, assign user mailboxes or mail users.
+- Microsoft 365 groups aren't supported for this role. Instead, assign user mailboxes or mail users.
   
 ## How long until disposed content is permanently deleted
 

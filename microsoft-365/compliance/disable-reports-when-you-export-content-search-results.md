@@ -19,13 +19,13 @@ description: "Edit the Windows Registry on your local computer to disable report
 
 # Disable reports when you export Content Search results
 
-When you use the Office 365 eDiscovery Export tool to export the results of a Content Search in the Security & Compliance Center, the tool automatically creates and exports two reports that contain additional information about the exported content. These reports are the Results.csv file and the Manifest.xml file (see the [Frequently asked questions about disabling export reports](#frequently-asked-questions-about-disabling-export-reports) section in this topic for detailed descriptions of these reports). Because these files can be very large, you can speed up the download time and save disk space by preventing these files from being exported. You can do this by changing the Windows Registry on the computer that you use to export the search results. If you want to include the reports at a later time, you can edit the registry setting. 
+When you use the eDiscovery Export tool to export the results of a Content Search in the Security & Compliance Center, the tool automatically creates and exports two reports that contain additional information about the exported content. These reports are the Results.csv file and the Manifest.xml file (see the [Frequently asked questions about disabling export reports](#frequently-asked-questions-about-disabling-export-reports) section in this topic for detailed descriptions of these reports). Because these files can be very large, you can speed up the download time and save disk space by preventing these files from being exported. You can do this by changing the Windows Registry on the computer that you use to export the search results. If you want to include the reports at a later time, you can edit the registry setting. 
   
 ## Create registry settings to disable the export reports
 
 Perform the following procedure on the computer that you'll use to export the results a content search.
   
-1. Close the Office 365 eDiscovery Export tool if it's open.
+1. Close the eDiscovery Export tool if it's open.
     
 2. Perform one or both of the following steps, depending on which export report you want to disable.
     
@@ -59,7 +59,7 @@ Perform the following procedure on the computer that you'll use to export the re
 
 If you disabled the Results.csv and Manifest.xml reports by creating the .reg files in the previous procedure, you can edit those files to re-enable a report so that it's exported with the search results. Again, perform the following procedure on the computer that you'll use to export the results a content search.
   
-1. Close the Office 365 eDiscovery Export tool if it's open.
+1. Close the eDiscovery Export tool if it's open.
     
 2. Edit one or both of the .reg edit files that you created in the previous procedure.
     
@@ -125,11 +125,11 @@ It depends on your specific needs. Many organizations don't require additional i
   
  **What computer do I have to do this on?**
   
- You have to change the registry setting on any local computer that you run the Office 365 eDiscovery Export tool on. 
+ You have to change the registry setting on any local computer that you run the eDiscovery Export tool on. 
   
  **After I change this setting, do I have to restart the computer?**
   
-No, you don't have to restart the computer. But if the Office 365 eDiscovery Export tool is running, you have to close it and then restart it after you change the registry setting.
+No, you don't have to restart the computer. But if the eDiscovery Export tool is running, you have to close it and then restart it after you change the registry setting.
   
  **Does an existing registry key get edited or does a new key get created?**
   

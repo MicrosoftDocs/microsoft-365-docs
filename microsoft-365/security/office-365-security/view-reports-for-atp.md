@@ -55,9 +55,11 @@ Filters and breakdowns of the information allow for more granular categorization
 
 ![Threat Protection Status report dropdown showing 'break down by'.](../../media/tp-threatProtectStatRpt-BreakDownBy.png)
 
-These views give you the option to export, via a button click (in Email > Phish, Email > Malware, and Content > Malware views). The aggregated data exported to your computer can be opened in Excel.
+These views give you the option to export, via a button click (in **Email** \> **Phish**, **Email** \> **Malware**, and **Content** \> **Malware** views). The aggregated data exported to your computer can be opened in Excel.
 
 ![This graphic shows Export as an option in the menu for the Malware view, right between Create Schedule, and Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
+
+**Note**: The maximum number of entries that can be exported for **Phish** and **Malware** is just under 10000. If you export a view, only the most recent 10000 entries are exported.
 
 The Overview and Emails views will display information within hours of processing rather than in 24 hours (demand re. increased speeds here has been a clear signal)!
 
@@ -102,9 +104,9 @@ The **ATP File Types** report shows you the type of files detected as malicious 
 To view this report, in the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **ATP File Types**.
 
 ![ATP File Types report](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-
-When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md).
-
+  
+When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection](anti-spam-and-anti-malware-protection.md).
+  
 ![ATP File Types report data for a day](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
 ## ATP Message Disposition report
@@ -153,7 +155,7 @@ In order to view and use the reports described in this article, **you must have 
 
 To learn more, see the following resources:
 
-- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
@@ -163,8 +165,8 @@ If you are not seeing data in your ATP reports, double-check that your policies 
 
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
-
+[Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+  
 [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
 
 [Set up and download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)

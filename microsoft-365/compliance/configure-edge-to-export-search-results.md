@@ -1,5 +1,5 @@
 ---
-title: "Use the Office 365 eDiscovery Export Tool in Microsoft Edge"
+title: "Use the eDiscovery Export Tool in Microsoft Edge"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,9 +14,9 @@ search.appverid:
 description: "You have to enable ClickOnce support to use the newest version of Microsoft Edge to download search results from Content Search and eDiscovery in the security and compliance center."
 ---
 
-# Use the Office 365 eDiscovery Export Tool in Microsoft Edge
+# Use the eDiscovery Export Tool in Microsoft Edge
 
-As a result of recent changes to the newest version of Microsoft Edge, ClickOnce support is no longer enabled by default. To continue using the Microsoft Office 365 eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in the newest version of Microsoft Edge.
+As a result of recent changes to the newest version of Microsoft Edge, ClickOnce support is no longer enabled by default. To continue using the eDiscovery Export Tool to download Content Search or eDiscovery search results, you either need to use [Microsoft Internet Explorer](https://support.microsoft.com/help/17621/internet-explorer-downloads) or enable ClickOnce support in the newest version of Microsoft Edge.
 
 ## Enable ClickOnce support in Microsoft Edge
 
@@ -44,7 +44,7 @@ As a result of recent changes to the newest version of Microsoft Edge, ClickOnce
 
    ![Click Open to launch the eDiscovery Export Tool](../media/ClickOnceimage4.png)
 
-   If the Microsoft Office 365 eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning, 
+   If the eDiscovery Export Tool isn't installed, you will be prompted with a Security Warning, 
 
    ![Click Install to install the eDiscovery Export Tool](../media/ClickOnceimage5.png)
 

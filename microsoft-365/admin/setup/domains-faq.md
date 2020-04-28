@@ -20,7 +20,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: "Learn more about domains in Office 365 by finding answers to your questions in FAQ."
+description: "Learn more about domains by finding answers to your questions in FAQ."
 ms.custom: okr_smb
 ---
 
@@ -46,7 +46,7 @@ Mail is delivered to the mail exchange server with the lowest preference number 
     
 ## How can I validate SPF records for my domain?
 
-It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Office 365 values to it, rather than create a new one. After you've added or updated your SPF record for Office 365 email, you should check to make sure that the syntax is correct with one of these tools: 
+It's important that you have or create **only one TXT record for SPF**. If you already have an SPF record, you should append the new Office 365 values to it, rather than create a new one. After you've added or updated your SPF record for Microsoft email, you should check to make sure that the syntax is correct with one of these tools: 
   
 - [SPF Record Testing Tools](http://www.kitterman.com/spf/validate.html)
     
@@ -58,7 +58,7 @@ It's important that you have or create **only one TXT record for SPF**. If you a
 
 There are two options for DNS management with Office 365:
   
-1. You change your nameserver (NS) records, and then Office 365 takes care of all the service-specific records, like setting up your MX record for email. **(Recommended)**
+1. You change your nameserver (NS) records, and then Microsoft takes care of all the service-specific records, like setting up your MX record for email. **(Recommended)**
     
 2. You add DNS records for email and other Office 365 services at your DNS host yourself. **(Experts only)**
     
@@ -82,7 +82,7 @@ There are two options for DNS management with Office 365:
  
 #### Disadvantages
 You have to set up the DNS records for Office 365 services yourself (unless you have a GoDaddy domain). 
--  If your current DNS host doesn't support all of the required record types for Office 365, some Office 365 features won't be available and you might need to switch to a different DNS host. 
+-  If your current DNS host doesn't support all of the required record types for Microsoft 365, some features won't be available and you might need to switch to a different DNS host. 
 - When Office 365 changes requirements for DNS records, or adds new services, you have to make updates yourself at your DNS host. 
    
 ## What is a domain name?
@@ -328,9 +328,9 @@ When you add multiple domains to Office 365, you can host any of the services (l
 
 ## Why do I have an "onmicrosoft.com" domain?
 
-Office 365 creates a domain for you, like _contoso.onmicrosoft.com_, when you sign up with the service. The user ID that you create when you sign up includes the domain, like _alan\@contoso.onmicrosoft.com_. 
+Office 365 creates a domain for you, like *contoso.onmicrosoft.com*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.com*. 
   
- __If you want to have your email look like _alan\@contoso.com_:__ [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already. 
+ **If you want to have your email look like *alan\@contoso.com*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already. 
   
 - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.com, you can't change it to be fabrikam.onmicrosoft.com. To use a different onmicrosoft.com domain, you'd have to start a new subscription with Office 365. 
     
@@ -343,12 +343,11 @@ You can keep using the initial onmicrosoft.com domain even after you add your do
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 ## Why do I have an "onmicrosoft.de" domain?
 
-Office 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like "alan@contoso.onmicrosoft.de". 
+Office 365 creates a domain for you, like *contoso.onmicrosoft.de*, when you sign up with the service. The user ID that you create when you sign up includes the domain, like *alan@contoso.onmicrosoft.de*. 
   
-If you want to have your email look like "alan@contoso.de": [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already 
+ **If you want to have your email look like *alan@contoso.de*:** [buy the domain](../get-help-with-domains/buy-a-domain-name.md) or just follow the steps in [Add your users and domain to Office 365](add-domain.md) if you own it already. 
   
 - **You can't rename the onmicrosoft domain after sign-up.** For example, if the initial domain you chose was fourthcoffee.onmicrosoft.de, you can't change it to be fabrikam.onmicrosoft.de. To use a different onmicrosoft.de domain, you'd have to start a new subscription with Office 365. 
     
@@ -484,7 +483,7 @@ You can, but there are limitations:
         
     2. Perform the following tests:
         
-    3. Test local Office 365 email. For example, send an email to User B. This email should be delivered immediately. In this scenario, the message will not be routed to User B's mailbox on your original server because Office 365 sees the mailbox as being local.
+    3. Test local Microsoft email. For example, send an email to User B. This email should be delivered immediately. In this scenario, the message will not be routed to User B's mailbox on your original server because Office 365 sees the mailbox as being local.
         
     4. Test email to someone who's on the other email system. For example, send an email to User C. This email should be delivered to User C's mailbox on your original mail server.
         
