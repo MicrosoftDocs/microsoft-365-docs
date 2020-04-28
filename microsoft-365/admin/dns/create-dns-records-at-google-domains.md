@@ -51,7 +51,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 2. On the **My domains** page, find the domain you want to use with Microsoft, and select the **MANAGE** link next to it. In the left navigation, select **DNS**.
     
-3. In the ** Custom resource records ** section, in the boxes for the new record, type or copy and paste the values from the following table. 
+3. In the **Custom resource records** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (You may have to scroll down.)
     
