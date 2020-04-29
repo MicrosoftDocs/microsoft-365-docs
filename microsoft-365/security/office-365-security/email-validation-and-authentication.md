@@ -22,7 +22,7 @@ description: "Learn about how Exchange Online and Exchange Online Protection (EO
 
 # Email authentication in Microsoft 365
 
-Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP useses the standards to verify inbound email:
+Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP uses the standards to verify inbound email:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 
