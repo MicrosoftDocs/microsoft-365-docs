@@ -17,14 +17,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your Office 365 organization. "
+description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Search the audit log in the Security & Compliance Center
 
-## Introduction
-
-Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Office 365 Security & Compliance Center to search the unified audit log to view user and administrator activity in your Office 365 organization. Why a unified audit log? Because you can search for the following types of user and admin activity in Office 365:
+Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of user and admin activity in Office 365:
 
 - User activity in SharePoint Online and OneDrive for Business
 
@@ -60,7 +59,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
 
-## Before you begin
+## Requirements to search the audit log
 
 Be sure to read the following items before you start searching the Office 365 audit log.
 
