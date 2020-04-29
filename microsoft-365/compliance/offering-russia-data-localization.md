@@ -30,7 +30,7 @@ It should be noted, that it is the customer, as personal data operator of PDIS, 
 
 ### Microsoft ID Management
 
-Microsoft invites customers to consider subscribing to Microsoft Online Services – Microsoft Azure, Microsoft 365, Dynamics 365, and Power Platform – via a Microsoft Cloud Solution Provider (CSP) partner. See this [list of CSP partners](https://pinpoint.microsoft.com/search?type=services&campaign=691) for more information. 
+Microsoft invites customers to consider subscribing to Microsoft Online Services – Microsoft Azure, Microsoft 365, Dynamics 365, and Power Platform – via a Microsoft Cloud Solution Provider (CSP) partner. See this [list of CSP partners](https://pinpoint.microsoft.com/search?type=services&campaign=691) for more information.
 
 ### Managing User Identity and Access for Microsoft Online Services
 
@@ -42,7 +42,7 @@ For technical and billing questions, refer to the Microsoft Support resources be
 
 ### Microsoft Azure
 
-- **Website**: [Microsoft Azure support](http://aka.ms/GetAzureSupport)
+- **Website**: [Microsoft Azure support](https://aka.ms/GetAzureSupport)
 - **Toll Free**: 8 800 200 8001
 - **Local Call**: 495 916 7171
 - **Online support**: Submit queries via [Azure Portal](https://portal.azure.com)
@@ -51,7 +51,7 @@ For technical and billing questions, refer to the Microsoft Support resources be
 
 - **Toll Free**: 8 10 800 2548 1044
 - **Local Call**: 499 922 8623
-- **Online support**: Submit queries via [Admin Center](http://portal.office.com/)
+- **Online support**: Submit queries via [Admin Center](https://portal.office.com/)
 
 ### Dynamics 365
 
