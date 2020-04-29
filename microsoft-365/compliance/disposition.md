@@ -114,13 +114,12 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 
 Use the **Disposition** tab from the **Records Management** page to identify records that are permanently deleted. These items display **Records Disposed** in the **Type** column. Currently, items that are pending a disposition review do not display a value in this column. For example:
 
-![Items that were disposed of with or without a disposition review](../media/records-disposed.png)
+![Items that were disposed of without a disposition review](../media/records-disposed2.png)
 
 The ability to see records that were automatically deleted without a disposition review is gradually rolling out to tenants during April and May 2020, so you might not see these entries immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
 
 If you see the **Count** number nearing this limit of one million, and you need proof of disposition for the item, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-![Disposition tabs](../media/Retention-Disposition-tabs.png)
     
 ## Filter and export the views
 
