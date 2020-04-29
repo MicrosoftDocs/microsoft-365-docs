@@ -25,7 +25,7 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records.md) that been automatically deleted at the end of their retention period. 
 
 > [!NOTE]
-> Rolling out to tenants during April and May 2020: Based on information from the unified auditing log, you can now view records that have been deleted as a result of a retention label, even if they haven't gone through a disposition review.
+> Rolling out to tenants during April and May 2020: Based on information from the unified auditing log, you can now view records that have been automatically deleted as a result of a retention label, even if they haven't gone through a disposition review.
 
 ## Prerequisites for viewing content dispositions
 
