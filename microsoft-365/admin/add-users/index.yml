@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Manage users and groups # < 60 chars
-summary: Manage passwords, add and remove users, set up groups, and manage licenses # < 160 chars
+summary: Common admin tasks to manage users and licenses. # < 160 chars
 
 metadata:
   title: Manage users and groups # Required; page title displayed in search results. Include the brand. < 60 chars.
