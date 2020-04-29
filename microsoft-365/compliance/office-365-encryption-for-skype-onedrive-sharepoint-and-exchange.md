@@ -19,7 +19,7 @@ ms.collection:
 description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, and Exchange Online."
 ---
 
-# Encryption for Skype for Business, OneDrive for Business, SharePoint Online, Microsoft Teams and Exchange Online
+# Encryption for Skype for Business, OneDrive for Business, SharePoint Online, Microsoft Teams, and Exchange Online
 
 Microsoft 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security.
 
