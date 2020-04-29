@@ -75,7 +75,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-If there are Azure charges on your invoice that you would like more details on, see [Understand charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## Understand the last invoice page
 
