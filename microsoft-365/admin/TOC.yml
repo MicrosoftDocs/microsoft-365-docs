@@ -216,7 +216,7 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Set up multi-factor authentication (with Office 2013)
           href: security-and-compliance/enable-modern-authentication.md
-        - name: GDPR compliance
+        - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Work with customers
       href: work-with-customers/index.yml
