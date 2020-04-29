@@ -85,7 +85,7 @@ As an administrator, you see an overview of all pending dispositions in the **Ov
 
 ![Pending dispositions in Records management overview](../media/dispositions-overview.png)
 
-When you select the **View all pending dispositions**, you're taken to the Disposition tab. For example:
+When you select the **View all pending dispositions**, you're taken to the **Disposition** tab. For example:
 
 ![Dispositions page in Microsoft 365 compliance center](../media/disposition-tab.png)
 
@@ -106,7 +106,7 @@ Triggering a disposition review at the end of the retention period is a configur
 
 When a reviewer is notified by email that content is ready to review, they go to the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center. The reviewers can see how many items for each retention label are awaiting disposition, and then select a retention label to see all content with that label.
 
-After you select a retention label, you then see all pending dispositions for that label. Select one or more items where you can then choose an action and enter a justification comment:
+After you select a retention label, you then see all pending dispositions for that label from the **Pending disposition** tab. Select one or more items where you can then choose an action and enter a justification comment:
 
 ![Disposition options](../media/retention-disposition-options.png)
 
@@ -116,11 +116,10 @@ As you can see from the picture, the actions supported are:
 - Extend the retention period
 - Apply a different retention label
 
-Note that you can select multiple items at the same time.
-    
+
 Providing you have permissions to the location and the content, you can use the link in the **Location** column to view documents in their original location. During a disposition review, the content never moves from its original location, and it's never deleted until the reviewer chooses to do so.
   
-Note that the email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
+The email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
 All disposition actions can be audited. Turn on auditing at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
   
@@ -129,35 +128,27 @@ All disposition actions can be audited. Turn on auditing at least one day before
 Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content in the SharePoint site or OneDrive account becomes eligible for the standard cleanup process described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
 
-## View pending dispositions and disposed items
+## View disposed items
 
-From the **Pending disposition** page, you can view both pending and completed dispositions: 
-  
-- The **Pending disposition** shows items that have reached the end of their retention period and require a disposition review. After reviewing each item, decide if you want to apply a different retention label to it, extend its retention period, or permanently delete it. You can select multiple items.
+From the **Disposition** page, you can identify items that are permanently deleted by their **Records Disposed** type. For example:
 
-- The **Disposed items** tab shows permanently-deleted items that have already been through a disposition review, or deleted content that didn't go through a disposition review. They show here because the permanent deletion process can take several days. Items that had a different retention label applied, or had their retention period extended, won't appear here.
+![Items that were disposed of without a disposition review](../media/records-disposed.png)
 
-### Viewing automatic disposal of content
-
-Content that was automatically deleted without a disposition review are identified by the type **Records Disposed**. For example:
-
-![Records that were disposed of without a disposition review](../media/records-disposed.png)
-
-Because this feature is gradually rolling out to tenants during April and May 2020, you might not see these items immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
+The ability to see items that were automatically deleted without a disposition review is gradually rolling out to tenants during April and May 2020, so you might not see these items immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
 
 If you see the **Count** number nearing this limit of one million, and you need proof of disposition for the item, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 ![Disposition tabs](../media/Retention-Disposition-tabs.png)
     
-## Filter the disposition views
+## Filter and export the views
 
-You can filter these views by retention label or time range. For pending dispositions, the time range is based on the expiration date. For disposed items, the time range is based on the deletion date.
+On both the **Pending disposition** page and the **Disposed items** page, you can filter the views to help you more easily find items. 
+
+For pending dispositions, the time range is based on the expiration date. For disposed items, the time range is based on the deletion date.
   
-![Disposition filter options](../media/Retention-filter-options.png)
+You can export information about the items in either view as a .csv file that you can then sort and manage using Excel:
 
-### Export the disposition items
-
-In addition, you can export the items in either view as a .csv file that you can open in Excel.
+![Export option for disposition](../media/retention-export-option.png)
   
 ![Exported disposition data in Excel](../media/08e3bc09-b132-47b4-a051-a590b697e725.png)
 
