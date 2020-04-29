@@ -33,9 +33,9 @@ The records-management solution supports the following elements:
 
 - **Trigger event-based retention** with [event-based retention](event-driven-retention.md).
 
-- **Review and validate disposition** with [disposition reviews](disposition.md#disposition-reviews).
+- **Review and validate disposition** with [disposition reviews](disposition.md#disposition-reviews) and proof of [records deletion](disposition.md#disposition-of-records).
 
-- **Review and export information about all disposed items** with [validation and reporting](disposition.md#view-disposed-items).
+- **Export information about all disposed items** with the [export option](disposition.md#filter-and-export-the-views).
 
 - **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
