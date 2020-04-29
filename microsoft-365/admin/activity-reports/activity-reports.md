@@ -92,6 +92,8 @@ Depending on your subscription, here are the available reports.
 - [Email apps usage](email-apps-usage.md)
 
 - [Forms activity](forms-activity.md)
+
+- [Forms Pro activity](forms-pro-activity.md)
   
 - [Microsoft 365 groups](office-365-groups.md)
   
