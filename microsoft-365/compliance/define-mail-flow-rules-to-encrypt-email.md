@@ -159,14 +159,14 @@ If you haven't yet moved your organization to the new OME capabilities, use thes
    New-TransportRule -Name "Encrypt rule for Dr Toni Ramos" -SentTo "DrToniRamos@hotmail.com" -SentToScope "NotinOrganization" -ApplyOME $true
    ```
 
-   **Notes**:
-
-   - The unique name of the new rule is "Encrypt rule for Dr Toni Ramos".
-
-   - The _SentTo_ parameter specifies the message recipients (identified by name, email address, distinguished name, etc.). In this example, the recipient is identified by the email address "DrToniRamos@hotmail.com".
-
-   - The _SentToScope_ parameter specifies the location of the message recipients. In this example, the recipient's mailbox is in hotmail and is not part of the organization, so the value `NotInOrganization` is used.
-
+   > [!NOTE]
+   > 
+   > - The unique name of the new rule is "Encrypt rule for Dr Toni Ramos".
+   > 
+   > - The _SentTo_ parameter specifies the message recipients (identified by name, email address, distinguished name, etc.). In this example, the recipient is identified by the email address "DrToniRamos@hotmail.com".
+   > 
+   > - The _SentToScope_ parameter specifies the location of the message recipients. In this example, the recipient's mailbox is in hotmail and is not part of the organization, so the value `NotInOrganization` is used.
+   
    For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ### Remove encryption from email replies encrypted without the new OME capabilities
@@ -203,17 +203,17 @@ When your email users send encrypted messages, recipients of those messages can 
    New-TransportRule -Name "Remove encryption from incoming mail" -SentToScope "InOrganization" -RemoveOME $true
    ```
 
-   **Notes**:
-
-   - The unique name of the new rule is "Remove encryption from incoming mail".
-
-   - The _SentToScope_ parameter specifies the location of the message recipients. In this example, the value `InOrganization` value is used, which indicates:
-
-     - The recipient is a mailbox, mail user, group, or mail-enabled public folder in your organization.
-
-       or
-
-     - The recipient's email address is in an accepted domain that's configured as an authoritative domain or an internal relay domain in your organization, _and_ the message was sent or received over an authenticated connection.
+   > [!NOTE]
+   > 
+   > - The unique name of the new rule is "Remove encryption from incoming mail".
+   > 
+   > - The _SentToScope_ parameter specifies the location of the message recipients. In this example, the value `InOrganization` value is used, which indicates:
+   > 
+   >   - The recipient is a mailbox, mail user, group, or mail-enabled public folder in your organization.
+   > 
+   >     or
+   > 
+   >   - The recipient's email address is in an accepted domain that's configured as an authoritative domain or an internal relay domain in your organization, _and_ the message was sent or received over an authenticated connection.
 
 For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
