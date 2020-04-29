@@ -30,7 +30,7 @@ If AWS is your DNS hosting provider, follow the steps in this article to verify 
   
 After you add these records at AWS, your domain will be set up to work with Microsoft services.
   
-To learn about webhosting and DNS for websites with Microsfot, see [Use a public website with Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -47,7 +47,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 2. On the **Resources** page, select **Hosted Zones**.
     
-3. On the ** Hosted Zones ** page, in the **Domain Name** column, select the name of the domain that you want to edit. 
+3. On the **Hosted Zones** page, in the **Domain Name** column, select the name of the domain that you want to edit. 
     
 4. Select **Create Record Set**.
     

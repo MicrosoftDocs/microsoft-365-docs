@@ -25,6 +25,13 @@ ms.custom:
 
 # What's new in the Microsoft 365 admin center
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Some of the information in this article may not apply to Office 365 operated by 21Vianet.
+
+::: moniker-end
+
 We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 > [!IMPORTANT]
@@ -37,6 +44,7 @@ And if you're interested in what's new in other Microsoft cloud services:
 - [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
 ## March 2020
@@ -84,6 +92,7 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 ### Videos, training, and docs
 
 [What's New in Microsoft 365 web series](https://go.microsoft.com/fwlink/p/?linkid=2118096): In this month's episode, we highlight the 3-year anniversary of Microsoft Teams and cover new features including improved audio quality in online meetings, Targeted Communications for firstline managers with the Shifts app, Teams and Skype consumer interoperability, and more.
+
 
 ## February 2020
 
@@ -167,7 +176,7 @@ We've starting to roll out the ability to change your payment method from credit
 
 ![Screen capture: Billing section of subscription card with a credit card as the payment method.](../media/MAC-BillingEditCreditCard.png)
 
-Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md)
 
 ### Global reader
 
@@ -248,7 +257,7 @@ Technically, this isn't the Microsoft 365 admin center's news to tell, but we're
 > [!IMPORTANT]
 > You can now get to YOUR SharePoint admin center with a regular URL: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
-For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 
 ## September 2019
 
