@@ -29,7 +29,7 @@ Use the **Disposition** tab from **Records Management** in the Microsoft 365 com
 
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled.
 
 ### Permissions for disposition
 
@@ -42,6 +42,10 @@ Specific to the **View-Only Audit Logs** role:
 - Microsoft 365 Groups ([formerly Office 365 Groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) aren't supported for this role. Instead, assign user mailboxes, mail users, or mail-enabled security groups.
 
 For instructions to grant users the **Disposition Management** role and create your new **Disposition Reviewers** role, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+
+### Enable auditing
+
+Turn on auditing at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
 
 
 ## Disposition reviews
@@ -104,7 +108,7 @@ Providing you have permissions to the location and the content, you can use the 
   
 The email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-All disposition actions can be audited. Turn on auditing at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+All disposition actions can be audited.
   
 ### How long until disposed content is permanently deleted
 
