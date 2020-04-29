@@ -115,7 +115,7 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 > [!NOTE]
 > The ability to see records that were automatically deleted without a disposition review is gradually rolling out to tenants during April and May 2020, so you might not see this experience immediately.
 
-Use the **Disposition** tab from the **Records Management** page to identify records that are automatically deleted. These items display **Records Disposed** in the **Type** column. Disposed records which are approved to be deleted through a disposition review will show under the corresponding label with a **Pending Disposition** in the **Type** column. For example:
+Use the **Disposition** tab from the **Records Management** page to identify records that are automatically deleted. These items display **Records Disposed** in the **Type** column. In comparison, disposed records that are approved to be deleted through a disposition review display **Pending Disposition** in the **Type** column. For example:
 
 ![Items that were disposed of without a disposition review](../media/records-disposed2.png)
 
