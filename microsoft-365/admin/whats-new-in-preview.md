@@ -17,7 +17,6 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew

@@ -34,6 +34,8 @@
       items:
         - name: About the admin center
           href: admin-overview/about-the-admin-center.md
+        - name: About the new admin center
+          href: microsoft-365-admin-center.md
         - name: Learn about admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
