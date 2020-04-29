@@ -7,16 +7,16 @@
         - name: Sign up
           href: admin-overview/sign-up-for-office-365.md
         - name: Try or buy Microsoft 365
-          href: commerce/try-or-buy-microsoft-365
+          href: ../commerce/try-or-buy-microsoft-365
         - name: Plan your setup
           href: setup/plan-your-setup.md
         - name: Set up your organization with the guided setup
           href: setup/setup.md
-        - name: Explore the setup page
+        - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Migrate your data
           href: setup/migrate-email-and-contacts-admin.md
-        - name: Deploy apps to your organization
+        - name: Install Office apps
           href: setup/install-applications.md
         - name: Roll out Teams
           href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
@@ -32,11 +32,11 @@
           href: admin-overview/learn-about-office-365-germany.md
     - name: Overview of the Microsoft 365 admin center
       items:
-        - name: About the admin center
+        - name: Admin center overview
           href: admin-overview/about-the-admin-center.md
         - name: About the new admin center
           href: microsoft-365-admin-center-preview.md
-        - name: Learn about admin roles
+        - name: About admin roles
           href: add-users/about-admin-roles.md
         - name: Admin mobile app
           href: admin-overview/admin-mobile-app.md
@@ -64,18 +64,18 @@
            - name: Remove a former employee
              href: add-users/remove-former-employee.md
            - name: Back up former user's data
-             href: admin/add-users/get-access-to-and-back-up-a-former-user-s-data.md
+             href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
            - name: Restore  a user
              href: add-users/restore-user.md
            - name: Reset passwords
              href: add-users/reset-passwords.md
            - name: Set passwords to never expire
              href: add-users/set-password-to-never-expire.md
-           - name: Let users set passwords
+           - name: Let users reset passwords
              href: add-users/let-users-reset-passwords.md
            - name: Resend user passwords
              href: add-users/resend-user-password.md
-           - name: Manage users with custom views
+           - name: Create template to add users
              href: add-users/create-and-use-a-template-to-add-users.md
         - name: Groups 
           items:
@@ -83,15 +83,15 @@
              href: create-groups/office-365-groups.md
            - name: Compare groups
              href: create-groups/compare-groups.md
-           - name: Create an Office 365 group
+           - name: Create a group
              href: create-groups/create-groups.md
-           - name: Manage Office 365 groups
+           - name: Manage groups
              href: create-groups/manage-groups.md
            - name: Add or remove group members
              href: create-groups/add-or-remove-members-from-groups.md
            - name: Restore a deleted group
              href: create-groups/restore-deleted-group.md
-           - name: Plan for governance of Office 365 groups
+           - name: Plan for governance of groups
              href: create-groups/plan-for-groups-governance.md
            - name: Manage creation of groups
              href: create-groups/manage-creation-of-groups.md
@@ -112,7 +112,7 @@
           href: email/office-365-user-email-settings.md
         - name: Add another email alias for a user
           href: email/add-another-email-alias-for-a-user.md
-        - name: Change email address
+        - name: Change your email address to use your custom domain
           href: email/change-email-address.md
         - name: Create signatures and disclaimers
           href: setup/create-signatures-and-disclaimers.md
@@ -143,10 +143,8 @@
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
     - name: Manage Domains
-      href: get-help-with-domains/get-help-with-domains.md
+      href: get-help-with-domains/what-is-a-domain.md
       items:
-        - name: What is a domain?
-          href: get-help-with-domains/what-is-a-domain.md
         - name: Add a domain
           href: setup/add-domain.md
         - name: Buy a domain
@@ -168,9 +166,9 @@
       items:
          - name: Upgrade your organization to the latest apps 
            href: setup/upgrade-users-to-latest-office-client.md
-         - name: Monitor user activity
+         - name: Monitor user activity by using reports
            href: activity-reports/activity-reports.md
-         - name: Change contact Information
+         - name: Change your organization contact info
            href: manage/change-address-contact-and-more.md
          - name: Update your admin contact info
            href: manage/update-phone-number-and-email-address.md
@@ -180,7 +178,7 @@
            href: manage/customize-the-app-launcher.md
          - name: Requirements for centralized deployment of add-ins
            href: manage/centralized-deployment-of-add-ins.md
-         - name: Deploy and manage add-ins with centralized deployment
+         - name: Install and manage add-in by using Centralized Deployment
            href: manage/manage-deployment-of-add-ins.md
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
@@ -188,27 +186,25 @@
            href: manage/message-center.md
          - name: Manage Message center messages
            href: manage/manage-messages.md
-         - name: Release options
+         - name: Set up release options
            href: manage/release-options-in-office-365.md
-         - name: Activity reports in the admin center
-           href: activity-reports/activity-reports.md
          - name: Power BI usage analytics
            items: 
-           - name: Usage analytics
+           - name: About usage analytics
              href: usage-analytics/usage-analytics.md
            - name: Enable usage analytics
              href: usage-analytics/enable-usage-analytics.md
            - name: Get the latest version of usage analytics
              href: usage-analytics/get-the-latest-version-of-usage-analytics.md
-           - name: Navigate and utilize reports
+           - name: Navigate and use reports
              href: usage-analytics/navigate-and-utilize-reports.md
-           - name: Active user in usage reports
+           - name: About active users in usage reports
              href: usage-analytics/active-user-in-usage-reports.md
            - name: Customize reports
              href: usage-analytics/customize-reports.md
-           - name: Usage analytics data model
+           - name: About the usage analytics data model
              href: usage-analytics/usage-analytics-data-model.md
-           - name: Usage analytics errors
+           - name: Troubleshoot usage analytics errors
              href: usage-analytics/usage-analytics-errors.md
     - name: Manage subscriptions and billing
       href: ../commerce/index.yml
