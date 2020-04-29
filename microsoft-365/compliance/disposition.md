@@ -25,7 +25,7 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage and view content that's been deleted as a result of a [retention label](labels.md). 
 
 > [!NOTE]
-> Rolling out to tenants during April and May 2020: Based on auditing events, you can now view all content that has been deleted as a result of a retention label, and not just the labeled content that was deleted as a result of a disposition review.
+> Rolling out to tenants during April and May 2020: Based on [auditing events](#auditing-content-disposal), you can now view all content that has been deleted as a result of a retention label, and not just the labeled content that was deleted as a result of a disposition review.
 
 ## Prerequisites for viewing content dispositions
 
@@ -128,7 +128,7 @@ If you see the **Count** number nearing this limit of one million, and you need 
 
 ![Disposition tabs](../media/Retention-Disposition-tabs.png)
     
-## Filter and export the views
+### Filter and export the views
 
 On both the **Pending disposition** page and the **Disposed items** page, you can filter the views to help you more easily find items. 
 
@@ -142,7 +142,7 @@ You can export information about the items in either view as a .csv file that yo
 
 ## Auditing content disposal
  
-When content is automatically deleted as a result of a retention policy or retention label, an audit entry with the operation name of **RecordDelete** is added to the audit log.
+When content is deleted as a result of a retention label, an audit entry with the operation name of **RecordDelete** is added to the audit log.
 
 For more information about auditing, see [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md).
 
