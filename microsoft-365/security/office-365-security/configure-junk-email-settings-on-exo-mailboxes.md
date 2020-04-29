@@ -1,5 +1,5 @@
 ---
-title: "Configure junk email settings on Exchange Online mailboxes in Office 365"
+title: "Configure junk email settings on Exchange Online mailboxes"
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -18,7 +18,7 @@ ms.collection:
 description: "Admins can learn how to configure the junk email settings in Exchange Online mailboxes. Many of these settings are available to users in Outlook or Outlook on the web."
 ---
 
-# Configure junk email settings on Exchange Online mailboxes in Office 365
+# Configure junk email settings on Exchange Online mailboxes
 
 Organizational anti-spam settings in Exchange Online are controlled by Exchange Online Protection (EOP). For more information, see [Anti-spam protection in Office 365](anti-spam-protection.md).
 
@@ -44,10 +44,12 @@ Admins can use Exchange Online PowerShell to disable, enable, and view the statu
 
 - In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
+- Safe Senders for shared mailboxes are not synchronized to Azure AD and EOP by design.
+
 ## Use Exchange Online PowerShell to enable or disable the junk email rule in a mailbox
 
 > [!NOTE]
-> You can only use the **Set-MailboxJunkEmailConfiguration** cmdlet to disable the junk email rule on a mailbox that's been opened in Outlook (in Cached Exchange mode) or Outlook on the web. If the mailbox hasn't been opened, you'll receive the error: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` If you want to suppress this error for bulk operations, you can add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command
+> You can only use the **Set-MailboxJunkEmailConfiguration** cmdlet to disable the junk email rule on a mailbox that's been opened in Outlook (in Cached Exchange mode) or Outlook on the web. If the mailbox hasn't been opened, you'll receive the error: `The Junk Email configuration couldn't be set. The user needs to sign in to Outlook Web App before they can modify their Safe Senders and Recipients or Blocked Senders lists.` If you want to suppress this error for bulk operations, you can add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
 
 To enable or disable the junk email rule on a mailbox, use the following syntax:
 
@@ -69,11 +71,11 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
- **Notes**:
-
-- If the user has never opened their mailbox, you might receive an error when you run the previous command. To suppress this error for bulk operations, add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
-
-- Even if you disable the junk email rule, the Outlook Junk Email Filter (depending on how it's configured) can also determine whether a message is spam, and can move messages to the Inbox or Junk Email folder based on it's own spam verdict and the the safelist collection on the mailbox. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this topic.
+> [!NOTE]
+> 
+> - If the user has never opened their mailbox, you might receive an error when you run the previous command. To suppress this error for bulk operations, add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
+> 
+> - Even if you disable the junk email rule, the Outlook Junk Email Filter (depending on how it's configured) can also determine whether a message is spam, and can move messages to the Inbox or Junk Email folder based on it's own spam verdict and the the safelist collection on the mailbox. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this topic.
 
 ### How do you know this worked?
 
@@ -104,7 +106,7 @@ The safelist collection on a mailbox includes the Safe Senders list, the Safe Re
 |_TrustedSendersAndDomains_<sup>\*</sup>|**Don't move email from these senders to my Junk Email folder**|
 |
 
-<sup>\*</sup>**Notes**:
+<sup>\*</sup> **Notes**:
 
 - In Exchange Online, **domain entries** in the Safe Senders list or _TrustedSendersAndDomains_ parameter aren't recognized, so only use email addresses. In standalone EOP with directory synchronization, domain entries aren't synchronized by default, but you can enable synchronization for domains. For more information, see [KB3019657](https://support.microsoft.com/help/3019657/domains-on-the-outlook-safe-senders-list-aren-t-recognized-by-exchange).
 
@@ -138,13 +140,13 @@ $All = Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited; $All
 
 For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfiguration](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-mailboxjunkemailconfiguration).
 
- **Notes**:
-
-- If the user has never opened their mailbox, you might receive an error when you run the previous commands. To suppress this error for bulk operations, add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
-
-- Even if the junk email rule is disabled on the mailbox, you can still configure the safelist collection, and the Outlook Junk Email Filter is able to move messages to the Inbox or the Junk Email folder. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this topic.
-
-- The Outlook Junk Email Filter has additional safelist collection settings (for example, **Automatically add people I email to the Safe Senders list**). For more information, see [Use Junk Email Filters to control which messages you see](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+> [!NOTE]
+> 
+> - If the user has never opened their mailbox, you might receive an error when you run the previous commands. To suppress this error for bulk operations, add `-ErrorAction SlientlyContinue` to the **Set-MailboxJunkEmailConfiguration** command.
+> 
+> - Even if the junk email rule is disabled on the mailbox, you can still configure the safelist collection, and the Outlook Junk Email Filter is able to move messages to the Inbox or the Junk Email folder. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this topic.
+> 
+> - The Outlook Junk Email Filter has additional safelist collection settings (for example, **Automatically add people I email to the Safe Senders list**). For more information, see [Use Junk Email Filters to control which messages you see](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
 
 ### How do you know this worked?
 
@@ -176,3 +178,38 @@ When the Outlook Junk Email Filter is set to **Low** or **High**, the Outlook Ju
 So, the Outlook Junk Email Filter is able to use the mailbox's safelist collection and its own spam classification to move messages to the Junk Email folder, even if the junk email rule is disabled in the mailbox.
 
 Outlook and Outlook on the web both support the safelist collection. The safelist collection is saved in the Exchange Online mailbox, so changes to the safelist collection in Outlook appear in Outlook on the web, and vice-versa.
+
+## Limits for junk email settings
+
+The safelist collection (the Safe Senders list, Safe Recipients list, and Blocked Senders list) that's stored in the user's mailbox is also synchronized to EOP. With directory synchronization, the safelist collection is synchronized to Azure AD.
+
+- The safelist collection in the user's mailbox has a limit of 510 KB, which includes all lists, plus additional junk email filter settings. If a user exceeds this limit, they will receive an Outlook error that looks like this:
+
+  > Cannot/Unable add to the server Junk E-mail lists. You are over the size allowed on the server. The Junk E-mail filter on the server will be disabled until your Junk E-mail lists have been reduced to the size allowed by the server.
+
+  For more information about this limit and how to change it, see [KB2669081](https://support.microsoft.com/help/2669081/outlook-error-indicates-that-you-are-over-the-junk-e-mail-list-limit).
+
+- The synchronized safelist collection in EOP has the following synchronization limits:
+
+  - 1024 total entries in the Safe Senders list, the Safe Recipients list, and external contacts if **Trust email from my contacts** is enabled.
+  - 500 total entries in the Blocked Senders list and Blocked Domains list.
+
+  When the 1024 entry limit is reached, the following things happen:
+  
+  - The list stops accepting entries in PowerShell and Outlook on the web, but no error is displayed.
+
+    Outlook users can continue to add more than 1024 entries until they reach the Outlook limit of 510 KB. Outlook can use these additional entries, as long as an EOP filter doesn't block the message before delivery to the mailbox (mail flow rules, anti-spoofing, etc.).
+
+- With directory synchronization, the entries are synchronized to Azure AD in the following order:
+
+  1. Mail contacts if **Trust email from my contacts** is enabled.
+  2. The Safe Sender list and Safe Recipient list are combined, de-duplicated, and sorted alphabetically whenever a change is made for the first 1024 entries.
+
+  The first 1024 entries are used, and relevant information is stamped in the message headers.
+  
+  Entries over 1024 that weren't synchronized to Azure AD are processed by Outlook (not Outlook on the web), and no information is stamped in the message headers.
+
+As you can see, enabling the **Trust email from my contacts** setting reduces the number of Safe Senders and Safe Recipients that can be synchronized. If this is a concern, then we recommend using Group Policy to turn this feature off:
+
+- File name: outlk16.opax
+- Policy setting: **Trust e-mail from contacts**

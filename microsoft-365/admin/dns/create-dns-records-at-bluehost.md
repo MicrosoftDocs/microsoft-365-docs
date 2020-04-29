@@ -51,7 +51,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 3. In the ***domain_name*** area, on the **DNS Zone Editor** row, select **Manage DNS records**.
     
-4. On the ** DNS Zone Editor ** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
+4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     

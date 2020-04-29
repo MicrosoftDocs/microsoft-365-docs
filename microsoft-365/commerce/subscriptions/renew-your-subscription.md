@@ -43,11 +43,10 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ::: moniker range="o365-worldwide"
 
-
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
 2. Choose the subscription for which you want to manage recurring billing.
- 
+
 3. Under **Billing**, next to **Renews on** or **Expiring on**, select **edit**.
 
 4. In the **Recurring billing settings** pane, select **Turn OFF** to turn it off. If recurring billing is already turned off, select **Monthly** or **Once** to turn it on.
@@ -63,11 +62,7 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ::: moniker range="o365-germany"
   
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
-
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
 
 2. Choose the subscription for which you want to manage recurring billing.
  
@@ -86,14 +81,10 @@ If you prepaid for your subscription with a product key, your subscription will 
 
 ::: moniker range="o365-21vianet"
   
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
-
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
-    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 
 2. Choose the subscription for which you want to manage recurring billing.
- 
+
 3. To turn on **Recurring billing**, switch the toggle to **On**.
 
     ![Close-up of a Subscription card that has Recurring billing turned on.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)

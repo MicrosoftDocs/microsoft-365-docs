@@ -60,12 +60,12 @@ These steps turn on self-service password reset for everyone in your business.
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.
 
 ::: moniker-end
 
    
-2. Under **Let your people reset their own passwords**, select the link for the **Azure AD admin center**. You'll get Azure for free!
+2. Select **Self-service password reset**, select the link for the **Go to the Azure portal to turn on self-service password reset**. You'll get Azure for free!
   
 3. Select **Users** in the left navigation, and then select **Password reset**.
   

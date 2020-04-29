@@ -44,7 +44,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 * Streamlined deployment of PCs with Windows AutoPilot.
 
 **Other entitlements** 
-- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for busines service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### Who should consider adopting Microsoft 365 Business Premium? 
 Microsoft 365 Business Premium is a comprehensive, cloud-based security solution that lets you:  
@@ -81,7 +81,7 @@ Existing desktop (Win32) application compatibility is strong in Windows 10, with
 ### What is Windows 10 Business? 
 Windows 10 Business is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business Premium.
 
-Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threads. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
+Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threats. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
 
 If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro, which is the prerequisite for deploying Windows 10 Business.
 > [!IMPORTANT]

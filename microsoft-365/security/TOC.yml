@@ -135,8 +135,8 @@
                       href: mtp/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
-                    - name: DeviceFileCertificateInfoBeta
-                      href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
+                    - name: DeviceFileCertificateInfo
+                      href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
