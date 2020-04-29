@@ -564,11 +564,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/office-365-security/ciso-workshop.md",
       "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop",
       "redirect_document_id": false
