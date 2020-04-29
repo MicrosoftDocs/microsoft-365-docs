@@ -22,10 +22,10 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage and view content that's been deleted as a result of a [retention policy](retention-policies.md) or [retention label](label.md). 
+Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage and view content that's been deleted as a result of a [retention label](label.md). 
 
 > [!NOTE]
-> Rolling out to tenants during April and May 2020: Based on auditing events, you can now view all content that has been deleted as a result of a retention policy or retention label, and not just the labeled content that was deleted as a result of a disposition review.
+> Rolling out to tenants during April and May 2020: Based on auditing events, you can now view all content that has been deleted as a result of a retention label, and not just the labeled content that was deleted as a result of a disposition review.
 
 ## Prerequisites for viewing content dispositions
 
@@ -47,7 +47,7 @@ For instructions to grant users the **Disposition Management** role and create y
 
 Content can be automatically deleted as a result of your configured retention policies or retention labels. Or, specific to retention labels, content can be deleted as a result of a disposition review. 
 
-If you choose to delete the content automatically, no further action is needed from you. However, you can confirm that the content was deleted. For more information, see the [View pending dispositions and disposed items](#view-pending-dispositions-and-disposed-items) section on this page.
+If you choose to delete the content automatically, no further action is needed from you. However, for content that was deleted as a result of a retention label, you can confirm that the content was deleted. For more information, see the [View pending dispositions and disposed items](#view-pending-dispositions-and-disposed-items) section on this page.
 
 If you choose the retention label option **Trigger a disposition review**, additional action is needed before the content is deleted. For more information, see the next section.
 
@@ -67,21 +67,11 @@ When a disposition review is triggered at the end of the retention period:
   
 - The people you choose receive an email notification that they have content to review. These reviewers can be individual users, distribution or security groups, or Office 365 groups. Note that notifications are sent on a weekly basis.
     
-- The reviewers go to the **Disposition** tab in the Microsoft 365 compliance center to review the content. The reviewers can see how many items for each retention label are awaiting disposition, and then select a retention label to see all content with that label.
-    
-- For each document or email, the reviewer can:
-    
-  - Apply a different retention label.
-    
-  - Extend its retention period.
-    
-  - Permanently delete it.
-    
-- Reviewers can view either pending or completed dispositions, and export that list as a .csv file.
+- The reviewers go to the **Disposition** tab in the Microsoft 365 compliance center to review the content and decide whether to permanently delete it, extend its retention period, or apply a different retention label.
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
 
-As an administrator, you see an overview of all pending dispositions in the **Overview** tab. For example:
+You can see an overview of all pending dispositions in the **Overview** tab. For example:
 
 ![Pending dispositions in Records management overview](../media/dispositions-overview.png)
 
@@ -100,7 +90,7 @@ Triggering a disposition review at the end of the retention period is a configur
 ![Retention settings for a label](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
 > [!NOTE]
-> When you specify the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Microsoft 365 groups are not supported for this option.
+> When you select the option **Notify these people when there are items ready to review**, specify a user or mail-enabled security group. Microsoft 365 groups are not supported for this option.
 
 ### Viewing and disposing of content
 
@@ -116,7 +106,6 @@ As you can see from the picture, the actions supported are:
 - Extend the retention period
 - Apply a different retention label
 
-
 Providing you have permissions to the location and the content, you can use the link in the **Location** column to view documents in their original location. During a disposition review, the content never moves from its original location, and it's never deleted until the reviewer chooses to do so.
   
 The email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
@@ -126,7 +115,6 @@ All disposition actions can be audited. Turn on auditing at least one day before
 ### How long until disposed content is permanently deleted
 
 Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content in the SharePoint site or OneDrive account becomes eligible for the standard cleanup process described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
-  
 
 ## View disposed items
 
