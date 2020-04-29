@@ -21,6 +21,12 @@ landingContent:
   # Card (optional)
   - title: Work with customers
     linkLists:
+      - linkListType: how-to-guide
+        links:
+        - text: Share sites and files externally
+          url: manage/share-sites-with-external-users.md
+        - text: Share calendars with guest users
+          url: manage/share-calendars-with-external-users.md
       - linkListType: video
         links:
           - text: Create a team with guests

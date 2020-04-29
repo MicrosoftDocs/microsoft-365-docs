@@ -226,15 +226,15 @@
       href: work-with-customers/index.yml
       items: 
         - name: Share sites and files externally
-          href: manage/manage.md
+          href: manage/share-sites-with-external-users.md
         - name: Share calendars with guest users
-          href: manage/change-contact-preferences.md
-        - name: Create a guest user
-          href: manage/change-address-contact-and-more.md
-        - name: Create a team with customers
-          href: manage/update-phone-number-and-email-address.md
-        - name: Invite guests to a Teams meeting
-          href: manage/set-password-expiration-policy.md
+          href: manage/share-calendars-with-external-users.md
+        - name: Create a Team with guests
+          href: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7
+        - name: Schedule a Teams meeting with guests
+          href: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US
+        - name: Join a Teams meeting woth guests
+          href: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US
     - name: Troubleshoot
       href: https://docs.microsoft.com/office/troubleshoot/
     - name: Contact support
