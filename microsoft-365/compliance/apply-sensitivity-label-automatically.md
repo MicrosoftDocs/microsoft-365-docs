@@ -200,7 +200,7 @@ Specific to the Azure Information Protection unified labeling client:
 - One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction. 
     - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
-    - If the labels apply encryption, they must be configured for the **Apply permissions now** setting.
+    - If the labels apply encryption, they must be configured for the **Assign permissions now** setting.
 
 ### Learn about simulation mode
 
