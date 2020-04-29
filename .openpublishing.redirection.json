@@ -280,6 +280,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/ediscovery-cases.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-arc-Windows.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
       "redirect_document_id": false
@@ -304,7 +309,12 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview",
       "redirect_document_id": true
     },
-	{
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfobeta-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfo-table",
+      "redirect_document_id": true
+    },
+	  {
       "source_path": "microsoft-365/security/mtp/mtp-preview.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/preview",
       "redirect_document_id": true
@@ -554,11 +564,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/office-365-security/ciso-workshop.md",
       "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop",
       "redirect_document_id": false
@@ -596,6 +601,26 @@
     {
       "source_path": "microsoft-365/business/set-up-mfa.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/unverified-sender-feature.md",
+      "redirect_url": "https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/dns/add-or-edit-custom-dns-records.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/setup/add-domain",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/get-help-with-domains/domain-connect.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/setup/add-domain",
       "redirect_document_id": false
     }
   ]

@@ -1,5 +1,5 @@
 ---
-title: "Best practices for configuring EOP and Office 365 ATP"
+title: "Best practices for configuring EOP and ATP"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -14,7 +14,7 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: "Follow these best-practice recommendations for Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors."
 ---
 
-# Best practices for configuring EOP and Office 365 ATP
+# Best practices for configuring EOP and ATP
 
 Follow these best-practice recommendations for Exchange Online Protection (EOP) in order to set yourself up for success and avoid common configuration errors. This topic assumes that you've already completed the setup process. If you haven't completed EOP setup, see [Set up your EOP service](set-up-your-eop-service.md).
 
@@ -36,7 +36,7 @@ These settings cover a range of features that are outside of security policies.
 
 |Security feature name|Standard|Strict|Comment|
 |---------|---------|---------|---------|
-|[Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
+|[Set up SPF to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Yes|Yes||
 |[Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md)|Yes|Yes||
 |[Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md)|Yes|Yes|Use action=quarantine for Standard, and action=reject for Strict.|
 |Deploy Report Message add-on to improve End User Reporting of Suspicious Emails|Yes|Yes||
@@ -48,7 +48,7 @@ These settings cover a range of features that are outside of security policies.
 |SMTP Authenticated Submission to mailbox|Disabled|Disabled||
 |EWS connectivity to mailbox|Disabled|Disabled||
 |[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-user) cmdlet).|
-|Use Spoof Intelligence to whitelist senders whenever possible|Yes|Yes||
+|Use [spoof intelligence](learn-about-spoof-intelligence.md) to whitelist senders whenever possible|Yes|Yes||
 |Directory-Based Edge Blocking (DBEB)|Enabled|Enabled|Domain Type = Authoritative|
 |[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
 

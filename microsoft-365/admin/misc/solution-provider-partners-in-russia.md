@@ -6,7 +6,7 @@ ms.author: loreenl
 author: LoreenLa
 manager: pamgreen
 audience: Admin
-ms.topic: reference
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
