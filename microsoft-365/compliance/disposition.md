@@ -26,7 +26,7 @@ Use the **Disposition** tab from **Records Management** in the Microsoft 365 com
 
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled.
 
 ### Permissions for disposition
 
@@ -40,6 +40,9 @@ Specific to the **View-Only Audit Logs** role:
 
 For instructions to grant users the **Disposition Management** role and create your new **Disposition Reviewers** role, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
+## Enable auditing
+
+Make sure that auditing is enabled at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
 
 ## Disposition reviews
 
@@ -101,7 +104,7 @@ Providing you have permissions to the location and the content, you can use the 
   
 The email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-All disposition actions can be audited. Turn on auditing at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
+All disposition actions can be audited.
   
 ### How long until disposed content is permanently deleted
 
@@ -116,7 +119,7 @@ Use the **Disposition** tab from the **Records Management** page to identify rec
 
 ![Items that were disposed of without a disposition review](../media/records-disposed2.png)
 
-Items which are shown under the **Disposed Items** tab for record labels are kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period. If you see the **Count** number nearing this limit of one million, and you need proof of disposition for your records, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+Items that are shown in the **Disposed Items** tab for record labels are kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period. If you see the **Count** number nearing this limit of one million, and you need proof of disposition for your records, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
 > This functionality is based on information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
