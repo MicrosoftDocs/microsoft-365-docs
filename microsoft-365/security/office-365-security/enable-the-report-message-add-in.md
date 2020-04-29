@@ -128,7 +128,7 @@ To learn how to use the add-in, see [Use the Report Message add-in](https://supp
 
    ![Announce add-in page](../../media/announce-add-in-page.png)
 
-### Learn how to use the Report Message add-in
+## Learn how to use the Report Message add-in
 
 People who have the add-in assigned to them will see the following icons:
 
@@ -142,7 +142,7 @@ People who have the add-in assigned to them will see the following icons:
 
 When you notify users about the Report Message add-in, include a link to [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
 
-### Review or edit settings for the Report Message add-in
+## Review or edit settings for the Report Message add-in
 
 1. In the Microsoft 365 admin center, go to the **Services & add-ins** page at <https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns>.
 
@@ -153,3 +153,11 @@ When you notify users about the Report Message add-in, include a link to [Use th
 3. In the **Edit Report Message** flyout that appears, review and edit settings as appropriate for your organization. When you're finished, click **Save**.
 
    ![Settings for the Report Message add-in](../../media/EditReportMessageAddIn.png)
+
+## View and review reported messages
+
+To review messages that users report to Microsoft, you have these options:
+
+- Use the Admin Submissions portal. For more information, see [View user submissions to Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
+
+- Create a mail flow rule (also known as a transport rule) to send copies of reported messages. For instructions, see [Use mail flow rules to see what your users are reporting to Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md).

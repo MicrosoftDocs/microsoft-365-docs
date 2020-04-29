@@ -51,7 +51,7 @@ For a quick overview of Supervision policies, see the [Supervision policy video]
 Organizations using supervision policies and planning to transition to [communication compliance policies in Microsoft 365](communication-compliance.md) need to understand these important points:
 
 - The supervision solution in Microsoft 365 will be fully replaced by the communication compliance solution in Microsoft 365. For organizations transitioning to communication compliance from supervision policies, we recommend creating new policies in communication compliance that have the same *conditions* as existing supervision policies to enable new investigation and remediation improvements. When transitioning to communication compliance in Microsoft 365, you should plan to export reporting data from supervision if you have internal compliance retention policy requirements.
-- In the interim, organizations can use both solutions side-by-side until fully migrated, but policies used in each solution must have *unique policy names*. Groups and custom keyword dictionaries can be shared between solutions during the transition period.
+- In the interim, organizations can use both solutions side by side until fully migrated, but policies used in each solution must have *unique policy names*. Groups and custom keyword dictionaries can be shared between solutions during the transition period.
 - Messages saved in supervision in Microsoft 365 policy matches cannot be moved or shared into communication compliance in Microsoft 365.
 
 For retirement information for supervision in Office 365, see the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) for details.
@@ -62,7 +62,7 @@ Supervision policies can assist monitoring communications in your organization i
 
 - **Corporate policies**
 
-    Employees must comply with acceptable use, ethical standards, and other corporate policies in all their business-related communications. Supervision policies can detect policy violations and help you take corrective actions to help mitigate these types of incidents. For example, you could monitor your organization for potential human resources violations such as harassment or the use of inappropriate or offensive language in employee communications.
+    Employees must comply with acceptable use, ethical standards, and other corporate policies in all their business-related communications. Supervision policies can detect policy violations and help you take corrective actions to help mitigate these types of incidents. For example, you could monitor for potential human resources violations such as harassment or the use of inappropriate or offensive language in employee communications.
 
 - **Risk management**
 
@@ -103,12 +103,12 @@ With supervision policies, you can choose to monitor messages in one or more of 
 
 - **Microsoft Teams:** Chat communications and associated attachments in both public and private Microsoft Teams channels and individual chats can be supervised. Teams chats matching supervision policy conditions are processed once every 24 hours and then are available for monitoring and in supervision reports. Use the following group management configurations to supervise individual user chats and channel communications in Teams:
 
-    - **For Teams chat supervision:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the supervision policy. This is for 1-to-1 or 1-to-many user/chat relationships.
+    - **For Teams chat supervision:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the supervision policy. This configuration is for 1-to-1 or 1-to-many user/chat relationships.
     - **For Teams Channel communications:** Assign every Microsoft Team channel or Microsoft 365 group you want to monitor that contains a specific user to the supervision policy. If you add the same user to other Microsoft Teams channels or Microsoft 365 groups, be sure to add these new channels and groups to the supervision policy.
 
 - **Skype for Business Online:** Chat communications and associated attachments in Skype for Business Online can be supervised. Skype for Business Online chats matching supervision policy conditions are processed once every 24 hours and then are available for monitoring and in supervision reports. Supervised chat conversations are sourced from [previous conversations saved in Skype for Business Online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use the following group management configuration to supervise user chat communications in Skype for Business Online:
 
-    - **For Skype for Business Online chat supervision:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the supervision policy. This is for 1-to-1 or 1-to-many user/chat relationships.
+    - **For Skype for Business Online chat supervision:** Assign individual users or assign a [distribution group](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) to the supervision policy. This configuration is for 1-to-1 or 1-to-many user/chat relationships.
 
 - **Third-party sources:** You can supervise communications from third-party sources (like from Facebook or DropBox) for data imported into mailboxes in your organization. [Learn how to import 3rd-party data](archiving-third-party-data.md).
 
@@ -149,14 +149,14 @@ Monitor sent or received email messages in your organization for offensive langu
 >- monitor Microsoft Teams communications in your organization for offensive language
 >- prevent or block offensive language in communications in your organization
 
-Please note that the model does not provide an exhaustive list of offensive language. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update the model in its discretion. While the model may assist your organization in monitoring offensive language, the model is not intended to provide your organization's sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to monitoring and blocking offensive language.
+The model does not provide an exhaustive list of offensive language. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update the model in its discretion. While the model may assist your organization in monitoring offensive language, the model is not intended to provide your organization's sole means of monitoring or addressing such language. Your organization, not Microsoft, remains responsible for all decisions related to monitoring and blocking offensive language.
 
 The offensive language model monitors email for sentiment associated with the following types of language:
 
 |**Type**|**Description**|
 |:-----|:-----|
 | **Profanities** | Expressions that embarrass most people. |
-| **Slurs** | Expressions that express prejudice against particular groups (e.g., race, ethnicity, sexual orientation, disability). |
+| **Slurs** | Expressions that express prejudice against particular groups (for example, race, ethnicity, sexual orientation, disability). |
 | **Taunts** | Expressions that taunt, condemn, ridicule, or could potentially cause anger or violence. |
 | **Disguised expressions** | Expressions for which the meaning or pronunciation is the same as another more offensive term. |
 
@@ -180,7 +180,7 @@ The following table explains more about each condition.
    
 ##### Matching words and phrases to emails or attachments
 <a name="Matchwords"> </a>
-Each word you enter and separate with a comma is applied separately (only one word must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker" and "insider trading" separated by a comma (banker,insider trading). The policy applies to any messages that includes the word "banker" or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.
+Each word you enter and separate with a comma is applied separately (only one word must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker" and "insider trading" separated by a comma (banker, insider trading). The policy applies to any messages that includes the word "banker" or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.
 
 To scan both email messages and attachments for the same keywords, create a [data loss prevention policy](create-test-tune-dlp-policy.md) with a [custom keyword dictionary](create-a-keyword-dictionary.md) for the terms you wish to monitor. This policy configuration identifies defined keywords that appear in either the email message **OR** in the email attachment. Using the standard conditional policy settings (*Message contains any of these words* and *Attachment contains any of these words*) to identify terms in messages and in attachments requires the terms are present in **BOTH** the message and the attachment.
   
@@ -280,7 +280,7 @@ Here's a breakdown of the values displayed the **Tag type** column.
 
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This may be a summary of all supervisory activities associated with a defined policy or anytime a supervision policy changes. Supervision policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every action monitored by your supervision policies provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This information may be a summary of all supervisory activities associated with a defined policy or anytime a supervision policy changes. Supervision policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every action monitored by your supervision policies provide proof of supervisory procedures.
 
 The following supervision policy activities are audited and available in the unified audit logs:
 
