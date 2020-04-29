@@ -47,7 +47,7 @@ You can define mail flow rules for triggering message encryption with the new OM
 
 5. In **Name**, type a name for the rule, such as Encrypt mail for DrToniRamos@hotmail.com.
 
-6. In **Apply this rule if** select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
+6. In **Apply this rule if**, select a condition, and enter a value if necessary. For example, to encrypt messages going to DrToniRamos@hotmail.com:
 
    1. In **Apply this rule if**, select **the recipient is**.
 
@@ -105,7 +105,7 @@ You can define mail flow rules for triggering remove message encryption with the
 
 5. In **Name**, type a name for the rule, such as Remove encryption from outgoing mail.
 
-6. In **Apply this rule if** select the conditions where encryption should be removed from messages, Add **The sender is located** \> **Inside the organization**. Now add additional conditions to target specific recipients, such as **The recipient is located** \> **Outside the organization**.
+6. In **Apply this rule if**, select the conditions where encryption should be removed from messages. Add **The sender is located** \> **Inside the organization**. Now add additional conditions to target specific recipients, such as **The recipient is located** \> **Outside the organization**.
 
 7. In **Do the following**, select **Modify the message security** \> **Remove Office 365 Message Encryption and rights protection**.
 
