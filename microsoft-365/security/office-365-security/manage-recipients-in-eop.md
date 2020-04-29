@@ -22,7 +22,7 @@ Standalone Exchange Online Protection (EOP) organizations without Exchange Onlin
 
   For more information about managing mail users in EOP, see [Manage mail users in EOP](manage-mail-users-in-eop.md).
 
-- **Mail contacts**: Mail contacts have external email addresses, but no user accounts in your EOP organization.
+- **Mail contacts**: Mail contacts have external email addresses, but no user accounts in your EOP organization. For more information about managing mail contacts, see [Manage mail contacts in Exchange Online](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-contacts).
 
 - **Groups**: You can create the following types of groups:
 
