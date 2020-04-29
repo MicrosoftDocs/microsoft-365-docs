@@ -22,6 +22,7 @@ description: "The previous version of Office 365 Message Encryption depends on M
 This topic describes the steps you need to follow in order to activate and then set up Azure Rights Management (RMS), part of Azure Information Protection, for use with the previous version of Office 365 Message Encryption (OME).
 
 ## This article only applies to the previous version of OME
+
 If you haven't yet moved your organization to the new OME capabilities, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to the new OME capabilities as soon as it is reasonable for your organization. For instructions, see [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md). If you want to find out more about how the new capabilities work first, see [Office 365 Message Encryption](ome.md). The rest of this article refers to OME behavior before the release of the new OME capabilities.
 
 ## Prerequisites for using the previous version of Office 365 Message Encryption
@@ -63,46 +64,46 @@ A TPD is an XML file that contains information about your organization's rights 
 |Asia  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |South America  <br/> |https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Office 365 for Government (Government Community Cloud)  <br/> This RMS key-sharing location is reserved for customers who have purchased Office 365 for Government SKUs.  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-   
+  
 3. Configure the key-sharing location by running the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.160%29.aspx) cmdlet as follows: 
-    
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
-  ```
 
-    For example, to configure the key sharing location if your organization is located in North America:
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "<RMSKeySharingURL >"
+   ```
+  
+   For example, to configure the key sharing location if your organization is located in North America:
 
-  ```powershell
-  Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
-  ```
+   ```powershell
+   Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
+   ```
 
 4. Run the [Import-RMSTrustedPublishingDomain](https://technet.microsoft.com/library/jj200724%28v=exchg.150%29.aspx) cmdlet with the -RMSOnline switch to import the TPD from Azure Rights Management: 
 
-  ```powershell
-  Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
-  ```
+   ```powershell
+   Import-RMSTrustedPublishingDomain -RMSOnline -Name "<TPDName> "
+   ```
 
-    Where  *TPDName*  is the name you want to use for the TPD. For example, "Contoso North American TPD". 
+   Where  *TPDName*  is the name you want to use for the TPD. For example, "Contoso North American TPD". 
 
-5. To verify that you successfully configured your organization to use the Azure Rights Management service, run the [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) cmdlet with the -RMSOnline switch as follows: 
+5. To verify that you successfully configured your organization to use the Azure Rights Management service, run the [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.160%29.aspx) cmdlet with the -RMSOnline switch as follows:
 
-  ```powershell
-  Test-IRMConfiguration -RMSOnline
-  ```
+   ```powershell
+   Test-IRMConfiguration -RMSOnline
+   ```
 
-    Among other things, this cmdlet checks connectivity with the Azure Rights Management service, downloads the TPD, and checks its validity.
+   Among other things, this cmdlet checks connectivity with the Azure Rights Management service, downloads the TPD, and checks its validity.
 
 6. Run the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) cmdlet as follows to disable Azure Rights Management templates from being available in Outlook on the web and Outlook: 
 
-  ```powershell
-  Set-IRMConfiguration -ClientAccessServerEnabled $false
-  ```
+   ```powershell
+   Set-IRMConfiguration -ClientAccessServerEnabled $false
+   ```
 
-7. Run the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) cmdlet as follows to enable Azure Rights Management for your cloud-based email organization and configure it to use Azure Rights Management for Office 365 Message Encryption: 
+7. Run the [Set-IRMConfiguration](https://technet.microsoft.com/library/dd979792%28v=exchg.150%29.aspx) cmdlet as follows to enable Azure Rights Management for your cloud-based email organization and configure it to use Azure Rights Management for Office 365 Message Encryption:
 
-  ```powershell
-  Set-IRMConfiguration -InternalLicensingEnabled $true
-  ```
+   ```powershell
+   Set-IRMConfiguration -InternalLicensingEnabled $true
+   ```
 
 8. To verify that you have successfully imported the TPD and enabled Azure Rights Management, use the Test-IRMConfiguration cmdlet to test Azure Rights Management functionality. For details, see "Example 1" in [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
 
