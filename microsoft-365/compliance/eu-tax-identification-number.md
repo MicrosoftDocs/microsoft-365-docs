@@ -2,10 +2,10 @@
 title: "EU Tax Identification Number"
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: 
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
