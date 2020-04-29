@@ -59,7 +59,7 @@ Follow the steps below or [watch the video (start at 0:46)](https://support.offi
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
-    (Choose the **Record Type** value from the drop-down list.) 
+    \(Choose the **Record Type** value from the drop-down list.\) 
     
     ||||
     |:-----|:-----|:-----|

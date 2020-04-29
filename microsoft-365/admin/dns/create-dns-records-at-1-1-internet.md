@@ -104,7 +104,7 @@ Follow the steps below or [watch the video (start at 3:22)](https://support.offi
     
 4. In the **Domain Settings** area, select **Edit DNS Settings**.
     
-5. In the **MX Records** section, in the ** Mail Exchanger (MX Record) ** area, select **Other mail server**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
+5. In the **MX Records** section, in the **Mail Exchanger (MX Record)** area, select **Other mail server**.<br/>(You may have to scroll down.)<br/>![1&amp;1-BP-Configure-2-1](../../media/b0db72ae-9431-460f-ba7a-3268590b892e.png) <br/>
   
 6. If there are any MX records already listed, delete each of them by selecting the record and then pressing the **Delete** key on your keyboard.<br/>(If there are no MX records already listed, continue to the next step.)<br/>![1&amp;1-BP-Configure-2-2](../../media/4a39bac7-7310-481d-bda4-1dd5c220c60f.png)<br/>
   
@@ -192,7 +192,7 @@ The additional CNAME records created in the following procedure enable Skype for
     
 5. In the **Subdomain Overview** section, find the **lyncdiscover** subdomain that you just created, and then select the **Panel (v)** control for that subdomain. <br/>In the **Subdomain Settings** area, select **Edit DNS Settings**.
     
-6. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
+6. In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.
     
 7. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table. <br/>
     
@@ -218,7 +218,7 @@ The additional CNAME records created in the following procedure enable Skype for
     
 14. In the **Subdomain Overview** section, find the **sip** subdomain that you just created, and then select the **Panel (v)** control for that subdomain. <br/>In the **Subdomain Settings** area, select **Edit DNS Settings**.
     
-15. In the **A/AAAA Records (IP Addresses)** section, in the ** IP address (A Record) ** area, select **CNAME**.
+15. In the **A/AAAA Records (IP Addresses)** section, in the **IP address (A Record)** area, select **CNAME**.
     
 16. In the **Alias:** box, type or copy and paste only the **Alias** value from the following table. 
     
