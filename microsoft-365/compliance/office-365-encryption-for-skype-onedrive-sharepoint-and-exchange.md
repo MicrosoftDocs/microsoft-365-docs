@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - SPO_Content
-description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, and Exchange Online."
+description: "Summary: A description of encryption for Skype, OneDrive, SharePoint, Microsoft Teams, and Exchange Online."
 ---
 
 # Encryption for Skype for Business, OneDrive for Business, SharePoint Online, Microsoft Teams, and Exchange Online
