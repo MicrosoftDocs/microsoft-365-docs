@@ -27,8 +27,6 @@ landingContent:
             url: ../../commerce/index.yml
       - linkListType: how-to-guide
         links:
-          - text: Manage subscriptions and billing
-            url: ../../commerce/index.yml
           - text: Monitor user activity
             url: ../activity-reports/activity-reports.md
           - text: Monitor usage analytics
@@ -69,3 +67,31 @@ landingContent:
             url: ../create-groups/manage-guest-access-in-groups.md
           - text: Manage guest access in groups
             url: manage-deployment-of-add-ins.md
+   # Card
+  - title: Microsoft Teams
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Teams
+            url: https://docs.microsoft.com/en-us/microsoftteams/
+          - text: Collaborate with Microsoft 365 
+            url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+      - linkListType: learn
+        links:
+          - text: Microsoft Teams training
+            url: https://support.office.com/article/4f108e54-240b-4351-8084-b1089f0d21d7
+   # Card
+  - title: OneDrive and SharePoint
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: SharePoint
+            url: https://docs.microsoft.com/sharepoint/
+          - text: OneDrive
+            url: https://docs.microsoft.com/onedrive/
+      - linkListType: how-to-guide
+        links:
+          - text: Manage sharing in OneDrive and SharePoint
+            url: https://docs.microsoft.com/onedrive/manage-sharing
+          - text: Create and manage sites
+            url: https://docs.microsoft.com/sharepoint/manage-sites-in-new-admin-center
