@@ -13,6 +13,8 @@ ms.collection:
 layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.assetid: f7449a18-1400-475a-b158-2668fef93bfe
 description: "Learn how to manage email for your Microsoft 365 mailboxes."
 ---

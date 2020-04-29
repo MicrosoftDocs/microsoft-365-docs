@@ -10,6 +10,8 @@ ms.topic: landing-page
 layout: LandingPage
 ms.service: o365-administration
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection: 
 - Adm_O365
 - Adm_TOC

@@ -177,6 +177,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-nz-cc-framework-nz.md">NZ CC Framework (New Zealand)</a></p>
                         <p><a href="offering-pasf-uk.md">PASF (UK)</a></p>
                         <p><a href="offering-pdpa-argentina.md">PDPA (Argentina)</a></p>
+                        <p><a href="offering-russia-data-localization.md">Personal Data Localization (Russia)</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
                     </div>
                 </div>
