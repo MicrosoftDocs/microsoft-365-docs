@@ -35,7 +35,7 @@ The records-management solution supports the following elements:
 
 - **Review and validate disposition** with [disposition reviews](disposition.md#disposition-reviews).
 
-- **Review all disposed items** and [export a disposition report](disposition.md#export-the-disposition-items) for further validation and reporting.
+- **Review and export information about all disposed items** with [validation and reporting](disposition.md#view-disposed-items).
 
 - **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 

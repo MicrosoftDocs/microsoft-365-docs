@@ -22,7 +22,7 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage and view content that's been deleted as a result of a [retention label](label.md). 
+Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage and view content that's been deleted as a result of a [retention label](labels.md). 
 
 > [!NOTE]
 > Rolling out to tenants during April and May 2020: Based on auditing events, you can now view all content that has been deleted as a result of a retention label, and not just the labeled content that was deleted as a result of a disposition review.
@@ -47,7 +47,7 @@ For instructions to grant users the **Disposition Management** role and create y
 
 Content can be automatically deleted as a result of your configured retention policies or retention labels. Or, specific to retention labels, content can be deleted as a result of a disposition review. 
 
-If you choose to delete the content automatically, no further action is needed from you. However, for content that was deleted as a result of a retention label, you can confirm that the content was deleted. For more information, see the [View pending dispositions and disposed items](#view-pending-dispositions-and-disposed-items) section on this page.
+If you choose to delete the content automatically, no further action is needed from you. However, for content that was deleted as a result of a retention label, you can confirm that the content was deleted. For more information, see the [View disposed items](#view-disposed-items) section on this page.
 
 If you choose the retention label option **Trigger a disposition review**, additional action is needed before the content is deleted. For more information, see the next section.
 
@@ -118,9 +118,9 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 
 ## View disposed items
 
-From the **Disposition** page, you can identify items that are permanently deleted by their **Records Disposed** type. For example:
+From the **Disposition** page, you can identify items that are permanently deleted by their **Records Disposed** type. Currently, items without a displayed type are awaiting a disposition review. For example:
 
-![Items that were disposed of without a disposition review](../media/records-disposed.png)
+![Items that were disposed of with or without a disposition review](../media/records-disposed.png)
 
 The ability to see items that were automatically deleted without a disposition review is gradually rolling out to tenants during April and May 2020, so you might not see these items immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
 
