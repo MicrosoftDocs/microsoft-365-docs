@@ -37,7 +37,7 @@ Every account that accesses and uses activity explorer must have a license assig
 
 <!-- table from Bhavy -->
 
-There are two roles that grant access to content explorer:
+Access to content explorer is highly restricted because it lets you read the contents of scanned files. There are two roles that grant access to content explorer:
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location. The `data classification list viewer` role has been pre-assigned to this role group.
 
