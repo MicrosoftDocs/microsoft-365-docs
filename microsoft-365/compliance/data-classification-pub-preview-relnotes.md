@@ -1,5 +1,5 @@
 ---
-title: "Data classification preview release notes (preview)"
+title: "Data classification preview release notes"
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -16,7 +16,7 @@ search.appverid:
 description: "Release notes for the data classification public preview."
 ---
 
-# Data classification public preview release notes (preview)
+# Data classification public preview release notes
 
 This public preview introduces new functionality where scanning of your sensitive content and labeled content starts *before* you create any policies. This is called **zero change management**. This lets you see the impact that all the retention and sensitivity labels are having in your environment and empower you to start assessing your protection and governance policy needs.
 

@@ -34,6 +34,8 @@ You also manage these features on the data classification page:
 
 You can find data classification in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
 
+Take a video tour of our data classification features
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx8x]
 
 ## Sensitive information types used most in your content
