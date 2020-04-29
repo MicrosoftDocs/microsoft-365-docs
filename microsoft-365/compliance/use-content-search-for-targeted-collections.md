@@ -26,7 +26,7 @@ The Content Search feature in the Office 365 Security &amp; Compliance Center do
 > [!NOTE]
 > To return content located in a folder in a SharePoint or OneDrive for Business site, the script in this topic uses the DocumentLink managed property instead of the Path property. The DocumentLink property is more robust than the Path property because it will return all content in a folder, whereas the Path property won't return some media files.
 
-## Before you begin
+## Before you use Content Search
 
 - You have to be a member of the eDiscovery Manager role group in the Security &amp; Compliance Center to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     

@@ -29,7 +29,7 @@ An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserv
     
 See the [More information](#more-information) section for more details about the differences between recovering and restoring an inactive mailbox, and for a description of what happens when an inactive mailbox is recovered.
   
-## Before you begin
+## Requirements to recover an inactive mailbox
 
 - You have to use Exchange Online PowerShell to restore an inactive mailbox. You can't use the Exchange admin center (EAC). For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     
