@@ -39,47 +39,53 @@ In standalone Exchange Online Protection (EOP) organizations without Exchange On
 
 - The PowerShell commands in this topic use a batch processing method that results in a propagation delay of a few minutes before the results of the commands are visible.
 
-
-
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Having problems? Ask for help in the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
 
-## Use directory synchronization to manage mail users
+## Use directory synchronization to manage mail users in standalone EOP
 
-This section provides information about managing email users by using directory synchronization.
+You can synchronize your on-premises Active Directory accounts to your standalone EOP organization.
 
 **Notes**:
 
-- If you use directory synchronization to manage your recipients, you can still add and manage users in the Microsoft 365 admin center, but they will not be synchronized with your on-premises Active Directory. This is because directory synchronization only syncs recipients **from** your on-premises Active Directory **to** the cloud.
+- If you use directory synchronization to manage your recipients, you can still add and manage users in the Microsoft 365 admin center, but they will not be synchronized with your on-premises Active Directory. This is because directory synchronization only syncs recipients from your on-premises Active Directory to the cloud.
 
-- Directory synchronization is recommended for use with the following features:
+- Using directory synchronization is recommended for use with the following features:
 
   - **Outlook safe sender and blocked sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own safe sender and blocked sender lists on a per-user or per-domain basis.
 
   - **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
-  - **End user spam quarantine**: In order to access the end user spam quarantine, end users must have a valid user ID and password. EOP customers protecting on-premises mailboxes must be valid email users.
+  - **End user access to quarantine**: To access their quarantined messages, users must have a valid user ID and password in the cloud. For more information, see [Find and release quarantined messages as a user](find-and-release-quarantined-messages-as-a-user.md).
 
   - **Mail flow rules**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules (also known as transport rules) that target specific users and/or groups without having to manually add them via the the EAC or Exchange Online Protection PowerShell. Note that [dynamic distribution groups](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) can't be synchronized via directory synchronization.
 
 Get the necessary permissions and prepare for directory synchronization, as described in [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 
-### To synchronize user directories with Azure Active Directory Connect (AAD Connect)
+### Synchronize directories with Azure Active Directory Connect (AAD Connect)
 
-To synchronize users to Azure Active Directory (AAD) you first have to **activate directory synchronization**, as described in [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+1. Activate directory synchronization as described in [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
-Next is the installation and configuration of an on-premises computer to run AAD Connect (if you don't already have one -- something worth checking ahead of time). The [Setting up AAD Connect, the express way](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express) topic tells you how to setup and synchronize your accounts from on-premises to Azure AD with AAD Connect.
+2. Install and configure an on-premises computer to run AAD Connect as described in [Prerequisites for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
-But before you do that work, make certain [you meet prerequisites](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites), and [choose your installation type](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation). The earlier link is to a short article for express installs. You can also find articles on [custom installations](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom), or [pass-through authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start) if they're needed.
+3. [Select which installation type to use for Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-select-installation):
+
+   - [Express](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express)
+
+   - [Custom](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-custom)
+
+   - [Pass-through authentication](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
 > When you finish the Azure Active Directory Sync Tool Configuration Wizard, the **MSOL_AD_SYNC** account is created in your Active Directory forest. This account is used to read and synchronize your on-premises Active Directory information. In order for directory synchronization to work correctly, make sure that TCP 443 on your local directory synchronization server is open.
 
-After configuring your sync, be sure to verify that EOP is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment.
+After configuring your sync, be sure to verify that AAD Connect is synchronizing correctly. In the EAC, go to **Recipients** \> **Contacts** and view that the list of users was correctly synchronized from your on-premises environment.
 
 ## Use the EAC to manage mail users
+
+Managing mail users in the EAC is identical for Exchange Online customers and standalone EOP customers. For the Exchange Online instructions, see [Manage mail users in Exchange Online](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-users#use-the-exchange-admin-center-to-manage-mail-users).
 
 ### Use the EAC to create mail users
 
@@ -101,7 +107,7 @@ After configuring your sync, be sure to verify that EOP is synchronizing correct
 
    - **External email address**: Enter the user's email address. The domain should be external to your EOP organization.
 
-   - <sup>\*</sup>**User ID**: Enter the account that the person will use to sign in to the service. The user user ID consists of a username on the left side of the at (@) symbol (@) and a domain on the right side.
+   - <sup>\*</sup>**User ID**: Enter the account that the person will use to sign in to the service. The user ID consists of a username on the left side of the at (@) symbol (@) and a domain on the right side.
 
    - <sup>\*</sup>**New password** and <sup>\*</sup>**Confirm password**: Enter and reenter the account password. Verify that the password complies with the password length, complexity, and history requirements of your domain.
 
@@ -185,9 +191,11 @@ After configuring your sync, be sure to verify that EOP is synchronizing correct
 
      When you're finished, click **OK**.
 
-   - **Member of**: View a list of the distribution groups or mail-enabled security groups that the user belongs to. You can't change membership information on this page. Note that dynamic distribution groups aren't displayed on this page because their membership is calculated each time they're used.
+   - **Member of**: View a list of the distribution groups or mail-enabled security groups that the user belongs to. You can't change group membership on this page. Note that dynamic distribution groups aren't displayed on this page because their membership is calculated each time they're used.
 
    - **MailTip**: Add an alert for potential issues before a user sends messages to this recipient. The is text that's displayed in the InfoBar when this recipient is added to the To, Cc, or Bcc lines of a new email message.
+
+     MailTips can include HTML tags, but scripts aren't allowed. The length of a custom MailTip can't exceed 175 displayed characters. HTML tags aren't counted in the limit.
 
 4. When you're finished, click **Save**.
 
