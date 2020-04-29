@@ -22,14 +22,11 @@ description: "Monitor and manage the disposal of content, whether you use a disp
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records.md) that been automatically deleted at the end of their retention period. 
-
-> [!NOTE]
-> Rolling out to tenants during April and May 2020: Based on information from the unified auditing log, you can now view records that have been automatically deleted as a result of a retention label, even if they haven't gone through a disposition review.
+Use the **Disposition** tab from **Records Management** in the Microsoft 365 compliance center to manage disposition reviews and view [records](records.md) that have been automatically deleted at the end of their retention period. 
 
 ## Prerequisites for viewing content dispositions
 
-To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions and auditing must be enabled.
+To manage disposition reviews and confirm that records have been deleted, you must have sufficient permissions.
 
 ### Permissions for disposition
 
@@ -42,10 +39,6 @@ Specific to the **View-Only Audit Logs** role:
 - Microsoft 365 Groups ([formerly Office 365 Groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) aren't supported for this role. Instead, assign user mailboxes, mail users, or mail-enabled security groups.
 
 For instructions to grant users the **Disposition Management** role and create your new **Disposition Reviewers** role, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
-
-### Enable auditing
-
-Turn on auditing at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
 
 
 ## Disposition reviews
@@ -108,7 +101,7 @@ Providing you have permissions to the location and the content, you can use the 
   
 The email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-All disposition actions can be audited.
+All disposition actions can be audited. Turn on auditing at least one day before the first disposition action. For more information, see [Search the audit log in the Office 365 Security &amp; Compliance Center](search-the-audit-log-in-security-and-compliance.md). 
   
 ### How long until disposed content is permanently deleted
 
@@ -116,14 +109,17 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 
 ## Disposition of records
 
-Use the **Disposition** tab from the **Records Management** page to identify records that are permanently deleted. These items display **Records Disposed** in the **Type** column. Currently, items that are pending a disposition review do not display a value in this column. For example:
+> [!NOTE]
+> The ability to see records that were automatically deleted without a disposition review is gradually rolling out to tenants during April and May 2020, so you might not see this experience immediately.
+
+Use the **Disposition** tab from the **Records Management** page to identify records that are automatically deleted. These items display **Records Disposed** in the **Type** column. Disposed records which are approved to be deleted through a disposition review will show under the corresponding label with a **Pending Disposition** in the **Type** column. For example:
 
 ![Items that were disposed of without a disposition review](../media/records-disposed2.png)
 
-The ability to see records that were automatically deleted without a disposition review is gradually rolling out to tenants during April and May 2020, so you might not see these entries immediately. When you do, this disposition information is kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period.
+Items which are shown under the **Disposed Items** tab for record labels are kept for up to 7 years after the item was disposed, with a limit of one million items per record for that period. If you see the **Count** number nearing this limit of one million, and you need proof of disposition for your records, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-If you see the **Count** number nearing this limit of one million, and you need proof of disposition for the item, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
-
+> [!NOTE]
+> This functionality is based on information from the [unified audit log](search-the-audit-log-in-security-and-compliance.md) and therefore requires auditing to be [enabled and searchable](turn-audit-log-search-on-or-off.md) so the corresponding events are captured.
     
 ## Filter and export the views
 
