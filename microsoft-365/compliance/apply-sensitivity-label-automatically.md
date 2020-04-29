@@ -30,7 +30,7 @@ The ability to apply sensitivity labels to content automatically is important be
 
 - You don't need to rely on users to classify all content correctly.
 
-- Users no longer need to know about your policies — they can instead focus on their work.
+- Users no longer need to know about your policies—they can instead focus on their work.
 
 There are two different methods for automatically applying a sensitivity label:
 
@@ -71,7 +71,7 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Restrict by location|No |Yes |
-|Conditions: Trainable classifers|Yes (limited preview) |No |
+|Conditions: Trainable classifiers|Yes (limited preview) |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
@@ -103,12 +103,12 @@ The auto-labeling settings for Office apps are available when you [create or edi
 
 ![Auto labeling options for sensitivity labels](../media/sensitivity-labels-auto-labeling-options.png)
 
-You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or classifers:
+You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> Currently, the option for **Classifers** is in limited preview and requires you to submit a form to Microsoft to enable this capability for your tenant. For more information, see the blog post [Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
+> Currently, the option for **Classifiers** is in limited preview and requires you to submit a form to Microsoft to enable this capability for your tenant. For more information, see the blog post [Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
@@ -126,15 +126,15 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ![Options for instance count and match accuracy](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### Configuring classifers for a label
+### Configuring classifiers for a label
 
-When you select the **Classifers** option, select one or more of the built-in classifiers:
+When you select the **Classifiers** option, select one or more of the built-in classifiers:
 
-![Options for classifers and sensitivity labels](../media/sensitivity-labels-classifers.png)
+![Options for classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
 
-For more information about these classifers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
-During the preview period, the following apps support classifers for sensitivity labels:
+During the preview period, the following apps support classifiers for sensitivity labels:
 
 - Microsoft365 Apps for enterprise desktop apps for Windows, from [Office Insider](https://office.com/insider):
     - Word
@@ -179,7 +179,7 @@ Specific to the Azure Information Protection unified labeling client:
 
 - For Outlook to support recommended labeling, you must first configure an [advanced policy setting](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
 
-- Sensitive information can be detected in the body text in documents and emails, and to headers and footers — but not in the subject line or attachments of email.
+- Sensitive information can be detected in the body text in documents and emails, and to headers and footers—but not in the subject line or attachments of email.
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
 > [!NOTE]
@@ -273,7 +273,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 12. For the **Decide if you want to run policy simulation now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**. 
 
-13. For the **Summary** page: Review the configuration of the your auto-labeling policy and make any changes that needed, and complete the wizard.
+13. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the wizard.
     
     Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
