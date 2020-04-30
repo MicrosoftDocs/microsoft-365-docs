@@ -1,7 +1,7 @@
 ---
-title: Prepare Microsoft Defender ATP deployment
-description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when deploying Microsoft Defender ATP
-keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
+title: Prepare Microsoft Threat Protection evaluation lab setup
+description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection evaluation lab
+keywords: MTP trial prep, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
