@@ -17,13 +17,13 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Set up Microsoft Defender ATP deployment
+# Set up your Microsoft Threat Protection evaluation lab 
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+- Microsoft Threat Protection (Microsoft Defender ATP)
 
 
-Deploying Microsoft Defender ATP is a three-phase process:
+Deploying Microsoft Threat Protection is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
