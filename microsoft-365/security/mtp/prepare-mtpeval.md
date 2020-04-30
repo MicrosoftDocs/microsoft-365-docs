@@ -32,17 +32,17 @@ Deploying Microsoft Defender ATP is a three-phase process:
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
-        <img src="images/prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
+        <img src="microsoft-365/media//prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
+        <img src="microsoft-365/media//setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
       <br/>Phase 2: Set up </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Configure capabilities" title="Configure capabilities" />
+        <img src="microsoft-365/media//onboard.png" alt="Configure capabilities" title="Configure capabilities" />
       <br/>Phase 3: Onboard</a><br>
 </td>
   </tr>
@@ -180,5 +180,5 @@ how the endpoint security suite should be enabled.
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender ATP deployment
+|![Phase 2: Setup & Onboard](microsoft-365/media//setup.png) <br>[Phase 2: Setup & Onboard](setup-mtpeval.md) | Set up Microsoft Threat Protection lab environment
 
