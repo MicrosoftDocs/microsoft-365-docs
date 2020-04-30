@@ -20,7 +20,7 @@ ms.topic: article
 # Set up your Microsoft Threat Protection evaluation lab 
 
 **Applies to:**
-- Microsoft Threat Protection (Microsoft Defender ATP)
+- Microsoft Threat Protection 
 
 
 Deploying Microsoft Threat Protection is a three-phase process:
