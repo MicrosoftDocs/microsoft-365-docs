@@ -93,21 +93,21 @@ to the table below as appropriate for your organization.
 ## Prepare your Azure Active Directory
 Skip this step if you already have enabled synchronization between Active Directory and Azure Active Directory on premises. Review existing best practices documentation from Azure Active Directory. The following steps are optimized to evaluate Microsoft Threat Protection.
 
-1.	Go to the Azure Active Directory portal > Azure AD Connect. 
+1. Go to the [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) portal > **Azure AD Connect**. 
  
-2.	Click Download from Microsoft Azure Active Directory Connect and transfer it to your Domain Controller.
+2. Click **Download** from **Microsoft Azure Active Directory Connect** and transfer it to your Domain Controller.
  
-3.	On the domain controller, follow the Azure Active Directory Connect wizard. Read the license terms and privacy notice and select the checkbox if you agree. Click Continue.
+3. On the domain controller, follow the Azure Active Directory Connect wizard. Read the license terms and privacy notice and select the checkbox if you agree. Click **Continue**.
  
-4.	Navigate to use Express Settings.
+4. Navigate to use **Express Settings**.
  
-5.	Enter your global administrator credentials. Click Next.
+5. Enter your global administrator credentials. Click **Next**.
  
-6.	Enter your Active Directory Domain Services enterprise administrator credentials. Click Next.
+6. Enter your Active Directory Domain Services enterprise administrator credentials. Click **Next**.
  
-7.	Click Install to confirm the configuration.
+7. Click **Install** to confirm the configuration.
  
-8.	Congratulations, you have successfully configured Azure Active Directory Connect.  
+8. Congratulations, you have successfully configured Azure Active Directory Connect.  
 
 
 ## Configuration order
