@@ -231,6 +231,22 @@
           href: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US
         - name: Join a Teams meeting with guests
           href: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US
+    - name: Office 365 operated by 21Vianet
+      items: 
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: Buy or try subscriptions
+          href: services-in-china/buy-or-try-subscriptions.md
+        - name: Download the Office app for Android for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-Android.md
+        - name: Download the Office app for iOS for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-iOS.md
+        - name: View your bill or get a Fapiao
+          href: services-in-china/view-your-bill-or-get-a-fapiao.md
+        - name: Apply for a Fapiao
+          href: services-in-china/apply-for-a-fapiao.md
+        - name: Azure Information Protection parity
+          href: services-in-china/parity-between-azure-information-protection.md
     - name: Troubleshoot
       href: https://docs.microsoft.com/office/troubleshoot/
     - name: Contact support
