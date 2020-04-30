@@ -1,7 +1,7 @@
 ---
 title: Evaluate Microsoft Threat Protection 
-description: Microsoft Threat Protection is a coordinated threat protection solution designed to protect devices, identity, data and applications
-keywords: introduction to Microsoft Threat Protection, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+description: Set up your Microsoft Threat Protection lab environment to try out how the  coordinated threat protection solution designed to protect devices, identity, data and applications can help your organization
+keywords: Microsoft Threat Protection trial, try Microsoft Threat Protection, evaluate Microsoft Threat Protection, Microsoft Threat Protection evaluation lab, cyber security, advanced persistent threat, enterprise security, devices, device, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -11,7 +11,7 @@ ms.pagetype: security
 f1.keywords:
 - NOCSH
 ms.author: dolmont
-author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,63 +19,23 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Microsoft Threat Protection
+# Setup a Microsoft Threat Protection evaluation lab 
 
 **Applies to:**
 - Microsoft Threat Protection
 
+The purpose of this evaluation lab is to illustrate the comprehensive, integrated, and intelligent capabilities of Microsoft Threat Protection in detection, prevention, investigation, and response that you can use in your organization. 
 
+This guide takes you through the steps to start your Microsoft Threat Protection evaluation based on the recommended deployment paths. The goal is to help you set up the integrated Microsoft Threat Protection services in a lab environment or as a proof of concept (POC) when presenting to security solution decision makers in your organization. When you’re done running your attack simulations, automated investigation and response, and are satisfied with the results, you can deploy it in your production environment with the help of Microsoft Technical Sales Professionals or experts in your organization. 
 
-Microsoft Threat Protection is a unified pre- and post-breach enterprise defense suite that natively coordinates detection, prevention, investigation, and response across endpoints, identities, email, and applications to provide integrated protection against sophisticated attacks.
+This guide will help you:
+- Set up your lab server and computers
+- Configure Active Directory with users and groups
+- Set up and configure Azure ATP, Office ATP, Microsoft Defender ATP, and Microsoft Cloud App Security
+- Setup local policies for your server and computers
+- Mimic a threat simulation to generate a test incident or alert in Microsoft Threat Protection
 
-With the integrated Microsoft Threat Protection solution, security professionals can stitch together the threat signals that each of these products receive and determine the full scope and impact of the threat; how it entered the environment, what it's affected, and how it's currently impacting the organization. Microsoft Threat Protection takes automatic action to prevent or stop the attack and self-heal affected mailboxes, endpoints, and user identities.  
-
-
-<center><h2>Microsoft Threat Protection services</center></h2>
-<table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender Advanced Threat Protection</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Office 365 Advanced Threat Protection</b></center></a></td>
-<td><center><b><a href="https://docs.microsoft.com/azure-advanced-threat-protection/"><b>Azure Advanced Threat Protection</b></a></center></td>
-<td><center><b><a href="https://docs.microsoft.com/cloud-app-security/"><b>Microsoft Cloud App Security</b></a></center></td>
-</tr>
-</table>
-<br>
-
-
-
-Microsoft Threat Protection suite protects: 
-- **Endpoints with Microsoft Defender ATP** - Microsoft Defender ATP is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response. 
-- **Email and collaboration with Office 365 ATP** - Office 365 ATP safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. 
-- **Identities with Azure ATP and Azure AD Identity Protection** - Azure ATP uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. 
-- **Applications with Microsoft Cloud App security** - Microsoft Cloud App security is a comprehensive cross-SaaS solution bringing deep visibility, strong data controls, and enhanced threat protection to your cloud apps. 
-
-Microsoft Threat Protection's unique cross-product layer augments the individual suite components to:
-- Help protect against attacks and coordinate defensive responses across the suite through signal sharing and automated actions
-- Narrate the full story of the attack across product alerts, behaviors, and context for security teams by joining data on alerts, suspicious events and impacted assets to 'incidents'
-- Automate response to compromise by triggering self-healing for impacted assets through automated remediation
-- Enable security teams to perform detailed and effective threat hunting across endpoint and Office data
-
-![Image of incident overview page](../../media/overview-incident.png) <br>
-Cross-product incident (Overview)
-
-![Image of alerts queue](../../media/incident-list.png)<br>
-All related alerts across the suite products correlated together into a single incident (alerts view)
-
-![Image of incident queue](../../media/advanced-hunting.png)<br>
-Query-based hunting on top of email and endpoint raw data
-
-
-Microsoft Threat Protection cross-product features include: 
-- **Cross-product single pane of glass** - Central view all information for detections, impacted assets, automated actions taken, and related evidence in a single queue and a single pane in [security.microsoft.com](https://security.microsoft.com). 
-- **Combined incidents queue** - To help security professionals focus on what is critical by ensuring the full attack scope, impacted assets and automated remediation actions are grouped together and surfaced in a timely manner. 
-- **Automatic response to threats** - Critical threat information is shared in real time between the Microsoft Threat Protection products to help stop the progression of an attack. For example, if a malicious file is detected on an endpoint protected by Microsoft Defender ATP, it will instruct Office 365 ATP to scan and remove the file from all e-mail messages. The file will be blocked on sight by the entire Microsoft 365 security suite.
-- **Self-healing for compromised devices, user identities, and mailboxes** - Microsoft Threat Protection uses AI-powered automatic actions and playbooks to remediate impacted assets back to a secure state. Microsoft Threat Protection leverages automatic remediation capabilities of the suite products to ensure all impacted assets related to an incident are automatically remediated where possible.
-- **Cross-product threat hunting** - Security teams can leverage their unique organizational knowledge to hunt for signs of compromise by creating their own custom queries over the raw data collected by the various protection products. Microsoft Threat Protection provides query-based access to 30 days of historic raw signals and alert data across endpoint and Office 365 ATP data. 
-
-
-## Get started
-Microsoft Threat Protection licensing requirements must be met before you can enable the service in the Microsoft 365 security center at [security.microsoft.com](https://security.microsoft.com). For more information, read:
-- [Licensing requirements](prerequisites.md#licensing-requirements)
-- [Turn on Microsoft Threat Protection](mtp-enable.md)
+IMPORTANT: For optimum results, follow the lab setup instructions as closely as possible.
 
 
 # Deployment phases
@@ -87,32 +47,25 @@ There are three phases in deploying Microsoft Defender ATP:
 
 |Phase | Desription | 
 |:-------|:-----|
-| ![Phase 1: Prepare](images/prepare.png)<br>[Phase 1: Prepare](prepare-deployment.md)| Learn about what you need to consider when deploying Microsoft Defender ATP: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br> - Adoption order
-|  ![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md)|  Take the initial steps to access Microsoft Defender Security Center. You'll be guided on:<br><br>- Validating the licensing <br>  - Completing the setup wizard within the portal<br>- Network configuration|
-|  ![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them. You'll be guided on:<br><br>- Using Microsoft Endpoint Configuration Manager to onboard devices<br>- Configure capabilities 
+| ![Phase 1: Prepare](images/prepare.png)<br>[Phase 1: Prepare](prepare-mtpeval.md)| Learn what you need to consider when deploying Microsoft Threat Protection in a trial or evaluation lab environment: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br>-Azure Active Directory setup <br> - Adoption order
+|  ![Phase 2: Setup & Onboard](images/setup.png) <br>[Phase 2: Setup & Onboard](setup-mtpeval.md)|  Take the initial steps to access Microsoft 365 Security Center. You will be guided to:<br><br>- Sign up for Microsoft 365 E5 Trial <br>  - Configure domain<br>- Assign Microsoft 365 E5 licenses<br>- Complete the setup wizard in the portal|
+|  ![Phase 3: Configure](images/onboard.png) <br>[Phase 3: Configure](config-mpteval.md) | Configure each Microsoft Threat Protection pillar. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
 
-
-
- The deployment guide will guide you through the recommended path in deploying Microsoft Defender ATP. 
-
-There are several methods you can use to onboard to the service. For information on other ways to onboard, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
 
 ## In Scope
 
-The following is in scope for this deployment guide:
--   Use of Microsoft Endpoint Configuration Manager to onboard endpoints into the service
--   Enabling Microsoft Defender ATP endpoint protection platform (EPP)
-    capabilities
-
-    -   Next Generation Protection
-
-    -   Attack Surface Reduction
-
--   Enabling Microsoft Defender ATP endpoint detection and response (EDR)
-    capabilities including automatic investigation and remediation
-
--   Enabling Microsoft Defender ATP threat and vulnerability management (TVM)
-
+The following is in scope for this evaluation lab guide:
+-   Set up Azure Active Directory
+-   Set up Microsoft Threat Protection
+    -   Sign up for Microsoft 365 E5 Trial
+    -   Configure domain
+    -   Assign Microsoft 365 E5 licenses
+    -   Completing the setup wizard within the portal
+-   Configure all Microsoft Threat Protection pillars based on best practices
+    -   Office 365 Advanced Threat Protection
+    -   Azure Advanced Threat Protection
+    -   Microsoft Cloud App Security
+    -   Microsoft Defender Advanced Threat Protection
 
 ## Out of scope
 
@@ -120,6 +73,5 @@ The following are out of scope of this deployment guide:
 
 -   Configuration of third-party solutions that might integrate with Microsoft
     Defender ATP
-
 -   Penetration testing in production environment
 
