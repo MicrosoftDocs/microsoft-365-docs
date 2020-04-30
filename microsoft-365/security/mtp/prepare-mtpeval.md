@@ -91,7 +91,7 @@ to the table below as appropriate for your organization.
 | Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience and overall usefulness of this change from a security operations perspective.* | I      |
 
 ## Prepare your Azure Active Directory
-Skip this step if you already have enabled synchronization between Active Directory and Azure Active Directory on premises. Review existing best practices documentation from Azure Active Directory. The following steps are optimized to evaluate Microsoft Threat Protection.
+Skip this step if you have already enabled synchronization between Active Directory and Azure Active Directory on premises. Review existing best practices documentation from Azure Active Directory. The following steps are optimized to evaluate Microsoft Threat Protection.
 
 1. Go to the [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) portal > **Azure AD Connect**. 
  
@@ -99,7 +99,7 @@ Skip this step if you already have enabled synchronization between Active Direct
  
 3. On the domain controller, follow the Azure Active Directory Connect wizard. Read the license terms and privacy notice and select the checkbox if you agree. Click **Continue**.
  
-4. Navigate to use **Express Settings**.
+4. Navigate to **Express Settings**.
  
 5. Enter your global administrator credentials. Click **Next**.
  
@@ -107,7 +107,7 @@ Skip this step if you already have enabled synchronization between Active Direct
  
 7. Click **Install** to confirm the configuration.
  
-8. Congratulations, you have successfully configured Azure Active Directory Connect.  
+8. Congratulations, you have successfully configured Azure Active Directory Connect. You can now [add users and groups to Active Directory](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) and [configure a SAM policy](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc).  
 
 
 ## Configuration order
