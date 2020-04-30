@@ -1,14 +1,13 @@
----
-title: "Assign admin roles the Microsoft 365 admin center"
-f1.keywords:
+---العنوان: "تعيين أدوارالمسؤولمأدوارمنصةشليله
+f1.keyword
 - NOCSH
-ms.author: kwekua
-author: kwekua
-manager: scotv
-audience: Admin
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
+المطور المؤلف: منصةشليله
+المؤلف: منصةشليله
+المدير: scote
+الجمهور: Admin
+السيدة الموضوع: مقال
+خدمة: o365- الإدار
+localis_priority: عادي
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
