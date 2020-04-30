@@ -31,18 +31,18 @@ Deploying Microsoft Defender ATP is a three-phase process:
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
-        <img src="../media/prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
+        <img src="../media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" title="Prepare your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"  >
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="../media/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
+        <img src="../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Setup the Microsoft Threat Protection evaluation lab" />
       <br/>Phase 2: Set up </a><br>
         </td>
     <td align="center">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="../media/onboard.png" alt="Configure capabilities" title="Configure capabilities" />
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
+        <img src="../media/onboard.png" alt="Configure each Microsoft Threat Protection pillar" title="Configure each Microsoft Threat Protection pillar" />
       <br/>Phase 3: Onboard</a><br>
 </td>
   </tr>
