@@ -1,15 +1,15 @@
 ---
-title: Set up Microsoft Defender ATP deployment
-description: 
-keywords:
+title: Set up your Microsoft Threat Protection evaluation lab 
+description: Access Microsoft 365 Security Center then setup your Microsoft Threat Protection evaluation lab
+keywords:  Microsoft Threat Protection trial setup, try Microsoft Threat Protection, Microsoft Threat Protection evaluation lab setup  
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dolmont
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -29,17 +29,17 @@ Deploying Microsoft Defender ATP is a three-phase process:
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
         <img src="..media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" title="Prepare your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
         <img src="..media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Set up your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 2: Setup & Onboard </a><br>
     </td>
     <td align="center">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="..media/onboard.png" alt="
 Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab" title="
 Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab" />
