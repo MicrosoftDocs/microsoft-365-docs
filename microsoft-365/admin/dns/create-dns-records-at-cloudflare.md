@@ -30,7 +30,6 @@ If Cloudflare is your DNS hosting provider, follow the steps in this article to 
   
 After you add these records at Cloudflare, your domain will be set up to work with Microsoft 365 services.
   
-To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/a8178510-501d-4bd8-9921-b04f2e9517a5.aspx).
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -43,7 +42,7 @@ To learn about webhosting and DNS for websites with Microsoft, see [Use a public
   
 When you signed up for Cloudflare, you added a domain by using the Cloudflare **Setup** process. 
   
-The domain that you added was purchased from a separate domain registrar; Cloudflare does not offer domain registration services. To verify and create DNS records for your domain in Microsoft 365, you first need to change the nameservers at your domain registrar so that they use Cloudflare's nameservers.
+The domain that you added was purchased from Cloudflare or a separate domain registrar. To verify and create DNS records for your domain in Microsoft 365, you first need to change the nameservers at your domain registrar so that they use Cloudflare's nameservers.
   
 To change your domain's name servers at your domain registrar's website yourself, follow these steps.
   

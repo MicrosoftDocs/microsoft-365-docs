@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
+- MET150
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: "Your organization may be required to retain documents for a period of time because of compliance, legal, or other business requirements. However, if your organization keeps documents longer than required, you create unnecessary legal risk. With a document deletion policy, you can proactively reduce risk by deleting documents in a site after a specific period of time—for example, you can delete documents in users' OneDrive for Business sites five years after the documents were created."
 ---

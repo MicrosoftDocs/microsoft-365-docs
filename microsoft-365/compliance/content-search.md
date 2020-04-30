@@ -298,6 +298,8 @@ Keep the following things in mind when searching for content in Microsoft Teams 
   
   ![Teams meetings, calls, and 1xN chats are identified in the Type field](../media/O365-ContentSearch-Teams-MessageKind.png)
 
+   For more information, see [Microsoft Teams launches eDiscovery for calls and meetings](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
+
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams. 
   
   - To use the **Kind** property as part of the keyword search query, in the **Keywords** box of a search query, type `kind:microsoftteams`.

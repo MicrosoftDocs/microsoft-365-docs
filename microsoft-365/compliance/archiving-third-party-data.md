@@ -13,7 +13,9 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: "Administrators can import third-party data from  social media platforms, instant messaging platforms, and document collaboration platforms to mailboxes in your Microsoft 365 organization. This lets you archive data from Facebook, Twitter, and other third-party data sources in Microsoft 365. Then you can use and apply Microsoft 365 compliance features (such as legal hold, eDiscovery, In-Place Archiving, and retention policies) for third-party data."
 ---

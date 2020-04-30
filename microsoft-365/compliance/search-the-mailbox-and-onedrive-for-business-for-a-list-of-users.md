@@ -13,7 +13,9 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: "Use Content Search and the script in this article to search the mailboxes and OneDrive for Business sites for a group of users."
 ---

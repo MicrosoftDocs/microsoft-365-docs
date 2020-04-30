@@ -29,9 +29,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 If Bluehost is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
   
 After you add these records at Bluehost, your domain will be set up to work with Microsoft services.
-  
-To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
-  
+
 > [!NOTE]
 > Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
   
@@ -51,7 +49,7 @@ Before you use your domain with Microsoft, we have to make sure that you own it.
     
 3. In the ***domain_name*** area, on the **DNS Zone Editor** row, select **Manage DNS records**.
     
-4. On the ** DNS Zone Editor ** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
+4. On the **DNS Zone Editor** page, in the **Add DNS Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
     (Choose the **Type** value from the drop-down list.) 
     
