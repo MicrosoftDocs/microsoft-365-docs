@@ -1,4 +1,4 @@
- ---
+---
 title: Turn on Microsoft Threat Protection in the Microsoft 365 security center
 description: Learn how to enable Microsoft Threat Protection and start integrating your security incident and response. 
 keywords: get started, enable MTP, Microsoft Threat Protection, M365, security, data location, required permissions, license eligibility, settings page
