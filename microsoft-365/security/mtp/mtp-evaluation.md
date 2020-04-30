@@ -19,7 +19,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ---
 
-# Setup a Microsoft Threat Protection evaluation lab 
+# Create a Microsoft Threat Protection evaluation lab 
 
 **Applies to:**
 - Microsoft Threat Protection
