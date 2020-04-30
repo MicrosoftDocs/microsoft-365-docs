@@ -58,15 +58,10 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keywords_austria_eu_national_id_card
 
-austrian identity number
-  
-national identity number
-  
-identity number
-  
-national id
-  
-personalausweis republik österreich
+- identity number
+- national id
+- personalausweis republik österreich
+
   
 ## Belgium
 
@@ -122,39 +117,49 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keywords_bulgaria_national_number
 
-egn
-  
-egn#
-  
-bulgarian national number
-  
-national number
-  
-social security number
-  
-nationalnumber#
-  
-ssn#
-  
-ssn
-  
-nationalnumber
-  
-bnn#
-  
-bnn
-  
-personal id number
-  
-personalidnumber#
-  
-единен граждански номер
-  
-edinen grazhdanski nomer
-  
-егн
-  
-егн#
+- bnn#
+- bnn
+- bucn#
+- bucn
+- edinen grazhdanski nomer
+- egn#
+- egn
+- identification number
+- national id
+- national number
+- nationalnumber#
+- nationalnumber
+- personal id
+- personal no
+- personal number
+- personalidnumber#
+- social security number
+- ssn#
+- ssn
+- uniform civil id
+- uniform civil no
+- uniform civil number
+- uniformcivilno#
+- uniformcivilno
+- uniformcivilnumber#
+- uniformcivilnumber
+- unique citizenship number
+- егн#
+- егн
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
+- униформ id
+- униформ граждански id
+- униформ граждански не
+- униформ граждански номер
+- униформгражданскиid#
+- униформгражданскине.#
+
   
 ## Croatia
 

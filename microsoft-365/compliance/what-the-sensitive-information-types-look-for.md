@@ -1073,27 +1073,63 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_belgium_national_number
 
-- Identity
-- Registration
-- Identification 
-- ID 
-- Identiteitskaart
-- Registratie nummer 
-- Identificatie nummer 
-- Identiteit
-- Registratie
-- Identificatie 
-- Carte d'identité 
-- numéro d'immatriculation
-- numéro d'identification
-- identité 
-- inscription 
-- Identifikation
-- Identifizierung
-- Identifikationsnummer
-- Personalausweis
-- Registrierung
-- Registrationsnummer
+- belasting aantal
+- bnn#
+- bnn
+- carte d’identité
+- identifiant national
+- identifiantnational#
+- identificatie
+- identification
+- identifikation
+- identifikationsnummer
+- identifizierung
+- identité
+- identiteit
+- identiteitskaart
+- identity
+- inscription
+- national number
+- national register
+- nationalnumber#
+- nationalnumber
+- nif#
+- nif
+- numéro d'assuré
+- numéro de registre national
+- numéro de sécurité
+- numéro d'identification
+- numéro d'immatriculation
+- numéro national
+- numéronational#
+- personal id number
+- personalausweis
+- personalidnumber#
+- registratie
+- registration
+- registrationsnumme
+- registrierung
+- social security number
+- ssn#
+- ssn
+- steuernummer
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
 
    
 ## Brazil CPF Number
