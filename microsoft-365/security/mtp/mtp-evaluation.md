@@ -40,11 +40,8 @@ This guide will help you:
 
 
 # Deployment phases
-**Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
 
-
-There are three phases in deploying Microsoft Defender ATP:
+There are three phases in creating a Microsoft Threat Protection evaluation lab deployment:
 
 |Phase | Description | 
 |:-------|:-----|
