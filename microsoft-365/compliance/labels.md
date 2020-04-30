@@ -33,8 +33,9 @@ Across your organization, you probably have different types of content that requ
     
 - Work visas that must be **marked as a record** so that they can't be edited or deleted. 
     
-In all of these cases, retention labels can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
-  
+
+In all of these cases, retention labels in Microsoft 365 can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
+
 With retention labels, you can:
   
 - **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
@@ -160,7 +161,7 @@ Retention labels can enforce the same retention actions that a retention policy 
   
 In addition, a retention label has two retention options that are available only in a retention label and not in a retention policy. With a retention label, you can:
   
-- Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Overview of disposition reviews](disposition-reviews.md).
+- Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Disposition of content](disposition.md).
     
 - Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
     
@@ -258,7 +259,7 @@ You can choose to apply retention labels to content automatically when that cont
     
 - [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
-- [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifers)
     
 ![Choose condition page for auto-apply label](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
@@ -308,7 +309,7 @@ Examples queries:
 ![Query editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### Auto-apply labels to content by using trainable classifiers
+### Auto-apply labels to content by using trainable classifers
 
 When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Offensive Language**, **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
 
@@ -319,6 +320,7 @@ To automatically apply a label by using this option, SharePoint Online sites and
 For more information about trainable classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
 For an example configuration, see [How to prepare for and use a built-in classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
+
 
 ## Applying a default retention label to all content in a SharePoint library, folder, or document set
 
