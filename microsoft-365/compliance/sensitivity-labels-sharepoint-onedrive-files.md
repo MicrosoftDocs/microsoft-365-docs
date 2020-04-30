@@ -103,7 +103,7 @@ You can enable the new capabilities by using the Microsoft 365 compliance center
 
 ### Use the compliance center to enable support for sensitivity labels
 
-This option is currently rolling out to tenants, and is the easiest way to enable sensitivity labels for SharePoint and OneDrive.
+This option is the easiest way to enable sensitivity labels for SharePoint and OneDrive.
 
 The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
@@ -111,7 +111,7 @@ The global admin for your organization has full permissions to create and manage
     
     If you don't immediately see this option, first select **Show all**. 
 
-2. On the **Labels** tab, if you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
+2. If you see a message to turn on the ability to process content in Office online files, select **Turn on now**:
     
     ![Turn on now button to enable sensitivity labels for Office Online](../media/sensitivity-labels-turn-on-banner.png)
     
