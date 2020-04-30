@@ -49,7 +49,7 @@ landingContent:
             url: ../create-groups/add-or-remove-members-from-groups.md
           - text: Restore or recover a deleted group
             url: ../create-groups/restore-deleted-group.md
-          - text: Add external guests to a group
+          - text: Manage guest access in groups
             url: ../create-groups/manage-guest-access-in-groups.md
   # Card (optional)
   - title: Manage passwords

@@ -380,6 +380,16 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/admin/manage/manage.md",
+      "redirect_url": "index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/email/email.md",
+      "redirect_url": "index",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/admin/admin-overview/index.md",
       "redirect_url": "admin-overview",
       "redirect_document_id": true
@@ -391,7 +401,7 @@
     },
     {
       "source_path": "microsoft-365/admin/get-help-with-domains/index.md",
-      "redirect_url": "get-help-with-domains",
+      "redirect_url": "what-is-a-domain",
       "redirect_document_id": true
     },
     {
@@ -405,7 +415,12 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/misc/index.md",
+      "source_path": "microsoft-365/admin/misc/index.md",
+      "redirect_url": "index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-home.md",
       "redirect_url": "index",
       "redirect_document_id": false
     },
@@ -414,7 +429,7 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data",
       "redirect_document_id": true
     },    {
-      "source_path": "microsoft-365/dns/index.md",
+      "source_path": "microsoft-365/admin/dns/index.md",
       "redirect_url": "setup/add-domain",
       "redirect_document_id": false
     },
