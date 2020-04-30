@@ -260,4 +260,4 @@ You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https:
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 3: Onboard](images/onboard.png) <br>[Phase 3: Onboard](onboarding.md) | Onboard devices to the service so the Microsoft Defender ATP service can get sensor data from them
+|![Phase 3: Configure](../../media/onboard.png) <br>[Phase 3: Configure](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab
