@@ -53,7 +53,7 @@ There are three phases in deploying Microsoft Defender ATP:
 |  ![Phase 3: Configure](../media/onboard.png) <br>[Phase 3: Configure](config-mpteval.md) | Configure each Microsoft Threat Protection pillar. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
 
 
-## In Scope
+## In scope
 
 The following is in scope for this evaluation lab guide:
 -   Set up Azure Active Directory
