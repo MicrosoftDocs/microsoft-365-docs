@@ -1,4 +1,4 @@
-- name: Microsoft 365 admin center
+- name: Microsoft 365 admin center help
   href: index.yml
   items: 
     - name: Get started
