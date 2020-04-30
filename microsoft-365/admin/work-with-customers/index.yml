@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Work with customers # < 60 chars
-summary: Share documents and use Teams to collaborate and meet. # < 160 chars
+summary: Check out these resources to help admins with common tasks, or see the navigation pane on the left for a complete list. # < 160 chars
 
 metadata:
   title: Work with customers # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -37,5 +37,5 @@ landingContent:
             url: https://support.office.com/article/65748808-a403-462c-a6e1-b169e5bc6c92
           - text: Schedule a Teams meeting with guests
             url: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
-          - text: Join a Teams meeting wuth guests
+          - text: Join a Teams meeting with guests
             url: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8

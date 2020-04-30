@@ -28,17 +28,15 @@ landingContent:
             url: add-users.md
           - text: Edit a user
             url: add-users.md
-          - text: Add an email address
+          - text: Add another email address
             url: ../email/add-another-email-alias-for-a-user.md
-          - text: Set up a shared mailbox
+          - text: Create a shared mailbox
             url: ../email/create-a-shared-mailbox.md
-          - text: Manage licenses for users
-            url: ../manage/assign-licenses-to-users.md
           - text: Assign licenses to users
-            url: ../manage/assign-licenses-to-users.md
-          - text: Change a display name
-            url: index.yml
-          - text: Change an email address
+            url: ../manage/assign-licenses-to-users.md  
+          - text: Remove licenses from users
+            url: ../manage/remove-licenses-from-users.md
+          - text: Use your custom domain
             url: ../email/change-email-address.md
   # Card
   - title: Manage groups
@@ -53,8 +51,6 @@ landingContent:
             url: ../create-groups/restore-deleted-group.md
           - text: Add external guests to a group
             url: ../create-groups/manage-guest-access-in-groups.md
-          - text: Manage guest access in groups
-            url: ../create-groups/manage-guest-access-in-groups.md
   # Card (optional)
   - title: Manage passwords
     linkLists:
@@ -67,19 +63,17 @@ landingContent:
           - text: Let users reset their own passwords
             url: let-users-reset-passwords.md
           - text: Set the password expiration policy for your org
-            url: set-password-expiration-policy.md
+            url: ../manage/set-password-expiration-policy.md
           - text: Reset admin password
-            url: index.yml
+            url: reset-passwords.md#reset-my-admin-password
   # Card (optional)
   - title: Remove an employee
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Block access
-            url: index.yml
           - text: Delete a user
             url: delete-a-user.md
-          - text: Save user data
+          - text: Access and back up a former user’s data
             url: get-access-to-and-back-up-a-former-user-s-data.md
           - text: Forward email to another user
             url: ../email/configure-email-forwarding.md
@@ -87,7 +81,5 @@ landingContent:
             url: ../manage/remove-licenses-from-users.md
           - text: Restore a deleted user
             url: restore-user.md
-          - text: Manage files for deleted users
-            url: index.yml
-          - text: Wipe company data from devices
+          - text: Remove company data from devices (Microsoft 365 Business Premium)
             url: ../../business/remove-company-data.md

@@ -23,15 +23,15 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Manage Microsoft 365 email settings
+          - text: Manage user email settings
             url: office-365-user-email-settings.md
-          - text: Email collaboration
+          - text: About email collaboration
             url: email-collaboration.md
       - linkListType: how-to-guide
         links:
           - text: Add another email alias
             url: add-another-email-alias-for-a-user.md
-          - text: Change email address
+          - text: Use your custom domain
             url: change-email-address.md
           - text: Set up email forwarding
             url: configure-email-forwarding.md
@@ -44,6 +44,8 @@ landingContent:
         links:
           - text: Manage your calendar and contacts in outlook
             url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
+      - linkListType: video
+        links:     
           - text: Create a shared calendar
             url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
   # Card (optional)
@@ -53,11 +55,11 @@ landingContent:
         links:
           - text: Set up a shared mailbox
             url: configure-a-shared-mailbox.md
-          - text: Convert a users mailbox to a shared mailbox
+          - text: Convert a user mailbox to a shared mailbox
             url: convert-user-mailbox-to-shared-mailbox.md
           - text: Remove a license from a shared mailbox 
             url: remove-license-from-shared-mailbox.md
-          - text: Troubleshoot shared mailboxes
+          - text: Resolve issues with shared mailboxes
             url: resolve-issues-with-shared-mailboxes.md
    # Card (optional)
   - title: Solve email connection and delivery problems
@@ -68,7 +70,7 @@ landingContent:
             url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
           - text: Fix and find issues after adding your domain or DNS records
             url: get-help-with-domains/find-and-fix-issues.md
-          - text: Recover deleted emails in a user's mailbox 
+          - text: Recover deleted emails in a user mailbox 
             url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
           - text: Fix Outlook connection problems in Microsoft 365 and Exchange Online
             url: https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f

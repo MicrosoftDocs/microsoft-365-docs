@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Manage your data and service # < 60 chars
-summary: Admin tasks to monitor and manage Microsoft 365 services and data. # < 160 chars
+summary: Check out these resources to help admins with common tasks, or see the navigation pane on the left for a complete list. # < 160 chars
 
 metadata:
   title: Manage your data and service # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -21,36 +21,30 @@ landingContent:
   # Card (optional)
   - title: Monitor the status of our service
     linkLists:
-      - linkListType: overview
-        links:
-          - text: Manage subscriptions and billing
-            url: ../../commerce/index.yml
       - linkListType: how-to-guide
         links:
-          - text: Monitor user activity
+          - text: Monitor user activity by using reports
             url: ../activity-reports/activity-reports.md
           - text: Monitor usage analytics
             url: ../usage-analytics/usage-analytics.md
           - text: Enable usage analytics
             url: ../usage-analytics/enable-usage-analytics.md
-          - text: Change contact Information
+          - text: Change your organization contact info
             url: change-address-contact-and-more.md
           - text: Update your admin contact info
             url: update-phone-number-and-email-address.md
-          - text: Release options
+          - text: Set up release options
             url: release-options-in-office-365.md
   # Card (optional)
   - title: Block user access and back up data
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Block access
-            url: index.yml
           - text: Save user data
-            url: get-access-to-and-back-up-a-former-user-s-data.md
+            url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
           - text: Set up email retention (Microsoft 365 Business Premium)
             url: ../../business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
-          - text: Wipe company data from devices (Microsoft 365 Business Premium)
+          - text: Remove company data from devices (Microsoft 365 Business Premium)
             url: ../../business/remove-company-data.md
   # Card
   - title: Manage add-ins and apps
@@ -63,18 +57,16 @@ landingContent:
             url: customize-the-app-launcher.md
           - text: Requirements for centralized deployment of add-ins
             url: centralized-deployment-of-add-ins.md
-          - text: Deploy and manage add-ins with centralized deployment
-            url: ../create-groups/manage-guest-access-in-groups.md
-          - text: Manage guest access in groups
+          - text: Install and manage add-ins by using Centralized Deployment
             url: manage-deployment-of-add-ins.md
    # Card
   - title: Microsoft Teams
     linkLists:
       - linkListType: overview
         links:
-          - text: Microsoft Teams
+          - text: Microsoft Teams admin documentation
             url: https://docs.microsoft.com/en-us/microsoftteams/
-          - text: Collaborate with Microsoft 365 
+          - text: Use Outlook and Teams together 
             url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
       - linkListType: learn
         links:
@@ -85,9 +77,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: SharePoint
+          - text: SharePoint documentation for IT pros and admins
             url: https://docs.microsoft.com/sharepoint/
-          - text: OneDrive
+          - text: OneDrive documentation for IT pros and admins
             url: https://docs.microsoft.com/onedrive/
       - linkListType: how-to-guide
         links:

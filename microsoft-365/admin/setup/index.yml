@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Get started # < 60 chars
-summary: Set up your subscription and email, add users, and install apps. # < 160 chars
+summary: Check out these resources to help admins with common tasks, or see the navigation pane on the left for a complete list. # < 160 chars
 
 metadata:
   title: Get started # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -21,14 +21,18 @@ landingContent:
   # Card (optional)
   - title: Sign up
     linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Choose a plan and sign up for Microsoft 365
+            url: admin-overview/sign-up-for-office-365
       - linkListType: video
         links:
           - text: Sign up and set up Microsoft Business Basic
-            url: setup.md
+            url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
           - text: Sign up for Microsoft Business Standard
-            url: ../activity-reports/activity-reports.md
+            url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
           - text: Sign up for Microsoft Business Premium
-            url: ../usage-analytics/usage-analytics.md
+            url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
   # Card (optional)
   - title: Guided set up
     linkLists:

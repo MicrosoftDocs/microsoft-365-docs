@@ -63,7 +63,7 @@
              href: add-users/change-a-user-name-and-email-address.md
            - name: Remove a former employee
              href: add-users/remove-former-employee.md
-           - name: Back up former user's data
+           - name: Access and back up a former user’s data
              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
            - name: Restore  a user
              href: add-users/restore-user.md
@@ -112,7 +112,7 @@
           href: email/office-365-user-email-settings.md
         - name: Add another email alias for a user
           href: email/add-another-email-alias-for-a-user.md
-        - name: Change your email address to use your custom domain
+        - name: Use your custom domain
           href: email/change-email-address.md
         - name: Create signatures and disclaimers
           href: setup/create-signatures-and-disclaimers.md
@@ -126,23 +126,23 @@
               href: email/about-shared-mailboxes.md
             - name: Create a shared mailbox
               href: email/create-a-shared-mailbox.md
-            - name: Configure a shared mailbox
+            - name: Set up a shared mailbox
               href: email/configure-a-shared-mailbox.md
             - name: Convert a user mailbox to a shared mailbox
               href: email/convert-user-mailbox-to-shared-mailbox.md
-            - name: Remove license from a shared mailbox
+            - name: Remove a license from a shared mailbox
               href: email/remove-license-from-shared-mailbox.md
             - name: Resolve issues with shared mailboxes
               href: email/resolve-issues-with-shared-mailboxes.md
         - name: Set up Focused Inbox
           href: setup/configure-focused-inbox.md
-        - name: Email collaboration
+        - name: About email collaboration
           href: email/email-collaboration.md
         - name: Add user or contact to distribution group
           href: email/add-user-or-contact-to-distribution-list.md
         - name: Manage clutter for your organization
           href: email/configure-clutter.md
-    - name: Manage Domains
+    - name: Manage domains
       href: get-help-with-domains/what-is-a-domain.md
       items:
         - name: Add a domain
@@ -178,7 +178,7 @@
            href: manage/customize-the-app-launcher.md
          - name: Requirements for centralized deployment of add-ins
            href: manage/centralized-deployment-of-add-ins.md
-         - name: Install and manage add-in by using Centralized Deployment
+         - name: Install and manage add-ins by using Centralized Deployment
            href: manage/manage-deployment-of-add-ins.md
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
@@ -229,7 +229,7 @@
           href: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7
         - name: Schedule a Teams meeting with guests
           href: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US
-        - name: Join a Teams meeting woth guests
+        - name: Join a Teams meeting with guests
           href: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US
     - name: Troubleshoot
       href: https://docs.microsoft.com/office/troubleshoot/
