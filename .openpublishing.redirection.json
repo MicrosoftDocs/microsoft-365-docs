@@ -415,7 +415,12 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/misc/index.md",
+      "source_path": "microsoft-365/admin/misc/index.md",
+      "redirect_url": "index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/admin/admin-home.md",
       "redirect_url": "index",
       "redirect_document_id": false
     },
