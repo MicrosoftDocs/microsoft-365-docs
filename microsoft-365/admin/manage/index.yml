@@ -43,7 +43,7 @@ landingContent:
           - text: Save user data
             url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
           - text: Set up email retention (Microsoft 365 Business Premium)
-            url: ../../business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
+            url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
           - text: Remove company data from devices (Microsoft 365 Business Premium)
             url: ../../business/remove-company-data.md
   # Card

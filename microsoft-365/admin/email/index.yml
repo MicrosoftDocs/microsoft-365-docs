@@ -69,7 +69,7 @@ landingContent:
           - text: Find and fix email delivery issues
             url: https://docs.microsoft.com/exchange/troubleshoot/mail-delivery/email-delivery-issues
           - text: Fix and find issues after adding your domain or DNS records
-            url: get-help-with-domains/find-and-fix-issues.md
+            url: ../get-help-with-domains/find-and-fix-issues.md
           - text: Recover deleted emails in a user mailbox 
             url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
           - text: Fix Outlook connection problems in Microsoft 365 and Exchange Online

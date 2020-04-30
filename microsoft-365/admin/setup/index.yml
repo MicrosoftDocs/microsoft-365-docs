@@ -24,7 +24,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Choose a plan and sign up for Microsoft 365
-            url: admin-overview/sign-up-for-office-365
+            url: admin-overview/sign-up-for-office-365.md
       - linkListType: video
         links:
           - text: Sign up and set up Microsoft Business Basic

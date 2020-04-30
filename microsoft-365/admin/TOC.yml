@@ -7,7 +7,7 @@
         - name: Sign up
           href: admin-overview/sign-up-for-office-365.md
         - name: Try or buy Microsoft 365
-          href: ../commerce/try-or-buy-microsoft-365
+          href: ../commerce/try-or-buy-microsoft-365.md
         - name: Plan your setup
           href: setup/plan-your-setup.md
         - name: Set up your organization with the guided setup
@@ -56,7 +56,7 @@
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
            - name: Remove licenses from users
-             href: manage/remove-licenses-from-users
+             href: manage/remove-licenses-from-users.md
            - name: Resolve license conflicts
              href: manage/resolve-license-conflicts.md
            - name: Change a user name and email address

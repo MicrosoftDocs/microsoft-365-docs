@@ -27,17 +27,17 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
       summary: Sign up and set up Microsoft 365.
-      url: setup/index
+      url: setup/index.yml
     # Card
     - title: Migrate data
       imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
       summary: Move your data from another service to Microsoft 365.
-      url: setup/migrate-email-and-contacts-admin
+      url: setup/migrate-email-and-contacts-admin.md
     # Card
     - title: Install apps
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       summary:  Install Office and other Microsoft apps for users in your organization.
-      url: setup/install-applications
+      url: setup/install-applications.md
     # Card
     - title: Train users
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
@@ -56,15 +56,15 @@ additionalContent:
         # Card
         - title: Overview of the Microsoft 365 admin center
           summary: Learn about admin roles, how to stay on top of changes, and how to customize your subscription. 
-          url: admin-overview/about-the-admin-center
+          url: admin-overview/about-the-admin-center.md
         # Card
         - title: Users and groups
           summary: Manage passwords, add and remove users, set up and manage groups, manage guest access, and assign user licenses. 
-          url: add-users/index
+          url: add-users/index.yml
         # Card
         - title: Email and calendars
           summary: Manage email settings, distribution groups, and security settings, and set up shared mailboxes.
-          url: email/index
+          url: email/index.yml
         # Card
         - title: Domains
           summary: Learn about domains, set up and manage domains, and update DNS records.
@@ -76,7 +76,7 @@ additionalContent:
         # Card
         - title: Subscriptions and billing
           summary: Manage bills, subscriptions, and product licenses, update payment methods, and purchase additional services and storage.
-          url: ../commerce/subscriptions-and-billing
+          url: ../commerce/index.yml
         # Card
         - title: Secure your organization
           summary: Create data loss prevention (DLP) policies, set up multi-factor authentication (MFA), and learn about Microsoft Secure Score and GDPR.
@@ -84,7 +84,7 @@ additionalContent:
         # Card
         - title: Work with customers
           summary: Share documents and use Teams to collaborate and meet.
-          url:  work-with-customers/index
+          url:  work-with-customers/index.yml
         # Card
         - title: Troubleshoot
           summary: Access resources to help you troubleshoot and fix problems with your Office products or services.
