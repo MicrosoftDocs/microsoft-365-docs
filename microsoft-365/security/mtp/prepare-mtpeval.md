@@ -90,6 +90,25 @@ to the table below as appropriate for your organization.
 | Enter name and email | **Workplace Architect** *A representative from the IT team in charge of defining how this change is aligned with the core workplace architecture in the organization.*                             | R      |
 | Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience and overall usefulness of this change from a security operations perspective.* | I      |
 
+## Prepare your Azure Active Directory
+Skip this step if you already have enabled synchronization between Active Directory and Azure Active Directory on premises. Review existing best practices documentation from Azure Active Directory. The following steps are optimized to evaluate Microsoft Threat Protection.
+
+1.	Go to the Azure Active Directory portal > Azure AD Connect. 
+ 
+2.	Click Download from Microsoft Azure Active Directory Connect and transfer it to your Domain Controller.
+ 
+3.	On the domain controller, follow the Azure Active Directory Connect wizard. Read the license terms and privacy notice and select the checkbox if you agree. Click Continue.
+ 
+4.	Navigate to use Express Settings.
+ 
+5.	Enter your global administrator credentials. Click Next.
+ 
+6.	Enter your Active Directory Domain Services enterprise administrator credentials. Click Next.
+ 
+7.	Click Install to confirm the configuration.
+ 
+8.	Congratulations, you have successfully configured Azure Active Directory Connect.  
+
 
 ## Configuration order
 The table below indicates the order Microsoft recommends for configuring the Microsoft Threat Protection components for your evaluation lab deployment.
@@ -100,6 +119,7 @@ The table below indicates the order Microsoft recommends for configuring the Mic
 |Azure Advanced Threat Protection|Azure ATP uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. <br> [Learn more](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2 |
 |Microsoft Cloud App Security| Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. <br> [Learn more](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                   |                                                                                                                                                                                                                                    
+
 
 ## Next step
 |||
