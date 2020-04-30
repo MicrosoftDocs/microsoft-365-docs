@@ -150,7 +150,7 @@
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
     - name: Encryption in Microsoft 365
-      href: encryption.md    
+      href: encryption.md
     - name: Office 365 Service encryption
       href: office-365-service-encryption.md    
     - name: Customer Key
@@ -165,6 +165,8 @@
           href: customer-key-availability-key-roll.md
         - name: Learn about the availability key for Customer Key
           href: customer-key-availability-key-understand.md
+    - name: Encryption for data in transit
+      href: office-365-encryption-for-data-in-transit.md
     - name: Email encryption
       href: email-encryption.md
       items: 
@@ -283,8 +285,8 @@
           href: automate-event-driven-retention.md
         - name: Manage the lifecycle of SharePoint documents
           href: auto-apply-retention-labels-scenario.md
-    - name: Dispose data
-      href: disposition-reviews.md
+    - name: Dispose of data
+      href: disposition.md
     - name: Manage inactive mailboxes
       items: 
         - name: Overview of inactive mailboxes
@@ -338,7 +340,7 @@
             - name: Automate event-based retention
               href: automate-event-driven-retention.md
         - name: Disposition
-          href: disposition-reviews.md
+          href: disposition.md
         - name: More about records management
           items: 
             - name: Watch videos about records management
@@ -1204,6 +1206,8 @@
               href: offering-lopd-spain.md
             - name: PASF (UK)
               href: offering-pasf-uk.md
+            - name: Personal Data Localization (Russia)
+              href: offering-russia-data-localization.md
         - name: North America
           items: 
             - name: California Consumer Privacy Act (CCPA)

@@ -10,6 +10,8 @@ ms.date: 05/17/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection:
 - M365-security-compliance
 description: "The Safe Attachments feature provides time-of-click verification of email attachments. Use Safe Attachments to protect your organization from malicious files people send or receive in email."
