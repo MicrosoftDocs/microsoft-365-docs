@@ -72,7 +72,7 @@ additionalContent:
         # Card
         - title: Your data and service
           summary: Monitor the status of your service, back up data, install add-ins, and upgrade to the latest apps.
-          url: manage/index
+          url: manage/index.yml
         # Card
         - title: Subscriptions and billing
           summary: Manage bills, subscriptions, and product licenses, update payment methods, and purchase additional services and storage.
