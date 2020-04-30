@@ -30,17 +30,17 @@ Deploying Microsoft Threat Protection is a three-phase process:
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="..media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" title="Prepare your Microsoft Threat Protection evaluation lab" />
+        <img src="../..media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" title="Prepare your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="..media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Set up your Microsoft Threat Protection evaluation lab" />
+        <img src="../..media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Set up your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 2: Setup & Onboard </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="..media/onboard.png" alt="
+        <img src="../..media/onboard.png" alt="
 Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab" title="
 Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 3: Configure </a><br>
