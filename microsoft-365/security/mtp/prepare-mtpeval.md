@@ -91,20 +91,30 @@ to the table below as appropriate for your organization.
 Skip this step if you have already enabled synchronization between Active Directory and Azure Active Directory on premises. Review existing best practices documentation from Azure Active Directory. The following steps are optimized to evaluate Microsoft Threat Protection.
 
 1. Go to the [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) portal > **Azure AD Connect**. 
- 
+![Image of Azure Active Directory portal page](../../media/mtp-eval-1.png) <br> 
+
 2. Click **Download** from **Microsoft Azure Active Directory Connect** and transfer it to your Domain Controller.
- 
+![Image of Azure Active Directoru Connect download page](../../media/mtp-eval-2.png) <br>
+
 3. On the domain controller, follow the Azure Active Directory Connect wizard. Read the license terms and privacy notice and select the checkbox if you agree. Click **Continue**.
- 
+![Image of Azure AD Connect welcome page](../../media/mtp-eval-3.png) <br>
+
 4. Navigate to **Express Settings**.
- 
+![Image of Express Settings page](../../media/mtp-eval-4.png) <br>
+
 5. Enter your global administrator credentials. Click **Next**.
- 
+![Image of Connect to Azure AD page where you should enter your global administrator credentials](../../media/mtp-eval-5.png) <br>
+
 6. Enter your Active Directory Domain Services enterprise administrator credentials. Click **Next**.
- 
+![Image of Connect to AD DS page where you should enter your credentials](../../media/mtp-eval-6.png) <br>
+
 7. Click **Install** to confirm the configuration.
- 
-8. Congratulations, you have successfully configured Azure Active Directory Connect. You can now [add users and groups to Active Directory](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) and [configure a SAM-R policy](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc).  
+![Image of configuration confirmation page](../../media/mtp-eval-7.png) <br>
+
+8. Congratulations, you have successfully configured Azure Active Directory Connect.
+![Image of a successfully-configured Azure Active Directory Connect page](../../media/mtp-eval-8.png) <br>
+
+You can now [add users and groups to Active Directory](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) and [configure a SAM-R policy](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc).  
 
 
 ## Configuration order
