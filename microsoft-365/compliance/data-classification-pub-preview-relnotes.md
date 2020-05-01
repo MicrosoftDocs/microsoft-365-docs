@@ -33,6 +33,11 @@ SharePoint, Exchange, and OneDrive files that are encrypted will not render in t
 
 SharePoint search does not support retention label names with `-`, or `_` in them. For example `Label-MIP` and `Label_MIP` are not supported. SharePoint search does support those characters in sensitivity label names and sensitive information type names.
 
+## OneDrive remains in preview
+
+We have listened to your valuable feedback on OneDrive integration during our preview program. As we work through the specifics, you may run into inconsistent data / flows. We will continue to showcase OneDrive in preview till all fixes are in place. We appreciate your continued support on this.
+
+
 ## See also
 
 - [Get started with data classification (preview)](data-classification-overview.md)

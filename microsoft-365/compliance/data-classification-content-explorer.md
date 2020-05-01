@@ -50,7 +50,12 @@ In order to get access to the content explorer tab, an account must be assigned 
 
 ### Required permissions to access items in content explorer
 
-Access to content explorer is highly restricted because it lets you read the contents of scanned files. There are two roles that grant access to content explorer:
+Access to content explorer is highly restricted because it lets you read the contents of scanned files.
+
+> [!IMPORTANT]
+> These permissions supercede permissions that are locally assigned to the items, which allows viewing of the content. 
+
+There are two roles that grant access to content explorer:
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
@@ -105,7 +110,12 @@ The scope of the search tool is what is displaying in the **All locations** pane
 
 When **Exchange** is the selected location, you can search on the full email address of the mailbox, for example `user@domainname.com`.
 
-When either **SharePoint** or **OneDrive** are selected location, the search tool will appear when you drill down to site names, folders and files. You can search on:
+When either **SharePoint** or **OneDrive** are selected location, the search tool will appear when you drill down to site names, folders and files. 
+
+> [!NOTE]
+> **OneDrive** We have listened to your valuable feedback on OneDrive integration during our preview program. Based on that feedback, the OneDrive functionality will remain in preview till all fixes are in place. Depending on your tenant, some customers may not see OneDrive as a location. We appreciate your continued support on this.
+
+You can search on:
 
 
 |value|example  |
@@ -113,8 +123,8 @@ When either **SharePoint** or **OneDrive** are selected location, the search too
 |full site name    |`https://contoso.onmicrosoft.com/sites/sitename`    |
 |root folder name - gets all subfolders    | `/sites`        |
 |file name    |    `RES_Resume_1234.txt`     |
-|text at the beginning| `RES`|
-|text after an underscore character ( _ )|`Resume` or `1234`| 
+|text at the beginning of file name| `RES`|
+|text after an underscore character ( _ ) in file name|`Resume` or `1234`| 
 |file extension|`txt`|
 
 

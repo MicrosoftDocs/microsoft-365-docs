@@ -24,7 +24,7 @@ The data classification overview and content explorer tabs give you visibility i
 
 ![placeholder screenshot overview activity explorer](../media/data-classification-activity-explorer-1.png)
 
-You can filter the data by:
+There are over 30 different filters available for use, some are:
 
 - date range
 - activity type
@@ -32,6 +32,9 @@ You can filter the data by:
 - user
 - sensitivity label
 - retention label
+- file path
+- DLP policy
+
 
 
 ## Prerequisites
@@ -56,7 +59,7 @@ Every account that accesses and uses data classification must have a license ass
 
 ## Activity type
 
-Microsoft 365 monitors and reports on 12 types of activities across SharePoint Online, OneDrive and endpoints. Endpoints are user devices running Windows 10.
+Microsoft 365 monitors and reports on 12 types of activities across SharePoint Online, and OneDrive.
 
 - File created
 - File modified
