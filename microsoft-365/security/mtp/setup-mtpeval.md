@@ -52,7 +52,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
 
 You are currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then setup your evaluation lab.
 
-The first step is to sign up for an Office 365 or Azure Active Directory subscription. This will generate a *.onmicrosoft.com* tenant that you can then use to sign up for Microsoft 365 E5 license. 
+Sign up for an Office 365 or Azure Active Directory subscription to generate a *.onmicrosoft.com* tenant that you can use to sign up for your Microsoft 365 E5 license. 
 
 >[!NOTE]
 >If you already have an existing Office 365 or Azure Active Directory subscription, you can skip the Office 365 E5 trial tenant creation steps.
