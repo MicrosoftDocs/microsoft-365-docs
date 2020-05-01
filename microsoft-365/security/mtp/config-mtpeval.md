@@ -1,5 +1,5 @@
 ---
-title: Prepare Microsoft Defender ATP deployment
+title: Configure Microsoft Threat Protection pillars for the evaluation lab
 description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when deploying Microsoft Defender ATP
 keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: macapara
-author: mjcaparas
+ms.author: dolmont  
+author: DulceMontemayor
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -17,12 +17,10 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Prepare Microsoft Defender ATP deployment
+# Configure Microsoft Threat Protection pillars for the evaluation lab
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-
+- Microsoft Threat Protection
 
 
 Deploying Microsoft Defender ATP is a three-phase process:
@@ -30,37 +28,28 @@ Deploying Microsoft Defender ATP is a three-phase process:
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
-    <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
+    <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
-        <img src="images/prepare.png" alt="Plan to deploy Microsoft Defender ATP" title="Plan" />
+        <img src="../../media/prepare.png" alt="Prepare to deploy Microsoft Defender ATP" title="Prepare" />
       <br/>Phase 1: Prepare </a><br>
     </td>
-     <td align="center"  >
+     <td align="center">
       <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="images/setup.png" alt="Onboard to the Microsoft Defender ATP service" title="Setup the Microsoft Defender ATP service" />
+        <img src="../../media/setup.png" alt="Setup the Microsoft Defender ATP service" title="Setup" />
       <br/>Phase 2: Set up </a><br>
-        </td>
-    <td align="center">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="images/onboard.png" alt="Configure capabilities" title="Configure capabilities" />
-      <br/>Phase 3: Onboard</a><br>
-</td>
-  </tr>
-  <tr>
-    <td style="width:25%; border:0;">
-   
     </td>
-    <td valign="top" style="width:25%; border:0;">
-    
+    <td align="center" bgcolor="#d5f5e3">
+      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
+        <img src="../../media/onboard.png" alt="Onboard" title="Onboard to the Microsoft Defender ATP service" />
+      <br/>Phase 3: Onboard </a><br>
 </td>
-    <td valign="top" style="width:25%; border:0;">
 
-</td>    
+
   </tr>
 </table>
+You are currently in the configuration phase.
 
-You are currently in the preparation phase.
-
+-----------
 
 Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender ATP.
 
@@ -178,7 +167,4 @@ how the endpoint security suite should be enabled.
 | Microsoft Threat Experts (MTE)          | Microsoft Threat Experts is a managed hunting service that provides Security Operation Centers (SOCs) with expert level monitoring and analysis to help them ensure that critical threats in their unique environments don't get missed. <br>[Learn more.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Not applicable      |
 
 ## Next step
-|||
-|:-------|:-----|
-|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Set up Microsoft Defender ATP deployment
-
+|![Generate a test alert](_____.md) 
