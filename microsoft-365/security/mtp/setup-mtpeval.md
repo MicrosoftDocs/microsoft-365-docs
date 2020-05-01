@@ -69,7 +69,7 @@ In this phase, you'll be guided to:
 1. Go to the [Office 365 E5 product portal](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) and select **Free trial**.
 
   
-2.Complete the trial registration by entering your email address (personal or corporate). Click **Set up account**.
+2. Complete the trial registration by entering your email address (personal or corporate). Click **Set up account**.
  
 
 3. Fill in your first name, last name, business phone number, company name, company size and Country or region.  
