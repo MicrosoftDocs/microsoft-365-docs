@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 solution and architecture center
-description: Description.
+description: Get the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant modern collaboration.
 ms.author: samanro
 author: samanro
 manager: bcarter
