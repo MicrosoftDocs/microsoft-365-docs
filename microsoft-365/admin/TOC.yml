@@ -1,4 +1,4 @@
-- name: Microsoft 365 admin center
+- name: Microsoft 365 admin center help
   href: index.yml
   items: 
     - name: Get started
@@ -44,6 +44,22 @@
           href: whats-new-in-preview.md
         - name: Stay on top of changes
           href: manage/stay-on-top-of-updates.md
+    - name: Office 365 operated by 21Vianet
+      items: 
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: Buy or try subscriptions
+          href: services-in-china/buy-or-try-subscriptions.md
+        - name: Download the Office app for Android for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-Android.md
+        - name: Download the Office app for iOS for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-iOS.md
+        - name: View your bill or get a Fapiao
+          href: services-in-china/view-your-bill-or-get-a-fapiao.md
+        - name: Apply for a Fapiao
+          href: services-in-china/apply-for-a-fapiao.md
+        - name: Azure Information Protection parity
+          href: services-in-china/parity-between-azure-information-protection.md      
     - name: Manage users and groups
       href: add-users/index.yml
       items: 

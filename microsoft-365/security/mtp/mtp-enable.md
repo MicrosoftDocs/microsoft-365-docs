@@ -50,7 +50,7 @@ Before you turn on the service, the Microsoft 365 security center ([security.mic
 ![Image of the Microsoft Threat Protection welcome page shown if Microsoft Threat Protection has not been turned on](../../media/mtp-welcome.png)
 *Microsoft Threat Protection welcome page in Microsoft 365 security center*
 
-To turn on Microsoft Threat Protection, simply complete the process from the welcome page. You can also turn on Microsoft Threat Protection by accessing **Settings** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) in the navigation pane and selecting **Microsoft Threat Protection**.
+To turn on Microsoft Threat Protection, simply complete the process from the welcome page. You can also turn on Microsoft Threat Protection by accessing **Settings** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) in the navigation pane and selecting **Microsoft Threat Protection**. Click **Save**.
 
 >[!NOTE]
 >If you don't see **Settings** in the navigation pane or couldn't access the page, check your permissions and licenses.       
