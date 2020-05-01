@@ -5,8 +5,12 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+ms.custom: 
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: "Learn how to collaborate with guests in a SharePoint site."
