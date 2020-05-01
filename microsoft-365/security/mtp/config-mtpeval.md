@@ -116,26 +116,37 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Azure Advanced Threat Protection**.
+![Image of_page](../../media/mtp-eval-42.png) <br>
 
 2. Click **Create** to start the Azure Advanced Threat Protection wizard. 
+![Image of_page](../../media/mtp-eval-43.png) <br>
 
 3. Choose **Provide a username and password to connect to your Active Directory forest**.  
+![Image of_page](../../media/mtp-eval-44.png) <br>
 
 4. Enter your Active Directory on-premises credentials. This can be any user account that has read access to Active Directory.
- 
+![Image of_page](../../media/mtp-eval-45.png) <br>
+
 5. Next, choose **Download Sensor Setup** and transfer file to your domain controller. 
+![Image of_page](../../media/mtp-eval-46.png) <br>
 
 6. Execute the Azure ATP Sensor Setup and begin following the wizard.
+![Image of_page](../../media/mtp-eval-47.png) <br>
  
 7. Click **Next** at the sensor deployment type.
+![Image of_page](../../media/mtp-eval-48.png) <br>
  
 8. Copy the access key as you will need to enter it next in the Wizard.
+![Image of_page](../../media/mtp-eval-49.png) <br>
  
 9. Copy the access key into the Wizard and click **Install**. 
+![Image of_page](../../media/mtp-eval-50.png) <br>
 
 10. Congratulations, you have successfully configured Azure Advanced Threat Protection on your domain controller.
+![Image of_page](../../media/mtp-eval-51.png) <br>
  
 11. Under the [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select **Windows Defender ATP**, then turn the toggle on. Click **Save**. 
+![Image of_page](../../media/mtp-eval-52.png) <br>
 
 >[!NOTE]
 >Windows Defender ATP has been rebranded as Microsoft Defender ATP. Rebranding changes across all of our portals are being rolled out the for consistency.
