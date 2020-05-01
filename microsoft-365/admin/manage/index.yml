@@ -40,7 +40,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Save user data
+          - text: Access and back up a former user’s data
             url: ../add-users/get-access-to-and-back-up-a-former-user-s-data.md
           - text: Set up email retention (Microsoft 365 Business Premium)
             url: ../../business/set-up-compliance.md#set-up-email-retention-with-exchange-online-archiving
