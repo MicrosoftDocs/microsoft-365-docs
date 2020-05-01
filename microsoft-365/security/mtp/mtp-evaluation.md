@@ -73,3 +73,7 @@ The following are out of scope of this deployment guide:
     Defender ATP
 -   Penetration testing in production environment
 
+## Next step
+|||
+|:-------|:-----|
+|![Phase 1: Prepare](../../media/prepare.png) <br>[Phase 1: Prepare](prepare-mtpeval.md) | Prepare your Microsoft Threat Protection evaluation lab environment
