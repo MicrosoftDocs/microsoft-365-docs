@@ -47,9 +47,9 @@ Deploying Microsoft Defender ATP is a three-phase process:
 
   </tr>
 </table>
+
 You are currently in the configuration phase.
 
------------
 
 Preparation is key to any successful deployment. In this article, you'll be guided on the points you'll need to consider as you prepare to deploy Microsoft Defender ATP.
 
