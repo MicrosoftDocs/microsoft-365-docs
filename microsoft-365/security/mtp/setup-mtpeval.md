@@ -82,13 +82,13 @@ In this phase, you'll be guided to:
 ![Image of_page](../../media/mtp-eval-12.png) <br>
 
 5. Set the custom domain name for your tenant, then click **Next**.
- ![Image of_page](../../media/mtp-eval-13.png) <br>
+<br>![Image of_page](../../media/mtp-eval-13.png) <br>
  
 6. Set up the first identity which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
 ![Image of_page](../../media/mtp-eval-14.png) <br>
 
 7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning.
- ![Image of_page](../../media/mtp-eval-15.png) <br>
+<br>![Image of_page](../../media/mtp-eval-15.png) <br>
 
 8. Connect your corporate domain to the Office 365 tenant. [Optional] Choose **Connect a domain you already own** and type in your domain name. Click **Next**.
  ![Image of_page](../../media/mtp-eval-16.png) <br>
