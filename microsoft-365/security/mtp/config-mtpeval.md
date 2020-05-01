@@ -57,6 +57,8 @@ Preparation is key to any successful deployment. In this article, you'll be guid
 ## Microsoft Threat Protection pillars
 Microsoft Threat Protection consists of four pillars. Although one pillar can already provide value to your network organization's security, enabling the four Microsoft Threat Protection pillars will give your organization the most value.
 
+![Image of_page](../../media/mtp-eval-31.png) <br>
+
 This section will guide you to configure:
 -	Office 365 Advanced Threat Protection
 -	Azure Advanced Threat Protection 
@@ -70,36 +72,47 @@ This section will guide you to configure:
 
 There is a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings. When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module from https://www.powershellgallery.com/packages/ORCA/. 
 
-1. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**. 
+1. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**.
+![Image of_page](../../media/mtp-eval-32.png) <br>
  
-2. Click **ATP anti-phishing**, select **Create** and fill in the policy name and description. Click **Next**.  
+2. Click **ATP anti-phishing**, select **Create** and fill in the policy name and description. Click **Next**.
+![Image of_page](../../media/mtp-eval-33.png) <br>
 
 >[!NOTE]
 >Edit your Advanced ATP anti-phishing policy. Change **Advanced Phishing Threshold** to **2 - Aggressive**.
  
-3. Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain. Click **Next**. 
+3. Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain. Click **Next**.
+![Image of_page](../../media/mtp-eval-34.png) <br>
  
 4. Review your settings. Click **Create this policy** to confirm. 
+![Image of_page](../../media/mtp-eval-35.png) <br>
  
 5. Select **ATP Safe attachments** and select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** option.  
+![Image of_page](../../media/mtp-eval-36.png) <br>
 
 6. Click the + icon to create a new safe attachment policy, apply it as recipient domain to your domains. Click **Save**.
+![Image of_page](../../media/mtp-eval-37.png) <br>
  
 7. Next, select the **ATP Safe Links** policy, then click the pencil icon to edit the default policy.
 
 8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) for details. Click **Save**. 
+![Image of_page](../../media/mtp-eval-38.png) <br>
 
 9. Next select the **Anti-malware** policy, select the default, and choose the pencil icon.
 
 10. Click **Settings** and select **Yes and use the default notification text** to enable **Malware Detection Response**. Turn the **Common Attachment Types Filter** on. Click **Save**.
+![Image of_page](../../media/mtp-eval-39.png) <br>
   
 11. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Search** > **Audit log search** and turn Auditing on.  
+![Image of_page](../../media/mtp-eval-40.png) <br>
 
 12. Integrate Office 365 ATP with Microsoft Defender ATP. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **WDATP Settings** on the upper right corner of the screen. In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.
+![Image of_page](../../media/mtp-eval-41.png) <br>
 
 ## Configure Azure Advanced Threat Protection
 >[!NOTE]
->Skip this step if you have already enabled Azure Advanced Threat Protection. 
+>Skip this step if you have already enabled Azure Advanced Threat Protection
+
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Azure Advanced Threat Protection**.
 
