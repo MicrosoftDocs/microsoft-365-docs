@@ -70,7 +70,7 @@ Use the following documentation to support your sensitivity labeling deployment:
 |----------------|---------------|
 |Create and publish sensitivity labels that will help protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
 |Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
-|Enable collaboration capabilities in SharePoint (and OneDrive) for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
+|Enable collaboration capabilities in SharePoint (and OneDrive) for documents that are labeled with encryption | [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Manage sensitivity labels for Office apps so that content is labeled as it's created |[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md)|
 |Automatically apply sensitivity labels to documents and emails | [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)|
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
