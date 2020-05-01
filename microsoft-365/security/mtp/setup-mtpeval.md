@@ -72,7 +72,7 @@ In this phase, you'll be guided to:
 2. Complete the trial registration by entering your email address (personal or corporate). Click **Set up account**.
 ![Image of_page](../../media/mtp-eval-10.png) <br> 
 
-3. Fill in your first name, last name, business phone number, company name, company size and Country or region.  
+3. Fill in your first name, last name, business phone number, company name, company size and country or region.  
 <br>![Image of_page](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >The country or region you set here determines the data center region your Office 365 will be hosted.
@@ -85,7 +85,7 @@ In this phase, you'll be guided to:
  
 6. Set up the first identity which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
 ![Image of_page](../../media/mtp-eval-14.png) <br>
-
+c
 7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning.
 <br>![Image of_page](../../media/mtp-eval-15.png) <br>
 
