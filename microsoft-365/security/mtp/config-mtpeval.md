@@ -161,6 +161,7 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 2. At the information prompt to integrate Azure ATP, select **Enable Azure ATP data integration**. 
 <br>![Image of_page](../../media5mtp-eval-54.png) <br>
+
 >[!NOTE]
 >If you don’t see this prompt, it might mean that your Azure ATP data integration has already been enabled. However, if you are not sure, contact your IT Administrator to confirm. 
 
