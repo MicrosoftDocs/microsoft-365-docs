@@ -122,19 +122,25 @@ In this phase, you'll be guided to:
 1. From [Microsoft 365 Admin Center](https://admin.microsoft.com/), click **Billing** and then navigate to **Purchase services**.
 
 2. Select **Microsoft 365 E5** and click **Start free trial**. 
+![Image of_page](../../media/mtp-eval-24.png) <br>
 
 3. Choose your verification preference: through a text message or call. Once you have decided, enter the phone number, select **Text me** or **Call me** depending on your selection.
+![Image of_page](../../media/mtp-eval-25.png) <br>
  
 4. Enter the verification code and click **Start your free trial**. 
+![Image of_page](../../media/mtp-eval-26.png) <br>
 
 5. Click **Try now** to confirm your Microsoft 365 E5 trial.
+![Image of_page](../../media/mtp-eval-27.png) <br>
  
 6. Go to the **Microsoft 365 Admin Center** > **Users** > **Active users**. Select your user account, select **Manage product licenses**, then swap the license from Office 365 E5 to **Microsoft 365 E5**. Click **Save**.
+![Image of_page](../../media/mtp-eval-28.png) <br>
  
-7. Select the global administrator account again then click **Manage username**.  
+7. Select the global administrator account again then click **Manage username**.
+![Image of_page](../../media/mtp-eval-29.png) <br>
 
-8. [Optional] Change the domain from *onmicrosoft.com* to your own domain—
-depending on what you chose on the previous steps. Click **Save changes**.
+8. [Optional] Change the domain from *onmicrosoft.com* to your own domain—depending on what you chose on the previous steps. Click **Save changes**.
+![Image of_page](../../media/mtp-eval-30.png) <br>
 
 
 
