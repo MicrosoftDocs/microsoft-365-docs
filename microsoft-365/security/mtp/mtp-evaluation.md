@@ -39,7 +39,7 @@ This guide will help you:
 >For optimum results, follow the lab setup instructions as closely as possible.
 
 
-# Deployment phases
+## Deployment phases
 
 There are three phases in creating a Microsoft Threat Protection evaluation lab and deploying it:
 
