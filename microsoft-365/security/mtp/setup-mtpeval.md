@@ -67,40 +67,52 @@ In this phase, you'll be guided to:
 >If you already have an existing Office 365 or Azure Active Directory subscription, you can skip the Office 365 E5 trial tenant creation steps.
 
 1. Go to the [Office 365 E5 product portal](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) and select **Free trial**.
-
+![Image of_page](../../media/mtp-eval-9.png) <br>
   
 2. Complete the trial registration by entering your email address (personal or corporate). Click **Set up account**.
- 
+![Image of_page](../../media/mtp-eval-10.png) <br> 
 
 3. Fill in your first name, last name, business phone number, company name, company size and Country or region.  
 
 >[!NOTE]
 >The country or region you set here determines the data center region your Office 365 will be hosted.
+![Image of_page](../../media/mtp-eval-11.png) <br>
   
 4. Choose your verification preference: through a text message or call. Click **Send Verification Code**. 
+![Image of_page](../../media/mtp-eval-12.png) <br>
 
 5. Set the custom domain name for your tenant, then click **Next**.
+![Image of_page](../../media/mtp-eval-13.png) <br>
  
 6. Set up the first identity which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
- 
-7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning
+![Image of_page](../../media/mtp-eval-14.png) <br>
+
+7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning.
+![Image of_page](../../media/mtp-eval-15.png) <br>
 
 8. Connect your corporate domain to the Office 365 tenant. [Optional] Choose **Connect a domain you already own** and type in your domain name. Click **Next**.
+![Image of_page](../../media/mtp-eval-16.png) <br>
  
 9. You will need to add a TXT or MX record to validate the domain ownership. Once you’ve added the TXT or MX record to your domain, select **Verify**.
+![Image of_page](../../media/mtp-eval-17.png) <br>
  
 10. [Optional] Create more user accounts for your tenant. You can skip this step by clicking **Next**.
+![Image of_page](../../media/mtp-eval-18.png) <br>
  
 11. [Optional] Download Office apps. Click **Next** to skip this step. 
+![Image of_page](../../media/mtp-eval-19.png) <br>
 
-12. [Optional] Migrate email messages. Again, you can skip this step. 
+12. [Optional] Migrate email messages. Again, you can skip this step.
+![Image of_page](../../media/mtp-eval-20.png) <br>
  
 13. Choose online services. Select **Exchange** and click **Next**. 
+![Image of_page](../../media/mtp-eval-21.png) <br>
 
 14. Add MX, CNAME and TXT records to your domain. When completed, select **Verify**.
+![Image of_page](../../media/mtp-eval-22.png) <br>
  
 15. Congratulations, you have completed the provisioning of your Office 365 tenant.
-
+![Image of_page](../../media/mtp-eval-23.png) <br>
 
 ## Enable Microsoft 365 trial subscription
 
