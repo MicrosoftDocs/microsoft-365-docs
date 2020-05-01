@@ -22,8 +22,7 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-
-Deploying Microsoft Defender ATP is a three-phase process:
+Creating a Microsoft Threat Protection evaluation lab and deploying it is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
