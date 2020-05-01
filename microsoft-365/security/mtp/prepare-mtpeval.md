@@ -104,7 +104,7 @@ Skip this step if you have already enabled synchronization between Active Direct
  
 7. Click **Install** to confirm the configuration.
  
-8. Congratulations, you have successfully configured Azure Active Directory Connect. You can now [add users and groups to Active Directory](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) and [configure a SAM policy](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc).  
+8. Congratulations, you have successfully configured Azure Active Directory Connect. You can now [add users and groups to Active Directory](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) and [configure a SAM-R policy](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc).  
 
 
 ## Configuration order
