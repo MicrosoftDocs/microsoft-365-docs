@@ -40,7 +40,7 @@ Creating a Microsoft Threat Protection evaluation lab and deploying it is a thre
     </td>
     <td align="center" bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
-        <img src="../../media/config.png" alt="Configure & Onboard" title="Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/onboard.png" alt="Configure & Onboard" title="Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 3: Onboard </a><br>
 </td>
 
