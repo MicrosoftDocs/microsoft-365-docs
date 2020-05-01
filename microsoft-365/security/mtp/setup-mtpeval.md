@@ -111,7 +111,7 @@ c
 <br>![Image of_page](../../media/mtp-eval-22.png) <br>
  
 15. Congratulations, you have completed the provisioning of your Office 365 tenant.
- ![Image of_page](../../media/mtp-eval-23.png) <br>
+<br>![Image of_page](../../media/mtp-eval-23.png) <br>
 
 ## Enable Microsoft 365 trial subscription
 
