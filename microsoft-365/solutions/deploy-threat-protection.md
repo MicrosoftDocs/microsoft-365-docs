@@ -1,6 +1,6 @@
 ---
 title: Deploy threat protection capabilities across Microsoft 365
-description: Description.
+description: Learn how to deploy threat protection capabilities across Microsoft 365 E5.
 ms.author: samanro
 author: samanro
 manager: bcarter
