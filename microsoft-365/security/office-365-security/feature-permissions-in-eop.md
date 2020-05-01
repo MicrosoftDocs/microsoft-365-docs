@@ -55,6 +55,7 @@ Many of the roles that are visible in standalone EOP are related to Exchange Onl
 |Organization Management|Admins who are members of the Organization Management role group have administrative access to the entire EOP organization and can perform almost any task. <br/><br/> **Important**: Because the Organization Management role group is a powerful role, only users that perform organizational-level administrative tasks should be members of this role group.|Audit Logs <br/><br/> Compliance Admin <br/><br/> Data Loss Prevention <br/><br/> Distribution Groups <br/><br/> E-Mail Address Policies <br/><br/> Federated Sharing <br/><br/> Information Rights Management <br/><br/> Journaling <br/><br/> Legal Hold <br/><br/> Mail Enabled Public Folders <br/><br/> Mail Recipient Creation <br/><br/> Mail Recipients <br/><br/> Mail Tips <br/><br/> Message Tracking <br/><br/> Migration <br/><br/> Move Mailboxes <br/><br/> Org Custom Apps <br/><br/> Org Marketplace Apps <br/><br/> Organization Client Access <br/><br/> Organization Configuration <br/><br/> Organization Transport Settings <br/><br/> Public Folders <br/><br/> Recipient Policies <br/><br/> Remote and Accepted Domains <br/><br/> Reset Password <br/><br/> Retention Management <br/><br/> Role Management <br/><br/> Security Admin <br/><br/> Security Group Creation and Membership <br/><br/> Security Reader <br/><br/> Team Mailboxes <br/><br/> TenantPlacesManagement <br/><br/> Transport Hygiene <br/><br/> Transport Rules <br/><br/> UM Mailboxes <br/><br/> UM Prompts <br/><br/> Unified Messaging <br/><br/> User Options <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
 |Recipient Management|Create, manage, and remove recipient objects in the organization.|Distribution Groups <br/><br/> Mail Recipient Creation <br/><br/> Mail Recipients <br/><br/> Message Tracking <br/><br/> Migration <br/><br/> Move Mailboxes <br/><br/> Recipient Policies <br/><br/> Reset Password <br/><br/> Team Mailboxes|
 |Records Management|Configure compliance features, such as retention policy tags, message classifications, and mail flow rules (also known as transport rules).|Audit Logs <br/><br/> Journaling <br/><br/> Message Tracking <br/><br/> Retention Management <br/><br/> Transport Rules|
+|RIM-MailboxAdmins\<GUID\>|This role group is reserved for internal Microsoft use.|ApplicationImpersonation|
 |Security Administrator|Membership in this role group is synchronized across services and managed centrally. For more information, see [Security Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator).|Security Admin <br/><br/> SensitivityLabelAdministrator|
 |Security Reader|Membership in this role group is synchronized across services and managed centrally. For more information, see [Security Reader](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-reader).|Security Reader|
 |TenantAdmins\_\<Number\>|Membership in this role group is synchronized across services and managed centrally. By default, this group is not assigned any roles. However, it will be a member of the Organization Management role group and will inherit the capabilities of that role group.|none|
@@ -70,46 +71,45 @@ If the built-in role groups in Exchange Online don't match the job function of y
 
 The built-in roles that are available in standalone EOP are described in the following table.
 
-
-|||
-|**Role**|**Description**|
-|AntiMalware|Allows viewing and modifying the configuration and reports for anti-malware features|
-|AntiSpam||
-|Audit Logs||
-|Compliance Administrator||
-|Data Classification Content Viewer||
-|Data Classification List Viewer||
-|Distribution Groups||
-|Information Rights Management||
-|Mail Recipient Creation||
-|Mail Recipients||
-|Message Tracking||
-|Migration||
-|MyBaseOptions||
-|Organization Client Access||
-|Organization Configuration||
-|Organization Transport Settings||
-|Quarantine||
-|Recipient Policies||
-|Remote and Accepted Domains||
-|Reset Password||
-|Retention Management||
-|Role Management||
-|Security Administrator||
-|Security Group Creation and Membership||
-|Security Reader||
-|Sensitivity Label Administrator||
-|Supervision||
-|Transport Hygiene||
-|Transport Rules||
-|User Options||
-|View-Only AntiMalware||
-|View-Only AntiSpam|Allows viewing the configuration and reports for the anti-spam features.|
-|View-Only Audit Logs||
-|View-Only Configuration||
-|View-Only Quarantine||
-|View-Only Recipients||
-|View-Only Threat Intelligence||
+|
+||||
+|**Role**|**Description**|**Default role group assignments**|
+|AntiMalware|Allows viewing and modifying the configuration and reports for anti-malware features|Organization Management <br/><br/> Security Administrator|
+|AntiSpam||Organization Management <br/><br/> Security Administrator|
+|Audit Logs||Compliance Management <br/><br/> Organization Management <br/><br/> Security Administrator|
+|Compliance Administrator|Compliance Management <br/><br/> Organization Management <br/><br/> View-Only Organization Management|
+|Data Classification Content Viewer|Content Explorer ContentViewer|
+|Data Classification List Viewer|Content Explorer List Viewer|
+|Distribution Groups|Organization Management <br/><br/> Recipient Management|
+|Information Rights Management|Compliance Management <br/><br/> Organization Management|
+|Mail Recipient Creation|Organization Management <br/><br/> Recipient Management|
+|Mail Recipients|Organization Management <br/><br/> Recipient Management|
+|Message Tracking|Organization Management <br/><br/> Recipient Management <br/><br/> Records Management|
+|Migration|Organization Management <br/><br/> Recipient Management|
+|Organization Client Access|Organization Management|
+|Organization Configuration|Organization Management|
+|Organization Transport Settings|Organization Management|
+|Quarantine|Organization Management <br/><br/> Quarantine Administrator <br/><br/> Security Administrator|
+|Recipient Policies|Organization Management <br/><br/> Recipient Management|
+|Remote and Accepted Domains|Mail Flow Administrator <br/><br/> Organization Management|
+|Reset Password|Help Desk <br/><br/> Organization Management <br/><br/> Recipient Management|
+|Retention Management|Compliance Management <br/><br/> Organization Management <br/><br/> Records Management|
+|Role Management|Organization Management|
+|Security Administrator|Organization Management <br/><br/> Security Administrator <br/><br/> View Only Organization Management|
+|Security Group Creation and Membership|Organization Management|
+|Security Reader|Organization Management <br/><br/> Security Reader <br/><br/> View Only Organization Management|
+|Sensitivity Label Administrator|Organization Management <br/><br/> SecurityAdministrator <br/><br/> View Only Organization Management|
+|Supervision|Organization Management|
+|Transport Hygiene|Hygiene Management <br/><br/> Organization Management|
+|Transport Rules|Organization Management <br/><br/> Records Management|
+|User Options|Help Desk <br/><br/> Organization Management|
+|View-Only AntiMalware||Organization Management <br/><br/> Security Administrator <br/><br/> Security Reader|
+|View-Only AntiSpam|Allows viewing the configuration and reports for the anti-spam features.|Organization Management <br/><br/> Security Administrator <br/><br/> Security Reader|
+|View-Only Audit Logs|ComplianceManagement <br/><br/> Organization Management <br/><br/> Security Administrator|
+|View-Only Configuration|Compliance Management <br/><br/> Hygiene Management <br/><br/> Organization Management <br/><br/> View Only Organization Management|
+|View-Only Quarantine|Organization Management <br/><br/> Security Administrator <br/><br/> Security Reader|
+|View-Only Recipients|Compliance Management <br/><br/> Help Desk <br/><br/> Hygiene Management <br/><br/> Mail Flow Administrator <br/><br/>  Organization Management <br/><br/> View Only Organization Management|
+|View-Only Threat Intelligence||Organization Management <br/><br/> Security Administrator <br/><br/> Security Reader|
 |
 
 ## Microsoft 365 permissions in standalone EOP
