@@ -188,5 +188,6 @@ Click **Next**.
 16. Scroll down and click **Save preferences** to confirm the new integrations.
 
 
-## Next step
-[Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service) 
+## Next steps
+- [Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service)
+- [Generate a test alert](generate-test-alert.md)
