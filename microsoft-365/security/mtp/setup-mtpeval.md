@@ -73,11 +73,9 @@ In this phase, you'll be guided to:
 ![Image of_page](../../media/mtp-eval-10.png) <br> 
 
 3. Fill in your first name, last name, business phone number, company name, company size and Country or region.  
-
+<br>![Image of_page](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >The country or region you set here determines the data center region your Office 365 will be hosted.
-
- <br>![Image of_page](../../media/mtp-eval-11.png) <br>
   
 4. Choose your verification preference: through a text message or call. Click **Send Verification Code**. 
 ![Image of_page](../../media/mtp-eval-12.png) <br>
