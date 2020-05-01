@@ -128,10 +128,64 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 
 ## Configure Microsoft Cloud App Security
-blah
+>[!NOTE]
+>Skip this step if you have already enabled Microsoft Cloud App Security. 
+
+1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
+ 
+2. At the information prompt to integrate Azure ATP, select **Enable Azure ATP data integration**. 
+
+>[!NOTE]
+>If you don’t see this prompt, it might mean that your Azure ATP data integration has already been enabled. However, if you are not sure, contact your IT Administrator to confirm. 
+
+3. Go to **Settings**, turn the **Azure ATP integration** toggle on, then click **Save**. 
+
+>[!NOTE]
+>For new Azure ATP instances, this integration toggle is automatically turned on. Confirm that your Azure ATP integration has been enabled before you proceed to the next step.
+ 
+4. Under the Cloud discovery settings, select **Microsoft Defender ATP integration**, then enable the integration. Click **Save**.
+ 
+5. Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.
+
 
 ## Configure Microsoft Defender Advanced Threat Protection
-blah
+>[!NOTE]
+>Skip this step if you have already enabled Microsoft Defender Advanced Threat Protection.
+
+1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Defender Security Center**. Click **Open**.
+ 
+2. Follow the Microsoft Defender Advanced Threat Protection wizard. Click **Next**. 
+
+3. Choose based on your preferred data storage location, data retention policy, organization size, and opt-in for preview features. 
+>[!NOTE]
+>You cannot change some of the settings, like data storage location, afterwards. 
+Click **Next**. 
+
+4. Click **Continue** and it will provision your Microsoft Defender ATP tenant.
+ 
+5. Onboard your endpoints through Group Policies, Microsoft Endpoint Manager or by running a local script to Microsoft Defender ATP. For simplicity, this guide uses the local script.
+
+6. Click **Download package** and copy the onboarding script to your endpoint(s).  
+
+7. On your endpoint, run the onboarding script as Administrator and choose Y. 
+
+8. Congratulations, you have onboarded your first endpoint.  
+
+9. Copy-paste the detection test from the Microsoft Defender ATP wizard.
+ 
+10. Copy the PowerShell script to an elevated command prompt and run it. 
+
+11. Select **Start using Microsoft Defender ATP** from the Wizard.
+ 
+12. Visit the [Microsoft Defender Security Center](https://securitycenter.windows.com/). Go to **Settings** and then select **Advanced features**. 
+
+13. Turn on the integration with **Azure Advanced Threat Protection**.  
+
+14. Turn on the integration with **Office 365 Threat Intelligence**.
+ 
+15. Turn on integration with **Microsoft Cloud App Security**.
+ 
+16. Scroll down and click **Save preferences** to confirm the new integrations.
 
 
 ## Next step
