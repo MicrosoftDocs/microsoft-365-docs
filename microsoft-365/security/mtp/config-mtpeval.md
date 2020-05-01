@@ -29,18 +29,18 @@ Creating a Microsoft Threat Protection evaluation lab and deploying it is a thre
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
-      <a href= "https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/prepare-deployment"> 
-        <img src="../../media/prepare.png" alt="Prepare to deploy Microsoft Defender ATP" title="Prepare" />
+      <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/production-deployment">
-        <img src="../../media/setup.png" alt="Setup the Microsoft Defender ATP service" title="Setup" />
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Setup" />
       <br/>Phase 2: Set up </a><br>
     </td>
     <td align="center" bgcolor="#d5f5e3">
-      <a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/onboarding">
-        <img src="../../media/onboard.png" alt="Onboard" title="Onboard to the Microsoft Defender ATP service" />
+      <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
+        <img src="../../media/onboard.png" alt="Configure" title="Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 3: Onboard </a><br>
 </td>
 
