@@ -121,5 +121,5 @@ The table below indicates the order Microsoft recommends for configuring the Mic
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Setup & Onboard](../../media/setup.png) <br>[Phase 2: Setup & Onboard](setup-mtpeval.md) | Set up Microsoft Threat Protection lab environment
+|![Phase 2: Setup & Onboard](../../media/setup.png) <br>[Phase 2: Setup & Onboard](setup-mtpeval.md) | Set up your Microsoft Threat Protection lab environment
 
