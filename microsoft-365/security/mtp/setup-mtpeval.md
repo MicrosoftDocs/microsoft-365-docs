@@ -104,15 +104,25 @@ In this phase, you'll be guided to:
 
 ## Enable Microsoft 365 trial subscription
 
-To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the admin center.
+>[!NOTE]
+>Signing up for a trial gives you 25 user licenses to use for a month. See [Try or Buy an M365 subscription](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide#try-or-buy-a-microsoft-365-subscription-1) for details.
 
-1. From the **Partner portal**, click on the **Administer services > Office 365**.
+1. Under the [Microsoft 365 Admin Center](https://admin.microsoft.com/), click **Billing** and then navigate to **Purchase services**.
 
-2. Clicking on the **Partner portal** link will leverage the **Admin on behalf** option and will give you access to the customer admin center.
+2. Select **Microsoft 365 E5** and click **Start free trial**. 
 
-   ![Image of O365 admin portal](images/atp-O365-admin-portal-customer.png)
+3. Choose your verification preference: through a text message or call. Once you have decided, enter the phone number, select **Text me** or **Call me** depending on your selection.
+ 
+4. Enter the verification code and click **Start your free trial**. 
 
+5. Click **Try now** to confirm your Microsoft 365 E5 trial.
+ 
+6. Go to the **Microsoft 365 Admin Center** > **Users** > **Active users**. Select your user account, select **Manage product licenses**, then swap the license from Office 365 E5 to **Microsoft 365 E5**. Click **Save**.
+ 
+7. Select the global administrator account again then click **Manage username**.  
 
+8. [Optional] Change the domain from *onmicrosoft.com* to your own domain—
+depending on what you chose on the previous steps. Click **Save changes**.
 
 
 
