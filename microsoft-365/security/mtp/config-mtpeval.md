@@ -98,7 +98,34 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 12. Integrate Office 365 ATP with Microsoft Defender ATP. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **WDATP Settings** on the upper right corner of the screen. In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.
 
 ## Configure Azure Advanced Threat Protection
-blah
+>[!NOTE]
+>Skip this step if you have already enabled Azure Advanced Threat Protection. 
+
+1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Azure Advanced Threat Protection**.
+
+2. Click **Create** to start the Azure Advanced Threat Protection wizard. 
+
+3. Choose **Provide a username and password to connect to your Active Directory forest**.  
+
+4. Enter your Active Directory on-premises credentials. This can be any user account that has read access to Active Directory.
+ 
+5. Next, choose **Download Sensor Setup** and transfer file to your domain controller. 
+
+6. Execute the Azure ATP Sensor Setup and begin following the wizard.
+ 
+7. Click **Next** at the sensor deployment type.
+ 
+8. Copy the access key as you will need to enter it next in the Wizard.
+ 
+9. Copy the access key into the Wizard and click **Install**. 
+
+10. Congratulations, you have successfully configured Azure Advanced Threat Protection on your domain controller.
+ 
+11. Under the [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select **Windows Defender ATP**, then turn the toggle on. Click **Save**. 
+
+>[!NOTE]
+>Windows Defender ATP has been rebranded as Microsoft Defender ATP. Rebranding changes across all of our portals are being rolled out the for consistency.
+
 
 ## Configure Microsoft Cloud App Security
 blah
