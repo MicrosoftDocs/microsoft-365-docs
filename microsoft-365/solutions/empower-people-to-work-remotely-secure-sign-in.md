@@ -14,7 +14,8 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
+ms.custom: 
+- M365solutions
 description: Require that your remote workers sign in with multi-factor authentication (MFA).
 ---
 

@@ -14,7 +14,8 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom:
+ms.custom: 
+- M365solutions
 description: Enable your users to be productive with Teams, Exchange, SharePoint, and other Microsoft 365 services.
 ---
 
