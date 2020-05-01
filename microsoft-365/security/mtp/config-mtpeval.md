@@ -101,7 +101,7 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 9. Next select the **Anti-malware** policy, select the default, and choose the pencil icon.
 
 10. Click **Settings** and select **Yes and use the default notification text** to enable **Malware Detection Response**. Turn the **Common Attachment Types Filter** on. Click **Save**.
-![Image of_page](../../media/mtp-eval-39.png) <br>
+<br>![Image of_page](../../media/mtp-eval-39.png) <br>
   
 11. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Search** > **Audit log search** and turn Auditing on.  
 ![Image of_page](../../media/mtp-eval-40.png) <br>
