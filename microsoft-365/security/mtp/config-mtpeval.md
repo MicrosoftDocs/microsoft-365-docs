@@ -189,4 +189,4 @@ Click **Next**.
 
 
 ## Next step
-|![Enable Microsoft Threat Protection](_____.md) 
+[Enable Microsoft Threat Protection](_____.md) 
