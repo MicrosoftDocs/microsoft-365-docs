@@ -26,5 +26,5 @@ ms.topic: conceptual
 
 Now that you've completed your Microsoft Threat Protection evaluation lab setup and configuration, you can run a threat attack simulation to experience the detection, alert correlation, and self-healing remediation capabilities of the integrated security solution.  
 
-1. Log on to https://security.microsoft.com
+1. Log on to https://security.microsoft.com.
 2. On the Home page, look for a tile titled **Simulation**.  Review the walkthrough guide for steps to create a test incident in Microsoft Threat Protection.
