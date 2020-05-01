@@ -187,11 +187,11 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 <br>![Image of_page](../../media/mtp-eval-59.png) <br>
 
 3. Choose based on your preferred data storage location, data retention policy, organization size, and opt-in for preview features. 
-<br>
 <br>![Image of_page](../../media/mtp-eval-60.png) <br>
 >[!NOTE]
 >You cannot change some of the settings, like data storage location, afterwards. 
 <br>
+
 Click **Next**. 
 
 4. Click **Continue** and it will provision your Microsoft Defender ATP tenant.
