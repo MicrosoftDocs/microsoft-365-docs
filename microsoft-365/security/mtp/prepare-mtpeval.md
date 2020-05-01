@@ -1,5 +1,5 @@
 ---
-title: Prepare Microsoft Threat Protection evaluation lab setup
+title: Prepare your Microsoft Threat Protection evaluation lab setup
 description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection evaluation lab
 keywords: MTP trial prep, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,10 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Prepare Microsoft Defender ATP deployment
+# Prepare your Microsoft Threat Protection evaluation lab setup
 
 **Applies to:**
-- [Microsoft Defender Advanced Threat Protection (Microsoft Defender ATP)](https://go.microsoft.com/fwlink/p/?linkid=2069559)
-
-
+- Microsoft Threat Protection
 
 
 Deploying Microsoft Defender ATP is a three-phase process:
