@@ -26,15 +26,15 @@ highlightedContent:
     # Card
     - title: Empower remote workers with Microsoft 365
       itemType: whats-new
-      url: empower-people-to-work-remotely
+      url: empower-people-to-work-remotely.md
     # Card
     - title: Set up secure collaboration with Microsoft 365
       itemType: get-started
-      url: setup-secure-collaboration-with-teams
+      url: setup-secure-collaboration-with-teams.md
     # Card
     - title: Deploy threat protection across Microsoft 365
       itemType: get-started
-      url: deploy-threat-protection
+      url: deploy-threat-protection.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -44,31 +44,31 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
       summary: Find complete guidance for a specific business problem or need, from planning to implementation, to adoption.
-      url: foundation-solutions-overview
+      url: foundation-solutions-overview.md
     # Card
     - title: Workload solution and scenario guidance
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/objects-blue.svg
       summary: Add these scenarios onto the foundational solutions to add capabilities to your environment. 
-      url: workload-solutions-scenarios-overview
+      url: workload-solutions-scenarios-overview.md
     # Card
     - title: Solution and architecture illustrations
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/cloud-architecture2.svg
       summary: View or download these illustrations to understand the capabilities and the architecture of Microsoft 365's services.
-      url: productivity-illustrations
+      url: productivity-illustrations.md
     # Card
     - title: Industry-specific guidance
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-blue.svg
       summary: Find guidance specifically crafted for your industry.
-      url: industry-specific-guidance-overview
+      url: industry-specific-guidance-overview.md
     # Card
     - title: Enterprise design principles
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/layout-navigation-blue.svg
       summary: Understand the key principles you need to understand networking, identity, security, and multi-national architectures. 
-      url: design-principles
+      url: design-principles.md
     # Card
     - title: Deployment roadmap and resources
       # imageSrc should be square in ratio with no whitespace
