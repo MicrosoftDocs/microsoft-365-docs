@@ -40,7 +40,7 @@ You must be a **global administrator** or a **security administrator** in Azure 
 
 ## Start using the service
 
->[!NOTE]
+>[!IMPORTANT]
 >Starting May 3, 2020, Microsoft will gradually roll out new, optimized experiences around [licensing requirements](prerequisites.md#licensing-requirements) and turning on Microsoft Threat Protection. For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
 
 Microsoft Threat Protection aggregates data from the various integrated services. It will process and store data centrally to identify new insights and make centralized response workflows possible.
