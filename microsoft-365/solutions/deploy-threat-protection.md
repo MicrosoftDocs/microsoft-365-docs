@@ -87,8 +87,6 @@ Microsoft has tested and recommends a specific set of conditional access and rel
 
 ## Step 2: Configure Azure Advanced Threat Protection
 
-[Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) works with [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) to protect your organization's user accounts and stop detected identity attacks. 
-
 [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) (Azure ATP) is a cloud-based security solution that works with your on-premises [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.
 
 Azure ATP enables security operations (SecOps) analysts and security professionals struggling to detect advanced attacks in hybrid environments to:
