@@ -189,4 +189,4 @@ Click **Next**.
 
 
 ## Next step
-[Enable Microsoft Threat Protection](_____.md) 
+[Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service) 
