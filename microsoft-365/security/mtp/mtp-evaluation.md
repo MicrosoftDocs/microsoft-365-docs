@@ -41,7 +41,7 @@ This guide will help you:
 
 # Deployment phases
 
-There are three phases in creating a Microsoft Threat Protection evaluation lab deployment:
+There are three phases in creating a Microsoft Threat Protection evaluation lab and deploying it:
 
 |Phase | Description | 
 |:-------|:-----|
