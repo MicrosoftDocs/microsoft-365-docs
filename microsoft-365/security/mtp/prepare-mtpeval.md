@@ -35,7 +35,7 @@ Creating a Microsoft Threat Protection evaluation lab and deploying it is a thre
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
         <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Setup your Microsoft Threat Protection evaluation lab" />
-      <br/>Phase 2: Set up </a><br>
+      <br/>Phase 2: Setup </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
