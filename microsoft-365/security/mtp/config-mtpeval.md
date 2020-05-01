@@ -80,7 +80,8 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 >[!NOTE]
 >Edit your Advanced ATP anti-phishing policy. Change **Advanced Phishing Threshold** to **2 - Aggressive**.
- 
+<br>
+
 3. Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain. Click **Next**.
 ![Image of_page](../../media/mtp-eval-34.png) <br>
  
