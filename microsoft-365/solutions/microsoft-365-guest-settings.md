@@ -5,10 +5,13 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
 f1.keywords: NOCSH
 ms.custom: 
+- M365solutions
 localization_priority: Priority
 description: "Learn about the guest sharing settings available in  Microsoft 365."
 ---
