@@ -29,12 +29,12 @@ Configure and manage all the Microsoft Defender ATP capabilities to get the best
 ## In this section 
 Topic | Description 
 :---|:---
-[Configure attack surface reduction capabilities](configure-attack-surface-reduction.md) |  By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
-[Configure next generation protection](../windows-defender-antivirus/configure-windows-defender-antivirus-features.md) | Configure next generation protection to catch all types of emerging threats.
-[Configure Microsoft Threat Experts capabilities](configure-microsoft-threat-experts.md) | Configure and manage how you would like to get cybersecurity threat intelligence from Microsoft Threat Experts.
+[Configure attack surface reduction capabilities](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-attack-surface-reduction) |  By ensuring configuration settings are properly set and exploit mitigation techniques are applied, these set of capabilities resist attacks and exploitations. 
+[Configure next generation protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features) | Configure next generation protection to catch all types of emerging threats.
+[Configure Microsoft Threat Experts capabilities](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-microsoft-threat-experts) | Configure and manage how you would like to get cybersecurity threat intelligence from Microsoft Threat Experts.
 [Configure Microsoft Threat Protection integration](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/threat-protection-integration)| Configure other solutions that integrate with Microsoft Defender ATP.
 [Management and API support](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis)| Pull alerts to your SIEM or use APIs to create custom alerts. Create and build Power BI reports. 
-[Configure Microsoft Defender Security Center settings](preferences-setup.md) |  Configure portal related settings such as general settings, advanced features, enable the preview experience and others.
+[Configure Microsoft Defender Security Center settings](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/preferences-setup) |  Configure portal related settings such as general settings, advanced features, enable the preview experience and others.
 
 
 
