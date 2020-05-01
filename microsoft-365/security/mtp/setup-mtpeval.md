@@ -50,33 +50,59 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
   </tr>
 </table>
 
-You are currently in the set up phase.
+You are currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then setup your evaluation lab.
 
-In this deployment scenario, you'll be guided through the steps on:
-- Licensing validation
-- Tenant configuration
-- Network configuration
-
+The first step is to sign up for an Office 365 or Azure Active Directory subscription. This will generate a *.onmicrosoft.com* tenant that you can then use to sign up for Microsoft 365 E5 license. 
 
 >[!NOTE]
->For the purpose of guiding you through a typical deployment, this scenario will only cover the use of Microsoft Endpoint Configuration Manager. Microsoft Defender ATP supports the use of other onboarding tools but will not cover those scenarios in the deployment guide. For more information, see [Onboard machines to Microsoft Defender ATP](onboard-configure.md).
+>If you already have an existing Office 365 or Azure Active Directory subscription, you can skip the Office 365 E5 trial tenant creation steps.
 
-## Check license state
-
-Checking for the license state and whether it got properly provisioned, can be done through the admin center or through the **Microsoft Azure portal**.
-
-1. To view your licenses go to the **Microsoft Azure portal** and navigate to the [Microsoft Azure portal license section](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
-
-   ![Image of Azure Licensing page](images/atp-licensing-azure-portal.png)
-
-1. Alternately, in the admin center, navigate to **Billing** > **Subscriptions**.
-
-    On the screen you will see all the provisioned licenses and their current **Status**.
-
-    ![Image of billing licenses](images/atp-billing-subscriptions.png)
+In this phase, you'll be guided to:
+- Create an Office 365 E5 trial tenant
+- Enable Microsoft 365 trial subscription
 
 
-## Cloud Service Provider validation
+## Create an Office 365 E5 trial tenant
+>[!NOTE]
+>If you already have an existing Office 365 or Azure Active Directory subscription, you can skip the Office 365 E5 trial tenant creation steps.
+
+1. Go to the [Office 365 E5 product portal](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab) and select **Free trial**.
+
+  
+2.Complete the trial registration by entering your email address (personal or corporate). Click **Set up account**.
+ 
+
+3. Fill in your first name, last name, business phone number, company name, company size and Country or region.  
+
+>[!NOTE]
+>The country or region you set here determines the data center region your Office 365 will be hosted.
+  
+4. Choose your verification preference: through a text message or call. Click **Send Verification Code**. 
+
+5. Set the custom domain name for your tenant, then click **Next**.
+ 
+6. Set up the first identity which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
+ 
+7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning
+
+8. Connect your corporate domain to the Office 365 tenant. [Optional] Choose **Connect a domain you already own** and type in your domain name. Click **Next**.
+ 
+9. You will need to add a TXT or MX record to validate the domain ownership. Once you’ve added the TXT or MX record to your domain, select **Verify**.
+ 
+10. [Optional] Create more user accounts for your tenant. You can skip this step by clicking **Next**.
+ 
+11. [Optional] Download Office apps. Click **Next** to skip this step. 
+
+12. [Optional] Migrate email messages. Again, you can skip this step. 
+ 
+13. Choose online services. Select **Exchange** and click **Next**. 
+
+14. Add MX, CNAME and TXT records to your domain. When completed, select **Verify**.
+ 
+15. Congratulations, you have completed the provisioning of your Office 365 tenant.
+
+
+## Enable Microsoft 365 trial subscription
 
 To gain access into which licenses are provisioned to your company, and to check the state of the licenses, go to the admin center.
 
@@ -88,174 +114,7 @@ To gain access into which licenses are provisioned to your company, and to check
 
 
 
-## Tenant Configuration
 
-When accessing [Microsoft Defender Security Center](https://securitycenter.windows.com/) for the first time there will be a set up wizard that will guide you through some initial steps. At the end of the setup wizard there will be a dedicated cloud instance of Microsoft Defender ATP created. The easiest method is to perform these steps from a Windows 10 client machine.
-
-1. From a web browser, navigate to <https://securitycenter.windows.com>.
-
-    ![Image of Set up your permissions for Microsoft Defender ATP](images/atp-setup-permissions-wdatp-portal.png)
-
-2. If going through a TRIAL license, go to the link (<https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x>)
-
-    Once the authorization step is completed, the **Welcome** screen will be displayed.
-3. Go through the authorization steps.
-
-    ![Image of Welcome screen for portal set up](images/welcome1.png)
-
-4. Set up preferences.
-
-   **Data storage location** - It's important to set this up correctly. Determine where the customer wants to be primarily hosted: US, EU or UK. You cannot change the location after this set up and Microsoft will not transfer the data from the specified geolocation. 
-
-    **Data retention** - The default is 6 months.
-
-    **Enable preview features** - The default is on, can be changed later.
-
-    ![Image of geographic location in set up](images/setup-preferences.png)
-
-5. Select **Next**.
-
-     ![Image of final preference set up](images/setup-preferences2.png)
-
-6. Select **Continue**.
-
-
-## Network configuration
-If the organization does not require the endpoints to use a Proxy to access the
-Internet, skip this section.
-
-The Microsoft Defender ATP sensor requires Microsoft Windows HTTP (WinHTTP) to
-report sensor data and communicate with the Microsoft Defender ATP service. The
-embedded Microsoft Defender ATP sensor runs in the system context using the
-LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP)
-to enable communication with the Microsoft Defender ATP cloud service. The
-WinHTTP configuration setting is independent of the Windows Internet (WinINet)
-internet browsing proxy settings and can only discover a proxy server by using
-the following discovery methods:
-
-**Auto-discovery methods:**
-
--   Transparent proxy
-
--   Web Proxy Auto-discovery Protocol (WPAD)
-
-If a Transparent proxy or WPAD has been implemented in the network topology,
-there is no need for special configuration settings. For more information on
-Microsoft Defender ATP URL exclusions in the proxy, see the
-Appendix section in this document for the URLs Whitelisting or on
-[Microsoft
-Docs](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server).
-
-**Manual static proxy configuration:**
-
--   Registry based configuration
-
--   WinHTTP configured using netsh command <br> Suitable only for desktops in a
-    stable topology (for example: a desktop in a corporate network behind the
-    same proxy)
-
-### Configure the proxy server manually using a registry-based static proxy
-
-Configure a registry-based static proxy to allow only Microsoft Defender ATP
-sensor to report diagnostic data and communicate with Microsoft Defender ATP
-services if a computer is not permitted to connect to the Internet. The static
-proxy is configurable through Group Policy (GP). The group policy can be found
-under:
-
- - Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service
-     - Set it to **Enabled** and select **Disable Authenticated Proxy usage**
-
-1. Open the Group Policy Management Console.
-2. Create a policy or edit an existing policy based off the organizational practices.
-3. Edit the Group Policy and navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
-    ![Image of Group Policy setting](images/atp-gpo-proxy1.png)
-
-4. Select **Enabled**.
-5. Select **Disable Authenticated Proxy usage**.
-   
-6. Navigate to **Administrative Templates \> Windows Components \> Data Collection and Preview Builds \> Configure connected user experiences and telemetry**.
-    ![Image of Group Policy setting](images/atp-gpo-proxy2.png)
-7. Select **Enabled**.
-8. Enter the **Proxy Server Name**.
-
-The policy sets two registry values `TelemetryProxyServer` as REG_SZ and `DisableEnterpriseAuthProxy` as REG_DWORD under the registry key `HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
-
-The registry value `TelemetryProxyServer` takes the following string format:
-
-```text
-<server name or ip>:<port>
-```
-
-For example: 10.0.0.6:8080
-
-The registry value `DisableEnterpriseAuthProxy` should be set to 1.
-
-###  Configure the proxy server manually using netsh command
-
-Use netsh to configure a system-wide static proxy.
-
-> [!NOTE]
-> - This will affect all applications including Windows services which use WinHTTP with default proxy.</br>
-> - Laptops that are changing topology (for example: from office to home) will malfunction with netsh. Use the registry-based static proxy configuration.
-
-1. Open an elevated command-line:
-
-    a. Go to **Start** and type **cmd**.
-
-    b. Right-click **Command prompt** and select **Run as administrator**.
-
-2. Enter the following command and press **Enter**:
-
-   ```PowerShell
-   netsh winhttp set proxy <proxy>:<port>
-   ```
-
-   For example: netsh winhttp set proxy 10.0.0.6:8080
-
-
-###  Proxy Configuration for down-level machines
-
-Down-Level machines include Windows 7 SP1 and Windows 8.1 workstations as well
-as Windows Server 2008 R2, Windows Sever 2012, Windows Server 2012 R2, and
-versions of Windows Server 2016 prior to Windows Server CB 1803. These operating
-systems will have the proxy configured as part of the Microsoft Management Agent
-to handle communication from the endpoint to Azure. Refer to the
-Microsoft Management Agent Fast Deployment Guide for information on how a proxy
-is configured on these machines.
-
-### Proxy Service URLs
-URLs that include v20 in them are only needed if you have Windows 10, version
-1803 or later machines. For example, ```us-v20.events.data.microsoft.com``` is only
-needed if the machine is on Windows 10, version 1803 or later.
-
- Service location | Microsoft.com DNS record
--|-
-Common URLs for all locations | ```crl.microsoft.com```<br> ```ctldl.windowsupdate.com``` <br>```events.data.microsoft.com```<br>```notify.windows.com```<br> ```settings-win.data.microsoft.com```
-European Union | ```eu.vortex-win.data.microsoft.com``` <br> ```eu-v20.events.data.microsoft.com``` <br> ```usseu1northprod.blob.core.windows.net```  <br>```usseu1westprod.blob.core.windows.net``` <br> ```winatp-gw-neu.microsoft.com``` <br> ```winatp-gw-weu.microsoft.com``` <br>```wseu1northprod.blob.core.windows.net``` <br>```wseu1westprod.blob.core.windows.net``` 
-United Kingdom | ```uk.vortex-win.data.microsoft.com``` <br>```uk-v20.events.data.microsoft.com``` <br>```ussuk1southprod.blob.core.windows.net``` <br>```ussuk1westprod.blob.core.windows.net``` <br>```winatp-gw-uks.microsoft.com``` <br>```winatp-gw-ukw.microsoft.com``` <br>```wsuk1southprod.blob.core.windows.net``` <br>```wsuk1westprod.blob.core.windows.net``` 
-United States | ```us.vortex-win.data.microsoft.com``` <br> ```ussus1eastprod.blob.core.windows.net``` <br> ```ussus1westprod.blob.core.windows.net``` <br> ```ussus2eastprod.blob.core.windows.net``` <br> ```ussus2westprod.blob.core.windows.net``` <br> ```ussus3eastprod.blob.core.windows.net``` <br> ```ussus3westprod.blob.core.windows.net``` <br> ```ussus4eastprod.blob.core.windows.net``` <br> ```ussus4westprod.blob.core.windows.net``` <br> ```us-v20.events.data.microsoft.com``` <br> ```winatp-gw-cus.microsoft.com``` <br> ```winatp-gw-eus.microsoft.com``` <br> ```wsus1eastprod.blob.core.windows.net``` <br> ```wsus1westprod.blob.core.windows.net``` <br> ```wsus2eastprod.blob.core.windows.net``` <br> ```wsus2westprod.blob.core.windows.net```
-
-
-If a proxy or firewall is blocking anonymous traffic, as Microsoft Defender ATP sensor is connecting from system context, make sure anonymous traffic is permitted in the previously listed URLs.
-
-###  Microsoft Defender ATP service backend IP range
-
-If you network devices don't support the URLs white-listed in the prior section, you can use the following information.
-
-Microsoft Defender ATP is built on Azure cloud, deployed in the following regions:
-
-- \+\<Region Name="uswestcentral">
-- \+\<Region Name="useast2">
-- \+\<Region Name="useast">
-- \+\<Region Name="europenorth">
-- \+\<Region Name="europewest">
-- \+\<Region Name="uksouth">
-- \+\<Region Name="ukwest">
-
-You can find the Azure IP range on [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
-
-> [!NOTE]
-> As a cloud-based solution, the IP range can change. It's recommended you move to DNS resolving setting.
 
 ## Next step
 |||
