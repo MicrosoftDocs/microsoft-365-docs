@@ -161,13 +161,11 @@ For detailed syntax and parameter information, see [Set-PhishFilterPolicy](https
 
 The configuration options for spoof intelligence are described in [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-Your available options depend on your subscription:
+You can configure spoof intelligence settings in the default anti-phishing policy, and also in custom policies. For instructions based on your subscription, see one of the following topics:
 
-- Standalone EOP organizations without Exchange Online mailboxes can't configure spoof intelligence settings.
+- [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-- Microsoft 365 organizations with Exchange Online mailboxes can configure spoof intelligence settings in the default (and only) anti-phishing policy. For instructions, see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
-
-- Microsoft 365 organizations with ATP can configure spoof intelligence settings in the default ATP anti-phishing policy, and also in custom ATP anti-phishing policies. For instructions, see [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
+- [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md).
 
 ## How do you know these procedures worked?
 

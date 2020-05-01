@@ -380,8 +380,13 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/add-users/index.md",
-      "redirect_url": "add-users",
+      "source_path": "microsoft-365/admin/manage/manage.md",
+      "redirect_url": "index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/email/email.md",
+      "redirect_url": "index",
       "redirect_document_id": true
     },
     {
@@ -395,18 +400,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/email/index.md",
-      "redirect_url": "email",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/admin/get-help-with-domains/index.md",
-      "redirect_url": "get-help-with-domains",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/admin/manage/index.md",
-      "redirect_url": "manage",
+      "redirect_url": "what-is-a-domain",
       "redirect_document_id": true
     },
     {
@@ -415,23 +410,18 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/setup/index.md",
-      "redirect_url": "setup",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/admin/usage-analytics/index.md",
       "redirect_url": "usage-analytics",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/index.md",
-      "redirect_url": "admin-home",
-      "redirect_document_id": true
+      "source_path": "microsoft-365/admin/misc/index.md",
+      "redirect_url": "index",
+      "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/misc/index.md",
-      "redirect_url": "admin-home",
+      "source_path": "microsoft-365/admin/admin-home.md",
+      "redirect_url": "index",
       "redirect_document_id": false
     },
     {
@@ -439,8 +429,8 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data",
       "redirect_document_id": true
     },    {
-      "source_path": "microsoft-365/dns/index.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/get-help-with-domains",
+      "source_path": "microsoft-365/admin/dns/index.md",
+      "redirect_url": "setup/add-domain",
       "redirect_document_id": false
     },
     {
