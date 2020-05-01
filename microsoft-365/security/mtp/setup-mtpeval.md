@@ -72,11 +72,10 @@ In this phase, you'll be guided to:
 2. Complete the trial registration by entering your email address (personal or corporate). Click **Set up account**.
 ![Image of_page](../../media/mtp-eval-10.png) <br> 
 
-3. Fill in your first name, last name, business phone number, company name, company size and Country or region.  
-
+3. Fill in your first name, last name, business phone number, company name, company size and country or region.  
+<br>![Image of_page](../../media/mtp-eval-11.png) <br>
 >[!NOTE]
 >The country or region you set here determines the data center region your Office 365 will be hosted.
- <br>![Image of_page](../../media/mtp-eval-11.png) <br>
   
 4. Choose your verification preference: through a text message or call. Click **Send Verification Code**. 
 ![Image of_page](../../media/mtp-eval-12.png) <br>
@@ -86,7 +85,7 @@ In this phase, you'll be guided to:
  
 6. Set up the first identity which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
 ![Image of_page](../../media/mtp-eval-14.png) <br>
-
+c
 7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning.
 <br>![Image of_page](../../media/mtp-eval-15.png) <br>
 
@@ -112,7 +111,7 @@ In this phase, you'll be guided to:
 <br>![Image of_page](../../media/mtp-eval-22.png) <br>
  
 15. Congratulations, you have completed the provisioning of your Office 365 tenant.
- ![Image of_page](../../media/mtp-eval-23.png) <br>
+<br>![Image of_page](../../media/mtp-eval-23.png) <br>
 
 ## Enable Microsoft 365 trial subscription
 
@@ -122,19 +121,25 @@ In this phase, you'll be guided to:
 1. From [Microsoft 365 Admin Center](https://admin.microsoft.com/), click **Billing** and then navigate to **Purchase services**.
 
 2. Select **Microsoft 365 E5** and click **Start free trial**. 
+![Image of_page](../../media/mtp-eval-24.png) <br>
 
 3. Choose your verification preference: through a text message or call. Once you have decided, enter the phone number, select **Text me** or **Call me** depending on your selection.
+![Image of_page](../../media/mtp-eval-25.png) <br>
  
 4. Enter the verification code and click **Start your free trial**. 
+<br>![Image of_page](../../media/mtp-eval-26.png) <br>
 
 5. Click **Try now** to confirm your Microsoft 365 E5 trial.
+<br>![Image of_page](../../media/mtp-eval-27.png) <br>
  
 6. Go to the **Microsoft 365 Admin Center** > **Users** > **Active users**. Select your user account, select **Manage product licenses**, then swap the license from Office 365 E5 to **Microsoft 365 E5**. Click **Save**.
+![Image of_page](../../media/mtp-eval-28.png) <br>
  
-7. Select the global administrator account again then click **Manage username**.  
+7. Select the global administrator account again then click **Manage username**.
+<br>![Image of_page](../../media/mtp-eval-29.png) <br>
 
-8. [Optional] Change the domain from *onmicrosoft.com* to your own domain—
-depending on what you chose on the previous steps. Click **Save changes**.
+8. [Optional] Change the domain from *onmicrosoft.com* to your own domain—depending on what you chose on the previous steps. Click **Save changes**.
+<br>![Image of_page](../../media/mtp-eval-30.png) <br>
 
 
 

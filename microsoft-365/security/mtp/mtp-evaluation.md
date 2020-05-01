@@ -33,7 +33,7 @@ This guide will help you:
 - Configure Active Directory with users and groups
 - Set up and configure Azure ATP, Office ATP, Microsoft Defender ATP, and Microsoft Cloud App Security
 - Setup local policies for your server and computers
-- Mimic a threat simulation to generate a test incident or alert in Microsoft Threat Protection
+- Mimic a threat attack to generate a test incident or alert in Microsoft Threat Protection
 
 >[!IMPORTANT]
 >For optimum results, follow the lab setup instructions as closely as possible.
