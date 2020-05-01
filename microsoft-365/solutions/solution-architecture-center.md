@@ -19,7 +19,7 @@ f1.keywords: NOCSH
 
 This solution and architecture center brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant modern collaboration. In this center, you'll find:
 
-![blocks](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[Foundational solution guidance](foundation-solutions-overview)**  These solutions provide a complete guidance for a specific business problem or need. They guide you through concepts and features and help you make the choices that lead to a functioning end result, from planning to implementation, to adoption. 
+![blocks](https://docs.microsoft.com/office/media/icons/blocks-blue.png) **[Foundational solution guidance](foundation-solutions-overview.md)**  These solutions provide a complete guidance for a specific business problem or need. They guide you through concepts and features and help you make the choices that lead to a functioning end result, from planning to implementation, to adoption. 
 
 - [Empower remote workers with Microsoft 365](empower-people-to-work-remotely.md)
 - [Set up secure collaboration with Microsoft 365](setup-secure-collaboration-with-teams.md)
