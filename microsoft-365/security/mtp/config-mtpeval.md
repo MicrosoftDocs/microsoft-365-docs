@@ -157,21 +157,23 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 >Skip this step if you have already enabled Microsoft Cloud App Security. 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
- 
-2. At the information prompt to integrate Azure ATP, select **Enable Azure ATP data integration**. 
+![Image of_page](../../media/mtp-eval-53.png) <br>
 
+2. At the information prompt to integrate Azure ATP, select **Enable Azure ATP data integration**. 
+![Image of_page](../../media5mtp-eval-54.png) <br>
 >[!NOTE]
 >If you don’t see this prompt, it might mean that your Azure ATP data integration has already been enabled. However, if you are not sure, contact your IT Administrator to confirm. 
 
 3. Go to **Settings**, turn the **Azure ATP integration** toggle on, then click **Save**. 
-
+![Image of_page](../../media/mtp-eval-55.png) <br>
 >[!NOTE]
 >For new Azure ATP instances, this integration toggle is automatically turned on. Confirm that your Azure ATP integration has been enabled before you proceed to the next step.
  
 4. Under the Cloud discovery settings, select **Microsoft Defender ATP integration**, then enable the integration. Click **Save**.
- 
-5. Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.
+![Image of_page](../../media/mtp-eval-56.png) <br>
 
+5. Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.
+![Image of_page](../../media/mtp-eval-57.png) <br>
 
 ## Configure Microsoft Defender Advanced Threat Protection
 >[!NOTE]
