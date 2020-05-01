@@ -12,6 +12,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
+- M365solutions
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
 

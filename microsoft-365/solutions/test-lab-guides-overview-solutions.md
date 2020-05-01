@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-ms.custom: Ent_Architecture
+ms.custom: 
+- Ent_Architecture
+- M365solutions
 description: "Use Test Lab Guides to build out Microsoft 365 solutions and scenarios in a dev/test environment."
 ---
 
