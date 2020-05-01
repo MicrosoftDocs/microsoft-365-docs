@@ -1,5 +1,5 @@
 ---
-title: Prepare your Microsoft Threat Protection evaluation lab setup
+title: Prepare your Microsoft Threat Protection evaluation lab
 description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection evaluation lab
 keywords: MTP trial prep, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Prepare your Microsoft Threat Protection evaluation lab setup
+# Prepare your Microsoft Threat Protection evaluation lab
 
 **Applies to:**
 - Microsoft Threat Protection
