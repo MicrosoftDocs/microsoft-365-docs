@@ -29,7 +29,7 @@ This solution and architecture center brings together the technical guidance you
 
 ![Cloud and ruler symbols](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) **[Solution and architecture illustrations](productivity-illustrations.md)**  View or download these illustrations to understand Microsoft 365's capabilities and the architecture of Microsoft 365's cloud services.
 
-![Best practices ribbon](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[Industry-specific guidance](industry-specific-guidance-overview.md)**  Find best practices for your industry - finance, healthcare, and education.
+![Best practices ribbon](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[Industry-specific guidance](industry-specific-guidance-overview.md)**  Find best practices for your industry — finance, healthcare, and education.
 
 ![Layout/navigation symbol](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **[Design principles](design-principles.md)**  Understand the key principles you need to understand networking, identity, security, and multi-national architectures.
 
