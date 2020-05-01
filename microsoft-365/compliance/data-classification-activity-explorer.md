@@ -34,16 +34,25 @@ You can filter the data by:
 - retention label
 
 
-You can view the data either as a list or a bar graph.
-
 ## Prerequisites
 
-Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:
+Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - Advanced Compliance (E5) add-on
 - Advanced Threat Intelligence (E5) add-on
+
+### Permissions
+
+ In order to get access to the activity explorer tab, an account must be assigned membership in any one of these roles or role groups.
+
+**Microsoft 365 role groups**
+
+- Global administrator
+- Compliance administrator
+- Security administrator
+- Compliance data administrator
 
 ## Activity type
 

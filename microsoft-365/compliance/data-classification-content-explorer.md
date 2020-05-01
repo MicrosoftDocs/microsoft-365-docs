@@ -26,7 +26,7 @@ The data classification content explorer allows you to natively view the items t
 
 ## Prerequisites
 
-Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:
+Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
@@ -35,9 +35,8 @@ Every account that accesses and uses activity explorer must have a license assig
 
 ### Permissions
 
-#### Access to the data classification page
+In order to get access to the content explorer tab, an account must be assigned membership in any one of these roles or role groups. 
 
- In order to get access to the content explorer tab, an account must be assigned membership in any one of these roles or role groups.
 
 **Microsoft 365 role groups**
 
@@ -46,10 +45,14 @@ Every account that accesses and uses activity explorer must have a license assig
 - Security administrator
 - Compliance data administrator
 
+> [!IMPORTANT]
+> Membership in these role groups does not allow you to view the list of items in content explorer or to view the contents of the items in content explorer.
 
-Access to content explorer is highly restricted because it lets you read the contents of scanned files.There are two roles that grant access to content explorer:
+### Required permissions to access items in content explorer
 
-- **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location. The `data classification list viewer` role has been pre-assigned to this role group.
+Access to content explorer is highly restricted because it lets you read the contents of scanned files. There are two roles that grant access to content explorer:
+
+- **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location in list view. The `data classification list viewer` role has been pre-assigned to this role group.
 
 - **Content Explorer Content viewer**: Membership in this role group allows you to view the contents of each item in the list. The `data classification content viewer` role has been pre-assigned to this role group.
 
