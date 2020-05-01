@@ -34,12 +34,12 @@ Creating a Microsoft Threat Protection evaluation lab and deploying it is a thre
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Setup the Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Setup your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 2: Set up </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/onboard.png" alt="Configure each Microsoft Threat Protection pillar" title="Configure each Microsoft Threat Protection pillar" />
+        <img src="../../media/onboard.png" alt="Configure each Microsoft Threat Protection pillar" title="Configure each Microsoft Threat Protection pillar and onboard your endpoints" />
       <br/>Phase 3: Configure & Onboard</a><br>
 </td>
   </tr>
