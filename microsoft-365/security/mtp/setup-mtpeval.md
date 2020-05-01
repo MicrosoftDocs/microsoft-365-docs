@@ -76,7 +76,7 @@ In this phase, you'll be guided to:
 
 >[!NOTE]
 >The country or region you set here determines the data center region your Office 365 will be hosted.
-![Image of_page](../../media/mtp-eval-11.png) <br>
+<br>![Image of_page](../../media/mtp-eval-11.png) <br>
   
 4. Choose your verification preference: through a text message or call. Click **Send Verification Code**. 
 ![Image of_page](../../media/mtp-eval-12.png) <br>
