@@ -5,8 +5,12 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+ms.custom: 
+- M365solutions
 localization_priority: Priority
 f1.keywords: NOCSH
 description: "Learn how to limit accidental exposure of information when sharing files with people outside your organization."
@@ -14,7 +18,7 @@ description: "Learn how to limit accidental exposure of information when sharing
 
 # Limit accidental exposure to files when sharing with people outside your organization
 
-When sharing files and folders with people outside your organization, there are a variety of options to reduce the chances of accidentally sharing confidential information. You can choose from the options in this article to best meet the needs of your organization.
+When sharing files and folders with people outside your organization, there are a variety of options to reduce the chances of accidentally sharing sensitive information. You can choose from the options in this article to best meet the needs of your organization.
 
 ## Use best practices for Anyone links
 

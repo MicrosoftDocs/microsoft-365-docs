@@ -5,13 +5,16 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
 search.appverid:
 - SPO160
 - MET150
 f1.keywords: NOCSH
 ms.custom: 
+- M365solutions
 localization_priority: Priority
 description: "Learn about the options to limit or disable sharing in Microsoft 365."
 ---
