@@ -40,7 +40,7 @@ Creating a Microsoft Threat Protection evaluation lab and deploying it is a thre
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
         <img src="../../media/onboard.png" alt="Configure each Microsoft Threat Protection pillar" title="Configure each Microsoft Threat Protection pillar" />
-      <br/>Phase 3: Onboard</a><br>
+      <br/>Phase 3: Configure & Onboard</a><br>
 </td>
   </tr>
   <tr>
@@ -131,5 +131,5 @@ The table below indicates the order Microsoft recommends for configuring the Mic
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Setup & Onboard](../../media/setup.png) <br>[Phase 2: Setup & Onboard](setup-mtpeval.md) | Set up your Microsoft Threat Protection lab environment
+|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md) | Set up your Microsoft Threat Protection lab environment
 
