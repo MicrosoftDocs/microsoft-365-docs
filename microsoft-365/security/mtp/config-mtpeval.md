@@ -1,7 +1,7 @@
 ---
 title: Configure Microsoft Threat Protection pillars for the evaluation lab
-description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when deploying Microsoft Defender ATP
-keywords: deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
+description: Configure Microsoft Threat Protection pillars, Office 365 ATP, Azure ATP, Microsoft Cloud App Security, and Microsoft Defender ATP for your evaluation lab
+keywords: configure Microsoft Threat Protection trial, Microsoft Threat Protection trial configuration, configure Microsoft Threat Protection  pillars, Microsoft Threat Protection pillars 
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: w10
