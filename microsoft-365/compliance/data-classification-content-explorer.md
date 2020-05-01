@@ -35,9 +35,19 @@ Every account that accesses and uses activity explorer must have a license assig
 
 ### Permissions
 
-<!-- table from Bhavy -->
+#### Access to the data classification page
 
-Access to content explorer is highly restricted because it lets you read the contents of scanned files. There are two roles that grant access to content explorer:
+ In order to get access to the content explorer tab, an account must be assigned membership in any one of these roles or role groups.
+
+**Microsoft 365 role groups**
+
+- Global administrator
+- Compliance administrator
+- Security administrator
+- Compliance data administrator
+
+
+Access to content explorer is highly restricted because it lets you read the contents of scanned files.There are two roles that grant access to content explorer:
 
 - **Content Explorer List viewer**: Membership in this role group allows you to see each item and its location. The `data classification list viewer` role has been pre-assigned to this role group.
 
@@ -75,16 +85,34 @@ A [retention label](labels.md) allows you to define how long a labeled item is k
 4. Select a location under **All locations** and drill down the folder structure to the item.
 5. Double-click to open the item natively in content explorer.
 
-### Search and Export
+### Export
 The **export** control will create a .csv file that contains a listing of whatever is showing in the **All locations** pane.
 
 ![data classification export control](../media/data_classification_export_control.png)
+
+
+### Search
 
 When you drill down into a location, such as an Exchange folder, or a SharePoint or OneDrive site, the **search** tool appears.
 
 ![content explorer search tool](../media/data_classification_search_tool.png)
 
-The scope of the search tool is what is displaying in the **All locations** pane. You can use this tool to search on the names of folders and files. 
+
+The scope of the search tool is what is displaying in the **All locations** pane and what you can search on varies depending on the selected location. 
+
+When **Exchange** is the selected location, you can search on the full email address of the mailbox, for example `user@domainname.com`.
+
+When either **SharePoint** or **OneDrive** are selected location, the search tool will appear when you drill down to site names, folders and files. You can search on:
+
+
+|value|example  |
+|---------|---------|
+|full site name    |`https://contoso.onmicrosoft.com/sites/sitename`    |
+|root folder name - gets all subfolders    | `/sites`        |
+|file name    |    `RES_Resume_1234.txt`     |
+|text at the beginning| `RES`|
+|text after an underscore character ( _ )|`Resume` or `1234`| 
+|file extension|`txt`|
 
 
 ## See also

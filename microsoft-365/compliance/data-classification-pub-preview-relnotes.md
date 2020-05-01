@@ -18,7 +18,7 @@ description: "Release notes for data classification."
 
 # Data classification release notes
 
-Please review these release notes so that you have the best experience with dat classification.
+Please review these release notes so that you have the best experience with data classification.
 
 ## Exchange mailbox count
 
