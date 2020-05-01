@@ -47,7 +47,7 @@ There are three phases in creating a Microsoft Threat Protection evaluation lab 
 |:-------|:-----|
 | ![Phase 1: Prepare](../../media/prepare.png)<br>[Phase 1: Prepare](prepare-mtpeval.md)| Learn what you need to consider when deploying Microsoft Threat Protection in a trial or evaluation lab environment: <br><br>- Stakeholders and sign-off <br> - Environment considerations <br>- Access <br>- Azure Active Directory setup <br> - Configuration order
 |  ![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md)|  Take the initial steps to access Microsoft 365 Security Center to setup your Microsoft Threat Protection evaluation lab. You will be guided to:<br><br>- Sign up for Microsoft 365 E5 Trial <br>  - Configure domain<br>- Assign Microsoft 365 E5 licenses<br>- Complete the setup wizard in the portal|
-|  ![Phase 3: Configure & Onboard](../../media/onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar and onboard endpoints. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
+|  ![Phase 3: Configure & Onboard](../../media/config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar and onboard endpoints. You will be guided to:<br><br>- Configure Office 365 Advanced Threat Protection<br>- Configure Microsoft Cloud App Security<br>- Configure Azure Advanced Threat Protection<br>- Configure Microsoft Defender Advanced Threat Protection 
 
 
 ## In scope
