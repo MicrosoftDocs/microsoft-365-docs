@@ -141,7 +141,11 @@ Improvement actions have a "completed" status once all possible points for the i
 
 ### Assess information, review user impact, and implement the improvement action
 
-The **At a glance** section 
+The **At a glance** section will tell you the category, attacks it can protect against, and the product.
+
+The **User impact** shows what the users will experience if the improvement action is enacted, and **Users affected​** shows who will experience it.
+
+The **Implementation** section shows any prerequisites you must have before completing the action, step by step next steps to complete the improvement action, the current implementation status of the improvement action, and any learn more links.
 
 ### Prerequisites
 
