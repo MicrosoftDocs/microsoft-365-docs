@@ -40,9 +40,7 @@ Standalone EOP customers can access the EAC by using the following methods:
 
   3. On the **All admin centers** page that appears, click **Exchange Online Protection**.
 
-- Go to `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, <https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com>.
-
-- Go to <https://outlook.office365.com/ecp>.
+- Go directly to `https://admin.protection.outlook.com/ecp/`.
 
 ## Common user interface elements in the EAC in EOP
 
