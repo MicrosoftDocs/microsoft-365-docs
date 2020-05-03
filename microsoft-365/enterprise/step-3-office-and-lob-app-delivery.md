@@ -58,7 +58,7 @@ Another popular method of app delivery is PC imaging. In this case, applications
 
 If you do want to include Microsoft 365 Apps for enterprise in your image, remember that this uses a user-based activation; it cannot be pre-activated by the system admin. Use the Office Deployment Tool to pre-install Office on the device you are imaging and skip the user sign-in. Once the image is deployed end users can sign-in using their credentials and activate Microsoft 365 Apps for enterprise.
 
-[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
 [Deploy Microsoft 365 Apps for enterprise as part of an operating system image](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
@@ -80,7 +80,7 @@ If you use Configuration Manager, you can still use it for broad deployment of M
 
 [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Manage Microsoft 365 Apps for enterprise with Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Manage Microsoft 365 Apps for enterprise with Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 

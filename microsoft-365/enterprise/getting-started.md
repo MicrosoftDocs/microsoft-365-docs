@@ -62,7 +62,7 @@ Let’s start by taking a look at what has changed and improved since your last 
 
 **Cloud-based device Management:** Services like Microsoft Intune help you manage your Windows 10 devices as you do other mobile devices, all from one place. What makes Microsoft Intune unique is the ability to co-manage your Windows 10 devices with Microsoft Endpoint Configuration Manager. You can use Configuration Manager to help you in your shift to Windows 10, and then add Microsoft Intune. Working together, Microsoft Endpoint Configuration Manager becomes the intelligent edge within your organization, connected to the Microsoft intelligent cloud. This allows you to manage your users’ devices securely wherever they are, whether connected on your organization’s infrastructure or in the public cloud.
 
-[Co-management for Windows 10 devices](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Co-management for Windows 10 devices](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **Cloud-based Deployment Service:** As you acquire new PCs we’ve introduced a new cloud service to help you deploy Microsoft 365 devices called the Windows Autopilot deployment service. Autopilot is integrated with your hardware providers and new PCs are automatically registered in Autopilot enabling the new PC to be shipped directly to the end-user. When the PC is powered on the first time it is quickly configured to your organizations desired configuration and customized for the specific needs of the user.
 
@@ -104,7 +104,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 **[Step 6: OS Deployment and Feature Updates](https://aka.ms/mdd6)** With everything prepared, the next step is to deploy the OS images. A lot of the heavy lifting for can be done using System Center Configuration Manage task sequences and infrastructure. The recommended approach is to deploy in phases, first targeting and deploying to an “early adopter group” in your organization using a representative set of hardware and apps. You can then use the data from those devices and users to gradually target more and more PCs.
 
-[Introduction to operating system deployment in Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Introduction to operating system deployment in Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Step 7: Windows and Office as a Service](https://aka.ms/mdd7)** This represents a major shift in the way you maintain users’ desktop real-estate. With this move to Windows 10 and Microsoft 365 Apps for enterprise you can move to managing Windows and Office as a service. In place of a massive shift in technology every few years, you will continually be bringing new capabilities, experiences, and protections to your user. Semi-annual feature updates deliver new capabilities in the Fall and Spring of each year, while monthly cumulative Quality Updates will contain security, reliability, and bug fixes. While you can opt to deploy the Office 2019 client, we strongly recommend you to move to Microsoft 365 Apps for enterprise. This follows a similar service plan to Windows so your users get updates to the Office apps on a regular basis too.
 
