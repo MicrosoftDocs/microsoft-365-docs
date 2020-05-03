@@ -99,7 +99,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 ### Windows and Office as a Service
   - Manage Windows Updates using Group Policy
   - Servicing Windows 10 with Configuration Manager and Intune
-  - Servicing Office 365 ProPlus with Configuration Manager
+  - Servicing Microsoft 365 Apps for enterprise with Configuration Manager
 
 ### NEW! Windows Virtual Desktop
   - Windows Virtual Desktop: Prepare, Deploy, Optimize 

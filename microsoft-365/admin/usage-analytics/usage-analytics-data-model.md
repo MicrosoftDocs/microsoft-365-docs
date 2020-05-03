@@ -45,7 +45,7 @@ This API provides information about the monthly trend of usage of the various Mi
 |Tenant SharePoint Online Usage  <br/> |Contains data about the SharePoint sites, covering Team or Groups sites such as total number of sites, number of documents on site, file count by activity type and storage used.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant OneDrive for Business Usage  <br/> |Contains data about the OneDrive accounts such as number of accounts, number of documents across OneDrives, storage used, file count by activity type.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant Microsoft 365 Groups Usage  <br/> |Contains data about Microsoft 365 Groups usage including Mailbox, SharePoint, and Yammer.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant Office Activation  <br/> |Contains data about number of Office subscription activations, count of activation per device (Android/iOS/Mac/PC), activations by service plan, for example, Office Proplus, Visio, Project.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Office Activation  <br/> |Contains data about number of Office subscription activations, count of activation per device (Android/iOS/Mac/PC), activations by service plan, for example, Microsoft 365 Apps for enterprise, Visio, Project.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
 |User State  <br/> |Contains metadata about users, including user display name, products assigned, location, department, title, company. This data is about users who were assigned a licenses during the last complete month . Every user is uniquely represented by a user id.  <br/> |This data is about users that had a license assigned during the last complete month.  <br/> |
 |User Activity  <br/> |Contains per-user level information about activity performed by licensed users.  <br/> See [active user definition](active-user-in-usage-reports.md) for information about the activities within a product that are returned in this data table.  <br/> |This data is about users that performed an activity in any of the services during the last complete month.  <br/> |
    
@@ -272,7 +272,7 @@ This table provides data about how Microsoft 365 Groups is used across the organ
    
 ### Data table - Tenant Office Activation
 
-The table provides data about the number of Office subscription activations across the service plans, for example, Office Proplus, Visio, Project. It also provides data about number of activations per device (Android/iOS/Mac/PC).
+The table provides data about the number of Office subscription activations across the service plans, for example, Microsoft 365 Apps for enterprises, Visio, Project. It also provides data about number of activations per device (Android/iOS/Mac/PC).
   
 |**Column name**|**Column description**|
 |:-----|:-----|
