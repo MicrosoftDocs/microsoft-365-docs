@@ -119,7 +119,7 @@ For more information, see the article for this poster: [Microsoft Telephony Solu
 <a name="msd"></a>
 ### Deploy a modern and secure desktop with Microsoft
 
-What IT architects need to know about deploying and managing updates for Microsoft 365 Apps for enterprise on Windows 10.
+What IT architects need to know about deploying and managing updates for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on Windows 10.
   
 
 |**Item**|**Description**|
