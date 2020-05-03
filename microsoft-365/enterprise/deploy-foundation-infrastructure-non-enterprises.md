@@ -210,7 +210,7 @@ The new and highlighted Windows 10 Enterprise elements include:
 
 ## Phase 4: Microsoft 365 Apps for enterprise
 
-Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Microsoft 365 Apps for enterprise is installed directly on your client devices. However, Microsoft 365 Apps for enterprise receives updates that include new features on a regular basis. See [About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
+Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Microsoft 365 Apps for enterprise is installed directly on your client devices. However, Microsoft 365 Apps for enterprise receives updates that include new features on a regular basis. See [About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps) for more information.
 
 For your non-enterprise organization, you manually install Microsoft 365 Apps for enterprise on devices, which can include Windows, iOS, and Android devices. This can be done as part of preparing a new device for use, or by the user as part of their onboarding process.
 

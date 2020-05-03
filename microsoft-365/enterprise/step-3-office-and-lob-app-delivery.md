@@ -60,7 +60,7 @@ If you do want to include Microsoft 365 Apps for enterprise in your image, remem
 
 [Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Deploy Microsoft 365 Apps for enterprise as part of an operating system image](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Deploy Microsoft 365 Apps for enterprise as part of an operating system image](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## Office Click-to-Run 
 
@@ -76,7 +76,7 @@ If you use Configuration Manager, you can still use it for broad deployment of M
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Deployment Guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Deployment Guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
 [Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 

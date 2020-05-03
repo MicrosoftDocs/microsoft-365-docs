@@ -98,7 +98,7 @@ Microsoft 365 offers four servicing channels:
 For detailed information about Windows and Office servicing channels please review the below documentation:
 
 - [Overview of Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Overview of Update Channels for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Overview of Update Channels for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## Phased Deployment of Updates
 
@@ -136,7 +136,7 @@ As for tooling, you can use policy settings with Windows Update for Business, so
 
 [Windows Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Semi-Annual Channel for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Semi-Annual Channel for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### Upgrade Task Sequences
 

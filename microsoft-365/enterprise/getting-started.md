@@ -48,7 +48,7 @@ One of the key tenants of modern management practices is devices that are always
 
 [Windows 10 for the IT Pro](https://www.microsoft.com/itpro/windows-10)
 
-[About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## What has Changed
 
@@ -72,7 +72,7 @@ Let’s start by taking a look at what has changed and improved since your last 
 
 Click-to-Run is quite different from the MSI-based packages of the past. Click-to-Run is faster, lighter, and supports updates in the background to keep your users to be up and running. It is still a local copy of Office and you can continue to use your existing deployment tools, like Microsoft Endpoint Configuration Manager, to provision and configure the apps.
 
-[Deployment guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Deployment guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Semi-Annual Updates:** Once you have moved to Windows 10 and Microsoft 365 Apps for enterprise, updates are delivered semi-annually with new features. But with Microsoft able to deliver insights from the cloud to help, you can quickly and confidently roll out these updates to hundreds or thousands of devices. Like an in-place upgrade, the Feature Update preserves apps, data, and configurations from the previous release.
 
@@ -111,7 +111,7 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Overview of Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Overview of Office as a service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Overview of Office as a service](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[Step 8: User Communications and Training](https://aka.ms/mdd8)** This last step is critical to driving usage of new capabilities for enhancing teamwork, communications, security, and more. Before broad deployment is targeted to users outside early adopter rings, we recommend you roll out user communication and training. This will help drive desired changes in how people use new capabilities in Office, Windows, or other line of business apps and services. To assist, we provide free online training via Microsoft FastTrack. Plus, we’ve published free sample communication plans and timelines together with email, social, and intranet templates to help with your rollout of Windows 10. As a Microsoft 365 or organization, your organization may also be eligible for and direct support.
 

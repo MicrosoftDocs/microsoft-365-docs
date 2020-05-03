@@ -59,7 +59,7 @@ How update deployment works:
 <tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Follows Office's Monthly Channel
 </table>
 
-For more information about the Monthly Channel for Microsoft 365 Apps for enterprise, see [Overview of update channels for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
+For more information about the Monthly Channel for Microsoft 365 Apps for enterprise, see [Overview of update channels for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment groups on an ad hoc basis.

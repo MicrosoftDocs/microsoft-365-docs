@@ -120,7 +120,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Deployment guide for Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Deployment guide for Microsoft 365 Apps for enterprise</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 
