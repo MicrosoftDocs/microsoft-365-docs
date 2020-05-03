@@ -30,7 +30,7 @@ By using the Microsoft Threat Protection you consent to the following terms:
 
 *The Microsoft Threat Protection (MTP) service transfers certain Customer Data from other Microsoft enterprise online
 services into MTP and from MTP back to those Microsoft enterprise online services. These data transfers are governed by the
-Online Services Terms and further described in the [Microsoft Trust Center](https://www.microsoft.com/trust-center).*
+[Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2127420) and further described in the [Microsoft Trust Center](https://go.microsoft.com/fwlink/?linkid=2127550).*
 
 For more information on the data storage and privacy information of the specific products see:
 - [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

@@ -31,7 +31,7 @@ Learn about the licensing, hardware and software requirements, and other configu
 ## Licensing requirements
 
 >[!IMPORTANT]
->Starting May 1, 2020, Microsoft will gradually roll out new, optimized experiences around licensing requirements and [turning on Microsoft Threat Protection](mtp-enable.md). For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
+>Starting May 3, 2020, Microsoft will gradually roll out new, optimized experiences around licensing requirements and [turning on Microsoft Threat Protection](mtp-enable.md). For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
 
 To use Microsoft Threat Protection, you need either a single license or a combination of licenses. These licenses or license combinations give you access to Microsoft Threat Protection features without additional cost.
 
