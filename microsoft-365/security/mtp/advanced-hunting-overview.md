@@ -45,6 +45,9 @@ We recommend going through several steps to quickly get up and running with adva
 | **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | - [Query best practices](advanced-hunting-shared-queries.md) <br>- [Hunt across devices and emails](advanced-hunting-best-practices.md) |
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | - [Custom detections overview](custom-detections-overview.md)<br>- [Custom detection rules](custom-detection-rules.md) |
 
+> [!NOTE]
+> You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
+
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
 - **Autosuggest** — as you write queries, advanced hunting provides suggestions from IntelliSense. 
