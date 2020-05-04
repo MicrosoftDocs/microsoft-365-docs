@@ -98,7 +98,7 @@ Microsoft 365 offers four servicing channels:
 For detailed information about Windows and Office servicing channels please review the below documentation:
 
 - [Overview of Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Overview of Update Channels for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
+- [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## Phased Deployment of Updates
 

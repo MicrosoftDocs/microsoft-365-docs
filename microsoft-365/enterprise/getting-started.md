@@ -48,7 +48,7 @@ One of the key tenants of modern management practices is devices that are always
 
 [Windows 10 for the IT Pro](https://www.microsoft.com/itpro/windows-10)
 
-[About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
+[About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## What has Changed
 
