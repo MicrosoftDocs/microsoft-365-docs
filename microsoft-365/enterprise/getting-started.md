@@ -72,7 +72,7 @@ Let’s start by taking a look at what has changed and improved since your last 
 
 Click-to-Run is quite different from the MSI-based packages of the past. Click-to-Run is faster, lighter, and supports updates in the background to keep your users to be up and running. It is still a local copy of Office and you can continue to use your existing deployment tools, like Microsoft Endpoint Configuration Manager, to provision and configure the apps.
 
-[Deployment guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
+[Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Semi-Annual Updates:** Once you have moved to Windows 10 and Microsoft 365 Apps for enterprise, updates are delivered semi-annually with new features. But with Microsoft able to deliver insights from the cloud to help, you can quickly and confidently roll out these updates to hundreds or thousands of devices. Like an in-place upgrade, the Feature Update preserves apps, data, and configurations from the previous release.
 

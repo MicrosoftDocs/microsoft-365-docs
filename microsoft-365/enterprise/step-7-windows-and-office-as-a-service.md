@@ -136,7 +136,7 @@ As for tooling, you can use policy settings with Windows Update for Business, so
 
 [Windows Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Semi-Annual Channel for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
+[Semi-Annual Channel for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### Upgrade Task Sequences
 
