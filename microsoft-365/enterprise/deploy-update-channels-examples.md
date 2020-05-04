@@ -20,11 +20,29 @@ description: How example organizations deploy and update using channels.
 
 # Deployment and update channel example configurations
 
-Intro text
+Choosing which update channels to use for Office, Windows, or Edge can depend on your type of organization and where on the development cycle you want to be deploying and using new features and capabilities.
 
-## Next step
+Here are the latest channel names.
 
-See the [rapid deployment example for a multi-national organization](deploy-update-channels-examples-rapid-deploy.md).
+| New channel name | Previous channel name |
+|:-------|:-----|
+| Semi-Annual Enterprise Channel | Semi-Annual Channel |
+| Semi-Annual Enterprise Channel (Preview) | Semi-Annual Channel (Targeted) |
+| Monthly Enterprise Channel | N/A |
+| Current Channel | Monthly Channel |
+| Current Channel (Preview) | Monthly Channel (Targeted) |
+| Beta | Insider |
+|||
+
+
+See if your organization matches one of these customer types, then follow the link to the example for more details.
+
+| Customer type | Description | Products and their channels |
+|:-------|:-----|:-------|
+| Early adopter or insider <br> <br> See the insider deployment example.  | These organizations are eager to try out new capabilities early in the release cycle and report their early adoption feedback to Microsoft. | **Office:** <br> - Beta <br> - Current Channel (Preview) <br><br> **Windows:** <br>- Dev <br> - Beta <br><br> **Edge:** <br>- Dev <br> - Beta |
+| Consumer fans, small and medium businesses, and some enterprises who want rapid deployment of the newest supported features <br> <br> See the [rapid deployment example](deploy-update-channels-examples-rapid-deploy.md). | These organizations want the latest supported changes and to take advantage of the  new capabilities for their users and to report their feedback to Microsoft. | **Office:** <br> -Current Channel <br><br> **Windows:** N/A <br><br> **Edge:** <br>- Stable |
+| Enterprises who need a stable and predictable cadence to their updates <br><br> See the broad deployment example.  | These organizations want to ensure that the changes they roll out to customers are fully supported and whose deployment will have minimaly impact to their employees. |  **Office:** <br> - Monthly Enterprise Channel <br> -Semi-Annual Enterprise Channel (Preview) <br> -Semi-Annual Enterprise Channel <br><br> **Windows:** <br>- Release Preview <br> - Semi-Annual Channel <br><br> **Edge:** <br>- Stable (deferred) |
+||||
 
 ## See also
 

@@ -28,60 +28,145 @@ This channel configuration example is for an organization that uses rapid deploy
 
 These goals translate to the IT task of finding the balance between rapid production deployment and proper testing with a representative subset of users and devices to prevent widespread functionality outages.
 
-Our example organization has 100,000 in multiple campuses across the world in Europe, Africa, Asia, and the Americas.
+Our example organization has over 100,000 employees in multiple campuses across the world in Europe, Africa, Asia, and the Americas.
 
 This organization's IT infrastructure: 
 
 - Is largely homogeneous, with Windows, Office, and Microsoft cloud services comprising 95% of the installed base. A few legacy systems remain after an intensive, multi-year effort to simplify and streamline the IT infrastructure.
 - Is maintained by highly experienced staff and tasked with keeping users and their devices productive by following Microsoft’s lead in their releases.
 
-
 ## Deployment and update stages
 
 Based on rapid deployment goals, this example organization uses a two-step deployment process for initial deployment and updates.
 
-1. Use a preview or pilot deployment
-   Test and iterate with early adopters, IT staff, users with representative configurations, and training staff.
-2. Production deployment
-   Roll out to users by region/department/other.
+1. Use a preview or pilot deployment: Test and iterate with early adopters, IT staff, users with representative configurations, and training staff. 
+   The early adopters, IT staff, users with representative configurations can test functionality with other apps and add-ins and on devices before the new features roll out to the rest of the organization.
+   Change managers have an early peek at the new features before widespread rollout and can plan messaging and rollout.
+2. Production deployment: Roll out to all remaining users by region, department, or other deployment method.
 
 ## Deployment configuration for Windows 10
 
-The overall deployment goal is to give a group of representative users a sneak peek of new Window 10 features that will be released in a month or longer without major disruptions to the organization. 
+The overall deployment goal is to give a group of representative users a sneak peek of new Windows 10 features that will be released in a month or longer without major disruptions to the organization. 
 
 See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
 
 
 | Channel | Deployment groups |
 |:-------|:-----|
-|  **Feature Preview** <br>Purpose: Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (languages, 3rd party apps). <br> Users: Windows fans (no matter their technical ability), IT admins, change managers, and trainers. Feature Preview deployment groups contain the user accounts. <br> State: Fully compliant and supported. <br> How often: Updates every 6 months (with monthly undocumented feature updates). | **Win10FeaturePreviewChannel** (example name) <br> Members are groups containing: <br> - Windows enthusiasts across departments and locations <br> - Staff with configurations that need testing <br> - IT admins and IT deployment staff <br> - Change managers <br> Internal training staff |
+|  **Feature Preview** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (languages, 3rd party apps). <br><br> **Users:** Windows fans (no matter their technical ability), IT admins, change managers, and trainers. Feature Preview deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates every 6 months (with monthly undocumented feature updates). | **Win10FeaturePreviewChannel** (example name) <br><br> Members are groups containing: <br> - Windows enthusiasts across departments and locations <br> - Staff with configurations that need testing <br> - IT admins and IT deployment staff <br> - Change managers <br> - Internal training staff |
 |||
 
 Ongoing updates process:
 
 1. Preview channel changes are deployed to the Win10PreviewChannel (example name) deployment group.
-2. Win10PreviewChannel members confirm that Preview Channel changes are working to IT deployment staff.
+2. Win10PreviewChannel members confirm that Preview Channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current Channel (Preview) release to ensure functionality.
 3. Feature changes are deployed to the rest of the organization. 
 
 ## Deployment configuration for Microsoft 365 Apps
 
-To be added
+WORK IN PROGRESS
+
+Deployment goals: Give a group of representative users a sneak peek of features that will be released 2-3 times each month, without major disruptions to the organization.
+a) Give change managers a sneak peak in to the features that will be released to Production 
+b) Give a group representative devices with LOB apps and add-ins a chance to validate functionality before features roll out to the rets of the organization
+https://docs.microsoft.com/en-us/deployoffice/plan-office-365-proplus
+Channels
+Current channel (Preview)
+Purpose: Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (language packs, 32-vs-64 bit, 3rd party apps, macros).
+Users: Office fans, IT admins, change managers, and trainers. Current channel (Preview) deployment groups contain the user accounts.
+State: Fully compliant and supported. 
+How often: Updates 2-3 times a month.
+Current channel
+Purpose: Deployment of feature updates as soon as they are tested with Current channel (Preview) users and are production-ready. 
+Users: All other user accounts besides those in the Current channel (Preview) deployment groups.
+State: Fully compliant and supported.
+Updates 2-3 times a month.
+Deployment groups
+ProPlusPreviewChannel (example name)
+Channel
+Current channel (Preview)
+Members
+Groups containing:
+•	Office enthusiasts across departments and locations
+•	Staff with configurations that need validation
+•	IT admins and IT deployment staff
+•	Change managers. Internal training staff
+ProPlusProductionChannel (example name)
+Channel
+Current channel
+Members
+Groups for everyone except the members of the ProPlusPreviewChannel deployment group:
+Departments
+Regions
+Ongoing updates process
+1. Current channel (Preview) changes are deployed to the ProPlusPreviewChannel deployment group.
+2. ProPlusPreviewChannel members confirm that Current channel (Preview) changes are working to IT deployment staff.
+3. Current channel changes are deployed to the ProPlusProductionChannel. 
+
 
 
 ## Deployment configuration for Microsoft Edge
 
-To be added
+WORK IN PROGRESS
+
+
+Deployment goal: Give a group of representative users a sneak peek of features that will be released 2-3 times each month, without major disruptions to the organization.
+https://docs.microsoft.com/en-us/DeployEdge/microsoft-edge-channels
+
+Channels
+
+Beta
+Purpose: 
+Users: 
+State: Fully compliant and supported.
+How often: Every 6 weeks
+Stable
+Purpose: Deployment of updates as soon as they are tested with Beta channel users and are production-ready. 
+Users: All other user accounts besides those in the Canary, Dev, and Beta deployment groups.
+State: Fully compliant and supported.
+How often: Every 6 weeks
+
+Deployment groups
+EdgeCanaryChannel (example name)
+Channel
+Canary
+Members
+Groups containing:
+
+EdgeDevChannel (example name)
+Channel
+Dev
+Members
+Groups containing:
+
+EdgeBetaChannel (example name)
+Channel
+Beta
+Members
+Groups containing:
+
+EdgeStableChannel (example name)
+Channel
+Stable
+Members
+Groups for everyone except the members of the EdgeCanaryChannel, EdgeDevChannel, and EdgeBetaChannel deployment groups
+Departments
+Regions
+Ongoing updates process
+
+
 
 ## Visual summaries
 
-### Deployment groups
+For an at-a-glance view of the products and their channels, deployment groups, and timing for a rapid deployment organization, see the following figures.
+
+Deployment groups for each channel:
 
 ![Deployment groups for a rapid deployment organizaton](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
-## Channels and timing
+Example of channels and their timing:
 
-![The resulting configuration of a rapid deployment organizaton](../media/deploy-update-channels-examples-rapid-deploy/channel-summary.png)
-
+![The channels and timing for a rapid deployment organizaton](../media/deploy-update-channels-examples-rapid-deploy/channel-summary.png)
 
 ## See also
 
