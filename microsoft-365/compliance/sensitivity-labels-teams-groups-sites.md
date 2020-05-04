@@ -331,7 +331,7 @@ It wouldn't be a security concern if the document has a lower priority sensitivi
 
 To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category. 
 
-The automatically generated email has the subject **Incompatible sensitivity label detected** that explains the labeling mismatch with a link to the uploaded document and site. It also contains a a documentation link that explains how users can change the sensitivity label. Currently, these automated emails cannot be disabled or customized.
+The automatically generated email has the subject **Incompatible sensitivity label detected** and the email message explains the labeling mismatch with a link to the uploaded document and site. It also contains a documentation link that explains how users can change the sensitivity label. Currently, these automated emails cannot be disabled or customized.
 
 When somebody adds or removes a sensitivity label to or from a site or group, these activities are also audited but without automatically generating an email. 
 
