@@ -29,9 +29,6 @@ With Office 365 Message Encryption, your organization can send and receive encry
 
 The rest of this article applies to the new OME capabilities.
 
-> [!NOTE]
-> Delegates who have full access permissions to a mailbox can read encrypted messages that are sent to the mailbox.
-
 Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the [Do Not Forward option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails), and the [encrypt-only option](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 Users can then encrypt email messages and a variety of attachments by using these options. For a full list of supported attachment types, see ["File types covered by IRM policies when they are attached to messages" in Introduction to IRM for email messages](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM).
