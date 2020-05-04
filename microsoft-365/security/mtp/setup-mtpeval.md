@@ -145,4 +145,5 @@ c
 
 ## Next step
 |||
-|:-------|:-----|config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab and onboard your endpoints.
+|:-------|:-----|
+|![Phase 2: Setup](../../media/config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) |  Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab and onboard your endpoints.
