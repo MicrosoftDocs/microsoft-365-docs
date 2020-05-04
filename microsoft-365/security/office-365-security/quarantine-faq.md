@@ -18,9 +18,9 @@ ms.collection:
 description: "Answers to frequently asked questions about quarantine in Office 365."
 ---
 
-# Quarantine FAQ in Office 365
+# Quarantine FAQ
 
-This topic provides frequently asked questions and answers about quarantine for Office 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes.
+This topic provides frequently asked questions and answers about quarantine for Microsoft 365 customers with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) customers without Exchange Online mailboxes.
 
 ## Q: How do I manage messages that were quarantined for malware?
 
@@ -65,7 +65,7 @@ $CQ = Get-QuarantineMessage -Type Spam | where {$_.SenderAddress -like "*@contos
 Then, run the following command to release those messages to all original recipients:
 
 ```powershell
-$CQ | foreach {Release-QuarantineMessage -Identity $CQ.Identity -ReleaseToAll}
+$CQ | foreach {Release-QuarantineMessage -Identity $_.Identity -ReleaseToAll}
 ```
 
 After you release a message, you can't release it again.

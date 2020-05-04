@@ -1,5 +1,5 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business"
+title: "Increase threat protection for Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -24,7 +24,7 @@ description: "Set up compliance features to prevent data loss and help keep your
 ---
 # Set up compliance features
 
-Your Microsoft 365 Business comes with features to protect your data and devices, and help you keep your and your customers' sensitive information secure.
+Your Microsoft 365 Business Premium comes with features to protect your data and devices, and help you keep your and your customers' sensitive information secure.
 
 ## Set up DLP features
 

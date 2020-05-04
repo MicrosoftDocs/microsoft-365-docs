@@ -110,4 +110,4 @@ Each of the analyzed entities will be marked with a verdict (Malicious, Suspicio
 - [Incidents overview](incidents-overview.md)
 - [Prioritize incidents](incident-queue.md)
 - [Manage incidents](manage-incidents.md)
-- [Review events and alerts on a specific machine](machine-profile.md)
+

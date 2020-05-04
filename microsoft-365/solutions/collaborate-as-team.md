@@ -5,8 +5,12 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+ms.custom: 
+- M365solutions
 localization_priority: Normal
 f1.keywords: NOCSH
 description: "Learn how to collaborate with guests in Teams."
@@ -63,17 +67,17 @@ To set Teams guest access settings
 > [!NOTE]
 > It may take up to twenty-four hours for the Teams guest setting to become active after you turn it on.
 
-## Office 365 Groups guest settings
+## Microsoft 365 Groups guest settings
 
-Teams uses Office 365 Groups for team membership. The Office 365 Groups guest settings must be turned on in order for guest access in Teams to work.
+Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups guest settings must be turned on in order for guest access in Teams to work.
 
-![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
 
-To set Office 365 Groups guest settings
+To set Microsoft 365 Groups guest settings
 
 1. In the Microsoft 365 admin center, in the left navigation, expand **Settings**.
 2. Click **Services & add-ins**.
-3. In the list, click **Office 365 Groups**.
+3. In the list, click **Microsoft 365 Groups**.
 4. Ensure that the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes are both checked.
 5. If you made changes, click **Save changes**.
 

@@ -5,23 +5,26 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
 f1.keywords: NOCSH
 ms.custom: 
+- M365solutions
 localization_priority: Priority
 description: "Learn about the guest sharing settings available in  Microsoft 365."
 ---
 
 # Microsoft 365 guest sharing settings reference
 
-This article provides a reference for the various settings that can affect sharing with people outside your organization for the Microsoft 365 workloads: Teams, Office 365 Groups, SharePoint, and OneDrive. These settings are located in the Azure Active Directory, Microsoft 365, Teams, and SharePoint admin centers.
+This article provides a reference for the various settings that can affect sharing with people outside your organization for the Microsoft 365 workloads: Teams, Microsoft 365 Groups, SharePoint, and OneDrive. These settings are located in the Azure Active Directory, Microsoft 365, Teams, and SharePoint admin centers.
 
 ## Azure Active Directory
 
 **Admin role:** Global administrator
 
-Azure Active Directory is the directory service used by  Microsoft 365. The Azure Active Directory Organizational relationships settings directly affect sharing in Teams, Office 365 Groups, SharePoint, and OneDrive.
+Azure Active Directory is the directory service used by Microsoft 365. The Azure Active Directory Organizational relationships settings directly affect sharing in Teams, Microsoft 365 Groups, SharePoint, and OneDrive.
 
 > [!NOTE]
 > These settings only affect SharePoint when [SharePoint and OneDrive integration with Azure AD B2B (Preview)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) has been configured. The table below assumes that this has been configured.
@@ -36,7 +39,7 @@ Azure Active Directory is the directory service used by  Microsoft 365. The Azur
 |:-----|:-----|:-----|
 |Guest users permissions are limited|Yes|This setting affects the directory tasks that a guest can perform.|
 |Admins and users in the guest inviter role can invite|Yes|When set to **Yes**, admins can invite guests via Azure AD and via  Microsoft 365 sharing experiences such as Teams and SharePoint; when set to **No**, they cannot.|
-|Members can invite|Yes|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Office 365 Group members can invite guests with owner approval; when set to **No**, Office 365 Group members can invite guests with owner approval but owners must be global administrators to approve. <br><br>Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <br><br>This is identical to the **Let users add new guests to the organization** setting in Microsoft 365 Security & privacy.|
+|Members can invite|Yes|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 Group members can invite guests with owner approval; when set to **No**, Microsoft 365 Group members can invite guests with owner approval but owners must be global administrators to approve. <br><br>Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <br><br>This is identical to the **Let users add new guests to the organization** setting in Microsoft 365 Security & privacy.|
 |Guests can invite|Yes|When set to **Yes**, guests in the directory can invite other guests to collaborate on Azure AD resources and on files and folders in SharePoint and OneDrive; when set to **No**, they cannot. <br><br>Note that **Allow external users to find user accounts in the directory by typing in exact email address matches** must be turned on in the SharePoint admin center for guests to share files and folders with other guests.|
 |Enable Email One-Time Passcode for guests (Preview)|No|When set to **Yes**, guests without an MSA or a work or school account can [authenticate with Azure AD using a one-time passcode](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode); when set to **No**, users will need to create a Microsoft account in order to authenticate. This setting must be set to **Yes** for [SharePoint and OneDrive integration with Azure AD B2B (Preview)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) to work.|
 |Collaboration restrictions|Allow invitations to be sent to any domain|This setting allows you to specify a list of allowed or blocked domains for sharing. When allowed domains are specified, then sharing invitations can only be sent to those domains. When denied domains are specified, then sharing invitations cannot be sent to those domains.<br><br> This setting affects  Microsoft 365 sharing experiences such as Teams and SharePoint. You can allow or block domains at a more granular level by using domain filtering in SharePoint or Teams.|
@@ -47,7 +50,7 @@ These settings affect how users are invited to the directory. They do not affect
 
 **Admin role:** Global administrator
 
-The Microsoft 365 admin center has organization-level settings for sharing and for Office 365 Groups.
+The Microsoft 365 admin center has organization-level settings for sharing and for Microsoft 365 Groups.
 
 ### Sharing
 
@@ -57,18 +60,18 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
-|Let users add new guests to the organization|On|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Office 365 Group members can invite guests with owner approval; when set to **No**, Office 365 Group members can invite guests with owner approval but owners must be global administrators to approve. <br><br>Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <br><br>This is identical to the **Members can invite** setting in Azure Active Directory Organizational relationships settings.|
+|Let users add new guests to the organization|On|When set to **Yes**, Azure AD members can invite guests via Azure AD; when set to **No**, they cannot. When set to **Yes**, Microsoft 365 Group members can invite guests with owner approval; when set to **No**, Microsoft 365 Group members can invite guests with owner approval but owners must be global administrators to approve. <br><br>Note that **Members can invite** refers to members in Azure AD (as opposed to guests) and not to site or group members in  Microsoft 365. <br><br>This is identical to the **Members can invite** setting in Azure Active Directory Organizational relationships settings.|
 
-### Office 365 Groups
+### Microsoft 365 Groups
 
-**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Office 365 Groups
+**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Microsoft 365 Groups
 
-![Screenshot of Office 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
+![Screenshot of Microsoft 365 Groups guest settings in  Microsoft 365 admin center](../media/office-365-groups-guest-settings.png)
 
 |**Setting**|**Default**|**Description**|
 |:-----|:-----|:-----|
-|Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guest users are interacting with Office 365 Groups or Teams.|
-|Let group owners add people outside your organization to groups|On|When **On**, Owners of Office 365 Groups or Teams can invite new guests to the group. When **Off**, owners can only invite guests who are already in the directory.|
+|Let group members outside your organization access group content|On|When set to **On**, guests can access groups content; when set to **Off**, they can't. This setting should be **On** for any scenario where guest users are interacting with Microsoft 365 Groups or Teams.|
+|Let group owners add people outside your organization to groups|On|When **On**, Owners of Microsoft 365 Groups or Teams can invite new guests to the group. When **Off**, owners can only invite guests who are already in the directory.|
 
 These settings are at the organization level. See [Create settings for a specific group](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) for information about how to change these settings at the group level by using PowerShell.
 
@@ -131,7 +134,7 @@ The Teams master guest access switch, **Allow guest access in Teams**, must be *
 
 **Admin role:** SharePoint administrator
 
-These settings affect all of the sites in the organization. They do not affect Office 365 Groups or Teams directly, however we recommend that you align these settings with the settings for Office 365 Groups and Teams to avoid user experience issues. (For example, if guest sharing is allowed in Teams but not SharePoint, then guests in Teams will not have access to the Files tab because Teams files are stored in SharePoint.)
+These settings affect all of the sites in the organization. They do not affect Microsoft 365 Groups or Teams directly, however we recommend that you align these settings with the settings for Microsoft 365 Groups and Teams to avoid user experience issues. (For example, if guest sharing is allowed in Teams but not SharePoint, then guests in Teams will not have access to the Files tab because Teams files are stored in SharePoint.)
 
 ### SharePoint and OneDrive sharing settings
 
@@ -175,7 +178,7 @@ When files and folders are shared in SharePoint and OneDrive, sharing recipients
 
 ### SharePoint and OneDrive security group settings
 
-If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings do not affect sharing via Office 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups.
+If you want to limit who can share with guests in SharePoint and OneDrive, you can do so by limiting sharing to people in specified security groups. These settings do not affect sharing via Microsoft 365 Groups or Teams. Guests invited via a group or team would also have access to the associated site, though document and folder sharing could only be done by people in the specified security groups.
 
 **Navigation:** SharePoint admin center > Sharing > Limit external sharing to specific security groups
 
@@ -229,7 +232,7 @@ The table below shows the default sharing setting for each site type.
 |:-----|:-----|
 |Classic|**Only people in your organization**|
 |OneDrive|**Anyone**|
-|Group-connected sites (including Teams)|**New and existing guests** if the Office 365 Groups setting **Let group owners add people outside the organization to groups** is **On**; otherwise **Existing guests only**|
+|Group-connected sites (including Teams)|**New and existing guests** if the Microsoft 365 Groups setting **Let group owners add people outside the organization to groups** is **On**; otherwise **Existing guests only**|
 |Communication|**Only people in your organization**|
 |Modern sites with no group (#STS3 TeamSite)|**Only people in your organization**|
 
@@ -242,4 +245,4 @@ The table below shows the default sharing setting for each site type.
 
 [Guest access in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/guest-access)
 
-[Adding guests to Office 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Adding guests to Microsoft 365 Groups](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)

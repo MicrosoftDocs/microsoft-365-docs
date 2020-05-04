@@ -65,9 +65,9 @@ conceptualContent:
         - url: https://docs.microsoft.com/windows/deployment/
           itemType: get-started
           text: Windows 10 Enterprise
-        - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+        - url: https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps
           itemType: deploy
-          text: Office 365 ProPlus
+          text: Microsoft 365 Apps for enterprise
         - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
           itemType: deploy
           text: Microsoft Intune
@@ -92,15 +92,15 @@ conceptualContent:
         - url: https://docs.microsoft.com/windows/deployment/update/
           itemType: how-to-guide
           text: Windows 10 Enterprise
-        - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+        - url: https://docs.microsoft.com/deployoffice/overview-update-channels
           itemType: concept
-          text: Office 365 ProPlus
+          text: Microsoft 365 Apps for enterprise
         - url: https://docs.microsoft.com/intune/apps/app-management
           itemType: get-started
           text: Apps with Intune
         - url: https://docs.microsoft.com/office365/
           itemType: get-started
-          text: Office 365 services
+          text: Microsoft 365 services
 
 # additionalContent section (optional)
 # Card with summary style

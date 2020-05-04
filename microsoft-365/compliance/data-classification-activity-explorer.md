@@ -1,5 +1,5 @@
 ---
-title: "Using data classification activity explorer"
+title: "Get started with activity explorer (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ search.appverid:
 description: "Activity explorer rounds out the functionality of the data classification feature by letting you see and filter on the actions users are taking on your labeled content."
 ---
 
-# View activity on your labeled content (preview)
+# Get started with activity explorer (preview)
 
 The data classification overview and content explorer tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view.
 

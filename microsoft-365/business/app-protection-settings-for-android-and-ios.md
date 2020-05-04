@@ -70,7 +70,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 The following tables give detailed information about settings available to protect work files on devices and the settings that control how users access Office files from their mobile devices.
   
- For more information, see [How do protection features in Microsoft 365 Business map to Intune settings](map-protection-features-to-intune-settings.md). 
+ For more information, see [How do protection features in Microsoft 365 Business Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 ### Settings that protect work files
 
@@ -94,4 +94,4 @@ The following settings are available to manage how users access Office work file
 |Reset PIN when login fails this many times  <br/> |To prevent an unauthorized user from randomly guessing a PIN, the PIN will reset after the number of wrong entries that you specify.  <br/> |
 |Require users to sign in again after Office apps have been idle for  <br/> |This setting determines how long a user can be idle before they're prompted to sign in again.  <br/> |
 |Deny access to work files on jailbroken or rooted devices  <br/> |Clever users may have a device that is jailbroken or rooted. This means that the user can modify the operating system, which can make the device more subject to malware. These devices are blocked when this setting is **On**.  <br/> |
-|Allow users to copy content from Office apps into personal apps  <br/> |We do allow this by default, but if the setting is **On**, the user could copy information in a work file to a personal file. If the setting is **Off**, the user will be unable to copy information from a work account into a personal app or personal account.  <br/> |
+|Don't allow users to copy content from Office apps into personal apps  <br/> |We do allow this by default, but if the setting is **On**, the user could copy information in a work file to a personal file. If the setting is **Off**, the user will be unable to copy information from a work account into a personal app or personal account.  <br/> |

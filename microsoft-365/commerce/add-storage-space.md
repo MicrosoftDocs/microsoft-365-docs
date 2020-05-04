@@ -27,7 +27,7 @@ search.appverid:
 - GEA150
 - GSP150
 ms.assetid: 96ea3533-de64-4b01-839a-c560875a662c
-description: "Learn to add and reduce file storage in your Office 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
+description: "Learn to add and reduce file storage in your Microsoft 365 subscription. With extra file storage, you can store more content in SharePoint Online and OneDrive."
 ---
 
 # Add storage space for your subscription
@@ -38,19 +38,15 @@ If you start to run out of storage for your SharePoint Online site collections, 
 
 ::: moniker range="o365-worldwide"
 
-1. Sign in to https://admin.microsoft.com as a global or SharePoint admin. (If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.)
-    
-2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center. 
-    
-3. In the left pane of the new SharePoint admin center, select **Active sites**.
+1. Go to the [Active sites page of the new SharePoint admin center](https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true), and sign in with an account that has [admin permissions](https://docs.microsoft.com/sharepoint/sharepoint-admin-role) for your organization.
 
-4. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. (If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.) 
+2. In the upper right of the page, see the amount of storage used across all sites, and the total storage for your subscription. (If your organization has configured Multi-Geo in Office 365, the bar also shows the amount of storage used across all geo locations.) 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Sign in to https://portal.office.de as a global or SharePoint admin, and then select the Admin tile to open the admin center. (If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.)
+1. Sign in to https://portal.office.de as a global or SharePoint admin, and then select the Admin tile to open the admin center. (If you see a message that you don't have permission to access the page, you don't have Microsoft 365 administrator permissions in your organization.)
     
 2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center. 
     
@@ -62,7 +58,7 @@ If you start to run out of storage for your SharePoint Online site collections, 
 
 ::: moniker range="o365-21vianet"
 
-1. Sign in to https://login.partner.microsoftonline.cn/ as a global or SharePoint admin, and then select the Admin tile to open the admin center. (If you see a message that you don't have permission to access the page, you don't have Office 365 administrator permissions in your organization.)
+1. Sign in to https://login.partner.microsoftonline.cn/ as a global or SharePoint admin, and then select the Admin tile to open the admin center. (If you see a message that you don't have permission to access the page, you don't have Microsoft 365 administrator permissions in your organization.)
      
 2. In the left pane, under **Admin centers**, select **SharePoint**. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center. 
     
@@ -88,8 +84,6 @@ If you haven't yet purchased extra storage for your subscription, you can do tha
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 
@@ -164,8 +158,6 @@ If you have already purchased extra file storage via the **Office 365 Extra File
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
 
@@ -248,11 +240,11 @@ Office 365 Extra File Storage is available for the following subscriptions:
 
 - SharePoint Online Plan 2
 
-- Office 365 Business Essentials
+- Microsoft 365 Business Basic
 
-- Office 365 Business Premium
+- Microsoft 365 Business Standard
 
-- Microsoft 365 Business
+- Microsoft 365 Business Premium
 
 - Microsoft 365 E3
 
