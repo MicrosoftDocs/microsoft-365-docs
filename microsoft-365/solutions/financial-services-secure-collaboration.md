@@ -6,12 +6,13 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
+ms.custom: 
+- M365solutions
 localization_priority: Priority
 description: "Learn how Microsoft 365 helps financial services move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
+f1.keywords: NOCSH
 ---
 
 # Key compliance and security considerations for US banking and capital markets
@@ -258,7 +259,7 @@ Financial institutions can be subject to regulations that prevent employees in c
 
 Ultimately, these rules require organizations to establish policies and implement information barriers between roles involved in banking services, sales, or trading from exchanging information and communications with analysts.
 
-[Information barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) provides the ability to establish ethical walls within your Office 365 environment, allowing compliance administrators or other authorized administrators to define policies that allow or prevent communications between groups of users in Teams. Information barriers perform checks on specific actions to prevent unauthorized communication. Information barriers can also restrict communication in scenarios where internal teams are working on mergers/acquisitions or confidential deals, or working with sensitive internal information that must be heavily restricted.
+[Information barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) provides the ability to establish ethical walls within your Office 365 environment, allowing compliance administrators or other authorized administrators to define policies that allow or prevent communications between groups of users in Teams. Information barriers perform checks on specific actions to prevent unauthorized communication. Information barriers can also restrict communication in scenarios where internal teams are working on mergers/acquisitions or sensitive deals, or working with sensitive internal information that must be heavily restricted.
 
 Information barriers in Microsoft 365 support conversations and files in Teams. They can prevent the following types of communications-related actions to help comply with FINRA regulations:
 
