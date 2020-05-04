@@ -89,7 +89,7 @@ Ongoing updates process:
 
 The overall deployment goal is to give a group of representative users a sneak peek of new Edge features that will be released every six weeks without major disruptions to the organization. 
 
-See [Microsoft Edge deployment](https://docs.microsoft.com/DeployEdge/microsoft-edge-channels) for more information on Edge deployment methods and strategies.
+See [Microsoft Edge deployment](https://docs.microsoft.com/DeployEdge/microsoft-edge-channels) for more information on Edge deployment channels.
 
 | Channel | Deployment groups |
 |:-------|:-----|
