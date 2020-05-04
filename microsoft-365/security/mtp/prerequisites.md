@@ -30,9 +30,6 @@ Learn about the licensing, hardware and software requirements, and other configu
 
 ## Licensing requirements
 
->[!IMPORTANT]
->Starting May 3, 2020, Microsoft will gradually roll out new, optimized experiences around licensing requirements and [turning on Microsoft Threat Protection](mtp-enable.md). For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
-
 To use Microsoft Threat Protection, you need either a single license or a combination of licenses. These licenses or license combinations give you access to Microsoft Threat Protection features without additional cost.
 
 ### Single license
@@ -51,19 +48,6 @@ You can also use a combination of licenses for E5 or A5 subscriptions to Office 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
 
 > Don't have license yet? [Try or buy a Microsoft 365 subscription](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
-
-
-**New experience:** Starting May 3, 2020, customers will gradually receive changes to this experience. For those with the new experience, the option to turn on Microsoft Threat Protection will be available to *all* customers with any of the following licenses:
-
-- Microsoft 365 E5 or A5
-- Microsoft 365 E5 Security or A5 Security
-- Windows 10 Enterprise E5 or A5
-- Enterprise Mobility + Security (EMS) E5 or A5 
-- Office 365 E5 or A5
-- Microsoft Defender Advanced Threat Protection 
-- Azure Advanced Threat Protection 
-- Microsoft Cloud App Security 
-- Office 365 Advanced Threat Protection (Plan 2) 
 
 ### Check your existing  licenses
 Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com/)) to view your existing licenses. In the admin center, go to **Billing** > **Licenses**.
