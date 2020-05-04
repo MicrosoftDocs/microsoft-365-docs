@@ -150,7 +150,7 @@ With a label policy, you can:
     > [!NOTE]
     > Mandatory labeling currently requires the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). This client runs only on Windows, so this feature is not yet supported on Mac, iOS, and Android.
     
-    Consider using this option to help increase your labeling coverage. However, without user training, this setting can result in inaccurate labeling and frustrate your users with the frequent prompts. 
+    Consider using this option to help increase your labeling coverage. However, without user training, this setting can result in inaccurate labeling. In addition, unless you also set a default label, mandatory labeling can frustrate your users with the frequent prompts. 
 
 - **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
 
