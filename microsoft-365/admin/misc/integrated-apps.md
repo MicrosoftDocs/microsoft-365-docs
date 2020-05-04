@@ -30,7 +30,7 @@ When Integrated Apps is turned on, users in your organization can allow third-pa
 
 Here's how to turn Integrated Apps on or off.
 
-1. In the Microsoft 365 admin center, go to the **Settings** \> [Services &amp; add-ins](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **Integrated apps**.
+1. In the Microsoft 365 admin center, go to the **Settings** \> **Settings** page, \> **Services**  Tab and then select **Integrated apps**.
 
 2. On the **Integrated Apps** page, select the option to turn Integrated Apps on or off.
 
