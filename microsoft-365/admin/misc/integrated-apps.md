@@ -23,11 +23,9 @@ description: "Learn about Integrated Apps and how to turn them on to allow third
 
 # Integrated apps in Microsoft 365
 
-When Integrated Apps is turned on, this setting controls whether users in your organization can grant permissions (or consent) to integrated apps. An integrated app can be created from within your own organization, or it can come from another Office 365 organization or a third-party.
+This setting controls whether users can give that consent to apps that use OpenID Connect and OAuth 2.0 for sign-in and requests to access data. An app can be created from within your own organization, or it can come from another Office 365 organization or a third-party.
 
-Apps not created by Microsoft must receive consent before they can access your organization's data. If you let users consent to app requests to access your organization's data, apps will explicitly ask users for the permissions they need, and users can choose whether to allow access.
-
-If you choose not to let users consent to these requests, they'll see an error when opening any app that needs to request access to your organization's data. Since this can limit user productivity, consider setting up an admin consent workflow in the Azure portal. In this case, when a user opens an app and sees an error, they can also send a request for admin approval, and admins can then choose whether to consent.
+If you turn this setting on, those apps will ask users for permission to access your organization’s data, and users can choose whether to allow it. If you turn this setting off, then admins must consent to those apps before users may use them. In this case, consider setting up an admin consent workflow in the Azure portal so users can send a request for admin approval to use any blocked app.
 
 A user can give access only to apps they own that access their Office 365 information. They can't give an app access to any other user's information.
 
