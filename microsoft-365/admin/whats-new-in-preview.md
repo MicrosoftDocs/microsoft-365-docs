@@ -285,7 +285,7 @@ There's been an update to another of our initial setup wizards: Microsoft 365 fo
 
 We've got some updates for billing and subscriptions this month:
 
-- Device-based subscriptions: You can assign or unassign **Office 365 ProPlus for Education (device)** licenses to devices in the Microsoft 365 admin center. **Office 365 ProPlus for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Products & services** to find and purchase the license.
+- Device-based subscriptions: You can assign or unassign **Microsoft 365 Apps for Education (device)** licenses to devices in the Microsoft 365 admin center. **Microsoft 365 Apps for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Products & services** to find and purchase the license.
 - User-based license management: We've updated how you assign licenses in **Users** > **Active users** to the new style. For more information, see:
   - [Assign licenses to users](manage/assign-licenses-to-users.md)
   - [Unassign licenses from users](manage/remove-licenses-from-users.md)
