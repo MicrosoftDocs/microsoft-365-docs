@@ -11,7 +11,9 @@ ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
-description: "Here we answer the most common general questions about the Microsoft Exchange Online Protection (EOP) cloud-hosted email filtering service. For additional frequently asked questions (FAQ) topics, go to the following links:"
+ms.custom:
+- seo-marvel-apr2020
+description: "In this topic you will find the most common general questions about the Microsoft Exchange Online Protection (EOP) cloud-hosted email filtering service."
 ---
 
 # EOP general FAQ

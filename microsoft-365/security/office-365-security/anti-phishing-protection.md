@@ -13,10 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: "Microsoft 365 offers a variety of protection against phishing attacks by default and also through additional features in Office 365 Advanced Threat Protection (ATP). This topic introduces the online resources you can use to learn about and implement anti-phishing options and strategies in Microsoft 365."
+ms.custom:
+- TopSMBIssues
+- seo-marvel-apr2020
+description: "This article introduces the available online resources that can be utilized to learn about and implement anti-phishing options and strategies in Microsoft 365."
 ---
 
 # Anti-phishing protection in Microsoft 365
@@ -39,7 +41,7 @@ EOP (that is, Microsoft 365 organizations without ATP) contains features that ca
 
 - **Spoof intelligence**: Review spoofed messages from senders in internal and external domains, and allow or block those senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
-- **Default anti-phishing policy**: Turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to Junk Email folder or quarantine). For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+- **Anti-phishing policies in EOP**: Turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and specify the action for blocked spoofed senders (move to Junk Email folder or quarantine). For more information, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
 - **Implicit email authentication**: EOP enhances standard email authentication checks for inbound email ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md), and [DMARC](use-dmarc-to-validate-email.md)) with sender reputation, sender history, recipient history, behavioral analysis, and other advanced techniques to help identify forged senders. For more information, see [Email authentication in Microsoft 365](email-validation-and-authentication.md).
 

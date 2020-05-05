@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn about how Microsoft 365 and Exchange Online Protection (EOP) protects customers from outbound spam, and what to do if you need to send mass mailings."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn as an admin how Office 365 and Exchange Online Protection (EOP) protects customers from outbound spam, and what to do if you need to send mass mailings."
 ---
 
 # Outbound spam protection

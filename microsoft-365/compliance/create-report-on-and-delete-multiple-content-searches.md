@@ -15,6 +15,7 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: "Learn how to automate Content Search tasks like creating searches and running reports via PowerShell scripts in the Security & Compliance Center in Office 365."
 ---

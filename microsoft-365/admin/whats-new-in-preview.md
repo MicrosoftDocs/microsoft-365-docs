@@ -17,7 +17,6 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
@@ -176,7 +175,7 @@ We've starting to roll out the ability to change your payment method from credit
 
 ![Screen capture: Billing section of subscription card with a credit card as the payment method.](../media/MAC-BillingEditCreditCard.png)
 
-Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md)
 
 ### Global reader
 
@@ -286,7 +285,7 @@ There's been an update to another of our initial setup wizards: Microsoft 365 fo
 
 We've got some updates for billing and subscriptions this month:
 
-- Device-based subscriptions: You can assign or unassign **Office 365 ProPlus for Education (device)** licenses to devices in the Microsoft 365 admin center. **Office 365 ProPlus for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Your products** to find and purchase the license.
+- Device-based subscriptions: You can assign or unassign **Microsoft 365 Apps for Education (device)** licenses to devices in the Microsoft 365 admin center. **Microsoft 365 Apps for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Your products** to find and purchase the license.
 - User-based license management: We've updated how you assign licenses in **Users** > **Active users** to the new style. For more information, see:
   - [Assign licenses to users](manage/assign-licenses-to-users.md)
   - [Unassign licenses from users](manage/remove-licenses-from-users.md)

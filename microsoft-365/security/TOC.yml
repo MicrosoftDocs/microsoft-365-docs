@@ -605,8 +605,8 @@
                   href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                 - name: Set up virtual certificate collection to validate S/MIME
                   href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
-        - name: Office 365 Enterprise
-          href: https://docs.microsoft.com/office-365-security/Enterprise
+        - name: Microsoft 365 for Enterprise
+          href: https://docs.microsoft.com/microsoft-365/enterprise
         - name: Microsoft 365 for business
           href: https://docs.microsoft.com/microsoft-365/admin/admin-home
 

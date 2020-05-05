@@ -1,5 +1,5 @@
 ---
-title: "Use DKIM for email in your custom domain in Microsoft 365, 2048-bit, 1024-bit, steps, How it works, SPF, DMARC"
+title: How to use DKIM for email in your custom domain
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
-description: "Summary: This article describes how you use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure that destination email systems trust messages sent from your custom domain."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to use DomainKeys Identified Mail (DKIM) with Microsoft 365 to ensure messages sent from your custom domain are trusted by the destination email systems."
 ---
 
 # Use DKIM to validate outbound email sent from your custom domain

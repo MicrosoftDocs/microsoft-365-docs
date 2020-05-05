@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use error remediation to correct data issues in Data Investigations (Preview) that might prevent proper processing of content.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Error remediation when processing data for an investigation
