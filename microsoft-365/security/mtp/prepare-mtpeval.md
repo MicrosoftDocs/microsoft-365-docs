@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Prepare your Microsoft Threat Protection evaluation lab
+# Prepare your Microsoft Threat Protection trial lab environment
 
 **Applies to:**
 - Microsoft Threat Protection
 
-Creating a Microsoft Threat Protection evaluation lab and deploying it is a three-phase process:
+Creating a Microsoft Threat Protection trial lab environment and deploying it is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
