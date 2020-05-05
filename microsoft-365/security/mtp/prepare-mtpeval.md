@@ -56,7 +56,7 @@ Creating a Microsoft Threat Protection trial lab environment and deploying it is
   </tr>
 </table>
 
-You are currently in the preparation phase.
+You're currently in the preparation phase.
 
 
 Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create a trial lab environment for your Microsoft Threat Protection deployment.
