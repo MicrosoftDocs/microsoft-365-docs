@@ -61,9 +61,9 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
      - **Microsoft (Recommended)**: The user submissions mailbox isn't used (all reported messages go to Microsoft).
 
-     - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox.
+     - **Microsoft and a custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups not allowed.
 
-     - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox.
+     - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups not allowed.
 
      When you're finished, click **Confirm**.
 
