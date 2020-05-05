@@ -22,7 +22,7 @@ description: "Learn how to manage free self-service sign-up subscriptions for yo
 
 ## What are self-service sign-up subscriptions?
 
-There are a limited number of free self-service sign-up subscriptions that users in your organization can sign up for. A user can only sign up for and use a self-service sign-up subscription for themselves. These subscriptions appear on the **Products & services** page, are marked as **Free**, and have a note that says, "This is a free subscription activated by users in your company." You can manage self-service sign-up subscriptions by blocking users from signing up, and by deleting free subscriptions that users have signed up for. For more information about self-service sign up and the available subscriptions, see [Using self-service sign up in your organization](../../admin/misc/self-service-sign-up.md).
+There are a limited number of free self-service sign-up subscriptions that users in your organization can sign up for. A user can only sign up for and use a self-service sign-up subscription for themselves. These subscriptions appear on the **Your products** page, are marked as **Free**, and have a note that says, "This is a free subscription activated by users in your company." You can manage self-service sign-up subscriptions by blocking users from signing up, and by deleting free subscriptions that users have signed up for. For more information about self-service sign up and the available subscriptions, see [Using self-service sign up in your organization](../../admin/misc/self-service-sign-up.md).
 
 ## How are these subscriptions different from self-service purchase subscriptions?
 
@@ -37,7 +37,7 @@ You use the [**Set-MsolCompanySettings**](https://docs.microsoft.com/powershell/
 > [!IMPORTANT]
 > When you delete a self-service sign-up subscription, you block all users from accessing their data and email and delete all data and email.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Find the self-service sign-up subscription that you want to delete. In the **Settings & Actions** section, select **Delete subscription**.
 3. In the **Delete subscription** pane, select the check box, then select **Delete subscription**.
 

@@ -109,7 +109,7 @@ You might qualify for VAT zero-rating:
 
 #### Add your VAT ID (EU countries only)
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription card for the subscription you want to update.
 
