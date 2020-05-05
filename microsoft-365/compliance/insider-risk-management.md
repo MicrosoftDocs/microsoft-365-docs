@@ -127,5 +127,5 @@ Employee-to-employee communications are often a source of inadvertent or malicio
 
 ## Ready to get started?
 
-- See [Planning for insider risk management](insider-risk-management-plan.md) for how to prepare to enable insider risk management policies in your organization.
+- See [Plan for insider risk management](insider-risk-management-plan.md) for how to prepare to enable insider risk management policies in your organization.
 - See [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
