@@ -24,6 +24,13 @@ description: "Learn how to change how frequently you're billed for your business
 
 # Change your payment frequency
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 When you buy a subscription, you choose monthly or annual billing. To change how often you are billing for a subscription, use the following steps.
 
 1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.

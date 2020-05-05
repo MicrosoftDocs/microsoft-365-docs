@@ -22,6 +22,13 @@ keywords: billing accounts, organization info, invoices
 
 # Understand your invoice
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
 If you only have an Microsoft 365 subscription, see [Understand your invoice for Microsoft 365 for business](understand-your-invoice2.md).

@@ -18,6 +18,13 @@ description: "Users can learn how to manage their self-service purchases."
 
 # Manage self-service purchases (Users)
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You are responsible for paying for any self-service purchases you make. You can manage your subscriptions in the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
 
 

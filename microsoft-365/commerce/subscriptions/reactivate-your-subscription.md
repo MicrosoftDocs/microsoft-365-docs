@@ -29,6 +29,13 @@ description: "Learn how to reactivate your subscription when it expires, or if M
 
 # Reactivate your subscription
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 If your subscription expires, or was disabled by Microsoft, or if you cancelled it in the middle of a subscription term, you can reactivate it in the admin center.
   
  **Not an admin?** Contact your administration to reactivate your subscription.

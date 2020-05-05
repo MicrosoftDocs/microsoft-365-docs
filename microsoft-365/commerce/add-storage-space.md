@@ -32,6 +32,13 @@ description: "Learn to add and reduce file storage in your Microsoft 365 subscri
 
 # Add storage space for your subscription
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 If you start to run out of storage for your SharePoint Online site collections, you can add storage to your subscription if your plan is eligible. If you don't see the **Office 365 Extra File Storage** in the list of available add-ons, it means your plan is not eligible. For more information, see [Is my plan eligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 ## View available storage
