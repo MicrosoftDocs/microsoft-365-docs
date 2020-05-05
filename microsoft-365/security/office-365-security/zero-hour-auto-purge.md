@@ -35,7 +35,7 @@ Microsoft 365 updates spam and malware signatures in real-time on a daily basis.
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mailflow, this means that even if the service determines it needs to Zap the message, the message will not be due to the safe senders configuration. It is for this reason that admins should be careful about what is being allowed to bypass our filters.
+[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines it needs to ZAP the message, the message will not be due to the safe senders configuration. It is for this reason that admins should be careful about what is being allowed to bypass our filters.
 
 ### Malware ZAP
 
