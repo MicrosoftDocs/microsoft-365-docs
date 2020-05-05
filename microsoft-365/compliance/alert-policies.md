@@ -16,7 +16,9 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
-description: "Create alert policies in the security and compliance centers to monitor potential threats, data loss, and permissions issues. Then you can view and manage the alerts that are generated when users perform activities that match the conditions of an alert policy."
+ms.custom: 
+- seo-marvel-apr2020
+description: "Create alert policies in the security and compliance center in Office 365 and Microsoft 365 to monitor potential threats, data loss, and permissions issues."
 ---
 
 # Alert policies in the security and compliance center

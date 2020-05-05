@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: " "
+description: Learn what happens when an investigation or legal case supported by an eDiscovery case is closed or deleted.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Close or delete a case

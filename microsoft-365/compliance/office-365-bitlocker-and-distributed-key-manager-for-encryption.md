@@ -15,7 +15,8 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: "Summary: Information about BitLocker for encryption in the cloud."
+description: Learn about how Office 365 uses BitLocker encryption, reducing the potential for data theft due to lost or stolen computers and disks.
+ms.custom: seo-marvel-apr2020
 ---
 
 # BitLocker and Distributed Key Manager (DKM) for Encryption

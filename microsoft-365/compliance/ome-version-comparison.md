@@ -15,7 +15,8 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "Helps explain the differences between the versions of Message Encryption."
+description: This article helps explain the differences between different versions of Office 365 Message Encryption.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Compare versions of OME

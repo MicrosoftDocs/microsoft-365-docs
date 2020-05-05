@@ -1,5 +1,5 @@
 ---
-title: "Permissions in the Security & Compliance Center"
+title: Permissions - Microsoft 365 Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,7 +16,8 @@ ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
-description: "Admins can learn about the permissions that are available in the Security & Compliance Center."
+description: "Admins can learn about the permissions that are available in the Microsoft 365 Security & Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Permissions in the Security & Compliance Center
