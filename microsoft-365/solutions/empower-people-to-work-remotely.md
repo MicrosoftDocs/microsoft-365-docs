@@ -23,6 +23,8 @@ description: Configure the security and service infrastructure that allows your 
 
 In response to the COVID-19 crisis, your business may need to enable your workers to have secure access to your organization's on-premises and cloud-based information, tools, and resources from their homes. 
 
+![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
+
 Use these steps to secure and optimize access to your organization's servers, data, and cloud services and enable maximum worker productivity.
 
 1. [Increase sign-in security with MFA](empower-people-to-work-remotely-secure-sign-in.md)

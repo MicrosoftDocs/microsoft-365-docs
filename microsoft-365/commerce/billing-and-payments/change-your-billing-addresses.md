@@ -172,6 +172,8 @@ By default, your organization's billing notifications are sent to the Microsoft 
 ## Change the alternate email address for another admin
 
 You can also change the alternate email address of other global and billing admins in your organization.
+
+::: moniker range="o365-worldwide"
   
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 

@@ -60,7 +60,7 @@ When you purchase Microsoft 365 Business Premium, you have the option of using a
 4. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
     > [!IMPORTANT]
-    > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users ](#add-users-and-assign-licenses) instead.
+    > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
     ![Screenshot of the Personalize your sign-in page.](../media/adddomain.png)
 
@@ -119,7 +119,7 @@ The policies you set up in the wizard are applied automatically to a [Security g
 
 ## Secure Windows 10 PCs
 
-On the left nav, select **Setup** and then, under **Sing-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started. See [secure your Windows 10 computers](secure-win-10-pcs.md) for complete instructions.
+On the left nav, select **Setup** and then, under **Sign-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started. See [secure your Windows 10 computers](secure-win-10-pcs.md) for complete instructions.
 
 ## Deploy Office 365 client apps
 
