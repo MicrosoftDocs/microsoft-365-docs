@@ -78,7 +78,7 @@ Sign in to [Microsoft 365 admin center](https://portal.office.com/adminportal/ho
     
     - Use the directory sync wizard to synchronize your users to the cloud. Follow the steps in [Set up directory synchronization for Microsoft 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) to complete this process. After you synchronize your users to the cloud, you'll have to [Turn off directory synchronization for Office 365](https://support.office.com/article/ee5f861e-bd48-4267-83d1-a4ead4b4a00d).
     
-    You'll also have to give each user that was added this way a license to Microsoft 365 for business. You can do this in the [setup wizard](set-up.md) or you can [Assign licenses to users in Microsoft 365 for business](https://support.office.com/article/997596B5-4173-4627-B915-36ABAC6786DC).
+    You'll also have to give each user that was added this way a license to Microsoft 365 for business. You can do this in the [setup wizard](set-up.md) or you can [Assign licenses to users in Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users).
     
 ### 2: Prepare mobile devices
 
