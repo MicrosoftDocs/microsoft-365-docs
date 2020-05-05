@@ -11,6 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins in standalone Exchange Online Protection (EOP) organizations can learn how to create, modify, and remove distribution groups and mail-enabled security groups in the Exchange admin center (EAC) and in standalone Exchange Online Protection (EOP) PowerShell."
 ---
 

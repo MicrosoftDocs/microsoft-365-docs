@@ -19,7 +19,8 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: "Create an archiving and deletion policy that automatically moves items to a user's archive mailbox."
+description: "Create an archiving and deletion policy in Microsoft 365 that automatically moves items to a user's archive mailbox."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up an archive and deletion policy for mailboxes in your organization

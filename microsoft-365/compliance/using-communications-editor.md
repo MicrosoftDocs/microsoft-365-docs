@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Use the Communications Editor to change text and merge field variables when formatting your content.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Use the communications editor

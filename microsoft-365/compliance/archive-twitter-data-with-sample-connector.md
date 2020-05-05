@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-description: "Administrators can set up a native connector to import Twitter data into Microsoft 365. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies to manage the governance of your organization's third-party data."
+ms.custom:
+- seo-marvel-apr2020
+description: "Set up a connector to import Twitter data into Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies."
 ---
 
 # Set up a connector to archive Twitter data

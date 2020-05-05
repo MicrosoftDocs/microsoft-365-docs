@@ -11,6 +11,8 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
+ms.custom:
+- seo-marvel-apr2020
 description: "Learn how Exchange Online Protection (EOP) can help protect your on-premises email organization in standalone and hybrid environments."
 ---
 

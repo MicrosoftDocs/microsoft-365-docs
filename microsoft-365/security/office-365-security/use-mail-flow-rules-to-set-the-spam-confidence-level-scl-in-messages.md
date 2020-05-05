@@ -15,7 +15,8 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to set the SCL of messages in Exchange Online Protection."
+description: Learn how to create mail flow rules (transport rules) to identify messages and set the spam confidence level (SCL) of messages in Exchange Online Protection.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use mail flow rules to set the spam confidence level (SCL) in messages

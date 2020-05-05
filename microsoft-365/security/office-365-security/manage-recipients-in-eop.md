@@ -11,6 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the different types of recipient objects in standalone Exchange Online Protection (EOP)."
 ---
 

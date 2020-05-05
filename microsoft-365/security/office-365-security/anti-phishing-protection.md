@@ -13,10 +13,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
-description: "Microsoft 365 offers a variety of protection against phishing attacks by default and also through additional features in Office 365 Advanced Threat Protection (ATP). This topic introduces the online resources you can use to learn about and implement anti-phishing options and strategies in Microsoft 365."
+ms.custom:
+- TopSMBIssues
+- seo-marvel-apr2020
+description: "This article introduces the available online resources that can be utilized to learn about and implement anti-phishing options and strategies in Microsoft 365."
 ---
 
 # Anti-phishing protection in Microsoft 365

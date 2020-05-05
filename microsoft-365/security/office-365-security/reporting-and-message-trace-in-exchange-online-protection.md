@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
-description: "Microsoft Exchange Online Protection (EOP) offers many different reports that can help you determine the overall status and health of your organization. There are also tools to help you troubleshoot specific events (such as a message not arriving to its intended recipients), and auditing reports to aid with compliance requirements. The following table describes the reports and troubleshooting tools available to EOP admins."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn about reports and troubleshooting tools available to Microsoft Exchange Online Protection (EOP) admins."
 ---
 
 # Reporting and message trace in Exchange Online Protection

@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
-description: "As a global administrator, you can use Attack Simulator to run realistic attack scenarios in your organization. This can help you identify and find vulnerable users before a real attack hits your business."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to use Attack Simulator to run simulated phishing and password attacks in your Microsoft 365 E5 or ATP Plan 2 organization."
 ---
 
 # Attack Simulator in ATP
