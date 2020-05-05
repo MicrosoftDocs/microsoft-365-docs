@@ -14,7 +14,9 @@ search.appverid:
 ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
-description: "Frequently asked questions and answers for admins about anti-spam protection in Exchange Online and standalone Exchange Online Protection (EOP)."
+ms.custom:
+- seo-marvel-apr2020
+description: "This topic provides FAQs & answers about anti-spam protection. Answers are applicable for Microsoft Exchange Online & Exchange Online Protection (EOP) customers."
 ---
 
 # Anti-spam protection FAQ

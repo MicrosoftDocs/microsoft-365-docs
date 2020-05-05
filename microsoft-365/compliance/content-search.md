@@ -18,7 +18,9 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Microsoft 365 groups, Yammer Groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content related to a GDPR data subject request."
+ms.custom:
+- seo-marvel-apr2020
+description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in a variety of Office 365 services."
 ---
 
 # Content Search

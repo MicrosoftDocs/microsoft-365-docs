@@ -1,6 +1,6 @@
 ---
 title: "GDPR for Project Server"
-description: "Learn about how to address GDPR requirements in on-premises Project Server."
+description: Learn how to address General Data Protection Regulations (GDPR) requirements in an on-premises Project Server.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
 # GDPR for Project Server

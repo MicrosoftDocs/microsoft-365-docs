@@ -16,7 +16,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use Office labels as part of your GDPR protection plan."
+description: Learn how to use Office labels as part of your General Data Protection Regulation (GDPR) protection plan.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Apply labels to personal data

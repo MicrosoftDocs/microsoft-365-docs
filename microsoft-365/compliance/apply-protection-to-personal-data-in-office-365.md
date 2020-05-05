@@ -18,7 +18,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use data loss prevention (DLP) policies to protect personal data in Microsoft 365."
+description: Learn how to use data loss prevention (DLP) policies in the compliance center to protect personal data in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 # Apply protection to personal data
 

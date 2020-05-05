@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Add and manage activity alerts in the Security & Compliance Center so that Microsoft 365 will send you email notifications when users perform specific activities."
+description: Add and manage activity alerts in the Security & Compliance Center so that Microsoft 365 will send you email notifications when users perform specific activities
 ---
 
 # Create activity alerts

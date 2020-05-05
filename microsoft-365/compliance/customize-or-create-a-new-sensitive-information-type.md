@@ -17,9 +17,9 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: 
+ms.custom: seo-marvel-apr2020
 ms.assetid:
-description: "Learn how to modify or create new sensitive information types for GDPR."
+description: Learn how to modify or create new Office 365 sensitive information types for General Data Protection Regulations (GDPR).
 ---
 # Customize or create a new sensitive information type
 
