@@ -65,7 +65,7 @@ If you don't have an existing Microsoft 365 Enterprise E5 plan and want to try i
 
 Before enabling the solution broadly in your production environment, you may consider testing the policies with a small set of production users while conducting for the necessary compliance, privacy, and legal reviews in your organization. Evaluating insider risk management in a test environment would require that you generate simulated user actions and other signals to create alerts for triage and cases for processing. Often this isn’t practical for most organizations, so testing insider risk management with a small group of users in a production environment is usually preferred.
 
-Keep the the anonymization feature in policy settings enabled to pseudonymize user display names in the insider risk management console during this testing to maintain privacy within the tool. This helps protect the privacy of users that have policy matches and can help promote objectivity in data investigation and analysis reviews for insider risk alerts.
+Keep the anonymization feature in policy settings enabled to pseudonymize user display names in the insider risk management console during this testing to maintain privacy within the tool. This helps protect the privacy of users that have policy matches and can help promote objectivity in data investigation and analysis reviews for insider risk alerts.
 
 If you don’t see any alerts immediately after configuring an insider risk management policy, it may mean the minimum risk threshold has not been met yet. A good way to check if the policy is triggered and working as expected is to see if the user is in-scope for the policy on the **Users** page.
 
