@@ -60,7 +60,7 @@ When you purchase Microsoft 365 Business Premium, you have the option of using a
 4. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
     > [!IMPORTANT]
-    > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users ](#add-users-and-assign-licenses) instead.
+    > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
     ![Screenshot of the Personalize your sign-in page.](../media/adddomain.png)
 
