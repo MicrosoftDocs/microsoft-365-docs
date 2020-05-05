@@ -1,5 +1,5 @@
 ---
-title: "What the sensitive information types look for"
+title: "Sensitive information types definitions"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,11 +18,11 @@ ms.collection:
 description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
-# What the sensitive information types look for
+# Sensitive information type definitions
 
 Data loss prevention (DLP) in the Security &amp; Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
   
-## ABA Routing Number
+## ABA routing number
 
 ### Format
 
@@ -83,7 +83,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - routing transit number
 - RTN 
    
-## Argentina National Identity (DNI) Number
+## Argentina national identity (DNI) number
 
 ### Format
 
@@ -132,7 +132,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Identidad 
 - Identificación 
    
-## Australia Bank Account Number
+## Australia bank account number
 
 ### Format
 
@@ -195,7 +195,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - iaea
 
    
-## Australia Driver's License Number
+## Australia driver's license number
 
 ### Format
 
@@ -346,7 +346,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Driver's License#
 - Driver's Licenses#
    
-## Australia Medical Account Number
+## Australia medical account number
 
 ### Format
 
@@ -408,7 +408,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - medicare
 
    
-## Australia Passport Number
+## Australia passport number
 
 ### Format
 
@@ -479,7 +479,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - travel document
 - issuing authority
    
-## Australia Tax File Number
+## Australia tax file number
 
 ### Format
 
@@ -564,7 +564,280 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - 8888888888
 - 9999999999
 
-## Azure DocumentDB Auth Key
+## Austria drivers license number
+This sensitive information type entity is included in the EU Driver's License Number bundle.
+
+### Format
+
+Eight digits without spaces and delimiters
+  
+### Pattern
+
+Eight digits
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_austria_eu_driver's_license_number` finds content that matches the pattern. 
+    
+- A keyword from  `Keywords_austria_eu_driver's_license_number` is found. 
+    
+```xml
+<!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_austria_eu_driver's_license_number" />
+          <Match idRef="Keywords_austria_eu_driver's_license_number" />
+        </Pattern>
+    </Entity>
+```
+
+### Keywords
+
+**Keywords_austria_eu_driver's_license_number**
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- driver's licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- fuhrerschein
+- fuhrerschein republik osterreich
+
+## Austria national identification number
+This sensitive information type entity is included in the EU National identification number bundle.
+
+### Format
+
+A 24-character combination of letters, digits, and special characters
+  
+### Pattern
+
+24 characters:
+  
+-  22 letters (not case-sensitive), digits, backslashes, forward slashes, or plus signs 
+    
+- Two letters (not case-sensitive), digits, backslashes, forward slashes, plus signs, or equal signs
+    
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_austria_eu_national_id_card` finds content that matches the pattern. 
+    
+- A keyword from  `Keywords_austria_eu_national_id_card` is found. 
+   
+```xml
+<!-- EU austria_eu_national_id -->
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_austria_eu_national_id_card" />
+          <Match idRef="Keywords_austria_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_austria_eu_national_id_card
+
+- identity number
+- national id
+- personalausweis republik österreich
+
+## Austria passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+### Format
+
+One letter followed by an optional space and seven digits
+  
+### Pattern
+
+A combination of one letter, seven digits, and one space:
+  
+- One letter (not case sensitive)
+    
+- One space (optional)
+    
+- Seven digits
+    
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_austria_eu_passport_number` finds content that matches the pattern. 
+    
+- A keyword from  `Keywords_austria_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_austria_eu_passport_number" />
+          <Match idRef="Keywords_austria_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_austria_eu_passport_number**
+- passport number
+- austrian passport number
+- passport no
+- reisepass
+- österreichisch reisepass
+
+## Austria social security number or equivalent ID
+
+### Format
+
+10 digits in the specified format
+  
+### Pattern
+
+10 digits:
+  
+-  Three digits that correspond to a serial number 
+- One check digit
+- Six digits that correspond to the birth date (DDMMYY)
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
+    
+- A keyword from  `Keywords_austria_eu_ssn_or_equivalent` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_austria_eu_ssn_or_equivalent` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_austria_eu_ssn_or_equivalent" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+            <IdMatch idRef="Func_austria_eu_ssn_or_equivalent" />
+          </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_austria_eu_ssn_or_equivalent
+
+- social security no
+- social security number
+- social security code
+- insurance number
+- austrian ssn
+- ssn#
+- ssn
+- insurance code
+- insurance code#
+- socialsecurityno#
+- sozialversicherungsnummer
+- soziale sicherheit kein
+- versicherungsnummer
+
+## Austria tax ID number
+This sensitive information type entity is included in the EU Tax ID number bundle.
+### Format
+
+Nine digits with optional hyphen and forward slash
+  
+### Pattern
+
+Nine digits with optional hyphen and forward slash:
+  
+- Two digits
+- A hyphen (optional)
+- Three digits
+- A forward slash (optional)
+- Four digits
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_austria_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_austria_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_austria_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_austria_eu_tax_file_number" />
+          <Match idRef="Keywords_austria_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_austria_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_austria_eu_tax_file_number
+
+- österreich
+- st.nr.
+- steuernummer
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+- tax number
+
+## Azure DocumentDB Auth key
 
 ### Format
 
@@ -616,7 +889,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## Azure IAAS Database Connection String and Azure SQL Connection String
+## Azure IAAS database connection string and Azure SQL connection string
 
 ### Format
 
@@ -676,7 +949,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## Azure IoT Connection String
+## Azure IoT connection string
 
 ### Format
 
@@ -736,7 +1009,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## Azure Publish Setting Password
+## Azure publish setting password
 
 ### Format
 
@@ -787,7 +1060,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## Azure Redis Cache Connection String
+## Azure Redis cache connection string
 
 ### Format
 
@@ -1002,7 +1275,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## Azure Storage Account Key (Generic)
+## Azure Storage account key (generic)
 
 ### Format
 
