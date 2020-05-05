@@ -48,7 +48,7 @@ If you change from invoice to credit card or bank account, your current invoice 
 If you change from credit card or bank account to invoice, any outstanding balance is transferred to your next invoice.
   
 > [!NOTE]
-> If you pay by credit card, and your credit card is declined, you receive an email that lets you know that we were unable to process the payment. You can update your credit card information and immediately submit the payment by using the **Settle balance** link on the **Products & services** page. For more information, see [What if my credit card was declined and my payment is past due?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
+> If you pay by credit card, and your credit card is declined, you receive an email that lets you know that we were unable to process the payment. You can update your credit card information and immediately submit the payment by using the **Settle balance** link on the **Your products** page. For more information, see [What if my credit card was declined and my payment is past due?](pay-for-your-subscription.md#what-if-my-credit-card-was-declined-and-my-payment-is-past-due) 
   
 ::: moniker-end
 
@@ -83,7 +83,7 @@ If you're moving from *credit card or bank account to invoice*, any outstanding 
   
 When you change from paying by invoice to paying with a credit card or bank account, we automatically create a new subscription for you, move your users to the new subscription, and then disable your old subscription. Don't worry, your users won't see a disruption in service and all their information will be available through the new subscription.
 
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. If you're in **Table** view, select **Cards**.
 
@@ -138,16 +138,16 @@ You can change to pay by invoice only if your order is above a certain quantity.
 
 If your order quantity is too high, a credit check might be required. If so, you see the message "Not eligible to change to invoice. Your order requires a credit check." In this case, you change to pay by invoice manually. Use the following steps to complete the manual change.
 
-1. Go to <a href="https://Office365.com" target="_blank">Office365.com</a> and buy the same subscription as the one you currently have. At check-out, choose the option to pay by invoice.
+1. Go to <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a> and buy the same subscription as the one you currently have. At check-out, choose the option to pay by invoice.
 
     > [!IMPORTANT]
-    > You can't use the **Products & services** page in the admin center to buy the subscription. You must use  <a href="https://Office365.com" target="_blank">Office365.com</a>.
+    > You can't use the **Your products** page in the admin center to buy the subscription. You must use  <a href="https://Microsoft365.com" target="_blank">Microsoft365.com</a>.
 
 2. After the purchase is complete, cancel the original subscription. Your users are automatically moved to the new subscription.
 
 If no credit check is required, use the following steps to change to paying by invoice.
 
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. If you're in **Table** view, select **Cards**.
 
@@ -193,7 +193,7 @@ If no credit check is required, use the following steps to change to paying by i
 
 You can use the following steps at any time to verify the payment method that's configured for a subscription.
 
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to verify. The payment method that's configured for the subscription appears in the **Billing** section.
 
