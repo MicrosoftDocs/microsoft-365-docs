@@ -5,9 +5,13 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
-ms.custom: seo-marvel-apr2020
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+ms.custom: 
+- M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: "Learn about the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests."

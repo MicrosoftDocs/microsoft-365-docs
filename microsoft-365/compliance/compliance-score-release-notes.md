@@ -57,7 +57,7 @@ Many of the functions handled in Compliance Manager can now be done in Complianc
    - Users must go to Compliance Manager to create new templates and modify existing [templates](working-with-compliance-manager.md#templates). 
    - When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
  - **Setting permissions**: Compliance Score users who didn't already have permissions in Compliance Manager need their permissions set in the Microsoft 365 compliance center ([learn more](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
-- **Transfer of data**: organizations with data in Compliance Manger will see that data in Compliance Score, and the same is true the other way around.
+- **Transfer of data**: organizations with data in Compliance Manager will see that data in Compliance Score, and the same is true the other way around.
 - **Signing in to Compliance Manager from Compliance Score**: if a user is signed in to Compliance Score and selects a link to go to Compliance Manager, the user won't have to sign in again. After clicking the link, a new tab opens in your browser featuring a dialogue box. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select the **Sign In** button to automatically sign in to Compliance Manager.
 
 ## Known issues in Compliance Score (Preview)

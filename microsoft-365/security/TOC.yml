@@ -135,8 +135,8 @@
                       href: mtp/advanced-hunting-deviceimageloadevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
-                    - name: DeviceFileCertificateInfoBeta
-                      href: mtp/advanced-hunting-devicefilecertificateinfobeta-table.md
+                    - name: DeviceFileCertificateInfo
+                      href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -271,6 +271,8 @@
                       href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
                     - name: Manually submit messages to Microsoft
                       href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md 
+                    - name: Use mail flow rules to see what your users are reporting to Microsoft
+                      href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: Submit malware and non-malware to Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Anti-spam message headers

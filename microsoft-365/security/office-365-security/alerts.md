@@ -12,6 +12,7 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
+- MET150
 - BCS160
 ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:

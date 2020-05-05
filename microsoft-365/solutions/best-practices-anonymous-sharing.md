@@ -5,9 +5,13 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
-ms.custom: seo-marvel-apr2020
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+ms.custom: 
+- M365solutions
+- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
 description: "In this article, you'll learn about the best practices for sharing files and folders with unauthenticated users."

@@ -15,17 +15,17 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: Learn about encryption available in Azure for Office 365, such as Azure Disk Encryption
+description: Learn about encryption available in Azure, such as Azure Disk Encryption
 ms.custom: seo-marvel-apr2020
 ---
 
 # Encryption in Azure
 
+Technological safeguards in Azure, such as encrypted communications and operational processes, help keep your data secure. You also have the flexibility to implement additional encryption features and manage your own cryptographic keys. Regardless of customer configuration, Microsoft applies encryption to protect customer data in Azure. Microsoft also enables you to control your data hosted in Azure through a range of advanced technologies to encrypt, control, and manage cryptographic keys, and control and audit access to data. In addition, Azure Storage provides a comprehensive set of security capabilities which together enable developers to build secure applications.
+
 ## Introduction
 
-Technological safeguards in Azure, such as encrypted communications and operational processes, help keep your data secure. You also have the flexibility to implement additional encryption features and manage your own cryptographic keys. Regardless of customer configuration, Microsoft applies encryption to protect customer data in Azure. Microsoft also enables you to control your data hosted in Azure through a range of advanced technologies to encrypt, control and manage cryptographic keys, control and audit access to data. In addition, Azure Storage provides a comprehensive set of security capabilities which together enable developers to build secure applications.
-
-Azure offers many mechanisms for protecting data as it moves from one location to another. Microsoft uses TLS to protect data when it's traveling between the cloud services and customers. Microsoft's datacenters negotiate a TLS connection with client systems that connect to Azure services. Perfect Forward Secrecy (PFS) protects connections between customers' client systems and Microsoft's cloud services by unique keys. Connections also use RSA-based 2,048-bit encryption key lengths. This combination makes it difficult for someone to intercept and access data that is in-transit.
+Azure offers many mechanisms for protecting data as it moves from one location to another. Microsoft uses TLS to protect data when it's traveling between the cloud services and customers. Microsoft's data centers negotiate a TLS connection with client systems that connect to Azure services. Perfect Forward Secrecy (PFS) protects connections between customers' client systems and Microsoft's cloud services by unique keys. Connections also use RSA-based 2,048-bit encryption key lengths. This combination makes it difficult for someone to intercept and access data that is in-transit.
 
 Data can be secured in transit between an application and Azure by using [client-side encryption](https://docs.microsoft.com/azure/storage/storage-client-side-encryption), HTTPS, or SMB 3.0. You can enable encryption for traffic between your own virtual machines (VMs) and your users. With [Azure Virtual Networks](https://azure.microsoft.com/services/virtual-network/), you can use the industry-standard IPsec protocol to encrypt traffic between your corporate VPN gateway and Azure as well as between the VMs located on your Virtual Network.
 
@@ -37,7 +37,7 @@ For more information about encryption in Azure, see [Azure encryption overview](
 
 Azure Disk Encryption enables you to encrypt your Windows and Linux Infrastructure as a Service (IaaS) VM disks. Azure Disk Encryption leverages the BitLocker feature of Windows and the DM-Crypt feature of Linux to provide volume-level encryption for the operating system and the data disks. It also ensures that all data on the VM disks are encrypted at rest in your Azure storage. Azure Disk Encryption is integrated with Azure Key Vault to help you control, manage, and audit the use of the encryption keys and secrets.
 
-For more information, see [Security recommendations for Windows virtual machines in Azure](https://docs.microsoft.com/azure/security/azure-security-disk-encryption).
+For more information, see [Security recommendations for Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/security-recommendations).
 
 ## Azure Storage Service Encryption
 

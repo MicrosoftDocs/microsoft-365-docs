@@ -21,9 +21,9 @@ ms.custom: seo-marvel-apr2020
 # Microsoft Compliance Manager (Classic)
 
 > [!NOTE]
-> This documentation describes a legacy product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new  [Microsoft Compliance Score](compliance-score.md).
+> This documentation describes a previous version of this product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new [Microsoft Compliance Score](compliance-score.md).
 
- *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.* 
+ *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
   
 Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure. 
 

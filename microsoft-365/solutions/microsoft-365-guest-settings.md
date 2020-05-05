@@ -5,11 +5,14 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.collection: SPO_Content
-ms.custom: seo-marvel-apr2020
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
 f1.keywords: NOCSH
 ms.custom: 
+- M365solutions
+- seo-marvel-apr2020
 localization_priority: Priority
 description: "Learn about the guest sharing settings available in Microsoft 365 that can affect sharing with people outside your organization."
 ---

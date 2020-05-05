@@ -72,10 +72,7 @@ Each item of content can have a single sensitivity label applied to it. An item 
 ## What sensitivity labels can do
 
 > [!NOTE]
-> In addition to applying labels to emails and documents in Office apps, sensitivity labels are now also available in the following public preview releases:
-> 
-> - [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md)
-> - [Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)
+> In addition to applying sensitivity labels to emails and documents, currently in preview, you can also [use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
 
 After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
 
@@ -136,20 +133,24 @@ After you create your sensitivity labels, you need to publish them, to make them
 
 With a label policy, you can:
 
-- **Choose which users and groups see the labels.** Labels can be published to any email-enabled security group, Microsoft 365 group, or dynamic distribution group.
+- **Choose which users and groups see the labels.** Labels can be published to any specific user or email-enabled security group, distribution group, or Microsoft 365 group (which can have [dynamic membership](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)) in Azure AD.
 
-- **Apply a default label** to all new documents and email created by the users and groups included in the label policy. This option also applies to containers, if you've [enabled sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md). Users can always change the default label if it's not the right label for their document or email. Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling. 
+- **Apply a default label** to all new documents and email created by the users and groups included in the label policy. This option also applies to containers, if you've [enabled sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md). Users can always change the default label if it's not the right label for their document or email. 
+    
+    Consider using a default label to set a base level of protection settings that you want applied to all your content. However, without user training and other controls, this setting can also result in inaccurate labeling. It's usually not a good idea to select a label that applies encryption as a default label to documents. For example, many organizations need to send and share documents with external users who might not have [apps that support the encryption](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) or they might not use an [account that can be authorized](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#supported-scenarios-for-opening-protected-documents).
 
 - **Require a justification for changing a label.** If a user tries to remove a label or replace it with a label that has a lower order number, you can require the user provides a justification to perform this action. For example, a user opens a document labeled Confidential (order number 3) and replaces that label with one named Public (order number 1). Currently, the justification reason isn't sent to [label analytics](label-analytics.md) for the admin to review. However, the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2) sends this information to [Azure Information Protection analytics](https://docs.microsoft.com/azure/information-protection/reports-aip).
 
     ![Prompt where users enter a justification](../media/Sensitivity-label-justification-required.png)
 
-- **Require users to apply a label to their email and documents.** Also known as mandatory labeling, you can require that a label must be applied before users can save documents and send emails. Use this option to help increase your labeling coverage. The label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option described above). The prompt shown in Outlook when a user is required to assign a label:
+- **Require users to apply a label to their email and documents.** Also known as mandatory labeling, you can require that a label must be applied before users can save documents and send emails. The label can be assigned manually by the user, automatically as a result of a condition that you configure, or be assigned by default (the default label option described above). An example prompt shown in Outlook when a user is required to assign a label:
 
     ![Prompt in Outlook asking user to apply required label](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
     > [!NOTE]
-    > Mandatory labeling requires an Azure Information Protection subscription. To use this feature, you must install the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). This client runs only on Windows, so this feature is not yet supported on Mac, iOS, and Android.
+    > Mandatory labeling currently requires the [Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). This client runs only on Windows, so this feature is not yet supported on Mac, iOS, and Android.
+    
+    Consider using this option to help increase your labeling coverage. However, without user training, this setting can result in inaccurate labeling. In addition, unless you also set a default label, mandatory labeling can frustrate your users with the frequent prompts. 
 
 - **Provide help link to a custom help page.** If your users aren't sure what your sensitivity labels mean or how they should be used, you can provide a Learn More URL that appears at the bottom of the **Sensitivity label** menu in the Office apps:
 

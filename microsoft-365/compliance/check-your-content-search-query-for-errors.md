@@ -10,7 +10,9 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom:
 - seo-marvel-apr2020

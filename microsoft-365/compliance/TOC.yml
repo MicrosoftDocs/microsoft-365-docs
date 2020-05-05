@@ -149,6 +149,10 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
+    - name: Encryption in Microsoft 365
+      href: encryption.md
+    - name: Office 365 Service encryption
+      href: office-365-service-encryption.md    
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -161,6 +165,8 @@
           href: customer-key-availability-key-roll.md
         - name: Learn about the availability key for Customer Key
           href: customer-key-availability-key-understand.md
+    - name: Encryption for data in transit
+      href: office-365-encryption-for-data-in-transit.md
     - name: Email encryption
       href: email-encryption.md
       items: 
@@ -200,6 +206,8 @@
               href: legacy-information-for-message-encryption.md
             - name: Set up Azure Rights Management for the previous version of Office 365 Message Encryption
               href: set-up-azure-rms-for-previous-version-message-encryption.md
+    - name: Set up IRM in SharePoint admin center
+      href: set-up-irm-in-sp-admin-center.md
     - name: Understand data classification (preview)
       href: data-classification-overview.md
       items: 
@@ -277,8 +285,8 @@
           href: automate-event-driven-retention.md
         - name: Manage the lifecycle of SharePoint documents
           href: auto-apply-retention-labels-scenario.md
-    - name: Dispose data
-      href: disposition-reviews.md
+    - name: Dispose of data
+      href: disposition.md
     - name: Manage inactive mailboxes
       items: 
         - name: Overview of inactive mailboxes
@@ -332,7 +340,7 @@
             - name: Automate event-based retention
               href: automate-event-driven-retention.md
         - name: Disposition
-          href: disposition-reviews.md
+          href: disposition.md
         - name: More about records management
           items: 
             - name: Watch videos about records management
@@ -507,8 +515,6 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: add-data-to-review-set-from-another-review-set.md
-            - name: Manage load sets
-              href: manage-load-sets-in-advanced-ediscovery.md
         - name: Review case data
           items: 
             - name: Use the review set dashboard (preview)
@@ -1200,6 +1206,8 @@
               href: offering-lopd-spain.md
             - name: PASF (UK)
               href: offering-pasf-uk.md
+            - name: Personal Data Localization (Russia)
+              href: offering-russia-data-localization.md
         - name: North America
           items: 
             - name: California Consumer Privacy Act (CCPA)

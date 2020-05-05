@@ -13,7 +13,9 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: "Use Content Search in the Security & Compliance Center to perform targeted collections. A targeted collection means that you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search."
 ---

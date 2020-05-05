@@ -10,6 +10,8 @@ ms.date: 05/17/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection:
 - M365-security-compliance
 ms.custom:

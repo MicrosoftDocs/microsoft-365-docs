@@ -2,8 +2,8 @@
 title: "Customize the theme for your organization"
 f1.keywords:
 - CSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,7 +21,7 @@ ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: "Learn to change the default theme of Microsoft 365 and customize it to match your company logo or color. "
 ---
 
-# Customize the theme for your organization
+# Customize the Microsoft 365 theme for your organization
 
 Learn how to customize your theme in the Microsoft 365 admin center. As the admin of your Microsoft 365 for business subscription, you can change the default theme that appears in the top navigation bar for everyone in the organization. You can add your company logo and change the colors to match the rest of your brand. You can even add a destination link for users to navigate to when they select your logo. You can see here the default theme and custom theme result in Microsoft 365.
   
@@ -59,7 +59,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
     
 4. Select **Save changes**.
     
-You'll see your new theme on the admin center right away and after a short delay, you'll see it throughout Microsoft 365, including pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/en-us/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/en-us/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). See the following graphic for an example of where you an customize theme changes from the admin center.
+You'll see your new theme on the admin center right away and after a short delay, you'll see it throughout Microsoft 365, including pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). For an example of where you can customize theme changes from the admin center, see the following image.
 
 ![m365-admin-tenant-theme-conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
@@ -67,7 +67,7 @@ You can remove your custom icon or custom colors at any time. Just return to the
   
 ## Best Practices
 
-When choosing a **Logo image**, we recommend using an SVG file type, wherever possible, so that your logo will have a high resolution appearance on all screens and at all zoom levels.
+When choosing a **Logo image**, we recommend using an SVG file type, so that your logo will have a high resolution appearance on all screens and at all zoom levels.
 
 When choosing custom colors, choose a **Nav bar background color** that has a high contrast ratio with the **Logo image** that you picked. Also choose a **Text and icons** color with a high contrast ratio to the **Nav bar background color** to ensure that all text and icons are easily visible.
 
@@ -94,4 +94,3 @@ Here is a simple flow chart to help you quickly get set up with a visually appea
 [Add custom tiles to the My apps page and app launcher](../manage/customize-the-app-launcher.md)
   
   
-
