@@ -1,5 +1,5 @@
 ---
-title: "Find and release quarantined messages as a user"
+title: Find and release quarantined messages as a user
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Microsoft 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to view and manage quarantined messages in the Security & Compliance Center in Microsoft 365."
 ---
 
 # Find and release quarantined messages as a user
@@ -33,7 +35,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
 - Admins can also [enable end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in anti-spam policies. Users can release spam quarantined messages but not phish quarantined messages directly from these notifications. For more information, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+- Messages that were quarantined for high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. Phish messages can be reviewed by users but only released by admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
 
 - You can only release a message and report it as a false positive (not junk) once.
 

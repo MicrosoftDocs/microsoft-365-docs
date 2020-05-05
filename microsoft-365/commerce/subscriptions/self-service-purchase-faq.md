@@ -114,7 +114,7 @@ Admins can assign existing licenses or purchase additional subscriptions of Powe
 
 ### Where does the admin see self-service purchases?
 
-Global and billing admins can see subscriptions bought through self-service purchase in **Billing** > **Products & services** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> together with all other subscriptions purchased through central procurement. They can filter the list to just the subscriptions purchased through central procurement or include subscriptions bought through self-service purchase.
+Global and billing admins can see subscriptions bought through self-service purchase in **Billing** > **Your products** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> together with all other subscriptions purchased through central procurement. They can filter the list to just the subscriptions purchased through central procurement or include subscriptions bought through self-service purchase.
 
 Admins can see the product, purchaser name, subscription purchased, expiry date, order history, the purchase price, and assigned users.
 

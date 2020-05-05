@@ -17,7 +17,6 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
@@ -25,16 +24,74 @@ ms.custom:
 
 # What's new in the Microsoft 365 admin center
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Some of the information in this article may not apply to Office 365 operated by 21Vianet.
+
+::: moniker-end
+
 We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
 > [!IMPORTANT]
 > **"Classic" admin center retirement starting in March**<br><br>
 When you sign-in to admin.microsoft.com, you'll now go to the new admin center every time. And in March, we will start disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: March 2, 2020*
 
-And if you're interested in what's new in other admin centers:
+And if you're interested in what's new in other Microsoft cloud services:
 
+- [What's New in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
+- [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
+- [Office updates](https://docs.microsoft.com/OfficeUpdates/)
+
+## March 2020
+
+### Featured Feedback Fix: Improve "add user" reliability for licensing
+
+We received a lot of feedback from admins about the how hard it is to assign licenses when adding users. We've made the first update to this fix and we've migrated to a more reliable behind-the-scenes service to process those requests. And if something goes wrong, you'll now get an error message that lets you to try again.
+
+:::image type="content" source="../media/MAC-WN-ImprovedLicensing.png" alt-text="Add user confirmation page with the error.":::
+
+### Microsoft Teams home page card
+
+With the uptick in Teams usage, some orgs will get a pinned dashboard card that makes turning Teams on more discoverable. The card also has links to training and docs to help your org transition to remote work. Just go to the **Home** page to see the new card.
+
+:::image type="content" source="../media/MAC-WN-TeamsCard.PNG" alt-text="Microsoft Teams home page card":::
+
+### Customize your organization's SharePoint mobile app theme
+
+Using the Microsoft 365 admin center, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
+
+:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram mapping the admin center settings to the mobile app.":::
+
+:::image-end:::
+
+### Improvements to the "Add a group" wizard
+
+When admins created a new group - and made it a Team at they same time, they could assign owners who don't have a license that includes Teams. And that created some headaches. We've updated the wizard flow to verify that owners have a Teams license and if they don't the option to turn the group into a Team is disabled.
+
+### Microsoft 365 offerings for small and medium businesses
+
+We know that this is an announcement for next month, but we want to make sure you're prepared.
+
+Starting on April 21, we're making changes related to our Office 365 subscriptions for small and medium businesses – and to Office 365 ProPlus. These products will now use the Microsoft 365 brand.
+
+The new product names go into effect on April 21, 2020. This is a change to the product name only, and there are no pricing or feature changes at this time.
+
+|Current name |New name  |
+|---------|---------|
+|Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
+|Office 365 Business Premium     |    Microsoft 365 Business Standard     |
+|Microsoft 365 Business     |    Microsoft 365 Business Premium     |
+|Office 365 Business     |    Microsoft 365 Apps for business       | 
+|Office 365 ProPlus    |   Microsoft 365 apps for enterprise      |
+
+### Videos, training, and docs
+
+[What's New in Microsoft 365 web series](https://go.microsoft.com/fwlink/p/?linkid=2118096): In this month's episode, we highlight the 3-year anniversary of Microsoft Teams and cover new features including improved audio quality in online meetings, Targeted Communications for firstline managers with the Shifts app, Teams and Skype consumer interoperability, and more.
+
 
 ## February 2020
 
@@ -114,11 +171,11 @@ We're combining November's and December's news because after Ignite we had very 
 
 ### Change from credit card to invoice payment
 
-We've starting to roll out the ability to change your payment method from credit card to an invoice. Go to **Billing**\> **Products & services**, select a subscription, and then select the **Edit** link next to the credit card payment.
+We've starting to roll out the ability to change your payment method from credit card to an invoice. Go to **Billing**\> **Your products**, select a subscription, and then select the **Edit** link next to the credit card payment.
 
 ![Screen capture: Billing section of subscription card with a credit card as the payment method.](../media/MAC-BillingEditCreditCard.png)
 
-Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md)
 
 ### Global reader
 
@@ -183,7 +240,7 @@ Service health has been updated to the new style and if you are impacted by an i
 
 ### "Viral" subscriptions
 
-As you know, users can turn on free subscriptions to a myriad of products like Power BI and App Connect. You can now see the "viral subscriptions" that your users have been trying. Go to **Billing** > **Products & services**. Select the **Account type** filter on the subscriptions tab to see the user-purchased subscriptions. If needed, you now have the ability to remove these subscriptions from your account.
+As you know, users can turn on free subscriptions to a myriad of products like Power BI and App Connect. You can now see the "viral subscriptions" that your users have been trying. Go to **Billing** > **Your products**. Select the **Account type** filter on the subscriptions tab to see the user-purchased subscriptions. If needed, you now have the ability to remove these subscriptions from your account.
 
 ### User templates
 
@@ -199,7 +256,7 @@ Technically, this isn't the Microsoft 365 admin center's news to tell, but we're
 > [!IMPORTANT]
 > You can now get to YOUR SharePoint admin center with a regular URL: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
-For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 
 ## September 2019
 
@@ -228,7 +285,7 @@ There's been an update to another of our initial setup wizards: Microsoft 365 fo
 
 We've got some updates for billing and subscriptions this month:
 
-- Device-based subscriptions: You can assign or unassign **Office 365 ProPlus for Education (device)** licenses to devices in the Microsoft 365 admin center. **Office 365 ProPlus for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Products & services** to find and purchase the license.
+- Device-based subscriptions: You can assign or unassign **Microsoft 365 Apps for Education (device)** licenses to devices in the Microsoft 365 admin center. **Microsoft 365 Apps for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Your products** to find and purchase the license.
 - User-based license management: We've updated how you assign licenses in **Users** > **Active users** to the new style. For more information, see:
   - [Assign licenses to users](manage/assign-licenses-to-users.md)
   - [Unassign licenses from users](manage/remove-licenses-from-users.md)
@@ -272,7 +329,7 @@ We've got some exciting changes to help you get your organization set up. First 
 
 ### Billing & subscriptions
 
-- **Software** product type - You can now view software products purchased through a Cloud Service Provider (CSP). To see your downloads and keys, go to **Billing** > **Products & services** > **Software** tab.
+- **Software** product type - You can now view software products purchased through a Cloud Service Provider (CSP). To see your downloads and keys, go to **Billing** > **Your products** > **Software** tab.
 - You can view Modern Azure products and services from the Microsoft 365 admin center, whether you purchased them from Microsoft or a third-party provider. Examples of Modern Azure products included:
   - Azure Reserved Virtual Instances
   - Azure Support Plans
@@ -371,7 +428,7 @@ We've made a few more changes to **user management**, here's a quick list:
 - There's a bonanza of **Billing** changes this month...
   - You can now update the CVV for existing credit cards without having to delete it and add it again. You can update the CVV by going to **Bills** > **Payment methods**.
     - We've made it easier to locate your **Invoices** and understand any billing issues your account may be having. And now you can see your Bills in the web browser instead of having to download the PDF. Go to **Bills** > **Invoices**.
-    - On the **Products & services** page, we now aggregate your subscription information if you've got multiple subscriptions of the same type.
+    - On the **Your products** page, we now aggregate your subscription information if you've got multiple subscriptions of the same type.
 
 ## March 2019 - We've officially released the admin center
 

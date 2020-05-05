@@ -16,7 +16,8 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: "Summary: Office 365 Message Encryption policy for sensitive information types."
+description: Learn how to create a sensitive information type policy for your organization using Office 365 Message Encryption.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Create a sensitive information type policy for your organization using Message Encryption

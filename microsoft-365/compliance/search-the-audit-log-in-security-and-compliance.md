@@ -108,7 +108,7 @@ Be sure to read the following items before you start searching the audit log.
 
 - It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log record to be returned in the results of an audit log search. The following table shows the time it takes for the different services in Office 365.
 
-  |**Microsoft 365 service**|**30 minutes**|**24 hours**|
+  |**Microsoft 365 service or feature**|**30 minutes**|**24 hours**|
   |:-----|:-----:|:-----:|
   |Advanced Threat Protection and Threat Intelligence|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Azure Active Directory (user login events)||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -124,6 +124,7 @@ Be sure to read the following items before you start searching the audit log.
   |Power Apps||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Power BI|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Security & Compliance Center|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+  |Sensitivity labels||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |SharePoint Online and OneDrive for Business|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
   |Sway||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
   |Workplace Analytics|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||

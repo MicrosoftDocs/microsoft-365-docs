@@ -24,7 +24,9 @@ search.appverid:
 >[!IMPORTANT]
 >Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
+Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the Microsoft 365 security center.
+
+Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
 Secure Score helps organizations:  
 
@@ -149,9 +151,34 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 ## What's new? 
 
-To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### Updated interface and functionality
+### April 21st 2020
+
+#### Added Azure Active Directory improvement action
+
+- Do not allow users to grant consent to unmanaged applications (currently available in released version)
+
+#### Added Azure Advanced Threat Protection improvement actions
+
+- Disable Print spooler service on domain controllers
+- Modify unsecure Kerberos delegations to prevent impersonation
+- Protect and manage local admin passwords with Microsoft LAPS
+- Reduce lateral movement path risk to sensitive entities
+- Remove dormant accounts from sensitive groups
+- Remove unsecure SID history attributes from entities
+- Resolve unsecure account attributes
+- Stop clear text credentials exposure
+- Stop legacy protocols communication
+- Stop weak cipher usage
+
+#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
+
+All released security recommendations supplied by TVM are now available.
+
+### January - March 2020
+
+#### Updated interface and functionality
 
 * All new metrics and trends views for CISO and lead level discussions
 * New ways to track and benchmark your score
@@ -160,13 +187,13 @@ To make Microsoft Secure Score a better representative of your security posture,
 * Manage towards your future goals using score projections and planned actions
 * And more!
 
-### Removed "not scored" and "review" improvement actions
+#### Removed "not scored" and "review" improvement actions
 
 One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.
 
 For these reasons, all improvement actions that were not scored or required a review cadence have been temporarily removed. No action is needed on your part.
 
-### Simplification of the point system
+#### Simplification of the point system
 
 To standardize points across multiple experiences, each Secure Score improvement action point total has been updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.
 

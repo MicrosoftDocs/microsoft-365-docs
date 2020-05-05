@@ -22,7 +22,7 @@ search.appverid:
 
 # Communication compliance in Microsoft 365
 
-Communication compliance is part of the new insider risk solution set in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
+Communication compliance is part of the new insider risk solution set in Microsoft 365 that helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 
 Communication compliance policies in Microsoft 365 help you overcome many modern challenges associated with compliance and internal and external communications, including:
 
@@ -94,6 +94,7 @@ Communication compliance policies scan and capture messages across several commu
 
 - **Microsoft Teams**: Chat communications for public and private [Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview) channels and individual chats are supported in communication compliance as a standalone channel source or with other Microsoft 365 services. Policies now automatically scan all Microsoft Teams channels and teams for specific users defined in a policy, eliminating the need to keep a separate mapping list for Microsoft Teams assignments.
 - **Exchange Online**: All mailboxes hosted on [Exchange Online](https://docs.microsoft.com/Exchange/exchange-online) in your Microsoft 365 organization are eligible for scanning. Emails and attachments matching communication compliance policy conditions are instantly available for monitoring and in supervision reports. Exchange Online is now an optional source channel and is no longer required in communication compliance policies.
+- **Yammer**: Private messages and public community conversations in [Yammer](https://docs.microsoft.com/yammer/yammer-landing-page) are supported in communication compliance policies. Yammer is an optional channel and must be in [native mode](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) to support scanning of messages and attachments.
 - **Skype for Business Online**: Communication compliance policies support scanning chat communications and associated attachments in [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-online).
 - **Third-party sources**: You can scan messages from [third-party sources](archiving-third-party-data.md) for data imported into mailboxes in your Microsoft 365 organization. Communication compliance supports connections to several popular platforms, including Instant Bloomberg, Facebook, Twitter, and others.
 
@@ -150,4 +151,6 @@ Keeping track and managing compliance issues identified by communication complia
 
 ## Ready to get started?
 
-To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md) or check out the [case study for Contoso](communication-compliance-case-study.md) and how they quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams and Exchange Online communications.
+- For planning information, see [Plan for communication compliance](communication-compliance-plan.md).
+- Check out the [case study for Contoso](communication-compliance-case-study.md) and see how they quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications.
+- To configure communication compliance for your Microsoft 365 organization, see [Configure communication compliance for Microsoft 365](communication-compliance-configure.md).

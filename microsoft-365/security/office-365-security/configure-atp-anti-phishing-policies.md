@@ -24,9 +24,9 @@ Admins can view, edit, and configure (but not delete) the default ATP anti-phish
 
 You can configure ATP anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.
 
-For information about configuring the more limited built-in anti-phishing policy that's available in Exchange Online Protection organizations (that is, Office 365 organizations without ATP), see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md).
+For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection organizations (that is, Office 365 organizations without ATP), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-## ATP anti-phishing policies in the Office 365 Security & Compliance Center vs Exchange Online PowerShell
+## ATP anti-phishing policies in the Security & Compliance Center vs Exchange Online PowerShell
 
 The basic elements of an ATP anti-phishing policy are:
 
@@ -239,7 +239,7 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
 6. **Spoof**: Click **Edit** to turn spoof intelligence on or off, turn unauthenticated sender identification in Outlook on or off, and configure the action to apply to messages from blocked spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md#spoof-settings).
 
-   Note that these settings are identical to the settings that are available in the default anti-phishing policy in EOP.
+   Note that these same settings are also available in anti-phishing policies in EOP.
 
    - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
 
@@ -403,7 +403,7 @@ This example creates anti-phish policy named Research Quarantine with the follow
 - Enables safety tips.
 
 ```powershell
-New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Default monitoring policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
+New-AntiPhishPolicy -Name "Monitor Policy" -AdminDisplayName "Research department policy" -EnableOrganizationDomainsProtection $true -EnableTargetedDomainsProtection $true -TargetedDomainsToProtect fabrikam.com -TargetedDomainProtectionAction Quarantine -EnableTargetedUserProtection $true -TargetedUsersToProtect "Mai Fujito;mfujito@fabrikam.com" -TargetedUserProtectionAction Quarantine -EnableMailboxIntelligence $true -EnableMailboxIntelligenceProtection $true -MailboxIntelligenceProtectionAction Quarantine -EnableSimilarUsersSafetyTips $true -EnableSimilarDomainsSafetyTips $true -EnableUnusualCharactersSafetyTips $true
 ```
 
 For detailed syntax and parameter information, see [New-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/New-AntiPhishPolicy).

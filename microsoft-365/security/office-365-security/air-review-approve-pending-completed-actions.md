@@ -40,8 +40,8 @@ While viewing the [details of an investigation](air-view-investigation-results.m
 5. Select an item in the list. (This activates the Approve and Reject buttons.)
 
 6. Review available information for the item(s) you selected, and then either approve or reject the action(s). 
- - **Approve** allows remediation to begin.
- - **Reject** takes no further action
+   - **Approve** allows remediation to begin.
+   - **Reject** takes no further action
 
 ## Next steps
 
