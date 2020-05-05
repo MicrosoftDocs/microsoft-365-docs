@@ -11,9 +11,10 @@ ms.collection:
 - M365-security-compliance
 ms.custom: 
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: "Learn how to create a secure guest sharing environment in Microsoft 365."
+description: "In this article, you will learn about the available options to create a secure guest sharing environment in Microsoft 365."
 ---
 
 # Create a secure guest sharing environment

@@ -116,16 +116,7 @@ Updated January 2019
 
 For more information, see the article for this poster: [Microsoft Telephony Solutions](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions).
   
-<a name="msd"></a>
-### Deploy a modern and secure desktop with Microsoft
-
-What IT architects need to know about deploying and managing updates for Microsoft 365 Apps for enterprise (previously named Office 365 ProPlus) on Windows 10.
   
-
-|**Item**|**Description**|
-|:-----|:-----|
-|[![Thumbnail for the Deploy a modern and secure desktop with Microsoft model](../media/solutions-architecture-center/deploy-modern-desktop-thumb.png)](https://www.microsoft.com/download/details.aspx?id=55987) <br/> [PDF](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.pdf)  \| [Visio](https://download.microsoft.com/download/4/E/9/4E90E227-770A-41D1-99FE-925A64D81A55/MSFT_modern_secure_desktop.vsdx) <br/>Updated September 2017 | This model contains: <ul><li>  Deploying Windows 10 and Microsoft 365 Apps for enterprise from the Microsoft cloud </li><li>  Deploying Windows 10 and Microsoft 365 Apps for enterprise with Microsoft Endpoint Configuration Manager </li><li>  Managing updates for Windows 10 and Microsoft 365 Apps for enterprise from the Microsoft cloud </li><li>  Managing updates for Windows 10 and Microsoft 365 Apps for enterprise with Microsoft Endpoint Configuration Manager </li><li>  Out-of-the-box and additional protection capabilities of Windows 10 </li></ul><br/> |
-   
 ## See Also
 
 [Architectural models for SharePoint, Exchange, Skype for Business, and Lync](https://docs.microsoft.com/office365/enterprise/architectural-models-for-sharepoint-exchange-skype-for-business-and-lync)

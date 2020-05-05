@@ -39,6 +39,7 @@ It is important to understand that PCI DSS compliance status for Azure, OneDrive
 - Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Graph
 - Intune
+- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - OneDrive for Business and SharePoint Online (United States only)
@@ -50,7 +51,7 @@ It is important to understand that PCI DSS compliance status for Azure, OneDrive
 
 ## Get your PCI DSS solution running on Azure
 
-Build and deploy your PCI DSS solution in the cloud even faster with the Azure Security and Compliance PCI DSS Blueprint. Get reference architectures, deployment guidance, control implementation mappings, automated scripts and more. [Start using the Azure PCI DSS Blueprint](https://aka.ms/pciblueprint)
+Build and deploy your PCI DSS solution in the cloud even faster with the Azure Security and Compliance PCI DSS Blueprint. Get reference architectures, deployment guidance, control implementation mappings, automated scripts and more. [Start using the Azure PCI DSS Blueprint](https://aka.ms/pciblueprint).
 
 ## Frequently asked questions
 

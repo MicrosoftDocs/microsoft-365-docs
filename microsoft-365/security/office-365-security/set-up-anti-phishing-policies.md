@@ -13,7 +13,9 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: "Learn about the basic anti-phishing policy in Exchange Online Protection (EOP) and the advanced ATP anti-phishing policies in Office 365 Advanced Threat Protection."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to setup Anti-phishing protection in Microsoft 365, to protect your organization from malicious phishing attacks."
 ---
 
 # Anti-phishing policies in Microsoft 365

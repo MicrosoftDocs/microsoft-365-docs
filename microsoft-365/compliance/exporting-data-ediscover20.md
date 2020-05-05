@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to export or download content from a review set for presentations or external reviews in an Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Export case data in Advanced eDiscovery
