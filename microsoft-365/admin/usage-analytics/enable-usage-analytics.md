@@ -71,7 +71,7 @@ To initiate the template app, you have to be either a **global administrator**, 
 
 5.	Click **Explore app** to view the app with sample data. Click **Connect** to connect the app to your organization’s data.
 
-6.	After clicking **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, type in the tenant Id you copied in step (1) \> **Next**.
+6.	After clicking **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, type in the tenant Id (without dashes) you copied in step (1) **Next**.
     
 7. On the next screen, select **oAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
     
