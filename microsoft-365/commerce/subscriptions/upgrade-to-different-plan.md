@@ -37,7 +37,7 @@ When your business changes, or you need more features, you can upgrade plans. Th
 
 When you use the **Upgrade** tab, you're led through the process of buying a new plan. All users are automatically assigned licenses in the new plan, and your old plan is canceled for you.
 
-1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the Admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Select the subscription that you want to upgrade.
 
@@ -54,7 +54,7 @@ When you use the **Upgrade** tab, you're led through the process of buying a new
 
 7. When you're finished, select **Place order**.
 
-When you finish checkout, it might take a few minutes to finalize the upgrade. You can start using your new subscription right away. Select **Check upgrade status** to check the progress of the upgrade. You'll be notified when the upgrade is complete. The notification is displayed on the **Products & services** page, next to your new subscription.
+When you finish checkout, it might take a few minutes to finalize the upgrade. You can start using your new subscription right away. Select **Check upgrade status** to check the progress of the upgrade. You'll be notified when the upgrade is complete. The notification is displayed on the **Your products** page, next to your new subscription.
 
 ## The Upgrade tab is empty
 
@@ -136,7 +136,7 @@ If you have an Add-on with your subscription, you might be able to [change plans
 
 #### Your subscription has an unpaid balance
 
-To resolve this, find the subscription on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page, and select the **Pay now** link in the **Billing** section. After the payment has been made, check the **Upgrade** tab again.
+To resolve this, find the subscription on the <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page, and select the **Pay now** link in the **Billing** section. After the payment has been made, check the **Upgrade** tab again.
 
 ## What does upgrading a plan do to my service and billing?
 
