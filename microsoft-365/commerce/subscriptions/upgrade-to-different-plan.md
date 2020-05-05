@@ -28,13 +28,6 @@ monikerRange: 'o365-worldwide'
 
 # Upgrade to a different plan
 
-::: moniker range="o365-21vianet"
-
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
 When your business changes, or you need more features, you can upgrade plans. The easiest way to do this is to use the **Upgrade** tab in the admin center. However, using the **Upgrade** tab isn't supported in all situations. In some cases, you might be able to change plans manually.
 
 > [!NOTE]
