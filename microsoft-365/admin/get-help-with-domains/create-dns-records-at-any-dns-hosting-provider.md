@@ -36,7 +36,7 @@ If you don't know the DNS hosting provider or domain registrar for your domain, 
 To set up the records yourself, these are the records to add. Note that your verification record and MX record are unique to your domain. To set them up, you'll need to get and use a specific "token" value for your domain. The steps below explain how to do that.
   
 > [!IMPORTANT]
-> The exact name of the boxes or  *fields*  you type or paste the information into, to create each type of DNS record, are different for each DNS host. Your DNS host may have Help on their website to assist you in mapping the instructions we show here to the exact fields on their website. Remember to check to see if we have step-by-step instructions for your DNS host in [Create DNS records for Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). > Some DNS hosts don't let you create all of the required record types, which [causes service limitations](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Microsoft 365. If your domain's host doesn't support SRV, TXT, or CNAME records, for example, we recommend that you [transfer your domain](../get-help-with-domains/buy-a-domain-name.md) to a DNS host that does support all required records. For a fast, automated process setting up with Microsoft 365, we recommend that you transfer your domain to GoDaddy. 
+> The exact name of the boxes or  *fields*  you type or paste the information into, to create each type of DNS record, are different for each DNS host. Your DNS host may have Help on their website to assist you in mapping the instructions we show here to the exact fields on their website. Remember to check to see if we have step-by-step instructions for your DNS host in [Create DNS records for Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). > Some DNS hosts don't let you create all of the required record types, which [causes service limitations](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. If your domain's host doesn't support SRV, TXT, or CNAME records, for example, we recommend that you [transfer your domain](../get-help-with-domains/buy-a-domain-name.md) to a DNS host that does support all required records. For a fast, automated process setting up with Microsoft 365, we recommend that you transfer your domain to GoDaddy. 
   
 > [!NOTE]
 > Typically it takes just a few minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -76,7 +76,7 @@ Before you use your domain with Microsoft 365, we have to make sure that you own
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Record Type**|**Alias** or **Host Name**|**Value**|**Priority**|**TTL**|
-      |MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.    <br/>       [How do I find this?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
+      |MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.    <br/>       [How do I find this?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
    
 2. Save the record.
     
@@ -136,7 +136,7 @@ Find the page where you can create records for your domain.
     
    - **Priority**: Set the priority of the MX record to the highest value available, which is typically **0**.
     
-      For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
     
    - **Host Name**: **@**
     
