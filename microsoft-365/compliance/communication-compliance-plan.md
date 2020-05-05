@@ -1,5 +1,5 @@
 ---
-title: "Plan for ommunication compliance"
+title: "Plan for communication compliance"
 description: "Learn about planning for using communication compliance in your organization."
 f1.keywords:
 - NOCSH
@@ -41,7 +41,7 @@ Select dedicated reviewers to monitor and review the alerts on a regular cadence
 
 ## Plan for policies
 
-Creating communication compliance polices is quick and easy with the [pre-defined templates](communication-compliance-feature-reference.md#policy-templates) for offensive language, sensitive information, and regulatory compliance. Custom communication compliance policies allow the flexibility for detecting and investigation issues specific to your organization and requirements.
+Creating communication compliance policies is quick and easy with the [pre-defined templates](communication-compliance-feature-reference.md#policy-templates) for offensive language, sensitive information, and regulatory compliance. Custom communication compliance policies allow the flexibility for detecting and investigation issues specific to your organization and requirements.
 
 When planning for communication compliance policies, consider the following:
 
