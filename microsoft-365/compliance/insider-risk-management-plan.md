@@ -81,4 +81,4 @@ Share insider risk management documentation with the stakeholders in your organi
 
 ## Ready to get started?
 
-Ready to configure insider risk management for your organization? See [Get started with insider risk management](nsider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
+Ready to configure insider risk management for your organization? See [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
