@@ -381,7 +381,7 @@
                     - name: Set up a custom "do not rewrite" URLs list
                       href: ./office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md
                     - name: Set up a custom blocked URLs list
-                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md
+                      href: ./office-365-security/set-up-a-custom-blocked-urls-list-atp.md
                 - name: Role Administrator setup tasks
                   items: 
                     - name: Turn on ATP for SharePoint, OneDrive, and Microsoft Teams
