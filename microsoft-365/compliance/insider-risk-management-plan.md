@@ -1,5 +1,5 @@
 ---
-title: Planning for insider risk management
+title: Plan for insider risk management
 description: Learn how to plan for using insider risk management policies in your organization.
 keywords: Microsoft 365, insider risk, risk management, compliance
 localization_priority: Normal
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Planning for insider risk management
+# Plan for insider risk management
 
 Before getting started with [insider risk management](insider-risk-management.md) in your organization, there are important planning activities and considerations that should be reviewed by your information technology and compliance management teams. Thoroughly understanding and planning for deployment in the following areas will help ensure that your implementation and use of insider risk management features goes smoothly and is aligned with the best practices for the solution.
 
