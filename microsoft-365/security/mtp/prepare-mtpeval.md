@@ -1,6 +1,6 @@
 ---
-title: Prepare your Microsoft Threat Protection evaluation lab
-description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection evaluation lab
+title: Prepare your Microsoft Threat Protection trial lab environment
+description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection trial lab environment
 keywords: MTP trial prep, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -29,12 +29,12 @@ Creating a Microsoft Threat Protection evaluation lab and deploying it is a thre
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" title="Prepare your Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Prepare your Microsoft Threat Protection trial lab environment" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Setup your Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Setup your Microsoft Threat Protection trial lab environment" />
       <br/>Phase 2: Setup </a><br>
         </td>
     <td align="center">
@@ -118,7 +118,7 @@ You can now [add users and groups to Active Directory](https://docs.microsoft.co
 
 
 ## Configuration order
-The table below indicates the order Microsoft recommends for configuring the Microsoft Threat Protection components for your evaluation lab deployment.
+The table below indicates the order Microsoft recommends for configuring the Microsoft Threat Protection components for your trial lab environment deployment.
 
 | Component                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Configuration order rank |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -131,5 +131,5 @@ The table below indicates the order Microsoft recommends for configuring the Mic
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md) | Set up your Microsoft Threat Protection lab environment
+|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md) | Set up your Microsoft Threat Protection trial lab environment
 
