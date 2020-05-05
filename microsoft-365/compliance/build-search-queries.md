@@ -16,8 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 ms.custom: seo-marvel-mar2020
-description: "Use keywords and conditions to narrow the search scope when searching for data using Data Investigation in Microsoft 365."
-ms.custom: seo-marvel-mar2020
+description: Use keywords and conditions to narrow the search scope when searching for data using Data Investigation in Microsoft 365.
 ---
 
 # Build search queries

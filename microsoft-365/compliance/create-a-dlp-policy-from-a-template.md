@@ -19,7 +19,6 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: In this article, you'll learn about how to create DLP policies using one of the templates included in Office 365.
-"
 ---
 
 # Create a DLP policy from a template
