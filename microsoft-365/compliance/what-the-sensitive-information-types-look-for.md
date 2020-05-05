@@ -1305,8 +1305,64 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
   </Pattern>
 </Entity>
 ```
+## Belgium driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
 
-## Belgium National Number
+### Format
+
+10 digits without spaces and delimiters
+  
+### Pattern
+
+10 digits
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_belgium_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_belgium_eu_driver's_license_number` is found.
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_belgium_eu_driver's_license_number" />
+          <Match idRef="Keywords_belgium_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords__belgium_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- dlno#
+- rijbewijs
+- rijbewijsnummer
+- führerscheinnummer
+- fuhrerscheinnummer
+- fuehrerscheinnummer
+- führerschein- nr
+- fuehrerschein- Nr
+- fuehrerschein- nr
+
+## Belgium national ID number
+This sensitive information type entity is included in the EU National identification number bundle.
 
 ### Format
 
@@ -1403,9 +1459,211 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
+## Belgium passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
 
-   
-## Brazil CPF Number
+### Format
+
+Two letters followed by six digits with no spaces or delimiters
+  
+### Pattern
+
+Two letters and followed by six digits
+  
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_belgium_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_belgium_eu_passport_number` is found.
+
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_belgium__eu_passport_number" />
+          <Match idRef="Keywords_belgium_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_belgium_eu_passport_number**
+- passport number
+- belgian passport number
+- passport no
+- paspoort
+- paspoortnummer
+- reisepass kein
+- reisepass
+
+## Belgium social security number or equivalent ID
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
+
+### Format
+
+11 digits without spaces or delimiters
+  
+### Pattern
+
+11 digits
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_belgium_eu_ssn_or_equivalent` finds content that matches the pattern. 
+- A keyword from  `Keywords_belgium_eu_ssn_or_equivalent` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_belgium_eu_ssn_or_equivalent` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_belgium_eu_ssn_or_equivalent" />
+        </Pattern> 
+       <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_belgium_eu_ssn_or_equivalent" />
+        </Pattern>      
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_belgium_eu_ssn_or_equivalent
+
+- belgian national number
+- national number
+- social security number
+- nationalnumber#
+- ssn#
+- ssn
+- nationalnumber
+- bnn#
+- bnn
+- personal id number
+- personalidnumber#
+- numéro national
+- numéro de sécurité
+- numéro d'assuré
+- identifiant national
+- identifiantnational#
+- numéronational#
+
+## Belgium tax identification number
+This sensitive information type entity is included in the EU Tax Identificaiton Number bundle.
+
+### Format
+
+11 digits without spaces and delimiters
+  
+### Pattern
+
+11 digits:
+  
+- Two digits
+- A "0" or "1"
+- One digit
+- A "0" or "1" or "2" or "3" 
+- Six digits
+    
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_belgium_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_belgium_eu_tax_file_number` is found. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_belgium_eu_tax_file_number" />
+          <Match idRef="Keywords_belgium_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_belgium_eu_tax_file_number
+
+- belasting aantal
+- bnn#
+- bnn
+- carte d’identité
+- identifiant national
+- identifiantnational#
+- identificatie
+- identification
+- identifikation
+- identifikationsnummer
+- identifizierung
+- identité
+- identiteit
+- identiteitskaart
+- identity
+- inscription
+- national number
+- national register
+- nationalnumber#
+- nationalnumber
+- nif#
+- nif
+- numéro d'assuré
+- numéro de registre national
+- numéro de sécurité
+- numéro d'identification
+- numéro d'immatriculation
+- numéro national
+- numéronational#
+- personal id number
+- personalausweis
+- personalidnumber#
+- registratie
+- registration
+- registrationsnumme
+- registrierung
+- social security number
+- ssn#
+- ssn
+- steuernummer
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
+## Brazil CPF number
 
 ### Format
 
@@ -1414,12 +1672,12 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 ### Pattern
 
 Formatted:
-- Three digits 
-- A period 
-- Three digits 
-- A period 
-- Three digits 
-- A hyphen 
+- Three digits
+- A period
+- Three digits
+- A period
+- Three digits
+- A hyphen
 - Two digits which are check digits
 
 Unformatted:
@@ -1467,7 +1725,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Inscrição 
 - Receita 
    
-## Brazil Legal Entity Number (CNPJ)
+## Brazil legal entity number (CNPJ)
 
 ### Format
 
@@ -1537,7 +1795,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Inscrição 
 - Empresa 
    
-## Brazil National ID Card (RG)
+## Brazil national ID card (RG)
 
 ### Format
 
@@ -1593,16 +1851,284 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_brazil_rg
 
-Cédula de identidade
-identity card
-national id 
-número de rregistro
-registro de Iidentidade 
-registro geral
-RG (this keyword is case sensitive) 
-RIC (this keyword is case sensitive) 
-   
-## Canada Bank Account Number
+- Cédula de identidade
+- identity card
+- national id 
+- número de rregistro
+- registro de Iidentidade 
+- registro geral
+- RG (this keyword is case sensitive) 
+- RIC (this keyword is case sensitive) 
+
+
+## Bulgaria driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+Nine digits without spaces and delimiters
+  
+### Pattern
+
+Nine digits
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_bulgaria_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_bulgaria_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+             <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_bulgaria_eu_driver's_license_number" />
+          <Match idRef="Keywords_bulgaria_eu_driver's_license_number" />
+        </Pattern> 
+</Entity>    
+```
+
+### Keywords
+
+**Keywords_bulgaria_eu_driver's_license_number**
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- свидетелство за управление на мпс
+- свидетелство за управление на моторно превозно средство
+- сумпс
+- шофьорска книжка
+
+## Bulgaria national identification number
+This sensitive information type entity is included in the EU National identification number bundle.
+
+### Format
+
+Ten digits without spaces and delimiters
+  
+### Pattern
+
+Ten digits without spaces and delimiters
+  
+- Six digits that correspond to the birth date (YYMMDD) 
+- Two digits that correspond to the birth order
+- One digit that corresponds to gender: An even digit for male and an odd digit for female
+- One check digit
+
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_bulgaria_eu_national_id_card` finds content that matches the pattern. 
+- A keyword from  `Keywords_bulgaria_national_number` is found. 
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_bulgaria_eu_national_id_card` finds content that matches the pattern. 
+    
+```xml
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
+          <Match idRef="Keywords_bulgaria_national_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_bulgaria_national_number
+
+- bnn#
+- bnn
+- bucn#
+- bucn
+- edinen grazhdanski nomer
+- egn#
+- egn
+- identification number
+- national id
+- national number
+- nationalnumber#
+- nationalnumber
+- personal id
+- personal no
+- personal number
+- personalidnumber#
+- social security number
+- ssn#
+- ssn
+- uniform civil id
+- uniform civil no
+- uniform civil number
+- uniformcivilno#
+- uniformcivilno
+- uniformcivilnumber#
+- uniformcivilnumber
+- unique citizenship number
+- егн#
+- егн
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
+- униформ id
+- униформ граждански id
+- униформ граждански не
+- униформ граждански номер
+- униформгражданскиid#
+- униформгражданскине.#
+
+## Bulgaria passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Nine digits without spaces and delimiters
+  
+### Pattern
+
+ Nine digits 
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_bulgaria_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_bulgaria_eu_passport_number` is found. 
+
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_bulgaria_eu_passport_number" />
+          <Match idRef="Keywords_bulgaria_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+### Keywords
+
+**Keywords_bulgaria_eu_passport_number**
+- passport number
+- bulgarian passport number
+- passport no
+- номер на паспорта
+
+## Bulgaria tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+Ten digits without spaces and delimiters
+  
+### Pattern
+
+10 digits
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_bulgaria_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_bulgaria_eu_tax_file_number` is found. 
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_bulgaria_eu_tax_file_number` finds content that matches the pattern. 
+
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_bulgaria_eu_tax_file_number" />
+          <Match idRef="Keywords_bulgaria_eu_tax_file_number" />
+        </Pattern>
+ <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_bulgaria_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_bulgaria_eu_tax_file_number
+- bnn#
+- bnn
+- bucn#
+- bucn
+- edinen grazhdanski nomer
+- egn#
+- egn
+- identification number
+- national id
+- national number
+- nationalnumber#
+- nationalnumber
+- personal id
+- personal no
+- personal number
+- personalidnumber#
+- social security number
+- ssn#
+- ssn
+- uniform civil id
+- uniform civil no
+- uniform civil number
+- uniformcivilno#
+- uniformcivilno
+- uniformcivilnumber#
+- uniformcivilnumber
+- unique citizenship number
+- егн#
+- егн
+- единен граждански номер
+- идентификационен номер
+- личен номер
+- лична идентификация
+- лично не
+- национален номер
+- номер на гражданството
+- униформ id
+- униформ граждански id
+- униформ граждански не
+- униформ граждански номер
+- униформгражданскиid#
+- униформгражданскине.#
+
+
+## Canada bank account number
 
 ### Format
 
@@ -1676,7 +2202,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - banking information
 - direct deposit
    
-## Canada Driver's License Number
+## Canada driver's license number
 
 ### Format
 
@@ -1893,7 +2419,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - identification cards# 
 - identification# 
    
-## Canada Health Service Number
+## Canada health service number
 
 ### Format
 
@@ -1939,7 +2465,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - workers compensation
 - disability
       
-## Canada Passport Number
+## Canada passport number
 
 ### Format
 
@@ -2006,7 +2532,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - PasseportNon
 - Passeportn °
    
-## Canada Personal Health Identification Number (PHIN)
+## Canada personal health identification number (PHIN)
 
 ### Format
 
@@ -2076,7 +2602,7 @@ At least two keywords from Keyword_canada_phin or Keyword_canada_provinces are f
 - Prince Edward Island
 - Canada
    
-## Canada Social Insurance Number
+## Canada social insurance number
 
 ### Format
 
@@ -2159,7 +2685,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Birthday 
 - Date of Birth 
    
-## Chile Identity Card Number
+## Chile identity card number
 
 ### Format
 
@@ -2221,7 +2747,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Tarjeta de identificación 
 - Identificación 
    
-## China Resident Identity Card (PRC) Number
+## China resident identity card (PRC) number
 
 ### Format
 
@@ -2278,7 +2804,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 居民 身份證
 - 鑑定 
    
-## Credit Card Number
+## Credit card number
 
 ### Format
 
