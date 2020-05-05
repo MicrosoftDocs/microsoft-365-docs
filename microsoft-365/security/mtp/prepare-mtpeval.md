@@ -59,7 +59,7 @@ Creating a Microsoft Threat Protection trial lab environment and deploying it is
 You are currently in the preparation phase.
 
 
-Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create an evaluation lab for your Microsoft Threat Protection deployment.
+Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create an trial lab environment for your Microsoft Threat Protection deployment.
 
 ## Prerequisites
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection. See the minimum requirements for [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide), [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
