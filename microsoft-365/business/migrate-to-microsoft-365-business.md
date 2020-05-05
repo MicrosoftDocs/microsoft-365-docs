@@ -27,7 +27,7 @@ description: "Learn the difference between Microsoft 365 Business Standard and M
 
 # Upgrade to Microsoft 365 Business Premium from Microsoft 365 Business Standard
 
-If you have an [Microsoft 365 for business subscription](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), for example, Microsoft 365 Business Standard, you can easily upgrade to Microsoft 365 Business Premium. Upgrade to Microsoft 365 Business Premium if you want to add:
+If you have a [Microsoft 365 for business subscription](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2), for example, Microsoft 365 Business Standard, you can easily upgrade to Microsoft 365 Business Premium. Upgrade to Microsoft 365 Business Premium if you want to add:
 
 - Windows 10 Pro (to PCs running Windows 8 or later)
 
@@ -42,7 +42,7 @@ We've added a side-by-side comparison of these two plans to the [Microsoft 365 B
 
 ## Before you get started
 
-- **When should I choose to upgrade?** Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you choose upgrade, all plan users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business Premium), and [assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users) to each user that you want to upgrade.
+- **When should I choose to upgrade?** Upgrade is the right choice when you want to upgrade **all users** assigned to a single plan. When you choose upgrade, all plan users get switched to another plan at the same time. If you don't want to upgrade everyone assigned to a single plan, buy licenses for the new plan (in this case Microsoft 365 Business Premium), and [assign those licenses individually](../admin/manage/assign-licenses-to-users.md) to each user that you want to upgrade.
 
 - **Some add-ons might prevent the upgrade** If you try to start an upgrade and you have an add-on that prevents you from continuing, you can remove the add-on first, and then add it back later if you still need it.
 
@@ -63,7 +63,7 @@ We've added a side-by-side comparison of these two plans to the [Microsoft 365 B
 
 5. In the cart:
 
-    1. We'll automatically include licenses for all your current users. If you need more or fewer licenses, you need to [buy and assign those licenses individually](https://docs.microsoft.com/office365/admin/manage/assign-licenses-to-users).  
+    1. We'll automatically include licenses for all your current users. If you need more or fewer licenses, you need to [buy and assign those licenses individually](../admin/manage/assign-licenses-to-users.md).  
     2. You can adjust how you'd like to pay: monthly or yearly. Select the drop-down menu to make your choice.
 
 6. Select **Go to Checkout** where you'll see a summary of your purchase, including the payment method for this account. You can also add a promo code here if you have one.

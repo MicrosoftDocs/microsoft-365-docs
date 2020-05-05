@@ -31,7 +31,7 @@ Once customers purchase the apps and accept the Microsoft Customer Agreement, th
 
 App providers sell their apps either at a flat rate, or by purchasing licenses for users.
 
-- **Flat rate** – Also called site-based pricing, apps are priced with a monthly or annual price. On the app page, license quantity is listed at Unlimited. 
+- **Flat rate** – Also called site-based pricing, apps are priced with a monthly or annual price. On the app page, license quantity is listed at Unlimited.
 - **Licenses** – Apps are priced by license. Customers assign licenses to each user in their organization
 
 ## Supported regions
@@ -85,7 +85,7 @@ Admins need to activate third-party apps before assigning them to users. They're
 
 Admins can change the number of licenses owned by their organization. This only applies to apps purchased with seat-based pricing.
 
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.2. Select **Billing** > **Your products** > **Apps**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. Find and select the app you want to manage.
 3. Select **Change license quantity**.
 
@@ -101,7 +101,7 @@ For more information on billing profiles, see [Understand billing profiles](http
 
 ### Change the billing profile on a software-as-a-service app subscription
 
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.2. Select **Billing** > **Your products** > **Apps**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. Find and select the app you want to manage.
 3. Next to **Billing profile**, select **Edit**.
 
@@ -111,6 +111,6 @@ For more information on invoices, see [Understand your invoice](billing-and-paym
 
 You can cancel a software-as-a-service app from the app page.
 
-1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.2. Select **Billing** > **Your products** > **Apps**.
+1. In the admin center, go to the **Billing** > **Your products** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> page.
 2. Find and select the app you want to manage.
 3. Under **Settings & actions**, select **Cancel subscription**.
