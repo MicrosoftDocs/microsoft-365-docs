@@ -1,5 +1,5 @@
 ---
-title: "Security roadmap - Top priorities for the first 30 days, 90 days, and beyond"
+title: Microsoft 365 security roadmap - Top priorities
 f1.keywords:
 - NOCSH
 ms.author: bcarter

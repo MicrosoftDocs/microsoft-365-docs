@@ -11,9 +11,10 @@ ms.collection:
 - M365-collaboration
 ms.custom: 
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: "Learn best practices for sharing files and folders with unauthenticated users."
+description: "In this article, you'll learn about the best practices for sharing files and folders with unauthenticated users."
 ---
 
 # Best practices for sharing files and folders with unauthenticated users

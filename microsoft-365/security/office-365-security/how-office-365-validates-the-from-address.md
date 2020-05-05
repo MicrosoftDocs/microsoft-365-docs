@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: "Lear about the requirements on From email addresses for inbound messages in Microsoft 365. As of November 2017, the service now requires RFC-compliant From addresses to help prevent spoofing."
+description: "To help prevent phishing, Microsoft 365 and Outlook.com now require RFC compliance for From: addresses."
+ms.custom: seo-marvel-apr2020
 ---
 
 # How Microsoft 365 validates the From address to prevent phishing

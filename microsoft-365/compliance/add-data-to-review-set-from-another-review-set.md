@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to select documents from one review set and work with them individually in another set in an Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Add data to a review set from another review set

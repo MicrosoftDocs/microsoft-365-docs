@@ -133,7 +133,7 @@ Reducing the number of licenses is a separate step that can only be performed by
   
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page. If you don't see this option, you aren't a global admin or billing admin, and can't do this step.
 
 2. Select the subscription (if you have more than one) and then select **Add/Remove licenses** to delete the license so you don't pay for it until you hire another person.  
 

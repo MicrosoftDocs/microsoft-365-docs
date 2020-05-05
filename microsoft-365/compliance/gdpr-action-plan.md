@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 GDPR action plan — Top priorities for your first 30 days, 90 days, and beyond
+title: Microsoft 365 GDPR action plan, priorities for your first 30 days, 90 days, and beyond
 description: A prioritized action plan you can follow as you work to meet the requirements of the General Data Protection Regulation (GDPR)
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
@@ -15,6 +15,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
 # Microsoft 365 GDPR action plan — Top priorities for your first 30 days, 90 days, and beyond

@@ -13,7 +13,8 @@ localization_priority: Normal
 search.appverid:
 ms.collection: 
 - M365-security-compliance
-description: "Learn about the various kinds of views available in Threat Explorer and real-time detections."
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security & Compliance Center.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Views in Threat Explorer and real-time detections

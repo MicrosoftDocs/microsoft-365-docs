@@ -24,7 +24,7 @@ You can also control whether users in your organization can make self-service pu
 
 ## View self-service subscriptions
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Next to **Refine results**, from the **Account type** drop-down, choose **Self-service**.
 
