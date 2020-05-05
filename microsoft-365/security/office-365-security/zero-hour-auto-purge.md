@@ -89,7 +89,7 @@ A: You should follow the normal reporting process for [false positives](report-j
 
 A: ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
 
-### Q: What if I'm using Safe Senders, mail flow rules or allowed/blocked sender lists?
+### Q: What if I'm using safe senders, mail flow rules, or allowed/blocked sender lists?
 
 A: Safe senders, mail flow rules, or block and allow organizational settings take precedence. These messages are excluded from ZAP since the service is doing what you configured it to do. It is for this reason that admins should be careful about what is being allowed to bypass our filters.
 
