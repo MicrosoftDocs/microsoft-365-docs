@@ -17,7 +17,7 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Set up your Microsoft Threat Protection evaluation lab 
+# Set up your Microsoft Threat Protection trial lab environment 
 
 **Applies to:**
 - Microsoft Threat Protection 
