@@ -21,8 +21,7 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Learn about email and file properties that you can search in the Office 365 Security & Compliance Center. 
-"
+description: Learn about email and file properties that you can search in the Office 365 Security & Compliance Center.
 ---
 
 # Keyword queries and search conditions for Content Search

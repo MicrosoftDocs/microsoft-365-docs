@@ -19,7 +19,6 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: "Office 365 Advanced Threat Protection includes safe attachments, safe links, advanced anti-phishing tools, reporting tools and threat intelligence capabilities."
-ms.custom: seo-marvel-apr2020
 ---
 # Office 365 Advanced Threat Protection
 
