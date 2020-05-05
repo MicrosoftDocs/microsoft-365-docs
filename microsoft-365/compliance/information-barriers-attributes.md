@@ -12,7 +12,7 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: This article serves as a reference for various attributes you can use in information barrier policies for Azure Active Directory.
+description: This is a reference article on the Azure Active Directory user account attributes that you use to define information barrier segments.
 ms.custom: seo-marvel-apr2020
 ---
 

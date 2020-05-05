@@ -1,6 +1,6 @@
 ---
 title: Understand the latest attack campaigns and techniques with threat analytics
-description: How threat analytics interactive reports in Microsoft 365 security center enable you to assess your security posture and resilience against emerging threats.
+description: Use threat analytics interactive reports in Microsoft 365 to assess the security posture and resilience of your organization against emerging threats.
 keywords: security, malware, Microsoft 365, M365, security center, threat analytics, Microsoft Defender ATP, cyber, security posture, emerging threats
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

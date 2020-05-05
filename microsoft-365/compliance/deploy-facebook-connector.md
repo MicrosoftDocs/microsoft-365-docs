@@ -10,6 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Administrators can set up a native connector to import and archive Facebook Business pages to Microsoft 365. After this data is imported to Microsoft 365, you can use compliance features such as legal hold, content search, and retention policies to manage the governance of your organization's Facebook data."
@@ -17,11 +19,11 @@ description: "Administrators can set up a native connector to import and archive
 
 # Deploy a connector to archive Facebook Business pages data
 
-This article contains the step-by-step process to deploy a connector that uses the Microsoft 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md). 
+This article contains the step-by-step process to deploy a connector that uses the Office 365 Import service to import data from Facebook Business pages to Microsoft 365. For a high-level overview of this process and a list of prerequisites required to deploy a Facebook connector, see [Set up a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md). 
 
 ## Step 1: Create an app in Azure Active Directory
 
-1. Go to <https://portal.azure.com> and sign in using the credentials of an Office 365 global admin account.
+1. Go to <https://portal.azure.com> and sign in using the credentials of a global admin account.
 
     ![Create app in AAD](../media/FBCimage1.png)
 
@@ -86,7 +88,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 3: Register the Facebook app
 
-1. Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization’s Facebook Business pages, and then click **Add New App**.
+1. Go to <https://developers.facebook.com>, log in using the credentials for the account for your organization's Facebook Business pages, and then click **Add New App**.
 
    ![Add a new app for Facebook business page](../media/FBCimage25.png)
 

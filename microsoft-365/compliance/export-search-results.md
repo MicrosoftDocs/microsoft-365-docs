@@ -52,7 +52,7 @@ Exporting the results of a Content Search involves preparing the results, and th
     
   > [!NOTE]
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
-  > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the Office 365 eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - When you download search results (described in Step 2), you can increase the download speed by configuring a Windows Registry setting on the computer you use to export the search results. For more information, see [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -83,7 +83,7 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**.
     
@@ -156,7 +156,7 @@ As previously explained, you can increase the download speed by configuring a Wi
   
 3. Click **Download results**.
     
-4. If you're prompted to install the **MicrosoftOffice 365 eDiscovery Export Tool**, click **Install**.
+4. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
     
 5. In the **eDiscovery Export Tool**, paste the export key that you copied in step 2 in the appropriate box.
     

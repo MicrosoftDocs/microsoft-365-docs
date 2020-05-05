@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Learn about data loss prevention (DLP) in the Office 365 Security & Compliance Center and about sensitive information types.
+description: Learn about data loss prevention (DLP) in the Microsoft 365 Security & Compliance Center and about sensitive information types.
 ---
 
 # What the sensitive information types look for
 
-Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
+Data loss prevention (DLP) in the Security &amp; Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
   
 ## ABA Routing Number
 
@@ -1085,7 +1085,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Identiteit
 - Registratie
 - Identificatie 
-- Carte d’identité 
+- Carte d'identité 
 - numéro d'immatriculation
 - numéro d'identification
 - identité 
@@ -2111,7 +2111,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - expiration date
 - exp date
 - expiry date
-- date d’expiration
+- date d'expiration
 - date d'exp
 - date expiration
 - bank card
@@ -2849,29 +2849,34 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
    
 ## Finland Passport Number
 
-Format
+### Format
 Combination of nine letters and digits
-Pattern
+
+### Pattern
 Combination of nine letters and digits:
 Two letters (not case sensitive) 
 Seven digits
-Checksum
+
+### Checksum
 No
-Definition
+
+### Definition
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-The regular expression Regex_finland_passport_number finds content that matches the pattern.
-A keyword from Keyword_finland_passport_number is found.
+- The regular expression Regex_finland_passport_number finds content that matches the pattern.
+- A keyword from Keyword_finland_passport_number is found.
 <!-- Finland Passport Number -->
+```xml
 <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300">
   <Pattern confidenceLevel="75">
      <IdMatch idRef="Regex_finland_passport_number"/>
      <Match idRef="Keyword_finland_passport_number"/>
   </Pattern>
 </Entity>
-Keywords
-Keyword_finland_passport_number
-Passport
-Passi
+```
+### Keywords
+- Keyword_finland_passport_number
+- Passport
+- Passi
    
 ## France Driver's License Number
 
@@ -5911,7 +5916,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 ```xml
 <Entity id="dfeb356f-61cd-459e-bf0f-7c6d28b458c6 patternsProximity="300">
-	<Pattern confidenceLevel="75">
+    <Pattern confidenceLevel="75">
         <IdMatch idRef="Func_new_york_drivers_license_number" />
         <Match idRef="Keyword_new_york_drivers_license_name" />
         <Match idRef="Keyword_us_drivers_license" />

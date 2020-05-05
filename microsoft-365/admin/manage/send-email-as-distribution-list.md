@@ -1,5 +1,5 @@
 ---
-title: "Send email as a distribution list in Office 365"
+title: "Send email as a distribution list"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,18 +19,18 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: "Learn how to send email as a distribution list in Office 365."
+description: "Learn how to send email as a distribution list in Microsoft 365."
 ---
 
-# Send email as a distribution list in Office 365
+# Send email as a distribution list
 
-In Office 365, you can send email as a distribution list. When a person who is a member of the distribution list replies to a message sent to the distribution list, the email appears to be from the distribution list, not from the individual user. This topic shows you how to do this.
+In Microsoft 365, you can send email as a distribution list. When a person who is a member of the distribution list replies to a message sent to the distribution list, the email appears to be from the distribution list, not from the individual user. This topic shows you how to do this.
   
 ## Send email as a distribution list
 
-Before you perform these steps, make sure you've been added to an Office 365 distribution list and you've have been granted Send as permission on it.
+Before you perform these steps, make sure you've been added to a Microsoft 365 distribution list and you've have been granted Send as permission on it.
   
- **Admins**: Make sure you've followed the steps in the [Add an Office 365 user or contact to a list](../email/add-user-or-contact-to-distribution-list.md) and [Allow members to send email as an Office 365 Group](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) topics, and added the correct people to the distribution list.
+ **Admins**: Make sure you've followed the steps in the [Add a Microsoft 365 user or contact to a list](../email/add-user-or-contact-to-distribution-list.md) and [Allow members to send email as a Microsoft 365 Group](../create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) topics, and added the correct people to the distribution list.
   
 1. Open Outlook on the web and go to your inbox. 
     

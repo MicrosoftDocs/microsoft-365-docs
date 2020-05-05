@@ -19,9 +19,9 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 # Windows and Office Deployment Lab Kit
 
-These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Office 365 ProPlus. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
+These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you’re currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
+This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you're currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -64,7 +64,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 ### Office and LOB App Delivery
 
-  - Office 365 ProPlus deployment 
+  - Microsoft 365 Apps for enterprise
   - Enterprise Managed Deployment using Configuration Manager and Microsoft Intune
   - Application deployment and management using Microsoft Intune
   - App deployment and self-service installation using Microsoft Store for Business
@@ -99,7 +99,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 ### Windows and Office as a Service
   - Manage Windows Updates using Group Policy
   - Servicing Windows 10 with Configuration Manager and Intune
-  - Servicing Office 365 ProPlus with Configuration Manager
+  - Servicing Microsoft 365 Apps for enterprise with Configuration Manager
 
 ### NEW! Windows Virtual Desktop
   - Windows Virtual Desktop: Prepare, Deploy, Optimize 
@@ -108,7 +108,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires July 5, 2020. A new version will be published prior to expiration.*
+*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires April 18, 2020. A new version will be published prior to expiration.*
 
 ## Additional guidance
 
@@ -116,11 +116,11 @@ Detailed lab guides take you through multiple deployment and management scenario
 
   - [Desktop Deployment series videos from Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Microsoft Endpoint Configuration Manager OS Deployment](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Microsoft Endpoint Configuration Manager OS Deployment](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
   - [<span class="underline">Plan for Windows 10 deployment</span>](https://docs.microsoft.com/windows/deployment/planning/index)
 
-  - [<span class="underline">Deployment guide for Office 365 ProPlus</span>](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+  - [<span class="underline">Deployment guide for Microsoft 365 Apps</span>](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
   - [<span class="underline">Getting Started with Intune</span>](https://docs.microsoft.com/intune/get-started-evaluation)
 

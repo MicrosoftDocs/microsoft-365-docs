@@ -5,12 +5,16 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
-ms.custom: seo-marvel-apr2020
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+ms.custom: 
+- M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "In this article, you'll learn how to configure Microsoft 365 for collaboration with people outside your organization."
+description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."
 ---
 
 # Collaborating with people outside your organization
@@ -19,7 +23,7 @@ The external sharing capabilities in Microsoft 365 provide an opportunity for pe
 
 Collaborating with people outside your organization consists of two major components:
 
-- **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Office 365 groups, and SharePoint to allow the level of sharing that you want for your organization.
+- **Enable sharing** - Configure the sharing controls across Azure Active Directory, Teams, Microsoft 365 Groups, and SharePoint to allow the level of sharing that you want for your organization.
 - **Enable additional security** - While the basic sharing features can be configured to require people outside your organization to authenticate, Microsoft 365 provides many additional security and compliance features to help you protect your data and maintain your governance policies while sharing externally.
 
 ## Enable sharing
@@ -38,7 +42,7 @@ Once you've enabled the scenario that you want to use for sharing with people ou
 
 - [Best practices for sharing files and folders with unauthenticated users](best-practices-anonymous-sharing.md) - Learn about best practices for sharing with unauthenticated users.
 - [Limit accidental exposure](share-limit-accidental-exposure.md) - Learn how to reduce the chances of accidentally sharing sensitive content with people outside your organization.
-- [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)) - Learn about the tools provided in Microsoft 365 to help ensure that sharing with people outside your organization is done in a safe and secure manner and meets your governance requirements.
+- [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md) - Learn about the tools provided in Microsoft 365 to help ensure that sharing with people outside your organization is done in a safe and secure manner and meets your governance requirements.
 
 ## Collaborate with partner companies
 

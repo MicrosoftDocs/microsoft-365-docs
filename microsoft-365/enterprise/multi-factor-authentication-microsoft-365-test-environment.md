@@ -35,7 +35,7 @@ There are two phases to setting up multi-factor authentication for an account in
     
 2. Enable and test multi-factor authentication for the User 2 account.
 
-3. Enable and test multi-factor authentication with a Conditional Access policy (optional).
+3. Enable and test multi-factor authentication with a conditional access policy (optional).
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -99,11 +99,11 @@ Complete the configuration for the User 2 account to use a text message for vali
     
     You should see the Office portal for User 2 on the **Microsoft Office Home** tab of your browser.
 
-## Phase 3: Enable and test multi-factor authentication with a Conditional Access policy
+## Phase 3: Enable and test multi-factor authentication with a conditional access policy
 
 *This phase can only be used for a Microsoft 365 Enterprise test environment.*
 
-In this phase you enable multi-factor authentication for the User 3 account using a group and a Conditional Access policy.
+In this phase you enable multi-factor authentication for the User 3 account using a group and a conditional access policy.
 
 Next, create a new group named MFAUsers and add the User 3 account to it.
 
@@ -116,7 +116,7 @@ Next, create a new group named MFAUsers and add the User 3 account to it.
 7. In the **MFAUsers** pane, click **Members**, and then click **View all and manage members**.
 8. In the **MFAUsers** pane, click **Add members**, select the **User 3** account, and then click **Save > Close > Close**.
 
-Next, create a Conditional Access policy to require multifactor authentication for members of the MFAUsers group.
+Next, create a conditional access policy to require multifactor authentication for members of the MFAUsers group.
 
 1. In a new tab of your browser, go to [https://portal.azure.com](https://portal.azure.com).
 2. Click **Azure Active Directory > Security > Conditional Access**.

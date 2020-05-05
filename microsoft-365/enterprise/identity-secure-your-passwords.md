@@ -77,7 +77,7 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 
 
 <a name="identity-custom-sign-in"></a>
-## Customize the Office 365 sign-in page
+## Customize the sign-in page
 
 *This is optional and for both the E3 and E5 versions of Microsoft 365 Enterprise*
 
@@ -85,7 +85,7 @@ In this section, you'll help users recognize your organization’s sign-in page 
 
 With Microsoft 365 Enterprise, you can customize the appearance of the sign-in and Access Panel pages so they include your company logo, color schemes, and custom user information. 
 
-For more information, see [Add your company branding to Office 365 Sign In page](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
+For more information, see [Add your company branding to Microsoft 365 Sign In page](https://docs.microsoft.com/office365/admin/setup/customize-sign-in-page).
 
 For configuration instructions, see [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding).
 

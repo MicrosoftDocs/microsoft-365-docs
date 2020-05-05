@@ -49,15 +49,15 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 
 ### Customer Key
 
-[Service encryption with Customer Key in Office 365](customer-key-overview.md) (new)<br>New article that introduces you to Customer Key, related concepts like BitLocker and service encryption, and how they work together.
+[Service encryption with Customer Key](customer-key-overview.md) (new)<br>New article that introduces you to Customer Key, related concepts like BitLocker and service encryption, and how they work together.
 
-[Manage Customer Key for Office 365](customer-key-manage.md) (new)<br>Post-setup instructions for managing Customer Key, including steps for managing existing DEPs and key vault permissions, estimated times to complete operations, how to verify that encryption worked, and how to exit the Office 365 service.
+[Manage Customer Key](customer-key-manage.md) (new)<br>Post-setup instructions for managing Customer Key, including steps for managing existing DEPs and key vault permissions, estimated times to complete operations, how to verify that encryption worked, and how to exit the service.
 
 [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md) (new)<br>Describes how to roll the customer-managed keys for Customer Key.
 
-[Learn about the availability key for Office 365 Customer Key](customer-key-availability-key-understand.md) (new)<br>Detailed coverage about the availability key - when and how it's used to recover from key loss, where it exists in the Customer Key hierarchy, and more.
+[Learn about the availability key for Customer Key](customer-key-availability-key-understand.md) (new)<br>Detailed coverage about the availability key - when and how it's used to recover from key loss, where it exists in the Customer Key hierarchy, and more.
 
-[Set up Customer Key for Office 365](customer-key-set-up.md) (updated)<br>Previously titled "Controlling your data in Office 365 using Customer Key", this article focuses solely on how to set up Customer Key for Office 365, including updated instructions.
+[Set up Customer Key for Microsoft 365](customer-key-set-up.md) (updated)<br>Previously titled "Controlling your data in Microsoft 365 using Customer Key", this article focuses solely on how to set up Customer Key for Office 365, including updated instructions.
 
 ### Data classification
 
@@ -103,7 +103,7 @@ Updated the following articles to support the official release of insider risk m
 
 [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (updated)<br>The section for configuring auto-labeling for Office apps now includes the new option to use trainable classifiers.
 
-[Use sensitivity labels to protect content in Microsoft Teams, Office 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Revisions throughout for a better reading experience and technical clarifications. Also, per customer feedback, added links to the [Azure AD article](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) for enabling the preview and applying sensitivity labels to Office 365 groups in the Azure portal. Finally, added a new section for auditing sensitivity label activities.
+[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 Groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Revisions throughout for a better reading experience and technical clarifications. Also, per customer feedback, added links to the [Azure AD article](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) for enabling the preview and applying sensitivity labels to Microsoft 365 groups in the Azure portal. Finally, added a new section for auditing sensitivity label activities.
 
 [Enable sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md) (updated)<br>Various updates include clarifications per customer feedback for how this feature works, emphasizing that new capabilities apply only to new and edited files, and a new limitation that you might see only during a testing phase if you delete labels.
 

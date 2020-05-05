@@ -38,7 +38,7 @@ The following sections describe each step in the built-in workflow in Data Inves
 
 ## Search for sensitive, malicious, or misplaced data
 
-Use the **Searches** tab to create searches to find the Office 365 for data that you want to remediate. You can create and run query-based searches to identify a set email messages and documents that might contain spilled data, and then collect them as evidence to review and analyze. Also, you can use the search tool to preview sample documents and view search statistics that can  help you refine and improve the search results. Once you're satisfied that the search results contain the all the data relevant to the investigation, you add the search results to the evidence set to further review, impact assessment, and taking remedial actions as necessary. For more information, see [Search for data in an investigation](search-for-data.md).
+Use the **Searches** tab to create searches to find the Microsoft 365 for data that you want to remediate. You can create and run query-based searches to identify a set email messages and documents that might contain spilled data, and then collect them as evidence to review and analyze. Also, you can use the search tool to preview sample documents and view search statistics that can  help you refine and improve the search results. Once you're satisfied that the search results contain the all the data relevant to the investigation, you add the search results to the evidence set to further review, impact assessment, and taking remedial actions as necessary. For more information, see [Search for data in an investigation](search-for-data.md).
 
 ## Review and investigate evidence
 

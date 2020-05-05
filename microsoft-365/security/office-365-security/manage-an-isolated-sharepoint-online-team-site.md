@@ -34,9 +34,9 @@ When someone new joins the site, you must decide their level of participation in
     
 - Viewing: Add the user account to the site viewers access group
     
-If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add the appropriate users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Office 365 subscription.
+If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add the appropriate users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.
   
-If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or Microsoft PowerShell:
+If you are managing user accounts and groups through Microsoft 365, you can use the Microsoft 365 admin center or Microsoft PowerShell:
   
 - For the Microsoft 365 admin center, sign in with a user account that has been assigned the User Account Administrator or Company Administrator role and use Groups to add the appropriate users to the appropriate access groups.
     
@@ -66,7 +66,7 @@ To add access to an entire group, you must decide the level of participation of 
     
 - Viewing: Add the group to the site viewers access group
     
-If you are managing user accounts and groups through AD DS, add the appropriate groups to the appropriate groups using your normal AD DS user and group management procedures and wait for synchronization with your Office 365 subscription.
+If you are managing user accounts and groups through AD DS, add the appropriate groups to the appropriate groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.
   
 If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:
   
@@ -91,7 +91,7 @@ When someone's access must be removed from the site, you remove them from the ac
     
 - Viewing: Remove the user account from the site viewers access group
     
-If you are managing user accounts and groups through AD DS, remove the appropriate users from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Office 365 subscription.
+If you are managing user accounts and groups through AD DS, remove the appropriate users from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.
   
 If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:
   
@@ -124,7 +124,7 @@ To remove access for an entire group, you remove the group from the access group
     
 - Viewing: Remove the group from the site viewers access group
     
-If you are managing user accounts and groups through Windows Server Active Directory, remove the appropriate groups from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Office 365 subscription.
+If you are managing user accounts and groups through Windows Server Active Directory, remove the appropriate groups from the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your subscription.
   
 If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell:
   
@@ -145,7 +145,7 @@ In some cases, a subset of the people working within the isolated site need a mo
   
 To create a documents subfolder with custom permissions, do the following:
   
-1. Sign in to Office 365 with an account that is a member of the admins access group for the site. For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to an account that is a member of the admins access group for the site. For help, see [Where to sign in to Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Go to the isolated team site and click **Documents**.
     

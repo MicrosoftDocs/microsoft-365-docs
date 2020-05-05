@@ -19,14 +19,13 @@ search.appverid:
 ms.custom:
 - seo-marvel-mar2020
 description: In this article, you'll learn about how to create DLP policies using one of the templates included in Office 365.
-"
 ---
 
 # Create a DLP policy from a template
 
 The easiest, most common way to get started with DLP policies is to use one of the templates included in Office 365. You can use one of these templates as is, or customize the rules to meet your organization's specific compliance requirements.
   
-Office 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. For example, there are DLP policy templates for:
+Microsoft 365 includes over 40 ready-to-use templates that can help you meet a wide range of common regulatory and business policy needs. For example, there are DLP policy templates for:
   
 - Gramm-Leach-Bliley Act (GLBA)
     
@@ -56,7 +55,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account. You're now in the Office 365 Security &amp; Compliance Center.
+2. Sign in using your work or school account. You're now in the Security &amp; Compliance Center.
     
 3. In the Security &amp; Compliance Center \> left navigation \> **Data loss prevention** \> **Policy** \> **+ Create a policy**.
     

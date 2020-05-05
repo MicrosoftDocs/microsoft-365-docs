@@ -24,7 +24,7 @@ keywords: billing accounts, organization info, invoices
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have an Office 365 subscription, see [View your invoice for Office 365 for business](view-your-bill-or-invoice.md).
+If you only have an Microsoft 365 subscription, see [Understand your invoice for Microsoft 365 for business](understand-your-invoice2.md).
 
 ## Understand the invoice header
 
@@ -75,7 +75,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 
 `Total = Charges/Credits - Azure Credit + Tax`
 
-If there are Azure charges on your invoice that you would like more details on, see [Understand charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## Understand the last invoice page
 

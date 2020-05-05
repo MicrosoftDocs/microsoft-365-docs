@@ -54,7 +54,7 @@ You create and manage retention policies from the [Microsoft 365 compliance cent
 
 Alternatively, you can navigate to the same place in the Microsoft 365 compliance center by using **Solutions** > **Information governance** > **Retention** tab. 
 
-**If you want the ability to review content before it's permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content at the end of its retention period.
+**If you want the ability to review content before it’s permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition.md#disposition-reviews) to review the content at the end of its retention period.
 
 ## How a retention policy works with content in place
 
@@ -91,8 +91,6 @@ When the retention policy is to retain and delete:
     > [!NOTE]
     > To help prevent inadvertent data loss, content is never automatically deleted from the Preservation Hold library but moves to the second-stage Recycle Bin. There, the grace period of 93 days lets admins recover this content, if necessary.
     
-2. **If the content is not modified or deleted** during the retention period, it's moved to the first-stage Recycle Bin at the end of the retention period. If a user deletes the content from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first- and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first- or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold.
-
 2. **If the content is not modified or deleted** during the retention period: At the end of the retention period, the document is moved to the first-stage Recycle Bin. If a user deletes the document from there or empties this Recycle Bin (also known as purging), the document is moved to the second-stage Recycle Bin. A 93-day retention period spans both the first-stage and second-stage recycle bins. At the end of 93 days, the document is permanently deleted from wherever it resides, in either the first-stage or second-stage Recycle Bin. The Recycle Bin is not indexed and therefore unavailable for searching. As a result, an eDiscovery search can't find any Recycle Bin content on which to place a hold. 
 
 When the retention policy is retain-only, or delete-only, the contents paths are variations of retain and delete:
@@ -258,13 +256,17 @@ Like an org-wide policy, if a policy applies to any combination of entire locati
 
 You can also apply a retention policy to specific users, Office 365 groups, or sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
   
-However, note that the following limits exist for a retention policy that includes or excludes over 1,000 specific locations:
+However, note that the following limits exist when you configure a retention policy that includes or excludes over 1,000 specific locations:
   
-- Such a retention policy can contain no more than 1,000 mailboxes and 100 site collections.
-    
+- Maximum numbers for the retention policy:
+    - 1,000 mailboxes
+    - 1,000 Office 365 groups
+    - 1,000 users for Teams private chats
+    - 100 sites (OneDrive or SharePoint)
+
 - A tenant can contain no more than 10,000 retention policies.
     
-Although these limits exist, understand that you can get over these limits by applying either an org-wide policy or a policy that applies to entire locations.
+Although these limits exist, you can avoid them by applying either an org-wide policy or a policy that applies to entire locations.
   
 ### Skype locations
 
@@ -298,7 +300,7 @@ You can use a retention policy to retain chats and channel messages in Teams. Te
 Teams chats and channel messages are not affected by retention policies applied to user or group mailboxes in the Exchange or Office 365 groups locations. Even though Teams chats and channel messages are stored in Exchange, they're affected only by a retention policy that's applied to the Teams location.
 
 > [!NOTE]
-> If a user is included in an active retention policy that retains Teams data, then deleting a mailbox of such a user is not allowed since the storage of the data needs to be retained. To delete a mailbox of such a user, the admin needs to exclude the user from the retention policy first.
+> If a user is included in an active retention policy that retains Teams data and you a delete a mailbox of a user who is included in this policy, to retain the data, the mailbox is converted into an [inactive mailbox](inactive-mailboxes-in-office-365.md). If you don't need to retain this data for the user, exclude the user from the retention policy before you delete their mailbox.
   
 After a retention policy is assigned to a team, chat and channel messages can follow one of two paths:
 
@@ -326,7 +328,7 @@ We're continuously working on optimizing retention functionality in Teams, and w
    > [!NOTE]
    > It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation. Now the retention period for Teams content can be any number of days you choose and as short as one day. If you do have a retention period of one day, it will take up to three days after the retention period expires before messages are permanently deleted.
     
-In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the team. Therefore, to retain or delete files in Teams, you need to create a retention policy that applies to OneDrive and Office 365 Group locations. If you want to apply a policy to the files shared in Teams of just a specific user or team, you can choose the OneDrive or Office 365 Group locations and include the specific user or team.
+In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded into channels are stored in the SharePoint site for the team. Therefore, to retain or delete files in Teams, you need to create a retention policy that applies to OneDrive and Microsoft 365 Group locations. If you want to apply a policy to the files shared in Teams of just a specific user or team, you can choose the OneDrive or Microsoft 365 Group locations and include the specific user or team.
   
 A retention policy that applies to Teams can use [Preservation Lock](#locking-a-retention-policy).
   
@@ -335,9 +337,9 @@ A retention policy that applies to Teams can use [Preservation Lock](#locking-a-
 > [!NOTE]
 > If you create retention policies for Skype or Teams locations in your organization, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.  
 
-### Office 365 groups locations
+### Microsoft 365 groups locations
 
-To retain content for an Office 365 group, you need to use the Office 365 groups location. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Office 365 group mailboxes. A retention policy applied to an Office 365 group includes both the group mailbox and site. A retention policy applied to an Office 365 group protects the resources created by an Office 365 group, which would include Microsoft Teams.
+To retain content for an icrosoft 365 group, you need to use the Microsoft 365 groups location. Even though an Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes. A retention policy applied to an Microsoft 365 group includes both the group mailbox and site. A retention policy applied to an Microsoft 365 group protects the resources created by an Microsoft 365 group, which would include Microsoft Teams.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location. 
 
@@ -399,7 +401,7 @@ To understand how different retention policies are applied to content, keep thes
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
-    1. If a label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that label takes precedence over both a policy assigned at the site or mailbox level and a default label assigned by the document library. For example, if the explicit label says to retain for 10 years, but the policy assigned to the site says to retain for only five years, the label takes precedence. Auto-applied labels are considered implicit, not explicit, because they're applied automatically by Office 365.
+    1. If a label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that label takes precedence over both a policy assigned at the site or mailbox level and a default label assigned by the document library. For example, if the explicit label says to retain for 10 years, but the policy assigned to the site says to retain for only five years, the label takes precedence. Auto-applied labels are considered implicit, not explicit, because they're applied automatically by Microsoft 365.
     
     2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
     
@@ -411,13 +413,13 @@ Finally, a retention policy or label cannot permanently delete any content that'
   
 ## Use a retention policy instead of these features
 
-A single retention policy can easily apply to an entire organization and locations across Office 365, including Exchange Online, SharePoint Online, OneDrive for Business, and Office 365 groups. If you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy. (You can also use labels with retention settings. For more information, see [Overview of labels](labels.md).)
+A single retention policy can easily apply to an entire organization and locations across Microsoft 365, including Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft 365 groups. If you need to retain or delete content anywhere in Microsoft 365, we recommend that you use a retention policy. (You can also use labels with retention settings. For more information, see [Overview of labels](labels.md).)
   
-There are several other features that have previously been used to retain or delete content in Office 365. These are listed below. These features will continue to work side by side with retention policies and retention labels. But moving forward, for information governance, we recommend that you use a retention policy or labels instead of all of these features. A retention policy is the only feature that can both retain and delete content across Office 365.
+There are several other features that have previously been used to retain or delete content in Microsoft 365. These are listed below. These features will continue to work side by side with retention policies and retention labels. But moving forward, for information governance, we recommend that you use a retention policy or labels instead of all of these features. A retention policy is the only feature that can both retain and delete content across Microsoft 365.
   
 ### Exchange Online
 
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery hold) 
+- [Manage eDiscovery cases in the Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery hold) 
     
 - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery hold) 
 
@@ -427,7 +429,7 @@ There are several other features that have previously been used to retain or del
     
 ### SharePoint Online and OneDrive for Business
 
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery hold) 
+- [Manage eDiscovery cases in the Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery hold) 
     
 - [Add content to a case and place sources on hold in the eDiscovery Center](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (eDiscovery hold) 
     
@@ -453,9 +455,9 @@ If you were using a preservation policy, that policy has been automatically conv
 
 To use the retention policies cmdlets:
   
-1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connect to the Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
-2. Use these Office 365 Security & Compliance Center cmdlets:
+2. Use these Security & Compliance Center cmdlets:
     
     - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy)
     
@@ -477,7 +479,7 @@ To use the retention policies cmdlets:
 
 Members of your compliance team who will create retention policies need permissions to the [Security &amp; Compliance Center](https://protection.office.com/). By default, your tenant admin has access to this location and can give compliance officers and other people access to the [Security &amp; Compliance Center](https://protection.office.com/), without giving them all the permissions of a tenant admin. To do this, we recommend that you go to the **Permissions** page of the [Security &amp; Compliance Center](https://protection.office.com/), edit the **Compliance Administrator** role group, and add members to that role group. 
   
-For more information, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
+For more information, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center). 
 
 These permissions are required only to create and apply a retention policy. Policy enforcement does not require access to the content.
 

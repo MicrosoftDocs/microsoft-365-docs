@@ -12,11 +12,10 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid: 
 - MOE150
 - MET150
-ms.custom:
-- seo-marvel-apr2020
 description: Learn about the Microsoft Compliance Manager, a free workflow-based risk assessment tool in the Microsoft Service Trust Portal.
 ---
 

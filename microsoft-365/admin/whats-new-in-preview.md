@@ -17,13 +17,19 @@ search.appverid:
   - MET150
   - MOE150
   - FRP150
-ms.assetid: 739574d7-2c5b-4911-a549-f56ecc7d3b48
 description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
 ---
 
 # What's new in the Microsoft 365 admin center
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Some of the information in this article may not apply to Office 365 operated by 21Vianet.
+
+::: moniker-end
 
 We're continuously adding new features to [the Microsoft 365 admin center](microsoft-365-admin-center-preview.md), fixing issues we learn about, and making changes based on your feedback. Take a look below to see what's available for you today. Some features get rolled out at different speeds to our customers. If you aren't seeing a feature yet, [try adding yourself to targeted release](manage/release-options-in-office-365.md).
 
@@ -37,6 +43,7 @@ And if you're interested in what's new in other Microsoft cloud services:
 - [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
 - [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
 ## March 2020
@@ -85,6 +92,7 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 
 [What's New in Microsoft 365 web series](https://go.microsoft.com/fwlink/p/?linkid=2118096): In this month's episode, we highlight the 3-year anniversary of Microsoft Teams and cover new features including improved audio quality in online meetings, Targeted Communications for firstline managers with the Shifts app, Teams and Skype consumer interoperability, and more.
 
+
 ## February 2020
 
 ### Featured Feedback Fix: Multi-organization switcher
@@ -106,7 +114,7 @@ That's literally it!!!
 A couple of changes in the groups area this month:
 
 - **Sort by group name**: You can sort the groups list alphabetically, by selecting the **Group name** column.
-- **Restore deleted Office 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Office 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
+- **Restore deleted Microsoft 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Microsoft 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
 
 ### Videos, training, and docs
 
@@ -155,7 +163,7 @@ Check out the small business admin training that we released in January:
 - [Get help or support](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
 - [Delete a user](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
 - [Choose a Microsoft subscription](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 Business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Overview of Microsoft 365 for business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## November and December 2019
 
@@ -167,7 +175,7 @@ We've starting to roll out the ability to change your payment method from credit
 
 ![Screen capture: Billing section of subscription card with a credit card as the payment method.](../media/MAC-BillingEditCreditCard.png)
 
-Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md#change-from-credit-card-or-bank-account-to-invoice)
+Want to read more about it? [Change from credit card or bank account to invoice](../commerce/billing-and-payments/change-payment-method.md)
 
 ### Global reader
 
@@ -194,7 +202,7 @@ In November, we released quite a few learning paths to [Microsoft Learn](https:/
 
 - [Microsoft 365 fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/)
 - [Extend Office fundamentals](https://docs.microsoft.com/learn/paths/extend-office-fundamentals/)
-- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Office 365 ProPlus](https://docs.microsoft.com/learn/paths/m365-getmodern/)
+- [Microsoft 365 - Modernize your enterprise deployment with Windows 10 and Microsoft 365 Apps for enterprise](https://docs.microsoft.com/learn/paths/m365-getmodern/)
 - [Manage your enterprise deployment with Microsoft 365](https://docs.microsoft.com/learn/paths/manage-enterprise-deployment-m365/)
 - [Upgrade Microsoft Office for IT at scale](https://docs.microsoft.com/learn/paths/m365-office-for-it/)
 - [Deliver remote desktops and apps from Azure with Windows Virtual Desktop
@@ -248,7 +256,7 @@ Technically, this isn't the Microsoft 365 admin center's news to tell, but we're
 > [!IMPORTANT]
 > You can now get to YOUR SharePoint admin center with a regular URL: [https://admin.microsoft.com/SharePoint](https://admin.microsoft.com/SharePoint)
 
-For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+For more info, see [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center).
 
 ## September 2019
 
@@ -277,7 +285,7 @@ There's been an update to another of our initial setup wizards: Microsoft 365 fo
 
 We've got some updates for billing and subscriptions this month:
 
-- Device-based subscriptions: You can assign or unassign **Office 365 ProPlus for Education (device)** licenses to devices in the Microsoft 365 admin center. **Office 365 ProPlus for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Products & services** to find and purchase the license.
+- Device-based subscriptions: You can assign or unassign **Microsoft 365 Apps for Education (device)** licenses to devices in the Microsoft 365 admin center. **Microsoft 365 Apps for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Products & services** to find and purchase the license.
 - User-based license management: We've updated how you assign licenses in **Users** > **Active users** to the new style. For more information, see:
   - [Assign licenses to users](manage/assign-licenses-to-users.md)
   - [Unassign licenses from users](manage/remove-licenses-from-users.md)
@@ -316,7 +324,7 @@ The Message center has been updated to the new design and it looks amazing!
 
 We've got some exciting changes to help you get your organization set up. First off, let's discuss the difference between **setup** and the **Setup page**. **Setup** refers to the initial setup wizard that you used to onboard to Microsoft's online services. That usually includes three specific steps: **Connect a domain**, **Add users**, and **Download the Office apps**. The **Setup page** is the page in the admin center that has recommended set up tasks to ensure that you're getting the most out of your subscriptions - like turning on features you've purchased licenses for.
 
-- **Setup** - The initial setup wizard has been updated for **Office 365 for Business** subscriptions. This new design will help new organizations get through the wizard faster and with greater success.
+- **Setup** - The initial setup wizard has been updated for **Microsoft 365 for business** subscriptions. This new design will help new organizations get through the wizard faster and with greater success.
 - **Setup page** - The **Setup** page helps you finish setting up and securing the services that come with your subscriptions. You can also see any dismissed recommendations on the **Setup** page. To see if it's available for your subscriptions yet, go to the **Microsoft 365 admin center** > **Setup**.
 
 ### Billing & subscriptions
@@ -411,7 +419,7 @@ We've made a few more changes to **user management**, here's a quick list:
 
 - There's a new setup banner on the **Home** page that you'll see if you haven't finished the set up steps, like adding a domain, adding users, and downloading the Office apps.
 - The **Group** list and details pane have been updated to the new style. Go to **Groups** > **Groups** to view the changes.
-  - Speaking of groups, we've also added a **Microsoft Teams** tab to the groups details pane where you can turn any Office 365 group into a Team. To "teamify" a group select any Office 365 group from the list, select the **Microsoft Teams** tab, and then **Create Team**. If the group is already a Team, you'll get a link to manage it from the **Teams admin center**.
+  - Speaking of groups, we've also added a **Microsoft Teams** tab to the groups details pane where you can turn any Microsoft 365 group into a Team. To "teamify" a group select any Microsoft 365 group from the list, select the **Microsoft Teams** tab, and then **Create Team**. If the group is already a Team, you'll get a link to manage it from the **Teams admin center**.
   - Finally, you can add the **Teams status** to the **groups** list. On the column header, select **Choose columns** > **Teams status** > **Save**.
 - **New limited admin roles** - We've release some new admin roles so that you can give users only the access they need.
   - **Kaizala admin**: Users in this role have permission to perform all management tasks within Microsoft Kaizala, including create and manage users in Kaizala directory, manage Kaizala groups, manage action cards and connectors, and create service requests.

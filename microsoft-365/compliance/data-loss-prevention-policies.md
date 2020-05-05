@@ -77,7 +77,7 @@ For example, you might have a DLP policy that helps you detect the presence of i
   
 ### Locations
 
-A DLP policy can find and protect sensitive information across Office 365, whether that information is located in Exchange Online, SharePoint Online, OneDrive for Business, or Microsoft Teams. You can choose to protect content in Exchange email, Microsoft Teams chats and channel messages, and all SharePoint or OneDrive libraries, or select specific locations for a policy.
+A DLP policy can find and protect sensitive information across Microsoft 365, whether that information is located in Exchange Online, SharePoint Online, OneDrive for Business, or Microsoft Teams. You can choose to protect content in Exchange email, Microsoft Teams chats and channel messages, and all SharePoint or OneDrive libraries, or select specific locations for a policy.
   
 ![Options for locations where a DLP policy can be applied](../media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
 
@@ -119,7 +119,7 @@ The conditions now available can determine if:
     
 #### Types of sensitive information
 
-A DLP policy can help protect sensitive information, which is defined as a **sensitive information type**. Office 365 includes definitions for many common sensitive information types across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers. 
+A DLP policy can help protect sensitive information, which is defined as a **sensitive information type**. Microsoft 365 includes definitions for many common sensitive information types across many different regions that are ready for you to use, such as a credit card number, bank account numbers, national ID numbers, and passport numbers. 
   
 ![List of available sensitive information types](../media/3eaa9911-bc94-44be-902f-363dbf3b07fe.png)
   
@@ -395,7 +395,7 @@ To jump to a section quickly, click an item in the top navigation of the rule ed
 
 The first step in creating a DLP policy is choosing what information to protect. By starting with a DLP template, you save the work of building a new set of rules from scratch, and figuring out which types of information should be included by default. You can then add to or modify these requirements to fine tune the rule to meet your organization's specific requirements.
   
-A preconfigured DLP policy template can help you detect specific types of sensitive information, such as HIPAA data, PCI-DSS data, Gramm-Leach-Bliley Act data, or even locale-specific personally identifiable information (P.I.). To make it easy for you to find and protect common types of sensitive information, the policy templates included in Office 365 already contain the most common sensitive information types necessary for you to get started.
+A preconfigured DLP policy template can help you detect specific types of sensitive information, such as HIPAA data, PCI-DSS data, Gramm-Leach-Bliley Act data, or even locale-specific personally identifiable information (P.I.). To make it easy for you to find and protect common types of sensitive information, the policy templates included in Microsoft 365 already contain the most common sensitive information types necessary for you to get started.
   
 ![List of templates for data loss prevention policies with focus on template for U.S. Patriot Act](../media/791b2403-430b-4987-8643-cc20abbd8148.png)
   
@@ -500,11 +500,11 @@ When you create a DLP policy that includes Microsoft Teams as a location, the po
 
 Members of your compliance team who will create DLP policies need permissions to the Security &amp; Compliance Center. By default, your tenant admin will have access to this location and can give compliance officers and other people access to the Security &amp; Compliance Center, without giving them all of the permissions of a tenant admin. To do this, we recommend that you:
   
-1. Create a group in Office 365 and add compliance officers to it.
+1. Create a group in Microsoft 365 and add compliance officers to it.
     
 2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
     
-3. Add the Office 365 group to the role group.
+3. Add the Microsoft 365 group to the role group.
     
 For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
@@ -518,7 +518,7 @@ To use most of the cmdlets for the Security &amp; Compliance Center, you need to
     
 2. Use any of these [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-However, DLP reports need pull data from across Office 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
+However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
   
 1. [Connect to Exchange Online using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
@@ -543,4 +543,3 @@ However, DLP reports need pull data from across Office 365, including Exchange O
 - [What the DLP functions look for](what-the-dlp-functions-look-for.md)
     
 - [Create a custom sensitive information type](create-a-custom-sensitive-information-type.md)
-    

@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: "Learn how to delete or restore a user's Office 365 account."
+description: "Learn how to delete or restore a user's Microsoft 365 account."
 ---
 
 # Quick help: Deleted user
@@ -70,9 +70,9 @@ You can restore users by searching for **deleted** on the home page and choosing
 
 A deleted [user](../add-users/add-users.md) is a work or school account that you're deleting from your organization. 
   
-## Does deleting a user free up their Office 365 license?
+## Does deleting a user free up their Microsoft 365 license?
 
-Yes, deleting the user frees up the Office 365 license assigned to that user. You can then assign that license to another user. [Read full article](../../commerce/licenses/remove-licenses-from-subscription.md).
+Yes, deleting the user frees up the Microsoft 365 license assigned to that user. You can then assign that license to another user. [Read full article](../../commerce/licenses/remove-licenses-from-subscription.md).
   
 ## I had a deleted user listed in Deleted users, and then it disappeared. What happened?
 

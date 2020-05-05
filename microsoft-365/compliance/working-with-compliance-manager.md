@@ -32,7 +32,7 @@ Compliance Manager is accessible from the Microsoft Service Trust Portal. Anyone
 2. Sign in with your Microsoft service account, which is your Office 365, Microsoft 365, or Azure Active Directory (Azure AD) user account.
 
 > [!NOTE]
-> In the Service Trust Portal, select **Compliance Manager**, which is the preview version with the most current features. Do not select **Compliance Manager (Classic)**, which contains legacy features not covered by this documentation.
+> In the Service Trust Portal, select **Compliance Manager**, which is the preview version with the most current features. Do not select **Compliance Manager (Classic)**, which contains early-release features not covered by this documentation.
 
 ## Administration
 

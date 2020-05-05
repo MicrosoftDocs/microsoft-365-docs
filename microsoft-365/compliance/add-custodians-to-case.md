@@ -65,7 +65,7 @@ To identify custodian data sources:
 
 ## Step 3: Associate additional data sources to a custodian
 
-Depending on the case you're investigating, you may also need to search (and preserve content in) mailboxes that a specific custodian may have accessed, Office 365 groups that a custodian is currently a member of, or sites that a custodian has also accessed. So in addition to the primary custodian data sources that you specified in the previous step, you can also associate additional Office 365 data sources with a custodian in the case. 
+Depending on the case you're investigating, you may also need to search (and preserve content in) mailboxes that a specific custodian may have accessed, Microsoft 365 groups that a custodian is currently a member of, or sites that a custodian has also accessed. So in addition to the primary custodian data sources that you specified in the previous step, you can also associate additional Microsoft data sources with a custodian in the case. 
 
 To map mailboxes, sites, or teams to a specific custodian:
 
@@ -73,14 +73,14 @@ To map mailboxes, sites, or teams to a specific custodian:
   
    ![Map Additional Data Sources](../media/AddCustodianStep3.PNG)
 
-2. On the flyout page, you can specify a data source from any of the following Office 365 services:
+2. On the flyout page, you can specify a data source from any of the following services:
   
-   -  **Exchange email** - Click **Choose users, groups, or Teams** and then click **Choose users, groups, or teams** again. Use the search box to find mailboxes to associate with the custodian. To specify mailboxes to assign to the selected custodian, use the search box to find user mailboxes and distribution groups. You can also assign the associated mailbox for an Office 365 group or a Microsoft Team. Select the user, group, team check box, click **Choose**, and then click **Done**.
+   -  **Exchange email** - Click **Choose users, groups, or Teams** and then click **Choose users, groups, or teams** again. Use the search box to find mailboxes to associate with the custodian. To specify mailboxes to assign to the selected custodian, use the search box to find user mailboxes and distribution groups. You can also assign the associated mailbox for a Microsoft 365 group or a Microsoft Team. Select the user, group, team check box, click **Choose**, and then click **Done**.
 
         > [!NOTE]
         > When you click Choose users, groups, or teams to specify mailboxes, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add mailbox to this list, type a name or alias (a minimum of 3 characters) in the search box.
      
-     - **SharePoint sites** - Click **Choose sites** and then click **Choose sites** again to display a list of SharePoint sites in your organization. To associate a site with the custodian, you can select a site in the list or you can type the URL of a different site or a site associated with an Office 365 group, Microsoft Team, or a OneDrive account.
+     - **SharePoint sites** - Click **Choose sites** and then click **Choose sites** again to display a list of SharePoint sites in your organization. To associate a site with the custodian, you can select a site in the list or you can type the URL of a different site or a site associated with a Microsoft 365 group, Microsoft Team, or a OneDrive account.
      
      - **Teams** – Click **Choose teams** and then click **Choose teams** again to display a list of Microsoft Teams that the custodian is currently a member of. Select the Teams that you would like to add to your custodian. Once selected, the system will automatically identify & select the associated SharePoint site and Group Mailbox associated to that Microsoft Team. Click **Choose**, and then click **Done**.
 

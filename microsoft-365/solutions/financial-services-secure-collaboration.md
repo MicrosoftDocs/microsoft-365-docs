@@ -6,12 +6,13 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.collection: 
-- Ent_O365
-- Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+ms.prod: microsoft-365-enterprise
+ms.custom: 
+- M365solutions
 localization_priority: Priority
 description: "Learn how Microsoft 365 helps financial services move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
+f1.keywords: NOCSH
 ---
 
 # Key compliance and security considerations for US banking and capital markets
@@ -50,7 +51,7 @@ Providing employees with a modern, cloud-based collaboration platform allows the
 
 Teams provides a collaboration hub for the organization. It helps bring people together to work productively on common initiatives and projects. Teams lets team members conduct 1:1 and multi-party chat conversations, collaborate and coauthor documents, and store and share files. Teams also facilitates online meetings through integrated enterprise voice and video. Teams can also be customized with Microsoft apps such as Microsoft Planner, Microsoft Dynamics 365, PowerApps, PowerBI, and third-party line-of-business applications. Teams is designed for use by both internal team members and permitted external users who can join team channels, participate in chat conversations, access stored files, and leverage other applications
 
-Every Microsoft Team is backed by an Office 365 group. That group is considered the membership service for numerous Office 365 services, including Teams. Office 365 groups are used to securely distinguish between "owners" and "members" and to control access to various capabilities within Teams. When coupled with appropriate governance controls and regularly administered access reviews, Teams allows only members and owners to utilize authorized channels and capabilities.
+Every Microsoft Team is backed by a Microsoft 365 group. That group is considered the membership service for numerous Office 365 services, including Teams. Microsoft 365 groups are used to securely distinguish between "owners" and "members" and to control access to various capabilities within Teams. When coupled with appropriate governance controls and regularly administered access reviews, Teams allows only members and owners to utilize authorized channels and capabilities.
 
 A common scenario where Teams benefits financial services is when running internal projects or programs. For example, many financial institutions, including banks, wealth management firms, credit unions, and insurance providers, are required to have anti-money laundering and other compliance programs in place. A cross-functional team comprised of IT, lines of business such as retail and wealth management, and a financial crime unit may be required to share data with each other and communicate about the program or specific investigations. Traditionally, these programs have used shared network drives, but this approach can present numerous challenges, including:
 * Only one person can edit a document at a time.
@@ -65,18 +66,18 @@ Another common scenario is to use Teams as a "virtual data room" to securely col
  
 ### Teams: Improve collaboration and reduce compliance risk
 
-Microsoft 365 provides other common policy capabilities for Teams through its use of Office 365 groups as an underlying membership service. These policies can help improve collaboration and meet compliance needs.
+Microsoft 365 provides other common policy capabilities for Teams through its use of Microsoft 365 groups as an underlying membership service. These policies can help improve collaboration and meet compliance needs.
 
-**Office 365 group naming policies** help ensure that Office 365 groups, and therefore teams, are named according to corporate policy. Names can be problematic if they aren't appropriate. For example, employees may not know which teams to work with or share information with if names aren't appropriately applied. Group-naming policies (including support for prefix/suffix-based policies and custom blocked words) can enforce good "hygiene" and prevent use of specific words, such as reserved words or inappropriate terminology.
+**Microsoft 365 group naming policies** help ensure that Microsoft 365 groups, and therefore teams, are named according to corporate policy. Names can be problematic if they aren't appropriate. For example, employees may not know which teams to work with or share information with if names aren't appropriately applied. Group-naming policies (including support for prefix/suffix-based policies and custom blocked words) can enforce good "hygiene" and prevent use of specific words, such as reserved words or inappropriate terminology.
   
-**Office 365 group expiration policies** help ensure that Office 365 groups and therefore teams, aren't retained for longer periods of time than the organization wants or needs. This capability helps prevent two key information-management issues:
+**Microsoft 365 group expiration policies** help ensure that Microsoft 365 groups and therefore teams, aren't retained for longer periods of time than the organization wants or needs. This capability helps prevent two key information-management issues:
 
 * Proliferation of teams that aren't necessary or used.
 * Over-retention of data that's no longer required or used by the organization (except in cases of legal hold/preservation).
 
-Administrators can specify an expiration period for Office 365 groups, such as 90, 180, or 365 days. If a service that's backed by an Office 365 group is inactive for the expiration period, group owners are notified. If no action is taken, the Office 365 group and all its related services, including Teams, is deleted.
+Administrators can specify an expiration period for Microsoft 365 groups, such as 90, 180, or 365 days. If a service that's backed by a Microsoft 365 group is inactive for the expiration period, group owners are notified. If no action is taken, the Microsoft 365 group and all its related services, including Teams, is deleted.
   
-The over-retention of data that's stored in Teams and other group-based services can pose risks to financial services organizations. Office 365 group expiration policies are a recommended way to help prevent retention of data that's no longer needed. Combined with built-in retention labels and policies, Microsoft 365 helps ensure that organizations are only retaining the data that's required to meet corporate policies and regulatory compliance obligations.
+The over-retention of data that's stored in Teams and other group-based services can pose risks to financial services organizations. Microsoft 365 group expiration policies are a recommended way to help prevent retention of data that's no longer needed. Combined with built-in retention labels and policies, Microsoft 365 helps ensure that organizations are only retaining the data that's required to meet corporate policies and regulatory compliance obligations.
 
 #### Teams: Integrate custom requirements with ease
 
@@ -210,7 +211,7 @@ Financial institutions manage vast amounts of data. And some retention periods a
 - What occurs when the retention period expires (delete the document, start a disposition review, or take no action)
 -  What triggers the retention period to start (created date, last modified date, labeled date, or an event) and marks the document or email as a record (meaning it can't be edited or deleted)
 
-The retention labels are then published to SharePoint or OneDrive sites, Exchange mailboxes, and Office 365 groups. Users can apply the retention labels manually to documents and emails. Record managers can use intelligence to automatically apply the labels. Intelligent capabilities can be based on [ninety-plus built-in sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (such as ABA outing number, US bank account number, or US Social Security Number). They're also customizable based on keywords or sensitive data found in documents or emails, such as credit card numbers or other personally identifiable information or based on SharePoint metadata. For data that's not easily identified through manual or automated pattern matching, trainable classifiers can be used to classify documents intelligently based on machine learning techniques.
+The retention labels are then published to SharePoint or OneDrive sites, Exchange mailboxes, and Microsoft 365 groups. Users can apply the retention labels manually to documents and emails. Record managers can use intelligence to automatically apply the labels. Intelligent capabilities can be based on [ninety-plus built-in sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (such as ABA outing number, US bank account number, or US Social Security Number). They're also customizable based on keywords or sensitive data found in documents or emails, such as credit card numbers or other personally identifiable information or based on SharePoint metadata. For data that's not easily identified through manual or automated pattern matching, trainable classifiers can be used to classify documents intelligently based on machine learning techniques.
  
 The **Securities and Exchange Commission (SEC)** requires broker-dealers and other regulated financial institutions to retain all business-related communications. These requirements apply to many types of communications and data, including emails, documents, instant messages, faxes, and more. **SEC rule 17a-4** defines the criteria that these organizations must meet to store records in an electronic data storage system. In 2003, the SEC issued a release that clarified these requirements. It included the following criteria:
 
@@ -258,7 +259,7 @@ Financial institutions can be subject to regulations that prevent employees in c
 
 Ultimately, these rules require organizations to establish policies and implement information barriers between roles involved in banking services, sales, or trading from exchanging information and communications with analysts.
 
-[Information barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) provides the ability to establish ethical walls within your Office 365 environment, allowing compliance administrators or other authorized administrators to define policies that allow or prevent communications between groups of users in Teams. Information barriers perform checks on specific actions to prevent unauthorized communication. Information barriers can also restrict communication in scenarios where internal teams are working on mergers/acquisitions or confidential deals, or working with sensitive internal information that must be heavily restricted.
+[Information barriers](https://docs.microsoft.com/microsoft-365/compliance/information-barriers?view=o365-worldwide) provides the ability to establish ethical walls within your Office 365 environment, allowing compliance administrators or other authorized administrators to define policies that allow or prevent communications between groups of users in Teams. Information barriers perform checks on specific actions to prevent unauthorized communication. Information barriers can also restrict communication in scenarios where internal teams are working on mergers/acquisitions or sensitive deals, or working with sensitive internal information that must be heavily restricted.
 
 Information barriers in Microsoft 365 support conversations and files in Teams. They can prevent the following types of communications-related actions to help comply with FINRA regulations:
 
