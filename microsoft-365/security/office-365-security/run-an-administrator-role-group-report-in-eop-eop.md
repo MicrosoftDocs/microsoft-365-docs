@@ -18,11 +18,21 @@ description: "Admins can learn how to run an administrator role group report in 
 
  When an admin adds members to or removes members from administrator role groups, Exchange Online Protection (EOP) logs each occurrence. When you run an administrator role group report in the Exchange admin center (EAC), entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made. Use this report to monitor changes to the administrative permissions assigned to users in your organization.
 
+
+ Auditing reports in Exchange Online Protection (EOP) can help you meet regulatory, compliance, and litigation requirements for your organization. You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration. These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems.
+
+There are two auditing reports available in EOP:
+
+- **Administrator role group report**: The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group. You can use this report to monitor changes to the administrative permissions assigned to users in your organization. For more information, see [Run an administrator role group report in EOP](run-an-administrator-role-group-report-in-eop-eop.md).
+
+- **Administrator audit log**: The administrator audit log records any action (based on Exchange Online Protection PowerShell cmdlets) by an admin or a user with administrative privileges. For more information, see [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
+
+
 ## What do you need to know before you begin?
 
 - To open the Exchange admin center, see [Exchange admin center in Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- You need to be assigned permissions before you can perform these procedures. To see what permissions you need, see the "Reports" section of the [Feature permissions in EOP](feature-permissions-in-eop.md) topic.
+- You need to be assigned permissions before you can perform these procedures. Specifically, you need the Audit Logs or View-Only Audit Logs role, which are assigned to the ComplianceManagement, OrganizationManagement (global admins), and SecurityAdministrator role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 

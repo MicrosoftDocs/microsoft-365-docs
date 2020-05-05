@@ -18,39 +18,35 @@ description: "Learn about the permission that are required for tasks in standalo
 
 Standalone Exchange Online Protection (EOP) without Exchange Online mailboxes uses the Role Based Access Control (RBAC) permissions model, which you can use right away to easily grant permissions to your admins and users. You can use the permission features in standalone EOP to get your new organization up and running quickly.
 
+To grant permissions to users, see [Manage admin role groups in EOP](manage-admin-role-group-permissions-in-eop.md).
+
 For more information about permissions across Microsoft 365, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 ## Role-based permissions
 
-The permissions that you grant to admins and users are based on management roles. A management role defines the set of tasks that an admin or user can do. For example, a management role called `Mail Recipients` defines the tasks that someone can perform on a set of mail users, and distribution groups. When a management role is assigned to an admin or user, that person is granted the permissions provided by the management role.
+The admin permissions that you grant to users are based on management roles. A management role defines the cmdlets that are available for a set of given tasks. Because the Exchange admin center (EAC) and standalone EOP PowerShell both use cmdlets, granting access to a cmdlet gives the user permission to do the related tasks in the EAC or in standalone EOP PowerShell. For example, the Mail Recipients role defines the cmdlets that are required to modify mail users.
 
 In standalone EOP, administrative roles are the only type of management role that's available (there are no end-user roles or role assignment policies).
 
-Management roles give permissions to perform tasks to admins and users by making cmdlets available to those who are assigned the roles. Because the Exchange admin center (EAC) and standalone EOP PowerShell use cmdlets, granting access to a cmdlet gives the admin or user permission to do tasks in the EAC or in standalone EOP PowerShell.
-
 ## Role groups
 
-To make it easier to assign multiple roles to an admin, Exchange Online includes role groups. When a role is assigned to a role group, the permissions granted by the role are granted to all the members of the role group. This enables you to assign many roles to many role group members at once. Role groups typically encompass broader management areas, such as recipient management. Role group members can be mail users, users from the Microsoft 365 admin center, and other role groups.
-
-> [!NOTE]
-> It's possible to assign a role directly to a user without using a role group. However, that method of role assignment is an advanced procedure and isn't covered in this topic. We recommend that you use role groups to manage permissions.
+To make it easier to assign roles to users, standalone EOP uses role groups. Management roles are assigned to role groups, and the role group members get the permissions that are associated with the roles. In other words, management roles aren't directly assigned to users; they're assigned to role group. This model allows you to assign many roles to many role group members at once. Role group members can be mail users, mail-enabled security groups, users from the Microsoft 365 admin center, and other role groups.
 
 The following figure shows the relationship between users, role groups, and roles.
 
-![Role, role group and member relationship](../../../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
+![Role, role group and member relationship](../../media/ITPro_Security_RBAC_EXO_SimplifiedRoleGroupRelationship.png)
 
-Standalone EOP includes several built-in role groups, each one providing permissions to manage specific areas in EOP. Some role groups may overlap with other role groups. The following table lists each role group with a description, and the roles that are assigned to the role group by default.
-
+The available role groups in standalone EOP are described in the following table.
 
 ||||
 |---|---|---|
 |**Role group**|**Description**|**Default roles assigned**|
-|ComplianceManagement|Configure and manage compliance settings within the organization. <br/><br/> Members of the [Compliance Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) role in Azure AD automatically get the permissions of this role group.|Audit Logs <br/><br/> Compliance Administration <br/><br/> Information Rights Management <br/><br/> Retention Management <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
-|ContentExplorerContentViewer||Data Classification Content Viewer|
-|ContentExplorerListViewer||Data Classification List Viewer|
-|HelpDesk|Members of this management role group can view and manage mail users.|Reset Password <br/><br/> User Options <br/><br/> View-Only Recipients|
+|ComplianceManagement|Configure and manage compliance settings within the organization, including data loss prevention (DLP) if your subscription has DLP capabilities. <br/><br/> Members of the [Compliance Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#compliance-administrator) role in Azure AD automatically get the permissions of this role group.|Audit Logs <br/><br/> Compliance Administration <br/><br/> Information Rights Management <br/><br/> Retention Management <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
+|ContentExplorerContentViewer|Not used.|Data Classification Content Viewer|
+|ContentExplorerListViewer|Not used.|Data Classification List Viewer|
+|HelpDesk|View and manage mail users.|Reset Password <br/><br/> User Options <br/><br/> View-Only Recipients|
 |HygieneManagement|Manage protection features (anti-spam, anti-malware, etc.).|Transport Hygiene <br/><br/> View-Only Configuration <br/><br/> View-Only Recipients|
-|MailFlowAdministrator||Remote and Accepted Domains <br/><br/> View-Only Recipients|
+|MailFlowAdministrator|View and manage accepted domains and connectors|Remote and Accepted Domains <br/><br/> View-Only Recipients|
 |OrganizationManagement|Admin access to the entire organization and the ability to perform almost any task. <br/><br/> Members of the [Global Administrator](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-administrator--company-administrator) role in Azure AD automatically get the permissions of this role group. <br/><br/> **Important**: Because the OrganizationManagement role group is a powerful role, only users that perform organizational-level administrative tasks should be members of this role group.|AntiMalware <br/><br/> AntiSpam <br/><br/> Audit Logs <br/><br/> Compliance Administrator <br/><br/> Distribution Groups <br/><br/> Information Rights Management <br/><br/> Mail Recipient Creation <br/><br/> Mail Recipients <br/><br/> Message Tracking <br/><br/> Migration <br/><br/> Organization Client Access <br/><br/> Organization Configuration <br/><br/> Organization Transport Settings <br/><br/> Quarantine <br/><br/> Recipient Policies <br/><br/> Remote and Accepted Domains <br/><br/> Reset Password <br/><br/> Retention Management <br/><br/> Role Management <br/><br/> Security Administrator <br/><br/> Security Group Creation and Membership <br/><br/> Security Reader <br/><br/> Sensitivity Label Administrator <br/><br/> Supervision <br/><br/> Transport Hygiene <br/><br/> Transport Rules <br/><br/> User Options <br/><br/> View-Only AntiMalware <br/><br/> View-Only AntiSpam <br/><br/> View-Only Audit Logs <br/><br/> View-Only Configuration <br/><br/> View-Only Quarantine <br/><br/> View-Only Recipients <br/><br/> View-Only Threat Intelligence|
 |QuarantineAdministrator|Manage quarantined messages for all recipients.|Quarantine|
 |RecipientManagement|Create, manage, and remove recipient objects in the organization.|Distribution Groups <br/><br/> Mail Recipient Creation <br/><br/> Mail Recipients <br/><br/> Message Tracking <br/><br/> Migration <br/><br/> Recipient Policies <br/><br/> Reset Password|
@@ -118,7 +114,7 @@ The built-in roles that are available in standalone EOP are described in the fol
 When you create a user in the Microsoft 365 admin center, you can choose whether to assign various administrative roles, such as Global admin, Service admin, Password admin, and so on, to the user. Some, but not all, Microsoft 365 roles grant the user administrative permissions in EOP.
 
 > [!NOTE]
-> The user that was used to create your standalone EOP organization is automatically assigned to the Global admin role.
+> The account you used to create your standalone EOP organization is automatically assigned to the Global admin role.
 
 The following table lists the Microsoft 365 roles and the standalone EOP role groups that they correspond to. For more information about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
@@ -148,33 +144,3 @@ To verify that you've successfully copied a role group, do either of the followi
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List
     ```
-
-## Feature permissions in standalone EOP
-
-The permissions required to perform tasks to manage Exchange Online Protection (EOP) vary depending on the feature you are managing.
-
-To set up EOP, you must be a lobal admin, or an Exchange Company Administrator (the OrganizationManagement role group).
-
-## Exchange Online Protection permissions
-
-To find out what permissions you need to manage EOP features, see the following table. If a feature lists more than one role group, you only need to be assigned one of the role groups to use the feature.
-
-|||
-|---|---|
-|**Feature**|**Permissions required**|
-|Manage anti-malware features|OrganizationManagement <br/><br/> HygieneManagement <br/><br/> SecurityAdministrator|
-|View only for anti-malware features|SecurityReader <br/><br/> ViewOnlyOrganizationManagement|
-|Manage anti-spam features |OrganizationManagement <br/><br/> HygieneManagement <br/><br/> SecurityAdministrator|
-|View only for anti-spam features|SecurityReader <br/><br/> ViewOnlyOrganizationManagement|
-|Mail flow rules|MailFlowAdministrator <br/> OrganizationManagement|
-|Domains|MailFlowAdministrator <br/> OrganizationManagement|
-|Connectors|MailFlowAdministrator <br/> OrganizationManagement|
-|Message trace|OrganizationManagement <br/><br/> ViewOnlyOrganization Management|
-|Organization configuration|OrganizationManagement|
-|View and release all messages from quarantine|OrganizationManagement  <br/><br/> HygieneManagement<br/><br/> QuarantineAdministrator <br/><br/> SecurityAdministrator|
-|View all quarantined messages|SecurityReader <br/><br/> ViewOnlyOrganizationManagement|
-|Create and manage mail users and mail contacts|OrganizationManagement <br/><br/> RecipientManagement|
-|Modify existing mail users and mail contacts|HelpDesk <br/><br/> OrganizationManagement|
-|Create and manage distribution groups and mail-enabled security groups|OrganizationManagement <br/><br/> RecipientManagement|
-|View reports|Organization Management: Access to mail protection reports. <br/><br/> View-Only Recipients: Access to mail protection reports.  <br/><br/> Compliance Management: Access to mail protection reports and Data Loss Prevention (DLP) reports (if your subscription has DLP capabilities).|
-|

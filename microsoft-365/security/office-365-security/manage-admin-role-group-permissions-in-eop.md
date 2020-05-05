@@ -14,9 +14,11 @@ ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: "Admins can learn how to assign or remove permissions in the Exchange admin center (EAC) in Exchange Online Protection."
 ---
 
-# Manage admin role group permissions in EOP
+# Manage role groups in EOP
 
-In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use the Exchange admin center (EAC) to make a user a member of a role group or groups in order to assign them permissions to perform specific administrative tasks. You can also remove a user from a role group or groups by using the EAC.
+In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you can use the Exchange admin center (EAC) to add users to role groups. Adding a users to a role group gives the user permissions to do specific admin tasks. You can also remove users from role groups.
+
+For more information about roles and role groups, see [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
 ## What do you need to know before you begin?
 
@@ -24,7 +26,7 @@ In standalone Exchange Online Protection (EOP) organizations without Exchange On
 
 - To open standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- The procedures in this topic require the Role Management RBAC role in EOP. Typically, you get this permission via membership in the Organization Management role group (the Microsoft 365 Global admin role).
+- You need to be assigned permissions before you can perform these procedures. Specifically, you need the Role Management role, which is assigned to the OrganizationManagement (global admins) role group by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 

@@ -25,7 +25,7 @@ This topic explains how to set up standalone Exchange Online Protection (EOP). I
 
 - Estimated time to complete this task: 1 hour
 
-- To configure connectors, your account must be a global admin, or an Exchange Company Administrator (the Organization Management role group). For information, see [Feature permissions in EOP](feature-permissions-in-eop.md).
+- You need to be assigned permissions before you can perform these procedures. Specifically, you need the Remote and Accepted Domains role, which is assigned to the MailFlowAdministrator and OrganizationManagement (global admins) role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - If you haven't signed up for EOP, visit [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) and choose to buy or try the service.
 
