@@ -15,8 +15,9 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_Solutions
+- seo-marvel-apr2020
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
-description: "Summary: Learn about the uses for isolated SharePoint Online team sites."
+description: Learn about isolated SharePoint Online team sites, including uses, requirements, and features they can be used with.
 ---
 
 # Isolated SharePoint Online team sites

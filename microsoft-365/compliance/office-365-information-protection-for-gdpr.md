@@ -16,7 +16,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "This solution demonstrates how to protect sensitive data that is stored in Office 365 services."
+description: This solution demonstrates how to protect sensitive data stored in Office 365 services using General Data Protection Regulation (GDPR) as an example.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Information Protection for GDPR

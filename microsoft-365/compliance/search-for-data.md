@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to create, save, and run a search to identify data relevant to your investigation, then add the results to your evidence.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Search for data in an investigation

@@ -17,7 +17,8 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to search for and find personal data in Office 365."
+description: Learn how to search for and find personal data subject to  General Data Protection Regulations (GDPR) in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 # Search for and find personal data
 

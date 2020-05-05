@@ -11,9 +11,10 @@ ms.collection:
 - M365-collaboration
 ms.custom: 
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to collaborate with guests in a SharePoint site."
+description: "Learn about the Microsoft 365 configuration steps necessary to set up a SharePoint site for collaboration with guests."
 ---
 
 # Collaborate with guests in a site

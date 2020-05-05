@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Use this article as a guide for troubleshooting information barriers."
+description: Use this article as a guide for troubleshooting information barriers.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Troubleshooting information barriers
