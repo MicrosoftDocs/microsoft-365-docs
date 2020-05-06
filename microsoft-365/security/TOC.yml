@@ -57,8 +57,27 @@
               href: mtp/portals.md
             - name: Troubleshoot issues
               href: ./mtp/troubleshoot.md
+        - name: Evaluate capabilities
+          items: 
+            - name: Trial lab overview 
+              href: mtp/mtp-evaluation.md
+            - name: Prepare 
+              href: mtp/prepare-mtpeval.md
+            - name: Setup 
+              href: mtp/setup-mtpeval.md
+            - name: Configure and onboard endpoints
+              href: mtp/config-mtpeval.md
         - name: How-to guides
           items:
+            - name: Create a trial lab environment
+              href: mtp/mtp-evaluation.md
+              items: 
+                - name: Prepare
+                  href: mtp/prepare-mtpeval.md
+                - name: Setup
+                  href: mtp/setup-mtpeval.md
+                - name: Configure and onboard endpoints
+                  href: mtp/config-mtpeval.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
