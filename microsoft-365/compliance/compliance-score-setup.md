@@ -54,13 +54,6 @@ The table below shows how each [Azure AD role](https://docs.microsoft.com/azure/
 > [!NOTE]
 > When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager; you will not need to re-enter your credentials.
 
-### How to set permissions and roles in the Microsoft 365 compliance center
-
-To set permissions in the Microsoft 365 compliance center:
-
-1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com) and sign in with your global admin account.
-2. Select **Permissions** on the left navigation pane. From here, you can view roles and assign permissions.
-
 ## Configure automatic Secure Score updates
 
 By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score.md) automatic updates turned on. All actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
