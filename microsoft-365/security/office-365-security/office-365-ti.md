@@ -1,5 +1,5 @@
 ---
-title: "Threat investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2"
+title: Threat investigation & response capabilities - Office 365 ATP Plan 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
-description: "Find out how threat intelligence capabilities in Office 365 Advanced Threat Protection can help you research threats against your organization, respond to malware, phishing, and other attacks that Microsoft 365 has detected on your behalf, and search for threat indicators."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn about threat investigation and response capabilities in Office 365 Advanced Threat Protection Plan."
 ---
 
 # Threat investigation and response

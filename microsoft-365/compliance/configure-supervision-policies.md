@@ -1,6 +1,6 @@
 ---
 title: "Configure supervision policies"
-description: "Configure communication supervision for Office 365"
+description: Configure communication supervision policies in Office 365 to capture employee communications for examination by internal or external reviewers.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 titleSuffix: Office 365 Compliance
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure supervision policies in Office 365

@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to configure spoofed senders to allow or not allow, and other spoof intelligence settings in Exchange Online and Exchange Online Protection (EOP)."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to use and manage spoof intelligence for protection against email spoofing."
 ---
 
 # Configure spoof intelligence in Microsoft 365

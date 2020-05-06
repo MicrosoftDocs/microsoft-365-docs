@@ -271,16 +271,16 @@ By default, the person who created the group is the group owner. Often a group w
     
 - To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
     
-- [Assign a new owner to an orphaned group](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [Assign a new owner to an orphaned group](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
     
 ## Articles about managing groups
     
 - [Upgrade distribution lists to Microsoft 365 groups in Outlook](../manage/upgrade-distribution-lists.md)
     
-- [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md)    
     
-- [Manage Microsoft 365 groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples
+- [Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples
     
 - [Microsoft 365 groups naming policy](groups-naming-policy.md)

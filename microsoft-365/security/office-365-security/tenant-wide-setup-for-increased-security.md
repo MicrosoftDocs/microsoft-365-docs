@@ -16,7 +16,9 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: "Walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point."
+ms.custom:
+- seo-marvel-apr2020
+description: "This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment."
 ---
 
 # Configure your Microsoft 365 tenant for increased security
@@ -104,7 +106,7 @@ For secure environments, be sure to disable authentication for apps that do not 
 
 In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
 
-- Use PowerShell, see [Block apps that do not use modern authentication](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
+- Use PowerShell, see [Block apps that do not use modern authentication (ADAL)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
 
 - Configure this in the SharePoint admin center on the "device access' page — "Control access from apps that don't use modern authentication." Choose Block.
 

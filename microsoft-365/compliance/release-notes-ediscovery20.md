@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "This article contains the release notes for Advanced eDiscovery."
+description: This article contains the release notes for Advanced eDiscovery, including known issues, fixed issues, and new features.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Release notes for Advanced eDiscovery
@@ -41,15 +42,15 @@ The Public Preview program for Advanced eDiscovery is the way to get early acces
 - DCR: Hold notifications
 - DCR: Custodians in eDiscovery
 
-## What’s new
+## What's new
 
 - **Redesigned navigation in the Security & Compliance Center** – Advanced eDiscovery has a new look and feel. Use Advanced eDiscovery to manage more of your case workflow.
 
-- **Case management** – There’s additional support for new case types. You can also select and save your recent and favorite cases. Track and monitor activity within and across cases using new dashboards.
+- **Case management** – There's additional support for new case types. You can also select and save your recent and favorite cases. Track and monitor activity within and across cases using new dashboards.
 
 - **Custodian management** – Add and remove users as data custodians within a case.
 
-- **Exchange, OneDrive, and Teams Integration** – Automatically add a user’s current mailbox, OneDrive for Business account, and Microsoft Teams sites to a case. 
+- **Exchange, OneDrive, and Teams Integration** – Automatically add a user's current mailbox, OneDrive for Business account, and Microsoft Teams sites to a case. 
 
 - **Custodian communications** – Send and manage legal hold notifications on behalf of your organization.
 

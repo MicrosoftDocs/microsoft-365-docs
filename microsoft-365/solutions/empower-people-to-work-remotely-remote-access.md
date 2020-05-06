@@ -31,6 +31,10 @@ There are three primary configurations:
 2. You are not using a remote access VPN solution, you have hybrid identity, and you need remote access only to on-premises web-based apps.
 3. You are not using a remote access VPN solution and you need access to on-premises apps, some of which are not web-based.
 
+See this flowchart for the remote access configuration options discussed in this article.
+
+![Remote access configuration flowchart](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-flowchart.png)
+
 With remote access connections, you can also use [Remote Desktop](https://support.microsoft.com/help/4028379/windows-10-how-to-use-remote-desktop) to connect your users to an on-premises PC. For example, a remote worker can use Remote Desktop to connect to the PC in their office from their Windows, iOS or Android device. Once they are remotely connected, they can use it as if they were sitting in front of it.
 
 ## Optimize performance for remote access VPN clients to Microsoft 365 cloud services

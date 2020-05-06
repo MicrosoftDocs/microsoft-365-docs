@@ -11,6 +11,7 @@ ms.collection:
 - M365-collaboration
 ms.custom: 
 - M365solutions
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
 description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."

@@ -22,6 +22,8 @@
       items:
         - name: Learn about insider risk management
           href: insider-risk-management.md
+        - name: Plan for insider risk management
+          href: insider-risk-management-plan.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
         - name: Create and manage insider risk policies
@@ -40,6 +42,8 @@
       items: 
         - name: Learn about communication compliance
           href: communication-compliance.md
+        - name: Plan for communication compliance
+          href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
         - name: Investigate and remediate communication compliance alerts

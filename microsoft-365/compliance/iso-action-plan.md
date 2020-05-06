@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 ISO 27001 action plan — Top priorities for your first 30 days, 90 days, and beyond
+title: Microsoft 365 ISO 27001 action plan, priorities for your first 30 days, 90 days, and beyond
 description: A prioritized action plan you can follow as you work to meet the requirements of the International Organization for Standardization (ISO)
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, ISO, ISO 27001
 author: BrendaCarter
@@ -13,6 +13,7 @@ manager: laurawi
 audience: itpro
 ms.collection: 
 - M365-security-compliance
+ms.custom: seo-marvel-apr2020
 ---
 
 # Microsoft 365 ISO 27001 action plan — Top priorities for your first 30 days, 90 days, and beyond

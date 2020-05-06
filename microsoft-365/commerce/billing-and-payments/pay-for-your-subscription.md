@@ -46,7 +46,7 @@ If you pay by credit card, and your credit card is declined, you'll receive an e
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription with the outstanding balance. In the **Billing** section, next to **Subscription has a past due payment**, select **Settle balance**.
 
