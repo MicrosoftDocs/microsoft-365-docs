@@ -71,7 +71,3 @@ Consult the New York Department of Financial Services [Who We Supervise](https:/
 - [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)- 
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf).

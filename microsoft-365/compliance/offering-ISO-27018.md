@@ -128,7 +128,3 @@ However, you are responsible for engaging an assessor to evaluate your implement
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf).

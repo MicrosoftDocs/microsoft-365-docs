@@ -87,7 +87,3 @@ CIS notes that its "Benchmarks are developed through the generous volunteer effo
 - [Windows 10 security policy settings](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/security-policy-settings)
 - [Windows 10 enterprise security](https://docs.microsoft.com/windows/security/index)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/B/7/9B75D846-BDB9-41CB-86FF-F0ADFD15800B/CIS_Benchmarks-Compliance.pdf).

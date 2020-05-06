@@ -82,7 +82,3 @@ These are two separate security standards with different, but complementary, pur
 - [NIST Cryptographic Module Validation Program](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server, and FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).

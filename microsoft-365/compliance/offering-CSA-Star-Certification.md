@@ -87,7 +87,3 @@ Azure, Cloud App Security, Intune, and Power BI have achieved the highest possib
 - [ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).

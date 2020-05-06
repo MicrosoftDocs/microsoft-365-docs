@@ -89,7 +89,3 @@ You can enter an agreement such, as the [Online Services Terms](https://aka.ms/O
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).

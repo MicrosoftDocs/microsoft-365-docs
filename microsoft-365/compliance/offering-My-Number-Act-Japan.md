@@ -72,7 +72,3 @@ Therefore, Microsoft business cloud services support My Number Act requirements 
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 - [Privacy considerations in the cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/0/E/C/0EC14DDA-6041-4841-A180-199870B136C4/MyNumberAct-Compliance.pdf).

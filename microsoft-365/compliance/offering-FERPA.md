@@ -74,7 +74,3 @@ This US federal law mandates the protection of the privacy of students’ educat
 - [Azure FERPA compliance framework mapping](https://aka.ms/AzureFERPAMapping)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).

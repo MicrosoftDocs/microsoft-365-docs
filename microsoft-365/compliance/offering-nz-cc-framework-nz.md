@@ -64,14 +64,10 @@ If your agency is required to undertake certification and accreditation of its I
 - [Office 365: SEEMail Integration and Reference Architecture](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (additional Microsoft NZ guidance on cloud service adoption)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## Microsoft responses to “Cloud Computing IPSC”
+## Microsoft responses to 'Cloud Computing IPSC'
 
 - [Azure](https://aka.ms/Azure-NZ-response)
 - [Dynamics 365](https://aka.ms/d365-nz-response)
 - [Intune](https://aka.ms/Intune-NZ-response)
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).
