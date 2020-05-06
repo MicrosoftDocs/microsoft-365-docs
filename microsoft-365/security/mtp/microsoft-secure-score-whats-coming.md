@@ -27,6 +27,6 @@ To learn about recent changes, see [What's new in Microsoft Secure Score?](micro
 
 ## May 2020
 
-### Adding Azure Advanced Threat Protection improvement actions to preview
+### Adding additional Azure Advanced Threat Protection improvement actions to preview
 
 - Enable security features on Active Directory trusts
