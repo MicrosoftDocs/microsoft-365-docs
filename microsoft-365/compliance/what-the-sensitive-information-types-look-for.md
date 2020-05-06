@@ -3047,8 +3047,59 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - no do cartao
 - no. do cartão
 - no. do cartao 
-   
+
+## Croatia driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+Eight digits without spaces and delimiters
+  
+### Pattern
+
+Eight digits
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_croatia_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_croatia_eu_driver's_license_number` is found. 
+
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_croatia_eu_driver's_license_number" />
+          <Match idRef="Keywords_croatia_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_croatia_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- vozačka dozvola
+
 ## Croatia Identity Card Number
+This sensitive information type entity is included in the EU National identification number bundle.
 
 ### Format
 
@@ -3082,8 +3133,74 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_croatia_id_card
 
-- Croatian identity card
-- Osobna iskaznica
+- majstorski broj građana
+- master citizen number
+- nacionalni identifikacijski broj
+- national identification number
+- oib#
+- oib
+- osobna iskaznica
+- osobni id
+- osobni identifikacijski broj
+- personal identification number
+- porezni broj
+- porezni identifikacijski broj
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+# Croatia passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Nine digits without spaces and delimiters
+  
+### Pattern
+
+ Nine digits 
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_croatia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_croatia_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_croatia_eu_passport_number" />
+          <Match idRef="Keywords_croatia_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+### Keywords
+
+**Keywords_croatia_eu_passport_number**
+
+- passport number
+- croatian passport number
+- passport no
+- broj putovnice
 
    
 ## Croatia Personal Identification (OIB) Number
@@ -3135,7 +3252,143 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Osobni identifikacijski broj 
 - OIB 
 
+## Croatia social security number or equivalent identification
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
+
+### Format
+
+11 digits without spaces and delimiters
+  
+### Pattern
+
+ 11 digits:
+  
+- Ten digits
+- One check digit
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
+- A keyword from  `Keywords_croatia_eu_ssn_or_equivalent` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_croatia_eu_ssn_or_equivalent` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
+        </Pattern> 
+       <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
+        </Pattern>      
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_croatia_eu_ssn_or_equivalent
+
+- personal identification number
+- master citizen number
+- national identification number
+- social security number
+- nationalnumber#
+- ssn#
+- ssn
+- nationalnumber
+- bnn#
+- bnn
+- personal id number
+- personalidnumber#
+- oib
+- osobni identifikacijski broj
    
+## Croatia tax identification number
+This sensitive information type entity is included in the EU Tax Identificaiton Number bundle.
+
+### Format
+
+11 digits with no spaces or delimiters
+  
+### Pattern
+
+11 digits:
+  
+- Ten digits, randomly chosen
+- One check digit
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_croatia_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_croatia_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_croatia_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_croatia_eu_tax_file_number" />
+          <Match idRef="Keywords_croatia_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_croatia_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_croatia_eu_tax_file_number
+
+- majstorski broj građana
+- master citizen number
+- nacionalni identifikacijski broj
+- national identification number
+- oib#
+- oib
+- osobna iskaznica
+- osobni id
+- osobni identifikacijski broj
+- personal identification number
+- porezni broj
+- porezni identifikacijski broj
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
 ## Czech Personal Identity Number
 
 ### Format
