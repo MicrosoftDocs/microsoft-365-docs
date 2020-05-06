@@ -69,7 +69,3 @@ You can download the [ISO 9001:2015 certificate](https://aka.ms/Azure9001Cert) f
 - [ISO 9000: 2015](https://www.iso.org/standard/45481.html) (fundamentals and vocabulary for purchase)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/6/3/E63F54DC-766E-477C-98D8-ADDB6A94F5C5/ISO-9001-Compliance.pdf ).
