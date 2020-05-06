@@ -19,6 +19,7 @@ description: Learn how to activate and manage third-party apps in Microsoft 365 
 
 ::: moniker range="o365-21vianet"
 
+> [!NOTE]
 > The admin center is changing. If your experience doesn't match the details presented here, see 
 [About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
