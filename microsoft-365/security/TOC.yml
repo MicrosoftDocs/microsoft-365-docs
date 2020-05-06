@@ -72,11 +72,11 @@
             - name: Create a trial lab environment
               href: mtp/mtp-evaluation.md
               items: 
-                - name: 1 - Prepare
+                - name: Prepare
                   href: mtp/prepare-mtpeval.md
-                - name: 2 - Setup
+                - name: Setup
                   href: mtp/setup-mtpeval.md
-                - name: 3 - Configure and onboard endpoints
+                - name: Configure and onboard endpoints
                   href: mtp/config-mtpeval.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
