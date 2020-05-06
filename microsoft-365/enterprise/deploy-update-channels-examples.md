@@ -22,19 +22,38 @@ description: How example organizations deploy and update using channels.
 
 Choosing which update channels to use for Office, Windows, or Edge can depend on your type of organization and where on the development cycle you want to be deploying and using new features and capabilities.
 
+<!--
+
 Here are the latest channel names.
 
 | New channel name | Previous channel name |
 |:-------|:-----|
+| Beta | Insider |
+| Preview (Release)) | Monthly Channel (Targeted) |
 | Semi-Annual Enterprise Channel | Semi-Annual Channel |
 | Semi-Annual Enterprise Channel (Preview) | Semi-Annual Channel (Targeted) |
 | Monthly Enterprise Channel | N/A |
 | Current Channel | Monthly Channel |
-| Current Channel (Preview) | Monthly Channel (Targeted) |
-| Beta | Insider |
 |||
 
 See if your organization matches one of these customer types, then follow the link to the example for more details.
+
+--> 
+
+Follow the **I am** and **Who wants** columns to determine the set of channels, and then click the link in the **How to** column for more details.
+
+| I am... | Who wants... | Windows channel | Office channel | Edge channel | How to |
+|:-------|:-----|:-------|:-------|:-----|:-------|
+| A Microsoft Edge app developer | to see what I was working on yesterday | N/A | N/A | Canary |   |
+| A highly technical user or Edge app developer | early access to the latest build. | Dev | N/A  | Dev |   |
+| An end user, an early adopter, a fan, or an IT professional  | early access to a beta build. | Beta | Beta | Beta |   |
+| An enterprise IT department | to evaluate the latest preview before broad deployment. | Preview (Release)  | Preview (Current or Semi-Annual Enterprise)  | N/A |   |
+| A consumer, small to medium business, or an enterprise organization | a broad and rapid deployment. |  Semi-Annual | Current | Stable | [Rapid deployment example](deploy-update-channels-examples-rapid-deploy.md) |
+| An enterprise organization | a broad deployment with additional predictability. | Semi-Annual | Monthly Enterprise | N/A |   |
+| An enterprise organization | a broad deployment with extensive IT testing before each update. | Semi-Annual | Semi-Annual | N/A |   |
+|||||||
+
+<!--
 
 | Customer type | Description | Products and their channels |
 |:-------|:-----|:-------|
@@ -42,6 +61,10 @@ See if your organization matches one of these customer types, then follow the li
 | Consumer fans, small and medium businesses, and some enterprises who want rapid deployment of the newest supported features <br> <br> See the [rapid deployment example](deploy-update-channels-examples-rapid-deploy.md). | These organizations want the latest supported changes and to take advantage of the  new capabilities for their users and to report their feedback to Microsoft. | **Office:** <ul><li> Current Channel </li></ul> **Windows:** <ul><li> N/A </li></ul> **Edge:** <ul><li> Stable </li></ul>|
 | Enterprises who need a stable and predictable cadence to their updates <br><br> See the broad deployment example.  | These organizations want to ensure that the changes they roll out to customers are fully supported and whose deployment will have minimaly impact to their employees. |  **Office:** <ul><li> Monthly Enterprise Channel </li><li> Semi-Annual Enterprise Channel (Preview) </li><li> Semi-Annual Enterprise Channel </li></ul> **Windows:** <br><ul><li> Release Preview </li><li> Semi-Annual Channel </li></ul> **Edge:** <ul><li>Stable (deferred) </li></ul> |
 ||||
+
+--> 
+
+
 
 ## See also
 
