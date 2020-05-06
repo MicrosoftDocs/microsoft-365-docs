@@ -25,6 +25,8 @@ With remote workers, you need to support a growing number of personal devices. E
 
 Endpoint Manager provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
 
+![The components for endpoint management](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
+
 ## Microsoft Intune
 
 Intune is designed to help you safeguard data when you don’t manage the devices used to access organization data. Intune app protection policies combined with Azure AD Conditional Access provide granular control over data on mobile devices. Intune also enables you to define comprehensive policies that allow only the right people under the right conditions to access your company data and ensure the data stays protected by controlling how they use it within Office, Outlook and other mobile apps.
