@@ -109,8 +109,8 @@
                       href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
-                    - name: AccountInfo
-                      href: mtp/advanced-hunting-accountinfo-table.md
+                    - name: IdentityInfo
+                      href: mtp/advanced-hunting-identityinfo-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
                     - name: EmailAttachmentInfo
