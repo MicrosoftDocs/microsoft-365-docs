@@ -1,6 +1,6 @@
 ---
-title: Prepare your Microsoft Threat Protection evaluation lab
-description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection evaluation lab
+title: Prepare your Microsoft Threat Protection trial lab environment
+description: Prepare stakeholder sign-off, timelines, environment considerations, and adoption order when setting up your Microsoft Threat Protection trial lab environment
 keywords: MTP trial prep, deploy, prepare, stakeholder, timeline, environment, endpoint, server, management, adoption
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,29 +17,29 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Prepare your Microsoft Threat Protection evaluation lab
+# Prepare your Microsoft Threat Protection trial lab environment
 
 **Applies to:**
 - Microsoft Threat Protection
 
-Creating a Microsoft Threat Protection evaluation lab and deploying it is a three-phase process:
+Creating a Microsoft Threat Protection trial lab environment and deploying it is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" bgcolor="#d5f5e3">
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" title="Prepare your Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Prepare your Microsoft Threat Protection trial lab environment" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"  >
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Setup your Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Setup your Microsoft Threat Protection trial lab environment" />
       <br/>Phase 2: Setup </a><br>
         </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval">
-        <img src="../../media/onboard.png" alt="Configure each Microsoft Threat Protection pillar" title="Configure each Microsoft Threat Protection pillar and onboard your endpoints" />
+        <img src="../../media/config-onboard.png" alt="Configure each Microsoft Threat Protection pillar" title="Configure each Microsoft Threat Protection pillar and onboard your endpoints" />
       <br/>Phase 3: Configure & Onboard</a><br>
 </td>
   </tr>
@@ -56,10 +56,10 @@ Creating a Microsoft Threat Protection evaluation lab and deploying it is a thre
   </tr>
 </table>
 
-You are currently in the preparation phase.
+You're currently in the preparation phase.
 
 
-Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create an evaluation lab for your Microsoft Threat Protection deployment.
+Preparation is key to any successful deployment. This section will guide you through what you need to consider as you prepare to create a trial lab environment for your Microsoft Threat Protection deployment.
 
 ## Prerequisites
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection. See the minimum requirements for [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?view=o365-worldwide), [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
@@ -85,7 +85,7 @@ to the table below as appropriate for your organization.
 | Enter name and email | **Head of Cyber Defense Operations Center (CDOC)** *A representative from the CDOC team in charge of defining how this change is aligned with the processes in the customers security operations team.*       | SO     |
 | Enter name and email | **Security Architect** *A representative from the Security team in charge of defining how this change is aligned with the core Security architecture in the organization.*                         | R      |
 | Enter name and email | **Workplace Architect** *A representative from the IT team in charge of defining how this change is aligned with the core workplace architecture in the organization.*                             | R      |
-| Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience and overall usefulness of this change from a security operations perspective.* | I      |
+| Enter name and email | **Security Analyst** *A representative from the CDOC team who can provide input on the detection capabilities, user experience, and overall usefulness of this change from a security operations perspective.* | I      |
 
 ## Prepare your Azure Active Directory
 Skip this step if you have already enabled synchronization between Active Directory and Azure Active Directory on premises. Review existing best practices documentation from Azure Active Directory. The following steps are optimized to evaluate Microsoft Threat Protection.
@@ -112,24 +112,23 @@ Skip this step if you have already enabled synchronization between Active Direct
 ![Image of configuration confirmation page](../../media/mtp-eval-7.png) <br>
 
 8. Congratulations, you have successfully configured Azure Active Directory Connect.
-![Image of a successfully-configured Azure Active Directory Connect page](../../media/mtp-eval-8.png) <br>
+![Image of a successfully configured Azure Active Directory Connect page](../../media/mtp-eval-8.png) <br>
 
 You can now [add users and groups to Active Directory](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) and [configure a SAM-R policy](https://docs.microsoft.com/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc).  
 
 
 ## Configuration order
-The table below indicates the order Microsoft recommends for configuring the Microsoft Threat Protection components for your evaluation lab deployment.
+The table below indicates the order Microsoft recommends for configuring the Microsoft Threat Protection components for your trial lab environment deployment.
 
 | Component                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Configuration order rank |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Office 365 Advanced Threat Protection| Office 365 ATP safeguards your organization against malicious threats posed by email messages, links (URLs) and collaboration tools. <br> [Learn more.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                   |
+| Office 365 Advanced Threat Protection| Office 365 ATP safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. <br> [Learn more.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide)                                                                                                                                                                                                                                             | 1                   |
 |Azure Advanced Threat Protection|Azure ATP uses Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. <br> [Learn more](https://docs.microsoft.com/azure-advanced-threat-protection/).| 2 |
 |Microsoft Cloud App Security| Microsoft Cloud App Security is a Cloud Access Security Broker (CASB) that operates on multiple clouds. It provides rich visibility, control over data travel, and sophisticated analytics to identify and combat cyberthreats across all your cloud services. <br> [Learn more](https://docs.microsoft.com/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP endpoint detection and response capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats. <br> [Learn more.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                   |                                                                                                                                                                                                                                    
 
-
 ## Next step
 |||
 |:-------|:-----|
-|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md) | Set up your Microsoft Threat Protection lab environment
+|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-mtpeval.md) | Set up your Microsoft Threat Protection trial lab environment
 

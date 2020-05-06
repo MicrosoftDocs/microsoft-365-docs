@@ -15,7 +15,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "You may be required to inform custodians of their obligation to preserve electronically stored information as part of legal investigation. Advanced eDiscovery lets you easily manage the hold notification process."
+ms.custom: 
+- seo-marvel-apr2020
+description: Learn how to use Advanced eDiscovery to send and follow up on legal hold notifications through email, as well as monitor obligation status.
 ---
 
 # Acknowledge a hold notification

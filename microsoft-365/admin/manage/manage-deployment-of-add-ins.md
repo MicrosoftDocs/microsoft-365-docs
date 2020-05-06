@@ -206,8 +206,8 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
 |||
 |:-----|:-----|
 |**Platform** <br/> |**Build number** <br/> |
-|Office 2016 ProPlus Monthly for Windows  <br/> |9001.2138   <br/> |
-|Office 2016 ProPlus Semi-Annual  <br/> |8431.2159  <br/> |
+|Microsoft 365 Apps for enterprise (Monthly Channel)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (Semi-Annual Channel)  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
@@ -229,7 +229,7 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
   
 Word, Excel, and PowerPoint 2013 for Windows will support the same minor checks if Active Directory Authentication Library (ADAL) is enabled. There are two options for compliance, as explained next.
   
-- **Enable ADAL**. This article explains how to enable ADAL for Office 2013: [Using Microsoft 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>You also need to set the registry keys to enable ADAL as explained in [Enable Modern Authentication for Office 2013 on Windows devices](../security-and-compliance/enable-modern-authentication.md).<br/>Additionally, you need to install the following April updates for Office 2013:
+- **Enable ADAL**. This article explains how to enable ADAL for Office 2013: [Using Microsoft 365 modern authentication with Office clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).<br/>You also need to set the registry keys to enable ADAL as explained in [Enable Modern Authentication for Office 2013 on Windows devices](../security-and-compliance/enable-modern-authentication.md).<br/>Additionally, you need to install the following April updates for Office 2013:
     
   - [Description of the security update for Office 2013: April 10, 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -276,6 +276,6 @@ You can also delete an add-in that was deployed.
 
 Learn more about creating and building [Office Add-ins](https://go.microsoft.com/fwlink/p/?linkid=846362).
   
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9).
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   
 [Troubleshoot: User not seeing add-ins](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

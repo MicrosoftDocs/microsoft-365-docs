@@ -88,7 +88,7 @@ Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Offi
   
 ## Related articles
 
-[Manage Microsoft 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
   
 [Delete groups using the Remove-UnifiedGroup cmdlet](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
