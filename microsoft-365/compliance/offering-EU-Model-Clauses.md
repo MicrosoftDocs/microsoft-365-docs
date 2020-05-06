@@ -66,9 +66,9 @@ A service provider that commits contractually to the Model Clauses gives its cus
 
 Compliance is a contractual commitment. Microsoft Standard Contractual Clauses are available to all cloud customers in the [Online Services Terms](https://aka.ms/Online-Services-Terms); for other services, see your existing agreement with Microsoft.
 
-**What is a "sub-processor"?**
+**What is a 'sub-processor'?**
 
-A "sub-processor" is someone who processes personal data following the data controller's instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
+A sub-processor is someone who processes personal data following the data controller's instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
 
 **Where do I start with my own organization's compliance efforts?**
 

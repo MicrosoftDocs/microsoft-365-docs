@@ -50,7 +50,7 @@ Based on FedRAMP authorizations, DISA Cloud Service Support granted a DoD Impact
 - Dynamics 365 U.S. Government Software as a Service (SaaS) was granted this authorization based on the Agency FedRAMP Authority to Operate (ATO) from the Department of Housing and Urban Development (HUD).
 - Office 365 U.S. Government was granted this authorization based on the Agency FedRAMP ATO from the Department of Health and Human Services (DHHS).
 
-Impact Level 2 covers Non-Controlled Unclassified Information — data that is authorized for public release. It also covers other unclassified information that, while not considered "mission critical," still requires a minimal level of access control. This authorization enables US federal government customers to deploy non-sensitive information and basic defense applications and websites on in-scope Microsoft cloud services.
+Impact Level 2 covers Non-Controlled Unclassified Information — data that is authorized for public release. It also covers other unclassified information that, while not considered 'mission critical,' still requires a minimal level of access control. This authorization enables US federal government customers to deploy non-sensitive information and basic defense applications and websites on in-scope Microsoft cloud services.
 
 ## Microsoft in-scope cloud services
 
@@ -87,11 +87,11 @@ Yes. All DoD agencies may rely on the certifications of Microsoft cloud services
 
 **Does Microsoft's DoD certification meet NIST 800–171 requirements?**
 
-In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit "covered defense information" through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an "alternative, but equally effective, security measure" that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
+In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit 'covered defense information' through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an 'alternative, but equally effective, security measure' that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
 
 The following Microsoft cloud services have received a FedRAMP moderate authorization: Azure, Azure Government, Dynamics 365 U.S. Government, Office 365 MT, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
 
-Also, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit "covered defense information" are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
+Also, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit 'covered defense information' are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
 
 ## Resources
 
