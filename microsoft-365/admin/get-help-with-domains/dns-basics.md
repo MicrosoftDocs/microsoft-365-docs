@@ -186,7 +186,7 @@ There are a number of DNS records required for Office 365 to work with your doma
   
 You can [find a list of values](information-for-dns-records.md) to set up your domain. They're included right in the Microsoft 365 admin center. 
   
-Or, if you're planning a deployment, you may want to review a list of all the DNS records required for Office 365, what their function is, and example values. Check out [External Domain Name System records for Office 365](https://support.office.com/article/c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0).
+Or, if you're planning a deployment, you may want to review a list of all the DNS records required for Office 365, what their function is, and example values. Check out [External Domain Name System records for Office 365](https://docs.microsoft.com/office365/enterprise/external-domain-name-system-records).
   
 ## How can I learn more?
 

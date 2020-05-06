@@ -171,7 +171,7 @@ We're combining November's and December's news because after Ignite we had very 
 
 ### Change from credit card to invoice payment
 
-We've starting to roll out the ability to change your payment method from credit card to an invoice. Go to **Billing**\> **Products & services**, select a subscription, and then select the **Edit** link next to the credit card payment.
+We've starting to roll out the ability to change your payment method from credit card to an invoice. Go to **Billing**\> **Your products**, select a subscription, and then select the **Edit** link next to the credit card payment.
 
 ![Screen capture: Billing section of subscription card with a credit card as the payment method.](../media/MAC-BillingEditCreditCard.png)
 
@@ -240,7 +240,7 @@ Service health has been updated to the new style and if you are impacted by an i
 
 ### "Viral" subscriptions
 
-As you know, users can turn on free subscriptions to a myriad of products like Power BI and App Connect. You can now see the "viral subscriptions" that your users have been trying. Go to **Billing** > **Products & services**. Select the **Account type** filter on the subscriptions tab to see the user-purchased subscriptions. If needed, you now have the ability to remove these subscriptions from your account.
+As you know, users can turn on free subscriptions to a myriad of products like Power BI and App Connect. You can now see the "viral subscriptions" that your users have been trying. Go to **Billing** > **Your products**. Select the **Account type** filter on the subscriptions tab to see the user-purchased subscriptions. If needed, you now have the ability to remove these subscriptions from your account.
 
 ### User templates
 
@@ -285,7 +285,7 @@ There's been an update to another of our initial setup wizards: Microsoft 365 fo
 
 We've got some updates for billing and subscriptions this month:
 
-- Device-based subscriptions: You can assign or unassign **Microsoft 365 Apps for Education (device)** licenses to devices in the Microsoft 365 admin center. **Microsoft 365 Apps for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Products & services** to find and purchase the license.
+- Device-based subscriptions: You can assign or unassign **Microsoft 365 Apps for Education (device)** licenses to devices in the Microsoft 365 admin center. **Microsoft 365 Apps for Education (device)** is an add-on license that will lets you to assign a license to a device. Go to **Billing** > **Your products** to find and purchase the license.
 - User-based license management: We've updated how you assign licenses in **Users** > **Active users** to the new style. For more information, see:
   - [Assign licenses to users](manage/assign-licenses-to-users.md)
   - [Unassign licenses from users](manage/remove-licenses-from-users.md)
@@ -329,7 +329,7 @@ We've got some exciting changes to help you get your organization set up. First 
 
 ### Billing & subscriptions
 
-- **Software** product type - You can now view software products purchased through a Cloud Service Provider (CSP). To see your downloads and keys, go to **Billing** > **Products & services** > **Software** tab.
+- **Software** product type - You can now view software products purchased through a Cloud Service Provider (CSP). To see your downloads and keys, go to **Billing** > **Your products** > **Software** tab.
 - You can view Modern Azure products and services from the Microsoft 365 admin center, whether you purchased them from Microsoft or a third-party provider. Examples of Modern Azure products included:
   - Azure Reserved Virtual Instances
   - Azure Support Plans
@@ -428,7 +428,7 @@ We've made a few more changes to **user management**, here's a quick list:
 - There's a bonanza of **Billing** changes this month...
   - You can now update the CVV for existing credit cards without having to delete it and add it again. You can update the CVV by going to **Bills** > **Payment methods**.
     - We've made it easier to locate your **Invoices** and understand any billing issues your account may be having. And now you can see your Bills in the web browser instead of having to download the PDF. Go to **Bills** > **Invoices**.
-    - On the **Products & services** page, we now aggregate your subscription information if you've got multiple subscriptions of the same type.
+    - On the **Your products** page, we now aggregate your subscription information if you've got multiple subscriptions of the same type.
 
 ## March 2019 - We've officially released the admin center
 

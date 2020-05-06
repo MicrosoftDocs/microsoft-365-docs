@@ -29,10 +29,9 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 ::: moniker range="o365-worldwide"
 
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
-
-2. On the **Products & services** page, find the trial subscription that you want to extend. In the **Settings & Actions** section, select **Extend trial**.
+2. On the **Your products** page, find the trial subscription that you want to extend. In the **Settings & Actions** section, select **Extend trial**.
 
 3. Review the extension information, and if necessary, change your payment method. When you're finished, select **Extend trial**.
 
@@ -40,9 +39,7 @@ Do you need more time to try out the features of Microsoft 365 for business befo
 
 ::: moniker range="o365-germany"
 
-
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-
 
 2. On the **Subscriptions** page, select the trial subscription that you want to extend, and then, under the expiration date, select **Extend trial**.
 
