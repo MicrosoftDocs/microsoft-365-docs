@@ -52,7 +52,7 @@ Each improvement action is worth 10 points or less. Most are scored in a binary 
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Microsoft 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, Microsoft Defender ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
+Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -139,17 +139,17 @@ For improvement actions in the "Device" category, you will not be able to choose
 
 Improvement actions have a "completed" status once all possible points for the improvement action have been achieved. Completed improvement actions are confirmed though Microsoft data, and you will not be able to change the status.
 
-### Assess information, review user impact, and implement the improvement action
+### Assess information and review user impact
 
 The **At a glance** section will tell you the category, attacks it can protect against, and the product.
 
 The **User impact** shows what the users will experience if the improvement action is enacted, and **Users affected​** shows who will experience it.
 
-The **Implementation** section shows any prerequisites you must have before completing the action, step by step next steps to complete the improvement action, the current implementation status of the improvement action, and any learn more links.
+### Implement the improvement action
 
-### Prerequisites
+The **Implementation** section shows any prerequisites, step by step next steps to complete the improvement action, the current implementation status of the improvement action, and any learn more links.
 
-Prerequisites in the Implementation section will list any licenses that need to be obtained or actions that need to be completed before the improvement action is addressed. Make sure you have enough seats in your license to complete the improvement action and that those licenses are applied to the necessary users.  
+Prerequisites will be any licenses that need to be obtained or actions that need to be completed before the improvement action is addressed. Make sure you have enough seats in your license to complete the improvement action and that those licenses are applied to the necessary users.  
 
 ## Track your score history and meet goals
 
@@ -171,7 +171,7 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### April 21st 2020
+### April 2020
 
 #### Added Azure Active Directory improvement action
 
