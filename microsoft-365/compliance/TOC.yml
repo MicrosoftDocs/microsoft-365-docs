@@ -1056,8 +1056,6 @@
               href: offering-mars-e.md
             - name: NEN-7510 (Netherlands)
               href: offering-nen-7510-netherlands.md
-            - name: NHS IG Toolkit (UK)
-              href: offering-nhs-ig-toolkit-uk.md
         - name: Manufacturing
           items: 
             - name: FDA CFR Title 21 Part 11
@@ -1134,8 +1132,6 @@
               href: offering-mpaa.md
             - name: NBB + FSMA (Belgium)
               href: offering-nbb-fsma-belgium.md
-            - name: NHS IG Toolkit (UK)
-              href: offering-nhs-ig-toolkit-uk.md
             - name: NIST CSF
               href: offering-nist-csf.md
             - name: PCI DSS
