@@ -1,5 +1,5 @@
 ---
-title: "4. Deploy remote worker productivity apps and services"
+title: "Step 4. Deploy remote worker productivity apps and services"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -19,7 +19,7 @@ ms.custom:
 description: Enable your users to be productive with Teams, Exchange, SharePoint, and other Microsoft 365 services.
 ---
 
-# 4. Deploy remote worker productivity apps and services
+# Step 4. Deploy remote worker productivity apps and services
 
 To be productive, people need to communicate and collaborate with one another. They need to meet, chat by voice and text, create new content and share information and files, exchange email, and manage calendars and tasks. Microsoft 365 provides cloud-based services for all of these key functions:
 
