@@ -42,6 +42,8 @@
       items: 
         - name: Learn about communication compliance
           href: communication-compliance.md
+        - name: Plan for communication compliance
+          href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
         - name: Investigate and remediate communication compliance alerts

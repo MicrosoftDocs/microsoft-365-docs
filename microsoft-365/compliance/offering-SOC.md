@@ -38,8 +38,6 @@ Microsoft covered cloud services are audited at least annually against the SOC r
 
 Microsoft has achieved SOC 1 Type 2, SOC 2 Type 2, and SOC 3 reports. In general, the availability of SOC 1 and SOC 2 reports is restricted to customers who have signed nondisclosure agreements with Microsoft; the SOC 3 report is publicly available.
 
-Learn about the benefits of SOC 1, 2, 3 on the Microsoft Cloud: [Download the SOC 1 and SOC 2 type 2 reports backgrounder](https://aka.ms/soc_backgrounder)
-
 ## Microsoft in-scope cloud services
 
 ### Covered services for SOC 1 and SOC 2

@@ -79,7 +79,3 @@ Yes. However, although Microsoft responses to this framework are confirmed compl
 ## Resources in Japanese
 
 - [FISC](https://www.fisc.or.jp/)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/1/D/91D74F03-AA26-4D22-AB99-576FE9F88B58/FISC-Compliance.pdf).
