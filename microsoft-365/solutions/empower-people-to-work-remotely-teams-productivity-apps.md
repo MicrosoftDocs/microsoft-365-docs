@@ -28,6 +28,8 @@ To be productive, people need to communicate and collaborate with one another. T
 - For storing and collaborating on files, use SharePoint and OneDrive. You can use them with a web browser or within Teams.
 - For creating new content or collaborating on existing content, Microsoft 365 Apps are versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates.
 
+![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
+
 ## Keep people connected with Microsoft Teams
 
 Teams allows you to chat, meet, call, and collaborate all in one place. Millions of people get their work done in Teams every day because it brings together everything you need to work remotely into a hub for teamwork. 
