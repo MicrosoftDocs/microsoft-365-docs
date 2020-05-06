@@ -23,6 +23,13 @@ description: "Learn how to restore a deleted Microsoft 365 group."
 
 # Restore a deleted Group
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 If you've deleted a group, it will be retained for 30 days by default. This 30-day period is considered a "soft-delete" because you can still restore the group. After 30 days, the group and its associated contents are permanently deleted and cannot be restored.
 
 When a group is restored, the following content is restored:

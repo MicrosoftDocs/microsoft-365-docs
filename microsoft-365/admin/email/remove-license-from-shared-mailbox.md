@@ -25,6 +25,13 @@ description: "Remove license from a shared mailbox to assign it to another user.
 
 # Remove a license from a shared mailbox
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Shared mailboxes don't need a license unless the mailbox has over 50GB of data. Follow these instructions to remove a license from a shared mailbox so that you can either assign it to a user or return the license so that you aren't paying for a license you don't need.
   
 ## Remove the license

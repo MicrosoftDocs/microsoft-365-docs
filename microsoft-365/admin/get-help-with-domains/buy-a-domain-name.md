@@ -26,6 +26,13 @@ ms.custom: okr_smb
 
 # Buy a domain name
 
+::: moniker range="o365-21vianet"
+
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
  *To Add, modify or remove domains you **must** be a **Global Administrator** of a [business or enterprise plan](https://products.office.com/business/office). These changes affect the whole tenant, *Customized administrators* or *regular users* won't be able to make these changes.*  
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
