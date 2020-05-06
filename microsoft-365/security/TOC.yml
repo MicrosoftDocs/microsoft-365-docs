@@ -59,7 +59,7 @@
               href: ./mtp/troubleshoot.md
         - name: Evaluate capabilities
           items: 
-            - name: Trial lab overview
+            - name: Trial lab overview 
               href: mtp/mtp-evaluation.md
               items:
                 - name: Prepare 
@@ -73,11 +73,11 @@
             - name: Create a trial lab environment
               href: mtp/mtp-evaluation.md
               items: 
-                - name: Prepare
+                - name: 1 - Prepare
                   href: mtp/prepare-mtpeval.md
-                - name: Setup
+                - name: 2 - Setup
                   href: mtp/setup-mtpeval.md
-                - name: Configure and onboard endpoints
+                - name: 3 - Configure and onboard endpoints
                   href: mtp/config-mtpeval.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
