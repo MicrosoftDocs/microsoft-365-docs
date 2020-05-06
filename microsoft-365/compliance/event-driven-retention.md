@@ -70,9 +70,9 @@ Finally, remember that each retention label has its own retention settings. In t
   
 ## How to set up event-driven retention
 
-High-level workflow for event-driven retention:.
+High-level workflow for event-driven retention:
   
-![Diagram of workflow for setting up event-driven retention](../media/161146d9-e0fc-4248-abc1-a18045eaad5c.png)
+![Diagram of workflow for setting up event-driven retention](../media/event-based-retention-process.png)
   
 > [!TIP]
 > See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
