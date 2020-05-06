@@ -76,6 +76,7 @@ Use the following documentation to support your sensitivity labeling deployment:
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
 |Discover, label, and protect files stored in data stores that are on premises |[Deploying the Azure Information Protection scanner to automatically classify and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Apply and view sensitivity labels in Power BI, and protect reports that are downloaded|[Data protection in Power BI (preview)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Visualize how sensitivity labels are being used to report deployment status and fine-tune label configuration|[View label usage with label analytics](label-analytics.md)|
 
 

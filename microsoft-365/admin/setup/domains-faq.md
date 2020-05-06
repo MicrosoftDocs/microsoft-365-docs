@@ -26,6 +26,14 @@ ms.custom: okr_smb
 
 # Domains FAQ
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 This article contains answers to Frequently Asked Questions about domains in Office 365.
 
 If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.
