@@ -23,7 +23,6 @@ search.appverid:
 - BEA160
 - GEA150
 description: "Learn how to upgrade to a new subscription."
-monikerRange: 'o365-worldwide'
 ---
 
 # Upgrade to a different plan
