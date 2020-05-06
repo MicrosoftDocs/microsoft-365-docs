@@ -59,7 +59,7 @@
               href: ./mtp/troubleshoot.md
         - name: Evaluate capabilities
           items: 
-            - name: Overview
+            - name: Trial lab overview
               href: mtp/mtp-evaluation.md
               items:
                 - name: Prepare 
