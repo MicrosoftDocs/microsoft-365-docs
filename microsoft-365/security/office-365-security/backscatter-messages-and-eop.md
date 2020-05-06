@@ -1,5 +1,5 @@
 ---
-title: "Backscatter and EOP"
+title: "Backscatter in Exchange Online Protection"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -20,7 +20,7 @@ ms.custom:
 description: "In this article, you'll learn about Backscatter and Microsoft Exchange Online Protection (EOP)"
 ---
 
-# Backscatter and EOP
+# Backscatter in Exchange Online Protection
 
 *Backscatter* is non-delivery reports (also known as NDRs or bounce messages) you receive for messages that you didn't send. Spammers forge (spoof) the From: address of their messages, and they often use real email addresses to lend credibility to their messages. So, when spammers inevitably send messages to non-existent recipients (spam is a high-volume operation), the destination email server is essentially tricked into returning the undeliverable message in an NDR to the forged sender in the From: address.
 

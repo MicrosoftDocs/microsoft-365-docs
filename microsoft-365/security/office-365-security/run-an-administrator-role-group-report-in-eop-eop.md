@@ -18,17 +18,9 @@ description: "Admins can learn how to run an administrator role group report in 
 
 # Run an administrator role group report in standalone EOP
 
- When an admin adds members to or removes members from administrator role groups, Exchange Online Protection (EOP) logs each occurrence. When you run an administrator role group report in the Exchange admin center (EAC), entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made. Use this report to monitor changes to the administrative permissions assigned to users in your organization.
+In standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, when an admin adds members to or removes members from administrative role groups, the service logs each occurrence. For more information about role groups in standalone EOP, see [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
-
- Auditing reports in Exchange Online Protection (EOP) can help you meet regulatory, compliance, and litigation requirements for your organization. You can obtain auditing reports at any time to determine the changes that have been made to your EOP configuration. These reports can help you troubleshoot configuration issues or find the cause of security-related or compliance-related problems.
-
-There are two auditing reports available in EOP:
-
-- **Administrator role group report**: The administrator role group report lets you view when a user is added to or removed from membership in an administrator role group. You can use this report to monitor changes to the administrative permissions assigned to users in your organization. For more information, see [Run an administrator role group report in EOP](run-an-administrator-role-group-report-in-eop-eop.md).
-
-- **Administrator audit log**: The administrator audit log records any action (based on Exchange Online Protection PowerShell cmdlets) by an admin or a user with administrative privileges. For more information, see [View the Administrator Audit Log](https://docs.microsoft.com/exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log).
-
+When you run an administrator role group report in the Exchange admin center (EAC), entries are displayed as search results and include the role groups affected, who changed the role group membership and when, and what membership updates were made. Use this report to monitor changes to the administrative permissions assigned to users in your organization.
 
 ## What do you need to know before you begin?
 
@@ -45,13 +37,13 @@ There are two auditing reports available in EOP:
 
 Run the administrator role group report to find the changes to management role groups in your organization within a particular time frame.
 
-1. In the EAC, go to **Compliance management** \> **Auditing**, and choose **Run an administrator role group report**.
+1. In the EAC, go to **Compliance management** \> **Auditing**, and then choose **Run an administrator role group report**.
 
 2. In the **Search for changes to administrator role groups** page that opens, configure the following settings:
 
    - **Start date** and **End date**: Enter a date range. By default, the report searches for changes made to administrator role groups in the past two weeks.
 
-   - **Select role groups**: By default, all role groups are searched. To filter the results by specific role groups, click **Select role groups**. In the dialog that appears, select a role group and click **Add**. Repeat this step as many times as necessary, and then click **OK** when you're finished.
+   - **Select role groups**: By default, all role groups are searched. To filter the results by specific role groups, click **Select role groups**. In the dialog that appears, select a role group and click **add ->**. Repeat this step as many times as necessary, and then click **OK** when you're finished.
 
 3. When you're finished, click **Search**.
 
@@ -74,3 +66,83 @@ In this example, the Administrator user account made the following changes:
 - On 2/06/2018, they added the user tonip.
 
 - On 2/19/2018, they removed the user pilarp.
+
+## Use standalone Exchange Online PowerShell to search for audit log entries
+
+You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
+
+If you want to send audit log search results in an email attachment to a recipient, see the [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) section later in this topic.
+
+To search the audit log for criteria you specify, use the following syntax.
+
+```PowerShell
+Search-AdminAuditLog - Cmdlets <cmdlet 1, cmdlet 2, ...> -Parameters <parameter 1, parameter 2, ...> -StartDate <start date> -EndDate <end date> -UserIds <user IDs> -ObjectIds <object IDs> -IsSuccess <$True | $False >
+```
+
+> [!NOTE]
+> The **Search-AdminAuditLog** cmdlet returns a maximum of 1,000 log entries by default. Use the _ResultSize_ parameter to specify up to 250,000 log entries. Or, use the value `Unlimited` to return all entries.
+
+This example performs a search for all audit log entries with the following criteria:
+
+- **Start date**: 08/04/2018
+
+- **End date**: 10/03/2018
+
+- **User IDs**: davids, chrisd, kima
+
+- **Cmdlets**: **Set-Mailbox**
+
+- **Parameters**: _ProhibitSendQuota_, _ProhibitSendReceiveQuota_, _IssueWarningQuota_, _MaxSendSize_, _MaxReceiveSize_
+
+```PowerShell
+Search-AdminAuditLog -Cmdlets Set-Mailbox -Parameters ProhibitSendQuota,ProhibitSendReceiveQuota,IssueWarningQuota,MaxSendSize,MaxReceiveSize -StartDate 08/04/2018 -EndDate 10/03/2018 -UserIds davids,chrisd,kima
+```
+
+This example searches for changes made to a specific mailbox. This is useful if you're troubleshooting or you need to provide information for an investigation. The following criteria are used:
+
+- **Start date**: 05/01/2018
+
+- **End date**: 10/03/2018
+
+- **Object ID**: contoso.com/Users/DavidS
+
+```PowerShell
+Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
+```
+
+If your searches return many log entries, we recommend that you use the procedure provided in **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic. The procedure in that section sends an XML file as an email attachment to the recipients you specify, enabling you to more easily extract the data you're interested in.
+
+For detailed syntax and parameter information, see [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-adminauditlog).
+
+### View details of audit log entries
+
+The **Search-AdminAuditLog** cmdlet returns the fields described in the "Audit log contents section of [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). Of the fields returned by the cmdlet, two fields, **CmdletParameters** and **ModifiedProperties**, contain additional information that isn't viewable by default.
+
+To view the contents of the **CmdletParameters** and **ModifiedProperties** fields, use the following steps. Or, you can use the procedure in **Use Exchange Online PowerShell to search for audit log entries and send results to a recipient** later in this topic to create an XML file.
+
+This procedure uses the following concepts:
+
+- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+
+- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+
+1. Decide the criteria you want to search for, run the **Search-AdminAuditLog** cmdlet, and store the results in a variable using the following command.
+
+    ```PowerShell
+    $Results = Search-AdminAuditLog <search criteria>
+    ```
+
+2. Each audit log entry is stored as an array element in the variable `$Results`. You can select an array element by specifying its array element index. Array element indexes start at zero (0) for the first array element. For example, to retrieve the 5th array element, which has an index of 4, use the following command.
+
+    ```PowerShell
+    $Results[4]
+    ```
+
+3. The previous command returns the log entry stored in array element 4. To see the contents of the **CmdletParameters** and **ModifiedProperties** fields for this log entry, use the following commands.
+
+    ```PowerShell
+    $Results[4].CmdletParameters
+    $Results[4].ModifiedProperties
+    ```
+
+4. To view the contents of the **CmdletParameters** or **ModifiedParameters** fields in another log entry, change the array element index.
