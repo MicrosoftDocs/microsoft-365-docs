@@ -57,14 +57,14 @@ See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for 
 
 | Channel | Deployment groups |
 |:-------|:-----|
-|  **Feature Preview** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (languages, 3rd party apps). <br><br> **Users:** Windows fans (no matter their technical ability), IT admins, change managers, and trainers. Feature Preview deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates every 6 months (with monthly undocumented feature updates). | **Win10FeaturePreviewChannel** (example name) <br><br> Members are groups containing: <ul><li> Windows enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> |
+|  **Semi-Annual** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (languages, 3rd party apps). <br><br> **Users:** Windows fans (no matter their technical ability), IT admins, change managers, and trainers. Feature Preview deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates every 6 months (with monthly undocumented feature updates). | **Win10SemiAnnualChannel** (example name) <br><br> Members are groups containing: <ul><li> Windows enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **Win10SemiAnnualChannel-All** (example name) <br><br> Members are all other users. |
 |||
 
 Ongoing updates process:
 
-1. Preview channel changes are deployed to the Win10PreviewChannel (example name) deployment group.
-2. Win10PreviewChannel members confirm that Preview Channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current Channel (Preview) release to additional testing.
-3. Feature changes are deployed to the rest of the organization. 
+1. Semi-Annual channel changes are deployed to the Win10SemiAnnualChannel (example name) deployment group.
+2. Win10SemiAnnualChannel members confirm that Semi-Annual channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Semi-Annual release to additional testing.
+3. Feature changes are deployed to the Win10SemiAnnualChannel-All deployment group. 
 
 ## Deployment configuration for Microsoft 365 Apps
 
@@ -74,16 +74,20 @@ See [Microsoft 365 Apps deployment](https://docs.microsoft.com/deployoffice/plan
 
 | Channel | Deployment groups |
 |:-------|:-----|
-|  **Current Channel (Preview)** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (language packs, 32-vs-64 bit, 3rd party apps, macros). <br><br> **Users:** Office suite fans (no matter their technical ability), IT admins, change managers, and trainers. Current channel (Preview) deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates 2-3 times each month. | **AppsCurrentChannelPrev** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> |
-|  **Current Channel** <br><br> **Purpose:** Deployment of feature updates as soon as they are tested with Current channel (Preview) users and are production-ready. <br><br> **Users:** All other user accounts besides those in the Current channel (Preview) deployment groups. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates 2-3 times each month. | **AppsCurrentChannel** (example name) <br><br> Members are all other users. |
+|  **Current** <br><br> **Purpose:** Deployment of feature updates as soon as they are tested with Current channel (Preview) users and are production-ready. <br><br> **Users:** All other user accounts besides those in the Current channel (Preview) deployment groups. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates 2-3 times each month. | **AppsCurrentChannel** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **AppsCurrentChannel-All** (example name) <br><br> Members are all other users. |
 |||
+
+<!--
+
+|  **Current** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (language packs, 32-vs-64 bit, 3rd party apps, macros). <br><br> **Users:** Office suite fans (no matter their technical ability), IT admins, change managers, and trainers. Current channel (Preview) deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates 2-3 times each month. | **AppsCurrentChannel** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> |
+
+--> 
 
 Ongoing updates process:
 
-1. Current channel changes are deployed to the AppsCurrentChannelPrev deployment group.
-2. AppsCurrentChannelPrev members confirm that Current Channel (Preview) changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current Channel (Preview) release for additional testing.
-3. Current Channel changes are deployed to the AppsCurrentChannel deployment group. 
-
+1. Current channel changes are deployed to the AppsCurrentChannel deployment group.
+2. AppsCurrentChannel members confirm that Current channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current release for additional testing.
+3. Current channel changes are deployed to the AppsCurrentChannel-All deployment group. 
 
 ## Deployment configuration for Microsoft Edge
 
@@ -93,15 +97,14 @@ See [Microsoft Edge deployment](https://docs.microsoft.com/DeployEdge/microsoft-
 
 | Channel | Deployment groups |
 |:-------|:-----|
-|  **Beta** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations. <br><br> **Users:** Edge browser fans (no matter their technical ability), IT admins, change managers, and trainers. Edge Beta channel deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates every six weeks. | **EdgeBetaChannel** (example name) <br><br> Members are groups containing: <br> <ul><li> Edge enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> |
-|  **Stable** <br><br> **Purpose:** Deployment of updates as soon as they are tested with Beta channel users and are production-ready. <br><br> **Users:** All other user accounts besides those in the Edge Beta channel deployment groups. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Every six weeks. | **EdgeStableChannel** (example name) <br><br> Members are all other users. |
+|  **Stable** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations. <br><br> **Users:** Edge browser fans (no matter their technical ability), IT admins, change managers, and trainers. Edge Stable channel deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates every six weeks. | **EdgeStableChannel** (example name) <br><br> Members are groups containing: <br> <ul><li> Edge enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **EdgeStableChannel-All** (example name) <br><br> Members are all other users|
 |||
 
 Ongoing updates process:
 
-1. Edge Beta channel changes are deployed to the EdgeBetaChannel deployment group.
-2. EdgeBetaChannel members confirm that Beta channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Beta channel release for additional testing.
-3. Beta channel changes are deployed to the EdgeStableChannel deployment group. 
+1. Edge Stable channel changes are deployed to the EdgeStableChannel deployment group.
+2. EdgeStableChannel members confirm that Stable channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Stable channel release for additional testing.
+3. Stable channel changes are deployed to the EdgeStableChannel-All deployment group. 
 
 ## Visual summaries
 
