@@ -35,16 +35,14 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 ### Where to set permissions
 
-The global admin for your organization can set user permissions in the Microsoft 365 compliance center or in Azure Active Directory (Azure AD). Once roles are set in either of these locations, users can access Compliance Score as well as  Compliance Manager.
-
-Note that existing Compliance Manger roles **do not** transfer over to Compliance Score. If you have a role in Compliance Manager and are new to Compliance Score, your Compliance Manager role won't grant you access to Compliance Score. Your global admin will need to set permissions and a role for you in the Microsoft 365 compliance center or Azure AD so that you can access Compliance Score.
+The global admin for your organization can set user permissions in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) or in [Compliance Manager](compliance-manager-overview.md#permissions). Once roles are set in either of these locations, users can access Compliance Score as well as Compliance Manager.
 
 ### Role types
 
-The table below shows how each Microsoft 365 compliance center role maps to existing Compliance Manger roles, and the functions allowed by each role.
+The table below shows how each [Azure AD role](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) maps to existing Compliance Manger roles, and the functions allowed by each role. Users will need at least the Azure AD global reader role to access Compliance Score.
 
 
-| User can: | Microsoft 365 compliance center role | Compliance Manager role | 
+| User can: | Azure AD role | Compliance Manager role | 
 | :------------- | :-------------: | :------------: |
 | **Read but not edit data**| Azure AD global reader  | Azure AD global reader | 
 | **Read but not edit data**| Security reader | Compliance Manager reader  | 
