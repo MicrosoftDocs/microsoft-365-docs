@@ -23,6 +23,14 @@ description: "Learn how to make changes to your organization profile, such as or
 ---
 
 # Change your organization's address, technical contact, and more
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
 You can make changes to your organization profile, such as your organization name, address, phone, and technical contact. **You must be a global admin to update this information.**
   
