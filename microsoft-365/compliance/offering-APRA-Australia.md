@@ -77,7 +77,7 @@ Get practical support for moving data and workloads to Azure in compliance with 
 
 No. However, most regulated financial organizations must notify APRA after entering into agreements to outsource material business activities within Australia or consult with APRA before outsourcing those activities outside of Australia.
 
-In addition, if the cloud services are deemed to carry "heightened or extreme inherent risk" as described in the APRA [Information Paper on Clouds](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf), the financial institution is encouraged (but not required) to consult with APRA, regardless of whether the service is provided within or outside of Australia.
+In addition, if the cloud services are deemed to carry 'heightened or extreme inherent risk' as described in the APRA [Information Paper on Clouds](https://www.apra.gov.au/sites/default/files/information_paper_-_outsourcing_involving_cloud_computing_services.pdf), the financial institution is encouraged (but not required) to consult with APRA, regardless of whether the service is provided within or outside of Australia.
 
 **Are transfers of data outside of Australia permitted?**
 

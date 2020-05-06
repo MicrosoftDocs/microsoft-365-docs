@@ -36,11 +36,9 @@ FERPA does not require or recognize audits or other certifications, so any acade
 
 As a result of these contractual commitments, customers that are subject to FERPA — both educational institutions and third parties to whom they give access to sensitive student data — can confidently use in-scope Microsoft business cloud services to process, store, and transmit that data.
 
-Learn about the benefits of FERPA on the Microsoft Cloud: [Download the FERPA backgrounder](https://aka.ms/ferpa-compliance)
-
 ## Microsoft in-scope cloud services
 
-Services for which Microsoft agrees to be designated as a “school official” with “legitimate educational interests” in customer data include:
+Services for which Microsoft agrees to be designated as a 'school official' with 'legitimate educational interests' in customer data include:
 
 - [Azure](https://aka.ms/AzureCompliance)
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
@@ -74,7 +72,3 @@ This US federal law mandates the protection of the privacy of students’ educat
 - [Azure FERPA compliance framework mapping](https://aka.ms/AzureFERPAMapping)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/8/3/2839FB21-353E-472E-BE57-883EC9C6185F/FERPA_Compliance_Backgrounder.pdf).
