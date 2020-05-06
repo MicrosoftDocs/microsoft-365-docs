@@ -35,7 +35,7 @@ Once an *Anyone* link expires, it can no longer be used to access content.
 To set an expiration date for Anyone links
 1. Open the SharePoint Online admin center.
 2. In the left navigation, click **Sharing**.
-3. Under **Advanced settings for "Anyone" links**, select the **These links must expire within this many days** check box.</br>
+3. Under **Choose expiration and permissions options for Anyone links**, select the **These links must expire within this many days** check box.</br>
    ![Screenshot of SharePoint organization-level Anyone link expiration settings](../media/sharepoint-organization-anyone-link-expiration.png)
 4. Type a number of days in the box, and then click **Save**.
 
