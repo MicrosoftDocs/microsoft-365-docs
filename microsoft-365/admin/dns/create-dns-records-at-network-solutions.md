@@ -155,7 +155,7 @@ Follow the steps below or [watch the video (start at 3:51)](https://support.offi
     
     |**Priority**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |10  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account. [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![Type or paste values in the boxes for the new record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   

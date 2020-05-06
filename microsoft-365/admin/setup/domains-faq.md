@@ -361,7 +361,7 @@ You can keep using the initial onmicrosoft.de domain even after you add your dom
 
 ## How do I verify my nonprofit or education status?
 
-1. Select **Setup** in the [admin center](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) to start the wizard. (Be sure to sign in to Office 365 first.) 
+1. Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard. (Be sure to sign in to Office 365 first.) 
     
 2. To become the admin for your school, select the **Become an admin** option in Office 365. 
     
