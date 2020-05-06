@@ -88,7 +88,7 @@ If you forgot your password and can't sign in:
     
 - Ask another global admin in your business to reset your password for you.
     
-- Or, [call Microsoft Support](https://docs.microsoft.com/en-us/microsoft-365/admin/contact-support-for-business-products). 
+- Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     
 ## Reset all business passwords for everyone in your organization at the same time
 <a name="bkmk_forgot"> </a>
