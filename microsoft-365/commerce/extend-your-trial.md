@@ -25,6 +25,14 @@ description: "Learn how to extend your trial subscription for another 30-day per
 
 # Extend your trial
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Do you need more time to try out the features of Microsoft 365 for business before buying? If your trial subscription is within 15 days of expiring and the trial hasn't been extended before then you can extend your trial for another 30 day period. You can only do this one time.
 
 ::: moniker range="o365-worldwide"
