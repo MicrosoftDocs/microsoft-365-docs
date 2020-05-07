@@ -72,7 +72,7 @@ For info on expanding your lists with more columns, see [Create a column in a Sh
   
 If you're storing a lot of data in a list, see [Manage large lists and libraries in SharePoint](https://support.office.com/article/B8588DAE-9387-48C2-9248-C24122F07C59.aspx).
   
-View a video on adding calendars to your site, see [Create a shared calendar](https://support.office.com/article/61B96006-70E2-4535-A34F-EE4FC772F798.aspx).
+View a video on adding calendars to your site, see [Create a shared calendar](https://support.microsoft.com/en-us/office/video-create-a-shared-calendar-in-office-365-61b96006-70e2-4535-a34f-ee4fc772f798).
 
 ## Organize sites into hubs
 
@@ -82,7 +82,7 @@ Hub sites let you add and associate sites. For more info see [What is a SharePoi
   
 Ready to build a hub site, see [Create a hub site in SharePoint Online](/sharepoint/create-hub-site).
   
-To learn how to add sites to a hub site, see [Associate a SharePoint site with a hub site](https://support.office.com/article/ae0009fd-af04-4d3d-917d-88edb43efc05.aspx).
+To learn how to add sites to a hub site, see [Associate a SharePoint site with a hub site](https://support.microsoft.com/en-us/office/associate-a-sharepoint-site-with-a-hub-site-ae0009fd-af04-4d3d-917d-88edb43efc05).
   
 ## Sharing files with the team
 
@@ -110,7 +110,7 @@ Learn how to handle access requests with [Set up and manage access requests](htt
     
   - [Install and set up Office on an iPhone or iPad with Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
     
-  - [Set up Office on Windows Phone with Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Set up Office on Windows Phone with Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
     
 - [Learn more about using OneDrive](https://go.microsoft.com/fwlink/?LinkID=511458).
     
