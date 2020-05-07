@@ -9,8 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-security-compliance
-ms.custom: 
 - M365solutions
+ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
