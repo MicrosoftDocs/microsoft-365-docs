@@ -40,7 +40,7 @@ The **Prepare** \> **Analyze** process in Advanced eDiscovery applies the follow
     
 Before running Analyze, define the criteria for selecting and processing files, including which loaded files will be analyzed and the type of analysis to which each type of file will be submitted. 
   
-## Additional resources for Advanced eDiscovery analysis
+## Additional resources for Advanced eDiscovery (classic) analysis
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
