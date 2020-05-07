@@ -7796,9 +7796,370 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 社会保険のテンキー 
 - 社会保険番号 
 
+## Latvia driver's license
+This sensitive information type entity is included in the EU Driver's License bundle.
 
+### Format
 
-   
+Three letters followed by six digits
+  
+### Pattern
+
+Three letters and six digits:
+  
+-  Three letters (not case-sensitive) 
+- Six digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_latvia_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_latvia_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_latvia_eu_driver's_license_number" />
+          <Match idRef="Keywords_latvia_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_latvia_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- autovadītāja apliecība
+
+## Latvia national identification number
+This sensitive information type entity is included in the EU National Identification Number bundle.
+
+### Format
+
+11 digits and a hyphen in the specified format
+  
+### Pattern
+
+11 digits and a hyphen:
+  
+-  Six digits that correspond to the birth date (DDMMYY) 
+- A hyphen
+- One digit that corresponds to the century of birth ("0" for 19th century, "1" for 20th century, and "2" for 21st century)
+- Four digits, randomly generated
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_latvia_eu_national_id_card` finds content that matches the pattern. 
+- A keyword from  `Keywords_latvia_eu_national_id_card` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_latvia_eu_national_id_card` finds content that matches the pattern. 
+    
+```xml
+<!-- Latvia national identification number -->
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_latvia_eu_national_id_card" />
+          <Match idRef="Keywords_latvia_eu_national_id_card" />
+        </Pattern>
+ <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_latvia_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_latvia_eu_national_id_card
+
+- administrative number
+- alvas nē
+- birth number
+- citizen number
+- civil number
+- electronic census number
+- electronic number
+- fiscal code
+- healthcare user number
+- id#
+- id-code
+- identification number
+- identifikācijas numurs
+- id-number
+- individual number
+- latvija alva
+- nacionālais id
+- national id
+- national identifying number
+- national identity number
+- national insurance number
+- national register number
+- nodokļa numurs
+- nodokļu id
+- nodokļu identifikācija numurs
+- personal certificate number
+- personal code
+- personal id code
+- personal id number
+- personal identification code
+- personal identifier
+- personal identity number
+- personal number
+- personal numeric code
+- personalcodeno#
+- personas kods
+- population identification code
+- public service number
+- registration number
+- revenue number
+- social insurance number
+- social security number
+- state tax code
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+- voter’s number
+
+## Latvia passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Two letters or digits followed by seven digits with no spaces or delimiters
+  
+### Pattern
+
+Two letters or digits followed by seven digits:
+  
+- Two digits or letters (not case sensitive)
+- Seven digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_latvia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_latvia_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_latvia_eu_passport_number" />
+          <Match idRef="Keywords_latvia_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_latvia_eu_passport_number**
+
+- passport number
+- latvian passport number
+- passport no
+- pase numurs    
+
+## Latvia tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+11 digits with no spaces or delimiters
+  
+### Pattern
+
+11 digits in the specified pattern
+  
+- Six digits that correspond to the date of birth (DDMMYY) 
+- One digit that corresponds to the century of birth where "0" corresponds to 19th century, "1" corresponds to 20th century, and "2"corresponds to 21st century
+- Four digits
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_latvia_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_latvia_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_latvia_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_latvia_eu_tax_file_number" />
+          <Match idRef="Keywords_latvia_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_latvia_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_latvia_eu_tax_file_number
+
+- administrative number
+- alvas nē
+- birth number
+- citizen number
+- civil number
+- electronic census number
+- electronic number
+- fiscal code
+- healthcare user number
+- id#
+- id-code
+- identification number
+- identifikācijas numurs
+- id-number
+- individual number
+- latvija alva
+- nacionālais id
+- national id
+- national identifying number
+- national identity number
+- national insurance number
+- national register number
+- nodokļa numurs
+- nodokļu id
+- nodokļu identifikācija numurs
+- personal certificate number
+- personal code
+- personal id code
+- personal id number
+- personal identification code
+- personal identifier
+- personal identity number
+- personal number
+- personal numeric code
+- personalcodeno#
+- personas kods
+- population identification code
+- public service number
+- registration number
+- revenue number
+- social insurance number
+- social security number
+- state tax code
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+- voter’s number
+
+## Lithuania drivers license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+Eight digits without spaces and delimiters
+  
+### Pattern
+
+ Eight digits 
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_lithuania_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_lithuania_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_lithuania_eu_driver's_license_number" />
+          <Match idRef="Keywords_lithuania_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_lithuania_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- vairuotojo pažymėjimas
+
 ## Malaysia ID Card Number
 
 ### Format
