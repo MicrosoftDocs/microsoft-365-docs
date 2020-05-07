@@ -95,7 +95,7 @@ Permissions are granted through certain roles, such as those that are described 
 - Your organization's security operations team (including security readers and those with the Search and Purge role)
 - End users
 
-In addition, [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) policies must be defined and applied in order for protection to be in place.
+In addition, [Office 365 ATP policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp#configure-atp-policies) must be defined and applied in order for protection to be in place.
 
 ## Next steps
 
