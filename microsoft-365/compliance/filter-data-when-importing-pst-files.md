@@ -43,7 +43,7 @@ The following graphic shows the Intelligent Import process, and highlights the t
   
 ![The Intelligent Import process in Office 365](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## Creating PST import jobs
+## Create a PST import job
 
 - The steps in this topic assume that you've created a PST import job in the Office 365 Import service by using network upload or drive shipping. For step-by-step instructions, see one of the following topics:
     
