@@ -107,7 +107,7 @@ Providing you have permissions to the location and the content, you can use the 
 
 The email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-All disposition actions can be audited and the justification text entered by reviewer is saved and displayed in the **Comment** column on the **Disposed items** page.
+All disposition actions can be audited and the justification text entered by the reviewer is saved and displayed in the **Comment** column on the **Disposed items** page.
   
 ### How long until disposed content is permanently deleted
 
