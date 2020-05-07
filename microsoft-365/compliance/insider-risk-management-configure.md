@@ -97,7 +97,7 @@ This policy helps drive insider risk management indicators for high severity DLP
 See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 >[!IMPORTANT]
->Make sure the **Incident reports** setting in the DLP policy for insider risk management used with this template is configured for *High* severity level alerts. Insider risk management alerts won't be generated from DLP policies with the **Incident reports** setting set at *Low* or *Medium*.
+>Make sure the **Incident reports** setting in the DLP policy for insider risk management used with this template is configured for *High* severity level alerts. Insider risk management alerts won't be generated from DLP policies with the **Incident reports** field set at *Low* or *Medium*.
 
 ## Step 4 (required): Configure insider risk settings
 
