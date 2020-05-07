@@ -14,8 +14,8 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom:
-
 description: Use Microsoft 365 to create different ways to communicate about COVID-19 internal and public news.
 ---
 
