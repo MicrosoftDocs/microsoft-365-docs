@@ -28,7 +28,7 @@ Before you begin, create the site or team that you want to share with the partne
 
 ## Connect the partner organization
 
-In order to invite guests from a partner organization, you need to add the the partner's domain as a connected organization in Azure Active Directory.
+In order to invite guests from a partner organization, you need to add the partner's domain as a connected organization in Azure Active Directory.
 
 To add a connected organization
 1. In [Azure Active Directory](https://aad.portal.azure.com), click **Identity Governance**.
