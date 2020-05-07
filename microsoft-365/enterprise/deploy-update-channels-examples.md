@@ -40,11 +40,11 @@ See if your organization matches one of these customer types, then follow the li
 
 --> 
 
-Follow the **I am** and **Who wants** columns to determine the set of channels, and then click the link in the **How to** column for more details.
+Follow the **I am** and **who wants** columns to determine the set of channels that best matches your needs, and then click the link in the **How to** column for more details.
 
-| I am... | Who wants... | Windows channel | Office channel | Edge channel | How to |
+| I am... | who wants... | Windows channel | Office channel | Edge channel | How to |
 |:-------|:-----|:-------|:-------|:-----|:-------|
-| A Microsoft Edge app developer | to see what I was working on yesterday | N/A | N/A | Canary |   |
+| A Microsoft Edge app developer | to see what I was working on yesterday | N/A | N/A | Canary | [Edge Carnary channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)  |
 | A highly technical user or Edge app developer | early access to the latest build. | Dev | N/A  | Dev |   |
 | An end user, an early adopter, a fan, or an IT professional  | early access to a beta build. | Beta | Beta | Beta |   |
 | An enterprise IT department | to evaluate the latest preview before broad deployment. | Preview (Release)  | Preview (Current or Semi-Annual Enterprise)  | N/A |   |
@@ -63,8 +63,6 @@ Follow the **I am** and **Who wants** columns to determine the set of channels, 
 ||||
 
 --> 
-
-
 
 ## See also
 

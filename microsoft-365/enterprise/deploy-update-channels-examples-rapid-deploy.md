@@ -57,7 +57,7 @@ See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for 
 
 | Channel | Deployment groups |
 |:-------|:-----|
-|  **Semi-Annual** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (languages, 3rd party apps). <br><br> **Users:** Windows fans (no matter their technical ability), IT admins, change managers, and trainers. Feature Preview deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates every 6 months (with monthly undocumented feature updates). | **Win10SemiAnnualChannel** (example name) <br><br> Members are groups containing: <ul><li> Windows enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **Win10SemiAnnualChannel-All** (example name) <br><br> Members are all other users. |
+|  **Semi-Annual** <br><br> Purpose: Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (languages, 3rd party apps). <br><br> Users: Windows fans (no matter their technical ability), IT admins, change managers, and trainers. Feature Preview deployment groups contain the user accounts. <br><br> State: Fully compliant and supported. <br><br> How often: Updates every 6 months (with monthly undocumented feature updates). | **Win10SemiAnnualChannel** (example name) <br><br> Members are groups containing: <ul><li> Windows enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **Win10SemiAnnualChannel-All** (example name) <br><br> Members are all other users. |
 |||
 
 Ongoing updates process:
@@ -70,11 +70,11 @@ Ongoing updates process:
 
 The overall deployment goal is to give a group of representative users a sneak peek of new Microsoft 365 Apps features that will be released 2-3 times each month without major disruptions to the organization. 
 
-See [Microsoft 365 Apps deployment](https://docs.microsoft.com/deployoffice/plan-office-365-proplus) for more information on Microsoft 365 Apps methods and strategies.
+See [Microsoft 365 Apps deployment](https://docs.microsoft.com/deployoffice/plan-office-365-proplus) for more information on Microsoft 365 Apps deployment methods and strategies.
 
 | Channel | Deployment groups |
 |:-------|:-----|
-|  **Current** <br><br> **Purpose:** Deployment of feature updates as soon as they are tested with Current channel (Preview) users and are production-ready. <br><br> **Users:** All other user accounts besides those in the Current channel (Preview) deployment groups. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates 2-3 times each month. | **AppsCurrentChannel** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **AppsCurrentChannel-All** (example name) <br><br> Members are all other users. |
+|  **Current** <br><br> Purpose: Deployment of feature updates as soon as they are tested with Current channel users and are production-ready. <br><br> **Users:** All other user accounts besides those in the Current channel deployment groups. <br><br> State: Fully compliant and supported. <br><br> How often: Updates 2-3 times each month. | **AppsCurrentChannel** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **AppsCurrentChannel-All** (example name) <br><br> Members are all other users. |
 |||
 
 <!--
@@ -97,7 +97,7 @@ See [Microsoft Edge deployment](https://docs.microsoft.com/DeployEdge/microsoft-
 
 | Channel | Deployment groups |
 |:-------|:-----|
-|  **Stable** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations. <br><br> **Users:** Edge browser fans (no matter their technical ability), IT admins, change managers, and trainers. Edge Stable channel deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates every six weeks. | **EdgeStableChannel** (example name) <br><br> Members are groups containing: <br> <ul><li> Edge enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **EdgeStableChannel-All** (example name) <br><br> Members are all other users|
+|  **Stable** <br><br> Purpose: Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations. <br><br> Users: Edge browser fans (no matter their technical ability), IT admins, change managers, and trainers. Edge Stable channel deployment groups contain the user accounts. <br><br> State: Fully compliant and supported. <br><br> How often: Updates every six weeks. | **EdgeStableChannel** (example name) <br><br> Members are groups containing: <br> <ul><li> Edge enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **EdgeStableChannel-All** (example name) <br><br> Members are all other users|
 |||
 
 Ongoing updates process:
