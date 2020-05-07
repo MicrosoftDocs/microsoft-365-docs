@@ -58,6 +58,6 @@ For key staff, we recommend that you use [managed devices](../business/set-up-wi
 
  **If you need to contact support:**
   
-As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+As a Microsoft 365 admin, you have access to our customer support team, **[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)**
     
 
