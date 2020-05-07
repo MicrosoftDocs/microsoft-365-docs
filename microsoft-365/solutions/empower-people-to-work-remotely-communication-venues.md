@@ -1,5 +1,5 @@
 ---
-title: "# Step 5: Create COVID-19 crisis communication venues"
+title: "Step 5: Create COVID-19 crisis communication venues"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -27,6 +27,8 @@ There are many ways you can provide additional communication venues to serve the
 - Consolidated public health and news into a single portal
 - A communications site in SharePoint Online
 - A Yammer community
+
+![COVID-19 crisis communication venues](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## Employee surveys
 

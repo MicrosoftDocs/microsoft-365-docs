@@ -1,5 +1,5 @@
 ---
-title: "3. Deploy endpoint management for your devices, PCs, and other endpoints"
+title: "Step 3. Deploy endpoint management for your devices, PCs, and other endpoints"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -19,7 +19,7 @@ ms.custom:
 description: Use Microsoft Endpoint Manager to manage your manage devices, PCs, and other endpoints.
 ---
 
-# 3. Deploy endpoint management for your devices, PCs, and other endpoints
+# Step 3. Deploy endpoint management for your devices, PCs, and other endpoints
 
 With remote workers, you need to support a growing number of personal devices. Endpoint management is a policy-based approach to security that requires devices to comply with specific criteria before they are granted access to resources. Microsoft Endpoint Manager delivers a modern workplace and modern management capabilities to keep your data secure in the cloud and on-premises. 
 

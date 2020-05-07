@@ -25,6 +25,14 @@ description: "Learn how you can have more than one email address, called email a
 ---
 
 # Add another email alias for a user
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
 This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
   

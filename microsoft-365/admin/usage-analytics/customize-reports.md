@@ -23,6 +23,14 @@ description: "Learn to customize reports in the browser and Power BI Desktop."
 
 # Customize the reports in Microsoft 365 usage analytics
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Microsoft 365 usage analytics provides a dashboard in Power BI that offers insights into how users adopt and use Microsoft 365. The dashboard is just a starting point to interact with the usage data. The reports can be customized for more personalized insights.
   
 You can also use the Power BI desktop to further customize your reports by connecting them to other data sources to gain richer insights about your business.

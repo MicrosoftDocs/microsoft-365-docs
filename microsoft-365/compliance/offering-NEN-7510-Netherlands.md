@@ -74,7 +74,3 @@ Customers can share the report with their own internal or external auditor as pa
 - [About NEN](https://www.nen.nl/About-NEN.htm)
 - [NEN 7510:2011 standard](https://www.nen.nl/NEN-Shop-2/Standard/NEN-75102011-nl.htm)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/D/E/3DE55FFB-0B45-49BC-851E-3696C8BD5FB7/NEN7510-Compliance.pdf).
