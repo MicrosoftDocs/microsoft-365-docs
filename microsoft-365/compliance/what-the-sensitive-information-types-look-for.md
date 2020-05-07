@@ -6764,7 +6764,188 @@ For IPv6, a DLP policy is 95% confident that it's detected this type of sensitiv
 - internet protocol
 - IP-כתובת ה 
 
-## Ireland Personal Public Service (PPS) Number
+## Ireland driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+Six digits followed by four letters
+  
+### Pattern
+
+Six digits and four letters:
+  
+- Six digits
+- Four letters (not case-sensitive)
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_ireland_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_ireland_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ireland_eu_driver's_license_number" />
+          <Match idRef="Keywords_ireland_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_ireland_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- ceadúnas tiomána
+
+## Ireland national identification number
+This sensitive information type entity is included in the EU National Identification Number bundle.
+
+### Format
+
+A nine-character combination of letters, digits, and a space in the specified pattern
+  
+### Pattern
+
+A nine-character combination of letters, digits, and a space in the specified pattern
+  
+From 01 January 2013 to now:
+  
+-  Seven digits 
+- One check digit
+- One space or the uppercase letter "W" (Case sensitive)
+    
+Prior to 01 January 2013:
+  
+- Seven digits 
+- One check digit
+- One space or an uppercase letter (Case sensitive)
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function finds content that matches the pattern.
+- A keyword from is found.
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function finds content that matches the pattern.
+    
+```xml
+ <!--Ireland national identification number  -->
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_ireland_eu_national_id_card" />
+          <Match idRef="Keywords_ireland_eu_national_id_card" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_ireland_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_ireland_eu_national_id_card
+
+- client identity service
+- identification number
+- personal id number
+- personal public service number
+- personal service no
+- phearsanta seirbhíse poiblí
+- pps no
+- pps number
+- pps service no
+- pps uimh
+- ppsn
+- ppsno#
+- ppsno
+- public service no
+- publicserviceno#
+- publicserviceno
+- revenue and social insurance number
+- rsi no
+- rsi number
+- rsin
+- seirbhís aitheantais cliant
+- uimh. psp
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
+
+## Ireland passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Two letters or digits followed by seven digits with no spaces or delimiters
+  
+### Pattern
+
+Two letters or digits followed by seven digits:
+  
+- Two digits or letters (not case sensitive)
+- Seven digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_ireland_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_ireland_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_ireland_eu_passport_number" />
+          <Match idRef="Keywords_ireland_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_ireland_eu_passport_number**
+
+- passport number
+- irish passport number
+- passport no
+- pas
+- passport
+- passeport
+- passeport numero
+
+## Ireland personal public service (PPS) number
 
 ### Format
 
@@ -6833,8 +7014,82 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - Uimhir Phearsanta Seirbhíse Poiblí 
 - Uimh. PSP 
 - PSP 
-   
-## Israel Bank Account Number
+
+
+## Ireland tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+Seven digits followed by a letter with no spaces or delimiters
+  
+### Pattern
+
+Seven digits followed by a letter:
+  
+- Seven digits 
+- One letter (not case-sensitive)
+    
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_ireland_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_ireland_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_ireland_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_ireland_eu_tax_file_number" />
+          <Match idRef="Keywords_ireland_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_ireland_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_ireland_eu_tax_file_number
+
+- client identity service
+- identification number
+- personal id number
+- personal public service number
+- personal service no
+- phearsanta seirbhíse poiblí
+- pps no
+- pps number
+- pps service no
+- pps uimh
+- ppsn
+- ppsno#
+- ppsno
+- public service no
+- publicserviceno#
+- publicserviceno
+- revenue and social insurance number
+- rsi no
+- rsi number
+- rsin
+- seirbhís aitheantais cliant
+- uimh. psp
+- uimhir aitheantais chánach
+- uimhir aitheantais phearsanta
+- uimhir phearsanta seirbhíse poiblí
+
+
+## Israel bank account number
 
 ### Format
 
@@ -6883,7 +7138,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Account Number 
 - מספר חשבון בנק 
    
-## Israel National ID
+## Israel national identification number
 
 ### Format
 
@@ -6923,7 +7178,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - מספר זהות 
 - National ID Number
    
-## Italy Driver's License Number
+## Italy river's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
 
 ### Format
 
@@ -6965,8 +7221,226 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 - numero di patente di guida 
 - patente di guida 
-   
-## Japan Bank Account Number
+
+## Italy national identification number
+This sensitive information type entity is included in the EU National Identification Number bundle.
+
+### Format
+
+A 16-character combination of letters and digits in the specified pattern
+  
+### Pattern
+
+A 16-character combination of letters and digits:
+  
+- Three letters that correspond to the first three consonants in the family name
+- Three letters that correspond to the first, third, and fourth consonants in the first name
+- Two digits that correspond to the last digits of the birth year
+- One letter that corresponds to the letter for the month of birth—letters are used in alphabetical order, but only the letters A to E, H, L, M, P, R to T are used (thus, January is A and October is R)
+- Two digits that correspond to the day of the month of birth—in order to differentiate between genders, 40 is added to the day of birth for women
+- Four digits that corresponds to the area code specific to the municipality where the person was born (country-wide codes are used for foreign countries)
+- One parity digit
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_italy_eu_national_id_card` finds content that matches the pattern. 
+- A keyword from  `Keywords_italy_eu_national_id_card` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_italy_eu_national_id_card` finds content that matches the pattern. 
+    
+```xml
+<!-- Italy national identification number -->
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_italy_eu_national_id_card" />
+          <Match idRef="Keywords_italy_eu_national_id_card" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_italy_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_italy_eu_national_id_card
+
+- codice fiscal
+- codice fiscale
+- codice id personale
+- codice personale
+- fiscal code
+- numero certificato personale
+- numero di identificazione fiscale
+- numero id personale
+- numero personale
+- personal certificate number
+- personal code
+- personal id code
+- personal id number
+- personalcodeno#
+- tax code
+- tax id
+- tax identification no
+- tax identification number
+- tax identity number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+## Italy passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Two letters or digits followed by seven digits with no spaces or delimiters
+  
+### Pattern
+
+Two letters or digits followed by seven digits:
+  
+- Two digits or letters (not case sensitive)
+- Seven digits
+    
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_italy_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_italy_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_italy_eu_passport_number" />
+          <Match idRef="Keywords_italy_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_italy_eu_passport_number**
+
+- italian passport number
+- repubblica italiana passaporto
+- passaporto
+- passaporto italiana
+- passport number
+- italiana passaporto numero
+- passaporto numero
+- numéro passeport italien
+- numéro passeport
+
+## Italy tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+16 letters and digits in the specified pattern
+  
+### Pattern
+
+16 letters and digits:
+  
+-  Three letters that correspond to the first three consonants in the family name 
+- Three letters that correspond to the first, third, and fourth consonants in the first name
+- Two digits that correspond to the last digits of the birth year
+- One digit that corresponds to the month of birth—letters are used in alphabetical order, but only the letters A to E, H, L, M, P, R to T are used (thus, January is A and October is R)
+- Two digits that correspond to the day of the month of birth where 40 is added to the day of birth for females to differentiate from males
+- Four digits that correspond to an area code specific to the municipality where the person was born—country-wide codes are used for foreign countries
+- One check digit
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_italy_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_italy_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_italy_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_italy_eu_tax_file_number" />
+          <Match idRef="Keywords_italy_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_italy_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_italy_eu_tax_file_number
+
+- codice fiscal
+- codice fiscale
+- codice id personale
+- codice personale
+- fiscal code
+- numero certificato personale
+- numero di identificazione fiscale
+- numero id personale
+- numero personale
+- personal certificate number
+- personal code
+- personal id code
+- personal id number
+- personalcodeno#
+- tax code
+- tax id
+- tax identification no
+- tax identification number
+- tax identity number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
+## Japan bank account number
 
 ### Format
 
@@ -7081,7 +7555,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 Otemachi
 
-## Japan Driver's License Number
+## Japan driver's license number
 
 ### Format
 
@@ -7141,7 +7615,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 運転免許証 
 - 運転免許証番号 
    
-## Japan Passport Number
+## Japan passport number
 
 ### Format
 
@@ -7179,8 +7653,50 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - パスポート番号 
 - パスポートのNum 
 - パスポート＃ 
-   
-## Japan Resident Registration Number
+
+## Japanese residence card number
+
+### Format
+
+12 letters and digits
+
+### Pattern
+
+12 letters and digits:
+- Two letters (not case sensitive)
+- Eight digits 
+- Two letters (not case sensitive)
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The regular expression Regex_jp_residence_card_number finds content that matches the pattern.
+- A keyword from Keyword_jp_residence_card_number is found.
+
+```xml
+<!--Japan Residence Card Number-->
+-<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
+   -<Pattern confidenceLevel="75">
+      <IdMatch idRef="Regex_jp_residence_card_number"/>
+      <Match idRef="Keyword_jp_residence_card_number"/>
+   </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keyword_jp_residence_card_number
+
+- Residence card number
+- Residence card no
+- Residence card #
+- 在留カード番号
+
+## Japan resident registration number
 
 ### Format
 
@@ -7227,7 +7743,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 登録番号を常駐住民基本台帳登録番号 
 
    
-## Japan Social Insurance Number (SIN)
+## Japan social insurance number (SIN)
 
 ### Format
 
@@ -7280,47 +7796,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 社会保険のテンキー 
 - 社会保険番号 
 
-## Japanese Residence Card Number
 
-### Format
 
-12 letters and digits
-
-### Pattern
-
-12 letters and digits:
-- Two letters (not case sensitive)
-- Eight digits 
-- Two letters (not case sensitive)
-
-### Checksum
-
-No
-
-### Definition
-
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The regular expression Regex_jp_residence_card_number finds content that matches the pattern.
-- A keyword from Keyword_jp_residence_card_number is found.
-
-```xml
-<!--Japan Residence Card Number-->
--<Entity id="ac36fef2-a289-4e2c-bb48-b02366e89fc0" recommendedConfidence="75" patternsProximity="300">
-   -<Pattern confidenceLevel="75">
-      <IdMatch idRef="Regex_jp_residence_card_number"/>
-      <Match idRef="Keyword_jp_residence_card_number"/>
-   </Pattern>
-</Entity>
-```
-
-### Keywords
-
-#### Keyword_jp_residence_card_number
-
-- Residence card number
-- Residence card no
-- Residence card #
-- 在留カード番号
    
 ## Malaysia ID Card Number
 
