@@ -48,7 +48,3 @@ Find [conformance reports](https://cloudblogs.microsoft.com/industry-blog/govern
 - [Office 365 Accessibility Center](https://go.microsoft.com/fwlink/p/?linkid=2051801): Office 365 resources for people with disabilities.
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/B/B/FBB0D35E-A1B3-4078-A75D-702368311649/China-Compliance.pdf).

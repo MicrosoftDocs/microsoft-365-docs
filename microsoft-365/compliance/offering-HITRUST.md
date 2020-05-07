@@ -105,7 +105,3 @@ Log in to the HITRUST MyCSF® tool and pre-populate your assessment for your sol
 - [Understanding and Leveraging the CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Find out more about the HITRUST Shared Responsibility Program](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

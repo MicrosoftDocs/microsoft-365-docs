@@ -14,14 +14,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: 
 - M365solutions
+ms.custom: 
 description: Configure the security and service infrastructure that allows your employees to work remotely from anywhere and at any time.
 ---
 
 # Empower remote workers with Microsoft 365
 
 In response to the COVID-19 crisis, your business may need to enable your workers to have secure access to your organization's on-premises and cloud-based information, tools, and resources from their homes. 
+
+![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
 
 Use these steps to secure and optimize access to your organization's servers, data, and cloud services and enable maximum worker productivity.
 

@@ -88,7 +88,7 @@ If you forgot your password and can't sign in:
     
 - Ask another global admin in your business to reset your password for you.
     
-- Or, [call Microsoft Support](https://support.office.com/article/contact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b?ui=en-US&amp;rs=en-US&amp;ad=US#ID0EAADAAA=Phone_support_). 
+- Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     
 ## Reset all business passwords for everyone in your organization at the same time
 <a name="bkmk_forgot"> </a>
@@ -112,9 +112,9 @@ These steps work for a business with tens of users. If you have hundreds or thou
 
 Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with PowerShell](https://go.microsoft.com/fwlink/?linkid=853696).
   
-Here's a related article: [Set the passwords for multiple user accounts](https://support.office.com/article/014fc912-bee1-461d-ad00-56b80428b907.aspx#bkmk_password).
+Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-For overview information, see [PowerShell for Microsoft 365 administrators](https://support.office.com/article/40fdcbd4-c34f-42ab-8678-8b3751137ef1.aspx).
+For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## Force a password change for all users in your business
 <a name="bkmk_forgot"> </a>

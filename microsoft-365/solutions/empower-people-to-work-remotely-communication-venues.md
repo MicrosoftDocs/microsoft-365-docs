@@ -1,5 +1,5 @@
 ---
-title: "# Step 5: Create COVID-19 crisis communication venues"
+title: "Step 5: Create COVID-19 crisis communication venues"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,8 +14,8 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
+- M365solutions
 ms.custom:
-
 description: Use Microsoft 365 to create different ways to communicate about COVID-19 internal and public news.
 ---
 
@@ -27,6 +27,8 @@ There are many ways you can provide additional communication venues to serve the
 - Consolidated public health and news into a single portal
 - A communications site in SharePoint Online
 - A Yammer community
+
+![COVID-19 crisis communication venues](../media/empower-people-to-work-remotely/comm-venues-grid.png)
 
 ## Employee surveys
 

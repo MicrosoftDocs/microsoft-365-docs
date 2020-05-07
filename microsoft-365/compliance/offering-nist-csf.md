@@ -105,7 +105,3 @@ Microsoft provides the most comprehensive offerings compared to other cloud serv
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf).
