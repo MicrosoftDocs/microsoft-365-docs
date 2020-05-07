@@ -20,7 +20,7 @@ ms.custom:
 description: "This article provides troubleshooting information for issues with sending email to inboxes in Microsoft 365 & best practices for bulk mailing to Microsoft 365 customers."
 ---
 
-# Troubleshooting mail sent to Office 365
+# Troubleshooting mail sent to Microsoft 365
 
 This article provides troubleshooting information for senders who are experiencing issues when trying to send email to inboxes in Microsoft 365 and best practices for bulk mailing to customers.
 
@@ -44,7 +44,7 @@ Choose from one of these commonly encountered issues.
 
 ### Are you managing your IP and domain's sending reputation?
 
-EOP filtering technologies are designed to provide anti-spam protections for Microsoft 365 as well as other Microsoft products like Exchange Server, Microsoft Office Outlook, and Windows Live Mail. We also leverage SPF, DKIM, and DMARC; email authentication technologies that help address the problem of spoofing and phishing by verifying that the domain sending the email is authorized to do so. EOP filtering is influenced by a number of factors related to the sending IP, domain, authentication, list accuracy, complaint rates, content and more. Of these, one of the principal factors in driving down a sender's reputation and their ability to deliver email is their junk email complaint rate.
+EOP filtering technologies are designed to provide anti-spam protection for Microsoft 365 as well as other Microsoft products like Exchange Server. We also leverage SPF, DKIM, and DMARC; email authentication technologies that help address the problem of spoofing and phishing by verifying that the domain sending the email is authorized to do so. EOP filtering is influenced by a number of factors related to the sending IP, domain, authentication, list accuracy, complaint rates, content and more. Of these, one of the principal factors in driving down a sender's reputation and their ability to deliver email is their junk email complaint rate.
 
 ### Are you sending email from new IP addresses?
 
@@ -72,13 +72,13 @@ Some delivery issues are the result of the sender's IP address being blocked by 
 
 For more information about the error you received, see the list of error codes in [Email non-delivery reports in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
- For example, if you receive the following NDR, it indicates that the sending IP address was blocked by Microsoft.
+ For example, if you receive the following NDR, it indicates that the sending IP address was blocked by Microsoft:
 
  `550 5.7.606-649 Access denied, banned sending IP [x.x.x.x]; To request removal from this list please visit https://sender.office.com/ and follow the directions.`
 
 To request removal from this list, you can [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-### My email landed in the recipient's junk folder in EOP
+### My email landed in the recipient's Junk Email folder
 
 If a message was incorrectly identified as spam by EOP, you can work with the recipient to submit this false positive message to the Microsoft Spam Analysis Team, who will evaluate and analyze the message. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -90,7 +90,7 @@ If you receive an NDR from EOP that indicates that your IP address is being thro
 
 You received the NDR because suspicious activity has been detected from the IP address and it has been temporarily restricted while it is being further evaluated. If the suspicion is cleared through evaluation, this restriction will be lifted shortly.
 
-### I can't receive email from senders in Office 365
+### I can't receive email from senders in Microsoft 365
 
  In order to receive messages from our users, make sure your network allows connections from the IP addresses that EOP uses in our datacenters. For more information, see [Exchange Online Protection IP addresses](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
@@ -98,7 +98,7 @@ You received the NDR because suspicious activity has been detected from the IP a
 
 If you often conduct bulk email campaigns to Microsoft 365 users and want to ensure that your emails arrive in a safe and timely manner, follow the tips in this section.
 
-### Ensure that the From: name reflects who is sending the message
+### Ensure that the From name reflects who is sending the message
 
 The Subject should be a brief summary of what the message is about, and the message body should clearly and succinctly indicate what the offering, service, or product is about. For example:
 

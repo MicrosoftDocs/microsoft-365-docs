@@ -1,5 +1,5 @@
 ---
-title: "Use mail flow rules to filter bulk email in Office 365"
+title: "Use mail flow rules to filter bulk email"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: Admins can learn how to use mail flow rules in Exchange Online Protection (EOP) for bulk email filtering.
+description: "Admins can learn how to use mail flow rules (transport rules) to identify and filter bulk mail (gray mail) in Exchange Online Protection (EOP)."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Use mail flow rules to filter bulk email in Office 365
+# Use mail flow rules to filter bulk email in EOP
 
-If you're an Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam and bulk mail (also known as gray mail). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam and bulk mail (also known as gray mail). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 If you want more options to filter bulk mail, you can create mail flow rules (also known as transport rules) to search for text patterns or phrases that are frequently found in bulk mail, and mark those messages as spam. For more information about bulk mail, see [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md) and [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md).
 
@@ -28,9 +28,13 @@ This topic explains how create these mail flow rules in the Exchange admin cente
 
 ## What do you need to know before you begin?
 
-- You need to be assigned permissions in Exchange Online before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
+- You need to be assigned permissions before you can do these procedures:
 
-- To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center).
+  - In Exchange Online, see the "Mail flow" entry in [Feature Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/feature-permissions).
+  
+  - In standalone EOP, you need the Transport Rules role, which is assigned to the OrganizationManagement, ComplianceManagement, and RecordsManagement roles by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+
+- To open the EAC in Exchange Online, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). To open the EAC in standalone EOP, see [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
@@ -65,27 +69,16 @@ This topic explains how create these mail flow rules in the Exchange admin cente
      - **The subject or body** \> **subject or body matches these text patterns**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
        - `If you are unable to view the content of this email\, please`
-
        - `\>(safe )?unsubscribe( here)?\</a\>`
-
        - `If you do not wish to receive further communications like this\, please`
-
        - `\<img height\="?1"? width\="?1"? sr\c=.?http\://`
-
        - `To stop receiving these+emails\:http\://`
-
        - `To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)`
-
        - `no longer (wish )?(to )?(be sent|receive) w+ email`
-
        - `If you are unable to view the content of this email\, please click here`
-
        - `To ensure you receive (your daily deals|our e-?mails)\, add`
-
        - `If you no longer wish to receive these emails`
-
        - `to change your (subscription preferences|preferences or unsubscribe)`
-
        - `click (here to|the) unsubscribe`
 
       To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
@@ -95,29 +88,17 @@ This topic explains how create these mail flow rules in the Exchange admin cente
      - **The subject or body** \> **subject or body includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
        - `to change your preferences or unsubscribe`
-
        - `Modify email preferences or unsubscribe`
-
        - `This is a promotional email`
-
        - `You are receiving this email because you requested a subscription`
-
        - `click here to unsubscribe`
-
        - `You have received this email because you are subscribed`
-
        - `If you no longer wish to receive our email newsletter`
-
        - `to unsubscribe from this newsletter`
-
        - `If you have trouble viewing this email`
-
        - `This is an advertisement`
-
        - `you would like to unsubscribe or change your`
-
        - `view this email as a webpage`
-
        - `You are receiving this email because you are subscribed`
 
       To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).

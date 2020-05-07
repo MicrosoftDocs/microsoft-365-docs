@@ -1,11 +1,11 @@
 ---
-title: Protect on-premises mailbox - Exchange Online Protection
+title: Protect on-premises mailboxes in China with standalone EOP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/1/2017
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,10 +20,10 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "In this article, you'll learn how to protect on-premises mailboxes with Exchange Online Protection (EOP)"
+description: "Admins in China using Office 365 operated by 21Vianet can learn how to use standalone Exchange Online Protection (EOP) to protect their on-premises mailboxes."
 ---
 
-# Protect on-premises mailboxes with Exchange Online Protection
+# Protect on-premises mailboxes in China with standalone EOP
 
 > [!NOTE]
 > This article applies only to Office 365 operated by 21Vianet in China.

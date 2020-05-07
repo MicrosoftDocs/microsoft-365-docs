@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Admins can learn how to route spam to user Junk Email folders in an Exchange Online Protection hybrid environment.
+description: "Admins can learn how to route spam to user Junk Email folders in an Exchange Online Protection hybrid environment."
 ms.custom: seo-marvel-apr2020
 ---
 
