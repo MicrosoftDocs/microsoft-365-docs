@@ -9,8 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-ms.custom: 
 - M365solutions
+ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
