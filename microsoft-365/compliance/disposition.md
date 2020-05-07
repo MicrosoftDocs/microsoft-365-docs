@@ -64,6 +64,9 @@ When a disposition review is triggered at the end of the retention period:
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
 
+> [!NOTE]
+> A mailbox must have at least 10 MB data to support disposition reviews.
+
 You can see an overview of all pending dispositions in the **Overview** tab. For example:
 
 ![Pending dispositions in Records management overview](../media/dispositions-overview.png)
