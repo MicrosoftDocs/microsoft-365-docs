@@ -104,7 +104,7 @@ The auto-labeling settings for Office apps are available when you [create or edi
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> The option for **Trainable classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again a few days.
+> The option for **Classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again in a few days.
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
