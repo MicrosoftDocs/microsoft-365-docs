@@ -629,6 +629,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/go-to-the-securitycompliance-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-a-custom-blocked-urls-list-atp",
       "redirect_document_id": true
