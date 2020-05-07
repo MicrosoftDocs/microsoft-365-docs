@@ -38,7 +38,7 @@ In all of these cases, retention labels in Microsoft 365 can help you take the r
 
 With retention labels, you can:
   
-- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
+- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive for Business, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
     
@@ -107,7 +107,7 @@ When you publish or auto-apply retention labels, they don't take effect immediat
     
 ### Published retention labels
 
-If you publish retention labels to SharePoint or OneDrive, it can take one day for those retention labels to appear for end users. In addition, if you publish retention labels to Exchange, it can take 7 days for those retention labels to appear for end users, and the mailbox needs to contain at least 10 MB of data.
+If you publish retention labels to SharePoint or OneDrive for Business, it can take one day for those retention labels to appear for end users. In addition, if you publish retention labels to Exchange, it can take 7 days for those retention labels to appear for end users, and the mailbox needs to contain at least 10 MB of data.
   
 ![Diagram of when manual labels take effect](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
@@ -147,9 +147,9 @@ Different types of retention labels can be published to different locations, dep
   
 |**If the retention label is…**|**Then the label policy can be applied to…**|
 |:-----|:-----|
-|Published to end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-|Auto-applied based on sensitive information types  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
-|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
+|Published to end users  <br/> |Exchange, SharePoint, OneDrive for Business, Microsoft 365 Groups  <br/> |
+|Auto-applied based on sensitive information types  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive for Business  <br/> |
+|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive for Business, Microsoft 365 Groups  <br/> |
    
 In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
   
@@ -161,9 +161,9 @@ Retention labels can enforce the same retention actions that a retention policy 
   
 In addition, a retention label has two retention options that are available only in a retention label and not in a retention policy. With a retention label, you can:
   
-- Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Disposition of content](disposition.md).
+- Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive for Business documents must be reviewed before they can be deleted. For more information, see [Disposition of content](disposition.md).
     
-- Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
+- Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive for Business accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
     
 ![Retention settings with options specific to labels](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
@@ -175,7 +175,7 @@ If your retention label will be assigned to content by end users, you can publis
     
 - Outlook 2010 and later
     
-- OneDrive
+- OneDrive for Business
     
 - SharePoint
     
@@ -215,9 +215,9 @@ After the retention label is applied, you can view that retention label and what
   
 You can also apply retention labels to folders. This works the same in Outlook 2010 and later as it does in Outlook on the web. See the previous section for more info.
   
-### OneDrive and SharePoint
+### OneDrive for Business and SharePoint
 
-To label a document (including OneNote files) in OneDrive or SharePoint, select the item \> in the upper-right corner, choose **Open the details pane**![Information pane icon](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Apply retention label** \> choose the retention label. 
+To label a document (including OneNote files) in OneDrive for Business or SharePoint, select the item \> in the upper-right corner, choose **Open the details pane**![Information pane icon](../media/50b6d51b-92b4-4c5f-bb4b-4ca2d4aa3d04.png) \> **Apply retention label** \> choose the retention label. 
   
 You can also apply a retention label to a folder or document set, and you can set a default retention label for a document library. See the section below for more information.
   
@@ -406,7 +406,7 @@ To understand how different labels with retention actions are applied to content
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
-    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a policy assigned at the site or mailbox level and a default retention label assigned by the document library. For example, if the explicit retention label says to retain for 10 years, but the retention policy assigned to the site says to retain for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit, not explicit, because they're applied automatically by Office 365.
+    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive for Business document, that retention label takes precedence over both a policy assigned at the site or mailbox level and a default retention label assigned by the document library. For example, if the explicit retention label says to retain for 10 years, but the retention policy assigned to the site says to retain for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit, not explicit, because they're applied automatically by Office 365.
     
     2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive for Business account, that policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive for Business accounts but doesn't specifically include that user's mailbox.
     
@@ -430,7 +430,7 @@ All retention labels that are configured for trainable classifiers are evaluated
 
 ## Use retention labels instead of these features
 
-Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Microsoft 365 Groups. If you need to classify content or manage records anywhere in Microsoft 365, we recommend that you use retention labels.
+Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive for Business, and Microsoft 365 Groups. If you need to classify content or manage records anywhere in Microsoft 365, we recommend that you use retention labels.
   
 There are several other features that have previously been used to classify content or manage records in Office 365. These are listed below. These features will continue to work side by side with retention labels. While there are instances where the implementation of retention labels differs from previous features, the evolution of retention labels will drive the future of records management across Office 365. Therefore, moving forward, for data governance, we recommend that you use retention labels instead of these features.
   
