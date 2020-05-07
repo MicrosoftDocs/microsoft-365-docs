@@ -9,8 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-ms.custom: 
 - M365solutions
+ms.custom: 
 localization_priority: Normal
 f1.keywords: NOCSH
 description: "Learn how to create a B2B extranet site or team with managed guest users from a partner organization."
