@@ -104,7 +104,7 @@ The auto-labeling settings for Office apps are available when you [create or edi
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> The option for **Classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again in a few days.
+> The option for **Trainable classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again in a few days.
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
@@ -124,7 +124,7 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ### Configuring trainable classifiers for a label
 
-When you select the **Classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
+When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
 ![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
 
