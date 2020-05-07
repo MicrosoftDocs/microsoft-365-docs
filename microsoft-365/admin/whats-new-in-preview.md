@@ -46,6 +46,68 @@ And if you're interested in what's new in other Microsoft cloud services:
 - [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
 
+## April 2020
+
+### Intune roles management
+
+Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the Microsoft 365 admin center. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the Microsoft 365 admin center, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
+
+:::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Roles page with the Intune pivot selected":::
+
+### Sync Message Center posts to Planner
+
+Starting in May, admins who are in Targeted release will start seeing the "Planner syncing" button in the Message Center. You can now track messages that need action, select the type of messages you'd like to track, track who the task was assigned to, and you can tag messages for later attention.
+
+[Join Targeted Release](manage/release-options-in-office-365.md) to get started!
+
+### "Need help?" launched in Teams admin center & Security and Compliance centers
+
+The Teams admin center, Security center, and Compliance center are now using the same "Need help?" feature that the Microsoft 365 admin center uses for finding help and contacting support. We've received a lot of feedback from admins that you wanted the same level of help and support and we're happy to bring that to you. Try it out and give us your feedback!
+
+#### Need chat?
+Our support agents have been working from home while still taking customer cases and limitations on internet bandwidth while working from home can impact customer call quality. In order to continue supporting you, we have launched live chat support option for commercial customers in the Microsoft 365 admin center.
+
+While creating a service request, you'll now see chat as an option, in addition to phone and email. Select chat as a preferred channel of communication and create the request. Once you've created the  request, you can start the chat when you are ready to chat with Microsoft agents.
+
+
+### Productivity score
+Productivity Score gives insights about how people use Microsoft cloud services and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours. If you'd like to learn more, check out the blog:  [Measure and improve the Microsoft 365 experience with Microsoft Productivity Score](https://aka.ms/productivityscoreblog).
+This month, we are introducing the following new concepts to the preview experience:
+
+- Focus on customer value tied to key outcomes for each category
+- Time trends for metrics to help tell a story on how the organization is evolving
+- New category within Employee Experience such as Communication and updates to existing categories
+- User details with organizational metadata for actionability
+- Interconnection between Employee Experience and Technology Experience areas
+
+Productivity score is currently in private preview. [Join the Productivity score private preview](https://aka.ms/productivityscorepreview) to get started.
+
+### Groups updates
+We've got two updates for Groups this month:
+
+- You can now edit email addresses for Office 365 groups (Also known as Groups in Outlook, and soon to be known as Microsoft 365 groups).
+- We've heard your feedback and we've added clearer error messaging for why you can't convert a group to a Microsoft Team.
+
+### Docs, Videos, and Training
+
+**What's new in Microsoft 365 video series**: This month, we cover tips and resources to help small businesses transition to remote work including how to roll out Microsoft Teams, remote work training resources to stay connected with clients and partners, and the new Microsoft 365 Business Voice plan. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+
+#### For your users
+
+- [Schedule a meeting](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Join a Teams meeting](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Create an org-wide team](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Create a Team with guests](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Join a Team as a guest](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Create a group email address](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+
+#### For admins and business owners
+
+- [Empower your small business with remote work](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [Running a remote small business](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Sign up for Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Setting up two-factor sign-in](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+
 ## March 2020
 
 ### Featured Feedback Fix: Improve "add user" reliability for licensing
