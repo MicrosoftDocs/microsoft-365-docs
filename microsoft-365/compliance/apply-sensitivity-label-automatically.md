@@ -99,16 +99,12 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is [in preview for some apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md):
-
-![Auto labeling options for sensitivity labels](../media/sensitivity-labels-auto-labeling-options.png)
-
-You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or trainable classifiers:
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md).You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> The option for **Trainable classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again a few days..
+> The option for **Trainable classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again a few days.
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
@@ -128,15 +124,15 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ### Configuring trainable classifiers for a label
 
-When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers:
+When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
 ![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
 
-For more information about these trainable classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
 During the preview period, the following apps support trainable classifiers for sensitivity labels:
 
-- Microsoft 365 Apps for enterprise for Windows, from [Office Insider](https://office.com/insider):
+- Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus) for Windows, from [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
