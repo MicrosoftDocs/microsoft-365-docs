@@ -69,6 +69,14 @@ Our support agents have been working from home while still taking customer cases
 
 While creating a service request, you'll now see chat as an option, in addition to phone and email. Select chat as a preferred channel of communication and create the request. Once you've created the  request, you can start the chat when you are ready to chat with Microsoft agents.
 
+### Teams updates
+
+With the increased usage of Teams, we've added a few features to help you manage them. 
+
+- A new recommendation card shows which users haven't actively used teams for 30 days. You can send those users a training email to get them help using Teams.
+- **Get Started with Teams**: Go to Setup to see a new page to help you get Teams turned on, licensed to users, and ready to use!
+- Add the Teams card to your Home page to see Guest access status and an "Improve network connectivity" status.
+- Finally, Teams is now a step in the initial set up flow if you purchased a license that includes Teams.
 
 ### Productivity score
 Productivity Score gives insights about how people use Microsoft cloud services and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours. If you'd like to learn more, check out the blog:  [Measure and improve the Microsoft 365 experience with Microsoft Productivity Score](https://aka.ms/productivityscoreblog).
