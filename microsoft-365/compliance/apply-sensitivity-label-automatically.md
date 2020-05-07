@@ -124,7 +124,7 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ### Configuring trainable classifiers for a label
 
-When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
+When you select the **Classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
 ![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
 
