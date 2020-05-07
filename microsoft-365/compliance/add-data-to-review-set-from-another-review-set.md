@@ -28,9 +28,9 @@ In some cases, it may be necessary to select documents from one review set and w
 
 Follow the workflow in this article to add content from one review set to another.
 
-## Create a new review set
+## Create a review set
 
-Before you start, you'll need to create a new review set to add the data to.  A new review set can be added on the **Review sets** tab of the case. For more information, see [Create a review set](managing-review-sets.md#create-a-review-set).
+Before you start, you'll need to create a review set to add the data to.  A new review set can be added on the **Review sets** tab of the case. For more information, see [Create a review set](managing-review-sets.md#create-a-review-set).
 
 ## Step 1: Identify content to add to another review set
 
