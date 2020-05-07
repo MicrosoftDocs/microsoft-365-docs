@@ -99,7 +99,7 @@ View detailed instructions for [managing assessments in Compliance Manager](work
 
 ### Templates
 
-Compliance Score provides pre-configured templates for assessments. You can also customize a pre-configured template by adding your own controls and actions. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn't covered by one of the pre-configured templates. By bringing your own templates into Compliance Score, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
+Compliance Score provides pre-configured templates for assessments. You can also create a Custom Assessment by adding your own controls and actions to a pre-configured template. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn't covered by one of the pre-configured templates. By bringing your own templates into Compliance Score, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
 
 The pre-configured templates for Compliance Score are:
 

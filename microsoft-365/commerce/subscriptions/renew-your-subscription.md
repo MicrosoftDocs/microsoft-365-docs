@@ -28,6 +28,14 @@ description: "Learn how to renew your Microsoft 365 for business subscription us
 
 # Renew Microsoft 365 for business
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 This article applies to most paid Microsoft 365 for business subscriptions.
   
 To renew by using a product key that you bought from a retail store or Microsoft partner, see [Find and enter your product key](../enter-your-product-key.md).
