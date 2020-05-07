@@ -39,7 +39,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 |**Area**|**Policy Template**|**Details**|
 |:-----|:-----|:-----|
 | **Offensive language and anti-harassment** | Monitor communications for offensive language | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 100% <br> - Conditions: Offensive language classifier |
-| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns and types, custom dictionary option, attachments larger than 1 MB |
+| **Sensitive information** | Monitor communications for sensitive information | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound, Internal <br> - Review Percentage: 10% <br> - Conditions: Sensitive information, out-of-the-box content patterns, and types, custom dictionary option, attachments larger than 1 MB |
 | **Regulatory compliance** | Monitor communications for info related to financial regulatory compliance | - Locations: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direction: Inbound, Outbound <br> - Review Percentage: 10% <br> - Conditions: custom dictionary option, attachments larger than 1 MB |
 
 ## Supervised users
@@ -57,7 +57,7 @@ When you create a communication compliance policy, you must determine who review
 
 To simplify your setup, create groups for people who need their communications reviewed and groups for people who review those communications. If you're using groups, you might need several. For example, if you want to scan communications between two distinct groups of people, or if you want to specify a group that isn't supervised.
 
-When you select a Microsoft 365 group for supervised users, the policy scans the content of the shared mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy scans individual user mailboxes.
+When you select a Microsoft 365 group for supervised users, the policy scans the content of the shared mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy scans individual user mailboxes. Adding groups and distribution lists to communication compliance policies are part of the overall conditions and rules set, so the maximum number of groups and distribution lists that a policy supports varies depending on the number of conditions also added to the policy. Each policy should support approximately 20 groups or distribution lists, depending on the number of additional conditions present in the policy.
 
 ## Supported communication types
 
@@ -162,7 +162,7 @@ The following table explains more about each condition.
 #### Matching words and phrases to emails or attachments
 <a name="Matchwords"> </a>
 
-Each word you enter and separate with a comma is applied separately (only one word must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker", "confidential", and "insider trading" separated by a comma (banker,confidential,"insider trading"). The policy applies to any messages that includes the word "banker", "confidential", or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.
+Each word you enter and separate with a comma is applied separately (only one word must apply for the policy condition to apply to the email or attachment). For example, let's use the condition, **Message contains any of these words**, with the keywords "banker", "confidential", and "insider trading" separated by a comma (banker, confidential,"insider trading"). The policy applies to any messages that includes the word "banker", "confidential", or the phrase "insider trading". Only one of these words or phrases must occur for this policy condition to apply. Words in the message or attachment must exactly match what you enter.
 
 >[!IMPORTANT]
 >When importing a custom dictionary file, each word or phrase must be separated with a carriage return and on a separate line. <br> For example: <br><br>
