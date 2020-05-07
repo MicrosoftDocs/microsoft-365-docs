@@ -86,7 +86,7 @@ Insider risk management supports importing user and log data imported from 3rd-p
 See the [Set up a connector to import HR data](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
 
 >[!IMPORTANT]
->If you configure a p'licy using the *Departing emplo'ee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
+>If you configure a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
 
 ### Configure Data Loss Prevention (DLP) policies
 
