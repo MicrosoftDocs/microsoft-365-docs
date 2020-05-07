@@ -26,6 +26,14 @@ ms.custom: okr_SMB
 
 # Buy another Microsoft 365 for business subscription
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 If you already have a Microsoft 365 for business subscription and you want to buy another subscription for your organization, the best way is to do it is through the admin center. If you haven't yet purchased the first Microsoft 365 for business subscription for your organization, go [here](https://products.office.com/business/compare-office-365-for-business-plans) to choose a plan.
   
 When you buy another subscription through the admin center, you're guaranteed that the new subscription will be associated with the same organization (domain name space) as your existing subscription. This makes it easier to move users within your organization between subscriptions or assign them a user license for the additional subscription they need.
