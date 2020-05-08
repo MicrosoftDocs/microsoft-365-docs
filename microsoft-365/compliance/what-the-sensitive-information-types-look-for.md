@@ -1,5 +1,5 @@
 ---
-title: "Sensitive information types definitions"
+title: "Sensitive information type entity definitions"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,7 +18,7 @@ ms.collection:
 description: "Data loss prevention (DLP) in the Security &amp; Compliance Center includes 80 sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type."
 ---
 
-# Sensitive information type definitions
+# Sensitive information type entity definitions
 
 Data loss prevention (DLP) in the Security &amp; Compliance Center includes many sensitive information types that are ready for you to use in your DLP policies. This topic lists all of these sensitive information types and shows what a DLP policy looks for when it detects each type. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
   
