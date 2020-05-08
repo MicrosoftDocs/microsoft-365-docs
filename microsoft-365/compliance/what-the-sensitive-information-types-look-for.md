@@ -10443,7 +10443,243 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 
-## South Africa Identification Number
+## Slovenia driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+Nine digits without spaces and delimiters
+  
+### Pattern
+
+Nine digits
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_slovenia_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovenia_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_slovenia_eu_driver's_license_number" />
+          <Match idRef="Keywords_slovenia_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_slovenia_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license 
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- vozniško dovoljenje
+
+## Slovenia national identification number
+This sensitive information type entity is included in the EU National Identification Number bundle.
+
+### Format
+
+13 digits without spaces or delimiters
+  
+### Pattern
+
+13 digits in the specified pattern:
+  
+-  Seven digits that correspond to the birth date (DDMMLLL) where "LLL" corresponds to the last three digits of the birth year 
+- Two digits that correspond to the area of birth
+- Three digits that correspond to a combination of gender and serial number for persons born on the same day (000-499 for male and 500-999 for female)
+- One check digit
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_slovenia_eu_national_id_card` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovenia_eu_national_id_card` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_slovenia_eu_national_id_card` finds content that matches the pattern. 
+    
+```xml
+ <!-- Slovenia national identification number -->
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_slovenia_eu_national_id_card" />
+          <Match idRef="Keywords_slovenia_eu_national_id_card" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_slovenia_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_slovenia_eu_national_id_card
+
+- edinstvena številka glavnega državljana
+- emšo
+- enotna maticna številka obcana
+- id card
+- identification number
+- identifikacijska številka
+- identity card
+- nacionalna id
+- nacionalni potni list
+- national id
+- osebna izkaznica
+- osebni koda
+- osebni ne
+- osebni številka
+- personal code
+- personal number
+- personal numeric code
+- številka državljana
+- unique citizen number
+- unique id number
+- unique identity number
+- unique master citizen number
+- unique registration number
+- uniqueidentityno #
+- uniqueidentityno#
+
+## Slovenia passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Two letters followed by seven digits with no spaces or delimiters
+  
+### Pattern
+
+Two letters followed by seven digits:
+  
+- The letter "P"
+- One uppercase letter
+- Seven digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_slovenia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovenia_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_slovenia_eu_passport_number" />
+          <Match idRef="Keywords_slovenia_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_slovenia_eu_passport_number**
+
+passport number
+slovenian passport number
+passport no
+številka potnega lista
+
+## Slovenia tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+Eight digits with no spaces or delimiters
+  
+### Pattern
+
+Eight digits
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_slovenia_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovenia_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_slovenia_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_nation_eu_tax_file_number" />
+          <Match idRef="Keywords_nation_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_slovenia_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_slovenia_eu_tax_file_number
+
+- davčna številka
+- identifikacijska številka davka
+- številka davčne datoteke
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
+
+## South Africa identification number
 
 ### Format
 
@@ -10487,7 +10723,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - ID
 - Identification 
    
-## South Korea Resident Registration Number
+## South Korea resident registration number
 
 ### Format
 
@@ -10540,8 +10776,196 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Jumin deungnok beonho 
 - RRN 
 - 주민등록번호
-   
-## Spain Social Security Number (SSN)
+
+## Spain driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+Eight digits followed by one character
+  
+### Pattern
+
+Eight digits followed by one character:
+  
+- Eight digits 
+- One digit or letter (not case-sensitive)
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_spain_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_spain_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_driver's_license_number" />
+          <Match idRef="Keywords_spain_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_spain_eu_driver's_license_number**
+
+- dlno#
+- dl#
+- drivers lic.
+- driver licence
+- driver license
+- drivers licence
+- drivers license
+- driver's licence
+- driver's license
+- driving licence
+- driving license
+- driver licence number
+- driver license number
+- drivers licence number
+- drivers license number
+- driver's licence number
+- driver's license number
+- driving licence number
+- driving license number
+- driving permit
+- driving permit number
+- permiso de conducción
+- permiso conducción
+- número licencia conducir
+- número de carnet de conducir
+- número carnet conducir
+- licencia conducir
+- número de permiso de conducir
+- número de permiso conducir
+- número permiso conducir
+- permiso conducir
+- licencia de manejo
+- el carnet de conducir
+- carnet conducir
+
+## Spain national identification number
+This sensitive information type entity is included in the EU National Identification Number bundle.
+
+### Format
+
+Seven digits followed by one character
+  
+### Pattern
+
+Seven digits followed by one character
+  
+- Seven digits
+- One digit or letter (not case-sensitive)
+    
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_spain_eu_national_id_card` finds content that matches the pattern. 
+- A keyword from  `Keywords_spain_eu_national_id_card"` is found. 
+    
+```xml
+<!-- Spain national identification number -->
+ 
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_spain_eu_national_id_card" />
+          <Match idRef="Keywords_spain_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_spain_eu_national_id_card
+
+- carné de identidad
+- dni#
+- dni
+- dninúmero#
+- documento nacional de identidad
+- identidad único
+- identidadúnico#
+- insurance number
+- national identification number
+- national identity
+- nationalid#
+- nationalidno#
+- nie#
+- nie
+- nienúmero#
+- número de identificación
+- número nacional identidad
+- personal identification number
+- personal identity no
+- unique identity number
+- uniqueid#
+
+## Spain passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+An eight- or nine-character combination of letters and numbers with no spaces or delimiters
+  
+### Pattern
+
+An eight- or nine-character combination of letters and numbers:
+  
+-  Two digits or letters 
+- One digit or letter (optional)
+- Six digits
+    
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_spain_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_spain_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_spain_eu_passport_number" />
+          <Match idRef="Keywords_spain_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_spain_eu_passport_number**
+
+- passport
+- spain passport
+- passport book
+- passport number
+- passport no
+- libreta pasaporte
+- número pasaporte
+- españa pasaporte
+- pasaporte
+
+
+## Spain social security sumber (SSN)
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
 
 ### Format
 
@@ -10579,7 +11003,107 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 None
 
-## SQL Server Connection String
+## Spain tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+Seven or eight digits and one or two letters in the specified pattern
+  
+### Pattern
+
+Spanish Natural Persons with a Spain National Identity Card:
+  
+-  Eight digits 
+- One uppercase letter (case-sensitive) 
+    
+Non-resident Spaniards without a Spain National Identity Card
+  
+- One uppercase letter "L" (case-sensitive)
+- Seven digits
+- One uppercase letter (case-sensitive) 
+    
+Resident Spaniards under the age of 14 years without a Spain National Identity Card :
+  
+- One uppercase letter"K" (case-sensitive)
+-  Seven digits 
+- One uppercase letter (case-sensitive)
+    
+Foreigners with a Foreigner's Identification Number
+  
+- One uppercase letter that is "X", "Y", or "Z" (case-sensitive) 
+- Seven digits
+- One uppercase letter (case-sensitive) 
+    
+Foreigners without a Foreigner's Identification Number
+  
+- One uppercase letter that is "M" (case-sensitive) 
+- Seven digits
+- One uppercase letter (case-sensitive) 
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_spain_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_spain_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_spain_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_spain_eu_tax_file_number" />
+          <Match idRef="Keywords_spain_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_spain_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_spain_eu_tax_file_number
+
+- cif
+- cifid#
+- cifnúmero#
+- número de contribuyente
+- número de identificación fiscal
+- número de impuesto corporativo
+- spanishcifid#
+- spanishcifid
+- spanishcifno#
+- spanishcifno
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
+## SQL Server connection string
 
 ### Format
 
@@ -10656,8 +11180,62 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## Sweden National ID
+## Sweden driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle
 
+### Format
+
+Ten digits containing a hyphen
+  
+### Pattern
+
+Ten digits containing a hyphen:
+  
+-  Six digits 
+- A hyphen
+- Four digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_sweden_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_sweden_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_sweden_eu_driver's_license_number" />
+          <Match idRef="Keywords_sweden_eu_driver's_license_number" />
+        </Pattern>
+</Entity> 
+```
+
+### Keywords
+
+**Keywords_sweden_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- körkort
+
+## Sweden National ID
+This sensitive information type entity is included in the EU National Identification Number bundle.
 ### Format
 
 10 or 12 digits and an optional delimiter
@@ -10694,7 +11272,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 No
    
 ## Sweden Passport Number
-
+This sensitive information type entity is included in the EU Passport Number bundle.
 ### Format
 
 Eight digits
@@ -10762,8 +11340,147 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeport# 
 - PasseportNon 
 - Passeportn ° 
-   
-## SWIFT Code
+
+## Sweden social security number or equivalent identification
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
+
+### Format
+
+12 digits without spaces and delimiters
+  
+### Pattern
+
+12 digits:
+  
+-  Eight digits that correspond to the birth date (YYYYMMDD) 
+- Three digits that correspond to a serial number where: 
+  - The last digit in the serial number indicates gender by the assignment of an odd number for male and an even number for female
+  - Up to 1990, the assignment of serial number corresponded to the county where the bearer of the number was born or (if born before 1947) where he/she had been living, according to tax records, on January 1, 1947, with a special code (usually 9 as the 7th digit) for immigrants 
+- One check digit
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
+- A keyword from  `Keywords_sweden_eu_ssn_or_equivalent` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_sweden_eu_ssn_or_equivalent` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
+        </Pattern> 
+       <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
+        </Pattern>      
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_sweden_eu_ssn_or_equivalent
+
+- personal id number
+- identification number
+- personal id no
+- identity no
+- identification no
+- personal identification no
+- personnummer id
+- personligt id-nummer
+- unikt id-nummer
+- personnummer
+- identifikationsnumret
+- personnummer#
+- identifikationsnumret#
+
+## Sweden tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+Ten digits and a symbol in the specified pattern
+  
+### Pattern
+
+Ten digits and a symbol:
+  
+- Six digits that correspond to the birth date (YYMMDD) 
+- A plus sign, minus sign, or backslash
+- Three digits that make the identification number unique where: 
+  - For numbers issued before 1990, the seventh and eighth digit identify the county of birth or foreign-born people
+  - The digit in the ninth position indicates gender by either odd for male or even for female
+- One check digit
+    
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_sweden_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_sweden_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_sweden_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_sweden_eu_tax_file_number" />
+          <Match idRef="Keywords_sweden_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_sweden_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_sweden_eu_tax_file_number
+
+- personal id number
+- personnummer
+- skatt id nummer
+- skatt identifikation
+- skattebetalarens identifikationsnummer
+- sverige tin
+- tax file
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
+
+## SWIFT code
 
 ### Format
 
@@ -10833,7 +11550,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - \# BIC 
 - code identificateur de banque 
    
-## Taiwan National ID
+## Taiwan national idnetification number
 
 ### Format
 
@@ -10934,7 +11651,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
-## Taiwan Resident Certificate (ARC/TARC) Number
+## Taiwan resident certificate (ARC/TARC) number
 
 ### Format
 
@@ -10982,7 +11699,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 外僑居留證 
 - 台灣地區居留證 
 
-## Thai Population Identification Code
+## Thai population identification code
 
 ### Format
 
@@ -11031,7 +11748,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## Turkish National Identification Number
+## Turkish national identification number
 
 ### Format
 
@@ -11076,7 +11793,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Vatandaşlık numarası
 - Vatandaşlık no
 
-## U.K. Driver's License Number
+## U.K. driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
 
 ### Format
 
@@ -11132,7 +11850,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - driving licence 
 - dual control car 
    
-## U.K. Electoral Roll Number
+## U.K. electoral roll number
 
 ### Format
 
@@ -11174,7 +11892,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - electoral roll
 
    
-## U.K. National Health Service Number
+## U.K. national health service number
 
 ### Format
 
@@ -11241,7 +11959,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - Date of Birth 
 - Birth Date 
    
-## U.K. National Insurance Number (NINO)
+## U.K. national insurance number (NINO)
 
 ### Format
 
@@ -11303,72 +12021,80 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 #### Keyword_uk_nino
 
-- national insurance number 
-- national insurance contributions 
-- protection act 
-- insurance 
-- social security number 
-- insurance application 
-- medical application 
-- social insurance 
-- medical attention 
-- social security 
-- great britain 
-- insurance    
-   
-## U.S. / U.K. Passport Number
+- national insurance number
+- national insurance contributions
+- protection act
+- insurance
+- social security number
+- insurance application
+- medical application
+- social insurance
+- medical attention
+- social security
+- great britain
+- insurance
+    
+## U.K. tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
 
 ### Format
 
-Nine digits
-
+Unique Taxpayer Reference (UTR): 10 digits without spaces and delimiters
+  
+National Insurance Number (NINO): For details, see the section "U.K. National Insurance Number (NINO)" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+  
 ### Pattern
 
-Nine consecutive digits
-
+Unique Taxpayer Reference (UTR): 10 digits
+  
+National Insurance Number (NINO): For details, see the section "U.K. National Insurance Number (NINO)" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+  
 ### Checksum
 
-No
-
+Yes
+  
 ### Definition
 
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_usa_uk_passport finds content that matches the pattern.
-- A keyword from Keyword_passport is found.
-
-```xml
-<Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
-    <Pattern confidenceLevel="75">
-        <IdMatch idRef="Func_usa_uk_passport" />
-        <Match idRef="Keyword_passport" />
-    </Pattern>
+  
+- The function  `Func_uk_eu_tax_file_number` finds content that matches the pattern. 
+    
+- A keyword from  `Keywords_uk_eu_tax_file_number` is found. 
+    
+```
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_uk_eu_tax_file_number" />
+          <Match idRef="Keywords_uk_eu_tax_file_number" />
+        </Pattern>
 </Entity>
 ```
 
 ### Keywords
 
-#### Keyword_passport
+#### Keywords_uk_eu_tax_file_number
 
-- Passport Number 
-- Passport No 
-- Passport # 
-- Passport# 
-- PassportID 
-- Passportno 
-- passportnumber 
-- パスポート 
-- パスポート番号 
-- パスポートのNum 
-- パスポート＃ 
-- Numéro de passeport 
-- Passeport n ° 
-- Passeport Non 
-- Passeport # 
-- Passeport# 
-- PasseportNon 
-- Passeportn ° 
-   
-## U.S. Bank Account Number
+- tax number
+- tax file
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+## U.S. bank account number
 
 ### Format
 
@@ -11429,8 +12155,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Debit Acct # 
 - Debit Acct No. 
 - Debit Account No. 
-   
-## U.S. Driver's License Number
+
+## U.S. driver's license number
 
 ### Format
 
@@ -11580,9 +12306,9 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 #### Keyword_[state_name]_drivers_license_name
 
 - State abbreviation (for example, "NY") 
-- State name (for example, "New York")    
-   
-## U.S. Individual Taxpayer Identification Number (ITIN)
+- State name (for example, "New York")
+
+## U.S. individual taxpayer identification number (ITIN)
 
 ### Format
 
@@ -11674,8 +12400,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Birthdate 
 - Birthday 
 - Date of Birth 
-   
-## U.S. Social Security Number (SSN)
+
+## U.S. social aecurity number (SSN)
 
 ### Format
 
@@ -11750,4 +12476,64 @@ A DLP policy is 55% confident that it's detected this type of sensitive informat
 - SSN# 
 - SS# 
 - SSID 
+   
+## U.S. / U.K. passport number
+The U.K. passport number sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Nine digits
+
+### Pattern
+
+Nine consecutive digits
+
+### Checksum
+
+No
+
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_usa_uk_passport finds content that matches the pattern.
+- A keyword from Keyword_passport is found.
+
+```xml
+<Entity id="178ec42a-18b4-47cc-85c7-d62c92fd67f8" patternsProximity="300" recommendedConfidence="75">
+    <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_usa_uk_passport" />
+        <Match idRef="Keyword_passport" />
+    </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keyword_passport
+
+- Passport Number 
+- Passport No 
+- Passport # 
+- Passport# 
+- PassportID 
+- Passportno 
+- passportnumber 
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート＃ 
+- Numéro de passeport 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport# 
+- PasseportNon 
+- Passeportn ° 
+   
+
+
+   
+    
+   
+
    
