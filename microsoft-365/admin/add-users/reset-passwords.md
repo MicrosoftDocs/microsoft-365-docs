@@ -74,9 +74,9 @@ These steps are only for people using a Microsoft 365 for business plan. To do t
 
 Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser: 
     
-1. In Microsoft 365, on the [Personal info page](https://portal.office.com/account/#personalinfo), go to **Contact details**. 
+1. Select your name (icon) in upper right corner > **My Account** > **Personal Info**. 
           
-2. Double-check that your **Alternate email** is accurate and that you've provided a mobile phone number. If not, change them now. 
+2. Under **Contact details**, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number. If not, change them now. 
         
 3. Sign out: select your name in the upper right corner (in the above image, shown as **Diane**) \> **Sign out**. 
         
