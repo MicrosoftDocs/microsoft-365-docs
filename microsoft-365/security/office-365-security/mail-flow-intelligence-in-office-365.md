@@ -81,7 +81,7 @@ Typically, this error means Microsoft 365 encountered a connection error when it
 
 Typically, this error means Microsoft 365 connected to the destination email server, but the server responded with an immediate error, or doesn't meet the connection requirements. The error details will explain the problem. For example:
 
-- The destination email server responded with a "Service not available" error, which indicates the server is unable to maintain communication with Office 365.
+- The destination email server responded with a "Service not available" error, which indicates the server is unable to maintain communication with Microsoft 365.
 
 - The connector is configured to require TLS, but the destination email server doesn't support TLS.
 
@@ -97,15 +97,15 @@ Typically, this error means Microsoft 365 is having difficulty communicating wit
 
 - Your firewall uses SMTP packet examination rules, and those rules aren't working correctly.
 
-- Your on-premises email server isn't working correctly (for example, service hangs, crashes, or low system resources), which is causing the server to time out and close the connection to Office 365.
+- Your on-premises email server isn't working correctly (for example, service hangs, crashes, or low system resources), which is causing the server to time out and close the connection to Microsoft 365.
 
-- There are network issues between your on-premises environment and Office 365.
+- There are network issues between your on-premises environment and Microsoft 365.
 
 ### How do I fix error code 450 4.4.318?
 
 - Find out which scenario applies to you, and make the necessary corrections.
 
-- If the problem is caused by network issues between your on-premises environment and Office 365, contact your network team to troubleshoot the issue.
+- If the problem is caused by network issues between your on-premises environment and Microsoft 365, contact your network team to troubleshoot the issue.
 
 - If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
 

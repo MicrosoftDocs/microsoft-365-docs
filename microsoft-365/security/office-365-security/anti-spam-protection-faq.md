@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "Admin can learn This topic provides FAQs & answers about anti-spam protection. Answers are applicable for Microsoft Exchange Online & Exchange Online Protection (EOP) customers."
+description: "Admins can view frequently asked questions and answers about anti-spam protection in Exchange Online Protection (EOP)."
 ---
 
 # Anti-spam protection FAQ
 
-This topic provides frequently asked questions and answers about anti-malware protection for Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
+This topic provides frequently asked questions and answers about anti-malware protection for Microsoft 365 organizations with mailboxes in Exchange Online, or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
 
 For questions and answers about the quarantine, see [Quarantine FAQ](quarantine-faq.md).
 
@@ -52,9 +52,9 @@ For more information, see the following topics:
 
 [Recommended settings for EOP and Office 365 ATP security](recommended-settings-for-eop-and-office365-atp.md)
 
-[Configure connection filtering](configure-the-connection-filter-policy.md)
+[Configure connection filtering in EOP](configure-the-connection-filter-policy.md)
 
-[Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md)
+[Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)
 
 [Configure the outbound spam policy](configure-the-outbound-spam-policy.md)
 
@@ -88,7 +88,7 @@ Yes, the message trace tool enables you to follow email messages as they pass th
 
 ## Will the service throttle (rate limit) my mail if my users send outbound spam?
 
-If more than half of the mail that is sent from a user through the service within a certain time frame (for example, per hour), is determined to be spam by Office 365, the user will be blocked from sending messages. In most cases, if an outbound message is determined to be spam, it is routed through the high-risk delivery pool, which reduces the probability of the normal outbound-IP pool being added to a block list.
+If more than half of the mail that is sent from a user through the service within a certain time frame (for example, per hour), is determined to be spam by EOP, the user will be blocked from sending messages. In most cases, if an outbound message is determined to be spam, it is routed through the high-risk delivery pool, which reduces the probability of the normal outbound-IP pool being added to a block list.
 
 You can send a notification to a specified email address when a sender is blocked sending outbound spam. For more information about this setting, see [Configure the outbound spam policy](configure-the-outbound-spam-policy.md).
 

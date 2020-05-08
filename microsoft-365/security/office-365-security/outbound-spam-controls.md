@@ -18,7 +18,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn as an admin how Office 365 and Exchange Online Protection (EOP) protects customers from outbound spam, and what to do if you need to send mass mailings."
+description: "Admins can learn about the outbound spam controls in Exchange Online Protection (EOP), and what to do if you need to send mass mailings."
 ---
 
 # Outbound spam protection in EOP
@@ -35,7 +35,7 @@ This topic describes the controls and notifications that are designed to help pr
 
 ## How EOP controls outbound spam
 
-- **Segregation of outbound email traffic**: Every outbound message that's sent through the service is scanned for spam. If the message is determined to be spam, it's delivered from a secondary, less reputable IP address pool named the _high-risk delivery pool_. For more information, see [High-risk delivery pool for outbound messages in Office 365](high-risk-delivery-pool-for-outbound-messages.md).
+- **Segregation of outbound email traffic**: Every outbound message that's sent through the service is scanned for spam. If the message is determined to be spam, it's delivered from a secondary, less reputable IP address pool named the _high-risk delivery pool_. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Monitoring our source IP address reputation**: Microsoft 365 queries various third party IP block lists. An alert is generated if any of the IP addresses that we use for outbound email appear on these lists. This allows us to react quickly when spam has caused our reputation to degrade. When an alert is generated, we have internal documentation that outlines how to get our IP addresses remove (delisted) from block lists.
 

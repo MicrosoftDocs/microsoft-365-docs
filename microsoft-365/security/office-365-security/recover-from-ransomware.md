@@ -15,7 +15,7 @@ ms.collection:
 description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
 ---
 
-# Recover from a ransomware attack in Office 365
+# Recover from a ransomware attack in Microsoft 365
 
 Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are verify sophisticated.
 
@@ -37,7 +37,7 @@ The key point here is to stop the spread of data encryption by the ransomware.
 
 If you suspect that email is a target, you should temporarily disable user access to mailboxes. Exchange ActiveSync is used by mobile devices to synchronize data between the device and the Exchange Online mailbox.
 
-To disable ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Office 365](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
+To disable ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
 
 To disable other types of access to a mailbox, see:
 

@@ -16,7 +16,7 @@ search.appverid:
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
-description: Learn about Office 365 threat protection and configure how to use it for your organization.
+description: "Admins can learn about threat protection in Microsoft 365 and configure how to use it for your organization."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -174,7 +174,7 @@ The following procedure describes how to configure an ATP anti-phishing policy. 
 
 5. Close the default policy settings page.
 
-To learn more about your anti-phishing policy options, see [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).
+To learn more about your anti-phishing policy options, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
 
 ## Part 4 - Anti-spam protection
 
@@ -192,7 +192,7 @@ To learn more about your anti-phishing policy options, see [Configure ATP anti-p
 
 4. Click **Save**.
 
-To learn more about your anti-spam policy options, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+To learn more about your anti-spam policy options, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## Part 5 - Additional settings to configure
 

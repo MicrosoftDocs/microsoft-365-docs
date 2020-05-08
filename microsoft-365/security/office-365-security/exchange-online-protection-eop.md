@@ -45,7 +45,7 @@ The Help content for EOP administrators consists of the following top-level cate
 
 - [Messaging policy and compliance in EOP](messaging-policy-and-compliance-in-eop.md): Describes how to use Exchange mail flow rules (also known as transport rules) to enforce specific company regulations and policies, and how to use auditing reports to track configuration changes to the service.
 
-- [Anti-spam and anti-malware protection in Office 365](anti-spam-and-anti-malware-protection.md): Describes spam filtering and malware filtering and shows how to customize them to best meet the needs of your organization. Also describes tasks that administrators and end users can perform on quarantined messages.
+- [Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md): Describes spam filtering and malware filtering and shows how to customize them to best meet the needs of your organization. Also describes tasks that administrators and end users can perform on quarantined messages.
 
 - [Reporting and message trace in Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md): Describes the reports and troubleshooting tools that are available.
 

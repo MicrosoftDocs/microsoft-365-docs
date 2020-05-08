@@ -61,7 +61,7 @@ This is the first level of navigation for most of the tasks you'll perform in th
 - **Protection**: This is where you can manage anti-malware policies, the default connection filter policy, and DKIM.
 
   > [!NOTE]
-  > You should manage anti-malware policies and the default connection filter policy in the Office 365 Security & Compliance Center. For more information, see [Configure anti-malware policies](configure-anti-malware-policies.md) and [Configure connection filtering](configure-the-connection-filter-policy.md).
+  > You should manage anti-malware policies and the default connection filter policy in the Security & Compliance Center. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) and [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
 
 - **Mail Flow**: This is where you'll manage mail flow rules (also known as transport rules), accepted domains, and connectors, as well as where you can go to run message trace.
 

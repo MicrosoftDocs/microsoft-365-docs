@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 # Use mail flow rules to set the spam confidence level (SCL) in messages in EOP
 
-In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP uses anti-spam policies (also known as spam filter policies or content filter policies) to scan inbound messages for spam. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 If you want to mark specific messages as spam before they're even scanned by spam filtering, or mark messages so they'll skip spam filtering, you can create mail flow rules (also known as transport rules) to identify the messages and set the spam confidence level (SCL). For more information about the SCL, see [Spam confidence level (SCL) in EOP](spam-confidence-levels.md).
 
@@ -52,7 +52,7 @@ If you want to mark specific messages as spam before they're even scanned by spa
    - **Bypass spam filtering**: This sets the SCL to -1, which means the messages will skip spam filtering.
 
      > [!CAUTION]
-     > Be very careful about allowing messages to skip spam filtering. Attackers can use this vulnerability to send phishing and other malicious messages into your organization. The mail flow rules requires more than just the sender's email address or domain. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+     > Be very careful about allowing messages to skip spam filtering. Attackers can use this vulnerability to send phishing and other malicious messages into your organization. The mail flow rules requires more than just the sender's email address or domain. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
    - **0 to 4**: The message is sent through spam filtering for additional processing.
 
