@@ -564,7 +564,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - 8888888888
 - 9999999999
 
-## Austria drivers license number
+## Austria driver's license number
 This sensitive information type entity is included in the EU Driver's License Number bundle.
 
 ### Format
@@ -768,7 +768,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - soziale sicherheit kein
 - versicherungsnummer
 
-## Austria tax ID number
+## Austria tax identification number
 This sensitive information type entity is included in the EU Tax ID number bundle.
 ### Format
 
@@ -1361,7 +1361,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fuehrerschein- Nr
 - fuehrerschein- nr
 
-## Belgium national ID number
+## Belgium national identification number
 This sensitive information type entity is included in the EU National identification number bundle.
 
 ### Format
@@ -1502,7 +1502,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - reisepass kein
 - reisepass
 
-## Belgium social security number or equivalent ID
+## Belgium social security number or equivalent identification number
 This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
 
 ### Format
@@ -1795,7 +1795,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Inscrição 
 - Empresa 
    
-## Brazil national ID card (RG)
+## Brazil national identification card (RG)
 
 ### Format
 
@@ -3098,7 +3098,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - vozačka dozvola
 
-## Croatia Identity Card Number
+## Croatia identity card number
 This sensitive information type entity is included in the EU National identification number bundle.
 
 ### Format
@@ -3162,7 +3162,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
-# Croatia passport number
+## Croatia passport number
 This sensitive information type entity is included in the EU Passport Number bundle.
 
 ### Format
@@ -3203,7 +3203,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - broj putovnice
 
    
-## Croatia Personal Identification (OIB) Number
+## Croatia personal identification (OIB) number
 
 ### Format
 
@@ -3981,7 +3981,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - pas
 - pasnummer
 
-## Denmark Personal Identification Number
+## Denmark personal identification number
 This sensitive information type entity is included in the EU National identification number bundle.
 
 ### Format
@@ -4226,7 +4226,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 
 
-## Drug Enforcement Agency (DEA) Number
+## Drug Enforcement Agency (DEA) number
 
 ### Format
 
@@ -4920,7 +4920,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - ajokortti
 
-## Finland National ID
+## Finland national identification number
 This sensitive information type entity is included in the EU National Identification Number bundle.
 
 ### Format
@@ -5006,7 +5006,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - verotunniste
 - verotunnus
 
-## Finland Passport Number
+## Finland passport number
 This sensitive information type entity is included in the EU Passport Number bundle.
 
 ### Format
@@ -5210,7 +5210,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - verotunnus
 
 
-## France Driver's License Number
+## France driver's license number
 This sensitive information type entity is included in the EU Driver's License bundle.
 
 ### Format
@@ -5260,7 +5260,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - licence numbers
 - license numbers
 
-## France National ID Card (CNI)
+## France national identification card (CNI)
 This sensitive information type entity is included in the EU National Identification Number bundle.
 
 ### Format
@@ -5304,7 +5304,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - numéro de carte vitale
 
    
-## France Passport Number
+## France passport number
 This sensitive information type entity is included in the EU Passport Number bundle.
 
 ### Format
@@ -5362,7 +5362,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeportn °
 
       
-## France Social Security Number (INSEE) or equivalent identification
+## France social security number (INSEE) or equivalent identification
 This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
 
 ### Format
@@ -7180,7 +7180,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - מספר זהות 
 - National ID Number
    
-## Italy river's license number
+## Italy driver's license number
 This sensitive information type entity is included in the EU Driver's License bundle.
 
 ### Format
@@ -7656,7 +7656,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - パスポートのNum 
 - パスポート＃ 
 
-## Japanese residence card number
+## Japan residence card number
 
 ### Format
 
@@ -8112,7 +8112,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 - voter’s number
 
-## Lithuania drivers license number
+## Lithuania driver's license number
 This sensitive information type entity is included in the EU Driver's License bundle.
 
 ### Format
@@ -9331,7 +9331,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Identity Card 
 - Pinag-isang Multi-Layunin ID
 
-## Poland drive's license number
+## Poland driver's license number
 This sensitive information type entity is included in the EU Driver's License bundle.
 
 ### Format
@@ -11236,7 +11236,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - körkort
 
-## Sweden National ID
+## Sweden national identification number
 This sensitive information type entity is included in the EU National Identification Number bundle.
 ### Format
 
@@ -11273,7 +11273,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 No
    
-## Sweden Passport Number
+## Sweden passport number
 This sensitive information type entity is included in the EU Passport Number bundle.
 ### Format
 
@@ -11552,7 +11552,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - \# BIC 
 - code identificateur de banque 
    
-## Taiwan national idnetification number
+## Taiwan national identification number
 
 ### Format
 
@@ -11605,7 +11605,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - 簽名或蓋章 
 - 簽章   
    
-## Taiwan Passport Number
+## Taiwan passport number
 
 ### Format
 
