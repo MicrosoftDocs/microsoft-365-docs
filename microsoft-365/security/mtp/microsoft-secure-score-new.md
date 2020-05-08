@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score (preview)
+title: Microsoft Secure Score new
 description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect using it.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: w10
@@ -19,10 +19,12 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft Secure Score (preview)
+# Microsoft Secure Score (new)
 
 >[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+>This new iteration of Microsoft Secure Score is replacing the previous iteration with new design elements and features over the next few months
+>
+>If you DO NOT see a **Metrics & trends** tab next to History, you are in the previous iteration. [Go to Microsoft Secure Score (previous iteration)](microsoft-secure-score.md)
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
@@ -98,8 +100,8 @@ To help you the information you need more quickly, Microsoft improvement actions
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../../media/secure-score/secure-score-homepage.png)
-*Figure 1: Microsoft Secure Score overview page*
+![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
+
 
 ## Take action to improve your score
 
@@ -171,32 +173,12 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### April 2020
+- Added Azure Active Directory improvement actions
+- Added Azure Advanced Threat Protection improvement actions
+- Support for Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
+    - All released security recommendations supplied by TVM are now available
 
-#### Added Azure Active Directory improvement action
-
-- Do not allow users to grant consent to unmanaged applications (currently available in released version)
-
-#### Added Azure Advanced Threat Protection improvement actions
-
-- Disable Print spooler service on domain controllers
-- Modify unsecure Kerberos delegations to prevent impersonation
-- Protect and manage local admin passwords with Microsoft LAPS
-- Reduce lateral movement path risk to sensitive entities
-- Remove dormant accounts from sensitive groups
-- Remove unsecure SID history attributes from entities
-- Resolve unsecure account attributes
-- Stop clear text credentials exposure
-- Stop legacy protocols communication
-- Stop weak cipher usage
-
-#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
-
-All released security recommendations supplied by TVM are now available.
-
-### January - March 2020
-
-#### Updated interface and functionality
+### Updated interface and functionality
 
 * All new metrics and trends views for CISO and lead level discussions
 * New ways to track and benchmark your score
@@ -204,16 +186,6 @@ All released security recommendations supplied by TVM are now available.
 * Filter, tag, search, and group your improvement actions
 * Manage towards your future goals using score projections and planned actions
 * And more!
-
-#### Removed "not scored" and "review" improvement actions
-
-One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.
-
-For these reasons, all improvement actions that were not scored or required a review cadence have been temporarily removed. No action is needed on your part.
-
-#### Simplification of the point system
-
-To standardize points across multiple experiences, each Secure Score improvement action point total has been updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.
 
 ## We want to hear from you
 
