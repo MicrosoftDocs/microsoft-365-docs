@@ -129,7 +129,7 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Sensitive information types
       items: 
-        - name: What the sensitive information types look for
+        - name: Sensitive information type entity definitions
           href: what-the-sensitive-information-types-look-for.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
