@@ -57,7 +57,7 @@ Preparation is key to any successful deployment. In this article, you'll be guid
 ## Microsoft Threat Protection pillars
 Microsoft Threat Protection consists of four pillars. Although one pillar can already provide value to your network organization's security, enabling the four Microsoft Threat Protection pillars will give your organization the most value.
 
-![Image of_page](../../media/mtp-eval-31.png) <br>
+![Image of_Microsoft Threat Protection solution for users, Azure Advanced Threat Protection, for endpoints Microsoft Defender Advanced Threat Protection, for cloud apps, Microsoft Cloud App Security, and for data, Office 365 Advanced Threat Protection  ](../../media/mtp-eval-31.png) <br>
 
 This section will guide you to configure:
 -	Office 365 Advanced Threat Protection
@@ -73,42 +73,42 @@ This section will guide you to configure:
 There is a PowerShell Module called the *Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)* that helps determine some of these settings. When run as an administrator in your tenant, get-ORCAReport will help generate an assessment of the anti-spam, anti-phish, and other message hygiene settings. You can download this module from https://www.powershellgallery.com/packages/ORCA/. 
 
 1. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Policy**.
-![Image of_page](../../media/mtp-eval-32.png) <br>
+![Image of_Office 365 Security & Compliance Center Threat management policy page](../../media/mtp-eval-32.png) <br>
  
 2. Click **ATP anti-phishing**, select **Create** and fill in the policy name and description. Click **Next**.
-![Image of_page](../../media/mtp-eval-33.png) <br>
+![Image of_Office 365 Security & Compliance Center anti-phishing policy page where you can name your policy](../../media/mtp-eval-33.png) <br>
 
 >[!NOTE]
 >Edit your Advanced ATP anti-phishing policy. Change **Advanced Phishing Threshold** to **2 - Aggressive**.
 <br>
 
 3. Click the **Add a condition** drop-down menu and select your domain(s) as recipient domain. Click **Next**.
-![Image of_page](../../media/mtp-eval-34.png) <br>
+![Image of_Office 365 Security & Compliance Center anti-phishing policy page where you can add a condition for its application](../../media/mtp-eval-34.png) <br>
  
 4. Review your settings. Click **Create this policy** to confirm. 
-![Image of_page](../../media/mtp-eval-35.png) <br>
+![Image of_Office 365 Security & Compliance Center anti-phishing policy page where you can review your settings and click the create this policy button](../../media/mtp-eval-35.png) <br>
  
 5. Select **ATP Safe attachments** and select the **Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** option.  
-![Image of_page](../../media/mtp-eval-36.png) <br>
+![Image of_Office 365 Security & Compliance Center page where you can turn on ATP for SharePoint, OneDrive, and Microsoft Teams](../../media/mtp-eval-36.png) <br>
 
 6. Click the + icon to create a new safe attachment policy, apply it as recipient domain to your domains. Click **Save**.
-![Image of_page](../../media/mtp-eval-37.png) <br>
+![Image of_Office 365 Security & Compliance Center page where you can create a new create a new safe attachment policy](../../media/mtp-eval-37.png) <br>
  
 7. Next, select the **ATP Safe Links** policy, then click the pencil icon to edit the default policy.
 
 8. Make sure that the **Do not track when users click safe links** option is not selected, while the rest of the options are selected. See [Safe Links settings](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp?view=o365-worldwide) for details. Click **Save**. 
-![Image of_page](../../media/mtp-eval-38.png) <br>
+![Image of_Office 365 Security & Compliance Center page which shows that the option Do not track when users click safe is not selected](../../media/mtp-eval-38.png) <br>
 
 9. Next select the **Anti-malware** policy, select the default, and choose the pencil icon.
 
 10. Click **Settings** and select **Yes and use the default notification text** to enable **Malware Detection Response**. Turn the **Common Attachment Types Filter** on. Click **Save**.
-<br>![Image of_page](../../media/mtp-eval-39.png) <br>
+<br>![Image of_Office 365 Security & Compliance Center page which shows that the malware detection response is turned on with default notification and the common attachment types filter is turned on](../../media/mtp-eval-39.png) <br>
   
 11. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Search** > **Audit log search** and turn Auditing on.  
-![Image of_page](../../media/mtp-eval-40.png) <br>
+![Image of_Office 365 Security & Compliance Center page where you can turn on the Audit log search](../../media/mtp-eval-40.png) <br>
 
 12. Integrate Office 365 ATP with Microsoft Defender ATP. Navigate to [Office 365 Security & Compliance Center](https://protection.office.com/homepage) > **Threat management** > **Explorer** and select **WDATP Settings** on the upper right corner of the screen. In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.
-![Image of_page](../../media/mtp-eval-41.png) <br>
+![Image of_Office 365 Security & Compliance Center page where you can turn Windows Defender ATP connection on](../../media/mtp-eval-41.png) <br>
 
 ## Configure Azure Advanced Threat Protection
 >[!NOTE]
@@ -116,25 +116,25 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > select **More Resources** > **Azure Advanced Threat Protection**.
-![Image of_page](../../media/mtp-eval-42.png) <br>
+![Image of_Microsoft 365 Security Center page where there's an option to open Azure Advanced Threat Protection](../../media/mtp-eval-42.png) <br>
 
 2. Click **Create** to start the Azure Advanced Threat Protection wizard. 
-<br>![Image of_page](../../media/mtp-eval-43.png) <br>
+<br>![Image of_Azure Advanced Threat Protection wizard page where you should click Create button](../../media/mtp-eval-43.png) <br>
 
 3. Choose **Provide a username and password to connect to your Active Directory forest**.  
-![Image of_page](../../media/mtp-eval-44.png) <br>
+![Image of_Azure Advanced Threat Protection welcome page](../../media/mtp-eval-44.png) <br>
 
 4. Enter your Active Directory on-premises credentials. This can be any user account that has read access to Active Directory.
-![Image of_page](../../media/mtp-eval-45.png) <br>
+![Image of_Azure Advanced Threat Protection Directory services page where you should put your credentials](../../media/mtp-eval-45.png) <br>
 
 5. Next, choose **Download Sensor Setup** and transfer file to your domain controller. 
-![Image of_page](../../media/mtp-eval-46.png) <br>
+![Image of_Azure Advanced Threat Protection page where you can select Download Sensor Setup](../../media/mtp-eval-46.png) <br>
 
 6. Execute the Azure ATP Sensor Setup and begin following the wizard.
-<br>![Image of_page](../../media/mtp-eval-47.png) <br>
+<br>![Image of_Azure Advanced Threat Protection page where you should click next to follow the Azure ATP sensor wizard](../../media/mtp-eval-47.png) <br>
  
 7. Click **Next** at the sensor deployment type.
-<br>![Image of_page](../../media/mtp-eval-48.png) <br>
+<br>![Image of_Azure Advanced Threat Protection page where you should click next to follow the Azure ATP sensor wizard](../../media/mtp-eval-48.png) <br>
  
 8. Copy the access key as you will need to enter it next in the Wizard.
 ![Image of_page](../../media/mtp-eval-49.png) <br>
