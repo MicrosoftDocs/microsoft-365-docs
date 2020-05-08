@@ -1,6 +1,6 @@
 ---
-title: Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
+title: Microsoft Secure Score (previous iteration)
+description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,7 +19,12 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft Secure Score
+# Microsoft Secure Score (previous iteration)
+
+>[!IMPORTANT]
+>This iteration of Microsoft Secure Score is being replaced with new design elements and features over the next few months. If you do not already see the newest iteration, you will soon.
+>
+>If you see a **Metrics & trends** tab next to History, you are in the new iteration. [Go to Microsoft Secure Score (new)](microsoft-secure-score-new.md)
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
