@@ -105,38 +105,32 @@
                   items:
                     - name: Understand the schema
                       href: mtp/advanced-hunting-schema-tables.md
-                    - name: AlertInfo
-                      href: mtp/advanced-hunting-alertinfo-table.md
                     - name: AlertEvidence
                       href: mtp/advanced-hunting-alertevidence-table.md
-                    - name: IdentityInfo
-                      href: mtp/advanced-hunting-identityinfo-table.md
-                    - name: EmailEvents
-                      href: mtp/advanced-hunting-emailevents-table.md
-                    - name: EmailAttachmentInfo
-                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
-                    - name: EmailUrlInfo
-                      href: mtp/advanced-hunting-emailurlinfo-table.md
-                    - name: DeviceInfo
-                      href: mtp/advanced-hunting-deviceinfo-table.md
-                    - name: DeviceNetworkInfo
-                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
-                    - name: DeviceProcessEvents
-                      href: mtp/advanced-hunting-deviceprocessevents-table.md
-                    - name: DeviceNetworkEvents
-                      href: mtp/advanced-hunting-devicenetworkevents-table.md
-                    - name: DeviceFileEvents
-                      href: mtp/advanced-hunting-devicefileevents-table.md
-                    - name: DeviceRegistryEvents
-                      href: mtp/advanced-hunting-deviceregistryevents-table.md
-                    - name: DeviceLogonEvents
-                      href: mtp/advanced-hunting-devicelogonevents-table.md
-                    - name: DeviceImageLoadEvents
-                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: AlertInfo
+                      href: mtp/advanced-hunting-alertinfo-table.md
+                    - name: AppFileEvents
+                      href: mtp/advanced-hunting-appfileevents-table.md
                     - name: DeviceEvents
                       href: mtp/advanced-hunting-deviceevents-table.md
                     - name: DeviceFileCertificateInfo
                       href: mtp/advanced-hunting-devicefilecertificateinfo-table.md
+                    - name: DeviceFileEvents
+                      href: mtp/advanced-hunting-devicefileevents-table.md
+                    - name: DeviceImageLoadEvents
+                      href: mtp/advanced-hunting-deviceimageloadevents-table.md
+                    - name: DeviceInfo
+                      href: mtp/advanced-hunting-deviceinfo-table.md
+                    - name: DeviceLogonEvents
+                      href: mtp/advanced-hunting-devicelogonevents-table.md
+                    - name: DeviceNetworkEvents
+                      href: mtp/advanced-hunting-devicenetworkevents-table.md
+                    - name: DeviceNetworkInfo
+                      href: mtp/advanced-hunting-devicenetworkinfo-table.md
+                    - name: DeviceProcessEvents
+                      href: mtp/advanced-hunting-deviceprocessevents-table.md
+                    - name: DeviceRegistryEvents
+                      href: mtp/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
                       href: mtp/advanced-hunting-tvm-configassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
@@ -144,9 +138,15 @@
                     - name: DeviceTvmSoftwareInventoryVulnerabilities
                       href: mtp/advanced-hunting-tvm-softwareinventory-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
-                    - name: AppFileEvents
-                      href: mtp/advanced-hunting-appfileevents-table.md
+                      href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md			  
+                    - name: EmailAttachmentInfo
+                      href: mtp/advanced-hunting-emailattachmentinfo-table.md
+                    - name: EmailEvents
+                      href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailUrlInfo
+                      href: mtp/advanced-hunting-emailurlinfo-table.md
+                    - name: IdentityInfo
+                      href: mtp/advanced-hunting-identityinfo-table.md
                     - name: IdentityLogonEvents
                       href: mtp/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
