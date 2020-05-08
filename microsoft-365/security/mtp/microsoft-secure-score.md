@@ -1,5 +1,5 @@
 ---
-title: Microsoft Secure Score (pervious iteration)
+title: Microsoft Secure Score (previous iteration)
 description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft Secure Score (pervious iteration)
+# Microsoft Secure Score (previous iteration)
 
 >[!IMPORTANT]
 >This iteration of Microsoft Secure Score is being replaced with new design elements and features over the next few months. If you do not already see the newest iteration, you will soon.
