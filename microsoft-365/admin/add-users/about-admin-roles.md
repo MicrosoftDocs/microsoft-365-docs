@@ -24,10 +24,18 @@ ms.custom: okr_smb
 
 # About admin roles
 
-Your subscription comes with a set of admin roles that you can assign to users in your organization. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. For more information, see [Assign admin roles](assign-admin-roles.md)
+Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
+
+The Microsoft 365 admin center lets you manage Azure AD roles and Microsoft Intune roles. However, these roles are a subset of the roles available in the Azure AD portal and the Intune admin center.
+
+Looking for the detailed role descriptions for Azure AD? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+
+Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/role-based-access-control).
 
 > [!TIP] 
-> Looking for the detailed role descriptions? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+> Looking for the detailed role descriptions for Azure AD? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+
+For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
 ## Things to consider...
 
@@ -46,21 +54,15 @@ By default, we first show roles that most organizations use. If you can't find a
 ## How can I tell which permissions are assigned to me?
 If you get a message in the admin center telling you that you don't have permissions to edit a setting or page, it's because you are assigned a role that doesn't have that permission.
 
-## What about the Azure Active Directory roles?
+## Azure AD Roles available in the Microsoft 365 admin center
 
-The Azure portal has more roles than available in the Microsoft 365 admin center. If you have a large business, there might be roles in the Azure portal that meet your organizational needs.
-
-For a list and description of all the Azure Active Directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+The Microsoft 365 admin center lets you manage over 30 Azure AD roles. However, these roles are a subset of the roles available in the Azure portal. If you have a large business, there might be roles in the Azure portal that meet your organizational needs.
 
 A user who is assigned an admin role will have the same level of access to cloud services that your organization has subscribed to, regardless of whether you assign the role in the Microsoft 365 admin center or the Azure portal, or by using the Azure AD module for Windows PowerShell.
-  
-## Roles available in the Microsoft 365 admin center
-
-The Microsoft 365 admin center lets you manage over 30 Azure AD roles. However, these roles are a subset of the roles available in the Azure portal.
 
 ::: moniker range="o365-worldwide"
 
-In the admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permission to do.
+In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permission to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
 
 ::: moniker-end
 
@@ -79,7 +81,7 @@ You'll probably only need to assign the following roles in your organization. (F
 |Teams service admin    |   Assign the Teams service admin role to users who need to access and manage the Teams admin center. <br><br>Teams service admins can also: <br> - Manage meetings <br> - Manage conference bridges <br> - Manage all org-wide settings, including federation, teams upgrade, and teams client settings   |
 |User admin     |    Assign the User admin role to users who need to do the following for all users: <br> - Add users and groups <br> - Assign licenses <br> - Manage most users properties <br> - Create and manage user views <br> - Update password expiration policies <br> - Manage service requests <br> - Monitor service health <br><br>  The user admin can also do the following actions for users who aren't admins and for users assigned the following roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, Reports reader: <br> - Manage usernames<br> - Delete and restore users<br> - Reset passwords <br> - Force users to sign out <br> - Update (FIDO) device keys   |
 
-### All roles
+### All Azure AD roles
 
  Here's a list of all the admin roles available in the Microsoft 365 admin center.
 
@@ -129,6 +131,17 @@ You'll probably only need to assign the following roles in your organization. (F
 |Teams communication support engineer     |    Reads call record details for all call participants to troubleshoot communication issues.     |
 |Teams communication support specialist     |    Reads user call details only for a specific user to troubleshoot communication issues.|
 |User admin     |   Resets user passwords, creates and manages users and groups, including filters, manages service requests, and monitors service health.|
+
+## Microsoft Intune Roles available in the Microsoft 365 admin center
+
+|Admin role     |Who should be assigned this role?  |
+|---------|---------|
+|Application manager     |   Assign the Application manager role to users who mangage the application lifecycle for mobile apps, configures policy-managed apps and views device info and configuration profiles.  |
+|Help desk operator     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
+|Intune role administrator    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
+|Policy and profile manager     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |
+|Read only operator     |   Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.   |
+|School administrator     |   Assign the school administrator role to users for full access to manage Windows 10 and iOS devices, apps and configurations in Intune for Education.   |
 
 ## Delegated administration for Microsoft Partners
 
