@@ -14,8 +14,8 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: 
 - M365solutions
+ms.custom: 
 description: Train your users and ensure that issues are dealt with quickly.
 ---
 

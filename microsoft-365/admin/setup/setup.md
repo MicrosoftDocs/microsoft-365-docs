@@ -280,7 +280,7 @@ Need more detailed steps or want to install the 64-bit version of Office? See [S
 
 Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
   
-Get the steps for your device: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.office.com/article/9bccc8b8-a321-4d0d-a45e-6e06a3438e43.aspx)
+Get the steps for your device: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/en-us/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ### 4. Store files online
 
@@ -308,7 +308,7 @@ To take a tour of Microsoft 365 and learn how to use all the Office mobile apps,
 
 - **Get help?** If you want help with a more advanced deployment, **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** is a great place to start. You can also [find a partner](https://go.microsoft.com/fwlink/p/?linkid=391089) to help you.
 
-- **Plan** These tools and resources will help you get your network, directory, and users ready for Office 365: [Get your organization ready for Office 365 Enterprise](https://support.office.com/article/712fced7-f9d0-4fde-8b79-286262a5d0bc).
+- **Plan** These tools and resources will help you get your network, directory, and users ready for Office 365: [Get your organization ready for Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/get-your-organization-ready-for-office-365).
 
 ### 1. Add your school domain or connect your directory
 
@@ -334,25 +334,25 @@ If you're using Office 365 operated by 21Vianet, go to [this admin center.](http
 
 To start the wizard, select **Go to setup**.
 
-For a walkthrough of what happens when you run the wizard, see [Using the setup wizard](https://support.office.com/article/3c62a3b7-1680-41ca-943c-0ff01566bace.aspx).
+For a walkthrough of what happens when you run the wizard, see [Using the setup wizard](https://docs.microsoft.com/microsoft-365/admin/setup/plan-your-setup).
   
-If you want to synchronize your users from an on-premises directory or use Single Sign-On, **do not use the setup wizard to add users**. Instead, read this guide to understand your options: [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9). You'll either set up:
+If you want to synchronize your users from an on-premises directory or use Single Sign-On, **do not use the setup wizard to add users**. Instead, read this guide to understand your options: [Understanding Office 365 identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity). You'll either set up:
   
-- [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Sync). Synchronizes with an on-premises directory. You manage your users on-premises. You can also synchronize passwords so that the users have the same password on-premises and in the cloud, but they will have to sign in again to use Office 365.
+- [Understanding Office 365 identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Sync). Synchronizes with an on-premises directory. You manage your users on-premises. You can also synchronize passwords so that the users have the same password on-premises and in the cloud, but they will have to sign in again to use Office 365.
 
-- [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/06a189e7-5ec6-4af2-94bf-a22ea225a7a9#BK_Federated). Synchronizes with an on-premises directory. You manage your users on-premises. Users can have the same password on-premises and in the cloud, and they do not have to sign in again to use Office 365. This is often referred to as single sign-on.
+- [Understanding Office 365 identity and Azure Active Directory](https://docs.microsoft.com/office365/enterprise/about-office-365-identity#BK_Federated). Synchronizes with an on-premises directory. You manage your users on-premises. Users can have the same password on-premises and in the cloud, and they do not have to sign in again to use Office 365. This is often referred to as single sign-on.
 
 ### 2. Set up services
 
-Set up email, file sharing, instant messaging, and other Office 365 services and applications: [Configure Office 365 Enterprise services and applications](https://support.office.com/article/7cec08a5-97fd-4761-b23b-ef3d66519e30).
+Set up email, file sharing, instant messaging, and other Office 365 services and applications: [Configure Office 365 Enterprise services and applications](https://docs.microsoft.com/office365/enterprise/configure-services-and-applications).
   
 In this step, you can install Office 365 on up to 5 PCs and laptops per person.
   
 ### 3. Migrate data
 
-Once the services are configured, you can start migrating data, like email and files: [Migrate your organization data to Office 365 Enterprise](https://support.office.com/article/e2fdfc8d-547e-4419-8628-2738ed4e0f46).
+Once the services are configured, you can start migrating data, like email and files: [Migrate your organization data to Office 365 Enterprise](https://docs.microsoft.com/office365/enterprise/migrate-data-to-office-365).
   
-If you use Student Information System (SIS) for your students and staff, learn about [setting up SIS integration](https://support.office.com/article/f3d1147b-4ade-4905-8518-508e729f2e91.aspx).
+If you use Student Information System (SIS) for your students and staff, learn about [setting up SIS integration](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
   
 ### Train your users
 
