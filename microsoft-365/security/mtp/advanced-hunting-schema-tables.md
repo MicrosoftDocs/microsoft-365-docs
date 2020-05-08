@@ -30,8 +30,8 @@ The [advanced hunting](advanced-hunting-overview.md) schema is made up of multip
 
 The following reference lists all the tables in the schema. Each table name links to a page describing the column names for that table. Table and column names are also listed in the security center as part of the the schema representation on the advanced hunting screen.
 
-| Group | Table name | Description |
-|------------|------------|-------------|
+| Table name | Description |
+|------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Files, IP addresses, URLs, users, or devices associated with alerts |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Alerts from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP, including severity information and threat categorization  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | File-related activities in cloud apps and services |
