@@ -58,7 +58,7 @@ If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365 
 
 Check out this list of common errors and solutions: [Problems with your product key?](product-key-errors-and-solutions.md)
   
-Partners, see [Partners: use a product key to set up a customer subscription](https://support.office.com/article/cf22c50f-95c9-4fa2-b959-c264de256d40.aspx).
+Partners, see [Partners: use a product key to set up a customer subscription](https://support.microsoft.com/en-us/office/partners-use-a-product-key-to-set-up-a-customer-subscription-cf22c50f-95c9-4fa2-b959-c264de256d40).
   
 Volume licensing customers can learn more by visiting [Microsoft Volume Licensing Service Center training and resources](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
