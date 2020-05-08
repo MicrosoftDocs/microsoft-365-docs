@@ -85,7 +85,7 @@ In this phase, you'll be guided to:
  
 6. Set up the first identity which will be a Global Administrator for the tenant. Fill in **Name** and **Password**. Click **Sign up**.
 ![Image of_Office 365 E5 trial registration setup page where you can set your business identity](../../media/mtp-eval-14.png) <br>
-c
+
 7. Click **Go to Setup** to complete the Office 365 E5 trial tenant provisioning.
 <br>![Image of Office 365 E5 trial registration setup page prompting to click Go Setup button](../../media/mtp-eval-15.png) <br>
 
