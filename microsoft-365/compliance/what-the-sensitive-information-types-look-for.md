@@ -3636,7 +3636,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - cestovní pas
 - pas
 
-## Czech Personal Identity Number
+## Czech personal identity number
+This sensitive information type entity is included in the EU National Identification Number bundle.
 
 ### Format
 
@@ -4515,7 +4516,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin no
 - tin#
 
-## EU Debit Card Number
+## EU debit card number
 
 ### Format
 
@@ -5648,6 +5649,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 ## Germany identity card number
 This sensitive information type entity is included in the EU National Identification Number bundle.
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
 
 ### Format
 
@@ -12529,11 +12531,4 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeport# 
 - PasseportNon 
 - Passeportn ° 
-   
-
-
-   
-    
-   
-
    
