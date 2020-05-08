@@ -9588,7 +9588,9 @@ nip#
 - vatno#
    
 
-## Portugal Citizen Card Number
+## Portugal citizen card number
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is included in the EU National Identification Number bundle.
 
 ### Format
 
@@ -9622,13 +9624,466 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### Keyword_portugal_citizen_card
 
-- Citizen Card
-- National ID Card
-- CC
-- Cartão de Cidadão
-- Bilhete de Identidade
-   
-## Saudi Arabia National ID
+- bilhete de identidade
+- cartão de cidadão
+- citizen card
+- document number
+- documento de identificação
+- id number
+- identification no
+- identification number
+- identity card no
+- identity card number
+- national id card
+- nic
+- número bi de portugal
+- número de identificação civil
+- número de identificação fiscal
+- número do documento
+- portugal bi number
+
+
+## Portugal driver's license
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+Two letters followed by a seven numbers in the specified pattern
+  
+### Pattern
+
+Two letters followed by seven numbers with special characters:
+  
+- Two letters (not case-sensitive) 
+- A hyphen
+- Six digits
+- A space
+- One digit
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_portugal_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_portugal_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_portugal_eu_driver's_license_number" />
+          <Match idRef="Keywords_portugal_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_portugal_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- carteira de motorista
+
+## Portugal passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+One letter followed by six digits with no spaces or delimiters
+  
+### Pattern
+
+One letter followed by six digits:
+  
+- One letter (not case sensitive)
+- Six digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_portugal_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_portugal_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_portugal_eu_passport_number" />
+          <Match idRef="Keywords_portugal_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_portugal_eu_passport_number**
+
+passport number
+portuguese passport number
+passport no
+número do passaporte
+
+## Portugal tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+Nine digits with no spaces or delimiters
+  
+### Pattern
+
+Nine digits
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_portugal_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_portugal_eu_tax_file_number` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_portugal_eu_tax_file_number` finds content that matches the pattern. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_portugal_eu_tax_file_number" />
+          <Match idRef="Keywords_portugal_eu_tax_file_number" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_portugal_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_portugal_eu_tax_file_number
+
+- cpf#
+- cpf
+- nif#
+- nif
+- número de identificação fisca
+- numero fiscal
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
+## Romania driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+One character followed by eight digits
+  
+### Pattern
+
+One character followed by eight digits:
+  
+- One letter (not case-sensitive) or digit 
+- Eight digits
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_romania_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_romania_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_romania_eu_driver's_license_number" />
+          <Match idRef="Keywords_romania_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_romania_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- permis de conducere
+
+## Romania national identification number
+This sensitive information type entity is included in the EU National Identification Number bundle.
+
+### Format
+
+13 digits without spaces and delimiters
+  
+### Pattern
+
+13 digits
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_romania_eu_national_id_card` finds content that matches the pattern. 
+- A keyword from  `Keywords_romania_eu_national_id_card` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_romania_eu_national_id_card` finds content that matches the pattern. 
+    
+```xml
+ <!--Romania national identification number  -->
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_romania_eu_national_id_card" />
+          <Match idRef="Keywords_romania_eu_national_id_card" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_romania_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_romania_eu_national_id_card
+
+- cnp#
+- cnp
+- cod identificare personal
+- cod numeric personal
+- cod unic identificare
+- codnumericpersonal#
+- codul fiscal nr.
+- identificarea fiscală nr#
+- id-ul taxei
+- insurance number
+- insurancenumber#
+- national id#
+- national id
+- national identification number
+- număr identificare personal
+- număr identitate
+- număr personal unic
+- număridentitate#
+- număridentitate
+- numărpersonalunic#
+- numărpersonalunic
+- număru de identificare fiscală
+- numărul de identificare fiscală
+- personal numeric code
+- pin#
+- pin
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+- unique identification number
+- unique identity number
+- uniqueidentityno#
+- uniqueidentityno
+
+## Romania passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+Eight or nine digits without spaces and delimiters
+  
+### Pattern
+
+Eight or nine digits
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_romania_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_romania_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_romania_eu_passport_number" />
+          <Match idRef="Keywords_romania_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_romania_eu_passport_number**
+
+- passport number
+- romanian passport number
+- passport no
+- numărul pașaportului
+
+## Romania tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+13 digits with no spaces or delimiters
+  
+### Pattern
+
+13 digits
+  
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_romania_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_romania_eu_tax_file_number` is found. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_romania_eu_tax_file_number" />
+          <Match idRef="Keywords_romania_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_romania_eu_tax_file_number
+
+- cnp#
+- cnp
+- cod identificare personal
+- cod numeric personal
+- cod unic identificare
+- codnumericpersonal#
+- codul fiscal nr.
+- identificarea fiscală nr #
+- id-ul taxei
+- insurance number
+- insurancenumber#
+- national id#
+- national id
+- national identification number
+- număr identificare personal
+- număr identitate
+- număr personal unic
+- număridentitate#
+- număridentitate
+- numărpersonalunic#
+- numărpersonalunic
+- număru de identificare fiscală
+- numărul de identificare fiscală
+- personal numeric code
+- pin#
+- pin
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+- unique identification number
+- unique identity number
+- uniqueidentityno#
+- uniqueidentityno
+
+
+
+## Saudi Arabia national identification number
 
 ### Format
 
@@ -9670,7 +10125,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - الوطنية الهوية بطاقة رقم 
 
    
-## Singapore National Registration Identity Card (NRIC) Number
+## Singapore national registration identity card (NRIC) number
 
 ### Format
 
@@ -9723,7 +10178,271 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - FIN 
 - 身份证 
 - 身份證 
-   
+
+## Slovakia driver's license number
+This sensitive information type entity is included in the EU Driver's License bundle.
+
+### Format
+
+One character followed by seven digits
+  
+### Pattern
+
+One character followed by seven digits
+  
+- One letter (not case-sensitive) or digit
+-  Seven digits 
+    
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_slovakia_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovakia_eu_driver's_license_number` is found. 
+    
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_slovaknia_eu_driver's_license_number" />
+          <Match idRef="Keywords_slovakia_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_slovakia_eu_driver's_license_number**
+
+dl#
+driver license
+driver license number
+driver licence
+drivers lic.
+drivers license
+drivers licence
+driver's license
+driver's license number
+driver's licence number
+driving license number
+dlno#
+vodičský preukaz
+
+## Slovakia national identification number
+This sensitive information type entity is included in the EU National Identification Number bundle.
+
+### Format
+
+Ten digits containing one backslash
+  
+### Pattern
+
+Ten digits containing one backslash:
+  
+### Checksum
+
+Yes
+  
+### Definition
+
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_slovakia_eu_national_id_card` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovakia_eu_national_id_card` is found. 
+    
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The function  `Func_slovakia_eu_national_id_card` finds content that matches the pattern. 
+    
+```xml
+ <!-- Slovakia national identification number -->
+<Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_slovakia_eu_national_id_card" />
+          <Match idRef="Keywords_slovakia_eu_national_id_card" />
+        </Pattern>
+<Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_slovakia_eu_national_id_card" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_slovakia_eu_national_id_card
+
+- azonosító szám
+- birth number
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
+- id number
+- identification no
+- identification number
+- identifikačná karta č
+- identifikačné číslo
+- identity card no
+- identity card number
+- národná identifikačná značka č
+- national number
+- nationalnumber#
+- nemzeti személyazonosító igazolvány
+- personalidnumber#
+- rč
+- rodne cislo
+- rodné číslo
+- social security number
+- ssn#
+- ssn
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+## Slovakia passport number
+This sensitive information type entity is included in the EU Passport Number bundle.
+
+### Format
+
+One digit or letter followed by seven digits with no spaces or delimiters
+  
+### Pattern
+
+One digit or letter (not case sensitive) followed by seven digits
+  
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_slovakia_eu_passport_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovakia_eu_passport_number` is found. 
+    
+```xml
+ <!-- EU Passport Number -->
+<Entity id="21883626-6245-4f3d-9b61-5cbb43e625ee" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_slovakia_eu_passport_number" />
+          <Match idRef="Keywords_slovakia_eu_passport_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+**Keywords_slovakia_eu_passport_number**
+
+- passport number
+- slovakian passport number
+- passport no
+- číslo pasu
+
+## Slovakia tax identification number
+This sensitive information type entity is included in the EU Tax Identification Number bundle.
+
+### Format
+
+10 digits with no spaces or delimiters
+  
+### Pattern
+
+10 digits
+  
+### Checksum
+
+Not applicable
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_slovakia_eu_tax_file_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_slovakia_eu_tax_file_number` is found. 
+    
+```xml
+ <!-- EU Tax File Number -->
+<Entity id="e09c07d3-66e5-4783-989d-49ac62748f5f" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_slovakia_eu_tax_file_number" />
+          <Match idRef="Keywords_slovakia_eu_tax_file_number" />
+        </Pattern>
+</Entity>
+```
+
+### Keywords
+
+#### Keywords_slovakia_eu_tax_file_number
+
+- azonosító szám
+- birth number
+- číslo národnej identifikačnej karty
+- číslo občianského preukazu
+- daňové číslo
+- id number
+- identification no
+- identification number
+- identifikačná karta č
+- identifikačné číslo
+- identity card no
+- identity card number
+- národná identifikačná značka č
+- national number
+- nationalnumber#
+- nemzeti személyazonosító igazolvány
+- personalidnumber#
+- rč
+- rodne cislo
+- rodné číslo
+- social security number
+- ssn#
+- ssn
+- személyi igazolvány szám
+- személyi igazolvány száma
+- személyigazolvány szám
+- tax file no
+- tax file number
+- tax id
+- tax identification no
+- tax identification number
+- tax no#
+- tax no
+- tax number
+- tax registration number
+- taxid#
+- taxidno#
+- taxidnumber#
+- taxno#
+- taxnumber#
+- taxnumber
+- tin id
+- tin no
+- tin#
+
+
 ## South Africa Identification Number
 
 ### Format
