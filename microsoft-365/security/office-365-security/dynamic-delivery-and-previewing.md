@@ -17,6 +17,7 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: "When you set up your ATP safe attachments policies, you choose Dynamic Delivery to avoid message delays and enable people to preview attachments that are being scanned."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Dynamic Delivery and previewing with ATP Safe Attachments

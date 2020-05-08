@@ -321,7 +321,7 @@
     },
     {
       "source_path": "microsoft-365/security/office-365-security/index.md",
-      "redirect_url": "eop-features",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
       "redirect_document_id": false
     },
     {
@@ -594,16 +594,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/security/office-365-security/unverified-sender-feature.md",
-      "redirect_url": "https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/admin/dns/add-or-edit-custom-dns-records.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/setup/add-domain",
       "redirect_document_id": true
@@ -612,6 +602,41 @@
       "source_path": "microsoft-365/compliance/disposition-reviews.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/disposition",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-teams-three-tiers.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-teams-retention-DLP.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/secure-files-in-teams.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-teams-sensitivity-labels.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/secure-teams-highly-regulated-data-scenario.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/go-to-the-securitycompliance-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-a-custom-blocked-urls-list-atp",
+      "redirect_document_id": true
     }
   ]
 }

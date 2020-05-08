@@ -15,7 +15,8 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: "A brief explanation of how Microsoft encrypts data in transit in its data centers."
+description: In this article, find a brief explanation of how Microsoft encrypts Microsoft 365 customer data in transit.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Encryption for data in transit

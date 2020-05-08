@@ -84,7 +84,7 @@ On this new **Site and group settings** page, configure the settings:
 
 - **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. 
 
-![The site and group settings tab](../media/edit-sensitivity-label-site-group.png)
+![The site and group settings tab](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
 > Only these site and group settings take effect when you apply a label to a team, group, or site. Other label settings, such as encryption and content marking, aren't applied to the content within the team, group, or site.

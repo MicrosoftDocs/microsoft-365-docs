@@ -103,8 +103,6 @@
           href: migration-microsoft-365-enterprise-workload.md
         - name: Empower remote workers
           href: empower-people-to-work-remotely.md
-        - name: Teams for highly regulated data
-          href: secure-teams-highly-regulated-data-scenario.md
         - name: SharePoint sites for highly regulated data
           href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Test Lab Guides

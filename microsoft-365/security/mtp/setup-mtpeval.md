@@ -1,6 +1,6 @@
 ---
-title: Set up your Microsoft Threat Protection evaluation lab 
-description: Access Microsoft 365 Security Center then setup your Microsoft Threat Protection evaluation lab
+title: Set up your Microsoft Threat Protection trial lab environment 
+description: Access Microsoft 365 Security Center then setup your Microsoft Threat Protection trial lab environment
 keywords:  Microsoft Threat Protection trial setup, try Microsoft Threat Protection, Microsoft Threat Protection evaluation lab setup  
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,32 +17,32 @@ ms.collection: M365-security-compliance
 ms.topic: article 
 ---
 
-# Set up your Microsoft Threat Protection evaluation lab 
+# Set up your Microsoft Threat Protection trial lab environment 
 
 **Applies to:**
 - Microsoft Threat Protection 
 
 
-Creating a Microsoft Threat Protection evaluation lab and deploying it is a three-phase process:
+Creating a Microsoft Threat Protection trial lab environment and deploying it is a three-phase process:
 
 <br>
 <table border="0" width="100%" align="center">
   <tr style="text-align:center;">
     <td align="center" style="width:25%; border:0;" >
       <a href= "https://docs.microsoft.com/microsoft-365/security/mtp/prepare-mtpeval?view=o365-worldwide"> 
-        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection evaluation lab" title="Prepare your Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/prepare.png" alt="Prepare your Microsoft Threat Protection trial lab environment" title="Prepare your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 1: Prepare </a><br>
     </td>
      <td align="center"bgcolor="#d5f5e3">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/setup-mtpeval?view=o365-worldwide">
-        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection evaluation lab" title="Set up your Microsoft Threat Protection evaluation lab" />
+        <img src="../../media/setup.png" alt="Set up your Microsoft Threat Protection trial lab environment" title="Set up your Microsoft Threat Protection evaluation lab" />
       <br/>Phase 2: Setup </a><br>
     </td>
     <td align="center">
       <a href="https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide">
         <img src="../../media/config-onboard.png" alt="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab and onboard your endpoints" title="
-Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab and onboard your endpoints" />
+Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" title="
+Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints" />
       <br/>Phase 3: Configure & Onboard </a><br>
 </td>
 
@@ -50,7 +50,7 @@ Configure each Microsoft Threat Protection pillar for your Microsoft Threat Prot
   </tr>
 </table>
 
-You are currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then setup your evaluation lab.
+You are currently in the set up phase. Take the initial steps to access Microsoft 365 Security Center then setup your trial lab environment.
 
 Sign up for an Office 365 or Azure Active Directory subscription to generate a *.onmicrosoft.com* tenant that you can use to sign up for your Microsoft 365 E5 license. 
 
@@ -145,4 +145,4 @@ c
 
 ## Next step
 |||
-|:-------|:-----|config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab and onboard your endpoints.
+|:-------|:-----|config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints.

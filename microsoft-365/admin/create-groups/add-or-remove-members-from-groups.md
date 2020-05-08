@@ -24,6 +24,14 @@ description: "Learn how to add a member to a group, remove member from group, an
 
 # Add or remove members from Microsoft 365 groups using the admin center
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 In Microsoft 365, group members typically create their own groups, add themselves to groups they want to join, or are invited by group owners. If group ownership changes, or if you determine that a member should be added or removed, as the admin you can also make that change. Only a global administrator, Exchange administrator, Groups administrator, or user administrator can make these changes. [What is a Microsoft 365 group?](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2.aspx)
 
 > [!TIP]
@@ -271,16 +279,16 @@ By default, the person who created the group is the group owner. Often a group w
     
 - To add hundreds or thousands of users to groups, use the [Add-UnifiedGroupLinks](https://go.microsoft.com/fwlink/p/?LinkId=616191).
     
-- [Assign a new owner to an orphaned group](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732.aspx)
+- [Assign a new owner to an orphaned group](https://support.microsoft.com/en-us/office/assign-a-new-owner-to-an-orphaned-group-86bb3db6-8857-45d1-95c8-f6d540e45732)
     
 ## Articles about managing groups
     
 - [Upgrade distribution lists to Microsoft 365 groups in Outlook](../manage/upgrade-distribution-lists.md)
     
-- [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+- [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 - [Manage guest access in Microsoft 365 groups](manage-guest-access-in-groups.md)    
     
-- [Manage Microsoft 365 groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540): this article introduces you to key cmdlets and provides examples
+- [Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell): this article introduces you to key cmdlets and provides examples
     
 - [Microsoft 365 groups naming policy](groups-naming-policy.md)
