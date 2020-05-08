@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.collection: 
 - M365-security-compliance
+- M365solutions
 ms.prod: microsoft-365-enterprise
 ms.custom: 
-- M365solutions
 localization_priority: Priority
 description: "Learn how Microsoft 365 helps financial services move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
 f1.keywords: NOCSH

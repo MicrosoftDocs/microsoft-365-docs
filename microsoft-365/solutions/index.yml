@@ -10,7 +10,9 @@ metadata:
   description: Understand how to design the solution and architecture that is right for your organization # Required; article description that is displayed in search results. < 160 chars.
   ms.service: o365-solutions #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  ms.collection: m365-security-compliance
+  ms.collection: 
+  - m365-security-compliance
+  - M365solutions
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   manager: bcarter
