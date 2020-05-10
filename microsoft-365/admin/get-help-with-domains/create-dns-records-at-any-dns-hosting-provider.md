@@ -169,9 +169,12 @@ On your DNS host's website, you'll create three new CNAME records, typically one
       |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 hour  <br/> |
    
    > [!NOTE]
-   > For **TTL**: Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. > These records do not apply to Exchange, Lync, or Skype for Business hybrid deployments. 
+   > For **TTL**: Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. .These records do not apply to Exchange, Lync, or Skype for Business hybrid deployments. 
   
 2. When you've finished, save the records.
+
+> [!NOTE]
+> These DNS records also apply to Teams, especially in a hybrid Teams and Skype for Business Online scenario, where certain federation issues could arise.
     
 ::: moniker-end
 ::: moniker range="o365-germany"
