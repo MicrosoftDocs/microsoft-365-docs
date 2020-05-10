@@ -6,11 +6,11 @@ manager: pamgreen
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
-ms.collection: 
+ms.collection:
 - SPO_Content
 - M365-security-compliance
 - M365solutions
-ms.custom: 
+ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
@@ -154,7 +154,7 @@ To restrict guests to web-ony access
 9. On the **Cloud apps or actions** blade, click **Done**.
 10. Under **Assignments**, click **Conditions**.
 11. On the **Conditions** blade, click **Client apps**.
-12. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Mobile apps and desktop clients** and **Modern authentication clients** settings.</br>
+12. On the **Client apps** blade, click **Yes** for **Configure**, and then select the **Browser** settings.</br>
     ![Screenshot of Azure AD conditional access client apps settings](../media/azure-ad-conditional-access-client-mobile.png)
 13. Click **Done**, and then on the **Conditions** blade, click **Done** again.
 14. Under **Access controls**, click **Grant**.
@@ -224,7 +224,7 @@ To create a classification label (Highly sensitive)
 
 ![Screenshot of sensitivity labels in the Microsoft 365 Compliance Center](../media/microsoft-365-sharing-sensitivity-labels.png)
 
-Once you've created the labels, the next step is to publish them. 
+Once you've created the labels, the next step is to publish them.
 
 To publish labels
 1. On the **Sensitivity labels** page, click **Publish labels**.
