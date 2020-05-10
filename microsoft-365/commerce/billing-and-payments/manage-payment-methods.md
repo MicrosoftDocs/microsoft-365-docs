@@ -24,7 +24,7 @@ description: "Learn how to manage your payment methods in the Microsoft 365 admi
 
 # Manage payment methods
 
-When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy. But you can only manage payment methods that you add.
+When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy. But you can only manage or put to use payment methods that you add.
 
 > [!NOTE]
 > The option to pay with a bank account is not available in some countries or regions.
