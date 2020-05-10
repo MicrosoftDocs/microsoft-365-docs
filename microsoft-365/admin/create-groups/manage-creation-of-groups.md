@@ -181,6 +181,9 @@ Try the same procedure again with a member of the security group.
 
 > [!NOTE]
 > If members of the security group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](https://go.microsoft.com/fwlink/?linkid=852135).
+
+> [!NOTE]
+> After you make changes on who can create an Office 365 group, it can take up to 30 minutes or more in some cases for the changes to take effect.
     
 ## Related articles
 
