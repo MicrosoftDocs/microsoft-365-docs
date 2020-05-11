@@ -74,11 +74,11 @@ These steps are only for people using a Microsoft 365 for business plan. To do t
 
 Use these steps if you forgot your password but you're able to sign in to Microsoft 365 because, for example, your password is saved in your browser: 
     
-1. In Microsoft 365, select **Settings** \> **Office 365** \> **Personal info**. 
+1. Select your name (icon) in upper right corner > **My Account** > **Personal Info**. 
           
-2. Double-check that your **Contact details** and **Alternate email** are accurate. If not, change them now. 
+2. Under **Contact details**, double-check that your **Alternate email** is accurate and that you've provided a mobile phone number. If not, change them now. 
         
-3. Sign out of Office 365: select your name in the upper right corner (in the above image, shown as **Diane**) \> **Sign out**. 
+3. Sign out: select your name in the upper right corner (in the above image, shown as **Diane**) \> **Sign out**. 
         
 4. Now sign in again: type your user name \> **Next** \> and then select **Forgot password**. 
     
@@ -87,6 +87,8 @@ Use these steps if you forgot your password but you're able to sign in to Micros
 If you forgot your password and can't sign in: 
     
 - Ask another global admin in your business to reset your password for you.
+
+- Make sure you've provided alternate contact information, including a mobile phone number. 
     
 - Or, [call Microsoft Support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). 
     

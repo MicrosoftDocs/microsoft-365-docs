@@ -50,7 +50,7 @@ Before you turn on the service, the Microsoft 365 security center ([security.mic
 To turn on Microsoft Threat Protection, simply complete the process from the welcome page. You can also turn on Microsoft Threat Protection by accessing **Settings** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) in the navigation pane and selecting **Microsoft Threat Protection**.
 
 >[!NOTE]
->If you don't see **Settings** in the navigation pane or couldn't access the page, check your permissions and licenses.       
+>If you don't see **Settings** in the navigation pane or couldn't access the page, check your permissions and licenses.
 
 ### Select data center location
 If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender ATP, you will be asked to choose a new data center location specifically for Microsoft Threat Protection. 

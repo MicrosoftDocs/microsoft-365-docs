@@ -37,7 +37,7 @@ Spam and malware signatures are updated in the service real-time on a daily basi
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP.
+[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
 ### Malware ZAP
 
@@ -91,9 +91,9 @@ You should follow the normal reporting process for [false positives](report-junk
 
 ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
 
-### What if I'm using mail flow rules or allowed/blocked sender lists?
+### What if I'm using safe senders, mail flow rules, or allowed/blocked sender lists?
 
-Mail flow rules or block and allow organizational settings take precedence. These messages are excluded from ZAP.
+Safe senders, mail flow rules, or block and allow organizational settings take precedence. These messages are excluded from ZAP since the service is doing what you configured it to do. This is another reason to be careful about configuring messages to bypass filtering.
 
 ### What if a message is moved to another folder (e.g. Inbox rules)?
 
