@@ -48,7 +48,7 @@ Before you synchronize your users and computers from the local Active Directory 
 
 ## 2. Install and configure Azure AD Connect
 
-To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, install Azure Active Directory Connect and set up directory synchronization. See [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) to learn more.
+To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, install Azure Active Directory Connect and set up directory synchronization. See [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) to learn more.
 
 > [!NOTE]
 > The steps are exactly the same for Microsoft 365 for business. 

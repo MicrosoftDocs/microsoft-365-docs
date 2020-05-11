@@ -9,8 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-ms.custom: 
 - M365solutions
+ms.custom: 
 localization_priority: Normal
 f1.keywords: NOCSH
 description: "Learn how to create a B2B extranet site or team with managed guest users from a partner organization."
@@ -28,7 +28,7 @@ Before you begin, create the site or team that you want to share with the partne
 
 ## Connect the partner organization
 
-In order to invite guests from a partner organization, you need to add the the partner's domain as a connected organization in Azure Active Directory.
+In order to invite guests from a partner organization, you need to add the partner's domain as a connected organization in Azure Active Directory.
 
 To add a connected organization
 1. In [Azure Active Directory](https://aad.portal.azure.com), click **Identity Governance**.

@@ -9,11 +9,11 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
+- M365solutions
 ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: "Learn how Microsoft 365 helps energy organizations move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
 ms.custom: 
-- M365solutions
 ---
 
 # Key Compliance and Security Considerations for the Energy Industry
