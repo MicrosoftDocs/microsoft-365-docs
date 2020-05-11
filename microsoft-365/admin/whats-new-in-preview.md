@@ -35,7 +35,7 @@ We're continuously adding new features to [the Microsoft 365 admin center](micro
 
 > [!IMPORTANT]
 > **"Classic" admin center retirement starting in March**<br><br>
-When you sign-in to admin.microsoft.com, you'll now go to the new admin center every time. And in March, we will start disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: March 2, 2020*
+When you sign in to the Microsoft 365 admin center, you'll now go to the new admin center every time. And in March, we started disabling the ability to switch back to the classic admin center. For now, you can still switch back, but as the new admin center comes to parity (and exceeds it) we will turn off the switch for all organizations. <br><br> *Last updated: May 11, 2020*
 
 And if you're interested in what's new in other Microsoft cloud services:
 
@@ -56,7 +56,7 @@ Well, we did it! We've taken the second step towards a unified roles experience 
 
 ### Sync Message Center posts to Planner
 
-Starting in May, admins who are in Targeted release will start seeing the "Planner syncing" button in the Message Center. You can now track messages that need action, select the type of messages you'd like to track, track who the task was assigned to, and you can tag messages for later attention.
+Starting in May, admins who are in Targeted release will start seeing the "Planner syncing" button in the message center. You can now track messages that need action, select the type of messages you'd like to track, assign messages to track as tasks, and tag messages for later attention.
 
 [Join Targeted Release](manage/release-options-in-office-365.md) to get started!
 
@@ -73,9 +73,9 @@ While creating a service request, you'll now see chat as an option, in addition 
 
 With the increased usage of Teams, we've added a few features to help you manage them. 
 
-- A new recommendation card shows which users haven't actively used teams for 30 days. You can send those users a training email to get them help using Teams.
-- **Get Started with Teams**: Go to Setup to see a new page to help you get Teams turned on, licensed to users, and ready to use!
-- Add the Teams card to your Home page to see Guest access status and an "Improve network connectivity" status.
+- A new recommendation card on the admin center Home page shows which users have not actively used Teams for 30 days. You can send those users a training email to get them started using Teams.
+- **Bring people together with teams**: Go to **Setup** to see a new page to help you turn on Teams for licensed users and allow guest access, so you can work with external customers in Teams.
+- A Microsoft Teams card is now pinned by default to your Home page. It shows whether Teams is turned on, and if guest access is allowed. It also allows you to check the setup status for newly licensed Teams users, and check if network issues might be impacting Teams users.
 - Finally, Teams is now a step in the initial set up flow if you purchased a license that includes Teams.
 
 ### Productivity score
@@ -91,12 +91,13 @@ This month, we are introducing the following new concepts to the preview experie
 Productivity score is currently in private preview. [Join the Productivity score private preview](https://aka.ms/productivityscorepreview) to get started.
 
 ### Groups updates
+
 We've got two updates for Groups this month:
 
 - You can now edit email addresses for Office 365 groups (Also known as Groups in Outlook, and soon to be known as Microsoft 365 groups).
 - We've heard your feedback and we've added clearer error messaging for why you can't convert a group to a Microsoft Team.
 
-### Docs, Videos, and Training
+### Docs, videos, and training
 
 **What's new in Microsoft 365 video series**: This month, we cover tips and resources to help small businesses transition to remote work including how to roll out Microsoft Teams, remote work training resources to stay connected with clients and partners, and the new Microsoft 365 Business Voice plan. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
