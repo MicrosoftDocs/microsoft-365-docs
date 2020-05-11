@@ -47,7 +47,7 @@ For standalone EOP organizations with a small number of users, you can add and m
 
 1. In the EAC, go to **Recipients** \> **Contacts**
 
-2. Click **New** ![New icon](../media/ITPro-EAC-AddIcon.png). In the **New mail user** page that opens, configure the following settings. Settings marked with an <sup>\*</sup> are required.
+2. Click **New** ![New icon](../../media/ITPro-EAC-AddIcon.png). In the **New mail user** page that opens, configure the following settings. Settings marked with an <sup>\*</sup> are required.
 
    - **First name**
 
@@ -71,7 +71,7 @@ For standalone EOP organizations with a small number of users, you can add and m
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. Select the mail user that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro-EAC-AddIcon.png).
+2. Select the mail user that you want to modify, and then click **Edit** ![Edit icon](../../media/ITPro-EAC-AddIcon.png).
 
 3. On the mail user properties page that opens, click one of the following tabs to view or change properties.
 
@@ -122,7 +122,7 @@ Use the **Organization** tab to record detailed information about the user's rol
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. Select the mail user that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
+2. Select the mail user that you want to remove, and then click **Remove** ![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif).
 
 ## Use PowerShell to manage mail users
 
@@ -222,7 +222,7 @@ For detailed syntax and parameter information, see [Remove-EOPMailUser](https://
 
 To verify that you've successfully created, modified, or removed mail users in standalone EOP, use any of the following procedures:
 
-- In the EAC, go to **Recipients** \> **Contacts**. Verify that the mail user is listed (or isn't listed). Select the mail user and view the information in the Details pane, or click **Edit** ![Edit icon](../media/ITPro-EAC-AddIcon.png) to view the settings.
+- In the EAC, go to **Recipients** \> **Contacts**. Verify that the mail user is listed (or isn't listed). Select the mail user and view the information in the Details pane, or click **Edit** ![Edit icon](../../media/ITPro-EAC-AddIcon.png) to view the settings.
 
 - In standalone EOP PowerShell, run the following command to verify the mail user is listed (or isn't listed):
 
