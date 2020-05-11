@@ -71,6 +71,19 @@
       href: deploy-threat-protection.md
     - name: Deploy information protection for data privacy regulations
       href: information-protection-deploy.md
+      items:
+      - name: Assess data privacy risks and identify sensitive information
+        href: information-protection-deploy-assess.md
+      - name: Use Compliance Score and Compliance Manager
+        href: information-protection-deploy-compliance.md
+      - name: Use identity, device and threat protection
+        href: information-protection-deploy-identity-device-threat.md
+      - name: Protect information
+        href: information-protection-deploy-protect-information.md
+      - name: Govern information
+        href: information-protection-deploy-govern.md
+      - name: Monitor and respond to incidents
+        href: information-protection-deploy-monitor-respond.md
     
 - name: Workload solutions and scenarios
   items: 
