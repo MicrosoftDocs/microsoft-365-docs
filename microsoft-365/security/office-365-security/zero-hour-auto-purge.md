@@ -37,7 +37,7 @@ Microsoft 365 updates spam and malware signatures in real-time on a daily basis.
 
 The ZAP action is seamless for the user; they aren't notified if a message is detected and moved.
 
-[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP.
+[Safe sender lists](create-safe-sender-lists-in-office-365.md), mail flow rules (also known as transport rules), Inbox rules, or additional filters take precedence over ZAP. Similar to what happens in mail flow, this means that even if the service determines the delivered message needs ZAP, the message is not acted on because of the the safe senders configuration. This is another reason to be careful about configuring messages to bypass filtering.
 
 ### Malware ZAP
 
@@ -83,28 +83,28 @@ To determine if ZAP moved your message, you can use either the [Threat Protectio
 
 ## ZAP FAQ
 
-### Q: What happens if a legitimate message is moved to the Junk Email folder?
+### What happens if a legitimate message is moved to the Junk Email folder?
 
-A: You should follow the normal reporting process for [false positives](report-junk-email-messages-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
+You should follow the normal reporting process for [false positives](report-junk-email-messages-to-microsoft.md). The only reason the message would be moved from the Inbox to the Junk Email folder would be because the service has determined that the message was spam or malicious.
 
-### Q: What if I use the Quarantine folder instead of the Junk Mail folder?
+### What if I use the Quarantine folder instead of the Junk Mail folder?
 
-A: ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
+ZAP will take action on a message based on the configuration your anti-spam policies as described earlier in this topic.
 
-### Q: What if I'm using mail flow rules or allowed/blocked sender lists?
+### What if I'm using safe senders, mail flow rules, or allowed/blocked sender lists?
 
-A: Mail flow rules or block and allow organizational settings take precedence. These messages are excluded from ZAP.
+Safe senders, mail flow rules, or block and allow organizational settings take precedence. These messages are excluded from ZAP since the service is doing what you configured it to do. This is another reason to be careful about configuring messages to bypass filtering.
 
-### Q: What if a message is moved to another folder (e.g. Inbox rules)?
+### What if a message is moved to another folder (e.g. Inbox rules)?
 
-A:  ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the phish policy is set to quarantine and the user or administrator has already junked the email, then quarantine will take action to quarantine the file.
+ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the phish policy is set to quarantine and the user or administrator has already junked the email, then quarantine will take action to quarantine the file.
 
-### Q: Does ZAP change the message header?
+### Does ZAP change the message header?
 
-A: A ZAP action does not make any changes to the message header.
+A ZAP action does not make any changes to the message header.
 
-### Q: How does ZAP affect mailboxes on hold?
+### How does ZAP affect mailboxes on hold?
 
-A: ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
+ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.
 
 For more information about holds in Exchange Online, see [In-Place Hold and Litigation Hold in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).
