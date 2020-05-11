@@ -1,7 +1,7 @@
 ---
-title: AccountInfo table in the advanced hunting schema
-description: Learn about user account information in the AccountInfo table of the advanced hunting schema
-keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AlertInfo, alert, entities, evidence, file, IP address, device, machine, user, account
+title: IdentityInfo table in the advanced hunting schema
+description: Learn about user account information in the IdentityInfo table of the advanced hunting schema
+keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, AccountInfo, IdentityInfo, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -19,12 +19,15 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# AccountInfo
+# IdentityInfo
 
 **Applies to:**
 - Microsoft Threat Protection
 
-The `AccountInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user accounts obtained from various services, including Azure Active Directory. Use this reference to construct queries that return information from this table.
+The `IdentityInfo` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about user accounts obtained from various services, including Azure Active Directory. Use this reference to construct queries that return information from this table.
+
+>[!NOTE]
+>This table was renamed from `AccountInfo`. During renames, all queries saved in the portal are automatically updated. Check queries you have saved elsewhere.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 

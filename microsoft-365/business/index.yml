@@ -20,22 +20,21 @@ productDirectory:
   title: Secure remote work with Microsoft 365 Business Premium # < 60 chars (optional)
   items:
     # Card
+    - title: Read
+      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+      summary: Best ways to enable secure remote work with Microsoft 365 Business Premium.
+      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+    # Card
+    - title: Get the free partner kit
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Practical guidance and go to market resources for partners for securing remote work.
+      url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+    # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
       summary: Azure AD Premium P1 is coming to Microsoft 365 Business Premium!
       url: https://aka.ms/aadp1smbblog
-    # Card
-    - title: Watch partner webinar
-      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Secure your SMB customers as they cope with COVID-19.
-      url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
-    # Card
-    - title: Read
-      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Best ways to enable secure remote work with Microsoft 365 Business Premium.
-      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
-
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -85,7 +84,7 @@ conceptualContent:
         - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
           itemType: download
           text: Pitch deck (partner focus) 
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
           itemType: download
           text: Tech fundamentals
         - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
@@ -132,7 +131,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
           itemType: overview
           text: Data Loss Prevention 
-        - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+        - url: https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
           itemType: how-to-guide
           text: Send encrypted email
         - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving

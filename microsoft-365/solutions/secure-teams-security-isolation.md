@@ -10,9 +10,9 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
+- M365solutions
 ms.custom:
 - Ent_Solutions
-- M365solutions
 description: "Learn how to create a team with a unique sensitivity label for security."
 ---
 

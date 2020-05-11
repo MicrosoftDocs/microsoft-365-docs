@@ -196,6 +196,8 @@
            href: manage/centralized-deployment-of-add-ins.md
          - name: Install and manage add-ins by using Centralized Deployment
            href: manage/manage-deployment-of-add-ins.md
+         - name: Centralized Deployment FAQ
+           href: manage/centralized-deployment-faq.md
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
          - name: About Message center
