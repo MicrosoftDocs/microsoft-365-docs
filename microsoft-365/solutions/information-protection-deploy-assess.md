@@ -142,7 +142,7 @@ Typically, contracts with external customers, partners, and the other entities w
 
 This third category is the one most people think about when the subject of data privacy comes up, as leakage of an organization's consumer data - whether intentional (e.g. to a third party under contract to the provider) or unintentional (e.g. exfiltrated by a malicious actor) - is one of the primary reasons the EU (and others) enacted these regulations in the first place. Here's where the focus of many of the data privacy regulations like GDPR and CCPA come in, whereby organizations need to do concerted planning around the following:
 
-- [Action plans](../compliance/gdpr-action-plan?view=o365-worldwide) and [accountability readiness checklists](../compliance/gdpr-arc-office365.md)
+- [Action plans](../compliance/gdpr-action-plan.md) and [accountability readiness checklists](../compliance/gdpr-arc-office365.md)
 - [Data Protection Impact Assessments](../compliance/gdpr-data-protection-impact-assessments.md)
 - [Breach notifications](../compliance/gdpr-breach-office365.md)
 - [Data subject requests](../compliance/gdpr-dsr-office365.md)

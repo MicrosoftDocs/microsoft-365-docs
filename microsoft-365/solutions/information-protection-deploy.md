@@ -62,48 +62,48 @@ More detailed descriptions of each of the above elements are provided below, eac
 >Following this guidance will not necessarily make you compliant with any data privacy regulation, especially considering the number of steps required that are outside the context of the technology. As such, organizations are responsible for ensuring their own compliance and are advised to consult their legal and compliance teams or to seek guidance and advice from third parties that specialize in compliance.
 >
 
-## Step 1. Assess data privacy risks and identify sensitive information 
+## Assess data privacy risks and identify sensitive information 
 
 Assessing data privacy regulations and risks that your organization is subject to is a key first step to take before starting to implement any related improvement actions, including those achievable through Microsoft 365 configuration. This may include an overall readiness assessment and/or identification of particular "Sensitive Information Types" that are subject to specific regulatory controls your organization needs to comply with, as well as the occurrence of them in your Office 365 environment.
 
-For more information, see [Assess data privacy risks and identify sensitive information](.md).
+For more information, see [Assess data privacy risks and identify sensitive information](information-protection-deploy-assess.md).
 
-## Step 2. Using Compliance Score and Compliance Manager 
+## Use Compliance Score and Compliance Manager 
 
 Compliance Score and Compliance Manager provide an integrated set of tools available in the Microsoft 365 Compliance admin center and Services Trust Portal, respectively. Together, these tools provide you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations that you are subject to (e.g. GDPR and HIPAA-HITECH).
 
 The tools also allow you to leverage built in assessment templates specific to each regulation, where you can track action items (improvement actions) for each assessment template selected, as well as view specific regulatory controls and relate them to specific actions.
 
-For more information, see [Use Compliance Score and Compliance Manager to manage improvement actions](.md).
+For more information, see [Use Compliance Score and Compliance Manager to manage improvement actions](information-protection-deploy-compliance.md).
 
-## Step 3. Identity, Device and Threat Protection for data privacy regulation
+## Use identity, device and threat protection for data privacy regulation
 
 Microsoft 365 provides a number of identity, device and threat protection capabilities that organizations can employ to help comply with data privacy regulatory compliance. 
 
 This article briefly describes what the data privacy regulations generally call for in these areas, as well as provides a listing of related Microsoft 365 solutions, with links to more information to help you address any implementation requirements. 
 
-For more information, see [Identity, Device and Threat Protection for data privacy regulation](.md).
+For more information, see [Use identity, device and threat protection for data privacy regulation](information-protection-deploy-identity-device-threat.md).
 
-## Step 4. Protect information subject to data privacy regulation
+## Protect information subject to data privacy regulation
 
 Data privacy regulations dictate a number of personal information protection controls that can be employed in your environment, including (per Compliance Score) more than 40 "Protect Information” controls across just the four data privacy regulations in our sample set (GDPR, HIPAA-HITECH, CCPA, LGPD).
 This article lays out the main control schemes that can be used for addressing information protection needs for data privacy in your organization.
 
-For more information, see [Protect information subject to data privacy regulation in your organization](.md).
+For more information, see [Protect information subject to data privacy regulation in your organization](information-protection-deploy-protect-information.md).
 
-## Step 5. Govern information subject to data privacy regulation
+## Govern information subject to data privacy regulation
 
 Data privacy regulations call for personal information governance controls that can be employed in your environment, including (per Compliance Score) more than 24 (for "Govern Information") overall across the four data privacy regulations in our sample set (GDPR, HIPAA-HITECH, CCPA, LGPD).
 
 While the data privacy regulations are rather vague regarding what they call for in terms of what Microsoft refers to as "information governance" (essentially, purposeful retention, deletion and archiving), this article lays out the primary control schemes that can be used for addressing information governance needs for data privacy in your organization.
 
-For more information, see [Govern information subject to data privacy regulation in your organization](.md).
+For more information, see [Govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md).
 
-## Step 6. Monitor and respond subject to data privacy regulation
+## Monitor and respond subject to data privacy regulation
 
 This final article in the series highlights a few Microsoft 365 solutions available to help you monitor, investigate and respond to data privacy incidents in your organization as you operationalize related capabilities. 
 
 Having processes, procedures and otherwise documentation for each of these may also be important to demonstrate compliance to regulatory bodies.
 
-For more information, see [Monitor and respond to data privacy incidents in your organization](.md).
+For more information, see [Monitor and respond to data privacy incidents in your organization](information-protection-deploy-monitor-respond.md).
 
