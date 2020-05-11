@@ -65,13 +65,14 @@ Starting in May, admins who are in Targeted release will start seeing the "Plann
 The Teams admin center, Security center, and Compliance center are now using the same "Need help?" feature that the Microsoft 365 admin center uses for finding help and contacting support. We've received a lot of feedback from admins that you wanted the same level of help and support and we're happy to bring that to you. Try it out and give us your feedback!
 
 #### Need chat?
+
 Our support agents have been working from home while still taking customer cases and limitations on internet bandwidth while working from home can impact customer call quality. In order to continue supporting you, we have launched live chat support option for commercial customers in the Microsoft 365 admin center.
 
 While creating a service request, you'll now see chat as an option, in addition to phone and email. Select chat as a preferred channel of communication and create the request. Once you've created the  request, you can start the chat when you are ready to chat with Microsoft agents.
 
 ### Teams updates
 
-With the increased usage of Teams, we've added a few features to help you manage them. 
+With the increased usage of Teams, we've added a few features to help you manage them.
 
 - A new recommendation card on the admin center Home page shows which users have not actively used Teams for 30 days. You can send those users a training email to get them started using Teams.
 - **Bring people together with teams**: Go to **Setup** to see a new page to help you turn on Teams for licensed users and allow guest access, so you can work with external customers in Teams.
@@ -79,6 +80,7 @@ With the increased usage of Teams, we've added a few features to help you manage
 - Finally, Teams is now a step in the initial set up flow if you purchased a license that includes Teams.
 
 ### Productivity score
+
 Productivity Score gives insights about how people use Microsoft cloud services and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours. This month, we are introducing the following new concepts to the preview experience:
 
 - Trend view of primary insights on home page and category detail pages
@@ -87,7 +89,7 @@ Productivity Score gives insights about how people use Microsoft cloud services 
 - New Communications category as part of Employee Experience
 - User details with organizational metadata in Employee Experience categories
 
-Productivity score is currently in private preview. [Join the Productivity score private preview](https://aka.ms/productivityscorepreview) to get started.
+If you'd like to learn more, check out the blog: [Measure and improve the Microsoft 365 experience with Microsoft Productivity Score](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618). Productivity score is currently in private preview. [Join the Productivity score private preview](https://aka.ms/productivityscorepreview) to get started.
 
 ### Groups updates
 
@@ -134,7 +136,7 @@ With the uptick in Teams usage, some orgs will get a pinned dashboard card that 
 
 Using the Microsoft 365 admin center, you can now customize your organization's theme in SharePoint mobile app for iOS and SharePoint mobile app for Android. This feature conveniently provides a mobile intranet app experience that can match your SharePoint Online for employees on the go. Theme customization includes your logo image, navigation bar color, text and icon colors, and accent colors, making for easy recognition.
 
-:::image type="complex" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram mapping the admin center settings to the mobile app.":::
+:::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram mapping the admin center settings to the mobile app.":::
 
 :::image-end:::
 
@@ -161,7 +163,6 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 ### Videos, training, and docs
 
 [What's New in Microsoft 365 web series](https://go.microsoft.com/fwlink/p/?linkid=2118096): In this month's episode, we highlight the 3-year anniversary of Microsoft Teams and cover new features including improved audio quality in online meetings, Targeted Communications for firstline managers with the Shifts app, Teams and Skype consumer interoperability, and more.
-
 
 ## February 2020
 
