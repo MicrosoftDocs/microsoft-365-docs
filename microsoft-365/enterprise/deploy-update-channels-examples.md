@@ -46,7 +46,7 @@ Follow the **I am** and **who wants** columns to determine the set of channels t
 |:-------|:-----|:-------|:-------|:-----|:-------|
 | A Microsoft Edge app developer | to see what I was working on yesterday | N/A | N/A | Canary | [Edge Carnary channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)  |
 | A highly technical user or Edge app developer | early access to the latest build. | Dev | N/A  | Dev |   |
-| An end user, an early adopter, a fan, or an IT professional  | early access to a beta build. | Beta | Beta | Beta |   |
+| An end user, an early adopter, a fan, or an IT professional  | early access to a build for functionality testing. | Beta | Beta | Beta |   |
 | An enterprise IT department | to evaluate the latest preview before broad deployment. | Preview (Release)  | Preview (Current or Semi-Annual Enterprise)  | N/A |   |
 | A consumer, small to medium business, or an enterprise organization | a broad and rapid deployment. |  Semi-Annual | Current | Stable | [Rapid deployment example](deploy-update-channels-examples-rapid-deploy.md) |
 | An enterprise organization | a broad deployment with additional predictability. | Semi-Annual | Monthly Enterprise | N/A |   |
