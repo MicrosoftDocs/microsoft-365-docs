@@ -137,16 +137,16 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 <br>![Image of_Azure Advanced Threat Protection page where you should click next to follow the Azure ATP sensor wizard](../../media/mtp-eval-48.png) <br>
  
 8. Copy the access key as you will need to enter it next in the Wizard.
-![Image of_page](../../media/mtp-eval-49.png) <br>
+![Image of_the sensors page where you should copy the access key that you need to enter in the next Azure ATP sensor setup wizard page](../../media/mtp-eval-49.png) <br>
  
 9. Copy the access key into the Wizard and click **Install**. 
-<br>![Image of_page](../../media/mtp-eval-50.png) <br>
+<br>![Image of_Azure Advanced Threat Protection Azure ATP sensor wizard page where you should provide the access key and then click the install button](../../media/mtp-eval-50.png) <br>
 
 10. Congratulations, you have successfully configured Azure Advanced Threat Protection on your domain controller.
-![Image of_page](../../media/mtp-eval-51.png) <br>
+![Image of_Azure Advanced Threat Protection Azure ATP sensor wizard installation completion where you should click the finish button](../../media/mtp-eval-51.png) <br>
  
 11. Under the [Azure Azure ATP](https://go.microsoft.com/fwlink/?linkid=2040449) settings section, select **Windows Defender ATP**, then turn the toggle on. Click **Save**. 
-![Image of_page](../../media/mtp-eval-52.png) <br>
+![Image of_the Azure Azure ATP settings page where you should turn the Windows Defender ATP toggle on](../../media/mtp-eval-52.png) <br>
 
 >[!NOTE]
 >Windows Defender ATP has been rebranded as Microsoft Defender ATP. Rebranding changes across all of our portals are being rolled out the for consistency.
@@ -157,24 +157,24 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 >Skip this step if you have already enabled Microsoft Cloud App Security. 
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Cloud App Security**.
-![Image of_page](../../media/mtp-eval-53.png) <br>
+![Image of_Microsoft 365 Security Center page where you can see Microsoft Cloud App card and should click the open button](../../media/mtp-eval-53.png) <br>
 
 2. At the information prompt to integrate Azure ATP, select **Enable Azure ATP data integration**. 
-<br>![Image of_page](../../media/mtp-eval-54.png) <br>
+<br>![Image of_the information prompt to integrate Azure ATP where you should select the Enable Azure ATP data integration link](../../media/mtp-eval-54.png) <br>
 
 >[!NOTE]
 >If you don’t see this prompt, it might mean that your Azure ATP data integration has already been enabled. However, if you are not sure, contact your IT Administrator to confirm. 
 
 3. Go to **Settings**, turn the **Azure ATP integration** toggle on, then click **Save**. 
-![Image of_page](../../media/mtp-eval-55.png) <br>
+![Image of_the settings page where you should turn the Azure ATP integration toggle on then click save](../../media/mtp-eval-55.png) <br>
 >[!NOTE]
 >For new Azure ATP instances, this integration toggle is automatically turned on. Confirm that your Azure ATP integration has been enabled before you proceed to the next step.
  
 4. Under the Cloud discovery settings, select **Microsoft Defender ATP integration**, then enable the integration. Click **Save**.
-![Image of_page](../../media/mtp-eval-56.png) <br>
+![Image of_the Microsoft Defender ATP page where the block unsanctioned apps checkbox under Microsoft Defender ATP integration is selected. Click save.](../../media/mtp-eval-56.png) <br>
 
 5. Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.
-![Image of_page](../../media/mtp-eval-57.png) <br>
+![Image User enrichment section where the enrich discovered user identifiers with Azure Active Directory usernames checkbox is selected](../../media/mtp-eval-57.png) <br>
 
 ## Configure Microsoft Defender Advanced Threat Protection
 >[!NOTE]
