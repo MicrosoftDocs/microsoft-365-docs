@@ -59,7 +59,7 @@ The available role groups in standalone EOP are described in the following table
 
 If you work in a small organization that has only a few admins, you might need to add those users to the Organization Management role group only, and you may never need to use the other role groups. If you work in a larger organization, you might have admins who perform specific tasks, such as recipient configuration. In those cases, you might add one admin to the Recipient Management role group, and another admin to the Organization Management role group. Those admins can then manage their specific areas, but they won't have permissions to manage areas they're not responsible for.
 
-If the built-in role groups in Exchange Online don't match the job function of your administrators, you can create role groups and add roles to them. For more information, see the [Work with role groups](#work-with-role-groups) section later in this topic.
+If the built-in role groups in Exchange Online don't match the job function of your administrators, you can create role groups and add roles to them. For more information, see [Manage role groups in standalone EOP](manage-admin-role-group-permissions-in-eop.md).
 
 ## Roles
 

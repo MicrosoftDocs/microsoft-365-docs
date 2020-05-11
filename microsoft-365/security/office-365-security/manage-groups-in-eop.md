@@ -218,7 +218,7 @@ For detailed syntax and parameter information, see [Remove-EOPDistributionGroup]
 
 To verify that you've successfully created, modified, or removed a distribution group or a mail-enabled security group, do any of the following steps:
 
-- In the EAC, go to **Recipients** \> **Groups**. Verify that the group is listed (or not listed), and verify the **Group Type** value. Select the group and view the information in the Details pane, or click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png) to view the settings.
+- In the EAC, go to **Recipients** \> **Groups**. Verify that the group is listed (or not listed), and verify the **Group Type** value. Select the group and view the information in the Details pane, or click **Edit** ![Edit icon](../media/ITPro-EAC-AddIcon.png) to view the settings.
 
 - In standalone EOP PowerShell, run the following command to verify the group is listed (or isn't listed):
 

@@ -548,12 +548,13 @@
                       href: ./office-365-security/switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
                     - name: Backscatter in EOP
                       href: ./office-365-security/backscatter-messages-and-eop.md
-                - name: Messaging policy and compliance in standalone EOP
+                - name: Auditing reports in standalone EOP
+                  href: ./office-365-security/auditing-reports-in-eop.md
                   items: 
-                    - name: Auditing reports in standalone EOP
-                      href: ./office-365-security/auditing-reports-in-eop.md
                     - name: Run an administrator role group report in standalone EOP
                       href: ./office-365-security/run-an-administrator-role-group-report-in-eop-eop.md
+                    - name: View the admin audit log in standalone EOP
+                      href: ./office-365-security/view-the-admin-audit-log-eop.md
                 - name: Manage recipients in standalone EOP
                   href: ./office-365-security/manage-recipients-in-eop.md
                   items: 

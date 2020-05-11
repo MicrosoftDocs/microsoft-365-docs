@@ -36,7 +36,7 @@ For standalone EOP organizations with a small number of users, you can add and m
 
 - You need to be assigned permissions before you can perform these procedures. Specifically, you need the Mail Recipient Creation (create) and Mail Recipients (modify) roles, which are assigned to the OrganizationManagement (global admins) and RecipientManagement role groups by default. For more information, see [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center](../accessibility/keyboard-shortcuts-in-admin-center.md).
+- For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Having problems? Ask for help in the Exchange forums. Visit the [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351) forum.
@@ -47,7 +47,7 @@ For standalone EOP organizations with a small number of users, you can add and m
 
 1. In the EAC, go to **Recipients** \> **Contacts**
 
-2. Click **New** ![New icon](../media/ITPro_EAC_AddIcon.png). In the **New mail user** page that opens, configure the following settings. Settings marked with an <sup>\*</sup> are required.
+2. Click **New** ![New icon](../media/ITPro-EAC-AddIcon.png). In the **New mail user** page that opens, configure the following settings. Settings marked with an <sup>\*</sup> are required.
 
    - **First name**
 
@@ -71,7 +71,7 @@ For standalone EOP organizations with a small number of users, you can add and m
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. Select the mail user that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png).
+2. Select the mail user that you want to modify, and then click **Edit** ![Edit icon](../media/ITPro-EAC-AddIcon.png).
 
 3. On the mail user properties page that opens, click one of the following tabs to view or change properties.
 
@@ -122,7 +122,7 @@ Use the **Organization** tab to record detailed information about the user's rol
 
 1. In the EAC, go to **Recipients** \> **Contacts**.
 
-2. Select the mail user that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro_EAC_RemoveIcon.gif).
+2. Select the mail user that you want to remove, and then click **Remove** ![Remove icon](../media/ITPro-EAC-RemoveIcon.gif).
 
 ## Use PowerShell to manage mail users
 
@@ -222,7 +222,7 @@ For detailed syntax and parameter information, see [Remove-EOPMailUser](https://
 
 To verify that you've successfully created, modified, or removed mail users in standalone EOP, use any of the following procedures:
 
-- In the EAC, go to **Recipients** \> **Contacts**. Verify that the mail user is listed (or isn't listed). Select the mail user and view the information in the Details pane, or click **Edit** ![Edit icon](../media/ITPro_EAC_AddIcon.png) to view the settings.
+- In the EAC, go to **Recipients** \> **Contacts**. Verify that the mail user is listed (or isn't listed). Select the mail user and view the information in the Details pane, or click **Edit** ![Edit icon](../media/ITPro-EAC-AddIcon.png) to view the settings.
 
 - In standalone EOP PowerShell, run the following command to verify the mail user is listed (or isn't listed):
 
@@ -252,11 +252,11 @@ In standalone EOP, directory synchronization is available for customers with on-
 
   - **Outlook Safe Sender lists and Blocked Sender lists**: When synchronized to the service, these lists will take precedence over spam filtering in the service. This lets users manage their own Safe Sender list and Blocked Sender list with individual sender and domain entries. For more information, see [Configure junk email settings on Exchange Online mailboxes](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-junk-email-settings-on-exo-mailboxes).
 
-  - **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](../mail-flow-best-practices/use-directory-based-edge-blocking.md).
+  - **Directory Based Edge Blocking (DBEB)**: For more information about DBEB, see [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
   - **End user access to quarantine**: To access their quarantined messages, recipients must have a valid user ID and password in the service. For more information about quarantine, see [Find and release quarantined messages as a user](https://docs.microsoft.com/microsoft-365/security/office-365-security/find-and-release-quarantined-messages-as-a-user).
 
-  - **Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them in the service. Note that [dynamic distribution groups](manage-dynamic-distribution-groups/manage-dynamic-distribution-groups.md) can't be synchronized via directory synchronization.
+  - **Mail flow rules (also known as transport rules)**: When you use directory synchronization, your existing Active Directory users and groups are automatically uploaded to the cloud, and you can then create mail flow rules that target specific users and/or groups without having to manually add them in the service. Note that [dynamic distribution groups](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/manage-dynamic-distribution-groups) can't be synchronized via directory synchronization.
 
 Get the necessary permissions and prepare for directory synchronization, as described in [What is hybrid identity with Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity).
 

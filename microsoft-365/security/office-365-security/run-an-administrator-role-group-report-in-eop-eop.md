@@ -71,8 +71,6 @@ In this example, the Administrator user account made the following changes:
 
 You can use Exchange Online PowerShell to search for audit log entries that meet the criteria you specify. For a list of search criteria, see [Administrator audit logging](https://technet.microsoft.com/library/22b17eb8-d8ee-4599-b202-d6a7928c20d9.aspx). This procedure uses the **Search-AdminAuditLog** cmdlet and displays search results in Exchange Online PowerShell. You can use this cmdlet when you need to return a set of results that exceeds the limits defined on the **New-AdminAuditLogSearch** cmdlet or in the EAC Audit Reporting reports.
 
-If you want to send audit log search results in an email attachment to a recipient, see the [Use Exchange Online PowerShell to search for audit log entries and send results to a recipient](#use-exchange-online-powershell-to-search-for-audit-log-entries-and-send-results-to-a-recipient) section later in this topic.
-
 To search the audit log for criteria you specify, use the following syntax.
 
 ```PowerShell
