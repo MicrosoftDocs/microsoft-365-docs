@@ -1,5 +1,5 @@
 ---
-title: "View reports for Office 365 Advanced Threat Protection, malware reports, phish reports, compromised accounts, URL protection status, threat reporting, report threats"
+title: View reports for Advanced Threat Protection
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -17,6 +17,7 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 description: "Find and use reports for Office 365 Advanced Threat Protection in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # View reports for Office 365 Advanced Threat Protection
@@ -95,7 +96,7 @@ This report is based data collected, and threats detected, per click (whereas mo
 In the details table, you'll be able to see more information regarding click time and user information. Finally, keep in mind the URL Protection Status report shows the protection from ATP Safe Links feature, so only customers who have enabled ATP Safe Links will see data reflected on this report.
 
 > [!NOTE]
-> This is a *protection trend report*, meaning data represents trends in a larger dataset. Reporting isn't available in real time here. For real time URL click data, please continue to use URL Trace.
+> This is a *protection trend report*, meaning data represents trends in a larger dataset. As a result, the data in the aggregate view is not available in real time here, but the data in the details table view is, so you may see a slight discrepancy between the two views.
 
 ## ATP File Types report
 

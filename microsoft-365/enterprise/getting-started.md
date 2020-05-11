@@ -48,7 +48,7 @@ One of the key tenants of modern management practices is devices that are always
 
 [Windows 10 for the IT Pro](https://www.microsoft.com/itpro/windows-10)
 
-[About Microsoft 365 Apps for enterprise in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise)
+[About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps)
 
 ## What has Changed
 
@@ -62,7 +62,7 @@ Let’s start by taking a look at what has changed and improved since your last 
 
 **Cloud-based device Management:** Services like Microsoft Intune help you manage your Windows 10 devices as you do other mobile devices, all from one place. What makes Microsoft Intune unique is the ability to co-manage your Windows 10 devices with Microsoft Endpoint Configuration Manager. You can use Configuration Manager to help you in your shift to Windows 10, and then add Microsoft Intune. Working together, Microsoft Endpoint Configuration Manager becomes the intelligent edge within your organization, connected to the Microsoft intelligent cloud. This allows you to manage your users’ devices securely wherever they are, whether connected on your organization’s infrastructure or in the public cloud.
 
-[Co-management for Windows 10 devices](https://docs.microsoft.com/configmgr/core/clients/manage/co-management-overview)
+[Co-management for Windows 10 devices](https://docs.microsoft.com/mem/configmgr/core/clients/manage/co-management-overview)
 
 **Cloud-based Deployment Service:** As you acquire new PCs we’ve introduced a new cloud service to help you deploy Microsoft 365 devices called the Windows Autopilot deployment service. Autopilot is integrated with your hardware providers and new PCs are automatically registered in Autopilot enabling the new PC to be shipped directly to the end-user. When the PC is powered on the first time it is quickly configured to your organizations desired configuration and customized for the specific needs of the user.
 
@@ -72,7 +72,7 @@ Let’s start by taking a look at what has changed and improved since your last 
 
 Click-to-Run is quite different from the MSI-based packages of the past. Click-to-Run is faster, lighter, and supports updates in the background to keep your users to be up and running. It is still a local copy of Office and you can continue to use your existing deployment tools, like Microsoft Endpoint Configuration Manager, to provision and configure the apps.
 
-[Deployment guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/deployment-guide-for-office-365-proplus)
+[Deployment guide for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/deployment-guide-microsoft-365-apps)
 
 **Semi-Annual Updates:** Once you have moved to Windows 10 and Microsoft 365 Apps for enterprise, updates are delivered semi-annually with new features. But with Microsoft able to deliver insights from the cloud to help, you can quickly and confidently roll out these updates to hundreds or thousands of devices. Like an in-place upgrade, the Feature Update preserves apps, data, and configurations from the previous release.
 
@@ -104,14 +104,14 @@ As in previous upgrades, the User State Migration Tool continues to be a valuabl
 
 **[Step 6: OS Deployment and Feature Updates](https://aka.ms/mdd6)** With everything prepared, the next step is to deploy the OS images. A lot of the heavy lifting for can be done using System Center Configuration Manage task sequences and infrastructure. The recommended approach is to deploy in phases, first targeting and deploying to an “early adopter group” in your organization using a representative set of hardware and apps. You can then use the data from those devices and users to gradually target more and more PCs.
 
-[Introduction to operating system deployment in Configuration Manager](https://docs.microsoft.com/configmgr/osd/understand/introduction-to-operating-system-deployment)
+[Introduction to operating system deployment in Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
 **[Step 7: Windows and Office as a Service](https://aka.ms/mdd7)** This represents a major shift in the way you maintain users’ desktop real-estate. With this move to Windows 10 and Microsoft 365 Apps for enterprise you can move to managing Windows and Office as a service. In place of a massive shift in technology every few years, you will continually be bringing new capabilities, experiences, and protections to your user. Semi-annual feature updates deliver new capabilities in the Fall and Spring of each year, while monthly cumulative Quality Updates will contain security, reliability, and bug fixes. While you can opt to deploy the Office 2019 client, we strongly recommend you to move to Microsoft 365 Apps for enterprise. This follows a similar service plan to Windows so your users get updates to the Office apps on a regular basis too.
 
 ![](../media/getting-started-media/getting-started-media-2.png)
 
 [Overview of Windows as a service](https://docs.microsoft.com/windows/deployment/update/waas-overview)
-[Overview of Office as a service](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+[Overview of Office as a service](https://docs.microsoft.com/DeployOffice/overview-update-channels)
 
 **[Step 8: User Communications and Training](https://aka.ms/mdd8)** This last step is critical to driving usage of new capabilities for enhancing teamwork, communications, security, and more. Before broad deployment is targeted to users outside early adopter rings, we recommend you roll out user communication and training. This will help drive desired changes in how people use new capabilities in Office, Windows, or other line of business apps and services. To assist, we provide free online training via Microsoft FastTrack. Plus, we’ve published free sample communication plans and timelines together with email, social, and intranet templates to help with your rollout of Windows 10. As a Microsoft 365 or organization, your organization may also be eligible for and direct support.
 

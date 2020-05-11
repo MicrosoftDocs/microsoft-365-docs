@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 212e68ac-6330-47e9-a169-6cf5e2f21e13
-description: "You can use Exchange Online Protection (EOP) to create mail-enabled groups for an Exchange organization. You can also use EOP to define or update group properties that specify membership, email addresses, and other aspects of groups."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to create and manage mail-enabled groups for an Exchange organization in Exchange Online Protection (EOP)."
 ---
 
 # Manage groups in EOP

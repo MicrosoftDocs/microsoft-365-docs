@@ -101,7 +101,7 @@ Here are the two ways to think of how Cortana works in your enterprise:
 
 3. As an example, Play My Emails is a Cortana service that your users can connect to through Outlook for iOS and utilizes Cortana in Office 365.
 
-4. Admins will always have controls for optional connected experiences for Cortana, similar to optional connected experiences while using Office ProPlus applications.
+4. Admins will always have controls for optional connected experiences for Cortana, similar to optional connected experiences while using Microsoft 365 Apps for enterprise applications.
 
 **Existing services for consumers**: Cortana optional connected services are designed primarily for consumer experiences and are currently delivered in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android.
 

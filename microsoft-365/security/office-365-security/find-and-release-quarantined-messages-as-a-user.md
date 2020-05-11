@@ -1,5 +1,5 @@
 ---
-title: "Find and release quarantined messages as a user"
+title: Find and release quarantined messages as a user
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,14 +16,16 @@ search.appverid:
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: "As an Microsoft 365 user, you can view, release, and delete your quarantined messages (messages where you are a recipient, and spam filtering quarantined the message as spam or bulk email). You view and manage your quarantined messages in the Security & Compliance Center."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to view and manage quarantined messages in the Security & Compliance Center in Microsoft 365."
 ---
 
 # Find and release quarantined messages as a user
 
 Quarantine holds potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
 
-As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam, bulk email, or (as of April, 2020) phishing. You view and manage your quarantined messages in the Security & Compliance Center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+As a user, you can view, release, and delete quarantined messages where you are a recipient, and the message was quarantined as spam or bulk email. As of April 2020, you can view or delete quarantined phishing (not high confidence phishing) messages where you are a recipient. You view and manage your quarantined messages in the Security & Compliance Center or (if an admin has set this up) in [end-user spam notifications](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 ## What do you need to know before you begin?
 

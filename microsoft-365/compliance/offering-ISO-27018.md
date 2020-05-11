@@ -35,8 +35,6 @@ By following the standards of ISO/IEC 27001 and the code of practice embodied in
 - **Microsoft customers know what's happening with their PII.** ISO/IEC 27018 requires a policy that allows for the return, transfer, and secure disposal of personal information within a reasonable period of time. If Microsoft works with other companies that need access to your customer data, Microsoft proactively discloses the identities of those sub-processors.
 - **Microsoft complies only with legally binding requests for disclosure of customer data.** If Microsoft must comply with such a request — as in the case of a criminal investigation — it will always notify the customer unless it is prohibited by law from doing so.
 
-Learn about the benefits of ISO-Iec-27018 on the Microsoft Cloud: [Download the ISO/IEC 27017 backgrounder](https://aka.ms/iso27017-backgrounder)
-
 ## Microsoft in-scope cloud services
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
@@ -128,7 +126,3 @@ However, you are responsible for engaging an assessor to evaluate your implement
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/F/D/A/FDA4697E-D72D-4513-8626-A5F294DC7A0F/ISOIEC_27018_Compliance_Backgrounder.pdf).

@@ -68,7 +68,7 @@ To change the payment method for a single subscription, see [Change a payment me
 
 You can change the payment method used to pay for a single subscription.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Subscriptions** tab, select the subscription that you want to pay for with the alternate payment method. 
 3. Under **Billing**, next to the payment method, select **Edit**.
 4. Next to your existing payment method, select **Change**.

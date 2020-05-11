@@ -24,6 +24,14 @@ description: "Learn how to set a password expiration policy for your organizatio
 
 # Set the password expiration policy for your organization
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 This article is for people who set password expiration policy for a business, school, or nonprofit.  
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.

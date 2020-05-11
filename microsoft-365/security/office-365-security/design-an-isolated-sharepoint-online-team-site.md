@@ -13,9 +13,11 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: "Summary: Step through the design process for isolated SharePoint Online team sites."
+description: Design isolated SharePoint Online team sites, including determine permission levels, assign permissions to users with access groups, and nested Azure AD groups.
 ---
 
 # Design an isolated SharePoint Online team site
