@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "In this article, you'll learn about how to configure outbound spam policies that apply to specific users, groups, or domains in your organization."
+description: "Admins can learn how to view, create, modify, and delete outbound spam policies in Exchange Online Protection (EOP)."
 ---
 
-# Configure outbound spam filtering
+# Configure outbound spam filtering in EOP
 
-If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, outbound email messages that are sent through EOP are automatically checked for spam and unusual sending activity.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, outbound email messages that are sent through EOP are automatically checked for spam and unusual sending activity.
 
 Outbound spam from a user in your organization typically indicates a compromised account. Suspicious outbound messages are marked as spam (regardless of the spam confidence level or SCL) and are routed through the [high-risk delivery pool](high-risk-delivery-pool-for-outbound-messages.md) to help protect the reputation of the service (that is, keep Microsoft 365 source email servers off of IP block lists). Admins are automatically notified of suspicious outbound email activity and blocked users via [alert policies](../../compliance/alert-policies.md).
 
@@ -30,7 +30,7 @@ EOP uses outbound spam policies as part of your organization's overall defense a
 
 Admins can view, edit, and configure (but not delete) the default outbound spam policy. For greater granularity, you can also create custom outbound spam policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
-You can configure outbound spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
+You can configure outbound spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## Outbound spam policies in the Security & Compliance Center vs Exchange Online PowerShell or Exchange Online Protection PowerShell
 
@@ -172,7 +172,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
     It's easiest to click **Add a condition** three times to see all of the available conditions. You can click ![Remove button](../../media/scc-remove-icon.png) to remove conditions that you don't want to configure.
 
-    - **The sender domain is**: Specifies senders in one or more of the configured accepted domains in Office 365. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
+    - **The sender domain is**: Specifies senders in one or more of the configured accepted domains in the organization. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
 
     - **Sender is**: Specifies one or more users in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional senders.
 
