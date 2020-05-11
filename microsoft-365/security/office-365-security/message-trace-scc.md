@@ -22,7 +22,7 @@ Message trace in the Security & Compliance Center follows email messages as they
 Message trace in the Security & Compliance Center improves upon the original message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
-> * To perform a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>* The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell returns all messages in the results.
+> • To do a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell returns all messages in the results.
 
 ## Open message trace
 
@@ -34,7 +34,7 @@ Message trace in the Security & Compliance Center improves upon the original mes
 
 From here you can start a new default trace by clicking on the **Start a trace** button. This will search for all messages for all senders and recipients for the last two days. Or you can use one of the stored queries from the available query categories and either run them as-is or use them as starting points for your own queries:
 
-- **Default queries**: Built-in queries provided by Office 365.
+- **Default queries**: Built-in queries provided by Microsoft 365.
 
 - **Custom queries**: Queries saved by admins in your organization for future use.
 
@@ -89,11 +89,11 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Failed**: The message was not delivered.
 
-- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
 
 - **Filtered as spam**: The message was identified spam, and was rejected or blocked (not quarantined).
 
-- **Getting status:** The message was recently received by Office 365, but no other status data is yet available. Check back in a few minutes.
+- **Getting status:** The message was recently received by Microsoft 365, but no other status data is yet available. Check back in a few minutes.
 
 **Note**: The values **Pending,** **Quarantined**, and **Filter as spam** are only available for searches less than 10 days. Also, there might be a 5 to 10 minute delay between the actual and reported delivery status.
 
@@ -328,9 +328,9 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |**Value**|**Description**|
 |:-----|:-----|
 |`SFV=NSPM`|The message was marked as non-spam and was sent to the intended recipients.|
-|`SFV=SPM`|The message was marked as spam by the content filter.|
+|`SFV=SPM`|The message was marked as spam by anti-spam filtering (also known as content filtering).|
 |`SFV=BLK`|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
-|`SFV=SKS`|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a Transport rule to automatically mark it as spam and bypass all additional filtering.|
+|`SFV=SKS`|The message was marked as spam prior to being processed by anti-spam filtering. This includes messages where the message matched a mail flow rule (also known as a transport rule) to automatically mark it as spam and bypass all additional filtering.|
 |`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](spam-confidence-levels.md).|
 |`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|The sender of the message was blocked.|
