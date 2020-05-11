@@ -32,7 +32,7 @@ You can find data classification in the **Microsoft 365 compliance center** or *
 
 ## Sensitive information types used most in your content
 
-Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number. For more information on sensitive information types, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+Microsoft 365 comes with many definitions of sensitive information types, such as an item containing a social security number or a credit card number. For more information on sensitive information types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 The sensitive information type card shows the top sensitive information types that have been found and labeled across your organization.
 
@@ -46,7 +46,7 @@ To find out how many items are in any given classification category, hover over 
 > If the card displays the message "No data found with sensitive information". It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
 >- [Sensitivity labels](sensitivity-labels.md)
 >- [Retention labels](labels.md)
->- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+>- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Top sensitivity labels applied to content
 
@@ -101,5 +101,5 @@ The point of the data classification reporting is to provide visibility into the
 - [View labeled content (preview)](data-classification-content-explorer.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](labels.md)
-- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Overview of retention policies](retention-policies.md)

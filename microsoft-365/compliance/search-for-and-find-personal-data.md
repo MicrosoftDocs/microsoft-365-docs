@@ -75,7 +75,7 @@ Begin searching for personal data by using the sensitive information types that 
 
 This topic includes a list of some sensitive information types that apply to citizens in the European Union. Check the security center or the compliance center for new additions that can help with GDPR compliance.
 
-Also see this article: [List of sensitive information types and what each one looks for](https://support.office.com/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
+Also see this article: [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 Sensitive information types define how the automated process recognizes specific information types such as bank account numbers, health service numbers, and credit card numbers. Sensitive information types are also referred to as conditions. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
 

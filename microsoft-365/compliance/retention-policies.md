@@ -43,7 +43,7 @@ With a retention policy, you can:
     
 - Apply a single policy to the entire organization or specific locations or users.
     
-- Apply a policy to all content or content meeting certain conditions, such as content containing specific keywords or [specific types of sensitive information](what-the-sensitive-information-types-look-for.md).
+- Apply a policy to all content or content meeting certain conditions, such as content containing specific keywords or [specific types of sensitive information](sensitive-information-type-entity-definitions.md)
     
 When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed because the content is retained in place, in its original location. But if someone edits or deletes content that's subject to the policy, a copy is saved to a secure location where it's retained while the policy is in effect.
   
@@ -192,7 +192,7 @@ Therefore, before you assign a retention policy to a site collection for the fir
   
 ## Advanced settings that apply a policy only to content that meets certain conditions
 
-A retention policy can apply to all content in the locations that it includes, or you can choose to apply a retention policy only to content that contains specific keywords or [specific types of sensitive information](what-the-sensitive-information-types-look-for.md).
+A retention policy can apply to all content in the locations that it includes, or you can choose to apply a retention policy only to content that contains specific keywords or [specific types of sensitive information](sensitive-information-type-entity-definitions.md).
   
 ![Advanced retention options](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
   
@@ -208,7 +208,7 @@ Query-based retention uses the search index to identify content.
   
 ### Retain content that contains sensitive information
 
-You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](sensitive-information-type-entity-definitions.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![Sensitive information types page](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   

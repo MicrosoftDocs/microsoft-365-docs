@@ -285,7 +285,7 @@ Typically, you use less restrictive actions, such as sending user notifications,
   
 ### Match accuracy
 
-As described above, a sensitive information type is defined and detected by using a combination of different types of evidence. Commonly, a sensitive information type is defined by multiple such combinations, called patterns. A pattern that requires less evidence has a lower match accuracy (or confidence level), while a pattern that requires more evidence has a higher match accuracy (or confidence level). To learn more about the actual patterns and confidence levels used by every sensitive information type, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+As described above, a sensitive information type is defined and detected by using a combination of different types of evidence. Commonly, a sensitive information type is defined by multiple such combinations, called patterns. A pattern that requires less evidence has a lower match accuracy (or confidence level), while a pattern that requires more evidence has a higher match accuracy (or confidence level). To learn more about the actual patterns and confidence levels used by every sensitive information type, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
   
 For example, the sensitive information type named Credit Card Number is defined by two patterns:
   
@@ -536,7 +536,7 @@ However, DLP reports need pull data from across Microsoft 365, including Exchang
     
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
     
-- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
     
 - [What the DLP functions look for](what-the-dlp-functions-look-for.md)
     

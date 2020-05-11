@@ -12043,14 +12043,12 @@ This sensitive information type entity is included in the EU Tax Identification 
 ### Format
 
 Unique Taxpayer Reference (UTR): 10 digits without spaces and delimiters
-  
-National Insurance Number (NINO): For details, see the section "U.K. National Insurance Number (NINO)" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+ 
   
 ### Pattern
 
 Unique Taxpayer Reference (UTR): 10 digits
-  
-National Insurance Number (NINO): For details, see the section "U.K. National Insurance Number (NINO)" in [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+
   
 ### Checksum
 
