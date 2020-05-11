@@ -19,17 +19,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "In this article, you will learn about end-user spam notifications for quarantined messages."
+description: "Admins can learn about end-user spam notifications for quarantined messages in Exchange Online Protection (EOP)."
 ---
 
 # Use user spam notifications to release and report quarantined messages
 
-Quarantine holds potentially dangerous or unwanted messages in Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes. For more information, see [Quarantine in Office 365](quarantine-email-messages.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, quarantine holds potentially dangerous or unwanted messages. For more information, see [Quarantined messages in EOP](quarantine-email-messages.md).
 
-By default, end-user spam notifications are disabled in anti-spam policies. When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), recipients will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April, 2020) phishing.
+By default, end-user spam notifications are disabled in anti-spam policies. When an admin [enables end-user spam notifications](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications), recipients will receive periodic notifications about their messages that were quarantined as spam, bulk email, or (as of April 2020) phishing.
 
 > [!NOTE]
-> Messages that were quarantined as high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md).
+> Messages that were quarantined as high confidence phishing, malware, or by mail flow rules (also known as transport rules) are only available to admins. For more information, see [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md).
 
 An end-user spam notification contains the following information for each quarantined message:
 
@@ -43,6 +43,6 @@ An end-user spam notification contains the following information for each quaran
 
 - **Release**: For spam (not phish) messages, you can release the message here without going to Quarantine the Security & Compliance Center.
 
-- **Review**: Click this link to go to Quarantine in the Security & Compliance Center, where you can release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md).
+- **Review**: Click this link to go to Quarantine in the Security & Compliance Center, where you can release, delete or report your quarantined messages. For more information, see [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md).
 
 ![Example end-user spam notification](../../media/end-user-spam-notification.png)

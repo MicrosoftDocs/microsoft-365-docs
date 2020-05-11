@@ -2,10 +2,10 @@
 title: "Safety tips in email messages"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/6/2016
+ms.date:
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp

@@ -113,7 +113,7 @@ At this time sensitive information types cannot be used to find data at rest in 
 <td align="left"><p>Look for these types of issues to determine if the query accuracy is on target:</p>
 <p><li>Many false positives</li></p>
 <p><li>Missing known instances of data</li></p>
-<p>See <a href="https://support.office.com/article/Export-Content-Search-results-from-the-Office-365-Security-Compliance-Center-ed48d448-3714-4c42-85f5-10f75f6a4278">Export Content Search results from the Security &amp; Compliance Center</a>.</p>
+<p>See <a href="https://docs.microsoft.com/microsoft-365/compliance/export-search-results">Export Content Search results from the Security &amp; Compliance Center</a>.</p>
 <p>Note: if you're using Mozilla Firefox or Chrome, you might need to first download reports using Internet Explorer or Edge in order to install the required add-in.</p></td>
 </tr>
 </tbody>

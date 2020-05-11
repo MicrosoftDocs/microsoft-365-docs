@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "In this article, you'll learn how to setup Anti-phishing protection in Microsoft 365, to protect your organization from malicious phishing attacks."
+description: "Admins can learn about the anti-phishing policies that are available in Exchange Online Protection (EOP) and Office 365 Advanced Threat Protection (Office 365 ATP)."
 ---
 
 # Anti-phishing policies in Microsoft 365
 
-Policies to configure anti-phishing protection settings are available in Microsoft 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (ATP) organizations.
+Policies to configure anti-phishing protection settings are available in Microsoft 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (Office 365 ATP) organizations.
 
 ATP anti-phishing policies are only available in organizations that have Office 365 ATP. For example:
 
