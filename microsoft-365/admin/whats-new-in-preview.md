@@ -79,14 +79,13 @@ With the increased usage of Teams, we've added a few features to help you manage
 - Finally, Teams is now a step in the initial set up flow if you purchased a license that includes Teams.
 
 ### Productivity score
-Productivity Score gives insights about how people use Microsoft cloud services and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours. If you'd like to learn more, check out the blog:  [Measure and improve the Microsoft 365 experience with Microsoft Productivity Score](https://aka.ms/productivityscoreblog).
-This month, we are introducing the following new concepts to the preview experience:
+Productivity Score gives insights about how people use Microsoft cloud services and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours. This month, we are introducing the following new concepts to the preview experience:
 
-- Focus on customer value tied to key outcomes for each category
-- Time trends for metrics to help tell a story on how the organization is evolving
-- New category within Employee Experience such as Communication and updates to existing categories
-- User details with organizational metadata for actionability
-- Interconnection between Employee Experience and Technology Experience areas
+- Trend view of primary insights on home page and category detail pages
+-Endpoint Analytics and Network Connectivity categories added to Technology Experience
+- Relevant Technology Experience insight shown in Employee Experience categories
+- New Communications category as part of Employee Experience
+- User details with organizational metadata in Employee Experience categories
 
 Productivity score is currently in private preview. [Join the Productivity score private preview](https://aka.ms/productivityscorepreview) to get started.
 
