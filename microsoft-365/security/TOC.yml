@@ -207,7 +207,7 @@
                 - name: Set time zone
                   href: mtp/mtp-time-zone.md
             - name: View device profiles
-              href: mtp:/device-profile.md
+              href: mtp/device-profile.md
             - name: Provide feedback
               href: mtp/feedback.md
             - name: Manage tickets through ServiceNow
