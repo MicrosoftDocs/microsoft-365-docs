@@ -69,7 +69,8 @@
           href: microsoft-365-guest-settings.md    
     - name: Deploy threat protection across Microsoft 365
       href: deploy-threat-protection.md
-
+    - name: Deploy information protection for data privacy regulations
+      href: information-protection-deploy.md
     
 - name: Workload solutions and scenarios
   items: 
