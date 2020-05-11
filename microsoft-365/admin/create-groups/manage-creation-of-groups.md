@@ -169,6 +169,8 @@ If you want to turn off the group creation restriction and again allow all users
     
 ## Step 4: Verify that it works
 
+Changes can take thirty minutes or more to take effect. You can verify the new settings by doing the following:
+
 1. Sign in with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
     
 2. Select the **Planner** tile. 
@@ -181,9 +183,6 @@ Try the same procedure again with a member of the security group.
 
 > [!NOTE]
 > If members of the security group aren't able to create groups, check that they aren't being blocked through their [OWA mailbox policy](https://go.microsoft.com/fwlink/?linkid=852135).
-
-> [!NOTE]
-> After you make changes on who can create an Office 365 group, it can take up to 30 minutes or more in some cases for the changes to take effect.
     
 ## Related articles
 
