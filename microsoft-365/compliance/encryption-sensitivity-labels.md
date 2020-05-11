@@ -1,5 +1,5 @@
 ---
-title: "Restrict access to content by using sensitivity labels to apply encryption"
+title: Restrict access to content using sensitivity labels to apply encryption
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,6 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "When you create a sensitivity label, you can restrict access to content that the label will be applied to. Sensitivity labels can use encryption to protect content."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Restrict access to content by using sensitivity labels to apply encryption 
@@ -371,7 +372,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 - The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
     
     - View, restore, and save copies of previous versions. As an alternative, users can do these actions using Office on the web when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
-    - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.office.com/article/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
+    - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.microsoft.com/en-us/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
 
 For the best collaboration experience for files that are encrypted by a sensitivity label, we recommend you use [sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) and Office for the web. 
 

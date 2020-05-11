@@ -53,7 +53,7 @@ You create and manage retention policies from the [Microsoft 365 compliance cent
 
 Alternatively, you can navigate to the same place in the Microsoft 365 compliance center by using **Solutions** > **Information governance** > **Retention** tab. 
 
-**If you want the ability to review content before it's permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition-reviews.md) to review the content at the end of its retention period.
+**If you want the ability to review content before it’s permanently deleted,** consider using [retention labels](labels.md) instead of a retention policy. When you create a retention label, you can set up a [disposition review](disposition.md#disposition-reviews) to review the content at the end of its retention period.
 
 ## How a retention policy works with content in place
 
@@ -338,7 +338,7 @@ A retention policy that applies to Teams can use [Preservation Lock](#locking-a-
 
 ### Microsoft 365 groups locations
 
-To retain content for an icrosoft 365 group, you need to use the Microsoft 365 groups location. Even though an Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes. A retention policy applied to an Microsoft 365 group includes both the group mailbox and site. A retention policy applied to an Microsoft 365 group protects the resources created by an Microsoft 365 group, which would include Microsoft Teams.
+To retain content for a Microsoft 365 group, you need to use the Microsoft 365 groups location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes. A retention policy applied to a Microsoft 365 group includes both the group mailbox and site. A retention policy applied to an Microsoft 365 group protects the resources created by a Microsoft 365 group, which would include Microsoft Teams.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location. 
 

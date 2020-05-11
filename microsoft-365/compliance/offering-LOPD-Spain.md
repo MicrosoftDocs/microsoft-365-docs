@@ -68,7 +68,3 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 - Organic Law 15/1999 of December 13 for the Protection of Personal Data - [Spanish](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750)
 - [Microsoft Online Services terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/A/2/8/A280F049-3C15-4638-A2FA-EFD2793A956E/LOPD-Compliance.pdf).

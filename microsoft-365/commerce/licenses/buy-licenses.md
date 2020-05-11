@@ -29,6 +29,14 @@ description: "Learn how to add and remove licenses for your Microsoft 365 for bu
 
 # Manage subscription licenses
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 You can add or remove licenses from your subscriptions using these steps.
 
 You can't remove a license from a subscription if it's assigned to a user. If you want to remove a license that is currently assigned to someone, you'll need to [remove licenses from users](../../admin/manage/remove-licenses-from-users.md) before you can remove the license from the subscription.
@@ -37,9 +45,9 @@ You can't remove a license from a subscription if it's assigned to a user. If yo
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
+2. On the **Your products** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 

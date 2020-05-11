@@ -15,6 +15,7 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
+- MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: "Learn how to automate Content Search tasks like creating searches and running reports via PowerShell scripts in the Security & Compliance Center in Office 365."
 ---
@@ -27,7 +28,7 @@ description: "Learn how to automate Content Search tasks like creating searches 
 
 - You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the scripts that are described in this topic. 
     
-- To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
+- To collect a list of the URLs for the OneDrive for Business sites in your organization that you can add to the CSV file in Step 1, see [Create a list of all OneDrive locations in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls). 
     
 - Be sure to save all the files that you create in this topic to the same folder. That will make it easier to run the scripts.
     

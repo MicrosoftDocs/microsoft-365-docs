@@ -25,6 +25,14 @@ description: "Learn how to remove licenses from user accounts."
 
 # Unassign licenses from users
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 ::: moniker range="o365-worldwide"
 You  can remove, or unassign, licenses from users on either the **Active users** page, or on the **Licenses** page. Which method you use depends on whether you want to unassign product licenses from specific users, or unassign users licenses from specific products.
 

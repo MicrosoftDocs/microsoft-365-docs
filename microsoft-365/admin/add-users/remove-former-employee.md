@@ -27,6 +27,14 @@ description: "Follow this checklist to remove an employee from Microsoft 365 and
 ---
 
 # Remove a former employee
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
 ## Sign out now!
 
@@ -313,7 +321,7 @@ When you remove the license, all that user's data is held for 30 days. You can [
 
 
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 
 ::: moniker-end

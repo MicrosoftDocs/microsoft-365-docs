@@ -22,9 +22,17 @@ keywords: billing accounts, organization info, invoices
 
 # Understand your invoice
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have an Office 365 subscription, see [Understand your invoice for Office 365 for business](understand-your-invoice2.md).
+If you only have a Microsoft 365 subscription, see [Understand your invoice for Microsoft 365 for business](understand-your-invoice2.md).
 
 ## Understand the invoice header
 
@@ -67,7 +75,7 @@ The charges pages show the cost broken down by product. For Azure customers, the
 | Total | The total amount due for the purchase |
 
 Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and
-quantity. The invoice details outline the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
+quantity. The invoice details show the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
 
     `Total = Charges - Azure Credit + Tax`
 
@@ -75,7 +83,7 @@ The total amount due for each service family is calculated by subtracting Azure 
 
     `Total = Charges/Credits - Azure Credit + Tax`
 
-If there are Azure charges on your invoice that you would like more details on, see [Understand charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## Understand the last invoice page
 
@@ -92,11 +100,11 @@ If you have third-party services in your bill, the name and address of each publ
 Invoices are available online. A link to your online invoice is available from your PDF invoice, and from an email notification. The online invoice is expandable so you can view the charges on your invoice and
 see more details for each item. The online invoice includes:
 
-- **Pricing details** &mdash; Additional information including details about discounts and product pricing.
+- **Pricing details**&mdash;Additional information including details about discounts and product pricing.
 
-- **Online payment** &mdash; You can choose to make a payment online from the invoice.
+- **Online payment**&mdash;You can choose to make a payment online from the invoice.
 
-- **Azure cost management** &mdash; For Azure customers, online invoices include a link to Azure cost management.
+- **Azure cost management**&mdash;For Azure customers, online invoices include a link to Azure cost management.
 
 ### To view your online invoice
 
@@ -110,11 +118,11 @@ see more details for each item. The online invoice includes:
 
 ### When is my Invoice available?
 
-Some invoices are generated within 24 hours of the purchase, while others are generated at the end of the billing period and include all items from that period.
+Some invoices are generated within 24 hours of the purchase. Other invoices are generated at the end of the billing period and include all items from that period.
 
 ### How do I pay the amount due on my Invoice?
 
-Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit card, it is automatically charged within 10 days of the invoice date. If your payment method is by check or wire transfer, see the information under **Payment Instructions** in the PDF.
+Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit card, it's automatically charged within 10 days of the invoice date. If your payment method is by check or wire transfer, see the information under **Payment Instructions** in the PDF.
 
 ### What's the difference between "Sold to" and "Bill to" addresses?
 
@@ -123,7 +131,7 @@ Payment instructions depend on your payment method and are provided at the botto
 
 ### What are "Billed amount" and "Amount due?"
 
-- **Billed amount:** The total amount for the purchase you made.
+- **Billed amount:** The total amount for the purchase that you made.
 - **Amount due:** The remaining balance for what you owe.
 
 ### What is the difference between "'Service period" and "Billing period?"
@@ -133,7 +141,7 @@ Payment instructions depend on your payment method and are provided at the botto
 
 ### How do I view and print my bill?
 
-1. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
+1. On the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 
 To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
