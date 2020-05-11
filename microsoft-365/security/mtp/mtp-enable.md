@@ -41,7 +41,7 @@ You must be a **global administrator** or a **security administrator** in Azure 
 ## Start using the service
 
 >[!IMPORTANT]
->Starting May 10, 2020, Microsoft will gradually roll out new, optimized experiences around [licensing requirements](prerequisites.md#licensing-requirements) and turning on Microsoft Threat Protection. For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
+>Starting May 12, 2020, Microsoft will gradually roll out new, optimized experiences around [licensing requirements](prerequisites.md#licensing-requirements) and turning on Microsoft Threat Protection. For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
 
 Microsoft Threat Protection aggregates data from the various integrated services. It will process and store data centrally to identify new insights and make centralized response workflows possible. It does this without affecting existing deployments, settings, or data associated with the integrated services.
 
@@ -60,7 +60,7 @@ If Microsoft Defender ATP has been provisioned for your organization, data will 
  
 You need to provide consent before data is shared between services and aggregated.
 
-**New experience:** Starting May 10, 2020, customers will gradually receive changes to this experience. For those with the new experience, the service automatically selects the optimal data center location for your aggregated data based on your existing Microsoft 365 security services. The selected data center location is shown in the screen.
+**New experience:** Starting May 12, 2020, customers will gradually receive changes to this experience. For those with the new experience, the service automatically selects the optimal data center location for your aggregated data based on your existing Microsoft 365 security services. The selected data center location is shown in the screen.
 
 ### Confirm that the service is on
 Once the service is provisioned, it adds:
