@@ -12401,7 +12401,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Birthday 
 - Date of Birth 
 
-## U.S. social aecurity number (SSN)
+## U.S. social security number (SSN)
 
 ### Format
 
