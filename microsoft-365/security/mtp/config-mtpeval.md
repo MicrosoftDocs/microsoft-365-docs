@@ -174,20 +174,20 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 ![Image of_the Microsoft Defender ATP page where the block unsanctioned apps checkbox under Microsoft Defender ATP integration is selected. Click save.](../../media/mtp-eval-56.png) <br>
 
 5. Under Cloud discovery settings, select **User enrichment**, then enable the integration with Azure Active Directory.
-![Image User enrichment section where the enrich discovered user identifiers with Azure Active Directory usernames checkbox is selected](../../media/mtp-eval-57.png) <br>
+![Image of User enrichment section where the enrich discovered user identifiers with Azure Active Directory usernames checkbox is selected](../../media/mtp-eval-57.png) <br>
 
 ## Configure Microsoft Defender Advanced Threat Protection
 >[!NOTE]
 >Skip this step if you have already enabled Microsoft Defender Advanced Threat Protection.
 
 1. Navigate to [Microsoft 365 Security Center](https://security.microsoft.com/info) > **More Resources** > **Microsoft Defender Security Center**. Click **Open**.
-<br>![Image of_page](../../media/mtp-eval-58.png) <br>
+<br>![Image of_Microsoft Defender Security Center option in the Microsoft 365 Security Center page](../../media/mtp-eval-58.png) <br>
  
 2. Follow the Microsoft Defender Advanced Threat Protection wizard. Click **Next**. 
-<br>![Image of_page](../../media/mtp-eval-59.png) <br>
+<br>![Image of_the Microsoft Defender Security Center welcome wizard page](../../media/mtp-eval-59.png) <br>
 
 3. Choose based on your preferred data storage location, data retention policy, organization size, and opt-in for preview features. 
-<br>![Image of_page](../../media/mtp-eval-60.png) <br>
+<br>![Image of_the page to select your data storage country, retention policy, and organization size. Click next when you're done selecting.](../../media/mtp-eval-60.png) <br>
 >[!NOTE]
 >You cannot change some of the settings, like data storage location, afterwards. 
 <br>
@@ -195,42 +195,42 @@ There is a PowerShell Module called the *Office 365 Advanced Threat Protection R
 Click **Next**. 
 
 4. Click **Continue** and it will provision your Microsoft Defender ATP tenant.
-<br>![Image of_page](../../media/mtp-eval-61.png) <br>
+<br>![Image of_the page prompting you click the continue button to create your cloud instance](../../media/mtp-eval-61.png) <br>
 
 5. Onboard your endpoints through Group Policies, Microsoft Endpoint Manager or by running a local script to Microsoft Defender ATP. For simplicity, this guide uses the local script.
 
 6. Click **Download package** and copy the onboarding script to your endpoint(s).  
-<br>![Image of_page](../../media/mtp-eval-62.png) <br>
+<br>![Image of_page prompting you click the Download package button to copy the onboarding script to your endpoint or endpoints](../../media/mtp-eval-62.png) <br>
 
 7. On your endpoint, run the onboarding script as Administrator and choose Y. 
-<br>![Image of_page](../../media/mtp-eval-63.png) <br>
+<br>![Image of_the commandline where you run the onboarding script and choose Y to proceed](../../media/mtp-eval-63.png) <br>
 
 8. Congratulations, you have onboarded your first endpoint.  
-<br>![Image of_page](../../media/mtp-eval-64.png) <br>
+<br>![Image of_the commandline where you get the confirmation that you have onboarded your first endpoint. Press any key to continue](../../media/mtp-eval-64.png) <br>
 
 9. Copy-paste the detection test from the Microsoft Defender ATP wizard.
-<br>![Image of_page](../../media/mtp-eval-65.png) <br>
+<br>![Image of_the run a detection test step where you should click Copy to copy the detection test script that you should paste in the command prompt](../../media/mtp-eval-65.png) <br>
 
 10. Copy the PowerShell script to an elevated command prompt and run it. 
-<br>![Image of_page](../../media/mtp-eval-66.png) <br>
+<br>![Image of_command prompt where you should copy the PowerShell script to an elevated command prompt and run it](../../media/mtp-eval-66.png) <br>
 
 11. Select **Start using Microsoft Defender ATP** from the Wizard.
-<br>![Image of_page](../../media/mtp-eval-67.png) <br>
+<br>![Image of_the confirmation prompt from the wizard where you should click Start using Microsoft Defender ATP](../../media/mtp-eval-67.png) <br>
  
 12. Visit the [Microsoft Defender Security Center](https://securitycenter.windows.com/). Go to **Settings** and then select **Advanced features**. 
-<br>![Image of_page](../../media/mtp-eval-68.png) <br>
+<br>![Image of_Microsoft Defender Security Center Settings menu where you should select Advanced features](../../media/mtp-eval-68.png) <br>
 
 13. Turn on the integration with **Azure Advanced Threat Protection**.  
-<br>![Image of_page](../../media/mtp-eval-69.png) <br>
+<br>![Image of_Microsoft Defender Security Center Advanced features, Azure Advanced Threat Protection option toggle that you need to turn on](../../media/mtp-eval-69.png) <br>
 
 14. Turn on the integration with **Office 365 Threat Intelligence**.
-<br>![Image of_page](../../media/mtp-eval-70.png) <br>
+<br>![Image of_Microsoft Defender Security Center Advanced features, Office 365 Threat Intelligence option toggle that you need to turn on](../../media/mtp-eval-70.png) <br>
 
 15. Turn on integration with **Microsoft Cloud App Security**.
-<br>![Image of_page](../../media/mtp-eval-71.png) <br>
+<br>![Image of_Microsoft Defender Security Center Advanced features, Microsoft Cloud App Security option toggle that you need to turn on](../../media/mtp-eval-71.png) <br>
 
 16. Scroll down and click **Save preferences** to confirm the new integrations.
-<br>![Image of_page](../../media/mtp-eval-72.png) <br>
+<br>![Image of_Save preferences button that you need to click](../../media/mtp-eval-72.png) <br>
 
 ## Next steps
 [Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service) and then [generate a test alert](generate-test-alert.md).
