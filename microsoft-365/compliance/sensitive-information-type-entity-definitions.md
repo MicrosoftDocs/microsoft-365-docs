@@ -4872,32 +4872,34 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 |EU Driver's License|EU National ID|EU Passport|EU SSN  |EU Tax ID  |
 |---------|---------|---------|---------|---------|
-|[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-id) |1:5 |
-|[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|[Belgium](#belgium-social-security-number-or-equivalent-id) |2:5 |
-|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |[Croatia](#croatia-social-security-number-or-equivalent-id) |3:5 |
-|[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|[Czech](#czech-social-security-number-or-equivalent-id) |4:5 |
-|[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |[Cyprus](#cyprus-passport-number)   |[Denmark](#denmark-social-security-number-or-equivalent-id) |5:5 |
-|[Czech](#czech-drivers-license-number)      |[Ireland](#ireland-national-identification-number)    |[Czech](#czech-passport-number)   |[Finland](#finland-social-security-number-or-equivalent-id)  |6:5 |
-|[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |[Denmark](#denmark-passport-number) |[Hungary](#hungary-social-security-number-or-equivalent-id) |7:5 |
-|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-national-identification-number)   |[Estonia](#estonia-passport-number)  |[Sweden](#sweden-social-security-number-or-equivalent-id) |8:5 |
-|[Finland](#finland-drivers-license-number)  |[Lithuania](#lithuania-national-identification-number) |[Greece](#greece-passport-number)|9:4         |9:5 |
-|[Greece](#greece-drivers-license-number)    |[Luxemburg](#luxemburg-national-identification-number)    |[Hungary](#hungary-passport-number) |10:4         |10:5 |
-|[Hungary](#hungary-drivers-license-number)  |[Malta](#malta-national-identification-number)         |[Ireland](#ireland-passport-number)    |11:4         |11:5 |
-|[Ireland](#ireland-drivers-license-number)  |[Netherlands](#netherlands-national-identification-number)|[Italy](#italy-passport-number)     |12:4         |12:5 |
-|[Latvia](#latvia-drivers-license-number)    |[Romania](#romania-national-identification-number)        |[Latvia](#latvia-passport-number)   |13:4         |13:5 |
-|[Lithuania](#lithuania-drivers-license-number) |[Slovakia](#slovakia-national-identification-number)|[Lithuania](#lithuania-passport-number)|14:4         |14:5 |
-|[Luxemburg](#luxemburg-drivers-license-number) |[Slovenia](#slovenia-national-identification-number)    |[Luxemburg](#luxemburg-passport-number)|15:4         |15:5 |
-|[Malta](#malta-drivers-license-number) |[Spain](#spain-national-identification-number)  |[Malta](#malta-passport-number)|16:4         |16:4 |
-|[Netherlands](#netherlands-drivers-license-number)     |17:2         |[Netherlands](#netherlands-passport-number)|17:4         |17:5 |
-|[Poland](#poland-drivers-license-number)     |18:2         |[Portugal](#portugal-passport-number)|18:4         |18:5 |
-|[Portugal](#portugal-drivers-license-number)     |19:2         |[Romania](#romania-passport-number) |19:4         |19:5 |
-|[Romania](#romania-drivers-license-number)     |20:2         |[Slovakia](#slovakia-passport-number)|20:4         |20:5 |
-|[Slovakia](#slovakia-drivers-license-number)|21:2|[Slovenia](#slovenia-passport-number)|21:4|21:5|
-|[Slovenia](#slovenia-drivers-license-number)|22:2|[Spain](#spain-passport-number)|22:4|22:5|
-|[Spain](#spain-drivers-license-number)|23:2|23:3|23:4|23:5|
-|[Sweden](#sweden-drivers-license-number)|24:2|24:3|24:4|24:5|
-|25:1|25:2|25:3|25:4|25:5|
-|26:1|26:2|26:3|26:4|26:5|
+|[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-id) |[Austria](#austria-tax-identification-number) |
+|[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|[Belgium](#belgium-social-security-number-or-equivalent-id) |[Belgium](#belgium-tax-identification-number)|
+|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |[Croatia](#croatia-social-security-number-or-equivalent-id) |[Bulgaria](#bulgaria-tax-identification-number)|
+|[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|[Czech](#czech-social-security-number-or-equivalent-id) |[Croatia](#croatia-tax-identification-number)|
+|[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |[Cyprus](#cyprus-passport-number)   |[Denmark](#denmark-social-security-number-or-equivalent-id) |[Cyprus](#cyprus-tax-identification-number)|
+|[Czech](#czech-drivers-license-number)      |[Ireland](#ireland-national-identification-number)    |[Czech](#czech-passport-number)   |[Finland](#finland-social-security-number-or-equivalent-id)  |[Czech](#czech-tax-identification-number)|
+|[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |[Denmark](#denmark-passport-number) |[Hungary](#hungary-social-security-number-or-equivalent-id) |[Denmark](#denmark-tax-identification-number)|
+|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-national-identification-number)   |[Estonia](#estonia-passport-number)  |[Sweden](#sweden-social-security-number-or-equivalent-id) |[Estonia](#estonia-tax-identification-number)|
+|[Finland](#finland-drivers-license-number)  |[Lithuania](#lithuania-national-identification-number) |[Greece](#greece-passport-number)|9:4         |[Finland](#finland-tax-identification-number)|
+|[Greece](#greece-drivers-license-number)    |[Luxemburg](#luxemburg-national-identification-number)    |[Hungary](#hungary-passport-number) |10:4         |[France](#france-tax-identification-number)|
+|[Hungary](#hungary-drivers-license-number)  |[Malta](#malta-national-identification-number)         |[Ireland](#ireland-passport-number)    |11:4         |[Germany](#germany-tax-identification-number)|
+|[Ireland](#ireland-drivers-license-number)  |[Netherlands](#netherlands-national-identification-number)|[Italy](#italy-passport-number)     |12:4         |[Greece](#greece-tax-identification-number)|
+|[Latvia](#latvia-drivers-license-number)    |[Romania](#romania-national-identification-number)        |[Latvia](#latvia-passport-number)   |13:4         |[[Hungary](#hungary-tax-identification-number) |
+|[Lithuania](#lithuania-drivers-license-number) |[Slovakia](#slovakia-national-identification-number)|[Lithuania](#lithuania-passport-number)|14:4         |[Ireland](#ireland-tax-identification-number)|
+|[Luxemburg](#luxemburg-drivers-license-number) |[Slovenia](#slovenia-national-identification-number)    |[Luxemburg](#luxemburg-passport-number)|15:4         |[Italy](#italy-tax-identification-number)|
+|[Malta](#malta-drivers-license-number) |[Spain](#spain-national-identification-number)  |[Malta](#malta-passport-number)|16:4         |[Latvia](#latvia-tax-identification-number)|
+|[Netherlands](#netherlands-drivers-license-number)     |17:2         |[Netherlands](#netherlands-passport-number)|17:4         |[Lithuania](#lithuania-tax-identification-number)|
+|[Poland](#poland-drivers-license-number)     |18:2         |[Portugal](#portugal-passport-number)|18:4         |[Luxemburg](#luxemburg-tax-identification-number) |
+|[Portugal](#portugal-drivers-license-number)     |19:2         |[Romania](#romania-passport-number) |19:4         |[Malta](#malta-tax-identification-number)|
+|[Romania](#romania-drivers-license-number)     |20:2         |[Slovakia](#slovakia-passport-number)|20:4         |[Netherlands](#netherlands-tax-identification-number)|
+|[Slovakia](#slovakia-drivers-license-number)|21:2|[Slovenia](#slovenia-passport-number)|21:4|[Poland](#poland-tax-identification-number)|
+|[Slovenia](#slovenia-drivers-license-number)|22:2|[Spain](#spain-passport-number)|22:4|[Portugal](#portugal-tax-identification-number)|
+|[Spain](#spain-drivers-license-number)|23:2|23:3|23:4|[Romania](#romania-tax-identification-number)|
+|[Sweden](#sweden-drivers-license-number)|24:2|24:3|24:4|[Slovakia](#slovakia-tax-identification-number)|
+|25:1|25:2|25:3|25:4|[Slovenia](#slovenia-tax-identification-number)|
+|26:1|26:2|26:3|26:4|[Spain](#spain-tax-identification-number)|
+|27:1|27:2|27:3|27:4|[Sweden](#sweden-tax-identification-number)|
+|28:1|28:2|28:3|28:4|[U.K.](#uk-tax-identification-number))
 
 
 ## Finland driver's license number
