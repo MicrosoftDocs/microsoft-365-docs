@@ -100,7 +100,7 @@ Here are some steps that you can take to help prevent false positives:
 
   For more information about these settings, see [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-- **Use the available safe sender lists**: For information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md.
+- **Use the available safe sender lists**: For information, see [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
 
 - **Verify users are within the sending and receiving limits** as described in [Receiving and sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) in the Exchange Online service description.
 
