@@ -4873,19 +4873,19 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 |EU Driver's License|EU National ID|EU Passport|EU SSN  |EU Tax ID  |
 |---------|---------|---------|---------|---------|
 |[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-id) |1:5 |
-|[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|2:4         |2:5 |
-|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |3:4         |3:5 |
-|[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|4:4         |4:5 |
-|[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |[Cyprus](#cyprus-passport-number)   |5:4         |5:5 |
-|[Czech](#czech-drivers-license-number)      |[Ireland](#ireland-national-identification-number)    |[Czech](#czech-passport-number)   |6:4         |6:5 |
-|[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |[Denmark](#denmark-passport-number) |7:4         |7:5 |
-|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-national-identification-number)   |[Estonia](#estonia-passport-number)  |8:4         |8:5 |
+|[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|[Belgium](#belgium-social-security-number-or-equivalent-id) |2:5 |
+|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |[Croatia](#croatia-social-security-number-or-equivalent-id) |3:5 |
+|[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|[Czech](#czech-social-security-number-or-equivalent-id) |4:5 |
+|[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |[Cyprus](#cyprus-passport-number)   |[Denmark](#denmark-social-security-number-or-equivalent-id) |5:5 |
+|[Czech](#czech-drivers-license-number)      |[Ireland](#ireland-national-identification-number)    |[Czech](#czech-passport-number)   |[Finland](#finland-social-security-number-or-equivalent-id)  |6:5 |
+|[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |[Denmark](#denmark-passport-number) |[Hungary](#hungary-social-security-number-or-equivalent-id) |7:5 |
+|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-national-identification-number)   |[Estonia](#estonia-passport-number)  |[Sweden](#sweden-social-security-number-or-equivalent-id) |8:5 |
 |[Finland](#finland-drivers-license-number)  |[Lithuania](#lithuania-national-identification-number) |[Greece](#greece-passport-number)|9:4         |9:5 |
 |[Greece](#greece-drivers-license-number)    |[Luxemburg](#luxemburg-national-identification-number)    |[Hungary](#hungary-passport-number) |10:4         |10:5 |
 |[Hungary](#hungary-drivers-license-number)  |[Malta](#malta-national-identification-number)         |[Ireland](#ireland-passport-number)    |11:4         |11:5 |
 |[Ireland](#ireland-drivers-license-number)  |[Netherlands](#netherlands-national-identification-number)|[Italy](#italy-passport-number)     |12:4         |12:5 |
 |[Latvia](#latvia-drivers-license-number)    |[Romania](#romania-national-identification-number)        |[Latvia](#latvia-passport-number)   |13:4         |13:5 |
-|[Lithuania](#lithuania-drivers-license-number) |[Slovakia](#slovakia-national-identification-number)|[[Lithuania](#lithuania-passport-number)|14:4         |14:5 |
+|[Lithuania](#lithuania-drivers-license-number) |[Slovakia](#slovakia-national-identification-number)|[Lithuania](#lithuania-passport-number)|14:4         |14:5 |
 |[Luxemburg](#luxemburg-drivers-license-number) |[Slovenia](#slovenia-national-identification-number)    |[Luxemburg](#luxemburg-passport-number)|15:4         |15:5 |
 |[Malta](#malta-drivers-license-number) |[Spain](#spain-national-identification-number)  |[Malta](#malta-passport-number)|16:4         |16:4 |
 |[Netherlands](#netherlands-drivers-license-number)     |17:2         |[Netherlands](#netherlands-passport-number)|17:4         |17:5 |
