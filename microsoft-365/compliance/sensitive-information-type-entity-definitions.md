@@ -4872,7 +4872,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 |EU Driver's License|EU National ID|EU Passport|EU SSN  |EU Tax ID  |
 |---------|---------|---------|---------|---------|
-|[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-id |1:5 |
+|[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-id) |1:5 |
 |[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|2:4         |2:5 |
 |[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |3:4         |3:5 |
 |[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|4:4         |4:5 |
