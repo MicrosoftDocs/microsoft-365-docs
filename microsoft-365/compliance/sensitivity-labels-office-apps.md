@@ -177,7 +177,7 @@ Office apps apply content marking and encryption with a sensitivity label differ
 
 If a sensitivity label is applied to an Office file outside the Office app, content markings are automatically applied by the Azure Information Protection unified labeling client when the file is opened in Office desktop apps. The content markings are not automatically applied when you use built-in labeling for desktop, mobile, or web apps.
 
-Scenarios that include applying a sensitivity label outside the Office app include:
+Scenarios that include applying a sensitivity label outside Office apps include:
 
 - The scanner, File Explorer, and PowerShell from the Azure Information Protection unified labeling client 
 
