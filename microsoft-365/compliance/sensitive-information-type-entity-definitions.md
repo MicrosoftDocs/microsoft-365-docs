@@ -707,7 +707,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - reisepass
 - österreichisch reisepass
 
-## Austria social security number or equivalent ID
+## Austria social security number or equivalent identification
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
 
 ### Format
@@ -1504,7 +1504,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - reisepass kein
 - reisepass
 
-## Belgium social security number or equivalent identification number
+## Belgium social security number or equivalent identification
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
 
 ### Format
@@ -4872,14 +4872,14 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 |EU Driver's License|EU National ID|EU Passport|EU SSN  |EU Tax ID  |
 |---------|---------|---------|---------|---------|
-|[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-id) |[Austria](#austria-tax-identification-number) |
-|[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|[Belgium](#belgium-social-security-number-or-equivalent-id) |[Belgium](#belgium-tax-identification-number)|
-|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |[Croatia](#croatia-social-security-number-or-equivalent-id) |[Bulgaria](#bulgaria-tax-identification-number)|
-|[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|[Czech](#czech-social-security-number-or-equivalent-id) |[Croatia](#croatia-tax-identification-number)|
-|[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |[Cyprus](#cyprus-passport-number)   |[Denmark](#denmark-social-security-number-or-equivalent-id) |[Cyprus](#cyprus-tax-identification-number)|
-|[Czech](#czech-drivers-license-number)      |[Ireland](#ireland-national-identification-number)    |[Czech](#czech-passport-number)   |[Finland](#finland-social-security-number-or-equivalent-id)  |[Czech](#czech-tax-identification-number)|
-|[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |[Denmark](#denmark-passport-number) |[Hungary](#hungary-social-security-number-or-equivalent-id) |[Denmark](#denmark-tax-identification-number)|
-|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-national-identification-number)   |[Estonia](#estonia-passport-number)  |[Sweden](#sweden-social-security-number-or-equivalent-id) |[Estonia](#estonia-tax-identification-number)|
+|[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-identification) |[Austria](#austria-tax-identification-number) |
+|[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|[Belgium](#belgium-social-security-number-or-equivalent-identification) |[Belgium](#belgium-tax-identification-number)|
+|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |[Croatia](#croatia-social-security-number-or-equivalent-identification) |[Bulgaria](#bulgaria-tax-identification-number)|
+|[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|[Czech](#czech-social-security-number-or-equivalent-identification) |[Croatia](#croatia-tax-identification-number)|
+|[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |[Cyprus](#cyprus-passport-number)   |[Denmark](#denmark-social-security-number-or-equivalent-identification) |[Cyprus](#cyprus-tax-identification-number)|
+|[Czech](#czech-drivers-license-number)      |[Ireland](#ireland-national-identification-number)    |[Czech](#czech-passport-number)   |[Finland](#finland-social-security-number-or-equivalent-identification)  |[Czech](#czech-tax-identification-number)|
+|[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |[Denmark](#denmark-passport-number) |[Hungary](#hungary-social-security-number-or-equivalent-identification) |[Denmark](#denmark-tax-identification-number)|
+|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-national-identification-number)   |[Estonia](#estonia-passport-number)  |[Sweden](#sweden-social-security-number-or-equivalent-identification) |[Estonia](#estonia-tax-identification-number)|
 |[Finland](#finland-drivers-license-number)  |[Lithuania](#lithuania-national-identification-number) |[Greece](#greece-passport-number)|9:4         |[Finland](#finland-tax-identification-number)|
 |[Greece](#greece-drivers-license-number)    |[Luxemburg](#luxemburg-national-identification-number)    |[Hungary](#hungary-passport-number) |10:4         |[France](#france-tax-identification-number)|
 |[Hungary](#hungary-drivers-license-number)  |[Malta](#malta-national-identification-number)         |[Ireland](#ireland-passport-number)    |11:4         |[Germany](#germany-tax-identification-number)|
