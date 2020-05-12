@@ -169,7 +169,7 @@ On your DNS host's website, you'll create three new CNAME records, typically one
       |CNAME (Alias)  <br/> |sip  <br/> |sipdir.online.lync.com  <br/> |1 hour  <br/> |
    
    > [!NOTE]
-   > For **TTL**: Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. .These records do not apply to Exchange, Lync, or Skype for Business hybrid deployments. 
+   > For **TTL**: Set this value to **1 hour** or to the equivalent in minutes (**60**), seconds (**3600**), etc. .These records do not apply to Exchange, Lync, or Skype for Business hybrid deployments. 
   
 2. When you've finished, save the records.
 
@@ -432,4 +432,3 @@ On your DNS host's website, you'll create two new SRV records, typically one at 
   
  **If you don't have a website that you use with your custom domain**, you can have Microsoft 365 set up and manage DNS records for your domain instead of doing all the setup yourself. Learn about the [two options for setting up and managing DNS records for a custom domain](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. 
   
-
