@@ -4879,7 +4879,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 |[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |5:3         |5:4         |5:5 |
 |[Czech](#czech-drivers-license-number)     |[Ireland](#ireland-national-identification-number)    |6:3         |6:4         |6:5 |
 |[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |7:3         |7:4         |7:5 |
-|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-nationalidentificaiton-number)   |8:3         |8:4         |8:5 |
+|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-national-identificaiton-number)   |8:3         |8:4         |8:5 |
 |[Finland](#finland-drivers-license-number)  |[Lithuania](#lithuania-national-identification-number) |9:3         |9:4         |9:5 |
 |[Greece](#greece-drivers-license-number)    |[Luxemburg](#luxemburg-national-identification-number)    |10:3         |10:4         |10:5 |
 |[Hungary](#hungary-drivers-license-number)  |[Malta](#malta-national-identification-number)         |11:3         |11:4         |11:5 |
