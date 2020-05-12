@@ -164,9 +164,9 @@ Otherwise:
 
 To use the Office built-in labeling client with Office on the web for documents in OneDrive for Business or SharePoint Online, make sure you've opted-in to the preview to [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## When Office 365 applies content marking and encryption
+## When Office apps apply content marking and encryption
 
-Office 365 applies content marking and encryption with a sensitivity label differently, depending on the app you use.
+Office apps apply content marking and encryption with a sensitivity label differently, depending on the app you use.
 
 | App | Content marking | Encryption |
 | --- | --- | --- |
@@ -174,6 +174,20 @@ Office 365 applies content marking and encryption with a sensitivity label diffe
 | Outlook for PC and Mac | After Exchange Online sends the email | Immediately |
 | Outlook on the web, iOS, and Android | After Exchange Online sends the email | After Exchange Online sends the email |
 |
+
+If a sensitivity label is applied to an Office file outside the Office app, content markings are automatically applied by the Azure Information Protection unified labeling client when the file is opened in Office desktop apps. The content markings are not automatically applied when you use built-in labeling for desktop, mobile, or web apps.
+
+Scenarios that include applying a sensitivity label outside the Office app include:
+
+- The scanner, File Explorer, and PowerShell from the Azure Information Protection unified labeling client 
+
+- Auto-labeling policies for SharePoint and OneDrive
+
+- Exported labeled and encrypted data from Power BI
+
+- Microsoft Cloud App Security
+
+For these scenarios, using their Office apps, a user with built-in labeling can apply the label's content markings by temporarily removing or replacing the current label and then reapplying the original label.
 
 ## End-user documentation
 
