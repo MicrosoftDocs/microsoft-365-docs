@@ -3890,7 +3890,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - unique identification number
 - tax number
 
-## Denmark driver's license
+## Denmark driver's license number
 This sensitive information type entity is only available in the EU Driver's License bundle.
 
 ### Format
@@ -4877,7 +4877,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 |[Bulgaria](#bulgaria-drivers-license-number)     |3:2         |3:3         |3:4         |3:5 |
 |[Croatia](#croatia-drivers-license-number)  |4:2         |4:3         |4:4         |4:5 |
 |[Cyprus](#cyprus-drivers-license-number)     |5:2         |5:3         |5:4         |5:5 |
-|[Czech](#czech-drivers-licens-number)     |6:2         |6:3         |6:4         |6:5 |
+|[Czech](#czech-drivers-license-number)     |6:2         |6:3         |6:4         |6:5 |
 |[Denmark](#denmark-drivers-license-number)   |7:2         |7:3         |7:4         |7:5 |
 |[Estonia](#estonia-drivers-license-number)     |8:2         |8:3         |8:4         |8:5 |
 |[Finland](#finland-drivers-license-number)     |9:2         |9:3         |9:4         |9:5 |
@@ -7833,7 +7833,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 社会保険のテンキー 
 - 社会保険番号 
 
-## Latvia driver's license
+## Latvia driver's license number
 This sensitive information type entity is only available in the EU Driver's License bundle.
 
 ### Format
@@ -9682,7 +9682,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - portugal bi number
 
 
-## Portugal driver's license
+## Portugal driver's license number
 This sensitive information type entity is only available in the EU Driver's License bundle.
 
 ### Format
