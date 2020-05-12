@@ -103,7 +103,7 @@ To adjust the sensitivity of the offensive language classifier for policies usin
 
 #### Alert volume
 
-User activities detected by your policies are assigned a specific risk score, which in turn determines the alert severity (low, medium, high). By default, we'll generate a certain amount of low, medium, and high severity alerts, but you can increase or decrease the volume to suit your needs. To adjust the volume of alerts for all insider risk management policies, choose one of the following settings:
+User activities detected by insider risk policies are assigned a specific risk score, which in turn determines the alert severity (low, medium, high). By default, we'll generate a certain amount of low, medium, and high severity alerts, but you can increase or decrease the volume to suit your needs. To adjust the volume of alerts for all insider risk management policies, choose one of the following settings:
 
 - **Fewer alerts**: You'll see all high severity alerts, fewer medium severity alerts, and no low severity ones. This means you might miss some true positives.
 - **Default volume**: You'll see all high severity alerts and a balanced amount of medium and low severity alerts.
