@@ -40,7 +40,7 @@ Any user can create a group unless you [limit group creation to a specific set o
 
 Groups have the following roles:
 
-- **Owners** - Group owners can add or remove members and have unique permissions like the ability to delete conversations from the shared inbox or change different settings about the group. Group owners can rename the group, update the description or picture and more. Group Owners cannot access data shared in the group unless they are members.
+- **Owners** - Group owners can add or remove members and have unique permissions like the ability to delete conversations from the shared inbox or change different settings about the group. Group owners can rename the group, update the description or picture, and more. Group Owners cannot access data shared in the group unless they are members.
 - **Members** - Members can access everything in the group, but can't change group settings. By default group members can invite guests to join your group, though you can [control that setting](manage-guest-access-in-groups.md).
 - **Guests** - Group guests are members who are from outside your organization.
 
