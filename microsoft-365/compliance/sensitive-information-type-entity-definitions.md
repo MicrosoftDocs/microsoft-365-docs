@@ -4870,30 +4870,30 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 ## EU bundles
 
-|EU Driver's License  |EU National ID|EU Passport|EU SSN  |EU Tax ID  |
+|EU Driver's License|EU National ID|EU Passport|EU SSN  |EU Tax ID  |
 |---------|---------|---------|---------|---------|
-|[Austria](#austria-drivers-license-number)    |1:2 |1:3         |1:4         |1:5 |
-|[Belgium](#belgium-drivers-license-number)  |2:2         |2:3         |2:4         |2:5 |
-|[Bulgaria](#bulgaria-drivers-license-number)     |3:2         |3:3         |3:4         |3:5 |
-|[Croatia](#croatia-drivers-license-number)  |4:2         |4:3         |4:4         |4:5 |
-|[Cyprus](#cyprus-drivers-license-number)     |5:2         |5:3         |5:4         |5:5 |
-|[Czech](#czech-drivers-license-number)     |6:2         |6:3         |6:4         |6:5 |
-|[Denmark](#denmark-drivers-license-number)   |7:2         |7:3         |7:4         |7:5 |
-|[Estonia](#estonia-drivers-license-number)     |8:2         |8:3         |8:4         |8:5 |
-|[Finland](#finland-drivers-license-number)     |9:2         |9:3         |9:4         |9:5 |
-|[Greece](#greece-drivers-license-number)    |10:2         |10:3         |10:4         |10:5 |
-|[Hungary](#hungary-drivers-license-number)     |11:2         |11:3         |11:4         |11:5 |
-|[Ireland](#ireland-drivers-license-number)     |12:2         |12:3         |12:4         |12:5 |
-|[Latvia](#latvia-drivers-license-number)     |13:2         |13:3         |13:4         |13:5 |
-|[Lithuania](#lithuania-drivers-license-number)     |14:2         |14:3         |14:4         |14:5 |
-|[Luxemburg](#luxemburg-drivers-license-number) |15:2         |15:3         |15:4         |15:5 |
-|[Malta](#malta-drivers-license-number) |16:2         |16:3         |16:4         |16:4 |
+|[Austria](#austria-drivers-license-number)  |[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)|1:4         |1:5 |
+|[Belgium](#belgium-drivers-license-number)  |[Bulgaria](#bulgaria-national-identification-number)|2:3         |2:4         |2:5 |
+|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|3:3         |3:4         |3:5 |
+|[Croatia](#croatia-drivers-license-number)  |[Estonia](#estonia-national-identification-number)   |4:3         |4:4         |4:5 |
+|[Cyprus](#cyprus-drivers-license-number)    |[Hungary](#hungary-national-identification-number)  |5:3         |5:4         |5:5 |
+|[Czech](#czech-drivers-license-number)     |[Ireland](#ireland-national-identification-number)    |6:3         |6:4         |6:5 |
+|[Denmark](#denmark-drivers-license-number)  |[Italy](#italy-national-identification-number)      |7:3         |7:4         |7:5 |
+|[Estonia](#estonia-drivers-license-number)  |[Latvia](#latvia-nationalidentificaiton-number)   |8:3         |8:4         |8:5 |
+|[Finland](#finland-drivers-license-number)  |[Lithuania](#lithuania-national-identification-number) |9:3         |9:4         |9:5 |
+|[Greece](#greece-drivers-license-number)    |[Luxemburg](#luxemburg-national-identification-number)    |10:3         |10:4         |10:5 |
+|[Hungary](#hungary-drivers-license-number)  |[Malta](#malta-national-identification-number)         |11:3         |11:4         |11:5 |
+|[Ireland](#ireland-drivers-license-number)  |[Netherlands](#netherlands-national-identification-number)|12:3         |12:4         |12:5 |
+|[Latvia](#latvia-drivers-license-number)    |[Romania](#romania-national-identification-number)        |13:3         |13:4         |13:5 |
+|[Lithuania](#lithuania-drivers-license-number) |[Slovakia](#slovakia-national-identification-number)|14:3         |14:4         |14:5 |
+|[Luxemburg](#luxemburg-drivers-license-number) |[Slovenia](#slovenia-national-identification-number)    |15:3         |15:4         |15:5 |
+|[Malta](#malta-drivers-license-number) |[Spain](#spain-national-identification-number)  |16:3         |16:4         |16:4 |
 |[Netherlands](#netherlands-drivers-license-number)     |17:2         |17:3         |17:4         |17:5 |
-|[Poland](#poland-drivers-license-number     |18:2         |18:3         |18:4         |18:5 |
+|[Poland](#poland-drivers-license-number)     |18:2         |18:3         |18:4         |18:5 |
 |[Portugal](#portugal-drivers-license-number)     |19:2         |19:3         |19:4         |19:5 |
 |[Romania](#romania-drivers-license-number)     |20:2         |20:3         |20:4         |20:5 |
-|[Slovakia](#slovakia-drivers-license-number|21:2|21:3|21:4|21:5|
-|[Slovenia](#slovenia-drivers-license-number22:1|22:2|22:3|22:4|22:5|
+|[Slovakia](#slovakia-drivers-license-number)|21:2|21:3|21:4|21:5|
+|[Slovenia](#slovenia-drivers-license-number)22:1|22:2|22:3|22:4|22:5|
 |[Spain](#spain-drivers-license-number)23:1|23:2|23:3|23:4|23:5|
 |[Sweden](#sweden-drivers-license-number)24:1|24:2|24:3|24:4|24:5|
 |25:1|25:2|25:3|25:4|25:5|
