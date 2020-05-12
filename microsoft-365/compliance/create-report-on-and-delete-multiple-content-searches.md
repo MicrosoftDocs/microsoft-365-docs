@@ -67,24 +67,10 @@ The comma separated value (CSV) file that you create in this step contains a row
 3. Save the Excel file as a CSV file to a folder on your local computer. The script that you create in Step 3 will use the information in this CSV file to create the searches. 
   
 ## Step 2: Connect to Security & Compliance Center PowerShell
-
-The next step is to connect to the Security & Compliance Center PowerShell for your organization.
   
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`. Save the file to the same folder that you saved the CSV file to in Step 1.
-    
-    ```powershell
-    # Get login credentials 
-    $UserCredential = Get-Credential 
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-    Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. On your local computer, open Windows PowerShell, go to the folder where the script that you created in the previous step is located, and then run the script; for example:
-    
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
+The next step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+  
+If your Microsoft 365 account uses multi-factor authentication (MFA) or federated authentication, you can't use the instructions in the previous topic on connecting to Security & Compliance Center PowerShell. Instead, see the instructions in the topic [Connect to Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
 
 ## Step 3: Run the script to create and start the searches
 
