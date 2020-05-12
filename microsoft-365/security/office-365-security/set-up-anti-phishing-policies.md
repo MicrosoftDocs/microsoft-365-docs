@@ -180,7 +180,7 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
 ### Advanced phishing thresholds in ATP anti-phishing policies
 
-The following advanced phishing thresholds are only available in ATP anti-phishing policies to specify how to treat detected phishing messages:
+The following advanced phishing thresholds are only available in ATP anti-phishing policies to control the sensitivity for applying machine learning models to messages for determining a phishing verdict:
 
 - **1 - Standard**: This is the default value. The severity of the action that's taken on the message depends on the degree of confidence that the message is phishing (low, medium, high, or very high confidence). For example, messages that are identified as phishing with a very high degree of confidence have the most severe actions applied, while messages that are identified as phishing with a low degree of confidence have less severe actions applied.
 
