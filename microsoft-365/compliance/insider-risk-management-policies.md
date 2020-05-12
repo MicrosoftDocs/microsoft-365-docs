@@ -84,7 +84,7 @@ Policy timeframes allow you to define past and future review periods that are tr
 
 ### Intelligent detections
 
-Intelligent detection settings help refine how the detections of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control file type exclusions, file volume limits, and the offensive language detection sensitivity.
+Intelligent detection settings help refine how the detections of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control overall alert volume, file type exclusions, file volume limits, and the offensive language detection sensitivity.
 
 #### Anomaly detections
 
@@ -100,6 +100,14 @@ To adjust the sensitivity of the offensive language classifier for policies usin
 - **Low**: The lowest sensitivity level with the broadest range for detection offensive language and sentiment. The probability of false positives for offensive language matching is elevated.
 - **Medium**: The mid-level sensitivity level with a balanced range for detection offensive language and sentiment. The probability of false positives for offensive language matching is average.
 - **High**: The highest sensitivity level with a narrow range for detection offensive language and sentiment. The probability of false positives for offensive language matching is low.
+
+#### Alert volume
+
+User activities detected by your policies are assigned a specific risk score, which in turn determines the alert severity (low, medium, high). By default, we'll generate a certain amount of low, medium, and high severity alerts, but you can increase or decrease the volume to suit your needs. To adjust the volume of alerts for all insider risk management policies, choose one of the following settings:
+
+- **Fewer alerts**: You'll see all high severity alerts, fewer medium severity alerts, and no low severity ones. This means you might miss some true positives.
+- **Default volume**: You'll see all high severity alerts and a balanced amount of medium and low severity alerts.
+- **More alerts**: You'll see all medium and high severity alerts and most low severity alerts. This might result in more false positives.
 
 ## Create a new policy
 
