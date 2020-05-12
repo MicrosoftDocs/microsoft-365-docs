@@ -254,7 +254,11 @@ The length of the aggregation interval depends on your Office 365 or Microsoft 3
 |Office 365 ATP Plan 1 or Exchange Online Protection|15 minutes|
 |||
 
-When events that match the same alert policy occur within the aggregation interval, details about the subsequent event are added to the original alert. For all events, information about aggregated events is displayed in the **Details** field and the number of times an event occurred with the aggregation interval is displayed in the **Activity count** field. You can view more information about all event instances by clicking **View activity list**.
+When events that match the same alert policy occur within the aggregation interval, details about the subsequent event are added to the original alert. For all events, information about aggregated events is displayed in the details field and the number of times an event occurred with the aggregation interval is displayed in the activity/hit count field. You can view more information about all aggregated events instances by viewing the activity list.
+
+The following screenshot shows an alert with four aggregated events. The activity list contains information about the four email messages relevant to the alert.
+
+![Example of alert aggregation](../media/AggregatedAlerts1.png)
 
 ## Viewing Cloud App Security alerts
 
