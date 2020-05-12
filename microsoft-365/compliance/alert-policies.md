@@ -173,7 +173,7 @@ When events that match the same alert policy occur within the aggregation interv
 
 The following screenshot shows an alert with four aggregated events. The activity list contains information about the four email messages relevant to the alert.
 
-![Example of alert aggregation](../media/AggregatedAlerts1.png)
+![Example of alert aggregation](../media/AggregatedAlertExample.png)
 
 ## RBAC permissions required to view alerts
 
