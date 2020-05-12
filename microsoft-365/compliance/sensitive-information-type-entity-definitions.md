@@ -4899,7 +4899,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 |25:1|25:2|25:3|25:4|[Slovenia](#slovenia-tax-identification-number)|
 |26:1|26:2|26:3|26:4|[Spain](#spain-tax-identification-number)|
 |27:1|27:2|27:3|27:4|[Sweden](#sweden-tax-identification-number)|
-|28:1|28:2|28:3|28:4|[U.K.](#uk-tax-identification-number))
+|28:1|28:2|28:3|28:4|[U.K.](#uk-tax-identification-number)|
 
 
 ## Finland driver's license number
