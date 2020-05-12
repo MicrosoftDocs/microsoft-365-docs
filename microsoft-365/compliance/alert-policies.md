@@ -23,12 +23,12 @@ description: "Create alert policies in the security and compliance center in Off
 
 # Alert policies in the security and compliance center
 
-You can use the new alert policy and alert dashboard tools in the security and compliance centers to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy.
+You can use the alert policy and alert dashboard tools in the Microsoft 365 security and compliance centers to create alert policies and then view the alerts generated when users perform activities that match the conditions of an alert policy.
 
 Alert policies build on and expand the functionality of activity alerts by letting you categorize the alert policy, apply the policy to all users in your organization, set a threshold level for when an alert is triggered, and decide whether to receive email notifications. There's also a **View alerts** page in the security and compliance center where you can view and filter alerts, set an alert status to help you manage alerts, and then dismiss alerts after you've addressed or resolved the underlying incident. We've also expanded the type of events that you can create alerts for. For example, you can create alert policies to track malware activity and data loss incidents. We've also included several default alert policies that help you monitor activities such as assigning admin privileges in Exchange Online, malware attacks, phishing campaigns, and unusual levels of file deletions and external sharing.
 
 > [!NOTE]
-> Alert policies are available for organizations with a Microsoft 365, Office 365 Enterprise, or Office 365 US Government E1/F1/G1, E3/G3, or E5/G5 subscription. Advanced functionality is only available for organizations with an E5/G5 subscription, or for organizations that have an E1/F1/G1 or E3/G3 subscription and an Office 365 Advanced Threat Protection (ATP) P2 or a Microsoft 365 E5 Compliance or Microsoft 365 E5 eDiscovery and Audit add-on subscription. The functionality that requires an E5/G5 or add-on subscription is highlighted in this topic. Also note that alert policies are available in Office 365 GCC, GCC High, and DoD US government environments.
+> Alert policies are available for organizations with a Microsoft 365 Enterprise, Office 365 Enterprise, or Office 365 US Government E1/F1/G1, E3/G3, or E5/G5 subscription. Advanced functionality is only available for organizations with an E5/G5 subscription, or for organizations that have an E1/F1/G1 or E3/G3 subscription and an Office 365 Advanced Threat Protection (ATP) P2 or a Microsoft 365 E5 Compliance or Microsoft 365 E5 eDiscovery and Audit add-on subscription. The functionality that requires an E5/G5 or add-on subscription is highlighted in this topic. Also note that alert policies are available in Office 365 GCC, GCC High, and DoD US government environments.
 
 ## How alert policies work
 
@@ -238,6 +238,23 @@ After alerts have been generated and displayed on the **View alerts** page in th
 - **Suppress email notifications.** You can turn off (or suppress) email notifications from the flyout page for an alert. When you suppress email notifications, Microsoft won't send notifications when activities or events that match the conditions of the alert policy. But alerts will be triggered when activities performed by users match the conditions of the alert policy. You can also turn off email notifications by editing the alert policy.
 
 - **Resolve alerts.** You can mark an alert as resolved on the flyout page for an alert (which sets the status of the alert to **Resolved**). Unless you change the filter, resolved alerts aren't displayed on the **View alerts** page.
+
+## Alert aggregation
+
+When multiple events that match the conditions of an alert policy occur with a short period of time, they are added to an existing alert by a process called *alert aggregation*. When a event triggers an alert, the alert is generated and displayed on the **View alerts** page and a notification is sent. If the same event occurs within the aggregation interval, then Microsoft 365 adds details about the new event to the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
+
+The length of the aggregation interval depends on your Office 365 or Microsoft 365 subscription.
+
+|Subscription|Aggregation interval|
+|:---------|:---------:|
+|Office 365 or Microsoft 365 E5/G5|1 minute|
+|Office 365 ATP Plan 2 |1 minute|
+|E5 Compliance add-on or E5 Discovery and Audit add-on|1 minute|
+|Office 365 or Microsoft 365 E1/F1/G1 or E3/F3/G3|15 minutes|
+|Office 365 ATP Plan 1 or Exchange Online Protection|15 minutes|
+|||
+
+When events that match the same alert policy occur within the aggregation interval, details about the subsequent event are added to the original alert. For all events, information about aggregated events is displayed in the **Details** field and the number of times an event occurred with the aggregation interval is displayed in the **Activity count** field. You can view more information about all event instances by clicking **View activity list**.
 
 ## Viewing Cloud App Security alerts
 
