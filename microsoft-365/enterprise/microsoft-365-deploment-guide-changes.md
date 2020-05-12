@@ -34,7 +34,7 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ### New content 
 
-- [Migrate from Microsoft 365 Business to Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
+- [Migrate from Microsoft 365 Business Premium to Microsoft 365 E3](https://docs.microsoft.com/microsoft-365/business/migrate-from-microsoft-365-business-to-microsoft-365-enterprise)
 
 - [Team for a top-secret project of the Contoso Corporation](contoso-team-for-top-secret-project.md)
 
@@ -82,7 +82,7 @@ description: See the new content and changes to the content in the Microsoft 365
 
 ### Updates and enhancements
 
-- Refresh of [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md)
+- Refresh of [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md)
 - Refresh of the [Contoso case study](contoso-case-study.md)
 - Refresh of the [Microsoft Teams](teams-workload.md), [Exchange Online](exchangeonline-workload.md), and [SharePoint Online](sharepoint-online-onedrive-workload.md) workloads
 - Refresh of the [SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md) scenario
@@ -166,7 +166,7 @@ description: See the new content and changes to the content in the Microsoft 365
 ### New content 
 
 - [Identity and device access](identity-device-access-m365-test-environment.md) prerequisite Test Lab Guides
-- [Windows Information Protection](infoprotect-deploy-windows-information-protection.md) and [Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md) steps for [Phase 6: Information Protection](infoprotect-infrastructure.md)
+- [Windows Information Protection](infoprotect-deploy-windows-information-protection.md) and [Data Loss Prevention](infoprotect-data-loss-prevention.md) steps for [Phase 6: Information Protection](infoprotect-infrastructure.md)
 
 
 ## See also

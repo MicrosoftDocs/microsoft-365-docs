@@ -23,6 +23,14 @@ description: "You can create and use a template to save time and standardize set
 
 # Create and use a template to add users
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 You can create and use a template to save time and standardize settings when you are adding multiple users. Templates are particularly useful if you have users who share many common properties, like those who have the same role and work at the same location and those who require the same software. For example, you might have a team of support engineers who work in the same office.  
 
 ## Create a template
@@ -40,7 +48,7 @@ When you create a template after adding a user, the values you choose for the fo
 - Role
 - Most profile information, such as **Job profile**, **Department**, **Office**, **Office phone**, and **Street address** 
 
-The following information is user-specific and isn’t saved in the template:
+The following information is user-specific and isn't saved in the template:
 
 - First and last name
 - Display name
@@ -83,7 +91,7 @@ You can easily delete templates you no longer need and add new ones. To delete a
 
 ## Related articles
 
-[Add users individually or in bulk to Office 365](add-users.md)
+[Add users individually or in bulk to Microsoft 365](add-users.md)
 
-[Remove a former employee from Office 365](remove-former-employee.md)
+[Remove a former employee from Microsoft 365](remove-former-employee.md)
   

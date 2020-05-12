@@ -1,10 +1,10 @@
 - name: Manage business subscriptions
   href: index.yml
-- name: Microsoft 365 Admin help center
-  href: ../admin/admin-home.md
+- name: Microsoft 365 admin help center
+  href: ../admin/index.yml
 - name: Try or buy
   items:
-    - name: Sign up for Office 365 trial
+    - name: Sign up for Microsoft 365 trial
       href: sign-up-for-office-365-trial.md
     - name: Try or buy Microsoft 365
       href: try-or-buy-microsoft-365.md
@@ -51,7 +51,7 @@
     - name: Understand your invoice
       href: billing-and-payments/understand-your-invoice.md
     - name: Manage payment methods
-      href: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+      href: billing-and-payments/manage-payment-methods.md
     - name: Pay for your subscription
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Change how you pay
@@ -64,8 +64,6 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Payment Services Directive 2 and Strong Customer Authentication
       href: billing-and-payments/psd2.md
-    - name: Tax information
-      href: billing-and-payments/tax-information.md
 - name: Billing accounts
   items: 
     - name: Manage billing accounts

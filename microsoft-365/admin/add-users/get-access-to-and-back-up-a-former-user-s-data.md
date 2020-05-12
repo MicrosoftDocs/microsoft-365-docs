@@ -2,8 +2,8 @@
 title: "Get access to and back up a former user's data"
 f1.keywords:
 - NOCSH
-ms.author: kwekua
-author: kwekua
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,13 +26,21 @@ description: "Learn how to preserve an employee's files and emails when the pers
 
 # Get access to and back up a former user's data
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 
 When an employee leaves your organization, you probably want to access their data (documents and emails) and either review it, back it up, or give it to a new employee.
   
     
 ## Access a former user's OneDrive documents
 
-If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user’s OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
+If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
 
 To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep. 
 
@@ -89,9 +97,9 @@ To preserve a former user's OneDrive files, first give yourself access to their 
     
 
 
-## Revoke admin access to a user’s OneDrive
+## Revoke admin access to a user's OneDrive
 
-As global admin, you can give yourself access to the content in a user’s OneDrive, but you may want to remove your access when you no longer need it. 
+As global admin, you can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it. 
 
 ::: moniker range="o365-worldwide"
 

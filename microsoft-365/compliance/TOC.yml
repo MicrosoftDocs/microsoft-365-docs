@@ -10,8 +10,6 @@
       href: microsoft-365-compliance-center.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
-    - name: Go to the Security & Compliance Center
-      href: go-to-the-securitycompliance-center.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -22,6 +20,8 @@
       items:
         - name: Learn about insider risk management
           href: insider-risk-management.md
+        - name: Plan for insider risk management
+          href: insider-risk-management-plan.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
         - name: Create and manage insider risk policies
@@ -40,6 +40,8 @@
       items: 
         - name: Learn about communication compliance
           href: communication-compliance.md
+        - name: Plan for communication compliance
+          href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
         - name: Investigate and remediate communication compliance alerts
@@ -149,10 +151,10 @@
           href: document-fingerprinting.md
         - name: DLP functions for sensitive information
           href: what-the-dlp-functions-look-for.md
-    - name: Encryption in M365
+    - name: Encryption in Microsoft 365
       href: encryption.md
-    - name: Office 365 Service Encryption
-      href: office-365-service-encryption.md
+    - name: Office 365 Service encryption
+      href: office-365-service-encryption.md    
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -163,8 +165,10 @@
           href: customer-key-manage.md
         - name: Roll or rotate a Customer Key or an availability key
           href: customer-key-availability-key-roll.md
-        - name: Learn about the availability key for Office 365 Customer Key
+        - name: Learn about the availability key for Customer Key
           href: customer-key-availability-key-understand.md
+    - name: Encryption for data in transit
+      href: office-365-encryption-for-data-in-transit.md
     - name: Email encryption
       href: email-encryption.md
       items: 
@@ -243,15 +247,15 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Set up a connector to archive Facebook data
+        - name: Archive Facebook data (preview)
           href: archive-facebook-data-with-sample-connector.md
-        - name: Set up a connector to archive Twitter data
+        - name: Archive Twitter data (preview)
           href: archive-twitter-data-with-sample-connector.md
-        - name: Set up a connector to archive LinkedIn data
+        - name: Archive LinkedIn data
           href: archive-linkedin-data.md
-        - name: Set up a connector to archive Instant Bloomberg data
+        - name: Archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
-        - name: Set up a connector to import HR data
+        - name: Import HR data (preview)
           href: import-hr-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
@@ -283,8 +287,8 @@
           href: automate-event-driven-retention.md
         - name: Manage the lifecycle of SharePoint documents
           href: auto-apply-retention-labels-scenario.md
-    - name: Dispose data
-      href: disposition-reviews.md
+    - name: Dispose of data
+      href: disposition.md
     - name: Manage inactive mailboxes
       items: 
         - name: Overview of inactive mailboxes
@@ -338,13 +342,15 @@
             - name: Automate event-based retention
               href: automate-event-driven-retention.md
         - name: Disposition
-          href: disposition-reviews.md
+          href: disposition.md
         - name: More about records management
           items: 
             - name: Watch videos about records management
               href: https://go.microsoft.com/fwlink/?linkid=867039
 - name: Manage eDiscovery
   items:
+    - name: eDiscovery in Microsoft 365
+      href: ediscovery.md
     - name: Content search
       items:
         - name: Overview of content search
@@ -414,8 +420,16 @@
             href: clone-a-content-search.md
     - name: Core eDiscovery
       items:
-        - name: Manage eDiscovery cases
-          href: ediscovery-cases.md
+        - name: Get started with Core eDiscovery
+          href: get-started-core-ediscovery.md
+        - name: Create eDiscovery holds
+          href: create-ediscovery-holds.md
+        - name: Search for content in a case
+          href: search-for-content-in-core-ediscovery.md
+        - name: Export content from a case
+          href: export-content-in-core-ediscovery.md
+        - name: Close, reopen, and delete a case
+          href: close-reopen-delete-core-ediscovery-cases.md
         - name: Core eDiscovery reference
           items:
           - name: Assign eDiscovery permissions
@@ -430,6 +444,12 @@
             href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
           - name: Create a report on eDiscovery holds
             href: create-a-report-on-holds-in-ediscovery-cases.md
+          - name: Export a search report
+            href: export-a-content-search-report.md
+          - name: View keyword statistics for search results
+            href: view-keyword-statistics-for-content-search.md
+          - name: Prepare search results for Advanced eDiscovery (classic)
+            href: prepare-search-results-for-advanced-ediscovery.md
           - name: Search and purge spilled data
             href: data-spillage-scenariosearch-and-purge.md
           - name: Preserve Bcc recipients for search
@@ -497,8 +517,6 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Add data to another review set
               href: add-data-to-review-set-from-another-review-set.md
-            - name: Manage load sets
-              href: manage-load-sets-in-advanced-ediscovery.md
         - name: Review case data
           items: 
             - name: Use the review set dashboard (preview)
@@ -557,8 +575,6 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
-            - name: Advanced eDiscovery reports (preview)
-              href: advanced-ediscovery-reports.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (classic)
@@ -771,26 +787,26 @@
       href: get-started-with-service-trust-portal.md
     - name: Compliance Score and Compliance Manager
       items: 
-        - name: Compliance Score (preview)
+        - name: Compliance Score (Preview)
           href: compliance-score.md
-        - name: Set up Compliance Score (preview)
+        - name: Set up Compliance Score (Preview)
           href: compliance-score-setup.md
-        - name: Working with Compliance Score (preview)
+        - name: Working with Compliance Score (Preview)
           href: working-with-compliance-score.md
-        - name: Compliance Score calculation (preview)
+        - name: Compliance Score calculation (Preview)
           href: compliance-score-methodology.md
-        - name: Compliance Score release notes (preview)
+        - name: Compliance Score release notes (Preview)
           href: compliance-score-release-notes.md
-        - name: Compliance Score FAQ (preview)
+        - name: Compliance Score FAQ (Preview)
           href: compliance-score-faq.md
-        - name: Compliance Manager (preview)
+        - name: Compliance Manager (Preview)
           href: compliance-manager-overview.md
           items: 
-            - name: Compliance Manager (preview) release notes
+            - name: What's new in Compliance Manager (Preview)
               href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (preview)
+            - name: Working with Compliance Manager (Preview)
               href: working-with-compliance-manager.md
-            - name: Compliance Manager (classic)
+            - name: Compliance Manager (Classic)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
@@ -830,6 +846,8 @@
       items: 
         - name: Financial services security and compliance
           href: ../solutions/financial-services-secure-collaboration.md
+        - name: Energy services security and compliance
+          href: ../solutions/energy-secure-collaboration.md
 - name: Regulatory compliance action plans
   items: 
     - name: ISO - Recommended action plan
@@ -1036,8 +1054,6 @@
               href: offering-mars-e.md
             - name: NEN-7510 (Netherlands)
               href: offering-nen-7510-netherlands.md
-            - name: NHS IG Toolkit (UK)
-              href: offering-nhs-ig-toolkit-uk.md
         - name: Manufacturing
           items: 
             - name: FDA CFR Title 21 Part 11
@@ -1114,8 +1130,6 @@
               href: offering-mpaa.md
             - name: NBB + FSMA (Belgium)
               href: offering-nbb-fsma-belgium.md
-            - name: NHS IG Toolkit (UK)
-              href: offering-nhs-ig-toolkit-uk.md
             - name: NIST CSF
               href: offering-nist-csf.md
             - name: PCI DSS
@@ -1190,6 +1204,8 @@
               href: offering-lopd-spain.md
             - name: PASF (UK)
               href: offering-pasf-uk.md
+            - name: Personal Data Localization (Russia)
+              href: offering-russia-data-localization.md
         - name: North America
           items: 
             - name: California Consumer Privacy Act (CCPA)
@@ -1202,7 +1218,7 @@
               href: offering-pdpa-argentina.md
 - name: Office 365 Enterprise
   href: https://docs.microsoft.com/Office365/Enterprise
-- name: Office 365 Business
+- name: Microsoft 365 Apps for business
   href: https://docs.microsoft.com/office365/admin/admin-home
 - name: Microsoft 365 security
   href: https://docs.microsoft.com/microsoft-365/security/

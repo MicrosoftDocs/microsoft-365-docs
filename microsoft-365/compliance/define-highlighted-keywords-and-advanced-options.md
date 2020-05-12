@@ -1,5 +1,5 @@
 ---
-title: "Define highlighted keywords and advanced options in Office 365 Advanced eDiscovery"
+title: "Define highlighted keywords and advanced options in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: "Learn how to add user-defined keywords to Relevance to help identify relevant files while tagging in Office 365 Advanced eDiscovery and to specify cost parameters. 
+description: "Learn how to add user-defined keywords to Relevance to help identify relevant files while tagging in Advanced eDiscovery and to specify cost parameters. 
 "
 ---
 

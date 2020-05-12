@@ -18,17 +18,26 @@ description: "Users can learn how to manage their self-service purchases."
 
 # Manage self-service purchases (Users)
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You are responsible for paying for any self-service purchases you make. You can manage your subscriptions in the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
+
 
 Your admin has a read-only view into any subscriptions that you buy. They can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each subscription that you buy.
 
 ## View your subscriptions
 
-You can view a list of all self-service purchased subscriptions that you bought. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+You can view a list of all self-service purchased subscriptions that you bought. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 ## How to buy more or reduce licenses
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to buy more or reduce licenses for.
 
@@ -68,7 +77,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ## Cancel a subscription
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to cancel.
 

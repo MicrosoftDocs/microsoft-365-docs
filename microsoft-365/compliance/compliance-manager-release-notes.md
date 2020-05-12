@@ -13,7 +13,9 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
+ms.custom:
+- seo-marvel-mar2020
+description: View release notes containing information about new features and known issues (to be resolve in upcoming releases) in the Microsoft Compliance Manager.
 ---
 
 # Microsoft Compliance Manager (preview) release notes
@@ -57,6 +59,10 @@ Compliance Manager is now available in the following languages in addition to En
 ## Known issues in Compliance Manager (Preview)
 
 The following section covers known issues in the current release of Compliance Manager.
+
+### Dimension values
+
+As a result of data migration during the April 2020 release, some organizations may see a **Product** or **Certification** value of "custom" in their assessments and templates. This value was inserted automatically if the **Product** or **Certification** fields were blank, and there won't be an effect on data workflows.
 
 ### Compliance Score
 

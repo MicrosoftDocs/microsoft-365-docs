@@ -27,7 +27,7 @@ Make sure your networking infrastructure meets the following required criteria a
 ## Required: Your network is ready for Microsoft 365 Enterprise
 
 - Your offices have adequate Internet bandwidth for Microsoft 365 traffic, including Office 365, Microsoft Intune, and Windows 10 Enterprise installation and updates.
-- Your overall network maps to an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Your overall network maps to an [Microsoft 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
 - Your network changes have been piloted and tested and meet with your traffic latency requirements.
 
 If needed, [Step 1](networking-provide-bandwidth-cloud-services.md) can help you with this requirement.
@@ -68,7 +68,7 @@ If needed, [Step 4](networking-configure-proxies-firewalls.md) can help you with
 
 
 <a name="crit-networking-step5"></a>
-## Optional: Your clients and Office 365 applications are configured for optimal performance
+## Optional: Your clients and Microsoft 365 applications are configured for optimal performance
 
 You have optimized the Transmission Control Protocol (TCP) settings on your client devices and for Exchange Online, Skype for Business Online, SharePoint Online, and Project Online services.
 

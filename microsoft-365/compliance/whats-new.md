@@ -1,5 +1,5 @@
 ---
-title: "What's new in the Microsoft 365 compliance center"
+title: What's new in the compliance center
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -17,6 +17,7 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: "We're continuously adding new features to the Microsoft 365 compliance center, fixing issues we learn about, and making changes based on your feedback. Find out what we've been up to this month."
+ms.custom: seo-marvel-mar2020
 ---
 
 # What's new in the Microsoft 365 compliance center
@@ -59,10 +60,10 @@ As you set up and validate these connectors, please leave us feedback about what
 
 ## January 2020
 
-The wait is over. We're pleased to announce that the Microsoft 365 compliance center is available to all customers with Microsoft 365, Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise plans. Any data or policies you were managing in the Office 365 Security & Compliance Center are available in the compliance center, so no need to jump back and forth.
+The wait is over. We're pleased to announce that the Microsoft 365 compliance center is available to all customers with Microsoft 365, Office 365, Enterprise Mobility + Security (EMS), and Windows 10 Enterprise plans. Any data or policies you were managing in the Security & Compliance Center are available in the compliance center, so no need to jump back and forth.
 
 > [!TIP]
-> Read through last month's update again for a refresher on some of the [new solutions](#new-compliance-solutions) we previewed recently, as well as a [roadmap](#updated-compliance-solutions) showing where compliance features from the Office 365 Security & Compliance Center now live in Microsoft 365.
+> Read through last month's update again for a refresher on some of the [new solutions](#new-compliance-solutions) we previewed recently, as well as a [roadmap](#updated-compliance-solutions) showing where compliance features from the Security & Compliance Center now live in Microsoft 365.
 
 Bookmark and head over now to [https://compliance.microsoft.com](https://compliance.microsoft.com) to tour your one-stop-shop for managing compliance across your org...or [read this article](microsoft-365-compliance-center.md) to dig in a bit more.
 

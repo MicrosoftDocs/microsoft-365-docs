@@ -6,7 +6,7 @@ ms.author: kwekua
 author: kwekua
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -25,7 +25,7 @@ description: "Learn how to use Cortana, when it is integrated with Office 365. Y
 
 Cortana, your personal productivity assistant, offers AI-powered experiences to save time and focus attention on what matters most. Cortana will help your users increase their personal productivity for their whole day across both work and life. When signed in with valid work or school accounts, users can get cloud-based Cortana assistance services within the Office 365 productivity tools. Cortana in Office 365 meets Office 365's enterprise-level privacy, security, and compliance promises.
 
-As a personal productivity assistant, Cortana is designed to deliver features that safely and securely process and reason over Office 365 data like emails, files, chats, etc., to save time, increase efficiency, and enhance your users' productivity.
+As a personal productivity assistant, Cortana is designed to deliver features that safely and securely process and reason over Office 365 data like emails, files, chats, etc., to save time, increase efficiency, and enhance your users' productivity. 
 
 Moving forward, we are focusing Cortana on enterprise productivity.
 
@@ -101,7 +101,7 @@ Here are the two ways to think of how Cortana works in your enterprise:
 
 3. As an example, Play My Emails is a Cortana service that your users can connect to through Outlook for iOS and utilizes Cortana in Office 365.
 
-4. Admins will always have controls for optional connected experiences for Cortana, similar to optional connected experiences while using Office ProPlus applications.
+4. Admins will always have controls for optional connected experiences for Cortana, similar to optional connected experiences while using Microsoft 365 Apps for enterprise applications.
 
 **Existing services for consumers**: Cortana optional connected services are designed primarily for consumer experiences and are currently delivered in Windows 10 (version 1909 and earlier) and the Cortana app on iOS and Android.
 

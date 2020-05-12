@@ -51,7 +51,7 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud: [Download the 
 - [Microsoft Professional Services](https://go.microsoft.com/fwlink/p/?linkid=2100022)
 - Stream
 - Azure DevOps Services
-- Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
+- Microsoft Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
 
 ## Audits, reports, and certificates
 
@@ -79,9 +79,9 @@ Audit cycle: Microsoft cloud services are audited at least annually against the 
 
 - [Microsoft Professional Services](https://www.bsigroup.com/Our-services/Certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=licence%3d601002%26company%3dMicrosoft&licencenumber=IS%20601002)
 
-### Windows Defender ATP
+### Microsoft Defender ATP
 
-- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 certificate](https://aka.ms/windowsdefenderatpiso27001certificate)
+- [Microsoft Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 certificate](https://aka.ms/windowsdefenderatpiso27001certificate)
 
 ## Assessments and reports
 
@@ -105,10 +105,10 @@ Audit cycle: Microsoft cloud services are audited at least annually against the 
 
 - [Azure DevOps Services ISO 27001 Certificate IS 619017](https://www.bsigroup.com/Our-services/Management-system-certification/Certificate-and-Client-Directory-Search/Certificate-Client-Directory-Search-Results/?searchkey=company%3dVisual%2bStudio%2bTeam%2bServices&licencenumber=IS%20619017)
 
-### Windows Defender ATP
+### Microsoft Defender ATP
 
-- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 Audit Assessment Report](https://aka.ms/windowsdefenderatpiso27001auditreport)
-- [Windows Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 and 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
+- [Microsoft Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 Audit Assessment Report](https://aka.ms/windowsdefenderatpiso27001auditreport)
+- [Microsoft Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score — ISO 27001 and 27018 SOA](https://aka.ms/windowsdefenderatpiso27001SOA)
 
 [See additional audit reports](https://aka.ms/auditreports)
 
@@ -156,7 +156,3 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 - [Azure DevOps Services data protection overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 - [13 effective Azure security controls for ISO 27001 compliance](https://aka.ms/13securitycontrolsforiso27001compliance)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).

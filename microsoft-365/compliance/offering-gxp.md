@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## About GxP
 
-The term *GxP* is a general abbreviation for "good practice" guidelines and regulations. The "x" represents a particular field — clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](https://aka.ms/FDA-CFR) and [EudraLex Volume 4 — GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
+The term *GxP* is a general abbreviation for 'good practice' guidelines and regulations. The 'x' represents a particular field — clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](https://aka.ms/FDA-CFR) and [EudraLex Volume 4 — GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
 
 Regulatory goals aim to make sure that businesses in regulated industries manufacture products that are safe to use and meet stringent quality standards during the production process. Computerized systems that use GxP processes require validation of adherence to GxP requirements and are considered qualified when the system can demonstrate its ability to fulfill them.
 
@@ -35,9 +35,9 @@ There is no GxP certification for cloud service providers; however:
 
 Although these standards and best practices do not specifically focus on GxP regulatory compliance, their purpose and objectives are similar and help ensure the confidentiality, integrity, and availability of data stored in Microsoft cloud services.
 
-Microsoft retained [Montrium](https://www.montrium.com/), an independent organization specializing in quality assurance and regulatory GxP compliance for the life sciences industry, to conduct the GxP qualification review for Microsoft. The resulting Qualification Guidelines ([Azure](https://aka.ms/gxpcompliance) and [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf)) are intended for life sciences organizations that plan to use these cloud services to host and support GxP-regulated computerized systems. The guidelines identify the responsibility shared by Microsoft and its customers for meeting GxP requirements, as well as recommend activities and controls that customers using in-scope Microsoft cloud services can establish to maintain control over GxP computerized systems.
+Microsoft retained [Montrium](https://www.montrium.com/), an independent organization specializing in quality assurance and regulatory GxP compliance for the life sciences industry, to conduct the GxP qualification review for Microsoft. The resulting Qualification Guidelines ([Azure](https://aka.ms/gxpcompliance) and [Office 365](https://aka.ms/o365-qualification-guideline)) are intended for life sciences organizations that plan to use these cloud services to host and support GxP-regulated computerized systems. The guidelines identify the responsibility shared by Microsoft and its customers for meeting GxP requirements, as well as recommend activities and controls that customers using in-scope Microsoft cloud services can establish to maintain control over GxP computerized systems.
 
-Life sciences organizations building GxP solutions on Azure and Office 365 can take advantage of the cloud's efficiencies while also protecting patient safety, product quality, and data integrity. Customers also benefit from multiple layers of security and governance technologies, operational practices, and compliance policies that enforce data privacy and integrity at specific levels.
+Life sciences organizations building GxP solutions on Azure and Office 365 can take advantage of the cloud’s efficiencies while also protecting patient safety, product quality, and data integrity. Customers also benefit from multiple layers of security and governance technologies, operational practices, and compliance policies that enforce data privacy and integrity at specific levels.
 
 ## Microsoft in-scope cloud services
 
@@ -48,11 +48,11 @@ Life sciences organizations building GxP solutions on Azure and Office 365 can t
 
 - [Azure GxP Guidelines](https://aka.ms/gxpcompliance): A comprehensive toolset for using Azure while adhering to GxP best practices and regulations.
 - [Using Azure with GxP Systems](https://aka.ms/GXP-Azure-Strategies): Help for life science organizations in establishing a strategy for building GxP applications.
-- FDA CFR Title 21 Part 11 Guides: Get help establishing an [Azure](https://aka.ms/Azure-FDA-Guidelines) and [Office 365](https://resources.techcommunity.microsoft.com/wp-content/uploads/2019/05/Microsoft-Office-365-GxP-Guidelines.pdf) qualification strategy that complies with FDA guidelines for electronic records.
+- FDA CFR Title 21 Part 11 Guides: Get help establishing an [Azure](https://aka.ms/Azure-FDA-Guidelines) and [Office 365](https://aka.ms/o365-qualification-guideline) qualification strategy that complies with FDA guidelines for electronic records.
 
 ## Frequently asked questions
 
-**Can I use Microsoft GxP compliance in my organization's GxP compliance efforts?**
+**Can I use Microsoft GxP compliance in my organization’s GxP compliance efforts?**
 
 Customers deploying applications on Azure should determine the GxP requirements that apply to their computerized systems based on the intended use and then follow internal procedures governing qualification and validation processes to demonstrate that they have met those requirements.
 
@@ -62,7 +62,3 @@ Customers deploying applications on Azure should determine the GxP requirements 
 - [Microsoft and ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft and ISO 9001](offering-iso-9001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/5/B/45B4B144-E0D0-432E-A210-B8AF841F9A0A/GXP-Compliance.pdf).

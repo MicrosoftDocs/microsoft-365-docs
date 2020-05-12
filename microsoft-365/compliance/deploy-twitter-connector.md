@@ -10,6 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Administrators can set up a native connector to import and archive Twitter data to Microsoft 365. After this data is imported to Microsoft 365, you can use compliance features such as legal hold, content search, and retention policies to manage the governance of your organization's Twitter data."
@@ -21,7 +23,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 1: Create an app in Azure Active Directory
 
-1. Go to <https://portal.azure.com> and sign in using the credentials of an Office 365 global admin account.
+1. Go to <https://portal.azure.com> and sign in using the credentials of a global admin account.
 
    ![Sign in to Azure](../media/TCimage01.png)
 
@@ -179,7 +181,7 @@ The Twitter developer app is now ready to use.
 
 8. Click **Login with Twitter**.
 
-9. On the Twitter sign in page, sign in using the credentials for your organization’s Twitter account.
+9. On the Twitter sign in page, sign in using the credentials for your organization's Twitter account.
 
    ![Sign in to Twitter account](../media/TCimage42.png)
 

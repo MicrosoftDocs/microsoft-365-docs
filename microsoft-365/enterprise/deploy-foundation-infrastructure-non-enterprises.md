@@ -24,16 +24,16 @@ Non-enterprise organizations can also deploy Microsoft 365 for enterprise and re
 - A small amount of on-premises IT infrastructure, such as email and file servers and an Active Directory Domain Services (AD DS) domain, or none at all.
 - A small IT staff, most of whom are IT generalists, rather than specialists in a specific technology or workload such as networking or email.
 
-For smaller, non-enterprise organizations, Microsoft offers [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). However, there are reasons why you might need Microsoft 365 for enterprise, such as:
+For smaller, non-enterprise organizations, Microsoft offers [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business). However, there are reasons why you might need Microsoft 365 for enterprise, such as:
 
-- Your organization needs more or will need more than 300 Microsoft 365 licenses, which is the maximum for Microsoft 365 Business.
-- Your organization needs the advanced productivity, voice, security, and analytics capabilities that are not available with Microsoft 365 Business.
+- Your organization needs more or will need more than 300 Microsoft 365 licenses, which is the maximum for Microsoft 365 for business.
+- Your organization needs the advanced productivity, voice, security, and analytics capabilities that are not available with Microsoft 365 for business.
 
 This article steps you through a simplified deployment of the foundation infrastructure of Microsoft 365 for enterprise suitable for your non-enterprise.
 
 ## First, set up your subscription
 
-You must set up the Domain Name System (DNS) domains for your subscription. If you already have an Office 365 subscription, this should have been done. If not, follow the instructions in [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
+You must set up the Domain Name System (DNS) domains for your subscription. If you already have a Microsoft 365 subscription, this should have been done. If not, follow the instructions in [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain?view=o365-worldwide).
 
 Next, you need to configure additional security for Microsoft 365. Follow the instructions in [Configure increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
@@ -208,28 +208,28 @@ The new and highlighted Windows 10 Enterprise elements include:
 | ![The Volume Licensing Service Center](../media/deploy-foundation-infrastructure-non-enterprises/win10-cloud.png) | The Volume Licensing Service Center, which provides images for new installations of Windows 10 Enterprise, and the Windows Update for Business service, which provides the latest updates. |
 |||
 
-## Phase 4: Office 365 ProPlus
+## Phase 4: Microsoft 365 Apps for enterprise
 
-Microsoft 365 for enterprise includes Office 365 ProPlus, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Office 365 ProPlus is installed directly on your client devices. However, Office 365 ProPlus receives updates that include new features on a regular basis. See [About Office 365 ProPlus in the enterprise](https://docs.microsoft.com/deployoffice/about-office-365-proplus-in-the-enterprise) for more information.
+Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, the subscription version of Microsoft Office. Like Office 2016 or Office 2019, Microsoft 365 Apps for enterprise is installed directly on your client devices. However, Microsoft 365 Apps for enterprise receives updates that include new features on a regular basis. See [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps) for more information.
 
-For your non-enterprise organization, you manually install Office 365 ProPlus on devices, which can include Windows, iOS, and Android devices. This can be done as part of preparing a new device for use, or by the user as part of their onboarding process.
+For your non-enterprise organization, you manually install Microsoft 365 Apps for enterprise on devices, which can include Windows, iOS, and Android devices. This can be done as part of preparing a new device for use, or by the user as part of their onboarding process.
 
 In either case, the administrator or the user signs in to the Office 365 portal at https://portal.office.com. On the **Microsoft Office Home** tab, click **Install Office** and step through the installation process.
 
-Feature updates to Office 365 ProPlus are downloaded monthly by each computer on which it is installed. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute Office 365 ProPlus updates. 
+Feature updates to Microsoft 365 Apps for enterprise are downloaded monthly by each computer on which it is installed. There is typically no need in a non-enterprise organization to set up an infrastructure to distribute Microsoft 365 Apps for enterprise updates. 
 
 ### Your configuration so far
 
-Here is a visual summary of the Office 365 ProPlus phase with the new elements highlighted.
+Here is a visual summary of the Microsoft 365 Apps for enterprise phase with the new elements highlighted.
 
-![Your organization after the Office 365 ProPlus phase](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
+![Your organization after the Microsoft 365 Apps for enterprise phase](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-config.png)
  
-The new and highlighted Office 365 ProPlus elements include:
+The new and highlighted Microsoft 365 Apps for enterprise elements include:
  
 |||
 |:------:|:-----|
-| ![Office 365 ProPlus installed on devices](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Office 365 ProPlus installed on devices, with an on-premises laptop as an example. |
-| ![The Office Content Delivery Network (CDN) for Office 365 ProPlus](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | The Office Content Delivery Network (CDN) for Office 365 ProPlus, which devices access for Office 365 ProPlus updates. |
+| ![Microsoft 365 Apps for enterprise installed on devices](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-device.png) | Microsoft 365 Apps for enterprise installed on devices, with an on-premises laptop as an example. |
+| ![The Office Content Delivery Network (CDN) for Microsoft 365 Apps for enterprise](../media/deploy-foundation-infrastructure-non-enterprises/o365-proplus-cdn.png) | The Office Content Delivery Network (CDN) for Microsoft 365 Apps for enterprise, which devices access for Microsoft 365 Apps for enterprise updates. |
 |||
 
 ## Phase 5: Mobile device management
@@ -307,14 +307,14 @@ Based on these levels of data security, the next step is to identify and impleme
 
 See [Microsoft 365 classification types](infoprotect-configure-classification.md#microsoft-365-classification-types) for more information.
 
-If you use sensitivity labels with permissions, you might have to create additional Office 365 security groups to define who is allowed to do what with email and documents that have the sensitivity label applied. 
+If you use sensitivity labels with permissions, you might have to create additional security groups to define who is allowed to do what with email and documents that have the sensitivity label applied. 
 
 For example, you need to create a RESEARCH sensitivity label to protect the email and documents of your research team. You determine that:
 
 - Researchers must have the ability to change documents marked with the RESEARCH sensitivity label.
 - Non-research employees only need to have the ability to view documents marked with the RESEARCH sensitivity label. 
 
-This means you need to create and manage two additional Office 365 groups:
+This means you need to create and manage two additional Microsoft 365 groups:
 
 - RESEARCH-ALL
 - RESEARCH-VIEW
@@ -383,7 +383,7 @@ For the first time employees sign in to Microsoft 365, instruct them to:
 
 1. Sign into their devices with their user account credentials.
 2. Using a browser, sign in to the Office 365 portal at https://portal.office.com.
-3. From the **Office 365 Home** tab, click **Install Office** to install Office 365 ProPlus on their device.
+3. From the **Office 365 Home** tab, click **Install Office** to install Microsoft 365 Apps for enterprise on their device.
 
 ## End results
 
@@ -400,7 +400,7 @@ After the build-out and configuration of your Microsoft 365 for enterprise infra
   - COND-ACCESS-EXCLUDE
   - The appropriate AD DS or Azure AD security groups that are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups 
   - Workgroup, departmental, and regional groups
-  - Sensitivity label Office 365 groups (as needed)
+  - Sensitivity label Microsoft 365 groups (as needed)
 - Azure AD sign-in Conditional Access policies that use the BASELINE, SENSITIVE, and HIGHLY-REGULATED, and COND-ACCESS-EXCLUDE Azure AD groups.
 - Intune application and device compliance policies.
 - Custom sensitive information types (as needed).
@@ -424,11 +424,11 @@ After their onboarding, each employee should have:
    - LICENSED
    - The appropriate AD DS or Azure AD security groups, which are also members of the BASELINE, SENSITIVE, and HIGHLY-REGULATED Azure AD groups for Conditional Access policies 
    - The appropriate workgroup, departmental, and regional groups
-   - Sensitivity label Office 365  groups (as needed)
+   - Sensitivity label Microsoft 365 groups (as needed)
 - A Windows 10 Enterprise device that:
    - Is joined to the Azure AD tenant (cloud-only) or to both the Azure AD tenant and your AD DS domain (hybrid).
    - Automatically updates itself with the latest Windows 10 Enterprise product improvements and security enhancements.
-   - Has Office 365 ProPlus installed, which automatically updates itself with the latest Office product improvements and security enhancements.
+   - Has Microsoft 365 Apps for enterprise installed, which automatically updates itself with the latest Office product improvements and security enhancements.
    - Is enrolled in Intune and subject to Intune device compliance policies and app protection policies.
 
 ## Next step

@@ -16,12 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to identify a document set for review in an investigation using the Search tool in Advanced eDiscovery.
+ms.custom: seo-marvel-2020
 ---
 
 # Collect data for a case in Advanced eDiscovery
 
-Once you've identified custodians and data sources that are of interest for your case, it's time to identify the set of documents to delve into. You can use the Search tool in Advanced eDiscovery to identify these from custodial and non-custodial locations in Office 365.
+Once you've identified custodians and data sources that are of interest for your case, it's time to identify the set of documents to delve into. You can use the Search tool in Advanced eDiscovery to identify relevant documents from custodial and non-custodial locations in Microsoft 365.
 
 After you run a search, you can view statistics on the retrieved items, such as the locations that had the most items that matched the search query. You can also preview a subset of the results. When you've identified the set of documents you want to further examine, you can add the search results to a review set to collect and process.
 
@@ -45,6 +46,10 @@ For more information about search statistics, see [Search statistics](search-sta
 
 Once preview is completed, the **Preview** button will be active. Select it to preview a sampled subset of the results.
 
-## Adding search results to a review set
+## Add search results to a review set
 
 When you're ready to collect and process the entire results of a search, you can do so by adding it to a review set. For details, see [Add data to a review set](add-data-to-review-set.md).
+
+## Add non-Microsoft 365 data to a review set
+
+As part of the collection process for a case, you can also add non-Office 365 data to a review set and review and analyze together with the Office 365 data that you collected by using the search tool. When you add non-Office 365, you have to associate it with a specific custodian in the case. For more information, see [Load non-Microsoft 365 data into a review set](load-non-Office-365-data-into-a-review-set.md).

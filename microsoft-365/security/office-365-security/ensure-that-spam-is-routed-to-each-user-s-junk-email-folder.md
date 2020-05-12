@@ -15,13 +15,14 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to configure their on-premises Exchange environment to route spam to on-premises users' Junk Email folders if they're using standalone Exchange Online Protection (EOP) in hybrid environments."
+description: "Admins can learn how to route spam to user Junk Email folders in an Exchange Online Protection hybrid environment."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments
 
 > [!IMPORTANT]
-> This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Office 365 customers with Exchange Online mailboxes.
+> This topic is only for standalone EOP customers in hybrid environments. This topic does not apply to Microsoft 365 customers with Exchange Online mailboxes.
 
 If you're a standalone Exchange Online Protection (EOP) customer in a hybrid environment, you need to configure your on-premises Exchange organization to recognize and translate the spam filtering verdicts of EOP, so the junk email rule in the on-premises mailbox can move messages to the Junk Email folder.
 
@@ -38,7 +39,7 @@ For more information about these header values, see [Anti-spam message headers](
 This topic describes how to create these mail flow rules the Exchange admin center (EAC) and in the Exchange Management Shell (Exchange PowerShell) in the on-premises Exchange organization.
 
 > [!TIP]
-> Instead of delivering the messages to the on-premises user's Junk Email folder, you can configure anti-spam policies in EOP to quarantine spam messages in EOP. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+> Instead of delivering the messages to the on-premises user's Junk Email folder, you can configure anti-spam policies in EOP to quarantine spam messages in EOP. For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## What do you need to know before you begin?
 

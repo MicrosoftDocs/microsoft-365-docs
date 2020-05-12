@@ -9,14 +9,14 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 12/23/2019 | [Assign admin roles the Microsoft 365 admin center](/Office365/Admin/add-users/assign-admin-roles?view=o365-worldwide) | modified |
-| 12/23/2019 | [Change a user name and email address in Office 365](/Office365/Admin/add-users/change-a-user-name-and-email-address?view=o365-worldwide) | modified |
-| 12/23/2019 | [Let users reset their own passwords in Office 365](/Office365/Admin/add-users/let-users-reset-passwords?view=o365-worldwide) | modified |
-| 12/23/2019 | [Remove a former employee from Office 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
-| 12/23/2019 | [Reset Office 365 business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
+| 12/23/2019 | [Change a user name and email address in Microsoft 365](/Office365/Admin/add-users/change-a-user-name-and-email-address?view=o365-worldwide) | modified |
+| 12/23/2019 | [Let users reset their own passwords in Microsoft 365](/Office365/Admin/add-users/let-users-reset-passwords?view=o365-worldwide) | modified |
+| 12/23/2019 | [Remove a former employee from Microsoft 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
+| 12/23/2019 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
 | 12/23/2019 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center?view=o365-worldwide) | modified |
 | 12/23/2019 | [Create organization-wide signatures and disclaimers](/Office365/Admin/setup/create-signatures-and-disclaimers?view=o365-worldwide) | modified |
-| 12/23/2019 | [Set up Office 365 file storage and sharing](/Office365/Admin/setup/set-up-file-storage-and-sharing?view=o365-worldwide) | modified |
-| 12/23/2019 | [Remove licenses from your Office 365 for business subscription](/Office365/Admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | modified |
+| 12/23/2019 | [Set up Microsoft 365 file storage and sharing](/Office365/Admin/setup/set-up-file-storage-and-sharing?view=o365-worldwide) | modified |
+| 12/23/2019 | [Remove licenses from your Microsoft 365 for business subscription](/Office365/Admin/subscriptions-and-billing/remove-licenses-from-subscription?view=o365-worldwide) | modified |
 | 12/23/2019 | [View your bill or invoice](/Office365/Admin/subscriptions-and-billing/view-your-bill-or-invoice?view=o365-worldwide) | modified |
 
 
@@ -25,40 +25,40 @@
 
 | Published On |Topic title | Change |
 |------|------------|--------|
-| 1/10/2020 | [Office 365 Reports in the admin center - Active Users](/Office365/Admin/activity-reports/active-users?view=o365-worldwide) | modified |
-| 1/10/2020 | [Activity Reports in the Microsoft 365 admin center](/Office365/Admin/activity-reports/activity-reports?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Email activity](/Office365/Admin/activity-reports/email-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Email apps usage](/Office365/Admin/activity-reports/email-apps-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Mailbox usage](/Office365/Admin/activity-reports/mailbox-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Microsoft Office activations](/Office365/Admin/activity-reports/microsoft-office-activations?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Microsoft Teams device usage](/Office365/Admin/activity-reports/microsoft-teams-device-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Microsoft Teams user activity](/Office365/Admin/activity-reports/microsoft-teams-user-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Office 365 groups](/Office365/Admin/activity-reports/office-365-groups?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - OneDrive for Business activity](/Office365/Admin/activity-reports/onedrive-for-business-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - OneDrive for Business usage](/Office365/Admin/activity-reports/onedrive-for-business-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - SharePoint activity](/Office365/Admin/activity-reports/sharepoint-activity?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - SharePoint site usage](/Office365/Admin/activity-reports/sharepoint-site-usage?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Yammer activity report](/Office365/Admin/activity-reports/yammer-activity-report?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Yammer device usage report](/Office365/Admin/activity-reports/yammer-device-usage-report?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Reports in the admin center - Yammer groups activity report](/Office365/Admin/activity-reports/yammer-groups-activity-report?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Active Users](/Office365/Admin/activity-reports/active-users?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center](/Office365/Admin/activity-reports/activity-reports?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Email activity](/Office365/Admin/activity-reports/email-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Email apps usage](/Office365/Admin/activity-reports/email-apps-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Mailbox usage](/Office365/Admin/activity-reports/mailbox-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Office activations](/Office365/Admin/activity-reports/microsoft-office-activations?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams device usage](/Office365/Admin/activity-reports/microsoft-teams-device-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft Teams user activity](/Office365/Admin/activity-reports/microsoft-teams-user-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Microsoft 365 groups](/Office365/Admin/activity-reports/office-365-groups?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - OneDrive for Business activity](/Office365/Admin/activity-reports/onedrive-for-business-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - OneDrive for Business usage](/Office365/Admin/activity-reports/onedrive-for-business-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - SharePoint activity](/Office365/Admin/activity-reports/sharepoint-activity?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - SharePoint site usage](/Office365/Admin/activity-reports/sharepoint-site-usage?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer activity report](/Office365/Admin/activity-reports/yammer-activity-report?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer device usage report](/Office365/Admin/activity-reports/yammer-device-usage-report?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Reports in the admin center - Yammer groups activity report](/Office365/Admin/activity-reports/yammer-groups-activity-report?view=o365-worldwide) | modified |
 | 1/10/2020 | [About admin roles in the Microsoft 365 admin center](/Office365/Admin/add-users/about-admin-roles?view=o365-worldwide) | modified |
-| 1/10/2020 | [Add users individually or in bulk to Office 365](/Office365/Admin/add-users/add-users?view=o365-worldwide) | modified |
+| 1/10/2020 | [Add users individually or in bulk to Microsoft 365](/Office365/Admin/add-users/add-users?view=o365-worldwide) | modified |
 | 1/10/2020 | [About admin roles](/Office365/Admin/add-users/admin-roles-page?view=o365-worldwide) | modified |
 | 1/10/2020 | [Assign admin roles the Microsoft 365 admin center](/Office365/Admin/add-users/assign-admin-roles?view=o365-worldwide) | modified |
-| 1/10/2020 | [Create, edit, or delete a custom user view in Office 365](/Office365/Admin/add-users/create-edit-or-delete-a-custom-user-view?view=o365-worldwide) | modified |
+| 1/10/2020 | [Create, edit, or delete a custom user view in Microsoft 365](/Office365/Admin/add-users/create-edit-or-delete-a-custom-user-view?view=o365-worldwide) | modified |
 | 1/10/2020 | [Get access to and back up a former user's data](/Office365/Admin/add-users/get-access-to-and-back-up-a-former-user-s-data?view=o365-worldwide) | modified |
-| 1/10/2020 | [Give mailbox permissions to another user in Office 365 - Admin Help](/Office365/Admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) | modified |
-| 1/10/2020 | [Remove a former employee from Office 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
-| 1/10/2020 | [Reset Office 365 business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
-| 1/10/2020 | [Restore a user in Office 365](/Office365/Admin/add-users/restore-user?view=o365-worldwide) | modified |
+| 1/10/2020 | [Give mailbox permissions to another user in Microsoft 365 - Admin Help](/Office365/Admin/add-users/give-mailbox-permissions-to-another-user?view=o365-worldwide) | modified |
+| 1/10/2020 | [Remove a former employee from Microsoft 365](/Office365/Admin/add-users/remove-former-employee?view=o365-worldwide) | modified |
+| 1/10/2020 | [Reset Microsoft 365 Apps for business passwords](/Office365/Admin/add-users/reset-passwords?view=o365-worldwide) | modified |
+| 1/10/2020 | [Restore a user in Microsoft 365](/Office365/Admin/add-users/restore-user?view=o365-worldwide) | modified |
 | 1/10/2020 | [About the Microsoft 365 admin center](/Office365/Admin/admin-overview/about-the-admin-center?view=o365-worldwide) | modified |
-| 1/10/2020 | [Get started with Office 365 for business](/Office365/Admin/admin-overview/get-started-with-office-365?view=o365-worldwide) | modified |
-| 1/10/2020 | [What Office 365 for business subscription do I have?](/Office365/Admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide) | modified |
+| 1/10/2020 | [Get started with Microsoft 365 for business](/Office365/Admin/admin-overview/get-started-with-office-365?view=o365-worldwide) | modified |
+| 1/10/2020 | [What Microsoft 365 for business subscription do I have?](/Office365/Admin/admin-overview/what-subscription-do-i-have?view=o365-worldwide) | modified |
 | 1/10/2020 | [Contact support for business products - Admin Help](/Office365/Admin/contact-support-for-business-products?view=o365-worldwide) | modified |
 | 1/10/2020 | [Compare groups in Office 365](/Office365/Admin/create-groups/compare-groups?view=o365-worldwide) | modified |
-| 1/10/2020 | [Create an Office 365 group in the admin center](/Office365/Admin/create-groups/create-groups?view=o365-worldwide) | modified |
-| 1/10/2020 | [Office 365 Group Expiration Policy](/Office365/Admin/create-groups/office-365-groups-expiration-policy?view=o365-worldwide) | modified |
-| 1/10/2020 | [Overview of Office 365 Groups for administrators](/Office365/Admin/create-groups/office-365-groups?view=o365-worldwide) | modified |
+| 1/10/2020 | [Create a Microsoft 365 group in the admin center](/Office365/Admin/create-groups/create-groups?view=o365-worldwide) | modified |
+| 1/10/2020 | [Microsoft 365 Group Expiration Policy](/Office365/Admin/create-groups/office-365-groups-expiration-policy?view=o365-worldwide) | modified |
+| 1/10/2020 | [Overview of Microsoft 365 Groups for administrators](/Office365/Admin/create-groups/office-365-groups?view=o365-worldwide) | modified |
 | 1/10/2020 | [Add or edit custom DNS records in Office 365](/Office365/Admin/dns/add-or-edit-custom-dns-records?view=o365-worldwide) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with 1&1 IONOS](/Office365/Admin/dns/change-nameservers-at-1-1-internet?view=o365-worldwide) | modified |
 | 1/10/2020 | [Change nameservers to set up Office 365 with Amazon Web Services (AWS)](/Office365/Admin/dns/change-nameservers-at-aws?view=o365-worldwide) | modified |
@@ -141,7 +141,7 @@
 | 1/10/2020 | [Quick help Ways to manage contacts](/Office365/Admin/misc/ways-to-manage-contacts?view=o365-worldwide) | modified |
 | 1/10/2020 | [What happens if I cancel a subscription?](/Office365/Admin/misc/what-happens-if-i-cancel?view=o365-worldwide) | modified |
 | 1/10/2020 | [Why can't I switch Office 365 for business plans?](/Office365/Admin/misc/why-can-t-i-switch-plans?view=o365-worldwide) | modified |
-| 1/10/2020 | [Set up multi-factor authentication for Office 365 users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 1/10/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
 | 1/10/2020 | [Buy or try subscriptions for Office 365 operated by 21Vianet](/Office365/Admin/services-in-china/buy-or-try-subscriptions?view=o365-21vianet) | modified |
 | 1/10/2020 | [Create DNS records for Office 365 when you manage your DNS records](/Office365/Admin/services-in-china/create-dns-records-when-you-manage-your-dns-records?view=o365-21vianet) | modified |
 | 1/10/2020 | [What's the purpose of the Office 365 CNAME record for MSOID?](/Office365/Admin/services-in-china/purpose-of-cname?view=o365-21vianet) | modified |
@@ -180,7 +180,7 @@
 | 1/14/2020 | [Cancel your subscription](/Office365/Admin/subscriptions-and-billing/cancel-your-subscription?view=o365-worldwide) | modified |
 | 1/14/2020 | [Customize the reports in Microsoft 365 usage analytics](/Office365/Admin/usage-analytics/customize-reports?view=o365-worldwide) | modified |
 | 1/15/2020 | [Add, update, or remove your payment methods](/Office365/Admin/subscriptions-and-billing/add-update-or-remove-credit-card-or-bank-account?view=o365-worldwide) | modified |
-| 1/17/2020 | [Set up multi-factor authentication for Office 365 users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 1/17/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
 
 
 ## Week of January 20, 2020
@@ -189,5 +189,5 @@
 | Published On |Topic title | Change |
 |------|------------|--------|
 | 1/21/2020 | [Set the password expiration policy for your organization](/Office365/Admin/manage/set-password-expiration-policy?view=o365-worldwide) | modified |
-| 1/21/2020 | [Set up multi-factor authentication for Office 365 users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
+| 1/21/2020 | [Set up multi-factor authentication for users](/Office365/Admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) | modified |
 | 1/21/2020 | [Upgrade your Office 365 for business users to the latest Office client](/Office365/Admin/setup/upgrade-users-to-latest-office-client?view=o365-worldwide) | modified |

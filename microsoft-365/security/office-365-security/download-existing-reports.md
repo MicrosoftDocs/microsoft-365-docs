@@ -1,5 +1,5 @@
 ---
-title: "Download existing reports in the Security &amp; Compliance Center"
+title: Download existing reports - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,7 +14,8 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: "Learn how to download one or more existing reports in the Security &amp; Compliance Center."
+description: Learn how to download one or more existing reports in the Security & Compliance Center to mitigate and address threats to your organization.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Download existing reports in the Security &amp; Compliance Center
@@ -24,7 +25,7 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
 ## Download existing reports
 
 > [!IMPORTANT]
-> Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
+> Make sure that you have the necessary [permissions assigned in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
   
 1. In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Reports for download**.
     
@@ -34,7 +35,7 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
     
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
   
