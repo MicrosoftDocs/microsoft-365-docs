@@ -140,7 +140,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     >[!CAUTION]
     >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
-    
+
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.
 
