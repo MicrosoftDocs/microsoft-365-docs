@@ -154,6 +154,27 @@ You can use the following filters to view a subset of all the alerts on the **Vi
 
 - **Source.** Use this filter to show alerts triggered by alert policies in the security and compliance center or alerts triggered by Office 365 Cloud App Security policies, or both. For more information about Office 365 Cloud App Security alerts, see the [Viewing Cloud App Security alerts](#viewing-cloud-app-security-alerts) section.
 
+## Alert aggregation
+
+When multiple events that match the conditions of an alert policy occur with a short period of time, they are added to an existing alert by a process called *alert aggregation*. When an event triggers an alert, the alert is generated and displayed on the **View alerts** page and a notification is sent. If the same event occurs within the aggregation interval, then Microsoft 365 adds details about the new event to the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
+
+The length of the aggregation interval depends on your Office 365 or Microsoft 365 subscription.
+
+|Subscription|Aggregation interval|
+|:---------|:---------:|
+|Office 365 or Microsoft 365 E5/G5|1 minute|
+|Office 365 ATP Plan 2 |1 minute|
+|E5 Compliance add-on or E5 Discovery and Audit add-on|1 minute|
+|Office 365 or Microsoft 365 E1/F1/G1 or E3/F3/G3|15 minutes|
+|Office 365 ATP Plan 1 or Exchange Online Protection|15 minutes|
+|||
+
+When events that match the same alert policy occur within the aggregation interval, details about the subsequent event are added to the original alert. For all events, information about aggregated events is displayed in the details field and the number of times an event occurred with the aggregation interval is displayed in the activity/hit count field. You can view more information about all aggregated events instances by viewing the activity list.
+
+The following screenshot shows an alert with four aggregated events. The activity list contains information about the four email messages relevant to the alert.
+
+![Example of alert aggregation](../media/AggregatedAlerts1.png)
+
 ## RBAC permissions required to view alerts
 
 The Role Based Access Control (RBAC) permissions assigned to users in your organization determine which alerts a user can see on the **View alerts** page. How is this accomplished? The management roles assigned to users (based on their membership in role groups in the Security & Compliance Center) determine which alert categories a user can see on the **View alerts** page. Here are some examples:
@@ -238,27 +259,6 @@ After alerts have been generated and displayed on the **View alerts** page in th
 - **Suppress email notifications.** You can turn off (or suppress) email notifications from the flyout page for an alert. When you suppress email notifications, Microsoft won't send notifications when activities or events that match the conditions of the alert policy. But alerts will be triggered when activities performed by users match the conditions of the alert policy. You can also turn off email notifications by editing the alert policy.
 
 - **Resolve alerts.** You can mark an alert as resolved on the flyout page for an alert (which sets the status of the alert to **Resolved**). Unless you change the filter, resolved alerts aren't displayed on the **View alerts** page.
-
-## Alert aggregation
-
-When multiple events that match the conditions of an alert policy occur with a short period of time, they are added to an existing alert by a process called *alert aggregation*. When a event triggers an alert, the alert is generated and displayed on the **View alerts** page and a notification is sent. If the same event occurs within the aggregation interval, then Microsoft 365 adds details about the new event to the existing alert instead of triggering a new alert. The goal of alert aggregation is to help reduce alert "fatigue" and let you focus and take action on fewer alerts for the same event.
-
-The length of the aggregation interval depends on your Office 365 or Microsoft 365 subscription.
-
-|Subscription|Aggregation interval|
-|:---------|:---------:|
-|Office 365 or Microsoft 365 E5/G5|1 minute|
-|Office 365 ATP Plan 2 |1 minute|
-|E5 Compliance add-on or E5 Discovery and Audit add-on|1 minute|
-|Office 365 or Microsoft 365 E1/F1/G1 or E3/F3/G3|15 minutes|
-|Office 365 ATP Plan 1 or Exchange Online Protection|15 minutes|
-|||
-
-When events that match the same alert policy occur within the aggregation interval, details about the subsequent event are added to the original alert. For all events, information about aggregated events is displayed in the details field and the number of times an event occurred with the aggregation interval is displayed in the activity/hit count field. You can view more information about all aggregated events instances by viewing the activity list.
-
-The following screenshot shows an alert with four aggregated events. The activity list contains information about the four email messages relevant to the alert.
-
-![Example of alert aggregation](../media/AggregatedAlerts1.png)
 
 ## Viewing Cloud App Security alerts
 
