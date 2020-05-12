@@ -501,9 +501,14 @@ Members of your compliance team who will create DLP policies need permissions to
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
 2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
+
+3. While creatign the role group, use the **Choose Roles** section to add the following role to the Role Group: **DLP Compliance Management**.
     
-3. Add the Microsoft 365 group to the role group.
-    
+4. Use the **Choose Members** section to add the Microsoft 365 group you created before to the role group.
+
+You can also create a role group with view-only privileges to the DLP policies and DLP reports by granting the **DLP View-Only DLP Compliance Management** role.
+
+
 For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 These permissions are required only to create and apply a DLP policy. Policy enforcement does not require access to the content.
