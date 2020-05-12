@@ -4893,9 +4893,9 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 |[Portugal](#portugal-drivers-license-number)     |19:2         |19:3         |19:4         |19:5 |
 |[Romania](#romania-drivers-license-number)     |20:2         |20:3         |20:4         |20:5 |
 |[Slovakia](#slovakia-drivers-license-number)|21:2|21:3|21:4|21:5|
-|[Slovenia](#slovenia-drivers-license-number)22:1|22:2|22:3|22:4|22:5|
-|[Spain](#spain-drivers-license-number)23:1|23:2|23:3|23:4|23:5|
-|[Sweden](#sweden-drivers-license-number)24:1|24:2|24:3|24:4|24:5|
+|[Slovenia](#slovenia-drivers-license-number)|22:2|22:3|22:4|22:5|
+|[Spain](#spain-drivers-license-number)|23:2|23:3|23:4|23:5|
+|[Sweden](#sweden-drivers-license-number)|24:2|24:3|24:4|24:5|
 |25:1|25:2|25:3|25:4|25:5|
 |26:1|26:2|26:3|26:4|26:5|
 
