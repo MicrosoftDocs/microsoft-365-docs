@@ -4872,7 +4872,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 |EU Driver's License  |EU National ID|EU Passport|EU SSN  |EU Tax ID  |
 |---------|---------|---------|---------|---------|
-|[Austria](#Austria-driver-s-license-number)    |         |         |         | |
+|[Austria](#Austria-drivers-license-number)    |         |         |         | |
 |Row2     |         |         |         | |
 |Row3     |         |         |         | |
 |Row4     |         |         |         | |
