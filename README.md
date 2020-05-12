@@ -1,9 +1,15 @@
-# Quickly update an article using GitHub.com
+# Overview
+
+## Learn how to contribute
+
+Anyone who is interested can contribute to the topics. When you contribute, your work will go directly into the content set after being merged. It will then show up on docs.microsoft.com and you will be listed as a contributor at: <https://github.com/MicrosoftDocs/microsoft-365-docs/graphs/contributors>.
+
+### Quickly update an article using GitHub.com
 
 Contributors who only make infrequent or small updates can edit the file directly on GitHub.com without having to install any additional software. This article shows you how. [This two-minute video](https://www.microsoft.com/videoplayer/embed/RE1XQTG) also covers how to contribute.
 
 1. Make sure you're signed in to GitHub.com with your GitHub account.
-2. Navigate to the page you want to edit on docs.microsoft.com.
+2. Go to the page you want to edit on docs.microsoft.com.
 3. On the right-hand side of the page, click **Edit** (pencil icon).
 
    ![Edit button on docs.microsoft.com](microsoft-365/media/quick-update-edit.png)
@@ -47,8 +53,6 @@ For more information see the [Code of Conduct FAQ](https://opensource.microsoft.
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit <https://cla.microsoft.com>.
 
 When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 ### Legal Notices
 
