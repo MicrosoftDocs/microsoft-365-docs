@@ -115,7 +115,7 @@ The first step in responding to a DSR is to find the personal data that is the s
 
 As previously stated, Microsoft estimates that over 90% of an organization's data is created with Office applications, such as Word and Excel. This means that you can use the Content Search in the Security & Compliance Center to search for most DSR-related data.
 
-This guide assumes that you or the person searching for personal data that may be responsive to a DSR request is familiar with or has experience using the Content Search tool in the Security & Compliance Center. For general guidance on using Content Search, see [Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search). Be sure that the person running the searches has been assigned the necessary permissions in the Security & Compliance Center. This person should be added as a member of the eDiscovery Manager role group in the Security & Compliance Center; see [Assign eDiscovery permissions in the Security & Compliance Center](https://support.office.com/article/Assign-eDiscovery-permissions-in-the-Office-365-Security-Compliance-Center-5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7). Consider adding other people in your organization who are involved in investigating DSRs to the eDiscovery Manager role group, so they can perform the necessary actions in the Content Search tool such as previewing and exporting search results. However, unless you set up compliance boundaries (as described [here](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)) be aware that an eDiscovery Manager can search all content locations in your organization, including ones that may not be related to a DSR investigation.
+This guide assumes that you or the person searching for personal data that may be responsive to a DSR request is familiar with or has experience using the Content Search tool in the Security & Compliance Center. For general guidance on using Content Search, see [Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search). Be sure that the person running the searches has been assigned the necessary permissions in the Security & Compliance Center. This person should be added as a member of the eDiscovery Manager role group in the Security & Compliance Center; see [Assign eDiscovery permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions). Consider adding other people in your organization who are involved in investigating DSRs to the eDiscovery Manager role group, so they can perform the necessary actions in the Content Search tool such as previewing and exporting search results. However, unless you set up compliance boundaries (as described [here](#set-up-compliance-boundaries-to-limit-the-scope-of-content-searches)) be aware that an eDiscovery Manager can search all content locations in your organization, including ones that may not be related to a DSR investigation.
 
 After you find the data, you can then perform the specific action to satisfy the request by the data subject.
 
@@ -163,7 +163,7 @@ The following table lists some conditions you can use to narrow the scope of a s
 |**Condition**|**Description** |**Example of condition values**|
 | File type | The extension of a document or file. Use this condition to search for Office documents and files created by Office 365 applications. Use this condition when searching for documents on SharePoint Online sites and OneDrive for Business accounts.<br/>The corresponding document property is filetype. <br/>For a complete list of file extensions that you can search for, see that Default crawled file name extensions and parsed file types in SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv — Searches for comma-separated value (CSV) files; Excel files can be saved in CSV format and CSV file can easily be imported into Excel<br><br>&bull;&nbsp;&nbsp;docx — Searches for Word file <br><br>&bull;&nbsp;&nbsp;mpp — Searches for Project files<br/><br>&bull;&nbsp;&nbsp;one — Searches for OneNote files <br><br>&bull;&nbsp;&nbsp;pdf — Search for files saved in a PDF format <br><br>&bull;&nbsp;&nbsp;pptx — Searches for PowerPoint files <br><br>&bull;&nbsp;&nbsp;xlxs — Searches for Excel files <br><br>&bull;&nbsp;&nbsp;vsd — Searches for Visio files <br><br>&bull;&nbsp;&nbsp;wmv — Searches for Windows Media video files <br>|
 | Message type | The email message type to search for. Use this condition to search mailboxes for contacts (People), meetings (Calendar) tasks, or Skype for Business conversations. The corresponding email property is *kind*.|&bull;&nbsp;&nbsp;*contacts — Searches the My Contacts list (People) of a mailbox <br><br>&bull;&nbsp;&nbsp;*email — Searches email messages <br><br>&bull;&nbsp;&nbsp;*im — Searches Skype for Business conversations<br><br>&bull;&nbsp;&nbsp;*meetings — Searches appointments and meeting requests (Calendar) <br><br>&bull;&nbsp;&nbsp;*tasks — Searches the My Tasks list (Tasks); using this value will also return tasks created in Microsoft To Do.<br>|
-| Compliance tag |The label assigned to an email message or a document. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. Use this condition to search for items that have been automatically or manually assigned a label.<br/>This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. See the "Using Content Search to find all content with a specific label applied to it" section in [Overview of labels in Office 365.](https://support.office.com/article/overview-of-labels-af398293-c69d-465e-a249-d74561552d30)|compliancetag="personal data"|
+| Compliance tag |The label assigned to an email message or a document. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. Use this condition to search for items that have been automatically or manually assigned a label.<br/>This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. See the "Using Content Search to find all content with a specific label applied to it" section in [Overview of labels in Office 365.](https://docs.microsoft.com/microsoft-365/compliance/labels)|compliancetag="personal data"|
 ||||
 
 There are many more email and document properties and search conditions that you can use to build more complex search queries. See the following sections in the [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) help topic for more information.
@@ -218,23 +218,23 @@ This example returns email messages that contain the specified ID number, which 
 
 #### Working with partially indexed items in Content Search
 
-Partially indexed items (also called *unindexed items*) are Exchange Online mailbox items and documents on SharePoint Online and OneDrive for Business sites that for some reason weren't indexed for search, which means they aren't searchable by using Content Search. Most email messages and site documents are successfully indexed because they fall within the [indexing limits for Office 365](https://support.office.com/article/limits-for-content-search-in-the-office-365-security-compliance-center-78fe3147-1979-4c41-83bb-aeccf244368d?). The reasons that email messages or files aren't indexed for search include:
+Partially indexed items (also called *unindexed items*) are Exchange Online mailbox items and documents on SharePoint Online and OneDrive for Business sites that for some reason weren't indexed for search, which means they aren't searchable by using Content Search. Most email messages and site documents are successfully indexed because they fall within the [indexing limits for Office 365](https://docs.microsoft.com/microsoft-365/compliance/limits-for-content-search). The reasons that email messages or files aren't indexed for search include:
 
-- The file type is [unrecognized or unsupported for indexing](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?). Though sometimes the file type is supported for indexing but an indexing error occurred for a specific file
+- The file type is [unrecognized or unsupported for indexing](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search). Though sometimes the file type is supported for indexing but an indexing error occurred for a specific file
 - Email messages have an attached file without a valid handler, such as image file (this is the most common cause of partially indexed email items)
 - Files attached to email messages are too large or there are too many attached files
 
 We recommend that you learn more about partially indexed items so that you can work with them when responding to DSR requests. For more information, see:
 
-- [Partially indexed items in Content Search in Office 365](https://support.office.com/article/partially-indexed-items-in-content-search-in-office-365-d1691de4-ca0d-446f-a0d0-373a4fc8487b?)
-- [Investigating partially indexed items in Office 365 eDiscovery](https://support.office.com/article/investigating-partially-indexed-items-in-office-365-ediscovery-4e8ff113-6361-41e2-915a-6338a7e2a1ed)
+- [Partially indexed items in Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)
+- [Investigating partially indexed items in Office 365 eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery)
 - [Exporting unindexed items](https://docs.microsoft.com/microsoft-365/compliance/export-search-results#unidexeditems)
 
 #### Tips for working with partially indexed items
 
 It's possible that data responsive to a DSR investigation may be in a partially indexed item. Here's some suggestions for working with partially indexed items:
 
-- After you run a search, the number of estimated partially items is displayed in the search statistics. This estimate doesn't include partially indexed items in SharePoint Online and OneDrive for Business. Export the reports for a Content Search to get information about partially indexed items. The **Unindexed Items.csv** report contains information about unindexed items, including the location of the item, the URL if the item is in SharePoint Online or OneDrive for Business, and the subject line (for messages) or name of the document. For more information, see [Export a Content Search report](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
+- After you run a search, the number of estimated partially items is displayed in the search statistics. This estimate doesn't include partially indexed items in SharePoint Online and OneDrive for Business. Export the reports for a Content Search to get information about partially indexed items. The **Unindexed Items.csv** report contains information about unindexed items, including the location of the item, the URL if the item is in SharePoint Online or OneDrive for Business, and the subject line (for messages) or name of the document. For more information, see [Export a Content Search report](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report).
 
 - The statistics and list of partially indexed items that are returned with the results of a Content Search are all the partially items from the content locations that are searched.
 
@@ -246,7 +246,7 @@ You export both the results of a content search and the partially indexed items 
 
 ##### Export a specific set of partially indexed items from mailboxes
 
-Instead of exporting all partially indexed mailbox items from a search, you can rerun a Content Search to search for a specific list of partially indexed items, and then export them. You can do this only for mailbox items. See [Prepare a CSV file for a targeted Content Search in Office 365](https://support.office.com/article/prepare-a-csv-file-for-a-targeted-content-search-in-office-365-82c97bb4-2b64-4edc-804d-cedbda525d22).
+Instead of exporting all partially indexed mailbox items from a search, you can rerun a Content Search to search for a specific list of partially indexed items, and then export them. You can do this only for mailbox items. See [Prepare a CSV file for a targeted Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/csv-file-for-an-id-list-content-search).
 
 ### Next steps
 
@@ -266,9 +266,9 @@ The following sections describe things you should keep in mind when searching fo
 
 A person using Office Lens (a camera app supported by devices running iOS, Android, and Windows) can take a picture of whiteboards, hardcopy documents, business cards, and other things that contain a lot of text. Office Lens uses optical character recognition technology that extracts text in an image and save it to an Office document such as a Word, PowerPoint, and OneNote or to a PDF file. Users can then upload the file that contains the text from the image to their OneDrive for Business account in Office 365. That means you can use the Content Search tool to search, access, delete, and export data in files that were created from an Office Lens image. For more information about Office Lens, see:
 
-- [Office Lens for iOS](https://support.office.com/article/Office-Lens-for-iOS-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
+- [Office Lens for iOS](https://support.microsoft.com/en-us/office/microsoft-office-lens-for-ios-fbdca5f4-1b1b-4391-a931-dc1c2582397b)
 - [Office Lens for Android](https://support.office.com/article/Office-Lens-for-Android-ec124207-0049-4201-afaf-b5874a8e6f2b)
-- [Office Lens for Windows](https://support.office.com/article/Office-Lens-for-Windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
+- [Office Lens for Windows](https://support.microsoft.com/en-us/office/office-lens-for-windows-577ec09d-8da2-4029-8bb7-12f8114f472a)
 
 #### OneDrive for Business and SharePoint Online experience settings
 
@@ -302,7 +302,7 @@ An admin can access and rectify profile properties in the SharePoint admin cente
 
 An admin can export all User Profile properties for a user by using the **Export-SPOUserProfile** cmdlet in SharePoint Online PowerShell. See  [Export-SPOUserProfile](https://docs.microsoft.com/powershell/module/sharepoint-online/export-spouserprofile?view=sharepoint-ps).
 
-For more information about user profiles, see [Manage user profiles in the SharePoint admin center](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723).
+For more information about user profiles, see [Manage user profiles in the SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-user-profiles).
 
 ##### User Information list on SharePoint Online sites
 
@@ -369,13 +369,13 @@ Here's specific guidance to search for a Class Notebook.
 
 #### Microsoft To Do
 
-Tasks (called *to-dos*, which are saved in *to-do lists*) in Microsoft To Do are saved as tasks in a user's Exchange Online mailbox. That means that you can use the Content Search tool to search, access, delete, and export to-dos. For more information, see [Set up Microsoft To Do](https://support.office.com/article/Set-up-Microsoft-To-Do-490c1a8c-2333-4952-8125-841afadb9620).
+Tasks (called *to-dos*, which are saved in *to-do lists*) in Microsoft To Do are saved as tasks in a user's Exchange Online mailbox. That means that you can use the Content Search tool to search, access, delete, and export to-dos. For more information, see [Set up Microsoft To Do](https://support.microsoft.com/en-us/office/set-up-microsoft-to-do-490c1a8c-2333-4952-8125-841afadb9620).
 
 #### Skype for Business
 
 Here some additional information about how to access, view, and export personal data in Skype for Business.
 
-- Files attached to a meeting are retained in the actual meeting for 180 days and then become inaccessible. These files can be accessed by meeting participants by joining the meeting from the meeting request and then viewing or downloading the attached file. See the "Use the attachments in the meeting" section in [Preload attachments for a Skype for Business meeting](https://support.office.com/article/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251).
+- Files attached to a meeting are retained in the actual meeting for 180 days and then become inaccessible. These files can be accessed by meeting participants by joining the meeting from the meeting request and then viewing or downloading the attached file. See the "Use the attachments in the meeting" section in [Preload attachments for a Skype for Business meeting](https://support.microsoft.com/en-us/office/preload-attachments-for-a-skype-for-business-meeting-fd3d9f9d-b448-4754-b813-02e49393f251).
 - Conversations in Skype for Business are retained in the Conversation History folder in user mailboxes. You can use Content Search to search mailboxes for data in Skype conversations.
 - A data subject can export their contacts in Skype for Business. To do this, they would right-click a contact group in Skype for Business and click **Copy**. Then they can paste the list of email addresses into a text or Word document.
 - If the Exchange Online mailbox of a meeting participant is placed on Litigation Hold or assigned to an Office 365 retention policy, files attached to a meeting are retained in the participants mailbox. You can use Content Search to search for those files in the participant's mailbox if the retention period for the file has not expired. For more information about retaining files, see [Retaining large files attached to a Skype for Business meeting](https://docs.microsoft.com/skypeforbusiness/set-up-policies-in-your-organization/retaining-large-files-attached-to-a-meeting).
@@ -391,7 +391,7 @@ When providing a copy to the data subject, you may have to remove or redact pers
 There are two ways to use the Content Search tool to get a copy of a document or mailbox item that you've found after running a search.
 
 - Preview the search results and then download a copy of the document or item. This is a good way to download a few items or files.
-- Export the search results and then download a copy of all items returned by the search. This method is more complex, but it's a good way to download lots of items that are responsive to the DSR. Useful reports are also included with you export search results. You can use these reports to get additional information about each item. The **Results.csv** report is useful because it contains a lot of information about the exported items, such as the exact location of the item (for example, the mailbox for email messages or the URL for documents or lists on SharePoint Online and OneDrive for Business sites). This information helps you identify the owner of the item, in case you need to contact them during the DSR investigation process. For more information about the reports that are included when you export search results, see [Export a Content Search report](https://support.office.com/article/Export-a-Content-Search-report-5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9).
+- Export the search results and then download a copy of all items returned by the search. This method is more complex, but it's a good way to download lots of items that are responsive to the DSR. Useful reports are also included with you export search results. You can use these reports to get additional information about each item. The **Results.csv** report is useful because it contains a lot of information about the exported items, such as the exact location of the item (for example, the mailbox for email messages or the URL for documents or lists on SharePoint Online and OneDrive for Business sites). This information helps you identify the owner of the item, in case you need to contact them during the DSR investigation process. For more information about the reports that are included when you export search results, see [Export a Content Search report](https://docs.microsoft.com/microsoft-365/compliance/export-a-content-search-report).
 
 #### Preview and download items
 
@@ -456,7 +456,7 @@ Another way to export data from SharePoint Online and OneDrive for Business is t
 
 For some DSR export requests, you may want to allow the data subject to download content themselves. This enables the data subject to go to a SharePoint Online site or shared folder and click **Sync** to sync all contents in the document library or selected folders. See:
 
-- [Enable users to sync SharePoint files with the new OneDrive sync client](https://support.office.com/article/Enable-users-to-sync-SharePoint-files-with-the-new-OneDrive-sync-client-22e1f635-fb89-49e0-a176-edab26f69614)
+- [Enable users to sync SharePoint files with the new OneDrive sync client](https://docs.microsoft.com/sharepoint/let-users-use-new-onedrive-sync-client)
 - [Sync SharePoint files with the new OneDrive sync client](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-client-6de9ede8-5b6e-4503-80b2-6190f3354a88)
 
 ## Deleting personal data
@@ -492,12 +492,12 @@ Here's the high-level process for deleting documents from sites.
 
 See the following topics for detailed procedures.
 
-- [Delete a file, folder, or link from a SharePoint document library](https://support.office.com/article/Delete-a-file-folder-or-link-from-a-SharePoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52#ID0EAADAAA=Online)
-- [Delete items or empty the Recycle Bin of a SharePoint site](https://support.office.com/article/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e#ID0EAADAAA=Online)
-- [Delete items from the site collection recycle bin](https://support.office.com/article/Delete-items-from-the-site-collection-Recycle-Bin-dd5c00c2-aef6-4458-9d04-80b185077653#ID0EAADAAA=Online)
-- "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)
+- [Delete a file, folder, or link from a SharePoint document library](https://support.microsoft.com/en-us/office/delete-a-file-folder-or-link-from-a-sharepoint-document-library-71f3c90a-0d24-4d80-8b66-f88234b79a52)
+- [Delete items or empty the Recycle Bin of a SharePoint site](https://support.microsoft.com/en-us/office/delete-items-or-empty-the-recycle-bin-of-a-sharepoint-site-2e713599-d13e-40d6-96dc-66f0a366f74e)
+- [Delete items from the site collection recycle bin](https://support.microsoft.com/en-us/office/delete-items-from-the-site-collection-recycle-bin-dd5c00c2-aef6-4458-9d04-80b185077653)
+- "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)
 - [Delete files or folders in OneDrive for Business](https://support.office.com/article/Delete-files-or-folders-in-OneDrive-21fe345a-e488-4fa7-932b-f053c1bebe8a)
-- [Delete a list in SharePoint](https://support.office.com/article/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d#ID0EAADAAA=Online)
+- [Delete a list in SharePoint](https://support.microsoft.com/en-us/office/delete-a-list-in-sharepoint-2a7bca5b-b8fd-4e5b-8f4b-2ac034f3070d)
 - [Delete list items in SharePoint Online](https://support.office.com/article/delete-list-items-in-sharepoint-online-db722233-4a38-4889-a6cf-4b33fe5c60c0)
 
 ### Deleting a SharePoint site
@@ -552,7 +552,7 @@ Here's a quick overview of this process:
 1. Create and run a Content Search to find the items that you want to delete from the user mailbox. You may have to rerun the search to narrow that search results so that only the items that you want to delete are returned in the search results.
 2. Use the **New-ComplianceSearchAction** **-Purge** command in Office 365 PowerShell to soft-delete that are  returned by the Content Search that was created in the previous step.
 
-For detailed instructions, see [Search for and delete email messages in your organization](https://support.office.com/article/Search-for-and-delete-email-messages-in-your-Office-365-organization-Admin-Help-3526fd06-b45f-445b-aed4-5ebd37b3762a).
+For detailed instructions, see [Search for and delete email messages in your organization](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
 
 #### Hard-delete mailbox items
 
@@ -564,7 +564,7 @@ For detailed instructions, see [Search for and delete messages](https://technet.
 
 As previously explained, if you hard-delete items in a mailbox on hold, items are not removed from the mailbox. They are moved to a hidden folder in the Recoverable Items folder (the **Purges** folder) and will remain there until the hold duration for the item expires or until the hold is removed from the mailbox. If either of those things happen, the items will be purged from Office 365 the next time that the mailbox is processed.
 
-Your organization might determine that items being permanently deleted when the hold duration expires meets the requirements for a DSR deletion request. However, if you determine that mailbox items must be immediately purged from Office 365, you would have to remove the hold from the mailbox and then hard-deleted the items from the mailbox. For detailed instructions, see [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](https://support.office.com/article/Delete-items-in-the-Recoverable-Items-folder-of-cloud-based-mailboxes-on-hold-Admin-Help-a85e1c87-a48e-4715-bfa9-d5275cde67b0).
+Your organization might determine that items being permanently deleted when the hold duration expires meets the requirements for a DSR deletion request. However, if you determine that mailbox items must be immediately purged from Office 365, you would have to remove the hold from the mailbox and then hard-deleted the items from the mailbox. For detailed instructions, see [Delete items in the Recoverable Items folder of cloud-based mailboxes on hold](https://docs.microsoft.com/microsoft-365/compliance/delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold).
 
 >[!NOTE]
 >To hard-delete mailbox items to satisfy a DSR deletion request by following the procedure in the previous topic, you may have to soft-delete those items while the mailbox is still on hold so that they are moved to the Recoverable Items folder.
@@ -599,7 +599,7 @@ Here's the high-level process for deleting a user from your organization.
 
 1. Go to the admin center or the Azure portal and locate the user.
 
-2. Delete the user. When you initially delete the user, the user's account is sent to the Recycle Bin. At this point, the user is soft-deleted. The account is retained in the soft-deleted for 30 days, which allows you to restore the account. After 30 days, the account is automatically hard-deleted. For specific instructions, see [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory).<br><br> You can also soft-delete a user account in the admin center. See [Delete a user from your organization](https://support.office.com/article/Delete-a-user-from-your-organization-D5155593-3BAC-4D8D-9D8B-F4513A81479E).
+2. Delete the user. When you initially delete the user, the user's account is sent to the Recycle Bin. At this point, the user is soft-deleted. The account is retained in the soft-deleted for 30 days, which allows you to restore the account. After 30 days, the account is automatically hard-deleted. For specific instructions, see [Delete users from Azure AD](https://docs.microsoft.com/azure/active-directory/add-users-azure-active-directory).<br><br> You can also soft-delete a user account in the admin center. See [Delete a user from your organization](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user).
 
 3. If you don't want to wait for 30-days for the user account to be hard-deleted, you can manually hard-delete it. To do this in the Azure portal, go to the Recently deleted users list and permanently delete the user. At this point, the user is hard-deleted. For instructions, see [How to permanently delete a recently deleted user](https://docs.microsoft.com/azure/active-directory/active-directory-users-restore).
 
@@ -641,7 +641,7 @@ The following sections explain how to use the in-app functionality in Microsoft 
 
 There are several ways that you can search for records in an Access database that might be responsive to a DSR request. For a DSR investigation, you can search for records that related to the data subject or search for records that contain specific data. For example, you could either search or go to a record that corresponds to the data subject. Or you can search for records that contain specific data, such as personal data about the data subject. For more information, see:
 
-- [Find records in an Access database](https://support.office.com/article/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
+- [Find records in an Access database](https://support.microsoft.com/en-us/office/find-records-in-an-access-database-705220b7-0255-4ef9-9349-6bd7442d1b7e) 
 - [Create a simple select query](https://support.office.com/article/create-a-simple-select-query-de8b1c8d-14e9-4b25-8e22-70888d54de59)
 
 ##### Access
@@ -650,18 +650,18 @@ After you find the records or fields that are relevant to the DSR request, you c
 
 - [Introduction to reports in Access](https://support.office.com/article/introduction-to-reports-in-access-e0869f59-7536-4d19-8e05-7158dcd3681c)
 - [Export data to Excel](https://support.office.com/article/export-data-to-excel-64e974e6-ae43-4301-a53e-20463655b1a9)
-- [Export data to a Word document](https://support.office.com/article/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
-- [Export data to a text file](https://support.office.com/article/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
+- [Export data to a Word document](https://support.microsoft.com/en-us/office/export-access-data-to-a-word-document-6e954c8e-2243-4cb9-8544-607e5b7bfc12)
+- [Export data to a text file](https://support.microsoft.com/en-us/office/export-data-to-a-text-file-f72dfc38-a8a0-4c5b-8c2c-bf2950814140)
 
 ##### Export
 
-As previously explained, you can export data from an Access database to different file formats. The export file format that you choose might be determined by the specific DSR export request from a data subject. See [Import and export](https://support.office.com/article/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f) for a list of topics that describe how to export Access data in different file formats.
+As previously explained, you can export data from an Access database to different file formats. The export file format that you choose might be determined by the specific DSR export request from a data subject. See [Import and export](https://support.microsoft.com/en-us/office/import-and-export-c060505b-d8ac-4499-8879-733e56c6106f) for a list of topics that describe how to export Access data in different file formats.
 
 ##### Delete
 
 You can delete an entire record or just a field from an Access database. The quickest way to delete a record from an Access database is to open the table in Datasheet view, select the record (row) or just the data in a field that you want to delete, and then press Delete. You can also use a select query that you created to find data and then convert it to a delete query. See:
 
-- [Delete one or more records from a database](https://support.office.com/article/delete-one-or-more-records-from-a-database-002b850d-1efa-473d-9297-0994ce46c66a)
+- [Delete one or more records from a database](https://support.office.com/article/ways-to-add-edit-and-delete-records-5e90a80c-106d-4c55-996e-07d7200980ce)
 - [Create and run a delete query](https://support.office.com/article/create-and-run-a-delete-query-6da65fe1-0fc7-4a64-8ef0-c052cd4c3ec5)
 
 ### Business Apps for Office 365
@@ -911,7 +911,7 @@ An admin's ability to add themselves as an owner of a Flow requires an account w
 - Flow/PowerApps Plan 2 license (paid or trial)
 
 - [Global administrator\
-  ](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+  ](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
 
     or
 
@@ -971,11 +971,11 @@ Forms users can go to <https://forms.office.com> and select **My forms** to see 
 
 #### Access
 
-After the relevant Forms are found, you can access the responses to the Form by clicking the **Responses** tab. Learn more about how to [check your quiz results](https://support.office.com/article/c4a9b45c-d62f-4eb7-b5db-ad81892c7c07) or [form results](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). To review response results in Excel, select the **Responses** tab, and then click **Open in Excel**. If you would like to send the Data Subject a copy of the Form, you can either take screenshots of the relevant questions and answers that are in shown in the application in rich text format or send the Data Subject an Excel copy of the results. If you are using Excel and would like to share with the Data Subject only portions of the survey result, you can delete certain rows or columns or redact the remaining sections before sharing the results. Alternatively, you can go to **Share \> Get a link to duplicate** (under Share as a template) to provide the Data Subject with a replicate of the entire Form.
+After the relevant Forms are found, you can access the responses to the Form by clicking the **Responses** tab. Learn more about how to [check your quiz results](https://support.microsoft.com/en-us/office/check-and-share-your-quiz-results-c4a9b45c-d62f-4eb7-b5db-ad81892c7c07) or [form results](https://support.office.com/article/02859424-341d-406f-b32a-9a0fbaf357af). To review response results in Excel, select the **Responses** tab, and then click **Open in Excel**. If you would like to send the Data Subject a copy of the Form, you can either take screenshots of the relevant questions and answers that are in shown in the application in rich text format or send the Data Subject an Excel copy of the results. If you are using Excel and would like to share with the Data Subject only portions of the survey result, you can delete certain rows or columns or redact the remaining sections before sharing the results. Alternatively, you can go to **Share \> Get a link to duplicate** (under Share as a template) to provide the Data Subject with a replicate of the entire Form.
 
 #### Delete
 
-Any survey, quiz, questionnaire, or poll can be permanently deleted by its owner. If you would like to honor a DSR "forget me" and delete a form in its entirety, find the Form in the list of forms, select the series of dots (ellipsis) in the upper right corner of the form preview window, and then click **Delete**. Once a Form is deleted, it can't be retrieved. For information, see [Delete a Form](https://support.office.com/article/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
+Any survey, quiz, questionnaire, or poll can be permanently deleted by its owner. If you would like to honor a DSR "forget me" and delete a form in its entirety, find the Form in the list of forms, select the series of dots (ellipsis) in the upper right corner of the form preview window, and then click **Delete**. Once a Form is deleted, it can't be retrieved. For information, see [Delete a Form](https://support.microsoft.com/en-us/office/delete-a-form-2207e468-ce1b-4c4a-a256-caf631d87af0).
 
 #### Export
 
@@ -1015,8 +1015,8 @@ Kaizala users can go to their mobile device to see Kaizala content they've creat
 When users in your organization use Kaizala, consumer data is generated, and organizational data may be generated if the user participates in an organization group. Admins can export a user's organizational data from the Kaizala management portal. Kaizala consumer users can export their private data from the Kaizala mobile app. In both cases, note that product and service usage data is also export when an admin or user exports Kaizala data. 
 For details, see:
 
-- [Export or delete a user's organizational data in Kaizala](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
-- [Export or delete your data in the Kaizala mobile app](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
+- [Export or delete a user's organizational data in Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
+- [Export or delete your data in the Kaizala mobile app](https://docs.microsoft.com/office365/kaizala/export-or-delete-your-data)
 
 #### Delete
 
@@ -1026,8 +1026,8 @@ To remove all private data from the user's mobile device, the Kaizala user can d
 
 For details, see:
 
-- [Export or delete a user's organizational data in Kaizala](https://support.office.com/article/export-or-delete-a-user-s-organizational-data-in-kaizala-150ec214-a070-4e8a-8509-82f46d84bbb6)
-- [Export or delete your data in the Kaizala mobile app](https://support.office.com/article/export-or-delete-your-data-in-the-kaizala-mobile-app-65f83dbc-4f10-4644-9b2d-9945c967684e)
+- [Export or delete a user's organizational data in Kaizala](https://docs.microsoft.com/office365/kaizala/export-or-delete-a-user-s-data)
+- [Export or delete your data in the Kaizala mobile app](https://docs.microsoft.com/office365/kaizala/export-or-delete-your-data)
 
 ### Planner
 
@@ -1086,7 +1086,7 @@ PowerApps is a service for building apps that can be shared and used within your
 To help facilitate a DSR request related to PowerApps, you can use the administration operations exposed in the [PowerApps Admin Center](https://admin.powerapps.com/) and [PowerApps Admin PowerShell cmdlets](https://go.microsoft.com/fwlink/?linkid=871804). Access to these tools requires an account with the following permissions:
 
 - A paid PowerApps Plan 2 license or a PowerApps Plan 2 trial license. You can sign up for a 30-day trial license [here](https://web.powerapps.com/trial).
-- [Global administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504)
+- [Global administrator](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
     or
 - [Azure Active Directory global administrator](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal)
 
@@ -1151,15 +1151,15 @@ You can use the in-app search feature to find text in a Publisher file the same 
 
 After you find data, you can take a screenshot of it or copy and paste it into a Word or text file and provide that to the data subject. You can also save a publication as a Word, PDF, or XPS file. See:
 
-  - [Save a publication as a Word document](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [Save As or convert a publication to .pdf or .xps using Publisher](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [Save a publication as a Word document](https://support.microsoft.com/en-us/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [Save As or convert a publication to .pdf or .xps using Publisher](https://support.microsoft.com/en-us/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### Export
 
 You can provide a data subject with the actual Publisher file or as previously explained, you can save a publication as a Word, PDF, or XPS file. See:
 
-  - [Save a publication as a Word document](https://support.office.com/article/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
-  - [Save As or convert a publication to .pdf or .xps using Publisher](https://support.office.com/article/657332d0-d2c2-464a-9870-e9b3d22e6469)
+  - [Save a publication as a Word document](https://support.microsoft.com/en-us/office/save-a-publication-as-a-word-document-b5eaaae5-6f1b-48c1-bebc-44460376b693)
+  - [Save As or convert a publication to .pdf or .xps using Publisher](https://support.microsoft.com/en-us/office/save-as-or-convert-a-publication-to-pdf-or-xps-using-publisher-657332d0-d2c2-464a-9870-e9b3d22e6469)
 
 #### Delete
 
@@ -1222,7 +1222,7 @@ Whiteboard files (.wbx files) are stored in users' OneDrive for Business account
 
 To access and transfer whiteboards: 
 
-1. Give yourself access to the user's OneDrive for Business account. See the "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604).
+1. Give yourself access to the user's OneDrive for Business account. See the "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data).
 2. Go to the Whiteboard App Data folder in the user's OneDrive for Business account and copy the .wbx files of the whiteboards that you want to transfer.
 3. Give yourself access to the data subject's OneDrive for Business account, and then go to Whiteboard App Data folder.
 4. Paste the .wbx files that you copied in the previous step.
@@ -1247,7 +1247,7 @@ You can export a whiteboard to a OneNote (.one) file or to an image (.png) file.
 
 You can give yourself access to the user's OneDrive for Business account and then delete the whiteboards.
 
-1. Give yourself access to the data subject's OneDrive for Business account. See the "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://support.office.com/article/get-access-to-and-back-up-a-former-user-s-data-a6f7f9ad-e3f5-43de-ade5-e5a0d7531604)
+1. Give yourself access to the data subject's OneDrive for Business account. See the "Get access to the former employee's OneDrive for Business documents" section in [Get access to and back up a former user's data](https://docs.microsoft.com/microsoft-365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data)
 2. Go to the Whiteboard App Data folder and then delete the contents of this folder.
 
 #### Whiteboard for PC, Surface Hub, and other platforms
@@ -1422,7 +1422,7 @@ As previously explained, licenses for all Office 365 applications that are inclu
 
 ### Preventing users from accessing their OneDrive for Business account
 
-Removing a user's SharePoint Online license won't prevent them from accessing their OneDrive for Business account if it exists. You have to remove the user's permissions to their OneDrive for Business account to. You can do this by removing the user as a site collection owner of their OneDrive for Business account. Specifically, you have to remove the user from the Primary Site Collection Administrator and Site Collection Administrators groups in their user profile. See the "Add and remove admins on a OneDrive for Business account" section in [Manage user profiles in the SharePoint admin center](https://support.office.com/article/Manage-user-profiles-in-the-SharePoint-admin-center-494bec9c-6654-41f0-920f-f7f937ea9723).
+Removing a user's SharePoint Online license won't prevent them from accessing their OneDrive for Business account if it exists. You have to remove the user's permissions to their OneDrive for Business account to. You can do this by removing the user as a site collection owner of their OneDrive for Business account. Specifically, you have to remove the user from the Primary Site Collection Administrator and Site Collection Administrators groups in their user profile. See the "Add and remove admins on a OneDrive for Business account" section in [Manage user profiles in the SharePoint admin center](https://docs.microsoft.com/sharepoint/manage-user-profiles).
 
 ### Turning off an Office 365 Service
 
