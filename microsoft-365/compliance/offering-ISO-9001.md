@@ -52,15 +52,15 @@ This standard of practice provides guidance and tools for cloud service provider
 
 **Where can I get the ISO 9001:2015 audit reports and scope statements for Microsoft services?**
 
-The [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements. The [FY17 Microsoft Azure ISO 9001 Assessment Report](https://aka.ms/Azure9001Report) and the [FY17 Microsoft Azure ISO 9001 Certificate](https://aka.ms/Azure9001Cert) are both available.
+The [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) provides independently audited compliance reports. You can use the portal to request reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements. The [FY17 Microsoft Azure ISO 9001 Assessment Report](https://www.microsoft.com/?ref=aka) and the [FY17 Microsoft Azure ISO 9001 Certificate](https://www.microsoft.com/?ref=aka) are both available.
 
 **Does Microsoft run annual tests for infrastructure failures?**
 
-Yes. The ISO 9001:2015 annual assessment includes the underlying physical infrastructure datacenter. Please [review the certificate](https://aka.ms/Azure9001Cert) for the coverage details.
+Yes. The ISO 9001:2015 annual assessment includes the underlying physical infrastructure datacenter. Please [review the certificate](https://www.microsoft.com/?ref=aka) for the coverage details.
 
 **Where can I view Microsoft’s compliance information for ISO 9001:2015?**
 
-You can download the [ISO 9001:2015 certificate](https://aka.ms/Azure9001Cert) for Azure and additional services that are in scope of this assessment.
+You can download the [ISO 9001:2015 certificate](https://www.microsoft.com/?ref=aka) for Azure and additional services that are in scope of this assessment.
 
 ## Resources
 
