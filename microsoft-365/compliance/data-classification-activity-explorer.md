@@ -1,5 +1,5 @@
 ---
-title: "Get started with activity explorer (preview)"
+title: "Get started with activity explorer"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,13 +18,13 @@ search.appverid:
 description: "Activity explorer rounds out the functionality of the data classification feature by letting you see and filter on the actions users are taking on your labeled content."
 ---
 
-# Get started with activity explorer (preview)
+# Get started with activity explorer
 
 The data classification overview and content explorer tabs give you visibility into what content has been discovered and labeled, and where that content is. Activity explorer rounds out this suite of functionality by allowing you to monitor what's being done with your labeled content. Activity explorer provides a historical view.
 
 ![placeholder screenshot overview activity explorer](../media/data-classification-activity-explorer-1.png)
 
-You can filter the data by:
+There are over 30 different filters available for use, some are:
 
 - date range
 - activity type
@@ -32,22 +32,34 @@ You can filter the data by:
 - user
 - sensitivity label
 - retention label
+- file path
+- DLP policy
 
 
-You can view the data either as a list or a bar graph.
 
 ## Prerequisites
 
-Every account that accesses and uses activity explorer must have a license assigned to it from one of these subscriptions:
+Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
 
 - Microsoft 365 (E5)
 - Office 365 (E5)
 - Advanced Compliance (E5) add-on
 - Advanced Threat Intelligence (E5) add-on
 
+### Permissions
+
+ In order to get access to the activity explorer tab, an account must be assigned membership in any one of these roles or role groups.
+
+**Microsoft 365 role groups**
+
+- Global administrator
+- Compliance administrator
+- Security administrator
+- Compliance data administrator
+
 ## Activity type
 
-Microsoft 365 monitors and reports on 12 types of activities across SharePoint Online, OneDrive and endpoints. Endpoints are user devices running Windows 10.
+Microsoft 365 monitors and reports on 12 types of activities across SharePoint Online, and OneDrive.
 
 - File created
 - File modified

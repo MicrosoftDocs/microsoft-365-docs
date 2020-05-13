@@ -75,7 +75,7 @@ Begin searching for personal data by using the sensitive information types that 
 
 This topic includes a list of some sensitive information types that apply to citizens in the European Union. Check the security center or the compliance center for new additions that can help with GDPR compliance.
 
-Also see this article: [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+Also see this article: [List of sensitive information types and what each one looks for](https://docs.microsoft.com/microsoft-365/compliance/content-search).
 
 Sensitive information types define how the automated process recognizes specific information types such as bank account numbers, health service numbers, and credit card numbers. Sensitive information types are also referred to as conditions. A sensitive information type is defined by a pattern that can be identified by a regular expression or a function. In addition, corroborative evidence such as keywords and checksums can be used to identify a sensitive information type. Confidence level and proximity are also used in the evaluation process.
 
@@ -106,7 +106,7 @@ At this time sensitive information types cannot be used to find data at rest in 
 <p>SensitiveType:&quot;France Passport Number&quot;</p>
 </blockquote>
 <p>Scope the search to SharePoint (includes OneDrive for Business). Make sure the syntax is exact and there are no extra spaces or typos.</p>
-<p>See <a href="https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836">Form a query to find sensitive data stored on sites</a>.</p></td>
+<p>See <a href="https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites">Form a query to find sensitive data stored on sites</a>.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Review the results for each search</p></td>
@@ -213,4 +213,4 @@ Examples:
 
 Note: "SensitiveType" is case sensitive, but the rest of the query is not.
 
-You can also use properties, and operators to illustrate how you can refine your queries. For more information and examples, see [Form a query to find sensitive data stored on sites](https://support.office.com/article/Form-a-query-to-find-sensitive-data-stored-on-sites-3019fbc5-7f15-4972-8d0e-dc182dc7f836).
+You can also use properties, and operators to illustrate how you can refine your queries. For more information and examples, see [Form a query to find sensitive data stored on sites](https://docs.microsoft.com/microsoft-365/compliance/form-a-query-to-find-sensitive-data-stored-on-sites).

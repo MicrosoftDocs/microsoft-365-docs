@@ -51,7 +51,7 @@ Before you start using communication compliance, you must determine who needs th
 
 ## Reviewers
 
-When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online and must be assigned the **Case Management** and **Review** roles.
+When you create a communication compliance policy, you must determine who reviews the messages of the supervised users. In the policy, user email addresses identify individuals or groups of people to review supervised communications. All reviewers must have mailboxes hosted on Exchange Online and must be assigned the **Case Management** and **Review** roles. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
 
 ## Groups for supervised users and reviewers
 
