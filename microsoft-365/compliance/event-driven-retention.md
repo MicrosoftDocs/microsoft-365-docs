@@ -67,7 +67,7 @@ To successfully use event-driven retention, it's important to understand the rel
     
 4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to 7 days. In the previous diagram, all the items circled in red have their retention period triggered by this event . In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
     
-It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all content would start being retained. This may not be what you intend. 
+It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all content would start being retained. This might not be what you intend. 
   
 Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
   
@@ -124,7 +124,7 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 - Employee IDs that you can use to retain content for only a specific person.
     
-Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. Your organization may already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 below. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
+Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 below. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
   
 ![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   

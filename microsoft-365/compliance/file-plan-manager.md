@@ -16,6 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: File plan manager provides advanced management capabilities for retention labels and label policies.
+ms.custom: seo-marvel-may2020
 ---
 
 # Overview of file plan manager
