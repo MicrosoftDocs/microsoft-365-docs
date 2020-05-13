@@ -28,7 +28,7 @@ Compliance boundaries create logical boundaries within an organization that cont
   
 We use the example in the following illustration to explain how compliance boundaries work.
   
-![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
 In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
   
@@ -58,7 +58,7 @@ Here's a list of Azure Active Directory user attributes that you can use for com
   
 - Company
     
-- CustomAttribute1 — CustomAttribute15
+- CustomAttribute1 - CustomAttribute15
     
 - Department
     
