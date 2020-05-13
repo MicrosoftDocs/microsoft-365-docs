@@ -25,6 +25,9 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 
 - [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
 
+  > [!NOTE]
+  > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
+
 You can also configure third-party message reporting tools to forward messages to the mailbox that you specify.
 
 Delivering user reported messages to a custom mailbox instead of directly to Microsoft allows your admins to selectively and manually report messages to Microsoft using [Admin submission](admin-submission.md).
