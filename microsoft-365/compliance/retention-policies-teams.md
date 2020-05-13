@@ -29,7 +29,7 @@ The information in this article supplements [Learn about retention policies](ret
 
 You can use a retention policy to retain chats and channel messages in Teams. Teams chats are stored in a hidden folder in the mailbox of each user included in the chat, and Teams channel messages are stored in a similar hidden folder in the group mailbox for the team. 
 
-It's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data forever. For this reason, we strongly recommend that you use the Teams locations to retain and delete Teams data. Using the Teams locations will permanently delete data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information, see [Overview of security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258).
+It's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data forever. For this reason, we strongly recommend that you use the Teams locations to retain and delete Teams data. Using the Teams locations will permanently delete data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information, see [Security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) and specifically, the [Information Protection Architecture](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
 
 Teams chats and channel messages are not affected by retention policies applied to user or group mailboxes in the **Exchange email** or **Office 365 groups** locations when you configure your retention policies. Even though Teams chats and channel messages are stored in Exchange, they're affected only by a retention policy that's applied to the **Teams channel messages** and **Teams chats** locations.
 
@@ -112,14 +112,14 @@ We're continuously working on optimizing retention functionality in Teams. In th
    > It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation. Now the retention period for Teams content can be any number of days you choose and as short as one day. If you do have a retention period of one day, it will take up to three days after the retention period expires before messages are permanently deleted.
     
 
-- When you select **Choose teams** for the **Teams channel messages** location, you might see Office 365 groups that aren't also teams. 
-
-- When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed to be set for guests, and we're working to remove these from the list.
+- **Configuration issues**: 
+    - When you select **Choose teams** for the **Teams channel messages** location, you might see Office 365 groups that aren't also teams. Don't select these groups.
+    
+    - When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
 
 A retention policy that applies to Teams can use [Preservation Lock](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
-  
-![Teams locations for chat and channel messages](../media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
+
   
 > [!NOTE]
 > If you create retention policies for Skype or Teams locations in your organization, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.
