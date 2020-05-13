@@ -42,15 +42,17 @@ Learn how to accelerate your CSA STAR Certification deployment with our Azure Se
 - Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Microsoft Defender Advanced Threat Protection
 - OMS Service Map
-- PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow): cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- PowerApps cloud service: either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI: The cloud service portion of Power BI offered as a standalone service or as included in an Office 365 branded plan or suite
+- Power BI Embedded
 - Microsoft Stream
 
 ## Audits, reports, and certificates
 
-- [Azure, Microsoft Cloud App Security, Flow, Genomics, Microsoft Graph, Microsoft Healthcare Bot, Intune, Microsoft Managed Desktop, OMS Service Map, PowerApps, Power BI, Microsoft Stream — CSA STAR Certification](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Dynamics 365, and Online Services – CSA STAR Certificate](https://aka.ms/azurecsastarcert)
 
 ## Frequently asked questions
 
@@ -60,7 +62,7 @@ The CCM corresponds to industry-accepted security standards, regulations, and co
 
 **Where can I view the CSA STAR Certification for Microsoft cloud services?**
 
-You can download the [CSA STAR Certification](https://aka.ms/csastar-certification) for Azure, which also covers Intune and Power BI, from the CSA Registry.
+You can view the [CSA STAR Certification](https://aka.ms/csastar-certification) for Azure, which also covers Dynamics 365, Intune and, Power BI from the CSA Registry.
 
 **What maturity level did Microsoft cloud services achieve?**
 

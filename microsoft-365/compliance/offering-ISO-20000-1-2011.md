@@ -32,24 +32,26 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 
 ## Microsoft in-scope cloud services
 
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
 - Microsoft Cloud App Security
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
+- Office 365 Operated by 21Vianet
 - Microsoft PowerApps
 - Power Automate (formerly Microsoft Flow)
-- Microsoft Graph
-- Microsoft Genomics
-- Office 365 Operated by 21Vianet
 - Power BI
+- Power BI Embedded
 
 ## Audits, reports, and certificates
 
-2017 ISO 20000-1 documentation for Azure, Intune, Microsoft Managed Desktop, Power BI, Microsoft Cloud App Security, Microsoft PowerApps, Power Automate (formerly Microsoft Flow), Microsoft Graph, Microsoft Genomics and Microsoft Datacenters
+ISO 20000-1 documentation as follows:
 
-- [Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2077810)
-- [Certificate](https://go.microsoft.com/fwlink/p/?linkid=2077815)
-- [Statement of applicability](https://aka.ms/AzureISO20000StatementofApplicability)
+- [Azure, Dynamics 365, and Online Services: ISO20000-1 Certificate](https://aka.ms/azureiso200001cert)
+- [Azure, Dynamics 365, and Online Services: ISO20000-1 Assessment Report](https://aka.ms/azureiso200001report)
+- [Azure, Dynamics 365, and Online Services: ISO20000-1 Statement of Availability (SOA)](https://aka.ms/azureiso200001soa)
 
 ## Frequently asked questions
 
@@ -71,6 +73,6 @@ Yes. If your business is seeking certification for implementations deployed on i
 
 ## Resources
 
-- [ISO 20000-1:2011 — Service management](https://www.iso.org/standard/51986.html) (requirements for purchase)
+- [ISO 20000-1:2011—Service management](https://www.iso.org/standard/51986.html) (requirements for purchase)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
