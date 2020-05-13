@@ -35,21 +35,21 @@ Learn about the benefits of ISO-Iec-27001 on the Microsoft Cloud: [Download the 
 ## Microsoft in-scope cloud services
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
 - Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - Office 365 Germany
 - OMS Service Map
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - [Microsoft Professional Services](https://go.microsoft.com/fwlink/p/?linkid=2100022)
-- Stream
+- Microsoft Stream
 - Azure DevOps Services
 - Microsoft Defender ATP — Endpoint Detection & Response, Automatic Investigation & Remediation, Secure Score
 
@@ -59,7 +59,7 @@ Audit cycle: Microsoft cloud services are audited at least annually against the 
 
 ### Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Microsoft Managed Desktop, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078342)
+- [Azure, Microsoft Cloud App Security, Flow, Genomics, Microsoft Graph, Microsoft Healthcare Bot, Intune, Microsoft Managed Desktop, OMS Service Map, PowerApps, Power BI, Microsoft Stream, and Microsoft Datacenter — ISO 27001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078342)
 
 ### Office 365
 
@@ -87,8 +87,8 @@ Audit cycle: Microsoft cloud services are audited at least annually against the 
 
 ### Azure
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, Microsoft Managed Desktop, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream, and Microsoft Datacenter — ISO 27001 and 27018 Statement of Applicability (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Microsoft Cloud App Security, Flow, Genomics, Microsoft Graph, Microsoft Healthcare Bot, Intune, Microsoft Managed Desktop, OMS Service Map, PowerApps, Power BI, Microsoft Stream, and Microsoft Datacenter — ISO 27001 and 27018 Audit Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
+- [Azure, Microsoft Cloud App Security, Flow, Genomics, Microsoft Graph, Microsoft Healthcare Bot, Intune, OMS Service Map, PowerApps, Power BI, Microsoft Stream, and Microsoft Datacenter — ISO 27001 and 27018 Statement of Applicability (SOA)](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide?command=Download&downloadType=Document&downloadId=47d89200-b24b-491d-b657-7c523ddfb6f9&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
 
 ### Office 365
 

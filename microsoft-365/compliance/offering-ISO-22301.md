@@ -31,12 +31,12 @@ Microsoft is the first hyperscale cloud service provider to receive the ISO 2230
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - Genomics
-- Graph
+- Microsoft Graph
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - [Office 365 Commercial, Government, and Education](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
