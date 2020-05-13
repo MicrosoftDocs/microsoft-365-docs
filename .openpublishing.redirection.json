@@ -308,15 +308,25 @@
       "source_path": "microsoft-365/security/mtp/hunting.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview",
       "redirect_document_id": true
+    },  
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-accountinfo-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-identityinfo-table",
+      "redirect_document_id": true
     },
-	{
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfobeta-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicefilecertificateinfo-table",
+      "redirect_document_id": true
+    },
+	  {
       "source_path": "microsoft-365/security/mtp/mtp-preview.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/preview",
       "redirect_document_id": true
     },
     {
       "source_path": "microsoft-365/security/office-365-security/index.md",
-      "redirect_url": "eop-features",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap",
       "redirect_document_id": false
     },
     {
@@ -375,8 +385,13 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/add-users/index.md",
-      "redirect_url": "add-users",
+      "source_path": "microsoft-365/admin/manage/manage.md",
+      "redirect_url": "index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/admin/email/email.md",
+      "redirect_url": "index",
       "redirect_document_id": true
     },
     {
@@ -390,18 +405,8 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/email/index.md",
-      "redirect_url": "email",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/admin/get-help-with-domains/index.md",
-      "redirect_url": "get-help-with-domains",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "microsoft-365/admin/manage/index.md",
-      "redirect_url": "manage",
+      "redirect_url": "what-is-a-domain",
       "redirect_document_id": true
     },
     {
@@ -410,23 +415,18 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/setup/index.md",
-      "redirect_url": "setup",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/admin/usage-analytics/index.md",
       "redirect_url": "usage-analytics",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/admin/index.md",
-      "redirect_url": "admin-home",
-      "redirect_document_id": true
+      "source_path": "microsoft-365/admin/misc/index.md",
+      "redirect_url": "index",
+      "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/misc/index.md",
-      "redirect_url": "admin-home",
+      "source_path": "microsoft-365/admin/admin-home.md",
+      "redirect_url": "index",
       "redirect_document_id": false
     },
     {
@@ -434,8 +434,8 @@
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data",
       "redirect_document_id": true
     },    {
-      "source_path": "microsoft-365/dns/index.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/get-help-with-domains",
+      "source_path": "microsoft-365/admin/dns/index.md",
+      "redirect_url": "setup/add-domain",
       "redirect_document_id": false
     },
     {
@@ -559,11 +559,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "microsoft-365/security/office-365-security/ciso-workshop.md",
       "redirect_url": "https://docs.microsoft.com/security/ciso-workshop/ciso-workshop",
       "redirect_document_id": false
@@ -604,14 +599,79 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/atp-anti-phishing.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies",
+      "source_path": "microsoft-365/admin/dns/add-or-edit-custom-dns-records.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/setup/add-domain",
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/security/office-365-security/unverified-sender-feature.md",
-      "redirect_url": "https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206",
+      "source_path": "microsoft-365/compliance/disposition-reviews.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/disposition",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-teams-three-tiers.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-teams-retention-DLP.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/secure-files-in-teams.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/deploy-teams-sensitivity-labels.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/secure-teams-highly-regulated-data-scenario.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/go-to-the-securitycompliance-center.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "./office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-a-custom-blocked-urls-list-atp",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "./office-365-security/messaging-policy-and-compliance-in-eop.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/auditing-reports-in-eop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "./office-365-security/manage-recipients-and-admin-role-groups-in-eop.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/manage-recipients-in-eop",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "./office-365-security/how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "./office-365-security/what-is-eop.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "./office-365-security/block-email-spam-in-EOPStandalone.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "./office-365-security/exchange-online-protection-eop.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview",
+      "redirect_document_id": true
     }
   ]
 }

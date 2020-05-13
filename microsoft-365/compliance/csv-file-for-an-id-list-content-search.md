@@ -11,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: "Use the Results.csv or Unindexed Items.csv file from an existing Content Search to create an ID list search that returns a specific email messages. ID list searches are typically used to return partially indexed mailbox items."
 ---

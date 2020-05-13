@@ -1,5 +1,5 @@
 ---
-title: "Automated investigation and response (AIR)"
+title: "Automated investigation and response (AIR) overview"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,9 +15,10 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: "Get an overview of automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
 ms.custom: air
+ - seo-marvel-mar2020
 ---
 
-# Automated investigation and response (AIR)
+# An overview of Automated investigation and response (AIR) in Microsoft 365
 
 As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
 
@@ -63,6 +64,7 @@ The security playbooks you'll get with AIR are designed to tackle the most frequ
 ### Security playbooks are rolling out in phases
 
 As part of AIR, security playbooks are rolling out in phases. Phase 1 is now generally available and includes several playbooks that provide recommendations for actions that security administrators can review and approve:
+
 - User-reported phish message
 - URL click verdict change
 - Malware detected post-delivery (Malware ZAP)
@@ -71,6 +73,7 @@ As part of AIR, security playbooks are rolling out in phases. Phase 1 is now gen
 Phase 1 also includes support for administrator triggered e-mail investigations (using [Threat Explorer](threat-explorer.md)).
 
 Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions and aiding security administrators in investigating issues:
+
 - User reported as compromised (public preview)
 
 Further playbooks will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
@@ -78,6 +81,7 @@ Further playbooks will be released as they are completed. Visit the [Microsoft 3
 ### Playbooks include investigation and recommendations
 
 In AIR, each security playbook includes: 
+
 - a root investigation of an email's entities (files, URLs, recipients, IP addresses, etc.),
 - further hunting for similar emails received by the organization 
 - steps taken to identify and correlate other potential threats, and 
@@ -90,6 +94,7 @@ Each high-level step includes a number of substeps that are executed to provide 
 Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in](enable-the-report-message-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
 
 During the root investigation phase, various aspects of the email are assessed. These include:
+
 - A determination about what type of threat it might be;
 - Who sent it;
 - Where the email was sent from (sending infrastructure);
@@ -105,8 +110,8 @@ Next, several threat investigation and hunting steps are executed:
 - Similar email messages are identified via email cluster searches.
 - The signal is shared with other platforms, such as [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - A determination is made on whether any users have clicked through any malicious links in suspicious email messages.
-- A check is done across Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) and Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) to see if there are any other similar messages reported by users.
-- A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security), and [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlating any related user activity anomalies. 
+- A check is done across Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) and Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) to see if there are any other similar messages reported by users.
+- A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security), and [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlating any related user activity anomalies.
 
 During the hunting phase, risks and threats are assigned to various hunting steps. 
 
@@ -131,4 +136,3 @@ Similar to playbooks triggered by an alert, automatic investigations that are tr
 - [Get started using AIR](office-365-air.md)
 
 - [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

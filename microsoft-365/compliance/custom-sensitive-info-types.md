@@ -15,7 +15,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Get an overview of custom sensitive information types for DLP."
+description: Get an overview of custom sensitive information types for Data Loss Prevention (DLP), such as primary pattern, character proximity, and confidence level.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Custom sensitive information types

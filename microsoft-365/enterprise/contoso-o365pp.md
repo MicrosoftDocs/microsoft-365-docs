@@ -36,7 +36,7 @@ Based on their requirements, Contoso chose to deploy Windows 10 Enterprise and M
 - Intelligent language pack deployment, including automatically deploying the same language as the operating system
 - Fully supported and easy-to-use method of removing existing versions of Office from a client during deployment
 
-In addition to Configuration Manager, Contoso used the [Readiness Toolkit](https://docs.microsoft.com/deployoffice/use-the-readiness-toolkit-to-assess-application-compatibility-for-office-365-pro), a free tool from Microsoft, to assess compatibility issues with their Office macros and add-ins.
+In addition to Configuration Manager, Contoso used the [Readiness Toolkit](https://docs.microsoft.com/deployoffice/readiness-toolkit-application-compatibility-microsoft-365-apps), a free tool from Microsoft, to assess compatibility issues with their Office macros and add-ins.
 
 ## Managing the deployment and updates
 
@@ -47,7 +47,7 @@ Microsoft 365 Apps for enterprise has a new release model: Office as a service. 
 
 Instead of managing updates to Office with Configuration Manager, Contoso enabled automatic updates from the cloud. Cloud-based updates reduced their administrative overhead while ensuring the devices stayed up to date. 
 
-Contoso followed the same two-stage approach for feature updates that they used for deploying Office: devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus): 
+Contoso followed the same two-stage approach for feature updates that they used for deploying Office: devices in the pilot group received feature updates four months earlier than devices in the rest of the organization (the broad group). To enable this for Office, Contoso used two recommended [update channels](https://docs.microsoft.com/DeployOffice/overview-update-channels): 
 
 - Semi-Annual Channel (Targeted) for updates to the pilot group 
 - Semi-Annual Channel for updates to the broad group. 

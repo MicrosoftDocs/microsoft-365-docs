@@ -1,5 +1,5 @@
 ---
-title: "Threat Explorer and real-time detections, new to Threat Explorer, changes to Threat Explorer, new to Office 365, Security, Cloud Security, new to Security in ATP, new ATP features"
+title: Threat Explorer and real-time detections
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,7 +15,8 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: "Learn about Explorer and real-time detections in the Security &amp; Compliance Center."
+description: Learn about using Explorer and real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Threat Explorer and real-time detections
@@ -235,4 +236,4 @@ To learn more about roles and permissions, see the following resources:
 - An **All email** view is available in **Threat Explorer** (and is not in the **real-time detections** report).
 - More filtering capabilities and available actions are included in **Threat Explorer**.
 
-For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).
+For more details, see [Office 365 ATP Service Description: Feature availability across Advanced Threat Protection (ATP) plans](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

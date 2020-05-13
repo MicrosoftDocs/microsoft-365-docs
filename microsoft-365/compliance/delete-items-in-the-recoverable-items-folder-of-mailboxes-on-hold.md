@@ -1,5 +1,5 @@
 ---
-title: "Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help"
+title: Delete items in the cloud mailbox on hold Recoverable Items folder - Admin Help
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,10 +16,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
-description: "For administrators: Delete items in a 
-
-
-er's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold. This is an effective way to delete data that's been accidentally spilled into Microsoft 365."
+description: "For administrators: Delete items in a user's Recoverable Items folder for an Exchange Online mailbox, even if that mailbox is placed on legal hold. This is an effective way to delete data that's been accidentally spilled into Microsoft 365."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Delete items in the Recoverable Items folder of cloud-based mailboxes on hold - Admin Help
@@ -46,21 +44,21 @@ The Recoverable Items folder for an Exchange Online mailbox exists to protect fr
 ## Before you begin
 
 - To create and run a Content Search, you have to be a member of the eDiscovery Manager role group or be assigned the Compliance Search management role. To delete messages, you have to be a member of the Organization Management role group or be assigned the Search And Purge management role. For information about adding users to a role group, see [Assign eDiscovery permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
-    
+
 - The procedure described in this article isn't supported for inactive mailboxes. That's because you can't reapply a hold (or retention policy) to an inactive mailbox after you remove it. When you remove a hold from an inactive mailbox, it's changed to a normal soft-deleted mailbox and will be permanently deleted from your organization after it's processed by the Managed Folder Assistant.
-    
-- You can't perform this procedure for a mailbox that has been assigned to an Office 365 retention policy that's been locked with a Preservation Lock. That's because a Preservation Lock prevents you from removing or excluding the mailbox from the retention policy and from disabling the Managed Folder Assistant on the mailbox. For more information about locking retention policies, see [Use Preservation Lock to comply with regulatory requirements](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
-    
+
+- You can't perform this procedure for a mailbox that has been assigned to a retention policy that's been locked with a Preservation Lock. That's because a Preservation Lock prevents you from removing or excluding the mailbox from the retention policy and from disabling the Managed Folder Assistant on the mailbox. For more information about locking retention policies,see [Use Preservation Lock to comply with regulatory requirements](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements).
+
 - If a mailbox isn't placed on hold (or doesn't have single item recovery enabled), you can delete the items from the Recoverable Items folder. For more information about how to do this, see [Search for and delete email messages in your organization](https://docs.microsoft.com/microsoft-365/compliance/search-for-and-delete-messages-in-your-organization).
   
 ## Step 1: Collect information about the mailbox
 
 This first step is to collect selected properties from the target mailbox that will affect this procedure. Be sure to write down these settings or save them to a text file because you'll change some of these properties and then revert back to the original values in Step 6, after you delete items from the Recoverable Items folder. Here's a list of the mailbox properties you need to collect.
   
--  *SingleItemRecoveryEnabled*  and  *RetainDeletedItemsFor*  ; if necessary, you'll disable single recovery and increase the deleted items retention period in Step 3. 
-    
--  *LitigationHoldEnabled*  and  *InPlaceHolds*  ; you need to identify all the holds placed on the mailbox so that you can temporarily remove them in Step 3. See the [More information](#more-information) section for tips about how to identify the type hold that might be placed on a mailbox. 
-    
+- *SingleItemRecoveryEnabled*  and  *RetainDeletedItemsFor*. If necessary, you'll disable single recovery and increase the deleted items retention period in Step 3. 
+
+- *LitigationHoldEnabled*  and  *InPlaceHolds*. You need to identify all the holds placed on the mailbox so that you can temporarily remove them in Step 3. See the [More information](#more-information) section for tips about how to identify the type hold that might be placed on a mailbox. 
+
 Additionally, you need to get the mailbox client access settings so you can temporarily disable them so the owner (or other users) can't access the mailbox during this procedure. Finally, you can get the current size and number of items in the Recoverable Items folder. After you delete items in the Recoverable Items folder in Step 5, you'll use this information to verify that items were removed.
   
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Be sure to use a user name and password for an administrator account that's been assigned the appropriate management roles in Exchange Online. 
@@ -223,9 +221,9 @@ After you've identified that a mailbox is on hold because a retention label is a
 
 For more information about labels, see [Overview of labels](labels.md).
 
- ### eDiscovery case holds
+ ### eDiscovery holds
   
-Run the following commands in [Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/?linkid=627084) to identify the hold associated with an eDiscovery case that's applied to the mailbox. Use the GUID (not including the  `UniH` prefix) for the eDiscovery hold that you identified in Step 1. The second command displays the name of the eDiscovery case the hold is associated with; the third command displays the name of the hold. 
+Run the following commands in [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) to identify the hold associated with an eDiscovery case (called *eDiscovery holds*) that's applied to the mailbox. Use the GUID (not including the  `UniH` prefix) for the eDiscovery hold that you identified in Step 1. The second command displays the name of the eDiscovery case the hold is associated with; the third command displays the name of the hold. 
   
 ```powershell
 $CaseHold = Get-CaseHoldPolicy <hold GUID without prefix>
@@ -239,7 +237,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold.Name
 ```
 
-After you've identified the name of the eDiscovery case and the hold, go to the **eDiscovery** \> **eDiscovery** page in the compliance center, open the case, and remove the mailbox from the hold. For more information, see [eDiscovery cases](ediscovery-cases.md).
+After you've identified the name of the eDiscovery case and the hold, go to the **eDiscovery** \> **eDiscovery** page in the compliance center, open the case, and remove the mailbox from the hold. For more information about identifying eDiscovery holds, see the "eDiscovery holds" section in [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md#ediscovery-holds).
   
 ## Step 4: Remove the delay hold from the mailbox
 

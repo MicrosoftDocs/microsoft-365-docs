@@ -120,7 +120,7 @@ Compliance with these standards, confirmed by an accredited auditor, demonstrate
 
 **Where can I get the ISO/IEC 27001 audit reports and scope statements for Microsoft services?**
 
-The [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) provides independently audited compliance reports. You can use the portal to request reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements.
 
 **Does Microsoft run annual tests for infrastructure failures?**
 
@@ -156,7 +156,3 @@ Yes. If your business requires ISO/IEC 27001 certification for implementations d
 
 - [Azure DevOps Services data protection overview](https://www.visualstudio.com/articles/team-services-security-whitepaper)
 - [13 effective Azure security controls for ISO 27001 compliance](https://aka.ms/13securitycontrolsforiso27001compliance)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/1/2/9/12926039-8F90-4BAF-AC8F-7124D48F400B/ISOIEC_27001_Compliance_Backgrounder.pdf).

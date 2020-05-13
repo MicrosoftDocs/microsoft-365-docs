@@ -27,7 +27,7 @@ landingContent:
           - text: View your bill
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Manage payment methods
-            url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
+            url: billing-and-payments/manage-payment-methods.md
           - text: Understand your invoice
             url: billing-and-payments/understand-your-invoice.md
           - text: Manage billing profiles

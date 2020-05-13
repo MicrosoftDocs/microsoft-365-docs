@@ -45,7 +45,7 @@ The following table explains what you can expect when a paid Microsoft 365 for b
 *For most offers, in most countries and regions.
   
 > [!NOTE]
-> **What is "customer data"?** Customer data, as defined in the [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see the [Get started with the Microsoft Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662).
+> **What is "customer data"?** Customer data, as defined in the [Microsoft Online Service Terms](https://go.microsoft.com/fwlink/p/?LinkId=613649), refers to all data, including all text, sound, or image files that are provided to Microsoft by, or on behalf of, the customer through the customer's use of Microsoft 365 services. To learn more about the protection of customer data, see the [Get started with the Microsoft Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
   
 ## What are my options if my subscription is about to expire?
 
@@ -215,7 +215,7 @@ Here's what to expect for you and your users if you cancel a subscription.
 To learn how to cancel, see [Cancel your subscription](cancel-your-subscription.md).
   
 > [!IMPORTANT]
-> If you want your subscription data to be deleted before the typical Disabled period is over, you can request expedited deprovisioning. When you request expedited deprovisioning, your subscription data is deleted within 3 days of cancellation. To use expedited deprovisioning, [call support](../../admin/contact-support-for-business-products.md).
+> If you want your subscription data to be deleted before the typical Disabled period is over, you can [close your account](../close-your-account.md).
 
 > [!NOTE]
 > The information on this page is subject to the [Microsoft Policy Disclaimer and Change Notice](https://go.microsoft.com/fwlink/p/?LinkId=613651). Return to this site periodically to review any changes.

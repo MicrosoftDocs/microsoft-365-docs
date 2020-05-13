@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
-description: "Summary: This article describes how to update a Domain Name Service (DNS) record so that you can use Sender Policy Framework (SPF) with your custom domain in Office 365. Using SPF helps to validate outbound email sent from your custom domain."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to update a Domain Name Service (DNS) record to use Sender Policy Framework (SPF) with your custom domain in Office 365."
 ---
 
 # Set up SPF to help prevent spoofing
@@ -44,7 +46,7 @@ Gather this information:
 
 - The current SPF TXT record for your custom domain. For instructions, see [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records).
 
-- IP addresses of all on-premises messaging servers. For example, **192.168.0.1**.
+- External IP addresses of all on-premises messaging servers. For example, **131.107.2.200**.
 
 - Domain names to use for all third-party domains that you need to include in your SPF TXT record. Some bulk mail providers have set up subdomains to use for their customers. For example, the company MailChimp has set up **servers.mcsv.net**.
 

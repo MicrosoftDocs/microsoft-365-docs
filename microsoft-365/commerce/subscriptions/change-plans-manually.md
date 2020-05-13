@@ -37,7 +37,7 @@ The best way to change all your users from one plan to another is to [use the Up
 To continue with a manual change, read [Step 2: Buy a new subscription](#step-2-buy-a-new-subscription) in this topic.
 
 > [!IMPORTANT]
-> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before switching O365 for business plans](back-up-data-before-switching-plans.md).
+> If you are changing to a plan with fewer data-related services than your current plan (downgrading), you need to manually back up any data you wish to keep. For more information, see [Back up data before changing plans](back-up-data-before-switching-plans.md).
 
 ## Step 2: Buy a new subscription
 
@@ -52,17 +52,17 @@ Include a license for each user that you want to move.
 
 ## Step 3: Check your new subscription and licenses
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. **Verify that both subscriptions are listed and active**
    The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Check that both subscriptions are active. [The new subscription isn't listed, or isn't active](#the-new-subscription-isnt-listed-or-isnt-active).
 
 3. **Check that you have enough licenses for each user**
-   Each user needs a license that matches their subscription. So if you want to move ten users to Office 365 Enterprise E5, you'll need
+   Each user needs a license that matches their subscription. So if you want to move ten users to Microsoft 365 Business Premium, you'll need
     to make sure ten licenses are available.
 
 4. **Need more licenses for the new subscription?**
-   Go to the **Products & services** page and [buy more licenses](../licenses/buy-licenses.md).
+   Go to the **Your products** page and [buy more licenses](../licenses/buy-licenses.md).
 
 > [What about the old licenses?](#what-about-the-old-licenses)
 

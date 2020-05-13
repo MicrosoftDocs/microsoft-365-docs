@@ -23,6 +23,13 @@ description: "Update your administrator phone number and email address in the ad
 
 # Update your admin phone number and email address
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 This article explains how you, the admin, can change your business phone and email address in Microsoft 365.
   
 If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).

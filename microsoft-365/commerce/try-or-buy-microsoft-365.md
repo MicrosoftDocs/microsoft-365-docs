@@ -23,13 +23,21 @@ description: "Learn how to get a free trial or buy a subscription for Microsoft 
 
 # Try or buy a Microsoft 365 subscription
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Microsoft 365 is a complete solution that combines Office 365 and Windows 10 with advanced security and device management. If you already have a subscription and you want to trial or buy a Microsoft 365 subscription, the best way to do it is through the admin center. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
   
 - Microsoft 365 Business Premium
 
-- Microsoft 365 Enterprise E3
+- Office 365 Enterprise E3
 
-- Microsoft 365 Enterprise E5
+- Office 365 Enterprise E5
 
 When you add a subscription through the admin center, the new subscription is associated with the same organization (domain namespace) as your existing subscription. This makes it easier to move users in your organization between subscriptions, or to assign them a license for the additional subscription they need.
   

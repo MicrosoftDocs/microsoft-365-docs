@@ -109,7 +109,7 @@ Identify the columns in your query results where you expect to find the main aff
 
 You can select only one column for each entity type (mailbox, user, or device). Columns that are not returned by your query can't be selected.
 
-### 3. Specify actions on files or machines.
+### 4. Specify actions on files or machines.
 Your custom detection rule can automatically take actions on files or machines that are returned by the query.
 
 #### Actions on machines
@@ -125,7 +125,7 @@ When selected, the **Quarantine file** action is taken on files in the `SHA1`, `
 > [!NOTE]
 > The allow or block action for custom detection rules is currently not supported on Microsoft Threat Protection.
 
-### 4. Set the rule scope.
+### 5. Set the rule scope.
 Set the scope to specify which devices are covered by the rule. The scope influences rules that check devices and doesn't affect rules that check only mailboxes and user accounts or identities.
 
 When setting the scope, you can select:
@@ -135,7 +135,7 @@ When setting the scope, you can select:
 
 Only data from devices in scope will be queried. Also, actions will be taken only on those devices.
 
-### 5. Review and turn on the rule.
+### 6. Review and turn on the rule.
 After reviewing the rule, click **Create** to save it. The custom detection rule immediately runs. It runs again based on configured frequency to check for matches, generate alerts, and take response actions.
 
 ## Manage existing custom detection rules

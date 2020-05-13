@@ -5,8 +5,11 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+- M365solutions
 search.appverid:
 - SPO160
 - MET150
