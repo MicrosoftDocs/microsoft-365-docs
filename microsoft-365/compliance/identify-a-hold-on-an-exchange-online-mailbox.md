@@ -14,8 +14,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-description: "Learn how to identify the different types of hold that can be placed on a Microsoft 365 mailbox. These types of holds include Litigation Hold, eDiscovery holds, and Microsoft 365 retention policies. You can also determine if a user has been excluded from an organization-wide retention policy"
-
+description: "Learn how to identify the different types of hold that can be placed on a Microsoft 365 mailbox. These types of holds include Litigation Hold, eDiscovery holds, and Microsoft 365 retention policies. You can also determine if a user has been excluded from an organization-wide retention policy."
 ---
 
 # How to identify the type of hold placed on an Exchange Online mailbox
@@ -26,7 +25,7 @@ Microsoft 365 offers several ways that your organization can prevent mailbox con
 
 - **[Litigation Hold](create-a-litigation-hold.md):** Holds that are applied to user mailboxes in Exchange Online.
 
-- **[eDiscovery hold](ediscovery-cases.md#step-4-place-content-locations-on-hold):** Holds that are associated with an eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
+- **[eDiscovery hold](create-ediscovery-holds.md):** Holds that are associated with a Core eDiscovery case in the security and compliance center. eDiscovery holds can be applied to user mailboxes and to the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams.
 
 - **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the Exchange admin center in Exchange Online.
 

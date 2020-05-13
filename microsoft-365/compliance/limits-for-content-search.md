@@ -77,7 +77,7 @@ There are additional limits related to different aspects of Content Search, such
     
 - [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
-- [Search limits for SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+- [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
     
 For information about Content Searches, see:
   

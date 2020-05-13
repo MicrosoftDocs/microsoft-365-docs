@@ -210,14 +210,14 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: Set up IRM in SharePoint admin center
       href: set-up-irm-in-sp-admin-center.md
-    - name: Understand data classification (preview)
+    - name: Understand data classification
       href: data-classification-overview.md
       items: 
-        - name: Get started with content explorer (preview)
+        - name: Get started with content explorer
           href: data-classification-content-explorer.md
-        - name: Get started with activity explorer (preview)
+        - name: Get started with activity explorer
           href: data-classification-activity-explorer.md
-        - name: Data classification public preview release notes (preview)
+        - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
         - name: Get started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
@@ -247,15 +247,15 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Set up a connector to archive Facebook data
+        - name: Archive Facebook data (preview)
           href: archive-facebook-data-with-sample-connector.md
-        - name: Set up a connector to archive Twitter data
+        - name: Archive Twitter data (preview)
           href: archive-twitter-data-with-sample-connector.md
-        - name: Set up a connector to archive LinkedIn data
+        - name: Archive LinkedIn data
           href: archive-linkedin-data.md
-        - name: Set up a connector to archive Instant Bloomberg data
+        - name: Archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
-        - name: Set up a connector to import HR data
+        - name: Import HR data (preview)
           href: import-hr-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
