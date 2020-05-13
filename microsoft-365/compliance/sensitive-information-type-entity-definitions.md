@@ -4908,13 +4908,13 @@ These are the entities in the EU national identification number bundle
 - [Austria](#austria-national-identification-number)
 - [Belgium](#belgium-national-identification-number)
 - [Bulgaria](#bulgaria-national-identification-number)
-- [Croatia](#Ccoatia-identity-card-number)
+- [Croatia](#croatia-identity-card-number)
 - [Cyprus](#cyprus-national-identification-number)
 - [Czech](#czech-personal-identity-number)
 - [Denmark](#denmark-personal-identification-number)
 - [Estonia](#estonia-national-identification-number)
 - [Finland](#finland-national-identification-number)
-- [France](#france-national-identification-card-(CNI))
+- [France](#france-national-identification-card-cni)
 - [Germany](#germany-identity-card-number)
 - [Greece](#greece-national-identification-card)
 - [Hungary](#hungary-national-identification-number)
@@ -4925,7 +4925,7 @@ These are the entities in the EU national identification number bundle
 - [Luxemburg](#luxemburg-national-identification-number)
 - [Malta](#malta-national-identification-number)
 - [Netherlands](#netherlands-national-identification-number)
-- [Poland](#poland-national-identification-number-(PESEL))
+- [Poland](#poland-national-identification-number-pesel)
 - [Portugal](#portugal-citizen-card-number)
 - [Romania](#romania-national-identification-number)
 - [Slovakia](#slovakia-national-identification-number)
@@ -4946,7 +4946,7 @@ These are the entities in the EU passport number bundle
 - [Estonia](#estonia-passport-number)
 - [Finland](#finland-passport-number)
 - [France](#france-passport-number)
-- [Germany](germany-passport-number)
+- [Germany](#germany-passport-number)
 - [Greece](#greece-passport-number)
 - [Hungary](#hungary-passport-number)
 - [Ireland](#ireland-passport-number)
@@ -4963,7 +4963,7 @@ These are the entities in the EU passport number bundle
 - [Slovenia](#slovenia-passport-number)
 - [Spain](#spain-passport-number)
 - [Sweden](#sweden-passport-number)
-- [U.K.](#us-uk-passport-number)
+- [U.K.](#us--uk-passport-number)
 
 
 ## EU social security number or equivalent identification
@@ -4975,12 +4975,12 @@ These are the entities that are in the EU Social Security Number or equivalent i
 - [Czech](#czech-social-security-number-or-equivalent-identification)
 - [Denmark](#denmark-social-security-number-or-equivalent-identification)
 - [Finland](#finland-social-security-number-or-equivalent-identification)
-- [France](#france-social-security-number-or-equivalent-identification)
-- [Germany](#germany-social-security-number-or-equivalent-identification)
-- [Greece](#greece-social-security-number-or-equivalent-identification)
+- [France](#france-social-security-number-insee-or-equivalent-identification)
+- [Germany](#germany-identity-card-number)
+- [Greece](#greece-national-identification-card)
 - [Hungary](#hungary-social-security-number-or-equivalent-identification)
-- [Portugal](#portugal-social-security-number-or-equivalent-identification)
-- [Spain](#spain-social-security-number-or-equivalent-identification)
+- [Portugal](#portugal-citizen-card-number)
+- [Spain](#spain-social-security-number-ssn)
 - [Sweden](#sweden-social-security-number-or-equivalent-identification)
 
 ## EU Tax identification number
@@ -9630,7 +9630,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 
    
-## Poland passport
+## Poland passport number
 This sensitive information type entity is only available in the EU Passport Number bundle.
 
 ### Format
@@ -11120,7 +11120,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - pasaporte
 
 
-## Spain social security sumber (SSN)
+## Spain social security number (SSN)
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
 
 ### Format
