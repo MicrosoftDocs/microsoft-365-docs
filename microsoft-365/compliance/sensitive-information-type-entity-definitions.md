@@ -3597,6 +3597,62 @@ Pattern confidenceLevel="75">
 - φορολογικού κωδικού
 - tax number
 
+## Czech driver's license number
+This sensitive information type entity is only available in the EU Driver's License bundle.
+
+### Format
+
+Two letters followed by six digits
+  
+### Pattern
+
+Eight letters and digits:
+  
+- Two letters (not case-sensitive)
+- A space (optional)
+- Six digits
+
+### Checksum
+
+No
+  
+### Definition
+
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+  
+- The regular expression  `Regex_czech_republic_eu_driver's_license_number` finds content that matches the pattern. 
+- A keyword from  `Keywords_czech_republic_eu_driver's_license_number` is found. 
+
+```xml
+ <!-- EU Driver's License Number -->
+<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
+          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
+        </Pattern>
+</Entity>
+
+```
+
+### Keywords
+
+**Keywords_czech_republic_eu_driver's_license_number**
+
+- dl#
+- driver license
+- driver license number
+- driver licence
+- drivers lic.
+- drivers license
+- drivers licence
+- driver's license
+- driver's license number
+- driver's license number
+- driver's licence number
+- driving license number
+- dlno#
+- řidičský prúkaz
+
 ## Czech passport number
 This sensitive information type entity is only available in the EU Passport Number bundle.
 
@@ -3692,61 +3748,7 @@ The checksum passes.
 - czech personal identity number
 - Rodné číslo
 
-## Czech driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
 
-### Format
-
-Two letters followed by six digits
-  
-### Pattern
-
-Eight letters and digits:
-  
-- Two letters (not case-sensitive)
-- A space (optional)
-- Six digits
-
-### Checksum
-
-No
-  
-### Definition
-
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-  
-- The regular expression  `Regex_czech_republic_eu_driver's_license_number` finds content that matches the pattern. 
-- A keyword from  `Keywords_czech_republic_eu_driver's_license_number` is found. 
-
-```xml
- <!-- EU Driver's License Number -->
-<Entity id="b8fe86d1-c056-453b-bfaa-9fe698699ecc" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="75">
-          <IdMatch idRef="Regex_czech_republic_eu_driver's_license_number" />
-          <Match idRef="Keywords_czech_republic_eu_driver's_license_number" />
-        </Pattern>
-</Entity>
-
-```
-
-### Keywords
-
-**Keywords_czech_republic_eu_driver's_license_number**
-
-- dl#
-- driver license
-- driver license number
-- driver licence
-- drivers lic.
-- drivers license
-- drivers licence
-- driver's license
-- driver's license number
-- driver's license number
-- driver's licence number
-- driving license number
-- dlno#
-- řidičský prúkaz
 
 ## Czech social security number or equivalent identification
 This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
@@ -4898,38 +4900,121 @@ These are the entities in the EU driver's license bundle
 - [Slovenia](#slovenia-drivers-license-number)
 - [Spain](#spain-drivers-license-number)
 - [Sweden](#sweden-drivers-license-number)
+- [U.K.](#uk-drivers-license-number)
 
-\
-|EU Driver's License|EU National ID|EU Passport|EU SSN  |EU Tax ID  |
-|---------|---------|---------|---------|---------|
-[Austria](#austria-national-identification-number)|[Austria](#austria-passport-number)  |[Austria](#austria-social-security-number-or-equivalent-identification) |[Austria](#austria-tax-identification-number) |
-[Bulgaria](#bulgaria-national-identification-number)|[Belgium](#belgium-passport-number)|[Belgium](#belgium-social-security-number-or-equivalent-identification) |[Belgium](#belgium-tax-identification-number)|
-|[Bulgaria](#bulgaria-drivers-license-number)|[Cyprus](#cyprus-national-identification-number)|[Bulgaria](#bulgaria-passport-number)  |[Croatia](#croatia-social-security-number-or-equivalent-identification) |[Bulgaria](#bulgaria-tax-identification-number)|
-| |[Estonia](#estonia-national-identification-number)   |[Croatia](#croatia-passport-number)|[Czech](#czech-social-security-number-or-equivalent-identification) |[Croatia](#croatia-tax-identification-number)|
-|    |[Hungary](#hungary-national-identification-number)  |[Cyprus](#cyprus-passport-number)   |[Denmark](#denmark-social-security-number-or-equivalent-identification) |[Cyprus](#cyprus-tax-identification-number)|
-|     |[Ireland](#ireland-national-identification-number)    |[Czech](#czech-passport-number)   |[Finland](#finland-social-security-number-or-equivalent-identification)  |[Czech](#czech-tax-identification-number)|
-|  |[Italy](#italy-national-identification-number)      |[Denmark](#denmark-passport-number) |[Hungary](#hungary-social-security-number-or-equivalent-identification) |[Denmark](#denmark-tax-identification-number)|
-|  |[Latvia](#latvia-national-identification-number)   |[Estonia](#estonia-passport-number)  |[Sweden](#sweden-social-security-number-or-equivalent-identification) |[Estonia](#estonia-tax-identification-number)|
-| |[Lithuania](#lithuania-national-identification-number) |[Greece](#greece-passport-number)|9:4         |[Finland](#finland-tax-identification-number)|
-|   |[Luxemburg](#luxemburg-national-identification-number)    |[Hungary](#hungary-passport-number) |10:4         |[France](#france-tax-identification-number)|
-|  |[Malta](#malta-national-identification-number)         |[Ireland](#ireland-passport-number)    |11:4         |[Germany](#germany-tax-identification-number)|
-|  |[Netherlands](#netherlands-national-identification-number)|[Italy](#italy-passport-number)     |12:4         |[Greece](#greece-tax-identification-number)|
-|   |[Romania](#romania-national-identification-number)        |[Latvia](#latvia-passport-number)   |13:4         |[[Hungary](#hungary-tax-identification-number) |
-| |[Slovakia](#slovakia-national-identification-number)|[Lithuania](#lithuania-passport-number)|14:4         |[Ireland](#ireland-tax-identification-number)|
-|[ |[Slovenia](#slovenia-national-identification-number)    |[Luxemburg](#luxemburg-passport-number)|15:4         |[Italy](#italy-tax-identification-number)|
-| |[Spain](#spain-national-identification-number)  |[Malta](#malta-passport-number)|16:4         |[Latvia](#latvia-tax-identification-number)|
-|     |17:2         |[Netherlands](#netherlands-passport-number)|17:4         |[Lithuania](#lithuania-tax-identification-number)|
-|    |18:2         |[Portugal](#portugal-passport-number)|18:4         |[Luxemburg](#luxemburg-tax-identification-number) |
-|     |19:2         |[Romania](#romania-passport-number) |19:4         |[Malta](#malta-tax-identification-number)|
-|     |20:2         |[Slovakia](#slovakia-passport-number)|20:4         |[Netherlands](#netherlands-tax-identification-number)|
-||21:2|[Slovenia](#slovenia-passport-number)|21:4|[Poland](#poland-tax-identification-number)|
-|[|22:2|[Spain](#spain-passport-number)|22:4|[Portugal](#portugal-tax-identification-number)|
-||23:2|23:3|23:4|[Romania](#romania-tax-identification-number)|
-||24:2|24:3|24:4|[Slovakia](#slovakia-tax-identification-number)|
-|25:1|25:2|25:3|25:4|[Slovenia](#slovenia-tax-identification-number)|
-|26:1|26:2|26:3|26:4|[Spain](#spain-tax-identification-number)|
-|27:1|27:2|27:3|27:4|[Sweden](#sweden-tax-identification-number)|
-|28:1|28:2|28:3|28:4|[U.K.](#uk-tax-identification-number)|
+## EU national identification number
+These are the entities in the EU national identification number bundle
+
+- [Austria](#austria-national-identification-number)
+- [Belgium](#belgium-national-identification-number)
+- [Bulgaria](#bulgaria-national-identification-number)
+- [Croatia](#Ccoatia-identity-card-number)
+- [Cyprus](#cyprus-national-identification-number)
+- [Czech](#czech-personal-identity-number)
+- [Denmark](#denmark-personal-identification-number)
+- [Estonia](#estonia-national-identification-number)
+- [Finland](#finland-national-identification-number)
+- [France](#france-national-identification-card-(CNI))
+- [Germany](#germany-identity-card-number)
+- [Greece](#greece-national-identification-card)
+- [Hungary](#hungary-national-identification-number)
+- [Ireland](#ireland-national-identification-number)
+- [Italy](#italy-national-identification-number)
+- [Latvia](#latvia-national-identification-number)
+- [Lithuania](#lithuania-national-identification-number)
+- [Luxemburg](#luxemburg-national-identification-number)
+- [Malta](#malta-national-identification-number)
+- [Netherlands](#netherlands-national-identification-number)
+- [Poland](#poland-national-identification-number-(PESEL))
+- [Portugal](#portugal-citizen-card-number)
+- [Romania](#romania-national-identification-number)
+- [Slovakia](#slovakia-national-identification-number)
+- [Slovenia](#slovenia-national-identification-number)
+- [Spain](#spain-national-identification-number)
+
+
+## EU passport number 
+These are the entities in the EU passport number bundle
+
+- [Austria](#austria-passport-number)
+- [Belgium](#belgium-passport-number)
+- [Bulgaria](#bulgaria-passport-number)
+- [Croatia](#croatia-passport-number)
+- [Cyprus](#cyprus-passport-number)
+- [Czech](#czech-passport-number)
+- [Denmark](#denmark-passport-number)
+- [Estonia](#estonia-passport-number)
+- [Finland](#finland-passport-number)
+- [France](#france-passport-number)
+- [Germany](germany-passport-number)
+- [Greece](#greece-passport-number)
+- [Hungary](#hungary-passport-number)
+- [Ireland](#ireland-passport-number)
+- [Italy](#italy-passport-number)
+- [Latvia](#latvia-passport-number)
+- [Lithuania](#lithuania-passport-number)
+- [Luxemburg](#luxemburg-passport-number)
+- [Malta](#malta-passport-number)
+- [Netherlands](#netherlands-passport-number)
+- [Poland](#poland-passport-number)
+- [Portugal](#portugal-passport-number)
+- [Romania](#romania-passport-number)
+- [Slovakia](#slovakia-passport-number)
+- [Slovenia](#slovenia-passport-number)
+- [Spain](#spain-passport-number)
+- [Sweden](#sweden-passport-number)
+- [U.K.](#us-uk-passport-number)
+
+
+## EU social security number or equivalent identification
+These are the entities that are in the EU Social Security Number or equivalent identification bundle
+
+- [Austria](#austria-social-security-number-or-equivalent-identification)
+- [Belgium](#belgium-social-security-number-or-equivalent-identification)
+- [Croatia](#croatia-social-security-number-or-equivalent-identification)
+- [Czech](#czech-social-security-number-or-equivalent-identification)
+- [Denmark](#denmark-social-security-number-or-equivalent-identification)
+- [Finland](#finland-social-security-number-or-equivalent-identification)
+- [France](#france-social-security-number-or-equivalent-identification)
+- [Germany](#germany-social-security-number-or-equivalent-identification)
+- [Greece](#greece-social-security-number-or-equivalent-identification)
+- [Hungary](#hungary-social-security-number-or-equivalent-identification)
+- [Portugal](#portugal-social-security-number-or-equivalent-identification)
+- [Spain](#spain-social-security-number-or-equivalent-identification)
+- [Sweden](#sweden-social-security-number-or-equivalent-identification)
+
+## EU Tax identification number
+
+These entities are in the EU Tax identification number bundle
+
+- [Austria](#austria-tax-identification-number)
+- [Belgium](#belgium-tax-identification-number)
+- [Bulgaria](#bulgaria-tax-identification-number)
+- [Croatia](#croatia-tax-identification-number)
+- [Cyprus](#cyprus-tax-identification-number)
+- [Czech](#czech-tax-identification-number)
+- [Denmark](#denmark-tax-identification-number)
+- [Estonia](#estonia-tax-identification-number)
+- [Finland](#finland-tax-identification-number)
+- [France](#france-tax-identification-number)
+- [Germany](#germany-tax-identification-number)
+- [Greece](#greece-tax-identification-number)
+- [Hungary](#hungary-tax-identification-number)
+- [Ireland](#ireland-tax-identification-number)
+- [Italy](#italy-tax-identification-number)
+- [Latvia](#latvia-tax-identification-number)
+- [Lithuania](#lithuania-tax-identification-number)
+- [Luxemburg](#luxemburg-tax-identification-number)
+- [Malta](#malta-tax-identification-number)
+- [Netherlands](#netherlands-tax-identification-number)
+- [Poland](#poland-tax-identification-number)
+- [Portugal](#portugal-tax-identification-number)
+- [Romania](#romania-tax-identification-number)
+- [Slovakia](#slovakia-tax-identification-number)
+- [Slovenia](#slovenia-tax-identification-number)
+- [Spain](#spain-tax-identification-number)
+- [Sweden](#sweden-tax-identification-number)
+- [U.K.](#uk-tax-identification-number)
 
 
 ## Finland driver's license number
