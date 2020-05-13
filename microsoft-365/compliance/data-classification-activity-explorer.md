@@ -36,7 +36,6 @@ There are over 30 different filters available for use, some are:
 - DLP policy
 
 
-
 ## Prerequisites
 
 Every account that accesses and uses data classification must have a license assigned to it from one of these subscriptions:
@@ -59,31 +58,16 @@ Every account that accesses and uses data classification must have a license ass
 
 ## Activity type
 
-Microsoft 365 monitors and reports on 12 types of activities across SharePoint Online, and OneDrive.
+Microsoft 365 monitors and reports on types of activities across SharePoint Online, and OneDrive like:
 
-- File created
-- File modified
-- File renamed
-- File copied to cloud
-- File accessed by unallowed app
-- File printed
-- File copied to removable media
-- File copied to network share
-- File read
-- file copied to clipboard
-- Label applied
-- Label changed (upgraded, downgraded, or removed)
+- label applied
+- label changed (upgraded, downgraded, or removed)
+- auto-labeling simulation
 
 The value of understanding what actions are being taken with your sensitive labeled content is that you can see if the controls that you have already put into place, such as [data loss prevention policies](data-loss-prevention-policies.md) are effective or not. If not, or if you discover something unexpected, such as a large number of items that are labeled `highly confidential` and are downgraded `general`, you can manage your various policies and take new actions to restrict the undesired behavior.
 
-Once your filters are set, you can:
-
-- hover over a segment of the bar chart to see the number of items that fall into that category
-![activity explorer hover over](../media/data-classification-activity-explorer-hover-over-2.png)
-- export the data
-- select any given item from the list and view the details of the action in the fly-out
-
-![activity explorer details fly out](../media/data-classification-activity-explorer-fly-out-3.png)
+> [!NOTE]
+> Activity explorer doesn't currently monitor retention activities for Exchange Online.
 
 ## See also
 - [Sensitivity labels](sensitivity-labels.md)
