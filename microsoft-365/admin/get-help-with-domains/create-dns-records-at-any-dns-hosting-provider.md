@@ -28,7 +28,7 @@ At the end of these steps, your domain will stay registered with the host that y
 
 If you don't add a domain, people in your organization will use the onmicrosoft.com domain for their email addresses until you do. It's important to add your domain before you add users, so you don't have to set them up twice.
 
-**[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for below.
+[Check the Domains FAQ](../setup/domains-faq.md) if you don't find what you're looking for below.
 
 ## Add a TXT record to verify you own the domain
 
@@ -41,10 +41,9 @@ First, we need to prove you own the domain you want to add to Microsoft 365.
 Adding this record won't affect your existing email or other services and it can be safely removed at the end of setup.
 
 Example:
-
-    TXT Name: @
-    TXT Value: MS=ms######## (you get this unique ID from the Admin Center)
-    TTL: 3600‎ (or your provider default)
+- TXT Name: `@`
+- TXT Value: MS=ms######## (you get this unique ID from the Admin Center)
+- TTL: `3600‎` (or your provider default)
 
 4. Save the record, go back to the Admin Center, and select **Verify**. Usually it takes around 15 minutes for record changes to register, but sometimes it can take longer. Give it some time and a few tries to pick up the change.
 
@@ -65,11 +64,11 @@ You'll get the information for the MX record from the Admin Center domain setup 
 On your hosting provider's website, add a new MX record.
 In the new MX record on your DNS host's site, make sure that the fields are set to precisely the following values:
 
-    Record Type: MX
-    Priority: Set the priority of the MX record to the highest value available, typically 0.
-    Host Name: @
-    Points to address: Paste the value from the Admin Center here.
-    TTL: 3600‎ (or your provider default)
+- Record Type: `MX`
+- Priority: Set the priority of the MX record to the highest value available, typically `0`.
+- Host Name: `@`
+- Points to address: Paste the value from the Admin Center here.
+- TTL: `3600‎` (or your provider default)
 
 Save the record, then remove any other MX records.
 
@@ -79,10 +78,10 @@ You'll get the information for the CNAME records from the Admin Center domain se
 On your hosting provider's website, add new CNAME records.
 In the new CNAME records on your DNS host's site, make sure that the fields are set to precisely the following values for each:
 
-    Record Type: CNAME (Alias)
-    Host: Paste the values you copy from the Admin Center here.
-    Points to address: Paste the value from the Admin Center here.
-    TTL: 3600‎ (or your provider default)
+- Record Type: `CNAME (Alias)`
+- Host: Paste the values you copy from the Admin Center here.
+- Points to address: Paste the value from the Admin Center here.
+- TTL: `3600‎` (or your provider default)
 
 
 ### Add a TXT record for SPF to help prevent email spam
@@ -91,10 +90,10 @@ In the new CNAME records on your DNS host's site, make sure that the fields are 
 On your hosting provider's website, edit the existing SPF record or create a new TXT record for SPF.
 In the new TXT record on your DNS host's site, make sure that the fields are set to precisely the following values:
 
-    Record Type: TXT (Text)
-    Host: @
-    TXT Value:  "v=spf1 include:spf.protection.outlook.com -all"
-    TTL: 3600‎ (or your provider default)
+- Record Type: `TXT (Text)`
+- Host: `@`
+- TXT Value: `v=spf1 include:spf.protection.outlook.com -all`
+- TTL: `3600‎` (or your provider default)
 
 To validate your SPF record, use one of these [SPF validation tools](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
@@ -108,15 +107,15 @@ Next, see [Use DMARC to validate email in Microsoft 365](https://technet.microso
 On your hosting provider's website, add new SRV records.
 In the new SRV records on your DNS host's site, make sure that the fields are set to precisely the following values for each:
 
-    Record Type: SRV (Service)
-    Name: @
-    Target: Paste the value from the Admin Center here.
-    Protocol: Paste the value from the Admin Center here.
-    Service: Paste the value from the Admin Center here.
-    Priority: 100
-    Weight: 1
-    Port: Paste the value from the Admin Center here.
-    TTL: 3600‎ (or your provider default)
+- Record Type: `SRV (Service)`
+- Name: `@`
+- Target: Paste the value from the Admin Center here.
+- Protocol: Paste the value from the Admin Center here.
+- Service: Paste the value from the Admin Center here.
+- Priority: `100`
+- Weight: `1`
+- Port: Paste the value from the Admin Center here.
+- TTL: `3600‎` (or your provider default)
 
 Save the records.
 
@@ -136,5 +135,5 @@ If your DNS host doesn't provide these fields for SRV records, you must specify 
 
 To set up the combined value, you create a single string, separating the values with spaces and *sometimes ending with a dot.* The values must be included in this order: Priority, Weight, Port, Target. 
 
-Example 1: `100 1 443 sipdir.online.lync.com.`<br>
-Example 2: `100 1 443 sipdir.online.lync.com`
+- Example 1: `100 1 443 sipdir.online.lync.com.`
+- Example 2: `100 1 443 sipdir.online.lync.com`
