@@ -78,6 +78,7 @@ Use the following documentation to support your sensitivity labeling deployment:
 |Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Apply and view sensitivity labels in Power BI, and protect reports that are downloaded|[Data protection in Power BI (preview)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |See how and where my sensitivity labels are being used and drill down to inspect the labeled content|[Know your data - data classification overview (preview)](data-classification-overview.md)|
+|Visualize how sensitivity labels are being used to report deployment status and fine-tune label configuration|[View label usage with label analytics](label-analytics.md)|
 
 
 ## End-user documentation for sensitivity labels
