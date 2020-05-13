@@ -16,6 +16,15 @@ metadata:
   ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
   localization_priority: Priority
 
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Office 365 is now Microsoft 365!
+      itemType: whats-new
+      url: new-subscription-names.md
 
 # productDirectory section (optional)
 productDirectory:
