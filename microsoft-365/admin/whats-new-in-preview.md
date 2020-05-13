@@ -2,8 +2,8 @@
 title: "What's new in the Microsoft 365 admin center?"
 f1.keywords:
 - CSH
-ms.author: pebaum
-author: pebaum
+ms.author: anfowler
+author: adefowler
 manager: shohara
 audience: Admin
 ms.topic: overview
