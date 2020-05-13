@@ -4876,7 +4876,7 @@ These are the entities in the EU driver's license bundle
 - [Austria](#austria-drivers-license-number) 
 - [Belgium](#belgium-drivers-license-number)
 - [Bulgaria](#bulgaria-drivers-license-number)
-- [Croatia](#croatia-drivers-license-number)   
+- [Croatia](#croatia-drivers-license-number)
 - [Cyprus](#cyprus-drivers-license-number)
 - [Czech](#czech-drivers-license-number)
 - [Denmark](#denmark-drivers-license-number)
