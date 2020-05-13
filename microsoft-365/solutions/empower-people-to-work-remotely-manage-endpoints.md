@@ -1,5 +1,5 @@
 ---
-title: "3. Deploy endpoint management for your devices, PCs, and other endpoints"
+title: "Step 3. Deploy endpoint management for your devices, PCs, and other endpoints"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -14,16 +14,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: 
 - M365solutions
+ms.custom: 
 description: Use Microsoft Endpoint Manager to manage your manage devices, PCs, and other endpoints.
 ---
 
-# 3. Deploy endpoint management for your devices, PCs, and other endpoints
+# Step 3. Deploy endpoint management for your devices, PCs, and other endpoints
 
 With remote workers, you need to support a growing number of personal devices. Endpoint management is a policy-based approach to security that requires devices to comply with specific criteria before they are granted access to resources. Microsoft Endpoint Manager delivers a modern workplace and modern management capabilities to keep your data secure in the cloud and on-premises. 
 
 Endpoint Manager provides services and tools for managing mobile devices, desktop computers, virtual machines, embedded devices, and servers by combining the following services you may already know and be using.
+
+![The components for endpoint management](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
 ## Microsoft Intune
 
@@ -35,7 +37,7 @@ For more information, see this [overview of Microsoft Intune](https://docs.micro
 
 Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or internet-based. You can cloud-enable it to integrate with Intune, Azure AD, Microsoft Defender ATP, and other cloud services. Use Configuration Manager to deploy apps, software updates, and operating systems. You can also monitor compliance, query and act on clients in real time, and much more.
 
-For more information, see this [overview of Configuration Manager](https://docs.microsoft.com/configmgr/core/understand/introduction).
+For more information, see this [overview of Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
 
 ## Co-management
 
@@ -43,13 +45,13 @@ Co-management combines your existing on-premises Configuration Manager investmen
 
 As part of Endpoint Manager, co-management uses cloud features, including Conditional Access. You keep some tasks on-premises, while running other tasks in the cloud with Intune.
 
-For more information, see this [overview of co-management](https://docs.microsoft.com/configmgr/comanage/overview).
+For more information, see this [overview of co-management](https://docs.microsoft.com/mem/configmgr/comanage/overview).
 
 ## Desktop Analytics
 
 Desktop Analytics is a cloud-based service that integrates with Configuration Manager and provides you with insight and intelligence so you can make informed decisions about your Windows clients. It combines data from your organization with data aggregated from millions of devices connected to Microsoft cloud services. With Desktop Analytics, you can create an inventory of apps running in your organization, assess app compatibility with the latest Windows 10 feature updates, identify compatibility issues, and receive mitigation suggestions based on cloud-enabled data insights, create pilot groups that represent the entire application and driver estate across a minimal set of devices, and deploy Windows 10 to pilot and production-managed devices.
 
-For more information, see this [overview of Desktop Analytics](https://docs.microsoft.com/configmgr/desktop-analytics/overview)
+For more information, see this [overview of Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview)
 
 ## Windows Autopilot
 

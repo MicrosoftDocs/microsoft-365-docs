@@ -29,14 +29,14 @@ ms.custom: okr_smb
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
-Check our list of [host-specific instructions](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) to find your host and follow the steps to add all the records you need. 
+Check our list of [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to find your host and follow the steps to add all the records you need. 
   
 If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
   
 To set up the records yourself, these are the records to add. Note that your verification record and MX record are unique to your domain. To set them up, you'll need to get and use a specific "token" value for your domain. The steps below explain how to do that.
   
 > [!IMPORTANT]
-> The exact name of the boxes or  *fields*  you type or paste the information into, to create each type of DNS record, are different for each DNS host. Your DNS host may have Help on their website to assist you in mapping the instructions we show here to the exact fields on their website. Remember to check to see if we have step-by-step instructions for your DNS host in [Create DNS records for Microsoft 365](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23.aspx). > Some DNS hosts don't let you create all of the required record types, which [causes service limitations](https://support.office.com/article/7ae9a655-041d-4724-aa92-60392ee390c2.aspx) in Microsoft 365. If your domain's host doesn't support SRV, TXT, or CNAME records, for example, we recommend that you [transfer your domain](../get-help-with-domains/buy-a-domain-name.md) to a DNS host that does support all required records. For a fast, automated process setting up with Microsoft 365, we recommend that you transfer your domain to GoDaddy. 
+> The exact name of the boxes or  *fields*  you type or paste the information into, to create each type of DNS record, are different for each DNS host. Your DNS host may have Help on their website to assist you in mapping the instructions we show here to the exact fields on their website. Remember to check to see if we have step-by-step instructions for your DNS host in [Create DNS records for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). > Some DNS hosts don't let you create all of the required record types, which [causes service limitations](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. If your domain's host doesn't support SRV, TXT, or CNAME records, for example, we recommend that you [transfer your domain](../get-help-with-domains/buy-a-domain-name.md) to a DNS host that does support all required records. For a fast, automated process setting up with Microsoft 365, we recommend that you transfer your domain to GoDaddy. 
   
 > [!NOTE]
 > Typically it takes just a few minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -76,7 +76,7 @@ Before you use your domain with Microsoft 365, we have to make sure that you own
       ||||||
       |:-----|:-----|:-----|:-----|:-----|
       |**Record Type**|**Alias** or **Host Name**|**Value**|**Priority**|**TTL**|
-      |MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.    <br/>       [How do I find this?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
+      |MX|Type either **@** or your domain name. |MS=ms *XXXXXXXX* <br/> **Note:** This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365.    <br/>       [How do I find this?](../get-help-with-domains/information-for-dns-records.md)     <br/>     |For **Priority**, to avoid conflicts with the MX record used for mail flow, use a lower priority than the priority for any existing MX records. <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |Set this value to **1 hour** or to the equivalent in minutes ( **60** ), seconds ( **3600** ), etc. |
    
 2. Save the record.
     
@@ -136,7 +136,7 @@ Find the page where you can create records for your domain.
     
    - **Priority**: Set the priority of the MX record to the highest value available, which is typically **0**.
     
-      For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx)
+      For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq)
     
    - **Host Name**: **@**
     
@@ -427,6 +427,6 @@ On your DNS host's website, you'll create two new SRV records, typically one at 
   
  **If you need some help figuring out how to add the required DNS records** see [Set up your domain (host-specific instructions](https://docs.microsoft.com/office365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions?view=o365-worldwide), first [gather the information you need to create Microsoft 365 DNS records](../get-help-with-domains/information-for-dns-records.md). Then use the general steps in this topic to set up your domain's DNS records so you can use your domain with Microsoft 365 services, like email.
   
- **If you don't have a website that you use with your custom domain**, you can have Microsoft 365 set up and manage DNS records for your domain instead of doing all the setup yourself. Learn about the [two options for setting up and managing DNS records for a custom domain](https://support.office.com/article/5980474a-097f-4f21-a864-21245314957f.aspx) in Microsoft 365. 
+ **If you don't have a website that you use with your custom domain**, you can have Microsoft 365 set up and manage DNS records for your domain instead of doing all the setup yourself. Learn about the [two options for setting up and managing DNS records for a custom domain](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) in Microsoft 365. 
   
 

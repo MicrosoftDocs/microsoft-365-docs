@@ -66,5 +66,5 @@ For technical and billing questions, refer to the Microsoft Support resources be
 - **Online support**: Submit queries via [Power Platform Support](https://docs.microsoft.com/power-platform/admin/get-help-support)
 
 > [!NOTE]
-> <sup>1</sup> Federal Law No. 242-FZ (edition dated 12.31.2014) "On entering amendments into certain legislative acts of the Russian Federation about clarifying the procedure for personal data processing in information and telecommunication networks" dated 07.21.2014 <br>
+> <sup>1</sup> Federal Law No. 242-FZ (edition dated 12.31.2014) 'On entering amendments into certain legislative acts of the Russian Federation about clarifying the procedure for personal data processing in information and telecommunication networks' dated 07.21.2014 <br>
 > <sup>2</sup> Federal Law No. 152-FZ on Personal data as of 07.27. 2006<br>

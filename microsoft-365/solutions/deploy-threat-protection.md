@@ -1,17 +1,17 @@
 ---
 title: Deploy threat protection capabilities across Microsoft 365
-description: Description.
-ms.author: samanro
-author: samanro
-manager: bcarter
+description: Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
+ms.author: bcarter
+author: brendacarter
+manager: dansimp
 ms.audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-ms.custom: 
 - M365solutions
+ms.custom: 
 f1.keywords: NOCSH
 ---
 
@@ -43,7 +43,16 @@ The following illustration depicts a recommended path for deploying these indivi
 
 ![M365 threat protection signals](../media/solutions-architecture-center/deploy-threat-protection-across-m365.png)
 
-Organizations with multiple security teams can implement these capabilities in parallel.
+|Solution/capabilities  |Description  |
+|---------|---------|
+|Multi-factor authentication and conditional access     |Protect against compromised identities and devices. Begin with this protection because it's foundational. The configuration recommended in this guidance includes Azure AD Identity Protection as a prerequisite.     |
+|Azure Advanced Threat Protection     |  A cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.       | 
+|Office 365 Advanced Threat Protection     | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protections for malware, phishing, spoofing, and other attack types. This is recommended next because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. <br><br>Note: Be sure you also configure the threat protection capabilities included in all Office 365 subscriptions (Exchange Online Protection).       |
+|Microsoft Defender Advanced Threat Protection    | An endpoint protection platform that helps prevent, detect, investigate, and respond to advanced threats. This takes longer to deploy, but can be done in parallel with the other capabilities if other admins are responsible.   |
+|Microsoft Cloud App Security     |   A cloud access security broker for discovery, investigation, and governance. You can enable this early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time.       | 
+
+> [!TIP]
+> Organizations with multiple security teams can implement these capabilities in parallel.
 
 ## Deploy your threat protection solution
 
@@ -231,5 +240,5 @@ In addition to this guidance, Microsoft recommends that your users take the acti
 - Enabling security features on Windows 10 and Mac PCs (for unmanaged devices)
     
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
-- [Help protect your Outlook.com email account](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Help protect your Outlook.com email account](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)

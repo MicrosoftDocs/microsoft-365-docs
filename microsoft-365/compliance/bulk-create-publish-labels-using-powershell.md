@@ -15,7 +15,9 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "In Office 365, you can use retention labels to implement a retention schedule for your organization. By using the script and .csv files provided, you can bulk create and publish retention labels and retention label policies by using PowerShell."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to use Office 365 retention labels to implement a retention schedule for your organization by using PowerShell."
 ---
 
 # Bulk create and publish retention labels by using PowerShell

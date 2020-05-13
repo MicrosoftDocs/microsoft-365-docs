@@ -13,9 +13,9 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom:
+ms.custom: seo-marvel-apr2020
 
-description: Understand the resources you can use to deploy Microsoft 365 for enterprise in your organization.
+description: Learn about the different resources you can use to deploy Microsoft 365 for enterprise in your organization.
 ---
 
 # Deploy Microsoft 365 for enterprise
@@ -71,7 +71,7 @@ Get self-started on your end-to-end deployment journey [here](deploy-foundation-
 
 ## Take a test drive
 
-“*For the things we have to learn before we can do them, we learn by doing them.*” - Aristotle
+"*For the things we have to learn before we can do them, we learn by doing them.*" - Aristotle
 
 If you're new to Microsoft 365 for enterprise or to a specific product or feature, one of the best ways to gain understanding is to build it out yourself and see it working.
 
@@ -113,7 +113,7 @@ Defining a digital culture is a major priority for every leader who strives to f
 
 At the same time, intelligent security features and product integration helps streamline management needs and minimize the total cost of ownership across the IT lifecycle. 
 
-Learn how Core Services Engineering and Operations (formerly Microsoft IT) [planned and deployed a foundation](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365) to support the applications and services that unlock creativity and foster teamwork in a secure environment.
+Learn how Core Services Engineering and Operations (formerly Microsoft IT) has [built a modern workplace with Microsoft 365](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
 
 > [!Note]
 > This web page is only available in English.

@@ -169,6 +169,8 @@ If you want to turn off the group creation restriction and again allow all users
     
 ## Step 4: Verify that it works
 
+Changes can take thirty minutes or more to take effect. You can verify the new settings by doing the following:
+
 1. Sign in with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
     
 2. Select the **Planner** tile. 

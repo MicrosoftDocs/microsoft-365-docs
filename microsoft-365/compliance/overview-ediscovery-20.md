@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "This article describes the new version of Advanced eDiscovery in Microsoft 365."
+description: This article provides an overview of Advanced eDiscovery in Microsoft 365, a tool for internal and external investigations.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Overview of the Advanced eDiscovery solution in Microsoft 365

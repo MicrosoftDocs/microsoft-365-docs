@@ -106,7 +106,7 @@ Management:
 
 - Lower the IT overhead for managing software running on client PCs and devices
 
-  Automate the installation of updates to the Windows operating system and Microsoft Office ProPlus across the organization.
+  Automate the installation of updates to the Windows operating system and Microsoft 365 Apps for enterprise across the organization.
 
 ## Mapping Contoso's business needs to Microsoft 365 Enterprise
 

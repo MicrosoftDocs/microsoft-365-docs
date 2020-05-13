@@ -15,6 +15,8 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 search.appverid:
 - MET150
 - MOE150
@@ -23,7 +25,7 @@ search.appverid:
 - ZPP160
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
-description: "The Safe Links feature provides time-of-click verification of hyperlinks in Office documents and in email messages. Use Safe links to protect your organization from phishing and other attacks."
+description: "In this article, you'll learn how to use Safe links to protect your organization from phishing and other attacks."
 ---
 
 # ATP Safe Links
@@ -41,7 +43,7 @@ As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-
          
 ## How to get ATP Safe Links protection
 
-**First, make sure your subscription includes [Advanced Threat Protection](office-365-atp.md)**. ATP is included in subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has an Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources: 
+**First, make sure your subscription includes [Advanced Threat Protection](office-365-atp.md)**. ATP is included in subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources: 
 
 - [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection)
 
@@ -81,7 +83,7 @@ The following table describes some example scenarios where ATP Safe Links protec
 |Jean is a member of a group that has ATP Safe Links policies covering URLs in email and Office documents. Jean opens a PowerPoint presentation that someone sent, and then clicks a URL in the presentation.  <br/> |Yes. The ATP Safe Links policies that are defined apply to Jean's group, Jean's email, and Word, Excel, PowerPoint, or Visio documents that Jean opens, so long as Jean is signed in and using Microsoft 365 Apps for enterprise on Windows, iOS, or Android devices.  <br/> |
 |In Chris's organization, no global or security administrators have defined any ATP safe links policies yet. Chris receives an email that contains a URL to a malicious website. Chris is unaware the URL is malicious and clicks the link.  <br/> |No. The default policy that covers URLs for everyone in the organization must be defined in order for protection to be in place.  <br/> |
 |In Pat's organization, no global or security administrators have defined or edited any ATP Safe Links policies yet. Pat opens a Word document and clicks a URL in the file.  <br/> |No. A policy that includes Office documents must be defined in order for protection to be in place. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
-|Lee's organization has a ATP Safe Links policy that has `https://tailspintoys.com` listed as a blocked website. Lee receives an email message that contains a URL to `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.  <br/> |It depends on whether the entire site and all its subpages are included in the list of blocked URLs. See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-wtih-atp.md).  <br/> |
+|Lee's organization has a ATP Safe Links policy that has `https://tailspintoys.com` listed as a blocked website. Lee receives an email message that contains a URL to `https://tailspintoys.com/aboutus/trythispage`. Lee clicks the URL.  <br/> |It depends on whether the entire site and all its subpages are included in the list of blocked URLs. See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).  <br/> |
 |Jamie, Jean's colleague, sends an email to Jean, not knowing that the email contains a malicious URL.  <br/> |It depends on whether ATP Safe Links policies are defined for email sent within the organization. See [Set up ATP Safe Links policies in Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 
 

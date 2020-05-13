@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 solution and architecture center
-description: Description.
+description: Get the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant modern collaboration.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -10,8 +10,8 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-ms.custom: 
 - M365solutions
+ms.custom: 
 f1.keywords: NOCSH
 ---
 
@@ -29,7 +29,7 @@ This solution and architecture center brings together the technical guidance you
 
 ![Cloud and ruler symbols](https://docs.microsoft.com/office/media/icons/cloud-architecture2.png) **[Solution and architecture illustrations](productivity-illustrations.md)**  View or download these illustrations to understand Microsoft 365's capabilities and the architecture of Microsoft 365's cloud services.
 
-![Best practices ribbon](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[Industry-specific guidance](industry-specific-guidance-overview.md)**  Find best practices for your industry - finance, healthcare, and education.
+![Best practices ribbon](https://docs.microsoft.com/office/media/icons/best-practices-blue.png) **[Industry-specific guidance](industry-specific-guidance-overview.md)**  Find best practices for your industry — finance, healthcare, and education.
 
 ![Layout/navigation symbol](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **[Design principles](design-principles.md)**  Understand the key principles you need to understand networking, identity, security, and multi-national architectures.
 

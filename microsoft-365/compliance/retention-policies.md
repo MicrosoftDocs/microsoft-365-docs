@@ -338,7 +338,7 @@ A retention policy that applies to Teams can use [Preservation Lock](#locking-a-
 
 ### Microsoft 365 groups locations
 
-To retain content for an icrosoft 365 group, you need to use the Microsoft 365 groups location. Even though an Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes. A retention policy applied to an Microsoft 365 group includes both the group mailbox and site. A retention policy applied to an Microsoft 365 group protects the resources created by an Microsoft 365 group, which would include Microsoft Teams.
+To retain content for a Microsoft 365 group, you need to use the Microsoft 365 groups location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire Exchange location won't include content in Microsoft 365 group mailboxes. A retention policy applied to a Microsoft 365 group includes both the group mailbox and site. A retention policy applied to an Microsoft 365 group protects the resources created by a Microsoft 365 group, which would include Microsoft Teams.
 
 In addition, it's not possible to use the Exchange location to include or exclude a specific group mailbox. Although the Exchange location initially allows a group mailbox to be selected, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location. 
 
@@ -418,7 +418,7 @@ There are several other features that have previously been used to retain or del
   
 ### Exchange Online
 
-- [Manage eDiscovery cases in the Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery hold) 
+- [Manage eDiscovery cases in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery hold) 
     
 - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery hold) 
 
@@ -428,15 +428,15 @@ There are several other features that have previously been used to retain or del
     
 ### SharePoint Online and OneDrive for Business
 
-- [Manage eDiscovery cases in the Security &amp; Compliance Center](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da) (eDiscovery hold) 
+- [Manage eDiscovery cases in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery hold) 
     
-- [Add content to a case and place sources on hold in the eDiscovery Center](https://support.office.com/article/54d70de9-1ec2-4325-84f3-aeb588554479) (eDiscovery hold) 
+- [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (eDiscovery hold) 
     
-- [Overview of document deletion policies](https://support.office.com/article/55e8d858-f278-482b-a198-2e62d6a2e6e5) (Deletion only) 
+- [Overview of document deletion policies](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (Deletion only) 
     
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (Retention) 
     
-- [Use policies for site closure and deletion](https://support.office.com/article/a8280d82-27fd-48c5-9adf-8a5431208ba5) (Deletion only) 
+- [Use policies for site closure and deletion](https://support.microsoft.com/en-us/office/use-policies-for-site-closure-and-deletion-a8280d82-27fd-48c5-9adf-8a5431208ba5) (Deletion only) 
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (Deletion only) 
     

@@ -28,6 +28,14 @@ description: "Learn how to manage your payment methods in the Microsoft 365 admi
 
 # Add, update, or remove your payment methods
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 ::: moniker range="o365-worldwide"
 You can purchase products and services from Microsoft with a credit or debit card, or bank account. You can enter your payment information on the **Payment methods** page, or when you make a purchase.
 
@@ -61,7 +69,7 @@ You can change the payment method that is used to pay for a single subscription.
 
 ### Change the payment method used for a single subscription
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. Select the subscription that you want to pay for with the new card or bank account. Under **Billing**, next to the payment method, select **Edit**.
 3. Next to your existing payment method, select **Change**.
 4. From the drop-down menu, select an alternate payment method, or choose to add a payment method.

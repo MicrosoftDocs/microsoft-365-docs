@@ -2,9 +2,9 @@
 title: "How Exchange Online uses TLS to secure email connections"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
-manager: dansimp
+ms.author: krowley
+author: kccross
+manager: laurawi
 ms.date: 8/2/2018
 audience: ITPro
 ms.topic: reference
