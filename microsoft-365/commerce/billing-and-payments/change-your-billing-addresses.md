@@ -47,13 +47,13 @@ In most cases, these addresses are the same. If you need to change one or more o
   
 ::: moniker range="o365-worldwide"
 
-To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your invoice](understand-your-invoice2.md).
+To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your invoice](understand-your-invoice2.md).
+To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill orinvoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -200,7 +200,7 @@ You can also change the alternate email address of other global and billing admi
 
 [View your bill or invoice](view-your-bill-or-invoice.md)
 
-[Understand your invoice](understand-your-invoice2.md)
+[Understand your bill or invoice](understand-your-invoice2.md)
 
 [Pay for your subscription](pay-for-your-subscription.md)
 
