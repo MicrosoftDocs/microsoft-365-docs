@@ -48,7 +48,7 @@ Highly regulated industries are often required to store electronic communication
 - Retained for a required retention period that cannot be shortened, only increased.
 - Immutable, meaning that the record cannot be overwritten, erased, or altered during the required retention period.
 
-In Exchange Online, when a [retention policy](retention-policies.md) is applied to a user's mailbox, all of the user's content will be retained based on the criteria of the policy. In fact, if a user attempts to delete or modify an email, a copy of the email before the change is made will be preserved in a secure, hidden location in the user's mailbox. Retention polices can ensure that an organization retains electronic communications, but those policies can be modified.
+In Exchange Online, when a [retention policy](retention-policies.md) is applied to a user's mailbox, all the user's content will be retained based on the criteria of the policy. In fact, if a user attempts to delete or modify an email, a copy of the email before the change is made will be preserved in a secure, hidden location in the user's mailbox. Retention policies can help ensure that an organization retains electronic communications, but those policies can be modified.
 
 By placing a Preservation Lock on a retention policy, an organization ensures that the policy cannot be modified. In fact, after a Preservation Lock is applied to a retention policy, the following actions are restricted:
 
@@ -70,4 +70,4 @@ Currently, there are a few limitations for Exchange Online:
 - Likes are not retained for Teams chat and channel messages.
 
 > [!NOTE]
-> Item-level auditing is now available for Microsoft 365 Group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+> Item-level auditing is now available for Microsoft 365 group mailboxes. For more information, see [Manage mailbox auditing](enable-mailbox-auditing.md).
