@@ -34,7 +34,7 @@ Calendar sharing is a global setting, meaning that you, the admin, can enable it
   
 ## Enable calendar sharing using the Microsoft 365 admin center
 
-1. In the admin center, go to the **Settings** \> **Settings**. 
+1. In the admin center, go to **Settings** \> **Settings**. 
     
 2. On the **Services** tab, select **Calendar**.
   
@@ -49,4 +49,3 @@ Calendar sharing is a global setting, meaning that you, the admin, can enable it
 
 Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx) for instructions. 
   
-
