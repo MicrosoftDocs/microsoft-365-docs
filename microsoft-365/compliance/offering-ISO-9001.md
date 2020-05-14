@@ -29,8 +29,8 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 ## Microsoft in-scope cloud services
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
-- Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
 - Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
 - Microsoft Graph
 - Intune
 - Microsoft Defender Advanced Threat Protection
