@@ -45,7 +45,7 @@ productDirectory:
     # Card
     - title: Install apps
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-      summary:  Install Office and other Microsoft apps for users in your organization.
+      summary:  Install Office and other Microsoft apps.
       url: setup/install-applications.md
     # Card
     - title: Train users
