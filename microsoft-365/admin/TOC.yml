@@ -69,6 +69,8 @@
              href: add-users/add-users.md
            - name: Add a new employee
              href: add-users/add-new-employee.md
+           - name: Assign licenses to users
+             href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
            - name: Remove licenses from users
@@ -234,6 +236,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Set up multi-factor authentication (with Office 2013)
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Secure score
+          href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Work with customers
