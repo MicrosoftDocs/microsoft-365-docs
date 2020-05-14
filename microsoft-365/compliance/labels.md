@@ -75,7 +75,7 @@ Retention labels are independent, reusable building blocks that are included in 
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. When you publish retention labels, they're included in a retention label policy. Retention label names are immutable, which means that they and cannot be edited after they're created.
+1. When you publish retention labels, they're included in a retention label policy. Retention label names are immutable, which means that they cannot be edited after they're created.
 
 2. A single retention label can be included in many retention label policies.
 
