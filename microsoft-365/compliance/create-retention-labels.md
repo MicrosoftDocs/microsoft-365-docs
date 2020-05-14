@@ -160,7 +160,7 @@ Examples queries:
 - Exchange
     - subject:"Quarterly Financials"
     - recipients:garthf<!--nolink-->@contoso.com
-- SharePoint and OneDrive for Business
+- SharePoint and OneDrive
     - contenttype:contract
     - site:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
