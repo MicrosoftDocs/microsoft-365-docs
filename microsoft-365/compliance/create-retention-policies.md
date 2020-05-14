@@ -45,6 +45,8 @@ These permissions are required only to create and apply a retention policy. The 
 
 4. For the **Choose locations** page, select whether the retention policy should apply to all supported locations across your organization, or you want to specify the locations. If you choose specific locations, you can also specify includes and excludes. 
     
+    You must select the option to choose specific locations if you want to delete or retain data for Teams. When you select either the **Teams channel messages** or the **Teams chats** locations, the other locations are automatically excluded because a retention policy that includes Teams data can't include other locations.
+    
     For more information about these configuration options, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
     
     For information specific to Office 365 groups and Skype, see the following sections, [Configuration information for Office 365 groups](#configuration-information-for-office-365-groups) and [Configuration information for Skype for Business](#configuration-information-for-skype-for-business).
@@ -55,7 +57,7 @@ When you have more than one retention policy, see [The principles of retention, 
 
 ### Configuration information for Office 365 groups
 
-To retain content for an Office 365 group, select the **Office 365 groups** location when you choose locations for your retention policy. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Office 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
+To retain or delete content for an Office 365 group, select the **Office 365 groups** location when you choose locations for your retention policy. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Office 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
 A retention policy applied to an Office 365 group includes both the group mailbox and site. A retention policy applied to an Office 365 group protects the resources created by an Office 365 group, which includes Microsoft Teams.
 
@@ -71,8 +73,6 @@ When you select **Choose users**, you can quickly include all users by selecting
   
 Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
-> [!NOTE]
-> If you create retention policies for Skype or Teams locations in your organization, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.
 
 ## Settings for retaining and deleting content
 
@@ -185,7 +185,7 @@ However, using this configuration, there are some limits when your retention pol
     - 1,000 users for Teams private chats
     - 100 sites (OneDrive or SharePoint)
 
-- A tenant can contain no more than 10,000 retention policies.
+There is a maximum number of policies that are supported for a tenant: 10,000. These items include retention policies, retention label policies, and auto-apply retention policies.
 
 If your retention policies are likely to be subject to these limitations, choose the configuration options that apply to entire locations, or use an org-wide policy.
 
