@@ -49,17 +49,17 @@ These permissions are required only to create and apply a retention policy. The 
     
     For more information about these configuration options, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
     
-    For information specific to Office 365 groups and Skype, see the following sections, [Configuration information for Office 365 groups](#configuration-information-for-office-365-groups) and [Configuration information for Skype for Business](#configuration-information-for-skype-for-business).
+    For information specific to **Office 365 groups** and **Skype for Business**, see the following sections, [Configuration information for Microsoft 365 groups](#configuration-information-for-office-365-groups) and [Configuration information for Skype for Business](#configuration-information-for-skype-for-business).
 
 5. Complete the wizard to save your settings.
 
 When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention-policies.md#the-principles-of-retention-or-what-takes-precedence).
 
-### Configuration information for Office 365 groups
+### Configuration information for Microsoft 365 groups
 
-To retain or delete content for an Office 365 group, select the **Office 365 groups** location when you choose locations for your retention policy. Even though an Office 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Office 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
+To retain or delete content for a Microsoft 365 group (formerly Office 365 group), select the **Office 365 groups** location when you choose locations for your retention policy. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
-A retention policy applied to an Office 365 group includes both the group mailbox and site. A retention policy applied to an Office 365 group protects the resources created by an Office 365 group, which includes Microsoft Teams.
+A retention policy applied to an Microsoft 365 group includes both the group mailbox and site. A retention policy applied to a Microsoft 365 group protects the resources created by a Microsoft 365 group, which includes Microsoft Teams.
 
 ### Configuration information for Skype for Business
 
@@ -144,7 +144,7 @@ You can easily apply a retention policy to an entire organization, entire locati
   
 ### Org-wide policy
 
-One of the most powerful features of a retention policy is that it can apply to locations across Office 365, including:
+One of the most powerful features of a retention policy is that it can apply to locations across Microsoft 365, including:
   
 - Exchange email
     
@@ -152,7 +152,7 @@ One of the most powerful features of a retention policy is that it can apply to 
     
 - OneDrive accounts
     
-- Office 365 groups (applies to content in the group's mailbox and associated SharePoint site.)
+- Microsoft 365 groups (applies to content in the group's mailbox and associated SharePoint site.)
     
 - Exchange public folders
     
@@ -175,19 +175,25 @@ For example, if a policy includes all Exchange email and all SharePoint sites, a
 
 ### A policy with specific inclusions or exclusions
 
-You can also apply a retention policy to specific users, specific Office 365 groups, or specific sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Office 365 groups, or sites. 
+You can also apply a retention policy to specific users, specific Microsoft 365 groups, or specific sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites. 
   
 However, using this configuration, there are some limits when your retention policy includes or excludes over 1,000 specific locations:
   
 - Maximum numbers for the retention policy:
     - 1,000 mailboxes
-    - 1,000 Office 365 groups
+    - 1,000 Microsoft 365 groups
     - 1,000 users for Teams private chats
     - 100 sites (OneDrive or SharePoint)
 
 There is a maximum number of policies that are supported for a tenant: 10,000. These items include retention policies, retention label policies, and auto-apply retention policies.
 
 If your retention policies are likely to be subject to these limitations, choose the configuration options that apply to entire locations, or use an org-wide policy.
+
+## Updating retention policies
+
+If you edit a retention policy and content is already subject to the original settings in your retention policy, your updated settings will be automatically applied to this content in addition to content that's newly identified.
+
+Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
 
 ## Find the PowerShell cmdlets for retention policies
 
