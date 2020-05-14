@@ -72,6 +72,9 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
      ![Send reported messages to Microsoft and a custom mailbox](../../media/user-submission-enable-outlook-report-message.png)
 
+      > [!CAUTION]
+      > Configuring the Report Message add-in to Report to Microsoft in either way above will override the ReportJunkEmailEnabled setting in the [Outlook on the web mailbox policy](https://docs.microsoft.com/en-us/powershell/module/exchange/client-access/set-owamailboxpolicy) if that has been set to False.
+
    - **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
      Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing mailbox, or the email address of the mailbox that you want to create.
