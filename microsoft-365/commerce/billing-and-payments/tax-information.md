@@ -179,6 +179,6 @@ Have the following documentation ready:
   
 ## Related articles
   
-[View your bill](view-your-bill-or-invoice.md)
+[View your bill or invoice](view-your-bill-or-invoice.md)
   
-[Understand your invoice](understand-your-invoice.md)
+[Understand your bill or invoice](understand-your-invoice.md)
