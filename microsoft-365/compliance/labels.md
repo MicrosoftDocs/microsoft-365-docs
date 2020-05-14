@@ -118,9 +118,8 @@ Different types of retention labels can be published to different locations, dep
    
 In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
   
-Exchange public folders and Skype do not support labels.
->>>>>>> 175a009fb0fdc36320fcfd72db7245902ac32ca6
-  
+Exchange public folders and Skype do not support retention labels.
+
 ## How retention labels enforce retention
 
 Retention labels can enforce the same retention actions that a retention policy can - retain and then delete, or retain-only, or delete-only. You can use retention labels to implement a sophisticated content plan (or file plan). For more information about how retention works, see [Learn about retention policies](retention-policies.md).
