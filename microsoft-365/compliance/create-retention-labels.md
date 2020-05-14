@@ -25,9 +25,9 @@ description: "Instructions to create, publish, and auto-apply retention labels t
 
 Use the following information to help you create [retention labels](labels.md), and then automatically apply them to documents and emails, or publish them so that users can manually apply them.
 
-Retention labels help you retain what you need and delete what you don't, and they are also used to declare an item as a record.
+Retention labels help you retain what you need and delete what you don't. They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.
 
-Where you create and configure your retention labels depend on whether you're using [records management](records-management.md) or not. Instructions are provided for both scenarios.
+Where you create and configure your retention labels depend on whether you're using records management or not. Instructions are provided for both scenarios.
 
 ## Before you begin
 
