@@ -1,5 +1,5 @@
 ---
-title: Understand your invoice
+title: Understand your bill or invoice
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,11 +16,11 @@ ms.collection:
 ms.custom:
 search.appverid:
 - MET150
-description: "Learn how to read and understand your invoice for Microsoft business products."
+description: "Learn how to read and understand your bill or invoice for Microsoft business products."
 keywords: billing accounts, organization info, invoices
 ---
 
-# Understand your invoice
+# Understand your bill or invoice
 
 ::: moniker range="o365-21vianet"
 
