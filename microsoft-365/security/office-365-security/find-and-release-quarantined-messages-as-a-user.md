@@ -91,7 +91,7 @@ As a user, you can view, release, and delete quarantined messages where you are 
 
      - **Spam**
 
-     - **Phish** (As of April, 2020)
+     - **Phish**
 
    To clear the filter, click **Clear**. To hide the filter flyout, click **Filter** again.
 
@@ -129,7 +129,7 @@ When you select an email message in the list, the following message details appe
 
 - **Subject**
 
-- **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or (as of April, 2020) **Phish**.
+- **Quarantine reason**: Shows if a message has been identified as **Spam**, **Bulk** or **Phish**.
 
 - **Recipients**: If the message contains multiple recipients, you need to click **Preview message** or **View message header** to see the complete list of recipients.
 

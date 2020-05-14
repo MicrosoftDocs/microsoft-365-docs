@@ -20,8 +20,8 @@ description: "Your organization may be required to retain documents for a period
 # Overview of document deletion policies
 
 > [!IMPORTANT]
-> Moving forward, we recommend that you use a retention policy or labels created in the Microsoft 365 compliance center, Microsoft 365 security center, or Security &amp; Compliance Center instead of a document deletion policy. Document deletion policies will continue to work side by side with retention policies, but if you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy. For more information, see [Use a retention policy instead of these features](retention-policies.md#use-a-retention-policy-instead-of-these-features).
-  
+> Moving forward, we recommend that you use a retention policy from the Microsoft 365 compliance center instead of a document deletion policy. Document deletion policies will continue to work side by side with retention policies, but if you need to retain or delete content anywhere in Office 365, we recommend that you use a retention policy or retention labels. For more information, see [Use a retention policy instead of older features](retention-policies.md#use-a-retention-policy-instead-of-older-features).
+
 Your organization may be required to retain documents for a period of time because of compliance, legal, or other business requirements. However, if your organization keeps documents longer than required, you create unnecessary legal risk. With a document deletion policy, you can proactively reduce risk by deleting documents in a site after a specific period of time—for example, you can delete documents in users' OneDrive for Business sites five years after the documents were created.
   
 Document deletion policies are powerful yet flexible—for example, you can:

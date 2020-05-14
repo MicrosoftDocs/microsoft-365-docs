@@ -85,7 +85,7 @@ The [pre-cache option](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/c
 
 Pre-cache task sequences combined with compatibility scans
 
-In addition to saving time for the package download, you can pre-cache the upgrade package and use Windows setup to assess whether the in-place upgrade will succeed prior to executing the actual Windows upgrade. The following command line syntax can be used to silently execute a compatibility scan and find out whether or not Windows Setup assesses the device as ready for upgrade.
+In addition to saving time for the package download, you can pre-cache the upgrade package and use Windows setup to assess whether the in-place upgrade will succeed prior to executing the actual Windows upgrade. The following command line syntax can be used to silently execute a compatibility scan and find out whether or not Windows Setup assesses the device as ready for upgrade: **Setup.EXE /Auto Upgrade /Quiet /NoReboot /Compat ScanOnly**
 
 Logs will then be sent to your defined server path and Windows Setup will not show itself to the user and close without user interaction.
 
