@@ -40,7 +40,7 @@ A sample listing of data privacy regulations that may relate to information gove
 - HIPAA-HITECH (45 CFR 164.316(b)(1)(ii))
 - LGPD Article 46
 
-Refer to the article 2. Assess data privacy risks and identify sensitive information - Potentially applicable data privacy regulations for more information on each of the above.
+For more information on these regulations, see [Assess data privacy risks and identify sensitive information](information-protection-deploy-assess.md).
 
 In summary, the data privacy regulations generally call for the following in the area of information governance:
 
@@ -64,10 +64,11 @@ Regardless of the legal and business reasons for keeping personal information ar
 ## Managing information governance in Microsoft 365
 
 General reference: 
+
 - Manage information governance
 - Data Retention, Deletion and Destruction in Office 365
 
-### Pre-requisite: Develop data retention schedules for containers, email, and content
+### Develop data retention schedules for containers, email, and content
 
 - Establishing a data retention schedule for defined information types should be considered a prerequisite to implementing any retention and/or deletion scheme
 - Given the number of information types that most organizations consider important and the corresponding large records retention schedules that go along with them, implementing a data retention and records management strategy requires concerted planning. 

@@ -20,23 +20,7 @@ description: Configure the security and service infrastructure that allows your 
 
 # Deploy information protection for data privacy regulations with Microsoft 365
 
-<!--
-![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)
---> 
-
-
-<!--
-
-1. [Increase sign-in security with MFA](empower-people-to-work-remotely-secure-sign-in.md)
-2. [Provide remote access to on-premises apps and services](empower-people-to-work-remotely-remote-access.md)
-3. [Deploy endpoint management for your devices, PCs, and other endpoints](empower-people-to-work-remotely-manage-endpoints.md)
-4. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [Create COVID-19 crisis communication venues](empower-people-to-work-remotely-communication-venues.md)
-6. [Train remote workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
-
---> 
-
-This solution provides guidance on how to plan for and protect sensitive personal data that is stored in Office 365 services and potentially subject to data privacy regulations like the European Union's General Data Protection Regulation (GDPR). This solution focuses on applicable “Microsoft Information Protection & Governance” solutions, Microsoft Compliance Score, and assessment tooling to help you “Know Your Data”. 
+This solution provides guidance on how to plan for and protect sensitive personal data that is stored in Office 365 services and potentially subject to data privacy regulations like the European Union's General Data Protection Regulation (GDPR). This solution focuses on applicable Microsoft Information Protection & Governance solutions, Microsoft Compliance Score, and assessment tooling to help you “Know Your Data”. 
  
 Additional information is also provided on the use of Microsoft identity, device and threat protection controls applied to data privacy needs, as well as Microsoft discovery and response tools. 
 
@@ -64,15 +48,15 @@ More detailed descriptions of each of the above elements are provided below, eac
 
 ## Assess data privacy risks and identify sensitive information 
 
-Assessing data privacy regulations and risks that your organization is subject to is a key first step to take before starting to implement any related improvement actions, including those achievable through Microsoft 365 configuration. This may include an overall readiness assessment and/or identification of particular "Sensitive Information Types" that are subject to specific regulatory controls your organization needs to comply with, as well as the occurrence of them in your Office 365 environment.
+Assessing data privacy regulations and risks that your organization is subject to is a key first step to take before starting to implement any related improvement actions, including those achievable through Microsoft 365 configuration. This may include an overall readiness assessment and/or identification of particular Sensitive Information Types that are subject to specific regulatory controls your organization needs to comply with, as well as the occurrence of them in your Office 365 environment.
 
 For more information, see [Assess data privacy risks and identify sensitive information](information-protection-deploy-assess.md).
 
 ## Use Compliance Score and Compliance Manager 
 
-Compliance Score and Compliance Manager provide an integrated set of tools available in the Microsoft 365 Compliance admin center and Services Trust Portal, respectively. Together, these tools provide you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations that you are subject to (e.g. GDPR and HIPAA-HITECH).
+Compliance Score and Compliance Manager provide an integrated set of tools available in the Microsoft 365 Compliance admin center and Services Trust Portal. Together, these tools provide you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations to which you are subjected, such as GDPR and HIPAA-HITECH.
 
-The tools also allow you to leverage built in assessment templates specific to each regulation, where you can track action items (improvement actions) for each assessment template selected, as well as view specific regulatory controls and relate them to specific actions.
+The tools also allow you to leverage built in assessment templates specific to each regulation, where you can track action items (improvement actions) for each assessment template selected, as well as view specific regulatory controls, and relate them to specific actions.
 
 For more information, see [Use Compliance Score and Compliance Manager to manage improvement actions](information-protection-deploy-compliance.md).
 
@@ -86,22 +70,23 @@ For more information, see [Use identity, device and threat protection for data p
 
 ## Protect information subject to data privacy regulation
 
-Data privacy regulations dictate a number of personal information protection controls that can be employed in your environment, including (per Compliance Score) more than 40 "Protect Information” controls across just the four data privacy regulations in our sample set (GDPR, HIPAA-HITECH, CCPA, LGPD).
-This article lays out the main control schemes that can be used for addressing information protection needs for data privacy in your organization.
+Data privacy regulations dictate a number of personal information protection controls that can be employed in your environment, including more than forty Protect Information controls across just the four data privacy regulations in our sample set (GDPR, HIPAA-HITECH, CCPA, LGPD).
 
 For more information, see [Protect information subject to data privacy regulation in your organization](information-protection-deploy-protect-information.md).
 
+This article lays out the main control schemes that can be used for addressing information protection needs for data privacy in your organization.
+
 ## Govern information subject to data privacy regulation
 
-Data privacy regulations call for personal information governance controls that can be employed in your environment, including (per Compliance Score) more than 24 (for "Govern Information") overall across the four data privacy regulations in our sample set (GDPR, HIPAA-HITECH, CCPA, LGPD).
-
-While the data privacy regulations are rather vague regarding what they call for in terms of what Microsoft refers to as "information governance" (essentially, purposeful retention, deletion and archiving), this article lays out the primary control schemes that can be used for addressing information governance needs for data privacy in your organization.
+Data privacy regulations call for personal information governance controls that can be employed in your environment, including more than twenty-four (for Govern Information) overall across the four data privacy regulations in our sample set (GDPR, HIPAA-HITECH, CCPA, LGPD).
 
 For more information, see [Govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md).
 
+While the data privacy regulations are rather vague regarding what they call for in terms of what Microsoft refers to as information governance (essentially, purposeful retention, deletion and archiving), this article lays out the primary control schemes that can be used for addressing information governance needs for data privacy in your organization.
+
 ## Monitor and respond subject to data privacy regulation
 
-This final article in the series highlights a few Microsoft 365 solutions available to help you monitor, investigate and respond to data privacy incidents in your organization as you operationalize related capabilities. 
+There are Microsoft 365 solutions available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. 
 
 Having processes, procedures and otherwise documentation for each of these may also be important to demonstrate compliance to regulatory bodies.
 

@@ -20,14 +20,14 @@ description: add.
 
 # Monitor and respond to data privacy incidents in your organization
 
-This final article in the series highlights a few Microsoft 365 solutions available to help you monitor, investigate and respond to data privacy incidents in your organization as you operationalize related capabilities. Having processes, procedures and otherwise documentation for each of these may also be important to demonstrate compliance to regulatory bodies.
+Microsoft 365 solutions are available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. Having processes, procedures, and other documentation for each of these may also be important to demonstrate compliance to regulatory bodies.
 
 These include: 
 
 - Auditing and alert policies
 - Data subject requests (including content search and eDiscovery)
 - Additional investigative tools and reporting
- 
+
 ## Data privacy regulations impacting the use of monitoring and response tools
 
 A sample listing of data privacy regulations that may relate to information governance controls is provided below.
@@ -41,64 +41,40 @@ A sample listing of data privacy regulations that may relate to information gove
 - HIPAA-HITECH (45 C.F.R. 164.312(b))
 - CCPA (1798.105(c))
 
-Refer to the article 2. Assess data privacy risks and identify sensitive information - Potentially applicable data privacy regulations for more information on each of the above.
+For more information, see [Assess data privacy risks and identify sensitive information](information-protection-deploy-assess.md).
 
-In summary, the data privacy regulations generally call for the following in the area of monitoring and response:
+The data privacy regulations generally call for the following in the area of monitoring and response:
 
 - Auditing, alerting, and reporting for activities related to the storage, sharing and processing of personal data
 - The ability to respond to a data subject request (DSR) and in some cases, perform investigative and other administrative measures to comply with such requests.
 
-Your organization may also wish to perform monitoring and response activities for other purposes (i.e., other compliance needs or for business reasons), so establishing your monitoring and response scheme for data privacy should be done as part of overall monitoring and response planning, implementation and management.
+Your organization may also wish to perform monitoring and response activities for other purposes, such as other compliance needs or for business reasons. Establishing your monitoring and response scheme for data privacy should be done as part of overall monitoring and response planning, implementation, and management.
 
-To help you get started with a monitoring and response scheme in Microsoft 365, inclusive of that applicable to data privacy regulations, a short list of related Microsoft 365 capabilities that may be useful in this regard are described further below. 
+To help you get started with a monitoring and response scheme in Microsoft 365 for data privacy regulations, this article describes useful Microsoft 365 capabilities. These capabilities will help answer questions such as: 
 
-These will help answer questions such as: 
-
-- What sort of day-to-day monitoring, investigative and reporting techniques are available for the different data types/sources?
-- What mechanisms will be needed to handle data subject requests (DSRs) and any remedial actions (e.g. anonymization, redaction, deletion, etc.).
+- What sort of day-to-day monitoring, investigative and reporting techniques are available for the different data types and sources?
+- What mechanisms will be needed to handle data subject requests (DSRs) and any remedial actions, such as anonymization, redaction, and deletion.
 
 ## Auditing and Alert Policies in the Security and Compliance Center
 
-Articles specific to setting up auditing, advanced auditing and alert policies are provided on docs.microsoft.com include:
+See these articles for setting up auditing, advanced auditing, and alert policies:
 
-- Unified auditing
-- Mailbox auditing
-- Advanced audit
-- Alert policies
-
-The information provided there is comprehensive, so it is not repeated here.
+- [Unified auditing](../compliance/search-the-audit-log-in-security-and-compliance.md)
+- [Mailbox auditing](../compliance/enable-mailbox-auditing.md)
+- [Advanced audit](../compliance/advanced-audit.md)
+- [Alert policies](../compliance/alert-policies.md)
 
 ## Data subject requests for the GDPR and CCPA
 
-The various facets and technical options you have for responding to a data subject request (DSR) in Microsoft 365 are provided in the article: Data Subject Requests for the GDPR and CCPA. This includes use of the following tools, and since DSR-specific tips are listed in the article (as well as links to other resources), so they won't be repeated here:
-
-1. Introduction to DSRs
-2. Part 1: Responding to DSRs for Customer Data
-   a. Using the Content Search eDiscovery tool to respond to DSRs
-   b. Providing a copy of personal data
-   c. Exporting personal data
-   d. Deleting personal data
-   e. Deleting a user
-   f. Using In-App functionality to respond to DSRs
-   g. Responding to DSR rectification requests
-   h. Responding to DSR restriction requests
-3. Part 2: Responding to DSRs with Respect to Insights Generated by Office 365
-4. Part 3: Responding to DSRs for system-generated Logs
-5. Part 4: Additional resources to assist you with DSRs
-6. Appendix A: Preparing for DSR investigations
-7. Appendix B: Change log
+See [Data Subject Requests for the GDPR and CCPA](../compliance/gdpr-dsr-office365.md) for information on responding to a data subject request (DSR) in Microsoft 365.
 
 ## Manage deleted users in Microsoft Stream
 
-For Microsoft Stream, when a user is deleted from Azure Active Directory for any reason, if their name was associated with a posted Stream video prior to that point, their email address remains associated with the video unless it is removed via the procedure listed in this article: Manage deleted users from Microsoft Stream.
+For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure AD) for any reason, if their name was associated with a posted Stream video prior to that point, their email address remains associated with the video. See [Manage deleted users from Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) to remove it.
 
 ## Additional investigative tools
 
 In addition, two additional tools not covered in the above articles may be useful for monitoring, investigating and remediating data privacy-related incidents in your organization:
 
-- Insider risk management in Microsoft 365 (solution in the Microsoft Compliance admin center to help minimize internal risk by enabling you to detect, investigate and take action on risky activities in your organization)
-- Data Investigations in Microsoft 365 (solution in the Microsoft Compliance admin center to search for sensitive, malicious, or misplaced data across Office 365, investigate what happened, and take the appropriate actions to remediate the spillage).
-
-These are covered in detail in the articles, so the information is not repeated here.
-
-
+- [Insider risk management in Microsoft 365](../compliance/insider-risk-management.md), a solution in the Microsoft Compliance admin center to help minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.
+- [Data investigations in Microsoft 365](../compliance/overview-data-investigations.md), a solution in the Microsoft Compliance admin center to search for sensitive, malicious, or misplaced data across Office 365, and then investigate what happened to take the appropriate actions to remediate the incident.
