@@ -55,7 +55,7 @@ With retention labels, you can:
     
    - Users no longer need to know about data governance policies - they can instead focus on their work.
 
-- **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stoored in that location inherit the default retention label.  
+- **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
 Additionally, retention labels support [records management](records-management.md) for email and documents across Office 365 apps and services. You can use a retention label to classify content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. 
 
@@ -350,7 +350,7 @@ When you create a content search, choose the **Compliance Tag** condition, and t
 
 Retention labels can easily be made available to an entire organization and its content across Office 365, including Exchange, SharePoint, OneDrive, and Office 365 groups. If you need to retain or delete content, or manage records anywhere in Office 365, we recommend that you use retention labels.
   
-There are several other features that have previously been used to retain or delete content or to manage records in Office 365. These features will continue to work side-by-side with retention labels. While there are instances where the implementation of retention labels differs from previous features, the evolution of retention labels will drive the future of records management across Office 365. Therefore, moving forward, for data governance, we recommend that you use retention labels instead of the following older features.
+There are several other features that have previously been used to retain or delete content or to manage records in Office 365. These features will continue to work side by side with retention labels. While there are instances where the implementation of retention labels differs from previous features, the evolution of retention labels will drive the future of records management across Office 365. Therefore, moving forward, for data governance, we recommend that you use retention labels instead of the following older features.
   
 ### Exchange Online
 

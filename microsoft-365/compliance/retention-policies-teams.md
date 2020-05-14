@@ -53,11 +53,11 @@ When the retention policy is retain-only, or delete-only, the contents paths are
 
 ### Content paths for retain-only retention policy
 
-1. **If a chat or channel message is modified or deleted** during the retention period: A copy of the original message is created in the SubstrateHolds folder and retained till the end of the retention period, when the copy in the SubstrateHolds folder is permanently deleted one day after the item expires. 
+1. **If a chat or channel message is modified or deleted** during the retention period: A copy of the original message is created in the SubstrateHolds folder and retained until the end of the retention period, when the copy in the SubstrateHolds folder is permanently deleted one day after the item expires. 
 
 2. **If the item is not modified or deleted** during the retention period: Nothing happens before and after the retention period; the message remains in its original location.
 
-#### Content paths paths for delete-only retention policy
+#### Content paths for delete-only retention policy
 
 1. **If the message is not deleted** during the retention period: At the end of the retention period, the message is moved to the SubstrateHolds folder. 
 
@@ -91,26 +91,25 @@ When external users are included in a meeting that your organization hosts:
 
 - If an external user joins by using a guest account in your tenant, this user has a shadow mailbox that can be subject to your organization's retention policy for Teams. Any messages from the meeting are stored in both your users' mailbox and the shadow mailbox. 
 
-- If an external user joins by using an account from another organization, your retention policies can't delete messages for this user because they are stored in that user's mailbox in another tenant. For the same meeting however, your retention policies can delete messages for your users.
+- If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they are stored in that user's mailbox in another tenant. For the same meeting however, your retention policies can delete messages for your users.
 
 
 ## Limitations
 
 We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of:
   
-- **Teams require a separate retention policy**. When you create a retention policy and toggle on the Teams locations, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations. 
+- **Teams requires a separate retention policy**. When you create a retention policy and toggle on the Teams locations, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations. 
     
-- **Teams aren't included in an org-wide policy**. If you create an org-wide policy, Teams are not included because they require a separate retention policy. 
+- **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams isn't included because it requires a separate retention policy. 
     
 - **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Currently, retention in Teams applies to all the chat and channel message content when you select those locations. 
 
 - **Teams content in private channels isn't supported**. Currently, retention policies created for Teams don't apply to private channel messages. Only messages in standard channels are subject to a retention policy created for Teams. 
     
 - **Teams may take up to three days to clean up expired messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take up to three days to clean up these messages and permanently delete them. Also, chat and channel messages will be searchable with eDiscovery tools during the time after the retention period expires and when messages are permanently deleted.
-
+    
    > [!NOTE]
    > It used to be true that a retention policy couldn't delete Teams content that's less than 30 days old, but we've removed this limitation. Now the retention period for Teams content can be any number of days you choose and as short as one day. If you do have a retention period of one day, it will take up to three days after the retention period expires before messages are permanently deleted.
-    
 
 - **Incorrect display issue in Outlook**. If you create retention policies for Skype or Teams locations, one of those policies is shown as the default folder policy when a user views the properties of a mailbox folder in the Outlook desktop client. This is an incorrect display issue in Outlook and [a known issue](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). What should be displayed as the default folder policy is the mailbox retention policy that's applied to the folder. The Skype or Teams retention policy is not applied to the user's mailbox.
 
