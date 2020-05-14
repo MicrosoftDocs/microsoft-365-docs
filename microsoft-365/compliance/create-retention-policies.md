@@ -49,7 +49,7 @@ These permissions are required only to create and apply a retention policy. The 
     
     For more information about these configuration options, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
     
-    For information specific to **Office 365 groups** and **Skype for Business**, see the following sections, [Configuration information for Microsoft 365 groups](#configuration-information-for-office-365-groups) and [Configuration information for Skype for Business](#configuration-information-for-skype-for-business).
+    For information specific to **Office 365 groups** and **Skype for Business**, see the following sections, [Configuration information for Microsoft 365 groups](#configuration-information-for-microsoft-365-groups) and [Configuration information for Skype for Business](#configuration-information-for-skype-for-business).
 
 5. Complete the wizard to save your settings.
 
