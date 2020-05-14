@@ -67,7 +67,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the AzureRM module.
+- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure PowerShell module.
     - [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Install the Azure PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -76,10 +76,10 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    1. Run the following PowerShell cmdlets:
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
