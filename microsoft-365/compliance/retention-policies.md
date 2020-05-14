@@ -45,9 +45,9 @@ With a retention policy, you can:
     
 - Apply a policy to all content or to content when it meets specific conditions, such as content containing keywords or [types of sensitive information](what-the-sensitive-information-types-look-for.md).
     
-When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect.
+When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
   
-Additionally, some organizations have to comply with regulations such as Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. To meet this requirement, you can use **Preservation Lock**. After a retention policy's been locked, no one (including an administrator) can turn off the retention policy or make it less restrictive.
+Additionally, some organizations have to comply with regulations such as Securities and Exchange Commission (SEC) Rule 17a-4. This regulation requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. To meet this requirement, you can use **Preservation Lock**. After a retention policy's been locked, no one (including an administrator) can turn off the retention policy or make it less restrictive. For more information, see the [Use Preservation Lock to comply with regulatory requirements](#use-preservation-lock-to-comply-with-regulatory-requirements) section on this page.
 
 ## How a retention policy works with content in place
 
@@ -68,7 +68,7 @@ When you include a location such as a site or mailbox in a retention policy, the
 > 
 These secure locations and the retained content are not visible to most people. With a retention policy, people do not even need to know that their content is subject to the policy.
 
-For more information about specific workloads, see the following articles:
+For more detailed information about how retention policies work with different workloads, see the following articles:
 
 - [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md)
 - [Learn about retention policies for Microsoft Teams](retention-policies-teams.md)
