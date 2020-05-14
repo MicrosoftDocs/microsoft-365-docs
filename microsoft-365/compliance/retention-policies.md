@@ -23,9 +23,9 @@ description: "Use a retention policy to decide proactively whether to retain con
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-For most organizations, the volume and complexity of their data is increasing daily — email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
+For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
-- **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time — for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
+- **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
     
 - **Reduce your risk in the event of litigation or a security breach** by permanently deleting old content that you're no longer required to keep. 
     
@@ -39,7 +39,7 @@ A retention policy can help you achieve all of these goals. Managing content com
     
 With a retention policy, you can:
   
-- Decide proactively whether to retain content, delete content, or both — retain and then delete the content.
+- Decide proactively whether to retain content, delete content, or both—retain and then delete the content.
     
 - Apply a single policy to the entire organization or specific locations or users.
     
@@ -55,22 +55,22 @@ When you include a location such as a site or mailbox in a retention policy, the
   
 - For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library. Be aware that the Preservation Hold library consumes storage quota for the site.
 
-- For email and public folders: The copy is retained in the is retained in the **Recoverable Items** folder. 
+- For email and public folders: The copy is retained in the **Recoverable Items** folder. 
 
-- For Teams (chat) content: The copy is retained in the Exchange **Recoverable Items** folder.
+- For Teams content: The copy is retained in the Exchange **Recoverable Items** folder.
 
 - For Office 365 groups: 
     - The group mailbox is retained in the Exchange **Recoverable Items** folder.
     - Any site content is retained in the **Preservation Hold** library.
 
 > [!NOTE]
-> The Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention policies for SharePoint and Office 365 groups.
+> The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention policies for SharePoint and Office 365 groups.
 > 
 These secure locations and the retained content are not visible to most people. With a retention policy, people do not even need to know that their content is subject to the policy.
 
 For more information about specific workloads, see the following articles:
 
-- [Learn about retention policies for SharePoint](retention-policies-sharepoint.md)
+- [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md)
 - [Learn about retention policies for Microsoft Teams](retention-policies-teams.md)
 - [Learn about retention policies for Exchange](retention-policies-exchange.md)
 
@@ -102,7 +102,7 @@ Finally, a retention policy or retention label cannot permanently delete any con
 
 Some organizations might need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. 
 
-Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy so that no one — including the administrator — can turn off the policy or make it less restrictive.
+Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy so that no one—including the administrator—can turn off the policy or make it less restrictive.
   
 When a retention policy is locked:
 
@@ -118,7 +118,7 @@ In summary, a locked retention policy can be increased or extended, but it can't
 
 ## Releasing a retention policy
 
-Providing your retention policy doesn't have a Preservation Lock, you can can turn off or delete a retention policy at any time. 
+Providing your retention policy doesn't have a Preservation Lock, you can turn off or delete a retention policy at any time. 
 
 When you do so, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. 
 
@@ -166,7 +166,7 @@ If you have configured SharePoint sites for content type policies or information
   
 ### Preservation policies are converted to retention policies
 
-If you were using a preservation policy to retain data in mailboxes, SharePoint or OneDrive sites, or public folders: That policy has been automatically converted to a retention policy that uses only the retain action — the policy won't delete content. No changes are needed from you for the same outcome as your configured preservation policy.
+If you were using a preservation policy to retain data in mailboxes, SharePoint or OneDrive sites, or public folders: That policy has been automatically converted to a retention policy that uses only the retain action—the policy won't delete content. No changes are needed from you for the same outcome as your configured preservation policy.
 
 You can find any configured preservation policies on the **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), or on the **Retention** page under **Information governance** in the [Security &amp; Compliance Center](https://protection.office.com/). You can edit a preservation policy to change the retention period, but you can't make other changes, such as adding or removing locations. 
 
