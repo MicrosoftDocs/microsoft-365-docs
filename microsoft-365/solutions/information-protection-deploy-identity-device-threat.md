@@ -28,7 +28,7 @@ While the data privacy regulations vary in their specificity, the essence of wha
 
 - Personal data shall be processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organizational measures ('integrity and confidentiality').
 
-Because personal data breaches are often caused by administrative or end-user account compromise and malicious system access (e.g. resulting in exfiltration of customer credit card numbers or other personal information), all the generally advisable identity, device and threat protection available with Microsoft 365 potentially come into play, most of which will be reflected in your Compliance Score (though it's worth noting that most of these would be implemented regardless of compliance obligations).
+Because personal data breaches are often caused by administrative or end-user account compromise and malicious system access (for example, resulting in exfiltration of customer credit card numbers or other personal information), all the generally advisable identity, device and threat protection available with Microsoft 365 potentially come into play, most of which will be reflected in your Compliance Score (though it's worth noting that most of these would be implemented regardless of compliance obligations).
 
 ## Using the results of your assessment work and Compliance Score
 
@@ -54,7 +54,7 @@ Use [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/?produc
 - Audit user accounts and status changes
 - Review role group and administrative changes
 
-Use [Microsoft Endpoint Manager](https://www.microsoft.com/en-us/microsoft-365/microsoft-endpoint-manager) for devices and the **Manage Devices** category, with which you can:
+Use [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager) for devices and the **Manage Devices** category, with which you can:
 
 - Block jail broken and rooted mobile devices
 - Configure Intune for mobile device management
@@ -66,7 +66,7 @@ Use [Microsoft Endpoint Manager](https://www.microsoft.com/en-us/microsoft-365/m
 - Require mobile devices to lock upon inactivity
 - Require mobile devices to wipe on multiple sign-in failures	
 
-Use [Exchange Online Protection and Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp) for the **Protect Against Threats** category, with which you can:
+Use [Exchange Online Protection and Office 365 Advanced Threat Protection (ATP)](../security/office-365-security/office-365-atp.md) for the **Protect Against Threats** category, with which you can:
 
 - Enable sender authentication (SPF, DMARC and DKIM)
 - Set up Office 365 ATP anti-phishing policies

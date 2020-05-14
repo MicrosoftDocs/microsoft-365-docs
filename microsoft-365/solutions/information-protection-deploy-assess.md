@@ -206,7 +206,7 @@ See these articles for more information:
 
 ### Content Explorer
 
-An important tool that for determining the occurrence of sensitive information in your environment is the new [Content Explorer](../compliance/data-classification-content-explorer) in the Microsoft 365 Compliance admin center. It's an automated tool for initial as well as ongoing scanning of your entire Microsoft 365 subscription for the occurrence of SITs and presents the results in the Content Explorer tool.
+An important tool that for determining the occurrence of sensitive information in your environment is the new [Content Explorer](../compliance/data-classification-content-explorer.md) in the Microsoft 365 Compliance admin center. It's an automated tool for initial as well as ongoing scanning of your entire Microsoft 365 subscription for the occurrence of SITs and presents the results in the Content Explorer tool.
  
 The new Content Explorer tool allows you to quickly identify the locations of sensitive information in your environment, using either OOTB SITs or custom ones. This may involve establishing a process and assigned responsibility to regularly investigate the presence and location of sensitive information.
 

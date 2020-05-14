@@ -20,7 +20,7 @@ description: add.
 
 # Use Compliance Score and Compliance Manager to manage improvement actions
 
-Microsoft Compliance Score and Compliance Manager can be used together to manage improvement actions related to data privacy regulations such as the European Union [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr?view=o365-worldwide), [California Consumer Protection Act CCPA)](https://docs.microsoft.com/en-us/microsoft-365/compliance/ccpa-faq?view=o365-worldwide), HIPAA-HITECH (US health care privacy act), and the Brazil Data Protection Act (LGPD). 
+Microsoft Compliance Score and Compliance Manager can be used together to manage improvement actions related to data privacy regulations such as the European Union [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/microsoft-365/compliance/gdpr?view=o365-worldwide), [California Consumer Protection Act CCPA)](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?view=o365-worldwide), HIPAA-HITECH (US health care privacy act), and the Brazil Data Protection Act (LGPD). 
 
 This article provides guidance on the use of these tools for data privacy purposes.
 
@@ -34,8 +34,8 @@ Compliance Score (Preview) currently requires adding your target "Assessments" s
 
 Compliance Score and Compliance Manager references:
 
-- [Microsoft Compliance Score](https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-score?view=o365-worldwide)
-- [Microsoft Compliance Manager](https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-manager-overview?view=o365-worldwide) 	
+- [Microsoft Compliance Score](https://docs.microsoft.com/microsoft-365/compliance/compliance-score?view=o365-worldwide)
+- [Microsoft Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-overview?view=o365-worldwide) 	
 
 Access to the tools with a sign-in to your subscription:
 
@@ -44,7 +44,7 @@ Access to the tools with a sign-in to your subscription:
 
 ## Getting started with Compliance Manager 
 
-[Microsoft Compliance Manager](https://docs.microsoft.com/en-us/microsoft-365/compliance/working-with-compliance-manager?view=o365-worldwide) (currently in preview) is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal for managing regulatory compliance activities related to Microsoft cloud services. Part of your Microsoft 365, Office 365, or Azure Active Directory subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
+[Microsoft Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/working-with-compliance-manager?view=o365-worldwide) (currently in preview) is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal for managing regulatory compliance activities related to Microsoft cloud services. Part of your Microsoft 365, Office 365, or Azure Active Directory subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
 
 While you can view your overall compliance score and perform a number of other functions in the Microsoft Compliance admin center's **Compliance Score** page, you need to use Compliance Manager through the Services Trust Portal to first configure assessments specific to one or more data privacy regulations . Data from these assessments will then show up in Compliance Score for further viewing and filtering. 
 
@@ -60,7 +60,7 @@ Here are the key steps to help you get started.
 
 From the Compliance Manager, the first step is to add "Assessments" specific to the data privacy regulations of interest and include in a defined "Data Privacy Regulations" group:
 
-- [Groups](https://docs.microsoft.com/en-us/microsoft-365/compliance/working-with-compliance-manager?view=o365-worldwide#groups) are containers that allow you to organize Assessments and share common information and workflow tasks between Assessments that have the same or related customer-managed controls. When two different Assessments in the same group share customer-managed control, the completion of implementation details, testing, and status for the control automatically synchronize to the same control in any other Assessment in the Group. This unifies the assigned Action Items for each control across the group and reduces duplicating work. You can also choose to use groups to organize. Assessments by year, area, compliance standard, or other groupings to help organize your compliance work.
+- [Groups](https://docs.microsoft.com/microsoft-365/compliance/working-with-compliance-manager?view=o365-worldwide#groups) are containers that allow you to organize Assessments and share common information and workflow tasks between Assessments that have the same or related customer-managed controls. When two different Assessments in the same group share customer-managed control, the completion of implementation details, testing, and status for the control automatically synchronize to the same control in any other Assessment in the Group. This unifies the assigned Action Items for each control across the group and reduces duplicating work. You can also choose to use groups to organize. Assessments by year, area, compliance standard, or other groupings to help organize your compliance work.
 - Example setup for data privacy assessments. Here's an example set of five privacy-related regulatory assessment templates added to a group called "Data Privacy Regulations".
 
 <!--
@@ -91,7 +91,7 @@ For example, if your organization has elected to use "Microsoft Managed Keys", t
  
 ### 3. Controls info
 
-Reference: [Controls](https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-manager-overview?view=o365-worldwide#controls)
+Reference: [Controls](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-overview?view=o365-worldwide#controls)
 
 **Assessment-specific view.** View "Controls Info" for each assessment (regulation-specific) group - this provides an assessment (regulatory)-specific view (vs. the "Action Items" list, which provides a technical control specific view).
  
@@ -119,7 +119,7 @@ Once the assessments and review specifications are performed in Compliance Manag
 
 ### Getting started with Compliance Score
 
-Reference: [Working with Compliance Score](https://docs.microsoft.com/en-us/microsoft-365/compliance/working-with-compliance-score?view=o365-worldwide)
+Reference: [Working with Compliance Score](https://docs.microsoft.com/microsoft-365/compliance/working-with-compliance-score?view=o365-worldwide)
 
 The Microsoft Compliance Score tool in the Microsoft 365 Compliance admin center provides several approaches to review and filter compliance data that is fed from Compliance Manager and various Microsoft 365 services. This tool is automatically updated when various configuration settings are implemented. This shares "signals" with the Microsoft Secure Score, so many improvement actions will show up in both scores. 
  
@@ -138,11 +138,10 @@ In addition, the bottom of the page provides a breakdown of your compliance scor
 ### Improvement actions for data privacy
 
 First, notice that many improvement actions are listed if all the regulations we selected in Compliance Manager (for data privacy) are included in the view. This large list can be filtered down, as we'll discuss further in a moment.
-Second, notice that you can sort the list by category so that (for example) all the actions in the "Control Access" category are grouped together, etc.
+
+Second, notice that you can sort the list by category. For example, you can sort so that all the actions in the **Control Access**"** category are grouped together.
  
 Finally, you can filter the list down to a select view using the "Filters" feature in the Improvement actions navigation bar, which allows you to select options for each of the following: Regulations, Solutions, Groups, Test status, and Categories. 
-
-
 
 
 ### Filtering - Regulations
@@ -172,7 +171,7 @@ Note also that Compliance Score assigns a score (current status out of a potenti
 
 ### How the compliance score gets calculated
 
-In short, the score is calculated based on a combination of Microsoft and customer-managed control implementations, as explained in more detail in the [Microsoft Compliance Score calculation article](https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-score-methodology?view=o365-worldwide).
+In short, the score is calculated based on a combination of Microsoft and customer-managed control implementations, as explained in more detail in the [Microsoft Compliance Score calculation article](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-methodology?view=o365-worldwide).
 
 Controls are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective. These collectively (as applied to a single control) represent the risk of not implementing it relative to other controls.
 As presented in the above-referenced article, "preventative" controls get a higher score than "detective" and "corrective ones", and "mandatory" controls get a higher score than "discretionary" ones, as follows.
