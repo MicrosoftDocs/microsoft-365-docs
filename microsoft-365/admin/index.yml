@@ -88,7 +88,7 @@ additionalContent:
           url: ../commerce/index.yml
         # Card
         - title: Secure your organization
-          summary: Create data loss prevention (DLP) policies, set up multi-factor authentication (MFA), and learn about Microsoft Secure Score and GDPR.
+          summary: Learn about the best ways to secure your organization like setting up multifactor authentication (MFA), and also learn about Microsoft Secure Score and GDPR.
           url:  security-and-compliance/secure-your-business-data.md
         # Card
         - title: Work with customers
