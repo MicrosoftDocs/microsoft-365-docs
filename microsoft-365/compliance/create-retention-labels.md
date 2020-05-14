@@ -179,8 +179,6 @@ For more information about trainable classifiers, see [Getting started with trai
 
 For an example configuration, see [How to prepare for and use a built-in classifier](classifier-using-a-ready-to-use-classifier.md#how-to-prepare-for-and-use-a-built-in-classifier).
 
-
-
 ## How long it takes for retention labels to take effect
 
 When you publish or auto-apply retention labels, they don't take effect immediately:
@@ -225,7 +223,11 @@ In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the syst
     
 If labels aren't appearing in Outlook on the web and you think they should be, make sure to clear the cache in your browser (CTRL+F5).
     
- 
+
+## Updating retention labels and their policies
+
+If you edit a retention label, retention label policy, or auto-apply policy and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly labeled.
+
 ## Find the PowerShell cmdlets for retention labels
 
 To use the retention label cmdlets:
