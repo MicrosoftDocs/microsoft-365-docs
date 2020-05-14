@@ -328,7 +328,7 @@ For these reasons, the guidance for creating rules with different match accuraci
 When you use a previously created and published [retention label](labels.md) as a condition in a DLP policy, there are some things to be aware of:
 
 - You have to have previously created, published and applied the retention label before you attempt to use it as a condition in a DLP policy.
-- Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, [How long it takes for retention labels to take effect](labels.md#how-long-it-takes-for-retention-labels-to-take-effect) for detailed information.
+- Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, [How long it takes for retention labels to take effect](create-retention-labels.md#how-long-it-takes-for-retention-labels-to-take-effect) for detailed information.
 - Using a retention label in a policy ***is only supported for items in SharePoint Online and OneDrive for Business***.
 
 
@@ -501,8 +501,10 @@ Members of your compliance team who will create DLP policies need permissions to
 1. Create a group in Microsoft 365 and add compliance officers to it.
     
 2. Create a role group on the **Permissions** page of the Security &amp; Compliance Center. 
-    
-3. Add the Microsoft 365 group to the role group.
+
+3. Assign a **DLP Compliance Management** role to the role group.
+
+4. Add the Microsoft 365 group to the role group.
     
 For more information, see [Give users access to the Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
