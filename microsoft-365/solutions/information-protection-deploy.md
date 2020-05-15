@@ -60,13 +60,13 @@ The tools also allow you to leverage built in assessment templates specific to e
 
 For more information, see [Use Compliance Score and Compliance Manager to manage improvement actions](information-protection-deploy-compliance.md).
 
-## Use identity, device and threat protection for data privacy regulation
+## Use identity, device, and threat protection for data privacy regulation
 
 Microsoft 365 provides a number of identity, device and threat protection capabilities that organizations can employ to help comply with data privacy regulatory compliance. 
 
 This article briefly describes what the data privacy regulations generally call for in these areas, as well as provides a listing of related Microsoft 365 solutions, with links to more information to help you address any implementation requirements. 
 
-For more information, see [Use identity, device and threat protection for data privacy regulation](information-protection-deploy-identity-device-threat.md).
+For more information, see [Use identity, device, and threat protection for data privacy regulation](information-protection-deploy-identity-device-threat.md).
 
 ## Protect information subject to data privacy regulation
 
