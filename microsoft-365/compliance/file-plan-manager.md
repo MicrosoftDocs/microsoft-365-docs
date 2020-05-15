@@ -1,5 +1,5 @@
 ---
-title: "Overview of file plan manager"
+title: Overview of file plan manager
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
-description: "File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition."
+description: File plan manager provides advanced management capabilities for retention labels and label policies.
+ms.custom: seo-marvel-may2020
 ---
 
 # Overview of file plan manager
@@ -24,9 +25,9 @@ description: "File plan manager provides advanced management capabilities for re
 
 File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition. 
 
-To access file plan manager in the security and compliance center, go to **Records management** > **File plan**.
+To access file plan manager in the Microsoft 365 compliance center, go to **Solutions** > **Records management** > **File plan**. If **Records management** does not display in the navigation pane, scroll down and select **Show all**.
 
-![File plan page](../media/file-plan-page.png)
+![File plan page](../media/compliance-file-plan.png)
 
 ## Accessing file plan manager
 
@@ -36,26 +37,9 @@ To access file plan manager, you must have one of the following admin roles:
 
 - View-only Retention Manager
 
-## Default retention labels and label policy
-
-If there are no retention labels in the Security & Compliance Center, the first time you choose **File plan** in the left nav, this creates a label policy called **Default Data Governance Publishing Policy**. 
-
-This label policy contains three retention labels:
-
-- **Operational procedure**
-- **Business general**
-- **Contract agreement**
-
-These retention labels are configured only to retain content, not delete content. This label policy will be published to the entire organization and can be disabled or removed. 
-
-You can determine who opened file plan manager and kicked off the first-run experience by reviewing the audit log for the activities **Created retention policy** and **Created retention configuration for a retention policy**.
-
-> [!NOTE]
-> Due to customer feedback, we have removed this feature that creates the default retention labels and retention label policy mentioned above. You will only see these retention labels and retention label policy if you opened file plan manager before April 11, 2019.
-
 ## Navigating your file plan
 
-File plan manager makes it easier see into and across the settings of all your retention labels and policies from one view.
+File plan manager makes it easier to see into and across the settings of all your retention labels and policies from one view.
 
 Note that retention labels created outside of the file plan will be available in the file plan and vice versa.
 
@@ -68,15 +52,16 @@ On the file plan **Labels** tab, the following additional information and capabi
     - When created
     - When last modified
     - When labeled
-- **Record** identifies if the item will become a declared record when the label is applied. Valid values are:
+- **Is Record** identifies if the item will become a declared record when the label is applied. Valid values are:
     - No
     - Yes
     - Yes(Regulatory)
-- **Retention** identifies the retention type. Valid values are:
-    - Keep
-    - Keep and delete
-    - Delete
-- **Disposition** identifies what will happen to the content at the end of the retention period. Valid values are:
+- **Retention duration** identifies the retention period. Valid values are:
+    - Days
+    - Months
+    - Years
+    - Forever
+- **Disposition type** identifies what will happen to the content at the end of the retention period. Valid values are:
     - null
     - No action
     - Auto-delete
@@ -102,9 +87,9 @@ Here's a view of the file plan descriptors columns on the **Labels** tab of file
 
 From file plan manager, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.
 
-To export all retention labels: On the **File plan** page, **File plan actions** \> **Export labels**.
+To export all retention labels: On the **File plan** page, click **Export**.
 
-![Option to export file plan](../media/file-plan-export-labels-option.png)
+![Option to export file plan](../media/compliance-file-plan-export-labels.png)
 
 A *.csv file containing all existing retention labels will open.
 
@@ -116,9 +101,9 @@ In the File plan manager, you can bulk import new retention labels and modify ex
 
 To import new retention labels and modify existing retention labels: 
 
-1. On the **File plan** page, go to **File plan actions** > **Import labels**.
+1. On the **File plan** page, click **Import**.
 
-   ![Option to import file plan](../media/file-plan-import-labels-option.png)
+   ![Option to import file plan](../media/compliance-file-plan-import-labels.png)
 
    ![Option to download a blank file plan template](../media/file-plan-blank-template-option.png)
 
@@ -162,6 +147,6 @@ To import new retention labels and modify existing retention labels:
 
    In the event there is a validation error, file plan import will continue to validate every entry in the import file and display all errors referencing line/row numbers in the import file, copy the displayed error results so that you can easily return to the import file and correct the errors.
 
-5. When the import is complete, return to file plan manager to associate the new retention labels to new or existing retention label policies.
+5. When the import is complete, go to the **Label policies** page to associate the new retention labels to new or existing retention label policies.
 
-   ![Option to publish labels](../media/file-plan-publish-labels-option.png)
+   ![Option to publish labels](../media/compliance-file-plan-publish_labels.png)

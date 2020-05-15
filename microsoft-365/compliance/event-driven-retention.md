@@ -1,5 +1,5 @@
 ---
-title: "Overview of event-driven retention"
+title: Overview of event-driven retention
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,7 +15,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "With retention labels, you can base a retention period on when a specific type of event occurs. The event triggers the start of the retention period, and all content with a retention label applied for that type of event get the label's retention actions enforced on them. Event-driven retention is typically used as part of a records-management process."
+ms.custom: 
+ - seo-marvel-apr2020
+ - seo-marvel-may2020
+description: In this article, you will learn how to base retention periods on specific event types with retention labels in Office 365.
 ---
 
 # Overview of event-driven retention
@@ -34,13 +37,13 @@ For example, you can use labels with event-driven retention for:
     
 Event-driven retention is typically used as part of a records-management process. This means that:
   
-- Labels based on events also usually classify content as a record. For more information, see [Using Content Search to find all content with a specific retention label applied to it](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
+- Labels based on events also usually classify content as a record. For more information, go to [Using Content Search to find all content with a specific retention label applied to it](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
     
 - A document that's been declared as a record but whose event trigger has not yet happened is retained indefinitely (records can't be permanently deleted), until an event triggers that document's retention period.
     
-- Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Disposition of content](disposition.md).
+- Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, go to [Overview of disposition reviews](disposition-reviews.md).
     
-A retention label based on an event has the same capabilities as any retention label in Microsoft 365. To learn more, see [Overview of labels](labels.md).
+A label based on an event has the same capabilities as any label in Office 365. To learn more, go to [Overview of labels](labels.md).
 
 ## Understanding the relationship between event types, labels, events, and asset IDs
 
@@ -64,7 +67,7 @@ To successfully use event-driven retention, it's important to understand the rel
     
 4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to 7 days. In the previous diagram, all the items circled in red have their retention period triggered by this event . In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
     
-It's important to understand that if you don't specify an asset ID or keywords for an event, **all the content** with a retention label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all the content would start being retained. This might not be what you intend. 
+It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all content would start being retained. This might not be what you intend. 
   
 Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
   
@@ -75,11 +78,11 @@ High-level workflow for event-driven retention:
 ![Diagram of workflow for setting up event-driven retention](../media/event-based-retention-process.png)
   
 > [!TIP]
-> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePont to auto-apply retention labels and implement event-driven retention.
+> Go to [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
 
 ### Step 1: Create a label whose retention period is based on an event
 
-In the Microsoft 365 compliance center, Microsoft 365 security center, or the Security &amp; Compliance Center, in the left navigation, choose **Classification** > **Retention labels** > **Labels** tab > **Create a label**.
+In the Microsoft 365 compliance center, in the left navigation, select **Information governance** > **Labels** > **Create a label**. If **Information governance** does not display in the navigation pane, scroll down and select **Show all**.
   
 When you create the label, turn on retention, and then choose the option shown below to retain or delete the content based on an event. This means that the retention settings won't go into effect until Step 5, when you create an event on the **Events** page. 
   
@@ -95,7 +98,7 @@ Also note that event-driven retention requires retention settings that:
   
 ### Step 2: Choose an event type for that label
 
-In the label settings, after you choose the option to base the label on **an event**, you'll see the option to **Choose an event type**. An event type is simply a general description of an event that you want to associate a label with.
+In the label settings, after you choose the option to base the label on an **event**, you'll see the option to **Choose an event type**. An event type is simply a general description of an event that you want to associate a label with.
   
 For example, if you create an event type named Product Lifetime, you'll create event-based retention labels with names that describe what types of content you want the labels to be applied to, such as "Product development files" or "Product business decision records".
   
@@ -105,11 +108,11 @@ Note that once you choose an event type and create the retention label, the even
   
 ### Step 3: Publish the event-based retention labels
 
-Publish your event-based retention labels, so that they can be manually applied to content. You cannot select an event-based retention label for an auto-apply policy. 
+Publish your event-based retention labels, so that they can be manually applied to content. You cannot select an event-based retention label for an auto-apply policy.
 
-To publish your event-based retention labels, got to **Classification** > **Retention labels** page.
+To publish your event-based retention labels, go to the **Information governance** > **Labels** page.
   
-![Options to publish or auto-apply retention label](../media/options-to-publish-auto-apply-retention-label.png)
+![Options to publish or auto-apply retention label](..\media\compliance-information-governance-publish-labels.png)
 
 ### Step 4: Enter an asset ID
 
@@ -121,13 +124,13 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 - Employee IDs that you can use to retain content for only a specific person.
     
-Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. Your organization may already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see Step 6 that follows. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
+Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 below. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
   
 ![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### Step 5: Create an event
 
-When a particular instance of that event type occurs - for example, a product reaches its end of life - go to the **Records management** > **Events** page in the Security &amp; Compliance Center and create an event. You need to manually trigger an event by creating it.
+When a particular instance of that event type occurs - for example, a product reaches its end of life - go to the **Records management** > **Events** page in the Microsoft 365 compliance center and create an event. You need to manually trigger an event by creating it.
   
 ### Step 6: Choose the same event type used by the label in step 2
 
@@ -137,13 +140,13 @@ When you create the event, choose the same event type used by the retention labe
   
 ### Step 7: Enter keywords or an asset ID
 
-Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified property:value pair. If an asset ID is not entered, **all of the content** with labels of that event type get the same retention date applied to them. 
+Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified property:value pair. If an asset ID is not entered, **all content** with labels of that event type get the same retention date applied to them. 
   
 Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. If you're using the Asset ID property, you would enter ComplianceAssetID:\<value\> in the box for asset IDs shown below.
   
 Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter ProductID:XYZ in the box for asset IDs shown below.
   
-For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, go to [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords. Like any retention label, this synchronization can take up to 7 days.
   
@@ -159,17 +162,17 @@ When you create a content search:
     
 - To find all content with a specific asset ID, enter the **ComplianceAssetID** property and a value, like ComplianceAssetID:\<value\>. 
     
-For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+For more information, go to [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 ## Permissions
 
 To get access to the **Events** page, reviewers must be members of a role group with the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called Disposition Reviewers, adding these two roles to that role group, and then adding members to the role group. 
   
-For more information, see [Give users access to the Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+For more information, go to [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 ## Automate events by using PowerShell
 
-In the admin center, you can only create events manually; it's not possible to automatically trigger an event when it occurs. However, you can use a Rest API to trigger events automatically; for more information, see [Automate event-based retention](automate-event-driven-retention.md).
+In the admin center, you can only create events manually; it's not possible to automatically trigger an event when it occurs. However, you can use a Rest API to trigger events automatically; for more information, go to [Automate event-based retention](automate-event-driven-retention.md).
 
 You can also use a PowerShell script to automate event-based retention from your business applications. The PowerShell cmdlets available for event-driven retention:
   
