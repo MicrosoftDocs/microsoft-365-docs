@@ -33,7 +33,7 @@ description: "Learn how to set up the release option for new product and feature
 
 ::: moniker-end
 
-With Microsoft 365, you receive new product updates and features as they become available instead of doing costly updates every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first. You can designate that only certain individuals receive the updates. Or, you can remain on the default release schedule and receive the updates later. This article explain the different release options and how you can use them for your organization.
+With Microsoft 365, you receive new product updates and features as they become available instead of doing costly updates every few years. You can manage how your organization receives these updates. For example, you can sign up for an early release so that your organization receives updates first. You can designate that only certain individuals receive the updates. Or, you can remain on the default release schedule and receive the updates later. This article explains the different release options and how you can use them for your organization.
   
 > [!IMPORTANT]
 > The Microsoft 365 updates described in this article apply to Microsoft 365, SharePoint Online, and Exchange Online. They do not apply to Skype for Business and related services. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. 
@@ -44,7 +44,7 @@ Any new release is first tested and validated by the feature team, then by the e
   
 ![Release validation rings for Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-For significant updates, Office customers are initially notified by the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap). As an update gets closer to rolling out, it is communicated through your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
+For significant updates, customers are initially notified by the [Microsoft 365 Roadmap](https://products.office.com/business/office-365-roadmap). As an update gets closer to rolling out, it is communicated through your [Microsoft 365 Message center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter).
 
 > [!NOTE]
 > You need a Microsoft 365 or Azure AD account to access your Message center through the [admin center](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center). Microsoft 365 home plan users do not have an admin center.
@@ -108,10 +108,6 @@ You can change how your organization receives Microsoft 365 updates by following
 9. When you're done adding users, select **Save changes**.
 
 
-
-## Get the Targeted release version of Office
-
-To install a targeted release build of Office, [follow these steps](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead). This gives you early access to the new features of Office 2016 for Windows desktops.
   
 ## Learn more
 

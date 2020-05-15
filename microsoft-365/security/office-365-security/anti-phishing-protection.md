@@ -57,6 +57,6 @@ Office 365 ATP contains additional and more advanced anti-phishing features:
 
 ## Other anti-phishing resources
 
-- For end-users: [Protect yourself from phishing schemes and other forms of online fraud](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
+- For end-users: [Protect yourself from phishing schemes and other forms of online fraud](https://support.office.com/article/protect-yourself-from-phishing-schemes-and-other-forms-of-online-fraud-be0de46a-29cd-4c59-aaaf-136cf177d593).
 
 - [How Microsoft 365 validates the From address to prevent phishing](how-office-365-validates-the-from-address.md).

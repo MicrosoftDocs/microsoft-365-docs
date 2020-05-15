@@ -33,14 +33,14 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 
 [Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md) (new)<br>New guidance on using the new *MailItemsAccessed* mailbox auditing action for forensic investigations.
 
-Multiple updates to [Search the audit log](search-the-audit-log-in-security-and-compliance.md), including:
+[Search the audit log](search-the-audit-log-in-security-and-compliance.md) (updated)<br>Changes include:
 - [New section](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) with details about the 'app@sharepoint' user listed in audit records.
 - [New descriptions](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) of quarantine activities.
 - In the [User administration activity](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) section, clarified that the "Change user password event is triggered when a user changes their own password (via self-service password reset), and the "Reset user password" event is triggered when an admin resets a user's password.
 
 ### Auto-expanding archive
 
-[Overview of unlimited archiving](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)(updated)<br>Added clarification that you can't delete any folder in the main archive or an auxiliary archive once auto-expanding archiving is enabled on a mailbox.
+[Overview of unlimited archiving](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) (updated)<br>Added clarification that you can't delete any folder in the main archive or an auxiliary archive once auto-expanding archiving is enabled on a mailbox.
 
 ### Compliance Score/Compliance Manager
 
@@ -142,7 +142,7 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 ## February 2020
 
 > [!NOTE]
-> Articles listed in previous months may have been since been updated, moved, or deleted. As a result, some of the details below might be outdated and links might be broken.
+> Articles listed in previous months may have since been updated, moved, or deleted. As a result, some of the details below might be outdated and links might be broken.
 
 ### Auditing
 

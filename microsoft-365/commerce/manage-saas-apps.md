@@ -113,7 +113,7 @@ For more information on billing profiles, see [Understand billing profiles](http
 2. Find and select the app you want to manage.
 3. Next to **Billing profile**, select **Edit**.
 
-For more information on invoices, see [Understand your invoice](billing-and-payments/understand-your-invoice.md).
+For more information on invoices, see [Understand your bill or invoice](billing-and-payments/understand-your-invoice.md).
 
 ## Cancel a software-as-a-service app subscription
 
