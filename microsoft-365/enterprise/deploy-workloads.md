@@ -26,7 +26,7 @@ See the [migration](migration-microsoft-365-enterprise-workload.md) article for 
 
 Here are the workloads in the overall Microsoft 365 for enterprise deployment guide:
 
-![The workloads in the overall Microsoft 365 for enterprise deployment guide](media/deploy-workloads/m365-deploy-content-arch-workloads.png)
+![The workloads in the overall Microsoft 365 for enterprise deployment guide](../media/deploy-workloads/m365-deploy-content-arch-workloads.png)
 
 ## Foundation infrastructure prerequisites
 
