@@ -73,7 +73,7 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
      ![Send reported messages to Microsoft and a custom mailbox](../../media/user-submission-enable-outlook-report-message.png)
 
       > [!CAUTION]
-      > Configuring the Report Message add-in to Report to Microsoft in either way above will override the ReportJunkEmailEnabled setting in the [Outlook on the web mailbox policy](https://docs.microsoft.com/en-us/powershell/module/exchange/client-access/set-owamailboxpolicy) if that has been set to False.
+      > If you have [disabled junk email reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) using Outlook web app mailbox policies, but you configure the Report Message add-in to report messages to Microsoft, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in.
 
    - **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
