@@ -32,7 +32,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 ## March/April 2020
 
-- The ability to [address compromised uer accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.
+- The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.
 
 ## January/February 2020
 
