@@ -28,13 +28,6 @@ description: "Learn how a global admin can change a user's email address and dis
 
 You may need to change someone's email address and display name if, for example, they get married and their last name changes.
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
-
 Watch a short video about changing a user's email address. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 

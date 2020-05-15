@@ -69,7 +69,7 @@ Here are the features and settings you'll find in the left-hand navigation of th
   
 |**Menu**|**What it's for**|
 |-----|-----|
-|**Home** <br/> |This is the landing page in the new admin center. You'll see where to manage users, billing, service health, and reports.  <br/> |
+|**Home** <br/> |This is the landing page in the admin center. You'll see where to manage users, billing, service health, and reports.  <br/> |
 |**Users** <br/> |Create and manage users in your organization, like employees or students. You can also set their permission level or reset their passwords.  <br/> |
 |**Groups** <br/> |Create and manage groups in your organization, such as an Microsoft 365 group, distribution group, security group, or shared mailbox. Learn how to [create](../create-groups/create-groups.md) and [manage](../create-groups/manage-groups.md) groups.  <br/> |
 |**Resources** <br/> |Create and manage resources, like a SharePoint site collection. Learn how to [create site collections](https://docs.microsoft.com/sharepoint/create-site-collection).  <br/> |

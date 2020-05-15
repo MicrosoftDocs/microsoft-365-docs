@@ -53,9 +53,6 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 ### Add members to a security group
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
     
 1. Select the security group name on the **Groups** page, and on the **Members** tab, select **View all and manage members**. 
     
@@ -89,9 +86,6 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 ### Edit a security group
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
   
