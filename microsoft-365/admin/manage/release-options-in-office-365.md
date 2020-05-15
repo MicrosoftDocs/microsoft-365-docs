@@ -95,7 +95,7 @@ You can change how your organization receives Microsoft 365 updates by following
 > [!IMPORTANT]
 > It can take up to 24 hours for the below changes to take effect in Microsoft 365. If you opt out of targeted release after enabling it, your users may lose access to features that haven't reached the scheduled release yet. 
   
-1. In the admin center, go to the **Settings** > **Setting**, and under the **Organization profile** tab, choose **Release preferences**.
+1. In the admin center, go to the **Settings** > **Org Setting**, and under the **Organization profile** tab, choose **Release preferences**.
 
 5. To disable targeted release, select **Standard release**, then select **Save changes**. 
     

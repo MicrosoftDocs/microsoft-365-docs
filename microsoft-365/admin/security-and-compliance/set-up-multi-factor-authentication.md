@@ -74,7 +74,7 @@ All Office 2016 client applications support MFA through the use of the Active Di
 
 However, you need to make sure your Microsoft 365 subscription is enabled for ADAL, or modern authentication.
 
-1. To enable modern authentication, from the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Settings** \> **Settings** and then in the **Services** tab, choose **Modern authentication** from the list.
+1. To enable modern authentication, from the [admin center](https://go.microsoft.com/fwlink/p/?linkid=834822), select **Settings** \> **Org Settings** and then in the **Services** tab, choose **Modern authentication** from the list.
 
 2. Check the **Enable modern authentication (recommended)** box in the **Modern authentication** panel, and then choose **Save changes**. 
 
