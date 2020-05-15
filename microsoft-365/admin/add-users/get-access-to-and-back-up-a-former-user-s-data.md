@@ -38,7 +38,7 @@ description: "Learn how to preserve an employee's files and emails when the pers
 When an employee leaves your organization, you probably want to access their data (documents and emails) and either review it, back it up, or give it to a new employee.
   
     
-## Access a former user's OneDrive documents
+## Access a former user's OneDrive for Business documents
 
 If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
 
@@ -97,7 +97,7 @@ To preserve a former user's OneDrive files, first give yourself access to their 
     
 
 
-## Revoke admin access to a user's OneDrive
+## Revoke admin access to a user's OneDrive for Business
 
 As global admin, you can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it. 
 
