@@ -1,5 +1,5 @@
 ---
-title: Understand your invoice
+title: Understand your bill or invoice
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -16,11 +16,11 @@ ms.collection:
 ms.custom:
 search.appverid:
 - MET150
-description: "Learn how to read and understand your invoice for Microsoft business products."
+description: "Learn how to read and understand your bill or invoice for Microsoft business products."
 keywords: billing accounts, organization info, invoices
 ---
 
-# Understand your invoice
+# Understand your bill or invoice
 
 ::: moniker range="o365-21vianet"
 
@@ -32,7 +32,7 @@ keywords: billing accounts, organization info, invoices
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have a Microsoft 365 subscription, see [Understand your invoice for Microsoft 365 for business](understand-your-invoice2.md).
+If you only have a Microsoft 365 subscription, see [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md).
 
 ## Understand the invoice header
 
