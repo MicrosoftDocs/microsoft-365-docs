@@ -53,7 +53,7 @@ These permissions are required only to create and apply a retention policy. The 
 
 5. Complete the wizard to save your settings.
 
-When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention-policies.md#the-principles-of-retention-or-what-takes-precedence).
+When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention-policies.md#the-principles-of-retention-or-what-takes-precedence)
 
 ### Configuration information for Microsoft 365 groups
 
