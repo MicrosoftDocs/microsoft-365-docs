@@ -70,19 +70,20 @@ Although more user attributes are available, particularly for Exchange mailboxes
   
 ## Step 2: File a request with Microsoft Support to synchronize the user attribute to OneDrive accounts
 
-The next step is to file a request with Microsoft Support to synchronize the Azure Active Directory attribute that you chose in Step 1 to all OneDrive accounts in your organization. After this synchronization occurs, the attribute (and its value) that you chose in Step 1 will be mapped to a hidden managed property in SharePoint named  `ComplianceAttribute`. You use this attribute to create the search permissions filter for OneDrive in Step 4.
+The next step is to file a request with Microsoft Support to synchronize the Azure Active Directory attribute that you chose in Step 1 to all OneDrive accounts in your organization. After this synchronization occurs, the attribute (and its value) that you chose in Step 1 will be mapped to a hidden managed property named `ComplianceAttribute`. You use this attribute to create the search permissions filter for OneDrive in Step 4.
   
 Include the following information when you submit the request to Microsoft support:
   
 - The default domain name of your organization
-    
+
 - The name of the Azure Active Directory attribute (from Step 1)
-    
+
 - The following title or description of the purpose of the support request: "Enable OneDrive for Business Synchronization with Azure Active Directory for Compliance Security Filters". This helps route the request to the eDiscovery engineering team who implements the request.
-    
+
 After the engineering change is made and the attribute is synchronized to OneDrive, Microsoft Support will send you the build number that the change was made in and an estimated deployment date. The deployment process usually takes 4–6 weeks after you submit the support request.
   
- **Important:** You can complete Step 3 through Step 5 before the change is deployed. But running content searches won't return documents from OneDrive sites specified in the search permissions filter until after the change is deployed. 
+> [!IMPORTANT]
+> You can complete Step 3 through Step 5 before this attribute change is deployed. But running content searches won't return documents from OneDrive sites specified in the search permissions filter until after the change is deployed.
   
 ## Step 3: Create a role group for each agency
 
