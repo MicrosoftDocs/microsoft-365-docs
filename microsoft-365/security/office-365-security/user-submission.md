@@ -72,9 +72,10 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
         ![Send reported messages to Microsoft and a custom mailbox](../../media/user-submission-enable-outlook-report-message.png)
 
-   b. **Disable the Report Message feature for Outlook**: Select this option if you do not want to use the Report Message feature.
-   
-      You can also select this option if you want to leverage Microsoft 365 for other submission features like auto-investigation or rescan but want to use third-party reporting tools instead. If so, you could also configure the following settings:
+     > [!CAUTION]
+     > If you have [disabled junk email reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) using Outlook on the web mailbox policies, but you configure either of the previous settings to report messages to Microsoft, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in.
+
+   - **Disable the Report Message feature for Outlook**: Select this option if you use third-party reporting tools instead of the Report Message add-in or the built-in reporting in Outlook on the web, and then configure the following settings:
 
       Select **Use this custom mailbox to receive user reported submissions**. In the box that appears, enter the email address of an existing mailbox that is already in Office 365. This has to be an existing mailbox in Exchange Online that can receive email.
 
