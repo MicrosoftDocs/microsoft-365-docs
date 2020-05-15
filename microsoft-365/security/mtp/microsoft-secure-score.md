@@ -1,6 +1,6 @@
 ---
-title: Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
+title: Microsoft Secure Score (previous iteration)
+description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,7 +19,12 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft Secure Score
+# Microsoft Secure Score (previous iteration)
+
+>[!IMPORTANT]
+>This iteration of Microsoft Secure Score is being replaced with new design elements and features over the next few months. If you do not already see the newest iteration, you will soon.
+>
+>If you see a **Metrics & trends** tab next to History, you are in the new iteration. [Go to Microsoft Secure Score (new)](microsoft-secure-score-new.md)
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
@@ -47,7 +52,7 @@ Most are scored in a binary fashion — if you implement the improvement action,
 
 ### Products included in Secure Score
 
-Currently there are recommendations for including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
+Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -85,7 +90,7 @@ To access the Graph API, you need to have one of the following scopes in additio
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 * Identity (Azure AD accounts & roles)
-* Data  (Microsoft Information Protection)
+* Data (Microsoft Information Protection)
 * Device (no improvement actions for now)
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (no improvement actions for now)
@@ -105,8 +110,6 @@ Ranking is based on the number of remaining points left to achieve, implementati
 
 ### Actions
 
-Actions labeled as [Not Scored] are not tracked by Microsoft Secure Score. You can still take action but completing them will not affect your score. If an action becomes tracked by Microsoft Secure Score in the future and you have already completed it, your secure score will automatically reflect the change.
-
 When you select a specific improvement action, a fly out appears. To complete the action, you have a few options:
 
 1. Select **View settings** to go the configuration screen and make the change. You then gain the points that the action is worth, visible at the top of the fly out. Points may take up to 24 hours to update.
@@ -117,7 +120,7 @@ When you select a specific improvement action, a fly out appears. To complete th
 
 ![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png)
 
-*Figures 2 & 3: Improvement action flyouts*
+*Figures 2: Improvement action flyout*
 
 ## Monitor improvements over time
 

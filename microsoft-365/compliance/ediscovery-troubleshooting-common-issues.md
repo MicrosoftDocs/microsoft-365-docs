@@ -16,8 +16,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Investigate, troubleshoot, and resolve common issues in eDiscovery."
+description: Learn about basic troubleshooting steps you can take to resolve common issues in Office 365 eDiscovery.
 siblings_only: true
+ms.custom: seo-marvel-apr2020
 ---
 
 # Investigate, troubleshoot, and resolve common eDiscovery issues

@@ -95,7 +95,7 @@ Your Global Administrator can configure these protections:
 - [Set up ATP Safe Links](office-365-security/set-up-atp-safe-links-policies.md)
 - [Set up ATP Safe Attachments policies](office-365-security/set-up-atp-safe-attachments-policies.md)
 - [Set up a custom "do not rewrite" URLs list](office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-- [Set up a custom blocked URLs list](office-365-security/set-up-a-custom-blocked-urls-list-wtih-atp.md)
+- [Set up a custom blocked URLs list](office-365-security/set-up-a-custom-blocked-urls-list-atp.md)
 
 You'll need to work with your Exchange Online administrator and SharePoint Online administrator to configure ATP for these workloads:
 - [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](office-365-security/turn-on-atp-for-spo-odb-and-teams.md)
@@ -126,7 +126,7 @@ After you have configured one or more of your advanced threat protection service
 ## 6: Configure Intune mobile app protection for phones and tablets
 
 Microsoft Intune Mobile Application Management (MAM) allows you to manage and protect your organization's data on phones and tablets without managing these devices. Here's how it works:
-- You create an App Protection Policy (APP) that determines which apps on a device are managed and what behaviors are allowed (such as preventing data from a managed app from being copied to an unmanaged app). You create one policy for each platorm (iOS, Android).
+- You create an App Protection Policy (APP) that determines which apps on a device are managed and what behaviors are allowed (such as preventing data from a managed app from being copied to an unmanaged app). You create one policy for each platform (iOS, Android).
 - After creating the app protection policies, you enforce these by creating a conditional access rule in Azure AD to require approved apps and APP data protection.
 
 APP protection policies include many settings. Fortunately, you don't need to learn about every setting and weigh the options. Microsoft makes it easy to apply a configuration of settings by recommending starting points. The [Data protection framework using app protection policies](https://docs.microsoft.com/mem/intune/apps/app-protection-framework) includes three levels you can choose from. 
@@ -149,7 +149,8 @@ Use the guidance in [Updating the common policies to allow and protect guest and
 
 The Intune mobile app protection policies you created, together with the conditional access rule to require approved apps and APP protection, apply to guests accounts and will help protect your organization data. 
 
-**Note**: If you've already enrolled PCs into device management to require compliant PCs, you'll also need to exclude guest accounts from the conditional access rule that enforces device compliance. 
+> [!NOTE]
+> If you've already enrolled PCs into device management to require compliant PCs, you'll also need to exclude guest accounts from the conditional access rule that enforces device compliance. 
 
 
 ## 8: Enroll PCs into device management and require compliant PCs
@@ -174,12 +175,12 @@ If you are rapidly enabling the bulk of your employees to work from from home, t
 
 Network elements such as VPN concentrators, central network egress equipment (such as proxies and data loss prevention devices), central internet bandwidth, backhaul MPLS circuits, NAT capability and so on are suddenly put under enormous strain due to the load of the entire business using them. The end result is poor performance and productivity coupled with a poor user experience for users who are adapting to working from home.
 
-Some of the protections that have traditionally been provided by routing traffic back through a corporate network are provided by the cloud apps your users are accessing. If you've reached this step in this article, you've implemented a set of sophisticated cloud security controls for Microsoft 365 services and data. With these controls in place, you may be ready to route remote users' traffic directly to Office 365. If you still require a VPN link for access to other applications, you can greatly improve your performance and user experience by implementing split tunneling. Once you achieve agreement in your oganization, this can be accomplished within a day by a well-coordinated network team.
+Some of the protections that have traditionally been provided by routing traffic back through a corporate network are provided by the cloud apps your users are accessing. If you've reached this step in this article, you've implemented a set of sophisticated cloud security controls for Microsoft 365 services and data. With these controls in place, you may be ready to route remote users' traffic directly to Office 365. If you still require a VPN link for access to other applications, you can greatly improve your performance and user experience by implementing split tunneling. Once you achieve agreement in your organization, this can be accomplished within a day by a well-coordinated network team.
 
 
 See these resources on Docs for more information:
-- [Overview: Optimize connectivity for remote users using VPN split tunnelling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
-- [Implementing VPN split tunnelling for Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
+- [Overview: Optimize connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+- [Implementing VPN split tunneling for Office 365](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-implement-split-tunnel)
 
 Recent blog articles on this topic:
 - [How to quickly optimize traffic for remote staff & reduce the load on your infrastructure](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
@@ -211,7 +212,7 @@ In addition to this guidance, Microsoft recommends that your users take the acti
     
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
   
-- [Help protect your Outlook.com email account](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Help protect your Outlook.com email account](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
 

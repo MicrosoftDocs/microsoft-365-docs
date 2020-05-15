@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Use the Advanced eDiscovery Custodian Management tool to easily access and search the activity for custodians within your case.
+ms.custom: seo-marvel-mar2020
 ---
 # View custodian audit activity
 

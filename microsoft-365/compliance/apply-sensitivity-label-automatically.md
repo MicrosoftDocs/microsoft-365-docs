@@ -71,7 +71,7 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Restrict by location|No |Yes |
-|Conditions: Trainable classifiers|Yes (limited preview) |No |
+|Conditions: Trainable classifiers|Yes |No |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
@@ -99,16 +99,12 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is [in preview for some apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md):
-
-![Auto labeling options for sensitivity labels](../media/sensitivity-labels-auto-labeling-options.png)
-
-You can choose to apply sensitivity labels to content automatically when that content contains specific types of sensitive information. Choose from a list of sensitive info types or classifiers:
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). You can choose to apply sensitivity labels to content automatically when sensitive information is detected. Choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
 > [!NOTE]
-> Currently, the option for **Classifiers** is in limited preview and requires you to submit a form to Microsoft to enable this capability for your tenant. For more information, see the blog post [Announcing automatic labeling in Office Apps using built-in classifiers - Limited Preview](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-automatic-labeling-in-office-apps-using-built-in/ba-p/1192889).
+> The option for **Trainable classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again in a few days.
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
@@ -126,22 +122,25 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ![Options for instance count and match accuracy](../media/Sensitivity-labels-instance-count-match-accuracy.png)
 
-### Configuring classifiers for a label
+### Configuring trainable classifiers for a label
 
-When you select the **Classifiers** option, select one or more of the built-in classifiers:
+When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
-![Options for classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
+![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> The built-in classifier **Source Code** is not supported for this preview. In addition, we are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
 For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
-During the preview period, the following apps support classifiers for sensitivity labels:
+During the preview period, the following apps support trainable classifiers for sensitivity labels:
 
-- Microsoft365 Apps for enterprise desktop apps for Windows, from [Office Insider](https://office.com/insider):
+- Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus) for Windows, from [Office Insider](https://office.com/insider):
     - Word
     - Excel
     - PowerPoint
 
-- Office for the web apps, when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md):
+- Office for the web apps, when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     - Word
     - Excel
     - PowerPoint

@@ -12,7 +12,9 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: Understand data resiliency in Microsoft 365."
+ms.custom:
+- seo-marvel-mar2020
+description: In this article, you'll learn about encryption technologies that you can manage and configure in Microsoft 365.
 ---
 
 # Customer-managed encryption features
@@ -49,11 +51,11 @@ Secure/Multipurpose Internet Mail Extensions (S/MIME) is a standard for public k
 
 ## Office 365 Message Encryption
 
-[Office 365 Message Encryption](https://products.office.com/exchange/office-365-message-encryption) (OME) built on top of [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) enables you to send encrypted and rights-protected mail to anyone. OME mitigates threats such as wire-tapping and man-in-the-middle attacks, and other threats, such as unwarranted access of data by an unauthorized user who does not have appropriate permissions. We have made investments that provide you with a simpler, more intuitive, secure email experience built on top of Azure Information Protection. You can protect messages sent from Microsoft 365 to anyone inside or outside your organization. These messages can be viewed across a diverse set of mail clients using any identity, including Azure Active Directory, Microsoft Account, and Google IDs. For more information on how your organization can use encrypted messages, see [Office 365 Message Encryption](https://support.office.com/article/F87CB016-7876-4317-AE3C-9169B311FF8A).
+[Office 365 Message Encryption](https://products.office.com/exchange/office-365-message-encryption) (OME) built on top of [Azure Information Protection](https://docs.microsoft.com/information-protection/understand-explore/what-is-information-protection) (AIP) enables you to send encrypted and rights-protected mail to anyone. OME mitigates threats such as wire-tapping and man-in-the-middle attacks, and other threats, such as unwarranted access of data by an unauthorized user who does not have appropriate permissions. We have made investments that provide you with a simpler, more intuitive, secure email experience built on top of Azure Information Protection. You can protect messages sent from Microsoft 365 to anyone inside or outside your organization. These messages can be viewed across a diverse set of mail clients using any identity, including Azure Active Directory, Microsoft Account, and Google IDs. For more information on how your organization can use encrypted messages, see [Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome).
 
 ## Transport Layer Security
 
-If you want to ensure secure communication with a partner, you can use inbound and outbound connectors to provide security and message integrity. You can configure forced inbound and outbound TLS on each connector, using a certificate. Using an encrypted SMTP channel can prevent data from being stolen via a man-in-the-middle attack. For more information, see [How Exchange Online uses TLS to secure email connections](https://support.office.com/article/How-Exchange-Online-uses-TLS-to-secure-email-connections-in-Office-365-4CDE0CDA-3430-4DC0-B489-F2C0736C929F).
+If you want to ensure secure communication with a partner, you can use inbound and outbound connectors to provide security and message integrity. You can configure forced inbound and outbound TLS on each connector, using a certificate. Using an encrypted SMTP channel can prevent data from being stolen via a man-in-the-middle attack. For more information, see [How Exchange Online uses TLS to secure email connections](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-uses-tls-to-secure-email-connections).
 
 ## Domain Keys Identified Mail
 

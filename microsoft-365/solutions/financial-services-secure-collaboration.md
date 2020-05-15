@@ -7,9 +7,9 @@ audience: ITPro
 ms.topic: article
 ms.collection: 
 - M365-security-compliance
+- M365solutions
 ms.prod: microsoft-365-enterprise
 ms.custom: 
-- M365solutions
 localization_priority: Priority
 description: "Learn how Microsoft 365 helps financial services move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
 f1.keywords: NOCSH
@@ -211,7 +211,7 @@ Financial institutions manage vast amounts of data. And some retention periods a
 - What occurs when the retention period expires (delete the document, start a disposition review, or take no action)
 -  What triggers the retention period to start (created date, last modified date, labeled date, or an event) and marks the document or email as a record (meaning it can't be edited or deleted)
 
-The retention labels are then published to SharePoint or OneDrive sites, Exchange mailboxes, and Microsoft 365 groups. Users can apply the retention labels manually to documents and emails. Record managers can use intelligence to automatically apply the labels. Intelligent capabilities can be based on [ninety-plus built-in sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/what-the-sensitive-information-types-look-for?view=o365-worldwide) (such as ABA outing number, US bank account number, or US Social Security Number). They're also customizable based on keywords or sensitive data found in documents or emails, such as credit card numbers or other personally identifiable information or based on SharePoint metadata. For data that's not easily identified through manual or automated pattern matching, trainable classifiers can be used to classify documents intelligently based on machine learning techniques.
+The retention labels are then published to SharePoint or OneDrive sites, Exchange mailboxes, and Microsoft 365 groups. Users can apply the retention labels manually to documents and emails. Record managers can use intelligence to automatically apply the labels. Intelligent capabilities can be based on [ninety-plus built-in sensitive information types](https://docs.microsoft.com/microsoft-365/compliance/content-search?view=o365-worldwide) (such as ABA outing number, US bank account number, or US Social Security Number). They're also customizable based on keywords or sensitive data found in documents or emails, such as credit card numbers or other personally identifiable information or based on SharePoint metadata. For data that's not easily identified through manual or automated pattern matching, trainable classifiers can be used to classify documents intelligently based on machine learning techniques.
  
 The **Securities and Exchange Commission (SEC)** requires broker-dealers and other regulated financial institutions to retain all business-related communications. These requirements apply to many types of communications and data, including emails, documents, instant messages, faxes, and more. **SEC rule 17a-4** defines the criteria that these organizations must meet to store records in an electronic data storage system. In 2003, the SEC issued a release that clarified these requirements. It included the following criteria:
 

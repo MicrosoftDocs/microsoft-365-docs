@@ -40,11 +40,8 @@ The outbound high-risk delivery pool manages the delivery for all non-delivery r
 Possible causes for a surge in NDRs include:
 
 - A spoofing campaign that affects one of the customers using the service.
-
 - A directory harvest attack.
-
 - A spam attack.
-
 - A rogue email server.
 
 All of these issues can result in a sudden increase in the number of NDRs being processed by the service. Many times, these NDRs appear to be spam to other email servers and services (also known as _[backscatter](backscatter-messages-and-eop.md)_).
