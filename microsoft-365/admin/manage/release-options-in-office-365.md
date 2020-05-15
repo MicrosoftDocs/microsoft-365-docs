@@ -108,10 +108,6 @@ You can change how your organization receives Microsoft 365 updates by following
 9. When you're done adding users, select **Save changes**.
 
 
-
-## Get the Targeted release version of Office
-
-To install a targeted release build of Office, [follow these steps](https://support.office.com/article/4dd8ba40-73c0-4468-b778-c7b744d03ead). This gives you early access to the new features of Office 2016 for Windows desktops.
   
 ## Learn more
 
