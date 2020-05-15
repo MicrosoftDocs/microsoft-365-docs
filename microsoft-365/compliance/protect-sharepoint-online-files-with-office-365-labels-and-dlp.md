@@ -211,6 +211,10 @@ Next, use these steps to configure a DLP policy that blocks users when they shar
 Here is your resulting configuration for high confidentiality SharePoint Online team sites.
   
 ![DLP policy for an isolated SharePoint Online team site using the Highly Confidential retention label](../media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
+
+### Support for sensitivity labels is coming
+
+You can currently use only a retention label as a condition, not a [sensitivity label](sensitivity-labels.md). We're currently working on support for using a sensitivity label in this condition.
   
 ## Next step
 
