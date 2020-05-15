@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
-ms.date: 08/07/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -33,7 +33,7 @@ When you first open Explorer (or the real-time detections report), the default v
 |ATP P1 trial     | Real-time detections        |   7      |
 |ATP P1 paid     |   Real-time detections      |    30     |
 |ATP P1 paid testing ATP P2 trial     | Threat Explorer   |   7   |
-|ATP P2 trail     |  Threat Explorer       |     7    |
+|ATP P2 trial     |  Threat Explorer       |     7    |
 |ATP P2 paid     |     Threat Explorer    |  30       |
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
