@@ -43,7 +43,7 @@ The following nine administrator roles will be required to perform additional au
 - User administrator
 - Authentication administrator
 
-All other users will be asked to perform additional authentication when needed.
+All other users will be asked to perform additional authentication when needed. For more information, please visit [Two-factor verification method and settings](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device)
 
 > [!NOTE]
 > You must be a global admin to set up or modify MFA <br><br>
