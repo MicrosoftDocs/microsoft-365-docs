@@ -47,7 +47,7 @@ These permissions are required only to create and apply a retention policy. The 
     
     For Microsoft Teams: You must select the option to choose specific locations if you want to delete or retain data for Teams channel messages or Team chats. When you select either of these options as locations, the other locations are automatically excluded because a retention policy that includes this Teams data can't include other locations. For Teams channel messages, standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are supported.
     
-    For more information about the configuration options for the locations, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
+    For more information about choosing between a retention policy for the organization or for specific locations, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
     
     For information specific to **Office 365 groups** and **Skype for Business**, see the following sections, [Configuration information for Microsoft 365 groups](#configuration-information-for-microsoft-365-groups) and [Configuration information for Skype for Business](#configuration-information-for-skype-for-business).
 
