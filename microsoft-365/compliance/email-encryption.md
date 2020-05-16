@@ -64,7 +64,7 @@ Watch this video for an introduction to [Encryption in Office 365](https://www.y
 > [!NOTE]
 > In case of using both [Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/protect-information) and email encryption to protect the data, consider following:
 > - Sensitivity labels can be used with OME and IRM encryption. For more details, see [Restrict access to content by using sensitivity labels to apply encryption](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels?view=o365-worldwide#what-happens-to-existing-encryption-when-a-labels-applied).
-> - Sensitivity labels could be applied to emails digitally signed using S/MIME.
+> - Sensitivity labels can be applied to emails digitally signed using S/MIME.
 > - Sensitivity labels cannot be applied to emails encrypted using S/MIME, because messages protected by end-to-end encryption are not processed by policies.
 
 ## What encryption options are available for my Microsoft 365 subscription?
