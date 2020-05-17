@@ -167,26 +167,38 @@ We recommend that you follow these steps:
 
 3. Publish the label more broadly.
 
-## SharePoint IRM and interoperability with sensitivity labels that apply encryption
+## SharePoint Information Rights Management (IRM) and sensitivity labels
 
-[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption when files are downloaded. The encryption automatic grants Full Control [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) to the person who downloads the file, and optionally to people who are specified in a single group. This protection technology is designed to prevent unauthorized users from opening the file while its outside SharePoint. 
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption when files are downloaded. The encryption automatic grants Full Control [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) to the person who downloads the file, and optionally to people who are specified in a single group. This protection technology is designed to prevent unauthorized users from opening the file while it's outside SharePoint.
+
+In comparison, sensitivity labels provide the protection settings of visual markings (headers, footers, watermarks) in addition to encryption. The encryption settings support a broad range of usage rights to restrict what users can do with the content, and the same sensitivity labels are supported for [many scenarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels), not just SharePoint.
 
 Use the following table to help you identify the differences between SharePoint IRM and sensitivity labels that apply encryption:
 
 |Feature or behavior|SharePoint IRM |sensitivity labels that apply encryption|
 |:-----|:-----|:-----|:-----|
 |Encryption that uses the Azure Rights Management service from Azure Information Protection | Yes |Yes |
-|[Usage rights]( ) are enforced while the item is in SharePoint  |No |Yes |
-|Support for different encryption settings within the same site or library |No |Yes |
-|The person who downloads the item is automatically granted full control permissions|Yes |No |
-|Support for coauthoring, eDiscovery, Data Loss Prevention, search|Yes |Yes |
+|Support for coauthoring, eDiscovery, DLP, search|Yes |Yes |
+|Encryption supports Office files|Yes |Yes |
+|Encryption supports PDF files|Yes |No |
+|Usage rights are enforced while the file is in SharePoint  |No |Yes |
+|Site or library supports mix of encrypted and unencrypted Office files  |No |Yes |
+|Support for the full range of usage rights |No |Yes |
+|Support for standard users to apply encryption |No |Yes |
+|Support for automatically applying encryption, according to file contents |No |Yes |
+|Designed for scenarios outside SharePoint|No |Yes |
 
-If you have SharePoint sites or libraries configured for IRM, we recommend you disable this option and use sensitivity labels instead. If you use both technologies together, the following happens:
+If you do have IRM protected sites or libraries, we recommend that you disable this older technology and use sensitivity labels instead. If you are concerned about files in these sites and libraries that aren't yet labeled and so won't be protected if they are downloaded, you can use both technologies together for a transition period. 
 
-- If you label a file using Office for the web, the label is successfully applied. Any encryption settings from the label are honored while the file remains in SharePoint. 
-  
-- Any labeled files that are downloaded from SharePoint retain their label. However, any encryption settings from the label are not applied. Instead, the file is encrypted by using the IRM settings. 
-- 
+During this transition period, the behavior is the same as listed at the top of this page, with the following difference:
+
+- All Office and PDF files that are downloaded are protected with IRM settings
+
+If the file was labeled, the label is retained but the encryption settings are replaced with the IRM settings. This means that the user who downloads the file now has Full Control usage rights, which includes the right to remove encryption from the file.
+
+By applying IRM settings to all downloaded files, you can be assured that all files, whether they are labeled or not, are protected from unauthorized access when they are downloaded from SharePoint. The disadvantages of this implementation is that you might be granting the user more rights to the downloaded file than intended, and potentially preventing other authorized users from accessing the file.
+
+Because of these disadvantages, and for a more consistent label experience with meaningful reporting, we recommend you disable SharePoint IRM when you are confident that files in these sites and libraries are appropriately labeled. To help with this step, consider using [automatic labeling](apply-sensitivity-label-automatically.md) and [content explorer](data-classification-content-explorer.md). 
 
 ## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 
