@@ -175,7 +175,7 @@ In comparison, sensitivity labels provide the protection settings of visual mark
 
 Use the following table to help you identify the differences between SharePoint IRM and sensitivity labels that apply encryption:
 
-|Feature or behavior|SharePoint IRM |sensitivity labels that apply encryption|
+|Feature or behavior|SharePoint IRM |Sensitivity labels that apply encryption|
 |:-----|:-----|:-----|:-----|
 |Encryption that uses the Azure Rights Management service from Azure Information Protection | Yes |Yes |
 |Support for coauthoring, eDiscovery, DLP, search|Yes |Yes |
