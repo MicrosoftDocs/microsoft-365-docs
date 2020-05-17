@@ -167,6 +167,27 @@ We recommend that you follow these steps:
 
 3. Publish the label more broadly.
 
+## SharePoint IRM and interoperability with sensitivity labels that apply encryption
+
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption when files are downloaded. The encryption automatic grants Full Control [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) to the person who downloads the file, and optionally to people who are specified in a single group. This protection technology is designed to prevent unauthorized users from opening the file while its outside SharePoint. 
+
+Use the following table to help you identify the differences between SharePoint IRM and sensitivity labels that apply encryption:
+
+|Feature or behavior|SharePoint IRM |sensitivity labels that apply encryption|
+|:-----|:-----|:-----|:-----|
+|Encryption that uses the Azure Rights Management service from Azure Information Protection | Yes |Yes |
+|[Usage rights]( ) are enforced while the item is in SharePoint  |No |Yes |
+|Support for different encryption settings within the same site or library |No |Yes |
+|The person who downloads the item is automatically granted full control permissions|Yes |No |
+|Support for coauthoring, eDiscovery, Data Loss Prevention, search|Yes |Yes |
+
+If you have SharePoint sites or libraries configured for IRM, we recommend you disable this option and use sensitivity labels instead. If you use both technologies together, the following happens:
+
+- If you label a file using Office for the web, the label is successfully applied. Any encryption settings from the label are honored while the file remains in SharePoint. 
+  
+- Any labeled files that are downloaded from SharePoint retain their label. However, any encryption settings from the label are not applied. Instead, the file is encrypted by using the IRM settings. 
+- 
+
 ## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 
 If you disable these new capabilities, files that you uploaded after you enabled sensitivity labels for SharePoint and OneDrive continue to be protected by the label because the label settings continue to be enforced. When you apply sensitivity labels to new files after you disable these new capabilities, full-text search, eDiscovery, and coauthoring will no longer work.
