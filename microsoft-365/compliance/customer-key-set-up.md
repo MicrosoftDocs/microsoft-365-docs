@@ -109,7 +109,7 @@ To submit an offer to activate Customer Key, complete these steps:
 
    - **Exchange Online and Skype for Business:** Choose the **Request encryption key help for Exchange online** offer.
 
-   - **SharePoint Online, OneDrive for Business, and Teams files:** Choose **Request encryption key help for Sharepoint and OneDrive** offer.
+   - **SharePoint Online, OneDrive, and Teams files:** Choose the **Request encryption key help for Sharepoint and OneDrive** offer.
 
 5. Once you've reviewed the offer details, choose **Continue to step 2**.
 
