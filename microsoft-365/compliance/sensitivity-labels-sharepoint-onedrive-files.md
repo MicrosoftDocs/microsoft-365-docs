@@ -171,9 +171,9 @@ We recommend that you follow these steps:
 
 ## SharePoint Information Rights Management (IRM) and sensitivity labels
 
-[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption when files are downloaded. By default, the encryption grants Full Control [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) to the person who downloads the file. However, there are [additional IRM settings](apply-irm-to-a-list-or-library#apply-irm-to-a-list-or-library) that include document restrictions that are a subset of the full usage rights. This protection technology is designed to prevent unauthorized users from opening the file while it's outside SharePoint.
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption when files are downloaded. By default, the encryption grants Full Control [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) to the person who downloads the file. However, there are [additional IRM settings](apply-irm-to-a-list-or-library#apply-irm-to-a-list-or-library) that include document restrictions that are a subset of the full range of usage rights. This older protection technology is designed to prevent unauthorized users from opening the file while it's outside SharePoint.
 
-In comparison, sensitivity labels provide the protection settings of visual markings (headers, footers, watermarks) in addition to encryption. The encryption settings support the full range of usage rights to restrict what users can do with the content, and the same sensitivity labels are supported for [many scenarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels), not just SharePoint.
+In comparison, sensitivity labels provide the protection settings of visual markings (headers, footers, watermarks) in addition to encryption. The encryption settings support the full range of usage rights to restrict what users can do with the content, and the same sensitivity labels are supported for [many scenarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels), not just SharePoint. Using the same protection method with consistent settings across workloads and apps results in a consistent protection strategy.
 
 Use the following table to help you identify the differences between SharePoint IRM and sensitivity labels that apply encryption:
 
@@ -182,9 +182,9 @@ Use the following table to help you identify the differences between SharePoint 
 |Encryption that uses the Azure Rights Management service from Azure Information Protection | Yes |Yes |
 |Support for coauthoring, eDiscovery, DLP, search|Yes |Yes |
 |Usage rights are enforced while the file is in SharePoint  |No |Yes |
-|Support for mix of protected and unprotected Office files in the same list or library |No |Yes |
-|Support for the full range of usage rights |No |Yes |
-|Support for automatically applying encryption, based on file contents |No |Yes |
+|Protection can be set at the file level |No |Yes |
+|Supports the full range of usage rights |No |Yes |
+|Files can be automatically protected, based on file contents |No |Yes |
 |Designed for scenarios outside SharePoint|No |Yes |
 
 If you do have IRM protected lists or libraries, we recommend that you disable this older technology and use sensitivity labels instead. If you are concerned about files in these lists and libraries that aren't yet labeled and so won't be protected if they are downloaded, you can use both technologies together for a transition period. 
