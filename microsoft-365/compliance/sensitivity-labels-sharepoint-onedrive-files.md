@@ -179,8 +179,6 @@ Use the following table to help you identify the differences between SharePoint 
 |:-----|:-----|:-----|:-----|
 |Encryption that uses the Azure Rights Management service from Azure Information Protection | Yes |Yes |
 |Support for coauthoring, eDiscovery, DLP, search|Yes |Yes |
-|Encryption supports Office files|Yes |Yes |
-|Encryption supports PDF files|Yes |No |
 |Usage rights are enforced while the file is in SharePoint  |No |Yes |
 |Site or library supports mix of encrypted and unencrypted Office files  |No |Yes |
 |Support for the full range of usage rights |No |Yes |
