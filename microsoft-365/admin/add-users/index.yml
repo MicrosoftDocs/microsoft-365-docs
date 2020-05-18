@@ -28,6 +28,8 @@ landingContent:
             url: add-users.md
           - text: Edit a user
             url: add-users.md
+          - text: Add guests to a Microsoft 365 group
+            url: ../create-groups/manage-guest-access-in-groups.md
           - text: Add another email address
             url: ../email/add-another-email-alias-for-a-user.md
           - text: Create a shared mailbox

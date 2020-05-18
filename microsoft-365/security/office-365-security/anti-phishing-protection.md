@@ -23,7 +23,7 @@ description: "Admins can learn about the anti-phishing protection features in Ex
 
 # Anti-phishing protection in Microsoft 365
 
-*Phishing* an email attack that tries to steal sensitive information in messages that appear to be from legitimate or trusted senders. There are specific categories of phishing. For example:
+*Phishing* is an email attack that tries to steal sensitive information in messages that appear to be from legitimate or trusted senders. There are specific categories of phishing. For example:
 
 - **Spear phishing** uses very focused and customized content that's specifically tailored to the targeted recipients (typically, after reconnaissance on the recipients by the attacker).
 
