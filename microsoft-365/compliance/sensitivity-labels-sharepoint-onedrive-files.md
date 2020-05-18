@@ -180,7 +180,7 @@ Use the following table to help you identify the differences between SharePoint 
 |Feature or behavior|SharePoint IRM |Sensitivity labels that apply encryption|
 |:-----|:-----|:-----|:-----|
 |Encryption that uses the Azure Rights Management service from Azure Information Protection | Yes |Yes |
-|Support for co-authoring, eDiscovery, DLP, search|Yes |Yes |
+|Support for coauthoring, eDiscovery, DLP, search|Yes |Yes |
 |Usage rights are enforced while the file is in SharePoint  |No |Yes |
 |Protection can be set at the file level |No |Yes |
 |Supports the full range of usage rights |No |Yes |
@@ -191,9 +191,9 @@ If you do have IRM protected lists or libraries, we recommend that you disable t
 
 During this transition period, the behavior is as follows: 
 
-- If you upload a file with a sensitivity label that applies encryption, the encryption is not removed so for these files, co-authoring, eDiscovery, DLP, and search are not supported.
+- If you upload a file with a sensitivity label that applies encryption, the encryption is not removed so for these files, coauthoring, eDiscovery, DLP, and search are not supported.
 
-- If you label a file using Office on the web, any encryption settings are enforced and for these files, co-authoring, eDiscovery, DLP, and search are supported.
+- If you label a file using Office on the web, any encryption settings are enforced and for these files, coauthoring, eDiscovery, DLP, and search are supported.
 
 - If you download a file that's labeled in SharePoint or OneDrive, the label is retained with its encryption settings.
 
