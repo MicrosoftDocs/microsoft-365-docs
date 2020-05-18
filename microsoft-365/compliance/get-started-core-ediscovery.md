@@ -37,11 +37,11 @@ Licensing for Core eDiscovery requires the appropriate organization subscription
 
    OR
 
-  - A Microsoft 365 E1 or Office 365 E1 license with an Exchange Online Plan 2 or Exchange Online Archiving add-on license
+  - Office 365 E1 license with an Exchange Online Plan 2 or Exchange Online Archiving add-on license
 
   AND
 
-  - A Microsoft 365 E1 or Office 365 E1 license with an SharePoint Online Plan 2 or OneDrive for Business Plan 2 add-on license
+  - Office 365 E1 license with an SharePoint Online Plan 2 or OneDrive for Business Plan 2 add-on license
   
   For information about how to assign licenses, see [Assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
