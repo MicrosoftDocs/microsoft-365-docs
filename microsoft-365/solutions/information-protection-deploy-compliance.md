@@ -20,7 +20,7 @@ description: add.
 
 # Use Compliance Score and Compliance Manager to manage improvement actions
 
-Microsoft Compliance Score and Compliance Manager can be used together to manage improvement actions related to data privacy regulations such as the European Union [General Data Protection Regulation (GDPR)](https://docs.microsoft.com/microsoft-365/compliance/gdpr), [California Consumer Protection Act CCPA)](https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq), HIPAA-HITECH (US health care privacy act), and the Brazil Data Protection Act (LGPD). 
+Microsoft Compliance Score and Compliance Manager can be used together to manage improvement actions related to data privacy regulations such as the European Union [General Data Protection Regulation (GDPR)](../compliance/gdpr.md), [California Consumer Protection Act CCPA)](../compliance/ccpa-faq.md), HIPAA-HITECH (US health care privacy act), and the Brazil Data Protection Act (LGPD). 
 
 This article provides guidance on the use of these tools for data privacy purposes.
 
@@ -30,21 +30,16 @@ This article provides guidance on the use of these tools for data privacy purpos
 
 ## Planned updates for Compliance Score and Compliance Manager
 
-Compliance Score (Preview) currently requires adding your target assessments specific to the regulation in question (such as GDPR) from the Compliance Manager. In a future release, much of the functionality in Compliance Manager will be adapted into a unified Compliance Score experience, reducing the need for multiple tools.
+[Compliance Score](../compliance/compliance-score.md) (Preview) currently requires adding your target assessments specific to the regulation in question (such as GDPR) from the [Compliance Manager](../compliance/compliance-manager-overview.md). In a future release, much of the functionality in Compliance Manager will be adapted into a unified Compliance Score experience, reducing the need for multiple tools.
 
-Compliance Score and Compliance Manager references:
-
-- [Microsoft Compliance Score](https://docs.microsoft.com/microsoft-365/compliance/compliance-score)
-- [Microsoft Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-overview) 	
-
-Here are the tools to your subscription, which require a sign-in:
+Here are the tools for your subscription, which require you to sign-in:
 
 - [Compliance Score in the Microsoft Compliance admin center](https://compliance.microsoft.com/compliancescore)
 - [Compliance Manager in the Microsoft Services Trust Portal](https://servicetrust.microsoft.com/ComplianceManager/V3)
 
 ## Getting started with Compliance Manager 
 
-[Microsoft Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/working-with-compliance-manager) (currently in preview) is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal for managing regulatory compliance activities related to Microsoft cloud services. Part of your Microsoft 365, or Azure Active Directory subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
+[Microsoft Compliance Manager](../compliance/working-with-compliance-manager.md) (currently in preview) is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal for managing regulatory compliance activities related to Microsoft cloud services. Part of your Microsoft 365, or Azure Active Directory subscription, Compliance Manager helps you manage regulatory compliance within the shared responsibility model for Microsoft cloud services.
 
 While you can view your overall compliance score and perform a number of other functions in the Microsoft Compliance admin center's **Compliance Score** page, you need to use Compliance Manager through the Services Trust Portal to first configure assessments specific to one or more data privacy regulations . Data from these assessments will then show up in Compliance Score for further viewing and filtering. 
 
@@ -60,25 +55,18 @@ Here are the key steps to help you get started.
 
 From the Compliance Manager, the first step is to add assessments specific to the data privacy regulations of interest and include in a defined "Data Privacy Regulations" group:
 
-- [Groups](https://docs.microsoft.com/microsoft-365/compliance/working-with-compliance-manager#groups) are containers that allow you to organize Assessments and share common information and workflow tasks between Assessments that have the same or related customer-managed controls. When two different Assessments in the same group share customer-managed control, the completion of implementation details, testing, and status for the control automatically synchronize to the same control in any other Assessment in the Group. This unifies the assigned Action Items for each control across the group and reduces duplicating work. You can also choose to use groups to organize. Assessments by year, area, compliance standard, or other groupings to help organize your compliance work.
-- Example setup for data privacy assessments. Here's an example set of five privacy-related regulatory assessment templates added to a group called "Data Privacy Regulations".
+- [Groups](../compliance/working-with-compliance-manager.md#groups) are containers that allow you to organize Assessments and share common information and workflow tasks between Assessments that have the same or related customer-managed controls. When two different Assessments in the same group share customer-managed control, the completion of implementation details, testing, and status for the control automatically synchronize to the same control in any other Assessment in the Group. This unifies the assigned Action Items for each control across the group and reduces duplicating work. You can also choose to use groups to organize. Assessments by year, area, compliance standard, or other groupings to help organize your compliance work.
 
-<!--
-****
-Include screenshots?
---> 
- 
-Notice the default dashboard view for each assessment template in the group, with varying scores for each, including "Customer Managed Actions" and "Microsoft Managed Actions".
 
 ### 2. Action items
 
 Once the assessments have been added, you can view "Action Items" specific to each group (or individual regulation):
 
-- **Improvement action list.** Navigate to the Action Items list and view the improvement actions associated across the regulations included in the group (many actions span regulations so a single list item may represent multiple). 
+- **Improvement action list.** Navigate to the Action Items list and view the improvement actions associated across the regulations included in the group. Many actions span regulations so a single list item may represent multiple. 
  
-- **Improvement action filtering.** For many regulations and groups of regulations (such as those related to Data Privacy), the list of improvement actions can be quite large, so consider filtering the list using the filter drop down. For example, if you select "technical controls", the list will be reduced to just those which have a technical implementation in the organization, as many of the actions are related to administrative operations in various aspects of the business which are also documented in Compliance Manager. In this guide, we will focus on technical controls, so this filtering approach is recommended.
+- **Improvement action filtering.** For many regulations and groups of regulations (such as those related to Data Privacy), the list of improvement actions can be quite large, so consider filtering the list using the filter drop down. For example, if you select "technical controls", the list will be reduced to just those which have a technical implementation in the organization, as many of the actions are related to administrative operations in various aspects of the business which are also documented in Compliance Manager. In this article, we will focus on technical controls, so this filtering approach is recommended.
  
-- **Additional information and review.** Next, for each action, you can click on the link to "Read More", which tells you more about the recommended activity (outside the context of the regulation) or "Review", which opens a form allowing you to do the following:
+- **Additional information and review.** For each action, you can click on the link to "Read More", which tells you more about the recommended activity (outside the context of the regulation) or "Review", which opens a form allowing you to do the following:
    - Assign the action to a someone in your organization (or yourself) to manage
    - Manage documents related to addressing the action
    - Specify status for the item
@@ -91,13 +79,13 @@ For example, if your organization has elected to use "Microsoft Managed Keys", t
  
 ### 3. Controls info
 
-**Assessment-specific view.** View [Controls Info](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-overview#controls) for each assessment (regulation-specific) group. This provides an assessment (regulatory)-specific view , in contrast to the "Action Items" list, which provides a technical control specific view.
+**Assessment-specific view.** View [Controls Info](../compliance/compliance-manager-overview.md#controls) for each assessment (regulation-specific) group. This provides an assessment (regulatory)-specific view , in contrast to the "Action Items" list, which provides a technical control specific view.
  
-![Relationships ](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-control.png)
+![Relationships of assessment to control items](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-control.png)
 
 Navigate to the **Controls Info** list and view the list of in-scope services for the regulation in question. 
  
-**Regulation-specific control groupings.** For each service area, the list of actions are provided by control area. For each set of actions, the Compliance Manager provides more information on the action and may suggest or provide review options to assist the organization in choosing a control approach.
+**Regulation-specific control groupings.** For each service area, the list of actions is provided by control area. For each set of actions, the Compliance Manager provides more information on the action and may suggest or provide review options to assist the organization in choosing a control approach.
  
 Note that this interface provides the capability to view details specific to the technical action, together with the status of actions related to the control, and supplemental context about the regulations to which the action is related.
 
@@ -113,13 +101,9 @@ You can also add a new template customized for your organization based on an exi
 
 ## Compliance Score
 
-Once the assessments and review specifications are performed in Compliance Manager, you can now go to the Compliance Score tool and review the score and slice and dice the data further, including by control area.
+Once the assessments and review specifications are performed in Compliance Manager, you can now go to the [Compliance Score](../compliance/working-with-compliance-score.md) tool and review the score and slice and dice the data further, including by control area.
 
-### Getting started with Compliance Score
-
-Reference: [Working with Compliance Score](https://docs.microsoft.com/microsoft-365/compliance/working-with-compliance-score)
-
-The Microsoft Compliance Score tool in the Microsoft 365 Compliance admin center provides several approaches to review and filter compliance data that is fed from Compliance Manager and various Microsoft 365 services. This tool is automatically updated when various configuration settings are implemented. This shares "signals" with the Microsoft Secure Score, so many improvement actions will show up in both scores. 
+The Compliance Score tool in the Microsoft 365 Compliance admin center provides several approaches to review and filter compliance data that is fed from Compliance Manager and various Microsoft 365 services. This tool is automatically updated when various configuration settings are implemented. This shares signals with the Microsoft Secure Score, so many improvement actions will show up in both scores. 
  
 The Compliance Score provides:
 
@@ -127,49 +111,9 @@ The Compliance Score provides:
 - A rollup of improvement actions and completion status
 - A listing of Microsoft 365 solutions impacting your score
 
-From each of these, you can drill down into more detailed views, and you can select the "Improvement Actions", "Solutions" and "Assessments" views from the top navigation ("Improvement Actions" are explored further below).
-
-### Compliance score by category and assessment
-
-In addition, the bottom of the page provides a breakdown of your compliance score by compliance category and assessments, specifically (these just apply a filtered view of improvement actions).
- 
-### Improvement actions for data privacy
-
-First, notice that many improvement actions are listed if all the regulations we selected in Compliance Manager (for data privacy) are included in the view. This large list can be filtered down, as we'll discuss further in a moment.
-
-Second, notice that you can sort the list by category. For example, you can sort so that all the actions in the **Control Access**"** category are grouped together.
- 
-Finally, you can filter the list down to a select view using the "Filters" feature in the Improvement actions navigation bar, which allows you to select options for each of the following: Regulations, Solutions, Groups, Test status, and Categories. 
-
-
-### Filtering - Regulations
-
-Continuing our example of an organization subject to California’s CCPA, The EU GDPR, United States HIPAA/HITECH and the LGPD from Brazil, since we specified these data privacy-related regulations in the Compliance Manager, you'll see those four listed in the filter pane shown below. If you only want to see improvement actions for a select few, select those in the filter.
- 
-### Filtering – Solutions
-
-Multiple solutions may be involved in addressing data privacy regulations, so we'll leave all unselected for now.
- 
-### Filtering – Groups
-
-In Compliance Manager, we created a group called "Data Privacy Regulations", so select that one in the admin UI to focus the view on data privacy regulations (only).
- 
-### Filtering - Test status
-
-If using Compliance Manager to track compliance actions, you can specify test filter criteria using the check boxes provided.
-
-### Filtering – Categories
-Categories provide groupings of related controls (from a functional standpoint), and we will revisit certain ones in later articles in this series (namely, Control Access, Manage Devices, Protect Against Threats, Protect Information, Govern Information and Discover and Respond).
- 
-Note also that Compliance Score assigns a score (current status out of a potential 27, 9, 3 or 1 point(s)) to each improvement action, which get rolled up into an aggregate score. 
-
->[!Note]
->Many of the actions included in the "Improvement Actions" listing are of the non-technical (e.g. operational or documentation-oriented) Action Type, and a filter is not provided to view by action type in this listing (only in the "Solutions" listing or by viewing the downloaded template for an assessment from Compliance Manager).
->
-
 ### How the compliance score gets calculated
 
-In short, the score is calculated based on a combination of Microsoft and customer-managed control implementations, as explained in more detail in the [Microsoft Compliance Score calculation article](https://docs.microsoft.com/microsoft-365/compliance/compliance-score-methodology).
+In short, the score is calculated based on a combination of Microsoft and customer-managed control implementations, as explained in more detail in the [Microsoft Compliance Score calculation article](../compliance/compliance-score-methodology.md).
 
 Controls are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective. These collectively (as applied to a single control) represent the risk of not implementing it relative to other controls.
 As presented in the above-referenced article, "preventative" controls get a higher score than "detective" and "corrective ones", and "mandatory" controls get a higher score than "discretionary" ones, as follows.
@@ -178,28 +122,28 @@ Note that the Compliance Score admin UI does not list these parameters, nor does
 
 For technical controls, Compliance Score will automatically update the improvement action score once the related feature is activated (e.g. 27 points for MFA configuration). Other, non-technical control actions (i.e., those that are operational or related to documentation) need to be recorded manually in the Compliance Manager tool on the Services Trust Portal. 
 
-You many also be implementing certain improvement actions for other purposes - e.g. using retention labels for reasons other than data privacy regulation compliance - so you would get credit for using such a feature even if for other purposes (i.e., not part of a deliberate compliance action).
+You many also be implementing certain improvement actions for other purposes&mdash;for example using retention labels for reasons other than data privacy regulation compliance&mdash;so you would get credit for using such a feature even if for other purposes, and not part of a deliberate compliance action.
 
-Thus, your "Compliance Score" should be considered a relative measure to track improvement on a broad scale, and the goal of a "perfect score" should not necessarily be pursued. 
+Your Compliance Score should be considered a relative measure to track improvement on a broad scale, and the goal of a "perfect score" should not necessarily be pursued. 
 
 ### Additional guidance
 
-A few important tips are provided below re: the use of Compliance Score and Compliance Manager as part of your journey to achieve data privacy regulation compliance:
+Here are a few important tips for the use of Compliance Score and Compliance Manager for you to achieve data privacy regulation compliance:
 
-- Technical controls focus. Each data privacy regulation has a combination of technical controls, documentation specifications, and operational/process/reporting requirements, which all show up in the improvement actions. 
+- Each data privacy regulation has a combination of technical controls, documentation specifications, and operational/process/reporting requirements, which all show up in the improvement actions. 
 
-- This article focuses on a subset of the technical controls specified for data privacy in Compliance Manager/Score. Refer to the Compliance Manager tool and documentation for more information on related, non-technical administrative controls.
+- This article focuses on a subset of the technical controls specified for data privacy in Compliance Manager/Score. Refer to the Compliance Manager tool and [documentation](../compliance/working-with-compliance-score.md) for more information on related, non-technical administrative controls.
 
 - To focus the view of improvement actions to your area of interest, you can filter by action type in the "Solutions" tab in the Compliance Score admin UI.
 
-- The role of improvement actions as part of a broader compliance strategy. The relative importance and priority of improvement actions identified in Compliance Score should be considered as part of a broader risk review along with the data privacy risk you've determined your organization needs to manage. 
+- The relative importance and priority of improvement actions identified in Compliance Score should be considered as part of a broader risk review along with the data privacy risk you've determined your organization needs to manage. 
 
-- Single improvement action across multiple, applicable regulations. If you are a global organization and you add multiple data privacy regulation templates into Compliance Manager (e.g. GDPR, CCPA, HIPAA-HITECH and/or LGPD) as "Assessments", Compliance Score will combine each applicable one in a field listing for each improvement action.
+- If you are a global organization and you add multiple data privacy regulation templates into Compliance Manager (e.g. GDPR, CCPA, HIPAA-HITECH and/or LGPD) as "Assessments", Compliance Score will combine each applicable one in a field listing for each improvement action.
  
-- Using filters for identified focus areas. Even with improvement action aggregation (across multiple regulatory requirements), if the regulation assessment templates for GDPR, LGPD, CCPA, and HIPAA-HITECH are selected, for example, almost 400 improvement actions will be listed in Compliance Score, which is a large number to tackle. To better rationalize this long list, use the improvement action filter to reduce the result set to a more manageable list.
+- Even with improvement action aggregation (across multiple regulatory requirements), if the regulation assessment templates for GDPR, LGPD, CCPA, and HIPAA-HITECH are selected, for example, almost 400 improvement actions will be listed in Compliance Score, which is a large number to tackle. To better rationalize this long list, use the improvement action filter to reduce the result set to a more manageable list.
 
-- Use the Categories filter to group by technical area. The "Categories" filter provides a means to filter improvement actions by logical grouping, which articles 4-7 in this series generally align to. For example, the categories "Protect Information" and "Govern Information" are represented as separate articles in this series. 
+- The "Categories" filter provides a means to filter improvement actions by logical grouping, which articles 4-7 in this series generally align to. For example, the categories "Protect Information" and "Govern Information" are represented as separate articles in this series. 
 
-- Direct vs. indirect. Finally, some of the controls listed in the improvement actions may be considered more directly tied to a specific regulatory article (e.g. ones that call specifically for encryption), while other controls may be more indirectly associated with the spirit of a regulation and are many times just things you should consider doing anyway (e.g. many of the identity and threat protection controls).
+- Some of the controls listed in the improvement actions may be considered more directly tied to a specific regulatory article (e.g. ones that call specifically for encryption), while other controls may be more indirectly associated with the spirit of a regulation and are many times just things you should consider doing anyway (e.g. many of the identity and threat protection controls).
 
 
