@@ -53,9 +53,9 @@ To help you get started with an information protection scheme in Microsoft 365, 
 
 ## Managing information protection in Microsoft 365 - Overview
 
-Microsoft [information protection solutions](../compliance/protect-information) include a number of integrated capabilities across Microsoft 365, Azure, and Windows. In Microsoft 365, information protection solutions include:
+Microsoft [information protection solutions](../compliance/protect-information.md) include a number of integrated capabilities across Microsoft 365, Azure, and Windows. In Microsoft 365, information protection solutions include:
 
-- [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for) (described in the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md))
+- [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for.md) (described in the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md))
 - Sensitivity labels
    - Service/container-level
    - Client-side/content-level
@@ -93,7 +93,7 @@ The following activities are recommended prior to implementing any of the sensit
 2. Rationalize modern sensitivity labelling with past or alternative methods 
 
 - Azure Information Protection
-  A new modern sensitivity labelling scheme may need to be reconciled with any existing [Azure Information Protection](../compliance/sensitivity-labels#sensitivity-labels-and-azure-information-protection) labeling implementation.
+  A new modern sensitivity labelling scheme may need to be reconciled with any existing [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) labeling implementation.
 - OME
   If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [OME](#office-message-encryption-ome), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
@@ -184,7 +184,7 @@ This method supports recommending a label to users, as well as automatically app
  
 This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-For configuration instructions, see [How to configure auto-labeling for Office apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps.md).
+For configuration instructions, see [How to configure auto-labeling for Office apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
 For data privacy, you auto-apply sensitivity labels for content containing sensitive personal information.
 
