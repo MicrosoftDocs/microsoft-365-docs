@@ -24,13 +24,15 @@ Assessing the data privacy regulations and risks that your organization is subje
 
 ## Potentially applicable data privacy regulations
 
-For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the GDPR regulation](../compliance/gdpr.md), as well as other materials on the regulations you may be subject to in your industry or region.
+For a good reference on the broader regulatory framework for data privacy regulations, see the [Microsoft Services Trust Portal](https://servicetrust.microsoft.com/) and the [series of articles on the General Data Protection Regulation (GDPR) regulation](../compliance/gdpr.md), as well as other materials on the regulations you may be subject to in your industry or region.
 
 ### GDPR
 
-The General Data Protection Regulation (GDPR), the most well-known and cited of the data privacy regulations, regulates the collection, storage, processing, and sharing of any personal data that relates to an identified or identifiable natural person that is a resident of the European Union (EU). 
+The GDPR, the most well-known and cited of the data privacy regulations, regulates the collection, storage, processing, and sharing of any personal data that relates to an identified or identifiable natural person that is a resident of the European Union (EU). 
 
-According to GDPR Article 4, “‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.”
+According to GDPR Article 4: 
+
+- ‘personal data’ means any information relating to an identified or identifiable natural person (‘data subject’); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.
 
 ### ISO 27001
 
@@ -40,18 +42,15 @@ Adherence to other standards like ISO 27001 has also been recognized by several 
 
 Other prominent data privacy regulations also specify requirements for the handling of personal data.
 
-In the United States, these include the CCPA (California Consumer Protection Act (CCPA - [CCPA FAQ](../compliance/ccpa-faq.md)), HIPAA-HITECH (US health care privacy act), and the Graham Leach Bliley Act (GLBA). Additional state-specific regulations are also in-place or in development. 
+In the United States, these include the California Consumer Protection Act ([CCPA](../compliance/ccpa-faq.md)), HIPAA-HITECH (United States health care privacy act), and the Graham Leach Bliley Act (GLBA). Additional state-specific regulations are also in-place or in development. 
 
-Around the world, additional examples include Germany's "National GDPR Implementation Act" (BDSG), Brazil's LGPD (Brazil Data Protection Act), and many others.
+Around the world, additional examples include Germany's National GDPR Implementation Act (BDSG), the Brazil Data Protection Act (LGPD), and many others.
 
 ## Regulation mapping to Microsoft 365 technical control categories
 
-Many of the data privacy-related regulations have overlapping requirements (although with some notable differences), so organizations should understand which regulation(s) they are subject to prior to developing any technical control scheme, which this series of articles focuses on. 
-For reference later in this document, excerpts from a sampling of data privacy regulations are provided in the table below. 
+Many of the data privacy-related regulations have overlapping requirements (although with some notable differences), so organizations should understand which regulations they are subject to prior to developing any technical control scheme, which this series of articles focuses on. 
 
->[!Important]
->This is not intended to be an exhaustive list. Refer to Compliance Manager or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
->
+For reference later in this document, excerpts from a sampling of data privacy regulations are provided in this table. 
 
 | Regulation | Article/section | Excerpt | Applicable technical control categories |
 |:-------|:-----|:-------|:-------|
@@ -73,9 +72,13 @@ For reference later in this document, excerpts from a sampling of data privacy r
 |  | 1798.105(d) | (exceptions to 1798.105(c) <br> A business or a service provider shall not be required to comply with a consumer’s request to delete the consumer’s personal information if it is necessary for the business or service provider to maintain the consumer’s personal information in order to: (refer to the current regulation for additional information). | Discover and respond |
 |||||
 
+>[!Important]
+>This is not intended to be an exhaustive list. Refer to Compliance Manager or your legal or compliance advisor for further information on the applicability of the cited sections to the technical control categories listed.
+>
+
 ## Knowing your data
 
-Regardless of the regulations you are subject to, where different user types inside and outside your organization interact with your systems - as well as where their personal data is stored, what type it is, and how much of it there is, and under what circumstances it was collected – are all important factors that may impact your overall personal data protection strategy, subject to whichever industry and government regulations apply to your organization. 
+Regardless of the regulations you are subject to, where different user types inside and outside your organization interact with your systems&mdash;as well as where their personal data is stored, what type it is, and how much of it there is, and under what circumstances it was collected&mdash;are all important factors that may impact your overall personal data protection strategy, subject to whichever industry and government regulations apply to your organization. 
  
 ![Knowing your data: What type it is, and how much of it there is, and under what circumstances it was collected](../media/information-protection-deploy-assess/information-protection-deploy-assess-knowing-data.png)
 
@@ -131,8 +134,8 @@ If a person leaves a company, organizations typically have processes and procedu
 
 To address such needs, organizations should have processes and procedures in place that address preventative, detective, and remedial needs to facilitate such requests, noting that some information about an employee may be reasonably considered crucial for business continuity. For example, information that an individual authored a file or performed a function. 
 
->[!Notes]
->We provide insights on related investigative and remediation techniques for personal data in Microsoft 365 in the [monitor and respond article](information-protection-deploy-monitor-respond.md). <br> Your organization may also wish to employ automated classification and protection schemes to make sure that personal data is controlled properly while inside the organization, as well as prevent it from leaving the organization in malicious actor situations. These topics are explored further in the [protect information article](information-protection-deploy-protect-information.md).
+>[!Note]
+>We provide insights on related investigative and remediation techniques for personal data in Microsoft 365 in the [monitor and respond article](information-protection-deploy-monitor-respond.md). Your organization may also wish to employ automated classification and protection schemes to make sure that personal data is controlled properly while inside the organization, as well as prevent it from leaving the organization in malicious actor situations. These topics are explored further in the [protect information article](information-protection-deploy-protect-information.md).
 >
  
 ### Data the organization has about its business customers in the B2B scenario
@@ -164,7 +167,7 @@ Most organizations will have at least some exposure to at least one of the above
 
 ## Step 2: Assess your readiness for complying with data privacy regulations
 
-Although it is GDPR specific, the questions posed in this free, [Microsoft GDPR assessment tool](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) provides a good start towards understanding your overall data privacy readiness, if you have not established this already. 
+Although specific to GDPR, the questions posed in the free [Microsoft GDPR assessment tool](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) provides a good start towards understanding your overall data privacy readiness. 
 
 Organizations subject to other data privacy regulations, such as CCPA in the United States or Brazil’s LGPD, may also benefit from this tool’s inventory of readiness due to a high degree of overlapping provisions with the GDPR.
 

@@ -42,7 +42,7 @@ In total, if these are selected across our sample set of four major data privacy
 
 For more information, the reader is directed to more specific documentation referred to in Compliance Manager, Compliance Score, and the articles referenced below, and customer current state vs. requirements obviously dictate which of these make sense to put on your list to employ (if not already implemented).
 
-Use [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/?product=featured) for identity and the **Control Access** category, with which you can:
+Use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) for identity and the **Control Access** category, with which you can:
 
 - Implement replay-resistant authentication (to prevent “Man in the middle” attacks)
 - Block legacy authentication
