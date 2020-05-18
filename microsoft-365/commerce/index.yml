@@ -24,11 +24,11 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View your bill
+          - text: View your bill or invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Manage payment methods
             url: billing-and-payments/manage-payment-methods.md
-          - text: Understand your invoice
+          - text: Understand your bill or invoice
             url: billing-and-payments/understand-your-invoice.md
           - text: Manage billing profiles
             url: billing-and-payments/manage-billing-profiles.md

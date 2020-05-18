@@ -54,7 +54,7 @@ Include the following information when you submit the request to Microsoft Suppo
   
 - The default domain name of your organization.
 
-- The tenant name and tenant ID of your organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Microsoft 365 tenant ID](https://support.office.com/article/6891b561-a52d-4ade-9f39-b492285e2c9b).
+- The tenant name and tenant ID of your organization. You can find these in the Azure Active Directory portal (under **Manage** \> **Properties**). See [Find your Microsoft 365 tenant ID](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
 
 - The following title or description of the purpose of the support request: "Enable Application Content Search for On-premises Users". This helps route the request to the eDiscovery engineering team who will implement the request.
 

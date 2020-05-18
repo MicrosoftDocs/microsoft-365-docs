@@ -26,7 +26,7 @@ You can configure ATP anti-phishing policies in the Security & Compliance Center
 
 For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection organizations (that is, Microsoft 365 organizations without Office 365 ATP), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-## ATP anti-phishing policies in the Security & Compliance Center vs Exchange Online PowerShell
+## ATP anti-phishing policies in the Security & Compliance Center vs PowerShell
 
 The basic elements of an ATP anti-phishing policy are:
 
