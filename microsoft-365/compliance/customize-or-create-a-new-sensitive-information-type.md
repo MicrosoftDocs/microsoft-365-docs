@@ -159,7 +159,7 @@ KQL and keywords can't be used together. Use these tools separately to hone your
 
 Notes:
 
--   You can use NEAR and ONEAR for proximity searches.
+-   You can use NEAR for proximity searches.
 
 -   Unfortunately, KQL doesn't support queries with the Regex Class (ex: IdRef="Regex\_email\_address")
 

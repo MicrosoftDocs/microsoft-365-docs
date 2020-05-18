@@ -1,5 +1,5 @@
 ---
-title: RReport junk and phishing email in Outlook on the web
+title: Report junk and phishing email in Outlook on the web
 f1.keywords:
 - NOCSH
 ms.author: chrisda
