@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom:
+- TopSMBIssues
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -23,6 +26,12 @@ description: "Learn how to manage your payment methods in the Microsoft 365 admi
 ---
 
 # Manage payment methods
+
+::: moniker range="o365-21vianet"
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+::: moniker-end
 
 When you buy business products or services from Microsoft, you can use an existing payment method, or add a new one. You can use a credit or debit card, or bank account to pay for the things you buy.
 
@@ -39,7 +48,18 @@ If your business account doesn't have a billing profile, any Global or Billing a
 
 Adding a payment method doesn't associate any subscriptions with it. To assign a single subscription to the payment method, see [Change a payment method for a single subscription](#change-a-payment-method-for-a-single-subscription). To replace all subscriptions that use another payment method with the new one, see [Replace a payment method](#replace-a-payment-method).
 
+::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
 2. Select **Add a payment method**.
 3. On the **Payment methods** page, pick a payment method from the drop-down menu.
 4. Enter the information for the new card or bank account, then select **Add**.
@@ -48,7 +68,18 @@ Adding a payment method doesn't associate any subscriptions with it. To assign a
 
 You can change the name on the credit or debit card, billing address, or expiration date for an existing payment method. However, you can't change the card or account number. If the account number has changed, [replace it with a different payment method](#replace-a-payment-method), and then [delete the old one](#delete-a-payment-method).
 
+::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
 2. Select the row of the payment method to update. In the right pane, select **Edit**.
 3. Update your payment method information, including the name on the credit or debit card, billing address, or expiration date, and then select **Save**.
 
@@ -58,7 +89,18 @@ When you replace a payment method, you replace it for all subscriptions and bill
 
 To change the payment method for a single subscription, see [Change a payment method for a single subscription](#change-a-payment-method-for-a-single-subscription).
 
+::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
 2. Select the row of the payment method to replace. The right pane lists all billing profiles and individual subscriptions that use the selected payment method.
 3. In the right pane, select **Replace payment method for all items**.
 4. To use an existing payment method, choose one from the drop-down list, then select **Replace**.
@@ -72,8 +114,19 @@ To change the payment method for a single subscription, see [Change a payment me
 
 You can change the payment method used to pay for a single subscription.
 
+::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. On the **Subscriptions** tab, select the subscription that you want to pay for with the alternate payment method. 
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. In the admin center, go to the **Billing** > **Your products** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** > **Your products** page.
+::: moniker-end
+
+2. On the **Subscriptions** tab, select the subscription that you want to pay for with the alternate payment method.
 3. Under **Billing**, next to the payment method, select **Edit**.
 4. Next to your existing payment method, select **Change**.
 5. From the drop-down list, choose an alternate payment method, or choose to add a payment method.
@@ -88,7 +141,18 @@ You can only delete a payment method that isn't attached to a subscription or bi
 
 If a payment method isn't associated with any subscriptions or billing profiles, you can immediately delete it.
 
+::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
 2. Find the payment method to delete, select the three dots, then select **Delete**.
 3. At the bottom of the right pane, select **Delete**.
 
@@ -96,7 +160,18 @@ If a payment method isn't associated with any subscriptions or billing profiles,
 
 If a payment method is attached to any subscriptions or billing profiles, first replace it with an existing payment method, or add a new one, then delete the old payment method.
 
+::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** > **Bills & payments** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Payment methods</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+1. In the admin center, go to the **Billing** > **Bills & payments** > **Payment methods** page.
+::: moniker-end
+
 2. Select the row for the payment method to delete. The right pane lists existing subscriptions that use that payment method.
 3. In the right pane, select **Delete**.
 4. To use an existing payment method, choose one from the drop-down list, select **Next**, and then select **Delete**.
