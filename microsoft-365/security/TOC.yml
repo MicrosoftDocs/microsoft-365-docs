@@ -286,6 +286,8 @@
                   items: 
                     - name: Use Admin Submission
                       href: ./office-365-security/admin-submission.md
+                    - name: Specify a mailbox for user submissions
+                      href: ./office-365-security/user-submission.md
                     - name: Enable the Report Message add-in
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Install and use the Junk Email Reporting add-in

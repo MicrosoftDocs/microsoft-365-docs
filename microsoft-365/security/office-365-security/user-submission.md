@@ -26,7 +26,7 @@ In Microsoft 365 organizations with Exchange Online mailboxes, you can specify a
 - [Built-in reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (formerly known as Outlook Web App)
 
   > [!NOTE]
-  > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
+  > If reporting has been [disabled in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web), enabling user submissions here will override that setting and enable users to report messages in Outlook on the web again.
 
 You can also configure third-party message reporting tools to forward messages to the mailbox that you specify.
 
@@ -70,8 +70,6 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
         When you're finished, click **Confirm**.
 
-        ![Send reported messages to Microsoft and a custom mailbox](../../media/user-submission-enable-outlook-report-message.png)
-
      > [!CAUTION]
      > If you have [disabled junk email reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) using Outlook on the web mailbox policies, but you configure either of the previous settings to report messages to Microsoft, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in.
 
@@ -81,8 +79,6 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
       When you're finished, click **Confirm**.
 
-      ![Send reported messages to a custom mailbox using third-party tools](../../media/user-submission-disable-outlook-report-message.png)
-     
 ## Message submission format
 
 Messages sent to custom mailboxes need to follow a specific submission mail format. The Subject (Envelope Title) of the submission should be in this format:
