@@ -38,7 +38,7 @@ Currently, baseline policies include the following:
 - **Block legacy authentication** &ndash; Older client apps and some new apps don't use newer, more secure, authentication protocols. These older apps can bypass conditional access policies and gain unauthorized access to your environment. This policy blocks access from clients that don't support conditional access. 
 - **Require MFA for Service Management** &ndash; Requires multi-factor authentication for access to management tools, including Azure portal (where you configure baseline policies). 
 
-We recommend you enable all of these baseline policies. After these policies are enabled, admins and users will be prompted to register for Azure Multi-Factor authentication.
+Microsoft recommends you enable all of these baseline policies. After these policies are enabled, admins and users will be prompted to register for Azure Multii-Factor authentication.
 
 For more information about these policies, see [What are baseline policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection)?
 
