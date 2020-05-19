@@ -76,9 +76,9 @@ On this new **Site and group settings** page, configure the settings:
 
 - **Privacy of Office 365 group-connected teams sites**: Keep the default of **Public - anyone in the organization can access the site** if you want anyone in your organization to access the team site or group where this label is applied.
     
-- Select **Private** if you want access to be restricted to only approved members in your organization.
-- 
-- Select **None - let user chose who can access the site** when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
+    Select **Private** if you want access to be restricted to only approved members in your organization.
+    
+    Select **None - let user chose who can access the site** when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
     
     The settings of **Public** or **Private** set and lock the privacy setting when you apply this label to the container. Your chosen seting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
 
