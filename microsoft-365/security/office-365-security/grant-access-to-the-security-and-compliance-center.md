@@ -17,7 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: "Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features."
+description: "Users need to be assigned permissions in the Microsoft 365 Security & Compliance Center before they can manage any of its security or compliance features."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Give users access to the Security & Compliance Center

@@ -63,10 +63,6 @@ See [SharePoint admin](https://docs.microsoft.com/sharepoint/sharepoint-online) 
 
 One way to see the benefits of SharePoint is to examine how individuals, a team, a division, or your entire organization interact today, and then find an appropriate scenario that provides easier ways to store and share files. Keep in mind that [Microsoft Teams](teams-workload.md) might be a better choice for some of your scenarios.
 
-#### SharePoint site for highly regulated data
-
-Highly regulated data is subject to regional regulations or is the most valuable data for your organization, such as trade secrets, financial or human resources information, and organization strategy. You can configure a SharePoint site for restricted access, data classification, data loss prevention, and encryption for this type of data. For the details, see [Microsoft Teams and SharePoint sites for highly regulated data](teams-sharepoint-online-sites-highly-regulated-data.md).
-
 #### Result
 A list of SharePoint scenarios that address your organization's needs for document storage and sharing, content management, collaboration, and security.
 

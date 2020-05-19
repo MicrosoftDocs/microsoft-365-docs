@@ -9,6 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -31,7 +33,7 @@ description: "Find your invoice or billing statement in the Microsoft 365 admin 
 
 This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
-If you need help interpreting the charges you see on your bill, see [Understand your invoice](understand-your-invoice2.md) for a detailed walkthrough.
+If you need help interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
  **Not an admin?** Contact your IT administrator for help. 
   

@@ -1,5 +1,5 @@
 ---
-title: "Themes"
+title: Themes - Data investigations
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+description: During a data investigation, use Themes to organize documents by finding common ideas or concepts.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Themes

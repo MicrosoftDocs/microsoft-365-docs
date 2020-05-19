@@ -2,8 +2,8 @@
 title: "EU National Identification Number"
 f1.keywords:
 - NOCSH
-ms.author: cabailey
-author: cabailey
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 
 audience: Admin
@@ -98,18 +98,18 @@ Yes
 
 A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
-- The function  `Func_bulgaria_national_number` finds content that matches the pattern. 
+- The function  `Func_bulgaria_eu_national_id_card` finds content that matches the pattern. 
     
 - A keyword from  `Keywords_bulgaria_national_number` is found. 
     
 A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
   
-- The function  `Func_bulgaria_national_number` finds content that matches the pattern. 
+- The function  `Func_bulgaria_eu_national_id_card` finds content that matches the pattern. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
         <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_bulgaria_national_number" />
+          <IdMatch idRef="Func_bulgaria_eu_national_id_card" />
           <Match idRef="Keywords_bulgaria_national_number" />
         </Pattern>
 <Pattern confidenceLevel="75">

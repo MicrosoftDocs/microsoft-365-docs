@@ -1,5 +1,5 @@
 ---
-title: "Detect and Remediate Outlook rules and custom Forms Injections attacks"
+title: "Detect and remediate the Outlook rules and custom forms injections attacks."
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,6 +16,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: "Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365"
+ms.custom: seo-marvel-apr2020
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
@@ -152,7 +153,7 @@ If you find any evidence of either of these attacks, remediation is simple, just
 
 1. Identify all the devices that the user has used with Outlook. They will all need to be cleaned of potential malware. Do not allow the user to sign on and use email until all the devices are cleaned.
 
-2. Follow the steps in [Delete a rule](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) for each device.
+2. Follow the steps in [Delete a rule](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) for each device.
 
 3. If you are unsure about the presence of other malware, you can format and re-install all the software on the device. For mobile devices you can follow the manufacturers steps to reset the device to the factory image.
 
