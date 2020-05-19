@@ -30,7 +30,7 @@ The Microsoft 365 admin center lets you manage Azure AD roles and Microsoft Intu
 
 Looking for the detailed role descriptions for Azure AD? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/en-us/mem/intune/fundamentals/role-based-access-control).
+Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
