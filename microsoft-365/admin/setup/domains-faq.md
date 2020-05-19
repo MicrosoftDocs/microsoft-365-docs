@@ -26,6 +26,14 @@ ms.custom: okr_smb
 
 # Domains FAQ
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 This article contains answers to Frequently Asked Questions about domains in Office 365.
 
 If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.
@@ -361,7 +369,7 @@ You can keep using the initial onmicrosoft.de domain even after you add your dom
 
 ## How do I verify my nonprofit or education status?
 
-1. Select **Setup** in the [admin center](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) to start the wizard. (Be sure to sign in to Office 365 first.) 
+1. Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard. (Be sure to sign in to Office 365 first.) 
     
 2. To become the admin for your school, select the **Become an admin** option in Office 365. 
     
@@ -487,7 +495,7 @@ You can, but there are limitations:
         
     4. Test email to someone who's on the other email system. For example, send an email to User C. This email should be delivered to User C's mailbox on your original mail server.
         
-    5. From an outside account, or from an employee's email account on the other email system, verify that forwarding is set up properly on the other email system. For example, from User C's origninal server account or a Hotmail account, send User A an email and verify that it arrives in User A's Office 365 mailbox.
+    5. From an outside account, or from an employee's email account on the other email system, verify that forwarding is set up properly on the other email system. For example, from User C's original server account or a Hotmail account, send User A an email and verify that it arrives in User A's Office 365 mailbox.
         
 9. Move mailbox contents
     

@@ -24,6 +24,14 @@ description: "Learn how to share sites and files with people outside the organiz
 
 # Share sites and files externally
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 To collaborate with people outside your organization, you can share entire sites or specific files externally. If you want to get straight to setting up sharing, choose the scenario you want to enable:
 
 - [Collaborate with guests on a document](../../solutions/collaborate-on-documents.md)

@@ -59,7 +59,7 @@ Here's a quick overview of the built-in workflow in Advanced eDiscovery. For mor
 
 - [Index custodian data](processing-data-for-case.md) and fix indexing errors so you can effectively collect data for your investigations
 
-- [Collect data](collecting-data-for-ediscovery.md) for a case and add [add it to a review set](collecting-data-for-ediscovery.md#adding-search-results-to-a-review-set) for further investigation
+- [Collect data](collecting-data-for-ediscovery.md) for a case and add [add it to a review set](collecting-data-for-ediscovery.md#add-search-results-to-a-review-set) for further investigation
 
 - [View ](view-documents-in-review-set.md) documents, [query](review-set-search.md) data, and [tag](tagging-documents.md) items in a review set
 

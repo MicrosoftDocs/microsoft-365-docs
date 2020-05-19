@@ -48,7 +48,7 @@ If you found this video helpful, check out the [complete training series for sma
 These steps turn on self-service password reset for everyone in your business.
   
 ::: moniker range="o365-worldwide"
-1.  In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> page.
 
 ::: moniker-end
 
@@ -60,18 +60,18 @@ These steps turn on self-service password reset for everyone in your business.
 
 ::: moniker range="o365-21vianet"
 
-1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \> **Security &amp; privacy** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Settings** \>**Settings** \> **Security &amp; privacy** page.
 
 ::: moniker-end
 
    
-2. Under **Let your people reset their own passwords**, select the link for the **Azure AD admin center**. You'll get Azure for free!
+2. At the top of the Settings page select **Security & Privacy**.
   
-3. Select **Users** in the left navigation, and then select **Password reset**.
+3. Select **Self Service Password Reset**.
   
 4. On the Properties page, select **All** to enable it for everyone in your business, and then select **Save**.
   
-5. When your users sign in to Office 365, they will be prompted to enter additional contact information that will help them reset their password in the future.
+5. When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.
 
 ## Related articles
 

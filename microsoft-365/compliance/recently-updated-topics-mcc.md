@@ -1,5 +1,5 @@
 ---
-title: "What's new in the Microsoft 365 compliance center"
+title: Recent updates in the compliance center
 f1.keywords:
 - NOCSH
 ms.author: brendonb
@@ -15,8 +15,9 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
-- m365-security-compliance 
+- m365-security-compliance
 description: "Just like features in the Microsoft 365 compliance center, our help content is always evolving. We're continuously creating new articles, updating existing ones, and making changes based on your feedback. Find out what's new and updated this month."
+ms.custom: seo-marvel-mar2020
 ---
 
 # Recent updates to Microsoft 365 compliance content
@@ -26,7 +27,122 @@ Just like features in the Microsoft 365 compliance center, our help content is a
 > [!TIP]
 > To stay on top of the latest feature updates in the Microsoft 365 compliance center, check out [What's new in the Microsoft 365 compliance center](whats-new.md).
 
+## March 2020
+
+### Auditing
+
+[Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md) (new)<br>New guidance on using the new *MailItemsAccessed* mailbox auditing action for forensic investigations.
+
+[Search the audit log](search-the-audit-log-in-security-and-compliance.md) (updated)<br>Changes include:
+- [New section](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records) with details about the 'app@sharepoint' user listed in audit records.
+- [New descriptions](search-the-audit-log-in-security-and-compliance.md#quarantine-activities) of quarantine activities.
+- In the [User administration activity](search-the-audit-log-in-security-and-compliance.md#user-administration-activities) section, clarified that the "Change user password event is triggered when a user changes their own password (via self-service password reset), and the "Reset user password" event is triggered when an admin resets a user's password.
+
+### Auto-expanding archive
+
+[Overview of unlimited archiving](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive) (updated)<br>Added clarification that you can't delete any folder in the main archive or an auxiliary archive once auto-expanding archiving is enabled on a mailbox.
+
+### Compliance Score/Compliance Manager
+
+All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-manager-overview.md) topics reflect updates to these products released in early April (both are still in public preview). Key updates include:
+- Simplified process for creating and modifying templates
+- Versioning notice and control for templates and actions
+- Synching of common actions across groups
+- Language support now extended to Chinese (Simplified), Chinese (Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Russian, and Spanish
+
+### Communication compliance
+
+[Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications](communication-compliance-case-study.md) (new)<br>A step-by-step case study for education and small business organizations to help them quickly configure an offensive language policy. Increased requests from customers as organizations ramp up for COVID19 responses.
+
+[Get started with communication compliance](communication-compliance-configure.md) (updated)<br>Updated licensing and permissions requirements.
+
+### Customer Key
+
+[Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md) (updated)<br>Organizational updates that help clarify which keys you can and can't roll.
+
+[Learn about the availability key for Customer Key](customer-key-availability-key-understand.md) (updated)<br>Added clarification around Exchange Online architecture for Customer Key.
+
+### Data loss prevention
+
+[Overview of data loss prevention](data-loss-prevention-policies.md) (updated)<br>Updated how long it takes for retention labels to take effect and the default behavior policies with no alerts configured.
+
+### eDiscovery
+
+[Get started with Advanced eDiscovery](get-started-with-advanced-ediscovery.md) (new)<br>Provides info about licensing and permissions requirements, steps to configure global settings and create a new case, and a walkthrough of the Advanced eDiscovery workflow.
+
+[Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md) (updated)<br>Retirement dates moved out three months due to the public health situation. Updated article cites the new retirement dates.
+
+### Insider Risk Management
+
+[Get started with insider risk management](insider-risk-management-configure.md) (updated)<br>Updated licensing and permissions requirements.
+
+[Define information barrier policies](information-barriers-policies.md) (updated)<br>Clarified processing speed and time required to apply. Added details about how no no address book policies should be in place. Also various PowerShell code updates, including new code for filtering.
+
+[Information barriers](information-barriers.md) (updated)<br>Fixed some broken links and updated PDF links and title. Per customer feedback, clarified that information barriers only supports two-way restrictions. One-way restrictions (such as marketing can communicate with day traders, but day traders cannot communicate with marketing) is not supported.
+
+[Troubleshooting information barriers](information-barriers-troubleshooting.md) (updated)<br>Added new troubleshooting scenario section. Added link to steps for how to reapplying information barriers.
+
+### Office 365 Message Encryption
+
+[Manage Office 365 Message Encryption](manage-office-365-message-encryption.md) (updated)<br>Updated to reflect that the force wrapper function is a standard OME feature, not an advanced one. Rewrote PowerShell examples to exclude all references to the Advanced OME features revocation and expiration.
+
+[Message Encryption FAQ](ome-faq.md) (updated)<br>Clarified that only Outlook for the web can apply ad-hoc encryption. Likewise, for all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online.
+
+### Privileged access management
+
+[Get started with privileged access management](privileged-access-management-configuration.md) (updated)<br>Updated licensing and permissions requirements.
+
+### PST Import
+
+[FAQ about importing PST files](faqimporting-pst-files-to-office-365.md) (updated)<br>Added FAQ about how PST import process handles duplicate email items.
+
+### Retention
+
+[Overview of retention policies](retention-policies.md) (updated)<br>Changes include:
+
+- Added content paths for retain-only and delete-only retention policies (previously, content paths explained only retain and then delete).
+- [Updated section](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) explaining that, for SharePoint locations, you now specify a URL rather than choose a site. This means you don't need permissions to access the site in order to include it in a retention policy.
+
+### Sensitivity labels
+
+[Learn about sensitivity labels](sensitivity-labels.md) (updated)<br>Added deprecation details about label management in the Azure portal, including a link to [the official notice](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+
+[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) (updated)<br>Added info about the new Sensitivity Label Reader role, which is supported initially just for the labeling PowerShell cmdlets.
+
+[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#removing-and-deleting-labels) (updated)<br>Added new section explains the consequences of removing and deleting labels.
+
+[Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Changes include:
+
+- Removed Azure AD instructions and instead linked to the [Azure AD authoritative information](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
+- Updated the [How to configure site and group settings when you create or edit sensitivity labels](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) section with information about the **Privacy of Office 365 group-connected teams sites** setting, which includes the new **None** option.
+- Added a note describing how only labels with site and group settings will be available to select when users create teams, groups, and sites. This functionality is gradually rolling out to organizations.
+
+[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated)<br>[New section](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) with example encryption settings for some of the most commonly used configurations to protect documents and emails.
+
+[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (updated)<br>Explanation of the behavior differences between built-in labeling vs. the Azure Information Protection unified labeling client.
+
+[Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) (updated)<br>Changes include:
+
+- Clarified that enabling this preview displays the **Sensitivity** button on the ribbon for labels in Office for the web, in addition to supporting documents that are labeled and encrypted.
+- Updated the instructions for Office 365 Multi-Geo.
+- The list of limitations has a new entries that include what happens when a computer goes offline or to sleep, and if a label is deleted.
+
+[Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md) (updated)<br>Changes include:
+
+- Moved licensing info to to [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+- [New section](sensitivity-labels-office-apps.md#labeling-client-for-desktop-apps) explaining how, to use labels that are built into Office desktop apps, you must use a subscription edition of Office instead of standalone editions.
+- The tables of supported apps include the Office app for iOS and Android and the configuration that lets users assign permissions for Word, Excel, and PowerPoint is updated – now rolling out to monthly channel for Windows and Mac.  
+- [New section](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions) explaining how you can use the group policy setting to disable built-in labeling if you're currently using other labeling solutions that you want to keep using for your Windows computers. 
+- Updated the [Information Rights Management (IRM) options and sensitivity labels](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels) section with the recommendation to use labels that apply encryption rather than IRM options, with an explanation of potential consequences when the two protection solutions are mixed.
+
+### Trainable classifiers
+
+[Getting started with trainable classifiers (preview)](classifier-getting-started-with.md) (updated)<br>Added info about how the Offensive Language template is being deprecated. Also added a table listing the top 25 code languages used in the Source Code built-in classifier.
+
 ## February 2020
+
+> [!NOTE]
+> Articles listed in previous months may have since been updated, moved, or deleted. As a result, some of the details below might be outdated and links might be broken.
 
 ### Auditing
 

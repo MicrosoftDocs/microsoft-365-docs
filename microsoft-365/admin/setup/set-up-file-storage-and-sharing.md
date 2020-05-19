@@ -58,7 +58,7 @@ Here are recommendations for what to store in each location when you use OneDriv
 |**SharePoint team sites** <br/> |Collaboration. When you create a Microsoft 365 group (for example, in the Microsoft 365 admin center, in Outlook, or by creating a team in Microsoft Teams) a SharePoint team site is created for that group. Likewise, when you create a new SharePoint team site from the SharePoint home page or from the new SharePoint admin center, it also creates a Microsoft 365 group. For more info, see [What is a SharePoint team site?](https://support.office.com/article/75545757-36c3-46a7-beed-0aaa74f0401e.aspx) and [Create a team site in SharePoint Online](https://support.office.com/article/ef10c1e7-15f3-42a3-98aa-b5972711777d.aspx).  <br/> |Files that have shared ownership. We recommend separate team sites for each unit of work in your organization. For example, to keep personnel and financial documents private to a small team, create a separate team site.  <br/> |
 
 > [!NOTE]
-> SharePoint also has other types of sites you can use for your business. You can use [communication sites](https://support.office.com/article/7fb44b20-a72f-4d2c-9173-fc8f59ba50eb.aspx) in your intranet to publish information for a broad audience. And you can use [hub sites](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) to connect sites in your intranet.
+> SharePoint also has other types of sites you can use for your business. You can use [communication sites](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb) in your intranet to publish information for a broad audience. And you can use [hub sites](https://support.office.com/article/fe26ae84-14b7-45b6-a6d1-948b3966427f.aspx) to connect sites in your intranet.
   
 ## Start using OneDrive and your team site
 
@@ -180,7 +180,7 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
   
 1. Sign in to to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
-2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">Settings</a> page.
+2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**Org settings**</a> page.
 
 3. On the **Services** tab, select **Office on the web**.
 
@@ -196,4 +196,4 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
 
   - [Install and set up Office on an iPhone or iPad with Microsoft 365](https://support.office.com/article/9df6d10c-7281-4671-8666-6ca8e339b628.aspx)
 
-  - [Set up Office on Windows Phone with Microsoft 365](https://support.office.com/article/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7.aspx)
+  - [Set up Office on Windows Phone with Microsoft 365](https://support.microsoft.com/en-us/office/set-up-office-mobile-apps-on-a-windows-mobile-device-2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)

@@ -13,9 +13,11 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
-description: "Summary: Step through the design process for isolated SharePoint Online team sites."
+description: Design isolated SharePoint Online team sites, including determine permission levels, assign permissions to users with access groups, and nested Azure AD groups.
 ---
 
 # Design an isolated SharePoint Online team site
@@ -52,7 +54,7 @@ Here are the default SharePoint groups and permission levels.
   
 ## Phase 2: Assign permissions to users with access groups
 
-You can assign permissions to users by adding their user account, or an Microsoft 365 or Azure AD group of which the user account is a member, to the SharePoint groups. Once added, the user accounts, either directly or indirectly via membership in an Microsoft 365 or Azure AD group, are assigned the permission level associated with the SharePoint group.
+You can assign permissions to users by adding their user account, or a Microsoft 365 or Azure AD group of which the user account is a member, to the SharePoint groups. Once added, the user accounts, either directly or indirectly via membership in a Microsoft 365 or Azure AD group, are assigned the permission level associated with the SharePoint group.
   
 Using the default SharePoint groups as an example:
   
@@ -64,7 +66,7 @@ Using the default SharePoint groups as an example:
     
  **Best practice:** Although you can manage permissions through individual user accounts, we recommend that you use a single Azure AD group, known as an access group, instead. This simplifies the management of permissions through membership in the access group, rather than managing the list of user accounts for each SharePoint group.
   
-Azure AD groups for Microsoft 365 are different than Microsoft 365 groups. Azure AD groups appear in the Microsoft 365 admin center with their **Type** set to **Security** and do not have an email address. Azure AD groups can be managed within:
+Azure AD groups for Microsoft 365 are different tha Microsoft 365 groups. Azure AD groups appear in the Microsoft 365 admin center with their **Type** set to **Security** and do not have an email address. Azure AD groups can be managed within:
   
 - Active Directory Domain Services (AD DS)
     

@@ -22,7 +22,7 @@ description: "Teams will now have access to safe links at the time of your click
 > [!IMPORTANT]
 > This feature is in **Public Preview** for customers in the Microsoft Teams Technology Adoption Program (TAP) as of Feb 28, 2020. This note will be removed from the article when Safe Links for Teams is more widely available.
 
-Microsoft Teams, a Microsoft cloud-based application for managing your work, already uses safe attachments (for Office 365), but it will now have access to safe links at the time of your click. Whether you're using chats 1-on-1 Chats, between Groups, or in Channels, and Tabs, if you have a subscription to Office 365 ATP, you will have the ability to enable and use this safety measure.
+Microsoft Teams, a Microsoft cloud-based application for managing your work, already uses Safe Attachments (for Office 365), but it will now have access to Safe Links at the time of your click. Whether you're using Chats, Group Chats, Channels, or Tabs, if you have a subscription to Office 365 ATP, you will have the ability to enable and use this safety measure. To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Here's how it works: 
 
@@ -45,5 +45,4 @@ If the user who sent the link isn't protected by Office 365 ATP, he or she is fr
 Clicking the *Go Back* button on this page in Teams will close it out (or may result in a blank page users  can close out). However, clicking on the link again will result in reassessment of the reputation of the site so that this page reappears.
 
 > [!NOTE]
->Some Microsoft 365 admins will enable the **Continue Anyway** message on the blocking page. However, if safe links measures the reputation of a site and finds it lacking, no further click-through should be undertaken. It is not recommended that users bypass safety measures. Please weigh this into your considerations before enabling Continue Anyway. 
-
+> Some Microsoft 365 admins will enable the **Continue Anyway** message on the blocking page. However, if Safe Links measures the reputation of a site and finds it lacking, no further click-through should be undertaken. It is not recommended that users bypass safety measures. Please weigh this into your considerations before enabling Continue Anyway. 

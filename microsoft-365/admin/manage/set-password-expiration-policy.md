@@ -24,6 +24,14 @@ description: "Learn how to set a password expiration policy for your organizatio
 
 # Set the password expiration policy for your organization
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 This article is for people who set password expiration policy for a business, school, or nonprofit.  
 
 If you're a user, you don't have the permissions to set your password to never expire. Ask your work or school technical support to do the steps in this article for you.
@@ -62,7 +70,7 @@ Here are some things to know about how this feature currently works as of Januar
     
 ## Prevent last password from being used again
 
-If you want to prevent your users from recycling old passwords, you can do so in Azure AD. See [Set the password expiration policy for your organization](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide).
+If you want to prevent your users from recycling old passwords, you can do so in Azure AD. See [Enforce password history](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
 
 In addition, if an employee used a mobile device to access Microsoft 365, you can wipe it to ensure the password is no longer stored and recycled from there. To learn more, see [Wipe and block a former employee's mobile device](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 

@@ -23,6 +23,14 @@ description: "Learn how to start collecting data for your tenant by using the Mi
 
 # Enable Microsoft 365 usage analytics
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Microsoft 365 usage analytics is also available for Microsoft 365 US Government Community.
   
 ## Steps to enable Microsoft 365 usage analytics
@@ -85,7 +93,7 @@ Tenant level aggregates will be available in all reports. **User-level details w
 
 To make the data that is collected for all reports anonymous, you have to be a global administrator. This will hide identifiable information such as user, group and site names in reports and in the template app .
   
-1. In the admin center, go to the **Settings** \> **Settings**, and under **Services** tab, choose **Reports**.
+1. In the admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
     
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports as well as to the template app.
   

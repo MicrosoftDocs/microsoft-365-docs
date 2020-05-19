@@ -1,5 +1,5 @@
 ---
-title: "Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services"
+title: Meet data protection and regulatory requirements with Compliance Manager for Microsoft cloud services
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -15,16 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: "The Compliance Manager in the Microsoft Service Trust Portal provides tools to track, implement, and manage the controls to help your organization reach compliance with security and data protection industry standards (such as GDPR, ISO 27001 and 27018, and HIPAA) when measured against Microsoft cloud services, such as Office 365 and Microsoft Azure. The Compliance Manager helps the person who oversees the data protection and privacy strategy for your organization manage your compliance and risk assessment process."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Microsoft Compliance Manager (Classic)
 
 > [!NOTE]
-> This documentation describes a legacy product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new  [Microsoft Compliance Score](compliance-score.md).
+> This documentation describes a previous version of this product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new [Microsoft Compliance Score](compliance-score.md).
 
- *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.* 
+ *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
   
-Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure. 
+Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure. 
 
 Compliance Manager:
   
