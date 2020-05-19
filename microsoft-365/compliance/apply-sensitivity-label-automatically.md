@@ -43,7 +43,7 @@ There are two different methods for automatically applying a sensitivity label:
 - **Service-side labeling when content is already saved (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy—currently in preview. 
     
     > [!NOTE]
-    > See the preview announcement, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
+    > See the preview announcement, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) and the webinar [Introduction to SharePoint & OneDrive Auto-Labeling with Sensitivity Labels](https://aka.ms/SPOAutoLabelWebinar-Recording).
     
     This method is referred to as auto classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
     
@@ -127,6 +127,9 @@ Further, you can choose whether a condition must detect all sensitive informatio
 When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
 ![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
+
+> [!CAUTION]
+> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
 For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
@@ -289,5 +292,5 @@ You can also see the results of your auto-labeling policy by using [content expl
 - **Content Explorer Content viewer** lets you see the file's contents.
 
 > [!TIP]
-> You can also use content explorer to identify locations that have unlabeled documents that contain sensitive information. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
+> You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
 

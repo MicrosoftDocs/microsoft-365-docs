@@ -18,7 +18,7 @@ ms.custom:
 description: "Set up a connector to import Twitter data into Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies."
 ---
 
-# Set up a connector to archive Twitter data
+# Set up a connector to archive Twitter data (preview)
 
 Use a connector in the Microsoft 365 compliance center to import and archive data from Twitter to Microsoft 365. After you set up and configure the connector, it connects to your organization's Twitter account (on a scheduled basis), converts the content of an item to an email message format, and then imports those items to a mailbox in Microsoft 365.
 
