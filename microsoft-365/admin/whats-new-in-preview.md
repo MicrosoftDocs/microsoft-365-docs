@@ -139,8 +139,6 @@ Using the Microsoft 365 admin center, you can now customize your organization's 
 
 :::image type="content" source="../media/MAC-WN-CustThemeSP.png" alt-text="Diagram mapping the admin center settings to the mobile app.":::
 
-:::image-end:::
-
 ### Improvements to the "Add a group" wizard
 
 When admins created a new group - and made it a Team at they same time, they could assign owners who don't have a license that includes Teams. And that created some headaches. We've updated the wizard flow to verify that owners have a Teams license and if they don't the option to turn the group into a Team is disabled.
