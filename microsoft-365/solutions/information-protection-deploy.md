@@ -26,7 +26,7 @@ Additional information is also provided on the use of Microsoft identity, device
 
 ## Organization of this guidance material
 
-To help organizations understand the Microsoft 365 tools available to help identify, manage, control and monitor personal data subject to one or more privacy-related regulations, this guidance is organized as follows:
+To help organizations understand the Microsoft 365 tools available to help identify, manage, control, and monitor personal data subject to one or more privacy-related regulations, this guidance is organized as follows:
  
 - **Plan** Assessing data privacy risks, readiness, and the occurrence of target sensitive information types in your environment.
 - **Track** Using Microsoft Compliance Score and Compliance Manager to track and manage improvement actions related to compliance with data privacy regulations.
@@ -62,7 +62,7 @@ For more information, see [Use Compliance Score and Compliance Manager to manage
 
 ## Use identity, device, and threat protection for data privacy regulation
 
-Microsoft 365 provides a number of identity, device and threat protection capabilities that organizations can employ to help comply with data privacy regulatory compliance. 
+Microsoft 365 provides a number of identity, device, and threat protection capabilities that organizations can employ to help comply with data privacy regulatory compliance. 
 
 This article briefly describes what the data privacy regulations generally call for in these areas, as well as provides a listing of related Microsoft 365 solutions, with links to more information to help you address any implementation requirements. 
 

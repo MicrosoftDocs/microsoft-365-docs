@@ -218,11 +218,11 @@ You can also monitor and protect sensitive information in the desktop versions o
 
 ![Supported workloads for DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
-### Example use case for protecting personal data using DLP
+### Example of protecting personal data using DLP
 
 In the use case shown in the diagram below, DLP is used to identify a document or email containing a health record and then automatically blocks access to that document (or blocks the email from being sent) and notifies the recipient with “policy tips”; and an alert is sent to the end-user and admin.
 
-![Example use case for protecting personal data using DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+![Example of protecting personal data using DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
  
 ### Prerequisites for DLP – Planning your DLP scheme relative to other information protection and governance mechanisms in place
 
@@ -265,7 +265,7 @@ The following table lists three configurations of increasing protection using DL
 ![Protection levels for data privacy](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
 >[!Note]
->As the levels of protection increase, the ability of users to share and access information will decrease in some cases, and could potentially impact their productivity or ability to complete day to day tasks.
+>As the levels of protection increase, the ability of users to share and access information will decrease in some cases and could potentially impact their productivity or ability to complete day to day tasks.
 >
 
 Increasing protection levels by implementing policies that impact employees is typically accompanied by end user training, educating users on new security policies and procedures to help them continue to be productive in a more secure environment.
