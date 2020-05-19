@@ -90,7 +90,7 @@ Windows 10 offers three servicing channels:
 
 Microsoft 365 offers four servicing channels:
 
-- [**Office Insider Program**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
+- [**Office Insider Program**](https://products.office.com/office-insider) for organizations to test and provide feedback on the newest Office features and functionalities still in development
 - **Monthly Channel** to provide users with the newest Office features as soon as they're available
 - **Semi-Annual Channel** provides new functionality with new features only twice per year
 - **Semi-Annual Channel (Targeted)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel

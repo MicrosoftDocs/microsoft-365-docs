@@ -90,7 +90,7 @@
           href: deploy-with-existing-infrastructure.md
         - name: Deploy for non-enterprises
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: Deploy workloads and scenarios
+    - name: Deploy workloads
       href: deploy-workloads.md
       items: 
         - name: Microsoft Teams
@@ -101,10 +101,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: Migration
           href: migration-microsoft-365-enterprise-workload.md
-        - name: Empower remote workers
-          href: empower-people-to-work-remotely.md
-        - name: SharePoint sites for highly regulated data
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Test Lab Guides
       href: m365-enterprise-test-lab-guides.md
       items: 
@@ -180,12 +176,6 @@
           href: contoso-info-protect.md
         - name: Security summary
           href: contoso-security-summary.md
-        - name: Team for a top-secret project
-          href: contoso-team-for-top-secret-project.md
-        - name: SharePoint site for highly regulated data
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Changes to Microsoft 365 for enterprise deployment content
-      href: microsoft-365-deploment-guide-changes.md
     - name: Microsoft 365 service health status
       href: microsoft-365-service-health.md
 - name: Desktop Deployment Center
