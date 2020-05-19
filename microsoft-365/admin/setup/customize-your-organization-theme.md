@@ -29,7 +29,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
   
 ## Customize your theme in the admin center
 
-1. In the admin center, go to the **Settings** \> **Settings**, and then choose the **Organization profile** tab.
+1. In the admin center, go to the **Settings** \> **Org Settings**, and then choose the **Organization profile** tab.
 
 2. On the **Organization profile** tab, choose **Custom themes**.
 

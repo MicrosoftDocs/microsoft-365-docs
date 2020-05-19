@@ -39,7 +39,7 @@ This topic describes how to configure the default connection filter policy in th
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/antispam>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
 - You need to be assigned permissions before you can perform these procedures. To modify the default connection filter policy, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to the default connection filter policy, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -85,7 +85,7 @@ This topic describes how to configure the default connection filter policy in th
 
 3. The policy settings are displayed in the drop down that opens.
 
-## Use Exchange Online PowerShell or standalone Exchange Online Protection PowerShell to modify the default connection filter policy
+## Use Exchange Online PowerShell or standalone EOP PowerShell to modify the default connection filter policy
 
 Use the following syntax:
 
@@ -129,7 +129,7 @@ To verify that you've successfully modified the default connection filter policy
 
 - In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-Spam** \> click the drop down next to **Connection filter policy (always ON**), and verify the settings.
 
-- In Exchange Online PowerShell or standalone Exchange Online Protection PowerShell, run the following command and verify the settings:
+- In Exchange Online PowerShell or standalone EOP PowerShell, run the following command and verify the settings:
 
   ```powershell
   Get-HostedConnectionFilterPolicy -Identity Default

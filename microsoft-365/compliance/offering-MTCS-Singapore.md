@@ -41,16 +41,16 @@ Certifications were granted at Level 3 for Microsoft Azure services (IaaS and Pa
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
-- Cloud App Security
+- Microsoft Cloud App Security
 - Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Flow
 - OMS Service Map
 - PowerApps
 - Power BI
-- Stream
+- Microsoft Stream
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## Audits, reports, and certificates

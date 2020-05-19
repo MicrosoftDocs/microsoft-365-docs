@@ -63,8 +63,8 @@ Microsoft 365 comes with five recommended built-in classifiers:
 > [!CAUTION]
 > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
 
-- **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information.
-- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub.
+- **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
+- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub
 
 |language name|||||
 |---------|---------|---------|---------|---------|
@@ -74,10 +74,12 @@ Microsoft 365 comes with five recommended built-in classifiers:
 |Perl     |PHP      |Python   |R        |Ruby     |
 |Scala    |Shell    |Swift    |Tex      |Vim Script|
 
+> [!NOTE]
+> Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
 
-- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
-- **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people.
-- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property.
+- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability
+- **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
+- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 
 These appear in the **Microsoft 365 compliance center** > **Data classification (preview)** > **Trainable classifiers** view with the status of `Ready to use`.
 

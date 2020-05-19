@@ -50,9 +50,9 @@ For more information, see this [overview of security defaults](https://docs.micr
 
 Conditional Access policies are a set of rules that specify the conditions under which sign-ins are evaluated and allowed. For example, you can create a Conditional Access policy that states:
 
-- If the user account name is for a user that is an Exchange, user, password, security, SharePoint, or global administrator, require MFA before allowing access.
+- If the user account name is a member of a group for users that are assigned the Exchange, user, password, security, SharePoint, or global administrator roles, require MFA before allowing access.
 
-This policy is easier than trying to remember to configure individual user accounts for MFA when they are added to or removed from these administrator roles.
+This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they are assigned or unassigned from these administrator roles.
 
 You can also use Conditional Access policies for more advanced capabilities, such as requiring that the sign-in is done from a compliant device, such as your laptop running Windows 10.
 
@@ -60,15 +60,15 @@ Conditional Access requires Azure AD Premium P1, which is included with Microsof
 
 For more information, see this [overview of Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-## Azure AD Identity Protection policies
+## Azure AD Identity Protection support
 
-Azure AD Identity Protection policies are rules that specify the conditions under which sign-ins are evaluated and allowed. For example, you can create an Azure AD Identity Protection policy that states:
+With Azure AD Identity Protection, you can create an additional Conditional Access policy that states:
 
-- If the risk of the sign-in is determined to be medium or high risk, the user must use MFA to sign in.
+- If the risk of the sign-in is determined to be medium or high, require MFA.
 
 Azure AD Identity Protection requires Azure AD Premium P2, which is included with Microsoft 365 E5.
 
-For more information, see this [overview of Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+For more information, see [Risk-based Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
 ## Using these methods together
 
@@ -79,12 +79,12 @@ Keep in mind the following:
 
 If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app. 
 
-This table shows the results of enabling MFA with security defaults, Conditional Access policies, and per-user account settings.
+This table shows the results of enabling MFA with security defaults and Conditional Access policies.
 
-|| Enabled | Disabled | Secondary authentication method |
+|| Enabled | Disabled | Additional authentication method |
 |:-------|:-----|:-------|:-------|
 | **Security defaults**  | Can’t use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
-| **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are not enabled, you can enable security defaults  | User-specified during MFA registration  |
+| **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
 ||||
 
 ## Admin training and technical resources for MFA and identity

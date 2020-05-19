@@ -21,12 +21,12 @@ search.appverid:
 
 # What's coming in Microsoft Secure Score?
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+To make [Microsoft Secure Score](microsoft-secure-score-new.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
 
-To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
+To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)
 
 ## May 2020
 
-### Adding additional Azure Advanced Threat Protection improvement actions to preview
+### Adding additional Azure Advanced Threat Protection improvement actions to the preview release and new iteration
 
 - Enable security features on Active Directory trusts
