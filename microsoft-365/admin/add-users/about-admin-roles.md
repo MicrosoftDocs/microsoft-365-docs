@@ -54,7 +54,7 @@ A user who is assigned an admin role will have the same level of access to cloud
 
 ::: moniker range="o365-worldwide"
 
-In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permission to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
+In the Microsoft 365 admin center, you can go to **Roles**, and then select any role to open its detail pane. Select the **Permissions** tab to view the detailed list of what admins assigned that role have permissions to do. Select the **Assigned** or **Assigned admins** tab to add users to roles.
 
 ::: moniker-end
 
