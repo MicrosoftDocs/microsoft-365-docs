@@ -30,8 +30,8 @@ Microsoft 365 comes with five recommended built-in classifiers:
 > [!CAUTION]
 > We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
 
-- **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information.
-- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub.
+- **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
+- **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub
 
 |language name|||||
 |---------|---------|---------|---------|---------|
@@ -41,9 +41,12 @@ Microsoft 365 comes with five recommended built-in classifiers:
 |Perl     |PHP      |Python   |R        |Ruby     |
 |Scala    |Shell    |Swift    |Tex      |Vim Script|
 
-- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
-- **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people.
-- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property,
+> [!NOTE]
+> Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
+
+- **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability
+- **Profanity**: detects a specific category of offensive language text items that contain expressions that embarrass most people
+- **Threat**: detects a specific category of offensive language text items related to threats to commit violence or do physical harm or damage to a person or property
 
 > [!IMPORTANT]
 > Please note that the offensive language, harassment, profanity, and threat classifiers only work with searchable text are not exhaustive or complete. Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifiers do not address consequences of such language and are not intended to provide your organization's sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier.
