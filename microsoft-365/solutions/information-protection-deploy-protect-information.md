@@ -97,7 +97,7 @@ The following activities are recommended prior to implementing any of the sensit
   - OME
     If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [OME](#office-message-encryption-ome), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
-3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, modern sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security (refer to [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels#sensitivity-labels-and-microsoft-cloud-app-security)]) to achieve your data privacy-related information protection goals. 
+3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, modern sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security (refer to [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)]) to achieve your data privacy-related information protection goals. 
 
 4. Develop a sensitivity label classification and control scheme. A good article to help you with developing a sensitivity labelling classification scheme can be found on the Services Trust Portal is [Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper).
 
