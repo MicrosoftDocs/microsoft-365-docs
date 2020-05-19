@@ -36,23 +36,22 @@ Once you have established the relationship with your customers, you can leverage
 
 
 >[!IMPORTANT]
->The group name must match exactly **Microsoft365Managed_Autopilot** including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot Profile.
+>The Group Name must match exactly **Microsoft365Managed_Autopilot** including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot profile.
 
 >[!NOTE]
-> You should have received this .csv file with your device purchase. If you didn't receive a .csv file, you can create one yourself by following the steps in [Adding devices to Windows Autopilot] (https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). You will notice that the PowerShell Script is different from the one used for the [Microsoft Managed Desktop Admin portal] (https://docs.microsoft.com/en-us/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash). Partners should now start using [Get-WindowsAutoPilotInfo] (https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) moving forward for registering devices for Microsoft Managed Desktop devices in Partner Center.
+> You should have received this .csv file with your device purchase. If you didn't receive a .csv file, you can create one yourself by following the steps in [Adding devices to Windows Autopilot] (https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell). The Windows PowerShell Ssript is different from the one used for the [Microsoft Managed Desktop Admin portal] (https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/register-devices-self?view=o365-worldwide#obtain-the-hardware-hash). Partners should use [Get-WindowsAutoPilotInfo] (https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to register devices for Microsoft Managed Desktop devices in Partner Center.
 
-If you get an error message while trying to upload the .csv file, check the format of the file. You can use the hardware hash only, or the OEM name, serial number, and model (in that column order), or the Windows Product ID. You can also use the sample .csv file provided from the link next to Add devices to create a device list. 
+If you get an error message while trying to upload the .csv file, check the format of the file. You can use the hardware hash only, or the OEM name, serial number, and model (in that column order), or the Windows Product ID. You can also use the sample .csv file provided from the link next to **Add devices** to create a device list. 
 
-For more information about Autopilot in Partner, see Add devices to a [customer’s account] (https://docs.microsoft.com/en-us/partner-center/autopilot#add-devices-to-a-customers-account).
+For more information about Autopilot in Partner scenarios, see [Add devices to a customer’s account] (https://docs.microsoft.com/partner-center/autopilot#add-devices-to-a-customers-account).
 
 
-## Register devices by using OEM API
+## Register devices by using the OEM API
 
-Before completing registration for a customer, you must first an OEM establish a relationship with them Each OEM has a unique link to provide to their respective customers. See [how to establish OEM relationship] (https://docs.microsoft.com/en-us/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
+Before completing registration for a customer, you must first establish a relationship with them. You should have a unique link to provide to your respective customers. See [How to establish OEM relationship] (https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#oem-authorization).
 
-1. OEM establish the relationship with the customer.
-2. Once the relationship is established, OEM can start registering devices for customers leveraging the Group Tag **Microsoft365Managed_Autopilot**.
+Once you've established the relationship, you can start registering devices for customers using the Group Tag **Microsoft365Managed_Autopilot**.
 
 >[!IMPORTANT]
->The group name must match exactly **Microsoft365Managed_Autopilot** including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot Profile.
+>The group name must match exactly **Microsoft365Managed_Autopilot** including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot profile.
 
