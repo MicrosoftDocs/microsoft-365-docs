@@ -1,5 +1,5 @@
 ---
-title: "Add DNS records at your hosting provider"
+title: "Add DNS records to connect your domain"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ description: "Learn to verify your domain and create DNS records at any DNS host
 ms.custom: okr_smb
 ---
 
-# Add DNS records at your hosting provider
+# Add DNS records to connect your domain
 
 If you purchased a domain from a third-party hosting provider, you can connect it to Microsoft 365 by updating the DNS records in your registrar’s account.
 
@@ -56,7 +56,7 @@ In a new browser tab or window, sign in to your DNS hosting provider, and find w
 
 You'll be adding several different types of DNS records depending on the services you want to enable. 
 
-### Add an MX record for email
+### Add an MX record for email (Outlook, Exchange Online)
 **Before you begin:** If users already have email with your domain (such as user@yourdomain.com), create their accounts in the admin center before you set up your MX records. That way, they’ll continue to receive email. When you update your domain's MX record, all new email for anyone who uses your domain will now come to Microsoft 365. Any email you already have will stay at your current email host, unless you decide to [migrate email and contacts to Microsoft 365.](../setup/migrate-email-and-contacts-admin.md)
 
 You'll get the information for the MX record from the admin center domain setup wizard.
@@ -72,7 +72,7 @@ Make sure that the fields are set to the following values:
 
 Save the record, and then remove any other MX records.
 
-### Add multiple CNAME records to connect other services
+### Add CNAME records to connect other services (Teams, Exchange Online, AAD, MDM)
 You'll get the information for the CNAME records from the admin center domain setup wizard.
 
 On your hosting provider's website, add CNAME records for each service that you want to connect.
@@ -84,7 +84,7 @@ Make sure that the fields are set to the following values for each:
 - TTL: `3600‎` (or your provider default)
 
 
-### Add or edit an SPF TXT record to help prevent email spam
+### Add or edit an SPF TXT record to help prevent email spam (Outlook, Exchange Online)
 **Before you begin:** If you already have an SPF record for your domain, don't create a new one for Microsoft 365. Instead, add the required Microsoft 365 values to the current record on your hosting providers website so that you have a *single* SPF record that includes both sets of values.
 
 On your hosting provider's website, edit the existing SPF record or create an SPF record.
@@ -103,7 +103,7 @@ SPF is designed to help prevent spoofing, but there are spoofing techniques that
 
 To get started, see [Use DKIM to validate outbound email sent from your domain in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) and [Use DMARC to validate email in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
 
-### Add SRV records for communications services
+### Add SRV records for communications services (Teams, Skype for Business)
 
 On your hosting provider's website, add SRV records for each service you want to connect.
 Make sure that the fields are set to the following values for each:
