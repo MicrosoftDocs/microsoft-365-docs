@@ -30,7 +30,7 @@ This article helps you increase the protection in your Microsoft 365 subscriptio
 
 Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings and assigns a score. Begin by taking note of your current score. Taking the actions recommended in this article increases your score. The goal isn't to achieve the max score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users. 
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 
 ## Raise the level of protection against malware in mail
@@ -262,7 +262,7 @@ You must be assigned the Audit Logs role in Exchange Online to turn audit log se
 3. On the security and compliance page, choose **Search** and then **Audit log search**.
 1. On the top of the **Audit log search** page, choose **Turn on auditing**.
 
-After the feature is turned on, you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance).
+After the feature is turned on, you can search for files, folders, and many activities. For more information, see [search the audit log](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 ## Tune-up anonymous sharing settings for SharePoint and OneDrive files and folders
 
@@ -276,7 +276,7 @@ To change the sharing settings for OneDrive and SharePoint:
 
 ## Activity alerts
 
-You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](https://docs.microsoft.com/office365/securitycompliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
+You can use activity alerts to track admin and user activities and detect malware and data loss prevention incidents in your organization. Your subscription includes a set of default policies, but you can also create custom ones. For more information, see [alert policies](https://docs.microsoft.com/microsoft-365/compliance/alert-policies). For example, if you store an important file in SharePoint that you don't want anyone to share externally, you can create a notification that alerts you if someone does share it.
 
 The following figure shows the default policies that are included with Microsoft 365. <br/><br/>
     ![Default alert policies included with Microsoft 365](../media/alertpolicies.png)

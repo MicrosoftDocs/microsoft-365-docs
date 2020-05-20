@@ -29,7 +29,7 @@ This method requires human judgment and action. An admin may either use the pre-
 This category of classification mechanisms includes finding content by:
 
 - keywords or metadata values (keyword query language)
-- using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(sensitive information types)](what-the-sensitive-information-types-look-for.md)
+- using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(Sensitive information type entity definitions)](sensitive-information-type-entity-definitions.md)
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md)
 - using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).'
 
@@ -109,10 +109,10 @@ Creating and publishing a trainable classifier for use in compliance solutions, 
 
 ## See also
 
-- [retention labels](labels.md)
-- [retention policies](retention-policies.md)
-- [data loss prevention (DLP)](data-loss-prevention-policies.md)
-- [sensitivity labels](sensitivity-labels.md)
-- [sensitive information types](what-the-sensitive-information-types-look-for.md)
-- [document finger printing](document-fingerprinting.md)
-- [exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Retention labels](labels.md)
+- [Retention policies](retention-policies.md)
+- [Data loss prevention (DLP)](data-loss-prevention-policies.md)
+- [Sensitivity labels](sensitivity-labels.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+- [Document finger printing](document-fingerprinting.md)
+- [Exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
