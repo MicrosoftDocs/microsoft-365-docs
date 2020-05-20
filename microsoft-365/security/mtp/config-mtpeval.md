@@ -232,5 +232,14 @@ Click **Next**.
 16. Scroll down and click **Save preferences** to confirm the new integrations.
 <br>![Image of_Save preferences button that you need to click](../../media/mtp-eval-72.png) <br>
 
+## Turn on Microsoft Threat Protection
+1. Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigate to **Settings** and then select **Microsoft Threat Protection**.
+<br>![Image of_Microsoft Threat Protection option screenshot from the Microsoft 365 Security Center Settings page ](../../media/mtp-eval-72b.png) <br>
+
+2. Select the **Turn on Microsoft Threat Protection** checkbox, then click **Save**.
+<br>![Image of_Microsoft Threat Protection option screenshot from the Microsoft 365 Security Center Settings page ](../../media/mtp-eval-72c.png) <br>
+
+Congratulations! You've just created your Microsoft Threat Protection trial lab environment! You can now simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
+
 ## Next steps
-[Turn on Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-enable?view=o365-worldwide#start-using-the-service) and then [generate a test alert](generate-test-alert.md).
+[Generate a test alert](generate-test-alert.md).
