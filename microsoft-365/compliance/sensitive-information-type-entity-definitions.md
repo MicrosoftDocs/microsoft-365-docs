@@ -565,7 +565,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - 9999999999
 
 ## Austria driver's license number
-This sensitive information type entity is only available in the EU Driver's License Number bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -616,7 +616,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fuhrerschein republik osterreich
 
 ## Austria national identification number
-This sensitive information type entity is only available in the EU National identification number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -661,7 +661,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - personalausweis republik österreich
 
 ## Austria passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitiveinformation type.
+
 ### Format
 
 One letter followed by an optional space and seven digits
@@ -708,7 +709,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - österreichisch reisepass
 
 ## Austria social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -770,7 +771,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - versicherungsnummer
 
 ## Austria tax identification number
-This sensitive information type entity is only available the EU Tax ID number bundle.
+This sensitive information type entity is only available the EU Tax ID number sensitive information type.
 
 ### Format
 
@@ -1308,7 +1309,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 </Entity>
 ```
 ## Belgium driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -1363,8 +1364,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fuehrerschein- Nr
 - fuehrerschein- nr
 
-## Belgium national identification number
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+## Belgium national number
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -1462,7 +1463,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 ## Belgium passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -1505,7 +1506,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - reisepass
 
 ## Belgium social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -1566,7 +1567,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - numéronational#
 
 ## Belgium tax identification number
-This sensitive information type entity is only available the EU Tax Identificaiton Number bundle.
+This sensitive information type entity is only available the EU Tax Identificaiton Number sensitive information type.
 
 ### Format
 
@@ -1864,7 +1865,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Bulgaria driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -1916,7 +1917,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - шофьорска книжка
 
 ## Bulgaria national identification number
-This sensitive information type entity is only available in the EU National identification number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -2006,7 +2007,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - униформгражданскине.#
 
 ## Bulgaria passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -2045,7 +2046,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - номер на паспорта
 
 ## Bulgaria tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -3051,7 +3052,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - no. do cartao 
 
 ## Croatia driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -3101,7 +3102,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vozačka dozvola
 
 ## Croatia identity card number
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 
 ### Format
@@ -3166,7 +3167,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 ## Croatia passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -3256,7 +3257,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - OIB 
 
 ## Croatia social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -3317,7 +3318,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - osobni identifikacijski broj
    
 ## Croatia tax identification number
-This sensitive information type entity is only available in the EU Tax Identificaiton Number bundle.
+This sensitive information type entity is only available in the EU Tax Identificaiton Number sensitive information type.
 
 ### Format
 
@@ -3392,7 +3393,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 ## Cyprus drivers license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -3441,7 +3442,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - άδεια οδήγησης
 
 ## Cyprus national identification number
-This sensitive information type entity is only available in the EU National identification number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -3483,7 +3484,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - ταυτοτητασ
 
 ## Cyprus passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -3524,7 +3525,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - αριθμό διαβατηρίου
 
 ## Cyprus tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -3598,7 +3599,7 @@ Pattern confidenceLevel="75">
 - tax number
 
 ## Czech driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -3654,7 +3655,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - řidičský prúkaz
 
 ## Czech passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -3751,7 +3752,7 @@ The checksum passes.
 
 
 ## Czech social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -3816,7 +3817,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - rodne cislo
 
 ## Czech tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -3893,7 +3894,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tax number
 
 ## Denmark driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -3945,7 +3946,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Denmark passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -3987,7 +3988,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - pasnummer
 
 ## Denmark personal identification number
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -4076,7 +4077,7 @@ The checksum passes.
 - tin no
 
 ## Denmark social security number or equivalent identification
-This sensitive information type entity is only available the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -4135,7 +4136,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - personnummer
 
 ## Denmark tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
+
 ### Format
 
 Ten digits containing a hyphen
@@ -4268,7 +4270,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 None
 
 ## Estonia driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -4321,7 +4323,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - permis de conduire
 
 ## Estonia national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -4401,7 +4403,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 ## Estonia passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -4442,7 +4444,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - eesti kodaniku pass
 
 ## Estonia tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -4871,7 +4873,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - válido hasta 
 
 ## EU driver's license number
-These are the entities in the EU driver's license bundle
+These are the entities in the EU Driver's License Number sensitive information type.
 
 - [Austria](#austria-drivers-license-number) 
 - [Belgium](#belgium-drivers-license-number)
@@ -4903,10 +4905,10 @@ These are the entities in the EU driver's license bundle
 - [U.K.](#uk-drivers-license-number)
 
 ## EU national identification number
-These are the entities in the EU national identification number bundle
+These are the entities in the EU National Identification Number sensitive information type.
 
 - [Austria](#austria-national-identification-number)
-- [Belgium](#belgium-national-identification-number)
+- [Belgium](#belgium-national-number)
 - [Bulgaria](#bulgaria-national-identification-number)
 - [Croatia](#croatia-identity-card-number)
 - [Cyprus](#cyprus-national-identification-number)
@@ -4916,7 +4918,7 @@ These are the entities in the EU national identification number bundle
 - [Finland](#finland-national-identification-number)
 - [France](#france-national-identification-card-cni)
 - [Germany](#germany-identity-card-number)
-- [Greece](#greece-national-identification-card)
+- [Greece](#greece-national-id-card)
 - [Hungary](#hungary-national-identification-number)
 - [Ireland](#ireland-national-identification-number)
 - [Italy](#italy-national-identification-number)
@@ -4925,16 +4927,17 @@ These are the entities in the EU national identification number bundle
 - [Luxemburg](#luxemburg-national-identification-number)
 - [Malta](#malta-national-identification-number)
 - [Netherlands](#netherlands-national-identification-number)
-- [Poland](#poland-national-identification-number-pesel)
+- [Poland](#poland-national-id-pesel)
 - [Portugal](#portugal-citizen-card-number)
 - [Romania](#romania-national-identification-number)
 - [Slovakia](#slovakia-national-identification-number)
 - [Slovenia](#slovenia-national-identification-number)
 - [Spain](#spain-national-identification-number)
+- [U.K.](#uk-national-insurance-number-nino)										
 
 
 ## EU passport number 
-These are the entities in the EU passport number bundle
+These are the entities in the EU passport number sensitive information typeThese are the entities in the EU passport number bundle.
 
 - [Austria](#austria-passport-number)
 - [Belgium](#belgium-passport-number)
@@ -4967,7 +4970,7 @@ These are the entities in the EU passport number bundle
 
 
 ## EU social security number or equivalent identification
-These are the entities that are in the EU Social Security Number or equivalent identification bundle
+These are the entities that are in the EU Social Security Number or equivalent identification sensitive information type.
 
 - [Austria](#austria-social-security-number-or-equivalent-identification)
 - [Belgium](#belgium-social-security-number-or-equivalent-identification)
@@ -4985,7 +4988,7 @@ These are the entities that are in the EU Social Security Number or equivalent i
 
 ## EU Tax identification number
 
-These entities are in the EU Tax identification number bundle
+hese entities are in the EU Tax identification number sensitive information type.
 
 - [Austria](#austria-tax-identification-number)
 - [Belgium](#belgium-tax-identification-number)
@@ -5018,7 +5021,7 @@ These entities are in the EU Tax identification number bundle
 
 
 ## Finland driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -5073,7 +5076,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - ajokortti
 
 ## Finland national identification number
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -5159,7 +5162,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - verotunnus
 
 ## Finland passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 Combination of nine letters and digits
@@ -5192,7 +5195,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passi
 
 ## Finland social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -5265,7 +5268,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - hetu
 
 ## Finland tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -5363,7 +5366,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## France driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is available in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -5413,7 +5416,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - license numbers
 
 ## France national identification card (CNI)
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -5457,7 +5460,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
    
 ## France passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -5515,7 +5518,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
       
 ## France social security number (INSEE) or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is included in the EU Social Security Number and Equivalent ID sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -5591,7 +5594,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - code sécu 
 
 ## France tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -5657,7 +5660,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 ## Germany driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -5800,8 +5803,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - ausstellende behoerde
 
 ## Germany identity card number
-- This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
-- This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
+- This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
+- This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -5858,7 +5861,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Germany passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -5944,7 +5947,7 @@ Reisepass-Nr
 bnationalit.t
 
 ## Germany tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -6014,7 +6017,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - zinnnummer
 
 ## Greece driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -6065,8 +6068,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Adeia odigisis
 
 
-## Greece national identification card
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+## Greece National ID Card
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -6090,7 +6093,7 @@ No
 
 ### Definition
 
-A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The regular expression Regex_greece_id_card finds content that matches the pattern.
 - A keyword from Keyword_greece_id_card is found.
 
@@ -6118,7 +6121,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - ταυτότητας
 
 ## Greece passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -6159,7 +6162,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - διαβατηριο
 
 ## Greece tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -6306,7 +6309,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - 香港特別行政區非永久性居民身分証
    
 ## Hungary driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -6358,7 +6361,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vezetoi engedely
 
 ## Hungary national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -6413,7 +6416,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - személyi igazolvány
 
 ## Hungary passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -6453,7 +6456,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - útlevél száma
 
 ## Hungary social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -6515,7 +6518,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Hungary tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -6919,7 +6922,7 @@ For IPv6, a DLP policy is 95% confident that it's detected this type of sensitiv
 - IP-כתובת ה 
 
 ## Ireland driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -6972,7 +6975,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - ceadúnas tiomána
 
 ## Ireland national identification number
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+This sensitive information type entity is only included in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -7053,7 +7056,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uimhir phearsanta seirbhíse poiblí
 
 ## Ireland passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -7171,7 +7174,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Ireland tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -7333,7 +7336,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - National ID Number
    
 ## Italy driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -7377,7 +7380,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - patente di guida 
 
 ## Italy national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -7461,7 +7464,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 ## Italy passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -7510,7 +7513,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - numéro passeport
 
 ## Italy tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -7951,7 +7954,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 社会保険番号 
 
 ## Latvia driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -8004,7 +8007,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - autovadītāja apliecība
 
 ## Latvia national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -8113,7 +8116,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - voter’s number
 
 ## Latvia passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -8157,7 +8160,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - pase numurs    
 
 ## Latvia tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -8265,7 +8268,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - voter’s number
 
 ## Lithuania driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -8315,7 +8318,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vairuotojo pažymėjimas
 
 ## Lithuania national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -8396,7 +8399,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueidentityno#
 
 ## Lithuania passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -8437,7 +8440,7 @@ passport no
 paso numeris
 
 ## Lithuania tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -8512,7 +8515,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueidentityno#
 
 ## Luxemburg driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+his sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -8562,7 +8565,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - fahrerlaubnis
 
 ## Luxemburg national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -8623,7 +8626,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueidkey#
 
 ## Luxemburg passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -8664,7 +8667,7 @@ passport no
 passnummer
 
 ## Luxemburg tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -8815,7 +8818,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - personal identification card
 
 ## Malta driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -8871,7 +8874,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - liċenzja tas-sewqan
 
 ## Malta national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -8933,7 +8936,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 
 ## Malta passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -8974,7 +8977,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - numru tal-passaport
 
 ## Malta tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -9057,7 +9060,6 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 - uniqueidentityno#
 
 ## Netherlands citizen's service (BSN) number
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -9098,16 +9100,31 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 ### Keywords
 
 #### Keyword_netherlands_bsn
-
-- Citizen service number 
-- BSN 
-- Burgerservicenummer 
-- Sofinummer 
-- Persoonsgebonden nummer 
-- Persoonsnummer    
+  
+- bsn#
+- bsn
+- burgerservicenummer
+- citizen service number
+- person number
+- personal number
+- personal numeric code
+- person-related number
+- persoonlijk nummer
+- persoonlijke numerieke code
+- persoonsgebonden
+- persoonsnummer
+- sociaal-fiscaal nummer
+- social-fiscal number
+- sofi
+- sofinummer
+- uniek identificatienummer
+- uniek identiteitsnummer
+- unique identification number
+- unique identity number
+- uniqueidentityno#
 
 ## Netherlands driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -9159,7 +9176,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - rijbewijsnummer
 
 ## Netherlands national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -9224,7 +9241,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueidentityno#
 
 ## Netherlands passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -9268,7 +9285,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - paspoortnummer
 
 ## Netherlands tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -9485,7 +9502,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Pinag-isang Multi-Layunin ID
 
 ## Poland driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -9584,8 +9601,8 @@ The checksum passes.
 - dow. os.
 
    
-## Poland national identification number (PESEL)
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+## Poland National ID (PESEL)
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -9620,18 +9637,19 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 #### Keyword_pesel_identification_number
 
-- Nazwa i nr dowodu tożsamości
-- Dowód Tożsamości
-- dow. os.
-- Dowód osobisty
-- Numer dowodu osobistego
-- Nazwa i numer dowodu osobistego
-- Nazwa i nr dowodu osobistego
-
+- dowód osobisty
+- dowódosobisty
+- niepowtarzalny numer
+- niepowtarzalnynumer
+- nr.-pesel
+- nr-pesel
+- numer identyfikacyjny
+- pesel
+- tożsamości narodowej
 
    
 ## Poland passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -9672,7 +9690,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - Paszport
 
 ## Poland tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -9744,8 +9762,8 @@ nip#
    
 
 ## Portugal citizen card number
-- This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
-- This sensitive information type entity is included in the EU Social Security Number or Equivalent ID bundle.
+- This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
+- This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type.
 
 
 ### Format
@@ -9800,7 +9818,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 
 
 ## Portugal driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -9856,7 +9874,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - carteira de motorista
 
 ## Portugal passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -9900,7 +9918,7 @@ passport no
 número do passaporte
 
 ## Portugal tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -9967,7 +9985,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Romania driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -10020,7 +10038,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - permis de conducere
 
 ## Romania national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -10112,7 +10130,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueidentityno
 
 ## Romania passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -10153,7 +10171,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - numărul pașaportului
 
 ## Romania tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -10239,7 +10257,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 
-## Saudi Arabia national identification number
+## Saudi Arabia National ID
 
 ### Format
 
@@ -10336,7 +10354,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 身份證 
 
 ## Slovakia driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -10389,7 +10407,7 @@ dlno#
 vodičský preukaz
 
 ## Slovakia national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -10477,7 +10495,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - tin#
 
 ## Slovakia passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -10518,7 +10536,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - číslo pasu
 
 ## Slovakia tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -10600,7 +10618,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Slovenia driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -10650,7 +10668,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - vozniško dovoljenje
 
 ## Slovenia national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -10724,7 +10742,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueidentityno#
 
 ## Slovenia passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -10769,7 +10787,7 @@ passport no
 številka potnega lista
 
 ## Slovenia tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -10934,7 +10952,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - 주민등록번호
 
 ## Spain driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -11008,7 +11026,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - carnet conducir
 
 ## Spain national identification number
-This sensitive information type entity is only available in the EU National Identification Number bundle.
+This sensitive information type entity is only available in the EU National Identification Number sensitive information type.
 
 ### Format
 
@@ -11070,7 +11088,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - uniqueid#
 
 ## Spain passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is only available in the EU Passport Number sensitive information type.
 
 ### Format
 
@@ -11121,7 +11139,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 
 ## Spain social security number (SSN)
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is included in the EU Social Security Number or Equivalent ID sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -11160,7 +11178,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 None
 
 ## Spain tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -11271,7 +11289,7 @@ The string "User Id", "User ID", "uid", or "UserId" followed by the characters a
 - Any combination of between 1-200 lower- or uppercase letters, digits, symbols, special characters, or spaces
 - The string "Password" or "pwd" where "pwd" is not preceded by a lowercase letter
 - An equal sign (=)
-- Any character that is not a dollar sign ($), percent symbol (%), greater than symbol (>), at symbol (@), quotation mark ("), semicolon (;), left brace ([), or left bracket ({)
+- Any character that is not a dollar sign ($), percent symbol (%), greater than symbol (>), at symbol (@), quotation mark ("), semicolon (;), left brace([), or left bracket ({)
 - Any combination of 7-128 characters that are not a semicolon (;), forward slash (/), or quotation mark (")
 - A semicolon (;) or quotation mark (")
 
@@ -11337,7 +11355,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - s-int.<!--no-hyperlink-->net
 
 ## Sweden driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle
+This sensitive information type entity is only available in the EU Driver's License Number sensitive information type.
 
 ### Format
 
@@ -11390,8 +11408,8 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - dlno#
 - körkort
 
-## Sweden national identification number
-This sensitive information type entity is included in the EU National identification number bundle and is available as a stand alone sensitive information type entity.
+## Sweden National ID
+This sensitive information type entity is included in the EU National Identification Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -11429,7 +11447,8 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 No
    
 ## Sweden passport number
-This sensitive information type entity is only available in the EU Passport Number bundle.
+This sensitive information type entity is included in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
+
 ### Format
 
 Eight digits
@@ -11499,7 +11518,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeportn ° 
 
 ## Sweden social security number or equivalent identification
-This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID bundle.
+This sensitive information type entity is only available in the EU Social Security Number or Equivalent ID sensitive information type.
 
 ### Format
 
@@ -11562,7 +11581,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - identifikationsnumret#
 
 ## Sweden tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 ### Format
 
@@ -11951,7 +11970,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Vatandaşlık no
 
 ## U.K. driver's license number
-This sensitive information type entity is only available in the EU Driver's License bundle.
+This sensitive information type entity is included in the EU Driver's License Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -12117,6 +12136,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - Birth Date 
    
 ## U.K. national insurance number (NINO)
+This sensitive information type entity is included in the EU National Identificaiton Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -12192,7 +12212,7 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - insurance
     
 ## U.K. tax identification number
-This sensitive information type entity is only available in the EU Tax Identification Number bundle.
+This sensitive information type entity is only available in the EU Tax Identification Number sensitive information type.
 
 
 ### Format
@@ -12633,7 +12653,7 @@ A DLP policy is 55% confident that it's detected this type of sensitive informat
 - SSID 
    
 ## U.S. / U.K. passport number
-The U.K. passport number sensitive information type entity is only available in the EU Passport Number bundle.
+The U.K. passport number sensitive information type entity is available in the EU Passport Number sensitive information type and is available as a stand alone sensitive information type entity.
 
 ### Format
 
@@ -12684,4 +12704,3 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeport# 
 - PasseportNon 
 - Passeportn ° 
-   
