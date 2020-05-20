@@ -18,16 +18,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
-description: "Learn to configure Focused Inbox for all or specific users of your organization. "
+ms.custom: seo-marvel-may2020
+description: Learn how to bulk turn off Focused Inbox or customize it for everyone or specific users within your organization.
 ---
 
 # Configure Focused Inbox for everyone in your organization
 
-  If you're responsible for configuring how email works for EVERYONE in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).  <br/> If you would like to turn off Focused Inbox for just yourself, please see [Turn off Focused Inbox](https://support.office.com/article/f714d94d-9e63-4217-9ccb-6cb2986aa1b2.aspx).  
+  If you're responsible for configuring how email works for EVERYONE in a business this article is for you! It explains how to bulk turn off Focused Inbox or customize it for your business, and answers [frequently asked questions](#faq-for-focused-inbox).  <br/> If you would like to turn off Focused Inbox for just yourself, please see [Turn off Focused Inbox](https://support.office.com/article/f714d94d-9e63-4217-9ccb-6cb2986aa1b2.aspx).  
    
 If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
   
-## Turn Focused Inbox On or Off in your organization
+## Bulk turn Focused Inbox off or on in your organization
 
 You use PowerShell to turn Focused Inbox on or off for everyone in your organization. Do you want to do this in the Microsoft 365 admin center? Let our Engineering team know. **[Vote here!](https://go.microsoft.com/fwlink/?linkid=862489)**
   
