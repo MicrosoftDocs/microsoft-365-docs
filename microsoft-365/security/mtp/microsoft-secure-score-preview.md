@@ -97,7 +97,7 @@ To help you the information you need more quickly, Microsoft improvement actions
 * Infrastructure (no improvement actions for now)
 
 >[!NOTE]
->In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score. [View details](microsoft-secure-score-preview.md#incompatibility-with-identity-secure-score)
+>In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-preview.md#incompatibility-with-identity-secure-score)
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
@@ -174,9 +174,11 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 To make Microsoft Secure Score a better representative of your security posture, we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md).
 
-### Incompatibility with  Identity Secure Score
+### Incompatibility with  Identity Secure Score and Graph API
 
-In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates make Microsoft Secure Score temporarily incompatible with Identity Secure Score. In time Identity Secure Score will adopt the new scoring model. Until then, customers that use both Microsoft Secure Score and Identity Secure Score will see differences in the scores reported by the two dashboards. We apologize for any inconvenience this causes, and are working to ensure these two experiences are more compatible in the future.
+In the recent release of Microsoft Secure Score, an improved scoring model has been released. These changes allow for a more flexible and accurate view of your security posture. However, these updates have made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API.
+
+In time, Identity Secure Score and the Graph API will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score, Identity Secure Score, and the Graph API. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
 
 ### April 2020
 
