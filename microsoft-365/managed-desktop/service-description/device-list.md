@@ -55,6 +55,14 @@ The links to devices here are for your reference only. If you want to order devi
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
 | **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 
+Some end user workloads require a 2.0 GHZ or greater processor for a good experinece. 
+
+Specifically:
+- Teams Video Conferencing (Refer to [Teams guidance](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fmicrosoftteams%2Fhardware-requirements-for-the-teams-app&data=04%7C01%7CVinnie.Flynt%40microsoft.com%7C7d32e06933a64884b26208d7fc2fbb40%7C72f988bf86f141af91ab2d7cd011db47%7C0%7C0%7C637255154269332083%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C-1&sdata=aWixRwsZ4TngBDkCiBQ4mEqdg71MVzsowePlIVA5JB0%3D&reserved=0))
+-	Multiple concurrent user workloads 
+- Multiple screen support
+
+Some devices may not meet these needs, and will experience poor performance. 
 
 
 In addition, the device must also meet these criteria:     
