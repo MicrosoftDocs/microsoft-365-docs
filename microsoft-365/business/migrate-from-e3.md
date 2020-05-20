@@ -72,6 +72,7 @@ You don't need to do any changes to your current subscription or data before mig
 - Subscription configuration, such as DNS records and domain names.
 - User and group accounts and authentication settings, such as multi factor authentication or conditional access policies.
 - Productivity service configurations and their data, such as Teams, Exchange Online mailboxes, SharePoint Online sites, OneDrive for Business folders, and OneNote notebooks.
+- Office Applications will scale automatically.  Office 365 modern licensing will check the user’s license assignment every 72 hours and will convert Office apps to the version that matches the user subscription.
 
 ### Windows 10
 
