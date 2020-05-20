@@ -15,7 +15,9 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-description: "You can use the audit log search tool to help you troubleshoot common issues such as investigating a compromised account, finding out who set up email forwarding for a mailbox, or determining why an external user successfully logged in to your organization."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to use the Office 365 audit log search tool to help troubleshoot common support issues for email accounts."
 ---
 
 # Search the audit log to investigate common support issues

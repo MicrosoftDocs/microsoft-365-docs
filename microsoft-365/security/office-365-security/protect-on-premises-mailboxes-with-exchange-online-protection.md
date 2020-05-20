@@ -1,11 +1,11 @@
 ---
-title: "Protect on-premises mailboxes with Exchange Online Protection"
+title: Protect on-premises mailboxes in China with standalone EOP
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 6/1/2017
+ms.date:
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,10 +18,12 @@ search.appverid:
 ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
-description: "Even if you plan to host some or all of your mailboxes on-premises, you can still protect the mailboxes with Exchange Online Protection (EOP). To configure connectors, your account must be a global admin, or an Exchange Company Administrator (the Organization Management role group). For information about how Office 365 permissions relate to Exchange permissions, see Assigning admin roles in Office 365 operated by 21Vianet. If all of your Exchange mailboxes are on-premise, follow these steps to set up your EOP service."
+ms.custom:
+- seo-marvel-apr2020
+description: "Admins in China using Office 365 operated by 21Vianet can learn how to use standalone Exchange Online Protection (EOP) to protect their on-premises mailboxes."
 ---
 
-# Protect on-premises mailboxes with Exchange Online Protection
+# Protect on-premises mailboxes in China with standalone EOP
 
 > [!NOTE]
 > This article applies only to Office 365 operated by 21Vianet in China.
@@ -58,7 +60,7 @@ After you configured connectors, wait 72 hours to allow propagation of your DNS-
 
 ## Step 5: Ensure that spam is routed to each user's Junk Email folder
 
-To ensure that spam (junk) email is routed correctly to each user's Junk Email folder, you must perform a couple of configuration steps. The steps are provided in [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). If you don't want to move messages to each user's Junk Email folder, you may choose another action by editing your content filter policies in the Exchange admin center. For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+To ensure that spam (junk) email is routed correctly to each user's Junk Email folder, you must perform a couple of configuration steps. The steps are provided in [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). If you don't want to move messages to each user's Junk Email folder, you may choose another action by editing your anti-spam policies (also known as content filter policies). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
 ## Step 6: Use the Microsoft 365 admin center to point your MX record to EOP
 

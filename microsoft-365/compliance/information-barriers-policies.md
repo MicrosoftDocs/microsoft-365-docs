@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Learn how to define policies for information barriers in Microsoft Teams."
+description: Learn how to define policies for information barriers in Microsoft Teams.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Define information barrier policies
@@ -66,7 +67,7 @@ In addition to the [required licenses and permissions](information-barriers.md#r
 
 - No address book policies -  Before you define and apply information barrier policies, make sure no Exchange address book policies are in place. Information barriers are based on address book policies, but the two kinds of policies are not compatible. If you do have such policies, make sure to [remove your address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/remove-an-address-book-policy) first. Once information barrier policies are enabled and you have hierarchical address book enabled, all users ***who are not included*** in an information barrier segment will see the [hierarchical address book](https://docs.microsoft.com/exchange/address-books/hierarchical-address-books/hierarchical-address-books) in Exchange online.
 
-- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the AzureRM module.
+- PowerShell -  Currently, information barrier policies are defined and managed in the Office 365 Security & Compliance Center using PowerShell cmdlets. Although several examples are provided in this article, you'll need to be familiar with PowerShell cmdlets and parameters. You will also need the Azure PowerShell module.
     - [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     - [Install the Azure PowerShell module](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-2.3.2)
 
@@ -75,10 +76,10 @@ In addition to the [required licenses and permissions](information-barriers.md#r
    1. Run the following PowerShell cmdlets:
 
       ```powershell
-      Login-AzureRmAccount 
+      Login-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
-      $sp=Get-AzureRmADServicePrincipal -ServicePrincipalName $appId
-      if ($sp -eq $null) { New-AzureRmADServicePrincipal -ApplicationId $appId }
+      $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
+      if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
@@ -207,13 +208,13 @@ For example, suppose you want to block communications between Segment A and Segm
 
     |Syntax  |Example  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR" -State Inactive` <p>    In this example, we defined a policy called *Manufacturing-HR* for a segment called *Manufacturing*. When active and applied, this policy allows people in *Manufacturing* to communicate only with people in a segment called *HR*. (In this case, *Manufacturing* cannot communicate with users who are not part of *HR*.)         |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name","segment1name"`     |`New-InformationBarrierPolicy -Name "Manufacturing-HR" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>    In this example, we defined a policy called *Manufacturing-HR* for a segment called *Manufacturing*. When active and applied, this policy allows people in *Manufacturing* to communicate only with people in a segment called *HR*. (In this case, *Manufacturing* cannot communicate with users who are not part of *HR*.)         |
 
     **If needed, you can specify multiple segments with this cmdlet, as shown in the following example.**
 
     |Syntax  |Example  |
     |---------|---------|
-    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing" -State Inactive` <p>In this example, we defined a policy that allows the *Research* segment to communicate with only *HR* and *Manufacturing*.        |
+    |`New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"`     |`New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p>In this example, we defined a policy that allows the *Research* segment to communicate with only *HR* and *Manufacturing*.        |
 
     Repeat this step for each policy you want to define to allow specific segments to communicate with only certain other specific segments.
 
@@ -315,7 +316,7 @@ Contoso defines three polices, as described in the following table:
 |---------|---------|
 |Policy 1: Prevent Sales from communicating with Research     | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In this example, the information barrier policy is called *Sales-Research*. When this policy is active and applied, it will help prevent users who are in the Sales segment from communicating with users in the Research segment. This is a one-way policy; it won't prevent Research from communicating with Sales. For that, Policy 2 is needed.      |
 |Policy 2: Prevent Research from communicating with Sales     | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In this example, the information barrier policy is called *Research-Sales*. When this policy is active and applied, it will help prevent users who are in the Research segment from communicating with users in the Sales segment.       |
-|Policy 3: Allow Manufacturing to communicate with HR and Marketing only     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing" -State Inactive` <p>In this case, the information barrier policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. Note that HR and Marketing are not restricted from communicating with other segments. |
+|Policy 3: Allow Manufacturing to communicate with HR and Marketing only     | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p>In this case, the information barrier policy is called *Manufacturing-HRMarketing*. When this policy is active and applied, Manufacturing can communicate only with HR and Marketing. Note that HR and Marketing are not restricted from communicating with other segments. |
 
 With segments and policies defined, Contoso applies the policies by running the **Start-InformationBarrierPoliciesApplication** cmdlet. 
 

@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Import non-Microsoft 365 data to a review set in an Advanced eDiscovery case."
+description: Learn how to import non-Microsoft 365 data to a review set for analysis in an Advanced eDiscovery case.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Load non-Microsoft 365 data into a review set

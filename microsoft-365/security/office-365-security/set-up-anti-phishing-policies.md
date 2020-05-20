@@ -13,12 +13,14 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: "Learn about the basic anti-phishing policy in Exchange Online Protection (EOP) and the advanced ATP anti-phishing policies in Office 365 Advanced Threat Protection."
+ms.custom:
+- seo-marvel-apr2020
+description: "Admins can learn about the anti-phishing policies that are available in Exchange Online Protection (EOP) and Office 365 Advanced Threat Protection (Office 365 ATP)."
 ---
 
 # Anti-phishing policies in Microsoft 365
 
-Policies to configure anti-phishing protection settings are available in Microsoft 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (ATP) organizations.
+Policies to configure anti-phishing protection settings are available in Microsoft 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (Office 365 ATP) organizations.
 
 ATP anti-phishing policies are only available in organizations that have Office 365 ATP. For example:
 
@@ -178,7 +180,7 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
 ### Advanced phishing thresholds in ATP anti-phishing policies
 
-The following advanced phishing thresholds are only available in ATP anti-phishing policies to specify how to treat detected phishing messages:
+The following advanced phishing thresholds are only available in ATP anti-phishing policies to control the sensitivity for applying machine learning models to messages for determining a phishing verdict:
 
 - **1 - Standard**: This is the default value. The severity of the action that's taken on the message depends on the degree of confidence that the message is phishing (low, medium, high, or very high confidence). For example, messages that are identified as phishing with a very high degree of confidence have the most severe actions applied, while messages that are identified as phishing with a low degree of confidence have less severe actions applied.
 

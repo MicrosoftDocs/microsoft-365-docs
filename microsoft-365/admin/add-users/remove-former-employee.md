@@ -27,6 +27,14 @@ description: "Follow this checklist to remove an employee from Microsoft 365 and
 ---
 
 # Remove a former employee
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
 ## Sign out now!
 
@@ -123,7 +131,7 @@ There are two ways you can save the contents of the former employee's mailbox:
     
     Inactive mailboxes can't receive email and aren't displayed in your organization's shared address book or other lists.
     
-    To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+    To learn how to place a hold on a mailbox, see [Manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
     
 ## Forward a former employee's email to another employee or convert to a shared mailbox
 <a name="bkmk_forward"> </a>
@@ -313,7 +321,7 @@ When you remove the license, all that user's data is held for 30 days. You can [
 
 
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 
 ::: moniker-end

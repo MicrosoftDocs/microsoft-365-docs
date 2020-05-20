@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: "Admins can learn about the available options in Microsoft 365 and EOP to block inbound messages."
+description: "Admins can learn about the available and preferred options to block inbound messages in Exchange Online Protection (EOP)."
 ---
 
-# Create blocked sender lists
+# Create blocked sender lists in EOP
 
-If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. These options include Outlook Blocked Senders, blocked sender lists or blocked domain lists in anti-spam policies, Exchange mail flow rules (also known as transport rules), and the IP Block List (connection filtering). Collectively, you can think of these options as _blocked sender lists_.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP offers multiple ways of blocking email from unwanted senders. These options include Outlook Blocked Senders, blocked sender lists or blocked domain lists in anti-spam policies, Exchange mail flow rules (also known as transport rules), and the IP Block List (connection filtering). Collectively, you can think of these options as _blocked sender lists_.
 
 The best method to block senders varies on the scope of impact. For a single user, the right solution could be Outlook Blocked Senders. For many users, one of the other options would be more appropriate. The following options are ranked by both impact scope and breadth. The list goes from narrow to broad, but *read the specifics* for full recommendations.
 

@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
-description: "Administrators can import third-party data from  social media platforms, instant messaging platforms, and document collaboration platforms to mailboxes in your Microsoft 365 organization. This lets you archive data from Facebook, Twitter, and other third-party data sources in Microsoft 365. Then you can use and apply Microsoft 365 compliance features (such as legal hold, eDiscovery, In-Place Archiving, and retention policies) for third-party data."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how to import third-party data from  social media platforms, instant messaging platforms, and document collaboration platforms to Microsoft 365 mailboxes."
 ---
 
 # Archive third-party data
@@ -40,14 +42,14 @@ There are two ways to import and archive third-party data in Microsoft 365:
 
 - **Use a third-party data connector in the Security & Compliance Center:** Use a custom data connector that's available in the Microsoft 365 compliance center. After you set up and configure the connector, it connects to the third-party data source, converts the content of an item to an email message format, and then imports the item to a mailbox in Microsoft 365. Currently, you can implement connectors to import and archive data from Facebook Business pages, corporate Twitter accounts, LinkedIn, Instant Bloomberg, and your organization's human resources (HR) data. For the step-by-step instructions to set up one of these connectors, see:
 
-   - **Facebook:** [Use a connector to archive Facebook data](archive-facebook-data-with-sample-connector.md)
+   - **Facebook:** [Use a connector to archive Facebook data (preview)](archive-facebook-data-with-sample-connector.md)
 
-   - **Twitter:** [Use a connector to archive Twitter data](archive-twitter-data-with-sample-connector.md)
+   - **Twitter:** [Use a connector to archive Twitter data (preview)](archive-twitter-data-with-sample-connector.md)
 
    - **LinkedIn:** [Set up a connector to archive LinkedIn data](archive-linkedin-data.md)
 
    - **Instant Bloomberg:** [Set up a connector to archive Instant Bloomberg data](archive-instant-bloomberg-data.md)
 
-   - **HR data:** [Set up a connector to import HR data](import-hr-data.md)
+   - **HR data:** [Set up a connector to import HR data (preview)](import-hr-data.md)
 
 - **Work with a Microsoft partner:** Your organization works with a Microsoft Partner who will provide a custom connector that will be configured to extract items from the third-party data source on a regular basis and then connect to the Microsoft cloud by a third-party API and import those items to Microsoft 365. The partner connector also converts the content of an item from the third-party data source to an email message and then imports it to a mailbox in Microsoft 365. For a list of partners that you can work with and the step-by-step process for this method, see [Work with a partner to archive third-party data in Microsoft 365](work-with-partner-to-archive-third-party-data.md).

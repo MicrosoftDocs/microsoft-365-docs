@@ -25,6 +25,14 @@ description: "Learn how to cancel your Microsoft 365 for business trial or paid 
 
 # Cancel your subscription
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 *Eligibility:* If you have fewer than 25 licenses assigned to users, you can cancel your Microsoft 365 for business trial or paid subscription online in the Microsoft 365 admin center at any time. If you have more than 25 licenses assigned to users, [call support to cancel your subscription](../../admin/contact-support-for-business-products.md).
 
 *Refund:* Any prorated credit will be returned to you within the next billing cycle.
@@ -38,7 +46,7 @@ If you added your own domain name to use with your subscription, you must remove
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to cancel, and under **Settings & Actions**, select **Cancel subscription**.
 

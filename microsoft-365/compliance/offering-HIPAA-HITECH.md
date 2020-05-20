@@ -49,12 +49,12 @@ To learn how the Microsoft Cloud helps customers support HIPAA and the HITECH re
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Microsoft Health Bot Service
+- Microsoft Cloud App Security
+- Microsoft Microsoft Healthcare Bot Service
 - Microsoft Stream
 - Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for medium business and enterprise customers of Microsoft 365 for business
 - [Dynamics 365 and Dynamics 365 U.S. Government](https://aka.ms/d365-compliance-list)
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Intune
 - [Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
@@ -110,7 +110,3 @@ To assist customers with this task, Microsoft has published these guides:
 - [Understanding HIPAA Compliance with Azure](https://www.youtube.com/embed/6ptdye1LZ5k?autoplay=0)(May 19, 2016)
 - [Azure HIPAA implementation guidance](https://aka.ms/azure-hipaa-guide)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/6/B/46BB3C98-AE2B-42C1-A2CD-F7C0040FB6B8/HIPAA_Compliance_Backgrounder.pdf).

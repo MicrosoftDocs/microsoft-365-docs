@@ -30,6 +30,7 @@ Microsoft Threat Protection operates in Microsoft Azure data centers in the Euro
 
 Customer data in pseudonymized form might also be stored in central storage and processing systems in the United States.
 
+
 For more information on the data storage and privacy information of the specific products see:
 - [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Cloud App Security data security and privacy](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)

@@ -9,9 +9,11 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-ms.service: O365-seccomp
+- M365solutions
+ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: "Learn how Microsoft 365 helps energy organizations move to a modern collaboration platform, while helping keep data and systems secure and compliant with regulations"
+ms.custom: 
 ---
 
 # Key Compliance and Security Considerations for the Energy Industry
@@ -193,7 +195,7 @@ With many communication channels available to employees, organizations increasin
 
 Communication Compliance can monitor multiple communication channels and use machine learning models to identify potential policy violations, including Office 365 email, Microsoft Teams, Skype for Business Online, Facebook, Twitter and Bloomberg instant messages. Communication Compliance helps compliance teams effectively and efficiently review messages for potential violations of:
 - Corporate Policies, such as acceptable use, ethical standards, and corporate specific policies 
-- Confidentiality or confidential business disclosures, such as unauthorized communications about confidential projects like upcoming acquisitions, mergers, earnings disclosures, reorganizations, or leadership team changes
+- sensitiveity or sensitive business disclosures, such as unauthorized communications about sensitive projects like upcoming acquisitions, mergers, earnings disclosures, reorganizations, or leadership team changes
 - Regulatory compliance requirements, such as employee communications regarding the types of businesses or transactions in which an organization engages in compliance with FERC regulations for energy markets
 
 Communication Compliance provides built-in threat, harassment, and profanity classifiers to help reduce false positives when reviewing communications. This saves reviewers time during the investigation and remediation process. It helps reviewers focus on specific messages within long threads that have been highlighted by policy alerts. This helps compliance teams more quickly identify and remediate risks. It provides compliance teams with the ability to easily configure and fine-tune policies, adjusting the solution to the organization's specific needs and reducing false positives. Communication Compliance can also track user behavior over time, highlighting potential patterns in risky behavior or policy violations. Finally, it provides flexible built-in remediation workflows so that reviewers can quickly take action and escalate to legal or human resources teams according to defined corporate processes.
