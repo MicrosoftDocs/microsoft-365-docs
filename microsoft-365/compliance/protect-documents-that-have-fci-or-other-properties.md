@@ -144,4 +144,4 @@ For more information, see [Manually request crawling and re-indexing of a site, 
     
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
     
-- [Sensitive information types inventory](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
