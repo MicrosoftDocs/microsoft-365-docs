@@ -664,6 +664,36 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/what-the-sensitive-information-types-look-for.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-driver-s-license-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-national-identification-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-passport-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-social-security-number-or-equivalent-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-tax-identification-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "./office-365-security/messaging-policy-and-compliance-in-eop.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/auditing-reports-in-eop",
       "redirect_document_id": true
