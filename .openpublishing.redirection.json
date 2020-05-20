@@ -310,6 +310,26 @@
       "redirect_document_id": true
     },  
     {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-configassessment-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-secureconfigkb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-softwareinventory-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-softwarevulnerability-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+      "redirect_document_id": true
+    }, 
+    {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-accountinfo-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-identityinfo-table",
       "redirect_document_id": true

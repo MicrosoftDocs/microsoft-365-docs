@@ -153,13 +153,13 @@
                     - name: DeviceRegistryEvents
                       href: mtp/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
-                      href: mtp/advanced-hunting-tvm-configassessment-table.md
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
-                      href: mtp/advanced-hunting-tvm-secureconfigkb-table.md
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
                     - name: DeviceTvmSoftwareInventoryVulnerabilities
-                      href: mtp/advanced-hunting-tvm-softwareinventory-table.md
+                      href: mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
+                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
                       href: mtp/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
