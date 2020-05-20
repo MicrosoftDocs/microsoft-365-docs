@@ -47,7 +47,7 @@ If you want to encrypt a message that doesn't meet a pre-defined rule or your ad
 
 ## Admin settings
 
-You can learn all about setting up email encryption at [Email encryption in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+You can learn all about setting up email encryption at [Email encryption in Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### Automatically encrypt email messages
 
@@ -59,9 +59,9 @@ You create mail flow rules to encrypt email messages with the new Office 365 Mes
 2. Choose the Admin tile. 
 3. In the admin center, choose **Admin centers > Exchange**. 
 
-For more information, see [Define mail flow rules to encrypt email messages in Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+For more information, see [Define mail flow rules to encrypt email messages in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### Brand your encryption messages
 
-You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
