@@ -20,11 +20,13 @@ description: "Learn how to use the workflow tools in Microsoft Compliance Score 
 
 This article explains how to work with the key elements of Compliance Score. You'll learn how to use **improvement actions** to manage your compliance workflow. You'll also learn how to use the information on your **Solutions** and **Assessments** pages, and how to produce reports.
 
-## Manage your workflow with improvement actions
+## Improvement actions page
+
+### Manage your workflow with improvement actions
 
 **Improvement actions** centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
-## View your improvement actions
+### View your improvement actions
 
 The Compliance Score dashboard shows your **key improvement actions**—the ones with the most available points that address the most important issues.
 
@@ -51,7 +53,7 @@ The improvement actions page shows the following data points for each improvemen
     - **Passed** - implementation successfully tested
 - **Pointed achieved**: shows points achieved out of the maximum that could be earned
 
-### Improvement actions details
+#### Improvement actions details
 
 Each improvement action has a details page. This page has detailed implementation instructions for completing recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header.
 
@@ -64,7 +66,7 @@ To view an improvement action's details page:
 
 You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the improvement actions page, moving up or down will take you to the next item within that filtered list.
 
-## Assign improvement actions
+### Assign improvement actions
 
 To begin implementation work on an improvement action, you can do the work yourself or assign it to another user. The assigned person could be:
 
@@ -82,7 +84,7 @@ Once the proper person is identified, be sure they hold a sufficient [role](comp
 
 The assigned user can then perform the recommended actions outlined in the implementation instructions.
 
-## Perform work and store documentation
+### Perform work and store documentation
 
 When you perform implementation work, you can upload files and notes directly to the improvement action in the **Notes and documentation** section.  This environment is a secure, centralized repository to help you demonstrate satisfaction of controls to meet compliance standards and regulations. Any user with read-only access can read content in this section. Only users with editing rights can upload and download files and enter or edit notes.
 
@@ -107,7 +109,7 @@ Fields in the **Notes and documentation** section include:
 
 There is no character limit in the notes fields. We recommend keeping notes brief so that you can easily view and edit them from the improvement actions details page.
 
-## Change improvement action status
+### Change improvement action status
 
 You can record the implementation status and date, and the test status and date, for each improvement action. Below are the available fields and status options:
 
@@ -129,7 +131,7 @@ You can record the implementation status and date, and the test status and date,
 > [!NOTE]
 > Implementation and test status fields can be edited by any user with editing permissions, not just the **Assigned to** user.
 
-## Assign improvement action to assessor for completion
+### Assign improvement action to assessor for completion
 
 After you complete the work and upload evidence, the next step is to set the implementation status and date, and assign the improvement action to an assessor for validation.
 
