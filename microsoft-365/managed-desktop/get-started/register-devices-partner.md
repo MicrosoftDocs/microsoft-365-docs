@@ -31,7 +31,7 @@ Once you have established the relationship with your customers, you can leverage
 1. Navigate to [Partner Center](https://partner.microsoft.com/dashboard)
 2. Select **Customers** from the Partner Center menu and then select the customer whose devices you want to manage.
 3. On the customer's detail page, select **Devices**.
-4. Under **Apply profiles** to devices select **Add devices**.
+4. Under **Apply profiles** to devices, select **Add devices**.
 5. Enter **Microsoft365Managed_Autopilot** for the Group Name and then select **Browse** to upload the customer's list (in .csv file format) to Partner Center.
 
 
