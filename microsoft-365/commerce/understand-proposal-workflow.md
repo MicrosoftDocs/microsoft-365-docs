@@ -51,7 +51,7 @@ Billing account permissions are managed by the billing account owner.
 Global admins can assign themselves to the billing account owner role,
 and then make other people billing account owners.
 
-For more information about billing accounts, see [Manage billing accounts](../manage-billing-accounts.md).
+For more information about billing accounts, see [Manage billing accounts](manage-billing-accounts.md).
 
 ### Microsoft Customer Agreement
 
@@ -68,7 +68,7 @@ billing account owner or billing account contributor role before you can
 sign an agreement or buy products and services. Your billing account
 owner can assign this role to you.
 
-For more information about billing account roles, see [Understand access to billing accounts](../manage-billing-accounts.md#understand-access-to-billing-accounts).
+For more information about billing account roles, see [Understand access to billing accounts](manage-billing-accounts.md#understand-access-to-billing-accounts).
 
 If this is a new billing account, and no one has accepted an agreement,
 you automatically become the billing account owner, provided you:
@@ -138,7 +138,7 @@ incorrect, contact the representative to make changes for you. After
 you've accepted an MCA, you can review and change your organization's
 address and contact information on the [Billing accounts](https://go.microsoft.com/fwlink/p/?linkid=2084771) page in the
 Microsoft 365 admin center. If your organization name changes, open a
-service request to have it updated. Learn how to open a service request.
+service request to have it updated. [Learn how to open a service request](../admin/contact-support-for-business-products.md)
 
 ### Your information
 
@@ -164,31 +164,16 @@ your Microsoft representative.
 
 The proposal contains the following information:
 
-**Organization name:** The name of the organization for whom the
-proposal was prepared.
-
-**Valid until date:** The date at which the proposal offer expires. If
-you miss this expiration date, contact your Microsoft representative to
-let them know that you're still interested in the proposal.
-
-**Currency:** The currency used to calculate the cost of items in the
-proposal.
-
-**Prepared for:** The billing account name, address, contact email
-address, and phone number of the person who requested the proposal.
-
-**Prepared by**: The email address of the Microsoft representative who
-prepared the proposal.
-
-**Summary:** Shows the subtotal associated with the proposal. If
-necessary, it will also show the foreign exchange (FX) rate that is used
-to calculate costs.
-
-**Proposal line items:** This section contains the quantity, unit price,
-and subtotal of all items included in the proposal.
-
-**Next step:** This section indicates the necessary action you must
-take.
+| Section | Description |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Organization name | The name of the organization for whom the proposal was prepared. |
+| Valid until date | The date at which the proposal offer expires. If you miss this expiration date, contact your Microsoft representative to let them know that you're still interested in the proposal. |
+| Currency | The currency used to calculate the cost of items in the proposal. |
+| Prepared for | The billing account name, address, contact email address, and phone number of the person who requested the proposal. |
+| Prepared by | The email address of the Microsoft representative who prepared the proposal. |
+| Summary | Shows the subtotal associated with the proposal. If necessary, it will also show the foreign exchange (FX) rate that is used to calculate costs. |
+| Proposal line items | This section contains the quantity, unit price, and subtotal of all items included in the proposal. |
+| Next step | This section indicates the necessary action you must take. |
 
 To sign an MCA, select the button under **Next Step**. If you must sign
 supplemental terms, a link takes you to the DocuSign site, where you
@@ -201,7 +186,9 @@ select **Go to checkout**.
 
 The checkout page contains the following sections:
 
-**Sold to:** The billing account used for the proposal. If you need to
+### Sold to
+
+This section shows the billing account used for the proposal. If you need to
 change any information, select the **Edit** link. You can also use the
 **Edit** link to add your organization's Tax ID. The Tax ID must be
 related to the country listed in the **Sold to** section. If you have a
@@ -209,9 +196,11 @@ tax exemption, you must open a support ticket to request tax-exempt
 status.
 
 To learn more about Tax IDs, and how to apply for tax-exempt status, see
-[Tax information](../billing-and-payments/tax-information.md).
+[Tax information](billing-and-payments/tax-information.md).
 
-**Billed to:** The billing profile is used to determine what items are
+### Billed to
+
+This section shows the billing profile used to determine what items are
 included on your invoice, and how you pay your invoices. Each billing
 cycle, you receive a separate invoice for each billing profile. You pay
 for invoices by using either check or wire transfer, or Azure
@@ -221,10 +210,11 @@ different billing profile, if you have one, change the name of the
 billing profile, or add a P.O. number. You can also create a new billing
 profile.
 
-For information about billing profiles, see [Manage billing profiles](../billing-and-payments/manage-billing-profiles.md).
+For information about billing profiles, see [Manage billing profiles](billing-and-payments/manage-billing-profiles.md).
 
-**Proposal items in this order:** A list of all items included in the
-proposal. The list can include one or more of the following categories:
+### Proposal items in this order
+
+This section shows a list of all items included in the proposal. The list can include one or more of the following categories:
 
 - **Supplemental terms** A list of any amendments to the MCA that
     contain terms for your organization. For example, this list might
@@ -240,7 +230,9 @@ proposal. The list can include one or more of the following categories:
     package at no additional charge. Some of these items might have a
     cost associated with them in the future.
 
-**Summary:** The number of items being paid for, the subtotal, estimated
+### Summary
+
+This section shows the number of items being paid for, the subtotal, estimated
 taxes, and the total amount for the order.
 
 To place the order, select **Place order** or **Accept agreement & place
@@ -266,7 +258,7 @@ Agreement](https://docs.microsoft.com/azure/cost-management-billing/manage/mca-e
 ## Understand invoicing
 
 After you check out and complete your order, an initial invoice is sent
-within 24-48 hours. After that, you receive invoices around the 5^th^ of
+within 24-48 hours. After that, you receive invoices around the 5th of
 every month. The monthly invoice contains charges from the previous
 month. If you have any credits for your account, they're deducted from
 your billing profile's monetary credits, and applied to your invoice
@@ -275,4 +267,4 @@ due. You have 30 days from the billing date to pay the invoice.
 
 Payment instructions for where to send check or wire transfers are
 included in the PDF copy of your invoice. To view or download your
-invoice, see [View your bill or invoice](../billing-and-payments/view-your-bill-or-invoice.md).
+invoice, see [View your bill or invoice](billing-and-payments/view-your-bill-or-invoice.md).
