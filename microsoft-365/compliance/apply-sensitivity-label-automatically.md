@@ -40,7 +40,7 @@ There are two different methods for automatically applying a sensitivity label:
     
     For configuration instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps) on this page.
 
-- **Service-side labeling when content is already saved (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy—currently in preview. 
+- **Service-side labeling when content is already saved (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy. 
     
     > [!NOTE]
     > See the preview announcement, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) and the webinar [Introduction to SharePoint & OneDrive Auto-Labeling with Sensitivity Labels](https://aka.ms/SPOAutoLabelWebinar-Recording).
@@ -181,8 +181,8 @@ Specific to the Azure Information Protection unified labeling client:
 - Sensitive information can be detected in the body text in documents and emails, and to headers and footers—but not in the subject line or attachments of email.
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
-> [!NOTE]
-> Auto-labeling policies are in public preview and subject to change.
+
+Make sure you're aware of the prerequisites before you configure auto-labeling policies. 
 
 ### Prerequisites for auto-labeling policies
 
