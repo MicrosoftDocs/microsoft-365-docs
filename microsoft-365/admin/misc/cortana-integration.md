@@ -1,5 +1,5 @@
 ---
-title: "Cortana integration with Office 365"
+title: "Cortana in Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: kwekua
