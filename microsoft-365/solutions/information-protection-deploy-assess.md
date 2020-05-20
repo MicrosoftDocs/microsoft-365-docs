@@ -167,7 +167,7 @@ Most organizations will have at least some exposure to at least one of the above
 
 ## Step 2: Assess your readiness for complying with data privacy regulations
 
-Although specific to GDPR, the questions posed in the free [Microsoft GDPR assessment tool](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) provides a good start towards understanding your overall data privacy readiness. 
+Although specific to GDPR, the questions posed in the free [Microsoft GDPR assessment tool](https://www.microsoft.com/cyberassessment/en/gdpr/uso365) provide a good start towards understanding your overall data privacy readiness. 
 
 Organizations subject to other data privacy regulations, such as CCPA in the United States or Brazil’s LGPD, may also benefit from this tool’s inventory of readiness due to a high degree of overlapping provisions with the GDPR.
 

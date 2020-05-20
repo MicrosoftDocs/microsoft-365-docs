@@ -50,7 +50,7 @@ The data privacy regulations generally call for the following in the area of mon
 
 Your organization may also wish to perform monitoring and response activities for other purposes, such as other compliance needs or for business reasons. Establishing your monitoring and response scheme for data privacy should be done as part of overall monitoring and response planning, implementation, and management.
 
-To help you get started with a monitoring and response scheme in Microsoft 365 for data privacy regulations, this article describes useful Microsoft 365 capabilities. These capabilities will help answer questions such as: 
+To help you get started with a monitoring and response scheme in Microsoft 365 for data privacy regulations, this article lists useful capabilities in Microsoft 365 to answer questions such as: 
 
 - What sort of day-to-day monitoring, investigative and reporting techniques are available for the different data types and sources?
 - What mechanisms will be needed to handle data subject requests (DSRs) and any remedial actions, such as anonymization, redaction, and deletion.
@@ -66,7 +66,7 @@ See these articles for setting up auditing, advanced auditing, and alert policie
 
 ## Data subject requests for the GDPR and CCPA
 
-See [Data Subject Requests for the GDPR and CCPA](../compliance/gdpr-dsr-office365.md) for information on responding to a data subject request (DSR) in Microsoft 365.
+See [Data Subject Requests for the GDPR and CCPA](../compliance/gdpr-dsr-office365.md) for information on responding to a DSR in Microsoft 365.
 
 ## Manage deleted users in Microsoft Stream
 
