@@ -18,9 +18,9 @@ description: "Learn how to use the workflow tools in Microsoft Compliance Score 
 
 # Working with Microsoft Compliance Score (preview)
 
-This article explains how to work with the key elements of Compliance Score. You'll learn how to use **improvement actions** to manage your compliance workflow. You'll also learn how to use the information on your **Solutions** and **Assessments** pages, and how to produce reports.
+**In this article:** This article explains how to work with the key elements of Compliance Score. You'll learn how to use **improvement actions** to manage your compliance workflow. You'll also learn how to use the information on your **Solutions** and **Assessments** pages, and how to produce reports.
 
-## Improvement actions page
+## Improvement actions
 
 ### Manage your workflow with improvement actions
 
@@ -146,7 +146,7 @@ The assessor validates the work and examines the documentation, and selects the 
 
 **If the test status is any degree of "Failed"**: the action does not meet the requirements, and the assessor can assign it back to the appropriate user for additional work.
 
-## Solutions page
+## Solutions
 
 The **Solutions page** is another starting point for working on improvement actions to increase your score. 
 
@@ -174,7 +174,7 @@ There are two ways you can take action from this screen:
 
 2. On the row of your intended solution, under the **Open solution** column, select **Open**. You'll see the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
-## Assessments page
+## Assessments
 
 The assessments page lists the assessments you select to track for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
 
