@@ -17,7 +17,7 @@ This topic describes the steps for Partners to follow to register devices. The p
 
 
 ## Prepare for registration 
-Before completing registration for a customer, you must first establish a relationship with them at the [Partner Center] (https://partner.microsoft.com/dashboard). See the [consent documentation] (https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization) for more details on that process. Any CSP partner can add devices on behalf of any customer, as long as the customer consents. You can also learn more about partner relationship and Autopilot permissions at [Partner Center help] (https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#windows-autopilot)
+Before completing registration for a customer, you must first establish a relationship with them at the [Partner Center] (https://partner.microsoft.com/dashboard). See the [consent documentation] (https://docs.microsoft.com/windows/deployment/windows-autopilot/registration-auth#csp-authorization) for more details on that process. Any CSP partner can add devices on behalf of any customer, as long as the customer consents. You can also learn more about partner relationships and Autopilot permissions at [Partner Center help] (https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#windows-autopilot).
 
 
 >[!NOTE]
@@ -54,4 +54,3 @@ Once you've established the relationship, you can start registering devices for 
 
 >[!IMPORTANT]
 >The group name must match exactly **Microsoft365Managed_Autopilot** including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot profile.
-
