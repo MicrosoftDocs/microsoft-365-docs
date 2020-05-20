@@ -26,7 +26,7 @@ Before completing registration for a customer, you must first establish a relati
 
 ## Register devices by using Partner Center
 
-Once you have established the relationship with your customers, you can leverage Partner Center to add devices to Autopilot for any of the customers that you have a relationship with following the below steps :
+Once you have established the relationship with your customers, you can leverage Partner Center to add devices to Autopilot for any of the customers that you have a relationship with by following these steps:
 
 1. Navigate to [Partner Center](https://partner.microsoft.com/dashboard)
 2. Select **Customers** from the Partner Center menu and then select the customer whose devices you want to manage.
