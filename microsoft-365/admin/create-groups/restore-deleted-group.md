@@ -69,7 +69,8 @@ If you are a global administrator or a groups administrator, you can restore a d
 2. Expand **Groups**, and then click **Deleted groups**.
 3. Select the group that you want to restore, and then click **Restore group**.
 
-Note: In some cases it may take as long as 24 hours for the group and all of its data to be restored. 
+> [!NOTE]
+> In some cases, it may take as long as 24 hours for the group and all of its data to be restored. 
   
 ## Permanently delete a Microsoft 365 group
 
