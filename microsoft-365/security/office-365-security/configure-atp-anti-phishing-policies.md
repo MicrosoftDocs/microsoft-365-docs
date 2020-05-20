@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Office 365 Advanced Threat Protection (ATP)."
+description: "Admins can learn how to create, modify, and delete the advanced anti-phishing policies that are available in organizations with Office 365 Advanced Threat Protection (Office 365 ATP)."
 ---
 
 # Configure ATP anti-phishing policies
@@ -24,9 +24,9 @@ Admins can view, edit, and configure (but not delete) the default ATP anti-phish
 
 You can configure ATP anti-phishing policies in the Security & Compliance Center or in Exchange Online PowerShell.
 
-For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection organizations (that is, Office 365 organizations without ATP), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+For information about configuring the more limited in anti-phishing policies that are available in Exchange Online Protection organizations (that is, Microsoft 365 organizations without Office 365 ATP), see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-## ATP anti-phishing policies in the Security & Compliance Center vs Exchange Online PowerShell
+## ATP anti-phishing policies in the Security & Compliance Center vs PowerShell
 
 The basic elements of an ATP anti-phishing policy are:
 
@@ -74,7 +74,7 @@ To increase the effectiveness of anti-phishing protection, you can create custom
 
 - Allow up to 30 minutes for a new or updated policy to be applied.
 
-- For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection in Office 365](how-policies-and-protections-are-combined.md).
+- For information about where anti-phishing policies are applied in the filtering pipeline, see [Order and precedence of email protection](how-policies-and-protections-are-combined.md).
 
 ## Use the Security & Compliance Center to create ATP anti-phishing policies
 
@@ -102,7 +102,7 @@ When you create an ATP anti-phishing policy, you can only specify the policy nam
 
    - **The recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization.
    - **The recipient is a member of**: Specifies one or more groups in your organization.
-   - **The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in Office 365.
+   - **The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in the organization.
 
    After you select the condition, a corresponding dropdown appears with an **Any of these** box.
 
@@ -241,10 +241,10 @@ Use the following procedures to modify ATP anti-phishing policies: a new policy 
 
    Note that these same settings are also available in anti-phishing policies in EOP.
 
-   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in Office 365](learn-about-spoof-intelligence.md).
+   - **Spoofing filter settings**: The default value is **On**, and we recommend that you leave it on. To turn it off, slide the toggle to **Off**. For more information, see [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
-     > You don't need to disable anti-spoofing protection if your MX record doesn't point to Office 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - **Enable Unauthenticated Sender feature**: The default value is **On**. To turn it off, slide the toggle to **Off**.
 

@@ -34,7 +34,7 @@ The first step to investigate issues detected by your policies is to review gene
     - Resolved items listed by policy name.
     - Escalations listed by policy name.
     - Users with the most policy matches, listed from the most to the least number of matches.
-- **Alerts tab**: Navigate to **Communication compliance** > **Alerts** to display alerts grouped by matched communication compliance policy. This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity.  To start remediation actions, expand a policy to select a specific alert and to launch the alert details page.
+- **Alerts tab**: Navigate to **Communication compliance** > **Alerts** to display the last 30 days of alerts grouped by policy matches. This view allows you to quickly see which communication compliance policies are generating the most alerts ordered by severity.  To start remediation actions, expand a policy to select a specific alert and to launch the alert details page.
 - **Policies tab**: Navigate to **Communication compliance** > **Policies** to display communication compliance policies configured for your Microsoft 365 organization. Each policy listed includes the count of alerts that need review. Selecting a policy displays all the pending alerts for matches to the policy, select a specific alert to launch the policy details page and to start remediation actions.
 
 ### Using filters

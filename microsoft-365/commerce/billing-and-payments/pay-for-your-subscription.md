@@ -28,6 +28,14 @@ ms.custom:
 
 # Pay for your subscription
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 When you set up your subscription, you can choose to pay by using credit card or bank account payments, or to pay by invoice using check or electronic funds transfer (EFT). Whichever method you choose, that is the payment method we will continue to use for subsequent billing periods, unless you [change your payment method](change-payment-method.md).
 
 > [!NOTE]
@@ -46,7 +54,7 @@ If you pay by credit card, and your credit card is declined, you'll receive an e
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription with the outstanding balance. In the **Billing** section, next to **Subscription has a past due payment**, select **Settle balance**.
 
@@ -95,7 +103,7 @@ If you pay by invoice for your subscription, you'll get an email that says your 
 Unfortunately, if your subscription is set up to pay by invoice, we can't accept online payments directly. You can, however, [change your payment method to credit card or bank account](change-payment-method.md), and the amount due will be automatically charged to your card or account after each service period. For Azure, see [How to change the credit card used to pay for an Azure subscription](https://go.microsoft.com/fwlink/p/?LinkId=718057).
 
 > [!NOTE]
-> If you're switching to pay by automatic credit card payments, be sure to first pay all outstanding balances. Check your billing statement for payment options and instructions. For more information, see [Understand your invoice](understand-your-invoice2.md).
+> If you're switching to pay by automatic credit card payments, be sure to first pay all outstanding balances. Check your billing statement for payment options and instructions. For more information, see [Understand your bill or invoice](understand-your-invoice2.md).
 
 ### Where do I send my check or EFT payment?
 
@@ -300,4 +308,4 @@ If your original reasons for choosing invoice, credit card, or bank account have
 
 [Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md)
 
-[Understand your invoice](understand-your-invoice2.md)
+[Understand your bill or invoice](understand-your-invoice2.md)

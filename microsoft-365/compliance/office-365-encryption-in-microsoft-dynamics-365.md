@@ -12,7 +12,8 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: "Summary: Understand encryption in Microsoft Dynamics 365."
+description: Learn how Microsoft uses encryption technology to protect customer data in Microsoft Dynamics 365 while at rest in a Microsoft database and while in transit.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Encryption in Microsoft Dynamics 365

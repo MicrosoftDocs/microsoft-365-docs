@@ -57,7 +57,3 @@ In late 2018, Argentina has not yet enacted GDPR-related regulations, but it has
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 - [Privacy Considerations in the Cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/0/1/7018F836-AE7C-4E98-8159-C6AA04D803CB/PDPA-Compliance.pdf).
