@@ -26,7 +26,7 @@ Additional information is also provided on the use of Microsoft identity, device
 
 ## Organization of this guidance material
 
-To help organizations understand the Microsoft 365 tools available to help identify, manage, control, and monitor personal data subject to one or more privacy-related regulations, this guidance is organized as follows:
+To help you understand the Microsoft 365 tools available to identify, manage, control, and monitor personal data subject to one or more privacy-related regulations, this guidance is organized as follows:
  
 - **Plan** Assessing data privacy risks, readiness, and the occurrence of target sensitive information types in your environment.
 - **Track** Using Microsoft Compliance Score and Compliance Manager to track and manage improvement actions related to compliance with data privacy regulations.
@@ -46,13 +46,13 @@ More detailed descriptions of each of these elements correspond to a separate ar
 >Following this guidance will not necessarily make you compliant with any data privacy regulation, especially considering the number of steps required that are outside the context of the technology. As such, organizations are responsible for ensuring their own compliance and are advised to consult their legal and compliance teams or to seek guidance and advice from third parties that specialize in compliance.
 >
 
-## Assess data privacy risks and identify sensitive information 
+## Plan: Assess data privacy risks and identify sensitive information 
 
 Assessing data privacy regulations and risks that your organization is subject to is a key first step to take before starting to implement any related improvement actions, including those achievable through Microsoft 365 configuration. This may include an overall readiness assessment or identification of particular sensitive information types that are subject to specific regulatory controls your organization needs to comply with, as well as the occurrence of them in your Microsoft 365 environment.
 
 For more information, see [Assess data privacy risks and identify sensitive information](information-protection-deploy-assess.md).
 
-## Use Compliance Score and Compliance Manager 
+## Track: Use Compliance Score and Compliance Manager 
 
 Compliance Score and Compliance Manager provide an integrated set of tools available in the Microsoft 365 Compliance admin center and Services Trust Portal. Together, these tools provide you with a built-in ability to track and manage improvement actions overall as well as those related to multiple data privacy regulations to which you are subjected, such as GDPR and HIPAA-HITECH (United States health care privacy act).
 
@@ -60,7 +60,7 @@ The tools also allow you to leverage built in assessment templates specific to e
 
 For more information, see [Use Compliance Score and Compliance Manager to manage improvement actions](information-protection-deploy-compliance.md).
 
-## Use identity, device, and threat protection for data privacy regulation
+## Prevent: Use identity, device, and threat protection for data privacy regulation
 
 Microsoft 365 provides a number of identity, device, and threat protection capabilities that organizations can employ to help comply with data privacy regulatory compliance. 
 
@@ -76,7 +76,7 @@ For more information, see [Protect information subject to data privacy regulatio
 
 This article lays out the main control schemes that can be used for addressing information protection needs for data privacy in your organization.
 
-## Govern information subject to data privacy regulation
+## Retain: Govern information subject to data privacy regulation
 
 Data privacy regulations call for personal information governance controls that can be employed in your environment, including more than twenty-four (for Govern Information) overall across the four data privacy regulations in our sample set of GDPR, CCPA, HIPAA-HITECH, and LGPD.
 
@@ -84,7 +84,7 @@ For more information, see [Govern information subject to data privacy regulation
 
 While the data privacy regulations are rather vague regarding what they call for in terms of what Microsoft refers to as information governance (essentially, purposeful retention, deletion and archiving), this article lays out the primary control schemes that can be used for addressing information governance needs for data privacy in your organization.
 
-## Monitor and respond subject to data privacy regulation
+## Investigate: Monitor and respond subject to data privacy regulation
 
 There are Microsoft 365 solutions available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. 
 
