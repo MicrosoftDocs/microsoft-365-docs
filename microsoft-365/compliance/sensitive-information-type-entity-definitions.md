@@ -4980,7 +4980,7 @@ These are the entities that are in the EU Social Security Number or equivalent i
 - [Finland](#finland-social-security-number-or-equivalent-identification)
 - [France](#france-social-security-number-insee-or-equivalent-identification)
 - [Germany](#germany-identity-card-number)
-- [Greece](#greece-national-identification-card)
+- [Greece](#greece-national-id-card)
 - [Hungary](#hungary-social-security-number-or-equivalent-identification)
 - [Portugal](#portugal-citizen-card-number)
 - [Spain](#spain-social-security-number-ssn)
