@@ -28,10 +28,10 @@ This method requires human judgment and action. An admin may either use the pre-
 
 This category of classification mechanisms includes finding content by:
 
-- keywords or metadata values (keyword query language).
-- using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(Sensitive information type entity definitions)](sensitive-information-type-entity-definitions.md).
-- recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
-- using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Keywords or metadata values (keyword query language).
+- Using previously identified patterns of sensitive information like social security, credit card or bank account numbers [(Sensitive information type entity definitions)](sensitive-information-type-entity-definitions.md).
+- Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
+- Using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
 Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [retention policies](retention-policies.md).
 
