@@ -6,7 +6,6 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
-ms.date: 05/17/2019
 ms.topic: overview
 f1_keywords:
 - '197503'
@@ -35,7 +34,7 @@ description: "In this article, you'll learn how to use Safe links to protect you
 > [!IMPORTANT]
 > This article is intended for business customers who have [Office 365 Advanced Threat Protection](office-365-atp.md). If you are using Outlook.com, Microsoft 365 Family, or Microsoft 365 Personal, and you're looking for information about Safe Links in Outlook, see [Advanced Outlook.com security](https://support.office.com/article/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Office 365 ATP Safe Links (part of [Advanced Threat Protection](office-365-atp.md)) can help protect your organization by providing time-of-click verification of web addresses (URLs) in [email messages](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) and [Office documents](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). Protection is defined through [ATP Safe Links policies](set-up-atp-safe-links-policies.md) that are set by your Microsoft 365 security team.
+Office 365 ATP Safe Links (part of [Office 365 Advanced Threat Protection](office-365-atp.md)) can help protect your organization by providing time-of-click verification of web addresses (URLs) in [email messages](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-email) and [Office documents](how-atp-safe-links-works.md#how-atp-safe-links-works-with-urls-in-office-documents). Protection is defined through [ATP Safe Links policies](set-up-atp-safe-links-policies.md) that are set by your Microsoft 365 security team.
   
 Once your ATP Safe Links policies are in place, global administrators, security administrators, and security readers can [view reports for Advanced Threat Protection](view-reports-for-atp.md). The information in those reports can help your security team take further steps to protect your organization or research security incidents.
 
@@ -43,7 +42,7 @@ As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-
          
 ## How to get ATP Safe Links protection
 
-**First, make sure your subscription includes [Advanced Threat Protection](office-365-atp.md)**. ATP is included in subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources: 
+**First, make sure your subscription includes [Office 365 Advanced Threat Protection](office-365-atp.md)** Plan 1 or Plan 2. Office 365 ATP is included in subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources: 
 
 - [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection)
 
