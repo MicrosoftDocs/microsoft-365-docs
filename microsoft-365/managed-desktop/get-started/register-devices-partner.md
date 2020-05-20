@@ -53,4 +53,4 @@ Before completing registration for a customer, you must first establish a relati
 Once you've established the relationship, you can start registering devices for customers using the Group Tag **Microsoft365Managed_Autopilot**.
 
 > [!IMPORTANT]
-> The group name must **Microsoft365Managed_Autopilot** exactly, including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot profile.
+> The group name must match **Microsoft365Managed_Autopilot** exactly, including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot profile.
