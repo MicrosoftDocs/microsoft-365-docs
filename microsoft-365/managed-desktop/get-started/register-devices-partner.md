@@ -35,7 +35,7 @@ Once you have established the relationship with your customers, you can leverage
 5. Enter **Microsoft365Managed_Autopilot** for the Group Name and then select **Browse** to upload the customer's list (in .csv file format) to Partner Center.
 
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > The Group Name must match **Microsoft365Managed_Autopilot** exactly, including capitalization and special characters. This will allow the newly registered devices to be assigned with the Microsoft Managed Desktop Autopilot profile.
 
 >[!NOTE]
