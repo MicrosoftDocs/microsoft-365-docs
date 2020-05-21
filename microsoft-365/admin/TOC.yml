@@ -234,9 +234,11 @@
       items: 
         - name: Top 10 ways to secure your data
           href: security-and-compliance/secure-your-business-data.md
+        - name: Multi-factor authentication for Microsoft 365
+          href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: Set up multi-factor authentication
           href: security-and-compliance/set-up-multi-factor-authentication.md
-        - name: Set up multi-factor authentication (with Office 2013)
+        - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Secure score
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
