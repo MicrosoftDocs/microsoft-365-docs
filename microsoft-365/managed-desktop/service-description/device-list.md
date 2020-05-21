@@ -55,13 +55,17 @@ The links to devices here are for your reference only. If you want to order devi
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
 | **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 
-
-
 In addition, the device must also meet these criteria:     
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+
+>[!NOTE]
+>Devices with a 2.0 GHz or faster processor will provide a much better experience for users involved in these activities:
+>- Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) for details.
+>-	Using one device for several different workloads.
+>- Using multiple monitors.
 
 **Additional Help**
 
