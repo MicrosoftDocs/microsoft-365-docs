@@ -132,7 +132,7 @@ Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <
 This example returns detailed information about all senders that are allowed to spoof users in your domains.
 
 ```powershell
-Get-PhishFilter -AllowedToSpoof Yes -Detailed -SpoofType Internal
+Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
 ```
 
 For detailed syntax and parameter information, see [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-phishfilterpolicy).
@@ -178,10 +178,10 @@ To verify that you've configured spoof intelligence with senders who are allowed
 - In PowerShell, run the following commands to view the senders who are allowed and not allowed to spoof:
 
   ```powershell
-  Get-PhishFilter -AllowedToSpoof Yes -SpoofType Internal
-  Get-PhishFilter -AllowedToSpoof No -SpoofType Internal
-  Get-PhishFilter -AllowedToSpoof Yes -SpoofType External
-  Get-PhishFilter -AllowedToSpoof No -SpoofType External
+  Get-PhishFilterPolicy -AllowedToSpoof Yes -SpoofType Internal
+  Get-PhishFilterPolicy -AllowedToSpoof No -SpoofType Internal
+  Get-PhishFilterPolicy -AllowedToSpoof Yes -SpoofType External
+  Get-PhishFilterPolicy -AllowedToSpoof No -SpoofType External
   ```
 
 - In PowerShell, run the following command to export the list of all spoofed senders to a CSV file:
