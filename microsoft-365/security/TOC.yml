@@ -69,6 +69,10 @@
               href: mtp/setup-mtpeval.md
             - name: Configure and onboard endpoints
               href: mtp/config-mtpeval.md
+            - name: Turn on Microsoft Threat Protection
+              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
+            - name: Generate a test alert
+              href: mtp/generate-test-alert.md
         - name: How-to guides
           items: 
             - name: Create a trial lab environment
@@ -80,6 +84,10 @@
                   href: mtp/setup-mtpeval.md
                 - name: Configure and onboard endpoints
                   href: mtp/config-mtpeval.md
+                - name: Turn on Microsoft Threat Protection
+                  href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
+                - name: Generate a test alert
+                  href: mtp/generate-test-alert.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection

@@ -43,7 +43,7 @@ There are two different methods for automatically applying a sensitivity label:
 - **Service-side labeling when content is already saved (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy. 
     
     > [!NOTE]
-    > See the preview announcement, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961) and the webinar [Introduction to SharePoint & OneDrive Auto-Labeling with Sensitivity Labels](https://aka.ms/SPOAutoLabelWebinar-Recording).
+    > See the preview announcement, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
     
     This method is referred to as auto classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
     
@@ -55,6 +55,7 @@ There are two different methods for automatically applying a sensitivity label:
     - Maximum of 25,000 automatically labeled files (Word, PowerPoint, or Excel) in your tenant per day
     - Maximum of 10 sites collections across all policies
     - Maximum of 10 policies across your tenant
+    - Modified date is not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied
 
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
