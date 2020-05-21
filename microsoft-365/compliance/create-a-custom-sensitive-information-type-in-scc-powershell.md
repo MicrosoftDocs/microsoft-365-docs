@@ -19,7 +19,7 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type in Security & Compliance Center PowerShell
 
-Data loss prevention (DLP) in Microsoft 365 includes many built-in [sensitive information types](what-the-sensitive-information-types-look-for.md) that are ready for you to use in your DLP policies. These built-in types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. 
+Data loss prevention (DLP) in Microsoft 365 includes many built-in [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) that are ready for you to use in your DLP policies. These built-in types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. 
   
 But what if you need to identify and protect a different type of sensitive information (for example, an employee ID that uses a format specific to your organization)? To do this, you can create a custom sensitive information type that is defined in an XML file called a *rule package*.
   
@@ -907,6 +907,6 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 
 - [Overview of data loss prevention policies](data-loss-prevention-policies.md)
     
-- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
     
 - [What the DLP functions look for](what-the-dlp-functions-look-for.md)
