@@ -1,5 +1,5 @@
 ---
-title: "Multi-factor authentication for Microsoft 365 deployments"
+title: "Multi-factor authentication for Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,7 +22,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn about multi-factor authentication in Microsoft 365."
 ---
 
-# Multi-factor authentication for Microsoft 365 deployments
+# Multi-factor authentication for Microsoft 365
 
 Passwords are the most common method of authenticating a sign-in to a computer or online service, but they are also the most vulnerable. People can choose easy passwords and use the same passwords for multiple sign-ins to different computers and services.
 
@@ -52,8 +52,8 @@ These ways are based on your Microsoft 365 plan.
 |Plan  |Recommendation  | Type of customer |
 |---------|---------|----------|
 | All Microsoft 365 plans |	Use security defaults, which require MFA for all user accounts. <br> You can also require MFA on a per-user account basis, but this is not recommended.	| Small business |
-| Microsoft 365 Business Premium <br> Microsoft 365 E3 <br> Azure AD Premium P1 licenses |Use Conditional Access policies to require MFA for user accounts based on group membership, apps, or other criteria. | Small business to enterprise |
-| Microsoft 365 E5 <br> Azure AD Premium P2 licenses | Use Azure AD Identity Protection to require MFA based on sign-in risk criteria. |  Enterprise |
+| Microsoft 365 Business Premium <br><br> Microsoft 365 E3 <br><br> Azure Active Directory (Azure AD) Premium P1 licenses | Use Conditional Access policies to require MFA for user accounts based on group membership, apps, or other criteria. | Small business to enterprise |
+| Microsoft 365 E5 <br><br> Azure AD Premium P2 licenses | Use Azure AD Identity Protection to require MFA based on sign-in risk criteria. |  Enterprise |
 ||||
 
 ### Security defaults
@@ -66,6 +66,10 @@ Security defaults is a new feature for Microsoft 365 and Office 365 paid or tria
 Users have 14 days to register for MFA with the Microsoft Authenticator app from their smart phones, which begins from the first time they sign in after security defaults has been enabled. After 14 days have passed, the user won't be able to sign in until MFA registration is completed.
 
 Security defaults ensure that all organizations have a basic level of security for user sign-in that is enabled by default. You can disable security defaults in favor of MFA with Conditional Access policies.
+
+You enable or disable security defaults from the **Properties** pane for Azure AD in the Azure portal.
+
+![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 You can use security defaults with any Microsoft 365 plan.
 
@@ -83,22 +87,22 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 
 You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 You can use Conditional Access policies with:
 
 - Microsoft 365 Business Premium
-- Microsoft 365 E3
- -Azure AD Premium P1 licenses 
+- Microsoft 365 E3 and E5
+- Azure AD Premium P1 and Azure AD Premium P2 licenses 
 
 For small businesses with Microsoft 365 Business Premium, you can easily use Conditional Access policies with the following steps:
 
 1. Create a group to contain the user accounts that require MFA.
 2. Enable the **Require MFA for global admins** policy.
 3. Create a group-based Conditional Access policy with these settings:
-  - Assignments > Users and groups: The name of your group from Step 1 above.
-  - Assignments > Cloud apps or actions: All cloud apps.
-  - Access controls > Grant > Grant access > Require multi-factor authentication.
+    - Assignments > Users and groups: The name of your group from Step 1 above.
+    - Assignments > Cloud apps or actions: All cloud apps.
+    - Access controls > Grant > Grant access > Require multi-factor authentication.
 4. Enable the policy.
 5. Add a user account to the group created in Step 1 above and test.
 6. To require MFA for additional user accounts, add them to the group created in Step 1.
@@ -111,10 +115,6 @@ Enterprises should use [Common Conditional Access policies](https://docs.microso
 - [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
 - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 
-You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
-
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
-
 For more information, see this [overview of Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### Azure AD Identity Protection
@@ -124,7 +124,7 @@ With Azure AD Identity Protection, you can create an additional Conditional Acce
 You can use Azure AD Identity Protection and risk-based Conditional Access policies with:
 
 - Microsoft 365 E5
-- Azure AD Premium P2 licenses 
+- Azure AD Premium P2 licenses
 
 For more information, see this [overview of Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
@@ -166,8 +166,8 @@ In the Azure portal, you can:
 
 - Enable and disable security defaults
 - Configure Conditional Access policies
-- 
-In the Microsoft 365 admin center, you can configure per-user MFA and service settings.
+
+In the Microsoft 365 admin center, you can configure per-user and service MFA settings.
 
 ## Your next step
 

@@ -30,14 +30,14 @@ Based on your understanding of [multi-factor authentication (MFA) and its suppor
 
 Before you begin, determine if these special conditions apply to you and take the appropriate action:
 
-- If you have Office 2013 clients on Windows devices, enable [Modern Authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
+- If you have Office 2013 clients on Windows devices, [enable Modern Authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
 
 - If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with 
 Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
 
 ## Step 1: Decide on the method of requiring your users to use MFA
 
-There are three ways to require your users to use MFA for sign-ins. See [MFA upport in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.
+There are three ways to require your users to use MFA for sign-ins. See [MFA support in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.
 
 - Security defaults (recommended for small businesses)
 
@@ -79,13 +79,13 @@ Most importantly, make sure your employees understand ***when the MFA requiremen
 
 ## Step 4. Roll out the MFA requirement to your organization or users
 
-Based on your chosen MFA requirement method, roll out MFA authentication to the users beyond your pilot testers.
+Based on your chosen MFA requirement method, roll out MFA authentication to the employees beyond your pilot testers.
 
 ### Security defaults
 
-You enable or disable security defaults from the Properties pane for Azure Active Directory (Azure AD) in the Azure portal.
+You enable or disable security defaults from the **Properties** pane for Azure Active Directory (Azure AD) in the Azure portal.
 
-1.	Sign in to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=834822) with global admin credentials.
+1.	Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with global admin credentials.
 2.	Go to the [Azure Active Directory - Properties page](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 3.	At the bottom of the page, choose **Manage Security defaults**.
 4.	Choose **Yes** to enable security defaults and **No** to disable security defaults, and then choose **Save**.
