@@ -15,7 +15,6 @@ audience: itpro
 ms.collection: 
 - GDPR
 - M365-security-compliance
-titleSuffix: Microsoft GDPR
 ---
 
 # Windows Processor Service breach notification under the GDPR
