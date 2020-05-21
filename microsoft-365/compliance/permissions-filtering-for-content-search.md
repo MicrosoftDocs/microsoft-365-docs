@@ -150,7 +150,7 @@ This example allows members of the "US Discovery Managers" role group to perform
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All
 ```
 
-This example allows members of the eDiscovery Manager role group to search only the mailboxes of members of the Ottawa Users distribution group. 
+This example allows members of the eDiscovery Manager role group to search only the mailboxes of members of the Ottawa Users distribution group. Get-DistributionGroup in Exchange Online Powershell is used to find the members of Ottawa Users.
   
 ```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
@@ -160,7 +160,7 @@ $DG = Get-DistributionGroup "Ottawa Users"
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
 
-This example prevents any user from deleting content from the mailboxes of members of the Executive Team distribution group.
+This example prevents any user from deleting content from the mailboxes of members of the Executive Team distribution group. Get-DistributionGroup in Exchange Online Powershell is used to find the members of Executive Team.
 
 ```powershell
 $DG = Get-DistributionGroup "Executive Team"
