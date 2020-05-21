@@ -87,7 +87,7 @@ This table shows the results of enabling MFA with security defaults and Conditio
 | **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
 ||||
 
-## Admin training and technical resources for MFA and identity
+## Admin technical resources for MFA and identity
 
 - [MFA planning for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan)
 - [Top 5 ways your Azure AD can help you enable remote work](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
@@ -100,7 +100,7 @@ This table shows the results of enabling MFA with security defaults and Conditio
 After deployment of MFA, your users:
 
 - Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and is using MFA for all sign-ins.
+- Have completed the MFA registration process and are using MFA for all sign-ins.
 
 ## Next step
 
