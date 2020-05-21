@@ -289,7 +289,6 @@ Personal data is any information relating to an identified or identifiable perso
 - Work address
 - Credit/Debit card numbers
 - Social media posts
-- Social media posts
 - IP address (EU region)
 - Location / GPS data
 - Cookies
