@@ -69,6 +69,9 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
         - **Custom mailbox**: In the box that appears, enter the email address of an existing Exchange Online mailbox. Distribution groups are not allowed. Use this option if you want the message to only go to the admin or security operations team for analysis first. Messages will not go to Microsoft unless the admin forwards it.
 
         When you're finished, click **Confirm**.
+        
+     > [!NOTE]
+     USGov Tenants (GCC, GCC-H, and DoD) can only enable Custom Mailbox to Report Message. Other two options will be disabled by default for them. 
 
      > [!CAUTION]
      > If you have [disabled junk email reporting in Outlook on the web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web) using Outlook on the web mailbox policies, but you configure either of the previous settings to report messages to Microsoft, users will be able to report messages to Microsoft in Outlook on the web using the Report Message add-in.
