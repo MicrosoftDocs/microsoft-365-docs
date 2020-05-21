@@ -489,7 +489,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 ## Related articles
 
-[Built-in sensitive information types and what they look for](what-the-sensitive-information-types-look-for.md)
+[Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 
 [Custom sensitive information types](custom-sensitive-info-types.md)
 

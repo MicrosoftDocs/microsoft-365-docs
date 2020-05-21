@@ -96,7 +96,7 @@ Cases are created for alerts that require deeper review and investigation of the
 Selecting a case on the case dashboard opens the case for investigation and review. This step is the heart of the insider risk management workflow. This area is where risk activity indicators, policy conditions, alerts details, and employee details are synthesized into an integrated view for reviewers. The primary investigation tools in this area are:
 
 - **User activity**: User activity is automatically displayed in an interactive chart that plots risk activities over time and by risk level for current or past risk activities. Reviewers can quickly filter and view the entire risk history for the employee and drill into specific activities for more details.
-- **Content explorer**: All data files and email messages associated with alert risk activities are automatically captured and displayed in the content explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
+- **Content Explorer**: All data files and email messages associated with alert risk activities are automatically captured and displayed in the Content Explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
 - **Case notes**: Reviewers provide notes for a case in the Case Notes section. This list consolidates all notes in a central view and include reviewer and date submitted information.
 
 For more information, see [Insider risk management cases](insider-risk-management-cases.md).

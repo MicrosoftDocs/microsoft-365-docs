@@ -129,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Sensitive information types
       items: 
-        - name: What the sensitive information types look for
-          href: what-the-sensitive-information-types-look-for.md
+        - name: Sensitive information type entity definitions 
+          href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
         - name: Watch an extended overview of customizing DLP
@@ -210,14 +210,14 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: Set up IRM in SharePoint admin center
       href: set-up-irm-in-sp-admin-center.md
-    - name: Understand data classification (preview)
+    - name: Understand data classification
       href: data-classification-overview.md
       items: 
-        - name: Get started with content explorer (preview)
+        - name: Get started with content explorer
           href: data-classification-content-explorer.md
-        - name: Get started with activity explorer (preview)
+        - name: Get started with activity explorer
           href: data-classification-activity-explorer.md
-        - name: Data classification public preview release notes (preview)
+        - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
         - name: Get started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
@@ -271,15 +271,25 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Retain data
       items: 
-        - name: Retention policies
+        - name: Learn about retention policies
           href: retention-policies.md
+        - name: Create and configure retention policies
+          href: create-retention-policies.md
+        - name: Retention for SharePoint and OneDrive
+          href: retention-policies-sharepoint.md
+        - name: Retention for Microsoft Teams
+          href: retention-policies-teams.md
+        - name: Retention for Exchange
+          href: retention-policies-exchange.md
         - name: File plan manager
           href: file-plan-manager.md
-        - name: Retention labels
+        - name: Learn about retention labels
           href: labels.md
+        - name: Create, publish, and auto-apply retention labels
+          href: create-retention-labels.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Create and publish retention labels by using PowerShell
+        - name: Use PowerShell to create and publish retention labels
           href: bulk-create-publish-labels-using-powershell.md
         - name: Event-based retention
           href: event-driven-retention.md
@@ -325,9 +335,11 @@
           items: 
             - name: File plan manager
               href: file-plan-manager.md
-            - name: Retention labels
+            - name: Learn about retention labels
               href: labels.md
-            - name: Create and publish retention labels by using PowerShell
+            - name: Create and publish retention labels
+              href: create-retention-labels.md
+            - name: Use PowerShell to create and publish retention labels at scale
               href: bulk-create-publish-labels-using-powershell.md
             - name: View label usage with label analytics
               href: label-analytics.md

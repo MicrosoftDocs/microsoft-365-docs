@@ -35,13 +35,13 @@ If you can't find an answer to your question, or you have a problem with your bi
   
 ::: moniker range="o365-worldwide"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice](understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice](understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 

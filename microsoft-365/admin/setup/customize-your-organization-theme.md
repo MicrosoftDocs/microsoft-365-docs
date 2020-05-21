@@ -29,7 +29,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
   
 ## Customize your theme in the admin center
 
-1. In the admin center, go to the **Settings** \> **Settings**, and then choose the **Organization profile** tab.
+1. In the admin center, go to the **Settings** \> **Org Settings**, and then choose the **Organization profile** tab.
 
 2. On the **Organization profile** tab, choose **Custom themes**.
 
@@ -59,7 +59,7 @@ Learn how to customize your theme in the Microsoft 365 admin center. As the admi
     
 4. Select **Save changes**.
     
-You'll see your new theme on the admin center right away and after a short delay, you'll see it throughout Microsoft 365, including pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). For an example of where you can customize theme changes from the admin center, see the following image.
+You'll see your new theme on the admin center right away, and, after a short delay, you'll see it throughout Microsoft 365, including pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284). For an example of where you can customize theme changes from the admin center, see the following image.
 
 ![m365-admin-tenant-theme-conceptual](../../media/m365-admin-tenant-theme-conceptual.png)
 
