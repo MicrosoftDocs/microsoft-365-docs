@@ -66,9 +66,9 @@ There are several other Advanced Spam Filter (ASF) settings in anti-spam policie
 
 We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
-|||||
-|---|---|---|---|
-|**Security feature name**|**Standard**|**Strict**|**Comment**|
+|||
+|---|---|
+|**Security feature name**|**Comment**|
 |**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
 |**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
 |**UL redirect to other port** (_IncreaseScoreWithRedirectToOtherPort_)||
