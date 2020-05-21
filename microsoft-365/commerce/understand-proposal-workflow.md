@@ -13,7 +13,7 @@ ms.collection:
 - commerce
 search.appverid:
 - MET150
-description: "Learn about the proposal workflow."
+description: "Learn about proposals to help you buy Microsoft products and services."
 ms.custom: 
 ROBOTS: NOINDEX
 ---
