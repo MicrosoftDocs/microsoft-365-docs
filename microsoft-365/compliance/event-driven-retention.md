@@ -41,7 +41,7 @@ Event-driven retention is typically used as part of a records-management process
     
 - A document that's been declared as a record but whose event trigger has not yet happened is retained indefinitely (records can't be permanently deleted), until an event triggers that document's retention period.
     
-- Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Disposition of content](disposition-reviews.md).
+- Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Disposition of content](disposition.md).
     
 A label based on an event has the same capabilities as any label in Office 365. To learn more, see [Overview of labels](labels.md).
 
