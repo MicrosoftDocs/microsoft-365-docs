@@ -39,13 +39,54 @@ When you sign in to the Microsoft 365 admin center, you'll now go to the new adm
 
 And if you'd like to know what's new with other Microsoft cloud services:
 
-- [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
-- [Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
-- [Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
-- [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
-- [SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+- [What's new in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/whats-new)
+- [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
+- [What's new in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
+- [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [What's new in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)
+- [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
+
+## May 2020
+
+### New update channel for Office
+
+On May 12, we announced the availability of a new update channel for Office:  Monthly Enterprise Channel. This update channel provides your users with new Office features once a month, on the 2nd Tuesday of the month.
+
+If you allow your users to self-install Office from the portal, you can select Monthly Enterprise Channel for them. To do this, sign in to the Microsoft 365 admin center and go to **Show all** >**Settings** > **Org settings** > **Services** > **Office software download settings**. If you select **Once a month (Monthly Enterprise Channel)**, then any new self-installs of Office will be configured to use Monthly Enterprise Channel.
+
+In conjunction with the release of Monthly Enterprise Channel, we’re also revising the names of the existing update channels. For example, Monthly Channel is being renamed to Current Channel. The new names take effect on June 9, 2020.
+
+For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
+
+### New admin roles
+
+We've added some new Azure Active Directory admin roles to the Microsoft 365 admin center.
+
+- Hybrid identity admin role gives users permission to manage cloud provisioning and authentication services.
+- Network admin role lets users manage network locations and review network insights for Microsoft 365 Software as a Service apps.
+- Printer admin role grants permission to manage all aspects of printers and printer connections.
+- Printer technician is a subset of the Printer admin role where those users can register and unregister printers, and update printer status.
+To find out more about these roles, see [About admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+
+### Export groups list
+
+We've heard from a lot of admins that they need to share information about groups and their usage to people who don't have access to the admin centers. You can now export the Groups list to a CSV file for auditing purposes, which means you can throw out that old PowerShell script. To try it out, go to **Groups** > **Groups**, and then select **Export groups** from the command bar.
+
+### Microsoft 365 solution and architecture center
+
+Just this month, we released a new site on [https://docs.microsoft.com](https://docs.microsoft.com) called the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center), which brings together the technical guidance you need to understand, plan, and implement integrated Microsoft 365 solutions for secure and compliant collaboration. In this center, you'll find:
+
+- Foundational solution guidance
+- Workload solutions and scenario guidance
+- Solution and architecture illustrations (The posters!!!)
+- Industry specific guidance
+- Enterprise architecture design principals
+
+### Docs, training, and videos
+
+- **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- The [Microsoft 365 admin center help](https://docs.microsoft.com/microsoft-365/admin/) hub page was updated to help you find what you need more quickly. And if you go look at that page right now, we've added a card to inform you of important updates and changes.
 
 ## April 2020
 
@@ -99,7 +140,7 @@ We've got two updates for Groups this month:
 - You can now edit email addresses for Office 365 groups (Also known as Groups in Outlook, and soon to be known as Microsoft 365 groups).
 - We've heard your feedback and we've added clearer error messaging for why you can't convert a group to a Microsoft Team.
 
-### Docs, videos, and training
+### Docs, videos, and training (April)
 
 **What's new in Microsoft 365 video series**: This month, we cover tips and resources to help small businesses transition to remote work including how to roll out Microsoft Teams, remote work training resources to stay connected with clients and partners, and the new Microsoft 365 Business Voice plan. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
