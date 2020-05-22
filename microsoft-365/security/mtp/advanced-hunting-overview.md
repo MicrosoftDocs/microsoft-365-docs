@@ -47,7 +47,7 @@ We recommend going through several steps to quickly get up and running with adva
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | - [Custom detections overview](custom-detections-overview.md)<br>- [Custom detection rules](custom-detection-rules.md) |
 
 > [!NOTE]
-> You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center.
+> You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center. For More information  [Manage access to Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions?view=o365-worldwide)
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
