@@ -100,7 +100,7 @@ If you have been using [baseline Conditional Access policies](https://docs.micro
 
 ### Conditional Access policies
 
-Create, configure, or enable the appropriate policies that include the group of users that require MFA for sign-in.
+Create, configure, and enable the appropriate policies that include the group of users that require MFA for sign-in.
 
 ### Per-user MFA (not recommended)
 
