@@ -29,20 +29,20 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## Azure Organizational relationships settings
+## To configure external collaboration settings:
 
-Sharing in Microsoft 365 is governed at its highest level by the organizational relationships settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
+Sharing in Microsoft 365 is governed at its highest level by the external collaboration settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
 
-Check the organizational relationships settings to ensure that sharing with guests is not blocked.
+Check the external collaboration settings to ensure that sharing with guests is not blocked.
 
-![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-external-collaboration-settings.png)
 
-To set organizational relationship settings
+To set external collaboration settings
 
-1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
-2. In the left navigation, click **Azure Active Directory**.
-3. In the **Overview** pane, click **Organizational relationships**.
-4. In the **Organizational relationships** pane, click **Settings**.
+1. Sign in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
+2. In the left navigation, click **Azure Active Directory** > **User settings**.
+3. Click **Manage external collaboration settings**.
+4. On the External collaboration settings page, choose the policies you want to enable.
 5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
 6. If you made changes, click **Save**.
 
