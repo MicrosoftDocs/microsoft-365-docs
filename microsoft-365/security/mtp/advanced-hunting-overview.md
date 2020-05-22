@@ -46,8 +46,8 @@ We recommend going through several steps to quickly get up and running with adva
 | **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | - [Query best practices](advanced-hunting-shared-queries.md) <br>- [Hunt across devices and emails](advanced-hunting-best-practices.md) |
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | - [Custom detections overview](custom-detections-overview.md)<br>- [Custom detection rules](custom-detection-rules.md) |
 
-> [!NOTE]
-> You must be assigned an appropriate role, such as Global Administrator, Security Administrator, Security Operator, or Security Reader in Azure Active Directory to access the Microsoft 365 security center. For More information  [Manage access to Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-permissions?view=o365-worldwide)
+## Get access
+To use advanced hunting or other [Microsoft Threat Protection](microsoft-threat-protection.md) capabilities, you need to be assigned an appropriate role in Azure AD. Note that your access to data is influenced by role-based access control settings in Microsoft Defender ATP. [Read about managing access to Microsoft Threat Protection](mtp-permissions.md)
 
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
