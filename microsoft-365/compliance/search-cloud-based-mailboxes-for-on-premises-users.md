@@ -124,11 +124,11 @@ You can use the **New-ComplianceSearch** and **Set-ComplianceSearch** cmdlets in
   
 For more information using these cmdlets, see:
   
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearch)
+- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearch)
 
-- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/set-compliancesearch)
+- [Set-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/set-compliancesearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/start-compliancesearch)
+- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/start-compliancesearch)
 
 ## Known issues
 

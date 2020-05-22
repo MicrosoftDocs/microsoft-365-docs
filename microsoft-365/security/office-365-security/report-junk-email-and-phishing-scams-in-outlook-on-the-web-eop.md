@@ -108,7 +108,7 @@ By default, users can report spam false positives, false negatives, and phishing
    Set-OwaMailboxPolicy -Identity "Contoso Managers" -ReportJunkEmailEnabled $true
    ```
 
-For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/get-owamailboxpolicy) and [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy).
+For detailed syntax and parameter information, see [Get-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/get-owamailboxpolicy) and [Set-OwaMailboxPolicy](https://docs.microsoft.com/powershell/module/exchange/set-owamailboxpolicy).
 
 ### How do you know this worked?
 

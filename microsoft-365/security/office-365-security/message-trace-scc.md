@@ -22,7 +22,7 @@ Message trace in the Security & Compliance Center follows email messages as they
 Message trace in the Security & Compliance Center improves upon the original message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
-> • To do a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
+> • To do a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
 
 ## Open message trace
 
