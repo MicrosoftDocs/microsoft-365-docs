@@ -67,8 +67,6 @@ On the file plan **Labels** tab, the following additional information and capabi
     - Auto-delete
     - Review required (aka Disposition review)
 
-![Label settings in file plan](../media/file-plan-label-columns.png)
-
 ### Retention label file plan descriptors columns
 
 You can now include more information in the configuration of your retention labels. Inserting file plan descriptors into retention  labels will improve the manageability and organization of your file plan.
