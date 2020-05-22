@@ -18,7 +18,8 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
-- okr_smb 
+- okr_smb
+- seo-marvel-may2020
 search.appverid:
 - MET150
 - MOE150
@@ -43,7 +44,7 @@ Watch a short video about setting up Microsoft 365 Business Standard.<br><br>
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-### 1. Sign up and set up
+### 1. Sign up and set up office 365
 
 1. To sign up for a Microsoft 365 for business plan, go to the [Office Products site](https://www.aka.ms/office365signup) and select **Buy now**.
 
@@ -304,7 +305,7 @@ To take a tour of Microsoft 365 and learn how to use all the Office mobile apps,
 
 ### Get ready for Office 365
 
-- **First, verify that you qualify for an education subscription** Follow the steps to [Verify your domain to prove ownership, nonprofit or education status, or to activate Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), so Microsoft can give you the go-ahead for using an education plan. Then you can get Office 365 set up for your school by following the guidance in this article.
+- **First, verify that you qualify for an education subscription** Follow the steps to [Verify your domain to prove ownership, nonprofit or education status, or to activate Yammer](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq), so Microsoft can give you the go-ahead for using an education plan. Then you can set up office 365 for your school by following the guidance in this article.
 
 - **Get help?** If you want help with a more advanced deployment, **[FastTrack](https://www.microsoft.com/en-us/fasttrack/microsoft-365/office-365)** is a great place to start. You can also [find a partner](https://go.microsoft.com/fwlink/p/?linkid=391089) to help you.
 
