@@ -99,7 +99,7 @@ To view details about a specific user, replace \<emailaddress\> with their email
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-For detailed syntax and parameter information, see [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress).
+For detailed syntax and parameter information, see [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress).
 
 To remove a user from the Restricted Users list, replace \<emailaddress\> with their email address and run the following command:
 
@@ -107,4 +107,4 @@ To remove a user from the Restricted Users list, replace \<emailaddress\> with t
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-For detailed syntax and parameter information, see [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress).
+For detailed syntax and parameter information, see [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress).
