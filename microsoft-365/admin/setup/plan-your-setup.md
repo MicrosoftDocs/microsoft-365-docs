@@ -1,5 +1,5 @@
 ---
-title: "Plan your setup of Microsoft 365 for business"
+title: Plan your move to Microsoft 365 for business
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -18,14 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
-description: "Learn what what you need to do to set up your Microsoft 365 for business."
+ms.custom: seo-marvel-may2020
+description: Learn about the requirements and considerations for making the move to Microsoft 365 for business.
 ---
-
-# Plan your setup of Microsoft 365 for business
 
 This article is for people who have subscribed to a Microsoft 365 for business plan.
   
-There are a few things you need to decide, and info you need to have on hand, before moving your organization to Microsoft 365.
+Before moving your organization to Microsoft 365, there are requirements you need to meet, info you need to have on hand, and decisions you have to make.
   
 ## Info to have on hand before you run the setup wizard
 
