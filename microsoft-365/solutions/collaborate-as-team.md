@@ -29,11 +29,11 @@ This video shows the configuration steps described in this document.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
-## To configure external collaboration settings:
+## Configuring external collaboration settings
 
 Sharing in Microsoft 365 is governed at its highest level by the external collaboration settings in Azure Active Directory. If guest sharing is disabled or restricted in Azure AD, this will override any sharing settings that you configure in Microsoft 365.
 
-To set external collaboration settings
+To set external collaboration settings:
 
 1. Sign in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
 2. In the left navigation, click **Azure Active Directory** > **User settings**.
