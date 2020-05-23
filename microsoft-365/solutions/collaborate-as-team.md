@@ -45,17 +45,17 @@ To set external collaboration settings:
 Note the settings in the **Collaboration restrictions** section. Make sure that the domains of the guests that you want to collaborate with aren't blocked.
 
   > [!NOTE]
-  > Also, you can set external collaboration settings another way, click **Azure Active Directory** > **External Identities** > **External collaboration settings**.
+  > You can also set external collaboration settings by selecting **Azure Active Directory** > **External Identities** > **External collaboration settings**.
   
   ![Screenshot of Azure Active Directory External Collaboration Settings page](../media/azure-ad-external-collaboration-settings.png)
   
-  - **Guest users permissions are limited**: This policy determines permissions for guests in your directory. Select **Yes** to block guests from certain directory tasks, like enumerating users, groups, or other directory resources. Select **No** to give guests the same access to directory data as  regular users in your directory.
+  - **Guest users permissions are limited**: This policy determines permissions for guests in your directory. Select **Yes** to block guests from certain directory tasks, like enumerating users, groups, or other directory resources. Select **No** to give guests the same access to directory data as regular users in your directory.
    - **Admins and users in the guest inviter role can invite**: To allow admins and users in the "Guest Inviter" role to invite guests, set this policy to **Yes**.
    - **Members can invite**: To allow non-admin members of your directory to invite guests, set this policy to **Yes**.
    - **Guests can invite**: To allow guests to invite other guests, set this policy to **Yes**.
-   - **Enable Email One-Time Passcode for guests (Preview)**: For more information about the one-time passcode feature, see [Email one-time passcode authentication (preview)](https://docs.microsoft.com/en-us/azure/active-directory/b2b/one-time-passcode).
-   - **Collaboration restrictions**: For more information about allowing or blocking invitations to specific domains, see [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/en-us/azure/active-directory/b2b/allow-deny-list).
-   - **Enable guest self-service sign up via user flows (Preview)**: For more information about the Guest self service sign up via user flows, see [self service sign up user flows (Preview)](https://docs.microsoft.com/en-us/azure/active-directory/b2b/self-service-sign-up-user-flow). 
+   - **Enable Email One-Time Passcode for guests (Preview)**: For more information about the one-time passcode feature, see [Email one-time passcode authentication (preview)](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode).
+   - **Collaboration restrictions**: For more information about allowing or blocking invitations to specific domains, see [Allow or block invitations to B2B users from specific organizations](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
+   - **Enable guest self-service sign up via user flows (Preview)**: For more information about guest self-service sign up via user flows, see [Add a self-service sign-up user flow to an app (Preview)](https://docs.microsoft.com/azure/active-directory/b2b/self-service-sign-up-user-flow). 
 
 ## Teams guest access settings
 
