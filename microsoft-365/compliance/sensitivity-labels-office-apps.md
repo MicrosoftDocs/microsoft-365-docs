@@ -164,6 +164,30 @@ Otherwise:
 
 To use the Office built-in labeling client with Office on the web for documents in SharePoint or OneDrive, make sure you've [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
+## Support for external users and labeled content
+
+When you label a document or email, the label is stored as metadata that includes your tenant and a label GUID. When a labeled document or email is opened by an Office app that supports sensitivity labels, this metadata is checked and only if the user belongs to the same tenant, the label displayed in their app. For example, for built-in labeling for Word, PowerPoint, and Excel, the label name is displayed on the status bar. When a user.  
+
+This means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. However, the following elements from an applied label are visible to users outside your organization:
+
+- Content markings. When a label applies a header, footer, or watermark, these are added directly to the content and remain visible until somebody modifies or deletes them.
+
+- The name and description of the underlying protection template from a label that applied encryption. This information displays in a message bar at the top of the document, to provide information about who is authorized to open the document, and their usage rights for that document.
+
+### Sharing encrypted documents with external users
+
+In addition to restricting access to users in your own organization, you can extend access to any other user who has an account in Azure Active Directory. To successfully open the encrypted document, they also need an application that supports Rights Management protection, such as Office apps. These applications are known as [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications).
+
+If external users do not have an account in Azure Active Directory, you can create a guest account for them in your tenant. For the account name, can you specify an email address that they already use. For example, their Gmail address. This guest account is a Microsoft account that is associated with your tenant. For encrypted documents, Microsoft accounts are supported for Windows desktop apps from Microsoft 365, but not MacOS, Android, or iOS. This guest account can also be used to access a shared document in SharePoint or OneDrive, when you have [enabled sensitivity labels for Office files in SharePoint and OnDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+It's important to note that the user account name for the Microsoft account must match the email address that's used to restrict access for the encryption settings.
+
+Users can create their own Microsoft account as well. For example, somebody shares an encrypted document with them, and the encryption settings use their Gmail email address. This user can create their own Microsoft account and after signing in with it, open the document. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document). 
+
+When a user with a Microsoft account opens an encrypted document in this way, it automatically creates a guest account for the tenant if a guest account with the same name doesn't already exist. When the guest account exists, it can then be used to open documents in SharePoint and Online, in addition to opening encrypted documents from the Windows desktop app. 
+
+However, the automatic guest account is not created immediately because of replication latency. If you specify personal email addresses as part of your label encryption settings, we recommend you that create corresponding guest accounts in Azure Active Directory. Then let these users know that these accounts have been provided in advance for secure document sharing.
+
 ## When Office apps apply content marking and encryption
 
 Office apps apply content marking and encryption with a sensitivity label differently, depending on the app you use.
