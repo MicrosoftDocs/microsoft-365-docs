@@ -166,7 +166,7 @@ To use the Office built-in labeling client with Office on the web for documents 
 
 ## Support for external users and labeled content
 
-When you label a document or email, the label is stored as metadata that includes your tenant and a label GUID. When a labeled document or email is opened by an Office app that supports sensitivity labels, this metadata is checked and only if the user belongs to the same tenant, the label displayed in their app. For example, for built-in labeling for Word, PowerPoint, and Excel, the label name is displayed on the status bar. When a user.  
+When you label a document or email, the label is stored as metadata that includes your tenant and a label GUID. When a labeled document or email is opened by an Office app that supports sensitivity labels, this metadata is read and only if the user belongs to the same tenant, the label displays in their app. For example, for built-in labeling for Word, PowerPoint, and Excel, the label name displays on the status bar. 
 
 This means that if you share documents with another organization that uses different label names, each organization can apply and see their own label applied to the document. However, the following elements from an applied label are visible to users outside your organization:
 
