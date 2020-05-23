@@ -74,8 +74,12 @@ Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.
 ## Browser requirements
 Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
 
-## US GCC and GCC High availability
-Currently, Microsoft Threat Protection is not available to US Government Community Cloud (GCC) and Government Community Cloud High (GCC High) customers. 
+## Availability to US GCC, GCC High, and other US government institutions
+Currently, Microsoft Threat Protection is *not* available to:
+- US Government Community Cloud (GCC)
+- US Government Community Cloud High (GCC High)
+- US Department of Defense
+- All US government institutions with commercial licenses
 
 ## Related topics
 - [Microsoft Threat Protection overview](microsoft-threat-protection.md)

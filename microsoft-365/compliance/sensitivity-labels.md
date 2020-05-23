@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use sensitivity labels from the Microsoft Information Protection framework, to classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. These labels can apply protection settings that include encryption visual markings such as footers and watermarks."
+description: Use sensitivity labels from the Microsoft Information Protection framework to classify and protect your organization's data, without hindering user productivity and collaboration.
 ---
 
 # Learn about sensitivity labels

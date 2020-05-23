@@ -55,6 +55,7 @@ There are two different methods for automatically applying a sensitivity label:
     - Maximum of 25,000 automatically labeled files (Word, PowerPoint, or Excel) in your tenant per day
     - Maximum of 10 sites collections across all policies
     - Maximum of 10 policies across your tenant
+    - Modified date is not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied
 
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
@@ -129,7 +130,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 ![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
 
 > [!CAUTION]
-> The built-in classifier **Source Code** is not supported for this preview. In addition, we are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
+> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
 For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
@@ -292,5 +293,5 @@ You can also see the results of your auto-labeling policy by using [content expl
 - **Content Explorer Content viewer** lets you see the file's contents.
 
 > [!TIP]
-> You can also use content explorer to identify locations that have unlabeled documents that contain sensitive information. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
+> You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
 
