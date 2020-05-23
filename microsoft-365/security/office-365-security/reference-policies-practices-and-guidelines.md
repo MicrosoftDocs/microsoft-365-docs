@@ -2,10 +2,10 @@
 title: "Reference Policies, practices, and guidelines"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 12/09/2016
+ms.date:
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -26,9 +26,9 @@ If you are not in compliance with these policies and guidelines, it may not be p
 
 ## General Microsoft policies
 
-Email sent to Microsoft 365 users must comply with all Microsoft policies governing email transmission and use of Office 365.
+Email sent to Microsoft 365 users must comply with all Microsoft policies governing email transmission and use of Microsoft 365.
 
-- Terms of Services applicable to Office 365; in particular, the prohibition against using the service to spam or distribute malware
+- Terms of Services applicable to Microsoft 365; in particular, the prohibition against using the service to spam or distribute malware.
 
 - [Microsoft Services Agreement](https://www.microsoft.com/servicesagreement/)
 
@@ -80,7 +80,7 @@ Microsoft actively works with industry bodies and service providers in order to 
 
 - [Online Trust Alliance](https://www.otalliance.org/resources)
 
-- [Email Sender &amp; Provider Coalition](https://www.espcoalition.org/)
+- [Email Sender & Provider Coalition](https://www.espcoalition.org/)
 
 ## Abuse and spam reporting
 

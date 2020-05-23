@@ -1,5 +1,5 @@
 ---
-title: "Remove blocked users from the Restricted Users portal"
+title: Remove blocked users from the Restricted Users portal
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -18,6 +18,7 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: "Admins can learn how to remove users from the Restricted Users portal in Office 365. Users are added to the Restricted Users portal for sending outbound spam, typically as a result of account compromise."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Remove blocked users from the Restricted Users portal in Office 365
@@ -98,7 +99,7 @@ To view details about a specific user, replace \<emailaddress\> with their email
 Get-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-For detailed syntax and parameter information, see [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-blockedsenderaddress).
+For detailed syntax and parameter information, see [Get-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/get-blockedsenderaddress).
 
 To remove a user from the Restricted Users list, replace \<emailaddress\> with their email address and run the following command:
 
@@ -106,4 +107,4 @@ To remove a user from the Restricted Users list, replace \<emailaddress\> with t
 Remove-BlockedSenderAddress -SenderAddress <emailaddress>
 ```
 
-For detailed syntax and parameter information, see [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-blockedsenderaddress).
+For detailed syntax and parameter information, see [Remove-BlockedSenderAddress](https://docs.microsoft.com/powershell/module/exchange/remove-blockedsenderaddress).

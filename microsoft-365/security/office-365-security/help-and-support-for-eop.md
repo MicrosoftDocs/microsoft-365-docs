@@ -16,7 +16,7 @@ description: "Microsoft provides help for EOP in a variety of places and methods
 
 # Help and support for EOP
 
-The technical support resources listed here will help you find answers if you are having difficulty with Microsoft Exchange Online Protection (EOP). Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this topic will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 
 ## Self-support options
 

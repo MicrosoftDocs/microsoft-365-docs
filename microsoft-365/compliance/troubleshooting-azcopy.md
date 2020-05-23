@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Troubleshoot errors for Azure AzCopy when loading non-Office 365 data for error remediation in Advanced eDiscovery.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Troubleshoot AzCopy in Advanced eDiscovery

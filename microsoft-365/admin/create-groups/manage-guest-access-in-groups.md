@@ -22,13 +22,21 @@ description: "Learn how to add guests to a Microsoft 365 group, view guest users
 
 # Manage guest access in Microsoft 365 groups
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 By default, guest access for Microsoft 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 
 When it's turned on, group members can invite guest users to a Microsoft 365 group through Outlook on Web. Invitations are sent to the group owner for approval.
 
 > [!Note]
 > Yammer Enterprise networks that are in Native Mode or the [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) do not support network guests.
-> Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) for instructions.
+> Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) for instructions.
 
 ### Edit guest information
 

@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: View a table listing the metadata fields for documents in an evidence set in Data Investigations (Preview).
+ms.custom: seo-marvel-mar2020
 ---
 
 # Document metadata fields in Data Investigations (Preview)

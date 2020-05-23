@@ -16,7 +16,9 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
-description: "Walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment. Your security needs might require more or less security. Use these recommendations as a starting point."
+ms.custom:
+- seo-marvel-apr2020
+description: "This topic walks you through recommended configuration for tenant-wide settings that affect the security of your Microsoft 365 environment."
 ---
 
 # Configure your Microsoft 365 tenant for increased security
@@ -34,7 +36,7 @@ The Microsoft 365 security center includes capabilities that protect your enviro
 ||||
 |---|---|---|
 |**Area**|**Includes a default policy**|**Recommendation**|
-|**Anti-phishing**|Yes|If you have a custom domain, configure the default anti-phishing policy to protect the email accounts of your most valuable users, such as your CEO, and to protect your domain. Review [Anti-phishing policies in Office 365](set-up-anti-phishing-policies.md) and see [Configure the default anti-phishing policy in EOP](configure-anti-phishing-policies-eop.md) or [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).|
+|**Anti-phishing**|Yes|If you have a custom domain, configure the default anti-phishing policy to protect the email accounts of your most valuable users, such as your CEO, and to protect your domain. Review [Anti-phishing policies in Office 365](set-up-anti-phishing-policies.md) and see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) or [Configure ATP anti-phishing policies in Office 365](configure-atp-anti-phishing-policies.md).|
 |**Anti-Malware Engine**|Yes| Edit the default policy: <br/> &ensp;&ensp;* Common Attachment Types Filter — Select On <br/><br/> You can also create custom malware filter policies and apply them to specified users, groups, or domains in your organization. <br/><br/> More information: <br/> &ensp;&ensp;* [Anti-malware protection](anti-malware-protection.md) <br/> &ensp;&ensp;* [Configure anti-malware policies](configure-anti-malware-policies.md)|
 |**ATP Safe Attachments**|No| On the main page for Safe Attachments, protect files in SharePoint, OneDrive, and Microsoft Teams by checking this box: <br/> &ensp;&ensp;* Turn on ATP for SharePoint, OneDrive, and Microsoft Teams <br/><br/> Add a new safe attachment policy with these settings: <br/> &ensp;&ensp;* Block — Block the current and future emails and attachments with detected malware (choose this option) <br/> &ensp;&ensp;* Enable redirect — (Check this box and enter an email address, such as an admin or quarantine account) <br/> &ensp;&ensp;* Apply the above selection if malware scanning for attachments times out or error occurs (check this box) <br/> &ensp;&ensp;* Applied To — The recipient domain is (select your domain) <br/><br/>More information: [Set up Office 365 ATP Safe Attachments policies](set-up-atp-safe-attachments-policies.md)|
 |**ATP Safe Links**|Yes| Add this setting to the default policy for the entire organization: <br/> &ensp;&ensp;* Use Safe Links in: Microsoft 365 Apps for enterprise, Office for iOS and Android (select this option). <br/><br/>Recommended policy for specific recipients: <br/> &ensp;&ensp;* URLs will be rewritten and checked against a list of known malicious links when user clicks on the link (select this option). <br/> &ensp;&ensp;* Use Safe Attachments to scan downloadable content (check this box). <br/> &ensp;&ensp;* Applied To — The recipient domain is (select your domain). <br/><br/> More information: [Office 365 ATP Safe Links](atp-safe-links.md).|
@@ -104,7 +106,7 @@ For secure environments, be sure to disable authentication for apps that do not 
 
 In the meantime, use one of the following methods to accomplish this for SharePoint Online and OneDrive for Business:
 
-- Use PowerShell, see [Block apps that do not use modern authentication](https://docs.microsoft.com/intune-classic/deploy-use/block-apps-with-no-modern-authentication).
+- Use PowerShell, see [Block apps that do not use modern authentication (ADAL)](https://docs.microsoft.com/mem/intune/protect/app-modern-authentication-block).
 
 - Configure this in the SharePoint admin center on the "device access' page — "Control access from apps that don't use modern authentication." Choose Block.
 

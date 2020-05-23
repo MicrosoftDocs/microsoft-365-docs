@@ -30,7 +30,7 @@ If Hover is your DNS hosting provider, follow the steps in this article to verif
      
 After you add these records at Hover, your domain will be set up to work with Microsoft services.
   
-To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -122,7 +122,7 @@ Follow the steps below or [watch the video](https://support.office.com/article/V
     
     |**Hostname**|**Record Type**|**Priority**|**Hostname**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |0  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |0  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Type or copy and paste DNS values](../../media/2c8915fa-04a8-4d2a-a8ae-a79de0c8ef99.png)
   

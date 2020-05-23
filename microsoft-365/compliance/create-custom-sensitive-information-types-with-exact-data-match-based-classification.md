@@ -15,7 +15,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Create custom sensitive information types with Exact Data Match based classification."
+description: Learn how to create custom sensitive information types with Exact Data Match based classification.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Create custom sensitive information types with Exact Data Match based classification
@@ -67,7 +68,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
       - Up to 32 columns (fields) per data source
       - Up to 5 columns (fields) marked as searchable
 
-2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname", and so on. As an example, our .csv file is called *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* and more.
+2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname", and so on. Please note that column headers can't include spaces or underscores in their names. As an example, our .csv file is called *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
 
 3. Define the schema for the database of sensitive information in .xml format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
 
@@ -488,7 +489,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 ## Related articles
 
-[Built-in sensitive information types and what they look for](what-the-sensitive-information-types-look-for.md)
+[Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 
 [Custom sensitive information types](custom-sensitive-info-types.md)
 
@@ -496,7 +497,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
 
 ## Feedback
 

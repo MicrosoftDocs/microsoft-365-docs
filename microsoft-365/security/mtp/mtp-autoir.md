@@ -49,7 +49,7 @@ A triggered alert creates an incident, which can start an automated investigatio
 |Devices (also referred to as endpoints)     |[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)<br/>[Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) |      
 |Email content (files and messages in mailboxes)     |[Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp)         |
 
-Each investigation generates verdicts (*Malicious*, *Suspicious*, or *Clean*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization's security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
+Each investigation generates verdicts (*Malicious*, *Suspicious*, or *No threats found*) for each piece of evidence investigated. Depending on the type of threat and resulting verdict, remediation actions occur automatically or upon approval by your organization's security operations team. Pending and completed actions are listed in the [Action center](mtp-action-center.md).
 
 > [!TIP]
 > If you think something was missed or wrongly detected by automated investigation and response features in Microsoft Threat Protection, let us know! See [How to report false positives/negatives in automated investigation and response (AIR) capabilities in Microsoft Threat Protection](mtp-autoir-report-false-positives-negatives.md).

@@ -26,6 +26,14 @@ ms.custom: okr_smb
 
 # Domains FAQ
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 This article contains answers to Frequently Asked Questions about domains in Office 365.
 
 If you can't find an answer to your question, let us know by leaving a comment and we'll add it to the list.
@@ -246,6 +254,8 @@ Providers that support all required DNS records:
 - Skype for Business Online desktop clients can use Autodiscover to automatically find the Skype for Business Online service so that users can sign in without having to enter a server name.
     
 - Skype for Business Online mobile clients can use Autodiscover to automatically find the Skype for Business Online service so that users can sign in without having to enter a server name.
+
+- Microsoft Teams federation with Skype for Business, either on-premises or online. For more information, see [Prepare your organization's network for Microsoft Teams](https://docs.microsoft.com/microsoftteams/prepare-network).
     
  **If SPF/TXT records are not supported**, other people may be able to use your domain to send spam or other malicious email. SPF records work by identifying the servers that are authorized to send email from your domain. 
   
@@ -361,7 +371,7 @@ You can keep using the initial onmicrosoft.de domain even after you add your dom
 
 ## How do I verify my nonprofit or education status?
 
-1. Select **Setup** in the [admin center](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx) to start the wizard. (Be sure to sign in to Office 365 first.) 
+1. Select **Setup** in the [admin center](https://docs.microsoft.com/microsoft-365/admin/admin-home) to start the wizard. (Be sure to sign in to Office 365 first.) 
     
 2. To become the admin for your school, select the **Become an admin** option in Office 365. 
     

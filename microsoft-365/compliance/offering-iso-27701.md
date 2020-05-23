@@ -46,7 +46,7 @@ It is important to recognize that an official GDPR certification requires pendin
 
 Modern organizations engage in complex data transfers with a deep network of business partners including partner organizations or co-controllers, processors such as cloud providers, and sub-processors such as vendors who support those same processors. Failure to comply with regulations in any part of this network may lead to cascading compliance issues across the supply chain. This is where a verification of compliance can be valuable beyond the assurance provided by contractual terms between these organizations. Since the global economy dictates that most of these organizations are spread out around the world, it is practical to use an international standard from ISO to manage compliance across the network.
 
-This reliance on compliance increases the importance of certification to the standard. While not all companies and organizations need to earn such certification, most will benefit from partners and vendors who do, especially when sensitive or high volumes of data processing is involved.
+This reliance on compliance increases the importance of certification to the standard. While not all companies and organizations need to earn such certification, most will benefit from partners and vendors who do, especially when sensitive or high volumes of data processing are involved.
 
 ## Building blocks of the standard
 
@@ -60,12 +60,32 @@ Key points on ISO/IEC 27001 and PIMS:
 
 ## What should your organization do with PIMS?
 
-No matter the size of your organization and whether it is a controller or a processor, your organization should consider pursuing certification, either for your own organization, or requesting it from vendors or suppliers based on your business requirements. This applies especially for processors, sub-processors, and co-controllers that are processing sensitive or high volumes of personal data. In any case, your organization should assess its business needs to determine if certification for its own products and services are suitable.
+No matter the size of your organization and whether it is a controller or a processor, your organization should consider pursuing certification, either for your own organization, or requesting it from vendors or suppliers based on your business requirements. This applies especially for processors, sub-processors, and co-controllers that are processing sensitive or high volumes of personal data. In any case, your organization should assess its business needs to determine if certification for its own products and services is suitable.
+
+## Microsoft in-scope cloud services
+
+- Azure, Azure Government, and Azure Germany
+- Azure DevOps Services
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
+- Microsoft Graph
+- Microsoft Healthcare Bot
+- Intune
+- Microsoft Managed Desktop
+- Power Automate (formerly Microsoft Flow) 
+- PowerApps
+- Power BI
+- Power BI Embedded
+- Power Virtual Agents
+- Microsoft Stream
+- Microsoft Threat Experts
+- Windows Defender Advanced Threat Protection
+
 
 ## Audits, reports, and certificates
 
-- [Azure ISO/IEC 27701 certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=c0431b3f-7716-4332-9c26-44b58174bdaf&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
-- [Azure ISO/IEC 27701 assessment report](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=1abbb81e-f4ca-4436-bbdb-b196a672efda&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_ISO_Reports)
+- [Azure, Dynamics 365, and Online Services:ISO27701 certification](https://aka.ms/azureiso27701cert)
+- [Azure, Dynamics 365, and Online Services:ISO27701 assessment report](https://aka.ms/azureiso27701report)
 
 ## Use Microsoft Compliance Score to assess your risk
 

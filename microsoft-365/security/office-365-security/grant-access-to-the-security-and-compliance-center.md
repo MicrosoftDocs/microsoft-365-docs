@@ -17,7 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
-description: "Users need to be assigned permissions in the Security & Compliance Center before they can manage any of its security or compliance features."
+description: "Users need to be assigned permissions in the Microsoft 365 Security & Compliance Center before they can manage any of its security or compliance features."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Give users access to the Security & Compliance Center
@@ -76,7 +77,7 @@ For more information about the different permissions you can give to users in th
 
    - _Member_ is the mailbox, universal security group (USG), or computer to add to the role group. You can specify only one member at a time.
 
-For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember).
+For detailed information on syntax and parameters, see [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember).
 
 ### How do you know this worked?
 
@@ -86,4 +87,4 @@ To verify that you've given users access to the Security & Compliance Center, us
 Get-RoleGroupMember -Identity "Organization Management"
 ```
 
-For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Get-RoleGroupMember).
+For detailed information on syntax and parameters, see [Get-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Get-RoleGroupMember).
