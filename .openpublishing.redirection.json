@@ -310,6 +310,26 @@
       "redirect_document_id": true
     },  
     {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-configassessment-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-secureconfigkb-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table",
+      "redirect_document_id": true
+    },  
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-softwareinventory-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path": "microsoft-365/security/mtp/advanced-hunting-tvm-softwarevulnerability-table.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table",
+      "redirect_document_id": true
+    }, 
+    {
       "source_path": "microsoft-365/security/mtp/advanced-hunting-accountinfo-table.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-identityinfo-table",
       "redirect_document_id": true
@@ -644,6 +664,36 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "microsoft-365/compliance/what-the-sensitive-information-types-look-for.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": true 
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-driver-s-license-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-national-identification-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-passport-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-social-security-number-or-equivalent-id.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/eu-tax-identification-number.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "./office-365-security/messaging-policy-and-compliance-in-eop.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/auditing-reports-in-eop",
       "redirect_document_id": true
@@ -671,6 +721,36 @@
     {
       "source_path": "./office-365-security/exchange-online-protection-eop.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/exchange-online-protection-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/enterprise/empower-people-to-work-remotely.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/teams-sharepoint-online-sites-highly-regulated-data.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/setup-secure-collaboration-with-teams",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/contoso-team-for-top-secret-project.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/contoso-team-for-top-secret-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/contoso-sharepoint-online-site-for-highly-confidential-assets.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/contoso-team-for-top-secret-project",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/enterprise/microsoft-365-deploment-guide-changes.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/enterprise/deploy-microsoft-365-enterprise",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/gdpr-breach-Dynamics365.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics",
       "redirect_document_id": true
     }
   ]

@@ -114,13 +114,13 @@ The global admin for your organization has full permissions to create and manage
     The command runs immediately and when the page is next refreshed, you no longer see the message or button. 
 
 > [!NOTE]
-> If you have Office 365 Multi-Geo, you must use PowerShell to enable these capabilities for all your geo-locations. See the next section for details.
+> If you have Microsoft 365 Multi-Geo, you must use PowerShell to enable these capabilities for all your geo-locations. See the next section for details.
 
 ### Use PowerShell to enable support for sensitivity labels
 
 As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet from SharePoint Online PowerShell. 
 
-If you have Office 365 Multi-Geo, you must use PowerShell to enable this support for all your geo-locations.
+If you have Microsoft 365 Multi-Geo, you must use PowerShell to enable this support for all your geo-locations.
 
 #### Prepare the SharePoint Online Management Shell
 
@@ -146,16 +146,16 @@ Before you run the PowerShell command to enable sensitivity labels for Office fi
 
 To enable the new capabilities, use the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet with the *EnableAIPIntegration* parameter:
 
-1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Using a work or school account that has global administrator or SharePoint admin privileges in Microsoft 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Note: If you have Office 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
+    Note: If you have Microsoft 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 
 2. Run the following command and press **Y** to confirm:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
-3. For Office 365 Multi-Geo: Repeat steps 1 and 2 for each of your remaining geo-locations.
+3. For Microsoft 365 Multi-Geo: Repeat steps 1 and 2 for each of your remaining geo-locations.
 
 ## Schedule roll-out after you create or change a sensitivity label
 
@@ -211,7 +211,7 @@ To disable these new capabilities, you must use PowerShell. Using the SharePoint
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-If you have Office 365 Multi-Geo, you must run this command for each of your geo-locations.
+If you have Microsoft 365 Multi-Geo, you must run this command for each of your geo-locations.
 
 ## Next steps
 
