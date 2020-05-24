@@ -176,21 +176,21 @@ This means that if you share documents with another organization that uses diffe
 
 ### Sharing encrypted documents with external users
 
-In addition to restricting access to users in your own organization, you can extend access to any other user who has an account in Azure Active Directory. To successfully open the encrypted document, they also need an application that supports Rights Management protection, such as Office apps. These applications are known as [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications).
+In addition to restricting access to users in your own organization, you can extend access to any other user who has an account in Azure Active Directory. All Office apps and other [RMS-enlightened application](https://docs.microsoft.com/azure/information-protection/requirements-applications#rms-enlightened-applications) can open encrypted documents after the user has successfully authenticated. 
 
-If external users do not have an account in Azure Active Directory, you can create a guest account for them in your tenant. For the account name, you can specify an email address that they already use. For example, their Gmail address. This guest account is a Microsoft account that is associated with your tenant. For encrypted documents, Microsoft accounts are supported for Windows desktop apps (Click to Run) from Microsoft 365. Microsoft accounts are not currently supported for MacOS, Android, or iOS. This guest account can also be used to access a shared document in SharePoint or OneDrive when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+If external users do not have an account in Azure Active Directory, you can create a guest account for them in your tenant. For the account name, you can specify an email address that they already use. For example, their Gmail address. This guest account can also be used to access a shared document in SharePoint or OneDrive when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+
+External users can also use and create a Microsoft account for encrypted documents when they use Microsoft 365 apps on Windows. This capability is not yet supported for MacOS, Android, or iOS. For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account with their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > The user account name for the Microsoft account must match the email address that's specified to restrict access for the encryption settings.
 
-Users can create their own Microsoft account as well. For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account and after signing in with it, open the document. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document). 
+When a user with a Microsoft account opens an encrypted document in this way, it automatically creates a guest account for the tenant if a guest account with the same name doesn't already exist. When the guest account exists, it can then be used to open documents in SharePoint and OneDrive by using a browser (Office on the web), in addition to opening encrypted documents from the Windows desktop app. 
 
-When a user with a Microsoft account opens an encrypted document in this way, it automatically creates a guest account for the tenant if a guest account with the same name doesn't already exist. When the guest account exists, it can then be used to open documents in SharePoint and OneDrive, in addition to opening encrypted documents from the Windows desktop app. 
+However, the automatic guest account is not created immediately because of replication latency. If you specify personal email addresses as part of your label encryption settings, we recommend that you create corresponding guest accounts in Azure Active Directory. Then let these users know that they must use this account to open an encrypted document from your organization.
 
-However, the automatic guest account is not created immediately because of replication latency. If you specify personal email addresses as part of your label encryption settings, we recommend that you create corresponding guest accounts in Azure Active Directory. Then let these users know that they must use the specified account whenever they they are prompted to sign in to open a protected document from your organization.
-
-> [!NOTE]
-> Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts is a more reliable method to securely share documents with external users.
+> [!TIP]
+> Because you can't be sure that external users will be using a supported Office client app, sharing links from SharePoint and OneDrive after creating guest accounts is a more reliable method to support secure collaboration with external users.
 
 ## When Office apps apply content marking and encryption
 
