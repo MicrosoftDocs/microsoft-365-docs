@@ -34,7 +34,8 @@ Here are some benefits of mailbox auditing on by default:
 - You have a consistent mailbox auditing policy across your organization (because you're auditing the same actions for all mailboxes).
 
 > [!NOTE]
->* The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this topic can help you. <br><br>* By default, only mailbox audit events for E5 users are available in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this topic.
+>* The important thing to remember about the release of mailbox auditing on by default is: you don't need to do anything to manage mailbox auditing. However, to learn more, customize mailbox auditing from the default settings, or turn it off altogether, this topic can help you.
+>- By default, only mailbox audit events for E5 users are available in audit log searches in the Security & Compliance Center or via the Office 365 Management Activity API. For more information, see the [More information](#more-information) section in this topic.
 
 ## Verify mailbox auditing on by default is turned on
 
