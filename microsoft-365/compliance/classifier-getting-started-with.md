@@ -66,13 +66,13 @@ Microsoft 365 comes with five recommended built-in classifiers:
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information.
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub.
 
-|language name|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
-|CoffeeScript|CSS     |Go       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Ruby     |
-|Scala    |Shell    |Swift    |Tex      |Vim Script|
+  |language name|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C#       |C++     |Clojure  |
+  |CoffeeScript|CSS     |Go       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Ruby     |
+  |Scala    |Shell    |Swift    |Tex      |Vim Script|
 
 
 - **Harassment**: detects a specific category of offensive language text items related to offensive conduct targeting one or multiple individuals based on the following traits: race, ethnicity, religion, national origin, gender, sexual orientation, age, disability.
