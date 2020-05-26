@@ -804,9 +804,8 @@
         - name: Set up Compliance Score (preview)
           href: compliance-score-setup.md
         - name: Working with Compliance Score (preview)
+          href: working-with-compliance-score.md
           items:
-            - name: Working with Compliance Score (preview)
-              href: working-with-compliance-score.md
             - name: Manage workflow with improvement actions
               href: working-with-compliance-score.md
             - name: Manage assessments
