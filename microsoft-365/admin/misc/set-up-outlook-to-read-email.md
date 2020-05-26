@@ -13,7 +13,7 @@ ms.custom:
 - Core_O365Admin_Migration
 - GSTips
 - MiniMaven
-ms.custom: AdminSurgePortfolio
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
