@@ -285,7 +285,7 @@ Typically, you use less restrictive actions, such as sending user notifications,
   
 ### Match accuracy
 
-As described above, a sensitive information type is defined and detected by using a combination of different types of evidence. Commonly, a sensitive information type is defined by multiple such combinations, called patterns. A pattern that requires less evidence has a lower match accuracy (or confidence level), while a pattern that requires more evidence has a higher match accuracy (or confidence level). To learn more about the actual patterns and confidence levels used by every sensitive information type, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+As described above, a sensitive information type is defined and detected by using a combination of different types of evidence. Commonly, a sensitive information type is defined by multiple such combinations, called patterns. A pattern that requires less evidence has a lower match accuracy (or confidence level), while a pattern that requires more evidence has a higher match accuracy (or confidence level). To learn more about the actual patterns and confidence levels used by every sensitive information type, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
   
 For example, the sensitive information type named Credit Card Number is defined by two patterns:
   
@@ -518,7 +518,7 @@ To use most of the cmdlets for the Security &amp; Compliance Center, you need to
   
 1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. Use any of these [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
+2. Use any of these [policy-and-compliance-dlp cmdlets](https://docs.microsoft.com/powershell/module/exchange/export-dlppolicycollection?view=exchange-ps)
     
 However, DLP reports need pull data from across Microsoft 365, including Exchange Online. For this reason, **the cmdlets for the DLP reports are available in Exchange Online Powershell -- not in Security &amp; Compliance Center Powershell**. Therefore, to use the cmdlets for the DLP reports, you need to:
   
@@ -526,9 +526,9 @@ However, DLP reports need pull data from across Microsoft 365, including Exchang
     
 2. Use any of these cmdlets for the DLP reports:
     
-    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
+    - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetectionsReport?view=exchange-ps)
 
-    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
+    - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/Get-DlpDetailReport?view=exchange-ps)
     
 ## More information
 
@@ -540,7 +540,7 @@ However, DLP reports need pull data from across Microsoft 365, including Exchang
     
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
     
-- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
     
 - [What the DLP functions look for](what-the-dlp-functions-look-for.md)
     

@@ -146,9 +146,9 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 - Note that files saved in OneDrive for Business aren't deleted unless the user is deleted from the Microsoft 365 admin center or is removed through Active Directory synchronization. For more information, see [OneDrive retention and deletion](https://docs.microsoft.com/onedrive/retention-and-deletion).
 
-- Also, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery when the license is removed. For more information, see the "Searching disconnected or de-licensed mailboxes" section in [Content Search in Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
+- Also, the user's mailbox is no longer searchable by using an eDiscovery tool such as Content Search or Advanced eDiscovery when the license is removed. For more information, see the "Searching disconnected or de-licensed mailboxes" section in [Content Search in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/content-search#searching-disconnected-or-de-licensed-mailboxes).
 
-- If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](https://docs.microsoft.com/office365/securitycompliance/inactive-mailboxes-in-office-365). For more information, see [Create and manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/office365/securitycompliance/create-and-manage-inactive-mailboxes).
+- If you have an Enterprise subscription, like Office 365 Enterprise E3, Exchange Online lets you preserve the mailbox data of a deleted user account by using [inactive mailboxes](https://docs.microsoft.com/microsoft-365/compliance/inactive-mailboxes-in-office-365). For more information, see [Create and manage inactive mailboxes in Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes).
 
 - For information about how to block a user's access to Microsoft 365 data after their license has been removed and how to get access to the data afterwards, see [Remove a former employee](../add-users/remove-former-employee.md).
 
