@@ -806,11 +806,11 @@
         - name: Working with Compliance Score (preview)
           href: working-with-compliance-score.md
           items:
-            - name: Manage workflow with improvement actions
+            - name: Manage compliance with assessments
               href: working-with-compliance-score.md
-            - name: Manage assessments
+            - name: Improvement actions
               href: working-with-compliance-score.md
-            - name: Compliance Score templates
+            - name: Templates for assessments
               href: working-with-compliance-score.md
         - name: Compliance Score calculation (preview)
           href: compliance-score-methodology.md
