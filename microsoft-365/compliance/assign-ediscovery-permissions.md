@@ -44,7 +44,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Security & Compliance Center.
     
-- You can use the [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/role-based-access-control/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see the [More information](#more-information) section. 
+- You can use the [Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/Add-RoleGroupMember) cmdlet in Security & Compliance Center PowerShell to add a mail-enabled security group as a member of the eDiscovery Managers subgroup in the eDiscovery Manager role group. However, you can't add a mail-enabled security group to the eDiscovery Administrators subgroup. For details, see the [More information](#more-information) section. 
     
 ## Assign eDiscovery permissions in the Security & Compliance Center
 

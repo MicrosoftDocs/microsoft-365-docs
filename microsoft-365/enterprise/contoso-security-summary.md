@@ -131,8 +131,3 @@ In accordance with security best practices and Microsoft 365 Enterprise deployme
 
   Contoso has deployed the [Windows Security app](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) to its PCs and devices running Windows 10 Enterprise so that users can see their security posture at a glance and take action.
 
-
-## Next step
-
-[Learn](contoso-sharepoint-online-site-for-highly-confidential-assets.md) how Contoso created a SharePoint site for highly regulated data to enable collaboration among its research teams.
-

@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/20/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -31,9 +31,9 @@ There are three ways to require your users to use MFA based on your Microsoft 36
 
 |Plan  |Recommendation  |
 |---------|---------|
-|Microsoft 365 plans (without Azure AD Premium P1 or P2)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
-|Microsoft 365 E3 (with Azure AD Premium P1)     | Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
-|Microsoft 365 E5 (with Azure AD Premium P2)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Block clients that don't support modern authentication](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
+|All Microsoft 365 plans (without Azure AD Premium P1 or P2 licenses)     |[Enable Security defaults in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Security defaults in Azure AD include MFA for users and administrators.   |
+|Microsoft 365 E3 (includes Azure AD Premium P1 licenses)     | Use [Common Conditional Access policies](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) to configure the following policies: <br>- [Require MFA for administrators](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Require MFA for all users](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Block legacy authentication](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Microsoft 365 E5 (includes Azure AD Premium P2 licenses)     | Taking advantage of Azure AD Identity Protection, begin to implement Microsoft's [recommended set of conditional access and related policies](../enterprise/identity-access-policies.md) by creating these two policies:<br> - [Require MFA when sign-in risk is medium or high](../enterprise/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Block clients that don't support modern authentication](../enterprise/identity-access-policies.md#block-clients-that-dont-support-modern-authentication)<br>- [High risk users must change password](../enterprise/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ## Security defaults
@@ -50,25 +50,25 @@ For more information, see this [overview of security defaults](https://docs.micr
 
 Conditional Access policies are a set of rules that specify the conditions under which sign-ins are evaluated and allowed. For example, you can create a Conditional Access policy that states:
 
-- If the user account name is for a user that is an Exchange, user, password, security, SharePoint, or global administrator, require MFA before allowing access.
+- If the user account name is a member of a group for users that are assigned the Exchange, user, password, security, SharePoint, or global administrator roles, require MFA before allowing access.
 
-This policy is easier than trying to remember to configure individual user accounts for MFA when they are added to or removed from these administrator roles.
+This policy allows you to require MFA based on group membership, rather than trying to configure individual user accounts for MFA when they are assigned or unassigned from these administrator roles.
 
 You can also use Conditional Access policies for more advanced capabilities, such as requiring that the sign-in is done from a compliant device, such as your laptop running Windows 10.
 
-Conditional Access requires Azure AD Premium P1, which is included with Microsoft 365 E3 and E5.
+Conditional Access requires Azure AD Premium P1 licenses, which are included with Microsoft 365 E3 and E5.
 
 For more information, see this [overview of Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
-## Azure AD Identity Protection policies
+## Azure AD Identity Protection support
 
-Azure AD Identity Protection policies are rules that specify the conditions under which sign-ins are evaluated and allowed. For example, you can create an Azure AD Identity Protection policy that states:
+With Azure AD Identity Protection, you can create an additional Conditional Access policy that states:
 
-- If the risk of the sign-in is determined to be medium or high risk, the user must use MFA to sign in.
+- If the risk of the sign-in is determined to be medium or high, require MFA.
 
-Azure AD Identity Protection requires Azure AD Premium P2, which is included with Microsoft 365 E5.
+Azure AD Identity Protection requires Azure AD Premium P2 licenses, which are included with Microsoft 365 E5.
 
-For more information, see this [overview of Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
+For more information, see [Risk-based Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
 ## Using these methods together
 
@@ -79,15 +79,15 @@ Keep in mind the following:
 
 If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app. 
 
-This table shows the results of enabling MFA with security defaults, Conditional Access policies, and per-user account settings.
+This table shows the results of enabling MFA with security defaults and Conditional Access policies.
 
-|| Enabled | Disabled | Secondary authentication method |
+|| Enabled | Disabled | Additional authentication method |
 |:-------|:-----|:-------|:-------|
 | **Security defaults**  | Can’t use Conditional Access policies | Can use Conditional Access policies | Microsoft Authenticator app |
-| **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are not enabled, you can enable security defaults  | User-specified during MFA registration  |
+| **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
 ||||
 
-## Admin training and technical resources for MFA and identity
+## Admin technical resources for MFA and identity
 
 - [MFA planning for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-plan)
 - [Top 5 ways your Azure AD can help you enable remote work](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/top-5-ways-your-azure-ad-can-help-you-enable-remote-work/ba-p/1144691)
@@ -100,7 +100,7 @@ This table shows the results of enabling MFA with security defaults, Conditional
 After deployment of MFA, your users:
 
 - Are required to use MFA for sign-ins.
-- Have completed the MFA registration process and is using MFA for all sign-ins.
+- Have completed the MFA registration process and are using MFA for all sign-ins.
 
 ## Next step
 
