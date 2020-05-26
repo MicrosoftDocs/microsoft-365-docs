@@ -803,20 +803,16 @@
           href: compliance-score.md
         - name: Set up Compliance Score (preview)
           href: compliance-score-setup.md
-        - name: Working with Compliance Score (preview)
+        - name: Customize Compliance Score (preview)
           href: working-with-compliance-score.md
           items:
-            - name: Manage compliance with assessments
+            - name: Create assessments
               href: working-with-compliance-score.md
-            - name: Improvement actions
+            - name: Manage assessments
               href: working-with-compliance-score.md
-            - name: Templates for assessments
-              href: working-with-compliance-score.md
-        - name: Compliance Score calculation (preview)
+        - name: How your score is calculated
           href: compliance-score-methodology.md
-        - name: Compliance Score release notes (preview)
-          href: compliance-score-release-notes.md
-        - name: Compliance Score FAQ (preview)
+        - name: Compliance Score (preview) FAQ
           href: compliance-score-faq.md
         - name: Compliance Manager (preview)
           href: compliance-manager-overview.md
