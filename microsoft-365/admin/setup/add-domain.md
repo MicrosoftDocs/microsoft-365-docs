@@ -19,6 +19,7 @@ ms.custom:
 - SaRA
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
