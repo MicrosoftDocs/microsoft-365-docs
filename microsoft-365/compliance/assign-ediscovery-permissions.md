@@ -38,7 +38,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
   See the [More information](#more-information) section for reasons why you might want eDiscovery Administrators in your organization.
 
 > [!NOTE]
-> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft E5 license. Alternatively, users with an E1 or E3 license can be assigned an E5 add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about licensing, see [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/complianceSD).
+> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced eDiscovery add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about licensing, see [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/complianceSD).
   
 ## Before you begin
 
@@ -72,20 +72,25 @@ The following table lists the eDiscovery-related RBAC roles in the Security & Co
 |**Role**|**Compliance Administrator**|**eDiscovery Manager & Administrator**|**Organization Management**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Case Management <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Communication <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Compliance Search <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Custodian <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Export <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Hold <br/>  |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Preview <br/>  | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Review <br/>  | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
 |RMS Decrypt <br/>  ||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Search And Purge <br/> | <br/> | <br/> |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
   
 The following sections describe each of the eDiscovery-related RBAC roles listed in the previous table.
 
 ### Case Management
 
-This role lets users create, edit, delete, and control access to eDiscovery and Advanced eDiscovery cases in the Security & Compliance Center. As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator. 
+This role lets users create, edit, delete, and control access to eDiscovery and Advanced eDiscovery cases in the Security & Compliance Center. As previously explained, a user must be assigned the Case Management role before you can use the **Add-eDiscoveryCaseAdmin** cmdlet to make them an eDiscovery Administrator.
+
+### Communication
+
+This role lets users manage all communications with the custodians identified in an Advanced eDiscovery case. Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgement of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian.
 
 ### Compliance Search
 
@@ -95,7 +100,11 @@ Users who are assigned the Compliance Search role but don't have the Preview rol
 
 Similarly, users who are assigned the Compliance Search role but don't have the Export role can download the results of a search in which the export action was initiated by a user who is assigned the Export role. The user without the Export role can download the results of a search for up to two weeks after the initial export action was created. After that, they can't download the results unless someone with the Export role restarts the export.
 
-For more information, see [Content search in Office 365](content-search.md). 
+For more information, see [Content search in Office 365](content-search.md).
+
+### Custodian
+
+This role lets uses manage all communications with the custodians identified in an Advanced eDiscovery case. Create hold notifications, hold reminders, and escalations to management. Track custodian acknowledgement of hold notifications and manage access to the custodian portal that is used by each custodian in a case to track communications for the cases where they were identified as a custodian
 
 ### Export
 
@@ -126,11 +135,7 @@ This role lets users access case data in [Advanced eDiscovery (classic)](office-
 
 ### RMS Decrypt
 
-This role lets users decrypt rights-protected email messages when exporting search results or preparing search results for analysis in Advanced eDiscovery. For more information about decrypting search results during export, see [Export Content search results](export-search-results.md).
-
-### Search And Purge
-
-This role lets users perform bulk removal of data matching the criteria of a content search. For more information, see [Search for and delete email messages in your organization](search-for-and-delete-messages-in-your-organization.md). 
+This role lets users decrypt rights-protected email messages when exporting search results or preparing search results for analysis in Advanced eDiscovery. For more information about decrypting search results during export, see [Export Content search results](export-search-results.md). 
 
 ## More information
 
