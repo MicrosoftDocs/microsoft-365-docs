@@ -797,24 +797,19 @@
   items: 
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Compliance Score and Compliance Manager
+    - name: Compliance Score and Compliance Manager (preview)
       items: 
         - name: Compliance Score (preview)
           href: compliance-score.md
-        - name: Set up Compliance Score (preview)
+        - name: Set up Compliance Score
           href: compliance-score-setup.md
-        - name: Customize Compliance Score (preview)
+        - name: Customize Compliance Score with assessments
           href: working-with-compliance-score.md
-          items:
-            - name: Create assessments
-              href: working-with-compliance-score.md
-            - name: Manage assessments
-              href: working-with-compliance-score.md
-        - name: Assign and track work with improvement actions 
+        - name: Assign and perform work 
           href: working-with-compliance-score.md
         - name: How your score is calculated
           href: compliance-score-methodology.md
-        - name: Compliance Score (preview) FAQ
+        - name: FAQ
           href: compliance-score-faq.md
         - name: Compliance Manager (preview)
           href: compliance-manager-overview.md
