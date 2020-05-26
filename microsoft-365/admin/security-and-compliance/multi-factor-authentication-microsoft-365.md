@@ -146,17 +146,10 @@ This table shows the results of enabling MFA with security defaults, Conditional
 |:-------|:-----|:-------|:-------|
 | **Security defaults** | Can’t use Conditional Access policies |	Can use Conditional Access policies | Microsoft Authenticator app |
 | **Conditional Access policies** |If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults | User-specified during MFA registration |
-| **Per-user account setting (not recommended)** | Overridden by security defaults and Conditional Access policies requiring MFA | Overridden by security defaults and Conditional Access policies | User-specified during MFA registration|
+| **Per-user account setting (not recommended)** | Overrides security defaults and Conditional Access policies requiring MFA at each sign in | Overridden by security defaults and Conditional Access policies | User-specified during MFA registration|
 ||||
 
 If security defaults are enabled, all new users are prompted for MFA registration and the use of the Microsoft Authenticator app at their next sign-in.
-
-However, if a user has an older phone that can receive text messages but cannot run the Microsoft Authenticator app, you can enable MFA on that specific user account and have them register using the text code additional verification method with these steps:
-
-1. Disable security defaults in the Azure portal.
-2. Enable MFA for the user account in the Microsoft 365 admin center.
-3. Have the user sign in and register for MFA and the text code authentication method.
-4. When complete, enable security defaults in the Azure portal
 
 ## Ways to manage MFA settings
 
