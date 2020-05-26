@@ -749,6 +749,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/microsoft-365/compliance/document-deletion-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/labels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/microsoft-365/compliance/apply-or-remove-a-document-deletion-policy-for-a-site.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/labels",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/microsoft-365/compliance/create-a-document-deletion-policy.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/labels",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/compliance/gdpr-breach-Dynamics365.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics",
       "redirect_document_id": true
