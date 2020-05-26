@@ -6,8 +6,8 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-mar
+- AdminSurgePortfolio
 ms.author: jasgro
-ms.custom: AdminSurgePortfolio
 ms.topic: article 
 ms.prod: microsoft-365-business
 localization_priority: Normal
