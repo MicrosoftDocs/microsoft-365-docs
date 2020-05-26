@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -23,7 +23,7 @@ Have a question about how the new message protection capabilities work? Check fo
 ## What is Office 365 Message Encryption (OME)?
 
 OME combines email encryption and rights management capabilities. Rights management capabilities are powered by Azure Information Protection.
-  
+
 ## Who can use OME?
 
 You can use the new capabilities for OME under the following conditions:
@@ -180,3 +180,9 @@ There are currently two known limitations:
 - We only support access provided by direct user assignment to the shared mailbox. We don't support assignment through an email enabled security group.
 
 - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
+
+## What do I do if I don’t receive the one-time pass code after I requested it?
+
+First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
+
+Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.
