@@ -810,6 +810,8 @@
               href: working-with-compliance-score.md
             - name: Manage assessments
               href: working-with-compliance-score.md
+        - name: Assign and track work with improvement actions 
+          href: working-with-compliance-score.md
         - name: How your score is calculated
           href: compliance-score-methodology.md
         - name: Compliance Score (preview) FAQ
