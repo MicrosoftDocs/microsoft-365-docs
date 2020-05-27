@@ -22,7 +22,9 @@ search.appverid:
 - GEA150
 ms.assetid: 7b7b075d-79f9-4e37-8a9e-fb60c1d95166
 description: "Learn to verify your domain and create DNS records at any DNS hosting provider for Microsoft 365."
-ms.custom: okr_smb
+ms.custom: 
+- okr_smb
+- AdminSurgePortfolio
 ---
 
 # Create DNS records at any DNS hosting provider
