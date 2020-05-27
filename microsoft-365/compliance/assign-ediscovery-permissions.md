@@ -38,7 +38,7 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
   See the [More information](#more-information) section for reasons why you might want eDiscovery Administrators in your organization.
 
 > [!NOTE]
-> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft E5 license. Alternatively, users with an E1 or E3 license can be assigned an E5 add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about licensing, see [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/complianceSD).
+> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced eDiscovery add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about licensing, see [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/complianceSD).
   
 ## Before you begin
 
