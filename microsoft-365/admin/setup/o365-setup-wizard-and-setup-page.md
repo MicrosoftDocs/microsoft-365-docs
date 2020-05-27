@@ -14,8 +14,8 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
-search.appverid:
 ms.custom: AdminSurgePortfolio
+search.appverid:
 - MET150
 - MOE150
 - BEA160
