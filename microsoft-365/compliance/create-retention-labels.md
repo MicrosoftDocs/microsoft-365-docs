@@ -75,7 +75,7 @@ Publish retention labels so that they can be manually applied by users.
 
 2. Follow the prompts in the wizard.
     
-    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-labels-and-locations) section. 
+    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section. 
 
 ## Auto-apply a retention label
 
@@ -95,7 +95,7 @@ Auto-apply a retention label, based on the conditions that you specify.
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
-    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-labels-and-locations) section.
+    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section.
 
 
 ## Configuring conditions for auto-apply retention labels
