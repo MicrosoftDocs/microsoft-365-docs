@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 - Adm_TOC
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,7 +24,6 @@ search.appverid:
 - BEA160
 ms.assetid: 092252f8-08df-4cdb-a8d2-b8653caa29a1
 description: "Learn to verify which subscriptions your organization has by going to the Subscriptions page."
-ms.custom: okr_SMB
 ---
 
 # What subscription do I have?
