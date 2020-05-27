@@ -118,6 +118,11 @@ We're continuously working on optimizing retention functionality in Teams. In th
     
     - When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
+### When a user leaves the organization 
+
+If a user leaves your organization and their Office 365 account is deleted, their chat messages that are subject to retention are now stored in an inactive mailbox. The chat messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
+
+If the user stored any files in Teams, see the [equivalent section](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) for SharePoint and OneDrive.
 
 ## How to configure a retention policy for Microsoft Teams
 
