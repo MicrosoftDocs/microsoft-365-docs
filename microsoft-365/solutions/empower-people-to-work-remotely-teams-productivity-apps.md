@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -34,7 +34,9 @@ To be productive, people need to communicate and collaborate with one another. T
 
 Teams allows you to chat, meet, call, and collaborate all in one place. Millions of people get their work done in Teams every day because it brings together everything you need to work remotely into a hub for teamwork. 
 
-You can use [this article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) for guidance on supporting your remote workers with Teams. 
+Use [this article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) for guidance on supporting your remote workers with Teams. 
+
+Watch [the Part 1 video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) for guidance and demos on using Teams for remote work.
 
 ### Chat and conversations
 
@@ -69,6 +71,7 @@ Microsoft 365 Apps is the most productive and most secure Office experience for 
 ## Admin technical resources for productivity apps and services
 
 - [Support remote workers using Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Part 1 video on Teams for remote workers](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
 - [Teams Customer Success Kit download](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Tools for driving Teams adoption](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Create a change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)

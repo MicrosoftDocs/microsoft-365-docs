@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -39,6 +39,8 @@ The [Microsoft Power Platform](https://powerplatform.microsoft.com/), including 
 - If thin clients or desktop and app virtualization can be leveraged for remote workers.
 - If additional user training is needed for remote work scenarios.
 - If there are any blockers to enabling remote work.
+
+Watch [the Part 4 video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#solutions) for information about using PowerApps to quickly build apps and adapt processes for remote work.
 
 ## Internal portal for consolidated public health and news
 
