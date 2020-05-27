@@ -110,7 +110,9 @@ Just like any retention label, you need to [publish or auto-apply](create-retent
 > [!NOTE]
 > If you select an event-driven retention label from **Data governance** > **Labels** tab, or **Records Management** > **File plan** tab, the **Auto-apply a label** button is not available.
 > 
-> Instead of this button, use the **Auto-apply a label** option above the list of labels or policies from **Data governance** > **Labels** tab or **Label policies** tab, or **Records Management** > **Label policies** tab
+> Instead of this button, use the **Auto-apply a label** option above the list of labels or policies from one of the following locations:
+> - **Data governance** > **Labels** tab or **Label policies** tab
+> - **Records Management** > **Label policies** tab
 
 ### Step 4: Enter an asset ID
 
