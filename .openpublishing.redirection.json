@@ -767,6 +767,11 @@
       "source_path": "microsoft-365/compliance/gdpr-breach-Dynamics365.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-the-audit-log.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance",
+      "redirect_document_id": true
     }
   ]
 }
