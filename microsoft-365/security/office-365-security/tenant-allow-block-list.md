@@ -90,51 +90,187 @@ The the Allowed/Blocked List portal in the Security & Compliance Center gives yo
 
 ## Use the Security & Compliance Center to create URL entries in the Allow/Block List
 
+For more information about the syntax for URL entries, see the <> section later in this topic.
+
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
 
 2. On the **Allowed/Blocked List** page, verify that the **URLs** tab is selected, and then click **Add**
 
-3. In the **Add new URLs** flyout that appears, configure the following settings.
+3. In the **Add new URLs** flyout that appears, configure the following settings:
 
-   - **Add URLs with wildards**: For more information about valid entries, see the <> section in this topic.
+   - **Add URLs with wildcards**: Enter one URL per line, up to a maximum of 20.
 
    - **Block/Allow**: Select whether you want to **Allow** or **Block** the specified URLs.
 
-   - **Never expire**: Do one of the following actions:
+   - **Never expire**: Do one of the following steps:
 
-     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entry.
+     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.
 
-     - Move the toggle to the right to configure the entry to never expire: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+     or
 
-   - **Optional note**: Enter descriptive text for the entry.
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+
+   - **Optional note**: Enter descriptive text for the entries.
 
 4. When you're finished, click **Add**.
 
 ## Use the Security & Compliance Center to create file entries in the Allow/Block List
 
+You specify files by using the SHA256 hash value, and the result must be an exact match. <How?> Perceptual hashing (pHash) is not allowed.
+
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
 
 2. On the **Allowed/Blocked List** page, select **Files** tab, and then click **Add**.
 
+3. In the **Add new files** flyout that appears, configure the following settings:
 
-## Use the Security & Compliance Center to view URL entries in the Allow/Block List
+   - **Add file hashes**: Enter one SHA256 hash value per line, up to a maximum of 20.
 
-## Use the Security & Compliance Center to view file entries in the Allow/Block List
+   - **Block/Allow**: Select whether you want to **Allow** or **Block** the specified files.
+
+   - **Never expire**: Do one of the following steps:
+
+     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entries.
+
+     or
+
+     - Move the toggle to the right to configure the entries to never expire: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+
+   - **Optional note**: Enter descriptive text for the entries.
+
+4. When you're finished, click **Add**.
+
+## Use the Security & Compliance Center to view URL and file entries in the Allow/Block List
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+
+2. Select the **URLs** tab or the **Files** tab.
+
+Click on the following column headings to sort in ascending or descending order:
+
+- **Value**: The URL or the file hash.
+- **Action**: **Block** or **Allow**.
+- **Last updated date**
+- **Expiration date**
+- **Note**
+
+Click **Group** to group the entries by **Action** (**Block** or **Allow**) or **None**.
+
+Click **Search**, enter all or part of a URL or file value, and then press ENTER to find a specific value. When you're finished, click **Clear search** ![Clear search icon](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif).
+
+Click **Filter**. In the **Filter** flyout that appears, configure any of the following settings:
+
+- **Action**: Select **Allow**, **Block** or both.
+
+- **Never expire**: Select off (![Toggle off](../../media/scc-toggle-off.png)) or on (![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png)).
+
+- **Last updated**: Select a start date (**From**), an end date (**To**) or both.
+
+- **Expiration date**: Select a start date (**From**), an end date (**To**) or both.
+
+When you're finished, click **Apply**.
+
+To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
 ## Use the Security & Compliance Center to modify URL and file entries in the Allow/Block List
 
+When you modify an existing URL or file entry, you can't modify the URL or file value itself. To modify a URL or file, you need to delete the entry and recreate it.
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+
+2. Select the **URLs** tab or the **Files** tab.
+
+3. Select the entry that you want to modify, and then click **Edit** ![Edit icon](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png).
+
+4. In the flyout that appears, configure the following settings:
+
+   - **Block/Allow**: Select **Allow** or **Block**.
+
+   - **Never expire**: Do one of the following steps:
+
+     - Verify the setting is turned off (![Toggle off](../../media/scc-toggle-off.png)) and use the **Expires on** box to specify the expiration date for the entry.
+
+     or
+
+     - Move the toggle to the right to configure the entry to never expire: ![Toggle on](../../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png).
+
+   - **Optional note**: Enter descriptive text for the entry.
+
+5. When you're finished, click **Safe**.
+
 ## Use the Security & Compliance Center to remove URL and file entries from the Allow/Block List
+
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+
+2. Select the **URLs** tab or the **Files** tab.
+
+3. Select the entry that you want to remove, and then click **Delete** ![Delete icon](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
+
+4. In the warning dialog that appears, click **Delete**.
 
 ## Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Allow/Block List
 
 ### Use PowerShell to add URL and file entries in the Allow/Block List
 
+To add URL and file entries in the Allow/Block List, use the following syntax:
+
+```powershell
+New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+```
+
+For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
+
 ### Use PowerShell to view URL and file entries in the Allow/Block List
+
+To view URL and file entries in the Allow/Block List, use the following syntax:
+
+```powershell
+Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
+```
+
+This example returns all blocked URLs.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType Url -Action Block
+```
+
+This example returns information for the specified file hash value.
+
+```powershell
+Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08"
+```
+
+For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
 
 ### Use PowerShell to modify URL and file entries in the Allow/Block List
 
+When you modify an existing URL or file entry, you can't modify the URL or file value itself. To modify a URL or file, you need to delete the entry and recreate it.
+
+To view URL and file entries in the Allow/Block List, use the following syntax:
+
+```powershell
+Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+```
+
+For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
+
 ### Use PowerShell to remove URL and file entries from the Allow/Block List
 
+To remove URL and file entries from the Allow/Block List, use the following syntax:
+
+```powershell
+Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
+```
+
+This example removes the specified URL entry from the Allow/Block List.
+
+```powershell
+Remove-TenantAllowBlockListItems -Ids RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0 -ListType Url
+```
+
+For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
+
+## Misc
 
 |Scenario|Entry|Match|Not Matched|Block Match|Block Not Matched|Comment|
 |---|---|---|---|---|---|---|
