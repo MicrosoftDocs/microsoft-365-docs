@@ -17,6 +17,7 @@ search.appverid:
 - MOE150
 ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
+- AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: "Learn how to upgrade your users to the latest Office client."
 ---
