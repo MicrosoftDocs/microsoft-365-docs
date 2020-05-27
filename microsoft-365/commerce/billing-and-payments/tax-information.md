@@ -20,7 +20,9 @@ search.appverid:
 - MOE150
 - BEA160
 description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
-ms.custom: okr_SMB
+ms.custom:
+- okr_SMB
+- AdminSurgePortfolio
 ---
 
 # Tax information
