@@ -186,7 +186,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
     - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
-    - To view file contents in preview mode (not available for emails), you must have the **Content Explorer Content viewer** role if you're not a global admin.
+    - To view file contents in the source view (not supported for emails), you must have the **Content Explorer Content viewer** role if you're not a global admin. If you don't this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
