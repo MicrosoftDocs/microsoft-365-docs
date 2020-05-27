@@ -82,4 +82,4 @@ Microsoft 365 Apps is the most productive and most secure Office experience for 
 
 ## Next step
 
-Continue with [Step 5](empower-people-to-work-remotely-communication-venues.md) to create additional communication venues that serve the unique requirements of the COVID-19 crisis.
+Continue with [Step 5](empower-people-to-work-remotely-communication-venues.md) to create additional communication venues that serve your remote workers.
