@@ -19,7 +19,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# EmailEvents
+# EmailPostDeliveryEvents
 
 **Applies to:**
 - Microsoft Threat Protection
