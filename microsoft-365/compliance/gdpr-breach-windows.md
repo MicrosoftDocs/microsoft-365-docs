@@ -19,9 +19,9 @@ ms.collection:
 
 # Data Processor Service for Windows breach notification under the GDPR
 
->[!NOTE] 
->This topic is intended for participants in the Data Processor Service for Windows preview program and requires acceptance of specific terms of use. To learn > >
-more about the program and agree to the terms of use, see <this link>.
+>[!NOTE]
+>This topic is intended for participants in the Data Processor Service for Windows preview program and requires acceptance of specific terms of use. To learn
+more about the program and agree to the terms of use, see _add link_.
 
 Microsoft Data Processor Service for Windows takes its obligations under the General Data Protection Regulation (GDPR) seriously. Microsoft Data Processor Service for Windows takes extensive security measures to protect against data breaches. These include dedicated threat management teams that proactively anticipate, prevent, and mitigate malicious access.  Internal security measures such as port scanning, perimeter vulnerability scanning, and intrusion detection detect and prevent malicious access, as well as automated security processes, comprehensive information security and privacy policies, and security and privacy training for all personnel. 
 
