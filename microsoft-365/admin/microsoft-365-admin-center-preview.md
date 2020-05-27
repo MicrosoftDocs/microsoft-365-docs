@@ -50,9 +50,17 @@ We would love for you to participate in the new Microsoft 365 admin center so yo
 
 ### Turn on Targeted release
 
+::: moniker range="o365-worldwide"
+
 1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** \> **Organization profile**.
 
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
 1. Sign in at [portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), go to the navigation pane and select **Settings** \> **Organization profile**.
+
+::: moniker-end
 
 2. Go to the **Release preferences** card, and then select **Edit**. 
     
