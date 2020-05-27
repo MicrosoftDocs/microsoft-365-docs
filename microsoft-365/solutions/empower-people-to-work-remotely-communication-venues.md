@@ -24,7 +24,7 @@ description: Use Microsoft 365 to create different ways to communicate about int
 Here are some of the ways you can provide additional communication venues for your workers:
 
 - Employee surveys
-- Consolidated public health and news into a single portal
+- Consolidated public news into a single portal
 - A communications site in SharePoint Online
 - A Yammer community
 
@@ -44,9 +44,9 @@ The [Microsoft Power Platform](https://powerplatform.microsoft.com/), including 
 
 Watch the [Part 4 video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#solutions) for information about using PowerApps to quickly build apps and adapt processes for remote work.
 
-## Internal portal for consolidated public health and news
+## Internal portal for consolidated public news
 
-The free [Crisis Communication app](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/coordinate-crisis-communications-using-microsoft-teams-power/ba-p/1216715) can be used to provide your users with a single portal to help ensure they are equipped with recommendations from global health authorities, topical world news, the latest information from government officials and experts, and company-specific content including relevant contacts, company news, and links to support channels. 
+The free [Crisis Communication app](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/coordinate-crisis-communications-using-microsoft-teams-power/ba-p/1216715) can be used to provide your users with a single portal to help ensure they are equipped with recommendations from public authorities, topical world news, the latest information from government officials and experts, and company-specific content including relevant contacts, company news, and links to support channels. 
 
 Users can also share their status (such as working from home or out of the office) with their teammates, and automatically send help requests to a dedicated channel in Teams.
 
@@ -79,7 +79,7 @@ promotes quick sharing of information that can bypass corporate bottlenecks even
 To keep your employees informed of your organization's ongoing response to a crisis and to allow them to communicate and share their issues and feedback, you are using as needed:
 
 - Employee surveys
-- Consolidated public health and news in a single portal
+- Consolidated public news in a single portal
 - A communications site in SharePoint Online
 - A Yammer community
 
