@@ -94,6 +94,12 @@ When external users are included in a meeting that your organization hosts:
 - If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they are stored in that user's mailbox in another tenant. For the same meeting however, your retention policies can delete messages for your users.
 
 
+## When a user leaves the organization 
+
+If a user leaves your organization and their Office 365 account is deleted, their chat messages that are subject to retention are now stored in an inactive mailbox. The chat messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
+
+If the user stored any files in Teams, see the [equivalent section](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) for SharePoint and OneDrive.
+
 ## Limitations
 
 We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of:
@@ -117,12 +123,6 @@ We're continuously working on optimizing retention functionality in Teams. In th
     - When you select **Choose teams** for the **Teams channel messages** location, you might see Office 365 groups that aren't also teams. Don't select these groups.
     
     - When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
-
-### When a user leaves the organization 
-
-If a user leaves your organization and their Office 365 account is deleted, their chat messages that are subject to retention are now stored in an inactive mailbox. The chat messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
-
-If the user stored any files in Teams, see the [equivalent section](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) for SharePoint and OneDrive.
 
 ## How to configure a retention policy for Microsoft Teams
 
