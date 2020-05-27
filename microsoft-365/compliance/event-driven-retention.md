@@ -103,13 +103,9 @@ Note that once you choose an event type and create the retention label, the even
   
 ![Options to create or choose an event type](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
-### Step 3: Publish the event-based retention labels
+### Step 3: Publish or auto-apply the event-based retention labels
 
-Publish your event-based retention labels, so that they can be manually applied to content. You cannot select an event-based retention label for an auto-apply policy. 
-
-To publish your event-based retention labels, got to **Classification** > **Retention labels** page.
-  
-![Options to publish or auto-apply retention label](../media/options-to-publish-auto-apply-retention-label.png)
+Just like any retention label, you need to [publish or auto-apply](create-retention-labels.md) an event-based label, so that it's manually or automatically applied to content.
 
 ### Step 4: Enter an asset ID
 
