@@ -108,11 +108,11 @@ Note that once you choose an event type and create the retention label, the even
 Just like any retention label, you need to [publish or auto-apply](create-retention-labels.md) an event-based label, so that it's manually or automatically applied to content.
 
 > [!NOTE]
-> If you select an event-driven retention label from **Data governance** > **Labels** tab, or **Records Management** > **File plan** tab, the **Auto-apply a label** button is not available.
+> If you select an event-driven retention label from **Records Management** > **File plan** tab or **Data governance** > **Labels** tab, the **Auto-apply a label** button is not available.
 > 
 > Instead of this button, use the **Auto-apply a label** option above the list of labels or policies from one of the following locations:
+> - **Records management** > **Label policies** tab
 > - **Data governance** > **Labels** tab or **Label policies** tab
-> - **Records Management** > **Label policies** tab
 
 ### Step 4: Enter an asset ID
 
