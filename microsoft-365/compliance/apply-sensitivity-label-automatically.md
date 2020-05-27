@@ -273,7 +273,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
-Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** page, **Auto-labeling** tab, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
 You can modify your policy directly from this interface:
 
