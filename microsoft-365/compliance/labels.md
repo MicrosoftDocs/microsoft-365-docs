@@ -102,10 +102,6 @@ To understand how and why one retention label is applied rather than another, it
 
 An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](#the-principles-of-retention-or-what-takes-precedence) section on this page.
 
-In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the system last processed your mailbox. If it has not happened since the time you created the policy, the labels are not going to appear. To force processing, run  `Start-ManagedFolderAssistant -Identity <user>`.
-    
-If labels aren't appearing in Outlook on the web and you think they should be, make sure to clear the cache in your browser (CTRL+F5).
-    
 ## Retention label policies and locations
 
 Different types of retention labels can be published to different locations, depending on what the retention label does.
@@ -118,12 +114,12 @@ Different types of retention labels can be published to different locations, dep
    
 In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
   
-Exchange public folders and Skype do not support retention labels.
+Exchange public folders, Skype, and Teams channel messages and chats do not support retention labels.
 
 ## How retention labels enforce retention
 
-Retention labels can enforce the same retention actions that a retention policy can - retain and then delete, or retain-only, or delete-only. You can use retention labels to implement a sophisticated content plan (or file plan). For more information about how retention works, see [Learn about retention policies](retention-policies.md).
-  
+Retention labels can enforce the same retention actions that a retention policy can - retain and then delete, or retain-only, or delete-only. You can use retention labels to implement a sophisticated file plan that identifies specific files for different retention settings. For more information about how retention works, see [Learn about retention policies](retention-policies.md).
+
 In addition, a retention label has two retention options that are available only in a retention label and not in a retention policy. With a retention label, you can:
   
 - Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Disposition reviews](disposition.md#disposition-reviews).
@@ -131,6 +127,8 @@ In addition, a retention label has two retention options that are available only
 - Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
     
 ![Retention settings with options specific to labels](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+
+Another important difference is that when you apply a retention label rather than a retention policy to files in SharePoint, and the label is configured to retain content, users can't delete the file while the retention period is enforced. Users can delete content when the same label is applied to files in OneDrive and emails, unless the label marks the content as a record.
 
 ## Where published retention labels can appear to end users
 
@@ -192,7 +190,7 @@ After a retention label is applied to an item, you can view it in the details pa
 ![Applied label shown in Details pane](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
 For SharePoint, but not OneDrive, you can create a view of the library that contains the **Labels** column or **Item is a Record** column. This view lets you see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. For instructions how to add columns, see [Show or hide columns in a list or library](https://support.microsoft.com/en-us/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
-  
+
 
 ### Microsoft 365 groups
 
@@ -275,7 +273,7 @@ For example, you can create a retention label named "Review later" with no actio
   
 ## Using retention labels for records management
     
-You can use retention labels to declare content as a record. This lets you implement a single, consistent records-management strategy across Microsoft 365. For more information, see [Overview of records](records.md).
+You can use retention labels to declare content as a record. This lets you implement a single, consistent records-management strategy across Microsoft 365. For more information, see [Learn about records](records.md).
   
 ## Using a retention label as a condition in a DLP policy
 
