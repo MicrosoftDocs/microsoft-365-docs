@@ -179,7 +179,7 @@ TTL:                3600
 > It's important to create the second record, but only one of the selectors may be available at the time of creation. In essence, the second selector might point to an address that hasn't been created yet. We still recommended that you create the second CNAME record, because your key rotation will be seamless.
 
 > [!CAUTION]
-> Automatic key rotation has been temporarily disabled as we implement some design changes in how we create keys. It is good practice to have multiple keys so that you can rotate them periodically. Although it is hard to crack, it is still a practical mitigation strategy to protect against things like impersonation. You can follow the [Rotate-DkimSigningConfig]https://docs.microsoft.com/en-us/powershell/module/exchange/rotate-dkimsigningconfig document to help do this for your organization. We expect that automatic rotation will be enabled again by August 2020.
+> Automatic key rotation has been temporarily disabled as we implement some design changes in how we create keys. It is good practice to have multiple keys so that you can rotate them periodically. Although it is hard to crack, it is still a practical mitigation strategy to protect against things like impersonation. You can follow the [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) document to help do this for your organization. We expect that automatic rotation will be enabled again by August 2020.
 
 ### Enable DKIM signing for your custom domain
 <a name="EnableDKIMinO365"> </a>
