@@ -65,7 +65,7 @@ Here are the components of Azure AD Application Proxy.
 
 ![Components of Azure AD Application Proxy](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-application-proxy.png)
 
-For more information, see this [overview of Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+For more information, see this [overview of Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) and the [Part 3 video on using Azure AD Application Proxy](https://resources.techcommunity.microsoft.com/enabling-remote-work/#security).
 
 >[!Note]
 >Azure AD Application Proxy is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
@@ -94,7 +94,7 @@ Virtualized PCs can act just like PCs connected to your organization network.
 For more information, see: 
 
 - [This overview of Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
-- [The Part 2 video on using Windows Virtual Desktop for remote workers](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
+- [The Part 2 video on using Windows Virtual Desktop for remote workers](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity).
 
 >[!Note]
 >Windows Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.

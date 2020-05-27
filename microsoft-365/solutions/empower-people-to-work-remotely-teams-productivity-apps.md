@@ -36,7 +36,7 @@ Teams allows you to chat, meet, call, and collaborate all in one place. Millions
 
 Use [this article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) for guidance on supporting your remote workers with Teams. 
 
-Watch [the Part 1 video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) for guidance and demos on using Teams for remote work.
+Watch the [Part 1 video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) for guidance and demos on using Teams for remote work.
 
 ### Chat and conversations
 
