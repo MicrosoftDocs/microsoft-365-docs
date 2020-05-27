@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,7 +25,7 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
-ms.custom: okr_SMB
+
 ---
 
 # Change your billing addresses

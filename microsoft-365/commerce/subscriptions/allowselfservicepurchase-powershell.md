@@ -11,7 +11,7 @@ ms.service: o365-administration
 localization_priority: None
 ms.collection:
 - commerce 
-ms.custom:
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
