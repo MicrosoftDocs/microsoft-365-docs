@@ -33,13 +33,13 @@ Microsoft 365 comes with five recommended built-in classifiers:
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub
 
-|language name|||||
-|---------|---------|---------|---------|---------|
-|ActionScript|C        |C#       |C++     |Clojure  |
-|CoffeeScript|CSS     |Go       |Haskell |HTML     |
-|Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-|Perl     |PHP      |Python   |R        |Ruby     |
-|Scala    |Shell    |Swift    |Tex      |Vim Script|
+  |language name|||||
+  |---------|---------|---------|---------|---------|
+  |ActionScript|C        |C#       |C++     |Clojure  |
+  |CoffeeScript|CSS     |Go       |Haskell |HTML     |
+  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
+  |Perl     |PHP      |Python   |R        |Ruby     |
+  |Scala    |Shell    |Swift    |Tex      |Vim Script|
 
 > [!NOTE]
 > Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.
@@ -55,8 +55,8 @@ Microsoft 365 comes with five recommended built-in classifiers:
 
 1. Collect disposable test content items that you feel belong in the category of the built-in classifier (positive matches) and ones that shouldn't be included (negative matches) in the category you're testing.
 
-> [!IMPORTANT]
-> The sample items must not be encrypted and they must be in English.
+   > [!IMPORTANT]
+   > The sample items must not be encrypted and they must be in English.
 
 2. Create a dedicated SharePoint Online folder; wait at least an hour for the folder to be added to the search index. Make note of the folder URL.
 
@@ -74,7 +74,7 @@ Microsoft 365 comes with five recommended built-in classifiers:
 
 9. Choose `Apply label to content that matches a trainable classifier`.
 
-![selecting classifier as a condition](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png).
+   ![selecting classifier as a condition](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
 10. Choose your classifier from the list, in this case `Source Code`
 
