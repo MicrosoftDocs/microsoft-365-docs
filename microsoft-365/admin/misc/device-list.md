@@ -15,6 +15,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150

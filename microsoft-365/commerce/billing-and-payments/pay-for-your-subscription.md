@@ -24,6 +24,7 @@ description: "Learn what payment options are available to pay for your Microsoft
 ms.custom: 
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
+- AdminSurgePortfolio
 ---
 
 # Pay for your subscription
