@@ -15,7 +15,6 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn about proposals to help you buy Microsoft products and services."
-ms.custom: 
 ROBOTS: NOINDEX
 ---
 
