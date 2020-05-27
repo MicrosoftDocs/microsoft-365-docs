@@ -19,6 +19,10 @@ ms.collection:
 
 # Data Processor Service for Windows Data Subject Requests for the GDPR and CCPA 
 
+>[!NOTE]
+>This topic is intended for participants in the Data Processor Service for Windows preview program and requires acceptance of specific terms of use. To learn > >
+more about the program and agree to the terms of use, see <this link>.
+
 ## Introduction to Data Subject Requests (DSRs) 
 The EU General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as _data subjects_) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the _data controller_ or just _controller_). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a _Data Subject Request_ or DSR. 
 
@@ -66,26 +70,26 @@ Microsoft provides the ability to access, delete, and export certain Windows dia
 
 The tenant admin is the only person within your organization who can access Windows Diagnostic Data associated with a particular user’s use of a Data Processor Service for Windows enrolled device. The data retrieved for an access request will be provided, via export, in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. 
 
-Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR access requests. [Azure DSR, Part 1, Step 2: Access](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-azure#step-2-access), describes how to execute a DSR access request through the Azure Portal.
+Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR access requests. [Azure DSR, Part 1, Step 2: Access](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-2-access), describes how to execute a DSR access request through the Azure Portal.
 
 ### Step 2: Delete 
 
 Microsoft offers separate methods to execute user-based DSR delete requests based on a particular user’s Azure Active Directory object and device-based DSR delete requests based on a particular device’s device ID. 
 
-For user-based delete requests, Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR delete requests. [Azure DSR, Part 1, Step 5: Delete](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-azure#step-5-delete), describes how to execute a DSR delete request through the Azure Portal. 
+For user-based delete requests, Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR delete requests. [Azure DSR, Part 1, Step 5: Delete](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-5-delete), describes how to execute a DSR delete request through the Azure Portal. 
 
 To execute a device-based DSR delete request, follow the procedure described in [Diagnostic, feedback, and privacy in Windows 10 – To delete your diagnostic data](https://support.microsoft.com/en-us/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy#to-delete-your-diagnostic-data) on the device locally. An administrator for the device can choose to disable this option through Group Policy, by going to **Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds** and setting **Disable deleting diagnostic data** to **enabled**.  Alternatively, set the MDM policy [System/DisableDeviceDelete](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-disabledevicedelete) to **1** (enabled). 
 
 Microsoft provides the ability to delete users, which in turn will delete Customer Data, directly via a pre-existing application programming interface (API). Details are described in the [API reference documentation](https://docs.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-beta). 
 
 >[!IMPORTANT]  
->Deleting collected data does not stop further collection. To turn off data collection follow the procedure described in the [respective service’s reference documentation](https://docs.microsoft.com/en-us/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
+>Deleting collected data does not stop further collection. To turn off data collection follow the procedure described in the [respective service’s reference documentation](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization#enterprise-management).
  
  Additionally, user-based delete requests require deleting the user account itself. 
 
 ### Step 3: Export 
 
-The tenant admin is the only person within your organization who can access Windows diagnostic data associated with a particular user’s use of a Data Processor Service for Windows enrolled device. The data retrieved for an export request will be provided in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. [Azure DSR, Part 2, Step 3: Export](https://docs.microsoft.com/en-us/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), describes how to execute a DSR export request through the Azure Portal. 
+The tenant admin is the only person within your organization who can access Windows diagnostic data associated with a particular user’s use of a Data Processor Service for Windows enrolled device. The data retrieved for an export request will be provided in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. [Azure DSR, Part 2, Step 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), describes how to execute a DSR export request through the Azure Portal. 
 
 Microsoft provides the ability to export Customer Data directly via a pre-existing application programming interface (API). Details are described in the [API reference documentation](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0).
 
