@@ -67,6 +67,10 @@ Here are the components of Azure AD Application Proxy.
 
 For more information, see this [overview of Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
+>[!Note]
+>Azure AD Application Proxy is not included with a Microsoft 365 subscription. You must pay for usage with an Azure subscription.
+>
+
 ## Deploy remote access when not all your apps are web apps
 
 If your remote workers are not using a traditional VPN client and any of your apps are not web-based, you can use an Azure Point-to-Site (P2S) VPN.
@@ -77,6 +81,10 @@ A P2S VPN connection creates a secure connection from a remote worker’s device
 
 For more information, see this [overview of P2S VPN](https://docs.microsoft.com/azure/vpn-gateway/point-to-site-about).
 
+>[!Note]
+>Azure P2S VPN is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
+>
+
 ## Deploy Windows Virtual Desktop to provide remote access for remote workers using personal devices 
 
 To support remote workers who can only use their personal and unmanaged devices, use Windows Virtual Desktop in Azure to create and allocate virtual desktops for your users to use from home.
@@ -84,6 +92,10 @@ To support remote workers who can only use their personal and unmanaged devices,
 Virtualized PCs can act just like PCs connected to your organization network.
 
 For more information, see [this overview of Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview).
+
+>[!Note]
+>Windows Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
+>
 
 ## Admin technical resources for remote access
 
