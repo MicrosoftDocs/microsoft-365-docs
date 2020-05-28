@@ -24,7 +24,6 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: "Learn how to set up your Microsoft 365 Business Standard subscription."
 ---
 
