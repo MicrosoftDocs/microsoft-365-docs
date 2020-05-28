@@ -18,11 +18,11 @@ description: "Customize Microsoft Compliance Score by creating assessments to he
 
 # Customize Compliance Score with assessments
 
-**In this article:** Learn how to customize Compliance Score by setting up your assessments. This article discusses the **pre-configured assessments** provided by Microsoft, explains how to modify assessments to suit your needs, and how to create your own assessments. This article also covers how to organize assessments into **groups**, working with **controls**, and creating **reports**.
+**In this article:** Learn how to customize Compliance Score by setting up your assessments. This article discusses the pre-configured **assessments** provided by Microsoft, explains how to modify assessments to suit your needs, and how to create your own assessments. This article also covers how to organize assessments into **groups**, working with **controls**, and creating **reports**.
 
 ## Introduction to assessments
 
-Compliance Score provides increased value to your organization as you create assessments for the regulations and certifications that apply to your organization. Assessments are groupings of controls that help you evaluate whether you’ve met a compliance objective. The way to ensure you’re implementing policies and operational procedures to limit your compliance risk is to set up the most relevant assessments for you. 
+Compliance Score helps you better manage compliance as you create assessments for the regulations and certifications that apply to your organization. Assessments are groupings of controls that help you evaluate whether you’ve met a compliance objective. The way to ensure you’re implementing policies and operational procedures to limit your compliance risk is to set up the most relevant assessments for you. 
 
 ## Data protection baseline default assessment
 
@@ -38,6 +38,9 @@ There are three ways you can set up assessments:
 1. Use a pre-configured assessment created by Microsoft.
 2. Modify a pre-configured assessment to suit your own needs.
 3. Create your own Custom Assessment.
+
+> [!NOTE]
+> Users must be assigned a role of compliance administrator, compliance data administrator, or security administrator in order to create or modify assessments. Learn more about [roles and permissions](compliance-score-setup.md#set-user-permissions-and-assign-roles).
 
 ### Use a pre-configured assessment
 
@@ -79,10 +82,10 @@ Groups are containers that allow you to organize assessments and share common in
 
 You can group assessments in a way that is logical to you, such as by year, standard, service, or based on your organization's teams, divisions, or geographies. Below are examples of two groups and their underlying assessments:
 
-- FFIEC IS assessments 2020
+- **FFIEC IS assessments 2020**
   - Office 365 + FFIEC IS
   - Intune + FFIEC IS
-- Data security and privacy assessments
+- **Data security and privacy assessments**
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
@@ -100,7 +103,7 @@ Groups cannot be created as standalone entities. A group must always contain at 
 - Related assessment controls in different assessments within the same group automatically update when completed.
 - If you add a new assessment to an existing group, common information from assessments in that group are copied to the new assessment.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
-- Deleting an assessment breaks the relationship between that assessment and the group. Any further updates to other related assessments are no longer reflected in the hidden assessment. (Learn how to hide Assessments.)
+- Deleting an assessment breaks the relationship between that assessment and the group.
 - Groups cannot be deleted.
 - When a change is made to an improvement that appears in multiple groups, that change is reflected in all instances of that improvement action.
 
@@ -140,6 +143,8 @@ To delete an assessment, follow the steps below:
 2. From the assessment details page, select **Delete assessment** in the upper-right corner of your screen.
 3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. Your assessment is now deleted from Compliance Score.
 
+If you delete the only assessment in a group, then that group is also deleted from Compliance Score.
+
 ## Generate a report
 
 You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators.
@@ -147,3 +152,19 @@ You can export an assessment to an Excel file for compliance stakeholders in you
 On your assessment details page, just below your assessment status information, select **Generate report** to download the Excel file.
 
 The report is a snapshot of the assessment as of the date and time of the export. The report contains the details for controls managed by both you and Microsoft for the assessment, control implementation status, control test date, test results, and links to uploaded evidence documents.
+
+## Monitor assessment progress and controls
+
+Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. It shows the completion rate of controls within the assessment and test status of key improvement actions within those controls.
+
+..insert screen shot..
+
+### Overview tab
+
+The overview tab contains a graph showing your percentage toward completion of the assessment. This graph contains a breakdown of points from actions you own, and points from actions owned by Microsoft, so you can see how many more points you need to complete the assessment.
+
+The key improvement actions for controls in the assessment are listed in order of greatest potential impact to earn points. The associated graph details the aggregated test status of your improvement actions so you can quickly gauge what has been tested and what work still needs to be done.
+
+### Controls tab
+
+The controls tab displays detailed information for each control mapped to the assessment. The fields listed for each control are:
