@@ -2,8 +2,8 @@
 title: "Share calendars with external users"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150

@@ -113,7 +113,7 @@ Before configuring a policy, define the following insider risk settings:
     >In order to receive alerts for risky activity defined in your policies, you must select one or more indicators.
 
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-policies.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
-5. On the **Intelligent detections** page, configure the [anomaly and offensive language detections](insider-risk-management-policies.md#intelligent-detections) for insider risk policies.
+5. On the **Intelligent detections** page, configure the [anomaly detection, offensive language detection, and alert volume level](insider-risk-management-policies.md#intelligent-detections) for insider risk policies.
 6. Select **Save** to enable these settings for your insider risk policies.
 
 ## Step 5 (required): Create an insider risk management policy

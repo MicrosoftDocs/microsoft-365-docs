@@ -43,47 +43,56 @@ File plan manager makes it easier to see into and across the settings of all you
 
 Note that retention labels created outside of the file plan will be available in the file plan and vice versa.
 
-On the file plan **Labels** tab, the following additional information and capabilities are available:
+On the file plan page, the following additional information and capabilities are available:
 
 ### Label settings columns
 
-- **Based on** identifies the type of trigger that will start the retention period. Valid values are:
+All columns except the label **Name** can be customized to show more or less information about your labels. But by default, the first columns display information from retention labels that are not specific to file plan. For example, from retention labels you created from **Information governance** > **Labels** tab.  
+
+- **Status** identifies whether the label is included in a label policy or auto-apply policy (**Active**) or not (**Inactive**).
+
+- **Based on** identifies how or when the retention period begins. Valid values:
     - Event
     - When created
     - When last modified
     - When labeled
-- **Is Record** identifies if the item will become a declared record when the label is applied. Valid values are:
+- **Is Record** identifies if the item is marked as a record when the label is applied. Valid values are:
     - No
     - Yes
-    - Yes(Regulatory)
-- **Retention duration** identifies the retention period. Valid values are:
+- **Retention duration** identifies the retention period. Valid values:
     - Days
     - Months
     - Years
     - Forever
-- **Disposition type** identifies what will happen to the content at the end of the retention period. Valid values are:
-    - null
+    - None
+- **Disposition type** identifies what happens to the content at the end of the retention period. Valid values:
     - No action
     - Auto-delete
-    - Review required (aka Disposition review)
+    - Review required
 
-### Retention label file plan descriptors columns
+### File plan descriptors columns
 
-You can now include more information in the configuration of your retention labels. Inserting file plan descriptors into retention  labels will improve the manageability and organization of your file plan.
+File plan lets you include more information as part of your retention labels. These file plan descriptors provide more options to improve the manageability and organization of the content you need to label.
 
-To get you started, file plan manager provides some out-of-box values for: Function/department, Category, Authority type and Provision/citation. You can add new file plan descriptor values when creating or editing a retention label. You can also specify file plan descriptors when importing retention labels into your file plan. 
+To get you started, there are some out-of-box values for the following file plan descriptors: 
+- Business function/department
+- Category
+- Authority type
+- Provision/citation 
 
-Here's a view of the file plan descriptors step when creating or editing a retention label.
+You can choose of the provided values or add you own plan descriptor values when you create or edit a retention label. You can also specify file plan descriptors if you import retention labels into your file plan. 
+
+Example view of the file plan descriptors step when you create or edit a retention label.
 
 ![File plan descriptors](../media/file-plan-descriptors.png)
 
-Here's a view of the file plan descriptors columns on the **Labels** tab of file plan manager.
+Example view of the file plan descriptors columns on the **Labels** tab of file plan manager.
 
 ![file-plan-descriptors-on-labels-tab.png](../media/file-plan-descriptors-on-labels-tab.png)
 
-## Export all existing retention labels to analyze and/or perform offline reviews
+## Export all retention labels to analyze or enable offline reviews
 
-From file plan manager, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.
+From your file plan, you can export the details of all retention labels into a .csv file to assist you in facilitating periodic compliance reviews with data governance stakeholders in your organization.
 
 To export all retention labels: On the **File plan** page, click **Export**.
 
@@ -120,7 +129,7 @@ To import new retention labels and modify existing retention labels:
    |RetentionAction|String|This property specifies what action to take after the value specified by the RetentionDuration property expires. Valid values are:</br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then doing nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires.   |
    |RetentionDuration|String|This property specifies the number of days to retain the content. Valid values are:</br>**Unlimited**: Items will be retained indefinitely. </br>***n***: A positive integer; for example, **365**. 
    |RetentionType|String|This property specifies whether the retention duration is calculated from the content creation date, event date, labeled (tagged) date, or last modified date. Valid values are:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
-   |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for **Delete** and **KeepAndDelete** retention actions. You can include the email address of individual users, distribution, or security groups. You can specify multiple email addresses separated by semicolons.|
+   |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for the **KeepAndDelete** retention action. You can include the email address of individual users, distribution, or security groups. You can specify multiple email addresses separated by semicolons.|
    |ReferenceId|String|This property specifies the value that's displayed in the **Reference Id** file plan descriptor.| 
    |DepartmentName|String|This property specifies the value that's displayed in the **Function/department** file plan descriptor.|
    |Category|String|This property specifies the value that's displayed in the **Category** file plan descriptor.|
@@ -130,7 +139,7 @@ To import new retention labels and modify existing retention labels:
    |CitationUrl|String|This property specifies the URL that's displayed in the **Provision/citation** file plan descriptor.|
    |CitationJurisdiction|String|This property specifies the jurisdiction or agency that's displayed in the **Provision/citation** file plan descriptor; for example, "U.S. Securities and Exchange Commission (SEC)".|
    |Regulatory|String|Leave blank. This property isn't used at this time.|
-   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that if you export labels from one organization, you can't use the values for the EventType  property from that organization when importing labels to a different organization. That because the EventType values are unique to an organization. |
+   |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that if you export labels from one organization, you can't use the values for the EventType  property from that organization when importing labels to a different organization. That because the EventType values are unique to an organization. |
    |||
 
    Here's an example the template containing the information about retention labels.

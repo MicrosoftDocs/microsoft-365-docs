@@ -45,5 +45,4 @@ We have listened to your valuable feedback on OneDrive integration during our pr
 - [View labeled content (preview)](data-classification-content-explorer.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](labels.md)
-- [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
-
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
