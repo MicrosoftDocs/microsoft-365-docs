@@ -93,7 +93,7 @@ When the preparation is finished, the next step is to go to Advanced eDiscovery 
     
 2. Click **Open** next to the case that you want to load data in to in Advanced eDiscovery. 
     
-3. On the **Home** page for the case, click **Advanced eDiscovery**. 
+3. On the **Home** page for the case, click **Switch to Advanced eDiscovery**. 
     
     ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
