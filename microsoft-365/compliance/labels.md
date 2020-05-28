@@ -128,7 +128,7 @@ In addition, a retention label has two retention options that are available only
     
 ![Retention settings with options specific to labels](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 
-Another important difference is that when you apply a retention label rather than a retention policy to files in SharePoint, and the label is configured to retain content, users can't delete the file while the retention period is enforced. Users can delete content when the same label is applied to files in OneDrive and emails, unless the label marks the content as a record.
+Another important difference is that when you apply a retention label rather than a retention policy to files in SharePoint, and the label is configured to retain content, users can't delete the file while the retention period is enforced. Users can delete content when the same label is applied to files in OneDrive and to emails, unless the label marks the content as a record.
 
 ## Where published retention labels can appear to end users
 
