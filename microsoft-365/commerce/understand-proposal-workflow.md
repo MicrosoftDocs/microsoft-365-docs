@@ -73,7 +73,7 @@ For more information about billing account roles, see [Understand access to bill
 If this is a new billing account, and no one has accepted an agreement,
 you automatically become the billing account owner, provided you:
 
-- Are the person named in the proposal\
+- Are the person named in the proposal
     OR
 - Are already an [Azure Active Directory global admin](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) for your
     organization
