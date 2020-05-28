@@ -85,6 +85,6 @@ If you found this video helpful, check out the [complete training series for sma
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md)
   
-[Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md)
+[Manage payment methods](manage-payment-methods.md)
 
 [Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761)

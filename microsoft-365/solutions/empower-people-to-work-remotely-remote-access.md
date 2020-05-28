@@ -87,9 +87,9 @@ For more information, see this [overview of P2S VPN](https://docs.microsoft.com/
 
 ## Deploy Windows Virtual Desktop to provide remote access for remote workers using personal devices 
 
-To support remote workers who can only use their personal and unmanaged devices, use Windows Virtual Desktop in Azure to create and allocate virtual desktops for your users to use from home.
+To support remote workers who can only use their personal and unmanaged devices, use Windows Virtual Desktop in Azure to create and allocate virtual desktops for your users to use from home. Virtualized PCs can act just like PCs connected to your organization network.
 
-Virtualized PCs can act just like PCs connected to your organization network.
+![Components of Azure Windows Virtual Desktop](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-windows-virtual-desktop.png)
 
 For more information, see: 
 
@@ -100,9 +100,11 @@ For more information, see:
 >Windows Virtual Desktop is not included with a Microsoft 365 subscription. You must pay for usage with a separate Azure subscription.
 >
 
-## Protect your Remote Desktop Serviices connections with the Remote Desktop Services Gateway
+## Protect your Remote Desktop Services connections with the Remote Desktop Services Gateway
 
 If you are using Remote Desktop Services (RDS) to allow employees to connect into Windows-based computers on your on-premises network, you should use a Microsoft Remote Desktop Services gateway in your edge network. The gateway uses Secure Sockets Layer (SSL) to encrypt communications and prevents the system hosting RDS from being directly exposed to the Internet.
+
+![Remote Desktop Services connections with the Remote Desktop Services Gateway](../media/empower-people-to-work-remotely-remote-access/empower-people-to-work-remotely-remote-access-remote-desktop.png)
 
 See [this article](https://www.microsoft.com/security/blog/2020/04/16/security-guidance-remote-desktop-adoption/) for more information.
 

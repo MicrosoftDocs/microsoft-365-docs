@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/manage-payment-methods",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/apply-for-tax-exempt-status.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information#apply-for-tax-exempt-status",
       "redirect_document_id": true
