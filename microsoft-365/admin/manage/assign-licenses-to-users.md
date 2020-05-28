@@ -17,6 +17,7 @@ ms.custom:
 - TopSMBIssues
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
