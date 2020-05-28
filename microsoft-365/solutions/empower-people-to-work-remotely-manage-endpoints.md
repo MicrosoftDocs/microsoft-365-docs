@@ -29,7 +29,7 @@ Endpoint Manager provides services and tools for managing mobile devices, deskto
 
 ## Microsoft Intune
 
-Intune is designed to help you safeguard data when you don’t manage the devices used to access organization data. Intune app protection policies combined with Azure AD Conditional Access provide granular control over data on mobile devices. Intune also enables you to define comprehensive policies that allow only the right people under the right conditions to access your company data and ensure the data stays protected by controlling how they use it within Office, Outlook and other mobile apps.
+Intune is designed to help you safeguard data when you don’t manage the devices used to access organization data. Intune app protection policies combined with Azure Active Directory (Azure AD) Conditional Access provide granular control over data on mobile devices. Intune also enables you to define comprehensive policies that allow only the right people under the right conditions to access your company data and ensure the data stays protected by controlling how they use it within Office, Outlook and other mobile apps.
 
 For more information, see this [overview of Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
 
