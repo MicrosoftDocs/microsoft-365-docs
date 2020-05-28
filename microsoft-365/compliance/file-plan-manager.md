@@ -25,7 +25,9 @@ ms.custom: seo-marvel-may2020
 
 File plan manager provides advanced management capabilities for retention labels, retention label policies, and provides an integrated way to traverse label and label-to-content activity for your entire content lifecycle – from creation, through collaboration, record declaration, retention, and finally disposition. 
 
-To access file plan manager in the Microsoft 365 compliance center, go to **Solutions** > **Records management** > **File plan**. If **Records management** does not display in the navigation pane, scroll down and select **Show all**.
+To access file plan manager in the Microsoft 365 compliance center, go to **Solutions** > **Records management** > **File plan**. 
+
+If **Records management** doesn't display in the navigation pane, first scroll down, and select **Show all**.
 
 ![File plan page](../media/compliance-file-plan.png)
 
@@ -39,11 +41,11 @@ To access file plan manager, you must have one of the following admin roles:
 
 ## Navigating your file plan
 
-File plan manager makes it easier to see into and across the settings of all your retention labels and policies from one view.
+File plan manager makes it easier to see into and across the settings of all your retention labels from one view.
 
-Note that retention labels created outside of the file plan will be available in the file plan and vice versa.
+Note that retention labels that are created independently from the file plan are automatically available in the file plan, and vice versa.
 
-On the file plan page, the following additional information and capabilities are available:
+On the **File plan** page, you see label settings, optional File plan descriptors, an export option to analyze or enable offline reviews of your labels, an import option to create retention labels, 
 
 ### Label settings columns
 
@@ -104,7 +106,7 @@ A *.csv file containing all existing retention labels will open.
 
 ## Import retention labels into your file plan
 
-In the File plan manager, you can bulk import new retention labels and modify existing retention labels.
+In File plan, you can bulk import new retention labels and modify existing retention labels.
 
 To import new retention labels and modify existing retention labels: 
 
@@ -118,7 +120,7 @@ To import new retention labels and modify existing retention labels:
 
    ![Blank file plan template open in Excel](../media/file-plan-blank-template.png)
 
-3. Fill-out the template. The following describes the properties and valid values for each property in the file plan template. For import, each value has a maximum length of 64 characters. <br/>
+3. Fill-out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
 
    |**Property**|**Type**|**Valid values**|
    |:-----|:-----|:-----|
@@ -142,18 +144,18 @@ To import new retention labels and modify existing retention labels:
    |EventType|String|This property specifies the retention rule that's associated with the label. You can use any value that uniquely identifies the rule. For example:</br>**Name**</br>**Distinguished name (DN)**</br>**GUID** </br>You can use the [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule?view=exchange-ps) cmdlet to view the available retention rules. Note that if you export labels from one organization, you can't use the values for the EventType  property from that organization when importing labels to a different organization. That because the EventType values are unique to an organization. |
    |||
 
-   Here's an example the template containing the information about retention labels.
+   Here's an example of the template containing the information about retention labels.
 
    ![File plan template with information filled in](../media/file-plan-filled-out-template.png)
 
 4. Under step 3 on the import file plan wizard page, click **Browse for files** to upload the filled-out template. 
 
-   File plan manager will validate the entries and display the import statistics.
+   File plan manager validates the entries and displays the import statistics.
 
    ![File plan import statistics](../media/file-plan-import-statistics.png)
 
-   In the event there is a validation error, file plan import will continue to validate every entry in the import file and display all errors referencing line/row numbers in the import file, copy the displayed error results so that you can easily return to the import file and correct the errors.
+   If there's a validation error, file plan import continues to validate every entry in the import file and displays all errors  referencing the line and row numbers in the import file. Copy the displayed error results so you can correct them when you return to the import file.
 
-5. When the import is complete, go to the **Label policies** page to associate the new retention labels to new or existing retention label policies.
+5. When the import is complete, you can now add the labels to a label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**. You can do the same action from **Label policies** page, and you must use this location if you want to add a label to an existing label policy:
 
    ![Option to publish labels](../media/compliance-file-plan-publish_labels.png)
