@@ -21,76 +21,41 @@ description: "Admins can learn how to configure a mailbox to collect spam and ph
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The the Allowed/Blocked List portal in the Security & Compliance Center gives you a way to manually override the EOP filtering verdicts. The lists are used during mail flow and at the time of user clicks. Entries should take effect in less than 15 minutes.
+The Allowed/Blocked List portal in the Security & Compliance Center gives you a way to manually override the EOP filtering verdicts. The Allowed/Blocked List is  used during mail flow and at the time of user clicks. You can specify URLs and files to allow or block in the Allowed/Blocked List.
 
-- **URL overrides**:
+This topic describes how to configure entries in the Allowed/Blocked List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
-  - IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.
-  - Filename extensions are not allowed (for example, test.pdf).
-  - Unicode is not supported, but Punycode is.
-  - Hostnames are allowed if all of the following statements are true:
-  
-    - The hostname contains a period.
-    - There is at least one character to the left of the period.
-    - There are at least two characters to the right of the period.
 
-    For example, `t.co` is allowed; `.com` or `contoso.` are not allowed.
-  
-  - Wildcards (*) are allowed in the following scenarios:
-
-    - A left wildcard must be followed by a period to specify a subdomain.
-
-      For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.
-
-    - A right wildcard must follow a forward slash (/) to specify a path.
-
-      For example, `contoso.com/*` is allowed; `contoso.com*` or `contoso.com/ab*` are not allowed.
-
-    - All subpaths are not implied by a right wildcard.
-
-      For example, `contoso.com/*` does not include `contoso.com/a`.
-
-    - `*.com*` is invalid (not a resolvable domain and the right wildcard does not follow a forward slash).
-
-    - Wildcards are not allowed in IP addresses.
-
-  - The tilde (~) character is available for searches in the following scenarios:
-
-    - A left tilde implies domains and all subdomains.
-
-      For example `~contoso.com` includes `contoso.com ` and `*.contoso.com`.
-
-  - URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
-
-  - A username or password aren't supported or required.
-
-  - Quotes (' or ") are invalid characters.
-
-  - A URL should include all redirects where possible.
-
-- **File overrides**:
-
-  - Must be SHA256 and an exact match.
-
-  - Perceptual hashing (pHash) is not allowed.
 
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/allowBlockList>.
 
+- You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
+
+  ```dos
+  certutil.exe -hashfile "<Path>\<Filename>" SHA256
+  ```
+
+  An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not allowed.
+
+- The available URL values are described in the [URL syntax for the Allowed/Blocked List](#url-syntax-for-the-allowedblocked-list) section later in this topic.
+
 - The Allowed/Blocked List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
 
-- Entries in the Blocked List take precedence over entries in the Allowed List.
+- An entry should be active within 15 minutes.
+
+- Block entries take precedence over allow entries.
 
 - By default, entries in the Allowed/Blocked List will expire after 30 days. You can specify a date or set them to never expire.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform these procedures. To add and remove values from the lists, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to lists, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform these procedures. To add and remove values from the Allowed/Blocked List, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to the Allowed/Blocked List, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Use the Security & Compliance Center to create URL entries in the Allow/Block List
 
-For more information about the syntax for URL entries, see the <> section later in this topic.
+For more information about the syntax for URL entries, see the [URL syntax for the Allowed/Blocked List](#url-syntax-for-the-allowedblocked-list) section later in this topic.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
 
@@ -115,8 +80,6 @@ For more information about the syntax for URL entries, see the <> section later 
 4. When you're finished, click **Add**.
 
 ## Use the Security & Compliance Center to create file entries in the Allow/Block List
-
-You specify files by using the SHA256 hash value, and the result must be an exact match. <How?> Perceptual hashing (pHash) is not allowed.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
 
@@ -196,7 +159,7 @@ When you modify an existing URL or file entry, you can't modify the URL or file 
 
    - **Optional note**: Enter descriptive text for the entry.
 
-5. When you're finished, click **Safe**.
+5. When you're finished, click **Save**.
 
 ## Use the Security & Compliance Center to remove URL and file entries from the Allow/Block List
 
@@ -270,22 +233,242 @@ Remove-TenantAllowBlockListItems -Ids RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTb
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-## Misc
+## URL syntax for the Allowed/Blocked List
 
-|Scenario|Entry|Match|Not Matched|Block Match|Block Not Matched|Comment|
-|---|---|---|---|---|---|---|
-|No Wildcards|**contoso.com**|contoso.com|abc-contoso.com <br/><br/> contoso.com/a <br/><br/> payroll.contoso.com <br/><br/> test.com/contoso.com <br/><br/> test.com/q=contoso.com <br/><br/> www.contoso.com <br/><br/> www.contoso.com/q=a@contoso.com||abc-contoso.com|When no star or tilde, then bubble up exception for blocks that this applies to both subpath and domain portion, as written. i.e blocks here are "contain"|
-|Left Wildcard Subdomain|**\*.contoso.com**|www.contoso.com <br/><br/> xyz.abc.contoso.com|contoso.com <br/><br/> www.contoso.com/abc <br/><br/> 123contoso.com <br/><br/> test.com/contoso.com|www.contoso.com <br/><br/> xyz.abc.contoso.com|contoso.com <br/><br/> www.contoso.com/abc <br/><br/> 123contoso.com <br/><br/> test.com/contoso.com||
-|Right Wildcard at top of path|**contoso.com/a/\***|contoso.com/a/b <br/><br/> contoso.com/a/b/c <br/><br/> contoso.com/a/?q=joe@t.com|contoso.com <br/><br/> www.contoso.com <br/><br/> www.contoso.com/q=a@contoso.com <br/><br/> contoso.com/a|contoso.com/a/b <br/><br/> contoso.com/a/b/c <br/><br/> contoso.com/a/?q=joe@t.com|contoso.com <br/><br/> www.contoso.com <br/><br/> [www.contoso.com/q=a@contoso.com](http://www.contoso.com/q=a@contoso.com) <br/><br/> contoso.com/a||
-|Left tilde|**~contoso.com**|contoso.com <br/><br/> www.contoso.com <br/><br/> xyz.abc.contoso.com|contoso.com/abc <br/><br/> www.contoso.com/abc <br/><br/> 123contoso.com|contoso.com <br/><br/> www.contoso.com <br/><br/> xyz.abc.contoso.com|contoso.com/abc <br/><br/> www.contoso.com/abc <br/><br/> 123contoso.com|For blocks, they could just use the no wildcard or tilde option to be more thorough and clear, but this option works as well.|
-|Right Wildcard Suffix|**contoso.com/\***|contoso.com/a <br/><br/> contoso.com/ab <br/><br/> contoso.com/a/b/c <br/><br/> contoso.com/b <br/><br/> contoso.com/ba <br/><br/> contoso.com/b/a/c <br/><br/> contoso.com/?q=whatever@test.com|contoso.com|contoso.com/a <br/><br/> contoso.com/ab <br/><br/> contoso.com/a/b/c <br/><br/> contoso.com/b <br/><br/> contoso.com/ba <br/><br/> contoso.com/b/a/c <br/><br/> contoso.com/?q=whatever@test.com|contoso.com||
-|Left Wildcard Subdomain & Right Wildcard Suffix|**\*.contoso.com/\***|www.contoso.com/a <br/><br/> abc.contoso.com/ab <br/><br/> abc.xyz.contoso.com/a/b/c <br/><br/> xyz.contoso.com/ba <br/><br/> www.contoso.com/b/a/c|contoso.com/b|www.contoso.com/a <br/><br/> abc.contoso.com/ab <br/><br/> abc.xyz.contoso.com/a/b/c <br/><br/> xyz.contoso.com/ba <br/><br/> www.contoso.com/b/a/c|contoso.com/b||
-|Left and right tilde|**~contoso.com~**|contoso.com <br/><br/> www.contoso.com <br/><br/> xyz.abc.contoso.com <br/><br/> contoso.com/a <br/><br/> www.contoso.com/b|123contoso.com <br/><br/> contoso.org|contoso.com <br/><br/> www.contoso.com <br/><br/> xyz.abc.contoso.com <br/><br/> contoso.com/a <br/><br/> www.contoso.com/b|123contoso.com <br/><br/> contoso.org|For blocks, they could just use the no wildcard or tilde option to be more thorough and clear, but this option works as well.|
-|IP Address|**1.2.3.4**|1.2.3.4|1.2.3.4/a <br/><br/> 11.2.3.4/a|1.2.3.4|1.2.3.4/a <br/><br/> 11.2.3.4/a|Same applies to IPv6|
-|IP Address with right wildcard|**1.2.3.4/\***|1.2.3.4/ab <br/><br/> 1.2.3.4/abc|1.2.3.4/b <br/><br/> 1.2.3.4/baaaa|1.2.3.4/ab <br/><br/> 1.2.3.4/abc|1.2.3.4/b <br/><br/> 1.2.3.4/baaaa|Same applies to IPv6|
-|Missing/Invalid domain|**contoso** <br/><br/> **\*.contoso.\*** <br/><br/> **\*.com** <br/><br/> **\*.pdf**|\-|\-|\-|\-|Error: Not a valid domain <br/><br/> (error is on it not being a domain even though file extensions are not allowed anyways)|
-|Wildcard on text/without spacing characters|**\*contoso.com** <br/><br/> **contoso.com\*** <br/><br/> **\*1.2.3.4** <br/><br/> **1.2.3.4\*** <br/><br/> **contoso.com/a\*** <br>**contoso.com/ab\***|\-|\-|\-|\-|Error: Improper use of a wildcard|
-|No IP port support|**contoso.com:443** <br/><br/> **abc.contoso.com:25**|\-|\-|\-|\-|Error: No support for IP ports, all protocols are checked against the URL|
-|Non-descriptive Wildcards|**\*** <br/><br/> **\*.\***|\-|\-|\-|\-|Error: Improper use of a wildcard|
-|Middle Wildcard|**conto\*so.com** <br/><br/> **conto~so.com**|\-|\-|\-|\-|Error: Improper use of a wildcard|
-|Double wildcard|**contoso.com/\*\*** <br/><br/> **contoso.com/\*/\***|\-|\-|\-|\-|Error: Improper use of a wildcard|
+- IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.
+
+- Filename extensions are not allowed (for example, test.pdf).
+
+- Unicode is not supported, but Punycode is.
+
+- Hostnames are allowed if all of the following statements are true:
+
+  - The hostname contains a period.
+  - There is at least one character to the left of the period.
+  - There are at least two characters to the right of the period.
+
+  For example, `t.co` is allowed; `.com` or `contoso.` are not allowed.
+
+- Subpaths are not implied.
+
+  For example, `contoso.com` does not include `contoso.com/a`.
+
+- Wildcards (*) are allowed in the following scenarios:
+
+  - A left wildcard must be followed by a period to specify a subdomain.
+
+    For example, `*.contoso.com` is allowed; `*contoso.com` is not allowed.
+
+  - A right wildcard must follow a forward slash (/) to specify a path.
+
+    For example, `contoso.com/*` is allowed; `contoso.com*` or `contoso.com/ab*` are not allowed.
+
+  - All subpaths are not implied by a right wildcard.
+
+    For example, `contoso.com/*` does not include `contoso.com/a`.
+
+  - `*.com*` is invalid (not a resolvable domain and the right wildcard does not follow a forward slash).
+
+  - Wildcards are not allowed in IP addresses.
+
+- The tilde (~) character is available in the following scenarios:
+
+  - A left tilde implies a domain and all subdomains.
+
+    For example `~contoso.com` includes `contoso.com` and `*.contoso.com`.
+
+- URL entries that contain protocols (for example, `http://`, `https://`, or `ftp://`) will fail, because URL entries apply to all protocols.
+
+- A username or password aren't supported or required.
+
+- Quotes (' or ") are invalid characters.
+
+- A URL should include all redirects where possible.
+
+### URL entry scenarios
+
+Valid URL entries and their results are described in the following sections.
+
+#### Scenario: No wildcards
+
+**Entry**: `contoso.com`
+
+- **Allow match**: contoso.com
+
+- **Allow not matched**:
+
+  - abc-contoso.com
+  - contoso.com/a
+  - payroll.contoso.com
+  - test.com/contoso.com
+  - test.com/q=contoso.com
+  - www.contoso.com
+  - www.contoso.com/q=a@contoso.com
+  
+- **Block match**:
+
+  - contoso.com
+  - contoso.com/a
+  - payroll.contoso.com
+  - test.com/contoso.com
+  - test.com/q=contoso.com
+  - www.contoso.com
+  - www.contoso.com/q=a@contoso.com
+
+- **Block not matched**: abc-contoso.com
+
+#### Scenario: Left wildcard (subdomain)
+
+**Entry**: `*.contoso.com`
+
+- **Allow match** and **Block match**:
+
+  - www.contoso.com
+  - xyz.abc.contoso.com
+
+- **Allow not matched** and **Block not matched**:
+
+  - 123contoso.com
+  - contoso.com
+  - test.com/contoso.com
+  - www.contoso.com/abc
+  
+#### Scenario: Right wildcard at top of path
+
+**Entry**: `contoso.com/a/*`
+
+- **Allow match** and **Block match**:
+
+  - contoso.com/a/b
+  - contoso.com/a/b/c
+  - contoso.com/a/?q=joe@t.com
+
+- **Allow not matched** and **Block not matched**:
+
+  - contoso.com
+  - contoso.com/a
+  - www.contoso.com
+  - www.contoso.com/q=a@contoso.com
+  
+#### Scenario: Left tilde
+
+**Entry**: `~contoso.com`
+
+- **Allow match** and **Block match**:
+
+  - contoso.com
+  - www.contoso.com
+  - xyz.abc.contoso.com
+
+- **Allow not matched** and **Block not matched**:
+
+  - 123contoso.com
+  - contoso.com/abc
+  - www.contoso.com/abc
+
+#### Scenario: Right wildcard suffix
+
+**Entry**: `contoso.com/*`
+
+- **Allow match** and **Block match**:
+
+  - contoso.com/?q=whatever@fabrikam.com
+  - contoso.com/a
+  - contoso.com/a/b/c
+  - contoso.com/ab
+  - contoso.com/b
+  - contoso.com/b/a/c
+  - contoso.com/ba
+
+- **Allow not matched** and **Block not matched**: contoso.com
+
+#### Scenario: Left wildcard subdomain and right wildcard suffix
+
+**Entry**: `*.contoso.com/*`
+
+- **Allow match** and **Block match**:
+
+  - abc.contoso.com/ab
+  - abc.xyz.contoso.com/a/b/c
+  - www.contoso.com/a
+  - www.contoso.com/b/a/c
+  - xyz.contoso.com/ba
+
+- **Allow not matched** and **Block not matched**: contoso.com/b
+
+#### Scenario: Left and right tilde
+
+**Entry**: `~contoso.com~`
+
+- **Allow match** and **Block match**:
+
+  - contoso.com
+  - contoso.com/a
+  - www.contoso.com
+  - www.contoso.com/b
+  - xyz.abc.contoso.com
+
+- **Allow not matched** and **Block not matched**:
+
+  - 123contoso.com
+  - contoso.org
+
+#### Scenario: IP address
+
+**Entry**: `1.2.3.4`
+
+- **Allow match** and **Block match**: 1.2.3.4
+
+- **Allow not matched** and **Block not matched**:
+
+  - 1.2.3.4/a
+  - 11.2.3.4/a
+
+#### IP address with right wildcard
+
+**Entry**: `1.2.3.4/*`
+
+- **Allow match** and **Block match**:
+
+  - 1.2.3.4/b
+  - 1.2.3.4/baaaa
+
+### Examples of invalid entries
+
+The following entries are invalid:
+
+- **Missing or invalid domain values**:
+
+  - contoso
+  - \*.contoso.\*
+  - \*.com
+  - \*.pdf
+
+- **Wildcard on text or without spacing characters**:
+
+  - \*contoso.com
+  - contoso.com\*
+  - \*1.2.3.4
+  - 1.2.3.4\*
+  - contoso.com/a\*
+  - contoso.com/ab\*
+
+- **IP addresses with ports**:
+
+  - contoso.com:443
+  - abc.contoso.com:25
+
+- **Non-descriptive wildcards**:
+
+  - \*
+  - \*.\*
+
+- **Middle wildcards**:
+
+  - conto\*so.com
+  - conto~so.com
+
+- **Double wildcards**
+
+  - contoso.com/\*\*
+  - contoso.com/\*/\*
