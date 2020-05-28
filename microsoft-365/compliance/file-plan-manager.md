@@ -27,11 +27,11 @@ Although you can create and manage retention labels from **Information governanc
 
 - You can bulk-create retention labels by importing the relevant information from a spreadsheet.
 
-- You export the information from existing retention labels for analysis and offline collaboration.
+- You export the information from existing retention labels for analysis and offline collaboration, or for bulk-editing.
 
 - More information about the retention labels are displayed to make it easier to see into and across the settings of all your retention labels from one view.
 
-- Additional information as file plan descriptors is supported for each label.   
+- File plan descriptors support additional and optional information for each label.
 
 File plan can be used for all retention labels, even if they don't mark content as a record.
 
@@ -57,7 +57,7 @@ If you've already created retention labels from **Information governance** in th
 
 Similarly, if you now create retention labels in file plan, they are also available from **Information governance** if the labels aren't configured to mark content as a record.
 
-On the **File plan** page, you see label settings, optional File plan descriptors, an export option to analyze or enable offline reviews of your labels, and an import option to create retention labels. 
+On the **File plan** page, you see all your labels with their status and settings, optional file plan descriptors, an export option to analyze or enable offline reviews of your labels, and an import option to create retention labels. 
 
 ### Label settings columns
 
@@ -121,7 +121,7 @@ A *.csv file that contains all existing retention labels opens. For example:
 
 ## Import retention labels into your file plan
 
-In file plan, you can bulk-import new retention labels, and use the same method bulk-modify existing retention labels.
+In file plan, you can bulk-import new retention labels, and use the same method to bulk-modify existing retention labels.
 
 To import new retention labels and modify existing retention labels: 
 
@@ -135,7 +135,7 @@ To import new retention labels and modify existing retention labels:
 
    ![Blank file plan template open in Excel](../media/file-plan-blank-template.png)
 
-3. Fill-out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
+3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
 
    |**Property**|**Type**|**Valid values**|
    |:-----|:-----|:-----|
@@ -171,10 +171,10 @@ To import new retention labels and modify existing retention labels:
 
    If there's a validation error, file plan import continues to validate every entry in the import file and displays all errors  referencing the line and row numbers in the import file. Copy the displayed error results so you can correct them when you return to the import file.
 
-When the import is complete, you can now add the labels to a label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**. 
+When the import is complete, you can now add the retention labels to a retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
 
-You can do the same action from **Label policies** page, and you must use this location if you want to add a label to an existing label policy:
+To add a label to an existing retention label policy, select the **Label policies** tab:
 
 ![Option to publish labels](../media/compliance-file-plan-publish_labels.png)
 
-For more information about creating retention labels and their policies, see [Create, publish, and auto-apply retention labels](create-retention-labels.md)
+For more information about creating and editing retention labels and their policies, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
