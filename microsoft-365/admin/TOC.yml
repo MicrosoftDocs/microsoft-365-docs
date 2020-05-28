@@ -12,6 +12,15 @@
           href: setup/plan-your-setup.md
         - name: Set up your organization with the guided setup
           href: setup/setup.md
+          items:
+           - name: Set up Microsoft 365 Business Basic
+             href: setup/setup-business-basic.md
+           - name: Set up Microsoft 365 Business Standard
+             href: setup/setup-business-standard.md
+           - name: Set up Microsoft Business Premium
+             href: ../business/setup.md
+           - name: Set up Microsoft 365 Apps for business
+             href: setup/setup-apps-for-business.md
         - name: Explore the Setup page and wizard
           href: setup/o365-setup-wizard-and-setup-page.md
         - name: Migrate your data
