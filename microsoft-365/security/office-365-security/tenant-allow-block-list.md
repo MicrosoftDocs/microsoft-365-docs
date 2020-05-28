@@ -57,7 +57,7 @@ This topic describes how to configure entries in the Tenant Allow/Block List in 
 
 ## Use the Security & Compliance Center to create URL entries in the Tenant Allow/Block List
 
-For details about the syntax for URL entries, see the [URL syntax for the Allowed/Blocked List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
+For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
