@@ -51,7 +51,7 @@ These permissions are required only to create and apply retention labels and a l
 
 2. Follow the prompts in the wizard. If you are using records management:
     
-    - For information about the file plan descriptors, see [Overview of file plan manager](file-plan-manager.md)
+    - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
     - To use the retention label to declare content as a record, enable the checkbox **Use label to classify content as a "Record"**.
 
