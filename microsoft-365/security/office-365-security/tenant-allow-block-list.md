@@ -43,17 +43,17 @@ This topic describes how to configure entries in the Tenant Allow/Block List in 
 
 - The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-allowedblocked-list) section later in this topic.
 
-- The Allowed/Blocked List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
+- The Tenant Allow/Block List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
 
 - An entry should be active within 15 minutes.
 
 - Block entries take precedence over allow entries.
 
-- By default, entries in the Allowed/Blocked List will expire after 30 days. You can specify a date or set them to never expire.
+- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform these procedures. To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to the Allowed/Blocked List, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform these procedures. To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to the Tenant Allow/Block List, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## Use the Security & Compliance Center to create URL entries in the Tenant Allow/Block List
 
