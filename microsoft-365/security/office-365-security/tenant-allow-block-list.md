@@ -14,14 +14,18 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn how to configure a mailbox to collect spam and phishing email that are reported by users."
+ROBOTS: NOINDEX, NOFOLLOW
+description: "Admins can learn how to configure URL and file entries in the Allowed/Blocked List in the Security & Compliance Center."
 ---
 
-# Use the Allowed/Blocked List portal in EOP
+# Use the Allowed/Blocked List in EOP
+
+> [!NOTE]
+> The features described in this topic are in Preview, are subject to change, and are not available in all organizations.
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Allowed/Blocked List portal in the Security & Compliance Center gives you a way to manually override the EOP filtering verdicts. The Allowed/Blocked List is  used during mail flow and at the time of user clicks. You can specify URLs and files to allow or block in the Allowed/Blocked List.
+The Allowed/Blocked List in the Security & Compliance Center gives you a way to manually override the EOP filtering verdicts. The Allowed/Blocked List is used during mail flow and at the time of user clicks. You can specify URLs and files to allow or block in the Allowed/Blocked List.
 
 This topic describes how to configure entries in the Allowed/Blocked List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
