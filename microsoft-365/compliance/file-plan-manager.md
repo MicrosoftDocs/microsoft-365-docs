@@ -29,7 +29,7 @@ Although you can create and manage retention labels from **Information governanc
 
 - You export the information from existing retention labels for analysis and offline collaboration, or for bulk-editing.
 
-- More information about the retention labels are displayed to make it easier to see into and across the settings of all your retention labels from one view.
+- More information about the retention labels is displayed to make it easier to see into and across the settings of all your retention labels from one view.
 
 - File plan descriptors support additional and optional information for each label.
 
@@ -133,7 +133,7 @@ To import new retention labels and modify existing retention labels:
 
 2. Download a blank template to import new retention labels. Alternatively, you can start with the .csv file that is exported when you export the existing retention labels in your organization.
 
-   ![Blank file plan template open in Excel](../media/file-plan-blank-template.png)
+   ![Blank file plan template opens in Excel](../media/file-plan-blank-template.png)
 
 3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
 
@@ -142,10 +142,10 @@ To import new retention labels and modify existing retention labels:
    |LabelName|String|This property specifies the name of the retention label.|
    |Comment|String|Use this property to add a description about the retention label for admins. This description appears only to admins who manage the retention label in the compliance center.|
    |Notes|String|Use this property to add a description about the retention label for users. This description appears when users hover over the label in apps like Outlook, SharePoint, and OneDrive. If you leave this property blank, a default description is displayed, which explains the label's retention settings. |
-   |IsRecordLabel|String|This property specifies whether the label marks the content a a record. Valid values are:</br>**TRUE**: The label marks the item as a record and as a result, the item can't be deleted. </br>**FALSE**: The label doesn't mark the content as a record. This is the default value.|
-   |RetentionAction|String|This property specifies what action to take after the value specified by the RetentionDuration property expires. Valid values are:</br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then do nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires.   |
-   |RetentionDuration|String|This property specifies the number of days to retain the content. Valid values are:</br>**Unlimited**: Items will be retained indefinitely. </br>***n***: A positive integer; for example, **365**. 
-   |RetentionType|String|This property specifies whether the retention duration is calculated from the content creation date, event date, when labeled date, or last modified date. Valid values are:</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
+   |IsRecordLabel|String|This property specifies whether the label marks the content as a record. Valid values are: </br>**TRUE**: The label marks the item as a record and as a result, the item can't be deleted. </br>**FALSE**: The label doesn't mark the content as a record. This is the default value.|
+   |RetentionAction|String|This property specifies what action to take after the value specified by the RetentionDuration property expires. Valid values are: </br>**Delete**: Items older than the value specified by the RetentionDuration property are deleted.</br>**Keep**: Retain items for the duration specified by the RetentionDuration property and then do nothing when the duration period expires. </br>**KeepAndDelete**: Retain items for the duration specified by the RetentionDuration property and then delete them when the duration period expires.   |
+   |RetentionDuration|String|This property specifies the number of days to retain the content. Valid values are: </br>**Unlimited**: Items will be retained indefinitely. </br>***n***: A positive integer; for example, **365**. 
+   |RetentionType|String|This property specifies whether the retention duration is calculated from the content creation date, event date, when labeled date, or last modified date. Valid values are: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
    |ReviewerEmail|SmtpAddress|When this property is populated, a disposition review will be triggered when the retention duration expires. This property specifies the email address of a reviewer for the **KeepAndDelete** retention action. You can include the email address of individual users, distribution groups, or security groups. You can specify multiple email addresses separated by semicolons.|
    |ReferenceId|String|This property specifies the value that's displayed in the **Reference Id** file plan descriptor, which you can use as a unique value to your organization.| 
    |DepartmentName|String|This property specifies the value that's displayed in the **Function/department** file plan descriptor.|
