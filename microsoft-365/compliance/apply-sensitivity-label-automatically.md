@@ -246,7 +246,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     For OneDrive, you must specify individual accounts. The URL for a user's OneDrive is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
-    For example, if a user in the contoso tenant has a user name of "rsimone", you would specify: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
     You might find it helpful to [get a list of all user OneDrive URLs in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
