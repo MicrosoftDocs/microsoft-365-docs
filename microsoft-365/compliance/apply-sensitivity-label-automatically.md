@@ -246,9 +246,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     For OneDrive, you must specify individual accounts. The URL for a user's OneDrive is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
-    For example, if the user in the contoso tenant has a user name of "rsimone", you would specify: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    For example, if a user in the contoso tenant has a user name of "rsimone", you would specify: `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
-    You might it helpful to [get a list of all user OneDrive URLs in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
+    You might find it helpful to [get a list of all user OneDrive URLs in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
 7. For the **Define policy settings** page: Keep the default of **Find content that contains** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced settings**. Then select **Next**.
     
