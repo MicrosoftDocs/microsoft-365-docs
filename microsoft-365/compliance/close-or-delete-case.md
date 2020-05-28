@@ -51,7 +51,7 @@ When you reopen an Advanced eDiscovery case, any holds that were in place when t
 
 To reopen a closed case:
 
-1. On the **Advanced eDiscovery** page, select the case that you want to delete.
+1. On the **Advanced eDiscovery** page, select the case that you want to reopen.
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
