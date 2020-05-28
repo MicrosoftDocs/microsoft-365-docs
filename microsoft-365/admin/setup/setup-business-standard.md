@@ -39,13 +39,11 @@ If you found this video helpful, check out the [complete training series for sma
 
 ## Set up
 
-### Add your domain, users, and set up policies
+### Add your domain to personalize sign-in
 
 When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up.
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
-
-### Add your domain to personalize sign-in
 
 1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
 
@@ -69,9 +67,9 @@ When you purchase Microsoft 365 Business Standard, you have the option of using 
 
 You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
 
-#### Add users in the wizard
+### Add users in the wizard
 
-Any users you add in the wizard get automatically assigned a Microsoft 365 Business Premium license.
+Any users you add in the wizard get automatically assigned a Microsoft 365 Business Standard license.
 
 1. If your Microsoft 365 Business Standard subscription has existing users (for example, if you used Azure AD Connect), you get an option to assign licenses to them now. Go ahead and add licenses to them as well.
 
