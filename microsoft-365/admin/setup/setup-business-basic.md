@@ -43,7 +43,23 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
 - If you purchased a new domain when you signed up, your domain is all set up and you can move to [Add users and assign licenses](#add-users-and-assign-licenses).
 
-1. Sign in to [Microsoft 365 admin center](https://admin.microsoft.com) by using your global admin credentials. 
+ ::: moniker range="o365-worldwide"
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. If you're using Office 365 Germany, go to [this admin center](https://go.microsoft.com/fwlink/p/?linkid=848041).
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. If you're using Office 365 operated by 21Vianet, go to [this admin center.](https://go.microsoft.com/fwlink/p/?linkid=850627).
+
+::: moniker-end 
 
 2. Choose **Go to setup** to start the wizard.
     

@@ -25,7 +25,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
-description: "Learn how to set up your Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education subscription."
+description: "Learn how to set up your Microsoft Business Premium, Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education subscription."
 ---
 
 # Set up Microsoft 365 for business
@@ -34,11 +34,11 @@ Follow these steps to get your business or [nonprofit](https://go.microsoft.com/
   
 Not a business? See [Set up for Microsoft 365 Family or Microsoft 365 Personal](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx).
   
-## Business Premium
+## Set up Microsoft Business Standard
   
  *These steps are for businesses and [nonprofits](https://go.microsoft.com/fwlink/p/?LinkId=627221) that have the **[Microsoft 365 Business Standard plan.](https://go.microsoft.com/fwlink/p/?LinkId=627220)***
 
-Watch a short video about setting up Microsoft 365 Business Standard.<br><br>
+Watch a short video about setting up Microsoft 365 Business Standard (formerly known as Office 365 Business Premium).<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/913be1ad-bae1-40c0-9ded-15bb477b828b]
 
@@ -104,7 +104,7 @@ Microsoft 365 doesn't include a public website for your business. If you want to
 
 More at [Use a public website](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9.aspx).
   
-## Business Essentials
+## Business Basic
   
 *Use these steps to set up your **[Microsoft 365 Business Basic](https://go.microsoft.com/fwlink/p/?LinkId=627218)** subscription. With this plan, you connect to Office 365 online. You don't install the Office apps.*
 
@@ -221,7 +221,7 @@ More at [Upload files to a library](https://support.office.com/article/da549fb1-
 
 To take a tour of Microsoft 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
   
-## Business
+## Microsoft 365 Apps for business
   
 *The **[Microsoft 365 Apps for business plan](https://go.microsoft.com/fwlink/p/?LinkId=627219)** plan does not include Microsoft email or Skype for Business. In these setup steps, we show you how to add your existing email account (such as Gmail) to Outlook.*
 
