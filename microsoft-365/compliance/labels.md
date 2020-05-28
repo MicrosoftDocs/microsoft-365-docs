@@ -269,7 +269,8 @@ When you create a retention label, you can do so without turning on any retentio
   
 For example, you can create a retention label named "Review later" with no actions, and then auto-apply that retention label to content with sensitive information types or queried content.
   
-![Label settings page with retention turned off](../media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Label settings page with retention turned off](../media/retention-label-retentionoff.png)
+
   
 ## Using retention labels for records management
     
