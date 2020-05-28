@@ -25,8 +25,6 @@ The Allowed/Blocked List portal in the Security & Compliance Center gives you a 
 
 This topic describes how to configure entries in the Allowed/Blocked List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
-
-
 ## What do you need to know before you begin?
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/allowBlockList>.
@@ -55,7 +53,7 @@ This topic describes how to configure entries in the Allowed/Blocked List in the
 
 ## Use the Security & Compliance Center to create URL entries in the Allow/Block List
 
-For more information about the syntax for URL entries, see the [URL syntax for the Allowed/Blocked List](#url-syntax-for-the-allowedblocked-list) section later in this topic.
+For details about the syntax for URL entries, see the [URL syntax for the Allowed/Blocked List](#url-syntax-for-the-allowedblocked-list) section later in this topic.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
 
@@ -137,7 +135,7 @@ To clear existing filters, click **Filter**, and in the **Filter** flyout that a
 
 ## Use the Security & Compliance Center to modify URL and file entries in the Allow/Block List
 
-When you modify an existing URL or file entry, you can't modify the URL or file value itself. To modify a URL or file, you need to delete the entry and recreate it.
+You can't modify the URL or file value itself. Instead, you need to delete the entry and recreate it.
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
 
@@ -181,6 +179,18 @@ To add URL and file entries in the Allow/Block List, use the following syntax:
 New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
 ```
 
+This example adds a URL block entry for contoso.com and all subdomains (for example, contoso.com, www.contoso.com, and xyz.abc.contoso.com). Because we didn't use the ExpirationDate or NoExpiration parameters, the entry expires after 30 days.
+
+```powershell
+New-TenantAllowBlockListItem -ListType Url -Action Block -Entries ~contoso.com
+```
+
+```powershell
+New-TenantAllowBlockListItem -ListType FileHash -Action Allow -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+```
+
+This example adds a file allow entry for the specified files that never expires.
+
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
 
 ### Use PowerShell to view URL and file entries in the Allow/Block List
@@ -207,12 +217,18 @@ For detailed syntax and parameter information, see [Get-TenantAllowBlockListItem
 
 ### Use PowerShell to modify URL and file entries in the Allow/Block List
 
-When you modify an existing URL or file entry, you can't modify the URL or file value itself. To modify a URL or file, you need to delete the entry and recreate it.
+You can't modify the URL or file value itself. Instead, you need to delete the entry and recreate it.
 
-To view URL and file entries in the Allow/Block List, use the following syntax:
+To modify URL and file entries in the Allow/Block List, use the following syntax:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
+```
+
+This example changes the expiration date of the specified entry.
+
+```powershell
+Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate (Get-Date "5/30/2020 9:30 AM").ToUniversalTime()
 ```
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
@@ -228,7 +244,7 @@ Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..
 This example removes the specified URL entry from the Allow/Block List.
 
 ```powershell
-Remove-TenantAllowBlockListItems -Ids RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0 -ListType Url
+Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
 ```
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
