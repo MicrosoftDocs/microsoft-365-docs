@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: "Learn as an admin how Office 365 and Exchange Online Protection (EOP) protects customers from outbound spam, and what to do if you need to send mass mailings."
+description: "Admins can learn about the outbound spam controls in Exchange Online Protection (EOP), and what to do if you need to send mass mailings."
 ---
 
-# Outbound spam protection
+# Outbound spam protection in EOP
 
-We take managing outbound spam seriously, because Microsoft 365 (Exchange Online or standalone Exchange Online Protection (EOP) without Exchange Online mailboxes) is an online service where many customers use a shared pool of resources. One Microsoft 365 customer intentionally or unintentionally sending spam from their organization can degrade the reputation of the whole service, and can affect email delivery for other customers.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, we take managing outbound spam seriously. One customer who intentionally or unintentionally sends spam from their organization can degrade the reputation of the whole service, and can affect email delivery for other customers.
 
 This topic describes the controls and notifications that are designed to help prevent outbound spam, and what you can do if you need to send mass mailings.
 
@@ -35,7 +35,7 @@ This topic describes the controls and notifications that are designed to help pr
 
 ## How EOP controls outbound spam
 
-- **Segregation of outbound email traffic**: Every outbound message that's sent through the service is scanned for spam. If the message is determined to be spam, it's delivered from a secondary, less reputable IP address pool named the _high-risk delivery pool_. For more information, see [High-risk delivery pool for outbound messages in Office 365](high-risk-delivery-pool-for-outbound-messages.md).
+- **Segregation of outbound email traffic**: Every outbound message that's sent through the service is scanned for spam. If the message is determined to be spam, it's delivered from a secondary, less reputable IP address pool named the _high-risk delivery pool_. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).
 
 - **Monitoring our source IP address reputation**: Microsoft 365 queries various third party IP block lists. An alert is generated if any of the IP addresses that we use for outbound email appear on these lists. This allows us to react quickly when spam has caused our reputation to degrade. When an alert is generated, we have internal documentation that outlines how to get our IP addresses remove (delisted) from block lists.
 
@@ -47,7 +47,7 @@ This topic describes the controls and notifications that are designed to help pr
 
 ## Recommendations for customers who want to send mass mailings through EOP
 
-It's difficult to strike a balance between customers who want to send a large volume of email vs. protecting the service from compromised accounts and bulk email senders with poor recipient acquisition practices. The cost of an Microsoft 365 email source landing on a third party IP block list is greater than blocking a user who's sending too much email.
+It's difficult to strike a balance between customers who want to send a large volume of email vs. protecting the service from compromised accounts and bulk email senders with poor recipient acquisition practices. The cost of a Microsoft 365 email source landing on a third party IP block list is greater than blocking a user who's sending too much email.
 
 As described in the [Exchange Online Service Description](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits), using EOP to send bulk email is not a supported use of the service, and is only permitted on a "best-effort" basis. For customers who do want to send bulk email, we recommend the following solutions:
 

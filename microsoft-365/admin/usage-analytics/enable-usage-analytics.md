@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -79,7 +80,7 @@ To initiate the template app, you have to be either a **global administrator**, 
 
 5.	Click **Explore app** to view the app with sample data. Click **Connect** to connect the app to your organization’s data.
 
-6.	After clicking **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, type in the tenant Id you copied in step (1) \> **Next**.
+6.	After clicking **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, type in the tenant Id (without dashes) you copied in step (1), and select **Next**.
     
 7. On the next screen, select **oAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
     
@@ -93,7 +94,7 @@ Tenant level aggregates will be available in all reports. **User-level details w
 
 To make the data that is collected for all reports anonymous, you have to be a global administrator. This will hide identifiable information such as user, group and site names in reports and in the template app .
   
-1. In the admin center, go to the **Settings** \> **Settings**, and under **Services** tab, choose **Reports**.
+1. In the admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
     
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports as well as to the template app.
   

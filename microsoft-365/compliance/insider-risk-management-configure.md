@@ -86,17 +86,19 @@ Insider risk management supports importing user and log data imported from 3rd-p
 See the [Set up a connector to import HR data](import-hr-data.md) topic for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
 
 >[!IMPORTANT]
->If you configure a p'licy using the *Departing emplo'ee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
+>If you configure a policy using the *Departing employee data theft* template, you'll need to configure the HR Connector to use the full signal detection features of the policy template. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
 
 ### Configure Data Loss Prevention (DLP) policies
 
-Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties. When configuring an insider risk management policy with the *Data leaks* template, you have to assign a specific DLP policy to the policy. This policy helps drive the alert indicators for sensitive information is an important part of configuring full risk management coverage in your organization.
+Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties. When configuring an insider risk management policy with the *Data leaks* template, you have to assign a specific DLP policy to the policy.
 
-See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these config"ration steps.""""""""""""
+This policy helps drive insider risk management indicators for high severity DLP alerts for sensitive information and is an important part of configuring full risk management coverage in your organization. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
+
+See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization. After you've configured a DLP policy, return to these configuration steps.
 
 >[!IMPORTANT]
->If you configure a policy using the *Data leaks* template, you'll need to configure at least one DLP policy to use the full signal detection features of the policy template. If you configure more than one DLP policy for your organization, you'll need to assign an insider risk management policy per DLP policy.
-""""""""
+>Make sure the **Incident reports** setting in the DLP policy for insider risk management used with this template is configured for *High* severity level alerts. Insider risk management alerts won't be generated from DLP policies with the **Incident reports** field set at *Low* or *Medium*.
+
 ## Step 4 (required): Configure insider risk settings
 
 [Insider risk settings](insider-risk-management-policies.md#policy-settings) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
@@ -111,7 +113,7 @@ Before configuring a policy, define the following insider risk settings:
     >In order to receive alerts for risky activity defined in your policies, you must select one or more indicators.
 
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-policies.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
-5. On the **Intelligent detections** page, configure the [anomaly and offensive language detections](insider-risk-management-policies.md#intelligent-detections) for insider risk policies.
+5. On the **Intelligent detections** page, configure the [anomaly detection, offensive language detection, and alert volume level](insider-risk-management-policies.md#intelligent-detections) for insider risk policies.
 6. Select **Save** to enable these settings for your insider risk policies.
 
 ## Step 5 (required): Create an insider risk management policy

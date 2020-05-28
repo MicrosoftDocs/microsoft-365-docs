@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -22,11 +23,10 @@ ms.assetid: 8a5a4bbc-667a-4cac-8769-d8ac9015db4c
 description: "Learn about Office 365 Germany."
 ---
 
-> [!NOTE]
-> Office 365 Germany is no longer accepting new customers or deploying new services. The new cloud regions in Germany, available in the first quarter of 2020 for Microsoft 365 and Office 365, will provide both core customer data residency within Germany, as well as full connectivity to the Microsoft global cloud network. 
->
-
 # Learn about Office 365 Germany
+
+> [!NOTE]
+> Office 365 Germany is no longer accepting new customers or deploying new services. The new cloud regions in Germany, available in the first quarter of 2020 for Microsoft 365 and Office 365, will provide both core customer data residency within Germany, as well as full connectivity to the Microsoft global cloud network.
 
 Office 365 Germany was a differentiated option to the Office 365 services available across Europe. It helped to address the needs of the most regulated customers in Germany, the European Union (EU), and the European Free Trade Association (EFTA) by delivering our industry-leading productivity services for digital work, from German datacenters, with data residency in Germany, and strict data access and control measures via a unique data trustee model governed by German law.
   

@@ -1,5 +1,5 @@
 ---
-title: "Understand your invoice for Microsoft 365 for business"
+title: "Understand your bill or invoice for Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,16 +17,17 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: "Learn how to interpret the charges, billing, and payment information on your Microsoft 365 for business invoice, and how to change the purchase order number."
+description: "Learn how to interpret the charges, billing, and payment information on your Microsoft 365 for business bill or invoice, and how to change the purchase order number."
 ---
 
-# Understand your invoice for Microsoft 365 for business
+# Understand your bill or invoice for Microsoft 365 for business
 
 Each month you'll receive an email that tells you that your new billing statement is available in the admin center. [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md).
   

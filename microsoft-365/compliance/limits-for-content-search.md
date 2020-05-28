@@ -44,7 +44,7 @@ The following table lists the search limits in the Security & Compliance Center.
 |The maximum number of items found in all public folder mailboxes that are displayed on the preview page when previewing Content Search results.  <br/> |200  <br/> |
 |The maximum number of public mailboxes that can be previewed for search results. If there are more than 500 public folder mailboxes that contain content that matches the search query, only the top 500 public folder mailboxes with the most search results will be available for preview.  <br/> |500  <br/> |
 |The maximum number of characters for the search query (including operators and conditions) for a Content Search.  <br/><br/> **Note:** This limit takes effect after the query is expanded, which means the query will get expanded against each of the keywords. For example, if a search query has 15 keywords and additional parameters and conditions, the query gets expanded 15 times, each with the other parameters and conditions in the query. So even though the number of characters in search query may be below the limit, it's the expanded query that may contribute to exceeding this limit.  <br/> |**Mailboxes:** 10,000  <br/> **Sites:** 4,000 when searching all sites or 2,000 when searching up to 20 sites <sup>1</sup> <br/> |
-|Maximum number of variants returned when using a prefix wildcard to search for an exact phrase in a search query or when using a prefix wildcard and the **NEAR** or **ONEAR** Boolean operator.  <br/> |10,000 <sup>2</sup> <br/> |
+|Maximum number of variants returned when using a prefix wildcard to search for an exact phrase in a search query or when using a prefix wildcard and the **NEAR** Boolean operator.  <br/> |10,000 <sup>2</sup> <br/> |
 |The minimum number of alpha characters for prefix wildcards; for example,  `time*`,  `one*`, or  `set*`.  <br/> |3  <br/> |
 |The maximum number of mailboxes in a Content Search that you can delete items in by doing a "search and purge" action (by using the **New-ComplianceSearchAction -Purge** command). If the Content Search that you're doing a purge action for has more source mailboxes than this limit, the purge action will fail. For more information about search and purge, see [Search for and delete email messages in your organization](search-for-and-delete-messages-in-your-organization.md).  <br/> |50,000  <br/> |
    
@@ -77,7 +77,7 @@ There are additional limits related to different aspects of Content Search, such
     
 - [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
     
-- [Search limits for SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f)
+- [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits)
     
 For information about Content Searches, see:
   
