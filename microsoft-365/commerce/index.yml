@@ -8,6 +8,7 @@ metadata:
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   ms.collection: commerce # Optional; Remove if no collection is used.
+  ms.custom: AdminSurgePortfolio
   author: cmcatee-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: cmcatee #Required; microsoft alias of author; optional team alias.
   ms.date: 02/27/2020 #Required; mm/dd/yyyy format.
@@ -24,11 +25,11 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: View your bill
+          - text: View your bill or invoice
             url: billing-and-payments/view-your-bill-or-invoice.md
           - text: Manage payment methods
-            url: billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md
-          - text: Understand your invoice
+            url: billing-and-payments/manage-payment-methods.md
+          - text: Understand your bill or invoice
             url: billing-and-payments/understand-your-invoice.md
           - text: Manage billing profiles
             url: billing-and-payments/manage-billing-profiles.md
