@@ -17,7 +17,7 @@
            - name: Set up Microsoft 365 Business Standard
              href: setup/setup-business-standard.md
            - name: Set up Microsoft Business Premium
-             href: ../business/setup.md
+             href: ../business/set-up.md
            - name: Set up Microsoft 365 Apps for business
              href: setup/setup-apps-for-business.md
         - name: Explore the Setup page and wizard
