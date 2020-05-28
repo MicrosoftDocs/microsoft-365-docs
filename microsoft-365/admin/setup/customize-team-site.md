@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - IT_Networking
 - seo-marvel-apr2020
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
