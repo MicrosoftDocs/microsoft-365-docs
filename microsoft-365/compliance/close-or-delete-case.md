@@ -27,7 +27,7 @@ When the legal case or investigation supported by an Advanced eDiscovery case is
 
 Here's what happens when you close an Advanced eDiscovery case:
 
-- If the case contains any content locations on hold, those holds will be turned off. This might result in content being permanently deleted or purged, either by the user or by an automated process, such as a deletion policy.
+- If the case contains any content locations on hold, those holds will be turned off. After the hold is turned off, a 30-day grace period (called a *delay hold*) is applied to content locations that were on hold. This helps prevent content from being immediately deleted and gives admins an opportunity to search for or recover content that will be permanently deleted after the delay hold period expires. For more information, see [Removing content locations from an eDiscovery hold](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
 
 - Closing a case only turns off the holds that are associated with that case. If other holds are place on a content location (such as a Litigation Hold, Core eDiscovery hold, or a hold from a different Advanced eDiscovery case) those holds will still be maintained.
 
@@ -51,7 +51,7 @@ When you reopen an Advanced eDiscovery case, any holds that were in place when t
 
 To reopen a closed case:
 
-1. On the **Advanced eDiscovery** page, select the case that you want to delete.
+1. On the **Advanced eDiscovery** page, select the case that you want to reopen.
 
 2. On the **Settings** tab, under **Case Information**, click **Select**.
 
