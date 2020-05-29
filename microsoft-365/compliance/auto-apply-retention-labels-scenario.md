@@ -280,7 +280,7 @@ For this scenario, we use the following flow to trigger the event:
 To create this flow, start from a SharePoint connector and select the **When an item is created or modified** trigger. Specify the site address and list name, and then add a condition based on when the **In Production** list column value is set to **No** (or equal to false in the condition card). Then add an action based on the built-in HTTP template. Use the values in the following section to configure the HTTP action. You can copy the values for the URI and Body properties from the section below and then paste them into the template.
 
 - **Method**: POST
-- **URI**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URI**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
     
