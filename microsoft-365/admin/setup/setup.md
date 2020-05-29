@@ -19,6 +19,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - okr_smb 
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150

@@ -41,8 +41,8 @@ To set organizational relationship settings
 
 1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
 2. In the left navigation, click **Azure Active Directory**.
-3. In the **Overview** pane, click **Organizational relationships**.
-4. In the **Organizational relationships** pane, click **Settings**.
+3. In the **Overview** pane, click **External identities**.
+4. In the **Organizational identities** pane, click **External collaboration settings**.
 5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
 6. If you made changes, click **Save**.
 

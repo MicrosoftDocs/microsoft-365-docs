@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MSP160
@@ -149,7 +150,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 
 if($GroupName)
 {
-    $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
+    $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -Filter "DisplayName eq '$GroupName'").objectId
 }
  else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName

@@ -20,6 +20,7 @@ search.appverid:
 description: "The Microsoft 365 admin center - learn about the features that were added this month."
 ms.custom: 
 - MACDashWhatsNew
+- AdminSurgePortfolio
 ---
 
 # What's new in the Microsoft 365 admin center
@@ -41,7 +42,7 @@ And if you're interested in what's new in other Microsoft cloud services:
 
 - [What's New in Exchange Online](https://go.microsoft.com/fwlink/?linkid=2119714)
 - [What's New in Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/whats-new)
-- [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/Office365/SecurityCompliance/whats-new)
+- [What's new in the Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/whats-new)
 - [What's new in the SharePoint admin center](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
 - [What's new in the Exchange admin center](https://docs.microsoft.com/Exchange/whats-new)
 - [Office updates](https://docs.microsoft.com/OfficeUpdates/)
@@ -303,7 +304,7 @@ There have been a lot of changes for Roles in the admin center since we started 
 
 - **Favorites** - You can add a star to your favorite or most-used roles, so that you can easily find them by sorting the column or creating a filter.
 - **Active users** > **Manage roles** - This has been updated to align with the changes in Roles. As with the Roles list, we've scoped the default list of roles to the most useful, but you can see all roles by expanding **Show all by category**.
-- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md#roles-available-in-the-microsoft-365-admin-center) role!
+- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) role!
 
 ### Report an issue
 

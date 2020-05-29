@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use sensitivity labels from the Microsoft Information Protection framework, to classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. These labels can apply protection settings that include encryption visual markings such as footers and watermarks."
+description: Use sensitivity labels from the Microsoft Information Protection framework to classify and protect your organization's data, without hindering user productivity and collaboration.
 ---
 
 # Learn about sensitivity labels
@@ -84,7 +84,7 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     ![Watermark and header applied to document](../media/Sensitivity-label-watermark-header.png)
     
-    Need to check when content markings are applied? See [When Microsoft 365 applies content marking and encryption](sensitivity-labels-office-apps.md#when-office-365-applies-content-marking-and-encryption).
+    Need to check when content markings are applied? See [When Office apps apply content marking and encryption](sensitivity-labels-office-apps.md#when-office-apps-apply-content-marking-and-encryption).
     
     String lengths: Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers but this limit includes characters that aren't visible, such as formatting codes. If that limit is reached, the string you enter is not displayed in Excel.
 
