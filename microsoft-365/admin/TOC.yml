@@ -252,6 +252,28 @@
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
           href: security-and-compliance/gdpr-compliance.md
+    - name: Manage devices
+      items: 
+        - name: View and edit policies and devices
+          href: view-policies-and-devices.md
+        - name: Remove company data
+          href: remove-company-data.md
+        - name: Reset devices to factory settings
+          href: reset-devices-to-factory-settings.md
+        - name: Map protection features to Intune settings
+          href: map-protection-features-to-intune-settings.md
+        - name: App protection settings for Android and iOS
+          href: app-protection-settings-for-android-and-ios.md
+          items: 
+            - name: Validate settings on Android or iOS
+              href: validate-settings-on-android-or-ios.md
+        - name: Device protection settings  for Windows 10 PCs
+          href: protection-settings-for-windows-10-pcs.md
+          items: 
+            - name: Validate settings on Windows 10 PCs
+              href: validate-settings-on-windows-10-pcs.md
+        - name: App protection settings for Windows 10 PCs
+          href: protection-settings-for-windows-10-devices.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 
