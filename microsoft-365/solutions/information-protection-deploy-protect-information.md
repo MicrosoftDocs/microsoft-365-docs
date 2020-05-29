@@ -174,7 +174,7 @@ The basic flow for deploying and applying sensitivity labels is: When you have p
 For data privacy, you manually apply a sensitivity label with encryption and other rules to email or content containing sensitive personal information.
 
 >[!Note]
->Sensitivity labels applied to email (with encryption) have some overlapping functionality with OME. See [Secure email scenarios comparison](#Secure-email-scenarios-comparison-with-OME-and-sensitivity-labels).
+>Sensitivity labels applied to email (with encryption) have some overlapping functionality with OME. See [Secure email scenarios comparison](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels).
 >
 
 ### Client-side auto-labeling when users edit documents or compose (also reply or forward) emails
