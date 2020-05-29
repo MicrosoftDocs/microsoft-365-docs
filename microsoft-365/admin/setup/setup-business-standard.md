@@ -37,9 +37,7 @@ Watch a short video about setting up Microsoft 365 Business Standard (formerly k
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## Set up
-
-### Add your domain to personalize sign-in
+## Add your domain to personalize sign-in
 
 When you purchase Microsoft 365 Business Standard, you have the option of using a domain you own, or buying one during the sign-up.
 
@@ -63,11 +61,11 @@ When you purchase Microsoft 365 Business Standard, you have the option of using 
 
     ![On GoDaddy Confirm Access page, select Authorize.](../../media/godaddyauth.png)
 
-### Add users and assign licenses
+## Add users and assign licenses
 
 You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
 
-### Add users in the wizard
+## Add users in the wizard
 
 Any users you add in the wizard get automatically assigned a Microsoft 365 Business Standard license.
 
@@ -75,7 +73,7 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
 
 2. After you've added the users, you'll also get an option to share credentials with the new users you added. You can choose to print them out, email them, or download them.
 
-### Connect your domain
+## Connect your domain
 
 > [!NOTE]
 > If you chose to use the .onmicrosoft domain, or used Azure AD Connect to set up users, you will not see this step.

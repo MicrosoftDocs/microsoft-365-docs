@@ -29,10 +29,7 @@ description: "Learn how to set up your Microsoft 365 Apps for business subscript
 
 # Set up Microsoft 365 Apps for business
 
-
-## Set up
-
-### Add users and assign licenses
+## Add users and assign licenses
 
 You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center.
 
@@ -62,7 +59,7 @@ You can add users in the wizard, but you can also [add users later](add-users-m3
 
  When the sign-up process is complete, you'll be directed to the admin center, where you can add users, and assign licenses. 
 
-### Install Office
+## Install Office
 
 Once you've created accounts for other people in your business, you and your team members will be able to install the full desktop version of Office (Word, Excel, Outlook, etc.). Each person can install Office on up to 5 PCs or Macs.
   
@@ -90,13 +87,13 @@ If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.m
 
 Need more detailed steps or want to install the 64-bit version of Office? See [Step-by-step installation instructions](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx#BKMK_InstallSteps).
   
-### Set up mobile
+## Set up mobile
 
 Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
   
 Get the steps for your device: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/en-us/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
-### Store files online
+## Store files online
 
 Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
   
@@ -108,7 +105,7 @@ Everyone gets a **OneDrive** cloud storage location automatically when you creat
   
 More at [Upload files to a library](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx).
   
-### Get started using Office
+## Get started using Office
 
 To take a tour of Microsoft 365 and learn how to use all the Office mobile apps, see [Get started](../admin-overview/get-started-with-office-365.md).
 
