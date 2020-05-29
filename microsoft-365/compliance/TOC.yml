@@ -281,7 +281,7 @@
           href: retention-policies-teams.md
         - name: Retention for Exchange
           href: retention-policies-exchange.md
-        - name: File plan manager
+        - name: File plan
           href: file-plan-manager.md
         - name: Learn about retention labels
           href: labels.md
@@ -333,7 +333,7 @@
           href: records.md
         - name: File plan
           items: 
-            - name: File plan manager
+            - name: Manage retention labels
               href: file-plan-manager.md
             - name: Learn about retention labels
               href: labels.md

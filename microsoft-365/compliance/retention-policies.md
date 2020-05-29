@@ -120,9 +120,9 @@ In summary, a locked retention policy can be increased or extended, but it can't
 
 Providing your retention policy doesn't have a Preservation Lock, you can turn off or delete a retention policy at any time. 
 
-When you do so, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. 
+When you do so, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. Additionally, you can't manually delete this content during the grace period.
 
-You can also turn on the retention policy again during the grace period, and no content will be deleted for that policy.
+You can turn on the retention policy again during the grace period, and no content will be deleted for that policy.
 
 This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day delay hold in Exchange. For more information, see [Managing mailboxes on delay hold](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
