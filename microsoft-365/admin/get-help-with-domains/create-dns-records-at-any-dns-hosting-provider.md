@@ -17,7 +17,9 @@ ms.collection:
 search.appverid:
 - MET150
 description: "Learn to verify your domain and create DNS records at any DNS hosting provider for Microsoft 365."
-ms.custom: okr_smb
+ms.custom: 
+- okr_smb
+- AdminSurgePortfolio
 ---
 
 # Add DNS records to connect your domain

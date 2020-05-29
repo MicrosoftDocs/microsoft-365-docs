@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
