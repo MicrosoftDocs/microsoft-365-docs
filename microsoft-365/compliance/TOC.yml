@@ -129,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Sensitive information types
       items: 
-        - name: What the sensitive information types look for
-          href: what-the-sensitive-information-types-look-for.md
+        - name: Sensitive information type entity definitions 
+          href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
         - name: Watch an extended overview of customizing DLP
@@ -281,7 +281,7 @@
           href: retention-policies-teams.md
         - name: Retention for Exchange
           href: retention-policies-exchange.md
-        - name: File plan manager
+        - name: File plan
           href: file-plan-manager.md
         - name: Learn about retention labels
           href: labels.md
@@ -333,7 +333,7 @@
           href: records.md
         - name: File plan
           items: 
-            - name: File plan manager
+            - name: Manage retention labels
               href: file-plan-manager.md
             - name: Learn about retention labels
               href: labels.md

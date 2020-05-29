@@ -69,6 +69,10 @@
               href: mtp/setup-mtpeval.md
             - name: Configure and onboard endpoints
               href: mtp/config-mtpeval.md
+            - name: Turn on Microsoft Threat Protection
+              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
+            - name: Generate a test alert
+              href: mtp/generate-test-alert.md
         - name: How-to guides
           items: 
             - name: Create a trial lab environment
@@ -80,6 +84,10 @@
                   href: mtp/setup-mtpeval.md
                 - name: Configure and onboard endpoints
                   href: mtp/config-mtpeval.md
+                - name: Turn on Microsoft Threat Protection
+                  href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
+                - name: Generate a test alert
+                  href: mtp/generate-test-alert.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
@@ -153,13 +161,13 @@
                     - name: DeviceRegistryEvents
                       href: mtp/advanced-hunting-deviceregistryevents-table.md
                     - name: DeviceTvmSecureConfigurationAssessment
-                      href: mtp/advanced-hunting-tvm-configassessment-table.md
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessment-table.md
                     - name: DeviceTvmSecureConfigurationAssessmentKB
-                      href: mtp/advanced-hunting-tvm-secureconfigkb-table.md
+                      href: mtp/advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md
                     - name: DeviceTvmSoftwareInventoryVulnerabilities
-                      href: mtp/advanced-hunting-tvm-softwareinventory-table.md
+                      href: mtp/advanced-hunting-devicetvmsoftwareinventoryvulnerabilities-table.md
                     - name: DeviceTvmSoftwareVulnerabilitiesKB
-                      href: mtp/advanced-hunting-tvm-softwarevulnerability-table.md
+                      href: mtp/advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md
                     - name: EmailAttachmentInfo
                       href: mtp/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
@@ -277,7 +285,7 @@
                   items: 
                     - name: Configure outbound spam filtering
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: High-risk delivery pool for outbound messages
+                    - name: Outbound delivery pools
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Remove blocked users from the Restricted Users portal
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
@@ -286,6 +294,8 @@
                   items: 
                     - name: Use Admin Submission
                       href: ./office-365-security/admin-submission.md
+                    - name: Specify a mailbox for user submissions
+                      href: ./office-365-security/user-submission.md
                     - name: Enable the Report Message add-in
                       href: ./office-365-security/enable-the-report-message-add-in.md
                     - name: Install and use the Junk Email Reporting add-in

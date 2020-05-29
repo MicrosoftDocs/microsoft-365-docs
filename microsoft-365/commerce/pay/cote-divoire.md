@@ -10,6 +10,7 @@ ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Adm_Commerce_Pay
+ms.custom: AdminSurgePortfolio
 description: Learn where to send the payment for your subscription.
 ROBOTS: NOINDEX, NOFOLLOW
 ---                                

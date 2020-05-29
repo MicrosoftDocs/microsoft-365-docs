@@ -489,7 +489,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 ## Related articles
 
-[Built-in sensitive information types and what they look for](what-the-sensitive-information-types-look-for.md)
+[Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 
 [Custom sensitive information types](custom-sensitive-info-types.md)
 
@@ -497,7 +497,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
 
 ## Feedback
 
