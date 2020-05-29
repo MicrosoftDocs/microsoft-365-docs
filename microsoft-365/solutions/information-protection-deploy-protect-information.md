@@ -55,7 +55,7 @@ To help you get started with an information protection scheme in Microsoft 365, 
 
 Microsoft [information protection solutions](../compliance/protect-information.md) include a number of integrated capabilities across Microsoft 365, Azure, and Windows. In Microsoft 365, information protection solutions include:
 
-- [Service encryption with Customer key](../compliance/customer-key-overview) <!-- Not first in TOC but it should be. Set this up for entire tenant first. Also, DKE (double key encryption) will be out soon. Replacing HYOK. That will go in here as well. -->
+- [Service encryption with Customer key](../compliance/customer-key-overview.md) <!-- Not first in TOC but it should be. Set this up for entire tenant first. Also, DKE (double key encryption) will be out soon. Replacing HYOK. That will go in here as well. -->
 - [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for.md) (described in the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md))
 - Sensitivity labels
    - Service/container-level
@@ -102,7 +102,7 @@ Complete the following activities prior to implementing any of the sensitivity l
   - Azure Information Protection
     A new modern sensitivity labelling scheme may need to be reconciled with any existing [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) labeling implementation.
   - OME
-    If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [OME](#office-message-encryption-ome), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
+    If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [OME](#Office-365-Message-Encryption-new-capabilities-(OME)), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
 3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, modern sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security (refer to [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)]) to achieve your data privacy-related information protection goals. 
 
@@ -174,7 +174,7 @@ The basic flow for deploying and applying sensitivity labels is: When you have p
 For data privacy, you manually apply a sensitivity label with encryption and other rules to email or content containing sensitive personal information.
 
 >[!Note]
->Sensitivity labels applied to email (with encryption) have some overlapping functionality with OME. See [Secure email scenarios comparison](#comparison).
+>Sensitivity labels applied to email (with encryption) have some overlapping functionality with OME. See [Secure email scenarios comparison](#Secure-email-scenarios-comparison-with-OME-and-sensitivity-labels).
 >
 
 ### Client-side auto-labeling when users edit documents or compose (also reply or forward) emails
@@ -317,7 +317,7 @@ For data privacy, you use OME to protect internal messages containing sensitive 
 
 You can also define mail flow rules to apply this protection. For example, you can create a rule that requires the encryption of all messages addressed to a specific recipient, or that contains specific keywords words in the subject line, and also specify that recipients can't copy or print the contents of the message.
 
-In addition, OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption) helps you meet compliance obligations that require more flexible controls over external recipients and their access to encrypted emails. With Advanced Message Encryption in Microsoft 365, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types. 
+In addition, OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md) helps you meet compliance obligations that require more flexible controls over external recipients and their access to encrypted emails. With Advanced Message Encryption in Microsoft 365, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types. 
 
 For data privacy, if you need to share email with an external party, you can specify an expiration date and revoke messages. You can only revoke and set an expiration date for messages sent to external recipients.
 
