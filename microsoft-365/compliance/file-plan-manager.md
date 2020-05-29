@@ -27,7 +27,7 @@ Although you can create and manage retention labels from **Information governanc
 
 - You can bulk-create retention labels by importing the relevant information from a spreadsheet.
 
-- You export the information from existing retention labels for analysis and offline collaboration, or for bulk-editing.
+- You can export the information from existing retention labels for analysis and offline collaboration, or for bulk-editing.
 
 - More information about the retention labels is displayed to make it easier to see into and across the settings of all your retention labels from one view.
 
