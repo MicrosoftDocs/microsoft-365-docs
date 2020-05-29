@@ -130,7 +130,7 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 - Employee IDs that you can use to retain content for only a specific person.
     
-Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 below. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
+Understand that Asset ID is simply another document property in SharePoint and OneDrive for Business. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 that follows. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
   
 ![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
