@@ -768,7 +768,7 @@ For a description of the Patients app activities, see [Audit logs for Patients a
 
 If you organization is using the Shifts app in Microsoft Teams, you can search the audit log for activities related to the using the Shifts app. If your environment is configured to support Shifts app, an additional activity group for these activities is available in the **Activities** picker list.
 
-For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/audit-log-event#shifts-in-teams-activities).
+For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
 ### Yammer activities
 
