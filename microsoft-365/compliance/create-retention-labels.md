@@ -51,7 +51,7 @@ These permissions are required only to create and apply retention labels and a l
 
 2. Follow the prompts in the wizard. If you are using records management:
     
-    - For information about the file plan descriptors, see [Overview of file plan manager](file-plan-manager.md)
+    - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
     - To use the retention label to declare content as a record, enable the checkbox **Use label to classify content as a "Record"**.
 
@@ -75,7 +75,7 @@ Publish retention labels so that they can be manually applied by users.
 
 2. Follow the prompts in the wizard.
     
-    For information about configuring the locations, see the [Retention labels and locations](#retention-labels-and-locations) section on this page. 
+    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section. 
 
 ## Auto-apply a retention label
 
@@ -95,21 +95,7 @@ Auto-apply a retention label, based on the conditions that you specify.
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
-    For information about configuring the locations, see the next section on this page, [Retention labels and locations](#retention-labels-and-locations).
-
-## Retention labels and locations
-
-Different types of retention labels can be published to different locations, depending on what the retention label does.
-  
-|**If the retention label is…**|**Then the label policy can be applied to…**|
-|:-----|:-----|
-|Published to end users  <br/> |Exchange, SharePoint, OneDrive, Office 365 groups  <br/> |
-|Auto-applied based on sensitive information types  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
-|Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Office 365 groups  <br/> |
-   
-In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
-  
-Exchange public folders and Skype do not support retention labels.
+    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section.
 
 
 ## Configuring conditions for auto-apply retention labels
@@ -201,7 +187,7 @@ If you auto-apply retention labels to content matching specific conditions, it c
   
 ### How to check on the status of retention labels published to Exchange
 
-In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using Powershell, you can see when this process last ran and thus determine when it will run again.
+In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using Powershell, you can see when this process last ran and therefore identify when it will run again.
   
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=799773).
     

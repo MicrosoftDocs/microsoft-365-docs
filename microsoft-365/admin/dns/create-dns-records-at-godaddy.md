@@ -14,13 +14,15 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
 description: "Learn to verify your domain and set up DNS records for email, Skype for Business Online, and other services at GoDaddy for Microsoft."
-ms.custom: okr_smb
 ---
 
 # Create DNS records at GoDaddy for Microsoft

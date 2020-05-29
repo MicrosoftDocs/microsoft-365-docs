@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -273,7 +273,7 @@ Next, configure the AD FS service with these steps:
     
 From the [Azure portal](https://portal.azure.com), connect to PROXY1 with the CORP\\User1 account credentials.
   
-Next, use these steps to install the self-signed certificate and configure PROXY1.
+Next, use these steps to install the self-signed certificate on **both PROXY1 and APP1**.
   
 1. Click **Start**, type **mmc.exe**, and then press **Enter**.
     
