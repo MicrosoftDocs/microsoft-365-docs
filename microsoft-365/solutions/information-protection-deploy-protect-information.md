@@ -84,25 +84,25 @@ For information on other information protection capabilities outside of Microsof
 ![Sensitivity labels in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 <!-- I don't think the graphic is accurate. Sensitivity labels don't apply to containers for SharePoint for example. That's a major reason we still promote IRM for SharePoint and OneDrive. Carol needs to confirm that. -->
- 
+
 ### Prerequisites for sensitivity labels
 
 Complete the following activities prior to implementing any of the sensitivity label-based capabilities highlighted below, for data privacy purposes or otherwise.
 
 1. Understand the modern sensitivity label capability in Microsoft 365 and business reasons for their application
    - **Business requirements.** Establish the business reasons for applying sensitivity labels in your enterprise. For example, your data privacy requirements for information protection.
-   - **Modern sensitivity label capabilities.** Sensitivity labelling can get complex, so make sure to read the Sensitivity labels set of articles before getting started. 
+   - **Modern sensitivity label capabilities.** Sensitivity labelling can get complex, so make sure to read the Sensitivity labels set of articles before getting started.
    - **Key things to remember** – Sensitivity labels are managed in one place (Microsoft Compliance admin center) but the targeting and application options vary significantly, namely:
       - There are sensitivity labels for sites, groups, and Teams (container level – settings do not apply to content inside the container). These are published to users/groups of users who apply them when a site, group or Team is provisioned.
       - There are sensitivity labels for active (opened) content. These are also published to user/groups of users, who either manually apply them, or they get applied automatically (based on policy settings) when: (a) the file is opened/edited/saved, either to the user’s desktop or a SharePoint site; or (b) an email is drafted and sent.
       - There are sensitivity labels for automatic application to files at rest in SharePoint Online and OneDrive (as well as to emails in transit through Exchange). These are targeted to either all sites or specific ones (no exclusion rules) as well as all or specific Exchange users (no exclusion rules) and automatically apply to the files at rest in these environments (or emails in transit). Thus, this may make sense as part of a more macro strategy but should be reconciled with other methods.
 
-2. Rationalize modern sensitivity labelling with past or alternative methods 
+2. Rationalize modern sensitivity labelling with past or alternative methods
 
-  - Azure Information Protection
+   - Azure Information Protection
     A new modern sensitivity labelling scheme may need to be reconciled with any existing [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) labeling implementation.
-  - OME
-    If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [OME](#Office-365-Message-Encryption-new-capabilities-(OME)), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
+   - OME
+    If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-new-capabilities-ome), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
 3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, modern sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security (refer to [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)]) to achieve your data privacy-related information protection goals.
 
@@ -124,7 +124,7 @@ Complete the following activities prior to implementing any of the sensitivity l
 
 #### Example sensitivity label scheme
 
-An example sensitivity-labelling scheme is provided here for reference. Yours may vary, but consider this table a good starting point (note that the sensitivity labels for sites type have a “_site” suffix appended to them to differentiate them from content-targeted labels).
+An example sensitivity-labelling scheme is provided here for reference. Yours may vary, but consider this table a good starting point. The sensitivity labels for sites type have a "_site" suffix appended to them to differentiate them from content-targeted labels.
 
 | Type/target | Sensitivity label | Sub-label | Example settings |
 |:-------|:-----|:-------|:-------|
