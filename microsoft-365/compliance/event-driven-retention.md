@@ -18,7 +18,7 @@ search.appverid:
 ms.custom: 
  - seo-marvel-apr2020
  - seo-marvel-may2020
-description: In this article, you will learn how to base retention periods on specific event types with retention labels in Office 365.
+description: Learn how to base retention periods on specific event types with retention labels in Microsoft 365.
 ---
 
 # Overview of event-driven retention
@@ -43,7 +43,7 @@ Event-driven retention is typically used as part of a records-management process
     
 - Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Disposition of content](disposition.md).
     
-A label based on an event has the same capabilities as any label in Office 365. To learn more, see [Overview of labels](labels.md).
+A label based on an event has the same capabilities as any retention label in Microsoft  365. For more information, see [Learn about retention labels](labels.md).
 
 ## Understanding the relationship between event types, labels, events, and asset IDs
 
