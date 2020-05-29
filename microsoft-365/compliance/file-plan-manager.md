@@ -173,4 +173,6 @@ To import new retention labels and modify existing retention labels:
 
 When the import is complete, you can now add the retention labels to a new retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
 
+## Next steps
+
 For more information about creating and editing retention labels and their policies, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
