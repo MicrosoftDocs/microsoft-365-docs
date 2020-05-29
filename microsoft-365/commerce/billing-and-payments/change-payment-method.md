@@ -18,6 +18,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -37,7 +38,7 @@ When you buy a subscription, you choose to pay with a credit card or bank accoun
 > [!IMPORTANT]
 > Paying with a bank account is not available in some countries or regions.
 
- **Just want to change your credit card or bank account information?** See [Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md).
+ **Just want to change your credit card or bank account information?** See [Manage payment methods](manage-payment-methods.md).
 
  **Just want to change how often you're billed?** See [Change your payment frequency](change-payment-frequency.md).
   
@@ -61,7 +62,7 @@ When you buy Office 365 for business, you choose to pay by credit card or bank a
   
  **Want to change your payment frequency?** If you want to change how frequently you pay for your subscription, either from annual to monthly or monthly to annual, you'll need to [call Microsoft support](../../admin/contact-support-for-business-products.md) for help.
   
- **Just want to change your credit card or bank account information?** See [Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md).
+ **Just want to change your credit card or bank account information?** See [Manage payment methods](manage-payment-methods.md).
   
  **What if I have an outstanding balance?**
   

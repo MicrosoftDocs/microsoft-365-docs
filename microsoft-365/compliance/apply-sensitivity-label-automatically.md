@@ -40,10 +40,7 @@ There are two different methods for automatically applying a sensitivity label:
     
     For configuration instructions, see [How to configure auto-labeling for Office apps](#how-to-configure-auto-labeling-for-office-apps) on this page.
 
-- **Service-side labeling when content is already saved (in SharePoint Online or OneDrive for Business) or emailed (processed by Exchange Online)**: Use an auto-labeling policy—currently in preview. 
-    
-    > [!NOTE]
-    > See the preview announcement, [Announcing public preview of auto classification with sensitivity labels in Microsoft 365 services](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/announcing-public-preview-of-auto-classification-with/ba-p/1279961).
+- **Service-side labeling when content is already saved (in SharePoint or OneDrive) or emailed (processed by Exchange Online)**: Use an auto-labeling policy. 
     
     This method is referred to as auto classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
     
@@ -103,9 +100,6 @@ Automatic labeling in Office apps for Windows is supported by the Azure Informat
 The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). You can choose to apply sensitivity labels to content automatically when sensitive information is detected. Choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
-
-> [!NOTE]
-> The option for **Trainable classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again in a few days.
 
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
@@ -182,12 +176,14 @@ Specific to the Azure Information Protection unified labeling client:
 - Sensitive information can be detected in the body text in documents and emails, and to headers and footers—but not in the subject line or attachments of email.
 
 ## How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange
-> [!NOTE]
-> Auto-labeling policies are in public preview and subject to change.
+
+Make sure you're aware of the prerequisites before you configure auto-labeling policies. 
 
 ### Prerequisites for auto-labeling policies
 
-- Auditing for Microsoft 365 must be turned on for simulation mode. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+- Simulation mode:
+    - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+    - To view file contents in the source view (not supported for emails), you must have the **Content Explorer Content viewer** role if you're not a global admin. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -232,9 +228,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     If you don't immediately see this option, first select **Show all**.
 
-2. Select the **Auto-labeling (preview)** tab:
+2. Select the **Auto-labeling** tab:
     
-    ![Auto-labeling (preview) tab](../media/auto-labeling-tab.png)
+    ![Auto-labeling tab](../media/auto-labeling-tab.png)
     
 
 3. Select **+ Create policy**.
@@ -244,6 +240,12 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 5. For the page **Name your auto-labeling policy**: Provide a unique name, and optionally a description to help identify the automatically applied label, locations, and conditions that identify the content to label.
 
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint sites, and OneDrive. Then select **Next**.
+    
+    For OneDrive, you must specify individual accounts. The URL for a user's OneDrive is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+    
+    For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+    
+    To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
 7. For the **Define policy settings** page: Keep the default of **Find content that contains** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced settings**. Then select **Next**.
     
@@ -276,7 +278,7 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     
     Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
-Now on the **Information protection** page, **Auto-labeling (preview)** tab, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** page, **Auto-labeling** tab, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
 You can modify your policy directly from this interface:
 
