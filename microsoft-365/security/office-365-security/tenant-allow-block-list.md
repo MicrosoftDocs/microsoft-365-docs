@@ -1,5 +1,5 @@
 ---
-title: "Specify a mailbox for user submissions of spam and phishing messages"
+title: "Manage your allowed and blocked URLs and files in the Tenant Allow/Block List"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,23 +15,23 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Admins can learn how to configure URL and file entries in the Allowed/Blocked List in the Security & Compliance Center."
+description: "Admins can learn how to configure URL and file entries in the Tenant Allow/Block List in the Security & Compliance Center."
 ---
 
-# Use the Allowed/Blocked List in EOP
+# Manage URLs and files in the Tenant Allow/Block List
 
 > [!NOTE]
 > The features described in this topic are in Preview, are subject to change, and are not available in all organizations.
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you might disagree with the EOP filtering verdict. For example, a good message might be marked as bad (a false positive), or a bad message might be allowed through (a false negative).
 
-The Allowed/Blocked List in the Security & Compliance Center gives you a way to manually override the EOP filtering verdicts. The Allowed/Blocked List is used during mail flow and at the time of user clicks. You can specify URLs and files to allow or block in the Allowed/Blocked List.
+The Tenant Allow/Block List in the Security & Compliance Center gives you a way to manually override the Office 365 filtering verdicts. The Tenant Allow/Block List is used during mail flow and at the time of user clicks. You can specify URLs and files to allow or block in the Tenant Allow/Block List.
 
-This topic describes how to configure entries in the Allowed/Blocked List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
+This topic describes how to configure entries in the Tenant Allow/Block List in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/allowBlockList>.
+- You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Tenant Allow/Block List** page, use <https://protection.office.com/tenantAllowBlockList>.
 
 - You specify files by using the SHA256 hash value of the file. To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt:
 
@@ -41,27 +41,27 @@ This topic describes how to configure entries in the Allowed/Blocked List in the
 
   An example value is `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a`. Perceptual hash (pHash) values are not allowed.
 
-- The available URL values are described in the [URL syntax for the Allowed/Blocked List](#url-syntax-for-the-allowedblocked-list) section later in this topic.
+- The available URL values are described in the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
 
-- The Allowed/Blocked List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
+- The Tenant Allow/Block List allows a maximum of 500 entries for URLs, and 500 entries for file hashes.
 
 - An entry should be active within 15 minutes.
 
 - Block entries take precedence over allow entries.
 
-- By default, entries in the Allowed/Blocked List will expire after 30 days. You can specify a date or set them to never expire.
+- By default, entries in the Tenant Allow/Block List will expire after 30 days. You can specify a date or set them to never expire.
 
 - To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform these procedures. To add and remove values from the Allowed/Blocked List, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to the Allowed/Blocked List, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can perform these procedures. To add and remove values from the Tenant Allow/Block List, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to the Tenant Allow/Block List, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## Use the Security & Compliance Center to create URL entries in the Allow/Block List
+## Use the Security & Compliance Center to create URL entries in the Tenant Allow/Block List
 
-For details about the syntax for URL entries, see the [URL syntax for the Allowed/Blocked List](#url-syntax-for-the-allowedblocked-list) section later in this topic.
+For details about the syntax for URL entries, see the [URL syntax for the Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) section later in this topic.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. On the **Allowed/Blocked List** page, verify that the **URLs** tab is selected, and then click **Add**
+2. On the **Tenant Allow/Block List** page, verify that the **URLs** tab is selected, and then click **Add**
 
 3. In the **Add new URLs** flyout that appears, configure the following settings:
 
@@ -81,11 +81,11 @@ For details about the syntax for URL entries, see the [URL syntax for the Allowe
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to create file entries in the Allow/Block List
+## Use the Security & Compliance Center to create file entries in the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
-2. On the **Allowed/Blocked List** page, select **Files** tab, and then click **Add**.
+2. On the **Tenant Allow/Block List** page, select **Files** tab, and then click **Add**.
 
 3. In the **Add new files** flyout that appears, configure the following settings:
 
@@ -105,9 +105,9 @@ For details about the syntax for URL entries, see the [URL syntax for the Allowe
 
 4. When you're finished, click **Add**.
 
-## Use the Security & Compliance Center to view URL and file entries in the Allow/Block List
+## Use the Security & Compliance Center to view URL and file entries in the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
 2. Select the **URLs** tab or the **Files** tab.
 
@@ -137,11 +137,11 @@ When you're finished, click **Apply**.
 
 To clear existing filters, click **Filter**, and in the **Filter** flyout that appears, click **Clear filters**.
 
-## Use the Security & Compliance Center to modify URL and file entries in the Allow/Block List
+## Use the Security & Compliance Center to modify URL and file entries in the Tenant Allow/Block List
 
 You can't modify the URL or file value itself. Instead, you need to delete the entry and recreate it.
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
 2. Select the **URLs** tab or the **Files** tab.
 
@@ -163,9 +163,9 @@ You can't modify the URL or file value itself. Instead, you need to delete the e
 
 5. When you're finished, click **Save**.
 
-## Use the Security & Compliance Center to remove URL and file entries from the Allow/Block List
+## Use the Security & Compliance Center to remove URL and file entries from the Tenant Allow/Block List
 
-1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Allowed/Blocked Lists**.
+1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Tenant Allow/Block Lists**.
 
 2. Select the **URLs** tab or the **Files** tab.
 
@@ -173,11 +173,11 @@ You can't modify the URL or file value itself. Instead, you need to delete the e
 
 4. In the warning dialog that appears, click **Delete**.
 
-## Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Allow/Block List
+## Use Exchange Online PowerShell or standalone EOP PowerShell to configure the Tenant Allow/Block List
 
-### Use PowerShell to add URL and file entries in the Allow/Block List
+### Use PowerShell to add URL and file entries in the Tenant Allow/Block List
 
-To add URL and file entries in the Allow/Block List, use the following syntax:
+To add URL and file entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType <Url | FileHash> -Action <Allow | Block> -Entries <String[]> [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
@@ -197,9 +197,9 @@ This example adds a file allow entry for the specified files that never expires.
 
 For detailed syntax and parameter information, see [New-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### Use PowerShell to view URL and file entries in the Allow/Block List
+### Use PowerShell to view URL and file entries in the Tenant Allow/Block List
 
-To view URL and file entries in the Allow/Block List, use the following syntax:
+To view URL and file entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <Url | FileHash> [-Entry <URLValue | FileHashValue>] [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration]
@@ -219,11 +219,11 @@ Get-TenantAllowBlockListItems -ListType FileHash -Entry "9f86d081884c7d659a2feaa
 
 For detailed syntax and parameter information, see [Get-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/get-tenantallowblocklistitems).
 
-### Use PowerShell to modify URL and file entries in the Allow/Block List
+### Use PowerShell to modify URL and file entries in the Tenant Allow/Block List
 
 You can't modify the URL or file value itself. Instead, you need to delete the entry and recreate it.
 
-To modify URL and file entries in the Allow/Block List, use the following syntax:
+To modify URL and file entries in the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN"> [-Action <Allow | Block>] [-ExpirationDate <DateTime>] [-NoExpiration] [-Notes <String>]
@@ -237,15 +237,15 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 For detailed syntax and parameter information, see [Set-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### Use PowerShell to remove URL and file entries from the Allow/Block List
+### Use PowerShell to remove URL and file entries from the Tenant Allow/Block List
 
-To remove URL and file entries from the Allow/Block List, use the following syntax:
+To remove URL and file entries from the Tenant Allow/Block List, use the following syntax:
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <Url | FileHash> -Ids <"Id1","Id2",..."IdN">
 ```
 
-This example removes the specified URL entry from the Allow/Block List.
+This example removes the specified URL entry from the Tenant Allow/Block List.
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
@@ -253,7 +253,7 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 For detailed syntax and parameter information, see [Remove-TenantAllowBlockListItems](https://docs.microsoft.com/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-## URL syntax for the Allowed/Blocked List
+## URL syntax for the Tenant Allow/Block List
 
 - IP4v and IPv6 addresses are allowed, but TCP/UDP ports are not.
 
