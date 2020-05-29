@@ -32,7 +32,7 @@ The displayed Compliance Score values for the control are applied *in their enti
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
 
-The sum of points earned by taking improvement actions is the control score. The sum of your control scores is the assessment score. The sum of your assessment scores is your overall compliance score
+The sum of points earned by taking improvement actions is the control score. The sum of your control scores is the assessment score. The sum of your assessment scores is your overall compliance score.
 
 ## Initial score based on Microsoft 365 data protection baseline
   
