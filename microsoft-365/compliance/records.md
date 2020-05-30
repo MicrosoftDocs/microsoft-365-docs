@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about records To implement a records management strategy in your Office 365 or Microsoft organization, use retention labels that declare content as a record. Then publish or auto-apply the retention record label."
+description: "Learn about records to help you implement a records management solution in Microsoft 365."
 ---
 
 # Learn about records
