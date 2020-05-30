@@ -35,15 +35,16 @@ Content in those containers however, do not inherit the labels for settings such
 
 ## Using sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
-This capability doesn't work with Office 365 Content Delivery Networks (CDNs).
-
-Before you enable the capability to use sensitivity labels with containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
+Before you enable sensitivity labels for containers and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
 ![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
 
 After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
 ![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
+
+> [!NOTE]
+> This capability doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 ## How to enable sensitivity labels for containers and synchronize labels
 
@@ -228,11 +229,17 @@ Whenever you make a change to site and group settings for a label, you must run 
 
 You can use the sensitivity labels that you've configured for site and group settings with the following apps and services:
 
-- SharePoint Online
-- Teams
-- Outlook on the web
-- SharePoint admin center
-- Azure AD admin center
+- Admin centers
+    - Sharepoint admin center
+    - Azure Ad admin center
+    - Microsoft 365 compliance center, Microsoft 365 security center, Office 365 Security & Compliance Center
+
+- User apps and services
+    - SharePoint
+    - Teams
+    - Outlook on the web
+
+
 
 Other apps and services that you can't currently use the sensitivity labels that you've configured for site and group settings include:
 
