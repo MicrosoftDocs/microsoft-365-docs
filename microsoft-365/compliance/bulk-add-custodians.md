@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW 
 description: ""
 ---
 
@@ -23,10 +24,14 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 ## Bulk-add custodians
 
-1. Enter case and navigate to the **Sources** tab
-2. Click **Import Custodians**
+1. Enter case and navigate to the **Sources** tab.
+
+2. Click **Import custodians**
+
 3. On the flyout page, click **Download a blank template** to download a CSV custodian template file.
+
 4. Add the custodial information to the CSV file and save it on your local computer. See the next section for information about the properties in the CSV file.
+
 5. On the **Sources** tab, click **Import Custodians** again. 
 6. On flyout page, click **Browse** and the upload your CSV file.
 
@@ -34,11 +39,11 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 ## Custodian CSV file
 
-After you download the CSV template, you can add custodians and their data source in each row. 
+After you download the CSV template, you can add custodians and their data source in each row. Be sure not to change the column names in the the header row.
 
-| Property|Description|
+| Column name|Description|
 |:------- |:------------------------------------------------------------|
-|**ContactEmail**     | UPN email of custodian. Example: sarad@onmicrosoft.contoso.com           |
+|**Custodian ContactEmail**     | UPN email of custodian. Example: sarad@onmicrosoft.contoso.com           |
 |**Exchange Enabled** | TRUE/FALSE value on whether to add custodian's mailbox.      |
 |**OneDrive Enabled** | TRUE/FALSE value on whether to add custodian's OneDrive for Business account. |
 |**Is OnHold**        | TRUE/FALSE value on whether to place custodian on hold.       |
@@ -78,8 +83,10 @@ To remediate custodians with unvalidated data sources:
 
 1. On the **Custodian** tab, select a custodian who isn't validated.
 
-2. On the custodian flyout page, scroll to the **Source validation** section to view the data sources that are associated with custodian. Both validated and unvalidated data sources are listed.
+2. On the custodian flyout page, scroll to the **Data sources** section to view the data sources that are associated with custodian. Both validated and unvalidated data sources are listed.
 
-3. Click **Update** to remove an unvalidated data source or add a new data source.
+3. In the **Data sources** section, click **Edit**.
 
-4. Click **Edit** to add additional data sources for a custodian.
+4. On the **Choose custodial locations** page, remove an unvalidated data source.
+
+5. On the **Select additional locations** page, click **Update** to add additional data sources for a custodian.
