@@ -56,7 +56,7 @@ Here's an example of a CSV file with custodian information:
 | ContactEmail      | Exchange Enabled | OneDrive Enabled | Is OnHold | Workload1 Type | Workload1 Location             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |sarad@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
-|pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
+|pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
 ||||||
 
 ## Custodian and data source validation
