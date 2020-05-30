@@ -16,30 +16,30 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about records To implement a records management strategy in your Office 365 or Microsoft organization, use retention labels that declare content as a record. Then publish or auto-apply the retention record label."
+description: "Learn about records to help you implement a records management solution in Microsoft 365."
 ---
 
 # Learn about records
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Managing records in Microsoft 365 helps an organization comply with their corporate policies, legal and regulatory obligations while reducing risk and legal liability.
+Managing records in Microsoft 365 helps your organization comply with corporate policies and legal or regulatory obligations, while also reducing risk and legal liability.
 
-At a high level, declaring content as a record means that:
+When content is marked as an record:
 
-- The item becomes immutable (a record can't be modified or deleted)
+- The item becomes immutable, which means that it can't be modified or deleted.
 
-- Additional activities about the item are logged
+- Additional activities about the item are logged.
 
-- Records are disposed of after their stated retention period is past
+- You have proof of disposition when they are deleted at the end of their retention period.
 
-You use [retention labels](labels.md) to classify content as a record. After you create retention labels that declare records, you can either publish those labels so that users can apply them to content, or auto-apply those labels to content that you want to classify as a record. For instructions, see [Create, publish, and auto-apply retention labels ](create-retention-labels.md).
+You use [retention labels](labels.md) to mark content as a record. After you create retention labels that declare records, you can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record. For instructions, see [Create, publish, and auto-apply retention labels ](create-retention-labels.md).
 
 By using retention labels to declare records, you can implement a single, consistent records-management strategy across your Microsoft 365 environment.
 
 Keep the following things in mind about records:
 
-  - **Records are immutable.** A retention label that declares content as a record can be applied to content in Exchange, in addition to SharePoint and OneDrive for Business. However, [record versioning](#record-versioning) is available only in SharePoint and OneDrive, and not for Exchange.
+  - **Records are immutable.** A retention label that marks content as a record can be applied to content in Exchange, in addition to SharePoint and OneDrive. However, [record versioning](#record-versioning) is available only in SharePoint and OneDrive, and not for Exchange.
 
     In Exchange, content labeled as a record is immutable until its final deletion. When an Exchange item is labeled as a record, four things happen:
 
@@ -53,7 +53,7 @@ Keep the following things in mind about records:
 
   - **Records and folders.** You can apply a retention label to a folder in Exchange, SharePoint, and OneDrive. If a folder is labeled as a record, and you move an item into the folder, the item is labeled as a record. When you move the item out of the folder, the item remains labeled as a record.
 
-    Also, if you change the record label that's applied to a folder (in SharePoint and OneDrive) to a retention label that does not declare content as a record, then items in the folder keep their existing  record label.
+    Also, if you change the record label that's applied to a folder (in SharePoint and OneDrive) to a retention label that does not declare content as a record, items in the folder keep their existing record label.
 
     For more information about applying retention labels to SharePoint and OneDrive folders, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
@@ -65,11 +65,11 @@ Keep the following things in mind about records:
 
     If a user attempts to delete a record in OneDrive, the item is moved to the Preservation Hold library as described in [How a retention policy works with SharePoint and OneDrive](retention-policies-sharepoint.md#how-a-retention-policy-works-with-sharepoint-and-onedrive).
 
-  - **Records labels can't be removed.** Once a record label has been applied to an item, only the admin of that location (for example, a site collection admin of a SharePoint site) can remove that record label.
+  - **Records labels can't be removed.** After a record label has been applied to an item, only the admin of that location (for example, a site collection admin of a SharePoint site) can remove that record label.
 
 ## Using retention labels to declare records
 
-When you create a retention label, you have the option to use the retention label to classify the content as a record:
+When you create a retention label, you have the option to use the retention label to mark the content as a record:
 
 1. In the Microsoft 365 compliance center, go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
@@ -160,3 +160,7 @@ The actions of locking and unlocking records are logged in the audit log. You ca
 ![Search the audit log for record versioning events](../media/recordversioning13.png)
 
 For more information about searching for these events, see the "File and page activities" section in [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+
+## Next steps
+
+For instructions how to create and publish the retention labels that contain the setting to mark content as a record, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
