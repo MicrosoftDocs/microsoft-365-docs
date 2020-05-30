@@ -160,3 +160,7 @@ The actions of locking and unlocking records are logged in the audit log. You ca
 ![Search the audit log for record versioning events](../media/recordversioning13.png)
 
 For more information about searching for these events, see the "File and page activities" section in [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+
+## Next steps
+
+For instructions how to create and publish retention labels, which contain the setting to mark content as a record, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
