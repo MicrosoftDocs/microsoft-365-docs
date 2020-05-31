@@ -38,7 +38,8 @@ Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.mi
 
 ## Step 1: Decide on the method of requiring your users to use MFA
 
-There are three ways to require your users to use MFA for sign-ins. See [MFA support in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.
+> [!NOTE]
+> You must be a global admin to set up or modify MFA. There are three ways to require your users to use MFA for sign-ins. See [MFA support in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.
 
 - Security defaults (recommended for small businesses)
 
