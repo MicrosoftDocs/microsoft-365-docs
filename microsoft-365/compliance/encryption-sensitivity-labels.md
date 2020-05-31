@@ -14,7 +14,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "When you create a sensitivity label, you can restrict access to content that the label will be applied to. Sensitivity labels can use encryption to protect content."
+description: Configure sensitivity labels for encryption that protects your data by restricting access and usage.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -33,7 +33,7 @@ When a document or email is encrypted, access to the content is restricted, so t
 
 - Can be decrypted only by users authorized by the label's encryption settings.
 - Remains encrypted no matter where it resides, inside or outside your organization, even if the file's renamed.
-- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, a sent email).
+- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, email as it traverses the internet).
 
 Finally, as an admin, when you configure a sensitivity label to apply encryption, you can choose either to:
 
