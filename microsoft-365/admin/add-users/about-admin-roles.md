@@ -96,5 +96,9 @@ Before the partner can assign these roles to users, you must add the partner as 
 ## Related articles
 
 [Assign admin roles](assign-admin-roles.md)
+
+[Azure AD roles in the Microsoft 365 admin center](azure-ad-roles-in-the-mac.md)
+
+[Exchange Online admin role](about-exchange-online-admin-role.md)
   
 [Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md)
