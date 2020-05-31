@@ -36,7 +36,7 @@ Looking for the detailed role descriptions for Microsoft Intune? Check out [Role
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
-## Things to consider...
+## Things to consider
 
 Because admins have access to sensitive data and files, we recommend that you follow these guidelines to keep your organization's data more secure.
 
