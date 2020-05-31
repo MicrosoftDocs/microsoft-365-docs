@@ -36,7 +36,7 @@ Looking for the detailed role descriptions for Microsoft Intune? Check out [Role
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
-## Things to consider...
+## Things to consider
 
 Because admins have access to sensitive data and files, we recommend that you follow these guidelines to keep your organization's data more secure.
 
@@ -73,13 +73,15 @@ You'll probably only need to assign the following roles in your organization. By
 
 ## Azure AD roles available in the Microsoft 365 admin center
 
-The Microsoft 365 admin center lets you manage over 30 Azure AD roles. However, these roles are a subset of the roles available in the Azure portal. If you have a large business, there might be roles in the Azure portal that meet your organizational needs. Looking for the detailed role descriptions for Azure AD? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+The Microsoft 365 admin center lets you manage over 30 Azure AD roles. However, these roles are a subset of the roles available in the Azure portal. If you have a large business, there might be roles in the Azure portal that meet your organizational needs. Check out [Azure AD roles in the Microsoft 365 admin center](azure-ad-roles-in-the-mac.md) for a full list of Azure AD roles you can manage in the admin center.
+
+Looking for the detailed role descriptions for Azure AD? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## Microsoft Intune Roles available in the Microsoft 365 admin center
 
-Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
+Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers. The Microsoft 365 admin center lets you manage some Microsoft Intune roles. However, these roles are a subset of the roles available in the Intune admin center. Check out [Intune admin roles](intune-admin-roles-in-the-mac.md) for a full list of Intune roles you can manage in the Microsoft 365 admin center.
 
-The Microsoft 365 admin center lets you manage some Microsoft Intune roles. However, these roles are a subset of the roles available in the Intune admin center. Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 ## Delegated administration for Microsoft Partners
 

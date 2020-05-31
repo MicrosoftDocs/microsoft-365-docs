@@ -87,7 +87,7 @@ You can assign users to a role in 2 different ways:
 
 1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
-2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, next to **Roles**, select **Edit**. 
+2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, next to **Roles**, select **Edit**.
 
     If you don't see the **Edit** option, then you don't have a permission to edit and can't assign admin roles to other people. Ask a global admin in your business to assign roles for you. In a small business, the business owner (the person who purchased your subscription) is a global admin. In a large business, key people in the IT department are global admins.
 
