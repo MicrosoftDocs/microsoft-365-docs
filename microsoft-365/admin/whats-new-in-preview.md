@@ -60,6 +60,10 @@ In conjunction with the release of Monthly Enterprise Channel, we’re also revi
 
 For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/update-channels-changes).
 
+### Keeping up with Office What's New management
+
+A few months ago, we a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
+
 ### New admin roles
 
 We've added some new Azure Active Directory admin roles to the Microsoft 365 admin center.
