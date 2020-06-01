@@ -75,7 +75,7 @@ When you purchase Microsoft 365 Business Basic, you have the option of using a d
 
 ## Add users and assign licenses
 
-You can add users in the wizard, but you can also [add users later](add-users/add-users.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
+You can add users in the wizard, but you can also [add users later](../add-users/add-users.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
 
 ## Add users in the wizard
 
