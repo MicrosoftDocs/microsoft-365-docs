@@ -59,7 +59,9 @@ To create a custom detection rule, the query must return the following columns:
     - `SenderFromAddress` (envelope sender or Return-Path address)
     - `SenderMailFromAddress` (sender address displayed by email client)
     - `RecipientObjectId`
+    - `AccountObjectId`
     - `AccountSid`
+    - `AccountUpn`
     - `InitiatingProcessAccountSid`
     - `InitiatingProcessAccountUpn`
     - `InitiatingProcessAccountObjectId`
@@ -121,7 +123,7 @@ These actions are applied to devices in the `DeviceId` column of the query resul
 When selected, you can choose to apply the **Quarantine file** action on files in the `SHA1`, `InitiatingProcessSHA1`, `SHA256`, or `InitiatingProcessSHA256` column of the query results. This action deletes the file from its current location and places a copy in quarantine.
 
 #### Actions on users
-When selected, the **Mark user as compromised** action is taken on users in the `InitiatingProcessAccountObjectId` column of the query results.
+When selected, the **Mark user as compromised** action is taken on users in the `AccountObjectId`, `InitiatingProcessAccountObjectId`, or `RecipientObjectId` column of the query results. This action sets the users risk level to "high" in Azure Active Directory, triggering corresponding [identity protection policies](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection).
 
 > [!NOTE]
 > The allow or block action for custom detection rules is currently not supported on Microsoft Threat Protection.
