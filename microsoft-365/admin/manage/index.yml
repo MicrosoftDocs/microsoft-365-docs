@@ -36,6 +36,8 @@ landingContent:
             url: update-phone-number-and-email-address.md
           - text: Set up release options
             url: release-options-in-office-365.md
+          - text: Show or hide new features
+            url: show-hide-new-features.md
   # Card (optional)
   - title: Block user access and back up data
     linkLists:
