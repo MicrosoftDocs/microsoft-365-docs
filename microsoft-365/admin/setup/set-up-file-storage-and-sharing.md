@@ -19,6 +19,7 @@ ms.custom:
 - IT_Networking
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -180,7 +181,7 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
   
 1. Sign in to to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
-2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">Settings</a> page.
+2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**Org settings**</a> page.
 
 3. On the **Services** tab, select **Office on the web**.
 

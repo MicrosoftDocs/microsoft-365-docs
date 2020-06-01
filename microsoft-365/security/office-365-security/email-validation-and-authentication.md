@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_IP
 ms.custom: TopSMBIssues
 localization_priority: Priority
-description: "Learn about how Exchange Online and Exchange Online Protection (EOP) in Microsoft 365 use email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam."
+description: "Admins can learn how Exchange Online Protection (EOP) uses email authentication (SPF, DKIM, and DMARC) to help prevent spoofing, phishing, and spam."
 ---
 
-# Email authentication in Microsoft 365
+# Email authentication in EOP
 
-Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In Microsoft 365 organizations with Exchange Online mailboxes and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP useses the standards to verify inbound email:
+Email authentication (also known as email validation) is a group of standards that tries to stop spoofing (email messages from forged senders). In Microsoft 365 organizations with mailboxes in Exchange Online, and standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP uses these standards to verify inbound email:
 
 - [SPF](how-office-365-uses-spf-to-prevent-spoofing.md)
 

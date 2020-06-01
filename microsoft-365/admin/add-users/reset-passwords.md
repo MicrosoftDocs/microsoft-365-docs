@@ -18,6 +18,7 @@ ms.custom:
 - MSStore_Link
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -95,7 +96,7 @@ If you forgot your password and can't sign in:
 ## Reset all business passwords for everyone in your organization at the same time
 <a name="bkmk_forgot"> </a>
 
-These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk.
+These steps work for a business with tens of users. If you have hundreds or thousands of users, see the next section on resetting passwords in bulk (maximum 40 users at a time).
   
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
     
