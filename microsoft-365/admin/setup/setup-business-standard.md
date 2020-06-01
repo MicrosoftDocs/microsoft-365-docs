@@ -63,7 +63,7 @@ When you purchase Microsoft 365 Business Standard, you have the option of using 
 
 ## Add users and assign licenses
 
-You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
+You can add users in the wizard, but you can also [add users later](add-users/add-users.md) in the admin center. Additionally, if you have a local domain controller, you can add users with [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-express).
 
 ## Add users in the wizard
 
@@ -129,7 +129,7 @@ If you were using Outlook with another email account, you can import your previo
   
 More at [Import email with Outlook](https://support.office.com/article/6a3771d4-4c1d-4a25-92a6-0b8e476335de.aspx).
 
-You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](https://docs.microsoft.com/en-us/Exchange/mailbox-migration/mailbox-migration).
+You can also use Exchange admin center to import everyone's email. For more information, see [migrate multiple email accounts](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration).
   
 ### Use a public website
 

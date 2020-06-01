@@ -31,7 +31,7 @@ description: "Learn how to set up your Microsoft 365 Apps for business subscript
 
 ## Add users and assign licenses
 
-You can add users in the wizard, but you can also [add users later](add-users-m365b.md) in the admin center.
+You can add users in the wizard, but you can also [add users later](add-users/add-users.md) in the admin center.
 
  ::: moniker range="o365-worldwide"
 
