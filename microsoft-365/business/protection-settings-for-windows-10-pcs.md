@@ -27,6 +27,8 @@ description: "Learn about default and other settings available in Microsoft 365 
 
 # Set device protection settings for Windows 10 PCs
 
+This article applies to Microsoft 365 Business Premium.
+
 ## Secure Windows 10 devices
 
 View a video on how to secure Windows 10 devices with Microsoft 365 for business:

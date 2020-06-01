@@ -43,7 +43,7 @@ Most of the setup steps can be done in the setup wizard, but the other options a
 
    - **[Add your domain](set-up.md#add-your-domain-to-personalize-sign-in)** (if you bought your domain during [sign up](sign-up.md), this step is already done.)
 
-    - **Add users**. You can add users in any of the three ways:
+   - **Add users**. You can add users in any of the three ways:
         - In the [wizard](set-up.md#add-users-in-the-wizard).
         - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
         - You can also [add users later](add-users-m365b.md) in the admin center.
