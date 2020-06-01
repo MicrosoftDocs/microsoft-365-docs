@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: 
 description: Configure the security and service infrastructure that allows your information to be protected from malicious users.
 ---
-<!-- this is chrfox working copy -->
+<!-- all core DLP and sensitive information type content and UX is moving away from the terms "sensitive information, sensitive data, sensitive content" in favor of "sensitive items" to minimize confusion with "sensitive information type"-->
 # Deploy information protection for data privacy regulations with Microsoft 365
 
 This solution provides guidance on how to plan for and protect sensitive personal data that is stored in Microsoft 365 services and potentially subject to data privacy regulations such as the European Union's General Data Protection Regulation (GDPR). This solution focuses on applicable Microsoft Information Protection & Governance solutions, Microsoft Compliance Score, and assessment tooling to help you know your data. 
