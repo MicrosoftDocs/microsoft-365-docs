@@ -171,10 +171,8 @@ To import new retention labels and modify existing retention labels:
 
    If there's a validation error, file plan import continues to validate every entry in the import file and displays all errors  referencing the line and row numbers in the import file. Copy the displayed error results so you can correct them when you return to the import file.
 
-When the import is complete, you can now add the retention labels to a retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
+When the import is complete, you can now add the retention labels to a new retention label policy, or auto-apply them. You can do this right from the **File plan** page by selecting the dropdown from **+ Create a label** and then **Policy to publish labels**, or **Policy to auto-apply a label**.
 
-To add a label to an existing retention label policy, select the **Label policies** tab:
-
-![Option to publish labels](../media/compliance-file-plan-publish_labels.png)
+## Next steps
 
 For more information about creating and editing retention labels and their policies, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).

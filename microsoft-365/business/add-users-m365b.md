@@ -31,6 +31,8 @@ description: "Learn the steps to easily add new users, secure their devices, and
 
 # Add more users
 
+This article applies to Microsoft 365 Business Premium.
+
 ## Add new users
 
 Watch a short video about adding a user. <br><br>

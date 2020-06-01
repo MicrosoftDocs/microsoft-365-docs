@@ -33,6 +33,8 @@ description: "Learn how to create an app management policy and protect work file
 
 # Set application protection settings for Windows 10 devices
 
+This article applies to Microsoft 365 Business Premium.
+
 ## Create an app management policy for Windows 10
 
 If your users have personal Windows 10 devices on which they perform work tasks, you can protect your data on those devices as well.

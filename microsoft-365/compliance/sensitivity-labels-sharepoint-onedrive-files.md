@@ -35,6 +35,8 @@ When you do enable sensitivity labels for Office files in SharePoint and OneDriv
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto-labeling when you edit these documents.
 
+- External users can access documents that are labeled with encryption by using guest accounts. For more information, see [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
+
 - Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
 
 > [!NOTE]

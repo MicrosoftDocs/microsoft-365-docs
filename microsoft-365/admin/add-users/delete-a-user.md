@@ -63,13 +63,6 @@ Before you begin, think about what you want to do with the user's email and OneD
    
 ### Get started
 
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
-
 Since the guided experience walks through the steps to delete a user, here's how to get started.
 
 ::: moniker range="o365-worldwide"
