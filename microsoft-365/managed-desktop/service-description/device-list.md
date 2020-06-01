@@ -53,7 +53,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
 | **\*[Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
-| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
+| **\*[Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 
 In addition, the device must also meet these criteria:     
 
