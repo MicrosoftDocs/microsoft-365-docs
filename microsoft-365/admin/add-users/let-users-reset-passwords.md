@@ -49,7 +49,7 @@ If you found this video helpful, check out the [complete training series for sma
 These steps turn on self-service password reset for everyone in your business.
   
 ::: moniker range="o365-worldwide"
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> page.
+1. In the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>, in the left navigation pane, select **Org settings**.
 
 ::: moniker-end
 
@@ -65,13 +65,17 @@ These steps turn on self-service password reset for everyone in your business.
 
 ::: moniker-end
 
-2. At the top of the Settings page select **Security & Privacy**.
+2. At the top of the Org settings page, select **Security & Privacy** Tab.
   
-3. Select **Self Service Password Reset**.
+3. Select **Self-service Password Reset**.
+
+4. Under **Self-service password reset**, select **Go to the Azure portal to turn on self-service password reset**.
+
+5. In the left navigation pane, select Users, and then on the Users - all users page, select Password reset.
   
-4. On the Properties page, select **All** to enable it for everyone in your business, and then select **Save**.
+6. On the Properties page, select **All** to enable it for everyone in your business, and then select **Save**.
   
-5. When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.
+7. When your users sign in, they will be prompted to enter additional contact information that will help them reset their password in the future.
 
 ## Related articles
 
