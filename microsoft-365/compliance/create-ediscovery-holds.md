@@ -29,7 +29,7 @@ When you create a hold, you have the following options to scope the content that
   
 - You create an infinite hold where all content in the specified locations is placed on hold. Alternatively, you can create a query-based hold where only the content in the specified locations that matches a search query is placed on hold.
 
-- You can specify a date range to preserve only the content that was sent, received, or created within that date range. Alternatively, you can hold all content regardless of when it was sent, received, or created.
+- You can specify a date range to preserve only the content that was sent, received, or created within that date range. Alternatively, you can hold all content in specified locations regardless of when it was sent, received, or created.
   
 ## How to create an eDiscovery hold
 
