@@ -35,6 +35,8 @@ When you do enable sensitivity labels for Office files in SharePoint and OneDriv
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto-labeling when you edit these documents.
 
+- External users can access documents that are labeled with encryption by using guest accounts. For more information, see [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
+
 - Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
 
 > [!NOTE]
@@ -52,6 +54,8 @@ Watch the following video (no audio) to see the new capabilities in action:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 You always have the choice to disable sensitivity labels for Office files in SharePoint and OneDrive ([opt-out](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) at any time.
+
+If you are currently protecting documents in SharePoint by using SharePoint Information Rights Management (IRM), be sure to check the [SharePoint Information Rights Management (IRM) and sensitivity labels](#sharepoint-information-rights-management-irm-and-sensitivity-labels) section on this page. 
 
 ## Requirements
 
@@ -166,6 +170,26 @@ We recommend that you follow these steps:
 2. Wait for at least 24 hours after initial publication. Verify that the label has fully synchronized.
 
 3. Publish the label more broadly.
+
+## SharePoint Information Rights Management (IRM) and sensitivity labels
+
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption and restrictions when files are downloaded. This older protection technology is designed to prevent unauthorized users from opening the file while it's outside SharePoint.
+
+In comparison, sensitivity labels provide the protection settings of visual markings (headers, footers, watermarks) in addition to encryption. The encryption settings support the full range of [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) to restrict what users can do with the content, and the same sensitivity labels are supported for [many scenarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Using the same protection method with consistent settings across workloads and apps results in a consistent protection strategy.
+
+However, you can use both protection solutions together and the behavior is as follows: 
+
+- If you upload a file with a sensitivity label that applies encryption, the encryption is not removed so for these files, coauthoring, eDiscovery, DLP, and search are not supported.
+
+- If you label a file using Office on the web, any encryption settings from the label are enforced. For these files, coauthoring, eDiscovery, DLP, and search are supported.
+
+- If you download a file that's labeled by using Office on the web, the label is retained and any encryption settings from the label are enforced rather than the IRM restriction settings.
+
+- If you download an Office or PDF file that isn't encrypted with a sensitivity label, IRM settings are applied.
+
+- If you have enabled any of the additional IRM library settings, which includes preventing users from uploading documents that don't support IRM, these settings are enforced.
+
+With this behavior, you can be assured that all Office and PDF files are protected from unauthorized access if they are downloaded, even if they aren't labeled. However, labeled files that are uploaded won't benefit from the new capabilities.
 
 ## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 

@@ -12,6 +12,7 @@ metadata:
   ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
   ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -42,10 +43,14 @@ landingContent:
             url: plan-your-setup.md
       - linkListType: how-to-guide
         links:
+          - text: Set up Microsoft Business Basic
+            url: setup-business-basic.md
           - text: Set up Microsoft Business Standard
-            url: setup.md
+            url: setup-business-standard.md
           - text: Set up Microsoft Business Premium
             url: ../../business/set-up.md
+          - text: Set up Microsoft Apps for Business
+            url: setup-apps-for-business.md
   # Card (optional)
   - title: Finish setting up
     linkLists:

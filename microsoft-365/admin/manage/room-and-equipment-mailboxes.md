@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - Lean
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150

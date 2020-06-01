@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -37,7 +38,8 @@ Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.mi
 
 ## Step 1: Decide on the method of requiring your users to use MFA
 
-There are three ways to require your users to use MFA for sign-ins. See [MFA support in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.
+> [!NOTE]
+> You must be a global admin to set up or modify MFA. There are three ways to require your users to use MFA for sign-ins. See [MFA support in Microsoft 365](multi-factor-authentication-microsoft-365.md) for the details.
 
 - Security defaults (recommended for small businesses)
 
@@ -100,7 +102,7 @@ If you have been using [baseline Conditional Access policies](https://docs.micro
 
 ### Conditional Access policies
 
-Create, configure, or enable the appropriate policies that include the group of users that require MFA for sign-in.
+Create, configure, and enable the appropriate policies that include the group of users that require MFA for sign-in.
 
 ### Per-user MFA (not recommended)
 

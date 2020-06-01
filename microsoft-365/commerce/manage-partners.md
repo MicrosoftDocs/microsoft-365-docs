@@ -11,7 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom:
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn how to work with Microsoft-certified solution providers (partners) to purchase and manage products and services for your organization or school."
