@@ -54,7 +54,7 @@ To help you get started with an information protection scheme in Microsoft 365, 
 ## Managing information protection in Microsoft 365
 
 Microsoft [information protection solutions](../compliance/protect-information.md) include a number of integrated capabilities across Microsoft 365, Azure, and Windows. In Microsoft 365, information protection solutions include:
-
+<!--  below link is incorect, it should point to sensitive-information-type-entity-definitions.md-->
 - [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for.md) (described in the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md))
 - Sensitivity labels
    - Service/container-level
@@ -198,7 +198,7 @@ For configuration instructions, see [How to configure auto-labeling policies for
 For data privacy, for sites of concern, push sensitivity labels for automatic encryption of content containing sensitive personal information.
 
 ## Data loss prevention 
-
+<!-- DLP helps to prevent inadvertent inappropriate sharing, both internally and externally -->
 [Data loss prevention (DLP)](../compliance/data-loss-prevention-policies.md) in Microsoft 365 can be used as a measure to detect, warn, and block risky sharing activities such as sharing of data containing personal information with an external user.
 
 In summary, DLP allows you to:
@@ -209,7 +209,7 @@ In summary, DLP allows you to:
 - Integrate with classification & labeling to detect and protect data at egress
 
 ### Supported workloads for DLP
-
+<!-- DLP is in the compliance center.  The feature content is moving away from using these terms "sensitive information, sensitive data, sensitive content as they are too easily confused with 'sensitive information types' and 'sensitivity labels'.  The term I (and Brendon for UX string work) am using is 'sensitive items' -->
 With a DLP policy in the Microsoft 365 Security & Compliance Center, you can identify, monitor, and automatically protect sensitive information across many locations in Microsoft 365, such as Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
 For example, you can identify any document containing a credit card number that's stored in any OneDrive for Business site, or you can monitor just the OneDrive sites of specific people.
@@ -219,7 +219,7 @@ You can also monitor and protect sensitive information in the desktop versions o
 ![Supported workloads for DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 ### Example of protecting personal data using DLP
-
+<!-- who is being quoted ("policy tips") in the the below paragraph?  -->
 In the use case shown in the diagram below, DLP is used to identify a document or email containing a health record and then automatically blocks access to that document (or blocks the email from being sent) and notifies the recipient with “policy tips”; and an alert is sent to the end-user and admin.
 
 ![Example of protecting personal data using DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
@@ -245,13 +245,13 @@ Your DLP scheme needs to be carefully plotted out based on:
 **Management and maintenance.** DLP policies require concerted planning, management, and response, requiring someone in the organization to operate and tune the capability, so make sure the DLP scheme you have in mind provides required, augmentative functionality relative to other methods available to you, including sensitivity labelling and other forms of information protection, including that available with Microsoft Cloud Application Security (MCAS).
 
 ### DLP Policies
-
+<!-- sensitive information type or retention label, the diagram is misleading when it says "You can use sensitive information types and/or LABELS with your DLP policies" it should be specific and say 'retention labels' -->
 DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, sensitive information type (SIT) the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of documents.
 
 ![DLP policy configuration in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 ### Example policy
-
+<!-- I like the below graphic and may re-use it in core content -->
 Here is an example DLP policy for awareness of GDPR.
 
 ![Example DLP policy for awareness of GDPR](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
@@ -271,7 +271,7 @@ The following table lists three configurations of increasing protection using DL
 Increasing protection levels by implementing policies that impact employees is typically accompanied by end user training, educating users on new security policies and procedures to help them continue to be productive in a more secure environment.
 
 ### Sensitivity labels and DLP
-
+<!-- This section is ineffective at communicating intent. I am not sure what its intent is. What is the point of this? Why is it even here? There are no labeled sections that correspond to the first 4 key steps. I can only guess as to the overall flow of the diagram as well as only guessing what differentiates the "5" sections from each other visually. I strongly recommend dropping the ### Sensitivity labels and DLP section entirely until the need for it is clearly identified, its intent simply stated and it communicates clearly.-->
 The following figure shows the various types of sensitivity labels working together with DLP to protect data privacy in a highly regulated environment.
 
 ![Sensitivity labels working with DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
