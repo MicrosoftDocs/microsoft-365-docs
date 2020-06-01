@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Office 365 admins can learn how to recover from a ransomware attack."
+description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
 ---
 
-# Recover from a ransomware attack in Office 365
+# Recover from a ransomware attack in Microsoft 365
 
-Even if you take every precaution to protect your Office 365 organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are verify sophisticated.
+Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are verify sophisticated.
 
-The steps in this topic will give you the best chance to recover data that was encrypted by the ransomware, and will help stop the spread of the infection in your Office 365 organization. Before you get started, consider the following items:
+The steps in this topic will give you the best chance to recover data that was encrypted by the ransomware, and will help stop the spread of the infection in your organization. Before you get started, consider the following items:
 
 - There's no guarantee that paying the ransom will return access to your files. In fact, paying the ransom can make you a target for more ransomware. If you've already paid, but you were able to successfully recover your files without having to use the attacker's resolution, you should call your bank to see if they can block the transaction. We also recommend that you report the ransomware attack to law enforcement, scam reporting websites and Microsoft as described later in this topic.
 
@@ -37,7 +37,7 @@ The key point here is to stop the spread of data encryption by the ransomware.
 
 If you suspect that email is a target, you should temporarily disable user access to mailboxes. Exchange ActiveSync is used by mobile devices to synchronize data between the device and the Exchange Online mailbox.
 
-To disable ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Office 365](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
+To disable ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
 
 To disable other types of access to a mailbox, see:
 
@@ -127,7 +127,7 @@ You can report phishing message that contain ransomware by using one of several 
 
 - [Norsk Hydro responds to ransomware attack with transparency](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Ransomware detection and recovering your files in OneDrive](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Ransomware detection and recovering your files in OneDrive](https://support.microsoft.com/en-us/office/ransomware-detection-and-recovering-your-files-0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/)
 

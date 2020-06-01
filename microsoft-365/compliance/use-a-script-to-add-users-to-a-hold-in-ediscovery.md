@@ -16,6 +16,7 @@ search.appverid:
 - MOE150
 - MED150
 - MBS150
+- MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: "Run a script to quickly add mailboxes and OneDrive for Business sites to a new hold that's associated with an eDiscovery case in the Security & Compliance Center."
 ---

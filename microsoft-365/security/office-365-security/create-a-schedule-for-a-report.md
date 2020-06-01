@@ -1,5 +1,5 @@
 ---
-title: "Create a schedule for a report in the Security &amp; Compliance Center"
+title: Create schedule for report - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
-description: "Learn how to set up a schedule for a report in the Security &amp; Compliance Center."
+description: Admin can learn how to set up a schedule for a report in the Security &amp; Compliance Center in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Create a schedule for a report in the Security &amp; Compliance Center
@@ -26,7 +27,7 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
 ## Create a schedule for a report
 
 > [!IMPORTANT]
-> Make sure that you have the necessary permissions to perform this task. In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. To learn more about permissions, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> Make sure that you have the necessary permissions to perform this task. In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. To learn more about permissions, see [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 1. In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.
     
@@ -67,7 +68,7 @@ Once you have created a schedule for a report, that report will be delivered via
   
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Manage schedules for reports in the Security &amp; Compliance Center](manage-schedules-for-multiple-reports.md)
   

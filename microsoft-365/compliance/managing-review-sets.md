@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to manage review sets so you can analyze, query, view, tag, and export data in an Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Manage review sets in Advanced eDiscovery
@@ -49,6 +50,6 @@ There are three different ways to add data to a review set in an Advanced eDisco
 
 1. [Add search results to a review set](add-data-to-review-set.md)
 
-2. [Load non-Office 365 data into a review set](load-non-office365-data.md)
+2. [Load non-Microsoft 365 data into a review set](load-non-Office-365-data-into-a-review-set.md)
 
 3. [Add data to a review set from another review set](add-data-to-review-set-from-another-review-set.md)

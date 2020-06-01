@@ -13,13 +13,14 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: "Learn how to delete or restore a user's Office 365 account."
+description: "Learn how to delete or restore a user's Microsoft 365 account."
 ---
 
 # Quick help: Deleted user
@@ -29,9 +30,6 @@ You may have to delete a [user](../add-users/add-users.md) in your organization.
 ## Delete a user
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
   
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
@@ -70,9 +68,9 @@ You can restore users by searching for **deleted** on the home page and choosing
 
 A deleted [user](../add-users/add-users.md) is a work or school account that you're deleting from your organization. 
   
-## Does deleting a user free up their Office 365 license?
+## Does deleting a user free up their Microsoft 365 license?
 
-Yes, deleting the user frees up the Office 365 license assigned to that user. You can then assign that license to another user. [Read full article](../../commerce/licenses/remove-licenses-from-subscription.md).
+Yes, deleting the user frees up the Microsoft 365 license assigned to that user. You can then assign that license to another user. [Read full article](../../commerce/licenses/remove-licenses-from-subscription.md).
   
 ## I had a deleted user listed in Deleted users, and then it disappeared. What happened?
 

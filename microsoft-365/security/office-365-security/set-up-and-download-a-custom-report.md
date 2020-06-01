@@ -1,5 +1,5 @@
 ---
-title: "Set up and download a custom report in the Security &amp; Compliance Center"
+title: Set up & download a custom report - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -16,6 +16,7 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: "Learn how to set up and download a report with a custom date range and filters in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up and download a custom report in the Security &amp; Compliance Center
@@ -25,7 +26,7 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
 ## Download a custom report
 
 > [!IMPORTANT]
-> Make sure that you have the necessary [permissions for the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
+> Make sure that you have the necessary [permissions for the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
   
 1. In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard**.
     
@@ -41,7 +42,7 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
     
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
   

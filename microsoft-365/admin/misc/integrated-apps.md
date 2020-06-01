@@ -13,12 +13,13 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: "Learn about Integrated Apps and how to turn them on to allow third-party apps to access users' Office 365 information."
+description: "Learn about Integrated Apps and how to turn them on to allow third-party apps to access users' Microsoft 365 information."
 ---
 
 # Integrated apps in Microsoft 365

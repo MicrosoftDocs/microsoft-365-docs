@@ -1,5 +1,5 @@
 ---
-title: "Manage schedules for multiple reports in the Security &amp; Compliance Center"
+title: Schedules for multiple reports - Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,6 +14,7 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: "Learn how to view, edit, and manage schedules for reports in the Security &amp; Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Manage schedules for multiple reports in the Security &amp; Compliance Center
@@ -23,7 +24,7 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
 ## Manage schedules for reports
 
 > [!IMPORTANT]
-> Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
+> Make sure that you have the necessary [permissions assigned in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md). In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
   
 ![In the Security &amp; Compliance Center, choose Reports \> Manage schedules](../../media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
 
@@ -39,7 +40,7 @@ In the Security &amp; Compliance Center, several [reports and insights](reports-
     
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
   

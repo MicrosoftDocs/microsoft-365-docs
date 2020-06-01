@@ -20,7 +20,7 @@ ms.collection:
 ---
 # Identity and device access configurations
 
-This series of articles describes how to configure secure access to cloud services through Enterprise Mobility + Security (EMS) products by implementing a recommended environment and configuration, including a prescribed set of conditional access policies and related capabilities. EMS is a core component of Microsoft 365. You can use this guidance to protect access to all services that are integrated with Azure Active Directory, including Office 365 services, other SaaS services, and on-premises applications published with Azure AD Application Proxy. 
+This series of articles describes how to configure secure access to cloud services through Enterprise Mobility + Security (EMS) products by implementing a recommended environment and configuration, including a prescribed set of conditional access policies and related capabilities. EMS is a core component of Microsoft 365. You can use this guidance to protect access to all services that are integrated with Azure Active Directory, including Microsoft 365 services, other SaaS services, and on-premises applications published with Azure AD Application Proxy. 
 
 These recommendations are aligned with Microsoft Secure Score as well as [identity score in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/identity-secure-score), and will increase these scores for your organization. These recommendations will also help you implement these [five steps to securing your identity infrastructure](https://docs.microsoft.com/azure/security/azure-ad-secure-steps). 
 
@@ -42,23 +42,23 @@ For those organizations who do not have Enterprise Mobility + Security E5 licens
 
 Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that have not historically been available. We recommend these controls, because we believe they represent a balance between security and productivity.  
 
-We have done our best to account for a wide variety of organizational protection requirements, but we’re not able to account for all possible requirements or for all the unique aspects of your organization.
+We have done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
 ## Three tiers of protection
 
-Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and Office 365 administrators might require additional security and information protection controls around their email correspondence that are not required for other business unit users. 
+Most organizations have specific requirements regarding security and data protection. These requirements vary by industry segment and by job functions within organizations. For example, your legal department and administrators might require additional security and information protection controls around their email correspondence that are not required for other business unit users. 
 
 Each industry also has their own set of specialized regulations. Rather than providing a list of all possible security options or a recommendation per industry segment or job function, recommendations have been provided for three different tiers of security and protection that can be applied based on the granularity of your needs.
 
 - **Baseline protection**: We recommend you establish a minimum standard for protecting data, as well as the identities and devices that access your data. You can follow these baseline recommendations to provide strong default protection that meets the needs of many organizations.
-- **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Office 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
+- **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
 - **Highly regulated**: Some organizations may have a small amount of data that is highly classified, consititutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
 
 ![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../media/M365-idquality-threetiers.png)
 
 This guidance shows you how to implement protection for identities and devices for each of these tiers of protection. Use this guidance as a starting point for your organization and adjust the policies to meet your organization's specific requirements.
 
-It’s important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
+It's important to use consistent levels of protection across your data, identities, and devices. For example, if you implement this guidance, be sure to protect your data at comparable levels. These architecture models show you which capabilities are comparable.
 
 **Identity and device protection for Office 365**<br/>
 ![Thumbnail for poster "Identity and device protection for Office 365"](../media/O365_Identity_device_protection_thumb.png)<br/>
@@ -91,7 +91,7 @@ Azure AD provides a full suite of identity management capabilities. For securing
 
 - **[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: Allow your users to reset their passwords securely and without helpdesk intervention, by providing verification of multiple authentication methods that the administrator can control.
 
-- **[Multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)**: MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that a stolen identity can be used to access your Office 365 environment.
+- **[Multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)**: MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that a stolen identity can be used to access your environment.
 
 - **[Conditional access](/azure/active-directory/conditional-access/overview)**: Azure AD evaluates the conditions of the user login and uses conditional access policies you create to allow access. For example, in this guidance we show you how to create a conditional access policy to require device compliance for access to sensitive data. This greatly reduces the risk that a hacker with a stolen identity can access your sensitive data. It also protects sensitive data on the devices, because the devices meet specific requirements for health and security.
 
@@ -99,29 +99,29 @@ Azure AD provides a full suite of identity management capabilities. For securing
 
 - **[Device registration](/azure/active-directory/devices/overview)**: You register a device into Azure AD to provide an identity to the device. This identity is used to authenticate the device when a user signs in and to apply conditional access rules that require domain-joined or compliant PCs. For this guidance, we use device registration to automatically register domain-joined Windows computers. Device registration is a prerequisite for managing devices with Intune. 
 
-- **[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)**: Azure AD Identity Protection enables you to detect potential vulnerabilities affecting your organization’s identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply conditional access policies for multi-factor authentication. This guidance also includes a conditional access policy that requires users to change their password if high-risk activity is detected for their account.
+- **[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)**: Azure AD Identity Protection enables you to detect potential vulnerabilities affecting your organization's identities and configure automated remediation policy to low, medium, and high sign-in risk and user risk. This guidance relies on this risk evaluation to apply conditional access policies for multi-factor authentication. This guidance also includes a conditional access policy that requires users to change their password if high-risk activity is detected for their account.
 
 ### Microsoft Intune
 
-[Intune](https://docs.microsoft.com/intune/introduction-intune) is Microsoft’s cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Azure AD to use when applying conditional access policies.
+[Intune](https://docs.microsoft.com/intune/introduction-intune) is Microsoft's cloud-based mobile device management service. This guidance recommends device management of Windows PCs with Intune and recommends device compliance policy configurations. Intune determines whether devices are compliant and sends this data to Azure AD to use when applying conditional access policies.
 
 #### Intune app protection
 
-[Intune app protection](https://docs.microsoft.com/intune/app-protection-policy) policies can be used to protect your organization’s data in mobile apps, with or without enrolling devices into management. Intune helps protect Office 365 information, making sure your employees can still be productive, and preventing data loss. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
+[Intune app protection](https://docs.microsoft.com/intune/app-protection-policy) policies can be used to protect your organization's data in mobile apps, with or without enrolling devices into management. Intune helps protect information, making sure your employees can still be productive, and preventing data loss. By implementing app-level policies, you can restrict access to company resources and keep data within the control of your IT department.
 
 This guidance shows you how to create recommended policies to enforce the use of approved apps and to determine how these apps can be used with your business data.
 
-### Office 365
+### Microsoft 365
 
-This guidance shows you how to implement a set of policies to protect access to Office 365, including Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your Office 365 tenant using these resources:
+This guidance shows you how to implement a set of policies to protect access to Office 365, including Exchange Online, SharePoint Online, and OneDrive for Business. In addition to implementing these policies, we recommend you also raise the level of protection for your tenant using these resources:
 
-- [Configure your Office 365 tenant for increased security](https://support.office.com/article/Configure-your-Office-365-tenant-for-increased-security-8d274fe3-db51-4107-ba64-865e7155b355): These recommendations apply to baseline security for your Office 365 tenant.
-- [Office 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352): These recommendations include logging, data governance, admin access, and threat protection.
+- [Configure your tenant for increased security](https://docs.microsoft.com/microsoft-365/security/office-365-security/tenant-wide-setup-for-increased-security): These recommendations apply to baseline security for your tenant.
+- [Microsoft 365 security roadmap: Top priorities for the first 30 days, 90 days, and beyond](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap): These recommendations include logging, data governance, admin access, and threat protection.
 
 
-### Windows 10 and Office 365 ProPlus
+### Windows 10 and Microsoft 365 Apps for enterprise
 
-Windows 10 and Office 365 ProPlus is the recommended client environment for PCs. We recommend Windows 10, as Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Office 365 ProPlus includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for conditional access. These apps also include enhanced security and compliance tools.
+Windows 10 and Microsoft 365 Apps for enterprise is the recommended client environment for PCs. We recommend Windows 10, as Azure is designed to provide the smoothest experience possible for both on-premises and Azure AD. Windows 10 also includes advanced security capabilities that can be managed through Intune. Microsoft 365 Apps for enterprise includes the latest versions of Office applications. These use modern authentication, which is more secure and a requirement for conditional access. These apps also include enhanced security and compliance tools.
 
 ## Applying these capabilities across the three tiers of protection
 

@@ -37,8 +37,8 @@ A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combinati
 | ------ | ------ |
 | Microsoft Defender ATP | Endpoint protection suite built around powerful behavioral sensors, cloud analytics, and threat intelligence |
 | Office 365 ATP | Advanced protection for your apps and data in Office 365, including email and other collaboration tools |
-| Azure ATP | Safeguard against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
-| Microsoft Cloud App Security | Identifies and combats cyberthreats across your Microsoft and third-party cloud services |
+| Azure ATP | Defend against advanced threats, compromised identities, and malicious insiders using correlated Active Directory signals |
+| Microsoft Cloud App Security | Identify and combat cyberthreats across your Microsoft and third-party cloud services |
 
 ## Deployed services and functionality
 Microsoft Threat Protection provides better visibility, correlation, and remediation as you deploy more supported services.
@@ -57,9 +57,9 @@ The table below lists how each supported service provides additional data, oppor
 | Service | Data (signals & correlated info) | Remediation & response scope |
 | ------ | ------ | ------ |
 | Microsoft Defender ATP | - Endpoint states and raw events<br />- Endpoint detections and alerts, including antivirus, EDR, attack surface reduction<br />- Info on files and other entities observed on endpoints | Endpoints |
-| Office 365 ATP | - Mail and mailbox states and raw events<br />- Email, attachment, and link detections | - Mailboxes<br />- Office 365 accounts |
+| Office 365 ATP | - Mail and mailbox states and raw events<br />- Email, attachment, and link detections | - Mailboxes<br />- Microsoft 365 accounts |
 | Azure ATP | - Active Directory signals, including authentication events<br />- Identity-related behavioral detections | Identities |
-| Microsoft Cloud App Security | - Detection of unsanctioned cloud apps & services (shadow IT)<br />- Exposure of data to cloud apps<br />- Threat activity associated cloud apps | Cloud apps |
+| Microsoft Cloud App Security | - Detection of unsanctioned cloud apps and services (shadow IT)<br />- Exposure of data to cloud apps<br />- Threat activity associated with cloud apps | Cloud apps |
 
 ## Deploy the services
 Deploying each service typically requires provisioning to your tenant and some initial configuration. See the following table to understand how each of these services are deployed.
