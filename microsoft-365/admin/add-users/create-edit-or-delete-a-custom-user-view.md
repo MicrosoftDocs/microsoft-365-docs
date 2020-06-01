@@ -25,13 +25,6 @@ description: "Learn to use filters to create, edit, or delete custom user view i
 # Create, edit, or delete a custom user view in Office 365
 
 If you're a global or user management admin of Office 365, you can create custom user views to view a specific subset of users. These views are in addition to the standard set of views that come with Office 365. You can create, edit, or delete custom user views, and the custom views you create are available to all admins.
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
   
 ## Custom user views in the admin center
 

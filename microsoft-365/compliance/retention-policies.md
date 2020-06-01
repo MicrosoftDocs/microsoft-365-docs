@@ -173,8 +173,12 @@ You can find any configured preservation policies on the **Policies** page in th
 
 ## Related information
 
-- [Create and configure retention policies](create-retention-policies.md)
 - [Learn about retention labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## Next steps
+
+If you are ready to create retention polices, see [Create and configure retention policies](create-retention-policies.md).
+
