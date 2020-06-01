@@ -37,6 +37,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
 | [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
 | **\*[Dell Latitude 7400 2-in-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
+| **\*[Dell Optiplex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop)** | 128 GB / Intel i3 / 8 GB RAM | None | May 1, 2022  | May 1, 2025  |
 | [HP EliteBook 830 / 840 / 850 G6 Notebook PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | [HP EliteBook x360 830 G6 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | **\*[HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
