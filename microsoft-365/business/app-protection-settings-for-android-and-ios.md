@@ -29,7 +29,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 # Set app protection settings for Android or iOS devices
 
-![Banner that point to https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
+This article applies to Microsoft 365 Business Premium.
 
 ## Create an app management policy
 
