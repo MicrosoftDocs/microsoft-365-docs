@@ -1,5 +1,5 @@
 ---
-title: "Turning Integrated Apps on or off"
+title: "Managing user consent to apps in Microsoft 365"
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: "Learn about Integrated Apps and how to turn them on to allow third-party apps to access users' Microsoft 365 information."
+description: "Learn about user consent to apps, and how to turn them on to allow third-party apps to access users' Microsoft 365 information."
 ---
 
-# Integrated apps in Microsoft 365
+# Managing user consent to apps in Microsoft 365
 
 This setting controls whether users can give that consent to apps that use OpenID Connect and OAuth 2.0 for sign-in and requests to access data. An app can be created from within your own organization, or it can come from another Office 365 organization or a third-party.
 
@@ -30,18 +30,18 @@ If you turn this setting on, those apps will ask users for permission to access 
 
 A user can give access only to apps they own that access their Office 365 information. They can't give an app access to any other user's information.
 
-## Turning Integrated apps on or off
+## Turning user consent on or off
 <a name="__toc379982114"> </a>
 
-Here's how to turn Integrated Apps on or off.
+Here's how to turn User consent to apps on or off.
 
-1. In the admin center, go to the **Settings** \> **Settings** > [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **Integrated apps**.
+1. In the admin center, go to the **Settings** \> **Org settings** > [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **User consent to apps**.
 
-2. On the **Integrated Apps** page, select the option to turn Integrated Apps on or off.
+2. On the **User consent to apps** page, select the option to turn Integrated Apps on or off.
 
-## More info on Integrated Apps
+## More info
 <a name="__toc379982114"> </a>
 
 To learn about how to configure your consent settings in Azure active directory, read [Configure the admin consent workflow](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow).
 
-To learn about managing consent to apps, read [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-consent-requests).
+To learn about managing user consent to apps, read [Managing consent to applications and evaluating consent requests](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/manage-consent-requests).
