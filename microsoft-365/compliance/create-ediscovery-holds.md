@@ -27,12 +27,9 @@ After you create an eDiscovery hold, it may take up to 24 hours for the hold to 
 
 When you create a hold, you have the following options to scope the content that is preserved in the specified content locations:
   
-- You create an infinite hold where all content is placed on hold. Alternatively, you can create a query-based hold where only the content that matches a search query is placed on hold.
+- You create an infinite hold where all content in the specified locations is placed on hold. Alternatively, you can create a query-based hold where only the content in the specified locations that matches a search query is placed on hold.
 
 - You can specify a date range to preserve only the content that was sent, received, or created within that date range. Alternatively, you can hold all content regardless of when it was sent, received, or created.
-
-> [!NOTE]
-> You can have a maximum of 10,000 eDiscovery holds across all Core eDiscovery cases in your organization.
   
 ## How to create an eDiscovery hold
 
@@ -59,6 +56,9 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
    b. **Site locations** - Click **Choose sites** and then click **Choose sites** again to specify SharePoint and OneDrive accounts to place on hold. Type the URL for each site that you want to place on hold. You can also add the URL for the SharePoint site for a Microsoft Team, Office 365 Group or a Yammer Group. Click **Choose**, and then click **Done**.
   
    c. **Exchange public folders.** Move the toggle switch ![Toggle control](../media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) to the **All** position to put all public folders in your Exchange Online organization on hold. You can't choose specific public folders to put on hold. Leave the toggle switch set to **None** if you don't want to put a hold on public folders.
+
+   > [!NOTE]
+   > You must add at least one content location to the hold. Otherwise, the eDiscovery hold statics will show that no items are on hold.
 
 8. When you're done adding content locations to the hold, click **Next**.
 
