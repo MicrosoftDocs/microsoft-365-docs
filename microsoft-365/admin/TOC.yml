@@ -29,7 +29,7 @@
         - name: Roll out Teams
           href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
         - name: App training for everyone
-          href: https://support.office.com/en-us/office-training-center
+          href: https://support.office.com/office-training-center
         - name: What subscription do I have?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Customize Sign-in page
@@ -218,6 +218,8 @@
            href: manage/manage-messages.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
+         - name: Show or hide new features
+           href: manage/show-hide-new-features.md
          - name: Power BI usage analytics
            items: 
            - name: About usage analytics
@@ -248,6 +250,16 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Secure Microsoft Business Premium
+          items:
+            - name: Pre-requisites for data protection
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: Security features
+              href: ../business/security-features.md
+            - name: Increase threat protection
+              href: ../business/increase-threat-protection.md
+            - name: Set up compliance features
+              href: ../business/set-up-compliance.md
         - name: Secure score
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
