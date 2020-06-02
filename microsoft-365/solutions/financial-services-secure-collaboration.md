@@ -62,7 +62,7 @@ Teams can provide a collaboration space to securely store sensitive client data 
 
 Another common scenario is to use Teams as a "virtual data room" to securely collaborate, including storing and managing documents. Team members and syndicates within investment banking, asset management, or private equity firms can securely collaborate on a deal or investment. Cross-functional teams are often involved in planning and fulfilling such deals, and the ability to securely share data and conduct conversations is a core requirement. Securely sharing related documents with external investors is also a key requirement. Teams provides a secure and fully auditable location from which to centrally store, protect, and share investment data.
 
-:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="A group of of office workers in a meeting discuss images on a large screen.":::
+:::image type="content" source="../media/m365cO19-ent-dell-latitude13-5951.jpg" alt-text="A group of office workers in a meeting discuss images on a large screen.":::
  
 ### Teams: Improve collaboration and reduce compliance risk
 

@@ -357,4 +357,6 @@ There are several other features that have previously been used to retain or del
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only) 
     
+## Next steps
 
+If you are ready to create and publish retention labels, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
