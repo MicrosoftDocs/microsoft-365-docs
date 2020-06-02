@@ -19,8 +19,8 @@ description: add.
 ---
 
 # Protect information subject to data privacy regulation
-<!-- Run Acrolinx on this. Run on sentences and reliance on acronyms make this difficult to parse. Will make loc a mess. -->
-A number of information protection controls can be employed in your subscription to help address data privacy compliance needs, including a number that are specific to General Data Protection Regulation (GDPR), HIPAA-HITECH (the United States health care privacy act), California Consumer Protection Act (CCPA), and the Brazil Data Protection Act (LGPD).
+
+A number of information protection controls can be employed in your subscription to help address data privacy compliance needs and regulations. These include General Data Protection Regulation (GDPR), HIPAA-HITECH (the United States health care privacy act), California Consumer Protection Act (CCPA), and the Brazil Data Protection Act (LGPD).
 
 These controls are within following solution areas:
 
@@ -31,7 +31,7 @@ These controls are within following solution areas:
 
 ## Data privacy regulations that impact information protection controls
 
-A sample list of data privacy regulations that may relate to information protection controls is provided below.
+Here is a sample list of data privacy regulations that may relate to information protection controls:
 
 - GDPR Article 5(1)(f))
 - GDPR Article (32)(1)(a)
@@ -39,27 +39,28 @@ A sample list of data privacy regulations that may relate to information protect
 - HIPAA-HITECH (45 CFR 164.312(e)(1))
 - HIPAA-HITECH (45 C.F.R. 164.312(e)(2)(ii))
 
-See the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md) for more information on each of the above.
+See the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md) for more information on each of the above.
 
-The data privacy regulations recommend the following for information protection:
+Data privacy regulations for information protection recommend:
 
-- Protect against loss or unauthorized access, usage and/or transmission
+- Protection against loss or unauthorized access, usage and/or transmission
 - Risk-based application of protective mechanisms
 - Use of encryption where appropriate
 
-Your organization may also want to protect Microsoft 365 content for other purposes (such as other compliance needs or for business reasons), so establishing your information protection scheme for data privacy should be done as part of overall information protection planning, implementation, and management.
+Your organization may also want to protect Microsoft 365 content for other purposes, such as other compliance needs or for business reasons. Establishing your information protection scheme for data privacy should be done as part of overall information protection planning, implementation, and management.
 
-To help you get started with an information protection scheme in Microsoft 365, the following section includes a short list of related capabilities and improvement actions for Microsoft 365. The list includes capabilities and improvement actions that are applicable to data privacy regulations. However, the list doesn't include older technologies if there's a newer capability that largely supercedes the older one. For example, Information Rights Management (IRM) for SharePoint Online and OneDrive is not included in the list but sensitivity labels is included.
+To help you get started with an information protection scheme in Microsoft 365, the following section includes a short list of related capabilities and improvement actions for Microsoft 365. The list includes capabilities and improvement actions that are applicable to data privacy regulations. However, the list doesn't include older technologies if there's a newer capability that largely supersedes the older one. For example, Information Rights Management (IRM) for SharePoint and OneDrive is not included in the list but sensitivity labels are included.
 
 ## Managing information protection in Microsoft 365
 
-Microsoft [information protection solutions](../compliance/protect-information.md) include a number of integrated capabilities across Microsoft 365, Azure, and Windows. In Microsoft 365, information protection solutions include:
-- [Service encryption with Customer key](../compliance/customer-key-overview.md) <!-- Not first in TOC but it should be. Set this up for entire tenant first. Also, DKE (double key encryption) will be out soon. Replacing HYOK. That will go in here as well. -->
-- [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for.md) (described in the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md))
+Microsoft [information protection solutions](../compliance/protect-information.md) include a number of integrated capabilities across Microsoft 365, Microsoft Azure, and Microsoft Windows. In Microsoft 365, information protection solutions include:
+
+- [Service encryption with Customer Key](../compliance/customer-key-overview.md)
+- [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md))
 - Sensitivity labels
   - Service/container-level
   - Client-side/content-level
-  - Automated for data-at-rest in SharePoint Online and OneDrive
+  - Automated for data-at-rest in SharePoint and OneDrive
 - Data Loss Prevention (DLP)
 - [Office 365 Message Encryption new capabilities (OME)](../compliance/ome.md) and OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md)
 
@@ -78,7 +79,7 @@ For information on other information protection capabilities outside of Microsof
 
 ## Sensitivity labels
 
-[Sensitivity labels](../compliance/sensitivity-labels.md) from the Microsoft Information Protection framework let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered.
+[Sensitivity labels](../compliance/sensitivity-labels.md) from the Microsoft Information Protection framework let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
 
 ![Sensitivity labels in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
@@ -86,7 +87,7 @@ For information on other information protection capabilities outside of Microsof
 
 ### Prerequisites for sensitivity labels
 
-Complete the following activities prior to implementing any of the sensitivity label-based capabilities highlighted below, for data privacy purposes or otherwise.
+Complete these activities prior to implementing any of the sensitivity label-based capabilities highlighted below:
 
 1. Understand the modern sensitivity label capability in Microsoft 365 and business reasons for their application
    - **Business requirements.** Establish the business reasons for applying sensitivity labels in your enterprise. For example, your data privacy requirements for information protection.
@@ -94,7 +95,7 @@ Complete the following activities prior to implementing any of the sensitivity l
    - **Key things to remember** – Sensitivity labels are managed in one place (Microsoft Compliance admin center) but the targeting and application options vary significantly, namely:
       - There are sensitivity labels for sites, groups, and Teams (container level – settings do not apply to content inside the container). These are published to users/groups of users who apply them when a site, group or Team is provisioned.
       - There are sensitivity labels for active (opened) content. These are also published to user/groups of users, who either manually apply them, or they get applied automatically (based on policy settings) when: (a) the file is opened/edited/saved, either to the user’s desktop or a SharePoint site; or (b) an email is drafted and sent.
-      - There are sensitivity labels for automatic application to files at rest in SharePoint Online and OneDrive (as well as to emails in transit through Exchange). These are targeted to either all sites or specific ones (no exclusion rules) as well as all or specific Exchange users (no exclusion rules) and automatically apply to the files at rest in these environments (or emails in transit). Thus, this may make sense as part of a more macro strategy but should be reconciled with other methods.
+      - There are sensitivity labels for automatic application to files at rest in SharePoint and OneDrive (as well as to emails in transit through Exchange). These are targeted to either all sites or specific ones (no exclusion rules) as well as all or specific Exchange users (no exclusion rules) and automatically apply to the files at rest in these environments (or emails in transit). Thus, this may make sense as part of a more macro strategy but should be reconciled with other methods.
 
 2. Rationalize modern sensitivity labelling with past or alternative methods
 
@@ -103,18 +104,18 @@ Complete the following activities prior to implementing any of the sensitivity l
    - OME
     If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-new-capabilities-ome), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
-3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, modern sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security (refer to [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)]) to achieve your data privacy-related information protection goals.
+3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, modern sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security. See [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)]) to achieve your data privacy-related information protection goals.
 
-4. Develop a sensitivity label classification and control scheme. A good article to help you with developing a sensitivity labelling classification scheme can be found on the Services Trust Portal is [Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper).
+4. Develop a sensitivity label classification and control scheme. See Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper) to help you with developing a sensitivity labelling classification scheme.
 
 ### General guidance
 
-1. **Define your schema.** Before using technical capabilities to apply labels and protection, first work across your organization to define a classification schema. Your organization might already have a classification schema, which makes it easier to add personal data. This article includes an example sensitivity labelling scheme. You can use this as a starting point, if needed.
+1. **Define your schema.** Before using technical capabilities to apply labels and protection, work across your organization to define a classification schema. Your organization might already have a classification schema, which makes it easier to add personal data. This article includes an example sensitivity labelling scheme. You can use this as a starting point, if needed.
 2. **Getting started.** Begin by deciding on the number and names of labels to implement. Do this activity without worrying about which technology to use and how labels will be applied. Apply this schema universally throughout your organization, including data that resides on premises and in other cloud services.
 3. **Additional recommendations**  When designing and implementing policies, labels, and conditions, consider following these recommendations:
 
    - **Use existing classification schema (if any).** Many organizations already are using data classification in some form. Carefully evaluate the existing label schema and (if possible) use it as is. Using familiar labels that are recognizable to the end-user will drive adoption.
-   - **Start small.** There is virtually no limit to the number of labels that you can create. However, large numbers of labels and sub-labels will negatively impact the adoption. Too many choices often means no choice at all. <!-- going to stop marking those, but the entire doc is written that way. Needs a detailed voice review. -->
+   - **Start small.** There is virtually no limit to the number of labels that you can create. However, large numbers of labels and sub-labels can slow adoption.
    - **Use scenarios and use cases.** Identify common use cases within the organization and use scenarios derived from the data privacy regulations you are subject to verify if the envisioned label and classification configuration will work in practice.
    - **Question every request for a new label.** Does every scenario or use case really need a new label or can you use what you already have? Keeping the number of labels to a minimum improves adoption.
    - **Use sub-labels for key departments.** Some departments will have specific needs that require specific labels. Define these labels as sub-labels to an existing label and consider using scoped policies that are assigned to user groups instead of globally.
@@ -123,7 +124,7 @@ Complete the following activities prior to implementing any of the sensitivity l
 
 #### Example sensitivity label scheme
 
-An example sensitivity-labelling scheme is provided here for reference. Yours may vary, but consider this table a good starting point. The sensitivity labels for sites type have a "_site" suffix appended to them to differentiate them from content-targeted labels.
+An example sensitivity-labelling scheme is provided here for reference as a good starting point. The sensitivity labels for sites type have a "_site" suffix appended to them to differentiate them from content-targeted labels.
 
 | Type/target | Sensitivity label | Sub-label | Example settings |
 |:-------|:-----|:-------|:-------|
@@ -147,7 +148,7 @@ When you create [sensitivity labels](../compliance/sensitivity-labels-teams-grou
 
 - Microsoft Teams sites
 - Microsoft 365 groups (formerly Office 365 groups)
-- SharePoint Online sites
+- SharePoint sites
 
 Use the following label settings to help protect the content in those containers:
 
@@ -204,118 +205,120 @@ For configuration instructions, see [How to configure auto-labeling policies for
 For data privacy, for sites of concern, push sensitivity labels for automatic encryption of content containing sensitive personal information.
 
 ## Data loss prevention 
-<!-- DLP helps to prevent inadvertent inappropriate sharing, both internally and externally -->
-[Data loss prevention (DLP)](../compliance/data-loss-prevention-policies.md) in Microsoft 365 can be used as a measure to detect, warn, and block risky sharing activities such as sharing of data containing personal information with an external user.
 
-In summary, DLP allows you to:
+You can use [data loss prevention (DLP)](../compliance/data-loss-prevention-policies.md) in Microsoft 365 to detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally.
 
-- Identify and monitor risky sharing activities
-- Educate users with in-context guidance to make the right decisions
-- Enforce data use policies upon content without inhibiting productivity
-- Integrate with classification & labeling to detect and protect data at egress
+DLP allows you to:
+
+- Identify and monitor risky sharing activities.
+- Educate users with in-context guidance to make the right decisions.
+- Enforce data use policies upon content without inhibiting productivity.
+- Integrate with classification and labeling to detect and protect data when it is shared.
 
 ### Supported workloads for DLP
-<!-- DLP is in the compliance center.  The feature content is moving away from using these terms "sensitive information, sensitive data, sensitive content as they are too easily confused with 'sensitive information types' and 'sensitivity labels'.  The term I (and Brendon for UX string work) am using is 'sensitive items' -->
-With a DLP policy in the Microsoft 365 Security & Compliance Center, you can identify, monitor, and automatically protect sensitive information across many locations in Microsoft 365, such as Exchange Online, SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
-For example, you can identify any document containing a credit card number that's stored in any OneDrive for Business site, or you can monitor just the OneDrive sites of specific people.
+With a DLP policy in the Microsoft 365 compliance center, you can identify, monitor, and automatically protect sensitive items across many locations in Microsoft 365, such as Exchange Online, SharePoint, OneDrive, and Microsoft Teams.
 
-You can also monitor and protect sensitive information in the desktop versions of Excel, PowerPoint, and Word. These Office desktop programs include the ability to identify sensitive information and apply DLP policies. DLP provides continuous monitoring when people share content in these Office programs.
+For example, you can identify any document containing a credit card number that's stored in any OneDrive site, or you can monitor just the OneDrive sites of specific people.
+
+You can also monitor and protect sensitive items in the locally-installed versions of Excel, PowerPoint, and Word, which include the ability to identify sensitive items and apply DLP policies. DLP provides continuous monitoring when people share content from these Office apps.
 
 ![Supported workloads for DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
-### Example of protecting personal data using DLP
-<!-- who is being quoted ("policy tips") in the the below paragraph?  -->
-In the use case shown in the diagram below, DLP is used to identify a document or email containing a health record and then automatically blocks access to that document (or blocks the email from being sent) and notifies the recipient with “policy tips”; and an alert is sent to the end-user and admin.
+This figure shows an example of DLP protecting personal data.
 
 ![Example of protecting personal data using DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
- 
-### Prerequisites for DLP – Planning your DLP scheme relative to other information protection and governance mechanisms in place
 
-Your DLP scheme needs to be carefully plotted out based on: 
+DLP is used to identify a document or email containing a health record and then automatically blocks access to that document (or blocks the email from being sent). DLP then notifies the recipient with a policy tips and an alert is sent to the end-user and admin.
 
-- Business requirements
-- A risk-based assessment of the organization as highlighted in the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md)
-- Other information protection and governance mechanisms in place or in planning for data privacy (or other) concerns. A few additional considerations to take into account in this sort of planning are highlighted below.
+### Planning for DLP
 
-**Sensitive information types.** First in line will be what you’ve identified as “sensitive data” per your assessment work as outlined in the [assess data privacy risks and identify sensitive information article](information-protection-deploy-assess.md). DLP policy conditions can currently be predicated on both sensitive information types and retention labels, and Microsoft plans to provide the ability to add Sensitivity Labels as a condition in the future as well.
+Plan your DLP policies for: 
 
-**Sensitivity Labels.** Although they can’t be used in DLP policy conditions, certain protection scenarios may be achievable through sensitivity labels alone, since they too can be auto-applied based on sensitive information types and prevent access per Sensitivity Label settings for a given label. If a robust sensitivity labelling scheme is in place (or planned), here’s where DLP should be considered as an augmentative protection mechanism:
+- Your business requirements.
 
-- DLP can prevent sharing of files vs. sensitivity labels, which can just prevent access, though email with a “do not forward” will block an email send, just like a DLP policy applied to the email would, assuming it was configured with an equivalent rule (this may change in the future with Unified DLP, which moves away from using mail flow rules. <!-- i think you meant Exchange Transport Rules. Anyway, this is the old naming convention. Don't use this. Use mail flow rules instead. All lower case, never use the acronym. -->
-- DLP has more granular levels of control in terms of rules, conditions, and actions.
-- DLP policies can be applied to Teams chat and channel messages whereas sensitivity labels cannot because they’re applied to documents and email.
+- A risk-based assessment of the organization as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md).
 
-**Retention labels.** If you plan on specifying DLP conditions based on retention labels, your labelling scheme will need to be well-planned and stable enough to base any concerted DLP policy application dependent on them to be effective. Refer to the article 6. Govern information subject to data privacy regulation in your organization - Retention labels for more information on planning out this capability.
+- Other information protection and governance mechanisms in place or in planning for data privacy.
 
-**Management and maintenance.** DLP policies require concerted planning, management, and response, requiring someone in the organization to operate and tune the capability, so make sure the DLP scheme you have in mind provides required, augmentative functionality relative to other methods available to you, including sensitivity labelling and other forms of information protection, including that available with Microsoft Cloud Application Security (MCAS).
+- The sensitive information types that you’ve identified for personal data based on your assessment work as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md). DLP policy conditions can be based on both sensitive information types and retention labels.
 
-### DLP Policies
-<!-- sensitive information type or retention label, the diagram is misleading when it says "You can use sensitive information types and/or LABELS with your DLP policies" it should be specific and say 'retention labels' -->
-DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, sensitive information type (SIT) the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of documents.
+- The retention labels you'll need to specify DLP conditions. See the [govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md) article for more information.
+
+- Ongoing DLP policy management, which requires someone in the organization to operate and tune policies for sensitivity labelling and other forms of information protection.
+
+Although sensitivity labels can’t be used in DLP policy conditions, certain protection scenarios may be achievable with just sensitivity labels that can be auto-applied based on sensitive information types and prevent access. 
+
+If robust sensitivity labelling is in place, consider whether DLP should be used to augment protection because:
+
+  - DLP can prevent sharing of files. Sensitivity labels can just prevent access.
+
+  - DLP has more granular levels of control in terms of rules, conditions, and actions.
+
+  - DLP policies can be applied to Teams chat and channel messages. Sensitivity labels can only be applied to documents and email.
+
+
+### DLP policies
+
+DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of documents.
 
 ![DLP policy configuration in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-### Example policy
-<!-- I like the below graphic and may re-use it in core content -->
 Here is an example DLP policy for awareness of GDPR.
 
 ![Example DLP policy for awareness of GDPR](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-Refer to the detailed documentation for more information on creating and applying DLP policies. As noted previously, Microsoft plans to allow sensitivity labels as a condition parameter in the future.
+See [this article](../compliance/create-test-tune-dlp-policy.md) for more information on creating and applying DLP policies.
 
 ### Protection levels for data privacy
 
-The following table lists three configurations of increasing protection using DLP. The first configuration, “Awareness”, can be used as a starting point and minimum level of protection to address compliance needs like those related to data privacy regulations.
+The following table lists three configurations of increasing protection using DLP.
 
 ![Protection levels for data privacy](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
+The first configuration, Awareness, can be used as a starting point and minimum level of protection to address compliance needs such as those related to data privacy regulations.
+
 >[!Note]
->As the levels of protection increase, the ability of users to share and access information will decrease in some cases and could potentially impact their productivity or ability to complete day to day tasks.
+>As the levels of protection increase, the ability of users to share and access information will decrease in some cases and could potentially impact their productivity or ability to complete daily tasks.
 >
 
-Increasing protection levels by implementing policies that impact employees is typically accompanied by end user training, educating users on new security policies and procedures to help them continue to be productive in a more secure environment.
+To help your employees continue to be productive in a more secure environment when increasing protection levels, take the time for training and educating them on new security policies and procedures.
 
-### Sensitivity labels and DLP
-<!-- This section is ineffective at communicating intent. I am not sure what its intent is. What is the point of this? Why is it even here? There are no labeled sections that correspond to the first 4 key steps. I can only guess as to the overall flow of the diagram as well as only guessing what differentiates the "5" sections from each other visually. I strongly recommend dropping the ### Sensitivity labels and DLP section entirely until the need for it is clearly identified, its intent simply stated and it communicates clearly.-->
-The following figure shows the various types of sensitivity labels working together with DLP to protect data privacy in a highly regulated environment.
+### Example of using sensitivity labels with DLP
 
-![Sensitivity labels working with DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
-
-The key steps are:
+Sensitivity labels can work together with DLP to provide data privacy in a highly regulated environment. Here are the key steps of the integrated deployment:
 
 1. Regulatory and otherwise business requirements for data privacy are documented.
-2. Target data sources, types and ownership are characterized relative to data privacy concerns.
-3. An overall strategy to address requirements and protect/govern data privacy “hotspots” is established.
+2. Target data sources, types, and ownership are characterized relative to data privacy concerns.
+3. An overall strategy to address requirements and protect and govern data privacy hotspots is established.
 4. A phased action plan to address the data privacy control strategy is put into place.
 
-Here are some example protection scenarios using integrated protection with Step 5:
+Once these elements are in place, you can use sensitive information types, your sensitivity labelling taxonomy, and DLP policies together. This figure shows an example.
 
-Step 5A:
+![Example of sensitivity labels working with DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-- Sensitivity labels for content are published by an administrator to users and groups for manual or automatic application to content and email.
-- User A applies the labels manually or automatically when interacting with content, with encryption or other settings applied.
-- User A sends a protected email or file to user B, a guest user.
+<!--
 
-Step 5B:
+[See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
-- DLP policy published by an administrator to User A blocks user A from sending the email and/or file to user B.
+-->
+Here are some data protection scenarios using DLP and sensitivity labels together.
 
-Step 5C:
+| Scenario | Process |
+|:-------|:-----|
+| A | 1. Sensitivity labels for content are published by an administrator to users and groups for manual or automatic application to content and email. <br> 2. User A applies the labels manually or automatically when interacting with content, with encryption or other settings applied. <br> 3. User A sends a protected email or file to User B, a guest user. |
+| B | DLP policy published by an administrator to User A blocks User A from sending the email and/or file to User B. |
+| C |  Sensitivity label with “owner can’t invite guests” setting is published to User A, who provisions a Teams team or SharePoint site. Another user of the site selectively tries sharing a file with User B, but DLP blocks it. |
+| D | Sensitivity label for auto-application to site content is published to one or more sites, providing another layer of protection, resulting in a protected site. |
+|||
 
-- Sensitivity label with “owner can’t invite guests” setting is published to User A, who provisions a Team environment or SharePoint site. Another user of the site selectively tries sharing a file to user B, but DLP blocks it.
+## Office 365 Message Encryption (OME) new capabilities
 
-Step 5D:
-
-- Sensitivity label for auto-application to site content is published to one or more sites, providing another layer of protection, resulting in the example protected site shown in the graphic.
-
-## Office 365 Message Encryption new capabilities (OME)
-
-People often use email to exchange sensitive information, such as patient health information or customer and employee information. Email message encryption helps ensure that only intended recipients can view message content.<!-- OME wasn't created to deal with mailboxes that have become bloated with sensitive information. OME is intended as a tool to help manage encryption for data in transit. The second sentence was irrelevant here. Fixing the source doc too. --> 
+People often use email to exchange sensitive items, such as patient health information or customer and employee information. Email message encryption helps ensure that only intended recipients can view message content.
 
 With [OME](../compliance/ome.md), you can send and receive encrypted messages between people inside and outside your organization. OME works with Outlook.com, Yahoo!, Gmail, and other email services. OME helps ensure that only intended recipients can view message content.
 
-For data privacy, you use OME to protect internal messages containing sensitive information. Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the Do Not Forward option, and the encrypt-only option.
+For data privacy, you use OME to protect internal messages containing sensitive items. Office 365 Message Encryption is an online service that's built on Microsoft Azure Rights Management (Azure RMS) which is part of Azure Information Protection. This includes encryption, identity, and authorization policies to help secure your email. You can encrypt messages by using rights management templates, the Do Not Forward option, and the encrypt-only option.
 
 You can also define mail flow rules to apply this protection. For example, you can create a rule that requires the encryption of all messages addressed to a specific recipient, or that contains specific keywords words in the subject line, and also specify that recipients can't copy or print the contents of the message.
 
@@ -332,10 +335,10 @@ OME and sensitivity labels applied to email (with encryption) have some overlap,
 | Internal + partners <br> Securely communicate and collaborate between internal users and trusted partners | Recommend – labels with fully customized classification and protection | Yes – Encrypt only or Do Not Forward protection with no classification |
 | External parties <br> Securely communicate and collaborate with any external/consumer users | Yes – predefine recipients in label | Recommend – just-in-time protection based on recipients |
 | Internal + partners, with expiration/revocation <br> Control access of mail and content with internal users and trusted partners with expiration and revocation | Recommend - fully customized protection with access duration, user can manually track and revoke files | No – no revocation or expiration for internal mail |
-| External parties with expiration/revocation <br> Control access of mail and content with external/consumer users with expiration and revocation | Yes – user can manually track and revoke files | Recommend (E5) – admin can revoke mail from Security & Compliance Center <!-- what's the asterisk for? Also, end user message revocation is not yet shipped. Confirm this with Samson Chan. DO NOT ship as is.-->|
-| Auto-labelling <br> Organization wants to automatically protect mail/attachments with specific sensitive content and/or specific recipients | Recommend (E5) - Auto-labeling in Exchange and Outlook clients<!-- which ones? saying this suggests all mobile clients, desktop and on the web. I don't think we're supposed to just say clients. Also don't say Exchange service. Say just Exchange. -->, augments mail flow rules and DLP policy | Yes - mail flow rules and DLP policy with Encrypt only or Do Not Forward protection |
+| External parties with expiration/revocation <br> Control access of mail and content with external/consumer users with expiration and revocation | Yes – user can manually track files | Recommend (E5) – admin can revoke mail from Security & Compliance Center |
+| Auto-labelling <br> Organization wants to automatically protect mail/attachments with specific sensitive content and/or specific recipients | Recommend (E5) - Auto-labeling in Exchange and Outlook clients, augments mail flow rules and DLP policy | Yes - mail flow rules and DLP policy with Encrypt only or Do Not Forward protection |
 ||||
-<!-- Do not use ETR if you mean mail flow rule -->
+
 There will also be differences in end-user and admin experiences between these two methods.
 
 ## Teams with protection for highly sensitive data

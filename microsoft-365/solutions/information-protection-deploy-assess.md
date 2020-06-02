@@ -1,5 +1,5 @@
 ---
-title: "Assess data privacy risks and identify sensitive information with Microsoft 365"
+title: "Assess data privacy risks and identify sensitive items with Microsoft 365"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -18,7 +18,7 @@ ms.custom:
 description: Configure the security and service infrastructure that allows your information to be protected from malicious users.
 ---
 
-# Assess data privacy risks and identify sensitive information with Microsoft 365
+# Assess data privacy risks and identify sensitive items with Microsoft 365
 
 Assessing the data privacy regulations and risks that your organization is subject to is a key first step before implementing any related improvement actions, including those achievable through your Microsoft 365 configuration. 
 
@@ -108,7 +108,7 @@ As a starting point, it is important to inventory what types of personal data ex
 ***** Is this diagram necessary? Can it be redone?
 --> 
 
-Each of these is shown here, with examples of typical departments.
+Here is an example with typical departments.
 
 ![Types of personal data](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
@@ -183,21 +183,21 @@ GDPR assessment consists of these sections:
  
 ## Step 3: Identify sensitive information types that occur in your Microsoft 365 environment. 
 
-This step involves identification of particular "Sensitive Information Types" that are subject to specific regulatory controls your organization needs to comply with, as well as the occurrence of them in your Microsoft 365 environment. 
+This step involves identification of particular sensitive information types that are subject to specific regulatory controls your organization needs to comply with, as well as the occurrence of them in your Microsoft 365 environment. 
 
 First, finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, Advanced eDiscovery DLP and auditing. 
 
-With the new **Data Classification** solution in the Microsoft Compliance admin center, this has become much easier with the [Content Explorer](../compliance/data-classification-content-explorer.md) capability, which works with either out of the box (OOTB) or custom sensitive information types (SITs), including those related to personal data.
+With the new **Data Classification** solution in the Microsoft Compliance admin center, this has become much easier with the [Content Explorer](../compliance/data-classification-content-explorer.md) capability, which works with either built-in or custom sensitive information types, including those related to personal data.
  
 ### Sensitive information types
 
-The Microsoft Compliance admin center comes pre-loaded with over 100 SITs, most of them related to identifying and locating personal data. These built-in SITs can help identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. To learn more, see [What the sensitive information types look for](../compliance/what-the-sensitive-information-types-look-for.md).
+The Microsoft Compliance admin center comes pre-loaded with over 100 sensitive information types, most of them related to identifying and locating personal data. These built-in sensitive information types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. To learn more, see [What the sensitive information types look for](../compliance/what-the-sensitive-information-types-look-for.md).
 
-In addition to the built-in SITs, you can also create custom info types with three methods: PowerShell, custom rules with exact data match (EDM), and through the Compliance Center admin UI, as highlighted in the [Use Compliance Score and Compliance Manager article](information-protection-deploy-compliance.md. You can also customize an existing, built-in SIT.
+In addition to the built-in sensitive information types, you can also create custom info types with three methods: PowerShell, custom rules with exact data match (EDM), and through the Compliance Center admin UI, as highlighted in the [Use Compliance Score and Compliance Manager article](information-protection-deploy-compliance.md. You can also customize an existing, built-in SIT.
  
-### Custom SITs
+### Custom sensitive information types
 
-As described in this article, Microsoft 365 includes many built-in SITs related to personal identifiable information (PII) that are ready for you to use in your organization. If you need to identify and protect an organization-specific or regional type of sensitive information, such as a custom format for employee IDs, or other personal information not already covered by a built-in SIT, you can create a custom sensitive information type or modify an existing, built-in type. 
+As described in this article, Microsoft 365 includes many built-in sensitive information types related to personal identifiable information (PII) that are ready for you to use in your organization. If you need to identify and protect an organization-specific or regional type of sensitive items, such as a custom format for employee IDs, or other personal information not already covered by a built-in SIT, you can create a custom sensitive information type or modify an existing, built-in type. 
 
 See these articles for more information:
 
@@ -209,11 +209,11 @@ See these articles for more information:
 
 ### Content Explorer
 
-An important tool that for determining the occurrence of sensitive information in your environment is the new [Content Explorer](../compliance/data-classification-content-explorer.md) in the Microsoft 365 Compliance admin center. It's an automated tool for initial as well as ongoing scanning of your entire Microsoft 365 subscription for the occurrence of SITs and presents the results in the Content Explorer tool.
+An important tool that for determining the occurrence of sensitive items in your environment is the new [Content Explorer](../compliance/data-classification-content-explorer.md) in the Microsoft 365 Compliance admin center. It's an automated tool for initial as well as ongoing scanning of your entire Microsoft 365 subscription for the occurrence of sensitive information types and presents the results in the Content Explorer tool.
  
-The new Content Explorer tool allows you to quickly identify the locations of sensitive information in your environment, using either OOTB SITs or custom ones. This may involve establishing a process and assigned responsibility to regularly investigate the presence and location of sensitive information.
+The new Content Explorer tool allows you to quickly identify the locations of sensitive items in your environment, using either built-in sensitive information types or custom ones. This may involve establishing a process and assigned responsibility to regularly investigate the presence and location of sensitive items.
 
-Along with the other steps highlighted in this article, this provides a starting point for identifying your overall risk exposure, readiness, and location of sensitive information to protect through planned Microsoft 365 configuration and monitoring, which are described in more detail in subsequent articles. 
+Along with the other steps highlighted in this article, this provides a starting point for identifying your overall risk exposure, readiness, and location of sensitive items to protect through planned Microsoft 365 configuration and monitoring, which are described in more detail in subsequent articles. 
 
 ### Other methods to identify personal data in your environment
 

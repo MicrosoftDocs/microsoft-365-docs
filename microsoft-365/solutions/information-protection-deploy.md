@@ -17,10 +17,10 @@ ms.collection:
 ms.custom: 
 description: Configure the security and service infrastructure that allows your information to be protected from malicious users.
 ---
-<!-- all core DLP and sensitive information type content and UX is moving away from the terms "sensitive information, sensitive data, sensitive content" in favor of "sensitive items" to minimize confusion with "sensitive information type"-->
+
 # Deploy information protection for data privacy regulations with Microsoft 365
 
-This solution provides guidance on how to plan for and protect sensitive personal data that is stored in Microsoft 365 services and potentially subject to data privacy regulations such as the European Union's General Data Protection Regulation (GDPR). This solution focuses on applicable Microsoft Information Protection & Governance solutions, Microsoft Compliance Score, and assessment tooling to help you know your data. 
+This solution provides guidance on how to plan for and protect personal data that is stored in Microsoft 365 services and potentially subject to data privacy regulations such as the European Union's General Data Protection Regulation (GDPR). This solution focuses on applicable Microsoft Information Protection & Governance solutions, Microsoft Compliance Score, and assessment tooling to help you know your data. 
  
 Additional information is also provided on the use of Microsoft identity, device, and threat protection controls applied to data privacy needs, as well as Microsoft discovery and response tools. 
 
@@ -46,11 +46,11 @@ More detailed descriptions of each of these elements correspond to a separate ar
 >Following this guidance will not necessarily make you compliant with any data privacy regulation, especially considering the number of steps required that are outside the context of the technology. As such, organizations are responsible for ensuring their own compliance and are advised to consult their legal and compliance teams or to seek guidance and advice from third parties that specialize in compliance.
 >
 
-## Plan: Assess data privacy risks and identify sensitive information 
+## Plan: Assess data privacy risks and identify sensitive items 
 
 Assessing data privacy regulations and risks that your organization is subject to is a key first step to take before starting to implement any related improvement actions, including those achievable through Microsoft 365 configuration. This may include an overall readiness assessment or identification of particular sensitive information types that are subject to specific regulatory controls your organization needs to comply with, as well as the occurrence of them in your Microsoft 365 environment.
 
-For more information, see [Assess data privacy risks and identify sensitive information](information-protection-deploy-assess.md).
+For more information, see [Assess data privacy risks and identify sensitive items](information-protection-deploy-assess.md).
 
 ## Track: Use Compliance Score and Compliance Manager 
 
