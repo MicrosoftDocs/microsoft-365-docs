@@ -1,6 +1,6 @@
 ---
 title: Get relevant info about an entity with go hunt 
-description: Learn how to use the "go hunt" tool on Microsoft Threat Protection to quickly query for relevant information in advanced hunting.
+description: Learn how to use the "go hunt" tool on Microsoft Threat Protection to quickly query for relevant information about an entity in advanced hunting.
 keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,10 +19,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Quickly hunt for relevant information while investigating an incident
+# Quickly hunt for entity information while investigating an incident
 
 **Applies to:**
 - Microsoft Threat Protection
+
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 The [incident page](investigate-incidents.md#incident-overview) in Microsoft Threat Protection enables you to quickly review details about users, devices, and many other entities associated with an incident. As you select an entity, Microsoft Threat Protection displays additional information as well as actions you could take on that entitity.
 
@@ -65,3 +67,4 @@ You can use the go hunt action after selecting any of these entity types:
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
+- [Custom detection rules](custom-detection-rules.md)
