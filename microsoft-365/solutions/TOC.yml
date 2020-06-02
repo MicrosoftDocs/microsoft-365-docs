@@ -70,8 +70,9 @@
     - name: Deploy threat protection across Microsoft 365
       href: deploy-threat-protection.md
     - name: Deploy information protection for data privacy regulations
-      href: information-protection-deploy.md
       items:
+      - name: Overview
+        href: information-protection-deploy.md
       - name: Plan
         href: information-protection-deploy-assess.md
       - name: Track
@@ -84,7 +85,6 @@
         href: information-protection-deploy-govern.md
       - name: Investigate
         href: information-protection-deploy-monitor-respond.md
-    
 - name: Workload solutions and scenarios
   items: 
     - name: Overview

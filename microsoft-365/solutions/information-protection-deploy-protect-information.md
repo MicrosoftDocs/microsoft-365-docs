@@ -306,7 +306,7 @@ Here are some data protection scenarios using DLP and sensitivity labels togethe
 
 | Scenario | Process |
 |:-------|:-----|
-| A | 1. Sensitivity labels for content are published by an administrator to users and groups for manual or automatic application to content and email. <br> 2. User A applies the labels manually or automatically when interacting with content, with encryption or other settings applied. <br> 3. User A sends a protected email or file to User B, a guest user. |
+| A | <ol><li>Sensitivity labels for content are published by an administrator to users and groups for manual or automatic application to content and email. </li><li>User A applies the labels manually or automatically when interacting with content, with encryption or other settings applied. </li><li>User A sends a protected email or file to User B, a guest user. </li></ol> |
 | B | DLP policy published by an administrator to User A blocks User A from sending the email and/or file to User B. |
 | C |  Sensitivity label with “owner can’t invite guests” setting is published to User A, who provisions a Teams team or SharePoint site. Another user of the site selectively tries sharing a file with User B, but DLP blocks it. |
 | D | Sensitivity label for auto-application to site content is published to one or more sites, providing another layer of protection, resulting in a protected site. |
