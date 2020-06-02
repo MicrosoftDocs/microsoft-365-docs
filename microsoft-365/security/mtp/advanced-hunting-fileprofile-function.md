@@ -26,7 +26,7 @@ ms.topic: article
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data about files found by a query.
+The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data to files found by a query.
 
 | Column | Data type | Description |
 |------------|-------------|-------------|
@@ -55,32 +55,32 @@ invoke FileProfile(x,y)
 
 ## Arguments
 
-- **x** — file ID column to use, either `SHA` or `SHA1`
-- **y** — result limit, 1-1000
+- **x** — file ID column to use, either `SHA1` or `SHA256`; function uses `SHA1` if unspecified
+- **y** — result limit, 1-1000; function uses 100 if unspecified
 
 ## Examples
 
 ### Project only the SHA1 column and enrich it
 
-    ```kusto
-    DeviceFileEvents 
-    | where isnotempty(SHA1) and Timestamp > ago(1d) 
-    | take 10 
-    | project SHA1 
-    | invoke FileProfile() 
-    ```
+```kusto
+DeviceFileEvents 
+| where isnotempty(SHA1) and Timestamp > ago(1d) 
+ take 10 
+| project SHA1 
+| invoke FileProfile() 
+```
 
 ### Enrich the first 500 records and list low-prevalence files
 
-    ```kusto
-    DeviceFileEvents
-    | where ActionType == "FileCreated" and Timestamp > ago(1d)
-    | project CreatedOn = Timestamp, FileName, FolderPath, SHA1
-    | invoke FileProfile(“SHA1”, 500) 
-    | where GlobalPrevalence < 15
-    ```
+```kusto
+DeviceFileEvents
+| where ActionType == "FileCreated" and Timestamp > ago(1d)
+| project CreatedOn = Timestamp, FileName, FolderPath, SHA1
+| invoke FileProfile(“SHA1”, 500) 
+| where GlobalPrevalence < 15
+```
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
-- [Understand the schema](advanced-hunting-schema-tables.md)x
+- [Understand the schema](advanced-hunting-schema-tables.md)
