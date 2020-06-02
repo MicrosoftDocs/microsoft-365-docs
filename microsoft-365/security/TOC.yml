@@ -180,6 +180,10 @@
                       href: mtp/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
+                - name: Functions
+                  items: 
+                    - name: FileProfile()
+                      href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Custom detections
