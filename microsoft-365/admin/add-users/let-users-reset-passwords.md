@@ -50,7 +50,7 @@ These steps turn on self-service password reset for everyone in your business.
   
 ::: moniker range="o365-worldwide"
 
-1. In the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), go to the **Settings** > **Org settings** page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>, go to the **Settings** > **Org settings** page.
 
 ::: moniker-end
 
