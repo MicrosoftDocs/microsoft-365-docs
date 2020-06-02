@@ -130,6 +130,8 @@
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
                   href: mtp/advanced-hunting-query-emails-devices.md
+                - name: Go hunt
+                  href: mtp/advanced-hunting-go-hunt.md
                 - name: Data schema
                   items: 
                     - name: Understand the schema
