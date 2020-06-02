@@ -31,6 +31,8 @@ description: "To protect company data on users' personal devices, use policies t
 
 # How policies in Microsoft 365 for business protect company data
 
+This article applies to Microsoft 365 Business Premium.
+
 The policies that you create are specific to the device type and can be applied to specific groups of users. This means that you could create one policy that applies to your executives, and another that applies to everyone else.
   
 For Android and iOS devices, you can add or edit application policies that protect Office apps and work files used by Office apps. We're able to control Windows 10 devices a bit more, so application policies can include more settings, like encryption and protection for network and cloud locations. You can also create device policies for Windows 10 devices that enforce settings like virus protection and automatic updates. We recommend that you stick with the policies created during setup, but if you'd like to fine-tune your policies or add more, see these articles:

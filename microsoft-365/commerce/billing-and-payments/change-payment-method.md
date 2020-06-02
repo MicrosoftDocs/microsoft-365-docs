@@ -198,12 +198,6 @@ You can use the following steps at any time to verify the payment method that's 
 
 2. Find the subscription that you want to verify. The payment method that's configured for the subscription appears in the **Billing** section.
 
-### Use the old admin center to verify which payment method is configured
-
-1. In the admin center, go to the **Billing**\> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
-
-2. Find the subscription that you want to verify. The payment method that's configured for the subscription appears under **Payment method**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
