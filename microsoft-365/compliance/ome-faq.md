@@ -22,7 +22,7 @@ Have a question about how the new message protection capabilities work? Check fo
 
 ## What is Office 365 Message Encryption (OME)?
 
-OME combines email encryption and rights management capabilities. Rights management capabilities are powered by Azure Information Protection. This is a new sentence.
+OME combines email encryption and rights management capabilities. Rights management capabilities are powered by Azure Information Protection.
 
 ## Who can use OME?
 
