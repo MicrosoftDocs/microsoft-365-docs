@@ -24,6 +24,8 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
+
 The `FileProfile()` function is an enrichment function in [advanced hunting](advanced-hunting-overview.md) that adds the following data about files found by a query.
 
 | Column | Data type | Description |
