@@ -172,6 +172,8 @@
                       href: mtp/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: IdentityInfo
