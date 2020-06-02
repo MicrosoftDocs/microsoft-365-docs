@@ -22,7 +22,9 @@ search.appverid:
 ms.assetid: 0199dd39-7c46-4875-af9b-588df3a9afea
 ROBOTS: NOINDEX
 description: "Learn how to redeem an Microsoft 365 Business Standard product key purchased at a retail store." 
-ms.custom: okr_SMB
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 ---
 
 # Enter your product key for Microsoft 365 Business Standard

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "microsoft-365/commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/manage-payment-methods",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "microsoft-365/commerce/billing-and-payments/apply-for-tax-exempt-status.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/commerce/billing-and-payments/tax-information#apply-for-tax-exempt-status",
       "redirect_document_id": true
@@ -766,6 +771,11 @@
     {
       "source_path": "microsoft-365/compliance/gdpr-breach-Dynamics365.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr-breach-azure-dynamics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/compliance/search-the-audit-log.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance",
       "redirect_document_id": true
     }
   ]

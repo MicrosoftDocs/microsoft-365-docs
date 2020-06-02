@@ -287,7 +287,7 @@
                   items: 
                     - name: Configure outbound spam filtering
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: High-risk delivery pool for outbound messages
+                    - name: Outbound delivery pools
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Remove blocked users from the Restricted Users portal
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md

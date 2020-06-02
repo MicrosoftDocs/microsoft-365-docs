@@ -19,6 +19,7 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,9 +27,9 @@ ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: "Learn how to enable Microsoft 365 to protect local Active-Directory-joined Windows 10 devices in just a few steps."
 ---
 
-# Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business
+# Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium
 
-If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 for business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
+If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
 To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
 
 This video describes the steps for how to set this up for the most common scenario, which is also detailed in the steps that follow.

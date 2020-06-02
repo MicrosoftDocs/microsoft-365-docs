@@ -21,6 +21,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -30,6 +31,8 @@ description: "Learn about default configuration and adding application managemen
 ---
 
 # Protect work files on devices
+
+This article applies to Microsoft 365 Business Premium.
 
 In today's world, users are tied to their devices, and as personal and work life collide, your company data can end up on an employee's personal device. The settings that you configure here can help you take back control and provide protection for work files, without affecting any of the user's personal settings or data.
   

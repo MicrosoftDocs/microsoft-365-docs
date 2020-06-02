@@ -21,6 +21,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -29,6 +30,8 @@ description: "Learn the steps to easily add new users, secure their devices, and
 ---
 
 # Add more users
+
+This article applies to Microsoft 365 Business Premium.
 
 ## Add new users
 

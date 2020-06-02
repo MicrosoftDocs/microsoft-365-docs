@@ -233,6 +233,9 @@ Click **Next**.
 <br>![Image of_Save preferences button that you need to click](../../media/mtp-eval-72.png) <br>
 
 ## Turn on Microsoft Threat Protection
+>[!NOTE]
+>Starting June 1, 2020, Microsoft automatically enables Microsoft Threat Protection features for all eligible tenants. See this [Microsoft Tech Community article on license eligibility](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/microsoft-threat-protection-will-automatically-turn-on-for/ba-p/1345426) for details. 
+<br>
 1. Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigate to **Settings** and then select **Microsoft Threat Protection**.
 <br>![Image of_Microsoft Threat Protection option screenshot from the Microsoft 365 Security Center Settings page ](../../media/mtp-eval-72b.png) <br>
 
