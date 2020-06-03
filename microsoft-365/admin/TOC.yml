@@ -26,6 +26,10 @@
           href: setup/migrate-email-and-contacts-admin.md
         - name: Install Office apps
           href: setup/install-applications.md
+        - name: Set up mobile devices
+          href: ../business/set-up-windows-devices.md
+        - name: Set up mobile devices
+          href: ../business/set-up-mobile-devices.md
         - name: Roll out Teams
           href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
         - name: App training for everyone
