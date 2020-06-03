@@ -120,7 +120,7 @@ The global admin for your organization has full permissions to create and manage
 
 ### Use PowerShell to enable support for sensitivity labels
 
-As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet from SharePoint Online PowerShell or the [Set-PnPTenant](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenant?view=sharepoint-ps) cmdlet passing in the EnableAIPIntegration parameter from PnP PowerShell. 
+As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet from SharePoint Online PowerShell or the [Set-PnPTenant](https://docs.microsoft.com/powershell/module/sharepoint-pnp/set-pnptenant?view=sharepoint-ps) cmdlet passing in the _EnableAIPIntegration_ parameter from PnP PowerShell. 
 
 If you have Microsoft 365 Multi-Geo, you must use PowerShell to enable this support for all your geo-locations.
 
