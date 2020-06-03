@@ -49,9 +49,7 @@ Go to portal.azure.com and on the top of the page search for Intune.
 On the Microsoft Intune page, select **Device enrollment** and on the **Overview** page make sure **MDM authority** is **Intune**.
 
 - If **MDM authority** is **None**, click the **MDM authority** to set it to **Intune**.
-- If **MDM authority** is **Microsoft Office 365**, use the Add MDM authority dialog on the right to add Intune MDM authority.
-
-REVIEWERS: I AM NOT SEEING AN Add MDM Authority DIALOG.
+- If **MDM authority** is **Microsoft Office 365**,go to **Devices** > **Enroll devices** and use the **Add MDM authority** dialog on the right to add **Intune MDM** authority (the **Add MDM Authority** dialog is only available if the **MDM Authority** is set to Microsoft Office 365).
 
 ## 2. Verify Azure AD is enabled for joining computers
 
@@ -63,9 +61,9 @@ REVIEWERS: I AM NOT SEEING AN Add MDM Authority DIALOG.
         - Add the desired domain users synced in Azure AD to a [security group](../admin/create-groups/create-groups.md).
         - Choose **Select groups** to enable MDM user scope for that security group.
 
-## 3. Verify Azure AD is enabled for joining computers
+## 3. Verify Azure AD is enabled for MDM
 
-- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select select **Endpoint Managemen**t (select **Show all** if **Endpoint Management** is not visible)
+- Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  and select select **Endpoint Managemen**t (select **Show all** if **Endpoint Manager** is not visible)
 - In the **Microsoft Endpoint Manager admin center**, go to **Devices** > **Windows** > **Windows Enrollment** > **Automatic Enrollment**.
 - Verify MDM user scope is enabled.
 
