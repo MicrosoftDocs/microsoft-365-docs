@@ -25,25 +25,29 @@ description: "Learn about the compliance solutions that can be applied to the th
 
 One primary benefit of using data connectors to import and archive third-party data in Microsoft 365 is that you can apply various Microsoft 365 compliance solutions to that after it's been imported. This helps you ensure that your organization's non-Microsoft data is in compliance with the regulations and standards that affect your organization.
 
-The following table summarizes the Microsoft 365 compliance solutions that are benefited by each of the data connectors.
+The following table summarizes the compliance solutions that you can apply to the third-party data that you import and archive in Microsoft 365. See the next section for a more detailed description of each compliance solution and how it can benefit third-party data.
 
 > [!TIP]
 > Click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
 
-|Third-party data  |eDiscovery  |Retention policies  |Records management  |Communication compliance  |Insider risk management  |
-|:---------|:---------|:---------|:---------|:---------|:---------|
-|[Facebook](archive-facebook-data-with-sample-connector.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|[LinkedIn](archive-linkedin-data.md)   |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
-|[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|Third-party data  |Litigation hold|eDiscovery  |Retention policies  |Records management  |Communication compliance  |Insider risk management  |
+|:---------|:---------|:---------|:---------|:---------|:---------|:---------|
+|[Facebook](archive-facebook-data-with-sample-connector.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Twitter](archive-twitter-data-with-sample-connector.md)     |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[LinkedIn](archive-linkedin-data.md)   |![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[HR data](import-hr-data.md) |||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|||||||
+||||||||
 
-The third-party data listed in the previous table (except for HR data) is imported into user mailboxes. The corresponding compliance solutions that support that data type are applied to the mailbox where the data is stored.
+The third-party data listed in the previous table (except for HR data) is imported into user mailboxes. The corresponding compliance solutions that support third-party data are applied to the user mailbox where the data is stored.
 
 ## Overview of compliance solutions that support third-party data
 
-The following sections describe some of the things that the Microsoft 365 compliance solutions can help you to manage the compliance of the third-party data listed in the previous table.
+The following sections describe some of the things that the Microsoft 365 compliance solutions can help you to manage the third-party data listed in the previous table.
+
+### Litigation hold
+
+You place a [Litigation hold](create-a-litigation-hold.md) on a user mailbox to retain third-party data. When you create a hold, you can specify a hold duration (also called a *time-based hold*) so that deleted and modified third-party data is retained for a specified period and then permanently deleted from the mailbox. Or you can just retain content indefinitely (called an *infinite hold*) or until the Litigation hold is removed.
 
 ### eDiscovery
 
