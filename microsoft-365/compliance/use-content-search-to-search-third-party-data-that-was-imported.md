@@ -25,7 +25,7 @@ You can use the [Content Search eDiscovery tool](content-search.md) in the Secur
 For more information about working with a partner to import third-party data and a list of the third-party data types that you can import to Microsoft 365, see [Work with a partner to archive third-party data in Office 365](work-with-partner-to-archive-third-party-data.md).
 
 > [!IMPORTANT]
-> The guidance in this article only applies to third-party data that was imported by a custom partner connector. This article doesn't apply to third-party data that is imported by using the [data connectors](archiving-third-party-data.md) in the Microsoft compliance center.
+> The guidance in this article only applies to third-party data that was imported by a custom partner connector. This article doesn't apply to third-party data that is imported by using the [third-party data connectors](archiving-third-party-data.md#third-party-data-connectors) in the Microsoft compliance center.
   
 ## Creating a query to search all third-party data
 

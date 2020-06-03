@@ -26,7 +26,9 @@ description: "Learn how to import third-party data from  social media platforms,
 
 Microsoft 365 lets administrators use data connectors to import and archive third-party data from social media platforms, instant messaging platforms, and document collaboration platforms, to mailboxes in your Microsoft 365 organization. One primary benefit of using data connectors to import and archive third-party data in Microsoft 365 is that you can apply various Microsoft 365 compliance solutions to that after it's been imported. This helps you ensure that your organization's non-Microsoft data is in compliance with the regulations and standards that affect your organization.
 
-The following table summarizes the compliance solutions that you can apply to the third-party data that you import and archive in Microsoft 365. See the next section for a more detailed description of each compliance solution and how it can benefit third-party data.
+## Third-party data connectors
+
+The following table lists the third-party data connectors available in the Microsoft 365 compliance center. The table also summarizes the compliance solutions that you can apply to third-party data after you import and archive in Microsoft 365. See the [next section](#overview-of-compliance-solutions-that-support-third-party-data) for a more detailed description of each compliance solution and how it can benefit third-party data.
 
 > [!TIP]
 > Click the link in the **Third-party data** column to go the step-by-step instructions for creating a connector for that data type.
