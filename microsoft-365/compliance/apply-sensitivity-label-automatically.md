@@ -101,9 +101,6 @@ The auto-labeling settings for Office apps are available when you [create or edi
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
-> [!NOTE]
-> The option for **Trainable classifiers** is currently rolling out to tenants in public preview. If you don't see this option, try again in a few days.
-
 When this sensitivity label is automatically applied, the user sees a notification in their Office app. For example:
 
 ![Notification that a document had a label applied automatically](../media/sensitivity-labels-msg-doc-was-auto-labeled.PNG)
@@ -189,7 +186,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - To view file contents in the source view (not supported for emails), you must have the **Content Explorer Content viewer** role if you're not a global admin. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
 
 - To auto-label files in SharePoint and OneDrive:
-    - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md).
+    - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
     - At the time the auto-labeling policy runs, the file mustn't be open by another process or user.
 
 - If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 

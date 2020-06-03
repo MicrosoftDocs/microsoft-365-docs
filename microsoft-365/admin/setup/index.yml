@@ -43,10 +43,14 @@ landingContent:
             url: plan-your-setup.md
       - linkListType: how-to-guide
         links:
+          - text: Set up Microsoft Business Basic
+            url: setup-business-basic.md
           - text: Set up Microsoft Business Standard
-            url: setup.md
+            url: setup-business-standard.md
           - text: Set up Microsoft Business Premium
             url: ../../business/set-up.md
+          - text: Set up Microsoft Apps for Business
+            url: setup-apps-for-business.md
   # Card (optional)
   - title: Finish setting up
     linkLists:

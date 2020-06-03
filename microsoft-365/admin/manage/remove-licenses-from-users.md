@@ -41,9 +41,6 @@ You  can remove, or unassign, licenses from users on either the **Active users**
 
 When you use the **Licenses** page to unassign licenses, you unassign licenses for a specific product for up to 20 users. 
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>  page.
 2. Select the product for which you want to unassign licenses.
 3. Select the users for which you want to unassign licenses.
@@ -55,9 +52,6 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 ## Unassign licenses from one user on the Active users page
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
   
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
@@ -100,9 +94,6 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 ## Unassign licenses from multiple users on the Active users page
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
