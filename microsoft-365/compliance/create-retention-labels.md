@@ -216,7 +216,7 @@ If labels aren't appearing in Outlook on the web and you think they should be, m
 
 ## Updating retention labels and their policies
 
-If you edit a retention label, retention label policy, or auto-apply policy and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly labeled.
+When you edit a retention label, retention label policy, or auto-apply policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
 
 Some settings can't be changed after the label or policy is created and changed, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
