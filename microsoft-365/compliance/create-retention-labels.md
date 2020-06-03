@@ -57,7 +57,7 @@ These permissions are required only to create and apply retention labels and a l
 
 3. Repeat these steps to create more labels.
 
-To edit an existing label, select it, and then select **Edit label** to start the same wizard, which lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
+To edit an existing label, select it, and then select **Edit label** to start the same wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 ## Publish retention labels by creating a retention label policy
 
@@ -77,7 +77,7 @@ Publish retention labels so that they can be manually applied by users.
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section. 
 
-To edit an existing retention label policy, select it (type: **Publish**), and then select **Edit policy** to start the same wizard, which lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
+To edit an existing retention label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 ## Auto-apply a retention label
 
@@ -99,7 +99,7 @@ Auto-apply a retention label, based on the conditions that you specify.
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section.
 
-To edit an existing auto-apply label policy, select it (type: **Auto-apply**), and then select **Edit policy** to start the same wizard, which lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
+To edit an existing auto-apply label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 
 ## Configuring conditions for auto-apply retention labels
