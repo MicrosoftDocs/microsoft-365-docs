@@ -259,6 +259,8 @@
           href: import-hr-data.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
+        - name: Search for third-party data
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
     - name: Store data
       items: 
         - name: Enable archive mailboxes
@@ -388,8 +390,6 @@
             href: bulk-edit-content-searches.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Search for third-party data
-            href: use-content-search-to-search-third-party-data-that-was-imported.md
           - name: Check your search query for errors
             href: check-your-content-search-query-for-errors.md
           - name: Troubleshoot common eDiscovery issues
