@@ -125,18 +125,3 @@ If you do not see the policy **Enable automatic MDM enrollment using default Azu
 
 At this point you should be able to see the policy **Enable automatic MDM enrollment using default Azure AD credentials** available.
 
-## Optional next steps
-
-### Enable automatic enrollment for Windows 10
-
- To automatically enroll Windows 10 devices for mobile device management in Intune, see [Enroll a Windows 10 device automatically using Group Policy](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy). You can set the Group Policy at a local computer level, or for bulk operations, you can use the Group Policy Management Console and ADMX templates to create this Group Policy setting on your Domain Controller.
-
-### Configure Seamless Single Sign-On
-
-  Seamless SSO automatically signs users into their Microsoft 365 cloud resources when they use corporate computers. Simply deploy one of the two Group Policy options described in [Azure Active Directory Seamless Single Sign-On: Quick start](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sso-quick-start#step-2-enable-the-feature). The **Group Policy** option doesn't allow users to change their settings, while the **Group Policy Preference** option sets the values but also leaves them user-configurable.
-
-### Set up Windows Hello for Business
-
- Windows Hello for Business replaces passwords with strong two-factor authentication (2FA) for signing into a local computer. One factor is an asymmetric key pair, and the other is a PIN or other local gesture such as fingerprint or facial recognition if your device supports it. We recommend that you replace passwords with 2FA and Windows Hello for Business where possible.
-
-To configure Hybrid Windows Hello for Business, review the [Hybrid Key trust Windows Hello for Business Prerequisites](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-trust-prereqs). Then follow the instructions in [Configure Hybrid Windows Hello for Business key trust settings](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-hybrid-key-whfb-settings). 
