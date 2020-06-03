@@ -6,7 +6,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -102,6 +102,6 @@ See these resources for more information:
 - [Records Management](../compliance/records-management.md)
 - [File plan manager](../compliance/file-plan-manager.md)
 - [Event-based retention for records management](../compliance/automate-event-driven-retention.md)
-- [Disposition reviews](../compliance/disposition-reviews.md)
+- [Disposition of content](../compliance/disposition-reviews.md)
 
 

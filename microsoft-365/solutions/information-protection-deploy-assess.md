@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -193,11 +193,11 @@ With the new **Data Classification** solution in the Microsoft Compliance admin 
 
 The Microsoft Compliance admin center comes pre-loaded with over 100 sensitive information types, most of them related to identifying and locating personal data. These built-in sensitive information types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more, based on patterns that are defined by a regular expression (regex) or a function. To learn more, see [What the sensitive information types look for](../compliance/what-the-sensitive-information-types-look-for.md).
 
-In addition to the built-in sensitive information types, you can also create custom info types with three methods: PowerShell, custom rules with exact data match (EDM), and through the Compliance Center admin UI, as highlighted in the [Use Compliance Score and Compliance Manager article](information-protection-deploy-compliance.md. You can also customize an existing, built-in SIT.
+In addition to the built-in sensitive information types, you can also create custom info types with three methods: PowerShell, custom rules with exact data match (EDM), and through the Compliance Center admin UI, as highlighted in the [Use Compliance Score and Compliance Manager article](information-protection-deploy-compliance.md. You can also customize an existing, built-in sensitive information type.
  
 ### Custom sensitive information types
 
-As described in this article, Microsoft 365 includes many built-in sensitive information types related to personal identifiable information (PII) that are ready for you to use in your organization. If you need to identify and protect an organization-specific or regional type of sensitive items, such as a custom format for employee IDs, or other personal information not already covered by a built-in SIT, you can create a custom sensitive information type or modify an existing, built-in type. 
+As described in this article, Microsoft 365 includes many built-in sensitive information types related to personal identifiable information (PII) that are ready for you to use in your organization. If you need to identify and protect an organization-specific or regional type of sensitive items, such as a custom format for employee IDs, or other personal information not already covered by a built-in sensitive information type, you can create a custom sensitive information type or modify an existing, built-in type. 
 
 See these articles for more information:
 

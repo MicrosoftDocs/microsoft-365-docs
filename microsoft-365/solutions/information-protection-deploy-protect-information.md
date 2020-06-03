@@ -122,6 +122,8 @@ Complete these activities prior to implementing any of the sensitivity label-bas
    - **Consider scoped policies.** Policies targeted at subsets of users will prevent "label overload". A scoped policy enables assigning role or department specific (sub-)labels to just employees that work for that specific department. 
    - **Use meaningful label names.** Try not to use jargon, standards, or acronyms as label names. Try to use names that resonate with the end user to improve adoption. Instead of using labels like PII, PCI, HIPAA, LBI, MBI and HBI consider names like Non-Business, Public, General, Confidential and Highly Confidential.
 
+<!--
+
 #### Example sensitivity label scheme
 
 An example sensitivity-labelling scheme is provided here for reference as a good starting point. The sensitivity labels for sites type have a "_site" suffix appended to them to differentiate them from content-targeted labels.
@@ -141,6 +143,8 @@ An example sensitivity-labelling scheme is provided here for reference as a good
 |  |  | FTE | Data is classified and protected with “Do Not Forward” rules. Recipients (FTEs) can view, edit, and reply. |
 |  |  | Extended | Data is classified and protected with “Do Not Forward” rules. Recipients (FTEs and non-employees) can view, edit, and reply. |
 |||||
+
+-->
 
 ### Create and deploy sensitivity labels for sites, groups, and teams
 
@@ -165,10 +169,10 @@ For data privacy, containers that will be used for storing content with sensitiv
 When you're ready to start protecting your organization's data by using sensitivity labels:
 
 1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. For more information on developing a classification taxonomy, see the [Data Classification and Sensitivity Label Taxonomy white paper](https://aka.ms/dataclassificationwhitepaper).
-2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark, encryption, and endpoint protection applied.
+2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark and have encryption enabled.
 3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable — you define it once, and then you can include it in several label policies assigned to different users.
 
-The basic flow for deploying and applying sensitivity labels is: When you have published sensitivity labels from the Microsoft 365 compliance center, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect data as it's created or edited.
+Once you publish sensitivity labels from the Microsoft 365 compliance center, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect data as it's created or edited.
 
 ![Sensitivity label deployment flow in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
@@ -186,7 +190,7 @@ The ability to apply sensitivity labels to content automatically is important be
 - You don't need to rely on users to classify all content correctly.
 - Users no longer need to know about your policies—they can instead focus on their work.
 
-This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content. For email specifically, you can also configure your sensitivity label policy to automatically apply the highest level of classification of your attachment to your email, if the user doesn’t: a) choose a label at the email level; or b) choose a lower classification on the email than what the attachment(s) classification says.
+This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content.
 
 This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -229,7 +233,7 @@ This figure shows an example of DLP protecting personal data.
 
 ![Example of protecting personal data using DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
-DLP is used to identify a document or email containing a health record and then automatically blocks access to that document (or blocks the email from being sent). DLP then notifies the recipient with a policy tips and an alert is sent to the end-user and admin.
+DLP is used to identify a document or email containing a health record and then automatically blocks access to that document or blocks the email from being sent. DLP then notifies the recipient with a policy tip and sends an alert to the end-user and admin.
 
 ### Planning for DLP
 
@@ -245,11 +249,9 @@ Plan your DLP policies for:
 
 - The retention labels you'll need to specify DLP conditions. See the [govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md) article for more information.
 
-- Ongoing DLP policy management, which requires someone in the organization to operate and tune policies for sensitivity labelling and other forms of information protection.
+- Ongoing DLP policy management, which requires someone in the organization to operate and tune policies for changes in sensitive information types, retention labels, regulations, and compliance policies.
 
-Although sensitivity labels can’t be used in DLP policy conditions, certain protection scenarios may be achievable with just sensitivity labels that can be auto-applied based on sensitive information types and prevent access. 
-
-If robust sensitivity labelling is in place, consider whether DLP should be used to augment protection because:
+Although sensitivity labels can’t be used in DLP policy conditions, certain protection scenarios to prevent access may be achievable with just sensitivity labels that can be auto-applied based on sensitive information types. If robust sensitivity labelling is in place, consider whether DLP should be used to augment protection because:
 
   - DLP can prevent sharing of files. Sensitivity labels can just prevent access.
 
@@ -260,7 +262,7 @@ If robust sensitivity labelling is in place, consider whether DLP should be used
 
 ### DLP policies
 
-DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of documents.
+DLP policies are configured in the Microsoft Compliance admin center and specify the level of protection, the sensitive information type the policy is looking for, and the target workloads. Their basic components consist of identifying the protection and the types of data.
 
 ![DLP policy configuration in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
@@ -268,21 +270,21 @@ Here is an example DLP policy for awareness of GDPR.
 
 ![Example DLP policy for awareness of GDPR](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-See [this article](../compliance/create-test-tune-dlp-policy.md) for more information on creating and applying DLP policies.
+See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.
 
 ### Protection levels for data privacy
 
 The following table lists three configurations of increasing protection using DLP.
 
-![Protection levels for data privacy](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
+![Protection levels of data privacy with DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-protection-levels.png)
 
-The first configuration, Awareness, can be used as a starting point and minimum level of protection to address compliance needs such as those related to data privacy regulations.
+The first configuration, Awareness, can be used as a starting point and minimum level of protection to address compliance needs for data privacy regulations.
 
 >[!Note]
 >As the levels of protection increase, the ability of users to share and access information will decrease in some cases and could potentially impact their productivity or ability to complete daily tasks.
 >
 
-To help your employees continue to be productive in a more secure environment when increasing protection levels, take the time for training and educating them on new security policies and procedures.
+To help your employees continue to be productive in a more secure environment when increasing protection levels, take the time to train and educate them on new security policies and procedures.
 
 ### Example of using sensitivity labels with DLP
 
@@ -293,7 +295,7 @@ Sensitivity labels can work together with DLP to provide data privacy in a highl
 3. An overall strategy to address requirements and protect and govern data privacy hotspots is established.
 4. A phased action plan to address the data privacy control strategy is put into place.
 
-Once these elements are in place, you can use sensitive information types, your sensitivity labelling taxonomy, and DLP policies together. This figure shows an example.
+Once these elements are determined, you can use sensitive information types, your sensitivity labelling taxonomy, and DLP policies together. This figure shows an example.
 
 ![Example of sensitivity labels working with DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
@@ -302,7 +304,7 @@ Once these elements are in place, you can use sensitive information types, your 
 [See a larger version of this image](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 -->
-Here are some data protection scenarios using DLP and sensitivity labels together.
+Here are some data protection scenarios using DLP and sensitivity labels together as shown in the figure.
 
 | Scenario | Process |
 |:-------|:-----|
