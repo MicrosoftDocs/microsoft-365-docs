@@ -104,15 +104,11 @@ As a starting point, it is important to inventory what types of personal data ex
 - Data the organization has about its business customers, partners, and other relationships in the business-to-business (B2B) scenario
 - Data the organization has about consumers who provide information to online services that the organization manages in the business-to-customer (B2C) scenario
 
-<!--
-***** Is this diagram necessary? Can it be redone?
---> 
-
-Here is an example with typical departments.
+Here is an example of the different types of data for typical departments of an organization.
 
 ![Types of personal data](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-As shown, it is important to note that much of the personal data that is subject to data privacy regulation (at least on the non-employee side) is typically collected and stored outside of Microsoft 365, so any personal data from consumer-facing web or mobile applications would need to have been exported from such applications to Microsoft 365 in order to be subject to data privacy scrutiny in Microsoft 365. 
+Much of the personal data that is subject to data privacy regulation (at least on the non-employee side) is typically collected and stored outside of Microsoft 365, so any personal data from consumer-facing web or mobile applications would need to have been exported from such applications to Microsoft 365 in order to be subject to data privacy scrutiny in Microsoft 365. 
 
 Thus, your data privacy exposure in Microsoft 365 may be more limited relative to your web applications and CRM systems, which this series of articles does not intend to address.
 
