@@ -32,7 +32,7 @@ NIST Cybersecurity Framework (CSF) is a voluntary Framework that consists of sta
 
 Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Score and our Azure Security and Compliance Blueprint:
 
-- [Overview of the NIST SP 800-53 R4 blueprint sample](https://docs.microsoft.com/en-us/azure/governance/blueprints/samples/nist-sp-800-53-rev4/)
+- [Overview of the NIST SP 800-53 R4 blueprint sample](https://docs.microsoft.com/azure/governance/blueprints/samples/nist-sp-800-53-rev4/)
 - [Learn more about the NIST CSF assessment for Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## Microsoft in-scope cloud services
