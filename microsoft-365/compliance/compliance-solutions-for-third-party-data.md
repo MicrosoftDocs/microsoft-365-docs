@@ -38,7 +38,8 @@ The following table summarizes the Microsoft 365 compliance solutions that are b
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
 |[HR data](import-hr-data.md) |||||![Check mark](../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |||||||
-The third-party data listed in the previous table (except HR data) is imported into user mailboxes. The corresponding compliance solutions that support that data type are therefore applied to the mailbox where the data is stored.
+
+The third-party data listed in the previous table (except for HR data) is imported into user mailboxes. The corresponding compliance solutions that support that data type are applied to the mailbox where the data is stored.
 
 ## Overview of compliance solutions that support third-party data
 
