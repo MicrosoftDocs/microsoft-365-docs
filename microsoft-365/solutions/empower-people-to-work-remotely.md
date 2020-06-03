@@ -68,7 +68,7 @@ To meet these criteria for remote workers, use these Microsoft 365 capabilities 
 | Azure Point-to-Site VPN	| Create a secure connection from a remote worker’s device to your intranet through an Azure virtual network.	| Requires separate paid Azure subscription |
 | Windows Virtual Desktop	| Support remote workers who can only use their personal and unmanaged devices with virtual desktops running in Azure. | Requires separate paid Azure subscription |
 | Remote Desktop Services (RDS)	| Allow employees to connect into Windows-based computers on your intranet.	| Microsoft 365 E3 and E5 | 
-| Remote Desktop Services Gateway	| Encrypt communications and prevent the RDS hosts from being directly exposed to the Internet.	| Requires separate Windows Server license |
+| Remote Desktop Services Gateway	| Encrypt communications and prevent the RDS hosts from being directly exposed to the Internet.	| Requires separate Windows Server licenses |
 | Microsoft Intune | Manage devices and applications.	| Microsoft 365 E3 and E5 | 
 | Configuration Manager	| Manage software installations, updates, and settings on your devices | Requires separate Configuration Manager licenses |
 | Desktop Analytics	| Determine the update readiness of your Windows clients.	| Requires separate Configuration Manager licenses |
