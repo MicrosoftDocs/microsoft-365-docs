@@ -45,11 +45,11 @@
         - name: Access on-premises users and resources
           items:
             - name: Synchronize domain users to Microsoft 365
-              href: manage-domain-users.md
+              href: ../business/manage-domain-users.md
             - name: Enable domain-joined Windows 10 devices to be managed
-              href: manage-windows-devices.md
+              href: ../business/manage-windows-devices.md
             - name: Access resources from an Azure AD-joined device
-              href: access-resources.md
+              href: ../business/access-resources.md
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
