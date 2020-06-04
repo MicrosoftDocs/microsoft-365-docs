@@ -797,6 +797,11 @@
       "source_path": "microsoft-365/security/office-365-security/set-up-and-download-a-custom-report.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/download-existing-reports.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp",
+      "redirect_document_id": false
     }
   ]
 }
