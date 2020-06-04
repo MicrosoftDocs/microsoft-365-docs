@@ -782,6 +782,11 @@
       "source_path": "microsoft-365/compliance/search-the-audit-log.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365/security/office-365-security/create-a-schedule-for-a-report.md.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp",
+      "redirect_document_id": true
     }
   ]
 }
