@@ -28,7 +28,7 @@ ms.topic: article
 
 With the **Go hunt** action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action  automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-This action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use **Go hunt** from these sections of the security center:
+This action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use **Go hunt** from the following sections:
 
 - In the [incident page](investigate-incidents.md#incident-overview), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, the device **fv-az770** is selected, showing details about the device as well the option to hunt for more information about the device.
 
@@ -38,7 +38,7 @@ This action is available in various sections of the security center whenever eve
 
     ![Image the event details with the Go hunt option](../../media/mtp-ah/file-machine.png)
 
-Selecting **Go hunt** passes different queries, depending whether you've selected an entity or an event. 
+Selecting **Go hunt** passes different queries, depending on whether you've selected an entity or an event. 
 
 ## Query for entity information
 When using **Go hunt** to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. To keep the results manageable, the query is scoped to around the same time period as the earliest activity in the past 30 days that involves the entity and is associated with the incident.
@@ -92,7 +92,7 @@ Timestamp between ((selectedTimestamp - 1h) .. (selectedTimestamp + 1h))
 
 In addition to modifying the query to get more relevant results, you can also:
 - [View the results as charts](advanced-hunting-query-results.md#view-query-results-as-a-table-or-chart)
-- [Create custom detection rules](custom-detection-rules.md) based on the query
+- [Create a custom detection rule](custom-detection-rules.md)
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
