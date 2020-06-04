@@ -74,7 +74,7 @@ On the Microsoft Intune page, select **Device enrollment** and on the **Overview
 
 ## 4. Set up Service connection point (SCP)
 
-These steps are simplified from [configure hybrid azure AD join](https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). To complete the steps you need to use Azure AD Connect and your Microsoft 365 Business Premium global admin and Active Directory admin passwords.
+These steps are simplified from [configure hybrid azure AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join). To complete the steps you need to use Azure AD Connect and your Microsoft 365 Business Premium global admin and Active Directory admin passwords.
 
 1.	Start Azure AD Connect, and then select **Configure**.
 2.	On the **Additional tasks**  page, select **Configure device options**, and then select **Next**.
