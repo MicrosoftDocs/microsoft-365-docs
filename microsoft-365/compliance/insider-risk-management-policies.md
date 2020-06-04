@@ -62,7 +62,7 @@ When creating or modifying DLP policies for use with insider risk management pol
      >[!NOTE]
      >When creating a new DLP policy using the built-in templates, you’ll need to select the **Create or customize advanced DLP rules** option to configure the **Incident reports** setting for the *High* severity level.
 
-Each insider risk management policy created from the **Data leaks** template can only have one DLP policy assigned. If you have more than one DLP policy that you’d like to have high severity alerts processed by an insider risk management policy, you'll need to create a separate insider risk management policy per DLP policy.
+Each insider risk management policy created from the **Data leaks** template can only have one DLP policy assigned. Consider creating a dedicated DLP policy that combines the different activities you want to detect and act as triggering indicators for  insider risk policies that use the **Data leaks** template.
 
 See the [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md) topic for step-by-step guidance to configure DLP policies for your organization.
 
