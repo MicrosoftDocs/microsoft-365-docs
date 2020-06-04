@@ -10,11 +10,13 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
-# Set up a connector to import HR data
+# Set up a connector to import HR data (preview)
 
 You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data, such as the date an employee submitted their resignation and date of the employee's last day. This HR data can then be used by Microsoft information protection solutions, such as the new [insider risk management solution](insider-risk-management.md), to help protect your organization from malicious activity or data theft inside your organization. Setting up an HR connector consists of creating an app in Azure Active Directory that's used for authentication by connector, creating a CSV mapping files that contains your HR data, creating a data connector in the compliance center, and then running a script (on a scheduled basis) that ingests the HR data in the CSV file to the Microsoft cloud. Then the data connector is used Microsoft compliance solutions (like insider risk management) to access the HR data that was imported to your Microsoft 365 organization.
 
@@ -61,7 +63,7 @@ The following table describes each column in the CSV file:
 |**LastWorkingDate**|Specifies the last day of work for the terminated employee. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
 |||
 
-After you create the CSV file with the required HR data, store it on the local computer that you run the script on in Step 4. You should also implement an update strategy to make sure the CSV file always contains the most current information so that whatever you run the script, the most current employee termination data will be uploaded to the Microsoft cloud.
+After you create the CSV file with the required HR data, store it on the same system as the script that you run in Step 4. You should also implement an update strategy to make sure the CSV file always contains the most current information so that whatever you run the script, the most current employee termination data will be uploaded to the Microsoft cloud.
 
 ## Step 3: Create the HR connector
 
@@ -129,7 +131,7 @@ The last step in setting up an HR connector is to run a sample script that will 
    |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
    |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
    |`jobId`|This is the Job Id for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
-   |`csvFilePath`|This is the file path on the local computer (the one you're using to run the script) for the CSV file that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
+   |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
    
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
@@ -170,7 +172,7 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
 3. In the **Actions** section, click **Create Task**.
 
-4. On the **General** tab, type a descriptive name for the scheduled task; for example, **HR Connector Script**. You can also add an optional description. 
+4. On the **General** tab, type a descriptive name for the scheduled task; for example, **HR Connector Script**. You can also add an optional description.
 
 5. Under **Security options**, do the following:
 

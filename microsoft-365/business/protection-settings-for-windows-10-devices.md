@@ -22,6 +22,7 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -31,6 +32,8 @@ description: "Learn how to create an app management policy and protect work file
 ---
 
 # Set application protection settings for Windows 10 devices
+
+This article applies to Microsoft 365 Business Premium.
 
 ## Create an app management policy for Windows 10
 

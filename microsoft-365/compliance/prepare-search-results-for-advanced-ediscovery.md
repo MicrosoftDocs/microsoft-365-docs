@@ -14,7 +14,9 @@ localization_priority: Normal
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: "Learn how to prepare the results of a Content Search in the Security & Compliance Center for further analysis with the Advanced eDiscovery tool."
 ---
@@ -91,7 +93,7 @@ When the preparation is finished, the next step is to go to Advanced eDiscovery 
     
 2. Click **Open** next to the case that you want to load data in to in Advanced eDiscovery. 
     
-3. On the **Home** page for the case, click **Advanced eDiscovery**. 
+3. On the **Home** page for the case, click **Switch to Advanced eDiscovery**. 
     
     ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

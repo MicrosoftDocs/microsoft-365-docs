@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,7 +24,7 @@ description: "Learn how to upgrade one or many distribution lists to Microsoft 3
 
 # Upgrade distribution lists to Microsoft 365 Groups in Outlook
 
-You can upgrade distribution lists to Microsoft 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.office.com/article/7fb3d880-593b-4909-aafa-950dd50ce188.aspx)
+You can upgrade distribution lists to Microsoft 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
 
 You can upgrade DLs one at a time, or several at the same time.
 
@@ -46,7 +47,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 7. If you selected a DL for upgrade, but it's still appears on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
-> If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.office.com/article/a0482e24-a769-4e39-a5ba-a7c56e828b22.aspx) for more information about digest emails.
+> If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
 
 
 ## What to do if the upgrade doesn't work

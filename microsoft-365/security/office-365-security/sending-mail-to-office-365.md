@@ -2,10 +2,10 @@
 title: "Sending mail to Microsoft 365"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 04/09/2016
+ms.date:
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,14 @@ search.appverid:
 ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
-description: "These articles help external senders improve their reputation and increase their ability to deliver email to users in Office 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't an Microsoft 365 user yourself."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn as an external sender, how can you increase the ability to deliver email to users in Microsoft 365. Also learn how to report junk email & phishing attempts as an external user."
 ---
 
 # Sending mail to Microsoft 365
 
-These articles help external senders improve their reputation and increase their ability to deliver email to users in Office 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't an Microsoft 365 user yourself.
+These articles help external senders improve their reputation and increase their ability to deliver email to users in Microsoft 365. They also provide some information about how you can report junk email and phishing attempts even if you aren't a Microsoft 365 user yourself.
 
 If you are not a customer, but are trying to send mail to someone in who is, you are in the right place. If you are an administrator and you need help fighting spam, this is not the right section for you. Instead, go to [Anti-spam and anti-malware protection in Microsoft 365](anti-spam-and-anti-malware-protection.md).
 

@@ -16,6 +16,7 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -55,7 +56,7 @@ Here are some resources to help you get started.
   
 - [Training for admins](https://support.office.com/article/e990f8ff-56d7-450e-ad9f-74ae8718ef09.aspx): Get links to free online classes for admins.
     
-- [Admin Help](https://support.office.com/article/17d3ff3f-3601-466e-b5a1-482b31cfb791.aspx): Get info about top tasks, getting started with admin tools, and troubleshooting problems.
+- [Admin Help](https://docs.microsoft.com/microsoft-365/admin/admin-home): Get info about top tasks, getting started with admin tools, and troubleshooting problems.
     
 - [Contact support - Admin Help](../contact-support-for-business-products.md) : Call us, open an online request, or let the community help. 
     

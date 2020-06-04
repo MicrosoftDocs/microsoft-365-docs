@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -29,8 +30,7 @@ description: "Learn to verify your domain and set up DNS records for email, Skyp
 If eNomCentral is your DNS hosting provider, follow the steps in this article to verify your domain and set up DNS records for email, Skype for Business Online, and so on.
   
 After you add these records at eNomCentral, your domain will be set up to work with Microsoft services.
-  
-To learn about webhosting and DNS for websites with Microsoft, see [Use a public website with Microsoft](https://support.office.com/article/choose-a-public-website-3325d50e-d131-403c-a278-7f3296fe33a9).
+
   
 > [!NOTE]
 >  Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Troubleshoot issues after changing your domain name or DNS records](../get-help-with-domains/find-and-fix-issues.md). 
@@ -59,7 +59,7 @@ Follow the steps below or [watch the video (start at 0:46)](https://support.offi
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
-    (Choose the **Record Type** value from the drop-down list.) 
+    Choose the **Record Type** value from the drop-down list.
     
     ||||
     |:-----|:-----|:-----|
@@ -121,7 +121,7 @@ Follow the steps below or [watch the video (start at 3:40)](https://support.offi
     
     |**Host Name**|**Address**|**Pref**|
     |:-----|:-----|:-----|
-    |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> |
+    |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **This value MUST end with a period (.)** <br/> **Note:** Get your  *\<domain-key\>*  from your Microsoft account.           [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |10  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> |
        
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
   
@@ -160,7 +160,7 @@ Follow the steps below or [watch the video (start at 4:24)](https://support.offi
   
 5. In the boxes for the six new records, type or copy and paste the following values.
     
-        (Choose the **Record Type** value from the drop-down list.) 
+Choose the **Record Type** value from the drop-down list.
         
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|
@@ -198,7 +198,7 @@ Follow the steps below or [watch the video (start at 5:12)](https://support.offi
   
 4. In the boxes for the new record, type or copy and paste the values from the following table.
     
-    (Choose the **Record Type** value from the drop-down list.) 
+Choose the **Record Type** value from the drop-down list.
     
     |**Host Name**|**Record Type**|**Address**|
     |:-----|:-----|:-----|

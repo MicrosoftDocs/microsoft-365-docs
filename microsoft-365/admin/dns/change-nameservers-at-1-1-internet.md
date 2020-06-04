@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -133,7 +134,7 @@ Ready to change your NS records so Microsoft 365 can set up your domain? Follow 
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. Select **Save**.
     

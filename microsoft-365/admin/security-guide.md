@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.custom:
 - SMB_SuccessCenter
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150

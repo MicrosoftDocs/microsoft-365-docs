@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,7 +27,7 @@ Centralized Deployment is the recommended way for an Office 365 admin to deploy 
   
 ## How do I know if my organization is set up for Centralized Deployment?  
 
-Centralized deployment of add-ins requires that users are using Office 365 ProPlus (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory.  
+Centralized deployment of add-ins requires that users are using Microsoft 365 Apps for enterprise (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory.  
  
 Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
  

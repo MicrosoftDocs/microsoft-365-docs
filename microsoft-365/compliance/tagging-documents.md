@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Tagging documents in a review set helps remove unnecessary content and identify relevant content in an Advanced eDiscovery case.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Tag documents in a review set
@@ -29,13 +30,13 @@ Organizing content in a review set is important to complete various workflows in
  
 - Identifying content that must be reviewed by an expert or an attorney
 
-When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as “non-responsive”. After content has been reviewed and tagged, a review set search can be created to exclude any content tagged as “non-responsive”, which eliminates this content from the next steps in the eDiscovery workflow. The tag panel can be customized for every case so that the tags can support the intended review workflow.
+When experts, attorneys, or other users review content in a review set, their opinions related to the content can be captured by using tags. For example, if the intent is to cull unnecessary content, a user can tag documents with a tag such as "non-responsive". After content has been reviewed and tagged, a review set search can be created to exclude any content tagged as "non-responsive", which eliminates this content from the next steps in the eDiscovery workflow. The tag panel can be customized for every case so that the tags can support the intended review workflow.
 
 ## Tag types
 
 Advanced eDiscovery provides two types of tags:
 
-- **Single choice tags** - Restricts users to select a single tag within a group. This can be useful to ensure users don’t select conflicting tags such as “responsive” and “non-responsive”. These will appear as radio buttons.
+- **Single choice tags** - Restricts users to select a single tag within a group. This can be useful to ensure users don't select conflicting tags such as "responsive" and "non-responsive". These will appear as radio buttons.
 
 - **Multiple choice tags** - Allow users to select multiple tags within a group. These will appear as checkboxes.
 
@@ -45,7 +46,7 @@ In addition to the tag types, the structure of how tags are organized in the tag
 
 ![Tag sections in the tag panel](../media/Tagtypes.png)
 
-Tags can be further organized by nesting them within a section. For example, if the intent is to identify and tag privileged content, nesting can be used to make it clear that a user can tag a document as “Privileged” and select the type of privilege by checking the appropriate nested tag.
+Tags can be further organized by nesting them within a section. For example, if the intent is to identify and tag privileged content, nesting can be used to make it clear that a user can tag a document as "Privileged" and select the type of privilege by checking the appropriate nested tag.
 
 ![Nested tags within a tag section](../media/Nestingtags.png)
 

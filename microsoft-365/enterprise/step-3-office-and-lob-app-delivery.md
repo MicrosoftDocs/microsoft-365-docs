@@ -58,9 +58,9 @@ Another popular method of app delivery is PC imaging. In this case, applications
 
 If you do want to include Microsoft 365 Apps for enterprise in your image, remember that this uses a user-based activation; it cannot be pre-activated by the system admin. Use the Office Deployment Tool to pre-install Office on the device you are imaging and skip the user sign-in. Once the image is deployed end users can sign-in using their credentials and activate Microsoft 365 Apps for enterprise.
 
-[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
+[Create a Task Sequence to Install an Operating System](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-install-an-operating-system)
 
-[Deploy Microsoft 365 Apps for enterprise as part of an operating system image](https://docs.microsoft.com/deployoffice/deploy-office-365-proplus-as-part-of-an-operating-system-image)
+[Deploy Microsoft 365 Apps as part of an operating system image](https://docs.microsoft.com/deployoffice/deploy-microsoft-365-apps-operating-system-image)
 
 ## Office Click-to-Run 
 
@@ -68,7 +68,7 @@ Microsoft 365 Apps for enterprise is installed using Click-to-Run, and Click-to-
 
 Programs delivered via Click-to-Run execute in a virtual application environment on your computer and so co-exist with other applications without conflict; they also take about half the disk space they would as an MSI-based package. Office applications are delivered and managed via the [Office Deployment Tool](https://www.microsoft.com/download/details.aspx?id=49117) which is the Office setup engine needed to download, configure, and customize your Office apps. The Office Deployment Tool reads a configuration XML file which provides the metadata instructions on how to configure and customization your Office installation.
 
-Microsoft recommends using the [Office Customization Tool](https://config.office.com/) to customize your deployment settings and create your configuration XML file. Through the Office Customization Tool you can set which applications and languages will be installed, how the applications will be updated, application preferences, and installation expereince settings.
+Microsoft recommends using the [Office Customization Tool](https://config.office.com/) to customize your deployment settings and create your configuration XML file. Through the Office Customization Tool you can set which applications and languages will be installed, how the applications will be updated, application preferences, and installation experience settings.
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-7.png)
 
@@ -76,11 +76,11 @@ If you use Configuration Manager, you can still use it for broad deployment of M
 
 ![](../media/step-3-office-and-lob-app-delivery-media/step-3-office-and-lob-app-delivery-media-6.png)
 
-[Deployment Guide for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-for-office-365-proplus)
+[Deployment Guide for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
+[Remove existing MSI versions of Office when upgrading to Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version)
 
-[Manage Microsoft 365 Apps for enterprise with Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Manage Microsoft 365 Apps for enterprise with Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](https://docs.microsoft.com/intune/apps-add-office365)
 
@@ -102,7 +102,7 @@ Store apps can be natively built as UWP apps or you can use the Desktop Bridge t
 
 ## MSIX Containerization
 
-A new option for application packaging is MSIX. MSIX uses the containerization technology available in Windows, bringing together the best aspects of Click-to-Run, UWP and MSI packaging. With tools to migrate existing installers like EXE, MSI, APPV and APPX directly to MSIX we see MSIX Containerization provides a unifed path for the many installation technologies in use today. MSIX support is included in current versions of Windows: any device running Windows 10 RS5 or newer includes everything you need to install and run MSIX packaged apps. Windows 10 dynamically integrates MSIX containers it receives, while keeping the applications separate from the operating system.
+A new option for application packaging is MSIX. MSIX uses the containerization technology available in Windows, bringing together the best aspects of Click-to-Run, UWP and MSI packaging. With tools to migrate existing installers like EXE, MSI, APPV and APPX directly to MSIX we see MSIX Containerization provides a unified path for the many installation technologies in use today. MSIX support is included in current versions of Windows: any device running Windows 10 RS5 or newer includes everything you need to install and run MSIX packaged apps. Windows 10 dynamically integrates MSIX containers it receives, while keeping the applications separate from the operating system.
 
 Containerization means clean uninstall and removal of packages, unlike a lot of MSI and EXE-based packages today that may leave items on the system. It also means only needing Standard User credentials to install applications – you do not have to have Administrator credentials to install MSIX containers. MSIX containers are more efficient to update too. When an update is published, use of block level differentials means only net new binaries are applied, reducing the update payload, for faster deployments consuming less network bandwidth.
 

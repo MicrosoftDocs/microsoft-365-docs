@@ -9,6 +9,8 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
+search.appverid:
+- MET150
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
@@ -23,6 +25,7 @@ ms.custom:
 - BEA160
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 ms.assetid: 2ae3ea58-4fce-4592-91d6-46e9ae3ec218
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
 ---
@@ -31,7 +34,7 @@ description: "Find your invoice or billing statement in the Microsoft 365 admin 
 
 This article is for people who have a Microsoft 365 for business subscription. You must be a global admin or billing admin to do the steps described in this article.
   
-If you need help interpreting the charges you see on your bill, see [Understand your invoice](understand-your-invoice2.md) for a detailed walkthrough.
+If you need help interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
  **Not an admin?** Contact your IT administrator for help. 
   
@@ -82,6 +85,6 @@ If you found this video helpful, check out the [complete training series for sma
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md)
   
-[Add, update, or remove a credit card or bank account](add-update-or-remove-credit-card-or-bank-account.md)
+[Manage payment methods](manage-payment-methods.md)
 
 [Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761)

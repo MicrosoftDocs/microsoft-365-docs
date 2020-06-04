@@ -14,6 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,6 +24,14 @@ description: "Protect your business email and data from cyber threats, including
 ---
 
 # Top 10 ways to secure Microsoft 365 for business plans
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 If you are a small or medium-size organization using one of Microsoft's business plans and your type of organization is targeted by cyber criminals and hackers, use the guidance in this article to increase the security of your organization. This guidance helps your organization achieve the goals described in the Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409).
   
@@ -85,7 +94,7 @@ In addition to this guidance, Microsoft recommends that your users take the acti
     
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
   
-- [Help protect your Outlook.com email account](https://support.office.com/article/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba.aspx)
+- [Help protect your Outlook.com email account](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -180,10 +189,11 @@ To create a mail transport rule:
     
 6. Select **Save**.
     
-|**Setting**|**Warn users before opening attachments of Office files**|
+|**Setting**|**Reject Auto-Forward emails to external domains**|
 |:-----|:-----|
 |Name  <br/> |Prevent auto forwarding of email to external domains  <br/> |
 |Apply this rule if ...  <br/> |The sender . . . is external/internal . . . Inside the organization  <br/> |
+|Add condition  <br/> |The recipient . . . is external/internal . . . Outside the organization  <br/> |
 |Add condition  <br/> |The message properties . . . include the message type . . . Auto-forward  <br/> |
 |Do the following ...  <br/> |Block the message . . . reject the message and include an explanation.  <br/> |
 |Provide message text  <br/> |Auto-forwarding email outside this organization is prevented for security reasons.  <br/> |
@@ -217,7 +227,7 @@ If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account,
   
 If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder. 
   
-For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx).
+For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
   
 ## 8. Protect your email from phishing attacks
 <a name="phishing"> </a>
@@ -241,10 +251,10 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
 5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) for more details. 
     
 6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
-    
-|
-|
-|**Setting or option**|**Recommended setting** <br/>
+
+
+|**Setting or option**|**Recommended setting** <br/>|
+|:-----|:-----|
 |Name  <br/> |Domain and most valuable campaign staff  <br/> |
 |Description  <br/> |Ensure most important staff and our domain are not being impersonated.  <br/> |
 |Add users to protect  <br/> |Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the candidate, campaign manager, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.  <br/> |
@@ -253,6 +263,7 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
 |Mailbox intelligence  <br/> |By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.  <br/> |
 |Add trusted senders and domains  <br/> |For this example, don't define any overrides.  <br/> |
 |Applied to  <br/> |Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, contoso.com, in the list, and then select **Add**. Select **Done**.  <br/> |
+|
    
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -277,14 +288,15 @@ To create an ATP safe attachment policy, view a [short training video](https://s
     
 7. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
     
-|
-|
+
 |**Setting or option**|**Recommended setting** <br/>|
+|:-----|:-----|
 |Name  <br/> |Block current and future emails with detected malware.  <br/> |
 |Description  <br/> |Block current and future emails and attachments with detected malware.  <br/> |
 |Save attachments unknown malware response  <br/> |Select **Block - Block the current and future emails and attachments with detected malware**.  <br/> |
 |Redirect attachment on detection  <br/> |Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
+|
    
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -323,12 +335,12 @@ To create a new policy targeted to all recipients in your domain:
     
 3. Select **Save**. 
     
-|
-|
 |**Setting or option**|**Recommended setting** <br/>|
+|:-----|:-----|
 |Name  <br/> |Safe links policy for all recipients in the domain  <br/> |
 |Select the action for unknown potentially malicious URLs in messages  <br/> |Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.  <br/> |
 |Use Safe Attachments to scan downloadable content  <br/> |Select this box.  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
+|
    
 For more information, see [Office 365 ATP safe links](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

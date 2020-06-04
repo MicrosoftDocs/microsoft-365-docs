@@ -108,7 +108,7 @@ One exception to this rule is when you create a query-based hold that's associat
 
 The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in a Content Search in Office 365.
   
-For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f).
+For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
   
 |**Indexing limit**|**Maximum value**|**Description**|
 |:-----|:-----|:-----|

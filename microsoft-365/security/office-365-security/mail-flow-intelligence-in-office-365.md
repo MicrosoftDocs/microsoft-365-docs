@@ -15,9 +15,9 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: "Admins can learn about the error codes that are associated with message delivery using connectors (also known as mail flow intelligence)."
 ---
 
-# Mail flow intelligence
+# Mail flow intelligence in EOP
 
-Typically, you use a connector to route email messages from your organization to your on-premises email environment. You might also use a connector to route messages from Microsoft 365 to a partner organization. When Microsoft 365 can't deliver these messages via the connector, they're queued in Microsoft 365. Microsoft 365 will continue to retry delivery for each message for 24 hours. After 24 hours, the queued message will expire, and the message will be returned to the original sender in a non-delivery report (also known as an NDR or bounce message).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, you typically use a connector to route email messages from EOP to your on-premises email environment. You might also use a connector to route messages from Microsoft 365 to a partner organization. When Microsoft 365 can't deliver these messages via the connector, they're queued in Microsoft 365. Microsoft 365 will continue to retry delivery for each message for 24 hours. After 24 hours, the queued message will expire, and the message will be returned to the original sender in a non-delivery report (also known as an NDR or bounce message).
 
 Microsoft 365 generates an error when a message can't be delivered by using a connector. The most common errors and their solutions are described in this topic. Collectively, queuing and notification errors for undeliverable messages sent via connectors is known as _mail flow intelligence_.
 
@@ -81,7 +81,7 @@ Typically, this error means Microsoft 365 encountered a connection error when it
 
 Typically, this error means Microsoft 365 connected to the destination email server, but the server responded with an immediate error, or doesn't meet the connection requirements. The error details will explain the problem. For example:
 
-- The destination email server responded with a "Service not available" error, which indicates the server is unable to maintain communication with Office 365.
+- The destination email server responded with a "Service not available" error, which indicates the server is unable to maintain communication with Microsoft 365.
 
 - The connector is configured to require TLS, but the destination email server doesn't support TLS.
 
@@ -97,15 +97,15 @@ Typically, this error means Microsoft 365 is having difficulty communicating wit
 
 - Your firewall uses SMTP packet examination rules, and those rules aren't working correctly.
 
-- Your on-premises email server isn't working correctly (for example, service hangs, crashes, or low system resources), which is causing the server to time out and close the connection to Office 365.
+- Your on-premises email server isn't working correctly (for example, service hangs, crashes, or low system resources), which is causing the server to time out and close the connection to Microsoft 365.
 
-- There are network issues between your on-premises environment and Office 365.
+- There are network issues between your on-premises environment and Microsoft 365.
 
 ### How do I fix error code 450 4.4.318?
 
 - Find out which scenario applies to you, and make the necessary corrections.
 
-- If the problem is caused by network issues between your on-premises environment and Office 365, contact your network team to troubleshoot the issue.
+- If the problem is caused by network issues between your on-premises environment and Microsoft 365, contact your network team to troubleshoot the issue.
 
 - If the error is from your partner organization (for example, a 3rd party cloud service provider), you need to contact your partner to fix the issue.
 

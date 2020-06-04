@@ -1,6 +1,6 @@
 ---
-title: "GDPR discovery, protection, and reporting in the dev/test environment"
-description: "Demonstrate GDPR capabilities in Microsoft 365."
+title: "GDPR discovery, protection, and reporting in the Microsoft 365 dev/test environment"
+description: Learn how to configure and demonstrate personally identifiable information (PII) for GDPR an in Microsoft 365 dev/test environment.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,6 +18,7 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
 # GDPR discovery, protection, and reporting in the dev/test environment

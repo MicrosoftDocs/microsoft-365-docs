@@ -5,11 +5,16 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+- M365solutions
+ms.custom: 
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to collaborate with guests in Teams."
+description: "Learn about the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests in Teams."
 ---
 
 # Collaborate with guests in a team
@@ -36,8 +41,8 @@ To set organizational relationship settings
 
 1. Log in to Microsoft Azure at [https://portal.azure.com](https://portal.azure.com).
 2. In the left navigation, click **Azure Active Directory**.
-3. In the **Overview** pane, click **Organizational relationships**.
-4. In the **Organizational relationships** pane, click **Settings**.
+3. In the **Overview** pane, click **External identities**.
+4. In the **Organizational identities** pane, click **External collaboration settings**.
 5. Ensure that **Admins and users in the guest inviter role can invite** and **Members can invite** are both set to **Yes**.
 6. If you made changes, click **Save**.
 

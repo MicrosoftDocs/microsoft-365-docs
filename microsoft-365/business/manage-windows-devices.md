@@ -19,6 +19,7 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,9 +27,9 @@ ms.assetid: 9b4de218-f1ad-41fa-a61b-e9e8ac0cf993
 description: "Learn how to enable Microsoft 365 to protect local Active-Directory-joined Windows 10 devices in just a few steps."
 ---
 
-# Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business
+# Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium
 
-If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 for business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
+If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication.
 To set up this protection, you can implement **Hybrid Azure AD joined devices**. These devices are joined to both your on-premises Active Directory and your Azure Active Directory.
 
 This video describes the steps for how to set this up for the most common scenario, which is also detailed in the steps that follow.
@@ -48,7 +49,7 @@ Before you synchronize your users and computers from the local Active Directory 
 
 ## 2. Install and configure Azure AD Connect
 
-To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, install Azure Active Directory Connect and set up directory synchronization. See [Set up directory synchronization for Office 365](https://support.office.com/article/1b3b5318-6977-42ed-b5c7-96fa74b08846) to learn more.
+To synchronize your users, groups, and contacts from the local Active Directory into Azure Active Directory, install Azure Active Directory Connect and set up directory synchronization. See [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) to learn more.
 
 > [!NOTE]
 > The steps are exactly the same for Microsoft 365 for business. 

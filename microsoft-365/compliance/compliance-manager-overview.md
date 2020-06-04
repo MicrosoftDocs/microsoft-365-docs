@@ -10,10 +10,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Manager is a free workflow-based risk assessment tool in the Microsoft Service Trust Portal. Compliance Manager enables you to track, assign, and verify regulatory compliance activities related to Microsoft cloud services."
+description: Learn about the Microsoft Compliance Manager, a free workflow-based risk assessment tool in the Microsoft Service Trust Portal.
 ---
 
 # Microsoft Compliance Manager (preview)
@@ -37,17 +40,15 @@ With Compliance Manager, your organization can:
 - Provide a secure repository for you to upload and manage evidence and other artifacts related to your compliance activities.
 - Produce richly detailed Microsoft Excel reports that document compliance activities performed by Microsoft and your organization for auditors, regulators, and other compliance reviewers.
 
-> [!NOTE]
-> The customer actions provided in Compliance Manager are recommendations; it is up to your organization to evaluate the effectiveness of these recommendations in their respective regulatory environment prior to implementation. Recommendations found in Compliance Manager should not be interpreted as a guarantee of compliance.
+  
+> [!IMPORTANT]
+> Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are currently in preview and subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Relationship to Compliance Score
 
 [Microsoft Compliance Score (preview)](compliance-score.md) is a feature in the Microsoft 365 compliance center that provides a top-level view into your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Knowing your overall compliance score helps your organization understand and manage compliance. Understand [how your compliance score is calculated](compliance-score-methodology.md).
 
 Compliance Manager shares the same backend with Compliance Score. During the public preview phase for both tools, Compliance Manager is where you'll manage your assessments and custom control implementations. Learn more about the [relationship between Compliance Score and Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager).
-  
-> [!IMPORTANT]
-> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. No service can guarantee that you are compliant with a standard or regulation, and the Compliance Score should not be interpreted as a guarantee in any way.
 
 ## Compliance Manager components
 
@@ -144,22 +145,26 @@ Compliance Manager can store evidence of your implementation tasks around testin
 
 Compliance Manager provides pre-configured [templates](working-with-compliance-manager.md#templates) for Assessments and allows you to create customized templates for customer-managed controls for your compliance needs. New templates are created by importing controls information from an Excel file, or you can create a template from a copy of an existing template.
 
-The pre-configured templates included with Compliance Manager are:
+The pre-configured templates are:
 
-1. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-2. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-3. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-4. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-5. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-6. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-7. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-8. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077) 
-9. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-10. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
-11. [European Union GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-12. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (Preview)
-13. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (Preview)
-14. [Microsoft 365 Data Protection Baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+1. [Brazil General Data Protection Law (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
+2. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (preview)
+3. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
+4. [Dubai Information Security Resolution (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193)
+5. [European Union GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+6. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077)
+7. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (preview)
+10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+13. [Microsoft 365 Data Protection Baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+14. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+16. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 ## Secure Score integration
 

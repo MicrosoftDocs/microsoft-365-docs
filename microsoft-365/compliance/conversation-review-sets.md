@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use the Conversation Reconstruction feature in Advanced eDiscovery to reconstruct, review, and export threaded conversations.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Review conversations in Advanced eDiscovery 
