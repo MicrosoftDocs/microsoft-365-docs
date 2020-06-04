@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/04/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -28,6 +28,10 @@ These controls are within following solution areas:
 - Data loss prevention (DLP)
 - Office message encryption (OME)
 - Teams and sites access controls
+
+>[!Note]
+>This solution describes security and compliance features to protect information subject to data privacy regulations. For a comprehensive list of security features in Microsoft 365, see [Microsoft 365 security documentation]()https://docs.microsoft.com/microsoft-365/security/. For a comprehensive list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance/).
+>
 
 ## Data privacy regulations that impact information protection controls
 
