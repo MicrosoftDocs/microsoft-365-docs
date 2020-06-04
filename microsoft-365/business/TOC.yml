@@ -24,6 +24,8 @@
           href: help-users-install-office.md
         - name: Access on-premises resources
           items: 
+            - name: Synchronize domain users to Microsoft 365
+              href: manage-domain-users.md
             - name: Enable domain-joined Windows 10 devices to be managed
               href: manage-windows-devices.md
             - name: Access resources from an Azure AD-joined device
