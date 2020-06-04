@@ -242,7 +242,7 @@ The following table summarizes accessing and exporting system-generated logs:
 
 ### Deleting system-generated logs
 
-To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions on how to permanently delete a user, see the [Step 5: Delete](gdpr-dsr-azure.md#step-5-delete) section in the Azure Data Subject Requests topic. It's important to note that permanently deleting a user account is irreversible once initiated. Permanently deleting a user account removes the user’s data from system-generated logs for nearly all Dynamics 365 services within 30 days.
+To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions on how to permanently delete a user, see the [Step 5: Delete](gdpr-dsr-azure.md#step-5-delete) section in the Azure Data Subject Requests topic. It's important to note that permanently deleting a user account is irreversible once initiated. Permanently deleting a user account removes the user’s data from system-generated logs, except for data that may compromise the security or stability of the service, for nearly all Dynamics 365 services within 30 days.
 
 ## Learn more
 
