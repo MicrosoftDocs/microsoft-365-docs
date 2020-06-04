@@ -19,31 +19,31 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Quickly hunt for entity or event information
+# Quickly hunt for entity or event information with go hunt
 
 **Applies to:**
 - Microsoft Threat Protection
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-With the **Go hunt** action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action  automatically runs an advanced hunting query to find relevant information about the selected event or entity.
+With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-This action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use **Go hunt** from the following sections:
+This action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
-- In the [incident page](investigate-incidents.md#incident-overview), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, the device **fv-az770** is selected, showing details about the device as well the option to hunt for more information about the device.
+- In the [incident page](investigate-incidents.md#incident-overview), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, a email mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
 
-    ![Image the device details with the Go hunt option](../../media/mtp-ah/device-slideout.png)
+    ![Image showing mailbox details with the go hunt option](../../media/mtp-ah/go-hunt-email.png)
 
-- When viewing the timeline for a machine, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for relevant events in advanced hunting.
+- When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for relevant events in advanced hunting.
 
-    ![Image the event details with the Go hunt option](../../media/mtp-ah/file-machine.png)
+    ![Image showing event details with the go hunt option](../../media/mtp-ah/file-machine.png)
 
-Selecting **Go hunt** passes different queries, depending on whether you've selected an entity or an event. 
+Selecting *go hunt* passes different queries, depending on whether you've selected an entity or an event.
 
 ## Query for entity information
-When using **Go hunt** to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. To keep the results manageable, the query is scoped to around the same time period as the earliest activity in the past 30 days that involves the entity and is associated with the incident.
+When using *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. To keep the results manageable, the query is scoped to around the same time period as the earliest activity in the past 30 days that involves the entity and is associated with the incident.
 
-Here is an example of the go hunt query for the device **fv-az770**:
+Here is an example of the go hunt query for a device:
 
 ```kusto
 let selectedTimestamp = datetime(2020-06-02T02:06:47.1167157Z);
@@ -57,7 +57,7 @@ and DeviceName == deviceName
 | take 100
 ```
 ### Supported entity types
-You can use **Go hunt** after selecting any of these entity types:
+You can use *go hunt* after selecting any of these entity types:
 
 - Files
 - Emails
@@ -68,9 +68,8 @@ You can use **Go hunt** after selecting any of these entity types:
 - IP addresses
 - URLs
 
-
 ## Query for event information
-When using **Go hunt** to query for information about a timeline event, the query checks all relevant schema tables for any events around the time of the selected event. For example, the following query lists events in various schema tables that occured around the same time period on the same device:
+When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for any events around the time of the selected event. For example, the following query lists events in various schema tables that occured around the same time period on the same device:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
@@ -83,7 +82,7 @@ search in (DeviceFileEvents, DeviceProcessEvents, DeviceEvents, DeviceRegistryEv
 | project-reorder Relevance
 ```
 
-## Adjusting the query
+## Adjust the query
 With some knowledge of the [query language](advanced-hunting-query-language.md), you can adjust the query to your preference. For example, you can adjust this line, which determines the size of the time window:
 
 ```kusto
