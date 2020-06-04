@@ -16,8 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Learn how to use sensitivity labels to classify and protect sensitive content by applying protection settings that include encryption and watermarks on content.
-ms.custom: seo-marvel-apr2020
+description: Use sensitivity labels from the Microsoft Information Protection framework to classify and protect sensitive content with encryption and watermarks.
+ms.custom: 
+- seo-marvel-apr2020
+- seo-marvel-jun2020
 ---
 
 # Learn about sensitivity labels

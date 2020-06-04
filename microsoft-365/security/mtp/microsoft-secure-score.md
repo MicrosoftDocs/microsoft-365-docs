@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 ---
 
 # Microsoft Secure Score (previous iteration)
@@ -40,7 +41,7 @@ Organizations gain access to robust visualizations of metrics and trends, integr
 
 Additionally, you can access your recommendations and score through the [Microsoft Graph API](https://www.microsoft.com/security/partnerships/graph-security-api). Learn about the [Secure Score resource type](https://go.microsoft.com/fwlink/?linkid=2092996).
 
-## How your Microsoft Secure Score is calculated
+## How your secure score is calculated
 
 You are given points for configuring recommended security features, performing security-related tasks (such as viewing reports), or addressing the improvement action with a third-party application or software. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users.
 

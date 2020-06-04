@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Learn how you can apply your organization’s specific retention schedules into a Microsoft 365 file plan.
+- seo-marvel-jun2020
+description: With records management in Microsoft 365, you can apply your retention schedules into a file plan that manages retention, records declaration, and disposition.
 ---
 
 # Records management in Microsoft 365
