@@ -128,7 +128,7 @@ New-DkimSigningConfig -DomainName <domain> -Enabled $false
 Get-DkimSigningConfig -Identity <domain> | Format-List Selector1CNAME, Selector2CNAME
 ```
 
-Microsoft 365 performs automatic key rotation using the two records that you establish. If you have provisioned custom domains in addition to the initial domain in Microsoft 365, you must publish two CNAME records for each additional domain. So, if you have two domains, you must publish two additional CNAME records, and so on.
+If you have provisioned custom domains in addition to the initial domain in Microsoft 365, you must publish two CNAME records for each additional domain. So, if you have two domains, you must publish two additional CNAME records, and so on.
 
 Use the following format for the CNAME records.
 
@@ -176,7 +176,10 @@ TTL:                3600
 ```
 
 > [!NOTE]
-> It's important to create the second record, but only one of the selectors may be available at the time of creation. In essence, the second selector might point to an address that hasn't been created yet. We still recommended that you create the second CNAME record, because your key rotation will be seamless and you won't need to do any manual steps yourself.
+> It's important to create the second record, but only one of the selectors may be available at the time of creation. In essence, the second selector might point to an address that hasn't been created yet. We still recommended that you create the second CNAME record, because your key rotation will be seamless.
+
+> [!CAUTION]
+> Automatic key rotation has been temporarily disabled as we implement some design changes in how we create keys. It's a good practice to have multiple keys so that you can rotate them periodically. Although it's hard to crack, it's still a practical mitigation strategy to protect against things like impersonation. You can follow the [Rotate-DkimSigningConfig](https://docs.microsoft.com/powershell/module/exchange/rotate-dkimsigningconfig) document to help do this for your organization. We expect that automatic rotation will be enabled again by August 2020.
 
 ### Enable DKIM signing for your custom domain
 <a name="EnableDKIMinO365"> </a>

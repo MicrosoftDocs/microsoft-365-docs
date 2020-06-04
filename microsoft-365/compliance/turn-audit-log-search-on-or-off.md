@@ -44,22 +44,24 @@ You can use the Security & Compliance Center or PowerShell to turn on audit log 
   
 ### Use the Security & Compliance Center to turn on audit log search
 
-1. In the Security & Compliance Center, go to **Search** \> **Audit log search**.
-    
+1. [Go to the Security & Compliance Center](https://protection.office.com) and sign in.
+
+2. In the Security & Compliance Center, go to **Search** \> **Audit log search**.
+
    A banner is displayed saying that auditing has to be turned on to record user and admin activity.
 
-2. Click **Turn on auditing**.
-    
+3. Click **Turn on auditing**.
+
     ![Click Turn on auditing](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
     The banner is updated to say the audit log is being prepared and that you can search for user and admin activity in a few hours.
-    
+
 ### Use PowerShell to turn on audit log search
 
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. Run the following PowerShell command to turn on audit log search in Office 365.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $true
     ```
@@ -71,15 +73,15 @@ You can use the Security & Compliance Center or PowerShell to turn on audit log 
 You have to use remote PowerShell connected to your Exchange Online organization to turn off audit log search. Similar to turning on audit log search, you have to be assigned the Audit Logs role in Exchange Online to turn off audit log search.
   
 1. [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
-    
+
 2. Run the following PowerShell command to turn off audit log search in Office 365.
-    
+
     ```powershell
     Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
     ```
 
 3. After a while, verify that audit log search is turned off (disabled). There are two ways to do this:
-    
+
     - In PowerShell, run the following command:
 
     ```powershell
@@ -87,7 +89,7 @@ You have to use remote PowerShell connected to your Exchange Online organization
     ```
 
       The value of  `False` for the  _UnifiedAuditLogIngestionEnabled_ property indicates that audit log search is turned off. 
-    
-    - In the Security & Compliance Center, go to **Search** \> **Audit log search**.
-    
+
+    - In the [Security & Compliance Center](https://protection.office.com), go to **Search** \> **Audit log search**.
+
       A banner is displayed saying that auditing has to be turned on in order to record user and admin activity.

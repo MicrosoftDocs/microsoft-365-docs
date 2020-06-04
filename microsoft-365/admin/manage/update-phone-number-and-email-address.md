@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,6 +24,13 @@ description: "Update your administrator phone number and email address in the ad
 
 # Update your admin phone number and email address
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 This article explains how you, the admin, can change your business phone and email address in Microsoft 365.
   
 If you're looking for how to change your company's profile information, such as company name and address, company phone number, and technical contact information, see [Change your organization's address, technical contact email, and other information](change-address-contact-and-more.md).
@@ -46,4 +54,4 @@ For answers to billing questions, see:
   
 - [Change your billing addresses for Microsoft 365 for business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
-- [Add, update, or remove a credit card or bank account in Microsoft 365 for business](../../commerce/billing-and-payments/add-update-or-remove-credit-card-or-bank-account.md)
+- [Manage payment methods](../../commerce/billing-and-payments/manage-payment-methods.md)

@@ -1,11 +1,11 @@
 ---
-title: "4. Deploy remote worker productivity apps and services"
+title: "Step 4. Deploy remote worker productivity apps and services"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 05/27/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -14,12 +14,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-ms.custom: 
 - M365solutions
+ms.custom: 
 description: Enable your users to be productive with Teams, Exchange, SharePoint, and other Microsoft 365 services.
 ---
 
-# 4. Deploy remote worker productivity apps and services
+# Step 4. Deploy remote worker productivity apps and services
 
 To be productive, people need to communicate and collaborate with one another. They need to meet, chat by voice and text, create new content and share information and files, exchange email, and manage calendars and tasks. Microsoft 365 provides cloud-based services for all of these key functions:
 
@@ -28,11 +28,15 @@ To be productive, people need to communicate and collaborate with one another. T
 - For storing and collaborating on files, use SharePoint and OneDrive. You can use them with a web browser or within Teams.
 - For creating new content or collaborating on existing content, Microsoft 365 Apps are versions of Word, PowerPoint, Excel, and Outlook that are installed on your local computer and receive ongoing feature and security updates.
 
+![Use Teams, Outlook, SharePoint, OneDrive, and Microsoft 365 Apps to stay productive](../media/empower-people-to-work-remotely/remote-workers-productivity-grid.png)
+
 ## Keep people connected with Microsoft Teams
 
 Teams allows you to chat, meet, call, and collaborate all in one place. Millions of people get their work done in Teams every day because it brings together everything you need to work remotely into a hub for teamwork. 
 
-You can use [this article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) for guidance on supporting your remote workers with Teams. 
+Use [this article](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams) for guidance on supporting your remote workers with Teams. 
+
+Watch the [Part 1 video](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity) for guidance and demos on using Teams for remote work.
 
 ### Chat and conversations
 
@@ -67,6 +71,7 @@ Microsoft 365 Apps is the most productive and most secure Office experience for 
 ## Admin technical resources for productivity apps and services
 
 - [Support remote workers using Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Part 1 video on Teams for remote workers](https://resources.techcommunity.microsoft.com/enabling-remote-work/#productivity)
 - [Teams Customer Success Kit download](https://www.microsoft.com/download/details.aspx?id=54244)
 - [Tools for driving Teams adoption](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Create a change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
@@ -77,4 +82,4 @@ Microsoft 365 Apps is the most productive and most secure Office experience for 
 
 ## Next step
 
-Continue with [Step 5](empower-people-to-work-remotely-communication-venues.md) to create additional communication venues that serve the unique requirements of the COVID-19 crisis.
+Continue with [Step 5](empower-people-to-work-remotely-communication-venues.md) to create additional communication venues that serve your remote workers.

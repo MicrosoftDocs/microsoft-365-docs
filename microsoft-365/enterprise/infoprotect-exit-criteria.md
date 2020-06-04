@@ -111,4 +111,4 @@ If needed, [Step 7](infoprotect-configure-privileged-access-management.md) can h
 
 Your information protection infrastructure for Microsoft 365 Enterprise uses defined security levels, increased security for Office 365, classification using sensitive data types and labels, Windows Information Protection, Data Loss Prevention, email encryption, and privileged access management.
 
-If you're following the end-to-end deployment of Microsoft 365 Enterprise, you're now ready to have your [workloads and scenarios](deploy-workloads.md) take advantage of all the features and configuration of your foundation infrastructure.
+If you're following the end-to-end deployment of Microsoft 365 Enterprise, you're now ready to have your [workloads](deploy-workloads.md) take advantage of all the features and configuration of your foundation infrastructure.

@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -37,9 +38,6 @@ If you remove a user's license but don't delete the account, you can give yourse
 To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
     
@@ -119,7 +117,7 @@ As global admin, you can give yourself access to the content in a user's OneDriv
 
 2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
 
-3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center.
+3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the SharePoint admin center.
 
 4. In the left pane, select **More features**.
 

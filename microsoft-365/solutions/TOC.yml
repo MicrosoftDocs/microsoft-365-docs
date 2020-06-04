@@ -12,19 +12,20 @@
     - name: Overview
       href: foundation-solutions-overview.md
     - name: Empower remote workers with Microsoft 365
-      href: empower-people-to-work-remotely.md
       items:
-      - name: Step 1. Increase sign-in security for remote workers with MFA
+      - name: Overview   
+        href: empower-people-to-work-remotely.md
+      - name: Step 1. Increase sign-in security
         href: empower-people-to-work-remotely-secure-sign-in.md
       - name: Step 2. Provide remote access
         href: empower-people-to-work-remotely-remote-access.md
-      - name: Step 3. Deploy endpoint management for your devices, PCs, and other endpoints
+      - name: Step 3. Deploy endpoint management
         href: empower-people-to-work-remotely-manage-endpoints.md
-      - name: Step 4. Deploy remote worker productivity apps and services
+      - name: Step 4. Deploy productivity apps and services
         href: empower-people-to-work-remotely-teams-productivity-apps.md
-      - name: Step 5. Create COVID-19 crisis communication venues
+      - name: Step 5. Create communication venues
         href: empower-people-to-work-remotely-communication-venues.md
-      - name: Step 6. Train remote workers and address usage feedback
+      - name: Step 6. Train remote workers
         href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Set up secure collaboration with Microsoft 365
       href: setup-secure-collaboration-with-teams.md

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -32,7 +33,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
   
 - [Recover deleted items in a user mailbox - Admin Help](https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox)
     
-- [Set up an archive and deletion policy for mailboxes in your organization](https://docs.microsoft.com/office365/securitycompliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Set up an archive and deletion policy for mailboxes in your organization](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
     
 - Set up mailbox features such as the mailbox sharing policy: how users can share calendar and contacts information with others outside of your organization. 
     
@@ -40,7 +41,7 @@ Here are some of the key tasks users can do when they are assigned to the Exchan
     
 - [Create a shared mailbox](../email/create-a-shared-mailbox.md) so a group of people can monitor and send email from a common email address. 
     
-- [Email anti-spam protection](https://docs.microsoft.com/office365/securitycompliance/anti-spam-protection) and malware filters for the organization. 
+- [Email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) and malware filters for the organization. 
     
 - Manage Microsoft 365 groups
     
@@ -50,9 +51,10 @@ If you have a large organization, the Exchange admin might want to assign users 
   
  For example, the Exchange admin might assign someone to the Discovery Management role group so they can perform searches of mailboxes for data that meets certain criteria. To learn more, see [Permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) and [Manage Role Groups](https://docs.microsoft.com/exchange/manage-role-groups-exchange-2013-help).
   
-## Learn about other admin roles
-    
+## Learn about other admin role
+
+- [About Microsoft 365 admin roles](about-admin-roles.md)
+
 - [About the SharePoint Online admin role](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
-    
+
 - [About the Skype for Business admin role](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
-    
