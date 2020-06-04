@@ -25,6 +25,26 @@ To make [Microsoft Secure Score](microsoft-secure-score-new.md) a better represe
 
 To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-new.md#whats-new)
 
-## May 2020
+## June 2020
 
-No changes currently planned
+### Remove improvement action for Microsoft Defender Advanced Threat Protection
+
+* Turn on Attack Surface Reduction rules
+
+### Add improvement actions for Microsoft Defender Advanced Threat Protection
+
+* Block Adobe Reader from creating child processes
+* Use advanced protection against ransomware
+* Block all Office applications from creating child processes
+* Block Office applications from creating executable content
+* Block JavaScript or VBScript from launching downloaded executable content
+* Block execution of potentially obfuscated scripts
+* Block executable content from email client and webmail
+* Block Office communication application from creating child processes
+* Block untrusted and unsigned processes that run from USB
+* Block persistence through WMI event subscription
+* Block Office applications from injecting code into other processes
+* Block executable files from running unless they meet a prevalence, age, or trusted list criterion
+* Block process creations originating from PSExec and WMI commands
+* Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+* Block Win32 API calls from Office macros
