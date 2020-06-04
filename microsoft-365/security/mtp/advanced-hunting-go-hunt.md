@@ -1,6 +1,6 @@
 ---
 title: Get relevant info about an entity with go hunt 
-description: Learn how to use the "go hunt" tool on Microsoft Threat Protection to quickly query for relevant information about an entity in advanced hunting.
+description: Learn how to use the "go hunt" tool on to quickly query for relevant information about an entity or event using advanced hunting.
 keywords: advanced hunting, incident, pivot, entity, go hunt, relevant events, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -36,7 +36,7 @@ This action is available in various sections of the security center whenever eve
 
 - When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for relevant events in advanced hunting.
 
-    ![Image showing event details with the go hunt option](../../media/mtp-ah/file-machine.png)
+    ![Image showing event details with the go hunt option](../../media/mtp-ah/go-hunt-event.png)
 
 Selecting *go hunt* passes different queries, depending on whether you've selected an entity or an event.
 
