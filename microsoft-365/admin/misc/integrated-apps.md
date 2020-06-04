@@ -37,7 +37,7 @@ Here's how to turn User consent to apps on or off.
 
 1. In the admin center, go to the **Settings** \> **Org settings** > [Services](https://go.microsoft.com/fwlink/p/?linkid=2053743) page, and then select **User consent to apps**.
 
-2. On the **User consent to apps** page, select the option to turn Integrated Apps on or off.
+2. On the **User consent to apps** page, select the option to turn user consent on or off.
 
 ## More info
 <a name="__toc379982114"> </a>
