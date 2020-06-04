@@ -287,7 +287,7 @@
         - name: Map protection features to Intune settings
           href: ../business/map-protection-features-to-intune-settings.md
         - name: Device states
-          href: device-states.md
+          href: ../business/device-states.md
         - name: App protection settings for Android and iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items: 
