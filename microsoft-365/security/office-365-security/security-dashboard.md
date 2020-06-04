@@ -98,9 +98,9 @@ For example, you might see that phishing email messages are being delivered beca
 
 ## Threat investigation and response
 
-If your organization's subscription includes  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), your Security Dashboard has a section that includes advanced threat investigation and response tools. Your organization's security team can use the information in this section to understand emerging campaigns, investigate threats and manage incidents.
+If your organization's subscription includes  [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), your Security Dashboard has a section that includes advanced threat investigation and response tools. These tools include [automated investigation and response capabilities](automated-investigation-response-office.md). Automated investigation and response can be helpful in scenarios such as [addressing compromised user accounts quickly](address-compromised-users-quickly.md).
 
-![Threat intelligence helps you understand attacks targeted at your organization](../../media/threatintelwidget.png)
+To learn more, see [Get started using Automated investigation and response (AIR) in Office 365](office-365-air.md).
 
 ## Trends
 
