@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/19/2018
+ms.date: 06/04/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -61,13 +61,7 @@ A wide variety of reports are available in the Security &amp; Compliance Center.
 
 Now that you have an overview of reports and insights, your next step is to learn how to customize, manage, and download reports. See the following articles:
   
-- [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
-    
-- [Manage schedules for multiple reports in the Security &amp; Compliance Center](manage-schedules-for-multiple-reports.md)
-    
-- [Download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
-    
-- [Download existing reports in the Security &amp; Compliance Center](download-existing-reports.md)
+
     
 ## Related topics
 
