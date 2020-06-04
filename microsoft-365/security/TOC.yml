@@ -378,21 +378,6 @@
               items: 
                 - name: Security Dashboard overview
                   href: ./office-365-security/security-dashboard.md
-                  items: 
-                    - name: Walkthrough - From a detailed report to an insight
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: Walkthrough - From an insight to a detailed report
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: Walkthrough - From a dashboard to an insight
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: Create a schedule for a report
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: Manage schedules for multiple reports
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: Set up and download a custom report
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: Download existing reports
-                      href: ./office-365-security/download-existing-reports.md
                 - name: View information about malicious files
                   href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
