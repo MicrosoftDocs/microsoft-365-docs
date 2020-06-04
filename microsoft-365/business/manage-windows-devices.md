@@ -1,7 +1,7 @@
 ---
 title: "Enable domain-joined Windows 10 devices to be managed by Microsoft 365 for business"
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -94,22 +94,22 @@ These steps are simplified from [configure hybrid azure AD join](https://docs.mi
 
 Use .ADMX template file.
 
-1.	Log on to AD server and open **Server Manager** > **Tools** > **Group Policy Management**.
-2.	Select the domain name under **Domains** and right-click **Group Policy Objects** to select **New**.
-3.	Give the new GPO an name, for example “*Cloud_Enrollment*”.
+1.	Log on to AD server, search and open **Server Manager** > **Tools** > **Group Policy Management**.
+2.	Select your domain name under **Domains** and right-click **Group Policy Objects** to select **New**.
+3.	Give the new GPO an name, for example “*Cloud_Enrollment*” and then select **OK**.
 4.	Right-click the new GPO under **Group Policy Objects** and select **Edit**.
-5.	Enable the Group Policy: **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM** > **Enable automatic MDM enrollment using default Azure AD credentials**.
+5.	In the **Group Policy Management Editor**, go to **Computer Configuration** > **Policies** > **Administrative Templates** > **Windows Components** > **MDM**.
+6. Right-click **Enable automatic MDM enrollment using default Azure AD credentials** and then select **Enabled** > **OK**. Close the editor window.
 
 > [!IMPORTANT]
 > If you do not see the policy **Enable automatic MDM enrollment using default Azure AD credentials**, see [Get the latest Administrative Templates](#get-the-latest-administrative-templates).
 
 ## 6. Deploy the Group Policy
 
-1.	Right-click the domain name under **Domains**, and select **Link an Existing GPO**.
-2.	Select the new GPO from Step 3 above, for example “Cloud_Enrollment”, and choose **OK**.
-3.	Select the new GPO under **Domains** > **Group Policy Objects**.
-4.	In the GPO’s Scope tab, right-click the link to the domain under **Links**.
-5.	Select **Enforced** to enforce the GPO.
+1.	In the Server Manager, under **Domains** > Group Policy objects, select the GPO from Step 3 above, for example “Cloud_Enrollment”.
+2.	Select the **Scope** tab for your GPO.
+3.	In the GPO’s Scope tab, right-click the link to the domain under **Links**.
+4.	Select **Enforced** to deploy the GPO and then **OK** in the confirmation screen.
 
 ## Get the latest Administrative Templates
 
