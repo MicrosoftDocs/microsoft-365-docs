@@ -32,14 +32,6 @@ Monitoring capabilities available in the Security &amp; Compliance Center includ
   
 In addition to highlighting problem areas, smart reports and insights include recommendations and links to view and explore data and also take quick actions. For example, if your organization suddenly has a high number of email messages being marked as spam by end users, you might be advised to revisit your anti-spam policies to ensure the right level of protection is in place.
   
-The following walkthroughs illustrate how you can navigate between insights, detailed reports, and dashboards in the Security &amp; Compliance Center:
-  
-- [Walkthrough: From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
-    
-- [Walkthrough: From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
-    
-- [Walkthrough: From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)
-    
 ## Types of reports in the Security &amp; Compliance Center
 
 A wide variety of reports are available in the Security &amp; Compliance Center. (Go to **Reports** \> **Dashboard** to get an all-up view.) The following table lists available reports with links to learn more: 
