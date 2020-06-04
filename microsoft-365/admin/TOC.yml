@@ -42,6 +42,14 @@
           href: setup/customize-your-organization-theme.md  
         - name: Learn about Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
+        - name: Access on-premises users and resources
+          items:
+            - name: Synchronize domain users to Microsoft 365
+              href: manage-domain-users.md
+            - name: Enable domain-joined Windows 10 devices to be managed
+              href: manage-windows-devices.md
+            - name: Access resources from an Azure AD-joined device
+              href: access-resources.md
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
