@@ -1,5 +1,5 @@
 ---
-title: Security hurdles you can sail over — One architect’s viewpoint
+title: Networking up (to the cloud) — One architect’s viewpoint
 description: Description.
 ms.author: bcarter
 author: brendacarter
@@ -16,7 +16,7 @@ ms.custom:
 f1.keywords: NOCSH
 ---
 
-# How to network for the cloud — One architect’s viewpoint
+# Networking up (to the cloud) — One architect’s viewpoint
 
 In this article, [Ed Fisher](https://www.linkedin.com/in/edfisher/), Security & Compliance Architect at Microsoft, describes how to optimize your network for cloud connectivity by avoiding the most common pitfalls. 
 

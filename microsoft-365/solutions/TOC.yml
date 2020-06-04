@@ -163,7 +163,7 @@
       href: identity-design-principles.md
     - name: Security hurdles you can sail over
       href: security-design-principles.md
-    - name: How to network for the cloud
+    - name: Networking up (to the cloud)
       href: networking-design-principles.md
 - name: Microsoft 365 deployment resources
   items: 
