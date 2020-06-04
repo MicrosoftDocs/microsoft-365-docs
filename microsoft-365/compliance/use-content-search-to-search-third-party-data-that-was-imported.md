@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/27/2017
+ms.date: 
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
