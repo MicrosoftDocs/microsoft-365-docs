@@ -30,15 +30,20 @@ With the *go hunt* action, you can quickly investigate events and various entity
 
 This action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
-- In the [incident page](investigate-incidents.md#incident-overview), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, a email mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
+- In the [incident page](investigate-incidents.md#incident-overview), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
 
     ![Image showing mailbox details with the go hunt option](../../media/mtp-ah/go-hunt-email.png)
+
+- In the incident page, you can also access a list of entities under the evidence tab. Selecting one of those entities provides an option to quickly hunt for information about that entity.
+
+    ![Image showing selected file with the go hunt option in the Evidence tab](../../media/mtp-ah/go-hunt-evidence-file.png)
+
 
 - When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for relevant events in advanced hunting.
 
     ![Image showing event details with the go hunt option](../../media/mtp-ah/go-hunt-event.png)
 
-Selecting *go hunt* passes different queries, depending on whether you've selected an entity or an event.
+Selecting **Go hunt** or **Hunt for related events** passes different queries, depending on whether you've selected an entity or an event.
 
 ## Query for entity information
 When using *go hunt* to query for information about a user, device, or any other type of entity, the query checks all relevant schema tables for any events involving that entity. To keep the results manageable, the query is scoped to around the same time period as the earliest activity in the past 30 days that involves the entity and is associated with the incident.
