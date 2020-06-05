@@ -28,8 +28,9 @@
       - name: Step 6. Train remote workers
         href: empower-people-to-work-remotely-train-monitor-usage.md
     - name: Set up secure collaboration with Microsoft 365
-      href: setup-secure-collaboration-with-teams.md
       items:
+      - name: Overview   
+        href: setup-secure-collaboration-with-teams.md
       - name: Step 1. Configure three tiers of protection with Microsoft Teams
         items:
         - name: Three tiers of protection overview
