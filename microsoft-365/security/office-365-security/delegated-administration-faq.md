@@ -30,7 +30,7 @@ If you are a Microsoft partner or reseller, and you've signed up to be a Microso
 
 3. Create the delegated admin account using the steps in [Add, change, or delete a subscription advisor partner](https://docs.microsoft.com/office365/admin/misc/add-partner).
 
-Visit [Partners: Build your business and administer partner subscription](https://support.office.com/article/30dd1681-47e0-4cbc-abfe-a222cd111319) for more information about how to set up delegated administration.
+Visit [Partners: Build your business and administer partner subscription](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) for more information about how to set up delegated administration.
 
 ## I'm a customer, not a reseller, how can set up delegated administrator for my sub-tenants?
 
