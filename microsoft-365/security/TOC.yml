@@ -375,11 +375,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items: 
-                - name: Security Dashboard overview
-                  href: ./office-365-security/security-dashboard.md
-                - name: View information about malicious files
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: Security Dashboard overview
+              href: ./office-365-security/security-dashboard.md
+            - name: View information about malicious files
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items: 
