@@ -119,8 +119,8 @@ Accounts assigned the following Azure Active Directory (AD) roles can access Mic
 >[!NOTE]
 >Role-based access control settings in Microsoft Defender ATP influence access to data. For more information, read about [managing access to Microsoft Threat Protection](mtp-permissions.md).
 
-### What time zone will Microsoft Threat Protection default to?
-By default, Microsoft Threat Protection will display time information in the UTC time zone. You can change this setting to use your local timezone. [Learn about setting the time zone](mtp-time-zone.md)
+### What time zone does Microsoft Threat Protection default to?
+By default, Microsoft Threat Protection displays time information in the UTC time zone. You can change this setting to use your local time zone. [Learn about setting the time zone](mtp-time-zone.md)
 
 ### How can I learn about new Microsoft Threat Protection feature and UI updates?
 
@@ -129,7 +129,7 @@ Microsoft regularly provides information through the various channels, including
 - The [message center](../../admin/manage/message-center.md) in Microsoft 365 admin center
 - Blogposts in the [Microsoft 365 security & compliance tech community](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
-We recommend you [turn on preview features](preview.md) to get the latest publicly available experiences.
+Get the latest publicly available experiences by turning on [preview features](preview.md).
 
 ## Related topics
 

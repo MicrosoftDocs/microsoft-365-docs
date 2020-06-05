@@ -29,7 +29,7 @@ search.appverid:
 Learn about the licensing, hardware and software requirements, and other configuration settings to provision and use Microsoft Threat Protection.
 
 ## Licensing requirements
-Any of these licenses give you access to Microsoft Threat Protection features in Microsoft 365 security center without additional cost:
+Any of these licenses gives you access to Microsoft Threat Protection features in Microsoft 365 security center without additional cost:
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E5 Security or A5 Security
@@ -42,7 +42,7 @@ Any of these licenses give you access to Microsoft Threat Protection features in
 - Office 365 Advanced Threat Protection (Plan 2) 
 
 >[!NOTE]
->  Trial licenses for Office 365 currently does not provide access to Microsoft Threat Protection.
+>  Trial licenses for Office 365 currently do not provide access to Microsoft Threat Protection.
 
 
 For more information, [view the Microsoft 365 Enterprise service plans](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise).
