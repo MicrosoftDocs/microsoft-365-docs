@@ -28,7 +28,7 @@ description: "Use the admin center to set up your organization in the cloud, and
 
 # About the Microsoft 365 admin center
 
-**If you purchased a Microsoft 365 for Business plan AND you have admin permissions, you have access to the admin center**. This article is for you!
+**If you purchased a Microsoft 365 for business plan AND you have admin permissions, you have access to the admin center**. This article is for you!
 
 **If you are a user or have a Microsoft 365 Family plan, you do not have an admin center.** To set up Microsoft 365, go to [Download and install or reinstall Microsoft 365 or Office 2019 on a PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
 
