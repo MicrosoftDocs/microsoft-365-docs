@@ -227,7 +227,7 @@ Whenever you make a change to site and group settings for a label, you must run 
 
 ## Support for the sensitivity labels
 
-You can use the sensitivity labels that you've configured for site and group settings with the following apps and services:
+The following apps and services can create groups that support sensitivity labels configured for sites and group settings:
 
 - Admin centers
     - Sharepoint admin center
@@ -237,26 +237,23 @@ You can use the sensitivity labels that you've configured for site and group set
 - User apps and services
     - SharePoint
     - Teams
-    - Outlook on the web
+    - Outlook on the web and for Windows, MacOS, iOS, and Android
+    - Forms
+    - Stream
 
+The following apps and services that can create groups can't currently support sensitivity labels configured for sites and group settings:
 
+- Admin centers
+    - Microsoft 365 admin center
+    - Teams admin center
+    - Exchange admin center
 
-Other apps and services that you can't currently use the sensitivity labels that you've configured for site and group settings include:
-
-- Outlook for the Mac
-- Outlook mobile
-- Outlook desktop for Windows
-- Forms
-- Dynamics 365
-- Yammer
-- Stream
-- Planner
-- Project
-- PowerBI
-- Teams admin center
-- Microsoft 365 admin center
-- Exchange admin center
-
+- User apps and services
+    - Dynamics 365
+    - Yammer
+    - Planner
+    - Project
+    - PowerBI
 
 ## Classic Azure AD group classification
 
