@@ -1,5 +1,5 @@
 ---
-title: "Manage protected devices with Microsoft 365 for business"
+title: "Manage protected devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
