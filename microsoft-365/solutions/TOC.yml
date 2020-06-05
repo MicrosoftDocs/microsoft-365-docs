@@ -69,8 +69,11 @@
         - name: External sharing reference
           href: microsoft-365-guest-settings.md    
     - name: Deploy threat protection across Microsoft 365
-      href: deploy-threat-protection.md
-
+      items:
+      - name: Overview   
+        href: deploy-threat-protection.md
+      - name: Steps to configure threat protection
+        href: deploy-threat-protection-configure.md
     
 - name: Workload solutions and scenarios
   items: 
