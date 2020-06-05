@@ -51,7 +51,7 @@ These settings cover a range of features that are outside of security policies.
 |[PowerShell connectivity](https://docs.microsoft.com/powershell/exchange/exchange-online/disable-access-to-exchange-online-powershell)|Disabled|Disabled|Available for mailbox users or mail users (user objects returned by the [Get-User](https://docs.microsoft.com/powershell/module/exchange/get-user) cmdlet).|
 |Use [spoof intelligence](learn-about-spoof-intelligence.md) to whitelist senders whenever possible|Yes|Yes||
 |[Directory-Based Edge Blocking (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Enabled|Enabled|Domain Type = Authoritative|
-|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
+|[Set up multi-factor authentication for all admin accounts](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Enabled|Enabled||
 |
 
 ## Troubleshooting
