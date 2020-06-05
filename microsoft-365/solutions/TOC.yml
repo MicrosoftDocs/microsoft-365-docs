@@ -83,7 +83,7 @@
       - name: Telephony solutions
         items: 
         - name: Choose your solution 
-          href: https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Case study for multi-national corporation 
           href: 
       - name: File collaboration in SharePoint with Microsoft 365
@@ -91,7 +91,7 @@
       - name: Plan an intelligent SharePoint intranet
         href: https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: OneDrive Guide for enterprises
-        href: https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
     - name: Security
       items:
       - name: Top tasks for security teams to support working from home
