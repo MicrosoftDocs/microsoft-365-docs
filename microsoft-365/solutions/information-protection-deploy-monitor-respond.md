@@ -1,11 +1,11 @@
 ---
 title: "Monitor and respond to data privacy incidents in your organization"
-author: JoeDavies-MSFT
+ms.author: bcarter
+author: brendacarter
 f1.keywords:
 - NOCSH
-ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/05/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: 
-description: add.
+description: Use auditing and alert policies and data subject requests to monitor and respond to personal data incidents.
 ---
 
 # Monitor and respond to data privacy incidents in your organization
 
-Microsoft 365 solutions are available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. Having processes, procedures, and other documentation for each of these may also be important to demonstrate compliance to regulatory bodies.
+Microsoft 365 features are available to help you monitor, investigate, and respond to data privacy incidents in your organization as you operationalize related capabilities. Having processes, procedures, and other documentation for each of these may also be important to demonstrate compliance to regulatory bodies.
 
 These include: 
 
@@ -30,7 +30,7 @@ These include:
 
 ## Data privacy regulations impacting the use of monitoring and response tools
 
-A sample listing of data privacy regulations that may relate to information governance controls is provided below.
+Here is a sample listing of data privacy regulations that may relate to information governance controls:
 
 - LGPD Article 46
 - LGPD Article 48
@@ -43,7 +43,7 @@ A sample listing of data privacy regulations that may relate to information gove
 
 For more information, see [Assess data privacy risks and identify sensitive information](information-protection-deploy-assess.md).
 
-The data privacy regulations generally call for the following in the area of monitoring and response:
+The data privacy regulations generally call for the following for monitoring and response:
 
 - Auditing, alerting, and reporting for activities related to the storage, sharing and processing of personal data
 - The ability to respond to a data subject request (DSR) and in some cases, perform investigative and other administrative measures to comply with such requests.
@@ -70,11 +70,11 @@ See [Data Subject Requests for the GDPR and CCPA](../compliance/gdpr-dsr-office3
 
 ## Manage deleted users in Microsoft Stream
 
-For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure AD) for any reason, if their name was associated with a posted Stream video prior to that point, their email address remains associated with the video. See [Manage deleted users from Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) to remove it.
+For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure AD), if their name was associated with a posted Stream video prior to that point, their email address remains associated with the video. See [Manage deleted users from Microsoft Stream](https://docs.microsoft.com/stream/managing-deleted-users) to remove it.
 
 ## Additional investigative tools
 
-In addition, two additional tools not covered in the above articles may be useful for monitoring, investigating and remediating data privacy-related incidents in your organization:
+Here are two additional tools that might be useful for monitoring, investigating, and remediating data privacy-related incidents in your organization:
 
 - [Insider risk management in Microsoft 365](../compliance/insider-risk-management.md), a solution in the Microsoft Compliance admin center to help minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.
-- [Data investigations in Microsoft 365](../compliance/overview-data-investigations.md), a solution in the Microsoft Compliance admin center to search for sensitive, malicious, or misplaced data across Office 365, and then investigate what happened to take the appropriate actions to remediate the incident.
+- [Data investigations in Microsoft 365](../compliance/overview-data-investigations.md), a solution in the Microsoft Compliance admin center to search for sensitive, malicious, or misplaced data across Microsoft 365, and then investigate what happened to take the appropriate actions to remediate the incident.

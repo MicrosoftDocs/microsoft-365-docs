@@ -1,11 +1,11 @@
 ---
 title: "Protect information subject to data privacy regulation"
-author: JoeDavies-MSFT
+ms.author: bcarter
+author: brendacarter
 f1.keywords:
 - NOCSH
-ms.author: josephd
 manager: laurawi
-ms.date: 06/04/2020
+ms.date: 06/05/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: 
-description: add.
+description: Deploy Microsoft 365 security and compliance features and protect your personal information.
 ---
 
 # Protect information subject to data privacy regulation
@@ -30,7 +30,7 @@ These controls are within following solution areas:
 - Teams and sites access controls
 
 >[!Note]
->This solution describes security and compliance features to protect information subject to data privacy regulations. For a comprehensive list of security features in Microsoft 365, see [Microsoft 365 security documentation]()https://docs.microsoft.com/microsoft-365/security/. For a comprehensive list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance/).
+>This solution describes security and compliance features to protect information subject to data privacy regulations. For a comprehensive list of security features in Microsoft 365, see [Microsoft 365 security documentation](https://docs.microsoft.com/microsoft-365/security/). For a comprehensive list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance/).
 >
 
 ## Data privacy regulations that impact information protection controls
@@ -77,10 +77,6 @@ For information on other information protection capabilities outside of Microsof
 - [Microsoft Endpoint Manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)
 - [Windows Information Protection](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)].
 
-## Service encryption with Customer Key
-
-<!-- this whole section is missing -->
-
 ## Sensitivity labels
 
 [Sensitivity labels](../compliance/sensitivity-labels.md) from the Microsoft Information Protection framework let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
@@ -125,30 +121,6 @@ Complete these activities prior to implementing any of the sensitivity label-bas
    - **Use sub-labels for key departments.** Some departments will have specific needs that require specific labels. Define these labels as sub-labels to an existing label and consider using scoped policies that are assigned to user groups instead of globally.
    - **Consider scoped policies.** Policies targeted at subsets of users will prevent "label overload". A scoped policy enables assigning role or department specific (sub-)labels to just employees that work for that specific department. 
    - **Use meaningful label names.** Try not to use jargon, standards, or acronyms as label names. Try to use names that resonate with the end user to improve adoption. Instead of using labels like PII, PCI, HIPAA, LBI, MBI and HBI consider names like Non-Business, Public, General, Confidential and Highly Confidential.
-
-<!--
-
-#### Example sensitivity label scheme
-
-An example sensitivity-labelling scheme is provided here for reference as a good starting point. The sensitivity labels for sites type have a "_site" suffix appended to them to differentiate them from content-targeted labels.
-
-| Type/target | Sensitivity label | Sub-label | Example settings |
-|:-------|:-----|:-------|:-------|
-| Site | Public-General_site | N/A | Public, external allowed, unmanaged devices allowed |
-|  | Public-Internal_site | N/A | Public, no external sharing, managed devices only |
-|  | Private-Confidential_site | N/A | Private, no external sharing, managed devices only |
-| Content (client-side and service-side application) | Non-business | N/A | Data does not belong to your organization, is not encrypted, and cannot be tracked or revoked. <br> Not to be used for personal data. |
-|  | Public | N/A |Data produced for `<your org>` and is approved for public consumption, is not encrypted, and cannot be tracked or revoked.  |
-|  | General | N/A | Internal `<your org>` data that is not meant for public consumption but can be shared internally and with guests and partners. No encryption, and cannot be tracked or revoked |
-|  | Confidential | Recipients only | Data is classified and protected with “Do Not Forward” rules. Recipients can read but cannot forward, print, or copy content. |
-|  |  | FTE | Data is classified and protected with “Do Not Forward” rules. Recipients (FTEs) can view, edit, reply, forward and print. Recipients can unprotect content with proper justification. |
-|  |  | Extended | Data is classified and protected with “Do Not Forward” rules. Recipients (FTEs and non-employees) can read, edit, reply, forward and print. Recipients can unprotect content with proper justification. |
-|  | Highly confidential | Recipients only | Data is classified and protected with “Do Not Forward” rules. Recipients can read but cannot forward, print, or copy content. <br> Conversation owner has full permission to their message and all replies. |
-|  |  | FTE | Data is classified and protected with “Do Not Forward” rules. Recipients (FTEs) can view, edit, and reply. |
-|  |  | Extended | Data is classified and protected with “Do Not Forward” rules. Recipients (FTEs and non-employees) can view, edit, and reply. |
-|||||
-
--->
 
 ### Create and deploy sensitivity labels for sites, groups, and teams
 
