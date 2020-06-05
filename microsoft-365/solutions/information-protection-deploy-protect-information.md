@@ -30,7 +30,7 @@ These controls are within following solution areas:
 - Teams and sites access controls
 
 >[!Note]
->This solution describes security and compliance features to protect information subject to data privacy regulations. For a comprehensive list of security features in Microsoft 365, see [Microsoft 365 security documentation](https://docs.microsoft.com/microsoft-365/security/). For a comprehensive list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance/).
+>This solution describes security and compliance features to protect information subject to data privacy regulations. For a complete list of security features in Microsoft 365, see [Microsoft 365 security documentation](https://docs.microsoft.com/microsoft-365/security/). For a complete list of compliance features in Microsoft 365, see [Microsoft 365 compliance documentation](https://docs.microsoft.com/microsoft-365/compliance/).
 >
 
 ## Data privacy regulations that impact information protection controls
@@ -47,9 +47,9 @@ See the [assess data privacy risks and identify sensitive items article](informa
 
 Data privacy regulations for information protection recommend:
 
-- Protection against loss or unauthorized access, usage and/or transmission
-- Risk-based application of protective mechanisms
-- Use of encryption where appropriate
+- Protection against loss or unauthorized access, usage and/or transmission.
+- Risk-based application of protective mechanisms.
+- Use of encryption where appropriate.
 
 Your organization may also want to protect Microsoft 365 content for other purposes, such as other compliance needs or for business reasons. Establishing your information protection scheme for data privacy should be done as part of overall information protection planning, implementation, and management.
 
@@ -61,7 +61,7 @@ Microsoft [information protection solutions](../compliance/protect-information.m
 
 - [Service encryption with Customer Key](../compliance/customer-key-overview.md)
 - [Sensitive information types](../compliance/what-the-sensitive-information-types-look-for.md) (described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md))
-- Sensitivity labels
+- [Sensitivity labels](../compliance/sensitivity-labels.md) 
   - Service/container-level
   - Client-side/content-level
   - Automated for data-at-rest in SharePoint and OneDrive
@@ -79,48 +79,50 @@ For information on other information protection capabilities outside of Microsof
 
 ## Sensitivity labels
 
-[Sensitivity labels](../compliance/sensitivity-labels.md) from the Microsoft Information Protection framework let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
+Sensitivity labels from the Microsoft Information Protection framework let you classify and protect your organization's data without hindering the productivity of users and their ability to collaborate.
 
 ![Sensitivity labels in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
-
-<!-- I don't think the graphic is accurate. Sensitivity labels don't apply to containers for SharePoint for example. That's a major reason we still promote IRM for SharePoint and OneDrive. Carol needs to confirm that. -->
 
 ### Prerequisites for sensitivity labels
 
 Complete these activities prior to implementing any of the sensitivity label-based capabilities highlighted below:
 
-1. Understand the modern sensitivity label capability in Microsoft 365 and business reasons for their application
+1. Understand the following:
    - **Business requirements.** Establish the business reasons for applying sensitivity labels in your enterprise. For example, your data privacy requirements for information protection.
-   - **Modern sensitivity label capabilities.** Sensitivity labelling can get complex, so make sure to read the Sensitivity labels set of articles before getting started.
-   - **Key things to remember** – Sensitivity labels are managed in one place (Microsoft Compliance admin center) but the targeting and application options vary significantly, namely:
-      - There are sensitivity labels for sites, groups, and Teams (container level – settings do not apply to content inside the container). These are published to users/groups of users who apply them when a site, group or Team is provisioned.
-      - There are sensitivity labels for active (opened) content. These are also published to user/groups of users, who either manually apply them, or they get applied automatically (based on policy settings) when: (a) the file is opened/edited/saved, either to the user’s desktop or a SharePoint site; or (b) an email is drafted and sent.
-      - There are sensitivity labels for automatic application to files at rest in SharePoint and OneDrive (as well as to emails in transit through Exchange). These are targeted to either all sites or specific ones (no exclusion rules) as well as all or specific Exchange users (no exclusion rules) and automatically apply to the files at rest in these environments (or emails in transit). Thus, this may make sense as part of a more macro strategy but should be reconciled with other methods.
+   - **Sensitivity label capabilities.** Sensitivity labelling can get complex, so make sure to read the [sensitivity labels documentation](../compliance/sensitivity-labels.md) before getting started.
+   - **Key things to remember** Sensitivity labels are managed in tha Microsoft Compliance admin center but the targeting and application options vary significantly.
+      - There are sensitivity labels for sites, groups, and Teams at the container level (the settings do not apply to content inside the container). These are published to users and groups who apply them when a site, group or Team is provisioned.
+      - There are sensitivity labels for active content. These are also published to user or groups, who either manually apply them, or they get applied automatically when:
+        - The file is opened/edited/saved, either to the user’s desktop or a SharePoint site.
+        - An email is drafted and sent.
+      - There are sensitivity labels for automatic application to files at rest in SharePoint and OneDrive in addition to to emails in transit through Exchange. These are targeted to either all sites or specific ones and automatically apply to the files at rest in these environments.
 
-2. Rationalize modern sensitivity labelling with past or alternative methods
+2. Rationalize current sensitivity labelling with past or alternative methods
 
    - Azure Information Protection
-    A new modern sensitivity labelling scheme may need to be reconciled with any existing [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) labeling implementation.
+
+      The current sensitivity labelling scheme may need to be reconciled with any existing [Azure Information Protection](../compliance/sensitivity-labels.md#sensitivity-labels-and-azure-information-protection) labeling implementation.
    - OME
-    If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. Refer to [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
-3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, modern sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security. See [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security)]) to achieve your data privacy-related information protection goals.
+      If you are planning to use modern sensitivity labelling for email protection and existing email encryption methods like OME are in place, they can co-exist, but you should understand the scenarios in which either should be applied. See [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), which includes a table comparing modern sensitivity label-type protection with OME-based protection.
 
-4. Develop a sensitivity label classification and control scheme. See Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper) to help you with developing a sensitivity labelling classification scheme.
+3. Plan for integration into a broader information protection scheme. On top of coexistence with OME, current sensitivity labels can be used along-side capabilities like Microsoft 365 data loss prevention (DLP) and Microsoft Cloud App Security. See [Sensitivity Labels and Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) to achieve your data privacy-related information protection goals.
+
+4. Develop a sensitivity label classification and control scheme. See [Data Classification and Sensitivity Label Taxonomy](https://aka.ms/dataclassificationwhitepaper).
 
 ### General guidance
 
-1. **Define your schema.** Before using technical capabilities to apply labels and protection, work across your organization to define a classification schema. Your organization might already have a classification schema, which makes it easier to add personal data. This article includes an example sensitivity labelling scheme. You can use this as a starting point, if needed.
+1. **Schema definition.** Before using technical capabilities to apply labels and protection, work across your organization to define a classification schema. You might already have a classification schema, which makes it easier to add personal data. 
 2. **Getting started.** Begin by deciding on the number and names of labels to implement. Do this activity without worrying about which technology to use and how labels will be applied. Apply this schema universally throughout your organization, including data that resides on premises and in other cloud services.
-3. **Additional recommendations**  When designing and implementing policies, labels, and conditions, consider following these recommendations:
+3. **Additional recommendations** When designing and implementing policies, labels, and conditions, consider following these recommendations:
 
-   - **Use existing classification schema (if any).** Many organizations already are using data classification in some form. Carefully evaluate the existing label schema and (if possible) use it as is. Using familiar labels that are recognizable to the end-user will drive adoption.
+   - **Use existing classification schema (if any).** Many organizations already are using data classification in some form. Carefully evaluate the existing label schema and if possible use it as is. Using familiar labels that are recognizable to your end-users will drive adoption.
    - **Start small.** There is virtually no limit to the number of labels that you can create. However, large numbers of labels and sub-labels can slow adoption.
-   - **Use scenarios and use cases.** Identify common use cases within the organization and use scenarios derived from the data privacy regulations you are subject to verify if the envisioned label and classification configuration will work in practice.
+   - **Use scenarios and use cases.** Identify common use cases within your organization and use scenarios derived from the data privacy regulations to which you are subject. Verify if the envisioned label and classification configuration will work in practice.
    - **Question every request for a new label.** Does every scenario or use case really need a new label or can you use what you already have? Keeping the number of labels to a minimum improves adoption.
    - **Use sub-labels for key departments.** Some departments will have specific needs that require specific labels. Define these labels as sub-labels to an existing label and consider using scoped policies that are assigned to user groups instead of globally.
-   - **Consider scoped policies.** Policies targeted at subsets of users will prevent "label overload". A scoped policy enables assigning role or department specific (sub-)labels to just employees that work for that specific department. 
-   - **Use meaningful label names.** Try not to use jargon, standards, or acronyms as label names. Try to use names that resonate with the end user to improve adoption. Instead of using labels like PII, PCI, HIPAA, LBI, MBI and HBI consider names like Non-Business, Public, General, Confidential and Highly Confidential.
+   - **Consider scoped policies.** Policies targeted at subsets of users will prevent label overload. A scoped policy enables assigning role or department specific labels or sub-labels to just employees that work for that specific department. 
+   - **Use meaningful label names.** Try not to use jargon, standards, or acronyms as label names. Try to use names that resonate with the end user to improve adoption. Instead of using labels like PII, PCI, HIPAA, LBI, MBI and HBI, consider names like Non-Business, Public, General, Confidential and Highly Confidential.
 
 ### Create and deploy sensitivity labels for sites, groups, and teams
 
@@ -136,37 +138,38 @@ Use the following label settings to help protect the content in those containers
 - External user access
 - Access from unmanaged devices
 
-For data privacy, containers that will be used for storing content with sensitive personal data, prevent external sharing, mark the files containing the data as private, and require managed devices.
+For data privacy, to prevent external sharing for containers that will be used for storing content with sensitive personal data, mark the files containing the data as private, and require managed devices.
 
 ### Create and deploy sensitivity labels for content
 
-[Sensitivity labels](../compliance/get-started-with-sensitivity-labels.md) for content allow you to encrypt content, watermark content, and define other controls on content worked with in Office applications, including Outlook and Office on the web.
+Sensitivity labels applied to files allow you to encrypt their content, watermark the content, and define other controls for Office applications content, including Outlook and Office on the web.
 
-When you're ready to start protecting your organization's data by using sensitivity labels:
+When you're ready to start protecting your organization's data with sensitivity labels:
 
 1. **Create the labels.** Create and name your sensitivity labels according to your organization's classification taxonomy for different sensitivity levels of content. For more information on developing a classification taxonomy, see the [Data Classification and Sensitivity Label Taxonomy white paper](https://aka.ms/dataclassificationwhitepaper).
 2. **Define what each label can do.** Configure the protection settings you want associated with each label. For example, you might want lower sensitivity content (such as a "General" label) to have just a header or footer applied, while higher sensitivity content (such as a "Confidential" label) should have a watermark and have encryption enabled.
-3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable — you define it once, and then you can include it in several label policies assigned to different users.
+3. **Publish the labels.** After your sensitivity labels are configured, publish them by using a label policy. Decide which users and groups should have the labels and what policy settings to use. A single label is reusable. You define it once and then you can include it in several label policies assigned to different users.
 
-Once you publish sensitivity labels from the Microsoft 365 compliance center, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect data as it's created or edited.
+Once you publish sensitivity labels from the Microsoft 365 compliance center, they start to appear in [Office apps](../compliance/sensitivity-labels-office-apps.md) for users to classify and protect content as it's created or edited.
 
 ![Sensitivity label deployment flow in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-label-flow.png)
 
 For data privacy, you manually apply a sensitivity label with encryption and other rules to email or content containing sensitive personal information.
 
 >[!Note]
->Sensitivity labels applied to email (with encryption) have some overlapping functionality with OME. See [Secure email scenarios comparison with OME and sensitivity labels](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels).
+>Sensitivity labels with encryption enabled applied to email have some overlapping functionality with OME. See [Secure email scenarios comparison with OME and sensitivity labels](#secure-email-scenarios-comparison-with-ome-and-sensitivity-labels).
 
-### Client-side auto-labeling when users edit documents or compose (also reply or forward) emails
+### Client-side auto-labeling when users edit documents or compose emails
 
-When you create a sensitivity label, you can [automatically assign that label](../compliance/apply-sensitivity-label-automatically.md) to content (including email) when it matches conditions that you specify.
+When you create a sensitivity label, you can [automatically assign that label](../compliance/apply-sensitivity-label-automatically.md) to content including email when it matches conditions that you specify.
+
 The ability to apply sensitivity labels to content automatically is important because:
 
 - You don't need to train your users when to use each of your classifications.
 - You don't need to rely on users to classify all content correctly.
 - Users no longer need to know about your policies—they can instead focus on their work.
 
-This method supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content.
+Auto-labelling supports recommending a label to users, as well as automatically applying a label. But in both cases, the user decides whether to accept or reject the label, to help ensure the correct labeling of content.
 
 This client-side labeling has minimal delay for documents because the label can be applied even before the document is saved. However, not all client apps support auto-labeling. This capability is supported by the Azure Information Protection unified labeling client, and [some versions of Office apps](../compliance/sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -176,13 +179,13 @@ For data privacy, you auto-apply sensitivity labels for content containing sensi
 
 ### Service-side auto-labeling when content is already saved
 
-This method is referred to as auto classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes).
+This method is referred to as auto classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (for documents in SharePoint and OneDrive) and data in transit (for email that is sent or received by Exchange). For Exchange, it doesn't include emails in mailboxes at rest.
  
 Because this labeling is applied by the service itself rather than by user application, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
 
 For configuration instructions, see [How to configure auto-labeling policies for SharePoint, OneDrive, and Exchange](../compliance/apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange).
 
-For data privacy, for sites of concern, push sensitivity labels for automatic encryption of content containing sensitive personal information.
+For data privacy within sites of concern, push sensitivity labels for automatic encryption of content containing sensitive personal information.
 
 ## Data loss prevention 
 
@@ -300,13 +303,13 @@ For data privacy, you use OME to protect internal messages containing sensitive 
 
 You can also define mail flow rules to apply this protection. For example, you can create a rule that requires the encryption of all messages addressed to a specific recipient, or that contains specific keywords words in the subject line, and also specify that recipients can't copy or print the contents of the message.
 
-In addition, OME [Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md) helps you meet compliance obligations that require more flexible controls over external recipients and their access to encrypted emails. With Advanced Message Encryption in Microsoft 365, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types. 
+In addition, [OME Advanced Message Encryption](../compliance/ome-advanced-message-encryption.md) helps you meet compliance obligations that require more flexible controls over external recipients and their access to encrypted emails. With OME Advanced Message Encryption in Microsoft 365, you can control sensitive emails shared outside the organization with automatic policies that detect sensitive information types. 
 
 For data privacy, if you need to share email with an external party, you can specify an expiration date and revoke messages. You can only revoke and set an expiration date for messages sent to external recipients.
 
 ### Secure email scenarios comparison with OME and sensitivity labels
 
-OME and sensitivity labels applied to email (with encryption) have some overlap, so it’s important to understand which scenarios either may apply to, as shown in this table.
+OME and sensitivity labels applied to email with encryption have some overlap, so it’s important to understand which scenarios that either might apply to, as shown in this table.
 
 | Scenario | Sensitivity Labels | OME |
 |:-------|:-----|:-------|
@@ -321,7 +324,7 @@ There will also be differences in end-user and admin experiences between these t
 
 ## Teams with protection for highly sensitive data
 
-For organizations that plan to store personal data (subject to data privacy regulations) in Teams, see [Configure a team with security isolation](secure-teams-security-isolation.md), which provides detailed guidance and configuration steps for:
+For organizations that plan to store personal data subject to data privacy regulations in Teams, see [Configure a team with security isolation](secure-teams-security-isolation.md), which provides detailed guidance and configuration steps for:
 
 - Identity and device access
 - Creation of a private team
