@@ -80,9 +80,9 @@ When you don’t permit outbound UDP traffic from clients to the service, they c
 ### Split tunneling may seem scary
 But it isn’t. All connections to Office 365 are over TLS. We have been offering TLS 1.2 for quite a while now and will be disabling older versions soon because legacy clients still use them and that’s a risk.
 
-Forcing a TLS connection, or thirty-two of them, to go over a VPN before they then go to the service does not add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP which again will have a very negative impact on streaming traffic. And, unless you are doing TLS inspection, there is no upside, all downside. A very common theme among customers at present, now that most of their workforce is remote, is that they are seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](https://docs.microsoft.com/en-us/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories).
+Forcing a TLS connection, or thirty-two of them, to go over a VPN before they then go to the service does not add security. It does add latency and reduces overall throughput. In some VPN solutions, it even forces UDP to tunnel through TCP which again will have a very negative impact on streaming traffic. And, unless you are doing TLS inspection, there is no upside, all downside. A very common theme among customers at present, now that most of their workforce is remote, is that they are seeing significant bandwidth and performance impacts from making all their users connect using a VPN, instead of configuring split tunneling for access to [Optimize category Office 365 endpoints](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#new-office-365-endpoint-categories).
 
-It’s an easy fix to do split tunneling and it’s one you should do. For more, make sure you review [Optimize Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/en-us/office365/enterprise/office-365-vpn-split-tunnel).
+It’s an easy fix to do split tunneling and it’s one you should do. For more, make sure you review [Optimize Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel).
 
 
 ## The sins of the past
@@ -92,7 +92,7 @@ Other times, hardware that was sized and purchased before the organization start
 
 ## Exceptions to the rules
 
-If your organization requires [tenant restrictions](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions), you’ll need to use a proxy with TLS break and inspect to  force some traffic through the proxy, but you don’t have to force all traffic through it.  It’s not an all or nothing proposition, so pay attention to what does need to be modified by the proxy. 
+If your organization requires [tenant restrictions](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions), you’ll need to use a proxy with TLS break and inspect to  force some traffic through the proxy, but you don’t have to force all traffic through it.  It’s not an all or nothing proposition, so pay attention to what does need to be modified by the proxy. 
 
 If you are going to permit split tunneling but also use a proxy for general web traffic, make sure your PAC file defines what must go direct as well as how you define interesting traffic for what goes through the VPN tunnel. We offer sample PAC files at [https://aka.ms/ipaddrs](https://aka.ms/ipaddrs) that will make this easier to manage.
 
@@ -104,32 +104,32 @@ Tens of thousands of organizations, including almost all the Fortune 500, use Of
 
 ## Further reading
 
-[The Office 365 Network Connectivity Principles](https://docs.microsoft.com/en-us/office365/enterprise/office-365-network-connectivity-principles)
+[The Office 365 Network Connectivity Principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles)
 
-[Office 365 URLs and IP address ranges](https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
+[Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2)
 
-[Managing Office 365 endpoints](https://docs.microsoft.com/en-us/office365/enterprise/managing-office-365-endpoints)
+[Managing Office 365 endpoints](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints)
 
-[Office 365 IP Address and URL Web service](https://docs.microsoft.com/en-us/office365/enterprise/office-365-ip-web-service)
+[Office 365 IP Address and URL Web service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service)
 
-[Assessing Office 365 network connectivity](https://docs.microsoft.com/en-us/office365/enterprise/assessing-network-connectivity)
+[Assessing Office 365 network connectivity](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
 
-[Office 365 network and performance tuning](https://docs.microsoft.com/en-us/office365/enterprise/network-planning-and-performance)
+[Office 365 network and performance tuning](https://docs.microsoft.com/office365/enterprise/network-planning-and-performance)
 
-[Assessing Office 365 network connectivity](https://docs.microsoft.com/en-us/office365/enterprise/assessing-network-connectivity)
+[Assessing Office 365 network connectivity](https://docs.microsoft.com/office365/enterprise/assessing-network-connectivity)
 
-[Office 365 performance tuning using baselines and performance history](https://docs.microsoft.com/en-us/office365/enterprise/performance-tuning-using-baselines-and-history)
+[Office 365 performance tuning using baselines and performance history](https://docs.microsoft.com/office365/enterprise/performance-tuning-using-baselines-and-history)
 
-[Performance troubleshooting plan for Office 365](https://docs.microsoft.com/en-us/office365/enterprise/performance-troubleshooting-plan)
+[Performance troubleshooting plan for Office 365](https://docs.microsoft.com/office365/enterprise/performance-troubleshooting-plan)
 
-[Content Delivery Networks](https://docs.microsoft.com/en-us/office365/enterprise/content-delivery-networks)
+[Content Delivery Networks](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)
 
 [Microsoft 365 connectivity test](https://connectivity.office.com/)
 
-[How Microsoft builds its fast and reliable global network](https://azure.microsoft.com/en-us/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
+[How Microsoft builds its fast and reliable global network](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)
 
 [Office 365 Networking blog](https://techcommunity.microsoft.com/t5/office-365-networking/bd-p/Office365Networking)
 
-[Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/en-us/office365/enterprise/office-365-vpn-split-tunnel)
+[Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel)
 
 
