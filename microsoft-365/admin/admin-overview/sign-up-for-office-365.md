@@ -35,21 +35,11 @@ description: "Understand what you need to know before you go through the sign up
 
 Sign up for Microsoft 365 for business so your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs in your business.
   
-Watch a quick overview of the three Microsoft 365 for business plans, or scroll down for more info.
-<br><br>
-  
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 Sign up for Microsoft 365 for business so your team can begin using the latest versions of Word, Excel, PowerPoint, and other Office programs in your business.
-  
-Watch a quick overview of the three plans best for your business. or scroll down for more info.
-<br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/cf211808-67c3-4d4b-880a-3f582d70b4d1?autoplay=false]
   
 ::: moniker-end
 
