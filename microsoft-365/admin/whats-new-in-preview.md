@@ -93,6 +93,8 @@ Just this month, we released a new site on [https://docs.microsoft.com](https://
 
 ### Intune roles management
 
+[April 2020](#april-2020)
+
 Well, we did it! We've taken the second step towards a unified roles experience and you can now manage Intune roles in the Microsoft 365 admin center. You can also leverage features such as the ability to search for roles and view role permissions. This means you don’t need two separate tools to manage roles for Microsoft 365 and Intune. When you sign into the Microsoft 365 admin center, you’ll see that there are two pivots on the Roles page, one for Azure AD and one for Intune.
 
 :::image type="content" source="../media/MAC-WN-IntuneRoles.png" alt-text="Roles page with the Intune pivot selected":::
@@ -156,7 +158,7 @@ We've got two updates for Groups this month:
 
 #### For admins and business owners
 
-- [Empower your small business with remote work](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6) 
+- [Empower your small business with remote work](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
 - [Running a remote small business](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Sign up for Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 - [Setting up two-factor sign-in](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
@@ -198,7 +200,7 @@ The new product names go into effect on April 21, 2020. This is a change to the 
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for business       | 
+|Office 365 Business     |    Microsoft 365 Apps for business       |
 |Office 365 ProPlus    |   Microsoft 365 apps for enterprise      |
 
 ### Videos, training, and docs
@@ -228,7 +230,7 @@ A couple of changes in the groups area this month:
 - **Sort by group name**: You can sort the groups list alphabetically, by selecting the **Group name** column.
 - **Restore deleted Microsoft 365 groups**: You don't have to go to the Exchange admin center anymore to restore  deleted Microsoft 365 groups. Go to **Microsoft 365 admin center** \> **Groups** \> **Deleted groups** \> (select a group from the list) \> **Restore group**. It'll restore the group back to the **Groups** list and restore the group's email, conversations, notebook, files, and calendar.
 
-### Videos, training, and docs
+### Videos, training, and docs (February)
 
 - **What's new in Microsoft 365 video series**: This month, we're focused on custom search capabilities for SharePoint Online, the Office "What's New" management feature that lets you show or hide specific features from end-users via the in-app help pane, the latest security and compliance updates in Yammer, and more. Here's the latest episode: [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
