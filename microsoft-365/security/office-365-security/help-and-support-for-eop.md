@@ -24,7 +24,7 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
+[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
 [Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
