@@ -57,7 +57,7 @@ These permissions are required only to create and apply retention labels and a l
 
 3. Repeat these steps to create more labels.
 
-To edit an existing label, select it, and then select **Edit label**. This starts the same wizard, which lets you change the label descriptions and settings in step 2.
+To edit an existing label, select it, and then select **Edit label** to start the same wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 ## Publish retention labels by creating a retention label policy
 
@@ -76,6 +76,8 @@ Publish retention labels so that they can be manually applied by users.
 2. Follow the prompts in the wizard.
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section. 
+
+To edit an existing retention label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 ## Auto-apply a retention label
 
@@ -96,6 +98,8 @@ Auto-apply a retention label, based on the conditions that you specify.
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section.
+
+To edit an existing auto-apply label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 
 ## Configuring conditions for auto-apply retention labels
@@ -212,7 +216,11 @@ If labels aren't appearing in Outlook on the web and you think they should be, m
 
 ## Updating retention labels and their policies
 
-If you edit a retention label, retention label policy, or auto-apply policy and the retention label is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly labeled.
+When you edit a retention label, retention label policy, or auto-apply policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
+
+Some settings can't be changed after the label or policy is created and saved, which include:
+- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The option to classify as a record.
 
 ## Find the PowerShell cmdlets for retention labels
 
