@@ -93,7 +93,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. On the **Active users** page, select **Filters** and select **New filter**.
   
@@ -103,7 +103,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. On the **Active users** page, select **Views** and select **Add custom view**.
   
@@ -114,7 +114,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. On the **Active users** page, select **Views** and select **Add custom view**.
   
@@ -127,7 +127,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
     
 2. On the **Active users** page, select **Filter**, select the filter you want to change, and then select **Edit filter**. 
     
@@ -140,7 +140,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.  
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a>.  
 
 2. On the **Active users** page, select **Views**, select the filter you want to change, and then select **Edit this view**. 
     
@@ -153,7 +153,7 @@ You can also filter by additional user profile details used in your organization
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page. 
+1. In the admin center, go to **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a>. 
 
 2. On the **Active users** page, select **Views**, select the filter you want to change, and then select **Edit this view**. 
     
