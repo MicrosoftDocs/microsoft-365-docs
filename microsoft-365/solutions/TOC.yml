@@ -30,7 +30,7 @@
     - name: Set up secure collaboration with Microsoft 365
       href: setup-secure-collaboration-with-teams.md
       items:
-      - name: Three tiers of protection with Microsoft Teams
+      - name: Step 1. Configure three tiers of protection with Microsoft Teams
         items:
         - name: Three tiers of protection overview
           href: configure-teams-three-tiers-protection.md
@@ -42,7 +42,7 @@
           href: configure-teams-highly-sensitive-protection.md
         - name: Configure a team with security isolation
           href: secure-teams-security-isolation.md
-      - name: Configure external sharing
+      - name: Step 2. Configure external sharing
         items:
         - name: External sharing overview
           href: collaborate-with-people-outside-your-organization.md
@@ -72,7 +72,7 @@
       items:
       - name: Overview   
         href: deploy-threat-protection.md
-      - name: Steps to configure threat protection
+      - name: Steps to deploy threat protection
         href: deploy-threat-protection-configure.md
     
 - name: Workload solutions and scenarios
