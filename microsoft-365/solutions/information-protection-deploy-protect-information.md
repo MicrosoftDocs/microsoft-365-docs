@@ -90,12 +90,12 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 1. Understand the following:
    - **Business requirements.** Establish the business reasons for applying sensitivity labels in your enterprise. For example, your data privacy requirements for information protection.
    - **Sensitivity label capabilities.** Sensitivity labelling can get complex, so make sure to read the [sensitivity labels documentation](../compliance/sensitivity-labels.md) before getting started.
-   - **Key things to remember** Sensitivity labels are managed in tha Microsoft Compliance admin center but the targeting and application options vary significantly.
+   - **Key things to remember** Sensitivity labels are managed in the Microsoft Compliance admin center but the targeting and application options vary significantly.
       - There are sensitivity labels for sites, groups, and Teams at the container level (the settings do not apply to content inside the container). These are published to users and groups who apply them when a site, group or Team is provisioned.
       - There are sensitivity labels for active content. These are also published to user or groups, who either manually apply them, or they get applied automatically when:
         - The file is opened/edited/saved, either to the user’s desktop or a SharePoint site.
         - An email is drafted and sent.
-      - There are sensitivity labels for automatic application to files at rest in SharePoint and OneDrive in addition to to emails in transit through Exchange. These are targeted to either all sites or specific ones and automatically apply to the files at rest in these environments.
+      - There are sensitivity labels for automatic application to files at rest in SharePoint and OneDrive in addition to emails in transit through Exchange. These are targeted to either all sites or specific ones and automatically apply to the files at rest in these environments.
 
 2. Rationalize current sensitivity labelling with past or alternative methods
 
@@ -116,7 +116,7 @@ Complete these activities prior to implementing any of the sensitivity label-bas
 2. **Getting started.** Begin by deciding on the number and names of labels to implement. Do this activity without worrying about which technology to use and how labels will be applied. Apply this schema universally throughout your organization, including data that resides on premises and in other cloud services.
 3. **Additional recommendations** When designing and implementing policies, labels, and conditions, consider following these recommendations:
 
-   - **Use existing classification schema (if any).** Many organizations already are using data classification in some form. Carefully evaluate the existing label schema and if possible use it as is. Using familiar labels that are recognizable to your end-users will drive adoption.
+   - **Use existing classification schema (if any).** Many organizations already are using data classification in some form. Carefully evaluate the existing label schema and if possible, use it as is. Using familiar labels that are recognizable to your end-users will drive adoption.
    - **Start small.** There is virtually no limit to the number of labels that you can create. However, large numbers of labels and sub-labels can slow adoption.
    - **Use scenarios and use cases.** Identify common use cases within your organization and use scenarios derived from the data privacy regulations to which you are subject. Verify if the envisioned label and classification configuration will work in practice.
    - **Question every request for a new label.** Does every scenario or use case really need a new label or can you use what you already have? Keeping the number of labels to a minimum improves adoption.

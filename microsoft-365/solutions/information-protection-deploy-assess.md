@@ -95,7 +95,7 @@ To address data privacy regulations, you can’t rely on general notions of wher
 If you have not already assessed your overall readiness and risk associated with data privacy regulations, use the following 3-step framework to get started. 
 
 >[!Note]
->This article and its content is not meant to take the place of legal advisory services. It just provides some basic guidance and links to tools that may be of assistance in the early stages of your assessment.
+>This article and its content are not meant to take the place of legal advisory services. It just provides some basic guidance and links to tools that may be of assistance in the early stages of your assessment.
 >
  
 ## Step 1: Develop a foundational understanding of your organization's personal data scenarios 
@@ -153,7 +153,7 @@ This category is the one most people think about for data privacy, due to many p
 - [Breach notifications](../compliance/gdpr-breach-office365.md)
 - [Data subject requests](../compliance/gdpr-dsr-office365.md)
 
-If your organization does not do a lot of direct-from-consumer data collection, this category may be less of an issue. However, you may still need to go through the processes outlined in the these articles to achieve compliance.
+If your organization does not do a lot of direct-from-consumer data collection, this category may be less of an issue. However, you may still need to go through the processes outlined in these articles to achieve compliance.
 
 ### Step 1 summary
 
