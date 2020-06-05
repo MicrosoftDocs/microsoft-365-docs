@@ -143,7 +143,7 @@ With the actions now available, you can:
   
 - **Restrict access to the content** Depending on your need, you can restrict access to content in three ways
 1. Restrict access to content for everyone.
-2. Restrict people outside the organization
+2. Restrict access to content for people outside the organization.
 3. Restrict access to "Anyone with the link"
 
 For site content, this means that permissions for the document are restricted for everyone except the primary site collection administrator, document owner, and person who last modified the document. These people can remove the sensitive information from the document or take other remedial action. When the document is in compliance, the original permissions are automatically restored. When access to a document is blocked, the document appears with a special policy tip icon in the library on the site. 
