@@ -42,7 +42,7 @@ EDM-based classification enables you to create custom sensitive information type
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-When generally available, EDM-based classification will be included in these subscriptions
+EDM-based classification is included in these subscriptions
 
 - Office 365 E5
 - Microsoft 365 E5
@@ -442,11 +442,16 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
 
-DLP for Exchange Online (email), OneDrive for Business (files), Microsoft Teams (conversations) and Microsoft Cloud App Security DLP policies will support EDM sensitive information types.
+These locations are support EDM sensitive information types:
+
+- DLP for Exchange Online (email)
+- OneDrive for Business (files)
+- Microsoft Teams (conversations)
+- DLP for SharePoint (files)
+- Microsoft Cloud App Security DLP policies
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 
-- DLP for SharePoint (files)
 - Auto-classification of sensitivity labels and retention labels
 
 #### To create a DLP policy with EDM
@@ -497,7 +502,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
 
 ## Feedback
 

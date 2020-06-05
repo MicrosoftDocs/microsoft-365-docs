@@ -1,5 +1,5 @@
 ---
-title: "About the new Microsoft 365 admin center"
+title: "About the Microsoft 365 admin center"
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -12,18 +12,19 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: "Learn about the new Microsoft 365 admin center."
+description: "Learn about the Microsoft 365 admin center."
 ---
 
-# About the new Microsoft 365 admin center
+# About the Microsoft 365 admin center
 
 ::: moniker range="o365-worldwide"
 
-The new Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
+The Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
 
 The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339). Specialist workspaces, like Security or Device management, allow for more granular control. For more information about how the admin centers will work together, see [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) later in this article.
 
@@ -31,7 +32,7 @@ The Microsoft 365 admin center is the common entry point for all Microsoft 365 a
 
 ::: moniker range="o365-21vianet"
 
-The new Microsoft 365 admin center, which is currently in preview, is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
+The Microsoft 365 admin center is built for IT teams as a simplified way to manage your Microsoft 365 services. The admin center provides a tailored experience based on the unique needs of your role or organization, improves efficiency for everyday tasks, and provides actionable insights that help you make data-driven decisions to deliver a better experience for your users.
 
 The Microsoft 365 admin center is the common entry point for all Microsoft 365 admins and can be accessed by logging in at [https://portal.partner.microsoftonline.cn/AdminPortal/Home#/homepage](https://go.microsoft.com/fwlink/p/?linkid=850627). Additionally, specialist workspaces, like Azure Active Directory and Exchange, allow for more granular control. You can access the specialist workspaces from the navigation pane in the Microsoft 365 admin center.
 
@@ -39,37 +40,23 @@ The Microsoft 365 admin center is the common entry point for all Microsoft 365 a
 
 ::: moniker range="o365-worldwide"
 
-As new features become available in the Microsoft 365 admin center, you'll be able to opt in to the new admin center and share your feedback with Microsoft so that we can continue to improve the admin experience. If you opt in, there will be no impact to your users, and you can switch back to the old admin center at any time.
-[What's new in the NEW Microsoft 365 admin center](whats-new-in-preview.md).
+As new features become available in the Microsoft 365 admin center, you'll be able to opt in to the admin center and share your feedback with Microsoft so that we can continue to improve the admin experience. If you opt in, there will be no impact to your users, and you can switch back to the old admin center at any time.
+[What's new in the Microsoft 365 admin center](whats-new-in-preview.md).
   
 > [!NOTE]
-> Targeted release admins will have first access to new features. New features will then roll out to all admins. This means that you may not see the new admin center, or it may look different than what is described in help articles. To be among the first to see new features, see Participate in the new admin center, below. 
-    
-## Participate in the new admin center
-We would love for you to participate in the new Microsoft 365 admin center so you can prepare for change and give us feedback.
+> Targeted release admins will have first access to new features. New features will then roll out to all admins. This means that you may not see the admin center, or it may look different than what is described in help articles. To be among the first to see new features, see Participate in the admin center, below. 
 
 ### Turn on Targeted release
 
 1. Sign in at [admin.microsoft.com](https://admin.microsoft.com), go to the navigation pane and select **Settings** \> **Organization profile**.
 
-1. Sign in at [portal.partner.microsoftonline.cn](https://go.microsoft.com/fwlink/p/?linkid=513813), go to the navigation pane and select **Settings** \> **Organization profile**.
-
 2. Go to the **Release preferences** card, and then select **Edit**. 
     
 3. Select either **Targeted release for everyone** or **Targeted release for selected users**. If you choose Targeted release for selected users, make sure that you add your admin account (and any other admins in your org who want to participate) to the list of selected users.
     
-### Switch to the new admin center and back again
+### Admin center feedback
 
-- When the new Microsoft 365 admin center is available to you, you can opt in by selecting the **Try the new admin center** toggle located at the top of the Home page. If you sign out of the admin center, we'll remember your selection and you'll sign back in to the new admin center. <br/><br/>![The new admin center toggle from the old admin center](../media/admin-center-toggle-off.png) 
-  
-- Switch back to the old admin center from the Home page by turning the toggle to **Off**. <br/><br/>![The new admin center toggle turned on](../media/admin-center-toggle-on.png)
-
-While in the new admin center, you can give Microsoft feedback about your experience by selecting **Give feedback** right next to the **Need help?** button at the bottom of every page. Tell us what you like and what we could do better. In addition, you may get pop-up surveys from time-to-time asking about your overall impressions or a particular experience that's newly released. You can also give feedback at the end of this article by selecting **Was this information helpful?**
-  
-If you want to be an early adopter in the new admin center, you'll need to turn on Targeted release, and then when the new admin center is available you can switch to it to check it out and provide feedback.
-  
-> [!NOTE]
-> Access to the new admin center will be rolled out to all Microsoft 365 admins. Admins who are in the Targeted release group in their organization will get the new admin center first. Being in Targeted release does not guarantee you will see the toggle immediately, but you will get it sooner than those in Standard release. 
+While in the admin center, you can give Microsoft feedback about your experience by selecting **Give feedback** right next to the **Need help?** button at the bottom of every page. Tell us what you like and what we could do better. In addition, you may get pop-up surveys from time-to-time asking about your overall impressions or a particular experience that's newly released. You can also give feedback at the end of this article by selecting **Was this information helpful?**
   
 ::: moniker-end
 

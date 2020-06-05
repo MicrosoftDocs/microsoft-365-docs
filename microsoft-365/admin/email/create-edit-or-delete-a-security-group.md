@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -53,9 +54,6 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 ### Add members to a security group
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
     
 1. Select the security group name on the **Groups** page, and on the **Members** tab, select **View all and manage members**. 
     
@@ -90,9 +88,6 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
   
 2. On the **Groups** page, select the group's name. 
@@ -103,7 +98,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 ::: moniker range="o365-germany"
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.  
   
 2. On the **Groups** page, select the group's name. 
     
@@ -115,7 +110,7 @@ There are also [Groups in Exchange Online and SharePoint Online](#groups-in-exch
 
 ::: moniker range="o365-21vianet"
 
-1. In the admin center, go to the **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a> page.
+1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.
   
 2. On the **Groups** page, select the group's name. 
     

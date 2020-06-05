@@ -193,7 +193,7 @@ Whenever you make a change to site and group settings for a label, you must run 
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) cmdlet:
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
     
     ```powershell
     Get-Label |ft Name, Guid
@@ -211,7 +211,7 @@ Whenever you make a change to site and group settings for a label, you must run 
     Import-PSSession $Session
     ```
     
-5. Run the [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+5. Run the [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps) cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
     
     ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
@@ -290,7 +290,7 @@ Although you can't prevent users from creating new groups in apps and services t
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) cmdlet:
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
     
     ```powershell
     Get-Label |ft Name, Guid

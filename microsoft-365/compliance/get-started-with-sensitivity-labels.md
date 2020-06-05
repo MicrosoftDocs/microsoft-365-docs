@@ -57,10 +57,7 @@ By default, global administrators for your tenant have access to these admin cen
 
 Alternatively to using roles, you can create a new role group and add either **Sensitivity Label Administrator** or **Organization Configuration** roles to this group. For a read-only role, use **Sensitivity Label Reader**. For instructions, see [Give users access to the Office 365 Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
 
-These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services.
-
-> [!NOTE]
-> **Sensitivity Label Reader** is a new role that initially supported just the PowerShell labeling cmdlets. Support for the admin labeling centers is now rolling out to tenants.
+These permissions are required only to create and configure sensitivity labels and their label policies. They are not required to apply the labels in apps or services. If additional permissions are needed for specific configurations that relate to sensitivity labels, those permissions will be listed in their respective documentation instructions.
 
 ## Common scenarios for sensitivity labels
 
@@ -76,9 +73,8 @@ Use the following documentation to support your sensitivity labeling deployment:
 |Use sensitivity labels to protect content in Teams and  SharePoint |[Use sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md)|
 |Discover, label, and protect files stored in data stores that are on premises |[Deploying the Azure Information Protection scanner to automatically classify and protect files](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
 |Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Apply and view sensitivity labels in Power BI, and protect reports that are downloaded|[Data protection in Power BI (preview)](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
+|Apply and view sensitivity labels in Power BI, and protect data when it is exported|[Data protection in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Monitor and understand how sensitivity labels are being used in my organization|[Know your data - data classification overview](data-classification-overview.md) <br /><br /> [View label usage with label analytics](label-analytics.md)|
-
 
 ## End-user documentation for sensitivity labels
 

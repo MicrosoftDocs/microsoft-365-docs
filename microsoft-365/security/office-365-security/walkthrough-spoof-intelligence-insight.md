@@ -97,9 +97,3 @@ For example, if you add the following domain pair to the 'AllowedToSpoof' sender
 ## Related topics
 
 [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md)
-
-[Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
-
-[Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
-
-[Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)

@@ -11,10 +11,10 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn about proposals to help you buy Microsoft products and services."
-ms.custom: 
 ROBOTS: NOINDEX
 ---
 
@@ -34,7 +34,7 @@ After you receive the notification email, follow the link to the
 proposal site. After you sign into the site, you can start the proposal
 review process.
 
-## What are the organization prerequisites to buy items with a proposal?
+## Prerequisites for buying items with a proposal
 
 Before you can buy items for a proposal, you must have a billing account
 and an agreement with Microsoft.
@@ -59,7 +59,7 @@ The Microsoft Customer Agreement (MCA) lets an organization buy
 Microsoft products and services. For more information, see [Microsoft
 Customer Agreement](https://www.microsoft.com/en-us/Licensing/how-to-buy/microsoft-customer-agreement).
 
-## What permissions do I need to sign an agreement or pay for items?
+## Permissions needed to sign an agreement or pay for items
 
 If you don't have an assigned role in the billing account, when you view the
 proposal, you're assigned the basic reader role. This role lets you view,
@@ -75,7 +75,7 @@ you automatically become the billing account owner, provided you:
 
 - Are the person named in the proposal\
     OR
-- Are already an Azure Active Directory global admin for your
+- Are already an [Azure Active Directory global admin](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) for your
     organization
 
 ## What is the overall workflow?
@@ -109,7 +109,6 @@ proposal and on the proposal site.
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Billing account | An account used to manage your account settings, invoices, payment methods, and products. |
 | Billing profile | Information about your organization that lets you customize what items are included on your invoice, and how you pay for your invoices. The billing profile includes the billing account name, the payment methods used for the specific billing profile, contact information, invoice settings, and permissions that let you change the billing profile, pay bills, and buy products and services. |
-| Customer Affiliate Purchase Terms (CAPT) | An additional set of terms that lets an affiliate of your organization buy products and services without signing a separate MCA. |
 | Existing agreements | Any agreement that your organization already has in place with Microsoft. This can include, but is not limited to, an Enterprise Agreement, Microsoft Product & Services Agreement, or Microsoft Customer Agreement. |
 | Microsoft Customer Agreement (MCA) | An agreement that outlines the terms and conditions of the account held by your organization with Microsoft. |
 | Microsoft representative | An authorized Microsoft representative who prepares a proposal for you and your organization. |
