@@ -1,5 +1,5 @@
 ---
-title:  Data Subject Requests Under the GDPR and CCPA
+title:  Office 365 Data Subject Requests Under the GDPR and CCPA
 description: Understand the user rights under GDPR and CCPA and how Office 365 helps enterprises find and act on data in response to DSRs.
 keywords:  Office 365, DSR, Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR, CCPA
 localization_priority:  Priority
@@ -17,7 +17,7 @@ ms.collection:
 titleSuffix: Microsoft GDPR
 ---
 
-# Data Subject Requests for the GDPR and CCPA
+# Office 365 Data Subject Requests for the GDPR and CCPA
 
 ## Introduction to DSRs
 
@@ -1628,9 +1628,6 @@ The following summarizes accessing and exporting system-generated logs:
     "DevicePlatform": "Windows 1.0.1607"
     }]
     ```
-
->[!NOTE]
->Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
 
 Product and service usage data for some of Microsoft’s most often-used services, such as Exchange Online, SharePoint Online, Skype for Business, Yammer, and Office 365 Groups can also be retrieved by searching the Office 365 audit log in the Security & Compliance Center. For more information, see [Use the Office 365 audit log search tool in DSR investigations](#use-the-office-365-audit-log-search-tool-in-dsr-investigations) in Appendix A. Using the audit log may be of interest to you because it's possible to assign permissions to other people in your organization (such as your compliance officer) to search the audit log to access this data.
 

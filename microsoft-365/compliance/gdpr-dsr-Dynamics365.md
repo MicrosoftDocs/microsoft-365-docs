@@ -237,9 +237,6 @@ The following table summarizes accessing and exporting system-generated logs:
 |**How is data returned to the user?**| Data will be exported to your organization&#39;s Azure storage location; it will be up to admins in your organization to determine how they will show/return this data to users. |
 |**What will data in system-generated logs look like?**| Example of a system-generated log record in JSON format: <br><br> "DateTime": "2017-04-28T12:09:29-07:00", <br> "AppName": "SharePoint", <br> "Action": "OpenFile", <br> "IP": "154.192.13.131", <br> "DevicePlatform": "Windows 1.0.1607" |
 
-> [!NOTE]
-> Some features will not allow for the export or deletion of system-generated logs with personal information to maintain the integrity of such information for security and audit reasons.
-
 ### Deleting system-generated logs
 
 To delete system-generated logs retrieved through an access request, you must remove the user from the service and permanently delete their Azure Active Directory account. For instructions on how to permanently delete a user, see the [Step 5: Delete](gdpr-dsr-azure.md#step-5-delete) section in the Azure Data Subject Requests topic. It's important to note that permanently deleting a user account is irreversible once initiated. Permanently deleting a user account removes the user’s data from system-generated logs, except for data that may compromise the security or stability of the service, for nearly all Dynamics 365 services within 30 days.
