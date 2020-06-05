@@ -76,5 +76,5 @@ For Microsoft Stream, when a user is deleted from Azure Active Directory (Azure 
 
 Here are two additional tools that might be useful for monitoring, investigating, and remediating data privacy-related incidents in your organization:
 
-- [Insider risk management in Microsoft 365](../compliance/insider-risk-management.md), a solution in the Microsoft Compliance admin center to help minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.
-- [Data investigations in Microsoft 365](../compliance/overview-data-investigations.md), a solution in the Microsoft Compliance admin center to search for sensitive, malicious, or misplaced data across Microsoft 365, and then investigate what happened to take the appropriate actions to remediate the incident.
+- [Insider risk management in Microsoft 365](../compliance/insider-risk-management.md), a feature of the Microsoft Compliance admin center to help minimize internal risk by enabling you to detect, investigate, and take action on risky activities in your organization.
+- [Data investigations in Microsoft 365](../compliance/overview-data-investigations.md), a feature of the Microsoft Compliance admin center to search for sensitive, malicious, or misplaced data across Microsoft 365, and then investigate what happened to take the appropriate actions to remediate the incident.

@@ -79,4 +79,4 @@ Use [Exchange Online Protection and Office 365 Advanced Threat Protection (ATP)]
 - [Protect against threats in Office 365](https://support.office.com/article/protect-against-threats-in-office-365-b10023f6-f30f-45d3-b3ad-b71aa4aa0d58)
 - [ATP Safe Attachments](../security/office-365-security/atp-safe-attachments.md)
 - [ATP Safe Links](../security/office-365-security/atp-safe-links.md)
-- [ATP Safe Docs](../security/office-365-security/safe-docs.md)
+- [ATP Safe Documents](../security/office-365-security/safe-docs.md)
