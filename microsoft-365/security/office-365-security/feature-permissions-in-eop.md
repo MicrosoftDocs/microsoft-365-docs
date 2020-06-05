@@ -129,7 +129,7 @@ The following table lists the Microsoft 365 roles and the standalone EOP role gr
 |Security reader|SecurityReader|
 |
 
-Other Microsoft 365 roles don't have a corresponding EOP role group and won't grant administrative permissions in EOP. For more information about assigning a Microsoft 365 role to a user, see [Assign admin roles](https://docs.microsoft.com/office365/admin/add-users/assign-admin-roles).
+Other Microsoft 365 roles don't have a corresponding EOP role group and won't grant administrative permissions in EOP. For more information about assigning a Microsoft 365 role to a user, see [Assign admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles).
 
 Users can be granted administrative rights in EOP without adding them to Microsoft 365 roles. You do this by adding the user as a member of an EOP role group. The user will get permissions in EOP, but they won't get permissions in other Microsoft 365 workloads.
 
