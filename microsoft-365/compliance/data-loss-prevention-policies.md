@@ -142,7 +142,7 @@ When content matches a condition in a rule, you can apply actions to automatical
 With the actions now available, you can:
   
 - **Restrict access to the content** Depending on your need, you can restrict access to content in three ways
-1. Restrict everyone
+1. Restrict access to content for everyone.
 2. Restrict people outside the organization
 3. Restrict access to "Anyone with the link"
 
