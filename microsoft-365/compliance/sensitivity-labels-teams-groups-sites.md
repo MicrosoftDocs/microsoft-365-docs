@@ -129,7 +129,7 @@ If you modify or delete a sensitivity label with the site and group settings ena
 
 4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-## Assign sensitivity labels to containers
+## How to apply sensitivity labels to containers
 
 You're now ready to apply the sensitivity label or labels to any of the following containers:
 
@@ -138,7 +138,7 @@ You're now ready to apply the sensitivity label or labels to any of the followin
 - [Microsoft 365 group in Outlook on the web](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
 - [SharePoint site](#apply-a-sensitivity-label-to-a-new-site)
 
-### Assign sensitivity labels to Microsoft 365 groups
+### Apply sensitivity labels to Microsoft 365 groups
 
 You're now ready to apply the sensitivity label or labels to Microsoft 365 groups. Return to the Azure AD documentation for instructions:
 
