@@ -530,12 +530,12 @@
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
             - name: Secure files in Microsoft Teams
               items: 
-                - name: Secure Teams for files in a dev/test environment
-                  href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
+                - name: 
+                  href: 
 
-            - name: Secure SharePoint Online sites in a dev/test environment
+            - name: 
 
-              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
+              href: 
 
               items: 
 
