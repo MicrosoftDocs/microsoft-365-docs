@@ -81,7 +81,7 @@ On this new **Site and group settings** page, configure the settings:
     
     Select **None - let user chose who can access the site** when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
     
-    The settings of **Public** or **Private** set and lock the privacy setting when you apply this label to the container. Your chosen seting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
+    The settings of **Public** or **Private** set and lock the privacy setting when you apply this label to the container. Your chosen setting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
@@ -181,7 +181,14 @@ To view the applied sensitivity labels, use the **Active sites** page in the new
 
 ## Change site and group settings for a label
 
-Whenever you make a change to site and group settings for a label, you must run the following PowerShell commands so that your teams, sites, and groups can use the new settings. As a best practice, don't the change site and group settings for a label after you've applied the sensitivity label to several teams, groups, or sites.
+As a best practice, don't the change site and group settings for a label after you've applied the sensitivity label to several teams, groups, or sites. If you do:
+
+- Changes apply to new users joining the site and not to existing users who are currently using the site. For example, guest users who accessed the site before changing the label won't now be blocked.
+
+- The privacy settings for hiddenMembership and roleEnabled groups is not updated.
+
+Additionally, you must run the following PowerShell commands to update endpoints for your label changes:
+
 
 1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
     
