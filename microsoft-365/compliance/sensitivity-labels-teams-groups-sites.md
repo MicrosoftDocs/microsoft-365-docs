@@ -129,7 +129,16 @@ If you modify or delete a sensitivity label with the site and group settings ena
 
 4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-## Assign sensitivity labels to Microsoft 365 groups
+## Assign sensitivity labels to containers
+
+You're now ready to apply the sensitivity label or labels to any of the following containers:
+
+- [Microsoft 365 group in Azure AD](#assign-sensitivity-labels-to-microsoft-365-groups)
+- [Microsoft Teams team site](#apply-a-sensitivity-label-to-a-new-team)
+- [Microsoft 365 group in Outlook on the web](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
+- [SharePoint site](#apply-a-sensitivity-label-to-a-new-site)
+
+### Assign sensitivity labels to Microsoft 365 groups
 
 You're now ready to apply the sensitivity label or labels to Microsoft 365 groups. Return to the Azure AD documentation for instructions:
 
@@ -139,7 +148,7 @@ You're now ready to apply the sensitivity label or labels to Microsoft 365 group
 
 -  [Remove a label from an existing group in Azure portal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels#remove-a-label-from-an-existing-group-in-azure-portal).
 
-## Apply a sensitivity label to a new team
+### Apply a sensitivity label to a new team
 
 Users can select sensitivity labels when they create new teams in Microsoft Teams. When they select the label from the **Sensitivity** dropdown, the privacy setting might change to reflect the label configuration. Depending on the external users access setting you selected for the label, users can or can't add people outside the organization to the team.
 
@@ -153,13 +162,13 @@ After you create the team, the sensitivity label appears in the upper-right corn
 
 The service automatically applies the same sensitivity label to the Microsoft 365 group and the connected SharePoint team site.
 
-## Apply a sensitivity label to a new group in Outlook on the web
+### Apply a sensitivity label to a new group in Outlook on the web
 
 In Outlook on the web, when you create a new group, you can select or change the **Sensitivity** option for published labels:
 
 ![Creating a group and selecting an option under Sensitivity](../media/sensitivity-label-new-group.png)
 
-## Apply a sensitivity label to a new site
+### Apply a sensitivity label to a new site
 
 Admins and end users can select sensitivity labels when they [create modern team sites and communication sites](/sharepoint/create-site-collection), and expand **Advanced settings**:
 
