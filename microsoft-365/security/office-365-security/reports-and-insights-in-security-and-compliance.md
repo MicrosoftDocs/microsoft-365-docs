@@ -57,17 +57,6 @@ A wide variety of reports are available in the Security &amp; Compliance Center.
 |**Audit log** <br/> Information about Microsoft 365 activities, users, files or folders, and more  <br/> |In the Security &amp; Compliance Center, go to **Search &amp; investigation** \> **Audit log search** <br/> |[Search the audit log in the Security &amp; Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Compliance reports** <br/> FedRAMP reports, governance, risk and compliance reports, ISO information security management reports, and Service Organization Controls audit and assessment reports  <br/> |In the Security &amp; Compliance Center, go to **Service assurance** \> **Compliance reports** <br/> |[Plan for security &amp; compliance in Office 365](../../compliance/plan-for-security-and-compliance.md) <br/> |
   
-## Next steps
-
-Now that you have an overview of reports and insights, your next step is to learn how to customize, manage, and download reports. See the following articles:
-  
-- [Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
-    
-- [Manage schedules for multiple reports in the Security &amp; Compliance Center](manage-schedules-for-multiple-reports.md)
-    
-- [Download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
-    
-- [Download existing reports in the Security &amp; Compliance Center](download-existing-reports.md)
     
 ## Related topics
 
