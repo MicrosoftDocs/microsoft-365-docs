@@ -63,7 +63,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileOriginIP` | string | IP address where the file was downloaded from |
 | `AdditionalFields` | string | Additional information about the event in JSON array format |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
-| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available |
+| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
 | `InitiatingProcessFolderPath` | string | Folder containing the process (image file) that initiated the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
