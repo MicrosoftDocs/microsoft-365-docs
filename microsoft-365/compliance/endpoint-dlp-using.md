@@ -22,6 +22,12 @@ description: "Microsoft 365 Endpoint data loss prevention (DLP) extends monitori
 
 # Using endpoint data loss prevention (preview)
 
+make a table to capture the what it is you want the policy to do or all the values that will need to be entered.
+
 heavily refer out to existing DLP content on how to create a policy
 
 refer out to existing activity explorer content
+
+End user experiences?  maybe this goes over to David Eitelbach
+
+Relnotes references????
