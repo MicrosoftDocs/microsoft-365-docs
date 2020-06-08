@@ -20,7 +20,7 @@ description: ""
 
 # Add non-custodial data sources to an Advanced eDiscovery case
 
-In Advanced eDiscovery cases, it doesn't always meet your needs to associate a Microsoft 365 data source with a custodian in the case. But you may still need to associate that data with a case so that you search it, add it to review set, and review it. The new feature called *non-custodial data sources* lets you add data to a case without having to associate the data to a custodian. It also applies the same Advanced eDiscovery functionality to non-custodial data that's available for data associated with custodian. Two of the most useful features that you can apply to non-custodial is placing it on hold and processing it using [Advanced indexing](indexing-custodian-data.md).
+In Advanced eDiscovery cases, it doesn't always meet your needs to associate a Microsoft 365 data source with a custodian in the case. But you may still need to associate that data with a case so that you search it, add it to review set, and review it. The new feature called *non-custodial data sources* lets you add data to a case without having to associate the data to a custodian. It also applies the same Advanced eDiscovery functionality to non-custodial data that's available for data associated with custodian. Two of the most useful features that you can apply to non-custodial data is placing it on hold and processing it using [Advanced indexing](indexing-custodian-data.md).
 
 ## Add non-custodial data sources to a case
 
