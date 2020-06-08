@@ -27,7 +27,7 @@ But, there are also specific anti-spam settings that admins can configure on ind
 - **Enable or disable the junk email rule**: The junk email rule is a hidden Inbox rule named Junk E-mail Rule that's enabled by default in every mailbox. The junk email rule controls the following features:
 
   - **Move messages to the Junk Email folder based on anti-spam policies**: When an anti-spam policy is configured with the action **Move message to Junk Email folder** for a spam filtering verdict, the junk email filter rule moves the message to the Junk Email folder after the message is delivered to the mailbox. For more information about spam filtering verdicts in anti-spam policies, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md). Similarly, if zero-hour auto purge (ZAP) determines a delivered message is spam or phish, the junk email filter rule moves the message to the Junk Email folder for **Move message to Junk Email folder** spam filtering verdict actions. For more information about ZAP, see [Zero-hour auto purge (ZAP) in Exchange Online](zero-hour-auto-purge.md).
-  
+
   - **Junk email settings that users configure for themselves in Outlook or Outlook on the web**: The _safelist collection_ is the Safe Senders list, the Safe Recipients list, and the Block senders list on each mailbox. The entries in these lists determine whether the junk email rule moves the message to the Inbox or the Junk Email folder. Users can configure the safelist collection for their own mailbox in Outlook or Outlook on the web (formerly known as Outlook Web App). Admins can configure the safelist collection on any user's mailbox.
 
 When the junk email rule is enabled on the mailbox, EOP is able to move messages to the Junk Email folder based on the spam filtering verdict action **Move message to Junk Email folder** or the Blocked Senders list on the mailbox, and prevent messages from being delivered to the Junk Email folder (based on the Safe Senders list on the mailbox).
@@ -143,7 +143,7 @@ For detailed syntax and parameter information, see [Set-MailboxJunkEmailConfigur
 > 
 > - Even if the junk email rule is disabled on the mailbox, you can still configure the safelist collection, and the Outlook Junk Email Filter is able to move messages to the Inbox or the Junk Email folder. For more information, see the [About junk email settings in Outlook](#about-junk-email-settings-in-outlook) section in this topic.
 > 
-> - The Outlook Junk Email Filter has additional safelist collection settings (for example, **Automatically add people I email to the Safe Senders list**). For more information, see [Use Junk Email Filters to control which messages you see](https://support.office.com/article/274ae301-5db2-4aad-be21-25413cede077).
+> - The Outlook Junk Email Filter has additional safelist collection settings (for example, **Automatically add people I email to the Safe Senders list**). For more information, see [Use Junk Email Filters to control which messages you see](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077).
 
 ### How do you know this worked?
 
@@ -192,7 +192,7 @@ The safelist collection (the Safe Senders list, Safe Recipients list, and Blocke
   - 500 total entries in the Blocked Senders list and Blocked Domains list.
 
   When the 1024 entry limit is reached, the following things happen:
-  
+
   - The list stops accepting entries in PowerShell and Outlook on the web, but no error is displayed.
 
     Outlook users can continue to add more than 1024 entries until they reach the Outlook limit of 510 KB. Outlook can use these additional entries, as long as an EOP filter doesn't block the message before delivery to the mailbox (mail flow rules, anti-spoofing, etc.).
@@ -203,7 +203,7 @@ The safelist collection (the Safe Senders list, Safe Recipients list, and Blocke
   2. The Safe Sender list and Safe Recipient list are combined, de-duplicated, and sorted alphabetically whenever a change is made for the first 1024 entries.
 
   The first 1024 entries are used, and relevant information is stamped in the message headers.
-  
+
   Entries over 1024 that weren't synchronized to Azure AD are processed by Outlook (not Outlook on the web), and no information is stamped in the message headers.
 
 As you can see, enabling the **Trust email from my contacts** setting reduces the number of Safe Senders and Safe Recipients that can be synchronized. If this is a concern, then we recommend using Group Policy to turn this feature off:
