@@ -172,6 +172,8 @@
                       href: mtp/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: IdentityInfo
@@ -180,6 +182,10 @@
                       href: mtp/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
+                - name: Functions
+                  items: 
+                    - name: FileProfile()
+                      href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Apply query best practices
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Custom detections
@@ -369,26 +375,10 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items: 
-                - name: Security Dashboard overview
-                  href: ./office-365-security/security-dashboard.md
-                  items: 
-                    - name: Walkthrough - From a detailed report to an insight
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: Walkthrough - From an insight to a detailed report
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: Walkthrough - From a dashboard to an insight
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: Create a schedule for a report
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: Manage schedules for multiple reports
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: Set up and download a custom report
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: Download existing reports
-                      href: ./office-365-security/download-existing-reports.md
-                - name: View information about malicious files
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+            - name: Security Dashboard overview
+              href: ./office-365-security/security-dashboard.md
+            - name: View information about malicious files
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
         - name: Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items: 

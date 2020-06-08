@@ -26,6 +26,8 @@ description: "Learn about the requirements for setting up your organization with
 
 # Prerequisites for protecting data on devices with Microsoft 365 for business
 
+This article applies to Microsoft 365 Business Premium.
+
 The first step in setting up your organization with Microsoft 365 for business is to make sure you can meet the prerequisites.
   
 ## Requirements for setting up your organization with Microsoft 365 for business
