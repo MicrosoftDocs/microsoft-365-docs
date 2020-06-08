@@ -16,7 +16,7 @@ description: "Learn about tasks that will help you quickly get started with comp
 
 # Quick tasks for getting started with Microsoft 365 compliance
 
-If you're new to Microsoft 365 compliance and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
+If you're new to Microsoft 365 compliance and wondering where to start, this article provides guidance on the basics and prioritizes important compliance tasks. This article will help you quickly get started with managing and monitoring your data, protecting information, and minimizing insider risks.
 
 This article is also helpful if you're figuring out how best to manage risks, protect your data, and remain compliant with regulations and standards with a newly remote workforce. Employees are now collaborating and connecting with each other in new ways, and this means your existing compliance processes and controls may need to adapt. Identifying and managing these new compliance risks within your organization is critical to safeguarding your data and minimizing threats and risks.
 
@@ -26,26 +26,25 @@ After you’ve completed these basic compliance tasks, consider expanding compli
 
 It’s important to manage who in your organization has access to the Microsoft 365 compliance center to view content and perform management tasks. Microsoft 365 provides administrative roles specific to compliance and for using the tools included in the Microsoft 365 compliance center.
 
-Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure AD global reader role to view data in Compliance Score.
+Start by assigning compliance permissions to the people in your organization so that they can perform these tasks and to prevent unauthorized people from having access to areas outside of their responsibilities. You’ll want to make sure that you’ve assigned the proper people to the **Compliance data administrator** and the **Compliance administrator** admin roles before you start to configure and implement compliance solutions included with Microsoft 365. You’ll also need to assign users to the Azure Active Directory global reader role to view data in Compliance Score.
 
-For step by step guidance to configure permissions and assign people to admin roles, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+For step-by-step guidance to configure permissions and assign people to admin roles, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 ## Task 2: Know your state of compliance
 
-It’s difficult to know where to go if you don’t know where you are. Meeting your compliance needs includes understanding your current level of risk and what updates may be needed in these everchanging times. Whether your organization is new to compliance requirements or has deep experience with standards and regulations that govern your industry, the single best thing you can do to improve compliance is to understand where your organization stands.
+It’s difficult to know where to go if you don’t know where you are. Meeting your compliance needs includes understanding your current level of risk and what updates may be needed in these ever changing times. Whether your organization is new to compliance requirements or has deep experience with standards and regulations that govern your industry, the single best thing you can do to improve compliance is to understand where your organization stands.
 
 [Microsoft Compliance Score](compliance-score.md) can help you understand your organization's compliance posture and highlight areas that may need improvement. Compliance Score uses a centralized dashboard to calculate a risk-based score, measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. You can also use Compliance Score as a tool to track all your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
 
-For step by step guidance to get started with Compliance Score, see [Set up Compliance Score](compliance-score-setup.md).
+For step-by-step guidance to get started with Compliance Score, see [Set up Compliance Score](compliance-score-setup.md).
 
-> *IMPORTANT:*
-> 
-> *Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.*
-> 
-> *Check your [Microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) in the Microsoft 365 security center and completing the tasks outlined in the following articles:*
-
-  - [*Security roadmap - Top priorities for the first 30 days, 90 days, and beyond*](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
-  - [Top 12 tasks for security teams to support working from home](https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?view=o365-worldwide)
+>[!IMPORTANT]
+>Security and compliance are tightly integrated for most organizations. It’s important that your organization addresses basic security, threat protection, and identity and access management areas to help provide a defense in-depth approach to both security and compliance.
+>
+>Check your [Microsoft 365 Secure Score](../security/mtp/microsoft-secure-score.md) in the Microsoft 365 security center and completing the tasks outlined in the following articles:
+>
+> - [Security roadmap - Top priorities for the first 30 days, 90 days, and beyond](../security/office-365-security/security-roadmap.md)
+> - [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md)
 
 ## Task 3: Enable auditing for your organization
 
@@ -67,7 +66,7 @@ For step-by-step guidance to create custom alert policies, see [Alert policies i
 
 Having standing access by some users to sensitive information or critical network configuration settings is a potential pathway for compromised accounts or internal threat activities. [Privileged access management](privileged-access-management-overview.md) helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. Enabling privileged access management in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
-For step by step guidance to configure privileged access management, see [Get started with privileged access management](privileged-access-management-configuration.md).
+For step-by-step guidance to configure privileged access management, see [Get started with privileged access management](privileged-access-management-configuration.md).
 
 ## Task 6: Classify and protect sensitive data
 
@@ -75,7 +74,7 @@ To get their work done, people in your organization collaborate with others both
 
 [Sensitivity labels](sensitivity-labels.md) let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. Use sensitivity labels to enforce encryption and usage restrictions apply visual markings, and protect information across platforms and devices, on-premises and in the cloud.
 
-For step by step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
 ## Task 7: Configure a retention policy
 
@@ -95,13 +94,13 @@ A pre-defined *Offensive language and anti-harassment* policy template allows yo
 
 The pre-defined *Sensitive information* policy template helps you quickly create a policy to scan email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
 
-For step by step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md).
+For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md).
 
 ## Next steps
 
 Now that you’ve configured the basics for compliance management for your organization, consider the following compliance solutions in Microsoft 365 to help you protect sensitive information and detect and act on additional insider risks.
 
-### Retention labels
+### Configure retention labels
 
 While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](labels.md) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
@@ -115,9 +114,9 @@ Define sensitive information types based on the pattern contained in information
 
 ### Prevent data loss
 
-[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive information across Microsoft services, prevent the accidental sharing of sensitive information and help users learn how to stay compliant without interrupting their workflow.
+[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive information across Microsoft services, prevent the accidental sharing of sensitive information, and help users learn how to stay compliant without interrupting their workflow.
 
-For step by step guidance to configure DLP policies, see [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) and [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md).
+For step-by-step guidance to configure DLP policies, see [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) and [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md).
 
 ### Detect and act on insider risks
 
@@ -125,4 +124,4 @@ More and more, employees have increasing access to create, manage, and share dat
 
 [Insider risk management](insider-risk-management-policies.md) in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks.
 
-For step by step guidance to plan and configure insider risk management policies, see [Plan for insider risk management](insider-risk-management-plan.md) and [Get started with insider risk management](insider-risk-management-configure.md).
+For step-by-step guidance to plan and configure insider risk management policies, see [Plan for insider risk management](insider-risk-management-plan.md) and [Get started with insider risk management](insider-risk-management-configure.md).
