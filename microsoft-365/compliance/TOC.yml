@@ -2,6 +2,8 @@
   href: index.yml
 - name: Get started
   items: 
+    - name: Quick tasks to get started with compliance
+      href: compliance-quick-tasks.md
     - name: What's new in the compliance center
       href: whats-new.md
     - name: Recent updates to compliance content
