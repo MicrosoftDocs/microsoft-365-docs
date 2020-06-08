@@ -512,17 +512,7 @@
                   href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
                 - name: Create team sites in a political campaign dev/test environment
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Secure files in Microsoft Teams
-              items: 
-                - name: 
-                  href: 
-
-            - name: 
-
-              href: 
-
-              items: 
-
+             
             - name: SIEM server integration
               href: ./office-365-security/siem-server-integration.md
             - name: Exchange Online Protection overview
