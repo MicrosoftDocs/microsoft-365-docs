@@ -131,9 +131,9 @@ If you modify or delete a sensitivity label with the site and group settings ena
 
 ## How to apply sensitivity labels to containers
 
-You're now ready to apply the sensitivity label or labels to any of the following containers:
+You're now ready to apply the sensitivity label or labels to the following containers:
 
-- [Microsoft 365 group in Azure AD](#assign-sensitivity-labels-to-microsoft-365-groups)
+- [Microsoft 365 group in Azure AD](#apply-sensitivity-labels-to-microsoft-365-groups)
 - [Microsoft Teams team site](#apply-a-sensitivity-label-to-a-new-team)
 - [Microsoft 365 group in Outlook on the web](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
 - [SharePoint site](#apply-a-sensitivity-label-to-a-new-site)
@@ -190,13 +190,13 @@ To view the applied sensitivity labels, use the **Active sites** page in the new
 
 ## Change site and group settings for a label
 
-As a best practice, don't the change site and group settings for a label after you've applied the sensitivity label to several teams, groups, or sites. If you do:
+As a best practice, don't the change site and group settings for a label after you've applied the sensitivity label to teams, groups, or sites. If you do and your changes include the **External users access** setting:
 
-- Changes apply to new users joining the site and not to existing users who are currently using the site. For example, guest users who accessed the site before changing the label won't now be blocked.
+- The change applies to new users but not to existing users. For example, if this setting was previously selected and as a result, guest users accessed the site, these guest users can still access the site after this setting is  cleared.
 
-- The privacy settings for hiddenMembership and roleEnabled groups is not updated.
+- The privacy settings for hiddenMembership and roleEnabled groups aren't updated.
 
-Additionally, you must run the following PowerShell commands to update endpoints for your label changes:
+Additionally, so that your sites and groups use the new settings for your label changes, you must run the following PowerShell commands:
 
 
 1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
