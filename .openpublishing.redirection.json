@@ -789,7 +789,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/compliance/gdpr-dsr-o365.md",
+      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-sensitivity-label.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     }
