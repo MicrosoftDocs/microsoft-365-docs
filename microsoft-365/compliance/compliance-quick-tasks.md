@@ -52,7 +52,7 @@ Now that you've determined your organization's current state and who can manage 
 
 Insights provided by the audit log are a valuable tool in helping to match your compliance requirements to solutions that can help you manage and monitor compliance areas needing improvement. Audit logging must be enabled before activities are recorded and before you can search the audit log. When enabled, user and admin activity from your organization is recorded in the audit log and retained for 90 days, and up to one year depending on the license assigned to users.
 
-For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
+For step-by-step instructions to turn on auditing, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
 
 ## Task 4: Create policies to alert you about potential compliance issues
 
@@ -82,7 +82,7 @@ A [retention policy](retention-policies.md) lets you proactively decide whether 
 
 When content is subject to a retention policy, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect.
 
-You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment: Exchange mail and public folders, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Known as an “org-wide retention policy”, there are no limits to the number of mailboxes or sites the policy can include. But if you need to get more specific, you can do so by configuring a retention policy for specific locations and then include or exclude sites or users.
+You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment: Exchange mail and public folders, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Known as an 'org-wide retention policy', there are no limits to the number of mailboxes or sites the policy can include. But if you need to get more specific, you can do so by configuring a retention policy for specific locations and then include or exclude sites or users.
 
 For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md).
 
