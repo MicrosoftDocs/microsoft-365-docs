@@ -35,8 +35,8 @@ Microsoft 365 has the capabilities to empower your workers to work remotely.
 | | |
 |:-------|:-----|
 | Connected | From anywhere in the world and at any time, remote workers are able to access: <ul><li>Cloud-based services and data in your Microsoft 365 subscription. </li><li>Organization resources, such those offered by on-premises application datacenters.</li></ul> |
-| Secure | Connections are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 10 protect against malware, malicious attacks, and data loss. |
-| Managed | Your remote worker's devices can be managed from the cloud with security settings and to require compliance with system health. |
+| Secure | Sign-ins are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 10 protect against malware, malicious attacks, and data loss. |
+| Managed | Your remote worker's devices can be managed from the cloud with security settings, allowed apps, and to require compliance with system health. |
 | Collaborative and productive | Your remote workers can be as productive as on-premises in a highly collaborative way with: <ul><li>Online meetings and chat sessions with Teams. </li><li>Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration with SharePoint and OneDrive. </li><li>Shared tasks and workflows to divide up the work and get things done. </li></ul> |
 |||
 
