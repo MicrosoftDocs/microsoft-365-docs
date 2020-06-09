@@ -16,7 +16,7 @@ search.appverid:
 description: "Learn how set up and start using Microsoft Compliance Score, which helps simplify and automate risk assessments."
 ---
 
-#Compliance Score (preview) setup
+# Compliance Score (preview) setup
 
 ## Before you begin
 
