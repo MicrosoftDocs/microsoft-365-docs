@@ -38,6 +38,9 @@ Here's a quick overview of how alert policies work and the alerts that are trigg
 
 1. An admin in your organization creates, configures, and turns on an alert policy by using the **Alert policies** page in the security and compliance center. You can also create alert policies by using the **New-ProtectionAlert** cmdlet in Security & Compliance Center PowerShell. To create alert policies, you have to be assigned the Manage Alerts role or the Organization Configuration role in the security and compliance center.
 
+   > [!NOTE]
+   > It takes up to 24 hours after creating or updating an alert policy before alerts can be triggered by the policy. This is because the policy has to be synced to the alert detection engine.
+
 2. A user performs an activity that matches the conditions of an alert policy. In the case of malware attacks, infected email messages sent to users in your organization trigger an alert.
 
 3. Microsoft 365 generates an alert that's displayed on the **View alerts** page in the Security & Compliance Center. Also, if email notifications are enabled for the alert policy, Microsoft sends a notification to a list of recipients. The alerts that an admin or other users can see that on the View alerts page is determined by the roles assigned to the user. For more information, see the [RBAC permissions required to view alerts](#rbac-permissions-required-to-view-alerts) section.
@@ -174,6 +177,12 @@ When events that match the same alert policy occur within the aggregation interv
 The following screenshot shows an alert with four aggregated events. The activity list contains information about the four email messages relevant to the alert.
 
 ![Example of alert aggregation](../media/AggregatedAlertExample.png)
+
+Keep the following things in mind about alert aggregation:
+
+- Alerts triggered by the **A potentially malicious URL click was detected** [default alert policy](#default-alert-policies) are not aggregated. This is because alerts triggered by this policy are unique to each user and email message.
+
+- At this time, the **Hit count** alert property doesn't indicate the number of aggregated events for all alert policies. For alerts triggered by these alert policies, you can view the aggregated events by clicking **View message list** or **View activity** on the alert. We're working to make the number of aggregated events listed in the **Hit count** alert property available for all alert policies.
 
 ## RBAC permissions required to view alerts
 

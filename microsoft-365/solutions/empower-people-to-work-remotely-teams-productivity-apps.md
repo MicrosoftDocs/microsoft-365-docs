@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/27/2020
+ms.date: 06/03/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -60,13 +60,19 @@ Apps and workflows let remote workers be more productive in Teams, by collecting
 
 With Outlook, remote workers can stay connected and organized with email, calendars, contacts, tasks, and more—together in one place. Outlook helps you stay on track and prioritize your day based on what’s relevant to you. Outlook enables you to share attachments right from OneDrive, plan and join Teams meetings, view and share calendars, and provide delegate permissions to others. Knowing what’s coming up next across both work and personal commitments and what needs attention can help remote workers focus on what matters. Outlook provides helpful ways for remote workers to manage their time and to find what they need easily, including files, people in the organization, and more. 
 
+See [this article](../enterprise/secure-email-recommended-policies.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
+
 ## Store and collaborate on files with SharePoint Online and OneDrive
 
 For content collaboration, remote workers can use SharePoint Online and OneDrive folders as a central place in the cloud to store and share files, co-author, communicate, and collaborate. Remote workers can securely work from anywhere from a web browser, from Teams, and from Office apps.
 
+See [this article](../enterprise/sharepoint-file-access-policies.md) for the recommended identity and device-access policies to protect SharePoint Online and OneDrive for Business.
+
 ## Create and collaborate on content with Microsoft 365 Apps
 
 Microsoft 365 Apps is the most productive and most secure Office experience for enterprises, allowing people to work together seamlessly from anywhere, anytime. Remote workers can collaborate on a document with multiple people simultaneously, see edits and changes in real time, and coauthor with others on any laptop, PC, or mobile device.
+
+See [this article](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps) to plan, deploy, and manage Microsoft 365 Apps in your enterprise environment.
 
 ## Admin technical resources for productivity apps and services
 
@@ -76,6 +82,8 @@ Microsoft 365 Apps is the most productive and most secure Office experience for 
 - [Tools for driving Teams adoption](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
 - [Create a change management strategy for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
 - [Teams with three tiers of protection](configure-teams-three-tiers-protection.md)
+
+## User training resources for productivity apps and services
 
 - [Train your users on Office and Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
 - [Use Office for the web](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)

@@ -26,10 +26,14 @@
           href: setup/migrate-email-and-contacts-admin.md
         - name: Install Office apps
           href: setup/install-applications.md
+        - name: Set up windows devices
+          href: ../business/set-up-windows-devices.md
+        - name: Set up mobile devices
+          href: ../business/set-up-mobile-devices.md
         - name: Roll out Teams
           href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
         - name: App training for everyone
-          href: https://support.office.com/en-us/office-training-center
+          href: https://support.office.com/office-training-center
         - name: What subscription do I have?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Customize Sign-in page
@@ -38,6 +42,14 @@
           href: setup/customize-your-organization-theme.md  
         - name: Learn about Office 365 Germany
           href: admin-overview/learn-about-office-365-germany.md
+        - name: Access on-premises users and resources
+          items:
+            - name: Synchronize domain users to Microsoft 365
+              href: ../business/manage-domain-users.md
+            - name: Enable domain-joined Windows 10 devices to be managed
+              href: ../business/manage-windows-devices.md
+            - name: Access resources from an Azure AD-joined device
+              href: ../business/access-resources.md
     - name: Overview of the Microsoft 365 admin center
       items:
         - name: Admin center overview
@@ -218,6 +230,8 @@
            href: manage/manage-messages.md
          - name: Set up release options
            href: manage/release-options-in-office-365.md
+         - name: Show or hide new features
+           href: manage/show-hide-new-features.md
          - name: Power BI usage analytics
            items: 
            - name: About usage analytics
@@ -248,6 +262,16 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: Enable Modern Authentication for Office 2013
           href: security-and-compliance/enable-modern-authentication.md
+        - name: Secure Microsoft Business Premium
+          items:
+            - name: Pre-requisites for data protection
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: Security features
+              href: ../business/security-features.md
+            - name: Increase threat protection
+              href: ../business/increase-threat-protection.md
+            - name: Set up compliance features
+              href: ../business/set-up-compliance.md
         - name: Secure score
           href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
         - name: A guide to GDPR compliance
@@ -262,6 +286,10 @@
           href: ../business/reset-devices-to-factory-settings.md
         - name: Map protection features to Intune settings
           href: ../business/map-protection-features-to-intune-settings.md
+        - name: Device states
+          href: ../business/device-states.md
+        - name: App protection settings for Windows 10 PCs
+          href: ../business/protection-settings-for-windows-10-devices.md
         - name: App protection settings for Android and iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items: 
@@ -272,8 +300,16 @@
           items: 
             - name: Validate settings on Windows 10 PCs
               href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: App protection settings for Windows 10 PCs
-          href: ../business/protection-settings-for-windows-10-devices.md
+        - name: Autopilot
+          items: 
+            - name: Add Autopilot devices and profile
+              href: ../business/add-autopilot-devices-and-profile.md
+            - name: Create and edit AutoPilot profiles
+              href: ../business/create-and-edit-autopilot-profiles.md
+            - name: Create and edit AutoPilot devices
+              href: ../business/create-and-edit-autopilot-devices.md
+            - name: AutoPilot Profile settings
+              href: ../business/autopilot-profile-settings.md
     - name: Work with customers
       href: work-with-customers/index.yml
       items: 

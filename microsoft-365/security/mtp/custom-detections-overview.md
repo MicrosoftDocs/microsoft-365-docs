@@ -24,8 +24,6 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-[!INCLUDE [Prerelease information](../includes/prerelease.md)]
-
 With custom detections, you can proactively monitor for and respond to various events and system states, including suspected breach activity and misconfigured endpoints. This is made possible by customizable detection rules that automatically trigger alerts as well as response actions.
 
 Custom detections work with [advanced hunting](advanced-hunting-overview.md), which provides a powerful, flexible query language that covers a broad set of event and system information from your network. You can set them to run at regular intervals, generating alerts and taking response actions whenever there are matches.
