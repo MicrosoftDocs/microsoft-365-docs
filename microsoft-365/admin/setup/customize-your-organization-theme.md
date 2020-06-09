@@ -38,12 +38,12 @@ As the admin of your Microsoft 365 for business subscription, you can change the
 
 3. On the **Customs themes** panel, change the theme elements that you want for your organization:
     
-    - **Use a custom logo image**: Choose whether to use an image from a URL or to upload an image. If you use a URL, make sure that the URL uses HTTPS and that the image is 200 x 30 pixels of any format of any size. You can upload a logo under 10 KB that is 200 x 30 pixels in JPG, PNG, GIF, or SVG format.
+    - **Add your company logo**: Choose whether to use an image from a URL or to upload an image. If you use a URL, make sure that the URL uses HTTPS and that the image is 200 x 30 pixels of any format of any size. You can upload a logo under 10 KB that is 200 x 30 pixels in JPG, PNG, GIF, or SVG format.
 
       > [!NOTE]
       > For the logo to appear in the SharePoint mobile app, use only SVG images. Images uploaded in any other format don't display in the app. Logos are not clickable in the SharePoint Mobile app.
 
-    - **Make logo clickable**: You can use your logo in the navigation bar as a link to any company resource. You can enter the URL for the logo here, starting with http:// or https://. This is optional.
+    - **Add a destination link users go to when they select your logo**: You can use your logo in the navigation bar as a link to any company resource. You can enter the URL for the logo here, starting with http:// or https://. This is optional.
 
     - **Select background image**: Select the image and upload your own JPG, PNG, or GIF with a resolution of 1366 x 50 pixels, no larger than 15 KB. The background image appears in the top navigation bar on every page.
 
@@ -56,7 +56,7 @@ As the admin of your Microsoft 365 for business subscription, you can change the
 
     - **Accent color**: Select a color to use for the navigation bar button hover color and page accents like buttons and text on certain applications.
 
-     - **Prevent users from overriding theme**: Flip this toggle to prevent users from choosing their own theme from our theme selection. This doesn't prevent users from being able to set a high contrast theme.
+    - **Prevent users from overriding theme**: Flip this toggle to prevent users from choosing their own theme from our theme selection. This doesn't prevent users from being able to set a high contrast theme.
 
     - **Show the user name**: Choose whether to show a user's full name at the entry point to the account manager in the top right of the page when the user is signed in. By default, users see their photo or their initials, if no photo was uploaded.
     
