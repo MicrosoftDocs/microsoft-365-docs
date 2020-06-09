@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Score FAQ"
+title: "Microsoft Compliance Score (preview) FAQ"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ search.appverid:
 description: "Find answers to frequently asked questions about Microsoft Compliance Score, which helps organizations simplify and automate risk assessments."
 ---
 
-# Microsoft Compliance Score (preview) frequently asked questions
+# Compliance Score (preview) frequently asked questions
 
 ## What is Compliance Score?
 

@@ -16,7 +16,7 @@ search.appverid:
 description: "Customize Microsoft Compliance Score by creating assessments to help you manage compliance for your organization."
 ---
 
-# Customize Compliance Score with assessments
+# Customize Compliance Score (preview) with assessments
 
 **In this article:** Learn how to customize Compliance Score by setting up your assessments. This article discusses the pre-configured **assessments** provided by Microsoft, explains how to modify assessments to suit your needs, and how to create your own assessments. This article also covers how to organize assessments into **groups**, working with **controls**, and creating **reports**.
 

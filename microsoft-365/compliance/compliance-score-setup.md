@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Score setup"
+title: "Microsoft Compliance Score (preview) setup"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ search.appverid:
 description: "Learn how set up and start using Microsoft Compliance Score, which helps simplify and automate risk assessments."
 ---
 
-# Microsoft Compliance Score (preview) setup
+#Compliance Score (preview) setup
 
 ## Before you begin
 

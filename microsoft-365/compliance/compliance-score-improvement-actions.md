@@ -1,5 +1,5 @@
 ---
-title: "Assign and perform work with improvement actions in Microsoft Compliance Score"
+title: "Work with improvement actions in Microsoft Compliance Score (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,7 +16,7 @@ search.appverid:
 description: "Learn how to manage your compliance activities in Microsoft Compliance Score by working with improvement actions."
 ---
 
-# Assign and perform work with improvement actions in Microsoft Compliance Score (preview)
+# Work with improvement actions in Compliance Score (preview)
 
 **In this article:** This article explains how to manage your compliance activities by working with improvement actions. This topic leads you through the workflow of assigning improvement actions for work, testing actions and setting their status, and assigning actions to assessors for completion.
 

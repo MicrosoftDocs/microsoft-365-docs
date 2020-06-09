@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Compliance Score"
+title: "Microsoft Compliance Score (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Microsoft Compliance Score helps organizations simplify and automate risk assessments, and suggests recommended actions to help address risks."
+description: "Microsoft Compliance Score (preview) helps organizations simplify and automate risk assessments, and suggests recommended actions to help address risks."
 ---
 
 # Microsoft Compliance Score (preview)
