@@ -805,7 +805,7 @@
           href: compliance-score-setup.md
         - name: Customize Compliance Score with assessments
           href: compliance-score-assessments.md
-        - name: Assign and perform work 
+        - name: Assign and perform work with improvement actions
           href: compliance-score-improvement-actions.md
         - name: How your score is calculated
           href: compliance-score-methodology.md
