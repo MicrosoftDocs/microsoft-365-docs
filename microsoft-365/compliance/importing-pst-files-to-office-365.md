@@ -23,7 +23,7 @@ description: "For administrators: Learn about using the Import service in the Se
 # Overview of importing your organization's PST files
 
 > [!NOTE]
-> This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075)
+> This article is for administrators. Are you trying to import PST files to your own mailbox? See [Import email, contacts, and calendar from an Outlook .pst file](https://go.microsoft.com/fwlink/p/?LinkID=785075).
 
 You can use the Import service in the Security & Compliance Center to quickly bulk-import PST files to Exchange Online mailboxes in your organization. There are two ways you can import PST files to Office 365:
 
