@@ -1,0 +1,77 @@
+### YamlMime:Hub
+
+title: Microsoft Broadsight admin center help # < 60 chars
+summary: Explore resources for admins and advanced user to get started with Microsoft Broadsight.
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: m365
+
+metadata:
+  title: Microsoft Broadsight help # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Set up and manage Microsoft Broadsight. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: efrene #Required; your GitHub user alias, with correct capitalization.
+  ms.author: efrene #Required; microsoft alias of author; optional team alias.
+  ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+  ms.custom: 
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Microsoft Broadsight logical architecture
+      itemType: whats-new
+      url: new-subscription-names.md
+
+# productDirectory section (optional)
+productDirectory:
+  title: Get started # < 60 chars (optional)
+  summary: Turn on and configure Microsoft Broadsight. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Get set up
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+      summary: Turn on and configure Microsoft Broadsight.
+      url: setup/index.yml
+    # Card
+    - title: Get started with Knowledge Management
+      imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+      summary: Select sites and manage topics.
+      url: setup/migrate-email-and-contacts-admin.md
+    # Card
+    - title: Get started with Document Management
+      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+      summary:  Build AI models to identify and classify content.
+      url: setup/install-applications.md
+    # Card
+    - title: Get started with Forms Processing
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Create models to process unstructured content.
+      url: https://support.office.com/office-training-center
+
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Overview # < 60 chars (optional)
+      summary: Learn about how Microsoft Broadsight works. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Overview of Microsoft Broadsight
+          summary: Learn how Microsoft Broadsight works, key features, and business problems it can solve. 
+          url: admin-overview/about-the-admin-center.md
+        # Card
+        - title: Microsoft Broadsight logical architecture
+          summary: See how Microsoft Broadsight interacts with other Microsoft apps and services. 
+          url: add-users/index.yml
+        # Card
+        - title: How do I buy or try Microsoft Broadsight?
+          summary: Learn how to get Microsoft Broadsight.
+          url: email/index.yml

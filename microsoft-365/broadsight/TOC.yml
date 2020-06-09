@@ -1,0 +1,73 @@
+- name: Microsoft Broadsight help
+  href: index.yml
+  items: 
+    - name: Overview
+      href: setup/index.yml
+      items: 
+        - name: What is Microsoft Broadsight?
+          href: .md
+        - name: Microsoft Broadsight logical architecture 
+          href: .md
+        - name: Knowledge Discovery overview 
+          href: .md
+        - name: Knowledge Management overview 
+          href: .md
+        - name: Content capture through forms processing overview
+          href: .md
+        - name: Content capture through forms machine teaching overview
+          href: .md
+        - name: How do I buy or try Microsoft Broadsight?
+          href: .md
+    - name: Get started with setup
+      items:
+        - name: Plan your setup
+          href: .md
+        - name: What are licensing requirements for Microsoft Broadsight?
+          href: .md
+        - name: How do I turn on and configure Microsoft Broadsight?
+          href: .md
+        - name: How do I give access to users?
+          href: .md
+        - name: Tips for rolling out Microsoft Broadsight in your organization
+          href: .md
+
+    - name: Get started with Knowledge Management
+      items: 
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: Buy or try subscriptions
+          href: services-in-china/buy-or-try-subscriptions.md
+        - name: Download the Office app for Android for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-Android.md
+        - name: Download the Office app for iOS for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-iOS.md
+        - name: View your bill or get a Fapiao
+          href: services-in-china/view-your-bill-or-get-a-fapiao.md
+        - name: Apply for a Fapiao
+          href: services-in-china/apply-for-a-fapiao.md
+        - name: Azure Information Protection parity
+          href: services-in-china/parity-between-azure-information-protection.md      
+  
+    - name: Get started with Document management
+      items: 
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+
+    - name: Get started with Forms configuration
+      items: 
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+
+
+
+
+
+    
