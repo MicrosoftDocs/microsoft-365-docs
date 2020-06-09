@@ -12,8 +12,9 @@
     - name: Overview
       href: foundation-solutions-overview.md
     - name: Empower remote workers with Microsoft 365
-      href: empower-people-to-work-remotely.md
       items:
+      - name: Overview
+        href: empower-people-to-work-remotely.md
       - name: Step 1. Increase sign-in security
         href: empower-people-to-work-remotely-secure-sign-in.md
       - name: Step 2. Provide remote access
