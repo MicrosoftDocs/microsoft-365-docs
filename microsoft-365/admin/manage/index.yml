@@ -12,6 +12,7 @@ metadata:
   ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
   ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -35,6 +36,8 @@ landingContent:
             url: update-phone-number-and-email-address.md
           - text: Set up release options
             url: release-options-in-office-365.md
+          - text: Show or hide new features
+            url: show-hide-new-features.md
   # Card (optional)
   - title: Block user access and back up data
     linkLists:

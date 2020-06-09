@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,7 +27,7 @@ description: "Get an overview of Microsoft 365 Message center and its role in ch
 
 To keep track of upcoming changes, including new and changed features, planned maintenance, or other important announcements, go to <a href="https://go.microsoft.com/fwlink/p/?linkid=2070717" target="_blank">Message center</a>. That's where we post official announcements that let you take a proactive approach to change management. Each post gives you a high-level overview of a planned change and how it may affect your users, and links out to more detailed information to help you prepare.
   
-To open Message center, first make sure that you have selected the **Try the new admin center** toggle on the admin center Home page, and then:
+To open Message center:
 
 ::: moniker range="o365-worldwide"
 
@@ -56,7 +57,7 @@ You can also use the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/p
 |Who can view posts in Message center?  <br/> |Most users who have been assigned any admin role in Microsoft 365 can view Message center posts. [Here's a list](#admin-roles-that-dont-have-access-to-the-message-center) of admin roles that don't have access to the Message center. You can also assign the Message center reader role to users who should be able to read and share Message center posts without having any other admin privileges.<br/><br/> Additionally, you can assign the Message Center Privacy reader role to people who should see notifications about security and privacy information relevant to your organization. See [About admin roles](../add-users/about-admin-roles.md) to learn more about what each admin role can do. <br/><br/>Most Message center posts can be shared through email with non-admin users who may need to take action. This option is not available for data privacy posts that the Message Center Privacy reader views. <br/> |
 |Is this the only way Microsoft will communicate changes about Microsoft 365?  <br/> |No, there are many ways that we communicate changes in Microsoft 365. Message center is the primary way that we communicate the timing of individual changes. See [Stay on top of Microsoft 365 changes](stay-on-top-of-updates.md) for information about additional resources.  <br/> |
 |How can I see posts in my language?  <br/> |Message center posts are written in English only due to the timeliness of the information we are posting, but you can control whether, by default, posts are shown in English or are automatically machine-translated to your preferred language. And, no matter which default view you choose, you can select to machine-translate posts to any language we support. See [Language translation for Message center posts](language-translation-for-message-center-posts.md) for more details.  <br/> |
-|Can I preview changes or features before they are rolled-out to my organization?  <br/> |Sometimes. Some changes and new features can be previewed by opting in to the Targeted release program. To opt in, in the admin center, go to **Settings** > **Organization profile** > **Release preferences**. (In the new admin center, you may need to select **Show all** at the bottom of the left navigation pane to see **Settings**.) You can choose Targeted release for your entire organization, or just for selected users. See [Standard or Targeted release options in Microsoft 365](release-options-in-office-365.md) for more information about the program.  <br/> |
+|Can I preview changes or features before they are rolled-out to my organization?  <br/> |Sometimes. Some changes and new features can be previewed by opting in to the Targeted release program. To opt in, in the admin center, go to **Settings** > **Organization profile** > **Release preferences**. (In the admin center, you may need to select **Show all** at the bottom of the left navigation pane to see **Settings**.) You can choose Targeted release for your entire organization, or just for selected users. See [Standard or Targeted release options in Microsoft 365](release-options-in-office-365.md) for more information about the program.  <br/> |
 |Can I find out the exact date a change will be available to my organization?  <br/> |Unfortunately, we can't tell you the exact date a change will be made to your organization. In our Message center post, we will give as much information as we can on the timing of the release, based on our confidence level. We understand you want us to be more specific on timing of releases, and we're working on improvements to get better with that level of detail.  <br/> |
 |Are these messages specific to my organization?  <br/> |We do our best to make sure that you only see Message center posts that affect your organization. The Microsoft 365 Roadmap includes all of the features we are currently working on and rolling out, but not all of these features apply to every organization. For example, if a feature is rolling out only to educational institutions, we will target the Message center post ONLY to those organizations.  <br/> |
 |Can I get message center posts emailed instead?  <br/> |Yes! You can select to have a weekly digest emailed to you and up to two email addresses. If you need to have the digest go to more than two more people, you can send to a Microsoft 365 group or distribution list. The emailed weekly digest is turned on by default. If you aren't getting your weekly digests, check your spam folder. See the [Preferences](#preferences) section of this article for more information on how to set up the weekly digest.  <br/> |
@@ -122,9 +123,6 @@ If administration is distributed across your organization, you may not want or n
 - Set email preferences to receive a weekly digest of all messages, emails for major updates only, and emails for data privacy messages.  
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. Select **Edit preferences** at the top of Message center.
 

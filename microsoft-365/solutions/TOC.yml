@@ -13,7 +13,7 @@
       href: foundation-solutions-overview.md
     - name: Empower remote workers with Microsoft 365
       items:
-      - name: Overview
+      - name: Overview   
         href: empower-people-to-work-remotely.md
       - name: Step 1. Increase sign-in security
         href: empower-people-to-work-remotely-secure-sign-in.md
@@ -23,7 +23,7 @@
         href: empower-people-to-work-remotely-manage-endpoints.md
       - name: Step 4. Deploy productivity apps and services
         href: empower-people-to-work-remotely-teams-productivity-apps.md
-      - name: Step 5. Create COVID-19 crisis communication venues
+      - name: Step 5. Create communication venues
         href: empower-people-to-work-remotely-communication-venues.md
       - name: Step 6. Train remote workers
         href: empower-people-to-work-remotely-train-monitor-usage.md
@@ -97,7 +97,7 @@
       - name: Telephony solutions
         items: 
         - name: Choose your solution 
-          href: https://docs.microsoft.com/en-us/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+          href: https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
         - name: Case study for multi-national corporation 
           href: 
       - name: File collaboration in SharePoint with Microsoft 365
@@ -105,7 +105,7 @@
       - name: Plan an intelligent SharePoint intranet
         href: https://docs.microsoft.com/sharepoint/plan-intranet?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
       - name: OneDrive Guide for enterprises
-        href: https://docs.microsoft.com/en-us/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
+        href: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json
     - name: Security
       items:
       - name: Top tasks for security teams to support working from home
@@ -177,7 +177,8 @@
       href: identity-design-principles.md
     - name: Security hurdles you can sail over
       href: security-design-principles.md
-      
+    - name: Networking up (to the cloud)
+      href: networking-design-principles.md
 - name: Microsoft 365 deployment resources
   items: 
     - name: Deploy Microsoft 365
