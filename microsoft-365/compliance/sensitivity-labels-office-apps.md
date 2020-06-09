@@ -39,6 +39,9 @@ New versions of the apps are made available at different times for different upd
 
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
+> [!NOTE]
+> The names of the update channels have recently changed. For example, Monthly Channel is now Current Channel, and Office Insider is now Beta Channel. For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/update-channels-changes).
+
 ### Sensitivity label capabilities in Word, Excel, and PowerPoint
 
 For iOS and Android: Where these have a minimum version listed, the sensitivity label capability is also supported with the [Office app](https://www.microsoft.com/en-us/microsoft-365/blog/2020/02/19/new-office-app-android-ios-available/).
@@ -51,7 +54,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Current Channel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (2003+) | [Current Channel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (16.35+)   | Under review   | Under review         | Under review                                                        |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Current Channel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (2003+) | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Beta Channel](https://office.com/insider)                                  | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
