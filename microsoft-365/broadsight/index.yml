@@ -61,7 +61,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Overview # < 60 chars (optional)
-      summary: Learn about how Microsoft Broadsight works. # < 160 chars (optional)
+      summary: Learn about Microsoft Broadsight. # < 160 chars (optional)
       items:
         # Card
         - title: Overview of Microsoft Broadsight
@@ -75,3 +75,25 @@ additionalContent:
         - title: How do I buy or try Microsoft Broadsight?
           summary: Learn how to get Microsoft Broadsight.
           url: email/index.yml
+
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Training Videos # < 60 chars (optional)
+      summary: Learn more about using Microsoft Broadsight through short videos. # < 160 chars (optional)
+      items:
+        # Card
+        - title: What is Content Understanding?
+          summary: Learn the basics of content understanding. 
+          url: https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad
+        # Card
+        - title: Creating a document understanding model
+          summary: Learn how to use AI Builder to create a model. 
+          url: https://support.microsoft.com/office/share-a-project-and-assign-tasks-7d43f5be-7313-4ea4-a2c3-720b8e0c1850
+        # Card
+        - title: Model creation tips and tricks 
+          summary: Learn tips on how to effectively create models in AI builder.
+          url: ehttps://support.microsoft.com/office/build-a-project-in-grid-and-timeline-views-b01443f4-0e85-4952-b1f2-f4b55e4a90be
