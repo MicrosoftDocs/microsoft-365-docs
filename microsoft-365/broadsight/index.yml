@@ -66,7 +66,7 @@ additionalContent:
         # Card
         - title: Overview of Microsoft Broadsight
           summary: Learn how Microsoft Broadsight works, key features, and business problems it can solve. 
-          url: what-is-microsoft-broadsight.md.md
+          url: what-is-microsoft-broadsight.md
         # Card
         - title: Microsoft Broadsight logical architecture
           summary: See how Microsoft Broadsight interacts with other Microsoft apps and services. 
