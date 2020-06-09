@@ -53,9 +53,9 @@ Think of Compliance Score as a simplified version of Compliance Manager. While t
 
 Compliance Score shares the same backend with Compliance Manager, so any data you may already have in Compliance Manager will show in Compliance Score.
 
-Some functionality for assessment and template management remains in Compliance Manager during public preview. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, you’ll be guided to that tool.
+Some functionality for assessment and template management remains in Compliance Manager during public preview. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, we’ll guide you there.
 
-**Resources**
+#### Resources
 
 Learn more about the relationship between Compliance Score and Compliance Manager in the [Compliance Score release notes](compliance-score-release-notes.md).
 
@@ -65,7 +65,7 @@ Compliance Score awards you points for completing actions taken to comply with a
 
 Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline.  This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-This assessment is used to calculate your initial score the first time you come to Compliance Score, before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable insights on your organization’s current compliance posture relative to key data protection standards and regulations.
+The data protection baseline assessment is used to calculate your initial score before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable insights on your organization’s current compliance posture relative to key data protection standards and regulations.
 
 Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to better mitigate risks. For example, if your organization belongs to the financial services industry, you may want to add the FFIEC assessment. If your organization belongs to the healthcare industry, you can add the HIPAA/HITECH assessment.
 
@@ -87,7 +87,11 @@ A control is a requirement of a regulation, standard, or policy. It defines how 
 Compliance Score tracks two types of controls:
 
 1. **Microsoft controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
-2. **Your controls**: sometimes referred to as "customer-managed controls," these are implemented and managed by your organization
+2. **Your controls**: sometimes referred to as "customer controls," these are implemented and managed by your organization
+
+#### Resources
+
+Learn more about monitoring [controls and assessments](compliance-score-assessments.md).
 
 ### Assessments
 
@@ -102,7 +106,7 @@ Assessments have several components:
 
 When creating assessments, you'll assign them to a **group**. You can configure groups in whatever way is most logical for your organization. For example, you may group assessments by year, compliance standard, service, teams within your organization, or some other way. Once you create groups, you can [filter you Compliance Score dashboard](compliance-score-setup.md#filtering-your-dashboard-view) to view your score by one or more groups.
 
-**Resources**
+#### Resources
 
 Learn how to [create and manage assessments in Compliance Score](compliance-score-assessments.md).
 
@@ -112,7 +116,7 @@ Compliance Score provides templates that are ready for you to quickly create ass
 
 By creating your own templates, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
 
-**Resources**
+#### Resources
 
 Review the library of [templates available in Compliance Score](compliance-score-templates.md) from which to build your assessments.
 
@@ -122,12 +126,12 @@ View [detailed instructions for creating and modifying templates](working-with-c
 
 Improvement actions centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
-**Resources**
+#### Resources
 
 Learn how to use [improvement actions](compliance-score-improvement-actions.md) to manage your compliance workflow.
 
 ## Next steps: set up and customize
 
-Learn how to sign in, set up permissions, and configure updates and dashboard views at [Compliance Score setup](compliance-score-setup.md).
+Learn how to sign in, set permissions and roles, configure Secure Score updates, and personalize your dashboard view at [Compliance Score setup](compliance-score-setup.md).
 
-Then customize Compliance Score for your organization by [setting up assessments](compliance-score-assessments.md).
+Next, begin customizing Compliance Score for your organization by [setting up assessments](compliance-score-assessments.md).
