@@ -52,7 +52,7 @@ Contoso followed the same two-stage approach for feature updates that they used 
 - Semi-Annual Enterprise Channel (Preview) for updates to the pilot group 
 - Semi-Annual Enterprise Channel for updates to the broad group. 
 
-Because the Semi-Annual Enterprise (Preview) Channel releases a version of Microsoft 365 Apps for enterprise four months earlier than the Semi-Annual Enterprise Channel, Contoso has time to validate the updates without having to manage them. 
+Because the Semi-Annual Enterprise Channel (Preview) releases a version of Microsoft 365 Apps for enterprise four months earlier than the Semi-Annual Enterprise Channel, Contoso has time to validate the updates without having to manage them. 
 
 ## Deployment process
 
