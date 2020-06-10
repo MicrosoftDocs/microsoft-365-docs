@@ -76,7 +76,7 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 
 The following table lists examples of what you can enter and what effect those entries have.
 
-|**Example Entry**|**What It Does**|
+|Example Entry|What It Does|
 |:-----|:-----|
 |`contoso.com`|Allows recipients to visit a site like `https://contoso.com` but not subdomains or paths.|
 |`*.contoso.com/*`|Allows recipients to visit a domain, subdomains, and paths, such as `https://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, or `https://www.contoso.com/a`. <br/><br/> This entry is inherently better than `*contoso.com*`, because it doesn't include potentially fraudulent sites, like `https://www.falsecontoso.com` or `https://www.false.contoso.completelyfalse.com`|
