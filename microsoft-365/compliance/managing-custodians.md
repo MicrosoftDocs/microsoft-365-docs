@@ -31,6 +31,8 @@ For more information about working with custodians, see the following:
 
 - [Add custodians to a case](add-custodians-to-case.md)
 
+- [Bulk-add custodians to a case](bulk-add-custodians.md)
+
 - [Manage custodians in a case](manage-new-custodians.md)
 
 - [View custodian activity](view-custodian-activity.md)
