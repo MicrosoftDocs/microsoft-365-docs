@@ -29,7 +29,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Get started # < 60 chars (optional)
-  summary: Turn on and configure Microsoft Broadsight. # < 160 chars (optional)
+  summary: Turn on, configure, and use Microsoft Broadsight. # < 160 chars (optional)
   items:
     # Card
     - title: Get set up
