@@ -2,7 +2,6 @@
   href: what-is-microsoft-broadsight.md
   items: 
     - name: Overview
-      href: index.yml
       items: 
         - name: What is Microsoft Broadsight?
           href: what-is-microsoft-broadsight.md
@@ -25,7 +24,6 @@
 
 
     - name: Get started with setup
-      href: index.yml
       items:
         - name: Plan your setup
           href: .md
