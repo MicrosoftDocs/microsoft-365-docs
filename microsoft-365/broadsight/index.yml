@@ -2,7 +2,6 @@
 
 title: Microsoft Broadsight admin center help # < 60 chars
 summary: Explore resources for admins and advanced user to get started with Microsoft Broadsight.
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
@@ -37,14 +36,14 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
       summary: Turn on and configure Microsoft Broadsight.
-      url: setup/index.yml
+      url: what-is-microsoft-broadsight.md
     # Card
     - title: Get started with Knowledge Management
       imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
       summary: Select sites and manage topics.
       url: setup/migrate-email-and-contacts-admin.md
     # Card
-    - title: Get started with Document Management
+    - title: Get started with Document Understanding
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       summary:  Build AI models to identify and classify content.
       url: setup/install-applications.md
@@ -88,12 +87,12 @@ additionalContent:
         # Card
         - title: What is Content Understanding?
           summary: Learn the basics of content understanding. 
-          url: https://support.microsoft.com/office/get-started-with-project-for-the-web-50bf3e29-0f0d-4b7a-9d2c-7c78389b67ad
+          url: 
         # Card
-        - title: Creating a document understanding model
+        - title: Creating a Document Understanding model
           summary: Learn how to use AI Builder to create a model. 
-          url: https://support.microsoft.com/office/share-a-project-and-assign-tasks-7d43f5be-7313-4ea4-a2c3-720b8e0c1850
+          url: 
         # Card
         - title: Model creation tips and tricks 
           summary: Learn tips on how to effectively create models in AI builder.
-          url: ehttps://support.microsoft.com/office/build-a-project-in-grid-and-timeline-views-b01443f4-0e85-4952-b1f2-f4b55e4a90be
+          url: 

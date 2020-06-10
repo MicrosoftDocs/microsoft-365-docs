@@ -16,37 +16,73 @@
           href: .md
         - name: Content capture through forms machine teaching overview
           href: .md
+        - name: Microsoft Broadsight use cases
+          href: .md
         - name: How do I buy or try Microsoft Broadsight?
           href: .md
+        - name: How can get help with using Microsoft Broadsight?
+          href: .md
+
+
     - name: Get started with setup
       href: index.yml
       items:
         - name: Plan your setup
           href: .md
-        - name: What are licensing requirements for Microsoft Broadsight?
+        - name: What are the licensing requirements for Microsoft Broadsight?
           href: .md
         - name: How do I turn on and configure Microsoft Broadsight?
           href: .md
-        - name: How do I give access to users?
+        - name: How do I configure knowledge management?
+          href: .md
+        - name: How do I include additional sources?
           href: .md
         - name: Tips for rolling out Microsoft Broadsight in your organization
+          href: .md
+        - name: Microsoft Broadsight limits and boundaries
           href: .md
 
     - name: Get started with Knowledge Management
       items: 
-        - name: Ab
+        - name: Plan for Knowledge Management 
           href: .md
-  
-  
-    - name: Get started with Document management
+        - name: Knowledge Center Overview 
+          href: .md 
+        - name: How to approve or decline topics
+          href: .md   
+        - name: How to add sites for topic analysis
+          href: .md 
+        - name: How to edit a topic page or card
+          href: .md 
+        - name: How to add or remove people from accessing a topic
+          href: .md 
+
+    - name: Get started with Document Understanding
       items: 
-        - name: Ab
+        - name: Plan for Document Understanding
+          href: .md
+        - name: Content Center Overview
+          href: .md
+        - name: What is structured versus unstructured content
+          href: .md
+        - name: How to build AI models to classify files and extract data 
+          href: .md
+        - name: Apply a retention label to the Document Understanding model
+          href: .md
+        - name: Apply your model to files in a doc library
           href: .md
 
-
-    - name: Get started with Forms configuration
+    - name: Get started with Forms Processing
       items: 
-        - name: Ab
+        - name: Plan for Forms Processing
+          href: .md
+        - name: What is the difference between Document Management and Forms Processing?
+          href: .md
+        - name: How to select your sample files
+          href: .md
+        - name: Create a Form Processing model
+          href: .md
+        - name: Apply a Forms Processing model
           href: .md
 
 
