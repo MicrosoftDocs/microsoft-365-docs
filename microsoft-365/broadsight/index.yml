@@ -24,7 +24,7 @@ highlightedContent:
     # Card
     - title: Microsoft Broadsight logical architecture
       itemType: whats-new
-      url: .md
+      url: what-is-microsoft-broadsight.md
 
 # productDirectory section (optional)
 productDirectory:
