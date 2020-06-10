@@ -195,31 +195,38 @@ There are two ways you can take action from this screen:
 
 2. On the row of your intended solution, under the **Open solution** column, select **Open**. You’ll see the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
 
+## Assessments page
 
+The assessments page lists all the assessments you set up for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
 
+This page summarizes key information about each assessment:
 
+- **Assessment**: name of the assessment
+- **Status**:
+    - **Complete** -  all controls have a status of “passed” or “out of scope”
+    - **Incomplete** – at least one control has a status of “failed
+    - **None** - all controls have a test status of “none” (have not been tested)
+    - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected
+- **Assessment progress**: the percentage of the work done toward completion, as measured by the number of controls successfully tested
+- **Your improvement actions**: the number of completed actions to satisfy implementation of your controls
+- **Microsoft actions**: the number of completed actions to satisfy implementation of Microsoft controls
+- **Group**: name of the group the assessment belongs to
+- **Product**: associated Microsoft 365 service
+- **Regulation**: the regulatory standard, policy, or law that applies to the assessment
 
+### Filtering your assessments view
 
+To filter you view of assessments:
 
+1. Select **Filter** at the top-left corner of your assessments list.
+2. On the **Filters** flyout pane, check your desired criteria.
+3. Select the Apply button. The filter pane will close and you will see your filtered view.
 
+You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
 
+### Default assessment
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+By default, you'll see the [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) assessment on the assessments page. Compliance Score also provides several ready to use [templates](compliance-score-templates.md) from which to build assessments.
 
 ## Next step
-
-Visit [Working with Compliance Score](working-with-compliance-score.md) to understand the workflow of how to take actions to improve your score.
+Customize Compliance Score by setting up [assessments](compliance-score-assessments).
