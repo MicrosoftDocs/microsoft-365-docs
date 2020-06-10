@@ -25,12 +25,21 @@ highlightedContent:
     - title: Microsoft Broadsight logical architecture
       itemType: whats-new
       url: what-is-microsoft-broadsight.md
+    # Card
+    - title: Video - Get started with the Content Center
+      itemType: whats-new
+      url: what-is-microsoft-broadsight.md
 
 # productDirectory section (optional)
 productDirectory:
   title: Get started # < 60 chars (optional)
   summary: Turn on, configure, and use Microsoft Broadsight. # < 160 chars (optional)
   items:
+      # Card
+    - title: Learn about Microsoft Broadsight
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Create models to process unstructured content.
+      url: what-is-microsoft-broadsight.md
     # Card
     - title: Get set up
       # imageSrc should be square in ratio with no whitespace
