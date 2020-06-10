@@ -41,17 +41,17 @@ productDirectory:
     - title: Get started with Knowledge Management
       imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
       summary: Select sites and manage topics.
-      url: setup/migrate-email-and-contacts-admin.md
+      url: what-is-microsoft-broadsight.md
     # Card
     - title: Get started with Document Understanding
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       summary:  Build AI models to identify and classify content.
-      url: setup/install-applications.md
+      url: what-is-microsoft-broadsight.md
     # Card
     - title: Get started with Forms Processing
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Create models to process unstructured content.
-      url: https://support.office.com/office-training-center
+      url: what-is-microsoft-broadsight.md
 
 
 # additionalContent section (optional)
@@ -69,11 +69,11 @@ additionalContent:
         # Card
         - title: Microsoft Broadsight logical architecture
           summary: See how Microsoft Broadsight interacts with other Microsoft apps and services. 
-          url: add-users/index.yml
+          url: what-is-microsoft-broadsight.md
         # Card
         - title: How do I buy or try Microsoft Broadsight?
           summary: Learn how to get Microsoft Broadsight.
-          url: email/index.yml
+          url: what-is-microsoft-broadsight.md
 
 
 # additionalContent section (optional)
@@ -87,12 +87,12 @@ additionalContent:
         # Card
         - title: What is Content Understanding?
           summary: Learn the basics of content understanding. 
-          url: 
+          url: what-is-microsoft-broadsight.md
         # Card
         - title: Creating a Document Understanding model
           summary: Learn how to use AI Builder to create a model. 
-          url: 
+          url: what-is-microsoft-broadsight.md
         # Card
         - title: Model creation tips and tricks 
           summary: Learn tips on how to effectively create models in AI builder.
-          url: 
+          url: what-is-microsoft-broadsight.md
