@@ -309,7 +309,7 @@ Click one of the following links to go to a specific table.
 |[Yammer activities](#yammer-activities)|[Microsoft Power Automate activities](#microsoft-power-automate-activities)|[Microsoft Power Apps activities](#microsoft-power-apps-activities)|
 |[Microsoft Stream activities](#microsoft-stream-activities)|[Content explorer activities](#content-explorer-activities)|[Quarantine activities](#quarantine-activities)|
 |[Microsoft Forms activities](#microsoft-forms-activities)|[Sensitivity label activities](#sensitivity-label-activities)|[Exchange admin activities](#exchange-admin-audit-log)|
-|[Retention and label activities](#retention-policy-and-retention-label-activities)|||
+|[Retention policy and retention label activities](#retention-policy-and-retention-label-activities)|||
 
 ### File and page activities
 
