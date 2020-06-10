@@ -136,8 +136,6 @@ The older features that you might have used:
   
 **Older features from Exchange Online:**
 
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery hold) 
-    
 - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery hold) 
 
 - [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md)
