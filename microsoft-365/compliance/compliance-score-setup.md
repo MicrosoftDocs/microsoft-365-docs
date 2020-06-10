@@ -37,7 +37,7 @@ Compliance Score uses a role-based access control (RBAC) permission model. Only 
 
 ### Where to set permissions
 
-The global admin for your organization can set user permissions in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) or in [Compliance Manager](compliance-manager-overview.md#permissions). Once roles are set in either of these locations, users can access Compliance Score as well as Compliance Manager.
+The person holding the global admin role for your organization can set user permissions in [Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal) or in [Compliance Manager](compliance-manager-overview.md#permissions). Once roles are set in either of these locations, users can access Compliance Score as well as Compliance Manager.
 
 ### Role types
 
@@ -54,11 +54,11 @@ The table below shows how each [Azure AD role](https://docs.microsoft.com/azure/
 | **Assign users**| Global administrator | Portal admin | 
 
 > [!NOTE]
-> When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager; you will not need to re-enter your credentials.
+> When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager. You won't need to re-enter your credentials.
 
 ## Configure automatic Secure Score updates
 
-By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score.md) automatic updates turned on. All actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
+By default, all new tenants have [Secure Score](../security/mtp/microsoft-secure-score-new.md) automatic updates turned on. All actions that are monitored by Secure Score will automatically update the status for the same action in Compliance Score.
 
 Your global administrator can manage this setting to turn off automatic updates for all actions, or set updates for actions individually.
 
@@ -101,7 +101,7 @@ Your compliance score is featured prominently at the top. It shows a percentage 
 When you come to Compliance Score for the first time, your initial score is based on the built-in [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization. As you add assessments that are relevant to your organization, your score becomes even more meaningful.
 
 #### Resources
-Learn more about [how your score is calculated](compliance-score-methodology.md).
+Learn more about [how your compliance score is calculated](compliance-score-methodology.md).
 
 ### Key improvement actions
 
@@ -136,7 +136,7 @@ To remove filters:
 
 ## Improvement actions page
 
-Improvement actions centralize your compliance activities and help you align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
+[Improvement actions](compliance-score-improvement-actions.md) centralize your compliance activities and help you align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
 ### View your improvement actions
 
@@ -167,7 +167,7 @@ The improvement actions page shows the following data points for each improvemen
 - **Points achieved**: number of points earned out of the maximum possible
 
 #### Resources
-Learn how to [assign and perform work on improvement actions](compliance-score-improvement-actions.md)].
+Learn how to [assign and perform work on improvement actions](compliance-score-improvement-actions.md).
 
 ## Solutions page
 
@@ -197,7 +197,7 @@ There are two ways you can take action from this screen:
 
 ## Assessments page
 
-The assessments page lists all the assessments you set up for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
+The assessments page lists all the [assessments](compliance-score-assessments.md) you set up for your organization. Your Compliance Score denominator is determined by all your tracked assessments. The more assessments you add, the more improvement actions you see on your improvement actions page, and the higher your score denominator is.
 
 This page summarizes key information about each assessment:
 
@@ -229,4 +229,4 @@ You can also modify your view to see assessments by group, product, or regulatio
 By default, you'll see the [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) assessment on the assessments page. Compliance Score also provides several ready to use [templates](compliance-score-templates.md) from which to build assessments.
 
 ## Next step
-Customize Compliance Score by setting up [assessments](compliance-score-assessments).
+Customize Compliance Score by setting up [assessments](compliance-score-assessments.md).
