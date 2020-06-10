@@ -33,13 +33,13 @@ In some cases, you may have a set of custodians that you have identified and hav
 To view the custodian hold policy:
 
 1. In the Microsoft 365 compliance center, click **eDiscovery > Advanced** to display the list of cases in your organization.
-   
-2. Go to the **Custodians** tab to add custodians within your case. To learn how you can add and place custodians on hold within an Advanced eDiscovery case, see [Add Custodians to an Advanced eDiscovery Case](add-custodians-to-case.md). If you have already added custodians and placed them on hold, go to step 3.
-   
+
+2. Go to the **Sources** tab to add custodians within your case. To learn how you can add and place custodians on hold within an Advanced eDiscovery case, see [Add Custodians to a case](add-custodians-to-case.md). If you have already added custodians and placed them on hold, go to step 3.
+
 3. Go to the **Holds** tab and click **CustodianHold\<HoldId>**.
-   
-4. In the flyout page, you can see hold statistics for the policy. You can also perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
- 
+
+4. On the flyout page, you can see hold statistics for the policy. You can also perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+
 ## Manage non-custodial holds
 
 When you create a hold, you have the following options to scope the content that is held in the specified content locations:

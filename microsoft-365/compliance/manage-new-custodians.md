@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 ---
 # Manage custodians in an Advanced eDiscovery case
 
-The Custodians tab in Advanced eDiscovery contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
+The Custodians page on the **Sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
 
 ![Manage Custodians](../media/CustodianDetails.PNG)
 
@@ -74,9 +74,9 @@ To update the data sources that are associated with a custodian:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
   
-2. Click the **Custodians** tab.
+2. Click the **Sources** tab.
   
-3. Select a custodian from the list and click **Edit** on the flyout page.
+3. On the **Custodians** page, select a custodian from the list and click **Edit** on the flyout page.
 
     ![Edit Data Sources](../media/EditCustodianDataSource.PNG)
   
@@ -98,9 +98,11 @@ To trigger the re-indexing process to address partially indexed items:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
 
-2. Click to **Custodians tab**, and then select a custodian whose data must be reindexed. 
+2. Click the **Sources** tab.
 
-3. On the flyout page, click **Update index**.
+3. On the **Custodians** page, select a custodian whose data must be reindexed.
+
+4. On the flyout page, click **Update index**.
 
    A dialog is displayed saying the index job has been created.
 
@@ -122,9 +124,9 @@ To release a custodian:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
 
-2.    Go to the **Custodians** tab.
+2. Click the **Sources** tab.
 
-3.    Click to **Custodians tab**, and then select the custodian who is being released from the case.
+3. On the **Custodians** page, and then select the custodian who is being released from the case.
 
 4. On the flyout page, click **Release custodian**.
 

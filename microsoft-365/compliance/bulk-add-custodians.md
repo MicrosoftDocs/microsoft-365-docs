@@ -32,7 +32,8 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 4. Add the custodial information to the CSV file and save it on your local computer. See the next section for information about the properties in the CSV file.
 
-5. On the **Sources** tab, click **Import Custodians** again. 
+5. On the **Sources** tab, click **Import Custodians** again.
+
 6. On flyout page, click **Browse** and the upload your CSV file.
 
    After the CSV file is uploaded, a BulkAddCustodian job is created and displayed on the **Jobs** tab. The job validates the custodians and their corresponding data sources and then adds them to the **Custodians** tab on the **Sources** page of the case.

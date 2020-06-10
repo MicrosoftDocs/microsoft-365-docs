@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: This article provides an overview of Advanced eDiscovery in Microsoft 365, a tool for internal and external investigations.
+description: "This article provides an overview of Advanced eDiscovery in Microsoft 365, a tool for internal and external investigations."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -25,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 The Advanced eDiscovery solution in Microsoft 365 builds on the existing eDiscovery and analytics capabilities in Office 365. This new solution, called *Advanced eDiscovery*, provides an end-to-end workflow to preserve, collect, review, analyze, and export content that's responsive to your organization's internal and external investigations. It also lets legal teams manage the entire legal hold notification workflow to communicate with custodians involved in a case. 
 
 > [!NOTE]
-> Advanced eDiscovery requires an Office 365 or Microsoft 365 E5 Enterprise subscription. For more details about Advanced eDiscovery licensing, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
+> Advanced eDiscovery requires an Office 365 or Microsoft 365 E5 Enterprise subscription. For more information about Advanced eDiscovery licensing, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-ediscovery).
 
 ## Alignment with EDRM
 
@@ -55,13 +54,13 @@ At a high level, here's how Advanced eDiscovery supports the EDRM workflow:
 
 The following sections describe each step in the built-in workflow in Advanced eDiscovery. The following screenshot shows the **Home** tab of a case named *Product Liability 2019002*. Note the workflow tabs at the top of the page are sequenced to align with the EDRM process. 
 
-For more information about the end-to-end workflow in Advanced eDiscovery, see this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133). 
+For more information about the end-to-end workflow in Advanced eDiscovery, see this [Microsoft Mechanics video](https://go.microsoft.com/fwlink/?linkid=2066133).
 
 ![Tabs in Advanced eDiscovery follow the EDRM workflow](../media/aedisco-homepage-1.png)
 
-## Managing custodians
+## Managing custodians and non-custodial data sources
 
-Use the **Custodians** tab to add and manage the people that you've identified as persons of interest in the case. When you add custodians, you can quickly perform custodian-related actions like placing a legal hold on custodian data sources, communicating with custodians, and searching custodian data sources to collect content that's relevant to the case. As the case progresses, it's easy to add new custodians or release custodians from the case. For more information, see [Work with custodians in Advanced eDiscovery](managing-custodians.md).
+Use the **Sources** tab to add and manage the people that you've identified as persons of interest in the case and other data sources that may not be associated with a custodian. When you add custodians or non-custodial data sources, you can quickly perform actions like placing a legal hold on custodian and non-custodial data sources, communicating with custodians, and searching custodian and non-custodial data sources to collect content that's relevant to the case. As the case progresses, it's easy to add new custodians or non-custodial date sources or release them from the case. For more information, see [Work with custodians in Advanced eDiscovery](managing-custodians.md).
 
 ## Managing legal hold notifications
 

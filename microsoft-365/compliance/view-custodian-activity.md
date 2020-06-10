@@ -34,9 +34,9 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
   
-2. Click the **Custodians** tab.
+2. Click the **Sources** tab.
   
-3. Select a custodian from the list, and then click **View custodian activity** on the flyout page.
+3. On the **Custodians** page, select a custodian from the list, and then click **View custodian activity** on the flyout page.
 
     The Custodian activities search page is displayed. Note the custodian you selected in the previous step is displayed in the **Custodian** drop-down box. You can select different custodians in the drop-down box, but you can only search for activities for one custodian at a time.
 
