@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,15 +27,16 @@ description: "Learn how to set some individual user passwords to never expire, u
 
 ## Set the password expiration policy for your organization
 
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.
-2. Next to **Password policy** select **Edit**. 
-3. If passwords are set to never expire, set the toggle to **Off**. You'll get the option to specify the number of days until passwords expire.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Settings</a> page.
+2. At the top of the Settings page select **Security & Privacy**.
+3. Select **Password expiration policy**. 
+4. If passwords are set to never expire, click the check box next to **Set user passwords to expire after a number of days**. You'll get the option to specify the number of days until passwords expire.
 
 ## Set the password expiration policy for individual users
 
-A global admin for a Microsoft cloud service can use the Azure Active Directory PowerShell for Graph to set passwords not to expire for specific users. You can also use AzureAD cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
+A global admin for a Microsoft cloud service can use the [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) to set passwords not to expire for specific users. You can also use [AzureAD](https://docs.microsoft.com/powershell/module/Azuread) cmdlets to remove the never-expires configuration or to see which user passwords are set to never expire.
 
-This guide applies to other providers, such as Intune and Office 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
+This guide applies to other providers, such as Intune and Microsoft 365, which also rely on Azure AD for identity and directory services. Password expiration is the only part of the policy that can be changed.
 
 For more information about Azure AD PowerShell for Graph, see [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0).
 

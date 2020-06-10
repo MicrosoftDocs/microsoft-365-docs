@@ -1,5 +1,5 @@
 ---
-title: "Office 365 Encryption for Data in Transit"
+title: "Encryption for data in transit"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,20 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: "Summary: A brief explanation of how Microsoft encrypts data in transit."
+description: In this article, find a brief explanation of how Microsoft encrypts Microsoft 365 customer data in transit.
+ms.custom: seo-marvel-apr2020
 ---
 
-# Office 365 encryption for data in transit
+# Encryption for data in transit
 
-In addition to protecting customer data at rest, Microsoft uses encryption technologies to protect Office 365 customer data in transit. 
+In addition to protecting customer data at rest, Microsoft uses encryption technologies to protect customer data in transit. 
 
 Data is in transit:
 
-- when a client machine communicates with an Office 365 server;
-- when an Office 365 server communicates with another Office 365 server; and
-- when an Office 365 server communicates with a non-Office 365 server (e.g., Exchange Online delivering email to a foreign email server).
+- when a client machine communicates with a Microsoft server;
+- when a Microsoft server communicates with another Microsoft server; and
+- when a Microsoft server communicates with a non-Microsoft server (e.g., Exchange Online delivering email to a third-party email server).
 
-Inter-datacenter communications between Office 365 servers takes place over TLS or IPsec, and all customer-facing servers negotiate a secure session using TLS with client machines (e.g., Exchange Online uses TLS 1.2 with 256-bit cipher strength is used (FIPS 140-2 Level 2-validated). (See [Technical reference details about encryption in Office 365](https://support.office.com/article/Technical-reference-details-about-encryption-in-Office-365-862CBE93-4268-4EF9-BA79-277545ECF221) for a list of TLS cipher suites supported by Office 365.) This applies to the protocols that are used by clients such as Outlook, Skype for Business, and Outlook on the web (e.g., HTTP, POP3, etc.).
+Inter-data center communications between Microsoft servers takes place over TLS or IPsec, and all customer-facing servers negotiate a secure session using TLS with client machines (e.g., Exchange Online uses TLS 1.2 with 256-bit cipher strength is used (FIPS 140-2 Level 2-validated). (See [Technical reference details about encryption](technical-reference-details-about-encryption.md) for a list of TLS cipher suites supported by Office 365.) This applies to the protocols that are used by clients such as Outlook, Skype for Business, Microsoft Teams, and Outlook on the web (e.g., HTTP, POP3, etc.).
 
 The public certificates are issued by Microsoft IT SSL using SSLAdmin, an internal Microsoft tool to protect confidentiality of transmitted information. All certificates issued by Microsoft IT have a minimum of 2048 bits in length, and Webtrust compliance requires SSLAdmin to make sure that certificates are issued only to public IP addresses owned by Microsoft. Any IP addresses that fail to meet this criterion are routed through an exception process.
 
@@ -42,4 +43,4 @@ All implementation details such as the version of TLS being used, whether Forwar
 - [Exchange Online Protection](https://ssl-tools.net/mailservers/microsoft-com.mail.protection.outlook.com)
 - [Microsoft Teams](https://www.ssllabs.com/ssltest/analyze.html?d=teams.microsoft.com&latest)
 
-For Exchange Online Protection, URLs vary by tenant names; however, all customers can test Office 365 using **microsoft-com.mail.protection.outlook.com**.
+For Exchange Online Protection, URLs vary by tenant names; however, all customers can test Microsoft 365 using **microsoft-com.mail.protection.outlook.com**.

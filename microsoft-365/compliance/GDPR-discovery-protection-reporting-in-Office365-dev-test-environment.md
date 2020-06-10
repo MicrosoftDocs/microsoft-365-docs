@@ -1,6 +1,6 @@
 ---
-title: "GDPR discovery, protection, and reporting in the Office 365 dev/test environment"
-description: "Demonstrate GDPR capabilities in Office 365."
+title: "GDPR discovery, protection, and reporting in the Microsoft 365 dev/test environment"
+description: Learn how to configure and demonstrate personally identifiable information (PII) for GDPR an in Microsoft 365 dev/test environment.
 f1.keywords:
 - NOCSH
 ms.author: bcarter
@@ -18,22 +18,23 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
-# GDPR discovery, protection, and reporting in the Office 365 dev/test environment
+# GDPR discovery, protection, and reporting in the dev/test environment
 
- **Summary:** Demonstrate GDPR capabilities in Office 365. 
+ **Summary:** Demonstrate GDPR capabilities in Microsoft 365. 
   
-This article describes how you configure and demonstrate personally identifiable information (PII) discovery, protection, and reporting for the General Data Protection Regulation (GDPR) in an Office 365 dev/test environment.
+This article describes how you configure and demonstrate personally identifiable information (PII) discovery, protection, and reporting for the General Data Protection Regulation (GDPR) in a Microsoft 365 dev/test environment.
   
-## Phase 1: Create and configure your trial Office 365 subscription
+## Phase 1: Create and configure your trial Microsoft 365 subscription
 
-First, follow the steps in [Phase 2 of the Office 365 dev/test environment](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) article.
+First, follow the steps in [Phase 2 of the Microsoft 365 dev/test environment](https://docs.microsoft.com/Office365/Enterprise/office-365-dev-test-environment#phase-2-create-an-office-365-trial-subscription) article.
 
 Next, use these steps to configure the eDiscovery manager:
 
-1. Sign in to your Office 365 trial tenant with your global administrator account.
-2. From the Office 365 home page, click **Security & Compliance**.
+1. Sign in to your Microsoft 365 trial tenant with your global administrator account.
+2. From the Microsoft 365 home page, click **Security & Compliance**.
 3. From the new Security & Compliance tab, click **Permissions** > **eDiscovery Manager**.
 4. Click **Edit** for eDiscovery Manager, and then click **Choose eDiscovery Manager**.
 5. Click **+ Add**, search for your global administrator account name and add your global administrator account as an eDiscovery Manager.
@@ -41,10 +42,10 @@ Next, use these steps to configure the eDiscovery manager:
   
 ## Phase 2: Add personally identifiable information to your tenant
 
-In this phase, you create a document with PII for a set of example International Banking Account Numbers (IBANs) and store it on a SharePoint Online site in your Office 365 dev/test environment.
+In this phase, you create a document with PII for a set of example International Banking Account Numbers (IBANs) and store it on a SharePoint Online site in your Microsoft 365 dev/test environment.
 
 1. On your local computer, open Microsoft Word.
-2. Paste the following table in the Word file and save it as ‘IBANs.docx’ on your local computer.
+2. Paste the following table in the Word file and save it as 'IBANs.docx' on your local computer.
     
     Number  |Country  |Code |IBAN  |
     |---------|---------|---------|---------|
@@ -62,7 +63,7 @@ In this phase, you create a document with PII for a set of example International
 Note:- This sample data set is derived from publicly available information and is intended to be used for test purposes only.
 
 3. In a new tab of your browser, type:  **https://**\<YourTenantName\>**.sharepoint.com**
-4. Click **Documents** to open the document library for this site. If you’re prompted for a new list experience tour, click **Next** until it’s finished.
+4. Click **Documents** to open the document library for this site. If you're prompted for a new list experience tour, click **Next** until it's finished.
 5.  Click **Upload** > **Files** and select the IBANs.docx you created in step 2.
 
   
@@ -95,7 +96,7 @@ In this phase, you create a custom sensitive information type for the fictional 
 - A four-digit serial number. 
     - Possible serial number values range from 0000 to 9999.   
 
-Contoso always refers to customers by using a CCN in internal correspondence, external correspondence, documents, and other forms. Contoso needs a custom sensitive item type to detect the use of CCNs in Office 365 content so that they may apply protection to the use of this form of personal identifiable information.
+Contoso always refers to customers by using a CCN in internal correspondence, external correspondence, documents, and other forms. Contoso needs a custom sensitive item type to detect the use of CCNs in Microsoft 365 content so that they may apply protection to the use of this form of personal identifiable information.
 
 1. Use the instructions in [Connect to Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) and connect to the Security & Compliance Center with UPN of your global administrator account.
 2. Run the following PowerShell commands.
@@ -174,7 +175,7 @@ Contoso always refers to customers by using a CCN in internal correspondence, ex
 
 ## Phase 5: Demonstrate data protection
 
-Protection of personal information in Office 365 includes using data loss prevention (DLP) capabilities.  With DLP policies, you can automatically protect sensitive information across Office 365.
+Protection of personal information in Microsoft 365 includes using data loss prevention (DLP) capabilities.  With DLP policies, you can automatically protect sensitive information across Microsoft 365.
 
 There are multiple ways you can apply the protection. Educating and raising awareness to where EU resident data is stored in your environment and how your employees are permitted to handle it represents one level of information protection using Office 365 DLP.
 
@@ -187,7 +188,7 @@ In this phase, you create a new DLP policy and demonstrate how it gets applied t
 5. In **Name your policy**, provide the following details and then click **Next**:
     a. Name: **EU Citizen PII Policy**
     b. Description: **Protect the personally identifiable information of European citizens**
-6. In **Choose locations**, select **All locations in Office 365**. This will include content in Exchange email and OneDrive and SharePoint documents. And then click **Next**.
+6. In **Choose locations**, select **All locations in Microsoft 365**. This will include content in Exchange email and OneDrive and SharePoint documents. And then click **Next**.
 7. In **Customize the type of content you want to protect**, click **Find content that contains:** and then click **Edit**.
 8. In **Choose the types of content to protect**, click **Add** > **Sensitive info types**.
 9. In **Sensitive info types**, click **+ Add**.
@@ -203,7 +204,7 @@ In this phase, you create a new DLP policy and demonstrate how it gets applied t
 17. On your local computer, open a private instance of your browser.
 18. In the address bar, type **https://**\<YourTenantName\>**.sharepoint.com** and sign in using your global administrator account.
 19. Click **Documents**.
-20. Click the file named ‘IBANs.docx’. You should see ‘Policy tip for IBANs.docx’.  The IBANs.docx file was shared with external recipients, which violates the DLP policy. 
+20. Click the file named 'IBANs.docx'. You should see 'Policy tip for IBANs.docx'.  The IBANs.docx file was shared with external recipients, which violates the DLP policy. 
 21. In the address bar, type: `https://outlook.office365.com`
 22. Click **New** - **Email message** and provide the following:  
     - **To:** \<a personal email address\>  
@@ -231,7 +232,7 @@ Note:- This sample data set is derived from publicly available information and i
 
 ## Phase 6: Demonstrate reporting
  
-In this phase, you demonstrate Office 365 reporting based on the DLP policy configured in Phase 5.
+In this phase, you demonstrate Microsoft 365 reporting based on the DLP policy configured in Phase 5.
 
    1. From the Security & Compliance tab of your browser, click **Home**.
    2. Click **Reports** > **Dashboard** > **DLP policy matches**.

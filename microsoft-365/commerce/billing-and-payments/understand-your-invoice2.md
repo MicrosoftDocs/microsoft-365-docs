@@ -1,5 +1,5 @@
 ---
-title: "Understand your invoice for Office 365 for business"
+title: "Understand your bill or invoice for Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,16 +17,17 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
-description: "Learn how to interpret the charges, billing, and payment information on your Office 365 for business invoice, and how to change the purchase order number."
+description: "Learn how to interpret the charges, billing, and payment information on your Microsoft 365 for business bill or invoice, and how to change the purchase order number."
 ---
 
-# Understand your invoice for Office 365 for business
+# Understand your bill or invoice for Microsoft 365 for business
 
 Each month you'll receive an email that tells you that your new billing statement is available in the admin center. [Learn how to find and view your bill or invoice](view-your-bill-or-invoice.md).
   
@@ -99,7 +100,7 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. If you're in **Table** view, select **Cards** to switch views.
 
@@ -133,6 +134,6 @@ If you pay by invoice, you can add or change the purchase order (PO) number for 
 
 ## Related articles
 
-[Pay for your Office 365 for business subscription](pay-for-your-subscription.md)
+[Pay for your Microsoft 365 for business subscription](pay-for-your-subscription.md)
 
 [Minecraft: Education Edition payment options](https://go.microsoft.com/fwlink/p/?linkid=838761)

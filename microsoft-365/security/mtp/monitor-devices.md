@@ -1,5 +1,5 @@
 ---
-title: Device monitoring and reporting in the Microsoft 365 security center
+title: Device monitoring & reporting - Security center
 description: Describes how you can keep your devices secure, up-to-date, and spot potential threats in your organization
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, devices
 ms.prod: microsoft-365-enterprise
@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance  
 ms.topic: article
 search.appverid: met150
+ms.custom: seo-marvel-apr2020
 ---
 
 # Device monitoring and reporting in the Microsoft 365 security center
@@ -201,8 +202,8 @@ Logs for the ASR rule **Block credential stealing from the Windows local securit
 To locate the source app, run the following [advanced hunting query](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting) for this specific rule (identified by rule ID 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2):
 
 ```kusto
-MiscEvents
-| where EventTime > ago(7d)
+DeviceEvents
+| where Timestamp > ago(7d)
 | where ActionType startswith "Asr"
 | where AdditionalFields contains "9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2"
 | project InitiatingProcessFolderPath, InitiatingProcessFileName

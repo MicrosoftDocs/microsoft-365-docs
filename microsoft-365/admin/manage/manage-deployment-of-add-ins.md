@@ -1,5 +1,5 @@
 ---
-title: "Manage deployment of Office 365 add-ins in the admin center"
+title: "Manage deployment of add-ins in the admin center"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,11 +22,19 @@ ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: "Learn to deploy add-ins to users and groups in your organization by using Centralized Deployment in the admin center."
 ---
 
-# Manage deployment of Office 365 add-ins in the Microsoft 365 admin center
+# Manage deployment of add-ins in the Microsoft 365 admin center
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). As an admin, you can deploy Office add-ins for the users in your organization. You can do this using the Centralized Deployment feature in the Microsoft 365 admin center.
   
-Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization. For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your Office 365 organization](centralized-deployment-of-add-ins.md).
+Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization. For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
 Centralized Deployment provides the following benefits:
   
@@ -36,7 +45,7 @@ Centralized Deployment provides the following benefits:
 - Add-ins will no longer appear for users if the admin turns off or deletes the add-in, or if the user is removed from Azure Active Directory or from a group that the add-in is assigned to.
     
 > [!NOTE]
->  For Word, Excel and PowerPoint use a [SharePoint App Catalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Office 365 and/or support for SharePoint add-ins required. >  For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Office 365. > 
+>  For Word, Excel and PowerPoint use a [SharePoint App Catalog](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog) to deploy add-ins to users in an on-premises environment with no connection to Microsoft 365 and/or support for SharePoint add-ins required. >  For Outlook use Exchange control panel to deploy in an on-premises environment without a connection to Microsoft 365. > 
   
 ## Recommended approach for deploying Office add-ins
 
@@ -52,10 +61,10 @@ Depending on the size of the target audience, you may want to add or remove roll
   
 ## Deploy an Office add-in using the admin center
 
-Before you begin, see [Determine if Centralized Deployment of add-ins works for your Office 365 organization](centralized-deployment-of-add-ins.md).
+Before you begin, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
 
   
-1. In the Microsoft 365 admin center, go to the **Settings** > **Add-ins** page.
+1. In the admin center, go to the **Settings** \> **Add-ins** page.
     
 2. Select **Deploy Add-in** at the top of the page. On the overview page, select **Next**.
     
@@ -70,13 +79,13 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 7. A green tick will appear when the add-in has been deployed. You can follow the on-page instructions to test that the add-in has deployed successfully.
 
 > [!NOTE]
-> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 24 hours to appear on users' ribbons.
+> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 12 hours to appear on users' ribbons.
     
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** in order to deploy to more users.
 
 
 
-If you've deployed the add-in to members of your organization other than yourself, follow the instructions displayed in order to effectively announce the deployment of the add-in. <br/>You now see your add-in along with other apps in Office 365.
+If you've deployed the add-in to members of your organization other than yourself, follow the instructions displayed in order to effectively announce the deployment of the add-in. <br/>You now see your add-in along with other apps in Microsoft 365.
   
 It's a good idea to inform the users and groups who you deployed the add-in to so that they know that it's available. Consider sending an email to them that describes when and how to use the add-in and explains how the add-in can help them do their job better. Include or link to relevant Help content or FAQs that might help if users have any problems with the add-in.
   
@@ -96,19 +105,12 @@ The option that is right for your organization depends on your configuration. Ho
   
 ### Add-in states
 
-Admins can turn on or off the add-ins they deploy for all users from the Microsoft 365 admin center.
-
-1.    In the admin center, go to the **Settings** > **Add-ins** page. 
-2.    Select the deployed add-in. 
-3.    Click the **Status** toggle to turn the add-in **On** or **Off**. 
-4.    Save the changes.  
-
-One of three add-in states is also available.
- 
+An add-in can either be in the **On** or **Off** state.
+  
 |**State**|**How the state occurs**|**Impact**|
 |:-----|:-----|:-----|
 |**Active**  <br/> |Admin uploaded the add-in and assigned it to users or groups.  <br/> |Users and groups assigned to the add-in see it in the relevant clients.  <br/> |
-|**Turned off**  <br/> |Admin turned off the add-in.  <br/> |Users and groups assigned to the add-in no longer have access to it.  <br/> If the add-in state is changed to **Active**, the users and groups will have access to it again.  <br/> |
+|**Turned off**  <br/> |Admin turned off the add-in.  <br/> |Users and groups assigned to the add-in no longer have access to it.  <br/> If the add-in state is changed to Active, the users and groups will have access to it again.  <br/> |
 |**Deleted**  <br/> |Admin deleted the add-in.  <br/> |Users and groups assigned the add-in no longer have access to it.  <br/> |
    
 Consider deleting an add-in if no one is using it any more. Turning off an add-in may make sense if an add-in is used only during specific times of the year.
@@ -177,9 +179,9 @@ This will prevent all users from acquiring the following add-ins from the store.
     
 - Acquisitions starting within **AppSource**
     
-- Add-ins within Office 365
+- Add-ins within Microsoft 365
     
-A user who tries to access the store will see the following message: **Sorry, Office 365 has been configured to prevent individual acquisition of Office Store add-ins.**
+A user who tries to access the store will see the following message: **Sorry, Microsoft 365 has been configured to prevent individual acquisition of Office Store add-ins.**
   
 Support for turning off the Office Store is available in the following versions:
   
@@ -213,8 +215,8 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
 |||
 |:-----|:-----|
 |**Platform** <br/> |**Build number** <br/> |
-|Office 2016 ProPlus Monthly for Windows  <br/> |9001.2138   <br/> |
-|Office 2016 ProPlus Semi-Annual  <br/> |8431.2159  <br/> |
+|Microsoft 365 Apps for enterprise (Current Channel)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (Semi-Annual Enterprise Channel)  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
@@ -236,7 +238,7 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
   
 Word, Excel, and PowerPoint 2013 for Windows will support the same minor checks if Active Directory Authentication Library (ADAL) is enabled. There are two options for compliance, as explained next.
   
-- **Enable ADAL**. This article explains how to enable ADAL for Office 2013: [Using Office 365 modern authentication with Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a).<br/>You also need to set the registry keys to enable ADAL as explained in [Enable Modern Authentication for Office 2013 on Windows devices](../security-and-compliance/enable-modern-authentication.md).<br/>Additionally, you need to install the following April updates for Office 2013:
+- **Enable ADAL**. This article explains how to enable ADAL for Office 2013: [Using Microsoft 365 modern authentication with Office clients](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).<br/>You also need to set the registry keys to enable ADAL as explained in [Enable Modern Authentication for Office 2013 on Windows devices](../security-and-compliance/enable-modern-authentication.md).<br/>Additionally, you need to install the following April updates for Office 2013:
     
   - [Description of the security update for Office 2013: April 10, 2018](https://support.microsoft.com/help/4018330/description-of-the-security-update-for-office-2013-april-10-2018)
     
@@ -283,6 +285,6 @@ You can also delete an add-in that was deployed.
 
 Learn more about creating and building [Office Add-ins](https://go.microsoft.com/fwlink/p/?linkid=846362).
   
-[Use Centralized Deployment PowerShell cmdlets to manage add-ins](https://support.office.com/article/94f4e86d-b8e5-42dd-b558-e6092f830ec9).
+[Use Centralized Deployment PowerShell cmdlets to manage add-ins](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins).
   
 [Troubleshoot: User not seeing add-ins](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)

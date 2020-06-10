@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,10 +25,18 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 36081d8d-b3fa-4948-8c34-e217bba825e1
-description: "Learn how to add and remove licenses for your Office 365 for business subscription."
+description: "Learn how to add and remove licenses for your Microsoft 365 for business subscription."
 ---
 
 # Manage subscription licenses
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 You can add or remove licenses from your subscriptions using these steps.
 
@@ -37,9 +46,9 @@ You can't remove a license from a subscription if it's assigned to a user. If yo
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
+2. On the **Your products** page, find the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**.
 
     [What if I don't see the Add/Remove licenses link?](#what-if-i-dont-see-the-addremove-licenses-link)
 
@@ -79,7 +88,7 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 ## What if I don't see the Add/Remove licenses link?
 
-This table describes the reasons why the **Add/Remove licenses** link might not be available, and what you can do about it.
+This table describes the reasons why the **Add/Remove licenses** link might not be available, and what you can do about it. 
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
@@ -87,14 +96,14 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 |You activated the subscription using a product key.| If the subscription was purchased and activated using a 25-character product key product key, you'll see the text "Prepaid".  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
 |You bought your subscription through a partner. | If the subscription was purchased via a partner, you'll see the Volume Licensing Service Center (VLSC) link. | See [Add licenses to a subscription purchased through the Volume Licensing Service Center](add-licenses-bought-through-vlsc.md). |
 |You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, you must contact your CSP partner to buy more licenses.        |
-|You have a trial subscription. |A trial version of Office 365 will display the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Office 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
+|You have a trial subscription. |A trial version of Microsoft 365 will display the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Microsoft 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
 
 ## What you need to know about buying licenses for your business subscription
 
 ### Buying licenses
 
 - You need to be either a Global admin or a Billing admin to buy licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
-- To buy a license and add a new user to your subscription at the same time, see [Add users individually or in bulk to Office 365 - Admin Help](../../admin/add-users/add-users.md).
+- To buy a license and add a new user to your subscription at the same time, see [Add users individually or in bulk Microsoft 365 - Admin Help](../../admin/add-users/add-users.md).
 
 ### License availability
 
