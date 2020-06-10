@@ -28,7 +28,7 @@ ms.topic: article
 
 With the *go hunt* action, you can quickly investigate events and various entity types using powerful query-based [advanced hunting](advanced-hunting-overview.md) capabilities. This action automatically runs an advanced hunting query to find relevant information about the selected event or entity.
 
-This action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
+The *go hunt* action is available in various sections of the security center whenever event or entity details are displayed. For example, you can use *go hunt* from the following sections:
 
 - In the [incident page](investigate-incidents.md#incident-overview), you can review details about users, devices, and many other entities associated with an incident. As you select an entity, you get additional information as well as various actions you could take on that entitity. In the example below, a mailbox is selected, showing details about the mailbox as well the option to hunt for more information about the mailbox.
 
@@ -39,7 +39,7 @@ This action is available in various sections of the security center whenever eve
     ![Image showing selected file with the go hunt option in the Evidence tab](../../media/mtp-ah/go-hunt-evidence-file.png)
 
 
-- When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for relevant events in advanced hunting.
+- When viewing the timeline for a device, you can select an event in the timeline to view additional information about that event. Once an event is selected, you get the option to hunt for other relevant events in advanced hunting.
 
     ![Image showing event details with the go hunt option](../../media/mtp-ah/go-hunt-event.png)
 
@@ -66,7 +66,7 @@ You can use *go hunt* after selecting any of these entity types:
 
 - Files
 - Emails
-- Email clusters (distribution lists or groups)
+- Email clusters
 - Mailboxes
 - Users
 - Devices
@@ -74,7 +74,7 @@ You can use *go hunt* after selecting any of these entity types:
 - URLs
 
 ## Query for event information
-When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for any events around the time of the selected event. For example, the following query lists events in various schema tables that occured around the same time period on the same device:
+When using *go hunt* to query for information about a timeline event, the query checks all relevant schema tables for other events around the time of the selected event. For example, the following query lists events in various schema tables that occured around the same time period on the same device:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event
