@@ -51,9 +51,9 @@ There are three phases to setting up an isolated SharePoint Online team site in 
 
 ## Phase 1: Build out your lightweight or simulated enterprise Microsoft 365 dev/test environment
 
-If you just want to create an isolated SharePoint Online team site in a lightweight way with the minimum requirements, follow the instructions in phases 2 and 3 of [Microsoft 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+If you just want to create an isolated SharePoint Online team site in a lightweight way with the minimum requirements, follow the instructions in phases 2 and 3 of [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
-If you want to create an isolated SharePoint Online team site in a simulated enterprise configuration, follow the instructions in [DirSync for your Microsoft 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+If you want to create an isolated SharePoint Online team site in a simulated enterprise configuration, follow the instructions in [Password hash synchronization for your Microsoft 365 test environment](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
 
 > [!NOTE]
 > Creating an isolated SharePoint Online site does not require the simulated enterprise dev/test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test an isolated SharePoint Online site and experiment with it in an environment that represents a typical organization.
@@ -283,12 +283,8 @@ When you are ready to deploy an isolated SharePoint Online team site in producti
 
 [Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Base Configuration dev/test environment](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
+[The simulated enterprise base configuration](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
-[Microsoft 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

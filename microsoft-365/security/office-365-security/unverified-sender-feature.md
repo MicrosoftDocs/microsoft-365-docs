@@ -81,8 +81,8 @@ Not necessarily. Office 365 may have other properties within the message to auth
 
 ## Related topics
 
-[Help protect your Outlook.com email account](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+[Help protect your Outlook.com email account](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
 
 [Deal with phishing or spoofing in Outlook.com](https://support.office.com/article/0d882ea5-eedc-4bed-aebc-079ffa1105a3)
 
-[Filter junk email and spam in Outlook on the web](https://support.office.com/article/db786e79-54e2-40cc-904f-d89d57b7f41d)
+[Filter junk email and spam in Outlook on the web](https://support.microsoft.com/office/db786e79-54e2-40cc-904f-d89d57b7f41d)
