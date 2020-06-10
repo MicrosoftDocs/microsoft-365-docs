@@ -344,7 +344,7 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 5. Select **Choose permissions from present or custom**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**permissions you want, and then select **Save**.
+6. On the **Choose permissions from present or custom** pane, select the dropdown box, select the permissions you want, and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, select **Save**.
 

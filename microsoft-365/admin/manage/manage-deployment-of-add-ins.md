@@ -215,8 +215,8 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
 |||
 |:-----|:-----|
 |**Platform** <br/> |**Build number** <br/> |
-|Microsoft 365 Apps for enterprise (Monthly Channel)  <br/> |9001.2138   <br/> |
-|Microsoft 365 Apps for enterprise (Semi-Annual Channel)  <br/> |8431.2159  <br/> |
+|Microsoft 365 Apps for enterprise (Current Channel)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (Semi-Annual Enterprise Channel)  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |

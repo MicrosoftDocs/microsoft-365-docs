@@ -32,6 +32,9 @@ To manage disposition reviews and confirm that records have been deleted, you mu
 
 To successfully access the **Disposition** tab in the Microsoft 365 compliance center, users must be members of the **Disposition Management** role group and the **View-Only Audit Logs** role group. Although the standard advice is to add users to the default role groups, in this case, we recommend you create a new role group called **Disposition Reviewers** and add these two role groups. Then, add users to this **Disposition Reviewers** group. Having a single role group for disposition reduces the administration overheads and makes it easier to ensure that users have the required permissions.
 
+> [!NOTE]
+> Even a global admin needs the permissions from the **Disposition Management** role group. So if global admins need to access the disposition tab, add these users to the **Disposition Reviewers** role group. 
+
 Specific to the **View-Only Audit Logs** role:
 
 - Because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, you must assign users this role by using the [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), rather than by using the **Permissions** page in the Security & Compliance Center. For instructions, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
