@@ -14,11 +14,10 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW 
-description: ""
+description: "Use the bulk-add tool in Advanced eDiscovery to add multiple custodians to a case."
 ---
 
-# Bulk-add custodians to an Advanced eDiscovery case (preview)
+# Bulk-add custodians to an Advanced eDiscovery case
 
 For Advanced eDiscovery cases that involve a lot of custodians, you can import multiple custodians at once by a CSV file that contains all the information necessary to add them to a case.
 
