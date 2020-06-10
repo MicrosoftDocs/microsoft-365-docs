@@ -22,7 +22,7 @@ description: "Microsoft Compliance Score (preview) helps organizations simplify 
 
 **In this article:** Read this article to understand what Compliance Score is and how to set it up for your organization.
 
-**Learn about updates:** The June 2020 release includes new functionality to create and manage assessments, and to view controls within Compliance Score. We also published new templates for assessments. Visit the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new in the public preview of Compliance Score.
+**Learn about updates:** The June 2020 release includes new functionality to create and manage assessments, and to view controls within Compliance Score. Visit the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new in the public preview of Compliance Score.
 
 ## What is Compliance Score
 
@@ -87,7 +87,7 @@ A control is a requirement of a regulation, standard, or policy. It defines how 
 Compliance Score tracks two types of controls:
 
 1. **Microsoft controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
-2. **Your controls**: sometimes referred to as "customer controls," these are implemented and managed by your organization
+2. **Your controls**: sometimes referred to as customer controls, these are implemented and managed by your organization
 
 #### Resources
 
