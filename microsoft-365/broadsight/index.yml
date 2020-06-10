@@ -38,7 +38,7 @@ productDirectory:
       # Card
     - title: Learn about Microsoft Broadsight
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Create models to process unstructured content.
+      summary: Learn what you can do with Microsoft Broadsight.
       url: what-is-microsoft-broadsight.md
     # Card
     - title: Get set up
