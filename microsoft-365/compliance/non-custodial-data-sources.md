@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW 
-description: "You can add non-custodial data sources to an Advanced eDiscovery case and place a hold on the data source. Non-custodial data sources are re-indexed, so any content that was deemed as partially indexed is re-processed to make it fully and quickly searchable. 
+description: "You can add non-custodial data sources to an Advanced eDiscovery case and place a hold on the data source. Non-custodial data sources are re-indexed, so any content that was deemed as partially indexed is re-processed to make it fully and quickly searchable." 
 ---
 
 # Add non-custodial data sources to an Advanced eDiscovery case
