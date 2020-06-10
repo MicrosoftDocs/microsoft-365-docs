@@ -18,6 +18,8 @@ description: "Learn how set up and start using Microsoft Compliance Score, which
 
 # Compliance Score (preview) setup
 
+**In this article:** Understand how to access Compliance Score, set roles and permissions, and configure automatic Secure Score updates. This article also explains the main Compliance Score pages: your dashboard, the improvement actions page, the solutions page, and the assessments page.
+
 ## Before you begin
 
 The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign-in and set user permissions as outlined below when visiting Compliance Score for the first time.
@@ -27,7 +29,7 @@ The Microsoft 365 global administrator for your organization will likely be the 
 1. Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with your Microsoft 365 global admin account.
 2. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](#understand-the-compliance-score-dashboard).
 
-The direct link to access Compliance Score is: [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore).
+The direct link to access Compliance Score is [https://compliance.microsoft.com/compliancescore](https://compliance.microsoft.com/compliancescore).
 
 ## Set user permissions and assign roles
 
@@ -96,9 +98,10 @@ The Compliance Score dashboard is designed to provide you an at-a-glance view of
 
 Your compliance score is featured prominently at the top. It shows a percentage based on points achievable for completing improvement actions that address key data protection standards and regulations.
 
-When you come to Compliance Score for the first time, your initial score is based on the built-in Microsoft 365 data protection baseline—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization.
+When you come to Compliance Score for the first time, your initial score is based on the built-in [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization. As you add assessments that are relevant to your organization, your score becomes even more meaningful.
 
-As you add assessments that are relevant to your organization, your score becomes even more meaningful. Learn more about [how your score is calculated](compliance-score-methodology.md).
+#### Resources
+Learn more about [how your score is calculated](compliance-score-methodology.md).
 
 ### Key improvement actions
 
@@ -117,7 +120,7 @@ This section gives you a more detailed view of your score in two different ways:
 
 ### Filtering your dashboard view
 
-You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, [groups of assessments you set up](working-with-compliance-manager.md#groups), or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you've achieved out of total possible points based on your filter criteria.
+You can filter your dashboard view to see only the items related to particular regulations and standards, solutions, type of action, assessment groups, or data protection categories. Filtering your view in this way will also filter the score on your dashboard, showing how many points you've achieved out of total possible points based on your filter criteria.
 
 To apply filters:
 
@@ -130,6 +133,92 @@ To remove filters:
 
 - At the **Applied filters** heading above your compliance score, select the **X** next to the individual filter you want to remove; or
 - Select **Filter** on the upper-right side of your dashboard, then select **Clear filters**.
+
+## Improvement actions page
+
+Improvement actions centralize your compliance activities and help you align with data protection regulations and standards. Each improvement action gives detailed implementation guidance and a link to launch you into the appropriate solution. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
+
+### View your improvement actions
+
+The Compliance Score dashboard shows your **key improvement actions**, which are the ones with the most available points that address the most important issues.
+
+To view all of your improvement actions, select the **Improvement actions** tab on your dashboard. Or, select **View all improvement actions** underneath the list of key improvement actions on your dashboard.
+
+If you have a long list of actions, it may be helpful to filter your view. Select **Filter** at the upper-right corner of the actions list. When the **Filters** flyout pane appears, select your criteria based on regulations and standards, solution, and group. You can also customize your view by selecting **Group** in the upper-right corner. From the drop-down menu, select to view by group, solution, category, action type, or status.
+
+The default view for this page does not show improvement actions with a test status of **Passed**. To view actions that have passed testing, check the **Passed** box in the Filters flyout pane. Only actions with a test status of **Passed** count toward your score.
+
+The improvement actions page shows the following data points for each improvement action:
+
+- **Score impact**: the points by which your overall score will increase when completing the action
+- **Regulations**: the regulation or standard pertaining to the action
+- **Group**: the group to which you assigned the action
+- **Solutions**: the solution where you can go to perform the action
+- **Assessments**: the assessment (which organizes controls to meet a certain compliance objective) in which the action resides
+- **Categories**: the related data protection category (such as, protect information, manage devices, etc.)
+- **Test status**:
+    - **None** – action has not been implemented or tested
+    - **Passed** - implementation successfully tested
+    - **Failed** - implementation does not meet requirements
+    - **Partial credit** – for Microsoft actions that receive a partial share of total points possible
+    - **In progress** – for your actions that have been implemented but not yet tested; for Microsoft actions waiting for an automation result
+    - **Status unknown** -  reflects a failure of automation
+    - **Out of scope** – the action is not in scope for the assessment and doesn't impact your score
+- **Points achieved**: number of points earned out of the maximum possible
+
+#### Resources
+Learn how to [assign and perform work on improvement actions](compliance-score-improvement-actions.md)].
+
+## Solutions page
+
+The solutions page shows the share of earned and potential points as organized by solution. Viewing your remaining points and improvement actions from this view helps you understand which solutions need more immediate attention.
+
+Find the solutions page by selecting the **Solutions** tab on your Compliance Score dashboard. You can also select **View all solutions** underneath **Solutions that affect your score** in the upper-right section of your dashboard.
+
+### Filtering your solutions view
+
+To filter your view of solutions:
+
+1. Select **Filter** at the top-left corner of your assessments list.
+2. On the **Filters** flyout pane, place a check next to the desired criteria (standards and regulations, solution, action type, Compliance Manager group, category).
+3. Select the **Apply** button. The filter pane will close and you’ll see your filtered view.
+
+You can also modify your view to see assessments by group, product, or regulation by selecting the type of grouping from the **Group** drop-down menu above your assessments list.
+
+### Taking actions from the solution page
+
+The solutions page displays your organization’s solutions that are connected to improvement actions. The table lists each solution’s contribution to your overall score, the score-enhancing points achieved and possible within that solution, and the remaining number of improvement actions grouped in that solution that can increase your score.
+
+There are two ways you can take action from this screen:
+
+1. On the row of your intended solution, under the **Remaining actions** column, select the hyperlinked number. You’ll see a filtered view of the improvement actions screen showing untested improvement actions for that solution.
+
+2. On the row of your intended solution, under the **Open solution** column, select **Open**. You’ll see the solution or location in the Microsoft 365 and Office 365 security and compliance centers where you can take the recommended action.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Next step
 

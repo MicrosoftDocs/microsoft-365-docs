@@ -22,7 +22,7 @@ description: "Microsoft Compliance Score (preview) helps organizations simplify 
 
 **In this article:** Read this article to understand what Compliance Score is and how to set it up for your organization.
 
-**Learn about updates:** The June 2020 release includes new functionality to create and manage assessments, and to view controls within Compliance Score. Visit the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new in the public preview of Compliance Score.
+**What's new:** The June 2020 release includes new functionality to create and manage assessments, and to view controls within Compliance Score. Visit the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new in the public preview of Compliance Score.
 
 ## What is Compliance Score
 

@@ -67,3 +67,12 @@
     "name": "docfx_v3"
   }
 }
+{ 
+  "redirections": [ 
+    {
+       "source_path": "microsoft-365-docs/compliance/working-with-compliance-score.md",
+       "redirect_url": "https://docs.microsoft.com/en-us/microsoft-365/compliance/compliance-score",
+       "redirect_document_id": true
+    }
+  ] 
+  }
