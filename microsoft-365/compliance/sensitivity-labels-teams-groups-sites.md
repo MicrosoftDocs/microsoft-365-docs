@@ -116,7 +116,7 @@ After a sensitivity label is created and published, it can take up to 24 hours f
 
 ### Modifying published labels that are configured for sites and groups
 
-As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, allow up to 48 hours for the changes to replicate to all containers that have the label applied. 
+As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, allow up to 3 days for the changes to replicate to all containers that have the label applied. 
 
 In addition, if your changes include the **External users access** setting:
 
