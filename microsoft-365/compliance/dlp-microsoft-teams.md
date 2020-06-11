@@ -21,7 +21,7 @@ description: "You can now apply DLP policies to Microsoft Teams chats and channe
 
 > [!NOTE]
 > Data loss prevention capabilities were recently added to Microsoft Teams chat and channel messages for users licensed for Office 365 Advanced Compliance, which is available as a standalone option and is included in Office 365 E5 and Microsoft 365 E5 Compliance. Office 365 and Microsoft 365 E3 include DLP protection for SharePoint Online, OneDrive, and Exchange Online. This also includes files that are shared through Teams because Teams uses SharePoint Online and OneDrive to share files.
-Support for DLP protection in Teams Chat requires E5.
+Support for DLP protection in Teams Chat is not included in E3.
 To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Services Licensing Guidance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## Overview of DLP for Microsoft Teams
