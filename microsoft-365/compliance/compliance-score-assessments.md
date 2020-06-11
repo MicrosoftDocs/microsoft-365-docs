@@ -143,7 +143,7 @@ To delete an assessment, follow the steps below:
 
 1. From your assessments page, select the assessment you wish to delete to open that assessment’s details page.
 2. Select **Delete assessment** in the upper-right corner of your screen.
-3. 3.	A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Score.
+3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Score.
 
 If you delete the only assessment in a group, then that group is also deleted from Compliance Score.
 
