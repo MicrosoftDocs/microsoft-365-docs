@@ -1,5 +1,5 @@
 ---
-title: "Domains FAQ"
+title: Domains Frequently Asked Questions
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,8 +20,10 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 1272bad0-4bd4-4796-8005-67d6fb3afc5a
-description: "Learn more about domains by finding answers to your questions in FAQ."
-ms.custom: okr_smb
+description: Learn more about domains (onmicrosoft domain and tranfer domain) by finding answers to your questions in FAQ.
+ms.custom: 
+- okr_smb
+- seo-marvel-may2020
 ---
 
 # Domains FAQ
@@ -95,7 +97,6 @@ You have to set up the DNS records for Office 365 services yourself (unless you 
    
 ## What is a domain name?
 
-
 A domain is a unique name that appears after the **@** sign in email addresses, and after **www.** in web addresses. It typically takes the form of your organization's name and a standard Internet suffix, such as  *yourbusiness.com*  or  *stateuniversity.edu.* 
   
 Using a custom domain like "**rob\@contoso.com**" with Office 365 can help build credibility and recognition for your brand. 
@@ -108,7 +109,7 @@ Yes, but you can't transfer an Office 365 domain to another registrar until 60 d
 
 Please note that a *Whois* query will show an Office 365 purchased domain registrar as Wild West Domains LLC. However, only Office 365 should be contacted regarding your Office 365 purchased domain.
   
-Follow the steps below to get the code at Office 365, and then go to the other domain registrar's website to set up transferring your domain name to that registrar.
+Follow the steps below to get the code at Office 365, and then go to the other domain registrar's website to set up transferring your domain name (change domain or transfer domain) to that registrar.
 
 ::: moniker range="o365-worldwide"
 
@@ -130,13 +131,13 @@ Follow the steps below to get the code at Office 365, and then go to the other d
     
 2. On the **Domains** page, select the Office 365 domain that you want to transfer to another domain registrar, and then select **Domain Transfer** > **Enable domain transfer**.
        
-4. Follow the steps to prepare for transferring your domain.
+4. Follow the steps to prepare for transferring your domain (transfer domain).
     
 5. After you get the code, go to the website of the domain registrar where you want to manage your domain name going forward and follow their directions for transferring a domain (search for help on their website).
     
 6. If you need to see the code again, on the **Domain settings** page in Office 365, select **View authorization code for domain transfer**.
     
-7. After the transfer is complete, you'll renew your domain at the new domain registrar.
+7. After the domain transfer is complete, you'll renew your domain at the new domain registrar.
     
 8. To finish the process, go back to the admin center **Domains** page and select **Complete Domain Transfer**. 
 
@@ -199,7 +200,7 @@ Follow the steps below to get the code at Office 365, and then go to the other d
 
 ::: moniker-end
     
-2. On the **Domains** page, select the domain you're switching, and select **DNS Management**.
+2. On the **Domains** page, select the domain you're switching (domain change), and select **DNS Management**.
     
 3. In the domains setup wizard, on the **Set up your online services** page, select **Set up my online services for me. (Recommended)**, and then select **Next**.
     
@@ -257,7 +258,7 @@ Providers that support all required DNS records:
     
  **If SPF/TXT records are not supported**, other people may be able to use your domain to send spam or other malicious email. SPF records work by identifying the servers that are authorized to send email from your domain. 
   
-## How do I set or change the default domain in Office 365?
+## How do I set or change the onmicrosoft domain in Office 365?
 
 You must have at least one custom domain that you've added to Office 365 before you can choose a default domain.
 
