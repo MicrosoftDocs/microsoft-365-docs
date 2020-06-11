@@ -110,7 +110,7 @@ After a sensitivity label is created and published, it can take up to 24 hours f
 
 2. Wait for 24 hours.
 
-3. After this wait period, use one of the user accounts you specified in step 1 to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
+3. After this wait period, use one of the test user accounts to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
 
 4. If there are no errors during this creation operation, you know it's safe to publish the label to all users in your tenant.
 
