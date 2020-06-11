@@ -22,6 +22,10 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you understand your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Compliance Score provides built-in control mapping that helps connect common controls among key regulations and standards, so you can take one action to satisfy multiple requirements at the same time and better scale your compliance program.
 
+## What's new in the preview version of Compliance Score?
+
+Visit the [Compliance Score release notes](compliance-score-release-notes.md) to learn about feature updates and known issues.
+
 ## How do I access Compliance Score?
 
 Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) and **sign in** with a Microsoft 365 global admin, compliance admin, or compliance data admin role. Select **Compliance Score** on the left navigation pane. You should then see your [Compliance Score dashboard with your score](compliance-score-setup.md#understand-the-compliance-score-dashboard). If you don't have appropriate role access, the global admin for your organization can grant you permission.
@@ -34,7 +38,9 @@ Compliance Score uses a role-based access control (RBAC) permission model, and t
 
 Compliance Score and Compliance Manager share the same backend, but they are in two different locations (Compliance Score is in the Microsoft 365 compliance center, and Compliance Manager is in the Microsoft Service Trust Portal). Think of Compliance Score as a simplified version of Compliance Manager, giving you a more complete view of your organization's current compliance posture and the steps you can take to improve it. While you can take many actions directly within Compliance Score, some functionality lives in Compliance Manager for now. Read more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
 
-## Who should use Compliance Score and who should use Compliance Manager?
+Access [Compliance Manager in the Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ComplianceManager/V3). We recommend you be sure to **select Compliance Manager** from the top navigation drop-down menu, which has the most current features, and *not Compliance Manager (classic)*, which contains early-release features.
+
+## Should I use Compliance Score or Compliance Manager?
 
 Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and doing actions to help comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards to help improve your organization's data protection. Compliance Score is the optimal starting place for all users. From here, you can see your compliance score, learn which recommended actions can help minimize risks, and, in many cases, launch right into the solutions to take those actions.
 
@@ -48,9 +54,11 @@ No. Your compliance score measures your progress in completing recommended actio
 
 Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline, which is a set of controls that includes common industry regulations and standards. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-Organizations can create and add custom assessments that are more relevant to their organization. Use one of Compliance Score's [pre-configured templates](compliance-score.md#templates), customize a Microsoft template with your own controls and actions, or create your own template. Read details about how to [work with templates](working-with-compliance-manager.md#templates).
+Organizations can create and add custom assessments that are more relevant to their organization. Use one of Compliance Score's ready to use [templates](compliance-score-templates.md), customize a Microsoft template with your own controls and actions, or create your own template. Read details about [working with assessments and templates](compliance-score-assessments.md).
 
-Learn how [Compliance Score calculates your score](compliance-score-methodology.md).
+## How does Compliance Score continuously assess my environment?
+
+Compliance Score automatically scans your environment and uses Secure Score to detect system settings. Learn more about [continuous assessment](compliance-score-methodology.md#how-compliance-score-continuously-assesses-controls).
 
 ## What is the difference between Compliance Score and Secure Score?
 
@@ -70,7 +78,7 @@ You can use one of Compliance Score's [pre-configured templates](compliance-scor
 
 ## How do I delete a template or assessment I no longer need?
 
-You can't delete an assessment or template, but you can hide them from your view. Review [instructions for hiding assessments](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
+To delete an assessment, open the assessment you wish to delete and select **Delete assessment**. Note that deleting an assessment is permanent. View additional details about [deleting assessments](compliance-score-assessments.md#delete-an-assessment). Deleting an assessment does not delete its template. Templates can’t be deleted, but can be hidden from view. Review [instructions for hiding assessments](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
 
 ## What test procedures does Microsoft follow for controls?
 
