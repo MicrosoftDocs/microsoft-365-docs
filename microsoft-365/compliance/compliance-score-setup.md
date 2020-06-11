@@ -157,13 +157,14 @@ The improvement actions page shows the following data points for each improvemen
 - **Assessments**: the assessment (which organizes controls to meet a certain compliance objective) in which the action resides
 - **Categories**: the related data protection category (such as, protect information, manage devices, etc.)
 - **Test status**:
-    - **None** – action has not been implemented or tested
+    - **None** – no status update recorded
+    - **Not assessed** - testing hasn't started
     - **Passed** - implementation successfully tested
-    - **Failed** - implementation does not meet requirements
-    - **Partial credit** – for Microsoft actions that receive a partial share of total points possible
-    - **In progress** – for your actions that have been implemented but not yet tested; for Microsoft actions waiting for an automation result
-    - **Status unknown** -  reflects a failure of automation
-    - **Out of scope** – the action is not in scope for the assessment and doesn't impact your score
+    - **Failed low risk** - testing failed, low risk
+    - **Failed medium risk** - testing failed, medium risk
+    - **Failed high risk** - testing failed, high risk
+    - **Not in scope** – the action is not in scope for the assessment and doesn't impact your score
+    - **Partially tested** – testing incomplete
 - **Points achieved**: number of points earned out of the maximum possible
 
 #### Resources
