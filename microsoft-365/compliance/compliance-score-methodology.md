@@ -53,7 +53,7 @@ For example, if you turn on multi-factor authentication (MFA) in the Azure AD po
 During public preview, continuous assessment is available to a portion of controls, but not all.
 
 #### Learn more
-[Read about Secure Score and how it works](../security/mtp/microsoft-secure-score.md).
+[Read about Secure Score and how it works](../security/mtp/microsoft-secure-score-new.md).
   
 ## Control types and points
 
