@@ -1,6 +1,6 @@
 ---
-title: Overview - Advanced hunting
-description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
+title: Overview - Advanced cyber threat hunting - Microsoft 365 security
+description: Learn about advanced hunting queries in Microsoft Threat Protection (MTP) and how to use them to proactively find threats and weaknesses in your network.
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,7 +17,9 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
-ms.custom: seo-marvel-apr2020
+ms.custom: 
+- seo-marvel-apr2020
+- seo-marvel-jun2020
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft Threat Protection
@@ -27,9 +29,9 @@ ms.custom: seo-marvel-apr2020
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
+Advanced hunting is a query-based cyber threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
-You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured machines.
+You can use the same cyber threat hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured machines.
 
 In the Microsoft 365 security center, advanced hunting supports queries that look into data from various workspaces, including data about devices, emails, apps, and identities from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
 
