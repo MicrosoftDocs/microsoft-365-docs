@@ -36,17 +36,24 @@ The sum of points earned by taking improvement actions is the control score. The
 
 ## Initial score based on Microsoft 365 data protection baseline
   
-Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline, which is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
+Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
+
+The data protection baseline assessment (provided by default to all organizations) is used to calculate your initial score the first time you come to Compliance Score. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable insights on your organization’s current compliance posture relative to key data protection standards and regulations.
+
+Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
 
 ## How Compliance Score continuously assesses controls
 
-Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. Secure Score is the underlying engine that performs the monitoring. [Learn more about Secure Score and how it works](../security/mtp/microsoft-secure-score.md).
+Compliance Score automatically scans through your Microsoft 365 environment and detects your system settings, continuously and automatically updating your technical control status. Secure Score is the underlying engine that performs the monitoring.
 
 Your control status is updated on your Compliance Score dashboard every 24 hours. Once you follow a recommendation to implement a control, you'll see the control status updated the next day.
 
 For example, if you turn on multi-factor authentication (MFA) in the Azure AD portal, Compliance Score detects the setting and reflects that in the control access solution details. Conversely, if you didn't turn on MFA, Compliance Score flags that as a recommended action for you to take.
 
 During public preview, continuous assessment is available to a portion of controls, but not all.
+
+#### Learn more
+[Read about Secure Score and how it works](../security/mtp/microsoft-secure-score.md).
   
 ## Control types and points
 
