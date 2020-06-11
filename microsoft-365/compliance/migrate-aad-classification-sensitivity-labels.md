@@ -119,7 +119,7 @@ Import-PSSession $Session
 Get-Label |ft Name, Guid
 ```
 
-Note the GUID for the **General** label:
+Note the GUID for the **General** label.
 
 Get list of existing groups that are tagged with classic AAD classification called “General:”
 
