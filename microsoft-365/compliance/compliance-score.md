@@ -71,10 +71,9 @@ Because every organization has specific needs, Compliance Score relies on you to
 
 #### Learn more
 
-[Create and manage assessments in Compliance Score](compliance-score-assessments.md).
-
 [Understand how your compliance score is calculated and continuously monitored](compliance-score-methodology.md).
 
+[Create and manage assessments in Compliance Score](compliance-score-assessments.md).
 
 ## Key components: controls, assessments, templates, improvement actions
 
