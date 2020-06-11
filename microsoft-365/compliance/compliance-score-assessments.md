@@ -77,7 +77,7 @@ You can create your own assessment entirely from scratch to track precisely what
 
 ## Understand groups before creating assessments
 
-Before you create or modify assessments, it’s important to understand how groups work. When you create a new assessment or modify an assessment, you’ll need to assign it to a group during that process. We therefore recommend planning a grouping strategy for your assessments before you create assessments.
+Before you create or modify assessments, it’s important to understand how groups work. When you create an assessment, you’ll need to assign it to a group during that process. We therefore recommend planning a grouping strategy for your assessments before you create assessments.
 
 ### What are groups
 
@@ -92,67 +92,64 @@ You can group assessments in a way that is logical to you, such as by year, stan
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
+When two different assessments in the same group share improvement actions managed by you, any updates you make to the implementation details, testing, and status for the action in one assessment will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
+
 ### How to create a group
 
-You create a new group during the process of [creating a new assessment](#create-an-assessment).
+You create a group during the process of [creating a new assessment](#create-an-assessment).
 
 Groups cannot be created as standalone entities. A group must always contain at least one assessment, so in order to create a group, you must first create an assessment to put in the group.
 
 ### What to know when working with groups
 
 - Group names must be unique within your organization.
-- Groups do not have any security properties. All permissions are associated with assessments.
-- Once you add an assessment to a group, the grouping cannot be changed. You can rename the assessment group, which changes the name of the assessment grouping for all the assessments associated with that group.
+- Groups don't have security properties. All permissions are associated with assessments.
+- Once you add an assessment to a group, the grouping cannot be changed.
 - Related assessment controls in different assessments within the same group automatically update when completed.
 - If you add a new assessment to an existing group, common information from assessments in that group are copied to the new assessment.
 - Groups can contain assessments for the same certification or regulation, but each group can only contain one assessment for a specific product-certification pair. For example, a group can't contain two assessments for Office 365 and NIST CSF. A group can contain multiple assessments for the same product only if the corresponding certification or regulation for each one is different.
 - Deleting an assessment breaks the relationship between that assessment and the group.
-- Groups cannot be deleted.
+- Groups can't be deleted.
 - When a change is made to an improvement that appears in multiple groups, that change is reflected in all instances of that improvement action.
 
 ## Create an assessment
 
 To create an assessment in Compliance Score, follow the steps below:
 
-1. From your assessments page, select **Create assessment**. An assessment wizard will appear in a large flyout pane.
+1. From your assessments page, select **Add assessment**. An assessment wizard will appear in a large flyout pane.
 
-2. **Select a template:** Choose a template to serve as the basis for your assessment. You can choose from among the pre-configured templates or a template you’ve modified or created. Use the filters to search available templates by industry, region, and regulation. Select the radio button next to your chosen template, then select **Next**.
+2. **Select a template:** Choose a template to serve as the basis for your assessment. You can choose a ready to use template, or a template you’ve modified or created. Select the radio button next to your chosen template, then select  **Next**.
 
 > [!NOTE]
-> See [instructions for creating and modifying templates](working-with-compliance-manager.md#templates). During public preview, template creation and management occurs in Compliance Manager.
+> See [instructions for creating and modifying templates](working-with-compliance-manager.md#templates), which occurs in Compliance Manager.
 
-3. **Name and group:** By default, the name provided is the name of the template you choose. You can select a different name for your assessment and type it in the **Assessment name** field. By default, assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
+3. **Name and group:** Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
 
-4. Next you need to assign your assessment to a group. You can either:
+4. Assign your assessment to a group. You can either:
     - Select **Use existing group** to assign it to a group you’ve already created; or
     - Select **Create new group** to create a new group and assign this assessment to it. Determine a name for your group and enter it in the field beneath the radio button.
 
-> [!NOTE]
-> Step 4 above is the process for creating groups.
-
 5. **Review and finish:** The last screen of the wizard shows the template, name, and group chosen for the assessment. You can edit any of these settings from the links on the screen, which take you back to the relevant steps in the wizard. Once you’re satisfied with the settings, select **Create assessment**.
 
-6. The next screen confirms that you’ve successfully created your new assessment. After you select Done, the wizard closes and your new assessment will appear in your list of assessments.
+6. The next screen confirms that you’ve successfully created your new assessment. Select **Done** to close the wizard, and your new assessment's details page will appear on the screen.
 
-If you see an **Assessment failed** screen after selecting **Create assessment**, this may be due to XYZ. Select Try again and re-enter XYZ.
+If you see an **Assessment failed** screen after selecting **Create assessment**, select **Try again** to re-create your assessment.
 
 ## Delete an assessment
 
-When you delete an assessment, it is removed from the list on your assessments page. **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch. Deleting an assessment does/does not delete the controls within that assessment. Export a report before deleting?
+When you delete an assessment, it's removed from the list on your assessments page. **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch. If the improvement actions in the assessment do not appear in any other assessment, they will be deleted when the assessment is deleted. We recommend exporting a report of the assessment before you permanently delete it.
 
 To delete an assessment, follow the steps below:
 
 1. From your assessments page, select the assessment you wish to delete to open that assessment’s details page.
-2. From the assessment details page, select **Delete assessment** in the upper-right corner of your screen.
-3. A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. Your assessment is now deleted from Compliance Score.
+2. Select **Delete assessment** in the upper-right corner of your screen.
+3. 3.	A window will appear asking you to confirm that you want to permanently delete the assessment. Select **Delete assessment** to close the window. You’ll get a confirmation window that your assessment was deleted from Compliance Score.
 
 If you delete the only assessment in a group, then that group is also deleted from Compliance Score.
 
-## Generate a report
+## Export an assessment report
 
-You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators.
-
-On your assessment details page, just below your assessment status information, select **Generate report** to download the Excel file.
+You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators by [following these instructions](working-with-compliance-manager.md#reports). You’ll  need to visit Compliance Manager to export the report.
 
 The report is a snapshot of the assessment as of the date and time of the export. The report contains the details for controls managed by both you and Microsoft for the assessment, control implementation status, control test date, test results, and links to uploaded evidence documents.
 
@@ -160,14 +157,32 @@ The report is a snapshot of the assessment as of the date and time of the export
 
 Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. It shows the completion rate of controls within the assessment and test status of key improvement actions within those controls.
 
-..insert screen shot..
-
 ### Overview tab
 
 The overview tab contains a graph showing your percentage toward completion of the assessment. This graph contains a breakdown of points from actions you own, and points from actions owned by Microsoft, so you can see how many more points you need to complete the assessment.
 
-The key improvement actions for controls in the assessment are listed in order of greatest potential impact to earn points. The associated graph details the aggregated test status of your improvement actions so you can quickly gauge what has been tested and what work still needs to be done.
+The key improvement actions for controls in the assessment are listed in order of greatest potential impact to earn points. The associated graph details the aggregated test status of your improvement actions so you can quickly gauge what has been tested and what still needs to be done.
+
+To access individual improvement actions, go to the controls tab.
 
 ### Controls tab
 
-The controls tab displays detailed information for each control mapped to the assessment. The fields listed for each control are:
+The controls tab displays detailed information for each control mapped to the assessment. A **control status breakdown** chart shows the status of controls broken down by control family so you can see at a glance which groupings of controls need attention.
+
+Beneath the chart, a table lists detailed information about each control within the assessment. Controls are grouped by control family. Expand each family name to reveal the individual controls it contains. The information listed for each control include:
+
+- **Control title**
+- **Status**: reflects the test status of the improvement actions within the control 
+    - **Passed** - all improvement actions have a test status of “passed
+    -  **Failed** - at least one improvement action has a test status of “failed”
+    - **None** - all improvement actions have not been tested
+    - **Out of scope** - all improvement actions are out of scope for this assessment
+    - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected”
+- **Control ID**: the control’s identification number, assigned by its corresponding regulation, standard, or policy
+- **Points achieved**: the number of points earned by completing actions, out of the total number of achievable points 
+- **Your actions**: the number of your actions completed out of the total number of actions to be done
+- **Microsoft actions**: the number of actions completed by Microsoft 
+
+To view a control’s details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
+
+Select an improvement action from the list to drill into the improvement action’s details page, where you can view test status, implementation notes, and launch into the recommended solution.
