@@ -1,5 +1,5 @@
 ---
-title: Upgrade your Office 2010 to Office 365 - Microsoft 365 admin
+title: Upgrade your Office 2010 to Microsoft 365 - Microsoft 365 admin
 f1.keywords:
 - NOCSH
 ms.author: kwekuako
@@ -43,7 +43,7 @@ See [Office 2010 end of support roadmap](https://docs.microsoft.com/deployoffice
 
  If you're not an admin and you have a [Microsoft 365 Family](https://support.office.com/article/28cbc8cf-1332-4f04-9123-9b660abb629e.aspx#BKMK_OfficePlans) product, see [How do I upgrade Office](https://support.office.com/article/ee68f6cf-422f-464a-82ec-385f65391350.aspx) for information about upgrading your older, home use version of Office.
 
-## Get ready to upgrade to Office 365
+## Get ready to upgrade to Microsoft 365
 
 As an admin, you control what version of Office people in your organization can install. We highly recommend that you help users in your organization running older versions of Office such as Office 2010, Office 2013, or Office 2016 upgrade to the latest version to take advantage of its security and productivity improvements.
 
