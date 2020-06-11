@@ -43,7 +43,7 @@ The following apps and services do not support the new sensitivity labels for Mi
 
 ## How and where are sensitivity labels defined and published?
 
-For complete info about sensitivity labels, see [Learn about sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide). To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
+For complete info about sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md). To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
 
 ## Guidance for migrating from classic AAD classification to new sensitivity labels for documents and emails
 
@@ -52,7 +52,7 @@ See the following scenarios for best practices when migrating from classic AAD c
 ### Scenario 1: Tenant never used classic AAD classifications or unified sensitivity labels for documents and emails
 
 - Tenant Admin enables new sensitivity labels for groups by setting the tenant flag “EnableMIPLabels” to true via AAD powershell cmdlet.
-- Tenant Admin creates the sensitivity labels in the [Microsoft 365 compliance center](https://sip.compliance.microsoft.com/homepage).
+- Tenant Admin creates the sensitivity labels in the [Microsoft 365 compliance center](https://compliance.microsoft.com).
     - Tenant admin can choose file and email-related actions like encryption and watermarking.
     - Tenant admin can choose Microsoft 365 Groups and SharePoint Online site-related actions to the sensitivity labels.
 - Tenant Admin publishes the policy.
@@ -64,7 +64,7 @@ Table 1. Behavior of compatible and non-compatible workloads – create, edit, o
 |Workload|What label list does user see in group window?|Create new group |Edit group |Delete group |
 |:-------|:-------|:--------|:--------|:--------|   
 |Compatible   |New sensitivity labels. |No change in behavior. |No change in behavior. |No change in behavior. |
-|Non-compatible |No sensitivity labels visible. |User can create a group without selecting sensitivity label. </br> </br> Note, the admin can run cmdlets to apply new sensitivity labels in the background. |**Case 1**: No sensitivity label previously selected. User can edit a group. </br> </br> **Case 2**: New sensitivity label applied previously in the background using cmdlet. User can edit a group successfully, excluding the case where user selects invalid combination of privacy setting with respect to the label. |No change in behavior. |
+|Non-compatible |No sensitivity labels visible. |User can create a group without selecting sensitivity label. <br><br> Note, the admin can run cmdlets to apply new sensitivity labels in the background. |**Case 1**: No sensitivity label previously selected. User can edit a group.<br><br> **Case 2**: New sensitivity label applied previously in the background using cmdlet. User can edit a group successfully, excluding the case where user selects invalid combination of privacy setting with respect to the label. |No change in behavior.|
 
 > [!NOTE]
 > In the case of Outlook desktop client (Win 32), after admin enables new sensitivity labels on their tenant, and their user is on an older version of the Outlook desktop client (Win 32):
@@ -92,7 +92,7 @@ Table 2. Behavior of compatible and non-compatible workloads – create, edit, o
 |Workload|What label list does user see in group window?|Create new group |Edit group |Delete group |
 |:-------|:-------|:--------|:--------|:--------|   
 |Compatible   |New sensitivity labels. |No change in behavior. |No change in behavior. |No change in behavior. |
-|Non-compatible |Old classic AAD labels. |User can create a group with classic Azure AD label selected. </br> </br> > [NOTE] </br> > Admin can run cmdlets to apply new sensitivity labels in the background. |**Case 1**: No sensitivity label previously selected. User can edit a group. </br> </br> **Case 2**: Classic AAD labels previously selected. User can edit a group. </br> </br> **Case 3**: New sensitivity label previously applied in the background using cmdlet. User should be able to edit a group, excluding one case where user selects invalid combination of privacy setting with respect to the label. |User can delete a group. |
+|Non-compatible |Old classic AAD labels. |User can create a group with classic Azure AD label selected. <br><br>Note, the admin can run cmdlets to apply new sensitivity labels in the background. |**Case 1**: No sensitivity label previously selected. User can edit a group.<br><br> **Case 2**: Classic AAD labels previously selected. User can edit a group.<br><br> **Case 3**: New sensitivity label previously applied in the background using cmdlet. User should be able to edit a group, excluding one case where user selects invalid combination of privacy setting with respect to the label. |User can delete a group. |
 
 > [!NOTE]
 > In the case of Outlook desktop client (Win 32), after admin enables new sensitivity labels on their tenant, and their user is on an older version of the Outlook desktop client (Win 32):
