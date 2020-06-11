@@ -18,15 +18,13 @@ description: "Microsoft Compliance Score (preview) helps organizations simplify 
 
 # Microsoft Compliance Score (preview)
 
-[Microsoft Compliance Score](https://compliance.microsoft.com/compliancescore) helps to simplify the way you manage compliance and reduce compliance risks through a user-friendly experience. Compliance Score is available for public preview in the  [Microsoft 365 compliance center](microsoft-365-compliance-center.md).
-
-**In this article:** Read this article to understand what Compliance Score is and how to set it up for your organization.
+**In this article:** Learn what Compliance Score is, how it helps to simplify the way you manage compliance, and how to set it up for your organization.
 
 **What's new:** The June 2020 release includes new functionality to create and manage assessments, and to view controls within Compliance Score. Visit the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new in the public preview of Compliance Score.
 
 ## What is Compliance Score
 
-Microsoft Compliance Score is a preview feature in the Microsoft 365 compliance center to help you understand your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards.
+[Microsoft Compliance Score](https://compliance.microsoft.com/compliancescore) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards.
 
 You can use Compliance Score as a tool to track all of your risk assessments. It provides workflow capabilities to help you efficiently complete your risk assessments through a common tool.
 
@@ -133,4 +131,4 @@ Improvement actions centralize your compliance activities. Each improvement acti
 
 Learn how to sign in, set permissions and roles, configure Secure Score updates, and personalize your dashboard view at [Compliance Score setup](compliance-score-setup.md).
 
-Next, begin customizing Compliance Score for your organization by [setting up assessments](compliance-score-assessments.md).
+Then start customizing Compliance Score for your organization by [setting up assessments](compliance-score-assessments.md).

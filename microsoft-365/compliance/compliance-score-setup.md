@@ -86,7 +86,9 @@ If you choose **set per action,** take these additional steps to turn on Secure 
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
-Read more about [managing Secure Score updates](compliance-manager-release-notes.md#secure-score).
+#### Learn more
+
+[Read about managing Secure Score updates](compliance-manager-release-notes.md#secure-score).
 
 ## Understand the Compliance Score dashboard
 
@@ -100,8 +102,8 @@ Your compliance score is featured prominently at the top. It shows a percentage 
 
 When you come to Compliance Score for the first time, your initial score is based on the built-in [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization. As you add assessments that are relevant to your organization, your score becomes even more meaningful.
 
-#### Resources
-Learn more about [how your compliance score is calculated](compliance-score-methodology.md).
+#### Learn more
+[Understand how your compliance score is calculated](compliance-score-methodology.md).
 
 ### Key improvement actions
 
@@ -167,8 +169,8 @@ The improvement actions page shows the following data points for each improvemen
     - **Partially tested** – testing incomplete
 - **Points achieved**: number of points earned out of the maximum possible
 
-#### Resources
-Learn how to [assign and perform work on improvement actions](compliance-score-improvement-actions.md).
+#### Learn more
+[See how to assign and perform work on improvement actions](compliance-score-improvement-actions.md).
 
 ## Solutions page
 
@@ -230,4 +232,4 @@ You can also modify your view to see assessments by group, product, or regulatio
 By default, you'll see the [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline) assessment on the assessments page. Compliance Score also provides several ready to use [templates](compliance-score-templates.md) from which to build assessments.
 
 ## Next step
-Customize Compliance Score by setting up [assessments](compliance-score-assessments.md).
+Customize Compliance Score by [setting up assessments](compliance-score-assessments.md).

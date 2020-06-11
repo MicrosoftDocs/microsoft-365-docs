@@ -26,11 +26,9 @@ Improvement actions centralize your compliance activities. Each improvement acti
 
 ## Improvement actions details page
 
-Each improvement action has a details page. This page has detailed implementation instructions for completing recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header.
+Each improvement action has a details page. This page has detailed implementation instructions for completing recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header. From this page, you can assign the work to another user, update status, and attach notes and documentation.
 
-The details page contains a **launch now** link sending you into the appropriate solution for the recommended action. 
-
-The details pages is also where you go to assign the work to another user, update status, and attach notes and documentation.
+The details page also contains a **launch now** link sending you into the appropriate solution for the recommended action.
 
 To view an improvement action’s details page:
 
