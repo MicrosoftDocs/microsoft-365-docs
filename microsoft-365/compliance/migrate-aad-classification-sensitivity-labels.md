@@ -14,42 +14,15 @@ description: "This article is a user guide for migrating from classic Azure Acti
 
 # Migrate from classic Azure Active Directory classification to sensitivity labels
 
-The following apps and services support the new sensitivity labels for Microsoft 365 groups:
+Sensitivity labels are supported by [these services](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#support-for-the-sensitivity-labels).
 
-- SharePoint
-- Admin centers:
-    - SharePoint
-    - Azure Active Directory (Azure AD)
-    - Security & Compliance
-- Outlook for the web
-- Outlook for the Mac
-- Outlook desktop app for Windows 
-- Outlook mobile app for Android and iOS
-- Teams
-- Forms
-- Stream
+For complete info about sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md).
 
-The following apps and services do not support the new sensitivity labels for Microsoft 365 groups:
-
-- Admin centers:
-    - Microsoft 365
-    - Exchange
-    - Teams
-- Dynamics 365
-- Yammer
-- Project
-- Planner
-- Power BI
-
-## How and where are sensitivity labels defined and published?
-
-For complete info about sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md). To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
-
-## Guidance for migrating from classic AAD classification to new sensitivity labels for documents and emails
+To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
 
 See the following scenarios for best practices when migrating from classic AAD classification to the new sensitivity labels.
 
-### Scenario 1: Tenant never used classic AAD classifications or unified sensitivity labels for documents and emails
+## Scenario 1: Tenant never used classic AAD classifications or unified sensitivity labels for documents and emails
 
 - Tenant Admin enables new sensitivity labels for groups by setting the tenant flag “EnableMIPLabels” to true via AAD powershell cmdlet.
 - Tenant Admin creates the sensitivity labels in the [Microsoft 365 compliance center](https://compliance.microsoft.com).
@@ -72,9 +45,9 @@ Table 1. Behavior of compatible and non-compatible workloads – create, edit, o
 > - However, when the user edits a group, and saves the group with a new sensitivity label, the selected privacy setting is overridden by the privacy setting of the applied sensitivity label.
 > We recommend that your users on an old version of Outlook client upgrading to the newer version.
 
-### Scenario 2: Tenant is already using classic AAD [classifications](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
+## Scenario 2: Tenant is already using classic AAD [classifications](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization)
 
-#### Case A: Tenant never used unified sensitivity labels for documents and emails
+### Case A: Tenant never used unified sensitivity labels for documents and emails
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), we recommend creating new sensitivity labels with same name as the existing classic Azure AD labels.
 2. Use the PowerShell cmdlet to apply these new sensitivity labels to existing Microsoft 365 groups and SharePoint sites using name mapping.
@@ -100,14 +73,14 @@ Table 2. Behavior of compatible and non-compatible workloads – create, edit, o
 > - However, when the user edits a group, and saves the group with a new sensitivity label, the selected privacy setting is overridden by the privacy setting of the applied sensitivity label.
 > We recommend that your users on an old version of Outlook client upgrading to the newer version.
 
-#### Case B: Tenant used unified sensitivity labels for documents and emails
+### Case B: Tenant used unified sensitivity labels for documents and emails
 
 1. As soon as admin enables new sensitivity label feature on the tenant by setting the tenant flag ‘EnableMIPLabels’ to true, the document and email sensitivity labels in group/site/team create and edit dialog boxes appear.
 2. An admin can use the same document and email sensitivity labels to enforce privacy and external user access on the group/site/team by specifying related group settings:
     1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), select the **Sites and Groups** tab.
     2. Edit a document or email sensitivity label.
 
-### Sample script to migrate groups classified as “General” with classic AAD label to new sensitivity label with same name “General”
+## Sample script to migrate groups classified as “General” with classic AAD label to new sensitivity label with same name “General”
 
 [Install the latest Exchange Online PowerShell client](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), and then fetch the list of available labels along with their IDs:
 
