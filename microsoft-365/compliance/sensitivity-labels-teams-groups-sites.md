@@ -67,7 +67,7 @@ After you enable and configure sensitivity labels for containers, users can addi
     Execute-AzureAdLabelSync
     ```
 
-## How to configure site and group settings when you create or edit sensitivity labels
+## How to configure site and group settings
 
 You're now ready to create or edit sensitivity labels that you want to be available for sites and groups. Enabling sensitivity labels for containers makes a new page visible in the sensitivity labeling wizards: **Site and group settings**
 
