@@ -125,7 +125,7 @@ In addition, if your changes include the **External users access** setting:
 - The privacy settings for the group properties hiddenMembership and roleEnabled aren't updated.
 
 
-## Deleting published labels that are configured for sites and groups
+### Deleting published labels that are configured for sites and groups
 
 If you delete a sensitivity label that has the site and group settings enabled, and that label is included in one or more label policies, this action can result in creation failures for new teams, groups, and sites. To avoid this situation, use the following guidance:
 
