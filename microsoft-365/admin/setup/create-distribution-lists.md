@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 ms.custom: seo-marvel-may2020
-description: Learn how to create distribution groups or lists in the Admin center so you can send emails to a group without having to type each recipient's name.
+description: Learn how to create distribution groups or lists in the Microsoft 365 admin center so you can send emails to a group without having to type each recipient's name.
 ---
 
 # Create distribution groups in the Microsoft 365 admin center
   
 Used when you want to send email to group of people without having to type each individual recipient's name, distribution groups (distribution lists) are organized by a particular discussion subject (such as "Marketing") or by users who share common work that requires them to communicate frequently. They also provide a way for you to automatically forward email to multiple email addresses.
-  
+
 Distribution groups are sometimes called distribution lists.
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/e8747233-4f1c-4bf4-81cf-2a4ea9ccd80d?autoplay=false]
