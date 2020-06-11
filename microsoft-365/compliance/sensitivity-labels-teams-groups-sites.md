@@ -110,7 +110,7 @@ After a sensitivity label is created and published, it can take up to 24 hours f
 
 2. Wait for 24 hours.
 
-3. After this 24 hours wait, use one of the user accounts you specified in step 1 to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
+3. After this wait period, use one of the user accounts you specified in step 1 to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
 
 4. If there are no errors during this creation operation, publish the label for all users in your tenant.
 
@@ -201,8 +201,8 @@ To view the applied sensitivity labels, use the **Active sites** page in the new
 The following apps and services can create groups that support sensitivity labels configured for sites and group settings:
 
 - Admin centers
-    - Sharepoint admin center
-    - Azure Ad admin center
+    - SharePoint admin center
+    - Azure Active Directory portal
     - Microsoft 365 compliance center, Microsoft 365 security center, Office 365 Security & Compliance Center
 
 - User apps and services
@@ -304,7 +304,7 @@ If somebody uploads a document to a site that's protected with a sensitivity lab
 
 Although the action isn't blocked, it is audited and automatically generates an email to the person who uploaded the document and the site administrator. As a result, both the user and administrators can identify documents that have this misalignment of label priority and take action if needed. For example, delete or move the uploaded document from the site. 
 
-It wouldn't be a security concern if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled **General** is uploaded to a site labeled **Confidential**. In this scenario, an auditing event and email isn't generated.
+It wouldn't be a security concern if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled **General** is uploaded to a site labeled **Confidential**. In this scenario, an auditing event and email aren't generated.
 
 To search the audit log for this event, look for **Detected document sensitivity mismatch** from the **File and page activities** category. 
 
