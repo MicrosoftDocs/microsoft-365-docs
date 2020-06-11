@@ -4,7 +4,7 @@ ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-audience: audience: ITPro
+audience: ITPro
 f1.keywords: NOCSH
 ms.topic: article
 ms.service: o365-seccomp
