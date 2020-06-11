@@ -181,6 +181,9 @@ To view a control’s details, select it from its row in the table. The control 
 
 Select an improvement action from the list to drill into the improvement action’s details page, where you can view test status, implementation notes, and launch into the recommended solution.
 
+#### Learn more
+[Understand how controls are tracked and scored by Compliance Score.](compliance-score-methodology.md#control-types-and-points)
+
 ## Export an assessment report
 
 You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators by [following these instructions](working-with-compliance-manager.md#reports). You’ll  need to visit Compliance Manager to export the report.

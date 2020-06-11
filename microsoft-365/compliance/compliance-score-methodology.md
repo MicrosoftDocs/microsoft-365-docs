@@ -25,9 +25,9 @@ description: "Understand how Microsoft Compliance Score calculates a personalize
 
 The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. Your points accrue when you complete actions.
 
-Your score is calculated based on the completion of Microsoft-managed actions and customer-managed actions. Each action has a different impact on your score, depending on the potential risks involved. Your score can help prioritize which action to focus on to improve your overall compliance posture.
+Your score is calculated based on the completion of actions that you manage and actions that Microsoft manages. Each action has a different impact on your score, depending on the potential risks involved. Your score can help prioritize which action to focus on to improve your overall compliance posture.
 
-The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test, or it does not. Assigned points are added to Compliance Score when the control has:
+The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test, or it doesn't. Assigned points are added to Compliance Score when the control has:
 
 - **Implementation Status** equals **Implemented** or **Alternative Implementation** and,
 - **Test Result** equals **Passed**.
@@ -57,9 +57,9 @@ During public preview, continuous assessment is available to a portion of contro
   
 ## Control types and points
 
-Compliance Score tracks two types of controls—Microsoft-managed and customer-managed—each of which have points that contribute to your overall score:
+Compliance Score tracks two types of controls—controls you manage and controls Microsoft manages—each of which have points that contribute to your overall score:
 
-1. **Customer-managed points** contribute to your compliance score based on controls managed by your organization.
+1. **Your points** contribute to your compliance score based on controls managed by your organization.
 2. **Microsoft-managed points** contribute to your compliance score based on controls managed by Microsoft as a cloud service provider.
 
 Controls are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective.
