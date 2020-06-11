@@ -1,7 +1,7 @@
 {:allowed-branchname-matches ["master"]
  :allowed-filename-matches ["microsoft-365/"]
  
- :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for M365-specific"
+ :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
  
  :acrolinx-check-settings
  {
