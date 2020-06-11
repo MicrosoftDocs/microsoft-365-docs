@@ -147,12 +147,6 @@ To delete an assessment, follow the steps below:
 
 If you delete the only assessment in a group, then that group is also deleted from Compliance Score.
 
-## Export an assessment report
-
-You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators by [following these instructions](working-with-compliance-manager.md#reports). You’ll  need to visit Compliance Manager to export the report.
-
-The report is a snapshot of the assessment as of the date and time of the export. The report contains the details for controls managed by both you and Microsoft for the assessment, control implementation status, control test date, test results, and links to uploaded evidence documents.
-
 ## Monitor assessment progress and controls
 
 Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. It shows the completion rate of controls within the assessment and test status of key improvement actions within those controls.
@@ -186,3 +180,9 @@ Beneath the chart, a table lists detailed information about each control within 
 To view a control’s details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
 
 Select an improvement action from the list to drill into the improvement action’s details page, where you can view test status, implementation notes, and launch into the recommended solution.
+
+## Export an assessment report
+
+You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators by [following these instructions](working-with-compliance-manager.md#reports). You’ll  need to visit Compliance Manager to export the report.
+
+The report is a snapshot of the assessment as of the date and time of the export. The report contains the details for controls managed by both you and Microsoft for the assessment, control implementation status, control test date, test results, and links to uploaded evidence documents.
