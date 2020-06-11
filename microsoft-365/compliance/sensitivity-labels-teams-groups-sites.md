@@ -39,7 +39,7 @@ Before you enable sensitivity labels for containers and configure sensitivity la
 
 ![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
 
-After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
+After you enable and configure sensitivity labels for containers, users can additionally see and apply sensitivity labels to Microsoft team sites, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
 ![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
 
@@ -100,26 +100,34 @@ From the label policy, only the policy setting **Apply this label by default to 
 
 ## Sensitivity label management
 
-> [!WARNING]
-> Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Microsoft 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
+Use the following guidance for when you create, modify, or delete sensitivity labels that are configured for sites and groups.
 
-Avoid creation errors for sites and groups that can affect all users by using the following guidance.
+### Creating and publishing labels that are configured for sites and groups
 
-**Creating and publishing labels:**
+After a sensitivity label is created and published, it can take up to 24 hours for the label to become visible for users in teams, groups, and sites. Use the following steps to publish a label that's configured for site and group settings:
 
-After a sensitivity label is created and published, it can take up to 24 hours for the label to become visible for users in teams, groups, and sites. Use the following steps to publish a label for all users in the tenant:
-
-1. Create the sensitivity label and publish it for just a few user accounts in the tenant.
+1. After you create and configure the sensitivity label, add this label to a label policy that applies to just a few users.
 
 2. Wait for 24 hours.
 
 3. After this 24 hours wait, use one of the user accounts you specified in step 1 to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
 
-4. If there are no errors during the creation operation for step 3, publish the label for all users in your tenant. If there are errors, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+4. If there are no errors during this creation operation, publish the label for all users in your tenant.
 
-**Modifying and deleting published labels:**
+### Modifying published labels that are configured for sites and groups
 
-If you modify or delete a sensitivity label with the site and group settings enabled, and that label is included in one or more label policies, these actions can result in creation failures for all teams, groups, and sites. To avoid this situation, use the following guidance:
+As a best practice, don't change the site and group settings for a sensitivity label after you've applied the label to teams, groups, or sites. If you do, allow up to 48 hours for the changes to replicate to all containers that have the label applied to them. 
+
+In addition, if your changes include the **External users access** setting:
+
+- The new setting applies to new users but not to existing users. For example, if this setting was previously selected and as a result, guest users accessed the site, these guest users can still access the site after this setting is cleared.
+
+- The privacy settings for the group properties hiddenMembership and roleEnabled aren't updated.
+
+
+## Deleting published labels that are configured for sites and groups
+
+If you delete a sensitivity label with the site and group settings enabled, and that label is included in one or more label policies, these actions can result in creation failures for new teams, groups, and sites. To avoid this situation, use the following steps:
 
 1. Remove the sensitivity label from all label policies that include the label.
 
@@ -127,7 +135,7 @@ If you modify or delete a sensitivity label with the site and group settings ena
 
 3. After the 48 hours wait, try creating a team, group, or site and confirm that the label is no longer visible.
 
-4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+4. If the sensitivity label isn't visible, you can now safely delete the label.
 
 ## How to apply sensitivity labels to containers
 
@@ -188,60 +196,7 @@ To view the applied sensitivity labels, use the **Active sites** page in the new
 
 [Learn more about managing sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
 
-## Change site and group settings for a label
-
-As a best practice, don't the change site and group settings for a label after you've applied the sensitivity label to teams, groups, or sites. If you do and your changes include the **External users access** setting:
-
-- The change applies to new users but not to existing users. For example, if this setting was previously selected and as a result, guest users accessed the site, these guest users can still access the site after this setting is  cleared.
-
-- The privacy settings for hiddenMembership and roleEnabled groups aren't updated.
-
-Additionally, so that your sites and groups use the new settings for your label changes, you must run the following PowerShell commands:
-
-
-1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
-    
-    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
-    
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session -DisableNameChecking
-    ```
-
-2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
-    
-    ```powershell
-    Get-Label |ft Name, Guid
-    ```
-
-3. Make a note of the GUID for the label or labels you have changed.
-
-4. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
-    
-    For example:
-    
-    ```powershell
-    $UserCredential = Get-Credential
-    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-    Import-PSSession $Session
-    ```
-    
-5. Run the [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps) cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
-    
-    ```powershell
-    $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
-    ```
-
-6. For each group, reapply the sensitivity label, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e":
-    
-    ```powershell
-    foreach ($g in $groups)
-    {Set-UnifiedGroup -Identity $g.Identity -SensitivityLabelId "e48058ea-98e8-4940-8db0-ba1310fd955e"}
-    ```
-
-## Support for the sensitivity labels
+## Support for sensitivity labels
 
 The following apps and services can create groups that support sensitivity labels configured for sites and group settings:
 
