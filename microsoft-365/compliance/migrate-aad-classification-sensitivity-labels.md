@@ -1,6 +1,6 @@
 ---
 title: "Migrate from classic Azure Active Directory classification to sensitivity labels"
-ms.reviewer: mikeplum
+ms.reviewer: vijagan
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -12,9 +12,9 @@ localization_priority: Normal
 description: "This article is a user guide for migrating from classic Azure Active Directory classification to new sensitivity labels"
 ---
 
-## Workload support for the new sensitivity labels for Microsoft 365 groups
+# Migrate from classic Azure Active Directory classification to sensitivity labels
 
-For this preview, the following apps and services support the new sensitivity labels for Microsoft 365 groups:
+The following apps and services support the new sensitivity labels for Microsoft 365 groups:
 
 - SharePoint
 - Admin centers:
@@ -27,9 +27,9 @@ For this preview, the following apps and services support the new sensitivity la
 - Outlook mobile app for Android and iOS
 - Teams
 - Forms
-- Stream – in progress (to be updated before GA)
+- Stream
 
-For this preview, the following apps and services do not support the new sensitivity labels for Microsoft 365 groups:
+The following apps and services do not support the new sensitivity labels for Microsoft 365 groups:
 
 - Admin centers:
     - Microsoft 365
@@ -41,12 +41,9 @@ For this preview, the following apps and services do not support the new sensiti
 - Planner
 - Power BI
 
-> [!NOTE]
-> We’re working to make all these apps compatible with new sensitivity labels for GA.
-
 ## How and where are sensitivity labels defined and published?
 
-For complete info about sensitivity labels, see [Learn about sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide). To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Sensitivity labels for Teams, Office 365 groups and SharePoint sites (preview)](https://microsoft.sharepoint-df.com/:w:/r/teams/CrossPremises/_layouts/15/guestaccess.aspx?e=wCuHJz&wdLOR=c15C3709F-B3B6-404A-9913-4C84B7370C1D&share=Ecl81il3l19HklBamX9nLdIBnoxNxsp8_9p9uT1iIP1gNQ).
+For complete info about sensitivity labels, see [Learn about sensitivity labels](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels?view=o365-worldwide). To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
 
 ## Guidance for migrating from classic AAD classification to new sensitivity labels for documents and emails
 
@@ -79,15 +76,15 @@ Table 1. Behavior of compatible and non-compatible workloads – create, edit, o
 
 #### Case A: Tenant never used unified sensitivity labels for documents and emails
 
-1. In the [Microsoft 365 compliance center](https://sip.compliance.microsoft.com/homepage), we recommend creating new sensitivity labels with same name as the existing classic Azure AD labels.
+1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), we recommend creating new sensitivity labels with same name as the existing classic Azure AD labels.
 2. Use the PowerShell cmdlet to apply these new sensitivity labels to existing Microsoft 365 groups and SharePoint sites using name mapping.
 3. Admin can choose to delete the classic Azure AD labels:
-    1. Compatible workloads show these new sensitivity labels and groups get created with them.
-    2. Non-compatible workloads work when creating groups, but no sensitivity label is attached to them.
+    - Compatible workloads show these new sensitivity labels and groups get created with them.
+    - Non-compatible workloads work when creating groups, but no sensitivity label is attached to them.
 4. Admins can run PowerShell cmdlets to apply new sensitivity labels to these groups with no labels.
-    1. Alternatively, an admin can choose to keep the classic Azure AD labels:
-        1. Compatible workloads show these new sensitivity labels, and groups get created with them. Compatible workloads are the services which support new sensitivity labels.
-        2. Non-compatible workloads work when creating groups, and show classic Azure AD labels. These classic Azure AD labels are attached to these groups created with non-compatible workloads.
+    - Alternatively, an admin can choose to keep the classic Azure AD labels:
+        - Compatible workloads show these new sensitivity labels, and groups get created with them. Compatible workloads are the services which support new sensitivity labels.
+        - Non-compatible workloads work when creating groups, and show classic Azure AD labels. These classic Azure AD labels are attached to these groups created with non-compatible workloads.
 5. We highly recommend that admins run PowerShell cmdlets to apply new sensitivity labels to these groups with classic Azure AD labels.
 
 Table 2. Behavior of compatible and non-compatible workloads – create, edit, or delete groups
@@ -107,26 +104,30 @@ Table 2. Behavior of compatible and non-compatible workloads – create, edit, o
 
 1. As soon as admin enables new sensitivity label feature on the tenant by setting the tenant flag ‘EnableMIPLabels’ to true, the document and email sensitivity labels in group/site/team create and edit dialog boxes appear.
 2. An admin can use the same document and email sensitivity labels to enforce privacy and external user access on the group/site/team by specifying related group settings:
-    1. In the [Microsoft 365 compliance center](https://sip.compliance.microsoft.com/homepage), select the **Sites and Groups** tab.
+    1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), select the **Sites and Groups** tab.
     2. Edit a document or email sensitivity label.
 
 ### Sample script to migrate groups classified as “General” with classic AAD label to new sensitivity label with same name “General”
 
-1. Fetch the list of available labels along with their IDs.
-    1. Install the latest Exchange Online PowerShell client.
-    2. Launch SharePoint Online Management.
-    3. Run the following cmdlets:
-        1. Set-ExecutionPolicy RemoteSigned
-        2. $O365Cred = Get-Credential
-        3. $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $O365Cred
-        4. Import-PSSession $Session
-        5. Get-Label |ft Name, Guid
-2. Note the GUID for the **General** label:
+[Install the latest Exchange Online PowerShell client](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell), and then fetch the list of available labels along with their IDs:
 
-3. Get list of existing groups that are tagged with classic AAD classification called “General:”
-    $groups = Get-UnifiedGroup | where {$_.Classification -eq "General"}
-4. For each group, add the new sensitivity label GUID:
-    foreach ($g in $groups)</br>
-    {Set-UnifiedGroup -Identity $g.DisplayName -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
+```PowerShell
+Set-ExecutionPolicy RemoteSigned
+$O365Cred = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Authentication Basic -AllowRedirection -Credential $O365Cred
+Import-PSSession $Session
+Get-Label |ft Name, Guid
+```
 
+Note the GUID for the **General** label:
 
+Get list of existing groups that are tagged with classic AAD classification called “General:”
+
+```PowerShell
+$groups = Get-UnifiedGroup | where {$_.Classification -eq "General"}
+
+# For each group, add the new sensitivity label GUID:
+
+foreach ($g in $groups)</br>
+{Set-UnifiedGroup -Identity $g.DisplayName -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
+```
