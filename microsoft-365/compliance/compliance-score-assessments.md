@@ -30,7 +30,7 @@ Each assessment is created from a template, which serves as a framework containi
 
 To get you started, Microsoft provides a **default** assessment in Compliance Score for you that contains the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-This assessment is used to calculate your initial score the first time you come to Compliance Score, before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable information on your organization’s current compliance posture relative to key data protection standards and regulations.
+This assessment is used to calculate your initial score the first time you come to Compliance Score, before you configure any other assessments. Compliance Score collects initial signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
 Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
 
