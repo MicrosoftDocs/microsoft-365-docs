@@ -42,7 +42,7 @@ When you do enable sensitivity labels for Office files in SharePoint and OneDriv
 > [!NOTE]
 > If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior for processing the file contents doesn't change.
 >
-> The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you run the command to enable sensitivity labels for SharePoint and OneDrive. For example, they will then be returned in search and eDiscovery results.
+> The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you run the command to enable sensitivity labels for SharePoint and OneDrive. SharePoint can then process these files. For example, they will then be returned in search and eDiscovery results.
 
 After you enable sensitivity labels for Office files in SharePoint and OneDrive, three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied to documents in SharePoint and OneDrive:
 - **Applied sensitivity label to file**
