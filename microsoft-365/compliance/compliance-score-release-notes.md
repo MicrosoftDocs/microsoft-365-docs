@@ -18,13 +18,11 @@ description: "Release notes and known issues for Microsoft Compliance Score (pre
 
 # Microsoft Compliance Score (preview) release notes
 
-The public preview of [Microsoft Compliance Score](compliance-score.md) provides you with early access to upcoming functionality and updates. Check this page frequently to learn what's new.
-
-Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score, measuring your progress towards completing recommended actions that help reduce compliance risks.
+**In this article:** The public preview of [Microsoft Compliance Score](compliance-score.md) provides you with early access to upcoming functionality and updates. Check this page frequently to learn what's new.
 
 ## Assessment creation and management functionality
 
-With the June 2020 release, users can now create, modify, delete, and manage their assessments directly in Compliance Score. Previously, assessments had to be managed in Compliance Manager. Any assessment creation or modification done in Compliance Score automatically surfaces in Compliance Manager. Likewise, any assessment work performed in Compliance Manager will surface in Compliance Score. Learn how to [manage assessments in Compliance Score](compliance-score-assessments.md).
+With the June 2020 release, users can create, modify, delete, and manage their assessments directly in Compliance Score. Previously, assessments could only be managed in Compliance Manager. When you create or modify an assessment in Compliance Score, the updates will surface in Compliance Manager. Likewise, any assessment work performed in Compliance Manager will surface in Compliance Score. Learn how to [manage assessments in Compliance Score](compliance-score-assessments.md).
 
 ## New templates for assessments
 
@@ -37,8 +35,8 @@ New ready to use templates for assessments are released in Compliance Score as t
 Many of the functions handled in Compliance Manager can now be done in Compliance Score. However some functions still live in Compliance Manager. Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
 
  - **Creating templates for assessments**: 
-   - Users must go to Compliance Manager to create new templates and modify existing [templates](working-with-compliance-manager.md#templates). 
-   - When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
+   - Users must go to Compliance Manager to [create new templates and modify existing templates](working-with-compliance-manager.md#templates).
+   - New templates must include Dimensions for both **Product** and **Certification**.
  - **Setting permissions**: Compliance Score users who didn't already have permissions in Compliance Manager need their permissions set in the Microsoft 365 compliance center ([learn more](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
 - **Transfer of data**: organizations with data in Compliance Manager will see that data in Compliance Score, and the same is true the other way around.
 - **Signing in to Compliance Manager from Compliance Score**: if a user is signed in to Compliance Score and selects a link to go to Compliance Manager, the user won't have to sign in again. After clicking the link, a new tab opens in your browser featuring a dialogue box. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select the **Sign In** button to automatically sign in to Compliance Manager.
