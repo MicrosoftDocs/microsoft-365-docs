@@ -42,9 +42,9 @@ Access [Compliance Manager in the Microsoft Service Trust Portal](https://servic
 
 ## Should I use Compliance Score or Compliance Manager?
 
-Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and doing actions to help comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards to help improve your organization's data protection. Compliance Score is the optimal starting place for all users. From here, you can see your compliance score, learn which recommended actions can help minimize risks, and, in many cases, launch right into the solutions to take those actions.
+Compliance Score is useful for everyone in your organization who plays a role in monitoring compliance and doing actions to help comply with regulatory standards. With Compliance Score, you don't need to be familiar with regulations and standards to help improve your organization's data protection. Compliance Score is the optimal starting place for all users. From here, you can see your compliance score, learn which recommended actions can help minimize risks, and, manage your assessments.
 
-For now, Compliance Manager is the place where users can manage assessments and create custom templates to build assessments. Learn more about [which actions are supported only by Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) during public preview.
+For now, Compliance Manager is the place where you can create custom templates to build assessments. Learn more about [which actions are supported only by Compliance Manager](compliance-score-release-notes.md#compliance-score-relationship-to-compliance-manager) during public preview.
 
 ## If I have a high score, does it mean I'm fully compliant?
 
@@ -78,7 +78,7 @@ You can use one of Compliance Score's [pre-configured templates](compliance-scor
 
 ## How do I delete a template or assessment I no longer need?
 
-To delete an assessment, open the assessment you wish to delete and select **Delete assessment**. Note that deleting an assessment is permanent. View additional details about [deleting assessments](compliance-score-assessments.md#delete-an-assessment). Deleting an assessment does not delete its template. Templates can’t be deleted, but can be hidden from view. Review [instructions for hiding assessments](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
+To delete an assessment, open the assessment you wish to delete and select **Delete assessment**. Note that deleting an assessment is permanent. View additional details about [deleting assessments](compliance-score-assessments.md#delete-an-assessment). Deleting an assessment does not delete its template. Templates can’t be deleted, but can be hidden from view. Review [instructions for hiding templates](working-with-compliance-manager.md#hide-a-template-or-an-assessment).
 
 ## What test procedures does Microsoft follow for controls?
 
