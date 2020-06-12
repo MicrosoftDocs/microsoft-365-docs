@@ -146,7 +146,7 @@ You're now ready to apply the sensitivity label or labels to the following conta
 - [Microsoft 365 group in Outlook on the web](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
 - [SharePoint site](#apply-a-sensitivity-label-to-a-new-site)
 
-You can use PowerShell if you need to [apply a sensitivity label to multiple sites](#use-powerShell-to-apply-a-sensitivity-label-to-multiple-sites).
+You can use PowerShell if you need to [apply a sensitivity label to multiple sites](#use-powershell-to-apply-a-sensitivity-label-to-multiple-sites).
 
 ### Apply sensitivity labels to Microsoft 365 groups
 
