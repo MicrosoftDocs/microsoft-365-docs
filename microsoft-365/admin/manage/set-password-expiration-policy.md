@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,6 +24,14 @@ description: "Learn how to set a password expiration policy for your organizatio
 ---
 
 # Set the password expiration policy for your organization
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 This article is for people who set password expiration policy for a business, school, or nonprofit.  
 

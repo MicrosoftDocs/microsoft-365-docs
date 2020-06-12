@@ -17,6 +17,7 @@ search.appverid:
 - MOE150
 ms.custom:
 - fwlink 824861; CampaignID O365_Comm_SR_UpgradeOffice
+- AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: "Learn how to upgrade your users to the latest Office client."
 ---
@@ -119,4 +120,4 @@ If you haven't already done so, assign licenses to any users in your organizatio
 After you've verified the users you want to upgrade all have licenses, the final step is to have them install Office, see [Download and install or reinstall Office on your PC or Mac](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx).
   
 > [!TIP]
-> If you don't want your users installing Office themselves, see [Manage software download settings in Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). You can use the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) to download the Office software to your local network and then deploy Office by using the software deployment method you typically use.
+> If you don't want your users installing Office themselves, see [Manage software download settings in Office 365](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365). You can use the [Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) to download the Office software to your local network and then deploy Office by using the software deployment method you typically use.

@@ -19,6 +19,7 @@ ms.custom:
 - SaRA
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,7 +28,15 @@ ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: "Add your domain to Office 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host. The setup wizard walks you through the process."
 ---
 
-# Add a domain to Office 365
+# Add a domain to Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
  **[Check the Domains FAQ](domains-faq.md)** if you don't find what you're looking for. 
   
@@ -62,7 +71,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
 
 ::: moniker-end
     
-2. Go to the **Setup** > **Domains** page. 
+2. Go to the **Settings** > **Domains** page. 
 
 3. Select **Add domain**.
     
@@ -70,7 +79,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
     
 5. Choose how you want to verify that you own the domain.
     
-    1. If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Microsoft[will set up your records automatically](../get-help-with-domains/domain-connect.md).
+    1. If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md).
     
     2. You can have an email sent to the registered contact for the domain with a verification code. If you don't recognize or have access to the email on record, you can use the third option.
     
@@ -89,7 +98,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
   
     If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
-    Check our list of [host-specific instructions](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) to find your host and follow the steps to add all the records you need. 
+    Check our list of [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to find your host and follow the steps to add all the records you need. 
     
     If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
     

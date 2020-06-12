@@ -1,6 +1,6 @@
 ---
 title: "Supervision policies"
-description: "Learn about supervision policies"
+description: Learn about using supervision policies in Microsoft 365 to capture employee communications for examination by designated reviewers.
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -18,6 +18,7 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
+ms.custom: seo-marvel-apr2020
 titleSuffix: Microsoft 365 Compliance
 ---
 
@@ -133,7 +134,7 @@ You have the option of including sensitive information types as part of your sup
 - Privacy
 - Custom information type
 
-To learn more about sensitive information details and the patterns included in the default types, see [What sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+To learn more about sensitive information details and the patterns included in the default types, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 #### Custom keyword dictionaries
 
@@ -286,11 +287,11 @@ The following supervision policy activities are audited and available in the uni
 
 |**Activity**|**Associated commands**|
 |:-----|:-----|
-| **Create a policy** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
-| **Edit a policy** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
-| **Delete a policy** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| **Create a policy** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/new-supervisoryreviewrule) |
+| **Edit a policy** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/set-supervisoryreviewrule) |
+| **Delete a policy** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/remove-supervisoryreviewpolicyv2) |
 
-View audit activities in the unified audit log or with the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell cmdlet.
+View audit activities in the unified audit log or with the [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) PowerShell cmdlet.
 
 For example, the following example returns the activities for the all the supervisory review activities (policies and rules) and lists detailed information for each:
 
@@ -304,7 +305,7 @@ This example returns the update activities for your communication compliance pol
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeletedAuditData
 ```
 
-In addition to information provided in the supervision reports and logs, you can also use the [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet to return a complete detailed listing of all supervision policy activities.
+In addition to information provided in the supervision reports and logs, you can also use the [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/get-supervisoryreviewactivity?view=exchange-ps) PowerShell cmdlet to return a complete detailed listing of all supervision policy activities.
 
 ## Ready to get started?
 

@@ -40,7 +40,7 @@ Both Windows 10 and Microsoft 365 Apps for enterprise introduce new servicing op
 
 ## Update Types
 
-Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while quality and security Updates occur Monthly. Additionally, unique to Office 365 applications, we offer a fully-supported Monthly Channel option where updates contain both new features and quality updates.
+Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while quality and security Updates occur Monthly. Additionally, unique to Office 365 applications, we offer a fully-supported Current Channel option where updates contain both new features and quality updates.
 
 If you’re used to a longer cycle between desktop OS and app updates, you might be wondering;
 
@@ -70,7 +70,7 @@ With the cumulative model, you’re always one update away from being current an
 
 Another advantage is that, before we roll out updates for broad deployment, we first release builds via the Insider programs for [Office](https://products.office.com/office-insider?tab=Windows-Desktop) and [Windows](https://insider.windows.com/), and this allows us to gather diagnostic data and feedback ahead of us releasing updates broadly. Now the Insider programs are open to everyone so that you can get ahead of understanding the updates. By the time we release updates we will have received diagnostic data from millions of configurations, so when we do roll out updates, quality is now inherently more predictable
 
-AND one more thing, because Microsoft 365 Apps for enterprise Insider builds reflect monthly channel updates, if you are using semi-annual channel for Office to deliver feature updates twice per year aligned to Windows, you can validate those builds early as well using the semi-annual channel targeted releases.
+AND one more thing, because Microsoft 365 Apps for enterprise Insider builds reflect monthly channel updates, if you are using semi-annual channel for Office to deliver feature updates twice per year aligned to Windows, you can validate those builds early as well using the Semi-Annual Enterprise Channel (Preview) releases.
 
 ### Supporting Management Tools
 
@@ -78,7 +78,7 @@ We've also thought through how to make the deployment of updates seamless to you
 
 [Deploy Windows 10 updates using Configuration Manager](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-configuration-manager)
 
-[Manage Microsoft 365 Apps for enterprise with Configuration Manager](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
+[Manage Microsoft 365 Apps for enterprise with Configuration Manager](https://docs.microsoft.com/mem/configmgr/sum/deploy-use/manage-office-365-proplus-updates)
 
 ## Overview of Windows and Office Channels
 
@@ -90,15 +90,15 @@ Windows 10 offers three servicing channels:
 
 Microsoft 365 offers four servicing channels:
 
-- [**Office Insider Program**](https://support.office.com/article/What-is-Office-Insider-f4208185-b63a-4b68-9c7a-9a32d2411c16) for organizations to test and provide feedback on the newest Office features and functionalities still in development
-- **Monthly Channel** to provide users with the newest Office features as soon as they're available
-- **Semi-Annual Channel** provides new functionality with new features only twice per year
-- **Semi-Annual Channel (Targeted)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel
+- [**Office Insider Program**](https://products.office.com/office-insider) for organizations to test and provide feedback on the newest Office features and functionalities still in development
+- **Current Channel** to provide users with the newest Office features as soon as they're available
+- **Semi-Annual Enterprise Channel** provides new functionality with new features only twice per year
+- **Semi-Annual Enterprise Channel (Preview)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Enterprise Channel
 
 For detailed information about Windows and Office servicing channels please review the below documentation:
 
 - [Overview of Windows as a Service](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels)
-- [Overview of Update Channels for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+- [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 ## Phased Deployment of Updates
 
@@ -136,7 +136,7 @@ As for tooling, you can use policy settings with Windows Update for Business, so
 
 [Windows Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Semi-Annual Channel for Microsoft 365 Apps for enterprise](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus#BKMK_SAC)
+[Semi-Annual Enterprise Channel for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### Upgrade Task Sequences
 
@@ -148,7 +148,7 @@ A Task Sequence allows you to create custom checks or tasks BEFORE to the instal
 
 If you’re already using task sequences to migrate your Windows 7 machines to Windows 10 and are well-versed with those tools, this is a great place to start and provides ultimate control. While you can use a single task sequence for the entire upgrade, it is quite common that organizations use two task sequences. One task sequence for making sure the machines are ready for the upgrade, that silently pre-stages all the required setup files on target computers, and one to do the actual upgrade. This approach ensures that your user productivity is less impacted.
 
-[Create a task sequence to upgrade an OS in Configuration Manager](https://docs.microsoft.com/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
+[Create a task sequence to upgrade an OS in Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)
 
 #### Semi-annual channel support for feature updates
 

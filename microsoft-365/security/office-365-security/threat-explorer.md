@@ -1,5 +1,5 @@
 ---
-title: "Threat Explorer and real-time detections, new to Threat Explorer, changes to Threat Explorer, new to Office 365, Security, Cloud Security, new to Security in ATP, new ATP features"
+title: Threat Explorer and real-time detections
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -15,7 +15,8 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: "Learn about Explorer and real-time detections in the Security &amp; Compliance Center."
+description: Learn about using Explorer and real-time detections in the Security &amp; Compliance Center to investigate and respond to threats effectively and efficiently.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Threat Explorer and real-time detections
@@ -216,7 +217,7 @@ To view and use Explorer or real-time detections, you must have appropriate perm
   - Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Organization Management
   - View-only Organization Management

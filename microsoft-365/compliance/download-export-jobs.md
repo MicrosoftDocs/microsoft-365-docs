@@ -1,5 +1,5 @@
 ---
-title: "Download export jobs"
+title: Download export jobs for a case
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
+ms.custom: seo-marvel-mar2020
 description: "Install and use the Azure Storage Explorer to download documents that were exported from a review set in Advanced eDiscovery."
 ---
 

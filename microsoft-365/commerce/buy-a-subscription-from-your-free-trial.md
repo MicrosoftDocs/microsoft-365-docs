@@ -20,6 +20,7 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -45,9 +46,9 @@ It's easy, and, when you buy the same type of subscription as your trial version
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, find the subscription that you want to buy. In the **Licenses** section, select **Purchase subscription**.
+2. On the **Your products** page, find the subscription that you want to buy. In the **Licenses** section, select **Purchase subscription**.
 
 3. Choose either a monthly or annual commitment for your subscription, then select **Checkout**.
 

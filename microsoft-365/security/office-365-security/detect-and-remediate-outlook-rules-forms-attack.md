@@ -1,5 +1,5 @@
 ---
-title: "Detect and Remediate Outlook rules and custom Forms Injections attacks"
+title: "Detect and remediate the Outlook rules and custom forms injections attacks."
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -16,6 +16,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: "Learn how to recognize and remediate the Outlook rules and custom forms injections attacks in Office 365"
+ms.custom: seo-marvel-apr2020
 ---
 # Detect and Remediate Outlook Rules and Custom Forms Injections Attacks
 
@@ -152,13 +153,13 @@ If you find any evidence of either of these attacks, remediation is simple, just
 
 1. Identify all the devices that the user has used with Outlook. They will all need to be cleaned of potential malware. Do not allow the user to sign on and use email until all the devices are cleaned.
 
-2. Follow the steps in [Delete a rule](https://support.office.com/article/2f0e7139-f696-4422-8498-44846db9067f) for each device.
+2. Follow the steps in [Delete a rule](https://support.microsoft.com/en-us/office/delete-a-rule-2f0e7139-f696-4422-8498-44846db9067f) for each device.
 
 3. If you are unsure about the presence of other malware, you can format and re-install all the software on the device. For mobile devices you can follow the manufacturers steps to reset the device to the factory image.
 
 4. Install the most up-to-date versions of Outlook. Remember that the current version of Outlook blocks both types of this attack by default.
 
-5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high-quality one) and follow the steps in [Setup multi-factor authentication for users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication) if MFA has not already been enabled. This ensures that the user's credentials are not exposed via other means (such as phishing or password re-use).
+5. Once all offline copies of the mailbox have been removed, reset the user's password (use a high-quality one) and follow the steps in [Setup multi-factor authentication for users](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication) if MFA has not already been enabled. This ensures that the user's credentials are not exposed via other means (such as phishing or password re-use).
 
 ### Using PowerShell
 
@@ -166,19 +167,19 @@ There are two remote PowerShell cmdlets you can use to remove or disable dangero
 
 #### Steps for mailboxes that are on an Exchange server
 
-1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-server/connect-to-exchange-servers-using-remote-powershell).
+1. Connect to the Exchange server using remote PowerShell. Follow the steps in [Connect to Exchange servers using remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-servers-using-remote-powershell).
 
-2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule) cmdlet.
+2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-InboxRule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) cmdlet.
 
-3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet.
+3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet.
 
 #### Steps for mailboxes in Exchange Online
 
-1. Follow the steps in [Connect to Exchange Online using PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Follow the steps in [Connect to Exchange Online using PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Remove-InboxRule) cmdlet.
+2. If you want to completely remove a single rule, multiple rules, or all rules from a mailbox use the [Remove-Inbox Rule](https://docs.microsoft.com/powershell/module/exchange/Remove-InboxRule) cmdlet.
 
-3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/mailboxes/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet.
+3. If you want to retain the rule and its contents for further investigation use the [Disable-InboxRule](https:https://docs.microsoft.com/powershell/module/exchange/disable-inboxrule/library/dd298120(v=exchg.160).aspx) cmdlet.
 
 ## How to minimize future attacks
 
@@ -186,7 +187,7 @@ There are two remote PowerShell cmdlets you can use to remove or disable dangero
 
 The Rules and Forms exploits are only used by an attacker after they have stolen or breached one of your user's accounts. So, your first step to preventing the use of these exploits against your organization is to aggressively protect your user accounts. Some of the most common ways that accounts are breached are through phishing or [password spraying](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/) attacks.
 
-The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for users](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication). You should also:
+The best way to protect your user accounts, and especially your administrator accounts, is to [set up multi-factor authentication for users](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication). You should also:
 
 - Monitor how your user accounts are [accessed and used](https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports). You may not prevent the initial breach, but you will shorten the duration and the impact of the breach by detecting it sooner. You can use these [Office 365 Cloud App Security policies](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) to monitor you accounts and alert on unusual activity:
 

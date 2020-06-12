@@ -1,5 +1,5 @@
 ---
-title: "Download export jobs from a data investigation"
+title: Download export jobs for an investigation
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,6 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 
 description: "Install and use the Azure Storage Explorer to download documents that were exported from evidence in a data investigation."
+ms.custom: seo-marvel-mar2020
 
 ---
 

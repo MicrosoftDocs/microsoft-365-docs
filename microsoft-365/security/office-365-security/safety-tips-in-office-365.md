@@ -2,10 +2,10 @@
 title: "Safety tips in email messages"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: 10/6/2016
+ms.date:
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
-description: "Introduces safety tips for email messages filtered by the EOP and the spam filter."
+description: Learn about how EOP and Office 365 protect you with spam, phishing, and malware prevention by adding a safety tip to the top of emails.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Safety tips in email messages

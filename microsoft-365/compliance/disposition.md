@@ -30,13 +30,16 @@ To manage disposition reviews and confirm that records have been deleted, you mu
 
 ### Permissions for disposition
 
-To successfully access the **Disposition** tab in the Microsoft 365 compliance center, you must be members of the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called **Disposition Reviewers**, and add these two roles to that role group. 
+To successfully access the **Disposition** tab in the Microsoft 365 compliance center, users must have the **Disposition Management** role and the **View-Only Audit Logs** role. Although the standard advice is to add users to the default role groups, in this case, we recommend you create a new role group called **Disposition Reviewers** that has these two roles and add users to this group as needed. A single role group for disposition reduces administration overheads and makes it easier for users have the combined permissions that they need.
+
+> [!NOTE]
+> Even a global admin needs to be granted the **Disposition Management** role. So if global admins need to access the disposition tab, them as members of the **Disposition Reviewers** role group. 
 
 Specific to the **View-Only Audit Logs** role:
 
 - Because the underlying cmdlet used to search the audit log is an Exchange Online cmdlet, you must assign users this role by using the [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center), rather than by using the **Permissions** page in the Security & Compliance Center. For instructions, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-- Microsoft 365 Groups ([formerly Office 365 Groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) aren't supported for this role. Instead, assign user mailboxes, mail users, or mail-enabled security groups.
+- Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) aren't supported for this role. Instead, assign user mailboxes, mail users, or mail-enabled security groups.
 
 For instructions to grant users the **Disposition Management** role and create your new **Disposition Reviewers** role, see [Give users access to the Office 365 Security &amp; Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
@@ -58,11 +61,14 @@ When content reaches the end of its retention period, there are several reasons 
 
 When a disposition review is triggered at the end of the retention period:
   
-- The people you choose receive an email notification that they have content to review. These reviewers can be individual users, distribution or security groups, or Office 365 groups. Note that notifications are sent on a weekly basis.
+- The people you choose receive an email notification that they have content to review. These reviewers can be individual users, distribution or security groups, or Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)). Note that notifications are sent on a weekly basis.
     
 - The reviewers go to the **Disposition** tab in the Microsoft 365 compliance center to review the content and decide whether to permanently delete it, extend its retention period, or apply a different retention label.
 
 A disposition review can include content in Exchange mailboxes, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Content awaiting a disposition review in those locations is deleted only after a reviewer chooses to permanently delete the content.
+
+> [!NOTE]
+> A mailbox must have at least 10 MB data to support disposition reviews.
 
 You can see an overview of all pending dispositions in the **Overview** tab. For example:
 
@@ -101,10 +107,10 @@ As you can see from the picture, the actions supported are:
 - Apply a different retention label
 
 Providing you have permissions to the location and the content, you can use the link in the **Location** column to view documents in their original location. During a disposition review, the content never moves from its original location, and it's never deleted until the reviewer chooses to do so.
-  
+
 The email notifications are sent automatically to reviewers on a weekly basis. This scheduled process means that when content reaches the end of its retention period, it might take up to seven days for reviewers to receive the email notification that content is awaiting disposition.
   
-All disposition actions can be audited.
+All disposition actions can be audited and the justification text entered by the reviewer is saved and displayed in the **Comment** column on the **Disposed items** page.
   
 ### How long until disposed content is permanently deleted
 

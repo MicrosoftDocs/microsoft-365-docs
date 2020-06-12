@@ -22,9 +22,6 @@ search.appverid:
 
 # Get started with communication compliance
 
->[!IMPORTANT]
->This topic applies to configuring communication compliance in a Microsoft 365 subscription. If you want to configure Supervision policies for a Microsoft 365 subscription, see [Configure supervision for Microsoft 365](supervision-policies.md).
-
 Use communication compliance policies to capture employee communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
 
 ## Before you begin
@@ -43,7 +40,7 @@ Before you get started with communication compliance, you should confirm your [M
 - Office 365 Enterprise E5 subscription (paid or trial version)
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
-Users included in communication compliance policies must must be assigned one of the licenses above.
+Users included in communication compliance policies must be assigned one of the licenses above.
 
 >[!IMPORTANT]
 >Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
@@ -94,7 +91,7 @@ Use the following chart to help you configure groups in your organization for co
 |Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Mail-enabled security groups |
   
-When you select a Microsoft 365 group for supervised users, the policy monitors the content of the shared mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.
+When you assign a Distribution group in the policy, the policy monitors all emails from each user in Distribution group. When you assign a Microsoft 365 group in the policy, the policy monitors all emails sent to that group, not the individual emails received by each group member.
 
 For more information about setting up groups, see:
 
@@ -127,14 +124,14 @@ For more information about configuring Yammer in Native Mode, see:
 
     - Confirm or update the policy name. Policy names cannot be changed once the policy is created.
     - Choose the users or groups to supervise, including choosing users or groups you'd like to exclude.
-    - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow.
+    - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
     - Choose a limited condition field, usually a sensitive info type or keyword dictionary to apply to the policy.
 
     If you choose to use the policy wizard to create a custom policy, you will:
 
     - Give the policy a name and description. Policy names can't be changed once the policy is created.
     - Choose the users or groups to supervise, including all users in your organization, specific users and groups, or other users and groups you'd like to exclude.
-    - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online.
+    - Choose the reviewers for the policy. Reviewers are individual users and all reviewers must have mailboxes hosted on Exchange Online. Reviewers added here are the reviewers that you can choose from when escalating an alert in the investigation and remediation workflow. When reviewers are added to a policy, they automatically receive an email message that notifies them of the assignment to the policy and provides links to information about the review process.
     - Choose the communication channels to scan, including Exchange, Microsoft Teams, Yammer, or Skype for Business. You'll also choose to scan third-party sources if you've configured a connector in Microsoft 365.
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
     - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
@@ -143,7 +140,7 @@ For more information about configuring Yammer in Native Mode, see:
 
     >[!CAUTION]
     >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
-    
+
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.
 

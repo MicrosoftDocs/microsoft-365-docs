@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -118,7 +119,7 @@ Follow the steps below or [watch the video (start at 3:32)](https://support.offi
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> For more information about priority, see [What is MX priority?](https://support.office.com/article/2784cc4d-95be-443d-b5f7-bb5dd867ba83.aspx) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Note:** Get your \<*domain-key*\> from your Microsoft account. <br> [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> For more information about priority, see [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Note:** Get your \<*domain-key*\> from your Microsoft account. <br> [How do I find this?](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copy and paste the value from the table](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,7 +26,7 @@ description: "Learn about the types of groups you can use."
 
 In the **Groups** section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
-- **Microsoft 365 groups** are used for collaboration between users, both inside and outside your company.
+- **Microsoft 365 groups** (formerly Office 365 groups) are used for collaboration between users, both inside and outside your company.
 - **Distribution groups** are used for sending notifications to a group of people.
 - **Security groups** are used for granting access to resources such as SharePoint sites.
 - **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.

@@ -79,4 +79,4 @@ Unique messages can also be marked as duplicates when the Copy-on-Write page pro
 
   - [Export In-Place eDiscovery search results to a PST file](https://go.microsoft.com/fwlink/p/?linkid=832671)
 
-  - [Export content and create reports in the eDiscovery Center](https://support.office.com/article/7b2ea190-5f9b-4876-86e5-4440354c381a)
+  - [Export content and create reports in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/export-content-and-create-reports-in-the-ediscovery-center)

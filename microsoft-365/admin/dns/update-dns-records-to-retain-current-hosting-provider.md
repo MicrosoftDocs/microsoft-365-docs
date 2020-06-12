@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -59,7 +60,7 @@ In addition, you can create a CNAME record to help customers find your website.
     
 Finally, do the following:
   
-[Update your domain's NS records](https://support.office.com/article/a46bec33-2c78-4f45-a96c-b64b2a5bae22.aspx) to point to Microsoft. 
+[Update your domain's NS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to point to Microsoft. 
   
 When the NS records have been updated to point to Microsoft, your domain is all set up. Email will be routed to Microsoft, and traffic to your website address will continue to go to your current website host.
  

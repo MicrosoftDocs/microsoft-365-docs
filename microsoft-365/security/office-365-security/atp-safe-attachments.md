@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
-description: "The Safe Attachments feature provides time-of-click verification of email attachments. Use Safe Attachments to protect your organization from malicious files people send or receive in email."
+- seo-marvel-apr2020
+description: "In this article, you'll learn about the ATP Safe Attachments feature for Office 365 and how to get the feature for your subscription."
 ---
 
 # ATP Safe Attachments
@@ -41,9 +42,9 @@ To define (or edit) ATP policies, you must be assigned an appropriate role. Some
 
 |Role|Where/how assigned|
 |---------|---------|
-|global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) to learn more.)|
+|global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
 |Security Administrator|Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Exchange Online Organization Management|Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 ## How to know if ATP Safe Attachments protection is in place
 

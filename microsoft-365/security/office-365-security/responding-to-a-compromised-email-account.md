@@ -10,12 +10,14 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.custom: TopSMBIssues
+ms.custom: 
+ - TopSMBIssues
+ - seo-marvel-apr2020
 ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to recognize and respond to a compromised email account in Microsoft 365"
+description: Learn how to recognize and respond to a compromised email account using tools available in Microsoft 365.
 ---
 # Responding to a Compromised Email Account
 
@@ -79,7 +81,7 @@ You must perform all the following steps to regain access to your account the so
 > [!WARNING]
 > Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.
 
-1. Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
 
 **Notes**:
 
@@ -90,7 +92,7 @@ You must perform all the following steps to regain access to your account the so
 - If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 > [!TIP]
-> We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more about MFA [here](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more about MFA [here](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
@@ -194,4 +196,4 @@ Your Microsoft 365 subscription comes with a powerful set of security capabiliti
 
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

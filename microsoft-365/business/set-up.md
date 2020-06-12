@@ -24,6 +24,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -40,8 +41,6 @@ Watch this video for an overview of Microsoft 365 Business Premium setup.<br><br
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Add your domain, users, and set up policies
-
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
 When you purchase Microsoft 365 Business Premium, you have the option of using a domain you own, or buying one during the [sign-up](sign-up.md).
 
@@ -60,7 +59,7 @@ When you purchase Microsoft 365 Business Premium, you have the option of using a
 4. In the **Add domain** step, enter the domain name you want to use (like contoso.com).
 
     > [!IMPORTANT]
-    > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users ](#add-users-and-assign-licenses) instead.
+    > If you purchased a domain during the sign-up, you will not see **Add a domain** step here. Go to [Add users](#add-users-and-assign-licenses) instead.
 
     ![Screenshot of the Personalize your sign-in page.](../media/adddomain.png)
 
@@ -92,7 +91,7 @@ Any users you add in the wizard get automatically assigned a Microsoft 365 Busin
   
 To set up services, you have to update some records at your DNS host or domain registrar.
   
-1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](https://support.office.com/article/a8b487a9-2a45-4581-9dc4-5d28a47010a2). 
+1. The setup wizard typically detects your registrar and gives you a link to step-by-step instructions for updating your NS records at the registrar website. If it doesn't, [Change nameservers to set up Office 365 with any domain registrar](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar). 
 
     - If you have existing DNS records, for example an existing web site, but your DNS host is enabled for [domain connect](https://docs.microsoft.com/office365/admin/get-help-with-domains/domain-connect), choose **Add records for me**. On the **Choose your online services** page, accept all the defaults, and choose **Next**, and choose **Authorize** on your DNS host's page.
     - If you have existing DNS records with other DNS hosts (not enabled for domain connect), you'll want to manage your own DNS records to make sure the existing services stay connected. See [domain basics](https://docs.microsoft.com/office365/admin/get-help-with-domains/dns-basics) for more info.
@@ -119,7 +118,7 @@ The policies you set up in the wizard are applied automatically to a [Security g
 
 ## Secure Windows 10 PCs
 
-On the left nav, select **Setup** and then, under **Sing-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started. See [secure your Windows 10 computers](secure-win-10-pcs.md) for complete instructions.
+On the left nav, select **Setup** and then, under **Sign-in and security**, choose **Secure your Windows 10 computers**. Choose **View** to get started. See [secure your Windows 10 computers](secure-win-10-pcs.md) for complete instructions.
 
 ## Deploy Office 365 client apps
 

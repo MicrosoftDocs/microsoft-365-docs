@@ -10,8 +10,6 @@
       href: microsoft-365-compliance-center.md
     - name: Microsoft 365 solution catalog
       href: microsoft-365-solution-catalog.md
-    - name: Go to the Security & Compliance Center
-      href: go-to-the-securitycompliance-center.md
     - name: Use your free Azure Active Directory subscription
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Plan for security and compliance in Office 365
@@ -22,6 +20,8 @@
       items:
         - name: Learn about insider risk management
           href: insider-risk-management.md
+        - name: Plan for insider risk management
+          href: insider-risk-management-plan.md
         - name: Get started with insider risk management
           href: insider-risk-management-configure.md
         - name: Create and manage insider risk policies
@@ -40,6 +40,8 @@
       items: 
         - name: Learn about communication compliance
           href: communication-compliance.md
+        - name: Plan for communication compliance
+          href: communication-compliance-plan.md
         - name: Get started with communication compliance
           href: communication-compliance-configure.md
         - name: Investigate and remediate communication compliance alerts
@@ -127,8 +129,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Sensitive information types
       items: 
-        - name: What the sensitive information types look for
-          href: what-the-sensitive-information-types-look-for.md
+        - name: Sensitive information type entity definitions 
+          href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
         - name: Watch an extended overview of customizing DLP
@@ -208,14 +210,14 @@
               href: set-up-azure-rms-for-previous-version-message-encryption.md
     - name: Set up IRM in SharePoint admin center
       href: set-up-irm-in-sp-admin-center.md
-    - name: Understand data classification (preview)
+    - name: Understand data classification
       href: data-classification-overview.md
       items: 
-        - name: Get started with content explorer (preview)
+        - name: Get started with content explorer
           href: data-classification-content-explorer.md
-        - name: Get started with activity explorer (preview)
+        - name: Get started with activity explorer
           href: data-classification-activity-explorer.md
-        - name: Data classification public preview release notes (preview)
+        - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
         - name: Get started with trainable classifiers (preview)
           href: classifier-getting-started-with.md
@@ -245,19 +247,21 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Set up a connector to archive Facebook data
+        - name: Archive Facebook data (preview)
           href: archive-facebook-data-with-sample-connector.md
-        - name: Set up a connector to archive Twitter data
-          href: archive-twitter-data-with-sample-connector.md
-        - name: Set up a connector to archive LinkedIn data
-          href: archive-linkedin-data.md
-        - name: Set up a connector to archive Instant Bloomberg data
-          href: archive-instant-bloomberg-data.md
-        - name: Set up a connector to import HR data
+        - name: Import HR data (preview)
           href: import-hr-data.md
+        - name: Archive Instant Bloomberg data
+          href: archive-instant-bloomberg-data.md
+        - name: Archive LinkedIn data
+          href: archive-linkedin-data.md
+        - name: Archive Twitter data (preview)
+          href: archive-twitter-data-with-sample-connector.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
-    - name: Store data
+        - name: Search for third-party data
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: Store mailbox data
       items: 
         - name: Enable archive mailboxes
           href: enable-archive-mailboxes.md
@@ -269,15 +273,25 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Retain data
       items: 
-        - name: Retention policies
+        - name: Learn about retention policies
           href: retention-policies.md
-        - name: File plan manager
+        - name: Create and configure retention policies
+          href: create-retention-policies.md
+        - name: Retention for SharePoint and OneDrive
+          href: retention-policies-sharepoint.md
+        - name: Retention for Microsoft Teams
+          href: retention-policies-teams.md
+        - name: Retention for Exchange
+          href: retention-policies-exchange.md
+        - name: File plan
           href: file-plan-manager.md
-        - name: Retention labels
+        - name: Learn about retention labels
           href: labels.md
+        - name: Create, publish, and auto-apply retention labels
+          href: create-retention-labels.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Create and publish retention labels by using PowerShell
+        - name: Use PowerShell to create and publish retention labels
           href: bulk-create-publish-labels-using-powershell.md
         - name: Event-based retention
           href: event-driven-retention.md
@@ -321,11 +335,13 @@
           href: records.md
         - name: File plan
           items: 
-            - name: File plan manager
+            - name: Manage retention labels
               href: file-plan-manager.md
-            - name: Retention labels
+            - name: Learn about retention labels
               href: labels.md
-            - name: Create and publish retention labels by using PowerShell
+            - name: Create and publish retention labels
+              href: create-retention-labels.md
+            - name: Use PowerShell to create and publish retention labels at scale
               href: bulk-create-publish-labels-using-powershell.md
             - name: View label usage with label analytics
               href: label-analytics.md
@@ -374,8 +390,6 @@
             href: bulk-edit-content-searches.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Search for third-party data
-            href: use-content-search-to-search-third-party-data-that-was-imported.md
           - name: Check your search query for errors
             href: check-your-content-search-query-for-errors.md
           - name: Troubleshoot common eDiscovery issues
@@ -871,8 +885,6 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: Information protection
-          href: gdpr-information-protection.md
         - name: Data subject requests
           items: 
             - name: Data subject requests
@@ -913,8 +925,12 @@
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
+        - name: Information protection
+          href: gdpr-information-protection.md
         - name: Microsoft's data protection officer
           href: gdpr-data-protection-officer.md
+        - name: Additional steps to export system-generated log data
+          href: gdpr-system-generated-log-data.md
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS
@@ -1052,8 +1068,6 @@
               href: offering-mars-e.md
             - name: NEN-7510 (Netherlands)
               href: offering-nen-7510-netherlands.md
-            - name: NHS IG Toolkit (UK)
-              href: offering-nhs-ig-toolkit-uk.md
         - name: Manufacturing
           items: 
             - name: FDA CFR Title 21 Part 11
@@ -1130,8 +1144,6 @@
               href: offering-mpaa.md
             - name: NBB + FSMA (Belgium)
               href: offering-nbb-fsma-belgium.md
-            - name: NHS IG Toolkit (UK)
-              href: offering-nhs-ig-toolkit-uk.md
             - name: NIST CSF
               href: offering-nist-csf.md
             - name: PCI DSS

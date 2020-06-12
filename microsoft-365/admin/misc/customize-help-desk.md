@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -35,7 +36,7 @@ To create a custom help desk card, you must be a global admin for Microsoft 365 
 ### Create the custom help desk card in the admin center
 <a name="BKMK_HelpDeskPreview"> </a>
 
-1. In the admin center, go to the **Settings** > **Settings** and choose **Help desk information** tab.
+1. In the admin center, go to the **Settings** > **Org Settings** and choose **Help desk information** tab.
     
 2. On the **Organization profile** tab, choose **Custom app launcher tiles**.
   

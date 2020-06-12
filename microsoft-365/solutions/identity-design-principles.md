@@ -11,8 +11,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: 
 - M365solutions
+ms.custom: 
 f1.keywords: NOCSH
 ---
 
@@ -268,7 +268,7 @@ Office 365 has a [unified audit log](https://docs.microsoft.com/microsoft-365/co
 
 Examples of Microsoft 365 logs which are accessed through other API’s include the following:
 - [Azure AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (activities not related to Office 365)
-- [Exchange Message Tracking](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+- [Exchange Message Tracking](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
 - Threat/UEBA Systems discussed above (for example, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender ATP, etc.)
 - [Microsoft information protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)

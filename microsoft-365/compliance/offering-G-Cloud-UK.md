@@ -39,10 +39,10 @@ Learn how to accelerate your United Kingdom G-Cloud v6 deployment with our Azure
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Office 365: Exchange Online, SharePoint Online, and Skype for Business Online
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
@@ -100,7 +100,7 @@ In addition to the UK datacenters, Microsoft cloud services has data centers in 
 
 **How can I get copies of the auditor’s reports?**
 
-The [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
 
 ## Resources
 
@@ -110,7 +110,3 @@ The [Service Trust Portal](https://support.office.com/article/Get-started-with-t
 - [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).

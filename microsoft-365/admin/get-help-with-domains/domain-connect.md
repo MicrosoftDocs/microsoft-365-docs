@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150

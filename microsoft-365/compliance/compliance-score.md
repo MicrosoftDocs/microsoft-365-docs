@@ -44,8 +44,8 @@ Compliance Score helps simplify compliance management by providing:
 - **Recommended actions**: provides recommendations and step-by-step guidance for how to implement controls to maximize your score
 -  **Built-in control mapping**: helps you stay current with the evolving compliance landscape by providing a built-in common control framework
 
-> [!IMPORTANT] 
-> Compliance Score does not express an absolute measure of organizational compliance with any particular standard or regulation. It expresses the extent to which you have adopted controls which can reduce the risks to personal data and individual privacy. Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. This service is currently in preview and is subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910).
+> [!IMPORTANT]
+> Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are currently in preview and subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## Relationship to Compliance Manager
 
@@ -99,27 +99,28 @@ View detailed instructions for [managing assessments in Compliance Manager](work
 
 ### Templates
 
-Compliance Score provides pre-configured templates for assessments. You can also customize a pre-configured template by adding your own controls and actions. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn't covered by one of the pre-configured templates. By bringing your own templates into Compliance Score, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
+Compliance Score provides pre-configured templates for assessments. You can also create a Custom Assessment by adding your own controls and actions to a pre-configured template. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn't covered by one of the pre-configured templates. By bringing your own templates into Compliance Score, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
 
 The pre-configured templates for Compliance Score are:
 
 1. [Brazil General Data Protection Law (LGPD)](https://go.microsoft.com/fwlink/?linkid=2115387)
 2. [California Consumer Privacy Act (CCPA)](https://go.microsoft.com/fwlink/?linkid=2108871) (preview)
 3. [Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 3.0.1](https://go.microsoft.com/fwlink/?linkid=2109076)
-4. [European Union GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
-5. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077)
-6. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
-7. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
-8. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (preview)
-9. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
-10. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
-11. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
-12. [Microsoft 365 Data Protection Baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
-13. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
-14. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
-15. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
-16. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
-17. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
+4. [Dubai Information Security Resolution (DGISR)](https://go.microsoft.com/fwlink/?linkid=2131193)
+5. [European Union GDPR](https://go.microsoft.com/fwlink/?linkid=2108870)
+6. [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://go.microsoft.com/fwlink/?linkid=2109077)
+7. [FedRAMP Moderate](https://go.microsoft.com/fwlink/?linkid=2108869)
+8. [HIPAA](https://go.microsoft.com/fwlink/?linkid=2109078) / [HITECH](https://go.microsoft.com/fwlink/?linkid=2109079)
+9. [IRAP](https://go.microsoft.com/fwlink/?linkid=2113709) / [Australian Government ISM](https://go.microsoft.com/fwlink/?linkid=2113024) (preview)
+10. [ISO 27001:2013](https://go.microsoft.com/fwlink/?linkid=2109073)
+11. [ISO 27018:2014](https://go.microsoft.com/fwlink/?linkid=2109074)
+12. [ISO 27701:2019](https://go.microsoft.com/fwlink/?linkid=2113025)
+13. [Microsoft 365 Data Protection Baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)
+14. [NIST 800-53 Rev. 4](https://go.microsoft.com/fwlink/?linkid=2109075)
+15. [NIST 800-171](https://go.microsoft.com/fwlink/?linkid=2108867)
+16. [NIST Cybersecurity Framework (CSF)](https://go.microsoft.com/fwlink/?linkid=2108868)
+17. [SOC 1](https://go.microsoft.com/fwlink/?linkid=2115184)
+18. [SOC 2](https://go.microsoft.com/fwlink/?linkid=2115184)
 
 View [detailed instructions for creating templates](working-with-compliance-manager.md#templates), which occurs in Compliance Manager.
 

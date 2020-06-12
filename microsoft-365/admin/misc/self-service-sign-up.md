@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: 
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -20,7 +23,6 @@ search.appverid:
 - BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
 description: "Learn about the Microsoft 365 self-service sign up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Financials."
-ms.custom: okr_SMB
 ---
 
 # Using self-service sign up in your organization
@@ -37,7 +39,7 @@ The following example describes how self-sign up works for a school. The same pr
 
 3. We validate their email address, and then they can start using Microsoft 365, Power BI, or other services right away.
 
-4. As the business admin, you see who has signed up for a subscription by viewing the **Products & services** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service subscriptions, use the [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
+4. As the business admin, you see who has signed up for a subscription by viewing the **Your products** page in the admin center. This way you can see when there are new or unrecognized licenses for services in your tenant. To control whether users can sign up for self-service subscriptions, use the [Set-MsolCompanySettings](https://docs.microsoft.com/powershell/module/msonline/set-msolcompanysettings?view=azureadps-1.0) PowerShell cmdlet with the **AllowAdHocSubscriptions** parameter. For more information, see [How do I control self-service settings?](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/self-service-purchase-faq?view=o365-worldwide)
 
 ## Available self-service programs
 
