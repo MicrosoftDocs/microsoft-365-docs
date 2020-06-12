@@ -22,7 +22,7 @@ description: "Learn how set up and start using Microsoft Compliance Score, which
 
 ## Before you begin
 
-The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign-in and set user permissions as outlined below when visiting Compliance Score for the first time.
+The Microsoft 365 global administrator for your organization will likely be the first user to access Compliance Score. We recommend the global admin sign in and set user permissions as outlined below when visiting Compliance Score for the first time.
 
 ## Sign in
 
@@ -74,7 +74,7 @@ To manage automatic Secure Score updates, follow these steps:
 
 If you choose **set per action,** take these additional steps to turn on Secure Score updates for individual actions:
 
-4. Select **Compliance Manager** from the top menu (do not select "Compliance Manager (classic)," which is a legacy product).
+4. Select **Compliance Manager** from the top menu (do not select "Compliance Manager (classic),").
 
 5. Select **Tenant Management** in the upper-right corner of your screen.
 
@@ -100,7 +100,7 @@ The Compliance Score dashboard is designed to provide you an at-a-glance view of
 
 Your compliance score is featured prominently at the top. It shows a percentage based on points achievable for completing improvement actions that address key data protection standards and regulations.
 
-When you come to Compliance Score for the first time, your initial score is based on the built-in [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)—a set of controls that includes common industry regulations and standards. Because Compliance Score scans your system of existing Microsoft 365 solutions, it gives an initial assessment of your compliance posture based on privacy and security settings currently enabled by your organization. As you add assessments that are relevant to your organization, your score becomes even more meaningful.
+When you come to Compliance Score for the first time, your initial score is based on the built-in [Microsoft 365 data protection baseline](compliance-score-methodology.md#initial-score-based-on-microsoft-365-data-protection-baseline)—a set of controls that includes common industry regulations and standards. Compliance Score scans your existing Microsoft 365 solutions and gives you an initial assessment based on your current privacy and security settings. As you add assessments that are relevant to your organization, your score becomes more meaningful for you.
 
 #### Learn more
 [Understand how your compliance score is calculated](compliance-score-methodology.md).

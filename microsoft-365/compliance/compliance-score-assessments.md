@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Customize Microsoft Compliance Score by creating assessments to help you manage compliance for your organization."
+description: "Design customization Microsoft Compliance Score by creating assessments to help you manage compliance for your organization."
 ---
 
 # Customize Compliance Score (preview) with assessments
@@ -24,15 +24,15 @@ description: "Customize Microsoft Compliance Score by creating assessments to he
 
 Compliance Score helps you manage compliance with assessments for the regulations and certifications that apply to your organization. Assessments are groupings of controls from a specific regulation, standard, or policy. Compliance Score makes it easy to start tracking your compliance by providing ready to use assessments that cover a variety of industry and regional regulations and certifications.
 
-Each assessment is created from a template, which serves as a framework that contain the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization helps ensure you’re implementing policies and operational procedures that can limit your compliance risk.
+Each assessment is created from a template, which serves as a framework containing the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization helps ensure you’re implementing policies and operational procedures that can limit your compliance risk.
 
 ## Data protection baseline default assessment
 
 To get you started, Microsoft provides a **default** assessment in Compliance Score for you that contains the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-This assessment is used to calculate your initial score the first time you come to Compliance Score, before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable insights on your organization’s current compliance posture relative to key data protection standards and regulations.
+This assessment is used to calculate your initial score the first time you come to Compliance Score, before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable information on your organization’s current compliance posture relative to key data protection standards and regulations.
 
-BBecause every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
+Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
 
 ## Assessment creation overview
 
@@ -81,9 +81,7 @@ Before you create or modify assessments, it’s important to understand how grou
 
 ### What are groups
 
-Groups are containers that allow you to organize assessments and share common information and workflow tasks between assessments that have the same or related controls managed by you.
-
-You can group assessments in a way that is logical to you, such as by year, standard, service, or based on your organization's teams, divisions, or geographies. Below are examples of two groups and their underlying assessments:
+Groups are containers that allow you to organize assessments. You can group assessments in a way that is logical to you, such as by year or regulation, or based on your organization's divisions or geographies. Below are examples of two groups and their underlying assessments:
 
 - **FFIEC IS assessments 2020**
   - Office 365 + FFIEC IS
@@ -92,13 +90,13 @@ You can group assessments in a way that is logical to you, such as by year, stan
   - Office 365 + ISO 27001:2013
   - Office 365 + ISO 27018:2014
 
-When two different assessments in the same group share improvement actions managed by you, any updates you make to the implementation details, testing, and status for the action in one assessment will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
+When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
 
 ### How to create a group
 
 You create a group during the process of [creating a new assessment](#create-an-assessment).
 
-Groups cannot be created as standalone entities. A group must always contain at least one assessment, so in order to create a group, you must first create an assessment to put in the group.
+Groups cannot be created as standalone entities; a group must contain at least one assessment. In order to create a group, you must first create an assessment to put in the group.
 
 ### What to know when working with groups
 
@@ -121,7 +119,7 @@ To create an assessment in Compliance Score, follow the steps below:
 2. **Select a template:** Choose a template to serve as the basis for your assessment. You can choose a ready to use template, or a template you’ve modified or created. Select the radio button next to your chosen template, then select  **Next**.
 
 > [!NOTE]
-> See [instructions for creating and modifying templates](working-with-compliance-manager.md#templates), which occurs in Compliance Manager.
+> See [instructions for creating and modifying templates](working-with-compliance-manager.md#templates), a process handled in Compliance Manager.
 
 3. **Name and group:** Enter a name for your assessment in the **Assessment name** field. Assessment names must be unique within groups. If the name of your assessment matches the name of another assessment in any given group, you’ll receive an error asking you to create a different name.
 
@@ -137,7 +135,7 @@ If you see an **Assessment failed** screen after selecting **Create assessment**
 
 ## Delete an assessment
 
-When you delete an assessment, it's removed from the list on your assessments page. **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch. If the improvement actions in the assessment do not appear in any other assessment, they will be deleted when the assessment is deleted. We recommend exporting a report of the assessment before you permanently delete it.
+Deleting an assessment removes it from the list on your assessments page. **Deleting an assessment is permanent; you cannot get it back.** If you want the same assessment again, it must be re-created from scratch. If the improvement actions in the assessment do not appear in any other assessment, they will be deleted when the assessment is deleted. We recommend exporting a report of the assessment before you permanently delete it.
 
 To delete an assessment, follow the steps below:
 
@@ -149,7 +147,7 @@ If you delete the only assessment in a group, then that group is also deleted fr
 
 ## Monitor assessment progress and controls
 
-Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. It shows the completion rate of controls within the assessment and test status of key improvement actions within those controls.
+Each assessment has a details page that gives an at-a-glance view of your progress in completing the assessment. The page shows your progress in completing controls, and the test status of key improvement actions within those controls.
 
 ### Overview tab
 
@@ -161,15 +159,15 @@ To access individual improvement actions, go to the controls tab.
 
 ### Controls tab
 
-The controls tab displays detailed information for each control mapped to the assessment. A **control status breakdown** chart shows the status of controls broken down by control family so you can see at a glance which groupings of controls need attention.
+The controls tab displays detailed information for each control mapped to the assessment. A **control status breakdown** chart shows the status of controls by family, so you can see at a glance which groupings of controls need attention.
 
-Beneath the chart, a table lists detailed information about each control within the assessment. Controls are grouped by control family. Expand each family name to reveal the individual controls it contains. The information listed for each control include:
+Beneath the chart, a table lists detailed information about each control within the assessment. Controls are grouped by control family. Expand each family name to reveal the individual controls it contains. The information listed for each control includes:
 
 - **Control title**
 - **Status**: reflects the test status of the improvement actions within the control 
     - **Passed** - all improvement actions have a test status of “passed
     -  **Failed** - at least one improvement action has a test status of “failed”
-    - **None** - all improvement actions have not been tested
+    - **None** - not all improvement actions have been tested
     - **Out of scope** - all improvement actions are out of scope for this assessment
     - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected”
 - **Control ID**: the control’s identification number, assigned by its corresponding regulation, standard, or policy
@@ -179,7 +177,7 @@ Beneath the chart, a table lists detailed information about each control within 
 
 To view a control’s details, select it from its row in the table. The control details page shows a graph indicating the test status of the actions within that control. A table below the graph shows key improvement actions for that control.
 
-Select an improvement action from the list to drill into the improvement action’s details page, where you can view test status, implementation notes, and launch into the recommended solution.
+Select an improvement action from the list to drill into the improvement action’s details page. The details pages shows test status, implementation notes, and launch into the recommended solution.
 
 #### Learn more
 [Understand how controls are tracked and scored by Compliance Score.](compliance-score-methodology.md#control-types-and-points)
@@ -188,4 +186,4 @@ Select an improvement action from the list to drill into the improvement action�
 
 You can export an assessment to an Excel file for compliance stakeholders in your organization or for external auditors and regulators by [following these instructions](working-with-compliance-manager.md#reports). You’ll  need to visit Compliance Manager to export the report.
 
-The report is a snapshot of the assessment as of the date and time of the export. The report contains the details for controls managed by both you and Microsoft for the assessment, control implementation status, control test date, test results, and links to uploaded evidence documents.
+The report is a snapshot of the assessment as of the date and time of the export. It contains the details for controls managed by both you and Microsoft, including implementation status, test date, test results, and links to uploaded evidence documents.

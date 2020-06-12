@@ -63,7 +63,7 @@ Compliance Score awards you points for completing actions taken to comply with a
 
 Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline.  This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-The data protection baseline assessment is used to calculate your initial score before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable insights on your organization’s current compliance posture relative to key data protection standards and regulations.
+The data protection baseline assessment is used to calculate your initial score before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
 Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to better mitigate risks. For example, if your organization belongs to the financial services industry, you may want to add the FFIEC assessment. If your organization belongs to the healthcare industry, you can add the HIPAA/HITECH assessment.
 
@@ -84,7 +84,7 @@ A control is a requirement of a regulation, standard, or policy. It defines how 
 Compliance Score tracks two types of controls:
 
 1. **Microsoft controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
-2. **Your controls**: sometimes referred to as customer controls, these are implemented and managed by your organization
+2. **Your controls**: sometimes referred to as customer controls, these are controls implemented and managed by your organization
 
 #### Learn more
 
@@ -109,15 +109,15 @@ When creating assessments, you'll assign them to a **group**. You can configure 
 
 ### Templates
 
-Compliance Score provides templates that are ready for you to quickly create assessments. You can modify these templates to create an assessment optimized for your needs. You can also create a Custom Assessment by developing your own template with your own controls and actions. For example, you can create a template for your business process control, or a template for a regional data protection or compliance standard that isn’t covered by one of our templates. 
+Compliance Score provides templates that are ready for you to quickly create assessments. You can modify these templates to create an assessment optimized for your needs. You can also create a Custom Assessment by developing your own template with your own controls and actions. For example, you may want a template to cover an internal business process control, or a regional data protection standard that isn’t covered by one of our templates.
 
-By creating your own templates, you can track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
+Creating your own templates lets you track not only Microsoft cloud assessments, but also any other risk assessments in scope for your organization.
 
 #### Learn more
 
 [View the templates available in Compliance Score for building assessments](compliance-score-templates.md).
 
-[Get detailed instructions for creating and modifying templates, which occurs in Compliance Manager](working-with-compliance-manager.md#templates).
+[Get detailed instructions for creating and modifying templates, which occur in Compliance Manager](working-with-compliance-manager.md#templates).
 
 ### Improvement actions
 
