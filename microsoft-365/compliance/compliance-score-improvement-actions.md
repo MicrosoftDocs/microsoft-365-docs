@@ -18,7 +18,7 @@ description: "Learn how to manage your compliance activities in Microsoft Compli
 
 # Work with improvement actions in Compliance Score (preview)
 
-**In this article:** This article explains how to manage your compliance activities by working with improvement actions. This topic leads you through the workflow of assigning improvement actions for work, testing actions and setting their status, assigning actions to assessors for completion, and exporting reports of actions.
+**In this article:** This article explains how to manage your compliance activities by working with improvement actions. Explore the workflow of assigning improvement actions for work, testing actions, assigning them to assessors for completion, and exporting reports.
 
 ## Manage compliance workflows with improvement actions
 
@@ -35,7 +35,7 @@ To view an improvement action’s details page:
 1. Go to your improvement actions page.
 2. Select the row of your intended improvement action, which opens its details page.
 
-You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the improvement actions page, moving up or down will take you to the next item within that filtered list.
+You can easily view the next or previous improvement action in the list by selecting the up or down arrow in the upper-right corner of the screen. If you filtered your list on the improvement actions page, moving up or down takes you to the next item within that filtered list.
 
 ## Assign improvement actions
 
@@ -53,7 +53,7 @@ Once you identify the appropriate assignee, be sure they hold a sufficient [role
 
 3. Select **Save and close**. The assigned user will receive an email that the improvement action has been assigned to them, and they can then open the improvement action from their dashboard.
 
-The assigned user can then perform the recommended actions outlined in the implementation instructions.
+The assigned user can then perform the recommended actions.
 
 ## Perform work and store documentation
 
@@ -102,7 +102,7 @@ To edit an improvement action’s status, select **Edit status** on the upper-le
     - **Not in scope** – the action is out of scope for the assessment and doesn’t contribute to your score
 - **Test date**: toggle through the calendar pop-up to select the date
 
-Common actions synch across groups. When two different assessments in the same group share improvement actions managed by you, any updates you make to the implementation details, testing, and status for the action in one assessment will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
+Common actions synch across groups. When two different assessments in the same group share improvement actions that are managed by you, any updates you make to an action's implementation details or status will automatically synchronize to the same action in any other assessment in the group. This synchronization allows you to implement one improvement action and meet several requirements across multiple regulations.
 
 ## Assign improvement action to assessor for completion
 

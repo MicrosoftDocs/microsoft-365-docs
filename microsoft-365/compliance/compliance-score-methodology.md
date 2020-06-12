@@ -38,7 +38,7 @@ The sum of points earned by taking improvement actions is the control score. The
   
 Compliance Score gives you an initial score based on the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
-The data protection baseline assessment (provided by default to all organizations) is used to calculate your initial score the first time you come to Compliance Score. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. Even if your organization doesn’t set up additional assessments, you’ll receive valuable and actionable insights on your organization’s current compliance posture relative to key data protection standards and regulations.
+The data protection baseline assessment (provided by default to all organizations) is used to calculate your initial score before you configure any other assessments. Upon your first visit, Compliance Score is already collecting signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
 Because every organization has specific needs, Compliance Score relies on you to set up and manage your own assessments to help minimize and mitigate risk as comprehensively as possible.
 
@@ -74,7 +74,7 @@ Controls are assigned a score value based on whether they're mandatory or discre
   
  - **Preventative controls** address specific risks. For example, protecting information at rest using encryption is a preventative control against attacks and breaches. Separation of duties is a preventative control to manage conflict of interest and guard against fraud.
   
- - **Detective controls** actively monitor systems to identify irregular conditions or behaviors that represent risk or that can be used to detect intrusions or breaches. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
+ - **Detective controls** actively monitor systems to identify irregular conditions or behaviors that represent risk, or that can be used to detect intrusions or breaches. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
   
 - **Corrective controls** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach.
   
