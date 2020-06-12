@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: 
+- okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,7 +25,6 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: "Learn how to add and set up your domain in Microsoft 365 so that your services like email and Skype for Business Online use your own domain name."
-ms.custom: okr_smb
 ---
 
 # Change nameservers to set up Microsoft 365 with any domain registrar

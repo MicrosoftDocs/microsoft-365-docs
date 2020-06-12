@@ -1,5 +1,5 @@
 ---
-title: Overview of advanced hunting in Microsoft Threat Protection
+title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -17,6 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft Threat Protection
@@ -45,11 +46,13 @@ We recommend going through several steps to quickly get up and running with adva
 | **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | - [Query best practices](advanced-hunting-shared-queries.md) <br>- [Hunt across devices and emails](advanced-hunting-best-practices.md) |
 | **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | - [Custom detections overview](custom-detections-overview.md)<br>- [Custom detection rules](custom-detection-rules.md) |
 
+## Get access
+To use advanced hunting or other [Microsoft Threat Protection](microsoft-threat-protection.md) capabilities, you need to be assigned an appropriate role in Azure AD. Note that your access to endpoint data is influenced by role-based access control settings in Microsoft Defender ATP. [Read about managing access to Microsoft Threat Protection](mtp-permissions.md)
+
 ## Get help as you write queries
 Take advantage of the following functionality to write queries faster:
 - **Autosuggest** — as you write queries, advanced hunting provides suggestions from IntelliSense. 
 - **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
-
 
 ## Related topics
 - [Learn the query language](advanced-hunting-query-language.md)

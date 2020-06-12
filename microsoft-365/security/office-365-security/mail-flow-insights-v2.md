@@ -10,7 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: "Admins can learn about the mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn about the mail flow dashboard in the Security & Compliance Center, including insights, reports, and widgets.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Mail flow insights in the Security & Compliance Center
@@ -57,7 +58,7 @@ The mail flow dashboard is available to:
 
   - The user won't have access to the Microsoft 365 admin center.
 
-For more information about the global administrator role, see [About Microsoft 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+For more information about the global administrator role, see [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 For information on assigning Security & Compliance Center roles to users, see [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 

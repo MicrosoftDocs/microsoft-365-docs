@@ -129,7 +129,7 @@ Return to the **Permissions** page at any time to add more users, or remove exis
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

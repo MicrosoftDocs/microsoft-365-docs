@@ -9,11 +9,12 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-ms.custom: 
 - M365solutions
+ms.custom: 
+- seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to collaborate with guests on a document in SharePoint and OneDrive."
+description: "In this article, you'll learn how to collaborate with guests on a document in SharePoint and OneDrive."
 ---
 
 # Collaborate with guests on a document

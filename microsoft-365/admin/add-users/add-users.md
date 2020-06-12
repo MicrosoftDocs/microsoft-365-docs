@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -31,9 +32,6 @@ description: "Learn how to add users to Microsoft 365, one at a time or multiple
 The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users will have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
@@ -113,7 +111,7 @@ The people on your team each need a user account before they can sign in and acc
 After you add a user, you'll get an email notification from the Microsoft Online Services Team. The email will contain the person's user ID and password so they can sign in to Microsoft 365. You need to tell your new user about their Microsoft 365 sign in information. Use your normal process for communicating new passwords.
 
 > [!NOTE]
->If you create users by migrating mail boxes, you will need to activate user accounts by assigning licenses. If you don't assign a license to a user, their mailbox will be disabled after a grace period of 30 days. See how to [assign licenses to users](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) using the Microsoft 365 admin center.
+>If you create users by migrating mail boxes, you will need to activate user accounts by assigning licenses. If you don't assign a license to a user, their mailbox will be disabled after a grace period of 30 days. See how to [assign licenses to users](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) using the Microsoft 365 admin center.
 
 ### Video: Add and manage users in the admin center
 

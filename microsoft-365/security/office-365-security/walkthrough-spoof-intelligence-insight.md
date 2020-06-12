@@ -16,7 +16,8 @@ search.appverid:
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
-description: "See how the spoof intelligence insight works in Office 365 Advanced Threat Protection."
+description: "Admins can learn how the spoof intelligence insight works, including how to quickly determine which senders are legitimately sending you unauthenticated email."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Walkthrough - ATP Spoof intelligence insight in Microsoft 365
@@ -96,9 +97,3 @@ For example, if you add the following domain pair to the 'AllowedToSpoof' sender
 ## Related topics
 
 [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md)
-
-[Walkthrough - From a dashboard to an insight](from-a-dashboard-to-an-insight.md)
-
-[Walkthrough - From a detailed report to an insight](from-a-detailed-report-to-an-insight.md)
-
-[Walkthrough - From an insight to a detailed report](from-an-insight-to-a-detailed-report.md)

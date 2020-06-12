@@ -1,5 +1,5 @@
 ---
-title: "Configure groups and users for a political campaign dev/test environment"
+title: Configure groups & users - Political campaign dev/test environment
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Summary: Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure groups and users for a political campaign dev/test environment
@@ -29,7 +30,7 @@ Use the instructions in this article to create a dev/test environment that inclu
 
 In this phase, you obtain trial subscriptions for Office 365 E5 and Enterprise Mobility + Security (EMS) E5 for a fictional organization that represents a political campaign.
 
-First, follow the instructions in **Phase 2** of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+First, follow the instructions in **Phase 2** of [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
 Next, sign up for the EMS E5 trial subscription and add it to the same organization as your trial subscription.
 

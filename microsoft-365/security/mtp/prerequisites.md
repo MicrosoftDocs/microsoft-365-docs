@@ -31,7 +31,7 @@ Learn about the licensing, hardware and software requirements, and other configu
 ## Licensing requirements
 
 >[!IMPORTANT]
->Starting May 3, 2020, Microsoft will gradually roll out new, optimized experiences around licensing requirements and [turning on Microsoft Threat Protection](mtp-enable.md). For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
+>Starting May 12, 2020, Microsoft will gradually roll out new, optimized experiences around licensing requirements and [turning on Microsoft Threat Protection](mtp-enable.md). For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
 
 To use Microsoft Threat Protection, you need either a single license or a combination of licenses. These licenses or license combinations give you access to Microsoft Threat Protection features without additional cost.
 
@@ -53,7 +53,7 @@ For more information, [view the Microsoft 365 Enterprise service plans](https://
 > Don't have license yet? [Try or buy a Microsoft 365 subscription](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
 
 
-**New experience:** Starting May 3, 2020, customers will gradually receive changes to this experience. For those with the new experience, the option to turn on Microsoft Threat Protection will be available to *all* customers with any of the following licenses:
+**New experience:** Starting May 12, 2020, customers will gradually receive changes to this experience. For those with the new experience, the option to turn on Microsoft Threat Protection will be available to *all* customers with any of the following licenses:
 
 - Microsoft 365 E5 or A5
 - Microsoft 365 E5 Security or A5 Security
@@ -74,8 +74,12 @@ Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.
 ## Browser requirements
 Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.
 
-## Microsoft Threat Protection for US Government Community Cloud and US Government Community Cloud High (GCC High) customers
-Currently, Microsoft Threat Protection is not available to US GCC and GCC High customers. 
+## Availability to US GCC, GCC High, and other US government institutions
+Currently, Microsoft Threat Protection is *not* available to:
+- US Government Community Cloud (GCC)
+- US Government Community Cloud High (GCC High)
+- US Department of Defense
+- All US government institutions with commercial licenses
 
 ## Related topics
 - [Microsoft Threat Protection overview](microsoft-threat-protection.md)

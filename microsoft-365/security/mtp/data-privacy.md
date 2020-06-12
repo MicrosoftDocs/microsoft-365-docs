@@ -26,11 +26,10 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-By using the Microsoft Threat Protection you consent to the following terms:
+Microsoft Threat Protection operates in Microsoft Azure data centers in the European Union, The United Kingdom, and the United States. Customer data collected by the service is stored at rest in (a) the geographic location of the tenant as identified during provisioning or, (b) if Microsoft Threat Protection uses another Microsoft online service to process such data, the geolocation as defined by the data storage rules of that other online service.
 
-*The Microsoft Threat Protection (MTP) service transfers certain Customer Data from other Microsoft enterprise online
-services into MTP and from MTP back to those Microsoft enterprise online services. These data transfers are governed by the
-[Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2127420) and further described in the [Microsoft Trust Center](https://go.microsoft.com/fwlink/?linkid=2127550).*
+Customer data in pseudonymized form might also be stored in central storage and processing systems in the United States.
+
 
 For more information on the data storage and privacy information of the specific products see:
 - [Microsoft Defender ATP data storage and privacy](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)

@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,10 +25,18 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
-ms.custom: okr_SMB
+
 ---
 
 # Change your billing addresses
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Your bill or invoice contains three addresses:
   
@@ -39,13 +50,13 @@ In most cases, these addresses are the same. If you need to change one or more o
   
 ::: moniker range="o365-worldwide"
 
-To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your invoice](understand-your-invoice2.md).
+To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your invoice](understand-your-invoice2.md).
+To learn more about your bill or invoice, see [View your bill or invoice](view-your-bill-or-invoice.md) and [Understand your bill orinvoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
@@ -116,7 +127,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription you want to change. In the **Settings & Actions** section, select **Edit service usage address**.
 
@@ -165,6 +176,8 @@ By default, your organization's billing notifications are sent to the Microsoft 
 ## Change the alternate email address for another admin
 
 You can also change the alternate email address of other global and billing admins in your organization.
+
+::: moniker range="o365-worldwide"
   
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
 
@@ -190,7 +203,7 @@ You can also change the alternate email address of other global and billing admi
 
 [View your bill or invoice](view-your-bill-or-invoice.md)
 
-[Understand your invoice](understand-your-invoice2.md)
+[Understand your bill or invoice](understand-your-invoice2.md)
 
 [Pay for your subscription](pay-for-your-subscription.md)
 

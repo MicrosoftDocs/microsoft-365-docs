@@ -9,8 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-ms.custom: 
 - M365solutions
+ms.custom: 
 localization_priority: Priority
 f1.keywords: NOCSH
 description: "Learn how to limit accidental exposure of information when sharing files with people outside your organization."

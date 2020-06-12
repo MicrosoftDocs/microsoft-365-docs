@@ -70,7 +70,7 @@ Until you publish your labels, they won't be available to select in apps or for 
 
 ### Additional label settings with Security & Compliance Center PowerShell
 
-Additional label settings are available with the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) cmdlet from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Additional label settings are available with the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) cmdlet from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
 Use the *LocaleSettings* parameter for multinational deployments so that users see the label name and tooltip in their local language. See the following section for an example configuration. 
 
@@ -97,13 +97,12 @@ Settings=@(
 @{key=$Languages[0];Value=$DisplayNames[0];}
 @{key=$Languages[1];Value=$DisplayNames[1];}
 @{key=$Languages[2];Value=$DisplayNames[2];})}
-Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress)
 $TooltipLocaleSettings = [PSCustomObject]@{LocaleKey='Tooltip';
 Settings=@(
 @{key=$Languages[0];Value=$Tooltips[0];}
 @{key=$Languages[1];Value=$Tooltips[1];}
 @{key=$Languages[2];Value=$Tooltips[2];})}
-Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress),(ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
 ```
 
 ## Publish sensitivity labels by creating a label policy
@@ -127,7 +126,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $TooltipLocaleSetting
 
 4. Select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
     
-    If you select a sublabel, make sure you also select its parent label.
+    > [!NOTE]
+    > If you select a sublabel, make sure you also select its parent label.
     
 5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
 
@@ -147,7 +147,7 @@ Typically, users see the labels in their Office apps within a couple of hours. H
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 
-Additional label policy settings are available with the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-label?view=exchange-ps) cmdlet from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
+Additional label policy settings are available with the [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps) cmdlet from [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps).
 
 Using this cmdlet, you can specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. These advanced settings include setting a different default label for Outlook, and implement pop-up messages in Outlook that warn, justify, or block emails being sent. For the full list, see [Available advanced settings for labels](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
 

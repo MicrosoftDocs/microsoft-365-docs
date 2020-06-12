@@ -1,5 +1,5 @@
 ---
-title: "Restrict access to content by using sensitivity labels to apply encryption"
+title: Restrict access to content using sensitivity labels to apply encryption
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,7 +14,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "When you create a sensitivity label, you can restrict access to content that the label will be applied to. Sensitivity labels can use encryption to protect content."
+description: Configure sensitivity labels for encryption that protects your data by restricting access and usage.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Restrict access to content by using sensitivity labels to apply encryption 
@@ -32,7 +33,7 @@ When a document or email is encrypted, access to the content is restricted, so t
 
 - Can be decrypted only by users authorized by the label's encryption settings.
 - Remains encrypted no matter where it resides, inside or outside your organization, even if the file's renamed.
-- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, a sent email).
+- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, email as it traverses the internet).
 
 Finally, as an admin, when you configure a sensitivity label to apply encryption, you can choose either to:
 
@@ -343,7 +344,7 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 5. Select **Choose permissions from present or custom**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**permissions you want, and then select **Save**.
+6. On the **Choose permissions from present or custom** pane, select the dropdown box, select the permissions you want, and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -353,7 +354,7 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 Encrypting your most sensitive documents and emails helps to ensure that only authorized people can access this data. However, there are some considerations to take into account:
 
-- If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md):
+- If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     
     - Search, eDiscovery, and Delve will not work for encrypted files. 
     - DLP policies work for the metadata of these encrypted files (including retention label information) but not the content of these files (such as credit card numbers within files).
@@ -371,7 +372,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 - The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
     
     - View, restore, and save copies of previous versions. As an alternative, users can do these actions using Office on the web when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
-    - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.office.com/article/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
+    - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.microsoft.com/en-us/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
 
 For the best collaboration experience for files that are encrypted by a sensitivity label, we recommend you use [sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) and Office for the web. 
 
