@@ -37,16 +37,8 @@ There are three ways to export data from a review set:
 
 Advanced eDiscovery provides the following functionality to help you show the chain of custody of documents and file from collecting them from their original content locations, adding them to review sets, and then exporting them during the production process.
 
-- **Reporting.** Advanced eDiscovery allows transparent (and chronological) tracking of documents and files as they progress through the eDiscovery workflow. You can track the progression of documents with collection statistics, load set reports, and exports reports (include the export load file).
+- **Reporting.** Advanced eDiscovery allows the transparent and chronological tracking of documents and files as they progress through the eDiscovery workflow. You can track the progression of documents with [collection statistics](search-statistics.md), load set reports, and [export reports](export-documents-from-review-set.md#export-structure) (including the export load file).
+ 
+- **Hashing.** When you export documents from a review set, both MD5 (128-bit) and SHA-256 (256-bit) hashes are applied to documents. These hash values are listed in the load file that contains the metadata associated with exported documents. These hash values can be used to verify a document's integrity after it's exported from Microsoft 365.
 
-- **Hashing.** When you export documents from a review set, both MD5 (128-bit) and SHA-256 (256-bit) hashes are applied to all documents. These hash values are listed in the load file that contains the metadata associated with exported documents. These hash values can be used as a checksum to verify the document after it's exported from Microsoft 365.
-
-- **Auditing.** Most actions and tasks related to documents and files that are performed in Advanced eDiscovery (such as running collection searches, adding data to a review set, and are logged in the Microsoft 365 audit log. This allows you to search the audit log and collect (and export) audit records that can track the chronological progression
-
-chronological history of the handling of electronic evidence. 
-
-In Microsoft 365, the data is hashed and those hashes are provided in the output file for verification purposes. This is supplemented by audit logs. The Advanced eDiscovery activities we capture in audit logs are located here.” 
-
-we also are transparent as files move from collection to export so customers can track data progressing through the flow (e.g. collection reports, load set reports, export reports, etc.).
-
-A chain of custody ensures that the data presented is “as originally acquired” and has not been altered prior to admission into evidence. Some providers maintain an electronic chain-of-custody link between all electronic data and its original physical media 
+- **Auditing.** Most tasks performed in Advanced eDiscovery (such as running collection searches, adding data to a review set, and exporting data are logged in the Microsoft 365 audit log. This allows you to search for and export audit records that track the chronological history of events in the eDiscovery workflow. For more information, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md).
