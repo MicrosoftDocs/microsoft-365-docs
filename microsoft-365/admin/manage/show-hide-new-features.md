@@ -55,7 +55,8 @@ New features appear in Office What's New Management based on this schedule:
 |:-----|:-----|:-----|
 |**Channel** <br/> |**In management preview** <br/> |**Take action** <br/> |
 |**Current** <br/> |15th of the month  <br/> |1 - 3 weeks before the monthly release <br/> |
-|**Semi-Annual Enterprise (Preview)** <br/> |Sept 1 and March 1 <br/> | 2 weeks before the major release that brings new features
+|**Monthly Enterprise** <br/> |1st of the month  <br/> |2 weeks before the major release that brings new features |
+|**Semi-Annual Enterprise (Preview)** <br/> |Sept 1 and March 1 <br/> | 2 weeks before the major release that brings new features|
 |**Semi-Annual Enterprise** <br/> |Jan 1 and July 1 <br/> | 2 weeks before the major release that brings new features<br/> |
 
 For more information about channel update schedules, see [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
