@@ -18,7 +18,7 @@ description: "Release notes and known issues for Microsoft Compliance Score (pre
 
 # Microsoft Compliance Score (preview) release notes
 
-The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates. Check this page frequently to learn what's new.
+The public preview of [Microsoft Compliance Score](compliance-score.md) provides you with early access to upcoming functionality and updates. Check this page frequently to learn what's new.
 
 Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score, measuring your progress towards completing recommended actions that help reduce compliance risks.
 
@@ -28,7 +28,7 @@ With the June 2020 release, users can now create, modify, delete, and manage the
 
 ## New templates for assessments
 
-New ready to use templates for assessments are released in Compliance Score as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently added templates include:
+New ready to use templates for assessments are released in Compliance Score as they become available. Check the [full list of templates here](compliance-score-templates.md). Recently added:
 
 - Dubai Information Security Resolution (DGISR)
 
@@ -48,7 +48,7 @@ Many of the functions handled in Compliance Manager can now be done in Complianc
 The following sections cover known issues to be resolved in upcoming releases of Compliance Score.
 
 ### Long load times for non-admin users
-Compliance Score users who hold roles other than an admin role may experience long load times when trying to a sign in. Refreshing your browser will resolve this issue. (Learn more about [Compliance Score roles](compliance-score-setup.md#set-user-permissions-and-assign-roles).)
+Compliance Score users who hold roles other than an admin role may experience long load times when trying to a sign in. Refreshing your browser will resolve this issue. Learn more about [Compliance Score roles](compliance-score-setup.md#set-user-permissions-and-assign-roles).
 
 ### Supported browsers
 
