@@ -161,7 +161,7 @@ When you assign permissions, you can choose:
     > [!NOTE]
     > If you specify a domain from an organization that uses Azure AD, you can't restrict access to that specific domain. Instead, all verified domains in Azure AD are automatically included for the tenant that owns the domain name you specify.
 
-When you choose all tenant members or browse the directory, the users or groups must have an email address.
+When you choose all users and groups in your organization or browse the directory, the users or groups must have an email address.
 
 As a best practice, use groups rather than users. This strategy keeps your configuration simpler.
 
