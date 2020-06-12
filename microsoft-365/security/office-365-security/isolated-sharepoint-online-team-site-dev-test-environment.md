@@ -15,14 +15,14 @@ ms.custom:
 - TLG
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
-description: "Summary: Configure a SharePoint Online team site that is isolated from the rest of the organization in your Office 365 dev/test environment."
+description: "Summary: Configure a SharePoint Online team site that is isolated from the rest of the organization in your Microsoft 365 dev/test environment."
 ---
 
 # Isolated SharePoint Online team site dev/test environment
 
- **Summary:** Configure a SharePoint Online team site that is isolated from the rest of the organization in your Office 365 dev/test environment.
+ **Summary:** Configure a SharePoint Online team site that is isolated from the rest of the organization in your Microsoft 365 dev/test environment.
 
-SharePoint Online team sites in Office 365 are locations for collaboration using a common document library, a OneNote notebook, and other services. In many cases, you want wide access and collaboration across departments or organizations. However, in some cases, you want to tightly control the access and permissions for collaboration among a small group of people.
+SharePoint Online team sites in Microsoft 365 are locations for collaboration using a common document library, a OneNote notebook, and other services. In many cases, you want wide access and collaboration across departments or organizations. However, in some cases, you want to tightly control the access and permissions for collaboration among a small group of people.
 
 Access to SharePoint Online team sites and what users can do is controlled by SharePoint groups and permission levels. By default, SharePoint Online sites have three levels of access:
 
@@ -38,9 +38,9 @@ This article steps you through the configuration of an isolated SharePoint Onlin
 
 - Only the site creator and members of an Admins group for the site can perform site administration, which includes modifying site-level permissions.
 
-There are three phases to setting up an isolated SharePoint Online team site in your Office 365 dev/test environment:
+There are three phases to setting up an isolated SharePoint Online team site in your Microsoft 365 dev/test environment:
 
-1. Create the Office 365 dev/test environment.
+1. Create the Microsoft 365 dev/test environment.
 
 2. Create the users and groups for ProjectX.
 
@@ -49,22 +49,22 @@ There are three phases to setting up an isolated SharePoint Online team site in 
 > [!TIP]
 > Click [here](https://aka.ms/catlgstack) for a visual map to all the articles in the One Microsoft Cloud Test Lab Guide stack.
 
-## Phase 1: Build out your lightweight or simulated enterprise Office 365 dev/test environment
+## Phase 1: Build out your lightweight or simulated enterprise Microsoft 365 dev/test environment
 
-If you just want to create an isolated SharePoint Online team site in a lightweight way with the minimum requirements, follow the instructions in phases 2 and 3 of [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+If you just want to create an isolated SharePoint Online team site in a lightweight way with the minimum requirements, follow the instructions in phases 2 and 3 of [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
-If you want to create an isolated SharePoint Online team site in a simulated enterprise configuration, follow the instructions in [DirSync for your Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
+If you want to create an isolated SharePoint Online team site in a simulated enterprise configuration, follow the instructions in [Password hash synchronization for your Microsoft 365 test environment](https://docs.microsoft.com/microsoft-365/enterprise/password-hash-sync-m365-ent-test-environment).
 
 > [!NOTE]
 > Creating an isolated SharePoint Online site does not require the simulated enterprise dev/test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test an isolated SharePoint Online site and experiment with it in an environment that represents a typical organization.
 
 ## Phase 2: Create user accounts and access groups
 
-Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) to connect to your Office 365 trail subscription with your global administrator account from:
+Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) to connect to your trial subscription with your global administrator account from:
 
-- Your computer (for the lightweight Office 365 dev/test environment).
+- Your computer (for the lightweight Microsoft 365 dev/test environment).
 
-- The CLIENT1 virtual machine (for the simulated enterprise Office 365 dev/test environment).
+- The CLIENT1 virtual machine (for the simulated enterprise Microsoft 365 dev/test environment).
 
 To create the new access groups for the ProjectX SharePoint Online team site, run these commands from the Windows Azure Active Directory Module for Windows PowerShell prompt:
 
@@ -137,13 +137,13 @@ Figure 1 shows the access groups and their membership.
 
 **Figure 1**
 
-![The Office 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
+![The Microsoft 365 groups and their membership for an isolated SharePoint Online Group site](../../media/5b7373b9-2a80-4880-afe5-63ffb17237e6.png)
 
 ## Phase 3: Create a new ProjectX SharePoint Online team site and isolate it
 
 To create a SharePoint Online team site for ProjectX, do the following:
 
-1. Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Office 365 portal ([https://admin.microsoft.com](https://admin.microsoft.com)) using your global administrator account.
+1. Using a browser on either your local computer (lightweight configuration) or on CLIENT1 (simulated enterprise configuration), sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using your global administrator account.
 
 2. In the list of tiles, click **SharePoint**.
 
@@ -211,7 +211,7 @@ Now let's demonstrate access using the Lead Designer user account:
 
 2. Click the name of your global administrator, and then click **Sign out**.
 
-3. Sign in to the Office 365 portal ([https://admin.microsoft.com](https://admin.microsoft.com)) using the Lead Designer account name and its password.
+3. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using the Lead Designer account name and its password.
 
 4. In the list of tiles, click **SharePoint**.
 
@@ -241,7 +241,7 @@ Now let's demonstrate access using the Lead Designer user account:
 
 Now let's demonstrate access using the Development VP user account:
 
-1. Sign in to the Office 365 portal ([https://admin.microsoft.com](https://admin.microsoft.com)) using the Development VP account name and its password.
+1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using the Development VP account name and its password.
 
 2. In the list of tiles, click **SharePoint**.
 
@@ -257,7 +257,7 @@ Now let's demonstrate access using the Development VP user account:
 
 Now let's demonstrate access with a user account that has no permissions:
 
-1. Sign in to the Office 365 portal ([https://admin.microsoft.com](https://admin.microsoft.com)) using the User 3 account name and its password.
+1. Sign in to the Microsoft 365 admin center ([https://admin.microsoft.com](https://admin.microsoft.com)) using the User 3 account name and its password.
 
 2. In the list of tiles, click **SharePoint**.
 
@@ -283,12 +283,8 @@ When you are ready to deploy an isolated SharePoint Online team site in producti
 
 [Cloud adoption Test Lab Guides (TLGs)](https://docs.microsoft.com/office365/enterprise/cloud-adoption-test-lab-guides-tlgs)
 
-[Base Configuration dev/test environment](https://docs.microsoft.com/office365/enterprise/base-configuration-dev-test-environment)
+[The simulated enterprise base configuration](https://docs.microsoft.com/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise)
 
-[Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment)
+[The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise)
 
 [Cloud adoption and hybrid solutions](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

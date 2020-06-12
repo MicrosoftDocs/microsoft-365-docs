@@ -13,6 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: "Download third-party audits, find out how Microsoft keeps customer data safe, and know how you can comply with ISO, HIPAA, FINRA, and FedRAMP when you use Office 365."
 ---
@@ -39,12 +40,12 @@ You can also find out how Office 365 can help customers comply with standards, l
 
  **New customers, and customers evaluating Microsoft online services** can access Service assurance which is included with Office 365 Enterprise E3 and E5 plans (both trial and paid subscriptions). If you don't have one of these plans and want to try Service assurance, you can [sign-up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- **Existing customers of Office 365 for business** can access Service assurance. If you're the Office 365 global admin (sometimes called company administrator) for your organization, you'll already have access to Service assurance, and you can onboard others. If you're not the Office 365 global admin for your organization, and you need access to Service assurance, ask your admin to add you to the Service Assurance User role group. 
+ **Existing customers of Microsoft 365 for business** can access Service assurance. If you're the global admin (sometimes called company administrator) for your organization, you'll already have access to Service assurance, and you can onboard others. If you're not the global admin for your organization, and you need access to Service assurance, ask your admin to add you to the Service Assurance User role group. 
   
  **O365 Subscription Members** can access the Service assurance section in the Office365 Protection Center by default if Service assurance roles-based access has not been implemented in your subscription. Service assurance provides reports and documents that describe Microsoft's security practices for customer data that's stored in Office 365. It also provides independent third-party audit reports on Office 365. 
   
 > [!NOTE]
-> Note: If your company has implemented Service Assurance Roles-Based Access in your Office 365 Subscription (which could be if your organization has been provided access to custom reports), and you need access to Service assurance but it is not included in the left pane of the Security & Compliance Center, ask your Office 365 administrator to add you to the Service Assurance User role group on the **Permissions** page. For more information, see Onboard other Service assurance users or groups. 
+> If your company has implemented Service Assurance Roles-Based Access in your Microsoft 365 Subscription (which could be if your organization has been provided access to custom reports), and you need access to Service assurance but it is not included in the left pane of the Security & Compliance Center, ask your Office 365 administrator to add you to the Service Assurance User role group on the **Permissions** page. For more information, see Onboard other Service assurance users or groups. 
   
  **Service assurance roles-based access-provisioned users** If your company has implemented Service assurance roles-based access, you can provide Service assurance access to all security and compliance personnel including information security, risk management, compliance, and audit teams and personnel within your organization. For details, see [Onboard other Service assurance users or groups](service-assurance.md#addother).
   
@@ -52,7 +53,7 @@ Service assurance is accessible by using the Security & Compliance Center. Here'
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account. 
+2. Sign in using your work or school account. 
     
 3. In the left pane, select **Service assurance**. Next, [Choose your industry and regional settings](service-assurance.md#Chooseyourindustryregional) and [Onboard other Service assurance users or groups](service-assurance.md#addother).
     
@@ -128,7 +129,7 @@ Return to the **Permissions** page at any time to add more users, or remove exis
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

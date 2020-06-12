@@ -19,6 +19,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +29,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 # Set app protection settings for Android or iOS devices
 
-![Banner that point to https://aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)
+This article applies to Microsoft 365 Business Premium.
 
 ## Create an app management policy
 
@@ -70,7 +71,7 @@ description: "Learn how to create, edit, or delete an app management policy, and
 
 The following tables give detailed information about settings available to protect work files on devices and the settings that control how users access Office files from their mobile devices.
   
- For more information, see [How do protection features in Microsoft 365 Business map to Intune settings](map-protection-features-to-intune-settings.md). 
+ For more information, see [How do protection features in Microsoft 365 Business Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
 ### Settings that protect work files
 

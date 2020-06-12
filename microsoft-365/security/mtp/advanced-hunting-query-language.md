@@ -143,6 +143,11 @@ Data in advanced hunting tables are generally classified into the following data
 | `int` | 32-bit numeric value  |
 | `long` | 64-bit numeric value |
 
+## Get help as you write queries
+Take advantage of the following functionality to write queries faster:
+- **Autosuggest** — as you write queries, advanced hunting provides suggestions from IntelliSense. 
+- **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
+
 ## Use sample queries
 
 The **Get started** section provides a few simple queries using commonly used operators. Try running these queries and making small modifications to them.

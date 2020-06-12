@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -30,13 +31,6 @@ Message center posts are important announcements about new and changed features.
 To go to the Message center, go to the [admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339), and select **Health** > **Message center**. 
 
 Select a message title to open it in the reading pane. Every message contains a summary of the change, a statement of how the change may affect you, information about how you can prepare your organization for the change, and (in most cases) an additional information link where you can learn more. The additional information continues to be available, even after a message expires.
-
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
 
 ## Filter and sort
 
@@ -82,13 +76,13 @@ See a message that someone else needs to act on? You can share the contents of t
   
 1. Select the message to open it, and then select **Share**.
   
-2. To share the message, enter up to two email addresses separated by a colon. You can send to individual and to group email addresses. Optionally, you can choose to receive a copy of the message in email (the message will go to your primary email address in Office 365) or add a personal message to provide recipients with more context.
+2. To share the message, enter up to two email addresses separated by a colon. You can send to individual and to group email addresses. Optionally, you can choose to receive a copy of the message in email (the message will go to your primary email address) or add a personal message to provide recipients with more context.
   
 3. Select **Share** to send the email.
     
 ## Get a link
 
-Need to follow up with another admin to make sure they're aware of a change and taking action? You can generate a link to share in email or instant messaging, for example, that will connect the user directly to that message. The person you share the link with has to be an admin in Office 365 for your organization or they won't have access to the linked message.
+Need to follow up with another admin to make sure they're aware of a change and taking action? You can generate a link to share in email or instant messaging, for example, that will connect the user directly to that message. The person you share the link with has to be an admin in Microsoft 365 for your organization or they won't have access to the linked message.
 
 ::: moniker range="o365-worldwide"
 
@@ -208,5 +202,5 @@ Need to get a dismissed message back? No problem.
 
 ::: moniker-end
 
-For an overview of Message center, see [Message center in Office 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message Center communications, please reference [Office 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
+For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message Center communications, please reference [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

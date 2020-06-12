@@ -111,16 +111,16 @@ To demonstrate mobile device management-related features and capabilities, see:
 
 To demonstrate information protection-related features and capabilities, see:
 
-- [Increased Office 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [Increased Microsoft 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure settings for increased Office 365 security and investigate built-in security tools.
+   Configure settings for increased Microsoft 365 security and investigate built-in security tools.
   
 - [Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure and apply Office 365 labels to a document in a SharePoint Online team site.
+   Configure and apply labels to a document in a SharePoint Online team site.
     
 - [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure privileged access management for just-in-time access to elevated and privileged tasks in your Office 365 organization.
+   Configure privileged access management for just-in-time access to elevated and privileged tasks in your organization.
 
 

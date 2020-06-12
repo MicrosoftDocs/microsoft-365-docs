@@ -36,7 +36,7 @@ Managing and minimizing risk in your organization starts with understanding the 
 
 Employees in the modern workplace have access to create, manage, and share data across a broad spectrum of platforms and services. In most cases, organizations have limited resources and tools to identify and mitigate organization-wide risks while also meeting employee privacy standards.
 
-Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and take action on risk activity. By using logs from Office 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators. These policies allow you to identify risky activities and to take action to mitigate these risks.
+Insider risk management in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and take action on risk activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators. These policies allow you to identify risky activities and to take action to mitigate these risks.
 
 Insider risk management is centered around the following principles:
 
@@ -96,7 +96,7 @@ Cases are created for alerts that require deeper review and investigation of the
 Selecting a case on the case dashboard opens the case for investigation and review. This step is the heart of the insider risk management workflow. This area is where risk activity indicators, policy conditions, alerts details, and employee details are synthesized into an integrated view for reviewers. The primary investigation tools in this area are:
 
 - **User activity**: User activity is automatically displayed in an interactive chart that plots risk activities over time and by risk level for current or past risk activities. Reviewers can quickly filter and view the entire risk history for the employee and drill into specific activities for more details.
-- **Content explorer**: All data files and email messages associated with alert risk activities are automatically captured and displayed in the content explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
+- **Content Explorer**: All data files and email messages associated with alert risk activities are automatically captured and displayed in the Content Explorer. Reviewers can filter and view files and messages by data source, file type, tags, conversation, and many more attributes.
 - **Case notes**: Reviewers provide notes for a case in the Case Notes section. This list consolidates all notes in a central view and include reviewer and date submitted information.
 
 For more information, see [Insider risk management cases](insider-risk-management-cases.md).
@@ -127,4 +127,5 @@ Employee-to-employee communications are often a source of inadvertent or malicio
 
 ## Ready to get started?
 
-Ready to configure insider risk management for your organization? See [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.
+- See [Plan for insider risk management](insider-risk-management-plan.md) for how to prepare to enable insider risk management policies in your organization.
+- See [Get started with insider risk management](insider-risk-management-configure.md) to configure prerequisites, create policies, and start receiving alerts.

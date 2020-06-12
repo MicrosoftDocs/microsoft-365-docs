@@ -17,13 +17,13 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: 
+ms.custom: seo-marvel-apr2020
 ms.assetid:
-description: "Learn how to modify or create new Office 365 sensitive information types for GDPR."
+description: Learn how to modify or create new Office 365 sensitive information types for General Data Protection Regulations (GDPR).
 ---
 # Customize or create a new sensitive information type
 
-This article provides three examples to demonstrate how to modify or create new Office 365 sensitive information types for GDPR.
+This article provides three examples to demonstrate how to modify or create new sensitive information types for GDPR.
 
 - Modify an existing sensitive information type — EU Debit Card Number
 
@@ -39,9 +39,9 @@ Also see:
 
 ## Modify a sensitive information type to improve accuracy
 
-If you’re using Content Search to search for personal data using sensitive information types and you’re not returning the expected results, or the query returns too many false positives, consider modifying the sensitive information type to work better with your environment.
+If you're using Content Search to search for personal data using sensitive information types and you're not returning the expected results, or the query returns too many false positives, consider modifying the sensitive information type to work better with your environment.
 
-The best practice when creating or customizing a sensitive information type is to create a new sensitive information type based on an existing one, giving it a unique name and identifiers. For example, if you wish to adjust the parameters of the “EU Debit Card Number” sensitive information type, you could name your copy of that rule “EU Debit Card Enhanced” to distinguish it from the original.
+The best practice when creating or customizing a sensitive information type is to create a new sensitive information type based on an existing one, giving it a unique name and identifiers. For example, if you wish to adjust the parameters of the "EU Debit Card Number" sensitive information type, you could name your copy of that rule "EU Debit Card Enhanced" to distinguish it from the original.
 
 In your new sensitive information type, simply modify the values you wish to change to improve its accuracy. Once complete, upload your new sensitive information type and create a new DLP rule (or modify an existing one) to use the new sensitive information type you just added. Modifying the accuracy of sensitive information types might require some trial and error, so maintaining a copy of the original type allows you to fall back to it if required in the future.
 
@@ -67,13 +67,13 @@ To customize a sensitive information type:
 
 7.  Upload the new sensitive information type.
 
-8.  Recrawl your content to identify the sensitive information. See [Manually request crawling and re-indexing of a site](https://support.office.com/article/Manually-request-crawling-and-re-indexing-of-a-site-a-library-or-a-list-9AFA977D-39DE-4321-B4CA-8C7C7E6D264E).
+8.  Recrawl your content to identify the sensitive information. See [Manually request crawling and re-indexing of a site](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-## Example: modify the ‘EU Debit Card Number’ sensitive information type
+## Example: modify the 'EU Debit Card Number' sensitive information type
 
-Improving the accuracy of DLP rules in any system requires testing against a sample data set, and may require fine tuning through repetitive modifications and tests. This example demonstrates modifications to the ‘EU Debit Card Number’ sensitive information type to improve its accuracy.
+Improving the accuracy of DLP rules in any system requires testing against a sample data set, and may require fine tuning through repetitive modifications and tests. This example demonstrates modifications to the 'EU Debit Card Number' sensitive information type to improve its accuracy.
 
-When searching for an EU Debit Card Number in our example, the definition of that number is strictly defined as 16 digits using a complex pattern, and being subject to the validation of a checksum. We cannot alter this pattern due to the string definition of this sensitive information type. However, we can make the following adjustments to improve the accuracy of how Office 365 DLP finds this sensitive information type within Office 365.
+When searching for an EU Debit Card Number in our example, the definition of that number is strictly defined as 16 digits using a complex pattern, and being subject to the validation of a checksum. We cannot alter this pattern due to the string definition of this sensitive information type. However, we can make the following adjustments to improve the accuracy of how DLP finds this sensitive information type within Office 365.
 
 ### Proximity modification
 
@@ -133,7 +133,7 @@ Note: Many new sensitive information types are coming soon for personal data in 
 
 ### Step 1 — Use KQL queries and key words to find additional data in your environment
 
-You might need to create additional queries to find personal data that is subject to GDPR. Content Search uses Keyword Query Language (KQL) to find data. Most sensitive data can’t be accurately detected using just KQL without sensitive information types. So the goal is to test and optimize KQL strings using Content Search and then use these to create and tune new sensitive information types where you can achieve even greater accuracy.
+You might need to create additional queries to find personal data that is subject to GDPR. Content Search uses Keyword Query Language (KQL) to find data. Most sensitive data can't be accurately detected using just KQL without sensitive information types. So the goal is to test and optimize KQL strings using Content Search and then use these to create and tune new sensitive information types where you can achieve even greater accuracy.
 
 Use these resources to formulate and optimize queries using KQL:
 
@@ -141,17 +141,17 @@ Use these resources to formulate and optimize queries using KQL:
 
 - [Run a Content Search](content-search.md)
 
-Content Search provides another resource to help you develop KQL queries and sensitive information types — keywords. Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. For more information about search statistics, see [View keyword statistics for Content Search results](https://support.office.com/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
+Content Search provides another resource to help you develop KQL queries and sensitive information types — keywords. Why use the keyword list? You can get statistics that show how many items match each keyword. This can help you quickly identify which keywords are the most (and least) effective. For more information about search statistics, see [View keyword statistics for Content Search results](https://docs.microsoft.com/microsoft-365/compliance/view-keyword-statistics-for-content-search).
 
 Keywords on each row are connected by the OR operator in the search query that's created. You can also use a keyword phrase (surrounded by parentheses) in a row.
 
-For more information, see [Keyword queries and search conditions for Content Search](https://support.office.com/article/Keyword-queries-and-search-conditions-for-Content-Search-c4639c2e-7223-4302-8e0d-b6e10f1c3be3).
+For more information, see [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions).
 
 ### Example—Using Content Search to identify email addresses
 
 Email addresses are considered sensitive information related to data subjects. This is a simple example to demonstrate how Content Search can help.
 
-KQL and keywords can’t be used together. Use these tools separately to hone your query and determine keywords that might be useful in sensitive information types.
+KQL and keywords can't be used together. Use these tools separately to hone your query and determine keywords that might be useful in sensitive information types.
 
 ### KQL query
 
@@ -159,9 +159,9 @@ KQL and keywords can’t be used together. Use these tools separately to hone yo
 
 Notes:
 
--   You can use NEAR and ONEAR for proximity searches.
+-   You can use NEAR for proximity searches.
 
--   Unfortunately, KQL doesn’t support queries with the Regex Class (ex: IdRef="Regex\_email\_address")
+-   Unfortunately, KQL doesn't support queries with the Regex Class (ex: IdRef="Regex\_email\_address")
 
 ### Keywords
 
@@ -185,13 +185,13 @@ In this example, you might learn the keywords are not necessary and produce a lo
 
 ### Step 2 — Create a new custom sensitive information type
 
-After using KQL queries and keywords to identify sensitive information, use these to create new custom sensitive information types. In many cases, you’ll require the sophistication of sensitive information types to achieve the right level of accuracy. You can then use these custom sensitive information types with Content Search, in DLP policies and other tools, and within other KQL queries.
+After using KQL queries and keywords to identify sensitive information, use these to create new custom sensitive information types. In many cases, you'll require the sophistication of sensitive information types to achieve the right level of accuracy. You can then use these custom sensitive information types with Content Search, in DLP policies and other tools, and within other KQL queries.
 
 The best practice is to create a new sensitive information type based on an existing one. Use the same process described earlier in this article.
 
 ### Example — Create a new sensitive information for email addresses 
 
-We’ll continue with the email address as an example because it’s simple. The following table details the modifications recommended for a new email sensitive information type.
+We'll continue with the email address as an example because it's simple. The following table details the modifications recommended for a new email sensitive information type.
 
 <table>
 <thead>
@@ -288,7 +288,7 @@ Example CCNs:
 >
 > 17040O1118
 
-Contoso always refers to customers by using a CCN in internal correspondence, external correspondence, documents, etc. They would like to create a custom sensitive information type to detect the use of CCN in Office 365 so that they may apply protection to the use of this form of personal data.
+Contoso always refers to customers by using a CCN in internal correspondence, external correspondence, documents, etc. They would like to create a custom sensitive information type to detect the use of CCN so that they may apply protection to the use of this form of personal data.
 
 ### Create a new sensitive information type for Contoso customer number
 
@@ -306,7 +306,7 @@ Contoso always refers to customers by using a CCN in internal correspondence, ex
 <td align="left">Contoso uses PowerShell and Content Search to find documents that match an example set of CCNs.</td>
 <td align="left">
 
-<p>#Connect to Office 365 Security &amp; Compliance Center</p>
+<p>#Connect to Security &amp; Compliance Center</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Create &amp; start search for sample data</p>
@@ -357,7 +357,7 @@ Contoso always refers to customers by using a CCN in internal correspondence, ex
 <tr class="even">
 <td align="left">8</td>
 <td align="left">Contoso creates the custom sensitive information type with the following PowerShell.</td>
-<td align="left"><p>#Connect to Office 365 Security &amp; Compliance Center</p>
+<td align="left"><p>#Connect to Security &amp; Compliance Center</p>
 <p>$adminUser = &quot;alland@contoso.com&quot;</p>
 <p>Connect-IPPSSession -UserPrincipalName $adminUser</p>
 <p>#Create new Sensitive Information Type</p>

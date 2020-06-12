@@ -6,11 +6,12 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
-search.appverid:
+ms.custom: AdminSurgePortfolio
+search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Find, test, and deploy Microsoft and Microsoft partner apps for users and groups in your organization from the Integrated apps portal in the Microsoft 365 admin center."
 ---

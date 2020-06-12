@@ -1,6 +1,6 @@
 ---
-title: Insider risk management content explorer
-description: Learn about insider risk management content explorer in Microsoft 365
+title: Insider risk management Content Explorer
+description: Learn about insider risk management Content Explorer in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
@@ -14,15 +14,15 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk management content explorer
+# Insider risk management Content Explorer
 
-The insider risk management content explorer allows risk analysts and investigators to examine the context and details of communications captured in alerts. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the employee associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned a unique file ID in the insider risk management case for management purposes.
+The insider risk management Content Explorer allows users assigned the **Insider Risk Management Investigators** role to examine the context and details of communications captured in alerts. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the employee associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned a unique file ID in the insider risk management case for management purposes.
 
 ## Column options
 
 To make it easier for risk analysts and investigators to review captured data and messages and review the context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane. Other queue columns are available to add to the view to provide different pivots on the files and messages.
 
-To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options. These columns map to the common, email, and document property conditions supported in the content explorer and listed later in this topic.
+To add or remove column headings for the content queue, use the **Edit columns** control and select from the following column options. These columns map to the common, email, and document property conditions supported in the Content Explorer and listed later in this topic.
 
 | **Column option** | **Description** |
 |:------------------|:----------------|
@@ -101,7 +101,7 @@ For advanced filter and search tools, expand the **Filter** pane on the left sid
 
 ### Email property conditions
 
-The following table lists email message property conditions available the content explorer.
+The following table lists email message property conditions available the Content Explorer.
 
 | **Condition option** | **Description** |
 |:---------------------|:----------------|
@@ -128,7 +128,7 @@ The following table lists email message property conditions available the conten
 
 ## Document property conditions
 
-The following table lists documents property conditions available the content explorer. Many of these property conditions are shared with review sets included in [Advanced eDiscovery cases](document-metadata-fields-in-Advanced-eDiscovery.md).
+The following table lists documents property conditions available the Content Explorer. Many of these property conditions are shared with review sets included in [Advanced eDiscovery cases](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 | **Condition option** | **Description** |
 |:---------------------|:----------------|
