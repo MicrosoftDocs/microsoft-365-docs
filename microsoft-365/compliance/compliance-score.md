@@ -18,7 +18,7 @@ description: "Microsoft Compliance Score (preview) helps organizations simplify 
 
 # Microsoft Compliance Score (preview)
 
-**In this article:** Learn what Compliance Score is, how it helps to simplify the way you manage compliance, and how to set it up for your organization.
+**In this article:** Learn what Compliance Score is, how it helps simplify the way you manage compliance, and how to set it up for your organization.
 
 **What's new:** The June 2020 release includes new functionality to create and manage assessments, and to view controls within Compliance Score. Visit the [Compliance Score release notes](compliance-score-release-notes.md) to see what's new in the public preview of Compliance Score.
 
@@ -117,7 +117,7 @@ Creating your own templates lets you track not only Microsoft cloud assessments,
 
 [View the templates available in Compliance Score for building assessments](compliance-score-templates.md).
 
-[Get detailed instructions for creating and modifying templates, which occur in Compliance Manager](working-with-compliance-manager.md#templates).
+[Get detailed instructions for creating and modifying templates Compliance Manager](working-with-compliance-manager.md#templates).
 
 ### Improvement actions
 

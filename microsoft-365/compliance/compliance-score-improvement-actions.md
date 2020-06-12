@@ -18,7 +18,7 @@ description: "Learn how to manage your compliance activities in Microsoft Compli
 
 # Work with improvement actions in Compliance Score (preview)
 
-**In this article:** This article explains how to manage your compliance activities by working with improvement actions. Explore the workflow of assigning improvement actions for work, testing actions, assigning them to assessors for completion, and exporting reports.
+**In this article:** This article explains how to manage your compliance activities by working with improvement actions. Explore the workflow of assigning improvement actions for implementation and testing, assigning them to assessors for completion, and exporting reports.
 
 ## Manage compliance workflows with improvement actions
 
@@ -26,9 +26,7 @@ Improvement actions centralize your compliance activities. Each improvement acti
 
 ## Improvement actions details page
 
-Each improvement action has a details page. This page has detailed implementation instructions for completing recommended actions to address the related standards and regulatory requirements listed under the **At a glance** header. From this page, you can assign the work to another user, update status, and attach notes and documentation.
-
-The details page also contains a **launch now** link sending you into the appropriate solution for the recommended action.
+Each improvement action has a details page showing its current status and the related standards and regulatory requirements. Detailed implementation guidance includes a **launch now** link taking you into the appropriate solution for implementation. You can attach implementation and testing documentation directly into an improvement action's details page.
 
 To view an improvement action’s details page:
 

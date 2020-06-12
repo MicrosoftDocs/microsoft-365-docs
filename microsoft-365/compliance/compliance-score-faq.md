@@ -64,7 +64,7 @@ Compliance Score automatically scans your environment and uses Secure Score to d
 
 Compliance Score provides a broad view of your organization's data protection and compliance posture. Compliance Score also provides built-in workflow tools; it lets organizations assign work to users, track the control implementation and test status, and upload evidence and create audit reports.
 
-Microsoft Secure Score is a security analytics tool for helping with understanding your security posture. [Learn more about Secure Score and how it works](../security/mtp/microsoft-secure-score.md).
+Microsoft Secure Score is a security analytics tool for helping with understanding your security posture. [Learn more about Secure Score and how it works](../security/mtp/microsoft-secure-score-new.md).
 
 ## Which cloud services are covered by Compliance Score?
 
@@ -74,7 +74,7 @@ Compliance Score currently provides assessments for Office 365 and Intune. Expan
 
 While Compliance Score provides continuous monitoring and recommended actions only for Microsoft cloud services, you can add custom assessments in Compliance Manager for your on-premises, third-party services. In this way, you can use Microsoft Compliance Score as a SaaS compliance management tool to help you manage all the controls across your digital assets.
 
-You can use one of Compliance Score's [pre-configured templates](compliance-score.md#templates) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template).
+You can use one of Compliance Score's ready to use [templates](compliance-score-templates.md) to create assessments for particular standards, or [create your own template](working-with-compliance-manager.md#create-a-template), which you'll need to do in Compliance Manager.
 
 ## How do I delete a template or assessment I no longer need?
 
