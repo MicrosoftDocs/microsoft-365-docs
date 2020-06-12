@@ -190,6 +190,9 @@ Any actions that are not supported by Secure Score integration can be manually i
 
 This section explains how to view and work with your Assessments, including how to add new ones, export them, copy information from existing Assessments, and keep them updated through versioning.
 
+> [!NOTE]
+> You can now create and manage your assessments in Compliance Score. [View guidance and instructions](compliance-score-assessments.md).
+
 ### View an Assessment and Action details
   
 In the **Assessments** dashboard, select the assessment name to open it and view the Action Items and Controls Info.
@@ -402,13 +405,16 @@ The dashboard displays each Template, along with the Certification and Product a
 
 There are three ways to work with Templates to create Assessments:
 
-1. Use one of the pre-configured Templates provided by Microsoft.
-2. Customize a pre-configured Template with your own actions and controls through the extension process.
+1. Use one of the ready to use Templates provided by Microsoft.
+2. Customize a ready to use Template with your own actions and controls through the extension process.
 3. Create your own Template and import it into Compliance Manager.
 
-#### Use a Microsoft pre-configured Template
+> [!NOTE]
+> When you upload a template into Compliance Manager, it must be approved by two users who hold an admin role before it is published and available for use.
 
-The pre-configured templates are available on your **Templates** dashboard. View the current [list of templates](compliance-manager-overview.md#templates), which is updated each time a new template is available.
+#### Use a ready to use Template
+
+Ready to use templates are available on your **Templates** dashboard. View the current [list of templates](compliance-score-templates.md), which is updated each time a new template is available.
 
 #### Customize a Template through the extension process
 
