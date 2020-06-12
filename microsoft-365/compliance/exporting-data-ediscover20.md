@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Learn how to export or download content from a review set for presentations or external reviews in an Advanced eDiscovery case. Also learn about the features and functionality that help you maintain chain of custody throughout the Advance eDiscovery workflow."
+description: "Learn how to export or download content from a review set for presentations or external reviews in an Advanced eDiscovery case."
 ms.custom: seo-marvel-mar2020
 ---
 
