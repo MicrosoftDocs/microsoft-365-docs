@@ -25,7 +25,7 @@ description: "Determine if your tenant and users meet the requirements, so that 
 # Determine if Centralized Deployment of add-ins works for your organization
 
 Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your tenant and users meet the requirements so that you can use Centralized Deployment.
-Centralized Deployment supports three desktop platforms Windows, Mac and Online. Centralized Deployment also supports iOS and Android (Outlook Mobile Add-ins Only).
+Centralized Deployment supports three desktop platforms Windows, Mac and Online Office apps. Centralized Deployment also supports iOS and Android (Outlook Mobile Add-ins Only).
 It can take up to 24 hours for an add-in to show up for client for all users.
   
 ## Requirements
