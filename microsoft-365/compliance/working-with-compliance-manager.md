@@ -191,7 +191,7 @@ Any actions that are not supported by Secure Score integration can be manually i
 This section explains how to view and work with your Assessments, including how to add new ones, export them, copy information from existing Assessments, and keep them updated through versioning.
 
 > [!NOTE]
-> You can now create and manage your assessments in Compliance Score. [View guidance and instructions](compliance-score-assessments.md).
+> You can now create assessments in Compliance Score. [View guidance and instructions](compliance-score-assessments.md).
 
 ### View an Assessment and Action details
   
