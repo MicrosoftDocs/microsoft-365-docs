@@ -11,12 +11,12 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
-ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
 description: "Learn how to get a Microsoft Forms activity report using the Microsoft 365 Reports dashboard in the Microsoft 365 admin center."
 ---
 
@@ -27,7 +27,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 For example, you can understand the activity of every user licensed to use Microsoft Forms by looking at their interaction with forms. It also helps you to understand the level of collaboration going on by looking at the number of forms created and forms the user responded to.
   
 > [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports. 
+> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports. 
 
 ## How to get to the Forms activity report
 
@@ -36,9 +36,9 @@ For example, you can understand the activity of every user licensed to use Micro
     
 2. From the **Select a report** drop-down, select **Forms** \> **activity**.
 
-## Interpret the email activity report
+## Interpret the forms activity report
 
-You can get a view into your user's email activity by looking at the **Activity** and **Users** charts. 
+You can get a view into your user's forms activity by looking at the **Activity** and **Users** charts. 
 
 ![Forms activity report](../../media/adminformsactivity.png)
 

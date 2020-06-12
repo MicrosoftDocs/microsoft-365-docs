@@ -1,5 +1,5 @@
 ---
-title: "Give mailbox permissions to another user in Office 365 - Admin Help"
+title: "Give mailbox permissions to another user - Admin Help"
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,14 +24,7 @@ ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: "Learn how to give a user the right to access another user's mailbox. This will give the user the right to read mails and send mails from the other user's mailbox. "
 ---
 
-# Give mailbox permissions to another user in Office 365 - Admin Help
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
+# Give mailbox permissions to another user - Admin Help
 
 As the admin, you may have company requirements to allow some users access to another user's mailbox. For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user. This topic shows you how to accomplish this.
   
@@ -44,11 +38,11 @@ Mailbox permissions allow you to give read/write access to a mailbox to another 
   
 The first step to setting up permissions is deciding which actions you want to allow the other user to take in the given mailbox. You can allow a user to read emails from the mailbox, send emails on behalf of another user, and send emails as if they were sent from that mailbox. Refer to the following articles on how to set up each type of permissions:
   
-- [Read email from another user's mailbox](https://support.office.com/article/Read-email-from-another-user-s-mailbox-in-Office-365-cb3b6a8a-c6e8-4342-803c-3e54b6428cc2?#bkmk_reademailanotheruser)
+- [Read email from another user's mailbox](give-mailbox-permissions-to-another-user.md#read-email-in-another-users-mailbox)
     
-- [Send email from another user's mailbox](https://support.office.com/article/Send-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E?#bkmk_sendemailanotheruser)
-    
-- [Send email on behalf of a user](https://support.office.com/article/Send-email-on-behalf-of-another-user-in-Office-365-C5E7749D-244E-477F-998E-55D3876C22EC?#bkmk_sendbehalflanotheruser)
+- [Send email from another user's mailbox](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)
+
+- [Send email on behalf of another user](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)
     
  **Changing propagation:**
   

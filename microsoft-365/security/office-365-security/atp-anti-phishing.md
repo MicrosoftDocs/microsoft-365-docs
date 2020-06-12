@@ -14,7 +14,9 @@ search.appverid:
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
-description: "ATP anti-phishing is part of Office 365 Advanced Threat Protection. ATP anti-phishing applies a set of machine learning models together with impersonation detection algorithms to incoming messages to provide protection for commodity and spear phishing attacks. All messages are subject to an extensive set of machine learning models trained to detect phishing messages, together with a set of advanced algorithms used to protect against various user and domain impersonation attacks."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn about anti-phishing capabilities that are part of Office 365 Advanced Threat Protection to provide protection for commodity & spear phishing attacks."
 ---
 
 # ATP anti-phishing capabilities in Office 365

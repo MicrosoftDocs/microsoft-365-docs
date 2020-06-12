@@ -1,6 +1,6 @@
 ---
-title: "Case study - Contoso quickly configures an offensive language policy for Microsoft Teams and Exchange communications"
-description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for offensive language in Microsoft Teams and Exchange Online communications"
+title: "Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications"
+description: "A case study for Contoso and how they quickly configure a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -15,16 +15,17 @@ localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
+- remotework
 search.appverid:
 - MET150
 - MOE150
 ---
 
-# Case study - Contoso quickly configures an offensive language policy for Microsoft Teams and Exchange communications
+# Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications
 
-Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
+Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 
-The Contoso Corporation is a fictional organization that needs to quickly configure a policy to monitor for offensive language. They have been using Microsoft 365 primarily for email and Microsoft Teams support for their employees but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
+The Contoso Corporation is a fictional organization that needs to quickly configure a policy to monitor for offensive language. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Yammer support for their employees but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
 
 This case study will cover the basics for quickly configuring a communication compliance policy to monitor communications for offensive language. This guidance includes:
 
@@ -35,7 +36,7 @@ This case study will cover the basics for quickly configuring a communication co
 
 ## Step 1 - Planning for communication compliance
 
-Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft 365 and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will monitor for offensive language for chats sent in Microsoft Teams in email messages sent in Exchange Online. Their plan includes identifying:
+Contoso IT administrators and compliance specialists attended online webinars about compliance solutions in Microsoft 365 and decided that communication compliance policies will help them meet the updated corporate policy requirements for reducing workplace harassment. Working together, they've developed a plan to create and enable a communication compliance policy that will monitor for offensive language for chats sent in Microsoft Teams, private messages and community conversations in Yammer, and in email messages sent in Exchange Online. Their plan includes identifying:
 
 - The IT administrators that need access to communication compliance features.
 - The compliance specialists that need to create and manage communication policies.
@@ -47,10 +48,21 @@ Contoso IT administrators and compliance specialists attended online webinars ab
 The first step is to confirm that Contoso's Microsoft 365 licensing includes support for the communication compliance solution. To access and use communication compliance, Contoso IT administrators need to verify that Contoso has one of the following:
 
 - Microsoft 365 E5 subscription (paid or trial version)
-- Office 365 Enterprise E3 license with the Advanced Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Compliance add-on
+- Microsoft 365 E3 subscription + the Microsoft 365 E5 Insider Risk Management add-on
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Compliance add-on
+- Microsoft 365 A3 subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Microsoft 365 G5 subscription (paid or trial version)
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Compliance add-on
+- Microsoft 365 G5 subscription + the Microsoft 365 G5 Insider Risk Management add-on
 - Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
-They must also confirm that users included in communication compliance policies must be assigned to one of the licenses listed above.
+They must also confirm that users included in communication compliance policies must be assigned one of the licenses above.
+
+>[!IMPORTANT]
+>Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
 Contoso IT administrators take the following steps to verify the licensing support for Contoso:
 
@@ -64,7 +76,7 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 By default, Global Administrators do not have access to communication compliance features. [Permissions must be configured](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) so that Contoso IT administrators and compliance specialists have access to communication compliance.
 
-1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Office 365.
+1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
 2. After selecting **Create**, they give the new role group a friendly name of "*Communication compliance*" and select **Next**.
 3. They select **Choose roles** and then select **Add**. They add the required roles by selecting the checkbox for *Supervisory Review Administrator*, *Case Management*, *Compliance Administrator*, and *Review*, then they select **Add**, **Done,** and **Next**.
 
@@ -124,11 +136,17 @@ After selecting **Show all**, the Contoso IT administrators can access the commu
 
 To get started with a communication compliance policy, there are several prerequisites that Contoso IT administrators need to configure before setting up the new policy to monitor for offensive language. After these prerequisites have been completed, Contoso IT administrators and compliance specialists can configure the new policy and compliance specialists can start investigation and remediating any generated alerts.
 
-### Enabling auditing in Office 365
+### Enabling auditing in Microsoft 365
 
 Communication compliance requires audit logs to show alerts and track remediation actions taken by reviewers. The audit logs are a summary of all activities associated with a defined organizational policy or anytime there is a change to a communication compliance policy.
 
 Contoso IT administrators review and complete the [step-by-step instructions](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) to turn on auditing. After they turn on auditing, a message is displayed that says the audit log is being prepared and that they can run a search in a couple of hours after the preparation is complete. The Contoso IT administrators only have to do this action once.
+
+### Configuring Yammer tenant for Native Mode
+
+Communication compliance requires that the Yammer tenant for an organization is in Native Mode to monitor for offensive language in private messages and public community conversations.
+
+Contoso IT administrators make sure they review the information in the [Overview of Yammer Native Mode in Microsoft 365 topic](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Yammer network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) topic.
 
 ### Setting up a group for in-scope users
 
@@ -137,7 +155,7 @@ Contoso compliance specialists want to add all employee to the communication pol
 They need to create a new group to include all Contoso employees, so they take the following steps:
 
 1. Contoso IT administrators IT sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Groups** > **Groups**.
-2. They select **Add a group** and complete the wizard to create a new *Office 365 group* or *Distribution group*.
+2. They select **Add a group** and complete the wizard to create a new *Microsoft 365 group* or *Distribution group*.
 
 ![Groups](../media/communication-compliance-case-all-employees.png)
 

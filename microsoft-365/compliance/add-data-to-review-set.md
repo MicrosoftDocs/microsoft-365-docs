@@ -15,19 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: "Add the results of a search associated with an Advanced eDiscovery case. Items are copied from their original location and copied to a Microsoft-provided Azure Storage location. Items are also re-indexed and Advanced eDiscovery will perform optical character recognition (OCR) on image files and upload the image text for review and analysis."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to add search results or samples of those search results to an Advanced eDiscovery case review set.
 ---
 
 # Add search results to a review set
 
-When you're satisfied with the results of a search and you're ready to review and analyze those search results, you can add them to a review set in the case. Copying the original data to the review set also facilitates the review and analysis process by providing you with advanced analytics tools such as themes detection, near-duplicate detection, and email thread identification. You can also add data from non-Office 365 data sources to a review set so that you can review that data in addition to the data you collect from Office 365. 
+When you're satisfied with the results of a search and you're ready to review and analyze those search results, you can add them to a review set in the case. Copying the original data to the review set also facilitates the review and analysis process by providing you with advanced analytics tools such as themes detection, near-duplicate detection, and email thread identification. You can also add data from non-Microsoft 365 data sources to a review set so that you can review that data in addition to the data you collect from Microsoft 365. 
 
 When you add the results of a search to a review set (the review sets in a case are listed on the **Review sets** tab), the following things occur:
 
 - The search is run again. This means the actual search results copied to the review set may be different than the estimated results that were returned when the search was last run.
 
-- All items in the search results are copied from the original data source in the live Office 365 services, and copied to a secure Azure Storage location in the Microsoft cloud.
+- All items in the search results are copied from the original data source in the live services, and copied to a secure Azure Storage location in the Microsoft cloud.
 
 - All items (including the content and metadata) are re-indexed so that all data in the review set is fully searchable during the review of the case data. Re-indexing the data results in thorough and fast searches when you search the data in the review set during the case investigation.
 
@@ -39,7 +40,7 @@ You can add to an existing review set or create a new review set.  If adding to 
 
 ![Select a review set](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
-Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Office 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then re-indexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
+Adding data to a review set is a long-running process. This process includes gathering items from the original data sources in Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then re-indexing the items. You can track the progress on the **Jobs** tab or on the **Searches** tab by monitoring the status in the **Added data to review set** column. After the review set processing is completed, click the **Review sets** tab in the case, and click the review set to start the process of filtering, reviewing, tagging, and exporting data in the review set.
 
 ## Add a sample to a review set
 

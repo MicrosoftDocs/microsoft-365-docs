@@ -15,7 +15,7 @@ localization_priority: None
 description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
 ---
 
-# Learn about Information barriers
+# Information barriers
 
 ## Overview
 
@@ -61,7 +61,7 @@ Information barriers are rolling out now, and are included in subscriptions, suc
 - Microsoft 365 E5
 - Office 365 E5
 - Office 365 Advanced Compliance
-- Microsoft 365 E5 Information Protection and Compliance
+- Microsoft 365 Compliance E5
 
 For more details, see [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
 

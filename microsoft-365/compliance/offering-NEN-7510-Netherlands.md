@@ -36,8 +36,7 @@ Learn how to accelerate your NEN 7510 deployment with our Azure Security and Com
 
 ## Audits, reports, and certificates
 
-- [Azure and Office 365 NEN 7510:2011 Standard Coverage](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf)
-- [Azure and Office 365 NEN 7510:2011 Standard Coverage User Guide](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage%20User%20Guide/DOCX)
+- [Azure and Office 365 NEN 7510:2011 Standard Coverage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=15d5a5fa-fbb6-4ea6-8126-2a2c684ae789&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 
 ## Frequently asked questions
 
@@ -75,7 +74,3 @@ Customers can share the report with their own internal or external auditor as pa
 - [About NEN](https://www.nen.nl/About-NEN.htm)
 - [NEN 7510:2011 standard](https://www.nen.nl/NEN-Shop-2/Standard/NEN-75102011-nl.htm)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/D/E/3DE55FFB-0B45-49BC-851E-3696C8BD5FB7/NEN7510-Compliance.pdf).

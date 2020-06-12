@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,6 +24,14 @@ description: "Learn how to set a password expiration policy for your organizatio
 ---
 
 # Set the password expiration policy for your organization
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 This article is for people who set password expiration policy for a business, school, or nonprofit.  
 
@@ -35,12 +44,12 @@ As an admin, you can make user passwords expire after a certain number of days, 
 
 Follow the steps below if you want to set user passwords to expire after a specific amount of time.
 > [!IMPORTANT]
-> Only [Office 365 global admins](../add-users/about-admin-roles.md) can perform these steps.
+> Only [global admins](../add-users/about-admin-roles.md) can perform these steps.
   
 1. In the admin center, go to the **Settings** \> **Settings**.
 
 2. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">Security & privacy</a> page.
- If you aren't an Office 365 global admin, you won't see the Security and privacy option.
+ If you aren't a global admin, you won't see the Security and privacy option.
   
 3. Select **Password expiration policy**.
   
@@ -56,18 +65,18 @@ Follow the steps below if you want to set user passwords to expire after a speci
 
 Here are some things to know about how this feature currently works as of January 2018:
   
-- People who only use the Outlook app won't be forced to reset their Office 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
+- People who only use the Outlook app won't be forced to reset their Microsoft 365 password until it expires in the cache. This can be several days after the actual expiration date. There's no workaround for this at the admin level.
     
 - Users do not get an email notification that their password is going to expire in X number of days. Do you want this feature? **[Vote here!](https://office365.uservoice.com/forums/273493-office-365-admin/suggestions/15028344-office-365-password-email-notification)**
     
 ## Prevent last password from being used again
 
-If you want to prevent your users from recycling old passwords, you can do so in Azure AD. See [Set the password expiration policy for your organization](https://docs.microsoft.com/office365/admin/manage/set-password-expiration-policy?view=o365-worldwide).
+If you want to prevent your users from recycling old passwords, you can do so in Azure AD. See [Enforce password history](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
 
-In addition, if an employee used a mobile device to access Office 365, you can wipe it to ensure the password is no longer stored and recycled from there. To learn more, see [Wipe and block a former employee's mobile device](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
+In addition, if an employee used a mobile device to access Microsoft 365, you can wipe it to ensure the password is no longer stored and recycled from there. To learn more, see [Wipe and block a former employee's mobile device](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
 
 
-## Synchronize user passwords hashes from an on-premises Active Directory to Azure AD (Office 365)
+## Synchronize user passwords hashes from an on-premises Active Directory to Azure AD (Microsoft 365)
 
 This article is for setting the expiration policy for cloud-only users (Azure AD). It doesn't apply to hybrid identity users who use password hash sync, pass-through authentication or on-premises federation like ADFS.
   

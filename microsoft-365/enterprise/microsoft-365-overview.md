@@ -27,7 +27,7 @@ Microsoft 365 for enterprise consists of:
 
 |||
 |:-------|:-----|
-| Local and cloud-based apps and productivity services | Includes both Office 365 ProPlus, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more. |
+| Local and cloud-based apps and productivity services | Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more. |
 | Windows 10 Enterprise | Addresses the needs of both large and midsize organizations, providing users with the most productive and secure version of Windows and IT professionals with comprehensive deployment, device, and app management. |
 | Device management and advanced security services | Includes Microsoft Intune, which is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. |
 |||
@@ -40,7 +40,7 @@ Microsoft 365 for enterprise is available in three plans.
 |:-------|:-----|
 | E3 | Access core products and features within Microsoft 365 to enhance workplace productivity and drive innovation, securely. |
 | E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools.. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
-| F1 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
+| F3 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
 |||
 
 If you have Microsoft 365 E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
@@ -69,7 +69,7 @@ To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, download the [transition poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf).
 
 [![Image for the Transition to Microsoft 365 poster](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.png)](../media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf)
 
@@ -79,15 +79,14 @@ You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-3
 
 ## Avoid end of support for Windows 7 and Office 2010 clients and servers
 
-The following products reach end of support on **January 14, 2020**:
+[Windows 7](https://aka.ms/win7upgrade) reached end of support on **January 14, 2020**.
 
-- [Windows 7](https://aka.ms/win7upgrade)
-
-The following products reach end of support on  **October 13, 2020**:
+The following products will reach end of support on **October 13, 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
-- [SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010)
+
+[SharePoint Server 2010](https://docs.microsoft.com/office365/enterprise/upgrade-from-sharepoint-2010) will reach end of support on **April 13, 2021**.
 
 For a visual summary of the upgrade, migrate, and move-to-the-cloud options for these products, see the [end of support poster](../media/migration-microsoft-365-enterprise-workload/Office2010Windows7EndOfSupport.pdf).
 
@@ -121,7 +120,7 @@ For more deployment information, see how:
 
 ## Additional Microsoft 365 solutions
 
-- [Microsoft 365 Business](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
   Bring together the best-in-class productivity and collaboration capabilities of Office 365 with device management and security solutions to safeguard business data for small and midsize businesses (SMB).
 

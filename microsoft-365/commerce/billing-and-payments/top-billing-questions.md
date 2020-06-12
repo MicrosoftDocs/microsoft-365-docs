@@ -1,5 +1,5 @@
 ---
-title: "Top billing questions for Office 365 for business"
+title: "Top billing questions for Microsoft 365 for business"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,10 +25,10 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 5480fc33-dd47-41e7-bcfb-b2533efdb92a
-description: "Find answers to your top billing questions for your business subscription."
+description: "Find answers to your top billing questions for Microsoft 365 for business subscription. "
 ---
 
-# Top billing questions for business subscriptions
+# Top billing questions for Microsoft 365 for business
 
 Have questions about your billing statement? Here are the answers to the top billing questions.
   
@@ -35,13 +36,13 @@ If you can't find an answer to your question, or you have a problem with your bi
   
 ::: moniker range="o365-worldwide"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice](understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your invoice](understand-your-invoice2.md).
+If you need help interpreting the charges you see on your bill or understanding the terms used, see [Understand your bill or invoice](understand-your-invoice2.md).
 
 ::: moniker-end
 

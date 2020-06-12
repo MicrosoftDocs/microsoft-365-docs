@@ -50,7 +50,7 @@ Any entity that processes or stores US government CUI — research institutions,
 
 ## How to implement
 
-- [NIST SP 800–171 Blueprint](https://aka.ms/NIST-800-171-Blueprint): Get support for implementing workloads in Azure that comply with NIST SP 800–171.
+- [Azure Blueprint samples](https://docs.microsoft.com/azure/governance/blueprints/samples/): Get support for implementing workloads that comply with NIST-based controls.
 
 ## Frequently asked questions
 
@@ -71,7 +71,3 @@ Yes. Microsoft customers may use the audited controls described in the reports f
 - [Microsoft and the NIST Cybersecurity Framework](offering-nist-csf.md)
 - [Microsoft Government Cloud](https://www.microsoft.com/enterprise/government)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/8/F/98F1D966-FB62-4B58-B6F0-8F3DCCAC484A/NIST_SP-800-171-Compliance.pdf ).

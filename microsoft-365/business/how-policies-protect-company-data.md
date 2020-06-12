@@ -1,5 +1,5 @@
 ---
-title: "How policies in Microsoft 365 Business protect company data"
+title: "How policies in Microsoft 365 for business protect company data"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,6 +20,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +29,9 @@ ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
 description: "To protect company data on users' personal devices, use policies that target specific devices and security groups."
 ---
 
-# How policies in Microsoft 365 Business protect company data
+# How policies in Microsoft 365 for business protect company data
+
+This article applies to Microsoft 365 Business Premium.
 
 The policies that you create are specific to the device type and can be applied to specific groups of users. This means that you could create one policy that applies to your executives, and another that applies to everyone else.
   

@@ -1,5 +1,5 @@
 ---
-title: "ASF settings in Office 365"
+title: "ASF settings in EOP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,20 +15,22 @@ search.appverid:
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
-description: "The Advanced Spam Filter (ASF) settings in anti-spam policies (also known as spam filter policies or content filter policies) allow admins to identify messages that contain specific message properties that are commonly used in spam. Depending on the property, ASF detections will either mark the message as Spam or High confidence spam."
+ms.custom:
+- seo-marvel-apr2020
+description: "Admins can learn about the Advanced Spam Filter (ASF) settings that are available in anti-spam policies in Exchange Online Protection (EOP)."
 ---
 
-# Advanced Spam Filter (ASF) settings in Office 365
+# Advanced Spam Filter (ASF) settings in EOP
 
 > [!NOTE]
 > ASF settings that are currently available in anti-spam policies are in the process of being deprecated. We recommend that you don't use these settings in anti-spam policies. The functionality of these ASF settings is being incorporated into other parts of the filtering stack. For more information, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
-The Advanced Spam Filter (ASF) settings in anti-spam policies (also known as spam filter policies or content filter policies) allow admins to mark messages as spam based on specific message properties. ASF specifically targets these properties because they're commonly found in spam. Depending on the property, ASF detections will either mark the message as **Spam** or **High confidence spam**.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the Advanced Spam Filter (ASF) settings in anti-spam policies (also known as spam filter policies or content filter policies) allow admins to mark messages as spam based on specific message properties. ASF specifically targets these properties because they're commonly found in spam. Depending on the property, ASF detections will either mark the message as **Spam** or **High confidence spam**.
 
 > [!NOTE]
 > Enabling one or more of the ASF settings is an aggressive approach to spam filtering. You can't report messages that are filtered by ASF as false positives. You can identify messages that were filtered by ASF by: <ul><li>Periodic end-user spam quarantine notifications.</li><li>The presence of filtered messages in quarantine.</li><li>The specific `X-CustomSpam:` X-header fields that are added to messages as described in this topic.</li></ul>
 
-The following sections describe the ASF settings and options that are available in anti-spam policies in the Office 365 Security & Compliance Center, and in Exchange Online PowerShell or standalone Exchange Online Protection PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
+The following sections describe the ASF settings and options that are available in anti-spam policies in the Security & Compliance Center, and in Exchange Online PowerShell or standalone EOP PowerShell ([New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy) and [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy)). For more information, see [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## Enable, disable, or test ASF settings
 
@@ -44,7 +46,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 
   - **Add default X-header text (*AddXHeader*)**: The X-header value `X-CustomSpam: This message was filtered by the custom spam filter option` is added to the message. You can use this value in Inbox rules or mail flow rules (also known as transport rules) to affect the routing and delivery of the message.
 
-  - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the Bcc recipients. In the Office 365 Security & Compliance Center, you separate multiple email addresses by semicolons ( ; ). In PowerShell, you separate multiple email addresses by commas.
+  - **Send Bcc message (*BccMessage*)**: The specified email addresses (the *TestModeBccToRecipients* parameter value in PowerShell) are added to the Bcc field of the message, and the message is delivered to the Bcc recipients. In the Security & Compliance Center, you separate multiple email addresses by semicolons ( ; ). In PowerShell, you separate multiple email addresses by commas.
 
   **Notes**:
 
@@ -63,7 +65,7 @@ For each ASF setting, the following options are available in anti-spam policies:
 The following ASF settings set the spam confidence level (SCL) of detected messages to 5 or 6, which corresponds to the **Spam** filter verdict and the corresponding action in anti-spam policies.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Anti-spam policy setting**|**Description**|**X-header added**|
 |**Image links to remote sites** <br/><br/> *IncreaseScoreWithImageLinks*|Messages that contain `<Img>` HTML tag links to remote sites (for example, using http) are marked as spam.|`X-CustomSpam: Image links to remote sites`|
 |**URL redirect to other port** <br/><br/> *IncreaseScoreWithRedirectToOtherPort*|Message that contain hyperlinks that redirect to TCP ports other than 80 (HTTP), 8080 (alternate HTTP), or 443 (HTTPS) are marked as spam.|`X-CustomSpam: URL redirect to other port`|
@@ -76,7 +78,7 @@ The following ASF settings set the spam confidence level (SCL) of detected messa
 The following ASF settings set the SCL of detected messages to 9, which corresponds to the **High confidence spam** filter verdict and the corresponding action in anti-spam policies.
 
 ||||
-|:-----|:-----|:-----|
+|---|---|---|
 |**Anti-spam policy setting**|**Description**|**X-header added**|
 |**Empty messages** <br/><br/> *MarkAsSpamEmptyMessages*|Messages with no subject, no content in the message body, and no attachments are marked as high confidence spam.|`X-CustomSpam: Empty Message`|
 |**JavaScript or VBScript in HTML** <br/><br/> *MarkAsSpamJavaScriptInHtml*|Messages that use JavaScript or Visual Basic Script Edition in HTML are marked as high confidence spam. <br/><br/> These scripting languages are used in email messages to cause specific actions to automatically occur.|`X-CustomSpam: Javascript or VBscript tags in HTML`|
@@ -88,5 +90,5 @@ The following ASF settings set the SCL of detected messages to 9, which correspo
 |**Apply sensitive word list** <br><br/> *MarkAsSpamSensitiveWordList*|Microsoft maintains a dynamic but non-editable list of words that are associated with potentially offensive messages. <br/><br/> Messages that contain words from the sensitive word list in the subject or message body are marked as high confidence spam.|`X-CustomSpam: Sensitive word in subject/body`|
 |**SPF record: hard fail** <br><br/> *MarkAsSpamSpfRecordHardFail*|Messages sent from an IP address that isn't specified in the SPF Sender Policy Framework (SPF) record in DNS for the source email domain are marked as high confidence spam. <br/><br/> Test mode is not available for this setting.|`X-CustomSpam: SPF Record Fail`|
 |**Conditional Sender ID filtering: hard fail** <br><br/> *MarkAsSpamFromAddressAuthFail*|Messages that hard fail a conditional Sender ID check are marked as spam. <br/><br/> This setting combines an SPF check with a Sender ID check to help protect against message headers that contain forged senders. <br/><br/> Test mode is not available for this setting.|`X-CustomSpam: SPF From Record Fail`|
-|**NDR backscatter** <br><br/> *MarkAsSpamNdrBackscatter*|*Backscatter* is useless non-delivery reports (also known as NDRs or bounce messages) caused by forged senders in email messages. For more information, see [Backscatter messages and EOP](backscatter-messages-and-eop.md). <br/><br/> You don't need to configure this setting in the following environments, because legitimate NDRs are delivered, and backscatter is marked as spam: <ul><li>Office 365 organizations with Exchange Online mailboxes.</li><li>On-premises email organizations where you route *outbound* email through EOP.</li></ul><br/> In standalone EOP environments that protect inbound email to on-premises mailboxes, turning this setting on or off has the following result: <ul><li> **On**: Legitimate NDRs are delivered, and backscatter is marked as spam.</li><li>**Off**: Legitimate NDRs and backscatter go through normal spam filtering. Most legitimate NDRs will be delivered to the original message sender. Some, but not all, backscatter are marked as high confidence spam. By definition, backscatter can only be delivered to the spoofed sender, not to the original sender.</li></ul><br/> Test mode is not available for this setting.|`X-CustomSpam: Backscatter NDR`|
+|**NDR backscatter** <br><br/> *MarkAsSpamNdrBackscatter*|*Backscatter* is useless non-delivery reports (also known as NDRs or bounce messages) caused by forged senders in email messages. For more information, see [Backscatter messages and EOP](backscatter-messages-and-eop.md). <br/><br/> You don't need to configure this setting in the following environments, because legitimate NDRs are delivered, and backscatter is marked as spam: <ul><li>Microsoft 365 organizations with Exchange Online mailboxes.</li><li>On-premises email organizations where you route *outbound* email through EOP.</li></ul><br/> In standalone EOP environments that protect inbound email to on-premises mailboxes, turning this setting on or off has the following result: <ul><li> **On**: Legitimate NDRs are delivered, and backscatter is marked as spam.</li><li>**Off**: Legitimate NDRs and backscatter go through normal spam filtering. Most legitimate NDRs will be delivered to the original message sender. Some, but not all, backscatter are marked as high confidence spam. By definition, backscatter can only be delivered to the spoofed sender, not to the original sender.</li></ul><br/> Test mode is not available for this setting.|`X-CustomSpam: Backscatter NDR`|
 |

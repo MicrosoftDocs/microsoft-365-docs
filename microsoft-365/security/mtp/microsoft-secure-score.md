@@ -1,6 +1,6 @@
 ---
-title: Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
+title: Microsoft Secure Score (previous iteration)
+description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -19,7 +19,12 @@ search.appverid:
 - MET150
 ---
 
-# Microsoft Secure Score
+# Microsoft Secure Score (previous iteration)
+
+>[!IMPORTANT]
+>This iteration of Microsoft Secure Score is being replaced with new design elements and features over the next few months. If you do not already see the newest iteration, you will soon.
+>
+>If you see a **Metrics & trends** tab next to History, you are in the new iteration. [Go to Microsoft Secure Score (new)](microsoft-secure-score-new.md)
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
@@ -47,7 +52,7 @@ Most are scored in a binary fashion — if you implement the improvement action,
 
 ### Products included in Secure Score
 
-Currently there are recommendations for Office 365 (including SharePoint Online, Exchange Online, OneDrive for Business, Microsoft Information Protection, and more), Azure AD, and Cloud App Security. Recommendations for other security products, like Azure ATP and Microsoft Defender ATP, are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
+Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party.
 
 ## Required permissions
 
@@ -85,7 +90,7 @@ To access the Graph API, you need to have one of the following scopes in additio
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 * Identity (Azure AD accounts & roles)
-* Data  (Microsoft Information Protection)
+* Data (Microsoft Information Protection)
 * Device (no improvement actions for now)
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (no improvement actions for now)
@@ -105,8 +110,6 @@ Ranking is based on the number of remaining points left to achieve, implementati
 
 ### Actions
 
-Actions labeled as [Not Scored] are not tracked by Microsoft Secure Score. You can still take action but completing them will not affect your score. If an action becomes tracked by Microsoft Secure Score in the future and you have already completed it, your secure score will automatically reflect the change.
-
 When you select a specific improvement action, a fly out appears. To complete the action, you have a few options:
 
 1. Select **View settings** to go the configuration screen and make the change. You then gain the points that the action is worth, visible at the top of the fly out. Points may take up to 24 hours to update.
@@ -115,11 +118,9 @@ When you select a specific improvement action, a fly out appears. To complete th
 
 3. Select **Ignore** because you have decided to accept the risk and not enact the improvement action. Once you ignore an improvement action, the total number of secure score points you can achieve is reduced. You can view this action in history or undo it at any time.
 
-4. Select **Review** because the improvement action requires you to regularly review a part of your environment to gain and retain points. For example, mailbox forwarding rules should be reviewed on a weekly basis to make sure data is not being exfiltrated from your network. You do not need to make any changes, but an action will need to be performed. If you regularly review the rules, you will receive the points. If not, the score is reduced.
+![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png)
 
-![Secure Score improvement action example](../../media/secure-score/secure-score1x450.png) ![Secure Score review improvement action example](../../media/secure-score/secure-score2x450.png)
-
-*Figures 2 & 3: Improvement action flyouts*
+*Figures 2: Improvement action flyout*
 
 ## Monitor improvements over time
 
@@ -131,11 +132,18 @@ Microsoft Secure Score is a numerical summary of your security posture based on 
 
 ## What's new?
 
-To make Microsoft Secure Score a better representative of your security posture we have made some changes.
+To make Microsoft Secure Score a better representative of your security posture we have made some changes. To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
-To learn about planned changes, see [What's coming in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+### April 21st 2020
 
-### March 2020
+#### Removing improvement actions that don't meet expectations for reliable measurement or don't provide a useful representation of security posture
+
+To ensure that the Microsoft Secure Score is meaningful and that every improvement action is measurable and reliable, we are removing the following improvement actions.
+
+- Apply IRM protections to documents
+- Apply Data Loss Prevention policies
+
+### January - March 2020
 
 #### Supporting security defaults for Azure AD improvement actions
 
@@ -162,6 +170,8 @@ To ensure that the Microsoft Secure Score is meaningful and that every improveme
 - Discover risky and non-compliant shadow IT applications
 - Review permissions & block risky OAuth applications connected to your environment
 - Set up versioning on SharePoint online document libraries
+- Delete/block accounts not used in last 30 days
+- Designate fewer than 5 global admins
 
 #### Removed "not scored" improvement actions
 
