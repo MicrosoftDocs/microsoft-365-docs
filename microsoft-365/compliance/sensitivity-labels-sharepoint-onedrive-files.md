@@ -31,7 +31,7 @@ When you do enable sensitivity labels for Office files in SharePoint and OneDriv
 
 - When you download or access this file from SharePoint or OneDrive, the sensitivity label and any encryption settings from the label are enforced and remain with the file, wherever it is stored. Because of this behavior, ensure you provide user guidance to use only labels to protect documents. For more information, see [Information Rights Management (IRM) options and sensitivity labels](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
 
-- When users upload labeled and encrypted files to SharePoint, they must have at least view rights to those files. For example, they can open the files outside SharePoint. If they don't have this minimum usage right, the upload is successful but SharePoint can't process the file contents.
+- When users upload labeled and encrypted files to SharePoint, they must have at least view rights to those files. For example, they can open the files outside SharePoint. If they don't have this minimum usage right, the upload is successful but the SharePoint behavior for processing the file contents doesn't change.
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto-labeling when you edit these documents.
 
