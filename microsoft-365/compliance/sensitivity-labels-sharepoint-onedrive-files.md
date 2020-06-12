@@ -37,7 +37,7 @@ When you do enable sensitivity labels for Office files in SharePoint and OneDriv
 
 - External users can access documents that are labeled with encryption by using guest accounts. For more information, see [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
 
-- Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
+- Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies support content in these files.
 
 > [!NOTE]
 > If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior for processing the file contents doesn't change.
