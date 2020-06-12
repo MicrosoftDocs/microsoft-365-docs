@@ -119,7 +119,7 @@ The following table describes the Content Search and Core eDiscovery activities 
   
 ## Advanced eDiscovery activities
 
-The following table Advanced eDiscovery activities in Microsoft 365. These activities (in addition to relevant eDiscovery activities can be used to help you establish and verify the [chain of custody](exporting-data-ediscover20.md#chain-of-custody-in-advanced-ediscovery) in Advanced eDiscovery.
+The following table describes the Advanced eDiscovery activities logged in the audit log. These activities (in addition to relevant eDiscovery activities can be used to help you track the progression of activity in an Advanced eDiscovery case.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -150,7 +150,7 @@ The following table Advanced eDiscovery activities in Microsoft 365. These activ
 
 ## eDiscovery cmdlet activities
 
-The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the Security & Compliance Center or by running the corresponding cmdlet in remote PowerShell that's connected to your organization's Security & Compliance Center. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section. 
+The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the Security & Compliance Center or by running the corresponding cmdlet in remote PowerShell that's connected to your organization's Security & Compliance Center. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
   
 As previously stated, it takes up to 24 hours for eDiscovery cmdlet activities to appear in the audit log search results.
   
