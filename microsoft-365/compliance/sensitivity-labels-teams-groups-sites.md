@@ -146,6 +146,8 @@ You're now ready to apply the sensitivity label or labels to the following conta
 - [Microsoft 365 group in Outlook on the web](#apply-a-sensitivity-label-to-a-new-group-in-outlook-on-the-web)
 - [SharePoint site](#apply-a-sensitivity-label-to-a-new-site)
 
+You can use PowerShell if you need to [apply a sensitivity label to multiple sites](#use-powerShell-to-apply-a-sensitivity-label-to-multiple-sites).
+
 ### Apply sensitivity labels to Microsoft 365 groups
 
 You're now ready to apply the sensitivity label or labels to Microsoft 365 groups. Return to the Azure AD documentation for instructions:
@@ -188,7 +190,7 @@ When the label is applied, and users browse to the site, they see the name of th
 
 ![A site that has a sensitivity label applied](../media/sensitivity-label-site.png)
 
-## Use PowerShell to apply a sensitivity label to multiple sites
+### Use PowerShell to apply a sensitivity label to multiple sites
 
 You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet with the *SensitivityLabel* parameter from the current SharePoint Online Management Shell to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
 
