@@ -1,6 +1,6 @@
 ---
 title: Create and track tickets through ServiceNow
-description: Microsoft 365 security center is being enhanced with the ability to natively create and track tickets in ServiceNow. Security administrators can send a Secure Score recommendation directly to ServiceNow and create a ticket.
+description: Learn how to create and track tickets in ServiceNow from Microsoft 365 security center.
 keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, tickets, tasks
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -17,11 +17,15 @@ ms.topic: article
 search.appverid: 
 - MOE150
 - MET150
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Manage tickets through ServiceNow
 
-Microsoft 365 security center is being enhanced with the ability to natively create and track tickets in ServiceNow. Security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created.
+ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Learn more about ServiceNow](https://www.servicenow.com/)
+
+Microsoft 365 security center is now enhanced with the ability to natively create and track tickets in ServiceNow. Security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created. They can then be tracked in the Microsoft security center home page, and ServiceNow.
 
 ## Prerequisites
 
@@ -67,7 +71,7 @@ After you have followed the directions and authorizing the connection, view the 
 
 ## Create a task and share it to ServiceNow
 
-Once the integration is set up, create ServiceNow tasks based on specific Microsoft Secure Score improvement actions. Go to any improvement action in Secure Score in the Microsoft 365 security center portal, and select the “share” icon. One of the dropdown options is ServiceNow.
+Once the integration is set up, create ServiceNow tasks based on specific Microsoft Secure Score improvement actions. Go to any improvement action in Secure Score in the Microsoft 365 security center portal, and select the "share" icon. One of the dropdown options is ServiceNow.
 
 ![ServiceNow sharing in Secure Score](../../media/servicenow-share.png)
 
@@ -95,7 +99,7 @@ The app assumes any admin on the ServiceNow instance can create and read OAuth e
 
 **ServiceNow recommends that users keep default functionality.**
 
-Set the “application registries” table configurations to default:
+Set the "application registries" table configurations to default:
 
 * Label = Application Registeries
 * Name = oauth_entity
@@ -136,6 +140,10 @@ If your company has enabled single sign-on and you receive an error or login is 
 
 1. Create a user with security admin privileges in Azure Active Directory. The user needs to have the same name and email address as the integration user you created from the Installation Checklist. You can remove the security admin role once login and connection has been completed.
 2. Log in to the Microsoft 365 security center as this user and follow the setup steps.
+
+### IP filtering
+
+If you have enabled IP filtering, you may need to explicitly allow IP addresses. See [IP Address Access Control](https://docs.servicenow.com/bundle/orlando-platform-administration/page/administer/login/task/t_AccessControl.html) for information on how to allow IP ranges in ServiceNow. See [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519) for a list of IP addresses to allow.
 
 ### Installation is complete but don't see tickets and can't share
 

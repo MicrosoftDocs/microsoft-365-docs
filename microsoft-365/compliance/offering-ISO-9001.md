@@ -28,21 +28,25 @@ An independent third-party auditing firm performed a rigorous examination of Mic
 
 ## Microsoft in-scope cloud services
 
-- [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
+- Microsoft Graph
 - Intune
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Healthcare Bot
 - Microsoft Managed Desktop
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+- Power BI Embedded
+- Microsoft Stream
 
 ## Audits, reports, and certificates
 
-- [FY19 Microsoft Azure ISO 9001 Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2077661)
-- [FY19 Microsoft Azure ISO 9001 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2077747)
-- [See additional audit reports](https://aka.ms/auditreports)
+- [Azure, Dynamics 365, and Online Services: ISO9001 Certificate](https://aka.ms/azureiso9001cert)
+- [Azure, Dynamics 365, and Online Services: ISO9001 Assessment Report](https://aka.ms/azureiso9001report)
+- [Azure, Dynamics 365, and Online Services: ISO9001 Statement of Applicability (SOA)](https://aka.ms/azureiso9001soa)
 
 ## Frequently asked questions
 
@@ -52,24 +56,20 @@ This standard of practice provides guidance and tools for cloud service provider
 
 **Where can I get the ISO 9001:2015 audit reports and scope statements for Microsoft services?**
 
-The [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements. The [FY17 Microsoft Azure ISO 9001 Assessment Report](https://aka.ms/Azure9001Report) and the [FY17 Microsoft Azure ISO 9001 Certificate](https://aka.ms/Azure9001Cert) are both available.
+The [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) provides independently audited compliance reports. You can use the portal to request reports so that your auditors can compare Microsoft's cloud services results with your own legal and regulatory requirements. The [FY17 Microsoft Azure ISO 9001 Assessment Report](https://www.microsoft.com/?ref=aka) and the [FY17 Microsoft Azure ISO 9001 Certificate](https://www.microsoft.com/?ref=aka) are both available.
 
 **Does Microsoft run annual tests for infrastructure failures?**
 
-Yes. The ISO 9001:2015 annual assessment includes the underlying physical infrastructure datacenter. Please [review the certificate](https://aka.ms/Azure9001Cert) for the coverage details.
+Yes. The ISO 9001:2015 annual assessment includes the underlying physical infrastructure datacenter. [Review the certificate](https://www.microsoft.com/?ref=aka) for the coverage details.
 
 **Where can I view Microsoft’s compliance information for ISO 9001:2015?**
 
-You can download the [ISO 9001:2015 certificate](https://aka.ms/Azure9001Cert) for Azure and additional services that are in scope of this assessment.
+You can download the [ISO 9001:2015 certificate](https://www.microsoft.com/?ref=aka) for Azure and additional services that are in scope of this assessment.
 
 ## Resources
 
-- [ISO 9001:2015 — Quality management](https://www.iso.org/iso-9001-quality-management.html)
+- [ISO 9001:2015—Quality management](https://www.iso.org/iso-9001-quality-management.html)
 - [ISO 9001: 2015 standard](https://www.iso.org/standard/62085.html) (requirements for purchase)
 - [ISO 9000: 2015](https://www.iso.org/standard/45481.html) (fundamentals and vocabulary for purchase)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/6/3/E63F54DC-766E-477C-98D8-ADDB6A94F5C5/ISO-9001-Compliance.pdf ).

@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to add or remove the members who can access an investigation when managing a data investigation.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Add or remove members from a data investigation

@@ -39,7 +39,7 @@ For the identity features of each Microsoft 365 Enterprise plan, the role of Azu
 
 This two-page poster is a quick way to ramp up on identity concepts and configurations for Microsoft 365 Enterprise.
 
-You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/identity-infrastructure/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/identity-infrastructure/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## Plan and deploy your Microsoft 365 Enterprise identity infrastructure 
 
@@ -65,7 +65,11 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 
 ## How Microsoft does Microsoft 365 Enterprise
 
-Learn how IT experts at Microsoft [manage identities and secure access](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR5).
+Learn how IT experts at Microsoft [manage identities and secure access](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft).
+
+>[!Note]
+>This IT Showcase resource is only available in English.
+>
 
 ## How Contoso did Microsoft 365 Enterprise
 

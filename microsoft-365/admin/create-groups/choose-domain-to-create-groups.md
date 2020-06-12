@@ -1,8 +1,7 @@
 ---
-title: "Choose the domain to use when creating Office 365 Groups"
+title: "Choose the domain to use when creating Microsoft 365 groups"
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -14,21 +13,22 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: "Learn to choose the domain to use when creating Office 365 groups by configuring email address policies using PowerShell. "
+description: "Learn to choose the domain to use when creating Microsoft 365 groups by configuring email address policies using PowerShell. "
 ---
 
-# Choose the domain to use when creating Office 365 Groups
+# Choose the domain to use when creating Microsoft 365 groups
 
- Some organizations use separate email domains to segment different parts of their businesses. You can specify which domain should be used when your users create Office 365 groups.
+ Some organizations use separate email domains to segment different parts of their businesses. You can specify which domain should be used when your users create Microsoft 365 groups.
   
 If your organization needs users to create their groups in domains other than the default accepted domain of your business, you can allow this by configuring email address policies (EAPs) using PowerShell.
   
-Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your Office 365 organization. Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Before you can run the PowerShell cmdlets, download and install a module that will let you talk to your organization. Check out [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
   
 ## Example scenarios
 
@@ -47,7 +47,7 @@ The following two scenarios explain how you would accomplish this.
   
 ### Scenario 1
 
-The following example shows you how to provision all Office 365 groups in your organization in the groups.contoso.com domain.
+The following example shows you how to provision all Microsoft 365 groups in your organization in the groups.contoso.com domain.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -55,7 +55,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### Scenario 2
 
-Let's say you want to control what sub-domains Office 365 groups are created in. You want:
+Let's say you want to control what sub-domains Microsoft 365 groups are created in. You want:
   
 - Groups created by students (users which have **Department** set to **Students**) in the students.groups.contoso.com domain. Use this command:
     
@@ -98,7 +98,7 @@ Changing an EAP has no impact on the groups that have already been provisioned.
   
 ## Hybrid requirements
 
-If your organization is configured in a hybrid scenario, check out [Configure Office 365 Groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) to make sure your organization meets the requirements for creating Office 365 groups. 
+If your organization is configured in a hybrid scenario, check out [Configure Microsoft 365 groups with on-premises Exchange hybrid](https://go.microsoft.com/fwlink/p/?LinkId=785430) to make sure your organization meets the requirements for creating Microsoft 365 groups. 
   
 ## Additional info about using email address policies groups:
 
@@ -108,7 +108,7 @@ There are a few more things to know:
     
 - Admins and users can also modify domains when they create groups.
     
-- Group of users is determined using the standard queries (User properties) that are already available. Check out [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=785918) for supported filterable pproperties. 
+- Group of users is determined using the standard queries (User properties) that are already available. Check out [Filterable properties for the -RecipientFilter parameter](https://go.microsoft.com/fwlink/p/?LinkId=785918) for supported filterable properties. 
     
 - If you don't configure any EAPs for groups, then the default accepted domain is selected for group creation.
     
@@ -118,4 +118,4 @@ There are a few more things to know:
     
 ## Related articles
 
-[Create an Office 365 group in the admin center](create-groups.md)
+[Create an Microsoft 365 group in the admin center](create-groups.md)

@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "This article describes the new version of Advanced eDiscovery in Microsoft 365."
+description: This article provides an overview of Advanced eDiscovery in Microsoft 365, a tool for internal and external investigations.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Overview of the Advanced eDiscovery solution in Microsoft 365
@@ -76,7 +77,7 @@ When you add a custodian and the corresponding custodial data sources to a case,
 
 ## Collecting case data
 
-Use the **Searches** tab to create searches to search the in-place custodial and non-custodial data sources in Office 365 for content relevant to the case. You can create and run query-based searches (using keywords and conditions) to identify a set of email messages and documents that are relevant to the case and that you want to further review and analyze in subsequent steps in the eDiscovery workflow. You can create one or more searches associated with the case. You can also use the search tool to preview sample documents and view search statistics to help you refine and improve the search results. After you're satisfied the search results contain the all data relevant to the case, you add the search results to a review set for further review, analysis, and culling. For more information, see [Collect data for a case in Advanced eDiscovery](collecting-data-for-ediscovery.md).
+Use the **Searches** tab to create searches to search the in-place custodial and non-custodial data sources for content relevant to the case. You can create and run query-based searches (using keywords and conditions) to identify a set of email messages and documents that are relevant to the case and that you want to further review and analyze in subsequent steps in the eDiscovery workflow. You can create one or more searches associated with the case. You can also use the search tool to preview sample documents and view search statistics to help you refine and improve the search results. After you're satisfied the search results contain the all data relevant to the case, you add the search results to a review set for further review, analysis, and culling. For more information, see [Collect data for a case in Advanced eDiscovery](collecting-data-for-ediscovery.md).
 
 ## Reviewing and analyzing case data
 
@@ -101,7 +102,3 @@ Use the **Jobs** tab to monitor long-running processes for case-related tasks th
 ## Configuring case settings
 
 Use the **Settings** tab to configure case-wide settings. This includes adding members to a case, closing or deleting a case, and configuring search and analytics settings.
-
-## Advanced eDiscovery reports
-
-You can use the Advanced eDiscovery reports on the home page to help your organization track activity and status across all Advanced eDiscovery cases. The Advanced eDiscovery reports feature aggregates information about cases, custodians, data sources, and communications. You can filter the report data based on various criteria and export the aggregated information to a CSV file for further analysis.  For more information, see [Advanced eDiscovery reports](advanced-ediscovery-reports.md).

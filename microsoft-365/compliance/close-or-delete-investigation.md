@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to close a data investigation case while retaining the information and evidence for future use.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Close or delete an investigation

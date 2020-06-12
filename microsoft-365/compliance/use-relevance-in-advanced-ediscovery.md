@@ -1,5 +1,5 @@
 ---
-title: "Use the Relevance module in Office 365 Advanced eDiscovery"
+title: "Use the Relevance module in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: "Learn about the Relevance module in Office 365 Advanced eDiscovery, including a workflow and guidelines and steps for training and file review. 
+description: "Learn about the Relevance module in Advanced eDiscovery, including a workflow and guidelines and steps for training and file review. 
 "
 ---
 

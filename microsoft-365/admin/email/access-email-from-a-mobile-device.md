@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
@@ -22,7 +23,7 @@ description: "Learn how to access email from your mobile device."
 
 Your organization has configured settings which control what mobile apps you can use to access your work account for email, calendar and contacts.
   
-The Outlook for Android and Outlook for iOS mobile apps are designed for your work or school email, and are the only apps to provide features like [Focused Inbox](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx), which keeps important emails front and center, and [Scheduling Assistant](https://go.microsoft.com/fwlink/?linkid=873406), which helps you find meeting times that work with colleagues and simply finds available conference rooms.
+The Outlook for Android and Outlook for iOS mobile apps are designed for your work or school email, and are the only apps to provide features like [Focused Inbox](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx), which keeps important emails front and center, and [Scheduling Assistant](https://www.microsoft.com/?ref=go), which helps you find meeting times that work with colleagues and simply finds available conference rooms.
   
 ## End user experience
 
@@ -36,6 +37,6 @@ Check out [Optimize the Outlook mobile app for your iOS or Android phone](https:
   
  **Any email app**
   
-Your organization recommends that you use the Outlook for Android or iOS mobile app to access your Office 365 work or school account for email, calendar, and contacts. If you don't take any action within the next few hours, your email will automatically begin syncing. If you choose to use the Outlook for Android or iOS mobile app, your data will only sync with the Outlook for Android or Outlook for iOS mobile app. If you choose to continue using the third-party app, your data will start to sync instantly.
+Your organization recommends that you use the Outlook for Android or iOS mobile app to access your work or school account for email, calendar, and contacts. If you don't take any action within the next few hours, your email will automatically begin syncing. If you choose to use the Outlook for Android or iOS mobile app, your data will only sync with the Outlook for Android or Outlook for iOS mobile app. If you choose to continue using the third-party app, your data will start to sync instantly.
   
 

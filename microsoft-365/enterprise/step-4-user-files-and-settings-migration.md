@@ -33,7 +33,7 @@ Moving users’ files and settings to their new or refreshed PCs is a critical p
 </table>
 
 >[!NOTE]
->While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
+>While you can continue to use migration processes you have used in the past, with your shift to Microsoft 365 Apps for enterprise we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.
@@ -44,7 +44,7 @@ When it comes to deciding on what to keep when moving to a new PC or a new versi
 
 Whether this is an option in your organization will depend on the scale of the migration you are planning. Clearly it is limited to the time and physics involved in working directly with users, understanding their needs, copying files across to their new, or freshly updated PC.
 
-If you are opting for a manual migration, you may need to assess whether you will be able to complete the task by January 2020, when support for Windows 7 ends. If this looks doubtful, look into using one of the automated options below, or request more people to help.
+If you are opting for a manual migration, look into using one of the automated options below, or request more people to help.
 
 ## Automated Migration using USMT 
 

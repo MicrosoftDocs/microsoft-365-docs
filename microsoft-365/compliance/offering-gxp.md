@@ -20,7 +20,7 @@ titleSuffix: Microsoft Compliance
 
 ## About GxP
 
-The term *GxP* is a general abbreviation for "good practice" guidelines and regulations. The "x" represents a particular field — clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](https://aka.ms/FDA-CFR) and [EudraLex Volume 4 — GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
+The term *GxP* is a general abbreviation for 'good practice' guidelines and regulations. The 'x' represents a particular field — clinical (GCP), manufacturing (GMP), distribution (GDP), laboratory (GLP), agriculture (GAP), and so on. There is no single regulatory entity or administration; each country has its own guidelines and regulators, although requirements are similar from country to country. GxP regulations include those outlined in the [US FDA CFR Title 21 Part 11](https://aka.ms/FDA-CFR) and [EudraLex Volume 4 — GMP Guidelines, Annex 11](https://ec.europa.eu/health/documents/eudralex/vol-4_en) in the EU.
 
 Regulatory goals aim to make sure that businesses in regulated industries manufacture products that are safe to use and meet stringent quality standards during the production process. Computerized systems that use GxP processes require validation of adherence to GxP requirements and are considered qualified when the system can demonstrate its ability to fulfill them.
 
@@ -62,7 +62,3 @@ Customers deploying applications on Azure should determine the GxP requirements 
 - [Microsoft and ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft and ISO 9001](offering-iso-9001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/5/B/45B4B144-E0D0-432E-A210-B8AF841F9A0A/GXP-Compliance.pdf).

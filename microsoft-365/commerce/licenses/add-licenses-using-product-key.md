@@ -16,6 +16,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - TopSMBIssues
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,7 +24,7 @@ search.appverid:
 - BEA160
 ms.assetid: 4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53
 ROBOTS: NOINDEX
-description: "Learn how to add licenses to your Office 365 subscription."
+description: "Learn how to add licenses to your subscription."
 ---
 
 # Add licenses to or extend a subscription paid for using a product key
@@ -31,16 +32,13 @@ description: "Learn how to add licenses to your Office 365 subscription."
 Prepaid licenses are issued to you as a 25-character alphanumeric code. After you have purchased the licenses you need, you can add them to your subscription. You can also use a product key to extend the expiration date of your subscription.
 
 > [!NOTE]
-> If you don't want to purchase a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses or to extend your subscription expiration date. For more information, see [Renew Office 365 for business](../subscriptions/renew-your-subscription.md).
+> If you don't want to purchase a new product key, you can always choose to add a credit card or bank account to your subscription to pay for more licenses or to extend your subscription expiration date. For more information, see [Renew your subscription](../subscriptions/renew-your-subscription.md).
   
 ## Add licenses to your subscription
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription to which you want to add licenses. In the **Licenses** section, select **Add more licenses**.
 
@@ -97,10 +95,7 @@ Prepaid licenses are issued to you as a 25-character alphanumeric code. After yo
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription which you want to extend. In the **Billing** section, select **Extend end date**.
 

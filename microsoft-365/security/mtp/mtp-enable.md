@@ -31,7 +31,7 @@ Microsoft Threat Protection unifies your incident response process by integratin
 To get the best protection and optimize Microsoft Threat Protection, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
 ## Check license eligibility and required permissions
-A Microsoft 365 E5, E5 Security, or A5 license or a valid combination of licenses provides access to supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center.
+A Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses provides access to supported services and entitles you to use Microsoft Threat Protection in Microsoft 365 security center without additional licensing cost.
 
 For detailed licensing information, [read the licensing requirements](prerequisites.md#licensing-requirements).
 
@@ -39,7 +39,11 @@ For detailed licensing information, [read the licensing requirements](prerequisi
 You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft Threat Protection. [View your roles in Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## Start using the service
-Microsoft Threat Protection aggregates data from the various integrated services. It will process and store data centrally to identify new insights and make centralized response workflows possible.
+
+>[!IMPORTANT]
+>Starting May 12, 2020, Microsoft will gradually roll out new, optimized experiences around [licensing requirements](prerequisites.md#licensing-requirements) and turning on Microsoft Threat Protection. For several weeks during this period, some customers will start to see changes to their portal experiences. Information about the new experiences are marked **New experience** in this article.
+
+Microsoft Threat Protection aggregates data from the various integrated services. It will process and store data centrally to identify new insights and make centralized response workflows possible. It does this without affecting existing deployments, settings, or data associated with the integrated services.
 
 Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) shows the Microsoft Threat Protection welcome page when you select **Incidents**, **Action center**, or **Hunting** from the navigation pane. These navigation options are not shown if you are not eligible to use Microsoft Threat Protection.
 
@@ -53,8 +57,10 @@ To turn on Microsoft Threat Protection, simply complete the process from the wel
 
 ### Select data center location
 If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender ATP, you will be asked to choose a new data center location specifically for Microsoft Threat Protection. 
-
+ 
 You need to provide consent before data is shared between services and aggregated.
+
+**New experience:** Starting May 12, 2020, customers will gradually receive changes to this experience. For those with the new experience, the service automatically selects the optimal data center location for your aggregated data based on your existing Microsoft 365 security services. The selected data center location is shown in the screen.
 
 ### Confirm that the service is on
 Once the service is provisioned, it adds:

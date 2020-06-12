@@ -13,6 +13,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
+- remotework
 ms.custom:
 
 description: Understand how planning and implementing business continuity looks different when cloud services are part of your IT offering. 
@@ -35,7 +36,7 @@ If you haven't updated your plans yet this series of topics helps you to plan yo
 - [Microsoft 365 service resiliency](ebcm-m365-service-resiliency.md)
 - [Developing your continuity plan](ebcm-developing-your-ebcm-plan.md)
 - [Microsoft 365 service incident mitigation scenarios](ebcm-microsoft-365-mitigations.md)
-- [Microsoft 365 business continuity plan training and rehearsal](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
+- [Microsoft 365 for business continuity plan training and rehearsal](ebcm-enterprise-business-continuity-management-plan-rehearsal-and-user-training.md)
 
 ## See also
 

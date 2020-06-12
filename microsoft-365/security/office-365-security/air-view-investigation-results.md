@@ -1,5 +1,5 @@
 ---
-title: "View the results of an automated investigation in Office 365"
+title: "View the results of an automated investigation in Microsoft 365"
 keywords: AIR, autoIR, ATP, automated, investigation, response, remediation, threats, advanced, threat, protection
 f1.keywords:
 - NOCSH
@@ -14,16 +14,34 @@ search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
-description: "During and after an automated investigation in Office 365, you can view the results and key findings."
+description: "During and after an automated investigation in Microsoft 365, you can view the results and key findings."
 ---
 
-# Details and results of an automated investigation in Office 365
+# Details and results of an automated investigation in Microsoft 365
 
 When an [automated investigation](office-365-air.md) occurs in [Office 365 Advanced Threat Protection](office-365-atp.md), details about that investigation are available during and after the automated investigation process. If you have the necessary permissions, you can view those details in an investigation details view. The investigation details view provides you with up-to-date status and the ability to approve any pending actions. 
 
+## Investigation status
+
+The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved. 
+
+|Status  |What it means  |
+|---------|---------|
+|Starting | The investigation has been triggered and waiting to start running​.  |
+|Running | The investigation process has started and is underway. This state also occurs when [pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions) are approved. |
+|No Threats Found | The investigation has finished and no threats (user account, email message, URL, or file) were identified. <br/><br/>**TIP**: If you suspect something was missed (such as a false negative), you can take action using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)​. |
+|Threats Found |The automated investigation found issues, but there are no specific remediation actions to resolve those issues.<br/><br/> The Threats Found status can occur when some type of user activity was identified but no cleanup actions are available. Examples include any of the following user activities: <br/>- A [data loss prevention](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) (DLP) event <br/>- An email sending anomaly <br/>- Sent malware <br/>- Sent phish<br/>The investigation found no malicious URLs, files, or email messages to remediate, and no mailbox activity to fix, such as turning off forwarding rules or delegation. <br/><br/>**TIP**: If you suspect something was missed (such as a false negative), you can investigate and take action using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)​. |
+|Terminated By System | The investigation stopped. An investigation can stop for several reasons:​<br/>- The investigation's pending actions expired. Pending actions time out after awaiting approval for one week. <br/>- There are too many actions. For example, if there are too many users clicking on malicious URLs, it can exceed the investigation's ability to run all the analyzers, so the investigation halts​. <br/><br/>**TIP**: If an investigation halts before actions were taken, try using [Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) to find and address threats.  |
+|Pending Action | The investigation has found a threat, such as a malicious email, a malicious URL, or a risky mailbox setting​, and an action to remediate that threat is awaiting [approval](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions).<br/><br/>The Pending Action state is triggered when any threat with a corresponding action is found. However, the list of pending actions can increase as an investigation runs. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results#playbook-log) to see if other items are still pending completion.​ |
+|Remediated | The investigation finished and all actions were approved (fully remediated).<br/><br/>**NOTE**: Approved remediation actions can have errors that prevent the actions from being taken. Regardless of whether remediation actions are successfully completed, the investigation status does not change. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​ |
+|Partially Remediated | The investigation resulted in remediation actions, and some were approved and completed​. Other actions are still [pending](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions). |
+|Failed | At least one investigation analyzer ran into a problem where it could not complete properly​. <br/><br/>**NOTE**: If an investigation fails after remediation actions were approved, the remediation actions might still have succeeded. Check the [investigation log](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-view-investigation-results) for detailed results.​​ |
+|Queued By Throttling | An investigation is being held in a queue. When other investigations complete, queued investigations begin. Throttling helps avoid poor service performance. <br/>​<br/>**TIP**: Pending actions can limit how many new investigations can run. Make sure to [approve (or reject) pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions#approve-or-reject-pending-actions). |
+|Terminated By Throttling | If an investigation is held in the queue too long, it stops. <br/><br/>**TIP**: You can [start an investigation from Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/automated-investigation-response-office#example-a-security-administrator-triggers-an-investigation-from-threat-explorer). |
+
 ## View details of an investigation
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the the Security & Compliance Center.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Do one of the following:
 
@@ -43,9 +61,9 @@ When an [automated investigation](office-365-air.md) occurs in [Office 365 Advan
 
 ## View details about an alert related to an investigation
 
-Certain kinds of alerts trigger automated investigation in Office 365. To learn more, see [Alerts](automated-investigation-response-office.md#alerts). Use the following procedure to view details about an alert that is associated with an automated investigation.
+Certain kinds of alerts trigger automated investigation in Microsoft 365. To learn more, see [Alerts](automated-investigation-response-office.md#alerts). Use the following procedure to view details about an alert that is associated with an automated investigation.
 
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in. This takes you to the the Security & Compliance Center.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in. 
 
 2. Go to **Threat management** > **Investigations**.
 
@@ -78,22 +96,6 @@ You can:
 - Apply filters. Choose from **Investigation Type**, **Time range**, **Status**, or a combination of these.
 - Export the data to a .csv file.
 
-The investigation status indicates the progress of the analysis and actions. As the investigation runs, status changes to indicate whether threats were found, and whether actions have been approved. 
-
-|Status  |What it means  |
-|---------|---------|
-|Starting | The investigation is queued to begin soon |
-|Running | The investigation has started and is conducting its analysis |
-|No Threats Found | The investigation has completed its analysis and no threats were found |
-|Terminated By System | The investigation was not closed and expired after 7 days |
-|Pending Action | The investigation found threats with actions recommended.  The investigation continues running after it's found initial threats and recommended actions, so you should check the log before approving actions to see if analyzers are still in-progress. |
-|Threats Found | The investigation found threats, but the threats do not have actions available within AIR.  These are user actions where there is no direction AIR action yet. |
-|Remediated | The investigation finished and was fully remediated (all actions were approved) |
-|Partially Remediated | The investigation finished and some of the recommended actions were approved |
-|Terminated By User | An admin terminated the investigation |
-|Failed | An error occurred during the investigation that prevented it from reaching a conclusion on threats |
-|Queued By Throttling | The investigation is waiting for analysis due to system processing limitations (to protect service performance) |
-|Terminated By Throttling | The investigation could not be completed in sufficient time due to investigation volume and system processing limitations. You can retrigger the investigation by selecting the email in Explorer and selecting the Investigate action. |
 
 ### Investigation graph
 
@@ -109,7 +111,7 @@ You can:
 
 ### Alert investigation
 
-On the **Alerts** tab for an investigation, you can see alerts relevant to the investigation. Details include the alert that triggered the investigation and other correlated alerts, such as risky sign-in, DLP policy violations, etc., that are correlated to the investigation. From this page, a security analyst can also view additional details on individual alerts.
+On the **Alerts** tab for an investigation, you can see alerts relevant to the investigation. Details include the alert that triggered the investigation and other correlated alerts, such as risky sign-in, [DLP policy](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) violations, etc., that are correlated to the investigation. From this page, a security analyst can also view additional details on individual alerts.
 
 ![AIR alerts page](../../media/air-investigationalertspage.png)
 
@@ -132,7 +134,7 @@ Two different types of email clusters may be identified during the email analysi
 - Similarity clusters are email messages identified by hunting for emails with similar sender and content attributes. These clusters are evaluated for malicious content based on the original detection findings. Email clusters that contain enough malicious email detections are considered malicious.
 - Indicator clusters are email messages that are identified by hunting for the same indicator entity (file hash or URL) from the original email. When the original file/URL entity is identified as malicious, AIR applies the indicator verdict to the entire cluster of email messages containing that entity. A file identified as malware means that the cluster of email messages containing that file are treated as malware email messages.
 
-The goal of clustering is to hunt and find other related email messages that are sent by the same sender as part of an attack or a campaign.  In some cases, legitimate email may trigger an investigation (e.g. a user reports a marketing email).  In these scenarios, the email clustering should identify that email clusters are not malicious – when it appropriately does so, it will **not** indicate a threat nor will it recommend email removal.
+The goal of clustering is to hunt and find other related email messages that are sent by the same sender as part of an attack or a campaign.  In some cases, legitimate email may trigger an investigation (for example, a user reports a marketing email).  In these scenarios, the email clustering should identify that email clusters are not malicious – when it appropriately does so, it will **not** indicate a threat nor will it recommend email removal.
 
 The **Email** tab also shows email items related to the investigation, such as the user-reported email details, the original email reported, the email message(s) zapped due to malware/phish, etc.
 
@@ -208,7 +210,7 @@ You can:
 
 |Analyzer | Description |
 |-----|-----|
-|DLP violations investigation |Investigate any violations detected by [Office 365 Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
+|DLP violations investigation |Investigate any violations detected by [Data Loss Prevention](../../compliance/data-loss-prevention-policies.md) (DLP) |
 |Email indicators extraction |Extract indicators from the header, body, and content of an email message for investigation |
 |File Hash Reputation |Detect anomalies based on file hashes for users and machines in your organization |
 |Mail cluster identification |Email cluster analysis based on header, body, content, and URLs |
@@ -243,6 +245,6 @@ You can:
 
 ## Next steps
 
-- [Review and approve pending actions](air-remediation-actions.md)
+- [Review and approve pending actions](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-review-approve-pending-completed-actions?view=o365-worldwide#approve-or-reject-pending-actions)
 
 - [Learn about automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)

@@ -5,8 +5,12 @@ author: MikePlumleyMSFT
 manager: pamgreen
 audience: ITPro
 ms.topic: article
-ms.service: sharepoint-online
-ms.collection: SPO_Content
+ms.prod: microsoft-365-enterprise
+ms.collection: 
+- SPO_Content
+- M365-collaboration
+- M365solutions
+ms.custom: 
 localization_priority: Priority
 f1.keywords: NOCSH
 description: "Learn how to limit accidental exposure of information when sharing files with people outside your organization."
@@ -14,7 +18,7 @@ description: "Learn how to limit accidental exposure of information when sharing
 
 # Limit accidental exposure to files when sharing with people outside your organization
 
-When sharing files and folders with people outside your organization, there are a variety of options to reduce the chances of accidentally sharing confidential information. You can choose from the options in this article to best meet the needs of your organization.
+When sharing files and folders with people outside your organization, there are a variety of options to reduce the chances of accidentally sharing sensitive information. You can choose from the options in this article to best meet the needs of your organization.
 
 ## Use best practices for Anyone links
 
@@ -76,7 +80,7 @@ To limit external sharing to members of a security group
     b. **Let only users in selected security groups share with authenticated external users and using anonymous links** to specify a security group that can share with authenticated users and by using Anyone links
 4. Click **OK**.
 
-Note that this affects files, folders, and sites, but not Office 365 groups or Teams. When members invite guests to a private Office 365 group or a private team in Microsoft Teams, the invitation is sent to the group or team owner for approval.
+Note that this affects files, folders, and sites, but not Microsoft 365 groups or Teams. When members invite guests to a private Microsoft 365 group or a private team in Microsoft Teams, the invitation is sent to the group or team owner for approval.
 
 ## See Also
 
