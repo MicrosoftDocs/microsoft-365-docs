@@ -188,6 +188,40 @@ When the label is applied, and users browse to the site, they see the name of th
 
 ![A site that has a sensitivity label applied](../media/sensitivity-label-site.png)
 
+## Use PowerShell to apply a sensitivity label to multiple sites
+
+You can use the [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite?view=sharepoint-ps) and [Set-SPOTenant](/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet with the *SensitivityLabel* parameter from the current SharePoint Online Management Shell to apply a sensitivity label to many sites. The sites can be any SharePoint site collection, or a OneDrive site.
+
+Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Management Shell.
+
+1. Open a PowerShell session with the **Run as Administrator** option.
+
+2. If you don't know your label GUID: [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps) and get the list of sensitivity labels and their GUIDs.
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
+
+3. Now [connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps) and store your label GUID as a variable. For example: 
+    
+    ```powershell
+    $Id = [GUID]("e48058ea-98e8-4940-8db0-ba1310fd955e")
+    ```
+
+4. Create a new variable that identifies multiple sites that have an identifying string in common in their URL. For example:
+    
+    ```powershell
+    $sites = Get-SPOSite -IncludePersonalSite $true -Limit all -Filter "Url -like 'documents" 
+    ```
+
+5. Run the following command to apply the label to these sites. Using our examples:
+    
+    ```powershell
+    $sites | ForEach-Object {Set-SpoTenant $_.url -SensitivityLabel $Id}
+    ```
+
+To apply different labels to different sites, repeat the following command for each site: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+
 ## View sensitivity labels in the SharePoint admin center
 
 To view the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
