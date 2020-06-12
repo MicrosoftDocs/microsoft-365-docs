@@ -22,38 +22,20 @@ The public preview of Microsoft Compliance Score provides you with early access 
 
 Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score, measuring your progress towards completing recommended actions that help reduce compliance risks.
 
+## Assessment creation and management functionality
+
+With the June 2020 release, users can now create, modify, delete, and manage their assessments directly in Compliance Score. Previously, assessments had to be managed in Compliance Manager. Any assessment creation or modification done in Compliance Score automatically surfaces in Compliance Manager. Likewise, any assessment work performed in Compliance Manager will surface in Compliance Score. Learn how to [manage assessments in Compliance Score](compliance-score-assessments.md).
+
 ## New templates for assessments
 
-New pre-configured templates for assessments are released into production for Compliance Score (Preview) as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently added templates include:
+New ready to use templates for assessments are released in Compliance Score as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently added templates include:
 
-- Brazil General Data Protection Law (LGPD)
 - Dubai Information Security Resolution (DGISR)
-- IRAP / Australian Government ISM (Preview)
-- ISO 27701:2019
-- SOC 1
-- SOC 2
-
-## Improvements in managing assessments
-
-The latest release of Compliance Manager in April 2020 includes updates simplifying how you create and customize assessments and keep them updated. View the [Compliance Manager release notes](compliance-manager-release-notes.md) for details.
-
-## Language support
-
-Compliance Score is now available in the following languages in addition to English: Chinese (Simplified), Chinese (Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Russian, and Spanish.
-
-## Common actions will synch status across groups
-
-If your organization has multiple groups of assessments, the behavior of **Technical** actions (that is, actions affecting your entire organization) has changed. Any duplicate actions across groups have been combined into one single action. That single action contains all uploaded notes and evidence from the duplicate versions. With this change, technical actions will now behave as they did when they belonged to the same group. Any change made to the action in one group or assessment will now be reflected in all instances. The **Implementation Status**, **Implementation Date**, **Test Status**, and **Test Date** will reflect the most recent updates.
 
 ## Compliance Score relationship to Compliance Manager
 
 Many of the functions handled in Compliance Manager can now be done in Compliance Score. However some functions still live in Compliance Manager. Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
 
-- **Managing assessments**: users can view assessments and their status details in Compliance Score. However users can only do assessment management tasks in Compliance Manager ([view instructions](working-with-compliance-manager.md#assessments)). Examples of those tasks include:
-    - Create and copy assessments
-    - Export assessments
-    - Archive assessments
-    - View archived assessments
  - **Creating templates for assessments**: 
    - Users must go to Compliance Manager to create new templates and modify existing [templates](working-with-compliance-manager.md#templates). 
    - When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
