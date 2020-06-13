@@ -26,6 +26,14 @@ highlightedContent:
     - title: Office 365 is now Microsoft 365!
       itemType: whats-new
       url: new-subscription-names.md
+    # Card
+    - title: What's new in the Microsoft 365 admin center!
+      itemType: whats-new
+      url: whats-new-in-preview.md
+    # Card
+    - title: Stay on top of changes
+      itemType: how-to-guide
+      url: manage/stay-on-top-of-updates.md
 
 # productDirectory section (optional)
 productDirectory:
