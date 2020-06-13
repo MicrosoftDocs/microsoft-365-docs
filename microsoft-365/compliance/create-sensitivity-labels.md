@@ -48,7 +48,7 @@ The global admin for your organization has full permissions to create and manage
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
-2. On the **Labels** page, select **+ Create a label** to start the **New sensitivity label** wizard. 
+2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label wizard. 
     
     For example, from the Microsoft 365 compliance center:
     
@@ -124,7 +124,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
-2. Select the **Label policies** tab, and then **Publish labels** to start the **Create policy wizard**:
+2. Select the **Label policies** tab, and then **Publish labels** to start the Create policy wizard:
     
     For example, from the Microsoft 365 compliance center:
         
