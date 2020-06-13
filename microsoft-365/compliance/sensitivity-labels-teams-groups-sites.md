@@ -234,7 +234,7 @@ For more information about managing sites from the Active sites page, including 
 
 You can even change and apply a label from this page:
 
-1. Select the site name to open the details panel.
+1. Select the site name to open the details pane.
 
 2. Select the **Policies** tab, and then select **Edit** for the **Sensitivity** setting.
 
