@@ -48,13 +48,15 @@ The global admin for your organization has full permissions to create and manage
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
-2. On the **Labels** page, select **+ Create a label** to start the **New sensitivity label** wizard:
+2. On the **Labels** page, select **+ Create a label** to start the **New sensitivity label** wizard. 
     
-    ![Create a label](../media/create-sensitivity-label.png)
+    For example, from the Microsoft 365 compliance center:
+    
+    ![Create a label](../media/create-sensitivity-label-full.png)
 
-3. Follow the prompts for the label settings.
+3. Follow the prompts in the wizard for the label settings.
     
-    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information.
+    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the wizard for individual settings.
 
 4. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
 
@@ -122,22 +124,22 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
-2. Select the **Label policies** tab.
-
-3. Select **Publish labels** to start the **Create policy wizard**:
+2. Select the **Label policies** tab, and then **Publish labels** to start the **Create policy wizard**:
     
-    ![Publish labels](../media/publish-sensitivity-labels.png)
+    For example, from the Microsoft 365 compliance center:
+        
+    ![Publish labels](../media/publish-sensitivity-labels-full.png)
 
-4. Select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
+3. In the wizard, select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
     
     > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
     
-5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
+4. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
 
-6. Follow the prompts to configure the policy settings.
+5. Follow the prompts to configure the policy settings.
     
-    For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information.
+    For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the wizard for individual settings.
 
 7. Repeat these steps if you need different policy settings for different users or locations. For example, you want additional labels for a group of users, or a different default label for a subset of users.
 
