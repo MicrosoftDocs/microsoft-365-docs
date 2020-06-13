@@ -232,7 +232,7 @@ To view, sort, and search the applied sensitivity labels, use the **Active sites
 
 For more information about managing sites from the Active sites page, including how to add a column, see [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
 
-You can even change and apply a label from this page:
+You can also change and apply a label from this page:
 
 1. Select the site name to open the details pane.
 
