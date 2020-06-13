@@ -238,7 +238,7 @@ You can even change and apply a label from this page:
 
 2. Select the **Policies** tab, and then select **Edit** for the **Sensitivity** setting.
 
-3. From the **Edit sensitivity setting** pane, select the sensitivity label you want to apply to the site.
+3. From the **Edit sensitivity setting** pane, select the sensitivity label you want to apply to the site, and then select **Save**.
 
 ## Support for sensitivity labels
 
