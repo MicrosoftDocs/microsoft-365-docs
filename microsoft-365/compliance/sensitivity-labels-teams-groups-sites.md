@@ -224,13 +224,21 @@ Make sure you have version 16.0.19418.12000 or later of the SharePoint Online Ma
 
 To apply different labels to different sites, repeat the following command for each site: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
-## View sensitivity labels in the SharePoint admin center
+## View and manage sensitivity labels in the SharePoint admin center
 
-To view the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
+To view, sort, and search the applied sensitivity labels, use the **Active sites** page in the new SharePoint admin center. You might need to first add the **Sensitivity** column:
 
 ![The Sensitivity column on the Active sites page](../media/manage-site-sensitivity-labels.png)
 
-[Learn more about managing sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
+For more information about managing sites from the Active sites page, including how to add a column, see [Manage sites in the new SharePoint admin center](/sharepoint/manage-sites-in-new-admin-center).
+
+You can even change and apply a label from this page:
+
+1. Select the site name to open the details panel.
+
+2. Select the **Policies** tab, and then select **Edit** for the **Sensitivity** setting.
+
+3. From the **Edit sensitivity setting** pane, select the sensitivity label you want to apply to the site.
 
 ## Support for sensitivity labels
 
@@ -364,3 +372,4 @@ If these containers have Azure AD classification values applied to them, the con
 
 See the webinar recording and answered questions for [Using Sensitivity labels with Microsoft Teams, O365 Groups and SharePoint Online sites](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/using-sensitivity-labels-with-microsoft-teams-o365-groups-and/ba-p/1221885#M1380).
 
+This webinar was recorded when the feature was still in preview, so you might notice some discrepancies in the UI. However, the information for this feature is still accurate, with any new capabilities documented on this page.
