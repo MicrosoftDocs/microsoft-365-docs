@@ -53,6 +53,8 @@ The global admin for your organization has full permissions to create and manage
     For example, from the Microsoft 365 compliance center:
     
     ![Create a label](../media/create-sensitivity-label-full.png)
+    
+    Note: By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
 3. Follow the prompts in the wizard for the label settings.
     
@@ -129,6 +131,8 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     For example, from the Microsoft 365 compliance center:
         
     ![Publish labels](../media/publish-sensitivity-labels-full.png)
+    
+    Note: By default, tenants don't have any label policies and you must create them. 
 
 3. In the wizard, select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
     
