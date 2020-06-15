@@ -41,13 +41,83 @@ Microsoft Endpoint DLP enables you to audit and manage the following types of ac
 
 ## What's different in Endpoint DLP
 
+There are a few extra concepts that you need to be aware of before you dig into Endpoint DLP.
 
-- onboarding integration with MDATP
-- onboarding separate from MDATP
-- activities to monitor for
-- where monitored activites show up (activity explorer)
-- device onboarding integration with IR
+### Enabling Device management
 
-## Workflow
+Device management is the functionality that enables the collection of telemetry from devices and brings it into Microsoft 365 compliance solutions like Endpoint DLP and Insider Risk management.
 
-no idea, need to braindump with Mas and Omri
+![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+
+Device management is tightly integrated with MDATP. It's okay if you don't have MDATP deployed, but if you do, all your Windows 10 MDATP devices will automatically show up in the list of devices.
+
+
+![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
+
+ If you don't have MDATP deployed, you can still use Endpoint DLP, the needed features are automatically provisioned in the background without the need for MDATP licenses. You'll also need to onboard all devices you want to use as locations in DLP policies.
+
+### Device onboarding and offboarding
+
+Without MDATP implemented, onboarding and offboarding are handled via scripts you download from the Device management center. The center has custom scripts for each of these deployment methods:
+
+- local script (up to 10 machines)
+- Group policy
+- System Center Configuration Manager (version 1610 or later)
+- Mobile Device Management/Microsoft Intune
+- VDI onboarding scripts for non-persistent machines 
+
+![device onboarding page](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
+
+
+### Viewing Endpoint DLP data
+
+Once a device is onboarded, information about audited activities flows into Activity Explorer even before you configure and deploy any DLP policies that have devices as a location. Endpoint DLP monitors activity based om MIME type, so activities will be captured even if the file extension is changed. At public preview it watches all:
+
+- Word files
+- PowerPoint files
+- Excel files
+- PDF files
+- .csv files
+
+![endpoint dlp events in activity explorer](../media/endpoint-dlp-learn-about-4-activity-explorer.png)
+
+Endpoint DLP collects extensive information on audited activity.
+
+![copy to usb activity attributes](../media/endpoint-dlp-learn-about-5-activity-attributes.png)
+
+For example, if a file is copied to removable USB media, you'd see these attributes in the activity details:
+
+- activity type
+- client IP
+- target file path
+- happened timestamp
+- file name
+- user
+- file extension
+- file size
+- sensitive information type (if applicable)
+- sha1 value
+- sha256 value
+- previous file name
+- location
+- parent
+- filepath
+- source location type
+- platfrom
+- device name
+- destination location type
+- application that performed the copy
+- MDATP device ID (if applicable)
+- removable media device manufacturer
+- removable media device model
+- removable media device serial number 
+
+## Workflow (TBD)
+
+Here is a high level workflow for implementing and using Endpoint DLP
+
+GRAPHIC SHOWING
+
+1. WITH MDATP >> DEVICE LIST >> ACTIVITY EXPLORER FOR AUDITED EVENTS >> USING ENDPOINTS IN DLP POLICIES
+2. WITHOUT MDATP >> ENABLE DEVICE MONITORING >> ONBOARD DEVICES >> ACTIVITY EXPLORER FOR AUDITED EVENTS >> USING ENDPOINTS IN DLP POLICIES
+ 
