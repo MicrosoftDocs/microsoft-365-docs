@@ -39,7 +39,7 @@ landingContent:
           - text: Work with security groups
             url: create-edit-or-delete-a-security-group.md
           - text: Migrate email and contacts to Microsoft 365
-            url: setup/migrate-email-and-contacts-admin.md
+            url: ../setup/migrate-email-and-contacts-admin.md
   # Card (optional)
   - title: Manage shared mailboxes
     linkLists:
