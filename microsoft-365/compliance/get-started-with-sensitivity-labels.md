@@ -71,8 +71,6 @@ You'll find additional general deployment guidance in the downloadable Microsoft
 
 All scenarios require you to [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
 
-Use the following documentation to support your sensitivity labeling deployment:
-
 |I want to ...|Documentation|
 |----------------|---------------|
 |Enable users to label and protect files from Windows computers using Office apps, File Explorer, and PowerShell|[Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
