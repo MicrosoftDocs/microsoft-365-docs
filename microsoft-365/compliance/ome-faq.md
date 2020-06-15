@@ -116,6 +116,11 @@ To enable encryption for PDF attachments, run the following command in [Exchange
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
+PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. For all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Also, if an Outlook on the web user attaches an unprotected PDF document and applies protection to message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+
+> [!IMPORTANT]
+> Outlook desktop client does not support PDF encryption.
+
 ## Are OneDrive for Business attachments supported?
 
 Not yet. OneDrive for Business attachments are not supported and end-users can't encrypt a mail that contains a cloud OneDrive for Business attachment.
