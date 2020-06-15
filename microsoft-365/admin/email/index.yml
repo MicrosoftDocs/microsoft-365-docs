@@ -54,7 +54,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Set up a shared mailbox
+          - text: Configure shared mailbox settings
             url: configure-a-shared-mailbox.md
           - text: Convert a user mailbox to a shared mailbox
             url: convert-user-mailbox-to-shared-mailbox.md
