@@ -49,7 +49,7 @@ Device management is the functionality that enables the collection of telemetry 
 
 ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-Device management is tightly integrated with [Microsoft Defender Advanced Threat Protection  (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/). It's okay if you don't have MDATP deployed, but if you do, all your Windows 10 MDATP devices will automatically show up in the list of devices.
+Device management is tightly integrated with [Microsoft Defender Advanced Threat Protection  (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/). It's okay if you don't have MDATP deployed, but if you do, all your Windows 10 MDATP devices will automatically show up in the list of devices.
 
 
 ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
