@@ -66,7 +66,7 @@ For step-by-step guidance to create custom alert policies, see [Alert policies i
 
 Having standing access by some users to sensitive information or critical network configuration settings is a potential pathway for compromised accounts or internal threat activities. [Privileged access management](privileged-access-management-overview.md) helps protect your organization from breaches and helps to meet compliance best practices by limiting standing access to sensitive data or access to critical configuration settings. Instead of administrators having constant access, just-in-time access rules are implemented for tasks that need elevated permissions. Enabling privileged access management in Microsoft 365 allows your organization to operate with zero standing privileges and provide a layer of defense against standing administrative access vulnerabilities.
 
-For step-by-step guidance to configure privileged access management, see [Get started with privileged access management](privileged-access-management-configuration.md).
+For step-by-step guidance to configure privileged access management, see [Get started with privileged access management](privileged-access-management-configuration.md). For privileged access management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#privileged-access-management-in-office-365).
 
 ## Task 6: Classify and protect sensitive data
 
@@ -74,7 +74,7 @@ To get their work done, people in your organization collaborate with others both
 
 [Sensitivity labels](sensitivity-labels.md) let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. Use sensitivity labels to enforce encryption and usage restrictions apply visual markings, and protect information across platforms and devices, on-premises and in the cloud.
 
-For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md). For sensitivity label licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ## Task 7: Configure a retention policy
 
@@ -84,7 +84,7 @@ When content is subject to a retention policy, people can continue to edit and w
 
 You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment: Exchange mail and public folders, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Known as an 'org-wide retention policy', there are no limits to the number of mailboxes or sites the policy can include. But if you need to get more specific, you can do so by configuring a retention policy for specific locations and then include or exclude sites or users.
 
-For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md).
+For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ## Task 8: Configure sensitive information and offensive language policies
 
@@ -94,7 +94,7 @@ A pre-defined *Offensive language and anti-harassment* policy template allows yo
 
 The pre-defined *Sensitive information* policy template helps you quickly create a policy to scan email and Microsoft Teams communications containing defined sensitive information types or keywords to help make sure that important data isn't shared with people that shouldn't have access. These activities could include unauthorized communication about confidential projects or industry-specific rules on insider trading or other collusion activities.
 
-For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md).
+For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 ## Next steps
 
@@ -106,17 +106,19 @@ While retention policies apply at the container level to locations such as Share
 
 Additionally, retention labels support [records management](records-management.md) to mark content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. These restrictions might be needed to help your organization comply with regulatory requirements.
 
-For step-by-step guidance to create and publish retention labels, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
+For step-by-step guidance to create and publish retention labels, see [Create, publish, and auto-apply retention labels](create-retention-labels.md). For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ### Identify and define sensitive information types
 
 Define sensitive information types based on the pattern contained in information in your organization’s data. Use [built-in sensitive information types](what-the-sensitive-information-types-look-for.md) help identify and protect credit card numbers, bank account numbers, passport numbers, and more. Or create your own [custom sensitivity information types](custom-sensitive-info-types.md) specific to your organization.
 
+For step-by-step guidance to define custom sensitive information types, see [Create a custom sensitive information type in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type).
+
 ### Prevent data loss
 
 [Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive information across Microsoft services, prevent the accidental sharing of sensitive information, and help users learn how to stay compliant without interrupting their workflow.
 
-For step-by-step guidance to configure DLP policies, see [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) and [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md).
+For step-by-step guidance to configure DLP policies, see [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) and [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ### Detect and act on insider risks
 
@@ -124,4 +126,4 @@ More and more, employees have increasing access to create, manage, and share dat
 
 [Insider risk management](insider-risk-management-policies.md) in Microsoft 365 uses the full breadth of service and 3rd-party indicators to help you quickly identify, triage, and act on risky user activity. By using logs from Microsoft 365 and Microsoft Graph, insider risk management allows you to define specific policies to identify risk indicators and to take action to mitigate these risks.
 
-For step-by-step guidance to plan and configure insider risk management policies, see [Plan for insider risk management](insider-risk-management-plan.md) and [Get started with insider risk management](insider-risk-management-configure.md).
+For step-by-step guidance to plan and configure insider risk management policies, see [Plan for insider risk management](insider-risk-management-plan.md) and [Get started with insider risk management](insider-risk-management-configure.md). For insider risk management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).
