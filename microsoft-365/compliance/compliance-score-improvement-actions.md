@@ -24,6 +24,8 @@ description: "Learn how to manage your compliance activities in Microsoft Compli
 
 Improvement actions centralize your compliance activities. Each improvement action gives detailed implementation guidance to help you align with data protection regulations and standards. Actions can be assigned to users in your organization to perform implementation and testing work. You can also store documentation, notes, and record status updates within the improvement action.
 
+All of your improvement are listed on the improvement actions page. [Learn more](compliance-score-setup.md#improvement-actions-page) about how to filter your view of your improvement actions and interpret status states.
+
 ## Improvement actions details page
 
 Each improvement action has a details page showing its current status and the related standards and regulatory requirements. Detailed implementation guidance includes a **launch now** link taking you into the appropriate solution for implementation. You can attach implementation and testing documentation directly into an improvement action's details page.
@@ -92,7 +94,7 @@ To edit an improvement action’s status, select **Edit status** on the upper-le
     - **Not in scope** – action isn’t relevant to your organization and doesn’t contribute to your score
 - **Implementation date**: available to select when implementation status is "implemented" or "alternative implementation"
 - **Test status**: available to select when implementation status is "implemented" or "alternative implementation":
-    - **Not assessed** – action has not been implemented or tested
+    - **Not tested** – action has not been implemented or tested
     - **Passed**- implementation has been verified by an assessor
     - **Failed low risk** - testing failed, low risk
     - **Failed medium risk** - testing failed, medium risk

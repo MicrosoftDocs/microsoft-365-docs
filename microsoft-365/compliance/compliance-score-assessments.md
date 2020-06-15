@@ -26,6 +26,8 @@ Compliance Score helps you manage compliance with assessments for the regulation
 
 Each assessment is created from a template, which serves as a framework containing the necessary controls and improvement actions for completing the assessment. Setting up the most relevant assessments for your organization helps ensure you’re implementing policies and operational procedures that can limit your compliance risk.
 
+All of your assessments are listed on the assessments page. [Learn more](compliance-score-setup.md#assessments-page) about how to filter your view of your assessments and interpret status states.
+
 ## Data protection baseline default assessment
 
 To get you started, Microsoft provides a **default** assessment in Compliance Score for you that contains the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
@@ -165,11 +167,11 @@ Beneath the chart, a table lists detailed information about each control within 
 
 - **Control title**
 - **Status**: reflects the test status of the improvement actions within the control 
-    - **Passed** - all improvement actions have a test status of “passed
+    - **Passed** - all improvement actions have a test status of “passed"
     -  **Failed** - at least one improvement action has a test status of “failed”
-    - **None** - not all improvement actions have been tested
+    - **None** - all improvement actions have not been tested
     - **Out of scope** - all improvement actions are out of scope for this assessment
-    - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected”
+    - **In progress** - improvement actions have a status other than the ones listed above, which could include “in progress,” “partial credit,” or “undetected”
 - **Control ID**: the control’s identification number, assigned by its corresponding regulation, standard, or policy
 - **Points achieved**: the number of points earned by completing actions, out of the total number of achievable points 
 - **Your actions**: the number of your actions completed out of the total number of actions to be done

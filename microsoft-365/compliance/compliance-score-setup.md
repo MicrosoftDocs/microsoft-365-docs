@@ -166,7 +166,9 @@ The improvement actions page shows the following data points for each improvemen
     - **Failed medium risk** - testing failed, medium risk
     - **Failed high risk** - testing failed, high risk
     - **Not in scope** – the action is not in scope for the assessment and doesn't impact your score
-    - **Partially tested** – testing incomplete
+    - **Partial credit** – automated scoring that awards partial points
+    - **In progress** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
+    - **Unknown** - automated status can't be determined
 - **Points achieved**: number of points earned out of the maximum possible
 
 #### Learn more
@@ -206,9 +208,9 @@ This page summarizes key information about each assessment:
 
 - **Assessment**: name of the assessment
 - **Status**:
-    - **Complete** -  all controls have a status of “passed” or “out of scope”
-    - **Incomplete** – at least one control has a status of “failed
-    - **None** - all controls have a test status of “none” (have not been tested)
+    - **Complete** -  all controls have a status of “passed,” or at least one is passed and the rest are “out of scope”
+    - **Incomplete** – at least one control has a status of “failed"
+    - **None** - all controls have have not been tested
     - **In progress** - improvement actions have any other status, including “in progress,” “partial credit,” or “undetected
 - **Assessment progress**: the percentage of the work done toward completion, as measured by the number of controls successfully tested
 - **Your improvement actions**: the number of completed actions to satisfy implementation of your controls
