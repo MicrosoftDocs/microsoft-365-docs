@@ -32,6 +32,8 @@ Follow these links for information on how to:
 - Set up mobile devices: [Microsoft 365 mobile setup - Help](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f.aspx)
 
 - Set up email in Outlook: [Windows](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) or [Mac](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac)
+ 
+- [Upgrade users to the latest apps](upgrade-users-to-latest-office-client.md) 
 
 ::: moniker range="o365-21vianet"
 

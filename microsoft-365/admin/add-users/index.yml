@@ -41,6 +41,8 @@ landingContent:
             url: ../manage/remove-licenses-from-users.md
           - text: Use your custom domain
             url: ../email/change-email-address.md
+          - text: Upgrade users to the latest apps 
+            url: ../setup/upgrade-users-to-latest-office-client.md
   # Card
   - title: Manage groups
     linkLists:
