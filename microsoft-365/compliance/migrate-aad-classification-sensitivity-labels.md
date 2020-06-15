@@ -103,6 +103,6 @@ $groups = Get-UnifiedGroup | where {$_.Classification -eq "General"}
 
 # For each group, add the sensitivity label GUID:
 
-foreach ($g in $groups)</br>
+foreach ($g in $groups)
 {Set-UnifiedGroup -Identity $g.DisplayName -SensitivityLabelId "457fa763-7c59-461c-b402-ad1ac6b703cc"}
 ```
