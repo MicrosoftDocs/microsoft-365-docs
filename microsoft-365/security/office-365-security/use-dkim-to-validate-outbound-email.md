@@ -99,7 +99,7 @@ Stay connected to Microsoft 365 to *verify* the configuration.
 1. Run the following command:
 
    ```powershell
-   Get-DkimSigningConfig | Format-List
+   Get-DkimSigningConfig -Identity {Domain for which the configuration was set} | Format-List
    ```
 
 > [!TIP]
