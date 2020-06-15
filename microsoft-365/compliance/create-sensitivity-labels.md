@@ -52,7 +52,7 @@ The global admin for your organization has full permissions to create and manage
     
     For example, from the Microsoft 365 compliance center:
     
-    ![Create a label](../media/create-sensitivity-label-full.png)
+    ![Create a sensitivity label](../media/create-sensitivity-label-full.png)
     
     Note: By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
@@ -64,7 +64,11 @@ The global admin for your organization has full permissions to create and manage
 
 5. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
 
-To edit an existing label, select it, and then select the **Edit label** button. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
+To edit an existing label, select it, and then select the **Edit label** button:
+
+![Edit a sensitivity label](../media/edit-sensitivity-label-full.png)
+
+This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
 
 > [!NOTE]
 > If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to users and services.
@@ -151,7 +155,11 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 Completing the wizard automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
 
-To edit an existing label policy, select it, and then select the **Edit Policy** button. This starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
+To edit an existing label policy, select it, and then select the **Edit Policy** button: 
+
+![Edit a sensitivity label](../media/edit-sensitivity-label-policy-full.png)
+
+This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
 
 Typically, users see the labels in their Office apps within a couple of hours. However, allow up to 24 hours for your label policies and any changes to them to replicate to all users and services.
 
