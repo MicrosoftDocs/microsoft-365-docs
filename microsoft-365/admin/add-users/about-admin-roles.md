@@ -26,7 +26,7 @@ description: "Admin roles map to business functions and give permissions to do s
 
 # About admin roles
 
-[test](add-new-employee.md&azure-portal=true)
+[test](add-new-employee.md?azure-portal=true)
 
 Your Microsoft 365 or Office 365 subscription comes with a set of admin roles that you can assign to users in your organization using the Microsoft 365 admin center. Each admin role maps to common business functions and gives people in your organization permissions to do specific tasks in the admin centers.
 
