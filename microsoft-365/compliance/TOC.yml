@@ -2,6 +2,8 @@
   href: index.yml
 - name: Get started
   items: 
+    - name: Quick tasks to get started with compliance
+      href: compliance-quick-tasks.md
     - name: What's new in the compliance center
       href: whats-new.md
     - name: Recent updates to compliance content
@@ -472,6 +474,8 @@
             href: retry-failed-content-search.md
           - name: Use Microsoft Edge to download search results
             href: configure-edge-to-export-search-results.md
+          - name: Search for eDiscovery activities in the audit log
+            href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
         - name: Overview of Advanced eDiscovery
@@ -587,6 +591,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Search for eDiscovery activities in the audit log
+              href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (classic)

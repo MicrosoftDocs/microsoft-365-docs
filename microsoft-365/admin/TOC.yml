@@ -16,7 +16,7 @@
              href: setup/setup-business-basic.md
            - name: Microsoft 365 Business Standard
              href: setup/setup-business-standard.md
-           - name: Microsoft Business Premium
+           - name: Microsoft 365 Business Premium
              href: ../business/set-up.md
            - name: Microsoft 365 Apps for business
              href: setup/setup-apps-for-business.md
@@ -117,6 +117,8 @@
              href: add-users/resend-user-password.md
            - name: Create template to add users
              href: add-users/create-and-use-a-template-to-add-users.md
+           - name: Upgrade users to the latest apps 
+             href: setup/upgrade-users-to-latest-office-client.md
         - name: Groups 
           items:
            - name: Groups overview
@@ -204,8 +206,6 @@
     - name: Manage your data and services
       href: manage/index.yml
       items:
-         - name: Upgrade your organization to the latest apps 
-           href: setup/upgrade-users-to-latest-office-client.md
          - name: Monitor user activity by using reports
            href: activity-reports/activity-reports.md
          - name: Change your organization contact info
@@ -288,6 +288,8 @@
           href: ../business/map-protection-features-to-intune-settings.md
         - name: Device states
           href: ../business/device-states.md
+        - name: App protection settings for Windows 10 PCs
+          href: ../business/protection-settings-for-windows-10-devices.md
         - name: App protection settings for Android and iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items: 
@@ -298,8 +300,6 @@
           items: 
             - name: Validate settings on Windows 10 PCs
               href: ../business/validate-settings-on-windows-10-pcs.md
-        - name: App protection settings for Windows 10 PCs
-          href: ../business/protection-settings-for-windows-10-devices.md
         - name: Autopilot
           items: 
             - name: Add Autopilot devices and profile

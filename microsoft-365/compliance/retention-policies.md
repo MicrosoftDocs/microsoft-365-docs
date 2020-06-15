@@ -136,18 +136,17 @@ The older features that you might have used:
   
 **Older features from Exchange Online:**
 
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery hold) 
-    
 - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery hold) 
 
 - [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md)
     
 - [Retention tags and retention policies](https://go.microsoft.com/fwlink/?linkid=846125), also known as [messaging records management (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (deletion only)
     
+See also [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+
+
 **Older features from SharePoint and OneDrive:**
 
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery hold) 
-    
 - [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (eDiscovery hold) 
     
 - [Document deletion policies](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (deletion only)
