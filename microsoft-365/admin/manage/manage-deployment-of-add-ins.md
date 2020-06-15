@@ -79,7 +79,7 @@ Before you begin, see [Determine if Centralized Deployment of add-ins works for 
 7. A green tick will appear when the add-in has been deployed. You can follow the on-page instructions to test that the add-in has deployed successfully.
 
 > [!NOTE]
-> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 12 hours to appear on users' ribbons.
+> Users may need to relaunch Office to see the add-in icon appear on the ribbon of app. Outlook add-ins can take up to 24 hours to appear on users' ribbons.
     
 8. When finished, select **Next**. If you've deployed to just yourself, you can select **Change who has access to add-in** in order to deploy to more users.
 
@@ -215,8 +215,8 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
 |||
 |:-----|:-----|
 |**Platform** <br/> |**Build number** <br/> |
-|Microsoft 365 Apps for enterprise (Monthly Channel)  <br/> |9001.2138   <br/> |
-|Microsoft 365 Apps for enterprise (Semi-Annual Channel)  <br/> |8431.2159  <br/> |
+|Microsoft 365 Apps for enterprise (Current Channel)  <br/> |9001.2138   <br/> |
+|Microsoft 365 Apps for enterprise (Semi-Annual Enterprise Channel)  <br/> |8431.2159  <br/> |
 |Office 2016 for Windows  <br/> |16.0.4672.1000  <br/> |
 |Office 2013 for Windows  <br/> |15.0.5023.1000  <br/> |
 |Office 2016 for Mac  <br/> |16.11.18020200  <br/> |
