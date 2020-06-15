@@ -142,7 +142,7 @@ This report helps business leaders understand:
 
 - If people are using meetings effectively, and how they are 
 
-[Learn more about the Business continuity report](http://aka.ms/bcrps)
+[Learn more about the Business continuity report](https://aka.ms/bcrps)
 
 [Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
 
