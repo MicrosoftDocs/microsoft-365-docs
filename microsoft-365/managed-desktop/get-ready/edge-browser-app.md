@@ -113,3 +113,23 @@ With this policy applied, the First Run Experience will skip the import section,
 
 
 ## Settings you manage
+
+You can deploy any Microsft Edge settings not previously described by using the Administrative Templates profile in Microsoft Intune. For details, see [Configure Microsoft Edge policy settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). If you want to evaluate a policy that is not currently included in the Microsoft Edge Administrative Templates in Intune you can use custom settings for Windows 10 devices in Intune.
+
+### Enabling specific Chrome extensions
+
+The Administrative Template offers a setting to deploy particular Chrome extensions with Microsoft Intune. You can find it in **Computer Configuration > Microsoft Edge > Extensions > Allow Specific Extensions to be installed**.
+
+### Install extensions silently
+
+You can also use the Administrative Template to set Microsoft Edge to install extensions without alerting the user. You can find it in **Computer Configuration > Microsoft Edge > Extensions > Control which extensions are installed silently**.
+
+### Other common enterprise policies
+
+Microsoft Edge offers a great many additional policies. These are some of the more common ones:
+ 
+- [Configure Sites on the Enterprise Site List and IE Mode](https://docs.microsoft.com/deployedge/edge-ie-mode-sitelist)
+- [Configure start-up, home page, and new tab page settings](https://docs.microsoft.com/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
+- [Configure Surf game setting](https://docs.microsoft.com/deployedge/microsoft-edge-policies#allowsurfgame)
+- [Configure proxy server settings](https://docs.microsoft.com/deployedge/microsoft-edge-policies#proxy-server)
+
