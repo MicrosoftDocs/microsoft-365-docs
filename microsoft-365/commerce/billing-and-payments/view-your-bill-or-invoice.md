@@ -70,13 +70,13 @@ If you found this video helpful, check out the [complete training series for sma
 
 3. On the summary page, you can see the following:
 
-  - The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.
+    - The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.
 
-  - Payment instructions.
+    - Payment instructions.
 
-  - A record of past payment dates, and the amounts paid.
+    - A record of past payment dates, and the amounts paid.
 
-  - The order creation date, and the order number.
+    - The order creation date, and the order number.
 
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
