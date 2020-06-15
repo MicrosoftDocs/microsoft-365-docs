@@ -69,11 +69,12 @@ You'll find additional general deployment guidance in the downloadable Microsoft
 
 ## Common scenarios for sensitivity labels
 
+All scenarios require you to [Create and configure sensitivity labels and their policies](create-sensitivity-labels.md).
+
 Use the following documentation to support your sensitivity labeling deployment:
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Create and publish sensitivity labels that will help protect my organization's data|[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md)|
 |Enable users to label and protect files from Windows computers using Office apps, File Explorer, and PowerShell|[Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Encrypt documents and emails with sensitivity labels and restrict who can access that content and how it can be used |[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md)|
 |Enable sensitivity labels for Office on the web, with support for coauthoring, eDiscovery, data loss prevention, search—even when documents are encrypted. | [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
