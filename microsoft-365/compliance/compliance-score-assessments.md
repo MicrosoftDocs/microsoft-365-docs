@@ -167,7 +167,7 @@ Beneath the chart, a table lists detailed information about each control within 
 
 - **Control title**
 - **Status**: reflects the test status of the improvement actions within the control 
-    - **Passed** - all improvement actions have a test status of “passed"
+    - **Passed** - all improvement actions have a test status of “passed,” or at least one is passed and the rest are “out of scope”
     -  **Failed** - at least one improvement action has a test status of “failed”
     - **None** - all improvement actions have not been tested
     - **Out of scope** - all improvement actions are out of scope for this assessment
