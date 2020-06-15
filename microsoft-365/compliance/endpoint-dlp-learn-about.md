@@ -24,11 +24,11 @@ description: "Microsoft 365 Endpoint data loss prevention (EPDLP) extends monito
 
 You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that are being taken on items you've determined to be sensitive and to help prevent the unintentional sharing of those items. For more information on DLP, see [Overview of data loss prevention](data-loss-prevention-policies.md).
 
-**Endpoint data loss prevention** (EPDLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded as locations, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
+**Endpoint data loss prevention** (EPDLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are on Windows 10 devices. Once devices are onboarded into device management, the information about what users are doing with sensitive items is made visible in [activity explorer](data-classification-activity-explorer.md) and you can enforce protective actions on those items via [DLP policies](create-test-tune-dlp-policy.md).
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on files on devices running Windows 10. This includes: 
+Microsoft EPDLP enables you to audit and manage the following types of activities users take on files on devices running Windows 10. This includes: 
 
 - File created
 - File renamed
@@ -49,12 +49,12 @@ Device management is the functionality that enables the collection of telemetry 
 
 ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
 
-Device management is tightly integrated with MDATP. It's okay if you don't have MDATP deployed, but if you do, all your Windows 10 MDATP devices will automatically show up in the list of devices.
+Device management is tightly integrated with [Microsoft Defender Advanced Threat Protection  (MDATP)](https://docs.microsoft.com/en-us/windows/security/threat-protection/). It's okay if you don't have MDATP deployed, but if you do, all your Windows 10 MDATP devices will automatically show up in the list of devices.
 
 
 ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
 
- If you don't have MDATP deployed, you can still use Endpoint DLP, the needed features are automatically provisioned in the background without the need for MDATP licenses. You'll also need to onboard all devices you want to use as locations in DLP policies.
+ If you don't have MDATP deployed, you can still use Endpoint DLP, the needed features are automatically provisioned in the Microsoft 365 cloud infrastructure without the need for MDATP licenses. You'll also need to onboard all devices you want to use as locations in DLP policies.
 
 ### Device onboarding and offboarding
 
