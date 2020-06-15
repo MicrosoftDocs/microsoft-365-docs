@@ -68,7 +68,9 @@ To edit an existing label, select it, and then select the **Edit label** button:
 
 ![Edit a sensitivity label](../media/edit-sensitivity-label-full.png)
 
-This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
+This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3.
+
+Don't delete a label unless you understand the impact for users. For more information, see the [Removing and deleting labels](#removing-and-deleting-labels) section. 
 
 > [!NOTE]
 > If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to users and services.
