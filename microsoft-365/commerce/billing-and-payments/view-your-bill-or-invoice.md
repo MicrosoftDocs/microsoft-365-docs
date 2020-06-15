@@ -66,7 +66,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ::: moniker-end
 
-2. Select a date range from the drop-down list, and then choose the order you want to view.
+2. On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.
 
 3. On the summary page, you can see the following:
 
