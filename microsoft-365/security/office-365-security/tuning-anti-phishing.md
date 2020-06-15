@@ -46,11 +46,11 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - On a monthly basis, run [Secure Score](../mtp/microsoft-secure-score.md) to assess your organization's security settings.
 
-- For messages that end up in quarantine by mistake, or for messages that are allowed through, it is recommended to search for those messages in [Threat Explorer (Real-time detections)](threat-explorer.md). You can search by sender, recipient, or message id. Once you locate the message, go to details by clicking on the subject. For a quarantined mail, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed mail, look to see which policy allowed the message. 
+- For messages that end up in quarantine by mistake, or for messages that are allowed through, we recommend that you search for those messages in [Threat Explorer and real-time detections](threat-explorer.md). You can search by sender, recipient, or message ID. After you locate the message, go to details by clicking on the subject. For a quarantined message, look to see what the "detection technology" was so that you can use the appropriate method to override. For an allowed message, look to see which policy allowed the message. 
 
 - Spoofed mail is tagged as phish in ATP. Sometimes spoof is benign, and sometimes users do not want it quarantined. To minimize impact to users, periodically review the [Spoof intelligence report](learn-about-spoof-intelligence.md). Once you have reviewed and made any necessary overrides, you can be confident to [configure spoof intelligence](set-up-anti-phishing-policies.md#spoof-settings) to **Quarantine** suspicious messages instead of delivering them to the user's Junk Email folder.
 
-- You can repeat the above step for Impersonation (domain or user). The Impersonation report is found under Threat Management -> Dashboard -> Insights.
+- You can repeat the above step for Impersonation (domain or user). The Impersonation report is found under **Threat Management** \> **Dashboard** \> **Insights**.
 
 - Periodically review the [Threat Protection Status report](view-reports-for-atp.md#threat-protection-status-report).
 
@@ -72,7 +72,7 @@ Specifically, you should check the **X-Forefront-Antispam-Report** header field 
 
 - Whenever possible, we recommend that you deliver email for your domain directly to Microsoft 365. In other words, point your Microsoft 365 domain's MX record to Microsoft 365. Exchange Online Protection (EOP) is able to provide the best protection for your cloud users when their mail is delivered directly to Microsoft 365. If you must use a third-party email hygiene system in front of EOP, use Enhanced Filtering for Connectors. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-- User should [report messages](enable-the-report-message-add-in.md) to Microsoft which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
+- Users should [report messages](enable-the-report-message-add-in.md) to Microsoft, which can train our system. Admins should also take advantage of [Admin Submission](admin-submission.md) capabilities.
 
 - Multi factor authentication (MFA) is a good way to prevent compromised accounts. You should strongly consider enabling MFA for all of your users. For a phased approach, start by enabling MFA for your most sensitive users (admins, executives, etc.) before you enable MFA for everyone. For instructions, see [Set up multi-factor authentication](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
