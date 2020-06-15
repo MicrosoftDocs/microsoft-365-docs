@@ -140,6 +140,8 @@ To add multiple users at the same time, follow these steps:
 
 ## Related articles
 
+[Assign licenses to users](../manage/assign-licenses-to-users.md)
+
 [Add a new employee to Microsoft 365](add-new-employee.md)
 
 [Delete a user from your organization](delete-a-user.md)

@@ -126,7 +126,7 @@
     },
     {
       "source_path": "microsoft-365/enterprise/deploy-sites-for-three-tiers-of-protection.md",
-      "redirect_url": "https://docs.microsoft.com/office365/securitycompliance/deploy-sharepoint-online-sites-for-three-tiers-of-protection",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
       "redirect_document_id": false
     },
     {
@@ -145,6 +145,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-azure-information-protection.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-dev-test.md",
       "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment",
       "redirect_document_id": false
@@ -152,6 +162,21 @@
     {
       "source_path": "microsoft-365/enterprise/secure-sharepoint-online-sites-and-files.md",
       "redirect_url": "https://docs.microsoft.com/office365/SecurityCompliance/secure-sharepoint-online-sites-and-files",
+      "redirect_document_id": false
+    },
+    {
+        "source_path": "office365/SecurityCompliance/secure-sharepoint-online-sites-and-files.md",
+        "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+        "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365-docs/microsoft-365/security/office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/team-security-isolation-dev-test",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "microsoft-365-docs/microsoft-365/security/office-365-security/secure-team-for-files-in-a-dev-test-environment.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/team-security-isolation-dev-test",
       "redirect_document_id": false
     },
     {
@@ -699,6 +724,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365-docs/microsoft-365/compliance/protect-sharepoint-online-files-with-sensitivity-label.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/solutions/configure-teams-three-tiers-protection",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "./office-365-security/messaging-policy-and-compliance-in-eop.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/office-365-security/auditing-reports-in-eop",
       "redirect_document_id": true
@@ -779,7 +809,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "microsoft-365/compliance/search-the-audit-log.md",
+      "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance",
       "redirect_document_id": true
     },

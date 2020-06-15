@@ -42,7 +42,7 @@ As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-
 
 ## How to get ATP Safe Links protection
 
-**First, make sure your subscription includes [Office 365 Advanced Threat Protection](office-365-atp.md)** Plan 1 or Plan 2. Office 365 ATP is included in subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources:
+**First, make sure your subscription includes [Office 365 Advanced Threat Protection](office-365-atp.md)** Plan 1 or Plan 2. Office 365 ATP is included in subscriptions, such as [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources: 
 
 - [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection)
 
@@ -77,7 +77,7 @@ After ATP Safe Links policies are in place, your organization's security team ca
 
 The following table describes some example scenarios where ATP Safe Links protection might or might not be in place. (In all of these cases, we assume the organization has Office 365 Enterprise E5.)
 
-|**Example scenario**|**Does ATP Safe Links protection apply in this case?**|
+|Example scenario|Does ATP Safe Links protection apply in this case?|
 |:-----|:-----|
 |Jean is a member of a group that has ATP Safe Links policies covering URLs in email and Office documents. Jean opens a PowerPoint presentation that someone sent, and then clicks a URL in the presentation.|Yes. The ATP Safe Links policies that are defined apply to Jean's group, Jean's email, and Word, Excel, PowerPoint, or Visio documents that Jean opens, so long as Jean is signed in and using Microsoft 365 Apps for enterprise on Windows, iOS, or Android devices.|
 |In Chris's organization, no global or security administrators have defined any ATP safe links policies yet. Chris receives an email that contains a URL to a malicious website. Chris is unaware the URL is malicious and clicks the link.|No. The default policy that covers URLs for everyone in the organization must be defined in order for protection to be in place.|
