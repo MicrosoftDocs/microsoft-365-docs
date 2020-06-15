@@ -166,9 +166,9 @@ The improvement actions page shows the following data points for each improvemen
     - **Failed medium risk** - testing failed, medium risk
     - **Failed high risk** - testing failed, high risk
     - **Not in scope** – the action is not in scope for the assessment and doesn't impact your score
-    - **Partial credit** – automated scoring that awards partial points
-    - **In progress** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
-    - **Unknown** - automated status can't be determined
+    - **To be detected** - for manual test, indicates an action has been implemented but not tested; for automated test, indicates an action is waiting for automation result
+    - **Could not be detected** - automated status can't be determined
+    - **Partially tested** – automated scoring that awards partial points
 - **Points achieved**: number of points earned out of the maximum possible
 
 #### Learn more

@@ -91,10 +91,10 @@ To edit an improvement action’s status, select **Edit status** on the upper-le
     - **Implemented** - action implemented
     - **Alternative implementation** - select this option if you used other third-party tools or took other actions not included in Microsoft recommendations
     - **Planned** - action is planned for implementation
-    - **Out of scope** – action isn’t relevant to your organization and doesn’t contribute to your score
+    - **Not in scope** – action isn’t relevant to your organization and doesn’t contribute to your score
 - **Implementation date**: available to select when implementation status is "implemented" or "alternative implementation"
 - **Test status**: available to select when implementation status is "implemented" or "alternative implementation":
-    - **Not tested** – action has not been implemented or tested
+    - **Not assessed** – action has not been tested
     - **Passed**- implementation has been verified by an assessor
     - **Failed low risk** - testing failed, low risk
     - **Failed medium risk** - testing failed, medium risk
