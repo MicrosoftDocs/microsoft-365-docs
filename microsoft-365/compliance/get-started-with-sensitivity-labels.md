@@ -63,7 +63,7 @@ These permissions are required only to create and configure sensitivity labels a
 
 A successful strategy to deploy sensitivity labels for an organization is to create a working virtual team that identifies and manages the business and technical requirements, proof of concept testing, internal checkpoints and approvals, and final deployment on the production environment.
 
-Using the scenarios in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.
+Using the table in the next section, we recommend identifying your top one or two scenarios that map to your most impactful business requirements. After these scenarios are deployed, return to the list to identify the next one or two priorities for deployment.
 
 You'll find additional general deployment guidance in the downloadable Microsoft 365 Information Protection & Compliance deployment acceleration guide. For more information, see the blog post, [Microsoft Information Protection and Compliance Deployment Acceleration Guide](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-compliance-deployment/ba-p/1403493).
 
