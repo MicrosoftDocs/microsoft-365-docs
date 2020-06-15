@@ -195,7 +195,7 @@ You can [Apply for tax-exempt status](tax-information.md#apply-for-tax-exempt-st
 
 ::: moniker range="o365-worldwide"
 
-1. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills</a> page, select an invoice date range.
+1. On the <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills</a> page, select an invoice date range.
   
 2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
 

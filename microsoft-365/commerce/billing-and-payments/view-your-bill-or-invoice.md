@@ -50,7 +50,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 ::: moniker-end
 
@@ -80,7 +80,6 @@ If you found this video helpful, check out the [complete training series for sma
 
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
-  
 ## Related articles
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md)
