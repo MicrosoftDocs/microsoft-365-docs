@@ -158,7 +158,7 @@ If you purchased your subscription from GoDaddy or another Partner, to set the n
   
 ## Related articles
 
-[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e.aspx)
+[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md)
   

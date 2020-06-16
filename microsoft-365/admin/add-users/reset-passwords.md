@@ -117,7 +117,7 @@ Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with Powe
   
 Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
+For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## Force a password change for all users in your business
 <a name="bkmk_forgot"> </a>

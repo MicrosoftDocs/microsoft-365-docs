@@ -41,9 +41,9 @@ You need to use a version of Outlook that is installed on your desktop for this 
 
 Follow these steps to import email, contacts, and calendar from Gmail into Outlook with Microsoft 365:
   
-- [Import Gmail to Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7.aspx)
+- [Import Gmail to Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
-- [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+- [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 - [Import Google Calendar](https://support.microsoft.com/office/098ed60c-936b-41fb-83d6-7e3786437330)
     
@@ -59,9 +59,9 @@ Follow these steps to export email, contacts and calendars from Outlook to a .ps
     
 If you just want contacts, follow these steps:
   
-1. [Export contacts from Outlook](https://support.microsoft.com/office/10f09abd-643c-4495-bb80-543714eca73f.aspx)
+1. [Export contacts from Outlook](https://support.microsoft.com/office/10f09abd-643c-4495-bb80-543714eca73f)
     
-2. [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8.aspx)
+2. [Import contacts to Outlook](https://support.microsoft.com/office/bb796340-b58a-46c1-90c7-b549b8f3c5f8)
     
 To start the process, open Outlook and choose **File** \> **Open &amp; Export** \> **Import/Export**.
   
@@ -79,7 +79,7 @@ Add an account, such as your private Gmail account, to Outlook.
     
 Need more detailed steps? See [Add an account](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
-[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx)
+[![Screenshot showing Outlook account information page in the backstage view.](../../media/6a7fa106-1077-4351-9fe2-8eb00918b40a.png)](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)
   
 ## Multiple mailboxes: Admins can bulk import email, contacts, and calendars to Microsoft 365
 

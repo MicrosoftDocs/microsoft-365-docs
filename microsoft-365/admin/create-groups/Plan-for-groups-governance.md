@@ -46,10 +46,10 @@ There are three main communication methods supported by Microsoft 365 Groups. Gr
 > Creating a new group via other teamwork applications - such as SharePoint, Planner or Stream - will create a group with an Outlook inbox and the ability to connect to Microsoft Teams.
 
 Depending on where a group is created, certain resources are provisioned automatically, such as:
-- [Inbox](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) - For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.
+- [Inbox](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) - For email conversations between group members. This inbox has an email address and can be set to accept messages from people outside the group and even outside your organization, much like a traditional distribution list.
  - [Calendar](https://support.microsoft.com/office/schedule-a-meeting-on-a-group-calendar-in-outlook-0cf1ad68-1034-4306-b367-d75e9818376a) – For scheduling events related to the group
 - [SharePoint team site](https://support.microsoft.com/office/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e) – A central repository for information, links and content relating to your group
-- [SharePoint document library](https://support.microsoft.com/en-us/office/share-group-files-in-outlook-749bc73b-90c9-4760-9b6f-9aa1cf01b403) – A central place for the group to store and share files
+- [SharePoint document library](https://support.microsoft.com/office/749bc73b-90c9-4760-9b6f-9aa1cf01b403) – A central place for the group to store and share files
 - [OneNote notebook](https://support.microsoft.com/office/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97) – For gathering ideas, research, and information
 - [Planner](https://support.microsoft.com/office/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc) – For assigning and managing project tasks among your group members
 - [Yammer group](https://support.microsoft.com/office/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) – A common place to have conversations and share information
@@ -203,7 +203,7 @@ Once you set a group to expire:
 >When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
 
 #### *Resources*
-- [Microsoft 365 group Expiration Policy](https://support.microsoft.com/office/Office-365-Group-Expiration-Policy-8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
+- [Microsoft 365 group Expiration Policy](https://support.microsoft.com/office/8d253fe5-0e09-4b3c-8b5e-f48def064733?ui=en-US&rs=en-US&ad=US)
 - [Configure the expiration policy for Microsoft 365 Groups](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
 ### <a name="group-guest-access"></a>Group guest access

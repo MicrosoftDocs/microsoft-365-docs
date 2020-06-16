@@ -81,4 +81,4 @@ To learn about changing other profile information, see [Change your contact pref
   
 ### Email signatures
   
-You can change your email signature in Outlook Web App. For more information, see [Mail settings](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c.aspx).
+You can change your email signature in Outlook Web App. For more information, see [Mail settings](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).
