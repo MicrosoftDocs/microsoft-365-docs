@@ -50,7 +50,7 @@ If you found this video helpful, check out the [complete training series for sma
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 ::: moniker-end
 
@@ -66,21 +66,20 @@ If you found this video helpful, check out the [complete training series for sma
 
 ::: moniker-end
 
-2. Select a date range from the drop-down list, and then choose the order you want to view.
+2. On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.
 
 3. On the summary page, you can see the following:
 
-  - The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.
+    - The total balance, the current amount due, the payment due date, the amount of the last payment, and the date it was received.
 
-  - Payment instructions.
+    - Payment instructions.
 
-  - A record of past payment dates, and the amounts paid.
+    - A record of past payment dates, and the amounts paid.
 
-  - The order creation date, and the order number.
+    - The order creation date, and the order number.
 
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
-  
 ## Related articles
 
 [Pay by invoice, credit card, or bank account](pay-for-your-subscription.md)
