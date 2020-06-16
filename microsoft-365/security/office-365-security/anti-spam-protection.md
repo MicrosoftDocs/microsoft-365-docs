@@ -24,7 +24,7 @@ description: "Admins can learn about the anti-spam settings and filters that wil
 # Anti-spam protection in EOP
 
 > [!NOTE]
-> This topic is intended for admins. For end-user topics, see [Overview of the Junk Email Filter](https://support.Microsoft.com/article/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) and [Learn about junk email and phishing](https://support.Microsoft.com/article/86c1d76f-4d5a-4967-9647-35665dc17c31).
+> This topic is intended for admins. For end-user topics, see [Overview of the Junk Email Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) and [Learn about junk email and phishing](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31).
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, email messages are automatically protected against spam (junk email) by EOP.
 
