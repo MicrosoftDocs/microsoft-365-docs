@@ -10,7 +10,7 @@ ms.collection: SPO_Content
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn about the Microsoft 365 configuration steps necessary to set up a team for collaboration with guests in Teams."
+description: Learn about the Microsoft 365 configuration steps necessary to set up a team for task, conversation, and documentation collaboration with guests in Teams.
 ---
 
 # Collaborate with guests in a team
@@ -85,7 +85,7 @@ Teams content such as files, folders, and lists are all stored in SharePoint. In
 
 The organization-level settings determine what settings are available for individual sites, including sites associated with teams. Site settings cannot be more permissive than the organization-level settings.
 
-If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
+If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization for document collaboration.
 
 ![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
 
