@@ -95,7 +95,7 @@ You can use either of these two methods to confirm the attack:
 
 1. Open the users Outlook client as the user. The user may need your help in examining the rules on their mailbox.
 
-2. Refer to [Manage email messages by using rules](https://support.office.com/article/c24f5dea-9465-4df4-ad17-a50704d66c59) article for the procedures on how to open the rules interface in Outlook.
+2. Refer to [Manage email messages by using rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) article for the procedures on how to open the rules interface in Outlook.
 
 3. Look for rules that the user did not create, or any unexpected rules or rules with suspicious names.
 
@@ -107,7 +107,7 @@ You can use either of these two methods to confirm the attack:
 
 1. Open the user Outlook client as the user.
 
-2. Follow the steps in, [Show the Developer tab](https://support.office.com/article/e1192344-5e56-4d45-931b-e5fd9bea2d45) for the users version of Outlook.
+2. Follow the steps in, [Show the Developer tab](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) for the users version of Outlook.
 
 3. Open the now visible developer tab in Outlook and click **design a form**.
 
@@ -201,7 +201,7 @@ The best way to protect your user accounts, and especially your administrator ac
 
 ### Second: Keep your Outlook clients current
 
-Fully-updated and patched versions of Outlook 2013, and 2016 disable the "Start Application" rule/form action by default. This will ensure that, even if an attacker breaches the account, the rule and form actions will be blocked. You can install the latest updates and security patches by following the steps in [Install Office updates](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
+Fully-updated and patched versions of Outlook 2013, and 2016 disable the "Start Application" rule/form action by default. This will ensure that, even if an attacker breaches the account, the rule and form actions will be blocked. You can install the latest updates and security patches by following the steps in [Install Office updates](https://support.microsoft.com/office/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Here are the patch versions for your Outlook 2013 and 2016 clients:
 
@@ -219,7 +219,7 @@ For more information on the individual security patches, see:
 
 Note that even with the patches and updates installed, it is possible for an attacker to change the local machine configuration to re-enable the "Start Application" behavior. You can use [Advanced Group Policy Management](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) to monitor and enforce local machine policies on your clients.
 
-You can to see if "Start Application" has been re-enabled through an override in the registry by using the information in [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097/how-to-view-the-system-registry-by-using-64-bit-versions-of-windows). Check these subkeys:
+You can to see if "Start Application" has been re-enabled through an override in the registry by using the information in [How to view the system registry by using 64-bit versions of Windows](https://support.microsoft.com/help/305097). Check these subkeys:
 
 - **Outlook 2016**: `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
