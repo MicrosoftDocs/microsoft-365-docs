@@ -3,11 +3,10 @@ title: "How to get help in the Microsoft 365 admin center"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
-layout: LandingPage
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
+ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -29,66 +28,11 @@ description: "Learn about all the ways you can get help using the Microsoft 365 
 
 If you're an admin, [admin.microsoft.com](https://admin.microsoft.com) is your go-to place to manage and make the most of your Microsoft 365 subscription. Sometimes you might not find the right task, need more context before embarking on a task flow, or simply might not be sure of the scope and impact of your actions as an admin. To cover those situations, we provide modern help and intelligent assistance throughout the Microsoft 365 admin center in these ways:
 
-<ul class="panelContent cardsW">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntegratedHelp.png" alt="Integrated help" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Integrated help</h3>
-                            <p>Help in the admin center</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#modern-self-help-powered-by-ai">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_IntelligentAssistance.png" alt="Intelligent assistance" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Intelligent assistance</h3>
-                            <p>Self-help powered by AI</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <a href="what-is-help.md#guides-and-articles">
-                        <div class="cardImageOuter">
-                            <div class="cardImage">
-                                <img src="../../media/what-is-help/M365_WhatisHelp_ArticlesGuides.png" alt="Guides and articles" />
-                            </div>
-                        </div>
-                        <div class="cardText">
-                            <h3>Guides and articles</h3>
-                            <p>Comprehensive content on the web</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
- 
+* **Integrated help** - help in the admin center
+
+* **Intelligent assistance** - self-help powered by AI
+
+* **Guides and articles** - comprehensive content on the web
 
 ## Integrated help
 
