@@ -179,7 +179,7 @@ When you publish or auto-apply retention labels, they don't take effect immediat
     
 ### Published retention labels
 
-If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to 7 days. If you publish retention labels to Exchange, it can take 7 days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.
+If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to seven days. If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.
 
 For example:
   
@@ -187,7 +187,7 @@ For example:
   
 ### Auto-apply retention labels
 
-If you auto-apply retention labels to content matching specific conditions, it can take seven days for the retention labels to be applied to all existing content that matches the conditions.
+If you auto-apply retention labels to content matching specific conditions, it can take up to seven days for the retention labels to be applied to all existing content that matches the conditions.
   
 ![Diagram of when auto-apply labels take effect](../media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
