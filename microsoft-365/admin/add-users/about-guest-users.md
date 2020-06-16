@@ -34,13 +34,14 @@ To view guest users, in the Microsoft 365 admin center, in the left nav, expand 
 
 ## Add guest users to Microsoft Teams
 
-To see how to add a guest to Teams, see the following video: 
+To see how to add a guest to Teams, see the following video: <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
 To join a Team as a guest, see the following video:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
+<br>
 
 ## Add guest users in Azure Active Directory
 
@@ -59,4 +60,4 @@ To remove a guest user:
 1. In the Microsoft 365 admin center, expand **Users** and then choose **Guest users**.
 1. On the **Guest users** page, choose the user you want to remove and then choose **Delete a user**. 
 
-To remove users in the Azure AD portal, see [remove a guest user and resources assigned to them.](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources\)
+To remove users in the Azure AD portal, see [remove a guest user and resources](https://docs.microsoft.com/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
