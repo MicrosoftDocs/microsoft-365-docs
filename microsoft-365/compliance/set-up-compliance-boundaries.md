@@ -264,8 +264,6 @@ It takes up to three days for a search permissions filter to enforce the complia
  **Can an eDiscovery manager see content from two separate compliance boundaries?**
   
 Yes, this can be done when searching Exchange mailboxes by adding the eDiscovery manager to role groups that have visibility to both agencies. However when searching SharePoint sites and OneDrive accounts, an eDiscovery manager can search for content in different compliance boundaries only if the agencies are in the same region or geo location. **Note:** This limitation for sites doesn't apply in Advanced eDiscovery because searching for content in SharePoint and OneDrive isn't bound by geographic location.
-
-the combining of boundaries is only possible within the same SP GEO Region..
   
  **Do search permissions filters work for eDiscovery case holds, Microsoft 365 retention policies, or DLP?**
   
