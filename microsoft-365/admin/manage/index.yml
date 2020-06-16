@@ -54,7 +54,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Upgrade your organization to the latest apps
+          - text: Upgrade users to the latest apps
             url: ../setup/upgrade-users-to-latest-office-client.md
           - text: Customize the app launcher
             url: customize-the-app-launcher.md
