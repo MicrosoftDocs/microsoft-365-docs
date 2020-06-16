@@ -272,7 +272,7 @@ The following apps and services don't currently support sensitivity labels confi
 
 ## Classic Azure AD group classification
 
-Microsoft 365 no longer supports the old classifications for new Microsoft 365 groups and SharePoint sites when you enable sensitivity labels for containers. However, existing groups and sites still display the old classification values unless you convert them to use sensitivity labels.
+Microsoft 365 no longer supports the old classifications for new Microsoft 365 groups and SharePoint sites after you enable sensitivity labels for containers. However, existing groups and sites that support sensitivity labels still display the old classification values until you convert them to use sensitivity labels.
 
 As an example of how you might have used the old group classification for SharePoint, see [SharePoint "modern" sites classification](https://docs.microsoft.com/sharepoint/dev/solution-guidance/modern-experience-site-classification).
 
@@ -295,6 +295,8 @@ Then:
 2. Remove the old classifications from the existing groups and sites.
 
 Although you can't prevent users from creating new groups in apps and services that don't yet support sensitivity labels, you can run a recurring PowerShell script to look for new groups that users have created with the old classifications, and convert these to use sensitivity labels. 
+
+To help you manage the coexistence of sensitivity labels and Azure AD classifications for sites and groups, see [Azure Active Directory classification and sensitivity labels for Microsoft 365 groups](migrate-aad-classification-sensitivity-labels.md).
 
 #### Use PowerShell to convert classifications for Microsoft 365 groups to sensitivity labels
 
@@ -341,8 +343,6 @@ Although you can't prevent users from creating new groups in apps and services t
     ```
 
 7. Repeat steps 5 and 6 for your remaining group classifications.
-
-For additional information, see [Migrate from classic Azure Active Directory classification to sensitivity labels](migrate-aad-classification-sensitivity-labels.md).
 
 ## Auditing sensitivity label activities
 
