@@ -535,7 +535,7 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Review case data
           items: 
-            - name: Use the review set dashboard (preview)
+            - name: Use the review set dashboard
               href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md

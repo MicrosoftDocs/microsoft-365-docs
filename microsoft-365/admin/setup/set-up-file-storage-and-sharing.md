@@ -181,7 +181,7 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
   
 1. Sign in to to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
-2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**Org settings**</a> page.
+2. Go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
 
 3. On the **Services** tab, select **Office on the web**.
 
@@ -189,7 +189,7 @@ You can enable third-party storage for your users in Microsoft 365 so they can s
 
 ## Next steps
 
-- [Customize your team site for file storage and sharing](customize-team-site.md). This step-by-step tutorial shows you how to you can take advantage of more storage and collaboration features. 
+- [Customize your team site for file storage and sharing](customize-team-site.md). This step-by-step tutorial shows you how to you can take advantage of more storage and collaboration features.
 
 - **Set up Office apps on your tablets and phones.** You need to do this so you can **edit** files that are stored in OneDrive and on team sites from your tablet or phone. If you don't install the Office apps for your tablet or phone, you'll be able to view the files but not edit them.
 
