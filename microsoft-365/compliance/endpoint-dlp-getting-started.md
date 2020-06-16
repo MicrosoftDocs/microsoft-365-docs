@@ -20,7 +20,7 @@ search.appverid:
 description: "Set up Microsoft 365 Endpoint data loss prevention to monitor file activities and implement protective actions for those file to endpoints."
 ---
 
-# Get started with Endpoint data loss prevention preview
+# Get started with Endpoint data loss prevention (preview)
 
 Microsoft Endpoint data loss prevention (EPDLP) is part of the Microsoft 365 data loss prevention (DLP) suite of features you can use to discover and protect sensitive items across Microsoft 365 services. For more information about all of Microsoft’s DLP offerings, see [Overview of data loss prevention](data-loss-prevention-policies.md). To learn more about EPDLP, see [Learn about Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)
 
