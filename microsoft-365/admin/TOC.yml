@@ -33,7 +33,7 @@
         - name: Roll out Teams
           href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
         - name: App training for everyone
-          href: https://support.office.com/office-training-center
+          href: https://support.microsoft.com/training
         - name: What subscription do I have?
           href: admin-overview/what-subscription-do-i-have.md
         - name: Customize Sign-in page
@@ -320,11 +320,11 @@
         - name: Share calendars with guest users
           href: manage/share-calendars-with-external-users.md
         - name: Create a Team with guest users
-          href: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7
+          href: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
         - name: Schedule a Teams meeting with guests
-          href: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US
+          href: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a?ui=en-US&rs=en-US&ad=US
         - name: Join a Teams meeting with guest users
-          href: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US
+          href: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8?ui=en-US&rs=en-US&ad=US
     - name: Troubleshoot
       href: https://docs.microsoft.com/office/troubleshoot/
     - name: Contact support

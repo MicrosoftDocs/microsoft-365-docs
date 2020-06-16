@@ -66,7 +66,7 @@ The following table gives you a quick glance at the various types of groups and 
 
 [Manage distribution groups](https://technet.microsoft.com/library/bb124513%28v=exchg.150%29.aspx)
     
-[Use Microsoft 365 Groups instead of Site Mailboxes](https://support.office.com/article/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx)
+[Use Microsoft 365 Groups instead of Site Mailboxes](https://support.microsoft.com/office/737d6b1f-67cc-41fe-8db8-f2d09dd1673b.aspx)
     
 [Create shared mailboxes in Microsoft 365](create-a-shared-mailbox.md)
     
