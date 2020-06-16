@@ -242,7 +242,7 @@ You can also change and apply a label from this page:
 
 ## Support for sensitivity labels
 
-The following apps and services can create groups that support sensitivity labels configured for sites and group settings:
+The following apps and services support sensitivity labels configured for sites and group settings:
 
 - Admin centers
     - SharePoint admin center
@@ -256,7 +256,7 @@ The following apps and services can create groups that support sensitivity label
     - Forms
     - Stream
 
-The following apps and services that can create groups can't currently support sensitivity labels configured for sites and group settings:
+The following apps and services don't currently support sensitivity labels configured for sites and group settings:
 
 - Admin centers
     - Microsoft 365 admin center
@@ -341,6 +341,8 @@ Although you can't prevent users from creating new groups in apps and services t
     ```
 
 7. Repeat steps 5 and 6 for your remaining group classifications.
+
+For additional information, see [Migrate from classic Azure Active Directory classification to sensitivity labels](migrate-aad-classification-sensitivity-labels.md).
 
 ## Auditing sensitivity label activities
 
