@@ -153,7 +153,7 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 - For information about how to block a user's access to Microsoft 365 data after their license has been removed and how to get access to the data afterwards, see [Remove a former employee](../add-users/remove-former-employee.md).
 
-- If you remove a user's license and they still have Office installed, they see [Unlicensed Product notifications](https://support.office.com/article/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) when they use Office.
+- If you remove a user's license and they still have Office installed, they see [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) when they use Office.
 
 ## Related articles
 
