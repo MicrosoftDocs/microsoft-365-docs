@@ -81,5 +81,5 @@ If you’re not going to [reassign the unused licenses to other users](../../man
 
 ## Related content
 
-[Change plans manually](../../commerce/subscriptions/change-plans-manually.md) (article)\
-[Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)
+- [Change plans manually](../../commerce/subscriptions/change-plans-manually.md) (article)
+- [Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)

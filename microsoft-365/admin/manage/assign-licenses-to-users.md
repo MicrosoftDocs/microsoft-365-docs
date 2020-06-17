@@ -158,6 +158,6 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 
 ## Related content
 
-[Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)\
-[Unassign licenses from users](remove-licenses-from-users.md) (article)\
-[Add or remove licenses for your subscription](../../commerce/licenses/buy-licenses.md) (article)
+- [Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)
+- [Unassign licenses from users](remove-licenses-from-users.md) (article)
+- [Add or remove licenses for your subscription](../../commerce/licenses/buy-licenses.md) (article)
