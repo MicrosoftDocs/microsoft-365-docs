@@ -23,7 +23,7 @@ search.appverid:
 description: "Learn how to add users and assign licenses to Microsoft 365 at the same time."
 ---
 
-# Add users individually or in bulk
+# Add users and assign licenses at the same time
 
 ::: moniker range="o365-21vianet"
 
