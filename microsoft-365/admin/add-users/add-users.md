@@ -113,8 +113,8 @@ After you add a user, you get an email notification from Microsoft. The email co
 
 ## Related content
 
-- [Add a new employee to Microsoft 365](add-new-employee.md) (article)
-- [Add several users at the same time to Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (article)
-- [Restore a user in Microsoft 365](restore-user.md) (article)
-- [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)
-- [Delete a user from your organization](delete-a-user.md) (article)
+[Add a new employee to Microsoft 365](add-new-employee.md) (article)\
+[Add several users at the same time to Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (article)\
+[Restore a user in Microsoft 365](restore-user.md) (article)\
+[Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
+[Delete a user from your organization](delete-a-user.md) (article)
