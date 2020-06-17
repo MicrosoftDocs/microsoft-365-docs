@@ -28,7 +28,7 @@ When you buy a subscription to Microsoft 365 for business, you sign up for a set
 
 When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After you buy a subscription, you create accounts for people in your organization, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization.
 
-If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can have all of your users  assigned to all Microsoft 365 applications and services as part of a Microsoft 365 Business Standard subscription. Additionally, a subset of users can have a license for Visio Online through a separate Visio subscription.
+If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can have all of your users assigned to all Microsoft 365 applications and services as part of a Microsoft 365 Business Standard subscription. Additionally, a subset of users can have a license for Visio Online through a separate Visio subscription.
 
 ## How many devices can people install Office on?
 

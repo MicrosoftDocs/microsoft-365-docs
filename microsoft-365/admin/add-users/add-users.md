@@ -33,7 +33,7 @@ description: "Learn how to add users and assign licenses to Microsoft 365 at the
 
 ::: moniker-end
 
-The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users will have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
+The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
 ## Before you begin
 
@@ -71,7 +71,7 @@ The people on your team each need a user account before they can sign in and acc
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de/adminportal</a>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
-3. In the **New user** pane, fill in the following information. Select **Add** when you are done.
+3. In the **New user** pane, fill in the following information. When you're finished, select **Add**.
     - **Name** Fill in first, last, display name, and user name.
     - **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to by typing jakob@contoso.com.
     - **Contact information** Expand to fill in a mobile phone number, address, and so on.
@@ -85,7 +85,7 @@ The people on your team each need a user account before they can sign in and acc
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 2. Go to **Users** > **Active users**, and select **Add a user**.
-3. In the **New user** pane, fill in the following information. Select **Add** when you are done.
+3. In the **New user** pane, fill in the following information. When you're finished, select **Add**.
     - **Name** Fill in first, last, display name, and user name.
     - **Domain** For example, if the user's username is Jakob, and his domain is contoso.com, he'll sign in to by typing jakob@contoso.com.
     - **Contact information** Expand to fill in a mobile phone number, address, and so on.

@@ -80,23 +80,23 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
 |A credit check is pending. |If a credit check is pending, you see a "Pending credit check" message. You can't buy licenses until the credit check is complete.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br>After the credit check is complete, you should see the **Add/Remove licenses** link. |
-|You activated the subscription by using a product key.| If the subscription was purchased and activated by using a 25-character product key product key, you see the text "Prepaid."  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
+|You activated the subscription by using a product key.| If the subscription was purchased and activated by using a 25-character product key, you see the text "Prepaid."  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
 |You bought your subscription through a partner. | If the subscription was purchased via a partner, you see the Volume Licensing Service Center (VLSC) link. | See [Add licenses to a subscription purchased through the Volume Licensing Service Center](add-licenses-bought-through-vlsc.md). |
 |You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, contact your CSP partner to buy more licenses.        |
-|You have a trial subscription. |A trial version of Microsoft 365 displays the text "Trial". | You must first buy your trial subscription, then you can add more licenses. See [Buy a subscription to Microsoft 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
+|You have a trial subscription. |A trial version of Microsoft 365 displays the text "Trial". | First buy your trial subscription, then you can add more licenses. See [Buy a subscription to Microsoft 365 for business from your free trial](../buy-a-subscription-from-your-free-trial.md).|
 
 ## What you need to know about buying licenses for your business subscription
 
 ### License availability
 
-- If you pay for your subscription by credit card, debit card, or bank account, any new licenses that you buy are available immediately after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use.
+- If you pay for your subscription by credit or debit card, or bank account, any new licenses that you buy are available immediately after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use.
   > [!NOTE]
   > Paying by bank account is not available in some countries or regions.
-- If you prepaid for your subscription with a product key, you can add more licenses by adding a credit card, debit card, or bank account to cover the additional cost of the new licenses. After you buy the new licenses, we add a second subscription with the number of new licenses that you just added. For example, if you have a prepaid subscription with five licenses, and then bought 10 more licenses, you see two subscriptions listed: one with the five prepaid licenses, and one with the 10 new licenses.
+- If you prepaid for your subscription with a product key, you can add more licenses by adding a credit or debit card, or bank account to cover the additional cost of the new licenses. After you buy the new licenses, we add a second subscription with the number of new licenses that you just added. For example, if you have a prepaid subscription with five licenses, and then bought 10 more licenses, you see two subscriptions listed: one with the five prepaid licenses, and one with the 10 new licenses.
 
 ### Billing statements
 
-- If you pay by credit card, debit card, or bank account, the charge for buying new licenses appears on your payment method in two days.
+- If you pay by credit or debit card, or bank account, the charge for buying new licenses appears on your payment method in two days.
 - If you pay by invoice, the charge for buying new licenses appears on your next billing statement.
 - If you buy new licenses in the middle of your billing period, your first billing statement might have a partial charge. The remaining amount is included on your next billing statement.
 
