@@ -1,5 +1,5 @@
 ---
-title: "Share sites and files externally"
+title: "Share sites and files with guest users"
 f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
@@ -23,7 +23,7 @@ ROBOTS: NOINDEX
 description: "Learn how to share sites and files with people outside the organization. "
 ---
 
-# Share sites and files externally
+# Share sites and files with guest users
 
 ::: moniker range="o365-21vianet"
 

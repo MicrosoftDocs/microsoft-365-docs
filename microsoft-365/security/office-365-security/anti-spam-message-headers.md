@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP) to provide information about the message and how it was processed."
+description: "Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -22,14 +22,21 @@ ms.custom: seo-marvel-apr2020
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP scans and inserts the **X-Forefront-Antispam-Report** header into each inbound email message. The fields in this header can help provide administrators with information about the message and about how it was processed. The fields in the **X-Microsoft-Antispam** header provide additional information about bulk mail and phishing. In addition to these two headers, Exchange Online Protection also inserts email authentication results for each message it processes in the **Authentication-results** header.
 
-For information about how to view an email message header in various email clients, see [View internet message headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
+For information about how to view an email message header in various email clients, see [View internet message headers in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 > [!TIP]
-> You can copy and paste the contents of a message header into the [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) tool. This tool helps parse headers and put them into a more readable format.
+> You can copy and paste the contents of a message header into the [Message Header Analyzer](https://mha.azurewebsites.net/) tool. This tool helps parse headers and put them into a more readable format.
 
 ## X-Forefront-Antispam-Report message header fields
 
-After accessing the message header information, search for **X-Forefront-Antispam-Report** and then look for these fields. Other fields in this header are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
+After you have the message header information, find the **X-Forefront-Antispam-Report** header. There will be multiple header field and value pairs in this header separated by semicolons (;). For example:
+
+`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
+
+The individual fields and values are described in the following table.
+
+> [!NOTE]
+> The **X-Forefront-Antispam-Report** header contains many different header fields and values. Other fields in this header that aren't described in the table are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
 |||
 |---|---|
