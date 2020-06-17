@@ -40,7 +40,7 @@ You can unassign licenses from users on either the **Active users** page, or on 
 ## Before you begin
 
 - You must be a Global admin, or User management admin to unassign licenses. For more information, see [About Microsoft 365 admin roles](../add-users/about-admin-roles.md).
-- You can [remove licenses from user accounts with Office 365 PowerShell](https://docs.microsoft.com/en-us/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell).
+- You can [remove licenses from user accounts with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell).
 - You can also [delete user accounts](../add-users/delete-a-user.md) that have been assigned a license to make their license available to other users. When you delete a user account, their license is immediately available to be assigned to someone else.
 
 ::: moniker range="o365-worldwide"
@@ -133,8 +133,10 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ## Next steps
 
+If you’re not going to [reassign the unused licenses to other users](../../managed-desktop/get-started/assign-licenses.md), consider [removing the licenses from your subscription](../../commerce/licenses/buy-licenses.md) so that you’re not paying for more licenses than you need.
+
 ## Related content
 
-[Understand subscriptions and licenses in Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md) (article)
-[Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md) (article)
-[Assign licenses to users](assign-licenses-to-users.md) (article)
+[Understand subscriptions and licenses in Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md) (article)\
+[Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md) (article)\
+[Assign licenses to users](assign-licenses-to-users.md) (article)\
