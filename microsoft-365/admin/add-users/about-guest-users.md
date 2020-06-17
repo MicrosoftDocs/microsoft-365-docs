@@ -34,13 +34,13 @@ To view guest users, in the Microsoft 365 admin center, in the left nav, expand 
 
 ## Add guest users to Microsoft Teams
 
-To see how to add a guest to Teams, see the following video: <br>
+To see how to add a guest to Teams, see the following video: <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
 ## Join a Team as a guest
 
-To join a Team as a guest, see the following video:<br>
+To join a Team as a guest, see the following video:<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
