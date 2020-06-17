@@ -21,7 +21,7 @@ ms.collection:
 
 >[!NOTE]
 >This topic is intended for participants in the Data Processor Service for Windows preview program and requires acceptance of specific terms of use. To learn
-more about the program and agree to the terms of use, see _add link_.
+more about the program and agree to the terms of use, see [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview).
 
 Under the General Data Protection Regulation (GDPR), data controllers are required to prepare a Data Protection Impact Assessment (DPIA) for processing operations that are “likely to result in a high risk to the rights and freedoms of natural persons.” There is nothing inherent in the Data Processor Service for Windows itself that would necessarily require the creation of a DPIA by a data controller using it. Rather, whether a DPIA is required will be dependent on the details and context of how the data controller deploys, configures, and uses the Data Processor Service for Windows. 
 
