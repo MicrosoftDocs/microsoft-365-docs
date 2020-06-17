@@ -41,13 +41,29 @@ Before you get started with EPDLP, you should confirm your [Microsoft 365 subscr
 
 ### Permissions
 
-To enable device management the account you use must be a member of any one of these:
+To enable device management the account you use must be a member of any one of these roles:
 
 - Global admin
 - Security admin
 - Compliance admin
 
-WHAT PERMISSIONS ARE NEEDED TO VIEW AND USE THE DEVICE ONBOARDING PAGE/DEVICE LIST/PAUSE MONITORING
+If you want to use a custom account to view the device management settings, it must be in one of these roles:
+
+- IsAadCompanyAdmin
+- Is AadComplianceAdmin
+- IsAadComplianceDataAdmin
+- IsAadGlobalReader
+
+If you want to use a custom account to access the onboarding/offboarding page, it must be in one of these roles:
+
+- IsAadCompanyAdmin
+- IsAasComplianceAdmin
+
+If you want to use a customer account to turn on/off device monitoring, it must be in one of these roles:
+
+- IsAadCompanyAdmin
+- IsAadComplianceAdmin
+
 
 Data from EPDLP can be viewed [activity explorer](data-classification-activity-explorer.md). There are four roles that grant permission to activity explorer, the account you use for accessing the data must be a member of any one of them.
 
@@ -70,13 +86,24 @@ Make sure that the Windows 10 devices that you plan on deploying EPDLP to meet t
 
 Before sensitive items on a device can be monitored and protected the device must be onboarded into device management. Device management is tightly integrated with [Microsoft Defender Advanced Threat Protection  (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/). How you onboard Windows 10 devices into device management depends on whether you have MDATP deployed or not.
 
-
-
-
-
-
-
 ### With MDATP deployed
+
+In this deployment scenario, MDATP is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into EPDLP to expand coverage
+
+1. Open the [Microsoft compliance center](https://compliance.microsoft.com.
+2. Open the Compliance Center settings page and choose `Enable device monitoring`
+3. Choose `Device management` to open the `Devices` list. You should see the list of devices that are already reporting in to MDATP. INSERT DEVICE MANAGEMENT SCREENSHOT
+4. Choose `Onboarding` if you need to onboard additional devices.
+5. Choose the way you want to deploy to these additional devices from the `Deployment method` list and then `download package. INSERT DEPLOYMENT METHOD SCREENSHOT
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This opens a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
+    - Onboard Windows 10 machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows 10 machines using Mobile Device Management tools
+    - Onboard Windows 10 machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+
+Once done and endpoint is onboarded, it should be visible under the “Devices” table and also start reporting audit logs to the “Activity Explorer”
+Note that this experience is under license enforcement. Without the required license, it will not be visible or accessible.
 
 Onboard new devices and enabled device monitoring from M365 Compliance portal
 To start using Endpoint DLP you must enable both device monitoring and onboard your endpoints. Both are done from the M365 Compliance portal.
@@ -87,8 +114,7 @@ To start using Endpoint DLP you must enable both device monitoring and onboard y
 4. Select your deployment method and click the button to download the package
 5. Follow the instructions in the downloaded package
 
-Once done and endpoint is onboarded, it should be visible under the “Devices” table and also start reporting audit logs to the “Activity Explorer”
-Note that this experience is under license enforcement. Without the required license, it will not be visible or accessible.
+
 
 #### procedure
 
