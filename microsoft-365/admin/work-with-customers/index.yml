@@ -24,7 +24,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Share sites and files externally
+        - text: Share sites and files with guest users
           url: ../manage/share-sites-with-external-users.md
         - text: Share calendars with guest users
           url: ../manage/share-calendars-with-external-users.md
@@ -36,7 +36,7 @@ landingContent:
             url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
           - text: Chat with employees and customers
             url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
-          - text: Schedule a Teams meeting with guests
+          - text: Schedule a Teams meeting with guest users
             url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
           - text: Join a Teams meeting with guest users
             url: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8

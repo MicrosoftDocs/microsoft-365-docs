@@ -30,17 +30,15 @@ Once a user is added to the Guest users list, you can remove their access there.
 
 To view guest users, in the Microsoft 365 admin center, in the left nav, expand **Users**, and then choose **Guest users**.
 
-:::image type="content" source="../../media/guestusers.PNG" alt-text="Guest users page in Microsoft 65 admin center.":::
-
-## Add guest users to Microsoft Teams
+## Add guest users to Teams
 
 To see how to add a guest to Teams, see the following video: <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-## Join a Team as a guest
+## Join a team as a guest
 
-To join a Team as a guest, see the following video:<br><br>
+To join a team as a guest, see the following video:<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
 
