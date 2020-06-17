@@ -82,5 +82,8 @@ For the **Choose locations** page of the wizard, select one of the following opt
 
 - **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
 
-- **Let me choose specific locations** > **Exchange email** and **Exchange public folders**
+- **Let me choose specific locations** > **Exchange email**, **Exchange public folders**, and **Office 365 groups**.
 
+### Exchange email and Office 365 groups locations
+
+Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Office 365 groups** location.
