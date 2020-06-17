@@ -38,10 +38,11 @@ To see how to add a guest to Teams, see the following video: <br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-To join a Team as a guest, see the following video:
+## Join a Team as a guest
+
+To join a Team as a guest, see the following video:<br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys]
-<br>
 
 ## Add guest users in Azure Active Directory
 
