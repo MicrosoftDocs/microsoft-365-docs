@@ -79,7 +79,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 2. Select the circles next to the names of the users that you want to assign licenses to.
 3. At the top, select **More options (...)**, then select **Manage product licenses**.
 4. In the **Manage product licenses** pane, select **Add to existing product license assignments** \> **Next**.
-5. In the **Add to existing products** pane, switch the toggle to the **On** position for the license that you want the selected users to have.
+5. In the **Add to existing products** pane, switch the toggle to the **On** position for the license that you want the selected users to have.\
     By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want the users to have.
 6. At the bottom of the pane, select **Add** \> **Close**.  
 
@@ -93,7 +93,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 2. Select the boxes next to the names of the users that you want to assign licenses to.
 3. In the **Bulk actions** pane, select **Edit product licenses**.
 4. In the **Assign products** pane, select **Add to existing product license assignments** \> **Next**.
-5. Switch the toggle to the **On** position for the licenses that you want the selected users to have.
+5. Switch the toggle to the **On** position for the licenses that you want the selected users to have.\
     By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want the users to have.
 6. At the bottom of the **Add to existing products** pane, select **Add** \> **Close** \> **Close**.
 
@@ -107,7 +107,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 2. Select the boxes next to the names of the users that you want to assign licenses to.
 3. In the **Bulk actions** pane, select **Edit product licenses**.
 4. In the **Assign products** pane, select **Add to existing product license assignments** \> **Next**.
-5. Switch the toggle to the **On** position for the licenses that you want the selected users to have.
+5. Switch the toggle to the **On** position for the licenses that you want the selected users to have.\
     By default, all services associated with those licenses are automatically assigned to the users. You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want the users to have.
 6. At the bottom of the **Add to existing products** pane, select **Add** \> **Close** \> **Close**.
 
@@ -131,7 +131,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
 2. Select the box next to the name of the user you want to assign a license to.
 3. In the right pane, in the **Product licenses** row, select **Edit**.
-4. In the **Product licenses** pane, switch the toggle to the **On** position for the license that you want to assign to this user.
+4. In the **Product licenses** pane, switch the toggle to the **On** position for the license that you want to assign to this user.\
     By default, all services associated with that license are automatically assigned to the user. You can limit which services are available to the user. Switch the toggles to the **Off** position for the services that you don't want that user to have.
 5. At the bottom of the **Product licenses** pane, select **Save** \> **Close** \> **Close**.
 
@@ -144,7 +144,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 2. Select the box next to the name of the user you want to assign a license to.
 3. In the right pane, in the **Product licenses** row, select **Edit**.
-4. In the **Product licenses** pane, switch the toggle to the **On** position for the license that you want to assign to this user.
+4. In the **Product licenses** pane, switch the toggle to the **On** position for the license that you want to assign to this user.\
     By default, all services associated with that license are automatically assigned to the user. You can limit which services are available to the user. Switch the toggles to the **Off** position for the services that you don't want that user to have.
 5. At the bottom of the **Product licenses** pane, select **Save** \> **Close** \> **Close**.
 
