@@ -203,7 +203,7 @@ Once you set a group to expire:
 >When you change the expiration policy, the service recalculates the expiration date for each group. It always starts counting from the date when the group was created, and then applies the new expiration policy.
 
 #### *Resources*
-- [Microsoft 365 group Expiration Policy](https://support.microsoft.com/office/8d253fe5-0e09-4b3c-8b5e-f48def064733)
+- [Microsoft 365 group Expiration Policy](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups-expiration-policy)
 - [Configure the expiration policy for Microsoft 365 Groups](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
 
 ### <a name="group-guest-access"></a>Group guest access
