@@ -38,6 +38,8 @@ description: "Learn how to assign licenses to users."
 
 You can assign licenses to users on either the **Active users** page, or on the **Licenses** page. Which method you use depends on whether you want to assign product licenses to specific users, or assign users licenses to specific products.
 
+::: moniker-end
+
 [Learn how to add a user and assign a license at the same time](../add-users/add-users.md).
 
 ## Before you begin
@@ -46,6 +48,8 @@ You can assign licenses to users on either the **Active users** page, or on the 
 - You can [assign licenses to user accounts with Office 365 PowerShell](https://go.microsoft.com/fwlink/p/?linkid=850410).
 - To use group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign)
 - Some services, like Sway, are automatically assigned to users, and don't need to be assigned individually.
+
+::: moniker range="o365-worldwide"
 
 ## Use the Licenses page to assign licenses to users
 

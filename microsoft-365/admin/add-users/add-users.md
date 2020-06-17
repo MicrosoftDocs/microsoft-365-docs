@@ -25,6 +25,14 @@ description: "Learn how to add users and assign licenses to Microsoft 365 at the
 
 # Add users individually or in bulk
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 The people on your team each need a user account before they can sign in and access [Microsoft 365 for business](https://go.microsoft.com/fwlink/?LinkID=519395). The easiest way to add user accounts is to add them one at a time in the Microsoft 365 admin center. After you do this step, your users will have Microsoft 365 licenses, sign in credentials, and Microsoft 365 mailboxes.
 
 ## Before you begin

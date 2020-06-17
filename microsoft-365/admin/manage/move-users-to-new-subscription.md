@@ -23,6 +23,14 @@ description: "Learn how to move users from one Microsoft 365 for business subscr
 
 # Move users to a different subscription
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Do you have more than one subscription? If you have users who already have a license for one subscription, you can move them to another subscription. To do this, replace their existing license with a different one.
 
 ## Before you begin
