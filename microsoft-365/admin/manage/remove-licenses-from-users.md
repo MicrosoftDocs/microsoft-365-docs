@@ -139,4 +139,4 @@ If you’re not going to [reassign the unused licenses to other users](../../man
 
 [Understand subscriptions and licenses in Microsoft 365 for business](../../commerce/licenses/subscriptions-and-licenses.md) (article)\
 [Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md) (article)\
-[Assign licenses to users](assign-licenses-to-users.md) (article)\
+[Assign licenses to users](assign-licenses-to-users.md) (article)

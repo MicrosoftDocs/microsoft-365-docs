@@ -79,4 +79,4 @@ Different types of admins can work with licenses in different ways, depending on
 [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)\
 [Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md)\
 [Buy or edit an add-on](../buy-or-edit-an-add-on.md) (article)\
-[Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365) (article)\
+[Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365) (article)

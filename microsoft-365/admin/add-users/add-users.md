@@ -33,7 +33,7 @@ The people on your team each need a user account before they can sign in and acc
 
 ## Watch: Add users in the admin center
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]\
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
 > The steps used in the video show a different starting point for adding users, but the remaining steps are the same as the following procedure.
@@ -109,4 +109,4 @@ After you add a user, you get an email notification from Microsoft. The email co
 [Add several users at the same time to Microsoft 365](https://docs.microsoft.com/office365/enterprise/add-several-users-at-the-same-time) (article)\
 [Restore a user in Microsoft 365](restore-user.md) (article)\
 [Assign licenses to users](../manage/assign-licenses-to-users.md) (article)\
-[Delete a user from your organization](delete-a-user.md) (article)\
+[Delete a user from your organization](delete-a-user.md) (article)

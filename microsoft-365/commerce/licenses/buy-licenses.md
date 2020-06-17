@@ -111,4 +111,4 @@ If you’ve reduced the number of licenses for your subscription because someone
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Understand subscriptions and licenses](subscriptions-and-licenses.md) (article)\
 [Try or buy a Microsoft 365 subscription](../try-or-buy-microsoft-365.md) (article)\
-[Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365) (article)\
+[Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365) (article)

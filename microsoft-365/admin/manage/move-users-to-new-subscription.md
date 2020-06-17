@@ -38,7 +38,6 @@ Do you have more than one subscription? If you have users who already have a lic
 3. At the top, select **More options (...)**, then select **Manage product licenses**.
 4. In the **Manage product licenses** pane, select **Replace existing product license assignments** \> **Next**.
 5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
-
     You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want those users to have. Any previous license assignments for the selected users are removed.
 6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close**.
 
@@ -51,9 +50,7 @@ Do you have more than one subscription? If you have users who already have a lic
 3. In the **Bulk actions** pane, select **Edit product licenses**.
 4. In the **Assign products** pane, select **Replace existing product license assignments** \> **Next**.
 5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
-
     You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want that users to have. Any previous license assignments for the selected users are removed.
-
 6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close** \> **Close**.
 
 ::: moniker-end
@@ -65,9 +62,7 @@ Do you have more than one subscription? If you have users who already have a lic
 3. In the **Bulk actions** pane, select **Edit product licenses**.
 4. In the **Assign products** pane, select **Replace existing product license assignments** \> **Next**.
 5. Switch the toggle to the **On** position for the licenses that you want to assign to these users.
-
     You can limit which services are available to the users. Switch the toggles to the **Off** position for the services that you don't want that users to have. Any previous license assignments for the selected users are removed.
-
 6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close** \> **Close**.
 
 ::: moniker-end
@@ -79,4 +74,4 @@ If you’re not going to [reassign the unused licenses to other users](../../man
 ## Related content
 
 [Change plans manually](../../commerce/subscriptions/change-plans-manually.md) (article)\
-[Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)\
+[Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)
