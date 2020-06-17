@@ -95,11 +95,11 @@ For the **Choose locations** page of the wizard, select one of the following opt
 
 - **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
 
-- **Let me choose specific locations** > **SharePoint sites** or **OneDrive accounts**
+- **Let me choose specific locations** > **SharePoint sites**, **OneDrive accounts**, and **Office 365 groups**.
 
-### SharePoint locations 
+### SharePoint sites and Office 365 groups locations
 
-Your retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** locations. 
+When you choose the **SharePoint sites** location, the retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** location that applies to content in the group's mailbox, site, and files. 
 
 When you specify your locations for SharePoint sites, you don't need permissions to access the site and no validation is done at the time you specify the URL on the **Edit locations** page. However, the sites must be indexed and the sites you specify are checked that they exist at the end of the wizard. 
 
