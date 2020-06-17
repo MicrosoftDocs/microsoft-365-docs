@@ -49,7 +49,7 @@ To add guest users in the Azure Active Directory, see [add guest users](https://
 When you add a user you can also assign them to a group, or give them access to an app in your organization. Once you have added a uer in the Azure AD portal, that user will also be listed on the Guest users page in the Microsoft 365 admin center.
 After a user is added to the Guest users list, they can be [added to Groups](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center) in the Microsoft 365 admin center.
 
-See [add guest users in bulk](https://docs.microsoft.com/en-us/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
+See [add guest users in bulk](https://docs.microsoft.com/azure/active-directory/b2b/tutorial-bulk-invite) to invite multiple guests to collaborate with your organization.
 
 
 ## Remove a guest user
