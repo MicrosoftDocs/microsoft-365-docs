@@ -74,7 +74,7 @@ This section explains how to allow users to send email on behalf of a group in t
 
 ## Related articles
 
-[Learn more about Microsoft 365 groups](https://support.microsoft.com/office/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Learn more about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 
