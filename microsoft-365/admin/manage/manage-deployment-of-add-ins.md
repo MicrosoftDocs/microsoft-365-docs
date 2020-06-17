@@ -32,7 +32,7 @@ description: "Learn to deploy add-ins to users and groups in your organization b
 
 ::: moniker-end
 
-Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). As an admin, you can deploy Office add-ins for the users in your organization. You can do this using the Centralized Deployment feature in the Microsoft 365 admin center.
+Office add-ins help you personalize your documents and streamline the way you access information on the web (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). As an admin, you can deploy Office add-ins for the users in your organization. You can do this using the Centralized Deployment feature in the Microsoft 365 admin center.
   
 Centralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within an organization. For more information on how to determine if your organization can support Centralized Deployment, see [Determine if Centralized Deployment of add-ins works for your organization](centralized-deployment-of-add-ins.md).
   
@@ -248,7 +248,7 @@ Word, Excel, and PowerPoint 2013 for Windows will support the same minor checks 
     
 ## End user experience with add-ins
 
-Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.office.com/article/82e665c4-6700-4b56-a3f3-ef5441996862.aspx)). The add-in will appear on all platforms that the add-in supports.
+Now that you've deployed the add-in, your end users can start using it in their Office applications (see [Start using your Office Add-in](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)). The add-in will appear on all platforms that the add-in supports.
   
 If the add-in supports add-in commands, the commands appear on the Office ribbon. In the following example, the command **Search Citation** appears for the **Citations** add-in. 
 
