@@ -42,7 +42,7 @@ As [new features are added to ATP](office-365-atp.md#new-features-in-office-365-
 
 ## How to get ATP Safe Links protection
 
-**First, make sure your subscription includes [Office 365 Advanced Threat Protection](office-365-atp.md)** Plan 1 or Plan 2. Office 365 ATP is included in subscriptions, such as [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources:
+**First, make sure your subscription includes [Office 365 Advanced Threat Protection](office-365-atp.md)** Plan 1 or Plan 2. Office 365 ATP is included in subscriptions, such as [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 Education A5, etc. If your organization has a Microsoft 365 subscription that does not include Office 365 ATP, you can potentially purchase ATP as an add-on. For more information, see the following resources: 
 
 - [Office 365 Advanced Threat Protection plans and pricing](https://products.office.com/exchange/advance-threat-protection)
 
@@ -55,7 +55,7 @@ ATP Safe Links features are active when:
 
 - Microsoft 365 client apps are configured to use Modern Authentication (this is for ATP Safe Links protection in Office documents). (See [Modern Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
 
-- Users have signed in using their work or school account. (See [Sign in to Office or Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426).)
+- Users have signed in using their work or school account. (See [Sign in to Office](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426).)
 
 - Your organization's email passes through Exchange Online Protection.
 
@@ -65,7 +65,7 @@ ATP Safe Links features are active when:
 |---------|---------|
 |global administrator|The person who signs up to buy Microsoft 365 is a global admin by default. (See [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) to learn more.)|
 |Security Administrator|Azure Active Directory admin center (<https://aad.portal.azure.com>)|
-|Exchange Online Organization Management|Exchange admin center (<https://outlook.office365.com/ecp>) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell))|
+|Exchange Online Organization Management|Exchange admin center (<https://outlook.office365.com/ecp>) <br>or <br>  PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell))|
 
 ## How to make sure ATP Safe Links protection is in place
 
@@ -77,7 +77,7 @@ After ATP Safe Links policies are in place, your organization's security team ca
 
 The following table describes some example scenarios where ATP Safe Links protection might or might not be in place. (In all of these cases, we assume the organization has Office 365 Enterprise E5.)
 
-|**Example scenario**|**Does ATP Safe Links protection apply in this case?**|
+|Example scenario|Does ATP Safe Links protection apply in this case?|
 |:-----|:-----|
 |Jean is a member of a group that has ATP Safe Links policies covering URLs in email and Office documents. Jean opens a PowerPoint presentation that someone sent, and then clicks a URL in the presentation.|Yes. The ATP Safe Links policies that are defined apply to Jean's group, Jean's email, and Word, Excel, PowerPoint, or Visio documents that Jean opens, so long as Jean is signed in and using Microsoft 365 Apps for enterprise on Windows, iOS, or Android devices.|
 |In Chris's organization, no global or security administrators have defined any ATP safe links policies yet. Chris receives an email that contains a URL to a malicious website. Chris is unaware the URL is malicious and clicks the link.|No. The default policy that covers URLs for everyone in the organization must be defined in order for protection to be in place.|
