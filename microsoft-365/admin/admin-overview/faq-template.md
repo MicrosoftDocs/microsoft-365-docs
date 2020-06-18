@@ -81,13 +81,6 @@ Immo videri fortasse. [Mihi, inquam, qui te id ipsum rogavi?](http://loripsum.ne
 
 ## Frequently-viewed content
 
-[External Content Link](https://www.nngroup.com/topic/agile/) (Article)
-[External Content Link](https://www.nngroup.com/topic/agile/) (Video)
-[External Content Link](https://www.nngroup.com/topic/agile/) 
-[External Content Link](https://www.nngroup.com/topic/agile/)
-[External Content Link](https://www.nngroup.com/topic/agile/)
-[External Content Link](https://www.nngroup.com/topic/agile/)
-[External Content Link](https://www.nngroup.com/topic/agile/)
-[External Content Link](https://www.nngroup.com/topic/agile/)
-[External Content Link](https://www.nngroup.com/topic/agile/)
-[External Content Link](https://www.nngroup.com/topic/agile/)
+[External Content Link](https://www.nngroup.com/topic/agile/) (article)
+[External Content Link](https://www.nngroup.com/topic/agile/) (video)
+[External Content Link](https://www.nngroup.com/topic/agile/) (blog post)

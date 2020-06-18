@@ -38,8 +38,8 @@ With Microsoft 365, you receive new product updates and features as they become 
 
 ## Related content
 
-- [Lorem ipsum dolor sit amet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Video)
-- [Risus at ultrices mi tempus imperdiet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Vestibulum morbi blandit cursus](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Consequat mauris nunc congue](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Orci a scelerisque purus semper](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Blog post)
+[Lorem ipsum dolor sit amet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (video)
+[Risus at ultrices mi tempus imperdiet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)
+[Vestibulum morbi blandit cursus](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)
+[Consequat mauris nunc congue](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)
+[Orci a scelerisque purus semper](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (blog post)
