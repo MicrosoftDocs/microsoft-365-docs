@@ -18,7 +18,7 @@ description: "Design customization Microsoft Compliance Score by creating assess
 
 # Customize Compliance Score (preview) with assessments
 
-**In this article:** Learn how to customize Compliance Score by setting up a ready to use **assessment**, modifying an assessment to suit your organization’s needs, and creating your own assessments. This article also explains how to organize assessments into **groups**, working with **controls**, and exporting **assessment reports**.
+**In this article:** Learn how to customize Compliance Score by setting up a ready to use **assessment**. Read about modifying the **template** for assessment to suit your organization’s needs, and creating your own assessment. This article also explains how to organize assessments into **groups**, working with **controls**, and exporting assessment **reports**.
 
 ## Introduction to assessments
 
