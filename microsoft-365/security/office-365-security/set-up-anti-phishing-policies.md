@@ -90,7 +90,7 @@ The following spoof settings are available in anti-phishing policies and ATP ant
     - For the question mark in the sender's photo, SPF or DKIM are the most important.
     - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
-  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)
+  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## Exclusive settings in ATP anti-phishing policies
 
