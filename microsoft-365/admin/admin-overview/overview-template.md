@@ -6,7 +6,7 @@ ms.author: sharik
 author: SKjerland
 manager: mnirkhe
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -15,10 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: "Learn about the Microsoft 365 admin center: how to sign in, who your admin is, and watch a video introduction about it."
 ---
 

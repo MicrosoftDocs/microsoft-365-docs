@@ -1,19 +1,22 @@
 ---
-title: "How to get help in the Microsoft 365 admin center"
+title: "Admin center frequently-asked questions (FAQ)"
 f1.keywords:
 - NOCSH
-ms.author: cmcatee
-layout: LandingPage
-author: cmcatee-MSFT
+ms.author: sharik
+author: SKjerland
 manager: mnirkhe
 audience: Admin
-ms.topic: landing-page
+ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+ms.collection: 
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn about all the ways you can get help using the Microsoft 365 admin center."
+description: "Frequently-asked questions about the Microsoft 365 admin center."
 ---
 
 # Subject frequently-asked questions (FAQ)
