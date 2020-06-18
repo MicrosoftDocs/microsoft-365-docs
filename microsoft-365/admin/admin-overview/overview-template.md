@@ -26,6 +26,8 @@ description: "Learn about the Microsoft 365 admin center: how to sign in, who yo
 
 Habitasse platea dictumst quisque sagittis purus sit. Morbi tristique senectus et netus et malesuada. Sem integer vitae justo eget. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Eu ultrices vitae auctor eu. Odio morbi quis commodo odio aenean sed adipiscing diam. Id donec ultrices tincidunt arcu. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Erat imperdiet sed euismod nisi porta lorem.<br><br>
 
+## Watch: Name of video
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL]
   
 ## Heading 1
@@ -48,8 +50,8 @@ Ut morbi tincidunt augue interdum velit euismod in pellentesque massa. Et pharet
 
 ## Related content
 
-- [Lorem ipsum dolor sit amet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Video)
-- [Risus at ultrices mi tempus imperdiet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Vestibulum morbi blandit cursus](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Consequat mauris nunc congue](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Orci a scelerisque purus semper](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Blog post)
+[Lorem ipsum dolor sit amet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (video)\
+[Risus at ultrices mi tempus imperdiet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)\
+[Vestibulum morbi blandit cursus](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)\
+[Consequat mauris nunc congue](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)\
+[Orci a scelerisque purus semper](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (blog post)\

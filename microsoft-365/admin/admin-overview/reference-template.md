@@ -38,3 +38,11 @@ With Microsoft 365, you receive new product updates and features as they become 
 
 > [!NOTE]
 > You need to be a global administrator to make changes to release preferences.
+
+## Related content
+
+- [Lorem ipsum dolor sit amet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Video)
+- [Risus at ultrices mi tempus imperdiet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
+- [Vestibulum morbi blandit cursus](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
+- [Consequat mauris nunc congue](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
+- [Orci a scelerisque purus semper](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Blog post)

@@ -15,10 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-ms.assetid: c7228a3e-061f-4575-b1ef-adf1d1669870
 description: "Set up email forwarding to one or more email accounts using Office365."
 ---
 
@@ -39,11 +36,8 @@ Note the following:
 ## Configure email forwarding
 
 1. In the admin center, go to the **Users** / [Active users](https://go.microsoft.com/fwlink/p/?linkid=834822) page.
-
 2. Select the name of the user whose email you want to forward to open the properties page. 
- 
 3. On the **Mail** tab, select **Manage email forwarding**. 
-  
 4. On the email forwarding page, select **Forward all emails sent to this mailbox**, enter the forwarding address, and choose whether you want to keep a copy of forwarded emails. If you don't see this option, make sure a license is assigned to the user account. Select **Save changes**.
     
     **To forward to multiple email addresses**, you can ask the user to set up a rule in Outlook to forward to the addresses. To learn more, see [Use rules to automatically forward messages](https://support.office.com/article/use-rules-to-automatically-forward-messages-45aa9664-4911-4f96-9663-ece42816d746). 
@@ -58,8 +52,8 @@ Share the [Employee quick start guide](https://support.office.com/article/b97000
 
 ## Related content
 
-- [Lorem ipsum dolor sit amet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Video)
-- [Risus at ultrices mi tempus imperdiet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Vestibulum morbi blandit cursus](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Consequat mauris nunc congue](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Article)
-- [Orci a scelerisque purus semper](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (Blog post)
+[Lorem ipsum dolor sit amet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (video)
+[Risus at ultrices mi tempus imperdiet](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)
+[Vestibulum morbi blandit cursus](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)
+[Consequat mauris nunc congue](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (article)
+[Orci a scelerisque purus semper](https://docs.microsoft.com/microsoft-365/admin/?view=o365-worldwide) (blog post)
