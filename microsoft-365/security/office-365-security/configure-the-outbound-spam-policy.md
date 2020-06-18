@@ -159,7 +159,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
    - **Maximum number of recipients per user**
 
-     A valid value is 0 to 10000. The default value is 0, which means the service defaults are used. For more information, see [Sending limits across Microsoft 365 options](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+     A valid value is 0 to 10000. The default value is 0, which means the service defaults are used. For more information, see [Sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
      - **External hourly limit**: The maximum number of external recipients per hour.
 

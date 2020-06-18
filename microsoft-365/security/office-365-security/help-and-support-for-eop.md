@@ -28,7 +28,7 @@ Upon logging in, the Microsoft 365 admin center provides information about the s
 
 [Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Support and Recovery Assistant (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Mail flow troubleshooter](https://aka.ms/FixEmail)
 
