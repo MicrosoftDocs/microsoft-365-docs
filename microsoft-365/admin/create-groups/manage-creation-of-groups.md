@@ -40,14 +40,12 @@ This article explains how to disable the ability to create groups in all Microso
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI
 
-- Roadmap
+- Project for the web and Roadmap
     
 You can restrict Microsoft 365 group creation to the members of a particular security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
   

@@ -1,5 +1,5 @@
 ---
-title: "What's the difference between junk email and bulk email?"
+title: "What&apos;s the difference between junk email and bulk email?"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
