@@ -17,7 +17,7 @@ ms.custom: seo-marvel-apr2020
 description: "Learn how to setup & use a connector in the Microsoft 365 compliance center to import & archive data from Facebook Business pages to Microsoft 365."
 ---
 
-# Set up a connector to archive Facebook data
+# Set up a connector to archive Facebook data (preview)
 
 Use a connector in the Microsoft 365 compliance center to import and archive data from Facebook Business pages to Microsoft 365. After you set up and configure the connector, it connects to the Facebook Business page (on a scheduled basis), converts the content of Facebook items to an email message format, and then imports those items to a mailbox in Microsoft 365.
 

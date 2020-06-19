@@ -11,8 +11,8 @@ localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
-ms.custom: 
 - M365solutions
+ms.custom: 
 f1.keywords: NOCSH
 ---
 
@@ -129,7 +129,7 @@ If you agree with this expanded definition of authorization, then you need to im
 - [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/) 
 - [Azure Advanced Threat Protection](https://docs.microsoft.com/azure-advanced-threat-protection/) (Azure ATP)
 - [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) (Microsoft Defender ATP)
-- [Microsoft 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Microsoft 365 ATP)
+- [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) (Office 365 ATP)
 - [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/) (MCAS)
 - [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection?view=o365-worldwide) (MTP)
 - [Microsoft Intune](https://docs.microsoft.com/mem/intune/)
@@ -268,7 +268,7 @@ Office 365 has a [unified audit log](https://docs.microsoft.com/microsoft-365/co
 
 Examples of Microsoft 365 logs which are accessed through other API’s include the following:
 - [Azure AD](https://docs.microsoft.com/azure/azure-monitor/platform/diagnostic-settings) (activities not related to Office 365)
-- [Exchange Message Tracking](https://docs.microsoft.com/powershell/module/exchange/mail-flow/get-messagetrace?view=exchange-ps)
+- [Exchange Message Tracking](https://docs.microsoft.com/powershell/module/exchange/get-messagetrace?view=exchange-ps)
 - Threat/UEBA Systems discussed above (for example, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender ATP, etc.)
 - [Microsoft information protection](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer?view=o365-worldwide)
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
@@ -306,7 +306,7 @@ Azure Role-Based Access Control (RBAC) enables fine-grained access management fo
 
 :::image type="content" source="../media/solutions-architecture-center/identity-beyond-illustration-5.png" alt-text="high-level view of Azure components for delegated administration":::
 
-As you can see from above picture, many other services should be considered as part of the design (ex.: [Azure Policies](https://docs.microsoft.com/azure/governance/policy/overview), [Asure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview), [Management Groups](https://docs.microsoft.com/azure/governance/management-groups/), etc.)
+As you can see from above picture, many other services should be considered as part of the design (ex.: [Azure Policies](https://docs.microsoft.com/azure/governance/policy/overview), [Azure Blueprints](https://docs.microsoft.com/azure/governance/blueprints/overview), [Management Groups](https://docs.microsoft.com/azure/governance/management-groups/), etc.)
 
 ## Conclusion
 Started as a short summary, ended-up longer than I expected.  I hope you are now ready to venture into a deep see of creating delegation model for your organization.  This conversation is very common with customers. There is no one model that works for everyone. Waiting for a few planned improvements from Microsoft engineering before documenting common patterns we see across customers. In the meantime, you can work with your Microsoft account team to arrange a visit to the nearest [Microsoft Technology Center](https://www.microsoft.com/mtc).  See you there!

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -24,7 +24,7 @@ Have a question about how the new message protection capabilities work? Check fo
 ## What is Office 365 Message Encryption (OME)?
 
 OME combines email encryption and rights management capabilities. Rights management capabilities are powered by Azure Information Protection.
-  
+
 ## Who can use OME?
 
 You can use the new capabilities for OME under the following conditions:
@@ -105,17 +105,22 @@ If a file format is supported, such as a Word, Excel, or PowerPoint file, the fi
   
 ## Are PDF file attachments supported?
 
-The short answer is yes! PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send email, the Office 365 service encrypts PDF file attachments not the Outlook client. 
+The short answer is yes! PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. When you send email, the Office 365 service encrypts PDF file attachments not the Outlook client.
 
-Once you've enabled PDF file attachment encryption, you can encrypt PDFs you send without any additional steps from Outlook on the web, Outlook for iOS, and Outlook for Android.
+For Outlook on the web, Outlook for iOS, and Outlook for Android, you can encrypt PDFs you send without any additional steps. These clients natively support PDF encryption.
 
-Outlook desktop does not natively support encryption of PDF file attachments. To work around this, you can still enable PDF file attachment encryption in your organization. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
+Outlook desktop does not natively support encryption of PDF file attachments. Instead, you'll need to set up Exchange mail flow rules or DLP to apply encryption to PDF attachments first. When you send mail from Outlook Desktop with a PDF attachment, the client sends the message with the attachment to the service first. When the service receives the file, the service applies the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Next, Exchange Online sends the message with the protected PDF file attachment.
 
 To enable encryption for PDF attachments, run the following command in [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
+
+PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. For all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Also, if an Outlook on the web user attaches an unprotected PDF document and applies protection to message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+
+> [!IMPORTANT]
+> Outlook desktop client does not support PDF encryption.
 
 ## Are OneDrive for Business attachments supported?
 
@@ -181,3 +186,9 @@ There are currently two known limitations:
 - We only support access provided by direct user assignment to the shared mailbox. We don't support assignment through an email enabled security group.
 
 - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
+
+## What do I do if I don’t receive the one-time pass code after I requested it?
+
+First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
+
+Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.

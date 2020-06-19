@@ -83,10 +83,8 @@ Not all queries are created equal. The following table gives examples of queries
    
 ## For more information
 
-[What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
-  
-[Run a Content Search](content-search.md)
-  
-[Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+- [Run a Content Search](content-search.md)
+- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
   
 

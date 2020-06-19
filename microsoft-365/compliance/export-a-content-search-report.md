@@ -32,8 +32,8 @@ When you export a report, it's downloaded to a folder that has the same name as 
 
 ## Assign roles and check system requirements
 
-- To export a Content Search report, you have to be assigned the Compliance Search management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager and Organization Management role groups. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
-    
+- To export a Content Search report, you have to be assigned the Compliance Search management role in the Security & Compliance Center. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+
 - When you export a report, the data is temporarily stored in a unique Azure Storage area in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage area two weeks after it's created. 
     
 - The computer you use to export the search results has to meet the following system requirements:

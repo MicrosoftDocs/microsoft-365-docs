@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -41,7 +42,7 @@ If you're ready to buy or renew Microsoft 365 through Open Volume Licensing, or 
 ## Find contact information for a partner you've worked with in the past
 
 > [!NOTE]
-> In some cases, you can findinformation in the Microsoft 365 admin center for partners you've worked with in the past. Keep in mind that this information may be out of date. As a best practice, we recommend contacting the person or department responsible for purchasing in your organization to find out which partner you should work with. 
+> In some cases, you can find information in the Microsoft 365 admin center for partners you've worked with in the past. Keep in mind that this information may be out of date. As a best practice, we recommend contacting the person or department responsible for purchasing in your organization to find out which partner you should work with. 
   
 ## Get partner info in the admin center
 
@@ -55,6 +56,6 @@ If you're ready to buy or renew Microsoft 365 through Open Volume Licensing, or 
   
  **For Microsoft partners**
   
-[Help for partners](https://support.office.com/article/ae811622-b838-4f62-b7e9-659627374963.aspx)
+[Help for partners](https://support.microsoft.com/office/ae811622-b838-4f62-b7e9-659627374963)
   
 

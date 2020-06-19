@@ -51,7 +51,7 @@ To deploy Microsoft 365 for enterprise yourself, you can:
 
 - Deploy the [foundation infrastructure](deploy-foundation-infrastructure.md) for built-in security and integration for simplified management, which makes it easier to ensure your client software is updated with the latest productivity and security enhancements. 
  
-  The foundation infrastructure is organized as a series of numbered phases that build upon each other and towards an environment that supports Microsoft 365 for enterprise workloads and scenarios. 
+  The foundation infrastructure is organized as a series of numbered phases that build upon each other and towards an environment that supports Microsoft 365 for enterprise workloads. 
 
   **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
 
@@ -59,13 +59,13 @@ To deploy Microsoft 365 for enterprise yourself, you can:
 
   **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
 
-- Deploy key productivity [workloads and scenarios](deploy-workloads.md) on top of your infrastructure. These unlock creativity and teamwork in your organization.
+- Deploy key productivity [workloads](deploy-workloads.md) on top of your infrastructure. These unlock creativity and teamwork in your organization.
 
-Here's the relationship between the foundation infrastructure and the workloads and scenarios.
+Here's the relationship between the foundation infrastructure and the workloads.
 
-![The relationship between the foundation infrastructure and the workloads and scenarios](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![The relationship between the foundation infrastructure and the workloads](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-Workloads and scenarios operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
+Workloads operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
 
 Get self-started on your end-to-end deployment journey at [Microsoft 365 for enterprise foundation infrastructure](deploy-foundation-infrastructure.md).
 
@@ -121,10 +121,6 @@ Learn how Core Services Engineering and Operations (formerly Microsoft IT) has [
 ### How the Contoso Corporation deployed Microsoft 365 for enterprise
 
 The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how [Contoso deployed Microsoft 365 for enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
-
-## Stay current with deployment content
-
-For the latest changes in content, see [this article](microsoft-365-deploment-guide-changes.md).
 
 ## Next step
 

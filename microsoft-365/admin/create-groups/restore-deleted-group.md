@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,6 +23,14 @@ description: "Learn how to restore a deleted Microsoft 365 group."
 ---
 
 # Restore a deleted Group
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 If you've deleted a group, it will be retained for 30 days by default. This 30-day period is considered a "soft-delete" because you can still restore the group. After 30 days, the group and its associated contents are permanently deleted and cannot be restored.
 
@@ -60,6 +69,9 @@ If you are a global administrator or a groups administrator, you can restore a d
 1. Go to the [admin center](https://admin.microsoft.com).
 2. Expand **Groups**, and then click **Deleted groups**.
 3. Select the group that you want to restore, and then click **Restore group**.
+
+> [!NOTE]
+> In some cases, it may take as long as 24 hours for the group and all of its data to be restored. 
   
 ## Permanently delete a Microsoft 365 group
 
@@ -88,10 +100,10 @@ Visit the [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Offi
   
 ## Related articles
 
-[Manage Microsoft 365 Groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Manage Microsoft 365 Groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)
   
 [Delete groups using the Remove-UnifiedGroup cmdlet](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   
-[Manage your group-connected team site settings](https://support.office.com/article/8376034d-d0c7-446e-9178-6ab51c58df42.aspx)
+[Manage your group-connected team site settings](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
   
-[Delete a group in Outlook](https://support.office.com/article/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f.aspx)
+[Delete a group in Outlook](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)

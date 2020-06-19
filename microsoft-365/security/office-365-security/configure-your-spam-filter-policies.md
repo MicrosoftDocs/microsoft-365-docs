@@ -15,18 +15,18 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: "Basic spam filter settings include selecting the action to take on messages that are identified as spam."
+description: "Admins can learn how to view, create, modify, and delete anti-spam policies in Exchange Online Protection (EOP)."
 ---
 
-# Configure anti-spam policies
+# Configure anti-spam policies in EOP
 
-If you're a Microsoft 365 customer with mailboxes in Exchange Online or a standalone Exchange Online Protection (EOP) customer without Exchange Online mailboxes, inbound email messages are automatically protected against spam by EOP. EOP uses anti-spam policies (also known as spam filter policies or content filter policies) as part of your organization's overall defense against spam. For more information, see [Anti-spam protection](anti-spam-protection.md).
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, inbound email messages are automatically protected against spam by EOP. EOP uses anti-spam policies (also known as spam filter policies or content filter policies) as part of your organization's overall defense against spam. For more information, see [Anti-spam protection](anti-spam-protection.md).
 
 Admins can view, edit, and configure (but not delete) the default anti-spam policy. For greater granularity, you can also create custom anti-spam policies that apply to specific users, groups, or domains in your organization. Custom policies always take precedence over the default policy, but you can change the priority (running order) of your custom policies.
 
-You can configure anti-spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 customers; Exchange Online Protection PowerShell for standalone EOP customers).
+You can configure anti-spam policies in the Security & Compliance Center or in PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
-## Anti-spam policies in the Security & Compliance Center vs Exchange Online PowerShell or Exchange Online Protection PowerShell
+## Anti-spam policies in the Security & Compliance Center vs PowerShell
 
 The basic elements of an anti-spam policy in EOP are:
 
@@ -42,7 +42,7 @@ The difference between these two elements isn't obvious when you manage anti-spa
 
 - When you remove an anti-spam policy from the Security & Compliance Center, the spam filter rule and the associated spam filter policy are removed.
 
-In Exchange Online PowerShell or standalone Exchange Online Protection PowerShell, the difference between spam filter policies and spam filter rules is apparent. You manage spam filter policies by using the **\*-HostedContentFilterPolicy** cmdlets, and you manage spam filter rules by using the **\*-HostedContentFilterRule** cmdlets.
+In Exchange Online PowerShell or standalone EOP PowerShell, the difference between spam filter policies and spam filter rules is apparent. You manage spam filter policies by using the **\*-HostedContentFilterPolicy** cmdlets, and you manage spam filter rules by using the **\*-HostedContentFilterRule** cmdlets.
 
 - In PowerShell, you create the spam filter policy first, then you create the spam filter rule that identifies the policy that the rule applies to.
 
@@ -66,9 +66,19 @@ To increase the effectiveness of spam filtering, you can create custom anti-spam
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **Anti-spam settings** page, use <https://protection.office.com/antispam>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell). To connect to standalone Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- You need to be assigned permissions before you can perform these procedures. To add, modify, and delete anti-spam policies, you need to be a member of the **Organization Management** or **Security Administrator** role groups. For read-only access to anti-spam policies, you need to be a member of the **Security Reader** role group. For more information about role groups in the Security & Compliance Center, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- You need to be assigned permissions before you can do the procedures in this topic:
+
+  - To add, modify, and delete anti-spam policies, you need to be a member of one of the following role groups:
+
+    - **Organization Management** or **Security Administrator** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **Organization Management** or **Hygiene Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+
+  - For read-only access to anti-spam policies, you need to be a member of one of the following role groups:
+
+    - **Security Reader** in the [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    - **View-Only Organization Management** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - For our recommended settings for anti-malware policies, see [EOP anti-spam policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings).
 
@@ -115,9 +125,9 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
     |**No action**|||||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
     |
 
-    > <sup>1</sup> In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).<br/>In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> You can this use value as a condition in mail flow rules (also known as transport rules) to filter or route the message.
+    > <sup>1</sup> In Exchange Online, the message is moved to the Junk Email folder if the junk email rule is enabled on the mailbox (it's enabled by default). For more information, see [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).<br/>In standalone EOP environments where EOP protects on-premises Exchange mailboxes, you need to configure mail flow rules (also known as transport rules) in on-premises Exchange to translate the EOP spam filtering verdict so the junk email rule can move the message to the Junk Email folder. For details, see [Configure standalone EOP to deliver spam to the Junk Email folder in hybrid environments](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).<br/><br/><sup>2</sup> You can this use value as a condition in mail flow rules (also known as transport rules) to filter or route the message.
 
-   - **Select the threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk email** spam filtering verdict (greater than the specified value, not greater than or equal to). A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in Office 365](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+   - **Select the threshold**: Specifies the bulk complaint level (BCL) of a message that triggers the specified action for the **Bulk email** spam filtering verdict (greater than the specified value, not greater than or equal to). A higher value indicates the message is less desirable (more likely to resemble spam). The default value is 7. For more information, see [Bulk complaint level (BCL) in EOP](bulk-complaint-level-values.md) and [What's the difference between junk email and bulk email?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 
      By default, the PowerShell only setting _MarkAsSpamBulkMail_ is `On` in anti-spam policies. This setting dramatically affects the results of a **Bulk email** filtering verdict:
 
@@ -127,9 +137,9 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
    - **Quarantine**: Specifies how long to keep the message in quarantine if you selected **Quarantine message** as the action for a spam filtering verdict. After the time period expires, the message is deleted. The default value is 30 days. A valid value is from 1 to 30 days. For information about quarantine, see the following topics:
 
-     - [Quarantine in Office 365](quarantine-email-messages.md)
-     - [Manage quarantined messages and files as an admin in Office 365](manage-quarantined-messages-and-files.md)
-     - [Find and release quarantined messages as a user in Office 365](find-and-release-quarantined-messages-as-a-user.md)
+     - [Quarantined messages in EOP](quarantine-email-messages.md)
+     - [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
+     - [Find and release quarantined messages as a user in EOP](find-and-release-quarantined-messages-as-a-user.md)
 
    - **Add this X-header text**: This box is required and available only if you selected **Add X-header** as the action for a spam filtering verdict. The value you specify is the header field *name* that's added to the message header. The header field *value* is always `This message appears to be spam`.
 
@@ -143,7 +153,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
    - **Redirect to this email address**: This box is required and available only if you selected the **Redirect message to email address** as the action for a spam filtering verdict. Enter the email address where you want to deliver the message. You can enter multiple values separated by semicolons (;).
 
-   - **Safety Tips**: By default, Safety Tips are enabled, but you can disable them by clearing the **On** checkbox. For more information about Safety Tips, see [Safety tips in email messages in Office 365](safety-tips-in-office-365.md).
+   - **Safety Tips**: By default, Safety Tips are enabled, but you can disable them by clearing the **On** checkbox. For more information about Safety Tips, see [Safety tips in email messages](safety-tips-in-office-365.md).
 
    **Zero-hour auto purge** settings: ZAP detects and takes action on messages that have already been delivered to Exchange Online mailboxes. For more information about ZAP, see [Zero-hour auto purge - protection against spam and malware](zero-hour-auto-purge.md).
 
@@ -154,7 +164,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 5. (Optional) Expand the **Allow lists** section to configure message senders by email address or email domain that are allowed to skip spam filtering:
 
    > [!CAUTION]
-   > <ul><li>Think very carefully before you add domains here. For more information, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md)</li><li>Never add accepted domains (domains that you own) or common domains (for example, microsoft.com or office.com) to the allowed domains list. This would allow attackers to send email that bypasses spam filtering into your organization.</li></ul>
+   > • Think very carefully before you add domains here. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) <br/><br/> • Never add accepted domains (domains that you own) or common domains (for example, microsoft.com or office.com) to the allowed domains list. This would allow attackers to send email that bypasses spam filtering into your organization.
 
    - **Allow sender**: Click **Edit**. In the **Allowed sender list** flyout that appears:
 
@@ -183,7 +193,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 6. (Optional) Expand the **Block lists** section to configure message senders by email address or email domain that will always be marked as high confidence spam:
 
    > [!NOTE]
-   > Manually blocking domains isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in Office 365](create-block-sender-lists-in-office-365.md).
+   > Manually blocking domains isn't dangerous, but it can increase your administrative workload. For more information, see [Create block sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
    - **Block sender**: Click **Edit**. In the **Blocked sender list** flyout that appears do these steps:
 
@@ -233,7 +243,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
 8. The optional **Spam properties** section contains Advanced Spam Filter (ASF) settings that are turned off by default. ASF settings are in the process of being deprecated, and their functionality is being incorporated into other parts of the filtering stack. We recommend that you leave all of these ASF settings turned off in your anti-spam policies.
 
-   For details about these settings, see [Advanced Spam Filter settings in Office 365](advanced-spam-filtering-asf-options.md).
+   For details about these settings, see [Advanced Spam Filter settings in EOP](advanced-spam-filtering-asf-options.md).
 
 9. (Required) Expand the **Applied to** section to identify the internal recipients that the policy applies to.
 
@@ -241,7 +251,7 @@ Creating a custom anti-spam policy in the Security & Compliance Center creates t
 
     It's easiest to click **Add a condition** three times to see all of the available conditions. You can click ![Remove button](../../media/scc-remove-icon.png) to remove conditions that you don't want to configure.
 
-    - **The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in Office 365. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
+    - **The recipient domain is**: Specifies recipients in one or more of the configured accepted domains in your organization. Click in the **Add a tag** box to see and select a domain. Click again the **Add a tag** box to select additional domains if more than one domain is available.
 
     - **Recipient is**: Specifies one or more mailboxes, mail users, or mail contacts in your organization. Click in the **Add a tag** and start typing to filter the list. Click again the **Add a tag** box to select additional recipients.
 
@@ -319,7 +329,7 @@ To change the priority of a policy, move the policy up or down in the list (you 
 
 ### Configure end-user spam notifications
 
-When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md).
+When a spam filtering verdict quarantines a message, you can configure end-user spam notifications to let recipients know what happened to messages that were sent to them. For more information about these notifications, see [End-user spam notifications in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
 1. In the Security & Compliance Center, go to **Threat management** \> **Policy** \> **Anti-spam**.
 
@@ -336,9 +346,9 @@ When a spam filtering verdict quarantines a message, you can configure end-user 
    - **Enable end-user spam notifications**: Select the checkbobx to enable notifications. Clear the checkbox to disable notifications.
 
    - **Send end-user spam notifications every (days)**: Select how frequently notifications are sent. The default value is 3 days. You can enter 1 to 15 days.
-   
+
      There are 3 cycles of end-user spam notification within a 24 hour period that start at the following times: 01:00 UTC, 08:00 UTC, and 16:00 UTC. 
-    
+
      > [!NOTE]
      > If we missed a notification during a previous cycle, a subsequent cycle will push the notification. This may give the appearance of multiple notifications within the same day.
 
@@ -358,7 +368,7 @@ When a spam filtering verdict quarantines a message, you can configure end-user 
 
 You can't remove the default policy.
 
-## Use Exchange Online PowerShell or Exchange Online Protection PowerShell to configure anti-spam policies
+## Use Exchange Online PowerShell or standalone EOP PowerShell to configure anti-spam policies
 
 The following anti-spam policy settings are only available in PowerShell:
 
@@ -411,7 +421,7 @@ New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamActi
 > [!NOTE]
 > **New-HostedContentFilterPolicy** and **Set-HostedContentFilterPolicy** contain an older _ZapEnabled_ parameter, as well as newer _PhishZapEnabled_ and _SpamZapEnabled_ parameters. The _ZapEnabled_ parameter was deprecated in February, 2020. The _PhishZapEnabled_ and _SpamZapEnabled_ parameters used to inherit their values from the _ZapEnabled_ parameter. But, if you use the _PhishZapEnabled_ and _SpamZapEnabled_ parameters in a command or you use the **Spam ZAP** or **Phish ZAP** settings in the anti-spam policy in the Security & Compliance Center, the value of the _ZapEnabled_ parameter is ignored. In other words, don't use the _ZapEnabled_ parameter; use the  _PhishZapEnabled_ and _SpamZapEnabled_ parameters instead.
 
-For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterpolicy).
+For detailed syntax and parameter information, see [New-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
 #### Step 2: Use PowerShell to create a spam filter rule
 
@@ -431,7 +441,7 @@ This example creates a new spam filter rule named Contoso Executives with these 
 New-HostedContentFilterRule -Name "Contoso Executives" -HostedContentFilterPolicy "Contoso Executives" -SentToMemberOf "Contoso Executives Group"
 ```
 
-For detailed syntax and parameter information, see [New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/new-hostedcontentfilterrule).
+For detailed syntax and parameter information, see [New-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/new-hostedcontentfilterrule).
 
 ### Use PowerShell to view spam filter policies
 
@@ -453,7 +463,7 @@ This example returns all the property values for the spam filter policy named Ex
 Get-HostedContentFilterPolicy -Identity "Executives" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterpolicy).
+For detailed syntax and parameter information, see [Get-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterpolicy).
 
 ### Use PowerShell to view spam filter rules
 
@@ -491,7 +501,7 @@ This example returns all the property values for the spam filter rule named Cont
 Get-HostedContentFilterRule -Identity "Contoso Executives" | Format-List
 ```
 
-For detailed syntax and parameter information, see [Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/get-hostedcontentfilterrule).
+For detailed syntax and parameter information, see [Get-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/get-hostedcontentfilterrule).
 
 ### Use PowerShell to modify spam filter policies
 
@@ -507,7 +517,7 @@ To modify a spam filter policy, use this syntax:
 Set-HostedContentFilterPolicy -Identity "<PolicyName>" <Settings>
 ```
 
-For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy).
+For detailed syntax and parameter information, see [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
 ### Use PowerShell to modify spam filter rules
 
@@ -527,7 +537,7 @@ This example renames the existing spam filter rule named `{Fabrikam Spam Filter}
 Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
 ```
 
-For detailed syntax and parameter information, see [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterrule).
+For detailed syntax and parameter information, see [Set-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterrule).
 
 ### Use PowerShell to enable or disable spam filter rules
 
@@ -551,7 +561,7 @@ This example enables same rule.
 Enable-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/enable-hostedcontentfilterrule) and [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/disable-hostedcontentfilterrule).
+For detailed syntax and parameter information, see [Enable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/enable-hostedcontentfilterrule) and [Disable-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/disable-hostedcontentfilterrule).
 
 ### Use PowerShell to set the priority of spam filter rules
 
@@ -591,7 +601,7 @@ This example removes the spam filter policy named Marketing Department.
 Remove-HostedContentFilterPolicy -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterpolicy).
+For detailed syntax and parameter information, see [Remove-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterpolicy).
 
 ### Use PowerShell to remove spam filter rules
 
@@ -609,7 +619,7 @@ This example removes the spam filter rule named Marketing Department.
 Remove-HostedContentFilterRule -Identity "Marketing Department"
 ```
 
-For detailed syntax and parameter information, see [Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/remove-hostedcontentfilterrule).
+For detailed syntax and parameter information, see [Remove-HostedContentFilterRule](https://docs.microsoft.com/powershell/module/exchange/remove-hostedcontentfilterrule).
 
 ## How do you know these procedures worked?
 

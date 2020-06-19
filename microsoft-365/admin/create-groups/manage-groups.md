@@ -189,7 +189,7 @@ This option is great if you want to have a company email address such as info@co
 
 [Create a Microsoft 365 group](create-groups.md)
 
-[Manage guest access to Microsoft 365 groups](https://support.office.com/article/7c713d74-a144-4eab-92e7-d50df526ff96.aspx)
+[Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Choose the domain to use when creating Microsoft 365 groups](choose-domain-to-create-groups.md)
 
@@ -197,4 +197,4 @@ This option is great if you want to have a company email address such as info@co
 
 [Upgrade distribution lists to Microsoft 365 groups](../manage/upgrade-distribution-lists.md)
 
-[Manage Microsoft 365 groups with PowerShell](https://support.office.com/article/aeb669aa-1770-4537-9de2-a82ac11b0540)
+[Manage Microsoft 365 groups with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell)

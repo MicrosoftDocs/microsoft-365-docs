@@ -32,7 +32,7 @@ NIST Cybersecurity Framework (CSF) is a voluntary Framework that consists of sta
 
 Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Score and our Azure Security and Compliance Blueprint:
 
-- [Download the Azure Security and Compliance Blueprint - NIST CSF Risk Assessment Checklist](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
+- [Overview of the NIST SP 800-53 R4 blueprint sample](https://docs.microsoft.com/azure/governance/blueprints/samples/nist-sp-800-53-rev4/)
 - [Learn more about the NIST CSF assessment for Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## Microsoft in-scope cloud services
@@ -105,7 +105,3 @@ Microsoft provides the most comprehensive offerings compared to other cloud serv
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf).

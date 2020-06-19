@@ -20,8 +20,8 @@ Microsoft Managed Desktop uses several Microsoft technologies to help secure man
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
+For information about data storage, usage, and security practices used by Microsoft Managed Desktop, please download our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
 
-For more about the Security Operations team at Microsoft Managed Desktop and how they work to provide security for your devices, see the video [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
 ## Device security
 
@@ -43,7 +43,7 @@ Identity and access management protects corporate assets and business-critical d
 
 Service | Description
 --- | ---
-Biometric Authentication |	Windows Hello allows users to login using their face or a PIN, making passwords harder to forget or steal. Customers are responsible for implementing the necessary pre-requisites for their on-premises Active Directory for use of this service in a hybrid configuration. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
+Biometric Authentication |	Windows Hello allows users to sign in by using their face or a PIN, making passwords harder to forget or steal. Customers are responsible for implementing the necessary pre-requisites for their on-premises Active Directory for use of this service in a hybrid configuration. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Standard user permission |	To protect the system and make it more secure, the user will be assigned Standard User Permissions. This is assigned as part of the Windows Autopilot out-of-box experience.
 
 

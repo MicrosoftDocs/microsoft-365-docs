@@ -15,14 +15,14 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: "You and your users can submit false negative and false positive spam messages to Microsoft for analysis. "
+description: "Admins and end users can learn how to email messages (good mail marked as bad or bad mail allowed) to Microsoft for analysis."
 ms.custom: seo-marvel-apr2020
 ---
 
 # Manually submit messages to Microsoft for analysis
 
 > [!NOTE]
-> If you're an admin in an Microsoft 365 organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
+> If you're an admin in an organization with Exchange Online mailboxes, we recommend that you use the Submissions portal in the Security & Compliance Center. For more information, see [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
 It can be frustrating when users in your organization receive junk messages (spam) or phishing messages in their Inbox, or if they don't receive a legitimate email message because it's marked as junk. We're constantly fine-tuning our spam filters to be more accurate.
 
@@ -52,7 +52,7 @@ If you receive a message that passed through spam filtering that should have bee
 3. When you're finished, click **Send**.
 
 > [!TIP]
-> Admins have several different ways to block specific messages that are being misidentified as spam. For details, see [Create blocked sender lists in Office 365](create-block-sender-lists-in-office-365.md).
+> Admins have several different ways to block specific messages that are being misidentified as spam. For details, see [Create blocked sender lists in EOP](create-block-sender-lists-in-office-365.md).
 
 ## Submit false positives to Microsoft
 
@@ -71,7 +71,7 @@ If a message was incorrectly identified as spam, you can submit the message to t
 3. When you're finished, click **Send**.
 
 > [!TIP]
-> Admins have several different ways to allow specific messages to skip spam filtering. For details, see [Create safe sender lists in Office 365](create-safe-sender-lists-in-office-365.md).
+> Admins have several different ways to allow specific messages to skip spam filtering. For details, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).
 
 ## Create a mail flow rule to receive copies of messages that are reported to Microsoft
 

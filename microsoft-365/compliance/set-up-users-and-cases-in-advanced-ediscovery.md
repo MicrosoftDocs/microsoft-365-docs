@@ -46,19 +46,19 @@ To assign a user the necessary permissions so they can be added as a member of a
   
 ## Step 2: Create an eDiscovery case and add members
 
-The next step is to create a new eDiscovery case in the Security &amp; Compliance Center and add members. Members of the case will then be able to access the case in Advanced eDiscovery.
+The next step is to create a new eDiscovery case in the Security & Compliance Center and add members. Members of the case will then be able to access the case in Advanced eDiscovery.
   
-1. To create a new eDiscovery case, see Step 2 in [eDiscovery cases in the Microsoft 365 Security &amp; Compliance Center](ediscovery-cases.md#step-2-create-a-new-case).
-    
-2. To add members to an eDiscovery case, see Step 3 in [eDiscovery cases in the Microsoft 365 Security &amp; Compliance Center](ediscovery-cases.md#step-3-add-members-to-a-case)
-    
+1. To create a new eDiscovery case, see Step 3 in [Get started with Core eDiscovery](get-started-core-ediscovery.md#step-3-create-a-core-ediscovery-case).
+
+2. To add members to an eDiscovery case, see Step 4 in [Get started with Core eDiscovery](get-started-core-ediscovery.md#step-4-optional-add-members-to-a-core-ediscovery-case)
+
 ## Step 3: Go a case in Advanced eDiscovery
 
-After you create an eDiscovery case and add members, you (or any member of the case) can access the corresponding case in Advanced eDiscovery. To access a case in Advanced eDiscovery, see Step 8 in [eDiscovery cases in the Microsoft 365 Security &amp; Compliance Center](ediscovery-cases.md#step-8-go-to-the-case-in-advanced-ediscovery).
+After you create an eDiscovery case and add members, you (or any member of the case) can access the corresponding case in Advanced eDiscovery. To access a case in Advanced eDiscovery, see [Accessing a case in Advanced eDiscovery](quick-setup-for-advanced-ediscovery.md#accessing-a-case-in-advanced-ediscovery).
   
 ## See also
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
-[Preparing data](prepare-data-for-advanced-ediscovery.md)
+[Preparing data for Advanced eDiscovery (classic)](prepare-data-for-advanced-ediscovery.md)
  
