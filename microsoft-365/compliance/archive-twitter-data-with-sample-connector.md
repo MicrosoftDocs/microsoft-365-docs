@@ -13,9 +13,8 @@ localization_priority: Normal
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Set up a connector to import Twitter data into Microsoft 365 so you can use compliance features such as legal hold, Content Search, and retention policies."
+ms.custom: seo-marvel-apr2020
+description: "Learn how administrators can set up and use a native connector to import Twitter data into Microsoft 365."
 ---
 
 # Set up a connector to archive Twitter data (preview)
