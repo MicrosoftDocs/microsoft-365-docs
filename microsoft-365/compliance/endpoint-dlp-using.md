@@ -1,5 +1,5 @@
 ---
-title: "Using  endpoint data loss prevention (preview)"
+title: "Using  Endpoint data loss prevention (preview)"
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: 06/02/2020
 audience: ITPro
-ms.topic: conceptual
+ms.topic: article
 f1_keywords:
 - 'ms.o365.cc.DLPLandingPage'
 ms.service: O365-seccomp
@@ -17,7 +17,7 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Microsoft 365 Endpoint data loss prevention (DLP) extends monitoring of file activities and protective actions for those file to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
+description: "Learn how to configure data loss prevention (DLP) policies to use Microsoft 365 Endpoint data loss prevention (EPDLP) locations."
 ---
 
 # Using endpoint data loss prevention (preview)
@@ -33,7 +33,7 @@ End user experiences?  maybe this goes over to David Eitelbach
 Relnotes references????
 
 
-## Global settings
+## DLP settings
 
 Path exclusions
 You may want to exclude certain paths on your endpoint devices from monitoring and alerting because they are too noisy and don’t contain files you are interested in. Files in those locations will not be audited and any files that are created or modified in those locations will not be protected. You can configure path exclusions in Global settings.

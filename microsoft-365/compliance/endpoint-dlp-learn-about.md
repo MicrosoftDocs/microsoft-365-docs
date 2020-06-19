@@ -68,7 +68,6 @@ Without MDATP implemented, onboarding and offboarding are handled via scripts yo
 
 ![device onboarding page](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
-
 ### Viewing Endpoint DLP data
 
 Once a device is onboarded, information about audited activities flows into Activity Explorer even before you configure and deploy any DLP policies that have devices as a location. Endpoint DLP monitors activity based om MIME type, so activities will be captured even if the file extension is changed. At public preview it watches all:
