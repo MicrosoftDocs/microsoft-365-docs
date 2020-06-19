@@ -37,7 +37,7 @@ Import or migrate email from Gmail or another email provider to Microsoft 365.
   
 You need to use a version of Outlook that is installed on your desktop for this task. Outlook is included in most Microsoft 365 [plans](https://go.microsoft.com/fwlink/p/?LinkId=723731).
   
-### Migrate Gmail to Office 365
+### Migrate Gmail to Microsoft 365
 
 Follow these steps to import or migrate email, contacts, and calendar from Gmail into Outlook with Microsoft 365:
   
@@ -49,7 +49,7 @@ Follow these steps to import or migrate email, contacts, and calendar from Gmail
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### Import pst files to Office 365 (desktop)
+### Import Outlook pst files to Microsoft 365 (desktop)
 
 Follow these steps to export email, contacts and calendars from Outlook to a .pst file, and then import that file to Outlook with Microsoft 365:
   
