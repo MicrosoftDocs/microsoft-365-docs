@@ -27,22 +27,22 @@ search.appverid:
 - ODB150
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
-description: Learn how to use OneDrive and a team site for Office 365 storage and Office 365 file sharing.
+description: Learn how to use OneDrive and a team site for Microsoft 365 storage and Microsoft 365 file sharing.
 ---
 
-# Set up file storage and sharing in Office 365
+# Set up file storage and sharing in Microsoft 365
 
 One of the best ways to set up file storage and sharing for your business is to use OneDrive and a team site together. This is ideal if you have a small business with a few employees.
 
-Watch a short video about storing files in the Office 365 cloud.<br><br>
+Watch a short video about storing files in the Microsoft 365 cloud.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FTHX] 
 
 If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-## "Office 365 document storage and management"
+## "Microsoft 365 document storage and management"
 
-- OneDrive is designed for individual use, with the occasional sharing of files. 
+- OneDrive is designed for individual use, with the occasional sharing of files.
 
 - A team site is designed for sharing and collaborating on files regularly. A team site is ideal for storing files that have shared ownership where several people own the files and might collaborate on them. Create a Microsoft Team to add a team site. [Learn more at Create a team in Teams](https://support.office.com/article/174adf5f-846b-4780-b765-de1a0a737e2b).
 
