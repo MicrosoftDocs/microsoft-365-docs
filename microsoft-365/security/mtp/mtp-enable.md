@@ -26,9 +26,9 @@ search.appverid:
 **Applies to:**
 - Microsoft Threat Protection
 
-Microsoft Threat Protection unifies your incident response process by integrating key capabilities across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. This unified experience adds powerful features you can access in the Microsoft 365 security center.
+[Microsoft Threat Protection](microsoft-threat-protection.md) unifies your incident response process by integrating key capabilities across Microsoft Defender Advanced Threat Protection (ATP), Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. This unified experience adds powerful features you can access in the Microsoft 365 security center.
 
-To get the best protection and optimize Microsoft Threat Protection, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
+Microsoft Threat Protection automatically turns on when eligible customers with the required permissions visit Microsoft 365 security center. Read this article to understand various prerequisites and how Microsoft Threat Protection is provisioned.
 
 ## Check license eligibility and required permissions
 A license to a Microsoft 365 security product generally entitles you to use Microsoft Threat Protection in Microsoft 365 security center without additional licensing cost. We do recommend getting a Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses that provides access to all supported services.
@@ -38,22 +38,28 @@ For detailed licensing information, [read the licensing requirements](prerequisi
 ### Check your role
 You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft Threat Protection. [View your roles in Azure AD](https://docs.microsoft.com//azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
-## Start using the service
+## Supported services
+Microsoft Threat Protection aggregates data from the various supported services that you've already deployed. It will process and store data centrally to identify new insights and make centralized response workflows possible. It does this without affecting existing deployments, settings, or data associated with the integrated services.
 
-Microsoft Threat Protection aggregates data from the various integrated services. It will process and store data centrally to identify new insights and make centralized response workflows possible. It does this without affecting existing deployments, settings, or data associated with the integrated services.
+To get the best protection and optimize Microsoft Threat Protection, we recommend deploying all applicable supported services on your network. For more information, [read about deploying supported services](deploy-supported-services.md).
 
-Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) shows the Microsoft Threat Protection settings page when you select **Incidents**, **Action center**, or **Hunting** from the navigation pane. These navigation options are not shown if you are not eligible to use Microsoft Threat Protection.
+## Before starting the service
+Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) shows the Microsoft Threat Protection settings page when you select **Incidents**, **Action center**, or **Hunting** from the navigation pane. These navigation items are not shown if you are not eligible to use Microsoft Threat Protection.
 
 ![Image of the Microsoft Threat Protection settings page shown if Microsoft Threat Protection has not been turned on](../../media/mtp-enable/mtp-settings.png)
 *Microsoft Threat Protection settings in Microsoft 365 security center*
 
+## Starting the service
 To turn on Microsoft Threat Protection, simply select **Turn on Microsoft Threat Protection** and apply the change. You can also access this option by selecting **Settings** ([security.microsoft.com/settings](https://security.microsoft.com/settings)) in the navigation pane and then selecting **Microsoft Threat Protection**.
 
 >[!NOTE]
 >If you don't see **Settings** in the navigation pane or couldn't access the page, check your permissions and licenses.
 
-### Select data center location
-If Microsoft Defender ATP has been provisioned for your organization, data will be stored and processed in the same data center location you have selected for [your Microsoft Defender ATP data](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender ATP, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
+### Data center location
+Microsoft Threat Protection will store and process data in the [same location used by Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy), if it has already been provisioned in your tenant. If you don't have Microsoft Defender ATP, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
+
+>[!NOTE]
+>Select **Need help?** in the Microsoft 365 security center to contact Microsoft support about provision Microsoft Threat Protection in a different data center location. 
 
 ### Confirm that the service is on
 Once the service is provisioned, it adds:
@@ -98,9 +104,12 @@ No, Microsoft Threat Protection consolidates data from Microsoft 365 security se
 To optimize your Microsoft Threat Protection experiences, we recommend deploying *all* supported [Microsoft 365 security products and services](deploy-supported-services.md).
 
 ### Where does Microsoft Threat Protection process and store my data?
-Microsoft Threat Protection automatically selects an optimal location for the data center where consolidated data is processed and stored. If you have Microsoft Defender ATP, it selects the same location used by Microsoft Defender ATP. **If you don’t have Microsoft Defender ATP, the provisioning process selects...**
+Microsoft Threat Protection automatically selects an optimal location for the data center where consolidated data is processed and stored. If you have Microsoft Defender ATP, it selects the same location used by Microsoft Defender ATP.
 
-The data center location is shown before and after the service is provisioned in the settings page for Microsoft Threat Protection (**Settings > Microsoft Threat Protection**). **If you prefer to use another data center location, contact us…** 
+>[!NOTE]
+>Microsoft Defender ATP automatically provisions in European Union (EU) data centers when turned on through Azure Security Center. Microsoft Threat Protection will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender ATP in this manner. 
+
+The data center location is shown before and after the service is provisioned in the settings page for Microsoft Threat Protection (**Settings > Microsoft Threat Protection**). If you prefer to use another data center location, select **Need help?** in the Microsoft 365 security center to contact Microsoft support.
 
 ### Where can I access Microsoft Threat Protection?
 
@@ -110,11 +119,11 @@ Microsoft Threat Protection is available in Microsoft 365 security center. To go
 
 Accounts assigned the following Azure Active Directory (AD) roles can access Microsoft Threat Protection functionality and data:
 
-•	Global administrator
-•	Security administrator
-•	Security Operator
-•	Global Reader
-•	Security Reader
+- Global administrator
+- Security administrator
+- Security Operator
+- Global Reader
+- Security Reader
 
 >[!NOTE]
 >Role-based access control settings in Microsoft Defender ATP influence access to data. For more information, read about [managing access to Microsoft Threat Protection](mtp-permissions.md).
