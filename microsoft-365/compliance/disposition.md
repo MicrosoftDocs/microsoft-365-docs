@@ -30,7 +30,10 @@ To manage disposition reviews and confirm that records have been deleted, you mu
 
 ### Permissions for disposition
 
-To successfully access the **Disposition** tab in the Microsoft 365 compliance center, you must be members of the **Disposition Management** role and the **View-Only Audit Logs** role. We recommend creating a new role group called **Disposition Reviewers**, and add these two roles to that role group. 
+To successfully access the **Disposition** tab in the Microsoft 365 compliance center, users must have the **Disposition Management** role and the **View-Only Audit Logs** role. Although the standard advice is to add users to the default role groups, in this case, we recommend you create a new role group called **Disposition Reviewers** that has these two roles and add users to this group as needed. A single role group for disposition reduces administration overheads and makes it easier for users have the combined permissions that they need.
+
+> [!NOTE]
+> Even a global admin needs to be granted the **Disposition Management** role. So if global admins need to access the disposition tab, them as members of the **Disposition Reviewers** role group. 
 
 Specific to the **View-Only Audit Logs** role:
 

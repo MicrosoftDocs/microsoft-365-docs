@@ -99,10 +99,6 @@ Safe senders, mail flow rules, or block and allow organizational settings take p
 
 ZAP still works as long as the message has not been deleted, or as long as the same, or stronger, action has not already been applied. For example, if the phish policy is set to quarantine and the user or administrator has already junked the email, then quarantine will take action to quarantine the file.
 
-### Does ZAP change the message header?
-
-A ZAP action does not make any changes to the message header.
-
 ### How does ZAP affect mailboxes on hold?
 
 ZAP won't quarantine messages from mailboxes on hold. ZAP can move messages to the Junk Email folder based on the action that's configured for a spam or phishing verdict in anti-spam policies.

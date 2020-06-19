@@ -667,38 +667,11 @@ Content Search and eDiscovery-related activities that are performed in the secur
 For a list and detailed description of the eDiscovery activities that are logged, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
+> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** and **Advanced eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
 
 ### Advanced eDiscovery activities
 
-The following table lists activities that result from IT and legal professionals performing tasks in Advanced eDiscovery in Microsoft 365. For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
-
-|**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
-|Added data to another review set|AddWorkingSetQueryToWorkingSet|User added documents from one review set to a different review set.|
-|Added data to review set|AddQueryToWorkingSet|User added the search results from a content search associated with an Advanced eDiscovery case to a review set.|
-|Added non-Microsoft 365 data to review set|AddNonOffice365DataToWorkingSet|User added non-Microsoft 365 data to a review set.|
-|Added remediated documents to review set|AddRemediatedData|User uploads documents that had indexing errors that were fixed to a review set.|
-|Analyzed data in review set|RunAlgo|User ran  analytics on the  documents in a review set.|
-|Annotated document in review set|AnnotateDocument|User annotated a document in a review set. Annotation includes redacting content in a document.|
-|Compared load sets|LoadComparisonJob|User compared two different load sets in a review set. A load set is when data from a content search that associated with the case is added to a review set.|
-|Converted redacted documents to PDF|BurnJob|User converted all the redacted documents in a review set to PDF files.|
-|Created review set|CreateWorkingSet|User created a review set.|
-|Created review set search|CreateWorkingSetSearch|User created a search query that searches the documents in a review set.|
-|Created tag|CreateTag|User created a tag group in a review set. A tag group can contain one or more child tags. These tags are then used to tag documents in the review set.|
-|Deleted review set search|DeleteWorkingSetSearch|User deleted a search query in a review set.|
-|Deleted tag|DeleteTag|User deleted a tag or a tag group in a review set.|
-|Downloaded document|DownloadDocument|User downloaded a document from a review set.|
-|Edited tag|UpdateTag|User changed a tag in a review set.|
-|Exported documents from review set|ExportJob|User exported documents from a review set.|
-|Modified case setting|UpdateCaseSettings|User modified the settings for a case. Case settings include case information, access permissions, and settings that control search and analytics behavior.|
-|Modified review set search|UpdateWorkingSetSearch|User edited a search query in a review set.|
-|Previewed review set search|PreviewWorkingSetSearch|User previewed the results of a search query in a review set.|
-|Remediated error documents|ErrorRemediationJob|User fixes files that contained indexing errors.|
-|Tagged document|TagFiles|User tags a document in a review set.|
-|Tagged results of a query|TagJob|User tags all of the documents that match the criteria of search query in a review set.|
-|Viewed document in review set|ViewDocument|User viewed a document in a review set.|
-|||
+You can also search the audit log for activities in Advanced eDiscovery. For a description of these activities, see the "Advanced eDiscovery activities" section in [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
 
 ### Power BI activities
 
