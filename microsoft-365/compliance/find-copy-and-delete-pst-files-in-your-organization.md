@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
-description: "Use the Microsoft PST Collection Tool to search your organization's network to get an inventory of PST files that are scattered throughout your organization. After you find PST files, you can use the PST Collection Tool to copy them in a central location so you can import them to Office 365."
+description: Use the Microsoft PST Collection Tool to search your organization's network to get an inventory of PST files that are scattered throughout your organization.
 ms.custom: seo-marvel-apr2020
 ---
 

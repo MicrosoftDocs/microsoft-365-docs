@@ -16,13 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: "Learn how to access Azure Active Directory, which is included in your organization's paid subscription."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use your free Azure Active Directory subscription
 
 If your organization has a paid subscription to Microsoft 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in to your account.
 
-## Before you begin
+## Open a private browsing session
 
 Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this prevents the credentials that you're currently logged on with from being passed to Azure. To open an private browsing session:
 

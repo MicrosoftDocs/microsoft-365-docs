@@ -17,7 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
-description: "Use Content Search in the Security & Compliance Center to perform targeted collections. A targeted collection means that you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search."
+ms.custom: seo-marvel-apr2020
+description: Use Content Search in the Security & Compliance Center to perform targeted collections, which ensure items are located in a specific mailbox or site folder.
 ---
 
 # Use Content Search for targeted collections
@@ -27,7 +28,7 @@ The Content Search feature in the Security &amp; Compliance Center doesn't provi
 > [!NOTE]
 > To return content located in a folder in a SharePoint or OneDrive for Business site, the script in this topic uses the DocumentLink managed property instead of the Path property. The DocumentLink property is more robust than the Path property because it will return all content in a folder, whereas the Path property won't return some media files.
 
-## Before you begin
+## Before you use Content Search
 
 - You have to be a member of the eDiscovery Manager role group in the Security &amp; Compliance Center to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     
