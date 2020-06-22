@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -20,11 +20,16 @@ description: Configure the security and service infrastructure to protect your i
 
 # Deploy information protection for data privacy regulations with Microsoft 365
 
-This solution provides guidance on how to plan for and protect personal data that is stored in Microsoft 365 services and potentially subject to data privacy regulations such as the European Union's General Data Protection Regulation (GDPR). This solution focuses on applicable Microsoft information protection and compliance features, Microsoft Compliance Score, and assessment tools to help you know your data. 
- 
-Additional information is also provided on the use of Microsoft identity, device, and threat protection controls for your data privacy needs, as well as data incident discovery and response tools. 
+Your organization may be subject to regional data privacy regulations that require you to protect, manage, allow access to, and provide rights and control over personal information stored by your IT infrastructure, including both on-premises and in the cloud. The best example is the European Union's General Data Protection Regulation (GDPR). Failure to comply with data privacy regulations can result in substantial fines.
 
-## Organization of this guidance material
+This solution provides guidance on how to identify, locate, and plan for and protect personal data that is stored in Microsoft 365 services subject to data privacy regulations. Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs, as well as data incident discovery and response tools. 
+
+
+
+To meet the criteria for protecting information for compliance with data privacy regulations, use these Microsoft 365 capabilities and features.
+
+
+## Organization of the guidance in this solution
 
 To help you understand the Microsoft 365 tools available to identify, manage, control, and monitor personal data subject to one or more privacy-related regulations, this guidance is organized into sections.
  
