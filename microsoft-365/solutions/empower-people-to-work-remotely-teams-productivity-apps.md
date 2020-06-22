@@ -90,4 +90,4 @@ See [this article](https://docs.microsoft.com/deployoffice/deployment-guide-micr
 
 ## Next step
 
-Continue with [Step 6](empower-people-to-work-remotely-communication-venues.md) to train your users and monitor their success.
+Continue with [Step 6](empower-people-to-work-remotely-train-monitor-usage.md) to train your users and monitor their success.
