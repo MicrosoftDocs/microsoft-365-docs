@@ -200,9 +200,7 @@
                       href: mtp/custom-detection-rules.md
             - name: Secure Score
               items: 
-                - name: Secure Score (new)
-                  href: mtp/microsoft-secure-score-new.md
-                - name: Secure Score (previous iteration)
+                - name: Secure Score
                   href: mtp/microsoft-secure-score.md
                 - name: Secure Score (preview)
                   href: mtp/microsoft-secure-score-preview.md
