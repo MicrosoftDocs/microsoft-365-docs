@@ -179,7 +179,7 @@ In comparison, sensitivity labels provide the protection settings of visual mark
 
 However, you can use both protection solutions together and the behavior is as follows: 
 
-- If you upload a file with a sensitivity label that applies encryption, the encryption is not removed so for these files, coauthoring, eDiscovery, DLP, and search are not supported.
+- If you upload a file with a sensitivity label that applies encryption, SharePoint can't process this file so coauthoring, eDiscovery, DLP, and search don't work for this file.
 
 - If you label a file using Office on the web, any encryption settings from the label are enforced. For these files, coauthoring, eDiscovery, DLP, and search are supported.
 

@@ -52,7 +52,7 @@ When you're working on a large project that involves many guests from another or
 
 If some of the sharing features in Microsoft 365 conflict with your governance policies, see [Limit sharing in Microsoft 365](microsoft-365-limit-sharing.md) to learn about options for limiting sharing.
 
-## See Also
+## Related topics
 
 [Intro to file collaboration in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
 

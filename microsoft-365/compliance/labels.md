@@ -16,7 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: Learn about retention labels that govern your data by keeping what you want, deleting what you don't want, and marking content as a record.
 ---
 
 # Learn about retention labels

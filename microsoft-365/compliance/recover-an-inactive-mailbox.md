@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
-description: "If a former employee returns to your organization, or if a new employee is hired to take on the job responsibilities of a departed employee, you can recover the contents of the inactive mailbox in Office 365. When you recover an inactive mailbox, it's converted to a new mailbox that contains the contents of the inactive mailbox. "
+ms.custom: seo-marvel-apr2020
+description: Learn how to recover the contents of an inactive mailbox in Office 365 by converting it to a new mailbox that contains the contents of the inactive mailbox.
 ---
 
 # Recover an inactive mailbox
@@ -28,7 +29,7 @@ An inactive mailbox (which is a type of soft-deleted mailbox) is used to preserv
 
 See the [More information](#more-information) section for more details about the differences between recovering and restoring an inactive mailbox, and for a description of what happens when an inactive mailbox is recovered.
   
-## Before you begin
+## Requirements to recover an inactive mailbox
 
 - You have to use Exchange Online PowerShell to recover an inactive mailbox. You can't use the Exchange admin center (EAC). For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
     

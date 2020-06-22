@@ -19,7 +19,8 @@ ms.collection:
 - M365-security-compliance
 ms.custom: 
 - seo-marvel-apr2020
-description: "Apply your organization's branding to  your organization's encrypted email messages and to the contents of the encryption portal."
+- seo-marvel-jun2020
+description: Learn how Office 365 global administrators can apply your organization's branding to encrypted email messages & contents of the encryption portal.
 ---
 
 # Add your organization's brand to your encrypted messages
