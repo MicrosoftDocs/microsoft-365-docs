@@ -21,5 +21,8 @@ As the admin of a Microsoft 365 organization, you can now monitor failed or dela
 
 ## Add priority users
 
+Here's how to add priority users in the Microsoft 365 admin center.
+
+1. In the admin center, go to the...
 
 ## Email issues for priority users
