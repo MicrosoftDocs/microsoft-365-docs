@@ -16,7 +16,8 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "With the Label Activity Explorer in the Security &amp; Compliance Center, you can quickly search and view label activity for all content across SharePoint and OneDrive for Business over the past 30 days. This is real-time data that gives you a clear view into what's happening in your tenant."
+ms.custom: seo-marvel-apr2020
+description: Learn how to use the Label Activity Explorer in the Microsoft 365 Security & Compliance Center to search and view label activity.
 ---
 
 # View label activity for documents

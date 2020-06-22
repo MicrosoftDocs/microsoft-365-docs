@@ -55,7 +55,7 @@ To deploy Microsoft 365 for enterprise yourself, you can:
 
   **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
 
-  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. For a simplified deployment for non-enterprises, click [here](deploy-foundation-infrastructure-non-enterprises.md).
+  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. For a simplified deployment for non-enterprises, go to [foundation infrastructure for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md).
 
   **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
 
@@ -67,7 +67,7 @@ Here's the relationship between the foundation infrastructure and the workloads.
 
 Workloads operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
 
-Get self-started on your end-to-end deployment journey [here](deploy-foundation-infrastructure.md).
+Get self-started on your end-to-end deployment journey at [Microsoft 365 for enterprise foundation infrastructure](deploy-foundation-infrastructure.md).
 
 ## Take a test drive
 
