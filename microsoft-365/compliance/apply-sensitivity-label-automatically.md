@@ -52,7 +52,7 @@ There are two different methods for automatically applying a sensitivity label:
     - Maximum of 25,000 automatically labeled files (Word, PowerPoint, or Excel) in your tenant per day
     - Maximum of 10 sites collections across all policies
     - Maximum of 10 policies across your tenant
-    - File attributes for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied
+    - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied
 
     Specific to auto-labeling for Exchange:
     - Unlike manual labeling or auto-labeling with Office apps, Office attachments and PDF attachments are also scanned for the conditions you specify in your auto-labeling policy. When there is a match, the email is labeled but not the attachment.
