@@ -31,7 +31,7 @@ highlightedContent:
       itemType: whats-new
       url: whats-new-in-preview.md
     # Card
-    - title: Stay on top of changes
+    - title: Stay on top of Microsoft 365 changes
       itemType: how-to-guide
       url: manage/stay-on-top-of-updates.md
 
