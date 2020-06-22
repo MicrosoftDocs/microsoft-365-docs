@@ -1,5 +1,5 @@
 ---
-title: "View email security reports in the Security & Compliance Center, Compromised users, Encryption, Threat Protection Status, malware detections, Top malware, spam detection, sent and received email, user reported messages, read reports, detection, security data, security information"
+title: View email security reports in the Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,6 +17,7 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: "Learn how to find and use email security reports for your organization. Email security reports are available in the Security & Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # View email security reports in the Security & Compliance Center

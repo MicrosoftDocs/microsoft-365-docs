@@ -92,6 +92,8 @@
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
+            - name: Turn on FAQ
+              href: mtp/mtp-enable-faq.md
             - name: Incidents
               items: 
                 - name: Overview
@@ -232,7 +234,7 @@
               href: ./mtp/tickets.md
 
 
-    - name: Microsoft 365 Security
+    - name: Office 365 Advanced Threat Protection
       items: 
         - name: Get started
           items: 

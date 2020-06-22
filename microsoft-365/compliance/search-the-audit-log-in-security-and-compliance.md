@@ -18,11 +18,10 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Search the audit log in the Security & Compliance Center
-
-## Introduction
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Office 365:
 
@@ -60,7 +59,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
 
-## Before you begin
+## Requirements to search the audit log
 
 Be sure to read the following items before you start searching the audit log.
 
@@ -911,7 +910,7 @@ See the [Audited activities](#audited-activities) section in this article for a 
 
 **How long does it take for an auditing record to be available after an event has occurred?**
 
-Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you begin](#before-you-begin) section of this article that shows the time it takes for events in the different services to be available.
+Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Requirements to search the audit log](#requirements-to-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
 
 **How long are the audit records retained for?**
 
@@ -927,7 +926,7 @@ No. These are the only two ways to get data from the auditing service.
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 
-In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Before you begin](#before-you-begin) section in this article).
+In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Requirements to search the audit log](#requirements-to-search-the-audit-log) section in this article).
 
 **Does the auditing service support de-duplication of records?**
 

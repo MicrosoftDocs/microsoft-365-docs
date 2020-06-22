@@ -15,6 +15,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
 # Office 365 Data Subject Requests for the GDPR and CCPA
@@ -228,7 +229,7 @@ We recommend that you learn more about partially indexed items so that you can w
 
 - [Partially indexed items in Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)
 - [Investigating partially indexed items in Office 365 eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery)
-- [Exporting unindexed items](https://docs.microsoft.com/microsoft-365/compliance/export-search-results#unidexeditems)
+- [Exporting unindexed items](export-search-results.md)
 
 #### Tips for working with partially indexed items
 
@@ -242,7 +243,7 @@ It's possible that data responsive to a DSR investigation may be in a partially 
 
 ##### Export all partially indexed items
 
-You export both the results of a content search and the partially indexed items from the content location that were search. You can also export only the partially indexed items. Then you can open them in their native application and review the content. You have to use this option to export items from SharePoint Online and OneDrive for Business. See [Export Content Search results from the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/export-search-results).
+You export both the results of a content search and the partially indexed items from the content location that were search. You can also export only the partially indexed items. Then you can open them in their native application and review the content. You have to use this option to export items from SharePoint Online and OneDrive for Business. See [Export Content Search results from the Security & Compliance Center](export-search-results.md).
 
 ##### Export a specific set of partially indexed items from mailboxes
 
@@ -319,7 +320,7 @@ An admin can export all User information properties for a user on a given site b
 
 ##### OneDrive for Business experience settings
 
-A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
+A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
 
 See [Export OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/export-odfb-lists) for more information about the settings, how they are stored, and how to export them.
 
@@ -445,7 +446,7 @@ To export and download items:
 
 When the export process is complete, you can access the files in the location on your local computer where they were downloaded. Results of a content search are downloaded to a folder named after the Content Search. Documents from sites are copied to a subfolder named **SharePoint**. Mailbox items are copied to subfolder named **Exchange**.
 
-For detailed step-by-step instructions, see [Export Content Search results from the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/export-search-results).
+For detailed step-by-step instructions, see [Export Content Search results from the Security & Compliance Center](export-search-results.md).
 
 ### Downloading documents and lists from SharePoint Online and OneDrive for Business
 
@@ -533,7 +534,7 @@ Finally, the redaction capability will not remove all metadata or content refere
 
 #### Deleting OneDrive for Business experience settings
 
-The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/delete-odfb-lists) for more information about the settings, how they are stored, and how to delete them.
+The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/delete-odfb-lists) for more information about the settings, how they are stored, and how to delete them.
 
 #### OneDrive for Business and SharePoint Online search queries
 
