@@ -37,13 +37,9 @@ Office What's New management is available in the Microsoft 365 admin center and 
 Admins can preview the What's new content for a channel, and manage the release of the content using Office What's New management.
 
 1. In the Microsoft 365 admin center, under **Settings**, choose **Org settings**.
-
 2. On the **Services** tab, choose **Office What's New management**.
-
 3. Select one or more features to view the feature name, a short description, the application, and the release version for each feature on the flyout panel.
-
 4. Choose **Hide from users** or **Show to users**.  
-
     The status **Shown by default** indicates feature information is shown by default to users until the admin sets the status for a feature to **Hidden** or **Shown**.  
 
     > [!NOTE]
@@ -60,6 +56,13 @@ New features appear in Office What's New Management based on this schedule:
 |**Semi-Annual Enterprise** <br/> |Jan 1 and July 1 <br/> | 2 weeks before the major release that brings new features<br/> |
 
 For more information about channel update schedules, see [Update history for Microsoft 365 Apps (listed by date)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+
+## Add Office What's New Management card to the admin center home page
+
+1. On the Microsoft 365 admin page, choose Add card on top of the page
+2. Locate **What's New in Office Apps** in the list and choose it.
+3. Once the card is on our home page, you can choose **Manage** to [show or hide the features](#show-or-hide-new-features) for yor organization. 
+
 
 ## Related articles
 

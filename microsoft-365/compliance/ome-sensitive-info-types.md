@@ -1,5 +1,5 @@
 ---
-title: "Create a sensitive information type policy for your organization using Message Encryption"
+title: Create a sensitive information type policy using Office 365 Message Encryption
 f1.keywords:
 - NOCSH
 ms.author: krowley

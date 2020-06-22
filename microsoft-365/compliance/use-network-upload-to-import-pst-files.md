@@ -18,6 +18,7 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: "For administrators: Learn how to use network upload to bulk-import multiple PST files to user mailboxes in Microsoft 365."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use network upload to import your organization's PST files to Microsoft 365
@@ -41,7 +42,7 @@ Here are the step-by-step instructions required to use network upload to bulk-im
 
 You have to perform Step 1 only once to import PST files to Microsoft 365 mailboxes. After you perform these steps, follow Step 2 through Step 6 each time you want to upload and import a batch of PST files.
 
-## Before you begin
+## Before you import PST files
   
 - You have to be assigned the Mailbox Import Export role in Exchange Online to import PST files to Microsoft 365 mailboxes. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a role group, assign the Mailbox Import Export role, and then add yourself as a member. For more information, see the "Add a role to a role group" or the "Create a role group" sections in [Manage role groups](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     

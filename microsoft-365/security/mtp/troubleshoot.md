@@ -39,12 +39,7 @@ If you have Azure ATP deployed in your environment but you're not seeing Azure A
 
 For more information, see [Azure ATP integration](https://docs.microsoft.com/cloud-app-security/aatp-integration).
 
-## Is Microsoft Threat Protection available for US Government Community Cloud (GCC) or GCC High?
-At the moment, it is not available.
-
 ## Where is the settings page for turning the service on?
 To turn on Microsoft Threat Protection, access **Settings** from the navigation pane in the Microsoft 365 security center. This navigation item is visible only if you have the [prerequisite permissions and licenses](mtp-enable.md#check-license-eligibility-and-required-permissions).
-
-## Can I use an add-on instead of the required E5 licenses?
-There are currently no add-ons for Microsoft Threat Protection. [See licensing requirements](prerequisites.md) 
+ 
 
