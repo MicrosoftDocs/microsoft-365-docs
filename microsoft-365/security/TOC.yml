@@ -200,7 +200,7 @@
                       href: mtp/custom-detection-rules.md
             - name: Microsoft Secure Score
               items: 
-                - name: Microsoft Secure Score overview
+                - name: Secure Score overview
                   href: mtp/microsoft-secure-score.md
                 - name: What's coming
                   href: mtp/microsoft-secure-score-whats-coming.md
