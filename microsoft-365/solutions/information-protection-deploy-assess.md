@@ -176,16 +176,16 @@ GDPR assessment consists of these sections:
 | | |
 |:-------|:-----|
 | Governance | <ol><li>Does your privacy policy explicitly state what data information is being processed? </li><li>Do you regularly run Privacy Impact Assessments (PIAs)? </li><li> Do you use a tool to manage personal information (PI)? </li><li> Do you have legal authority to conduct business using PI data on any given individual? Do you track consent for data? </li><li> Do you track, implement, and manage audit controls? Do you monitor for data leaks? </li></ol>|
-| Deletion & Notification | <ol><li>Do you give explicit instructions on how users' data can be accessed? </li><li> Do you have documented processes in place for handling opt out consent? </li><li>	Do you have an Automated Deletion process for data? </li><li>	Do you have a process to validate identity when engaging with a customer? </li></ol>|
-| Risk Mitigation and Information Security | <ol><li>Do you use tools to scan unstructured data? </li><li>Are all servers up to date, and do you leverage firewalls to protect them? </li><li>Do you run regular backups of your servers? </li><li>Do you actively monitor for data leaks? </li><li>Do you encrypt your data at rest and in transmission? </li></ol>|
-| Policy Management | <ol><li>How do you manage your Binding Corporate Rules (BCRs)? </li><li>Do you track consent for data? </li><li> On a scale of 1 to 5, 5 being completely covered, do your contracts cover data classifications and handling requirements? </li><li>Do you have and regularly test an incident response plan? </li><li>What policy do you use to manage access? </li></ol>|
+| Deletion and notification | <ol><li>Do you give explicit instructions on how users' data can be accessed? </li><li> Do you have documented processes in place for handling opt out consent? </li><li>	Do you have an Automated Deletion process for data? </li><li>	Do you have a process to validate identity when engaging with a customer? </li></ol>|
+| Risk mitigation and information security | <ol><li>Do you use tools to scan unstructured data? </li><li>Are all servers up to date, and do you leverage firewalls to protect them? </li><li>Do you run regular backups of your servers? </li><li>Do you actively monitor for data leaks? </li><li>Do you encrypt your data at rest and in transmission? </li></ol>|
+| Policy management | <ol><li>How do you manage your Binding Corporate Rules (BCRs)? </li><li>Do you track consent for data? </li><li> On a scale of 1 to 5, 5 being completely covered, do your contracts cover data classifications and handling requirements? </li><li>Do you have and regularly test an incident response plan? </li><li>What policy do you use to manage access? </li></ol>|
 |||
  
 ## Step 3: Identify sensitive information types that occur in your Microsoft 365 environment. 
 
 This step involves identification of particular sensitive information types that are subject to specific regulatory controls, as well as the occurrence of them in your Microsoft 365 environment. 
 
-Finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, Advanced eDiscovery DLP, and auditing. 
+Finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, Advanced eDiscovery, DLP, and auditing. 
 
 With the new **Data Classification** solution in the Microsoft Compliance admin center, this has become much easier with the [Content Explorer](../compliance/data-classification-content-explorer.md) capability, which works with either built-in or custom sensitive information types, including those related to personal data.
  
