@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -91,14 +91,9 @@ This table shows the results of enabling MFA with security defaults and Conditio
 
 Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
 
-## SaaS apps with Azure AD
+## Sign in to SaaS apps with Azure AD
 
-In addition to providing cloud authentication for users, Azure AD can also be your single control plane to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. Using Azure AD to sign into apps isn’t just about being more secure. It’s also about being more productive. Our customers use about 180 apps on average—and this number keeps growing. By integrating your apps into Azure AD, you can make it easy for remote workers to discover the applications they need and sign into them securely. Using the Azure portal, you can find more than 3000 SaaS applications in the App Gallery and configure them for single sign-on with just a few clicks. You can automatically provision and de-provision access to the apps so that people who need them can start using them right away.
-
-<!--
-Fix this text
-
---> 
+In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for remote workers to discover the applications they need and sign into them securely.
 
 ## Admin technical resources for MFA and identity
 

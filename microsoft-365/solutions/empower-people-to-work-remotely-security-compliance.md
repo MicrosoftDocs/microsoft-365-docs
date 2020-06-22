@@ -1,11 +1,11 @@
 ---
-title: "Step 3: Deploy security and compliance"
+title: "Step 3: Deploy security and compliance for remote workers"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/27/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -16,10 +16,10 @@ ms.collection:
 - remotework
 - M365solutions
 ms.custom:
-description: Use Microsoft 365 security and compliance services to protect your apps, data, and devices.
+description: Use Microsoft 365 security and compliance services to protect your apps, data, and devices for remote workers.
 ---
 
-# Step 3: Deploy security and compliance
+# Step 3: Deploy security and compliance for remote workers
 
 For remote workers, some of whom never come into the office or very infrequently, security and compliance are an important part of the overall solution. All of their communications occur over the Internet instead of being confined to an organizational intranet. 
 
