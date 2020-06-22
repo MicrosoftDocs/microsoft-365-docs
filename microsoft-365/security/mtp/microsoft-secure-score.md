@@ -36,8 +36,6 @@ Secure Score helps organizations:
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
-Additionally, you can access your recommendations and score through the [Microsoft Graph API](https://www.microsoft.com/security/partnerships/graph-security-api). Learn about the [Secure Score resource type](https://go.microsoft.com/fwlink/?linkid=2092996).
-
 ## How it works
 
 You are given points for configuring recommended security features, performing security-related tasks, or addressing the improvement action with a third-party application or software, or an alternate mitigation. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users. If you cannot or do not want to enact one of the improvement actions, you can choose to accept the risk or the remaining risk.
@@ -48,7 +46,7 @@ Your score is updated in real time to reflect the information presented in the v
 
 ### How improvement actions are scored
 
-Each improvement action is worth 10 points or less. Most are scored in a binary fashion — if you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 30 points by protecting all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
+Each improvement action is worth 10 points or less. Most are scored in a binary fashion — if you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 10 points by protecting all your users with multi-factor authentication and you only have 50 of 100 total users protected, you would be given a partial score of 5 points (50 protected / 100 total * 10 max pts = 5 pts partial score).
 
 ### Products included in Secure Score
 
@@ -78,13 +76,6 @@ With read-only access, you are not able to edit status or notes for an improveme
 * Security reader
 * Security operator
 * Global reader
-
-### Graph API
-
-To access the Graph API, you need to have one of the following scopes in addition to a role:
-
-* SecurityEvents.Read.All (for read-only roles)
-* SecurityEvents.ReadWrite.All (for read and write roles)
 
 ## Gain visibility into your security posture
 

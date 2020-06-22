@@ -202,8 +202,6 @@
               items: 
                 - name: Secure Score
                   href: mtp/microsoft-secure-score.md
-                - name: Secure Score (preview)
-                  href: mtp/microsoft-secure-score-preview.md
                 - name: What's coming
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
