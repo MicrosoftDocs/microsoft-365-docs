@@ -22,6 +22,9 @@ description: "Learn how to configure data loss prevention (DLP) policies to use 
 
 # Using endpoint data loss prevention (preview)
 
+
+
+
 make a table to capture the what it is you want the policy to do or all the values that will need to be entered.
 
 heavily refer out to existing DLP content on how to create a policy

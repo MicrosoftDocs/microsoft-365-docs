@@ -28,7 +28,7 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 ## Endpoint activities you can monitor and take action on
 
-Microsoft EPDLP enables you to audit and manage the following types of activities users take on files on devices running Windows 10. This includes: 
+Microsoft EPDLP enables you to audit and manage the following types of activities users take on files on devices running Windows 10. This includes:
 
 - File created
 - File renamed
@@ -37,7 +37,6 @@ Microsoft EPDLP enables you to audit and manage the following types of activitie
 - file printed - when a file is printed to a local or network printer
 - file copied to removable media - when a file is copied or created on a removable USB media.
 - file copied to a network share - when a file is copied to a network share, for example \\my-server\fileshare or a mapped network drive
-
 
 ## What's different in Endpoint DLP
 
@@ -51,7 +50,6 @@ Device management is the functionality that enables the collection of telemetry 
 
 Device management is tightly integrated with [Microsoft Defender Advanced Threat Protection  (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/). It's okay if you don't have MDATP deployed, but if you do, all your Windows 10 MDATP devices will automatically show up in the list of devices.
 
-
 ![managed devices list](../media/endpoint-dlp-learn-about-2-device-list.png)
 
  If you don't have MDATP deployed, you can still use Endpoint DLP, the needed features are automatically provisioned in the Microsoft 365 cloud infrastructure without the need for MDATP licenses. You'll also need to onboard all devices you want to use as locations in DLP policies.
@@ -64,7 +62,7 @@ Without MDATP implemented, onboarding and offboarding are handled via scripts yo
 - Group policy
 - System Center Configuration Manager (version 1610 or later)
 - Mobile Device Management/Microsoft Intune
-- VDI onboarding scripts for non-persistent machines 
+- VDI onboarding scripts for non-persistent machines
 
 ![device onboarding page](../media/endpoint-dlp-learn-about-3-device-onboarding-page.png)
 
@@ -102,14 +100,14 @@ For example, if a file is copied to removable USB media, you'd see these attribu
 - parent
 - filepath
 - source location type
-- platfrom
+- platform
 - device name
 - destination location type
 - application that performed the copy
 - MDATP device ID (if applicable)
 - removable media device manufacturer
 - removable media device model
-- removable media device serial number 
+- removable media device serial number
 
 ## Workflow (TBD)
 
@@ -119,4 +117,3 @@ GRAPHIC SHOWING
 
 1. WITH MDATP >> DEVICE LIST >> ACTIVITY EXPLORER FOR AUDITED EVENTS >> USING ENDPOINTS IN DLP POLICIES
 2. WITHOUT MDATP >> ENABLE DEVICE MONITORING >> ONBOARD DEVICES >> ACTIVITY EXPLORER FOR AUDITED EVENTS >> USING ENDPOINTS IN DLP POLICIES
- 
