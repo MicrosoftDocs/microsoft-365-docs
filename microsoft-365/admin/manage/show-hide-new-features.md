@@ -61,7 +61,8 @@ For more information about channel update schedules, see [Update history for Mic
 
 1. On the Microsoft 365 admin page, choose Add card on top of the page
 2. Locate **What's New in Office Apps** in the list and choose it.
-3. Once the card is on our home page, you can choose **Manage** to [show or hide the features](#show-or-hide-new-features) for yor organization.
+3. Once the card is on our home page, you can choose **Manage** to [show or hide the features](#show-or-hide-new-features) for yor organization. 
+
 
 ## Related articles
 
