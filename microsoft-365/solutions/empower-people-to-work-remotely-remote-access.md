@@ -128,4 +128,4 @@ After deployment of a remote access solution for your remote workers:
 
 ## Next step
 
-Continue with [Step 3](empower-people-to-work-remotely-security-compliance.md) to deploy Microsoft 365 security services to protect your apps, data, and devices.
+Continue with [Step 3](empower-people-to-work-remotely-security-compliance.md) to deploy Microsoft 365 security and compliance services to protect your apps, data, and devices.

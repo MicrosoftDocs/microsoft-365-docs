@@ -90,4 +90,4 @@ You are using the suite of Endpoint Manager features and capabilities to manage 
 
 ## Next step
 
-Continue with [Step 4](empower-people-to-work-remotely-teams-productivity-apps.md) to get your remote workers using Microsoft 365 productivity apps such as Microsoft Teams.
+Continue with [Step 5](empower-people-to-work-remotely-teams-productivity-apps.md) to get your remote workers using Microsoft 365 productivity apps such as Microsoft Teams.
