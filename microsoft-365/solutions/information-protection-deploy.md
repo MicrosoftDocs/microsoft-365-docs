@@ -24,10 +24,18 @@ Your organization may be subject to regional data privacy regulations that requi
 
 This solution provides guidance on how to identify, locate, and plan for and protect personal data that is stored in Microsoft 365 services subject to data privacy regulations. Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs, as well as data incident discovery and response tools. 
 
-
-
 To meet the criteria for protecting information for compliance with data privacy regulations, use these Microsoft 365 capabilities and features.
 
+| Capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+| Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 and E5 |
+| Compliance Score (preview) | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 and E5 |
+| Office Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. | Microsoft 365 E3 and E5 | 
+| Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 and E5 |
+| Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 | 
+| Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations. | Microsoft 365 E3 and E5 |
+| Email encryption | Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers. | Microsoft 365 E3 and E5 |
+||||
 
 ## Organization of the guidance in this solution
 
