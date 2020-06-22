@@ -19,8 +19,8 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
-description: "Create an archiving and deletion policy in Microsoft 365 that automatically moves items to a user's archive mailbox."
 ms.custom: seo-marvel-apr2020
+description: "Learn how to create an archiving and deletion policy in Microsoft 365 that automatically moves items to a user's archive mailbox."
 ---
 
 # Set up an archive and deletion policy for mailboxes in your organization
@@ -43,7 +43,7 @@ The steps in this article will set up an archiving and retention policy for a fi
     
 You can follow some or all of the steps in this article to set up an archive and deletion policy for mailboxes in your own organization. We recommend that you test this process on a few mailboxes before implementing it on all mailboxes in your organization.
   
-## Before you begin
+## Before you set up an archive and deletion policy
 
 - You have to be a global administrator in your organization to perform the steps in this topic. 
     

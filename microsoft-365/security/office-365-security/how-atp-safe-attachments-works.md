@@ -21,8 +21,6 @@ description: "Learn how can you keep your organization safe from malicious files
 
 # How ATP Safe Attachments works
 
-## How it works
-
 The ATP Safe Attachments feature checks email attachments for people in your organization. When an ATP Safe Attachments policy is in place and someone covered by that policy views their email in Office 365, their email attachments are checked and appropriate actions are taken, based on your ATP Safe Attachments policies. Depending on how your policies are defined, people can continue working without ever knowing they were sent malicious files.
   
 Here are two examples of ATP Safe Attachments at work.

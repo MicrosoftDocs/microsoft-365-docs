@@ -16,7 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: Learn about retention labels that govern your data by keeping what you want, deleting what you don't want, and marking content as a record.
 ---
 
 # Learn about retention labels
@@ -57,7 +60,9 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. 
+Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label can't be changed or removed, and the content can't be edited or deleted. 
+
+Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
 There is no limit to the number of retention labels that are supported for a tenant. However, 10,000 is the maximum number of policies that are supported for a tenant and these include the policies that apply the labels (retention label policies and auto-apply retention policies), as well as retention policies.
 
