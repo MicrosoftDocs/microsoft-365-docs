@@ -93,6 +93,8 @@
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
+           - name: Guest users
+             href: add-users/about-guest-users.md
            - name: Add guest users to a Microsoft 365 group
              href: create-groups/manage-guest-access-in-groups.md
            - name: Remove licenses from users
@@ -170,7 +172,7 @@
               href: email/about-shared-mailboxes.md
             - name: Create a shared mailbox
               href: email/create-a-shared-mailbox.md
-            - name: Set up a shared mailbox
+            - name: Configure shared mailbox settings
               href: email/configure-a-shared-mailbox.md
             - name: Convert a user mailbox to a shared mailbox
               href: email/convert-user-mailbox-to-shared-mailbox.md
@@ -218,6 +220,8 @@
            href: manage/set-password-expiration-policy.md
          - name: Customize the app launcher
            href: manage/customize-the-app-launcher.md
+         - name: Upgrade users to the latest apps
+           href: setup/upgrade-users-to-latest-office-client.md
          - name: Requirements for centralized deployment of add-ins
            href: manage/centralized-deployment-of-add-ins.md
          - name: Install and manage add-ins by using Centralized Deployment
@@ -321,7 +325,7 @@
           href: manage/share-calendars-with-external-users.md
         - name: Create a Team with guest users
           href: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
-        - name: Schedule a Teams meeting with guests
+        - name: Schedule a Teams meeting with guest users
           href: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
         - name: Join a Teams meeting with guest users
           href: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8

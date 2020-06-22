@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: "Use the script in this article to generate a report that contains information about all the holds that are associated with eDiscovery cases in the compliance center in Office 365 or Microsoft 365."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 ---
 
 # Create a report on holds in eDiscovery cases
@@ -26,7 +28,7 @@ The script in this article lets eDiscovery administrators and eDiscovery manager
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
   
-## Before you begin
+## Admin requirements and script information
 
 - To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     

@@ -18,7 +18,8 @@ search.appverid:
 ms.custom: 
  - seo-marvel-apr2020
  - seo-marvel-may2020
-description: Learn how to base retention periods on specific event types with retention labels in Microsoft 365.
+ - seo-marvel-jun2020
+description: Typically part of a records management solution, you can configure a retention label to start the retention period based on an event that you identify.
 ---
 
 # Overview of event-driven retention

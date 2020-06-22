@@ -71,6 +71,9 @@ This section explains how to allow users to send email on behalf of a group in t
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
     ![Type to search or pick a user from the list](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+> [!NOTE]
+> It may take up to two hours for changes to take effect.
 
 ## Related articles
 

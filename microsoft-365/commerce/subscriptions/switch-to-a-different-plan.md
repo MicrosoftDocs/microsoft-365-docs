@@ -36,7 +36,7 @@ The easiest way to switch plans is to use the **Switch plans** button in the adm
 
 **Need something else?**
 - [Cancel your subscription](cancel-your-subscription.md)
-- [Upgrade Microsoft 365 Family to a business subscription](https://support.office.com/article/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
+- [Upgrade Microsoft 365 Family to a business subscription](https://support.microsoft.com/office/9322ffb8-a35d-4407-8ebe-ed6ea0859b9f.aspx)
 - [Call Microsoft Support](../../admin/contact-support-for-business-products.md)
 
 ## Use the Switch plans button
