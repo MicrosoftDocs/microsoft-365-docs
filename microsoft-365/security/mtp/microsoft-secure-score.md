@@ -92,7 +92,7 @@ To help you the information you need more quickly, Microsoft improvement actions
 
 * Identity (Azure AD accounts & roles)
 * Data  (Microsoft Information Protection)
-* Device (Microsoft Defender ATP)
+* Device (Microsoft Defender ATP, known as [Configuration score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score))
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (no improvement actions for now)
 
@@ -102,7 +102,6 @@ To help you the information you need more quickly, Microsoft improvement actions
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
 ![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
-
 
 ## Take action to improve your score
 
