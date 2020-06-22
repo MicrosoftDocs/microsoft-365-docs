@@ -29,7 +29,7 @@ Remote work needs these elements of security and compliance:
 
 - Controlled access to the productivity apps that remote workers use, such as Microsoft Teams 
 - Controlled access to and protection of the data that remote workers create and use, such as chat conversations or shared files
-- Protection for Windows 10 devices from malware and other types of cyber attacks
+- Protection of Windows 10 devices from malware and other types of cyberattacks
 - Protection of email, files, and site with consistent labeling for levels of sensitivity and protection
 - Prevention of leaked information
 - Adherence to regional data regulations
@@ -40,31 +40,31 @@ Protect your applications and data with these security features of Microsoft 365
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Office Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br> Office ATP collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 and E5 | 
-| Malware protection | ‎Windows Defender Antivirus and Device Guard provides device-based malware protection. <br> SharePoint‎ Online automatically scans file uploads for known malware. ‎<br> Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes. | Microsoft 365 E3 and E5 |
+| Office Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Office ATP collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 and E5 | 
+| Malware protection | ‎Windows Defender Antivirus and Device Guard provides device-based malware protection. <br><br> SharePoint‎ Online automatically scans file uploads for known malware. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes. | Microsoft 365 E3 and E5 |
 | Microsoft Defender ATP | Protect your organization’s devices from cyberthreats and data breaches and detect, investigate, and respond to advanced threats. | Microsoft 365 E5 |
 | Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps— from attack. | Microsoft 365 E5 |
-| Azure AD Identity Protection	| Automate detection and remediation of identity-based risks and create risk-based Condition Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
+| Azure AD Identity Protection	| Automate detection and remediation of identity-based risks. <br><br>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
 ||||
 
 ## Compliance
 
-Comply with legal or regulatory standards with these compliance features of Microsoft 365.
+Comply with internal policies or regulatory requirements with these compliance features of Microsoft 365.
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
 | Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 and E5 |
 | Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 | 
 | Conditional Access App Control | Prevent sensitive data from being downloaded to users' personal devices. | Microsoft 365 E3 and E5 |
-| Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization policies or data regulations. | Microsoft 365 E3 and E5 |
+| Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations. | Microsoft 365 E3 and E5 |
 | Email encryption | Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers. | Microsoft 365 E3 and E5 |
 | Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 and E5 |
-| Compliance Score | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 and E5 |
+| Compliance Score (preview) | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 and E5 |
 ||||
 
 ## Results of Step 3
 
-You have implemented:
+For your remote workers, you have implemented:
 
 - Security:
   - Controlled access to apps and data that remote workers use to communicate and collaborate
