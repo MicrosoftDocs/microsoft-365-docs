@@ -82,13 +82,13 @@ Corresponding features will be removed from the Microsoft 365 security center.
 
 ## Get assistance
 
-To get answers to the most commonly asked questions about turning on Microsoft Threat Protection, [read the FAQ](mtp-enable-faq.com).
+To get answers to the most commonly asked questions about turning on Microsoft Threat Protection, [read the FAQ](mtp-enable-faq.md).
 
 Microsoft support staff can help provision or deprovision the service and related resources on your tenant. For assistance, select **Need help?** in the Microsoft 365 security center. When contacting support, mention Microsoft Threat Protection.
 
 ## Related topics
 
-- [Frequently asked questions](mtp-enable-faq.com)
+- [Frequently asked questions](mtp-enable-faq.md)
 - [Licensing requirements and other prerequisites](prerequisites.md)
 - [Deploy supported services](deploy-supported-services.md)
 - [Microsoft Threat Protection overview](microsoft-threat-protection.md)
