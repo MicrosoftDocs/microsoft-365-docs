@@ -240,7 +240,7 @@ Click **Next**.
 Go to [Microsoft 365 Security Center](https://security.microsoft.com/homepage). Navigate to **Settings** and then select **Microsoft Threat Protection**.
 <br>![Image of_Microsoft Threat Protection option screenshot from the Microsoft 365 Security Center Settings page ](../../media/mtp-eval-72b.png) <br>
 
-See [Turn on Microsoft Threat Protection](mtp-enable.md) for a more comprehensive guidance on turning Microsoft Threat Protection on. 
+For a more comprehensive guidance, see [Turn on Microsoft Threat Protection](mtp-enable.md). 
 
 Congratulations! You've just created your Microsoft Threat Protection trial lab environment! You can now simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
