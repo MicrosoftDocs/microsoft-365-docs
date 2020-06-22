@@ -71,6 +71,9 @@ This section explains how to allow users to send email on behalf of a group in t
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
     ![Type to search or pick a user from the list](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+ > [!NOTE]
+> Send As or Send on Behalf of  permission isn’t always granted immediately. It could be instant, but it could also take up to 2 hours.
 
 ## Related articles
 
