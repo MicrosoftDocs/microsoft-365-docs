@@ -21,90 +21,58 @@ description: Use Microsoft 365 security and compliance services to protect your 
 
 # Step 3: Deploy security and compliance
 
-For remote workers, some of whom either never come into the office or very infrequently, security and compliance is an important part of the overall solution because all of their communications occur over the Internet. Remote work needs these elements of security:
+For remote workers, some of whom never come into the office or very infrequently, security and compliance are an important part of the overall solution. All of their communications occur over the Internet instead of being confined to an organizational intranet. 
 
-- Contolled access to the productivity apps that remote workers use, such as Microsoft Teams 
-- Controlled access to and protection of the data that remote workers use, such as chat conversations or shared files
-- Windows 10 devices need to be protected from malware and other types of cyber attacks
+There are things you and your workers can do to remain productive without increasing cybersecurity risk and maintaining compliance with your internal policies and data regulations.
 
-https://www.microsoft.com/security/blog/2020/04/06/protecting-your-data-and-maintaining-compliance-in-a-remote-work-environment/
+Remote work needs these elements of security and compliance:
+
+- Controlled access to the productivity apps that remote workers use, such as Microsoft Teams 
+- Controlled access to and protection of the data that remote workers create and use, such as chat conversations or shared files
+- Protection for Windows 10 devices from malware and other types of cyber attacks
+- Protection of email, files, and site with consistent labeling for levels of sensitivity and protection
+- Prevention of leaked information
+- Adherence to regional data regulations
 
 ## Security
 
 Protect your applications and data with these security features of Microsoft 365.
 
-### Azure AD Identity Protection
-
-Azure AD Identity Protection, which automates detection and remediation of identity-based risks
-
-### Office ATP 
-
-Microsoft 365 apps and data
-
-Office 365 ATP protects your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack.
-
-It collects and analyzes signals from your apps for detection, investigation, and remediation of security risks.
-
-‎Office 365 Advanced Threat Protection‎ (‎ATP‎) safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools.
-
-
-### Malware protection
-
-By default, ‎SharePoint‎ Online automatically scans file uploads for known malware. ‎
-
-Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes by default. If you want to configure stricter policies or use ‎EOP‎ to secure on-premises mailboxes, see the ‎Exchange Online Protection‎ setup guide.
-
-## Microsoft Defender ATP
-
-Use ‎Microsoft Defender Advanced Threat Protection‎ (‎Microsoft‎ Defender ‎ATP‎) to look for attackers masquerading as employees working from home.
-
-
-Microsoft Defender ATP protects your organization’s devices—also known as endpoints—from cyberthreats, data breaches, and advanced attacks.
-
-It collects and analyzes signals from your devices for analysis of ongoing security risks.
-
-Microsoft Defender Advanced Threat Protection is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.
-
-With many employees suddenly working from home, there are things an organization and employees can do to help remain productive without increasing cybersecurity risk.
-
-While employees in this new remote work situation will be thinking about how to stay in touch with colleagues and coworkers using chat applications, shared documents, and replacing planned meetings with conference calls, they may not be thinking about cyberattacks. CISOs and admins need to look urgently at new scenarios and new threat vectors as their organizations become a distributed organization overnight, with less time to make detailed plans or run pilots.
-
-### Cloud App Security
-
-Cloud App Security is a Cloud Access Security Broker, a service that sits between your organization and a cloud provider like Microsoft and others. It acts as a gatekeeper, allowing the organization to extend the reach of their security policies into the cloud.
-
-Cloud App Security uses signals from your cloud-based services—both Microsoft 365 and other SaaS apps—to protect those services from attack.
-
-
-
-
+| Capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+| Office Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br> Office ATP collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 and E5 | 
+| Malware protection | ‎Windows Defender Antivirus and Device Guard provides device-based malware protection. <br> SharePoint‎ Online automatically scans file uploads for known malware. ‎<br> Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes. | Microsoft 365 E3 and E5 |
+| Microsoft Defender ATP | Protect your organization’s devices from cyberthreats and data breaches and detect, investigate, and respond to advanced threats. | Microsoft 365 E5 |
+| Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps— from attack. | Microsoft 365 E5 |
+| Azure AD Identity Protection	| Automate detection and remediation of identity-based risks and create risk-based Condition Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
+||||
 
 ## Compliance
 
 Comply with legal or regulatory standards with these compliance features of Microsoft 365.
 
-### Sensitivity labels
-
-
-### DLP
-
-‎Office 365‎ has built-in tools to help prevent the accidental disclosure of sensitive information. You can use the ‎DLP‎ capabilities of ‎Teams‎ and ‎SharePoint‎ to detect inappropriately stored or shared sensitive information.
-
-If part of your remote work strategy involves a bring-your-own-device (BYOD) policy, you can use Conditional Access App Control to prevent sensitive data from being downloaded to users' personal devices.
-
-### Data retention
-
-
-### Email encryption
-
-
-
+| Capability or feature | Description | Licensing |
+|:-------|:-----|:-------|
+| Sensitivity labels | Classify and protect your organization's data without hindering the productivity of users and their ability to collaborate by placing labels with various levels of protection on email, files, or sites. | Microsoft 365 E3 and E5 |
+| Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 | 
+| Conditional Access App Control | Prevent sensitive data from being downloaded to users' personal devices. | Microsoft 365 E3 and E5 |
+| Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization policies or data regulations. | Microsoft 365 E3 and E5 |
+| Email encryption | Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers. | Microsoft 365 E3 and E5 |
+| Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 and E5 |
+| Compliance Score | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 and E5 |
+||||
 
 ## Results of Step 3
 
-To keep your employees :
+You have implemented:
 
-
+- Security:
+  - Controlled access to apps and data that remote workers use to communicate and collaborate
+  - Malware protection for cloud service data, email, and Windows 10 devices 
+- Compliance:
+  - Consistent labeling for levels of sensitivity and protection
+  - Policies to prevention information leakage
+  - Adherence to regional data regulations
 
 ## Next step
 
