@@ -83,7 +83,7 @@ A control is a requirement of a regulation, standard, or policy. It defines how 
 
 Compliance Score tracks two types of controls:
 
-1. **Microsoft controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
+1. **Microsoft managed controls**: controls for Microsoft cloud services, which Microsoft is responsible for implementing
 2. **Your controls**: sometimes referred to as customer controls, these are controls implemented and managed by your organization
 
 #### Learn more
@@ -97,7 +97,7 @@ An assessment is grouping of controls from a specific regulation, standard, or p
 Assessments have several components:
 
 - **In-scope services**: the specific set of Microsoft services applicable to the assessment
-- **Microsoft controls**: controls that Microsoft implements and tests
+- **Microsoft managed controls**: controls that Microsoft implements and tests
 - **Your controls**: controls that you manage
 - **Assessment score**: the percentage of the points achieved by completing improvement actions within that assessment
 
