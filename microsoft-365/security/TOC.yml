@@ -69,29 +69,20 @@
               href: mtp/setup-mtpeval.md
             - name: Configure and onboard
               href: mtp/config-mtpeval.md
-            - name: Turn on Microsoft Threat Protection
-              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
+            - name: Start the Microsoft Threat Protection service
+              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
         - name: How-to guides
           items: 
             - name: Create a trial lab environment
-              href: mtp/mtp-evaluation.md
-              items: 
-                - name: Prepare
-                  href: mtp/prepare-mtpeval.md
-                - name: Setup
-                  href: mtp/setup-mtpeval.md
-                - name: Configure and onboard
-                  href: mtp/config-mtpeval.md
-                - name: Turn on Microsoft Threat Protection
-                  href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
-                - name: Generate a test alert
-                  href: mtp/generate-test-alert.md
+              href: mtp/mtp-evaluation.md             
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
+            - name: Turn on FAQ
+              href: mtp/mtp-enable-faq.md
             - name: Incidents
               items: 
                 - name: Overview
@@ -196,14 +187,10 @@
                       href: mtp/custom-detections-overview.md
                     - name: Create & manage detection rules
                       href: mtp/custom-detection-rules.md
-            - name: Secure Score
+            - name: Microsoft Secure Score
               items: 
-                - name: Secure Score (new)
-                  href: mtp/microsoft-secure-score-new.md
-                - name: Secure Score (previous iteration)
+                - name: Secure Score overview
                   href: mtp/microsoft-secure-score.md
-                - name: Secure Score (preview)
-                  href: mtp/microsoft-secure-score-preview.md
                 - name: What's coming
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
@@ -232,7 +219,7 @@
               href: ./mtp/tickets.md
 
 
-    - name: Microsoft 365 Security
+    - name: Office 365 Advanced Threat Protection
       items: 
         - name: Get started
           items: 

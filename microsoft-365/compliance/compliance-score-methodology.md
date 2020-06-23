@@ -14,6 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 description: "Understand how Microsoft Compliance Score calculates a personalized score based on actions taken to address risks and improve your compliance posture."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Compliance Score (preview) calculation
@@ -21,7 +22,7 @@ description: "Understand how Microsoft Compliance Score calculates a personalize
 > [!IMPORTANT]
 > Recommendations from Compliance Score and Compliance Manager should not be interpreted as a guarantee of compliance. It is up to you to evaluate and validate the effectiveness of customer controls per your regulatory environment. These services are currently in preview and subject to the terms and conditions in the [Online Services Terms](https://go.microsoft.com/fwlink/?linkid=2108910). See also [Microsoft 365 licensing guidance for security and compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-## Overview
+## How Compliance Score works
 
 The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. Your points accrue when you complete actions.
 

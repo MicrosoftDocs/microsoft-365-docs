@@ -52,9 +52,9 @@ When a group is restored, the following content is restored:
 
 - Yammer group and group content (If the Microsoft 365 group was created from Yammer)
 
-## Restore a group that you own by using Outlook
+## Restore a group that you own by using Outlook on the web
 
-If you are the owner of a Microsoft 365 group, you can restore the group yourself in Outlook by following these steps:
+If you are the owner of a Microsoft 365 group, you can restore the group yourself in Outlook on the web by following these steps:
 
 1. On the [deleted groups page](https://outlook.office.com/people/group/deleted), select the **Manage groups** option under the **Groups** node, and then choose **Deleted**.
 
