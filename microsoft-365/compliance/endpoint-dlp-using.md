@@ -22,13 +22,13 @@ description: "Learn how to configure data loss prevention (DLP) policies to use 
 
 # Using Endpoint data loss prevention (preview)
 
-This article walks you through three scenarios of creating and modifying a DLP policy that uses `devices` as a location. 
+This article walks you through three scenarios of creating and modifying a DLP policy that uses devices as a location.
 
 ## DLP settings
 
-Before you get started you should set up your DLP settings which are applied to all DLP policies for `devices`.
+Before you get started you should set up your DLP settings which are applied to all DLP policies for devices.
 
-ADD SCREENSHOT OF DLP SETTINGS HERE
+![DLP settings](../media/endpoint-dlp-1-using-dlp-settings.png)
 
 ### File path exclusions
 
@@ -46,16 +46,27 @@ You can add domains to this list that Edge Chromium will refer to when enforcing
 
 ### Unallowed apps
 
+When a policy's 'Access by unallowed apps and browsers' setting is turned on and users attempt to use these apps to access a protected file, the activity will be allowed, blocked, or blocked but users can override the restriction. All activity is audited and available to review in activity explorer.
+
 ### Unallowed browsers
 
-List of browsers, identified by their process names, that will be blocked from accessing files that match the conditions of an enforced  a DLP policy where Cloud upload is set to either warn or block. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge.
+You add browsers, identified by their process names, that will be blocked from accessing files that match the conditions of an enforced  a DLP policy where Cloud upload is set to either warn or block. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge.
 
+## Create a policy from a template
 
+These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md).
 
-3. 
-
-
-When you add a device as a location in a DLP policy,   
+1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+2. Choose `Create policy (preview).
+3. For this scenario, choose **Privacy**, then **U.S. Personally Identifiable Information (PII) Data** and choose **Next**.
+4. Toggle the **Status** field to off for all locations except **Devices**. Choose **Next**.
+5. Accept the default **Review and customize settings from the template** selection and choose **Next**.
+6. Accept the default **Detect when this content is shared** and **With people outside my organization** selections and choose **Next**.
+7. Accept the default **Protection actions** values and choose **Next**.
+8. Select **Audit or restrict activities on Windows devices** and leave the actions set to **Audit only**. Choose **Next**.
+9. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
+10. Review your settings and choose **Submit**.
+11. The new DLP policy will appear in the policy list.  
 
 
 
@@ -65,7 +76,6 @@ heavily refer out to existing DLP content on how to create a policy
 
 refer out to existing activity explorer content
 
-End user experiences?  maybe this goes over to David Eitelbach
 
 Relnotes references????
 
