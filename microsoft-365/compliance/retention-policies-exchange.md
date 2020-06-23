@@ -59,9 +59,9 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ### Content paths for delete-only retention settings
 
-1. **If the item is not deleted** during the configured period: At the end of the configured period in the retention policy, the item is moved to the Recoverable items folder. 
+1. **If the item is not deleted** during the configured period: At the end of the configured period in the retention policy, the item is moved to the Recoverable Items folder. 
 
-2. **If the item is deleted** during the configured period: The item is immediately moved to the Recoverable items folder. If a user deletes the item from there or empties the Recoverable items folder, the item is permanently deleted. Otherwise, the item is permanently deleted after being in the Recoverable items folder for 14 days. 
+2. **If the item is deleted** during the configured period: The item is immediately moved to the Recoverable Items folder. If a user deletes the item from there or empties the Recoverable Items folder, the item is permanently deleted. Otherwise, the item is permanently deleted after being in the Recoverable Items folder for 14 days. 
 
 ## Excluding specific types of Exchange items from a retention policy
 
@@ -76,9 +76,7 @@ If a user leaves your organization and the user's mailbox is included in a reten
 
 ## How to configure a retention policy for Exchange
 
-See [Create and configure retention policies](create-retention-policies.md).
-
-For the **Choose locations** page of the wizard, select one of the following options:
+Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations**  page of the wizard, select one of the following options:
 
 - **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
 
