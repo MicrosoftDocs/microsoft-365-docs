@@ -62,7 +62,7 @@ All other users will be asked to perform additional authentication when needed. 
   Users choose the additional verification method during MFA registration.
   
  > [!NOTE]
- > Changing user states is no longer recommended unless your licenses don't include Conditional Access as it requires users to perform MFA every time they sign in. To know more about changing status per-user account, See [Change status of a user](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-the-status-for-a-user)
+ > Changing user states is no longer recommended unless your licenses don't include Conditional Access as it requires users to perform MFA every time they sign in. To know more about changing status per-user account, see [Change status of a user](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-the-status-for-a-user).
 
 ## Step 2. Test MFA on your pilot users
 
@@ -120,5 +120,4 @@ Enable user accounts for MFA corresponding to your rollout.
 As your employees register and begin signing in with MFA, ensure that your IT specialists, IT department, or helpdesk can answer questions and address issues quickly.
 
 See this article for [information about troubleshooting MFA sign-ins](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2). 
-
 
