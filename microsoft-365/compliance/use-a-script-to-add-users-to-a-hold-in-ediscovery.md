@@ -18,7 +18,8 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: "Run a script to quickly add mailboxes and OneDrive for Business sites to a new hold that's associated with an eDiscovery case in the Security & Compliance Center."
+ms.custom: seo-marvel-apr2020
+description: "Learn how to run a script to add mailboxes & OneDrive for Business sites to a new hold associated with an eDiscovery case in the Security & Compliance Center."
 ---
 
 # Use a script to add users to a hold in an eDiscovery case in the Security & Compliance Center
@@ -35,7 +36,7 @@ Here are the steps to make this happen:
   
 [Step 3: Run the script to create a hold and add users](#step-3-run-the-script-to-create-a-hold-and-add-users)
   
-## Before you begin
+## Before you add users to a hold
 
 - You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center and a SharePoint Online global administrator to run the script in Step 3. For more information, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
     

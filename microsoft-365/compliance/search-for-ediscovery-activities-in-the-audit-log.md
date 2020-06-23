@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: "Learn how to search the audit log for events that are logged when compliance administrators perform Content Search and eDiscovery case tasks in the Security & Compliance Center."
+description: Learn what events are logged when users assigned eDiscovery permissions perform Content Search and Core eDiscovery tasks in the Security & Compliance Center.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Search for eDiscovery activities in the audit log

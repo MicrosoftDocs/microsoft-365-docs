@@ -16,7 +16,8 @@ ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
-description: "New Office 365 Message Encryption capabilities built on top of Azure Information Protection, your organization can use protected email communication with people inside and outside your organization. The new OME capabilities work with other organizations, Outlook.com, Gmail, and other email services."
+description: Learn about the new Office 365 Message Encryption capabilities that enable protected email communication with people inside and outside your organization.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set up new Message Encryption capabilities
