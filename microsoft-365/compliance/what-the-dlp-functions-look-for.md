@@ -15,7 +15,9 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "The sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information. Some of this functionality is performed by internal functions. This topic explains what these functions look for, to help you understand how the predefined sensitive information types work."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn what the data loss prevention (DLP) functions look for, to help you understand how the predefined sensitive information types work.
 ---
 
 # What the DLP functions look for

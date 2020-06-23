@@ -14,7 +14,8 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
-description: "Get an overview of the Analyze process, which allows you to set parameters, run options, and view results, in Advanced eDiscovery. "
+description: "Get an overview of the Analyze process, which allows you to set parameters, run options, and view results, in Microsoft 365 Advanced eDiscovery. "
+ms.custom: seo-marvel-apr2020
 
 ---
 
@@ -39,7 +40,7 @@ The **Prepare** \> **Analyze** process in Advanced eDiscovery applies the follow
     
 Before running Analyze, define the criteria for selecting and processing files, including which loaded files will be analyzed and the type of analysis to which each type of file will be submitted. 
   
-## See also
+## Additional resources for Advanced eDiscovery (classic) analysis
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
