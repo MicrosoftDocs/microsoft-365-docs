@@ -22,7 +22,11 @@ description: Configure the security and service infrastructure to protect your i
 
 Your organization may be subject to regional data privacy regulations that require you to protect, manage, and provide rights and control over personal information stored in your IT infrastructure, including both on-premises and in the cloud. The best example of a data privacy regulation is the European Union's General Data Protection Regulation (GDPR). Failure to comply with data privacy regulations can result in substantial fines.
 
-This solution provides guidance on how to identify, locate, and protect personal data that is stored in Microsoft 365 services and subject to data privacy regulations. Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs, as well as data incident discovery and response tools. 
+Examples of the types of data in Microsoft 365 include chat sessions in Microsoft Teams, emails in Exchange, and files in SharePoint and OneDrive. This solution provides guidance on how to identify, locate, protect, govern, and respond to data privacy incidents for personal data stored in Microsoft 365 services that is subject to data privacy regulations.
+
+![Deploy information protection for data privacy regulations](../media/information-protection-deploy/information-protection-deploy-big-picture.png)
+
+Additional information is also provided on the use of Microsoft 365 identity, device, and threat protection controls for your data privacy needs. 
 
 To meet the criteria for protecting information for compliance with data privacy regulations, use these Microsoft 365 capabilities and features.
 

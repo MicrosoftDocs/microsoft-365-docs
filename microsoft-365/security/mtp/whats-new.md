@@ -25,6 +25,9 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## June 2020
+- Twitter feed <br> Get the latest security research, threat intelligence, product news, and more - right inside the dashboard.
+
 ## February 2020
 - [Incidents](incidents-overview.md) <br> Know exactly where an attack started and other details to help you see the extent of the attack.
 - [Automated investigation and response](mtp-autoir.md) <br> AIR enables your security operations team to dramatically increase your organization's capacity to deal with security alerts and incidents.
