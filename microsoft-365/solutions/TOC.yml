@@ -140,6 +140,8 @@
         href: contoso-case-study-solutions.md
       - name: Isolated Team for a top-secret project
         href: contoso-team-for-top-secret-project.md
+      - name: Teams voice migration
+        href: https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json  
 
     - name: Test Lab Guides
       items:
