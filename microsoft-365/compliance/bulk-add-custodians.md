@@ -14,7 +14,8 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Use the bulk-add tool in Advanced eDiscovery to add multiple custodians to a case."
+ROBOTS: NOINDEX, NOFOLLOW 
+description: "Use the bulk-add tool to quickly add multiple custodians and their associated data sources to a case in Advanced eDiscovery."
 ---
 
 # Bulk-add custodians to an Advanced eDiscovery case

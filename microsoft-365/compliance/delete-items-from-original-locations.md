@@ -19,6 +19,7 @@ search.appverid:
 ms.assetid: 
 
 description: "This article describes how to use the new Data Investigations (Preview) tool in the Security & Compliance Center to delete items from their original locations."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Delete items from their original location (Preview)
@@ -27,7 +28,7 @@ The feature to delete items from their original location is in Preview.
 
 Using data investigations, you can delete items from their original locations. This means you can delete items from  Exchange mailboxes, SharePoint sites, and OneDrive accounts across your organization. Because you collected items as evidence, you have copies of the items retained in the evidence set for further investigation or keep as reference.
 
-## Before you begin
+## Before you delete items
 
 - To delete items, you have to be assigned the **Search And Purge** role in the Security & Compliance Center. This role is assigned by default to the built-in Data Investigator role group.
 
