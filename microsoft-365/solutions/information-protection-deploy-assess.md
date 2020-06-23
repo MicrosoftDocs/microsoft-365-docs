@@ -128,7 +128,7 @@ It's also important to think about the following common data privacy compliance 
 
 ### Employee data required to carry out day-to-day business functions
 
-Organizations by nature need to collect data on employees for electronic identity and HR purposes, subject to what they agree to in their employee agreements. As long as a person works for a company, this is typically not an issue. The organization may want to put mechanisms in place to prevent malicious actors from exfiltrating or leaking employee personal data. 
+Organizations by nature need to collect data on employees for electronic identity and HR purposes, subject to what they agree to in their employee agreements. As long as a person works for a company, this is typically not an issue. The organization may want to put mechanisms in place to prevent malicious actors from exfiltration or leaking employee personal data. 
 
 If a person leaves a company, organizations typically have processes, procedures, and retention and deletion schedules for removing user accounts, decommissioning mailboxes and personal drives, and changing the employee status in things like human resources systems. For situations where litigation is involved, an employee or another party to a legal investigation may have valid reasons for obtaining information about personal data stored in the organization's systems. On some occasions, that party may request that such data be removed or anonymized. 
 
@@ -146,7 +146,7 @@ Typically, contracts with external customers, partners, and the other entities w
 
 ### Data the organization has about consumers who provide information to online services that the organization manages in the B2C scenario
 
-This category is the one most people think about for data privacy, due to many public instances of customer data leakage. This can be intentional, such as a third party under contract to the provider, or unintentional, such as exfiltrated by a malicious actor. Consumer data protection is one of the primary reasons the EU and others enacted these regulations. Data privacy regulations like GDPR and CCPA require you to do planning for:
+This category is the one most people think about for data privacy, due to many public instances of customer data leakage. This can be intentional, such as a third party under contract to the provider, or unintentional, such as exfiltration by a malicious actor. Consumer data protection is one of the primary reasons the EU and others enacted these regulations. Data privacy regulations like GDPR and CCPA require you to do planning for:
 
 - [Action plans](../compliance/gdpr-action-plan.md) and [accountability readiness checklists](../compliance/gdpr-arc-office365.md)
 - [Data Protection Impact Assessments](../compliance/gdpr-data-protection-impact-assessments.md)
