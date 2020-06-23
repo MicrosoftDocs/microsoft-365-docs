@@ -14,6 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: "Have a question about how the new message protection capabilities work? Check for an answer here."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Message Encryption FAQ
@@ -98,7 +99,7 @@ Microsoft 365 users can read and respond from Outlook for Windows and Mac (2013 
   
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
-You can attach any file type to a protected mail, however protection policies are applied only on the file formats mentioned [here](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
+You can attach any file type to a protected mail, however protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
   
 If a file format is supported, such as a Word, Excel, or PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, if an attachment is protected by Do Not Forward, and the original recipient downloads and forwards the attachment to a new recipient, the new recipient will not be able to open the protected file.
   

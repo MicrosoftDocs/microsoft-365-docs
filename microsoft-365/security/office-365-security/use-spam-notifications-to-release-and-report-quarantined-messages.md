@@ -39,7 +39,7 @@ An end-user spam notification contains the following information for each quaran
 
 - **Date**: The date and time (in UTC) that the message was quarantined.
 
-- **Block Sender**: Click this link to add the sender to your Blocked Senders list. For more information, see [Block a mail sender in Outlook](https://support.office.com/article/b29fd867-cac9-40d8-aed1-659e06a706e4).
+- **Block Sender**: Click this link to add the sender to your Blocked Senders list. For more information, see [Block a mail sender](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Release**: For spam (not phish) messages, you can release the message here without going to Quarantine the Security & Compliance Center.
 

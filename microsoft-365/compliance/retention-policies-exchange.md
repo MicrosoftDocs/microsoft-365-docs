@@ -35,7 +35,7 @@ When a person deletes a message in a folder other than the Deleted Items folder,
   
 When you apply a retention policy to an Exchange location, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
 
-The timer job can take up to 7 days to run and the Exchange location must contain at least 10 MB.
+The timer job can take up to seven days to run and the Exchange location must contain at least 10 MB.
   
 When a user attempts to change properties of a mailbox item—such as the subject, body, attachments, senders and recipients, or date sent or received for a message—a copy of the original item is saved to the Recoverable Items folder before the change is committed. This action happens for each subsequent change. At the end of the retention period, copies in the Recoverable Items folder are permanently deleted.
 
@@ -72,7 +72,7 @@ To exclude your selected types for Exchange items in a retention policy, use the
 
 ### When a user leaves the organization 
 
-If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Office 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
+If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 ## How to configure a retention policy for Exchange
 
@@ -82,5 +82,6 @@ For the **Choose locations** page of the wizard, select one of the following opt
 
 - **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
 
-- **Let me choose specific locations** > **Exchange email** and **Exchange public folders**
+- **Let me choose specific locations** > **Exchange email**, **Exchange public folders**, and **Office 365 groups**.
 
+Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Office 365 groups** location.

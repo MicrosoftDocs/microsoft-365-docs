@@ -17,7 +17,9 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
-description: "For administrators: Learn about using the Import service in the Security & Compliance Center to bulk-import email data (PST files)  to user mailboxes in Exchange Online. This topic provides FAQs and explains how the PST import process works."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use the Import service in the Security & Compliance Center to bulk-import email data (PST files) to user mailboxes.
 ---
 
 # Overview of importing your organization's PST files

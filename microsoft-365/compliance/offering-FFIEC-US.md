@@ -28,7 +28,7 @@ The [FFIEC Audit IT Examination Handbook](https://ithandbook.ffiec.gov/it-bookle
 
 Microsoft Azure, Microsoft Power BI, and Microsoft Office 365 are built to meet the stringent requirements of Providing cloud services for financial services institutions. As part of our support, we offer guidance to help you comply with FFIEC audit requirements for information technology and the ability to use Azure SOC attestations when pursuing your FFIEC compliance obligations.
 
-Accelerate your financial services deployment: [Download the Azure Security and Compliance FFIEC Financial Services Blueprint](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
+Accelerate your financial services deployment: [Download the Azure Security and Compliance FFIEC Financial Services Blueprint](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 To help financial institution clients meet their FFIEC compliance requirements with Azure, Microsoft has developed the:
 
