@@ -34,6 +34,8 @@ Remote work needs these elements of security and compliance:
 - Prevention of leaked information
 - Adherence to regional data regulations
 
+![Use these Microsoft 365 services to stay secure and compliant](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+
 ## Security
 
 Protect your applications and data with these security features of Microsoft 365.
