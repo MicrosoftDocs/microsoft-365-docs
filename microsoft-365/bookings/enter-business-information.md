@@ -82,4 +82,4 @@ If you haven't already uploaded your business logo to the Bookings app, you can 
 
    ![Image of save button](../media/bookings-upload-photo.png)
 
-1. Select Save.
+1. Select **Save**.
