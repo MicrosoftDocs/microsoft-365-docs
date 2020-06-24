@@ -33,7 +33,7 @@ Here's how to add and monitor priority users in the Microsoft 365 admin center.
 
 ## Email issues for priority users
 
-sdf
+You can track email issues for priority accounts by going to the the Priority Accounts report in the admin center.
 
 ## Remove a user from the priority accounts list
 
