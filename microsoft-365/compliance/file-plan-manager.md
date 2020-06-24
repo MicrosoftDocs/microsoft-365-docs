@@ -139,7 +139,7 @@ To import new retention labels and modify existing retention labels:
 
 3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
 
-   |**Property**|**Type**|**Valid values**|
+   |Property|Type|Valid values|
    |:-----|:-----|:-----|
    |LabelName|String|This property specifies the name of the retention label.|
    |Comment|String|Use this property to add a description about the retention label for admins. This description appears only to admins who manage the retention label in the compliance center.|
