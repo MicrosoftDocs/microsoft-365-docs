@@ -17,6 +17,7 @@ search.appverid:
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: "Learn how to configure advanced settings, including near-duplicates, email threads, and themes, for the Analyze process in Advanced eDiscovery.
 "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Set Analyze advanced settings in Advanced eDiscovery
@@ -42,7 +43,7 @@ Advanced eDiscovery provides default advanced parameters for Analyze module sett
     
 4. Click **Save**. 
     
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   

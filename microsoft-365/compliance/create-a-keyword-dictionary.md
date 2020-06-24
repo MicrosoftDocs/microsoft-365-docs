@@ -15,7 +15,9 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Identifying sensitive information sometimes requires looking for keywords, particularly when identifying generic content (such as healthcare-related communication) or inappropriate or explicit language. While you can create keyword lists in sensitive information types, keyword lists are limited in size and require modifying XML to create or edit them. Keyword dictionaries provide simpler management of keywords and at a much larger scale, supporting up to 100,000 terms per dictionary."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn the basic steps to creating a keyword dictionary in the Office 365 Security & Compliance Center."
 ---
 
 # Create a keyword dictionary

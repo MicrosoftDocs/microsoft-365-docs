@@ -10,6 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the non-delivery report in the mail flow dashboard in the Security & Compliance Center."
 ---
 
@@ -27,6 +29,6 @@ When you select a row in the table to view the details of the specific NDR, you 
 
 ![Select a row in the details table in the Non-delivery report](../../media/non-delivery-report-details-table-select-row.png)
 
-## See also
+## Related topics
 
 For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

@@ -147,7 +147,7 @@ In order to view and use the reports described in this article, **you must have 
   - Security Operator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Organization Management
   - View-only Organization Management
@@ -168,8 +168,4 @@ If you are not seeing data in your ATP reports, double-check that your policies 
 
 [Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
-
-[Set up and download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
-
 [Role permissions (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

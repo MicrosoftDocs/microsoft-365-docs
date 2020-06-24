@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/28/2017
+ms.date: 
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: "If a new employee or another user needs access to the contents of an inactive mailbox in Office 365, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox."
+description: Learn how to restore (or merge) the contents of an inactive mailbox to an existing mailbox in Office 365.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Restore an inactive mailbox
@@ -28,7 +29,7 @@ An inactive mailbox (which is a type of soft-deleted mailbox) is used to retain 
 
 See the **More information** section in this article for more details about the differences between restoring and recovering an inactive mailbox.
   
-## Before you begin
+## Requirements to restore an inactive mailbox
 
 - You have to use Exchange Online PowerShell to restore an inactive mailbox. You can't use the Exchange admin center (EAC). For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
 
