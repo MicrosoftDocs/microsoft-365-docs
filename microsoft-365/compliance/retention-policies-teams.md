@@ -72,7 +72,7 @@ However, if conversation history is turned on for Skype for Business and from th
 
 ## Files in Teams
 
-In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded to channels are stored in the SharePoint site for the team. This means that to retain or delete files in Teams, you must configure one or more retention policies that apply to **OneDrive accounts** and **SharePoint sites** in addition to any retention policies you configure for Teams. For more information about how retention policies work for these locations, see [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md).
+In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded to channels are stored in the SharePoint site for the team. This means that to retain or delete files in Teams, you must configure one or more retention policies that apply to OneDrive and SharePoint in addition to any retention policies you configure for Teams. For more information about how retention policies work for these locations, see [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md).
 
 > [!NOTE]
 > A retention policy that includes Teams channel messages or Teams chats can only include Teams locations. So to retain or delete these files in Teams, you must create a separate retention policy.
@@ -126,9 +126,7 @@ We're continuously working on optimizing retention functionality in Teams. In th
 
 ## How to configure a retention policy for Microsoft Teams
 
-See [Create and configure retention policies](create-retention-policies.md).
-
-For the **Choose locations** page of the wizard, select the following options:
+Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select the following options:
 
 - **Let me choose specific locations** > **Teams channel messages** and **Teams chats**
 

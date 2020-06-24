@@ -20,13 +20,14 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: "You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Apply Information Rights Management (IRM) to a list or library
 
 You can use Information Rights Management (IRM) to help control and protect files that are downloaded from lists or libraries.
   
-## Before you begin
+## Administrator preparations before applying IRM
 
 - The Azure Rights Management service (Azure RMS) from Azure Information Protection, and the on-premises equivalent, Active Directory Rights Management Services (AD RMS), support Information Rights Management for sites. No separate or additional installations are required.
     

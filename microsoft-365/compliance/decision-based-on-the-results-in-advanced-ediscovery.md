@@ -14,7 +14,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
-description: "Learn how the Decide tab in Advanced eDiscovery provides data that can help you determine the correct size of the review set of case files. "
+description: "Learn how the Decide tab in Microsoft 365 Advanced eDiscovery provides data that can help you determine the correct size of the review set of case files. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Decision based on the results in Advanced eDiscovery (classic)
@@ -48,7 +49,7 @@ This tab includes the following:
     
 The expanded Details pane displays additional details. Files in collection figures do not include empty or nebulous files. Family files figures represent files that are not loaded in Relevance, yet still counted as part of the family.
   
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   

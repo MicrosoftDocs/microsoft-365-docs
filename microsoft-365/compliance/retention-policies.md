@@ -16,7 +16,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content; apply a single policy to the entire organization or specific locations or users; and apply a policy to all content or content meeting specific conditions."
+description: Learn about using a retention policy to retain or delete content, and how to apply a single policy to the entire organization or to specific locations or users.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Learn about retention policies
