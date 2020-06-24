@@ -19,6 +19,14 @@ description: "Monitor failed and delayed emailed messages sent to or from users 
 
 As the admin of a Microsoft 365 organization, you can now monitor failed or delayed email messages sent to your users who have a high business impact, like your CEO. Priority accounts are users who are essential to running your organization. Add executives, IT admins, or other user who have access to sensitive or high priority information.
 
+## Monitor your priority accounts
+
+You can monitor the email status of your priority accounts in the Microsoft 365 admin center on the **Setup** page.
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+2. Select **Setup** and choose **View** next to **Premium Monitoring** to see the status of your priority accounts.
+
 ## Add priority users
 
 Here's how to add and monitor priority users in the Microsoft 365 admin center.
