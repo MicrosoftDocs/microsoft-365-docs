@@ -1,5 +1,5 @@
 ---
-title: "Campaigns Views in ATP"
+title: "Campaign Views in ATP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -53,7 +53,7 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 ![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
 
-You can also get to Campaigns View from:
+You can also get to Campaign Views from:
 
 - **Threat management** \> **Explorer** \> **View** \> **Campaigns**
 
