@@ -21,8 +21,24 @@ As the admin of a Microsoft 365 organization, you can now monitor failed or dela
 
 ## Add priority users
 
-Here's how to add priority users in the Microsoft 365 admin center.
+Here's how to add and monitor priority users in the Microsoft 365 admin center.
 
-1. In the admin center, go to the...
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+2. Go to **Users** > **Active users**, and choose **...** at the top of the page and select **Manage priority accounts**.
+
+3. Select **Add priority accounts**, and on the **Add Priority Users** page, in the search field, type the name of the person you want to add to the priority accounts list.
+
+4. Select the user and choose **Save**.
 
 ## Email issues for priority users
+
+sdf
+
+## Remove a user from the priority accounts list
+
+1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+2. Go to **Users** > **Active users**, and choose **...** at the top of the page and select **Manage priority accounts**.
+
+3. On the **Priority accounts** page, select the user you want to remove from the list and choose, **Remove priority user**.
