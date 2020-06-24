@@ -323,9 +323,11 @@ To modify the default policy:
   
 1. On the Safe links page, under **Policies that apply to the entire organization**, double-click the **Default** policy. 
     
-2. Under **Settings that apply to content except email**, select **Office 365 applications**.
+2. Under **Settings that apply to content across Office 365**, enter an URL to be blocked, such as example.com and select **+**.
+
+3. Under **Settings that apply to content except email**, select **Office 365 applications**, **Do not track when users click safe links** and **Do not let users click through safe links to original URL**.
     
-3. Select **Save**. 
+4. Select **Save**. 
     
 To create a new policy targeted to all recipients in your domain:
   
