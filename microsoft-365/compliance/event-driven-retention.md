@@ -66,7 +66,7 @@ To successfully use event-driven retention, it's important to understand the rel
     
   - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
     
-4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to 7 days. In the previous diagram, all the items circled in red have their retention period triggered by this event . In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
+4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to 7 days. In the previous diagram, all the items circled in red have their retention period triggered by this event. In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
     
 It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all content would start being retained. This might not be what you intend. 
   
@@ -101,7 +101,7 @@ In the label settings, after you choose the option to base the label on an **eve
   
 For example, if you create an event type named Product Lifetime, you'll create event-based retention labels with names that describe what types of content you want the labels to be applied to, such as "Product development files" or "Product business decision records".
   
-Note that once you choose an event type and create the retention label, the event type cannot be changed.
+After you choose an event type and save the retention label, the event type cannot be changed.
   
 ![Options to create or choose an event type](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
@@ -153,7 +153,7 @@ Your organization might have applied other properties and IDs to the documents r
   
 For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords. Like any retention label, this synchronization can take up to 7 days.
+Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords. Like any retention label, this synchronization can take up to seven days.
   
 ![Event settings page](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
