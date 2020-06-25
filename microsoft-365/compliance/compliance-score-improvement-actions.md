@@ -18,7 +18,7 @@ description: "Learn how to manage your compliance activities in Microsoft Compli
 
 # Work with improvement actions in Compliance Score (preview)
 
-**In this article:** This article explains how to manage your compliance activities by working with improvement actions. Explore the workflow of assigning improvement actions for implementation and testing, assigning them to assessors for completion, and exporting reports.
+**In this article:** This article explains how to **manage your compliance workflow** with improvement actions. Learn how to **assign improvement actions** for implementation and testing, assign them to assessors for completion, and export **reports**.
 
 ## Manage compliance workflows with improvement actions
 

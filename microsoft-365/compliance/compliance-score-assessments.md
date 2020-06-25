@@ -75,7 +75,7 @@ You can create your own assessment entirely from scratch to track precisely what
 **To create your own Custom Assessment**, follow these instructions:
 
 1. Read how to [create your own template in Compliance Manager](working-with-compliance-manager.md#create-your-own-template-and-import-it-into-compliance-manager).
-2. 2.	Once you’ve created your template and imported it into Compliance Manger, you can then create your new assessment in Compliance Score. Follow the process of building your assessment using the [assessment creation wizard](#create-an-assessment).
+2. Once you’ve created your template and imported it into Compliance Manger, you can then create your new assessment in Compliance Score. Follow the process of building your assessment using the [assessment creation wizard](#create-an-assessment).
 
 ## Understand groups before creating assessments
 

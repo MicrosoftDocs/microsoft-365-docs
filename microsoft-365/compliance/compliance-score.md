@@ -49,7 +49,7 @@ Compliance Score helps simplify compliance management by providing:
 
 Think of Compliance Score as a simplified version of Compliance Manager. While the two exist as distinct yet integrated tools, Compliance Score makes it easier to monitor your overall compliance posture and take steps to improve it.
 
-Compliance Score shares the same backend with Compliance Manager, so any data you may already have in Compliance Manager will show in Compliance Score.
+Compliance Score shares the same backend with Compliance Manager, so any data you have in Compliance Manager will show in Compliance Score.
 
 Some functionality for assessment and template management remains in Compliance Manager during public preview. We recommend beginning all of your compliance management activities in Compliance Score. When you come to functions handled by Compliance Manager, we’ll guide you there.
 

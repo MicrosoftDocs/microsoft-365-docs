@@ -20,7 +20,7 @@ description: "Find answers to frequently asked questions about Microsoft Complia
 
 ## What is Compliance Score?
 
-Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you understand your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Compliance Score provides built-in control mapping that helps connect common controls among key regulations and standards, so you can take one action to satisfy multiple requirements at the same time and better scale your compliance program.
+Microsoft Compliance Score is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that helps you understand your organization's compliance posture. It calculates a risk-based score measuring your progress in completing actions that help reduce risks around data protection and regulatory standards. Compliance Score provides built-in control mapping that helps connect common controls among key regulations and standards. This mapping allows you to take one action to satisfy multiple requirements at the same time, helping you to scale your compliance program.
 
 ## What's new in the preview version of Compliance Score?
 

@@ -18,7 +18,7 @@ description: "Learn how set up and start using Microsoft Compliance Score, which
 
 # Compliance Score (preview) setup
 
-**In this article:** Understand how to access Compliance Score, set roles and permissions, and configure automatic Secure Score updates. This article also explains the main Compliance Score pages: your dashboard, the improvement actions page, the solutions page, and the assessments page.
+**In this article:** Understand how to **access** Compliance Score, set **roles and permissions**, and configure **automatic Secure Score updates**. This article also explains the main Compliance Score pages: **your dashboard**, the improvement actions page, the solutions page, and the assessments page.
 
 ## Before you begin
 
