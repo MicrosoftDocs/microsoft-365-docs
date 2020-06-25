@@ -25,11 +25,14 @@ In Office online, you can access the Bookings web app from the app launcher or f
 
 Bookings can be turned on or off for employees in your organization, both for your entire organization and specific users. When you turn on Bookings for users, they can create a Bookings page, create a calendar, and allow other people to book time with them.
 
+> [!NOTE]
+> The admin controls described in these sections are not available for Office 365 Operated by 21Vianet (China) customers.
+
 ### Turn Bookings on or off for your organization using the Microsoft 365 admin center
 
 1. Sign in to the Microsoft 365 admin center as a global admin.
 
-2. In the admin center, go to **Settings** > **Settings** and select **Bookings**.
+2. In the admin center, go to **Settings** \> **Settings** and select **Bookings**.
 
 3. Select the checkbox for **Allow your organization to use Bookings** to enable or disable Bookings for your organization.
 
@@ -40,7 +43,35 @@ Bookings can be turned on or off for employees in your organization, both for yo
 
 ### Turn Bookings on or off for your organization using PowerShell
 
-You can turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig).
+To turn Bookings on or off for your organization using the PowerShell cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig), [Connect to Exchange Online PowerShell]() and run the following command:
+
+```PowerShell
+   Set-OrganizationConfig -BookingsEnabled $false
+```
+
+### Turn Bookings on or off for individual users
+
+You can disable Bookings for individual users.
+
+1. Go to the Microsoft 365 admin center, then select **Users** \> **Active users**.
+
+1. Select the desired user, then select **Licenses and Apps**.
+
+1. Expand **Apps** and clear the checkbox for Microsoft Bookings.
+
+## Require staff approvals before sharing free/busy information
+
+Admins can require employees in their organization to opt-in before their availability information is shared through Bookings and before they can be bookable through a booking page. This setting is available in the Microsoft 365 admin center under **Settings** \> **Settings** \> **Bookings**.
+
+When this setting is enabled, employees added as staff in booking calendars will find an Approve/Reject link in the email notification they receive.
+
+This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
+
+## Block social sharing options
+
+Admins can control how booking pages are shared on social networks. This setting is available in the Microsoft 365 admin center under **Settings** \> **Settings** \> **Bookings**.
+
+This feature is gradually rolling out world wide to Microsoft 365 customers. If you don't see this option in the Microsoft 365 admin center, check back soon.
 
 ## Allow only selected users to create Bookings calendars
 
@@ -104,11 +135,11 @@ Check out the following topics for more information on VLSC:
 
 1. On the **Purchase services** page, press **CTRL + F** on your keyboard to open your browser's **Find** function, and then search for **Business Apps (free)**.
 
-1. When you find the Business Apps (free) card, hover your mouse or click anywhere on the card to display the **Buy now** button, and then click **Buy now**. (Don't worry, this add-on really is free.)
+1. When you find the Business Apps (free) card, hover your mouse or click anywhere on the card to display the **Buy now** button, and then select **Buy now**. (Don't worry, this add-on really is free.)
 
 1. Use the **+** (plus) and **-** (minus) icons to select the number of licenses you'll need, and then select **Check out now**.
 
-1. On the Checkout page, review your order and then click **Next**.
+1. On the Checkout page, review your order and then select **Next**.
 
 1. Select **Invoice** as the **Payment method** if you don't want to provide your credit card information at this time. You will get email notifications reminding you that your subscription will renew and it will look like a billing statement, but you will owe $0.00.
 
@@ -134,11 +165,11 @@ Microsoft Bookings is now available to Office 365 Enterprise E3/Office 365 Enter
 
 1. On the **Purchase services** page, select press CTRL + F on your keyboard to open your browser's Find function, and then search for **Business Apps (free)**.
 
-1. When you find the **Business Apps (free)** card, hover your mouse or click anywhere on the card to display the **Buy now** button, and then click **Buy now**. (Don't worry, this add-on really is free.)
+1. When you find the **Business Apps (free)** card, hover your mouse or click anywhere on the card to display the **Buy now** button, and then select **Buy now**. (Don't worry, this add-on really is free.)
 
 1. Use the **+** (plus) and **-** (minus) icons to select the number of licenses you'll need, and then select **Check out now**.
 
-1. On the **Checkout** page, review your order and then click **Next**.
+1. On the **Checkout** page, review your order and then select **Next**.
 
 1. Select **Invoice** as the **Payment method** if you don't want to provide your credit card information at this time. You will get email notifications reminding you that your subscription will renew and it will look like a billing statement, but you will owe $0.00.
 

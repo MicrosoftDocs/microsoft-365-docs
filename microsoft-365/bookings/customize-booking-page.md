@@ -26,9 +26,9 @@ To customize your booking page, sign in to Microsoft 365, and then go to **Booki
 | **Customize your page** | Set your color theme and logo. |
 | **Color theme** | Select the color combination that most closely matches your brand. If none of these options match your brand, we suggest using the neutral blues and grays or keep the default, which is a neutral blue/gray combination. |
 | **Logo** | You can choose to display your business logo on your booking page. This is the logo that you've uploaded and is displayed above the menu on the left. |
-| **Booking page access control** | Select whether users will need to authenticate with their Microsoft 365 work or school account before they are able to access and use a booking page. This is useful for intra-organization only bookings scenarios.<br/>You’ll be able to control whether your Bookings page can be indexed by search engines. By default, your Bookings page will be indexed, but, you can now hide Booking pages from search engines. You might want to do this if you don’t want your Bookings page to show up in a Bing or Google search. This may not always work, if other pages provide links to your Bookings pages, those links will get indexed. |
+| **Booking page access control** | Select whether users will need to authenticate with their Microsoft 365 work or school account before they are able to access and use a booking page. This is useful for intra-organization only bookings scenarios.<br/>You’ll be able to control whether your Bookings page can be indexed by search engines. By default, your Bookings page will be indexed, but, you can now hide booking pages from search engines. You might want to do this if you don’t want your Bookings page to show up in a Bing or Google search. This may not always work, if other pages provide links to your Bookings pages, those links will get indexed. |
 | **Customer data usage consent** | Select whether users see a message, and choose whether you can collect their data. |
 
 ## Other ways to customize
 
-You can also add questions to ask your customers at booking time. For more information, see Add custom and required questions to the Booking page.
+You can also add questions to ask your customers at booking time. For more information, see Add custom and required questions to the booking page.

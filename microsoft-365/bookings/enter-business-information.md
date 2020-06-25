@@ -76,7 +76,7 @@ For example, you have staff meetings every Thursday from 1 o'clock to 2:30 and w
 
 If you haven't already uploaded your business logo to the Bookings app, you can do it from the Business information page.
 
-1. On the Business information page, under Upload logo, click **Change**.
+1. On the Business information page, under Upload logo, select **Change**.
 
 1. Select **Upload photo**.
 

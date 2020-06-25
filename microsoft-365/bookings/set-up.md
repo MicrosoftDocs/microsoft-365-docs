@@ -22,7 +22,7 @@ Thanks for downloading the Microsoft Bookings app! Before getting started, you n
 
    ![Image of app launcher](../media/bookings-all-apps-launcher.png)
 
-2. From the Microsoft 365 portal or app launcher > **Bookings**.
+2. From the Microsoft 365 portal or app launcher, select **Bookings**.
 
 3. Select **Get it now**.
 

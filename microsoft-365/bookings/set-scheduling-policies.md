@@ -13,7 +13,7 @@ description: "Learn how to set scheduling policies for your business. Scheduling
 
 # Set your scheduling policies
 
-Not all appointments are the same. Some take only a few minutes, while others can take hours or more. In Microsoft Bookings, the Booking page is where you set the scheduling policies for your business. Scheduling policies include the length of appointments, acceptable lead and cancellation times, and automatic notifications of booking changes. Additional customization can be added for each service within the Services page, with additional duration settings and policies that apply only to that service.
+Not all appointments are the same. Some take only a few minutes, while others can take hours or more. In Microsoft Bookings, the booking page is where you set the scheduling policies for your business. Scheduling policies include the length of appointments, acceptable lead and cancellation times, and automatic notifications of booking changes. Additional customization can be added for each service within the Services page, with additional duration settings and policies that apply only to that service.
 
 > [!NOTE]
 > Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To turn it on, see [Get access to Bookings](get-access.md).
@@ -22,7 +22,7 @@ The policies you set here are the top-level policies. They are automatically app
 
 ## Types of scheduling policies
 
-This table explains the various scheduling policies available on the Booking page.
+This table explains the various scheduling policies available on the booking page.
 
 | Policy | Explanation |
 |---|---|
@@ -43,6 +43,6 @@ This table explains the various scheduling policies available on the Booking pag
 
 1. Select **Save and publish**.
 
-## Publish the Booking page
+## Publish the booking page
 
-When you're ready to publish your Booking page, select **Save and publish**. See [Publish or unpublish the Booking page](publish-booking-page.md) for more information.
+When you're ready to publish your booking page, select **Save and publish**. See [Publish or unpublish the booking page](publish-booking-page.md) for more information.

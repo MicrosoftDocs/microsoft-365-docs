@@ -39,8 +39,12 @@ Ready to get started?
 Watch this video or follow the steps below to set up Bookings.
 
 **-**
-**Video link needed here**
+**Remove XML below and insert video link**
 **-**
+<mediaLink>
+	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
+	<video videoid="RE26B1q" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
+</mediaLink>
 
 Step 1: [Enter your business information](enter-business.md)
 
@@ -52,7 +56,7 @@ Step 4: [Create your staff list](staff-list.md)
 
 Step 5: [Set employee working hours](set-employee-hours.md)
 
-Step 6: [Schedule business closures, time off, and vacation time](set-closures-time-off-vacation.md)
+Step 6: [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
 
 Step 7: [Publish or unpublish your booking page](publish-booking-page.md)
 

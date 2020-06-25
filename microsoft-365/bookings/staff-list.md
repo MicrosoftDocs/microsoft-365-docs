@@ -24,7 +24,13 @@ Although Bookings is a feature of Microsoft 365, not all of your staff members a
 
 Watch this video or follow the steps below to add your staff.
 
-**Add video link**
+**-**
+**Remove XML below and insert video link**
+**-**
+<mediaLink>
+	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
+	<video videoid="RWuVka" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
+</mediaLink>
 
 1. In Microsoft 365, select the App launcher, and then select **Bookings**.
 

@@ -30,14 +30,15 @@ Before you start, complete the following tasks:
 
 Watch this video or follow the steps below to add the Book now button to your Facebook page.
 
-**Insert video here**
-
+**-**
+**Remove XML below and insert video link**
+**-**
 <mediaLink>
 	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
 	<video videoid="RWusUj" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
 </mediaLink>
 
-1. From your Booking page, copy the URL under **Share your page**.
+1. From your booking page, copy the URL under **Share your page**.
 
    ![Image of Share your page UI](../media/bookings-share-page.png)
 
@@ -45,8 +46,8 @@ Watch this video or follow the steps below to add the Book now button to your Fa
 
 1. Choose **Book Now** and select **Next**.
 
-1. Choose **Link to Website** and paste in your Booking page URL.
+1. Choose **Link to Website** and paste in your booking page URL.
 
-   ![Image of Linkg to Website dialog](../media/link-to-website.png)
+   ![Image of Link to Website dialog](../media/bookings-link-to-website.png)
 
 1. Select **Finish**. Now you’re all set to receive Bookings through your Facebook page!

@@ -35,7 +35,7 @@ For more information about how to personalize and customize your booking page, s
 
 1. Scroll down to the **Custom fields** section, and then select **Modify**.
 
-   We already added some basic customer information questions: Customer email, phone number, customer address, and customer notes. The first time you do this, the customer information questions are highlighted in gray. That means that the user will see this question. If you click on the question, the highlight box around it will disappear and your customer won't be asked that question.
+   We already added some basic customer information questions: Customer email, phone number, customer address, and customer notes. The first time you do this, the customer information questions are highlighted in gray. That means that the user will see this question. If you select the question, the highlight box around it will disappear and your customer won't be asked that question.
 
    In this example, phone number and customer notes have been turned off and we created two new custom questions to ask.
 
@@ -58,7 +58,7 @@ In this example, you can see that the questions that were added for the first se
 If your booking page is already published, you don't need to do anything else. Customers will see the questions the next time they book with you. If your booking page isn't published yet, go to the **booking page** from Outlook on the web, and then select **Save and publish**.
 
 > [!WARNING]
-> You can also delete questions from the master list. However, if you delete a question it will be deleted from every service. We recommend that you disable the question by clicking it to make sure you're not impacting any other services. You can see that a question is disabled if it is not surrounded by a highlighted rectangle.
+> You can also delete questions from the master list. However, if you delete a question it will be deleted from every service. We recommend that you disable the question by selecting it to ensure you do not impact any other services. You can see that a question is disabled if it is not surrounded by a highlighted rectangle.
 
 ## Customer experience
 
