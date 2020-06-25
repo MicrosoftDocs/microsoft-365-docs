@@ -13,18 +13,19 @@ description: "The Bookings mobile apps are not yet available worldwide. This art
 
 # Get the Microsoft Bookings app for iOS and Android
 
-The Bookings mobile apps are not yet available worldwide. This article lists those locales where the apps are available now.
+Microsoft Bookings is available as a mobile app for iOS and Android.
+
+> [!NOTE]
+> The Bookings mobile apps are not yet available worldwide. This article lists those locales where the apps are available now.
 
 ## Bookings app for iOS
 
 The Bookings app for iOS is available in all regions and countries that Apple supports. You can download the app from the [iTunes App Store](https://apps.apple.com/app/microsoft-bookings/id1065657468).
 
-If you use an iPad as your point-of-sale system or use it in landscape view, Bookings pages now rotates to give you more flexibility as you use the Bookings app.
-
 ## Bookings app for Android (US and Canada)
 
 The Bookings app for Android is available for download from the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) in the US and Canada.
 
-## View-only mode in the Bookings mobile app
+# View-only mode
 
-You can now use view-only mode in the Bookings app. Anyone with a Bookings license who gets added to a booking calendar can download and use the Bookings mobile app to see their own and their colleagues’ schedules, the bookings’ details, and business information. An employee or user with view-only access can't change or edit anything and doesn't have access to the customer list.
+Any user who is not granted read-write access in Bookings can still use the mobile app in view-only mode. Anyone with a Bookings license who gets added to a booking calendar can see their own and their colleagues’ schedules, appointment details, and business information. A user with view-only access can't make changes or edits and cannot access the customer list.
