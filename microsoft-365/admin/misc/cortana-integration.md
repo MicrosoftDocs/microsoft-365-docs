@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: "When signed in with valid work or school accounts, users can get cloud-based assistance services with Cortana in Microsoft 365 experiences that meet Office 365’s enterprise-level privacy, security, and compliance promises."
+description: "When signed in with valid work or school accounts, users can get cloud-based assistance services with Cortana in Microsoft 365 experiences that meet Office 365’s enterprise-level privacy, security, and compliance promises." 
 ---
 
 # Cortana in Microsoft 365
