@@ -19,10 +19,10 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: "When signed in with valid work or school accounts, users can get cloud-based assistance services with Cortana in Microsoft 365 experiences that meet Office 365’s enterprise-level privacy, security, and compliance promises." 
+description: "When signed in with valid work or school accounts, users can get cloud-based assistance services with Cortana in Microsoft 365 experiences that meet Office 365’s enterprise-level privacy, security, and compliance promises."
 ---
 
-# Cortana in Microsoft 365   
+# Cortana in Microsoft 365
 
 Cortana, your personal productivity assistant, offers AI-powered experiences to save time and focus attention on what matters most. Cortana will help your users increase their personal productivity for their whole day across both work and life. When signed in with valid work or school accounts, users can get cloud-based assistance services with Cortana in Microsoft 365 experiences that meet Office 365’s enterprise-level privacy, security, and compliance promises (“Cortana enterprise services”). 
 
@@ -75,6 +75,26 @@ Admins can configure Cortana in Windows 10 for their organization using the Expe
 Beginning with Windows 10, version 2004, Cortana is a Universal Windows Platform (UWP) app preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store).
 
 [Learn more about Cortana in Windows 10](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview)
+
+### Cortana voice assistance in Teams
+
+Cortana voice assistance in the Teams mobile app helps users simply perform communication, collaboration, and meeting-related tasks using spoken natural language. Users can speak to Cortana by clicking on the microphone button located in the upper right of the Teams mobile app. They can connect with someone while on the go by making a voice query such as “call Megan” or “send a message to my next meeting.” Users can also join meetings by saying “join my next meeting.” Cortana in Teams meets the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
+
+**Admin control**
+
+Admins can control who in their tenant can use Cortana voice assistance in Teams via a policy (TeamsCortanaPolicy). This policy can be set at either a user account level or tenant level. Admins can also use the CortanaVoiceInvocationMode field within this policy control to determine whether Cortana is enabled with push button invocation only, or with wake word invocation as well (applicable to devices that support it). Note that at the time of the initial release for Microsoft 365 Enterprise users in the US in English, the Teams mobile app will not support wake word activation, but it will be supported in the future. 
+
+**User control**
+
+Individual users can try out Cortana voice assistance in the Teams mobile app by clicking on the mic button. They can also control whether Cortana in Teams is enabled for their device via a setting in the Teams mobile app: 
+
+1. Open the Teams mobile app.
+
+2. Go to **Settings**.
+
+3. Select **Cortana**.
+
+4. Move the toggle to on or off, depending on whether you want Cortana voice assistance on this device.
 
 ### Play My Emails
 
