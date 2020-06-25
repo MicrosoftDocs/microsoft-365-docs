@@ -120,9 +120,9 @@ To quickly inspect a record in your query results, select the corresponding row 
 - **Process tree** — generated for records with process information and enriched using available contextual information; in general, queries that return more columns can result in richer process trees.
 - **All details** — all the values from the columns in the record  
 
-To view more information about specific entities in your query results, such as machines, files, users, IP addresses, and URLs, select the entity identifier to open a detailed profile page for the selected entity.
-
 ![Image of selected record with panel for inspecting the record](../../media/mtp-ah/inspect-record.png)
+
+To view more information about a specific entity in your query results, such as a machine, file, user, IP address, or URL, select the entity identifier to open a detailed profile page for that entity.
 
 ## Tweak your queries from the results
 Right-click a value in the result set to quickly enhance your query. You can use the options to:
