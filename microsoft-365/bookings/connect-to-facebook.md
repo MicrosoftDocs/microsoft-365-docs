@@ -26,7 +26,7 @@ Before you start, complete the following tasks:
 
 - [Set up Microsoft Bookings](set-up.md)
 
-- [Publish your booking Page](publish-your-booking-page.md)
+- [Publish your booking Page](publish-booking-page.md)
 
 Watch this video or follow the steps below to add the Book now button to your Facebook page.
 

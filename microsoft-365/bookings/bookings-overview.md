@@ -46,15 +46,15 @@ Watch this video or follow the steps below to set up Bookings.
 	<video videoid="RE26B1q" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
 </mediaLink>
 
-Step 1: [Enter your business information](enter-business.md)
+Step 1: [Enter your business information](enter-business-information.md)
 
 Step 2: [Set your scheduling policies](set-scheduling-policies.md)
 
 Step 3: [Define your service offerings](define-service-offerings.md)
 
-Step 4: [Create your staff list](staff-list.md)
+Step 4: [Create your staff list](create-staff-list.md)
 
-Step 5: [Set employee working hours](set-employee-hours.md)
+Step 5: [Set employee working hours](employee-hours.md)
 
 Step 6: [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
 
