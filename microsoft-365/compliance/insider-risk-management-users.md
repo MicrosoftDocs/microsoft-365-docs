@@ -18,7 +18,7 @@ ms.collection: m365-security-compliance
 
 The **Users dashboard** is an important tool in the insider risk management workflow and helps investigators and analysts have a more complete understanding of risk activities. This dashboard offers views and management features to meet administrative needs between the creating insider risk management policies and managing insider risk management cases.
 
-After users are added to insider risk management policies, background processes are automatically evaluating user activities for triggering indicators. After triggering indicators are present, user activities are assigned risk scores. Some of these activities may result in an insider risk alert, but some activities may not meet a minimum risk score level and an insider risk alert won't be created. The **Users dashboard** allows you to view users with these types of indicators and risk scores, as well users that have active insider risk alerts.
+After users are added to insider risk management policies, background processes are automatically evaluating user activities for [triggering indicators](insider-risk-management-policies.md#Indicators). After triggering indicators are present, user activities are assigned risk scores. Some of these activities may result in an insider risk alert, but some activities may not meet a minimum risk score level and an insider risk alert won't be created. The **Users dashboard** allows you to view users with these types of indicators and risk scores, as well users that have active insider risk alerts.
 
 Additionally, there may be scenarios where you need to add temporarily users to insider risk policies after an unusual event is reported outside of the insider risk management workflow. The **Users dashboard** allows you to manually add a user to an insider risk policy for a specific amount of time and bypass the requirement for a user to have a triggering indicator. These users are always displayed in the Users dashboard when actively assigned to a policy.
 
@@ -58,7 +58,7 @@ In the opposite scenario where the global **Activation window** setting is longe
 
 ## View user information on the Users dashboard
 
-Each user displayed in the Users dashboard has the following information:
+Each user displayed in the **Users dashboard** has the following information:
 
 - **Users**: The username for a user. This field is anonymized if the global anonymization setting for insider risk management is enabled.
 - **Risk level**: The current calculated risk level of the user. This score is calculated every 24 hours and uses the alert risk scores from all active alerts associated to the user. For users with only triggering indicators, the risk level is zero.
