@@ -57,7 +57,7 @@ Follow the **I am** and **who wants** columns to determine the set of channels t
 
 | I am... | who wants... | Windows channel | Office channel | Teams channel | Edge channel | How to |
 |:-------|:-----|:-------|:-------|:-----|:-------|:-------|
-| A Microsoft Edge app developer | to see what I was working on yesterday | N/A | N/A | N/A | Canary | [Edge Carnary channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)  |
+| A Microsoft Edge app developer | to see what I was working on yesterday. | N/A | N/A | N/A | Canary | [Edge Carnary channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)  |
 | A highly technical user or Edge app developer | early access to the latest build. | Dev | N/A  | N/A | Dev |   |
 | An end user, an early adopter, a fan, or an IT professional  | early access to a build for functionality testing. | Beta | Beta | N/A | Beta |   |
 | An enterprise IT department | to evaluate the latest preview before broad deployment. | Preview (Release)  | Preview (Current or Semi-Annual Enterprise)  | Ring 4 | N/A  |
