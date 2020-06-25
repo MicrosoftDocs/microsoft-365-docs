@@ -19,7 +19,7 @@ description: "Learn how to create and import a custom sensitive information type
 
 # Create a custom sensitive information type in Security & Compliance Center PowerShell
 
-Data loss prevention (DLP) in Microsoft 365 includes many built-in [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) that are ready for you to use in your DLP policies. These built-in types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more. 
+Data loss prevention (DLP) in Microsoft 365 includes many built-in [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md) that are ready for you to use in your DLP policies. These built-in types can help identify and protect credit card numbers, bank account numbers, passport numbers, and more.
   
 But what if you need to identify and protect a different type of sensitive information (for example, an employee ID that uses a format specific to your organization)? To do this, you can create a custom sensitive information type that is defined in an XML file called a *rule package*.
   
@@ -34,8 +34,10 @@ After you've created a well-formed XML file, you can upload it to Microsoft 365 
 <!-- this is worded much better than the previous one is -->
 Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns. For custom content-matching development, testing, and debugging, Microsoft 365 customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content-matching development will fulfill the customer's requirements or obligations.  As an example of the type of support that can be provided, sample regular expression patterns may be provided for testing purposes. Or, support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
 
- For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
-    
+See, [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) in this topic.
+
+For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
+
 ## Sample XML of a rule package
 
 Here's the sample XML of the rule package that we'll create in this topic. Elements and attributes are explained in the sections below.
@@ -148,9 +150,9 @@ For example, to increase the likelihood of identifying content that contains an 
 Note a couple of important aspects of this structure:
   
 - Patterns that require more evidence have a higher confidence level. This is useful because when you later use this sensitive information type in a DLP policy, you can use more restrictive actions (such as block content) with only the higher-confidence matches, and you can use less restrictive actions (such as send notification) with the lower-confidence matches.
-    
+
 - The supporting IdMatch and Match elements reference regexes and keywords that are actually children of the Rule element, not the Pattern. These supporting elements are referenced by the Pattern but included in the Rule. This means that a single definition of a supporting element, like a regular expression or a keyword list, can be referenced by multiple entities and patterns.
-    
+
 ## What entity do you need to identify? [Entity element, id attribute]
 
 An entity is a sensitive information type, such as a credit card number, that has a well-defined pattern. Each entity has a unique GUID as its ID.
@@ -475,17 +477,17 @@ Remove-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Custom Rule
 
 ```powershell
 Get-DlpSensitiveInformationTypeRulePackage
-``` 
+```
 
-  - Run the [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet to verify the sensitive information types in the removed rule package are no longer listed:
+- Run the [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet to verify the sensitive information types in the removed rule package are no longer listed:
 
 ```powershell
 Get-DlpSensitiveInformationType
-``` 
+```
 
-    For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
+For custom sensitive information types, the Publisher property value will be something other than Microsoft Corporation.
 
-  - Replace \<Name\> with the Name value of the sensitive information type (for example, Employee ID) and run the [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet to verify the sensitive information type is no longer listed:
+- Replace \<Name\> with the Name value of the sensitive information type (for example, Employee ID) and run the [Get-DlpSensitiveInformationType](https://docs.microsoft.com/powershell/module/exchange/get-dlpsensitiveinformationtype?view=exchange-ps) cmdlet to verify the sensitive information type is no longer listed:
 
 ```powershell
 Get-DlpSensitiveInformationType -Identity "<Name>"
@@ -495,7 +497,7 @@ Get-DlpSensitiveInformationType -Identity "<Name>"
 
 In Security & Compliance Center PowerShell, modifying a custom sensitive information type requires you to:
 
-1. Export the existing rule package that contains the custom sensitive information type to an XML file (or use the existing XML file if you have it). 
+1. Export the existing rule package that contains the custom sensitive information type to an XML file (or use the existing XML file if you have it).
 
 2. Modify the custom sensitive information type in the exported XML file.
 
@@ -503,7 +505,7 @@ In Security & Compliance Center PowerShell, modifying a custom sensitive informa
 
 To connect to Security & Compliance Center PowerShell, see [Connect to Security & Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=799771).
 
-#### Step 1: Export the existing rule package to an XML file
+### Step 1: Export the existing rule package to an XML file
 
 > [!NOTE]
 > If you have a copy of the XML file (for example, you just created and imported it), you can skip to the next step to modify the XML file.
@@ -535,7 +537,7 @@ $rulepak = Get-DlpSensitiveInformationTypeRulePackage -Identity "Employee ID Cus
 Set-Content -Path "XMLFileAndPath" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
 ```
 
-    This example export the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
+This example export the rule package to the file named ExportedRulePackage.xml in the C:\My Documents folder.
 
 ```powershell
 Set-Content -Path "C:\My Documents\ExportedRulePackage.xml" -Encoding Byte -Value $rulepak.SerializedClassificationRuleCollection
@@ -562,7 +564,7 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:mce="https://schemas.microsoft.com/office/2011/mce"
-           targetNamespace="https://schemas.microsoft.com/office/2011/mce" 
+           targetNamespace="https://schemas.microsoft.com/office/2011/mce"
            xmlns:xs="https://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified"
@@ -598,7 +600,7 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
         <xs:key name="UniqueResourceIdRef">
           <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
           <xs:field xpath="@idRef"/>
-        </xs:key>        
+        </xs:key>
         <xs:keyref name="ReferencedRuleMustExist" refer="mce:UniqueRuleId">
           <xs:selector xpath="mce:LocalizedStrings/mce:Resource"/>
           <xs:field xpath="@idRef"/>
@@ -906,7 +908,7 @@ You can copy this markup, save it as an XSD file, and use it to validate your ru
 ## More information
 
 - [Overview of data loss prevention policies](data-loss-prevention-policies.md)
-    
+
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-    
+
 - [What the DLP functions look for](what-the-dlp-functions-look-for.md)
