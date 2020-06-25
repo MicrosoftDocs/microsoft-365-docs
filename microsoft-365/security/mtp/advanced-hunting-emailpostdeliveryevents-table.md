@@ -51,7 +51,7 @@ This table captures events with the following `ActionType` values:
 - **Malware ZAP** – Zero-hour auto purge (ZAP) took action on an email message found containing malware after delivery.
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
