@@ -36,7 +36,9 @@ Compliance Score uses a role-based access control (RBAC) permission model, and t
 
 ## What is the difference between Compliance Score and Compliance Manager?
 
-Compliance Score and Compliance Manager share the same backend, but they are in two different locations. Compliance Score is in the Microsoft 365 compliance center, and Compliance Manager is in the Microsoft Service Trust Portal. Think of Compliance Score as a simplified version of Compliance Manager, giving you a more complete view of your organization's current compliance posture and the steps you can take to improve it. While you can take many actions directly within Compliance Score, some functionality lives in Compliance Manager for now. Read more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
+Compliance Score and Compliance Manager share the same backend. Anything that you do in one tool will surface in the other tool. They reside in two different locations: Compliance Score is in the Microsoft 365 compliance center, and Compliance Manager is in the Microsoft Service Trust Portal. Think of Compliance Score as a simplified version of Compliance Manager, giving you a more complete view of your organization's current compliance posture and the steps you can take to improve it.
+
+While you can take many actions directly within Compliance Score, some functionality lives in Compliance Manager during public preview. Read more about the [relationship between Compliance Score and Compliance Manager](compliance-score.md#relationship-to-compliance-manager).
 
 Access [Compliance Manager in the Microsoft Service Trust Portal](https://servicetrust.microsoft.com/ComplianceManager/V3). Be sure to **select Compliance Manager** from the top navigation drop-down menu, which has the most current features, and *not Compliance Manager (classic)*, which contains early-release features.
 
