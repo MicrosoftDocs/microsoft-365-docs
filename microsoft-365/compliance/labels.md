@@ -342,9 +342,9 @@ After you publish or auto-apply your retention labels, you'll want to verify tha
 
 After retention labels are assigned to content, either by users or auto-applied, you can use content search to find all content that's classified with a specific retention label.
   
-When you create a content search, choose the **Compliance Tag** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Compliance label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Compliance Tag condition](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Compliance label condition](../media/compliance-label-condition.png)
   
 ## Use retention labels instead of older features
 
