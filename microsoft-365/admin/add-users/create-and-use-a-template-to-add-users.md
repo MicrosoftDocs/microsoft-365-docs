@@ -71,7 +71,7 @@ To use an existing template to add a user:
 
 ## Manage templates
 
-You can easily delete templates you no longer need and add new ones. To delete a template:
+You can only delete templates you no longer need and add new ones. To delete a template:
 
 1. In the admin center, select **Users** > **Active users**.
 
