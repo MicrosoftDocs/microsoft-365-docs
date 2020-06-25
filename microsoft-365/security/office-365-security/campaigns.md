@@ -49,15 +49,11 @@ A campaign might be short-lived, or could span several days, weeks, or months wi
 
 ## Campaign Views the Security & Compliance Center
 
-Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**.
+Campaign Views is available in the [Security & Compliance Center](https://protection.office.com) at **Threat management** \> **Campaigns**, or directly at <https://protection.office.com/campaigns>.
 
 ![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
 
-You can also get to Campaign Views from:
-
-- **Threat management** \> **Explorer** \> **View** \> **Campaigns**
-
-- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign**
+You can also get to Campaign Views from **Threat management** \> **Explorer** \> **View** \> **Campaigns**.
 
 > [!TIP]
 > If you don't see any campaign data, try changing the date range.
@@ -68,13 +64,15 @@ The overview page shows the following information about the campaign:
 
 - **Sample subject**: The subject line of one of the messages in the campaign. Note that all messages in the campaign will not necessarily have the same subject.
 
-- **Type**: Currently, this value is always **Phish**.
+- **Targeted**: The percentage as calculated by the number of campaign recipients in your organization / the total number of recipients in the campaign across all organizations in the service. This value indicates the degree to which the campaign is specifically directed at your organization (a higher value) vs. directed at other organizations in the service.
+
+- **Type**: This value is either **Phish** or **Malware**.
 
 - **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-** is added to the subtype value.
 
 - **Recipients**: The number of users that were targeted by this campaign.
 
-- **Inboxed**: The number of users that received messages from this campaign in their Inbox (not delivered to Junk).
+- **Inboxed**: The number of users that received messages from this campaign in their Inbox (not delivered to their Junk Email folder).
 
 - **Clicked**: The number of users that clicked on the URL in the phishing message.
 
@@ -86,29 +84,35 @@ When you click on the name of a campaign, the campaign details appears in a flyo
 
 ## Campaign details
 
-In the campaign details view, a lot of information is available about the campaign:
+In the campaign details view, additional information about the campaign is available.
 
-- Campaign information:
+### Campaign information
 
-  - **ID**: The unique campaign identifier.
+- **ID**: The unique campaign identifier.
 
-  - **Started** and **Ended**: the date range filter you selected.
+- **Started** and **Ended**: The date range of the campaign.
 
-  - **Impact**: The following data for the date range filter you selected:
+- **Impact**: The following data for the date range filter you selected (or that you later modified in the timeline):
   
-    - The total number of recipients.
+  - The total number of recipients.
+  - The number of messages that were "Inboxed" (that is, delivered to the Inbox, not to the Junk Email folder).
+  - How many users clicked on the URL payload in the phishing message.
+  - Howe many users visited the URL.
 
-    - The number of messages that were "Inboxed" (that is, delivered to the Inbox, not to Junk).
+- **Targeted**: The percentage as calculated by the number of campaign recipients in your organization / the total number of recipients in the campaign across all organizations in the service.
 
-    - How many users clicked on the URL payload in the phishing message.
+- An interactive timeline of campaign activity: The timeline shows the campaign activity over the lifetime of the campaign. By default, the shaded area includes the date range filter that you selected in the overview. You can click and drag to select a specific start point and end point, which will change the data that's displayed in **Impact** area, and on the rest of the page as described in the next sections.
 
-    - Howe many users visited the URL.
+In the title bar, you can click the **Download campaign write-up** button ![Download campaign write-up icon](../../media/download-campaign-write-up-button.png) to download the campaign information that's displayed on this page and more to a Word document (by default, named CampaignReport.docx).
 
-  - A timeline of campaign activity: When the campaign started and ended, and the volume of messages over time.
+![Campaign information](../../media/campaign-details-campaign-info.png)
 
 ### Campaign flow
 
 Important details about the campaign are presented in a horizontal flow diagram (known as a _Sankey_ diagram) in the **Flow** section. These details will help you to understand the elements of the campaign and the potential impact in your organization.
+
+> [!TIP]
+> The information that's displayed in the **Flow** diagram is controlled by the shaded date range in the timeline as described in the previous section.
 
 ![Campaign details that don't contain user URL clicks](../../media/campaign-details-no-recipient-actions.png)
 
@@ -120,11 +124,12 @@ The diagram contains the following information:
 
 - **Sender domains**
 
-- **Filter verdicts**: The values here are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
+- **Filter verdicts**: These values are related to the available phishing and spam filtering verdicts as described in [Anti-spam message headers](anti-spam-message-headers.md). The available values are described in the following table:
 
-  |Value|Spam filter verdict|Description|
-  |:-----|:-----|:-----|
-  | **Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering (for example, by a mail flow rule, also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons (for example, the sender and recipient appear to be in the same organization).|
+  ||||
+  |---|---|---|
+  |**Value**|**Spam filter verdict**|**Description**|
+  |**Allowed**|`SFV:SKN` <br/><br/> `SFV:SKI`|The message was marked as not spam and/or skipped filtering before being evaluated by spam filtering (for example, by a mail flow rule, also known as a transport rule).<br/><br/>The message skipped spam filtering for other reasons (for example, the sender and recipient appear to be in the same organization).|
   |**Blocked**|`SFV:SKS`|The message was marked as spam before being evaluated by spam filtering (for example, by a mail flow rule).|
   |**Detected**|`SFV:SPM`|The message was marked as spam by spam filtering.|
   |**Not Detected**|`SFV:NSPM`|The message was marked as not spam by spam filtering.|
@@ -134,6 +139,7 @@ The diagram contains the following information:
   |**User Allow**<sup>\*</sup>|`SFV:SFE`|The message skipped spam filtering because the sender was in a user's Safe Senders list in Outlook.|
   |**User Block**<sup>\*\*</sup>|`SFV:BLK`|The message was blocked by spam filtering because the sender was in a user's Blocked Senders list in Outlook.|
   |**ZAP**|n/a|[Zero-hour auto purge (ZAP)](zero-hour-auto-purge.md) took action on the delivered message according to your anti-spam policy settings (moved to the Junk Email folder or Quarantined).|
+  |
 
   <sup>\*</sup> Review your anti-spam policies, because the allowed message would have likely been blocked by the service.
 
@@ -142,22 +148,16 @@ The diagram contains the following information:
 - **Delivery locations**: You'll likely want to investigate messages that were actually delivered to recipients (either to the Inbox or the Junk Email folder), even if users didn't click on the payload URL in the message. You can also remove the quarantined messages from quarantine. For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
 
   - **Deleted folder**
-
   - **Dropped**
-
-  - **External**: The recipient is located in your on-premises email organization.
-
+  - **External**: The recipient is located in your on-premises email organization in hybrid environments.
   - **Failed**
-
   - **Forwarded**
-
   - **Inbox**
-
   - **Junk folder**
-
   - **Quarantine**
-
   - **Unknown**
+
+- **URL clicks**: These are described in the next section.
 
 > [!NOTE]
 > In all layers that contain more than 10 items, the top 10 items are shown, while the rest are bundled together in **Others**.
@@ -181,6 +181,9 @@ If a user clicked on the payload URL in the phishing message, the actions are di
 ### Tabs
 
 There are several tabs in the campaign details view that allow you to further investigate the campaign.
+
+> [!TIP]
+> The information that's displayed on the tabs is controlled by the shaded date range in the timeline as described in [Campaign information](#campaign-information) section.
 
 - **URL Clicks**: If users didn't click on the payload URL in the phishing message, this section will be blank. If a user was able to click on the URL, the following values will be populated:
 
