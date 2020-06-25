@@ -530,6 +530,7 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - withholding tax
 - individual tax return
 - tax file number
+- tfn
 
 #### Keyword_number_exclusions
 
