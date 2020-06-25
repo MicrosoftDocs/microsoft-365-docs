@@ -44,9 +44,13 @@ Watch this video or follow the steps below to set an employee's working hours.
 
 1. Use the dropdowns to select start and end times for each day. Times are available in 15-minute increments.
 
-   ![Image of Bookings working hours screen](../media/bookings-staff-name-highlight.png)
+   ![Image of Bookings staff working hours screen](../media/bookings-staff-hours.png)
 
 1. Click **+** to add start- and end-time selectors.
+
+**Needs new screenshot here**
+
+   ![Image of Bookings staff time selectors]()
 
 1. Select Save.
 

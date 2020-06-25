@@ -30,13 +30,7 @@ Before you start, complete the following tasks:
 
 Watch this video or follow the steps below to add the Book now button to your Facebook page.
 
-**-**
-**Remove XML below and insert video link**
-**-**
-<mediaLink>
-	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
-	<video videoid="RWusUj" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
-</mediaLink>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWusUj]
 
 1. From your booking page, copy the URL under **Share your page**.
 

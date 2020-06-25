@@ -38,13 +38,7 @@ Ready to get started?
 
 Watch this video or follow the steps below to set up Bookings.
 
-**-**
-**Remove XML below and insert video link**
-**-**
-<mediaLink>
-	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
-	<video videoid="RE26B1q" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
-</mediaLink>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
 
 Step 1: [Enter your business information](enter-business-information.md)
 

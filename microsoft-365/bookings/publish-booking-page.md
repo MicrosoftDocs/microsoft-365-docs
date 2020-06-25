@@ -24,13 +24,7 @@ Use the booking page tab in the Microsoft Bookings app to publish and unpublish 
 
 Watch this video or follow the steps below to publish or unpublish your booking page.
 
-**-**
-**Remove XML below and insert video link**
-**-**
-<mediaLink>
-	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
-	<video videoid="RWuYil" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
-</mediaLink>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 

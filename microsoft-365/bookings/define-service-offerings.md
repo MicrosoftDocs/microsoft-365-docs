@@ -89,7 +89,7 @@ Once you've set up the appointment on your calendar, you can add users to the se
 
 ## Text message notifications
 
-This feature is only available in North America in preview. For more info, see [When do I get the newest features for Microsoft 365?](https://support.microsoft.com/office/when-do-i-get-the-newest-features-for-microsoft-365-da36192c-58b9-4bc9-8d51-bb6eed468516).
+This feature is only available in North America in preview. For more information, see [When do I get the newest features for Microsoft 365?](https://support.microsoft.com/office/when-do-i-get-the-newest-features-for-microsoft-365-da36192c-58b9-4bc9-8d51-bb6eed468516).
 
 You can now set up your services with text notifications. When your customer creates a new booking or updates an existing booking on such service, they will have the option to receive reminder text messages.
 

@@ -24,10 +24,10 @@ The booking calendar is where all relevant information about that booking calend
 - Relevant staff and services added when the booking calendar was created
 - All bookings and time off appointments added to the booking calendar once it was created.
 
-> [!IMPORTANT]
+> [!WARNING]
 > Once a booking calendar is deleted, this additional information is also permanently deleted and can't be recovered.
 
-## Delete booking calendar in the Microsoft 365 admin center
+## Delete a booking calendar in the Microsoft 365 admin center
 
 1. Go to the Microsoft 365 admin center.
 
@@ -39,7 +39,7 @@ The booking calendar is where all relevant information about that booking calend
 
    ![Image of Delete User UI in Microsoft 365 admin center](../media/bookings-delete-user.png)
 
-## Delete booking calendar using Exchange Online PowerShell
+## Delete a booking calendar using Exchange Online PowerShell
 
 See [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) for prerequisites and guidance for connecting to Exchange Online PowerShell.
 
