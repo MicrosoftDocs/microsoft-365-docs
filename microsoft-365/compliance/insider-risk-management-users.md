@@ -1,6 +1,6 @@
 ---
-title: Insider risk management Users Dashboard
-description: Learn about insider risk management Users Dashboard in Microsoft 365
+title: Insider risk management Users dashboard
+description: Learn about insider risk management Users dashboard in Microsoft 365
 keywords: Microsoft 365, insider risk management, risk management, compliance
 localization_priority: Normal
 ms.prod: Microsoft-365-enterprise
@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk management Users Dashboard
+# Insider risk management Users dashboard
 
 The **Users dashboard** is an important tool in the insider risk management workflow and helps investigators and analysts have a more complete understanding of risk activities. This dashboard offers views and management features to meet administrative needs between the creating insider risk management policies and managing insider risk management cases.
 
