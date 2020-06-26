@@ -28,15 +28,15 @@ description: Learn about retention labels that govern your data by keeping what 
 
 Across your organization, you probably have different types of content that require different actions taken on them in order to comply with industry regulations and internal policies. For example, you might have:
   
-- Tax forms that need to be **retained** for a minimum period of time. 
+- Tax forms that need to be retained for a minimum period of time. 
     
-- Press materials that need to be **permanently deleted** when they reach a certain age. 
+- Press materials that need to be permanently deleted when they reach a certain age. 
     
-- Competitive research that needs to be both **retained** and then **permanently deleted**. 
+- Competitive research that needs to be both retained and then permanently deleted. 
     
-- Work visas that must be **marked as a record** so that they can't be edited or deleted. 
+- Work visas that must be marked as a record so that they can't be edited or deleted. 
     
-In all of these cases, retention labels can help you take the right actions on the right content. With retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
+In all these cases, retention labels can help you take the right actions on the right content. Using retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
   
 With retention labels, you can:
   
@@ -68,7 +68,7 @@ For example, you can create and apply a retention label named "Review later" wit
 
 ## How retention labels work with retention label policies
 
-Retention labels are independent, reusable building blocks that are included in one or more retention label policies. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear.
+Retention labels are independent, reusable building blocks that are included in one or more retention label policies. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear. Then, admins and users can apply those labels to content.
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
@@ -79,7 +79,9 @@ Retention labels are independent, reusable building blocks that are included in 
 3. A single location can also be included in many retention label policies.
     
 3. Retention label policies specify the locations to publish the retention labels.
-    
+
+In addition to retention label policies, you can also create an auto-apply policy with a retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met. 
+
 ## Only one retention label at a time
 
 It's important to know that content like an email or document can have only a single retention label assigned to it at a time:
