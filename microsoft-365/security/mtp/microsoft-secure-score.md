@@ -56,7 +56,7 @@ Currently there are recommendations for Microsoft 365 (including Exchange Online
 
 Microsoft Secure Score has updated improvement actions to support [security defaults in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with preconfigured security settings for common attacks.
 
-If you turn on security defaults, you will be awarded full points following improvement actions:
+If you turn on security defaults, you will be awarded full points for the following improvement actions:
 
 - Ensure all users can complete multi-factor authentication for secure access (9 points)
 - Require MFA for administrative roles (10 points)
