@@ -105,7 +105,7 @@ In this phase, you'll be guided to:
 <br>![Image of_Office 365 E5 where you can set whether to migrate email messages or not](../../media/mtp-eval-20.png) <br>
  
 13. Choose online services. Select **Exchange** and click **Next**. 
-<br>![Image of_Office 365 E5 where you can choose your online services like Exchangem Skype for Business or Mibile Device Management for Office 365](../../media/mtp-eval-21.png) <br>
+<br>![Image of_Office 365 E5 where you can choose your online services](../../media/mtp-eval-21.png) <br>
 
 14. Add MX, CNAME and TXT records to your domain. When completed, select **Verify**.
 <br>![Image of_Office 365 E5 here you can add your DNS records](../../media/mtp-eval-22.png) <br>
@@ -145,4 +145,5 @@ In this phase, you'll be guided to:
 
 ## Next step
 |||
-|:-------|:-----|config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection trial lab environment and onboard your endpoints.
+|:-------|:-----|
+|![Phase 3: Configure & Onboard](../../media/config-onboard.png) <br>[Phase 3: Configure & Onboard](config-mtpeval.md) | Configure each Microsoft Threat Protection pillar for your Microsoft Threat Protection evaluation lab and onboard your endpoints.

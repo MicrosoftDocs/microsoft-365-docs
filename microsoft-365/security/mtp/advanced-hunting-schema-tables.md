@@ -59,9 +59,6 @@ The following reference lists all the tables in the schema. Each table name link
 | **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)** | Authentication events recorded by Active Directory and other Microsoft online services |
 | **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)** | Query activities performed against Active Directory objects, such as users, groups, devices, and domains |
 
-
-
-
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)

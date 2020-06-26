@@ -85,25 +85,25 @@ If you're using Office 365 operated by 21Vianet, go to [https://portal.partner.m
 
 2. Select **Install**.
 
-Need more detailed steps or want to install the 64-bit version of Office? See [Step-by-step installation instructions](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx#BKMK_InstallSteps).
+Need more detailed steps or want to install the 64-bit version of Office? See [Step-by-step installation instructions](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658#BKMK_InstallSteps).
   
 ## Set up mobile
 
 Install Office on your mobile device, and set up Outlook to work with your new Microsoft mailbox. Everyone on your team will need to do this step. Each person can install the Office mobile apps on up to 5 phones and 5 tablets.
   
-Get the steps for your device: [Android](https://support.office.com/article/6ef2ebf2-fc2d-474a-be4a-5a801365c87f.aspx) | [iOS](https://support.office.com/article/0402b37e-49c4-4419-a030-f34c2013041f.aspx) | [Windows Phone](https://support.microsoft.com/en-us/office/set-up-office-apps-and-email-on-windows-phone-9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
+Get the steps for your device: [Android](https://support.microsoft.com/office/6ef2ebf2-fc2d-474a-be4a-5a801365c87f) | [iOS](https://support.microsoft.com/office/0402b37e-49c4-4419-a030-f34c2013041f) | [Windows Phone](https://support.microsoft.com/office/9bccc8b8-a321-4d0d-a45e-6e06a3438e43)
   
 ## Store files online
 
-Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft makes online file storage easy. To learn which storage locations are best for your business, see [Where you can store files in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
 Everyone gets a **OneDrive** cloud storage location automatically when you create Microsoft accounts for them. With OneDrive, you can access files across your computers, phones, and tablets.
   
 1. On your computer, use File Explorer to open OneDrive. Or, from [Office 365](https://www.office.com), open **OneDrive** from the app launcher.
 
-2. View and upload personal files, or share documents or folders by selecting **Share** and then either inviting others to view the documents or sending them a link. To learn more, see [Share OneDrive files and folders](https://support.office.com/article/9fcc2f7d-de0c-4cec-93b0-a82024800c07.aspx#OS_Type=OneDrive_-_Business).
+2. View and upload personal files, or share documents or folders by selecting **Share** and then either inviting others to view the documents or sending them a link. To learn more, see [Share OneDrive files and folders](https://support.microsoft.com/office/9fcc2f7d-de0c-4cec-93b0-a82024800c07#OS_Type=OneDrive_-_Business).
   
-More at [Upload files to a library](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx).
+More at [Upload files to a library](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0).
   
 ## Get started using Office
 

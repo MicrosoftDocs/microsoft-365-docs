@@ -32,7 +32,7 @@ description: "Learn how to set up your Microsoft Business Premium, Microsoft 365
 
 See the following links to get your business or [nonprofit](https://go.microsoft.com/fwlink/p/?LinkId=627221) up and running with [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps for business, or Office 365 Education.
   
-Not a business? See [Set up for Microsoft 365 Family or Microsoft 365 Personal](https://support.office.com/article/65415a24-3cbf-4f30-901d-9bf9eba7fce2.aspx).
+Not a business? See [Set up for Microsoft 365 Family or Microsoft 365 Personal](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).
   
 - [Set up Microsoft 365 Business Basic](setup-business-basic.md)
 - [Set up Microsoft Business Standard](setup-business-standard.md)

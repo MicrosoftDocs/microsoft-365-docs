@@ -15,14 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+ - seo-marvel-mar2020
+ - seo-marvel-apr2020
 description: Use the Data Investigations (Preview) People of interest Management tool in your investigation by accessing and searching the activity for people of interest.
 ---
 # View the audit activity of people of interest
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? Data Investigations (Preview) is now integrated with the existing audit log search tool in the Security & Compliance Center. Using this embedded experience, you can use the Data Investigations (Preview) People of interest Management tool to facilitate your investigation by easily accessing and searching the activity for people of interest within your investigation.
 
-## Before you begin
+## Get permissions
 
 You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange Online to search the audit log. By default, these roles are assigned to the Compliance Management and Organization Management role groups on the Permissions page in the Exchange admin center. To give a user the ability to search the Data Investigations (Preview) audit log with the minimum level of privileges, you can create a custom role group in Exchange Online, add the View-Only Audit Logs or Audit Logs role, and then add the user as a member of the new role group. For more information, see Manage role groups in Exchange Online.
 

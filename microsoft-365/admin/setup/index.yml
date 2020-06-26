@@ -29,11 +29,11 @@ landingContent:
       - linkListType: video
         links:
           - text: Sign up and set up Microsoft Business Basic
-            url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
           - text: Sign up for Microsoft Business Standard
-            url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
           - text: Sign up for Microsoft Business Premium
-            url: https://support.office.com/article/9ac1a0f1-789b-4143-b954-5821d5d89298
+            url: https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298
   # Card (optional)
   - title: Guided set up
     linkLists:
@@ -65,10 +65,10 @@ landingContent:
       - linkListType: video
         links:      
           - text: Install apps on Android
-            url: https://support.office.com/article/647909af-560f-4977-ae45-3b45ad9e8236
+            url: https://support.microsoft.com/office/647909af-560f-4977-ae45-3b45ad9e8236
           - text: Install apps on iOS
-            url: https://support.office.com/article/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
+            url: https://support.microsoft.com/office/d1ad9f23-0fa3-4cf1-bf26-ff35336fd343
           - text: Train users
-            url: https://support.office.com/office-training-center  
+            url: https://support.microsoft.com/training  
           - text: Connect PCs to Microsoft 365 Business Premium
-            url: https://support.office.com/article/cd5716f6-05de-430b-ac94-662d5ee71d07 
+            url: https://support.microsoft.com/office/cd5716f6-05de-430b-ac94-662d5ee71d07 

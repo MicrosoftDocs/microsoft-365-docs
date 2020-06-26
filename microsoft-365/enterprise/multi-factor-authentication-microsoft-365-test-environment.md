@@ -1,5 +1,5 @@
 ---
-title: "Multi-factor authentication for your Microsoft 365 Enterprise test environment"
+title: Microsoft 365 Enterprise test environment multi-factor authentication
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom: 
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: "Configure multi-factor authentication using text messages sent to a smart phone in your Microsoft 365 Enterprise test environment."
 ---
 
@@ -38,7 +39,7 @@ There are two phases to setting up multi-factor authentication for an account in
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Go to [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
