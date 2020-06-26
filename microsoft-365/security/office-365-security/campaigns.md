@@ -37,13 +37,13 @@ A campaign is a coordinated email attack against one or many organizations. Emai
 
 Microsoft leverages the vast amounts of anti-phishing, anti-spam, and anti-malware data across the entire service to help identify campaigns. We analyze and classify the attack information according to several factors. For example:
 
-- **Attack source**: Source IP addresses and sender email domains.
+- **Attack source**: The source IP addresses and sender email domains.
 
-- **Attack message properties**: The content, style, and tone of the attack messages.
+- **Attack message properties**: The content, style, and tone of the messages.
 
 - **Attack recipients**: Recipient domains, recipient job functions (admins, executives, etc.), company types (large, small, public, private, etc.), and industries.
 
-- **Attack payload**: Malicious links, attachments, or other payloads in the attack messages.
+- **Attack payload**: Malicious links, attachments, or other payloads in the messages.
 
 A campaign might be short-lived, or could span several days, weeks, or months with active and inactive periods. A campaign might be launched against your specific organization, or your organization might be part of a larger campaign across multiple companies.
 
@@ -55,10 +55,18 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 You can also get to Campaign Views from **Threat management** \> **Explorer** \> **View** \> **Campaigns**.
 
-> [!TIP]
-> If you don't see any campaign data, try changing the date range.
+To access Campaign Views, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-The overview page shows the following information about the campaign:
+## Campaigns overview
+
+The overview page shows information about all campaigns.
+
+On the default **Campaign** tab, the **Campaign type** area shows a bar graph that shows the number of recipients per day. By default, the graph shows both **Phish** and **Malware** data.
+
+> [!TIP]
+> If you don't see any campaign data, try changing the date range or [filters](#filters-and-settings).
+
+The rest of the overview page shows the following information on the **Campaign** tab:
 
 - **Name**
 
@@ -74,19 +82,87 @@ The overview page shows the following information about the campaign:
 
 - **Inboxed**: The number of users that received messages from this campaign in their Inbox (not delivered to their Junk Email folder).
 
-- **Clicked**: The number of users that clicked on the URL in the phishing message.
+- **Clicked**: The number of users that clicked on the URL or opened the attachment in the phishing message.
 
-- **Click Rate**: The percentage as calculated by "**Clicked** / **Inboxed**". This value is an indicator of the effectiveness of the campaign, and whether the recipients were able to identify the message as phishing and avoid clicking on the payload URL.
+- **Click rate**: The percentage as calculated by "**Clicked** / **Inboxed**". This value is an indicator of the effectiveness of the campaign, and whether the recipients were able to identify the message as phishing and avoid clicking on the payload URL.
+
+  Note that this value isn't used in malware campaigns.
 
 - **Visited**: How many users actually made it through to the payload website. If there are **Clicked** values, but Safe Links blocked access to the website, this value will be zero.
 
-When you click on the name of a campaign, the campaign details appears in a flyout.
+The **Campaign origin** tab shows the message sources on a map of the world.
+
+### Filters and settings
+
+At the top of the Campaign Views page, there are several filter and query settings to help you find and isolate specific campaigns.
+
+![Campaign filters](../../media/campaign-filters-and-settings.png)
+
+The most basic filtering that you can do is the start date/time and the end date/time.
+
+To further filter the view, you can do single property (but multiple value) filtering by clicking the **Campaign type** button, making your selection, and then clicking **Refresh**.
+
+The available campaign properties are described in the following list:
+
+- Basic
+
+  - **Campaign type**: Select **Malware** or **Phish**. Clearing the selections has the same result as selecting both.
+  - **Campaign name**
+  - **Campaign subtype**
+  - **Sender**
+  - **Recipients**
+  - **Sender domain**
+  - **Subject**
+  - **Attachment filename**
+  - **Malware family**
+  - **Delivery action**
+  - **Detection technology**
+  - **Tags**
+  - **System overrides**
+
+- Advanced
+
+  - **Internet message ID**: Available in the **Message-ID** header field in the message header. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
+  
+  - **Network message ID**: A GUID value that's available in the **X-MS-Exchange-Organization-Network-Message-Id** header field in the message header.
+  
+  - **Sender IP**
+  
+  - **Attachment SHA256**: To find the SHA256 hash value of a file in Windows, run the following command in a Command Prompt: `certutil.exe -hashfile "<Path>\<Filename>" SHA256`.
+  
+  - **Cluster ID**
+  
+  - **Alert Policy ID**
+
+- URLs
+
+  - **URL domain**
+  - **URL domain and path**
+  - **URL**
+  - **URL path**
+  - **Click verdict**
+
+For more advanced filtering, including multiple properties, you can click the **Advanced filter** button to build your query. The same campaign properties are available, but with the following enhancements:
+
+- You can click **Add a condition** to select multiple conditions.
+- You can choose the **And** or **Or** operator between conditions.
+- You can select the **Condition group** item at the very bottom of the conditions list to form compound conditions.
+
+When you're finished, click the **Query** button.
+
+After you create a basic or advanced filter, you can save it by using **Save query** or **Save query as**. Later, when you return to Campaign Views, you can load a saved filter by clicking **Saved query settings**.
+
+To export the graph or the list of campaigns, click **Export** and select **Export chart data** or **Export campaign list**.
+
+If you have a Microsoft Defender ATP subscription, you can click **WDATP** to connect or disconnect the campaigns information with Microsoft Defender ATP. For more information, see [Integrate Office 365 ATP with Microsoft Defender ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/integrate-office-365-ti-with-wdatp).
 
 ## Campaign details
 
-In the campaign details view, additional information about the campaign is available.
+When you click on the name of a campaign, the campaign details appears in a flyout.
 
 ### Campaign information
+
+At the top of the campaign details view, the following campaign information is available:
 
 - **ID**: The unique campaign identifier.
 
@@ -103,13 +179,13 @@ In the campaign details view, additional information about the campaign is avail
 
 - An interactive timeline of campaign activity: The timeline shows the campaign activity over the lifetime of the campaign. By default, the shaded area includes the date range filter that you selected in the overview. You can click and drag to select a specific start point and end point, which will change the data that's displayed in **Impact** area, and on the rest of the page as described in the next sections.
 
-In the title bar, you can click the **Download campaign write-up** button ![Download campaign write-up icon](../../media/download-campaign-write-up-button.png) to download the campaign information that's displayed on this page and more to a Word document (by default, named CampaignReport.docx).
+In the title bar, you can click the **Download campaign write-up** button ![Download campaign write-up icon](../../media/download-campaign-write-up-button.png) to download the campaign details to a Word document (by default, named CampaignReport.docx).
 
 ![Campaign information](../../media/campaign-details-campaign-info.png)
 
 ### Campaign flow
 
-Important details about the campaign are presented in a horizontal flow diagram (known as a _Sankey_ diagram) in the **Flow** section. These details will help you to understand the elements of the campaign and the potential impact in your organization.
+In the middle of the campaign details view, important details about the campaign are presented in the **Flow** section in a horizontal flow diagram (known as a _Sankey_ diagram). These details will help you to understand the elements of the campaign and the potential impact in your organization.
 
 > [!TIP]
 > The information that's displayed in the **Flow** diagram is controlled by the shaded date range in the timeline as described in the previous section.
@@ -180,51 +256,45 @@ If a user clicked on the payload URL in the phishing message, the actions are di
 
 ### Tabs
 
-There are several tabs in the campaign details view that allow you to further investigate the campaign.
+The tabs in the campaign details view allow you to further investigate the campaign.
 
 > [!TIP]
 > The information that's displayed on the tabs is controlled by the shaded date range in the timeline as described in [Campaign information](#campaign-information) section.
 
-- **URL Clicks**: If users didn't click on the payload URL in the phishing message, this section will be blank. If a user was able to click on the URL, the following values will be populated:
+- **URL clicks**: If users didn't click on the payload URL in the phishing message, this section will be blank. If a user was able to click on the URL, the following values will be populated:
 
   - **User**<sup>\*</sup>
-
   - **URL**<sup>\*</sup>
-
-  - **Click Time**
-
-  - **Click Action**
+  - **Click time**
+  - **Click verdict**
 
 - **Sender IPs**
 
   - **Sender IP**<sup>\*</sup>
-
-  - **Total Count**
-
-  - **Inboxed Count**
-
-  - **Blocked Count**
-
-  - **SPF Passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). A sender that does not pass SPF validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
+  - **Total count**
+  - **Inboxed**
+  - **Not Inboxed**
+  - **SPF passed**: The sender was authenticated by the [Sender Policy Framework (SPF)](how-office-365-uses-spf-to-prevent-spoofing.md). A sender that does not pass SPF validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
 
 - **Senders**
 
   - **Sender**: This is the actual sender address in the SMTP MAIL FROM command, which is not necessarily the From: email address that users see in their email clients.
-
-  - **Total Count**
-
+  - **Total count**
   - **Inboxed**
-
   - **Not Inboxed**
+  - **DKIM passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). A sender that does not pass DKIM validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
+  - **DMARC passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](use-dmarc-to-validate-email.md). A sender that does not pass DMARC validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
 
-  - **DKIM Passed**: The sender was authenticated by [Domain Keys Identified Mail (DKIM)](support-for-validation-of-dkim-signed-messages.md). A sender that does not pass DKIM validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
+- **Attachments**
 
-  - **DMARC Passed**: The sender was authenticated by [Domain-based Message Authentication, Reporting, and Conformance (DMARC)](use-dmarc-to-validate-email.md). A sender that does not pass DMARC validation indicates the sender isn't authenticated, or the message is spoofing a legitimate sender.
+  - **Filename**
+  - **SHA256**
+  - **Malware family**
+  - **Total count**
 
-- **Payloads**
+- **URL**
 
   - **URL**<sup>\*</sup>
-
   - **Total Count**
 
 <sup>\*</sup> Clicking on this value opens a new flyout that contains more details about the specified item (user, URL, etc.) on top of the campaign details view. To return to the campaign details view, click **Done** in the new flyout.
