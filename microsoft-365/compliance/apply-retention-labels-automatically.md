@@ -1,5 +1,5 @@
 ---
-title: "Apply a retention label to content automatically"
+title: "Automatically apply a retention label to retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,13 +19,11 @@ search.appverid:
 description: Create and auto-publish retention labels so you can automatically apply labels to retain what you need and delete what you don't
 ---
 
-# Apply a retention label to content automatically
+# Automatically apply a retention label to retain or delete content
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
 One of the most powerful features of [retention labels](labels.md) is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
-  
-![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
   
 Auto-applying retention labels are powerful because:
   
@@ -35,7 +33,7 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can choose to apply retention labels to content automatically when that content contains:
+You can apply retention labels to content automatically when that content contains:
   
 - [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
     
@@ -43,13 +41,20 @@ You can choose to apply retention labels to content automatically when that cont
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
     
+
 ![Choose condition page for auto-apply label](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
 
-Use the following instructions to help you create a retention label and then an auto-policy to apply that label.
+The high-level steps to create and auto-publish retention labels:
 
-Note: Auto-policies use conditions to automatically apply retention labels. You can also automatically apply a specific retention label with a label policy and the following scenarios: 
+![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
-Navigation instructions depend on whether you're using [records management](records-management.md) or not. Instructions are provided for both scenarios.
+For detailed steps, use the following instructions.
+
+> [!NOTE]
+> Auto-policies use conditions to automatically apply retention labels. You can also automatically apply a specific retention label with a label policy and the following scenarios: 
+>
+> - Apply a default retention label to a SharePoint library, folder, or document set so that unlabeled content in that container is automatically labeled
+>- Automatically applying a retention label to email by using rules
 
 ## Before you begin
 
@@ -59,9 +64,13 @@ For more information, see [Give users access to the Office 365 Security &amp; Co
   
 These permissions are required only to create and apply retention labels. Policy enforcement does not require access to the content.
 
-## Create retention labels
+## How to auto-apply a retention label
 
-If you have already created retention labels that you want to automatically apply, skip to the next procedure.
+First, create your retention label. Then create an auto-policy to apply that label. If you have already created your retention label, skip to [creating an auto-policy](#create-an-auto-apply-policy).
+
+Navigation instructions depend on whether you're using [records management](records-management.md) or not. Instructions are provided for both scenarios.
+
+### Create a retention label
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
@@ -79,12 +88,10 @@ If you have already created retention labels that you want to automatically appl
     
     - To use the retention label to declare content as a record, enable the checkbox **Use label to classify content as a "Record"**.
 
-3. Repeat these steps to create more labels.
-
 To edit an existing label, select it, and then select **Edit label** to start the same wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 
-## Create an auto-apply policy
+### Create an auto-apply policy
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
 
@@ -107,21 +114,7 @@ When you create an auto-apply policy, you select a retention label to automatica
 To edit an existing auto-apply label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 
-## Configuring conditions
-
-You can apply retention labels to content automatically when that content contains:
-  
-- [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
-    
-- [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
-
-- [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
-    
-![Choose condition page for auto-apply label](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
-
-It can take up to seven days for auto-apply retention labels to be applied to all content that matches the conditions you've configured.
-
-### Auto-apply labels to content with specific types of sensitive information
+#### Auto-apply labels to content with specific types of sensitive information
 
 When you create auto-apply retention labels for sensitive information, you see the same list of policy templates as when you create a data loss prevention (DLP) policy. Each policy template is preconfigured to look for specific types of sensitive information. For example, the template shown here looks for U.S. ITIN, SSN, and passport numbers. To learn more about DLP, see [Overview of data loss prevention policies](data-loss-prevention-policies.md).
   
@@ -137,7 +130,7 @@ For more information on these options, see [Tuning rules to make them easier or 
     
 ![Options for identifying sensitive information types](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### Auto-apply labels to content with keywords or searchable properties
+#### Auto-apply labels to content with keywords or searchable properties
 
 You can auto-apply labels to content that satisfies certain conditions. The conditions now available support applying a label to content that contains specific words, phrases, or values of searchable properties. You can refine your query by using search operators like AND, OR, and NOT.
 
@@ -162,7 +155,7 @@ Examples queries:
 ![Query editor](../media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
 
-### Auto-apply labels to content by using trainable classifiers
+#### Auto-apply labels to content by using trainable classifiers
 
 When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
 
