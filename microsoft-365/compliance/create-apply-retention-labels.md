@@ -1,5 +1,5 @@
 ---
-title: "Create and apply retention labels"
+title: "Create and apply retention labels to retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,7 +19,7 @@ search.appverid:
 description: Instructions to create and publish retention labels so you can then manually apply labels to retain what you need and delete what you don't
 ---
 
-# Create and apply retention labels
+# Create and apply retention labels to retain or delete content
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -27,7 +27,15 @@ Use the following information to help you create and publish [retention labels](
 
 Retention labels help you retain what you need and delete what you don't. They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.
 
-Where you create and configure your retention labels depend on whether you're using records management or not. Instructions are provided for both scenarios.
+Making retention labels available to people in your organization so that they can classify content is a two-step process: 
+
+1. Create the retention labels
+
+2. Publish the retention labels by using a retention label policy
+  
+![Diagram of roles and tasks for labels](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
+
+Use the following instructions for the two admin steps.
 
 ## Before you begin
 
@@ -37,7 +45,13 @@ For more information, see [Give users access to the Office 365 Security &amp; Co
   
 These permissions are required only to create retention labels and a label policy. Policy enforcement does not require access to the content.
 
-## Create retention labels
+## How to create and publish retention labels
+
+First, create your retention labels. Then create a label policy to make the labels available to apply in apps.
+
+Where you create and configure your retention labels depend on whether you're using records management or not. Instructions are provided for both scenarios.
+
+### Step 1: Create retention labels
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
@@ -59,7 +73,7 @@ These permissions are required only to create retention labels and a label polic
 
 To edit an existing label, select it, and then select **Edit label** to start the same wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
-## Publish retention labels
+### Step 2: Publish retention labels
 
 Publish retention labels so that they can be applied by admins and users.
 
@@ -80,17 +94,18 @@ Publish retention labels so that they can be applied by admins and users.
 To edit an existing retention label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 
-    
-### Published retention labels
+### When retention labels become available to apply
 
-If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to seven days. If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.
+If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to seven days. 
+
+If you publish retention labels to Exchange, it can take up to seven days for those retention labels to appear for end users, and the mailbox must contain at least 10 MB of data.
 
 For example:
   
 ![Diagram of when manual labels take effect](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-### How to check on the status of retention labels published to Exchange
+#### How to check on the status of retention labels published to Exchange
 
 In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using Powershell, you can see when this process last ran and therefore identify when it will run again.
   

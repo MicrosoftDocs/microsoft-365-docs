@@ -43,20 +43,12 @@ With retention labels, you can:
 - **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
-    
-    - Specific types of sensitive information.
-    
-    - Specific keywords that match a query you create.
-    
-    - Pattern matches for a trainable classifier.
-    
-  The ability to apply retention labels to content automatically is important because:
-    
-     - You don't need to train your users on all of your classifications.
-    
-     - You don't need to rely on users to classify all content correctly.
-    
-   - Users no longer need to know about data governance policies - they can instead focus on their work.
+
+- Specific types of sensitive information.
+
+- Specific keywords that match a query you create.
+
+- Pattern matches for a trainable classifier.
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
@@ -76,14 +68,6 @@ For example, you can create and apply a retention label named "Review later" wit
 
 ## How retention labels work with retention label policies
 
-Making retention labels available to people in your organization so that they can classify content is a two-step process: 
-
-1. Create the retention labels
-
-2. Publish the retention labels by using a retention label policy
-  
-![Diagram of roles and tasks for labels](../media/4082bc7d-c04c-4b9a-8a26-7f12565d3311.png)
-  
 Retention labels are independent, reusable building blocks that are included in one or more retention label policies. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear.
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
@@ -121,13 +105,13 @@ Different types of retention labels can be published to different locations, dep
   
 |**If the retention label is…**|**Then the label policy can be applied to…**|
 |:-----|:-----|
-|Published to end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
-|Auto-applied based on sensitive information types  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
+|Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
+|Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
 |Auto-applied based on a query  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
    
-In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
+In Exchange, auto-apply retention labels are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types and trainable classifiers apply to all mailboxes; you can't select specific mailboxes.
   
-Exchange public folders, Skype, and Teams channel messages and chats do not support retention labels.
+Exchange public folders, Skype, and Teams channel messages and chats do not support retention labels. To retain and delete contain from these locations, use [retention policies](retention-poliices.md) instead.
 
 ## How retention labels enforce retention
 
@@ -257,7 +241,7 @@ There are several other features that have previously been used to retain or del
 
 To use retention labels that both admins and users can apply to content, see [Create and apply retention labels](create-retention-labels.md). This method supports the following scenarios:
 
-- Manually apply retention labels
+- Manually apply retention labels in apps
 - Applying a default retention label to all content in a SharePoint library, folder, or document set
 - Automatically applying a retention label to email by using rules
 - Using a retention label as a condition in a DLP policy
