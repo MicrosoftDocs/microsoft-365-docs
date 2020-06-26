@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MSP160
@@ -39,14 +40,12 @@ This article explains how to disable the ability to create groups in all Microso
 - Microsoft Teams
 
 - Microsoft Stream
-    
-- StaffHub
-    
+
 - Planner
     
 - PowerBI
 
-- Roadmap
+- Project for the web and Roadmap
     
 You can restrict Microsoft 365 group creation to the members of a particular security group. To configure this, you use Windows PowerShell. This article walks you through the needed steps.
   
@@ -149,7 +148,7 @@ $settingsCopy["EnableGroupCreation"] = $AllowGroupCreation
 
 if($GroupName)
 {
-    $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -SearchString $GroupName).objectid
+    $settingsCopy["GroupCreationAllowedGroupId"] = (Get-AzureADGroup -Filter "DisplayName eq '$GroupName'").objectId
 }
  else {
 $settingsCopy["GroupCreationAllowedGroupId"] = $GroupName
@@ -167,7 +166,9 @@ If in the future you want to change which security group is used, you can rerun 
 
 If you want to turn off the group creation restriction and again allow all users to create groups, set $GroupName to "" and $AllowGroupCreation to "True" and rerun the script.
     
-## Step 4: Verify that it works
+## Step 3: Verify that it works
+
+Changes can take thirty minutes or more to take effect. You can verify the new settings by doing the following:
 
 1. Sign in with a user account of someone who should NOT have the ability to create groups. That is, they are not a member of the security group you created or an administrator.
     

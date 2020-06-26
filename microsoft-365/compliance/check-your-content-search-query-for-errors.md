@@ -10,9 +10,12 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-description: "Check your keyword query for Content Search for errors and typos, such as unsupported characters and lowercase Boolean operators, before you run the search. If we find an error, we'll suggest a revised query."
+ms.custom: seo-marvel-apr2020
+description: "Learn how to detect errors and typos in your keyword query for content search, before running the search."
 ---
 
 # Check your Content Search query for errors

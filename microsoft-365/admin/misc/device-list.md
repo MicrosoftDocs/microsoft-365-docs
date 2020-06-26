@@ -15,6 +15,7 @@ ms.collection:
 - Adm_NonTOC
 ms.custom:
 - MSB365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -46,7 +47,7 @@ When you add devices, you also need to add them to a Profile. A profile is used 
 
 [Microsoft 365 for business documentation and resources](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[Get started with Microsoft 365 for business](https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364)
+[Get started with Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
   
-[Manage Microsoft 365 for business](https://support.office.com/article/27ff1678-865a-4707-8145-e1155aa815d6)
+[Manage Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/business/manage)
   

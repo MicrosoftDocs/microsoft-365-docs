@@ -10,6 +10,8 @@
           href: intro/technologies.md
         - name: Microsoft Managed Desktop and ITIL
           href: MMD-and-ITSM.md
+        - name: Compliance
+          href: intro/compliance.md
     - name: Microsoft Managed Desktop service description
       href: service-description/index.md
       items: 
@@ -90,6 +92,8 @@
           items: 
             - name: Microsoft Project and Microsoft Visio
               href: get-started/project-visio.md
+            - name: New Microsoft Edge apps
+              href: get-started/edge-browser-app.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 

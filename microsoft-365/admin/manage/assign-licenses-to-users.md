@@ -17,6 +17,7 @@ ms.custom:
 - TopSMBIssues
 - SaRA
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -27,6 +28,14 @@ description: "Learn how to assign licenses to users, or move users to a new subs
 ---
 
 # Assign licenses to users
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 ::: moniker range="o365-worldwide"
 

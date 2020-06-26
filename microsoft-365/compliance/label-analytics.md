@@ -15,7 +15,9 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "After you create your retention labels and sensitivity labels, you’ll want to see how they’re being used across your tenant. With label analytics in the Microsoft 365 compliance center and Microsoft 365 security center, you can quickly see which labels are used the most and where they’re being applied."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to quickly see which retention labels and sensitivity labels are used the most and where they’re being applied.
 ---
 
 # View label usage with label analytics
@@ -94,5 +96,5 @@ To view label analytics, you must be assigned one of the following roles in Azur
 - Security administrator
 - Security reader
 
-In addition, note these reports use Azure Monitor to store the data in a Log Analytics workspace that your organization owns. Therefore, the user should be added as a reader to the Azure Monitoring worksapce that holds the data - for more information, see [Permissions required for Azure Information Protection analytics](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
+In addition, note these reports use Azure Monitor to store the data in a Log Analytics workspace that your organization owns. Therefore, the user should be added as a reader to the Azure Monitoring workspace that holds the data - for more information, see [Permissions required for Azure Information Protection analytics](https://docs.microsoft.com/azure/information-protection/reports-aip#permissions-required-for-azure-information-protection-analytics).
 

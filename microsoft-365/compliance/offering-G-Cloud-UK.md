@@ -32,17 +32,15 @@ Every year, Microsoft prepares documentation and submits evidence to attest that
 
 The appointment of Microsoft services to the Digital Marketplace means that UK government agencies and partners can use in-scope services to store and process UK OFFICIAL government data, most government data. In addition, there are now more than 450 Microsoft partners included in G-Cloud who are resellers of Microsoft cloud services. They can directly assert the compliance of in-scope services with the 14 principles in their own applications. Customers and partners, however, will need to achieve their own compliance for any components that are not included in the attestation and determination of compliance for Microsoft cloud services.
 
-Learn more about the benefits of United Kingdom G-Cloud v6 on the Microsoft Cloud: [Download the United Kingdom G-Cloud v6 background document](https://aka.ms/uk-g-cloud_backgrounder)
-
 Learn how to accelerate your United Kingdom G-Cloud v6 deployment with our Azure Security and Compliance Blueprint: [Download the Azure Blueprint UK G-Cloud Principle Implementation Guidance](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=c3804aba-03a7-4d21-88ad-d9bbe5314a00&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_UK_G-Cloud_Blueprint)
 
 ## Microsoft in-scope cloud services
 
 - [Azure](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Office 365: Exchange Online, SharePoint Online, and Skype for Business Online
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
@@ -100,7 +98,7 @@ In addition to the UK datacenters, Microsoft cloud services has data centers in 
 
 **How can I get copies of the auditor’s reports?**
 
-The [Service Trust Portal](https://support.office.com/article/Get-started-with-the-Service-Trust-Portal-for-Office-365-for-business-Azure-and-Dynamics-CRM-Online-subscriptions-f30e2353-0bd6-41ed-8347-eea1fb8d2662) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
+The [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal) provides independently audited compliance reports. You can use the portal to request audit reports so that your auditors can compare the Microsoft results with your own legal and regulatory requirements.
 
 ## Resources
 
@@ -110,7 +108,3 @@ The [Service Trust Portal](https://support.office.com/article/Get-started-with-t
 - [Digital Marketplace](https://www.digitalmarketplace.service.gov.uk/)
 - [Microsoft Online Services](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/E/0/9E008CC0-6783-4472-B19D-F5B6970DD73A/UK_GCloud_Compliance_Backgrounder.pdf).

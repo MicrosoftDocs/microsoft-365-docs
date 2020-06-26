@@ -17,7 +17,10 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-description: "Extend Office 365 Advanced Threat Protection to files in SharePoint Online, OneDrive for Business, and Microsoft Teams to enable safer collaboration for your organization."
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: "Learn about Office 365 Advanced Threat Protection for files in SharePoint Online, OneDrive for Business, and Microsoft Teams."
 ---
 
 # ATP for SharePoint, OneDrive, and Microsoft Teams
@@ -26,7 +29,7 @@ description: "Extend Office 365 Advanced Threat Protection to files in SharePoin
 
 People regularly share files and collaborate using SharePoint, OneDrive, and Microsoft Teams. With [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), your organization can collaborate in a safer manner. ATP helps detect and block files that are identified as malicious in team sites and document libraries.
 
-## How it works
+## How Office 365 ATP operates
 
 When a file in SharePoint Online, OneDrive for Business, and Microsoft Teams has been identified as malicious, ATP directly integrates with the file stores to lock that file. The following image shows an example of a malicious file detected in a library.
 

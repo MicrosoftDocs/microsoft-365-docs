@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -64,14 +64,13 @@ See these articles for the details:
 
   Contoso uses the full spectrum of Microsoft 365 Enterprise security features for identity and access management, threat protection, information protection, and security management.
 
-- [Team for a top-secret project](contoso-team-for-top-secret-project.md)
+- [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 
-  To create a secure collaboration environment for a top secret project, Contoso used a team for highly regulated data.
+  To create a secure collaboration environment for a top secret project, Contoso used a team with security isolation.
 
-- [SharePoint Online site for highly confidential digital assets](contoso-sharepoint-online-site-for-highly-confidential-assets.md)
+- [Teams voice migration overview](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
-  To protect the intellectual property and allow its research teams to more easily collaborate, Contoso used a SharePoint Online site for highly regulated data.
-
+  Learn how Contoso migrated their on-premises users to Teams for unified communication, collaboration, and voice.
 
 ## Next step
 

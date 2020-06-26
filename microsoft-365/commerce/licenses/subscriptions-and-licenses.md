@@ -21,7 +21,9 @@ search.appverid:
 - GEA150
 ms.assetid: 7ac93507-0e38-4398-8bfe-9c1d123cb387
 description: "Learn about subscriptions and licenses in Microsoft 365 for business, and know who can assign licenses and what happens when you assign a license to someone. "
-ms.custom: okr_SMB
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business
@@ -29,6 +31,8 @@ ms.custom: okr_SMB
 This article explains the relationship between subscriptions and licenses, and provides additional information about [who can assign licenses](#find-out-who-can-assign-licenses), [understanding what happens when you assign a license to someone](#understand-what-happens-when-you-assign-a-license-to-someone), and [how many devices can people install Office on](#how-many-devices-can-people-install-office-on). It also includes links to [understanding licenses for non-user mailboxes](#understand-licenses-for-non-user-mailboxes), and [Articles about managing licenses](#articles-about-managing-licenses).
   
 When you buy a subscription to Microsoft 365 for business, you sign up for a set of applications and services that you pay for on a either a monthly or an annual basis. The applications and services that you receive as part of your subscription depend on which product you purchased, such as Microsoft 365 Apps for business or Microsoft 365 Business Standard. You can review what comes with each product on the [Buy Microsoft 365 page](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1). 
+
+You can review different Licensing options available in [Microsoft 365 for small and medium-sized businesses](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb)
 
 When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After your purchase is complete, you create accounts for people, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization. 
 
@@ -53,7 +57,7 @@ The following table lists what automatically happens when you assign a license t
   
 |**If the subscription has this service**|**This automatically happens**|
 |:-----|:-----|
-|Exchange Online  <br/> |A mailbox is created for that person.  <br/> |
+|Exchange Online  <br/> |A mailbox is created for that person.  <br/> To learn about the SLA for this task to be completed, see ["Setting up..." messages in the Microsoft 365 admin center](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |Edit permissions to the default SharePoint Online team site are assigned to that person.  <br/> |
 |Skype for Business Online  <br/> |The person will have access to the features associated with the license.  <br/> |
 |Microsoft 365 Apps for enterprise  <br/> |The person will be able to download Microsoft Office on up to 5 Macs or PCs, 5 tablets, and 5 smartphones.  <br/> |

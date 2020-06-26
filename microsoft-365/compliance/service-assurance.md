@@ -13,6 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: "Download third-party audits, find out how Microsoft keeps customer data safe, and know how you can comply with ISO, HIPAA, FINRA, and FedRAMP when you use Office 365."
 ---
@@ -128,7 +129,7 @@ Return to the **Permissions** page at any time to add more users, or remove exis
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

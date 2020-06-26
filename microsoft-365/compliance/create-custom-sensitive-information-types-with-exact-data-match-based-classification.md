@@ -15,12 +15,11 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Create custom sensitive information types with Exact Data Match based classification."
+description: Learn how to create custom sensitive information types with Exact Data Match based classification.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Create custom sensitive information types with Exact Data Match based classification
-
-## Overview
 
 [Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the [Security & Compliance Center](create-a-custom-sensitive-information-type.md) or [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
 
@@ -41,12 +40,12 @@ EDM-based classification enables you to create custom sensitive information type
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-When generally available, EDM-based classification will be included in these subscriptions
+EDM-based classification is included in these subscriptions
 
 - Office 365 E5
 - Microsoft 365 E5
-- Microsoft 365 Information Protection and Compliance
-- Office 365 Advanced Compliance
+- Microsoft 365 E5 Compliance
+- Microsoft E5/A5 Information Protection and Governance
 
 ## The work flow at a glance
 
@@ -67,7 +66,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
       - Up to 32 columns (fields) per data source
       - Up to 5 columns (fields) marked as searchable
 
-2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname", and so on. As an example, our .csv file is called *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN* and more.
+2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname", and so on. Please note that column headers can't include spaces or underscores in their names. As an example, our .csv file is called *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
 
 3. Define the schema for the database of sensitive information in .xml format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
 
@@ -441,11 +440,16 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
 
-DLP for Exchange Online (email), OneDrive for Business (files), Microsoft Teams (conversations) and Microsoft Cloud App Security DLP policies will support EDM sensitive information types.
+These locations are support EDM sensitive information types:
+
+- DLP for Exchange Online (email)
+- OneDrive for Business (files)
+- Microsoft Teams (conversations)
+- DLP for SharePoint (files)
+- Microsoft Cloud App Security DLP policies
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 
-- DLP for SharePoint (files)
 - Auto-classification of sensitivity labels and retention labels
 
 #### To create a DLP policy with EDM
@@ -488,7 +492,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 ## Related articles
 
-[Built-in sensitive information types and what they look for](what-the-sensitive-information-types-look-for.md)
+[Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
 
 [Custom sensitive information types](custom-sensitive-info-types.md)
 
@@ -496,7 +500,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
 
 ## Feedback
 

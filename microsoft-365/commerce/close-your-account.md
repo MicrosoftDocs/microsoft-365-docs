@@ -11,13 +11,23 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom:
+ms.custom: 
+- AdminSurgePortfolio
+- fwlink 2133922 to Delete subscription heading
 search.appverid:
 - MET150
 description: "Learn how to close your account with Microsoft."
 ---
 
 # Close your account
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 When you close your account with Microsoft, all information related to your account is deleted. This information includes subscriptions, licenses, payment methods, users, and user data. Before you start this process, make sure to backup any data that you want to preserve.
 
@@ -35,7 +45,7 @@ If your organization uses Active Directory that synchronizes with Azure AD, dele
 
 ## Step 2: Cancel all active subscriptions
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. If the subscriptions list is in **Table** view, on the right, select **Cards**.
 
@@ -47,7 +57,7 @@ If your organization uses Active Directory that synchronizes with Azure AD, dele
 
 ## Step 3: Delete all disabled subscriptions
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. If the subscriptions list is in **Table** view, on the right, select **Cards**.
 
@@ -65,9 +75,9 @@ If your organization uses Active Directory that synchronizes with Azure AD, dele
 
 2. Choose **Multi-factor authentication**.
 
-3. On the multi-factor authentication page, disable all accounts except for the global admin account that you’re currently using.
+3. On the multi-factor authentication page, disable all accounts except for the global admin account that you're currently using.
 
-You can also <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#use-powershell">use PowerShell to disable multi-factor authentication for multiple users</a>.
+You can also <a href="https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">use PowerShell to disable multi-factor authentication for multiple users</a>.
 
 ## Step 5: Delete the directory in Azure Active Directory
 

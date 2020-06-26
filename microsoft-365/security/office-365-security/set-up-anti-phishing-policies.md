@@ -13,23 +13,23 @@ localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
-description: "Learn about the basic anti-phishing policy in Exchange Online Protection (EOP) and the advanced ATP anti-phishing policies in Office 365 Advanced Threat Protection."
+ms.custom:
+- seo-marvel-apr2020
+description: "Admins can learn about the anti-phishing policies that are available in Exchange Online Protection (EOP) and Office 365 Advanced Threat Protection (Office 365 ATP)."
 ---
 
 # Anti-phishing policies in Microsoft 365
 
-Policies to configure anti-phishing protection settings are available in Office 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (ATP) organizations.
+Policies to configure anti-phishing protection settings are available in Microsoft 365 organizations with Exchange Online mailboxes, standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, and Office 365 Advanced Threat Protection (Office 365 ATP) organizations.
 
 ATP anti-phishing policies are only available in organizations that have Office 365 ATP. For example:
 
-- Office 365 Enterprise E5, Office 365 Education A5, etc.
+- Microsoft 365 Enterprise E5, Microsoft 365 Education A5, etc.
 - [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home)
 - [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business)
 - [Office 365 ATP as an add-on](https://products.office.com/exchange/advance-threat-protection)
 
-ATP anti-phishing policies include a built-in default anti-phishing policy, and you can create additional custom ATP anti-phishing policies.
-
-Other Microsoft 365 organizations with Exchange Online mailboxes or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes have a built-in default anti-phishing policy, but you can't create additional policies. Only organizations with Exchange Online mailboxes can modify their default anti-phishing policy.
+All other organizations have anti-phishing policies.
 
 The high-level differences between anti-phishing policies and ATP anti-phishing policies are described in the following table:
 
@@ -37,8 +37,8 @@ The high-level differences between anti-phishing policies and ATP anti-phishing 
 |---|:---:|:---:|
 |**Feature**|**Anti-phishing policies**|**ATP anti-phishing policies**|
 |Automatically created default policy|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Create custom policies||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
-|Policy settings<sup>\*</sup>||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Create custom policies|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Policy settings<sup>\*</sup>|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Impersonation settings||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Spoof settings|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Advanced phishing thresholds||![Check mark](../../media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -52,7 +52,7 @@ To configure anti-phishing policies, see the following topics:
 
 - [Configure ATP anti-phishing policies in Microsoft 365](configure-atp-anti-phishing-policies.md)
 
-The rest of this topic describes the settings that are available in EOP and ATP anti-phishing policies.
+The rest of this topic describes the settings that are available in anti-phishing policies and ATP anti-phishing policies.
 
 ## Spoof settings
 
@@ -63,7 +63,7 @@ The following spoof settings are available in anti-phishing policies and ATP ant
 - **Anti-spoofing protection**: Enables or disables anti-spoofing protection. We recommend that you leave it enabled. You use the **spoof intelligence policy** to allow or block specific spoofed internal and external senders. For more information, see [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
   > [!NOTE]
-  > Spoof settings are enabled by default in the default anti-phishing policy in EOP, the default ATP anti-phishing policy, and in new custom ATP anti-phishing policies that you create. <br/><br/> You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+  > Spoof settings are enabled by default in the default anti-phishing policy in EOP, the default ATP anti-phishing policy, and in new custom anti-phishing policies or ATP anti-phishing policies that you create. <br/><br/> You don't need to disable anti-spoofing protection if your MX record doesn't point to Microsoft 365; you enable Enhanced Filtering for Connectors instead. For instructions, see [Enhanced Filtering for Connectors in Exchange Online](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
   For messages from blocked spoofed senders, you can also specify the action to take on the messages:
 
@@ -90,7 +90,7 @@ The following spoof settings are available in anti-phishing policies and ATP ant
     - For the question mark in the sender's photo, SPF or DKIM are the most important.
     - For the via tag, confirm the domain in the DKIM signature or the **MAIL FROM** address matches (or is a subdomain of) the domain in the From address.
 
-  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.office.com/article/3d44102b-6ce3-4f7c-a359-b623bec82206)
+  For more information, see [Identify suspicious messages in Outlook.com and Outlook on the web](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)
 
 ## Exclusive settings in ATP anti-phishing policies
 
@@ -123,7 +123,7 @@ The following policy settings are only available in ATP anti-phishing policies:
 
 ### Impersonation settings in ATP anti-phishing policies
 
-Impersonation is where the sender or the sender's email domain in a message looks very similar to a real sender or domain:
+Impersonation is where the sender or the sender's email domain in a message looks similar to a real sender or domain:
 
 - An example impersonation of the domain contoso.com is ćóntoso.com.
 
@@ -135,11 +135,11 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
 - **Users to protect**: Prevents the specified internal or external users from being impersonated. For example, executives (internal) and board members (external). You can add up to 60 internal and external addresses. This list of protected users is different from the list of recipients that the policy applies to in the **Applied to** setting.
 
-  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where the where Felipe Apodaca is impersonated will be acted on by the policy (the action you configure for impersonated users).
+  For example, you specify Felipe Apodaca (felipea@contoso.com) as a protected user in a policy that applies to the group named Executives. Inbound messages sent to members of the Executives group where Felipe Apodaca is impersonated will be acted on by the policy (the action you configure for impersonated users).
 
 - **Domains to protect**: Prevent the specified domains from being impersonated. For example, all domains that you own ([accepted domains](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)) or specific domains (domains you own or partner domains). This list of protected domains is different from the list of domains that the policy applies to in the **Applied to** setting.
 
-  For example, you specify tailspintoys.com as a protected domain in a policy that applies to members of the group named Executives. Inbound messages sent to members of the Executives group where the where tailspintoys.com is impersonated will be acted on by the policy (the action you configure for impersonated domains).
+  For example, you specify tailspintoys.com as a protected domain in a policy that applies to members of the group named Executives. Inbound messages sent to members of the Executives group where tailspintoys.com is impersonated will be acted on by the policy (the action you configure for impersonated domains).
 
 - **Actions for protected users or domains**: Choose the action to take on inbound messages that contain impersonation attempts against the protected users and protected domains in the policy. You can specify different actions for impersonation of protected users vs. impersonation of protected domains:
 
@@ -180,7 +180,7 @@ The following impersonation settings are only available in ATP anti-phishing pol
 
 ### Advanced phishing thresholds in ATP anti-phishing policies
 
-The following advanced phishing thresholds are only available in ATP anti-phishing policies to specify how to treat detected phishing messages:
+The following advanced phishing thresholds are only available in ATP anti-phishing policies to control the sensitivity for applying machine learning models to messages for determining a phishing verdict:
 
 - **1 - Standard**: This is the default value. The severity of the action that's taken on the message depends on the degree of confidence that the message is phishing (low, medium, high, or very high confidence). For example, messages that are identified as phishing with a very high degree of confidence have the most severe actions applied, while messages that are identified as phishing with a low degree of confidence have less severe actions applied.
 

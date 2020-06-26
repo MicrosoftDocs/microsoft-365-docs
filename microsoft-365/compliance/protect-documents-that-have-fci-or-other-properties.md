@@ -16,7 +16,9 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance
-description: "Many organizations already have a process to identify and classify sensitive information by using the classification properties in Windows Server File Classification Infrastructure (FCI), the document properties in SharePoint, or the document properties applied by a third-party system. If this describes your organization, you can create a DLP policy that recognizes the properties that have been applied to documents by Windows Server FCI or other system, so that the DLP policy can be enforced on Office documents with specific FCI or other property values."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use a data loss prevention (DLP) policy to protect documents that have properties from a third-party system.
 ---
 
 # Create a DLP policy to protect documents with FCI or other properties
@@ -144,4 +146,4 @@ For more information, see [Manually request crawling and re-indexing of a site, 
     
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
     
-- [Sensitive information types inventory](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

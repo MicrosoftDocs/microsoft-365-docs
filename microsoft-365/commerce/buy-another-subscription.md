@@ -21,10 +21,20 @@ search.appverid:
 - BEA160
 ms.assetid: fab3b86c-3359-4042-8692-5d4dc7550b7c
 description: "Learn how to buy another Microsoft 365 for business subscription for your organization when you already have a subscription. "
-ms.custom: okr_SMB
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 ---
 
 # Buy another Microsoft 365 for business subscription
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 If you already have a Microsoft 365 for business subscription and you want to buy another subscription for your organization, the best way is to do it is through the admin center. If you haven't yet purchased the first Microsoft 365 for business subscription for your organization, go [here](https://products.office.com/business/compare-office-365-for-business-plans) to choose a plan.
   

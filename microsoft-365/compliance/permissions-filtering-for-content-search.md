@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: "Use Content Search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your organization."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure permissions filtering for Content Search
@@ -37,7 +38,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
-## Before you begin
+## Requirements to configure permissions filtering
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     
@@ -150,7 +151,7 @@ This example allows members of the "US Discovery Managers" role group to perform
 New-ComplianceSecurityFilter -FilterName USDiscoveryManagers  -Users "US Discovery Managers" -Filters "Mailbox_CountryCode  -eq '840'" -Action All
 ```
 
-This example allows members of the eDiscovery Manager role group to search only the mailboxes of members of the Ottawa Users distribution group. 
+This example allows members of the eDiscovery Manager role group to search only the mailboxes of members of the Ottawa Users distribution group. The Get-DistributionGroup cmdlet in Exchange Online PowerShell is used to find the members of the Ottawa Users group.
   
 ```powershell
 $DG = Get-DistributionGroup "Ottawa Users"
@@ -160,7 +161,7 @@ $DG = Get-DistributionGroup "Ottawa Users"
 New-ComplianceSecurityFilter -FilterName DGFilter  -Users eDiscoveryManager -Filters "Mailbox_MemberOfGroup -eq '$($DG.DistinguishedName)'" -Action Search
 ```
 
-This example prevents any user from deleting content from the mailboxes of members of the Executive Team distribution group.
+This example prevents any user from deleting content from the mailboxes of members of the Executive Team distribution group. The Get-DistributionGroup cmdlet in Exchange Online PowerShell is used to find the members of the Executive Team group.
 
 ```powershell
 $DG = Get-DistributionGroup "Executive Team"

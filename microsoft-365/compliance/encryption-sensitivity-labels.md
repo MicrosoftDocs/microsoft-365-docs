@@ -1,5 +1,5 @@
 ---
-title: "Restrict access to content by using sensitivity labels to apply encryption"
+title: Restrict access to content using sensitivity labels to apply encryption
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,7 +14,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "When you create a sensitivity label, you can restrict access to content that the label will be applied to. Sensitivity labels can use encryption to protect content."
+description: Configure sensitivity labels for encryption that protects your data by restricting access and usage.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Restrict access to content by using sensitivity labels to apply encryption 
@@ -32,7 +33,7 @@ When a document or email is encrypted, access to the content is restricted, so t
 
 - Can be decrypted only by users authorized by the label's encryption settings.
 - Remains encrypted no matter where it resides, inside or outside your organization, even if the file's renamed.
-- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, a sent email).
+- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, email as it traverses the internet).
 
 Finally, as an admin, when you configure a sensitivity label to apply encryption, you can choose either to:
 
@@ -152,17 +153,15 @@ When you assign permissions, you can choose:
 - Everyone in your organization (all tenant members). This setting excludes guest accounts.
 
 - Any authenticated users. Make sure you understand the [requirements and limitations](#requirements-and-limitations-for-add-any-authenticated-users) of this setting before selecting it.
-- Any specific user or email-enabled security group, distribution group, Microsoft 365 group, or dynamic distribution group. 
-- Any email address or domain. Use this option to specify all users in another organization who uses Azure AD, by entering any domain name from that organization. You can also use this option for social providers, by entering their domain name such as **gmail.com**, **hotmail.com**, or **outlook.com**.
 
-- Any any specific user or email-enabled security group, distribution group, or Microsoft 365 group (which can have [dynamic membership](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD. Note that you can't use a [dynamic distribution group from Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) because this group type isn't synchronized to Azure AD, and you can't use a security group that isn't email-enabled.
+- Any specific user or email-enabled security group, distribution group, or Microsoft 365 group ([formerly Office 365 group](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. The Microsoft 365 group can have static or [dynamic membership](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Note that you can't use a [dynamic distribution group from Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups?view=exchserver-2019) because this group type isn't synchronized to Azure AD, and you can't use a security group that isn't email-enabled.
 
 - Any email address or domain. Use this option to specify all users in another organization who uses Azure AD, by entering any domain name from that organization. You can also use this option for social providers, by entering their domain name such as **gmail.com**, **hotmail.com**, or **outlook.com**.
     
     > [!NOTE]
     > If you specify a domain from an organization that uses Azure AD, you can't restrict access to that specific domain. Instead, all verified domains in Azure AD are automatically included for the tenant that owns the domain name you specify.
 
-When you choose all tenant members or browse the directory, the users or groups must have an email address.
+When you choose all users and groups in your organization or browse the directory, the users or groups must have an email address.
 
 As a best practice, use groups rather than users. This strategy keeps your configuration simpler.
 
@@ -293,13 +292,13 @@ This label is not suitable for emails.
 
 4. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the name of a domain from the other organization, for example, **fabrikam.com**. Then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select **Viewer**, and then select **Save**.
 
 6. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -314,13 +313,13 @@ The new users that you add will be able open documents and emails that have alre
 
 2. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the email address of the first user (or group) to add, and then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the permissions for this user (or group), and then select **Save**.
+6. On the **Choose permissions** pane, select the permissions for this user (or group), and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, repeat steps 3 through 6 for each user (or group) that you want to add to this label. Then click **Save**.
 
@@ -341,11 +340,11 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 4. On the **Assign permissions** pane, select **Add any authenticated users**. 
     
-    For **Users and groups**, you see **AuthenticatedUsers** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
+    For **Users and groups**, you see **Authenticated users** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**permissions you want, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select the permissions you want, and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -355,7 +354,7 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 Encrypting your most sensitive documents and emails helps to ensure that only authorized people can access this data. However, there are some considerations to take into account:
 
-- If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md):
+- If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     
     - Search, eDiscovery, and Delve will not work for encrypted files. 
     - DLP policies work for the metadata of these encrypted files (including retention label information) but not the content of these files (such as credit card numbers within files).
@@ -373,7 +372,7 @@ Encrypting your most sensitive documents and emails helps to ensure that only au
 - The following actions for encrypted files aren't supported from Office apps (Windows, Mac, Android, and iOS), and users see an error message that something went wrong. However, SharePoint functionality can be used as an alternative:
     
     - View, restore, and save copies of previous versions. As an alternative, users can do these actions using Office on the web when you [enable and configure versioning for a list or library](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37). 
-    - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.office.com/article/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
+    - Change the name or location of files. As an alternative, users can [rename a file, folder, or link in a document library](https://support.microsoft.com/en-us/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
 
 For the best collaboration experience for files that are encrypted by a sensitivity label, we recommend you use [sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) and Office for the web. 
 

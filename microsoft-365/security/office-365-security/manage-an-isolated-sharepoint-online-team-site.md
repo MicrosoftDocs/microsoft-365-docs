@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
-description: "Summary: Manage your isolated SharePoint Online team site with these procedures."
+description: Manage an isolated SharePoint Online team site, add new users and groups, remove users and groups, and create a documents subfolder with custom permissions.
 ---
 
 # Manage an isolated SharePoint Online team site
@@ -143,7 +145,7 @@ In some cases, a subset of the people working within the isolated site need a mo
   
 To create a documents subfolder with custom permissions, do the following:
   
-1. Sign in to an account that is a member of the admins access group for the site. For help, see [Where to sign in to Microsoft 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to an account that is a member of the admins access group for the site. For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. Go to the isolated team site and click **Documents**.
     

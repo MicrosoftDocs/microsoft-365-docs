@@ -1,5 +1,5 @@
 ---
-title: "Add custodians to an Advanced eDiscovery case"
+title: Add custodians to an Advanced eDiscovery case
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use the built-in custodian management tool in Advanced eDiscovery to coordinate your workflows and identify relevant data sources in a case.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Add custodians to an Advanced eDiscovery case
@@ -27,7 +28,7 @@ Use the following workflow to add and manage custodians in Advanced eDiscovery c
 
 ![Custodian Management Tab](../media/CustodianMgtPage.png)
 
-## Before you begin
+## Make sure you have the necessary permissions
 
 To add custodians to a case, you must be a member of the eDiscovery Manager role group. This will provide you with the necessary permissions to add custodians to a case and place a hold on the custodial data sources.
 

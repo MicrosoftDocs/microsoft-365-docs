@@ -8,6 +8,7 @@ ms.author: sirkkuw
 ms.topic: article
 ms.prod: microsoft-365-business
 ms.collection: M365-subscription-management
+ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 audience: microsoft-business 
 keywords: Microsoft 365 Business Premium, Microsoft 365, SMB, FAQ, frequently asked questions, answers, business
@@ -44,7 +45,7 @@ Microsoft 365 is an integrated solution that brings together best-in-class produ
 * Streamlined deployment of PCs with Windows AutoPilot.
 
 **Other entitlements** 
-- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for busines service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+- Microsoft 365 Business Premium customers also have access to Windows Virtual Desktop and Office Shared Computer Activation capabilities. Read the [Microsoft 365 Business Premium blog](https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog) to learn more. See also the [Microsoft 365 for business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
 
 ### Who should consider adopting Microsoft 365 Business Premium? 
 Microsoft 365 Business Premium is a comprehensive, cloud-based security solution that lets you:  
@@ -81,7 +82,7 @@ Existing desktop (Win32) application compatibility is strong in Windows 10, with
 ### What is Windows 10 Business? 
 Windows 10 Business is a set of cloud services and device management capabilities that complement Windows 10 Pro and enable the centralized management and security controls of Microsoft 365 Business Premium.
 
-Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threads. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
+Windows 10 Business also comes with certain premium Microsoft Defender features like Controlled Folder Access and Network Protection for web-based threats. It also includes Windows AutoPilot, a service that streamlines the deployment of new Windows 10 PCs.
 
 If you have devices that are licensed for Windows 7, 8, and 8.1 Professional, Microsoft 365 Business Premium provides an upgrade to Windows 10 Pro, which is the prerequisite for deploying Windows 10 Business.
 > [!IMPORTANT]
@@ -126,7 +127,7 @@ Customers that wish to experience the complete capabilities of Microsoft 365 Bus
 ## Deployment
 
 ### What should customers consider when planning a Microsoft 365 Business Premium deployment? 
-The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the <a href="https://support.office.com/article/496e690b-b75d-4ff5-bf34-cc32905d0364" target="_blank">Microsoft 365 Business Premium Getting Started</a> to assist them in their Microsoft 365 Business Premium deployment. 
+The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the <a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Microsoft 365 Business Premium Getting Started</a> to assist them in their Microsoft 365 Business Premium deployment. 
 
 ### Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune? 
 Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, MacOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management and configuration of WiFi profiles, VPN certificates, can be managed in the full Intune console. 
