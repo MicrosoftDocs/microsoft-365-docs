@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/12/2020
+ms.date: 06/26/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -20,9 +20,41 @@ description: How example organizations deploy and update using channels.
 
 # Deployment and update channel example configurations
 
-Choosing which update channels to use for Office, Windows, or Edge can depend on your type of organization and where on the development cycle you want to be deploying and using new features and capabilities.
+Choosing which update channels to use for Office, Windows, and Edge can depend on your type of organization and where on the development cycle you want to be deploying and using new features and capabilities.
+
+Follow the **I am** and **who wants** columns to determine the set of channels that best matches your needs, and then click the link in the **How to** column for more details.
+
+| I am... | who wants... | Windows | Microsoft 365 Apps for Windows | Edge | Teams | How to |
+|:-------|:-----|:-------|:-----|:-------|:-------|:-------|
+| A highly technical user or developer | To be the first to access the latest builds earliest in the development cycle with the newest code. | Dev | N/A | Canary? | N/A |  |
+| An early adopter or IT Pro  | More reliable builds that are still in development. <br><br>  To see what’s coming up next and help validate new features. | Beta | Beta | Dev? | Beta |  |
+| An early adopter or IT Pro | Early access to upcoming releases. | Preview | Preview | Beta? | Preview (private/public) |  |
+| An enterprise IT Pro | To broadly deploy the latest releases as soon as they are available. | Semi-annual | Current | Stable? | ? | [Bleeding edge](deploy-update-channels-examples-rapid-deploy.md) |
+| An enterprise IT Pro | To broadly deploy the latest release on a predictable schedule. | Semi-annual | Monthly Enterprise | N/A | N/A | Regular schedule |
+| An enterprise IT Pro | To broadly deploy after extensive internal testing. | Semi-annual | Semi-Annual Enterprise | N/A | N/A | Safe and sound |
+||||||||
+
+## See also
+
+[Deployment guide](deploy-microsoft-365-enterprise.md)
+
+[Test lab guides](m365-enterprise-test-lab-guides.md)
 
 <!--
+
+Follow the **I am** and **who wants** columns to determine the set of channels that best matches your needs, and then click the link in the **How to** column for more details.
+
+| I am... | who wants... | Windows channel | Office channel | Teams channel | Edge channel | How to |
+|:-------|:-----|:-------|:-------|:-----|:-------|:-------|
+| A Microsoft Edge app developer | to see what I was working on yesterday. | N/A | N/A | N/A | Canary | [Edge Carnary channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)  |
+| A highly technical user or Edge app developer | early access to the latest build. | Dev | N/A  | N/A | Dev |   |
+| An end user, an early adopter, a fan, or an IT professional  | early access to a build for functionality testing. | Beta | Beta | N/A | Beta |   |
+| An enterprise IT department | to evaluate the latest preview before broad deployment. | Preview (Release)  | Preview (Current or Semi-Annual Enterprise)  | Ring 4 | N/A  |
+| A consumer, small to medium business, or an enterprise organization | a broad and rapid deployment. |  Semi-Annual | Current | N/A | Stable | [Rapid deployment example](deploy-update-channels-examples-rapid-deploy.md) |
+| An enterprise organization | a broad deployment with additional predictability. | Semi-Annual | Monthly Enterprise | N/A | N/A |   |
+| An enterprise organization | a broad deployment with extensive IT testing before each update. | Semi-Annual | Semi-Annual Enterprise | N/A | N/A |   |
+||||||||
+
 
 Here are the latest channel names.
 
@@ -53,19 +85,6 @@ Follow the **I am** and **who wants** columns to determine the set of channels t
 
 --> 
 
-Follow the **I am** and **who wants** columns to determine the set of channels that best matches your needs, and then click the link in the **How to** column for more details.
-
-| I am... | who wants... | Windows channel | Office channel | Teams channel | Edge channel | How to |
-|:-------|:-----|:-------|:-------|:-----|:-------|:-------|
-| A Microsoft Edge app developer | to see what I was working on yesterday. | N/A | N/A | N/A | Canary | [Edge Carnary channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)  |
-| A highly technical user or Edge app developer | early access to the latest build. | Dev | N/A  | N/A | Dev |   |
-| An end user, an early adopter, a fan, or an IT professional  | early access to a build for functionality testing. | Beta | Beta | N/A | Beta |   |
-| An enterprise IT department | to evaluate the latest preview before broad deployment. | Preview (Release)  | Preview (Current or Semi-Annual Enterprise)  | Ring 4 | N/A  |
-| A consumer, small to medium business, or an enterprise organization | a broad and rapid deployment. |  Semi-Annual | Current | N/A | Stable | [Rapid deployment example](deploy-update-channels-examples-rapid-deploy.md) |
-| An enterprise organization | a broad deployment with additional predictability. | Semi-Annual | Monthly Enterprise | N/A | N/A |   |
-| An enterprise organization | a broad deployment with extensive IT testing before each update. | Semi-Annual | Semi-Annual Enterprise | N/A | N/A |   |
-||||||||
-
 <!--
 
 | Customer type | Description | Products and their channels |
@@ -76,11 +95,3 @@ Follow the **I am** and **who wants** columns to determine the set of channels t
 ||||
 
 --> 
-
-## See also
-
-[Deployment guide](deploy-microsoft-365-enterprise.md)
-
-[Test lab guides](m365-enterprise-test-lab-guides.md)
-
-
