@@ -120,7 +120,9 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![Malware Detections Report example](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
 
-Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range.
+Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. 
+
+in the aggregate view, once you click on the red triangle it will lands you on an insight flyout page called "Users Targeted by malware campaigns." on the flyout page, the count column represents how many times the recipient recieved malware per day. 
 
 ## Top Malware report
 
@@ -146,15 +148,15 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![To view this report, in the Security & Compliance Center, go to Reports \> Dashboard \> Top Senders and Recipients](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
 
-When you hover over a wedge in the pie chart, you can see a count of messages sent or received.
+When you hover over a wedge in the pie chart, you can see a count of messages sent or received.  
 
 Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
 
-Use the **Show data for** list to choose whether to view data for top senders, receivers, spam recipients, and malware recipients. You can also see who received malware that was detected by [Exchange Online Protection](exchange-online-protection-overview.md).
+Use the **Show data for** list to choose whether to view data for top senders, receivers, spam recipients, and malware recipients. You can also see who received malware that was detected by [Exchange Online Protection](exchange-online-protection-overview.md). for example if you choose top spam recipients, % in the pie chart shows top 5 spam recipients in the organization. % others is all spam recipient other than the top 5 put together. sum of all percentages in the pie chart = 100%  
 
 ![Use the Show Data For list to view specific information](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
-Below the chart, you'll see who the top email senders or recipients were, along with a count of messages sent or received for the given time period.
+if you choose top spam recipients, note that below the chart the counts are the total number of spam messages recieved by the user.  
 
 ## Spoof Detections report
 
