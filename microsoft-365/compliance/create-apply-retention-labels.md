@@ -94,7 +94,7 @@ Publish retention labels so that they can be applied by admins and users.
 To edit an existing retention label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 
-### When retention labels become available to apply
+## When retention labels become available to apply
 
 If you publish retention labels to SharePoint or OneDrive, those labels  typically appear for end users to select within one day. However, allow up to seven days. 
 
@@ -105,7 +105,7 @@ For example:
 ![Diagram of when manual labels take effect](../media/b19f3a10-f625-45bf-9a53-dd14df02ae7c.png)
   
 
-#### How to check on the status of retention labels published to Exchange
+### How to check on the status of retention labels published to Exchange
 
 In Exchange Online, retention labels are made available to end users by a process that runs every seven days. By using Powershell, you can see when this process last ran and therefore identify when it will run again.
   
@@ -129,15 +129,7 @@ In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the syst
 If labels aren't appearing in Outlook on the web and you think they should be, make sure to clear the cache in your browser (CTRL+F5).
     
 
-## Updating retention labels and their policies
-
-When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
-
-Some settings can't be changed after the label or policy is created and saved, which include:
-- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
-- The option to classify as a record.
-
-## Apply published retention labels
+## How to apply published retention labels
 
 Use the following sections to learn how published retention labels can be applied in apps:
 
@@ -254,6 +246,14 @@ To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advan
   
 ![Rules wizard with option to apply retention policies](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
   
+
+## Updating retention labels and their policies
+
+When you edit a retention label or retention label policy, and the retention label or policy is already applied to content, your updated settings will automatically be applied to this content in addition to content that's newly identified.
+
+Some settings can't be changed after the label or policy is created and saved, which include:
+- The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
+- The option to classify as a record.
 
 ## Next steps
 
