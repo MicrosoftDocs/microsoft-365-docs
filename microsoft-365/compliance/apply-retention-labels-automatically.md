@@ -42,10 +42,12 @@ The processes to automatically apply a retention label based on these conditions
 Use the following instructions for the two admin steps.
 
 > [!NOTE]
-> Auto-policies use conditions to automatically apply retention labels. You can also automatically apply a specific retention label with a label policy and the following scenarios: 
+> Auto-policies use service-side labeling with conditions to automatically apply retention labels. You can also automatically apply a retention label with a label policy when you do the following: 
 >
 > - Apply a default retention label to a SharePoint library, folder, or document set so that unlabeled content in that container is automatically labeled
 >- Automatically applying a retention label to email by using rules
+>
+> For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
 
 ## Before you begin
 
