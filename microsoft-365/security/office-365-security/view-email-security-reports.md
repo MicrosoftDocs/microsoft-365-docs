@@ -26,7 +26,7 @@ A variety of reports are available in the [Security & Compliance Center](https:/
 
 ![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-Your email security reports include the following:
+The email security reports include the following:
 
 - [URL Threat Protection report](#url-threat-protection-report-new) (**NEW!**)
 - [Compromised Users report](#compromised-users-report)
@@ -34,7 +34,6 @@ Your email security reports include the following:
 - [Threat Protection Status report](#threat-protection-status-report)
 - [Malware Detections report](#malware-detections-report)
 - [Top Malware report](#top-malware-report)
-- [Top Senders and Recipients report](#top-senders-and-recipients-report)
 - [Spoof Detections report](#spoof-detections-report)
 - [Spam Detections report](#spam-detections-report)
 - [Sent and received email report](#sent-and-received-email-report)
@@ -96,7 +95,7 @@ Use this report enables your organization's security and compliance team to moni
 The **Threat Protection Status** report is a smart report that shows malicious email that was detected and blocked by Exchange Online Protection. This report is useful for viewing email identified as malware or a phishing attempt over time (up to 90 days), and it enables security administrators to identify trends or determine whether policies need adjustments.
 
 > [!NOTE]
-> A Threat Protection Status report is available to customers who have either [Office 365 ATP](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) or [Exchange Online Protection](exchange-online-protection-overview.md) (EOP); however, the information that is displayed in the Threat Protection Status report for ATP customers will likely contain different data than what EOP customers might see. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams), an ATP-specific capability. ([Learn more about ATP reports](https://docs.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-atp).)
+> A Threat Protection Status report is available to customers who have [Office 365 Advanced Threat Protection](office-365-atp.md) or [Exchange Online Protection](exchange-online-protection-overview.md) (EOP); however, the information that is displayed in the Threat Protection Status report for ATP customers will likely contain different data than what EOP customers might see. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md). [Learn more about ATP reports](view-reports-for-atp.md).
 
 To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Threat Protection Status**.
 
@@ -104,7 +103,7 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 When you first open the Threat Protection Status report, the report shows data for the past seven days by default; however, you can click **Filters** and change the date range for up to 90 days of detail. (If you are using a trial subscription, you might be limited to 30 days' of data.)
 
-This report is useful for viewing the effectiveness and impact of your organization's [Exchange Online Protection features](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features), and for longer-term trending.
+This report is useful for viewing the effectiveness and impact of your organization's [Exchange Online Protection features](eop-features.md), and for longer-term trending.
 
 ![Threat Protection Status report filters](../../media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
 
@@ -124,7 +123,7 @@ Similar to other reports, like the [Threat Protection Status report](#threat-pro
 
 ## Top Malware report
 
-The **Top Malware** report shows the various kinds of malware that was detected by [Exchange Online](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features).
+The **Top Malware** report shows the various kinds of malware that was detected by [EOP](eop-features.md).
 
 To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Top Malware**.
 
@@ -137,24 +136,6 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 ![This report shows the top malware detected for your organization](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
 
 Below the chart, you'll see a list of detected malware and how many messages were detected as having that malware.
-
-## Top Senders and Recipients report
-
-The **Top Senders and Recipients** report is a pie chart showing your top email senders.
-
-To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Top Senders and Recipients**.
-
-![To view this report, in the Security & Compliance Center, go to Reports \> Dashboard \> Top Senders and Recipients](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
-
-When you hover over a wedge in the pie chart, you can see a count of messages sent or received.
-
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
-
-Use the **Show data for** list to choose whether to view data for top senders, receivers, spam recipients, and malware recipients. You can also see who received malware that was detected by [Exchange Online Protection](exchange-online-protection-overview.md).
-
-![Use the Show Data For list to view specific information](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
-
-Below the chart, you'll see who the top email senders or recipients were, along with a count of messages sent or received for the given time period.
 
 ## Spoof Detections report
 
@@ -227,33 +208,31 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ## What permissions are needed to view these reports?
 
-In order to view and use the reports described in this article, **you must have an appropriate role assigned for both the Security & Compliance Center and the Exchange admin center**.
+To view and use the reports, you need to be a member of the specified role group in the Security & Compliance Center **and** in Exchange Online.
 
-- For the Security & Compliance Center, you must have one of the following roles assigned:
+- In the Security & Compliance Center, you need to be a member of one of the following role groups:
 
   -Organization Management
-  -Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))
+  -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
   -Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
+  For more information, see [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center).
+
+- In Exchange Online, you need to be a member of one of the following role groups:
 
   -Organization Management
   -View-only Organization Management
-  -View-Only Recipients role
+  -View-Only Recipients
   -Compliance Management
 
-To learn more, see the following resources:
-
-- [Permissions in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)
- 
-- [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) and [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
 ## What if the reports aren't showing data?
 
-If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats).
+If you are not seeing data in your reports, double-check that your policies are set up correctly. To learn more, see [Protect against threats](protect-against-threats.md).
 
 ## Related topics
 
-[Microsoft 365 Email Anti-Spam Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
+[Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
 
-[Reports and insights in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
+[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
