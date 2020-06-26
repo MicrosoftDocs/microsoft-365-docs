@@ -47,13 +47,13 @@ The URL Threat Protection report is available to anyone with:
 - An Exchange Online Protection, *and* Advanced Threat Protection add-on (Plan 1 *or* Plan 2)
 - A Microsoft 365 E5 subscription
 
-This is a 'click-centric' report that has two aggregated views.
+This is a 'click-centric' report that has two aggregated views which shows data for the last 90 days.
 
 1. The first view is by *URL click-protection action*, which is focused on showing the number of URL clicks by users within the tenant, and the result of the click. A click here indicates that the user has clicked through the block page to the malicious website (this can be disabled by the administrator within a Safe Links policy).
 
 2. The second view is *URL click by applications*, which shows the number of URLs click in different applications that support Safe Links today, such as in an email client or in Microsoft Word. Data in both aggregated views are refreshed once every 4 hours.
 
-The details table of the URL Threat Protection report provides a near-real-time view of all clicks that happen within the tenant, and it includes investigative information such as *username*, *URL*, the *network message ID* (if the URL was clicked from an email), and other valuable pieces of information useful for investigations and analyses.
+The details table of the URL Threat Protection report provides a near-real-time view of all clicks that happen within the tenant for the last 7 days, and it includes investigative information such as *username*, *URL*, the *network message ID* (if the URL was clicked from an email), and other valuable pieces of information useful for investigations and analyses.
 
 By default, the report only shows data on clicks from URLs that were blocked by Safe Links, but it is also possible to see information for all URL clicks through selecting *Allowed URLs* checkbox in the filters.
 
@@ -63,7 +63,7 @@ This report will not have data of clicks from users where the Safe Links policy 
 
 ## Compromised Users report
 
-This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant.
+This report, available to anyone with Exchange Online Protection, shows the number of user accounts marked as Suspicious or Restricted users, data particularly useful as accounts enter either of the states that indicate the user account may be problematic, or even compromised. With frequent use, the Compromised User report can spot spikes, and even trends, in accounts marked in suspicious or restricted states, giving evidence there could be an issue with security and the wellness of your tenant. The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days. 
 
 ![The compromised users report as it appears in Microsoft 365.](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
@@ -75,7 +75,7 @@ To view this report, in the Security & Compliance Center, go to **Reports** \> *
 
 ![Encryption report](../../media/encryptionreport-defaultview.png)
 
-When the report first opens, you'll see data about encryption methods used on email messages for the past seven (7) days. You can change the date range and the details that are displayed in the report by clicking **Filters** in the upper right corner of the screen.
+When the report first opens, you'll see data about encryption methods used on email messages for the past seven (7) days. You can change the date range and the details that are displayed in the report by clicking **Filters** in the upper right corner of the screen. The aggregate view allows for filtering for the last 90 days while the detail view allows for 10 days. 
 
 ![Encryption report filters](../../media/encryptionreport-filters.png)
 
@@ -102,7 +102,7 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![Threat Protection Status report](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
 
-When you first open the Threat Protection Status report, the report shows data for the past seven days by default; however, you can click **Filters** and change the date range for up to 90 days of detail. (If you are using a trial subscription, you might be limited to 30 days' of data.)
+When you first open the Threat Protection Status report, the report shows data for the past seven days by default; however, you can click **Filters** and change the date range for up to 90 days of detail. (If you are using a trial subscription, you might be limited to 30 days' of data.) note that the detail view filtering only allows for 30 days
 
 This report is useful for viewing the effectiveness and impact of your organization's [Exchange Online Protection features](https://docs.microsoft.com/microsoft-365/security/office-365-security/eop-features), and for longer-term trending.
 
@@ -120,7 +120,7 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![Malware Detections Report example](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
 
-Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range.
+Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. For the aggregate view filter, it only allows for 90 days while the detail view filter only allows for 10 days
 
 ## Top Malware report
 
@@ -136,7 +136,7 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 
 ![This report shows the top malware detected for your organization](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
 
-Below the chart, you'll see a list of detected malware and how many messages were detected as having that malware.
+Below the chart, you'll see a list of detected malware and how many messages were detected as having that malware. The aggregate view filter only allows for 90 days. 
 
 ## Top Senders and Recipients report
 
@@ -154,7 +154,7 @@ Use the **Show data for** list to choose whether to view data for top senders, r
 
 ![Use the Show Data For list to view specific information](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
-Below the chart, you'll see who the top email senders or recipients were, along with a count of messages sent or received for the given time period.
+Below the chart, you'll see who the top email senders or recipients were, along with a count of messages sent or received for the given time period. note that the aggregate view only allows for 90 days filtering. 
 
 ## Spoof Detections report
 
@@ -166,7 +166,7 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 When you hover over a day in the chart, you can see how many spoof mail messages came through.
 
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
+Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md). the aggregate view of the report only allows for 90 days filtering, while the detial view only allows for 10 days filtering. 
 
 ## Spam Detections report
 
@@ -182,7 +182,7 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 
 ![The Spam Detections report tells you how many spam messages were blocked or filtered out](../../media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
 
-Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Office 365 email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Office 365 email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection). the aggregate view of the report only allows for 90 days filtering, while the detial view only allows for 10 days filtering. 
 
 ## Sent and received email report
 
@@ -204,7 +204,7 @@ Below the chart, you'll see a list of email categories, such as **GoodMail**, **
 
 ![This report tells you about anti-malware, anti-spam, and other message detections](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-To learn more about email intelligence, see [Mail flow intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
+To learn more about email intelligence, see [Mail flow intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365). the aggregate view of the report only allows for 90 days filtering as well as the detail view. 
 
 ## User-reported messages report
 
