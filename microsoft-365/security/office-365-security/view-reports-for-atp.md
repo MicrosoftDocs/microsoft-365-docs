@@ -75,7 +75,7 @@ To get detailed status for a day, hover over the graph.
 
 ![ATP Threat Protection Status data for a day](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-By default, the Threat Protection Status report shows data for the past seven days. However, you can choose **Filters** and change the date range to view data for up to 90 days. (If you are using a trial subscription, you might be limited to 30 days' of data.)
+By default, the Threat Protection Status report shows data for the past seven days. However, you can choose **Filters** and change the date range to view data for up to 90 days for the aggregate view and 30 days for the detail view. (If you are using a trial subscription, you might be limited to 30 days' of data.)
 
 ![ATP Threat Protection Status filters](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -106,7 +106,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
 
 ![ATP File Types report](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection](anti-spam-and-anti-malware-protection.md).
+When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection](anti-spam-and-anti-malware-protection.md). the aggregate view of the report only allows for 90 days filtering, while the detial view only allows for 10 days filtering. 
   
 ![ATP File Types report data for a day](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
@@ -120,7 +120,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
 
 When you hover over a bar in the chart, you can see what actions were taken for detected email for that day.
 
-![ATP Message Disposition Report data for a day](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+![ATP Message Disposition Report data for a day](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png) the aggregate view of the report only allows for 90 days filtering, while the detial view only allows for 10 days filtering. 
 
 ## Additional reports to view
 
