@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -36,7 +37,7 @@ If you need shared contacts that everyone in your organization can get to, creat
   
 ## How are these contacts different from My Contacts?
 
-My Contacts are contacts that you create for yourself and your users create for themselves but others can't see. The contacts you create in the admin center are contacts for the organization and everyone can see them in addition to their own. To learn more, see [People overview - Outlook Web App](https://support.microsoft.com/en-us/office/people-overview-outlook-web-app-5fe173cf-e620-4f62-9bf6-da5041f651bf).
+My Contacts are contacts that you create for yourself and your users create for themselves but others can't see. The contacts you create in the admin center are contacts for the organization and everyone can see them in addition to their own. To learn more, see [People overview - Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
   
 ## How does everyone get to the contacts I created in the admin center?
 

@@ -10,19 +10,21 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can use message trace in the Security & Compliance Center to find out what happened to messages."
 ---
 
 # Message trace in the Security & Compliance Center
 
-## Overview
+## Message trace features
 
 Message trace in the Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
 Message trace in the Security & Compliance Center improves upon the original message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
-> • To do a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
+> • To do a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
 
 ## Open message trace
 

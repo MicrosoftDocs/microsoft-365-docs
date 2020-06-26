@@ -37,6 +37,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [Dell Latitude 7300](https://www.dell.com/en-us/work/shop/laptops/13-7300/spd/latitude-13-7300-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
 | [Dell Latitude 7400](https://www.dell.com/en-us/work/shop/laptops/new-14/spd/latitude-14-7400-laptop) | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
 | **\*[Dell Latitude 7400 2-in-1](https://www.dell.com/en-us/work/shop/laptops/14-2-in-1/spd/latitude-14-7400-2-in-1-laptop)** | 256 GB / Intel i5 / 8 GB RAM | IR camera required | May 1, 2021  | May 1, 2024  |
+| **\*[Dell Optiplex 3070](https://www.dell.com/en-us/work/shop/desktops-n-workstations/3070/spd/optiplex-3070-desktop)** | 128 GB / Intel i3 / 8 GB RAM | None | May 1, 2022  | May 1, 2025  |
 | [HP EliteBook 830 / 840 / 850 G6 Notebook PC](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | [HP EliteBook x360 830 G6 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | **\*[HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1)** | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
@@ -49,19 +50,23 @@ The links to devices here are for your reference only. If you want to order devi
 | [HP ProBook x360 440 G1](https://store.hp.com/us/en/mdp/laptops/hp-probook-x360-440-3074457345617293669--1#!&tab=features) | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV, IR camera or fingerprint reader required | Jun 6, 2020 | Jun 6, 2023 |
 | [HP Z2 Mini G4 Workstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Jan 31, 2021 | Jan 31, 2024 |
 |[HP ZBook 14u/15u G6 Mobile Workstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS02AV, IR camera required | Nov 30, 2020 | Nov 30, 2023 |
-| [Surface Go](https://www.microsoft.com/p/surface-go-for-business/909wr0x3sgfk/8khl?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel 4415Y / 8GB RAM | None | Aug 2, 2020 | Aug 2, 2023 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
 | [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
-| **\*[Surface Laptop 3](https://www.microsoft.com/en-us/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
+| **\*[Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 | [Surface Pro 6](https://www.microsoft.com/p/surface-pro-6-for-business/8xjq3d3lrp0r/grf9?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
-| **\*[Surface Pro 7](https://www.microsoft.com/en-us/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
-
-
+| **\*[Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7)** | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
 
 In addition, the device must also meet these criteria:     
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
 - Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+
+>[!NOTE]
+>Devices with a 2.0 GHz or faster processor will provide a much better experience for users involved in these activities:
+>- Using video conferencing with Teams. See [Hardware requirements for Microsoft Teams](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app) for details.
+>-	Using one device for several different workloads.
+>- Using multiple monitors.
 
 **Additional Help**
 

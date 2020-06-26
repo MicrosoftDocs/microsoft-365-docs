@@ -19,7 +19,8 @@ ms.collection:
 - M365-security-compliance
 ms.custom: 
 - seo-marvel-apr2020
-description: "Apply your organization's branding to  your organization's encrypted email messages and to the contents of the encryption portal."
+- seo-marvel-jun2020
+description: Learn how Office 365 global administrators can apply your organization's branding to encrypted email messages & contents of the encryption portal.
 ---
 
 # Add your organization's brand to your encrypted messages
@@ -58,9 +59,9 @@ Once you've created the templates, you can apply them to encrypted emails by usi
 
 You can modify several features within a branding template. You can modify, but not remove, the default template. If you have Advanced Message Encryption, you can also create, modify, and remove custom templates. Use Windows PowerShell to work with one branding template at a time. You'll need a work or school account that has global administrator permissions in your organization to use these cmdlets.
 
-- [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/set-omeconfiguration) - Modify the default branding template or a custom branding template that you created.
-- [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) - Create a new branding template, Advanced Message Encryption only.
-- [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration) - Remove a custom branding template, Advanced Message Encryption only. You can't delete the default branding template.
+- [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/set-omeconfiguration) - Modify the default branding template or a custom branding template that you created.
+- [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) - Create a new branding template, Advanced Message Encryption only.
+- [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/remove-omeconfiguration) - Remove a custom branding template, Advanced Message Encryption only. You can't delete the default branding template.
   
 ## Modify an OME branding template
 
@@ -68,35 +69,35 @@ Use Windows PowerShell to modify one branding template at a time. If you have Ad
 
 1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Modify the template by using the Set-OMEConfiguration cmdlet as described in [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) or use the following graphic and table for guidance.
+2. Modify the template by using the Set-OMEConfiguration cmdlet as described in [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration) or use the following graphic and table for guidance.
 
 ![Customizable email parts](../media/ome-template-breakout.png)
 
 |**To customize this feature of the encryption experience**|**Use these commands**|
 |:-----|:-----|
-|Background color|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels. If your image exceeds these dimensions, the service resizes your logo for display in the portal. The service doesn't modify the graphic file itself. For best results, use the optimal size.|
-|Text next to the sender's name and email address|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|Text that appears on the "Read Message" button|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|Text that appears below the "Read Message" button|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|URL for the Privacy Statement link|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PrivacyStatementURL "<URL>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
-|Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
-|To enable or disable authentication with a one-time pass code for this custom template|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **Examples:** <br/>To enable one-time passcodes for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> To disable one-time passcodes for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
-|To enable or disable authentication with Microsoft, Google, or Yahoo identities for this custom template|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **Examples:** <br/>To enable social IDs for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> To disable social IDs for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
+|Background color|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <br/> For more information about background colors, see the [Background colors](#background-color-reference) section later in this topic.|
+|Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Supported file formats: .png, .jpg, .bmp, or .tiff  <br/> Optimal size of logo file: less than 40 KB  <br/> Optimal size of logo image: 170x70 pixels. If your image exceeds these dimensions, the service resizes your logo for display in the portal. The service doesn't modify the graphic file itself. For best results, use the optimal size.|
+|Text next to the sender's name and email address|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|Text that appears on the "Read Message" button|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|Text that appears below the "Read Message" button|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|URL for the Privacy Statement link|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|To enable or disable authentication with a one-time pass code for this custom template|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <br/> **Examples:** <br/>To enable one-time passcodes for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> To disable one-time passcodes for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
+|To enable or disable authentication with Microsoft, Google, or Yahoo identities for this custom template|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <br/> **Examples:** <br/>To enable social IDs for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> To disable social IDs for this custom template <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
 ## Create an OME branding template (Advanced Message Encryption)
 
-If you have Office 365 Advanced Message Encryption, you can create custom branding templates for your organization by using the [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) cmdlet. Once you've created the template, you modify the template by using the Set-OMEConfiguration cmdlet as described in [Modify an OME branding template](#modify-an-ome-branding-template). You can create multiple templates.
+If you have Office 365 Advanced Message Encryption, you can create custom branding templates for your organization by using the [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) cmdlet. Once you've created the template, you modify the template by using the Set-OMEConfiguration cmdlet as described in [Modify an OME branding template](#modify-an-ome-branding-template). You can create multiple templates.
 
 To create a new custom branding template:
 
 1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Use the [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/new-omeconfiguration) cmdlet to create a new template.
+2. Use the [New-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/new-omeconfiguration) cmdlet to create a new template.
 
    ```powershell
-   New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
+   New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
    For example,
@@ -111,17 +112,17 @@ To remove all modifications from the default template, including brand customiza
   
 1. Using a work or school account that has global administrator permissions in your organization, start a Windows PowerShell session and connect to Exchange Online. For instructions, see [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Use the **Set-OMEConfiguration** cmdlet as described in [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string, `""`. For all image values, such as Logo, set the value to  `"$null"`.
+2. Use the **Set-OMEConfiguration** cmdlet as described in [Set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/Set-OMEConfiguration). To remove your organization's branded customizations from the DisclaimerText, EmailText, and PortalText values, set the value to an empty string, `""`. For all image values, such as Logo, set the value to  `"$null"`.
 
    The following table describes the encryption customization option defaults.
 
    **To revert this feature of the encryption experience back to the default text and image**|**Use these commands**|
    |:-----|:-----|
-   |Default text that accompanies encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
-   |Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Example reverting back to default:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
-   |Logo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Example reverting back to default:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
-   |Background color|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Example reverting back to default:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
+   |Default text that accompanies encrypted email messages  <br/> The default text appears above the instructions for viewing encrypted messages|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |Disclaimer statement in the email that contains the encrypted message|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **Example:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |Text that appears at the top of the encrypted mail viewing portal|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **Example reverting back to default:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
+   |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **Example reverting back to default:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
+   |Background color|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **Example reverting back to default:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
    |
 
 ## Remove a custom branding template (Advanced Message Encryption)
@@ -135,7 +136,7 @@ To remove a custom branding template:
 2. Use the **Remove-OMEConfiguration** cmdlet as follows:
 
    ```powershell
-   Remove-OMEConfiguration -Identity "<OMEConfigurationIdParameter>
+   Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
    For example,
@@ -144,7 +145,7 @@ To remove a custom branding template:
    Remove-OMEConfiguration -Identity "Branding template 1"
    ```
 
-   For more information, see [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/remove-omeconfiguration).
+   For more information, see [Remove-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/remove-omeconfiguration).
 
 ## Create an Exchange mail flow rule that applies your custom branding to encrypted emails
 
@@ -179,3 +180,154 @@ For information on how to create an Exchange mail flow rule that applies encrypt
    The list of templates includes all default templates and options as well as any custom templates you've created for use by Office 365. If the list is empty, ensure that you have set up Office 365 Message Encryption with the new capabilities as described in [Set up new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md). For information about the default templates, see [Configuring and managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). For information about the **Do Not Forward** option, see [Do Not Forward option for emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). For information about the **encrypt only** option, see [Encrypt Only option for emails](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    Choose **add action** if you want to specify another action.
+
+## Background color reference
+
+The color names that you can use for the background color are limited. Instead of a color name, you can use a hex code value (#RRGGBB). You can use a hex code value that corresponds to a color name, or you can use a custom hex code value. Be sure to enclose the hex code value in quotation marks (for example, `"#f0f8ff"`).
+
+The available background color names and their corresponding hex code values are described in the following table.
+
+|||
+|---|---|
+|**Color name**|**Color code**|
+|aliceblue|#f0f8ff|
+|antiquewhite|#faebd7|
+|aqua|#00ffff|
+|aquamarine|#7fffd4|
+|azure|#f0ffff|
+|beige|#f5f5dc|
+|bisque|#ffe4c4|
+|black|#000000|
+|blanchedalmond|#ffebcd|
+|blue|#0000ff|
+|blueviolet|#8a2be2|
+|brown|#a52a2a|
+|burlywood|#deb887|
+|cadetblue|#5f9ea0|
+|chartreuse|#7fff00|
+|chocolate|#d2691e|
+|coral|#ff7f50|
+|cornflowerblue|#6495ed|
+|cornsilk|#fff8dc|
+|crimson|#dc143c|
+|cyan|#00ffff|
+|darkblue|#00008b|
+|darkcyan|#008b8b|
+|darkgoldenrod|#b8860b|
+|darkgray|#a9a9a9|
+|darkgreen|#006400|
+|darkkhaki|#bdb76b|
+|darkmagenta|#8b008b|
+|darkolivegreen|#556b2f|
+|darkorange|#ff8c00|
+|darkorchid|#9932cc|
+|darkred|#8b0000|
+|darksalmon|#e9967a|
+|darkseagreen|#8fbc8f|
+|darkslateblue|#483d8b|
+|darkslategray|#2f4f4f|
+|darkturquoise|#00ced1|
+|darkviolet|#9400d3|
+|deeppink|#ff1493|
+|deepskyblue|#00bfff|
+|dimgray|#696969|
+|dodgerblue|#1e90ff|
+|firebrick|#b22222|
+|floralwhite|#fffaf0|
+|forestgreen|#228b22|
+|fuchsia|#ff00ff|
+|gainsboro|#dcdcdc|
+|ghostwhite|#f8f8ff|
+|gold|#ffd700|
+|goldenrod|#daa520|
+|gray|#808080|
+|green|#008000|
+|greenyellow|#adff2f|
+|honeydew|#f0fff0|
+|hotpink|#ff69b4|
+|indianred|#cd5c5c|
+|indigo|#4b0082|
+|ivory|#fffff0|
+|khaki|#f0e68c|
+|lavender|#e6e6fa|
+|lavenderblush|#fff0f5|
+|lawngreen|#7cfc00|
+|lemonchiffon|#fffacd|
+|lightblue|#add8e6|
+|lightcoral|#f08080|
+|lightcyan|#e0ffff|
+|lightgoldenrodyellow|#fafad2|
+|lightgray|#d3d3d3|
+|lightgrey|#d3d3d3|
+|lightgreen|#90ee90|
+|lightpink|#ffb6c1|
+|lightsalmon|#ffa07a|
+|lightseagreen|#20b2aa|
+|lightskyblue|#87cefa|
+|lightslategray|#778899|
+|lightsteelblue|#b0c4de|
+|lightyellow|#ffffe0|
+|lime|#00ff00|
+|limegreen|#32cd32|
+|linen|#faf0e6|
+|magenta|#ff00ff|
+|maroon|#800000|
+|mediumaquamarine|#66cdaa|
+|mediumblue|#0000cd|
+|mediumorchid|#ba55d3|
+|mediumpurple|#9370db|
+|mediumseagreen|#3cb371|
+|mediumslateblue|#7b68ee|
+|mediumspringgreen|#00fa9a|
+|mediumturquoise|#48d1cc|
+|mediumvioletred|#c71585|
+|midnightblue|#191970|
+|mintcream|#f5fffa|
+|mistyrose|#ffe4e1|
+|moccasin|#ffe4b5|
+|navajowhite|#ffdead|
+|navy|#000080|
+|oldlace|#fdf5e6|
+|olive|#808000|
+|olivedrab|#6b8e23|
+|orange|#ffa500|
+|orangered|#ff4500|
+|orchid|#da70d6|
+|palegoldenrod|#eee8aa|
+|palegreen|#98fb98|
+|paleturquoise|#afeeee|
+|palevioletred|#db7093|
+|papayawhip|#ffefd5|
+|peachpuff|#ffdab9|
+|peru|#cd853f|
+|pink|#ffc0cb|
+|plum|#dda0dd|
+|powderblue|#b0e0e6|
+|purple|#800080|
+|red|#ff0000|
+|rosybrown|#bc8f8f|
+|royalblue|#4169e1|
+|saddlebrown|#8b4513|
+|salmon|#fa8072|
+|sandybrown|#f4a460|
+|seagreen|
+|seashell|#fff5ee|
+|sienna|#a0522d|
+|silver|#c0c0c0|
+|skyblue|#87ceeb|
+|slateblue|#6a5acd|
+|slategray|#708090|
+|snow|#fffafa|
+|springgreen|#00ff7f|
+|steelblue|#4682b4|
+|tan|#d2b48c|
+|teal|#008080|
+|thistle|#d8bfd8|
+|tomato|#ff6347|
+|turquoise|#40e0d0|
+|violet|#ee82ee|
+|wheat|#f5deb3|
+|white|#ffffff|
+|whitesmoke|#f5f5f5|
+|yellow|#ffff00|
+|yellowgreen|#9acd32|

@@ -16,7 +16,8 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content; apply a single policy to the entire organization or specific locations or users; and apply a policy to all content or content meeting specific conditions."
+description: Learn about using a retention policy to retain or delete content, and how to apply a single policy to the entire organization or to specific locations or users.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Learn about retention policies
@@ -120,9 +121,9 @@ In summary, a locked retention policy can be increased or extended, but it can't
 
 Providing your retention policy doesn't have a Preservation Lock, you can turn off or delete a retention policy at any time. 
 
-When you do so, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. 
+When you do so, any SharePoint or OneDrive content that's being retained in the Preservation Hold library is not immediately and permanently deleted. Instead, to help prevent inadvertent data loss, there is a 30-day grace period, during which content expiration for that policy does not happen in the Preservation Hold library, so that you can restore any content from there, if needed. Additionally, you can't manually delete this content during the grace period.
 
-You can also turn on the retention policy again during the grace period, and no content will be deleted for that policy.
+You can turn on the retention policy again during the grace period, and no content will be deleted for that policy.
 
 This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day delay hold in Exchange. For more information, see [Managing mailboxes on delay hold](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
 
@@ -136,21 +137,20 @@ The older features that you might have used:
   
 **Older features from Exchange Online:**
 
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery hold) 
-    
 - [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/?linkid=846124) (eDiscovery hold) 
 
 - [How to identify the type of hold placed on an Exchange Online mailbox](identify-a-hold-on-an-exchange-online-mailbox.md)
     
 - [Retention tags and retention policies](https://go.microsoft.com/fwlink/?linkid=846125), also known as [messaging records management (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (deletion only)
     
+See also [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+
+
 **Older features from SharePoint and OneDrive:**
 
-- [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/get-started-core-ediscovery) (eDiscovery hold) 
-    
 - [Add content to a case and place sources on hold in the eDiscovery Center](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center) (eDiscovery hold) 
     
-- [Overview of document deletion policies](https://docs.microsoft.com/microsoft-365/compliance/document-deletion-policies) (deletion only) 
+- [Document deletion policies](https://support.office.com/article/Create-a-document-deletion-policy-in-SharePoint-Server-2016-4fe26e19-4849-4eb9-a044-840ab47458ff) (deletion only)
     
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retention only) 
     
@@ -173,8 +173,12 @@ You can find any configured preservation policies on the **Policies** page in th
 
 ## Related information
 
-- [Create and configure retention policies](create-retention-policies.md)
 - [Learn about retention labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+
+## Next steps
+
+If you are ready to create retention polices, see [Create and configure retention policies](create-retention-policies.md).
+

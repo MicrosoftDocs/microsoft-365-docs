@@ -15,14 +15,16 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "The sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information. Some of this functionality is performed by internal functions. This topic explains what these functions look for, to help you understand how the predefined sensitive information types work."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn what the data loss prevention (DLP) functions look for, to help you understand how the predefined sensitive information types work.
 ---
 
 # What the DLP functions look for
 
 Data loss prevention (DLP) includes sensitive information types, such as Credit Card Number and EU Debit Card Number, which are ready for you to use in your DLP policies. These sensitive information types look for a specific pattern and corroborate it by ensuring proper formatting, enforcing checksums, and looking for relevant keywords or other information. Some of this functionality is performed by internal functions. For example, the Credit Card Number sensitive information type uses a function to look for dates formatted like an expiration date, to help corroborate that a number is a credit card number.
   
-This topic explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
+This topic explains what these functions look for, to help you understand how the predefined sensitive information types work. For more information, see [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
   
 ## Func_us_date
 

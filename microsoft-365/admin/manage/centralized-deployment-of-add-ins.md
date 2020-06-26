@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,8 +25,8 @@ description: "Determine if your tenant and users meet the requirements, so that 
 # Determine if Centralized Deployment of add-ins works for your organization
 
 Centralized Deployment is the recommended and most feature-rich way for most customers to deploy Office add-ins to users and groups within your organization. If you're an admin, use this guidance to determine if your tenant and users meet the requirements so that you can use Centralized Deployment.
-Centralized Deployment supports Windows, Mac, iOS, Android and Online Office apps.
-It can take up to 12 hours for an add-in to show up for client for all users.
+Centralized Deployment supports three desktop platforms Windows, Mac and Online Office apps. Centralized Deployment also supports iOS and Android (Outlook Mobile Add-ins Only).
+It can take up to 24 hours for an add-in to show up for client for all users.
   
 ## Requirements
 

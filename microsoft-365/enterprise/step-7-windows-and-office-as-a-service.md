@@ -40,7 +40,7 @@ Both Windows 10 and Microsoft 365 Apps for enterprise introduce new servicing op
 
 ## Update Types
 
-Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while quality and security Updates occur Monthly. Additionally, unique to Office 365 applications, we offer a fully-supported Monthly Channel option where updates contain both new features and quality updates.
+Updates fall into two main categories, feature updates and then quality and security updates which contain cumulative security, reliability and bug fixes. In terms of cadence both Windows and Office deliver a semi-annual channel which delivers new features twice per year around March and September while quality and security Updates occur Monthly. Additionally, unique to Office 365 applications, we offer a fully-supported Current Channel option where updates contain both new features and quality updates.
 
 If you’re used to a longer cycle between desktop OS and app updates, you might be wondering;
 
@@ -70,7 +70,7 @@ With the cumulative model, you’re always one update away from being current an
 
 Another advantage is that, before we roll out updates for broad deployment, we first release builds via the Insider programs for [Office](https://products.office.com/office-insider?tab=Windows-Desktop) and [Windows](https://insider.windows.com/), and this allows us to gather diagnostic data and feedback ahead of us releasing updates broadly. Now the Insider programs are open to everyone so that you can get ahead of understanding the updates. By the time we release updates we will have received diagnostic data from millions of configurations, so when we do roll out updates, quality is now inherently more predictable
 
-AND one more thing, because Microsoft 365 Apps for enterprise Insider builds reflect monthly channel updates, if you are using semi-annual channel for Office to deliver feature updates twice per year aligned to Windows, you can validate those builds early as well using the semi-annual channel targeted releases.
+AND one more thing, because Microsoft 365 Apps for enterprise Insider builds reflect monthly channel updates, if you are using semi-annual channel for Office to deliver feature updates twice per year aligned to Windows, you can validate those builds early as well using the Semi-Annual Enterprise Channel (Preview) releases.
 
 ### Supporting Management Tools
 
@@ -91,9 +91,9 @@ Windows 10 offers three servicing channels:
 Microsoft 365 offers four servicing channels:
 
 - [**Office Insider Program**](https://products.office.com/office-insider) for organizations to test and provide feedback on the newest Office features and functionalities still in development
-- **Monthly Channel** to provide users with the newest Office features as soon as they're available
-- **Semi-Annual Channel** provides new functionality with new features only twice per year
-- **Semi-Annual Channel (Targeted)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Channel
+- **Current Channel** to provide users with the newest Office features as soon as they're available
+- **Semi-Annual Enterprise Channel** provides new functionality with new features only twice per year
+- **Semi-Annual Enterprise Channel (Preview)** is a fully supported build of Office that enables pilot users and application compatibility testers to test and validate the next Semi-Annual Enterprise Channel
 
 For detailed information about Windows and Office servicing channels please review the below documentation:
 
@@ -136,7 +136,7 @@ As for tooling, you can use policy settings with Windows Update for Business, so
 
 [Windows Semi-Annual Channel](https://docs.microsoft.com/windows/deployment/update/waas-overview#semi-annual-channel)
 
-[Semi-Annual Channel for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
+[Semi-Annual Enterprise Channel for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels#BKMK_SAC)
 
 #### Upgrade Task Sequences
 

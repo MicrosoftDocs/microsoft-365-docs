@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 04/13/2020
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -14,6 +14,7 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: "Have a question about how the new message protection capabilities work? Check for an answer here."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Message Encryption FAQ
@@ -23,7 +24,7 @@ Have a question about how the new message protection capabilities work? Check fo
 ## What is Office 365 Message Encryption (OME)?
 
 OME combines email encryption and rights management capabilities. Rights management capabilities are powered by Azure Information Protection.
-  
+
 ## Who can use OME?
 
 You can use the new capabilities for OME under the following conditions:
@@ -98,7 +99,7 @@ Microsoft 365 users can read and respond from Outlook for Windows and Mac (2013 
   
 ## What file types are supported as attachments in protected emails? Do attachments inherit the protection policies associated with protected emails?
 
-You can attach any file type to a protected mail, however protection policies are applied only on the file formats mentioned [here](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
+You can attach any file type to a protected mail, however protection policies are applied only on the file formats mentioned in [File types supported by the Azure Information Protection client](https://docs.microsoft.com/information-protection/rms-client/client-admin-guide-file-types).
   
 If a file format is supported, such as a Word, Excel, or PowerPoint file, the file is always protected, even after the attachment has been downloaded by the recipient. For example, if an attachment is protected by Do Not Forward, and the original recipient downloads and forwards the attachment to a new recipient, the new recipient will not be able to open the protected file.
   
@@ -115,6 +116,11 @@ To enable encryption for PDF attachments, run the following command in [Exchange
 ```powershell
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
+
+PDF encryption allows you to protect sensitive PDF documents through secure communication or secure collaboration. For all Outlook clients, messages and unprotected PDF attachments inherit the OME protection of the data loss prevention (DLP) policy or mail flow rule in Exchange Online. Also, if an Outlook on the web user attaches an unprotected PDF document and applies protection to message, the message inherits the protection of the message. Users can only open the encrypted attachments in applications that support protected PDFs (for example, the OME Portal and the Azure Information Protection Viewer).
+
+> [!IMPORTANT]
+> Outlook desktop client does not support PDF encryption.
 
 ## Are OneDrive for Business attachments supported?
 
@@ -180,3 +186,9 @@ There are currently two known limitations:
 - We only support access provided by direct user assignment to the shared mailbox. We don't support assignment through an email enabled security group.
 
 - You can't open attachments to emails that you receive on mobile devices by using Outlook mobile.
+
+## What do I do if I don’t receive the one-time pass code after I requested it?
+
+First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
+
+Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.

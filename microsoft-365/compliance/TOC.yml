@@ -2,6 +2,8 @@
   href: index.yml
 - name: Get started
   items: 
+    - name: Quick tasks to get started with compliance
+      href: compliance-quick-tasks.md
     - name: What's new in the compliance center
       href: whats-new.md
     - name: Recent updates to compliance content
@@ -32,7 +34,7 @@
           href: insider-risk-management-cases.md
         - name: Review data with the insider risk content explorer
           href: insider-risk-management-content-explorer.md
-        - name: Add users to insider risk policies
+        - name: Manage the workflow with the Users dashboard
           href: insider-risk-management-users.md
         - name: Create insider risk notice templates
           href: insider-risk-management-notices.md
@@ -129,8 +131,8 @@
               href: how-dlp-works-between-admin-centers.md
     - name: Sensitive information types
       items: 
-        - name: What the sensitive information types look for
-          href: what-the-sensitive-information-types-look-for.md
+        - name: Sensitive information type entity definitions 
+          href: sensitive-information-type-entity-definitions.md
         - name: What the DLP functions look for
           href: what-the-dlp-functions-look-for.md
         - name: Watch an extended overview of customizing DLP
@@ -155,6 +157,8 @@
       href: encryption.md
     - name: Office 365 Service encryption
       href: office-365-service-encryption.md    
+    - name: Technical reference details about encryption in Office 365
+      href: technical-reference-details-about-encryption.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -198,8 +202,6 @@
           href: exchange-online-secures-email-secrets.md
         - name: How Exchange Online uses TLS to secure email connections in Office 365
           href: exchange-online-uses-tls-to-secure-email-connections.md
-        - name: Technical reference details about encryption in Office 365
-          href: technical-reference-details-about-encryption.md
         - name: BitLocker and Distributed Key Manager (DKM) for Encryption
           href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
         - name: Legacy OME
@@ -249,17 +251,19 @@
           href: archiving-third-party-data.md
         - name: Archive Facebook data (preview)
           href: archive-facebook-data-with-sample-connector.md
-        - name: Archive Twitter data (preview)
-          href: archive-twitter-data-with-sample-connector.md
-        - name: Archive LinkedIn data
-          href: archive-linkedin-data.md
-        - name: Archive Instant Bloomberg data
-          href: archive-instant-bloomberg-data.md
         - name: Import HR data (preview)
           href: import-hr-data.md
+        - name: Archive Instant Bloomberg data
+          href: archive-instant-bloomberg-data.md
+        - name: Archive LinkedIn data
+          href: archive-linkedin-data.md
+        - name: Archive Twitter data (preview)
+          href: archive-twitter-data-with-sample-connector.md
         - name: Work with a partner to archive third-party data
           href: work-with-partner-to-archive-third-party-data.md
-    - name: Store data
+        - name: Search for third-party data
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: Store mailbox data
       items: 
         - name: Enable archive mailboxes
           href: enable-archive-mailboxes.md
@@ -281,7 +285,7 @@
           href: retention-policies-teams.md
         - name: Retention for Exchange
           href: retention-policies-exchange.md
-        - name: File plan manager
+        - name: File plan
           href: file-plan-manager.md
         - name: Learn about retention labels
           href: labels.md
@@ -333,7 +337,7 @@
           href: records.md
         - name: File plan
           items: 
-            - name: File plan manager
+            - name: Manage retention labels
               href: file-plan-manager.md
             - name: Learn about retention labels
               href: labels.md
@@ -388,8 +392,6 @@
             href: bulk-edit-content-searches.md
           - name: Prepare a CSV file for an ID list search
             href: csv-file-for-an-id-list-content-search.md
-          - name: Search for third-party data
-            href: use-content-search-to-search-third-party-data-that-was-imported.md
           - name: Check your search query for errors
             href: check-your-content-search-query-for-errors.md
           - name: Troubleshoot common eDiscovery issues
@@ -472,6 +474,8 @@
             href: retry-failed-content-search.md
           - name: Use Microsoft Edge to download search results
             href: configure-edge-to-export-search-results.md
+          - name: Search for eDiscovery activities in the audit log
+            href: search-for-ediscovery-activities-in-the-audit-log.md
     - name: Advanced eDiscovery
       items:
         - name: Overview of Advanced eDiscovery
@@ -531,7 +535,7 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Review case data
           items: 
-            - name: Use the review set dashboard (preview)
+            - name: Use the review set dashboard
               href: advanced-ediscovery-dashboard.md
             - name: View documents in a review set
               href: view-documents-in-review-set.md
@@ -587,6 +591,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Set up compliance boundaries
               href: set-up-compliance-boundaries.md
+            - name: Search for eDiscovery activities in the audit log
+              href: search-for-ediscovery-activities-in-the-audit-log.md
             - name: Troubleshoot AzCopy
               href: troubleshooting-azcopy.md
     - name: Advanced eDiscovery (classic)
@@ -885,8 +891,6 @@
               href: gdpr-arc-prof-services.md
             - name: Office 365
               href: gdpr-arc-office365.md
-        - name: Information protection
-          href: gdpr-information-protection.md
         - name: Data subject requests
           items: 
             - name: Data subject requests
@@ -927,8 +931,12 @@
               href: gdpr-dpia-prof-services.md
             - name: Office 365
               href: gdpr-dpia-office365.md
+        - name: Information protection
+          href: gdpr-information-protection.md
         - name: Microsoft's data protection officer
           href: gdpr-data-protection-officer.md
+        - name: Additional steps to export system-generated log data
+          href: gdpr-system-generated-log-data.md
 - name: Hybrid compliance capabilities
   items: 
     - name: Exchange Online mail encryption with AD RMS

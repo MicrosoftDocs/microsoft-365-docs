@@ -11,6 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce 
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases."
@@ -100,9 +101,9 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### Update an existing payment method
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-2. To edit an existing payment method, choose it from the list.
+2. On the **Payment methods** tab, choose an existing payment method from the list.
 
 3. In the right pane, choose **Edit**. You can change the security code, expiration date, name on the card, and address.
 
@@ -110,20 +111,20 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### Add a new payment method
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-2. Choose **Add a payment method**.
+2. On the **Payment methods** tab, choose **Add a payment method**.
 
 3. In the **Add a payment method** pane, enter the information for the new payment method, then choose **Add**.
 
 ## View your invoices
 
-1. In the admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-2. Under **Invoices** select the invoice that you want to view.
+2. On the **Invoices** tab, select the invoice that you want to view. If no invoices are visible, change **Past 3 months** to either **Past 6 months** or **Specify a date range**.
 
 ## Need help? Contact us.
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
 
-If you have questions or need help with self-service purchases, [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+If you have questions or need help with self-service purchases, [contact support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).

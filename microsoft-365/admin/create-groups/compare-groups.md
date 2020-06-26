@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,7 +26,7 @@ description: "Learn about the types of groups you can use."
 
 In the **Groups** section of the Microsoft 365 admin center, you can create and manage these types of groups: 
 
-- **Microsoft 365 groups** are used for collaboration between users, both inside and outside your company.
+- **Microsoft 365 groups** (formerly Office 365 groups) are used for collaboration between users, both inside and outside your company.
 - **Distribution groups** are used for sending notifications to a group of people.
 - **Security groups** are used for granting access to resources such as SharePoint sites.
 - **Mail-enabled security groups** are used for granting access to resources such as SharePoint, and emailing notifications to those users.
@@ -75,4 +76,4 @@ Currently it's not possible to migrate a shared mailbox to a Microsoft 365 group
 
 ## Related articles
 
-[Learn about Microsoft 365 groups](https://support.office.com/article/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)

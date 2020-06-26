@@ -27,20 +27,22 @@ Before you enable sensitivity labels for Office files in SharePoint and OneDrive
 
 When you do enable sensitivity labels for Office files in SharePoint and OneDrive, all these capabilities are enabled. In addition to displaying sensitivity labels to users, for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
 
-- SharePoint recognizes sensitivity labels applied to Word, Excel, and PowerPoint files in SharePoint and OneDrive: While the file is stored in SharePoint, the encryption from Azure Information Protection is removed so that the file contents can be processed. For information about how documents are protected while they are stored in SharePoint, see [Data Encryption in OneDrive for Business and SharePoint Online](data-encryption-in-odb-and-spo.md).
+- For Word, Excel, and PowerPoint files, SharePoint recognizes the label and is now able to process the contents of the encrypted file.
 
-- When you download or access this file from SharePoint or OneDrive, the sensitivity label and any encryption settings from the label are reapplied with the file, and these settings remain enforced wherever the file is saved. Because of this behavior, ensure you provide user guidance to use only labels to protect documents. For more information, see [Information Rights Management (IRM) options and sensitivity labels](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
+- When you download or access these files from SharePoint or OneDrive, the sensitivity label and any encryption settings from the label are enforced and remain with the file, wherever it is stored. Ensure you provide user guidance to use only labels to protect documents. For more information, see [Information Rights Management (IRM) options and sensitivity labels](sensitivity-labels-office-apps.md#information-rights-management-irm-options-and-sensitivity-labels).
 
-- For SharePoint to remove the encryption from the file on upload, the user who uploads the labeled and encrypted file must have usage rights to at least view the file. SharePoint doesn't remove encryption from files if the user can't open them outside SharePoint.
+- When users upload labeled and encrypted files to SharePoint, they must have at least view rights to those files. For example, they can open the files outside SharePoint. If they don't have this minimum usage right, the upload is successful but SharePoint doesn't recognize the label and can't process the file contents.
 
 - Use Office on the web (Word, Excel, PowerPoint) to open and edit Office files that have sensitivity labels that apply encryption. The permissions that were assigned with the encryption are enforced. With Word on the web, you can also use auto-labeling when you edit these documents.
 
-- Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies cover content in these files.
+- External users can access documents that are labeled with encryption by using guest accounts. For more information, see [Support for external users and labeled content](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content). 
+
+- Office 365 eDiscovery supports full-text search for these files. Data Loss Prevention (DLP) policies support content in these files.
 
 > [!NOTE]
 > If encryption hasn't been applied with a cloud-based key but an on-premises key, a key management topology often referred to as "hold your own key" (HYOK), the SharePoint behavior for processing the file contents doesn't change.
 >
-> The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you run the command to enable sensitivity labels for SharePoint and OneDrive. For example, they will then be returned in search and eDiscovery results.
+> The SharePoint behavior also doesn't change for existing labeled and encrypted files in SharePoint. For these files to benefit from the new capabilities, they must be either downloaded and uploaded, or edited after you run the command to enable sensitivity labels for SharePoint and OneDrive. SharePoint can then process these files. For example, they will then be returned in search and eDiscovery results.
 
 After you enable sensitivity labels for Office files in SharePoint and OneDrive, three new [audit events](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) are available for monitoring sensitivity labels that are applied to documents in SharePoint and OneDrive:
 - **Applied sensitivity label to file**
@@ -52,6 +54,8 @@ Watch the following video (no audio) to see the new capabilities in action:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed//RE4ornZ]
 
 You always have the choice to disable sensitivity labels for Office files in SharePoint and OneDrive ([opt-out](#how-to-disable-sensitivity-labels-for-sharepoint-and-onedrive-opt-out) at any time.
+
+If you are currently protecting documents in SharePoint by using SharePoint Information Rights Management (IRM), be sure to check the [SharePoint Information Rights Management (IRM) and sensitivity labels](#sharepoint-information-rights-management-irm-and-sensitivity-labels) section on this page. 
 
 ## Requirements
 
@@ -112,13 +116,13 @@ The global admin for your organization has full permissions to create and manage
     The command runs immediately and when the page is next refreshed, you no longer see the message or button. 
 
 > [!NOTE]
-> If you have Office 365 Multi-Geo, you must use PowerShell to enable these capabilities for all your geo-locations. See the next section for details.
+> If you have Microsoft 365 Multi-Geo, you must use PowerShell to enable these capabilities for all your geo-locations. See the next section for details.
 
 ### Use PowerShell to enable support for sensitivity labels
 
 As an alternative to using the compliance center, you can enable support for sensitivity labels by using the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet from SharePoint Online PowerShell. 
 
-If you have Office 365 Multi-Geo, you must use PowerShell to enable this support for all your geo-locations.
+If you have Microsoft 365 Multi-Geo, you must use PowerShell to enable this support for all your geo-locations.
 
 #### Prepare the SharePoint Online Management Shell
 
@@ -144,16 +148,16 @@ Before you run the PowerShell command to enable sensitivity labels for Office fi
 
 To enable the new capabilities, use the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/set-spotenant?view=sharepoint-ps) cmdlet with the *EnableAIPIntegration* parameter:
 
-1. Using a work or school account that has global administrator or SharePoint admin privileges in Office 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
+1. Using a work or school account that has global administrator or SharePoint admin privileges in Microsoft 365, connect to SharePoint. To learn how, see [Getting started with SharePoint Online Management Shell](https://docs.microsoft.com/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Note: If you have Office 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
+    Note: If you have Microsoft 365 Multi-Geo, use the -Url parameter with [Connect-SPOService](https://docs.microsoft.com/powershell/module/sharepoint-online/connect-sposervice?view=sharepoint-ps), and specify the SharePoint Online Administration Center site URL for one of your geo-locations.
 
 2. Run the following command and press **Y** to confirm:
 
     ```PowerShell
     Set-SPOTenant -EnableAIPIntegration $true  
     ```
-3. For Office 365 Multi-Geo: Repeat steps 1 and 2 for each of your remaining geo-locations.
+3. For Microsoft 365 Multi-Geo: Repeat steps 1 and 2 for each of your remaining geo-locations.
 
 ## Schedule roll-out after you create or change a sensitivity label
 
@@ -167,6 +171,55 @@ We recommend that you follow these steps:
 
 3. Publish the label more broadly.
 
+## SharePoint Information Rights Management (IRM) and sensitivity labels
+
+[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption and restrictions when files are downloaded. This older protection technology is designed to prevent unauthorized users from opening the file while it's outside SharePoint.
+
+In comparison, sensitivity labels provide the protection settings of visual markings (headers, footers, watermarks) in addition to encryption. The encryption settings support the full range of [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) to restrict what users can do with the content, and the same sensitivity labels are supported for [many scenarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Using the same protection method with consistent settings across workloads and apps results in a consistent protection strategy.
+
+However, you can use both protection solutions together and the behavior is as follows: 
+
+- If you upload a file with a sensitivity label that applies encryption, SharePoint can't process this file so coauthoring, eDiscovery, DLP, and search don't work for this file.
+
+- If you label a file using Office on the web, any encryption settings from the label are enforced. For these files, coauthoring, eDiscovery, DLP, and search are supported.
+
+- If you download a file that's labeled by using Office on the web, the label is retained and any encryption settings from the label are enforced rather than the IRM restriction settings.
+
+- If you download an Office or PDF file that isn't encrypted with a sensitivity label, IRM settings are applied.
+
+- If you have enabled any of the additional IRM library settings, which includes preventing users from uploading documents that don't support IRM, these settings are enforced.
+
+With this behavior, you can be assured that all Office and PDF files are protected from unauthorized access if they are downloaded, even if they aren't labeled. However, labeled files that are uploaded won't benefit from the new capabilities.
+
+## Search for documents by sensitivity label
+
+Use the managed property **InformationProtectionLabelId** to find all documents in SharePoint or OneDrive that have a specific sensitivity label. Use the following syntax: `InformationProtectionLabelId:<GUID>`
+
+For example, to search for all documents that have been labeled as "Confidential", and that label has a GUID of "8faca7b8-8d20-48a3-8ea2-0f96310a848e", in the search box, type:
+
+`InformationProtectionLabelId: 8faca7b8-8d20-48a3-8ea2-0f96310a848e`
+
+To get the GUIDs for your sensitivity labels, use the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
+    
+1. First, [connect to Office 365 Security & Compliance Center PowerShell](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). 
+    
+    For example, in a PowerShell session that you run as administrator, sign in with a global administrator account:
+    
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned
+    $UserCredential = Get-Credential
+    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+    Import-PSSession $Session -DisableNameChecking
+    ```
+
+2. Then run the following command:
+    
+    ```powershell
+    Get-Label |ft Name, Guid
+    ```
+
+For more information about using managed properties, see [Manage the search schema in SharePoint](https://docs.microsoft.com/sharepoint/manage-search-schema).
+
 ## How to disable sensitivity labels for SharePoint and OneDrive (opt-out)
 
 If you disable these new capabilities, files that you uploaded after you enabled sensitivity labels for SharePoint and OneDrive continue to be protected by the label because the label settings continue to be enforced. When you apply sensitivity labels to new files after you disable these new capabilities, full-text search, eDiscovery, and coauthoring will no longer work.
@@ -177,7 +230,7 @@ To disable these new capabilities, you must use PowerShell. Using the SharePoint
 Set-SPOTenant -EnableAIPIntegration $false
 ```
 
-If you have Office 365 Multi-Geo, you must run this command for each of your geo-locations.
+If you have Microsoft 365 Multi-Geo, you must run this command for each of your geo-locations.
 
 ## Next steps
 

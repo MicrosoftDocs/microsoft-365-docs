@@ -14,7 +14,8 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "With the data governance reports in the Security &amp; Compliance Center, you can quickly view whether your labels are being applied to content as you intended."
+description: "With the data governance reports in the Security & Compliance Center, you can quickly view whether your labels are being applied to content as you intended."
+ms.custom: seo-marvel-apr2020
 ---
 
 # View the data governance reports

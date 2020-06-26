@@ -17,6 +17,7 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
