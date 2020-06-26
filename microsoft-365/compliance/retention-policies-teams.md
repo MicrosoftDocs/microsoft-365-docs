@@ -72,7 +72,7 @@ However, if conversation history is turned on for Skype for Business and from th
 
 ## Files in Teams
 
-In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded to channels are stored in the SharePoint site for the team. This means that to retain or delete files in Teams, you must configure one or more retention policies that apply to **OneDrive accounts** and **SharePoint sites** in addition to any retention policies you configure for Teams. For more information about how retention policies work for these locations, see [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md).
+In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded to channels are stored in the SharePoint site for the team. This means that to retain or delete files in Teams, you must configure one or more retention policies that apply to OneDrive and SharePoint in addition to any retention policies you configure for Teams. For more information about how retention policies work for these locations, see [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md).
 
 > [!NOTE]
 > A retention policy that includes Teams channel messages or Teams chats can only include Teams locations. So to retain or delete these files in Teams, you must create a separate retention policy.
@@ -93,6 +93,12 @@ When external users are included in a meeting that your organization hosts:
 
 - If an external user joins by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they are stored in that user's mailbox in another tenant. For the same meeting however, your retention policies can delete messages for your users.
 
+
+## When a user leaves the organization 
+
+If a user leaves your organization and their Office 365 account is deleted, their chat messages that are subject to retention are stored in an inactive mailbox. The chat messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
+
+If the user stored any files in Teams, see the [equivalent section](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) for SharePoint and OneDrive.
 
 ## Limitations
 
@@ -118,12 +124,9 @@ We're continuously working on optimizing retention functionality in Teams. In th
     
     - When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
-
 ## How to configure a retention policy for Microsoft Teams
 
-See [Create and configure retention policies](create-retention-policies.md).
-
-For the **Choose locations** page of the wizard, select the following options:
+Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select the following options:
 
 - **Let me choose specific locations** > **Teams channel messages** and **Teams chats**
 

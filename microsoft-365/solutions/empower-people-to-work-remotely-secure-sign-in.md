@@ -5,7 +5,7 @@ f1.keywords:
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 05/20/2020
+ms.date: 06/22/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -72,7 +72,7 @@ For more information, see [Risk-based Conditional Access](https://docs.microsoft
 
 ## Using these methods together
 
-Keep in mind the following:
+Keep the following in mind:
 
 - You cannot enable security defaults if you have any Conditional Access policies enabled.
 - You cannot enable any Conditional Access policies if you have security defaults enabled.
@@ -87,6 +87,14 @@ This table shows the results of enabling MFA with security defaults and Conditio
 | **Conditional Access policies** | If any are enabled, you can’t enable security defaults | If all are disabled, you can enable security defaults  | User specifies during MFA registration  |
 ||||
 
+## Let your users reset their own passwords
+
+Self-Service Password Reset (SSPR) enables users to reset their own passwords without impacting IT staff. Users can quickly reset their passwords at any time and from any place. Watch [this video](https://go.microsoft.com/fwlink/?linkid=2128524) to set up SSPR.
+
+## Sign in to SaaS apps with Azure AD
+
+In addition to providing cloud authentication for users, Azure AD can also be your central way to secure all your apps, whether they’re on-premises, in Microsoft’s cloud, or in another cloud. By [integrating your apps into Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), you can make it easy for remote workers to discover the applications they need and sign into them securely.
+
 ## Admin technical resources for MFA and identity
 
 - [MFA for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/multi-factor-authentication-microsoft-365)
@@ -94,6 +102,7 @@ This table shows the results of enabling MFA with security defaults and Conditio
 - [Plan and deploy your Microsoft 365 identity infrastructure](https://docs.microsoft.com/microsoft-365/enterprise/identity-infrastructure?view=o365-worldwide#plan-and-deploy-your-microsoft-365-enterprise-identity-infrastructure)
 - [Azure Academy Azure AD training videos](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
 - [Configure the Azure Multi-Factor Authentication registration policy](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [Plan an Azure AD self-service password reset deployment](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment)
 
 ## Results of Step 1
 
@@ -101,6 +110,7 @@ After deployment of MFA, your users:
 
 - Are required to use MFA for sign-ins.
 - Have completed the MFA registration process and are using MFA for all sign-ins.
+- Can use SSPR to reset their own passwords.
 
 ## Next step
 

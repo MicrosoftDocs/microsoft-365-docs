@@ -16,11 +16,10 @@ search.appverid:
 - MOE150
 - MET150
 description: "Learn how to create, modify, remove, and test custom sensitive information types for DLP in the graphical user interface in Security & Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 <!-- rename md file to match the display name -->
 # Create a custom sensitive information type in the Security & Compliance Center
-
-## Summary
 
 Read this article to create a [custom sensitive information type](custom-sensitive-info-types.md) in the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)). The custom sensitive information types that you create by using this method are added to the rule package named `Microsoft.SCCManaged.CustomRulePack`.
 
@@ -28,7 +27,7 @@ You can also create custom sensitive information types by using PowerShell and E
 - [Create a custom sensitive information type in Security & Compliance Center PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Create a custom sensitive information type for DLP with Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
-## Before you begin...
+## Before you begin
 
 > [!NOTE]
 > You should have Global admin or Compliance admin permissions to create, test, and deploy a custom sensitive information type through the UI. See [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) in Office 365.

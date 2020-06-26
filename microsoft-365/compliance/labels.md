@@ -16,7 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: Learn about retention labels that govern your data by keeping what you want, deleting what you don't want, and marking content as a record.
 ---
 
 # Learn about retention labels
@@ -57,7 +60,9 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. 
+Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label can't be changed or removed, and the content can't be edited or deleted. 
+
+Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
 There is no limit to the number of retention labels that are supported for a tenant. However, 10,000 is the maximum number of policies that are supported for a tenant and these include the policies that apply the labels (retention label policies and auto-apply retention policies), as well as retention policies.
 
@@ -124,7 +129,9 @@ In addition, a retention label has two retention options that are available only
   
 - Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Disposition reviews](disposition.md#disposition-reviews).
     
-- Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
+- Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. When you use this option:
+    - It applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received.
+    - You can't change the retention period after the label is saved.
     
 ![Retention settings with options specific to labels](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
 
@@ -335,9 +342,9 @@ After you publish or auto-apply your retention labels, you'll want to verify tha
 
 After retention labels are assigned to content, either by users or auto-applied, you can use content search to find all content that's classified with a specific retention label.
   
-When you create a content search, choose the **Compliance Tag** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Compliance label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Compliance Tag condition](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Compliance label condition](../media/compliance-label-condition.png)
   
 ## Use retention labels instead of older features
 
@@ -357,4 +364,6 @@ There are several other features that have previously been used to retain or del
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only) 
     
+## Next steps
 
+If you are ready to create and publish retention labels, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).

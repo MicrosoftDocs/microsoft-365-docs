@@ -16,6 +16,7 @@ search.appverid:
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
 description: "Understand the guidelines for exporting eDiscovery case data and results for review using the Export process in Advanced eDiscovery. 
 "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Export case data in Advanced eDiscovery (classic)
@@ -33,7 +34,7 @@ The Export process in Advanced eDiscovery enables the exporting of Advanced eDis
     
 - Exporting a large amount of data to a database may have a significant impact on the required database size and the required configuration of the Advanced eDiscovery database.
     
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
