@@ -1,5 +1,5 @@
 ---
-title: "Create and apply retention labels in apps to retain or delete content"
+title: "Create retention labels and apply them in apps to retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,10 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Instructions to create and publish retention labels so you can then manually apply labels to retain what you need and delete what you don't
+description: Instructions to create and publish retention labels so you can then apply them in apps to retain what you need and delete what you don't
 ---
 
-# Create and apply retention labels in apps to retain or delete content
+# Create retention labels and apply them in apps
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 

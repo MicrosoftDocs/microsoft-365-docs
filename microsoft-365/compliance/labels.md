@@ -247,7 +247,7 @@ There are several other features that have previously been used to retain or del
     
 ## Next steps
 
-To use retention labels that both admins and users can apply in apps, see [Create and apply retention labels in apps](create-retention-labels.md). This method supports the following scenarios:
+To use retention labels that both admins and users can apply in apps, see [Create retention labels and apply them in apps](create-retention-labels.md). This method supports the following scenarios:
 
 - Manually apply retention labels in apps
 - Applying a default retention label to all content in a SharePoint library, folder, or document set
