@@ -14,7 +14,10 @@ localization_priority: Priority
 search.appverid: 
 - MOE150
 - MET150
-description: "Cohasset Associates has validated that when Exchange Online and the Security & Compliance Center are configured as recommended, they meet the relevant storage requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4. You can download the assessment."
+description: Configure Exchange Online & Compliance Center to help meet regulatory requirements of CFTC Rule 1.31(c)-(d), FINRA Rule 4511, and SEC Rule 17a-4.
+ms.custom: 
+ - seo-marvel-apr2020
+ - seo-marvel-jun2020
 ---
 
 # Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4

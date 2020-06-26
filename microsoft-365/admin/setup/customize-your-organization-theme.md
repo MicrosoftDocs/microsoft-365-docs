@@ -62,7 +62,7 @@ As the admin of your Microsoft 365 for business subscription, you can change the
     
 4. Select **Save changes**.
     
-You can see your new theme in the admin center right away. After a short delay, you can see it throughout Microsoft 365, including on pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.office.com/article/SharePoint-mobile-app-for-iOS-339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.office.com/article/SharePoint-mobile-app-for-Android-d875654b-fb0a-4dbe-a17a-a676cf936284).
+You can see your new theme in the admin center right away. After a short delay, you can see it throughout Microsoft 365, including on pages in Outlook, SharePoint, [SharePoint mobile app for iOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a), and [SharePoint mobile app for Android](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284).
 
 You can remove your custom icon or custom colors at any time. Just return to the theme page and select **Remove custom theming**.
   

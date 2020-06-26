@@ -59,11 +59,11 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Manage your calendar and contacts in outlook
-            url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
+            url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
       - linkListType: video
         links:     
           - text: Create a shared calendar
-            url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
+            url: https://support.microsoft.com/office/8385667b-d758-4489-a53f-f542dd01e6ff
   - title: Solve email connection and delivery problems
     linkLists:
       - linkListType: how-to-guide
@@ -75,4 +75,4 @@ landingContent:
           - text: Recover deleted emails in a user mailbox 
             url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
           - text: Fix Outlook connection problems in Microsoft 365 and Exchange Online
-            url: https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f
+            url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 
 
 description: Learn how to use the Non-Office 365 content import feature to upload non-Office 365 documents into evidence in a data investigation.
-ms.custom: seo-marvel-mar2020
+ms.custom: 
+ - seo-marvel-mar2020
+ - seo-marvel-apr2020
 ---
 
 # Load non-Microsoft 365 data into evidence
 
 Not all documents that you may need to analyze in a data investigation will be located in Microsoft 365. With the Non-Microsoft 365 content import feature you can upload documents that don't live in Microsoft 365 into evidence so they can be analyzed in a data investigation.
 
-## Before you begin
+## Requirements to upload non-Office 365 content
 
 Using the upload Non-Microsoft 365 feature as described in this procedure requires that you have:
 
@@ -39,7 +41,7 @@ Using the upload Non-Microsoft 365 feature as described in this procedure requir
 - An account that is either an eDiscovery Manager or eDiscovery Administrator
 Microsoft Azure Storage Tools installed on a computer that has access to the non-Microsoft 365 content folder structure.
 
-- Install AzCopy, which you can do from here: https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+- Install AzCopy, which you can do from [Get started with AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy).
 
 ## Upload non-Microsoft 365 content in to a data investigation
 
