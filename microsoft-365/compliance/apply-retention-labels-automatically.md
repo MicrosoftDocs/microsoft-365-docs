@@ -41,14 +41,11 @@ You can apply retention labels to content automatically when that content contai
 
 - [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
     
-
-![Choose condition page for auto-apply label](../media/classifier-pre-trained-apply-label-match-trainable-classifier.png)
-
-The high-level steps to create and auto-publish retention labels:
+The processes to automatically apply a retention label to retain or delete content:
 
 ![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
-For detailed steps, use the following instructions.
+Use the following instructions for the two admin steps.
 
 > [!NOTE]
 > Auto-policies use conditions to automatically apply retention labels. You can also automatically apply a specific retention label with a label policy and the following scenarios: 
@@ -70,7 +67,7 @@ First, create your retention label. Then create an auto-policy to apply that lab
 
 Navigation instructions depend on whether you're using [records management](records-management.md) or not. Instructions are provided for both scenarios.
 
-### Create a retention label
+### Step 1: Create a retention label
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
@@ -91,7 +88,7 @@ Navigation instructions depend on whether you're using [records management](reco
 To edit an existing label, select it, and then select **Edit label** to start the same wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
 
-### Create an auto-apply policy
+### Step 2: Create an auto-apply policy
 
 When you create an auto-apply policy, you select a retention label to automatically apply to content, based on the conditions that you specify.
 
