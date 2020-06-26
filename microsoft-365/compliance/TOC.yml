@@ -290,7 +290,8 @@
         - name: Learn about retention labels
           href: labels.md
         - name: Create and apply retention labels
-          href: create-apply-retention-labels.md        - name: Apply a retention label to content automatically
+          href: create-apply-retention-labels.md
+        - name: Apply a retention label to content automatically
           href: aply-retention-labels-automatically.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
