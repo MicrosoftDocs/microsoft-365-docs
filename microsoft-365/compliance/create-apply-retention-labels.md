@@ -1,5 +1,5 @@
 ---
-title: "Create and apply retention labels to retain or delete content"
+title: "Create and apply retention labels in apps to retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,7 +19,7 @@ search.appverid:
 description: Instructions to create and publish retention labels so you can then manually apply labels to retain what you need and delete what you don't
 ---
 
-# Create and apply retention labels to retain or delete content
+# Create and apply retention labels in apps to retain or delete content
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -139,17 +139,13 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ## Apply published retention labels
 
-Use the following sections to learn how published retention labels can be applied:
+Use the following sections to learn how published retention labels can be applied in apps:
 
 - [Manually apply retention labels](#manually-apply-retention-labels)
 
 - [Applying a default retention label to all content in a SharePoint library, folder, or document set](#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set)
 
 - [Automatically applying a retention label to email by using rules](#automatically-applying-a-retention-label-to-email-by-using-rules)
-
-- [Using a retention label as a condition in a DLP policy](#using-a-retention-label-as-a-condition-in-a-dlp-policy)
-
-Event-based retention is another supported scenario for retention labels. For more information, see [Overview of event-driven retention](event-driven-retention.md).
 
 ### Manually apply retention labels 
 

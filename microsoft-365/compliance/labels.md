@@ -43,12 +43,12 @@ With retention labels, you can:
 - **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
-
-- Specific types of sensitive information.
-
-- Specific keywords that match a query you create.
-
-- Pattern matches for a trainable classifier.
+   
+    - Specific types of sensitive information.
+    
+    - Specific keywords that match a query you create.
+    
+    - Pattern matches for a trainable classifier.
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
@@ -68,7 +68,7 @@ For example, you can create and apply a retention label named "Review later" wit
 
 ### Using a retention label as a condition in a DLP policy
 
-You can use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
+You can also use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
   
 For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -247,12 +247,11 @@ There are several other features that have previously been used to retain or del
     
 ## Next steps
 
-To use retention labels that both admins and users can apply to content, see [Create and apply retention labels](create-retention-labels.md). This method supports the following scenarios:
+To use retention labels that both admins and users can apply in apps, see [Create and apply retention labels in apps](create-retention-labels.md). This method supports the following scenarios:
 
 - Manually apply retention labels in apps
 - Applying a default retention label to all content in a SharePoint library, folder, or document set
 - Automatically applying a retention label to email by using rules
-- Using a retention label as a condition in a DLP policy
 
 To use retention labels that are automatically applied to content, based on conditions, see [Apply a retention label to content automatically](apply-retention-labels-automatically.md).
 
