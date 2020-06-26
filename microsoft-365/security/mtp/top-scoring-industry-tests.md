@@ -65,7 +65,7 @@ The AV-TEST Product Review and Certification Report tests on three categories: p
 
 Business Security Test consists of three main parts: the Real-World Protection Test that mimics online malware attacks, the Malware Protection Test where the malware enters the system from outside the internet (for example by USB), and the Performance Test that looks at the impact on the system's performance.
 
-- Business Security Test 2020 (March — April): [Real-World Protection Rate 99.5%](https://www.av-comparatives.org/tests/business-security-test-march-april-2020-factsheet/) <sup>**Latest**</sup>
+- Business Security Test 2020 Factsheet (March — April): [Real-World Protection Rate 99.5%](https://www.av-comparatives.org/tests/business-security-test-march-april-2020-factsheet/) <sup>**Latest**</sup>
 
     Microsoft Defender Antivirus has scored consistently high in Real-World Protection Rates over the past year, with 99.5% in the latest test.
 
