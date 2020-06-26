@@ -23,7 +23,7 @@ description: Create and auto-publish retention labels so you can automatically a
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-One of the most powerful features of [retention labels](labels.md) is the ability to apply them automatically to content that matches certain conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
+One of the most powerful features of [retention labels](labels.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
 Auto-applying retention labels are powerful because:
   
@@ -33,15 +33,9 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content contains:
-  
-- [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+You can apply retention labels to content automatically when that content contains sensitive information, keywords, or a match for [trainable classifiers](classifier-getting-started-with.md).
     
-- [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
-
-- [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
-    
-The processes to automatically apply a retention label to retain or delete content:
+The processes to automatically apply a retention label based on these conditions:
 
 ![Diagram of roles and tasks for auto-apply labels](../media/32f2f2fd-18a8-43fd-839d-72ad7a43e069.png)
 
@@ -157,6 +151,9 @@ Examples queries:
 When you choose the option for a trainable classifier, you can select one of the built-in classifiers, or a custom classifier. The built-in classifiers include **Resumes**, **SourceCode**, **Targeted Harassment**, **Profanity**, and **Threat**:
 
 ![Choose trainable classifier](../media/retention-label-classifers.png)
+
+> [!CAUTION]
+> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use this built-in classifier and if you are currently using it, you should move your business processes off it. We recommend using the **Targeted Harassment**, **Profanity**, and **Threat** built-in classifiers instead.
 
 To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
 
