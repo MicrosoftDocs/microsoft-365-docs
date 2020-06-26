@@ -259,20 +259,6 @@ To create a rule, right-click an item \> **Rules** \> **Create Rule** \> **Advan
 ![Rules wizard with option to apply retention policies](../media/eeb2407c-15b6-4224-99cf-e0a00034d8ea.png)
   
 
-## Using a retention label as a condition in a DLP policy
-
-This method requires retention labels to be published to a retention label policy or an auto-apply policy.
-
-A retention label can enforce retention actions on content. In addition, you can use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
-  
-For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
-
-## Using retention labels to mark content as a record
-    
-This method requires retention labels to be published to a retention label policy.
-
-You can use retention labels to mark items as a record. This lets you implement a single, consistent records-management strategy across Microsoft 365. For more information, see [Learn about records](records.md).
-
 ## Next steps
 
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:

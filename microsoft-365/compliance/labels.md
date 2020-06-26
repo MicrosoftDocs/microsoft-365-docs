@@ -66,6 +66,12 @@ For example, you can create and apply a retention label named "Review later" wit
   
 ![Label settings page with retention turned off](../media/retention-label-retentionoff.png)
 
+### Using a retention label as a condition in a DLP policy
+
+You can use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
+  
+For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
+
 ## How retention labels work with retention label policies
 
 Retention labels are independent, reusable building blocks that are included in one or more retention label policies. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear. Then, admins and users can apply those labels to content.
