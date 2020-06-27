@@ -312,7 +312,6 @@ You can find any configured preservation policies on the **Policies** page in th
 
 ## Related information
 
-- [Learn about retention labels](labels.md)
 - [SharePoint Online Limits](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
 - [Limits and specifications for Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
 - [Comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
@@ -320,4 +319,8 @@ You can find any configured preservation policies on the **Policies** page in th
 ## Next steps
 
 If you are ready to create retention polices, see [Create and configure retention policies](create-retention-policies.md).
+
+To create and apply retention labels:
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
