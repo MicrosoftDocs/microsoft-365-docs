@@ -59,7 +59,7 @@ These permissions are required only to create and apply retention labels. Policy
 
 ## How to auto-apply a retention label
 
-First, create your retention label. Then create an auto-policy to apply that label. If you have already created your retention label, skip to [creating an auto-policy](step-2-create-an-auto-apply-policy).
+First, create your retention label. Then create an auto-policy to apply that label. If you have already created your retention label, skip to [creating an auto-policy](#step-2-create-an-auto-apply-policy).
 
 Navigation instructions depend on whether you're using [records management](records-management.md) or not. Instructions are provided for both scenarios.
 
