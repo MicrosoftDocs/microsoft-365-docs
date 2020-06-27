@@ -263,7 +263,7 @@ Because the retention labels have been auto-applied to documents, the documents 
 
 Now that the retention labels were successfully automatically applied, let's focus on the event that will indicate the end of production for a particular product. When this event occurs, it triggers the beginning of the retention period defined in retention labels auto-applied to documents. For example, for product specification documents, the five-year retention period begins when the "end of production" event is triggered.
 
-You can manually create the event in the security and compliance center by going to **Records Managements** > **Events** and choosing the event type, setting the correct Asset Ids, and entering a date for the event. For more information, see [Overview of event-driven retention](event-driven-retention.md).
+You can manually create the event in the security and compliance center by going to **Records Managements** > **Events** and choosing the event type, setting the correct Asset Ids, and entering a date for the event. For more information, see [Start retention when an event occurs](event-driven-retention.md).
 
 For this scenario, we'll automatically create the event by generating it from an external production system. In this case, the system that generates the event is a simple SharePoint list that indicates whether a product is in production and a [Microsoft Flow](https://docs.microsoft.com/flow/getting-started) that's associated with the list and will trigger the event. In a real-world scenario, it could be any system that generates the event, such as an HR or CRM system. Flow contains many ready-to-use interactions and building block for Microsoft 365 workloads such as Exchange, SharePoint, Teams, and Dynamics 365, and third-party apps such as Twitter, Box, Salesforce, and Workdays. This makes it easy to integrate Flow with these systems. For more information, see [Automate event-driven retention](automate-event-driven-retention.md).
 
@@ -328,7 +328,7 @@ This means the retention period for the label applied to the Spinning Widget pro
 
 ### More about Asset Ids
 
-As explained in the [overview of event-driven retention](event-driven-retention.md), it's important to understand the relationship between event types, labels, events, and asset Ids. The Asset Id is simply another document property in SharePoint and OneDrive. It helps you to further identify the documents whose retention period will be triggered by the event. By default, SharePoint has an Asset Id property that you can use for event-driven retention:
+As explained in the [Start retention when an event occurs](event-driven-retention.md), it's important to understand the relationship between event types, labels, events, and asset Ids. The Asset Id is simply another document property in SharePoint and OneDrive. It helps you to further identify the documents whose retention period will be triggered by the event. By default, SharePoint has an Asset Id property that you can use for event-driven retention:
 
 ![Asset Id property displayed in document properties detail page](../media/SPRetention26.png)
 

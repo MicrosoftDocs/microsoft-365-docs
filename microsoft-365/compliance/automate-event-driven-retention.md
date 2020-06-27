@@ -39,7 +39,7 @@ For example, each day, tens and hundreds of employees are joining and leaving or
 
 - **The period of retention of content can also be an unknown date**. For example, with retention labels, you can also base a retention period on when a specific type of event occurs, such as an employee leaving the organization.
 
-The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. This is called event-based retention. To learn more, see [Overview of event-driven retention](event-driven-retention.md).
+The event triggers the start of the retention period, and all content with a label applied for that type of event get the label's retention actions enforced on them. This is called event-based retention. To learn more, see [Start retention when an event occurs](event-driven-retention.md).
 
 ## Set up event-based retention
 
@@ -92,7 +92,7 @@ To create a records repository, the compliance admin:
 
 There are two ways in which event-based retention can be triggered:
 
-- **Using the admin center UI** This is a process that can be used to retain less content at a time or the frequency to trigger retention isn't often, such as monthly or yearly. For more information about this method, see [Overview of event-driven retention](event-driven-retention.md). However, this method of triggering retention can be time consuming and prone to error, thus stunting scalability. Therefore, an automated, seamless solution to trigger retention can enhance data security and compliance.
+- **Using the admin center UI** This is a process that can be used to retain less content at a time or the frequency to trigger retention isn't often, such as monthly or yearly. For more information about this method, see [Start retention when an event occurs](event-driven-retention.md). However, this method of triggering retention can be time consuming and prone to error, thus stunting scalability. Therefore, an automated, seamless solution to trigger retention can enhance data security and compliance.
 
 - **Using a M365 REST API** This process can be used when large amounts of content are to be retained at a time and/or the frequency to trigger retention is often such as daily or weekly. The flow detects when an event occurs in your line-of-business system, and then automatically creates a related event in the Security & Compliance Center. You don't need to manually create an event in the UI each time one occurs.
 

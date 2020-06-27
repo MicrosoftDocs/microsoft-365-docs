@@ -1,5 +1,5 @@
 ---
-title: Overview of event-driven retention
+title: Start retention when an event occurs
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -22,7 +22,7 @@ ms.custom:
 description: Typically part of a records management solution, you can configure a retention label to start the retention period based on an event that you identify.
 ---
 
-# Overview of event-driven retention
+# Start retention when an event occurs
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 

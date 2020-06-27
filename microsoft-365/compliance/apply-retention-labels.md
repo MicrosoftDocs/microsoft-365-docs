@@ -196,6 +196,6 @@ You can use retention labels to mark items as a record. This lets you implement 
 
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
 
-- [Overview of event-driven retention](event-driven-retention.md)
+- [Start retention when an event occurs](event-driven-retention.md)
 - [Automate event-based retention](automate-event-driven-retention.md)
 - [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md)

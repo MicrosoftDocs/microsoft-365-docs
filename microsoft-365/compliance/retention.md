@@ -1,5 +1,5 @@
 ---
-title: "Learn about retention to automatically retain or delete content"
+title: "Learn about retention policies & labels to automatically retain or delete content"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,11 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: Learn how retention policy to retain or delete content, and how to apply a single policy to the entire organization or to specific locations or users.
-ms.custom: seo-marvel-apr2020
+description: Learn about retention policies and retention labels that help you to retain what you need and delete what you don't.
 ---
 
-# Learn about retention
+# Learn about retention policies and retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -232,10 +231,10 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
-|Locations supported <br />-  Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, excluding public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
+|Locations supported <br />-  Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
 |Automatic labeling (configured by administrators) | Yes | Yes |
 |Manual labeling (applied by users and administrators) | No | Yes |
-|Apply based on location | Yes| No, with exception of default label for SharePoint |
+|Apply based on location | Yes| No, except default label for SharePoint |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
 |Condition for automatic labeling: Sensitive info types or exact matches | Yes | Yes |

@@ -134,7 +134,7 @@ Use the following sections to learn how published retention labels can be applie
 
 - [Using a retention label as a condition in a DLP policy](#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 
-Event-based retention is another supported scenario for retention labels. For more information, see [Overview of event-driven retention](event-driven-retention.md).
+Event-based retention is another supported scenario for retention labels. For more information, see [Start retention when an event occurs](event-driven-retention.md).
 
 ### Manually apply retention labels 
 
@@ -262,6 +262,6 @@ You can use retention labels to mark items as a record. This lets you implement 
 
 Event-based retention is another supported scenario for retention labels. For more information, see the following articles:
 
-- [Overview of event-driven retention](event-driven-retention.md)
+- [Start retention when an event occurs](event-driven-retention.md)
 - [Automate event-based retention](automate-event-driven-retention.md)
 - [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md)

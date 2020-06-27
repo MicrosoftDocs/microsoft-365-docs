@@ -277,7 +277,7 @@
       items: 
         - name: Learn about retention
           items:
-            - name: Learn about retention policies & labels
+            - name: Retention policies and labels
               href: retention.md
             - name: Retention for SharePoint and OneDrive
               href: retention-policies-sharepoint.md
@@ -299,7 +299,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: Use event-based retention
           items: 
-            - name: Start retention when events occur
+            - name: Start retention when an event occurs
               href: event-driven-retention.md
             - name: Automate event-based retention
               href: automate-event-driven-retention.md
