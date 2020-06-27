@@ -108,7 +108,9 @@ After you choose an event type and save the retention label, the event type cann
   
 ### Step 3: Publish or auto-apply the event-based retention labels
 
-Just like any retention label, you need to [publish or auto-apply](create-retention-retention.md) an event-based label, so that it's manually or automatically applied to content.
+Just like any retention label, you need to publish or auto-apply an event-based label, for it to be manually or automatically applied to content:
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 > [!NOTE]
 > If you select an event-driven retention label from **Records Management** > **File plan** tab or **Data governance** > **Labels** tab, the **Auto-apply a label** button is not available.

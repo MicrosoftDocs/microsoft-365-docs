@@ -33,7 +33,7 @@ When content is marked as an record:
 
 - You have proof of disposition when they are deleted at the end of their retention period.
 
-You use [retention labels](retention.md) to mark content as a record. After you create retention labels that declare records, you can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record. For instructions, see [Create, publish, and auto-apply retention labels ](create-retention-retention.md).
+You use [retention labels](retention.md#retention-labels) to mark content as a record. After you create retention labels that declare records, you can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
 
 By using retention labels to declare records, you can implement a single, consistent records-management strategy across your Microsoft 365 environment.
 
@@ -165,7 +165,5 @@ The actions of locking and unlocking records are logged in the audit log. You ca
 For more information about searching for these events, see the "File and page activities" section in [Search the audit log in the Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## Next steps
-
-For instructions how to create and publish the retention labels that contain the setting to mark content as a record, see [Create, publish, and auto-apply retention labels](create-retention-retention.md).
 
 To watch videos related to configuring and using records management, see the [Data governance selections on YouTube](https://go.microsoft.com/fwlink/?linkid=867039).

@@ -102,11 +102,15 @@ Now that you’ve configured the basics for compliance management for your organ
 
 ### Configure retention labels
 
-While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](retention.md) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
+While retention policies apply at the container level to locations such as SharePoint sites and Exchange mailboxes, [retention labels](retention.md#retention-labels) allow for more specific targeting for your retention and deletion policies. For example, at the document or email message level that end users can apply manually in addition to automatic application by administrators. You can also apply a retention label to a document library, folder, or document set in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
 Additionally, retention labels support [records management](records-management.md) to mark content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. These restrictions might be needed to help your organization comply with regulatory requirements.
 
-For step-by-step guidance to create and publish retention labels, see [Create, publish, and auto-apply retention labels](create-retention-retention.md). For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+For step-by-step guidance to create and publish retention labels, see the following guidance:
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+
+For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ### Identify and define sensitive information types
 

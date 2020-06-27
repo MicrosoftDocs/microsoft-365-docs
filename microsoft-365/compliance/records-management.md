@@ -32,7 +32,7 @@ Records management in Microsoft 365 provides the following capabilities:
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 
-- **Establish retention and deletion policies within the record label**. Define [retention](create-retention.md#retaining-content-for-a-specific-period-of-time) and [disposition](create-retention.md#deleting-content-thats-older-than-a-specific-age) periods based on various factors that include the date last modified or created.
+- **Configure retention and deletion settings with the retention label**. Define retention periods and actions based on various factors that include the date last modified or created.
 
 - **Trigger event-based retention** with [event-based retention](event-driven-retention.md).
 

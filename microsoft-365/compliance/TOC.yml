@@ -286,7 +286,7 @@
             - name: Retention for Exchange
               href: retention-policies-exchange.md
         - name: Create retention policies
-          href: create-retention.md
+          href: create-retention-policies.md
         - name: Use file plan
           href: file-plan-manager.md
         - name: Create retention labels and apply them in apps
@@ -772,7 +772,7 @@
         - name: Overview of Advanced Audit
           href: advanced-audit.md
         - name: Manage audit log retention policies
-          href: audit-log-retention.md
+          href: audit-log-retention-policies.md
         - name: Use Advanced Audit to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
     - name: Alert policies

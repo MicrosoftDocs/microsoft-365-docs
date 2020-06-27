@@ -114,7 +114,7 @@ All disposition actions can be audited and the justification text entered by the
   
 ### How long until disposed content is permanently deleted
 
-Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content in the SharePoint site or OneDrive account becomes eligible for the standard cleanup process described in [How a retention policy works with content in place](retention.md#how-a-retention-policy-works-with-content-in-place).
+Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content in the SharePoint site or OneDrive account becomes eligible for the standard cleanup process described in [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## Disposition of records
 
