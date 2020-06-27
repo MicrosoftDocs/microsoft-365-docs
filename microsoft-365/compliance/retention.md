@@ -40,11 +40,9 @@ Retention settings that you configure can help you achieve all these goals. Mana
     
 With retention settings, you can decide proactively whether to retain content, delete content, or both—retain and then delete the content.
 
-When content is subject to retention settings, people can continue to edit and work with the content as if nothing's changed. The content is retained in place, in its original location. But if someone edits or deletes content that's subject to the retention policy, a copy of the original content is saved to a secure location where it's retained while the retention policy for that content is in effect. For more information, see the [How a retention policy works with content in place](#how-a-retention-policy-works-with-content-in-place) section on this page
+## How retention settings work with content in place
 
-## How a retention policy works with content in place
-
-After content is assigned your configured retention settings, the content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is retained as it existed when you applied the policy.
+When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is retained as it existed when you applied the policy.
   
 - For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library. Be aware that the Preservation Hold library consumes storage quota for the site.
 
@@ -71,22 +69,17 @@ For more detailed information about how retention settings work with different w
 
 You can use both retention policies and retention labels to assign your retention settings to content. 
 
-Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at a item level.
+Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level.
 
 For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others in the same site should be retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels that have different retention settings. 
 
 Unlike retention settings from retention policies, retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location.  In addition, retention labels have the following capabilities that retention policies don't support: 
  
-- Start the retention period from when the content was labeled, rather than the age of the content or when it was last modified.
-
-
-- Use trainable classifers to identify content to label.
-
-- Apply a default label for SharePoint documents.
-
-- Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
-
-- Mark the content as a [record](records.md) as part of the label settings, and then have [proof of disposition](disposition.mddisposition-of-records) when content is deleted at the end of its retention period.
+Start the retention period from when the content was labeled, rather than the age of the content or when it was last modified.
+Use trainable classifers to identify content to label.
+Apply a default label for SharePoint documents.
+Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
+Mark the content as a [record](records.md) as part of the label settings, and then have [proof of disposition](disposition.mddisposition-of-records) when content is deleted at the end of its retention period.
 
 ### Retention policies
 
