@@ -75,10 +75,13 @@ For example, if all documents in a SharePoint site should be retained for five y
 
 Unlike retention settings from retention policies, retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location.  In addition, retention labels have the following capabilities that retention policies don't support: 
  
-Start the retention period from when the content was labeled, rather than the age of the content or when it was last modified.
-Use trainable classifers to identify content to label.
-Apply a default label for SharePoint documents.
-Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
+- Options to start the retention period from when the content was labeled or based on an event, rather than the age of the content or when it was last modified.
+
+- Use trainable classifers to identify content to label.
+
+- Apply a default label for SharePoint documents.
+
+- Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
 Mark the content as a [record](records.md) as part of the label settings, and then have [proof of disposition](disposition.mddisposition-of-records) when content is deleted at the end of its retention period.
 
 ### Retention policies
