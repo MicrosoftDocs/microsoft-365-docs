@@ -55,7 +55,7 @@ These permissions are required only to create and apply a retention policy. The 
 
 5. Complete the wizard to save your settings.
 
-When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention-policies.md#the-principles-of-retention-or-what-takes-precedence)
+When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention-policies.mdretention.md#the-principles-of-retention-or-what-takes-precedence)
 
 ### Configuration information for Microsoft 365 groups
 
@@ -196,31 +196,6 @@ If your retention policies are likely to be subject to these limitations, choose
 If you edit a retention policy and content is already subject to the original settings in your retention policy, your updated settings will be automatically applied to this content in addition to content that's newly identified.
 
 Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
-
-## Find the PowerShell cmdlets for retention policies
-
-To use the retention policies cmdlets:
-  
-1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
-    
-2. Use these Office 365 Security & Compliance Center cmdlets:
-    
-    - [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy)
-    
-    - [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
-    
-    - [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancepolicy)
-    
-    - [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)
-    
-    - [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule)
-    
-    - [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)
-    
-    - [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancerule)
-    
-    - [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
-
 
 ## Lock a retention policy by using PowerShell
 
