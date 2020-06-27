@@ -290,7 +290,7 @@
         - name: Use file plan
           href: file-plan-manager.md
         - name: Create retention labels and apply them in apps
-          href: create-apply-retention-retention.md
+          href: create-apply-retention-labels.md
         - name: Apply a retention label to content automatically
           href: apply-retention-labels-automatically.md
         - name: Comply with SEC Rule 17a-4

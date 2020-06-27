@@ -77,7 +77,7 @@ If a user leaves your organization and the user's mailbox is included in a reten
 
 ## How to configure a retention policy for Exchange
 
-Follow the instructions for [Create and configure retention policies](create-retention.md) and for the **Choose locations**  page of the wizard, select one of the following options:
+Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations**  page of the wizard, select one of the following options:
 
 - **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
 

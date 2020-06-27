@@ -28,7 +28,7 @@ Organizations of all types require a records-management solution to manage regul
 
 Records management in Microsoft 365 provides the following capabilities:
 
-- **Label content as a record**. Create and publish retention labels that mark content as a [record](records.md) that can then be applied by end users or [auto-applied](retention.md#applying-a-retention-label-automatically-based-on-conditions) by identifying sensitive information, keywords, or content types.
+- **Label content as a record**. Create and publish retention labels that mark content as a [record](records.md) that can then be applied by end users or [auto-applied](apply-retention-labels-automatically.md) by identifying sensitive information, keywords, or content types.
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 

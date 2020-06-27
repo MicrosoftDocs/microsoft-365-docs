@@ -68,7 +68,7 @@ Microsoft 365 comes with five recommended built-in classifiers:
 
 6. Choose `Create new labels` and create a label for use just with this test. When you do this, leave `Retention` set to `off`. You don't want to turn on any retention or other actions. In this case, you'll be using the retention label simply as a text label, without enforcing any actions. For example, you can create a retention label named "SourceCode classifier test" with no actions, and then auto-apply that retention label to content that has Source code classifier as a condition. To learn more about creating retention labels, see [Overview of retention labels](retention.md).
   
-7. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](retention.md#applying-a-retention-label-automatically-based-on-conditions).
+7. Choose `Auto-apply a label` and then `Choose a label to auto-apply`. To learn more about using condition based auto-apply a label see, [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels).
 
 8. Choose your test label from the list and choose `Next`.
 
@@ -102,4 +102,4 @@ See also:
 
 - [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
 - [Overview of retention labels](retention.md)
-- [Auto-apply retention label policy based on a condition](retention.md#applying-a-retention-label-automatically-based-on-conditions)
+- [Auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)

@@ -356,7 +356,7 @@ You can currently use only a retention label as a condition, not a [sensitivity 
 
 Several features can be applied to content containing sensitive information:
   
-- A [retention label](retention.md#applying-a-retention-label-automatically-based-on-conditions) and a [retention policy](retention.md) can both enforce **retention** actions on this content. 
+- A [retention label and a retention policy](retention.md) can both enforce **retention** actions on this content. 
     
 - A DLP policy can enforce **protection** actions on this content. And before enforcing these actions, a DLP policy can require other conditions to be met in addition to the content containing a label. 
     

@@ -84,7 +84,7 @@ When content is subject to a retention policy, people can continue to edit and w
 
 You can quickly put a retention policy in place for multiple locations in your Microsoft 365 environment: Exchange mail and public folders, SharePoint sites, OneDrive accounts, and Microsoft 365 groups. Known as an 'org-wide retention policy', there are no limits to the number of mailboxes or sites the policy can include. But if you need to get more specific, you can do so by configuring a retention policy for specific locations and then include or exclude sites or users.
 
-For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention.md). For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
+For step-by-step guidance to configure a retention policy, see [Create and configure retention policies](create-retention-policies.md). For records management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management).
 
 ## Task 8: Configure sensitive information and offensive language policies
 

@@ -77,7 +77,11 @@ When you create a retention label, you have the option to use the retention labe
     
    ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
 
-3. [Publish](retention.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](retention.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
+3. Apply the retention label to SharePoint sites and OneDrive accounts:
+    
+    - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+    
+    - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
 
 ### Applying a retention label to content

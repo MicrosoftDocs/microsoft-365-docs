@@ -47,7 +47,7 @@ Use the following instructions for the two admin steps.
 > - Apply a default retention label to a SharePoint library, folder, or document set so that unlabeled content in that container is automatically labeled
 >- Automatically applying a retention label to email by using rules
 >
-> For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-retention.md).
+> For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
 
 ## Before you begin
 

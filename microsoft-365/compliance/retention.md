@@ -337,9 +337,9 @@ You can find any configured preservation policies on the **Policies** page in th
 
 ## Next steps
 
-If you are ready to create retention polices, see [Create and configure retention policies](create-retention.md).
+If you are ready to create retention polices, see [Create and configure retention policies](create-retention-policies.md).
 
 To create and apply retention labels:
-- [Create retention labels and apply them in apps](create-apply-retention-retention.md)
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
 - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
