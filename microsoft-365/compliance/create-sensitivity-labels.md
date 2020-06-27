@@ -58,11 +58,7 @@ The global admin for your organization has full permissions to create and manage
 
 3. Follow the prompts in the wizard for the label settings.
     
-<<<<<<< HEAD
-    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information.
-=======
     For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the wizard for individual settings.
->>>>>>> e33b283b547886f4528c06e642702019752f2f0c
 
 4. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
 
