@@ -132,5 +132,5 @@ The point of the data classification reporting is to provide visibility into the
 - [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [Overview of retention policies](retention.md)
+- [Learn about retention policies and retention labels](retention.md)
 - [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)

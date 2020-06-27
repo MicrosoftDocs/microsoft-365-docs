@@ -96,7 +96,7 @@ The following table describes the different types of organization-wide holds and
 |Microsoft 365 retention policies applied to Exchange mailboxes, Exchange public folders, and Teams chats    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organization-wide retention policies applied to Exchange mailboxes, Exchange public folders, and 1xN chats in Microsoft Teams are identified by GUIDs that start with the `mbx` prefix. Note 1xN chats are stored in the mailbox of the individual chat participants.      |
 |Microsoft 365 retention policy applied to Microsoft 365 Groups and Teams channel messages     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organization-wide retention policies applied to Microsoft 365 groups and channel messages in Microsoft Teams are identified by GUIDs that start with the `grp` prefix. Note channel messages are stored in the group mailbox that is associated with a Microsoft Team.     |
 
-For more information retention policies applied to Microsoft Teams, see the "Teams location" section [Overview of retention policies](create-retention.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+For more information retention policies applied to Microsoft Teams, see the "Teams location" section [Learn about retention policies and retention labels](create-retention.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
 ### Understanding the format of the InPlaceHolds value for retention policies
 
@@ -116,7 +116,7 @@ The following table defines the three possible retention actions:
 |**2**    |    Indicates that the retention policy is configured to hold items. The policy doesn't delete items after the retention period expires.     |
 |**3**     |   Indicates that the retention policy is configured to hold items and then delete them after the retention period expires.      |
 
-For more information about retention actions, see the "Retaining content for a specific period of time" section in [Overview of retention policies](create-retention.md#retaining-content-for-a-specific-period-of-time).
+For more information about retention actions, see the "Retaining content for a specific period of time" section in [Learn about retention policies and retention labels](create-retention.md#retaining-content-for-a-specific-period-of-time).
    
 ## Step 2: Use the GUID to identify the hold
 

@@ -28,7 +28,7 @@ In Office 365, you can use retention labels to implement a retention schedule fo
   
 By using the script and .csv files provided below, you can bulk create retention labels and publish retention label policies. First you create a list of the retention labels and a list of the retention label policies in Excel, and then you use PowerShell to bulk create the retention labels and retention label policies in those lists. This makes it easier to create and publish all of the retention labels that your retention schedule requires at one time.
   
-For more information about retention labels, see [Overview of labels](retention.md).
+For more information about retention labels, see [Learn about retention policies and retention labels](retention.md).
   
 ## Disclaimer
 
