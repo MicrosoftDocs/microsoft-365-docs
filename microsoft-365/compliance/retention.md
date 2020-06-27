@@ -94,7 +94,7 @@ Retention policies can be applied to the following locations:
 - Skype for Business
 - Exchange public folders
 - Teams channel messages
-- Teams chats 
+- Teams chats
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
     
@@ -130,7 +130,7 @@ This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day de
 
 ### Retention labels
 
-Use retention labels for different types of content that require different actions taken on them to comply with industry regulations and internal policies. For example, you might have:
+Use retention labels for different types of content that require different retention settings, which might be needed to comply with industry regulations and internal policies. For example, you might have:
   
 - Tax forms that need to be retained for a minimum period of time. 
     
@@ -232,6 +232,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
+|Locations supported |- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams | - Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups  |
 |Automatic labeling (configured by administrators) | Yes | Yes |
 |Manual labeling (applied by users and administrators) | No | Yes |
 |Apply based on location | Yes| No, with exception of default label for SharePoint |
@@ -242,7 +243,6 @@ Use the following table to help you identify whether to use a retention policy o
 |Event-driven retention | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition | No |Yes, when item is declared a record|
-
 
 ## The principles of retention, or what takes precedence?
 
