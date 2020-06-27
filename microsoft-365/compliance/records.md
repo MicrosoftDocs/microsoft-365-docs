@@ -163,3 +163,5 @@ For more information about searching for these events, see the "File and page ac
 ## Next steps
 
 For instructions how to create and publish the retention labels that contain the setting to mark content as a record, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
+
+To watch videos related to configuring and using records management, see the [Data governance selections on YouTube](https://go.microsoft.com/fwlink/?linkid=867039).
