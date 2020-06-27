@@ -55,7 +55,7 @@ Keep the following things in mind about records:
 
     Also, if you change the record label that's applied to a folder (in SharePoint and OneDrive) to a retention label that does not declare content as a record, items in the folder keep their existing record label.
 
-    For more information about applying retention labels to SharePoint and OneDrive folders, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](retention.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+    For more information about applying retention labels to SharePoint and OneDrive folders, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
   - **Records can't be deleted**. If a user attempts to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with Exchange locations](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations).
 

@@ -81,7 +81,7 @@ Unlike retention settings from retention policies, retention labels persist with
 - Apply a default label for SharePoint documents.
 
 - Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
-Mark the content as a [record](records.md) as part of the label settings, and then have [proof of disposition](disposition.mddisposition-of-records) when content is deleted at the end of its retention period.
+Mark the content as a [record](records.md) as part of the label settings, and then have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
 
 ### Retention policies
 
