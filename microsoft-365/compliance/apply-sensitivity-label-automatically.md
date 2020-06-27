@@ -82,11 +82,11 @@ Use the following table to help you identify the differences in behavior for the
 |Label incoming email|No |Yes (encryption not applied) |
 
 > [!NOTE]
-> When content has been manually labeled, that label will never be replaced by automatic labeling. However, auto-labeling policies can replace a [lower priority label](sensitivity-labels.md#label-priority-order-matters) that was applied by using auto-labeling for Office apps.
+> When content has been manually labeled, that label will never be replaced by automatic labeling. However, auto-labeling policies can replace a [lower priority label](sensitivity-retention.md#label-priority-order-matters) that was applied by using auto-labeling for Office apps.
 
 ## How multiple conditions are evaluated when they apply to more than one label
 
-The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).
+The labels are ordered for evaluation according to their position that you specify in the policy: The label positioned first has the lowest position (least sensitive) and the label positioned last has the highest position (most sensitive). For more information on priority, see [Label priority (order matters)](sensitivity-retention.md#label-priority-order-matters).
 
 ## Don't configure a parent label to be applied automatically or recommended
 
@@ -94,13 +94,13 @@ Remember, you can't apply a parent label (a label with sublabels) to content. Ma
 
 To use automatic labeling with sublabels, make sure you publish both the parent label and the sublabel.
 
-For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-labels.md#sublabels-grouping-labels).
+For more information on parent labels and sublabels, see [Sublabels (grouping labels)](sensitivity-retention.md#sublabels-grouping-labels).
 
 ## How to configure auto-labeling for Office apps
 
 Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is in [different stages of availability for different apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). You can choose to apply sensitivity labels to content automatically when sensitive information is detected. Choose from a list of sensitive info types or trainable classifiers:
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-retention.md). You can choose to apply sensitivity labels to content automatically when sensitive information is detected. Choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
@@ -196,10 +196,10 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
     - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
     - To test new custom sensitive information types, create them before you create your auto-labeling policy, and then create new documents with sample data for testing.
 
-- One or more sensitivity labels [created and published](create-sensitivity-labels.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
+- One or more sensitivity labels [created and published](create-sensitivity-retention.md) (to at least one user) that you can select for your auto-labeling policies. For these labels:
     - It doesn't matter if the auto-labeling in Office apps label setting is turned on or off, because that label setting supplements auto-labeling policies, as explained in the introduction.
     - If the labels you want to use for auto-labeling are configured to use visual markings (headers, footers, watermarks), note that these are not applied to documents.
-    - If the labels apply [encryption](encryption-sensitivity-labels.md), they must be configured for the **Assign permissions now** setting.
+    - If the labels apply [encryption](encryption-sensitivity-retention.md), they must be configured for the **Assign permissions now** setting.
 
 ### Learn about simulation mode
 

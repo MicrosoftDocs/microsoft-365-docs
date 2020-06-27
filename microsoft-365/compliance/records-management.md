@@ -28,11 +28,11 @@ Organizations of all types require a records-management solution to manage regul
 
 Records management in Microsoft 365 provides the following capabilities:
 
-- **Label content as a record**. Create and publish retention labels that mark content as a [record](records.md) that can then be applied by end users or [auto-applied](labels.md#applying-a-retention-label-automatically-based-on-conditions) by identifying sensitive information, keywords, or content types.
+- **Label content as a record**. Create and publish retention labels that mark content as a [record](records.md) that can then be applied by end users or [auto-applied](retention.md#applying-a-retention-label-automatically-based-on-conditions) by identifying sensitive information, keywords, or content types.
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 
-- **Establish retention and deletion policies within the record label**. Define [retention](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) and [disposition](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age) periods based on various factors that include the date last modified or created.
+- **Establish retention and deletion policies within the record label**. Define [retention](create-retention.md#retaining-content-for-a-specific-period-of-time) and [disposition](create-retention.md#deleting-content-thats-older-than-a-specific-age) periods based on various factors that include the date last modified or created.
 
 - **Trigger event-based retention** with [event-based retention](event-driven-retention.md).
 

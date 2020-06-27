@@ -23,7 +23,7 @@ description: Create and auto-publish retention labels so you can automatically a
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-One of the most powerful features of [retention labels](labels.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
+One of the most powerful features of [retention labels](retention.md) is the ability to apply them automatically to content that matches specified conditions. In this case, people in your organization don't need to apply the retention labels. Microsoft 365 does the work for them.
   
 Auto-applying retention labels are powerful because:
   
@@ -47,7 +47,7 @@ Use the following instructions for the two admin steps.
 > - Apply a default retention label to a SharePoint library, folder, or document set so that unlabeled content in that container is automatically labeled
 >- Automatically applying a retention label to email by using rules
 >
-> For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-labels.md).
+> For these scenarios, see [Create and apply retention labels in apps](create-apply-retention-retention.md).
 
 ## Before you begin
 
@@ -102,7 +102,7 @@ When you create an auto-apply policy, you select a retention label to automatica
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
-    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section.
+    For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.
 
 To edit an existing auto-apply label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 

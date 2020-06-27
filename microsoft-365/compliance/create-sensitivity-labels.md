@@ -23,7 +23,7 @@ description: "A requirement for all Microsoft Information Protection solutions: 
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-labels.md). To create and publish these labels, go to your labeling admin center, such as the [Microsoft 365 compliance center](https://compliance.microsoft.com/). You can also use the Microsoft 365 security center, or the Security & Compliance Center.
+All Microsoft Information Protection solutions (sometimes abbreviated to MIP) are implemented by using [sensitivity labels](sensitivity-retention.md). To create and publish these labels, go to your labeling admin center, such as the [Microsoft 365 compliance center](https://compliance.microsoft.com/). You can also use the Microsoft 365 security center, or the Security & Compliance Center.
 
 First, create and configure the sensitivity labels that you want to make available for apps and other services. For example, the labels you want users to see and apply from Office apps. 
 
@@ -31,7 +31,7 @@ Then, create one or more label policies that contain the labels and policy setti
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
+The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-retention.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
 ## Create and configure sensitivity labels
 
@@ -52,11 +52,11 @@ The global admin for your organization has full permissions to create and manage
 
 3. Follow the prompts for the label settings.
     
-    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information.
+    For more information about the label settings, see [What sensitivity labels can do](sensitivity-retention.md#what-sensitivity-labels-can-do) from the overview information.
 
 4. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
 
-5. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
+5. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-retention.md#label-priority-order-matters) from the overview information.
 
 To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
 
@@ -133,11 +133,11 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 6. Follow the prompts to configure the policy settings.
     
-    For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information.
+    For more information about these settings, see [What label policies can do](sensitivity-retention.md#what-label-policies-can-do) from the overview information.
 
 7. Repeat these steps if you need different policy settings for different users or locations. For example, you want additional labels for a group of users, or a different default label for a subset of users.
 
-8. If you create more than one label policy that might result in a conflict for a user or location, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-labels.md#label-policy-priority-order-matters) from the overview information.
+8. If you create more than one label policy that might result in a conflict for a user or location, review the policy order and if necessary, move them up or down. To change the order of a label policy, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label policy priority (order matters)](sensitivity-retention.md#label-policy-priority-order-matters) from the overview information.
 
 Completing the wizard automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
 
@@ -175,7 +175,7 @@ In comparison, when you delete a label:
 
 To configure and use your sensitivity labels for specific scenarios, use the following articles:
 
-- [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md)
+- [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-retention.md)
 
 - [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)
 

@@ -40,7 +40,7 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 - **Assign permissions now**, so that you determine exactly which users get which permissions to content with that label.
 - **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
-The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft 365 compliance center, Microsoft 365 security center, or the Security & Compliance Center.
+The encryption settings are available when you [create a sensitivity label](create-sensitivity-retention.md) in the Microsoft 365 compliance center, Microsoft 365 security center, or the Security & Compliance Center.
 
 ## Understand how the encryption works
 
@@ -50,7 +50,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ## How to configure a label for encryption
 
-[Create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
+[Create or edit a sensitivity label](create-sensitivity-retention.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
 
 - **None**: The default setting for a new label. No new encryption is applied.
 - **Apply**: Turns on encryption, and you then specify encryption settings.
@@ -261,7 +261,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 ## Example configurations for the encryption settings
 
-For each example that follows, do the configuration from the **Encryption** page of the wizard when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). First make sure that the **Encryption** is set to **Apply**:
+For each example that follows, do the configuration from the **Encryption** page of the wizard when you [create or edit a sensitivity label](create-sensitivity-retention.md#create-and-configure-sensitivity-labels). First make sure that the **Encryption** is set to **Apply**:
 
 ![Apply encryption option in the sensitivity label wizard](../media/apply-encryption-option.png)
 

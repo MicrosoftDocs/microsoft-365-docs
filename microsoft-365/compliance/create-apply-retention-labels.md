@@ -23,7 +23,7 @@ description: Instructions to create and publish retention labels so you can then
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use the following information to help you create and publish [retention labels](labels.md), and then apply them to documents and emails.
+Use the following information to help you create and publish [retention labels](retention.md), and then apply them to documents and emails.
 
 Retention labels help you retain what you need and delete what you don't. They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.
 
@@ -89,7 +89,7 @@ Publish retention labels so that they can be applied by admins and users.
 
 2. Follow the prompts in the wizard.
     
-    For information about the locations supported by retention labels, see the [Retention labels and locations](labels.md#retention-label-policies-and-locations) section. 
+    For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section. 
 
 To edit an existing retention label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 

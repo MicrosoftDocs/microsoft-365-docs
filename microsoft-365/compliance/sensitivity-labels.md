@@ -67,7 +67,7 @@ When you assign a sensitivity label to a document or email, it's like a stamp th
 
 In Office apps, a sensitivity label appears like a tag to users on an email or document.
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](retention.md) applied to it.
 
 > [!div class="mx-imgBorder"]
 > ![Sensitivity label applied to an email](../media/Sensitivity-label-on-email.png)
@@ -81,7 +81,7 @@ After a sensitivity label is applied to an email or document, any configured pro
 
 - **Encrypt** email only or both email and documents. You can choose which users or group have permissions to perform which actions and for how long. For example, you can choose to allow users in a specific group in another organization to have permissions to review the content for only seven days after the content is labeled. Alternatively, instead of administrator-defined permissions, you can allow your users to assign permissions to the content when they apply the label. 
     
-    For more information about the **Encryption** settings when you create or edit a sensitivity label, see [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-labels.md).
+    For more information about the **Encryption** settings when you create or edit a sensitivity label, see [Restrict access to content by using encryption in sensitivity labels](encryption-sensitivity-retention.md).
 
 - **Mark the content** when you use Office apps, by adding watermarks, headers, or footers to email or documents that have the label applied. Watermarks can be applied to documents but not email. Example header and watermark:
     
@@ -218,7 +218,7 @@ By using Cloud App Security (CAS), you can discover, classify, label, and protec
 
 Cloud App Security works with both Azure Information Protection labels and sensitivity labels:
 
-- If the labeling admin centers have one or more sensitivity labels [published](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) to at least one user: Sensitivity labels are used.
+- If the labeling admin centers have one or more sensitivity labels [published](create-sensitivity-retention.md#publish-sensitivity-labels-by-creating-a-label-policy) to at least one user: Sensitivity labels are used.
 
 - If the labeling admin centers don't have sensitivity labels published: Azure Information Protection labels are used.
 
@@ -232,5 +232,5 @@ You can also learn about [partner solutions that are integrated with Microsoft I
 
 ## Deployment guidance
 
-See [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
+See [Get started with sensitivity labels](get-started-with-sensitivity-retention.md).
 

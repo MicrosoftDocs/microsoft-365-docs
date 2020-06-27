@@ -42,7 +42,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Author|Author|Doc_authors|Author from the document metadata.|
 |BCC|Bcc|Email_bcc|Bcc field for message types. Format is **DisplayName \<SMTPAddress>**.|
 |CC|Cc|Email_cc|Cc field for message types. Format is **DisplayName \<SMTPAddress>**.|
-|Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](labels.md) applied to content in Office 365.|
+|Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|Conversation Body||Conversation body of the item.|

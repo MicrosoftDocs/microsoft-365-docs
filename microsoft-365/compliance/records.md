@@ -33,7 +33,7 @@ When content is marked as an record:
 
 - You have proof of disposition when they are deleted at the end of their retention period.
 
-You use [retention labels](labels.md) to mark content as a record. After you create retention labels that declare records, you can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record. For instructions, see [Create, publish, and auto-apply retention labels ](create-retention-labels.md).
+You use [retention labels](retention.md) to mark content as a record. After you create retention labels that declare records, you can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record. For instructions, see [Create, publish, and auto-apply retention labels ](create-retention-retention.md).
 
 By using retention labels to declare records, you can implement a single, consistent records-management strategy across your Microsoft 365 environment.
 
@@ -55,7 +55,7 @@ Keep the following things in mind about records:
 
     Also, if you change the record label that's applied to a folder (in SharePoint and OneDrive) to a retention label that does not declare content as a record, items in the folder keep their existing record label.
 
-    For more information about applying retention labels to SharePoint and OneDrive folders, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+    For more information about applying retention labels to SharePoint and OneDrive folders, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](retention.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
 
   - **Records can't be deleted**. If a user attempts to delete a record in Exchange, the item is moved to the Recoverable Items folder as described in [How a retention policy works with Exchange locations](retention-policies-exchange.md#how-a-retention-policy-works-with-exchange-locations).
 
@@ -77,7 +77,7 @@ When you create a retention label, you have the option to use the retention labe
     
    ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
 
-3. [Publish](labels.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](labels.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
+3. [Publish](retention.md#how-retention-labels-work-with-retention-label-policies) or [auto-apply](retention.md#applying-a-retention-label-automatically-based-on-conditions) the retention label to SharePoint sites and/or OneDrive accounts.
 
 
 ### Applying a retention label to content
@@ -162,6 +162,6 @@ For more information about searching for these events, see the "File and page ac
 
 ## Next steps
 
-For instructions how to create and publish the retention labels that contain the setting to mark content as a record, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
+For instructions how to create and publish the retention labels that contain the setting to mark content as a record, see [Create, publish, and auto-apply retention labels](create-retention-retention.md).
 
 To watch videos related to configuring and using records management, see the [Data governance selections on YouTube](https://go.microsoft.com/fwlink/?linkid=867039).

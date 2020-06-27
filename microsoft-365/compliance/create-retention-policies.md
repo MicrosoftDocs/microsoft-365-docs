@@ -25,7 +25,7 @@ description: "Use a retention policy to decide proactively whether to retain con
 
 Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content. 
 
-For information about how retention policies work, see [Learn about retention policies](retention-policies.md).
+For information about how retention policies work, see [Learn about retention policies](retention.md).
 
 ## Before you begin
 
@@ -199,7 +199,7 @@ Usually this update is fairly quick but can take several days. When the policy r
 
 ## Lock a retention policy by using PowerShell
 
-You must use PowerShell if you need to use [Preservation Lock](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements.
+You must use PowerShell if you need to use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) to comply with regulatory requirements.
 
 1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 

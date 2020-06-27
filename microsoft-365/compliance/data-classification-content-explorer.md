@@ -81,13 +81,13 @@ A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive info
 
 ### Sensitivity labels
 
-A [sensitivity label](sensitivity-labels.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. A sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption.
+A [sensitivity label](sensitivity-retention.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. A sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption.
 
 Sensitivity labels must be enabled for files that are in SharePoint and OneDrive in order for the corresponding data to surface in the data classification page. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 ### Retention labels
 
-A [retention label](labels.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
+A [retention label](retention.md) allows you to define how long a labeled item is kept and the steps to be taken prior to deleting it. They are applied manually or automatically via policies. They can play a role in helping your organization stay in compliance with legal and regulatory requirements.
 
 ### How to use content explorer
 
@@ -134,8 +134,8 @@ You can search on:
 
 ## See also
 
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](labels.md)
+- [Sensitivity labels](sensitivity-retention.md)
+- [Retention labels](retention.md)
 - [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
-- [Overview of retention policies](retention-policies.md)
+- [Overview of retention policies](retention.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)

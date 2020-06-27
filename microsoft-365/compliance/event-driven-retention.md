@@ -38,13 +38,13 @@ For example, you can use labels with event-driven retention for:
     
 Event-driven retention is typically used as part of a records-management process. This means that:
   
-- Labels based on events also usually classify content as a record. For more information, see [Using Content Search to find all content with a specific retention label applied to it](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
+- Labels based on events also usually classify content as a record. For more information, see [Using Content Search to find all content with a specific retention label applied to it](retention.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
     
 - A document that's been declared as a record but whose event trigger has not yet happened is retained indefinitely (records can't be permanently deleted), until an event triggers that document's retention period.
     
 - Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose the content. For more information, see [Disposition of content](disposition.md).
     
-A label based on an event has the same capabilities as any retention label in Microsoft  365. For more information, see [Learn about retention labels](labels.md).
+A label based on an event has the same capabilities as any retention label in Microsoft  365. For more information, see [Learn about retention labels](retention.md).
 
 ## Understanding the relationship between event types, labels, events, and asset IDs
 
@@ -109,7 +109,7 @@ Note that once you choose an event type and create the retention label, the even
   
 ### Step 3: Publish or auto-apply the event-based retention labels
 
-Just like any retention label, you need to [publish or auto-apply](create-retention-labels.md) an event-based label, so that it's manually or automatically applied to content.
+Just like any retention label, you need to [publish or auto-apply](create-retention-retention.md) an event-based label, so that it's manually or automatically applied to content.
 
 > [!NOTE]
 > If you select an event-driven retention label from **Records Management** > **File plan** tab or **Data governance** > **Labels** tab, the **Auto-apply a label** button is not available.

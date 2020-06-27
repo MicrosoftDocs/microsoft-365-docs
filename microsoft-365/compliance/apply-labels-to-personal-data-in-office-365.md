@@ -24,14 +24,14 @@ ms.custom: seo-marvel-apr2020
 
  Use this topic if you're using classification labels as part of your GDPR protection plan. 
 
-If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
+If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](retention.md). With retention labels, you can:
 - Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.
 - Use retention labels with data loss prevention to apply protection. 
 - Use labels with eDiscovery and Content Search. 
 
 Cloud App Security doesn't currently support retention labels, but you can use Microsoft 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.
 
-[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers. These are also recommended for files in Microsoft 365 that require Azure Information Protection encryption for data protection, such as trade secret files.
+[Sensitivity labels](sensitivity-retention.md) are currently recommended for applying labels to files on premises and in other cloud services and providers. These are also recommended for files in Microsoft 365 that require Azure Information Protection encryption for data protection, such as trade secret files.
 
 At this time, using Azure Information Protection to apply encryption is not recommended for files in Microsoft 365 with data that is subject to the GDPR. Microsoft 365 services currently cannot read into AIP-encrypted files. Therefore, the service can't find sensitive data in these files.
 

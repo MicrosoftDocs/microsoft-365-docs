@@ -23,7 +23,7 @@ description: "Learn about retention policies that apply to Microsoft Teams."
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Microsoft Teams.
+The information in this article supplements [Learn about retention policies](retention.md) because it has information that's specific to Microsoft Teams.
 
 ## How a retention policy works with Microsoft Teams
 
@@ -108,7 +108,7 @@ We're continuously working on optimizing retention functionality in Teams. In th
     
 - **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams isn't included because it requires a separate retention policy. 
     
-- **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Currently, retention in Teams applies to all the chat and channel message content when you select those locations. 
+- **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Currently, retention in Teams applies to all the chat and channel message content when you select those locations. 
 
 - **Teams messages in private channels aren't included when you configure a retention policy for Teams channel messages**. Instead, messages from private channels are included for the users as group chats with the **Teams chats** option. 
     
@@ -126,11 +126,11 @@ We're continuously working on optimizing retention functionality in Teams. In th
 
 ## How to configure a retention policy for Microsoft Teams
 
-Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select the following options:
+Follow the instructions for [Create and configure retention policies](create-retention.md) and for the **Choose locations** page of the wizard, select the following options:
 
 - **Let me choose specific locations** > **Teams channel messages** and **Teams chats**
 
-A retention policy that applies to Teams can use [Preservation Lock](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements), which might be required for regulatory reasons.
+A retention policy that applies to Teams can use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements), which might be required for regulatory reasons.
 
 ## Related information
 

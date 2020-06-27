@@ -18,7 +18,7 @@ This article discusses classic Azure Active Directory classification and sensiti
 
 Sensitivity labels are supported by [these services](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#support-for-the-sensitivity-labels).
 
-For complete info about sensitivity labels, see [Learn about sensitivity labels](sensitivity-labels.md).
+For complete info about sensitivity labels, see [Learn about sensitivity labels](sensitivity-retention.md).
 
 To learn more about sensitivity labels and their behavior for sites and Microsoft 365 groups, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](sensitivity-labels-teams-groups-sites.md).
 

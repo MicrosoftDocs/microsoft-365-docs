@@ -83,13 +83,13 @@
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
-          href: sensitivity-labels.md
+          href: sensitivity-retention.md
         - name: Get started with sensitivity labels
-          href: get-started-with-sensitivity-labels.md
+          href: get-started-with-sensitivity-retention.md
         - name: Create and publish sensitivity labels
-          href: create-sensitivity-labels.md
+          href: create-sensitivity-retention.md
         - name: Restrict access to content by using sensitivity labels to apply encryption
-          href: encryption-sensitivity-labels.md
+          href: encryption-sensitivity-retention.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
         - name: View label usage with label analytics
@@ -286,11 +286,11 @@
             - name: Retention for Exchange
               href: retention-policies-exchange.md
         - name: Create retention policies
-          href: create-retention-policies.md
+          href: create-retention.md
         - name: Use file plan
           href: file-plan-manager.md
         - name: Create retention labels and apply them in apps
-          href: create-apply-retention-labels.md
+          href: create-apply-retention-retention.md
         - name: Apply a retention label to content automatically
           href: apply-retention-labels-automatically.md
         - name: Comply with SEC Rule 17a-4
@@ -772,7 +772,7 @@
         - name: Overview of Advanced Audit
           href: advanced-audit.md
         - name: Manage audit log retention policies
-          href: audit-log-retention-policies.md
+          href: audit-log-retention.md
         - name: Use Advanced Audit to investigate compromised accounts
           href: mailitemsaccessed-forensics-investigations.md
     - name: Alert policies
