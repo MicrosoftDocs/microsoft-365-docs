@@ -275,7 +275,7 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Retain data
       items: 
-        - name: How retention works
+       - name: How retention works
           items:
             - name: Learn about retention
               href: retention.md

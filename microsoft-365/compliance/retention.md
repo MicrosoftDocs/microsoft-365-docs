@@ -232,7 +232,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
-|Locations supported <br />-  Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
+|Locations supported <br />-  Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, excluding public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
 |Automatic labeling (configured by administrators) | Yes | Yes |
 |Manual labeling (applied by users and administrators) | No | Yes |
 |Apply based on location | Yes| No, with exception of default label for SharePoint |
