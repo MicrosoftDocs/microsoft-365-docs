@@ -59,7 +59,7 @@ These permissions are required only to create and apply retention labels. Policy
 
 ## How to auto-apply a retention label
 
-First, create your retention label. Then create an auto-policy to apply that label. If you have already created your retention label, skip to [creating an auto-policy](#create-an-auto-apply-policy).
+First, create your retention label. Then create an auto-policy to apply that label. If you have already created your retention label, skip to [creating an auto-policy](step-2-create-an-auto-apply-policy).
 
 Navigation instructions depend on whether you're using [records management](records-management.md) or not. Instructions are provided for both scenarios.
 
@@ -106,6 +106,15 @@ When you create an auto-apply policy, you select a retention label to automatica
 
 To edit an existing auto-apply label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
 
+### Configuring conditions for auto-apply retention labels
+
+You can apply retention labels to content automatically when that content contains:
+
+- [Specific types of sensitive information](#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+
+- [Specific keywords that match a query you create](#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
+
+- [A match for trainable classifiers](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
 #### Auto-apply labels to content with specific types of sensitive information
 
