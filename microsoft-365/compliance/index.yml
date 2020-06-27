@@ -27,7 +27,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Sensitivity labels
-            url: sensitivity-retention.md
+            url: sensitivity-labels.md
           - text: Data loss prevention (DLP)
             url: data-loss-prevention-policies.md
           - text: Sensitive information types

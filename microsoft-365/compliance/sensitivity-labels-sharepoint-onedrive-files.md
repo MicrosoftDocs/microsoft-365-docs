@@ -23,7 +23,7 @@ description: "Administrators can enable sensitivity label support for Word, Exce
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Before you enable sensitivity labels for Office files in SharePoint and OneDrive, you can't apply your [sensitivity labels](sensitivity-retention.md) in Office on the web. You don't see the **Sensitivity** button on the ribbon, or the applied label name on the status bar. In addition, if you use desktop apps to label your files and then save them on SharePoint or OneDrive, the service can't process the content of these files if the label applied encryption. Coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work under these circumstances.
+Before you enable sensitivity labels for Office files in SharePoint and OneDrive, you can't apply your [sensitivity labels](sensitivity-labels.md) in Office on the web. You don't see the **Sensitivity** button on the ribbon, or the applied label name on the status bar. In addition, if you use desktop apps to label your files and then save them on SharePoint or OneDrive, the service can't process the content of these files if the label applied encryption. Coauthoring, eDiscovery, Data Loss Prevention, search, and other collaborative features won't work under these circumstances.
 
 When you do enable sensitivity labels for Office files in SharePoint and OneDrive, all these capabilities are enabled. In addition to displaying sensitivity labels to users, for new and changed files that have a sensitivity label applied that includes encryption with a cloud-based key:
 
@@ -59,7 +59,7 @@ If you are currently protecting documents in SharePoint by using SharePoint Info
 
 ## Requirements
 
-These new capabilities work with [sensitivity labels](sensitivity-retention.md) only. If you currently have Azure Information Protection labels, first migrate them to sensitivity labels so that you can enable these features for new files that you upload. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
+These new capabilities work with [sensitivity labels](sensitivity-labels.md) only. If you currently have Azure Information Protection labels, first migrate them to sensitivity labels so that you can enable these features for new files that you upload. For instructions, see [How to migrate Azure Information Protection labels to unified sensitivity labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels)
 
 Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and version 19.002.0107.0008 or later on Mac. Both these versions were released January 28, 2019, and are currently released to all rings. For more information, see the [OneDrive release notes](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0). After you enable sensitivity labels for Office files in SharePoint and OneDrive, users who run an older version of the sync app are prompted to update it.
 
@@ -67,11 +67,11 @@ Use the OneDrive sync app version 19.002.0121.0008 or later on Windows, and vers
 
 - SharePoint doesn't automatically apply sensitivity labels to existing files that you've already encrypted using Azure Information Protection labels. Instead, to get the features to work after you enable sensitivity labels for Office files in SharePoint and OneDrive, complete these tasks:
     
-    1. Make sure you have [migrated the Azure Information Protection labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels and [published them](create-sensitivity-retention.md#publish-sensitivity-labels-by-creating-a-label-policy) from the Microsoft 365 compliance center, or equivalent labeling admin center.
+    1. Make sure you have [migrated the Azure Information Protection labels](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) to sensitivity labels and [published them](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) from the Microsoft 365 compliance center, or equivalent labeling admin center.
     
     2. Download the files and then upload them to SharePoint.
 
-- SharePoint can't process encrypted files when the label that applied the encryption has either of the following [configurations for encryption](encryption-sensitivity-retention.md#configure-encryption-settings):
+- SharePoint can't process encrypted files when the label that applied the encryption has either of the following [configurations for encryption](encryption-sensitivity-labels.md#configure-encryption-settings):
     - **Let users assign permissions when they apply the label** and the checkbox for **In Word, PowerPoint, and Excel, prompt users to specify permissions** is selected. This setting is sometimes referred to as "user-defined permissions".
     - **User access to content expires** is set to a value other than **Never**.
     
@@ -103,7 +103,7 @@ You can enable the new capabilities by using the Microsoft 365 compliance center
 
 This option is the easiest way to enable sensitivity labels for SharePoint and OneDrive.
 
-The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-retention.md#permissions-required-to-create-and-manage-sensitivity-labels).
+The global admin for your organization has full permissions to create and manage all aspects of sensitivity labels. If you aren't signing in as a global admin, see [Permissions required to create and manage sensitivity labels](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels).
 
 1. Sign in to the [Microsoft 365 compliance center](https://compliance.microsoft.com/), and navigate to **Solutions** > **Information protection**
     
@@ -175,7 +175,7 @@ We recommend that you follow these steps:
 
 [SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) is an older technology to protect files at the list and library level by applying encryption and restrictions when files are downloaded. This older protection technology is designed to prevent unauthorized users from opening the file while it's outside SharePoint.
 
-In comparison, sensitivity labels provide the protection settings of visual markings (headers, footers, watermarks) in addition to encryption. The encryption settings support the full range of [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) to restrict what users can do with the content, and the same sensitivity labels are supported for [many scenarios](get-started-with-sensitivity-retention.md#common-scenarios-for-sensitivity-labels). Using the same protection method with consistent settings across workloads and apps results in a consistent protection strategy.
+In comparison, sensitivity labels provide the protection settings of visual markings (headers, footers, watermarks) in addition to encryption. The encryption settings support the full range of [usage rights](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) to restrict what users can do with the content, and the same sensitivity labels are supported for [many scenarios](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Using the same protection method with consistent settings across workloads and apps results in a consistent protection strategy.
 
 However, you can use both protection solutions together and the behavior is as follows: 
 

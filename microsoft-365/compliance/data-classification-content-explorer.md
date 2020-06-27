@@ -81,7 +81,7 @@ A [DLP policy](data-loss-prevention-policies.md) can help protect sensitive info
 
 ### Sensitivity labels
 
-A [sensitivity label](sensitivity-retention.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. A sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption.
+A [sensitivity label](sensitivity-labels.md) is simply a tag that indicates the value of the item to your organization. It can be applied manually, or automatically. Once applied it gets embedded in the document and will follow it everywhere it goes. A sensitivity label enables various protective behaviors, such as mandatory watermarking or encryption.
 
 Sensitivity labels must be enabled for files that are in SharePoint and OneDrive in order for the corresponding data to surface in the data classification page. For more information, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
@@ -134,7 +134,7 @@ You can search on:
 
 ## See also
 
-- [Sensitivity labels](sensitivity-retention.md)
+- [Sensitivity labels](sensitivity-labels.md)
 - [Retention labels](retention.md)
 - [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
 - [Overview of retention policies](retention.md)

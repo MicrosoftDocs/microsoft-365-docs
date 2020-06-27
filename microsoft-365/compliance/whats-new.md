@@ -173,7 +173,7 @@ If you've been using the Office 365 Security & Compliance Center for your compli
 |Retention labels and label policies |Classification > Retention labels > Labels and Label policies tabs <br/> https://protection.office.com/retentionlabels |Information governance > Labels and Label policies tabs <br/> https://compliance.microsoft.com/informationgovernance?viewid=labels <br/> https://compliance.microsoft.com/informationgovernance?viewid=labelpolicies | [Overview of retention labels](retention.md)|
 |Retention policies|Information governance > Retention <br/> https://protection.office.com/retention |Information governance > Retention tab <br/> https://compliance.microsoft.com/informationgovernance?viewid=retention |[Overview of retention policies](retention.md)|
 |Sensitive info types|Classification > Sensitive info types <br/> https://protection.office.com/sensitivetypes |Data classification > Sensitive info types tab <br/> https://compliance.microsoft.com/dataclassification?viewid=sensitiveinfotypes |[Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)|
-|Sensitivity labels and label policies|Classification > Sensitivity labels > Labels and Label policies tabs <br/> https://protection.office.com/sensitivity |Information protection > Labels and Label policies tabs <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Learn about sensitivity labels](sensitivity-retention.md) |
+|Sensitivity labels and label policies|Classification > Sensitivity labels > Labels and Label policies tabs <br/> https://protection.office.com/sensitivity |Information protection > Labels and Label policies tabs <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabels <br/> https://compliance.microsoft.com/informationprotection?viewid=sensitivitylabelpolicies |[Learn about sensitivity labels](sensitivity-labels.md) |
 |Service assurance|Service assurance <br/> https://protection.office.com/serviceassurance/dashboard |At this time, service assurance resources can only be accessed in the Office 365 Security & Compliance Center. |[Service assurance in the Security & Compliance Center](service-assurance.md)|
 |Supervision|Supervision <br/> https://protection.office.com/supervisoryreviewv2 |Communication compliance <br/> https://compliance.microsoft.com/supervisoryreview |[Communication compliance in Microsoft 365 (preview)](communication-compliance.md) |
 
@@ -187,7 +187,7 @@ When configuring encryption for a sensitivity label, you now have two options th
 - When applying the label to **Outlook email**, users can enforce restrictions equivalent to the Do Not Forward option. Recipients will be able to read the message but not forward, print, or copy the content.
 - When applying the label to **Word, PowerPoint, and Excel files**, users will be prompted to assign access permissions to specific users and groups.
 
-Go to [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-retention.md#let-users-assign-permissions) to learn more.
+Go to [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md#let-users-assign-permissions) to learn more.
 
 ## August 2019
 

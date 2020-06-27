@@ -350,7 +350,7 @@ When you use a previously created and published [retention label](retention.md) 
 
 ### Support for sensitivity labels is coming
 
-You can currently use only a retention label as a condition, not a [sensitivity label](sensitivity-retention.md). We're currently working on support for using a sensitivity label in this condition.
+You can currently use only a retention label as a condition, not a [sensitivity label](sensitivity-labels.md). We're currently working on support for using a sensitivity label in this condition.
   
 ### How this feature relates to other features
 

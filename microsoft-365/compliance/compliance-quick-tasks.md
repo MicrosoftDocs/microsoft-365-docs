@@ -72,9 +72,9 @@ For step-by-step guidance to configure privileged access management, see [Get st
 
 To get their work done, people in your organization collaborate with others both inside and outside the organization. This means that content no longer stays behind a firewall—it can roam everywhere, across devices, apps, and services. And when it roams, you want it to do so in a secure, protected way that meets your organization's business and compliance policies.
 
-[Sensitivity labels](sensitivity-retention.md) let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. Use sensitivity labels to enforce encryption and usage restrictions apply visual markings, and protect information across platforms and devices, on-premises and in the cloud.
+[Sensitivity labels](sensitivity-labels.md) let you classify and protect your organization's data, while making sure that user productivity and their ability to collaborate isn't hindered. Use sensitivity labels to enforce encryption and usage restrictions apply visual markings, and protect information across platforms and devices, on-premises and in the cloud.
 
-For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-retention.md). For sensitivity label licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+For step-by-step guidance to configure and use sensitivity labels, see [Get started with sensitivity labels](get-started-with-sensitivity-labels.md). For sensitivity label licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ## Task 7: Configure a retention policy
 

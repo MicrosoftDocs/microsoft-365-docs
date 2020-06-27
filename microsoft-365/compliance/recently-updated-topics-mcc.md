@@ -98,11 +98,11 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 
 ### Sensitivity labels
 
-[Learn about sensitivity labels](sensitivity-retention.md) (updated)<br>Added deprecation details about label management in the Azure portal, including a link to [the official notice](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
+[Learn about sensitivity labels](sensitivity-labels.md) (updated)<br>Added deprecation details about label management in the Azure portal, including a link to [the official notice](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-[Get started with sensitivity labels](get-started-with-sensitivity-retention.md) (updated)<br>Added info about the new Sensitivity Label Reader role, which is supported initially just for the labeling PowerShell cmdlets.
+[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) (updated)<br>Added info about the new Sensitivity Label Reader role, which is supported initially just for the labeling PowerShell cmdlets.
 
-[Create and configure sensitivity labels and their policies](create-sensitivity-retention.md#removing-and-deleting-labels) (updated)<br>Added new section explains the consequences of removing and deleting labels.
+[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md#removing-and-deleting-labels) (updated)<br>Added new section explains the consequences of removing and deleting labels.
 
 [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Changes include:
 
@@ -110,7 +110,7 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 - Updated the [How to configure site and group settings when you create or edit sensitivity labels](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) section with information about the **Privacy of Office 365 group-connected teams sites** setting, which includes the new **None** option.
 - Added a note describing how only labels with site and group settings will be available to select when users create teams, groups, and sites. This functionality is gradually rolling out to organizations.
 
-[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-retention.md) (updated)<br>[New section](encryption-sensitivity-retention.md#example-configurations-for-the-encryption-settings) with example encryption settings for some of the most commonly used configurations to protect documents and emails.
+[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated)<br>[New section](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) with example encryption settings for some of the most commonly used configurations to protect documents and emails.
 
 [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (updated)<br>Explanation of the behavior differences between built-in labeling vs. the Azure Information Protection unified labeling client.
 
@@ -122,7 +122,7 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 
 [Use sensitivity labels in Office apps](sensitivity-labels-office-apps.md) (updated)<br>Changes include:
 
-- Moved licensing info to to [Get started with sensitivity labels](get-started-with-sensitivity-retention.md).
+- Moved licensing info to to [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 - [New section](sensitivity-labels-office-apps.md#labeling-client-for-desktop-apps) explaining how, to use labels that are built into Office desktop apps, you must use a subscription edition of Office instead of standalone editions.
 - The tables of supported apps include the Office app for iOS and Android and the configuration that lets users assign permissions for Word, Excel, and PowerPoint is updated – now rolling out to monthly channel for Windows and Mac.  
 - [New section](sensitivity-labels-office-apps.md#office-built-in-labeling-client-and-other-labeling-solutions) explaining how you can use the group policy setting to disable built-in labeling if you're currently using other labeling solutions that you want to keep using for your Windows computers. 
@@ -201,13 +201,13 @@ Updated the following articles to support the official release of insider risk m
 
 ### Sensitivity labels
 
-[Get started with sensitivity labels](get-started-with-sensitivity-retention.md) (new)<br>Includes guidance for Azure Information Protection customers, high-level overview of the process and steps to deploy sensitivity labels, permissions to create and manage the labels, a list of common scenarios that support labels, and a list of available end-user documentation.
+[Get started with sensitivity labels](get-started-with-sensitivity-labels.md) (new)<br>Includes guidance for Azure Information Protection customers, high-level overview of the process and steps to deploy sensitivity labels, permissions to create and manage the labels, a list of common scenarios that support labels, and a list of available end-user documentation.
 
-[Learn about sensitivity labels](sensitivity-retention.md) (updated)<br>Retitled from "Overview of sensitivity labels" and moved the information from the "Get started" section to the new article [Get started with sensitivity labels](get-started-with-sensitivity-retention.md).
+[Learn about sensitivity labels](sensitivity-labels.md) (updated)<br>Retitled from "Overview of sensitivity labels" and moved the information from the "Get started" section to the new article [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
-[Create and configure sensitivity labels and their policies](create-sensitivity-retention.md) (updated)<br>Moved permission details to new the new article, [Get started with sensitivity labels](get-started-with-sensitivity-retention.md).
+[Create and configure sensitivity labels and their policies](create-sensitivity-labels.md) (updated)<br>Moved permission details to new the new article, [Get started with sensitivity labels](get-started-with-sensitivity-labels.md).
 
-[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-retention.md) (updated)<br>New options of "None" and "Remove" replaces the encryption toggle, and "Add any authenticated users" is added as a new permission to assign now. The section for letting users assign permission is updated now that prompting users to select custom permissions in Word, PowerPoint, and Excel is rolling out in preview for Windows and Mac. New section for example configurations of how to configure the encryption settings to support specific use cases. New section that lists considerations for encrypting content.
+[Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated)<br>New options of "None" and "Remove" replaces the encryption toggle, and "Add any authenticated users" is added as a new permission to assign now. The section for letting users assign permission is updated now that prompting users to select custom permissions in Word, PowerPoint, and Excel is rolling out in preview for Windows and Mac. New section for example configurations of how to configure the encryption settings to support specific use cases. New section that lists considerations for encrypting content.
 
 [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps) (updated)<br>The section for configuring auto-labeling for Office apps now includes the new option to use trainable classifiers.
 

@@ -40,7 +40,7 @@ Finally, as an admin, when you configure a sensitivity label to apply encryption
 - **Assign permissions now**, so that you determine exactly which users get which permissions to content with that label.
 - **Let users assign permissions** when they apply the label to content. This way, you can allow people in your organization some flexibility that they might need to collaborate and get their work done.
 
-The encryption settings are available when you [create a sensitivity label](create-sensitivity-retention.md) in the Microsoft 365 compliance center, Microsoft 365 security center, or the Security & Compliance Center.
+The encryption settings are available when you [create a sensitivity label](create-sensitivity-labels.md) in the Microsoft 365 compliance center, Microsoft 365 security center, or the Security & Compliance Center.
 
 ## Understand how the encryption works
 
@@ -50,7 +50,7 @@ When you use this encryption solution, the **super user** feature ensures that a
 
 ## How to configure a label for encryption
 
-[Create or edit a sensitivity label](create-sensitivity-retention.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
+[Create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels), and on the **Encryption** page of the wizard, select one of the following options:
 
 - **None**: The default setting for a new label. No new encryption is applied.
 - **Apply**: Turns on encryption, and you then specify encryption settings.
@@ -161,7 +161,7 @@ When you assign permissions, you can choose:
     > [!NOTE]
     > If you specify a domain from an organization that uses Azure AD, you can't restrict access to that specific domain. Instead, all verified domains in Azure AD are automatically included for the tenant that owns the domain name you specify.
 
-When you choose all tenant members or browse the directory, the users or groups must have an email address.
+When you choose all users and groups in your organization or browse the directory, the users or groups must have an email address.
 
 As a best practice, use groups rather than users. This strategy keeps your configuration simpler.
 
@@ -261,7 +261,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 ## Example configurations for the encryption settings
 
-For each example that follows, do the configuration from the **Encryption** page of the wizard when you [create or edit a sensitivity label](create-sensitivity-retention.md#create-and-configure-sensitivity-labels). First make sure that the **Encryption** is set to **Apply**:
+For each example that follows, do the configuration from the **Encryption** page of the wizard when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). First make sure that the **Encryption** is set to **Apply**:
 
 ![Apply encryption option in the sensitivity label wizard](../media/apply-encryption-option.png)
 
@@ -292,13 +292,13 @@ This label is not suitable for emails.
 
 4. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the name of a domain from the other organization, for example, **fabrikam.com**. Then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select **Viewer**, and then select **Save**.
 
 6. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -313,13 +313,13 @@ The new users that you add will be able open documents and emails that have alre
 
 2. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the email address of the first user (or group) to add, and then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the permissions for this user (or group), and then select **Save**.
+6. On the **Choose permissions** pane, select the permissions for this user (or group), and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, repeat steps 3 through 6 for each user (or group) that you want to add to this label. Then click **Save**.
 
@@ -340,11 +340,11 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 4. On the **Assign permissions** pane, select **Add any authenticated users**. 
     
-    For **Users and groups**, you see **AuthenticatedUsers** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
+    For **Users and groups**, you see **Authenticated users** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select the permissions you want, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select the permissions you want, and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, select **Save**.
 

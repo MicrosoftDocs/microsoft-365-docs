@@ -34,7 +34,7 @@
           href: insider-risk-management-cases.md
         - name: Review data with the insider risk content explorer
           href: insider-risk-management-content-explorer.md
-        - name: Add users to insider risk policies
+        - name: Manage the workflow with the Users dashboard
           href: insider-risk-management-users.md
         - name: Create insider risk notice templates
           href: insider-risk-management-notices.md
@@ -83,13 +83,13 @@
     - name: Sensitivity labels
       items:
         - name: Learn about sensitivity labels
-          href: sensitivity-retention.md
+          href: sensitivity-labels.md
         - name: Get started with sensitivity labels
-          href: get-started-with-sensitivity-retention.md
+          href: get-started-with-sensitivity-labels.md
         - name: Create and publish sensitivity labels
-          href: create-sensitivity-retention.md
+          href: create-sensitivity-labels.md
         - name: Restrict access to content by using sensitivity labels to apply encryption
-          href: encryption-sensitivity-retention.md
+          href: encryption-sensitivity-labels.md
         - name: Apply a sensitivity label to content automatically
           href: apply-sensitivity-label-automatically.md
         - name: View label usage with label analytics

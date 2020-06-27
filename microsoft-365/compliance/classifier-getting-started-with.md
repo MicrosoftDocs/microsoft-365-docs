@@ -127,7 +127,7 @@ Creating and publishing a trainable classifier for use in compliance solutions, 
 - [Retention labels](retention.md)
 - [Retention policies](retention.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
-- [Sensitivity labels](sensitivity-retention.md)
+- [Sensitivity labels](sensitivity-labels.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 - [Document finger printing](document-fingerprinting.md)
 - [Exact data match](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

@@ -70,7 +70,7 @@ After you enable and configure this preview, users can additionally see and appl
 
 You're now ready to create or edit sensitivity labels that you want to be available for sites and groups. Enabling the preview makes a new page visible in the sensitivity labeling wizards: **Site and group settings**
 
-If you need help with creating or editing a sensitivity label, see the instructions from [Create and configure sensitivity labels](create-sensitivity-retention.md#create-and-configure-sensitivity-labels).
+If you need help with creating or editing a sensitivity label, see the instructions from [Create and configure sensitivity labels](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
 
 On this new **Site and group settings** page, configure the settings:
 
@@ -93,7 +93,7 @@ On this new **Site and group settings** page, configure the settings:
 > 
 > Gradually rolling out to tenants: Only labels with the site and group settings will be available to select when users create teams, groups, and sites. If you can currently apply a label to a container when the label doesn't have the site and group settings enabled, only the label name is applied to the container.
 
-If your sensitivity label isn't already published, now publish it by [adding it to a sensitivity label policy](create-sensitivity-retention.md#publish-sensitivity-labels-by-creating-a-label-policy). The users who are assigned a sensitivity label policy that includes this label will be able to select it for sites and groups.
+If your sensitivity label isn't already published, now publish it by [adding it to a sensitivity label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). The users who are assigned a sensitivity label policy that includes this label will be able to select it for sites and groups.
 
 From the label policy, only the policy setting **Apply this label by default to documents and email** is applicable when you apply this label to containers. Other policy settings are not applied, which include mandatory labeling, requiring user justification, and a link to the custom help page.
 
@@ -325,7 +325,7 @@ Although you can't prevent users from creating new groups in apps and services t
 
 ## Auditing sensitivity label activities
 
-If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-retention.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked. For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**. Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.
+If somebody uploads a document to a site that's protected with a sensitivity label and their document has a [higher priority](sensitivity-labels.md#label-priority-order-matters) sensitivity label than the sensitivity label applied to the site, this action isn't blocked. For example, you've applied the **General** label to a SharePoint site, and somebody uploads to this site a document labeled **Confidential**. Because a sensitivity label with a higher priority identifies content that is more sensitivity than content that has a lower priority order, this situation could be a security concern.
 
 Although the action isn't blocked, it is audited and automatically generates an email to the person who uploaded the document and the site administrator. As a result, both the user and administrators can identify documents that have this misalignment of label priority and take action if needed. For example, delete or move the uploaded document from the site. 
 
