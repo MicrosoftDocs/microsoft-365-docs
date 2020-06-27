@@ -275,9 +275,9 @@
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
     - name: Retain data
       items: 
-        - name: How retention works
+        - name: Learn about retention
           items:
-            - name: Learn about retention
+            - name: How retention works
               href: retention.md
             - name: Retention for SharePoint and OneDrive
               href: retention-policies-sharepoint.md
