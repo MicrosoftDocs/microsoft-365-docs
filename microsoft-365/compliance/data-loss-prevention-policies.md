@@ -336,7 +336,7 @@ For these reasons, the guidance for creating rules with different match accuraci
 When you use a previously created and published [retention label](retention.md) as a condition in a DLP policy, there are some things to be aware of:
 
 - You have to have previously created, published and applied the retention label before you attempt to use it as a condition in a DLP policy.
-- Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, "How long it takes for retention labels to take effect" for [label policies](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) and [auto-policies](create-apply-retention-labels-automatically.md#when-retention-labels-become-available-to-apply) for detailed information.
+- Retention labels can take up to a day to sync and up to seven days to auto-apply after they have been created and published. See, "How long it takes for retention labels to take effect" for [label policies](create-apply-retention-labels.md#when-retention-labels-become-available-to-apply) and [auto-policies](apply-retention-labels-automatically.md#when-retention-labels-become-available-to-apply) for detailed information.
 - Using a retention label in a policy ***is only supported for items in SharePoint Online and OneDrive for Business***.
 
   ![Labels as a condition](../media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)

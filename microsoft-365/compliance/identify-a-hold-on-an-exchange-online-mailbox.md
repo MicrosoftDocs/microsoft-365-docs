@@ -40,7 +40,7 @@ Microsoft 365 offers several ways that your organization can prevent mailbox con
 
     - **Organization-wide retention policies:** These are policies that are assigned to all content locations in your organization. You use the **Get-OrganizationConfig** cmdlet in Exchange Online PowerShell to get information about organization-wide retention policies.
     
-  For more information, see [Applying a retention policy to an entire organization or specific locations](create-retention-poliices.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) section .
+  For more information, see [Applying a retention policy to an entire organization or specific locations](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) section .
 
 - **[Microsoft 365 retention labels](retention.md):** If a user applies a Microsoft 365 retention label (one that's configured to retain content or retain and then delete content) to *any* folder or item in their mailbox, a hold is placed on the mailbox as if the mailbox was placed on Litigation Hold or assigned to a Microsoft 365 retention policy. For more information, see the [Identifying mailboxes on hold because a retention label has been applied to a folder or item](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section in this article.
 
