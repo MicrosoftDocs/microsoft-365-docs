@@ -277,7 +277,7 @@
       items: 
         - name: Learn about retention
           items:
-            - name: How retention works
+            - name: Learn about retention policies & labels
               href: retention.md
             - name: Retention for SharePoint and OneDrive
               href: retention-policies-sharepoint.md
@@ -285,9 +285,9 @@
               href: retention-policies-teams.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
-        - name: Create and configure retention policies
+        - name: Create retention policies
           href: create-retention-policies.md
-        - name: File plan
+        - name: Use file plan
           href: file-plan-manager.md
         - name: Create retention labels and apply them in apps
           href: create-apply-retention-labels.md
