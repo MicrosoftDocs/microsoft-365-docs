@@ -285,6 +285,8 @@
               href: retention-policies-teams.md
             - name: Retention for Exchange
               href: retention-policies-exchange.md
+        - name: Get started with retention
+          href: get-started-with-retention.md
         - name: Create retention policies
           href: create-retention-policies.md
         - name: Use file plan
