@@ -198,7 +198,7 @@ Need to get a archived message back? No problem.
   
 1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
 
-2. Select **Archive** to the right of the Message ID, and the message is restored to active messages.
+2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
 
 ::: moniker-end
 
