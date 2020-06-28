@@ -246,7 +246,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Apply based on location | Yes| No, except default label for SharePoint |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
-|Condition for automatic labeling: <br />- Sensitive info types or keywords <br />- Trainable classifiers  | |<br /> Yes |<br /> Yes | |<br /> No |<br /> Yes |
+|Condition for automatic labeling: <br />- Sensitive info types or keywords <br />- Trainable classifiers  | <br /> Yes <br /> Yes | <br /> No <br /> Yes |
 |Event-based retention | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition | No |Yes, when item is declared a record|
