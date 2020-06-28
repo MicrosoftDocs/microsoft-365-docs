@@ -25,7 +25,7 @@ description: Ready to start implementing retention policies and retention labels
 
 Ready to start governing your organization's data by retaining the content that you need to keep, and deleting the content that you don't? Use the following high-level guidance to get started:
 
-1. **Understand how retention works** in Microsoft 365, and then dentify whether you need to use retention policies, or retention labels, or a combination: [Learn about retention](retention.md)
+1. **Understand how retention works** in Microsoft 365, and then identify whether you need to use retention policies or retention labels, or a combination: [Learn about retention](retention.md)
 
 2. **Identify the retention settings and actions** that are required by your organization policies or industry regulations.
     
