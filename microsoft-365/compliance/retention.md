@@ -240,16 +240,17 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
-|Locations supported: <br />-  Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
+|Locations supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
 |Automatic labeling (configured by administrators) | Yes | Yes |
 |Manual labeling (applied by users and administrators) | No | Yes |
 |Apply based on location | Yes| No, except default label for SharePoint |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
-|Condition for automatic labeling: <br />- Sensitive info types or keywords <br />- Trainable classifiers  | <br /> Yes <br /> No | <br /> Yes <br /> Yes |
+|Conditions for automatic retention: <br />- Sensitive info types or keywords <br />- Trainable classifiers  | <br /> Yes <br /> No | <br /> Yes <br /> Yes |
 |Event-based retention | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition | No |Yes, when item is declared a record|
+|Identify itens subject to retention: <br /> - Content Search <br /> Data classification page, content explorer, activity explorer | No | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
 ## The principles of retention, or what takes precedence?
 
