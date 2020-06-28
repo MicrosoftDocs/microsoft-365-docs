@@ -262,7 +262,7 @@ The **Choose a category for more details** available selections and behavior are
 
 ## Sent and received email report
 
-The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." The difference between this report and the [Mailflow status report](#mailflow-status-report-new) is: this report doesn't include data about messages blocked by edge protection.
+The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." The difference between this report and the [Mailflow status report](#mailflow-status-report) is: this report doesn't include data about messages blocked by edge protection.
 
 To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Sent and received email**. To go directly to the report, open <https://protection.office.com/reportv2?id=SentAndReceivedMailATP>.
 
