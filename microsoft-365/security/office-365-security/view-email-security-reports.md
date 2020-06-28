@@ -54,7 +54,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
 
   If you click **Filters**, you can modify the report with the following filters:
 
-  - A **Start date** and **End date**.
+  - **Start date** and **End date**
   - The available click protection actions, plus  the value **Allowed** to see information for all URL clicks (not just blocked clicks).
 
 - **URL click by application**: Shows the number of URL clicks by applications that support Office 365 ATP Safe Links:
@@ -70,7 +70,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
 
   If you click **Filters**, you can modify the report with the following filters:
 
-  - A **Start date** and **End date**.
+  - **Start date** and **End date**
   - The available applications.
 
 ### Details table view for the threat protection report
@@ -85,7 +85,7 @@ If you click **View details table**, the report provides a near-real-time view o
 
 If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.
 
-To get back to the report screen, click **View report**.
+To get back to the reports view, click **View report**.
 
 ## Compromised users report
 
@@ -97,7 +97,7 @@ This report shows shows the number of user accounts that were marked as **Suspic
 
 You can filter both the report and the details table by:
 
-- A **Start date** and **End date**.
+- **Start date** and **End date**
 - **Suspicious**
 - **Restricted**
 
@@ -136,14 +136,9 @@ You can filter the data with the following criteria:
 
   If you click **Filters**, you can modify the report with the following filters:
 
-  - A **Start date** and **End date**.
+  - **Start date** and **End date**
   - Encryption method.
-  - Encryption template:
-  
-    - **Do not forward**
-    - **Encrypt only**
-    - **OME previous**
-    - **Custom**
+  - Encryption template.
 
 - **View data by: Message Encryption Report** and **Break down by: Encryption template**: The following encryption methods are available:
 
@@ -154,12 +149,8 @@ You can filter the data with the following criteria:
 
   If you click **Filters**, you can modify the report with the following filters:
 
-  - A **Start date** and **End date**.
-  - Encryption method:
-
-    - **Encryption by user**
-    - **Encryption by policy**
-
+  - **Start date** and **End date**
+  - Encryption method
   - Encryption template
 
 - **View data by: Top 5 recipient domains**: This view shows a pie chart with sent message counts for the top 5 recipient domains.
@@ -185,9 +176,13 @@ If you click **View details table**, you'll see the following information:
   - **Recipient domain**
   - **Message count**
   
-If you click **Filters** in the details table view, you can filter by the same criteria as in the report view.
+If you click **Filters** in the details table view, you can modify the results with the following filters:
 
-To get back to the report screen, click **View report**.
+- **Start date** and **End date**
+- Encryption method.
+- Encryption template.
+
+To get back to the report view, click **View report**.
 
 ## Threat protection status report
 
@@ -211,7 +206,7 @@ The following views are available:
 
   If you click **Filters**, you can modify the report with the following filters:
 
-  - A **Start date** and **End date**. A 90 days range is available 
+  - **Start date** and **End date**
   - Detection
   - Protected by (ATP only):
   

@@ -28,92 +28,348 @@ In addition to the [Mail flow insights](mail-flow-insights-v2.md) that are avail
 
 ## Connector report
 
-To go directly to the **Forwarding report**, open <https://protection.office.com/reportv2?id=MailFlowForwarding>
+The **Connector report** shows mail flow activity on the [inbound and outbound connectors](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) that are configured for your organization.
+
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Connector report**. To go directly to the report, open <https://protection.office.com/reportv2?id=ConnectorReport>.
+
+![Connector report widget in the Reports dashboard](../../media/connector-report-widget.png)
+
+### Report view for the Connector report
+
+The following reports are available in report view:
+
+- **View data by: Mail flow**: This view shows the number of inbound and outbound and outbound messages organized by:
+
+  - **Total**
+  - **From the internet without a connector**
+  - **To the internet without a connector**
+  - A specific connector that you've configured.
+  
+  To isolate the data in the report, use the **Show data for** control to select one of these options or **All mail flow**.
+
+  ![View data by mail flow in the Connector report in the Exchange transport rule report](../../media/connector-report-view-data-by-mail-flow.png)
+
+- **View data by: TLS usage**: This view shows the percentage of Transport Layer Security (TLS) version usage for mail flow.
+
+  To isolate the data in the report, use the **Show data for** control to select one of the following options:
+
+  - **All mail flow**
+  - **From the internet without a connector**
+  - **To the internet without a connector**
+  - A specific connector that you've configured.
+
+  ![View data by TLS usage in the Connector report in the Exchange transport rule report](../../media/connector-report-view-data-by-tls-usage.png)
+
+If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
+
+### Details table view for the Connector report
+
+If you click **View details table** in any report view, the following information is shown:
+
+- **Date**
+- **Connector direction and name**
+- **Connector type**
+- **Forced TLS?**: The value **True** or **False**.
+- **No TLS** (percentage)
+- **TLS 1.0** (percentage)
+- **TLS 1.1** (percentage)
+- **TLS 1.2** (percentage)
+- **Volume**: The number of messages.
+
+If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
 
 ## Exchange transport rule report
 
-Mail flow rules (also known as transport rules)
+The **Exchange transport rule report** shows the effect of mail flow rules (also known as transport rules) on incoming and outgoing messages in your organization.
 
-To go directly to the **Exchange transport rule report**, open <https://protection.office.com/reportv2?id=ETRRuleReport>
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Exchange Transport rule**. To go directly to the report, open <https://protection.office.com/reportv2?id=ETRRuleReport>.
+
+![Exchange transport rule widget in the Reports dashboard](../../media/transport-rule-report-widget.png)
+
+### Report view for the Exchange transport rule report
+
+The following reports are available in report view:
+
+- **View data by: Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
+
+- **View data by: Exchange transport rules** \> **Break down by: Severity**: This view shows the number of **High severity** and **Medium severity**, and **Low severity** messages. You set the severity level as an action in the rule (**Audit this rule with severity level** or _SetAuditSeverity_). For more information, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+
+- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) transport rules. You can further refine the report by selecting on of the following options:
+
+  - **Show data for: All DLP transport rules**
+  - **Show data for: Compromised users**
+  - **Show data for: Low volume of content detected U.S. Patriot Act**
+
+- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **High severity** and **Medium severity**, and **Low severity** messages that were affected by DLP transport rules. You can further refine the report by selecting on of the following options:
+
+  - **Show data for: All DLP transport rules**
+  - **Show data for: Compromised users**
+  - **Show data for: Low volume of content detected U.S. Patriot Act**
+
+If you click **Filters** in a report view, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- Direction values
+- Severity values
+
+![Report view in the Exchange transport rule report](../../media/transport-rule-report-report-view.png)
+
+### Details table view for the Exchange transport rule report
+
+If you click **View details table**, the information that's shown depends on the report you were looking at:
+
+- **View data by: Exchange Transport rules**:
+
+  - **Date**
+  - **Transport rule**
+  - **Subject**
+  - **Sender address**
+  - **Recipient address**
+  - **Severity**
+  - **Direction**
+
+- **View data by: DLP Exchange transport rules**:
+
+  - **Date**
+  - **DLP policy**
+  - **Transport rule**
+  - **Subject**
+  - **Sender address**
+  - **Recipient address**
+  - **Severity**
+  - **Direction**
+
+If you click **Filters** in a details table view, you can filter the data that's displayed by:
+
+- **Start date** and **End date**
+- Direction values
+- Severity values
+
+To get back to the report view, click **View report**.
 
 ## Forwarding report
 
-To go directly to the **Forwarding report**, open <https://protection.office.com/reportv2?id=MailFlowForwarding>
+The **Forwarding report** shows your organization's automatically forwarded messages to external domains from Exchange Online mailboxes. Forwarded messages can pose a security or compliance risk, and might indicate a compromised account.
 
-## Mailflow status report (**NEW!**)
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Forwarding report**. To go directly to the report, open <https://protection.office.com/reportv2?id=MailFlowForwarding>.
+
+![Forwarding report widget in the Reports dashboard](../../media/forwarding-report-widget.png)
+
+### Report view for the Forwarding report
+
+The following reports are available in the report view:
+
+- **Show data for: Forwarding methods**: The following methods are shown:
+
+  - **Transport rule**: Also known as [mail flow rules](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules).
+  - **Mailbox rule**: Also known as [Inbox rules](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59).
+
+  ![Forwarding methods view in the Forwarding report](../../media/forwarding-report-forwarding-methods.png)
+
+- **Show data for: Forwarding domains**: This view shows the recipient domains that are the destinations for forwarding.
+
+  ![Forwarding domains view in the Forwarding report](../../media/forwarding-report-forwarding-domains.png)
+
+- **Show data for: Forwarders**: The following forwarders are shown:
+
+  - **Transport rule**
+  - The mailbox that contains the forwarding Inbox rule.
+
+  ![Forwarders view in the Forwarding report](../../media/forwarding-report-forwarders.png)
+
+If you click **Filters** in report view, you can specify a date range with **Start date** and **End date**.
+
+### Details table view for the Forwarding report
+
+If you click **View details table** in any report view, the following information is shown:
+
+- **Forwarders**: The value **Transport rule** or the mailbox that contains the forwarding Inbox rule.
+- **Forwarding type**: The value **Mailbox rule** or **Transport rule**.
+- **Recipient name**
+- **Recipient domain**
+- **Details**: This is the GUID value of the mail flow rule, or the RuleIdentity value of the Inbox rule.
+- **Count**
+- **First forward date**
+
+If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
+
+To get back to the reports view, click **View report**.
+
+## Mailflow status report
 
 The **Mailflow status report** is similar to the [Sent and received email report](#sent-and-received-email-report), with additional information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP).
 
-To go directly to the **Mail flow status report**, open <https://protection.office.com/mailflowStatusReport>.
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Mailflow status report**. To go directly to the **Mail flow status report**, open <https://protection.office.com/mailflowStatusReport>.
 
-The **Type** view gives an overview of the total number of messages, and how many messages were filtered (or not filtered) based on the following broad category types:
+![Mailflow status report widget in the Reports dashboard](../../media/mail-flow-status-report-widget.png)
 
-- Good mail (not filtered)
-- Malware
-- Phishing email
-- Spam
-- Edge protection
-- Rules (mail flow rules, also known as transport rules)
+### Type view for the Mailflow status report
 
-You can drill down into each individual category by going to the **Threat Protection Status report**.
+When you open the report, the **Type** tab is selected by default. By default, this view contains a chart and a data table that's configured with the following filters:
 
-![Mail flow status report by Type](../../media/mail-flow-status-type.png)
+- **Date**: The last 7 days.
+- **Direction**:
 
-The **Direction** view organizes email by the following categories:
+  - **Inbound**
+  - **Outbound**
+  - **Intra-org** (counted separately from **Inbound** and **Outbound**)
 
--Inbound
--Outbound
--Intra-org (counted separately from Inbound and Outbound)
+- **Type**:
 
-![Mail flow status report by direction](../../media/mail-flow-status-type.png)
+  - **Good mail**
+  - **Malware**
+  - **Spam**
+  - **Edge protection**
+  - **Rule messages**
+  - **Phishing email**
+
+The chart is organized by the **Type** values.
+
+You can changes these filters by clicking **Filter** or by clicking a value in the chart legend.
+
+The data table contains the following information:
+
+- **Direction**
+- **Type**
+- **24 hours**
+- **3 days**
+- **7 days**
+- **15 days**
+- **30 days**
+
+If you click **Choose a category for more details**, you can select from the following values:
+
+- **Phishing email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- **Malware in email**: This selection takes you to the [Threat protection status report](view-email-security-reports.md#threat-protection-status-report).
+- **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
+- **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
+
+![Type view in the Mailflow status report ](../../media/mail-flow-status-report-type-view.png)
+
+### Direction view for the Mailflow status report
+
+If you click the **Direction** tab, the same default filters from the **Type** view are used.
+
+The chart is organized by **Direction** values.
+
+You can changes these filters by clicking **Filter** or by clicking a value in the chart legend. The same filters from the **Type** view are used.
+
+The data table contains same information from the **Type** view.
+
+The **Choose a category for more details** available selections and behavior are the same as the **Type** view.
+
+![Direction view in the Mailflow status report ](../../media/mail-flow-status-report-direction-view.png)
 
 ## Sent and received email report
 
 The **Sent and received email** report is a smart report that shows information about incoming and outgoing email, including spam detections, malware, and email identified as "good." The difference between this report and the [Mailflow status report](#mailflow-status-report-new) is: this report doesn't include data about messages blocked by edge protection.
 
-To go directly to the **Mail flow status report**, open <https://protection.office.com/mailflowStatusReport>.
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Sent and received email**. To go directly to the report, open <https://protection.office.com/reportv2?id=SentAndReceivedMailATP>.
 
-![To view this report, in the Security & Compliance Center, go to Reports \> Dashboard \> Sent and received email](../../media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
+![Sent and received email widget in the Reports dashboard](../../media/sent-and-received-email-report-widget.png)
 
-When you hover over a day in the chart, you can see how many messages came in, and how those messages are categorized. For example, you can see how many messages were detected as containing malware, and how many were identified as spam.
+### Report view for the Sent and received email report
 
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
+The following reports are available in the report view:
 
-You can use the **Break down by** list to view information by type or by direction (incoming and outgoing).
+- **Break down by: Type**: The chart shows all available categories:
 
-![Use the Break Down By list to view information by type or direction](../../media/a5b30c94-d75f-4bfc-851a-cb155685b177.png)
+  - **Total**
+  - **Good mail**
+  - **Malware (anti-malware)** (EOP)
+  - **Spam detections**
+  - **Rule messages**
+  - **Advanced malware** (Office 365 ATP)
 
-Below the chart, you'll see a list of email categories, such as **GoodMail**, **SpamContentFiltered**, and so on. Select a category to view additional information, such as actions that were taken for malware, and whether email was incoming or outgoing.
+  When you hover over a day (data point) in the chart, you can see details for that day.
 
-![This report tells you about anti-malware, anti-spam, and other message detections](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
+  ![Type view in the Sent and received email report](../../media/sent-and-received-email-report-type-view.png)
 
-To learn more about email intelligence, see [Mail flow intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365).
+- **Break down by: Direction**: The chart shows **Total**, **Inbound** and **Outbound** data. When you hover over a day (data point) in the chart, you can see details for that day.
 
-## Top Senders and Recipients report
+  ![Direction view in the Sent and received email report](../../media/sent-and-received-email-report-direction-view.png)
 
-The **Top Senders and Recipients** report is a pie chart showing your top email senders.
+- **Drill down by** \> **Malware (anti-malware)**: This selection takes you to the [Malware Detections report](view-email-security-reports.md#malware-detections-report).
 
-To go directly to this report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
+- **Drill down by** \> **Spam detections)**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 
-![To view this report, in the Security & Compliance Center, go to Reports \> Dashboard \> Top Senders and Recipients](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
+If you click **Filters** in a report view, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- Direction values
+- Type values
+
+### Details table view for the Sent and received email report
+
+If you click **View details table** in the **Break down by: Direction** or **Break down by: Direction** view, the following information is shown:
+
+- **Date (UTC)**
+- **Type**
+- **Direction**
+- **Message count**
+
+If you click **Filters** in a report view, you can modify the report with the following filters:
+
+- **Start date** and **End date**
+- Direction values
+- Type values
+
+## Top senders and recipients report
+
+The **Top senders and secipients** report is a pie chart showing your top email senders and recipients.
+
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
+
+![Top senders and recipients widget in the Reports dashboard](../../media/sent-and-received-email-report-widget.png)
+
+### Report view for the Top senders and recipient report
+
+The following reports are available in the report view:
+
+- **Show data for \> Top mail senders**
+- **Show data for \> Top mail recipients**
+- **Show data for \> Top spam recipients**
+- **Show data for \> Top malware recipients** (EOP)
+- **Show data for \> Top malware recipients (ATP)** (Office 365 ATP)
+
+The composition of the pie chart changes based on these selections.
 
 When you hover over a wedge in the pie chart, you can see a count of messages sent or received.
 
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
+If you click **Filters** in report view, you can specify a date range with **Start date** and **End date**.
 
-Use the **Show data for** list to choose whether to view data for:
+![Pie chart in Report view in the Top senders and recipients report](../../media/top-senders-and-recipients-report-view.png)
 
-- **Top mail senders**
-- **Top mail recipients**
-- **Top spam recipients**
-- **Top malware recipients**
-- **Top malware recipients (ATP)**
+### Details table view for the Top senders and recipient report
 
-![Use the Show Data For list to view specific information](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
+If you click **View details table**, the information that's shown depends on the report you were looking at:
 
-Below the chart, you'll see who the top email senders or recipients were, along with a count of messages sent or received for the given time period.
+- **Show data for \> Top mail senders**
 
+  - **Top mail senders**
+  - **Count**
 
+- **Show data for \> Top mail recipients**
+
+  - **Top mail recipients**
+  - **Count**
+
+- **Show data for \> Top spam recipients**
+
+  - **Top spam recipients**
+  - **Count**
+
+- **Show data for \> Top malware recipients** (EOP)
+
+  - **Top malware recipients**
+  - **Count**
+
+- **Show data for \> Top malware recipients (ATP)** (Office 365 ATP)
+
+  - **Top malware recipients (ATP)**
+  - **Count**
+
+If you click **Filters** in report view, you can specify a date range with **Start date** and **End date**.
 
 ## What permissions are needed to view these reports?
 
