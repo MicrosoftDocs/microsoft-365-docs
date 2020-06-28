@@ -77,7 +77,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
     
   - Choose **Let me choose specific locations** \> **Next**. For this example, choose this.
     
-    To include or exclude only specific Exchange email accounts  switch the **Status** of that location on to choose specific distribution group. Based on selection, policy will target or exclude the members of the group.
+    To include or exclude only specific Exchange email accounts, switch the **Status** of that location on to choose a specific distribution group. Based on the selection, the policy will target or exclude the members of the group.
     
     To include only specific SharePoint sites or OneDrive for Business accounts, switch the **Status** to on, and then click the links under **Include** to choose specific sites or accounts. When you apply a policy to a site, the rules configured in that policy are automatically applied to all subsites of that site. 
     
@@ -191,4 +191,3 @@ In addition, you can turn off each rule individually by editing the policy and t
     
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
     
-
