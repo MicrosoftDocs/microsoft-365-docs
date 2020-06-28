@@ -134,8 +134,7 @@ You can search on:
 
 ## See also
 
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](retention.md)
-- [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
+- [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
+- [Sensitive information type entity definitions.md](sensitive-information-type-entity-definitions.md)
 - [Overview of data loss prevention](data-loss-prevention-policies.md)

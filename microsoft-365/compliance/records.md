@@ -166,5 +166,6 @@ For more information about searching for these events, see the "File and page ac
 
 ## Next steps
 
-If you don't yet have retention labels to use for records management, see [Get started with retention policies and retention labels](get-started-retention.md). 
+If you don't yet have retention labels to use for records management, see [Get started with retention policies and retention labels](get-started-with-retention.md).
+
 To watch videos related to configuring and using records management, see the [Data governance selections on YouTube](https://go.microsoft.com/fwlink/?linkid=867039).

@@ -37,7 +37,7 @@ File plan can be used for all retention labels, even if they don't mark content 
 
 ![File plan page](../media/compliance-file-plan.png)
 
-For information about what retention labels are and how to use them, see [Learn about retention labels](retention.md).
+For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
 
 ## Accessing file plan
 

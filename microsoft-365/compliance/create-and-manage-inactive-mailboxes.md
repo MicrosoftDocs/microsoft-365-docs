@@ -37,7 +37,7 @@ Microsoft 365 makes it possible for you to retain the contents of deleted mailbo
 
 - If a Litigation Hold or a retention policy (that's configured to retain or retain and then delete content) isn't applied to a mailbox before it's deleted, the contents of the mailbox won't be retained or discoverable. However, the deleted mailbox can be recovered within 30 days of deletion, but the mailbox and its contents will be permanently deleted after 30 days if it isn't recovered.
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). For more information about retention policies, see [Learn about retention policies and retention labels in Microsoft 365](retention.md).
+- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). For more information about retention policies, see [Learn about retention policies and retention labels](retention.md).
   
 ## Create an inactive mailbox
 

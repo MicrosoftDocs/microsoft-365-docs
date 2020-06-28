@@ -171,7 +171,7 @@ For example, you can create and apply a retention label named "Review later" wit
 
 #### Using a retention label as a condition in a DLP policy
 
-You can also use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific label. 
+You can also use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific retention label. 
   
 For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
@@ -224,6 +224,15 @@ To understand how and why one retention label is applied rather than another, it
 
 An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page.
 
+#### Using Content Search to find all content with a specific retention label applied to it
+
+After retention labels are assigned to content, either by users or auto-applied, you can use content search to find all content that's classified with a specific retention label.
+  
+When you create a content search, choose the **Compliance label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+  
+![Compliance label condition](../media/compliance-label-condition.png)
+
+
 ## Compare capabilities for retention policies and retention labels
 
 Use the following table to help you identify whether to use a retention policy or retention label, based on capabilities.
@@ -231,15 +240,14 @@ Use the following table to help you identify whether to use a retention policy o
 |Capability|Retention policy |Retention label|
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
-|Locations supported <br />-  Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
+|Locations supported: <br />-  Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
 |Automatic labeling (configured by administrators) | Yes | Yes |
 |Manual labeling (applied by users and administrators) | No | Yes |
 |Apply based on location | Yes| No, except default label for SharePoint |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
-|Condition for automatic labeling: Sensitive info types or exact matches | Yes | Yes |
-|Condition for automatic labeling: Trainable classifiers | No | Yes |
-|Event-driven retention | No | Yes |
+|Condition for automatic labeling: <br />- Sensitive info types or keywords <br />- Trainable classifiers  | |<br /> Yes |<br /> Yes | |<br /> No |<br /> Yes |
+|Event-based retention | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition | No |Yes, when item is declared a record|
 

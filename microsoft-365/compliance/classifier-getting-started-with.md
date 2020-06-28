@@ -33,7 +33,7 @@ This category of classification mechanisms includes finding content by:
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
 - Using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [retention policies](retention.md).
+Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
 
 ## Trainable classifiers
 
@@ -42,7 +42,7 @@ This classification method is particularly well suited to content that isn't eas
 ### Where you can use trainable classifiers
 Both built-in classifiers and trainable classifiers are available as a condition for [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and [communication compliance](communication-compliance-configure.md). 
 
-Sensitivity labels can use built-in and build-your-own classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md), and [auto-labeling for Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
+Sensitivity labels can use built-in and build-your-own classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are not encrypted and are in English.
@@ -125,7 +125,6 @@ Creating and publishing a trainable classifier for use in compliance solutions, 
 
 
 - [Retention labels](retention.md)
-- [Retention policies](retention.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
