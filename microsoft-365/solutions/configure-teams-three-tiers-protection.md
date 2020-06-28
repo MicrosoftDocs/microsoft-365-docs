@@ -1,5 +1,5 @@
 ---
-title: "Configure Teams with three tiers of protection"
+title: Configure Teams with three tiers of file sharing security
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -17,8 +17,9 @@ ms.collection:
 - M365solutions
 ms.custom:
 - Ent_Architecture
+- seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
-description: "Configuration recommendations for protecting files in Microsoft Teams."
+description: Learn how to configure Teams for better file sharing security using three tiers of protection, balancing security with ease of collaboration.
 ---
 
 # Configure Teams with three tiers of protection
@@ -35,7 +36,7 @@ The configurations in this article align with Microsoft's recommendations for th
 
 - Highly sensitive protection
 
-For more information about these tiers and capabilities recommended for each tier, see the following resources.
+For more information about these tiers and capabilities recommended for each tier, see the following resources regarding Teams file security.
 
 - [Identity and Device Protection for Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#identity-and-device-protection-for-office-365)
 
