@@ -180,7 +180,7 @@ There are two ways to archive a message.
 
 Need to get a dismissed message back? No problem.
   
-1. Select the **archive messages** filter from the **Views** drop-down menu. A list of archived messages appears.
+1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
 
 2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
 
