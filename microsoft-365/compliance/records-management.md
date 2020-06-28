@@ -44,6 +44,10 @@ Records management in Microsoft 365 provides the following capabilities:
 
 With the records-management solution in Microsoft 365, you can incorporate your organization’s retention schedules into the file plan to manage retention, records declaration, and disposition to support the full lifecycle of your content.
 
+## Additional resources
+
+See the [webinar recording](https://aka.ms/MIPC/Video-RecordsManagementWebinar) and [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) for records management.
+
 ## Next steps
 
 If you are ready to get started with records management in Microsoft 365, see [Learn about records](records.md).
