@@ -341,8 +341,6 @@
           href: records-management.md
         - name: Records
           href: records.md
-        - name: Disposition
-          href: disposition.md
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365
