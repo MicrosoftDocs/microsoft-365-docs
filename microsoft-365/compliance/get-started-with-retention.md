@@ -23,11 +23,9 @@ description: Ready to start implementing retention policies and retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-For information about how retention works in Microsoft 365, by using retention policies and retention labels, see [Learn about retention](retention.md).
+Ready to start governing your organization's data by retaining the content that you need to keep, and deleting the content that you don'? Use the following high-level guidance to get started:
 
-When you're ready to start governing your data by retaining the content that you need to keep, and deleting the content that you don't, use the following high-level guidance to get started:
-
-1. **Learn how retention works** in Microsoft 365, by using retention policies and retention labels. Identify whether you need to use retention policies, or retention labels, or a combination: [Learn about retention](retention.md)
+1. **Understand how retention works** in Microsoft 365, by using retention policies and retention labels. Identify whether you need to use retention policies, or retention labels, or a combination: [Learn about retention](retention.md)
 
 2. **Identify the retention settings and actions** that are required by your organization policies or industry regulations.
     
@@ -37,9 +35,7 @@ When you're ready to start governing your data by retaining the content that you
     
     For retention labels, you might find it useful to use [file plan](file-plan-manager.md) to define and refine your retention labels in a spredtsheet that you can then import to create your labels.
     
-3. **Publish and apply your retention labels**. While retention policies are designed for "set it and forget it" configuration, retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows. See the  
-    
-    
+3. **Publish and apply your retention labels**. While retention policies are designed for "set it and forget it" configuration, retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows. See the list of [common scenarios](#common-scenarios-for-retention-policies-and-retention-labels) to help you identify how retention labels can be used. 
 
 ## Subscription and licensing requirements for retention policies and retention labels
 
@@ -66,7 +62,6 @@ Use the following table to help you map your business requirements to retention 
 |Automatically apply a set of retain and delete actions at the item level (documents and emails) |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs | [Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Use a single records management solution for both documents and emails |[Records management in Microsoft 365](records-management.md) |
-|Start the retention period when an event occurs | [Apply a retention label to content automatically](apply-retention-labels-automatically.md)||Start the retention period when an event occurs | [Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Comply with SEC Rule 17a-4|[[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Make sure somebody reviews and approvals before content is deleted at the end of it's retention period|[[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is deleted at the end of it's retention period|[[Disposition of records](disposition.md#disposition-of-records) |
