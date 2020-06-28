@@ -176,7 +176,7 @@ There are two ways to archive a message.
   
 - Select the X that appears to the right of the Message ID. The message is removed from your list. Or,
 
-- Open the message, and then select **archive** at the top of the message.
+- Open the message, and then select **Archive** at the top of the message.
 
 Need to get a dismissed message back? No problem.
   
