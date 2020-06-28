@@ -250,7 +250,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Event-based retention | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition | No |Yes, when item is declared a record|
-|Identify itens subject to retention: <br /> - Content Search <br /> Data classification page, content explorer, activity explorer | No | <br /> No <br /> No | <br /> Yes <br /> Yes|
+|Identify itens subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
 ## The principles of retention, or what takes precedence?
 
