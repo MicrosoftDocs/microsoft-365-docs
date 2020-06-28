@@ -55,7 +55,7 @@ Use the following table to help you map your business requirements to retention 
 
 |I want to ...|Documentation|
 |----------------|---------------|
-|Efficiently set retain and delete actions for the organization, or by location: <br />-  Exchange email and public folders <br />- SharePoint sites <br />- OneDrive accounts <br />- Microsoft 365 groups <br />- Skype for Business accounts <br />- Teams channels and chats |[Create and configure retention policies](create-retention-policies.md)|
+|Efficiently set retain and delete actions for the organization, or by location: <br />-  Exchange  <br />- SharePoint  <br />- OneDrive  <br />- Microsoft 365 groups <br />- Skype for Business  <br />- Teams  |[Create and configure retention policies](create-retention-policies.md)|
 |Let admins and users manually apply a set of retain and delete actions for documents and emails: <br />-  SharePoint <br />- OneDrive <br />- Outlook and Outlook on the web|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Let site admins set a default retention label for all content in a SharePoint library, folder, or document set|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Let users automatically apply a retention label to emails by using rules|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
