@@ -62,9 +62,9 @@ Use the following table to help you map your business requirements to retention 
 |Automatically apply a set of retain and delete actions at the item level (documents and emails) |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs | [Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Use a single records management solution for both documents and emails |[Records management in Microsoft 365](records-management.md) |
-|Comply with SEC Rule 17a-4|[[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Make sure somebody reviews and approvals before content is deleted at the end of it's retention period|[[Disposition reviews](disposition.md#disposition-reviews) |
-|Have proof of disposition for content that is deleted at the end of it's retention period|[[Disposition of records](disposition.md#disposition-of-records) |
+|Comply with SEC Rule 17a-4|[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
+|Make sure somebody reviews and approvals before content is deleted at the end of it's retention period|[Disposition reviews](disposition.md#disposition-reviews) |
+|Have proof of disposition for content that is deleted at the end of it's retention period|[Disposition of records](disposition.md#disposition-of-records) |
 
 ## End-user documentation for retention labels
 
