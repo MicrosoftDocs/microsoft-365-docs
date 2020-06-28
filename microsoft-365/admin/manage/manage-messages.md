@@ -154,7 +154,7 @@ Any message in Message center that is unread will appear in bold. Opening a mess
 
 ## Archive and restore
 
-If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from the Message center view. The view that you see in Message center is specific to your user account, so archiving it from your view doesn't affect other admins.
+If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from the Message center view. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins.
 
 ::: moniker range="o365-worldwide"
 
