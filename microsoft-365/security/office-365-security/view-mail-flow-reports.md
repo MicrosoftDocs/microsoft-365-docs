@@ -38,7 +38,7 @@ To open the report, open the [Security & Compliance Center](https://protection.o
 
 The following reports are available in report view:
 
-- **View data by: Mail flow**: This view shows the number of inbound and outbound and outbound messages organized by:
+- **View data by: Mail flow**: This view shows the number of inbound and outbound messages organized by:
 
   - **Total**
   - **From the internet without a connector**
@@ -252,7 +252,7 @@ If you click the **Direction** tab, the same default filters from the **Type** v
 
 The chart is organized by **Direction** values.
 
-You can changes these filters by clicking **Filter** or by clicking a value in the chart legend. The same filters from the **Type** view are used.
+You can change these filters by clicking **Filter** or by clicking a value in the chart legend. The same filters from the **Type** view are used.
 
 The data table contains same information from the **Type** view.
 
@@ -285,7 +285,7 @@ The following reports are available in the report view:
 
   ![Type view in the Sent and received email report](../../media/sent-and-received-email-report-type-view.png)
 
-- **Break down by: Direction**: The chart shows **Total**, **Inbound** and **Outbound** data. When you hover over a day (data point) in the chart, you can see details for that day.
+- **Break down by: Direction**: The chart shows **Total**, **Inbound**, and **Outbound** data. When you hover over a day (data point) in the chart, you can see details for that day.
 
   ![Direction view in the Sent and received email report](../../media/sent-and-received-email-report-direction-view.png)
 
@@ -316,7 +316,7 @@ If you click **Filters** in a report view, you can modify the report with the fo
 
 ## Top senders and recipients report
 
-The **Top senders and secipients** report is a pie chart showing your top email senders and recipients.
+The **Top senders and recipients** report is a pie chart showing your top email senders and recipients.
 
 To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
 
