@@ -33,7 +33,7 @@ Ready to start governing your organization's data by retaining the content that 
 
 3. **Create retention policies and retention labels**, based on the retention settings and actions that you identified.
     
-    For retention labels, you might find it useful to use [file plan](file-plan-manager.md) to define and refine your retention labels in a spreadsheet that you can then import to create your labels.
+    For retention labels, you might find it useful to use [file plan](file-plan-manager.md) to define and refine your retention labels in a spreadsheet. Then, import that spreadsheet to create your labels.
     
 3. **Publish and apply your retention labels**. While retention policies are designed for "set it and forget it" configuration, retention labels are reusable building blocks that can be used in multiple policies and can be incorporated into user workflows. See the list of [common scenarios](#common-scenarios-for-retention-policies-and-retention-labels) to help you identify how retention labels can be used. 
 
@@ -63,7 +63,7 @@ Use the following table to help you map your business requirements to retention 
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
 |Use a single records management solution for both documents and emails |[Records management in Microsoft 365](records-management.md) |
 |Comply with SEC Rule 17a-4|[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
-|Make sure somebody reviews and approvals before content is deleted at the end of it's retention period|[Disposition reviews](disposition.md#disposition-reviews) |
+|Make sure somebody reviews and approvals before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is deleted at the end of it's retention period|[Disposition of records](disposition.md#disposition-of-records) |
 
 ## End-user documentation for retention labels
