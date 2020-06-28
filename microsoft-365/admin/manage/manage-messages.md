@@ -158,7 +158,7 @@ If you see a message that doesn't pertain to you, or maybe you've already acted 
 
 ::: moniker range="o365-worldwide"
 
-- On the main page of the message center, select a message, and then select **Archive** above the list of messages.
+- On the main page of the Message center, select a message, and then select **Archive** above the list of messages.
 
 - Open the message, and then select **Archive** at the bottom of the message.
 
