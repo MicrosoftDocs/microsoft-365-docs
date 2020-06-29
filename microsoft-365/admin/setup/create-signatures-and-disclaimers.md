@@ -17,6 +17,7 @@ ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-may2020
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -33,7 +34,7 @@ description: Learn to manage email signatures, including legal disclaimers or di
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Create a signature that applies to all messages
 
@@ -108,6 +109,4 @@ To gain these and other capabilities to manage email signatures, use a third-par
   
 ## More resources
 
-- See [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell. 
-    
-
+- See [Organization-wide message disclaimers, signatures, footers, or headers in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell.

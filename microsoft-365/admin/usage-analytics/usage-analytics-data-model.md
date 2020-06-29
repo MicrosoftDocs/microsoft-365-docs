@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -37,16 +38,16 @@ This API provides information about the monthly trend of usage of the various Mi
 
 |**Table name**|**Information in the table**|**Date range**|
 |:-----|:-----|:-----|
-|Tenant Product Usage  <br/> |Contains monthly totals of enabled, active users, month-over-month retained users, first time users, and the cumulative active users.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Product Usage  <br/> |Contains monthly totals of enabled, active users, month-over-month retained users, first-time users, and the cumulative active users.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant Product Activity  <br/> |Contains monthly totals of activity and active user count for various activity within the products.  <br/> See [active user definition](active-user-in-usage-reports.md) for information about the activities within a product that are returned in this data table.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant Office Licenses  <br/> |Contains data about number of Microsoft Office subscriptions assigned to users  <br/> |Contains end of month state data for a rolling 12 month period including the current partial month.  <br/> |
-|Tenant Mailbox Usage  <br/> |Contains data about the user's mailbox, in terms of total mailbox count and how storage is used.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Office Licenses  <br/> |Contains data about number of Microsoft Office subscriptions assigned to users  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Mailbox Usage  <br/> |Contains data about the user's mailbox, in terms of total mailbox count and how storage is used.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
 |Tenant Client Usage  <br/> |Contains data about the number of users actively using specific client/devices to connect to Exchange Online, Skype for Business and Yammer.  <br/> |Contains monthly aggregated data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant SharePoint Online Usage  <br/> |Contains data about the SharePoint sites, covering Team or Groups sites such as total number of sites, number of documents on site, file count by activity type and storage used.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant OneDrive for Business Usage  <br/> |Contains data about the OneDrive accounts such as number of accounts, number of documents across OneDrives, storage used, file count by activity type.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant Microsoft 365 Groups Usage  <br/> |Contains data about Microsoft 365 Groups usage including Mailbox, SharePoint, and Yammer.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
-|Tenant Office Activation  <br/> |Contains data about number of Office subscription activations, count of activation per device (Android/iOS/Mac/PC), activations by service plan, for example, Microsoft 365 Apps for enterprise, Visio, Project.  <br/> |Contains end of month state data for a rolling 12-month period including the current partial month.  <br/> |
-|User State  <br/> |Contains metadata about users, including user display name, products assigned, location, department, title, company. This data is about users who were assigned a licenses during the last complete month . Every user is uniquely represented by a user id.  <br/> |This data is about users that had a license assigned during the last complete month.  <br/> |
+|Tenant SharePoint Online Usage  <br/> |Contains data about the SharePoint sites, covering Team or Groups sites such as total number of sites, number of documents on site, file count by activity type and storage used.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant OneDrive for Business Usage  <br/> |Contains data about the OneDrive accounts such as number of accounts, number of documents across OneDrives, storage used, file count by activity type.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Microsoft 365 Groups Usage  <br/> |Contains data about Microsoft 365 Groups usage including Mailbox, SharePoint, and Yammer.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
+|Tenant Office Activation  <br/> |Contains data about number of Office subscription activations, count of activation per device (Android/iOS/Mac/PC), activations by service plan, for example, Microsoft 365 Apps for enterprise, Visio, Project.  <br/> |Contains end-of-month state data for a rolling 12-month period including the current partial month.  <br/> |
+|User State  <br/> |Contains metadata about users, including user display name, products assigned, location, department, title, company. This data is about users who were assigned a licenses during the last complete month . Every user is uniquely represented by a user ID.  <br/> |This data is about users that had a license assigned during the last complete month.  <br/> |
 |User Activity  <br/> |Contains per-user level information about activity performed by licensed users.  <br/> See [active user definition](active-user-in-usage-reports.md) for information about the activities within a product that are returned in this data table.  <br/> |This data is about users that performed an activity in any of the services during the last complete month.  <br/> |
    
 Expand the following sections to see the detailed information for each data table.
@@ -57,11 +58,11 @@ This table provides user level details for all users that have an license assign
   
 |**Column name**|**Column description**|
 |:-----|:-----|
-|UserId  <br/> |Unique user id that represents a user and enables joining with other data tables within the data set.  <br/> |
+|UserId  <br/> |Unique user ID that represents a user and enables joining with other data tables within the data set.  <br/> |
 |Timeframe  <br/> |Month value for which this table has data for.  <br/> |
 |UPN  <br/> |User principal name, uniquely identifies the user to be able to join with other external data sources.  <br/> |
 |DisplayName  <br/> |User's display name.  <br/> |
-|IDType  <br/> |Id type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this users connects to Yammer with their Yammer id and not their Microsoft 365 id  <br/> |
+|IDType  <br/> |ID type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this users connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
 |HasLicenseEXO  <br/> |Set to true if user is assigned a license and enabled to use Exchange.  <br/> |
 |HasLicenseODB  <br/> |Set to true if user is assigned a license and enabled to use OneDrive for Business.  <br/> |
 |HasLicenseSPO  <br/> |Set to true if user is assigned a license and enabled to use SharePoint Online.  <br/> |
@@ -89,7 +90,7 @@ This table contains data about each user who had an activity in any of the servi
 |**Column name**|**Column description**|
 |:-----|:-----|
 |UserID  <br/> |Unique user id that represents a user and enables joining with other data tables within the data set.  <br/> |
-|IDType  <br/> |Id type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this users connects to Yammer with their Yammer id and not their Microsoft 365 id  <br/> |
+|IDType  <br/> |Id type is set to 1 if the user is a Yammer user who connects by using their Yammer ID or 0 if they connect to Yammer by using their Microsoft 365 ID.  <br/> Value is 1 to represent that this users connects to Yammer with their Yammer ID and not their Microsoft 365 ID  <br/> |
 |Timeframe  <br/> |Month value for which this table represents data for.  <br/> |
 |EXO_EmailSent  <br/> |Number of emails sent.  <br/> |
 |EXO_EmailReceived  <br/> |Number of emails received.  <br/> |
@@ -137,7 +138,7 @@ This table contains data about each user who had an activity in any of the servi
    
 ### Data table - Tenant Product Usage
 
-This table provides month over month adoption data in terms of enable, active, returning and first time users for each product within Microsoft 365. The Microsoft 365 value represent active usage in either of the products.
+This table provides month-over-month adoption data in terms of enable, active, returning and first-time users for each product within Microsoft 365. The Microsoft 365 value represent active usage in either of the products.
   
 |**Column name**|**Column description**|
 |:-----|:-----|
@@ -147,7 +148,7 @@ This table provides month over month adoption data in terms of enable, active, r
 |ActiveUsers  <br/> |Number of users who performed an intentional activity in the product for the timeframe value.  <br/> A user is counted as active for a product in a particular month, if they have performed one of the key activities in the product. The key activities are available in the **Tenant Product Activity** table.  <br/> |
 |CumulativeActiveUsers  <br/> |Number of users who are enabled to use a product and have used the product up to the timeframe month at least once since data collection started in the new usage system.  <br/> |
 |MoMReturningUsers  <br/> |Number of users who are active in the timeframe month and also were active in the previous month.  <br/> |
-|FirstTimeUsers  <br/> |Number of users who became active in the timeframe for the first time since data collection in the new usage system.  <br/> A user is counted as a first-time user in a particular month, if we detect their activity for the first time since the beginning of data collection in this new reporting system. Once counted as a first time user, even if this user has a big gap in their activity they will never be counted again as a first time user  <br/> |
+|FirstTimeUsers  <br/> |Number of users who became active in the timeframe for the first time since data collection in the new usage system.  <br/> A user is counted as a first-time user in a particular month, if we detect their activity for the first time since the beginning of data collection in this new reporting system. Once counted as a first-time user, even if this user has a big gap in their activity they will never be counted again as a first-time user  <br/> |
 |Content Date  <br/> |If timeframe shows current month, this value will represent the latest date of the current month for which data is available.  <br/> If Timeframe shows previous month, this value will represent the last date of the timeframe month.  <br/> |
    
 ### Data table - Tenant Product Activity
@@ -185,7 +186,7 @@ This table consists of summary data across all licensed Exchange Online users wh
    
 ### Data table - Tenant Client Usage
 
-This table provides month over month summary data about the clients that the users are using to connect to Exchange Online, Skype for Business and Yammer. This table does not yet have client use data for SharePoint Online and OneDrive for Business.
+This table provides month-over-month summary data about the clients that the users are using to connect to Exchange Online, Skype for Business and Yammer. This table does not yet have client use data for SharePoint Online and OneDrive for Business.
   
 |**Column name**|**Column description**|
 |:-----|:-----|

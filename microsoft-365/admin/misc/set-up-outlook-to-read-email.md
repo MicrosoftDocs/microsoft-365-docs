@@ -13,6 +13,7 @@ ms.custom:
 - Core_O365Admin_Migration
 - GSTips
 - MiniMaven
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -33,7 +34,7 @@ The first time you open Outlook, an Auto Account Wizard opens. If not, choose **
     
 2. On the **Auto Account Setup** page, enter your name, email address, and password, and then choose **Next** \> **Finish**.
     
-Read [full article](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx).
+Read [full article](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b).
   
 ## How do I install the Office apps, including Outlook?
 
@@ -53,7 +54,7 @@ The first time you open Outlook app, Set up my Inbox wizard opens. In the wizard
     
 3. On the **Enter your Exchange account information** page, enter your name, email address, and password, and then select **Add Account**.
     
-Read [full article](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx#PickTab=Outlook_for_Mac). 
+Read [full article](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b#PickTab=Outlook_for_Mac). 
   
 ## How do I access my mail online?
 

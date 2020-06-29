@@ -1,5 +1,5 @@
 ---
-title: "View email security reports in the Security & Compliance Center, Compromised users, Encryption, Threat Protection Status, malware detections, Top malware, spam detection, sent and received email, user reported messages, read reports, detection, security data, security information"
+title: View email security reports in the Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,6 +17,7 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: "Learn how to find and use email security reports for your organization. Email security reports are available in the Security & Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # View email security reports in the Security & Compliance Center
@@ -119,7 +120,9 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![Malware Detections Report example](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
 
-Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range.
+Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. 
+
+If you click on the red triangle in the aggregate view, you will land on an insight flyout page called "Users Targeted by malware campaigns." The count column on this flyout page represents how many times per day the recipient received malware. 
 
 ## Top Malware report
 
@@ -145,15 +148,15 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![To view this report, in the Security & Compliance Center, go to Reports \> Dashboard \> Top Senders and Recipients](../../media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
 
-When you hover over a wedge in the pie chart, you can see a count of messages sent or received.
+When you hover over a wedge in the pie chart, you can see a count of messages sent or received.  
 
 Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
 
-Use the **Show data for** list to choose whether to view data for top senders, receivers, spam recipients, and malware recipients. You can also see who received malware that was detected by [Exchange Online Protection](exchange-online-protection-overview.md).
+Use the **Show data for** list to choose whether to view data for top senders, receivers, spam recipients, and malware recipients. You can also see who received malware that was detected by [Exchange Online Protection](exchange-online-protection-overview.md). For example, if you choose top spam recipients, the top five spam recipients in the organization are shown as percentages in the pie chart. The "Others" percentage represents the total of all other spam recipients other than the top five. The sum of all percentages in the pie chart = 100%.  
 
 ![Use the Show Data For list to view specific information](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
-Below the chart, you'll see who the top email senders or recipients were, along with a count of messages sent or received for the given time period.
+If you choose top spam recipients, note that the counts below the chart are the total number of spam messages received by the user.  
 
 ## Spoof Detections report
 
@@ -234,7 +237,7 @@ In order to view and use the reports described in this article, **you must have 
   -Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com))
   -Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   -Organization Management
   -View-only Organization Management
@@ -256,7 +259,3 @@ If you are not seeing data in your reports, double-check that your policies are 
 [Microsoft 365 Email Anti-Spam Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection)
 
 [Reports and insights in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/reports-and-insights-in-security-and-compliance)
-
-[Create a schedule for a report in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/create-a-schedule-for-a-report)
-
-[Set up and download a custom report in the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-and-download-a-custom-report)

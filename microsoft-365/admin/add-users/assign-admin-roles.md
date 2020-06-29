@@ -18,6 +18,7 @@ ms.custom:
 - okr_smb
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -40,14 +41,7 @@ Watch a short video about adding an admin.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Assign admin roles 
 
@@ -93,7 +87,7 @@ You can assign users to a role in 2 different ways:
 
 1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
 
-2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, next to **Roles**, select **Edit**. 
+2. On the **Active users** page, select the user whose admin role you want to change. In the flyout pane, next to **Roles**, select **Edit**.
 
     If you don't see the **Edit** option, then you don't have a permission to edit and can't assign admin roles to other people. Ask a global admin in your business to assign roles for you. In a small business, the business owner (the person who purchased your subscription) is a global admin. In a large business, key people in the IT department are global admins.
 
@@ -111,17 +105,18 @@ Use the following instructions to assign roles to tens of users.
 ::: moniker range="o365-worldwide"
 
 
-## Didn't work for you?
+## Check your permissions
 
-You might not have the correct permissions and so you don't have access to assign admin roles to other users. Ask another admin to assign roles for you.
+You might not have the correct permissions to assign admin roles to other users. Check to make sure if you the correct permissions or ask another admin to assign roles for you.
 
 ::: moniker-end
 
 ## Related articles
 
+[About Microsoft 365 admin roles](about-admin-roles.md)
+
+[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [Assign roles to user accounts with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Authorize or remove partner relationships](../misc/add-partner.md)
-
-[Add an alternative email address using the Exchange admin center](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
-

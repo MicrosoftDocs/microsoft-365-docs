@@ -20,9 +20,8 @@ Microsoft Managed Desktop uses several Microsoft technologies to help secure man
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
-For information on data storage, usage, and security practices used by Microsoft Managed Desktop, please download our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
+For information about data storage, usage, and security practices used by Microsoft Managed Desktop, please download our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
 
-For more about the Security Operations team at Microsoft Managed Desktop and how they work to provide security for your devices, see the video [Microsoft Managed Desktop Security Operations](https://www.microsoft.com/videoplayer/embed/RE4q6nP). 
 
 ## Device security
 

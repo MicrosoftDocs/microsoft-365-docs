@@ -16,7 +16,10 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn how retention labels classify data across your organization for governance, and enforce retention rules based on that classification. You can also use retention labels to implement a records management solution for Microsoft 365."
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+description: Learn about retention labels that govern your data by keeping what you want, deleting what you don't want, and marking content as a record.
 ---
 
 # Learn about retention labels
@@ -57,7 +60,9 @@ With retention labels, you can:
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
-Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens, the label can't be changed or removed, and the content can't be edited or deleted. 
+Additionally, retention labels support [records management](records-management.md) for email and documents across Microsoft 365 apps and services. You can use a retention label to classify content as a record. When this happens and the content remains in Microsoft 365, the label can't be changed or removed, and the content can't be edited or deleted. 
+
+Retention labels, unlike [sensitivity labels](sensitivity-labels.md), do not persist if the content is moved outside Microsoft 365.
 
 There is no limit to the number of retention labels that are supported for a tenant. However, 10,000 is the maximum number of policies that are supported for a tenant and these include the policies that apply the labels (retention label policies and auto-apply retention policies), as well as retention policies.
 
@@ -102,10 +107,6 @@ To understand how and why one retention label is applied rather than another, it
 
 An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](#the-principles-of-retention-or-what-takes-precedence) section on this page.
 
-In the results, the `ELCLastSuccessTimeStamp` (UTC) property shows when the system last processed your mailbox. If it has not happened since the time you created the policy, the labels are not going to appear. To force processing, run  `Start-ManagedFolderAssistant -Identity <user>`.
-    
-If labels aren't appearing in Outlook on the web and you think they should be, make sure to clear the cache in your browser (CTRL+F5).
-    
 ## Retention label policies and locations
 
 Different types of retention labels can be published to different locations, depending on what the retention label does.
@@ -118,19 +119,23 @@ Different types of retention labels can be published to different locations, dep
    
 In Exchange, auto-apply retention labels (for both queries and sensitive information types) are applied only to messages newly sent (data in transit), not to all items currently in the mailbox (data at rest). Also, auto-apply retention labels for sensitive information types can apply only to all mailboxes; you can't select the specific mailboxes.
   
-Exchange public folders and Skype do not support retention labels.
+Exchange public folders, Skype, and Teams channel messages and chats do not support retention labels.
 
 ## How retention labels enforce retention
 
-Retention labels can enforce the same retention actions that a retention policy can - retain and then delete, or retain-only, or delete-only. You can use retention labels to implement a sophisticated content plan (or file plan). For more information about how retention works, see [Learn about retention policies](retention-policies.md).
-  
+Retention labels can enforce the same retention actions that a retention policy can - retain and then delete, or retain-only, or delete-only. You can use retention labels to implement a sophisticated file plan that identifies specific files for different retention settings. For more information about how retention works, see [Learn about retention policies](retention-policies.md).
+
 In addition, a retention label has two retention options that are available only in a retention label and not in a retention policy. With a retention label, you can:
   
 - Trigger a disposition review at the end of the retention period, so that SharePoint and OneDrive documents must be reviewed before they can be deleted. For more information, see [Disposition reviews](disposition.md#disposition-reviews).
     
-- Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. This option applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received, no matter which option you choose here.
+- Start the retention period from when the content was labeled, instead of the age of the content or when it was last modified. When you use this option:
+    - It applies only to content in SharePoint sites and OneDrive accounts. For Exchange email, the retention period is always based on the date when the message was sent or received.
+    - You can't change the retention period after the label is saved.
     
 ![Retention settings with options specific to labels](../media/c49118c9-6279-4661-94db-deffa76e27ac.png)
+
+Another important difference is that when you apply a retention label rather than a retention policy to files in SharePoint, and the label is configured to retain content, users can't delete the file while the retention period is enforced. Users can delete content when the same label is applied to files in OneDrive and to emails, unless the label marks the content as a record.
 
 ## Where published retention labels can appear to end users
 
@@ -191,10 +196,9 @@ After a retention label is applied to an item, you can view it in the details pa
   
 ![Applied label shown in Details pane](../media/d06e585e-29f7-4c8c-afef-629c97268b8e.png)
   
-You can also create a view of the library that contains the **Labels** column or **Item is a Record** column, so that you can see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. 
-  
-![Library column for labels shown in custom view](../media/e3392627-c0a3-405e-bb57-55f27c34cfdd.png)
-  
+For SharePoint, but not OneDrive, you can create a view of the library that contains the **Labels** column or **Item is a Record** column. This view lets you see at a glance the retention labels assigned to all items and which items are records. Note, however, that you can't filter the view by the **Item is a Record** column. For instructions how to add columns, see [Show or hide columns in a list or library](https://support.microsoft.com/en-us/office/show-or-hide-columns-in-a-list-or-library-b820db0d-9e3e-4ff9-8b8b-0b2dbefa87e2).
+
+
 ### Microsoft 365 groups
 
 When you publish retention labels to Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)), the retention labels appear in both the group site and group mailbox in Outlook on the web. The experience of applying a retention label to content is identical to that for email and documents.
@@ -272,11 +276,12 @@ When you create a retention label, you can do so without turning on any retentio
   
 For example, you can create a retention label named "Review later" with no actions, and then auto-apply that retention label to content with sensitive information types or queried content.
   
-![Label settings page with retention turned off](../media/17ce863b-a823-426e-aaad-83718465f762.png)
+![Label settings page with retention turned off](../media/retention-label-retentionoff.png)
+
   
 ## Using retention labels for records management
     
-You can use retention labels to declare content as a record. This lets you implement a single, consistent records-management strategy across Microsoft 365. For more information, see [Overview of records](records.md).
+You can use retention labels to declare content as a record. This lets you implement a single, consistent records-management strategy across Microsoft 365. For more information, see [Learn about records](records.md).
   
 ## Using a retention label as a condition in a DLP policy
 
@@ -337,9 +342,9 @@ After you publish or auto-apply your retention labels, you'll want to verify tha
 
 After retention labels are assigned to content, either by users or auto-applied, you can use content search to find all content that's classified with a specific retention label.
   
-When you create a content search, choose the **Compliance Tag** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
+When you create a content search, choose the **Compliance label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Compliance Tag condition](../media/82d6af16-59f8-462f-babb-c894b2917018.png)
+![Compliance label condition](../media/compliance-label-condition.png)
   
 ## Use retention labels instead of older features
 
@@ -349,14 +354,16 @@ There are several other features that have previously been used to retain or del
   
 ### Exchange Online
 
-- [Retention tags and retention policies](https://go.microsoft.com/fwlink/?linkid=846125), also known as [messaging records management (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (Deletion only) 
+- [Retention tags and retention policies](https://go.microsoft.com/fwlink/?linkid=846125), also known as [messaging records management (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (deletion only) 
     
 ### SharePoint and OneDrive
 
 - [Configuring in place records management](https://support.office.com/article/7707a878-780c-4be6-9cb0-9718ecde050a) (retention) 
     
-- [Introduction to the Records Center](https://support.office.com/article/bae6ca5a-7b19-40e0-b433-e3613a747c2c) (Retention) 
+- [Introduction to the Records Center](https://support.office.com/article/bae6ca5a-7b19-40e0-b433-e3613a747c2c) (retention) 
     
 - [Information management policies](intro-to-info-mgmt-policies.md) (deletion only) 
     
+## Next steps
 
+If you are ready to create and publish retention labels, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).

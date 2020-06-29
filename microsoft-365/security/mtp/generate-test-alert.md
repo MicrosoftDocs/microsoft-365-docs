@@ -28,3 +28,7 @@ Now that you've completed your Microsoft Threat Protection evaluation lab setup 
 
 1. Log on to https://security.microsoft.com
 2. On the Home page, look for a tile titled **Simulation**.  Review the walkthrough guide for steps to create a test incident in Microsoft Threat Protection.
+<br>![Image of simulation card in the Microsoft 365 Security dashboard](../../media/mtp-eval-73.png) <br>
+
+## Next steps
+Browse through the [Microsoft 365 solution and architecture center](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center?view=o365-worldwide) for guidance on how you want your security solutions implemented in your unique environment.

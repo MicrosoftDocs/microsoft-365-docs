@@ -14,6 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: 
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -59,7 +60,7 @@ Before you begin, check your [Microsoft 365 Secure Score](https://docs.microsoft
 Using multi-factor authentication is one of the easiest and most effective ways to increase the security of your organization. It's easier than it sounds - when you log in, multi-factor authentication means you'll type a code from your phone to get access to Microsoft 365. This can prevent hackers from taking over if they know your password. Multi-factor authentication is also called 2-step verification. Individuals can add 2-step verification to most accounts easily, for example, to their Google or Microsoft accounts. Here's how to [add two-step verification to your personal Microsoft account](https://go.microsoft.com/fwlink/?linkid=2016403&amp;clcid=0x409).
   
 For businesses using Microsoft 365, add a setting that requires your users to log in using multi-factor authentication. When you make this change, users will be prompted to set up their phone for two-factor authentication next time they log in.
-To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](https://support.office.com/article/e12187b8-216a-4490-9e3b-df34a06fb787) and [user set up](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225).
+To see a training video for how to set up MFA and how users complete the set up, see [set up MFA](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) and [user set up](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225).
   
 To set up multi-factor authentication:
 
@@ -74,7 +75,7 @@ To set up multi-factor authentication:
 5. In the pop-up window, choose **Enable Multi-Factor Authentication**.
 
 
-After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.office.com/article/ace1d096-61e5-449b-a875-58eb3d74de14).
+After you set up multi-factor authentication for your organization, your users will be required to set up two-step verification on their devices. For more information, see [Set up 2-step verification for Microsoft 365](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14).
   
 For full details and complete recommendations, see [Set up multi-factor authentication for users](set-up-multi-factor-authentication.md).
   
@@ -83,7 +84,7 @@ For full details and complete recommendations, see [Set up multi-factor authenti
 
 The Harvard Kennedy School [Cybersecurity Campaign Handbook](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) provides excellent guidance on establishing a strong culture of security awareness within your organization, including training users to identify phishing attacks. 
   
-In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx). These actions include:
+In addition to this guidance, Microsoft recommends that your users take the actions described in this article: [Protect your account and devices from hackers and malware](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6). These actions include:
   
 - Using strong passwords
     
@@ -93,7 +94,7 @@ In addition to this guidance, Microsoft recommends that your users take the acti
     
 Microsoft also recommends that users protect their personal email accounts by taking the actions recommended in the following articles:
   
-- [Help protect your Outlook.com email account](https://support.microsoft.com/en-us/office/help-protect-your-outlook-com-email-account-a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
+- [Help protect your Outlook.com email account](https://support.microsoft.com/office/a4f20fc5-4307-4ece-8231-6d4d4bd8a9ba)
     
 - [Protect your Gmail account with 2-step verification](https://go.microsoft.com/fwlink/?linkid=2015688&amp;clcid=0x409)
     
@@ -111,7 +112,7 @@ The administrative accounts you use to administer your Microsoft 365 environment
 ## 4: Raise the level of protection against malware in mail
 <a name="malware"> </a>
 
-Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](https://support.office.com/article/02b5783a-eea0-42e8-8856-62440718c3f0), or complete the following steps:
+Your Microsoft 365 environment includes protection against malware, but you can increase this protection by blocking attachments with file types that are commonly used for malware. To bump up malware protection in email, view a [short training video](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials. 
     
@@ -138,7 +139,7 @@ You can protect against ransomware by creating one or more mail flow rules to bl
     
 - Block file types that could contain ransomware or other malicious code. We'll start with a common list of executables (listed in the table below). If your organization uses any of these executable types and you expect these to be sent in email, add these to the previous rule (warn users).
     
-To create a mail transport rule, view a [short training video](https://support.office.com/article/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad), or complete the following steps:
+To create a mail transport rule, view a [short training video](https://support.microsoft.com/office/a9ecca03-42a6-4867-b9fd-38e3f6bb06ad), or complete the following steps:
   
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
 
@@ -167,7 +168,7 @@ For more information, see:
   
 - [How to deal with ransomware](https://go.microsoft.com/fwlink/?linkid=2016501&amp;clcid=0x409)
     
-- [Restore your OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
     
 ## 6: Stop auto-forwarding for email
 <a name="forwarding"> </a>
@@ -226,7 +227,7 @@ If the recipient has Outlook 2013 or Outlook 2016 and a Microsoft email account,
   
 If the recipient is using another email client or email account, such as Gmail or Yahoo, they'll see a link that lets them either sign in to read the email message or request a one-time passcode to view the message in a web browser. If users aren't receiving the email, have them check their Spam or Junk folder. 
   
-For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
+For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/office/eaa43495-9bbb-4fca-922a-df90dee51980).
   
 ## 8. Protect your email from phishing attacks
 <a name="phishing"> </a>
@@ -237,7 +238,7 @@ We recommend that you get started with this protection by creating a policy to p
   
 ![Creating an ATP anti-phishing policy](../../media/security-and-compliance-center.png)
   
-To create an ATP anti-phishing policy, view a [short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
+To create an ATP anti-phishing policy, view a [short training video](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com). 
     
@@ -250,10 +251,10 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
 5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) for more details. 
     
 6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
-    
-|
-|
-|**Setting or option**|**Recommended setting** <br/>
+
+
+|**Setting or option**|**Recommended setting** <br/>|
+|:-----|:-----|
 |Name  <br/> |Domain and most valuable campaign staff  <br/> |
 |Description  <br/> |Ensure most important staff and our domain are not being impersonated.  <br/> |
 |Add users to protect  <br/> |Select **+ Add a condition, The recipient is**. Type user names or enter the email address of the candidate, campaign manager, and other important staff members. You can add up to 20 internal and external addresses that you want to protect from impersonation.  <br/> |
@@ -262,6 +263,7 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
 |Mailbox intelligence  <br/> |By default, mailbox intelligence is selected when you create a new anti-phishing policy. Leave this setting **On** for best results.  <br/> |
 |Add trusted senders and domains  <br/> |For this example, don't define any overrides.  <br/> |
 |Applied to  <br/> |Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, contoso.com, in the list, and then select **Add**. Select **Done**.  <br/> |
+|
    
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -270,7 +272,7 @@ For more information, see [Set up Office 365 ATP anti-phishing policies](https:/
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Office 365 Advanced Threat Protection includes ATP Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
   
-To create an ATP safe attachment policy, view a [short training video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
+To create an ATP safe attachment policy, view a [short training video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account. 
     
@@ -286,14 +288,15 @@ To create an ATP safe attachment policy, view a [short training video](https://s
     
 7. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
     
-|
-|
+
 |**Setting or option**|**Recommended setting** <br/>|
+|:-----|:-----|
 |Name  <br/> |Block current and future emails with detected malware.  <br/> |
 |Description  <br/> |Block current and future emails and attachments with detected malware.  <br/> |
 |Save attachments unknown malware response  <br/> |Select **Block - Block the current and future emails and attachments with detected malware**.  <br/> |
 |Redirect attachment on detection  <br/> |Enable redirection (select this box)          Enter the admin account or a mailbox setup for quarantine.          Apply the above selection if malware scanning for attachments times out or error occurs (select this box).  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
+|
    
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
   
@@ -308,7 +311,7 @@ We recommend that you do the following:
     
 - Add a new policy targeted to all recipients in your domain.
     
-To get to ATP Safe Links, view a [short training video](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
+To get to ATP Safe Links, view a [short training video](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account. 
     
@@ -332,12 +335,12 @@ To create a new policy targeted to all recipients in your domain:
     
 3. Select **Save**. 
     
-|
-|
 |**Setting or option**|**Recommended setting** <br/>|
+|:-----|:-----|
 |Name  <br/> |Safe links policy for all recipients in the domain  <br/> |
 |Select the action for unknown potentially malicious URLs in messages  <br/> |Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.  <br/> |
 |Use Safe Attachments to scan downloadable content  <br/> |Select this box.  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
+|
    
 For more information, see [Office 365 ATP safe links](https://go.microsoft.com/fwlink/?linkid=2016138&amp;clcid=0x409).

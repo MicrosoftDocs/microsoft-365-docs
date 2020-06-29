@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - commerce
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,7 +25,7 @@ search.appverid:
 - GEA150
 ms.assetid: a25c10d6-c1e9-4299-9185-25178df9eba6
 description: "Learn how to update your billing addresses for Microsoft 365 for business. You can also update the email address used to receive billing notifications."
-ms.custom: okr_SMB
+
 ---
 
 # Change your billing addresses
@@ -160,7 +163,7 @@ If you're using Office 365 operated by 21Vianet in China, see [View your bill or
 
 By default, your organization's billing notifications are sent to the Microsoft email address and the alternate email address of every global and billing admin in your organization. Each admin can change their alternate email address by updating their profile information.
   
-1. Sign in to Microsoft 365 with your work or school account as a global admin. [Learn how to sign in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to Microsoft 365 with your work or school account as a global admin. [Learn how to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Select the **User icon**, then select **My account**.
   

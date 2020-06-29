@@ -33,15 +33,15 @@ When you apply this label to a supported container, the label automatically appl
 
 Content in those containers however, do not inherit the labels for settings such as the label name, visual markings, or encryption. So that users can label their documents in SharePoint sites or team sites, [enable sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-## About the public preview for Microsoft Teams, Microsoft 365 Groups, and SharePoint sites
+## About the public preview for Microsoft Teams, Microsoft 365 groups, and SharePoint sites
 
-Sensitivity labels for Microsoft Teams, Microsoft 365 Groups, and SharePoint sites is in preview and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
+Sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites is in preview and might change before final release. This public preview doesn't work with Office 365 Content Delivery Networks (CDNs).
 
 Before you enable this preview and configure sensitivity labels for the new settings, users can see and apply sensitivity labels in their apps. For example, from Word:
 
 ![A sensitivity label displayed in the Word desktop app](../media/sensitivity-label-word.png)
 
-After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Microsoft 365 Groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
+After you enable and configure this preview, users can additionally see and apply sensitivity labels to Microsoft Teams, Microsoft 365 groups, and SharePoint sites. For example, when you create a new team site from SharePoint:
 
 ![A sensitivity label when creating a team site from SharePoint](../media/sensitivity-labels-new-team-site.png)
 
@@ -60,7 +60,7 @@ After you enable and configure this preview, users can additionally see and appl
     Import-PSSession $Session -DisableNameChecking
     ```
 
-3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Microsoft 365 Groups:
+3. Run the following command to synchronize your sensitivity labels to Azure AD, so that they can be used with Microsoft 365 groups:
     
     ```powershell
     Execute-AzureAdLabelSync
@@ -84,7 +84,7 @@ On this new **Site and group settings** page, configure the settings:
 
 - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. 
+- **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. If you have configured this setting at the tenant level or for a specific site, the setting you specify here will be applied only if it's more restrictive.
 
 ![The site and group settings tab](../media/edit-sensitivity-label-site-group2.png)
 
@@ -100,7 +100,7 @@ From the label policy, only the policy setting **Apply this label by default to 
 ## Sensitivity label management
 
 > [!WARNING]
-> Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Microsoft 365 Groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
+> Creating, modifying, and deleting sensitivity labels that you use for Microsoft Teams, Microsoft 365 groups, and SharePoint sites requires careful coordination with publishing label policies to users. 
 
 Avoid creation errors for sites and groups that can affect all users by using the following guidance.
 
@@ -128,7 +128,7 @@ If you modify or delete a sensitivity label with the site and group settings ena
 
 4. If the sensitivity label isn't visible, you can now safely modify or delete the label. If the label is still visible, contact [Microsoft Support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
 
-## Assign sensitivity labels to Microsoft 365 Groups
+## Assign sensitivity labels to Microsoft 365 groups
 
 You're now ready to apply the sensitivity label or labels to Microsoft 365 groups. Return to the Azure AD documentation for instructions:
 
@@ -193,7 +193,7 @@ Whenever you make a change to site and group settings for a label, you must run 
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) cmdlet:
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
     
     ```powershell
     Get-Label |ft Name, Guid
@@ -211,7 +211,7 @@ Whenever you make a change to site and group settings for a label, you must run 
     Import-PSSession $Session
     ```
     
-5. Run the [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps) cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
+5. Run the [Get-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/get-unifiedgroup?view=exchange-ps) cmdlet, specifying your label GUID in place of the example GUID of "e48058ea-98e8-4940-8db0-ba1310fd955e": 
     
     ```powershell
     $Groups= Get-UnifiedGroup | Where {$_.SensitivityLabel  -eq "e48058ea-98e8-4940-8db0-ba1310fd955e"}
@@ -290,7 +290,7 @@ Although you can't prevent users from creating new groups in apps and services t
     Import-PSSession $Session -DisableNameChecking
     ```
 
-2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-label?view=exchange-ps) cmdlet:
+2. Get the list of sensitivity labels and their GUIDs by using the [Get-Label](https://docs.microsoft.com/powershell/module/exchange/get-label?view=exchange-ps) cmdlet:
     
     ```powershell
     Get-Label |ft Name, Guid
