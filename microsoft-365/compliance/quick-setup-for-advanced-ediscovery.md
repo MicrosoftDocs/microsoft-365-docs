@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
-description: "Learn how to access Advanced eDiscovery from the Security &amp; Compliance Center and review the typical workflow for using Advanced eDiscovery. 
-"
+description: "Learn how to access Advanced eDiscovery from the Security &amp; Compliance Center and review the typical workflow for using Advanced eDiscovery."
 ---
 
 # Quick setup Advanced eDiscovery (classic)
