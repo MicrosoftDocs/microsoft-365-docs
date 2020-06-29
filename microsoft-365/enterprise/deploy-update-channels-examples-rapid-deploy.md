@@ -1,5 +1,5 @@
 ---
-title: "Bleeding edge: Example of broad deployment of the latest release"
+title: "Example of broad deployment of the latest release"
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -18,7 +18,7 @@ ms.custom:
 description: How an organization that deploys the latest the latest release uses channels for Windows 10, Microsoft 365 apps, and Microsoft Edge.
 ---
 
-# Leading edge: Example of broad deployment of the latest release
+# Example of broad deployment of the latest release
 
 This channel configuration example is for an organization that uses rapid deployment of the latest release to fit these business priorities:
 

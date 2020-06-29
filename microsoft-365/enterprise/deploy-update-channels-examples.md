@@ -29,7 +29,7 @@ Follow the **I am** and **who wants** columns to determine the set of channels t
 | A highly technical user or developer | To be the first to access the latest builds earliest in the development cycle with the newest code. | Dev | N/A | [Canary](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)? | N/A |  |
 | An early adopter or IT Pro  | More reliable builds that are still in development. <br><br>  To see what’s coming up next and help validate new features. | Beta | Beta | [Dev](https://docs.microsoft.com/deployedge/microsoft-edge-channels#dev-channel)? | Beta |  |
 | An early adopter or IT Pro | Early access to upcoming releases. | Preview | Preview | [Beta](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)? | Preview (private/public) |  |
-| An enterprise IT Pro | To broadly deploy the latest releases as soon as they are available. | Semi-annual | Current | [Stable](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)? | ? | [Latest features](deploy-update-channels-examples-rapid-deploy.md) |
+| An enterprise IT Pro | To broadly deploy the latest releases as soon as they are available. | Semi-annual | Current | [Stable](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)? | ? | [Latest release](deploy-update-channels-examples-rapid-deploy.md) |
 | An enterprise IT Pro | To broadly deploy the latest release on a predictable schedule. | Semi-annual | Monthly Enterprise | N/A | N/A | Regular schedule |
 | An enterprise IT Pro | To broadly deploy after extensive internal testing. | Semi-annual | Semi-Annual Enterprise | N/A | N/A | Highly vetted |
 ||||||||
