@@ -60,7 +60,8 @@ These views give you the option to export, via a button click (in **Email** \> *
 
 ![This graphic shows Export as an option in the menu for the Malware view, right between Create Schedule, and Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**Note**: The maximum number of entries that can be exported for **Phish** and **Malware** is just under 10000. If you export a view, only the most recent 10000 entries are exported. On the exported data, the 'message count' column represent the count of messages that hit the detection technology and policy type.    
+> [!NOTE]
+> The maximum number of entries that can be exported for **Phish** and **Malware** is just under 10000. If you export a view, only the most recent 10000 entries are exported. On the exported data, the _message count_ column represents the number of messages detected by the detection technology and policy type.    
 
 The Overview and Emails views will display information within hours of processing rather than in 24 hours (demand re. increased speeds here has been a clear signal)!
 
