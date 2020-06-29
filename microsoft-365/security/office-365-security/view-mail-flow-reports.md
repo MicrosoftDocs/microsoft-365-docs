@@ -36,29 +36,29 @@ To open the report, open the [Security & Compliance Center](https://protection.o
 
 ### Report view for the Connector report
 
-The following reports are available in report view:
+The following charts are available in report view:
 
-- **View data by: Mail flow**: This view shows the number of inbound and outbound messages organized by:
+- **View data by: Mail flow**: This chart shows the number of inbound and outbound messages organized by:
 
   - **Total**
   - **From the internet without a connector**
   - **To the internet without a connector**
   - A specific connector that you've configured.
   
-  To isolate the data in the report, use the **Show data for** control to select one of these options or **All mail flow**.
+  To isolate the data in the chart, use the **Show data for** control to select one of these options or **All mail flow**.
 
-  ![View data by mail flow in the Connector report in the Exchange transport rule report](../../media/connector-report-view-data-by-mail-flow.png)
+  ![View data by mail flow in the Connector report](../../media/connector-report-view-data-by-mail-flow.png)
 
-- **View data by: TLS usage**: This view shows the percentage of Transport Layer Security (TLS) version usage for mail flow.
+- **View data by: TLS usage**: This chart shows the percentage of Transport Layer Security (TLS) version usage for mail flow.
 
-  To isolate the data in the report, use the **Show data for** control to select one of the following options:
+  To isolate the data in the chart, use the **Show data for** control to select one of the following options:
 
   - **All mail flow**
   - **From the internet without a connector**
   - **To the internet without a connector**
   - A specific connector that you've configured.
 
-  ![View data by TLS usage in the Connector report in the Exchange transport rule report](../../media/connector-report-view-data-by-tls-usage.png)
+  ![View data by TLS usage in the Connector report](../../media/connector-report-view-data-by-tls-usage.png)
 
 If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date** (last 90 days).
 
@@ -88,25 +88,25 @@ To open the report, open the [Security & Compliance Center](https://protection.o
 
 ### Report view for the Exchange transport rule report
 
-The following reports are available in report view:
+The following charts are available in report view:
 
-- **View data by: Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
+- **View data by: Exchange transport rules** \> **Break down by: Direction**: This chart shows the number of **Inbound** and **Outbound** messages that were affected by transport rules.
 
-- **View data by: Exchange transport rules** \> **Break down by: Severity**: This view shows the number of **High severity** and **Medium severity**, and **Low severity** messages. You set the severity level as an action in the rule (**Audit this rule with severity level** or _SetAuditSeverity_). For more information, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **View data by: Exchange transport rules** \> **Break down by: Severity**: This chart shows the number of **High severity** and **Medium severity**, and **Low severity** messages. You set the severity level as an action in the rule (**Audit this rule with severity level** or _SetAuditSeverity_). For more information, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) transport rules. You can further refine the report by selecting on of the following options:
-
-  - **Show data for: All DLP transport rules**
-  - **Show data for: Compromised users**
-  - **Show data for: Low volume of content detected U.S. Patriot Act**
-
-- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **High severity** and **Medium severity**, and **Low severity** messages that were affected by DLP transport rules. You can further refine the report by selecting on of the following options:
+- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This chart shows the number of **Inbound** and **Outbound** messages that were affected by data loss prevention (DLP) transport rules. You can further refine the chart by selecting on of the following options:
 
   - **Show data for: All DLP transport rules**
   - **Show data for: Compromised users**
   - **Show data for: Low volume of content detected U.S. Patriot Act**
 
-If you click **Filters** in a report view, you can modify the report with the following filters:
+- **View data by: DLP Exchange transport rules** \> **Break down by: Direction**: This view shows the number of **High severity** and **Medium severity**, and **Low severity** messages that were affected by DLP transport rules. You can further refine the chart by selecting on of the following options:
+
+  - **Show data for: All DLP transport rules**
+  - **Show data for: Compromised users**
+  - **Show data for: Low volume of content detected U.S. Patriot Act**
+
+If you click **Filters** in a report view, you can modify the chart with the following filters:
 
 - **Start date** and **End date** (only allows for the last 90 days)
 - Direction values
@@ -116,7 +116,7 @@ If you click **Filters** in a report view, you can modify the report with the fo
 
 ### Details table view for the Exchange transport rule report
 
-If you click **View details table**, the information that's shown depends on the report you were looking at:
+If you click **View details table**, the information that's shown depends on the chart you were looking at:
 
 - **View data by: Exchange Transport rules**:
 
@@ -157,7 +157,7 @@ To open the report, open the [Security & Compliance Center](https://protection.o
 
 ### Report view for the Forwarding report
 
-The following reports are available in the report view:
+The following charts are available in the report view:
 
 - **Show data for: Forwarding methods**: The following methods are shown:
 
@@ -270,7 +270,7 @@ To open the report, open the [Security & Compliance Center](https://protection.o
 
 ### Report view for the Sent and received email report
 
-The following reports are available in the report view:
+The following charts are available in the report view:
 
 - **Break down by: Type**: The chart shows all available categories:
 
@@ -293,7 +293,7 @@ The following reports are available in the report view:
 
 - **Drill down by** \> **Spam detections)**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 
-If you click **Filters** in a report view, you can modify the report with the following filters:
+If you click **Filters** in a report view, you can modify the chart with the following filters:
 
 - **Start date** and **End date**
 - Direction values
@@ -308,7 +308,7 @@ If you click **View details table** in the **Break down by: Direction** or **Bre
 - **Direction**
 - **Message count**
 
-If you click **Filters** in a report view, you can modify the report with the following filters:
+If you click **Filters** in the details table view, you can modify the report with the following filters:
 
 - **Start date** and **End date**
 - Direction values
@@ -320,11 +320,11 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 
 To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
 
-![Top senders and recipients widget in the Reports dashboard](../../media/sent-and-received-email-report-widget.png)
+![Top senders and recipients widget in the Reports dashboard](../../media/top-senders-and-recipients-widget.png)
 
 ### Report view for the Top senders and recipient report
 
-The following reports are available in the report view:
+The following charts are available in the report view:
 
 - **Show data for \> Top mail senders**
 - **Show data for \> Top mail recipients**
@@ -336,7 +336,7 @@ The composition of the pie chart changes based on these selections.
 
 When you hover over a wedge in the pie chart, you can see a count of messages sent or received.
 
-If you click **Filters** in report view, you can specify a date range with **Start date** and **End date**.
+If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
 ![Pie chart in Report view in the Top senders and recipients report](../../media/top-senders-and-recipients-report-view.png)
 
@@ -369,7 +369,7 @@ If you click **View details table**, the information that's shown depends on the
   - **Top malware recipients (ATP)**
   - **Count**
 
-If you click **Filters** in report view, you can specify a date range with **Start date** and **End date**.
+If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
 
 ## What permissions are needed to view these reports?
 
@@ -378,6 +378,7 @@ To view and use the reports, you need to be a member of the specified role group
 - In the Security & Compliance Center, you need to be a member of one of the following role groups:
 
   -Organization Management
+
   -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
   -Security Reader
 
@@ -386,8 +387,11 @@ To view and use the reports, you need to be a member of the specified role group
 - In Exchange Online, you need to be a member of one of the following role groups:
 
   -Organization Management
+
   -View-only Organization Management
+
   -View-Only Recipients
+
   -Compliance Management
 
 For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) and [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
