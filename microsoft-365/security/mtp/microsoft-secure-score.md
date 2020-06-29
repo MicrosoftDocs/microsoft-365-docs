@@ -63,7 +63,7 @@ If you turn on security defaults, you will be awarded full points for the follow
 - Enable policy to block legacy authentication (7 points)
 
 >[!IMPORTANT]
->It's not recommended that you enable both security defaults and risk policies, as they fulfill similar functions. If you turn on security defaults, you should update the statuses of "Turn on sign-in risk policy" and "Turn on user risk policy" as **Resolved through alternative mitigation**.
+>Security defaults include security features that provide similar security to the "sign-in risk policy" and "user risk policy" improvement actions. Instead of setting up these policies on top of the security defaults, we recommend updating their statuses to "Resolved through alternative mitigation."
 
 ## Required permissions
 
