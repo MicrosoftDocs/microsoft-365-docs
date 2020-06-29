@@ -3,7 +3,7 @@ title: Set up users and cases in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
-author: Mark Johnson - MSFT
+author: markjjo
 manager: laurawi
 ms.date: 
 audience: Admin
