@@ -166,7 +166,7 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 When you hover over a day in the chart, you can see how many spoof mail messages came through.
 
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md). the aggregate view of the report only allows for 90 days filtering, while the detial view only allows for 10 days filtering. 
+Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md). The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering. 
 
 ## Spam Detections report
 
