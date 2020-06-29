@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Advanced eDiscovery. 
-"
+description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Advanced eDiscovery."
 ms.custom: seo-marvel-apr2020
 ---
 

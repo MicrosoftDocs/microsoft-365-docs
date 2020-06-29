@@ -223,7 +223,7 @@ When you're finished, click **Close**.
 > [!NOTE]
 > The procedures for quarantined files in this section are available only to ATP Plan 1 and Plan 2 subscribers.
 
-In organizations with ATP, admins can managed quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
+In organizations with ATP, admins can manage quarantined files in SharePoint Online, OneDrive for Business, and Microsoft Teams.
 
 ### View quarantined files
 
