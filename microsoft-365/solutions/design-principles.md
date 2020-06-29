@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Enterprise architecture design principles
-description: Description.
+title: Enterprise resource planning - architecture design principles
+description: Learn about Microsoft Enterprise architecture from experts in identity, cybersecurity, and networking.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -11,13 +11,13 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - M365solutions
-ms.custom: 
+ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
 ---
 
 # Microsoft 365 Enterprise architecture design principles
 
-![Layout/navigation symbol](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **Design principles**  Understand the key principles you need to understand networking, identity, security, and multi-national architectures.
+![Layout/navigation symbol](https://docs.microsoft.com/office/media/icons/layout-navigation-blue.png) **Design principles**  Understand the key principles for enterprise resource planning in networking, identity, security, and multi-national architectures.
 
 
 |  |  | |
