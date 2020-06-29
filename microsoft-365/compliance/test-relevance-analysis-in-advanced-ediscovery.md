@@ -1,5 +1,5 @@
 ---
-title: "Test Relevance analysis in Advanced eDiscovery"
+title: Test Relevance analysis in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: chrfox
