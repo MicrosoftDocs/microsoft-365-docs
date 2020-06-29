@@ -53,7 +53,7 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 
 ### Content paths for retain-only retention settings
 
-1.  **If the item is modified or deleted** during the retention period: A copy of the original item is created in the Recoverable Items folder and retained until the end of the retention period, when the copy in the Recoverable Items folder is permanently deleted within 14 days after the item expires. 
+1. **If the item is modified or deleted** during the retention period: A copy of the original item is created in the Recoverable Items folder and retained until the end of the retention period, when the copy in the Recoverable Items folder is permanently deleted within 14 days after the item expires. 
 
 2. **If the item is not modified or deleted** during the retention period: Nothing happens before and after the retention period; the item remains in its original location.
 
