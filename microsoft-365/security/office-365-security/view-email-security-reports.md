@@ -26,80 +26,19 @@ A variety of reports are available in the [Security & Compliance Center](https:/
 
 ![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
-## URL threat protection report
-
-The widget for this report is named **URL protection report** on the reports dashboard, and is only available in Office 365 Advanced Threat Protection (ATP). Specifically:
-
-- A Microsoft 365 E5 subscription.
-- An Advanced Threat Protection add-on (Plan 1 *or* Plan 2) to any other subscription that includes Exchange Online Protection (EOP).
-
-To go directly to the **URL threat protection** report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
-
-> [!NOTE]
-> This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
-
-![Graphic of the URL Threat Protection Report in action.](../../media/tp-URLThreatProRpt1.PNG)
-
-### Report view for the URL threat protection report
-
-The **URL threat protection** report has two aggregated views that are refreshed once every four hours:
-
-- **URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:
-
-  - **Blocked**
-  - **Blocked and clicked through**
-  - **Clicked through during scan**
-
-  A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).
-
-  If you click **Filters**, you can modify the report with the following filters:
-
-  - **Start date** and **End date**
-  - The available click protection actions, plus  the value **Allowed** to see information for all URL clicks (not just blocked clicks).
-
-- **URL click by application**: Shows the number of URL clicks by applications that support Office 365 ATP Safe Links:
-
-  - **Email client**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Teams**
-  - **Other**
-
-  If you click **Filters**, you can modify the report with the following filters:
-
-  - **Start date** and **End date**
-  - The available applications.
-
-### Details table view for the threat protection report
-
-If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization with the following details:
-
-- **Click time**
-- **User**
-- **URL**
-- **Action**
-- **App**
-
-If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.
-
-To get back to the reports view, click **View report**.
-
 ## Compromised users report
 
-The **Compromised users** report is available in EOP (subscriptions with mailboxes in Exchange Online or standalone EOP without Exchange Online mailboxes).
+The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
-To go directly to the **Compromised users** report, open <https://protection.office.com/reportv2?id=CompromisedUsers>.
-
-This report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised.
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Compromised users**. To go directly to the report, open <https://protection.office.com/reportv2?id=CompromisedUsers>.
 
 You can filter both the report and the details table by:
 
 - **Start date** and **End date**
-- **Suspicious**
-- **Restricted**
+
+- **Suspicious**: The user account has sent suspicious email and is at risk of being restricted from sending email.
+
+- **Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.
 
 If you click **View details table**, you can see the following details:
 
@@ -107,15 +46,11 @@ If you click **View details table**, you can see the following details:
 - **User ID**
 - **Action**
 
-With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts.
-
 ![The compromised users report as it appears in Microsoft 365](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
 
 ## Encryption report
 
 The **Encryption report** is available in EOP (subscriptions with mailboxes in Exchange Online or standalone EOP without Exchange Online mailboxes).
-
-To go directly to the **Encryption report**, open <https://protection.office.com/reportv2?id=EncryptionReport>.
 
 Your organization's security team can use information in this report to identify patterns and proactively apply or adjust policies for sensitive email messages. For example:
 
@@ -125,9 +60,11 @@ Your organization's security team can use information in this report to identify
 
 To learn more about encryption, see [Email encryption in Microsoft 365](../../compliance/email-encryption.md).
 
+To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Encryption report**. To go directly to the report, open <https://protection.office.com/reportv2?id=EncryptionReport>.
+
 ### Report view for the Encryption report
 
-You can filter the data with the following criteria:
+You can use the following filters on the chart:
 
 - **View data by: Message Encryption Report** and **Break down by: Encryption method**: The following encryption methods are available:
 
@@ -183,6 +120,52 @@ If you click **Filters** in the details table view, you can modify the results w
 - Encryption template.
 
 To get back to the report view, click **View report**.
+
+## Mailflow status report
+
+[Mailflow status report](view-mail-flow-reports.md#mailflow-status-report)
+
+## Malware Detections report
+
+The **Malware Detections** report shows how many incoming and outgoing messages were detected as containing malware for your organization.
+
+To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Malware Detections**.
+
+![Malware Detections Report example](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
+
+Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range.
+
+## Sent and received email report
+
+The **Sent and received email** report contains information about malware, spam, mail flow rules(also known as transport rule), and advanced malware detections after email enters the service. For more information, see [Sent and received email report](view-mail-flow-reports.md#sent-and-received-email-report).
+
+## Spam Detections report
+
+The **Spam Detections** report shows all the spam content blocked by Exchange Online. Messages are counted per message, and not per recipient. For example, if an email message was sent to 100 recipients in your organization, it is counted as one message.
+
+To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Spam Detections**.
+
+![To view this report, in the Security & Compliance Center, go to Reports \> Dashboard \> EOP Spam Detections](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+
+When you hover over a day in the chart, you can see how many items were blocked that day, as well as how those items are categorized. For example, you can see how many spam messages were filtered, and how many items came from a blocked Internet Protocol (IP) address.
+
+Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
+
+![The Spam Detections report tells you how many spam messages were blocked or filtered out](../../media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
+
+Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Office 365 email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+
+## Spoof Detections report
+
+The **Spoof Detections** report shows how many spoof mail messages were detected, and of those, which ones were considered "good" (spoof mail done for legitimate business reasons).
+
+To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Spoof Mail**.
+
+![In the Security & Compliance Center, go to Reports \> Dashboard \> Spoof Mail](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+
+When you hover over a day in the chart, you can see how many spoof mail messages came through.
+
+Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
 
 ## Threat protection status report
 
@@ -253,18 +236,6 @@ You can also choose whether to view data for email identified as malicious, emai
 
 ![Threat Protection Status report view options](../../media/d429ecd7-cb7a-4c99-8d27-79a2832cf467.png)
 
-## Malware Detections report
-
-The **Malware Detections** report shows how many incoming and outgoing messages were detected as containing malware for your organization.
-
-To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Malware Detections**.
-
-![Malware Detections Report example](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
-
-Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. 
-
-If you click on the red triangle in the aggregate view, you will land on an insight flyout page called "Users Targeted by malware campaigns." The count column on this flyout page represents how many times per day the recipient received malware. 
-
 ## Top Malware report
 
 The **Top Malware** report shows the various kinds of malware that was detected by [EOP](eop-features.md).
@@ -281,37 +252,66 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 
 Below the chart, you'll see a list of detected malware and how many messages were detected as having that malware.
 
-## Spoof Detections report
+## URL threat protection report
 
-The **Spoof Detections** report shows how many spoof mail messages were detected, and of those, which ones were considered "good" (spoof mail done for legitimate business reasons).
+The widget for this report is named **URL protection report** on the reports dashboard, and is only available in Office 365 Advanced Threat Protection (ATP). Specifically:
 
-To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Spoof Mail**.
+- A Microsoft 365 E5 subscription.
+- An Advanced Threat Protection add-on (Plan 1 *or* Plan 2) to any other subscription that includes Exchange Online Protection (EOP).
 
-![In the Security & Compliance Center, go to Reports \> Dashboard \> Spoof Mail](../../media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
+To go directly to the **URL threat protection** report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
 
-When you hover over a day in the chart, you can see how many spoof mail messages came through.
+> [!NOTE]
+> This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report. To learn more about anti-spoof protection, see [Anti-spoofing protection in Microsoft 365](anti-spoofing-protection.md).
+![Graphic of the URL Threat Protection Report in action.](../../media/tp-URLThreatProRpt1.PNG)
 
-## Spam Detections report
+### Report view for the URL threat protection report
 
-The **Spam Detections** report shows all the spam content blocked by Exchange Online. Messages are counted per message, and not per recipient. For example, if an email message was sent to 100 recipients in your organization, it is counted as one message.
+The **URL threat protection** report has two aggregated views that are refreshed once every four hours:
 
-To view this report, in the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **Spam Detections**.
+- **URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:
 
-![To view this report, in the Security & Compliance Center, go to Reports \> Dashboard \> EOP Spam Detections](../../media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
+  - **Blocked**
+  - **Blocked and clicked through**
+  - **Clicked through during scan**
 
-When you hover over a day in the chart, you can see how many items were blocked that day, as well as how those items are categorized. For example, you can see how many spam messages were filtered, and how many items came from a blocked Internet Protocol (IP) address.
+  A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).
 
-Click (or tap) the report to open it in a new browser window, where you can get a more detailed view of the report.
+  If you click **Filters**, you can modify the report with the following filters:
 
-![The Spam Detections report tells you how many spam messages were blocked or filtered out](../../media/370ec67d-eb30-4863-bfcf-68a41be02295.png)
+  - **Start date** and **End date**
+  - The available click protection actions, plus  the value **Allowed** to see information for all URL clicks (not just blocked clicks).
 
-Below the chart, you'll see a list of spam items that were detected. Select an item to view additional information, such as whether the spam item was inbound or outbound, its message ID, and its recipient. To learn more about anti-spam protection, see [Office 365 email anti-spam protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-and-anti-malware-protection).
+- **URL click by application**: Shows the number of URL clicks by applications that support Office 365 ATP Safe Links:
 
-## Sent and received email report
+  - **Email client**
+  - **PowerPoint**
+  - **Word**
+  - **Excel**
+  - **OneNote**
+  - **Visio**
+  - **Teams**
+  - **Other**
 
-The **Sent and received email** report contains information about malware, spam, mail flow rules(also known as transport rule), and advanced malware detections after email enters the service. For more information, see [Sent and received email report](view-mail-flow-reports.md#sent-and-received-email-report).
+  If you click **Filters**, you can modify the report with the following filters:
+
+  - **Start date** and **End date**
+  - The available applications.
+
+### Details table view for the threat protection report
+
+If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization with the following details:
+
+- **Click time**
+- **User**
+- **URL**
+- **Action**
+- **App**
+
+If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.
+
+To get back to the reports view, click **View report**.
 
 ## User-reported messages report
 
