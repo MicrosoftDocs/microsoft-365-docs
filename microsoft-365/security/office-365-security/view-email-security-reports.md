@@ -156,7 +156,7 @@ Use the **Show data for** list to choose whether to view data for top senders, r
 
 ![Use the Show Data For list to view specific information](../../media/bd91449f-7d42-4749-8666-7b44044049b8.png)
 
-if you choose top spam recipients, note that below the chart the counts are the total number of spam messages recieved by the user.  
+If you choose top spam recipients, note that the counts below the chart are the total number of spam messages received by the user.  
 
 ## Spoof Detections report
 
