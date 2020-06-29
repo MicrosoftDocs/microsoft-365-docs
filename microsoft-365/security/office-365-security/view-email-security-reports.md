@@ -204,7 +204,7 @@ Below the chart, you'll see a list of email categories, such as **GoodMail**, **
 
 ![This report tells you about anti-malware, anti-spam, and other message detections](../../media/9ea4b606-f27a-46ee-97a7-be018e2b839c.png)
 
-To learn more about email intelligence, see [Mail flow intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365). the aggregate view of the report only allows for 90 days filtering as well as the detail view. 
+To learn more about email intelligence, see [Mail flow intelligence in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/mail-flow-intelligence-in-office-365). The aggregate view and the detail view of the report allows for 90 days of filtering. 
 
 ## User-reported messages report
 
