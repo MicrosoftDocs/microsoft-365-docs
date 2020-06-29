@@ -120,7 +120,7 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![Malware Detections Report example](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
 
-Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. For the aggregate view filter, it only allows for 90 days while the detail view filter only allows for 10 days
+Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. The aggregate view filter allows for 90 days, while the detail view filter only allows for 10 days.
 
 ## Top Malware report
 
