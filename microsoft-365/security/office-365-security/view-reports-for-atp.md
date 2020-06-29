@@ -120,7 +120,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
 
 When you hover over a bar in the chart, you can see what actions were taken for detected email for that day.
 
-![ATP Message Disposition Report data for a day](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png) the aggregate view of the report only allows for 90 days filtering, while the detial view only allows for 10 days filtering. 
+![ATP Message Disposition Report data for a day](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
 
 ## Additional reports to view
 
