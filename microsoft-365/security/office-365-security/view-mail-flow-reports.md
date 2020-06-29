@@ -60,7 +60,7 @@ The following reports are available in report view:
 
   ![View data by TLS usage in the Connector report in the Exchange transport rule report](../../media/connector-report-view-data-by-tls-usage.png)
 
-If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
+If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**. note that the filter only allows for the last 90 days
 
 ### Details table view for the Connector report
 
@@ -108,7 +108,7 @@ The following reports are available in report view:
 
 If you click **Filters** in a report view, you can modify the report with the following filters:
 
-- **Start date** and **End date**
+- **Start date** and **End date** (only allows for the last 90 days)
 - Direction values
 - Severity values
 
@@ -141,7 +141,7 @@ If you click **View details table**, the information that's shown depends on the
 
 If you click **Filters** in a details table view, you can filter the data that's displayed by:
 
-- **Start date** and **End date**
+- **Start date** and **End date** (only allows for the last 10 days)
 - Direction values
 - Severity values
 
@@ -177,7 +177,7 @@ The following reports are available in the report view:
 
   ![Forwarders view in the Forwarding report](../../media/forwarding-report-forwarders.png)
 
-If you click **Filters** in report view, you can specify a date range with **Start date** and **End date**.
+If you click **Filters** in report view, you can specify a date range with **Start date** and **End date**. note that it allows for the last 90 days
 
 ### Details table view for the Forwarding report
 
@@ -225,7 +225,7 @@ When you open the report, the **Type** tab is selected by default. By default, t
 
 The chart is organized by the **Type** values.
 
-You can changes these filters by clicking **Filter** or by clicking a value in the chart legend.
+You can change these filters by clicking **Filter** or by clicking a value in the chart legend. note that the date range filtering only allows for the last 90 days.
 
 The data table contains the following information:
 
@@ -320,7 +320,7 @@ The **Top senders and recipients** report is a pie chart showing your top email 
 
 To open the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Top senders and recipients**. To go directly to the report, open <https://protection.office.com/reportv2?id=TopSenderRecipientsATP>.
 
-![Top senders and recipients widget in the Reports dashboard](../../media/sent-and-received-email-report-widget.png)
+![Top senders and recipients widget in the Reports dashboard](../../media/sent-and-received-email-report-widget.png) (comment: this is not the right screenshot)
 
 ### Report view for the Top senders and recipient report
 
