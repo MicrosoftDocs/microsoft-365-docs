@@ -47,7 +47,7 @@ The URL Threat Protection report is available to anyone with:
 - An Exchange Online Protection, *and* Advanced Threat Protection add-on (Plan 1 *or* Plan 2)
 - A Microsoft 365 E5 subscription
 
-This is a 'click-centric' report that has two aggregated views which shows data for the last 90 days.
+This is a 'click-centric' report that has two aggregated views that shows data for the last 90 days.
 
 1. The first view is by *URL click-protection action*, which is focused on showing the number of URL clicks by users within the tenant, and the result of the click. A click here indicates that the user has clicked through the block page to the malicious website (this can be disabled by the administrator within a Safe Links policy).
 
