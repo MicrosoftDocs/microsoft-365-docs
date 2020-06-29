@@ -53,7 +53,7 @@ This is a 'click-centric' report that has two aggregated views that shows data f
 
 2. The second view is *URL click by applications*, which shows the number of URLs click in different applications that support Safe Links today, such as in an email client or in Microsoft Word. Data in both aggregated views are refreshed once every 4 hours.
 
-The details table of the URL Threat Protection report provides a near-real-time view of all clicks that happen within the tenant for the last 7 days, and it includes investigative information such as *username*, *URL*, the *network message ID* (if the URL was clicked from an email), and other valuable pieces of information useful for investigations and analyses.
+The details table of the URL Threat Protection report provides a near-real-time view of all clicks that happen within the tenant for the last seven days, and it includes investigative information such as *username*, *URL*, the *network message ID* (if the URL was clicked from an email), and other valuable pieces of information useful for investigations and analyses.
 
 By default, the report only shows data on clicks from URLs that were blocked by Safe Links, but it is also possible to see information for all URL clicks through selecting *Allowed URLs* checkbox in the filters.
 
