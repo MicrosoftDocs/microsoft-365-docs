@@ -14,8 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
-description: "Learn how to configure user roles, create cases, and assign users to cases in Advanced eDiscovery. 
-"
+description: "Learn how to configure user roles, create cases, and assign users to cases in Advanced eDiscovery."
 ms.custom: seo-marvel-apr2020
 ---
 

@@ -261,7 +261,9 @@ To view this report, in the [Security & Compliance Center](https://protection.of
 
 ![Malware Detections Report example](../../media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
 
-Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range.
+Similar to other reports, like the [Threat Protection Status report](#threat-protection-status-report), the report displays data for the past seven days by default. However, you can choose **Filters** to change the date range. 
+
+If you click on the red triangle in the aggregate view, you will land on an insight flyout page called "Users Targeted by malware campaigns." The count column on this flyout page represents how many times per day the recipient received malware. 
 
 ## Top Malware report
 
