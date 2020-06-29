@@ -29,7 +29,7 @@ manage the policy:
 - [Turn the policy on or off](#turn-a-policy-on-or-off)
 - [Edit the policy friendly name](#edit-the-policy-friendly-name)
 - [Add or remove backup products](#add-or-remove-backup-products)
-- [Manage the assigning apps and ervices](#change-the-assigning-apps-and-services)
+- [Manage the assigning apps and services](#change-the-assigning-apps-and-services)
 - [Change the assigning order](#change-the-assigning-order-for-backup-products)
 - [View a policy report](#view-an-auto-claim-policy-report)
 
@@ -57,7 +57,7 @@ can create an auto-claim policy.
 2. Near the bottom of the table, select **User owned apps and services**.
 3. In the right pane, clear the box for **Let users auto-claim licenses the first time they sign in**.
 
-If you already have an active policy, but you don't want any more users to claim licenses, you can [turn the policy off](#view-an-auto-claim-policy-report). If you turn off an auto-claim policy, no additional users can claim a license from that point on. Users who already claimed a license don't lose their license.
+If you already have an active policy, but you don't want any more users to claim licenses, you can [turn the policy off](#turn-a-policy-on-or-off) If you turn off an auto-claim policy, no additional users can claim a license from that point on. Users who already claimed a license don't lose their license.
 
 ## Create an auto-claim policy
 
@@ -82,7 +82,7 @@ see [Add or remove backup products](#add-or-remove-backup-products).
 5. If you want to add a backup product, select **Add a backup product to this policy**, then select the product from the list.
 6. Select **Next**.
 7. On the **Select apps** page, clear or select the boxes for the apps to exclude or include with the license, then select **Next**.
-8. If you added one or more backup products, repeat step 8 for each product. Otherwise, go to step 9.
+8. If you added one or more backup products, repeat step 7 for each product. Otherwise, go to step 9.
 9. On the **Review and finish** page, verify the new policy information, make any necessary changes, then select **Create policy**.
 10. Select **Close**.
 
@@ -113,7 +113,7 @@ or remove products to an auto-claim policy at any time. If you already
 have one product associated with the policy, any products that you add
 are considered backup products. When the available number of licenses
 from the first product are used up, the policy will use the next backup
-product on the list from which to assign licenses. You [can reorder the list of products](#change-the-assigning-apps-and-services) as you like.
+product on the list to assign licenses from. You [can reorder the list of products](#change-the-assigning-apps-and-services) as you like.
 
 When you remove a backup product, it's no longer used to assign
 licenses. Users with an existing license still have that license, but no
@@ -150,7 +150,7 @@ license to that product.
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select the policy that you want to edit.
 3. In the details pane, under **Apps and services**, select **Edit**.
-4. In the **Apps and services** pane, from the **Product** drop-down, select an individual product, or select **All**.
+4. In the **Apps and services** pane, from the **Product** drop-down, select a single product, or select **All**.
 5. Check or clear the boxes for apps and services that you want users to have or not have access to.
 6. When you're finished, select **Save.**
 7. Select **Save** to close the details pane.
@@ -169,7 +169,7 @@ to the app.
 
 ## View an auto-claim policy report
 
-1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a>* tab.
+1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select **View report**. The **Auto-claim policy report** page lists all licenses assigned from each policy in the last 90 days.
 
 ## Related content
