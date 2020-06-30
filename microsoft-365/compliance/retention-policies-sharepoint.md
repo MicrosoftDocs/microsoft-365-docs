@@ -74,8 +74,8 @@ A retain-only policy retains all versions of a document in a SharePoint site col
 
 - If the retention policy is based on when the content was last modified, each version has its own expiration date based on when the original document was modified to create that version. The original documents and its versions expire independently of each other.
 
-    > [!NOTE]
-    > The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
+> [!NOTE]
+> The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
 
 ### When a user leaves the organization
 

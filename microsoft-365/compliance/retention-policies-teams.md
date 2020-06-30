@@ -46,8 +46,8 @@ When the retention policy is to retain and delete:
 
 2. **If a chat or channel message isn't deleted** during the retention period, the message is moved to the SubstrateHolds folder within one day after the retention period expires (it takes from 0 to 24 hours). The message is permanently deleted one day after it is moved to the SubstrateHolds folder. 
 
-    > [!NOTE]
-    > Messages in the SubstrateHolds folder are searchable by eDiscovery tools. After a message is permanently deleted, it won't be returned in an eDiscovery search.
+> [!NOTE]
+> Messages in the SubstrateHolds folder are searchable by eDiscovery tools. After a message is permanently deleted, it won't be returned in an eDiscovery search.
 
 When the retention policy is retain-only, or delete-only, the content's paths are variations of retain and delete.
 
