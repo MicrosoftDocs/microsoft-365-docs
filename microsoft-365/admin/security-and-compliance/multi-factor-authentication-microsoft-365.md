@@ -70,7 +70,7 @@ Security defaults ensure that all organizations have a basic level of security f
 
 You enable or disable security defaults from the **Properties** pane for Azure AD in the Azure portal.
 
-![](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
+![Picture of the Directory properties page.](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
 You can use security defaults with any Microsoft 365 plan.
 
@@ -88,7 +88,7 @@ You can also use Conditional Access policies for more advanced capabilities, suc
 
 You configure Conditional Access policies from the **Security** pane for Azure AD in the Azure portal.
 
-![](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
+![Picure of menu option for Conditional Access](../../media/multi-factor-authentication-microsoft-365/conditional-access-mfa.png)
 
 You can use Conditional Access policies with:
 
@@ -135,7 +135,7 @@ You should be using either security defaults or Conditional Access policies to r
 
 You enable MFA for individual user accounts from the **Active user** pane of the Microsoft 365 admin center.
 
-![](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
+![Picture of Multi factor authentication option on Active users page](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 
 After being enabled, the next time the user signs in, they will be prompted to register for MFA and to choose and test the additional verification method.
 
