@@ -53,7 +53,15 @@ Campaign Views is available in the [Security & Compliance Center](https://protec
 
 ![Campaigns overview in the Security & Compliance Center](../../media/campaigns-overview.png)
 
-You can also get to Campaign Views from **Threat management** \> **Explorer** \> **View** \> **Campaigns**.
+You can also get to Campaign Views from:
+
+- **Threat management** \> **Explorer** \> **View** \> **Campaigns**
+
+- **Threat management** \> **Explorer** \> **View** \> **All email** \> **Campaign** tab
+
+- **Threat management** \> **Explorer** \> **View** \> **Phish** \> **Campaign** tab
+
+- **Threat management** \> **Explorer** \> **View** \> **Malware** \> **Campaign** tab
 
 To access Campaign Views, you need to be a member of the **Organization Management**, **Security Administrator**, or **Security Reader** role groups in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -72,11 +80,17 @@ The rest of the overview page shows the following information on the **Campaign*
 
 - **Sample subject**: The subject line of one of the messages in the campaign. Note that all messages in the campaign will not necessarily have the same subject.
 
-- **Targeted**: The percentage as calculated by the number of campaign recipients in your organization / the total number of recipients in the campaign across all organizations in the service. This value indicates the degree to which the campaign is specifically directed at your organization (a higher value) vs. directed at other organizations in the service.
+- **Targeted**: The percentage as calculated by: (the number of campaign recipients in your organization) / (the total number of recipients in the campaign across all organizations in the service). This value indicates the degree to which the campaign is specifically directed at your organization (a higher value) vs. directed at other organizations in the service (a lower value).
 
 - **Type**: This value is either **Phish** or **Malware**.
 
-- **Subtype**: Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-** is added to the subtype value.
+- **Subtype**: This value contains more details about the campaign. For example:
+
+  - **Phish**: Where available, the brand that is being phished by this campaign. For example, `Microsoft`, `365`, `Unknown`, `Outlook`, or `DocuSign`.
+
+  - **Malware**: For example, `HTML/PHISH` or `HTML/<MalwareFamilyName>`.
+
+Where available, the brand that is being phished by this campaign. When the detection is driven by ATP technology, the prefix **ATP-** is added to the subtype value.
 
 - **Recipients**: The number of users that were targeted by this campaign.
 
@@ -100,7 +114,7 @@ At the top of the Campaign Views page, there are several filter and query settin
 
 The most basic filtering that you can do is the start date/time and the end date/time.
 
-To further filter the view, you can do single property (but multiple value) filtering by clicking the **Campaign type** button, making your selection, and then clicking **Refresh**.
+To further filter the view, you can do single property with multiple values filtering by clicking the **Campaign type** button, making your selection, and then clicking **Refresh**.
 
 The available campaign properties are described in the following list:
 
@@ -142,11 +156,11 @@ The available campaign properties are described in the following list:
   - **URL path**
   - **Click verdict**
 
-For more advanced filtering, including multiple properties, you can click the **Advanced filter** button to build your query. The same campaign properties are available, but with the following enhancements:
+For more advanced filtering, including filtering by multiple properties, you can click the **Advanced filter** button to build a query. The same campaign properties are available, but with the following enhancements:
 
 - You can click **Add a condition** to select multiple conditions.
 - You can choose the **And** or **Or** operator between conditions.
-- You can select the **Condition group** item at the very bottom of the conditions list to form compound conditions.
+- You can select the **Condition group** item at the bottom of the conditions list to form complex compound conditions.
 
 When you're finished, click the **Query** button.
 
@@ -158,7 +172,7 @@ If you have a Microsoft Defender ATP subscription, you can click **WDATP** to co
 
 ## Campaign details
 
-When you click on the name of a campaign, the campaign details appears in a flyout.
+When you click on the name of a campaign, the campaign details appear in a flyout.
 
 ### Campaign information
 
@@ -166,20 +180,20 @@ At the top of the campaign details view, the following campaign information is a
 
 - **ID**: The unique campaign identifier.
 
-- **Started** and **Ended**: The date range of the campaign.
+- **Started** and **Ended**: The start date and end date of the campaign. Note that these dates might extend further than your filter dates that you selected on the overview page.
 
-- **Impact**: The following data for the date range filter you selected (or that you later modified in the timeline):
+- **Impact**: This section contains the following data for the date range filter you selected (or that you select in the timeline):
   
   - The total number of recipients.
   - The number of messages that were "Inboxed" (that is, delivered to the Inbox, not to the Junk Email folder).
   - How many users clicked on the URL payload in the phishing message.
   - Howe many users visited the URL.
 
-- **Targeted**: The percentage as calculated by the number of campaign recipients in your organization / the total number of recipients in the campaign across all organizations in the service.
+- **Targeted**: The percentage as calculated by: (the number of campaign recipients in your organization) / (the total number of recipients in the campaign across all organizations in the service). Note that this value is calculated over the entire lifetime of the campaign, and doesn't change the filter dates.
 
-- An interactive timeline of campaign activity: The timeline shows the campaign activity over the lifetime of the campaign. By default, the shaded area includes the date range filter that you selected in the overview. You can click and drag to select a specific start point and end point, which will change the data that's displayed in **Impact** area, and on the rest of the page as described in the next sections.
+- An interactive timeline of campaign activity: The timeline shows activity over the entire lifetime of the campaign. By default, the shaded area includes the date range filter that you selected in the overview. You can click and drag to select a specific start point and end point, <u>which will change the data that's displayed in **Impact** area, and on the rest of the page as described in the next sections</u>.
 
-In the title bar, you can click the **Download campaign write-up** button ![Download campaign write-up icon](../../media/download-campaign-write-up-button.png) to download the campaign details to a Word document (by default, named CampaignReport.docx).
+In the title bar, you can click the **Download campaign write-up** button ![Download campaign write-up icon](../../media/download-campaign-write-up-button.png) to download the campaign details to a Word document (by default, named CampaignReport.docx). Note that this document contains details over the entire lifetime of the campaign (not just the filter dates you selected).
 
 ![Campaign information](../../media/campaign-details-campaign-info.png)
 
