@@ -53,18 +53,18 @@ The following provides definitions of terms that are relevant to this guide.
 
 ## How to use this guide 
 
-When you use data processor service for Windows enrolled devices, Windows generates some information, known as Windows Diagnostic Data, in order to provide the service.  
+When you use data processor service for Windows enrolled devices, Windows generates some information, known as Windows Diagnostic Data, in order to provide the service.
 
 ## Windows Diagnostic Data 
 
-Microsoft provides you with the ability to access, delete and export Windows Diagnostic Data associated with a user’s use of the data processor service for Windows. 
+Microsoft provides you with the ability to access, delete and export Windows Diagnostic Data associated with a user’s use of the data processor service for Windows.
 
->[!IMPORTANT]  
+>[!IMPORTANT]
 >The ability to rectify Windows Diagnostic Data is not supported. Windows Diagnostic Data constitutes factual actions conducted within Windows, and modifications to such data would compromise the historical record of actions, increasing security risks and harming reliability. All data covered in this document is considered Windows Diagnostic Data. 
 
 ## Executing DSRs against Windows Diagnostic Data 
 
-Microsoft provides the ability to access, delete, and export certain Windows diagnostic data through the Azure Portal, and also directly via pre-existing application programming interfaces (APIs).  
+Microsoft provides the ability to access, delete, and export certain Windows diagnostic data through the Azure Portal, and also directly via pre-existing application programming interfaces (APIs).
 
 ### Step 1: Access 
 
@@ -74,11 +74,9 @@ Microsoft offers a portal experience, providing the enterprise customer’s tena
 
 ### Step 2: Delete 
 
-Microsoft offers separate methods to execute user-based DSR delete requests based on a particular user’s Azure Active Directory object and device-based DSR delete requests based on a particular device’s device ID. 
+Microsoft provides a way to execute user-based DSR delete requests based on a particular user’s Azure Active Directory object.
 
 For user-based delete requests, Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR delete requests. [Azure DSR, Part 1, Step 5: Delete](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-5-delete), describes how to execute a DSR delete request through the Azure Portal. 
-
-To execute a device-based DSR delete request, follow the procedure described in [Diagnostic, feedback, and privacy in Windows 10 – To delete your diagnostic data](https://support.microsoft.com/en-us/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy#to-delete-your-diagnostic-data) on the device locally. An administrator for the device can choose to disable this option through Group Policy, by going to **Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds** and setting **Disable deleting diagnostic data** to **enabled**.  Alternatively, set the MDM policy [System/DisableDeviceDelete](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-disabledevicedelete) to **1** (enabled). 
 
 Microsoft provides the ability to delete users, which in turn will delete Customer Data, directly via a pre-existing application programming interface (API). Details are described in the [API reference documentation](https://docs.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-beta). 
 
