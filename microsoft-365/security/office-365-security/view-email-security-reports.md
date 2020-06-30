@@ -30,6 +30,8 @@ A variety of reports are available in the [Security & Compliance Center](https:/
 
 The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
+The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
+
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Compromised users**. To go directly to the report, open <https://protection.office.com/reportv2?id=CompromisedUsers>.
 
 You can filter both the chart and the details table by clicking **Filters** and selecting one or more of the following values:
@@ -52,13 +54,13 @@ To go back to the report view, click **View report**.
 
 ## Encryption report
 
-The **Encryption report** is available in EOP (subscriptions with mailboxes in Exchange Online or standalone EOP without Exchange Online mailboxes).
-
-Your organization's security team can use information in this report to identify patterns and proactively apply or adjust policies for sensitive email messages. For example:
+The **Encryption report** is available in EOP (subscriptions with mailboxes in Exchange Online or standalone EOP without Exchange Online mailboxes). Your organization's security team can use information in this report to identify patterns and proactively apply or adjust policies for sensitive email messages. For example:
 
 - If you see a high number of email messages encrypted by users, you might want to add an encryption policy to automate encryption for certain use cases. For more information, see [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
 - If you have a number of encryption templates available but no one is using them, you might explore whether users need feature training.
+
+The aggregate view allows filtering for the last 90 days, while the detail view allows filtering for 10 days.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Encryption report**. To go directly to the report, open <https://protection.office.com/reportv2?id=EncryptionReport>.
 
@@ -131,6 +133,8 @@ The **Mailflow status report** contains information about malware, spam, phishin
 
 The **Malware detections in email** report shows information about malware detections in incoming and outgoing email messages (malware detected by Exchange Online Protection or EOP). For more information about malware protection in EOP, see [Anti-malware protection in EOP](anti-malware-protection.md).
 
+ The aggregate view filter allows for 90 days, while the details table filter only allows for 10 days.
+
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Malware detections in email**. To go directly to the report, open <https://protection.office.com/reportv2?id=MalwareDetections>.
 
 ![Malware detections in email widget in the Reports dashboard](../../media/malware-detections-widget.png)
@@ -162,6 +166,8 @@ The **Sent and received email** report contains information about malware, spam,
 ## Spam detections report
 
 The **Spam detections** report shows spam email messages that were blocked by EOP. Messages are counted individually, not per recipient. For example, if the same spam message was sent to 100 recipients in your organization, it counts as one message.
+
+The aggregate view allows for 90 days filtering, while the details table allows for 10 days filtering.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Spam detections**. To go directly to the report, open <https://protection.office.com/reportv2?id=SpamDetections>.
 
@@ -218,6 +224,8 @@ To go back to the report view, click **View report**.
 
 The **Spoof detections** report shows how many spoof mail messages were detected, and of those, which ones were considered "good" (spoof mail done for legitimate business reasons). For more information about spoofing, see [Anti-spoofing protection in EOP](anti-spoofing-protection.md).
 
+The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
+
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Spoof detections**. To go directly to the report, open <https://protection.office.com/reportv2?id=SpoofMailReport>.
 
 ![Spoof detections widget in the Reports dashboard](../../media/spoof-detections-widget.png)
@@ -255,7 +263,7 @@ To view the report, open the [Security & Compliance Center](https://protection.o
 
 ![Threat Protection Status report](../../media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
 
-By default, the chart shows data for the past 7 days. If you click **Filters**, you can select a 90 day date range (trial subscriptions might be limited to 30 days).
+By default, the chart shows data for the past 7 days. If you click **Filters**, you can select a 90 day date range (trial subscriptions might be limited to 30 days). The details table view allows filtering for 30 days.
 
 ### Report view for the Threat protection status report
 
@@ -372,7 +380,7 @@ Click (or tap) the report to open it in a new browser window, where you can get 
 
 ![This report shows the top malware detected for your organization](../../media/3fded224-fb31-4713-86f2-8afce5ce2991.png)
 
-Below the chart, you'll see a list of detected malware and how many messages were detected as having that malware.
+Below the chart, you'll see a list of detected malware and how many messages were detected as having that malware. Note that the aggregate view only allows for 90 days filtering.
 
 ## URL threat protection report
 
@@ -390,7 +398,7 @@ To go directly to the **URL threat protection** report, open <https://protection
 
 ### Report view for the URL threat protection report
 
-The **URL threat protection** report has two aggregated views that are refreshed once every four hours:
+The **URL threat protection** report has two aggregated views that are refreshed once every four hours that shows data for the last 90 days:
 
 - **URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:
 
@@ -423,7 +431,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
 
 ### Details table view for the threat protection report
 
-If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization with the following details:
+If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 7 days with the following details:
 
 - **Click time**
 - **User**
