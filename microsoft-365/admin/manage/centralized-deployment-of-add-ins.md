@@ -35,16 +35,12 @@ You can view specific requirements for Office and Exchange below, or use the [Ce
 
 Centralized Deployment doesn't support the following:
   
-- Add-ins that target Word, Excel, or PowerPoint in Office 2013
-    
+- Add-ins that target Word, Excel, or PowerPoint in Office 2013 
 - An on-premises directory service
-    
+- Add-in Deployment to an Exchange On-Prem Mailbox
 - Add-in deployment to SharePoint  
-
 - Teams apps
-   
 - Deployment of Component Object Model (COM) or Visual Studio Tools for Office (VSTO) add-ins
-    
 - Deployments of Microsoft 365 that do not include Exchange such as Microsoft 365 Apps for business
 
 ### Office Requirements
