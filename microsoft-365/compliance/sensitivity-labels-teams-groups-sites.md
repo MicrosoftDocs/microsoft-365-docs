@@ -131,7 +131,7 @@ If you delete a sensitivity label that has the site and group settings enabled, 
 
 1. Remove the sensitivity label from all label policies that include the label.
 
-2. Wait for 48 hours.
+2. Wait for 30 minutes.
 
 3. After this wait period, try creating a team, group, or site and confirm that the label is no longer visible.
 
