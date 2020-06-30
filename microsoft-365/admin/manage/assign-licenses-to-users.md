@@ -23,7 +23,7 @@ search.appverid:
 - MET150
 description: "Learn how to assign licenses to users."
 ---
-
+ 
 # Assign licenses to users
 
 ::: moniker range="o365-21vianet"
@@ -36,7 +36,7 @@ description: "Learn how to assign licenses to users."
 
 ::: moniker range="o365-worldwide"
 
-You can assign licenses to users on either the **Active users** page, or on the **Licenses** page. Which method you use depends on whether you want to assign product licenses to specific users, or assign users licenses to specific products.
+You can assign licenses to users on either the **Active users** page, or on the **Licenses** page. Which method you use depends on whether you want to assign product licenses to specific users or assign users licenses to specific products.
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ You can assign licenses to users on either the **Active users** page, or on the 
 
 When you use the **Licenses** page to assign licenses, you assign licenses for a specific product to up to 20 users. On the **Licenses** page, you see a list of all the products that you have subscriptions for. You also see the total number of licenses for each product, how many licenses are assigned, and how many are available.
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>  page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. Select a product.
 3. On the product details page, select **Assign licenses**.
 4. In the **Assign licenses to users** pane, begin typing a name, and then choose it from the results to add it to the list. You can add up to 20 users at a time.
@@ -66,7 +66,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 
 ## Change the apps and services a user has access to
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a>  page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page.
 2. On the **Licenses** page, select the row for a specific user.
 3. In the right pane, select or deselect the apps and services that you want to give access to or remove access from.
 4. When you're finished, select **Save**, then select **Close**.
@@ -122,7 +122,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 ### Assign licenses to one user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
-2. On the **Active Users** page, select the row of the user you want to assign a license to.
+2. Select the row of the user that you want to assign a license to.
 3. In the right pane, select **Licenses and Apps**.
 4. Expand the **Licenses** section, select the boxes for the licenses that you want to assign, then select **Save changes**.
 
@@ -133,7 +133,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 ## Assign licenses to one user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
-2. Select the box next to the name of the user you want to assign a license to.
+2. Select the box next to the name of the user that you want to assign a license to.
 3. In the right pane, in the **Product licenses** row, select **Edit**.
 4. In the **Product licenses** pane, switch the toggle to the **On** position for the license that you want to assign to this user.\
     By default, all services associated with that license are automatically assigned to the user. You can limit which services are available to the user. Switch the toggles to the **Off** position for the services that you don't want that user to have.
@@ -146,7 +146,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 ## Assign licenses to one user
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
-2. Select the box next to the name of the user you want to assign a license to.
+2. Select the box next to the name of the user that you want to assign a license to.
 3. In the right pane, in the **Product licenses** row, select **Edit**.
 4. In the **Product licenses** pane, switch the toggle to the **On** position for the license that you want to assign to this user.\
     By default, all services associated with that license are automatically assigned to the user. You can limit which services are available to the user. Switch the toggles to the **Off** position for the services that you don't want that user to have.
@@ -155,6 +155,8 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 ::: moniker-end
 
 ## Next steps
+
+If your users don't yet have the Office apps installed, you can share the [Employee quick start guide](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f) with your users to set things up, like [how to download and install Microsoft 365 or Office 2019 on a PC or Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) and [how to set up Office apps and email on a mobile device](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## Related content
 

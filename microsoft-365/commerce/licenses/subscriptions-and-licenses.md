@@ -19,26 +19,52 @@ ms.custom:
 - manage_licenses
 search.appverid:
 - MET150
-description: "Learn about subscriptions and licenses in Microsoft 365 for business, including who can assign licenses, and what happens when you assign a license to someone."
+description: "Learn about subscriptions and licenses in Microsoft 365 for business."
 ---
-
+ 
 # Understand subscriptions and licenses in Microsoft 365 for business
 
-When you buy a subscription to Microsoft 365 for business, you sign up for a set of applications and services that you pay for on either a monthly or an annual basis. The applications and services that you receive as part of your subscription depend on which product you purchased, such as Microsoft 365 Apps for business or Microsoft 365 Business Standard. You can review different licensing options available in [Microsoft 365 for small and medium-sized businesses](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb).
+When you buy a subscription to Microsoft 365 for business, you sign up
+for a set of apps and services that you pay for on either a monthly or
+an annual basis. The applications and services that you receive as part
+of your subscription depend on which product you purchased, such as
+Microsoft 365 Apps for business or Microsoft 365 Business Standard. You
+can see what comes with each product on the [Microsoft 365 for small and medium-sized businesses](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) page.
 
-When you buy a subscription, you specify the number of licenses that you need, based on how many people you have in your organization. After you buy a subscription, you create accounts for people, and then assign a license to each person. As your organizational needs change, you can buy more licenses to accommodate new people, or reassign licenses to other users when someone leaves your organization.
+When you buy a subscription, you specify the number of licenses that you
+need, based on how many people you have in your organization. After you
+buy a subscription, you create accounts for people in your organization,
+and then assign a license to each person. As your organizational needs
+change, you can buy more licenses to accommodate new people, or reassign
+licenses to other users when someone leaves your organization.
 
-If you have more than one subscription, you can assign licenses to different people for each subscription. For example, you can have all of your users assigned to all Microsoft 365 applications and services as part of a Microsoft 365 Business Standard subscription. Additionally, a subset of users can have a license for Visio Online through a separate Visio subscription.
+If you have more than one subscription, you can assign licenses to
+different people for each subscription. For example, you can assign all of your users to all Microsoft 365 applications and services as part
+of a Microsoft 365 Business Standard subscription. You can also assign  a subset of users to Visio Online through a separate Visio subscription.
 
 ## How many devices can people install Office on?
 
 If your subscription includes any of the following products, each person can install Office on up to five PCs or Mac, five tablets, and five phones.
-  
-- Microsoft 365 Apps for business
-- Microsoft 365 Business Standard
-- Microsoft 365 Apps for enterprise
-- Office 365 Enterprise E3
-- Office 365 Enterprise E5
+
+:::row:::
+   :::column span="":::
+        - Microsoft 365 Apps for business
+        - Microsoft 365 Apps for enterprise
+        - Microsoft 365 Business Standard
+        - Microsoft 365 Business Premium
+        - Microsoft 365 A3
+        - Microsoft 365 A5
+   :::column-end:::
+   :::column span="":::
+        - Microsoft 365 E3
+        - Microsoft 365 E5
+        - Office 365 A1 Plus
+        - Office 365 A3
+        - Office 365 A5
+        - Office 365 E3
+        - Office 365 E5
+   :::column-end:::
+:::row-end:::
 
 ## What happens when you assign a license to someone?
 
@@ -56,6 +82,7 @@ The following table lists what automatically happens when you assign a license t
 You don't need to assign licenses to resource mailboxes, room mailboxes, and shared mailboxes, except when they are over their storage quota of 50 gigabytes (GB). For more about non-user mailboxes, see the following articles:
   
 - [Create a shared mailbox](../../admin/email/create-a-shared-mailbox.md)
+- [Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md)
 - [Shared Mailboxes in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes) for all other Microsoft 365 plans.
 - [Create and Manage Room Mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes)
 - [Manage Equipment Mailboxes](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
@@ -77,6 +104,4 @@ Different types of admins can work with licenses in different ways, depending on
 [Add or remove licenses for your business subscription](buy-licenses.md) (article)\
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)\
-[Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md) (article)\
-[Buy or edit an add-on](../buy-or-edit-an-add-on.md) (article)\
-[Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365) (article)
+[Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md) (article)

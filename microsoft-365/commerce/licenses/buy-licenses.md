@@ -42,9 +42,6 @@ You can buy more licenses or reduce the number of licenses for your subscription
 
 ## Add or remove licenses for your business subscription
 
-> [!NOTE]
-> You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.
-
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
@@ -57,9 +54,7 @@ You can buy more licenses or reduce the number of licenses for your subscription
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
 2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
-
-After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
+3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, then select **Submit** \> **Close**. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five licenses, enter 95.
 
 ::: moniker-end
 
@@ -67,11 +62,12 @@ After you purchase new licenses, be sure to [assign the licenses to users](../..
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
 2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
-3. In the **Total licenses** box, enter the total number of licenses that you need for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
-
-After you purchase new licenses, be sure to [assign the licenses to users](../../admin/manage/assign-licenses-to-users.md).
+3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 ::: moniker-end
+
+> [!NOTE]
+> You can't reduce the number of licenses for your subscription if all licenses are currently assigned to users. To reduce the number of licenses, first [unassign one or more licenses from users](../../admin/manage/remove-licenses-from-users.md), then remove the licenses from the subscription.
 
 ## What if you don't see the Add/Remove licenses link?
 
@@ -79,7 +75,7 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 |Reason  |Description  |Solution  |
 |---------|---------|---------|
-|A credit check is pending. |If a credit check is pending, you see a "Pending credit check" message. You can't buy licenses until the credit check is complete.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br>After the credit check is complete, you should see the **Add/Remove licenses** link. |
+|A credit check is pending. |If a credit check is pending, you see a "Pending credit check" message. You can't buy licenses until the credit check is complete.  | Check back later to see if the credit check has completed. Credit checks typically take up to two working days to complete.<br/>After the credit check is complete, you should see the **Add/Remove licenses** link. |
 |You activated the subscription by using a product key.| If the subscription was purchased and activated by using a 25-character product key, you see the text "Prepaid."  |See [Add licenses to a subscription paid for using a product key](add-licenses-using-product-key.md). |
 |You bought your subscription through a partner. | If the subscription was purchased via a partner, you see the Volume Licensing Service Center (VLSC) link. | See [Add licenses to a subscription purchased through the Volume Licensing Service Center](add-licenses-bought-through-vlsc.md). |
 |You bought your subscription through a reseller.|| If the subscription was purchased via a Cloud Solution Provider (CSP) partner, contact your CSP partner to buy more licenses.        |
@@ -89,26 +85,30 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 ### License availability
 
-- If you pay for your subscription by credit or debit card, or bank account, any new licenses that you buy are available immediately after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use.
+- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription. The licenses are immediately available for you to assign to users.
+- **If you don't have a billing profile**: If you pay for your subscription by credit or debit card, or bank account, any new licenses that you buy are immediately available after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use.
   > [!NOTE]
   > Paying by bank account is not available in some countries or regions.
-- If you prepaid for your subscription with a product key, you can add more licenses by adding a credit or debit card, or bank account to cover the additional cost of the new licenses. After you buy the new licenses, we add a second subscription with the number of new licenses that you just added. For example, if you have a prepaid subscription with five licenses, and then bought 10 more licenses, you see two subscriptions listed: one with the five prepaid licenses, and one with the 10 new licenses.
+- **If you prepaid for your subscription with a product key**: You can add more licenses by adding a credit or debit card, or bank account to cover the additional cost of the new licenses. After you buy the new licenses, we add a second subscription with the number of new licenses that you just added. For example, if you have a prepaid subscription with five licenses, and then bought 10 more licenses, you see two subscriptions listed: one with the five prepaid licenses, and one with the 10 new licenses.
+
+### Changing your payment method
+
+- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription.
+-	**If you don’t have a billing profile:** If you pay by credit card, debit card, or bank account, the charge for buying new licenses appears on your payment method in two days.
 
 ### Billing statements
 
-- If you pay by credit or debit card, or bank account, the charge for buying new licenses appears on your payment method in two days.
 - If you pay by invoice, the charge for buying new licenses appears on your next billing statement.
 - If you buy new licenses in the middle of your billing period, your first billing statement might have a partial charge. The remaining amount is included on your next billing statement.
 
 ## Next steps
 
-If you’ve bought more licenses for your subscription, the next thing you should do is [assign those licenses to users in your organization](../../admin/manage/assign-licenses-to-users.md).
+If you bought more licenses for your subscription, the next thing you should do is [assign those licenses to users in your organization](../../admin/manage/assign-licenses-to-users.md).
 
-If you’ve reduced the number of licenses for your subscription because someone has left your organization, you might want to remove that user’s account. To learn more, see [Remove a former employee](../../admin/add-users/remove-former-employee.md).
+If you reduced the number of licenses for your subscription because someone has left your organization, you might want to remove that user’s account. To learn more, see [Remove a former employee](../../admin/add-users/remove-former-employee.md).
 
 ## Related content
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Understand subscriptions and licenses](subscriptions-and-licenses.md) (article)\
-[Try or buy a Microsoft 365 subscription](../try-or-buy-microsoft-365.md) (article)\
-[Manage Yammer user licenses](https://docs.microsoft.com/yammer/manage-yammer-users/manage-yammer-licenses-in-office-365) (article)
+[Try or buy a Microsoft 365 subscription](../try-or-buy-microsoft-365.md) (article)
