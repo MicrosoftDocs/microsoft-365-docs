@@ -152,19 +152,19 @@ Any message in Message center that is unread will appear in bold. Opening a mess
 
 ::: moniker-end
 
-## Dismiss and restore
+## Archive and restore
 
-If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can dismiss the message to remove it from the Message center view. The view that you see in Message center is specific to your user account, so dismissing it from your view doesn't affect other admins.
+If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from the Message center view. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins.
 
 ::: moniker range="o365-worldwide"
 
-- On the main page of the message center, select a message, and then select **Dismiss** above the list of messages.
+- On the main page of the Message center, select a message, and then select **Archive** above the list of messages.
 
-- Open the message, and then select **Dismiss** at the bottom of the message.
+- Open the message, and then select **Archive** at the bottom of the message.
 
-Need to get a dismissed message back? No problem.
+Need to get a archived message back? No problem.
   
-1. Select the **Dismissed messages** tab at the top of the Message center. A list of dismissed messages appears. 
+1. Select the **Archived messages** tab at the top of the Message center. A list of archived messages appears. 
 
 2. Select the message, select **Restore**, and the message is restored to active messages.
 
@@ -172,15 +172,15 @@ Need to get a dismissed message back? No problem.
 
 ::: moniker range="o365-germany"
 
-There are two ways to dismiss a message.
+There are two ways to archive a message.
   
 - Select the X that appears to the right of the Message ID. The message is removed from your list. Or,
 
-- Open the message, and then select **Dismiss** at the top of the message.
+- Open the message, and then select **Archive** at the top of the message.
 
 Need to get a dismissed message back? No problem.
   
-1. Select the **Dismissed messages** filter from the **Views** drop-down menu. A list of dismissed messages appears.
+1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
 
 2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
 
@@ -188,15 +188,15 @@ Need to get a dismissed message back? No problem.
 
 ::: moniker range="o365-21vianet"
 
-There are two ways to dismiss a message.
+There are two ways to archive a message.
   
 - Select the X that appears to the right of the Message ID. The message is removed from your list. Or,
 
-- Open the message, and then select **Dismiss** at the top of the message.
+- Open the message, and then select **Archive** at the top of the message.
 
-Need to get a dismissed message back? No problem.
+Need to get a archived message back? No problem.
   
-1. Select the **Dismissed messages** filter from the **Views** drop-down menu. A list of dismissed messages appears.
+1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
 
 2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
 
