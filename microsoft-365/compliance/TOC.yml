@@ -159,6 +159,8 @@
       href: office-365-service-encryption.md    
     - name: Technical reference details about encryption in Office 365
       href: technical-reference-details-about-encryption.md
+    - name: TLS 1.0 and 1.1 deprecation for Office 365
+      href: tls-1.0-and-1.1-deprecation-for-office-365.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -249,10 +251,14 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
+        - name: Archive Bloomberg Message data (preview)
+          href: archive-bloomberg-message-data.md 
         - name: Archive Facebook data (preview)
           href: archive-facebook-data-with-sample-connector.md
         - name: Import HR data (preview)
           href: import-hr-data.md
+        - name: Archive ICE Chat data (preview)
+          href: archive-icechat-data.md 
         - name: Archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
         - name: Archive LinkedIn data
