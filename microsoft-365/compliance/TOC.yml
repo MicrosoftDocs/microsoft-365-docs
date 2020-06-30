@@ -251,10 +251,14 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
+        - name: Archive Bloomberg Message data (preview)
+          href: archive-bloomberg-message-data.md 
         - name: Archive Facebook data (preview)
           href: archive-facebook-data-with-sample-connector.md
         - name: Import HR data (preview)
           href: import-hr-data.md
+        - name: Archive ICE Chat data (preview)
+          href: archive-icechat-data.md 
         - name: Archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
         - name: Archive LinkedIn data
