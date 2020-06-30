@@ -52,6 +52,19 @@ Each improvement action is worth 10 points or less. Most are scored in a binary 
 
 Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.
 
+### Security defaults
+
+Microsoft Secure Score has updated improvement actions to support [security defaults in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with preconfigured security settings for common attacks.
+
+If you turn on security defaults, you will be awarded full points for the following improvement actions:
+
+- Ensure all users can complete multi-factor authentication for secure access (9 points)
+- Require MFA for administrative roles (10 points)
+- Enable policy to block legacy authentication (7 points)
+
+>[!IMPORTANT]
+>Security defaults include security features that provide similar security to the "sign-in risk policy" and "user risk policy" improvement actions. Instead of setting up these policies on top of the security defaults, we recommend updating their statuses to "Resolved through alternative mitigation."
+
 ## Required permissions
 
 To have permission to access Microsoft Secure Score, you must be assigned one of the following roles in Azure Active Directory.
