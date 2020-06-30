@@ -246,6 +246,10 @@ If you click **Choose a category for more details**, you can select from the fol
 - **Spam detections**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 - **Edge blocked spam**: This selection takes you to the [Spam Detections report](view-email-security-reports.md#spam-detections-report).
 
+Export:
+For the detail view, users can only export per day. if a user is aiming at exporting for 7 days, then the user has to conduct 7 different export actions. 
+Each Export .csv file is limited ot 150,000 rows, and if the data a user is looking at exporting for a day is more than 150,000 rows then multiple .csv files will be created for such.
+
 ![Type view in the Mailflow status report ](../../media/mail-flow-status-report-type-view.png)
 
 ### Direction view for the Mailflow status report
@@ -259,6 +263,10 @@ You can change these filters by clicking **Filter** or by clicking a value in th
 The data table contains same information from the **Type** view.
 
 The **Choose a category for more details** available selections and behavior are the same as the **Type** view.
+
+Export:
+For the detail view, users can only export per day. if a user is aiming at exporting for 7 days, then the user has to conduct 7 different export actions. 
+Each Export .csv file is limited ot 150,000 rows, and if the data a user is looking at exporting for a day is more than 150,000 rows then multiple .csv files will be created for such.
 
 ![Direction view in the Mailflow status report ](../../media/mail-flow-status-report-direction-view.png)
 
