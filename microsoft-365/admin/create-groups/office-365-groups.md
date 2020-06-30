@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -74,16 +75,31 @@ The following limits apply to Microsoft 365 Groups:
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
-The default maximum number of Microsoft 365 groups that an organization can have is 500,000, but can be increased by request. For more information on Microsoft 365 Groups limits, see [Microsoft 365 Groups - Admin help](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+The default maximum number of Microsoft 365 groups that an organization can have is 500,000, but can be increased by request. For more information on Microsoft 365 Groups limits, see [Microsoft 365 Groups - Admin help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 Managing your Microsoft 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Microsoft 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
+
+## Sensitivity labels
+
+You can create sensitivity labels that the users in your organization can set when they create an Microsoft 365 group. With sensitivity labels, you can configure: 
+
+- Privacy (public or private)
+- External users access
+- Unmanaged device access
+
+For example, you can create a label called *Highly Confidential* and specify that any group created with this label will be private and not allow external users. When users in your organization select this label during group creation, the group will be set to private and group members will be not be allowed to add external users to the group.
+
+> [!IMPORTANT]
+> If you are currently using classification labels, they will no longer be available to users who create groups once sensitivity labels are enabled. 
+
+For information about creating, managing, and using sensitivity labels, see [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 ## Which Microsoft 365 plans include groups?
 
 Any Microsoft 365 subscription that has Exchange Online and SharePoint Online will support groups. That includes the Business Essentials and Business Premium plans, and the Enterprise E1, E3 and E5 plans. The group takes on the licensing of the person who creates the group (also known as the "organizer" of the group). As long as the organizer has the proper license for whatever features you want the group to have, that license will convey to the group.
 
 > [!NOTE]
-> For more details about Microsoft 365 service families and plans, see [Microsoft 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> For more details about Microsoft 365 service families and plans, see [Microsoft 365 plan options](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options).
 
 If you have an Exchange-only plan you can still get the shared inbox and shared calendar features of groups in Outlook but you won't get the document library, Planner or any of the other capabilities.
 
@@ -95,7 +111,7 @@ Microsoft 365 groups work with Azure Active Directory (AAD). The groups features
 
 ## Related articles
 
-[Learn about Microsoft 365 Groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Learn about Microsoft 365 Groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Upgrade distribution lists to Microsoft 365 Groups](../manage/upgrade-distribution-lists.md)
 

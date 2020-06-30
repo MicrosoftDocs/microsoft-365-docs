@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
-description: "Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP) to provide information about the message and how it was processed."
+description: "Admins can learn about the header fields that are added to messages by Exchange Online Protection (EOP). These header fields provide information about the message and how it was processed."
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -22,20 +22,27 @@ ms.custom: seo-marvel-apr2020
 
 In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, EOP scans and inserts the **X-Forefront-Antispam-Report** header into each inbound email message. The fields in this header can help provide administrators with information about the message and about how it was processed. The fields in the **X-Microsoft-Antispam** header provide additional information about bulk mail and phishing. In addition to these two headers, Exchange Online Protection also inserts email authentication results for each message it processes in the **Authentication-results** header.
 
-For information about how to view an email message header in various email clients, see [View internet message headers in Outlook](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c).
+For information about how to view an email message header in various email clients, see [View internet message headers in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 > [!TIP]
-> You can copy and paste the contents of a message header into the [Message Analyzer](https://testconnectivity.microsoft.com/?tabid=mha) tool. This tool helps parse headers and put them into a more readable format.
+> You can copy and paste the contents of a message header into the [Message Header Analyzer](https://mha.azurewebsites.net/) tool. This tool helps parse headers and put them into a more readable format.
 
 ## X-Forefront-Antispam-Report message header fields
 
-After accessing the message header information, search for **X-Forefront-Antispam-Report** and then look for these fields. Other fields in this header are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
+After you have the message header information, find the **X-Forefront-Antispam-Report** header. There will be multiple header field and value pairs in this header separated by semicolons (;). For example:
+
+`...CTRY:;LANG:hr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;PTR:;CAT:NONE;SFTY:;...`
+
+The individual fields and values are described in the following table.
+
+> [!NOTE]
+> The **X-Forefront-Antispam-Report** header contains many different header fields and values. Other fields in this header that aren't described in the table are used exclusively by the Microsoft anti-spam team for diagnostic purposes.
 
 |||
 |---|---|
 |**Header field**|**Description**|
 |ARC|The ARC protocol has the following headers: <ul><li>AAR: Records the content of the Authentication results header from DMARC.</li><li>AMS: This header includes cryptographic signatures of the message.</li><li>AS: Includes cryptographic signatures of the message headers. This header contains a tag of a chain validation called "cv=", which includes the outcome of the chain validation as **none**, **pass**, or **fail**.</li></ul>|
-|CAT:|The category of protection policy, applied to the message: <ul><li>BULK: Bulk</li><li>DIMP: Domain Impersonation</li><li>GIMP: Mailbox Intelligence</li><li>HPHSH or HPHISH : High confidence phishing </li><li>HSPM: High confidence spam</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: User Impersonation</li></ul><br/>An inbound message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
+|CAT:|The category of protection policy, applied to the message: <ul><li>BULK: Bulk</li><li>DIMP: Domain Impersonation</li><li>GIMP: Mailbox Intelligence based impersonation</li><li>HPHSH or HPHISH : High confidence phishing</li><li>HSPM: High confidence spam</li><li>MALW: Malware</li><li>PHSH: Phishing</li><li>SPM: Spam</li><li>SPOOF: Spoofing</li><li>UIMP: User Impersonation</li><li>AMP: Anti-malware</li><li>SAP: Safe attachments</li><li>OSPM: Outbound spam</li></ul><br/>An inbound message may be flagged by multiple forms of protection and multiple detection scans. Policies have different priorities, and the policy with the highest priority is applied first. For more information, see [What policy applies when multiple protection methods and detection scans run on your email](how-policies-and-protections-are-combined.md).|
 |CIP: \[IP address\]|The connecting IP address. You can use this IP address in the IP Allow List or the IP Block List. For more information, see [Configure connection filtering](configure-the-connection-filter-policy.md).|
 |CTRY|The source country as determined by the connecting IP address, which may not be the same as the originating sending IP address.|
 |H:\[helostring\]|The HELO or EHLO string of the connecting email server.|

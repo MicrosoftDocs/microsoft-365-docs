@@ -76,7 +76,7 @@ Share insider risk management documentation with the stakeholders in your organi
 - [Create and manage insider risk policies](insider-risk-management-policies.md)
 - [Investigate insider risk alerts](insider-risk-management-alerts.md)
 - [Take action on insider risk cases](insider-risk-management-cases.md)
-- [Review case data with the insider risk content explorer](insider-risk-management-content-explorer.md)
+- [Review case data with the insider risk Content Explorer](insider-risk-management-content-explorer.md)
 - [Create insider risk notice templates](insider-risk-management-notices.md)
 
 ## Ready to get started?

@@ -81,7 +81,7 @@ You must perform all the following steps to regain access to your account the so
 > [!WARNING]
 > Do not send the new password to the intended user through email as the attacker still has access to the mailbox at this point.
 
-1. Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/office365/admin/add-users/reset-passwords)
+1. Follow the Reset a Microsoft 365 Apps for business password for someone else procedures in [Reset Microsoft 365 Apps for business passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
 
 **Notes**:
 
@@ -92,7 +92,7 @@ You must perform all the following steps to regain access to your account the so
 - If your on-premises identity is federated with Microsoft 365, you must change your password on-premises, and then you must notify your administrator of the compromise.
 
 > [!TIP]
-> We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  You can learn more about MFA [here](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> We highly recommended that you enable Multi-Factor Authentication (MFA) in order to prevent compromise, especially for accounts with administrative privileges.  To learn more about MFA, go to [Set up multi-factor authentication]((https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
 ### Step 2 Remove suspicious email forwarding addresses
 
@@ -196,4 +196,4 @@ Your Microsoft 365 subscription comes with a powerful set of security capabiliti
 
 - [Securities and Exchange Commission - "Phishing" Fraud](https://www.sec.gov/investor/pubs/phishing.htm)
 
-- To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+- To report spam email directly to Microsoft and your admin [Use the Report Message add-in](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)

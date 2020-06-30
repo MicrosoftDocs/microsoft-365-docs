@@ -21,6 +21,7 @@ ms.custom:
 - MSB365
 - OKR_SMB_M365
 - seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -34,7 +35,7 @@ Watch a short video about Microsoft 365 Business Premium setup.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Most of the setup steps can be done in the setup wizard, but the other options are also listed.
 
@@ -42,7 +43,7 @@ Most of the setup steps can be done in the setup wizard, but the other options a
 
    - **[Add your domain](set-up.md#add-your-domain-to-personalize-sign-in)** (if you bought your domain during [sign up](sign-up.md), this step is already done.)
 
-    - **Add users**. You can add users in any of the three ways:
+   - **Add users**. You can add users in any of the three ways:
         - In the [wizard](set-up.md#add-users-in-the-wizard).
         - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
         - You can also [add users later](add-users-m365b.md) in the admin center.
@@ -89,4 +90,4 @@ When you join a Windows 10 device to Azure AD, the policies you set for Windows 
 
 ## See also
 
-[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

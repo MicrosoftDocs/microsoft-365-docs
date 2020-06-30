@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -22,25 +23,15 @@ description: "Learn how to add guests to a Microsoft 365 group, view guest users
 
 # Manage guest access in Microsoft 365 groups
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> The admin center is changing. If your experience doesn't match the details presented here, see 
-[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
-
-::: moniker-end
-
 By default, guest access for Microsoft 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 
 When it's turned on, group members can invite guest users to a Microsoft 365 group through Outlook on Web. Invitations are sent to the group owner for approval.
 
+Once approved, the guest user is added to the directory and the group.
+
 > [!Note]
 > Yammer Enterprise networks that are in Native Mode or the [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) do not support network guests.
 > Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) for instructions.
-
-### Edit guest information
-
-Once approved, the guest user is added to the directory and the group.
 
 Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams. These services have their own guest sharing settings. For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:
 
@@ -51,7 +42,7 @@ Guest access in groups is often used as part of a broader scenario that includes
 
 If you want to enable or disable guest access in groups, you can do so in the Microsoft 365 admin center.
 
-1. In the admin center, go to the **Settings** \> **Settings** and select **Microsoft 365 groups**.
+1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the **Services** tab, select **Microsoft 365 groups**.
   
 2. On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
 

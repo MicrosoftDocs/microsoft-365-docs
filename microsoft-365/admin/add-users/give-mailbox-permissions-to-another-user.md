@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,13 +25,6 @@ description: "Learn how to give a user the right to access another user's mailbo
 ---
 
 # Give mailbox permissions to another user - Admin Help
-
-::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
 
 As the admin, you may have company requirements to allow some users access to another user's mailbox. For example, you may want to enable an assistant to send or read email from their manager's mailbox, or one of your user's the ability to send email on behalf of another user. This topic shows you how to accomplish this.
   
@@ -56,7 +50,7 @@ Once you've set up the permissions, it can take up to 60 minutes for the changes
   
  **How to use it once permissions are set up:**
   
-There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx)
+There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
   
 ## Send email from another user's mailbox
 
@@ -203,6 +197,6 @@ There are a few different ways you can access a mailbox once you've been given a
 
 Want to know how to send email from another user's mailbox? Check out the following topics:
   
-- [Manage another person's mail and calendar items](https://support.office.com/article/afb79d6b-2967-43b9-a944-a6b953190af5.aspx)
+- [Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
     
-- [Send email from another person or group](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)
+- [Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)

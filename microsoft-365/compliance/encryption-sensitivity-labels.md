@@ -14,7 +14,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "When you create a sensitivity label, you can restrict access to content that the label will be applied to. Sensitivity labels can use encryption to protect content."
+description: Configure sensitivity labels for encryption that protects your data by restricting access and usage.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -33,7 +33,7 @@ When a document or email is encrypted, access to the content is restricted, so t
 
 - Can be decrypted only by users authorized by the label's encryption settings.
 - Remains encrypted no matter where it resides, inside or outside your organization, even if the file's renamed.
-- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, a sent email).
+- Is encrypted both at rest (for example, in a OneDrive account) and in transit (for example, email as it traverses the internet).
 
 Finally, as an admin, when you configure a sensitivity label to apply encryption, you can choose either to:
 
@@ -161,7 +161,7 @@ When you assign permissions, you can choose:
     > [!NOTE]
     > If you specify a domain from an organization that uses Azure AD, you can't restrict access to that specific domain. Instead, all verified domains in Azure AD are automatically included for the tenant that owns the domain name you specify.
 
-When you choose all tenant members or browse the directory, the users or groups must have an email address.
+When you choose all users and groups in your organization or browse the directory, the users or groups must have an email address.
 
 As a best practice, use groups rather than users. This strategy keeps your configuration simpler.
 
@@ -292,13 +292,13 @@ This label is not suitable for emails.
 
 4. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the name of a domain from the other organization, for example, **fabrikam.com**. Then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select **Viewer**, and then select **Save**.
 
 6. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -313,13 +313,13 @@ The new users that you add will be able open documents and emails that have alre
 
 2. Select **Assign permissions**.
 
-3. On the **Assign permissions** pane, select **Add these email address or domains**.
+3. On the **Assign permissions** pane, select **Add specific email addresses or domains**.
 
 4. In the text box, enter the email address of the first user (or group) to add, and then select **Add**.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the permissions for this user (or group), and then select **Save**.
+6. On the **Choose permissions** pane, select the permissions for this user (or group), and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, repeat steps 3 through 6 for each user (or group) that you want to add to this label. Then click **Save**.
 
@@ -340,11 +340,11 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 4. On the **Assign permissions** pane, select **Add any authenticated users**. 
     
-    For **Users and groups**, you see **AuthenticatedUsers** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
+    For **Users and groups**, you see **Authenticated users** automatically added. You can't change this value, only delete it, which cancels the **Add any authenticated users** selection.
 
-5. Select **Choose permissions from present or custom**.
+5. Select **Choose permissions**.
 
-6. On the **Choose permissions from present or custom** pane, select the dropdown box, select **Viewer**permissions you want, and then select **Save**.
+6. On the **Choose permissions** pane, select the dropdown box, select the permissions you want, and then select **Save**.
 
 7. Back on the **Assign Permissions** pane, select **Save**.
 
@@ -354,7 +354,7 @@ Use this configuration only when you do not need to restrict who can open the pr
 
 Encrypting your most sensitive documents and emails helps to ensure that only authorized people can access this data. However, there are some considerations to take into account:
 
-- If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive (public preview)](sensitivity-labels-sharepoint-onedrive-files.md):
+- If your organization hasn't [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md):
     
     - Search, eDiscovery, and Delve will not work for encrypted files. 
     - DLP policies work for the metadata of these encrypted files (including retention label information) but not the content of these files (such as credit card numbers within files).

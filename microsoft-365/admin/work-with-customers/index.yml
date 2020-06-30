@@ -12,6 +12,7 @@ metadata:
   ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
   ms.date: 04/16/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -23,19 +24,19 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-        - text: Share sites and files externally
+        - text: Share sites and files with guest users
           url: ../manage/share-sites-with-external-users.md
         - text: Share calendars with guest users
           url: ../manage/share-calendars-with-external-users.md
       - linkListType: video
         links:
-          - text: Create a team with guests
-            url: https://support.office.com/article/11fbb083-52ee-434d-8c6e-63711fdafac7
+          - text: Create a Team with guest users
+            url: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
           - text: Join a team as a guest
-            url: https://support.office.com/article/928d1eef-61e2-49ec-b754-c2fe86b34824
+            url: https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824
           - text: Chat with employees and customers
-            url: https://support.office.com/article/65748808-a403-462c-a6e1-b169e5bc6c92
-          - text: Schedule a Teams meeting with guests
-            url: https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
-          - text: Join a Teams meeting with guests
-            url: https://support.office.com/article/a120c282-063d-46b8-b973-851197ab75d8
+            url: https://support.microsoft.com/office/65748808-a403-462c-a6e1-b169e5bc6c92
+          - text: Schedule a Teams meeting with guest users
+            url: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
+          - text: Join a Teams meeting with guest users
+            url: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8

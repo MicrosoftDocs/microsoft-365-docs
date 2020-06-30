@@ -12,7 +12,7 @@ localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom:
+ms.custom: AdminSurgePortfolio
 description: "Learn about the new allotments feature."
 ---
 

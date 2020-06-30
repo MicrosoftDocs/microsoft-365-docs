@@ -1,5 +1,5 @@
 ---
-title: "Configure a shared mailbox"
+title: "Configure shared mailbox settings"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,7 +23,7 @@ search.appverid:
 description: "After you have created a shared mailbox, you'll want to configure some settings for its users, such as email forwarding and automatic replies. Later, you might want to change other settings, such as the mailbox name or members."
 ---
 
-# Configure a shared mailbox
+# Configure shared mailbox settings
 
 After you have [created a shared mailbox](create-a-shared-mailbox.md), you'll want to configure some settings for the mailbox users, such as email forwarding and automatic replies. Later, you might want to change other settings, such as the mailbox name, members, or member permissions. 
 

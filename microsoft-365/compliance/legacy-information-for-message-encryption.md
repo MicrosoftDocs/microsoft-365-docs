@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 07/11/2019
+ms.date: 05/22/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
-description: "If you haven't yet moved your organization to the new OME capabilities, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to the new OME capabilities as soon as it is reasonable for your organization. For instructions, see Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection. If you want to find out more about how the new capabilities work first, see Office 365 Message Encryption. The rest of this article refers to OME behavior before the release of the new OME capabilities."
+ms.custom:
+- seo-marvel-apr2020
+description: Understand how to transition legacy files to Office 365 Message Encryption (OME) for your organization. 
 ---
 
 # Legacy information for Office 365 Message Encryption
@@ -215,3 +217,9 @@ There isn't a report that shows if an encrypted message has been viewed, but the
  **Q. What does Microsoft do with the information I provide through the OME Portal and the OME Viewer App?**
   
 The [Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) provides detailed information about what Microsoft does and doesn't do with your private information.
+
+## What do I do if I don’t receive the one-time pass code after I requested it?
+
+First, check the junk or spam folder in your email client. DKIM and DMARC settings for your organization may cause these emails to end up filtered as spam.
+
+Next, check quarantine in the Security & Compliance Center. Often, messages containing a one-time pass code, especially the first ones your organization receives, end up in quarantine.
