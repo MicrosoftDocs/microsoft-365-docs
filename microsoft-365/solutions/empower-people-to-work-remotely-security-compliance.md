@@ -78,4 +78,4 @@ For your remote workers, you have implemented:
 
 ## Next step
 
-Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints
+Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints.
