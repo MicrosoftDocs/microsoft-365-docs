@@ -22,7 +22,7 @@ search.appverid:
 description: "Learn about subscriptions and licenses in Microsoft 365 for business."
 ms.date: 06/30/2020
 ---
- 
+
 # Understand subscriptions and licenses in Microsoft 365 for business
 
 When you buy a subscription to Microsoft 365 for business, you sign up

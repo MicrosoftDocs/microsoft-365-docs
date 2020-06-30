@@ -82,7 +82,7 @@ If you’re not going to [reassign the unused licenses to other users](../../man
 
 ## Related content
 
-[Assign licenses](../../managed-desktop/get-started/assign-licenses.md) (article)\
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Remove licenses from your subscription](../../commerce/licenses/remove-licenses-from-subscription.md) (article)\
 [Change plans manually](change-plans-manually.md) (article)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\

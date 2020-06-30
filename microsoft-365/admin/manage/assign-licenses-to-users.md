@@ -24,7 +24,7 @@ search.appverid:
 description: "Learn how to assign licenses to users."
 ms.date: 06/30/2020
 ---
- 
+
 # Assign licenses to users
 
 ::: moniker range="o365-21vianet"
@@ -37,7 +37,7 @@ ms.date: 06/30/2020
 
 ::: moniker range="o365-worldwide"
 
-You can assign licenses to users on either the **Active users** page, or on the **Licenses** page. Which method you use depends on whether you want to assign product licenses to specific users or assign users licenses to specific products.
+You can assign licenses to users on either the **Active users** page, or on the **Licenses** page. Which method you use depends on whether you want to assign product licenses to specific users or assign users licenses to a specific product.
 
 ::: moniker-end
 
@@ -77,6 +77,8 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 ::: moniker range="o365-worldwide"
 
 ## Use the Active users page to assign licenses
+
+When you use the **Active users** page to assign licenses, you assign users licenses to specific products.
 
 ### Assign licenses to multiple users
 
