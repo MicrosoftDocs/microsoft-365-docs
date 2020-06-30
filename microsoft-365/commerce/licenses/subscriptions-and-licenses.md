@@ -102,7 +102,7 @@ Different types of admins can work with licenses in different ways, depending on
 
 ## Related content
 
-[Add or remove licenses for your business subscription](buy-licenses.md) (article)\
+[Buy or remove licenses for your business subscription](buy-licenses.md) (article)\
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)\
 [Remove a license from a shared mailbox](../../admin/email/remove-license-from-shared-mailbox.md) (article)

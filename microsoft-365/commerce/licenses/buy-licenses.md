@@ -1,5 +1,5 @@
 ---
-title: "Add or remove subscription licenses"
+title: "Buy or remove subscription licenses"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -24,7 +24,7 @@ description: "Learn how to buy more licenses or reduce the number of licenses fo
 ms.date: 06/30/2020
 ---
 
-# Add or remove subscription licenses
+# Buy or remove subscription licenses
 
 ::: moniker range="o365-21vianet"
 
@@ -41,12 +41,12 @@ You can buy more licenses or reduce the number of licenses for your subscription
 - You must be either a Global admin or a Billing admin to buy licenses. For more information, see [About admin roles](../../admin/add-users/about-admin-roles.md).
 - You can [add users and assign licenses at the same time](../../admin/add-users/add-users.md).
 
-## Add or remove licenses for your business subscription
+## Buy or remove licenses for your business subscription
 
 ::: moniker range="o365-worldwide"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
-2. Find the subscription for which you want to add or remove licenses, then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
+2. Find the subscription for which you want to buy or remove licenses, then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
 3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, then select **Submit change**. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five of them, enter 95.
 
 ::: moniker-end
@@ -54,7 +54,7 @@ You can buy more licenses or reduce the number of licenses for your subscription
 ::: moniker range="o365-germany"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
-2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
+2. On the **Subscriptions** page, select the subscription to which you want to buy or remove licenses, and then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
 3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, then select **Submit** \> **Close**. For example, if you have 100 licenses and you want to add five more, enter 105. If you want to remove five licenses, enter 95.
 
 ::: moniker-end
@@ -62,7 +62,7 @@ You can buy more licenses or reduce the number of licenses for your subscription
 ::: moniker range="o365-21vianet"
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
-2. On the **Subscriptions** page, select the subscription to which you want to add or remove licenses, and then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
+2. On the **Subscriptions** page, select the subscription to which you want to buy or remove licenses, and then select **Add/Remove licenses**. [What if you don't see the Add/Remove licenses link?](#what-if-you-dont-see-the-addremove-licenses-link)
 3. In the **Total licenses** box, enter the total number of licenses that you want for this subscription, and then select **Submit** \> **Close**. For example, if you have 100 licenses and you need to add 5 more, enter 105. If you want to remove 5 of them, enter 95.
 
 ::: moniker-end
@@ -86,7 +86,7 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 ### License availability
 
-- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription. The licenses are immediately available for you to assign to users.
+- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription. The licenses are immediately available for you to assign to users. [What's a billing profile?](../billing-and-payments/manage-billing-profiles.md)
 - **If you don't have a billing profile**: If you pay for your subscription by credit or debit card, or bank account, any new licenses that you buy are immediately available after you receive an order confirmation. If you pay by invoice, you might have to wait for a credit check before your new licenses are available to use.
   > [!NOTE]
   > Paying by bank account is not available in some countries or regions.
@@ -94,8 +94,8 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 ### Changing your payment method
 
-- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription.
--	**If you don’t have a billing profile:** If you pay by credit card, debit card, or bank account, the charge for buying new licenses appears on your payment method in two days.
+- **If you have a billing profile**: The credit card associated with your billing profile is charged as soon as you buy more licenses for a subscription. [What's a billing profile?](../billing-and-payments/manage-billing-profiles.md)
+- **If you don’t have a billing profile:** If you pay by credit card, debit card, or bank account, the charge for buying new licenses appears on your payment method in two days.
 
 ### Billing statements
 

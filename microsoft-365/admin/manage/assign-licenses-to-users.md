@@ -78,7 +78,7 @@ If there's a conflict, a message displays, tells you what the problem is, and te
 
 ## Use the Active users page to assign licenses
 
-When you use the **Active users** page to assign licenses, you assign users licenses to specific products.
+When you use the **Active users** page to assign licenses, you assign users licenses to products.
 
 ### Assign licenses to multiple users
 
@@ -165,4 +165,4 @@ If your users don't yet have the Office apps installed, you can share the [Emplo
 
 [Understand subscriptions and licenses](../../commerce/licenses/subscriptions-and-licenses.md) (article)\
 [Unassign licenses from users](remove-licenses-from-users.md) (article)\
-[Add or remove licenses for your subscription](../../commerce/licenses/buy-licenses.md) (article)
+[Buy or remove licenses for your subscription](../../commerce/licenses/buy-licenses.md) (article)

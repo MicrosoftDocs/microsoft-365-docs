@@ -62,7 +62,7 @@ When you use the **Licenses** page to unassign licenses, you unassign licenses f
 
 ## Use the Active users page to unassign licenses
 
-When you use the **Active users** page to unassign licenses, you unassign specific product licenses from users.
+When you use the **Active users** page to unassign licenses, you unassign product licenses from users.
 
 ### Unassign licenses from one user
   
