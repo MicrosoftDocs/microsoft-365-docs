@@ -96,8 +96,8 @@ Different types of admins can work with licenses in different ways, depending on
 |Global admin  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |
 |Billing admin  <br/> |No  <br/> |No  <br/> |Yes  <br/> |No  <br/> |
 |User admin  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |
-|Service admin  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
-|Password admin  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|License admin <br/> |Yes <br/>|Yes <br/> |No <br/> |No <br/> |
+|Service Support admin  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
 
 ## Related content
 
