@@ -110,7 +110,7 @@ When this sensitivity label is automatically applied, the user sees a notificati
 
 ### Configuring sensitive info types for a label
 
-When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personally identifiable information (PII), such as credit card numbers or social security numbers:
+When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personally identifiable information (PII), such as credit card numbers, social security numbers, or passport numbers:
 
 ![Sensitive info types for auto-labeling in Office apps](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -190,7 +190,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
-    - At the time the auto-labeling policy runs, the file mustn't be open by another process or user.
+    - At the time the auto-labeling policy runs, the file mustn't be open by another process or user. A file that's checked out for editing falls into this category.
 
 - If you plan to use [custom sensitive information types](custom-sensitive-info-types.md) rather than the built-in sensitivity types: 
     - Custom sensitivity information types are evaluated for content that is created after the custom sensitivity information types are saved. 
@@ -236,7 +236,9 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     ![Auto-labeling tab](../media/auto-labeling-tab.png)
     
 
-3. Select **+ Create policy**.
+3. Select **+ Create auto-labeling policy**. This starts the New policy wizard:
+    
+    ![New policy wizard for auto-labeling ](../media/auto-labeling-wizard.png)
 
 4. For the page **Choose info you want this label applied to**: Select one of the templates, such as **Financial** or **Privacy**. You can refine your search by using the **Show options for** dropdown. Or, select **Custom policy** if the templates don't meet your requirements. Select **Next**.
 
@@ -244,19 +246,21 @@ Finally, you can use simulation mode to provide an approximation of the time nee
 
 6. For the page **Choose locations where you want to apply the label**: Select and specify locations for Exchange, SharePoint sites, and OneDrive. Then select **Next**.
     
+    ![Choose locations page auto-labelingwizard ](../media/locations-auto-labeling-wizard.png)
+    
     For OneDrive, you must specify individual accounts. The URL for a user's OneDrive is in the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
     
     For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
     To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
-7. For the **Define policy settings** page: Keep the default of **Find content that contains** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced settings**. Then select **Next**.
+7. For the **Set up common or advanced rules** page: Keep the default of **Common rules** to define rules that identify content to label across all your selected locations. If you need different rules per location, select **Advanced rules**. Then select **Next**.
     
     The rules use conditions that include sensitive information types and sharing options:
     - For sensitive information types, you can select both built-in and custom sensitive information types.
     - For the shared options, you can choose **only with people inside my organization** or **with people outside my organization**.
     
-    If your only location is **Exchange**, or if you select **Advanced settings**, there are additional conditions that you can select:
+    If your only location is **Exchange**, or if you select **Advanced rules**, there are additional conditions that you can select:
     - Sender IP address is
     - Recipient domain is
     - Recipient is
@@ -265,29 +269,29 @@ Finally, you can use simulation mode to provide an approximation of the time nee
     - Any email attachment's content could not be scanned
     - Any email attachment's content didn't complete scanning
 
-8. For the **Set up rules to define what content is labeled** page: Select **+ Create rule** and then select **Next**.
-
-9. On the **Create rule** page, name and define your rule, using sensitive information types or the sharing option, and then select **Save**.
+8. Depending on your previous choices, you'll now have an opportunity to create new rules by using conditions and exceptions.
     
     The configuration options for sensitive information types are the same as those you select for auto-labeling for Office apps. If you need more information, see [Configuring sensitive info types for a label](#configuring-sensitive-info-types-for-a-label).
-
-10. Back on the **Set up rules to define what content is labeled** page: Select **+ Create rule** again if you need another rule to identify the content to label, and repeat the previous step. When you have defined all the rules you need, and confirmed their status is on, select **Next**.
+    
+    When you have defined all the rules you need, and confirmed their status is on, select **Next** to move on to choosing a label to auto-apply.
 
 11. For the **Choose a label to auto-apply** page: Select **+ Choose a label**, select a label from the **Choose a sensitivity label** pane, and then select **Next**.
 
-12. For the **Decide if you want to run policy simulation now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**. 
+12. For the **Decide if you want to test out the policy now or later** page: Select **Run policy in simulation mode** if you're ready to run the auto-labeling policy now, in simulation mode. Otherwise, select **Leave policy turned off**. Select **Next**: 
+    
+    ![Test out the policy auto-labeling wizard](../media/simulation-mode-auto-labeling-wizard.png)
 
 13. For the **Summary** page: Review the configuration of your auto-labeling policy and make any changes that needed, and complete the wizard.
     
     Unlike auto-labeling for Office apps, there's no separate publish option. However, as with publishing labels, allow up to 24 hours for the auto-labeling policy to replicate throughout your organization.
 
-Now on the **Information protection** page, **Auto-labeling** tab, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
+Now on the **Information protection** > **Auto-labeling** page, you see your auto-labeling policy in the **Simulation** or **Off** section, depending on whether you chose to run it in simulation mode or not. Select your policy to see the details of the configuration and status (for example, **Policy simulation is still running**). For policies in simulation mode, select the **Matched items** tab to see which emails or documents matched the rules that you specified.
 
 You can modify your policy directly from this interface:
 
 - For a policy in the **Off** section, select the **Edit policy** button.
 
-- For policy in the **Simulation** section, select the **Edit** option at the top of the page, from either tab:
+- For policy in the **Simulation** section, select the **Edit policy** option at the top of the page, from either tab:
     
     ![Edit auto-labeling policy option](../media/auto-labeling-edit.png)
     
