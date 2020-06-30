@@ -26,9 +26,11 @@ This channel configuration example is for an organization that uses rapid deploy
 - Maximize device, service, and data security with the latest features and fixes from Microsoft.
 - Maximize user productivity with the latest features from Microsoft.
 
-These goals translate to the IT task of finding the balance between rapid production deployment and proper testing with a representative subset of users and devices to prevent widespread functionality outages.
+These goals translate to the IT task of finding the balance between rapid production deployment and proper testing with a representative subset of users and devices for validation of functionality.
 
 Our example organization has over 100,000 employees in multiple campuses across the world in Europe, Africa, Asia, and the Americas.
+
+ADD: Broader framing, just an example, 5,000 employees, M365 SKUs
 
 This organization's IT infrastructure: 
 
