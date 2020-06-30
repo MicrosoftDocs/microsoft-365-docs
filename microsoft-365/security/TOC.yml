@@ -123,6 +123,8 @@
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Go hunt
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Extend data coverage
+                  href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
                   items: 
                     - name: Understand the schema
