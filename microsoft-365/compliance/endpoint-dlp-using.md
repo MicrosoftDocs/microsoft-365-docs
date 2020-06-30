@@ -84,8 +84,17 @@ These scenarios require that you already have devices onboarded and reporting in
 
 ### Scenario 2: Modify the existing policy, set an alert
 
-1.  
-
+1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
+3. Choose **edit policy (preview)**.
+4. Go to the **Advanced DLP rules** page and edit the **Low volume of contetn detected U.S. Personally Identifiable Inf**
+5. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
+![turn-on-incedent-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
+7. Choose **Save**.
+8. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
+9. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+10. Check Activity explorer for the event.
 
 
 
