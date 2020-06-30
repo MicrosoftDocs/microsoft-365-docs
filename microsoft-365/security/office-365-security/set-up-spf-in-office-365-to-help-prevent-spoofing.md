@@ -54,7 +54,7 @@ Gather this information:
 
 ### To add or update your SPF TXT record
 
-1. Ensure that you're familiar with the SFP syntax in the following table.
+1. Ensure that you're familiar with the SPF syntax in the following table.
 
    ||**If you're using...**|**Common for customers?**|**Add this...**|
    |:-----|:-----|:-----|:-----|
