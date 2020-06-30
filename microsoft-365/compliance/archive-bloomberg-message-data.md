@@ -36,9 +36,6 @@ The following overview explains the process of using a connector to archive Bloo
 
    The connector does this by using the value of the CorporateEmailAddress property. Every email message contains this property, which is populated with the email address of every participant of the email message. In addition to automatic user mapping using the value of the *CorporateEmailAddress* property, you can also define a custom mapping by uploading a CSV mapping file. This mapping file contains a Bloomberg UUID and the corresponding Microsoft 365 mailbox address for each user in your organization. If you enable automatic user mapping and provide a custom mapping, for every email item the connector will first look at the custom-mapping file. If it doesn't find a valid Microsoft 365 user that corresponds to a user's Bloomberg UUID, the connector uses the *CorporateEmailAddress* property of the email item. If the connector doesn't find a valid Microsoft 365 user in either the custom-mapping file or the *CorporateEmailAddress* property of the email item, the item won't be imported.
 
-> [!NOTE]
-> At this time, threading of Bloomberg Messages imported to Microsoft 365 isn't supported. Microsoft is working to support email threading in later versions of the Bloomberg Message data connector.
-
 ## Before you begin
 
 Many of the implementation steps required to archive Bloomberg Message data are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
@@ -130,3 +127,7 @@ The last step is to create a Bloomberg Message connector in the Microsoft 365 co
 7. Click **Next**, review your settings, and then click prepare to create the connector.
 
 8. Go to the **Data connectors** page to see the progress of the import process for the new connector.
+
+## Known issues
+
+- Threading of Bloomberg Message email imported to Microsoft 365 isn't supported. Individual messages sent to a person are imported, but they aren't presented in a threaded conversation. Microsoft is working to support threading in later versions of the Bloomberg Message data connector.
