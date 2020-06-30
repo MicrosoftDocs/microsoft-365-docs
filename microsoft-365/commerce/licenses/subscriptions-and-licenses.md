@@ -20,6 +20,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn about subscriptions and licenses in Microsoft 365 for business."
+ms.date: 06/30/2020
 ---
  
 # Understand subscriptions and licenses in Microsoft 365 for business
@@ -93,11 +94,11 @@ Different types of admins can work with licenses in different ways, depending on
   
 |**Admin role**|**Assign a license**|**Unassign a license**|**Buy more licenses**|**Delete an account**|
 |:-----|:-----|:-----|:-----|:-----|
-|Global admin  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |
 |Billing admin  <br/> |No  <br/> |No  <br/> |Yes  <br/> |No  <br/> |
-|User admin  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |
+|Global admin  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |Yes  <br/> |
 |License admin <br/> |Yes <br/>|Yes <br/> |No <br/> |No <br/> |
 |Service Support admin  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
+|User admin  <br/> |Yes  <br/> |Yes  <br/> |No  <br/> |Yes  <br/> |
 
 ## Related content
 
