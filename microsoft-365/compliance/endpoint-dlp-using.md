@@ -52,12 +52,23 @@ When a policy's 'Access by unallowed apps and browsers' setting is turned on and
 
 You add browsers, identified by their process names, that will be blocked from accessing files that match the conditions of an enforced  a DLP policy where Cloud upload is set to either warn or block. When these browsers are blocked from accessing a file, the end users will see a toast notification asking them to open the file through Edge.
 
-## Create a policy from a template
+## Endpoint DLP policy scenarios
+
+To help familiarize you with Endpoint DLP features and how they surface in DLP policies, we've put together some scenarios for you to follow. All the Endpoint DLP content will be folded in to the main DLP content set when Endpoint DLP releases to general availability. 
+
+> [!IMPORTANT]
+> These Endpoint DLP scenarios are not the official procedures for creating and tuning DLP policies. Refer to the below topics when you need to work with DLP policies in general situations:
+>- [Overview of data loss prevention](data-loss-prevention-policies.md)
+>- [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)
+>- [Create a DLP policy from a template](create-a-dlp-policy-from-a-template.md)
+>- [Create, test, and tune a DLP policy](create-test-tune-dlp-policy.md)
+
+### Scenario 1: Create a policy from a template, audit only
 
 These scenarios require that you already have devices onboarded and reporting into Activity explorer. If you haven't onboarded devices yet, see [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md).
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
-2. Choose `Create policy (preview).
+2. Choose **Create policy (preview)**.
 3. For this scenario, choose **Privacy**, then **U.S. Personally Identifiable Information (PII) Data** and choose **Next**.
 4. Toggle the **Status** field to off for all locations except **Devices**. Choose **Next**.
 5. Accept the default **Review and customize settings from the template** selection and choose **Next**.
@@ -66,13 +77,17 @@ These scenarios require that you already have devices onboarded and reporting in
 8. Select **Audit or restrict activities on Windows devices** and leave the actions set to **Audit only**. Choose **Next**.
 9. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
 10. Review your settings and choose **Submit**.
-11. The new DLP policy will appear in the policy list.  
+11. The new DLP policy will appear in the policy list.
+12. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+13. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+14. Check Activity explorer for the event.
+
+### Scenario 2: Modify the existing policy, set an alert
+
+1.  
 
 
 
-make a table to capture the what it is you want the policy to do or all the values that will need to be entered.
-
-heavily refer out to existing DLP content on how to create a policy
 
 refer out to existing activity explorer content
 
