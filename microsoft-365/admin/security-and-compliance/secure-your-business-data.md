@@ -321,15 +321,17 @@ To get to ATP Safe Links, view a [short training video](https://support.microsof
     
 To modify the default policy:
   
-1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy. 
+1. On the Safe links page, under **Policies that apply to the entire organization**, double-click the **Default** policy. 
     
-2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
+2. Under **Settings that apply to content across Office 365**, enter a URL to be blocked, such as _example.com_, and select **+**.
+
+3. Under **Settings that apply to content except email**, select **Office 365 applications**, **Do not track when users click safe links**, and **Do not let users click through safe links to original URL**.
     
-3. Select **Save**. 
+4. Select **Save**. 
     
 To create a new policy targeted to all recipients in your domain:
   
-1. On the Safe links page, under **Policies that apply to the entire organization**, select **+** to create a new policy. 
+1. On the Safe links page, under **Policies that apply to specific recipients**, select **+** to create a new policy. 
     
 2. Apply the settings listed in the following table.
     
@@ -339,7 +341,7 @@ To create a new policy targeted to all recipients in your domain:
 |:-----|:-----|
 |Name  <br/> |Safe links policy for all recipients in the domain  <br/> |
 |Select the action for unknown potentially malicious URLs in messages  <br/> |Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.  <br/> |
-|Use Safe Attachments to scan downloadable content  <br/> |Select this box.  <br/> |
+|Apply real-time URL scanning for suspicious links and links that point to files  <br/> |Select this box.  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
 |
    
