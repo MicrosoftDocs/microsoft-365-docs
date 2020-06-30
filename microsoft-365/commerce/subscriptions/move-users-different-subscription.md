@@ -21,7 +21,7 @@ search.appverid:
 description: "Learn how to move users between subscriptions."
 ---
 
-## Move users to a different subscription
+# Move users to a different subscription
 
 ::: moniker range="o365-21vianet"
 
