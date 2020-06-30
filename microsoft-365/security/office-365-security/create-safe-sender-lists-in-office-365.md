@@ -121,7 +121,7 @@ For example, suppose that Blue Yonder Airlines has hired Margie's Travel to send
 
 - The `5322.From` address is blueyonder@news.blueyonderairlines.com, which is what you'll see in Outlook.
 
-Safe sender lists and safe domain lists in anti-spam policies in EOP inspect both the `5321.MailFrom` and `5322.From` addresses. Outlook Safe Senders only uses the `5322.From` address.
+Safe sender lists and safe domain lists in anti-spam policies in EOP inspect only the `5322.From` addresses, this is similar to Outlook Safe Senders that uses the `5322.From` address.
 
 To prevent this message from being filtered, you can take the following steps:
 
