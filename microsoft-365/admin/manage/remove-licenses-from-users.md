@@ -34,7 +34,7 @@ ms.date: 06/30/2020
 
 ::: moniker range="o365-worldwide"
 
-You can unassign licenses from users on either the **Active users** page, or on the **Licenses** page. Which method you use depends on whether you want to unassign product licenses from specific users or unassign users licenses from a specific product.
+You can unassign licenses from users on either the **Active users** page, or on the **Licenses** page. The method you use depends on whether you want to unassign product licenses from specific users or unassign users licenses from a specific product.
 
 ::: moniker-end
 
