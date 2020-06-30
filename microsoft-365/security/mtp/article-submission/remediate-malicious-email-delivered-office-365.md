@@ -61,6 +61,37 @@ Once emails are selected from Threat Explorer, remediation creation can begin by
 
 **Automated investigation and response (AIR)** actions are triggered by alerts or by security operations teams from inside Threat Explorer. They may include some recommended remediations that must be approved by security operations teams. These remediation actions are included on the Action tab within the automated investigation.  
 
+[Mail with malware is Zapped page showing time of Zap execution.](../../media/tp-RemediationArticle3.png)
+
+All remediations (either direct approval or two-step approval) created through Threat Explorer, and approved actions coming from automated investigations, show up in the Action Center, which can be accessed via the left navigation under *Review *> **Action Center**.
+
+[The action center with a list of threats by date and severity.](../../media/tp-RemediationArticle4.png)
+
+Action Center shows all remediation actions for the past 30 days. Actions taken through Explorer show up with the same name provided by the security operations teams when the remediation was created. Actions taken through automated investigations are surfaced with titles that begin with the related alert that triggered the investigation – for e.g. “Zap email cluster…”.  
+
+Each remediation item can be opened to view details about it. When a remediation item is opened, it shows basic remediation details, the remediation name, creation date, description, threat severity, and status. It also shows two tabs: 
+
+1. Mail submission tab: These are the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be: 
+
+[The action center with actionable and not actionable threats.](../../media/tp-RemediationArticle5.png)
+
+**Actionable**: Emails in the following cloud mailbox locations can be acted upon and moved i.e. any email within the remediable category can be moved from one location to another: 
+  - Inbox 
+  - Junk  
+  - Deleted folder 
+  - Soft deleted folder 
+
+[!NOTE]
+> Currently, only an end user with access to the mailbox can recover items from a soft delete folder.
+
+**Not actionable**: Emails in the following locations cannot be acted upon or moved as a part of the email actions i.e. emails in non-remediable category cannot be moved either in the non-remediable category, nor in remediable. Non-remediable locations are: 
+
+  - Quarantine 
+  - Hard deleted folder
+  - On-prem / external 
+  - Failed / dropped 
+\
+
 ## Manage
 
 See https://microsoft-my.sharepoint-df.com/:w:/p/shubjain/EZrXgYtoFKpLszlKFeUrBVIBA__urRlQQ9EigAyBKyG5Xg?e=ALO9sA
@@ -68,3 +99,4 @@ See https://microsoft-my.sharepoint-df.com/:w:/p/shubjain/EZrXgYtoFKpLszlKFeUrBV
 ## More info
 
 See https://microsoft-my.sharepoint-df.com/:w:/p/shubjain/EZrXgYtoFKpLszlKFeUrBVIBA__urRlQQ9EigAyBKyG5Xg?e=ALO9sA
+
