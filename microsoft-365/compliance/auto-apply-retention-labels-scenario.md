@@ -245,6 +245,8 @@ Now that we verified that the KQL query is working correctly, let's create the l
 
 9. Select **Auto-apply** to create the label policy. It takes up to seven days to automatically apply the Product Specification label to all documents that match the KQL search query that you provided.
 
+Note: “You do not need to publish labels to the SharePoint site to have auto-labels applied”.
+
 ### Verifying the retention label was automatically applied
 
 After seven days, use the [Label activity explorer](view-label-activity-for-documents.md) in the security and compliance center to see that the label policy that we created has automatically applied the retention labels in this scenario to the product documents. In the following screenshot, retention labels have also been applied to product agreements and user manuals, even though we didn't cover creating those retention labels and label policies in this article.
