@@ -27,7 +27,7 @@ The following table lists the apps that either stores or associates data with a 
 
 |Microsoft 365 app|Description|
 |:---------|:---------|
-|Forms|Forms (stored as a PDF file) and responses to a form (stored in a CSV file) are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
+|Forms|Forms (stored as a PDF file) and responses to a form (stored in a CSV file) for forms created before April 2020 and JSON for forms created after April 2020 are attached to email messages and stored in a hidden folder in the mailbox of the user who created the form. When you export content from Forms in a PST file, this data is located in the **ApplicationDataRoot** folder in a subfolder named with the following globally unique identified (GUID): **c9a559d2-7aab-4f13-a6ed-e7e9c52aec87**.|
 |Microsoft 365 Groups|Email messages, calendar items, contacts (People), notes, and tasks are stored in the mailbox that's associated with a Microsoft 365 group.|
 |Outlook/Exchange Online|Email messages, calendar items, contacts (People), notes, and tasks are stored in a user's mailbox.|
 |People|Contacts in the People app (which are the same contacts as the ones accessible in Outlook) are stored in a user's mailbox.|
