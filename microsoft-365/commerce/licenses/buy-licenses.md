@@ -99,8 +99,8 @@ This table describes the reasons why the **Add/Remove licenses** link might not 
 
 ### Billing statements
 
-- If you pay by invoice, the charge for buying new licenses appears on your next billing statement.
-- If you buy new licenses in the middle of your billing period, your first billing statement might have a partial charge. The remaining amount is included on your next billing statement.
+- Licenses added in the middle of your billing period appear on your next invoice. If you pay annually, you are invoiced within a month for these changes.
+- On your next billing statement, the previous charge for the original number of licenses is deducted. We add a prorated charge for the time period with the original number of licenses, and add a charge for the new license count. There is also a charge for the current license count for the remainder of your billing period.
 
 ## Next steps
 
