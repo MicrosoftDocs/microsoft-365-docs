@@ -69,7 +69,7 @@ Actions are assigned a score value based on whether they're mandatory or discret
 
  - **Mandatory actions** can't be bypassed, either intentionally or accidentally. An example is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
   
- - **Discretionary actions** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
+ - **Discretionary actions** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because it relies on the user.
   
 ### Preventative, detective, and corrective actions
   
