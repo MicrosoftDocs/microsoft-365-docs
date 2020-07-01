@@ -47,7 +47,7 @@ Compliance Score helps simplify compliance management by providing:
 
 ## Relationship to Compliance Manager
 
-Think of Compliance Score as a simplified version of Compliance Manager. While the two exist as distinct yet integrated tools, Compliance Score makes it easier to monitor your overall compliance posture and take steps to improve it.
+Think of Compliance Score as a simplified experience of Compliance Manager. While the two exist as distinct yet integrated tools, Compliance Score makes it easier to monitor your overall compliance posture and take steps to improve it.
 
 Compliance Score shares the same backend with Compliance Manager. Anything that you do in one tool will surface in the other tool.
 
