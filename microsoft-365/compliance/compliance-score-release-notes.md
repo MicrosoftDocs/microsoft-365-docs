@@ -22,7 +22,7 @@ description: "Release notes and known issues for Microsoft Compliance Score (pre
 
 ## Assessment creation and management functionality
 
-The July 2020 release adds functionality for users to create, delete, and manage their assessments directly in Compliance Score. Previously, all assessment management resided in Compliance Manager. When you create or modify an assessment in Compliance Score, the updates will surface in Compliance Manager. Likewise, any assessment work performed in Compliance Manager will surface in Compliance Score. Learn how to [manage assessments in Compliance Score](compliance-score-assessments.md). Note that template creation and modification is still managed in Compliance Manager.
+The June 2020 release adds functionality for users to create, delete, and manage their assessments directly in Compliance Score. Previously, all assessment management resided in Compliance Manager. When you create or modify an assessment in Compliance Score, the updates will surface in Compliance Manager. Likewise, any assessment work performed in Compliance Manager will surface in Compliance Score. Learn how to [manage assessments in Compliance Score](compliance-score-assessments.md). Note that template creation and modification is still managed in Compliance Manager.
 
 ## New templates for assessments
 
