@@ -523,7 +523,7 @@ Ready to use templates are available on your **Templates** dashboard. View the c
 2. On the Template flyout pane, select **Create a new template**.
 3. Import your template data by selecting **Browse** to upload your Excel file containing the data (see [Import Template data with Excel](#import-template-data-with-excel) below).
 4. Select **Add to Dashboard**.
-5. The new template requires approval of two users who hold an admin role. Those users receive a notification that a new template is ready for approval. One the template is approved by two admins, you'll see your new template on your **Templates** dashboard.You will then see your new template added to your **Templates** dashboard.
+5. The new template requires approval of two users who hold an admin role. Those users receive a notification that a new template is ready for approval. One the template is approved by two admins, you'll see your new template on your **Templates** dashboard.
 
 #### Import Template data with Excel
 
