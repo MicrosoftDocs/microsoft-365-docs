@@ -38,7 +38,7 @@ manage the policy:
 
 ## Before you begin
 
-You must be a Global admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
+You must be a Global, Billing, or User admin to create and manage auto-claim policies. For more information, see [About Microsoft 365 admin roles](../../admin/add-users/about-admin-roles.md).
 
 ## Turn the auto-claim policy feature on or off
 
@@ -171,9 +171,14 @@ to the app.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select **View report**. The **Auto-claim policy report** page lists all licenses assigned from each policy in the last 90 days.
+3. To change the date range, select **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
+
+## Next steps
+
+You can periodically return to the **Auto-claim policy** tab to see a list of users who have claimed licenses under the policies you created.
 
 ## Related content
 
-- [Assign licenses](../../managed-desktop/get-started/assign-licenses.md)
-- [Add or remove licenses for your business subscription](buy-licenses.md)
-- [Understand subscriptions and licenses in Microsoft 365 for business](subscriptions-and-licenses.md)
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
+[Buy or remove subscription licenses](buy-licenses.md) (article)\
+[Understand subscriptions and licenses](subscriptions-and-licenses.md)
