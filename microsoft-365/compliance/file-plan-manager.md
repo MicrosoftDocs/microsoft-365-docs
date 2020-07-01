@@ -37,6 +37,8 @@ File plan can be used for all retention labels, even if they don't mark content 
 
 ![File plan page](../media/compliance-file-plan.png)
 
+For information about what retention labels are and how to use them, see [Learn about retention labels](labels.md).
+
 ## Accessing file plan
 
 To access file plan, you must have one of the following admin roles:
@@ -125,7 +127,7 @@ In file plan, you can bulk-import new retention labels, and use the same method 
 
 To import new retention labels and modify existing retention labels: 
 
-1. On the **File plan** page, click **Import**:
+1. On the **File plan** page, click **Import** to use the **Fill out and import your file plan** page:
 
    ![Option to import file plan](../media/compliance-file-plan-import-labels.png)
 
@@ -137,7 +139,7 @@ To import new retention labels and modify existing retention labels:
 
 3. Fill out the template, using the following information that describes the properties and valid values for each property. For import, each value has a maximum length of 64 characters. <br/>
 
-   |**Property**|**Type**|**Valid values**|
+   |Property|Type|Valid values|
    |:-----|:-----|:-----|
    |LabelName|String|This property specifies the name of the retention label.|
    |Comment|String|Use this property to add a description about the retention label for admins. This description appears only to admins who manage the retention label in the compliance center.|
@@ -163,7 +165,7 @@ To import new retention labels and modify existing retention labels:
 
    ![File plan template with information filled in](../media/file-plan-filled-out-template.png)
 
-4. Under step 3 on the import file plan wizard page, click **Browse for files** to upload the filled-out template. 
+4. Under step 3 on the **Fill out and import your file plan** page, click **Browse for files** to upload the filled-out template. 
 
    File plan validates the entries and displays the import statistics.
 

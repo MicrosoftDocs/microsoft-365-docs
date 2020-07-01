@@ -68,9 +68,9 @@ Use these steps to secure and optimize access to your organization's servers, da
 
 1. [Increase sign-in security with MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Provide remote access to on-premises apps and services](empower-people-to-work-remotely-remote-access.md)
-3. [Deploy endpoint management for your devices, PCs, and other endpoints](empower-people-to-work-remotely-manage-endpoints.md)
-4. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [Create communication venues](empower-people-to-work-remotely-communication-venues.md)
+3. [Deploy security and compliance services](empower-people-to-work-remotely-security-compliance.md)
+4. [Deploy endpoint management for your devices, PCs, and other endpoints](empower-people-to-work-remotely-manage-endpoints.md)
+5. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Train remote workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)

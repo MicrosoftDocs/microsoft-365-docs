@@ -69,25 +69,14 @@
               href: mtp/setup-mtpeval.md
             - name: Configure and onboard
               href: mtp/config-mtpeval.md
-            - name: Turn on Microsoft Threat Protection
-              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
+            - name: Start the Microsoft Threat Protection service
+              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
         - name: How-to guides
           items: 
             - name: Create a trial lab environment
-              href: mtp/mtp-evaluation.md
-              items: 
-                - name: Prepare
-                  href: mtp/prepare-mtpeval.md
-                - name: Setup
-                  href: mtp/setup-mtpeval.md
-                - name: Configure and onboard
-                  href: mtp/config-mtpeval.md
-                - name: Turn on Microsoft Threat Protection
-                  href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
-                - name: Generate a test alert
-                  href: mtp/generate-test-alert.md
+              href: mtp/mtp-evaluation.md             
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
@@ -230,7 +219,7 @@
               href: ./mtp/tickets.md
 
 
-    - name: Office 365 Advanced Threat Protection
+    - name: Office 365 security
       items: 
         - name: Get started
           items: 
@@ -324,6 +313,8 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Use the delist portal to remove yourself from the blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: Manage URLs and files in the Tenant Allow/Block List
+                  href: ./office-365-security/tenant-allow-block-list.md
             - name: Anti-phishing protection
               href: ./office-365-security/anti-phishing-protection.md
               items: 
@@ -377,7 +368,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: View information about malicious files
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Advanced Threat Protection
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items: 
             - name: See what's new
@@ -476,6 +467,8 @@
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: View email security reports in the Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
+            - name: View mail flow reports in the Security & Compliance Center
+              href: ./office-365-security/view-mail-flow-reports.md
             - name: Mail flow insights in the Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items: 

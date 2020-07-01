@@ -126,9 +126,7 @@ We're continuously working on optimizing retention functionality in Teams. In th
 
 ## How to configure a retention policy for Microsoft Teams
 
-See [Create and configure retention policies](create-retention-policies.md).
-
-For the **Choose locations** page of the wizard, select the following options:
+Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select the following options:
 
 - **Let me choose specific locations** > **Teams channel messages** and **Teams chats**
 
