@@ -70,7 +70,7 @@ Microsoft provides the ability to access, delete, and export certain Windows dia
 
 The tenant admin is the only person within your organization who can access Windows Diagnostic Data associated with a particular user’s use of a data processor service for Windows enrolled device. The data retrieved for an access request will be provided, via export, in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. 
 
-Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR access requests. [Azure DSR, Part 1, Step 2: Access](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-2-access), describes how to execute a DSR access request through the Azure Portal.
+Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR access requests. [Azure DSR, Part 2, Step 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), describes how to execute a DSR access request, via export, through the Azure Portal.
 
 ### Step 2: Delete 
 
