@@ -114,17 +114,17 @@ Clicking on a mail submission item will show details of that remediation such as
 
 Status is the overall status of the remediation. Status can be: 
 
-  **Started**: When a remediation gets triggered. 
-  **Queued**: When the remediation is queued up for mitigation of emails. 
-  **In progress**: When the mitigation is in progress. 
-  **Completed**: When the mitigation on all remediable emails is done either successfully or with some failures. 
-  **Failed**: When no remediations are successful. 
+  - **Started**: When a remediation gets triggered. 
+  - **Queued**: When the remediation is queued up for mitigation of emails. 
+  - **In progress**: When the mitigation is in progress. 
+  - **Completed**: When the mitigation on all remediable emails is done either successfully or with some failures. 
+  - **Failed**: When no remediations are successful. 
 
 As only remediable emails can be acted upon, each email’s cleanup is looked at as successful or failed. From the total remediable emails, we expose the successful and failed mitigations. 
 
-  **Success**: When the desired action on remediable emails is accomplished and matches the intention of admin. For example: An admin wants to remove emails from mailboxes, so they take the action of soft deleting emails. If a remediable email is not found in the original folder after the action is taken, the Status will show as successful.  
+  - **Success**: When the desired action on remediable emails is accomplished and matches the intention of admin. For example: An admin wants to remove emails from mailboxes, so they take the action of soft deleting emails. If a remediable email is not found in the original folder after the action is taken, the Status will show as successful.  
 
-  **Failure**: When the desired action on remediable emails fails. For example: An admin wants to remove emails from mailboxes, so he takes the action of soft deleting emails. If a remediable email is still found in the mailbox, Status will show as failed. 
+  - **Failure**: When the desired action on remediable emails fails. For example: An admin wants to remove emails from mailboxes, so he takes the action of soft deleting emails. If a remediable email is still found in the mailbox, Status will show as failed. 
 
 Clicking on any item in action log, displays details of remediation. For successful items, if the details say, successful, or not found in mailbox, it means that item was already removed from the mailbox. Sometimes there are failures that happen due to a systemic error during remediation, and in those cases, it is a good idea to re-try remediation.  
 
