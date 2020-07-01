@@ -92,7 +92,7 @@ These scenarios require that you already have devices onboarded and reporting in
 3. Choose **edit policy (preview)**.
 4. Go to the **Advanced DLP rules** page and edit the **Low volume of content detected U.S. Personally Identifiable Inf**
 5. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
-![turn-on-incedent-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
+![turn-on-incident-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
 6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
 7. Choose **Save**.
 8. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
@@ -117,5 +117,10 @@ These scenarios require that you already have devices onboarded and reporting in
 9. Repeat steps 4-7 for the **High volume of content detected U.S. Personally Identifiable Inf**.
 10. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
 11. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+
+You'll see a popup like this on the client device:
+
+![endpoint dlp client blocked override notification](../media/endpoint-dlp-3-using-dlp-client-blocked-override-notification.png)
+
 12. Check Activity explorer for the event.
 
