@@ -82,12 +82,15 @@ These scenarios require that you already have devices onboarded and reporting in
 13. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 14. Check Activity explorer for the event.
 
+> [!NOTE]
+> In the rule, **User notification** is turned on by default. This means that the when the user attempts to share the item, they will see a popup alerting them that the action matches the conditions in a policy. These notifications are useful for educating your users.
+
 ### Scenario 2: Modify the existing policy, set an alert
 
 1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
 2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
 3. Choose **edit policy (preview)**.
-4. Go to the **Advanced DLP rules** page and edit the **Low volume of contetn detected U.S. Personally Identifiable Inf**
+4. Go to the **Advanced DLP rules** page and edit the **Low volume of content detected U.S. Personally Identifiable Inf**
 5. Scroll down to the **Incident reports** section and set **Send an alert to admins when a rule match occurs** to **On**. Email alerts will be automatically sent to the administrator and anyone else you add to the list of recipients. 
 ![turn-on-incedent-reports](../media/endpoint-dlp-2-using-dlp-incident-reports.png)
 6. For the purposes of this scenario, choose **Send alert every time an activity matches the rule**.
@@ -96,11 +99,23 @@ These scenarios require that you already have devices onboarded and reporting in
 9. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
 10. Check Activity explorer for the event.
 
+> [!NOTE]
+> In the rule, **User notification** is turned on by default. This means that the when the user attempts to share the item, they will see a popup alerting them that the action matches the conditions in a policy. These notifications are useful for educating your users.
 
+### Scenario 3: Modify the existing policy, block the action with allow override
 
-refer out to existing activity explorer content
-
-
-Relnotes references????
-
+1. Open the [Data loss prevention page](https://compliance.microsoft.com/datalossprevention?viewid=policies).
+2. Choose the **U.S. Personally Identifiable Information (PII) Data** policy that you created in scenario 1.
+3. Choose **edit policy (preview)**.
+4. Go to the **Advanced DLP rules** page and edit the **Low volume of content detected U.S. Personally Identifiable Inf**
+5. Scroll down to the **Audit or restrict activities on Windows device** section and for each activity set the corresponding action to  **Block with override**.
+![set block with override action](../media/endpoint-dlp-6-using-dlp-set-blocked-with-override.png)
+6. Scroll down to **User overrides** and set them to **On**.
+7. Choose **Require a business justification to override**. ![set allow override with business justification](../media/endpoint-dlp-5-using-dlp-set-override.png)
+ 
+8. Choose **Save**.
+9. Repeat steps 4-7 for the **High volume of content detected U.S. Personally Identifiable Inf**.
+10. Retain all your previous settings by choosing **Next** and then **Submit** the policy changes.
+11. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+12. Check Activity explorer for the event.
 
