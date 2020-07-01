@@ -20,7 +20,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn about subscriptions and licenses in Microsoft 365 for business."
-ms.date: 06/30/2020
+ms.date: 07/01/2020
 ---
 
 # Understand subscriptions and licenses in Microsoft 365 for business

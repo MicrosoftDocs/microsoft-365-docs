@@ -20,7 +20,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to add users and assign licenses to Microsoft 365 at the same time."
-ms.date: 06/30/2020
+ms.date: 07/01/2020
 ---
 
 # Add users and assign licenses at the same time
