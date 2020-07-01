@@ -26,7 +26,7 @@ description: Learn about the Microsoft Compliance Manager, a free workflow-based
 
 **In this article**: Read this article to learn what Compliance Manager is and understand its main components.
 
-**Learn about updates**: We published several updates in the April 2020 public preview release. Visit the [Compliance Manager release notes](compliance-manager-release-notes.md) to see what's new and known issues.
+**Learn about updates**: Visit the [Compliance Manager release notes](compliance-manager-release-notes.md) to see what's new and known issues.
 
 ## What is Compliance Manager
 

@@ -18,10 +18,10 @@ description: Learn how to use Compliance Manager in the Microsoft Service Trust 
 ms.custom: seo-marvel-apr2020
 ---
 
-# Microsoft Compliance Manager (Classic)
+# Microsoft Compliance Manager (classic)
 
 > [!NOTE]
-> This documentation describes a previous version of this product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new [Microsoft Compliance Score](compliance-score.md).
+> This documentation describes a previous version of this product. Users are *strongly discouraged from using this version of Compliance Manager*. **If you're using the current preview version of Compliance Manager, refer to the [Compliance Manager (preveiw) documentation](working-with-compliance-manager.md).**
 
  *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
   

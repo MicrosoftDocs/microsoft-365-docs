@@ -32,11 +32,14 @@ Compliance Manager is accessible from the Microsoft Service Trust Portal. Anyone
 2. Sign in with your Microsoft service account, which is your Office 365, Microsoft 365, or Azure Active Directory (Azure AD) user account.
 
 > [!NOTE]
-> In the Service Trust Portal, select **Compliance Manager**, which is the preview version with the most current features. Do not select **Compliance Manager (Classic)**, which contains early-release features not covered by this documentation.
+> In the Service Trust Portal, select **Compliance Manager**, which is the preview version with the most current features. Do not select **Compliance Manager (classic)**, which contains early-release features not covered by this documentation.
 
 ## Administration
 
-There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. The global administrator can assign user permissions and turn on automatic Secure Score updates.
+There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. The global administrator can:
+- [Assign user roles](#assigning-compliance-manager-roles-to-users)
+- [Turn on and off automatic Secure Score updates](#controlling-automatic-secure-score-updates)
+- [Configure user privacy settings](#configuring-user-privacy-settings)
   
 ### Assigning Compliance Manager roles to users
 
@@ -90,7 +93,7 @@ If you choose **set per action,** take these additional steps to turn on Secure 
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
 
-### User Privacy settings
+### Configuring user privacy settings
 
 Certain regulations require an organization to be able to delete user history data. To enable this, the **User Privacy Settings** functions allow administrators to:
   
@@ -527,7 +530,7 @@ Ready to use templates are available on your **Templates** dashboard. View the c
 To modify a template or create your own template, you'll use an [Excel spreadsheet](https://go.microsoft.com/fwlink/?linkid=2124865) to capture the necessary data and upload it to Compliance Manager. This spreadsheet template has a specific format and schema that must be used or it will not import into Compliance Manager.
 
 > [!IMPORTANT]
-> If you've created or customized templates in Compliance Manager before, **this process has been updated** as part of the April 2020 release of Compliance Manager (Preview). **Please review this section carefully.**
+> If you've created or customized templates in Compliance Manager before, **this process has been recently updated. Please review this section carefully.**
 
 The spreadsheet contains four tabs, three of which are required:
 
