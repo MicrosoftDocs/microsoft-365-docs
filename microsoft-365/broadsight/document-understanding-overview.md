@@ -14,6 +14,18 @@ description: "Get an overview of the Document Understanding feature in Microsoft
 
 # Document Understanding overview
 
+The first step is to create your model in the SharePoint document library in which the model will be used.
+
+1. In your SharePoint document library, select **Automate**, select **AI Builder** from the menu, and then click **Create a form processing model**.
+2. On the **Create form processing model** screen, type a name for your model in the **Name** field (for example, **Contract Renewal**), and then click **Create**. This will create a home page for this model.
+
+This will create a new content type, and its library view will become the new library default view when the model is published. You can change these settings under **Advanced settings**.
+
+> [!Note]
+> If the AI Builder menu option is not available in your document library, the feature was not enabled on this document library. You need to check with your SharePoint admin to verify.
+
+
+
 Project for the web is built on the [Microsoft Power Platform](https://powerplatform.microsoft.com/). The Power Platform consists of [PowerApps](https://powerapps.microsoft.com), [Microsoft Flow](https://preview.flow.microsoft.com), [Power BI](https://powerbi.microsoft.com), and the [Common Data Service (CDS)](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro). Project for the web  data is stored in CDS.  
 
 > [!Note] 
