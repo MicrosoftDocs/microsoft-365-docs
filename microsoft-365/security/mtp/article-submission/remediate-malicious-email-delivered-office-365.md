@@ -51,7 +51,7 @@ The selection of emails can be done in multiple ways through Threat Explorer:
 
 2. Query selection: Security operations teams can select an entire query by using the top “select all” button. The same query is shown in action center mail submission details as well. 
 
-3. Query selection with exclusion: There may be times when security operations teams decide to remediate emails by both selecting an entire query and excluding a few emails from the query, manually. To do so, an admin can use “Select All” button and scroll down to exclude a few emails, manually. The maximum number of emails the query can hold is one thousand (1,000), and the maximum number of exclusions is one hundred (100), in this case.
+3. Query selection with exclusion: There may be times when security operations teams decide to remediate emails by both selecting an entire query and excluding a few emails from the query, manually. To do so, an admin can use “Select All” check box and scroll down to exclude a few emails, manually. The maximum number of emails the query can hold is one thousand (1,000), and the maximum number of exclusions is one hundred (100), in this case.
 
 Once emails are selected from Threat Explorer, remediation creation can begin by taking direct action, or by queuing up emails for an action: 
 
