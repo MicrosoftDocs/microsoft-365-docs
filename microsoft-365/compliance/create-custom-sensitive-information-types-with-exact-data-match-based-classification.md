@@ -501,7 +501,3 @@ EDM sensitive information types for following scenarios are currently in develop
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-
-## Feedback
-
-GitHub feedback is enabled, but adding issues is only available on the public site.
