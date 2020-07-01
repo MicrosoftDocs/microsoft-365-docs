@@ -222,7 +222,7 @@ By evaluating each control using these factors, we determine the essence of the 
   
  **Threat**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**Mandatory** <br/> |**Discretionary** <br/> |
 |**Preventative** <br/> |High risk  <br/> |Medium risk  <br/> |
@@ -239,7 +239,7 @@ Threat refers to anything that poses a risk to the fundamental, universally-acce
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**Internal**<br/>||**External**<br/>||||
+|<br>|**Internal**<br/>|<br>|**External**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*Malicious*<br/>|*Accidental*<br/>|*Malicious*<br/>|*Accidental*<br/>|||
 |**Confidentiality**<br/>|(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)|
