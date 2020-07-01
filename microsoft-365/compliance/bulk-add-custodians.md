@@ -40,7 +40,7 @@ For Advanced eDiscovery cases that involve a lot of custodians, you can import m
 
 ## Custodian CSV file
 
-After you download the CSV template, you can add custodians and their data source in each row. Be sure not to change the column names in the the header row.
+After you download the CSV template, you can add custodians and their data source in each row. Be sure not to change the column names in the header row.
 
 | Column name|Description|
 |:------- |:------------------------------------------------------------|
