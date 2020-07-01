@@ -180,8 +180,20 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
      - **Restrict the user from sending mail**: Email notifications are sent, the user is added to the **[Restricted Users]<https://sip.protection.office.com/restrictedusers>** portal in the Security & Compliance Center, and the user can't send email until they're removed from the **Restricted Users** portal by an admin. After an admin removes the user from the list, the user won't be restricted again for that day. For instructions, see [Removing a user from the Restricted Users portal after sending spam email](removing-user-from-restricted-users-portal-after-spam.md).
 
      - **No action, alert only**: Email notifications are sent.
+6. (Optional) Expand **Automatic Forwarding** section to configure controls over how automatic forwarding by users is controlled.
 
-6. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
+   > [!NOTE]
+   > These settings are only applicable to cloud-based mailboxes.
+   
+   - **Automatic Forwarding**
+  
+      Select one of the options to control how automatic forwarding is handled.
+    
+      - **Automatic**: Default setting that allows the system to control automatic forwarding with automatic forwarding disabled by default.
+      - **On**: External forwarding is enabled within the policy without restriction.
+      - **Off**: External forwarding is disabled and will be blocked
+
+7. (Required) Expand the **Applied to** section to identify the internal senders that the policy applies to.
 
     You can only use a condition or exception once, but you can specify multiple values for the condition or exception. Multiple values of the same condition or exception use OR logic (for example, _\<sender1\>_ or _\<sender2\>_). Different conditions or exceptions use AND logic (for example, _\<sender1\>_ and _\<member of group 1\>_).
 
@@ -195,7 +207,7 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
     - **Except if**: To add exceptions for the rule, click **Add a condition** three times to see all of the available exceptions. The settings and behavior are exactly like the conditions.
 
-7. When you're finished, click **Save**.
+8. When you're finished, click **Save**.
 
 ## Use the Security & Compliance Center to view outbound spam policies
 
@@ -512,3 +524,5 @@ For detailed syntax and parameter information, see [Remove-HostedOutboundSpamFil
 [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Anti-spam protection FAQ](anti-spam-protection-faq.md)
+
+[Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md)
