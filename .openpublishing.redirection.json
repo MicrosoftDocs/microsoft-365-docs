@@ -321,16 +321,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "microsoft-365/compliance/gdpr-breach-Windows.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "microsoft-365/compliance/gdpr-dsr-Windows.md",
-      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/enterprise/toc.json",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "microsoft-365/security/mtp/index.md",
       "redirect_url": "microsoft-threat-protection",
       "redirect_document_id": false
