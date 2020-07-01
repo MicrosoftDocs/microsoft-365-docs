@@ -77,7 +77,7 @@ A retain-only policy retains all versions of a document in a SharePoint site col
 > [!NOTE]
 > The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
 
-### When a user leaves the organization 
+## When a user leaves the organization 
 
 **SharePoint**:
 
@@ -88,8 +88,6 @@ When a user leaves your organization, any content created by that user is not af
 If a user leaves your organization, any files that are subject to a retention policy or has a retention label will remain for the duration of the policy or label. During that time period, all sharing access continues to work. When the retention period expires, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin. If a document is marked by a retention policy as a record, it will not be deleted until the retention period is over, after which time the content is permanently deleted. 
 
 ## How to configure a retention policy for SharePoint and OneDrive
-
-See [Create and configure retention policies](create-retention-policies.md).
 
 Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select one of the following options:
 

@@ -99,7 +99,7 @@ As you manage your team site, you may have to add or remove users. Here's inform
   
 View a video on groups with [Understand and manage groups](https://support.microsoft.com/office/9c1037b7-de0b-41cd-b8f0-79a95aac854d). 
   
-To add users to a Microsoft 365 group, see [Add users individually or in bulk to Microsoft 365 - Admin Help](../add-users/add-users.md).
+To add users to a Microsoft 365 group, see [Add users and assign licenses at the same time](../add-users/add-users.md).
   
 Learn how to handle access requests with [Set up and manage access requests](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3).
   

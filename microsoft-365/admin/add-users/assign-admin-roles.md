@@ -105,9 +105,9 @@ Use the following instructions to assign roles to tens of users.
 ::: moniker range="o365-worldwide"
 
 
-## Didn't work for you?
+## Check your permissions
 
-You might not have the correct permissions and so you don't have access to assign admin roles to other users. Ask another admin to assign roles for you.
+You might not have the correct permissions to assign admin roles to other users. Check to make sure if you the correct permissions or ask another admin to assign roles for you.
 
 ::: moniker-end
 
@@ -115,8 +115,8 @@ You might not have the correct permissions and so you don't have access to assig
 
 [About Microsoft 365 admin roles](about-admin-roles.md)
 
+[Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles)
+
 [Assign roles to user accounts with PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-roles-to-user-accounts-with-office-365-powershell)
 
 [Authorize or remove partner relationships](../misc/add-partner.md)
-
-[Add an alternative email address using the Exchange admin center](https://docs.microsoft.com/Exchange/recipients/user-mailboxes/email-addresses?view=exchserver-2019#add-an-email-address-to-a-user-mailbox)
