@@ -54,7 +54,7 @@ The table below shows how each [Azure AD role](https://docs.microsoft.com/azure/
 | **Assign users**| Global administrator | Portal admin | 
 
 > [!NOTE]
-> When you go from Compliance Score to Compliance Manager to complete a task (for example, to manage assessments), your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager. You won't need to re-enter your credentials.
+> When you go from Compliance Score to Compliance Manager to complete a task during public preview, your browser will open a new tab and a dialog box appears. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select **Sign In** to access Compliance Manager. You won't need to re-enter your credentials.
 
 ## Configure automatic Secure Score updates
 
