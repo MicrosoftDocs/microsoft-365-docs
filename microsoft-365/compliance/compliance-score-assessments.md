@@ -182,7 +182,7 @@ To view a control’s details, select it from its row in the table. The control 
 Select an improvement action from the list to drill into the improvement action’s details page. The details pages shows test status, implementation notes, and launch into the recommended solution.
 
 #### Learn more
-[Understand how controls are tracked and scored by Compliance Score.](compliance-score-methodology.md#control-types-and-points)
+[Understand how controls and improvement actions are tracked and scored by Compliance Score.](compliance-score-methodology.md)
 
 ## Export an assessment report
 
