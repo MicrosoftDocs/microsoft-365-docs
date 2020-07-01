@@ -113,21 +113,21 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
      To enable this setting:
 
-     a. Select the check box to enable the setting.
+     1. Select the check box to enable the setting.
 
-     b. Click **Add people**. In the **Add or remove recipients** flyout that appears:
+     1. Click **Add people**. In the **Add or remove recipients** flyout that appears:
 
-     c. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;) or one recipient per line.
+     1. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;) or one recipient per line.
 
-     d. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the recipients.
+     1. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the recipients.
 
         Repeat these steps as many times as necessary.
 
         The recipients you added appear in the **Recipient list** section on the flyout. To delete a recipient, click ![Remove button](../../media/scc-remove-icon.png).
 
-     e. When you're finished, click **Save**.
+     1. When you're finished, click **Save**.
 
-     To disable this setting, clear the check box.
+        To disable this setting, clear the check box.
 
    - **Notify specific people if a sender is blocked due to sending outbound spam**:
 
@@ -411,7 +411,8 @@ For detailed syntax and parameter information, see [Get-HostedOutboundSpamFilter
 
 The same settings are available when you modify a malware filter policy in PowerShell as when you create the policy as described in the [Step 1: Use PowerShell to create an outbound spam filter policy](#step-1-use-powershell-to-create-an-outbound-spam-filter-policy) section earlier in this topic.
 
-**Note**: You can't rename an outbound spam filter policy (the **Set-HostedOutboundSpamFilterPolicy** cmdlet has no _Name_ parameter). When you rename an outbound spam policy in the Security & Compliance Center, you're only renaming the outbound spam filter _rule_.
+> [!NOTE]
+> You can't rename an outbound spam filter policy (the **Set-HostedOutboundSpamFilterPolicy** cmdlet has no _Name_ parameter). When you rename an outbound spam policy in the Security & Compliance Center, you're only renaming the outbound spam filter _rule_.
 
 To modify an outbound spam filter policy, use this syntax:
 
@@ -475,11 +476,11 @@ This example sets the priority of the rule named Marketing Department to 2. All 
 Set-HostedOutboundSpamFilterRule -Identity "Marketing Department" -Priority 2
 ```
 
-**Notes**:
-
-- To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedOutboundSpamFilterRule** cmdlet instead.
-
-- The outbound default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.
+> [!NOTE]
+> 
+> - To set the priority of a new rule when you create it, use the _Priority_ parameter on the **New-HostedOutboundSpamFilterRule** cmdlet instead.
+>
+> - The outbound default spam filter policy doesn't have a corresponding spam filter rule, and it always has the unmodifiable priority value **Lowest**.
 
 ### Use PowerShell to remove outbound spam filter policies
 
