@@ -250,7 +250,7 @@ If you are removing a reseller relationship the **Delete** option is grayed out,
 
 You can't remove a reseller relationship yourself.
   
-If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
+You will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   
 ::: moniker-end
 

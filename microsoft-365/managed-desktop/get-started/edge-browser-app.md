@@ -1,5 +1,5 @@
 ---
-title: New Microsoft Edge app
+title: New Microsoft Edge
 description:  
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
