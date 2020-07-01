@@ -19,7 +19,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to move users between subscriptions."
-ms.date: 06/30/2020
+ms.date: 07/01/2020
 ---
 
 # Move users to a different subscription
