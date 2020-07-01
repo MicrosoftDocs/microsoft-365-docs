@@ -221,7 +221,7 @@
               href: ./mtp/tickets.md
 
 
-    - name: Office 365 Advanced Threat Protection
+    - name: Office 365 security
       items: 
         - name: Get started
           items: 
@@ -370,7 +370,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: View information about malicious files
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Advanced Threat Protection
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items: 
             - name: See what's new
