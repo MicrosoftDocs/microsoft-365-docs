@@ -18,7 +18,7 @@ description: "Design customization Microsoft Compliance Score by creating assess
 
 # Customize Compliance Score (preview) with assessments
 
-**In this article:** Learn how to customize Compliance Score by setting up a ready to use **assessment**. Read about modifying the **template** for assessment to suit your organization’s needs, and creating your own assessment. This article also explains how to organize assessments into **groups**, working with **controls**, and exporting assessment **reports**.
+**In this article:** Learn how to customize Compliance Score by setting up ready to use **assessments**. Read how to modify the **template** for an assessment and create your own Custom Assessments to suit your organization’s needs. This article also explains how to organize assessments into **groups**, work with **controls**, and export assessment **reports**.
 
 ## Introduction to assessments
 
@@ -61,7 +61,7 @@ You have the ability to modify Compliance Score templates for assessments in ord
 
 **To modify the template of an assessment**, follow these instructions:
 
-1. View the list of available templates in Compliance Score to determine which one you want to modify.
+1. View the list of available [templates](compliance-score-templates.md) in Compliance Score to determine which one you want to modify.
 2. See the [Compliance Manager instructions to customize a template using the extension process](working-with-compliance-manager.md#customize-a-template-through-the-extension-process).
 3. Once you’ve created your template and imported it into Compliance Manger, you can then create your new assessment in Compliance Score. Follow the process of building your assessment using the [assessment creation wizard](#create-an-assessment).
 

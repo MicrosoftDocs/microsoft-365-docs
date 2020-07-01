@@ -26,12 +26,14 @@ ms.custom: seo-marvel-apr2020
 
 The Compliance Score dashboard displays a score that measures your progress in completing improvement actions within controls. Each action has a different impact on your score, depending on the potential risks involved. Your score can help prioritize which action to focus on to improve your overall compliance posture.
 
-The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test, or it doesn't. Assigned points are added to Compliance Score when the control has:
+The displayed Compliance Score values for the control are applied *in their entirety* to your total score on a pass/fail basis. Either the control is implemented and passes the subsequent assessment test, or it doesn't. 
+
+Points are added to your compliance score when the control has:
 
 - **Implementation Status** equals **Implemented** or **Alternative Implementation**, and
 - **Test Result** equals **Passed**.
 
-The sum of points earned by taking improvement actions is the control score. The sum of your control scores is the assessment score. The sum of your assessment scores is your overall compliance score.
+A control score is the sum of points earned by taking improvement actions. The sum of your control scores is the assessment score. **The sum of your assessment scores is your overall compliance score.**
 
 ## Initial score based on Microsoft 365 data protection baseline
   

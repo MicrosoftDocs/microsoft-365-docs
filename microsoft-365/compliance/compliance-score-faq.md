@@ -32,7 +32,7 @@ Go to the [Microsoft 365 compliance center](https://compliance.microsoft.com/) a
 
 ## What roles or permissions are needed to use Compliance Score?
 
-Compliance Score uses a role-based access control (RBAC) permission model, and the actions you can perform depend on the type of role assigned to you. Your organization's Microsoft 365 global admin is the person who can perform the setup functions and administer roles in Compliance Score. At a minimum, users need the **Azure AD global reader** role to read data in Compliance Score. Learn more about permissions, roles, and setup procedures at [Compliance Score setup](compliance-score-setup.md).
+Compliance Score uses a role-based access control (RBAC) permission model. The actions you can perform depend on the type of role assigned to you. Your organization's Microsoft 365 global admin is the person who can perform the setup functions and administer roles in Compliance Score. At a minimum, users need the **Azure AD global reader** role to read data in Compliance Score. Learn more about permissions, roles, and setup procedures at [Compliance Score setup](compliance-score-setup.md).
 
 ## What is the difference between Compliance Score and Compliance Manager?
 

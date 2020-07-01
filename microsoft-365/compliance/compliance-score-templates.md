@@ -20,9 +20,11 @@ description: "Review all of the templates that are ready to use for setting up a
 
 ## Templates overview
 
-Compliance Score provides a comprehensive set of ready to use templates for creating assessments. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. New templates are added as regulations are enacted and updated.
+Compliance Score provides a comprehensive set of **templates for creating assessments**. These templates can help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data. New templates are added as regulations are enacted and updated.
 
-You can modify any of the templates below to suit your organization's needs. You can also create a Custom Assessment by creating your own template. View detailed guidance on how to [work with templates](working-with-compliance-manager.md#templates), which occurs in Compliance Manager.
+You can modify any of the templates below to suit your organization's needs. You can also create a Custom Assessment by creating your own template. 
+
+View detailed guidance on how to [work with templates](working-with-compliance-manager.md#templates), which occurs in Compliance Manager. Check this page often to see newly added templates.
 
 ## Available templates
 

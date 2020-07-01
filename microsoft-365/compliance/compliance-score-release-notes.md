@@ -18,7 +18,7 @@ description: "Release notes and known issues for Microsoft Compliance Score (pre
 
 # Microsoft Compliance Score (preview) release notes
 
-**In this article:** The public preview of [Microsoft Compliance Score](compliance-score.md) provides you with early access to upcoming functionality and updates. Check this page frequently to learn **what's new**.
+**In this article:** This page shows **what's new** in the public preview of [Microsoft Compliance Score](compliance-score.md), which provides you with early access to new functionality.
 
 ## Assessment creation and management functionality
 
