@@ -809,28 +809,28 @@
   items: 
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Compliance Score and Compliance Manager
+    - name: Compliance Score and Compliance Manager (preview)
       items: 
-        - name: Compliance Score (Preview)
+        - name: Compliance Score (preview)
           href: compliance-score.md
-        - name: Set up Compliance Score (Preview)
+        - name: Set up Compliance Score
           href: compliance-score-setup.md
-        - name: Working with Compliance Score (Preview)
-          href: working-with-compliance-score.md
-        - name: Compliance Score calculation (Preview)
+        - name: Customize Compliance Score with assessments
+          href: compliance-score-assessments.md
+        - name: Assign and perform work with improvement actions
+          href: compliance-score-improvement-actions.md
+        - name: How your score is calculated
           href: compliance-score-methodology.md
-        - name: Compliance Score release notes (Preview)
-          href: compliance-score-release-notes.md
-        - name: Compliance Score FAQ (Preview)
+        - name: Frequently asked questions (FAQ)
           href: compliance-score-faq.md
-        - name: Compliance Manager (Preview)
+        - name: Compliance Manager (preview)
           href: compliance-manager-overview.md
           items: 
-            - name: What's new in Compliance Manager (Preview)
+            - name: What's new in Compliance Manager (preview)
               href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (Preview)
+            - name: Working with Compliance Manager (preview)
               href: working-with-compliance-manager.md
-            - name: Compliance Manager (Classic)
+            - name: Compliance Manager (classic)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
