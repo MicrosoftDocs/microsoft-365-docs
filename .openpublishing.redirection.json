@@ -808,7 +808,7 @@
     {
       "source_path": "microsoft-365/business/add-users-m365b.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/add-users/add-users",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "microsoft-365/compliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp.md",
@@ -868,7 +868,7 @@
     {
       "source_path": "microsoft-365/compliance/release-notes-ediscovery20.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/overview-ediscovery-20",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
