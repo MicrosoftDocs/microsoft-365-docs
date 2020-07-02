@@ -14,8 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW 
-description: "You can add non-custodial data sources to an Advanced eDiscovery case and place a hold on the data source. Non-custodial data sources are re-indexed, so any content that was deemed as partially indexed is re-processed to make it fully and quickly searchable." 
+description: "You can add non-custodial data sources to an Advanced eDiscovery case and place a hold on the data source. Non-custodial data sources are reindexed, so any content that was deemed as partially indexed is reprocessed to make it fully and quickly searchable." 
 ---
 
 # Add non-custodial data sources to an Advanced eDiscovery case
@@ -42,7 +41,7 @@ Follow these steps to add and manage non-custodial data sources in an Advanced e
 
    Each non-custodial data source that you added is listed on the **Data sources** page.
 
-   Also, a job named *Re-indexing non-custodial data* is created and displayed on the **Jobs** tab of the case. After the job is created, the Advanced indexing process in initiated and the data sources are re-indexed.
+   Also, a job named *Reindexing non-custodial data* is created and displayed on the **Jobs** tab of the case. After the job is created, the Advanced indexing process in initiated and the data sources are reindexed.
 
 ## Managing the hold on non-custodial data sources
 

@@ -488,15 +488,19 @@
           href: overview-ediscovery-20.md
         - name: Get started with Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Work with custodians
+        - name: Work with custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
             - name: Add custodians to a case
               href: add-custodians-to-case.md
+            - name: Bulk-add custodians to a case
+              href: bulk-add-custodians.md
             - name: Manage custodians
               href: manage-new-custodians.md
             - name: View custodian activity
               href: view-custodian-activity.md
+            - name: Add non-custodial data sources to a case
+              href: non-custodial-data-sources.md
         - name: Work with communications
           href: managing-custodian-communications.md
           items: 
