@@ -161,6 +161,10 @@
       href: technical-reference-details-about-encryption.md
     - name: TLS 1.0 and 1.1 deprecation for Office 365
       href: tls-1.0-and-1.1-deprecation-for-office-365.md
+    - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
+      href: tls-1-2-in-office-365-gcc.md
+    - name: TLS 1.2 in Office 365
+      href: prepare-tls-1.2-in-office-365.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
