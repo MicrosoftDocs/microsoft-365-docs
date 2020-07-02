@@ -1,5 +1,7 @@
 ---
 title: "Attributes for information barrier policies"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Use this article as a reference for various attributes you can use in information barrier policies."
+description: This is a reference article on the Azure Active Directory user account attributes that you use to define information barrier segments.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Attributes for information barrier policies
@@ -20,7 +23,7 @@ Certain attributes in Azure Active Directory can be used to segment users. Once 
 This article describes how to use attributes with information barriers, and it provides a list of attributes that can be used. To learn more about information barriers, see the following resources:
 - [Information barriers](information-barriers.md)
 - [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
-- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md.md)
+- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md)
 
 ## How to use attributes in information barrier policies
 
@@ -81,10 +84,10 @@ The following table lists the attributes that you can use with information barri
 |StreetAddress |StreetAddress |
 |TargetAddress |ExternalEmailAddress |
 |UsageLocation |UsageLocation |
-|UserPrincipalName	|UserPrincipalName	|
-|Mail	|WindowsEmailAddress	|
-|Description	|Description	|
-|MemberOf	|MemberOfGroup	|
+|UserPrincipalName    |UserPrincipalName    |
+|Mail    |WindowsEmailAddress    |
+|Description    |Description    |
+|MemberOf    |MemberOfGroup    |
 
 ## Related topics
 

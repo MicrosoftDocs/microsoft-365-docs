@@ -1,5 +1,7 @@
 ---
 title: "Advanced indexing of data for an investigation"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use Advanced indexing to make sure your search captures all the data you want to investigate.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Advanced indexing of data for an investigation
 
-Content in the live system can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered. When you are dealing with high risk data spill, you want to make sure that your search captured all data that you want to investigate. When a person of interest is added to a Data investigation, any content in Office 365 that was deemed as partially indexed is re-processed to make it fully searchable. This process is called *Advanced indexing*. 
+Content in the live system can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered. When you are dealing with high risk data spill, you want to make sure that your search captured all data that you want to investigate. When a person of interest is added to a Data investigation, any content that was deemed as partially indexed is re-processed to make it fully searchable. This process is called *Advanced indexing*. 
 
-To learn more about processing support in Office 365 and partially indexed items, see:
+To learn more about processing support and partially indexed items, see:
 
 - [Supported file types in Data Investigations](supported-filetypes-datainvestigations.md)
 

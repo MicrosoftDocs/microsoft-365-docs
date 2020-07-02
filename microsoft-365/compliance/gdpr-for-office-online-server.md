@@ -1,5 +1,8 @@
 ---
 title: "GDPR for Office Online Server and Office Web Apps Server"
+description: In this article, you will learn about how to address GDPR requirements for Office Online Server and Office Web Apps Server.
+f1.keywords:
+- NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
@@ -7,7 +10,9 @@ audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-description: "Learn about how to address GDPR requirements on-premises Exchange Server."
+ms.custom:
+- seo-marvel-mar2020
+titleSuffix: Microsoft GDPR
 ---
 
 # GDPR for Office Web Apps Server and Office Online Server
@@ -16,7 +21,7 @@ Office Online Server and Office Web Apps Server telemetry data is stored in the 
 
 Every log line contains a CorrelationID. Related log lines share the same CorrelationID. Each CorrelationID is tied to a single SessionID, and one SessionID may be related to many CorrelationIDs. Each SessionID may be related to a single UserID, although some sessions can be anonymous and therefore not have an associated UserID. In order to determine what data is associated with a particular user, it is therefore possible to map from a single UserID to the SessionIDs associated with that user, from those SessionIDs to the associated CorrelationIDs, and from those CorrelationIDs to all the logs in those correlations. See the below diagram for the relationship between the different IDs.
 
-![](media/gdpr-for-office-online-server-image1.jpg)
+![](../media/gdpr-for-office-online-server-image1.jpg)
 
 ## Gathering Logs
 

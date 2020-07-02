@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
+# Spain Esquema Nacional de Seguridad (ENS) High-Level Security Measures
 
 ## Spain ENS overview
 
@@ -30,8 +33,6 @@ The framework prescribes an accreditation process that is voluntary for systems 
 ## Microsoft and Spain ENS high-level security measures
 
 Microsoft Azure and Microsoft Office 365 have gone through a rigorous assessment by BDO, an independent auditor, which issued an official statement of their compliance. BDO reports that the security measures in both services, and their information systems and data processing facilities, comply at the high level with RD 3/2010 without requiring any corrective measures. Microsoft was the first hyperscale cloud service provider to receive this certification in Spain.
-
-Learn about the benefits of Spain ENS High-Level Security Measures on the Microsoft Cloud: [Download the Spain ENS backgrounder](https://aka.ms/spainens-backgrounder)
 
 ## Microsoft in-scope cloud services
 
@@ -71,7 +72,3 @@ If your organization is using Azure or Office 365, you can use ENS Microsoft aud
 - Esquema Nacional de Seguridad of Spain ([Spanish](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=sp#.Vwxp82mcGM8) and [English](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/pae_Seguridad_Inicio/pae_Esquema_Nacional_de_Seguridad.html?idioma=en#.VwvcgmmcGM9))
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/3/2/23208181-BA86-4011-8B4A-3CA7E8E383A1/ENS-Spain-Compliance.pdf).

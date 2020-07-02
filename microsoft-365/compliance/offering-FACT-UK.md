@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Federation Against Copyright Theft (FACT)
+# Federation Against Copyright Theft (FACT)
 
 ## FACT overview
 
@@ -24,8 +27,6 @@ Copyrighted content comes in many forms — pictures, videos, music, contracts, 
 To underscore Microsoft’s commitment to protect customers when they entrust such assets to the public cloud, Microsoft Azure has been certified by the Federation Against Copyright Theft (FACT) in the United Kingdom. FACT certification is based on ISO 27001, focusing on physical and digital security, staff screening and training, and access control. The FACT content protection and security program draws on expertise across law enforcement, technology partners, and industry associations to fight copyright infringement and content theft, such as peer-to-peer sharing, illegal disc duplication, and signal theft.
 
 Based on the voluntary submission by Microsoft to a FACT audit, the FACT auditor certified Azure. Azure was the first multi-tenant public cloud service to achieve FACT certification, adding to Azure’s portfolio of media-related certifications, including CDSA certification and a formal assessment by the MPAA.
-
-Learn about the benefits of FACT on the Microsoft Cloud: [Download the FACT backgrounder](https://aka.ms/fact-backgrounder)
 
 ## Microsoft in-scope cloud services
 
@@ -54,7 +55,3 @@ Compliance with FACT is voluntary, but Microsoft elected to carry out an indepen
 - [MPAA Assessment](offering-mpaa.md)
 - [Azure Responses to CSA CAIQ v3.0.1](https://aka.ms/csacaiqresponses)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/B/B/DBBA0998-F08A-4CA8-B668-41A5EE0CFBED/FACT-Compliance.pdf).

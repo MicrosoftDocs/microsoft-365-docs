@@ -1,5 +1,7 @@
 ---
 title: "Service assurance in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,6 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - BCS160
+- MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: "Download third-party audits, find out how Microsoft keeps customer data safe, and know how you can comply with ISO, HIPAA, FINRA, and FedRAMP when you use Office 365."
 ---
@@ -37,12 +40,12 @@ You can also find out how Office 365 can help customers comply with standards, l
 
  **New customers, and customers evaluating Microsoft online services** can access Service assurance which is included with Office 365 Enterprise E3 and E5 plans (both trial and paid subscriptions). If you don't have one of these plans and want to try Service assurance, you can [sign-up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
- **Existing customers of Office 365 for business** can access Service assurance. If you're the Office 365 global admin (sometimes called company administrator) for your organization, you'll already have access to Service assurance, and you can onboard others. If you're not the Office 365 global admin for your organization, and you need access to Service assurance, ask your admin to add you to the Service Assurance User role group. 
+ **Existing customers of Microsoft 365 for business** can access Service assurance. If you're the global admin (sometimes called company administrator) for your organization, you'll already have access to Service assurance, and you can onboard others. If you're not the global admin for your organization, and you need access to Service assurance, ask your admin to add you to the Service Assurance User role group. 
   
  **O365 Subscription Members** can access the Service assurance section in the Office365 Protection Center by default if Service assurance roles-based access has not been implemented in your subscription. Service assurance provides reports and documents that describe Microsoft's security practices for customer data that's stored in Office 365. It also provides independent third-party audit reports on Office 365. 
   
 > [!NOTE]
-> Note: If your company has implemented Service Assurance Roles-Based Access in your Office 365 Subscription (which could be if your organization has been provided access to custom reports), and you need access to Service assurance but it is not included in the left pane of the Security & Compliance Center, ask your Office 365 administrator to add you to the Service Assurance User role group on the **Permissions** page. For more information, see Onboard other Service assurance users or groups. 
+> If your company has implemented Service Assurance Roles-Based Access in your Microsoft 365 Subscription (which could be if your organization has been provided access to custom reports), and you need access to Service assurance but it is not included in the left pane of the Security & Compliance Center, ask your Office 365 administrator to add you to the Service Assurance User role group on the **Permissions** page. For more information, see Onboard other Service assurance users or groups. 
   
  **Service assurance roles-based access-provisioned users** If your company has implemented Service assurance roles-based access, you can provide Service assurance access to all security and compliance personnel including information security, risk management, compliance, and audit teams and personnel within your organization. For details, see [Onboard other Service assurance users or groups](service-assurance.md#addother).
   
@@ -50,7 +53,7 @@ Service assurance is accessible by using the Security & Compliance Center. Here'
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account. 
+2. Sign in using your work or school account. 
     
 3. In the left pane, select **Service assurance**. Next, [Choose your industry and regional settings](service-assurance.md#Chooseyourindustryregional) and [Onboard other Service assurance users or groups](service-assurance.md#addother).
     
@@ -64,7 +67,7 @@ When you access Service assurance for the first time, the first step is to confi
   
 1. After you access Service assurance, select **Settings** and the Region and industry settings page displays as shown in the following screenshot. 
     
-    ![Shows the Protection center settings page.](media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
+    ![Shows the Protection center settings page.](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
 2. On the **Settings** page, select the down arrow next to **Region** and check the appropriate regions for your organization. 
     
@@ -79,15 +82,15 @@ To review and download content, select an option from the navigation pane:
   
 - **Compliance reports** to view independent audits and assessments of Office 365 and other Microsoft cloud services as shown in the following screen shot. 
     
-    ![Shows the Service assurance page: Service Compliance Reports.](media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
+    ![Shows the Service assurance page: Service Compliance Reports.](../media/149f2181-a558-4963-85e5-8d5ebc7cdac8.png)
   
 - **Trust documents** to view information about how Microsoft operates Office 365 as shown in the following screen shot. 
     
-    ![Shows the Service assurance page: Trust documents provided by Microsoft](media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
+    ![Shows the Service assurance page: Trust documents provided by Microsoft](../media/5dd4e89a-25a2-45e7-8d6c-a5c5b9237327.png)
   
 - **Audited controls** to view information about how Office 365 controls meet security, compliance, and privacy requirements, as shown in the following screen shot. 
     
-    ![Shows the Service assurance audited controls screen.](media/4baf252b-603d-45e0-af12-32616154df65.png)
+    ![Shows the Service assurance audited controls screen.](../media/4baf252b-603d-45e0-af12-32616154df65.png)
   
 Select the report you want to download, and select **Save** to download it to your computer. For Audited controls, select the report you want and then select **Download**. The table below describes the reports you can find on each Service assurance page. 
   
@@ -109,15 +112,15 @@ For accessing default reports that are generally available across all Microsoft 
   
 1. In the Security & Compliance Center, select **Permissions** in the left pane as shown in the following screenshot. 
     
-    ![Security &amp; Compliance Permissions menu](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
+    ![Security &amp; Compliance Permissions menu](../media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
 2. In the right pane, select **Service Assurance User**, and then select **Edit Role Group**, and under the **Members** section, select **Edit** to add members to the Service Assurance User role as shown in the following screenshot. 
     
-    ![Service Assurance User - Add](media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
+    ![Service Assurance User - Add](../media/c8b1978e-9b6e-4200-860a-a1704f8e2355.png)
   
 3. In the next dialog box, search for and choose individuals or groups that need to view Service assurance compliance reports and trust resources, then select **Add** for each selection you make and click the **X** in the upper right corner of the pane when you're finished. 
     
-    ![Service Assurance User - Choose user](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
+    ![Service Assurance User - Choose user](../media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
 4. Every user or group that you added to the Service Assurance User role can now find Service assurance and download reports and other documents in the Security & Compliance Center.
     
@@ -126,7 +129,7 @@ Return to the **Permissions** page at any time to add more users, or remove exis
 ## Get help with Service assurance
 <a name="addother"> </a>
 
-[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
   
 ## Frequently Asked Questions
 <a name="addother"> </a>

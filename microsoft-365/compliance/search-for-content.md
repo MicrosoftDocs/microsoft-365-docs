@@ -1,5 +1,7 @@
 ---
-title: "Search for content in Office 365"
+title: "Search for content"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,9 +15,9 @@ ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: "Use the Content Search eDiscovery tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business."
 ---
 
-# Search for content in Office 365
+# Search for content
 
-Use the Content Search tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in Office 365 collaboration tools such as Microsoft Teams and Office 365 Groups.
+Use the Content Search tool in the Security & Compliance Center to quickly find email in Exchange mailboxes, documents in SharePoint sites and OneDrive locations, and instant messaging conversations in Skype for Business. You can use the content search tool to search for email, documents, and instant messaging conversations in collaboration tools such as Microsoft Teams and Microsoft 365 Groups.
   
 ## Search for content
 
@@ -29,11 +31,11 @@ The first step is to starting using the Content Search tool to choose content lo
     
 - [Run an ID list search](csv-file-for-an-id-list-content-search.md) to search for specific email messages 
     
-- [Search cloud-based mailboxes ](search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Office 365
+- [Search cloud-based mailboxes ](search-cloud-based-mailboxes-for-on-premises-users.md) for on-premises users in Microsoft 365
 
 - [View keyword statistics](view-keyword-statistics-for-content-search.md) for the results of a search and then refine the query if necessary 
     
-- [Search for third-party data](use-content-search-to-search-third-party-data-that-was-imported.md) that your organization has imported to Office 365 
+- [Search for third-party data](use-content-search-to-search-third-party-data-that-was-imported.md) that your organization has imported to Microsoft 365 
     
 - [Bulk edit](bulk-edit-content-searches.md) the query and content locations for multiple searches 
     

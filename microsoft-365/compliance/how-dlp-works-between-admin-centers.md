@@ -1,5 +1,7 @@
 ---
-title: "How DLP works between the Security & Compliance Center and Exchange admin center"
+title: How DLP works with Security & Compliance Center & Exchange admin center
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,6 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: "Learn how DLP in the Security & Compliance Center works with DLP and mail flow rules (transport rules) in the Exchange admin center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # How DLP works between the Security & Compliance Center and Exchange admin center
@@ -27,7 +30,7 @@ In Office 365, you can create a data loss prevention (DLP) policy in two differe
     
 DLP polices created in these admin centers work side by side - this topic explains how.
   
-![DLP pages in Security and Compliance Center and Exchange admin center](media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
+![DLP pages in Security and Compliance Center and Exchange admin center](../media/d3eaa7e7-3b16-457b-bd9c-26707f7b584f.png)
   
 ## How DLP in the Security & Compliance Center works with DLP and mail flow rules in the Exchange admin center
 

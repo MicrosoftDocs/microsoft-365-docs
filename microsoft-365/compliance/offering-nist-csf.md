@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
+# National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF)
 
 ## NIST CSF overview
 
@@ -21,16 +24,16 @@ The National Institute of Standards and Technology (NIST) promotes and maintains
 
 The main priorities of the FICIC were to establish a set of standards and practices to help organizations manage cybersecurity risk, while enabling business efficiency. The NIST Framework addresses cybersecurity risk without imposing additional regulatory requirements for both government and private sector organizations.
 
-The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
+The FICIC references globally recognized standards including NIST SP 800-53 found in Appendix A of the NIST’s [Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11). Each control within the FICIC framework is mapped to corresponding NIST 800-53 controls within the FedRAMP Moderate Baseline.
 
 ## Microsoft and the NIST CSF
 
 NIST Cybersecurity Framework (CSF) is a voluntary Framework that consists of standards, guidelines, and best practices to manage cybersecurity-related risks. Microsoft Cloud services have undergone independent, third-party FedRAMP Moderate and High Baseline audits and are certified according to the FedRAMP standards. Also, through a validated assessment performed by HITRUST, a leading security and privacy standards development and accreditation organization, Office 365 is certified to the objectives specified in the NIST CSF.
 
-Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Manager and our Azure Security and Compliance Blueprint:
+Learn how to accelerate your NIST Cybersecurity Framework deployment with Compliance Score and our Azure Security and Compliance Blueprint:
 
-- [Download the Azure Security and Compliance Blueprint - NIST CSF Risk Assessment Checklist](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=11e61716-11ab-4b11-9a9a-434b33a62ff9&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_NIST_CSF_Blueprint)
-- [Learn more about the NIST CSF assessment for Office 365 in Compliance Manager](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
+- [Overview of the NIST SP 800-53 R4 blueprint sample](https://docs.microsoft.com/azure/governance/blueprints/samples/nist-sp-800-53-rev4/)
+- [Learn more about the NIST CSF assessment for Office 365 in Compliance Score](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/New-NIST-CSF-and-CSA-CCM-assessments-available-in-Compliance/ba-p/218554)
 
 ## Microsoft in-scope cloud services
 
@@ -50,11 +53,11 @@ The NIST Cybersecurity Framework (CSF) standard can be challenging in the cloud.
 
 - [Start using the Azure NIST CSF Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST)
 
-## Perform risk assessment on Office 365 using NIST CSF in Compliance Manager
+## Perform risk assessment on Office 365 using NIST CSF in Compliance Score
 
-Cybersecurity remains a critical management issue in the era of digital transforming. To help you implement and verify security controls for your Office 365 tenant, Microsoft provides recommended customer actions in the NIST CSF Assessment in Compliance Manager.
+Cybersecurity remains a critical management issue in the era of digital transforming. To help you implement and verify security controls for your Office 365 tenant, Microsoft provides recommended customer actions in the NIST CSF Assessment in Compliance Score.
 
-- [Start using Compliance Manager](https://aka.ms/compliancemanager)
+- [Start using Compliance Score](compliance-score.md)
 
 ## Frequently asked questions
 
@@ -80,25 +83,25 @@ According to the [Department of Homeland Security](https://www.dhs.gov/critical-
 
 **What are the in-scope services for Office 365?**
 
-The in-scope services of NIST CSF certification are Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive for Business, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus in Office 365 Multi-tenant cloud and Office 365 GCC.
+The in-scope services of NIST CSF certification are Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive for Business, Office Online, MyAnalytics, Microsoft Teams, Microsoft 365 Apps for enterprise in Office 365 Multi-tenant cloud and Office 365 GCC.
 
 > [!NOTE]
-> Office 365 ProPlus enables access to various cloud services, such as Roaming Settings, Licensing, and OneDrive consumer cloud storage, and may enable access to additional cloud services in the future. Roaming Settings and Licensing support the standards for HITRUST. OneDrive consumer cloud storage does not, and other cloud services that are accessible through Office 365 ProPlus and that Microsoft may offer in the future also may not, support these standards.*
+> Microsoft 365 Apps for enterprise enables access to various cloud services, such as Roaming Settings, Licensing, and OneDrive consumer cloud storage, and may enable access to additional cloud services in the future. Roaming Settings and Licensing support the standards for HITRUST. OneDrive consumer cloud storage does not, and other cloud services that are accessible through Microsoft 365 Apps for enterprise and that Microsoft may offer in the future also may not, support these standards.*
 
 **Why are some Office 365 services not in the scope of this certification?**
 
 Microsoft provides the most comprehensive offerings compared to other cloud service providers. To keep up with our broad compliance offerings across regions and industries, we include services in the scope of our assurance efforts based on the market demand, customer feedback, and product lifecycle. If a service is not included in the current scope of a specific compliance offering, your organization has the responsibility to assess the risks based on your compliance obligations and determine the way you process data in that service. We continuously collect feedback from customers and work with regulators and auditors to expand our compliance coverage to meet your security and compliance needs.
 
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [NIST CSF template](https://go.microsoft.com/fwlink/?linkid=2117917) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+
 ## Resources
 
 - [Microsoft Cloud Services Authorizations](https://marketplace.fedramp.gov/index.html#/products?status=Compliant&sort=productName)
 - [Mapping Microsoft Cyber Offerings to: NIST Cybersecurity Framework (CSF), CIS Controls, ISO27001:2013 and HITRUST CSF](https://go.microsoft.com/fwlink/p/?linkid=2074025)
-- [2014 Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf)
+- [Framework for Improving Critical Infrastructure Cybersecurity](https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11)
 - [Presidential Executive Order on Strengthening the Cybersecurity of Federal Networks and Critical Infrastructure](https://www.whitehouse.gov/the-press-office/2017/05/11/presidential-executive-order-strengthening-cybersecurity-federal)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/D/3/DD302CDD-5EF9-471E-9695-BDC5EF7F44E4/NIST_CSF-Compliance.pdf).

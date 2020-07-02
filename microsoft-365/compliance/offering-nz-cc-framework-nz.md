@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: New Zealand Government Cloud Computing Security and Privacy Considerations
+# New Zealand Government Cloud Computing Security and Privacy Considerations
 
 ## New Zealand Government Cloud Computing Security and Privacy overview
 
@@ -26,8 +29,6 @@ To assist NZ government agencies in conducting consistent and robust due diligen
 Microsoft and New Zealand Government Cloud Computing Security and Privacy Considerations
 
 To help agencies undertake their analysis and evaluation of Microsoft enterprise cloud services, Microsoft New Zealand has produced a series of documents showing how its enterprise cloud services address the questions set out in the “Cloud Computing ISPC” by linking them to the standards against which Microsoft cloud services are certified. These certifications are central to how Microsoft assures both public and private sector customers that its cloud services are designed, built, and operated to effectively mitigate privacy and security risks and address data sovereignty concerns.
-
-Learn about the benefits of NZ CC Framework on the Microsoft Cloud: [Download the NZ CC framework backgrounder](https://aka.ms/nzcc-framework-backgrounder)
 
 Learn how to accelerate your NZ CC Framework deployment with our Azure Security and Compliance Blueprint: [Download Azure response to the NZ CC Framework](https://gallery.technet.microsoft.com/Response-to-GCIO-Cloud-e117bbb9)
 
@@ -56,19 +57,15 @@ If your agency is required to undertake certification and accreditation of its I
 - [Microsoft Azure compliance in the context of New Zealand security and privacy requirements](https://aka.ms/azurecompliancenewzealand)
 - [NZ Government ICT Strategy 2015](https://www.ict.govt.nz/strategy-and-action-plan/strategy/)
 - [NZ Government requirements for cloud computing](https://aka.ms/NZ-Cloud-Requirements)
-- [Cloud Computing: Information Security and Privacy Considerations (ISPC)](https://aka.ms/NZ-Cloud-Computing-Considerations)
+- [Cloud Computing: Information Security and Privacy Considerations (ISPC)](https://www.digital.govt.nz/standards-and-guidance/technology-and-architecture/cloud-services/)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Office 365: SEEMail Integration and Reference Architecture](https://download.microsoft.com/download/8/5/9/859CDCEE-D293-47D8-9B6A-670B108B48E1/Microsoft_Office_365_white_paper_EN_US.pdf) (additional Microsoft NZ guidance on cloud service adoption)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 
-## Microsoft responses to “Cloud Computing IPSC”
+## Microsoft responses to 'Cloud Computing IPSC'
 
 - [Azure](https://aka.ms/Azure-NZ-response)
 - [Dynamics 365](https://aka.ms/d365-nz-response)
 - [Intune](https://aka.ms/Intune-NZ-response)
 - [Office 365](https://aka.ms/O365-NZ-Response)
 - [Power BI](https://download.microsoft.com/download/5/1/7/51726B9B-2E76-49C4-9D4F-A36BF025CB93/Response-to-GCIO-105-questions-Power-BI.pdf)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/6/4/664E4B6F-15C6-421E-8F74-3FA468587A47/NZ_CC_Compliance_Backgrounder.pdf).

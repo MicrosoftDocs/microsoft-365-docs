@@ -1,8 +1,11 @@
 ---
-title: "Understand document similarity in Office 365 Advanced eDiscovery"
+title: "Understand document similarity in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
@@ -12,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
-description: "Review how document Similarity value, the minimal level of resemblance for two files to be considered near-duplicates, works in Office 365 Advanced eDiscovery.
-"
+description: "Review how document Similarity value, the minimal level of resemblance for two files to be considered near-duplicates, works in Advanced eDiscovery."
+ms.custom: seo-marvel-apr2020
 ---
 
-# Understand document similarity in Office 365 Advanced eDiscovery
+# Understand document similarity in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -37,20 +40,20 @@ However, document F1 may resemble document F3 at a level of only 70%, which is b
   
 The levels of resemblance are illustrated as follows:
   
-![Document similarity](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
+![Document similarity](../media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
 Assume that another document, X1, is now inserted. The resemblance between X1 and E3 is 87%. Similarly, the resemblance between X1 and F1 is 92%. As a result, EquiSet -1, EquiSet -2, and X1 are now combined into one ND set.
   
-![Document Similarity](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
+![Document Similarity](../media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   
 > [!NOTE]
 > If any two documents are assigned to one ND set, they will remain together in the same ND set, even if additional documents are added to the set or if the sets are merged. 
   
 After sets are merged, the Pivot document can change when new documents are added to a set. 
   
-## See also
+## Related topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Setting Analyze options](set-analyze-options-in-advanced-ediscovery.md)
   

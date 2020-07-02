@@ -1,5 +1,7 @@
 ---
 title: "Retry a Content Search to resolve a content location error"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,7 +14,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-description: "Use the Retry button for resolve Content Searches that have content location errors."
+description: During an investigation, you can use the Retry button to resolve Content Searches that have content location errors.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Retry a Content Search to resolve a content location error
@@ -39,7 +42,7 @@ When searching a large number of mailboxes, the search is distributed across tho
 
 Restarting the search will often result in similar errors on different servers. Instead of restarting the search, click the **Retry** button that is displayed at the top of the search results page.
 
-![Click the Retry button to resolve content location errors](media/retrycontentsearch3.png)
+![Click the Retry button to resolve content location errors](../media/retrycontentsearch3.png)
 
 This will result in the retrying the search only for the mailboxes that failed. When you retry the search, the other results that were successfully returned are retained.
 

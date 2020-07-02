@@ -6,6 +6,8 @@ manager: Laurawi
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
@@ -36,7 +38,7 @@ Before implementing the recommended identity and device access policies, there a
 | **Prepare your support team**. Have a plan in place for users that cannot complete MFA. This could be adding them to a policy exclusion group, or registering new MFA information for them. Before making either of these security-sensitive changes, you need to ensure that the actual user is making the request. Requiring users' managers to help with the approval is an effective step. | Yes | Yes | Yes | Yes |  
 | [Configure password writeback to on-premises AD](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Password writeback allows Azure AD to require that users change their on-premises passwords when a high-risk account compromise is detected. You can enable this feature using Azure AD Connect in one of two ways: either enable **Password Writeback** in the optional features screen of the Azure AD Connect setup wizard, or enable it via Windows PowerShell. |   | Yes | Yes | Yes |
 | [Enable Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/enable). Azure AD Identity Protection enables you to detect potential vulnerabilities affecting your organization’s identities and configure an automated remediation policy to low, medium, and high sign-in risk and user risk.  | Yes | Yes | Yes | Yes |
-| **Enable modern authentication** for [Exchange Online](https://support.office.com/article/Enable-or-disable-modern-authentication-in-Exchange-Online-58018196-f918-49cd-8238-56f57f38d662) and for [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern authentication is a prerequisite for using multi-factor authentication (MFA). Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. | Yes | Yes | Yes | Yes |
+| **Enable modern authentication** for [Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) and for [Skype for Business Online](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx). Modern authentication is a prerequisite for using multi-factor authentication (MFA). Modern authentication is enabled by default for Office 2016 clients, SharePoint Online, and OneDrive for Business. | Yes | Yes | Yes | Yes |
 ||||||
 
 
@@ -63,7 +65,7 @@ The following email clients support modern authentication and conditional access
 
 |Platform|Client|Version/Notes|
 |:-------|:-----|:------------|
-|**Windows**|Outlook|2016, 2013 [Enable modern authentication](https://support.office.com/article/Enable-Modern-Authentication-for-Office-2013-on-Windows-devices-7dc1c01a-090f-4971-9677-f1b192d6c910), [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
+|**Windows**|Outlook|2016, 2013 [Enable modern authentication](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication), [Required updates](https://support.office.com/article/Outlook-Updates-472c2322-23a4-4014-8f02-bbc09ad62213)|
 |**iOS**|Outlook for iOS|[Latest](https://itunes.apple.com/us/app/microsoft-outlook-email-and-calendar/id951937596?mt=8)|
 |**Android**|Outlook for Android|[Latest](https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en)|
 |**macOS**|Outlook|2016|
@@ -85,13 +87,13 @@ The following clients are recommended when a secure documents policy has been ap
 |macOS|Public Preview|Public Preview|N/A|N/A|Not supported|
 |Linux|Not supported|Not supported|Not supported|Not supported|Not supported|
 
-<sup>*</sup> Learn more about using conditional access with the [OneDrive sync client](https://support.office.com/article/Azure-Active-Directory-conditional-access-with-the-OneDrive-sync-client-on-Windows-028d73d7-4b86-4ee0-8fb7-9a209434b04e).
+<sup>*</sup> Learn more about using conditional access with the [OneDrive sync client](https://docs.microsoft.com/onedrive/enable-conditional-access).
 
-### Office 365 client support
-For more information about Office 365 client support, see the following articles:
-- [Office 365 Client App Support - Conditional Access](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
-- [Office 365 Client App Support - Mobile Application Management](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
-- [Office 365 Client App Support - Modern Authentication](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
+### Microsoft 365 client support
+For more information about client support, see the following articles:
+- [Microsoft 365 Client App Support - Conditional Access](https://docs.microsoft.com/office365/enterprise/office-365-client-support-conditional-access)
+- [Microsoft 365 Client App Support - Mobile Application Management](https://docs.microsoft.com/office365/enterprise/office-365-client-support-mobile-application-management)
+- [Microsoft 365 Client App Support - Modern Authentication](https://docs.microsoft.com/office365/enterprise/office-365-client-support-modern-authentication)
 
 ## Protecting administrator accounts
 Azure AD provides a simple way for you to begin protecting administrator access with a preconfigured conditional access policy. In Azure AD, go to **Conditional access** and look for this policy — **Baseline policy: Require MFA for admins (preview)**. Select this policy and then select **Use policy immediately**. 
@@ -108,7 +110,7 @@ For more information, see [Baseline security policy for Azure AD admin accounts]
 Additional recommendations include the following:
 - Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. See [Start using PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
 - [Use privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
-- Use administrator accounts only for administration. Admins should have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. [Office 365 administrator](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) roles have substantially more privileges than Office 365 services.
+- Use administrator accounts only for administration. Admins should have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. [Microsoft 365 administrator](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) roles have substantially more privileges than Microsoft 365 services.
 - Follow best practices for securing privileged accounts in Azure AD as described in this [article](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 
 ## Next steps

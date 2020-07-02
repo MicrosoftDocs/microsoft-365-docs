@@ -1,5 +1,7 @@
 ---
 title: Manage billing profiles
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -11,7 +13,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom:
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn how billing profiles support invoices."
@@ -19,6 +21,15 @@ keywords: billing profile, invoices, charges, managed charges
 ---
 
 # Manage billing profiles
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 For commercial customers who buy products and services from Microsoft, billing profiles let you customize what items are included on your invoice, and how you pay your invoices.
 
 Billing profiles include the following information:
@@ -49,7 +60,7 @@ Roles on billing profiles have permissions to control purchases, and view and ma
 
 ## View billing profiles
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
 2. Choose **Billing profiles**, and then choose a billing profile from the list.
 

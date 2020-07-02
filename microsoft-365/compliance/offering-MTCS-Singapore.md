@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Multi-Tier Cloud Security (MTCS) Standard for Singapore
+# Multi-Tier Cloud Security (MTCS) Standard for Singapore
 
 ## MTCS overview
 
@@ -34,22 +37,20 @@ After rigorous assessments conducted by the MTCS Certification Body, Microsoft c
 
 Certifications were granted at Level 3 for Microsoft Azure services (IaaS and PaaS), Microsoft Dynamics 365 services (SaaS), and Microsoft Office 365 services (SaaS). A Level 3 certification means that in-scope Microsoft cloud services can host high-impact data for regulated organizations with the strictest security requirements. It’s required for certain cloud solution implementations by the Singapore government.
 
-Learn about the benefits of MTCS on the Microsoft Cloud: [Download the MTCS Standard for Singapore Backgrounder](https://aka.ms/mtcs-backgrounder)
-
 ## Microsoft in-scope cloud services
 
 - [Azure](https://go.microsoft.com/fwlink/p/?linkid=2092718)
 - [Dynamics 365](https://go.microsoft.com/fwlink/p/?linkid=2051700)
-- Cloud App Security
+- Microsoft Cloud App Security
 - Genomics
-- Graph
-- Health Bot
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Flow
 - OMS Service Map
 - PowerApps
 - Power BI
-- Stream
+- Microsoft Stream
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 
 ## Audits, reports, and certificates
@@ -97,7 +98,3 @@ Yes. If you have a requirement to certify your services built on these Microsoft
 - [Azure compliance in the context of Singapore security and privacy requirements](https://aka.ms/azurecompliancesingapore)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/1/A/31AA4618-A5AE-4013-832B-C7A23CEBC26E/MCTS_Compliance_Backgrounder.pdf).

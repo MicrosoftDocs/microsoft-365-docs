@@ -1,5 +1,7 @@
 ---
 title: "Manage a data spillage incident in Microsoft 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -23,14 +25,14 @@ Data spillage is when a document containing confidential, sensitive, or maliciou
 
 ## Scope of this article
 
-This article provides a list of instructions on how to permanently delete items from Office 365 mailboxes so they are no longer accessible or recoverable by users or admins. 
+This article provides a list of instructions on how to permanently delete items from Microsoft 365 mailboxes so they are no longer accessible or recoverable by users or admins. 
 
 > [!NOTE]
 > When you delete items located in a SharePoint or OneDrive for Business site, they are retained for 93 days from the time you delete them from their original location.
 
 ## Scenario
 
-You're informed of a data spillage incident where an employee unknowingly shared a highly confidential document with multiple people through email. You want to quickly assess who received this document, both inside and outside of your organization. After you've investigate the incident, you plan to share your findings with other investigators to review, and then permanently remove the spilled data from your Office 365 organization. After the investigation is complete, you want to remove all evidence. 
+You're informed of a data spillage incident where an employee unknowingly shared a highly confidential document with multiple people through email. You want to quickly assess who received this document, both inside and outside of your organization. After you've investigate the incident, you plan to share your findings with other investigators to review, and then permanently remove the spilled data from your organization. After the investigation is complete, you want to remove all evidence. 
 
 > [!IMPORTANT]
 > While you'll be able to permanently remove the spilled data within your own organization, any data spilled outside your organization can't be removed with these capabilities.
@@ -62,7 +64,7 @@ To create an investigation in the Data Investigations (Preview) tool:
 
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using an account that is a member of the Data Investigator role group.
+2. Sign in using an account that is a member of the Data Investigator role group.
     
 3. In the security and compliance center, click **Data Investigations**.
  
@@ -121,7 +123,7 @@ To delete items from their original locations:
  
 2. Click **Action** and then click **Delete items from original locations**.
 
-   ![Click Action and then click Delete items from original locations](media/DataInvestigationsDeleteItems1.png)
+   ![Click Action and then click Delete items from original locations](../media/DataInvestigationsDeleteItems1.png)
 
 3. On the flyout page, verify the number of items and related child documents that will be deleted, and then click **Delete**.
 

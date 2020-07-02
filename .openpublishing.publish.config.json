@@ -6,7 +6,9 @@
       "build_output_subfolder": "Microsoft-365-docs",
       "locale": "en-us",
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": [
+        "=o365-worldwide || =o365-21vianet || =o365-germany"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -60,5 +62,8 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_intellisense": false
+  "need_generate_intellisense": false,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }

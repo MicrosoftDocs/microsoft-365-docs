@@ -9,12 +9,14 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: greglin
 ---
 
 # Step 5: Deploy Windows 10 Enterprise security features
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Windows 10 provides security features to protect enterprise users, stop cyberthreats, and prevent data loss. 
 
@@ -87,7 +89,7 @@ You can perform basic troubleshooting or optionally provide Microsoft with .cab 
 
 <a name="windows10-sec-atp"></a>
 ## Microsoft Defender Advanced Threat Protection
-Microsoft Defender ATP, only available with the Microsoft 365 Enterprise E5 plan, is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks. For more info about Microsoft Defender ATP, the minimum requirements, and how you can manage this feature, see:
+Microsoft Defender ATP, only available with the Microsoft 365 E5 plan, is a security service that enables enterprise customers to detect, investigate, and respond to advanced threats on their networks. For more info about Microsoft Defender ATP, the minimum requirements, and how you can manage this feature, see:
 
 * [Microsoft Defender ATP](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
 * [Minimum requirements](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/minimum-requirements-windows-defender-advanced-threat-protection)

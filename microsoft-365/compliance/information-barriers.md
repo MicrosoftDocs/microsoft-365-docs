@@ -1,5 +1,7 @@
 ---
-title: "Information barriers overview"
+title: "Learn about Information barriers"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -11,25 +13,27 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: "Use information barriers to ensure communication compliance using Microsoft Teams within your organization."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Information barriers
-
-## Overview
 
 Microsoft cloud services include powerful communication and collaboration capabilities. But suppose that you want to restrict communications between two groups to avoid a conflict of interest from occurring in your organization. Or, perhaps you want to restrict communications between certain people inside your organization in order to safeguard internal information. Microsoft 365 enables communication and collaboration across groups and organizations, so is there a way to restrict communications among specific groups of users when necessary? With information barriers, you can! 
 
 Information barriers are rolling out now, beginning with Microsoft Teams. Assuming your [subscription](#required-licenses-and-permissions) includes information barriers, a compliance administrator or information barriers administrator can define policies to allow or prevent communications between groups of users in Microsoft Teams. Information barrier policies can be used for situations like these:
 
-- A day trader cannot call someone on the marketing team
-- Finance personnel working on confidential company information cannot receive calls from certain groups within their organization
-- An internal team with trade secret material cannot call or chat online with people in certain groups within their organization
-- A research team can only call or chat online with a product development team
+- User in the day trader group should not communicate with the marketing team
+- Finance personnel working on confidential company information should not communicate with certain groups within their organization
+- An internal team with trade secret material should not call or chat online with people in certain groups within their organization
+- A research team should only call or chat online with a product development team
+
+> [!IMPORTANT]
+> Information barriers ***only supports*** two way restrictions. One way restrictions, such as marketing can communicate with day traders, but day traders cannot communicate with marketing ***is not supported***.
 
 For all of these example scenarios (and more), information barrier policies can be defined to prevent or allow communications in Microsoft Teams. Such policies can prevent people from calling or chatting with those they shouldn't, or enable people to communicate only with specific groups in Microsoft Teams. With information barrier policies in effect, whenever users who are covered by those policies attempt to communicate with others in Microsoft Teams, checks are done to prevent (or allow) communication (as defined by information barrier policies). To learn more about the user experience with information barriers, see [information barriers in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Currently, information barriers do not apply to email communications or to file sharing through SharePoint Online or OneDrive. In addition, information barriers are independent from [compliance boundaries](tagging-and-assessment-in-advanced-ediscovery.md).<p>Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.) 
+> Currently, information barriers do not apply to email communications or to file sharing through SharePoint Online or OneDrive. In addition, information barriers are independent from [compliance boundaries](set-up-compliance-boundaries.md).<p>Before you define and apply information barrier policies, make sure your organization does not have [Exchange address book policies](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies) in effect. (Information barriers are based on address book policies.) 
 
 ## What happens with information barriers
 
@@ -56,7 +60,7 @@ Information barriers are rolling out now, and are included in subscriptions, suc
 - Microsoft 365 E5
 - Office 365 E5
 - Office 365 Advanced Compliance
-- Microsoft 365 E5 Information Protection and Compliance
+- Microsoft 365 Compliance E5
 
 For more details, see [Compliance Solutions](https://products.office.com/business/security-and-compliance/compliance-solutions).
 
@@ -79,5 +83,4 @@ You must be familiar with PowerShell cmdlets in order to define, validate, or ed
 
 - [Define policies for information barriers](information-barriers-policies.md)
 
-- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md.md) 
-
+- [Edit (or remove) information barrier policies](information-barriers-edit-segments-policies.md) 

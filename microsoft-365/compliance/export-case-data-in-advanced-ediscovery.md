@@ -1,8 +1,11 @@
 ---
-title: "Export case data in Office 365 Advanced eDiscovery"
+title: "Export case data in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,11 +14,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: "Understand the guidelines for exporting eDiscovery case data and results for review using the Export process in Office 365 Advanced eDiscovery. 
-"
+description: "Understand the guidelines for exporting eDiscovery case data and results for review using the Export process in Advanced eDiscovery."
+ms.custom: seo-marvel-apr2020
 ---
 
-# Export case data in Office 365 Advanced eDiscovery
+# Export case data in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -30,9 +33,9 @@ The Export process in Advanced eDiscovery enables the exporting of Advanced eDis
     
 - Exporting a large amount of data to a database may have a significant impact on the required database size and the required configuration of the Advanced eDiscovery database.
     
-## See also
+## Related topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Exporting results ](export-results-in-advanced-ediscovery.md)
   

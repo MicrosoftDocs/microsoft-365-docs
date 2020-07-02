@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Cloud Security Mark Gold (CS Gold Mark)
+# Cloud Security Mark Gold (CS Gold Mark)
 
 ## CS Gold Mark overview
 
@@ -57,7 +60,3 @@ If your organization is using Azure or Office 365, you need to ensure that the C
 - [ISO/IEC 27017: 2015](https://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/A/A/DAAF35AB-60DE-4A70-AF1D-DD5CBAF16477/CSMarkGold-Compliance.pdf).

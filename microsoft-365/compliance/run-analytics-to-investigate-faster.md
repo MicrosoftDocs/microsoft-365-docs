@@ -1,5 +1,7 @@
 ---
 title: "Run analytics to investigate faster"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use analytical tools like near duplicate detection, email threading, and themes to speed up your investigations.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Run analytics to investigate faster

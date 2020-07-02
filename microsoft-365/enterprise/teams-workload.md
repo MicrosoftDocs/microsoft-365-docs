@@ -29,7 +29,7 @@ Before you begin:
 
 - Make sure you've configured the right [foundation infrastructure](deploy-foundation-infrastructure.md) phases so that your teams have the user accounts and security capabilities you need. The Identity and Information Protection phases are the most important for signing on and using securing email and files with retention and sensitivity labels.
 - Learn about security and compliance in Teams with [this article](https://docs.microsoft.com/microsoftteams/security-compliance-overview).
-- Learn about Office 365 licensing for Teams with [this article](https://docs.microsoft.com/microsoftteams/office-365-licensing).
+- Learn about licensing for Teams with [this article](https://docs.microsoft.com/microsoftteams/office-365-licensing).
 
 To roll out Teams in your organization, read [How to roll out Teams](https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams).
 
@@ -38,7 +38,7 @@ For your first set of Teams capabilities, see [Chat, teams, channels, and apps i
 For more advanced Teams capabilities, see:
 
 - [Meetings and Conferencing](https://docs.microsoft.com/microsoftteams/deploy-meetings-microsoft-teams-landing-page)
-- [Cloud voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (requires Microsoft 365 Enterprise E5)
+- [Cloud voice](https://docs.microsoft.com/microsoftteams/cloud-voice-landing-page) (requires Microsoft 365 E5)
 
 To monitor your organization's usage of Teams, see:
 

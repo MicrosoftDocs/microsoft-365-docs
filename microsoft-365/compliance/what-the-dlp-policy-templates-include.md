@@ -1,5 +1,7 @@
 ---
 title: "What the DLP policy templates include"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -15,12 +17,14 @@ localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
-description: "Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center includes ready-to-use policy templates that address common compliance requirements, such as helping you to protect sensitive information subject to the U.S. Health Insurance Act (HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA), or U.S. Patriot Act. This topic lists all of the policy templates, what types of sensitive information they look for, and what the default conditions and actions are."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn what the data loss prevention (DLP) policy templates in the Office 365 Security & Compliance Center include.
 ---
 
 # What the DLP policy templates include
 
-Data loss prevention (DLP) in the Office 365 Security &amp; Compliance Center includes ready-to-use policy templates that address common compliance requirements, such as helping you to protect sensitive information subject to the U.S. Health Insurance Act (HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA), or U.S. Patriot Act. This topic lists all of the policy templates, what types of sensitive information they look for, and what the default conditions and actions are. This topic does not include every detail of how each policy template is configured; instead, the topic presents with you enough information to help you decide which template is the best starting point for your scenario. Remember, you can customize these policy templates to meet your specific requirements.
+Data loss prevention (DLP) in the Security &amp; Compliance Center includes ready-to-use policy templates that address common compliance requirements, such as helping you to protect sensitive information subject to the U.S. Health Insurance Act (HIPAA), U.S. Gramm-Leach-Bliley Act (GLBA), or U.S. Patriot Act. This topic lists all of the policy templates, what types of sensitive information they look for, and what the default conditions and actions are. This topic does not include every detail of how each policy template is configured; instead, the topic presents with you enough information to help you decide which template is the best starting point for your scenario. Remember, you can customize these policy templates to meet your specific requirements.
   
 ## Australia Financial Data
 

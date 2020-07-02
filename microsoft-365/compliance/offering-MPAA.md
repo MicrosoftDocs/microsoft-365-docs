@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Motion Picture Association of America (MPAA)
+# Motion Picture Association of America (MPAA)
 
 ## MPAA overview
 
@@ -26,8 +29,6 @@ In February 2016, Microsoft Azure became the first hyperscale, multitenant cloud
 The MPAA assessment covers 48 security topics in the Common Guidelines, and an additional six in the Application and Cloud Security Guidelines. These are built on industry-accepted security standards such as ISO/IEC 27001 and NIST 800-53, and are aligned to best practices, such as the Cloud Security Alliance (CSA) Cloud Controls Matrix.
 
 The formal assessment of Azure compliance means that companies who do business with major studios can use Azure to help reduce the IT costs that are normally associated with the secure creation, management, storage, and distribution of content — all while complying with MPAA requirements. Azure Media Services, Storage, Virtual Networks, and more than 30 other services provide a content workflow engine in the cloud that is more secure and scalable than traditional on-premises production processes and more effective at protecting media assets downstream.
-
-Learn about the benefits of MPAA on the Microsoft Cloud: [Download the MPAA backgrounder](https://aka.ms/mpaa-backgrounder)
 
 ## Microsoft in-scope cloud services
 
@@ -62,7 +63,3 @@ Production facilities, visual effects houses, and other service partners should 
 - [CSA STAR Azure Self-Assessment](https://www.microsoft.com/TrustCenter/Compliance/CSA-self-assessment)
 - [Azure Responses to CSA CAIQ v3.0.1](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/A/1/7A19B051-3399-4222-BEF1-E6E3E0A17961/MPAA_Backgrounder.pdf).

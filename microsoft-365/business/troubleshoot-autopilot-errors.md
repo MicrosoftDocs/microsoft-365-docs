@@ -1,10 +1,12 @@
 ---
 title: "Troubleshoot AutoPilot device errors"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 f1_keywords:
 - 'ZTDTroubleshootDeviceErrors'
 - 'O365E_ZTDTroubleshootDeviceErrors'
@@ -18,19 +20,21 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 1f468690-530c-47ea-918f-fede24607c53
-description: "Learn how to troubleshoot AutoPilot device file errors."
+description: "Learn how to troubleshoot errors you might see while working with AutoPilot device files in Microsoft 365 Business Premium."
 ---
 
 # Troubleshoot AutoPilot device errors
 
 ## Device file error messages
 
-Here's info on some of the errors you might see while working with AutoPilot device files in Microsoft 365 Business. 
+Here's info on some of the errors you might see while working with AutoPilot device files in Microsoft 365 Business Premium. 
   
 |**Error code**|**Fix to try**|
 |:-----|:-----|

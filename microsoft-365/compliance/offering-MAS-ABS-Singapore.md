@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Monetary Authority of Singapore (MAS) and Association of Banks in Singapore (ABS)
+# Monetary Authority of Singapore (MAS) and Association of Banks in Singapore (ABS)
 
 ## MAS and ABS Overview
 
@@ -91,7 +94,3 @@ This definition is important since certain provisions of MAS Outsourcing Guideli
 - [Microsoft business cloud services and financial services](https://www.microsoft.com/trustcenter/cloudservices/financialservices)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/A/B/3ABF29D9-FBF5-4011-A496-77ADD4EF9EE9/MAS+ABS-Singapore-Compliance.pdf).

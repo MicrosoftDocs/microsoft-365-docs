@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Cloud Security Alliance (CSA) STAR certification
+# Cloud Security Alliance (CSA) STAR certification
 
 ## CSA STAR certification overview
 
@@ -28,28 +31,28 @@ The Cloud Security Alliance (CSA) maintains the Security, Trust & Assurance Regi
 Microsoft Azure, Microsoft Intune, and Microsoft Power BI have obtained STAR Certification, which involves a rigorous independent third-party assessment of a cloud provider’s security posture. This STAR certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It demonstrates that a cloud service provider conforms to the applicable requirements of ISO/IEC 27001, has addressed issues critical to cloud security as outlined in the CCM, and has been assessed against the STAR Capability Maturity Model for the management of activities in CCM control areas.  
   
 During the assessment, an accredited CSA certification auditor assigns a Maturity Capability score to each of the 16 CCM control areas. The average score is then used to assign the overall level of maturity and the corresponding Bronze, Silver, or Gold award. Azure, Intune, Power BI, and Microsoft Cloud App Security were awarded Cloud Security Alliance (CSA) STAR Certification at the Gold level.  
-  
-Learn about the benefits of CSA STAR Certification on the Microsoft Cloud: [Download the CSA STAR Certification backgrounder](https://aka.ms/csastar-certification-backgrounder)
 
 Learn how to accelerate your CSA STAR Certification deployment with our Azure Security and Compliance Blueprints: [Download the Microsoft Azure Responses to CSA Consensus Assessments Initiative Questionnaire](https://gallery.technet.microsoft.com/Azure-Responses-to-CSA-46034a11)
 
 ## Microsoft in-scope cloud services
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
-- Health Bot
+- Microsoft Cloud App Security
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Microsoft Managed Desktop
+- Microsoft Defender Advanced Threat Protection
 - OMS Service Map
-- PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow): cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- PowerApps cloud service: either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI: The cloud service portion of Power BI offered as a standalone service or as included in an Office 365 branded plan or suite
-- Stream
+- Power BI Embedded
+- Microsoft Stream
 
 ## Audits, reports, and certificates
 
-- [Azure, Cloud App Security, Flow, Genomics, Graph, Health Bot, Intune, OMS Service Map, PowerApps, Power BI, Stream — CSA STAR Certification](https://servicetrust.microsoft.com/Documents/ComplianceReports?command=Download&downloadType=Document&downloadId=6d07d7e3-da62-4153-a91c-14d259dac9f1&docTab=4ce99610-c9c0-11e7-8c2c-f908a777fa4d_ISO_Reports)
+- [Azure, Dynamics 365, and Online Services – CSA STAR Certificate](https://aka.ms/azurecsastarcert)
 
 ## Frequently asked questions
 
@@ -59,16 +62,16 @@ The CCM corresponds to industry-accepted security standards, regulations, and co
 
 **Where can I view the CSA STAR Certification for Microsoft cloud services?**
 
-You can download the [CSA STAR Certification](https://aka.ms/csastar-certification) for Azure, which also covers Intune and Power BI, from the CSA Registry.
+You can view the [CSA STAR Certification](https://aka.ms/csastar-certification) for Azure, which also covers Dynamics 365, Intune and, Power BI from the CSA Registry.
 
 **What maturity level did Microsoft cloud services achieve?**
 
-Azure, Cloud App Security, Intune, and Power BI have achieved the highest possible Gold Award for the Maturity Capability assessment.
+Azure, Microsoft Cloud App Security, Intune, and Power BI have achieved the highest possible Gold Award for the Maturity Capability assessment.
 
 **Which CSA STAR levels of assurance have Microsoft business cloud services attained?**
 
 - **Level 1**: **CSA STAR Self-Assessment**: Azure, Dynamics 365, and Office 365. The [Self-Assessment](offering-csa-star-self-assessment.md) is a complimentary offering from cloud service providers to document their security controls to help customers assess the security of the service.
-- **Level 2**: **CSA STAR Certification**: Azure, Cloud App Security, Intune, and Power BI. STAR Certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It is awarded after a rigorous third-party assessment of the security controls and practices of a cloud service provider.
+- **Level 2**: **CSA STAR Certification**: Azure, Microsoft Cloud App Security, Intune, and Power BI. STAR Certification is based on achieving ISO/IEC 27001 certification and meeting criteria specified in the CCM. It is awarded after a rigorous third-party assessment of the security controls and practices of a cloud service provider.
 - **Level 2**: **CSA STAR Attestation**: Azure and Intune. CSA and the AICPA have collaborated to provide guidelines for CPAs to use in conducting SOC 2 engagements, using criteria from the AICPA (Trust Service Principles, AT 101) and the CSA CCM. [STAR Attestation](offering-CSA-STAR-Attestation.md) is based on these guidelines and is awarded after rigorous independent assessments of cloud providers.
 
 ## Resources
@@ -83,7 +86,3 @@ Azure, Cloud App Security, Intune, and Power BI have achieved the highest possib
 - [ISO/IEC 27001](offering-iso-27001.md)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/C/3/6/C36C6DBB-AF39-44A2-B6C6-50CC6E4991D7/CSA-STAR-Certification-Compliance.pdf).

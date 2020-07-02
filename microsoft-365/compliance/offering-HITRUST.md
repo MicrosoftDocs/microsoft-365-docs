@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
+# Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)
 
 ## HITRUST — CSF overview
 
@@ -41,20 +44,20 @@ Learn how to accelerate your HITRUST deployment with our Azure Security and Comp
 
 The HITRUST CSF certification of Azure and Office 365 is valid for two years.
 
-- [Azure HITRUST Letter of Certification](https://aka.ms/AzureHiTrustLetterofCertification)
+- [Azure HITRUST Letter of Certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 - [Office 365 HITRUST Letter of Certification](https://aka.ms/O365HITRUSTcertification)
 
 ## Accelerate your deployment of HIPAA/HITRUST solutions on Azure
 
 Get a head start on taking advantage of the benefits of the cloud for health data solutions with the Azure Security and Compliance Blueprint — HIPAA/HITRUST Health Data and AI. This blueprint provides tools and guidance to get you started building HIPAA/HITRUST solutions today.
 
-[Start using the Azure HIPAA/HITRUST Blueprint](https://go.microsoft.com/fwlink/p/?linkid=2100613)
+[Start using the Azure HIPAA/HITRUST Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/hipaa-hitrust/)
 
 ## Accelerate your HIPAA/HITRUST compliance when using Office 365
 
-Use Office 365 to manage health information in a secure and compliant way with Compliance Manager, which enables you to perform risk assessments against health regulations like HIPAA and security control frameworks like NIST CSF and NIST 800-53. You can follow step-by-step guidance to know how to implement and maintain data protection controls that help you meet healthcare compliance obligations.
+Use Office 365 to manage health information in a secure and compliant way with Compliance Score, which enables you to perform risk assessments against health regulations like HIPAA and security control frameworks like NIST CSF and NIST 800-53. You can follow step-by-step guidance to know how to implement and maintain data protection controls that help you meet healthcare compliance obligations.
 
-[Start using Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=862650)
+[Start using Compliance Score](compliance-score.md)
 
 ## Collaborate with Microsoft in the HITRUST Shared Responsibility Program
 
@@ -70,14 +73,14 @@ Yes. If your business requires a HITRUST certification for implementations deplo
 
 **How can I get a copy of the HITRUST certification?**
 
-You can download a copy of letter of certification for [Azure](https://aka.ms/AzureHiTrustLetterofCertification) and [Office 365](https://aka.ms/O365HITRUSTcertification).
+You can download a copy of letter of certification for [Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports) and [Office 365](https://aka.ms/O365HITRUSTcertification).
 
 **What are the in-scope services for Office 365?**
 
-The in-scope services of HITRUST CSF certification are Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive for Business, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus in Office 365 Multi-tenant cloud and Office 365 GCC.
+The in-scope services of HITRUST CSF certification are Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive for Business, Office Online, MyAnalytics, Microsoft Teams, Microsoft 365 Apps for enterprise in Office 365 Multi-tenant cloud and Office 365 GCC.
 
 > [!NOTE]
-> Office 365 ProPlus enables access to various cloud services, such as Roaming Settings, Licensing, and OneDrive consumer cloud storage, and may enable access to additional cloud services in the future. Roaming Settings and Licensing support the standards for HITRUST. OneDrive consumer cloud storage does not, and other cloud services that are accessible through Office 365 ProPlus and that Microsoft may offer in the future also may not, support these standards.*
+> Microsoft 365 Apps for enterprise enables access to various cloud services, such as Roaming Settings, Licensing, and OneDrive consumer cloud storage, and may enable access to additional cloud services in the future. Roaming Settings and Licensing support the standards for HITRUST. OneDrive consumer cloud storage does not, and other cloud services that are accessible through Microsoft 365 Apps for enterprise and that Microsoft may offer in the future also may not, support these standards.*
 
 **Why are some Office 365 services not in the scope of this certification?**
 
@@ -89,7 +92,7 @@ When you store your data in a SaaS like Office 365, it’s a shared responsibili
 
 **Does Microsoft provide guidance for my organization to implement appropriate controls when using Office 365?**
 
-Yes, you can find recommended customer actions in Compliance Manager, cross-Microsoft Cloud solutions that help your organization meet complex compliance obligations when using cloud services. Specifically, for HITRUST CSF, we recommend that you perform risk assessments using the NIST 800-53 and NIST CSF assessments in Compliance Manager. In the assessments, we provide you with step-by-step guidance and the Microsoft solutions you can use to implement your data protection controls. You can learn more about Compliance Manager in this [whitepaper](https://resources.office.com/ww-landing-m365e-gdpr-compliance-manager-whitepaper.html?lcid=en-us).
+Yes, you can find recommended customer actions in Compliance Score, cross-Microsoft Cloud solutions that help your organization meet complex compliance obligations when using cloud services. Specifically, for HITRUST CSF, we recommend that you perform risk assessments using the NIST 800-53 and NIST CSF assessments in Compliance Score. In the assessments, we provide you with step-by-step guidance and the Microsoft solutions you can use to implement your data protection controls. You can learn more about Compliance Score in [Microsoft Compliance Score](compliance-score.md).
 
 **How do I engage with Microsoft?**
 
@@ -98,11 +101,7 @@ Log in to the HITRUST MyCSF® tool and pre-populate your assessment for your sol
 ## Resources
 
 - [HITRUST Alliance](https://hitrustalliance.net/)
-- [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)
+- [HITRUST CSF 9.3](https://hitrustalliance.net/csf-license-agreement/)
 - [Understanding and Leveraging the CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Find out more about the HITRUST Shared Responsibility Program](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

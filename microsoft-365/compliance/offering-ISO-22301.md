@@ -5,19 +5,22 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: ISO 22301:2012 Business Continuity Management Standard
+# ISO 22301:2012 Business Continuity Management Standard
 
 ## ISO 22301 overview
 
-The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world’s largest developer of voluntary international standards. The ISO formed the TC 223 Societal Security technical committee to develop standards for protecting society, including organizations, in the event of catastrophe such as a natural disaster, major terrorist attack, or shutdown of power grids.
+The International Organization for Standardization (ISO) is an independent nongovernmental organization and the world’s largest developer of voluntary international standards. The ISO formed the TC 223 Societal Security technical committee to develop standards for protecting society, including organizations, if catastrophes such as a natural disaster, major terrorist attack, or the shutdown of power grids occur.
 
 Published in 2012 by the technical committee, ISO 22301:2012 is the first international standard for management systems that help ensure business continuity. ISO 22301 is the premium standard for business continuity, and certification demonstrates conformance to rigorous practices to prevent, mitigate, respond to, and recover from disruptive incidents.
 
@@ -25,24 +28,26 @@ Published in 2012 by the technical committee, ISO 22301:2012 is the first intern
 
 Microsoft is the first hyperscale cloud service provider to receive the ISO 22301 certification for business continuity management. An independent certification body awarded this certification to Microsoft Azure, Microsoft Azure Government, Microsoft Office 365 (including Commercial, Government, and Education offerings), Microsoft Cloud App Security, Microsoft Intune, and Microsoft Power BI after a stringent audit covering all aspects of their business continuity processes. The audit covered the in-scope services listed below and Azure management features, the Azure Portal, and the systems used to monitor, operate, and update the in-scope services.
 
-Learn about the benefits of ISO/IEC 22301 on the Microsoft Cloud: [Download the ISO/IEC 22301 backgrounder](https://aka.ms/iso22301-backgrounder)
-
 ## Microsoft in-scope cloud services
 
-- [Azure and Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Genomics
-- Graph
+- [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
+- Microsoft Cloud App Security
+- Dynamics 365, Dynamics 365 Government, and Dynamics 365 Germany
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Microsoft Managed Desktop
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - [Office 365 Commercial, Government, and Education](https://go.microsoft.com/fwlink/p/?linkid=2077751)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+- Power BI Embedded
 
 ## Audits, reports, and certificates
 
-- [Azure and Azure ISO 22301 Certificate of Registration](https://go.microsoft.com/fwlink/p/?linkid=2099078)
-- [Azure ISO 22301 Assessment Report](https://go.microsoft.com/fwlink/p/?linkid=2099079)
+- [Azure, Dynamics 365, and Online Services: ISO22301 Certificate](https://aka.ms/azureiso22301cert)
+- [Azure, Dynamics 365, and Online Services: ISO22301 Assessment Report](https://aka.ms/azureiso22301report)
 - [BSI 22301 Microsoft Office 365 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2092109)
 - [BSI 22301 Microsoft Office 365 Stage 2 Addendum](https://go.microsoft.com/fwlink/p/?linkid=2092209)
 - [Office 365 ISO 22301 Stage 2 Report](https://go.microsoft.com/fwlink/p/?linkid=2092211)
@@ -68,9 +73,5 @@ Yes. If your business requires ISO 22301 certification for implementations deplo
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Microsoft Enterprise Business Continuity Management Program Description](https://go.microsoft.com/fwlink/p/?linkid=2092212)
-- [Compliance Manager](https://go.microsoft.com/fwlink/p/?linkid=2092329)
+- [Compliance Score](compliance-score.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/0/0/9/009B2F34-96F6-4D85-8BDC-238B91A2C6EE/ISO-22301-Compliance.pdf ).

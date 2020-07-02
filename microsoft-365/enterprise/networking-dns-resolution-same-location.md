@@ -1,9 +1,11 @@
 ---
 title: "Step 2: Configure local Internet connections for each office"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 04/20/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,7 +21,7 @@ description: Understand and configure your DNS resolution for better performance
 
 *This step is required and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 In Step 2, you ensure that each of your offices have local Internet connections and use local DNS servers. Both of these elements are required to reduce connection latency and ensure that on-premises client computers make connections to the nearest point of entry to Microsoft 365 cloud-based services.
 
@@ -27,13 +29,13 @@ In traditional networks for large organizations, Internet traffic travels across
 
 The Microsoft Global Network includes a *Distributed Service Front Door* infrastructure, a highly available and scalable network edge with geographically distributed locations. It terminates end user connections at a front door server and efficiently routes end user traffic within the Microsoft Global Network.
 
-![The Microsoft Global Network](./media/networking-dns-resolution-same-location/microsoft-global-network.png)
+![The Microsoft Global Network](../media/networking-dns-resolution-same-location/microsoft-global-network.png)
 
 For the best performance, on-premises clients should access a front door location that is geographically closest to them, rather than sending the traffic over a network backbone and to the front door that is closest to the organization’s central Internet connection.
 
 Here’s an example.
 
-![Example of using the Microsoft Global Network](./media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
+![Example of using the Microsoft Global Network](../media/networking-dns-resolution-same-location/microsoft-global-network-example.png)
 
 When a user in the Paris branch office wants to access a SharePoint Online site:
 
@@ -50,10 +52,12 @@ To direct a client request to the geographically nearest front door, Microsoft�
 
 For more information, see [Egress network connections locally](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#egress-network-connections-locally). 
 
+To test how close you are to an entry point for Microsoft’s global network and how close you are to the point where your organization network connects to your ISP, use the [Office 365 Network Onboarding tool](https://connectivity.office.com/).
+
 As an interim checkpoint, you can see the [exit criteria](networking-exit-criteria.md#crit-networking-step2) for this step.
 
 ## Next step
 
 |||
 |:-------|:-----|
-|![Step 3](./media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|
+|![Step 3](../media/stepnumbers/Step3.png)|[Avoid network hairpins](networking-avoid-network-hairpins.md)|

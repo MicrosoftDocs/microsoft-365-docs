@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: US Internal Revenue Service Publication 1075
+# US Internal Revenue Service Publication 1075
 
 ## US Internal Revenue Service Publication 1075 overview
 
@@ -34,8 +37,6 @@ To help government agencies in their compliance efforts, Microsoft:
 - Makes available audit reports and monitoring information produced by independent assessors for its cloud services.
 - Provides to the IRS Azure Government Compliance Considerations and Office 365 U.S. Government Compliance Considerations, which outline how an agency can use Microsoft Cloud for Government services in a way that complies with IRS 1075. Government customers under NDA can request these documents.
 - Offers customers the opportunity (at their expense) to communicate with Microsoft subject matter experts or outside auditors if needed.
-
-Learn about the benefits of IRS 1075 on the Microsoft Cloud: [Download the IRS 1075 backgrounder](https://aka.ms/irs1075-backgrounder)
 
 ## Microsoft in-scope cloud services
 
@@ -77,7 +78,3 @@ No. The only environments where FTI can be stored and processed are Azure Govern
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - [Microsoft Cloud for Government](https://enterprise.microsoft.com/industries/government/start-your-microsoft-cloud-for-government-trial-today)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/1/8/D1825AE2-4FDA-4A4B-8D4F-9B7D2976D54A/IRS1075_Compliance_Backgrounder.pdf).

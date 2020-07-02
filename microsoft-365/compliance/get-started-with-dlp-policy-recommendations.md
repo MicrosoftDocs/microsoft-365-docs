@@ -1,5 +1,7 @@
 ---
 title: "Get started with DLP policy recommendations"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,16 +12,18 @@ ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
 localization_priority: Normal
-description: "This insight-driven recommendation helps your organization keep sensitive content secure when it's stored and shared in Office 365 by informing you when there's a possible gap in your DLP policy coverage. You'll see this recommendation on the Home page of the Security &amp; Compliance Center, if your documents contain any of the top-five most common types of sensitive information but aren't protected by a DLP policy."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to create and edit the recommended data loss prevention (DLP) policy for your organization.
 ---
 
 # Get started with DLP policy recommendations
 
-This insight-driven recommendation helps your organization keep sensitive content secure when it's stored and shared in Office 365 by informing you when there's a possible gap in your DLP policy coverage. You'll see this recommendation on the **Home** page of the Security &amp; Compliance Center, if your documents contain any of the top-five most common types of sensitive information but aren't protected by a data loss prevention (DLP) policy. 
+This insight-driven recommendation helps your organization keep sensitive content secure when it's stored and shared in Microsoft 365 by informing you when there's a possible gap in your DLP policy coverage. You'll see this recommendation on the **Home** page of the Security &amp; Compliance Center, if your documents contain any of the top-five most common types of sensitive information but aren't protected by a data loss prevention (DLP) policy. 
   
 You can use this widget to quickly create a customized DLP policy in just a click or two, and after you create this DLP policy, it's fully customizable. Note that if you don't see the recommendation at first, try clicking **+More** at the bottom of the **Recommended for you** section. 
   
-![Widget named Unprotected sensitive information](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![Widget named Unprotected sensitive information](../media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
 ## Create the recommended DLP policy
 
@@ -41,7 +45,7 @@ You can also choose to have the DLP policy:
     
 If you want to change these options later, you can edit the DLP policy after it's created. For example, you can make the policy more restrictive by even blocking people from sharing content that contains sensitive information in the first place - see the next section.
   
-![Settings for the widget named Unprotected sensitive information](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![Settings for the widget named Unprotected sensitive information](../media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
 ## Edit the recommended DLP policy
 
@@ -49,7 +53,7 @@ After you use the widget to create a DLP policy, the policy appears under **Data
   
 By default, the policy is named **System Recommended Policy for Sharing Sensitive Information**. This policy is fully customizable, the same as any DLP policy that you create yourself from scratch. For example, if you decided not to turn on incident reports and policy tips when you used the widget, you can always edit the policy and turn on those options at any time.
   
-![System Recommended Policy for Sharing Sensitive Information](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![System Recommended Policy for Sharing Sensitive Information](../media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
 ## When the widget does and does not appear
 

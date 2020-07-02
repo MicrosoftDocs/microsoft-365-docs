@@ -1,6 +1,8 @@
 ---
 title: "Networking for the Contoso Corporation"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -38,20 +40,20 @@ The elements of Contoso's network that links their offices across the globe are 
 
 Figure 1 shows Contoso's networking infrastructure and its connections to the Internet.
 
-![Contoso's network](./media/contoso-networking/contoso-networking-fig1.png)
+![Contoso's network](../media/contoso-networking/contoso-networking-fig1.png)
  
 **Figure 1: Contoso's network**
 
 ## Use of SD-WAN for optimal network connectivity to Microsoft
 
-Contoso followed [Office 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) to:
+Contoso followed [Microsoft 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) to:
 
-1. Identify and differentiate Office 365 network traffic
+1. Identify and differentiate Microsoft 365 network traffic
 2. Egress network connections locally
 3. Avoid network hairpins
 4. Bypass duplicate network security devices
 
-There are three categories of network traffic for Office 365: Optimize, Allow, and Default. Optimize and Allow traffic is trusted network traffic that is encrypted and secured at the endpoints and is destined for the Microsoft 365 network.
+There are three categories of network traffic for Microsoft 365: Optimize, Allow, and Default. Optimize and Allow traffic is trusted network traffic that is encrypted and secured at the endpoints and is destined for the Microsoft 365 network.
 
 Contoso decided to:
 
@@ -71,7 +73,7 @@ Contoso has architected its line of business application and server intranet inf
 
 Figure 2 shows the percentage of network traffic when accessing servers across Contoso’s intranet.
 
-![Contoso's infrastructure for internal applications](./media/contoso-networking/contoso-networking-fig2.png)
+![Contoso's infrastructure for internal applications](../media/contoso-networking/contoso-networking-fig2.png)
  
 **Figure 2: Contoso's infrastructure for internal applications**
 
@@ -87,7 +89,7 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 2. Created a plan for Microsoft 365 Enterprise network connectivity
 
-   Contoso used the [Office 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) and provided reference network architectures to determine SD-WAN as their preferred topology for Office 365 connectivity.
+   Contoso used the [Microsoft 365 network connectivity principles](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles) and provided reference network architectures to determine SD-WAN as their preferred topology for Microsoft 365 connectivity.
 
 3. Analyzed Internet connection utilization and MPLS WAN bandwidth at each office and increased bandwidth as needed
 
@@ -99,7 +101,7 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 5. Configured internal DNS
 
-   DNS is required to be functional and to be looked up locally for Office 365 traffic.
+   DNS is required to be functional and to be looked up locally for Microsoft 365 traffic.
 
 6. Validated network endpoint and port connectivity
 

@@ -1,5 +1,7 @@
 ---
-title: "Use the PST Collection tool to find, copy, and delete PST files in your organization"
+title: Use the PST Collection tool to find, copy, and delete PST files
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -8,25 +10,28 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: 
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
-description: "Use the Microsoft PST Collection Tool to search your organization's network to get an inventory of PST files that are scattered throughout your organization. After you find PST files, you can use the PST Collection Tool to copy them in a central location so you can import them to Office 365."
+description: Use the Microsoft PST Collection Tool to search your organization's network to get an inventory of PST files that are scattered throughout your organization.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use the PST Collection tool to find, copy, and delete PST files in your organization
 
 > [!IMPORTANT]
-> The PST Collection tool described in this article isn’t supported under any Microsoft standard support program or service. The tool is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the tool and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the tool be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the tool or documentation, even if Microsoft has been advised of the possibility of such damages.
+> The PST Collection tool described in this article isn't supported under any Microsoft standard support program or service. The tool is provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the tool and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the tool be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the tool or documentation, even if Microsoft has been advised of the possibility of such damages.
 
-You can use the Microsoft PST Collection tool to search your organization's network for PST files. The tool helps you get an inventory of PST files that are scattered throughout your organization. After you find PST files, you can use the PST Collection tool to copy them in a central location. Having PSTs in a one place then allows you to import them to Exchange Online mailboxes (or a single Exchange Online mailbox), where you can then apply the rich set of compliance features in Office 365. This includes importing PSTs to users' archive mailboxes, searching for specific messages in the PST files that you imported by using eDiscovery search tools, retaining messages by using eDiscovery holds and Office 365 retention policies, and managing the life cycle of these messages using the messaging records management features in Exchange Online. After you're confident that the PST files that you collected have been successfully imported to Office 365, you can use the tool to delete them from their original location on your network. 
+You can use the Microsoft PST Collection tool to search your organization's network for PST files. The tool helps you get an inventory of PST files that are scattered throughout your organization. After you find PST files, you can use the PST Collection tool to copy them in a central location. Having PSTs in a one place then allows you to import them to Exchange Online mailboxes (or a single Exchange Online mailbox), where you can then apply the rich set of compliance features in Office 365. This includes importing PSTs to users' archive mailboxes, searching for specific messages in the PST files that you imported by using eDiscovery search tools, retaining messages by using eDiscovery holds and retention policies, and managing the life cycle of these messages using the messaging records management features in Exchange Online. After you're confident that the PST files that you collected have been successfully imported to Office 365, you can use the tool to delete them from their original location on your network. 
   
-Another thing you can do with the PST Collection tool is prevent users from creating new PST files and changing the existing PST files that you find on your network. These "block" capabilities let you find, collect, and import a known set of PST files to Office 365 and prevent the future proliferation of PST files in your organization. 
+Another thing you can do with the PST Collection tool is prevent users from creating new PST files and changing the existing PST files that you find on your network. These "block" capabilities let you find, collect, and import a known set of PST files to Microsoft 365 and prevent the future proliferation of PST files in your organization. 
   
 ## How the PST Collection tool works
 
 Here's a quick overview of the process of using the PST Collection tool to find, control, collect, and delete PST files in your organization.
   
-![Overview of the PST Collection tool process](media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
+![Overview of the PST Collection tool process](../media/67a29f27-f83c-4f0a-9df4-7ed92d3086fe.png)
   
 1. **[Step 1: Find PST files on your network](#step-1-find-pst-files-on-your-network)** - When you run the tool to find PST files, you specify a location, such as an organizational unit that contain Active Directory objects for client and server computers. You can also search specific machines or network file shares. When you run the tool, a "lightweight" Collection Agent is installed on the target computers. This agent searches the target computer for PST files and then sends information back to the PST Collection tool about any PST file it finds. The tool creates log files that contains information about the PST files that were found in the specified locations. These files are used when you run the tool in later steps. 
     
@@ -162,7 +167,7 @@ To block access to PST files:
 The next step is to copy the PST files that where found when you ran the PST Collection tool in the Find mode. This lets you collect the PST files in one location so that you can later import them to Office 365. Before you copy the PST files to collection location, consider determining the total amount of storage space that is required. You can do this using the CSV file that was created in Step 1 to calculate the total size of all PST files.
   
 > [!NOTE]
-> After you've imported the PST files to Office 365 and deleted them from their original location, you might want to delete them from the collection location that you copied them to in this step. 
+> After you've imported the PST files to Microsoft 365 and deleted them from their original location, you might want to delete them from the collection location that you copied them to in this step. 
   
 1. Open a Command Prompt (run as administrator) on your local computer.
     
@@ -183,7 +188,7 @@ The next step is to copy the PST files that where found when you ran the PST Col
     | `JobName` <br/> |Specifies the name of an existing PST Collection job. You have to use this same job name that you used when you ran the tool in the Find mode in Step 1. This job name is also added to the name of the log file that is created when you run the tool in the Collect mode.  <br/> | `-JobName PstSearch1` <br/> |
     | `Locations` <br/> |Use the same value that you used for the  `Locations` parameter in Step 1. You have include this parameter when you run the tool in the Collect mode if you want to re-run the tool to delete the PST files from their source location in Step 5.  <br/> | `-Locations "CN=FILESERVER01,CN=Computers,DC=contoso,DC=com"; "CN=FILESERVER02,CN=Computers,DC=contoso,DC=com"` <br/> |
     | `ConfigurationLocation` <br/> |Specifies the folder that contains the .xml configuration file that was created when you ran the tool in the Find mode. Use the same value that you used for this parameter in Step 1.  <br/> | `-ConfigurationLocation "c:\users\admin\desktop \PSTCollection\Configuration"` <br/> |
-    | `CopyLocation` <br/> |Specifies the collection location where you want to copy the PST files to. You can copy files to a file server, a network file share, or a hard drive. The location must exist before you run the tool in the Collect mode. The tool doesn't create the location, and will return an error saying that it doesn't exist.  <br/> Also, you have to write permissions to the collection location specified by this parameter.  <br/> | `-CopyLocation "\\FILESERVER03\PSTs"` <br/> |
+    | `CopyLocation` <br/> |Specifies the collection location where you want to copy the PST files to. You can copy files to a file server, a network file share, or a hard drive. The location must exist before you run the tool in the Collect mode. The tool doesn't create the location, and will return an error saying that it doesn't exist.  <br/> Also, you have to write permissions to the collection location specified by this parameter.  <br/><br/>If the device that you want to copy the PST files to isn't visible by using the `\\SERVER\SHARE` syntax, then map a drive letter to the device and use the mapped drive letter for the value of this parameter. | `-CopyLocation "\\FILESERVER03\PSTs"` <br/>Or<br/>`-CopyLocation "z:\"`|
     | `LogLocation` <br/> |Specifies the folder that the log file for the Collect mode will be copied to. This is an optional parameter. If you don't include it, the log file is copied to the folder where you downloaded the PST Collection tool to. Consider using the same log location that you used when you ran the tool in the Find mode in Step 1 so that all the log files are saved in the same folder.  <br/> | `-LogLocation "c:\users\admin\desktop\PSTCollection"` <br/> |
     | `ForceRestart` <br/> |This optional switch lets you re-run the tool in the Collection mode for an existing PST Collection job. If you previously ran the tool in the Collect mode, but then ran the tool again in the Find mode with the  `ForceRestart` switch to re-scan locations for PST files, you can use this switch to re-run the tool in Collection mode and re-copy the PST files there were found when your re-scanned the locations. When using the  `ForceRestart` switch in Collection mode, the tool ignores any previous Collection operations and attempts to copy the PST files from scratch.  <br/> | `-ForceRestart` <br/> |
    
@@ -233,7 +238,7 @@ After the PST files that you found and collected have been imported to Exchange 
     
     |****Parameter****|****Description****|****Examples****|
     |:-----|:-----|:-----|
-    | `DataSource` <br/> |Specifies the type of data to search for. Currently, you can use the PST Collection tool to search for PST files. ![spacer](media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
+    | `DataSource` <br/> |Specifies the type of data to search for. Currently, you can use the PST Collection tool to search for PST files. ![spacer](../media/b078d05c-3aee-4b9f-8805-6a8a9d8970ee.png)           <br/> | `-DataSource Pst` <br/> |
     | `Mode` <br/> |Specifies the type of operation that the tool will perform. Use the value  `Delete` to delete that PST files that were found when you ran to the tool in the Find mode.  <br/> | `-Mode Delete` <br/> |
     | `JobName` <br/> |Specifies the name of an existing PST Collection job. You have to use this same job name that you used when you ran the tool in the Find mode and the Collect mode in Step 1 and Step 3. This job name is also added to the name of the log file that is created when you run the tool in the Delete mode.  <br/> | `-JobName PstSearch1` <br/> |
     | `ConfigurationLocation` <br/> |Specifies the folder that contains the .xml configuration file that was created when you ran the tool in the Collect mode. Use the same value that you used for this parameter in Step 3.  <br/> | `-ConfigurationLocation "c:\users\admin\ desktop\PSTCollection\Configuration"` <br/> |

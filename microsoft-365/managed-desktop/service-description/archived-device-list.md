@@ -4,6 +4,9 @@ description: Devices nearing retirement that you can still enroll but will have 
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ---
 
@@ -18,7 +21,7 @@ To assure the best user experience, Microsoft Managed Desktop retires support fo
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 To be enrolled in Microsoft Managed Desktop a device must be one of the following models and meet or exceed the listed specifications for RAM, processor family, and disk space. No other customization is supported.
 
-The links to devices here are for your reference only. If you want to order devices, work with your commercial channel contacts to ensure that you choose the correct configurations.
+
 
 >[!NOTE]
 >In this table, the "retirement date" is the date on which this model will no longer be supported by Microsoft Managed Desktop at all. On that date, all enrolled devices of this model will be removed from Microsoft Managed Desktop, no matter when they were enrolled.
@@ -27,16 +30,23 @@ The links to devices here are for your reference only. If you want to order devi
 
 | Model  | Minimum specs  | Additional requirements  | Retirement date |
 |---------|---------|---------|---------|
-| [HP EliteBook 830 / 840 / 850 G5](https://store.hp.com/us/en/mdp/laptops/elitebook-840#!&tab=features) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
-|[Surface Laptop](https://www.microsoft.com/p/surface-laptop-1st-gen-for-business/8w36k32zm453/g4vs?cid=msft_web_collection&CustomerIntent=Consumer&activetab=pivot%3aoverviewtab) | 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
-|[Surface Pro](https://www.microsoft.com/p/surface-pro-5th-gen-for-business/907tds4dgwwv/kkzn?cid=msft_web_collection&CustomerIntent=Consumer) | 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |
+| Dell Latitude 5490| 256 GB / Intel i5 / 8 GB RAM | IR camera required | **Jan 9, 2023** |
+| Dell Latitude 7390 7390 2-in-1 / 7490 | 256 GB / Intel i5 / 8 GB RAM   | IR camera required | **Jan 9, 2023** |
+|HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required  | **Feb 15, 2023** |
+|HP Elite x2 1013 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV, IR camera required |**May 14, 2023** |
+|HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required |**May 14, 2023** |
+|HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | **Oct 23, 2023** |
+|Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | None | **Nov 16, 2022** |
+|Surface Go| 128 GB / Intel 4415Y / 8GB RAM | None | **Aug 2, 2023** |
+|Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
+|Surface Pro| 256 GB / Intel i5 / 8 GB RAM | None | **Jun 15, 2022** |
 
 
 In addition, the device must also:
 
 - Have an image approved by Microsoft Managed Desktop. When you order devices, make sure you specify that they are being used with Microsoft Managed Desktop.
 - Not have completed the Windows first-run experience.
-- Be registered with Microsoft Managed Destkop using the [Device Registration](https://aka.ms/mmddrhelp) feature
+- Be registered with Microsoft Managed Desktop using the [Device Registration](https://aka.ms/mmddrhelp) feature
 
 #### Additional help
 

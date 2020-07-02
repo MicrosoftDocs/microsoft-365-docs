@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Korea-Information Security Management System (K-ISMS)
+# Korea-Information Security Management System (K-ISMS)
 
 ## About K-ISMS
 
@@ -78,7 +81,3 @@ Organizations can apply for the K-ISMS certification based on the 80 controls fo
 - [K-ISMS documents and guidelines](https://isms.kisa.or.kr/main/isms/notice/) (Korean)
 - [Azure Regions](https://azure.microsoft.com/global-infrastructure/regions/)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/C/6/2C6FFA1C-1BA8-48E8-887A-4EA52E256AF3/K-ISMS-Compliance.pdf).

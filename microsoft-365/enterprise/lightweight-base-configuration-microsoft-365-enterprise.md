@@ -1,5 +1,7 @@
 ---
 title: "Lightweight base configuration"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: Use this Test Lab Guide to create a lightweight test environment for testing Microsoft 365 Enterprise.
 ---
@@ -23,14 +26,14 @@ description: Use this Test Lab Guide to create a lightweight test environment fo
 
 This article provides you with step-by-step instructions to create a simplified environment with a Microsoft 365 E5 subscription and a computer running Windows 10 Enterprise. 
 
-![The lightweight Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![The lightweight Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 Use the resulting environment to test the features and functionality of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
 
-![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
+![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
   
 > [!TIP]
-> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [Microsoft 365 Enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
 ## Phase 1: Create your Office 365 E5 subscription
 
@@ -38,67 +41,39 @@ We start with an Office 365 E5 trial subscription and then add the Microsoft 365
 
 To start your Office 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
-1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![](./media/Common-Images/TableLine.png)
+1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line](../media/Common-Images/TableLine.png)
     
 2. To sign up for a new Microsoft account, go to [https://outlook.com](https://outlook.com) and create an account with a new email account and address. You will use this account to sign up for Office 365.
     
-  - Record the first and last name of your new account here: ![](./media/Common-Images/TableLine.png)
+  - Record the first and last name of your new account here: ![Line](../media/Common-Images/TableLine.png)
     
-  - Record the new email account address here: ![](./media/Common-Images/TableLine.png)@outlook.com
+  - Record the new email account address here: ![Line](../media/Common-Images/TableLine.png)@outlook.com
     
 ### Sign up for an Office 365 E5 trial subscription
 
 1. Open the Internet browser on your computer and go to [https://aka.ms/e5trial](https://aka.ms/e5trial).
     
-2. On the **Welcome, let's get to know you** page, specify:
-    
-  - Your physical location
-    
-  - The first and last name of your new Microsoft account
-    
-  - Your new email account address
-    
-  - A business phone number
-    
-  - Your fictional company name
-    
-  - An organization size of 250-999 people
-    
-3. Click **Just one more step**.
-    
-4. On the **Create your user ID** page, type a user name based on your new email address, your fictional company after the @ sign (remove all spaces in the name), then a password (twice) for this new Office 365 account.
-    
-    Record the password that you typed in a secure location.
-    
-    Record your fictional company name, to be referred to as the **organization name**, here: ![](./media/Common-Images/TableLine.png)
-    
-5. Click **Create my account**.
-    
-6. On the **Prove. You're. Not. A. Robot.** page, type the phone number of your text-capable phone, and then click **Text me**.
-    
-7. Type the verification code from the received text message, and then click **Next**.
-    
-8. Record the sign-in page URL here (select and copy): ![](./media/Common-Images/TableLine.png)
-    
-9. Record the user ID here (select and copy): ![](./media/Common-Images/TableLine.png).onmicrosoft.com
-    
-    This value will be referred to as the **Office 365 global administrator name**.
-    
-10. When you see **You're ready to go**, click it.
-    
-11. On the next page, wait until Office 365 completes setting up and all the tiles are available.
-    
-You should see main Office 365 portal page from which you can access Office services and the Microsoft 365 admin center.
+2. On the **Thank you for choosing Office 365 E5** page, specify, your new email account address in step 1.
+3. In step 2 of the trail subscription process, type the requested information, and then perform the verification.
+4. In step 3, type an organization name and then an account name that will be the global admin for the subscription. 
+5. For step 4, record the sign-in page here (select and copy): ![Line](../media/Common-Images/TableLine.png) 
+6. Record the user ID here: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com  
+   Record the password that you typed in a secure location.
+   This value will be referred to as the **global administrator name**.
+8. Click **Go to Setup**.
+9. In Office 365 E5 Setup, click **Continue using *your organization*.onmicrosoft.com for email and signing in**, and then click **Exit and continue later**.
+
+You should see the Microsoft 365 admin center.
   
-We have you create a trial subscription of Office 365 so that your dev/test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means you can add and remove users and groups in the test tenant without affecting your production subscriptions.
+We have you create a trial subscription of Office 365 so that your test environment has a separate Azure AD tenant from any paid subscriptions you currently have. This separation means you can add and remove users and groups in the test tenant without affecting your production subscriptions.
     
 ## Phase 2: Configure your Office 365 trial subscription
 
-In this phase, you configure your Office 365 subscription with additional users and assign them Office 365 E5 licenses.
+In this phase, you configure your subscription with additional users and assign them Office 365 E5 licenses.
   
-Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your Office 365 subscription with the Azure Active Directory PowerShell for Graph module from your computer.
+Use the instructions in [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module) to connect to your subscription with the Azure Active Directory PowerShell for Graph module from your computer.
     
-In the Windows PowerShell Credential Request dialog box, type the Office 365 global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.
+In the **Windows PowerShell Credential Request** dialog box, type the global administrator name (example: jdoe@contosotoycompany.onmicrosoft.com) and password.
   
 Fill in your organization name (example: contosotoycompany), the two-character country code for your location, a common account password, and then run the following commands from the PowerShell prompt:
 
@@ -134,19 +109,19 @@ $LicensesToAssign.AddLicenses = $License
 Set-AzureADUserLicense -ObjectId $userUPN -AssignedLicenses $LicensesToAssign
 ```
 > [!NOTE]
-> The use of a common password here is for automation and ease of configuration for a dev/test environment. Obviously, this is highly discouraged for production subscriptions. 
+> The use of a common password here is for automation and ease of configuration for a test environment. Obviously, this is highly discouraged for production subscriptions. 
 
 ### Record key information for future reference
 
-You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription. You can easily extend the trail subscription for another 30 days. For a permanent dev/test environment, create a new paid subscription with a separate Azure AD tenant and a small number of licenses.
+You might want to print this article to record the specific information that you will need for this environment over the 30 days of the Office 365 trial subscription. You can easily extend the trail subscription for another 30 days. For a permanent test environment, create a new paid subscription with a separate Azure AD tenant and a small number of licenses.
 
 Record these values:
   
-- Office 365 global administrator name: ![](./media/Common-Images/TableLine.png).onmicrosoft.com (from step 9 of Phase 2)
+- global administrator name: ![Line](../media/Common-Images/TableLine.png).onmicrosoft.com (from step 6 of Phase 1)
     
     Also record the password for this account in a secure location.
     
-- Your trial subscription organization name: ![](./media/Common-Images/TableLine.png) (from step 4 of Phase 2)
+- Your trial subscription organization name: ![Line](../media/Common-Images/TableLine.png) (from step 4 of Phase 1)
     
 - To list the accounts for User 2, User 3, User 4, and User 5, run the following command from the Windows Azure Active Directory Module for Windows PowerShell prompt:
     
@@ -156,20 +131,20 @@ Record these values:
 
     Record the account names here:
     
-  - User 2 account name: user2@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 2 account name: user2@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 3 account name: user3@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 3 account name: user3@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 4 account name: user4@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 4 account name: user4@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
-  - User 5 account name: user5@![](./media/Common-Images/TableLine.png).onmicrosoft.com
+  - User 5 account name: user5@![Line](../media/Common-Images/TableLine.png).onmicrosoft.com
     
     Also record the common password for these accounts in a secure location.
    
 
-### Using an Office 365 dev/test environment
+### Using an Office 365 test environment
 
-If all you need is an Office 365 dev/test environment, you can stop here. 
+If all you need is an Office 365 test environment, you can stop here. 
 
 See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Office 365 and Microsoft 365.
   
@@ -177,32 +152,34 @@ See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.m
 
 In this phase, you sign up for the Microsoft 365 E5 trial subscription and add it to the same organization as your Office 365 E5 trial subscription.
   
-First, add the Microsoft 365 E5 trial subscription and assign a Microsoft 365 license to your global administrator account.
+First, add the Microsoft 365 E5 trial subscription and assign the new Microsoft 365 license to your global administrator account.
   
 1. With a private instance of an Internet browser, sign in to the Microsoft 365 admin center at [https://admin.microsoft.com](https://admin.microsoft.com) with your global administrator account credentials.
     
 2. On the **Microsoft 365 admin center** page, in the left navigation, click **Billing > Purchase services**.
     
-3. On the **Purchase services** page, find the **Microsoft 365 E5** item. Hover your mouse pointer over it and click **Start free trial**.
+3. On the **Purchase services** page, click **Microsoft 365 E5**, and then click **Get free trial**.
 
-4. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**.
+4. On the **Microsoft 365 E5 Trial** page, choose to receive a text or a call, enter your phone number, then click **Text me** or **Call me**. Perform the verification.
 
 5. On the **Confirm your order** page, click **Try now**.
 
 6. On the **Order receipt** page, click **Continue**.
 
-7. In the Microsoft 365 admin center, click **Active users**, and then your administrator account.
+7. In the Microsoft 365 admin center, click **Users > Active users**.
 
-8. Click **Edit** for **Product licenses**.
+8. In **Active users**, click your administrator account.
 
-9. Turn off the license for Office 365 Enterprise E5 and turn on the license for Microsoft 365 E5.
+9. Click **Licenses and apps**.
 
-10. Click **Save > Close > Close**.
+10. Disable the license for Office 365 Enterprise E5 and enable the license for Microsoft 365 E5.
+
+11. Click **Save changes** and then close the user account information pane.
 
 Next, repeat steps 8 through 11 of the previous procedure for all of your other accounts (User 2, User 3, User 4, and User 5).
   
 > [!NOTE]
-> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription to a paid subscription with a small number of licenses. 
+> The Microsoft 365 E5 trial subscription is 30 days. For a permanent test environment, convert this trial subscription into a paid subscription with a small number of licenses. 
   
 Your test environment now has:
   
@@ -211,7 +188,7 @@ Your test environment now has:
     
 Here is your resulting configuration, which adds Microsoft 365 E5, which includes both Office 365 and Enterprise Security + Management (EMS).
   
-![Phase 2 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
+![Phase 3 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
 ## Phase 4: Create a Windows 10 Enterprise computer
 
@@ -310,7 +287,7 @@ Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 su
     
 6. Close the settings window.
     
-Next, install Office 365 ProPlus on the WIN10 computer.
+Next, install Microsoft 365 Apps for enterprise on the WIN10 computer.
   
 1. Open the Microsoft Edge browser and sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
@@ -322,13 +299,13 @@ Next, install Office 365 ProPlus on the WIN10 computer.
     
 Here is your resulting environment.
 
-![Phase 5 of the Microsoft 3656 Enterprise test environment](media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
+![Phase 5 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
 This includes the WIN10 computer that has:
 
 - Joined the Azure AD tenant of your Microsoft 365 E5 subscription.
 - Enrolled as an Azure AD device in Microsoft Intune (EMS).
-- Has Office 365 ProPlus installed.
+- Has Microsoft 365 Apps for enterprise installed.
   
 You are now ready to experiment with additional features of [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise).
   

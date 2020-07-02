@@ -1,5 +1,7 @@
 ---
-title: Deployment of Microsoft 365 Enterprise with existing infrastructure
+title: Deployment of Microsoft 365 for enterprise with existing infrastructure
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -12,14 +14,14 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: 
-description: Step through the exit criteria for the deployment of Microsoft 365 Enterprise when you have existing infrastructure.
+description: Step through the exit criteria for the deployment of Microsoft 365 for enterprise when you have existing infrastructure.
 ---
 
-# Deployment of Microsoft 365 Enterprise with existing infrastructure
+# Deployment of Microsoft 365 for enterprise with existing infrastructure
 
-Many organizations have existing networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 Enterprise so you can quickly determine how to adapt or change your existing infrastructure.
+Many organizations have existing networking, identity, and other components or Microsoft on-premises products and cloud-based services. This article steps through each phase of the deployment of Microsoft 365 for enterprise so you can quickly determine how to adapt or change your existing infrastructure.
 
-Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meets the requirements for a Microsoft 365 Enterprise deployment.
+Before you can exit each phase, you must examine its exit criteria, which is a set of required conditions that you must meet and optional conditions to consider. Exit criteria for each phase ensures that your on-premises and cloud infrastructure and resulting end-to-end configuration meets the requirements for a Microsoft 365 for enterprise deployment.
 
 > [!Note] 
 > FastTrack is an ongoing and repeatable benefit—available for free as part of your subscription—that is delivered by Microsoft engineers to help you move to the cloud at your own pace. FastTrack also gives you access to qualified partners for additional services, as needed. With over 40,000 customers enabled to date, FastTrack helps maximize ROI, accelerate deployment, and increase adoption across your organization. See [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365).
@@ -42,11 +44,11 @@ Step through the following required and optional conditions for your Windows 10 
 
 [!INCLUDE [Deployment exit criteria for identity](./includes/deployment-exit-criteria-windows10.md)]
 
-## Exit criteria for Office 365 ProPlus (phase 4)
+## Exit criteria for Microsoft 365 Apps for enterprise (phase 4)
 
-Meet the requirements for assessment, deployment planning, and deployment of your Office 365 ProPlus infrastructure.
+Meet the requirements for assessment, deployment planning, and deployment of your Microsoft 365 Apps for enterprise infrastructure.
 
-[!INCLUDE [Deployment exit criteria for Office 365 ProPlus](./includes/deployment-exit-criteria-office365proplus.md)]
+[!INCLUDE [Deployment exit criteria for Microsoft 365 Apps for enterprise](./includes/deployment-exit-criteria-office365proplus.md)]
 
 ## Exit criteria for mobile device management (phase 5)
 

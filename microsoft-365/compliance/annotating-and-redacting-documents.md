@@ -1,5 +1,7 @@
 ---
-title: "View documents in a review set"
+title: Viewing documents in a review set
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
+ms.custom: seo-marvel-mar2020
 description: ""
 ---
 

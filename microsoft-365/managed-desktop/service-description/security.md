@@ -14,26 +14,13 @@ ms.date: 09/24/2018
 
 Microsoft Managed Desktop uses several Microsoft technologies to help secure managed devices and data. Specifically: 
 
-- [Data security](#data-security) - types of data collected by Microsoft Managed Desktop and where it's securely stored
+
 - [Device security](#device-security) – security and protection on Microsoft Managed Desktop devices
 - [Identity and Access Management](#identity-and-access-management) – managing secure use of devices through Azure Active Directory identity services
 - [Network security](#network-security) – VPN information and Microsoft Managed Desktop recommended solution and settings
 - [Information security](#information-security) – optional available services to further protect sensitive information 
 
-## Data security
-
-Data collected from customer tenants (which enables Microsoft Managed Desktop IT services and operations) is stored in Azure SQL databases in the Microsoft tenant hosted in the United States of America.
-
-For more information, see [Microsoft Azure security](https://docs.microsoft.com/azure/security/azure-database-security-overview).
-
-Listed below are the types of data transmitted from your tenant:
-
-- Device update, usage and reliability data
-- App deployment and reliability data
-- Update and security policy deployment data
-- Users assigned to devices
-- Security logs from your tenant related to the accounts used by Microsoft Managed Desktop to manage the service
-
+For information about data storage, usage, and security practices used by Microsoft Managed Desktop, please download our white paper at [https://aka.ms/mmd-data](https://aka.ms/mmd-data).
 
 
 ## Device security
@@ -56,7 +43,7 @@ Identity and access management protects corporate assets and business-critical d
 
 Service | Description
 --- | ---
-Biometric Authentication |	Windows Hello allows users to login using their face or a PIN, making passwords harder to forget or steal. Customers are responsible for implementing the necessary pre-requisites for their on-premises Active Directory for use of this service in a hybrid configuration. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
+Biometric Authentication |	Windows Hello allows users to sign in by using their face or a PIN, making passwords harder to forget or steal. Customers are responsible for implementing the necessary pre-requisites for their on-premises Active Directory for use of this service in a hybrid configuration. For more information, see [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello) 
 Standard user permission |	To protect the system and make it more secure, the user will be assigned Standard User Permissions. This is assigned as part of the Windows Autopilot out-of-box experience.
 
 
@@ -72,7 +59,7 @@ VPN | Customers own their VPN infrastructure, to ensure limited corporate resour
 
 ## Information security
 
-Customers may configure these optional services to help protect corporate high-value assets. 
+You can configure these optional services to help protect corporate high-value assets. 
 
 Service | Description
 --- | ---

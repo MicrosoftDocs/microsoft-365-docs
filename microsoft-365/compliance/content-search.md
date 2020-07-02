@@ -1,5 +1,7 @@
 ---
-title: "Content Search in Office 365"
+title: "Content Search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -16,12 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Office 365 groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content related to a GDPR data subject request."
+ms.custom:
+- seo-marvel-apr2020
+description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in a variety of Office 365 services."
 ---
 
-# Content Search in Office 365
+# Content Search
 
-You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your Office 365 organization. Use this tool to search for items in these Office 365 services:
+You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these services:
   
 - Exchange Online mailboxes and public folders
     
@@ -30,8 +34,10 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
 - Skype for Business conversations
     
 - Microsoft Teams 
-    
-- Office 365 Groups
+
+- Microsoft 365 Groups
+
+- Yammer Groups 
     
 After you run a Content Search, the number of content locations and an estimated number of search results are displayed in the search statistics. You can also quickly view statistics, such as the content locations that have the most items that match the search query. After you run a search, you can preview the results or export them to a local computer.
 
@@ -39,13 +45,13 @@ After you run a Content Search, the number of content locations and an estimated
 
 To have access to the **Content search** page to run searches and preview and export search results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security & Compliance Center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your Office 365 email address and password.
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your Microsoft email address and password.
     
 2. Click **Search** \> **Content search**.
     
-3. On the **Search** page, click the arrow next to ![Add icon](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**. 
+3. On the **Search** page, click the arrow next to ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New search**. 
     
-    ![The New search dropdown list](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
+    ![The New search dropdown list](../media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
     You can choose one of the following options:
     
@@ -61,7 +67,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
 5. Under **Search query**, specify the following things:
     
-    ![Specify keywords, conditions, and locations to search](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Specify keywords, conditions, and locations to search](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
    - **Keywords to search for:** Type a search query in **Keywords** box. You can specify keywords, message properties such as sent and received dates, or document properties such as file names or the date that a document was last changed. You can use more complex queries that use a Boolean operator, such as **AND**, **OR**, **NOT**, and **NEAR**. You can also search for sensitive information (such as social security numbers) in documents, or search for documents that have been shared externally. If you leave the keyword box empty, all content located in the specified content locations is included in the search results.
     
@@ -76,18 +82,17 @@ To have access to the **Content search** page to run searches and preview and ex
     
        - **Locations:** Choose the content locations to search.
     
-      - **All locations:** Use this option to search all content locations in your organization. This includes email in all Exchange mailboxes (including all inactive mailboxes, mailboxes for all Office 365 Groups, mailboxes for all Microsoft Teams), all Skype for Business conversations, all SharePoint and OneDrive for Business sites (including the sites for all Office 365 Groups and Microsoft Teams), and items in all Exchange public folders.
+      - **All locations:** Use this option to search all content locations in your organization. This includes email in all Exchange mailboxes (including all inactive mailboxes, and mailboxes for all Microsoft Teams, Yammer Groups, and Microsoft 365 Groups), all Skype for Business conversations, all SharePoint and OneDrive for Business sites (including the sites for all Microsoft Teams, Yammer Groups, and Microsoft 365 Groups), and items in all Exchange public folders.
     
-      - **Specific locations:** Use this option to search specific content locations. You can search all content locations for a specific Office 365 service (such as searching all Exchange mailboxes or search all SharePoint sites) or you can search specific locations in any of the Office 365 services that are displayed. 
+      - **Specific locations:** Use this option to search specific content locations. You can search all content locations for a specific Office 365 service (such as searching all Exchange mailboxes or search all SharePoint sites) or you can search for content in specific locations of any of the Office 365 services that are displayed. 
     
-        ![User interface to choose content locations to search](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![User interface to choose content locations to search](../media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
          You can also add distribution groups to the list of Exchange mailboxes to search. For distribution groups, the mailboxes of group members are searched. Dynamic distribution groups aren't supported.
     
        > [!NOTE]
        > When you search all mailbox locations or just specific mailboxes, data from other Office 365 applications that's saved to user mailboxes is included when you export the results of a Content Search. This data won't be included in the estimated search results and isn't available for preview. It is included when you export and download the search results. For more information, see [Content stored in Exchange Online mailboxes](what-is-stored-in-exo-mailbox.md).
-
-    
+   
 6. After you've set up your search query, click **Save & run**.
     
 7. On the **Save search** page, type a name for the search, and an optional description that helps identify the search. The name of the search has to be unique in your organization. 
@@ -98,13 +103,13 @@ To have access to the **Content search** page to run searches and preview and ex
     
 To access this content search again or access other content searches listed on the **Content search** page, select the search and then click **Open**. 
   
-To clear the results or create another search, click ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
+To clear the results or create another search, click ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif) **New search**. 
   
 ## Preview search results
 
 There are two configuration settings for previewing search results. After you run a new search or open an existing search, click **Individual results** to view the following preview settings: 
   
-![Preview search results settings](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Preview search results settings](../media/83519477-1c85-4442-8886-481f186fd758.png)
   
 1. **Preview results automatically:** This setting displays the search results after you a run a search.
     
@@ -130,13 +135,13 @@ To view search statistics:
     
 3. In the **Individual results** drop down list, click **Search statistics**.
     
-4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view. 
+4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view:
     
-  - **Summary:** Displays statistics for each type of content locations searched. This contents the number of content locations that contained items that matched the search query, and the total number and size of search result items. This is the default setting.
-    
-  - **Queries:** Displays statistics about the search query. This includes the type of content location the query statistics are applicable to, part of the search query the statistics are applicable to (note that **Primary** indicates the entire search query), the number of the content locations that contain items that match the search query, and the total number and size and items that were found (in the specified content location) that match the search query. Statistics for unindexed items (also called *partially indexed items*) are also displayed. However, only partially indexed items from mailboxes are included in the statistics. Partially indexed items from SharePoint and OneDrive are not included in the statistics.
-    
-  - **Top locations:** Displays statistics about the number of items that match the search query in each content location. The top 1,000 locations are displayed.
+    - **Summary:** Displays statistics for each type of content locations searched. This contents the number of content locations that contained items that matched the search query, and the total number and size of search result items. This is the default setting.
+
+    - **Queries:** Displays statistics about the search query. This includes the type of content location the query statistics are applicable to, part of the search query the statistics are applicable to (note that **Primary** indicates the entire search query), the number of the content locations that contain items that match the search query, and the total number and size and items that were found (in the specified content location) that match the search query. Statistics for unindexed items (also called *partially indexed items*) are also displayed. However, only partially indexed items from mailboxes are included in the statistics. Partially indexed items from SharePoint and OneDrive are not included in the statistics.
+
+    - **Top locations:** Displays statistics about the number of items that match the search query in each content location. The top 1,000 locations are displayed.
     
 For more detailed information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
   
@@ -149,7 +154,7 @@ To export search results:
   
 1. On the **Content search** page, click the search that you want to export the search results for. 
     
-2. On the flyout page, click ![Export search results icon](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then click **Export results**. You can also export a search results report.
+2. On the flyout page, click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **More**, and then click **Export results**. You can also export a search results report.
     
 3. Complete the sections on the **Export results** fly out page. Be sure to use the scroll bar to view all export options. 
     
@@ -170,7 +175,9 @@ See the following sections for more information about content searches.
   
 [Searching OneDrive accounts](#searching-onedrive-accounts)
   
-[Searching Microsoft Teams and Office 365 Groups](#searching-microsoft-teams-and-office-365-groups)
+[Searching Microsoft Teams and Microsoft 365 Groups](#searching-microsoft-teams-and-microsoft-365-groups)
+
+[Searching Yammer Groups](#searching-yammer-groups)
   
 [Searching inactive mailboxes](#searching-inactive-mailboxes)
   
@@ -186,7 +193,7 @@ See the following sections for more information about content searches.
 
 - For a description of the limits that are applied to the Content Search feature, see [Limits for Content Search](limits-for-content-search.md).
     
-- Microsoft collects performance information for Content Searches run by all Office 365 organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
+- Microsoft collects performance information for Content Searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
     
 |**Number of mailboxes**|**Average search time**|
 |:-----|:-----|
@@ -207,37 +214,39 @@ Keep the following things in mind when using the keyword list to create a search
     
     **Incorrect**
     
-    ![The incorrect way to format a keyword list (by pasting the list into the keyword box)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![The incorrect way to format a keyword list (by pasting the list into the keyword box)](../media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
     **Correct**
     
-    ![The correct way to format a keyword list (by selecting checkbox and then pasting list)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![The correct way to format a keyword list (by selecting checkbox and then pasting list)](../media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
 - You can also prepare a list of keywords or keyword phrases in an Excel file or a plain text file, and then copy and paste your list into the keyword list. To do this, you have to select the **Show keyword list** check box. Then, click the first row in the keyword list and paste your list. Each line from the Excel or text file is pasted into separate row in the keyword list. 
     
 - After you create a query using the keyword list, it's a good idea to verify the search query syntax to make the search query is what you intended. In the search query that's displayed under **Query** in the details pane, the keywords are separated by the text **(c:s)**. This indicates that the keywords are connected by a logical operator similar in functionality to the **OR** operator. Similarly, if your search query includes conditions, the keywords and the conditions are separated by the text **(c:c)**. This indicates that the keywords are connected to the conditions with a logical operator similar in functionality to the **AND** operator. Here's an example of the search query (displayed in the Details pane) that results when using the keyword list and a condition. 
     
-    ![Example of the query that's created when using the keyword list and a condition](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Example of the query that's created when using the keyword list and a condition](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- When you run a content search, Office 365 automatically checks your search query for unsupported characters and for Boolean operators that may not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
+- When you run a content search, Microsoft 365 automatically checks your search query for unsupported characters and for Boolean operators that may not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
     
-- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause. 
+- If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause. 
   
 ### Searching OneDrive accounts
 
-- To collect a list of the URLs for the OneDrive sites in your organization, see [Create a list of all OneDrive locations in your organization](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). This script in this article creates a text file that contains a list of all OneDrive sites. To run this script, you have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive site that you want to search. This is the domain that contains all your OneDrive; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- To collect a list of the URLs for the OneDrive sites in your organization, see [Create a list of all OneDrive locations in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls). This script in this article creates a text file that contains a list of all OneDrive sites. To run this script, you have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive site that you want to search. This is the domain that contains all your OneDrive; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-    In the rare case of a person's user principal name (UPN) being changed, the URL for their OneDrive location is changed to incorporate the new UPN. If this happens, you have to modify a content search by adding the user's new OneDrive URL and removing the old one.
+    In the rare case of a person's user principal name (UPN) being changed, the URL for their OneDrive location is changed to incorporate the new UPN. If this happens, you have to modify a content search by adding the user's new OneDrive URL and removing the old one. For more information, see [How UPN changes affect the OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes).
   
-### Searching Microsoft Teams and Office 365 Groups
+### Searching Microsoft Teams and Microsoft 365 Groups
 
-You can search the mailbox that's associated with an Office 365 Group or a Microsoft Team. Because Microsoft Teams is built on Office 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
+You can search the mailbox that's associated with an Microsoft 365 Group or a Microsoft Team. Because Microsoft Teams is built on Microsoft 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
   
-Keep the following things in mind when searching for content in Microsoft Teams and Office 365 Groups.
+Keep the following things in mind when searching for content in Microsoft Teams and Microsoft 365 Groups.
   
-- To search for content located in Teams and Office 365 Groups, you have to specify the mailbox and SharePoint site that are associated with a team or group.
+- To search for content located in Teams and Microsoft 365 Groups, you have to specify the mailbox and SharePoint site that are associated with a team or group.
+
+- Content from private channels is stored in each user's mailbox, not the team mailbox. To search for content in private channels, see [eDiscovery of private channels](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
-- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or an Office 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Office 365 Group named Senior Leadership Team: 
+- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or an Microsoft 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Microsoft 365 Group named Senior Leadership Team: 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -250,9 +259,9 @@ Keep the following things in mind when searching for content in Microsoft Teams 
     > [!NOTE]
     > To run the **Get-UnifiedGroup** cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role. 
   
-- When a user's mailbox is searched, any team or Office 365 Group that the user is a member of won't be searched. Similarly, when you search a team or an Office 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
+- When a user's mailbox is searched, any team or Microsoft 365 Group that the user is a member of won't be searched. Similarly, when you search a team or an Microsoft 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
     
-- To get a list of the members of a team or an Office 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
+- To get a list of the members of a team or an Microsoft 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -289,23 +298,44 @@ Keep the following things in mind when searching for content in Microsoft Teams 
 
   In the search results, meeting summaries are identified as **Meeting** in the **Type field**, and call summaries are identified as **Call**. Also, conversations that are part of a Teams channel and 1xN chats are identified as **IM** in the **Type** field.
   
-  ![Teams meetings, calls, and 1xN chats are identified in the Type field](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Teams meetings, calls, and 1xN chats are identified in the Type field](../media/O365-ContentSearch-Teams-MessageKind.png)
+
+   For more information, see [Microsoft Teams launches eDiscovery for calls and meetings](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams. 
   
   - To use the **Kind** property as part of the keyword search query, in the **Keywords** box of a search query, type `kind:microsoftteams`.
 
-    ![Use kind:microsoftteams in the Keywords box](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Use kind:microsoftteams in the Keywords box](../media/O365-ContentSearch-Teams-Keywords.png)
   
   - To use a search condition, add the **Message kind** condition and use the value `microsoftteams`. 
 
-    ![Use the Message kind condition with the value microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Use the Message kind condition with the value microsoftteams.](../media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
 Conditions are logically connected to the keyword query by the **AND** operator. That means an item must match both the keyword query and the search condition to be returned in the search results. For more information, see the "Guidelines for using conditions" section in [Keyword queries and search conditions for Content Search.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
   
+### Searching Yammer Groups
+
+You can use the **ItemClass** email property or the **Type** search condition to search specifically for conversation items in Yammer Groups.
+
+  - To use the **ItemClass** property as part of the keyword search query, in the **Keywords** box of a search query, you can type one (or all) of the following property:value pairs:
+
+     - ItemClass:IPM.Yammer.message
+     - ItemClass:IPM.Yammer.poll
+     - ItemClass:IPM.Yammer.praise
+     - ItemClass:IPM.Yammer.question
+  
+    For example, you can use the following search query to return Yammer messages and Yammer praise items:
+
+    ![Use the ItemClass property to search for Yammer items](../media/YammerContentSearch1.png)
+  
+  - Alternatively, you can use the **Type** email condition and select **Yammer messages** to return Yammer items. For example, the following search query will return all Yammer conversation items that contain the keyword "confidential". 
+
+    ![Use the Type condition card to search for Yammer conversation items](../media/YammerContentSearch2.png)
+
 ### Searching inactive mailboxes
 
-You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Data governance** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
+You can search inactive mailboxes in a content search. To get a list of the inactive mailboxes in your organization, run the command  `Get-Mailbox -InactiveMailboxOnly` in Exchange Online PowerShell. Alternatively, you can go to **Information governance** \> **Retention** in the Security & Compliance Center, and then click **More**![Navigation Bar ellipses](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Inactive mailboxes**.
   
 Here are a few things to keep in mind when searching inactive mailboxes.
 
@@ -316,7 +346,7 @@ Here are a few things to keep in mind when searching inactive mailboxes.
 - You can use Security & Compliance Center PowerShell to create a content search to search an inactive mailbox. To do this, you have to pre-append a period ( . ) to the email address of the inactive mailbox. For example, the following command creates a content search that searches an inactive mailbox with the email address pavelb@contoso.onmicrosoft.com:
 
    ``` 
-   New-ComplianceSearch -name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
+   New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true
    ```
 
 - We strongly recommend that you avoid having an active mailbox and inactive mailbox with the same SMTP address. If you need to reuse the SMTP address that is assigned to an inactive mailbox, we recommend that you recover the inactive mailbox or restore the contents of an inactive mailbox to an active mailbox (or the archive of an active mailbox), and then delete the inactive mailbox. For more information, see one of the following topics:
@@ -329,7 +359,7 @@ Here are a few things to keep in mind when searching inactive mailboxes.
 
 ### Searching disconnected or de-licensed mailboxes
 
-If the Exchange Online license (or the entire Office 365 license) is removed from a user account in Office 365 or in Azure Active Directory, the user's mailbox becomes a *disconnected* mailbox. This means that the mailbox is no longer associated with the user account. Here's what happens when searching disconnected mailboxes:
+If the Exchange Online license (or the entire Microsoft 365 license) is removed from a user account or in Azure Active Directory, the user's mailbox becomes a *disconnected* mailbox. This means that the mailbox is no longer associated with the user account. Here's what happens when searching disconnected mailboxes:
 
 - If the license is removed from a mailbox, the mailbox is no longer searchable. 
 

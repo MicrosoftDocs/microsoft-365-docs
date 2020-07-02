@@ -1,5 +1,7 @@
 ---
 title: "Bump up security protection for your campaign"
+f1.keywords:
+- NOCSH
 ms.author: samanro
 author: samanro
 manager: scotv

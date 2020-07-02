@@ -1,5 +1,7 @@
 ---
 title: "Export Content Search results"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -19,6 +21,7 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: "Export the search results from a Content Search in the Security & Compliance Center to a local computer. Email results are exported as PST files. Content from SharePoint and OneDrive for Business sites are exported as native Office documents. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Export Content Search results
@@ -29,7 +32,7 @@ Any RMS-encrypted email messages included in the results of a Content Search wil
   
 Exporting the results of a Content Search involves preparing the results, and then downloading them to a local computer.
   
-## Before you begin
+## Before you export content search results
 
 - To export search results, you have to be assigned the Export management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager role group. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     
@@ -39,15 +42,17 @@ Exporting the results of a Content Search involves preparing the results, and th
     
   - Microsoft .NET Framework 4.7
     
-  - A supported browser:
+- You have to use one of the following supported browsers to run the eDiscovery Export Tool<sup>1</sup>:
+
+  - Microsoft Edge <sup>2</sup>
+  
+    OR
+
+  - Microsoft Internet Explorer 10 and later versions
     
-     - Microsoft Edge
-    
-        OR
-    
-     - Microsoft Internet Explorer 10 and later versions
-    
-    **Note:** Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported. 
+  > [!NOTE]
+  > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
+  > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
     
 - When you download search results (described in Step 2), you can increase the download speed by configuring a Windows Registry setting on the computer you use to export the search results. For more information, see [Increase the download speed when exporting eDiscovery search results from Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
@@ -78,7 +83,7 @@ The first step is to prepare the search results for exporting. When you prepare 
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**.
     
@@ -151,7 +156,7 @@ As previously explained, you can increase the download speed by configuring a Wi
   
 3. Click **Download results**.
     
-4. If you're prompted to install the **MicrosoftOffice 365 eDiscovery Export Tool**, click **Install**.
+4. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
     
 5. In the **eDiscovery Export Tool**, paste the export key that you copied in step 2 in the appropriate box.
     
@@ -258,11 +263,11 @@ Here's more information about exporting search results.
     
     To export partially indexed items from all content locations for a search, configure the search to return all items (by removing any keywords from the search query) and then export only partially indexed items when you export the search results.
     
-    ![Use the third export option to export only unindexed items](media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
+    ![Use the third export option to export only unindexed items](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
 - When exporting search results from SharePoint or OneDrive for Business sites, the ability to export unindexed items also depends on the export option that you select and whether a site that was searched contains an indexed item that matches the search criteria. For example, if you search specific SharePoint or OneDrive for Business sites and no search results are found, then no unindexed items from those sites will be exported if you choose the second export option to export both indexed and unindexed items. If an indexed item from a site does match the search criteria, then all unindexed items from that site will be exported when exporting both indexed and unindexed items. The following illustration describes the export options based on whether a site contains an indexed item that matches the search criteria.
     
-    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
+    ![Choose the export option based on whether a site contains an indexed item that matches the search criteria](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
     
     a. Only indexed items that match the search criteria are exported. No partially indexed items are exported.

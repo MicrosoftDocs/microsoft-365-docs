@@ -19,7 +19,7 @@ There are two ways that users in your organization can get help with their Micro
 
 The preferred method for providing support to your users is **Get Help**, an easy-to-use interface built into the end user device.  
 
-![Get Help](images/get-help.png)
+![Get Help app icon](../../media/get-help.png)
 
 This is an application that’s installed on all Microsoft Managed Desktop devices and is pinned to the task bar. 
 
@@ -46,8 +46,16 @@ End users with Microsoft Managed Desktop devices also have access to toll-free p
 - United States: +1 855 425 0216
 - Canada (excluding Quebec): +1 855 425 0216
 - United Kingdom: +44 800 026 0698
+- Belgium: +32 800 58533
+- Luxembourg: +352 800 40119
 - Australia: +61 180 037 0619
 - New Zealand: +64 988 44380
+- Sweden: +46 20 120 3554
+- Norway: +47 800 62584
+- Iceland: +354 800 9006
+- Ireland: +353 1 800 832272
+- Denmark: +45 80 40 04 01
+- Finland: +358 800 525088
 
 >[!NOTE]
 >You'll need to have your organizational email address ready when you call to verify your identity. 

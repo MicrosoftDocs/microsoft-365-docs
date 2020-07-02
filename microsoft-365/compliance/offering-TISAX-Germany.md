@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Trusted Information Security Assessment Exchange (TISAX) Germany
+# Trusted Information Security Assessment Exchange (TISAX) Germany
 
 ## About TISAX
 
@@ -74,7 +77,3 @@ ENX provides certification confirmation only to registered industry representati
 - [Continental is adopting Microsoft Office 365 to boost productivity](https://www.avanade.com/en/clients/continental)
 - [Microsoft and ISO/IEC 27001:2013](offering-iso-27001.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/5/C/3/5C32AD74-703F-4B61-A290-B00B96E8DD8D/TISAX-Compliance.pdf).

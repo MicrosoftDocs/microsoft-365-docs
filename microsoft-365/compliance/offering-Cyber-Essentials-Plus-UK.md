@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: United Kingdom Cyber Essentials PLUS
+# United Kingdom Cyber Essentials PLUS
 
 ## UK Cyber Essentials PLUS overview
 
@@ -43,7 +46,3 @@ The [Azure Cyber Essentials PLUS certification](https://aka.ms/AzureCyberEPlusCe
 
 - [Cyber Essentials Scheme: Assurance framework](https://www.cyberaware.gov.uk/cyberessentials/files/assurance-framework.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/B/5/6B54EF7B-8BC2-4C88-8ABD-A20B986AF9C7/CyberEssentialsPlusUK-Compliance.pdf).

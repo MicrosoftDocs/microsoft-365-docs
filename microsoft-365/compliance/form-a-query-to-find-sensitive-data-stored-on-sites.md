@@ -1,5 +1,7 @@
 ---
 title: "Form a query to find sensitive data stored on sites"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,7 +16,7 @@ localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
-description: "With data loss prevention (DLP) in SharePoint Online, you can discover documents that contain sensitive data throughout your tenant. After discovering the documents, you can work with the document owners to protect the data. This topic can help you form a query to search for sensitive data."
+description: Use data loss prevention (DLP) in SharePoint Online to discover documents that contain sensitive data throughout your tenant.
 ---
 
 # Form a query to find sensitive data stored on sites
@@ -28,7 +30,7 @@ Users often store sensitive data, such as credit card numbers, social security n
 
 There are three parts that make up a basic DLP query: SensitiveType, count range, and confidence range. As illustrated in the following graphic, **SensitiveType:"\<type\>"** is required, and both**|\<count range\>** and**|\<confidence range\>** are optional. 
   
-![Example query divided into required and optional](media/DLP-query-example-text.png)
+![Example query divided into required and optional](../media/DLP-query-example-text.png)
   
 ### Sensitive type - required
 
@@ -81,10 +83,8 @@ Not all queries are created equal. The following table gives examples of queries
    
 ## For more information
 
-[What the sensitive information types look for](what-the-sensitive-information-types-look-for.md)
-  
-[Run a Content Search in the Office 365 Security &amp; Compliance Center](run-a-content-search-in-the-security-and-compliance-center.md)
-  
-[Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
+- [Run a Content Search](content-search.md)
+- [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md)
   
 

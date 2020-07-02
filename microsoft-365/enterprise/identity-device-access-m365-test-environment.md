@@ -1,6 +1,8 @@
 ---
 title: "Identity and device access for your Microsoft 365 test environment"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 04/23/2019

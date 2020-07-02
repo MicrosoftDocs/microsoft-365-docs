@@ -1,5 +1,7 @@
 ---
-title: "Apply labels to personal data in Office 365"
+title: "Apply labels to personal data"
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,41 +16,42 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Learn how to use Office labels as part of your GDPR protection plan."
+description: Learn how to use Office labels as part of your General Data Protection Regulation (GDPR) protection plan.
+ms.custom: seo-marvel-apr2020
 ---
 
-# Apply labels to personal data in Office 365
+# Apply labels to personal data
 
- Use this topic if you are using classification labels as part of your GDPR protection plan. 
+ Use this topic if you're using classification labels as part of your GDPR protection plan. 
 
-If you are using labels for protection of personal data in Office 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
+If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
 - Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.
 - Use retention labels with data loss prevention to apply protection. 
 - Use labels with eDiscovery and Content Search. 
 
-Cloud App Security doesn't currently support retention labels, but you can use Office 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.
+Cloud App Security doesn't currently support retention labels, but you can use Microsoft 365 sensitive information types with Cloud App Security to monitor personal data that resides in other SaaS apps.
 
-[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers. These are also recommended for files in Office 365 that require Azure Information Protection encryption for data protection, such as trade secret files.
+[Sensitivity labels](sensitivity-labels.md) are currently recommended for applying labels to files on premises and in other cloud services and providers. These are also recommended for files in Microsoft 365 that require Azure Information Protection encryption for data protection, such as trade secret files.
 
-At this time, using Azure Information Protection to apply encryption is not recommended for files in Office 365 with data that is subject to the GDPR. Office 365 services currently cannot read into AIP-encrypted files. Therefore, the service can’t find sensitive data in these files.
+At this time, using Azure Information Protection to apply encryption is not recommended for files in Microsoft 365 with data that is subject to the GDPR. Microsoft 365 services currently cannot read into AIP-encrypted files. Therefore, the service can't find sensitive data in these files.
 
-Retention labels can be applied to mail in Exchange Online and these labels work with Office 365 data loss prevention. 
+Retention labels can be applied to mail in Exchange Online and these labels work with Microsoft 365 data loss prevention. 
 
-![Office 365 labels and Azure Information Protection labels](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
+![Microsoft 365 labels and Azure Information Protection labels](../media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
 
 In the illustration:
 
--   Use retention labels for personal data and for highly regulated & trade secret files in SharePoint Online and OneDrive for Business.
--   Office 365 sensitive information types can be used within Office 365 and with Cloud App Security to monintor personal data that resides in other SaaS apps.
--   Use sensitivity labels for highly regulated & trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.
+-   Use retention labels for personal data and for highly regulated and trade secret files in SharePoint Online and OneDrive for Business.
+-   Microsoft 365 sensitive information types can be used within Microsoft 365 and with Cloud App Security to monitor personal data that resides in other SaaS apps.
+-   Use sensitivity labels for highly regulated and trade secret files, Exchange Online email, files in other SaaS services, files in on-premises datacenters, and files in other cloud providers.
 
 
 ## Use retention labels and sensitive information types across Microsoft 365 for information protection
 
 The following illustration shows how retention labels and sensitive information types can be used in label policies, data loss prevention policies, and with Cloud App Security policies.
 
-![Office labels and sensitive information types](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
+![Office labels and sensitive information types](../media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
 For accessibility, the following table provides the same examples in the illustration.
 
@@ -73,7 +76,7 @@ For accessibility, the following table provides the same examples in the illustr
 <p>. . . to documents with this label . . .</p>
 <p>Customer data</p></td>
 <td align="left"><p>Alert when files with these attributes . . .</p>
-<p>Choose one or more attribute: predefined PII attribute, Office 365 sensitive information type, sensitivity label (AIP), custom expression</p>
+<p>Choose one or more attributes: predefined PII attribute, Microsoft 365 sensitive information type, sensitivity label (AIP), custom expression</p>
 <p>. . . in any sanctioned SaaS app are shared outside the organization</p><p>Note: Retention labels are currently not supported in Cloud App Security.</td>
 </tr>
 <tr class="even">
@@ -94,7 +97,7 @@ For accessibility, the following table provides the same examples in the illustr
 
 For personal data that is subject to GDPR, Microsoft recommends auto-applying labels by using the sensitive information types you curated for your environment. It is important that auto-apply label policies are well designed and tested to ensure the intended behavior occurs.
 
-The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it is important to carefully plan the roll-out. Here’s what you need to know.
+The order that auto-apply policies are created and whether users are also applying these labels affect the result. So, it's important to carefully plan the roll-out. Here's what you need to know.
 
 ### One label at a time
 
@@ -102,11 +105,11 @@ You can only assign one label to a document.
 
 ### Older auto-apply policies win
 
-If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it is important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they will need to delete and recreate them.
+If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the label for the oldest rule is assigned. For this reason, it's important to plan the label policies carefully before configuring them. If an organization requires a change to the priority of the label policies, they'll need to delete and recreate them.
 
 ### Manual user-applied labels trump auto-applied labels
 
-Manual user applied labels trump auto-applied labels. Auto-apply policies cannot replace a label that is already applied by a user. Users can replace labels that are auto-applied.
+Manual user applied labels trump auto-applied labels. Auto-apply policies can't replace a label that is already applied by a user. Users can replace labels that are auto-applied.
 
 ### Auto-assigned labels can be updated
 
@@ -114,9 +117,9 @@ Auto-assigned labels can be updated by either newer label policies or by updates
 
 Be sure your plan for implementing labels includes:
 
--   Prioritizing the order that auto-apply policies are created.
+- Prioritizing the order that auto-apply policies are created.
 
--   Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
+- Allowing enough time for labels to be automatically applied before rolling these out for users to manually apply. It can take up to seven days for the labels to be applied to all content that matches the conditions.
 
 ### Example priority for creating the auto-apply policies
 
@@ -161,7 +164,7 @@ Be sure your plan for implementing labels includes:
 
 ## Create labels and auto-apply label policies
 
-Create labels and policies in the scurity center or the compliance center.
+Create labels and policies in the security center or the compliance center.
 
 <table>
 <thead>
@@ -174,7 +177,7 @@ Create labels and policies in the scurity center or the compliance center.
 <tr class="odd">
 <td align="left"><p>Give permissions to members of your compliance team.</p></td>
 <td align="left"><p>Members of your compliance team who will create labels need permissions to use the security center and/or the compliance center. Go to Permissions in the security center or the compliance center and modify the members of the Compliance Administrator group.</p>
-<p>See <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Give users access to the security center and/or the compliance center</a>.</p></td>
+<p>See <a href="https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center">Give users access to the security center and/or the compliance center</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Create retention labels.</p></td>
@@ -189,12 +192,12 @@ Create labels and policies in the scurity center or the compliance center.
 
 The following illustration shows how to create an auto-apply label for the Customer data label.
 
-![Create and apply a label for customer data](Media/Apply-labels-to-personal-data-in-Office-365-image3.png)
+![Create and apply a label for customer data](../media/Apply-labels-to-personal-data-in-Office-365-image3.png)
 
 In the illustration:
 
--   The “Customer data” label is created.
+- The "Customer data" label is created.
 
--   The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.
+- The desired sensitive information types for GDPR are listed: Belgium National Number, Credit Card Number, Croatia Identity Card Number, Finland National ID.
 
--   Create an auto-apply policy assigns the label “Customer data” to any file that includes one of the sensitive information types that you add to the policy.
+- Create an auto-apply policy assigns the label "Customer data" to any file that includes one of the sensitive information types that you add to the policy.

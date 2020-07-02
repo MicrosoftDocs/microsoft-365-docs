@@ -1,5 +1,7 @@
 ---
 title: "Create a new investigation in Data Investigations (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to create, configure, and save a new investigation in Data Investigations (Preview) in the Microsoft 365 compliance center.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Create a new investigation in Data Investigations (Preview)
@@ -43,4 +46,4 @@ description: ""
 
     The **Home** tab for the investigation is displayed. For example, here's a new investigation named *Critical: Tax document and finance data leakage*.
 
-    ![The Home tab for a new investigation in Data Investigations](media/NewDataInvestigations.png)
+    ![The Home tab for a new investigation in Data Investigations](../media/NewDataInvestigations.png)

@@ -1,5 +1,7 @@
 ---
-title: Understand your invoice
+title: Understand your bill or invoice
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -11,18 +13,26 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom:
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Learn how to read and understand your invoice for Microsoft business products."
+description: "Learn how to read and understand your bill or invoice for Microsoft business products."
 keywords: billing accounts, organization info, invoices
 ---
 
-# Understand your invoice
+# Understand your bill or invoice
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 The invoice provides a summary of your charges and instructions for payment. You can [view your online invoice](#view-your-online-invoice) in the Microsoft 365 admin center. You can also download it in the Portable Document Format (.pdf) to send via email.
 
-If you only have an Office 365 subscription, see [View your invoice for Office 365 for business](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/view-your-bill-or-invoice).
+If you only have a Microsoft 365 subscription, see [Understand your bill or invoice for Microsoft 365 for business](understand-your-invoice2.md).
 
 ## Understand the invoice header
 
@@ -32,7 +42,7 @@ The top of the first page identifies who is accountable for payment, where the b
 | --- | --- |
 | Sold to |The billing account that identifies the name and address of the legal entity responsible for payment. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">Billing accounts</a> page, where you can find the account agreement and manage roles and permissions. |
 | Bill to |Identifies who receives the invoice. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. The billing profile is also shown on the online invoice page, in the **Invoice summary** section. To learn more about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](manage-billing-profiles.md). |
-| Billing Profile |The name of the billing profile used to define invoice properties like Bill to, PO number, and payment terms. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](manage-billing-profiles.md). |
+| Billing Profile |The name of the billing profile used to define invoice properties like **Bill to**, **PO number**, and payment terms. This information can be managed on the <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Billing profiles</a> page. For more information about billing profiles and how you can use them to build more flexible billing options for your organization, see [Manage billing profiles](manage-billing-profiles.md). |
 | Invoice number |A unique, Microsoft-generated invoice number used for tracking purposes. |
 | Invoice date |Date that the invoice is generated, typically five to 12 days after the end of the billing cycle. You can check your invoice date on the billing profile details page. Charges that occur between the end of the billing period and the invoice date are included in the invoice for the next month, since they are in the next billing period. The billing period start and end dates for each invoice are listed in the invoice PDF above **Billing Summary**.|
 | Payment terms |How you pay for your Microsoft bill. *Net 30 days* means that you pay by following instructions on your invoice, within 30 days of the invoice date. |
@@ -65,15 +75,15 @@ The charges pages show the cost broken down by product. For Azure customers, the
 | Total | The total amount due for the purchase |
 
 Line items details vary depending on the type of product you're charged for. For example, for Azure products, the amount of Azure credits applied is shown. Seat-based products show a unit price and
-quantity. The invoice details outline the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
+quantity. The invoice details show the products purchased, discount or credits that were applied, tax rate and amount, and the line item totals.
 
-`Total = Charges - Azure Credit + Tax`
+    `Total = Charges - Azure Credit + Tax`
 
 The total amount due for each service family is calculated by subtracting Azure credits from credits/charges, and adding tax:
 
-`Total = Charges/Credits - Azure Credit + Tax`
+    `Total = Charges/Credits - Azure Credit + Tax`
 
-If there are Azure charges on your invoice that you would like more details on, see [Understand charges on your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/billing/billing-mca-understand-your-bill).
+If there are Azure charges on your invoice that you would like more details on, see [Review your Microsoft Customer Agreement invoice](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## Understand the last invoice page
 
@@ -90,11 +100,11 @@ If you have third-party services in your bill, the name and address of each publ
 Invoices are available online. A link to your online invoice is available from your PDF invoice, and from an email notification. The online invoice is expandable so you can view the charges on your invoice and
 see more details for each item. The online invoice includes:
 
-- **Pricing details** &mdash; Additional information including details about discounts and product pricing.
+- **Pricing details**&mdash;Additional information including details about discounts and product pricing.
 
-- **Online payment** &mdash; You can choose to make a payment online from the invoice.
+- **Online payment**&mdash;You can choose to make a payment online from the invoice.
 
-- **Azure cost management** &mdash; For Azure customers, online invoices include a link to Azure cost management.
+- **Azure cost management**&mdash;For Azure customers, online invoices include a link to Azure cost management.
 
 ### To view your online invoice
 
@@ -104,8 +114,44 @@ see more details for each item. The online invoice includes:
 
 3. To view your online invoice, choose an invoice from the list. You can also download the .pdf from the invoice details page.
 
+## Invoice FAQ
+
+### When is my Invoice available?
+
+Some invoices are generated within 24 hours of the purchase. Other invoices are generated at the end of the billing period and include all items from that period.
+
+### How do I pay the amount due on my Invoice?
+
+Payment instructions depend on your payment method and are provided at the bottom of the invoice PDF. If your payment method is a credit card, it's automatically charged within 10 days of the invoice date. If your payment method is by check or wire transfer, see the information under **Payment Instructions** in the PDF.
+
+### What's the difference between "Sold to" and "Bill to" addresses?
+
+- **Sold to:** The legal entity responsible for payment and identified on the invoice. The address provided here is used to determine your tax rate unless you opt to provide an alternative shipping address during your purchase. For more information, see [Tax information](tax-information.md).
+- **Bill to:** The address where the physical invoice is sent, if applicable. There can be multiple **Bill to** addresses per legal entity, but only one **Bill to** address per billing profile.
+
+### What are "Billed amount" and "Amount due?"
+
+- **Billed amount:** The total amount for the purchase that you made.
+- **Amount due:** The remaining balance for what you owe.
+
+### What is the difference between "'Service period" and "Billing period?"
+
+- **Service period:** The time period during which you're charged to use the service.
+- **Billing period:** The time period since the last invoice date.
+
+### How do I view and print my bill?
+
+1. On the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page, select an invoice date range.
+2. To print or save a PDF copy of the bill, select **Download invoice PDF**, and then print the PDF.
+
+To learn more, see [View your bill or invoice](view-your-bill-or-invoice.md).
+
+### Why don't I see Azure prepayment as a payment method?
+
+Azure prepayment is available as a payment method only for eligible Azure product and services.
+
 ## Need help? Contact support.
 
 If you have questions or need help with your Azure credits, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">create a support request with Azure support</a>.
 
-If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+If you have questions or need help with your invoice in Microsoft 365 admin center, [contact support for business products](../../admin/contact-support-for-business-products.md).

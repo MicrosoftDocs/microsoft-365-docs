@@ -1,5 +1,7 @@
 ---
 title: "Secure Windows 10 devices"
+f1.keywords:
+- CSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -17,16 +19,19 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: "Learn about default and other settings to secure Windows 10 devices. "
-ms.custom: OKR_SMB_M365
+description: "Learn about configuring the settings of the default device policy that any Windows 10 device will receive upon signing in to their work or school account."
 ---
 
 # Secure Windows 10 devices
+
+This article applies to Microsoft 365 Business Premium.
 
 The settings that you configure here are part of the default device policy for Windows 10. All users who connect a Windows 10 device, including mobile devices and PCs, by signing in with their work account will automatically receive these settings. We recommend that you accept the default policy during setup and add policies later that target specific groups of users.
   

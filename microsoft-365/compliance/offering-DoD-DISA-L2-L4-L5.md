@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: US Department of Defense (DoD) Provisional Authorization at Impact Levels 2, 4, and 5
+# US Department of Defense (DoD) Provisional Authorization at Impact Levels 2, 4, and 5
 
 ## DoD and DISA overview
 
@@ -25,12 +28,11 @@ DoD Cloud Service Support defines the policies, security controls, and other req
 
 ## Microsoft and US DoD Provisional Authorization
 
-Microsoft’s government cloud services meet the demanding requirements of the US Department of Defense, from impact levels 2 through 5, enabling U.S. defense agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud. By deploying protected services including Azure Government, Office 365 U.S. Government, and Dynamics 365 Government, defense agencies can use a rich array of compliant services.
+Microsoft's government cloud services meet the demanding requirements of the US Department of Defense, from impact levels 2 through 5, enabling U.S. defense agencies to benefit from the cost savings and rigorous security of the Microsoft Cloud. By deploying protected services including Azure Government, Office 365 U.S. Government, and Dynamics 365 Government, defense agencies can use a rich array of compliant services.
 
-- Learn about the benefits of DoD DISA L2, L4, L5 on the Microsoft Cloud: [Download the Department of Defense DISA Backgrounder](https://aka.ms/disa-backgrounder)
-- Learn how to accelerate your DoD DISA L2, L4, L5 deployment with our Azure Security and Compliance Blueprint: [Download the Azure DoD Level 5 security control implementations](https://servicetrust.microsoft.com/ViewPage/Blueprint?command=Download&downloadType=Document&downloadId=e391da04-ae17-472c-9634-959c5ce6ba92&docTab=fc060920-cdb8-11e7-bacf-0bf52b09d912_DoD%20Blueprint)
+- Learn how to accelerate your DoD DISA L2, L4 deployment with our [Azure DoD Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/)
 
-## [DoD Impact Level 5 Provisional Authorization
+## DoD Impact Level 5 Provisional Authorization
 
 DISA Cloud Service Support has granted a DoD Impact Level 5 PA for Microsoft Azure Government for DoD. DISA has also granted Office 365 U.S. Government Defense a DoD Impact Level 5 PA. Impact Level 5 covers Controlled Unclassified Information (CUI) deemed by law, other government regulations, or the agency that owns the information and needs a higher level of protection than Level 4 provides. It also covers unclassified National Security Systems.
 
@@ -48,7 +50,7 @@ Based on FedRAMP authorizations, DISA Cloud Service Support granted a DoD Impact
 - Dynamics 365 U.S. Government Software as a Service (SaaS) was granted this authorization based on the Agency FedRAMP Authority to Operate (ATO) from the Department of Housing and Urban Development (HUD).
 - Office 365 U.S. Government was granted this authorization based on the Agency FedRAMP ATO from the Department of Health and Human Services (DHHS).
 
-Impact Level 2 covers Non-Controlled Unclassified Information — data that is authorized for public release. It also covers other unclassified information that, while not considered “mission critical,” still requires a minimal level of access control. This authorization enables US federal government customers to deploy non-sensitive information and basic defense applications and websites on in-scope Microsoft cloud services.
+Impact Level 2 covers Non-Controlled Unclassified Information — data that is authorized for public release. It also covers other unclassified information that, while not considered 'mission critical,' still requires a minimal level of access control. This authorization enables US federal government customers to deploy non-sensitive information and basic defense applications and websites on in-scope Microsoft cloud services.
 
 ## Microsoft in-scope cloud services
 
@@ -75,32 +77,28 @@ Once granted a DoD PA, Microsoft cloud services are monitored and assessed annua
 
 ## Fast track your deployment of DoD solutions on Azure
 
-Get a head start on taking advantage of the benefits of the cloud in government with the Azure Security and Compliance Department of Defense Blueprint. This blueprint provides tools and guidance to get you started building DoD-compliant solutions today. [Start using the Azure DoD Blueprint](https://aka.ms/Azure-Blueprint-DoD-NIST).
+Get a head start on taking advantage of the benefits of the cloud in government with the Azure Security and Compliance Department of Defense Blueprint. This blueprint provides tools and guidance to get you started building DoD-compliant solutions today. [Start using the Azure DoD Blueprint](https://docs.microsoft.com/azure/governance/blueprints/samples/dod-impact-level-4/).
 
 ## Frequently asked questions
 
-**Can I use Microsoft’s compliance in my organization’s certification process?**
+**Can I use Microsoft's compliance in my organization's certification process?**
 
 Yes. All DoD agencies may rely on the certifications of Microsoft cloud services as the foundation for any program or initiative that requires a DoD authorization. (This also applies to other organizations that support DoD and require cloud services.) However, you need to achieve your own authorizations for components outside these services.
 
-**Does Microsoft’s DoD certification meet NIST 800–171 requirements?**
+**Does Microsoft's DoD certification meet NIST 800–171 requirements?**
 
-In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit “covered defense information” through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an “alternative, but equally effective, security measure” that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
+In October 2016, the Department of Defense (DoD) promulgated a final rule implementing Defense Federal Acquisition Regulation Supplement (DFARS) clauses that apply to all DoD contractors who process, store, or transmit 'covered defense information' through their information systems. The rule states that such systems must meet the security requirements set forth in NIST SP 800–171, [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf), or an 'alternative, but equally effective, security measure' that is approved by the DoD contracting officer. And where a DoD contractor uses an external cloud service provider to process, store, or transmit covered defense information, such provider must meet security requirements that are equivalent to the FedRAMP Moderate baseline.
 
 The following Microsoft cloud services have received a FedRAMP moderate authorization: Azure, Azure Government, Dynamics 365 U.S. Government, Office 365 MT, Office 365 U.S. Government, and Office 365 U.S. Government Defense.
 
-Also, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit “covered defense information” are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
+Also, Microsoft offerings outside the FedRAMP-certified boundary that could potentially be used by DoD contractors to process, store, or transmit 'covered defense information' are undergoing a review to meet a December 31, 2017, compliance deadline. Microsoft is working to document how these internal and customer-facing services comply with NIST SP 800–171 or an acceptable security equivalent, to meet the DFARS relevant clauses.
 
 ## Resources
 
 - [DoD Cloud Computing Security Requirements Guide (SRG) and other documents](https://public.cyber.mil/dccs/dccs-documents/)
-- [DISA Cloud Service Support](http://www.disa.mil/Computing/Cloud-Services/Cloud-Support)
+- [DISA Cloud Service Support](https://storefront.disa.mil/kinetic/disa/service-catalog#/forms/cloud-service-support)
 - [Protecting Controlled Unclassified Information in nonfederal information systems and organizations](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171.pdf)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Government Cloud](https://go.microsoft.com/fwlink/p/?linkid=2087246)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/5/0/C/50C2C028-3048-49BC-B820-D83C76BF2E52/DISA_Compliance_Backgrounder.pdf).

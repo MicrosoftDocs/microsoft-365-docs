@@ -1,5 +1,7 @@
 ---
 title: "Overview of setup"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -18,14 +20,22 @@ ms.custom:
 - Core_O365Admin_Migration
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
-description: "Overview of the setup steps for Microsoft 365 Business."
+description: "Learn the setup steps for Microsoft 365 Business Premium, from subscribing, to adding a domain and users, to setting up security policies, and more."
 ---
 
 # Overview of setup
+
+Watch a short video about Microsoft 365 Business Premium setup.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg] 
+
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Most of the setup steps can be done in the setup wizard, but the other options are also listed.
 
@@ -33,36 +43,37 @@ Most of the setup steps can be done in the setup wizard, but the other options a
 
    - **[Add your domain](set-up.md#add-your-domain-to-personalize-sign-in)** (if you bought your domain during [sign up](sign-up.md), this step is already done.)
 
-    - **Add users**. You can add users in any of the three ways:
+   - **Add users**. You can add users in any of the three ways:
         - In the [wizard](set-up.md#add-users-in-the-wizard).
         - Use directory synchronization to [add users by using Azure AD Connect](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) if you have an on-premises Active directory.
         - You can also [add users later](add-users-m365b.md) in the admin center.
 ## Step 2: Set up security policies and configure devices 
 
-  - Use the [Setup wizard](set-up.md#protect-data-and-devices) to configure device and security policies. 
+  - Use the [Setup wizard](set-up.md#protect-your-organization) to configure device policies. 
   - You can also add more or edit them later in the [admin center](view-policies-and-devices.md) and in the [Intune portal](https://docs.microsoft.com/intune/tutorial-walkthrough-intune-portal).
-  - In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
+  - The setup wizard will also set up basic threat protection and data loss prevention settings.
+  
+  In addition to the security settings in the setup wizard, you can increase your security by adding the following settings:
 
-      - **Email malware protection**
-      - **Advanced Threat Protection (ATP) Safe links**
-      - **ATP Safe Attachments**
-      - **ATP anti-phishing**
-      - **Exchange Online Archiving**
-      - **Data Loss Prevention (DLP)**
-      - **Azure Information Protection (Plan1**)
+- **Email malware protection**
+- **ATP anti-phishing**
+- **Exchange Online Archiving**
+- **Azure Information Protection (Plan1**)
 
-          To get started see, [set up advanced security policies](set-up-advanced-security.md).
+To get started, see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md).
 
-        See also [top 10 ways to secure your Microsoft 365 Business](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
+See also [top 10 ways to secure your Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a roadmap of best security practices.
 
 ## Step 3: Set up and manage Windows 10 devices
 
-   When you join a Windows 10 device to Azure AD, the policies you set up in [Step 2](#step-2-set-up-security-policies-and-configure-devices) get applied to it.
+After you run the set up wizard, you will want to proctect all the Windwos 10 computers in your organization.
+  
+- Windows 10 Pro is a [prerequisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business Premium, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
+- Follow the steps in [secure Windows 10 PCs](secure-win-10-pcs.md) to set up policies for Windows 10 devices.
 
-   - Windows 10 Pro is a [prerequisite](pre-requisites-for-data-protection.md) for Microsoft 365 Business, but if you have Windows 7 Pro, Windows 8 Pro, or Windows 8.1 Pro, your subscription entitles you to an [upgrade to  Windows 10 Pro](https://docs.microsoft.com/microsoft-365/business/upgrade-to-windows-pro-creators-update).
-    - Use the [Setup wizard](set-up.md#protect-data-and-devices) to configure policies for Windows 10 devices.
+When you join a Windows 10 device to Azure AD, the policies you set for Windows 10 computers get applied to it. For more information, see [Set up Windows devices for Microsoft 365 users](set-up-windows-devices.md).
 
-## Step 4: Install Office 365 Business
+## Step 4: Install Microsoft 365 Apps for business
 - You can automatically install Office in the Windows devices by using the [setup wizard](set-up.md#deploy-office-365-client-apps).
 - Let users [install Office apps](https://docs.microsoft.com/office365/admin/setup/install-applications) for Windows and devices.
      
@@ -73,8 +84,10 @@ Most of the setup steps can be done in the setup wizard, but the other options a
 
 - **Access on-premises resources**
 
-     - If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication. Follow the steps in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business](manage-windows-devices.md) to set this up. This is the preferred method, and devices in this state are called Hybrid Azure AD joined devices.
+     - If your organization uses Windows Server Active Directory on-premises, you can set up Microsoft 365 Business Premium to protect your Windows 10 devices, while still maintaining access to on-premises resources that require local authentication. Follow the steps in [Enable domain-joined Windows 10 devices to be managed by Microsoft 365 Business Premium](manage-windows-devices.md) to set this up. This is the preferred method, and devices in this state are called Hybrid Azure AD joined devices.
 
-    - If your business has a local Active Directory that contains some on-premises resources (such as file shares and printers), you can give your Azure AD-joined devices access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business](access-resources.md).
+    - If your business has a local Active Directory that contains some on-premises resources (such as file shares and printers), you can give your Azure AD-joined devices access to these resources by following the steps here: [Access on-premises resources from an Azure AD-joined device in Microsoft 365 Business Premium](access-resources.md).
 
-  
+## See also
+
+[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

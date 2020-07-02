@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Federal Financial Institutions Examination Council (FFIEC)
+# Federal Financial Institutions Examination Council (FFIEC)
 
 ## FFIEC overview
 
@@ -25,7 +28,7 @@ The [FFIEC Audit IT Examination Handbook](https://ithandbook.ffiec.gov/it-bookle
 
 Microsoft Azure, Microsoft Power BI, and Microsoft Office 365 are built to meet the stringent requirements of Providing cloud services for financial services institutions. As part of our support, we offer guidance to help you comply with FFIEC audit requirements for information technology and the ability to use Azure SOC attestations when pursuing your FFIEC compliance obligations.
 
-Accelerate your financial services deployment: [Download the Azure Security and Compliance FFIEC Financial Services Blueprint](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint)
+Accelerate your financial services deployment: [Download the Azure Security and Compliance FFIEC Financial Services Blueprint](https://servicetrust.officeppe.com/ViewPage/FFIECBlueprint)
 
 To help financial institution clients meet their FFIEC compliance requirements with Azure, Microsoft has developed the:
 
@@ -51,6 +54,10 @@ Azure and Office 365 SOC attestation reports.
 
 To help you meet these obligations, Microsoft supplies the specifics about our compliance with SOC standards as described above. However, ultimately, it is up to you to determine whether our services comply with the specific laws and regulations applicable to your institution. The FFIEC also advises that “users of audit reports or reviews should not rely solely on the information contained in the report to verify the internal control environment of the TSP. They should use additional verification and monitoring procedures as discussed more fully in the [Outsourcing Technology Booklet](https://ithandbook.ffiec.gov/it-booklets/outsourcing-technology-services.aspx) of the FFIEC IT Examination Handbook.”
 
+## Use Microsoft Compliance Score to assess your risk
+
+[Microsoft Compliance Score](compliance-score.md) is a preview feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) to help you understand your organization’s compliance posture and take actions to help reduce risks. After [setting up Compliance Score](compliance-score-setup.md), select the pre-configured [FFIEC Office 365 template](https://go.microsoft.com/fwlink/?linkid=2117912) and the [FFIEC Intune template](https://go.microsoft.com/fwlink/?linkid=2118101) from the **Template** drop-down menu to help your organization meet the requirements for this regulation.
+
 ## Resources
 
 - [Federal Financial Institutions Examination Council (FFIEC)](https://www.ffiec.gov/)
@@ -67,7 +74,3 @@ To help you meet these obligations, Microsoft supplies the specifics about our c
 - [Microsoft business cloud services and financial services](https://servicetrust.microsoft.com/viewpage/financialservicesoverview)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/2/7/62760960-C4B5-456B-9CF8-DCB7D692AAC4/FFIEC-Compliance.pdf).

@@ -1,5 +1,7 @@
 ---
 title: "Manage people of interest in Data Investigations (Preview)"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to manage people of interest to scope your search or view information such as contact, location, and activity logs.
+ms.custom: seo-marvel-mar2020
 ---
 # Manage people of interest in Data Investigations (Preview)
 
@@ -43,12 +46,12 @@ To add people of interest to an investigation:
 
 8. [Optional] In the flyout:
    
-    -  **Exchange Mailboxes** - Click **Choose users, groups, or Teams** and then click **Choose users, groups, or teams** again. To add more mailboxes, use the search box to find user mailboxes and distribution groups. You can also add mailboxes used to store an Office 365 Group or a Microsoft Team information. Select the user, group, team check box, click **Choose**, and then click **Done**.
+    -  **Exchange Mailboxes** - Click **Choose users, groups, or Teams** and then click **Choose users, groups, or teams** again. To add more mailboxes, use the search box to find user mailboxes and distribution groups. You can also add mailboxes used to store an Microsoft 365 Group or a Microsoft Team information. Select the user, group, team check box, click **Choose**, and then click **Done**.
 
         > [!NOTE]
         > When you click Choose users, groups, or teams to specify mailboxes, the mailbox picker that's displayed is empty. This is by design to enhance performance. To add people to this list, type a name (a minimum of 3 characters) in the search box.
      
-     - **SharePoint Sites** - Click **Choose sites** and then click **Choose sites** again to specify additional SharePoint and OneDrive for Business sites that you wwant to add to a person. You can also add the URL for the SharePoint site for an Office 365 Group or a Microsoft Team. Type the URL for each site that you want to assign. Click **Choose**, and then click **Done**.
+     - **SharePoint Sites** - Click **Choose sites** and then click **Choose sites** again to specify additional SharePoint and OneDrive for Business sites that you wwant to add to a person. You can also add the URL for the SharePoint site for an Microsoft 365 Group or a Microsoft Team. Type the URL for each site that you want to assign. Click **Choose**, and then click **Done**.
      - **Microsoft Teams** – Click **Choose Teams** and then click **Choose Teams** again to view a list of Microsoft Team groups that the person is a member of today. Select the Teams that you want to add to the person. Once selected, the system will automatically identify & select the associated SharePoint site and Group Mailbox associated to that Microsoft Team. Click **Choose**, and then click **Done**.
         
       > [!NOTE]
@@ -72,7 +75,7 @@ In **People of interest** tab, click on a person that you adeed. In a flyout, yo
 
   - **City**: The city in which the person is located.
   - **State**: The state or province in which the person is located.
-  - **Country/Region**: The country/region in which the person is located; for example, “US” or “UK”.
+  - **Country/Region**: The country/region in which the person is located; for example, "US" or "UK".
   - **Office**: The office location of the person.
 
 - Processing status

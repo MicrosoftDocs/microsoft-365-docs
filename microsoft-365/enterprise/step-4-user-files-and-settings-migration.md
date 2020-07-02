@@ -1,5 +1,7 @@
-﻿---
+---
 title: Step 4 - User Files and Settings Migration
+f1.keywords:
+- NOCSH
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
@@ -19,19 +21,19 @@ description: Learn how to migrate users' files and settings.
 
 Moving users’ files and settings to their new or refreshed PCs is a critical process, failure is not an option. You can migrate each PC manually or you choose one of several ways to automate the process. Whichever migration method you choose there are three main considerations to be addressed – the transfer of users’ files, their settings, and managing Windows 10 Start and taskbar layouts.
 
-![](media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
+![](../media/step-4-user-files-and-settings-migration-media/step-4-user-files-and-settings-migration-media-1.png)
 
 <table>
 <thead>
-<td><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
+<td><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-7.png" alt="Step 4" height="135" width="135" /></td>
 <td><p><strong>Step 4: User Files and Settings</strong></p>
 <p>When refreshing or replacing PCs, save time by automating user state backup and restore. New options for cloud file sync allow you to enforce per user sync of Desktop, Documents and Pictures folders to OneDrive for seamless file access from new Windows installs.</p></td>
-<td><a href="https://aka.ms/ddev4" target="_blank"><img src="media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
+<td><a href="https://aka.ms/ddev4" target="_blank"><img src="../media/desktop-deployment-center-home-media/desktop-deployment-center-home-media-17.png" alt="Step 4" height="130" width="231" /></a></td>
 </thead>
 </table>
 
 >[!NOTE]
->While you can continue to use migration processes you have used in the past, with your shift to Office 365 ProPlus we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
+>While you can continue to use migration processes you have used in the past, with your shift to Microsoft 365 Apps for enterprise we recommend you use OneDrive ‘Known Folder Move’ (see below). To see the full desktop deployment process, visit the [Desktop Deployment Center](https://aka.ms/HowToShift).
 >
 
 One of the trickiest and often most manual tasks of a large-scale deployment is the transferring of your users' files and settings. In this article we will cover the options available to you to migrate users to new, refreshed and re-imaged PCs.
@@ -42,11 +44,11 @@ When it comes to deciding on what to keep when moving to a new PC or a new versi
 
 Whether this is an option in your organization will depend on the scale of the migration you are planning. Clearly it is limited to the time and physics involved in working directly with users, understanding their needs, copying files across to their new, or freshly updated PC.
 
-If you are opting for a manual migration, you may need to assess whether you will be able to complete the task by January 2020, when support for Windows 7 ends. If this looks doubtful, look into using one of the automated options below, or request more people to help.
+If you are opting for a manual migration, look into using one of the automated options below, or request more people to help.
 
 ## Automated Migration using USMT 
 
-For large-scale deployments you can automate much of the process using task sequence-based deployment automation tools such as System Center Configuration Manager or the Microsoft Deployment Toolkit (MDT). Both these solutions make use User State Migration Tool (USMT) as part of their end-to-end deployment process. USMT is part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+For large-scale deployments you can automate much of the process using task sequence-based deployment automation tools such as Microsoft Endpoint Configuration Manager or the Microsoft Deployment Toolkit (MDT). Both these solutions make use User State Migration Tool (USMT) as part of their end-to-end deployment process. USMT is part of the [Windows Assessment and Deployment Kit (Windows ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
 
 USMT captures user accounts, user files, operating system settings, and application settings, and them migrates them to a new Windows installation. It also gives you, the IT Admin, control of exactly what gets migrated and, optionally, can exclude unwanted file types – for example audio and video files, or executables.
 

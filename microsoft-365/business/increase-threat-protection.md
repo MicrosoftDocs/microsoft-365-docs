@@ -1,5 +1,7 @@
 ---
-title: "Increase threat protection for Microsoft 365 Business"
+title: "Increase threat protection for Microsoft 365 for Business"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -14,18 +16,20 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-description: "Set up Office 365 Advanced Threat Protection, and safeguard sensitive data."
+description: "Set up Office 365 Advanced Threat Protection and safeguard sensitive data against phishing, malware, and other threats."
 ---
 # Increase threat protection
 
 This article helps you increase the protection in your Microsoft 365 subscription to protect against phishing, malware, and other threats. These recommendations are appropriate for organizations with an increased need for security, like law offices and health care clinics.
 
-Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your Office 365 organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users. 
+Before you begin, check your Office 365 Secure Score. Office 365 Secure Score analyzes your organization's security based on your regular activities and security settings, and assigns a score. Begin by taking note of your current score. To increase your score, complete the actions recommended in this article. The goal isn't to achieve the maximum score, but to be aware of opportunities to protect your environment that don't negatively affect productivity for your users. 
 
-For more information, see [Microsoft Secure Score](https://docs.microsoft.com/office365/securitycompliance/microsoft-secure-score).
+For more information, see [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score).
 
 ## Raise the level of protection against malware in mail
 
@@ -33,7 +37,7 @@ Your Office 365 or Microsoft 365 environment includes protection against malware
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your admin account credentials. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy** \> **Anti-Malware**.
     
 3. Double-click the default policy to edit this company-wide policy.
     
@@ -82,13 +86,13 @@ For more information, see:
   
 - [How to deal with ransomware](https://go.microsoft.com/fwlink/?linkid=2016501)
     
-- [Restore your OneDrive](https://support.office.com/article/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## Stop auto-forwarding for email
 
 Hackers who gain access to a user's mailbox can steal mail by setting the mailbox to automatically forward email. This can happen even without the user's awareness. To prevent this from happening, configure a mail flow rule. 
   
-To create a mail transport rule, either watch [this short video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) or follow these steps:
+To create a mail transport rule, either watch [this short video](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) or follow these steps:
   
 1. In the Microsoft 365 admin center, select **Admin centers** \> **Exchange**.
     
@@ -117,11 +121,11 @@ If you've configured one or more custom domains for your Office 365 or Microsoft
   
 We recommend that you get started with this protection by creating a policy to protect your most important users and your custom domain. 
 
-To create an ATP anti-phishing policy, watch  [this short training video](https://support.office.com/article/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
+To create an ATP anti-phishing policy, watch  [this short training video](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com). 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the **Policy** page, choose **ATP anti-phishing**.
     
@@ -147,11 +151,11 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
 
 People regularly send, receive, and share attachments, such as documents, presentations, spreadsheets, and more. It's not always easy to tell whether an attachment is safe or malicious just by looking at an email message. Office 365 Advanced Threat Protection includes ATP Safe Attachment protection, but this protection is not turned on by default. We recommend that you create a new rule to begin using this protection. This protection extends to files in SharePoint, OneDrive, and Microsoft Teams.
   
-To create an ATP safe attachment policy, either watch [this short video](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
+To create an ATP safe attachment policy, either watch [this short video](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the Policy page, choose **ATP safe attachments**.
     
@@ -174,8 +178,6 @@ To create an ATP safe attachment policy, either watch [this short video](https:/
    
 For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies).
   
-
-
 ## Protect against phishing attacks with ATP Safe Links
 
 Hackers sometimes hide malicious websites in links in email or other files. Office 365 ATP Safe Links (ATP Safe Links), part of Office 365 Advanced Threat Protection, can help protect your organization by providing time-of-click verification of web addresses (URLs) in email messages and Office documents. Protection is defined through ATP Safe Links policies.
@@ -186,11 +188,11 @@ We recommend that you do the following:
     
 - Add a new policy targeted to all recipients in your domain.
     
-To set up ATP Safe Links, watch [this short training video](https://support.office.com/article/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
+To set up ATP Safe Links, watch [this short training video](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa), or complete the following steps:
   
 1. Go to [https://protection.office.com](https://protection.office.com), and sign in with your admin account. 
     
-2. In the Office 365 Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
+2. In the Security &amp; Compliance Center, in the left navigation pane, under **Threat management**, choose **Policy**.
     
 3. On the Policy page, choose **ATP Safe Links**.
     
@@ -198,7 +200,7 @@ To modify the default policy:
   
 1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy. 
     
-2. Under **Settings that apply to content except email**, select **Office 365 ProPlus, Office for iOS and Android**.
+2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
     
 3. Select **Save**. 
     

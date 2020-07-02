@@ -1,5 +1,7 @@
 ---
-title: "Use Content Search to search the mailbox and OneDrive for Business site for a list of users"
+title: Search the mailbox & OneDrive for Business site for a list of users with Content Search
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,16 +13,19 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: "Use Content Search and the script in this article to search the mailboxes and OneDrive for Business sites for a group of users."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use Content Search to search the mailbox and OneDrive for Business site for a list of users
 
 The Security & Compliance Center provides a number of Windows PowerShell cmdlets that let you automate time-consuming eDiscovery-related tasks. Currently, creating a Content Search in the Security & Compliance Center to search a large number of custodian content locations takes time and preparation. Before you create a search, you have to collect the URL for each OneDrive for Business site and then add each mailbox and OneDrive for Business site to the search. In future releases, this will be easier to do in the Security & Compliance Center. Until then, you can use the script in this article to automate this process. This script prompts you for the name of your organization's MySite domain (for example, **contoso** in the URL https://contoso-my.sharepoint.com), a list of user email addresses, the name of the new Content Search, and the search query to use. The script gets the OneDrive for Business URL for each user in the list, and then it creates and starts a Content Search that searches the mailbox and OneDrive for Business site for each user in the list, using the search query that you provide. 
   
-## Before you begin
+## Permissions and script information
 
 - You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center and a SharePoint Online global administrator to run the script in Step 3.
     

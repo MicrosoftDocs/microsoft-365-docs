@@ -21,16 +21,16 @@ Microsoft will provide these services for Microsoft Managed Desktop devices. For
  --- | ---
 Support	| Support agents will answer questions directly related to device functionality and diagnose device issues.
 Inventory |	All devices are tracked in the Microsoft Managed Desktop Admin portal for inventory and status tracking.
-Firmware / driver updates |	By default, Microsoft Managed Desktop devices receive firmware and driver updates from Windows Update. Not all hardware partners deploy their updates via Windows Update; those updates can be separately requested.
+Firmware / driver updates |	By default, Microsoft Managed Desktop devices receive firmware and driver updates from Windows Update. Not all hardware partners deploy their updates via Windows Update. Updates not published as Automatic require an exception and must be deployed by the customer.
 Accessories	| Accessories that come with your device are covered by the same services as the device itself, but warranty terms may differ. Refer to the warranty terms chosen when selecting your devices. 
 Device setup	| Devices will be pre-configured with the current version of Windows and receive their apps and configurations via the cloud. 
 
 For information on device replacement, upgrades, and support terms, see your agreement with your device provider and your warranty terms.
 
 For information on Surface warranties and repairs:
+- [Surface for Business Help Center](https://support.microsoft.com/hub/4339296/surface-for-business-help)
 - [Warranties, extended service plans, and terms and conditions for your device](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
-- [Surface standard warranty](https://support.microsoft.com/help/4036296)
-- [Device service and repair](https://support.microsoft.com/devices)
+
 
 ## Device service limitations
 

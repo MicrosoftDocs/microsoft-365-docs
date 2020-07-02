@@ -1,5 +1,7 @@
 ---
-title: "Use Content Search in Office 365 for targeted collections"
+title: "Use Content Search for targeted collections"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,19 +13,22 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
-description: "Use Content Search in the Security & Compliance Center to perform targeted collections. A targeted collection means that you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. Use the script in this article to obtain the folder ID or path for the specific mailbox or site folders that you want to search."
+ms.custom: seo-marvel-apr2020
+description: Use Content Search in the Security & Compliance Center to perform targeted collections, which ensure items are located in a specific mailbox or site folder.
 ---
 
-# Use Content Search in Office 365 for targeted collections
+# Use Content Search for targeted collections
 
-The Content Search feature in the Office 365 Security &amp; Compliance Center doesn't provide a direct way in the UI to search specific folders in Exchange mailboxes or SharePoint and OneDrive for Business sites. However, it's possible to search specific folders (called a *targeted collection*) by specifying the folder ID property for email or path (DocumentLink) property for sites in the actual search query syntax. Using Content Search to perform a targeted collection is useful when you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. You can use the script in this article to obtain the folder ID for mailbox folders or the path (DocumentLink) for folders on a SharePoint and OneDrive for Business site. Then you can use the folder ID or path in a search query to return items located in the folder.
+The Content Search feature in the Security &amp; Compliance Center doesn't provide a direct way in the UI to search specific folders in Exchange mailboxes or SharePoint and OneDrive for Business sites. However, it's possible to search specific folders (called a *targeted collection*) by specifying the folder ID property for email or path (DocumentLink) property for sites in the actual search query syntax. Using Content Search to perform a targeted collection is useful when you're confident that items responsive to a case or privileged items are located in a specific mailbox or site folder. You can use the script in this article to obtain the folder ID for mailbox folders or the path (DocumentLink) for folders on a SharePoint and OneDrive for Business site. Then you can use the folder ID or path in a search query to return items located in the folder.
 
 > [!NOTE]
 > To return content located in a folder in a SharePoint or OneDrive for Business site, the script in this topic uses the DocumentLink managed property instead of the Path property. The DocumentLink property is more robust than the Path property because it will return all content in a folder, whereas the Path property won't return some media files.
 
-## Before you begin
+## Before you use Content Search
 
 - You have to be a member of the eDiscovery Manager role group in the Security &amp; Compliance Center to run the script in Step 1. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     
@@ -61,22 +66,22 @@ To display a list of mailbox folders or site documentlink (path) names:
     
   ```powershell
   #########################################################################################################
-  # This PowerShell script will prompt you for:								#
-  #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange	#
-  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.			#
-  # The script will then:											#
-  #    * If an email address is supplied: list the folders for the target mailbox.			#
+  # This PowerShell script will prompt you for:                                #
+  #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.            #
+  # The script will then:                                            #
+  #    * If an email address is supplied: list the folders for the target mailbox.            #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
-  #    * for the site.	                                                                                #
-  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)	#
-  #      appended to the folder ID or documentlink to use in a Content Search.				#
-  # Notes:												#
-  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the 	#
-  #      the current folder and all sub-folders are searched.						#
-  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder	#
-  #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for	#
-  #      each sub-folder that you want to search.								#
-  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.		#
+  #    * for the site.                                                                                    #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)    #
+  #      appended to the folder ID or documentlink to use in a Content Search.                #
+  # Notes:                                                #
+  #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the     #
+  #      the current folder and all sub-folders are searched.                        #
+  #    * For Exchange, only the specified folder will be searched; this means sub-folders in the folder    #
+  #      will not be searched.  To search sub-folders, you need to use the specify the folder ID for    #
+  #      each sub-folder that you want to search.                                #
+  #    * For Exchange, only folders in the user's primary mailbox will be returned by the script.        #
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
@@ -194,7 +199,7 @@ If you're getting mailbox folder IDs, the script connects to Exchange Online by 
   
 Here's an example of the output returned by the script for mailbox folders.
   
-![Example of the  list of mailbox folders and folder IDs returned by the script](media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
+![Example of the  list of mailbox folders and folder IDs returned by the script](../media/cd739207-eb84-4ebf-a03d-703f3d3a797d.png)
   
 The example in Step 2 shows the query used to search the Purges subfolder in the user's Recoverable Items folder.
   
@@ -204,7 +209,7 @@ If you're getting the path of the **documentlink** property from SharePoint or O
   
 Here's an example of the output returned by the script for site folders.
   
-![Example of the list of documentlink names for site folders returned by the script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Example of the list of documentlink names for site folders returned by the script](../media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
 ## Step 2: Use a folder ID or documentlink to perform a targeted collection
 
@@ -212,9 +217,9 @@ After you've run the script to collect a list of folder IDs or documentlinks for
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using the account and credentials that you used to run the script in Step 1.
+2. Sign in using the account and credentials that you used to run the script in Step 1.
     
-3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**, and then click **New** ![Add icon](media/O365-MDM-CreatePolicy-AddIcon.gif).
+3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**, and then click **New** ![Add icon](../media/O365-MDM-CreatePolicy-AddIcon.gif).
     
 4. On the **New search** page, type a name for the Content Search. This name has to be unique in your organization. 
     
@@ -232,7 +237,7 @@ After you've run the script to collect a list of folder IDs or documentlinks for
     
     For example, the query in the following screenshot will search for any item in the Purges subfolder in the user's Recoverable Items folder (the value of the `folderid` property for the Purges subfolder is shown in the screenshot in Step 1):
     
-    ![Paste the folderid or documentlink in to the keyword box of the search query](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Paste the folderid or documentlink in to the keyword box of the search query](../media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Click **Search** to start the targeted collection search. 
   

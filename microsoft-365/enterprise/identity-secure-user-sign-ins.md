@@ -1,5 +1,7 @@
 ---
 title: "Step 3: Secure and manage your user sign-ins"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,13 +19,13 @@ description: You can make user sign-ins to Windows devices and to Microsoft 365 
 
 # Step 3: Secure and manage your user sign-ins
 
-![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 
 <a name="identity-windows-hello"></a>
 ## Use Windows Hello for Business
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 Windows Hello for Business in Windows 10 Enterprise replaces passwords with strong two-factor authentication when signing on a Windows device. The two factors are a new type of user credential that is tied to a device and a biometric or PIN.
 
@@ -33,7 +35,7 @@ For more information, see [Windows Hello for Business Overview](https://docs.mic
 <a name="identity-mfa"></a>
 ## Set up Azure Multi-Factor Authentication
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this step, you'll set up Azure Multi-Factor Authentication (MFA) to add a second layer of security to user sign-ins and transactions. MFA requires an additional verification method after users have correctly entered their password. Without MFA, the password is the only verification method. The problem with passwords is that many of them are easily guessed by an attacker or unknowingly shared with untrusted parties.
 
@@ -48,7 +50,7 @@ For more information, see [Planning a cloud-based Azure Multi-Factor Authenticat
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure Multi-Factor Authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure Multi-Factor Authentication](multi-factor-authentication-microsoft-365-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-mfa) for this section.
@@ -80,11 +82,11 @@ The results of this step are that you've enabled Azure AD Identity Protection an
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-ident-prot) for this section.
 
 |||
 |:-------|:-----|
-|![Step 4](./media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |
+|![Step 4](../media/stepnumbers/Step4.png)| [Add your user accounts](identity-add-user-accounts.md) |

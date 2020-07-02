@@ -3,6 +3,8 @@ title: Mobile device management infrastructure exit criteria
 description: Microsoft 365 Enterprise includes mobile device management using Microsoft Intune. Review the requirements and prerequisites, set up Intune using your Azure Active Directory resource, enroll iOS, macOS, Android, and Windows devices, deploy apps, create a configure profile, use a compliance policy, and enable Conditional Access for mobile device management with Microsoft 365 Enterprise.
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, mobile device management, Intune
 author: JoeDavies-MSFT 
+f1.keywords:
+- NOCSH
 ms.author: josephd 
 manager: laurawi
 ms.date: 10/03/2019
@@ -17,7 +19,7 @@ ms.custom: microsoft-intune
 
 # Mobile device management infrastructure exit criteria
 
-![Phase 5: Mobile Device Management](./media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
+![Phase 5: Mobile Device Management](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon-small.png)
 
 *This applies to the E3 and E5 versions of Microsoft 365 Enterprise*
 
@@ -35,4 +37,4 @@ Your devices are enrolled in Intune and configured with the appropriate policies
 
 |||
 |:-------|:-----|
-|![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md). |
+|![Phase 6: Information Protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [information protection](infoprotect-infrastructure.md). |

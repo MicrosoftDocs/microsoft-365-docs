@@ -34,9 +34,8 @@ After you submit your support request, Microsoft Managed Desktop will create thr
 
 Azure AD Group name | Which users to assign?   
  --- | ---
-Modern Workplace-Office-Project_Install | Users needing only Project
-Modern Workplace-Office-Visio_Install | Users needing only Visio
-Modern Workplace-Office-Visio_Project_Install | Users needing both Project and Visio
+Modern Workplace-Office-Project_Install | Users needing Project
+Modern Workplace-Office-Visio_Install | Users needing Visio
 
 Once assigned to these groups, applications will be available in the Company Portal. It may take a few minutes to sync, but then your users can install the apps from Company Portal. 
 

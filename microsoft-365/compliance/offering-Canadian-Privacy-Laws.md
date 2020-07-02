@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Canadian Privacy Laws
+# Canadian Privacy Laws
 
 ## About Canadian Privacy Laws
 
@@ -71,7 +74,3 @@ PIPEDA doesn’t require Canadian businesses to keep personal information in Can
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 - [Privacy considerations in the cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/1/9/3/19390188-F5C7-4819-80BB-30B84304E499/CanadianPrivacyLaws-Compliance.pdf).

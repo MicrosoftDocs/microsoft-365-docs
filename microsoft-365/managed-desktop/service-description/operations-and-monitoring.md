@@ -4,6 +4,8 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
@@ -60,7 +62,7 @@ Not all changes have the same impact on your users or require action. Some are p
 **Type of change** | - Feature updates<br>- New features or applications<br>- Deprecated features | Client hotfixes for issues | Security patches
 **Advance notice** | 5 days notice for changes that require action |	No, these are included in the monthly release	| No, these are included in the monthly release 
 **Communication channel** | - Message Center<br>- Email alert | - Message Center<br>- Email alert | - Message Center<br>- Email alert
-**Requires tenant admin action** | Sometimes |	Rarely |	Rarely 
+**Requires global admin action** | Sometimes |	Rarely |	Rarely 
 **Type of action** | Change settings | Communicate changes to users | Change admin settings 	
 **Requires testing** | Check business applications, including remote access services |	Sometimes - testing the fix against processes or customizations |	Rarely 
 **Examples of change** | - Feature updates: IT Admin Portal simplified support ticket submission and review<br>- New features or applications: Semi-annual release of a Windows 10 feature update |	Hotfixes based on customer reported bugs |	
@@ -91,22 +93,22 @@ The Microsoft Managed Desktop Operations Team can perform a factory reset of dev
 
 There are a few requirements:
 
-- The customer’s tenant administrator must submit a service request
-- We need the computer name for the device
-- User account must be in Azure AD before we do the reset
+- Your global administrator must submit a service request.
+- Include the device's computer name in the request.
+- The user account must be in Azure AD before we reset the device.
 
-Managed Desktop Operations Team will:
+Managed Desktop Operations team will do the following:
 
 - Look up the device name in Intune
 - Send the factory reset command to the device
 
 >[!NOTE]
->Do not remove the user account from Azure AD before the factory reset. If the user isn’t in Azure AD, Intune can’t send the factory reset command to the device. 
+>Do not remove the user account from Azure AD before the device is reset. If the user isn’t in Azure AD, Intune can’t send the factory reset command to the device. 
 
-The device will boot into OOBE, and all preinstalled applications and settings will be applied again. The device’s user needs to provide initial set up information again. 
+The device will boot into the "out of box experience," and all preinstalled applications and settings will be applied again. The user of the device needs to provide initial setup information again. 
 
 When the device has been reset, you can give it to a different person in your organization. None of the previous user’s data or enterprise data will be on the device. The next user will go through the same process that the previous person did with a new Microsoft Managed Desktop device.
 
-BitLocker is a key component of data security in this process. With BitLocker encryption on Microsoft Managed Desktop devices, data on the drive remains secure even after Factory reset has been applied to the device. Any data that was on the drive will not be available to the next user of the device. For more information, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
+BitLocker is a key component of data security in this process. With BitLocker encryption on Microsoft Managed Desktop devices, data on the drive remains secure even after the device as been factory-reset. Any data that was on the drive will not be available to the next user of the device. For more information, see [BitLocker overview](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview).
 
 For more information, see [Factory reset a device](https://docs.microsoft.com/intune/remote-actions/devices-wipe#factory-reset-a-device). 

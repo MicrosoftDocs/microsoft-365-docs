@@ -1,5 +1,7 @@
 ---
 title: "Mail flow insights in the Security & Compliance Center"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -8,12 +10,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: "Admins can learn about the mail flow dashboard in the Security & Compliance Center."
+description: Admins can learn about the mail flow dashboard in the Security & Compliance Center, including insights, reports, and widgets.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Mail flow insights in the Security & Compliance Center
 
-Admins can use mail flow dashboard in the Security & Compliance Center to discover trends, insights and take actions to fix issues related to mail flow in their Office 365 organization.
+Admins can use mail flow dashboard in the Security & Compliance Center to discover trends, insights and take actions to fix issues related to mail flow in their organization.
 
 The insights, reports, and widgets that are available in the mail flow dashboard are:
 
@@ -43,9 +46,9 @@ The insights, reports, and widgets that are available in the mail flow dashboard
 
 The mail flow dashboard is available to:
 
-- Members of the **Office 365 global administrator** role.
+- Members of the **global administrator** role.
 
-- Members of **Office 365 Exchange administrator** role.
+- Members of **Exchange administrator** role.
 
 - Members of the **Mail flow administrator role** in the Security & Compliance Center. If this role is explicitly assigned to a user who isn't a member of the global administrator or Exchange administrator roles:
 
@@ -53,11 +56,11 @@ The mail flow dashboard is available to:
 
   - The user will only have read-only permission to the mail flow dashboard.
 
-  - The user won't have access to the Office 365 admin portal.
+  - The user won't have access to the Microsoft 365 admin center.
 
-For more information about the Office 365 global administrator role, see [About Office 365 admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+For more information about the global administrator role, see [About Microsoft 365 admin roles](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
-For information on assigning Security & Compliance Center roles to users, see [Give users access to the Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+For information on assigning Security & Compliance Center roles to users, see [Give users access to the Security & Compliance Center](grant-access-to-the-security-and-compliance-center.md).
 
 ## Where to find the mail flow dashboard
 
@@ -65,4 +68,4 @@ For information on assigning Security & Compliance Center roles to users, see [G
 
 2. Expand **Mail flow** and then select **Dashboard**.
 
-   ![The mail flow dashboard in the Office 365 Security & Compliance Center](../media/mail-flow-dashboard-v2.png)
+   ![The mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)

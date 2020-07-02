@@ -1,9 +1,11 @@
 ---
 title: "Federated identity for your Microsoft 365 test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 11/20/2019
+ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -24,11 +26,11 @@ description: "Summary: Configure federated authentication for your Microsoft 365
 
 *This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
 
-Office 365 supports federated identity. This means that instead of performing the validation of credentials itself, Office 365 refers the connecting user to a federated authentication server that Office 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Office 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for an Office 365 subscription and advanced authentication and security scenarios.
+Microsoft 365 supports federated identity. This means that instead of performing the validation of credentials itself, Microsoft 365 refers the connecting user to a federated authentication server that Microsoft 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Microsoft 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for a Microsoft 365 subscription and advanced authentication and security scenarios.
   
 This article describes how you can configure federated authentication for your Microsoft 365 or Office 365 test environment, resulting in the following:
 
-![The federated authentication for Microsoft 365 test environment](media/federated-identity-for-your-office-365-dev-test-environment/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![The federated authentication for Microsoft 365 test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 This configuration consists of: 
   
@@ -36,7 +38,7 @@ This configuration consists of:
     
 - A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Office 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
     
-There are five phases to setting up this dev/test environment:
+There are five phases to setting up this test environment:
   
 1. Create the simulated enterprise test environment with password hash synchronization.
     
@@ -46,7 +48,7 @@ There are five phases to setting up this dev/test environment:
     
 4. Create a self-signed certificate and configure ADFS1 and PROXY1.
     
-5. Configure Office 365 for federated identity.
+5. Configure Microsoft 365 for federated identity.
     
 > [!NOTE]
 > You cannot configure this test environment with an Azure Trial subscription. 
@@ -55,16 +57,16 @@ There are five phases to setting up this dev/test environment:
 
 Follow the instructions in [password hash synchronization for Microsoft 365](password-hash-sync-m365-ent-test-environment.md). Here is your resulting configuration.
   
-![The simulated enterprise with password hash synchronization test environment](media/federated-identity-for-your-office-365-dev-test-environment/be5b37b0-f832-4878-b153-436c31546e21.png)
+![The simulated enterprise with password hash synchronization test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase1.png)
   
 This configuration consists of: 
   
 - A Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
-- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscriptions periodically.
+- A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscriptions periodically.
 
 ## Phase 2: Create the AD FS server
 
-An AD FS server provides federated authentication between Office 365 and the accounts in the corp.contoso.com domain hosted on DC1.
+An AD FS server provides federated authentication between Microsoft 365 and the accounts in the corp.contoso.com domain hosted on DC1.
   
 To create an Azure virtual machine for ADFS1, fill in the name of your subscription and the resource group and Azure location for your Base Configuration, and then run these commands at the Azure PowerShell command prompt on your local computer.
   
@@ -104,7 +106,7 @@ Restart-Computer
 
 Here is your resulting configuration.
   
-![The AD FS server added to the DirSync for Microsoft 365 test environment](media/federated-identity-for-your-office-365-dev-test-environment/da82f39e-426d-41e2-842a-c13b382d63d5.png)
+![The AD FS server added to the DirSync for Microsoft 365 test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase2.png)
   
 ## Phase 3: Create the web proxy server
 
@@ -171,7 +173,7 @@ These commands create an internal DNS A record so that virtual machines on the A
   
 Here is your resulting configuration.
   
-![The web application proxy server added to the DirSync for Microsoft 365 test environment](media/federated-identity-for-your-office-365-dev-test-environment/f50039e4-796a-42c0-bfdc-87c2026b1579.png)
+![The web application proxy server added to the DirSync for Microsoft 365 test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 ## Phase 4: Create a self-signed certificate and configure ADFS1 and PROXY1
 
@@ -271,7 +273,7 @@ Next, configure the AD FS service with these steps:
     
 From the [Azure portal](https://portal.azure.com), connect to PROXY1 with the CORP\\User1 account credentials.
   
-Next, use these steps to install the self-signed certificate and configure PROXY1.
+Next, use these steps to install the self-signed certificate on **both PROXY1 and APP1**.
   
 1. Click **Start**, type **mmc.exe**, and then press **Enter**.
     
@@ -342,11 +344,11 @@ Use these steps to configure the web application proxy service to use ADFS1 as i
 8. On the **Results** page, click **Close**.
 
     
-## Phase 5: Configure Office 365 for federated identity
+## Phase 5: Configure Microsoft 365 for federated identity
 
 Use the [Azure portal](https://portal.azure.com) to connect to the APP1 virtual machine with the CORP\\User1 account credentials.
   
-Use these steps to configure Azure AD Connect and your Office 365 subscription for federated authentication:
+Use these steps to configure Azure AD Connect and your Microsoft 365 subscription for federated authentication:
   
 1. From the desktop, double-click **Azure AD Connect**.
     
@@ -354,7 +356,7 @@ Use these steps to configure Azure AD Connect and your Office 365 subscription f
     
 3. On the **Additional tasks** page, click **Change user sign-in**, and then click **Next**.
     
-4. On the **Connect to Azure AD** page, type your Office 365 global administrator account name and password, and then click **Next**.
+4. On the **Connect to Azure AD** page, type your global administrator account name and password, and then click **Next**.
     
 5. On the **User sign-in** page, click **Federation with AD FS**, and then click **Next**.
     
@@ -366,7 +368,7 @@ Use these steps to configure Azure AD Connect and your Office 365 subscription f
     
 9. On the **AD FS service account** page, type **CORP\\ADFS-Service** in **Domain Username** and the account password in **Domain User Password**, and then click **Next**.
     
-10. On the **Azure AD Domain** page, in **Domain**, select the name of the domain you previously created and added to your Office 365 subscription in Phase 1, and then click **Next**.
+10. On the **Azure AD Domain** page, in **Domain**, select the name of the domain you previously created and added to your subscription in Phase 1, and then click **Next**.
     
 11. On the **Ready to configure** page, click **Configure**.
     
@@ -382,7 +384,7 @@ To demonstrate that federated authentication is working:
     
 2. For the sign-in credentials, type **user1@**\<the domain created in Phase 1>. 
     
-    For example, if your test domain is **testlab.contoso.com**, you would type "user1@testlab.contoso.com". Press TAB or allow Office 365 to automatically redirect you.
+    For example, if your test domain is **testlab.contoso.com**, you would type "user1@testlab.contoso.com". Press TAB or allow Microsoft 365 to automatically redirect you.
     
     You should now see a **Your connection is not private** page. You are seeing this because you installed a self-signed certificate on ADFS1 that your desktop computer cannot validate. In a production deployment of federated authentication, you would use a certificate from a trusted certification authority and your users would not see this page.
     
@@ -396,9 +398,9 @@ To demonstrate that federated authentication is working:
     
     You should see the **Microsoft Office Home** page.
     
-This procedure demonstrates that your Office 365 trial subscription is federated with the AD DS corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:
+This procedure demonstrates that your trial subscription is federated with the AD DS corp.contoso.com domain hosted on DC1. Here are the basics of the authentication process:
   
-1. When you use the federated domain that you created in Phase 1 within the sign-in account name, Office 365 redirects your browser to your federation service FQDN and PROXY1.
+1. When you use the federated domain that you created in Phase 1 within the sign-in account name, Microsoft 365 redirects your browser to your federation service FQDN and PROXY1.
     
 2. PROXY1 sends your local computer the fictional company sign-in page.
     
@@ -406,13 +408,13 @@ This procedure demonstrates that your Office 365 trial subscription is federated
     
 4. ADFS1 validates CORP\\User1 and the password with DC1 and sends your local computer a security token.
     
-5. Your local computer sends the security token to Office 365.
+5. Your local computer sends the security token to Microsoft 365.
     
-6. Office 365 validates that the security token was created by ADFS1 and allows access.
+6. Microsoft 365 validates that the security token was created by ADFS1 and allows access.
     
-Your Office 365 trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.
+Your trial subscription is now configured with federated authentication. You can use this dev/test environment for advanced authentication scenarios.
   
 ## Next step
 
-When you are ready to deploy production-ready, high availability federated authentication for Microsoft 365 or Office 365 in Azure, see [Deploy high availability federated authentication for Office 365 in Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
+When you are ready to deploy production-ready, high availability federated authentication for Microsoft 365 or Office 365 in Azure, see [Deploy high availability federated authentication for Microsoft 365 in Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
   

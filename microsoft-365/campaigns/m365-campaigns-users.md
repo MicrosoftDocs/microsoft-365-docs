@@ -1,5 +1,7 @@
 ---
 title: "How Microsoft 365 for campaigns affects your users"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -27,7 +29,7 @@ description: "Learn how Microsoft 365 for campaigns affects your users."
 
 Microsoft 365 for Campaigns makes it much harder for hackers to gain access to your environment. The tradeoff is that your users will need to be aware of how to work within this more secure environment. We understand a little extra patience is required, but it's worth it to keep your organization protected.
 
-![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff](media/M365-democracy-Users_700px.png)
+![Illustration that sums up key points from below for iPhones, Android devices, Macs, Windows 10, sharing, and key staff](../media/M365-democracy-Users_700px.png)
 
 ## Use secure email practices
 All users should be aware of and use these email practices to help keep their email secure:
@@ -63,7 +65,7 @@ For [unmanaged Windows 10 and Mac devices](m365-campaigns-protect-pcs-macs.md), 
 
 To learn more about these recommendations, see [Protect your account and devices from hackers and malware](https://support.office.com/article/Protect-your-account-and-devices-from-hackers-and-malware-066d6216-a56b-4f90-9af3-b3a1e9a327d6#ID0EAABAAA=Windows_10).
 
-## Collaborate using Microsoft Teams, OneDrive, SharePoint Online, and other Office 365 tools
+## Collaborate using Microsoft Teams, OneDrive, SharePoint Online, and other tools
 Your users might be tempted to share and store your organization files in places other than Microsoft 365. Microsoft 365 makes it as easy as possible to collaborate and share securely. You can [share files and videos](share-files-and-videos.md) directly from Microsoft Teams, OneDrive, Stream, and even from within a file. Sharing from within these tools helps keep your data from leaking. You can add additional protection to sensitive data to prevent sharing outside your organization. 
 
 

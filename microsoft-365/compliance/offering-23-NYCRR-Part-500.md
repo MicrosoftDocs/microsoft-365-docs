@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Title 23 NYCRR Part 500
+# Title 23 NYCRR Part 500
 
 ## Title 23 NYCRR Part 500 overview
 
@@ -32,7 +35,7 @@ The New York regulations require each financial institution to:
 - **Designate a chief information security officer** (CISO) to manage the cybersecurity program and enforce policy. To help your CISO, Microsoft provides in-depth cybersecurity information about Microsoft cloud deployments through [Azure Security Center](https://azure.microsoft.com/services/security-center/?v=17.23h), [Office 365 Advanced Threat Analytics](https://docs.microsoft.com/advanced-threat-analytics/), and [Power BI Security](https://go.microsoft.com/fwlink/?LinkId=829185).
 - **Monitor and test the effectiveness of its cybersecurity program**: Microsoft provides information from audits of its cybersecurity practices that include continuous monitoring, periodic penetration testing, and vulnerability assessments. Customers can conduct their own tests without advance permission from Microsoft.
 - **Maintain an audit trail.** Built-in audit functionalities of Azure, Office 365, and Power BI customers generate information that can be used to reconstruct financial transactions and develop audit trail information.
-- **Limit access to information systems that contain nonpublic information**" Measures that Azure, Office 365, and Power BI offer a role-based access control (RBAC) process native to each service, strict security and access requirements for every Microsoft administrator, and audits of every request for elevated access privileges.
+- **Limit access to information systems that contain nonpublic information**: Measures that Azure, Office 365, and Power BI offer a role-based access control (RBAC) process native to each service, strict security and access requirements for every Microsoft administrator, and audits of every request for elevated access privileges.
 - **Institute procedures to assess and test the security of externally developed applications**: For developers using Visual Studio, [Security Rules](https://docs.microsoft.com/visualstudio/code-quality/security-rules-rule-set-for-managed-code) for managed code can help ensure that application cybersecurity threats are detected and mitigated before the code is deployed.
 - **Use periodic risk assessments to design and enhance cybersecurity programs**: For customers, Microsoft aggregates information about security threats, provides roadmaps of change management, and regularly updates information about subcontractors. Microsoft also regularly conducts risk assessments of its own services, the results of which are available to customers.
 - **Use qualified personnel to manage cybersecurity risks and oversee cybersecurity functions**: Microsoft employs stringent procedures for our employee access to your customer data. If we hire subcontractors, we remain responsible for service delivery, and ensure that subcontractors fully comply with Microsoft privacy and security commitments, including requirements for handling sensitive data, background checks, and non-disclosure agreements.
@@ -68,7 +71,3 @@ Consult the New York Department of Financial Services [Who We Supervise](https:/
 - [Microsoft Cloud Financial Services Compliance Program](https://www.microsoft.com/download/confirmation.aspx?id=55332)
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)- 
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/9/F/B/9FB6EE03-0096-4820-A5BF-B633EE2BE0B7/23NYCRR_Part500-Compliance.pdf).

@@ -1,5 +1,7 @@
 ---
 title: "Create a DLP policy to protect documents with FCI or other properties"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,20 +16,22 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance
-description: "Many organizations already have a process to identify and classify sensitive information by using the classification properties in Windows Server File Classification Infrastructure (FCI), the document properties in SharePoint, or the document properties applied by a third-party system. If this describes your organization, you can create a DLP policy in Office 365 that recognizes the properties that have been applied to documents by Windows Server FCI or other system, so that the DLP policy can be enforced on Office documents with specific FCI or other property values."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use a data loss prevention (DLP) policy to protect documents that have properties from a third-party system.
 ---
 
 # Create a DLP policy to protect documents with FCI or other properties
 
-In Office 365, you can use a data loss prevention (DLP) policy to identify, monitor, and protect sensitive information. Many organizations already have a process to identify and classify sensitive information by using the classification properties in Windows Server File Classification Infrastructure (FCI), the document properties in SharePoint, or the document properties applied by a third-party system. If this describes your organization, you can create a DLP policy in Office 365 that recognizes the properties that have been applied to documents by Windows Server FCI or other system, so that the DLP policy can be enforced on Office documents with specific FCI or other property values.
+In Microsoft 365, you can use a data loss prevention (DLP) policy to identify, monitor, and protect sensitive information. Many organizations already have a process to identify and classify sensitive information by using the classification properties in Windows Server File Classification Infrastructure (FCI), the document properties in SharePoint, or the document properties applied by a third-party system. If this describes your organization, you can create a DLP policy that recognizes the properties that have been applied to documents by Windows Server FCI or other system, so that the DLP policy can be enforced on Office documents with specific FCI or other property values.
   
-![Diagram showing Office 365 and external classification system](media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
+![Diagram showing Office 365 and external classification system](../media/59ad0ac1-4146-4919-abd1-c74d8508d25e.png)
   
-For example, your organization might use Windows Server FCI to identify documents with personally identifiable information (PII) such as social security numbers, and then classify the document by setting the **Personally Identifiable Information** property to **High**, **Moderate**, **Low**, **Public**, or **Not PII** based on the type and number of occurrences of PII found in the document. In Office 365, you can create a DLP policy that identifies documents that have that property set to specific values, such as **High** and **Medium**, and then takes an action such as blocking access to those files. The same policy can have another rule that takes a different action if the property is set to **Low**, such as sending an email notification. In this way, DLP in Office 365 integrates with Windows Server FCI and can help protect Office documents uploaded or shared to Office 365 from Windows Server-based file servers.
+For example, your organization might use Windows Server FCI to identify documents with personally identifiable information (PII) such as social security numbers, and then classify the document by setting the **Personally Identifiable Information** property to **High**, **Moderate**, **Low**, **Public**, or **Not PII** based on the type and number of occurrences of PII found in the document. In Microsoft 365, you can create a DLP policy that identifies documents that have that property set to specific values, such as **High** and **Medium**, and then takes an action such as blocking access to those files. The same policy can have another rule that takes a different action if the property is set to **Low**, such as sending an email notification. In this way, DLP integrates with Windows Server FCI and can help protect Office documents uploaded or shared to Microsoft 365 from Windows Server-based file servers.
   
 A DLP policy simply looks for a specific property name/value pair. Any document property can be used, as long as the property has a corresponding managed property for SharePoint search. For example, a SharePoint site collection might use a content type named **Trip Report** with a required field named **Customer**. Whenever a person creates a trip report, they must enter the customer name. This property name/value pair can also be used in a DLP policy — for example, if you want a rule that blocks access to the document for external users when the **Customer** field contains **Contoso**.
   
-Note that if you want to apply your DLP policy to content with specific Office 365 labels, you should not follow the steps here. Instead, learn how to [Using a label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
+Note that if you want to apply your DLP policy to content with specific Microsoft 365 labels, you should not follow the steps here. Instead, learn how to [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
   
 ## Before you create the DLP policy
 
@@ -35,13 +39,13 @@ Before you can use a Windows Server FCI property or other property in a DLP poli
   
 In SharePoint Online and OneDrive for Business, the search index is built up by crawling the content on your sites. The crawler picks up content and metadata from the documents in the form of crawled properties. The search schema helps the crawler decide what content and metadata to pick up. Examples of metadata are the author and the title of a document. However, to get the content and metadata from the documents into the search index, the crawled properties must be mapped to managed properties. Only managed properties are kept in the index. For example, a crawled property related to author is mapped to a managed property related to author.
   
-This is important because DLP in Office 365 uses the search crawler to identify and classify sensitive information on your sites, and then store that sensitive information in a secure portion of the search index. When you upload a document to Office 365, SharePoint automatically creates crawled properties based on the document properties. But to use an FCI or other property in a DLP policy, that crawled property needs to be mapped to a managed property so that content with that property is kept in the index.
+This is important because DLP uses the search crawler to identify and classify sensitive information on your sites, and then store that sensitive information in a secure portion of the search index. When you upload a document to Office 365, SharePoint automatically creates crawled properties based on the document properties. But to use an FCI or other property in a DLP policy, that crawled property needs to be mapped to a managed property so that content with that property is kept in the index.
   
 For more information on search and managed properties, see [Manage the search schema in SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=627454).
   
 ### Step 1: Upload a document with the needed property to Office 365
 
-You first need to upload a document with the property that you want to reference in your DLP policy. Office 365 will detect the property and automatically create a crawled property from it. In the next step, you'll create a managed property, and then map the managed property to this crawled property.
+You first need to upload a document with the property that you want to reference in your DLP policy. Microsoft 365 will detect the property and automatically create a crawled property from it. In the next step, you'll create a managed property, and then map the managed property to this crawled property.
   
 ### Step 2: Create a managed property
 
@@ -51,11 +55,11 @@ You first need to upload a document with the property that you want to reference
     
 3. In the left navigation, choose **search** \> on the **search administration** page \> **Manage Search Schema**.
     
-    ![search administration page in SharePoint admin center](media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
+    ![search administration page in SharePoint admin center](../media/6bcd3aec-d11a-4f8c-9987-8f35da14d80b.png)
   
 4. On the **Managed Properties** page \> **New Managed Property**.
     
-    ![Managed Properties page with New Managed Property button highlighted](media/b161c764-414c-4037-83ed-503a49fb4410.png)
+    ![Managed Properties page with New Managed Property button highlighted](../media/b161c764-414c-4037-83ed-503a49fb4410.png)
   
 5. Enter a name and description for the property. This name is what will appear in your DLP policies.
     
@@ -67,7 +71,7 @@ You first need to upload a document with the property that you want to reference
     
 9. In the **crawled property selection** dialog box \> find and select the crawled property that corresponds to the Windows Server FCI property or other property that you will use in your DLP policy \> **OK**.
     
-    ![crawled property selection dialog box](media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
+    ![crawled property selection dialog box](../media/aeda1dce-1342-48bf-9594-a8e4f230e8aa.png)
   
 10. At the bottom of the page \> **OK**.
     
@@ -87,9 +91,9 @@ Next, they create a DLP policy with two rules that both use the condition **Docu
 
 Note that the condition **Document properties contain any of these values** is temporarily not available in the UI of the Security &amp; Compliance Center, but you can still use this condition by using PowerShell. You can use the  `New\Set\Get-DlpCompliancePolicy` cmdlets to work with a DLP policy, and use the  `New\Set\Get-DlpComplianceRule` cmdlets with the  `ContentPropertyContainsWords` parameter to add the condition **Document properties contain any of these values**.
   
-For more information on these cmdlets, see [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
+For more information on these cmdlets, see [Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409).
   
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connect to the Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Create the policy by using  `New-DlpCompliancePolicy`.
 
@@ -113,7 +117,7 @@ When you finish, your policy should have two new rules that both use the **Docum
   
 One rule blocks access to content where the **Personally Identifiable Information** property equals **High** or **Moderate**. A second rule sends a notification about content where the **Personally Identifiable Information** property equals **Low**.
   
-![New DLP policy dialog showing two rules just created](media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
+![New DLP policy dialog showing two rules just created](../media/5c56c13b-62a5-4f25-8eb7-ce83a844bb12.png)
   
 ## After you create the DLP policy
 
@@ -142,4 +146,4 @@ For more information, see [Manually request crawling and re-indexing of a site, 
     
 - [What the DLP policy templates include](what-the-dlp-policy-templates-include.md)
     
-- [Sensitive information types inventory](what-the-sensitive-information-types-look-for.md)
+- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

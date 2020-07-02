@@ -1,5 +1,7 @@
 ---
-title: "Investigating partially indexed items in Office 365 eDiscovery"
+title: "Investigating partially indexed items in eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -9,12 +11,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: "Partially indexed items (also call unindexed items) are Exchange mailbox items and documents on SharePoint and OneDrive sites that for some reason weren't completely indexed for Content Search. In this article, you can learn why items can't be indexed for search and are returned as partially indexed items, identify search errors for partially indexed items, and use a PowerShell script to determine your organization's exposure to partially indexed email items."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to manage partially indexed (or unindexed) items from Exchange, SharePoint, and OneDrive within your organization.
 ---
 
-# Investigating partially indexed items in Office 365 eDiscovery
+# Investigating partially indexed items in eDiscovery
 
 A Content Search that you run from the Security & Compliance Center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run a Content Search:
   
@@ -28,7 +34,7 @@ A Content Search that you run from the Security & Compliance Center automaticall
     
 - The file type is supported for indexing but an indexing error occurred for a specific file
     
-Although it varies, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
+Although it varies, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
   
 ## Why does the partially indexed item count change for a search?
 
@@ -44,7 +50,7 @@ After you run a Content Search in the Security & Compliance Center, the total nu
 
 To understand your organization's exposure to partially indexed items, you can run a search for all content in all mailboxes (by using a blank keyword query). In the following example below, there are 56,208 (4,830 MB) fully indexed items and 470 (316 MB) partially indexed items.
   
-![Example of search statistics showing partially indexed items](media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Example of search statistics showing partially indexed items](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
   
 You can determine the percentage of partially indexed items by using the following calculations.
   
@@ -63,13 +69,13 @@ By using the search results from the previous example, .84% of all mailboxes ite
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
+So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
 
 ## Working with partially indexed items
 
 In cases when you need to examine partially items to validate that they don't contain relevant information, you can [export a content search report](export-a-content-search-report.md) that contains information about partially indexed items. When you export a content search report, be sure to choose one of the export options that includes partially indexed items. 
   
-![Choose the second or third option to export partially indexed items](media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Choose the second or third option to export partially indexed items](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
   
 When you export content search results or a content search report using one of these options, the export includes a report named Unindexed Items.csv. This report includes most of the same information as the ResultsLog.csv file; however, the Unindexed Items.csv file also includes two fields related to partially indexed items: **Error Tags** and **Error Properties**. These fields contain information about the indexing error for each partially indexed item. Using the information in these two fields can help you determine whether or not the indexing error for a particular impacts your investigation. If it does, you can perform a targeted content search and retrieve and export specific email messages and SharePoint or OneDrive documents so that you can examine them to determine if they're relevant to your investigation. For step-by-step instructions, see [Prepare a CSV file for a targeted Content Search in Office 365](csv-file-for-an-id-list-content-search.md).
   
@@ -96,12 +102,12 @@ The following is a list of indexing errors and a description of the possible cau
 | `attachmentsize` <br/> |A file attached to an email message was too large and couldn't be processed.  <br/> |
 | `indexingtruncated` <br/> |When writing the processed email message to the index, one of the indexable properties was too large and was truncated. The truncated properties are listed in Error Properties field.  <br/> |
 | `invalidunicode` <br/> |An email message contained text that couldn't be processed as valid Unicode. Indexing for this item may be incomplete.  <br/> |
-| `parserencrypted` <br/> |The content of attachment or email message is encrypted, and Office 365 couldn't decode the content.  <br/> |
+| `parserencrypted` <br/> |The content of attachment or email message is encrypted, and Microsoft 365 couldn't decode the content.  <br/> |
 | `parsererror` <br/> |An unknown error occurred during parsing. This typically results from a software bug or a service crash.  <br/> |
 | `parserinputsize` <br/> |An attachment was too large for the parser to handle, and the parsing of that attachment didn't happen or wasn't completed.  <br/> |
 | `parsermalformed` <br/> |An attachment was malformed and couldn't be handled by the parser. This result from can old file formats, files created by incompatible software, or viruses pretending to be something other than claimed.  <br/> |
 | `parseroutputsize` <br/> |The output from the parsing of an attachment was too large and had to be truncated.  <br/> |
-| `parserunknowntype` <br/> |An attachment had a file type that Office 365 couldn't detect.  <br/> |
+| `parserunknowntype` <br/> |An attachment had a file type that Microsoft 365 couldn't detect.  <br/> |
 | `parserunsupportedtype` <br/> |An attachment had a file type that Office 365could detect, but parsing that file type isn't supported.  <br/> |
 | `propertytoobig` <br/> |The value of an email property in Exchange Store was too large to be retrieved and the message couldn't be processed. This typically only happens to the body property of an email message.  <br/> |
 | `retrieverrms` <br/> |The content retriever failed to decode an RMS-protected message.  <br/> |
@@ -169,7 +175,7 @@ The following steps show you how to run a PowerShell script that searches for al
 
 Here's an example fo the output returned by the script.
   
-![Example of output from script that generates a report on your organization's exposure to partially indexed email items](media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Example of output from script that generates a report on your organization's exposure to partially indexed email items](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
   
 Note the following:
   

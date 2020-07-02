@@ -1,5 +1,7 @@
 ---
 title: "Use the Relevance module to analyze data in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how the Relevance module analyzes data in evidence with a description of the Relevance workflow and training steps in Advanced eDiscovery.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Use the Relevance module to analyze data in Advanced eDiscovery
@@ -27,7 +30,7 @@ In Advanced eDiscovery, the Relevance module includes the Relevance training and
 
 The Relevance workflow is shown and described as follows:
   
-![Relevance workflow](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Relevance workflow](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cycles of assessment and tracking**:
     

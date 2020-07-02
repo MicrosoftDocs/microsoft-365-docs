@@ -1,0 +1,333 @@
+- name: Microsoft 365 admin center help
+  href: index.yml
+  items: 
+    - name: Get started
+      href: setup/index.yml
+      items: 
+        - name: Sign up
+          href: admin-overview/sign-up-for-office-365.md
+        - name: Try or buy Microsoft 365
+          href: ../commerce/try-or-buy-microsoft-365.md
+        - name: Plan your setup
+          href: setup/plan-your-setup.md
+        - name: Set up your organization with the guided setup
+          items:
+           - name: Microsoft 365 Business Basic
+             href: setup/setup-business-basic.md
+           - name: Microsoft 365 Business Standard
+             href: setup/setup-business-standard.md
+           - name: Microsoft 365 Business Premium
+             href: ../business/set-up.md
+           - name: Microsoft 365 Apps for business
+             href: setup/setup-apps-for-business.md
+        - name: Explore the Setup page and wizard
+          href: setup/o365-setup-wizard-and-setup-page.md
+        - name: Install Office apps
+          href: setup/install-applications.md
+        - name: Set up windows devices
+          href: ../business/set-up-windows-devices.md
+        - name: Set up mobile devices
+          href: ../business/set-up-mobile-devices.md
+        - name: Migrate your data to Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
+        - name: Roll out Teams
+          href: https://docs.microsoft.com/microsoftteams/how-to-roll-out-teams?toc=/office365/admin/toc.json&bc=/office365/admin/breadcrumb/toc.json
+        - name: App training for everyone
+          href: https://support.microsoft.com/training
+        - name: What subscription do I have?
+          href: admin-overview/what-subscription-do-i-have.md
+        - name: Customize Sign-in page
+          href: setup/customize-sign-in-page.md
+        - name: Customize your organization theme
+          href: setup/customize-your-organization-theme.md  
+        - name: Learn about Office 365 Germany
+          href: admin-overview/learn-about-office-365-germany.md
+        - name: Access on-premises users and resources
+          items:
+            - name: Synchronize domain users to Microsoft 365
+              href: ../business/manage-domain-users.md
+            - name: Enable domain-joined Windows 10 devices to be managed
+              href: ../business/manage-windows-devices.md
+            - name: Access resources from an Azure AD-joined device
+              href: ../business/access-resources.md
+    - name: Overview of the Microsoft 365 admin center
+      items:
+        - name: Admin center overview
+          href: admin-overview/about-the-admin-center.md
+        - name: About the new admin center
+          href: microsoft-365-admin-center-preview.md
+        - name: About admin roles
+          href: add-users/about-admin-roles.md
+        - name: Admin mobile app
+          href: admin-overview/admin-mobile-app.md
+        - name: What's new in the admin center
+          href: whats-new-in-preview.md
+        - name: Stay on top of changes
+          href: manage/stay-on-top-of-updates.md
+    - name: Office 365 operated by 21Vianet
+      items: 
+        - name: About Office 365 operated by 21Vianet
+          href: services-in-china/services-in-china.md
+        - name: Buy or try subscriptions
+          href: services-in-china/buy-or-try-subscriptions.md
+        - name: Download the Office app for Android for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-Android.md
+        - name: Download the Office app for iOS for Office 365 operated by 21Vianet
+          href: services-in-china/download-office-app-for-iOS.md
+        - name: View your bill or get a Fapiao
+          href: services-in-china/view-your-bill-or-get-a-fapiao.md
+        - name: Apply for a Fapiao
+          href: services-in-china/apply-for-a-fapiao.md
+        - name: Azure Information Protection parity
+          href: services-in-china/parity-between-azure-information-protection.md      
+    - name: Manage users and groups
+      href: add-users/index.yml
+      items: 
+        - name: Users
+          items:
+           - name: Add users
+             href: add-users/add-users.md
+           - name: Add a new employee
+             href: add-users/add-new-employee.md
+           - name: Assign licenses to users
+             href: manage/assign-licenses-to-users.md  
+           - name: Assign admin roles
+             href: add-users/assign-admin-roles.md
+           - name: Unassign licenses from users
+             href: manage/remove-licenses-from-users.md
+           - name: Guest users
+             href: add-users/about-guest-users.md
+           - name: Add guest users to a Microsoft 365 group
+             href: create-groups/manage-guest-access-in-groups.md
+           - name: Change a user name and email address
+             href: add-users/change-a-user-name-and-email-address.md
+           - name: Remove a former employee
+             href: add-users/remove-former-employee.md
+           - name: Access and back up a former user’s data
+             href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
+           - name: Restore a user
+             href: add-users/restore-user.md
+           - name: Reset passwords
+             href: add-users/reset-passwords.md
+           - name: Set passwords to never expire
+             href: add-users/set-password-to-never-expire.md
+           - name: Let users reset passwords
+             href: add-users/let-users-reset-passwords.md
+           - name: Resend user passwords
+             href: add-users/resend-user-password.md
+           - name: Create template to add users
+             href: add-users/create-and-use-a-template-to-add-users.md
+           - name: Upgrade users to the latest apps 
+             href: setup/upgrade-users-to-latest-office-client.md
+        - name: Groups 
+          items:
+           - name: Groups overview
+             href: create-groups/office-365-groups.md
+           - name: Compare groups
+             href: create-groups/compare-groups.md
+           - name: Create a group
+             href: create-groups/create-groups.md
+           - name: Manage groups
+             href: create-groups/manage-groups.md
+           - name: Add or remove group members
+             href: create-groups/add-or-remove-members-from-groups.md
+           - name: Restore a deleted group
+             href: create-groups/restore-deleted-group.md
+           - name: Plan for governance of groups
+             href: create-groups/plan-for-groups-governance.md
+           - name: Manage creation of groups
+             href: create-groups/manage-creation-of-groups.md
+           - name: Choose domain for groups
+             href: create-groups/choose-domain-to-create-groups.md
+           - name: Overview of group naming policies
+             href: create-groups/groups-naming-policy.md
+           - name: Allow members to send mail to and from groups
+             href: create-groups/allow-members-to-send-as-or-send-on-behalf-of-group.md
+           - name: Manage guest access to groups
+             href: create-groups/manage-guest-access-in-groups.md
+           - name: Use sensitivity labels with groups
+             href: ../compliance/sensitivity-labels-teams-groups-sites.md
+    - name: Manage email and calendars
+      href: email/index.yml
+      items: 
+        - name: About user email settings
+          href: email/office-365-user-email-settings.md
+        - name: Add another email alias for a user
+          href: email/add-another-email-alias-for-a-user.md
+        - name: Use your custom domain
+          href: email/change-email-address.md
+        - name: Migrate email and contacts to Microsoft 365
+          href: setup/migrate-email-and-contacts-admin.md
+        - name: Create signatures and disclaimers
+          href: setup/create-signatures-and-disclaimers.md
+        - name: Create, edit, or delete a security group
+          href: email/create-edit-or-delete-a-security-group.md
+        - name: Set up email forwarding
+          href: email/configure-email-forwarding.md
+        - name: Shared mailboxes
+          items: 
+            - name: About shared mailboxes
+              href: email/about-shared-mailboxes.md
+            - name: Create a shared mailbox
+              href: email/create-a-shared-mailbox.md
+            - name: Configure shared mailbox settings
+              href: email/configure-a-shared-mailbox.md
+            - name: Convert a user mailbox to a shared mailbox
+              href: email/convert-user-mailbox-to-shared-mailbox.md
+            - name: Remove a license from a shared mailbox
+              href: email/remove-license-from-shared-mailbox.md
+            - name: Resolve issues with shared mailboxes
+              href: email/resolve-issues-with-shared-mailboxes.md
+        - name: Set up Focused Inbox
+          href: setup/configure-focused-inbox.md
+        - name: About email collaboration
+          href: email/email-collaboration.md
+        - name: Add user or contact to distribution group
+          href: email/add-user-or-contact-to-distribution-list.md
+        - name: Manage clutter for your organization
+          href: email/configure-clutter.md
+    - name: Manage domains
+      href: get-help-with-domains/what-is-a-domain.md
+      items:
+        - name: Add a domain
+          href: setup/add-domain.md
+        - name: Buy a domain
+          href: get-help-with-domains/buy-a-domain-name.md
+        - name: Remove a domain
+          href: get-help-with-domains/remove-a-domain.md
+        - name: Domains FAQ
+          href: setup/domains-faq.md
+        - name: Host-specific instructions
+          items:
+            - name: Change nameservers at any DNS host
+              href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
+            - name: Create DNS records at any DNS host
+              href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+        - name: Troubleshoot domain issues
+          href: get-help-with-domains/find-and-fix-issues.md
+    - name: Manage your data and services
+      href: manage/index.yml
+      items:
+         - name: Monitor user activity by using reports
+           href: activity-reports/activity-reports.md
+         - name: Change your organization contact info
+           href: manage/change-address-contact-and-more.md
+         - name: Update your admin contact info
+           href: manage/update-phone-number-and-email-address.md
+         - name: Set password expiration policy
+           href: manage/set-password-expiration-policy.md
+         - name: Customize the app launcher
+           href: manage/customize-the-app-launcher.md
+         - name: Upgrade users to the latest apps
+           href: setup/upgrade-users-to-latest-office-client.md
+         - name: Requirements for centralized deployment of add-ins
+           href: manage/centralized-deployment-of-add-ins.md
+         - name: Install and manage add-ins by using Centralized Deployment
+           href: manage/manage-deployment-of-add-ins.md
+         - name: Centralized Deployment FAQ
+           href: manage/centralized-deployment-faq.md
+         - name: Find a partner or a re-seller
+           href: manage/find-your-partner-or-reseller.md
+         - name: About Message center
+           href: manage/message-center.md
+         - name: Manage Message center messages
+           href: manage/manage-messages.md
+         - name: Set up release options
+           href: manage/release-options-in-office-365.md
+         - name: Show or hide new features
+           href: manage/show-hide-new-features.md
+         - name: Power BI usage analytics
+           items: 
+           - name: About usage analytics
+             href: usage-analytics/usage-analytics.md
+           - name: Enable usage analytics
+             href: usage-analytics/enable-usage-analytics.md
+           - name: Get the latest version of usage analytics
+             href: usage-analytics/get-the-latest-version-of-usage-analytics.md
+           - name: Navigate and use reports
+             href: usage-analytics/navigate-and-utilize-reports.md
+           - name: About active users in usage reports
+             href: usage-analytics/active-user-in-usage-reports.md
+           - name: Customize reports
+             href: usage-analytics/customize-reports.md
+           - name: About the usage analytics data model
+             href: usage-analytics/usage-analytics-data-model.md
+           - name: Troubleshoot usage analytics errors
+             href: usage-analytics/usage-analytics-errors.md
+    - name: Manage subscriptions and billing
+      href: ../commerce/index.yml
+    - name: Secure your organization
+      items: 
+        - name: Top 10 ways to secure your data
+          href: security-and-compliance/secure-your-business-data.md
+        - name: Multi-factor authentication for Microsoft 365
+          href: security-and-compliance/multi-factor-authentication-microsoft-365.md
+        - name: Set up multi-factor authentication
+          href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Enable Modern Authentication for Office 2013
+          href: security-and-compliance/enable-modern-authentication.md
+        - name: Secure Microsoft Business Premium
+          items:
+            - name: Pre-requisites for data protection
+              href: ../business/pre-requisites-for-data-protection.md
+            - name: Security features
+              href: ../business/security-features.md
+            - name: Increase threat protection
+              href: ../business/increase-threat-protection.md
+            - name: Set up compliance features
+              href: ../business/set-up-compliance.md
+        - name: Secure score
+          href: https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score-new
+        - name: A guide to GDPR compliance
+          href: security-and-compliance/gdpr-compliance.md
+    - name: Manage devices
+      items: 
+        - name: View and edit policies and devices
+          href: ../business/view-policies-and-devices.md
+        - name: Remove company data
+          href: ../business/remove-company-data.md
+        - name: Reset devices to factory settings
+          href: ../business/reset-devices-to-factory-settings.md
+        - name: Map protection features to Intune settings
+          href: ../business/map-protection-features-to-intune-settings.md
+        - name: Device states
+          href: ../business/device-states.md
+        - name: App protection settings for Windows 10 PCs
+          href: ../business/protection-settings-for-windows-10-devices.md
+        - name: App protection settings for Android and iOS
+          href: ../business/app-protection-settings-for-android-and-ios.md
+          items: 
+            - name: Validate settings on Android or iOS
+              href: ../business/validate-settings-on-android-or-ios.md
+        - name: Device protection settings  for Windows 10 PCs
+          href: ../business/protection-settings-for-windows-10-pcs.md
+          items: 
+            - name: Validate settings on Windows 10 PCs
+              href: ../business/validate-settings-on-windows-10-pcs.md
+        - name: Autopilot
+          items: 
+            - name: Add Autopilot devices and profile
+              href: ../business/add-autopilot-devices-and-profile.md
+            - name: Create and edit AutoPilot profiles
+              href: ../business/create-and-edit-autopilot-profiles.md
+            - name: Create and edit AutoPilot devices
+              href: ../business/create-and-edit-autopilot-devices.md
+            - name: AutoPilot Profile settings
+              href: ../business/autopilot-profile-settings.md
+    - name: Work with customers
+      href: work-with-customers/index.yml
+      items: 
+        - name: Share sites and files with guest users
+          href: manage/share-sites-with-external-users.md
+        - name: Share calendars with guest users
+          href: manage/share-calendars-with-external-users.md
+        - name: Create a Team with guest users
+          href: https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7
+        - name: Schedule a Teams meeting with guest users
+          href: https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a
+        - name: Join a Teams meeting with guest users
+          href: https://support.microsoft.com/office/a120c282-063d-46b8-b973-851197ab75d8
+    - name: Troubleshoot
+      href: https://docs.microsoft.com/office/troubleshoot/
+    - name: Contact support
+      href: contact-support-for-business-products.md

@@ -1,5 +1,7 @@
 ---
 title: "Manage how users access Office documents on mobile devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: sirkkuw
 manager: scotv
@@ -17,17 +19,21 @@ ms.custom:
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: "Learn about protection policies that can help secure access to Office apps from mobile devices."
+description: "Learn about protection policies that allow you to manage how users access Office apps and work files from mobile devices."
 ---
 
 # Manage how users access Office documents on mobile devices
 
- Policy settings that control how users access Office files from their mobile devices are **Off** by default. We recommend that you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users. You can create more policies after setup completes. 
+This article applies to Microsoft 365 Business Premium.
+
+Policy settings that control how users access Office files from their mobile devices are **Off** by default. We recommend that you accept the default values during setup to create application policies for Android, iOS, and Windows 10 that apply to all users. You can create more policies after setup completes. 
   
 ## Settings that control how users access Office files on mobile devices
 

@@ -1,5 +1,7 @@
 ---
-title: "Overview of Microsoft 365 Business"
+title: "Overview of Microsoft 365 Business Premium"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -11,28 +13,39 @@ localization_priority: Normal
 ms.collection: 
 - Adm_O365
 - M365-subscription-management 
+- TRN_SMB
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- TRN_M365B
+- OKR_SMB_Videos
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: "Learn more about Microsoft 365 Business."
+description: "Learn about Microsoft 365 Business Premium, a subscription service that includes Office productivity apps and advanced protection for your business against cyber threats."
 ---
 
-# Overview of Microsoft 365 Business
+# Overview of Microsoft 365 Business Premium
 
-## What is Microsoft 365 Business
+## What is Microsoft 365 Business Premium
 
-Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage devices.
+Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with less than 300 employees. It integrates your favorite Office productivity apps and services, and collaboration tools like Microsoft Teams, with advanced security and device management capabilities.
+
+Watch this video for a quick overview of Microsoft 365 Business Premium.<br><br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Microsoft 365 Business is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
 
-See [Microsoft 365 Business service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
+Microsoft 365 Business Premium is meant for up to 300 licenses. If you need more licenses, see [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) documentation for more information.
+
+See the [Microsoft 365 Business Premium service description](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) for the entire list of features.
   
 ## Small business security needs
 
@@ -45,13 +58,13 @@ Your business data can be compromised in many ways. You and your users can compr
 - Email vulnerabilities, including sharing sensitive data, phishing attempts, malware, and so on.
 - When people who should not, can access documents with sensitive information.
 
-Microsoft 365 Business helps safeguard your data in each of these instances. The security features that protect your business data are detailed in the following figure.
+Microsoft 365 Business Premium helps safeguard your data in each of these instances. The security features that protect your business data are detailed in the following figure.
 
-![A figure that shows how M365B protects your business.](media/m365businessvalueadd.png)
+![A figure that shows how M365B protects your business.](../media/m365businessvalueadd.png)
 
 ## How your data and devices are protected
 
-Microsoft 365 Business helps **defended against threats** by:
+Microsoft 365 Business Premium helps **defended against threats** by:
 
 - Scanning links in emails and documents in real time to block unsafe web sites (ATP Safe Links).
 
@@ -75,7 +88,7 @@ Your **business data is protected** by:
 
 Your **devices are secured** by:
 
-- Controlling which devices and users can access your Office 365 data, with options to block users from signing in from home computers, unapproved apps, or outside of work hours (Conditional Access).
+- Controlling which devices and users can access your Microsoft data, with options to block users from signing in from home computers, unapproved apps, or outside of work hours (Conditional Access).
 
 - Applying security policies to protect business data on iOS and Android devices. For example, you can require users to provide a PIN or fingerprint to access business data, and encrypt data on mobile devices (App protection for Office mobile apps).
 
@@ -85,15 +98,19 @@ Your **devices are secured** by:
 
 - Using simplified controls to manage policies for all the Windows 10 PCs in your company, enforcing BitLocker encryption and automatically installing critical Windows updates (Enforce Windows update policies).
 
-To see the full list of security features, see [Microsoft 365 Business security features](security-features.md). After you [Set up Microsoft 365 Business](set-up.md), see [Set up advanced security policies](set-up-advanced-security.md) to get started with the security features that aren't included as a part of the guided setup. Read also [Top 10 ways to secure Office 365 and Microsoft 365 Business plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.
+To see the full list of security features, see [Microsoft 365 Business Premium security features](security-features.md). After you [Set up Microsoft 365 Business Premium](set-up.md), see [increase threat protection](increase-threat-protection.md) and [set up compliance features](set-up-compliance.md) to get started with the security features that aren't included as a part of the guided setup. Read also [Top 10 ways to secure Office 365 and Microsoft 365 Business Premium plans](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) for a good overview on how to set up protections against cyber criminals and hackers.
 
-## Get Microsoft 365 Business
+## Get Microsoft 365 Business Premium
 
-- If you have a partner, they'll get Microsoft 365 Business: [Get Microsoft 365 Business from Microsoft Partner Center](get-microsoft-365-business.md#get-microsoft-365-business-from-microsoft-partner-center).
+- If you have a partner, they'll get Microsoft 365 Business Premium: [Get Microsoft 365 Business Premium from Microsoft Partner Center](get-microsoft-365-business.md).
 
-- If you don't have a partner and want to get Microsoft 365 Business, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
+- If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
 
-- You can also head over to a [Microsoft Store](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) to both buy Microsoft 365 Business and get set-up help.
+- You can also head over to a [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) to both buy Microsoft 365 Business Premium and get set-up help.
 
     > [!NOTE]
     > This link is for stores in U.S. only
+
+## See also
+
+[Microsoft 365 Business Premium training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

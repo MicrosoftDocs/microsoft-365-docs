@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
+# Minimum Acceptable Risk Standards for Exchanges (MARS-E) 2.0 Framework
 
 ## MARS-E 2.0 Framework overview
 
@@ -26,8 +29,6 @@ These updates address the confidentiality, integrity, and availability in health
 ## Microsoft and MARS-E 2.0 framework
 
 Currently, there is no formal authorization and accreditation process for MARS-E. However, Microsoft Azure platform services have undergone independent FedRAMP audits at the Moderate Impact Level and Azure Government at the High Impact Level, and are authorized according to FedRAMP standards. Although these standards do not specifically focus on MARS-E, the MARS-E control requirements and objectives are closely aligned and serve to protect the confidentiality, integrity, and availability of data on Azure.
-
-Learn more about the benefits of MARS-E 2.0 Framework on the Microsoft Cloud: [Download the MARS-E backgrounder](https://aka.ms/mars-e-backgrounder)
 
 ## Microsoft in-scope cloud services
 
@@ -64,7 +65,3 @@ Yes. Third-party audit reports to the FedRAMP standards attest to the effectiven
 - [Microsoft compliance framework for online services white paper](https://aka.ms/compliance-framework)
 - [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/C/2/7C2690A7-19CC-4EED-A47A-B43CC418790A/MARS-E-Compliance.pdf).

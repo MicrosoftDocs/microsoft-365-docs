@@ -1,5 +1,7 @@
 ---
-title: "Create a report on holds in eDiscovery cases in Office 365"
+title: "Create a report on holds in eDiscovery cases"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,18 +13,22 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - SPO_Content
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: "Use the script in this article to generate a report that contains information about all the holds that are associated with eDiscovery cases in the compliance center in Office 365 or Microsoft 365."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to generate a report that contains information about all the holds that are associated with eDiscovery cases.
 ---
 
-# Create a report on holds in eDiscovery cases in Office 365
+# Create a report on holds in eDiscovery cases
   
 The script in this article lets eDiscovery administrators and eDiscovery managers generate a report that contains information about all holds that are associated with eDiscovery cases in the the compliance center in Office 365 or Microsoft 365. The report contains information such as the name of the case a hold is associated with, the content locations that are placed on hold, and whether the hold is query-based. If there are cases that don't have any holds, the script will create an additional report with a list of cases without holds.
 
 See the [More information](#more-information) section for a detailed description of the information included in the report.
   
-## Before you begin
+## Admin requirements and script information
 
 - To generate a report on all eDiscovery cases in your organization, you have to be an eDiscovery Administrator in your organization. If you are an eDiscovery Manager, the report will only include information about the cases that you can access. For more information about eDiscovery permissions, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
     
@@ -32,27 +38,9 @@ See the [More information](#more-information) section for a detailed description
     
 ## Step 1: Connect to the Security & Compliance Center PowerShell
 
-The first step is to connect to the Security & Compliance Center for your organization.
+The first step is to connect to Security & Compliance Center PowerShell for your organization. For step-by-step instructions, see [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `ConnectSCC.ps1`. 
-    
-      ```powershell
-      # Get login credentials 
-      $UserCredential = Get-Credential 
-      $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
-      Import-PSSession $Session -AllowClobber -DisableNameChecking 
-      $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
-    ```
-
-2. On your local computer, open Windows PowerShell and go to the folder where you saved the script. 
-    
-3. Run the script; for example:
-
-    ```powershell
-    .\ConnectSCC.ps1
-    ```
-
-4. When prompted for your credentials, enter your email address and password, and then click **OK**. 
+If your Microsoft 365 account uses multi-factor authentication (MFA) or federated authentication, you can't use the instructions in the previous topic on connecting to Security & Compliance Center PowerShell. Instead, see the instructions in the topic [Connect to Security & Compliance Center PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## Step 2: Run the script to report on holds associated with eDiscovery cases
 
@@ -169,7 +157,7 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
     
     Here's an example of running the CaseHoldsReport.ps1 script. 
     
-    ![The output after running the CaseHoldsReport.ps1 script](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![The output after running the CaseHoldsReport.ps1 script](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## More information
 

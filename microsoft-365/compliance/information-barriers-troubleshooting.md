@@ -1,5 +1,7 @@
 ---
 title: "Troubleshooting information barriers"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -10,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Use this article as a guide for troubleshooting information barriers."
+description: Use this article as a guide for troubleshooting information barriers.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Troubleshooting information barriers
@@ -20,7 +23,7 @@ description: "Use this article as a guide for troubleshooting information barrie
 In the event that people run into unexpected issues after information barriers are in place, there are some steps you can take to resolve those issues. Use this article as a guide.
 
 > [!IMPORTANT]
-> To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br/>- Microsoft 365 Enterprise Global Administrator<br/>- Office 365 Global Administrator<br/>- Compliance Administrator<br/>- IB Compliance Management (this is a new role!)<p>To learn more about prerequisites for information barriers, see [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Make sure to [connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br/>- Microsoft 365 Enterprise Global Administrator<br/>- global administrator<br/>- Compliance Administrator<br/>- IB Compliance Management (this is a new role!)<p>To learn more about prerequisites for information barriers, see [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Make sure to [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ## Issue: Users are unexpectedly blocked from communicating with others in Microsoft Teams 
 
@@ -66,7 +69,7 @@ Determine whether the users are affected by an information barrier policy. Depen
     |---------|---------|
     |`Get-OrganizationSegment`<p>Use this cmdlet with an Identity parameter.     |`Get-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd` <p>In this example, we are getting information about the segment that has GUID *c96e0837-c232-4a8a-841e-ef45787d8fcd*.         |
 
-    Review the details for the segment. If necessary, [edit a segment](information-barriers-edit-segments-policies.md.md#edit-a-segment), and then re-use the `Start-InformationBarrierPoliciesApplication` cmdlet.
+    Review the details for the segment. If necessary, [edit a segment](information-barriers-edit-segments-policies.md#edit-a-segment), and then re-use the `Start-InformationBarrierPoliciesApplication` cmdlet.
 
     **If you are still having issues with your information barrier policy, contact support**.
 
@@ -94,8 +97,8 @@ Verify that the users in question are included in an information barrier policy.
     
     |Results  |What to do next  |
     |---------|---------|
-    |No segments are listed for the selected user(s)     |Do one of the following:<br/>- Assign users to an existing segment by editing their user profiles in Azure Active Directory. (See [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>- Define a segment using a [supported attribute for information barriers](information-barriers-attributes.md). Then, either [define a new policy](information-barriers-policies.md#part-2-define-information-barrier-policies) or [edit an existing policy](information-barriers-edit-segments-policies.md.md#edit-a-policy) to include that segment.  |
-    |Segments are listed but no information barrier policies are assigned to those segments     |Do one of the following:<br/>- [Define a new information barrier policy](information-barriers-policies.md#part-2-define-information-barrier-policies) for each segment in question<br/>- [Edit an existing information barrier policy](information-barriers-edit-segments-policies.md.md#edit-a-policy) to assign it to the correct segment         |
+    |No segments are listed for the selected user(s)     |Do one of the following:<br/>- Assign users to an existing segment by editing their user profiles in Azure Active Directory. (See [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).)<br/>- Define a segment using a [supported attribute for information barriers](information-barriers-attributes.md). Then, either [define a new policy](information-barriers-policies.md#part-2-define-information-barrier-policies) or [edit an existing policy](information-barriers-edit-segments-policies.md#edit-a-policy) to include that segment.  |
+    |Segments are listed but no information barrier policies are assigned to those segments     |Do one of the following:<br/>- [Define a new information barrier policy](information-barriers-policies.md#part-2-define-information-barrier-policies) for each segment in question<br/>- [Edit an existing information barrier policy](information-barriers-edit-segments-policies.md#edit-a-policy) to assign it to the correct segment         |
     |Segments are listed and each is included in an information barrier policy     |- Run the `Get-InformationBarrierPolicy` cmdlet to verify that information barrier policies are active<br/>- Run the `Get-InformationBarrierPoliciesApplicationStatus` cmdlet to confirm the policies are applied<br/>- Run the `Start-InformationBarrierPoliciesApplication` cmdlet to apply all active information barrier policies          |
     
 
@@ -142,7 +145,7 @@ Keep in mind that when you run the policy application cmdlet, information barrie
     |Status  |Next step  |
     |---------|---------|
     |**Not started**     |If it has been more than 45 minutes since the **Start-InformationBarrierPoliciesApplication** cmdlet has been run, review your audit log to see if there are any errors in policy definitions, or some other reason why the application has not started. |
-    |**Failed**     |If the application has failed, review your audit log. Also review your segments and policies. Are any users assigned to more than one segment? Are any segments assigned more than one poliicy? If necessary, [edit segments](information-barriers-edit-segments-policies.md.md#edit-a-segment) and/or [edit policies](information-barriers-edit-segments-policies.md.md#edit-a-policy), and then run the **Start-InformationBarrierPoliciesApplication** cmdlet again.  |
+    |**Failed**     |If the application has failed, review your audit log. Also review your segments and policies. Are any users assigned to more than one segment? Are any segments assigned more than one poliicy? If necessary, [edit segments](information-barriers-edit-segments-policies.md#edit-a-segment) and/or [edit policies](information-barriers-edit-segments-policies.md#edit-a-policy), and then run the **Start-InformationBarrierPoliciesApplication** cmdlet again.  |
     |**In progress**     |If the application is still in progress, allow more time for it to complete. If it has been several days, gather your audit logs, and then contact support. |
 
 ## Issue: Information barrier policies are not being applied at all
@@ -155,7 +158,7 @@ Make sure that your organization does not have [Exchange address book policies](
 
 1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps). 
 
-2. Run the [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) cmdlet, and review the results.
+2. Run the [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) cmdlet, and review the results.
 
     |Results  |Next step  |
     |---------|---------|
@@ -164,11 +167,46 @@ Make sure that your organization does not have [Exchange address book policies](
 
 3. [View status of user accounts, segments, policies, or policy application](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
+## Issue: Information barrier policy not applied to all designated users
+
+After you have defined segments, defined information barrier policies, and have attempted to apply those policies, you may find that the policy is applying to some recipients, but not to others.
+When you run the `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, search the output for text like this.
+
+> Identity: `<application guid>`
+>
+> Total Recipients: 81527
+>
+> Failed Recipients: 2
+>
+> Failure Category: None
+>
+> Status: Complete
+
+### What to do
+
+1. Search in the audit log for `<application guid>`. You can copy this PowerShell code and modify for your variables.
+
+```powershell
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
+```
+
+2. Check the detailed output from the audit log for the values of the `"UserId"` and `"ErrorDetails"` fields. This will give you the reason for the failure. You can copy this PowerShell code and modify for your variables.
+
+```powershell
+   $DetailedLogs[1] |fl
+```
+ For example:
+
+> "UserId":  User1
+> 
+>"ErrorDetails":"Status: IBPolicyConflict. Error: IB  segment               "segment id1" and IB segment "segment id2" has conflict and cannot be assigned to the recipient. 
+
+3. Usually, you will find that a user has been included in more than one segment. You can fix this by updating the `-UserGroupFilter` value in `OrganizationSegments`.
+
+4. Re-apply information barrier policies using these procedures [Information Barriers policies](information-barriers-policies.md#part-3-apply-information-barrier-policies).
+
 ## Related topics
 
 [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
 
 [Information barriers](information-barriers.md)
-
-
-

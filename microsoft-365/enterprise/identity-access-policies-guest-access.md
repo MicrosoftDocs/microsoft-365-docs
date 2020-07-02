@@ -6,6 +6,8 @@ manager: johmar
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 
+f1.keywords:
+- NOCSH
 ms.author: bcarter
 ms.reviewer: martincoetzer
 ms.custom: 
@@ -27,7 +29,7 @@ Providing a path for B2B users to authenticate with your Azure AD tenant doesn't
 
 The following diagram illustrates the common identity and device access policies and indicates (with a pencil icon) which policies to add or update to protect guest and external access. 
 
-![Summary of policy updates for protecting guest access](../images/identity-access-ruleset-guest.png)
+![Summary of policy updates for protecting guest access](../media/identity-access-ruleset-guest.png)
 
 The following table lists the policies you either need to update or create new. The common policies link to the associated configuration instructions in the [Common identity and device access policies](identity-access-policies.md) article.
 
@@ -39,7 +41,7 @@ The following table lists the policies you either need to update or create new. 
 
 To include or exclude guests and external users in conditional access rules, click the include or exclude tab and check **All guests and external users**.
 
-![screen capture of controls for excluding guests](../images/identity-access-exclude-guests-ui.png)
+![screen capture of controls for excluding guests](../media/identity-access-exclude-guests-ui.png)
 
 ## More information
 

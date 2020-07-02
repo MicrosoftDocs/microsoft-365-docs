@@ -1,8 +1,11 @@
 ---
-title: "Set up loads to add imported files in Office 365 Advanced eDiscovery"
+title: "Set up loads to add imported files in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -12,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: "Review the steps to add imported files to the last defined load, or batch, of files before performing Relevance training in Office 365 Advanced eDiscovery. 
-"
+description: "Review the steps to add imported files to the last defined load, or batch, of files before performing Relevance training in Advanced eDiscovery."
 ---
 
-# Set up loads to add imported files in Office 365 Advanced eDiscovery
+# Set up loads to add imported files in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -35,7 +37,7 @@ All imported files must be added to a load to be processed in Advanced eDiscover
   
 1. In the **Relevance \> Relevance setup** tab, select **Loads**.
     
-    ![Relevance Setup Loads tab](media/278aac7f-655f-462f-852a-6baa5d818768.png)
+    ![Relevance Setup Loads tab](../media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
 2. **Include files**: Select an option for files to include. By default, adding files to the current load is based on the "All files" population.
     
@@ -131,7 +133,7 @@ Rolling Loads and Catch-up functionality varies as follows:
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Defining issues and assigning users](define-issues-and-assign-users.md)
   

@@ -1,8 +1,11 @@
 ---
-title: "Prepare data for Office 365 Advanced eDiscovery"
+title: "Prepare data for Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -12,25 +15,24 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: "Learn how to use the Microsoft 365 Security &amp; Compliance Center to prepare Office 365 data for analysis with Office 365 Advanced eDiscovery.
-"
+description: "Learn how to use the Security &amp; Compliance Center to prepare data for analysis with Advanced eDiscovery."
 ---
 
-# Prepare data for Office 365 Advanced eDiscovery
+# Prepare data for Advanced eDiscovery (classic)
 
-This topic describes how to load the results of a Content Search in to a case in Advanced eDiscovery. 
+This topic describes how to load the results of a Content Search in to a case in Advanced eDiscovery (classic). 
   
-> [!NOTE]
-> Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> [!IMPORTANT]
+> As we continue to invest in newer versions of Advanced eDiscovery, we are announcing the retirement of Advanced eDiscovery, also known as *Advanced eDiscovery (classic)* or *Advanced eDiscovery v1.0*. If you're still using Advanced eDiscovery v1.0, please transition to [Advanced eDiscovery v2.0](overview-ediscovery-20.md) (also known as the *Advanced eDiscovery solution in Microsoft 365*) as soon as possible. Advanced eDiscovery 2.0 contains similar functionality found in Advanced eDiscovery v1.0, but also offers many new features such as custodian management, communications management, and review sets. To learn more about the retirement of Advanced eDiscovery v1.0, see [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md#advanced-ediscovery-v10).  
   
-## Step 1: Prepare Office 365 data for Advanced eDiscovery
+## Step 1: Prepare data for Advanced eDiscovery
 
 To analyze data with Advanced eDiscovery, you can use the results of a Content Search that you run in the Microsoft 365 Security &amp; Compliance Center (listed on the **Content search** page in the Microsoft 365 Security &amp; Compliance Center) or a search associated with an eDiscovery case (listed on the **eDiscovery** page in the Security &amp; Compliance Center). 
   
-For the detailed steps on preparing search results for analysis in Advanced eDiscovery, see [Prepare search results for Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
+For the detailed steps on preparing search results for analysis in Advanced eDiscovery, see [Prepare search results for Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   
 > [!NOTE]
-> If you have data outside of Office 365 and want to import it to Office 365 so that you can prepare and analyze it in Advanced eDiscovery, a see [Overview of importing PST files to Office 365](https://support.office.com/article/ba688e0a-0fcb-4bd7-8e57-2b669564ea84) and [Archiving third-party data in Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918). 
+> If you have data outside of Microsoft 365 and want to import it to Microsoft 365 so that you can prepare and analyze it in Advanced eDiscovery, a see [Overview of importing PST files to Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/importing-pst-files-to-office-365) and [Archiving third-party data](https://www.microsoft.com/?ref=go). 
   
 ## Step 2: Load search result data in to a case in Advanced eDiscovery
 
@@ -38,19 +40,19 @@ After you prepare the search results in the Security &amp; Compliance Center for
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the Security &amp; Compliance Center, click **Search &amp; investigation** \> **eDiscovery** to display the list of cases in your organization. 
     
 4. Click **Open** next to the case that you want to load data in to in Advanced eDiscovery. 
     
-5. On the **Home** page for the case, click **Advanced eDiscovery**. 
+5. On the **Home** page for the case, click **Switch to Advanced eDiscovery**. 
     
-    ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
+    ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   
     The **Connecting to Advanced eDiscovery** progress bar is displayed. When you're connected to Advanced eDiscovery, a list of containers is displayed on the setup page for the case. 
     
-    ![The case is displayed in Advanced eDiscovery](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
+    ![The case is displayed in Advanced eDiscovery](../media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
      These containers represent the search results that you prepared for analysis in Advanced eDiscovery in Step 1. Note that the name of the container has the same name as the Content Search in the case in the Security &amp; Compliance Center. The containers in the list are the ones that you prepared. If a different user prepared search results for Advanced eDiscovery, the corresponding containers won't be included in the list. 
     
@@ -60,7 +62,7 @@ After the search results from the Security &amp; Compliance Center are added to 
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Set up users and cases](set-up-users-and-cases-in-advanced-ediscovery.md)
   

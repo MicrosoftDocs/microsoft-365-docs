@@ -1,5 +1,7 @@
 ---
 title: Use AllowSelfServicePurchase for the MSCommerce PowerShell module
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -9,7 +11,7 @@ ms.service: o365-administration
 localization_priority: None
 ms.collection:
 - commerce 
-ms.custom:
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn how to use the AllowSelfServicePurchase PowerShell cmdlet to turn self-service purchase on or off."
@@ -132,7 +134,7 @@ This may be due to an older version of Transport Layer Security (TLS). To connec
 
 **Solution**
 
-Upgrade to TLS 1.2: [https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/configmgr/core/plan-design/security/enable-tls-1-2)
+Upgrade to TLS 1.2: [https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2](https://docs.microsoft.com/mem/configmgr/core/plan-design/security/enable-tls-1-2)
 
 <!--
 ## Uninstall the MSCommerce module

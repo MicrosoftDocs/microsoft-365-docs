@@ -1,5 +1,7 @@
 ---
 title: "Data Investigations limits"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Find information about description, indexing, search, export, and download limits in Data Investigations (Preview).
+ms.custom: seo-marvel-mar2020
 ---
 
 # Data Investigations (Preview) limits

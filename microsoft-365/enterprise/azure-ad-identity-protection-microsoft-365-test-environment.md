@@ -1,9 +1,11 @@
 ---
 title: "Azure AD Identity Protection for your Microsoft 365 Enterprise test environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/21/2018
+ms.date: 12/10/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,17 +21,17 @@ description: "Configure Azure AD Identity Protection and analyze the current acc
 
 *This Test Lab Guide can only be used for Microsoft 365 Enterprise test environments.*
 
-Azure AD Identity Protection allows you to detect potential vulnerabilities affecting your organization’s identities, configure automated responses, and investigate incidents. This article describes how to enable Azure AD Identity Protection and view the analysis of your test environment accounts.
+Azure Active Directory (Azure AD) Identity Protection allows you to detect potential vulnerabilities affecting your organization’s identities, configure automated responses, and investigate incidents. This article describes how to use Azure AD Identity Protection to view the analysis of your test environment accounts.
 
 There are two phases to setting up Azure AD Identity Protection in your Microsoft 365 Enterprise test environment:
 
 1. Create the Microsoft 365 Enterprise test environment.
-2. Enable and use Azure AD Identity Protection.
+2. Use Azure AD Identity Protection.
 
-![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Click [here](media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
@@ -38,19 +40,19 @@ If you just want to test Azure AD Identity Protection in a lightweight way with 
 If you want to test Azure AD Identity Protection in a simulated enterprise, follow the instructions in [Pass-through authentication](pass-through-auth-m365-ent-test-environment.md).
   
 > [!NOTE]
-> Testing Azure AD Identity Protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for a Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test Azure AD Identity Protection and experiment with it in an environment that represents a typical organization. 
+> Testing Azure AD Identity Protection does not require the simulated enterprise test environment, which includes a simulated intranet connected to the Internet and directory synchronization for an Active Directory Domain Services (AD DS) forest. It is provided here as an option so that you can test Azure AD Identity Protection and experiment with it in an environment that represents a typical organization. 
   
-## Phase 2: Enable and use Azure AD Identity Protection
+## Phase 2: Use Azure AD Identity Protection
 
 1. Open a private instance of your browser and sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com) with the global administrator account of your Microsoft 365 Enterprise test environment.
-2. In the Azure portal, click **All services > Marketplace**.
-3. Type **Azure AD Identity Protection** and then click it.
-4. On the **Getting Started** blade, click **Onboard** under **Settings**, click **Pin to dashboard**, and then click **Create**.
-5. In the Azure portal, click **Azure AD Identity Protection** on the dashboard. 
+2. In the Azure portal, type **identity protection** in the search box, and then click **Azure AD Identity Protection**.
+3. In the **Identity Protection - Overview** blade, click on each of the reports to see what they are reporting.
+4. Under **Notify**, click **Users at risk detected alerts**.
+5. In the **Users at risk detected alerts** pane, select **Medium**.
+6. For **Emails are sent to the following users**, click **Included** and verify that your global admin account is in the list of selected members.
+7. Click **Save**.
 
-   You should see an **Azure AD Identity Protection-Overview** blade with a dashboard. Under **Vulnerabilities**, notice that it determined the number of user accounts without multi-factor authentication registration. This number will vary based on previous Microsoft 365 Enterprise Test Lab Guides that you have done.
-
-6. Click through the categories for **Investigate** to see if there are any users or events that have been detected.
+Click through the different policies under **Protect** to see how to configure them. If you create and activate a policy, make sure it is not blocking access for too wide a scope of conditions, or you might not be able to sign in, even as the global admin.
 
 For further testing and experimentation, see [Simulating risk events](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-playbook).
 

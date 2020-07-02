@@ -1,5 +1,7 @@
 ---
 title: "Step 2: Configure classification for your environment"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +21,7 @@ description: Understand and configure various ways to classify data in your orga
 
 *This step is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 6: Information Protection](./media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
+![Phase 6: Information Protection](../media/deploy-foundation-infrastructure/infoprotection_icon-small.png)
 
 In this step, you work with your legal and compliance teams to define a classification scheme for your organization’s data.
 
@@ -85,7 +87,7 @@ For more information, see the [library of Azure Information Protection documenta
 
 Existing Azure Information Protection labels work seamlessly with sensitivity labels. For example, you can keep your existing Azure Information Protection labels and the labels that are applied to documents and email.
 
-If you have both sensitivity and Azure Information Protection labels, you should [migrate your Azure Information Protection labels to sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels).
+If you have both sensitivity and Azure Information Protection labels, you should [migrate your Azure Information Protection labels to sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#sensitivity-labels-and-azure-information-protection).
 
 ## Example: Classification for GDPR
 
@@ -95,7 +97,7 @@ For an example classification scheme that includes personal data for GDPR, see [
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md) |
 |||
 
 As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#crit-infoprotect-step2) corresponding to this step.
@@ -104,5 +106,5 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![Step 3](./media/stepnumbers/Step3.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
+|![Step 3](../media/stepnumbers/Step3.png)|[Configure increased security for Office 365](infoprotect-configure-increased-security-office-365.md)|
 

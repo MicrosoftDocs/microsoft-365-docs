@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: None
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
+# Financial Industry Regulatory Authority (FINRA) Rule 4511(c) United States
 
 ## About FINRA Rule 4511
 
@@ -39,14 +42,14 @@ Software providers and partners with sensitive workloads can now rely on Azure I
 
 ## Microsoft Office 365
 
-To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a leading independent law firm that specializes in regulatory issues, Covington & Burling, LLP. In the resulting report, Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 compliance, Covington validated that [Office 365 with Preservation Lock](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with FINRA requirements for records retention.
+To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a leading independent law firm that specializes in regulatory issues, Covington & Burling, LLP. In the resulting report, Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 compliance, Covington validated that [Office 365 with Preservation Lock](retention-policies.md) includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with FINRA requirements for records retention.
 
 Archiving in Office 365 helps preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, non-erasable format.
 
 ## Microsoft in-scope cloud services
 
 - [Azure](https://gallery.technet.microsoft.com/Overview-of-Azure-c1be3942)
-- [Office 365](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9f756cce-b15d-45a9-94d7-6a583dee4401&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
+- [Office 365](https://aka.ms/Office365ComplianceOfferings)
 
 ## Audits, reports, and certificates
 
@@ -62,9 +65,7 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 
 - **Financial services regulation**: Compliance map of key US regulatory principles for cloud computing and Microsoft online services. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=5b483567-00b0-4d86-96ae-ee887dadb61c&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_Compliance_Guides)
 - **Risk Assessment & Compliance Guide**: Create a governance model for risk assessment of Microsoft cloud services, and regulator notification. [Learn more](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
-- **Financial use cases**: Use case overviews, tutorials, and other resources to build Azure solutions for financial services.
-
-[Learn more](https://docs.microsoft.com/azure/industry/financial/)
+- **Financial use cases**: Use case overviews, tutorials, and other resources to build Azure solutions for financial services. [Learn more](https://docs.microsoft.com/azure/industry/financial/)
 
 ## Resources
 
@@ -75,7 +76,3 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 - [Microsoft Office 365 Retention Policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf).

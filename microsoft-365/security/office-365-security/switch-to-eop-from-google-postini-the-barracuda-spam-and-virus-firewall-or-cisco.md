@@ -1,5 +1,7 @@
 ---
-title: "Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort"
+title: Switch to EOP from another protection service
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -9,7 +11,9 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
-description: "The purpose of this topic is to help you understand the process for switching to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service, and then to provide you with help resources to get started."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to switch to Exchange Online Protection (EOP) from an on-premises email hygiene appliance or cloud-based protection service."
 ---
 
 # Switch to EOP from Google Postini, the Barracuda Spam and Virus Firewall, or Cisco IronPort
@@ -32,9 +36,9 @@ If you currently host your mailboxes on premises and use an on-premises protecti
 
 ## Switch to Exchange Online
 
-Perhaps you have on-premises mailboxes protected by an on-premises appliance, and you want to jump to Exchange Online cloud-hosted mailboxes and EOP protection to take advantage of Office 365 cloud messaging and protection features. To get started, you can sign up for Office 365 and add your domain. This scenario doesn't require you to setup connectors, because there isn't any routing to on-premises mailboxes. Begin at the [Office 365 sign up page](https://www.microsoft.com/office365/online-software.aspx). [Get started with Office 365](https://go.microsoft.com/fwlink/p/?LinkId=275407) provides resources to get familiar with its features.
+Perhaps you have on-premises mailboxes protected by an on-premises appliance, and you want to jump to Exchange Online cloud-hosted mailboxes and EOP protection to take advantage of Microsoft 365 cloud messaging and protection features. To get started, you can sign up for Microsoft 365 and add your domain. This scenario doesn't require you to setup connectors, because there isn't any routing to on-premises mailboxes. Begin at [Get the latest advanced features with Microsoft 365](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans) to sign-up and get familiar with its features.
 
-During the Office 365 setup process, you will create your cloud-based mailbox users.
+During the Microsoft 365 setup process, you will create your cloud-based mailbox users.
 
 ## Switch to a hybrid solution
 
@@ -46,9 +50,9 @@ The best place to start, if you are considering a hybrid deployment, is [Exchang
 
 When you decide to switch to EOP, make sure you give special consideration to the following areas:
 
-- **Custom Filtering Rules**: If you have custom filtering or business-policy rules to catch specific spam, we recommend that you try EOP with the default settings for a period, before you migrate your rules. EOP offers enterprise-level spam protection with the default settings, it may turn out that you don't need to migrate some of your rules to EOP. Of course, if you have rules in place that enforce specific custom business policies, you can create those. [Mail flow rules (transport rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) provides detailed instructions for creating mail flow rules in EOP.
+- **Custom Filtering Rules**: If you have custom filtering or business-policy rules to catch specific spam, we recommend that you try EOP with the default settings for a period of time before you migrate your rules. EOP offers enterprise-level spam protection with the default settings, it may turn out that you don't need to migrate some of your rules to EOP. Of course, if you have rules in place that enforce specific custom business policies, you can create those. [Mail flow rules (transport rules) in Exchange Online Protection](mail-flow-rules-transport-rules-0.md) provides detailed instructions for creating mail flow rules in EOP.
 
-- **IP allow lists and IP block lists**: If you have per-user allow lists and block lists, allow some time to copy the lists to EOP as part of your setup process. For more information about IP allow lists and IP block lists, see [Configure the connection filter policy](configure-the-connection-filter-policy.md).
+- **IP allow lists and IP block lists**: If you have per-user allow lists and block lists, allow some time to copy the lists to EOP as part of your setup process. For more information about the IP Allow List and IP Block List, see [Configure the connection filter policy](configure-the-connection-filter-policy.md).
 
 - **Secure Communication**: If you have a partner that requires encrypted messaging, we recommend that you set this up in the Exchange admin center. To configure this scenario, see [Set up connectors for secure mail flow with a partner organization](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner).
 

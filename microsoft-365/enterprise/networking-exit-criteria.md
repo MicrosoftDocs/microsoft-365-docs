@@ -1,5 +1,7 @@
 ---
 title: "Phase 1: Networking infrastructure exit criteria"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +19,7 @@ description: Ensure that your configuration meets Microsoft 365 Enterprise crite
 
 # Phase 1: Networking infrastructure exit criteria
 
-![Phase 1-Networking](./media/deploy-foundation-infrastructure/networking_icon-small.png)
+![Phase 1-Networking](../media/deploy-foundation-infrastructure/networking_icon-small.png)
 
 Make sure your networking infrastructure meets the following required criteria and that you've considered those that are optional.
 
@@ -25,7 +27,7 @@ Make sure your networking infrastructure meets the following required criteria a
 ## Required: Your network is ready for Microsoft 365 Enterprise
 
 - Your offices have adequate Internet bandwidth for Microsoft 365 traffic, including Office 365, Microsoft Intune, and Windows 10 Enterprise installation and updates.
-- Your overall network maps to an [Office 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
+- Your overall network maps to an [Microsoft 365 reference architecture](https://docs.microsoft.com/office365/enterprise/office-365-network-connectivity-principles#BKMK_P2).
 - Your network changes have been piloted and tested and meet with your traffic latency requirements.
 
 If needed, [Step 1](networking-provide-bandwidth-cloud-services.md) can help you with this requirement.
@@ -43,7 +45,7 @@ Use a tool or web site from a device in that office to determine the public IP a
 If needed, [Step 2](networking-dns-resolution-same-location.md) can help you with this requirement.
 
 <a name="crit-networking-step3"></a>
-## Optional: Unneccessary network hairpins are removed
+## Optional: Unnecessary network hairpins are removed
 
 You examined your network hairpins and determined their impact on performance for all of your offices. You removed network hairpins where possible or worked with your third-party network or security provider to implement optimal Microsoft 365 peering for their network.
 
@@ -66,7 +68,7 @@ If needed, [Step 4](networking-configure-proxies-firewalls.md) can help you with
 
 
 <a name="crit-networking-step5"></a>
-## Optional: Your clients and Office 365 applications are configured for optimal performance
+## Optional: Your clients and Microsoft 365 applications are configured for optimal performance
 
 You have optimized the Transmission Control Protocol (TCP) settings on your client devices and for Exchange Online, Skype for Business Online, SharePoint Online, and Project Online services.
 
@@ -78,4 +80,4 @@ Your intranet users are now ready to consume Microsoft 365 cloud services over a
 
 |||
 |:-------|:-----|
-|![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [identity](identity-infrastructure.md). |
+|![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)| If you're following the phases for the end-to-end deployment of Microsoft 365 Enterprise, your next phase is [identity](identity-infrastructure.md). |

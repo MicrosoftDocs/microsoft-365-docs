@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Payment Card Industry (PCI) Data Security Standard (DSS)
+# Payment Card Industry (PCI) Data Security Standard (DSS)
 
 ## PCI DSS overview
 
@@ -32,10 +35,11 @@ It is important to understand that PCI DSS compliance status for Azure, OneDrive
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
+- Microsoft Cloud App Security
 - Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
-- Graph
+- Microsoft Graph
 - Intune
+- [Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
 - OneDrive for Business and SharePoint Online (United States only)
@@ -47,7 +51,7 @@ It is important to understand that PCI DSS compliance status for Azure, OneDrive
 
 ## Get your PCI DSS solution running on Azure
 
-Build and deploy your PCI DSS solution in the cloud even faster with the Azure Security and Compliance PCI DSS Blueprint. Get reference architectures, deployment guidance, control implementation mappings, automated scripts and more. [Start using the Azure PCI DSS Blueprint](https://aka.ms/pciblueprint)
+Build and deploy your PCI DSS solution in the cloud even faster with the Azure Security and Compliance PCI DSS Blueprint. Get reference architectures, deployment guidance, control implementation mappings, automated scripts and more. [Start using the Azure PCI DSS Blueprint](https://aka.ms/pciblueprint).
 
 ## Frequently asked questions
 
@@ -92,7 +96,3 @@ Currently, only files and documents uploaded to OneDrive for Business and ShareP
 - [Azure PCI DSS 3.2.1 Responsibility Matrix](https://aka.ms/pciresponsibilitymatrix)
 - [PCI DSS Quick Reference Guide](https://www.pcisecuritystandards.org/documents/PCISSC%20QRG%20August%202014%20-print.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/7/7/377F1BBC-37D5-4677-AB4A-7C01D089CA67/PCI_DSS_Compliance_Backgrounder.pdf).

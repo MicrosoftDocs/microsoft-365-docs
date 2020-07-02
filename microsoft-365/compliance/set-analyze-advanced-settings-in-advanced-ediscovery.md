@@ -1,8 +1,11 @@
 ---
-title: "Set Analyze advanced settings in Office 365 Advanced eDiscovery"
+title: "Set Analyze advanced settings in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -12,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
-description: "Learn how to configure advanced settings, including near-duplicates, email threads, and themes, for the Analyze process in Office 365 Advanced eDiscovery.
-"
+description: "Learn how to configure advanced settings, including near-duplicates, email threads, and themes, for the Analyze process in Advanced eDiscovery."
+ms.custom: seo-marvel-apr2020
 ---
 
-# Set Analyze advanced settings in Office 365 Advanced eDiscovery
+# Set Analyze advanced settings in Advanced eDiscovery
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -25,7 +28,7 @@ Advanced eDiscovery provides default advanced parameters for Analyze module sett
   
 1. In the **Prepare \> Analyze \> Setup** tab, click **Advanced settings** (at the bottom of the page). The following panel is displayed. 
     
-    ![Set Analyze advanced settings](media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
+    ![Set Analyze advanced settings](../media/c9ea3017-e19a-456b-a742-c3d07121a3f6.png)
   
 2. In **Near-duplicates and Email threads parameters**, select values for the following as necessary:
     
@@ -39,9 +42,9 @@ Advanced eDiscovery provides default advanced parameters for Analyze module sett
     
 4. Click **Save**. 
     
-## See also
+## Related topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding document similarity](understand-document-similarity-in-advanced-ediscovery.md)
   

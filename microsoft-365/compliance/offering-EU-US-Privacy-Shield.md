@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: EU-US and Swiss-US Privacy Shield Frameworks
+# EU-US and Swiss-US Privacy Shield Frameworks
 
 ## About the EU-U.S. and Swiss-U.S. Privacy Shield frameworks
 
@@ -84,7 +87,3 @@ If you have a complaint that is Privacy Shield-related, please let us know using
 - [Privacy at Microsoft](https://privacy.microsoft.com)
 - [Privacy considerations in the cloud](https://download.microsoft.com/download/0/9/D/09DE47F6-F9E5-4C14-B9E8-E8119A130ACC/Privacy_considerations_in_the_cloud.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/F/4/3F4C5C35-6653-4E9B-8C4F-917B1064F537/PrivacyShield-Compliance.pdf).

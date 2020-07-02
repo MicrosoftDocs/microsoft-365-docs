@@ -1,5 +1,7 @@
 ---
 title: "Clone a Content Search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,23 +13,26 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
+- MET150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: "Use the Windows PowerShell script in this article to quickly clone an existing Content Search in the compliance center in Office 365 or Microsoft 365. When a you clone a search, a new search (with a new name) is created that contains the same properties as the original search. Then you can edit the new search (by changing the keyword query or the date range), and then run it."
+ms.custom:
+- seo-marvel-apr2020
+description: "Use the Windows PowerShell script in this article to quickly clone an existing Content Search in the compliance center in Office 365 or Microsoft 365."
 ---
 
 # Clone a Content Search
 
-Creating a Content Search in the compliance center in Office 365 or Microsoft 365 that searches a lot of mailboxes or SharePoint and OneDrive for Business sites can take awhile. Specifying the sites to search can also be prone to errors if you mistype a URL. To avoid these issues, you can use the Windows PowerShell script in this article to quickly clone an existing Content Search. When a you clone a search, a new search (with a different name) is created that contains the same properties (such as the content locations and the search query) as the original search. Then you can edit the new search (by changing the keyword query or the date range) and run it.
+Creating a Content Search in the compliance center in Office 365 or Microsoft 365 that searches many mailboxes or SharePoint and OneDrive for Business sites can take a while. Specifying the sites to search can also be prone to errors if you mistype a URL. To avoid these issues, you can use the Windows PowerShell script in this article to quickly clone an existing Content Search. When you clone a search, a new search (with a different name) is created that contains the same properties (such as the content locations and the search query) as the original search. Then you can edit the new search by changing the keyword query or the date range, and run it.
   
 Why clone Content Searches?
   
 - To compare the results of different keyword search queries run on the same content locations.
     
-- To save you from having to re-enter a large number of content locations when you create a new search.
+- To save you from having to reenter a large number of content locations when you create a new search.
     
-- To decrease the size of the search results; for example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
+- To decrease the size of the search results. For example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
   
-## Before you begin
+## Script information
 
 - You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the script described in this topic.
     
@@ -43,7 +48,7 @@ Why clone Content Searches?
 
 The script in this step will create a new Content Search by cloning an existing one. When you run this script, you'll be prompted for the following information:
   
-- **Your user credentials** - The script will use your credentials to connect to the Security & Compliance Center for your Office 365 organization with Windows PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security & compCompliance Center to run the script. 
+- **Your user credentials** - The script will use your credentials to connect to the Security & Compliance Center for your organization with Windows PowerShell. As previously stated, you have to be a member of the eDiscovery Manager role group in the Security & compCompliance Center to run the script. 
     
 - **The name of the existing search** - This is the Content Search that you want to clone. 
     
@@ -54,7 +59,7 @@ To clone a search:
 1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `CloneSearch.ps1`.
     
   ```powershell
-  # This PowerShell script clones an existing Content Search in the Office 365 security and compliance center.
+  # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.
   # Get login credentials from the user
   if(!$UserCredential)
   {
@@ -127,11 +132,11 @@ To clone a search:
     
     - The name of the new search.
     
-    The script creates the new Content Search, but doesn't start it. This gives you a chance to edit and run the search in the next step. You can view the properties of the new search by running the **Get-ComplianceSearch** cmdlet or by going to the **Content search** or **eDiscovery** page in the compliance center, depending on whether or not the new search is associated with a case. 
+    The script creates the new Content Search, but doesn't start it. This gives you a chance to edit and run the search in the next step. You can view the properties of the new search by running the **Get-ComplianceSearch** cmdlet or by going to the **Content search** or **eDiscovery** page in the compliance center, depending on whether the new search is associated with a case. 
   
 ## Step 2: Edit and run the cloned search in the compliance center
 
-After the you've run the script to clone an existing Content Search, the next step is to go to the compliance center to edit and run the new search. As previously stated, you can edit a search by changing the keyword search query and adding or removing search conditions. For more information, see:
+After you run the script to clone an existing Content Search, the next step is to go to the compliance center to edit and run the new search. As previously stated, you can edit a search by changing the keyword search query and adding or removing search conditions. For more information, see:
   
 - [Content Search in Office 365](content-search.md)
     

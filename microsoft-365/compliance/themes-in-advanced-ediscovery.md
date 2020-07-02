@@ -1,5 +1,7 @@
 ---
-title: "Themes"
+title: Themes - eDiscovery
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,8 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+description: Use Themes in Advanced eDiscovery to organize review sets by finding the dominant theme in each document.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Themes

@@ -23,21 +23,21 @@ Microsoft Managed Desktop offers a solution for several of the challenges facing
 - Many current IT management and security processes are outdated, time-intensive, and expensive.
 - Businesses want to focus on what makes them uniquely successful, rather than maintaining digital infrastructure.
 
-Your end users will enjoy the latest versions of Windows 10 and Office 365 ProPlus apps (and more besides), using devices and software that are curated and rigorously tested for best performance and reliability. Also, you'll never have to worry about keeping any of this software up to date because that happens automatically, following a careful rollout sequence that is monitored every step of the way. And registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way.
+Your end users will enjoy the latest versions of Windows 10 and Microsoft 365 Apps for enterprise apps (and more besides), using devices and software that are curated and rigorously tested for best performance and reliability. Also, you'll never have to worry about keeping any of this software up to date because that happens automatically, following a careful rollout sequence that is monitored every step of the way. And registered devices are monitored 24x7 for technical and security issues, so if something goes wrong, help will be on the way.
 
 
 ## Unique to Microsoft Managed Desktop
 
 Of course there's nothing stopping you from obtaining and managing your own devices and Microsoft 365 deployments yourself. So what does Microsoft Managed Desktop offer beyond that?
 
-For your end users:
+Our policies and security baseline offers your end users these benefits:
 
 - Boot times for Microsoft Managed Desktop devices about one-fourth as long.
 - At least twice the battery life
 - About one-third as many device crashes per year
 - Device mobility through [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), allowing users to have the same experience no matter what device to sign into
 
-For your IT admins:
+Your IT admins benefit from these features:
 
 - Insights dashboards constantly keeping you up to date on usage, reliability, device health, and other data on devices and users
 - About *one-tenth* the amount of time needed to update 95% of devices
@@ -48,7 +48,7 @@ For your IT admins:
 Microsoft Managed Desktop takes on the burden of managing registered devices and the Microsoft software they use.
 
 - **Hardware:** Instead of your IT department having to research and test devices (and their drivers), specific devices are carefully tested by Microsoft Managed Desktop, resulting in a curated [list of devices](../service-description/device-list.md) that meet enterprise-level performance requirements and are guaranteed to work with the service. You can either obtain devices yourself (or work with a partner) or reuse devices you already have, provided they are on the approved list. Registering devices is easy and straightforward, and before they're deployed, you can also [customize](../working-with-managed-desktop/config-setting-overview.md) certain aspects of the device experience for your end users.
-- **Updates:** Microsoft Managed Desktop sets up and manages all aspects of [deployment groups](../service-description/updates.md) for Windows 10 quality and feature updates, drivers, firmware, anti-virus definitions, and Office ProPlus updates. This includes extensive testing and verification of all updates, assuring that registered devices are always up to date and minimizing disruptions, freeing your IT department from that ongoing task.
+- **Updates:** Microsoft Managed Desktop sets up and manages all aspects of [deployment groups](../service-description/updates.md) for Windows 10 quality and feature updates, drivers, firmware, anti-virus definitions, and Microsoft 365 Apps for enterprise updates. This includes extensive testing and verification of all updates, assuring that registered devices are always up to date and minimizing disruptions, freeing your IT department from that ongoing task.
 - **Apps:** As part of Microsoft 365 Enterprise, Microsoft provides (and manages) several key Microsoft apps for you. But you probably also have other apps that you need for your business. Instead of your IT department having to test, package, and deploy those apps Microsoft helps you deploy them and can assist with [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) if needed. Learn more at [Apps in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
@@ -60,7 +60,7 @@ We also monitor device health and provide you with insights about device perform
 
 
 ## Need more details?
-For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam) and a downloadable [one-page summary](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/microsoft-managed-desktop-data-sheet-v20191114.pdf). You can find the latest news at the Microsoft Managed Desktop [blog](https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/bg-p/MicrosoftManagedDesktop).
+For more about the value of Microsoft Managed desktop, including customer stories, see [Microsoft Managed Desktop](https://aka.ms/mmd). Great places to get started with more are the [Roadmap](https://aka.ms/AA6jiam), a [Forrester Total Economic Impact case study](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf), and a downloadable [one-page summary](https://aka.ms/AA6ob3h). You can find the latest news at the Microsoft Managed Desktop [blog](https://aka.ms/AA6l2dd).
 
 If Microsoft Managed Desktop seems right for your organization, you can delve into additional documentation that explains more about the service, how to prepare your organization to enroll, how to get started with the service, and ongoing operations thereafter, including how you and your end users can easily get help if needed. If you're already ready to come on board, start with contacting your [local account team](https://pages.email.office.com/contactmmd/).
 
@@ -70,6 +70,7 @@ Primarily for technical and business decision makers, these topics detail the di
 - [Microsoft Managed Desktop roles and responsibilities](roles-and-responsibilities.md)
 - [Microsoft Managed Desktop technologies](technologies.md)
 - [Microsoft Managed Desktop and ITIL](../MMD-and-ITSM.md)
+- [Compliance](compliance.md)
 - [Microsoft Managed Desktop service description](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
 
 **Get ready for enrollment**
@@ -85,9 +86,14 @@ These topics describe the steps you'll need to take in your organization to prep
 **Get started**
 Once you're ready to enroll, this section includes the steps to follow to actually join the service, obtain and set up devices, prep your end users, and deploy apps.
 
-- [Add Admin contacts in Microsoft Managed Desktop Admin portal](../get-started/add-admin-contacts.md)
+- [Add and verify admin contacts in the Admin portal](../get-started/add-admin-contacts.md)
+- [Adjust conditional access](../get-started/conditional-access.md)
+- [Assign licenses](../get-started/assign-licenses.md)
+- [Install Intune Company Portal on on devices](../get-started/company-portal.md)
+- [Enable Enterprise State Roaming](../get-started/enterprise-state-roaming.md)
 - [Set up Microsoft Managed Desktop devices](../get-started/set-up-devices.md)
-- [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md)
+- [Get your users ready to use devices](../get-started/get-started-devices.md)
+- [Deploy apps to devices](../get-started/deploy-apps.md)
 
 **Working with Microsoft Managed Desktop**
 This section includes information about your day-to-day life with the service, such as how your IT admins can get support if needed, how your end users get support, managing your apps once deployed, and how to work the customizable settings on devices.
@@ -104,4 +110,3 @@ This section includes information about your day-to-day life with the service, s
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
  
-

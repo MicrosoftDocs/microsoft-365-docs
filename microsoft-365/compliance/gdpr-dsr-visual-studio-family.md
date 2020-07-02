@@ -1,26 +1,30 @@
 ---
 title: Visual Studio Family Data Subject Requests for the GDPR and CCPA
-description: Visual Studio Family Data Subject Requests for the GDPR anc CCPA
+description: Learn how to use Microsoft tools to manage Family Data Subject Requests in Visual Studio for the GDPR and CCPA.
 keywords: Visual Studio, Visual Studio Code, Visual Studio for Mac, Visual Studio documentation, privacy, GDPR, CCPA
 localization_priority: Priority
 audience: itpro
 ms.prod: visual-studio-family
 ms.topic: article
 ms.date: 05/24/2018
-author: PoulChapman
-ms.author: olholder
-manager: pchapman
+author: robmazz
+f1.keywords:
+- NOCSH
+ms.author: robmazz
+manager: laurawi
 ms.collection: 
 - GDPR
 - M365-security-compliance
 ms.workload:
   - "multiple"
+titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 # Visual Studio Family Data Subject Requests for the GDPR and CCPA
 
 The European Union [General Data Protection Regulation (GDPR)](https://ec.europa.eu/justice/data-protection/reform/index_en.htm) gives rights to people (known in the regulation as _data subjects_) to manage their personal data. Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format. A formal request by a data subject to a data controller (an employer or other type of agency or organization that has control over personal data) to take an action on that data subject's personal data is called a _data subject request_ or DSR.
 
-Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR’s Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and “opt-out/ opt-in” requirements for certain data transfers classified as “sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
+Similarly, the California Consumer Privacy Act (CCPA), provides privacy rights and obligations to California consumers, including rights similar to GDPR's Data Subject Rights, such as the right to delete, access and receive (portability) their personal information.  The CCPA also provides for certain disclosures, protections against discrimination when electing exercise rights, and "opt-out/ opt-in" requirements for certain data transfers classified as "sales". Sales are broadly defined to include the sharing of data for a valuable consideration. For more information about the CCPA, see the [California Consumer Privacy Act](offering-ccpa.md) and the [California Consumer Privacy Act FAQ](ccpa-faq.md).
 
 For general information about GDPR, see the [GDPR section of the Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted).
 
@@ -38,7 +42,7 @@ The Microsoft Software License Terms accompanying the products, the [Microsoft P
 
 As a data processor under the GDPR, Microsoft collects the data we need from users to provide experiences for and improve Visual Studio and Visual Studio for Mac and Microsoft extensions to them and to Visual Studio Code. There are two categories of data: customer data and system-generated logs. Customer data includes user-identifiable transactional and interactional data that these products need to perform the service they provide. For example, to provide users with personalized experiences such as roaming settings, we need to collect user account information and settings data. System-generated logs are usage or diagnostic data that are used to help identify and troubleshoot problems and improve our products and services, and may also contain identifiable information about end users, such as a user name. System-generated logs are retained for no more than 18 months. As an example, system-generated logs are aggregated for each day of product usage and include the usage date, the product used (for example, "Visual Studio 2017"), the action you took (for example, "vs/core/packagecostsummary/solutionload"), and the number of times the action was taken, as shown in this sample:
 
-```
+```Log
 {Time":"2/23/2018 12:00:00 AM","AppName":"Visual Studio 2017","Action":"vs/core/packagecostsummary/solutionload","Target":"1 times",
 "DevicePlatform":"Windows 10 Enterprise","IP":null,"InputMethod":null,
 "SearchTerm":null,"SearchResult":null}
@@ -208,7 +212,7 @@ From time to time, we invite customers to provide feedback on these products via
 ## Learn more
 
 - [Microsoft's GDPR Commitments to Customers of our Generally Available Enterprise Software Products](https://docs.microsoft.com/legal/gdpr)
-- [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx)
+- [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview)
 - [Service Trust portal](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)
 - [Microsoft Privacy Dashboard](https://account.microsoft.com/privacy)
 - [Microsoft Privacy Response Center](https://aka.ms/userprivacysite)

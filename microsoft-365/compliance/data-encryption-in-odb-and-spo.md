@@ -1,5 +1,7 @@
 ---
 title: "Data Encryption in OneDrive for Business and SharePoint Online"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -16,17 +18,16 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 description: "Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Data Encryption in OneDrive for Business and SharePoint Online
 
 Understand the basic elements of encryption for data security in OneDrive for Business and SharePoint Online.
   
-## Overview
+## Security and data encryption in Office 365
 
-Office 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security. This article specifically focuses on the in-transit and at-rest encryption side of data security for OneDrive for Business and SharePoint Online.
-  
-For a description of Office 365 security as a whole, see [Security in Office 365 White Paper](https://go.microsoft.com/fwlink/p/?LinkId=270895).
+Microsoft 365 is a highly secure environment that offers extensive protection in multiple layers: physical data center security, network security, access security, application security, and data security. This article specifically focuses on the in-transit and at-rest encryption side of data security for OneDrive for Business and SharePoint Online.
   
 Watch how data encryption works in the following video.
   
@@ -44,7 +45,7 @@ In OneDrive for Business and SharePoint Online, there are two scenarios in which
 
 Encryption at rest includes two components: BitLocker disk-level encryption and per-file encryption of customer content.
   
-BitLocker is deployed for OneDrive for Business and SharePoint Online across the service. Per-file encryption is also in OneDrive for Business and SharePoint Online in Office 365 multi-tenant and new dedicated environments that are built on multi-tenant technology.
+BitLocker is deployed for OneDrive for Business and SharePoint Online across the service. Per-file encryption is also in OneDrive for Business and SharePoint Online in Microsoft 365 multi-tenant and new dedicated environments that are built on multi-tenant technology.
   
 While BitLocker encrypts all data on a disk, per-file encryption goes even further by including a unique encryption key for each file. Further, every update to every file is encrypted using its own encryption key. Before they're stored, the keys to the encrypted content are stored in a physically separate location from the content. Every step of this encryption uses Advanced Encryption Standard (AES) with 256-bit keys and is Federal Information Processing Standard (FIPS) 140-2 compliant. The encrypted content is distributed across a number of containers throughout the datacenter, and each container has unique credentials. These credentials are stored in a separate physical location from either the content or the content keys.
   

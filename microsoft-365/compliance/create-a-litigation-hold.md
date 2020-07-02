@@ -1,5 +1,7 @@
 ---
 title: "Create a Litigation Hold"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,6 +12,10 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 39db1659-0b12-4243-a21c-2614512dcb44
+description: Learn how to place a mailbox on Litigation Hold, retaining all the mailbox content during an investigation.
+ms.custom: 
+- seo-marvel-mar2020
+- seo-marvel-apr2020
 ---
 
 # Create a Litigation Hold
@@ -26,7 +32,7 @@ Here's what happens when you create a Litigation Hold.
     
 - Items in the user's primary and the archive mailboxes are retained
     
-## Before you begin
+## Assign an Exchange Online Plan 2 license
 
 - To place an Exchange Online mailbox on Litigation Hold, it must be assigned an Exchange Online Plan 2 license. If a mailbox is assigned an Exchange Online Plan 1 license, you would have to assign it a separate Exchange Online Archiving license to place it on hold.
     
@@ -69,7 +75,7 @@ The previous command preserves items indefinitely because the hold duration isn'
 Set-Mailbox <username> -LitigationHoldEnabled $true -LitigationHoldDuration <number of days>
 ```
 
-For more information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+For more information, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
 
 ## How does Litigation Hold work?
 
@@ -79,7 +85,7 @@ When a mailbox is placed on Litigation Hold, items in the Purges subfolder are p
 
 The following illustration shows the subfolders in the Recoverable Items folders and the hold workflow process.
 
-![Litigation Hold life cycle](media/LitigationHoldLifeCycle.png)
+![Litigation Hold life cycle](../media/LitigationHoldLifeCycle.png)
 
 > [!NOTE]
 > If a hold associated with an eDiscovery case is placed on a mailbox, purged items are moved from the Deletions subfolder to the DiscoveryHolds subfolder and are preserved until the mailbox is released from the eDiscovery hold.

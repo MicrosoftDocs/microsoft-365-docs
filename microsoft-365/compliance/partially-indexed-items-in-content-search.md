@@ -1,5 +1,7 @@
 ---
-title: "Partially indexed items in Content Search in Office 365"
+title: "Partially indexed items in Content Search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -18,13 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: "Learn about unindexed items in Exchange and SharePoint that you can include in a Content Search run via the Security & Compliance Center.
-"
+description: "Learn about unindexed items in Exchange and SharePoint that you can include in a Content Search run via the Security & Compliance Center."
 ---
 
-# Partially indexed items in Content Search in Office 365
+# Partially indexed items in Content Search
 
-A Content Search that you run from the Security & Compliance Center in Office 365 automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file—of a file type that can't be indexed—that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run a search: 
+A Content Search that you run from the Security & Compliance Center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. In Exchange, a partially indexed item typically contains a file—of a file type that can't be indexed—that is attached to an email message. Here are some other reasons why items can't be indexed for search and are returned as partially indexed items when you run a search: 
   
 - The file type is unrecognized or unsupported for indexing.
     
@@ -41,9 +42,9 @@ A Content Search that you run from the Security & Compliance Center in Office 36
 - A file is password-protected.
     
 > [!NOTE]
-> Most Office 365 organizations have less than 1% of content by volume and less than 12% by size that is partially indexed. The reason for the difference between volume and size is that larger files have a higher probability of containing content that can't be completely indexed. 
+> Most organizations have less than 1% of content by volume and less than 12% by size that is partially indexed. The reason for the difference between volume and size is that larger files have a higher probability of containing content that can't be completely indexed. 
   
-For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with Office 365 Advanced eDiscovery. For more information, see [Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
+For legal investigations, your organization may be required to review partially indexed items. You can also specify whether to include partially indexed items when you export search results to a local computer or when you prepare the results for analysis with Advanced eDiscovery. For more information, see [Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md).
   
 ## File types not indexed for search
 
@@ -100,13 +101,13 @@ If an item is partially indexed but it doesn't meet the search query criteria, i
   
 Similarly, if you choose to include partially indexed items when you export the results of a search, partially indexed items that were excluded from the search results won't be exported.
   
-One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria and partially indexed items that might fall outside of a date range condition. For more information about creating query-based holds, see Step 4 in  [eDiscovery cases](ediscovery-cases.md#step-4-place-content-locations-on-hold).
+One exception to this rule is when you create a query-based hold that's associated with an eDiscovery case. If you create a query-based eDiscovery hold, all partially indexed items are placed on hold. This includes partially indexed items that don't match the search query criteria and partially indexed items that might fall outside of a date range condition. For more information about creating query-based eDiscovery holds, see [Create an eDiscovery hold](create-ediscovery-holds.md).
   
 ## Indexing limits for messages in Content Search
 
 The following table describes the indexing limits that might result in an email message being returned as a partially indexed item in a Content Search in Office 365.
   
-For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](https://support.office.com/article/7c06e9ed-98b6-4304-a900-14773a8fa32f).
+For a list of indexing limits for SharePoint documents, see [Search limits for SharePoint Online](https://docs.microsoft.com/sharepoint/search-limits).
   
 |**Indexing limit**|**Maximum value**|**Description**|
 |:-----|:-----|:-----|
@@ -120,24 +121,22 @@ For a list of indexing limits for SharePoint documents, see [Search limits for S
 |Maximum annotation tokens  <br/> |2 million  <br/> |When an email message is indexed, each word is annotated with different processing instructions that specify how that word should be indexed. Each set of processing instructions is called an annotation token. To maintain the quality of service in Office 365, there is a limit of 2 million annotation tokens for an email message.  <br/> |
 |Maximum body size in index  <br/> |67 million characters  <br/> |The total number of characters in the body of an email message and all its attachments. When an email message is indexed, all text in the body of the message and in all attachments is concatenated into a single string. The maximum size of this string that is indexed is 67 million characters.  <br/> |
 |Maximum unique tokens in body  <br/> |1 million  <br/> |As previously explained, tokens are the result of extracting text from content, removing punctuation and spaces, and then dividing it into words (called tokens) that are stored in the index. For example, the phrase  `"cat, mouse, bird, dog, dog"` contains 5 tokens. But only 4 of these are unique tokens. There is a limit of 1 million unique tokens per email message, which helps prevent the index from getting too large with random tokens.  <br/> |
-   
 
-  
 ## More information about partially indexed items
 
 - As previously stated, because message and document properties and their metadata are indexed, a keyword search might return results if that keyword appears in the indexed metadata. However, that same keyword search might not return the same item if the keyword only appears in the content of an item with an unsupported file type. In this case, the item would be returned as a partially indexed item.
-    
+
 - If a partially indexed item is included in the search results because it met the search query criteria (and wasn't excluded) then it won't be included as a partially indexed item in the estimated search statistics. Also, it won't be included with partially indexed items when you export search results.
-    
+
 - Although a file type is supported for indexing and is indexed, there can be indexing or search errors that will cause a file to be returned as a partially indexed item. For example, searching a very large Excel file might be partially successful (because the first 4 MB are indexed), but then fails because the file size limit is exceeded. In this case, it's possible that the same file is returned with the search results and as a partially indexed item.
-    
+
 - Attached files encrypted with Microsoft technologies are indexed and can be searched. Files encrypted with non-Microsoft technologies are partially indexed.
-    
+
 - Email messages encrypted with S/MIME are partially indexed. This includes encrypted messages with or without file attachments.
-    
+
 - Messages protected using Information Rights Management (IRM) are indexed and will be included in the search results if they match the search query.
 
 ## See also
 
-[Investigating partially indexed items in Office 365 eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
+[Investigating partially indexed items in eDiscovery](investigating-partially-indexed-items-in-ediscovery.md)
 

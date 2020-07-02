@@ -1,5 +1,7 @@
 ---
 title: "Step 4: Add your user accounts"
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +19,7 @@ description: Add user accounts and groups either directly in the cloud or throug
 
 # Step 4: Add your user accounts
 
-![Phase 2-Identity](./media/deploy-foundation-infrastructure/identity_icon-small.png)
+![Phase 2-Identity](../media/deploy-foundation-infrastructure/identity_icon-small.png)
 
 <a name="identity-cloud-only"></a>
 ## Create your user accounts for cloud-only identity
@@ -37,7 +39,7 @@ In this section, you'll synchronize your on-premises Active Directory Domain Ser
 
 Azure AD Connect is the supported Microsoft tool that guides you through synchronizing only the identities you really need from single or multi-forest AD DS environments to your Azure AD tenant. The following figure shows the basic process for Azure AD Connect synchronization.
 
-![How Azure AD Connect synchronizes your on-premises directory with Azure AD](./media/identity-add-user-accounts/azure-ad-connect.png)
+![How Azure AD Connect synchronizes your on-premises directory with Azure AD](../media/identity-add-user-accounts/azure-ad-connect.png)
 
 1. Azure AD Connect running on a server polls AD DS for changes in accounts, groups, and contacts.
 2. Azure AD Connect sends those changes to the Azure AD tenant of your Microsoft 365 subscription.
@@ -47,7 +49,7 @@ The first decision in your hybrid identity solution is your authentication requi
 - With **managed authentication**, Azure AD handles the authentication process for user sign-in. There are two methods for managed authentication: 
     - **Password Hash Sync (PHS)** [Recommended and required for some premium features]. This is the simplest way to enable authentication for on-premises directory objects in Azure AD. Azure AD Connect extracts the hashed password from AD DS, does extra security processing on the password hash, and synchronizes it to Azure AD. For more information, see [Implement password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
     - **Pass-through Authentication (PTA)** provides a simple password validation solution for Azure AD-based services. PTA uses an agent running on one or more on-premises servers to validate the user authentications directly with your on-premises AD DS. For more information, see [User sign-in with Azure Active Directory Pass-through Authentication](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication).
-- With **federated authentication**, the authentication process is redirected to another identity provider through an identity federation server, such as Active Directory Federation Services (AD FS), for a user’s sign-in. The identity provider can provide additional authentication methods, such as smartcard-based authentication. For more information, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/security/azure-ad-choose-authn).
+- With **federated authentication**, the authentication process is redirected to another identity provider through an identity federation server, such as Active Directory Federation Services (AD FS), for a user’s sign-in. The identity provider can provide additional authentication methods, such as smartcard-based authentication. For more information, see [Choosing the right authentication method for your Azure Active Directory hybrid identity solution](https://docs.microsoft.com/azure/active-directory/hybrid/choose-ad-authn).
 
 Watch this video for an overview of identity models and authentication for Microsoft 365 Enterprise.
 
@@ -69,7 +71,7 @@ Once your on-premises users and groups are present in Azure AD, you can start as
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)<br> [Test Lab Guide: Pass-through authentication](pass-through-auth-m365-ent-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password hash synchronization](password-hash-sync-m365-ent-test-environment.md)<br> [Test Lab Guide: Pass-through authentication](pass-through-auth-m365-ent-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-sync) corresponding to this section.
@@ -77,11 +79,11 @@ As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria
 <a name="identity-sync-health"></a>
 ## Monitor synchronization health
 
-*This is optional and applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
+*This is optional and applies to both the E3 and E5 versions of Microsoft 365*
 
 In this section, you'll install an Azure AD Connect Health agent on each of your on-premises AD DS domain controllers to monitor your identity infrastructure and the synchronization services provided by Azure AD Connect. The monitoring information is made available in an Azure AD Connect Health portal, where you can view alerts, performance monitoring, usage analytics, and other information.
 
-![Components of Azure AD Connect Health](./media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
+![Components of Azure AD Connect Health](../media/identity-add-user-accounts/identity-azure-ad-connect-health.png)
 
 The key design decision of how to use Azure AD Connect Health is based on how you are using Azure AD Connect:
 
@@ -114,11 +116,11 @@ For additional information and configuration instructions, see [Azure AD SSPR wi
 
 |||
 |:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password writeback](password-writeback-m365-ent-test-environment.md) |
+|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Password writeback](password-writeback-m365-ent-test-environment.md) |
 |||
 
 As an interim checkpoint, you can see the [exit criteria](identity-exit-criteria.md#crit-identity-pw-writeback) for this section.
 
 |||
 |:-------|:-----|
-|![Step 5](./media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |
+|![Step 5](../media/stepnumbers/Step5.png)| [Use groups for management](identity-use-group-management.md) |

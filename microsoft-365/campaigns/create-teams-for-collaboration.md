@@ -1,5 +1,7 @@
 ---
 title: "Create teams for collaboration"
+f1.keywords:
+- NOCSH
 ms.author: stevhord
 author: samanro
 manager: scotv
@@ -37,11 +39,11 @@ As an example, campaigns can create the following teams to communicate and colla
 
 You can also create teams for specific projects and apply the right amount of protection based on who should be included. 
 
-![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](media/m365-democracy-teams-collab.png)
+![Diagram of a Microsoft Teams window with three separate teams to allow for secure communication and collaboration](../media/m365-democracy-teams-collab.png)
 
 When you create a team, here's what else gets created:
 
-- A new [Office 365 group](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- A new [Microsoft 365 group](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - A [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) site and document library to store team files
 - An [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact) shared mailbox and calendar
 - A OneNote notebook

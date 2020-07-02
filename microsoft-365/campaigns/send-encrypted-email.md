@@ -1,5 +1,7 @@
 ---
 title: "Send encrypted email"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -36,16 +38,16 @@ Before you send email with confidential or sensitive information, consider turni
 - **Encryption:** You can encrypt your email to protect the privacy of the information in the email. When you encrypt an email message, it's converted from readable plain text into scrambled cypher text. Only the recipient who has the private key that matches the public key used to encrypt the message can decipher the message for reading. Any recipient without the corresponding private key, however, sees indecipherable text. Your admin can define rules to automatically encrypt messages that meet certain criteria. For instance, your admin can create a rule that encrypts all messages sent outside your organization or all messages that mention specific words or phrases. Any encryption rules will be applied automatically.
 - **Sensitivity labels:** Your campaign can also set up sensitivity labels that you can apply to your files and email to keep them compliant with your campaign's information protection policies. When you set a label, the label persists with your email, even when it's sent - for example, by appearing as a header to your message.
 
-![Diagram of an email with callouts for labels and encryption](media/m365-campaign-email-encrypt.png)
+![Diagram of an email with callouts for labels and encryption](../media/m365-campaign-email-encrypt.png)
 
 
 ## Set it up
 
-If you want to encrypt a message that doesn't meet a pre-defined rule or your admin hasn't set up any rules, you can apply a variety of different encryption rules before you send the message. To send an encrypted message from Outlook 2013 or 2016, or Outlook 2016 for Mac, select **Options > Permissions**, then select the protection option you need. You can also send an encrypted message by selecting the **Protect** button in Outlook on the web. For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.office.com/article/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-US&rs=en-US&ad=US).
+If you want to encrypt a message that doesn't meet a pre-defined rule or your admin hasn't set up any rules, you can apply a variety of different encryption rules before you send the message. To send an encrypted message from Outlook 2013 or 2016, or Outlook 2016 for Mac, select **Options > Permissions**, then select the protection option you need. You can also send an encrypted message by selecting the **Protect** button in Outlook on the web. For more information, see [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## Admin settings
 
-You can learn all about setting up email encryption at [Email encryption in Office 365](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+You can learn all about setting up email encryption at [Email encryption in Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### Automatically encrypt email messages
 
@@ -57,9 +59,9 @@ You create mail flow rules to encrypt email messages with the new Office 365 Mes
 2. Choose the Admin tile. 
 3. In the admin center, choose **Admin centers > Exchange**. 
 
-For more information, see [Define mail flow rules to encrypt email messages in Office 365](https://docs.microsoft.com/office365/securitycompliance/define-mail-flow-rules-to-encrypt-email).
+For more information, see [Define mail flow rules to encrypt email messages in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### Brand your encryption messages
 
-You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](https://docs.microsoft.com/office365/securitycompliance/email-encryption).
+You can also apply your campaign branding to customize the look and the text in the email messages. For more information, see [Add your organization's brand to your encrypted messages](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 

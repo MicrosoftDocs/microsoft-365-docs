@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
+# Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999
 
 ## Spanish Royal Decree 1720/2007, Spanish Organic Law 15/1999 overview
 
@@ -65,7 +68,3 @@ Yes. If your organization requires or is seeking an accreditation in line with t
 - Organic Law 15/1999 of December 13 for the Protection of Personal Data - [Spanish](https://www.boe.es/buscar/act.php?id=BOE-A-1999-23750)
 - [Microsoft Online Services terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/A/2/8/A280F049-3C15-4638-A2FA-EFD2793A956E/LOPD-Compliance.pdf).

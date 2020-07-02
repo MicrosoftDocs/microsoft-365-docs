@@ -1,33 +1,54 @@
 ### YamlMime:Hub
 
-title: Microsoft 365 Business resources # < 60 chars
-summary: Microsoft 365 Business is a subscription service that includes Office 365 productivity tools plus advanced capabilities to help protect your business against cyberthreats, protect your data, and manage the devices. # < 160 chars
+title: Microsoft 365 Business Premium resources # < 60 chars
+summary: Microsoft 365 Business Premium (formerly Microsoft 365 Business) is a comprehensive subscription service for businesses with less than 300 employees. It integrates your favorite Office productivity apps and services and collaboration tools like Microsoft Teams  with advanced security and device management capabilities. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 brand: m365
 
 metadata:
-  title: Microsoft 365 Business resources # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Microsoft 365 Business Premium resources # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: description # Required; article description that is displayed in search results. < 160 chars.
   ms.service: o365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.collection: collection
+  ms.custom: AdminSurgePortfolio
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   ms.date: 10/01/2019 #Required; mm/dd/yyyy format.
 
+# productDirectory section (optional)
+productDirectory:
+  title: Secure remote work with Microsoft 365 Business Premium # < 60 chars (optional)
+  items:
+    # Card
+    - title: Read
+      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+      summary: Best ways to enable secure remote work with Microsoft 365 Business Premium.
+      url: https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623
+    # Card
+    - title: Get the free partner kit
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Practical guidance and go to market resources for partners for securing remote work.
+      url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+    # Card
+    - title: What's new?
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
+      summary: Azure AD Premium P1 is coming to Microsoft 365 Business Premium!
+      url: https://aka.ms/aadp1smbblog
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
   #Card
-    - title: What is Microsoft 365 Business?
+    - title: What is Microsoft 365 Business Premium?
       links:
         - url: microsoft-365-business-overview.md
           itemType: overview
           text: Overview
-        - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+        - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
           itemType: video
-          text: Microsoft 365 Business training
+          text: Microsoft 365 Business Premium training
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
           itemType: overview
           text: Compare plans
@@ -38,18 +59,18 @@ conceptualContent:
           itemType: reference
           text: FAQ
   #Card
-    - title: Set up Microsoft 365 Business
+    - title: Set up Microsoft 365 Business Premium
       links:
-        - url: https://support.office.com/article/38003e30-9d10-44cf-b596-f1b5f662bfa1
-          itemType: video
+        - url: set-up.md
+          itemType: how-to-guide
           text: 1. Run the setup wizard
-        - url: protection-settings-for-windows-10-pcs.md
+        - url: secure-win-10-pcs.md
           itemType: how-to-guide
           text: 2. Secure your PCs
         - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+        - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
           itemType: get-started
           text: 4. Install Office
   #Card
@@ -58,15 +79,18 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/business
           itemType: overview
           text: Partner page 
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-customer-pitch-deck
+        - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-customer-pitch-deck.pptx
           itemType: download
           text: Pitch deck (customer focus)
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-partner-pitch-deck
+        - url: https://assetsprod.microsoft.com/mpn/smb-advanced-security-opportunity-deck.pptx
           itemType: download
           text: Pitch deck (partner focus) 
-        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-business-technical-fundamentals-decks-zip
+        - url: https://www.microsoft.com/microsoft-365/partners/resources/microsoft-365-smb-technical-fundamentals-content-content-used-for-delivery
           itemType: download
           text: Tech fundamentals
+        - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
+          itemType: download
+          text: Checklist for securing remote work
   # Card
     - title: Manage users
       links:
@@ -88,7 +112,7 @@ conceptualContent:
       links:
         - url: https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp
           itemType: overview
-          text: Office 365 Advanced Threat Protection
+          text: Advanced Threat Protection
         - url: set-up-mfa.md
           itemType: how-to-guide
           text: Set up MFA
@@ -108,13 +132,13 @@ conceptualContent:
         - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
           itemType: overview
           text: Data Loss Prevention 
-        - url: https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980
+        - url: https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
           itemType: how-to-guide
           text: Send encrypted email
         - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+        - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)
@@ -171,7 +195,7 @@ conceptualContent:
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
           itemType: whats-new
           text: Announcements
-        - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+        - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
           itemType: video
           text: Get help
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
@@ -185,10 +209,10 @@ conceptualContent:
       links:
         - url: sign-up.md
           itemType: get-started
-          text: Sign up for Microsoft 365 Business
+          text: Sign up for Microsoft 365 Business Premium
         - url: migrate-to-microsoft-365-business.md
           itemType: how-to-guide
-          text: Migrate from Office 365 Business Premium 
+          text: Migrate from Microsoft 365 Business Standard 
         - url: migrate-from-e3.md
           itemType: how-to-guide
           text: Migrate from Office 365 E3 

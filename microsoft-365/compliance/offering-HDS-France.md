@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Health Data Hosting (HDS) France
+# Health Data Hosting (HDS) France
 
 ## About HDS
 
@@ -66,7 +69,3 @@ The HDS certification is valid for three years.
 - [Azure for health](https://azure.microsoft.com/industries/healthcare/)
 - [Security at Microsoft](https://www.microsoft.com/security)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/7/B/E7BC3E72-A6E5-4A10-96C9-3B210C4DBE35/HDS-Compliance.pdf).

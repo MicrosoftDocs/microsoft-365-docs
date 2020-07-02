@@ -1,5 +1,7 @@
 ---
 title: "Keyword queries and search conditions for Content Search"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,8 +19,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
-description: "Learn about email and file properties that you can search in Exchange Online mailboxes and in SharePoint or OneDrive for Business sites using the Content Search tool in the Security & Compliance Center. 
-"
+ms.custom:
+- seo-marvel-apr2020
+description: Learn about email and file properties that you can search in the Office 365 Security & Compliance Center.
 ---
 
 # Keyword queries and search conditions for Content Search
@@ -46,17 +49,17 @@ The following table lists email message properties that can be searched by using
   
 |**Property**|**Property description**|**Examples**|**Search results returned by the examples**|
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*`|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard returns messages with the word "annual" in the file name of an attachment.|
+|AttachmentNames|The names of files attached to an email message.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> attachmentnames:.pptx|Messages that have an attached file named annualreport.ppt. In the second example, using the wildcard returns messages with the word "annual" in the file name of an attachment. The third example returns all attachments with the pptx file extension.|
 |Bcc|The Bcc field of an email message.<sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|All examples return messages with Pilar Pinilla included in the Bcc field.|
 |Category| The categories to search. Categories can be defined by users by using Outlook or Outlook on the web (formerly known as Outlook Web App). The possible values are:  <br/><br/>  blue  <br/>  green  <br/>  orange  <br/>  purple  <br/>  red  <br/>  yellow|`category:"Red Category"`|Messages that have been assigned the red category in the source mailboxes.|
 |Cc|The Cc field of an email message.<sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In both examples, messages with Pilar Pinilla specified in the Cc field.|
-|Folderid|The folder ID (GUID) of a specific mailbox folder. If you use this property, be sure to search the mailbox that the specified folder is located in. Only the specified folder will be searched. Any subfolders in the folder won't be searched. To search subfolders, you need to use the Folderid property for the sub-folder you want to search.  <br/> For more information about searching for the Folderid property and using a script to obtain the folder IDs for a specific mailbox, see [Use Content Search in Office 365 for targeted collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|The first example returns all items in the specified mailbox folder. The second example returns all items in the specified mailbox folder that were sent or received by garthf@contoso.com.|
+|Folderid|The folder ID (GUID) of a specific mailbox folder. If you use this property, be sure to search the mailbox that the specified folder is located in. Only the specified folder will be searched. Any subfolders in the folder won't be searched. To search subfolders, you need to use the Folderid property for the sub-folder you want to search.  <br/> For more information about searching for the Folderid property and using a script to obtain the folder IDs for a specific mailbox, see [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|The first example returns all items in the specified mailbox folder. The second example returns all items in the specified mailbox folder that were sent or received by garthf@contoso.com.|
 |From|The sender of an email message.<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Messages sent by the specified user or sent from a specified domain.|
 |HasAttachment|Indicates whether a message has an attachment. Use the values **true** or **false**.|`from:pilar@contoso.com AND hasattachment:true`|Messages sent by the specified user that have attachments.|
 |Importance|The importance of an email message, which a sender can specify when sending a message. By default, messages are sent with normal importance, unless the sender sets the importance as **high** or **low**.|`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Messages that are marked as high importance, medium importance, or low importance.|
 |IsRead|Indicates whether messages have been read. Use the values **true** or **false**.|`isread:true`  <br/> `isread:false`|The first example returns messages with the IsRead property set to **True**. The second example returns messages with the IsRead property set to **False**.|
 |ItemClass|Use this property to search specific third-party data types that your organization imported to Office 365. Use the following syntax for this property:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|The first example returns Facebook items that contain the word "contoso" in the Subject property. The second example returns Twitter items that were posted by Ann Beebe and that contain the keyword phrase "Northwind Traders".  <br/> For a complete list of values to use for third-party data types for the ItemClass property, see [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
-|Kind| The type of email message to search for. Possible values:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (returns items from chats, meetings, and calls in Microsoft Teams)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|The first example returns email messages that meet the search criteria. The second example returns email messages, instant messaging conversations (including Skype for Business conversations and chats in Microsoft Teams), and voice messages that meet the search criteria. The third example returns items that were imported to mailboxes in Office 365 from third-party data sources, such as Twitter, Facebook, and Cisco Jabber, that meet the search criteria. For more information, see [Archiving third-party data in Office 365](https://go.microsoft.com/fwlink/p/?linkid=716918).|
+|Kind| The type of email message to search for. Possible values:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (returns items from chats, meetings, and calls in Microsoft Teams)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|The first example returns email messages that meet the search criteria. The second example returns email messages, instant messaging conversations (including Skype for Business conversations and chats in Microsoft Teams), and voice messages that meet the search criteria. The third example returns items that were imported to mailboxes in Microsoft 365 from third-party data sources, such as Twitter, Facebook, and Cisco Jabber, that meet the search criteria. For more information, see [Archiving third-party data in Office 365](https://www.microsoft.com/?ref=go).|
 |Participants|All the people fields in an email message. These fields are From, To, Cc, and Bcc.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Messages sent by or sent to garthf@contoso.com. The second example returns all messages sent by or sent to a user in the contoso.com domain.|
 |Received|The date that an email message was received by a recipient.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Messages that were received on April 15, 2016. The second example returns all messages received between January 1, 2016 and March 31, 2016.|
 |Recipients|All recipient fields in an email message. These fields are To, Cc, and Bcc.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Messages sent to garthf@contoso.com. The second example returns messages sent to any recipient in the contoso.com domain.|
@@ -67,7 +70,7 @@ The following table lists email message properties that can be searched by using
 |||||
    
 > [!NOTE]
-> <sup>1</sup> For the value of a recipient property, you can use email address (also called *user principal name* or UPN), display name, or alias to specify a user. For example, you can use annb@contoso.com, annb, or "Ann Beebe" to specify the user Ann Beebe.<br/><br/>When searching any of the recipient properties (From, To, Cc, Bcc, Participants, and Recipients), Office 365 attempts to expand the identity of each user by looking them up in Azure Active Directory.  If the user is found in Azure Active Directory, the query is expanded to include the user's email address (or UPN), alias, display name, and LegacyExchangeDN.<br/><br/>For example, a query such as `participants:ronnie@contoso.com` expands to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`.<br/><br/>To prevent recipient expansion, you can add a wild card character (asterisk) to the end of the email address in the search query; for example, `participants:ronnie@contoso.com*`.
+> <sup>1</sup> For the value of a recipient property, you can use email address (also called *user principal name* or UPN), display name, or alias to specify a user. For example, you can use annb@contoso.com, annb, or "Ann Beebe" to specify the user Ann Beebe.<br/><br/>When searching any of the recipient properties (From, To, Cc, Bcc, Participants, and Recipients), Microsoft 365 attempts to expand the identity of each user by looking them up in Azure Active Directory.  If the user is found in Azure Active Directory, the query is expanded to include the user's email address (or UPN), alias, display name, and LegacyExchangeDN.<br/><br/>For example, a query such as `participants:ronnie@contoso.com` expands to `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`.<br/><br/>To prevent recipient expansion, you can add a wild card character (asterisk) to the end of the email address in the search query; for example, `participants:ronnie@contoso.com*`.
 
 ## Searchable site properties
 
@@ -82,7 +85,7 @@ For a complete list of SharePoint properties that can be searched, see [Overview
 |Created|The date that an item is created.|`created\>=06/01/2016`|All items created on or after June 1, 2016.|
 |CreatedBy|The person that created or uploaded an item. Be sure to use the user's display name for this property.|`createdby:"Garth Fort"`|All items created or uploaded by Garth Fort.|
 |DetectedLanguage|The language of an item.|`detectedlanguage:english`|All items in English.|
-|DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in.  <br/> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example,  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content Search in Office 365 for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
+|DocumentLink|The path (URL) of a specific folder on a SharePoint or OneDrive for Business site. If you use this property, be sure to search the site that the specified folder is located in.  <br/> To return items located in subfolders of the folder that you specify for the documentlink property, you have to add /\* to the URL of the specified folder; for example,  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>For more information about searching for the documentlink property and using a script to obtain the documentlink URLs for folders on a specific site, see [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|The first example returns all items in the specified OneDrive for Business folder. The second example returns documents in the specified site folder (and all subfolders) that contain the word "confidential" in the file name.|
 |FileExtension|The extension of a file; for example, docx, one, pptx, or xlsx.|`fileextension:xlsx`|All Excel files (Excel 2007 and later)|
 |FileName|The name of a file.|`filename:"marketing plan"`  <br/> `filename:estimate`|The first example returns files with the exact phrase "marketing plan" in the title. The second example returns files with the word "estimate" in the file name.|
 |LastModifiedTime|The date that an item was last changed.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|The first example returns items that were changed on or after May 1, 2016. The second example returns items changed between May 1, 2016 and June 1, 2016.|
@@ -145,8 +148,7 @@ Boolean search operators, such as **AND**, **OR**, and **NOT**, help you define 
 |OR|keyword1 OR keyword2|Returns items that include one or more of the specified keywords or  `property:value` expressions. <sup>2</sup>|
 |NOT|keyword1 NOT keyword2  <br/> NOT from:"Ann Beebe"  <br/> NOT kind:im|Excludes items specified by a keyword or a  `property:value` expression. In the second example excludes messages sent by Ann Beebe. The third example excludes any instant messaging conversations, such as Skype for Business conversations that are saved to the Conversation History mailbox folder. <sup>2</sup>|
 |-|keyword1 -keyword2|The same as the **NOT** operator. So this query returns items that contain  `keyword1` and would exclude items that contain  `keyword2`.|
-|NEAR|keyword1 NEAR(n) keyword2|Returns items with words that are near each other, where n equals the number of words apart. For example,  `best NEAR(5) worst` returns any item where the word "worst" is within five words of "best". If no number is specified, the default distance is eight words. <sup>2</sup>|
-|ONEAR|keyword1 ONEAR(n) keyword2|Similar to **NEAR**, but returns items with words that are near each other in the specified order. For example,  `best ONEAR(5) worst` returns any item where the word "best" occurs before the word "worst" and the two words are within five words of each other. If no number is specified, the default distance is eight words. <sup>2</sup> <br/> > [!NOTE]> The **ONEAR** operator isn't supported when searching mailboxes. It only works when searching SharePoint and OneDrive for Business sites. If you're searching mailboxes and sites in the same search and the query includes the **ONEAR** operator, the search returns mailbox items as if you were using the **NEAR** operator. In other words, the search returns items in which the specified words are near each other regardless of the order in which the words occur.|
+|NEAR|keyword1 NEAR(n) keyword2|Returns items with words that are near each other, where n equals the number of words apart. For example, `best NEAR(5) worst` returns any item where the word "worst" is within five words of "best". If no number is specified, the default distance is eight words. <sup>2</sup>|
 |:|property:value|The colon (:) in the  `property:value` syntax specifies that the value of the property being searched for contains the specified value. For example,  `recipients:garthf@contoso.com` returns any message sent to garthf@contoso.com.|
 |=|property=value|The same as the **:** operator.|
 |\<|property\<value|Denotes that the property being searched is less than the specified value. <sup>1</sup>|
@@ -188,7 +190,7 @@ Create a condition using common properties when searching mailboxes and sites in
 |Sender/Author|For email, the person who sent a message. For documents, the person cited in the author field from Office documents. You can type more than one name, separated by commas. Two or more values are logically connected by the **OR** operator.|
 |Size (in bytes)|For both email and documents, the size of the item (in bytes).|
 |Subject/Title|For email, the text in the subject line of a message. For documents, the title of the document. As previously explained, the Title property is metadata specified in Microsoft Office documents. You can type the name of more than one subject/title, separated by commas. Two or more values are logically connected by the **OR** operator.|
-|Compliance tag|For both email and documents, labels that have been assigned to messages and documents automatically by label policies or labels that have been manually assigned by users. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. You can type part of the label name and use a wildcard or type the complete label name. For more information, see [Overview of labels in Office 365](labels.md).|
+|Compliance label|For both email and documents, retention labels that have been assigned to messages and documents automatically by label policies or retention labels that have been manually assigned by users. Retention labels are used to classify email and documents for information governance and enforce retention rules based on the settings defined by the label. You can type part of the retention label name and use a wildcard or type the complete label name. For more information, see [Overview of retention labels](labels.md).|
 |||
   
 ### Conditions for mail properties
@@ -265,9 +267,9 @@ Keep the following in mind when using search conditions.
     
 - As previously explained, some condition properties allow you to type multiple values. Each value is logically connected by the **OR** operator. This results in the same logic as having multiple instances of the same condition, where each has a single value. The following illustrations show an example of a single condition with multiple values and an example of multiple conditions (for the same property) with a single value. Both examples result in the same query:  `(filetype="docx") OR (filetype="pptx") OR (filetype="xlsx")`
     
-    ![One condition with multiple values](media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+    ![One condition with multiple values](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
   
-    ![Multiple search conditions for the same property](media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
+    ![Multiple search conditions for the same property](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
   
 > [!TIP]
 > If a condition accepts multiple values, we recommend that you use a single condition and specify multiple values (separated by commas or semi-colons). This helps ensure the query logic that's applied is what you intend. 
@@ -282,11 +284,11 @@ This example returns documents on SharePoint and OneDrive for Business sites tha
   
  **GUI**
   
-![First example of search conditions](media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![First example of search conditions](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
   
  **Search query syntax**
   
- `SensitiveType:"Credit Card Number(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
   
  **Search query logic**
   
@@ -298,7 +300,7 @@ This example returns email items or documents that contain the keyword "report",
   
  **GUI**
   
-![Second example of search conditions](media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![Second example of search conditions](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
   
  **Search query syntax**
   
@@ -309,13 +311,12 @@ This example returns email items or documents that contain the keyword "report",
  `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype="aspx")`
   
 #### Example 3
-<a name="conditionexamples"> </a>
 
 This example returns email messages or calendar meetings that were sent between 12/1/2016 and 11/30/2016 and that contain words that start with "phone" or "smartphone".
   
  **GUI**
   
-![Third example of search conditions](media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![Third example of search conditions](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
   
  **Search query syntax**
   
@@ -325,6 +326,12 @@ This example returns email messages or calendar meetings that were sent between 
   
  `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
   
+## Special characters
+
+Some special characters are not included in the search index and therefore are not searchable. This also includes the special characters that represent search operators in the search query. Here's a list of special characters that are either replaced by a blank space in the actual search query or cause a search error.
+
+`+ - = : ! @ # % ^ & ; _ / ? ( ) [ ] { }`
+
 ## Searching for site content shared with external users
 
 You can also use the Content Search feature in the Security & Compliance Center to search for documents stored on SharePoint and OneDrive for Business sites that have been shared with people outside of your organization. This can help you identify sensitive or proprietary information that's being shared outside your organization. You can do this by using the  `ViewableByExternalUsers` property in a keyword query. This property returns documents or sites that have been shared with external users by using one of the following sharing methods: 
@@ -356,7 +363,7 @@ While the  `ViewableByExternalUsers` property represents the status of whether a
   
 - Changes to sharing policy, such as turning off external sharing for a site or for the organization. The property will still show previously shared documents as being externally accessible even though external access might have been revoked.
     
-- Changes to group membership, such as adding or removing external users to Office 365 Groups or Office 365 security groups. The property won't automatically be updated for items the group has access to.
+- Changes to group membership, such as adding or removing external users to Microsoft 365 Groups or Microsoft 365 security groups. The property won't automatically be updated for items the group has access to.
     
 - Sending sharing invitations to external users where the recipient hasn't accepted the invitation, and therefore doesn't yet have access to the content.
     
@@ -368,7 +375,7 @@ As previously explained, you can use the  `SharedWithUsersOWSUser` property so s
   
 Documents must be explicitly shared with a specific user to be returned in search results when using the  `SharedWithUsersOWSUser` property. For example, when a person shares a document in their OneDrive account, they have the option to share it with anyone (inside or outside the organization), share it only with people inside the organization, or share it with a specific person. Here's a screenshot of the **Share** window in OneDrive, that shows the three sharing options. 
   
-![Only files shared with specific people will be returned by a search query that uses the SharedWithUsersOWSUser property](media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
+![Only files shared with specific people will be returned by a search query that uses the SharedWithUsersOWSUser property](../media/469a4b61-68bd-4ab0-b612-ab6302973886.png)
   
 Only documents that are shared by using the third option (shared with **Specific people**) will be returned by a search query that uses the  `SharedWithUsersOWSUser` property. 
 
@@ -397,21 +404,19 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 ## Search tips and tricks
 
 - Keyword searches are not case-sensitive. For example, **cat** and **CAT** return the same results. 
-    
-- The Boolean operators **AND**, **OR**, **NOT**, **NEAR**, and **ONEAR** must be uppercase. 
-    
-- A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line. 
-    
-- Use syntax that matches the `property:value` format. Values are not case-sensitive, and they can't have a space after the operator. If there is a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages that were sent to pilarp. 
-    
-- When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
-    
-- You can use only prefix wildcard searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) are not supported. 
-    
-- When searching a property, use double quotation marks ("  ") if the search value consists of multiple words. For example `subject:budget Q1` returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using `subject:"budget Q1"` returns all messages that contain **budget Q1** anywhere in the subject line. 
-    
-- To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, `-from:"Sara Davis"` excludes any messages sent by Sara Davis.
 
-- Some special characters are not included in the search index and therefore are not searchable, these include the operators for search (+ - = :) and the following characters that are either replaced by a $null or can cause errors if searched for ! @ # % ^ & ; _ / ?
+- The Boolean operators **AND**, **OR**, **NOT**, and **NEAR** must be uppercase. 
+
+- A space between two keywords or two  `property:value` expressions is the same as using **AND**. For example,  `from:"Sara Davis" subject:reorganization` returns all messages sent by Sara Davis that contain the word reorganization in the subject line. 
+
+- Use syntax that matches the `property:value` format. Values are not case-sensitive, and they can't have a space after the operator. If there is a space, your intended value will be a full-text search. For example `to: pilarp` searches for "pilarp" as a keyword, rather than for messages that were sent to pilarp. 
+
+- When searching a recipient property, such as To, From, Cc, or Recipients, you can use an SMTP address, alias, or display name to denote a recipient. For example, you can use pilarp@contoso.com, pilarp, or "Pilar Pinilla".
+
+- You can use only prefix wildcard searches; for example, **cat\*** or **set\***. Suffix searches (**\*cat**), infix searches (**c\*t**), and substring searches (**\*cat\***) are not supported.
+
+- When searching a property, use double quotation marks ("  ") if the search value consists of multiple words. For example `subject:budget Q1` returns messages that contain **budget** in the subject line and that contain **Q1** anywhere in the message or in any of the message properties. Using `subject:"budget Q1"` returns all messages that contain **budget Q1** anywhere in the subject line.
+
+- To exclude content marked with a certain property value from your search results, place a minus sign (-) before the name of the property. For example, `-from:"Sara Davis"` excludes any messages sent by Sara Davis.
 
 - You can export items based on message type. For example, to export Skype conversations and chats in Microsoft Teams, use the syntax `kind:im`. To return only email messages, you would use `kind:email`. To return chats, meetings, and calls in Microsoft Teams, use `kind:microsoftteams`.

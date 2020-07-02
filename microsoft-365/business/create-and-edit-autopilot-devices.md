@@ -1,5 +1,7 @@
 ---
 title: "Create and edit AutoPilot devices"
+f1.keywords:
+- NOCSH
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -17,12 +19,13 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0f7b1d7c-4086-4331-8534-45d7886f9f34
-description: "Learn how to upload devices using AutoPilot in Microsoft 365 Business. You can assign a profile to a device or a group of devices."
+description: "Learn how to upload devices using AutoPilot in Microsoft 365 Business Premium. You can assign a profile to a device or a group of devices."
 ---
 
 # Create and edit AutoPilot devices
@@ -37,13 +40,13 @@ Devices must meet these requirements:
     
 - New devices that haven't been through Windows out-of-box experience
 
-1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.
+1. In the Microsoft 365 admin center, choose **Devices** \> **AutoPilot**.
   
 2. On the **AutoPilot** page, choose the **Devices** tab \> **Add devices**.
     
-    ![In the Devices tab, choose Add devices.](media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
+    ![In the Devices tab, choose Add devices.](../media/6ba81e22-c873-40ad-8a72-ce64d15ea6ba.png)
   
-3. On the **Add devices** panel, browse to a [Device list CSV file](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e) that you prepared \> **Save** \> **Close**.
+3. On the **Add devices** panel, browse to a [Device list CSV file](https://docs.microsoft.com/microsoft-365/admin/misc/device-list) that you prepared \> **Save** \> **Close**.
     
     You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file. 
     

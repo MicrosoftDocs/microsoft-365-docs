@@ -9,6 +9,8 @@ audience: microsoft-business
 ms.prod: microsoft-365-enterprise
 ms.topic: article
 ms.date: 06/01/2018
+f1.keywords:
+- NOCSH
 ms.author: josephd
 ---
 
@@ -16,7 +18,7 @@ ms.author: josephd
 
 *This article applies to both the E3 and E5 versions of Microsoft 365 Enterprise*
 
-![Phase 3: Windows 10 Enterprise](./media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
+![Phase 3: Windows 10 Enterprise](../media/deploy-foundation-infrastructure/win10enterprise_icon-small.png)
 
 Before upgrading your devices to Windows 10 Enterprise, consider the following:
 
@@ -27,8 +29,8 @@ Before upgrading your devices to Windows 10 Enterprise, consider the following:
   If you have Active Directory on-premises, you can [sync it with Microsoft 365](identity-add-user-accounts.md#identity-sync) to create user accounts in Azure AD, the cloud directory used by Microsoft 365. With this method, you can create accounts for users and for security groups you use to manage permissions to resources (like SharePoint Online site collections or documents). Synchronizing your Active Directory with Microsoft 365 won’t assign licenses to the users.
 - **You don't need to license users at this time** <br>
   Before users can use Microsoft 365 services or install software from the Microsoft 365 portal, they need product licenses. As a global or user management admin, you can directly assign products licenses in Microsoft 365 either individually or in bulk. You can also use [group-based licensing](identity-use-group-management.md#identity-group-license) to automatically assign licenses when users are added to a particular group. 
-- **You install Office 365 ProPlus separately** <br>
-  Obtaining a Microsoft 365 license does not automatically install Office 365 ProPlus on your client computers. See [Phase 4: Office 365 ProPlus](office365proplus-infrastructure.md) for more information. 
+- **You install Microsoft 365 Apps for enterprise separately** <br>
+  Obtaining a Microsoft 365 license does not automatically install Microsoft 365 Apps for enterprise on your client computers. See [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md) for more information. 
 
 ## Set Windows diagnostics data level
 
@@ -49,7 +51,7 @@ Use the appropriate value in the table below when you configure the management p
 
 You can enable diagnostics data through any of these methods:
 
-* **Microsoft Intune** - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy. For more info on setting up configuration policies, see [Manage settings and features on your devices with Microsoft Intune policies](https://aka.ms/intuneconfigpolicies).
+* **Microsoft Intune** - If you plan to use Intune to manage your devices, you can create a configuration policy to enable diagnostic data by configuring the <a href="https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry" target="blank">SystemAllowTelemetry</a> system policy.
 * **Registry Editor** - You can use the Registry Editor to manually enable diagnostic data on each device in your organization. Alternately, you can write a script to edit the registry. If a management policy already exists, such as Group Policy or MDM, it will override this registry setting.
 * **Group Policy** - If you do not plan to enroll devices in Intune, you can use a Group Policy object to set your organization’s diagnostic data level.
 * **Command prompt** - You can set Windows 10 diagnostics data and service to automatically start with the command prompt. This method is best if you are testing the service on only a few devices. Enabling the service to start automatically with this command will not configure the diagnostic data level. If you have not configured a diagnostic data level using management tools, the service will operate with the default Enhanced level.
@@ -62,7 +64,7 @@ As an interim checkpoint, you can see the [exit criteria](windows10-exit-criteri
 
 |||
 |:-------|:-----|
-|![Step 2](./media/stepnumbers/Step2.png)| [Deploy Windows 10 Enterprise for existing devices as an in-place upgrade](windows10-deploy-inplaceupgrade.md) |
+|![Step 2](../media/stepnumbers/Step2.png)| [Deploy Windows 10 Enterprise for existing devices as an in-place upgrade](windows10-deploy-inplaceupgrade.md) |
 
 
 

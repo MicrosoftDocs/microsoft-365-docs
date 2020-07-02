@@ -1,6 +1,8 @@
 ---
 title: "Mobile device management for Contoso"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -61,7 +63,7 @@ Once deployed, Contoso enrolled PCs and company-owned smartphones and tablets by
 
 Here is Contoso's mobile device management deployment architecture.
 
-![Contoso’s mobile device management deployment infrastructure](./media/contoso-mdm/contoso-mdm-fig1.png)
+![Contoso’s mobile device management deployment infrastructure](../media/contoso-mdm/contoso-mdm-fig1.png)
 
 ## Next step
 

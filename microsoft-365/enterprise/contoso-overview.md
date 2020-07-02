@@ -1,6 +1,8 @@
 ---
 title: "Overview of the Contoso Corporation"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/01/2019
@@ -18,7 +20,7 @@ description: Understand the Contoso Corporation as a business and the tiered str
 
 # Overview of the Contoso Corporation
 
-![The Contoso Corporation](./media/contoso-overview/contoso-icon.png)
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
 The Contoso Corporation is a multi-national business with headquarters in Paris, France. It is a conglomerate manufacturing, sales, and support organization with over 100,000 products.
 
@@ -26,7 +28,7 @@ The Contoso Corporation is a multi-national business with headquarters in Paris,
 
 Figure 1 shows the headquarters office in Paris and regional hub and satellite offices in various continents.
 
-![Contoso's offices around the world](./media/contoso-overview/contoso-overview-fig1.png)
+![Contoso's offices around the world](../media/contoso-overview/contoso-overview-fig1.png)
 
 **Figure 1: Contoso's offices around the world**
  

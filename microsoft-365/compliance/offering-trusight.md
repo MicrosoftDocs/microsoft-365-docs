@@ -5,15 +5,18 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: TruSight
+# TruSight
 
 ## About TruSight
 
@@ -61,7 +64,3 @@ To purchase the *Comprehensive Assessment of Microsoft Cloud* report, contact in
 - [Microsoft business cloud services and financial services](https://aka.ms/FinServ-Compliance)
 - [Shared responsibilities for cloud computing](https://aka.ms/sharedresponsibility)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/D/A/D/dad1cf29-5529-4797-9eda-96e5e472e619/TruSight-Compliance.pdf).

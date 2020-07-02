@@ -1,9 +1,9 @@
-Also see [Prerequisites](https://docs.microsoft.com/microsoft-365-enterprise/identity-access-policies#prerequisites) for additional recommendations on identity infrastructure.
+Also see [Prerequisites](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites) for additional recommendations on identity infrastructure.
 
 <a name="crit-identity-global-admin"></a>
 ### Required: Your global administrator accounts are protected 
 
-You've [protected your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to thwart  credential compromise by attackers that can lead to breaches of your Microsoft 365 subscription.
+You've [protected your global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts) to thwart  credential compromise by attackers that can lead to breaches of your Microsoft 365 subscription.
 
 If you skip this requirement, your global administrator accounts can be susceptible to attack and compromise, allowing an attacker to gain system-wide access to your data for harvesting, destruction, or ransom.
 
@@ -17,7 +17,7 @@ Use these steps to verify that you've protected your global administrator accoun
    ```powershell
    Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
    ```
-2. Sign in to Office 365 using each of the accounts from step 1. Each sign in must require Azure Multi-Factor Authentication and the strongest form of secondary authentication available in your organization.
+2. Sign in using each of the accounts from step 1. Each sign in must require Azure Multi-Factor Authentication and the strongest form of secondary authentication available in your organization.
 
 > [!Note]
 > See [Connect to Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell) for instructions on installing the Azure Active Directory PowerShell for Graph module and signing in to Office 365.
@@ -66,11 +66,11 @@ If you skip this option, your users might be prompted to provide credentials whe
 If needed, [Step 2](../identity-secure-your-passwords.md#identity-sso) can help you with this option.
 
 <a name="crit-identity-custom-sign-in"></a>
-### Optional: The Office 365 sign-in screen is personalized for your organization
+### Optional: The sign-in screen is personalized for your organization
 
-You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization’s branding to the Office 365 sign-in page.
+You have used [Add company branding to your sign-in and Access Panel pages](https://aka.ms/aadpaddbranding) to add your organization’s branding to the sign-in page.
 
-If you skip this option, your users will see a generic Office 365 sign-in screen and might not be confident that they’re signing into your organization’s site.
+If you skip this option, your users will see a generic sign-in screen and might not be confident that they’re signing into your organization’s site.
 
 If needed, [Step 2](../identity-secure-your-passwords.md#identity-custom-sign-in) can help you with this option.
 
@@ -93,7 +93,7 @@ If needed, [Step 3](../identity-secure-user-sign-ins.md#identity-mfa) can help y
 5.	Delete the test user account.
 
 <a name="crit-identity-ident-prot"></a>
-### Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 Enterprise E5 only)
+### Optional: Azure AD Identity Protection is enabled to protect against credential compromise (Microsoft 365 E5 only)
 
 You've enabled Azure AD Identity Protection to:
 
@@ -183,7 +183,7 @@ Sign in to the Office 365 portal with your user account name and Azure Multi-Fac
 
 
 <a name="crit-identity-self-service-groups"></a>
-### Optional: Self-service group management is enabled for specific Azure AD security and Office 365 groups
+### Optional: Self-service group management is enabled for specific Azure AD security and Microsoft 365 groups
 
 You've determined which groups are appropriate for self-service management, instructed their owners on group management workflow and responsibilities, and [set up self-service management in Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-accessmanagement-self-service-group-management) for those groups.
 

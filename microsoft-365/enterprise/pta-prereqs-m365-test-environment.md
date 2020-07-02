@@ -1,9 +1,11 @@
 ---
 title: "Identity and device access prerequisites for pass-through authentication in your Microsoft 365 test environment"
 author: JoeDavies-MSFT
+f1.keywords:
+- NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 04/23/2019
+ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -40,7 +42,7 @@ Follow the instructions in [Pass-through authentication](pass-through-auth-m365-
 
 Here is the resulting configuration.
 
-![The simulated enterprise with pass-through authentication test environment](media/pass-through-auth-m365-ent-test-environment/Phase2.png)
+![The simulated enterprise with pass-through authentication test environment](../media/pass-through-auth-m365-ent-test-environment/Phase2.png)
  
 ## Phase 2: Configure Azure AD seamless single sign-on
 
@@ -82,7 +84,7 @@ Test multi-factor authentication only for the User 2 account.
 
 ## Phase 7: Enable Azure AD Identity Protection
 
-Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-enable-and-use-azure-ad-identity-protection). 
+Follow the instructions in [Phase 2 of the Azure AD Identity Protection Test Lab Guide](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
 ## Phase 8: Enable modern authentication for Exchange Online and Skype for Business Online
 

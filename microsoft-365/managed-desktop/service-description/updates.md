@@ -4,6 +4,8 @@ description: Keeping Microsoft Managed Desktop up to date is a balance of speed 
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
@@ -16,7 +18,7 @@ ms.collection: M365-modern-desktop
 
 <!--Update management -->
 
-Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business applications up to date is a balance of speed and stability. Deployment groups will be used to ensure operating system updates and policies are rolled out in a safe manner. 
+Microsoft Managed Desktop connects all devices to a modern cloud-based infrastructure. Keeping Windows, Office, drivers, firmware, and Microsoft Store for Business applications up to date is a balance of speed and stability. Deployment groups will be used to ensure operating system updates and policies are rolled out in a safe manner. For more about this, see the video [Microsoft Managed Desktop Change and Release Process](https://www.microsoft.com/videoplayer/embed/RE4mWqP).
 
 Updates released by Microsoft are cumulative and are categorized as quality or feature updates.
 For more information, see [Windows Update for Business: Update types](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb#update-types). 
@@ -25,7 +27,7 @@ For more information, see [Windows Update for Business: Update types](https://do
 
 Microsoft Managed Desktop uses four Azure AD groups to manage updates:
 
-- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the tenant. There should not be any end users placed in the test group. The test group is exempt from any established service level agreements and end-user support. This group is available for use to validate compatibility of applications with new policy or operating system hanges.  
+- **Test**: Used to validate Microsoft Managed Desktop policy changes, operating system updates, feature updates, and other changes pushed to the tenant. There should not be any end users placed in the test group. The test group is exempt from any established service level agreements and end-user support. This group is available for use to validate compatibility of applications with new policy or operating system changes.  
 - **First**: Contains early software adopters and devices that could be subject to pre-release updates. Devices in this group might experience outages if there are scenarios which were not covered during testing in the test ring.
 - **Fast**: Prioritizes speed over stability. Useful for detecting quality issues before they are offered to the Broad group. This group serves as a next layer of validation but is generally more stable than the Test and First groups. 
 - **Broad**: Last group to have feature and quality updates available. This group contains the majority of users in the tenant, and therefore favors stability over speed in deployment. Testing of apps should be done here as the environment is most stable. 
@@ -54,10 +56,10 @@ How update deployment works:
 <tr><td>Feature updates for operating system</td><td>0 days</td><td>30 days</td><td>60 days</td><td>90 days</td></tr>
 <tr><td>Drivers/firmware</td><td colspan="4">Follows the schedule for quality updates</td></tr>
 <tr><td>Anti-virus definition</td><td colspan="4">Updated with each scan</td></tr>
-<tr><td>Office 365 ProPlus</td><td colspan="4">Follows Office's Monthly Channel
+<tr><td>Microsoft 365 Apps for enterprise</td><td colspan="4">Follows Office's Current Channel
 </table>
 
-For more information about the Monthly Channel for Office 365 ProPlus, see [Overview of update channels for Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus).
+For more information about Current Channel for Microsoft 365 Apps for enterprise, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels).
 
 >[!NOTE]
 >These deferral periods are intentionally designed to ensure high security and performance standards for all users. Furthermore, based on data gathered across all Microsoft Managed Desktop devices and the varying scope and impact of updates, Microsoft Managed Desktop reserves flexibility to modify the length of the above deferral periods for any and all deployment groups on an ad hoc basis.

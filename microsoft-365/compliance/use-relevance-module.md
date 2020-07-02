@@ -1,5 +1,7 @@
 ---
 title: "Use the Relevance module to analyze data in evidence"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +16,15 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how the Relevance module analyzes data in evidence with a description of the Relevance workflow and training steps in Data Investigations (Preview).
+ms.custom: seo-marvel-mar2020
 ---
 
 # Use the Relevance module to analyze data in evidence
 
 In Data Investigations (Preview), the Relevance module includes the Relevance training and review of files related to an investigation. The Relevance workflow is shown and described as follows:
   
-![Relevance workflow](media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
+![Relevance workflow](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   
 - **Cycles of assessment and tracking**:
     

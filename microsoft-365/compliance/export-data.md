@@ -1,5 +1,7 @@
 ---
 title: "Export data from an investigation"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi

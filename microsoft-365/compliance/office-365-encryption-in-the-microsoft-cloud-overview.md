@@ -1,5 +1,7 @@
 ---
 title: "Encryption in the Microsoft Cloud"
+f1.keywords:
+- NOCSH
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,16 +15,17 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 - Strat_O365_Enterprise
-description: "An overview of encryption in the Microsoft Cloud."
+description: In this article, read an overview of the various forms of encryption used to keep customer data safe in the Microsoft cloud.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Encryption in the Microsoft Cloud
 
-Customer data within Microsoft's enterprise cloud services is protected by a variety of technologies and processes, including various forms of encryption. (Office 365 customer data in this document includes Exchange Online mailbox content (e-mail body, calendar entries, and the content of e-mail attachments, and if applicable, Skype for Business content), SharePoint Online site content and the files stored within sites, and files uploaded to OneDrive for Business or Skype for Business.) Microsoft uses multiple encryption methods, protocols, and ciphers across its products and services to help provide a secure path for customer data to travel through our cloud services, and to help protect the confidentiality of customer data that is stored within our cloud services. Microsoft uses some of the strongest, most secure encryption protocols available to provide barriers against unauthorized access to customer data. Proper key management is also an essential element of encryption best practices, and Microsoft works to ensure that all Microsoft-managed encryption keys are properly secured.
+Customer data within Microsoft's enterprise cloud services is protected by a variety of technologies and processes, including various forms of encryption. (Customer data in this document includes Exchange Online mailbox content, e-mail body, calendar entries, and the content of e-mail attachments, and if applicable, Skype for Business content), SharePoint Online site content and the files stored within sites, and files uploaded to OneDrive for Business or Skype for Business.) Microsoft uses multiple encryption methods, protocols, and ciphers across its products and services to help provide a secure path for customer data to travel through our cloud services, and to help protect the confidentiality of customer data that is stored within our cloud services. Microsoft uses some of the strongest, most secure encryption protocols available to provide barriers against unauthorized access to customer data. Proper key management is also an essential element of encryption best practices, and Microsoft works to ensure that all Microsoft-managed encryption keys are properly secured.
 
 Regardless of customer configuration, customer data stored within Microsoft's enterprise cloud services is protected using one or more forms of encryption. (Validation of our crypto policy and its enforcement is independently verified by multiple third-party auditors, and reports of those audits are available on the [Service Trust Portal](https://aka.ms/stp).)
 
-Microsoft provides service-side technologies that encrypt customer data at rest and in transit. For example, for customer data at rest, Microsoft Azure uses [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) and [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt), and Microsoft Office 365 uses BitLocker, [Azure Storage Service Encryption](https://azure.microsoft.com/documentation/articles/storage-service-encryption/), [Distributed Key Manager](https://support.office.com/article/989ba10c-f73f-4efb-ad1b-af3322e5f376) (DKM), and Office 365 service encryption. For customer data in transit, Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI, and Visual Studio Team Services use industry-standard secure transport protocols, such as Internet Protocol Security (IPsec) and Transport Layer Security (TLS), between Microsoft datacenters and between user devices and Microsoft datacenters.
+Microsoft provides service-side technologies that encrypt customer data at rest and in transit. For example, for customer data at rest, Microsoft Azure uses [BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) and [DM-Crypt](https://en.wikipedia.org/wiki/Dm-crypt), and Microsoft 365 uses BitLocker, [Azure Storage Service Encryption](https://docs.microsoft.com/azure/), [Distributed Key Manager](https://docs.microsoft.com/microsoft-365/compliance/exchange-online-secures-email-secrets) (DKM), and Microsoft 365 service encryption. For customer data in transit, Azure, Office 365, Microsoft Commercial Support, Microsoft Dynamics 365, Microsoft Power BI, and Visual Studio Team Services use industry-standard secure transport protocols, such as Internet Protocol Security (IPsec) and Transport Layer Security (TLS), between Microsoft datacenters and between user devices and Microsoft datacenters.
 
 In addition to the baseline level of cryptographic security provided by Microsoft, our cloud services also include additional cryptography options that you can manage. For example, you can enable encryption for traffic between their Azure virtual machines (VMs) and their users. With [Azure Virtual Networks](https://azure.microsoft.com/services/virtual-network/), you can use the industry-standard IPsec protocol to encrypt traffic between your corporate VPN gateway and Azure as well as between the VMs located on your Virtual Network. In addition, In addition, [new Office 365 Message Encryption capabilities](set-up-new-message-encryption-capabilities.md) allow you to send encrypted mail to anyone.
 
@@ -39,7 +42,7 @@ Microsoft certifies the underlying cryptographic modules used in our cloud servi
 - Dynamics 365 and Dynamics 365 U.S. Government
 - Office 365, Office 365 U.S. Government, and Office 365 U.S. Government Defense
 
-Encryption of Office 365 customer data at rest is provided by multiple service-side technologies, including BitLocker, DKM, Azure Storage Service Encryption, and service encryption in Exchange Online, Skype for Business, OneDrive for Business, and SharePoint Online. Office 365 service encryption includes an option to use customer-managed encryption keys that are stored in Azure Key Vault. This customer-managed key option, called [Office 365 Customer Key](https://support.office.com/article/f2cd475a-e592-46cf-80a3-1bfb0fa17697), is available for Exchange Online, SharePoint Online, Skype for Business, and OneDrive for Business.
+Encryption of customer data at rest is provided by multiple service-side technologies, including BitLocker, DKM, Azure Storage Service Encryption, and service encryption in Exchange Online, Skype for Business, OneDrive for Business, and SharePoint Online. Office 365 service encryption includes an option to use customer-managed encryption keys that are stored in Azure Key Vault. This customer-managed key option, called [Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-overview), is available for Exchange Online, SharePoint Online, Skype for Business, and OneDrive for Business.
 
 For customer data in transit, all Office 365 servers negotiate secure sessions using TLS by default with client machines to secure customer data.  This applies to protocols on any device used by clients, such as Skype for Business, Outlook, and Outlook on the web, mobile clients, and web browsers.
 

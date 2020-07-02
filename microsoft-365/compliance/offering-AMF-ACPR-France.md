@@ -5,19 +5,22 @@ keywords: Microsoft 365, compliance, offerings
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
+f1.keywords:
+- NOCSH
 ms.author: robmazz
 author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: M365-security-compliance
 hideEdit: true
+titleSuffix: Microsoft Compliance
 ---
 
-# Compliance offering: Financial Authority (AMF) and Prudential Authority (ACPR) France
+# Financial Authority (AMF) and Prudential Authority (ACPR) France
 
 ## About the AMF and ACPR
 
-The [Financial Authority](https://www.amf-france.org/en_US/?langSwitch=true) ([Autorité des Marchés Financiers, AMF](https://amf-france.org/)) and the [Prudential Authority](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) are the primary financial regulators in France. In its capacity as the stock market regulator, the AMF is responsible for the supervision of financial markets and investment firms. The ACPR, an independent administrative authority under the central bank, the [Banque de France](https://www.banque-france.fr/), supervises the banking and insurance sectors.  
+The [Financial Authority](https://www.amf-france.org/en) ([Autorité des Marchés Financiers, AMF](https://www.amf-france.org/)) and the [Prudential Authority](https://acpr.banque-france.fr/en/page-sommaire/about-acpr) ([Autorité de Contrôle Prudentiel et de Résolution, ACPR](https://acpr.banque-france.fr/)) are the primary financial regulators in France. In its capacity as the stock market regulator, the AMF is responsible for the supervision of financial markets and investment firms. The ACPR, an independent administrative authority under the central bank, the [Banque de France](https://www.banque-france.fr/), supervises the banking and insurance sectors.  
   
 The AMF and ACPR act in concert with the European Banking Authority (EBA), “an independent EU authority, which works to ensure effective and consistent prudential regulation and supervision across the European banking sector.” To that end, the EBA has outlined a comprehensive approach to the use of cloud computing by financial institutions in the EU, [Recommendations on outsourcing to cloud services providers](https://eba.europa.eu/sites/default/documents/files/documents/10180/1848359/c1005743-567e-40fc-a995-d05fb93df5d1/Draft%20Recommendation%20on%20outsourcing%20to%20Cloud%20Service%20%20%28EBA-CP-2017-06%29.pdf ).  
   
@@ -68,8 +71,3 @@ Yes. Article 239 of the [ACPR Order of 3 November 2014](https://www.legifrance.g
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://servicetrust.microsoft.com/ViewPage/FFIECBlueprint?command=Download&downloadType=Document&downloadId=079a1973-711a-428f-9312-9ddd290cff7b&docTab=c726d5c0-2d1e-11e8-a485-57140ec19669_PaaS)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/D/8/3D81D753-0896-4D8C-9131-D9F9153942DB/AMF-ACPR-Compliance.pdf).
-

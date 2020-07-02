@@ -1,8 +1,11 @@
 ---
-title: "Run the Process module and load data in Office 365 Advanced eDiscovery"
+title: "Run the Process module and load data in Advanced eDiscovery"
+f1.keywords:
+- NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+titleSuffix: Office 365
 ms.date: 9/14/2017
 audience: Admin
 ms.topic: article
@@ -12,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: "Learn how to use the Office 365 Security &amp; Compliance Center to access Office 365 Advanced eDiscovery and run the Process module for a case. 
-"
+description: "Learn how to use the Security &amp; Compliance Center to access Advanced eDiscovery and run the Process module for a case."
+ms.custom: seo-marvel-apr2020
 ---
 
-# Run the Process module and load data in Office 365 Advanced eDiscovery
+# Run the Process module and load data in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -34,7 +37,7 @@ Advanced eDiscovery provides system metadata values, such as Near-duplicate grou
   
 Perform the following steps to run Process.
   
-1. [Open the Office 365 Security &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
+1. [Open the Security &amp; Compliance Center](go-to-the-securitycompliance-center.md) . 
     
 2. Go to **Search &amp; investigation** \> **eDiscovery** and then click **Go to Advanced eDiscovery**.
     
@@ -42,7 +45,7 @@ Perform the following steps to run Process.
     
 4. In **Prepare** \> **Process** \> **Setup**, select a container from the list of available containers.
     
-    ![Click Process to add the search results to the case](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![Click Process to add the search results to the case](../media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
 5. Click **Advanced settings...** if you want to add the container as seed files or as pre-tagged files. 
     
@@ -50,7 +53,7 @@ Perform the following steps to run Process.
     
     Use pre-tagged files to automate Relevance training. You should tag at least 1,500 files, and keep the proportion of relevant to non-relevant files the same as in the collection added to Relevance. These files should be manually tagged, and you should be confident in the quality of tagging.
     
-    ![Screenshot of Advanced settings page for processing batch files](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Screenshot of Advanced settings page for processing batch files](../media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
   - In the **Seed** section: 
     
@@ -74,9 +77,9 @@ Perform the following steps to run Process.
     
 If you add to the case, then you can process again.
   
-## See also
+## Related topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Viewing Process module results](view-process-module-results-in-advanced-ediscovery.md)
 

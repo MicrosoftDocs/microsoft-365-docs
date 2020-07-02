@@ -1,5 +1,7 @@
 ---
 title: "Sync user certificates to Office 365 for S/MIME"
+f1.keywords:
+- NOCSH
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,7 +13,9 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
-description: "Before anyone can send S/MIME-protected messages, the appropriate certificates must be set up. In order to send encrypted messages through Exchange Online, the sender's email program uses the public certificate of the recipient to encrypt the message. This public X.509 certificate has to be published to Office 365."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to publish appropriate certificates to Office 365 before sending S/MIME-protected messages in Exchange Online."
 ---
 
 # Sync user certificates to Office 365 for S/MIME
@@ -20,9 +24,9 @@ Before anyone can send S/MIME-protected messages in Exchange Online, the appropr
 
 ## To Sync certificates that support S/MIME
 
-Begin setting up S/MIME by issuing certificates and publishing them in your local Active Directory Domain Service. For more information about managing certificates in Exchange Server, see [Digital Certificates and SSL](https://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx).
+Begin setting up S/MIME by issuing certificates and publishing them in your local Active Directory Domain Service. For more information, see [Active Directory Certificate Services Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831740(v=ws.11)).
 
-After your certificates are published, use the Azure Active Directory Sync tool to synchronize user data from your on-premises Exchange environment to Office 365. For more information on this process, see [DirSync: Directory Sync Tool Version Release History](https://go.microsoft.com/fwlink/p/?LinkId=392587).
+After your certificates are published, use the Azure AD Connect tool to synchronize user data from your on-premises Exchange environment to Office 365. For more information on this process, see [Azure AD Connect sync: Understand and customize synchronization](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
 Along with synchronizing other directory data, for S/MIME purposes, the tool will synchronize the  **userCertificate** and **userSMIMECertificate** attributes for each user object so the data can be used to sign and encrypt messages.
 
@@ -30,4 +34,4 @@ Along with synchronizing other directory data, for S/MIME purposes, the tool wil
 
 [S/MIME for message signing and encryption](s-mime-for-message-signing-and-encryption.md)
 
-[Azure Active Directory Sync tool](https://go.microsoft.com/fwlink/p/?LinkId=392587)
+[What is Azure AD Connect?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect)

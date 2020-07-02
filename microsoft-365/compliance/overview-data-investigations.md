@@ -1,5 +1,7 @@
 ---
 title: "Overview of Data Investigations (Preview) in Microsoft 365"
+f1.keywords:
+- NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,8 +15,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: "This article describes the new Data Investigations (Preview) tool in Microsoft 365."
+ms.custom:
+- seo-marvel-mar2020
+description: In this article, you'll learn about the Data Investigations (Preview) tool in Microsoft 365. The Data Investigations tool helps you assess and remediate the data spillage.  
 ---
 
 # Overview of Data Investigations (Preview) in Microsoft 365
@@ -25,17 +28,17 @@ This article describes using the capabilities in the new Data Investigations (Pr
 
 ## Permissions
 
-To access and conduct a data investigation, you need be a member of the Data investigator role group. For more information, see [Assign permissions for Data Investigations](permissions.md).
+To access and conduct a data investigation, you need be a member of the Data investigator role group. For more information, see [Assign permissions for Data Investigations](data-investigations-permissions.md).
 
 ## Data Investigations (Preview) workflow 
 
 The following sections describe each step in the built-in workflow in Data Investigations (Preview). The following screenshot shows the **Home** tab of an investigation named *High Risk: Finance Documents Leakage*. 
 
-![Workflow in the Data Investigations tool](media/DataInvestigationsWorkflow.png)
+![Workflow in the Data Investigations tool](../media/DataInvestigationsWorkflow.png)
 
 ## Search for sensitive, malicious, or misplaced data
 
-Use the **Searches** tab to create searches to find the Office 365 for data that you want to remediate. You can create and run query-based searches to identify a set email messages and documents that might contain spilled data, and then collect them as evidence to review and analyze. Also, you can use the search tool to preview sample documents and view search statistics that can  help you refine and improve the search results. Once you're satisfied that the search results contain the all the data relevant to the investigation, you add the search results to the evidence set to further review, impact assessment, and taking remedial actions as necessary. For more information, see [Search for data in an investigation](search-for-data.md).
+Use the **Searches** tab to create searches to find the Microsoft 365 for data that you want to remediate. You can create and run query-based searches to identify a set email messages and documents that might contain spilled data, and then collect them as evidence to review and analyze. Also, you can use the search tool to preview sample documents and view search statistics that can  help you refine and improve the search results. Once you're satisfied that the search results contain the all the data relevant to the investigation, you add the search results to the evidence set to further review, impact assessment, and taking remedial actions as necessary. For more information, see [Search for data in an investigation](search-for-data.md).
 
 ## Review and investigate evidence
 

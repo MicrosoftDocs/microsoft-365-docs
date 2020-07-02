@@ -1,5 +1,7 @@
 ---
 title: Payment Services Directive 2 and Strong Customer Authentication for commercial customers
+f1.keywords:
+- NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
@@ -9,7 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce
-ms.custom:
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Starting on September 14, 2019, banks in the 31 countries of the European Economic Area are required to verify the identity of the person making an online purchase before the payment can be processed."

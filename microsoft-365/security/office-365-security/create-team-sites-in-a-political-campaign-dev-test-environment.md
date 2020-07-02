@@ -1,5 +1,7 @@
 ---
-title: "Create team sites in a political campaign dev/test environment"
+title: Create team sites - Political campaign dev environment
+f1.keywords:
+- NOCSH
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +15,7 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom:
+ms.custom: seo-marvel-apr2020
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: "Summary: Create public, private, sensitive, and highly confidential SharePoint Online team sites in your political campaign dev/test environment."
 ---
@@ -28,11 +30,11 @@ Use the instructions in this article to create a dev/test environment that inclu
 
 First, follow the instructions in [Configure groups and users for a political campaign dev/test environment](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md) to create your subscriptions, users, and groups.
   
-## Phase 2: Create Office 365 labels
+## Phase 2: Create labels
 
 In this phase, you create the labels for the different levels of security for SharePoint Online team site document folders.
   
-1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. From the **Microsoft Office Home** tab, click the **Admin** tile.
     
@@ -362,13 +364,11 @@ Use the instructions in [Activate Azure RMS with the Microsoft 365 admin center]
   
 Next, configure Azure Information Protection with a new scoped policy and sub-label for protection and permissions with the following steps:
   
-1. Sign in to the admin center with an account that has the Security Administrator or Company Administrator role. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to the admin center with an account that has the Security Administrator or Company Administrator role. For help, see [Where to sign in to Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. In a separate tab of your browser, go to the Azure portal ([https://portal.azure.com](https://portal.azure.com)).
     
-3. If this is the first time you are configuring Azure Information Protection, see these [instructions](https://docs.microsoft.com/information-protection/deploy-use/configure-policy#to-access-the-azure-information-protection-blade-for-the-first-time).
-    
-4. In the list pane, click **All services**, type **information**, and then click **Azure Information Protection**.
+4. In the search pane, type **information**, and then click **Azure Information Protection**.
 
 5. Click **Labels**.
     
