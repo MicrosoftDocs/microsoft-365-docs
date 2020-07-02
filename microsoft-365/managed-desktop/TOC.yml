@@ -87,6 +87,8 @@
               href: get-started/register-reused-devices-self.md
         - name: Get your users ready to use devices
           href: get-started/get-started-devices.md
+        - name: First-run experience with Autopilot and the Enrollment Status Page 
+          href: get-started/ESP-first-run.md
         - name: Deploy apps
           href: get-started/deploy-apps.md
           items: 
