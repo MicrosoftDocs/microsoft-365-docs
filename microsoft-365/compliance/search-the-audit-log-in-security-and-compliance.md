@@ -781,7 +781,7 @@ The following table lists the user and admin activities in Microsoft Forms that 
 Where noted below in the descriptions, some operations contain additional activity parameters.
 
 > [!NOTE]
-> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-co-authors-and-anonymous-responders) section.
+> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-coauthors-and-anonymous-responders) section.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
