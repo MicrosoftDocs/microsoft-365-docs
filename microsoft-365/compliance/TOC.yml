@@ -161,6 +161,10 @@
       href: technical-reference-details-about-encryption.md
     - name: TLS 1.0 and 1.1 deprecation for Office 365
       href: tls-1.0-and-1.1-deprecation-for-office-365.md
+    - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
+      href: tls-1-2-in-office-365-gcc.md
+    - name: TLS 1.2 in Office 365
+      href: prepare-tls-1.2-in-office-365.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -488,15 +492,19 @@
           href: overview-ediscovery-20.md
         - name: Get started with Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Work with custodians
+        - name: Work with custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
             - name: Add custodians to a case
               href: add-custodians-to-case.md
+            - name: Bulk-add custodians to a case
+              href: bulk-add-custodians.md
             - name: Manage custodians
               href: manage-new-custodians.md
             - name: View custodian activity
               href: view-custodian-activity.md
+            - name: Add non-custodial data sources to a case
+              href: non-custodial-data-sources.md
         - name: Work with communications
           href: managing-custodian-communications.md
           items: 
