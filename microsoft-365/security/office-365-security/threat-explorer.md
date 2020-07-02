@@ -23,9 +23,8 @@ ms.custom: seo-marvel-apr2020
 
 If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **real-time detections** (formerly *real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
-|||
+| With ATP Plan 2, you see: | With ATP Plan 1, you see: |
 |---|---|
-|**With ATP Plan 2, you see:**|**With ATP Plan 1, you see:**|
 |![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
 
@@ -76,7 +75,7 @@ You should also see additional details within the product. For example, the tota
 
 
 ## New features in real-time detections
-=======
+
 ## New features in Threat Explorer and real-time detections
 
 Three new features added into Threat Explorer and real-time detections:
@@ -104,21 +103,18 @@ Delivery Action is the action taken on an email due to existing policies or dete
 |---------|---------|---------|---------|
 |Email was delivered to Inbox or folder of a user and the user can directly access it.    | Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.       | Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!     | Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.     |
     
-=======
-|||||
+
+| Delivered | Junked | Blocked | Replaced |
 |---|---|---|---|
-|**Delivered**|**Junked**|**Blocked**|**Replaced**|
 |Email was delivered to the user's inbox or another folder, and the user can directly access it.| Email was sent to either user's Junk folder or Deleted folder, and the user has access to email messages in those folders.| Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.| Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.|
 |
 
 And here is what the user can see, and what they can't:
 
-|||
+| Accessible to end users | Inaccessible to end users |
 |---|---|
-|**Accessible to end users**|**Inaccessible to end users**|
 |Delivered|Blocked|
 |Junked|Replaced|
-|
 
 Delivery location shows the results of policies and detections that run post-delivery. It's linked to a Delivery Action. This field was added to give insight into the action taken when a problem mail is found. Here are the possible values of delivery location:
 
