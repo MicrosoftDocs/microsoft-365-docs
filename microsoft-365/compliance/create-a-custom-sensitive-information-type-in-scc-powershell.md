@@ -375,8 +375,8 @@ To upload your rule package, do the following steps:
 
    For detailed syntax and parameter information, see [New-DlpSensitiveInformationTypeRulePackage](https://docs.microsoft.com/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage).
 
-> [!NOTE]
-> The limit for custom sensitive information type collections is 10.
+   > [!NOTE]
+   > The limit for custom sensitive information type collections is 10.
 
 4. To verify that you've successfully created a new sensitive information type, do any of the following steps:
 
