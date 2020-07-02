@@ -199,38 +199,14 @@ Sample code to call the REST API
 
 ##### Available parameters
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameters</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Notes</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&lt;d:Name&gt;&lt;/d:Name&gt;</td>
-<td>Provide a unique name for the event,</td>
-<td>Cannot contain trailing spaces, and the following characters: % * \ &amp; &lt; &gt; | # ? , : ;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventType&gt;&lt;/d:EventType&gt;</td>
-<td>Enter event type name (or Guid),</td>
-<td>Example: “Employee termination”. Event type has to be associated with a retention label.</td>
-</tr>
-<tr class="odd">
-<td>&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</td>
-<td>Enter “ComplianceAssetId:” + employee Id</td>
-<td>Example:&quot;ComplianceAssetId:12345&quot;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</td>
-<td>Event Date and Time</td>
-<td><p>Format: yyyy-MM-ddTHH:mm:ssZ, Example:</p>
-<p>2018-12-01T00:00:00Z</p></td>
-</tr>
-</tbody>
-</table>
+
+|Parameters|Description|Notes|
+|--- |--- |--- |
+|<d:Name></d:Name>|Provide a unique name for the event,|Cannot contain trailing spaces, and the following characters: % * \ & < > | # ? , : ;|
+|<d:EventType></d:EventType>|Enter event type name (or Guid),|Example: “Employee termination”. Event type has to be associated with a retention label.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Enter “ComplianceAssetId:” + employee Id|Example: "ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|Event Date and Time|Format: yyyy-MM-ddTHH:mm:ssZ, Example: 2018-12-01T00:00:00Z
+|
 
 ##### Response codes
 
@@ -243,49 +219,16 @@ Sample code to call the REST API
 
 ##### Get Events based on time range
 
-<table>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>GET</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>URL</td>
-<td><ol start="4" type="1">
-<li><p>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</p></li>
-</ol></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Headers</td>
-<td>Content-Type</td>
-<td>application/atom+xml</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Authentication</td>
-<td>Basic</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Username</td>
-<td>“Complianceuser”</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Password</td>
-<td>“Compliancepassword”</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+
+
+|Method|GET||
+|--- |--- |--- |
+|URL|ht<span>tps://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16||
+|Headers|Content-Type|application/atom+xml|
+||||
+|Authentication|Basic||
+|Username|“Complianceuser”||
+|Password|“Compliancepassword”||
 
 ##### Response codes
 
