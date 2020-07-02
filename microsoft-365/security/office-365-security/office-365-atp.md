@@ -39,9 +39,8 @@ Office 365 Advanced Threat Protection (ATP) safeguards your organization against
 
 The following table summarizes what's included in each plan.
 
-|||
+| Office 365 ATP Plan 1 | Office 365 ATP Plan 2 |
 |---|---|
-|**Office 365 ATP Plan 1**|**Office 365 ATP Plan 2**|
 |Configuration, protection, and detection capabilities:<br/>• [Safe Attachments](atp-safe-attachments.md)<br/>• [Safe Links](atp-safe-links.md)<br/>• [ATP for SharePoint, OneDrive, and Microsoft Teams](atp-for-spo-odb-and-teams.md)<br/>• [ATP anti-phishing protection](set-up-anti-phishing-policies.md#exclusive-settings-in-atp-anti-phishing-policies)<br/>• [Real-time detections](threat-explorer.md)|Office 365 ATP Plan 1 capabilities<br/>--- plus ---<br/>Automation, investigation, remediation, and education capabilities:<br/>• [Threat Trackers](threat-trackers.md)<br/>• [Threat Explorer](threat-explorer.md)<br/>• [Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>• [Attack Simulator](attack-simulator.md)|
 |
 
