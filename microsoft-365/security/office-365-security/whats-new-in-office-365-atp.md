@@ -35,6 +35,11 @@ Office 365 ATP is available in two plans: Office 365 ATP Plan 1 and Office 365 A
 
 Office 365 ATP Plan 2 is included in Office 365 Enterprise E5, Office 365 Education A5, and Microsoft 365 Enterprise E5. Office 365 ATP Plan 1 is included in Microsoft 365 Business. If your current subscription does not include Office 365 ATP, [contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644), and see how ATP can work for your organization. 
 
+## July 2020 
+ 
+- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
+
 ## November 2019
 
 - [Check out new compromised user detection and response capabilities (preview)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) (Office 365 ATP Plan 2)
