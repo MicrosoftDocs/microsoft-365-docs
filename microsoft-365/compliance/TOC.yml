@@ -159,6 +159,12 @@
       href: office-365-service-encryption.md    
     - name: Technical reference details about encryption in Office 365
       href: technical-reference-details-about-encryption.md
+    - name: TLS 1.0 and 1.1 deprecation for Office 365
+      href: tls-1.0-and-1.1-deprecation-for-office-365.md
+    - name: TLS 1.0 and 1.1 deprecation in Office 365 GCC High and DoD
+      href: tls-1-2-in-office-365-gcc.md
+    - name: TLS 1.2 in Office 365
+      href: prepare-tls-1.2-in-office-365.md
     - name: Customer Key
       items: 
         - name: Service encryption with Customer Key in Office 365
@@ -249,10 +255,14 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
+        - name: Archive Bloomberg Message data (preview)
+          href: archive-bloomberg-message-data.md 
         - name: Archive Facebook data (preview)
           href: archive-facebook-data-with-sample-connector.md
         - name: Import HR data (preview)
           href: import-hr-data.md
+        - name: Archive ICE Chat data (preview)
+          href: archive-icechat-data.md 
         - name: Archive Instant Bloomberg data
           href: archive-instant-bloomberg-data.md
         - name: Archive LinkedIn data
@@ -482,15 +492,19 @@
           href: overview-ediscovery-20.md
         - name: Get started with Advanced eDiscovery
           href: get-started-with-advanced-ediscovery.md
-        - name: Work with custodians
+        - name: Work with custodians and non-custodial data sources
           href: managing-custodians.md
           items: 
             - name: Add custodians to a case
               href: add-custodians-to-case.md
+            - name: Bulk-add custodians to a case
+              href: bulk-add-custodians.md
             - name: Manage custodians
               href: manage-new-custodians.md
             - name: View custodian activity
               href: view-custodian-activity.md
+            - name: Add non-custodial data sources to a case
+              href: non-custodial-data-sources.md
         - name: Work with communications
           href: managing-custodian-communications.md
           items: 
@@ -803,28 +817,28 @@
   items: 
     - name: Microsoft Service Trust Portal
       href: get-started-with-service-trust-portal.md
-    - name: Compliance Score and Compliance Manager
+    - name: Compliance Score and Compliance Manager (preview)
       items: 
-        - name: Compliance Score (Preview)
+        - name: Compliance Score (preview)
           href: compliance-score.md
-        - name: Set up Compliance Score (Preview)
+        - name: Set up Compliance Score
           href: compliance-score-setup.md
-        - name: Working with Compliance Score (Preview)
-          href: working-with-compliance-score.md
-        - name: Compliance Score calculation (Preview)
+        - name: Customize Compliance Score with assessments
+          href: compliance-score-assessments.md
+        - name: Assign and perform work with improvement actions
+          href: compliance-score-improvement-actions.md
+        - name: How your score is calculated
           href: compliance-score-methodology.md
-        - name: Compliance Score release notes (Preview)
-          href: compliance-score-release-notes.md
-        - name: Compliance Score FAQ (Preview)
+        - name: Frequently asked questions (FAQ)
           href: compliance-score-faq.md
-        - name: Compliance Manager (Preview)
+        - name: Compliance Manager (preview)
           href: compliance-manager-overview.md
           items: 
-            - name: What's new in Compliance Manager (Preview)
+            - name: What's new in Compliance Manager (preview)
               href: compliance-manager-release-notes.md
-            - name: Working with Compliance Manager (Preview)
+            - name: Working with Compliance Manager (preview)
               href: working-with-compliance-manager.md
-            - name: Compliance Manager (Classic)
+            - name: Compliance Manager (classic)
               href: meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md
     - name: GDPR data subject request tool
       href: manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md
