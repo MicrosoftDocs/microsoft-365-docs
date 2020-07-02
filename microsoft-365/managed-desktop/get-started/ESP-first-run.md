@@ -10,7 +10,7 @@ ms.collection: M365-modern-desktop
 
 # First-run experience with Autopilot and the Enrollment Status Page
 
-Microsoft Managed Desktop uses both Windows Autopilot and Microsoft Intune's Enrollment Status Page (ESP) to provide the best possible first-run experience to your users.
+Microsoft Managed Desktop uses both [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) and Microsoft Intune's Enrollment Status Page (ESP) to provide the best possible first-run experience to your users.
 
 To provide this, you must register devices in the Microsoft Managed Desktop service. For more about registration, see [Register new devices yourself](../get-started/register-devices-self.md) or [Steps for Partners to register devices](../get-started/register-devices-partner.md).
 
@@ -19,7 +19,7 @@ To provide this, you must register devices in the Microsoft Managed Desktop serv
 Microsoft Managed Desktop uses these settings in the Autopilot profile used for your users' devices:
 
 
-|Column1  |Column2  |
+|Setting  |Value  |
 |---------|---------|
 |Deployment mode |  User Driven       |
 |Join to Azure AD as     |  Azure AD joined       |
@@ -40,7 +40,7 @@ Microsoft Managed Desktop uses these settings in the Autopilot profile used for 
 Microsoft Managed Desktop uses these settings for the Enrollment Status Page experience:
 
 
-|Column1  |Column2  |
+|Setting  |Value  |
 |---------|---------|
 |Show app and profile configuration progress     | Yes        |
 |Show an error when installation takes longer than specified number of minutes     |  60       |
@@ -51,8 +51,8 @@ Microsoft Managed Desktop uses these settings for the Enrollment Status Page exp
 |Block device use until all apps and profiles are installed     |  Yes       |
 |Allow users to reset device if installation error occurs     |  Yes       |
 |Allow users to use device if installation error occurs     |  Yes       |
-|Block device use until these required apps are installed if they are assigned to the user/device     |  Time Correction       |
-|Device configuration Profile     | "Modern Workplace - Disable User ESP"        |
+|Block device use until these required apps are installed if they are assigned to the user/device     |  Modern Workplace - Time Correction       |
+
 
 
 The Enrollment Status Page experience occurs in three phases. For more, see [Enrollment Status Page tracking information](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status#enrollment-status-page-tracking-information).
@@ -60,7 +60,7 @@ The Enrollment Status Page experience occurs in three phases. For more, see [Enr
 The experience proceeds as follows:
 
 1. The Autopilot experience starts and the user enters their credentials.
-2. The device opens the Enrollment Status Page and proceeds through Device Preparation and Device Setup phases. A third phase (Account Setup) is not used by Microsoft Managed Desktop, but is addressed later in the process. The device restarts.
+2. The device opens the Enrollment Status Page and proceeds through Device Preparation and Device Setup phases. A third phase (Account Setup) is skipped in Microsoft Managed Desktop configuration because User ESP is disabled. User ESP is enabled later in the configuration. The device restarts.
 3. After restart, the device opens the Windows sign-in page with **Other user**.
 4. The users enters their credentials again and the desktop opens.
 
