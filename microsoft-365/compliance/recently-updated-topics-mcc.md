@@ -107,7 +107,7 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Changes include:
 
 - Removed Azure AD instructions and instead linked to the [Azure AD authoritative information](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
-- Updated the [How to configure site and group settings when you create or edit sensitivity labels](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) section with information about the **Privacy of Office 365 group-connected teams sites** setting, which includes the new **None** option.
+- Updated the [How to configure site and group settings](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) section with information about the **Privacy of Office 365 group-connected teams sites** setting, which includes the new **None** option.
 - Added a note describing how only labels with site and group settings will be available to select when users create teams, groups, and sites. This functionality is gradually rolling out to organizations.
 
 [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated)<br>[New section](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) with example encryption settings for some of the most commonly used configurations to protect documents and emails.
