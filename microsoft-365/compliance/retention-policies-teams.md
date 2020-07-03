@@ -66,27 +66,27 @@ When the retention policy is retain-only, or delete-only, the contents paths are
 
 ## Skype for Business and Teams interop chats
 
-The same flow works for Skype for Business and Teams interop chats. When a Skype for Business chat comes into Teams, it becomes a message in a Teams chat thread and is ingested into the appropriate mailbox. Teams retention policies will delete these messages from the Teams thread. 
+The same flow works for Skype for Business and Teams interop chats. When a Skype for Business chat comes into Teams, it becomes a message in a Teams chat thread and is ingested into the appropriate mailbox. Teams retention policies will apply to these messages from the Teams thread. 
 
-However, if conversation history is turned on for Skype for Business and from the Skype for Business client side that history is being saved into a mailbox, that chat data isn't handled by a Teams retention policy.
+However, if conversation history is turned on for Skype for Business and from the Skype for Business client side that history is being saved into a mailbox, that chat data isn't handled by a Teams retention policy. For this content, use a retention policy that's configured for Skype for Business.
 
-## Mailboxes for Teams and files in Teams
+## Additional policies needed to support Teams
 
-Teams is more than just chats and channel messages. It can include mailboxes and files. This means that if you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Office 365 groups** location.
+Teams is more than just chats and channel messages. It supports Microsoft 365 groups and files. This means that if you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Office 365 groups** location. This retention policy applies to content in the group's mailbox, site, and files.
 
- in Teams, you must configure one or more retention policies that apply to OneDrive and SharePoint in addition to any retention policies you configure for Teams. For more information about how retention policies work for these locations, see [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md).
+If the team site isn't connected to a Microsoft 365 group, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations:
 
+- Files that are shared in chat are stored in the OneDrive account of the user who shared the file. 
 
-includes files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded to channels are stored in the SharePoint site for the team
+- Files that are uploaded to channels are stored in the SharePoint site for the team.
 
-In Teams, files that are shared in chat are stored in the OneDrive account of the user who shared the file. Files that are uploaded to channels are stored in the SharePoint site for the team. This means that to retain or delete files in Teams, you must configure one or more retention policies that apply to OneDrive and SharePoint in addition to any retention policies you configure for Teams. For more information about how retention policies work for these locations, see [Learn about retention policies for SharePoint and OneDrive](retention-policies-sharepoint.md).
+> [!TIP]
+> If you want to apply a retention policy to the files of just a specific team that's not connected to a Microsoft 365 group, you can choose the SharePoint site for the team, and the OneDrive accounts of users in the Team.
+
+It's possible that a retention policy that's applied to Office 365 groups, SharePoint sites, or OneDrive accounts could delete a file that's referenced in a Teams chat or channel message before those messages get deleted. In this scenario, the file still displays in the Teams message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
 
 > [!NOTE]
-> A retention policy that includes Teams channel messages or Teams chats can only include Teams locations. So to retain or delete these files in Teams, you must create a separate retention policy.
-> 
-> If you want to apply a retention policy to the files of just a specific team, you can choose the SharePoint site for the Team, and the OneDrive accounts of users in the Team.
-
-It's possible that a retention policy that's applied to SharePoint or OneDrive could delete a file that's referenced in a Teams chat or channel message before those messages get deleted. In this scenario, the file will still show up in the Teams message, but when users click the file, they'll get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
+> A retention policy that includes Teams channel messages or Teams chats can only include Teams locations. So to retain or delete other content that's supported by Teams, you must create a separate retention policy.
 
 ## Meetings and external users
 
