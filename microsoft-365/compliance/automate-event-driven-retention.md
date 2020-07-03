@@ -221,7 +221,7 @@ Sample code to call the REST API
 
 - **Method**: GET
 
-- **URL**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
 
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 
@@ -246,7 +246,7 @@ Sample code to call the REST API
 
 - **Method**: GET
 
-- **URL**: [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\))
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
 
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 
@@ -272,7 +272,7 @@ Sample code to call the REST API
 
 - **Method**: GET
 
-- **URL**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 
