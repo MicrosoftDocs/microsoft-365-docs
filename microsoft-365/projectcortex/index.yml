@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title: Microsoft Broadsight admin center help # < 60 chars
-summary: Explore resources for admins and advanced user to get started with Microsoft Broadsight.
+title: Project Cortex admin center help # < 60 chars
+summary: Explore resources for admins and advanced user to get started with Project Cortex.
 brand: m365
 
 metadata:
-  title: Microsoft Broadsight help # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Set up and manage Microsoft Broadsight. # Required; article description that is displayed in search results. < 160 chars.
+  title: Project Cortex help # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Set up and manage Project Cortex. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
@@ -22,35 +22,35 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Microsoft Broadsight logical architecture
+    - title: What is Knowledge Management?
       itemType: whats-new
-      url: what-is-microsoft-broadsight.md
+      url: what-is-knowledge-management.md
     # Card
-    - title: Video - Get started with the Content Center
+    - title: What is Content Understanding?
       itemType: whats-new
-      url: what-is-microsoft-broadsight.md
+      url: what-is-content-understanding.md
 
 # productDirectory section (optional)
 productDirectory:
   title: Get started # < 60 chars (optional)
-  summary: Turn on, configure, and use Microsoft Broadsight. # < 160 chars (optional)
+  summary: Turn on, configure, and use Project Cortex. # < 160 chars (optional)
   items:
       # Card
-    - title: Learn about Microsoft Broadsight
+    - title: Set up Project Cortex
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Learn what you can do with Microsoft Broadsight.
-      url: what-is-microsoft-broadsight.md
+      summary: Learn how to turn on and configure Project Cortex.
+      url: turn-on-project-cortex.md
     # Card
-    - title: Get set up
+    - title: Create a classifier model
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Turn on and configure Microsoft Broadsight.
-      url: what-is-microsoft-broadsight.md
+      summary: Create and train a classifier model.
+      url: create-a-classifier.md
     # Card
-    - title: Get started with Knowledge Management
+    - title: Create an extractor
       imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
-      summary: Select sites and manage topics.
-      url: what-is-microsoft-broadsight.md
+      summary: Learn how to create an extractor for your content understanding model.
+      url: create-a-classifier.md
     # Card
     - title: Get started with Document Understanding
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
