@@ -219,15 +219,18 @@ Sample code to call the REST API
 
 ##### Get Events based on time range
 
+- **Method**: GET
 
+- **URL**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16
 
-|Method|GET||
-|--- |--- |--- |
-|URL|https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16||
-|Headers|Key = Content-Type, Value = application/atom+xml|
-|Authentication|Basic||
-|Username|“Complianceuser”||
-|Password|“Compliancepassword”||
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
 
 ##### Response codes
 
@@ -241,13 +244,19 @@ Sample code to call the REST API
 
 ##### Get an event by ID
 
-|Method|GET||
-|--- |--- |--- |
-| URL | [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\)) |
-| Header | Key = Content-Type, Value = application/atom+xml |
-|Authentication | Basic|
-|Username |"Complianceuser" |
-|Password |"Compliancepassword" |
+- **Method**: GET
+
+- **URL**: [https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent(‘174e9a86-74ff-4450-8666-7c11f7730f66’)](https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent\('174e9a86-74ff-4450-8666-7c11f7730f66'\))
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+
 
 ##### Response codes
 
@@ -261,13 +270,18 @@ Sample code to call the REST API
 
 ##### Get an event by name
 
-|Method|GET||
-|--- |--- |--- |
-| URL            | <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('EventByRESTPost-2226bfebcc2841a8968ba71f9516b763')> |                      |
-| Headers        | Content-Type                                                                                                              | application/atom+xml |
-| Authentication | Basic                                                                                                                             |                      |
-| Username       | "Complianceuser"                                                                                                                             |                      |
-| Password       | "Compliancepassword"                                                                                                                         |                      |
+- **Method**: GET
+
+- **URL**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
 
 ##### Response codes
 
