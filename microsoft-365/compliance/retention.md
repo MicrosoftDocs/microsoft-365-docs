@@ -26,7 +26,6 @@ description: Learn about retention policies and retention labels that help you t
 For most organizations, the volume and complexity of their data is increasing daily—email, documents, instant messages, and more. Effectively managing or governing this information is important because you need to:
   
 - **Comply proactively with industry regulations and internal policies** that require you to retain content for a minimum period of time—for example, the Sarbanes-Oxley Act might require you to retain certain types of content for seven years. 
-    
 - **Reduce your risk in the event of litigation or a security breach** by permanently deleting old content that you're no longer required to keep. 
     
 - **Help your organization to share knowledge effectively and be more agile** by ensuring that your users work only with content that's current and relevant to them. 
@@ -43,6 +42,8 @@ With these two retention actions, you can configure retention settings for the f
 - Retain-only: Retain content forever or for a specified period of time.
 - Delete-only: Delete content after a specified period of time.
 - Retain and then delete: Retain content for a specified period of time and then delete it.
+
+These retention settings work with content in place that saves you the additional overheads of creating and configuring additional storage when you need to retain content for compliance reasons. In addition, you don't need to implement customized processes to copy and synchronize this data.
 
 ## How retention settings work with content in place
 
