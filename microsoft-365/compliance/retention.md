@@ -37,7 +37,12 @@ Retention settings that you configure can help you achieve all these goals. Mana
     
 - **Deleting** content permanently at the end of the retention period. 
     
-With retention settings, you can decide proactively whether to retain content, delete content, or both—retain and then delete the content.
+
+With these two retention actions, you can configure retention settings for the following outcomes:
+
+- Retain-only: Retain content forever or for a specified period of time.
+- Delete-only: Delete content after a specified period of time.
+- Retain and then delete: Retain content for a specified period of time and then delete it.
 
 ## How retention settings work with content in place
 
@@ -70,7 +75,7 @@ You can use both retention policies and retention labels to assign your retentio
 
 Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level.
 
-For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others in the same site should be retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels that have different retention settings. 
+For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others in the same site should be retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
 
 Unlike retention settings from retention policies, retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location.  In addition, retention labels have the following capabilities that retention policies don't support: 
  
@@ -97,7 +102,7 @@ Retention policies can be applied to the following locations:
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
     
-You can also apply a policy to all content or to content when it meets specific conditions, such as content containing keywords or [types of sensitive information](what-the-sensitive-information-types-look-for.md).
+You can also apply a policy to all content or to content when it meets specific conditions, such as content that contains keywords or [types of sensitive information](what-the-sensitive-information-types-look-for.md).
 
 #### Use Preservation Lock to comply with regulatory requirements
 
@@ -117,7 +122,7 @@ In summary, a locked retention policy can be increased or extended, but it can't
 > [!IMPORTANT]
 > Before you lock a retention policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet compliance requirements.
 
-##### Releasing a retention policy
+#### Releasing a retention policy
 
 Providing your retention policy doesn't have a Preservation Lock, you can turn off or delete a retention policy at any time. 
 
@@ -143,7 +148,7 @@ In all these cases, retention labels can help you take the right actions on the 
   
 With retention labels, you can:
   
-- **Enable people in your organization to apply a retention label manually** to content in Outlook on the web, Outlook 2010 and later, OneDrive, SharePoint, and Microsoft 365 Groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate policy applied. 
+- **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
    
@@ -171,8 +176,8 @@ For example, you can create and apply a retention label named "Review later" wit
 
 #### Using a retention label as a condition in a DLP policy
 
-You can also use a retention label as a condition in a data loss prevention (DLP) policy, and the DLP policy can enforce other actions, such as restricting access, on content that contains a specific retention label. 
-  
+You can specify a retention label as a condition in a data loss prevention (DLP) policy for documents in SharePoint. For example, configure a DLP policy to prevent documents from being shared outside the organization if they have a specified retention label applied to it.
+
 For more information, see [Using a retention label as a condition in a DLP policy](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy).
 
 #### Retention labels and policies that apply them
@@ -181,7 +186,7 @@ Retention labels are independent, reusable building blocks. The primary purpose 
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. When you publish retention labels, they're included in a retention label policy. Retention label names are immutable, which means that they cannot be edited after they're created.
+1. When you publish retention labels, they're included in a retention label policy that make them available for admins and users to select.
 
 2. A single retention label can be included in many retention label policies.
 
@@ -209,18 +214,18 @@ Exchange public folders, Skype, and Teams channel messages and chats do not supp
 
 An email or document can have only a single retention label assigned to it at a time:
   
-- For retention labels assigned manually by end users, people can remove or change the retention label that's assigned.
+- For retention labels assigned manually by admins or end users, people can remove or change the retention label that's assigned.
     
-- If content has an auto-apply label assigned, an auto-apply label can be replaced by a retention label assigned manually by an end user.
+- If content has an auto-apply label assigned, this label can be replaced by a published retention label.
     
-- If content has a retention label assigned manually by an end user, an auto-apply label cannot replace the manually assigned retention label.
+- If content has a published retention label assigned, an auto-apply label cannot replace it.
     
 - If there are multiple rules that assign an auto-apply label and content meets the conditions of multiple rules, the retention label for the oldest rule is assigned.
     
 To understand how and why one retention label is applied rather than another, it's helpful to understand the difference between explicitly assign a label, and implicitly assigned a label:
 
-- Manually assigned labels are explicitly assigned
-- Automatically applied labels are implicitly assigned
+- Retention labels applied from a label policy are explicitly assigned
+- Retention labels applied automatically from an auto-apply policy are implicitly assigned
 
 An explicitly assigned retention label takes precedence over an implicitly assigned retention label. For more information, see the [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) section on this page.
 
@@ -254,7 +259,7 @@ Use the following table to help you identify whether to use a retention policy o
 
 ## The principles of retention, or what takes precedence?
 
-It's possible or even likely that content might have several retention policies and retention labels applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? In summary, rest assured that content being retained by one set of retention settings from a retention policy or retention label can't be permanently deleted by another set of retention settings.
+It's possible or even likely that content might have several retention policies and retention labels applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? In summary, content retained by one set of retention settings from a retention policy or retention label can't be permanently deleted by another set of retention settings.
   
 ![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
