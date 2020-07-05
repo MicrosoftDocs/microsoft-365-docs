@@ -49,7 +49,7 @@ This section describes what needs to be done before retaining content.
 
 Identify the different roles in an organization that perform Record Management tasks and would be responsible for effective and efficient retention of business documents.
 
-  | **Persona**| **Role**|
+  | Persona | Role |
   | - | - |
   | Admin | Creates Retention Event types, Retention labels and Record repositories in SharePoint |
   | Records Manager                                  | Provides Retention Policies and Retention Schedules guidance and compliance details   |
@@ -83,8 +83,8 @@ To create a records repository, the compliance admin:
 2. Does one of the following:
         
     - Creates a SharePoint library: Set event-based label at the library level. For more information, see [Applying a default retention label to all content in a SharePoint library, folder, or document set](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
-          
-    - Sets up a document set in SharePoint. For more information, see [Introduction to document sets](https://support.microsoft.com/en-us/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234).
+
+   - Sets up a document set in SharePoint. For more information, see [Introduction to document sets](https://support.microsoft.com/en-us/office/introduction-to-document-sets-3dbcd93e-0bed-46b7-b1ba-b31de2bcd234).
       
 3. Assigns an asset ID to each employee document set. An asset ID is a product name or code used by the organization, for example, Employee number can be an asset ID. By assigning the asset ID to the folder, every item in that folder automatically inherits the same asset ID. This means all the items can have their retention period triggered by the same event.
 
@@ -161,7 +161,7 @@ Sample code to call the REST API
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
     
-    ```HTML
+    ```xml
     <?xml version='1.0' encoding='utf-8' standalone='yes'?>
     
     <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
@@ -199,42 +199,18 @@ Sample code to call the REST API
 
 ##### Available parameters
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Parameters</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Notes</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>&lt;d:Name&gt;&lt;/d:Name&gt;</td>
-<td>Provide a unique name for the event,</td>
-<td>Cannot contain trailing spaces, and the following characters: % * \ &amp; &lt; &gt; | # ? , : ;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventType&gt;&lt;/d:EventType&gt;</td>
-<td>Enter event type name (or Guid),</td>
-<td>Example: “Employee termination”. Event type has to be associated with a retention label.</td>
-</tr>
-<tr class="odd">
-<td>&lt;d:SharePointAssetIdQuery&gt;&lt;/d:SharePointAssetIdQuery&gt;</td>
-<td>Enter “ComplianceAssetId:” + employee Id</td>
-<td>Example:&quot;ComplianceAssetId:12345&quot;</td>
-</tr>
-<tr class="even">
-<td>&lt;d:EventDateTime&gt;&lt;/d:EventDateTime&gt;</td>
-<td>Event Date and Time</td>
-<td><p>Format: yyyy-MM-ddTHH:mm:ssZ, Example:</p>
-<p>2018-12-01T00:00:00Z</p></td>
-</tr>
-</tbody>
-</table>
+
+|Parameters|Description|Notes|
+|--- |--- |--- |
+|<d:Name></d:Name>|Provide a unique name for the event,|Cannot contain trailing spaces, and the following characters: % * \ & < > | # ? , : ;|
+|<d:EventType></d:EventType>|Enter event type name (or Guid),|Example: “Employee termination”. Event type has to be associated with a retention label.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Enter “ComplianceAssetId:” + employee Id|Example: "ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|Event Date and Time|Format: yyyy-MM-ddTHH:mm:ssZ, Example: 2018-12-01T00:00:00Z
+|
 
 ##### Response codes
 
-| **Response Code** | **Description**       |
+| Response Code | Description       |
 | ----------------- | --------------------- |
 | 302               | Redirect              |
 | 201               | Created               |
@@ -243,53 +219,20 @@ Sample code to call the REST API
 
 ##### Get Events based on time range
 
-<table>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>GET</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>URL</td>
-<td><ol start="4" type="1">
-<li><p>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&amp;EndDateTime=2019-01-16</p></li>
-</ol></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Headers</td>
-<td>Content-Type</td>
-<td>application/atom+xml</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Authentication</td>
-<td>Basic</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Username</td>
-<td>“Complianceuser”</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Password</td>
-<td>“Compliancepassword”</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+
+
+|Method|GET||
+|--- |--- |--- |
+|URL|https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16||
+|Headers|Content-Type|application/atom+xml|
+||||
+|Authentication|Basic||
+|Username|“Complianceuser”||
+|Password|“Compliancepassword”||
 
 ##### Response codes
 
-| **Response Code** | **Description**                   |
+| Response Code | Description                   |
 | ----------------- | --------------------------------- |
 | 200               | OK, A list of events in atom+ xml |
 | 404               | Not found                         |
@@ -309,7 +252,7 @@ Sample code to call the REST API
 
 ##### Response codes
 
-| **Response Code** | **Description**                                      |
+| Response Code | Description                                      |
 | ----------------- | ---------------------------------------------------- |
 | 200               | OK, The response body contains the event in atom+xml |
 | 404               | Not found                                            |
@@ -329,7 +272,7 @@ Sample code to call the REST API
 
 ##### Response codes
 
-| **Response Code** | **Description**                                      |
+| Response Code | Description                                      |
 | ----------------- | ---------------------------------------------------- |
 | 200               | OK, The response body contains the event in atom+xml |
 | 404               | Not found                                            |
@@ -343,7 +286,7 @@ Step 1: Connect to PowerShell.
 
 Step 2: Run the following script.
 
-```HTML
+```powershell
 param([string]$baseUri)
 
 $userName = "UserName"
@@ -435,7 +378,7 @@ Similarly, the above options to automate event-based retention can be used for t
 
 An organization can have multiple records for a single contract with customers, vendors, and partners. These documents can reside in a document library like SharePoint. The end of a contract determines the start of the retention period of the documents associated with the contract. For example, all records related to contracts need to be retained for five years from the time the contract expires. The event that triggers the five-year retention period is the expiration of the contract.
 
-A Customer Relationship Management (CRM) system can work with Microsoft 365 and trigger retention of Contract documents
+A Customer Relationship Management (CRM) system can work with Microsoft 365 and trigger retention of Contract documents.
 
 **Configuring Automated Event Based Retention for this scenario:**
 
@@ -491,9 +434,9 @@ An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Mic
 
 ### Using Redirect 302 response results to call the REST API
 
-1. Invoke a POST retention event call using the REST API URL <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required)
+1. Invoke a POST retention event call by using the REST API URL, <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required).
 
-2. Check the response code. If it’s 302, then get the redirected URL from Location property of the response header
+2. Check the response code. If it's 302, then get the redirected URL from Location property of the response header.
 
 3. Invoke the POST retention event call again using the redirected URL.
 

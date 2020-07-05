@@ -55,6 +55,11 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 - [Use Campaign Views in Office 365 ATP (**preview**)](campaigns.md)
 
+## July 2020 
+ 
+- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
+
 ## November 2019
 
 - [Check out new compromised user detection and response capabilities](address-compromised-users-quickly.md) (**preview**) (Office 365 ATP Plan 2)
@@ -89,4 +94,4 @@ Did you know that Office 365 ATP is available in two plans? [Learn more about wh
 
 [Office 365 ATP Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+

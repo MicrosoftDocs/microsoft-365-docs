@@ -87,7 +87,7 @@ For more information, see the [library of Azure Information Protection documenta
 
 Existing Azure Information Protection labels work seamlessly with sensitivity labels. For example, you can keep your existing Azure Information Protection labels and the labels that are applied to documents and email.
 
-If you have both sensitivity and Azure Information Protection labels, you should [migrate your Azure Information Protection labels to sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#how-sensitivity-labels-work-with-existing-azure-information-protection-labels).
+If you have both sensitivity and Azure Information Protection labels, you should [migrate your Azure Information Protection labels to sensitivity labels](https://docs.microsoft.com/office365/securitycompliance/sensitivity-labels#sensitivity-labels-and-azure-information-protection).
 
 ## Example: Classification for GDPR
 
