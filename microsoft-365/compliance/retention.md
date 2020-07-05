@@ -77,7 +77,7 @@ Use a retention policy to assign the same retention settings for content at a si
 
 For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others in the same site should be retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
 
-Unlike retention settings from retention policies, retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location.  In addition, retention labels have the following capabilities that retention policies don't support: 
+Unlike retention settings from retention policies, retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
  
 - Options to start the retention period from when the content was labeled or based on an event, rather than the age of the content or when it was last modified.
 
@@ -138,13 +138,13 @@ Use retention labels for different types of content that require different reten
   
 - Tax forms that need to be retained for a minimum period of time. 
     
-- Press materials that need to be permanently deleted when they reach a certain age. 
+- Press materials that need to be permanently deleted when they reach a specific age. 
     
-- Competitive research that needs to be both retained and then permanently deleted. 
+- Competitive research that needs to be retained for a specific period and then permanently deleted. 
     
 - Work visas that must be marked as a record so that they can't be edited or deleted. 
     
-In all these cases, retention labels can help you take the right actions on the right content. Using retention labels, you can classify data across your organization for governance, and enforce retention rules based on that classification.
+In all these cases, retention labels let you apply retention settings at the item level (document or email) for fine-grained governance control.
   
 With retention labels, you can:
   
@@ -182,7 +182,7 @@ For more information, see [Using a retention label as a condition in a DLP polic
 
 #### Retention labels and policies that apply them
 
-Retention labels are independent, reusable building blocks. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear. Then, admins and users can apply those labels to content.
+Retention labels are independent, reusable building blocks. The primary purpose of a retention label policy is to group a set of retention labels and specify the locations where you want those labels to appear. Then, admins and users can apply those labels to content in those locations.
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
@@ -256,6 +256,14 @@ Use the following table to help you identify whether to use a retention policy o
 |Disposition review | No| Yes |
 |Proof of disposition | No |Yes, when item is declared a record|
 |Identify itens subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
+
+Note that you can use both retention policies and retention labels as complementary retention methods. For example:
+
+- You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
+
+- You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
+
+For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
 
 ## The principles of retention, or what takes precedence?
 
