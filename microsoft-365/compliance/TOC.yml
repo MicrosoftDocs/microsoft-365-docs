@@ -283,7 +283,7 @@
           href: enable-unlimited-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Retain data
+    - name: Retain and delete data
       items: 
         - name: Learn about retention
           items:
