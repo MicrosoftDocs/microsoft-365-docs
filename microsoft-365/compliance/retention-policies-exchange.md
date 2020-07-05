@@ -23,7 +23,7 @@ description: "Learn about retention behavior that applies specifically to Exchan
 
 The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Exchange.
 
-## How a retention policy works with Exchange locations
+## How a retention policy works with Exchange
 
 For a user's mail, calendar, and other items, a retention policy is applied at the level of a mailbox.
 
