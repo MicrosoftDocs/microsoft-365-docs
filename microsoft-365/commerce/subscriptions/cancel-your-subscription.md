@@ -128,7 +128,7 @@ If you switched your nameserver (NS) records to Microsoft 365 when you set up yo
 
 If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
 
-For more information, see [How does Microsoft 365 manage my DNS records?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). To change your NS records, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
+To change your NS records, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### Save your data
 

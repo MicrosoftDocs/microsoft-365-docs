@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Apply query best practices
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Use shared queries
@@ -179,8 +181,6 @@
                   items: 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Apply query best practices
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Custom detections
                   items: 
                     - name: Custom detections overview

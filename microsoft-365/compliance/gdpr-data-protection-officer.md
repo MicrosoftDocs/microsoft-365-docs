@@ -45,7 +45,7 @@ Leopardstown<br>
 Dublin 18<br>
 D18 P521<br>
 Ireland<br>
-Telephone: +353 (0) 1 295-3826<br>
+Telephone: +353 (1) 706-3117<br>
 
 The contact details for the Data Protection Officer have been communicated to Microsoft's Supervisory Authority.
 
