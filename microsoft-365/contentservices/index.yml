@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
-title: Project Cortex admin center help # < 60 chars
+title: Content services admin center help # < 60 chars
 summary: Explore resources for admins and advanced user to get started with Project Cortex.
 brand: m365
 
 metadata:
-  title: Project Cortex help # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Content services help # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Set up and manage Project Cortex. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.

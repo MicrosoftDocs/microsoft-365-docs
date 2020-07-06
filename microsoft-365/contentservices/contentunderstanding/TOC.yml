@@ -19,7 +19,7 @@
           href: .md
         - name: What is structured versus unstructured content
           href: what-is-structure-versus-unstructured-content.md
-        - name: What is the explanation library?
+        - name: Understanding the explanation library
           href: .md
 
 
@@ -29,15 +29,15 @@
           href: .md
         - name: What are the licensing requirements for Project Cortex?
           href: .md
-        - name: Set up content understanding
+        - name: Set up Project Cortex
           href: set-up-project-cortex.md
-        - name: Set up knowledge management
-          href: set-up-project-cortex.md
+        - name: How do I configure knowledge management?
+          href: .md
         - name: How do I include additional source sites?
           href: .md
         - name: Project Cortex security and compliance
           href: .md
-        - name: Project Cortex limits and boundaries
+        - name: Microsoft Broadsight limits and boundaries
           href: .md
 
     - name: Adoption 
