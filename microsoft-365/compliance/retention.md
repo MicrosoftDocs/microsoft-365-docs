@@ -47,9 +47,9 @@ These retention settings work with content in place that saves you the additiona
 
 ## How retention settings work with content in place
 
-When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is retained as it existed when you applied the policy.
+When content has retention settings assigned to it, that content remains in its original location. People can continue to work with their documents or mail as if nothing's changed. But if they edit or delete content that's included in the retention policy, a copy of the content is automatically retained as it existed when you applied the retention settings.
   
-- For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library. Be aware that the Preservation Hold library consumes storage quota for the site.
+- For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library.
 
 - For email and public folders: The copy is retained in the **Recoverable Items** folder. 
 
@@ -60,11 +60,11 @@ When content has retention settings assigned to it, that content remains in its 
     - Any site content is retained in the **Preservation Hold** library.
 
 > [!NOTE]
-> The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention policies for SharePoint and Microsoft 365 groups.
+> The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
 > 
 These secure locations and the retained content are not visible to most people. In most cases, people do not even need to know that their content is subject to retention settings.
 
-For more detailed information about how retention settings work with different workloads, see the following articles:
+For more detailed information about how retention settings work for different workloads, see the following articles:
 
 - [Learn about retention for SharePoint and OneDrive](retention-policies-sharepoint.md)
 - [Learn about retention for Microsoft Teams](retention-policies-teams.md)
@@ -74,11 +74,11 @@ For more detailed information about how retention settings work with different w
 
 You can use both retention policies and retention labels to assign your retention settings to content. 
 
-Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level.
+Use a retention policy to assign the same retention settings for content at a site or mailbox level, and use a retention label to assign retention settings at an item level (folder, document, email).
 
-For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others in the same site should be retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
+For example, if all documents in a SharePoint site should be retained for five years, it's more efficient to do this with a retention policy than apply the same retention label to all documents in that site. However, if some documents in that site should be retained for five years and others retained for ten years, a retention policy wouldn't be able to do this. When you need to specify retention settings at the item level, use retention labels. 
 
-Unlike retention settings from retention policies, retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
+Unlike retention policies, retention settings from retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
  
 - Options to start the retention period from when the content was labeled or based on an event, rather than the age of the content or when it was last modified.
 
@@ -87,7 +87,8 @@ Unlike retention settings from retention policies, retention labels persist with
 - Apply a default label for SharePoint documents.
 
 - Support [disposition review](disposition-reviews.md) to review the content before it's permanently deleted.
-Mark the content as a [record](records.md) as part of the label settings, and then have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
+
+- Mark the content as a [record](records.md) as part of the label settings, and always have [proof of disposition](disposition.md#disposition-of-records) when content is deleted at the end of its retention period.
 
 ### Retention policies
 
