@@ -244,7 +244,7 @@ For a more comprehensive guidance, see [Turn on Microsoft Threat Protection](mtp
 
 Congratulations! You've just created your Microsoft Threat Protection trial lab environment! You can now simulate an attack and see how the cross product capabilities detect, create alerts, and automatically respond to a fileless attack on an endpoint.
 
-Now you can familiarize yourself with the Microsoft Threat Protection user interface! See what you can learn from and how to use each dashboards for your day-to-day security operation tasks, see the [Microsoft Threat Protection interactive guide](https://aka.ms/MTP-Interactive-Guide).
+Now you can familiarize yourself with the Microsoft Threat Protection user interface! See what you can learn from and know how to use each dashboards for your day-to-day security operation tasks: [Microsoft Threat Protection interactive guide](https://aka.ms/MTP-Interactive-Guide).
 
 
 ## Next steps
