@@ -21,7 +21,7 @@ description: Use Microsoft 365 security and compliance services to protect your 
 
 # Step 3: Deploy security and compliance for remote workers
 
-For remote workers, some of whom never come into the office or very infrequently, security and compliance are an important part of the overall solution. All of their communications occur over the Internet instead of being confined to an organizational intranet. 
+For remote workers, some of whom never go into the office or who go infrequently, security and compliance are an important part of the overall solution. All of their communications occur over the Internet instead of being confined to an organizational intranet. 
 
 There are things you and your workers can do to remain productive while decreasing cybersecurity risk and maintaining compliance with your internal policies and data regulations.
 
