@@ -307,7 +307,7 @@
           href: apply-retention-labels-automatically.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Create retention labels at scale
+        - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
         - name: Use event-based retention
           items: 

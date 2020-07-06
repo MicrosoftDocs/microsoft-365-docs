@@ -1,5 +1,5 @@
 ---
-title: "Create and publish retention labels at scale by using PowerShell"
+title: "Create and publish retention labels by using PowerShell"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -20,7 +20,7 @@ ms.custom:
 description: "Learn how to use PowerShell to create and publish retention labels from the command line, independently from the Microsoft 365 compliance center."
 ---
 
-# Create and publish retention labels at scale by using PowerShell
+# Create and publish retention labels by using PowerShell
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
