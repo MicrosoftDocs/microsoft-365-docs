@@ -83,12 +83,19 @@ Protecting the privacy of users that have policy matches is important and can he
 
 ### Indicators
 
-Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to particular risk activities and alerts are triggered by policies when users perform activities related to these indicators. In some cases, you may want to limit the indicators that are applied to insider risk policies in your organization. You can turn off the indicators for specific areas by disabling them from all insider risk policies.
+Insider risk policy templates define the type of risk activities that you want to detect and investigate. Each policy template is based on specific indicators that correspond to specific triggers and risk activities. All indicators are disabled by default, and you must select one or more policy indicators before configuring an insider risk management policy. 
 
-To define the indicators that are enabled in all policies, navigate to  **Insider risk settings** > **Indicators** and select one or more indicators. The indicators selected on the **Indicators** settings page cannot be individually configured when creating or editing an insider risk policy in the policy wizard.
+Alerts are triggered by policies when users perform activities related to policy indicators that meet a required threshold. Insider risk management uses two types of indicators:
 
->[!IMPORTANT]
->In order to receive alerts for risky activity defined in your policies, you must select one or more indicators before configuring an insider risk policy.
+- **Triggering indicators**: Indicators that determine if a user is active for an insider risk management policy. If a user is added to an insider risk management policy that uses triggering indicators but does not have a triggering indicator activity, the user activity is not evaluated by the policy. For example, User A is added to a policy created from the *Departing employee data theft* policy template and the policy and HR connector are properly configured. Until User A has a termination date reported by the HR connector, User A activities aren't evaluated by this insider risk management policy for risk. Another example of a triggering indicator is if a user is in-scope for a *High* severity DLP policy alert.
+- **Insider risk policy indicators**: Indicators included in insider risk management policies used to determine a risk score for an in-scope user. These policy indicators are only activated after a triggering indicator occurs for a user. Some examples of insider risk policy indicators are when a user copies data to personal cloud storage services or portable storage devices, or if a user shares internal files and folders with unauthorized external parties.
+
+In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies. Triggering indicators cannot be modified for insider risk policy templates.
+
+To define the insider risk policy indicators that are enabled in all insider risk policies, navigate to **Insider risk settings** > **Indicators** and select one or more policy indicators. The indicators selected on the Indicators settings page cannot be individually configured when creating or editing an insider risk policy in the policy wizard.
+
+>[!NOTE]
+>It may take several hours for new manually-added users to appear in the **Users dashboard**. Activities for the previous 90 days for these users may take up to 24 hours to display. To view activities for manually added users, select the user on the **Users dashboard** and open the **User activity** tab on the details pane.
 
 ### Policy timeframes
 

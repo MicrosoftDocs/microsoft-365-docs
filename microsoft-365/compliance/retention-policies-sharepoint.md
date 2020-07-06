@@ -77,7 +77,7 @@ A retain-only policy retains all versions of a document in a SharePoint site col
 > [!NOTE]
 > The preserved versions of SharePoint and OneDrive documents are not searchable by eDiscovery tools.
 
-### When a user leaves the organization
+## When a user leaves the organization
 
 **SharePoint**:
 
