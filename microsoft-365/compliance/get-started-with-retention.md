@@ -68,6 +68,8 @@ Use the following table to help you map your business requirements to retention 
 
 ## End-user documentation for retention labels
 
-The most effective end-user documentation will be customized guidance and instructions you provide for the label names and configurations you choose. However, you can use the following information for basic instructions:
+Retention labels, unlike retention policies, have a UI presence in Microsoft 365 apps. Make sure you provide guidance for end users and your help desk before you deploy retention labels to your production network.
+
+The most effective end-user documentation will be customized guidance and instructions you provide for the retention label names and configurations you choose. However, you can use the following information for basic instructions:
 
 - [Manually apply retention labels](create-apply-retention-labels.md#manually-apply-retention-labels)
