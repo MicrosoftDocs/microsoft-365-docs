@@ -75,7 +75,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. Replace the examples with entries for your own retention label policies and their settings. For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
 
-3. Save the worksheet as a .csv file in a location that's easy to find for a later step. For example: C:\>Scripts\Policies.csv
+3. Save the worksheet as a .csv file in a location that's easy to find for a later step. For example: `<path>Policies.csv`
 
 
 Notes:
@@ -97,7 +97,7 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 1. Copy and paste the following PowerShell script into Notepad.
 
-2. Save the file by using a file name extension of **.ps1** in a location that's easy to find. For example: C:\>Scripts\CreateRetentionSchedule.ps1
+2. Save the file by using a file name extension of **.ps1** in a location that's easy to find. For example: `<path>CreateRetentionSchedule.ps1`
 
 Notes:
 
@@ -741,7 +741,7 @@ Now, run the script that creates and publishes the retention labels:
     <path>.\CreateRetentionSchedule.ps1
     ```
 
-2. The script prompts you for the locations of the .csv files that you created in the previous steps. Enter the path, followed by the characters .\ and file name of the .csv file, and then press ENTER. For example:
+2. The script prompts you for the locations of the .csv files that you created in the previous steps. Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER. For example:
     
     ```powershell
     <path>.\LabelsToCreate.csv
