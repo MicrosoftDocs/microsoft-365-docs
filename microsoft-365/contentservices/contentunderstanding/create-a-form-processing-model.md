@@ -7,13 +7,14 @@ ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.service: 
-search.appverid: PJO150
+search.appverid: 
 localization_priority: Normal
 description: "Create a Form Processing model in Project Cortex."
 ---
 
 # Create a Form Processing model (Preview)
-> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 Project Cortex users can create Form Processing models 
 
@@ -31,7 +32,7 @@ To create a Form Processing model:
 7. The next page will display one of your sample files and will highlight all common fields that were automatically detected by the system. Select the fields you want to save, and select the checkbox to confirm your selection. For example, in the Purchase Order model, you can choose to select the *Date*, *PO*, and *Total* fields.  Note that you can also choose to rename a field if needed. Click **Done** after you have selected the fields you want to save.
 
 > [!Note]
-> Efren - Need to add information about adding undetected fields.
+> Efren - Need to add information about adding undetected fields.</br>
 
 8. On the **Model Summary** page, the saved fields will show in the **Selected fields** section. Select **Train** to begin training on your example files. When you see the notification that training has completed, select **Go to details page**. If you are satisfied with the results of your model, select **Publish** to make it available for use.
 

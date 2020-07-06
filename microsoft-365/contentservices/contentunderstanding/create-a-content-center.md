@@ -13,6 +13,7 @@ description: "Learn how to create a Content Center."
 ---
 
 # Create a Content Center (Preview)
+
 > [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 To create and manage document understanding models, you first need a Content Center. The Content Center is the model creation interface and also contains information about which document libraries published models have been applied.
@@ -27,9 +28,11 @@ To create a new Content Center:
 2. On the SharePoint admin center, under **Sites**, select **Active Sites**.
 3. On the **Active Sites** page, click **Create**, and then select **Other options**.
 4. On the **Choose a template** menu, select **Content Center**.
-5. For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.
+5. For the new site, provide a **Site Name**, **Primary administrator**, and a **Language**.</br>
+
 > [!Note] 
-> You can select a Content Center site to render in any of the available languages, but note that currently models can only be created for English files.
+> You can select a Content Center site to render in any of the available languages, but note that currently models can only be created for English files.</br>
+
 6. Click **Finished**.
 
 ### Give access to additional users
