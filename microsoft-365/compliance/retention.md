@@ -104,7 +104,7 @@ Retention policies can be applied to the following locations:
 
 You can very efficiently apply a single policy to multiple locations, or to specific locations or users.
     
-You can also apply a policy to all content or to content when it meets specific conditions, such as content that contains keywords or [types of sensitive information](what-the-sensitive-information-types-look-for.md).
+You can also apply a policy to all content or to content when it meets specific conditions, such as content that contains keywords or [sensitive information types](sensitive-information-type-entity-definitions.md).
 
 #### Use Preservation Lock to comply with regulatory requirements
 
@@ -136,7 +136,7 @@ This 30-day grace period in SharePoint and OneDrive corresponds to the 30-day de
 
 ### Retention labels
 
-Use retention labels for different types of content that require different retention settings, which might be needed to comply with industry regulations and internal policies. For example, you might have:
+Use retention labels for different types of content that require different retention settings. For example:
   
 - Tax forms that need to be retained for a minimum period of time. 
     
@@ -146,7 +146,7 @@ Use retention labels for different types of content that require different reten
     
 - Work visas that must be marked as a record so that they can't be edited or deleted. 
     
-In all these cases, retention labels let you apply retention settings at the item level (document or email) for fine-grained governance control.
+In all these cases, retention labels let you apply retention settings for governance control at the item level (document or email).
   
 With retention labels, you can:
   
