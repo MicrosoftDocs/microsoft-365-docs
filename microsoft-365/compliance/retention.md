@@ -188,16 +188,15 @@ Retention labels are independent, reusable building blocks. The primary purpose 
   
 ![Diagram of labels, label policies, and locations](../media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. When you publish retention labels, they're included in a retention label policy that make them available for admins and users to select.
+When you publish retention labels, they're included in a retention label policy that make them available for admins and users to select:
 
-2. A single retention label can be included in many retention label policies.
+- A single retention label can be included in many retention label policies.
 
-3. A single location can also be included in many retention label policies.
-    
-3. Retention label policies specify the locations to publish the retention labels.
+- Retention label policies specify the locations to publish the retention labels.
 
-In addition to retention label policies, you can also create an auto-apply policy with a retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met. 
+- A single location can also be included in many retention label policies.
 
+In addition to retention label policies, you can also create one or more auto-apply policies, each with a single retention label. With this policy, a retention label is automatically applied when conditions that you specify in the policy are met. 
 #### Retention label policies and locations
 
 Different types of retention labels can be published to different locations, depending on what the retention label does.
@@ -248,9 +247,9 @@ Use the following table to help you identify whether to use a retention policy o
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
 |Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
-|Retention applied automatically (by administrators) | Yes | Yes |
-|Retention applied manually (by administrators and users) | No | Yes |
-|Apply based on location | Yes| No, except default label for SharePoint |
+|Retention applied automatically (by administrators) | Yes | Yes (optional) |
+|Retention applied manually (by administrators and users) | No | Yes (optional) |
+|UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
 |Conditions for automatic retention: <br />- Sensitive info types or keywords <br />- Trainable classifiers  | <br /> Yes <br /> No | <br /> Yes <br /> Yes |
