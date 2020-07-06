@@ -24,7 +24,7 @@ description: "Learn how to use PowerShell to create and publish retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might realize that you have many and possibly hundreds of retention labels to create and publish. Although you can do by using the Microsoft 365 compliance center, you might prefer to do this by using [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
+After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have many and possibly hundreds of retention labels to create and publish. Although you can do by using the Microsoft 365 compliance center, you might prefer to do this by using [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
 You can use the information, template files and examples, and script in this article to bulk-create retention labels and publish them in retention label policies. Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
@@ -40,11 +40,11 @@ Overview:
 
 The sample scripts provided in this article aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
   
-## Step 1: Create a .csv file that contains the retention labels
+## Step 1: Create a .csv file for the retention labels
 
-1. Copy the following text for a template and example entries for four different retention labels, and paste them into Excel. 
+1. Copy the following sample .csv file for a template and example entries for four different retention labels, and paste them into Excel. 
 
-2. Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**)
+2. Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**
 
 2. Replace the examples with entries for your own retention labels and settings. For more information about the parameter values, see [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
 
@@ -67,11 +67,11 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## Step 2: Create a .csv file that contains retention label policies
+## Step 2: Create a .csv file for retention label policies
 
-1. Copy the following text for a template and example entries for three different retention label policies, and paste them into Excel. 
+1. Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel. 
 
-2. Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**)
+2. Convert the text to columns: **Data** tab \> **Text to Columns** \> **Delimited** \> **Comma** \> **General**
 
 2. Replace the examples with entries for your own retention label policies and their settings. For more information about the parameter values for this cmdlet, see [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
 
@@ -97,13 +97,13 @@ Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,
 
 1. Copy and paste the following PowerShell script into Notepad.
 
-2. Save the file by using a file name suffix of **.ps1** in a location that's easy to find. For example: C:\>Scripts\CreateRetentionSchedule.ps1
+2. Save the file by using a file name extension of **.ps1** in a location that's easy to find. For example: C:\>Scripts\CreateRetentionSchedule.ps1
 
 Notes:
 
 - The script prompts you to provide the two source files that you created in the previous two steps:
-    - If you don't specify the source file to create the retention labels, the script moves on and prompts you for the source file that contains retention label policies. 
-    - If you don't enter specify the source file to create the retention label policies, the script creates the retention labels only.
+    - If you don't specify the source file to create the retention labels, the script moves on to create the retention label policies. 
+    - If you don't specify the source file to create the retention label policies, the script creates the retention labels only.
 
 - The script generates a log file that records each action it took and whether the action succeeded or failed. See the final step for instructions how to locate this log file.
 
@@ -729,13 +729,13 @@ if ($ResultCSV)
 
 ```
 
-## Step 4: Run the PowerShell script to create and publish the retention labels
+## Step 4: Run the PowerShell script
 
 First, [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 Now, run the script that creates and publishes the retention labels:
   
-1. In your Security & Compliance Center PowerShell session, enter the path, followed by the characters **.\** and file name of the script, and then press ENTER to run the script. For example:
+1. In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script. For example:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1
