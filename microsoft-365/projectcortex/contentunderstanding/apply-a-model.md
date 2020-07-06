@@ -24,63 +24,23 @@ After publishing your content understanding model, you can apply it to a SharePo
 
 To apply your model to to a SharePoint document library:
 
-1. On the model home page, on the ** ** tile, select **Publish model**. You can also select  **+Add Library** in the **Libraries with this model** section.  
-2. In the **New document understanding model** pane, in the **Name** field, type the name of the model. For example, if we want to identify contract renewal documents, we might name this model *Contract Renewal*.
-3. Click **Create**. This will create a home page for the model.
-
-When you create a model, you are creating a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content.
-
-Click **Advanced settings** if you want to map this model to an existing content type if you want to use its schema. 
-
-## Add your example files
-
-On the model home page, you can add your examples files you will need to help train the model to identify your document type. For your training set, you will want to use both positive examples, and negative examples:
-- Positive example: Documents that represent the document type. They contain strings and information that would always be in this type of document.
-- Negative example: Documents that do not represent the document type.  They do not contain strings and information that need to be present in this type of document.
-
-You will want to use at least five positive examples and one negative examples to train your model.  You will want to have additional ones to test your model.
-
-1. On the model home page, in the **Build sample library** tile, click **Add files**.
-2. On the **Select sample files for your model** page, select your example files from the Sample files library in the Content Center. If you had not already uploaded them there, you can choose to upload them now by clicking **Upload** to move them the Sample file library.
-3. After selecting your example files to use to train the model, click **Add**.
-
-
-## Label your example files
-
-After adding your example files, you then need to label them as either positive examples or negative examples.
-
-1. On the model home page, click **Train Classifier**.
-   This will display the label page that shows a listing of your example files, with the first file visible in the viewer.
-2. In the viewer, on the top of the first example file, you will see text asking you if the file is an example of the model you just created. If it is a positive example, select **Yes**. If it is a negative example, select **No**.
-3. From the **Labeled examples** list on the left, select additional files that you want to use as examples, and label them as well. 
-
+1. On the model home page, on the **Apply model to libraries** tile, select **Publish model**. You can also select  **+Add Library** in the **Libraries with this model** section. 
+2. You can then select the SharePoint site that contains the document library that you want to apply the model to. If the site does not show in the list, use the search box to find it.
 > [!Note]
-> Label at least five positive examples, and one negative example. 
+> You must have *Manage List* permissions or *Edit* rights to the document library you are applying the model to. 
+3. Since the model is associated to a content type, when you apply it to the library it’ll create a view for that content type with the labels you extracted showing as columns. This view will be the library's default view by default, but you can optionally choose to not have it be the default view by selecting **Advanced settings** and deselecting **Set this new view as default**.
+4. Select **Add** to apply the model to the library. 
+5. On the model home page, in the **Libraries with this model** section, you will see the URL to the SharePoint site listed.
 
-## Create an explanation
 
-The next step is to create an explanation on the Train page.  An explanation is a hint or clue to help the model understand how to recognize this document. For example, our Contract Renewal documents always contain a **Request for additional disclosure** text string.
 
-When used with extractors, an explanation is use to identify the string that you want to extract from the document. 
+After applying the model to the document library, you can begin uploading documents to the site and see the results.
 
-1. On the model home page, click the **Train** tab to go to the Train page.
-2. On the Train page, in the **Trained files** section, you will see a list of the example files that you had labeled previously. Select one of your positive files from the list, and it will display in the viewer.
-3. In the Explanation section, click **New**, then click **Blank**.
-4. On the **Create an explanation** page:</br>
-    a. Type the **Name** (for example, "Disclosure Block").</br>
-    b. Select the **Type**. For our example, we'll select **Phrase list**, since we are adding a text string.</br>
-    c. In the **Type here** box, type the string.  For our example, we'll add "Request for additional disclosure". You can select **Case sensitive** if the string needs to be case sensitive.</br>
-    d. Click **Save**.
-5.  The model will now check to see if the explanation you created was good enough to identify your remaining labeled example files correctly as positive and negative examples. In Trained Files section, check the **Evaluation** column after the training has completed to see the results.  The files will show a value of **Match** if the explanation you created was enough to match what you had labeled them as (positive or negative).
+1. In the SharePoint document library, in the menu bar select **All Documents** and under **View**, select the view you created by applying the model. By default, it will have the same name as your model. 
+2. In the new view, select upload, and then select files you want to move to the document library.
+3. The model will identify any files with model’s associated content type and will list them in your view. If your model has any extractors, the view will display columns for the data you are extracting from each file.
 
-If you receive a **Mismatch** on your labeled files, you may need to create an additional explanation to provide the model more information to identify the document type.
 
-## Test your model
-
-If you received a match on your labeled example files, you can now test your model on your remaining unlabeled example files.
-
-1. On the model home page, click the **Test** tab.  This will run the model on your unlabeled example files.
-2. In the **Test files** list, your example files will display and will show if the model predicted them to be positive or negative examples. You can use this information to help determine the effectiveness of your classifier in identifying your documents.
 
 
 
