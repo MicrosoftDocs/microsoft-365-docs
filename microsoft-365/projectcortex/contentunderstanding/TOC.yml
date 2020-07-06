@@ -27,15 +27,15 @@
       items:
         - name: Plan your setup
           href: .md
-        - name: What are the licensing requirements for Microsoft Broadsight?
+        - name: What are the licensing requirements for Project Cortex?
           href: .md
-        - name: How do I turn on and configure Microsoft Broadsight?
-          href: .md
+        - name: Set up Project Cortex
+          href: set-up-project-cortex.md
         - name: How do I configure knowledge management?
           href: .md
         - name: How do I include additional source sites?
           href: .md
-        - name: Tips for rolling out Microsoft Broadsight in your organization
+        - name: Project Cortex security and compliance
           href: .md
         - name: Microsoft Broadsight limits and boundaries
           href: .md
@@ -54,20 +54,6 @@
           href: .md 
         - name: How to add or remove people from accessing a topic
           href: .md 
-
-
-    - name: Get started with Forms Processing
-      items: 
-        - name: Plan for Forms Processing
-          href: .md
-        - name: What is the difference between Document Management and Forms Processing?
-          href: .md
-        - name: How to select your sample files
-          href: .md
-        - name: Create a Form Processing model
-          href: .md
-        - name: Apply a Forms Processing model
-          href: .md
 
 
     - name: Training videos
