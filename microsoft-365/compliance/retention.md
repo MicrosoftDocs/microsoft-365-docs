@@ -247,8 +247,8 @@ Use the following table to help you identify whether to use a retention policy o
 |:-----|:-----|:-----|:-----|
 |Retention settings that can retain and then delete, retain-only, or delete-only |Yes |Yes |
 |Workloads supported: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 groups <br />- Skype for Business <br />- Teams|<br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes <br /> Yes | <br /> Yes, except public folders <br /> Yes <br /> Yes <br /> Yes <br /> No <br /> No  |
-|Retention applied automatically | Yes | Yes (optional) |
-|Retention applied manually | No | Yes (optional) |
+|Retention applied automatically | Yes | Yes |
+|Retention applied manually | No | Yes |
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
