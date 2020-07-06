@@ -67,7 +67,7 @@ LabelName_t_3,5 year delete,$false,Delete,1825,TaggedAgeInDays,
 LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 ```
 
-## Step 2: Create a .csv file for retention label policies
+## Step 2: Create a .csv file for the retention label policies
 
 1. Copy the following sample .csv file for a template and example entries for three different retention label policies, and paste them into Excel. 
 
@@ -733,7 +733,7 @@ if ($ResultCSV)
 
 First, [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
-Now, run the script that creates and publishes the retention labels:
+Then, run the script that creates and publishes the retention labels:
   
 1. In your Security & Compliance Center PowerShell session, enter the path, followed by the characters `.\` and the file name of the script, and then press ENTER to run the script. For example:
     
@@ -741,10 +741,10 @@ Now, run the script that creates and publishes the retention labels:
     <path>.\CreateRetentionSchedule.ps1
     ```
 
-2. The script prompts you for the locations of the .csv files that you created in the previous steps. Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER. For example:
+2. The script prompts you for the locations of the .csv files that you created in the previous steps. Enter the path, followed by the characters `.\` and file name of the .csv file, and then press ENTER. For example, for the first prompt:
     
     ```powershell
-    <path>.\LabelsToCreate.csv
+    <path>.\Labels.csv
     ```
 
 ## Step 5: View the log file with the results
