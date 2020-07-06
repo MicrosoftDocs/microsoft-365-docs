@@ -28,7 +28,7 @@ Cortana, your personal productivity assistant, offers AI-powered experiences to 
 
 As a personal productivity assistant, Cortana is designed to deliver features that safely and securely process and reason over Office 365 data like emails, files, chats, etc., to save time, increase efficiency, and enhance your users’ productivity.
 
-Moving forward, we're focusing Cortana on enterprise productivity.
+Moving forward, we're focusing Cortana on enterprise productivity. 
 
 - Consistent with other Office 365 services, Cortana enterprise services meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
