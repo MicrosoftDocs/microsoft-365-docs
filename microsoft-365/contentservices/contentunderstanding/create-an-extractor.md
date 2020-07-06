@@ -1,5 +1,5 @@
 ---
-title: "Create an extractor"
+title: "Create an extractor (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -12,7 +12,9 @@ localization_priority: Normal
 description: "Learn how to create an extractor"
 ---
 
-# Create an extractor
+# Create an extractor (Preview)
+> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+
 After you create a classifier model to automate identification and classification of specific document types, you can optionally choose to add extractors to your model to pull out specific information from these documents. For example, you may want your model not only to identify all *Contract Renewal* documents that are added to your document library, but to also display the Service Start date for each document as a column in the document library.
 
 You need to create an extractor for each entity in the document that you want to extract. In our example, we want to extract the *Service Start Date* for each *Contract Renewal* document that is identified by the model. We want to be able to see a view in the document library of all *Contract Renewal* documents, with a column that shows the Service Start date value of each document.

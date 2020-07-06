@@ -22,13 +22,13 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: What is Knowledge Management?
+    - title: Apply a published model
       itemType: whats-new
-      url: what-is-knowledge-management.md
+      url: apply-a-model.md
     # Card
-    - title: What is Content Understanding?
+    - title: Create a Form Processing model
       itemType: whats-new
-      url: what-is-content-understanding.md
+      url: create-a-form-processing-model.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -39,7 +39,16 @@ productDirectory:
     - title: Set up Project Cortex
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Learn how to turn on and configure Project Cortex.
-      url: turn-on-project-cortex.md
+      url: set-up-project-cortex.md
+    - title: Document Understanding overview
+      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+      summary:  Build AI models to identify and classify content.
+      url: document-understanding-overview.md
+    # Card
+    - title: Form Processing overview
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Create models to process unstructured content.
+      url: form-processing-overview.md
     # Card
     - title: Create a classifier model
       # imageSrc should be square in ratio with no whitespace
@@ -52,15 +61,7 @@ productDirectory:
       summary: Learn how to create an extractor for your content understanding model.
       url: create-a-classifier.md
     # Card
-    - title: Get started with Document Understanding
-      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-      summary:  Build AI models to identify and classify content.
-      url: what-is-microsoft-broadsight.md
-    # Card
-    - title: Get started with Forms Processing
-      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Create models to process unstructured content.
-      url: what-is-microsoft-broadsight.md
+
 
 
 # additionalContent section (optional)

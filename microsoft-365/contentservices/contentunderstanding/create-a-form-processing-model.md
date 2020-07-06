@@ -1,5 +1,5 @@
 ---
-title: "Create a Form Processing model"
+title: "Create a Form Processing model (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -12,7 +12,8 @@ localization_priority: Normal
 description: "Create a Form Processing model in Project Cortex."
 ---
 
-# Create a Form Processing model
+# Create a Form Processing model (Preview)
+> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 Project Cortex users can create Form Processing models 
 

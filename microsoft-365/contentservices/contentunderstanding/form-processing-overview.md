@@ -1,5 +1,5 @@
 ---
-title: "Form Processing Overview"
+title: "Form Processing Overview (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -12,7 +12,8 @@ localization_priority: Normal
 description: "Learn about Form Processing in Project Cortex."
 ---
 
-# Form Processing overview
+# Form Processing overview (Preview)
+> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 Project Cortex uses Microsoft PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview) form processing to create models within SharePoint document libraries.
 

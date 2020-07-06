@@ -1,46 +1,8 @@
 - name: Project Cortex help
   href: what-is-project-cortex.md
   items: 
-    - name: Overview
-      items: 
-        - name: What is Content Understanding?
-          href: what-is-content-understanding.md
-        - name: Project Cortex logical architecture 
-          href: .md
-        - name: Knowledge Discovery overview 
-          href: .md
-        - name: Knowledge Management overview 
-          href: .md
-        - name: Content capture through forms processing overview
-          href: .md
-        - name: Content capture through forms machine teaching overview
-          href: .md
-        - name: Microsoft Broadsight use cases
-          href: .md
-        - name: How do I buy or try Microsoft Broadsight?
-          href: .md
-        - name: How can I get help with using Microsoft Broadsight?
-          href: .md
 
-
-    - name: Get started with setup
-      items:
-        - name: Plan your setup
-          href: .md
-        - name: What are the licensing requirements for Microsoft Broadsight?
-          href: .md
-        - name: How do I turn on and configure Microsoft Broadsight?
-          href: .md
-        - name: How do I configure knowledge management?
-          href: .md
-        - name: How do I include additional source sites?
-          href: .md
-        - name: Tips for rolling out Microsoft Broadsight in your organization
-          href: .md
-        - name: Microsoft Broadsight limits and boundaries
-          href: .md
-
-    - name: Get started with Knowledge Management
+    - name: Get started 
       items: 
         - name: Plan for Knowledge Management 
           href: .md
@@ -55,33 +17,22 @@
         - name: How to add or remove people from accessing a topic
           href: .md 
 
-    - name: Get started with Content Understanding
+    - name: Adoption
       items: 
-        - name: Plan for Content Understanding
-          href: plan-for-content-understanding.md
-        - name: Content Center Overview
-          href: content-center-overview.md
-        - name: What is structured versus unstructured content
-          href: what-is-structure-versus-unstructured-content.md
-        - name: How to build AI models to classify files and extract data 
-          href: create-a-classifier.md
-        - name: Apply a retention label to the Document Understanding model
+        - name: 
           href: .md
-        - name: Apply your model to files in a doc library
-          href: apply-a-model.md
+        - name: 
+          href: .md 
+        - name: 
+          href: .md   
+        - name: 
+          href: .md 
+        - name: 
+          href: .md 
+        - name: 
+          href: .md 
 
-    - name: Get started with Forms Processing
-      items: 
-        - name: Plan for Forms Processing
-          href: .md
-        - name: What is the difference between Document Management and Forms Processing?
-          href: .md
-        - name: How to select your sample files
-          href: .md
-        - name: Create a Form Processing model
-          href: .md
-        - name: Apply a Forms Processing model
-          href: .md
+
 
 
     - name: Training videos

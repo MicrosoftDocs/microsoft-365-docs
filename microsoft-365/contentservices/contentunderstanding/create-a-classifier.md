@@ -1,5 +1,5 @@
 ---
-title: "Create a classifier"
+title: "Create a classifier (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -12,7 +12,9 @@ localization_priority: Normal
 description: "Learn how to create a classifier"
 ---
 
-# Create a classifier
+# Create a classifier (Preview)
+
+> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 A classifier is a type of model that automates identification and classification of a document type. For example, you want to identify all *Contract Renewal* documents that are added to your document library.
 

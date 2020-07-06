@@ -3,8 +3,8 @@
   items: 
     - name: Get started with Content Understanding
       items: 
-        - name: Content Understanding overview?
-          href: content-understanding-overview.md
+        - name: Document Understanding overview
+          href: document-understanding-overview.md
         - name: Form Processing overview 
           href: form-processing-overview.md
         - name: Create a Content Center 
@@ -15,8 +15,8 @@
           href: create-an-extractor.md
         - name: Apply a model
           href: apply-a-model.md
-        - name: What's the difference between a content understanding and form processing model?
-          href: .md
+        - name: Create a Form Processing model 
+          href: create-a-form-processing-model.md
         - name: What is structured versus unstructured content
           href: what-is-structure-versus-unstructured-content.md
         - name: Understanding the explanation library
@@ -31,29 +31,13 @@
           href: .md
         - name: Set up Project Cortex
           href: set-up-project-cortex.md
-        - name: How do I configure knowledge management?
-          href: .md
         - name: How do I include additional source sites?
           href: .md
         - name: Project Cortex security and compliance
           href: .md
-        - name: Microsoft Broadsight limits and boundaries
-          href: .md
+        - name: Project Cortex limits and boundaries
+           href: .md
 
-    - name: Adoption 
-      items: 
-        - name: Plan for Knowledge Management 
-          href: .md
-        - name: Knowledge Center Overview 
-          href: .md 
-        - name: How to approve or decline topics
-          href: .md   
-        - name: How to add sites for topic analysis
-          href: .md 
-        - name: How to edit a topic page or card
-          href: .md 
-        - name: How to add or remove people from accessing a topic
-          href: .md 
 
 
     - name: Training videos

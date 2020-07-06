@@ -1,5 +1,5 @@
 ---
-title: "Apply a model"
+title: "Apply a model (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -12,7 +12,9 @@ localization_priority: Normal
 description: "Learn how to apply a published model to a SharePoint document library."
 ---
 
-# Apply a model
+# Apply a model (Preview)
+
+> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 After publishing your content understanding model, you can apply it to a SharePoint document library in your Microsoft 365 tenant.
 

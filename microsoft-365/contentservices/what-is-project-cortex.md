@@ -1,5 +1,5 @@
 ---
-title: "Introduction to  Microsoft Broadsight"
+title: "Introduction to Project Cortex (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -8,15 +8,14 @@ audience: admin
 ms.topic: article
 ms.service: project-web
 search.appverid: 
-- PJO150
-- MET150
+
 localization_priority: Normal
-description: "Resources for admins and advanced end users who want to use Microsoft Broadsight."
+description: "Resources for admins and advanced end users who want to use Project Cortex."
 ---
 
-# Introduction to Microsoft Broadsight
+# Introduction to Project Cortex (Preview)
 
-
+> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 
 
