@@ -28,8 +28,20 @@ ms.topic: article
 
 The [advanced hunting](advanced-hunting-overview.md) schema is made up of multiple tables that provide either event information or information about machines and entities. To effectively build queries that span multiple tables, you need to understand the tables and the columns in the advanced hunting schema.
 
-## Schema tables
+## Get schema information in the security center
+While constructing queries, use the built-in schema reference to quickly get the following information about each table in the schema:
 
+- **Tables description** — type of data contained in the table and the source of that data.
+- **Columns** — all the columns in the table.
+- **Action types** — possible values in the `ActionType` column representing the event types supported by a table. This is provided only for tables that contain event information.
+- **Sample query** — example queries that feature how the table can be utilized.
+
+### Access the schema reference
+To quickly access the schema reference, select the **View reference** action next to the table name in the schema representation. You can also select **Schema reference** to search for a table.   
+
+![Image showing how to access in-portal schema reference ](../../media/mtp-ah/ah-reference.png) 
+
+## Schema tables
 The following reference lists all the tables in the schema. Each table name links to a page describing the column names for that table. Table and column names are also listed in the security center as part of the the schema representation on the advanced hunting screen.
 
 | Table name | Description |
