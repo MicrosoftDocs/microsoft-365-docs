@@ -9,7 +9,7 @@
           href: form-processing-overview.md
         - name: Create a Content Center 
           href: create-a-content-center.md
-        - name: Create a classifier
+        - name: Create a classifier model
           href: create-a-classifier.md
         - name: Create an extractor
           href: create-an-extractor.md
