@@ -270,7 +270,7 @@ For more information about how retention policies and retention labels work toge
 
 It's possible or even likely that content might have several retention policies and retention labels applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? 
 
-At a high level, you can be assured that content retained by one set of retention settings can't be permanently deleted by another set of retention settings. For details:
+At a high level, you can be assured that content retained by one set of retention settings can't be permanently deleted by another set of retention settings. In detail:
   
 ![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
