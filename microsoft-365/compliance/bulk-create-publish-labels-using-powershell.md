@@ -24,9 +24,9 @@ description: "Learn how to use PowerShell to create and publish retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have many and possibly hundreds of retention labels to create and publish. Although you can do by using the Microsoft 365 compliance center, you might prefer to do this by using [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
+After you've decided to use [retention labels](retention.md) to help you keep or delete documents and emails in Microsoft 365, you might have realized that you have many and possibly hundreds of retention labels to create and publish. The recommended method to create retention labels at scale is by using [file plan](file-plan-manager.md) from the Microsoft 365 compliance center. However, you can also use [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
-You can use the information, template files and examples, and script in this article to bulk-create retention labels and publish them in retention label policies. Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
+Use the information, template files and examples, and script in this article to help you bulk-create retention labels and publish them in retention label policies. Then, the retention labels can be [applied by administrators and users](create-apply-retention-labels.md#how-to-apply-published-retention-labels).
 
 The supplied instructions don't support retention labels that are auto-applied.
 
