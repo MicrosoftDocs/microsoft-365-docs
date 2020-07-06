@@ -155,7 +155,7 @@ The query editor can serve as your scratch pad for experimenting with multiple q
 - Separate each query with an empty line.
 - Place the cursor on any part of a query to select that query before running it. This will run only the selected query. To run another query, move the cursor accordingly and select **Run query**.
 
-![Image of the query editor with multiple queries](../../media/ah-multi-query.png)
+![Image of the query editor with multiple queries](../../media/mtp-ah/ah-multi-query.png)
 
 ## Use sample queries
 
