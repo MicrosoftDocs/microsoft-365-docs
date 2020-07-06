@@ -6271,6 +6271,7 @@ A DLP policy is 65% confident that it's detected this type of sensitive informat
 
 #### Keyword_hong_kong_id_card
 
+- hkid
 - hong kong identity card
 - HKIDC
 - id card
