@@ -52,7 +52,7 @@ You'll know you have preview features turned on when you see that the **Turn on 
 ## Preview features
 The following features and enhancements are currently available on preview:
 
-- **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — information about schema tables available directly in the portal. In addition to table and column descriptions, this reference provides information about supported event types (`ActionType` values) and sample queries.  
+- **[In-portal schema reference](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** — information about schema tables available directly in the security center. In addition to table and column descriptions, this reference provides information about supported event types (`ActionType` values) and sample queries.  
 
 - **[Identity and app tables](advanced-hunting-schema-tables.md)** — get visibility into authentication events, Active Directory queries, and app-related activity with the [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md), and [AppFileEvents](advanced-hunting-appfileevents-table.md) tables in the advanced hunting schema.
 
