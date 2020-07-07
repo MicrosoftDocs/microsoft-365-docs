@@ -153,7 +153,6 @@ Use these resources to get started using your own domain for email, websites, an
                             <p><a href="information-for-dns-records.md">Gather the information you need to create DNS records</a></p>
                             <p><a href="find-your-domain-registrar.md">Find your domain's registrar</a></p>
                             <p><a href="buy-a-domain-name.md">Buy a domain name</a></p>
-                            <p><a href="../setup/domains-faq.md#how-to-set-up-an-office-365-pilot">Set up a pilot with your custom domain for a few people in your company</a></p>
                             <p><a href="domain-connect.md">Quickly add a GoDaddy domain to Office 365</a></p>
                             <p>Get step-by-step help to <a href="create-dns-records-at-any-dns-hosting-provider.md">add the required DNS records for Office 365 services</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/prepare-a-non-routable-domain-for-directory-synchronization">How to prepare a non-routable domain for directory synchronization</a></p>
@@ -203,8 +202,7 @@ Use these resources to get started using your own domain for email, websites, an
                         <h3>Make changes</h3>
                             <p><a href="find-and-fix-issues.md">Find and fix issues after changing your domain name or DNS records</a></p>
                             <p><a href="../dns/add-or-edit-custom-dns-records.md">Add or edit custom DNS records in Office 365</a></p>
-                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-office-365">Add custom subdomains or multiple domains in Office 365</a></p>
-                            <p><a href="../setup/domains-faq.md#how-do-i-change-how-my-dns-records-are-managed-in-office-365">Change how Office 365 manages DNS for your domain</a></p>
+                            <p><a href="../setup/domains-faq.md#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365">Add custom subdomains or multiple domains in Microsoft 365</a></p>
                             <p><a href="remove-a-domain.md">Remove a domain</a></p>
                             <p><a href="https://docs.microsoft.com/office365/enterprise/office-365-integration">Office 365 integration with on-premises environments</a></p>
                             <p><a href="../contact-support-for-business-products.md">More questions? Call support or open a support ticket</a></p>
