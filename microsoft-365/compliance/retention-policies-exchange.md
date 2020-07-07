@@ -25,9 +25,11 @@ The information in this article supplements [Learn about retention policies](ret
 
 ## How a retention policy works with Exchange
 
-For a user's mail, calendar, and other items, a retention policy is applied at the level of a mailbox.
+For a user's mail, calendar, and other mailbox items, a retention policy is applied at the level of a mailbox.
 
-For a public folder, a retention policy is applied at the folder level, not the mailbox level. 
+For public folders, a retention policy is applied to all public folders and not at the folder or mailbox level.
+
+When you configure a retention policy for these locations, the following mail items are included: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items that don't have an end date are not included. Other items stored in a mailbox, such as Skype and Teams saved messages, are included with their separate retention policy.
 
 Both a mailbox and a public folder use the [Recoverable Items folder](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
   
@@ -69,7 +71,7 @@ By using PowerShell, you can exclude specific types of Exchange items from a ret
   
 To exclude your selected types for Exchange items in a retention policy, use the  `ExcludedItemClasses` parameter with the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) and  [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlets.
 
-To use the retention policies cmdlets, you must first [connect to Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+To use the retention policies cmdlets, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 ## When a user leaves the organization 
 
