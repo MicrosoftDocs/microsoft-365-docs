@@ -47,12 +47,13 @@ PLUS, the lab is designed to be connected to trials for:
 
 ## Step-by-step labs
 
-Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910). 
+Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager. 
 
 ### Device and App Readiness
 
   - Desktop Analytics
   - NEW! Deploy and update the new Microsoft Edge 
+  - NEW! Install and configure the Cloud Management Gateway (CMG) 
   - Internet Explorer Mode 
   - Application Guard 
 
@@ -87,6 +88,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Windows Defender Exploit Guard
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
+  - NEW! Endpoint Security 
 
 ### OS Deployment and Feature Updates
 
@@ -100,6 +102,8 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Manage Windows Updates using Group Policy
   - Servicing Windows 10 with Configuration Manager and Intune
   - Servicing Microsoft 365 Apps for enterprise with Configuration Manager
+  - NEW! Office updates with Configuration Manager and Intune
+  - NEW! Install Microsoft Teams 
 
 ### NEW! Windows Virtual Desktop
   - Windows Virtual Desktop: Prepare, Deploy, Optimize 
