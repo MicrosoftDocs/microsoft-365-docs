@@ -24,7 +24,7 @@ search.appverid:
 An auto-claim policy lets users automatically claim a license for a
 product the first time that they sign into an app. As an admin, you
 typically assign licenses to users either manually, or by using
-group-based licensing. By using auto-claim policies, you can manage the
+group-based licensing. By using auto-claim policies, you manage the
 products for which users can automatically claim licenses. You can also
 control which products those licenses come from.
 
@@ -66,8 +66,8 @@ If you already have an active policy, but you don't want any more users to claim
 
 ## Create an auto-claim policy
 
-The **Auto-claim policy** page lists the policies that you create. On
-this page, you can see: the name of the policy, the app that is
+The <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab lists the policies that you create. On
+this tab, you can see: the name of the policy, the app that is
 associated with the policy, the product that's assigned to the policy,
 the number of available licenses, and the status of the policy.
 
@@ -176,7 +176,7 @@ to the app.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select **View report**. The **Auto-claim policy report** page lists all licenses assigned from each policy in the last 90 days.
-3. To change the date range, select **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
+3. To change the date range, select the **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
 
 ## Next steps
 
@@ -186,4 +186,4 @@ You can periodically return to the **Auto-claim policy** tab to see a list of us
 
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Buy or remove subscription licenses](buy-licenses.md) (article)\
-[Understand subscriptions and licenses](subscriptions-and-licenses.md)
+[Understand subscriptions and licenses](subscriptions-and-licenses.md) (article)
