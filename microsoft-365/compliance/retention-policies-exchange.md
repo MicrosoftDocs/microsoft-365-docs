@@ -71,7 +71,7 @@ By using PowerShell, you can exclude specific types of Exchange items from a ret
   
 To exclude your selected types for Exchange items in a retention policy, use the  `ExcludedItemClasses` parameter with the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) and  [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlets.
 
-To use the retention policies cmdlets, you must first [connect to Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+To use the retention policies cmdlets, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 ## When a user leaves the organization 
 
