@@ -113,8 +113,8 @@ Your custom detection rule can automatically take actions on devices, files, or 
 
 #### Actions on devices
 These actions are applied to devices in the `DeviceId` column of the query results:
-- **Isolate device** — uses Microsoft Defender ATP to apply full network isolation, preventing the device from connecting to any application or service. [Learn more about Microsoft Defender ATP machine isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-machines-from-the-network)
-- **Collect investigation package** — collects device information in a ZIP file. [Learn more about the Microsoft Defender ATP investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-machines)
+- **Isolate device** — uses Microsoft Defender ATP to apply full network isolation, preventing the device from connecting to any application or service. [Learn more about Microsoft Defender ATP machine isolation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
+- **Collect investigation package** — collects device information in a ZIP file. [Learn more about the Microsoft Defender ATP investigation package](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
 - **Run antivirus scan** — performs a full Windows Defender Antivirus scan on the device
 - **Initiate investigation** — initiates an [automated investigation](mtp-autoir.md) on the device
 - **Restrict app execution** — sets restrictions on device to allow only files that are signed with a Microsoft-issued certificate to run. [Learn more about app restrictions with Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)

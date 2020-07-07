@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Apply query best practices
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Use shared queries
@@ -179,8 +181,6 @@
                   items: 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Apply query best practices
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Custom detections
                   items: 
                     - name: Custom detections overview
@@ -219,7 +219,7 @@
               href: ./mtp/tickets.md
 
 
-    - name: Office 365 Advanced Threat Protection
+    - name: Office 365 security
       items: 
         - name: Get started
           items: 
@@ -368,7 +368,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: View information about malicious files
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Advanced Threat Protection
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items: 
             - name: See what's new
@@ -467,6 +467,8 @@
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: View email security reports in the Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
+            - name: View mail flow reports in the Security & Compliance Center
+              href: ./office-365-security/view-mail-flow-reports.md
             - name: Mail flow insights in the Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items: 

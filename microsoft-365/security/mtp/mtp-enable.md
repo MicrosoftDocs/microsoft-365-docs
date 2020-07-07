@@ -56,10 +56,12 @@ To turn on Microsoft Threat Protection, simply select **Turn on Microsoft Threat
 >If you don't see **Settings** in the navigation pane or couldn't access the page, check your permissions and licenses.
 
 ### Data center location
-Microsoft Threat Protection will store and process data in the [same location used by Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender ATP, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen.
+Microsoft Threat Protection will store and process data in the [same location used by Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy). If you don't have Microsoft Defender ATP, a new data center location is automatically selected based on the location of active Microsoft 365 security services. The selected data center location is shown in the screen. 
+
+Select **Need help?** in the Microsoft 365 security center to contact Microsoft support about provisioning Microsoft Threat Protection in a different data center location. 
 
 >[!NOTE]
->Select **Need help?** in the Microsoft 365 security center to contact Microsoft support about provision Microsoft Threat Protection in a different data center location. 
+>Microsoft Defender ATP automatically provisions in European Union (EU) data centers when turned on through Azure Security Center. Microsoft Threat Protection will automatically provision in the same EU data center for customers who have provisioned Microsoft Defender ATP in this manner. 
 
 ### Confirm that the service is on
 Once the service is provisioned, it adds:

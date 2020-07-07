@@ -84,7 +84,7 @@ You can easily delete templates you no longer need and add new ones. To delete a
 
 ## Related articles
 
-[Add users individually or in bulk to Microsoft 365](add-users.md)
+[Add users and assign licenses at the same time](add-users.md)
 
 [Remove a former employee from Microsoft 365](remove-former-employee.md)
   

@@ -21,9 +21,9 @@ description: Use Microsoft 365 security and compliance services to protect your 
 
 # Step 3: Deploy security and compliance for remote workers
 
-For remote workers, some of whom never come into the office or very infrequently, security and compliance are an important part of the overall solution. All of their communications occur over the Internet instead of being confined to an organizational intranet. 
+For remote workers, some of whom never go into the office or who go infrequently, security and compliance are an important part of the overall solution. All of their communications occur over the Internet instead of being confined to an organizational intranet. 
 
-There are things you and your workers can do to remain productive without increasing cybersecurity risk and maintaining compliance with your internal policies and data regulations.
+There are things you and your workers can do to remain productive while decreasing cybersecurity risk and maintaining compliance with your internal policies and data regulations.
 
 Remote work needs these elements of security and compliance:
 
@@ -34,16 +34,18 @@ Remote work needs these elements of security and compliance:
 - Prevention of leaked information
 - Adherence to regional data regulations
 
+![Use these Microsoft 365 services to stay secure and compliant](../media/empower-people-to-work-remotely/remote-workers-security-compliance-grid.png)
+
 ## Security
 
 Protect your applications and data with these security features of Microsoft 365.
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
-| Office Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Office ATP collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 and E5 | 
+| Office 365 Advanced Threat Protection (ATP) | Protect your Microsoft 365 apps and data—such as email messages, Office documents, and collaboration tools—from attack. <br><br> Office ATP collects and analyzes signals from your apps for detection, investigation, and remediation of security risks and safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. | Microsoft 365 E3 and E5 | 
 | Malware protection | ‎Windows Defender Antivirus and Device Guard provides device-based malware protection. <br><br> SharePoint‎ Online automatically scans file uploads for known malware. ‎<br><br> Exchange Online Protection‎ (‎EOP‎) secures cloud mailboxes. | Microsoft 365 E3 and E5 |
 | Microsoft Defender ATP | Protect your organization’s devices from cyberthreats and data breaches and detect, investigate, and respond to advanced threats. | Microsoft 365 E5 |
-| Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps— from attack. | Microsoft 365 E5 |
+| Cloud App Security | Protect your cloud-based services—both Microsoft 365 and other SaaS apps— from attack. | Microsoft 365 E5 or individual Cloud App Security licenses |
 | Azure AD Identity Protection	| Automate detection and remediation of identity-based risks. <br><br>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
 ||||
 
@@ -76,4 +78,4 @@ For your remote workers, you have implemented:
 
 ## Next step
 
-Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints
+Continue with [Step 4](empower-people-to-work-remotely-manage-endpoints.md) to manage your devices, PCs, and other endpoints.
