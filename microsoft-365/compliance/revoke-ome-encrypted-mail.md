@@ -48,9 +48,9 @@ To revoke an encrypted message that you sent, complete these steps
 
 1. In Outlook on the web, in your **Sent** folder, browse to the message you want to revoke.
 
-   :::image type="content" source="../media/adhocencryptionrevokesentmsg.png" alt-text="Screenshot showing encrypted message to revoke in Outlook on the web.":::
-
    If the mail is revocable, you'll see the "Remove external access" link at the top of the message.
+
+    :::image type="content" source="../media/infoprotect-email-encryption/adhocencryptionrevokesentmsg.png" alt-text="Screenshot showing encrypted mail that you want to revoke in Outlook on the web.":::
 
 2. Click **Remove external access** to revoke the message.
 
