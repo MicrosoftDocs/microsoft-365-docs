@@ -65,15 +65,15 @@ Your security operations team can operate more effectively and efficiently, beca
 
 As remediation actions are taken, they're listed on the History tab in the Action center. Such actions include the following:
 
-- Isolate device (this action can be undone) 
-- Restrict code execution (this action can be undone) 
-- Release code execution 
-- Run antivirus scan 
 - Collect investigation package 
-- Stop and quarantine 
+- Isolate device (this action can be undone) 
+- Offboard machine 
+- Release code execution 
 - Release from quarantine 
 - Request sample 
-- Offboard machine 
+- Restrict code execution (this action can be undone) 
+- Run antivirus scan 
+- Stop and quarantine 
 
 ## Required permissions for Action center tasks
 
