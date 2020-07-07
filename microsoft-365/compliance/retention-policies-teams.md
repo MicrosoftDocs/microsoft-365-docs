@@ -3,7 +3,6 @@ title: "Learn about retention policies for Teams"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
-ms.author: anwara
 author: cabailey
 manager: laurawi
 ms.date: 
