@@ -30,7 +30,7 @@ All of your assessments are listed on the assessments page. [Learn more](complia
 
 ## Data protection baseline default assessment
 
-To get you started, Microsoft provides a **default** assessment in Compliance Score for you that contains the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
+To get you started, Microsoft provides a **default** assessment in Compliance Score that contains the Microsoft 365 data protection baseline. This baseline is a set of controls that includes key regulations and standards for data protection and general data governance. This baseline draws elements primarily from NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) and ISO (International Organization for Standardization), as well as from FedRAMP (Federal Risk and Authorization Management Program) and GDPR (General Data Protection Regulation of the European Union).
 
 This assessment is used to calculate your initial score the first time you come to Compliance Score, before you configure any other assessments. Compliance Score collects initial signals from your Microsoft 365 solutions. You’ll see at a glance how your organization is performing relative to key data protection standards and regulations, and see suggested improvement actions to take.
 
@@ -41,7 +41,7 @@ Because every organization has specific needs, Compliance Score relies on you to
 There are three ways you can set up assessments:
 
 1. Choose a ready to use assessment.
-2. Modify the template of an assessment to suit your own needs.
+2. Modify the [template of an assessment](compliance-score-templates.md) to suit your own needs.
 3. Create your own Custom Assessment.
 
 Users must hold a role of global administrator, compliance administrator, compliance data administrator, or security administrator in order to create or modify assessments. Learn more about [roles and permissions](compliance-score-setup.md#set-user-permissions-and-assign-roles).
@@ -182,7 +182,7 @@ To view a control’s details, select it from its row in the table. The control 
 Select an improvement action from the list to drill into the improvement action’s details page. The details pages shows test status, implementation notes, and launch into the recommended solution.
 
 #### Learn more
-[Understand how controls are tracked and scored by Compliance Score.](compliance-score-methodology.md#control-types-and-points)
+[Understand how controls and improvement actions are tracked and scored by Compliance Score.](compliance-score-methodology.md)
 
 ## Export an assessment report
 

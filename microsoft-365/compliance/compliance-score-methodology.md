@@ -56,30 +56,30 @@ During public preview, continuous assessment is available to a portion of contro
 #### Learn more
 [Read about Secure Score and how it works](../security/mtp/microsoft-secure-score-new.md).
   
-## Control types and points
+## Action types and points
 
-Compliance Score tracks two types of controls—controls you manage and controls Microsoft manages—each of which have points that contribute to your overall score:
+Compliance Score tracks two types of actions: actions you manage, and actions Microsoft manages. Both types of actions have points that count toward your overall score when completed:
 
 1. **Your points** contribute to your compliance score based on controls managed by your organization.
-2. **Microsoft managed points** contribute to your compliance score based on controls managed by Microsoft as a cloud service provider.
+2. **Microsoft managed points** contribute to your compliance score based on actions managed by Microsoft as a cloud service provider.
 
-Controls are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective.
+Actions are assigned a score value based on whether they're mandatory or discretionary, and whether they're preventative, detective, or corrective.
 
-### Mandatory and discretionary controls
+### Mandatory and discretionary actions
 
- - **Mandatory controls** are actions that can't be bypassed, either intentionally or accidentally. An example is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
+ - **Mandatory actions** can't be bypassed, either intentionally or accidentally. An example is a centrally managed password policy that sets requirements for password length, complexity, and expiration. Users must follow these requirements to access the system.
   
- - **Discretionary controls** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary control because it relies on the user.
+ - **Discretionary actions** rely upon users to understand policy and act accordingly. For example, a policy requiring users to lock their computer when they leave it is a discretionary action because it relies on the user.
   
-### Preventative, detective, and corrective controls
+### Preventative, detective, and corrective actions
   
- - **Preventative controls** address specific risks. For example, protecting information at rest using encryption is a preventative control against attacks and breaches. Separation of duties is a preventative control to manage conflict of interest and guard against fraud.
+ - **Preventative actions** address specific risks. For example, protecting information at rest using encryption is a preventative action against attacks and breaches. Separation of duties is a preventative action to manage conflict of interest and guard against fraud.
   
- - **Detective controls** actively monitor systems to identify irregular conditions or behaviors that represent risk, or that can be used to detect intrusions or breaches. System access auditing and privileged administrative actions auditing are types of detective monitoring controls. Regulatory compliance audits are a type of detective control used to find process issues.
+ - **Detective actions** actively monitor systems to identify irregular conditions or behaviors that represent risk, or that can be used to detect intrusions or breaches. Examples include system access auditing and privileged administrative actions. Regulatory compliance audits are a type of detective action used to find process issues.
   
-- **Corrective controls** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective control to limit damage and restore systems to an operational state after a breach.
+- **Corrective actions** try to keep the adverse effects of a security incident to a minimum, take corrective action to reduce the immediate effect, and reverse the damage if possible. Privacy incident response is a corrective action to limit damage and restore systems to an operational state after a breach.
   
-Each control has an assigned value in Compliance Score based on the risk it represents:
+Each action has an assigned value in Compliance Score based on the risk it represents:
 
 |**Type**|**Assigned score**|
 |:-----|:-----|

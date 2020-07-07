@@ -128,7 +128,7 @@ If you switched your nameserver (NS) records to Microsoft 365 when you set up yo
 
 If you didn't switch NS records when you set up your domain, when you change the MX record, your mail starts going to the new address right away.
 
-For more information, see [How does Microsoft 365 manage my DNS records?](../../admin/setup/domains-faq.md#how-does-office-365-manage-my-dns-records). To change your NS records, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
+To change your NS records, see [Remove a domain](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### Save your data
 
@@ -140,10 +140,12 @@ When the cancellation becomes effective, your users lose access to their data. B
 
 ### Uninstall Office (optional)
 
-If you canceled your subscription, and didn't move users to a different subscription that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). To avoid any confusion, have your users [uninstall Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) from their machines.
+If you canceled your subscription, and didn't [move users to a different subscription](move-users-different-subscription.md) that includes Microsoft 365, Microsoft 365 runs in reduced functionality mode. When this happens, users can only read and print documents, and Microsoft 365 applications display [Unlicensed Product notifications](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). To avoid any confusion, have your users [uninstall Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) from their machines.
 
 ## Related articles
 
 [Renew your subscription](renew-your-subscription.md)
 
 [Reactivate your subscription](reactivate-your-subscription.md)
+
+[Move users to a different subscription](move-users-different-subscription.md)

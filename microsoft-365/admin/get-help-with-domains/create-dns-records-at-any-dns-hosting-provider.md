@@ -122,7 +122,7 @@ Make sure that the fields are set to the following values for each:
 
 Save the record.
 
-#### SRV record feild restrictions and workarounds
+#### SRV record field restrictions and workarounds
 Some hosting providers impose restrictions on field values within SRV records. Here are some common workarounds for these restrictions.
 
 ##### Name
