@@ -41,6 +41,9 @@ With the integrated Microsoft Threat Protection solution, security professionals
 <br>
 
 
+>[!TIP]
+>Check out this [Microsoft Threat Protection interactive guide](https://aka.ms/MTP-Interactive-Guide).
+
 
 Microsoft Threat Protection suite protects: 
 - **Endpoints with Microsoft Defender ATP** - Microsoft Defender ATP is a unified endpoint platform for preventative protection, post-breach detection, automated investigation, and response. 
