@@ -20,11 +20,11 @@ description: How example organizations deploy and update using channels.
 
 # Deployment and update channel example configurations
 
-Choosing which update channels to use for Office, Windows, and Edge can depend on your type of organization and where on the development cycle you want to be deploying and using new features and capabilities. Find the pre-release and production channels that best fit your needs.
+Choosing which update channels to use for Windows 10, Microsoft 365 Apps, Edge, and Microsoft Teams can depend on your type of organization and where on the development cycle you want to be deploying and using new features and capabilities. Find the pre-release and production channels that best fit your needs.
 
 ## Pre-release channels
 
-| Customer/Channel Offering | Windows | Microsoft 365 Apps for Windows | Edge | Teams |
+| Customer/Channel Offering | Windows 10 | Microsoft 365 Apps for Windows | Edge | Teams |
 |:-------|:-------|:-----|:-------|:-------|
 | 1. Right for highly technical users and developers. ​<br><br> Be the first to access the latest builds earliest in the development cycle with the newest code. ​<br><br> There will be rough edges and some instability. ​  | Dev | N/A | [Canary Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel) | N/A |
 | 2. Right for early adopters and IT Pros who want more reliable builds that are still in development. ​<br><br> See what’s coming up next and help validate new features.  | Beta Channel | Beta Channel | [Dev Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#dev-channel) | Beta Channel |
@@ -35,7 +35,7 @@ Choosing which update channels to use for Office, Windows, and Edge can depend o
 
 Click the link in the **Example** column to step through deployment stages and groups for an example organization.
 
-| Customer/Channel Offering | Windows | Microsoft 365 Apps for Windows | Edge | Teams | Example |
+| Customer/Channel Offering | Windows 10 | Microsoft 365 Apps for Windows | Edge | Teams | Example |
 |:-------|:-------|:-----|:-------|:-------|:-------|
 | 1. Right for customers who want the latest releases as soon as they are ready. | Semi-Annual Channel | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [Stable Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) | ? | [Latest releases](deploy-update-channels-examples-rapid-deploy.md) |
 | 2. Right for enterprises who want the latest release with additional predictability. | Semi-Annual Channel | [Monthly Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) | N/A | N/A | Regular schedule (article to be written) |
