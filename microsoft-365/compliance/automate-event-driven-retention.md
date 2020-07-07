@@ -154,10 +154,10 @@ Step 1- Create a flow to create an event using the Microsoft 365 REST API
 
 ##### Create an event
 
-Sample code to call the REST API
+Sample code to call the REST API:
 
 - **Method**: POST
-- **URL**: https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
 - **Headers**: Key = Content-Type, Value = application/atom+xml
 - **Body**:
     
@@ -293,7 +293,7 @@ Sample code to call the REST API
 | 401               | Authorization Failed                                 |
 | 403               | Authentication Failed                                |
 
-#### Using PowerShell (ver.6 or higher) or any HTTP client
+#### Using PowerShell (version 6 or later) or any HTTP client
 
 Step 1: Connect to PowerShell.
 
@@ -447,7 +447,9 @@ An Enterprise Resource Planning (ERP) system can work with Microsoft 365 and Mic
 
 ### Using Redirect 302 response results to call the REST API
 
-1. Invoke a POST retention event call by using the REST API URL, <https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent> (Global Admin permissions are required).
+1. Invoke a POST retention event call by using the REST API URL: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+    
+    Global administrator permissions are required.
 
 2. Check the response code. If it's 302, then get the redirected URL from Location property of the response header.
 
