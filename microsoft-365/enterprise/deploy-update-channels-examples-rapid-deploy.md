@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/22/2020
+ms.date: 07/07/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -14,8 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:
-
-description: How an organization that deploys the latest the latest release uses channels for Windows 10, Microsoft 365 apps, and Microsoft Edge.
+description: How an organization that deploys the latest release uses channels for Windows 10, Microsoft 365 apps, and Microsoft Edge.
 ---
 
 # Example of broad deployment for the latest releases
@@ -55,7 +54,7 @@ Based on rapid deployment goals of the latest release, this example organization
 
 ## Deployment configuration for Windows 10
 
-The overall deployment goal is to give a group of representative users a sneak peek of new Windows 10 features that will be released in a month or longer without major disruptions to the organization. 
+The overall deployment goal is to give a group of representative users a sneak peek of new Windows 10 features that will be released within a month or longer. 
 
 See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for more information on Windows 10 deployment methods and strategies.
 
@@ -65,7 +64,6 @@ See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for 
 | Production |  **Semi-Annual Channel**  <ul><li>Purpose: Broad deployment of the latest feature updates to the rest of the organization. </li><li> State: Fully compliant and supported. </li></ul> | **Win10SemiAnnualChannel** (example name) <br><br> Members are all users. |
 ||||
 
-
 Ongoing updates process:
 
 1. Release Preview Channel changes are deployed to the Win10ReleasePreviewChannel (example name) deployment group.
@@ -74,7 +72,7 @@ Ongoing updates process:
 
 ## Deployment configuration for Microsoft 365 Apps
 
-The overall deployment goal is to give a group of representative users a sneak peek of new Microsoft 365 Apps features that will be released 2-3 times each month without major disruptions to the organization. 
+The overall deployment goal is to give a group of representative users a sneak peek of new Microsoft 365 Apps features that will be released 2-3 times each month. 
 
 See [Microsoft 365 Apps deployment](https://docs.microsoft.com/deployoffice/plan-office-365-proplus) for more information on Microsoft 365 Apps deployment methods and strategies.
 
@@ -92,7 +90,7 @@ Ongoing updates process:
 
 ## Deployment configuration for Microsoft Edge
 
-The overall deployment goal is to give a group of representative users a sneak peek of new Edge features that will be released every six weeks without major disruptions to the organization. 
+The overall deployment goal is to give a group of representative users a sneak peek of new Edge features that will be released every six weeks. 
 
 See [Microsoft Edge deployment](https://docs.microsoft.com/DeployEdge/microsoft-edge-channels) for more information on Edge deployment channels.
 
