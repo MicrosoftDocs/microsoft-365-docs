@@ -2,6 +2,12 @@
   "redirections": [
 
     {
+      "source_path": "microsoft-365/admin/dns/create-dns-records-at-hover.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider",
+      "redirect_document_id": true
+    },
+
+    {
       "source_path": "microsoft-365/admin/misc/become-admin-and-make-purchases.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/admin/misc/become-the-admin",
       "redirect_document_id": true
