@@ -21,7 +21,7 @@ appliesto:
 Remediation means taking a proscribed action against a threat. Malicious mails sent into your organization may be cleaned up either by the system, through ZAP (Zero-hour Auto-Purge), or by the security teams through remediation actions like move to inbox, move to junk, move to deleted items folder, soft delete, or hard delete. Office Advanced Threat Protection (Office ATP) P2 / E5 offers security operations teams the ability to mediate threats in emails and collaboration issues through manual hunting and automated investigations.
 
 > [!NOTE]
-> For security teams to remediate emails, they need to have search and purge role assigned to them. Role assignment is done through permissions in security and compliance center.
+> For security teams to remediate emails, they need to have search and purge role assigned to them. Role assignment is done through permissions in security and compliance center. <p>
 
 ## What you need to know before you begin
 
