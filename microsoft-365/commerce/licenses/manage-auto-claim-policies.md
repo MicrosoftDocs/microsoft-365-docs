@@ -117,7 +117,7 @@ automatically assigned to users from that pool of licenses. You can add
 or remove products for an auto-claim policy at any time. If you already
 have one product associated with the policy, any products that you add
 are considered backup products. When the available number of licenses
-from the first product are used up, the policy will use the next backup
+from the first product are used up, the policy uses the next backup
 product on the list to assign licenses from. You [can reorder the list of products](#change-the-assigning-apps-and-services) as you like.
 
 When you remove a backup product, it's no longer used to assign
@@ -163,7 +163,7 @@ license to that product.
 ## Change the assigning order for backup products
 
 If you have backup products assigned to the policy, you can change the
-order of the products that are used to assign licenses when users sign in
+order in which they are used to assign licenses when users sign in
 to the app.
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
