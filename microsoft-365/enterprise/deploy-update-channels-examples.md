@@ -26,9 +26,9 @@ Choosing which update channels to use for Office, Windows, and Edge can depend o
 
 | Customer/Channel Offering | Windows | Microsoft 365 Apps for Windows | Edge | Teams |
 |:-------|:-------|:-----|:-------|:-------|
-| 1. Right for highly technical users and developers. ​<br><br> Be the first to access the latest builds earliest in the development cycle with the newest code. ​<br><br> There will be rough edges and some instability. ​  | Dev | N/A | [Canary Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel)? | N/A |
-| 2. Right for early adopters and IT Pros who want more reliable builds that are still in development. ​<br><br> See what’s coming up next and help validate new features.  | Beta Channel | Beta Channel | [Dev Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#dev-channel)? | Beta Channel |
-| 3. Right for those who want early access to upcoming releases. ​<br><br> Where companies preview and validate upcoming releases before broad deployment. ​<br><br> These are supported. <br>  | Release Preview | Current Channel (Preview) <br><br> Semi-Annual Enterprise Channel (Preview)| [Beta Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)? | Private Preview (can also be used by Teams developers) <br> <br> Public Preview |
+| 1. Right for highly technical users and developers. ​<br><br> Be the first to access the latest builds earliest in the development cycle with the newest code. ​<br><br> There will be rough edges and some instability. ​  | Dev | N/A | [Canary Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#canary-channel) | N/A |
+| 2. Right for early adopters and IT Pros who want more reliable builds that are still in development. ​<br><br> See what’s coming up next and help validate new features.  | Beta Channel | Beta Channel | [Dev Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#dev-channel) | Beta Channel |
+| 3. Right for those who want early access to upcoming releases. ​<br><br> Where companies preview and validate upcoming releases before broad deployment. ​<br><br> These are supported. <br>  | Release Preview | Current Channel (Preview) <br><br> Semi-Annual Enterprise Channel (Preview)| [Beta Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel) | Private Preview <br> <br> Public Preview (can also be used by Teams developers) |
 ||||||
 
 ## Production channels for broad deployment
@@ -37,9 +37,9 @@ Click the link in the **Example** column to step through deployment stages and g
 
 | Customer/Channel Offering | Windows | Microsoft 365 Apps for Windows | Edge | Teams | Example |
 |:-------|:-------|:-----|:-------|:-------|:-------|
-| 1. Right for customers who want the latest releases as soon as they are ready. | Semi-Annual Channel | Current Channel | [Stable Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)? | ? | [Latest releases](deploy-update-channels-examples-rapid-deploy.md) |
-| 2. Right for enterprises who want the latest release with additional predictability. | Semi-Annual Channel | Monthly Enterprise Channel | N/A | N/A | Regular schedule |
-| 3. Right for enterprises with need for extensive IT testing before each update. | Semi-Annual Channel | Semi-Annual Enterprise Channel | N/A | N/A | Highly vetted |
+| 1. Right for customers who want the latest releases as soon as they are ready. | Semi-Annual Channel | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [Stable Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) | ? | [Latest releases](deploy-update-channels-examples-rapid-deploy.md) |
+| 2. Right for enterprises who want the latest release with additional predictability. | Semi-Annual Channel | [Monthly Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) | N/A | N/A | Regular schedule (article to be written) |
+| 3. Right for enterprises with need for extensive IT testing before each update. | Semi-Annual Channel | [Semi-Annual Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) | N/A | N/A | Highly vetted (article to be written) |
 |||||||
 
 
