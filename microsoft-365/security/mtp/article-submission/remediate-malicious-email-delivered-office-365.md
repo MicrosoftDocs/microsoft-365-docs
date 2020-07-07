@@ -63,7 +63,7 @@ Once emails are selected from Threat Explorer, remediation creation can begin by
 
 :::image type="content" source="../../../media/tp-RemediationArticle3.png" alt-text="Mail with malware is Zapped page showing time of Zap execution.":::
 
-All mediation (either direct approval or two-step approval) created through Threat Explorer, and approved actions coming from automated investigations, show up in the Action Center, which can be accessed via the left navigation under *Review *> **Action Center**.
+All mediation (either direct approval or two-step approval) created through Threat Explorer, and approved actions coming from automated investigations, show up in the Action Center, which can be accessed via the left navigation under *Review*> **Action Center**.
 
 :::image type="content" source="../../../media/tp-RemediationArticle4.png" alt-text="The action center with a list of threats by date and severity.":::
 
