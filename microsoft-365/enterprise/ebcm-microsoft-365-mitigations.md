@@ -18,7 +18,7 @@ ms.custom:
 description: Some sample mitigations for Microsoft 365 service incident scenarios. 
 ---
 
-# Service incident mitigation strategies
+# Service incident mitigation scenarios
 
 Here are some strategies and scenarios that show how to mitigate the impact of a Microsoft 365 service incident on your business process.
 
