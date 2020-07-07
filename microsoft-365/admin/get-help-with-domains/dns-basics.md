@@ -139,10 +139,6 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 
 ::: moniker-end
 
-> [!NOTE]
-> If you set up your domain in Microsoft 365 so that [Microsoft sets up and manages your DNS records](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) for you, then as part of setup, you'll [Change DNS management to Microsoft 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
- 
-
 ::: moniker range="o365-worldwide"
 ## Why add a domain in Office 365?
 
