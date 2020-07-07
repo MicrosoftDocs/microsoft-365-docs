@@ -29,6 +29,8 @@ For a user's mail, calendar, and other items, a retention policy is applied at t
 
 For a public folder, a retention policy is applied at the folder level, not the mailbox level. 
 
+When you configure a retention policy for these locations, the following mail items are retained: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items when they don't have an end date are not retained.
+
 Both a mailbox and a public folder use the [Recoverable Items folder](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
   
 When a person deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. When a person deletes an item in the Deleted Items folder, the message is moved to the Recoverable Items folder. However, a user can soft delete an item (Shift+Delete) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
