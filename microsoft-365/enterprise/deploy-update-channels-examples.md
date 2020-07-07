@@ -39,7 +39,7 @@ Click the link in the **How to** column for an example.
 
 | Customer/Channel Offering | Windows | Microsoft 365 Apps for Windows | Edge | Teams | How to |
 |:-------|:-------|:-----|:-------|:-------|:-------|
-| 1. Right for customers who want the latest releases as soon as they are ready. ​<br><br> Deploy broadly | Semi-Annual Channel | Current Channel | [Stable Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)? | ? | [Latest release](deploy-update-channels-examples-rapid-deploy.md) |
+| 1. Right for customers who want the latest releases as soon as they are ready. ​<br><br> Deploy broadly | Semi-Annual Channel | Current Channel | [Stable Channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#beta-channel)? | ? | [Latest releases](deploy-update-channels-examples-rapid-deploy.md) |
 | 2. Right for enterprises who want the latest release with additional predictability. ​<br><br> Deploy broadly | Semi-Annual Channel | Monthly Enterprise Channel | N/A | N/A | Regular schedule |
 | 3. Right for enterprises with need for extensive IT testing before each update. ​<br><br> Deploy broadly | Semi-Annual Channel | Semi-Annual Enterprise Channel | N/A | N/A | Highly vetted |
 |||||||
