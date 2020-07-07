@@ -43,7 +43,7 @@ To perform certain actions, such as viewing message headers or downloading email
 
 **Manual hunting** takes place when security teams identify threats manually, using the search and filtering capabilities in Threat Explorer. Manual remediation on emails can be triggered through any email view (Malware, Phish, or All email) after finding a set of emails which need to be remediated.
 
-:::image type="content" source="../../../media/tp-RemediationArticle1.png" alt-text="Manual hunting in Office 365 Threat Explorer by date.":::
+![Manual hunting in Office 365 Threat Explorer by date.](../../../media/tp-RemediationArticle1.png "Threat Explorer")
 
 The selection of emails can be done in multiple ways through Threat Explorer:
 
