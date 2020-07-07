@@ -80,14 +80,14 @@ See [Microsoft 365 Apps deployment](https://docs.microsoft.com/deployoffice/plan
 
 | Stage | Channel | Deployment group |
 |:-------|:-------|:-----|
-| Pilot |  **Current Channel Preview** <ul><li> Purpose: Deployment of feature updates as soon as they are tested with Current channel users and are production-ready. </li><li> State: Fully compliant and supported.</li><li> How often: Updates 2-3 times each month. </li></ul> | **AppsCurrentChannelPreview** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul>|
+| Pilot |  **Current Channel (Preview)** <ul><li> Purpose: Deployment of feature updates as soon as they are tested with Current Channel users and are production-ready. </li><li> State: Fully compliant and supported.</li><li> How often: Updates 2-3 times each month. </li></ul> | **AppsCurrentChannelPreview** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul>|
 | Production | **Current Channel** <ul><li>Purpose: Broad deployment of the latest feature updates to the rest of the organization. </li><li> State: Fully compliant and supported. </li></ul> |  **AppsCurrentChannel** (example name) <br><br> Members are all users. |
 |||
 
 Ongoing updates process:
 
-1. Current Channel Preview changes are deployed to the AppsCurrentChannelPreview deployment group.
-2. AppsCurrentChannelPreview members confirm that Current Channel Preview changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current Channel Preview release for additional testing.
+1. Current Channel (Preview) changes are deployed to the AppsCurrentChannelPreview deployment group.
+2. AppsCurrentChannelPreview members confirm that Current Channel (Preview) changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current Channel (Preview) release for additional testing.
 3. Current Channel changes are deployed to the AppsCurrentChannel deployment group. 
 
 ## Deployment configuration for Microsoft Edge
