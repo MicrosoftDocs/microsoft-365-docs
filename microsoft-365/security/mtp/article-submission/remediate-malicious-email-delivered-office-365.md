@@ -81,7 +81,7 @@ Each remediation item can be opened to view details about it. When a remediation
   - Deleted folder
   - Soft deleted folder
 
-[!NOTE]
+>[!NOTE]
 > Currently, only an end user with access to the mailbox can recover items from a soft delete folder.
 
 **Not actionable**: Emails in the following locations cannot be acted upon or moved as a part of the email actions i.e. emails in non-remediable category cannot be moved either in the non-remediable category, nor in remediable. Non-remediable locations are:
