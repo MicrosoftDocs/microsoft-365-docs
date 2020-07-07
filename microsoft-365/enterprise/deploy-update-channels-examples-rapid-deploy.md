@@ -112,7 +112,7 @@ Here are the products, their channels, and the deployment groups used by this ex
 
 ![Deployment groups for broad deployment of the latest releases](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
-Here is an example of the timing of successive deployments of the latest releases over a year.
+Here is an example of the timing of successive broad deployments of the latest releases over a year.
 
 ![The channels and timing for broad deployment of the latest releases](../media/deploy-update-channels-examples-rapid-deploy/channel-summary.png)
 
