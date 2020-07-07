@@ -21,11 +21,15 @@ ms.custom:
 - seo-marvel-apr2020
 ---
 
-# Manage tickets through ServiceNow
+# Manage ServiceNow tickets in the Microsoft 365 security center and compliance center
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Learn more about ServiceNow](https://www.servicenow.com/)
 
-Microsoft 365 security center is now enhanced with the ability to natively create and track tickets in ServiceNow. Security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created. They can then be tracked in the Microsoft security center home page, and ServiceNow.
+[Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) are now enhanced with the ability to natively create and track tickets in ServiceNow.
+
+In the security center, security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created. They can then be tracked in the security center home page, and ServiceNow.
+
+In the compliance center, compliance admins can send a [Compliance Score](https://docs.microsoft.com/microsoft-365/compliance/compliance-score) improvement action to ServiceNow and create a ticket. They can then be tracked in the compliance center home page, and ServiceNow.
 
 ## Prerequisites
 
