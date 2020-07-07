@@ -252,11 +252,10 @@ Use the following table to help you identify whether to use a retention policy o
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
-|Conditions for automatic retention: <br />- Sensitive info types or keywords <br />- Trainable classifiers  | <br /> Yes <br /> No | <br /> Yes <br /> Yes |
 |Event-based retention | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition | No |Yes, when item is declared a record|
-|Identify itens subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
+|Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
 Note that you can use both retention policies and retention labels as complementary retention methods. For example:
 
