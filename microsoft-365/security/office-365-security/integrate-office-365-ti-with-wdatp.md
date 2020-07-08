@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 04/13/2020
+ms.date: 07/08/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
