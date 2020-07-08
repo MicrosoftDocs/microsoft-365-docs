@@ -47,7 +47,7 @@ These permissions are required only to create and apply a retention policy. The 
     
     For Microsoft Teams: 
     - You must select the option to choose specific locations if you want to delete or retain Teams channel messages or Team chats. When you select either of these options as locations, the other locations are automatically excluded because a retention policy that includes this Teams data can't include other locations. 
-    - Note that for **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Messages from private channels are included for users as group chats when you select the **Teams chats** location.
+    - Note that for **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
     
     For more information about choosing between a retention policy for the organization or for specific locations, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
     
@@ -201,7 +201,7 @@ Usually this update is fairly quick but can take several days. When the policy r
 
 To use the retention policies cmdlets:
   
-1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connect to the Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
 2. Use these Office 365 Security & Compliance Center cmdlets:
     
@@ -233,9 +233,11 @@ You must use PowerShell if you need to use [Preservation Lock](retention-policie
     ![List of retention policies in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
     
 3. To place a Preservation Lock on a retention policy, run `Set-RetentionCompliancePolicy` with the `RestrictiveRetention` parameter set to true. For example:
-    
-    	Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
-    
+
+   ```powershell
+   Set-RetentionCompliancePolicy -Identity "<Name of Policy>" – RestrictiveRetention $true
+   ```
+   
     ![RestrictiveRetention parameter in PowerShell](../media/retention-policy-preservation-lock-restrictiveretention.PNG)
     
     After you run that cmdlet, choose **Yes to All**:
