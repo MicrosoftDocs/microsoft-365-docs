@@ -27,8 +27,8 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ```
 ## June 2020
 - Twitter feed <br> Get the latest security research, threat intelligence, product news, and more - right inside the dashboard.
-- [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) table in advanced hunting <br> Incorporate information about post-delivery actions taken on email messages in your hunting queries.
-- [Inspect record in advanced hunting](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Quickly inspect a record in your query results with the new details panel.
+- [EmailPostDeliveryEvents schema table](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporate information about post-delivery actions taken on email messages in your advanced hunting queries.
+- [Inspect records in advanced hunting](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Quickly inspect records in your query results with the new details panel.
 
 ## May 2020
 - [Custom detections](custom-detections-overview.md) <br> Use advanced hunting queries to create custom detection rules that automatically monitor for and respond to security events and system states.
