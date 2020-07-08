@@ -21,7 +21,7 @@ ms.custom:
 - seo-marvel-apr2020
 ---
 
-# Manage ServiceNow tickets in the Microsoft 365 security center and compliance center
+# Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. [Learn more about ServiceNow](https://www.servicenow.com/)
 
