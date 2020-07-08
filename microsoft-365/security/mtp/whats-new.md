@@ -27,6 +27,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ```
 ## June 2020
 - Twitter feed <br> Get the latest security research, threat intelligence, product news, and more - right inside the dashboard.
+- [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) table in advanced hunting <br> Incorporate information about post-delivery actions taken on email messages in your hunting queries.
+- [Inspect record in advanced hunting](#drill-down-from-query-results) <br> Quickly inspect a record in your query results with the new details panel.
+
+## May 2020
+- [Custom detections](custom-detections-overview.md) <br> Use advanced hunting queries to create custom detection rules that automatically monitor for and respond to security events and system states.
 
 ## February 2020
 - [Incidents](incidents-overview.md) <br> Know exactly where an attack started and other details to help you see the extent of the attack.
@@ -34,7 +39,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Advanced hunting enhancements](advanced-hunting-overview.md) <br> Proactively hunt for threats across the modern workspace with Kusto Query Language and a security-optimized schema.
 
 ## March 2019
-
 - Advanced hunting <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
 - [Microsoft Secure Score](microsoft-secure-score.md) <br> Measurement of an organization's security posture, with a higher number indicating more improvement actions taken. Following the Security Score recommendations can protect your organization from threats. 
 - [Reports](monitoring-and-reporting.md) <br>  Features a host of cards covering a variety of areas that security analysts and administrators track as part of their day-to-day operations.
