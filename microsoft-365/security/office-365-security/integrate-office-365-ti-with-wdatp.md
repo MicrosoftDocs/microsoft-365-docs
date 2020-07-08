@@ -46,7 +46,7 @@ Integrating Office 365 ATP with Microsoft Defender ATP is set up by using both t
   
 1. As a global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in.
     
-2. Choose **Threat management** \> **Explorer**.<br>![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. Choose **Threat management** > **Explorer**.<br>![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. In the upper right corner of the screen, choose **WDATP Settings**.
     
