@@ -34,7 +34,7 @@ After you've created a well-formed XML file, you can upload it to Microsoft 365 
 <!-- this is worded much better than the previous one is -->
 Due to the variances in customer environments and content match requirements, Microsoft Support cannot assist in providing custom content-matching definitions; e.g., defining custom classifications or regular expression (also known as RegEx) patterns. For custom content-matching development, testing, and debugging, Microsoft 365 customers will need to rely upon internal IT resources, or use an external consulting resource such as Microsoft Consulting Services (MCS). Support engineers can provide limited support for the feature, but cannot provide assurances that any custom content-matching development will fulfill the customer's requirements or obligations.  As an example of the type of support that can be provided, sample regular expression patterns may be provided for testing purposes. Or, support can assist with troubleshooting an existing RegEx pattern which is not triggering as expected with a single specific content example.
 
-See, [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) in this topic.
+See [Potential validation issues to be aware of](#potential-validation-issues-to-be-aware-of) in this topic.
 
 For more information about the Boost.RegEx (formerly known as RegEx++) engine that's used for processing the text, see [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 
@@ -161,7 +161,7 @@ An entity is a sensitive information type, such as a credit card number, that ha
 <!-- why isn't the following in procedure format? -->
 Add the Rules and Entity elements. Then add a comment that contains the name of your custom entity - in this example, Employee ID. Later, you'll add the entity name to the localized strings section, and that name is what appears in the UI when you create a DLP policy.
   
-Next, generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing [guid]::NewGuid(). Later, you'll also add the entity GUID to the localized strings section.
+Next, generate a GUID for your entity. There are several ways to generate GUIDs, but you can do it easily in PowerShell by typing **[guid]::NewGuid()**. Later, you'll also add the entity GUID to the localized strings section.
   
 ![XML markup showing Rules and Entity elements](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
   
