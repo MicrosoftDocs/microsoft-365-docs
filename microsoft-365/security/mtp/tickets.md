@@ -23,12 +23,14 @@ ms.custom:
 
 # Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations. Their Now platform has IT workflows, employee workflows, and customer workflows. [Learn more about ServiceNow](https://www.servicenow.com/)
 
-Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) are now enhanced with the ability to natively create and track tickets in ServiceNow.
+Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms. [Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.commicrosoft-365/compliance/microsoft-365-compliance-center) are being enhanced with the ability to natively create and track tickets in ServiceNow.
 
 - [**Manage ServiceNow tickets in the security center**](tickets-security-center.md)
-- **Manage ServiceNow tickets in the compliance center**
+- **Manage ServiceNow tickets in the compliance center** (coming soon)
 
 ## Prerequisites
 
@@ -119,3 +121,6 @@ If you have enabled IP filtering, you may need to explicitly allow IP addresses.
 
 If the installation and setup steps have been completed, but you don't see the ServiceNow cards on the home page and can't share to ServiceNow from Microsoft Secure Score, check the status of the provisioning page at https://security.microsoft.com/ticketProvisioning. Select **Authorize** and return to the home page. The cards should appear.
 
+## Resources
+
+- [Manage ServiceNow tickets in the security center](tickets-security-center.md)

@@ -28,7 +28,7 @@ The [Microsoft 365 security center](overview-security-center.md) has been enhanc
 In the security center, security administrators can send a [Microsoft Secure Score](microsoft-secure-score.md) improvement action directly to ServiceNow and create a ticket. Both incident management and change management tickets can be created. They can then be tracked in the security center home page, and ServiceNow.
 
 - [**Learn about prerequisites, data exchange, and troubleshooting**](tickets.md)
-- **Manage ServiceNow tickets in the compliance center**
+- **Manage ServiceNow tickets in the compliance center** (coming soon)
 
 ## Connect Microsoft 365 security center to ServiceNow
 
@@ -66,5 +66,4 @@ With ServiceNow tickets visible in the Microsoft 365 security center, your tasks
 ## Resources
 
 - [Learn about prerequisites, data exchange, and troubleshooting](tickets.md)
-- Manage ServiceNow tickets in the compliance center
 - [Microsoft Secure Score](microsoft-secure-score.md)
