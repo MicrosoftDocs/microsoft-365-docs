@@ -1,5 +1,5 @@
 ---
-title: Manage ServiceNow tickets
+title: Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 description: Learn how to create and track tickets in ServiceNow from the Microsoft 365 security center and compliance center.
 keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, tickets, tasks
 ms.prod: w10
