@@ -59,8 +59,6 @@ Each remediation item can be opened to view details about it. When a remediation
 
 1. **Mail submission tab**: These are the number of emails submitted through Threat Explorer or automated investigations to be remediated. These emails can be:
 
-:::image type="content" source="../../../media/tp-RemediationArticle5.png" alt-text="The action center with actionable and not actionable threats.":::
-
 **Actionable**: Emails in the following cloud mailbox locations can be acted upon and moved i.e. any email within the remediable category can be moved from one location to another:
   - Inbox 
   - Junk  
