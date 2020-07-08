@@ -201,7 +201,7 @@ Usually this update is fairly quick but can take several days. When the policy r
 
 To use the retention policies cmdlets:
   
-1. [Connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
+1. [Connect to the Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)
     
 2. Use these Office 365 Security & Compliance Center cmdlets:
     
