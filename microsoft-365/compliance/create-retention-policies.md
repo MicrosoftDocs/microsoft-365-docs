@@ -130,7 +130,7 @@ Query-based retention uses the search index to identify content.
   
 ### Identify content that contains sensitive information
 
-You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personally identifiable information (PII) such as taxpayer identification numbers, social security numbers, or passport numbers.
+You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains end user identifiable information, such as taxpayer identification numbers, social security numbers, or passport numbers.
   
 ![Sensitive information types page](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
   
