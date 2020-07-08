@@ -54,7 +54,7 @@ Use the underlying work or school account that you recovered and your new admin 
 1. In the Microsoft 365 admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase Services</a>.
 2. Find the Microsoft 365 for business product that you want to buy.
     > [!IMPORTANT]
-    > Be sure to choose one that includes Teams.
+    > Be sure to choose one that includes Microsoft Teams.
 3. Complete the purchase. Remember to buy enough licenses for all the users in your Microsoft Teams Free org who you want to move to Microsoft 365 for business.
 
 ## Step 4: Assign new licenses to users
