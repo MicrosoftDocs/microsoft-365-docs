@@ -53,14 +53,20 @@ Integrating Office 365 ATP with Microsoft Defender ATP is set up by using both t
     
 3. In the upper right corner of the screen, choose **WDATP Settings**.
     
-4. In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.<br>:::image type="content" source="../../media/integrate-oatp-mdatp.png" alt-text="Integrate Office 365 ATP with Microsoft Defender ATP":::
+4. In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.<br>![Microsoft Defender ATP connection](../../media/Explorer-WDATPConnection-dialog.png)<br>
     
-5. Enable the connection in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
+5. Go to the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
-## Related topics
+6. In the navigation bar, choose **Settings**. 
+
+7. Under **General**, choose **Advanced features**.
+
+8. Scroll down to **Office 365 Threat Intelligence connection**, and turn the connection on.<br/>![Office 365 threat intelligence connection](../../media/mdatp-oatptoggle.png)<br>
+
+## Related articles
 
 [Threat investigation and response capabilities in Office 365](office-365-ti.md)
   
 [Office 365 Advanced Threat Protection](office-365-atp.md)
   
-
+[Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection)
