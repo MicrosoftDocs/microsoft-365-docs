@@ -25,7 +25,7 @@ To make [Microsoft Secure Score](microsoft-secure-score.md) a better representat
 
 To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-## July 2020
+## August 2020
 
 ### Add improvement actions for Azure Advanced Threat Protection
 

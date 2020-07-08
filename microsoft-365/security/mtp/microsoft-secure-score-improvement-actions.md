@@ -1,8 +1,8 @@
 ---
-title: Microsoft Secure Score (preview)
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect using it.
+title: Microsoft Secure Score
+description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
-ms.prod: w10
+ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,16 +17,16 @@ ms.topic: article
 search.appverid: 
 - MOE150
 - MET150
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
 ---
 
-# Microsoft Secure Score (preview)
-
->[!IMPORTANT]
->Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+# Microsoft Secure Score
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
-Following the Security Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
+Following the Secure Score recommendations can protect your organization from threats. From a centralized dashboard in the Microsoft 365 security center, organizations can monitor and work on the security of their Microsoft 365 identities, data, apps, devices, and infrastructure.
 
 Secure Score helps organizations:  
 
@@ -35,8 +35,6 @@ Secure Score helps organizations:
 * Compare with benchmarks and establish key performance indicators (KPIs).
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
-
-Additionally, you can access your recommendations and score through the [Microsoft Graph API](https://www.microsoft.com/security/partnerships/graph-security-api). Learn about the [Secure Score resource type](https://go.microsoft.com/fwlink/?linkid=2092996).
 
 ## How it works
 
@@ -48,11 +46,24 @@ Your score is updated in real time to reflect the information presented in the v
 
 ### How improvement actions are scored
 
-Each improvement action is worth 10 points or less. Most are scored in a binary fashion — if you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 30 points by protecting all your users with multi-factor authentication and you only have 5 of 100 total users protected, you would be given a partial score of around 2 points (5 protected / 100 total * 30 max pts = 2 pts partial score).
+Each improvement action is worth 10 points or less. Most are scored in a binary fashion — if you implement the improvement action, like create a new policy or turn on a specific setting, you get 100% of the points. For other improvement actions, points are given as a percentage of the total configuration. For example, if the improvement action states you get 10 points by protecting all your users with multi-factor authentication and you only have 50 of 100 total users protected, you would be given a partial score of 5 points (50 protected / 100 total * 10 max pts = 5 pts partial score).
 
 ### Products included in Secure Score
 
 Currently there are recommendations for Microsoft 365 (including Exchange Online), Azure AD, Microsoft Defender ATP, Azure ATP, and Cloud App Security. Recommendations for other security products are coming soon. The recommendations will not cover all the attack surfaces associated with each product, but they are a good baseline. You can also mark the improvement actions as covered by a third party or alternate mitigation.
+
+### Security defaults
+
+Microsoft Secure Score has updated improvement actions to support [security defaults in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults), which make it easier to help protect your organization with preconfigured security settings for common attacks.
+
+If you turn on security defaults, you will be awarded full points for the following improvement actions:
+
+- Ensure all users can complete multi-factor authentication for secure access (9 points)
+- Require MFA for administrative roles (10 points)
+- Enable policy to block legacy authentication (7 points)
+
+>[!IMPORTANT]
+>Security defaults include security features that provide similar security to the "sign-in risk policy" and "user risk policy" improvement actions. Instead of setting up these policies on top of the security defaults, we recommend updating their statuses to "Resolved through alternative mitigation."
 
 ## Required permissions
 
@@ -79,30 +90,22 @@ With read-only access, you are not able to edit status or notes for an improveme
 * Security operator
 * Global reader
 
-### Graph API
-
-To access the Graph API, you need to have one of the following scopes in addition to a role:
-
-* SecurityEvents.Read.All (for read-only roles)
-* SecurityEvents.ReadWrite.All (for read and write roles)
-
 ## Gain visibility into your security posture
 
 To help you the information you need more quickly, Microsoft improvement actions are organized into groups:
 
 * Identity (Azure AD accounts & roles)
 * Data  (Microsoft Information Protection)
-* Device (Microsoft Defender ATP)
+* Device (Microsoft Defender ATP, known as [Configuration score](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configuration-score))
 * App (email and cloud apps, including Office 365 and Microsoft Cloud App Security)
 * Infrastructure (no improvement actions for now)
 
 >[!NOTE]
->In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-preview.md#incompatibility-with-identity-secure-score-and-graph-api)
+>In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
-![Secure Score homepage](../../media/secure-score/secure-score-homepage.png)
-*Figure 1: Microsoft Secure Score overview page*
+![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
 
 ## Take action to improve your score
 
@@ -180,32 +183,14 @@ In the recent release of Microsoft Secure Score, an improved scoring model has b
 
 In time, Identity Secure Score and the Graph API will adopt the new scoring model. Until then, customers will see differences in the scores reported by Microsoft Secure Score, Identity Secure Score, and the Graph API. We apologize for any inconvenience this causes, and are working to ensure these experiences are more compatible in the future.
 
-### April 2020
+### Updated improvement actions
 
-#### Added Azure Active Directory improvement action
+- Added Azure Active Directory improvement actions
+- Added Azure Advanced Threat Protection improvement actions
+- Support for Microsoft Defender ATP [Threat & Vulnerability Management](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) security recommendations
+    - All released security recommendations supplied by TVM are now available
 
-- Do not allow users to grant consent to unmanaged applications (currently available in released version)
-
-#### Added Azure Advanced Threat Protection improvement actions
-
-- Disable Print spooler service on domain controllers
-- Modify unsecure Kerberos delegations to prevent impersonation
-- Protect and manage local admin passwords with Microsoft LAPS
-- Reduce lateral movement path risk to sensitive entities
-- Remove dormant accounts from sensitive groups
-- Remove unsecure SID history attributes from entities
-- Resolve unsecure account attributes
-- Stop clear text credentials exposure
-- Stop legacy protocols communication
-- Stop weak cipher usage
-
-#### Support for Microsoft Defender ATP Threat & Vulnerability Management (TVM) security recommendations
-
-All released security recommendations supplied by TVM are now available.
-
-### January - March 2020
-
-#### Updated interface and functionality
+### Updated interface and functionality
 
 * All new metrics and trends views for CISO and lead level discussions
 * New ways to track and benchmark your score
@@ -214,16 +199,32 @@ All released security recommendations supplied by TVM are now available.
 * Manage towards your future goals using score projections and planned actions
 * And more!
 
-#### Removed "not scored" and "review" improvement actions
+### June 2020
 
-One of the principles of Secure Score is that the score should be standardized and easy to relate to. Having improvement actions that are not measurable or actionable has been causing confusion. One Microsoft Secure Score only makes sense when every recommendation can have a clear effect on the score. Not scored improvement actions are not measurable, and review improvement actions are not measured to the same standard as other improvement actions.
+#### Removed improvement action for Microsoft Defender Advanced Threat Protection
 
-For these reasons, all improvement actions that were not scored or required a review cadence have been temporarily removed. No action is needed on your part.
+* Turn on Attack Surface Reduction rules
 
-#### Simplification of the point system
+#### Added improvement actions for Microsoft Defender Advanced Threat Protection
 
-To standardize points across multiple experiences, each Secure Score improvement action point total has been updated to be worth 10 points or less. It is necessary be more consistent across the wide breather of security controls that we have today and ones that we will be adding in the future. While this is a significant change and you will see a drop in point totals, there will be no change to your security posture.
+* Block Adobe Reader from creating child processes
+* Use advanced protection against ransomware
+* Block all Office applications from creating child processes
+* Block Office applications from creating executable content
+* Block JavaScript or VBScript from launching downloaded executable content
+* Block execution of potentially obfuscated scripts
+* Block executable content from email client and webmail
+* Block Office communication application from creating child processes
+* Block untrusted and unsigned processes that run from USB
+* Block persistence through WMI event subscription
+* Block Office applications from injecting code into other processes
+* Block executable files from running unless they meet a prevalence, age, or trusted list criterion
+* Block process creations originating from PSExec and WMI commands
+* Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+* Block Win32 API calls from Office macros
+
 
 ## We want to hear from you
 
 If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+
