@@ -20,7 +20,7 @@ A classifier is a type of model that automates identification and classification
 
 Creating a classifier model will create a new [SharePoint Content Type](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that will be associated to the model.
 
-When creating the classifier model, you create explanations that help to define the model by noting common data that you would expect to find consistently for this document type. 
+When creating the classifier model, you need to create *explanations* that help to define the model by noting common data that you would expect to find consistently for this document type. 
 
 You use examples of the document type ("example files") to help "train" your model to identify files that have the same content type.
 
@@ -31,7 +31,7 @@ To create a classifier, you need to:
 4. Create an explanation
 5. Test your model 
 
->[!Note] After you create a classifier model, you can optionally [add extractors]() to pull specific pieces of information from each file identified by the model.
+>[!Note] When creating a classifier model, you can optionally [add extractors](create-an-extractor.md) to pull specific pieces of information from each file identified by the model. 
 
 ## Name your model
 
@@ -41,9 +41,9 @@ The first step is to create your model in your Content Center by giving it a nam
 2. In the **New document understanding model** pane, in the **Name** field, type the name of the model. For example, if we want to identify contract renewal documents, we might name this model *Contract Renewal*.
 3. Click **Create**. This will create a home page for the model.
 
-When you create a model, you are creating a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint Content Types are managed through the [Managed MetaData Service](https://docs.microsoft.com/sharepoint/managed-metadata).
+When you create a model, you are creating a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint Content Types are managed through the [Content types gallery]().
 
-Click **Advanced settings** if you want to map this model to an existing content type if you want to use its schema. 
+Click **Advanced settings** if you want to map this model to an existing content type to use its schema. 
 
 ## Add your example files
 
