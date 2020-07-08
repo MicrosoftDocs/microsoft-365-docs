@@ -43,8 +43,8 @@ To begin the process, get your underlying work or school account ID. This accoun
 After you have the underlying work or school account for your Microsoft Teams Free org, you must reset the password for the account.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. When prompted to sign in, choose **Forgot my password**.
-2. Complete the password reset procedure using the underlying work or school account (the one ending with 8.onmicrosoft.com*).
-3. Complete the verification steps. You receive an email with a code to use to set a new password.
+2. Complete the password reset procedure using the underlying work or school account (the one ending with *.onmicrosoft.com*).
+3. Complete the verification steps. You will receive an email with a code to use to set a new password.
 4. Enter the code to complete the verification process.
 
 ## Step 3: Buy your new subscription
@@ -62,7 +62,7 @@ Use the underlying work or school account that you recovered and your new admin 
 Now that you have a new Microsoft 365 for business subscription, you can assign licenses to the existing users in your Microsoft Teams Free organization.
 
 1. In the admin center, go to **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a>.
-2. Select the users to whom you want to assign Microsoft 365 licenses, then select **Manage product licenses**.
+2. Select the users to whom you want to assign Microsoft 365 for business licenses, then select **Manage product licenses**.
 3. In the **Manage product licenses** pane, select **Replace existing license assignments**.
 4. In the **Replace existing products** pane, find the Microsoft 365 for business product that you bought, and switch the toggle to **On**.
 5. Select **Replace**, then select **Close**.
