@@ -24,7 +24,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 # Upgrade from Microsoft Teams Free to Microsoft 365 for business
 
 > [!IMPORTANT]
-> This document only applies to Teams free organizations in India.
+> This document only applies to Microsoft Teams Free organizations in India.
 
 ## Before you begin
 
@@ -69,7 +69,8 @@ Now that you have a new Microsoft 365 for business subscription, you can assign 
 
 ## Related content
 
+[Welcome to Microsoft Teams free](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (article)\
+[Upgrade Microsoft Teams free to subscription version](https://docs.microsoft.com/en-us/microsoftteams/upgrade-freemium) (article)\
 [Buy or remove subscription licenses](../licenses/buy-licenses.md) (article)\
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
-[Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)\
-[Welcome to Microsoft Teams free](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) (article)
+[Unassign licenses from users](../../admin/manage/remove-licenses-from-users.md) (article)
