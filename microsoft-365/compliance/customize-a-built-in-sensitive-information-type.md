@@ -200,7 +200,7 @@ To upload your rule, you need to do the following.
 3. In the PowerShell, type the following.
 
 ```powershell    
-New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte).
+New-DlpSensitiveInformationTypeRulePackage -FileData (Get-Content -Path "C:\custompath\MyNewRulePack.xml" -Encoding Byte)
 ```
 > [!IMPORTANT]
 > Make sure that you use the file location where your rule pack is actually stored.  `C:\custompath\` is a placeholder. 
