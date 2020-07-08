@@ -23,11 +23,13 @@ description: "Learn about retention behavior that applies specifically to Exchan
 
 The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Exchange.
 
-## How a retention policy works with Exchange locations
+## How a retention policy works with Exchange
 
-For a user's mail, calendar, and other items, a retention policy is applied at the level of a mailbox.
+For a user's mail, calendar, and other mailbox items, a retention policy is applied at the level of a mailbox.
 
-For a public folder, a retention policy is applied at the folder level, not the mailbox level. 
+For public folders, a retention policy is applied to all public folders and not at the folder or mailbox level.
+
+When you configure a retention policy for these locations, the following mail items are included: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items that don't have an end date are not included. Other items stored in a mailbox, such as Skype and Teams saved messages, are included with their separate retention policy.
 
 Both a mailbox and a public folder use the [Recoverable Items folder](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
   
@@ -46,7 +48,7 @@ When the retention settings are to retain and delete:
 ![Diagram of retention flow in email and public folders](../media/88f174cc-bbf4-4305-93d7-0515f496c8f9.png)
 
 1. **If the item is modified or permanently deleted** by the user (either SHIFT+DELETE or deleted from Deleted Items) during the retention period: The item is moved (or copied, in the case of edit) to the Recoverable Items folder. There, a timer job runs periodically and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting, but it can be configured up to 30 days.
-    
+
 2. **If the item is not modified or deleted** during the retention period: The same process runs periodically on all folders in the mailbox and identifies items whose retention period has expired, and these items are permanently deleted within 14 days of the end of the retention period. Note that 14 days is the default setting, but it can be configured up to 30 days. 
 
 When the retention settings are retain-only, or delete-only, the contents paths are variations of retain and delete:
@@ -69,7 +71,7 @@ By using PowerShell, you can exclude specific types of Exchange items from a ret
   
 To exclude your selected types for Exchange items in a retention policy, use the  `ExcludedItemClasses` parameter with the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) and  [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlets.
 
-To use the retention policies cmdlets, you must first [connect to Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
+To use the retention policies cmdlets, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 ## When a user leaves the organization 
 
