@@ -47,13 +47,13 @@ In this example, you can see that the recipients of the detected email message h
 
 Integrating Office 365 ATP with Microsoft Defender ATP is set up by using both the Security & Compliance Center AND the Microsoft Defender Security Center.
   
-1. As a global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in.
+1. As a global administrator or a security administrator, go to [https://protection.office.com](https://protection.office.com) and sign in. (This takes you to the Office 365 Security & Compliance Center.)
     
-2. Choose **Threat management** > **Explorer**.<br>![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)<br>
+2. In the navigation pane, choose **Threat management** > **Explorer**.<br>![Explorer in Threat Management menu](../../media/ThreatMgmt-Explorer-nav.png)<br>
     
 3. In the upper right corner of the screen, choose **WDATP Settings**.
     
-4. In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.<br>![Microsoft Defender ATP connection](../../media/Explorer-WDATPConnection-dialog.png)<br>
+4. In the Microsoft Defender ATP connection dialog box, turn on **Connect to Windows ATP**.<br>:::image type="content" source="../../media/integrate-oatp-mdatp.png" alt-text="Integrate Office 365 ATP with Microsoft Defender ATP":::
     
 5. Enable the connection in the Microsoft Defender Security Center ([https://securitycenter.windows.com](https://securitycenter.windows.com)).
 
