@@ -29,7 +29,7 @@ description: "Synchronize domain controlled users with Microsoft 365 for busines
 
 ## 1. Prepare for Directory Synchronization 
 
-Before you synchronize your users and computers from the local Active Directory Domain, review [Prepare for directory synchronization to Office 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). In particular:
+Before you synchronize your users and computers from the local Active Directory Domain, review [Prepare for directory synchronization to Microsoft 365](https://docs.microsoft.com/office365/enterprise/prepare-for-directory-synchronization). In particular:
 
    - Make sure that no duplicates exist in your directory for the following attributes: **mail**, **proxyAddresses**, and **userPrincipalName**. These values must be unique and any duplicates must be removed.
    
@@ -54,7 +54,7 @@ To synchronize your users, groups, and contacts from the local Active Directory 
  5. Follow the wizard steps to download Azure AD Connect and use it to synchronize your domain-controlled users to Microsoft 365.
 
 
-See [Set up directory synchronization for Office 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) to learn more.
+See [Set up directory synchronization for Microsoft 365](https://docs.microsoft.com/office365/enterprise/set-up-directory-synchronization) to learn more.
 
 As you configure your options for Azure AD Connect, we recommend that you enable **Password Synchronization**, **Seamless Single Sign-On**, and the **password writeback** feature, which is also supported in Microsoft 365 for business.
 

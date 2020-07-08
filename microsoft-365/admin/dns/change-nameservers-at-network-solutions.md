@@ -184,7 +184,7 @@ Ready to change your NS records so Microsoft can set up your domain? Follow the 
     
     ![NetworkSolutionsBP-Redelegate-1-2-1](../../media/57e22ef1-ac88-4d4a-bc8e-058023255dfd.png)
   
-3. On the **Domain Names** page, type or copy and paste the nameserver values from the following table.  
+3. On the **Domain Names** page, type or copy and paste the nameserver values from the following table. 
     
 |||
 |:-----|:-----|

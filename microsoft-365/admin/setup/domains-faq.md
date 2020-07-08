@@ -42,15 +42,15 @@ If you can't find an answer to your question, let us know by leaving a comment a
 
 In this article
 
-[What is MX priority?](#what-is-mx-priority)
-[How can I validate SPF records for my domain?](#how-can-i-validate-spf-records-for-my-domain)
-[What is a domain name?](#what-is-a-domain-name)
-[What happens if my DNS provider doesn't support certain record types?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
-[How do I set or change the default domain in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
-[Can I add custom subdomains or multiple domains to Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
-[Why do I have an "onmicrosoft.com" domain?](#why-do-i-have-an-onmicrosoftcom-domain)
-[Why do I have an "onmicrosoft.de" domain?](#why-do-i-have-an-onmicrosoftde-domain)
-[How do I verify my nonprofit or education status?](#how-do-i-verify-my-nonprofit-or-education-status)
+- [What is MX priority?](#what-is-mx-priority)
+- [How can I validate SPF records for my domain?](#how-can-i-validate-spf-records-for-my-domain)
+- [What is a domain name?](#what-is-a-domain-name)
+- [What happens if my DNS provider doesn't support certain record types?](#what-happens-if-my-dns-provider-doesnt-support-certain-record-types)
+- [How do I set or change the default domain in Microsoft 365?](#how-do-i-set-or-change-the-default-domain-in-microsoft-365)
+- [Can I add custom subdomains or multiple domains to Microsoft 365?](#can-i-add-custom-subdomains-or-multiple-domains-to-microsoft-365)
+- [Why do I have an "onmicrosoft.com" domain?](#why-do-i-have-an-onmicrosoftcom-domain)
+- [Why do I have an "onmicrosoft.de" domain?](#why-do-i-have-an-onmicrosoftde-domain)
+- [How do I verify my nonprofit or education status?](#how-do-i-verify-my-nonprofit-or-education-status)
     
 ## What is MX priority?
 
