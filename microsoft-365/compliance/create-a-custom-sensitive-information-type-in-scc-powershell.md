@@ -297,7 +297,7 @@ The Pattern element has a required confidenceLevel attribute. You can think of t
   
 ![XML markup showing Pattern elements with different values for confidenceLevel attribute](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
-In addition to confidenceLevel for each Pattern, the Entity has a recommendedConfidence attribute. The recommended confidence attribute can be thought of as the default confidence level for the rule. When you create a rule in a DLP policy, if you don't specify a confidence level for the rule to use, that rule will match based on the recommended confidence level for the entity.
+In addition to confidenceLevel for each Pattern, the Entity has a recommendedConfidence attribute. The recommended confidence attribute can be thought of as the default confidence level for the rule. When you create a rule in a DLP policy, if you don't specify a confidence level for the rule to use, that rule will match based on the recommended confidence level for the entity. Please note that the recommendedConfidence attribute is mandatory for each Entity ID in the Rule Package, if missing you won't be able to save policies that use the Sensitive Information Type. 
   
 ## Do you want to support other languages in the UI of the Security &amp; Compliance Center? [LocalizedStrings element]
 
