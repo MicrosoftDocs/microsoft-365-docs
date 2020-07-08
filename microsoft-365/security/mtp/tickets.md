@@ -62,7 +62,7 @@ When you create a ServiceNow ticket from the Microsoft 365 security center or co
 
 ## Connect to ServiceNow
 
-Go to [Create and track ServiceNow tickets in the Microsoft 365 security center](tickets-security-center) to learn how to connect to ServiceNow. Connecting from the Microsoft 365 compliance center is coming soon.
+Go to [Create and track ServiceNow tickets in the Microsoft 365 security center](tickets-security-center.md) to learn how to connect to ServiceNow. Connecting from the Microsoft 365 compliance center is coming soon.
 
 ## Troubleshooting
 
