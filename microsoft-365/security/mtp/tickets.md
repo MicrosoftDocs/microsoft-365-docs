@@ -1,7 +1,7 @@
 ---
 title: Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center
 description: Learn how to create and track tickets in ServiceNow from the Microsoft 365 security center and compliance center.
-keywords: security, Microsoft 365, M365, secure score, security center, ServiceNow, tickets, tasks
+keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -59,6 +59,10 @@ When you create a ServiceNow ticket from the Microsoft 365 security center or co
 * Due date
 * Recommendation source (User recommendation or Microsoft recommendation)
 * Recommendation category (Devices, Data, Apps, Identity, Infrastructure)
+
+## Connect to ServiceNow
+
+Go to [Create and track ServiceNow tickets in the Microsoft 365 security center](tickets-security-center) to learn how to connect to ServiceNow. Connecting from the Microsoft 365 compliance center is coming soon.
 
 ## Troubleshooting
 
