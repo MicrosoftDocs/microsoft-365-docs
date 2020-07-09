@@ -14,7 +14,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom:
-description: How an organization that deploys the latest release uses channels for Windows 10 and Microsoft 365 apps.
+description: How an organization that deploys the latest release uses channels for Windows 10, Microsoft 365 apps, and Microsoft Edge.
 ---
 
 # Example of broad deployment for the latest releases
@@ -88,6 +88,24 @@ Ongoing updates process:
 2. AppsCurrentChannelPreview group members confirm that Current Channel (Preview) changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current Channel (Preview) release for additional validation.
 3. Current Channel changes are deployed to the AppsCurrentChannel deployment group. 
 
+## Deployment configuration for Microsoft Edge
+
+The overall goal is to perform a broad deployment of the latest Stable Channel release after validation of Beta Channel changes by a group of representative users.
+
+See [Microsoft Edge deployment](https://docs.microsoft.com/DeployEdge/microsoft-edge-channels) for more information on Edge deployment channels.
+
+| Stage | Channel | Deployment groups |
+|:-------|:-------|:-----|
+| Pilot | **Beta Channel** <ul><li> Purpose: Deployment of feature updates to IT staff and early adopters for validation on representative devices and configurations. </li><li> State: Fully compliant and supported. </li><li> How often: Updates every six weeks. | **EdgeBetaChannel** (example name) <br><br> Members are groups containing: <br> <ul><li> Edge enthusiasts across departments and locations </li><li> Staff with configurations that need validation </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> |
+| Production | **Stable Channel** <ul><li> Purpose: Broad deployment of the latest feature updates to the rest of the organization. <li> State: Fully compliant and supported. </li> </ul> |  **EdgeStableChannel** (example name) <br><br>  Members are all users that are not in the EdgeBetaChannel group.|
+||||
+
+Ongoing updates process:
+
+1. Edge Beta Channel changes are deployed to the EdgeBetaChannel deployment group.
+2. EdgeBetaChannel group members confirm that Beta Channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Beta Channel release for additional validation.
+3. Edge Stable Channel changes are deployed to the EdgeStableChannel deployment group. 
+
 ## Visual summaries
 
 Here are the products, their channels, and the deployment groups used by this example organization. 
@@ -103,3 +121,14 @@ Here is an example of the timing of successive broad deployments of the latest r
 [Deployment guide](deploy-microsoft-365-enterprise.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
+
+
+<!--
+
+|  **Current** <br><br> **Purpose:** Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (language packs, 32-vs-64 bit, 3rd party apps, macros). <br><br> **Users:** Office suite fans (no matter their technical ability), IT admins, change managers, and trainers. Current channel (Preview) deployment groups contain the user accounts. <br><br> **State:** Fully compliant and supported. <br><br> **How often:** Updates 2-3 times each month. | **AppsCurrentChannel** (example name) <br><br> Members are groups containing: <ul><li> Office enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> |
+
+| Channel | Deployment groups |
+|:-------|:-----|
+|  **Semi-Annual**  <ul><li>Purpose: Deployment of feature updates to IT staff and early adopters for testing on representative devices and configurations (languages, 3rd party apps). </li><li> Users: Windows fans (no matter their technical ability), IT admins, change managers, and trainers. Feature Preview deployment groups contain the user accounts. </li><li> State: Fully compliant and supported. </li><li> How often: Updates every 6 months (with monthly undocumented feature updates). </li></ul> | **Win10SemiAnnualChannel-Pilot** (example name) <br><br> Members are groups containing: <ul><li> Windows enthusiasts across departments and locations </li><li> Staff with configurations that need testing </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> <br> **Win10SemiAnnualChannel-All** (example name) <br><br> Members are all other users. |
+|||
+--> 
