@@ -3,6 +3,7 @@ title: Remediate malicious email that was delivered in Office 365
 author:  MSFTTracyP
 ms.author: tracyp
 manager: dansimp
+ms.date: 07/09/2020
 ms.topic: article
 ms.service: Microsoft Threat Protection
 audience: admin
