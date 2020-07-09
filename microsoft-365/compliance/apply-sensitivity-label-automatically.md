@@ -186,7 +186,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
     - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
-    - To view file contents in the source view, you must have the **Content Explorer Content viewer** role if you're not a global admin. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
+    - To view file contents in the source view, you must have the **Content Explorer Content Viewer** role if you're not a global admin. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -300,8 +300,8 @@ You can modify your policy directly from this interface:
 Your auto-policies run continuously until they are deleted. For example, new and modified documents will be included with the current policy settings.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
-- **Content Explorer List viewer** lets you see a file's label but not the file's contents.
-- **Content Explorer Content viewer** lets you see the file's contents.
+- **Content Explorer List Viewer** lets you see a file's label but not the file's contents.
+- **Content Explorer Content Viewer** lets you see the file's contents.
 
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
