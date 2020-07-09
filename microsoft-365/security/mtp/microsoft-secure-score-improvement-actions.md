@@ -43,9 +43,17 @@ In the Microsoft Secure Score overview page, you can see how points are split be
 
 ## Check your current score
 
+To check on your current score, go to the Microsoft Secure Score overview page and look for the tile that says **Your secure score**. Your score will be shown as a percentage, along with the number of points you have achieved out of a total possible points.
+
+Additionally, if you select the **Include** button next to your score, you can choose different views of your score. These different score views will display in the graph on the score tile and the point breakdown chart.
+
+The following are scores you can add to your view of your overall score to give you a fuller picture of your overall score:
+
 - **Planned score**: Show projected score when planned actions are completed
 - **Current license score**: Show score that can be achieved with your current Microsoft license
 - **Achievable score**: Show score that can be achieved with your Microsoft licenses and current risk acceptance
+
+This is what it will look like if you have included all possible score views:
 
 ![Your secure score including planned score, current license score, and achievable score](../../media/secure-score/your-secure-score.png)
 

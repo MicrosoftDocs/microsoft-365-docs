@@ -26,7 +26,21 @@ ms.custom:
 
 [Microsoft Secure Score](microsoft-secure-score.md) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
-View a graph of your organization's score over time in the **History** tab. Below the graph is a list of all the actions taken in the selected time range and their attributes, such as resulting points and category. You can customize a date range and filter by category.
+## Gain insights into activity that has affected your score
+
+View a graph of your organization's score over time in the **History** tab.
+
+Below the graph is a list of all the actions taken in the selected time range and their attributes, such as resulting points and category. You can customize a date range and filter by category.
+
+![Activity history](../../media/secure-score/secure-score-history-activity.png)
+
+If you select the improvement action associated with an activity, the full improvement action flyout will appear.
+
+To view all history for that specific improvement action, select the history link in the flyout.
+
+![Improvement action history](../../media/secure-score/secure-score-history-flyout.png)
+
+## Discover trends and set goals
 
 In the **Metrics & trends** tab, there are several graphs and charts to give you more visibility into trends and set goals. You can set the date range for the whole page of visualizations. The visualizations include:
 
@@ -35,6 +49,12 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 * **Comparison trend** — How your organization's Secure Score compares to others' over time. This view can include lines representing the score average of organizations with similar seat count and a custom comparison view that you can set.
 * **Risk acceptance trend** — Timeline of improvement actions marked as "risk accepted."
 * **Score changes** — The number of points achieved, points regressed, along with the subsequent score change, in the specified date range.
+
+### Compare your score to organizations like yours
+
+There are two 
+
+![Bar graph of similar organization's scores](../../media/secure-score/secure-score-comparison-bar.png)
 
 ## We want to hear from you
 
