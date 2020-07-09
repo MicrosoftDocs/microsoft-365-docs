@@ -104,11 +104,13 @@ Use the following guidance for when you create, modify, or delete sensitivity la
 
 ### Creating and publishing labels that are configured for sites and groups
 
-After a sensitivity label is created and published, it can take up to 24 hours for the label to become visible for users in teams, groups, and sites. Use the following guidance to publish a label for your users when that label is configured for site and group settings:
+When a new sensitivity label is created and published, it's visible for users in teams, groups, and sites within 30 minutes. However, if you modify an existing label, allow up to 24 hours. Use the following guidance to publish a label for your users when that label is configured for site and group settings:
 
 1. After you create and configure the sensitivity label, add this label to a label policy that applies to just a few test users.
 
-2. Wait for 24 hours.
+2. Wait for the change to replicate:
+    - New label: Wait for 30 minutes.
+    - Existing label: Wait for 24 hours.
 
 3. After this wait period, use one of the test user accounts to create a team, Microsoft 365 group, or SharePoint site with the label that you created in step 1.
 
@@ -116,7 +118,7 @@ After a sensitivity label is created and published, it can take up to 24 hours f
 
 ### Modifying published labels that are configured for sites and groups
 
-As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, allow up to 3 days for the changes to replicate to all containers that have the label applied. 
+As a best practice, don't change the site and group settings for a sensitivity label after the label has been applied to teams, groups, or sites. If you do, remember to wait for 24 hours for the changes to replicate to all containers that have the label applied. 
 
 In addition, if your changes include the **External users access** setting:
 

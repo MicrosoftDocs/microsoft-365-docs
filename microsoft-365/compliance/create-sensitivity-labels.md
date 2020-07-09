@@ -163,7 +163,7 @@ To edit an existing label policy, select it, and then select the **Edit Policy**
 
 This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
 
-Typically, users see the labels in their Office apps within a couple of hours. However, allow up to 24 hours for your label policies and any changes to them to replicate to all users and services.
+Users see newly created labels in their Office apps within 30 minutes. However, allow up to 24 hours for changes to label settings and changes to label policy settings to replicate to all users and services.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 
@@ -190,6 +190,8 @@ In comparison, when you delete a label:
 - For desktop apps: The label information in the metadata remains, but because a label ID to name mapping is no longer possible, users don't see the applied label name displayed (for example, on the status bar) so users will assume the content isn't labeled. If the label applied encryption, the encryption remains and when the content is opened, uses still see the name and description of the now archived protection template.
 
 - For Office on the web: Users don't see the label name on status bar or in the **Sensitivity** column. The label information in the metadata remains only if the label didn't apply encryption. If the label applied encryption, and you've enabled [sensitivity labels for SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label information in the metadata is removed and the encryption is removed. 
+
+When you remove a sensitivity label from a label policy, it's a label policy change that can take up to 24 hours to replicate to all apps and services. This replication period is 30 minutes for a deleted label.
 
 ## Next steps
 
