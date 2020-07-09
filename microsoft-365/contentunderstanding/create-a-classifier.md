@@ -14,7 +14,8 @@ description: "Learn how to create a classifier"
 
 # Create a classifier (Preview)
 
-> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 (Add **Create a Classifier** video here)
 
@@ -35,7 +36,8 @@ To create a classifier, you need to:
 4. Create an explanation
 5. Test your model 
 
->[!Note] When creating a classifier model, you can optionally [add extractors](create-an-extractor.md) to pull specific pieces of information from each file identified by the model. 
+> [!Note]
+> When creating a classifier model, you can optionally [add extractors](create-an-extractor.md) to pull specific pieces of information from each file identified by the model. 
 
 ## Name your model
 

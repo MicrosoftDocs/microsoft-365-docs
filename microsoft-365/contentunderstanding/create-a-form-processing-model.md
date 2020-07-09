@@ -22,6 +22,8 @@ Using AI Builder - a feature in Microsoft PowerApps - Project Cortex users can c
 To create a Form Processing model:
 
 1. In your document library, select the **Automate** menu, select **AI Builder**, and then select **Create a Form Processing model**.
+
+    ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)
 2. In the **New form processing model** pane, in the  **Name** field, type a name for your model (for example, *Purchase Orders*).
 3. Select **Create**.
 4. Your browser will open a new PowerApps AI Builder forms processing model page.  

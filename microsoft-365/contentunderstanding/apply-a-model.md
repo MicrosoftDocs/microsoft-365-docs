@@ -35,7 +35,6 @@ To apply your model to to a SharePoint document library:
 5. On the model home page, in the **Libraries with this model** section, you will see the URL to the SharePoint site listed.
 
 
-
 After applying the model to the document library, you can begin uploading documents to the site and see the results.
 
 1. In the SharePoint document library, in the menu bar select **All Documents** and under **View**, select the view you created by applying the model. By default, it will have the same name as your model. 
