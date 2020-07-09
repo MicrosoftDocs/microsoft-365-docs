@@ -115,6 +115,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Apply query best practices
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Use shared queries
@@ -179,8 +181,6 @@
                   items: 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Apply query best practices
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Custom detections
                   items: 
                     - name: Custom detections overview
@@ -215,8 +215,12 @@
               href: mtp/device-profile.md
             - name: Provide feedback
               href: mtp/feedback.md
-            - name: Manage tickets through ServiceNow
-              href: ./mtp/tickets.md
+            - name: Create ServiceNow tickets and tasks
+              items:
+                - name: ServiceNow integration overview 
+                  href: ./mtp/tickets.md
+                - name: ServiceNow tickets in the security center
+                  href: ./mtp/tickets-security-center.md
 
 
     - name: Office 365 security

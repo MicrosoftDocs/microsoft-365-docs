@@ -126,7 +126,7 @@ To complete the action, you have a few options:
 
 * Select **Manage** to go the configuration screen and make the change. You will then gain the points that the action is worth, visible in the fly out. Points generally take about 24 hours to update.
 
-* Select **Share** to copy the direct link to the improvement action, or choose the platform to share the link such as email, Microsoft Teams, Microsoft Planner, or ServiceNow. Selecting ServiceNow will let you create a change ticket which will be visible in ServiceNow and the Microsoft 365 security center home. To learn more, see [Microsoft 365 Security Center and ServiceNow integration](tickets.md).
+* Select **Share** to copy the direct link to the improvement action, or choose the platform to share the link such as email, Microsoft Teams, Microsoft Planner, or ServiceNow. Selecting ServiceNow will let you create a change ticket which will be visible in ServiceNow and the Microsoft 365 security center home. To learn more, see [Microsoft 365 Security Center and ServiceNow integration](tickets-security-center.md).
 
 ### Choose an improvement action status
 
@@ -198,6 +198,31 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 * Filter, tag, search, and group your improvement actions
 * Manage towards your future goals using score projections and planned actions
 * And more!
+
+### June 2020
+
+#### Removed improvement action for Microsoft Defender Advanced Threat Protection
+
+* Turn on Attack Surface Reduction rules
+
+#### Added improvement actions for Microsoft Defender Advanced Threat Protection
+
+* Block Adobe Reader from creating child processes
+* Use advanced protection against ransomware
+* Block all Office applications from creating child processes
+* Block Office applications from creating executable content
+* Block JavaScript or VBScript from launching downloaded executable content
+* Block execution of potentially obfuscated scripts
+* Block executable content from email client and webmail
+* Block Office communication application from creating child processes
+* Block untrusted and unsigned processes that run from USB
+* Block persistence through WMI event subscription
+* Block Office applications from injecting code into other processes
+* Block executable files from running unless they meet a prevalence, age, or trusted list criterion
+* Block process creations originating from PSExec and WMI commands
+* Block credential stealing from the Windows local security authority subsystem (lsass.exe)
+* Block Win32 API calls from Office macros
+
 
 ## We want to hear from you
 

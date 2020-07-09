@@ -93,21 +93,19 @@
              href: manage/assign-licenses-to-users.md  
            - name: Assign admin roles
              href: add-users/assign-admin-roles.md
+           - name: Unassign licenses from users
+             href: manage/remove-licenses-from-users.md
            - name: Guest users
              href: add-users/about-guest-users.md
            - name: Add guest users to a Microsoft 365 group
              href: create-groups/manage-guest-access-in-groups.md
-           - name: Remove licenses from users
-             href: manage/remove-licenses-from-users.md
-           - name: Resolve license conflicts
-             href: manage/resolve-license-conflicts.md
            - name: Change a user name and email address
              href: add-users/change-a-user-name-and-email-address.md
            - name: Remove a former employee
              href: add-users/remove-former-employee.md
            - name: Access and back up a former user’s data
              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
-           - name: Restore  a user
+           - name: Restore a user
              href: add-users/restore-user.md
            - name: Reset passwords
              href: add-users/reset-passwords.md

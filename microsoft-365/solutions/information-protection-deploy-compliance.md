@@ -104,7 +104,7 @@ You can also add a new template customized for your organization based on an exi
 
 ## Compliance Score
 
-Once the assessments and review specifications are performed in Compliance Manager, you can now go to the [Compliance Score](../compliance/working-with-compliance-score.md) tool and review the score and slice and dice the data further, including by control area.
+Once the assessments and review specifications are performed in Compliance Manager, you can now go to the [Compliance Score](../compliance/compliance-score.md) tool and review the score and slice and dice the data further, including by control area.
 
 The Compliance Score tool in the Microsoft 365 Compliance admin center provides several approaches to review and filter compliance data obtained from Compliance Manager and various Microsoft 365 services. This tool is automatically updated when various configuration settings are implemented and shares signals with the Microsoft Secure Score so that many improvement actions will show up in both scores. 
  
@@ -136,7 +136,7 @@ Here are a few important tips for the use of Compliance Score and Compliance Man
 
 - Each data privacy regulation has a combination of technical controls, documentation specifications, and operational, process, and reporting requirements. All of these show up in the improvement actions. 
 
-- This article focuses on a subset of the technical controls specified for data privacy in Compliance Manager and Compliance Score. Refer to the Compliance Manager tool and [documentation](../compliance/working-with-compliance-score.md) for more information on non-technical administrative controls.
+- This article focuses on a subset of the technical controls specified for data privacy in Compliance Manager and Compliance Score. Refer to the Compliance Manager tool and [documentation](../compliance/compliance-score.md) for more information on non-technical administrative controls.
 
 - To focus the view of improvement actions to your area of interest, you can filter by action type in the **Solutions** tab in the Compliance Score admin.
 
