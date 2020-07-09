@@ -36,6 +36,8 @@ Secure Score helps organizations:
 
 Organizations gain access to robust visualizations of metrics and trends, integration with other Microsoft products, score comparison with similar organizations, and much more. The score can also reflect when third-party solutions have addressed recommended actions.
 
+![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
+
 ## How it works
 
 You are given points for configuring recommended security features, performing security-related tasks, or addressing the improvement action with a third-party application or software, or an alternate mitigation. Some improvement actions only give points when fully completed, and some give partial points if they are completed for some devices or users. If you cannot or do not want to enact one of the improvement actions, you can choose to accept the risk or the remaining risk.
@@ -43,6 +45,14 @@ You are given points for configuring recommended security features, performing s
 We show you the full set of possible improvements, regardless of license, so you can understand security best practices and improve your score. Your absolute security posture is represented by Secure Score, which stays the same no matter what product licenses your organization owns. Keep in mind that security should be balanced with usability, and not every recommendation can work for your environment.
 
 Your score is updated in real time to reflect the information presented in the visualizations and improvement action pages. Secure Score also syncs daily to receive system data about your achieved points for each action.
+
+### Key scenarios
+
+- Check current score
+    - Go to the Microsoft Secure Score overview page, and look for the tile that says **Your secure score**
+- Compare yourself vs peers
+- Review Improvement Actions and mark them up (e.g.:  add to plan)
+- Initiate work flows to investigate or implement
 
 ### How improvement actions are scored
 
@@ -89,7 +99,6 @@ With read-only access, you are not able to edit status or notes for an improveme
 * Security reader
 * Security operator
 * Global reader
-
 
 ## Risk awareness
 
@@ -148,3 +157,9 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 ## We want to hear from you
 
 If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
+
+## Related resources
+
+- [Gain visibility into your security posture](microsoft-secure-score-improvement-actions.md)
+- [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
+- [What's coming](microsoft-secure-score-whats-coming.md)

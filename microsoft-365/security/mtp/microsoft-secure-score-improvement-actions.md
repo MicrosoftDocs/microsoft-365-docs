@@ -41,6 +41,14 @@ In the Microsoft Secure Score overview page, you can see how points are split be
 
 ![Secure Score homepage](../../media/secure-score/secure-score-homepage-new.png)
 
+## Check your current score
+
+- **Planned score**: Show projected score when planned actions are completed
+- **Current license score**: Show score that can be achieved with your current Microsoft license
+- **Achievable score**: Show score that can be achieved with your Microsoft licenses and current risk acceptance
+
+![Your secure score including planned score, current license score, and achievable score](../../media/secure-score/your-secure-score.png)
+
 ## Take action to improve your score
 
 The **Improvement actions** tab lists the security recommendations that address possible attack surfaces, along with their status (to address, planned, risk accepted, resolved through third party, resolved through alternate mitigation, and completed). You can search, filter, and group all the improvement actions.  
@@ -91,8 +99,12 @@ The **Implementation** section shows any prerequisites, step by step next steps 
 
 Prerequisites will be any licenses that need to be obtained or actions that need to be completed before the improvement action is addressed. Make sure you have enough seats in your license to complete the improvement action and that those licenses are applied to the necessary users.  
 
-
 ## We want to hear from you
 
 If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
+## Related resources
+
+- [Microsoft Secure Score overview](microsoft-secure-score.md)
+- [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
+- [What's coming](microsoft-secure-score-whats-coming.md)

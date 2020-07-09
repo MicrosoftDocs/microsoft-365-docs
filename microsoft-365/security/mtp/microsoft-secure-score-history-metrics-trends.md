@@ -36,8 +36,12 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 * **Risk acceptance trend** — Timeline of improvement actions marked as "risk accepted."
 * **Score changes** — The number of points achieved, points regressed, along with the subsequent score change, in the specified date range.
 
-
 ## We want to hear from you
 
 If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
 
+## Related resources
+
+- [Microsoft Secure Score overview](microsoft-secure-score.md)
+- [Gain visibility into your security posture](microsoft-secure-score-improvement-actions.md)
+- [What's coming](microsoft-secure-score-whats-coming.md)
