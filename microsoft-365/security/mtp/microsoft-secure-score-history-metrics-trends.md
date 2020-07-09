@@ -52,9 +52,17 @@ In the **Metrics & trends** tab, there are several graphs and charts to give you
 
 ### Compare your score to organizations like yours
 
-There are two 
+There are two place to see how your score compares to organizations that are similar to you.
+
+The first place is in the **Overview** tab, where you will be able to see a comparison bar graph. Hover over the chart to view the score and score opportunity.
 
 ![Bar graph of similar organization's scores](../../media/secure-score/secure-score-comparison-bar.png)
+
+The second place is in the **Metrics & trends** tab, where you can view how your organization's Secure Score compares to others' over time.
+
+![Line graph of similar organization's scores over time](../../media/secure-score/secure-score-comparison-trend.png)
+
+In both charts, you can select **Manage comparisons** to view and edit your organization's information. You can also create a custom comparison based on industry, organization size, licenses, and regions. 
 
 ## We want to hear from you
 

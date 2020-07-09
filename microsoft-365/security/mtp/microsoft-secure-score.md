@@ -48,11 +48,11 @@ Your score is updated in real time to reflect the information presented in the v
 
 ### Key scenarios
 
-- Check current score
-    - Go to the Microsoft Secure Score overview page, and look for the tile that says **Your secure score**
-- Compare yourself vs peers
-- Review Improvement Actions and mark them up (e.g.:  add to plan)
-- Initiate work flows to investigate or implement
+- [Check your current score](microsoft-secure-score-improvement-actions.md#check-your-current-score)
+- [Compare your score to organizations like yours](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
+- [View improvement actions and decide an action plan](microsoft-secure-score-improvement-actions.md#take-action-to-improve-your-score)
+- [Initiate work flows to investigate or implement](microsoft-secure-score-improvement-actions.md#view-improvement-action-details)
+    - [Microsoft 365 security center and ServiceNow integration](tickets-security-center.md)
 
 ### How improvement actions are scored
 
