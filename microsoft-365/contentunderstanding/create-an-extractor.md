@@ -84,10 +84,13 @@ For our *Service Start Date* example, it is more efficient to use the pre-built 
 
 1. In the Explanation section, select **New**, and then select **From explanation library**.
 2. From the explanation library, select **Date**. You can view all variations of date that will be recognized.
-3. Select **Add**.
-![Explanation library](../media/content-understanding/explanation-library.png) 
-4. On the **Create an explanation** page, the *Date* information from the explanation library will autofill the fields. Select **Save**.
-![Explanation library](../media/content-understanding/date-explanation-library.png) 
+3. Select **Add**.</br>
+
+    ![Explanation library](../media/content-understanding/explanation-library.png) 
+
+4. On the **Create an explanation** page, the *Date* information from the explanation library will autofill the fields. Select **Save**.</br>
+
+    ![Explanation library](../media/content-understanding/date-explanation-library.png) 
 
  
 ## Train the model 
