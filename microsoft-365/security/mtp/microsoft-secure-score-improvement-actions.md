@@ -1,6 +1,6 @@
 ---
 title: Gain visibility into your security posture through Microsoft Secure Score
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
+description: Describes how to take action to improve your Microsoft Secure Score in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

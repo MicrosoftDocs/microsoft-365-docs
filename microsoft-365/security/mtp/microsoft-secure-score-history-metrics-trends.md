@@ -1,6 +1,6 @@
 ---
 title: Track your Microsoft Secure Score history and meet goals
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how to improve your security posture, and what security admins can expect.
+description: Gain insights into activity that has affected your Secure Score. Discover trends and set goals.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy

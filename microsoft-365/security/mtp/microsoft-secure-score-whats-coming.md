@@ -1,6 +1,6 @@
 ---
 title: What's coming to Microsoft Secure Score?
-description: Describes Microsoft Secure Score in the Microsoft 365 security center, how details are calculated, and what security admins can expect.
+description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
