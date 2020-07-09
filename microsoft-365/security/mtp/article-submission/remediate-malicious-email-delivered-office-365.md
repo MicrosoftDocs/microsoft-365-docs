@@ -20,6 +20,9 @@ appliesto:
 
 Remediation means taking a proscribed action against a threat. Malicious mails sent into your organization may be cleaned up either by the system, through ZAP (Zero-hour Auto-Purge), or by the security teams through remediation actions like move to inbox, move to junk, move to deleted items folder, soft delete, or hard delete. Office Advanced Threat Protection (Office ATP) P2 / E5 offers security operations teams the ability to mediate threats in emails and collaboration issues through manual hunting and automated investigations.
 
+> [!NOTE]
+> Jump to an investigation article [here](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide).
+
 ## What you need to know before you begin
 
 > [!NOTE]
@@ -119,4 +122,4 @@ Remediation is a powerful tool to mitigate threats, and address suspicious, emai
 
 ## More info
 
-See [Investigate and remediate malicious email that was delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide).
+See [Investigate malicious email that was delivered in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide).
