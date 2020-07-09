@@ -110,7 +110,7 @@ When this sensitivity label is automatically applied, the user sees a notificati
 
 ### Configuring sensitive info types for a label
 
-When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personally identifiable information (PII), such as credit card numbers, social security numbers, or passport numbers:
+When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personal information, such as credit card numbers, social security numbers, or passport numbers:
 
 ![Sensitive info types for auto-labeling in Office apps](../media/sensitivity-labels-sensitive-info-types.png)
 
