@@ -145,8 +145,6 @@ In time, Identity Secure Score and the Graph API will adopt the new scoring mode
 * Block credential stealing from the Windows local security authority subsystem (lsass.exe)
 * Block Win32 API calls from Office macros
 
-
 ## We want to hear from you
 
 If you have any issues, please let us know by posting in the [Security, Privacy & Compliance](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) community. We're monitoring the community and will provide help.
-
