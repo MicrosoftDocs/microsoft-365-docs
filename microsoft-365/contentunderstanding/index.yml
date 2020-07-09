@@ -1,18 +1,18 @@
 ### YamlMime:Hub
 
-title: Content services admin center help # < 60 chars
-summary: Explore resources for admins and advanced user to get started with Project Cortex.
+title: Content services help (Preview) # < 60 chars
+summary: Explore resources for admins and advanced user to get started with Content Services (Preview).
 brand: m365
 
 metadata:
   title: Content services help # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Set up and manage Project Cortex. # Required; article description that is displayed in search results. < 160 chars.
+  description: Set up and manage content services. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: efrene #Required; your GitHub user alias, with correct capitalization.
   ms.author: efrene #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/08/2019 #Required; mm/dd/yyyy format.
+  ms.date: 07/08/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
   ms.custom: 
 
@@ -32,14 +32,14 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Get started # < 60 chars (optional)
+  title: Get started with Content Understanding # < 60 chars (optional)
   summary: Turn on, configure, and use Project Cortex. # < 160 chars (optional)
   items:
       # Card
-    - title: Set up Project Cortex
+    - title: Set up Content Understanding
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Learn how to turn on and configure Project Cortex.
-      url: set-up-project-cortex.md
+      url: set-up-content-understanding.md
     - title: Document Understanding overview
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       summary:  Build AI models to identify and classify content.
@@ -69,21 +69,35 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Overview # < 60 chars (optional)
-      summary: Learn about Microsoft Broadsight. # < 160 chars (optional)
+    - title: Get started with Knowledge Management # < 60 chars (optional)
+      summary: Learn about Knowledge Management. # < 160 chars (optional)
       items:
-        # Card
-        - title: Overview of Microsoft Broadsight
-          summary: Learn how Microsoft Broadsight works, key features, and business problems it can solve. 
-          url: what-is-microsoft-broadsight.md
-        # Card
-        - title: Microsoft Broadsight logical architecture
-          summary: See how Microsoft Broadsight interacts with other Microsoft apps and services. 
-          url: what-is-microsoft-broadsight.md
-        # Card
-        - title: How do I buy or try Microsoft Broadsight?
-          summary: Learn how to get Microsoft Broadsight.
-          url: what-is-microsoft-broadsight.md
+      # Card
+    - title: Set up Knowledge Management
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Learn how to set up Knowledge Management.
+      url: set-up-knowledge-network.md
+    - title: Knowledge Management overview
+      imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
+      summary:  Learn about Knowledge Management.
+      url: knowledge-management-overview.md
+    # Card
+    - title: Form Processing overview
+      imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
+      summary: Create models to process unstructured content.
+      url: form-processing-overview.md
+    # Card
+    - title: Create a classifier model
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
+      summary: Create and train a classifier model.
+      url: create-a-classifier.md
+    # Card
+    - title: Create an extractor
+      imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
+      summary: Learn how to create an extractor for your content understanding model.
+      url: create-a-classifier.md
+    # Card
 
 
 # additionalContent section (optional)
