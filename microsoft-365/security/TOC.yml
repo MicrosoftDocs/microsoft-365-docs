@@ -413,8 +413,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Investigate and remediate malicious email
+            - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Remediate malicious email
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: View and read your ATP reports
               href: ./office-365-security/view-reports-for-atp.md
             - name: Understanding latest attacks with threat analytics
