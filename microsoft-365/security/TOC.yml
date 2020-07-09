@@ -191,6 +191,10 @@
               items: 
                 - name: Secure Score overview
                   href: mtp/microsoft-secure-score.md
+                - name: Gain visibility into your security posture
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: Track your score history and meet goals
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: What's coming
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
