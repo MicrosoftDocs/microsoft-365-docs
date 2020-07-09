@@ -1,12 +1,12 @@
 ### YamlMime:Hub
 
-title: Content services help (Preview) # < 60 chars
-summary: Explore resources for admins and advanced user to get started with Content Services (Preview).
+title: Knowledge Management help (Preview) # < 60 chars
+summary: Explore resources for admins and advanced user to get started with Knowledge Management (Preview).
 brand: m365
 
 metadata:
-  title: Content services help # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Set up and manage content services. # Required; article description that is displayed in search results. < 160 chars.
+  title: Knowledge Management help # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Set up and manage Knowledge Management. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
@@ -22,78 +22,62 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Apply a published model
+    - title: Set up Knowledge Management
       itemType: whats-new
-      url: apply-a-model.md
-    # Card
-    - title: Create a Form Processing model
-      itemType: whats-new
-      url: create-a-form-processing-model.md
+      url: set-up-knowledge-network.md
+
 
 # productDirectory section (optional)
 productDirectory:
-  title: Get started with Content Understanding # < 60 chars (optional)
-  summary: Turn on, configure, and use Project Cortex. # < 160 chars (optional)
+  title: Get started with Knowledge Management  # < 60 chars (optional)
+  summary: Learn about Knowledge Management. # < 160 chars (optional)
   items:
       # Card
-    - title: Set up Content Understanding
+    - title: Set up Knowledge Management
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Learn how to turn on and configure Project Cortex.
-      url: set-up-content-understanding.md
-    - title: Document Understanding overview
+      url: set-up-knowledge-network.md
+    - title: Knowledge Management overview
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       summary:  Build AI models to identify and classify content.
-      url: document-understanding-overview.md
+      url: knowledge-management-overview.md
     # Card
-    - title: Form Processing overview
+    - title: Plan for Knowledge Management
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Create models to process unstructured content.
-      url: form-processing-overview.md
+      url: plan-for-knowledge-management.md
     # Card
-    - title: Create a classifier model
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
-      summary: Create and train a classifier model.
-      url: create-a-classifier.md
-    # Card
-    - title: Create an extractor
-      imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
-      summary: Learn how to create an extractor for your content understanding model.
-      url: create-a-classifier.md
-    # Card
-
-
 
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Get started with Knowledge Management # < 60 chars (optional)
-      summary: Learn about Knowledge Management. # < 160 chars (optional)
+    - title: Driving Adoption # < 60 chars (optional)
+      summary: Learn about driving adoption of Knowledge Management in your business. # < 160 chars (optional)
       items:
       # Card
-    - title: Set up Knowledge Management
+    - title: Article Name
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Learn how to set up Knowledge Management.
       url: set-up-knowledge-network.md
-    - title: Knowledge Management overview
+    - title: Article Name
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
       summary:  Learn about Knowledge Management.
       url: knowledge-management-overview.md
     # Card
-    - title: Form Processing overview
+    - title: Article Name
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Create models to process unstructured content.
       url: form-processing-overview.md
     # Card
-    - title: Create a classifier model
+    - title: Article Name
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/sign-up-blue.svg
       summary: Create and train a classifier model.
       url: create-a-classifier.md
     # Card
-    - title: Create an extractor
+    - title: Article Name
       imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
       summary: Learn how to create an extractor for your content understanding model.
       url: create-a-classifier.md

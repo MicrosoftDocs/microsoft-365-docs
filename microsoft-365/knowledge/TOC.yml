@@ -1,8 +1,8 @@
-- name: Project Cortex help
+- name: Knowledge Management  help
   href: what-is-project-cortex.md
   items: 
 
-    - name: Get started 
+    - name: Get started with Knowledge Management
       items: 
         - name: Plan for Knowledge Management 
           href: .md
@@ -17,15 +17,22 @@
         - name: How to add or remove people from accessing a topic
           href: .md 
 
-    - name: Adoption
+    
+    - name: Get started with setup
+      items:
+
+        - name: Set up Knowledge Management
+          href: set-up-knowledge-network.md
+    
+    - name: Drive adoption
       items: 
-        - name: 
+        - name: article title
           href: .md
-        - name: 
+        - name: article title
           href: .md 
-        - name: 
+        - name: article title
           href: .md   
-        - name: 
+        - name: article title
           href: .md 
         - name: 
           href: .md 

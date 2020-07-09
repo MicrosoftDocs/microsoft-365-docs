@@ -1,11 +1,11 @@
 ### YamlMime:Hub
 
-title: Content services help (Preview) # < 60 chars
-summary: Explore resources for admins and advanced user to get started with Content Services (Preview).
+title: Content Understanding help (Preview) # < 60 chars
+summary: Explore resources for admins and advanced user to get started with Content Understanding (Preview).
 brand: m365
 
 metadata:
-  title: Content services help # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Content Understanding help # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Set up and manage content services. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: O365-administration #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.prod: microsoft-365-business #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -38,7 +38,7 @@ productDirectory:
       # Card
     - title: Set up Content Understanding
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary: Learn how to turn on and configure Project Cortex.
+      summary: Learn how to set up and configure Content Understanding.
       url: set-up-content-understanding.md
     - title: Document Understanding overview
       imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
@@ -69,8 +69,8 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Get started with Knowledge Management # < 60 chars (optional)
-      summary: Learn about Knowledge Management. # < 160 chars (optional)
+    - title: Driving Adoption # < 60 chars (optional)
+      summary: Learn about driving adoption of Content Understanding in your business. # < 160 chars (optional)
       items:
       # Card
     - title: Set up Knowledge Management

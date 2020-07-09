@@ -22,8 +22,18 @@
     - name: Get started with setup
       items:
 
-        - name: Set up Project Cortex
-          href: set-up-project-cortex.md
+        - name: Set up Content Understanding
+          href: set-up-content-understanding.md
+
+    - name: Drive adoption
+      items:
+
+        - name: article title
+          href: set-up-content-understanding.md
+        - name: article title
+          href: set-up-content-understanding.md
+        - name: article title
+          href: set-up-content-understanding.md
 
     - name: Training videos
       items: 
