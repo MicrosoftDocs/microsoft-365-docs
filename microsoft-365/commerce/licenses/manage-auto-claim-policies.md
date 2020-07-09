@@ -143,7 +143,7 @@ new users can receive licenses for that product.
 2. Select the policy that you want to edit.
 3. In the details pane, at the bottom, select **Remove a product**.
 4. In the **Remove a product from the policy** pane, select the box for the policy that you want to remove, then select **Save**.
-5. Select **Save** to close the details pane.
+5. Close the details pane.
 
 ## Change the assigning apps and services
 
@@ -155,10 +155,9 @@ license to that product.
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
 2. Select the policy that you want to edit.
 3. In the details pane, under **Apps and services**, select **Edit**.
-4. In the **Apps and services** pane, from the **Product** drop-down, select a single product, or select **All**.
+4. In the **Apps and services** pane, from the **Product** drop-down, select a single product, or select **All products**.
 5. Check or clear the boxes for apps and services that you want users to have or not have access to.
-6. When you're finished, select **Save.**
-7. Select **Save** to close the details pane.
+6. When you're finished, select **Save**, then close the details pane.
 
 ## Change the assigning order for backup products
 
@@ -175,8 +174,8 @@ to the app.
 ## View an auto-claim policy report
 
 1. In the admin center, go to the **Billing** \> **Licenses** page, then select the <a href="https://go.microsoft.com/fwlink/p/?linkid=2134398" target="_blank">Auto-claim policy</a> tab.
-2. Select **View report**. The **Auto-claim policy report** page lists all licenses assigned from each policy in the last 90 days.
-3. To change the date range, select the **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
+2. Select **View report**. The **Auto-claim policy report** page lists all licenses assigned from each policy in the last 90 days. By default, the page shows the past 90 days.
+3. To change the time period shown, select the **Past 30 days** drop-down list. You can view reports for the past 1, 7, 30, and 90 days.
 
 ## Next steps
 
