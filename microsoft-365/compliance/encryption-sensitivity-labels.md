@@ -120,6 +120,8 @@ Use the following options to control who can access email or documents to which 
 
 2. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
 
+3. **Use Double Key Encryption** for the documents and emails that this label encrypts, rather than the default root key for your tenant. This feature is currently in public preview. For more information, see [Double Key Encryption (DKE) (public preview)](double-key-encryption.md).
+
 Settings for access control for encrypted content:
 
 ![Settings for admin defined permissions](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
