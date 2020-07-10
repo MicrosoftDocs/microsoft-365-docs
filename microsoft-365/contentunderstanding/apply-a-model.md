@@ -14,7 +14,8 @@ description: "Learn how to apply a published model to a SharePoint document libr
 
 # Apply a model (Preview)
 
-> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 After publishing your content understanding model, you can apply it to a SharePoint document library in your Microsoft 365 tenant.
 
