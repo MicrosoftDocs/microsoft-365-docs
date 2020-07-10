@@ -49,7 +49,9 @@ It can take up to 24 hours for an add-in to show up for all users. It can take t
 
 For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
 
-For more information about managing user access, see </br>[Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) and </br>[Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help).
+For more information about managing user access, see:
+ - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins?  
 
@@ -59,7 +61,7 @@ Yes. Centralized Deployment provides admins the flexibility to choose one of thr
 The add-in is deployed automatically to the assigned users, and they cannot remove it.  
  
 **Available**
-Users can install the add-in in Outlook by choosing Home > Get More add-ins > Admin-managed.   
+Users can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.
  
 **Optional**
 The add-in is deployed automatically to the assigned users, but they can choose to remove it.  
