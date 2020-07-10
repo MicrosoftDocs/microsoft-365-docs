@@ -36,7 +36,7 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
  
  **For Word, Excel, PowerPoint, and Project**: 
 
-|||
+|test|test|
 |:-----|:-----|
 |**Platform** <br/> |**Build number** <br/> |
 |Microsoft 365 Apps for enterprise (Current Channel)  <br/> |9001.2138   <br/> |
@@ -48,7 +48,7 @@ To be GDPR compliant for minors you need to ensure that one of following builds 
    
  **For Outlook**: 
   
-|||
+|test|test|
 |:-----|:-----|
 |**Platform** <br/> |**Build number** <br/> |
 |Outlook 2016 for Windows (MSI)  <br/> |Build No TBD  <br/> |
