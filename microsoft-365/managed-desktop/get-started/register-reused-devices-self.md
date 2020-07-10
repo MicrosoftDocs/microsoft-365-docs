@@ -119,7 +119,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 > [!IMPORTANT]
 > The query in Configuration Manager doesn’t allow spaces in exported column names; that's why the steps had you enter "Serial_Number" and "HardwareHash." Now that you have the exported CSV file, you must edit the report headers to read *Serial Number* and *Hardware Hash* as shown here before you proceed with device registration.
 
-Now you can proceed to [Register devices by using the Admin Portal](#register-devices-by-using-the-azure-portal).
+Now you can proceed to [Register devices by using the Admin Portal](managed-desktop/get-started/register-reused-devices-self.md#register-devices-by-using-the-admin-portal).
 
 
 #### Active Directory PowerShell script method
