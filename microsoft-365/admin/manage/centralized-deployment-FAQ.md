@@ -31,7 +31,7 @@ Centralized deployment of add-ins requires that users are using Microsoft 365 Ap
  
 Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
  
-You can use the [Office 365 Centralized Deployment Compatibility Checker](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
+You can use the [Centralized Deployment Compatibility Checker](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
   
 ## How do you target add-in user assignments with Centralized Deployment?  
 
@@ -49,7 +49,7 @@ It can take up to 24 hours for an add-in to show up for all users. It can take t
 
 For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
 
-For more information about managing user access, see </br>[Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) and </br>[Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+For more information about managing user access, see </br>[Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) and </br>[Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help).
 
 ## Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins?  
 
