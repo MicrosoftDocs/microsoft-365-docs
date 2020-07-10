@@ -132,5 +132,5 @@ Remediation is a powerful tool to mitigate threats, and address suspicious, emai
 
 ## More info
 
-See https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide
+See [Investigate malicious email](https://docs.microsoft.com/microsoft-365/security/office-365-security/investigate-malicious-email-that-was-delivered?view=o365-worldwide)
 
