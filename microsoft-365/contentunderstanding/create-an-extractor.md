@@ -13,7 +13,8 @@ description: "Learn how to create an extractor"
 ---
 
 # Create an extractor (Preview)
-> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 (Add **Create an Extractor** video here when available.)
 
