@@ -224,7 +224,7 @@
            href: manage/centralized-deployment-of-add-ins.md
          - name: Deploy add-ins in the admin center 
            href: manage/manage-deployment-of-add-ins.md
-           name: Manage add-ins in the admin center 
+         - name: Manage add-ins in the admin center 
            href: manage/manage-addins-in-the-admin-center.md
          - name: Centralized Deployment FAQ
            href: manage/centralized-deployment-faq.md
