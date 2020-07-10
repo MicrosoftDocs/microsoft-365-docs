@@ -23,7 +23,7 @@ Remediation means taking a proscribed action against a threat. Malicious mails s
 > [!NOTE]
 > For security teams to remediate emails, they need to have search and purge role assigned to them. Role assignment is done through permissions in security and compliance center. 
 
-# What you need to know before you begin
+## What you need to know before you begin
 
 To perform certain actions, such as viewing message headers or downloading email message content, you must have a new role called *Preview* added to another appropriate role group. The following table clarifies required roles and permissions.
 
