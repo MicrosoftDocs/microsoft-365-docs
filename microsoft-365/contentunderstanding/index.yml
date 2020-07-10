@@ -33,7 +33,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Get started with Content Understanding # < 60 chars (optional)
-  summary: Turn on, configure, and use Project Cortex. # < 160 chars (optional)
+  summary: Turn on, configure, and use Content Understanding. # < 160 chars (optional)
   items:
       # Card
     - title: Set up Content Understanding
@@ -58,7 +58,7 @@ productDirectory:
     # Card
     - title: Create an extractor
       imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
-      summary: Learn how to create an extractor for your content understanding model.
+      summary: Learn how to create an extractor for your Content Understanding model.
       url: create-a-classifier.md
     # Card
 

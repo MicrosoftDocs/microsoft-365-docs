@@ -64,7 +64,7 @@ For our example, we are going to create an explanation that provides a hint abou
 
 To help identify the *Service Start Date* you can create a pattern explanation.
 
-1. In the Explanation section, select **New**, and then type a name (for example, *Prefix String*).
+1. In the Explanation section, select **New**, and then type a name (for example, *Date*).
 2. For the Type, select **Pattern list**.
 3. For the value, you need to provide the date variation as they appear in the sample files. For example, if you have date formats that appear as 0/00/0000, you would enter any variations that might appear in your documents, such as:
     - 0/0/0000
