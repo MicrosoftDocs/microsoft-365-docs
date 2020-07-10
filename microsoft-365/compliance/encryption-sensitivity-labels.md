@@ -120,8 +120,6 @@ Use the following options to control who can access email or documents to which 
 
 - **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
 
-- **Use Double Key Encryption** for the documents and emails that this label encrypts, rather than the default [root key for your tenant](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key). This feature is currently in public preview. For more information, see [Double Key Encryption (DKE) (public preview)](double-key-encryption.md).
-
 Settings for access control for encrypted content:
 
 ![Settings for admin defined permissions](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
@@ -204,6 +202,15 @@ The Rights Management issuer is always granted Full Control permissions for the 
 - The Rights Management issuer can still open a document after it is revoked.
 
 For more information, see [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+### Double Key Encryption
+
+This feature is currently in public preview.
+
+Select this option only after you have configured the Double Key Encryption service and you need to use this key for the documents and emails that this label encrypts, rather than use the default [root key for your tenant](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
+
+For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE) (public preview)](double-key-encryption.md)
+
 
 ## Let users assign permissions
 
