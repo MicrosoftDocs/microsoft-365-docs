@@ -101,19 +101,19 @@ Using the Centralized Deployment Compatibility Checker, you can verify whether t
     
 2. Run the following command:
 
-```powershell
-Import-Module O365CompatibilityChecker
-```
+   ```powershell
+   Import-Module O365CompatibilityChecker
+   ```
     
 3. Run the **Invoke-CompatabilityCheck** command:
 
-```powershell
-Invoke-CompatibilityCheck
-```
-   which prompts you for  *_TenantDomain_* (for example, *TailspinToysIncorporated.onmicrosoft.</span>com*) and  *_TenantAdmin_* credentials (use your global admin credentials), and then requests consent.
+   ```powershell
+   Invoke-CompatibilityCheck
+   ```
+   This command prompts you for  *_TenantDomain_* (for example, *TailspinToysIncorporated.onmicrosoft.</span>com*) and  *_TenantAdmin_* credentials (use your global admin credentials), and then requests consent.
     
-> [!NOTE]
-> Depending on the number of users in your tenant, the checker could complete in minutes or hours. 
+   > [!NOTE]
+   > Depending on the number of users in your tenant, the checker could complete in minutes or hours. 
   
 When the tool finishes running, it produces an output file in comma-separated (.csv) format. The file is saved to **C:\windows\system32** by default. The output file contains the following information:
   
