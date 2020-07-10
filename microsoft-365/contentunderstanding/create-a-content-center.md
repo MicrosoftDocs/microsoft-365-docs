@@ -14,13 +14,16 @@ description: "Learn how to create a content center."
 
 # Create a content center (Preview)
 
-> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 (Add **Create a Content Center** video here)
 
-To create and manage document understanding models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied.
+To create and manage document understanding models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied.</br>
 
-An initial content center is created during setup, but a SharePoint admin can choose to create additional ones as needed.
+   ![Select a doc library](../media/content-understanding/content-center-page.png)</br>
+
+An initial content center is created during [setup](set-up-content-understanding), but a SharePoint admin can choose to create additional ones as needed.
 
 A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) - through a site template.
 
