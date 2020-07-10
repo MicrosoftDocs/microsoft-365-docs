@@ -116,11 +116,11 @@ Choosing whether to assign permissions now or let users assign permissions:
 
 Use the following options to control who can access email or documents to which this label is applied. You can:
 
-1. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won't be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
+- **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won't be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
 
-2. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
+- **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
 
-3. **Use Double Key Encryption** for the documents and emails that this label encrypts, rather than the default root key for your tenant. This feature is currently in public preview. For more information, see [Double Key Encryption (DKE) (public preview)](double-key-encryption.md).
+- **Use Double Key Encryption** for the documents and emails that this label encrypts, rather than the default [root key for your tenant](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key). This feature is currently in public preview. For more information, see [Double Key Encryption (DKE) (public preview)](double-key-encryption.md).
 
 Settings for access control for encrypted content:
 
