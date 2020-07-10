@@ -17,7 +17,8 @@
           href: apply-a-model.md
         - name: Create a Form Processing model 
           href: create-a-form-processing-model.md
- 
+        - name: Difference between a document understanding and form processing models 
+          href: difference-between-document-understanding-and-form-processing-model.md 
 
     - name: Get started with setup
       items:
