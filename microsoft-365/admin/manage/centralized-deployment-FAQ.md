@@ -30,7 +30,7 @@ Centralized Deployment is the recommended way for an Office 365 admin to deploy 
 Centralized deployment of add-ins requires that users are using Microsoft 365 Apps for enterprise (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory.  
  
 Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
- 
+
 You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
   
 ## How do you target add-in user assignments with Centralized Deployment?  
@@ -49,7 +49,9 @@ It can take up to 24 hours for an add-in to show up for all users. It can take t
 
 For easy deployment of add-ins to users, groups, or to your entire organization, we recommend administrators use Centralized Deployment.
 
-For more information about managing user access, see </br>[Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook) and </br>[Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins?redirectedfrom=MSDN).
+For more information about managing user access, see:
+ - [Prevent add-in downloads by turning off the Office Store across all clients (Except Outlook)](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook)
+ - [Specify the administrators and users who can install and manage add-ins for Outlook](https://docs.microsoft.com/Exchange/specify-who-can-install-and-manage-add-ins-2013-help)
 
 ## Will Centralized Deployment provide admins the flexibility to choose the deployment method for Outlook add-ins?  
 
@@ -59,7 +61,7 @@ Yes. Centralized Deployment provides admins the flexibility to choose one of thr
 The add-in is deployed automatically to the assigned users, and they cannot remove it.  
  
 **Available**
-Users can install the add-in in Outlook by choosing Home > Get More add-ins > Admin-managed.   
+Users can install the add-in in Outlook by choosing **Home > Get More add-ins > Admin-managed**.
  
 **Optional**
 The add-in is deployed automatically to the assigned users, but they can choose to remove it.  
@@ -68,19 +70,19 @@ The add-in is deployed automatically to the assigned users, but they can choose 
 
 Yes. Admins can upload a new manifest file to support metadata changes for admin-deployed LOB add-ins. The add-in updates the next time the Office applications starts. The web application can change at any time.  
  
-For more information, see [line-of-business add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#security-of-office-add-ins).  
+For more information, see [line-of-business add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#more-about-office-add-ins-security).  
 
 ## Can admins turn off add-ins?  
 
 Yes. Admins can turn on or off the add-ins they deploy for all users from the Microsoft admin center.
 
-For more information, see [Add-in states](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#add-in-states).  
+For more information, see [Add-in states](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#add-in-states).  
 
 ##  Can admins delete or remove add-ins?
 
 Yes. Admins can delete add-ins they deployed for all users from the Microsoft admin center.
 
-For more information, see [Delete the add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins?view=o365-worldwide#delete-the-add-in). 
+For more information, see [Delete an add-in](https://docs.microsoft.com/microsoft-365/admin/manage/manage-addins-in-the-admin-center#delete-an-add-in). 
   
 ## Can admins deploy paid add-ins from the Office Store using Centralized Deployment? 
 
