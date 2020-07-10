@@ -16,14 +16,40 @@ ms.localizationpriority: normal
 
 This article lists new and updated articles in the [Microsoft Managed Desktop documentation](index.yml). "Updated" articles are those which have had material additions or corrections--minor fixes such as correction of typos, style, or formatting issues are not listed. You can always view the history of specific commits (including details of any changes) by visiting the [repo on GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
 
+## June 2020
+New or changed article | Description
+--- | ---
+[New Microsoft Edge app](get-started/edge-browser-app.md) | New article
+[Device configuration](service-description/device-policies.md) | Updated article
+
+
+
+## May 2020
+New or changed article | Description
+--- | ---
+[Getting help for end users](working-with-managed-desktop/end-user-support.md) | Updated article
+[Steps for Partners to register devices](get-started/register-devices-partner.md) | Updated article
+[Microsoft Managed Desktop devices](service-description/device-list.md) | Updated article
+[Register new devices yourself](get-started/register-devices-self.md) | Updated article
+
+
+
+
+
+## April 2020
+New or changed article | Description
+--- | ---
+[Compliance](intro/compliance.md) | New article
+[Microsoft Managed Desktop supported regions and languages](service-description/regions-languages.md) | Updated article
+
+
+
 ## March 2020
 New or changed article | Description
 --- | ---
 [Steps for Partners to register devices](get-started/register-devices-partner.md)| Updated article
 [Register new devices yourself](get-started/register-devices-self.md) | Updated article
 [Prepare printing resources for Microsoft Managed Desktop](get-ready/printing.md) | New article
-
-
 
 
 ## February 2020
