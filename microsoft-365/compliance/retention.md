@@ -254,7 +254,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Declare item as a record| No | Yes |
 |Event-based retention | No | Yes |
 |Disposition review | No| Yes |
-|Proof of disposition | No |Yes, when item is declared a record|
+|Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
 Note that you can use both retention policies and retention labels as complementary retention methods. For example:

@@ -191,6 +191,10 @@
               items: 
                 - name: Secure Score overview
                   href: mtp/microsoft-secure-score.md
+                - name: Gain visibility into your security posture
+                  href: mtp/microsoft-secure-score-improvement-actions.md
+                - name: Track your score history and meet goals
+                  href: mtp/microsoft-secure-score-history-metrics-trends.md
                 - name: What's coming
                   href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
@@ -215,8 +219,12 @@
               href: mtp/device-profile.md
             - name: Provide feedback
               href: mtp/feedback.md
-            - name: Manage tickets through ServiceNow
-              href: ./mtp/tickets.md
+            - name: Create ServiceNow tickets and tasks
+              items:
+                - name: ServiceNow integration overview 
+                  href: ./mtp/tickets.md
+                - name: ServiceNow tickets in the security center
+                  href: ./mtp/tickets-security-center.md
 
 
     - name: Office 365 security
@@ -409,8 +417,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Investigate and remediate malicious email
+            - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Remediate malicious email
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: View and read your ATP reports
               href: ./office-365-security/view-reports-for-atp.md
             - name: Understanding latest attacks with threat analytics

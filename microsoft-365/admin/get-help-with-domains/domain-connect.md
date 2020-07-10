@@ -49,6 +49,6 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 
 ## What happens to my email and website?
 
-After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Office 365 for everyone who gets email on your domain!
+After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!
   
 If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.
