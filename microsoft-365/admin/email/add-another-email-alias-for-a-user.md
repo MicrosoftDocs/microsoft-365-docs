@@ -69,12 +69,12 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
 5. When you're done, choose **Save changes**.
     
-6. Wait 24 hours for the new aliases to populate throughout Office 365.
+6. Wait 24 hours for the new aliases to populate throughout Microsoft 365.
     
     The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
     
@@ -95,17 +95,17 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > [!Important] 
     > If you get the error message "**A parameter cannot be found that matches parameter name 'EmailAddresses**," it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
 
-4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Office 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
+4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
 
     > [!IMPORTANT]
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. When you're done, select **Save**.
 
-6. Wait 24 hours for the new aliases to populate throughout Office 365. 
+6. Wait 24 hours for the new aliases to populate throughout Microsoft 365. 
     
     The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
     
@@ -126,17 +126,17 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > [!Important] 
     > If you get the error message "**A parameter cannot be found that matches parameter name 'EmailAddresses**," it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
 
-4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Office 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
+4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
 
     > [!IMPORTANT]
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. When you're done, select **Save**.
 
-6. Wait 24 hours for the new aliases to populate throughout Office 365. 
+6. Wait 24 hours for the new aliases to populate throughout Microsoft 365. 
     
     The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
     
