@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity score"
+title: "Microsoft Productivity Score"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of Microsoft productivity score."
 ---
 
-# Microsoft Productivity score (Preview)
+# Microsoft Productivity Score (Preview)
 
 Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours.
 
@@ -84,7 +84,7 @@ You can access the experience from Microsoft 365 Admin home under **Reports** > 
 
 The Productivity Score home page shows your total score and score history as well as the primary insight for each category
 
-![Productivity score home page](../../media/pslanding.png)
+![Productivity Score home page](../../media/pslanding.png)
 
 **Your score** is shown as a percent value as well as in points so you can see your points (numerator) and maximum possible points (denominator).
 
@@ -140,7 +140,7 @@ This report helps business leaders understand:
 
 - The impact on work-life balance as people adjust to working from home. 
 
-- If people are using meetings effectively, and how they are 
+- If remote meetings support effective decision-making.
 
 [Learn more about the Business continuity report](https://aka.ms/bcrps)
 
