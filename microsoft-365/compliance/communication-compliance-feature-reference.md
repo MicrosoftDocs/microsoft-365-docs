@@ -87,8 +87,8 @@ You must file a request with Microsoft Support to enable your organization to us
 - **Third-party sources**: You can scan communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [LinkedIn](archive-linkedin-data.md)
-    - [Custom data connector](archiving-third-party-data.md)
+    - [Bloomberg Message](archive-bloomberg-message-data.md)
+    - [ICE Chat](archive-icechat-data.md)
 
 You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
 
