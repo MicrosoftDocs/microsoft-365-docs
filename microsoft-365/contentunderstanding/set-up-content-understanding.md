@@ -14,7 +14,8 @@ localization_priority: Normal
 ---
 # Set up Content Understanding (Preview)
 
-> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 Admins can use the Microsoft 365 admin center to set up and configure Content Understanding. 
 
@@ -41,7 +42,8 @@ You must have Global Admin permissions to be able to access the Microsoft 365 ad
     b. The **Site address** will show the URL for your site, based on what you selected for the site name.
     c. For **Primary administrator**, type the user who will own and manage this site.
     d. For **Language**, select the language that you want the site to display in.  
-    > [!Note] While you can select any supported language, not that content understanding models will can only be created for English.
+    > [!Note] 
+    > While you can select any supported language, not that content understanding models will can only be created for English.
     Select **Next**.
 6. On the **Finish and review** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Apply settings**.
 7. The **Content understanding settings applied** page will display, confirming that the system has added your form processing preferences and creating the Content Center site. Select **Done**.
