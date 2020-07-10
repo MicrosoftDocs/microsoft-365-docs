@@ -139,12 +139,8 @@ Why might your domain's zone file be somewhere besides at your domain registrar?
 
 ::: moniker-end
 
-> [!NOTE]
-> If you set up your domain in Microsoft 365 so that [Microsoft sets up and manages your DNS records](../setup/domains-faq.md#how-does-office-365-manage-my-dns-records) for you, then as part of setup, you'll [Change DNS management to Microsoft 365](../setup/domains-faq.md#change-dns-management-to-office-365). 
- 
-
 ::: moniker range="o365-worldwide"
-## Why add a domain in Office 365?
+## Why add a domain in Microsoft 365?
 
 
 Adding a custom domain, like fourthcoffee.com, to Microsoft 365 lets you use a shorter, more familiar email address and userID with the service. You're [given a domain to use](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) when you sign up for a Microsoft 365 account, but it includes "onmicrosoft.com." Many people prefer to add their organization or business domain if they plan to use Microsoft 365 for email. 

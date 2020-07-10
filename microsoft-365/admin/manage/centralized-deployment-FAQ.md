@@ -30,8 +30,8 @@ Centralized Deployment is the recommended way for an Office 365 admin to deploy 
 Centralized deployment of add-ins requires that users are using Microsoft 365 Apps for enterprise (and are signed into Office using their organizational log-in credentials) and have Exchange Online mailboxes. Your subscription directory must either be in, or federated to, Azure Active Directory.  
  
 Centralized Deployment is only supported for online mailboxes. It does not support deployment to on-premises Exchange mailboxes.
- 
-You can use the [Centralized Deployment Compatibility Checker](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins?view=o365-worldwide#office-365-centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
+
+You can use the [Centralized Deployment Compatibility Checker](centralized-deployment-of-add-ins.md#centralized-deployment-compatibility-checker) to determine if your subscription is eligible. 
   
 ## How do you target add-in user assignments with Centralized Deployment?  
 
