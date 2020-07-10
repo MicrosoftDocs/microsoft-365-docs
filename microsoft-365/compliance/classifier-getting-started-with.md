@@ -51,6 +51,10 @@ Sensitivity labels can use built-in and build-your-own classifiers as conditions
 
 Trainable classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
 
+### Gov Cloud Availability 
+
+Trainable Classifiers are not yet available in government cloud environments. We are currently in the process of expanding support for GCC/GCCH/DoD clouds.  
+
 ### Pre-requisites
 
 To access trainable classifiers in the UI: 
