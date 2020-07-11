@@ -51,7 +51,7 @@ When you select either of the Teams locations when you create a retention policy
 - [Instructions for a retention policy for locations other than Teams](#retention-policy-for-locations-other-than-teams)
 
 
-When you have more than one retention policy, and when you also use retention labels, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence).
+When you have more than one retention policy, and when you also use retention labels, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence) to understand the outcome.
 
 ### Retention policy for Teams locations
 
