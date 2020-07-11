@@ -130,14 +130,7 @@ We're continuously working on optimizing retention functionality in Teams. In th
     
     - When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
-## How to configure a retention policy for Microsoft Teams
 
-Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select the following options:
+## Configuration guidance
 
-- **Let me choose specific locations** > **Teams channel messages** and **Teams chats**
-
-A retention policy that applies to Teams can use [Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements), which might be required for regulatory reasons.
-
-## Related information
-
-[Retention policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)
+If you're ready to configure retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).

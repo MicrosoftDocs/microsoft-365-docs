@@ -23,9 +23,11 @@ description: "Use a retention policy to decide proactively whether to retain con
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content. A retention policy lets you do this very efficiently by assigning the same retention settings for content by location, at a site or mailbox level. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
+Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content. 
 
-For full information about how retention works, see [Learn about retention](retention.md).
+A retention policy lets you do this very efficiently by assigning the same retention settings for content by location, at a site or mailbox level. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
+
+For more information about retention policies and how retention works, see [Learn about retention](retention.md).
 
 ## Before you begin
 
