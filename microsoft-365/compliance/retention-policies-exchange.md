@@ -62,13 +62,3 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 ## When a user leaves the organization 
 
 If a user leaves your organization and the user's mailbox is included in a retention policy, the mailbox becomes an inactive mailbox when the user's Microsoft 365 account is deleted. The contents of an inactive mailbox are still subject to any retention policy that was placed on the mailbox before it was made inactive, and the contents are available to an eDiscovery search. For more information, see [Inactive mailboxes in Exchange Online](inactive-mailboxes-in-office-365.md). 
-
-## How to configure a retention policy for Exchange
-
-Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations**  page of the wizard, select one of the following options:
-
-- **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
-
-- **Let me choose specific locations** > **Exchange email**, **Exchange public folders**, and **Office 365 groups**.
-
-Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Office 365 groups** location.

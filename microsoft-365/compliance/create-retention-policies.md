@@ -23,37 +23,80 @@ description: "Use a retention policy to decide proactively whether to retain con
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content. 
+Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content. A retention policy lets you do this very efficiently by assigning the same retention settings for content by location, at a site or mailbox level. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
 
-For information about how retention policies work, see [Learn about retention policies](retention.md).
+For full information about how retention works, see [Learn about retention](retention.md).
 
 ## Before you begin
 
-The global admin for your organization has full permissions to create and edit retention labels and their policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
+The global admin for your organization has full permissions to create and edit retention policies. If you aren't signing in as a global admin, see [Permissions required to create and manage retention policies and retention labels](get-started-with-retention.md#permissions-required-to-create-and-manage-retention-policies-and-retention-labels).
 
 ## Create and configure a retention policy
 
+Although a retention policy can support multiple locations, you can't create a single retention policy that includes all the supported locations:
+- Exchange email
+- SharePoint site
+- OneDrive accounts
+- Microsoft 365 groups
+- Skype for Business
+- Exchange public folders
+- Teams channel messages
+- Teams chats
+
+When you select either of the Teams locations when you create a retention policy, the other locations are automatically excluded. Therefore, the instructions to follow depend on whether you need to include the Teams locations:
+
+- [Instructions for a retention policy for Teams locations](#retention-policy-for-teams-locations)
+- [Instructions for a retention policy for locations other than Teams](#retention-policy-for-locations-other-than-teams)
+
+
+When you have more than one retention policy, and when you also use retention labels, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence).
+
+### Retention policy for Teams locations
+
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
 
-2. Select **New retention policy** or edit an exiting retention policy.
+2. Select **New retention policy** to create a new retention policy.
 
-3. For **Settings**, first specify the configuration options for retaining and deleting content. You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page:
+3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
+    
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
+    
+    Do not select **Use advanced retention settings** because this option isn't supported for Teams locations. 
+
+4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Teams: **Teams channel message** and **Teams chats**.
+     
+    For **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
+    
+    By default, all teams are selected, but you can refine this by specifying teams to be included, or teams to be excluded.
+
+5. Complete the wizard to save your settings.
+
+For additional information about retention policies for Teams, see [Retention policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies) from the Teams documentation.
+
+### Retention policy for locations other than Teams
+
+1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
+
+2. Select **New retention policy** to create a new retention policy.
+
+3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
+    
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
     
     Then, decide whether the retention policy should apply to all content, or content that meets specific conditions. For more information about these advanced retention settings, see [Advanced settings to identify content that meets specific conditions](#advanced-settings-to-identify-content-that-meets-specific-conditions) on this page. 
 
 4. For the **Choose locations** page, select whether the retention policy should apply to all supported locations across your organization, or you want to specify the locations. If you choose specific locations, you can also specify includes and excludes. 
     
-    For Microsoft Teams: 
-    - You must select the option to choose specific locations if you want to delete or retain Teams channel messages or Team chats. When you select either of these options as locations, the other locations are automatically excluded because a retention policy that includes this Teams data can't include other locations. 
-    - Note that for **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
-    
     For more information about choosing between a retention policy for the organization or for specific locations, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
     
-    For information specific to **Office 365 groups** and **Skype for Business**, see the following sections, [Configuration information for Microsoft 365 groups](#configuration-information-for-microsoft-365-groups) and [Configuration information for Skype for Business](#configuration-information-for-skype-for-business).
+    Information specific to locations:
+    - [Exchange email and Exchange public folders](#configuration-information-for-exchange-email-and-exchange-public-folders)
+    - [SharePoint sites and OneDrive accounts](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
+    - [Office 365 groups](#configuration-information-for-microsoft-365-groups)
+    - [Skype for Business](#configuration-information-for-skype-for-business)
 
 5. Complete the wizard to save your settings.
 
-When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence)
 
 #### Configuration information for Exchange email and Exchange public folders
 
@@ -61,11 +104,27 @@ The **Exchange email** location supports retention for users' email, calendar, a
 
 The following mail items are included: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items that don't have an end date are not included. Other items stored in a mailbox, such as Skype and Teams saved messages, aren't included with this location. These items have their own retention locations.
 
+Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. To retain content in these mailboxes, select the **Office 365 groups** location.
+
 The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
+
+#### Configuration information for SharePoint sites and OneDrive accounts
+
+When you choose the **SharePoint sites** location, the retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** location that applies to content in the group's mailbox, site, and files.
+
+When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites must be indexed and the sites that you specify are checked that they exist at the end of the wizard.
+
+If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site from the retention policy.
+
+To specify individual OneDrive accounts to include or exclude, the URL has the following format: `https://<tenant name>-my.sharepoint.com/personal/<user_name>_<tenant name>_com`
+
+For example, for a user in the contoso tenant that has a user name of "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
+
+To verify the syntax for your tenant and identify URLs for users, see [Get a list of all user OneDrive URLs in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls).
 
 ### Configuration information for Microsoft 365 groups
 
-To retain or delete content for a Microsoft 365 group (formerly Office 365 group), select the **Office 365 groups** location when you choose locations for your retention policy. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
+To retain or delete content for a Microsoft 365 group (formerly Office 365 group), use the **Office 365 groups** location. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.
 
 A retention policy applied to a Microsoft 365 group includes both the group mailbox and site. A retention policy applied to a Microsoft 365 group protects the resources created by a Microsoft 365 group, which includes Microsoft Teams.
 
@@ -160,7 +219,7 @@ One of the most powerful features of a retention policy is that it can apply to 
     
 - OneDrive accounts
     
-- Microsoft 365 groups (applies to content in the group's mailbox and associated SharePoint site.)
+- Microsoft 365 groups
     
 - Exchange public folders
     

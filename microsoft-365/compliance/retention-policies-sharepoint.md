@@ -87,16 +87,3 @@ When a user leaves your organization, any content created by that user is not af
 
 If a user leaves your organization, any files that are subject to a retention policy or has a retention label will remain for the duration of the policy or label. During that time period, all sharing access continues to work. When the retention period expires, content moves into the Site Collection Recycle Bin and is not accessible to anyone except the admin. If a document is marked by a retention label as a record, the document will not be deleted until the retention period is over, after which time the content is permanently deleted.
 
-## How to configure a retention policy for SharePoint and OneDrive
-
-Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select one of the following options:
-
-- **Apply policy only to content in Exchange email, public folders, Office 365 groups, OneDrive and SharePoint documents**
-
-- **Let me choose specific locations** > **SharePoint sites**, **OneDrive accounts**, and **Office 365 groups**.
-
-When you choose the **SharePoint sites** location, the retention policy can retain content in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** location that applies to content in the group's mailbox, site, and files.
-
-When you specify your locations for SharePoint sites, you don't need permissions to access the site and no validation is done at the time you specify the URL on the **Edit locations** page. However, the sites must be indexed and the sites you specify are checked that they exist at the end of the wizard.
-
-If this check fails, you see a message that validation failed for the URL you entered, and the wizard won't create the retention policy until the validation check passes. If you see this message, go back in the wizard to change the URL or remove the site.
