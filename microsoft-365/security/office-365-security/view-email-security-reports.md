@@ -29,7 +29,7 @@ A variety of reports are available in the [Security & Compliance Center](https:/
 ## Compromised users report
 
 > [!NOTE]
-> This report is available in Microsoft 365 organizations with Exchange Online mailboxes. It's not available in standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
+> This report is available in Microsoft 365 organizations with Exchange Online mailboxes. It's not available in standalone Exchange Online Protection (EOP) organizations.
 
 The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
@@ -157,7 +157,7 @@ If you click **View details table**, you can see the following details:
 - **Date**
 - **Sender address**
 - **Recipient address**
-- **Message ID**
+- **Message ID**: Available in the **Message-ID** header field in the message header and should be unique. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
 - **Subject**
 - **Filename**
 - **Malware name**

@@ -30,11 +30,11 @@ Office 365 Advanced Threat Protection (ATP) organizations (for example, Microsof
 
 The **Advanced Threat Protection file types report** report shows you the type of files detected as malicious by [ATP Safe Attachments](atp-safe-attachments.md).
 
- The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering.
+ The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for 10 days of filtering.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Office ATP file types**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPFileReport>.
 
-![Office ATP file types widget](../../media/atp-file-types-widget.png)
+![Office ATP file types widget in the Reports dashboard](../../media/atp-file-types-report-widget.png)
 
 ### Report view for the Advanced Threat Protection file types report
 
@@ -42,20 +42,18 @@ The following views are available:
 
 - **View data by: File**: The chart contains the following information:
 
-  - **Malicious URLs**
-  - **Malicious executable attachments**
-  - **Malicious Word attachments**
   - **Malicious Excel attachments**
-  - **Malicious PowerPoint attachments**
-  - **Malicious PDF attachments**
   - **Malicious Flash attachments**
+  - **Malicious PDF attachments**
+  - **Malicious PowerPoint attachments**
+  - **Malicious URLs**
+  - **Malicious Word attachments**
+  - **Malicious executable attachments**
   - **Others**
 
   When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
 
-  ![ATP File Types report](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
-  
-  ![ATP File Types report data for a day](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
+  ![File view in the ATP file types report](../../media/atp-file-types-report-file-view.png)
 
   If you click **Filters**, you can modify the report with the following filters:
 
@@ -69,6 +67,8 @@ The following views are available:
   - **Messages monitored**
   - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
 
+  ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
+
   If you click **Filters**, you can modify the report with the following filters:
 
   - **Start date** and **End date**
@@ -76,17 +76,115 @@ The following views are available:
 
 ### Details table view for the Advanced Threat Protection file types report
 
-## Office 365 ATP message disposition report
+If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days. The information that's shown depends on the chart you were looking at:
+
+- **View data by: File**:
+
+  - **Date**
+  - **Recipient address**
+  - **Sender address**
+  - **Message ID**: Available in the **Message-ID** header field in the message header and should be unique. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
+  - **File**
+
+  If you click **Filters**, you can modify the report with the following filters:
+
+  - **Start date** and **End date**
+  - The same file type values that are visible in the chart.
+
+- **View data by: Message**:
+
+  - **Date**
+  - **Recipient address**
+  - **Sender address**
+  - **Message ID**
+  - **File**
+  - **Subject**
+
+  If you click **Filters**, you can modify the results with the following filters:
+
+  - **Start date** and **End date**
+  - The same message disposition values that are available in the chart, and the additional **Messages passed** value.
+
+To get back to the reports view, click **View report**.
+
+## Advanced Threat Protection message disposition report
 
 The **ATP Message Disposition** report shows you the actions that were taken for email messages that were detected as having malicious content.
 
-To view this report, in the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** \> **ATP Message Disposition**.
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Office ATP message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
 
-![ATP Message Disposition Report](../../media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
+![Office 365 ATP message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
 
-When you hover over a bar in the chart, you can see what actions were taken for detected email for that day.
+### Report view for the Advanced Threat Protection message disposition report
 
-![ATP Message Disposition Report data for a day](../../media/68d2beb8-4b30-48c4-8ba6-5e8ab88ae456.png)
+The following views are available:
+
+- **View data by: Message**: The chart contains the following information:
+
+  - **Block access**
+  - **Messages replaced**
+  - **Messages monitored**
+  - **Replaced by Dynamic Email Delivery**: For more information, see [Dynamic Delivery and previewing with ATP Safe Attachments](dynamic-delivery-and-previewing.md).
+
+  ![Message view in the ATP file types report](../../media/atp-file-types-report-message-view.png)
+
+  If you click **Filters**, you can modify the report with the following filters:
+
+  - **Start date** and **End date**
+  - The same message disposition values that are available in the chart, and the additional **Messages passed** value.
+
+- **View data by: File**: The chart contains the following information:
+
+  - **Malicious Excel attachments**
+  - **Malicious Flash attachments**
+  - **Malicious PDF attachments**
+  - **Malicious PowerPoint attachments**
+  - **Malicious URLs**
+  - **Malicious Word attachments**
+  - **Malicious executable attachments**
+  - **Others**
+
+  When you hover over a particular day (data point), you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-malware protection in EOP](anti-malware-protection.md).
+
+  ![File view in the ATP file types report](../../media/atp-file-types-report-file-view.png)
+
+  If you click **Filters**, you can modify the report with the following filters:
+
+  - **Start date** and **End date**
+  - The same file type values that are visible in the chart.
+
+### Details table view for the Advanced Threat Protection message disposition report
+
+If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 10 days. The information that's shown depends on the chart you were looking at:
+
+- **View data by: Message**:
+
+  - **Date**
+  - **Recipient address**
+  - **Sender address**
+  - **Message ID**
+  - **File**
+  - **Subject**
+
+  If you click **Filters**, you can modify the results with the following filters:
+
+  - **Start date** and **End date**
+  - The same message disposition values that are available in the chart, and the additional **Messages passed** value.
+
+- **View data by: File**:
+
+  - **Date**
+  - **Recipient address**
+  - **Sender address**
+  - **Message ID**
+  - **File**
+
+  If you click **Filters**, you can modify the report with the following filters:
+
+  - **Start date** and **End date**
+  - The same file type values that are visible in the chart.
+
+To get back to the reports view, click **View report**.
 
 ## Threat protection status report
 
