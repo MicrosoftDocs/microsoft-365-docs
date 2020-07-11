@@ -9,13 +9,13 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.date: 02/28/2020
+ms.date: 06/11/2020
 ms.collection: 
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
-description: "As an administrator, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
+description: "As an administrator and as a message sender, you can revoke certain emails that were encrypted with Office 365 Advanced Message Encryption."
 ---
 
 # Revoke email encrypted by Advanced Message Encryption
@@ -24,7 +24,7 @@ Email revocation is offered as part of Office 365 Advanced Message Encryption. O
 
 This article is part of a larger series of articles about [Office 365 Message Encryption](ome.md).
 
-If a message was encrypted using Office 365 Advanced Message Encryption, and you are a Microsoft 365 admin or you are the sender of the message, you can revoke the message under certain conditions. Admins revoke messages using PowerShell. As a sender, you revoke a message you sent directly from Outlook on the web. This article describes the circumstances under which revocation is possible and how to do it.
+If a message was encrypted using Office 365 Advanced Message Encryption, and you are a Microsoft 365 admin or you are the sender of the message, you can revoke the message under certain conditions. Admins revoke messages using PowerShell. As a sender, you revoke a message that you sent directly from Outlook on the web. This article describes the circumstances under which revocation is possible and how to do it.
   
 ## Encrypted emails that you can revoke
 
