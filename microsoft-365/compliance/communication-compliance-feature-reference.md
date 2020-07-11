@@ -87,10 +87,8 @@ You must file a request with Microsoft Support to enable your organization to us
 - **Third-party sources**: You can scan communications from third-party sources for data imported into mailboxes in your Microsoft 365 organization. Connectors support the following third-party resources:
 
     - [Instant Bloomberg](archive-instant-bloomberg-data.md)
-    - [Facebook](archive-facebook-data-with-sample-connector.md)
-    - [LinkedIn](archive-linkedin-data.md)
-    - [Twitter](archive-twitter-data-with-sample-connector.md)
-    - [Custom data connector](archiving-third-party-data.md)
+    - [Bloomberg Message](archive-bloomberg-message-data.md)
+    - [ICE Chat](archive-icechat-data.md)
 
 You must configure a third-party connector for your Microsoft 365 organization before you can assign the connector to a communication compliance policy. The **Third-Party Sources** section of the communication compliance policy wizard only displays currently configured third-party connectors.
 
@@ -150,7 +148,7 @@ For information about classifiers in Microsoft 365, see [Classifiers](classifier
 ### Conditional settings
 <a name="ConditionalSettings"> </a>
 
-The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Facebook or DropBox).
+The conditions you choose for the policy apply to communications from both email and third-party sources in your organization (like from Instant Bloomberg or DropBox).
 
 The following table explains more about each condition.
   
