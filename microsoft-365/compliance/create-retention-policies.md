@@ -55,6 +55,14 @@ The global admin for your organization has full permissions to create and edit r
 
 When you have more than one retention policy, see [The principles of retention, or what takes precedence?](retention.md#the-principles-of-retention-or-what-takes-precedence)
 
+#### Configuration information for Exchange email and Exchange public folders
+
+The **Exchange email** location supports retention for users' email, calendar, and other mailbox items, by applying retention settings at the level of a mailbox.
+
+The following mail items are included: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items that don't have an end date are not included. Other items stored in a mailbox, such as Skype and Teams saved messages, aren't included with this location. These items have their own retention locations.
+
+The **Exchange public folders** location applies retention settings to all public folders and can't be applied at the folder or mailbox level.
+
 ### Configuration information for Microsoft 365 groups
 
 To retain or delete content for a Microsoft 365 group (formerly Office 365 group), select the **Office 365 groups** location when you choose locations for your retention policy. Even though a Microsoft 365 group has an Exchange mailbox, a retention policy that includes the entire **Exchange email** location won't include content in Microsoft 365 group mailboxes. In addition, although the **Exchange email** location initially allows you to specify a group mailbox to be included or excluded, when you try to save the retention policy, you receive an error that "RemoteGroupMailbox" is not a valid selection for the Exchange location.

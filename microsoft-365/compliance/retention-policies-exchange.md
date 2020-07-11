@@ -16,32 +16,26 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about retention behavior that applies specifically to Exchange email and Exchange public folders."
+description: "Learn how retention works for Exchange."
 ---
 
-# Learn about retention policies for Exchange
+# Learn about retention for Exchange
 
-The information in this article supplements [Learn about retention policies](retention.md) because it has information that's specific to Exchange.
+The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Exchange.
 
-## How a retention policy works with Exchange
-
-For a user's mail, calendar, and other mailbox items, a retention policy is applied at the level of a mailbox.
-
-For public folders, a retention policy is applied to all public folders and not at the folder or mailbox level.
-
-When you configure a retention policy for these locations, the following mail items are included: Mail messages (includes drafts) with any attachments, tasks and calendar items when they have an end date, and notes. Contacts, and any tasks and calendar items that don't have an end date are not included. Other items stored in a mailbox, such as Skype and Teams saved messages, are included with their separate retention policy.
+## How retention works for Exchange
 
 Both a mailbox and a public folder use the [Recoverable Items folder](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) to retain items. Only people who have been assigned eDiscovery permissions can view items in another user's Recoverable Items folder.
   
 When a person deletes a message in a folder other than the Deleted Items folder, by default, the message moves to the Deleted Items folder. When a person deletes an item in the Deleted Items folder, the message is moved to the Recoverable Items folder. However, a user can soft delete an item (Shift+Delete) in any folder, which bypasses the Deleted Items folder and moves the item directly to the Recoverable Items folder.
   
-When you apply a retention policy to an Exchange location, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
+When you apply retention settings to Exchange data, a timer job periodically evaluates items in the Recoverable Items folder. If an item doesn't match the rules of at least one retention policy or retention label, the item is permanently deleted (also called hard deleted) from the Recoverable Items folder.
 
 The timer job can take up to seven days to run and the Exchange location must contain at least 10 MB.
   
 When a user attempts to change properties of a mailbox item—such as the subject, body, attachments, senders and recipients, or date sent or received for a message—a copy of the original item is saved to the Recoverable Items folder before the change is committed. This action happens for each subsequent change. At the end of the retention period, copies in the Recoverable Items folder are permanently deleted.
 
-After a retention policy is assigned to a mailbox or public folder, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
+After retention settings are applied to Exchange content, the paths the content takes depend on whether the retention settings are to retain and delete, to retain only, or delete only.
 
 When the retention settings are to retain and delete:
 
@@ -64,14 +58,6 @@ When the retention settings are retain-only, or delete-only, the contents paths 
 1. **If the item is not deleted** during the configured period: At the end of the configured period in the retention policy, the item is moved to the Recoverable Items folder. 
 
 2. **If the item is deleted** during the configured period: The item is immediately moved to the Recoverable Items folder. If a user deletes the item from there or empties the Recoverable Items folder, the item is permanently deleted. Otherwise, the item is permanently deleted after being in the Recoverable Items folder for 14 days. 
-
-## Excluding specific types of Exchange items from a retention policy
-
-By using PowerShell, you can exclude specific types of Exchange items from a retention policy when the retention settings are for retain-only. For example, you can exclude voicemail messages, IM conversations, and other Skype for Business Online content in mailboxes. You can also exclude calendar, note, and task items. This capability is available only by using PowerShell; it's not available when you create a retention policy by using the wizard in the Microsoft 365 compliance center.
-  
-To exclude your selected types for Exchange items in a retention policy, use the  `ExcludedItemClasses` parameter with the [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule) and  [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule) cmdlets.
-
-To use the retention policies cmdlets, you must first [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell?view=exchange-ps).
 
 ## When a user leaves the organization 
 
