@@ -129,7 +129,7 @@ The **Exchange public folders** location applies retention settings to all publi
 
 When you choose the **SharePoint sites** location, the retention policy can retain and delete documents in SharePoint communication sites, team sites that aren't connected by Office 365 groups, and classic sites. Team sites connected by Office 365 groups aren't supported with this option and instead, use the **Office 365 groups** location that applies to content in the group's mailbox, site, and files.
 
-Although the retention policy is applied at the site level, only documents have retention settings applied to them. Retention settings do not apply to the organizing libraries and folders within the site. 
+Although the retention policy is applied at the site level, only documents have retention settings applied to them. Retention settings do not apply to the organizing structures that include libraries, lists, and folders within the site. 
 
 When you specify your locations for SharePoint sites or OneDrive accounts, you don't need permissions to access the sites and no validation is done at the time you specify the URL on the **Edit locations** page. However, the SharePoint sites must be indexed and the sites that you specify are checked that they exist at the end of the wizard.
 
