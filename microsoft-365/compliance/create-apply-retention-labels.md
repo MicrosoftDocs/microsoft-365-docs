@@ -25,7 +25,7 @@ description: Instructions to create and publish retention labels so you can then
 
 Use the following information to help you create and publish [retention labels](retention.md), and then apply them to documents and emails.
 
-Retention labels help you retain what you need and delete what you don't. They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.
+Retention labels help you retain what you need and delete what you don't at the item level (document or email). They are also used to declare an item as a record as part of a [records management](records-management.md) solution for your Microsoft 365 data.
 
 Making retention labels available to people in your organization so that they can classify content is a two-step process: 
 
