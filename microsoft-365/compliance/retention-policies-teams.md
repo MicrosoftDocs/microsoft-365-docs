@@ -88,32 +88,13 @@ If a user leaves your organization and their Microsoft 365 account is deleted, t
 
 If the user stored any files in Teams, see the [equivalent section](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) for SharePoint and OneDrive.
 
-
-## Additional retention policies needed to support Teams
-
-Teams is more than just chats and channel messages. When you [create your retention policy](create-retention-policies.md#create-and-configure-a-retention policy) for Teams, if you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Office 365 groups** location. This retention policy applies to content in the group's mailbox, site, and files.
-
-If the team site isn't connected to a Microsoft 365 group, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations to retain and delete files in Teams:
-
-- Files that are shared in chat are stored in the OneDrive account of the user who shared the file. 
-
-- Files that are uploaded to channels are stored in the SharePoint site for the team.
-
-> [!TIP]
-> You can apply a retention policy to the files of just a specific team when it's not connected to a Microsoft 365 group by selecting the SharePoint site for the team, and the OneDrive accounts of users in the Team.
-
-It's possible that a retention policy that's applied to Microsoft 365 groups, SharePoint sites, or OneDrive accounts could delete a file that's referenced in a Teams chat or channel message before those messages get deleted. In this scenario, the file still displays in the Teams message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
-
-> [!NOTE]
-> A retention policy that includes Teams channel messages or Teams chats can only include Teams locations. So to retain or delete other content that's supported by Teams, you must create a separate retention policy.
-
 ## Limitations
 
-We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of:
+We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of when you use retention for Teams channel messages and chats:
   
 - **Teams requires a separate retention policy**. When you create a retention policy and toggle on the Teams locations, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations.
 
-- **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams isn't included because it requires a separate retention policy.
+- **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams channel messages and Teams chats aren't included because these require a separate retention policy.
 
 - **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Currently, retention in Teams applies to all the chat and channel message content when you select those locations.
 
