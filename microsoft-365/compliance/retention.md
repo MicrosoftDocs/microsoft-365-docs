@@ -80,11 +80,11 @@ For example, if all documents in a SharePoint site should be retained for five y
 
 Unlike retention policies, retention settings from retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
  
-- Options to start the retention period from when the content was labeled or based on an event, rather than the age of the content or when it was last modified.
+- Options to start the retention period from when the content was labeled or based on an event, in addition to the age of the content or when it was last modified.
     
-    The option to start the retention period from when the content was labeled applies to documents in SharePoint sites and OneDrive accounts, and to emails items with the exception of calendar items.
+    The option to start the retention period from when the content was labeled applies to documents in SharePoint sites and OneDrive accounts, and to email items with the exception of calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
 
-- Use trainable classifiers to identify content to label.
+- Use [trainable classifiers](classifier-getting-started-with.md) to identify content to label.
 
 - Apply a default label for SharePoint documents.
 
