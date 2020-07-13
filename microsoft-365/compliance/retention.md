@@ -51,13 +51,9 @@ When content has retention settings assigned to it, that content remains in its 
   
 - For SharePoint and OneDrive sites: The copy is retained in the **Preservation Hold** library.
 
-- For email and public folders: The copy is retained in the **Recoverable Items** folder. 
+- For Exchange mailboxes: The copy is retained in the **Recoverable Items** folder. 
 
 - For Teams channel and chat messages: The copy is retained in a hidden folder within the Exchange **Recoverable Items** folder.
-
-- For Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)): 
-    - The group mailbox is retained in the Exchange **Recoverable Items** folder.
-    - Any site content is retained in the **Preservation Hold** library.
 
 > [!NOTE]
 > The Preservation Hold library consumes storage that isn't exempt from a site's storage quota. You might need to increase your storage when you use retention settings for SharePoint and Microsoft 365 groups.
