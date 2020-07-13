@@ -59,7 +59,7 @@ Comply with internal policies or regulatory requirements with these compliance f
 | Data Loss Protection (DLP) | Detect, warn, and block risky, inadvertent, or inappropriate sharing, such as sharing of data containing personal information, both internally and externally. | Microsoft 365 E3 and E5 | 
 | Conditional Access App Control | Prevent sensitive data from being downloaded to users' personal devices. | Microsoft 365 E3 and E5 |
 | Data retention labels and policies | Implement information governance controls, such as how long to keep data and requirements on the storage of personal data on customers, to comply with your organization's policies or data regulations. | Microsoft 365 E3 and E5 |
-| Email encryption | Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers. | Microsoft 365 E3 and E5 |
+| Office message encryption (OME) | Send and receive encrypted email messages between people inside and outside your organization that contains regulated data, such as personal data on customers. | Microsoft 365 E3 and E5 |
 | Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 and E5 |
 | Compliance Score (preview) | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 and E5 |
 ||||
