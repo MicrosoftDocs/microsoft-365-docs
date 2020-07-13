@@ -12,7 +12,7 @@ search.appverid:
 localization_priority: Normal
 
 ---
-# Set up Project Cortex (Preview)
+# Set up Knowledge Management (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
@@ -20,7 +20,7 @@ localization_priority: Normal
 Use the Microsoft 365 admin center to set up and configure Knowledge Management. 
 
 > [!Important]
-> It is important to plan the best way to set up and configure Project Cortex in your environment. For example, who should you initially give access to and which sites do I analyze?  Much of this type of information is needed during the setup steps. Before going through the setup steps, make sure to [make all your planning considerations]().
+> It is important to plan the best way to set up and configure Knowledge Management in your environment. For example, who should you initially give access to and which sites do I analyze?  Much of this type of information is needed during the setup steps. Before going through the setup steps, make sure to [make all your planning considerations]().
 
 ## Requirements 
 You must have Global Admin permissions to be able to access the Microsoft 365 admin center and set up Project Cortex.
