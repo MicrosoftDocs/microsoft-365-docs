@@ -32,9 +32,9 @@ Admins and message senders can revoke encrypted emails if the recipient received
 
 Whether a recipient receives a link-based experience or an inline experience depends on the recipient identity type: Office 365 and Microsoft account recipients (for example, outlook.com users) get an inline experience in supported Outlook clients. All other recipient types, such as Gmail and Yahoo recipients, get a link-based experience.
 
-Admins and message senders can revoke messages that are encrypted using ad hoc encryption applied directly from Outlook on the web. For example, messages encrypted with the Encrypt Only option.
+Admins and message senders can revoke messages that are encrypted using encryption applied directly from Outlook on the web. For example, messages encrypted with the Encrypt Only option.
 
-:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot showing ad hoc Encrypt Only option in Outlook on the web.":::
+:::image type="content" source="../media/adhocencryptionrevoke.png" alt-text="Screenshot showing Encrypt Only option in Outlook on the web.":::
 
 ## Recipient experience for revoked encrypted emails
 
