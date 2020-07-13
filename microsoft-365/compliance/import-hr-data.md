@@ -69,7 +69,7 @@ After you create the CSV file with the required HR data, store it on the same sy
 
 The next step is to create an HR connector in the Microsoft 365 compliance center. After you run the script in Step 4, the HR connector that you create will ingest the HR data from the CSV file to your Microsoft 365 organization. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
 
-1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
+1. In the finish step of Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
 2. On the **Data connectors (preview)** page under **HR**, click **View**.
 
@@ -88,6 +88,8 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 6. On the **Review** page, review your settings and then click **Finish** to create the connector.
 
    A status page is displayed that confirms the connector was created. This page also contains the job ID. You'll need this job ID to run the script in the next step. You can copy it from this page or from the flyout page for the connector.
+   
+   Additionally, the page has the link to the script that has to be used in the next Step. Keep this link opened in a new tab.
 
 7. Click **Done**.
    
@@ -105,7 +107,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) to access the sample script.
+1. Go to the tab with the script mentioned in previous step (point 6).
 
 2. Click the **Raw** button to display the script in text view
 
