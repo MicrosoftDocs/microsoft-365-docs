@@ -35,8 +35,6 @@ Based on your understanding of [multi-factor authentication (MFA) and its suppor
 
 ## Before you begin
 
-Before you begin, determine if these special conditions apply to you and take the appropriate action:
-
 - You must be a Global admin to manage MFA. For more information, see [About admin roles](../add-users/about-admin-roles.md).
 - If you have legacy per person MFA turned on, [Turn off legacy per person MFA](#turn-off-legacy-per-person-mfa).
 - Make sure [Turn off legacy per person MFA](#turn-off-legacy-per-person-mfa).
