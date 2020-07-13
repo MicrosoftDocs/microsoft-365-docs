@@ -81,13 +81,37 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 ## Onboarding devices into device management
 
-Before sensitive items on a device can be monitored and protected you must enable device monitoring and onboard your endpoints. Both of these actions are done in the M365 Compliance portal.
+ You must enable device monitoring and onboard your endpoints before you can monitor and protect sensitive items on a device. Both of these actions are done in the Microsoft 365 Compliance portal.
 
-Device management is tightly integrated with [Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/). How you onboard Windows 10 devices into device management depends on whether you have MDATP deployed or not.
+When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started#onboarding-devices).
 
-### With MDATP deployed
+If you already have devices onboarded into [Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into MDATP](endpoint-dlp-getting-started#with-devices-onboarded-into-mdatp).
 
-In this deployment scenario, MDATP is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage
+### Onboarding devices
+
+In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 devices.
+
+1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
+2. Open the Compliance Center settings page and choose **Onboard devices**. ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
+4. Choose **Onboarding** to begin the onboarding process.
+5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
+![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
+6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
+    - Onboard Windows 10 machines using Group Policy
+    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
+    - Onboard Windows 10 machines using Mobile Device Management tools
+    - Onboard Windows 10 machines using a local script
+    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
+
+Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
+
+> [!NOTE]
+> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
+
+### With devices onboarded into MDATP
+
+In this scenario, MDATP is already deployed and there are endpoints reporting in. All these endpoints will appear in the managed devices list. You can continue to onboard new devices into Endpoint DLP to expand coverage by using the [Onboarding devices procedure](endpoint-dlp-getting-started#onboarding-devices).
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
 2. Open the Compliance Center settings page and choose **Enable device monitoring**.
@@ -107,27 +131,7 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 > [!NOTE]
 >This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
-### Without MDATP deployed
 
-In this deployment scenario, MDATP is not deployed and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 devices. This procedure is very similar to the with MDATP process, except that there will not be any devices pre-populated in the device list.
-
-1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
-2. Open the Compliance Center settings page and choose **Onboard devices**. ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
-3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
-4. Choose **Onboarding** to begin the onboarding process.
-5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
-![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
-    - Onboard Windows 10 machines using Group Policy
-    - Onboard Windows machines using Microsoft Endpoint Configuration Manager
-    - Onboard Windows 10 machines using Mobile Device Management tools
-    - Onboard Windows 10 machines using a local script
-    - Onboard non-persistent virtual desktop infrastructure (VDI) machines.
-
-Once done and endpoint is onboarded, it should be visible in the devices list and also start reporting audit activity logs to Activity explorer.
-
-> [!NOTE]
-> This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
 ### Viewing Endpoint DLP data in activity explorer
 
