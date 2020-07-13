@@ -93,6 +93,9 @@ In this deployment scenario, you'll onboard devices that have not been onboarded
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
 2. Open the Compliance Center settings page and choose **Onboard devices**. ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+> [!NOTE]
+> Enabling device onboarding is not instantaneous, keep checking back for status.
+
 3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
 4. Choose **Onboarding** to begin the onboarding process.
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
