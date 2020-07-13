@@ -30,6 +30,10 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## July/August 2020 
+
+- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
 ## March/April 2020
 
 - The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.
