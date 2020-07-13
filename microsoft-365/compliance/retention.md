@@ -53,7 +53,7 @@ When content has retention settings assigned to it, that content remains in its 
 
 - For email and public folders: The copy is retained in the **Recoverable Items** folder. 
 
-- For Teams content: The copy is retained in the Exchange **Recoverable Items** folder.
+- For Teams channel and chat messages: The copy is retained in a hidden folder within the Exchange **Recoverable Items** folder.
 
 - For Microsoft 365 groups ([formerly Office 365 groups](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)): 
     - The group mailbox is retained in the Exchange **Recoverable Items** folder.
