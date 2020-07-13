@@ -26,14 +26,14 @@
         - name: Set up Content Understanding
           href: set-up-content-understanding.md
 
-    - name: Drive adoption
+    - name: Adoption
       items:
 
-        - name: article title
+        - name: Phase 1 - Proof of Value 
           href: set-up-content-understanding.md
-        - name: article title
+        - name: Phase 2 - Pilot
           href: set-up-content-understanding.md
-        - name: article title
+        - name: Phase 3 - Expand
           href: set-up-content-understanding.md
 
     - name: Training videos
