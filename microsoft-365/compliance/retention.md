@@ -108,19 +108,19 @@ You can also apply a policy to all content or to content when it meets specific 
 
 Some organizations might need to comply with rules defined by regulatory bodies such as the Securities and Exchange Commission (SEC) Rule 17a-4, which requires that after a retention policy is turned on, it cannot be turned off or made less restrictive. 
 
-Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy so that no one—including the administrator—can turn off the policy or make it less restrictive.
+Preservation Lock ensures your organization can meet such regulatory requirements because it locks a retention policy so that no one—including the administrator—can turn off the policy, delete the policy, or make it less restrictive.
   
 When a retention policy is locked:
 
 - No one can it turn off
-- Locations can be added but not removed 
+- Locations can be added but not removed
 - Content subject to the policy can't be modified or deleted during the retention period
 - You can extend a retention period but not decrease it
 
 In summary, a locked retention policy can be increased or extended, but it can't be reduced or turned off.
   
 > [!IMPORTANT]
-> Before you lock a retention policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet compliance requirements.
+> Before you lock a retention policy, it's critical that you understand the impact and confirm whether it's required for your organization to meet regulatory requirements. Administrators won't be able to disable or delete a retention policy after the preservation lock is applied.
 
 #### Releasing a retention policy
 
@@ -268,15 +268,16 @@ For more information about how retention policies and retention labels work toge
 
 It's possible or even likely that content might have several retention policies and retention labels applied to it, each with a different action (retain, delete, or retain and then delete) and retention period. What takes precedence? 
 
-At a high level, you can be assured that retention always takes precedence over deletion, and the longest retention period wins. In detail:
-  
+At a high level, you can be assured that retention always takes precedence over deletion, and then the longest retention period wins. 
+
+However, there are a few more factors to throw into the mix, so use the following flow to understand the outcome where each level acts as a tie-breaker from top to bottom: If the outcome is determined by the first level, there's no need to progress to the next level, and so on. Only if the outcome can't be determined by the rules for the level does the flow move down to the next level to determine the outcome for which retention settings take precedence.
+
 ![Diagram of the principles of retention](../media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
-To understand how different retention policies are applied to content, keep these principles of retention in mind:
+Explanation for the four different levels:
   
 1. **Retention wins over deletion.** Suppose that one retention policy is configured to delete Exchange email after three years, but another retention policy is configured to retain Exchange email for five years and then delete it. Any content that reaches three years old will be deleted and hidden from the users' view, but still retained in the Recoverable Items folder until the content reaches five years old, when it is permanently deleted. 
-    
-2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period. 
+2. **The longest retention period wins.** If content is subject to multiple retention settings that retain content for different periods of time, the content will be retained until the end of the longest retention period.
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
@@ -285,10 +286,8 @@ To understand how different retention policies are applied to content, keep thes
     2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive account, that retention policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive accounts but doesn't specifically include that user's mailbox.
     
 4. **The shortest deletion period wins.** Similarly, if content is subject to multiple retention settings that delete content without a retention period, that content will be deleted at the end of the shortest retention period. 
-    
-These principles of retention work as a tie-breaking flow from top to bottom: If the outcome is determined by the first level, there's no need to progress to the next level. But if the outcome can't be determined, the flow moves down to the next level to determine precedence for which rule to apply.
-  
-Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations (Preservation Hold library and Recoverable Items folder).
+
+Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations for the workload.
 
 ## PowerShell cmdlets for retention policies and retention labels
 
