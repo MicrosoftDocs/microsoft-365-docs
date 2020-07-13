@@ -159,7 +159,7 @@ New or changed article | Description
 [Prepare mapped drives for Microsoft Managed Desktop](get-ready/mapped-drives.md) | New article
 [Prepare certificates and network profiles for Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | New article
 [Order Microsoft Managed Desktop devices](get-started/devices.md) | Updated article
-[Getting help for end users](working-with-managed-desktop/end-user-support.md)
+[Getting help for end users](working-with-managed-desktop/end-user-support.md) | New article
 
 ## April 2019
 New or changed article | Description
@@ -190,7 +190,7 @@ New or changed article | Description
 New or changed article | Description
 --- | ---
 [Deploy apps for Microsoft Managed Desktop devices](get-started/deploy-apps.md) | New article.
-[Manage apps for Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Updated with info on how to update or roll back to a previoius version of line-of-business apps. 
+[Manage apps for Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | Updated with info on how to update or roll back to a previous version of line-of-business apps. 
 
 ## December 2018
 New or changed article | Description
