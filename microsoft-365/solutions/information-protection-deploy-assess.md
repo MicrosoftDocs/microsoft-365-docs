@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -93,6 +93,8 @@ Data also moves around over time as it is processed, refined, and other versions
 To address data privacy regulations, you can’t rely on general notions of where you think personal data might exist, either now or in the future. Data privacy regulations require that organizations prove that they know where personal data is on an ongoing basis. This makes it important to take an initial snapshot of all your data sources for possible storage of personal information, including your Microsoft 365 environment, and establish mechanisms for ongoing monitoring and detection.
 
 If you have not already assessed your overall readiness and risk associated with data privacy regulations, use the following 3-step framework to get started. 
+
+![Steps to assess your overall readiness and risk associated with data privacy regulations](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
 
 >[!Note]
 >This article and its content are not meant to take the place of legal advisory services. It just provides some basic guidance and links to tools that may be of assistance in the early stages of your assessment.
