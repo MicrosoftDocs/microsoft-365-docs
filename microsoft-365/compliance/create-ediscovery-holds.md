@@ -78,9 +78,9 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 ### Query-based holds placed on site documents
 
-Keep the following things in mind when you place on query-based hold on documents located in SharePoint sites:
+Keep the following things in mind when you place a query-based eDiscovery hold on documents located in SharePoint sites:
 
-- A query-based hold initially preserves all documents in a site for a short period of time after they are deleted. That means when a document is deleted, it will be moved to the Preservation Hold library even if doesn't match the criteria of the query-based hold. However, deleted documents that don't match the query-base hold will be removed by a timer job that periodically processes the Preservation Hold library. This timer job runs every seven days, which means that it can take up to seven days for documents that don't match a query-based hold to be deleted. Deleted documents in the Preservation Hold library that match the query-based hold are preserved.
+- A query-based hold initially preserves all documents in a site for a short period of time after they are deleted. That means when a document is deleted, it will be moved to the Preservation Hold library even if it doesn't match the criteria of the query-based hold. However, deleted documents that don't match a query-based hold will be removed by a timer job that processes the Preservation Hold library. The timer job runs periodically and compares all documents in the Preservation Hold library to your query-based eDiscovery holds (and other types of holds and retention policies). The timer job deletes the documents that don't match a query-based hold and preserves documents that do.
 
 - Query-based holds should not be used to perform targeted preservation, like preserving documents in a specific folder or site of other location-based hold criteria. Doing so may have unintended results. We recommend using other non-location based hold criteria such as keywords, date ranges, or other document properties to preserve site documents.
 
@@ -134,7 +134,7 @@ For more information about preserving Teams content, see [Place a Microsoft Team
 > In a cloud-based organization, users who participate in conversations that are part of the chat list in Teams must have an Exchange Online mailbox in order to retain chat conversations when the mailbox is placed on an eDiscovery hold. That's because conversations that are part of the chat list are stored in the cloud-based mailboxes of the chat participants. If a chat participant doesn't have an Exchange Online mailbox, you won't be able to preserve those chat conversations. For example, in an Exchange hybrid deployment, users with an on-premises mailbox may ght be able to participate in conversations that are part of the chat list in Teams. But in this case, content from these conversation can't be preserved because these users don't have a cloud-based mailboxes that can be placed on hold.
   
 Every Team or team channel also contains a Wiki for note taking and collaboration. The Wiki content is automatically saved to a file with a .mht format. This file is stored in the Teams Wiki Data document library on the team's SharePoint site. You can preserve the wiki content by adding the team's SharePoint site to an eDiscovery hold.
-    
+
 > [!NOTE]
 > The capability to preserve Wiki content for a Team or team channel (when you place the team's SharePoint site on hold) was released on June 22, 2017. If a team site is on hold, the Wiki content will be retained starting on that date. However, if a team site is on hold and the Wiki content was deleted before June 22, 2017, the Wiki content was not preserved.
 
@@ -162,8 +162,8 @@ Keep the following things in mind when placing both Teams and Office 365 Groups 
   
 - When a user's mailbox is searched, any Team or Office 365 Group that the user is a member of won't be searched. Similarly, when you place a Team or Office 365 Group on eDiscovery hold, only the group mailbox and group site are placed on hold. The mailboxes and OneDrive for Business sites of group members aren't placed on hold unless you explicitly add them to the eDiscovery hold. So if you have  to place a Team or Office 365 Group on hold for a legal reason, consider adding the mailboxes and OneDrive accounts of team or group members on the same hold.
 
-- To get a list of the members of a Team or Office 365 Group, you can view the properties on the **Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
-    
+- To get a list of the members of a Team or Office 365 Group, you can view the properties on the **Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell:
+
     ```powershell
     Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress
     ```
@@ -182,7 +182,7 @@ To collect a list of the URLs for the OneDrive for Business sites in your organi
 
 After a mailbox, SharePoint site, or OneDrive account is removed from an eDiscovery hold, a *delay hold* is applied. This means that the actual removal of the hold is delayed for 30 days to prevent data from being permanently deleted (purged) from a content location. This gives admins an opportunity to search for or recover content that will be purged after an eDiscovery hold is removed. The details of how the delay hold works for mailboxes and sites are different.
 
-- **Mailboxes:** A delay hold is placed on a mailbox the next time the Managed Folder Assistant processes the mailbox and detects that an eDiscovery hold was removed. Specifically, a delay hold is applied to a mailbox when the Managed Folder Assistant sets one of the following mailbox properties to **True**: 
+- **Mailboxes:** A delay hold is placed on a mailbox the next time the Managed Folder Assistant processes the mailbox and detects that an eDiscovery hold was removed. Specifically, a delay hold is applied to a mailbox when the Managed Folder Assistant sets one of the following mailbox properties to **True**:
 
    - **DelayHoldApplied:** This property applies to email-related content (generated by people using Outlook and Outlook on the web) that's stored in a user's mailbox.
 
@@ -201,7 +201,7 @@ A delay hold is also applied to content locations on hold when you close a Core 
 ## eDiscovery hold limits
 
 The following table lists the limits for eDiscovery cases and case holds.
-    
+
   |**Description of limit**|**Limit**|
   |:-----|:-----|
   |Maximum number of cases for an organization  <br/> |No limit  <br/> |
