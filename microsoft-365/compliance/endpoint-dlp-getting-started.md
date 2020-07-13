@@ -85,7 +85,7 @@ Make sure that the Windows 10 devices that you plan on deploying Endpoint DLP to
 
 When you want to onboard devices that haven't been onboarded yet, you'll download the appropriate script and deploy it to those devices. Follow the [Onboarding devices procedure](endpoint-dlp-getting-started.md#onboarding-devices).
 
-If you already have devices onboarded into [Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into MDATP](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp).
+If you already have devices onboarded into [Microsoft Defender Advanced Threat Protection (MDATP)](https://docs.microsoft.com/windows/security/threat-protection/), they will already appear in the managed devices list. Follow the [With devices onboarded into MDATP procedure](endpoint-dlp-getting-started.md#with-devices-onboarded-into-mdatp).
 
 ### Onboarding devices
 
@@ -131,11 +131,9 @@ Once done and endpoint is onboarded, it should be visible under the **Devices** 
 > [!NOTE]
 >This experience is under license enforcement. Without the required license, data will not be visible or accessible.
 
-
-
 ### Viewing Endpoint DLP data in activity explorer
 
-1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) in the Microsoft 365 Compliance center and choose Activity explorer.
+1. Open the [Data classification page](https://compliance.microsoft.com/dataclassification?viewid=overview) for your domain in the Microsoft 365 Compliance center and choose Activity explorer.
 2. Refer to the procedures in [Get started with Activity explorer](data-classification-activity-explorer.md) to access and filter all the data for your Endpoint devices.
 
 ![activity explorer filter for endpoint devices](../media/endpoint-dlp-4-getting-started-activity-explorer.png)
