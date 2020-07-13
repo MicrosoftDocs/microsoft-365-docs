@@ -62,7 +62,7 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 8. When you're done adding content locations to the hold, click **Next**.
 
-9. To create a query-based hold with conditions, complete the following. Otherwise, to preserve all content in the specified content locations, click **Next**
+9. To create a query-based hold with conditions, complete the following. Otherwise, to preserve all content in the specified content locations, click **Next**.
 
     ![Create a query-based hold with conditions](../media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
@@ -76,7 +76,7 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 11. Review your settings (and edit them if necessary), and then click **Create this hold**.
 
-### Query-based holds placed on site documents
+## Query-based holds placed on site documents
 
 Keep the following things in mind when you place a query-based eDiscovery hold on documents located in SharePoint sites:
 
