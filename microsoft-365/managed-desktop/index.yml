@@ -1,84 +1,62 @@
-### YamlMime:YamlDocument
-documentType: LandingData
-title: Microsoft Managed Desktop documentation and resources
+### YamlMime:Landing
+
+title: Microsoft Managed Desktop documentation # < 60 chars
+summary: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. # < 160 chars
+
 metadata:
-  title: Microsoft Managed Desktop documentation
-  description: 
+  title: Microsoft Managed Desktop documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs. # Required; article description that is displayed in search results. < 160 chars.
   keywords: device, app, management
-  author: jaimeo
-  ms.author: jaimeo
-  ms.topic: landing-page
-  ms.devlang: na
-  ms.service: m365-md
-sections:
-- items:
-  - type: markdown
-    text: Microsoft Managed Desktop brings together Microsoft 365 Enterprise, cloud-based device management by Microsoft, and security monitoring, enabling you to free up your IT teams to focus on core business needs.
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items:
-    - href: intro/index.md
-      html: <p>Introduction to Microsoft Managed Desktop for decision makers--what it is, how it works, and what it can do for you</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_overview.svg
-        alt: ""
-      title: What is Microsoft Managed Desktop?
-    - href: service-description/index.md
-      html: <p>Detailed description of all parts of Microsoft Managed Desktop</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
-        alt: ""
-      title: Service description
-    - href: get-ready/index.md
-      html: <p>All the steps to get your environment and organization ready to work with the service</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_support.svg
-        alt: ""
-      title: Get ready
-    - href: get-started/index.md
-      html: <p>Get your organization on board with Microsoft Managed Desktop, including setting up devices and deploying apps</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-        alt: ""
-      title: Get started
-    - href: working-with-managed-desktop/index.md
-      html: <p>All about your day-to-day operations with the service</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_portal.svg
-        alt: ""
-      title: Working with Microsoft Managed Desktop
-- title: New articles and blog posts
-  items:
-  - type: paragraph
-    text: 'Read the latest and greatest information you need to know.'
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 2
-    items: 
-    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
-      title: "[Roadmap] Your Complete Roadmap to Microsoft Managed Desktop"
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-    - href: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
-      title: "[Whitepaper] Study: Rising Demand for Managed Desktop Services"
-      image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
-    - href: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
-      title: "[E-book] Delight your company with a modern workplace"
-      image:
-        src: https://docs.microsoft.com/media/common/i_guide.svg
-        alt: ""
-- title: Videos
-  items:
-  - type: paragraph
-    text: 'Learn about the benefits of Microsoft Managed Desktop from the VP of Technology at the Indiana Pacers.'
-  - type: markdown
-    text: ">[!VIDEO https://www.youtube.com/embed/GXVRu49Gmxc]"
-  - type: paragraph
-    text: 'The General Manager of Microsoft Managed Desktop shares all the highlights of the service at the annual Ignite conference.'
-  - type: markdown
-    text: ">[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ksbj]"
+  ms.service: m365-md #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: jaimeo #Required; your GitHub user alias, with correct capitalization.
+  ms.author: jaimeo #Required; microsoft alias of author; optional team alias.
+  ms.date: 07/13/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About Microsoft Managed Desktop
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is Microsoft Managed Desktop?
+            url: /microsoft-365/managed-desktop/intro/
+          - text: Service description
+            url: /microsoft-365/managed-desktop/service-description
+      - linkListType: get-started
+        links:
+          - text: Get ready
+            url: get-ready/index.md
+          - text: Get started
+            url: get-started/index.md
+          - text: Working with Microsoft Managed Desktop
+            url: /microsoft-365/managed-desktop/working-with-managed-desktop/
+  
+  # Card (optional)
+  - title: New articles and blog posts
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "[Roadmap] Your Complete Roadmap to Microsoft Managed Desktop"
+            url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Your-Complete-Roadmap-to-Microsoft-Managed-Desktop/ba-p/1000482
+          - text: "[Whitepaper] Study: Rising Demand for Managed Desktop Services"
+            url: https://techcommunity.microsoft.com/t5/Microsoft-Managed-Desktop/Study-Rising-Demand-for-Managed-Desktop-Services/ba-p/917182
+          - text: "[E-book] Delight your company with a modern workplace"
+            url: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3ewtw
+  
+  # Card (optional)
+  - title: Videos
+    linkLists:
+      - linkListType: video
+        links:
+          - text: Learn about the benefits of Microsoft Managed Desktop
+            url: https://youtu.be/GXVRu49Gmxc
+          - text: Highlights of Microsoft Managed Desktop in the annual Ignite conference
+            url: /microsoft-365/managed-desktop/service-description
+
+
+
