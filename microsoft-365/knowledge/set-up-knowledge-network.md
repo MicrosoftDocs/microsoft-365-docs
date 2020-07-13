@@ -1,10 +1,10 @@
 ---
-title: 'Set up Project Cortex (Preview) '
-description: 'How to set up Project Cortex.'
+title: 'Set up Knowledge Management (Preview) '
+description: 'How to set up Knowledge Management.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
-ms.date: 06/15/2020
+ms.date: 07/21/2020
 audience: admin
 ms.topic: article
 ms.service: 
@@ -14,20 +14,16 @@ localization_priority: Normal
 ---
 # Set up Project Cortex (Preview)
 
-> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
-Use the Microsoft 365 admin center to set up and configure Project Cortex. Setup can be divided into two distinct parts:
-
-- Set up your knowledge network
-- Build AI models to understand content
+Use the Microsoft 365 admin center to set up and configure Knowledge Management. 
 
 > [!Important]
 > It is important to plan the best way to set up and configure Project Cortex in your environment. For example, who should you initially give access to and which sites do I analyze?  Much of this type of information is needed during the setup steps. Before going through the setup steps, make sure to [make all your planning considerations]().
 
-
 ## Requirements 
 You must have Global Admin permissions to be able to access the Microsoft 365 admin center and set up Project Cortex.
-
 
 ## Set up your knowledge network
 
@@ -41,18 +37,29 @@ Setting up your knowledge network walks you through the following:
 
 To set up your knowledge network:
 
-1. In the Microsoft 365 admin center, select **Setup**, and then view the **Content Service and Insights** section.
-2. In **Content Service and Insights**, in **Setup your knowledge network**, select **View**.<br/>
+1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
+2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
+
+    ![Connect people to knowledge](../media/content-understanding/admin-org-knowledge-options.png) </br>
+
 3. On the **Set up your knowledge network**, click **Get started** to walk you through the setup process.<br/>
-4. On the **Choose how the knowledge network will find topics** page, you will configure topic discovery. In the **Select SharePoint topic sources** section, select which SharePoint sites will be mined as sources for your topics during discovery. This includes:
-    a. **All sites**: All SharePoint sites in your tenant.
-    b. **All, except selected sites**: Type the names of the sites you want to exclude.
-    c. **Only selected sites**: Type the names of the sites you want to include.
+
+    ![Get started](../media/content-understanding/k-get-started.png) </br>
+
+4. On the **Choose how the knowledge network can find topics** page, you will configure topic discovery. In the **Select SharePoint topic sources** section, select which SharePoint sites will be mined as sources for your topics during discovery. This includes:</br>
+    a. **All sites**: All SharePoint sites in your tenant.</br>
+    b. **All, except selected sites**: Type the names of the sites you want to exclude.</br>
+    c. **Only selected sites**: Type the names of the sites you want to include.</br>
+
+    ![Choose how to find topics](../media/content-understanding/k-choose-how-find-topics.png) </br>
    
-5. In the **Exclude topics by name** section, you can choose to includes names of topics you don't want to be discovery results. Your options include:
-    a. **Don't exclude any topics**: If you have a number of topics to exclude, you choose to include them in a CSV file. Select **Choose** to import your CSV file.
+5. In the **Exclude topics by name** section, you can choose to includes names of topics you don't want to be discovery results. Your options include:</br>
+    a. **Don't exclude any topics**: If you have a number of topics to exclude, you choose to include them in a CSV file. Select **Choose** to import your CSV file.</br>
     b. **Exclude topic that contain these terms**
-    Select **Next**.
+    Select **Next**.</br>
+
+    ![Exclude topics by name](../media/content-understanding/k-choose-how-find-topics.png) </br>
+
 6. On the **Who can see topics and where they can see them page**, you will configure topic visibility. In the **Who will see topic details, including: descriptions, connected people, and resources** section, you choose who will have access to topic details. You can select:
     a. **Everyone**
     b. **Everyone, except selected people or groups**

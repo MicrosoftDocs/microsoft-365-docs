@@ -1,5 +1,5 @@
 - name: Knowledge Management  help
-  href: what-is-project-cortex.md
+  href: knowledge-management-overview.md
   items: 
 
     - name: Get started with Knowledge Management
@@ -24,20 +24,17 @@
         - name: Set up Knowledge Management
           href: set-up-knowledge-network.md
     
-    - name: Drive adoption
+    - name: Adoption
       items: 
-        - name: article title
+        - name: Overview
           href: .md
-        - name: article title
+        - name: Phase 1 - Get comfortable with topics
           href: .md 
-        - name: article title
+        - name: Phase 2 - Build out the knowledge base
           href: .md   
-        - name: article title
+        - name: Phase 3 - scale
           href: .md 
-        - name: 
-          href: .md 
-        - name: 
-          href: .md 
+
 
 
 
