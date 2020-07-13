@@ -76,6 +76,14 @@ To create an eDiscovery hold that's associated with a Core eDiscovery case:
 
 11. Review your settings (and edit them if necessary), and then click **Create this hold**.
 
+### Query-based holds placed on site documents
+
+Keep the following things in mind when you place on query-based hold on documents located in SharePoint sites:
+
+- A query-based hold initially preserves all documents in a site for a short period of time after they are deleted. That means when a document is deleted, it will be moved to the Preservation Hold library even if doesn't match the criteria of the query-based hold. However, deleted documents that don't match the query-base hold will be removed by a timer job that periodically processes the Preservation Hold library. This timer job runs every seven days, which means that it can take up to seven days for documents that don't match a query-based hold to be deleted. Deleted documents in the Preservation Hold library that match the query-based hold are preserved.
+
+- Query-based holds should not be used to perform targeted preservation, like preserving documents in a specific folder or site of other location-based hold criteria. Doing so may have unintended results. We recommend using other non-location based hold criteria such as keywords, date ranges, or other document properties to preserve site documents.
+
 ## eDiscovery hold statistics
 
 After you create an eDiscovery hold, information about the new hold is displayed on the flyout page for the selected hold. This information includes the number of mailboxes and sites on hold and statistics about the content that was placed on hold, such as the total number and size of items placed on hold and the last time the hold statistics were calculated. These hold statistics help you identify the amount of content related to the case is being preserved.
@@ -109,7 +117,7 @@ Here are some other things to keep in mind when searching locations on eDiscover
 - If a search is configured it to search locations on hold and then you change an eDiscovery hold in the case (by adding or removing a location or changing a hold query), the search configuration is updated with those changes. However, you have to rerun the search after the hold is changed to update the search results.
 
 - If multiple eDiscovery holds are placed on a single location in an eDiscovery case and you select to search locations on hold, the maximum number of keywords for that search query is 500. That's because the search combines all the query-based holds by using the **OR** operator. If there are more than 500 keywords in the combined hold queries and the search query, then all content in the mailbox is searched, not just that content that matches the query-based case holds.
-    
+
 - If an eDiscovery hold has a status of **Turning on**, you can still search the locations on hold while the hold is being turned on.
 
 ## Preserve content in Microsoft Teams
