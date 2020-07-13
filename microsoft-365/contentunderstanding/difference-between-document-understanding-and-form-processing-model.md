@@ -25,6 +25,11 @@ Content Understanding in Project Cortex allows you to create and use two differe
 ## Key differences
 
 
+### Structured versus Unstructured content
+
+
+
+
 ### Where they are created
 
 Document understanding models are created and managed in a SharePoint content center site. You must have access to a content center site to create a document understanding model and to apply one to your SharePoint document library.

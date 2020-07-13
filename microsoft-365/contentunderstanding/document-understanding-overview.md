@@ -13,7 +13,8 @@ description: "Get an overview of the Document Understanding feature in Project C
 ---
 
 # Document Understanding overview (Preview)
-> [!Note] Project Cortex is currently in Preview. [Find out more about Project Cortex]().
+> [!Note] 
+> Project Cortex is currently in Preview. [Find out more about Project Cortex]().
 
 Document understanding uses AI models to automate classification of files and extraction of information. It works best with unstructured documents, like letters or contracts. The documents should have text that can be identified based on phrases or patterns. The identified text can designate both the type of file it is (its classification) and what you'd like to extract (its extractors).
 
