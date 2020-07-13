@@ -87,10 +87,14 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 6. On the **Review** page, review your settings and then click **Finish** to create the connector.
 
-   A status page is displayed that confirms the connector was created. This page also contains the job ID. You'll need this job ID to run the script in the next step. You can copy it from this page or from the flyout page for the connector.
+   A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your HR data.
+
+   a. Job ID. You'll need this job ID to run the script in the next step. You can copy it from this page or from the flyout page for the connector.
+   
+   b. Link to sample script. Click **here** to go to the Github site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again in Step 4.
 
 7. Click **Done**.
-   
+
    The new connector is displayed in the list on the **Connectors** tab. 
 
 8. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector. 
@@ -105,9 +109,11 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Go to [this GitHub site](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) to access the sample script.
+1. Go to window that you left open from the previous step to access the Github site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
 
-2. Click the **Raw** button to display the script in text view
+2. Click the **Raw** button to display the script in text view.
+
+   ![Click Raw to display and then copy the script text](../media/DataConnectorsHRScript.png)
 
 3. Copy all the lines in the sample script and then save them to a text file.
 
