@@ -49,6 +49,8 @@ Protect your applications and data with these security features of Microsoft 365
 | Azure AD Identity Protection	| Automate detection and remediation of identity-based risks. <br><br>Create risk-based Conditional Access policies to require multi-factor authentication (MFA) for risky sign-ins. | Microsoft 365 E5 or E3 with Azure AD Premium P2 licenses |
 ||||
 
+See [Quick tasks for getting started with Microsoft 365 compliance](../compliance/compliance-quick-tasks.md) for more information.
+
 ## Compliance
 
 Comply with internal policies or regulatory requirements with these compliance features of Microsoft 365.
@@ -63,6 +65,8 @@ Comply with internal policies or regulatory requirements with these compliance f
 | Compliance Manager | Manage regulatory compliance activities related to Microsoft cloud services with this workflow-based risk assessment tool in the Microsoft Service Trust Portal. | Microsoft 365 E3 and E5 |
 | Compliance Score (preview) | See an overall score of your current compliance configuration and recommendations for improving it in the Microsoft 365 Compliance Center. | Microsoft 365 E3 and E5 |
 ||||
+
+See [Top 12 tasks for security teams to support working from home](../security/top-security-tasks-for-remote-work.md) for more information.
 
 ## Results of Step 3
 
