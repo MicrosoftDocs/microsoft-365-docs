@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -94,6 +94,8 @@ To address data privacy regulations, you can’t rely on general notions of wher
 
 If you have not already assessed your overall readiness and risk associated with data privacy regulations, use the following 3-step framework to get started. 
 
+![Steps to assess your overall readiness and risk associated with data privacy regulations](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
+
 >[!Note]
 >This article and its content are not meant to take the place of legal advisory services. It just provides some basic guidance and links to tools that may be of assistance in the early stages of your assessment.
 >
@@ -173,7 +175,7 @@ Organizations subject to other data privacy regulations, such as CCPA in the Uni
 
 GDPR assessment consists of these sections:
 
-| | |
+| Section | Description |
 |:-------|:-----|
 | Governance | <ol><li>Does your privacy policy explicitly state what data information is being processed? </li><li>Do you regularly run Privacy Impact Assessments (PIAs)? </li><li> Do you use a tool to manage personal information (PI)? </li><li> Do you have legal authority to conduct business using PI data on any given individual? Do you track consent for data? </li><li> Do you track, implement, and manage audit controls? Do you monitor for data leaks? </li></ol>|
 | Deletion and notification | <ol><li>Do you give explicit instructions on how users' data can be accessed? </li><li> Do you have documented processes in place for handling opt out consent? </li><li>	Do you have an Automated Deletion process for data? </li><li>	Do you have a process to validate identity when engaging with a customer? </li></ol>|
