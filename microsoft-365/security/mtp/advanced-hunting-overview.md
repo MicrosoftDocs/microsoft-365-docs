@@ -53,7 +53,7 @@ To use advanced hunting or other [Microsoft Threat Protection](microsoft-threat-
 Advanced hunting data can be categorized into two distinct types, each consolidated differently.
 
 - **Event or activity data** — populates tables about alerts, security events, system events, and routine assessments. Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to the corresponding cloud services. For example, you can start to query event data from healthy sensors on workstations or domain controllers almost immediately after they are available on Microsoft Defender ATP and Azure ATP.
-- **Entity data** — populates tables consolidated information about users and devices. This data comes from both relatively static data sources, such as Active Directory entries, and dynamic sources, such as event logs. To provide fresh data, tables are updated every 15 minutes with any new information, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
+- **Entity data** — populates tables with consolidated information about users and devices. This data comes from both relatively static data sources, such as Active Directory entries, and dynamic sources, such as event logs. To provide fresh data, tables are updated every 15 minutes with any new information, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
 
 ## Related topics
 - [Learn the query language](advanced-hunting-query-language.md)
