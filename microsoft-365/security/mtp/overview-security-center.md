@@ -1,6 +1,6 @@
 ---
-title: Overview of the Microsoft 365 security center
-description: Describes the new home for monitoring and managing security across your Microsoft identities, data, devices, and apps.
+title: Overview - Microsoft 365 security center
+description: Describes monitoring and managing security across your Microsoft identities, data, devices, and apps with Microsoft 365 security.
 keywords: security, malware, Microsoft 365, M365, security center, monitor, report, identities, data, devices, apps
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
@@ -14,6 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance  
 ms.topic: article
 search.appverid: met150
+ms.custom: seo-marvel-jun2020
 ---
 
 # Overview of the Microsoft 365 security center
@@ -49,7 +50,7 @@ The Microsoft 365 security center includes:
 * **Policies** - Set up policies to manage devices, protect against threats, and receive alerts about various activities in your org.
 * **Permissions** - Manage who in your organization has access to Microsoft 365 security center to view content and perform tasks. You can also assign Microsoft 365 permissions in the Azure AD Portal.
 
-## Learn more 
+## Learn more
 
 Explore these topics about monitoring, reviewing, and responding to your security needs:
 - Connect the dots on alerts through [Incidents](incident-queue.md)
