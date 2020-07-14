@@ -41,12 +41,12 @@ Or
 
 You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP policy enforcement on your devices because they are too noisy or don’t contain files you are interested in. Files in those locations will not be audited and any files that are created or modified in those locations will not be subject to DLP policy enforcement. You can configure path exclusions in DLP settings.
 
-<!-- > You can use this logic to construct your exclusion paths: -->
+You can use this logic to construct your exclusion paths:
 
-<!-- > 1. Begins with – matches every file path that starts with the defined prefix. For example, C:\Windows will match any file under C:\Windows folder and its subfolders.
+1. Begins with – matches every file path that starts with the defined prefix. For example, C:\Windows will match any file under C:\Windows folder and its subfolders, %AppData% will match everything under %AppData% and, C:\Users\*\Desktop will match everything under that C:\Users\*\Desktop.
 2. Environment variables – defined paths can contain environment variables, for example, %AppData%\app123
-3. Wildcards – defined paths can contain wildcards, for example, C:\Users\*\Desktop will match C:\Users\user1\Desktop, C:\Users\user1\Desktop and also C:\Users\user1\user1\Desktop
- -->
+3. Wildcards – defined paths can contain wildcards, for example, C:\Users\*\Desktop as a pattern that will match the Desktop folder of any user.
+
 
 ### Service domains
 
