@@ -355,13 +355,6 @@ If you've previously used any of the eDiscovery holds for the purpose of informa
 ### Retention policies and SharePoint content type policies or information management policies
 
 If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy is in effect. 
-  
-### Preservation policies are converted to retention policies
-
-If you were using a preservation policy to retain data in mailboxes, SharePoint or OneDrive sites, or public folders: That policy has been automatically converted to a retention policy that uses only the retain action—the policy won't delete content. No changes are needed from you for the same outcome as your configured preservation policy.
-
-You can find any configured preservation policies on the **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), or on the **Retention** page under **Information governance** in the [Security &amp; Compliance Center](https://protection.office.com/). You can edit a preservation policy to change the retention period, but you can't make other changes, such as adding or removing locations. 
-
 
 ## Related information
 
