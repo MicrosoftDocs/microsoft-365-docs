@@ -116,19 +116,8 @@ For our example, we notice that the text string *Start Service date of* always p
 
     ![Explanation library](../media/content-understanding/prefix-string.png) 
 
-## Add another explanation
 
-The mismatch tells us that the explanation we provided did not provide enough information to extract the service start date value to match our labeled files.  
-
-For our example, we notice that the text string "Start Service date of" always precedes the value. To help identify the Service Start Date we can create a phrase explanation.
-
-1. In the Explanation section, select **New**, and then type a name (for example, *Prefix String*).
-2. For the Type, select **Phrase list**.
-3. Use *Service Start Date of* as the value.
-4. Select **Save**.
- 
-
-### Train the model
+## Train the model
 
 Saving your explanation will start the training again, this time using both explanations in our example. If your model has enough information to extract the data from your labeled example files, you will see each file labeled with **Match**. 
 

@@ -14,8 +14,7 @@ description: "Overview of the Knowledge Management feature available in Project 
 
 # Knowledge Management Overview (Preview)
 
-> [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> [!Note] The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
 
 Graphic
