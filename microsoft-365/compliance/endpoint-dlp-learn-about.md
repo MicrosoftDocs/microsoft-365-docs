@@ -17,7 +17,7 @@ ms.collection:
 - SPO_Content
 search.appverid: 
 - MET150
-description: "Microsoft 365 Endpoint data loss prevention (EPDLP) extends monitoring of file activities and protective actions for those file to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
+description: "Microsoft 365 Endpoint data loss prevention extends monitoring of file activities and protective actions for those file to endpoints. Files are made visible in the Microsoft 365 compliance solutions "
 ---
 
 # Learn about Microsoft 365 Endpoint data loss prevention (preview)
