@@ -106,11 +106,6 @@ To see the full list of security features, see [Microsoft 365 Business Premium s
 
 - If you don't have a partner and want to get Microsoft 365 Business Premium, you can [buy it here](https://www.microsoft.com/microsoft-365/business) and follow the [sign up](sign-up.md) instructions.
 
-- You can also head over to a [Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=gm_fy18_hol_bopis_feature3&CustomerIntent=Consumer) to both buy Microsoft 365 Business Premium and get set-up help.
-
-    > [!NOTE]
-    > This link is for stores in U.S. only
-
 ## See also
 
 [Microsoft 365 Business Premium training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
