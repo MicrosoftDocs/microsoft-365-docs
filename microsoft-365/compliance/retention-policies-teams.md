@@ -1,5 +1,5 @@
 ---
-title: "Learn about retention policies for Teams"
+title: "Learn about retention for Teams"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -19,17 +19,17 @@ search.appverid:
 description: "Learn about retention policies that apply to Microsoft Teams."
 ---
 
-# Learn about retention policies for Microsoft Teams
+# Learn about retention for Microsoft Teams
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-The information in this article supplements [Learn about retention policies](retention-policies.md) because it has information that's specific to Microsoft Teams.
+The information in this article supplements [Learn about retention](retention.md) because it has information that's specific to Microsoft Teams.
 
-## How a retention policy works with Microsoft Teams
+## How retention works with Microsoft Teams
 
 You can use a retention policy to retain chats and channel messages in Teams. Teams chats are stored in a hidden folder in the mailbox of each user included in the chat, and Teams channel messages are stored in a similar hidden folder in the group mailbox for the team. 
 
-It's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data indefinitely. For this reason, we strongly recommend that you use the Teams locations to retain and delete this Teams data. Using the Teams locations will permanently delete data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information, see [Security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) and specifically, the [Information Protection Architecture](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
+It's important to understand that Teams uses an Azure-powered chat service that also stores this data, and by default this service stores the data indefinitely. For this reason, we recommend that you create a retention policy that uses the Teams locations to retain and delete this Teams data. This retention policy can permanently delete data from both the Exchange mailboxes and the underlying Azure-powered chat service. For more information, see [Security and compliance in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) and specifically, the [Information Protection Architecture](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture) section.
 
 Teams chats and channel messages are not affected by retention policies that are configured for user or group mailboxes. Even though Teams chats and channel messages are stored in Exchange, this Teams data is included only by a retention policy that's configured for the **Teams channel messages** and **Teams chats** locations.
 
@@ -66,27 +66,9 @@ When the retention policy is retain-only, or delete-only, the content's paths ar
 
 ## Skype for Business and Teams interop chats
 
-The same flow works for Skype for Business and Teams interop chats. When a Skype for Business chat comes into Teams, it becomes a message in a Teams chat thread and is ingested into the appropriate mailbox. Teams retention policies will apply to these messages from the Teams thread. 
+When a Skype for Business chat comes into Teams, it becomes a message in a Teams chat thread and is ingested into the appropriate mailbox. Teams retention policies will apply to these messages from the Teams thread. 
 
 However, if conversation history is turned on for Skype for Business and from the Skype for Business client side that history is being saved into a mailbox, that chat data isn't handled by a Teams retention policy. For this content, use a retention policy that's configured for Skype for Business.
-
-## Additional retention policies needed to support Teams
-
-Teams is more than just chats and channel messages. If you have teams that were created from a Microsoft 365 group (formerly Office 365 group), you should additionally configure a retention policy that includes that Microsoft 365 group by using the **Office 365 groups** location. This retention policy applies to content in the group's mailbox, site, and files.
-
-If the team site isn't connected to a Microsoft 365 group, you need a retention policy that includes the **SharePoint sites** or **OneDrive accounts** locations to retain and delete files in Teams:
-
-- Files that are shared in chat are stored in the OneDrive account of the user who shared the file. 
-
-- Files that are uploaded to channels are stored in the SharePoint site for the team.
-
-> [!TIP]
-> You can apply a retention policy to the files of just a specific team when it's not connected to a Microsoft 365 group by selecting the SharePoint site for the team, and the OneDrive accounts of users in the Team.
-
-It's possible that a retention policy that's applied to Microsoft 365 groups, SharePoint sites, or OneDrive accounts could delete a file that's referenced in a Teams chat or channel message before those messages get deleted. In this scenario, the file still displays in the Teams message, but when users select the file, they get a "File not found" error. This behavior isn't specific to retention policies and could also happen if a user manually deletes a file from SharePoint or OneDrive.
-
-> [!NOTE]
-> A retention policy that includes Teams channel messages or Teams chats can only include Teams locations. So to retain or delete other content that's supported by Teams, you must create a separate retention policy.
 
 ## Meetings and external users
 
@@ -108,11 +90,11 @@ If the user stored any files in Teams, see the [equivalent section](retention-po
 
 ## Limitations
 
-We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of:
+We're continuously working on optimizing retention functionality in Teams. In the meantime, here are a few limitations to be aware of when you use retention for Teams channel messages and chats:
   
 - **Teams requires a separate retention policy**. When you create a retention policy and toggle on the Teams locations, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations.
 
-- **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams isn't included because it requires a separate retention policy.
+- **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams channel messages and Teams chats aren't included because these require a separate retention policy.
 
 - **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Currently, retention in Teams applies to all the chat and channel message content when you select those locations.
 
@@ -130,14 +112,6 @@ We're continuously working on optimizing retention functionality in Teams. In th
     
     - When you select **Choose users** for the **Teams chats** location, you might see guests and non-mailbox users. Retention policies aren't designed for these users, so don't select them.
 
-## How to configure a retention policy for Microsoft Teams
+## Configuration guidance
 
-Follow the instructions for [Create and configure retention policies](create-retention-policies.md) and for the **Choose locations** page of the wizard, select the following options:
-
-- **Let me choose specific locations** > **Teams channel messages** and **Teams chats**
-
-A retention policy that applies to Teams can use [Preservation Lock](retention-policies.md#use-preservation-lock-to-comply-with-regulatory-requirements), which might be required for regulatory reasons.
-
-## Related information
-
-[Retention policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)
+If you're ready to configure retention in Microsoft 365, see [Get started with retention policies and retention labels](get-started-with-retention.md).
