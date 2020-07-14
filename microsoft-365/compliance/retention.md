@@ -199,7 +199,7 @@ In addition to retention label policies, you can also create one or more auto-ap
 
 Different types of retention labels can be published to different locations, depending on what the retention label does.
   
-|**If the retention label is…**|**Then the label policy can be applied to…**|
+| If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
 |Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
 |Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
