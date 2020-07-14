@@ -77,8 +77,6 @@ For example, if all documents in a SharePoint site should be retained for five y
 Unlike retention policies, retention settings from retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
  
 - Options to start the retention period from when the content was labeled or based on an event, in addition to the age of the content or when it was last modified.
-    
-    The option to start the retention period from when the content was labeled applies to documents in SharePoint sites and OneDrive accounts, and to email items with the exception of calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
 
 - Use [trainable classifiers](classifier-getting-started-with.md) to identify content to label.
 
@@ -157,6 +155,10 @@ With retention labels, you can:
     - Specific keywords that match a query you create.
     
     - Pattern matches for a trainable classifier.
+
+- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and to email items with the exception of calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
+
+- **Start the retention period when an event occurs**, such as employees leave the organization, or contracts expire.
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
@@ -251,7 +253,7 @@ Use the following table to help you identify whether to use a retention policy o
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
-|Event-based retention | No | Yes |
+|Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
