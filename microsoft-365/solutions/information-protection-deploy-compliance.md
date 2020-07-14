@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: 
-description: Learn how to use Complance Score and Compliance Manager to improve your level of protection for personal data.
+description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---
 
 # Use Compliance Score and Compliance Manager to manage improvement actions
