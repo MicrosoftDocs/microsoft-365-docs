@@ -89,6 +89,8 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your HR data.
 
+   ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
+
    a. Job ID. You'll need this job ID to run the script in the next step. You can copy it from this page or from the flyout page for the connector.
    
    b. Link to sample script. Click **here** to go to the Github site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again in Step 4.
