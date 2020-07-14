@@ -48,9 +48,9 @@ The remainder of this topic describes the step-by-step procedures to create a cu
   
 [Step 1: Create a custom retention tag for the Recoverable Items folder](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-[[Step 2: Create a new Exchange retention policy for mailboxes on hold](#step-2-create-a-new-Exchange retention-policy-for-mailboxes-on-hold)
+[Step 2: Create a new Exchange retention policy for mailboxes on hold](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
 
-[Step 3: Apply the new Exchange retention policy to mailboxes on hold](#step-3-apply-the-new-Exchange-retention-policy-to-mailboxes-on-hold)
+[Step 3: Apply the new Exchange retention policy to mailboxes on hold](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [(Optional) Step 4: Run the Managed Folder Assistant to apply the new retention settings](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
   
