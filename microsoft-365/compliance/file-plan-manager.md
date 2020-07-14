@@ -37,7 +37,7 @@ File plan can be used for all retention labels, even if they don't mark content 
 
 ![File plan page](../media/compliance-file-plan.png)
 
-For information about what retention labels are and how to use them, see [Learn about retention labels](labels.md).
+For information about what retention labels are and how to use them, see [Learn about retention policies and retention labels](retention.md).
 
 ## Accessing file plan
 
@@ -177,4 +177,6 @@ When the import is complete, you can now add the retention labels to a new reten
 
 ## Next steps
 
-For more information about creating and editing retention labels and their policies, see [Create, publish, and auto-apply retention labels](create-retention-labels.md).
+For more information about creating and editing retention labels and their policies, see the following guidance:
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)

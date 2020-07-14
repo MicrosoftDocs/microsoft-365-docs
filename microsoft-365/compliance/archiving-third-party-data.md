@@ -68,7 +68,7 @@ The three primary eDiscovery tools in Microsoft 365 are Content search, Core eDi
 
 ### Retention policies
 
-You can apply a [retention policy](retention-policies.md) to user mailboxes to retain and then delete third-party data (and other mailbox content) after retention period expires. You can also use retention policies to delete third-party data of a certain age or trigger a disposition review when the retention period expires.
+You can apply a [retention policy](retention.md) to user mailboxes to retain and then delete third-party data (and other mailbox content) after retention period expires. You can also use retention policies to delete third-party data of a certain age or trigger a disposition review when the retention period expires.
 
 ### Records management
 
