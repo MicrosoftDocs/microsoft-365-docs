@@ -260,9 +260,9 @@ Use the following table to help you identify whether to use a retention policy o
 
 Note that you can use both retention policies and retention labels as complementary retention methods. For example:
 
-- You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
+1. You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
 
-- You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
+2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
 For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
 
