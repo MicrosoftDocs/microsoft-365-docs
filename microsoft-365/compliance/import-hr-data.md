@@ -44,7 +44,7 @@ For step-by-step instructions for creating an app in AAD, see [Register an appli
 
 ## Step 2: Prepare a CSV file with your HR data
 
-The next step is to create a CSV file that contains information about employees who have left your organization. As explained in the Before You Begin section, you'll need to determine how to generate this CSV file from your organization's HR system. The following example shows a completed CSV file (opened in NotePad) that contains the three required parameters (columns). It's much easier to edit the CSV file in Microsoft Excel.
+The next step is to create a CSV file that contains information about employees who have left your organization. As explained in the Before You Begin section, you'll need to determine how to generate this CSV file from your organization's HR system. The following example shows a completed CSV file (opened in Note Pad) that contains the three required parameters (columns). It's much easier to edit the CSV file in Microsoft Excel.
 
 ```text
 EmailAddress,TerminationDate,LastWorkingDate
@@ -67,7 +67,7 @@ After you create the CSV file with the required HR data, store it on the same sy
 
 ## Step 3: Create the HR connector
 
-The next step is to create an HR connector in the Microsoft 365 compliance center. After you run the script in Step 4, the HR connector that you create will ingest the HR data from the CSV file to your Microsoft 365 organization. In this step, be sure to copy the JobId that's generated when you create the connector. You'll use the JobId when you run the script.
+The next step is to create an HR connector in the Microsoft 365 compliance center. After you run the script in Step 4, the HR connector that you create will ingest the HR data from the CSV file to your Microsoft 365 organization. In this step, be sure to copy the job ID that's generated when you create the connector. You'll use the job ID when you run the script.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com) and then click **Data connectors** in the left nav.
 
@@ -91,15 +91,15 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
 
-   a. Job ID. You'll need this job ID to run the script in the next step. You can copy it from this page or from the flyout page for the connector.
+   a. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
    
-   b. Link to sample script. Click **here** to go to the Github site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again in Step 4.
+   b. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again in Step 4. This link is also available on the connector flyout page.
 
 7. Click **Done**.
 
    The new connector is displayed in the list on the **Connectors** tab. 
 
-8. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector. 
+8. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector.
 
    ![Flyout page for new HR connector](../media/HRConnectorWizard7.png)
 
@@ -111,11 +111,9 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Go to window that you left open from the previous step to access the Github site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
+1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
 
 2. Click the **Raw** button to display the script in text view.
-
-   ![Click Raw to display and then copy the script text](../media/DataConnectorsHRScript.png)
 
 3. Copy all the lines in the sample script and then save them to a text file.
 
@@ -135,10 +133,10 @@ The last step in setting up an HR connector is to run a sample script that will 
 
    |**Parameter**|**Description**
    |:-----|:-----|:-----|
-   |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenantId for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
+   |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
    |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
    |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
-   |`jobId`|This is the Job Id for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
+   |`jobId`|This is the job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
    |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
    
@@ -164,7 +162,7 @@ After you create the HR connector and run the script to upload your HR data, you
 
    ![HR connector log file displays number rows from CSV file that were uploaded](../media/HRConnectorLogFile.png)
 
-   The **RecordsSaved** field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the **RecordsSaved** fields is 4, if the script successfully uploaded all the rows in the CSV file.
+   The `RecordsSaved` field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the `RecordsSaved` fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
 If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
 
