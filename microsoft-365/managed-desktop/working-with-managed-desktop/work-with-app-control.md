@@ -25,7 +25,7 @@ To add a new app, follow these steps:
 
 ## Add (or remove) a trusted signer
 
-When you open an exemption request, you'll need to provide some important publisher details first. Then follow these steps:
+When you open a signer request, you'll need to provide some important publisher details first. Then follow these steps:
 
 1. [Gather publisher details](#gather-publisher-details).
 2. Open a ticket with Microsoft Managed Desktop Operations to request the signer rule and include following details:  

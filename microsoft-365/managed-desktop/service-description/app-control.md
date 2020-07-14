@@ -38,9 +38,21 @@ If a user other than an administrator could have added an app or script to a dev
 
 ### Signer requests
 
-You inform us of which apps are provided by software vendors you trust by filing a *signer request*. By doing so, we add that trust information into the baseline application control policy and allow any software signed with that publisher's certificate to run on your devices. {DOES that mean that once a *publisher* is trusted, that *any* app signed by that publisher will run? Or do you have to file on a per-app basis?}
+You inform us of which apps are provided by software vendors you trust by filing a *signer request*. By doing so, we add that trust information into the baseline application control policy and allow any software signed with that publisher's certificate to run on your devices. {DOES that mean that once a *publisher* is trusted, that *any* app signed by that publisher will run without further action? Or do you have to file on a per-app basis?}
 
 ## Audit and Enforced policies
+
+Microsoft Managed Desktop uses two Microsoft Intune policies to provide app control:
+
+### Audit policy
+This policy creates logs to record whether an app or script would be blocked by the Enforced policy. Audit policies don't enforce app control rules and are meant for testing purposes to identify whether an application will require a publisher exemption. It logs warnings (8003 or 8006 events) in Event Viewer instead of blocking the execution or installation of specified apps or script.
+
+### Enforced policy
+This policy blocks untrusted apps and scripts from running and creates logs whenever an app or script is blocked. Enforced policies prevent standard {what's a "standard user"?} users from executing apps or scripts stored in user-writable directories.
+
+Devices in the Test group have an Audit policy applied so that you can use them to validate whether any applications will cause issues. All other groups (First, Fast, and Broad) use an Enforced policy, so end users in those groups won't be able to run apps or scripts that are not exempted by default with the Microsoft Managed Desktop base policy.
+
+
 
 
 
