@@ -149,11 +149,8 @@ With retention labels, you can:
 - **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
-   
     - Specific types of sensitive information.
-    
     - Specific keywords that match a query you create.
-    
     - Pattern matches for a trainable classifier.
 
 - **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and to email items with the exception of calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
@@ -293,7 +290,7 @@ Finally, a retention policy or retention label cannot permanently delete any con
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). Then, use any of the following cmdlets:
+To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). Then, use any of the following cmdlets:
 
 - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
 
@@ -366,7 +363,7 @@ If you have configured SharePoint sites for content type policies or information
 
 ## Next steps
 
-If you are ready to create retention polices, see [Create and configure retention policies](create-retention-policies.md).
+If you are ready to create retention policies, see [Create and configure retention policies](create-retention-policies.md).
 
 To create and apply retention labels:
 - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
