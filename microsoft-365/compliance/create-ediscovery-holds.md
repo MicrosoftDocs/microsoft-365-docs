@@ -186,7 +186,7 @@ After a mailbox, SharePoint site, or OneDrive account is removed from an eDiscov
 
 - **SharePoint and OneDrive sites:** Any SharePoint or OneDrive content that's being retained in the Preservation Hold library isn't deleted during the 30-day delay hold period after a site is removed from an eDiscovery hold. This is similar to what happens when a site is released from a retention policy. Additionally, you can't manually delete this content in the Preservation Hold library during the 30-day delay hold period. 
 
-   For more information, see [Releasing a retention policy](retention-policies.md#releasing-a-retention-policy).
+   For more information, see [Releasing a retention policy](retention.md#releasing-a-retention-policy).
 
 A delay hold is also applied to content locations on hold when you close a Core eDiscovery case because holds are turned off when a case is closed. For more information about closing a case, see [Close, reopen, and delete a Core eDiscovery case](close-reopen-delete-core-ediscovery-cases.md).
 
