@@ -23,7 +23,7 @@ Assign your admin user accounts any of the following roles to ensure access:
 |Service Support Administrator     | Admins with this role will have **read and write permissions** to all features in the Microsoft Managed Desktop Admin portal.         |
 
 > [!IMPORTANT]
-> Only the Global Administrator role has the necessary permissions to *enroll* your organization in Microsoft Managed Desktop.
+> Only the Global Administrator role has the necessary permissions to *enroll* your organization in Microsoft Managed Desktop. Be aware that Azure Active Directory roles will give user accounts privileges across a variety of Microsoft services. After completing enrollment with Microsoft Managed Desktop, you should always use the role with the *least* privileges necessary to accomplish your other tasks.
 
 ## Assigning roles to administrators
 
