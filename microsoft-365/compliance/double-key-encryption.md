@@ -102,7 +102,6 @@ Ensure that you have the following software installed on each client computer wh
 |**Microsoft Office**, </br>versions *.12711 or later     |         |
 |**Azure Information Protection Unified Labeling Client**, versions 2.7.93.0 or later | Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).||
 
-
 ### Cloning the DKE GIT repository
 
 Microsoft supplies the DKE source files in a GitHub repository. You'll clone the repository to build the project locally for your organization's use. The DKE GitHub repository is located at [https://github.com/Azure-Samples/customer-key-store](https://github.com/Azure-Samples/customer-key-store).
