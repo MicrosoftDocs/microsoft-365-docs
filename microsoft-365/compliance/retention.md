@@ -77,8 +77,6 @@ For example, if all documents in a SharePoint site should be retained for five y
 Unlike retention policies, retention settings from retention labels persist with the content if it’s copied or moved to a different Microsoft 365 location. In addition, retention labels have the following capabilities that retention policies don't support: 
  
 - Options to start the retention period from when the content was labeled or based on an event, in addition to the age of the content or when it was last modified.
-    
-    The option to start the retention period from when the content was labeled applies to documents in SharePoint sites and OneDrive accounts, and to email items with the exception of calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
 
 - Use [trainable classifiers](classifier-getting-started-with.md) to identify content to label.
 
@@ -151,12 +149,13 @@ With retention labels, you can:
 - **Enable people in your organization to apply a retention label manually** to content in Outlook and Outlook on the web, OneDrive, SharePoint, and Microsoft 365 groups. Users often know best what type of content they're working with, so they can classify it and have the appropriate retention settings applied. 
     
 - **Apply retention labels to content automatically** if it matches specific conditions, such as when the content contains: 
-   
     - Specific types of sensitive information.
-    
     - Specific keywords that match a query you create.
-    
     - Pattern matches for a trainable classifier.
+
+- **Start the retention period from when the content was labeled** for documents in SharePoint sites and OneDrive accounts, and to email items with the exception of calendar items. If you apply a retention label with this configuration to a calendar item, the retention period starts from when it is sent.
+
+- **Start the retention period when an event occurs**, such as employees leave the organization, or contracts expire.
 
 - **Apply a default retention label to a document library, folder, or document set** in SharePoint, so that all documents that are stored in that location inherit the default retention label.
 
@@ -200,7 +199,7 @@ In addition to retention label policies, you can also create one or more auto-ap
 
 Different types of retention labels can be published to different locations, depending on what the retention label does.
   
-|**If the retention label is…**|**Then the label policy can be applied to…**|
+| If the retention label is… | Then the label policy can be applied to… |
 |:-----|:-----|
 |Published to admins and end users  <br/> |Exchange, SharePoint, OneDrive, Microsoft 365 Groups  <br/> |
 |Auto-applied based on sensitive information types or trainable classifiers  <br/> |Exchange (all mailboxes only), SharePoint, OneDrive  <br/> |
@@ -251,16 +250,16 @@ Use the following table to help you identify whether to use a retention policy o
 |UI presence for end users | No | Yes |
 |Persists if the content is moved | No | Yes, within Microsoft 365 |
 |Declare item as a record| No | Yes |
-|Event-based retention | No | Yes |
+|Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
 Note that you can use both retention policies and retention labels as complementary retention methods. For example:
 
-- You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
+1. You create and configure a retention policy that automatically deletes content five years after it's last modified, and apply the policy to all OneDrive accounts.
 
-- You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
+2. You create and configure a retention label that keeps content forever and add this to a label policy that you publish to all OneDrive accounts. You explain to users how to manually apply this label to specific documents that should be excluded from automatic deletion if not modified after five years.
 
 For more information about how retention policies and retention labels work together and how to determine their combined outcome, see the next section that explains the principles of retention and what takes precedence.
 
@@ -281,7 +280,7 @@ Explanation for the four different levels:
     
 3. **Explicit inclusion wins over implicit inclusion.** This means: 
     
-    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned to the document library. For example, if the explicit retention label is configured to retain content for 10 years, but a retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit rather than explicit, because they're applied automatically by Microsoft 365.
+    1. If a retention label with retention settings is manually assigned by a user to an item, such as an Exchange email or OneDrive document, that retention label takes precedence over both a retention policy assigned at the site or mailbox level and a default retention label assigned to the document library. For example, if the explicit retention label is configured to retain content for ten years, but a retention policy assigned to the site is configured to retain content for only five years, the retention label takes precedence. Auto-applied retention labels are considered implicit rather than explicit, because they're applied automatically by Microsoft 365.
     
     2. If a retention policy includes a specific location, such as a specific user's mailbox or OneDrive account, that retention policy takes precedence over another retention policy that applies to all users' mailboxes or OneDrive accounts but doesn't specifically include that user's mailbox.
     
@@ -291,7 +290,7 @@ Finally, a retention policy or retention label cannot permanently delete any con
 
 ## PowerShell cmdlets for retention policies and retention labels
 
-To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center Powershell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). Then, use any of the following cmdlets:
+To use the retention cmdlets, you must first [connect to the Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell). Then, use any of the following cmdlets:
 
 - [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
 
@@ -355,13 +354,6 @@ If you've previously used any of the eDiscovery holds for the purpose of informa
 ### Retention policies and SharePoint content type policies or information management policies
 
 If you have configured SharePoint sites for content type policies or information management policies to retain content for a list or library, those policies are ignored while a retention policy is in effect. 
-  
-### Preservation policies are converted to retention policies
-
-If you were using a preservation policy to retain data in mailboxes, SharePoint or OneDrive sites, or public folders: That policy has been automatically converted to a retention policy that uses only the retain action—the policy won't delete content. No changes are needed from you for the same outcome as your configured preservation policy.
-
-You can find any configured preservation policies on the **Policies** page in the [Microsoft 365 compliance center](https://compliance.microsoft.com/), or on the **Retention** page under **Information governance** in the [Security &amp; Compliance Center](https://protection.office.com/). You can edit a preservation policy to change the retention period, but you can't make other changes, such as adding or removing locations. 
-
 
 ## Related information
 
@@ -371,7 +363,7 @@ You can find any configured preservation policies on the **Policies** page in th
 
 ## Next steps
 
-If you are ready to create retention polices, see [Create and configure retention policies](create-retention-policies.md).
+If you are ready to create retention policies, see [Create and configure retention policies](create-retention-policies.md).
 
 To create and apply retention labels:
 - [Create retention labels and apply them in apps](create-apply-retention-labels.md)
