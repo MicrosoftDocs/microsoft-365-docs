@@ -285,34 +285,40 @@
           href: enable-unlimited-archiving.md
         - name: Set up an archive and deletion policy for mailboxes
           href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-    - name: Retain data
+    - name: Retain and delete data
       items: 
-        - name: Learn about retention policies
-          href: retention-policies.md
-        - name: Create and configure retention policies
+        - name: Learn about retention
+          items:
+            - name: Retention policies and labels
+              href: retention.md
+            - name: Retention for SharePoint and OneDrive
+              href: retention-policies-sharepoint.md
+            - name: Retention for Microsoft Teams
+              href: retention-policies-teams.md
+            - name: Retention for Exchange
+              href: retention-policies-exchange.md
+        - name: Get started with retention
+          href: get-started-with-retention.md
+        - name: Create retention policies
           href: create-retention-policies.md
-        - name: Retention for SharePoint and OneDrive
-          href: retention-policies-sharepoint.md
-        - name: Retention for Microsoft Teams
-          href: retention-policies-teams.md
-        - name: Retention for Exchange
-          href: retention-policies-exchange.md
-        - name: File plan
+        - name: Use file plan
           href: file-plan-manager.md
-        - name: Learn about retention labels
-          href: labels.md
-        - name: Create, publish, and auto-apply retention labels
-          href: create-retention-labels.md
+        - name: Create retention labels and apply them in apps
+          href: create-apply-retention-labels.md
+        - name: Apply a retention label to content automatically
+          href: apply-retention-labels-automatically.md
         - name: Comply with SEC Rule 17a-4
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
-        - name: Use PowerShell to create and publish retention labels
+        - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Event-based retention
-          href: event-driven-retention.md
-        - name: Automate event-based retention
-          href: automate-event-driven-retention.md
-        - name: Manage the lifecycle of SharePoint documents
-          href: auto-apply-retention-labels-scenario.md
+        - name: Use event-based retention
+          items: 
+            - name: Start retention when an event occurs
+              href: event-driven-retention.md
+            - name: Automate event-based retention
+              href: automate-event-driven-retention.md
+            - name: Manage the lifecycle of SharePoint documents
+              href: auto-apply-retention-labels-scenario.md
     - name: Dispose of data
       href: disposition.md
     - name: Manage inactive mailboxes
@@ -347,34 +353,6 @@
           href: records-management.md
         - name: Records
           href: records.md
-        - name: File plan
-          items: 
-            - name: Manage retention labels
-              href: file-plan-manager.md
-            - name: Learn about retention labels
-              href: labels.md
-            - name: Create and publish retention labels
-              href: create-retention-labels.md
-            - name: Use PowerShell to create and publish retention labels at scale
-              href: bulk-create-publish-labels-using-powershell.md
-            - name: View label usage with label analytics
-              href: label-analytics.md
-            - name: View label activity for documents
-              href: view-label-activity-for-documents.md
-            - name: View the data governance reports
-              href: view-the-data-governance-reports.md
-        - name: Events
-          items: 
-            - name: Event-based retention
-              href: event-driven-retention.md
-            - name: Automate event-based retention
-              href: automate-event-driven-retention.md
-        - name: Disposition
-          href: disposition.md
-        - name: More about records management
-          items: 
-            - name: Watch videos about records management
-              href: https://go.microsoft.com/fwlink/?linkid=867039
 - name: Manage eDiscovery
   items:
     - name: eDiscovery in Microsoft 365

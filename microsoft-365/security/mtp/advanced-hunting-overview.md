@@ -39,7 +39,7 @@ We recommend going through several steps to quickly get up and running with adva
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
+| **Get a feel for the language** | Advanced hunting is based on [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
 | **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries and drill down to get richer information. | [Work with query results](advanced-hunting-query-results.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-tables.md) |
 | **Leverage predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | - [Use shared queries](advanced-hunting-shared-queries.md)<br>- [Go hunt](advanced-hunting-go-hunt.md) |
@@ -49,6 +49,11 @@ We recommend going through several steps to quickly get up and running with adva
 ## Get access
 To use advanced hunting or other [Microsoft Threat Protection](microsoft-threat-protection.md) capabilities, you need to be assigned an appropriate role in Azure AD. Note that your access to endpoint data is influenced by role-based access control settings in Microsoft Defender ATP. [Read about managing access to Microsoft Threat Protection](mtp-permissions.md)
 
+## Data freshness and update frequency
+Advanced hunting data can be categorized into two distinct types, each consolidated differently.
+
+- **Event or activity data** — populates tables about alerts, security events, system events, and routine assessments. Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to the corresponding cloud services. For example, you can start to query event data from healthy sensors on workstations or domain controllers almost immediately after they are available on Microsoft Defender ATP and Azure ATP.
+- **Entity data** — populates tables with consolidated information about users and devices. This data comes from both relatively static data sources, such as Active Directory entries, and dynamic sources, such as event logs. To provide fresh data, tables are updated every 15 minutes with any new information, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
 
 ## Related topics
 - [Learn the query language](advanced-hunting-query-language.md)
