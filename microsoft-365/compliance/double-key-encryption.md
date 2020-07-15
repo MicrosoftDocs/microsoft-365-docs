@@ -19,7 +19,7 @@ ms.collection:
 
 ---
 
-# Double Key Encryption (DKE) (public preview)
+# Double Key Encryption (DKE)
 
 > *Applies to: [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
@@ -27,7 +27,7 @@ ms.collection:
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Double Key Encryption (DKE) configurations enable you to use the unified labeling client to protect highly sensitive content while maintaining full control of your key.
+This public preview version of Double Key Encryption (DKE) enables you to use the unified labeling client to protect highly sensitive content while maintaining full control of your key.
 
 Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure Key Vault, and you hold the other key.
 
@@ -41,6 +41,8 @@ The following video shows how Double Key Encryption works to secure your content
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
 
+<!-- WE ARE ASSUMING EVERYONE WILL WATCH THE VIDEO TO LEARN THE ARCHITECTURE.*** This won't be sufficient for GA. The video needs to have subtitles, loc, etc. as well -->
+
 ## Recommended scenarios for DKE
 
 If your organizations has  any of the following requirements, you can use DKE to help secure your content:
@@ -49,37 +51,40 @@ If your organizations has  any of the following requirements, you can use DKE to
 - You don't want Microsoft to have access protected data on its own.
 - You have regulatory requirements to hold keys within a geographical boundary. All customer-held keys for data encryption and decryption are maintained in your data center.
 
-## Supported environments for storing and viewing DKE-protected content
+## System and licensing requirements for DKE
 
-|Support  |Description  |
-|---------|---------|
-|**Supported applications**     |  DKE supports [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients with Windows, including Word, Excel, and PowerPoint.        |
-|**Online content support**     |   DKE supports documents and emails stored online in both Microsoft SharePoint and OneDrive for Business. </br>Encrypted content can be shared by email.</br> </br>Encrypted documents can't be viewed online. Customers must view protected content locally because they must provide the second, customer-held key in order to decrypt the content.      |
-|**AIP requirements**     | DKE requires a production implementation of Azure Information Protection.
-        |
+**Public preview**. This is the public preview version of DKE. For licensing information about this release, see ***
 
+**Azure Information Protection**. DKE requires a production implementation of Azure Information Protection.
 For more information about the software required to deploy DKE, see [Installing software prerequisites](#installing-software-prerequisites).
 
-## Deploying DKE
+## Supported environments for storing and viewing DKE-protected content
 
-Microsoft provides you with maximum security and control over your deployment by supplying the DKE source files in a GitHub repository. Clone the repository to build the project locally for your own organization's use.
+| Support | Description |
+|---------|-------------|
+|**Supported applications** | [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients with Windows, including Word, Excel, and PowerPoint. |
+|**Online content support** | Documents and emails stored online in both Microsoft SharePoint and OneDrive for Business. Encrypted content can be shared by email. You can't view encrypted documents online. Instead, you must view protected content locally because you must provide the second, customer-held key in order to decrypt the content. ||
+
+## Deploy DKE
+
+Microsoft supplies the DKE source files in a GitHub repository. Clone the repository to build the project locally for your organization's use.
 
 To deploy DKE:
 
 1. [Install software prerequisites](#installing-software-prerequisites)
-1. [Clone the DKE Git repository](#cloning-the-dke-git-repository)
+1. [Clone the DKE GitHub repository](#cloning-the-dke-git-repository)
 1. [Modify application settings](#modifying-application-settings)
 1. [Generate test keys](#generate-test-keys)
 1. [Build the project](#building-the-project)
-1. [Publishing a customer key store to Azure](#publishing-a-customer-key-store-to-azure)
+1. [Publish a key store to Azure](#publishing-a-key-store-to-azure)
 
-Make sure to [validate your deployment](#validating-your-deployment) and then [register your key store](#registering-your-key-store).
+Make sure to [validate your deployment](#validating-your-deployment) and then [register your key store](#register-your-key-store).
 
-When you're done, continue by [creating labels for content encryption using DKE](#creating-labels-using-dke).
+When you're done, [create labels to encrypt content using DKE](#create-labels-using-dke).
 
-### Installing software prerequisites
+### Install software prerequisites
 
-Before cloning the DKE GitHub repository, make sure you have the following software installed locally:
+Before you clone the DKE GitHub repository, make sure you have the following software installed locally:
 
 |Software  |Details |
 |---------|---------|
