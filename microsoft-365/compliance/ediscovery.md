@@ -84,7 +84,6 @@ The Advanced eDiscovery solution in Microsoft 365 (also called *Advanced eDiscov
 |[Export case data](exporting-data-ediscover20.md)|Learn about exporting data from a case for external review.|
 |||
 
-
 ## Roadmap
-To see what's on the future roadmap for Microsoft 365 eDiscovery, check out the Microsoft Roadmap, and filter down to the Microsoft 365 eDiscovery product: https://aka.ms/eDiscoRoadMap
 
+To see what eDiscovery features have been launched, are rolling out, or in development, please visit the [Microsoft 365 Roadmap](https://aka.ms/eDiscoRoadMap).
