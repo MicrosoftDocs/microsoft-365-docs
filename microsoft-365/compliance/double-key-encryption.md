@@ -67,7 +67,7 @@ For more information about the software required to deploy DKE, see [Installing 
 
 ## Deploy DKE
 
-Microsoft supplies the DKE source files in a GitHub repository. Clone the repository to build the project locally for your organization's use.
+These are the general steps you'll take to set up DKE for your organization.
 
 To deploy DKE:
 
@@ -84,7 +84,7 @@ When you're done, [create labels to encrypt content using DKE](#create-labels-us
 
 ### Install software prerequisites
 
-Before you clone the DKE GitHub repository, make sure you have the following software installed locally:
+Ensure that you have the following software installed on the computer where you want to set up the DKE service:
 
 |Software  |Details |
 |---------|---------|
@@ -95,9 +95,17 @@ Before you clone the DKE GitHub repository, make sure you have the following sof
 |**Azure Information Protection Unified Labeling Client**, versions 2.7.93.0 or later | Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).|
 |**OpenSSL** | You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed in order to [generate test keys](#generate-test-keys) after deploying DKE.
 
+Ensure that you have the following software installed on each client computer where you want to protect and consume protected documents:
+
+|Software  |Details |
+|---------|---------|
+|**Microsoft Office**, </br>versions *.12711 or later     |         |
+|**Azure Information Protection Unified Labeling Client**, versions 2.7.93.0 or later | Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).||
+
+
 ### Cloning the DKE GIT repository
 
-The DKE git repository is located at [https://github.com/Azure-Samples/customer-key-store](https://github.com/Azure-Samples/customer-key-store).
+Microsoft supplies the DKE source files in a GitHub repository. You'll clone the repository to build the project locally for your organization's use. The DKE GitHub repository is located at [https://github.com/Azure-Samples/customer-key-store](https://github.com/Azure-Samples/customer-key-store).
 
 The following instructions are intended for inexperienced git or Visual Studio Code users who need to deploy DKE:
 
