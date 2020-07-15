@@ -38,6 +38,6 @@ You can download a .csv file with a report for the selected process.
     
 3. Click **Download CSV**. The requested report is generated and downloaded.
     
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)

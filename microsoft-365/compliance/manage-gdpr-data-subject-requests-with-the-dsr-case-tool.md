@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: "The GDPR gives EU citizens (called data subjects) specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format. A formal request by a data subject to take an action on their personal data is called a Data Subject Request or DSR. You can use DSR Cases in the compliance center in Office 365 and Microsoft 365 to manage your organization's DSR investigations."
+description: Learn how to manage EU General Data Protection Regulation (GDPR) data subject requests with the DSR case tool.
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -242,7 +242,7 @@ Here are some examples of the conditions that you can add to the built-in search
     
 - **Message type ( `kind`)** – Specifies the type of email item to search for. For example, you can use the syntax  `kind:email OR kind:im` to return only email messages and Skype for Business conversations or one-to-one chats in Microsoft Teams. 
     
-- **Compliance tag (`compliancetag`)** – Specifies a label assigned to an email message or a document. This condition returns items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Overview of labels in Office 365](labels.md).
+- **Compliance tag (`compliancetag`)** – Specifies a label assigned to an email message or a document. This condition returns items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Learn about retention policies and retention labels in Office 365](retention.md).
     
 For a list and description of all the conditions available in the DSR case tool, see [Search conditions](keyword-queries-and-search-conditions.md#search-conditions) in the "Keyword queries and search conditions for Content Search" article. 
   

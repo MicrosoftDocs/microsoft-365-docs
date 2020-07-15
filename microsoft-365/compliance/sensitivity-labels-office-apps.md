@@ -14,7 +14,8 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about how users work with sensitivity labels in Office apps for the desktop, Office apps for mobile, and Office apps for the web. Find out which apps support sensitivity labels."
+description: Learn about how users work with sensitivity labels in Office apps for desktop, mobile, and the web, and which apps support sensitivity labels.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use sensitivity labels in Office apps
@@ -37,6 +38,9 @@ For each capability, the following tables list the minimum version you need for 
 
 New versions of the apps are made available at different times for different update channels. For more information, including how to configure your update channel so that you can test a new labeling capability that you're interested in, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/DeployOffice/overview-update-channels). New capabilities that are in private preview are not included in the table but you might be able to join these previews by nominating your organization for the [Microsoft Information Protection private preview program](https://aka.ms/mip-preview).
 
+> [!NOTE]
+> The names of the update channels for Office apps have recently changed. For example, Monthly Channel is now Current Channel, and Office Insider is now Beta Channel. For more information, see [Changes to update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/update-channels-changes).
+
 Additional capabilities are available when you install the Azure Information Protection unified labeling client, which runs on Windows computers only. For these details, see [Compare the labeling clients for Windows computers](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#compare-the-labeling-clients-for-windows-computers).
 
 ### Sensitivity label capabilities in Word, Excel, and PowerPoint
@@ -46,15 +50,15 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |Capability                                                                                                        |Windows Desktop |Mac Desktop |iOS    |Android      |Web                                                         |
 |------------------------------------------------------------------------------------------------------------------|----------------|------------|-------|-------------|------------------------------------------------------------|
 |[Manually apply, change, or remove label](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | Under review                                                        |
+|[Apply a default label](sensitivity-labels.md#what-label-policies-can-do)                                         | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
 |[Require a justification to change a label](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Provide help link to a custom help page](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Mark the content](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Assign permissions now](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Monthly Channel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (2003+) | [Monthly Channel](https://docs.microsoft.com/DeployOffice/overview-update-channels#monthly-channel-for-microsoft-365-apps) (16.35+)   | Under review   | Under review         | Under review                                                        |
+|[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) (2003+) | 16.35+   | Under review   | Under review         | Under review                                                        |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review            | Under review        | Under review   | Under review         | Under review                                                        |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Office Insider](https://office.com/insider)                                  | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: In [Beta Channel](https://office.com/insider)                                  | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |Support [AutoSave](https://support.office.com/article/6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) and [coauthoring](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) on labeled and protected documents | Under review | Under review | Under review | Under review | [Yes - opt-in](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
@@ -71,7 +75,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: Rolling out to [Office Insider](https://office.com/insider)                       | Under review                    | Under review           | Under review               | Yes |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: Rolling out to [Beta Channel](https://office.com/insider)                       | Under review                    | Under review           | Under review               | Yes |
 |
 
 ## Office built-in labeling client and other labeling solutions
@@ -180,7 +184,7 @@ In addition to restricting access to users in your own organization, you can ext
 
 If external users do not have an account in Azure Active Directory, you can create a guest account for them in your tenant. For their email address, you can specify any  email address that they already use. For example, their Gmail address. This guest account can also be used to access a shared document in SharePoint or OneDrive when you have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
-External users can also use and create a Microsoft account for encrypted documents when they use Microsoft 365 Apps ([formally Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) on Windows. This capability is not yet supported for MacOS, Android, or iOS. For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
+External users can also use and create a Microsoft account for encrypted documents when they use Microsoft 365 Apps ([formerly Office 365 apps](https://docs.microsoft.com/deployoffice/name-change)) on Windows. This capability is not yet supported for MacOS, Android, or iOS. For example, somebody shares an encrypted document with them, and the encryption settings specify their Gmail email address. This user can create their own Microsoft account that uses their Gmail email address. Then, after signing in with this account, they can open the document and edit it, according to the usage restrictions specified for that user. For a walkthrough example of this scenario, see [Opening and editing the protected document](https://docs.microsoft.com/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document).
 
 > [!NOTE]
 > The email address for the Microsoft account must match the email address that's specified to restrict access for the encryption settings.

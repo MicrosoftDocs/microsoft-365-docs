@@ -12,9 +12,9 @@ ms.service: O365-seccomp
 ms.collection: 
 - M365-security-compliance
 localization_priority: Normal
-search.appverid: 
-- MET150
-description: "This insight-driven recommendation helps your organization keep sensitive content secure when it's stored and shared in Microsoft 365 by informing you when there's a possible gap in your DLP policy coverage. You'll see this recommendation on the Home page of the Security &amp; Compliance Center, if your documents contain any of the top-five most common types of sensitive information but aren't protected by a DLP policy."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to create and edit the recommended data loss prevention (DLP) policy for your organization.
 ---
 
 # Get started with DLP policy recommendations

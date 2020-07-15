@@ -149,19 +149,19 @@ We've got two updates for Groups this month:
 
 #### For your users
 
-- [Schedule a meeting](https://support.office.com/article/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
-- [Join a Teams meeting](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Create an org-wide team](https://support.office.com/article/create-a-company-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Create a Team with guests](https://support.office.com/article/create-a-team-with-guests-11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Join a Team as a guest](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Create a group email address](https://support.office.com/article/create-a-company-email-address-ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Schedule a meeting](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Join a Teams meeting](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Create an org-wide team](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+- [Create a Team with guests](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
+- [Join a Team as a guest](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Create a group email address](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
 
 #### For admins and business owners
 
-- [Empower your small business with remote work](https://support.office.com/article/empower-your-small-business-with-remote-work-9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Running a remote small business](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Sign up for Microsoft Business Basic](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Setting up two-factor sign-in](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Empower your small business with remote work](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
+- [Running a remote small business](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Sign up for Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Setting up two-factor sign-in](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ## March 2020
 
@@ -272,12 +272,12 @@ The Resource mailboxes list has been updated to the new style. In the Microsoft 
 
 Check out the small business admin training that we released in January:
 
-- [Create your business website](https://support.office.com/article/3325d50e-d131-403c-a278-7f3296fe33a9)
-- [Find answers and help](https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988)
-- [Get help or support](https://support.office.com/article/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
-- [Delete a user](https://support.office.com/article/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
-- [Choose a Microsoft subscription](https://support.office.com/article/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
-- [Overview of Microsoft 365 for business security](https://support.office.com/article/3274b159-a825-46d7-9421-7d6e209389d1)
+- [Create your business website](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9)
+- [Find answers and help](https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988)
+- [Get help or support](https://support.microsoft.com/office/18948a4c-3eb1-4b30-b1bc-a4cc29eb7655)
+- [Delete a user](https://support.microsoft.com/office/6bcdad7b-732a-4260-997a-8c176bc3d9d6)
+- [Choose a Microsoft subscription](https://support.microsoft.com/office/b9f7c78e-430f-4117-89ec-2eeb1dced2ca)
+- [Overview of Microsoft 365 for business security](https://support.microsoft.com/office/3274b159-a825-46d7-9421-7d6e209389d1)
 
 ## November and December 2019
 
@@ -346,7 +346,7 @@ There have been a lot of changes for Roles in the admin center since we started 
 
 - **Favorites** - You can add a star to your favorite or most-used roles, so that you can easily find them by sorting the column or creating a filter.
 - **Active users** > **Manage roles** - This has been updated to align with the changes in Roles. As with the Roles list, we've scoped the default list of roles to the most useful, but you can see all roles by expanding **Show all by category**.
-- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) role!
+- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md) role!
 
 ### Report an issue
 

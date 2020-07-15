@@ -40,7 +40,7 @@ Before you get started with communication compliance, you should confirm your [M
 - Office 365 Enterprise E5 subscription (paid or trial version)
 - Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
 
-Users included in communication compliance policies must must be assigned one of the licenses above.
+Users included in communication compliance policies must be assigned one of the licenses above.
 
 >[!IMPORTANT]
 >Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
@@ -91,7 +91,12 @@ Use the following chart to help you configure groups in your organization for co
 |Supervised users <br> Non-supervised users | Distribution groups <br> Microsoft 365 Groups | Dynamic distribution groups |
 | Reviewers | None | Distribution groups <br> Dynamic distribution groups <br> Mail-enabled security groups |
   
-When you select a Microsoft 365 group for supervised users, the policy monitors the content of the shared mailbox and the Microsoft Teams channels associated with the group. When you select a distribution list, the policy monitors individual user mailboxes.
+When you assign a distribution group in the policy, the policy monitors all emails from each user in distribution group. When you assign a Microsoft 365 group in the policy, the policy monitors all emails sent to that group, not the individual emails received by each group member.
+
+If you're an organization with an Exchange on-premises deployment or an external email provider and you want to monitor Teams chats for your users, you must create a distribution group for the users with on-premises or external mailboxes to monitor. Later in these steps, you'll assign this distribution group as the **Supervised users and groups** selection in the policy wizard.
+
+>[!IMPORTANT]
+>You must file a request with Microsoft Support to enable your organization to use the graphical user interface in the Security & Compliance Center to search for Teams chat data for on-premises users. For more information, see [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 For more information about setting up groups, see:
 

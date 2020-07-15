@@ -15,7 +15,9 @@ search.appverid:
 ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
-description: "If you haven't yet moved your organization to the new OME capabilities, but you have already deployed OME, then the information in this article applies to your organization. Microsoft recommends that you make a plan to move to the new OME capabilities as soon as it is reasonable for your organization. For instructions, see Set up new Office 365 Message Encryption capabilities built on top of Azure Information Protection. If you want to find out more about how the new capabilities work first, see Office 365 Message Encryption. The rest of this article refers to OME behavior before the release of the new OME capabilities."
+ms.custom:
+- seo-marvel-apr2020
+description: Understand how to transition legacy files to Office 365 Message Encryption (OME) for your organization. 
 ---
 
 # Legacy information for Office 365 Message Encryption

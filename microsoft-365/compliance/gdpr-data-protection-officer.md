@@ -1,7 +1,8 @@
 ---
 title: Microsoft's data protection officer
-description: Learn about the position and qualifications of Microsoft's European Union Data Protection Officer (DPO) for the GDPR.
+description: "This article contains information about Microsoft's European Union Data Protection Officer (DPO) for the GDPR."
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
+ms.custom: seo-marvel-apr2020
 localization_priority: Priority
 ms.prod: Microsoft-365-enterprise
 ms.topic: article
@@ -15,12 +16,9 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
-ms.custom: seo-marvel-apr2020
 ---
 
 # Microsoft's data protection officer
-
-## Overview
 
 Microsoft has designated a European Union Data Protection Officer (DPO) to be an independent advisor for Microsoft's engineering and business groups and to help ensure that all proposed processing of personal data meets EU legal requirements and Microsoft's corporate standards. The role was designed to meet the GDPR criteria set out in Articles 37-39.
 
@@ -47,7 +45,7 @@ Leopardstown<br>
 Dublin 18<br>
 D18 P521<br>
 Ireland<br>
-Telephone: +353 (0) 1 295-3826<br>
+Telephone: +353 (1) 706-3117<br>
 
 The contact details for the Data Protection Officer have been communicated to Microsoft's Supervisory Authority.
 

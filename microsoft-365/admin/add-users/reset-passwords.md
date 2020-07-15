@@ -35,7 +35,7 @@ Watch a short video about resetting user passwords.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
 ## Let users reset their own passwords
 
@@ -117,7 +117,7 @@ Use PowerShell! Check out this post by Eyal Doron: [Managing passwords with Powe
   
 Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell).
   
-For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/en-us/office/powershell-for-office-365-administrators-40fdcbd4-c34f-42ab-8678-8b3751137ef1).
+For overview information, see [PowerShell for Microsoft 365 administrators](https://support.microsoft.com/office/40fdcbd4-c34f-42ab-8678-8b3751137ef1).
   
 ## Force a password change for all users in your business
 <a name="bkmk_forgot"> </a>
@@ -127,7 +127,7 @@ Check out this great blog post by Vasil Michev, Microsoft MVP: [Force password c
 ## I'm lost!
 <a name="bkmk_forgot"> </a>
 
-Try this article: [I forgot the username or password for the account I use with Office.](https://support.office.com/article/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
+Try this article: [I forgot the username or password for the account I use with Office.](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)
   
 ## Related articles
 <a name="bkmk_forgot"> </a>
@@ -142,4 +142,4 @@ Try this article: [I forgot the username or password for the account I use with 
 
 [Remove a former employee](remove-former-employee.md)
 
-[Microsoft 365 for business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

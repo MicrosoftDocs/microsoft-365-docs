@@ -24,8 +24,6 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
 The `DeviceFileEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about file creation, modification, and other file system events. Use this reference to construct queries that return information from this table.
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
@@ -39,7 +37,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
 | `SHA1` | string | SHA-1 of the file that the recorded action was applied to |
-| `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available |
+| `SHA256` | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated — use the SHA1 column when available. |
 | `MD5` | string | MD5 hash of the file that the recorded action was applied to |
 | `FileOriginUrl` | string | URL where the file was downloaded from |
 | `FileOriginReferrerUrl` | string | URL of the web page that links to the downloaded file |
@@ -49,6 +47,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessAccountSid` | string | Security Identifier (SID) of the account that ran the process responsible for the event |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
+| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessFolderPath` | string | Folder containing the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
@@ -59,6 +58,13 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `InitiatingProcessParentId` | int | Process ID (PID) of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentFileName` | string | Name of the parent process that spawned the process responsible for the event |
 | `InitiatingProcessParentCreationTime` | datetime | Date and time when the parent of the process responsible for the event was started |
+| `RequestProtocol` | string | Network protocol, if applicable, used to initiate the activity: Unknown, Local, SMB, or NFS |
+| `ShareName` | string | Name of shared folder containing the file |
+| `RequestSourceIP` | string | IPv4 or IPv6 address of the remote device that initiated the activity |
+| `RequestSourcePort` | string | Source port on the remote device that initiated the activity |
+| `RequestAccountName` | string | User name of account used to remotely initiate the activity |
+| `RequestAccountDomain` | string | Domain of the account used to remotely initiate the activity |
+| `RequestAccountSid` | string | Security Identifier (SID) of the account used to remotely initiate the activity |
 | `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns |
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 | `SensitivityLabel` | string | Label applied to an email, file, or other content to classify it for information protection |
@@ -66,7 +72,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `IsAzureInfoProtectionApplied` | boolean | Indicates whether the file is encrypted by Azure Information Protection |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)

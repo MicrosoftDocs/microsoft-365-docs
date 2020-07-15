@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
-description: "You have the option to de-duplicate eDiscovery search results that are exported so that only one copy of an email message is exported even though multiple instances of the same message might have been found in different mailboxes."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to eliminate duplicate eDiscovery search results so that only one copy of an email message is exported.
 ---
 
 # De-duplication in eDiscovery search results

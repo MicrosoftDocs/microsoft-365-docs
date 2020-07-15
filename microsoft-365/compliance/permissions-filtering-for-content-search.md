@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: "Use Content Search permissions filtering to let an eDiscovery manager search only a subset of mailboxes and sites in your organization."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure permissions filtering for Content Search
@@ -37,7 +38,7 @@ Search permissions filtering is supported by the Content Search feature in the S
 
 [Remove-ComplianceSecurityFilter](#remove-compliancesecurityfilter)
 
-## Before you begin
+## Requirements to configure permissions filtering
 
 - To run the compliance security filter cmdlets, you have to be a member of the Organization Management role group in the Security & Compliance Center. For more information, see [Permissions in the Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
     

@@ -90,6 +90,8 @@ We recommend that you turn these ASF settings **Off** for both **Standard** and 
 
 To create and configure outbound spam policies, see [Configure outbound spam filtering in Office 365](configure-the-outbound-spam-policy.md).
 
+For more information about the default sending limits in the service, see [Sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
+
 |||||
 |---|---|---|---|
 |**Security feature name**|**Standard**|**Strict**|**Comment**|

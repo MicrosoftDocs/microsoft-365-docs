@@ -21,8 +21,6 @@ ms.custom: seo-marvel-apr2020
 
 # Create custom sensitive information types with Exact Data Match based classification
 
-## Overview
-
 [Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the [Security & Compliance Center](create-a-custom-sensitive-information-type.md) or [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
 
 But what if you wanted a custom sensitive information type that uses exact data values, instead of matching only with generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
@@ -466,7 +464,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 5. On the **Choose locations** tab, select **Let me choose specific locations**, and then choose **Next**.
 
-6. In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message** , and then choose **Next**. (Note: EDM is currently not supported in SharePoint sites and DLP policy will not detect files in Sharepoint for EDM)
+6. In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message** , and then choose **Next**.
 
 7. On the **Policy settings** tab, choose **Use advanced settings**, and then choose **Next**.
 
@@ -503,7 +501,3 @@ EDM sensitive information types for following scenarios are currently in develop
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
 [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-
-## Feedback
-
-GitHub feedback is enabled, but adding issues is only available on the public site.

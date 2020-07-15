@@ -13,9 +13,8 @@ localization_priority: Normal
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-ms.custom:
-- seo-marvel-apr2020
-description: "Set up a connector to import LinkedIn data to Microsoft 365 so you can use compliance tools such as legal hold, Content Search, and retention policies."
+ms.custom: seo-marvel-apr2020
+description: "Learn how administrators can setup & use a native connector to import data from a LinkedIn Company Page to Microsoft 365."
 ---
 
 # Set up a connector to archive LinkedIn data
@@ -24,7 +23,7 @@ Use a connector in the Microsoft 365 compliance center to import and archive dat
 
 After the LinkedIn Company page data is stored in a mailbox, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, In-Place Archiving, Auditing, and Microsoft 365 retention policies to LinkedIn data. For example, you can search for these items using Content Search or associate the storage mailbox with a custodian in an Advanced eDiscovery case. Creating a connector to import and archive LinkedIn data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
-## Before you  begin
+## Give consent, assign roles, and verify credentials
 
 - Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of a Microsoft 365 global admin, and then accept the request.
 

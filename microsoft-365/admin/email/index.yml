@@ -38,23 +38,14 @@ landingContent:
             url: configure-email-forwarding.md
           - text: Work with security groups
             url: create-edit-or-delete-a-security-group.md
-  # Card (optional)
-  - title: Manage calendars
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Manage your calendar and contacts in outlook
-            url: https://support.office.com/article/631a182a-21e0-4e41-8fa2-0d83e55da02d
-      - linkListType: video
-        links:     
-          - text: Create a shared calendar
-            url: https://support.office.com/article/8385667b-d758-4489-a53f-f542dd01e6ff
+          - text: Migrate email and contacts to Microsoft 365
+            url: ../setup/migrate-email-and-contacts-admin.md
   # Card (optional)
   - title: Manage shared mailboxes
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Set up a shared mailbox
+          - text: Configure shared mailbox settings
             url: configure-a-shared-mailbox.md
           - text: Convert a user mailbox to a shared mailbox
             url: convert-user-mailbox-to-shared-mailbox.md
@@ -62,7 +53,17 @@ landingContent:
             url: remove-license-from-shared-mailbox.md
           - text: Resolve issues with shared mailboxes
             url: resolve-issues-with-shared-mailboxes.md
-   # Card (optional)
+  # Card (optional)
+  - title: Manage calendars
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Manage your calendar and contacts in outlook
+            url: https://support.microsoft.com/office/631a182a-21e0-4e41-8fa2-0d83e55da02d
+      - linkListType: video
+        links:     
+          - text: Create a shared calendar
+            url: https://support.microsoft.com/office/8385667b-d758-4489-a53f-f542dd01e6ff
   - title: Solve email connection and delivery problems
     linkLists:
       - linkListType: how-to-guide
@@ -74,4 +75,4 @@ landingContent:
           - text: Recover deleted emails in a user mailbox 
             url: https://docs.microsoft.com/office365/enterprise/recover-deleted-items-in-a-mailbox
           - text: Fix Outlook connection problems in Microsoft 365 and Exchange Online
-            url: https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f
+            url: https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f

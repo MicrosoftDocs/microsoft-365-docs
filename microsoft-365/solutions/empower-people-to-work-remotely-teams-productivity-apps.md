@@ -1,11 +1,11 @@
 ---
-title: "Step 4. Deploy remote worker productivity apps and services"
+title: "Step 5. Deploy remote worker productivity apps and services"
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -19,7 +19,7 @@ ms.custom:
 description: Enable your users to be productive with Teams, Exchange, SharePoint, and other Microsoft 365 services.
 ---
 
-# Step 4. Deploy remote worker productivity apps and services
+# Step 5. Deploy remote worker productivity apps and services
 
 To be productive, people need to communicate and collaborate with one another. They need to meet, chat by voice and text, create new content and share information and files, exchange email, and manage calendars and tasks. Microsoft 365 provides cloud-based services for all of these key functions:
 
@@ -62,11 +62,18 @@ With Outlook, remote workers can stay connected and organized with email, calend
 
 See [this article](../enterprise/secure-email-recommended-policies.md) for the recommended identity and device access policies to protect organizational email and email clients that support modern authentication and Conditional Access.
 
-## Store and collaborate on files with SharePoint Online and OneDrive
+## Store and collaborate on files with SharePoint and OneDrive
 
-For content collaboration, remote workers can use SharePoint Online and OneDrive folders as a central place in the cloud to store and share files, co-author, communicate, and collaborate. Remote workers can securely work from anywhere from a web browser, from Teams, and from Office apps.
+For content collaboration, remote workers can use SharePoint and OneDrive folders as a central place in the cloud to store and share files, co-author, communicate, and collaborate. Remote workers can securely work from anywhere from a web browser, from Teams, and from Office apps.
 
-See [this article](../enterprise/sharepoint-file-access-policies.md) for the recommended identity and device-access policies to protect SharePoint Online and OneDrive for Business.
+You might have to migrate your documents to SharePoint or OneDrive from:
+
+- [SharePoint Server Team Sites](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [File shares](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+
+To protect SharePoint and OneDrive, see [this article](../enterprise/sharepoint-file-access-policies.md) for the recommended identity and device access policies.
 
 ## Create and collaborate on content with Microsoft 365 Apps
 
@@ -85,9 +92,9 @@ See [this article](https://docs.microsoft.com/deployoffice/deployment-guide-micr
 
 ## User training resources for productivity apps and services
 
-- [Train your users on Office and Office 365](https://support.office.com/article/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c2)
+- [Train your users on Office and Microsoft 365](https://support.microsoft.com/office/train-your-users-on-office-and-microsoft-365-7cba3c97-7f19-46ed-a1c6-763971a26c27)
 - [Use Office for the web](https://support.microsoft.com/office/get-started-with-office-for-the-web-in-microsoft-365-5622c7c9-721d-4b3d-8cb9-a7276c2470e5)
 
 ## Next step
 
-Continue with [Step 5](empower-people-to-work-remotely-communication-venues.md) to create additional communication venues that serve your remote workers.
+Continue with [Step 6](empower-people-to-work-remotely-train-monitor-usage.md) to train your users and monitor their success.

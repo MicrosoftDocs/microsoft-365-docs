@@ -15,6 +15,7 @@ ms.collection:
 - GDPR
 - M365-security-compliance
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
 # Office 365 Data Subject Requests for the GDPR and CCPA
@@ -158,12 +159,11 @@ The following table lists some conditions you can use to narrow the scope of a s
 
 ***Table 2: Narrow scope of search by using conditions***
 
-||||
+| Condition | Description | Example of condition value |
 | :--- | :--- |:--- |
-|**Condition**|**Description** |**Example of condition values**|
 | File type | The extension of a document or file. Use this condition to search for Office documents and files created by Office 365 applications. Use this condition when searching for documents on SharePoint Online sites and OneDrive for Business accounts.<br/>The corresponding document property is filetype. <br/>For a complete list of file extensions that you can search for, see that Default crawled file name extensions and parsed file types in SharePoint](https://technet.microsoft.com/library/jj219530.aspx).|&nbsp;&bull;&nbsp;&nbsp;csv — Searches for comma-separated value (CSV) files; Excel files can be saved in CSV format and CSV file can easily be imported into Excel<br><br>&bull;&nbsp;&nbsp;docx — Searches for Word file <br><br>&bull;&nbsp;&nbsp;mpp — Searches for Project files<br/><br>&bull;&nbsp;&nbsp;one — Searches for OneNote files <br><br>&bull;&nbsp;&nbsp;pdf — Search for files saved in a PDF format <br><br>&bull;&nbsp;&nbsp;pptx — Searches for PowerPoint files <br><br>&bull;&nbsp;&nbsp;xlxs — Searches for Excel files <br><br>&bull;&nbsp;&nbsp;vsd — Searches for Visio files <br><br>&bull;&nbsp;&nbsp;wmv — Searches for Windows Media video files <br>|
 | Message type | The email message type to search for. Use this condition to search mailboxes for contacts (People), meetings (Calendar) tasks, or Skype for Business conversations. The corresponding email property is *kind*.|&bull;&nbsp;&nbsp;*contacts — Searches the My Contacts list (People) of a mailbox <br><br>&bull;&nbsp;&nbsp;*email — Searches email messages <br><br>&bull;&nbsp;&nbsp;*im — Searches Skype for Business conversations<br><br>&bull;&nbsp;&nbsp;*meetings — Searches appointments and meeting requests (Calendar) <br><br>&bull;&nbsp;&nbsp;*tasks — Searches the My Tasks list (Tasks); using this value will also return tasks created in Microsoft To Do.<br>|
-| Compliance tag |The label assigned to an email message or a document. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. Use this condition to search for items that have been automatically or manually assigned a label.<br/>This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. See the "Using Content Search to find all content with a specific label applied to it" section in [Overview of labels in Office 365.](https://docs.microsoft.com/microsoft-365/compliance/labels)|compliancetag="personal data"|
+| Compliance tag |The label assigned to an email message or a document. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. Use this condition to search for items that have been automatically or manually assigned a label.<br/>This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. See the "Using Content Search to find all content with a specific label applied to it" section in [Learn about retention policies and retention labels](https://docs.microsoft.com/microsoft-365/compliance/labels)|compliancetag="personal data"|
 ||||
 
 There are many more email and document properties and search conditions that you can use to build more complex search queries. See the following sections in the [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/microsoft-365/compliance/keyword-queries-and-search-conditions) help topic for more information.
@@ -228,7 +228,7 @@ We recommend that you learn more about partially indexed items so that you can w
 
 - [Partially indexed items in Content Search in Office 365](https://docs.microsoft.com/microsoft-365/compliance/partially-indexed-items-in-content-search)
 - [Investigating partially indexed items in Office 365 eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/investigating-partially-indexed-items-in-ediscovery)
-- [Exporting unindexed items](https://docs.microsoft.com/microsoft-365/compliance/export-search-results#unidexeditems)
+- [Exporting unindexed items](export-search-results.md)
 
 #### Tips for working with partially indexed items
 
@@ -242,7 +242,7 @@ It's possible that data responsive to a DSR investigation may be in a partially 
 
 ##### Export all partially indexed items
 
-You export both the results of a content search and the partially indexed items from the content location that were search. You can also export only the partially indexed items. Then you can open them in their native application and review the content. You have to use this option to export items from SharePoint Online and OneDrive for Business. See [Export Content Search results from the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/export-search-results).
+You export both the results of a content search and the partially indexed items from the content location that were search. You can also export only the partially indexed items. Then you can open them in their native application and review the content. You have to use this option to export items from SharePoint Online and OneDrive for Business. See [Export Content Search results from the Security & Compliance Center](export-search-results.md).
 
 ##### Export a specific set of partially indexed items from mailboxes
 
@@ -319,7 +319,7 @@ An admin can export all User information properties for a user on a given site b
 
 ##### OneDrive for Business experience settings
 
-A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
+A user's OneDrive for Business experience stores information to help the user find and navigate content of interest to them. Most of this information can be accessed by end users using in-product features. An admin can export the information using a [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands.
 
 See [Export OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/export-odfb-lists) for more information about the settings, how they are stored, and how to export them.
 
@@ -361,7 +361,7 @@ Here's specific guidance to search for a Class Notebook.
 4. Edit the search that you created in step 1 and replace the class name in the keyword query with the folder path of the Class Notebook and precede the folder path with the **path** site property; for example, **path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/"**. Be sure to include the quotation marks and the trailing forward slash.
 5. Add a search condition and select the File Type condition and use one for the value of the file type. This returns all OneNote files in the search results. The resulting keyword syntax would look something like this:[](#building-search-queries-to-find-personal-data)
 
-    ```Query
+   ```Query
    path:"<https://contosoedu.onmicrosoft.com/sites/9C> Biology/SiteAssets/9C Biology Notebook/" AND filetype="one"
    ```
 
@@ -445,7 +445,7 @@ To export and download items:
 
 When the export process is complete, you can access the files in the location on your local computer where they were downloaded. Results of a content search are downloaded to a folder named after the Content Search. Documents from sites are copied to a subfolder named **SharePoint**. Mailbox items are copied to subfolder named **Exchange**.
 
-For detailed step-by-step instructions, see [Export Content Search results from the Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/export-search-results).
+For detailed step-by-step instructions, see [Export Content Search results from the Security & Compliance Center](export-search-results.md).
 
 ### Downloading documents and lists from SharePoint Online and OneDrive for Business
 
@@ -533,7 +533,7 @@ Finally, the redaction capability will not remove all metadata or content refere
 
 #### Deleting OneDrive for Business experience settings
 
-The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/powershell-scripting?view=powershell-6) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/delete-odfb-lists) for more information about the settings, how they are stored, and how to delete them.
+The recommended way to delete all OneDrive for Business experience settings and information is to remove the user's OneDrive for Business site, after reassigning any retained files to other users. An admin can delete these lists using [PowerShell Script](https://docs.microsoft.com/powershell/scripting/overview) and [SharePoint Client-Side Object Model (CSOM)](https://docs.microsoft.com/sharepoint/dev/sp-add-ins/complete-basic-operations-using-sharepoint-client-library-code) commands. See [Deleting OneDrive for Business experience settings](https://docs.microsoft.com/sharepoint/delete-odfb-lists) for more information about the settings, how they are stored, and how to delete them.
 
 #### OneDrive for Business and SharePoint Online search queries
 

@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
-description: "Understand where to view the results of the Analyze process in Advanced eDiscovery, including definitions of the displayed task options. 
-"
+description: "Understand where to view the results of the Analyze process in Advanced eDiscovery, including definitions of the displayed task options."
 ---
 
 # View Analyze results in Advanced eDiscovery (classic)

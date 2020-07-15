@@ -16,7 +16,7 @@ ms.localizationpriority: medium
 
 The process for Partners is documented in [Steps for Partners to register devices](register-devices-partner.md).
 
-Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using Microsoft Managed Desktop on the Azure Portal.
+Microsoft Managed Desktop can work with brand-new devices or you can re-use devices you might already have (which will require that you re-image them). You can register devices by using the Microsoft Managed Desktop Admin Portal.
 
 ## Prepare to register existing devices
 
@@ -119,7 +119,7 @@ FROM   Fn_rbac_gs_computer_system(@UserSIDs) comp
 > [!IMPORTANT]
 > The query in Configuration Manager doesn’t allow spaces in exported column names; that's why the steps had you enter "Serial_Number" and "HardwareHash." Now that you have the exported CSV file, you must edit the report headers to read *Serial Number* and *Hardware Hash* as shown here before you proceed with device registration.
 
-Now you can proceed to [Register devices by using the Azure Portal](#register-devices-by-using-the-azure-portal).
+Now you can proceed to [Register devices by using the Admin Portal](#register-devices-by-using-the-admin-portal).
 
 
 #### Active Directory PowerShell script method
@@ -202,9 +202,9 @@ Your file needs to include the **exact same column headings** as the sample one 
 >[!NOTE]
 >If you forget to change any of the sample data, registration will fail.
 
-#### Register devices by using the Azure Portal
+#### Register devices by using the Admin Portal
 
-From the Microsoft Managed Desktop [Azure Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
+From the Microsoft Managed Desktop [Admin Portal](https://aka.ms/mmdportal), select **Devices** in the left navigation pane. Select **+ Register devices**; the fly-in opens:
 
 [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/register-devices-flyin-sterile.png)](../../media/register-devices-flyin-sterile.png)
 

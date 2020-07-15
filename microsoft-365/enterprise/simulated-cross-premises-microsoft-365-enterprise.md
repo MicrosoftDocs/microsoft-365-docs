@@ -15,6 +15,7 @@ search.appverid:
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
+ms.custom: seo-marvel-apr2020
 description: "Summary: Create a simulated cross-premises virtual network in Microsoft Azure as a Microsoft 365 test environment."
 ---
 
@@ -58,7 +59,7 @@ You can use the resulting environment to test the features and functionality of 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Go to [Microsoft 365 Enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
 ## Phase 1: Configure the TestLab virtual network
 

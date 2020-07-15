@@ -67,7 +67,7 @@ There are a couple of scenarios that include either migrating data or users from
 
     1. [Add your employees to Microsoft 365](../add-users/add-users.md) so they can download and install the Office apps.
 
-    2. [Download and install the Office apps](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658.aspx) to use Word, Excel, and PowerPoint on your computer and devices.
+    2. [Download and install the Office apps](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) to use Word, Excel, and PowerPoint on your computer and devices.
 
     3. [Set up Microsoft Teams](#plan-for-teams) to use for your meetings.
 
@@ -106,9 +106,9 @@ If you're going to use Microsoft 365 for your email account, you can bring your 
 
 ## Plan for file storage and migration
 
-Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](https://support.office.com/article/c7c20284-bc94-47f4-9728-d28e9daf0790.aspx).
+Microsoft 365 provides cloud storage for individuals, small organizations, and enterprises. For guidance about what to store where, see [Where you can store documents in Microsoft 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
   
-- **You can move hundreds of files** to [OneDrive](https://support.office.com/article/45114744-6D42-45CD-8975-F9617819BDEB.aspx) or to a [SharePoint team site](https://support.office.com/article/da549fb1-1fcb-4167-87d0-4693e93cb7a0.aspx#__toc384119242). You can upload 100 files at a time. Avoid uploading files larger than 2GB, which is the maximum file size by default.
+- **You can move hundreds of files** to [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) or to a [SharePoint team site](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242). You can upload 100 files at a time. Avoid uploading files larger than 2GB, which is the maximum file size by default.
   
 - **If you want to move several thousand files** to Microsoft 365 storage, review the [SharePoint Online Limits](https://go.microsoft.com/fwlink/p/?LinkID=856113). We recommend that you use a migration tool or consider hiring a [partner](https://go.microsoft.com/fwlink/?linkid=391089) to help you with the migration. For information about how to migrate a large number of files, see [SharePoint Online and OneDrive Migration User Guide](https://go.microsoft.com/fwlink/?LinkId=723574).
   

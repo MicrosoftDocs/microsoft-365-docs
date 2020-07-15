@@ -16,13 +16,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: "This solution tells you what the most common cybersecurity attacks might look like in Microsoft 365 and how to respond to them"
+ms.custom:
+- seo-marvel-apr2020
 ---
 
 # Security Incident Response
 
  **Summary:** This solution tells you what the indicators are for the most common cybersecurity attacks in Office 365, how to positively confirm any given attack, and how to respond to it.
 
-## Overview
+## Learn how to respond to cyberattacks
 
 Not all cyberattacks can be thwarted. Attackers are constantly looking for new weaknesses in your defensive strategy or they are exploiting old ones. Knowing how to recognize an attack allows you to respond to it faster, which shortens the duration of the security incident.
 

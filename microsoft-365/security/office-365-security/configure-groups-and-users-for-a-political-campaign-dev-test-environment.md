@@ -34,7 +34,7 @@ First, follow the instructions in **Phase 2** of [The lightweight base configura
 
 Next, sign up for the EMS E5 trial subscription and add it to the same organization as your trial subscription.
 
-1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Click the **Admin** tile.
 

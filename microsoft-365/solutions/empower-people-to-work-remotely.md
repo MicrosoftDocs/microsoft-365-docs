@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/03/2020
+ms.date: 06/08/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -21,42 +21,30 @@ description: Configure the security and service infrastructure that allows your 
 
 # Empower remote workers with Microsoft 365
 
-Your business may need to enable your workers to have secure access to your organization's on-premises and cloud-based information, tools, and resources from their homes. Allowing workers to work away from the office seamlessly and securely is important for many organizations to:
+Your business may need to enable your workers to have secure access to your organization's on-premises and cloud-based information, tools, and resources from their homes. Allowing workers to work away from the office is important for many organizations to:
 
 - Save on office space.
 - Hire and retain workers who are unwilling to relocate.
 - Reduce worker commuting, leaving them with more time to be productive and for stress-reducing activities outside of work.
 
-Remote working, also known as teleworking, can span a spectrum that includes:
+Microsoft 365 has the capabilities to empower your workers to work remotely.
 
-- workers that are occasionally away from the office for conferences or client meetings.
-- Some workers that work remotely full-time.
-- A fully remote organization in which there is no office and all workers are remote.
+![Empower your remote workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-From anywhere in the world and at any time, remote workers must be able to access:
 
-- Organization resources, such those offered by on-premises application datacenters.
-- Cloud-based services and data in your Microsoft 365 subscription, such as Teams, Exchange Online, SharePoint, and OneDrive.
+| | |
+|:-------|:-----|
+| Connected | From anywhere in the world and at any time, remote workers are able to access: <ul><li>Cloud-based services and data in your Microsoft 365 subscription. </li><li>Organization resources, such those offered by on-premises application datacenters.</li></ul> |
+| Secure | Sign-ins are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 10 protect against malware, malicious attacks, and data loss. |
+| Managed | Your remote worker's devices can be managed from the cloud with security settings, allowed apps, and to require compliance with system health. |
+| Collaborative and productive | Your remote workers can be as productive as on-premises in a highly collaborative way with: <ul><li>Online meetings and chat sessions with Teams. </li><li>Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration with SharePoint and OneDrive. </li><li>Shared tasks and workflows to divide up the work and get things done. </li></ul> |
+|||
 
-For a seamless sign-in experience, your Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
+For a seamless sign-in experience, your on-premises Active Directory Domain Services (AD DS) user accounts should be synchronized with Azure Active Directory (Azure AD). To protect your Windows 10 devices, they should be enrolled in Intune. Here is a high-level view of the infrastructure.
 
 ![The basic infrastructure for remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-basic-infrastructure.png)
 
-
-To support remote workers, for example in response to the COVID-19 crisis, a combination of features in Microsoft 365 enables your remote workers in a highly collaborative way, such as:
-
-- Online meetings and chat sessions.
-- Shared workspaces for cloud-based file storage with global accessibility and real-time collaboration.
-- Shared tasks and workflows to divide up the work and get things done.
-
-For strong security, Microsoft 365 includes:
-
-- Enforced authentication requirements, detecting and responding to high-risk sign-ins, and blocking selected apps and non-compliant devices.
-- Encrypted connections and digital assets in the cloud.
-- Permissions to define who can do what with files.
-- Comprehensive security features to protect Windows 10 devices.
-
-To meet these criteria for remote workers, use these Microsoft 365 capabilities and features.
+To meet the criteria for remote workers, use these Microsoft 365 capabilities and features.
 
 | Capability or feature | Description | Licensing |
 |:-------|:-----|:-------|
@@ -80,9 +68,9 @@ Use these steps to secure and optimize access to your organization's servers, da
 
 1. [Increase sign-in security with MFA](empower-people-to-work-remotely-secure-sign-in.md)
 2. [Provide remote access to on-premises apps and services](empower-people-to-work-remotely-remote-access.md)
-3. [Deploy endpoint management for your devices, PCs, and other endpoints](empower-people-to-work-remotely-manage-endpoints.md)
-4. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
-5. [Create communication venues](empower-people-to-work-remotely-communication-venues.md)
+3. [Deploy security and compliance services](empower-people-to-work-remotely-security-compliance.md)
+4. [Deploy endpoint management for your devices, PCs, and other endpoints](empower-people-to-work-remotely-manage-endpoints.md)
+5. [Deploy remote worker productivity apps and services](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Train remote workers and address usage feedback](empower-people-to-work-remotely-train-monitor-usage.md)
 
 ![The steps to empower remote workers with Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)

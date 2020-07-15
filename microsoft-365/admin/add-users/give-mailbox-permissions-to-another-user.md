@@ -50,7 +50,7 @@ Once you've set up the permissions, it can take up to 60 minutes for the changes
   
  **How to use it once permissions are set up:**
   
-There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.office.com/article/Access-another-person-s-mailbox-A909AD30-E413-40B5-A487-0EA70B763081.aspx)
+There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081)
   
 ## Send email from another user's mailbox
 
@@ -197,6 +197,6 @@ There are a few different ways you can access a mailbox once you've been given a
 
 Want to know how to send email from another user's mailbox? Check out the following topics:
   
-- [Manage another person's mail and calendar items](https://support.office.com/article/afb79d6b-2967-43b9-a944-a6b953190af5.aspx)
+- [Manage another person's mail and calendar items](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
     
-- [Send email from another person or group](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx)
+- [Send email from another person or group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)

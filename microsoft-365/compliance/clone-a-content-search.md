@@ -32,7 +32,7 @@ Why clone Content Searches?
     
 - To decrease the size of the search results. For example, if you have a search that returns too many results to export, you can clone the search and then add a search condition based on a date range to reduce the number of search results.
   
-## Before you begin
+## Script information
 
 - You have to be a member of the eDiscovery Manager role group in the Security & Compliance Center to run the script described in this topic.
     

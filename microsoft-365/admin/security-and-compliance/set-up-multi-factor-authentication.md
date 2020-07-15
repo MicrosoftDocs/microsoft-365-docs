@@ -8,7 +8,7 @@ manager: mnirkhe
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
@@ -36,10 +36,8 @@ Before you begin, determine if these special conditions apply to you and take th
 - If you have third-party directory services with Active Directory Federation Services (AD FS), set up the Azure MFA Server. See [advanced scenarios with 
 Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn) for more information.
 
-
 All other users will be asked to perform additional authentication when needed. For more information, please visit [Two-factor verification method and settings](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-manage-settings#turn-on-two-factor-verification-prompts-on-a-trusted-device).
 
-=======
 ## Step 1: Decide on the method of requiring your users to use MFA
 
 > [!NOTE]
@@ -76,10 +74,10 @@ Work with your pilot users to address questions and issues to prepare for a smoo
 Use email notifications, hallway posters, team meetings, or formal training to ensure that your employees understand:
 
 - Why MFA is being required for sign-ins
-- [How to register for their additional verification method](https://support.office.com/article/set-up-your-microsoft-365-sign-in-for-multi-factor-authentication-ace1d096-61e5-449b-a875-58eb3d74de14?ui=en-US&rs=en-001&ad=US)
-- [How to sign-in after registration](https://support.office.com/article/sign-in-to-microsoft-365-with-multi-factor-authentication-2b856342-170a-438e-9a4f-3c092394d3cb)
-- [How to change their additional verification method](https://support.office.com/article/change-how-you-do-additional-verification-956ec8d0-7081-4518-a701-f8414cc20831)
-- [How to deal with situations like a new smart phone](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2)
+- [How to register for their additional verification method](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+- [How to sign-in after registration](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+- [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+- [How to deal with situations like a new smart phone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
 
 Most importantly, make sure your employees understand ***when the MFA requirement is going to be imposed*** so that it does not surprise them.
 
@@ -116,6 +114,6 @@ Enable user accounts for MFA corresponding to your rollout.
 
 As your employees register and begin signing in with MFA, ensure that your IT specialists, IT department, or helpdesk can answer questions and address issues quickly.
 
-See this article for [information about troubleshooting MFA sign-ins](https://support.office.com/article/fix-common-problems-with-multi-factor-authentication-6951be76-af50-49a4-847f-21391eaa59f2). 
+See this article for [information about troubleshooting MFA sign-ins](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2). 
 
 
