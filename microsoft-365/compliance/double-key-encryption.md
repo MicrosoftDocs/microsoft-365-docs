@@ -31,7 +31,7 @@ Double Key Encryption (DKE) configurations enable you to use the unified labelin
 
 Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure Key Vault, and you hold the other key.
 
-Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque regardless of where you store the protected.
+Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque regardless of where you store the protected data.
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](plan-implement-tenant-key.md).
 
@@ -43,11 +43,11 @@ The following video shows how Double Key Encryption works to secure your content
 
 ## Recommended scenarios for DKE
 
-DKE may be helpful for organizations with any of the following requirements:
+If your organizations has  any of the following requirements, you can use DKE to help secure your content:
 
-- Organizations who want to ensure that *only they* can ever decrypt protected content, under all circumstances.
-- Organizations that don't want Microsoft to have access protected data on its own.
-- Organizations with regulatory requirements to hold keys within a geographical boundary. All customer-held keys for data encryption and decryption are maintained in the customer data center.
+- You want to ensure that *only you* can ever decrypt protected content, under all circumstances.
+- You don't want Microsoft to have access protected data on its own.
+- You have regulatory requirements to hold keys within a geographical boundary. All customer-held keys for data encryption and decryption are maintained in your data center.
 
 ## Supported environments for storing and viewing DKE-protected content
 
