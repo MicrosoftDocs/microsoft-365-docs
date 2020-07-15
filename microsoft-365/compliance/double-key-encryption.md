@@ -33,7 +33,7 @@ Double Key Encryption requires two keys, used together, to access protected cont
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque regardless of where you store the protected data.
 
-For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](plan-implement-tenant-key.md).
+For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
 Double Key Encryption is similar to a safety deposit box that requires both a bank key and a customer key to gain access. To decrypt protected content, you must use both the Microsoft managed key and the customer-held key.
 
