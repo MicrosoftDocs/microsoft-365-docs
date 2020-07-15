@@ -33,7 +33,7 @@ Microsoft 365 comes with five recommended built-in classifiers:
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub
 
-  |language name|||||
+  |**Language Name**|||||
   |---------|---------|---------|---------|---------|
   |ActionScript|C        |C#       |C++     |Clojure  |
   |CoffeeScript|CSS     |Go       |Haskell |HTML     |
