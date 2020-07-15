@@ -75,7 +75,7 @@ For iOS and Android: Where these have a minimum version listed, the sensitivity 
 |[Let users assign permissions](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Yes               |
 |[View label usage with label analytics](label-analytics.md) and send data for administrators                      | Under review                       | Under review                    | Under review           | Under review               | Under review               |
 |[Require users to apply a label to their email and documents](sensitivity-labels.md#what-label-policies-can-do)   | Under review                       | Under review                    | Under review           | Under review               | Under review               |
-|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | Preview: Rolling out to [Beta Channel](https://office.com/insider)                       | Under review                    | Under review           | Under review               | Yes |
+|[Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md)                    | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview)                       | Under review                    | Under review           | Under review               | Yes |
 |
 
 ## Office built-in labeling client and other labeling solutions
