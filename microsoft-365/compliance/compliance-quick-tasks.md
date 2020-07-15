@@ -98,13 +98,35 @@ For step-by-step guidance to plan and configure communication compliance, see [P
 
 ## Task 9: See what's happening with your sensitive items
 
-Sensitivity labels, sensitive information types, retention labels and policies and trainable classifiers can be used to classify and label sensitive items across Exchange, SharePoint, and OneDrive as you've seen in the previous tasks. The last step in your quick task journey is to see which items have been labeled and what actions your users are taking on those sensitive items. [Content explorer](data-classification-content-explorer.md) and [Activity explorer](data-classification-activity-explorer.md) provide this visibility.
+Sensitivity labels, sensitive information types, retention labels and policies and trainable classifiers can be used to classify and label sensitive items across Exchange, SharePoint, and OneDrive as you've seen in the previous tasks. The last step in your quick task journey is to see which items have been labeled and what actions your users are taking on those sensitive items. [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) provide this visibility.
 
 ### Content explorer
- Content explorer allows you to view, in their native format all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
+ Content explorer allows you to view, in their native format, all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
 
 ![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
 
+To learn more about Content explorer, see [Know your data - data classification overview](data-classification-overview.md), and [Get started with content explorer](data-classification-content-explorer.md)
+
+### Activity explorer
+Activity explorer helps you monitor what's being done with your classified and labeled sensitive items across:
+- SharePoint
+- Exchange
+- OneDrive
+
+![placeholder screenshot overview activity explorer](../media/data-classification-activity-explorer-1.png)
+
+There are over 30 different filters available for use, some are:
+
+- date range
+- activity type
+- location
+- user
+- sensitivity label
+- retention label
+- file path
+- DLP policy
+
+To learn more about activity explorer, see [Get started with activity explorer](data-classification-activity-explorer.md).
 
 ## Next steps
 
