@@ -44,7 +44,7 @@ Azure Multi-Factor Authentication and third-party VPN solutions](https://docs.mi
 
 ## Turn Security defaults on or off
 
-For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+For most organizations, Security defaults offer a good level of additional sign-in security. For more information, see [What are security defaults?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 If your subscription is new, Security defaults might already be turned on for you automatically.
 
