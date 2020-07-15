@@ -153,7 +153,7 @@ For more information about these settings, see [Impersonation settings in ATP an
 |Protected domains: **Automatically include the domains I own** <br/><br/> _EnableOrganizationDomainsProtection_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |Protected domains: **Include custom domains** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|On <br/><br/> `$true` <br/><br/> \<list of domains\>|On <br/><br/> `$true` <br/><br/> \<list of domains\>|Depends on your organization, but we recommend adding domains you frequently interact with that you don't own.|
 |Protected users: **If email is sent by an impersonated user** <br/><br/> _TargetedUserProtectionAction_|**Quarantine the message** <br/><br/> `Quarantine`|**Quarantine the message** <br/><br/> `Quarantine`||
-|Protected domains: **If email is sent by an impersonated domain** <br/><br/> _TargetedUserProtectionAction_|**Quarantine the message** <br/><br/> `Quarantine`|**Quarantine the message** <br/><br/> `Quarantine`||
+|Protected domains: **If email is sent by an impersonated domain** <br/><br/> _TargetedDomainProtectionAction_|**Quarantine the message** <br/><br/> `Quarantine`|**Quarantine the message** <br/><br/> `Quarantine`||
 |**Show tip for impersonated users** <br/><br/> _EnableSimilarUsersSafetyTips_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Show tip for impersonated domains** <br/><br/> _EnableSimilarDomainsSafetyTips_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Show tip for unusual characters** <br/><br/> _EnableUnusualCharactersSafetyTips_|On <br/><br/> `$true`|On <br/><br/> `$true`||
