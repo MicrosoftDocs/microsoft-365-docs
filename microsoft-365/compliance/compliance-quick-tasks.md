@@ -96,6 +96,16 @@ The pre-defined *Sensitive information* policy template helps you quickly create
 
 For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
+## Task 9: See what's happening with your sensitive items
+
+Sensitivity labels, sensitive information types, retention labels and policies and trainable classifiers can be used to classify and label sensitive items across Exchange, SharePoint, and OneDrive as you've seen in the previous tasks. The last step in your quick task journey is to see which items have been labeled and what actions your users are taking on those sensitive items. [Content explorer](data-classification-content-explorer.md) and [Activity explorer](data-classification-activity-explorer.md) provide this visibility.
+
+### Content explorer
+ Content explorer allows you to view, in their native format all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
+
+![content explorer collapsed screenshot](../media/data-classification-content-explorer-1.png)
+
+
 ## Next steps
 
 Now that you’ve configured the basics for compliance management for your organization, consider the following compliance solutions in Microsoft 365 to help you protect sensitive information and detect and act on additional insider risks.
