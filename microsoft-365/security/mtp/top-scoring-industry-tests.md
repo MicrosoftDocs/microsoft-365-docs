@@ -1,7 +1,7 @@
 ---
-title: Top scoring in industry tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK)
+title: Top scoring in industry tests - Microsoft Threat Protection
 ms.reviewer: 
-description: Microsoft Defender ATP consistently achieves high scores in independent tests. View the latest scores and analysis.
+description: Learn why Microsoft Threat Protection consistently achieves high scores in independent tests (AV-TEST, AV Comparatives, SE Labs, MITRE ATT&CK). View the latest scores and analysis.
 keywords: Microsoft Defender Antivirus, Windows Defender Antivirus, av reviews, antivirus test, av testing, latest av scores, detection scores, security product testing, security industry tests, industry antivirus tests, best antivirus, av-test, av-comparatives, SE labs, MITRE ATT&CK, endpoint protection platform, EPP, endpoint detection and response, EDR, Windows 10, Microsoft Defender Antivirus, WDAV, MDATP, Microsoft Threat Protection, security, malware, av, antivirus, scores, scoring, next generation protection, ranking, success
 ms.prod: w10
 ms.mktglfcycl: secure
