@@ -28,11 +28,11 @@ Organizations of all types require a records-management solution to manage regul
 
 Records management in Microsoft 365 provides the following capabilities:
 
-- **Label content as a record**. Create and publish retention labels that mark content as a [record](records.md) that can then be applied by end users or [auto-applied](labels.md#applying-a-retention-label-automatically-based-on-conditions) by identifying sensitive information, keywords, or content types.
+- **Label content as a record**. Create and publish retention labels that mark content as a [record](records.md) that can then be applied by end users or [auto-applied](apply-retention-labels-automatically.md) by identifying sensitive information, keywords, or content types.
 
 - **Migrate and manage your retention requirements with file plan**. By using a [file plan](file-plan-manager.md), you can bring in an existing retention plan to Microsoft 365, or build a new one for enhanced management capabilities.
 
-- **Establish retention and deletion policies within the record label**. Define [retention](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) and [disposition](create-retention-policies.md#deleting-content-thats-older-than-a-specific-age) periods based on various factors that include the date last modified or created.
+- **Configure retention and deletion settings with the retention label**. Define retention periods and actions based on various factors that include the date last modified or created.
 
 - **Trigger event-based retention** with [event-based retention](event-driven-retention.md).
 
@@ -43,6 +43,10 @@ Records management in Microsoft 365 provides the following capabilities:
 - **Set specific permissions** for records manager functions in your organization to [have the right access](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 With the records-management solution in Microsoft 365, you can incorporate your organization’s retention schedules into the file plan to manage retention, records declaration, and disposition to support the full lifecycle of your content.
+
+## Additional resources
+
+See the [webinar recording](https://aka.ms/MIPC/Video-RecordsManagementWebinar) and [deck with FAQs](https://aka.ms/MIPC/Blog-RecordsManagementWebinar) for records management.
 
 ## Next steps
 

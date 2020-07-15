@@ -67,7 +67,7 @@ When you assign a sensitivity label to a document or email, it's like a stamp th
 
 In Office apps, a sensitivity label appears like a tag to users on an email or document.
 
-Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](labels.md) applied to it.
+Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single [retention label](retention.md#retention-labels) applied to it.
 
 > [!div class="mx-imgBorder"]
 > ![Sensitivity label applied to an email](../media/Sensitivity-label-on-email.png)
@@ -176,7 +176,7 @@ If you're not seeing the label or label policy setting that you expect for a use
 
 ![Move option on the page for sensitivity label policies](../media/sensitivity-label-policy-priority.png)
 
-If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention label policies](labels.md#the-principles-of-retention-or-what-takes-precedence).
+If you use retention labels in addition to sensitivity labels, it's important to remember that priority matters for sensitivity label policies, but not for [retention labels](retention.md#the-principles-of-retention-or-what-takes-precedence).
 
 ## Sensitivity labels and Azure Information Protection
 
