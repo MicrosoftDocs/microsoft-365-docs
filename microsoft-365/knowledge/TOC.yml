@@ -8,8 +8,8 @@
           href: .md
         - name: Knowledge Center Overview 
           href: .md 
-        - name: How to approve or decline topics
-          href: .md   
+        - name: Work with topics in the Knowledge Center
+          href: work-with-topics.md   
         - name: How to add sites for topic analysis
           href: .md 
         - name: How to edit a topic page or card
