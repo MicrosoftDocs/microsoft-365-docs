@@ -43,10 +43,13 @@ You may want to exclude certain paths from DLP monitoring, DLP alerting, and DLP
 
 You can use this logic to construct your exclusion paths:
 
-1. Begins with – matches every file path that starts with the defined prefix. For example, C:\Windows will match any file under C:\Windows folder and its subfolders, %AppData% will match everything under %AppData% and, C:\Users\*\Desktop will match everything under that C:\Users\*\Desktop.
-2. Environment variables – defined paths can contain environment variables, for example, %AppData%\app123
-3. Wildcards – defined paths can contain wildcards, for example, C:\Users\*\Desktop as a pattern that will match the Desktop folder of any user.
-
+- Valid file path that ends with ‘\’, which means only files directly under folder. For example: C:\Temp\
+- Valid file path that ends with ‘\*’, which means only files under sub-folders, besides the files directly under the folder. For example: C:\Temp\*
+- Valid file path that ends without ‘\’ or ‘\*’, which means all files directly under folder and all sub-folders. For example: C:\Temp
+- A path with wildcard between ‘\’ from each side. For example: C:\Users\*\Desktop\
+- A path with wildcard between ‘\’ from each side and with ‘(number)’ to give exact number of subfolders. For example: C:\Users\*(1)\Downloads\
+- A path with SYSTEM environment variables. For example: %SystemDrive%\Test\*
+- A mix of all the above. For example: %SystemDrive%\Users\*\Documents\*(2)\Sub\
 
 ### Service domains
 

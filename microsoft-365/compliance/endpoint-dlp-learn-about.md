@@ -30,12 +30,18 @@ You can use Microsoft 365 data loss prevention (DLP) to monitor the actions that
 
 Microsoft Endpoint DLP enables you to audit and manage the following types of activities users take on sensitive items on devices running Windows 10. This includes:
 
-- file created
-- file renamed
-- file copied to removable media - when a file is copied or created on a removable USB media
-- file copied to a network share - when a file is copied to a network share, for example \\my-server\fileshare or a mapped network drive
-- file printed - when a file is printed to a local or network printer
-- file copied to cloud - when a file is uploaded to a domain through Chromium Edge browser
+
+|activity on item |auditable/restrictable  |
+|---------|---------|
+|created    | auditable      |
+|renamed    |  auditable       |
+|copied to or created on removable media     |     auditable and restrictable|
+|copied to network share, e.g. \\my-server\fileshare   |     auditable and restrictable    |
+|printed |    auditable and restrictable       |
+|copied to cloud via Chromium Edge    |   auditable and restrictable        |
+|accessed by unallowed apps and browsers    |  auditable and restrictable       |
+
+
 - file accessed by unallowed app - when a file is read by a process that was defined as unallowed (managed as part of the DLP policy)
 
 ## What's different in Endpoint DLP
