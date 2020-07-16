@@ -103,7 +103,7 @@ Sensitivity labels, sensitive information types, retention labels and policies a
 ### Content explorer
  Content explorer allows you to view, in their native format, all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
 
-For step-by-step guidance to using content explorer, see [Know your data - data classification overview](data-classification-overview.md), and [Get started with content explorer](data-classification-content-explorer.md)
+For step-by-step guidance to using content explorer, see [Know your data - data classification overview](data-classification-overview.md), and [Get started with content explorer](data-classification-content-explorer.md).
 
 ### Activity explorer
 Activity explorer helps you monitor what's being done with your classified and labeled sensitive items across:
