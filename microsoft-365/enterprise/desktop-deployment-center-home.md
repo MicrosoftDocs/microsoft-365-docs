@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: jogruszc
 author: JGruszczyk
 manager: jemed
-ms.date: 08/14/19
+ms.date: 08/14/2019
 ms.audience: ITPro
 ms.topic: conceptual 
 ms.service: o365-solutions
