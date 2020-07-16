@@ -148,7 +148,7 @@ For step-by-step guidance to define custom sensitive information types, see [Cre
 
 ### Prevent data loss
 
-[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive information across Microsoft services, prevent the accidental sharing of sensitive information, and help users learn how to stay compliant without interrupting their workflow.
+[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
 For step-by-step guidance to configure DLP policies, see [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) and [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
