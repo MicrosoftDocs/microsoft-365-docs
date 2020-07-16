@@ -129,7 +129,7 @@ In most cases, users try their best to properly handle sensitive or confidential
 - [Data leaks by priority users (preview)](insider-risk-management-policies.md#data-leaks-by-priority-users-preview)
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 
-### Offensive behavior that violate corporate policies
+### Offensive behavior that violates corporate policies
 
 User-to-user communications are often a source of inadvertent or malicious violations of corporate policies. These violations can include offensive language, threats, and harassment between users. This type of activity contributes to a hostile work environment and can result in legal actions against both users and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the [Offensive language in email]((insider-risk-management-policies.md#offensive-language-in-email)) policy template to help minimize these risks. This policy template helps you quickly configure and enable a policy to automatically detect and alert you of this kind of behavior in your organization.
 
@@ -151,7 +151,7 @@ Users in your organization may have different levels of risk depending on their 
 
 ## Actions and behaviors by disgruntled users (preview)
 
-Employment stressor events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Though most users do not respond maliciously to these events, the stress of these actions may result in some users to take actions they may not normally consider during normal circumstances. To help identity these types risky activities, the following insider risk management policy templates use the Microsoft 365 HR Connector and starts scoring risk indicators relating to behaviors that may occur near employment stressor events:
+Employment stresses events can impact user behavior in several ways that relate to insider risks. These stressors may be a poor performance review, a position demotion, or the user being placement on a performance review plan. Though most users do not respond maliciously to these events, the stress of these actions may result in some users to take actions they may not normally consider during normal circumstances. To help identity these types risky activities, the following insider risk management policy templates use the Microsoft 365 HR Connector and starts scoring risk indicators relating to behaviors that may occur near employment stressor events:
 
 - [Data leaks by disgruntled users (preview)](insider-risk-management-policies.md#data-leaks-by-disgruntled-users-preview)
 - [Security policy violations by disgruntled users (preview)](insider-risk-management-policies.md#security-policy-violations-by-disgruntled-users-preview)
