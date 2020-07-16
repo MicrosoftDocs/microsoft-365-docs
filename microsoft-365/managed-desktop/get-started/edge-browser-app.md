@@ -10,6 +10,8 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+---
+
 
 # New Microsoft Edge app
 
