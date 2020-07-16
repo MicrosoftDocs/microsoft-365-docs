@@ -80,7 +80,7 @@ The final step is to use the Azure Storage Explorer and the SAS URL to connect t
 7. Double-click the export job folder to open it.
 
    A list of folders and export reports is displayed.
-
+   
     ![The export folder contains exported files and export reports](../media/AzureStorageConnect6.png)
 
    The export job folder contains the following items. The actual items in the export folder are determined by the export options configured when the export job was created. For more information, see [Export documents from a review set](export-documents-from-review-set.md).
