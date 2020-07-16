@@ -22,7 +22,7 @@ appliesto:
 
 In order to comply with the latest compliance standards for the Federal Risk and Authorization Management Program (FedRAMP), we are deprecating Transport Layer Security (TLS) versions 1.1 and 1.0 in Microsoft Office 365 for GCC High and DoD environments. This change was previously announced through Microsoft Support in [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 
-We understand that the security of your data is important, and we are committed to transparency about changes that could affect your use of the service.
+The security of your data is important, and we are committed to transparency about changes that could affect your use of the service.
 
 Although the [Microsoft TLS 1.0 implementation](https://support.microsoft.com/help/3117336) has no known security vulnerabilities, we remain committed to the FedRAMP compliance standards. Therefore, we will deprecate TLS 1.1 and 1.0 in Office 365 in GCC High and DoD environments starting on January 15, 2020. For information about how to remove TLS 1.1 and 1.0 dependencies, see the following white paper:
 
