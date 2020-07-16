@@ -11,7 +11,7 @@ ms.collection: M365-security-compliance
 ms.service: information-protection
 ms.topic: article
 ms.reviewer: krowley
-ms.auther: shmehta
+ms.author: shmehta
 appliesto:
 - Office 365 Business
 ---
