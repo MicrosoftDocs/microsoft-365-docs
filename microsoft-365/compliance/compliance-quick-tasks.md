@@ -96,6 +96,34 @@ The pre-defined *Sensitive information* policy template helps you quickly create
 
 For step-by-step guidance to plan and configure communication compliance, see [Plan for communication compliance](communication-compliance-plan.md) and [Get started with communication compliance](communication-compliance-configure.md). For communication compliance licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
+## Task 9: See what's happening with your sensitive items
+
+Sensitivity labels, sensitive information types, retention labels and policies and trainable classifiers can be used to classify and label sensitive items across Exchange, SharePoint, and OneDrive as you've seen in the previous tasks. The last step in your quick task journey is to see which items have been labeled and what actions your users are taking on those sensitive items. [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md) provide this visibility.
+
+### Content explorer
+ Content explorer allows you to view, in their native format, all the items that have been classified as a sensitive information type or belonging to a certain classification by a trainable classifier, as well as all items that have sensitivity or retention label applied.
+
+For step-by-step guidance to using content explorer, see [Know your data - data classification overview](data-classification-overview.md), and [Get started with content explorer](data-classification-content-explorer.md).
+
+### Activity explorer
+Activity explorer helps you monitor what's being done with your classified and labeled sensitive items across:
+- SharePoint
+- Exchange
+- OneDrive
+
+There are over 30 different filters available for use, some are:
+
+- date range
+- activity type
+- location
+- user
+- sensitivity label
+- retention label
+- file path
+- DLP policy
+
+For step-by-step guidance to using activity explorer, see [Get started with activity explorer](data-classification-activity-explorer.md).
+
 ## Next steps
 
 Now that you’ve configured the basics for compliance management for your organization, consider the following compliance solutions in Microsoft 365 to help you protect sensitive information and detect and act on additional insider risks.
@@ -120,7 +148,7 @@ For step-by-step guidance to define custom sensitive information types, see [Cre
 
 ### Prevent data loss
 
-[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive information across Microsoft services, prevent the accidental sharing of sensitive information, and help users learn how to stay compliant without interrupting their workflow.
+[Data loss prevention (DLP) policies](data-loss-prevention-policies.md) allow you to identify, monitor, and automatically protect sensitive information across your Microsoft 365 organization. Use DLP policies to identify sensitive items across Microsoft services, prevent the accidental sharing of sensitive items, and help users learn how to stay compliant without interrupting their workflow.
 
 For step-by-step guidance to configure DLP policies, see [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) and [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md). For data loss management licensing information, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
