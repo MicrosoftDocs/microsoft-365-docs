@@ -4,6 +4,10 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
@@ -17,7 +21,7 @@ Once app control has been deployed in your environment, both you and Microsoft M
 
 To add a new app, follow these steps:
 
-1. Add the app to Microsoft Intune {ARE THERE Intune docs we could link to here?}
+1. Add the app to [Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/apps-win32-app-management).
 2. Deploy the app to any device in the Test ring. 
 3. Test your app according to your standard business processes. 
 4. Check Event Viewer under **Application and Services Logs\Microsoft\Windows\AppLocker**, looking for any **8003** or **8006** events. These events indicate that the app would be blocked. For more information about all AppLocker events and their meanings, see [Using Event Viewer with AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/using-event-viewer-with-applocker).
@@ -39,10 +43,15 @@ When you open a signer request, you'll need to provide some important publisher 
 > To remove trust for an app, follow the same steps, but set **Change type** to *remove*.
 
 Operations will progressively deploy policies to deployment groups following this schedule:
-- Test: Audit Mode Policy: Day 0 
-- First: Enforced Policy: Day 1 
-- Fast: Enforced Policy: Day 3 
-- Broad: Enforced Policy: Day 7 
+
+
+|Deployment group  |Policy type  |Timing  |
+|---------|---------|---------|
+|Test     |  Audit       |  Day 0       |
+|First     | Enforced        | Day 1        |
+|Fast     | Enforced        |  Day 3       |
+|Broad     | Enforced        |  Day 7       |
+
 
 You can pause or roll back this deployment at any time during the rollout. To do this, open another service request with Operations.
 

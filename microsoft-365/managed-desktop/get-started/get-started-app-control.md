@@ -4,6 +4,10 @@ description:
 keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
@@ -20,7 +24,7 @@ When you first deploy apps, Microsoft Managed Desktop needs to assess their curr
 
 ### Devices already deployed
 
-If you've already deployed {I FEEL LIKE WE SHOULD CLARIFY WHAT "DEPLOYING" A DEVICE MEANS} at least one device, follow these steps:
+If you've already deployed at least one device, follow these steps:
 
 1. Open a service ticket with Microsoft Managed Desktop Operations requesting that we turn on app control. Operations will deploy an [Audit policy](../service-description/app-control.md#audit-policy) to all devices.
 2. [Test your applications](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) to see if any would be blocked. If an application would be blocked, open a [signer request](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer). 
