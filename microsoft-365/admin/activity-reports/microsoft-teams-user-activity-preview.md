@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Reports in the admin center - Microsoft Teams user activity Preview"
+title: "Microsoft 365 Reports in the admin center - Microsoft Teams user activity - Preview"
 ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
@@ -21,19 +21,19 @@ search.appverid:
 description: "Learn how to get the Microsoft Teams user activity report and gain insights into the Teams activity in your organization."
 ---
 
-# Microsoft 365 Reports in the admin center - Microsoft Teams user activity Preview
+# Microsoft 365 Reports in the admin center - Microsoft Teams user activity- Preview
 
 The Microsoft 365 **Reports** dashboard shows you the activity overview across the products in your organization. It enables you to drill in to individual product level reports to give you more granular insight about the activities within each product. Check out [the Reports overview topic](activity-reports.md). In the Microsoft Teams user activity report, you can gain insights into the Microsoft Teams activity in your organization.
   
 > [!NOTE]
 > You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports.  
  
-## How to get to the Microsoft Teams user activity report
+## How to get to the preview Microsoft Teams user activity report
 
 1. In the admin center, go to the **Reports** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Usage</a> page.
 2. From the **Select a report** drop-down, select **Microsoft Teams**.
   
-## Interpret the Microsoft Teams user activity report
+## Interpret the preview Microsoft Teams user activity report
 
 You can view the user activity in the preview Teams report by choosing the **User activity** tab.
   
