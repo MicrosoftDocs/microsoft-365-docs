@@ -12,7 +12,13 @@ ms.collection: M365-modern-desktop
 
 Microsoft Managed Desktop uses both [Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot) and Microsoft Intune's [Enrollment Status Page (ESP)](https://docs.microsoft.com/windows/deployment/windows-autopilot/enrollment-status) to provide the best possible first-run experience to your users.
 
-To provide this, you must register devices in the Microsoft Managed Desktop service. For more about registration, see [Register new devices yourself](../get-started/register-devices-self.md) or [Steps for Partners to register devices](../get-started/register-devices-partner.md).
+The Enrollment Status Page is currently in public preview.
+
+## Deploy ESP
+
+To provide the ESP experience, you must register devices in the Microsoft Managed Desktop service. For more about registration, see [Register new devices yourself](../get-started/register-devices-self.md) or [Steps for Partners to register devices](../get-started/register-devices-partner.md).
+
+Once your devices are registered with the service, you can enable ESP for your Microsoft Managed Desktop devices by filing a support ticket through the [Admin Portal](https://portal.azure.com/). We will initially deploy the ESP configuration to the Test Group when you file the ticket. It is deployed to the other subsequent deployment groups (First, Fast, and Broad) each 24 hours. To pause the deployment, file another ticket asking Operations to hold.
 
 ## Autopilot profile settings
 
@@ -63,6 +69,9 @@ The experience proceeds as follows:
 2. The device opens the Enrollment Status Page and proceeds through Device Preparation and Device Setup phases. The third step (Account Setup) is *currently skipped* in the Microsoft Managed Desktop configuration because User ESP is disabled. The device restarts.
 3. After restart, the device opens the Windows sign-in page with **Other user**.
 4. The users enters their credentials again and the desktop opens.
+
+> [!NOTE]
+> Win32 apps are only deployed during ESP if the Windows 10 version is 1903 or later.
 
 ![Start page of Autopilot setup showing "device preparation" and "device setup" phases.](../../media/MMD-autopilot-screenshot.png)
 
