@@ -65,6 +65,8 @@
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
+        - name: Access the Admin portal
+          href: get-started/access-admin-portal.md
         - name: Add and verify admin contacts in the Admin portal
           href: get-started/add-admin-contacts.md
         - name: Adjust conditional access

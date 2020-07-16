@@ -197,7 +197,7 @@ Updated the following articles to support the official release of insider risk m
 
 ### Records management
 
-[Overview of retention labels](labels.md) (updated)<br>The section for applying a retention label based on conditions now includes the option to use trainable classifiers.
+[Overview of retention labels](retention.md) (updated)<br>The section for applying a retention label based on conditions now includes the option to use trainable classifiers.
 
 ### Sensitivity labels
 
