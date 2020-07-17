@@ -1,90 +1,102 @@
-# **Bookings Setup**
+---
+title: "Setting up Bookings"
+ms.author: kwekua
+author: kwekuako
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: bookings
+localization_priority: Normal
+description: "How to get Microsoft Bookings set up in your organization."
+---
 
-**<span class="underline">CREATE BOOKINGS PAGE</span>**
 
-1.  Navigate to Microsoft Bookings
+# Setting up Microsoft Bookings
+
+This article describes how to get started with Microsoft Bookings and how to roll out Bookings in your organization.
+
+
+## Create your Bookings page
+
+Begin by creating a Bookings page for your organization.
+
+1. Navigate to Microsoft Bookings
     
-      - Office 365 Apps page
-        
-          - ![A screenshot of a cell phone
-            Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image1.png)
+    :::image type="content" source="media/bookings-microsoft-365-apps.jpg" alt-text="Microsoft 365 apps page":::
+
+2. Create a new Bookings calendar and fill out the business name and business category fields.
     
-      - <https://book.ms/>
-
-2.  Create a new Bookings calendar and fill out the “Business Name” and “Business Category”
+    - Business name: This is what your Bookings calendar will be titled. This can be your actual business name, the name of your business department, the high-level service you are providing, or another name that fits your scenario. For large enterprises, we recommend creating a Bookings calendar at the department level.
     
-    1.  “Business Name” - This is what your Bookings calendar will be titled. This can be your actual business name, the name of the business department, the high-level service you are providing, or another name to fit your scenario. For large enterprises, we recommend creating a Bookings calendar at the department-level to ease scheduling.
+    - Business category: Select the category that best fits your business or organization.
+
+    :::image type="content" source="media/bookings-create-new-calendar.jpg" alt-text="Creating a calendar in Microsoft Bookings":::
+
+## Business information
+
+1. On the Business Information page, fill out the following fields. The information you enter will appear on all confirmations and reminder emails.
+
+    - Business name, Business address, Business phone
+    - Web site URL, which will appear as a link in the footer of confirmations and reminder emails
+    - Privacy policy URL, which is the location that the **Privacy Policy** link in the footer will point to
+    - Terms and conditions URL, which is the location that the **Terms of Sale** link in the footer will point to
+    - Business logo, which is an image that will appear in the header of confirmations and reminder emails
+
+    The following image is an example confirmation after the above fields are filled out.
+
+    :::image type="content" source="media/bookings-business -info.jpg" alt-text="Example of a Bookings confirmation":::
+
+2.  **Currency type**. If your service has a set price, it will be shown in the currency you select on the main Self-Service page. If no services have prices, this field is not relevant.
+
+3.  **Business hours**. The hours you set here are the only hours in which bookings can be made. Additional appointment time restrictions can be set for each service (on the Services page) and for each staff member (on the Staff page).
+
+## Add staff to your Bookings page
+
+Next, add staff from your Microsoft 365 tenant, or add staff external to your organization, to your Bookings page.
+
+1.  Select the **Add Staff** button.
+2.  When adding staff from within your tenant, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
+
+    Once a staff member is added, you can edit the name that appears on all Bookings communications by selecting the **x** next to their name and editing the **Add people** field. This can be useful if you would like staff members to have a specific title or name displayed for customers, such as listing Adele Vance as “Dr. Vance, MD.”
+
+3.  To add staff from outside of your tenant, manually fill in their email and other information. 
+
+    > [!NOTE]
+    > Staff from outside your tenant will not be able to share free/busy information with Bookings..
+
+4.  For each staff member, select a role: Administrator, Viewer, or Guest.
+    - **Administrators** can edit all settings, add and remove staff, and create, edit, or delete bookings.
+    - **Viewers** can see all the bookings on the calendar, but they can’t modify or delete them. They have read-only access to settings.
+    - **Guests** can be assigned to bookings, but they can’t open the booking mailbox.
+
+5.  Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
+
+    :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings":::
+
+6.  Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
     
-    2.  “Business Category” - Choose the category that best fits your business.
-        
-        ![A screenshot of a cell phone
-        Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image2.png)
+    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
 
-**<span class="underline">BUSINESS INFORMATION</span>**
+    :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar":::
 
-Add information about your business or department on the Business Information page
+> [!IMPORTANT]
+> We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
 
-1.  If these field are filled out, the information will appear on all confirmations and reminder emails.
+7.  Select **Use business hours** to set all bookable times for your staff members to be only within the business hours you defined in the **Business hours** section on the Business Information page.
 
-> ![A screenshot of a cell phone
-> Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image3.png)
+    By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments and their afternoons for other types.
 
-1.  Business name, Business address, Business phone
 
-2.  Website URL will appear as a URL link (footer)
+## Define services and appointment types to be booked
 
-3.  Privacy policy URL will appear hyperlinked as “Privacy Policy” (footer)
+Define the services that your organization provides and which customers will book through Bookings.
 
-4.  Terms and conditions URL will appear hyperlinked as “Terms of Sale” (footer)
-
-5.  Business logo will appear as an image on the page (header)
-
-<!-- end list -->
-
-2.  Currency type – If Service has a set price, it will be shown in the currency selected on the main Self-Service Page. If no Services have prices, this field is not relevant.
-
-3.  Business hours – The hours you set here are the hours in which all bookings are restricted to. Additional time restrictions of when appointments are bookable can be set for each service and for each staff member in the Services and Staff page, respectively.
-
-**<span class="underline">STAFF – Add staff to your Bookings page</span>**
-
-1.  Select the “+ Add Staff” button at the top left of the screen
-
-2.  When adding staff from your tenant, type their name in the “Add people” field, select them from the drop-down, and the other fields will automatically populate.
-    
-    1.  Once the staff member is added, you can edit the name that appears on all communications by selecting the “x” by their name and changing the “Add people field.” This can be useful if you would like staff members to have a specific title or name customers will see, such as listing Adele Vance as “Dr. Vance, MD.”
-
-3.  Add staff outside of your tenant by manually filling in their email and other information. Please note that staff from outside the tenant will not be able to share free/busy information with Bookings.
-
-4.  Select staff role – Administrator, Viewer, or Guest
-    
-    2.  Administrators can edit all settings, add and remove staff, and create, edit and delete bookings.
-    
-    3.  Viewers can see all the bookings on the calendar. They can’t modify or delete them. They have read-only access to settings
-    
-    4.  Guests can be assigned to bookings but they can’t open the booking mailbox.
-
-5.  Selecting “Notify all staff via email when a booking assigned to them is created to changed” will enable staff emails that will look like this:
-
-> ![A screenshot of a cell phone
-> Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image4.png)
-
-6.  Selecting “Events on Office 365 calendar affect availability” means that the free/busy information from the staff’s calendar will impact availability for bookings services through Bookings.
-    
-    5.  For example, if the staff has a team meeting or personal appointment scheduled for 3pm Wednesday, Bookings will show then as “unavailable” to be booked for that particular timeslot and a “Busy” or “Tentative” timeslot will show in the calendar view of the Bookings web app.
-        
-        1.  ![](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image5.png)
-    
-    6.  We highly recommend leaving this setting on to avoid double-booking and optimize staff’s calendars.
-
-7.  Selecting “Use business hours” will default bookable times to when the staff’s calendar is free during the timeframes established in the “Business hours” section of “Business Information”
-    
-    7.  By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they leave mornings for one type of appointments and afternoons for the other.
-
-**<span class="underline">SERVICES – Define services and appointment types to be booked</span>**
-
-Define uniform Services that are bookable
-
-1.  Select the “+ Add a service” button at the top left of the screen
+1.  Select the **Add a service** button.
+1. 
+1. 
+1. 
+1. xxxxxxxxxxxxxxxxxxxxxxx
+1. 
 
 2.  Service name – The name of the service that is bookable. This name will show in the drop-down menu on the Calendar page, when manually adding an appointment on the Calendar page, and as a tile on the Self-Service page.
 
