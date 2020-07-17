@@ -81,17 +81,17 @@ Most insider risk management templates have prerequisites that must be configure
 
 If you are configuring a policy using the *Offensive language in email* policy template, you can skip this step and go directly to **Step 4**.
 
-### Configure Microsoft 365 HR Connector
+### Configure Microsoft 365 HR connector
 
-Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination dates, last employment dates, performance improvement plan notifications, performance review actions, and applicable demotion status. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization. If you configure more than one HR Connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
-The Microsoft 365 HR Connector is required when using the following policy templates:
+Insider risk management supports importing user and log data imported from 3rd-party risk management and human resources platforms. The Microsoft 365 Human Resources (HR) data connector allows you to pull in human resources data from CSV files, including user termination dates, last employment dates, performance improvement plan notifications, performance review actions, and applicable demotion status. This data helps drive alert indicators in insider risk management policies and is an important part of configuring full risk management coverage in your organization. If you configure more than one HR connector for your organization, insider risk management will automatically pull indicators from all HR Connectors.
+The Microsoft 365 HR connector is required when using the following policy templates:
 
 - Departing user data theft
 - Security policy violations by departing users
 - Security policy violations by disgruntled users
 - Data leaks by disgruntled users
 
-See the [Set up a connector to import HR data](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR Connector for your organization. After you've configured the HR Connector, return to these configuration steps.
+See the [Set up a connector to import HR data](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization. After you've configured the HR connector, return to these configuration steps.
 
 ### Configure Data Loss Prevention (DLP) policies
 

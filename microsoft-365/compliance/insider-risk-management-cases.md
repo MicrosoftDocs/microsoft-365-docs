@@ -201,7 +201,7 @@ Sharing an insider risk management case allows investigator and reviews to easil
 
 The following sharing options are available: 
 
-- **ServiceNow**: After configuring the Microsoft 365 ServiceNow Connector for your Microsoft 365 organization, you can easily share a link to the case, open an incident, or request a change with your ServiceNow organization. To share the case with ServiceNow, select **Share** > **ServiceNow** from the case action. ServiceNow integration with insider risk management supports includes the following case information and actions:
+- **ServiceNow**: After configuring the Microsoft 365 ServiceNow connector for your Microsoft 365 organization, you can easily share a link to the case, open an incident, or request a change with your ServiceNow organization. To share the case with ServiceNow, select **Share** > **ServiceNow** from the case action. ServiceNow integration with insider risk management supports includes the following case information and actions:
     - **Task name**: The name for the new ServiceNow task.
     - **Task description**: The description for the new ServiceNow task. This editable description field automatically includes a link to the insider risk management case.
     - **Task type**: The task type for the new ServiceNow task, either *Incident* or *Change request*.
