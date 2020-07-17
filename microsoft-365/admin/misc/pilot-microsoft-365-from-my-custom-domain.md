@@ -53,7 +53,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 3. Select **Continue**.
 
-4. Select the services to be used with your domain, like email and instant messaging. <<What does the admin choose for testing purposes?>>
+4. Select the services to be used with your domain, like email and instant messaging.<!-- What does the admin choose for testing purposes? --> 
 
 5. On the **Verify** domain page, follow the step-by-step instructions. <<Never got to this page>>
 
@@ -96,9 +96,9 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
     To ensure a user’s email stays the same, the **User name** field must match the user’s current email address. <<What password setting should we use for the new users.>>
 
-3. <<Next step is to assign product license. Which license should admin choose for test case? Which optional settings should they use?>>, click **Next**, and then click **Finish adding**. 
+3. <!-- Next step is to assign product license. Which license should admin choose for test case? Which optional settings should they use? -- , click **Next**, and then click **Finish adding**. 
 
-3. Next to **User name**, select your custom domain name from the drop-down list. <<I never got to this step. No option to select the custom domain.>>
+3. Next to **User name**, select your custom domain name from the drop-down list. <!-- I never got to this step. No option to select the custom domain. -->
 
 4. Select **Create** > **Close**.
 
