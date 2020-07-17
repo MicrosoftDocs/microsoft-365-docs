@@ -21,9 +21,9 @@ description: Learn about how SharePoint Online detects viruses in files that use
 ms.custom: seo-marvel-apr2020
 ---
 
-# Virus detection in SharePoint Online
+# Virus detection in SharePoint Online, OneDrive and Microsoft Teams
 
-Microsoft 365 can help protect your environment from malware by detecting viruses in files that users upload to SharePoint Online. Files may be scanned for viruses after they are uploaded. If a file is found to be infected, a property is set so that users can't download or sync the file.
+Microsoft 365 can help protect your environment from malware by detecting viruses in files that users upload to SharePoint Online, OneDrive and Microsoft Teams. Files may be scanned for viruses after they are uploaded. If a file is found to be infected, a property is set so that users can't download or sync the file.
 
 > [!IMPORTANT]
 > These antivirus capabilities in SharePoint Online are a way to contain viruses. They aren't intended as a single point of defense against malware for your environment. We encourage all customers to assess and implement antimalware protection at various layers and apply best practices for securing your enterprise infrastructure. For more information about strategies and best practices, see [Security roadmap](security-roadmap.md).
@@ -54,10 +54,14 @@ Here's what happens:
 
 > [!NOTE]
 > You can use the *DisallowInfectedFileDownload* parameter on the [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) cmdlet in SharePoint Online PowerShell to prevent users from downloading an infected file, even in the anti-virus warning window.
+Also keep in mind, that as soon as you enable the *DisallowInfectedFileDownload* parameter, access to the detected/blocked files is completly blocked for users and administrators.
 
 ## What happens when the OneDrive sync client tries to sync an infected file?
 
 Whether users sync files with the new OneDrive sync client (OneDrive.exe) or the previous OneDrive for Business sync client (Groove.exe), if a file contains a virus, the sync client won't download it. The sync client will display a notification that the file can't be synced.
+
+## Extended capabilities with Office 365 ATP
+Customer which enabled Office 365 ATP for Sharepoint, OneDrive and Microsoft Teams [Turn on ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/turn-on-atp-for-spo-odb-and-teams?view=o365-worldwide) are able to use the Security & Compliance Center to manage quarantined files for AV and ATP detections [ATP Only: Use the Security & Compliance Center to manage quarantined files](https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/manage-quarantined-messages-and-files?view=o365-worldwide#atp-only-use-the-security--compliance-center-to-manage-quarantined-files)
 
 ## More information
 
