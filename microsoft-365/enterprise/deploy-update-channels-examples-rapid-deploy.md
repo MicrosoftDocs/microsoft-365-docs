@@ -60,15 +60,21 @@ See [Windows 10 deployment](https://docs.microsoft.com/windows/deployment/) for 
 
 | Stage | Channel | Deployment group |
 |:-------|:-------|:-----|
-| Pilot |  **Release Preview Channel**  <ul><li>Purpose: Deployment of feature updates to IT staff and early adopters for validation on representative devices and configurations (languages, 3rd party apps). </li><li> State: Fully compliant and supported. </li></ul> | **Win10ReleasePreviewChannel** (example name) <br><br> Members are groups containing: <ul><li> Windows enthusiasts across departments and locations </li><li> Staff with configurations that need validation </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> |
+| Pilot |  **Release Preview Channel**  <ul><li>Purpose: Deployment of feature updates to IT staff and early adopters for validation on representative devices and configurations (languages, 3rd party apps). </li><li> State: Fully compliant and supported for commercial customers and it does not count against your support agreements. </li></ul> | **Win10ReleasePreviewChannel** (example name) <br><br> Members are groups containing: <ul><li> Windows enthusiasts across departments and locations </li><li> Staff with configurations that need validation </li><li> IT admins and IT deployment staff </li><li> Change managers </li><li> Internal training staff </li></ul> |
 | Production |  **Semi-Annual Channel**  <ul><li>Purpose: Broad deployment of the latest feature updates to the rest of the organization. </li><li> State: Fully compliant and supported. </li></ul> | **Win10SemiAnnualChannel** (example name) <br><br> Members are all users that are not in the Win10ReleasePreviewChannel group. |
 ||||
+
+This organization uses the best practice of deploying the Release Preview Channel payload in the same way as they deploy Semi-Annual Channel releases, such as Windows Update or Windows Server Update Services, and that they apply the same policies for both channel updates.
 
 Ongoing updates process:
 
 1. Release Preview Channel changes are deployed to the Win10ReleasePreviewChannel (example name) deployment group.
 2. Win10ReleasePreviewChannel group members confirm that Release Preview Channel changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Release Preview Channel changes for additional validation.
 3. Semi-Annual Channel feature changes are deployed to the Win10SemiAnnualChannel deployment group. 
+
+>[!Note]
+>While the Semi-Annual Channel is the recommended channel, your IT department should utilize their management tools and determine when to deploy the latest Semi-Annual Channel release within their organization and then roll it out in waves.
+>
 
 ## Deployment configuration for Microsoft 365 Apps
 
