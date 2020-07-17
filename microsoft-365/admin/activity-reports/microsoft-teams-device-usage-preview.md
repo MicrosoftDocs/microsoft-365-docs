@@ -52,5 +52,4 @@ You can view the device use in the preview Teams report by choosing the **Device
 |Web  <br/> |Selected if the user was active in the Teams web client on devices.|
 |Last activity date (UTC)  <br/> |The last date (UTC) that the user participated in a Teams activity .  <br/> |
 |Is licensed|Selected if the user is licensed to use Teams.|
-|Total Teams activity|Total number of Teams activities over the selected time period. |
 |||
