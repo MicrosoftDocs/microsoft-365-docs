@@ -12,9 +12,9 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
 
-# Work with app control
+# Get started with app control
 
-Before you enable app control in your environment be sure to review and understand [how Microsoft Managed Desktop implements it](../service-description/app-control.md) and your roles and responsibilities.
+Before you enable app control in your environment, be sure to review and understand [how Microsoft Managed Desktop implements it](../service-description/app-control.md) and your roles and responsibilities.
 
 Microsoft Managed Desktop simplifies app control by taking care of the more challenging aspects of getting a secure base policy. Your IT Administrators must still test your apps in the Test ring and review the logs for any warnings or errors. If an app needs an exemption, you can file a request, or Microsoft Managed Desktop Operation might, depending on who detects it first.
 
@@ -28,7 +28,7 @@ If already have at least one Microsoft Managed Desktop device in use, follow the
 
 1. Open a service ticket with Microsoft Managed Desktop Operations requesting that we turn on app control. Operations will deploy an [Audit policy](../service-description/app-control.md#audit-policy) to all devices.
 2. [Test your applications](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) to see if any would be blocked. If an application would be blocked, open a [signer request](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer). 
-3. Once you have completed your testing (regardless of results), notify Operations, noting any pending signer requests. Operations will progressively deploy policies to deployment groups following this schedule:
+3. Once you have completed your testing (whatever the results), notify Operations, noting any pending signer requests. Operations will progressively deploy policies to deployment groups following this schedule:
 
 |Deployment group  |Policy type  |Timing  |
 |---------|---------|---------|

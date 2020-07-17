@@ -14,9 +14,9 @@ ms.collection: M365-modern-desktop
 
 # App control
 
-App control is an optional security practice in Microsoft Managed Desktop which restricts the execution of code on client devices. This control mitigates the risk of malware or malicious scripts by requiring that only code signed by a customer-approved list of publishers can run. There are many security benefits from this control, but it primarily aims to protect data and identity from client-based exploits.
+App control is an optional security practice in Microsoft Managed Desktop that restricts the execution of code on client devices. This control mitigates the risk of malware or malicious scripts by requiring that only code signed by a customer-approved list of publishers can run. There are many security benefits from this control, but it primarily aims to protect data and identity from client-based exploits.
 
-Microsoft Managed Desktop simplifies the management of app control policies by creating a base policy which enables core productivity scenarios. You can extend trust to additional signers that are specific to the apps and scripts in your environment. 
+Microsoft Managed Desktop simplifies the management of app control policies by creating a base policy that enables core productivity scenarios. You can extend trust to additional signers that are specific to the apps and scripts in your environment. 
 
 
 Any security technology requires a balance among user experience, security, and cost. App control reduces the threat of malicious software in your environment, but there are consequences to the end user and additional actions for your IT administrator.
@@ -32,13 +32,13 @@ Apps or scripts that are not trusted by the app control policy are blocked from 
 
 **Microsoft Managed Desktop responsibilities:**
 
-- Microsoft Managed Desktop maintains the base policy which enables core Microsoft products like M365 Apps, Windows, Teams, OneDrive, etc.
+- Microsoft Managed Desktop maintains the base policy that enables core Microsoft products like M365 Apps, Windows, Teams, OneDrive, and so on.
 - Microsoft Managed Desktop inserts your trusted signers and deploys the updated policy to your devices.
 
 
 ## Managing trust in applications
 
-Microsoft Managed Desktop curates a base policy which trusts the core components of Microsoft technologies. You then *add* trust for your own applications and scripts by informing Microsoft Managed Desktop which of them you already trust.
+Microsoft Managed Desktop curates a base policy that trusts the core components of Microsoft technologies. You then *add* trust for your own applications and scripts by informing Microsoft Managed Desktop which of them you already trust.
 
 ### Base policy
 
@@ -52,7 +52,7 @@ The base policy takes the following approach to restricting software execution:
 - Most files signed by Microsoft will run, however some are blocked to prevent high-risk actions like code compilation.
 
 
-If a user other than an administrator could have added an app or script to a device (that is, it's in a user-writable directory), we won't allow it execute unless it has already been specifically allowed by an administrator. If a user is tricked into trying to install malware, if a vulnerability in an app the user runs attempts to install malware, or if a user intentionally tries to run an unauthorized app or script, our policy will stop execution.
+If a user other than an administrator could have added an app or script to a device (that is, it's in a user-writable directory), we won't allow it to execute unless it has already been specifically allowed by an administrator. If a user is tricked into trying to install malware, if a vulnerability in an app the user runs attempts to install malware, or if a user intentionally tries to run an unauthorized app or script, our policy will stop execution.
 
 ### Signer requests
 
