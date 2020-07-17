@@ -151,7 +151,7 @@ Complete the following steps to create a priority user group:
 
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com), go to **Insider risk management** and select **Insider risk settings**.
 2. Select the **Priority user groups** tab
-3. On the **Priority user groups** tab, select Create priority user group to start the group creation wizard.
+3. On the **Priority user groups** tab, select **Create priority user group** to start the group creation wizard.
 4. On the **Define group** page, complete the following fields:
     - **Name (required)**: Enter a friendly name for the priority user group. You can't change the name of the priority user group after you complete the wizard.
     - **Description (optional)**: Enter a description for the priority user group.
