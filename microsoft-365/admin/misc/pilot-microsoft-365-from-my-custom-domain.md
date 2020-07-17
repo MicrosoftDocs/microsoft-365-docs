@@ -41,7 +41,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 1: Sign in to the Microsoft 365 admin center
 
-1. Sign in with your work or school account. <<Should we provide a link to the login?>>
+1. Sign in with your work or school account.
 
 2. Select **Settings** > **Domains** in the left navigation pane.
 
@@ -53,13 +53,13 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 3. Select **Continue**.
 
-4. Select the services to be used with your domain, like email and instant messaging.<!-- What does the admin choose for testing purposes? --> 
+4. Select the services to be used with your domain, like email and instant messaging.
 
-5. On the **Verify** domain page, follow the step-by-step instructions. <<Never got to this page>>
+5. On the **Verify** domain page, follow the step-by-step instructions. 
 
-6. In the drop-down list, select your DNS hosting provider, and follow the instructions to show that you own the domain. <<Domain was already owned and I didn't have to verify? Will this be true for all admins testing their mail flow?>>
+6. In the drop-down list, select your DNS hosting provider, and follow the instructions to show that you own the domain.
 
-7. Select **Verify**. <<Is this step required now?>>
+7. Select **Verify**.
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
@@ -67,13 +67,12 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 3: Mark the domain as shared in Exchange Online
 
-1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify. <<What is the easiest way to get to the exchange admin center. I typed in the search box and got there but is there a navigation pane option?>>
+1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify.
 
-2. In the window, select **Internal Relay**. <<Requires a double-click after you select the domain name. Check with Peter about how we doc double-click now.>>
-
+2. In the window, select **Internal Relay**. 
 3. Select **Save**.
 
-    This setting may require a few minutes to take effect. <<What about the warning that comes up? Any advice I should give to the user about how to handle it? I dismissed it and moved on. >>
+    This setting may require a few minutes to take effect.
 
 ### Step 4: Unblock the existing email server (optional)
 
@@ -84,7 +83,7 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
 1. In the Exchange admin center navigation pane, select **Protection**, and then select **Connection filter**.
 
-2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider. <<what if the IP allow list is not configured because my domain was already owned and verified without any action on my part?>>
+2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider. 
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
@@ -94,11 +93,11 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
     For each account, select **+ Add a user**, and fill out the required information.
 
-    To ensure a user’s email stays the same, the **User name** field must match the user’s current email address. <<What password setting should we use for the new users.>>
+    To ensure a user’s email stays the same, the **User name** field must match the user’s current email address.
 
-3. <!-- Next step is to assign product license. Which license should admin choose for test case? Which optional settings should they use? -- , click **Next**, and then click **Finish adding**. 
+3. <!-- This step is to assign product license. Which license should admin choose for test case? Which optional settings should they use? -- , click **Next**, and then click **Finish adding**. 
 
-3. Next to **User name**, select your custom domain name from the drop-down list. <!-- I never got to this step. No option to select the custom domain. -->
+3. Next to **User name**, select your custom domain name from the drop-down list. 
 
 4. Select **Create** > **Close**.
 
