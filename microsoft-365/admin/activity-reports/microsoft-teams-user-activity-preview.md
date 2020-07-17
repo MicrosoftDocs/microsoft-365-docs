@@ -46,9 +46,9 @@ You can view the user activity in the preview Teams report by choosing the **Use
 |Total meetings   <br/> |The number of online meetings that the user participated in during the specified time period.  <br/> |
 |1:1 calls   <br/> | The number of 1:1 calls that the user participated in during the specified time period.  <br/> |
 |Last activity date (UTC)  <br/> |The last date that the user participated in a Microsoft Teams activity.<br/> |
-|Meetings participated adhoc   <br/> | The number of adhoc meetings that the user participated in during the specified time period.  <br/> |
-|Meetings organized adhoc <br/> |The number of adhoc meetings that the user organized during the specified time period. <br/>|
+|Meetings participated adhoc   <br/> | The number of  meetings not scheduled on the calendar that the user participated in during the specified time period.  <br/> |
+|Meetings organized adhoc <br/> |The number of meetings not scheduled on the calendar that the user organized during the specified time period. <br/>|
 |Meetings organized scheduled  <br/> |The number of scheduled meetings  a user organized during the specified time period.  <br/> |
 |Is licensed |Selected if the user is licensed to use Teams.|
-|Other activity|The number of other team activities by the user. |
+|Other activity|The user is considered active but has a zero value for the Chat Messages, 1:1 calls, Channel Messages, Total Meetings, and Meetings organized. Examples actions are when the Microsoft Teams client is activated to the foreground, actions were taken in the compose message area, toasts appeared in the Microsoft Teams client, banners were shown in the Microsoft Teams client, etc. |
 |||
