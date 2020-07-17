@@ -41,21 +41,25 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 1: Sign in to the Microsoft 365 admin center
 
-1. Sign in with your work or school account.
+1. Sign in with your work or school account. <<Should we provide a link to the login?>>
 
-2. Go to **Settings** > **Domains**.
+2. Select **Settings** > **Domains** in the left navigation pane.
 
 ### Step 2: Verify that you own the domain you want to use
 
 1. On the **Domains** page, select **Add domain**.
 
-2. In the panel, type the domain name, and then select **Next**.
+2. Type the domain name in the box, and then select **Use this domain**.
 
-3. On the **Verify** domain page, follow the step-by-step instructions.
+3. Select **Continue**.
 
-4. In the drop-down list, select your DNS hosting provider, and follow the instructions to show that you own the domain.
+4. Select the services to be used with your domain, like email and instant messaging. <<What does the admin choose for testing purposes?>>
 
-5. Select **Verify**.
+5. On the **Verify** domain page, follow the step-by-step instructions. <<Never got to this page>>
+
+6. In the drop-down list, select your DNS hosting provider, and follow the instructions to show that you own the domain. <<Domain was already owned and I didn't have to verify? Will this be true for all admins testing their mail flow?>>
+
+7. Select **Verify**. <<Is this step required now?>>
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
@@ -63,13 +67,13 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 3: Mark the domain as shared in Exchange Online
 
-1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify.
+1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify. <<What is the easiest way to get to the exchange admin center. I typed in the search box and got there but is there a navigation pane option?>>
 
-2. In the window, select **Internal Relay**.
+2. In the window, select **Internal Relay**. <<This requires a double-click after you select the domain name. Check with Peter about how we doc double-click now.>>
 
 3. Select **Save**.
 
-    This setting may require a few minutes to take effect.
+    This setting may require a few minutes to take effect. <<What about the warning that comes up? Any advice I should give to the user about how to handle it? I dismissed it and moved on. >>
 
 ### Step 4: Unblock the existing email server (optional)
 
@@ -78,21 +82,23 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 > [!NOTE]
 > Unblocking your existing email server allows any spam that arrives through your original server to come to the Microsoft 365 mailboxes, and you can’t evaluate how well Microsoft 365 prevents spam.
 
-1. In the Exchange admin center, select **Protection**, and then select **Connection filter**.
+1. In the Exchange admin center navigation pane, select **Protection**, and then select **Connection filter**.
 
-2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider.
+2. In the **IP Allow list**, select **+**, and add the mail server IP address for your current email provider. <<what if the IP allow list is not configured because my domain was already owned and verified without any action on my part?>>
 
 ### Step 5: Create user accounts and set the primary reply-to address
 
-1. In the Microsoft 365 admin center, select **Users** > **Active Users** in the left navigation pane.
+1. In the Microsoft 365 admin center left navigation, select **Users** > **Active Users**.
 
 2. Create two test accounts by adding two existing users.
 
-    For each account, select **+ (New)**, and fill out the required information.
+    For each account, select **+ Add a user**, and fill out the required information.
 
-    To ensure a user’s email stays the same, the **User name** field must match the user’s current email address.
+    To ensure a user’s email stays the same, the **User name** field must match the user’s current email address. <<What password setting should we use for the new users.>>
 
-3. Next to **User name**, select your custom domain name from the drop-down list.
+3. <<Next step is to assign product license. Which license should admin choose for test case? Which optional settings should they use?>>, click **Next**, and then click **Finish adding**. 
+
+3. Next to **User name**, select your custom domain name from the drop-down list. <<I never got to this step. No option to select the custom domain.>>
 
 4. Select **Create** > **Close**.
 
