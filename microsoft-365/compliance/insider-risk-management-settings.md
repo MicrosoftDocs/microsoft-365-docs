@@ -125,7 +125,7 @@ For example, if you select *New*, *In progress*, and *Resolved* for this setting
 
 ### Domains (preview)
 
-Domain settings help you define risk levels for communications to specific domains. These communications include sharing files, email messages, or downloading content. By specifying domains in these settings, you can increase or decrease the risk scoring for activity that takes place with these domains. For example, to specify contoso.com and wingtiptoys.com as allowed domains, you will enter 'contoso.com, wingtiptoys.com' in the **Allowed domains** field.
+Domain settings help you define risk levels for communications to specific domains. These communications include sharing files, email messages, or downloading content. By specifying domains in these settings, you can increase or decrease the risk scoring for activity that takes place with these domains. For example, to specify contoso.com and sales.wingtiptoys.com as allowed domains, you will enter 'contoso.com, sales.wingtiptoys.com' in the **Allowed domains** field.
 
 For each of the following domain settings, you can enter up to 500 domains:
 
