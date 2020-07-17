@@ -48,12 +48,13 @@ There are URLs from several Microsoft products that need to be in the allowed li
 
 Microsoft service | Documentation source - URLs required on allow list
 --- | ---
-Windows 10 Enterprise including Windows Update for Business | [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)<br><br>time.windows.com
+Windows 10 Enterprise including Windows Update for Business | [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
 Delivery Optimization | [Configure Delivery Optimization for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Network endpoints for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP endpoints](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Windows Autopilot | [Windows Autopilot Networking Requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source
