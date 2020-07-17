@@ -22,9 +22,9 @@ Microsoft Managed Desktop simplifies app control by taking care of the more chal
 
 When you first deploy apps, Microsoft Managed Desktop needs to assess their current behavior. The exact steps for enabling app control depend on whether devices have already been deployed in your environment.
 
-### Devices already deployed
+### Devices already in use
 
-If you've already deployed at least one device, follow these steps:
+If already have at least one Microsoft Managed Desktop device in use, follow these steps:
 
 1. Open a service ticket with Microsoft Managed Desktop Operations requesting that we turn on app control. Operations will deploy an [Audit policy](../service-description/app-control.md#audit-policy) to all devices.
 2. [Test your applications](../working-with-managed-desktop/work-with-app-control.md#add-a-new-app) to see if any would be blocked. If an application would be blocked, open a [signer request](../working-with-managed-desktop/work-with-app-control.md#add-or-remove-a-trusted-signer). 
@@ -39,9 +39,10 @@ If you've already deployed at least one device, follow these steps:
 
 You can always open another service request to pause or roll back part of this deployment at any time during the rollout.
 
-### Devices not yet deployed
+### Devices not yet in use
 
-If you haven't yet deployed any devices, open a service ticket with Microsoft Managed Desktop Operations requesting that we turn on app control. Operations will progressively deploy policies to deployment groups following this schedule:
+If you don't yet have any devices in use, open a service ticket with Microsoft Managed Desktop Operations requesting that we turn on app control. Operations will progressively deploy policies to deployment groups following this schedule:
+
 |Deployment group  |Policy type  |Timing  |
 |---------|---------|---------|
 |Test     |  Audit       |  Day 0       |
