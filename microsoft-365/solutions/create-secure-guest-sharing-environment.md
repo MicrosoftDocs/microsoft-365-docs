@@ -48,9 +48,9 @@ To set up multi-factor authentication for guests
 2. On the **Conditional Access - Policies** blade, click **New policy**.
 3. In the **Name** field, type *Guest MFA*.
 4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box, and then click **Done**.
+5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
 6. Under **Assignments**, click **Cloud apps or actions**.
-7. On the **Cloud apps or actions** blade, select **All cloud apps** in **Include** tab.
+7. On the **Cloud apps or actions** blade, select **All cloud apps** on the **Include** tab.
 8. Under **Access controls**, click **Grant**.
 9. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
 10. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
