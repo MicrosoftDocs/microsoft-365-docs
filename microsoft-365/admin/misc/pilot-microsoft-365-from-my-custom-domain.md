@@ -69,7 +69,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify. <<What is the easiest way to get to the exchange admin center. I typed in the search box and got there but is there a navigation pane option?>>
 
-2. In the window, select **Internal Relay**. <<This requires a double-click after you select the domain name. Check with Peter about how we doc double-click now.>>
+2. In the window, select **Internal Relay**. <<Requires a double-click after you select the domain name. Check with Peter about how we doc double-click now.>>
 
 3. Select **Save**.
 
