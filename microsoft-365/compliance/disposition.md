@@ -81,11 +81,11 @@ When you select the **View all pending dispositions**, you're taken to the **Dis
 
 ### Workflow for a disposition review
 
-This is the basic workflow for a disposition review when a retention label is published and then manually applied by a user. Alternatively, a retention label configured for a disposition review can be auto-applied to content.
+The following diagram shows the basic workflow for a disposition review when a retention label is published and then manually applied by a user. Alternatively, a retention label configured for a disposition review can be auto-applied to content.
   
 ![Chart showing flow of how disposition works](../media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Triggering a disposition review at the end of the retention period is a configuration option that's available only with a [retention label](labels.md). This option is not available in a retention policy.
+Triggering a disposition review at the end of the retention period is a configuration option that's available only with a retention label. This option is not available for a retention policy. For more information about these two retention solutions, see [Learn about retention policies and retention labels](retention.md).
   
 ![Retention settings for a label](../media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
  
@@ -114,7 +114,7 @@ All disposition actions can be audited and the justification text entered by the
   
 ### How long until disposed content is permanently deleted
 
-Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content in the SharePoint site or OneDrive account becomes eligible for the standard cleanup process described in [How a retention policy works with content in place](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+Content awaiting a disposition review is deleted only after a reviewer chooses to permanently delete the content. When the reviewer chooses this option, the content in the SharePoint site or OneDrive account becomes eligible for the standard cleanup process described in [How retention settings work with content in place](retention.md#how-retention-settings-work-with-content-in-place).
 
 ## Disposition of records
 

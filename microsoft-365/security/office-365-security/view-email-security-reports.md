@@ -33,6 +33,8 @@ A variety of reports are available in the [Security & Compliance Center](https:/
 
 The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
+![Compromised users widget in the Reports dashboard](../../media/compromised-users-report-widget.png)
+
 The aggregate view shows data for the last 90 days and the detail view shows data for the last 30 days.
 
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Compromised users**. To go directly to the report, open <https://protection.office.com/reportv2?id=CompromisedUsers>.
@@ -45,7 +47,7 @@ You can filter both the chart and the details table by clicking **Filters** and 
 
 - **Restricted**: The user account has been restricted from sending email due to highly suspicious patterns.
 
-![The compromised users report as it appears in Microsoft 365](../../media/tp-threatProtectStatRpt-CompromisedUserRpt.png)
+![Report view in the Compromised users report](../../media/compromised-users-report-activity-view.png)
 
 If you click **View details table**, you can see the following details:
 

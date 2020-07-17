@@ -863,6 +863,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/labels.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/retention",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/retention-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/retention",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-retention-labels.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/mtp/microsoft-secure-score-new.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score",
       "redirect_document_id": false
