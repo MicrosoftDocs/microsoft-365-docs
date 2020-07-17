@@ -41,7 +41,7 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 ### Step 1: Sign in to the Microsoft 365 admin center
 
-1. Sign in with your work or school account.
+1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your work or school account.
 
 2. Select **Settings** > **Domains** in the left navigation pane.
 
@@ -49,17 +49,11 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 1. On the **Domains** page, select **Add domain**.
 
-2. Type the domain name in the box, and then select **Use this domain**.
+2. Type the domain name in the box, select **Use this domain**, and then select **Continue**.
 
-3. Select **Continue**.
+3. Select the services you want to test with your domain, like email and instant messaging.
 
-4. Select the services to be used with your domain, like email and instant messaging.
-
-5. On the **Verify** domain page, follow the step-by-step instructions. 
-
-6. In the drop-down list, select your DNS hosting provider, and follow the instructions to show that you own the domain.
-
-7. Select **Verify**.
+5. On the **Verify** domain page, follow the step-by-step instructions, amd then select **Verify**.
 
     It takes between a few minutes and 72 hours for DNS changes to take effect.
 
@@ -69,10 +63,11 @@ Follow these steps to set up a Microsoft 365 pilot:
 
 1. In the Exchange admin center, in the **Mail flow** section, select **Accepted domains**, and then select the domain you want to modify.
 
-2. In the window, select **Internal Relay**. 
+2. Double-click to open the window, and then select **Internal Relay**. 
+
 3. Select **Save**.
 
-    This setting may require a few minutes to take effect.
+    This setting might require a few minutes to take effect.
 
 ### Step 4: Unblock the existing email server (optional)
 
@@ -91,15 +86,15 @@ Microsoft 365 uses Exchange Online Protection (EOP) for spam protection. EOP mig
 
 2. Create two test accounts by adding two existing users.
 
-    For each account, select **+ Add a user**, and fill out the required information.
+    For each account, select **+ Add a user**, and fill out the required information, including the password method you want to test.
 
     To ensure a user’s email stays the same, the **User name** field must match the user’s current email address.
 
-3. <!-- This step is to assign product license. Which license should admin choose for test case? Which optional settings should they use? -- , click **Next**, and then click **Finish adding**. 
+3. Choose the appropriate license, click **Next**, and then click **Finish adding**. 
 
-3. Next to **User name**, select your custom domain name from the drop-down list. 
+4. Next to **User name**, select your custom domain name from the drop-down list. 
 
-4. Select **Create** > **Close**.
+5. Select **Create** > **Close**.
 
 ### Step 6: Update DNS records at your DNS hosting provider
 
