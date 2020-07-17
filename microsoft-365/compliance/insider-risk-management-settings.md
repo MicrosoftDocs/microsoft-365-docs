@@ -14,7 +14,7 @@ audience: itpro
 ms.collection: m365-security-compliance
 ---
 
-# Insider risk management settings
+# Get started with insider risk management settings
 
 Insider risk management settings apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control policy components for the following areas:
 
