@@ -39,13 +39,12 @@ Core to MITRE’s testing approach is emulating real-world attacks to understand
 [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) consistently performs highly in independent tests, displaying how it is a top choice in the antivirus market. Keep in mind, these tests only provide results for antivirus and do not test for additional security protections.
 
 Microsoft Defender Antivirus is the [next generation protection](https://www.youtube.com/watch?v=Xy3MOxkX_o4) capability in the [Microsoft Defender ATP Windows 10 security stack](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) that addresses the latest and most sophisticated threats today. In some cases, customers might not even know they were protected because a cyberattack is stopped [milliseconds after a campaign starts](https://cloudblogs.microsoft.com/microsoftsecure/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign). That's because Microsoft Defender Antivirus and other [endpoint protection platform (EPP)](https://www.microsoft.com/security/blog/2019/08/23/gartner-names-microsoft-a-leader-in-2019-endpoint-protection-platforms-magic-quadrant/) capabilities in Microsoft Defender ATP detect and stops malware at first sight with [machine learning](https://cloudblogs.microsoft.com/microsoftsecure/2018/06/07/machine-learning-vs-social-engineering), [artificial intelligence](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak), behavioral analysis, and other advanced technologies.
-<br><br>
-
-**Download the latest transparency report: [Examining AVT test results, January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)**
 
 ### AV-TEST: Protection score of 5.5/6.0 in the latest test
 
 The AV-TEST Product Review and Certification Report tests on three categories: protection, performance, and usability. The following scores are for the Protection category which has two scores: Real-World Testing and the AV-TEST reference set (known as "Prevalent Malware").
+
+**Download the latest transparency report: [Examining AV-TEST results, January-February 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4AwWZ)**
 
 - March — April 2020 AV-TEST Business User test: [Protection score 5.5/6.0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/february-2020/microsoft-windows-defender-antivirus-4.18-200614/) <sup>**Latest**</sup>
 
@@ -79,7 +78,9 @@ Business Security Test consists of three main parts: the Real-World Protection T
 
 SE Labs tests a range of solutions used by products and services to detect and/or protect against attacks, including endpoint software, network appliances, and cloud services.
 
-- Enterprise Endpoint Protection January — March 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup>
+**Download the latest transparency report: [Examining SE Labs test results, January-March 2020](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)**
+
+- Enterprise Endpoint Protection January — March 2020: [AAA award](https://selabs.uk/download/enterprise/essp/2020/mar-2020-essp.pdf) <sup>**pdf**</sup> | [Analysis](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4C7Iq)
 
     Microsoft's next-gen protection was named one of the leading products, stopping all targeted attacks and all but one public threat.
 
