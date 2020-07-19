@@ -36,13 +36,18 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `FileName` | string | Name of the file that the recorded action was applied to |
 | `FolderPath` | string | Folder containing the file that the recorded action was applied to |
 | `PreviousFileName` | string | Original name of the file that was renamed as a result of the action |
+| `PreviousFolderPath` | string | Original folder containing the file before the recorded action was applied |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
 | `AccountUpn` | string | User principal name (UPN) of the account |
 | `AccountObjectId` | string | Unique identifier for the account in Azure AD |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
+| `DeviceType` | string | Type of device | 
+| `OSPlatform` | string | Platform of the operating system running on the device. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
 | `Location` | string | City, country, or other geographic location associated with the event |
+| `ISP` | string | Internet service provider (ISP) associated with the endpoint IP address |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

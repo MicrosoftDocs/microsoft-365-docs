@@ -41,12 +41,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountSid` | string | Security Identifier (SID) of the account |
 | `AccountObjectId` | string | Unique identifier for the account in Azure AD |
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
-| `DeviceName` | string | Fully qualified domain name (FQDN) of the machine |
+| `DeviceName` | string | Fully qualified domain name (FQDN) of the device |
 | `DeviceType` | string | Type of device |
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `DestinationDeviceName` | string | Fully qualified domain name (FQDN) of the device |
+| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the target device |
 | `Location` | string | City, country, or other geographic location associated with the event |
-| `Isp` | string | Internet service provider (ISP) associated with the endpoint IP address |
+| `ISP` | string | Internet service provider (ISP) associated with the endpoint IP address |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

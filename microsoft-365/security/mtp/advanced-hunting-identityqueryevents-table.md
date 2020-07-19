@@ -44,6 +44,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the endpoint |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
+| `DestinationDeviceName` | string | Fully qualified domain name (FQDN) of the device |
+| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the target device |
+| `TargetAccountDisplayName` | string | User name of the target account |
 | `Location` | string | City, country, or other geographic location associated with the event |
 
 ## Related topics
