@@ -97,12 +97,12 @@ Ensure that you have the following software installed on the computer where you 
 
 Ensure that you have the following software installed on each client computer where you want to protect and consume protected documents:
 
-|Software  |Details |
+|Software | Details |
 |---------|---------|
 |**Microsoft Office**, </br>versions *.12711 or later     |         |
 |**Azure Information Protection Unified Labeling Client**, versions 2.7.93.0 or later | Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).||
 
-### Cloning the DKE GIT repository
+### Cloning the DKE GitHub repository
 
 Microsoft supplies the DKE source files in a GitHub repository. You'll clone the repository to build the project locally for your organization's use. The DKE GitHub repository is located at [https://github.com/Azure-Samples/customer-key-store](https://github.com/Azure-Samples/customer-key-store).
 
@@ -301,7 +301,7 @@ DKE is deployed and you can browse to the test keys you've created. Continue wit
 
     In your browser, go to: **Azure portal** > **App Service** **> Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard.**
 
-1. Copy the connection strings displayed to a local file. You'll use these strings to connect to the App Service and upload files via FTP. 
+1. Copy the connection strings displayed to a local file. You'll use these strings to connect to the App Service and upload files via FTP.
 
     For example:
 
@@ -339,35 +339,35 @@ Ensure that no errors appear in the output. When you're ready, continue on with 
 
 ## Registering your key store
 
-The following steps enable you to register the key store you've deployed to Azure.  Registering your key store is the last step in deploying DKE before you can start creating labels.
+The following steps enable you to register the key store you've deployed to Azure. Registering your key store is the last step in deploying DKE before you can start creating labels.
 
 To register your key store:
 
 1. In your browser, open the [Microsoft Azure portal](https://ms.portal.azure.com/), and go to **All Services -> Identity -> App Registrations**.
 
-1. Select **New registration,** and enter a meaningful name.
+2. Select **New registration,** and enter a meaningful name.
 
-1. Select an account type from the options displayed.
+3. Select an account type from the options displayed.
 
-    If you're using Microsoft Azure with a non-custom domain, such as **onmicrosoft.com,** select **Accounts in this organizational directory only (Microsoft only - Single tenant).**
+    If you're using Microsoft Azure with a non-custom domain, such as **onmicrosoft.com**, select **Accounts in this organizational directory only (Microsoft only - Single tenant).**
 
     For example:
 
     :::image type="content" source="media/dke-app-registration.PNG" alt-text="New App Registration":::
 
-1. At the bottom of the page, select **Register** to create the new App Registration.
+4. At the bottom of the page, select **Register** to create the new App Registration.
 
-1. In your new App Registration, in the left pane under **Manage,** select **Authentication**.
+5. In your new App Registration, in the left pane, under **Manage,** select **Authentication**.
 
     If available, select the **Switch to the old experience** button.
 
-1. In the **Implicit grant** area, choose the **ID tokens** checkbox.
+6. In the **Implicit grant** area, choose the **ID tokens** checkbox.
 
     :::image type="content" source="media/dke-select-id-tokens.PNG" alt-text="Select ID tokens checkbox":::
 
-1. On the left pane, under **Manage,** select **Expose an API**.
+7. On the left pane, under **Manage,** select **Expose an API**.
 
-1. Select the **Set** link next to the Application ID URI field. Enter the App Service URL, including both the hostname and domain. 
+8. Select the **Set** link next to the Application ID URI field. Enter the App Service URL, including both the hostname and domain.
 
     For example: https://mycustomerkeystoretest.com
 
@@ -377,19 +377,19 @@ To register your key store:
 
     Select **Save** at the top to save your changes.
 
-1. Still on the **Expose an API** page, in the **Scopes defined by this API** area, select **Add a scope**. In the new scope:
+9. Still on the **Expose an API** page, in the **Scopes defined by this API** area, select **Add a scope**. In the new scope:
 
     1. Define the scope name as **user_impersonation**.
 
-    1. Select the administrators and users who can consent.
+    2. Select the administrators and users who can consent.
 
-    1. Define any remaining values required.
+    3. Define any remaining values required.
 
-    1. Select **Add scope.**
+    4. Select **Add scope.**
 
     Select **Save** at the top to save your changes.
 
-1. Still on the **Expose an API** page, in the **Authorized client applications** area, select **Add a client application**.
+10. Still on the **Expose an API** page, in the **Authorized client applications** area, select **Add a client application**.
 
     In the new client application:
 
@@ -399,15 +399,15 @@ To register your key store:
 
     3. Select **Add application**.
 
-    Select **Save** at the top to save your changes.
+    4. Select **Save** at the top to save your changes.
 
-Your DKE key store is now registered. Continue by [creating labels using DKE](#creating-labels-using-dke).
+Your DKE key store is now registered. Continue  by [creating labels using DKE](#create-labels-using-dke).
 
-## Creating labels using DKE
+## Create labels using DKE
 
-Once all of the steps described above are completed, set up DKE labels in the Microsoft Security Center as you would otherwise.
+Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center and apply double key encryption to those labels. <!-- This said security center, but you set up labels in the compliance center then use DKE encryption>
 
-In the label creation UI, select **Use Double Key Encryption** option and enter the endpoint URL for your key.
+In the label creation UI, select the **Use Double Key Encryption** option and enter the endpoint URL for your key.
 
 For example:
 
