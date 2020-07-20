@@ -16,7 +16,9 @@ ms.collection: M365-security-compliance
 description: "Administrators can set up a data connector to import employee data from their organization's human resources (HR) system to Microsoft 365. This lets you use HR data in insider risk management policies to help you detect activity by specific users that may pose an internal threat to your organization."
 ---
 
-You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as an user's resignation or a change in an user's job level. This HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
+# Set up a connector to import HR data (preview)
+
+You can set up a data connector in the Microsoft 365 compliance center to import human resources (HR) data related to events such as a user's resignation or a change in a user's job level. This HR data can then be used by the [insider risk management solution](insider-risk-management.md) to generate risk indicators that can help you identity possible malicious activity or data theft by users inside your organization.
 
 Setting up a connector for HR data that insider risk management policies can use to generate risk indicators consists of creating a CSV file that contains that contains the HR data, creating an app in Azure Active Directory that's used for authentication, creating an HR data connector in the Microsoft 365 compliance center, and then running a script (on a scheduled basis) that ingests the HR data in CSV files to the Microsoft cloud so it's available to the insider risk management solution.
 
@@ -125,7 +127,7 @@ The following table describes each column in the CSV file for performance review
 |:----------|:--------------|
 | **EmailAddress**  | Specifies the user's email address (UPN).|
 | **EffectiveDate** | Specifies the date that the user was officially informed about the result of their performance review. This can be the date when the performance review cycle ended. You must use the following date format: `yyyy-mm-ddThh:mm:ss.nnnnnn+|-hh:mm`, which is the [ISO 8601 date and time format](https://www.iso.org/iso-8601-date-and-time-format.html).|
-| **Remarks**| Specifies any remarks that evaluator has provided to the user for the performance review. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have include it in the CSV file.|
+| **Remarks**| Specifies any remarks that evaluator has provided to the user for the performance review. This is a text parameter with a limit of 200 characters. This is an optional parameter. You don't have to include it in the CSV file.|
 | **Rating**| Specifies the rating provided for the performance review. This a text parameter and can contain any free-form text that your organization uses to recognize the evaluation. For example, "3 Met expectations" or "2 Below average". This is a text parameter with a limit of 25 characters. This is an optional parameter. You don't have to include it in the CSV file.|
 |||
 
@@ -151,17 +153,17 @@ The following table describes each column in the CSV file for performance review
 
 ### Determining how many CSV files to use for HR data
 
-In Step 3, you can choose to create separate connectors for each HR data type or you can choose to create single connector for all data types. You can use separate CSV files that contains data for one HR scenario (like the examples of the CSV files described in the previous sections). Alternatively, you can use a single CSV file that contains data for two or more HR scenarios. Here are some guidelines to help you determine how many CSV files to use for HR data.
+In Step 3, you can choose to create separate connectors for each HR data type or you can choose to create single connector for all data types. You can use separate CSV files that contain data for one HR scenario (like the examples of the CSV files described in the previous sections). Alternatively, you can use a single CSV file that contains data for two or more HR scenarios. Here are some guidelines to help you determine how many CSV files to use for HR data.
 
 - If the insider risk management policy that you want to implement requires multiple HR data types, consider using a single CSV file that contains all the required data types.
 
-- The method for generating or collecting the HR data may determine the number of CSV files. For example, if the different types of HR data used to configure an HR connector are located in a single HR system in your organization, then you may be able to export the data to a single CSV file. But if data is distributed across different HR systems, then it might be easier to export data to different CSV files. For example, Employee resignation data may be located in a different HR system than Job level or Performance review data. In this case it may be easier to have separate CSV files rather than having to manually combine the data into a single CSV file. So, how you retrieve or export data from your HR systems may determine how may CSV files you'll need.
+- The method for generating or collecting the HR data may determine the number of CSV files. For example, if the different types of HR data used to configure an HR connector are located in a single HR system in your organization, then you may be able to export the data to a single CSV file. But if data is distributed across different HR systems, then it might be easier to export data to different CSV files. For example, Employee resignation data may be located in a different HR system than Job level or Performance review data. In this case, it may be easier to have separate CSV files rather than having to manually combine the data into a single CSV file. So, how you retrieve or export data from your HR systems may determine how the number of CSV files you'll need.
 
-- As a general rule, the number of HR connectors that you'll need to create (in Step 3) is determined by the data types in a CSV file. For example, if a CSV file contains all the data types required to support your insider risk management implementation, then you only need one HR connector. But if you have, for instance, two separate CSV files that each contain a single data type, then you'll have to create two HR connectors. An exception to this is that if you add a **HRScenario** column to a CSV file (see the next section), you can configure an HR connector that can process different CSV files.
+- As a general rule, the number of HR connectors that you'll need to create (in Step 3) is determined by the data types in a CSV file. For example, if a CSV file contains all the data types required to support your insider risk management implementation, then you only need one HR connector. But if you have two separate CSV files that each contain a single data type, then you'll have to create two HR connectors. An exception to this is that if you add an HRScenario** column to a CSV file (see the next section), you can configure a single HR connector that can process different CSV files.
 
 ### Configuring a single CSV file for multiple HR data types
 
-You can add multiple HR data types to a single CSV file. This is useful if the insider risk management solution you're implementing requires multiple HR data types or if the data types are located in a single HR system in your organization. Having fewer CSV file always allows you to have fewer HR connectors to create and manage.
+You can add multiple HR data types to a single CSV file. This is useful if the insider risk management solution you're implementing requires multiple HR data types or if the data types are located in a single HR system in your organization. Having fewer CSV files always allows you to have fewer HR connectors to create and manage.
 
 Here are requirements for configuring a CSV file with multiple data types:
 
@@ -169,9 +171,9 @@ Here are requirements for configuring a CSV file with multiple data types:
 
 - To use a CSV file with multiple types of HR data, the HR connector needs to know which rows in the CSV file contain which type HR data. This is accomplished by adding an additional **HRScenario** column to the CSV file. The values in this column identify the type of HR data in each row. For example, values that correspond to the four HR scenarios could be \`Resignation\`, \`Job level change\`, \`Performance review\`, and \`Performance improvement plan\`.
 
-- If you have multiple CSV files that contain a **HRScenario** column, be sure that that each file uses the same column name and the same values that identify the specific HR scenarios.
+- If you have multiple CSV files that contain a **HRScenario** column, be sure that each file uses the same column name and the same values that identify the specific HR scenarios.
 
-The following example shows a CSV file that contain the **HRScenario** column. Note that the values in the **HRScenario** column identifies the type of data in the corresponding row.
+The following example shows a CSV file that contains the **HRScenario** column. The values in the HRScenario column identify the type of data in the corresponding row.
 
 ```markdown
 HRScenario,EmailAddress,ResignationDate,LastWorkingDate,EffectiveDate,Remarks,Rating,OldLevel,NewLevel
@@ -189,6 +191,8 @@ Performance improvement plan,pillarp@contoso.com,,,2019-04-23T15:18:02.4675041+0
 > You can use any name for the column that identifies HR data type because you will map the name of the column in your CSV file as the column that identifies the HR data type when you set up the connector in Step 3. You will also map the values used for the data type column when you set up the connector.
 
 ### Adding the HRScenario column to a CSV file that contains a single data type
+
+Based on your organization's HR systems and how you will export HR data to CSV file, you might have to create multiple CSV files that contain a single HR data type. In this case, you can still create a single HR connector to import data from different CSV files. To do this, you'll just have to add an HRScenario column to the CSV file and specify the HR data type. Then you can run the script for each CSV file, but use the same job ID for the connector. See [Step 4](#step-4-run-the-sample-script-to-upload-your-hr-data).
 
 ## Step 2: Create an app in Azure Active Directory
 
@@ -208,7 +212,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
 After you complete this step, be sure to copy the job ID that's generated when you create the connector. You'll use the job ID when you run the script.
 
-1. Go to [<span class="underline">https://compliance.microsoft.com</span>](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
+1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** in the left nav.
 
 2. On the **Data connectors (preview)** page under **HR**, click **View**.
 
@@ -224,23 +228,23 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 6. On the file mapping method page, select one of the following options and then click **Next**.
 
-   - **Upload a sample file**. If you select this option, click **Upload sample file** to upload the CSV file that your prepared in Step 1. This option allows you quickly select column names in your CSV file from a drop-down list to map them to the data types for the HR scenarios that you previously selected.
+   - **Upload a sample file**. If you select this option, click **Upload sample file** to upload the CSV file that you prepared in Step 1. This option allows you to quickly select column names in your CSV file from a drop-down list to map them to the data types for the HR scenarios that you previously selected.
 
    OR
 
    - **Manually provide the mapping details**. If you select this option, you have to type the name of the columns in your CSV file to map them to the data types for the HR scenarios that you previously selected.
 
-7. On the File mapping details page, do one of the following, depending on whether you uploaded a sample CSV file and whether you're configuring the connector for a single HR scenario or for multiple scenarios.
+7. On the File mapping details page, do one of the following, depending on whether you uploaded a sample CSV file and whether you're configuring the connector for a single HR scenario or for multiple scenarios. If you uploaded a sample file, you don't have to type the column names. You pick them from a dropdown list.
 
-    - If you selected single data type in step above, then type column header names (also called *parameters* from the CSV file that you created in Step 1 in each of the appropriate boxes. The column names that you type are not case-sensitive, but be sure to include spaces if the column names in your CSV file include spaces. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
-    
-    - If you selected multiple data types in step above, then you need to enter identifier column name that will identify the data type in your CSV file(s). After entering the identifier column name, type the value of identifier column for this data type and the column header names(also called parameters) for selected data types from the CSV file(s) that you created in Step 2 in each of the appropriate boxes for each selected data type one-by-one. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file.
+    - If you selected a single HR scenario in the previous step, then type the column header names (also called *parameters*) from the CSV file that you created in Step 1 in each of the appropriate boxes. The column names that you type are not case-sensitive, but be sure to include spaces if the column names in your CSV file include spaces. As previously explained, the names you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the sample CSV file for the employee resignation HR scenario shown in Step 1.
+
+    - If you selected multiple data types in step above, then you need to enter identifier column name that will identify the HR data type in your CSV file. After entering the identifier column name, type the value that identifies this HR data type, and type the column header names for selected data types from the CSV file(s) that you created in Step 1 in each of the appropriate boxes for each selected data type. As previously explained, the names that you type in these boxes must match the column names in your CSV file.
 
 8. On the **Review** page, review your settings and then click **Finish** to create the connector.
 
    A status page is displayed that confirms the connector was created. This page contains two important things that you need to complete the next step to run the sample script to upload your HR data.
-> 
-> ![](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\compliance/media/image1.png)
+
+   ![Review page with job ID and link to github for sample script](../media/HRConnector_Confirmation.png)
 
    a. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
 
@@ -251,6 +255,8 @@ After you complete this step, be sure to copy the job ID that's generated when y
    The new connector is displayed in the list on the **Connectors** tab.
 
 10. Click the HR connector that you just created to display the flyout page, which contains properties and other information about the connector.
+
+   ![Flyout page for new HR connector](../media/HRConnectorWizard7.png)
 
 If you haven't already done so, you can copy the values for the **Azure App ID** and **Connector job ID**. You'll need these to run the script in the next step. You can also download the script from the flyout page (or download it using the link in the next step.)
 
@@ -367,14 +373,8 @@ You can user the Task Scheduler app in Windows to automatically run the script e
 
    You can also verify the last time the script ran on the flyout page of the corresponding HR connector in the compliance center.
 
-## Upgrade an existing HR connector
+## Existing HR connectors
 
-On July 20, 2020, we released the additional HR scenarios that are supported by HR connectors. These are the HR scenarios (and the corresponding data types that support each one) that were previously described in this article. HR connectors created before this date only support the Employee resignation scenario. If you created an HR connector before July 20, 2020, we have migrated it so that it will continue to migrate your HR data to the Microsoft cloud. You don't have to do anything to maintain this functionality. If you want to up upgrade it so it supports additional HR scenarios, you can do one of the following:
+On July 20, 2020, we released additional scenarios that are supported by HR connectors. These are the HR scenarios that were previously described in this article. HR connectors created before this date only support the Employee resignation scenario. If you created an HR connector before July 20, 2020, we have migrated it so that it continues to migrate your HR data to the Microsoft cloud. You don't have to do anything to maintain this functionality. You can keep using the connector without any disruption.
 
-  - You can edit an existing HR connector and update the CSV column names, if necessary. You would do this only if here was a change in the CSV file you're using when running the script to import the data.
-
-  - You can edit an existing HR connector and configure it to support additional HR scenarios. You'll also need to add the additional HR data to your current CSV file.
-
-  - You can leave the existing connector as-is, and create one or more new HR connectors to support the additional HR scenarios that were release. You'll also need to create a new CSV file that contains the data to support the additional HR scenarios.
-
-To update an existing HR connector, you can go to the **Data connectors** page in the compliance center, select the connector on the **Connectors** page, and then click **Edit** on the flyout page.
+If you want to implement additional HR scenarios, please create a new HR connector and configure it for the additional HR scenarios that were released. You'll also need to create one or more new CSV files that contain the data to support the additional HR scenarios. After you create a new HR connector, run the script using the job ID of the new connector and CSV file(s) with the data for your additional HR scenarios.
