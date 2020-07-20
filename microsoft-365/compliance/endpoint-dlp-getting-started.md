@@ -125,9 +125,6 @@ In this scenario, MDATP is already deployed and there are endpoints reporting in
 3. Choose **Device management** to open the **Devices** list. You should see the list of devices that are already reporting in to MDATP. ![device management](../media/endpoint-dlp-getting-started-2-device-management.png)
 4. Choose **Onboarding** if you need to onboard additional devices.
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **Download package**.
-
-![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-
 6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
