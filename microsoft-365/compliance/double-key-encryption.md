@@ -8,7 +8,6 @@ ms.author: krowley
 manager: laurawi
 ms.date: 07/11/2020
 ms.topic: conceptual
-ms.collection: M365-security-compliance
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
@@ -39,24 +38,19 @@ Double Key Encryption is similar to a safety deposit box that requires both a ba
 
 The following video shows how Double Key Encryption works to secure your content.
 
-> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
-
-<!-- WE ARE ASSUMING EVERYONE WILL WATCH THE VIDEO TO LEARN THE ARCHITECTURE.*** This won't be sufficient for GA. The video needs to have subtitles, loc, etc. as well -->
-
-## Recommended scenarios for DKE
-
-If your organizations has  any of the following requirements, you can use DKE to help secure your content:
+If your organizations has any of the following requirements, you can use DKE to help secure your content:
 
 - You want to ensure that *only you* can ever decrypt protected content, under all circumstances.
 - You don't want Microsoft to have access protected data on its own.
 - You have regulatory requirements to hold keys within a geographical boundary. All customer-held keys for data encryption and decryption are maintained in your data center.
 
+> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+
 ## System and licensing requirements for DKE
 
 **Public preview**. This is the public preview version of DKE. For licensing information about this release, see ***
 
-**Azure Information Protection**. DKE requires a production implementation of Azure Information Protection.
-For more information about the software required to deploy DKE, see [Installing software prerequisites](#installing-software-prerequisites).
+**Azure Information Protection**. DKE requires a production implementation of Azure Information Protection. For more information about the software required to deploy DKE, see [Installing software prerequisites](#installing-software-prerequisites).
 
 ## Supported environments for storing and viewing DKE-protected content
 
@@ -411,7 +405,7 @@ In the label creation UI, select the **Use Double Key Encryption** option and en
 
 For example:
 
-:::image type="content" source="media/dke-use-dke.png" alt-text="Select Use Double Key Encryption":::
+:::image type="content" source="media/dke-use-dke.png" alt-text="Select Use Double Key Encryption in the Microsoft 365 compliance center":::
 
 Any DKE labels you add will start appearing for users in the latest versions of Microsoft 365 Apps for enterprise.
 
