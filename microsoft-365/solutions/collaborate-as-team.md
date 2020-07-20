@@ -89,7 +89,7 @@ Teams content such as files, folders, and lists are all stored in SharePoint. In
 
 The organization-level settings determine what settings are available for individual sites, including sites associated with teams. Site settings cannot be more permissive than the organization-level settings.
 
-If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
+If you want to allow file and folder sharing with unauthenticated people, choose **Anyone**. If you want to ensure that all guests have to authenticate, choose **New and existing guests** or **Existing guests**. Choose the most permissive setting that will be needed by any site in your organization.
 
 ![Screenshot of SharePoint organization-level sharing settings](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -98,7 +98,7 @@ To set SharePoint organization level sharing settings
 
 1. In the Microsoft 365 admin center, in the left navigation, under **Admin centers**, click **SharePoint**.
 2. In the SharePoint admin center, in the left navigation, click **Sharing**.
-3. Ensure that external sharing for SharePoint is set to **Anyone** or **New and existing guests**.
+3. Ensure that external sharing for SharePoint is set to **Anyone**, **New and existing guests**, or **Existing guests**.
 4. If you made changes, click **Save**.
 
 
