@@ -18,6 +18,8 @@ ms.collection: m365-security-compliance
 
 The insider risk management Content Explorer allows users assigned the **Insider Risk Management Investigators** role to examine the context and details of communications captured in alerts. For all alerts, copies of data and message files are archived as a snapshot in time of the items, while maintaining the original files and messages in the storage sources. The copying of data and messages is transparent to the user associated with the alert and to the owner of the content. The permission settings and access rights for the data are maintained for the copied content and messages and risk analysts and investigators need these permissions and rights if they need to open and view the files. Each file and message is automatically assigned a unique file ID in the insider risk management case for management purposes.
 
+![Insider risk management content explorer](../media/insider-risk-content-explorer.png)
+
 ## Column options
 
 To make it easier for risk analysts and investigators to review captured data and messages and review the context to the case, several filtering and sorting tools are included in the Content Explorer. For basic sorting, the **Date** and **File class** columns support sorting using the column titles in the content queue pane. Other queue columns are available to add to the view to provide different pivots on the files and messages.

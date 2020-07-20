@@ -138,11 +138,11 @@ Before configuring a policy, define the following insider risk settings:
 
 4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-policies.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
-    - [anomaly detections](insider-risk-management-settings.md#anomaly-detections)
-    - [offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
-    - [alert volume level](insider-risk-management-settings.md#alert-volume)
+    - [Anomaly detections](insider-risk-management-settings.md#anomaly-detections)
+    - [Offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
+    - [Alert volume level](insider-risk-management-settings.md#alert-volume)
     - [Microsoft 365 Defender Advanced Threat Protection alert status](insider-risk-management-settings.md#microsoft-defender-advanced-threat-protection-preview)
-    - [domain settings](insider-risk-management-settings.md#domains-preview)
+    - [Domain settings](insider-risk-management-settings.md#domains-preview)
 6. On the **Export alerts** page, enable export of insider risk alert information using the Office 365 Management APIs if needed.
 7. On the **Priority user groups** page, create a priority user group and add users if not created in **Step 3**.
 8. Select **Save** to enable these settings for your insider risk policies.
@@ -178,7 +178,7 @@ Insider risk management policies include assigned users and define which types o
 11. Select **Next** to continue.
 12. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
-## Next Steps
+## Next steps
 
 After you've completed these steps to create your first insider risk management policy, you'll start to receive alerts from activity indicators after about 24 hours. Configure additional policies as needed using the guidance in Step 4 of this article or the steps in [Create a new insider risk policy](insider-risk-management-policies.md#create-a-new-policy).
 
