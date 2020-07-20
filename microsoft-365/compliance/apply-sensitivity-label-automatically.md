@@ -133,7 +133,7 @@ For more information about these classifiers, see [Getting started with trainabl
 
 During the preview period, the following apps support trainable classifiers for sensitivity labels:
 
-- Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows, version 2006 and later, now rolling out to the [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview):
+- Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows, now rolling out to the [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) in version 2006 and later:
     - Word
     - Excel
     - PowerPoint
