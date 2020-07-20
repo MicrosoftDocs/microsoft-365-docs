@@ -159,7 +159,7 @@ In Step 3, you can choose to create separate connectors for each HR data type or
 
 - The method for generating or collecting the HR data may determine the number of CSV files. For example, if the different types of HR data used to configure an HR connector are located in a single HR system in your organization, then you may be able to export the data to a single CSV file. But if data is distributed across different HR systems, then it might be easier to export data to different CSV files. For example, Employee resignation data may be located in a different HR system than Job level or Performance review data. In this case, it may be easier to have separate CSV files rather than having to manually combine the data into a single CSV file. So, how you retrieve or export data from your HR systems may determine how the number of CSV files you'll need.
 
-- As a general rule, the number of HR connectors that you'll need to create (in Step 3) is determined by the data types in a CSV file. For example, if a CSV file contains all the data types required to support your insider risk management implementation, then you only need one HR connector. But if you have two separate CSV files that each contain a single data type, then you'll have to create two HR connectors. An exception to this is that if you add an HRScenario** column to a CSV file (see the next section), you can configure a single HR connector that can process different CSV files.
+- As a general rule, the number of HR connectors that you'll need to create is determined by the data types in a CSV file. For example, if a CSV file contains all the data types required to support your insider risk management implementation, then you only need one HR connector. But if you have two separate CSV files that each contain a single data type, then you'll have to create two HR connectors. An exception to this is that if you add an HRScenario** column to a CSV file (see the next section), you can configure a single HR connector that can process different CSV files.
 
 ### Configuring a single CSV file for multiple HR data types
 
@@ -175,7 +175,7 @@ Here are requirements for configuring a CSV file with multiple data types:
 
 The following example shows a CSV file that contains the **HRScenario** column. The values in the HRScenario column identify the type of data in the corresponding row.
 
-```markdown
+```text
 HRScenario,EmailAddress,ResignationDate,LastWorkingDate,EffectiveDate,Remarks,Rating,OldLevel,NewLevel
 Resignation,sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,2019-04-29T15:18:02.4675041+05:30,,,,
 Resignation,pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540,,,,
@@ -220,7 +220,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
 4. On the **Setup the connection** page, do the following and then click **Next**:
 
-   a. Type or paste the AAD application ID for the Azure app that you created in Step 1.
+   a. Type or paste the AAD application ID for the Azure app that you created in Step 2.
 
    b. Type a name for the HR connector.
 
@@ -248,7 +248,7 @@ After you complete this step, be sure to copy the job ID that's generated when y
 
    a. **Job ID.** You'll need this job ID to run the script in the next step. You can copy it from this page or from the connector flyout page.
 
-   b. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again in Step 4. This link is also available on the connector flyout page.
+   b. **Link to sample script.** Click the **here** link to go to the GitHub site to access the sample script (the link opens a new window). Keep this window open so that you can copy the script in Step 4. Alternatively, you can bookmark the destination or copy the URL so you can access it again when you run the script. This link is also available on the connector flyout page.
 
 9. Click **Done**.
 
@@ -264,7 +264,7 @@ You can also click **Edit** to change the Azure App ID or the column header name
 
 ## Step 4: Run the sample script to upload your HR data
 
-The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 2) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
+The last step in setting up an HR connector is to run a sample script that will upload the HR data in the CSV file (that you created in Step 1) to the Microsoft cloud. Specifically, the script uploads the data to the HR connector. After you run the script, the HR connector that you created in Step 3 imports the HR data to your Microsoft 365 organization where it can accessed by other compliance tools, such as the Insider risk management solution. After you run the script, consider scheduling a task to run it automatically on a daily basis so the most current employee termination data is uploaded to the Microsoft cloud. See [Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
 1. Go to window that you left open from the previous step to access the GitHub site with the sample script. Alternatively, open the bookmarked site or use the URL that you copied.
 
@@ -288,11 +288,11 @@ The last step in setting up an HR connector is to run a sample script that will 
 
    |**Parameter**|**Description**
    |:-----|:-----|:-----|
-   |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 1. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
-   |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 1. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
-   |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 1. This also used for authentication.|
+   |`tenantId`|This is the Id for your Microsoft 365 organization that you obtained in Step 2. You can also obtain the tenant Id for your organization on the **Overview** blade in the Azure AD admin center. This is used to identify your organization.|
+   |`appId` |This is the AAD application Id for the app that you created in Azure AD in Step 2. This is used by Azure AD for authentication when the script attempts to accesses your Microsoft 365 organization. | 
+   |`appSecret`|This is the AAD application secret for the app that you created in Azure AD in Step 2. This also used for authentication.|
    |`jobId`|This is the job ID for the HR connector that you created in Step 3. This is used to associate the HR data that is uploaded to the Microsoft cloud with the HR connector.|
-   |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 2. Try to avoid spaces in the file path; otherwise use single quotation marks.|
+   |`csvFilePath`|This is the file path for the CSV file (stored on the same system as the script) that you created in Step 1. Try to avoid spaces in the file path; otherwise use single quotation marks.|
    |||
 
    Here's an example of the syntax for the HR connector script using actual values for each parameter:
@@ -319,7 +319,7 @@ After you create the HR connector and run the script to upload your HR data, you
 
    The `RecordsSaved` field indicates the number of rows in the CSV file that uploaded. For example, if the CSV file contains four rows, then the value of the `RecordsSaved` fields is 4, if the script successfully uploaded all the rows in the CSV file.
 
-If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps in Step 4 to run it.
+If you've haven't run the script in Step 4, a link to download the script is displayed under **Last import**. You can download the script and then follow the steps to run the script.
 
 ## (Optional) Step 6: Schedule the script to run automatically
 
