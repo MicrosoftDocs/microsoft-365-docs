@@ -144,7 +144,13 @@ For each of the following domain settings, you can enter up to 500 domains:
 
 ## Export alerts (preview)
 
-Insider risk management alert information is exportable to security information and event management (SIEM) services via the [Office 365 Management Activity APIs](https://docs.microsoft.com/office/office-365-management-api/). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. To use the APIs to access insider risk alert information, enable Office 365 Management Activity API support in the global settings. By default, this setting is disabled for your Microsoft 365 organization.
+Insider risk management alert information is exportable to security information and event management (SIEM) services via the [Office 365 Management Activity API schema](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information.
+
+To use the APIs to review insider risk alert information:
+
+1. Enable Office 365 Management Activity API support in the insider risk management settings. By default, this setting is disabled for your Microsoft 365 organization.
+2. Filter the common Office 365 audit activities by *SecurityComplianceAlerts*.
+3. Filter SecurityComplianceAlerts by the *InsiderRiskManagement* category.
 
 ![Insider risk management export alert settings](../media/insider-risk-settings-export.png)
 
