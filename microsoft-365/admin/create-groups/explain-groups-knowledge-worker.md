@@ -1,0 +1,36 @@
+---
+title: "Explaining Microsoft 365 Groups to your users"
+ms.reviewer: arvaradh
+f1.keywords: NOCSH
+ms.author: mikeplum
+author: MikePlumleyMSFT
+manager: pamgreen
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection: 
+- M365-subscription-management 
+- Adm_O365
+- Adm_TOC
+search.appverid:
+- MET150
+description: "Learn about Microsoft 365 Groups."
+---
+
+# Explaining Microsoft 365 Groups to your users
+
+Microsoft 365 Groups allow your users to easily set up a collection of resources to share. These resources include A shared mailbox and calendar, a SharePoint site with a OneNote notebook, and Microsoft Planner. Optionally, Microsoft Teams can be included when you create the group or added later. Permissions for each of these resources are controlled through the group.
+
+
+
+
+
+
+Because groups can be created in several ways, we recommend training your users to use the method that fits your organization the best:
+
+- If your organization does most of its communication using email, instruct your users to create groups in Outlook.
+- If your organization heavily uses SharePoint or is migrating from SharePoint on-premises, instruct your users to create SharePoint team sites for collaboration.
+- If your organization has deployed Teams, instruct your users to create a team when they need need a collaboration space.
+
+If you train your users to always use the group creation method that most aligns with their way of working, you can help avoid confusion and duplication of resources. As users become more advanced, they will understand better the collection of services that come with a group and that different creation methods lead to the same results.
