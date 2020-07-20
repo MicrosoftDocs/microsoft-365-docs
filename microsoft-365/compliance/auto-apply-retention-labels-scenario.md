@@ -212,7 +212,7 @@ Now in the search box, type **RefinableString00:"Product Specification" AND Refi
 
 Now that we verified that the KQL query is working correctly, let's create the label policy that uses a KQL query to auto-apply the Product Specification retention label to the appropriate documents.
 
-1. In the [security and compliance center](https://protection.office.com), go to **Classification** > **Retention labels**, and then select **Auto-apply a label**. 
+1. In the [compliance center](https://compliance.microsoft.com/homepage), go to **Records management** > **Label policies**, and then select **Auto-apply a label**. 
 
    ![Select Auto-apply a label on the Labels page](../media/SPRetention16.png)
 
@@ -247,9 +247,7 @@ Now that we verified that the KQL query is working correctly, let's create the l
 
 ### Verifying the retention label was automatically applied
 
-After seven days, use the [Label activity explorer](view-label-activity-for-documents.md) in the security and compliance center to see that the label policy that we created has automatically applied the retention labels in this scenario to the product documents. In the following screenshot, retention labels have also been applied to product agreements and user manuals, even though we didn't cover creating those retention labels and label policies in this article.
-
-![Use the label activity explorer to verify that label was auto-applied](../media/SPRetention20.png)
+After seven days, use the [Label activity explorer](view-label-activity-for-documents.md) in the compliance center to see that the label policy that we created has automatically applied the retention labels in this scenario to the product documents. 
 
 Another verification step is to look at the properties of the document in the Document Library. In the information panel, you can see that the retention label is applied to a selected document.
 
