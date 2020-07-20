@@ -28,8 +28,8 @@ The following table lists the limits for cases and review sets in Advanced eDisc
 
 |**Description of limit**|**Limit**|
 |:-----|:-----|
-|Total number of documents that can be added to a case (for all review sets in a case).  <br/> |1 million  <br/> |
-|Total file size per load set. This includes loading non-Office 365 into a review set.  <br/> |100 GB  <br/> |
+|Total number of documents that can be added to a case (for all review sets in a case).  <br/> |3 million <br/> |
+|Total file size per load set. This includes loading non-Office 365 into a review set.  <br/> |300 GB <br/> |
 |Total amount of data loaded into all review sets in the organization per day.<br/> |2 TB <br/> |
 |Maximum number of loads sets per case.  <br/> |15 <br/> |
 |Maximum number of review sets per case.  <br/> |20 <br/> |
