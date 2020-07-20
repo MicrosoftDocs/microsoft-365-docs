@@ -14,7 +14,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
-description: "In this article, you will learn about the available options to create a secure guest sharing environment in Microsoft 365."
+description: Learn about available options to create a secure guest sharing environment in Microsoft 365, providing guest access for improved collaboration.
 ---
 
 # Create a secure guest sharing environment
@@ -104,7 +104,7 @@ With access reviews in Azure AD, you can automate a periodic review of user acce
 
 Access reviews can be organized into programs. A program is a grouping of similar access reviews that can be used to organize access reviews for reporting and auditing purposes.
 
-In this example, we'll create a program for guest access reviews.
+In this example, we'll create a program for guest access reviews (you might also refer to it as an external sharing review).
 
 To create a program
 1. Sign in to the Azure portal and open the [Identity Governance page](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
