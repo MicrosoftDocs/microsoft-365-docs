@@ -42,7 +42,7 @@ There are two different methods for automatically applying a sensitivity label:
 
 - **Service-side labeling when content is already saved (in SharePoint or OneDrive) or emailed (processed by Exchange Online)**: Use an auto-labeling policy. 
     
-    This method is referred to as auto classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
+    You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
     
     Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
     
@@ -133,7 +133,7 @@ For more information about these classifiers, see [Getting started with trainabl
 
 During the preview period, the following apps support trainable classifiers for sensitivity labels:
 
-- Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows, from the [Beta Channel](https://office.com/insider) ([formerly Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)):
+- Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows, version 2006 and later, now rolling out to the [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview(https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview):
     - Word
     - Excel
     - PowerPoint
