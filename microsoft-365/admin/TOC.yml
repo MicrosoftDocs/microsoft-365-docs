@@ -128,7 +128,7 @@
            - name: Create a group
              href: create-groups/create-groups.md
            - name: Explain groups
-             href: explain-groups-knowledge-worker.md
+             href: create-groups/explain-groups-knowledge-worker.md
            - name: Manage groups
              href: create-groups/manage-groups.md
            - name: Add or remove group members
