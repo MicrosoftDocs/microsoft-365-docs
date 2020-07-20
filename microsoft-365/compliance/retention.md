@@ -234,7 +234,7 @@ After retention labels are assigned to content, either by users or auto-applied,
   
 When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-![Retention label condition](../media/compliance-label-condition.png)
+![Retention label condition](../media/retention-label-condition.png)
 
 
 ## Compare capabilities for retention policies and retention labels
