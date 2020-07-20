@@ -34,7 +34,7 @@ The **Users dashboard** automatically displays all users with active insider ris
 
 ## Dashboard users with triggering indicators
 
-The **Users dashboard** automatically displays all users with triggering indicators, but that don't have an activity risk score that would create an insider risk activity. For example, a user with a reported resignation date is displayed because this event is a triggering indicator, but isn't an activity that has a risk score. Activities for these users are viewed by selecting the user in the **Users dashboard** and navigating to the **User activity** tab.
+The **Users dashboard** automatically displays all users with triggering indicators, but that don't have an activity risk score that would create an insider risk alert. For example, a user with a reported resignation date is displayed because this event is a triggering indicator but isn't an activity that has a risk score. Activities for these users are viewed by selecting the user in the **Users dashboard** and navigating to the **User activity** tab.
 
 ## Dashboard users added temporarily to policies
 

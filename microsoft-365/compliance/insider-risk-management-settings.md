@@ -150,7 +150,7 @@ To use the APIs to review insider risk alert information:
 
 1. Enable Office 365 Management Activity API support in the insider risk management settings. By default, this setting is disabled for your Microsoft 365 organization.
 2. Filter the common Office 365 audit activities by *SecurityComplianceAlerts*.
-3. Filter SecurityComplianceAlerts by the *InsiderRiskManagement* category.
+3. Filter *SecurityComplianceAlerts* by the *InsiderRiskManagement* category.
 
 ![Insider risk management export alert settings](../media/insider-risk-settings-export.png)
 
