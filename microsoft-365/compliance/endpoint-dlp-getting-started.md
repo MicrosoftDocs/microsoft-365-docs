@@ -92,15 +92,19 @@ If you already have devices onboarded into [Microsoft Defender Advanced Threat P
 In this deployment scenario, you'll onboard devices that have not been onboarded yet, and you just want to monitor and protect sensitive items from unintentional sharing on Windows 10 devices.
 
 1. Open the [Microsoft compliance center](https://compliance.microsoft.com).
-2. Open the Compliance Center settings page and choose **Onboard devices**. ![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+2. Open the Compliance Center settings page and choose **Onboard devices**. 
+
+![enable device management](../media/endpoint-dlp-learn-about-1-enable-device-management.png)
+
 > [!NOTE]
 > While it usually takes about 60 seconds for device onboarding to be enabled, please allow up to 30 minutes before engaging with Microsoft support.
 
 3. Choose **Device management** to open the **Devices** list. The list will be empty until you onboard devices.
 4. Choose **Onboarding** to begin the onboarding process.
 5. Choose the way you want to deploy to these additional devices from the **Deployment method** list and then **download package**.
+
 ![deployment method](../media/endpoint-dlp-getting-started-3-deployment-method.png)
-6. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
+1. Follow the appropriate procedures in [Onboarding tools and methods for Windows 10 machines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints). This link take you to a landing page where you can access MDATP procedures that match the deployment package you selected in step 5:
     - Onboard Windows 10 machines using Group Policy
     - Onboard Windows machines using Microsoft Endpoint Configuration Manager
     - Onboard Windows 10 machines using Mobile Device Management tools
