@@ -32,8 +32,8 @@ Microsoft's email safety roadmap involves an unmatched cross-product approach. E
 
 As email use has grown, so has email abuse. Unmonitored junk email can clog inboxes and networks, impact user satisfaction, and hamper the effectiveness of legitimate email communications. That's why Microsoft continues to invest in anti-spam technologies. Simply put, it starts by containing and filtering junk email.
 
-  > [!TIP]
-  > The below tips are useful when you want to make changes based on the envelope, like sender domain or IP of the message. If you want to allow or block based on the payload, such as a URL or file attached to the message, then it is best to use the (Tenant Allow Block List portal)[https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/tenant-allow-block-list] for this.
+> [!TIP]
+> The following anti-spam technologies are useful when you want to allow or block messages based on the message envelope (for example, the sender's domain or the source IP address of the message). To allow or block messages based on payload (for example, URLs in the message or attached files), then you should use the [Tenant Allow/Block List portal](tenant-allow-block-list.md).
 
 ## Anti-spam technologies in EOP
 
