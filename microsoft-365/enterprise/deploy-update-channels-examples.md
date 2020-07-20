@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/07/2020
+ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -26,9 +26,9 @@ Choosing which update channels to use for Windows 10 and Microsoft 365 Apps can 
 
 | Customer/Channel Offering | Windows 10 | Microsoft 365 Apps for Enterprise (Windows 10) |
 |:-------|:-------|:-----|
-| 1. Right for highly technical users and developers. ​<br><br> Be the first to access the latest builds earliest in the development cycle with the newest code. ​<br><br> There will be rough edges and some instability. ​  | Dev | N/A |
-| 2. Right for early adopters and IT Pros who want more reliable builds that are still in development. ​<br><br> See what’s coming up next and help validate new features.  | Beta Channel | Beta Channel |
-| 3. Right for those who want early access to upcoming releases. ​<br><br> Where companies preview and validate upcoming releases before broad deployment. ​<br><br> These are supported. <br>  | Release Preview | Current Channel (Preview) <br><br> Semi-Annual Enterprise Channel (Preview)|
+| Right for highly technical users and developers. ​<br><br> Be the first to access the latest builds earliest in the development cycle with the newest code. ​<br><br> There will be rough edges and some instability. | Dev | N/A |
+| Right for early adopters and IT Pros who want more reliable builds that are still in development. ​<br><br> See what’s coming up next and help validate new features. | Beta Channel | Beta Channel |
+| Right for those who want early access to upcoming releases. ​<br><br> Where companies preview and validate upcoming releases before broad deployment. ​<br><br> These are supported. <br>  | Release Preview | Current Channel (Preview) <br><br> Semi-Annual Enterprise Channel (Preview)|
 ||||
 
 ## Production channels for broad deployment
@@ -37,9 +37,9 @@ Click the link in the **Example** column to step through deployment stages and g
 
 | Customer/Channel Offering | Windows 10 | Microsoft 365 Apps for Enterprise (Windows 10) | Example |
 |:-------|:-------|:-----|:-------|
-| 1. Right for customers who want the latest releases as soon as they are ready. | Semi-Annual Channel | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [Latest releases](deploy-update-channels-examples-rapid-deploy.md) |
-| 2. Right for enterprises who want the latest release with additional predictability. | Semi-Annual Channel | [Monthly Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) | Regular schedule (article to be written) |
-| 3. Right for enterprises with need for extensive IT testing before each update. | Semi-Annual Channel | [Semi-Annual Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) || Highly vetted (article to be written) |
+| Right for customers who want the latest releases as soon as they are ready. | Semi-Annual Channel | [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [Latest releases](deploy-update-channels-examples-rapid-deploy.md) |
+| Right for enterprises who want the latest release with additional predictability. | Semi-Annual Channel | [Monthly Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
+| Right for enterprises with need for extensive IT testing before each update. | Semi-Annual Channel | [Semi-Annual Enterprise Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
 |||||
 
 

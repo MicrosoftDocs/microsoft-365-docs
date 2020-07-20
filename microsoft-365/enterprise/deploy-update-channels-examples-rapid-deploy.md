@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 07/07/2020
+ms.date: 07/21/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -94,17 +94,15 @@ Ongoing updates process:
 2. AppsCurrentChannelPreview group members confirm that Current Channel (Preview) changes are working to IT deployment staff, who can provide feedback to Microsoft and wait for the next Current Channel (Preview) release for additional validation.
 3. Current Channel changes are deployed to the AppsCurrentChannel deployment group. 
 
-## Visual summaries
+## Visual summary
 
 Here are the products, their channels, and the deployment groups used by this example organization. 
 
 ![Deployment groups for broad deployment of the latest releases](../media/deploy-update-channels-examples-rapid-deploy/group-summary.png)
 
-Here is an example of the timing of successive broad deployments of the latest releases over a 12-month period.
-
-![The channels and timing for broad deployment of the latest releases](../media/deploy-update-channels-examples-rapid-deploy/channel-summary.png)
-
 ## See also
+
+[Deployment and update channel example configurations](deploy-update-channels-examples.md)
 
 [Deployment guide](deploy-microsoft-365-enterprise.md)
 
