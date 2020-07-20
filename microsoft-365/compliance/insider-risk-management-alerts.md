@@ -79,8 +79,8 @@ To triage an insider risk alert, complete the following steps:
         - **Case**: If confirmed, the case generated from the alert is listed. For new alerts, the **Case** field displays *None*.
     - **User activity**: This tab displays the activity history for the user associated with the alert. This history includes other alerts and activities related to risk indicators defined in the template assigned to the policy for this alert. This history allows risk analysts and investigators to factor in any past risky behavior for the employee as part of the triage process.
     - **User profile**: This tab displays the general information about the employee assigned to the alert. If anonymization is enabled, the user name, email address, alias, and organization fields are anonymized.
-    - **Confirm and create case**: Visible across all tabs, use this button to confirm and create a new case. This automatically changes the alert status to *Confirmed*.
-    - **Dismiss alert**: Visible across all tabs, use this button to dismiss the alert. This changes the alert status to *Resolved*.
+    - **Confirm and create case**: Visible across all tabs, use this button to confirm and create a new case. This action automatically changes the alert status to *Confirmed*.
+    - **Dismiss alert**: Visible across all tabs, use this button to dismiss the alert. This action changes the alert status to *Resolved*.
 
 ## Create a case for an alert
 
