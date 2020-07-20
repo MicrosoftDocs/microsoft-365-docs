@@ -75,7 +75,7 @@ The follow sections describe the required CSV data for each HR scenario.
 
 Here's an example of a CSV file for employee resignation data.
 
-```markdown
+```text
 EmailAddress,ResignationDate,LastWorkingDate
 sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,2019-04-29T15:18:02.4675041+05:30
 pilarp@contoso.com,2019-04-24T09:15:49Z,2019-04-29T15:18:02.7117540
@@ -94,7 +94,7 @@ The following table describes each column in the CSV file for employee resignati
 
 Here's an example of a CSV file for job level changes data.
 
-```markdown
+```text
 EmailAddress,EffectiveDate,OldLevel,NewLevel
 sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 61 – Sr. Manager,Level 60- Manager
 pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30,Level 62 – Director,Level 60- Sr. Manager
@@ -115,7 +115,7 @@ The following table describes each column in the CSV file for job level changes 
 
 Here's an example of a CSV file for performance data.
 
-```markdown
+```text
 EmailAddress,EffectiveDate,Remarks,Rating
 sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Met expectations but bad attitude,2-Below expectation
 pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with the team
@@ -135,7 +135,7 @@ The following table describes each column in the CSV file for performance review
 
 Here's an example of a CSV file for the data for the performance improvement plan data.
 
-```markdown
+```text
 EmailAddress,EffectiveDate,ImprovementRemarks,PerformanceRating
 sarad@contoso.com,2019-04-23T15:18:02.4675041+05:30,Met expectation but bad attitude,2-Below expectation
 pillar@contoso.com,2019-04-23T15:18:02.4675041+05:30, Multiple conflicts with the team
