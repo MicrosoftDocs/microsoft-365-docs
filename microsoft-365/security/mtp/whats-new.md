@@ -25,6 +25,9 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
+## July 2020
+- [FileProfile() function](advanced-hunting-fileprofile-function.md) <br> Use this function in your [advanced hunting](advanced-hunting-overview.md) queries to enrich results with comprehensive file information.
+
 ## June 2020
 - Twitter feed <br> Get the latest security research, threat intelligence, product news, and more - right inside the dashboard.
 - [EmailPostDeliveryEvents schema table](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporate information about post-delivery actions taken on email messages in your advanced hunting queries.
