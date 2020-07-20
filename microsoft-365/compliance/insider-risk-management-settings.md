@@ -48,9 +48,9 @@ Alerts are triggered by policies when users perform activities related to policy
 Policy indicators are segmented into the following areas. You can choose the indicators to activate and customize indicator event limits for each indicator level when creating an insider risk policy:
 
 - **Office indicators**: These include policy indicators for SharePoint sites, Teams, and email messaging.
-- **Device indicators**: These include policy indicators for activity such as sharing data over the network or with devices. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see [Getting started with Endpoint DLP](endpoint-dlp-getting-started.md).
+- **Device indicators**: These include policy indicators for activity such as sharing files over the network or with devices. Indicators include activity involving Microsoft Office files, .CSV files, and .PDF files. If you select **Device indicators**, activity is processed only for devices with Windows 10 Build 1809 or higher. For more information on configuring devices for integration with insider risk, see [Getting started with Endpoint DLP](endpoint-dlp-getting-started.md).
 - **Security policy violation indicator**: These include indicators from Microsoft Defender ATP related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Microsoft Defender ATP license and insider risk integration enabled. For more information on configuring Microsoft Defender ATP for insider risk management integration, see [Configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
-- **Risk score boosters**: These include raising the risk score for unusual activities or past policy violations. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities.  settings can only be selected if indicators above are selected as well.
+- **Risk score boosters**: These include raising the risk score for unusual activities or past policy violations. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities. Risk score boosters can only be selected if one or more indicators above are selected.
 
 ![Insider risk management indicator settings](../media/insider-risk-settings-indicators.png)
 
@@ -69,11 +69,12 @@ For example, you decide to enable SharePoint indicators in the insider risk poli
 
 ![Insider risk management custom indicator settings](../media/insider-risk-custom-indicators.png)
 
-- For the first daily event level, you set the threshold at *10 or fewer events per day* for a lower impact to the risk score for the events, *11 or more events per day* for a medium impact to the risk score for the events*,* and *30 or more events per day* a higher impact to the risk score for the events. These settings effectively mean:
+- For the first daily event level, you set the threshold at *10 or more events per day* for a lower impact to the risk score for the events, *20 or more events per day* for a medium impact to the risk score for the events*,* and *30 or more events per day* a higher impact to the risk score for the events. These settings effectively mean:
 
-- If there are 10 or fewer SharePoint events that meet the triggering event for this activity, the risk score is inherently lower and alert severity levels would tend to be at a low level.
-- If there are 11-29 or more SharePoint events that meet the triggering event for this activity, the risk score is inherently higher and alert severity levels would tend to be at a medium level.
-- If there are 30 or more SharePoint events that have met the triggering event for this activity, the risk score is inherently higher and alert severity levels would tend to be at a high level.
+- If there are 1-9 SharePoint events that take place after triggering event, risk scores are minimally impacted and would tend not to generate an alert.
+- If there are 10-19  SharePoint events that take place after a triggering event, the risk score is inherently lower and alert severity levels would tend to be at a low level.
+- If there are 20-29 SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a medium level.
+- If there are 30 or more SharePoint events that take place after a triggering, the risk score is inherently higher and alert severity levels would tend to be at a high level.
 
 ## Policy timeframes
 
@@ -133,7 +134,7 @@ For example, if you select *New*, *In progress*, and *Resolved* for this setting
 
 ### Domains (preview)
 
-Domain settings help you define risk levels for communications to specific domains. These communications include sharing files, email messages, or downloading content. By specifying domains in these settings, you can increase or decrease the risk scoring for activity that takes place with these domains. For example, to specify contoso.com and sales.wingtiptoys.com as allowed domains, you will enter 'contoso.com, sales.wingtiptoys.com' in the **Allowed domains** field.
+Domain settings help you define risk levels for communications to specific domains. These communications include sharing files, email messages, or downloading content. By specifying domains in these settings, you can increase or decrease the risk scoring for activity that takes place with these domains. For example, to specify contoso.com and sales.wingtiptoys.com as allowed domains, you will enter 'contoso.com sales.wingtiptoys.com' in the **Allowed domains** field.
 
 For each of the following domain settings, you can enter up to 500 domains:
 
