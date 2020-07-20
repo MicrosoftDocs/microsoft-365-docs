@@ -42,7 +42,7 @@ When users leave your organization, there are specific risk indicators typically
 >[!IMPORTANT]
 >When using this template, you must configure a Microsoft 365 HR connector to periodically import resignation and termination date information for users in your organization. See the [Import data with the HR connector](import-hr-data.md) article for step-by-step guidance to configure the Microsoft 365 HR connector for your organization.
 
-### General Data leaks
+### General data leaks
 
 Protecting data and preventing data leaks is a constant challenge for most organizations, particularly with the rapid grow of new data created by users, devices, and services. Users are empowered to create, store, and share information across services and devices that make managing data leaks increasingly more complex and difficult. Data leaks can include accidental oversharing of information outside your organization or data theft with malicious intent. In conjunction with an assigned Data Loss Prevention (DLP) policy, this template starts scoring real-time detections of suspicious SharePoint Online data downloads, file and folder sharing, printing files, and copying data to personal cloud messaging and storage services.
 
@@ -100,7 +100,7 @@ Protecting against security violations for users in your organization may depend
 
 You'll need to have Microsoft Defender ATP configured in your organization and enable Microsoft Defender ATP for insider risk management integration in the Defender Security Center to import security violation alerts. For more information on configuring Microsoft Defender ATP for insider risk management integration, see [Configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center). Additionally, you will need to assign priority user groups created in **Insider risk management** > **Settings** > **Priority user groups** to the policy.
 
-### Security policy violations by disgruntled user (preview)
+### Security policy violations by disgruntled users (preview)
 
 Users that experience employment stressors may be at a higher risk for inadvertent or malicious security policy violations. These stressors may include the user being placed on a performance improvement plan, poor performance review status, or being demoted from their current position. This policy template starts risk scoring based these indicators and activities associated with these events for these users.
 
@@ -171,7 +171,7 @@ Complete the following steps to create a new policy:
     >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies on the **Insider risk management** > **Settings** > **Policy indicators** page.
 
 9. Select **Next** to continue.
-10. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
+10. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-settings.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
 11. Select **Next** to continue.
 12. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
@@ -201,7 +201,7 @@ Complete the following steps to manage an existing policy:
     >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies on the **Insider risk management** > **Settings** > **Policy indicators** page.
 
 11. Select **Next** to continue.
-12. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
+12. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-settings.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
 13. Select **Next** to continue.
 14. On the **Review** page, review the settings you've updated for the policy. Select **Edit** to change any of the policy values or select **Submit** to update and activate the policy.
 

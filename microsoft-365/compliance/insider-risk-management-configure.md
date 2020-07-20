@@ -97,7 +97,7 @@ See the [Set up a connector to import HR data](import-hr-data.md) article for st
 
 Insider risk management supports using DLP policies to help identify the intentional or accidental exposure of sensitive information to unwanted parties for High severity level DLP alerts. When configuring an insider risk management policy with any of the **Data leaks** templates, you must assign a specific DLP policy to the policy.
 
-DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#data-leaks).
+DLP policies help identify users to activate risk scoring in insider risk management for high severity DLP alerts for sensitive information and are an important part of configuring full risk management coverage in your organization. For more information about insider risk management and DLP policy integration and planning considerations, see [Insider risk management policies](insider-risk-management-policies.md#general-data-leaks).
 
 >[!IMPORTANT]
 >Make sure you've completed the following:
@@ -121,11 +121,11 @@ A priority user group is required when using the following policy templates:
 - Security policy violations by priority users 
 - Data leaks by priority users
 
-See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-users-preview) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
+See the [Getting started with insider risk management settings](insider-risk-management-settings.md#priority-user-groups-preview) article for step-by-step guidance to create a priority user group. After you've configured a priority user group, return to these configuration steps.
 
 ## Step 4: Configure insider risk settings
 
-[Insider risk settings](insider-risk-management-policies.md#policy-settings) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
+[Insider risk settings](insider-risk-management-settings.md) apply to all insider risk management policies, regardless of the template you chose when creating a policy. Settings are configured using the **Insider risk settings** control located at the top of all insider risk management tabs. These settings control privacy, indicators, monitoring windows, and intelligent detections.
 
 Before configuring a policy, define the following insider risk settings:
 
@@ -136,7 +136,7 @@ Before configuring a policy, define the following insider risk settings:
     >[!IMPORTANT]
     >In order to receive alerts for risky activity defined in your policies, you must select one or more indicators.
 
-4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-policies.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
+4. On the **Policy timeframes** page, select the [policy timeframes](insider-risk-management-settings.md#policy-timeframes) to go into effect for a user when they trigger a match for an insider risk policy.
 5. On the **Intelligent detections** page, configure the following settings for insider risk policies:
     - [Anomaly detections](insider-risk-management-settings.md#anomaly-detections)
     - [Offensive language detections](insider-risk-management-settings.md#offensive-language-detections)
@@ -174,7 +174,7 @@ Insider risk management policies include assigned users and define which types o
     >If indicators on this page can't be selected, you'll need to select the indicators you want to enable for all policies on the **Insider risk management** > **Settings** > **Policy indicators** page.
 
 9. Select **Next** to continue.
-10. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-policies.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
+10. On the **Policy timeframes** page, you'll see the [activation window conditions](insider-risk-management-settings.md#policy-timeframes) for the policy that on the **Insider risk settings** > **Policy timeframes** page.
 11. Select **Next** to continue.
 12. On the **Review** page, review the settings you've chosen for the policy. Select **Edit** to change any of the policy values or select **Submit** to create and activate the policy.
 
