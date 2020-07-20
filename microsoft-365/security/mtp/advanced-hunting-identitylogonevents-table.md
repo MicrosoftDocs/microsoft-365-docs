@@ -26,6 +26,9 @@ ms.topic: article
 
 The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities made through your on-premises Active Directory captured by Azure ATP and authentication activities related to Microsoft online services captured by Microsoft Cloud App Security. Use this reference to construct queries that return information from this table.
 
+>[!NOTE]
+>This table currently doesn't cover all Azure Active Directory (AD) authentication events. It only covers activities tracked by Cloud App Security, specifically interactive logons through Azure AD using ActiveSync and other legacy protocols.
+
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
 | Column name | Data type | Description |
@@ -34,7 +37,8 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `ActionType` | string | Type of activity that triggered the event |
 | `LogonType` | string | Type of logon session, specifically:<br><br> - **Interactive** - User physically interacts with the machine using the local keyboard and screen<br><br> - **Remote interactive (RDP) logons** - User interacts with the machine remotely using Remote Desktop, Terminal Services, Remote Assistance, or other RDP clients<br><br> - **Network** - Session initiated when the machine is accessed using PsExec or when shared resources on the machine, such as printers and shared folders, are accessed<br><br> - **Batch** - Session initiated by scheduled tasks<br><br> - **Service** - Session initiated by services as they start |
 | `Application` | string | Application that performed the recorded action |
-| `Protocol` | string | Protocol used during the communication |
+| `Protocol` | string | Network protocol used |
+| `FailureReason` | string | Information explaining why the recorded action failed |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
 | `AccountUpn` | string | User principal name (UPN) of the account |
@@ -45,10 +49,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DeviceType` | string | Type of device |
 | `OSPlatform` | string | Platform of the operating system running on the machine. This indicates specific operating systems, including variations within the same family, such as Windows 10 and Windows 7. |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
-| `DestinationDeviceName` | string | Fully qualified domain name (FQDN) of the device |
-| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the target device |
+| `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
+| `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
+| `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
 | `Location` | string | City, country, or other geographic location associated with the event |
-| `ISP` | string | Internet service provider (ISP) associated with the endpoint IP address |
+| `Isp` | string | Internet service provider (ISP) associated with the endpoint IP address |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `AdditionalFields` | string | Additional information about the entity or event |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

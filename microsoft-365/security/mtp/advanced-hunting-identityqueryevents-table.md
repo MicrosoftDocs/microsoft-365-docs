@@ -33,7 +33,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `ActionType` | string | Type of activity that triggered the event |
 | `Application` | string | Application that performed the recorded action |
-| `Query` | string | Type of query: QueryGroup, QueryUser, or EnumerateUsers |
+| `QueryType` | string | Type of query: QueryGroup, QueryUser, or EnumerateUsers |
+| `QueryTarget` | string | Name of user, group, device, domain, or any other entity type being queried |
+| `Query` | string | String used to run the query |
 | `QueryObject` | string | Name of the user, group, device, domain, or any other entity type being queried |
 | `Protocol` | string | Protocol used during the communication |
 | `AccountName` | string | User name of the account |
@@ -44,10 +46,14 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountDisplayName` | string | Name of the account user displayed in the address book. Typically a combination of a given or first name, a middle initiation, and a last name or surname. |
 | `DeviceName` | string | Fully qualified domain name (FQDN) of the endpoint |
 | `IPAddress` | string | IP address assigned to the endpoint and used during related network communications |
-| `DestinationDeviceName` | string | Fully qualified domain name (FQDN) of the device |
-| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the target device |
-| `TargetAccountDisplayName` | string | User name of the target account |
+| `DestinationDeviceName` | string | Name of the device running the server application that processed the recorded action |
+| `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
+| `TargetDeviceName` | string | Fully qualified domain name (FQDN) of the device that the recorded action was applied to |
+| `TargetAccountUpn` | string | User principal name (UPN) of the account that the recorded action was applied to |
+| `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
 | `Location` | string | City, country, or other geographic location associated with the event |
+| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `AdditionalFields` | string | Additional information about the entity or event |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
