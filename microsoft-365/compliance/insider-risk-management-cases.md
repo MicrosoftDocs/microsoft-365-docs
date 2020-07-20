@@ -208,6 +208,8 @@ The following sharing options are available:
     - **Priority**: The priority for the new ServiceNow task, either *Planning*, *Low*, *Moderate*, *High*, or *Critical*.
     - **Due date**: The requested date for completing the ServiceNow task.
 
+![Insider risk management sharing with ServiceNow](../media/insider-risk-share-servicenow.png)
+
 - **Email**: Shares a link to the insider risk management case in an email. You can choose any locally configured email client with this sharing option. To share the case link with email, select **Share** > **Email** from the case action toolbar.
 - **Copy link**: Copies a link to the insider risk management case to your clipboard. To copy the case link to your clipboard, select **Share** > **Copy link** from the case action toolbar.
 
