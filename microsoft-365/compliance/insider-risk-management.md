@@ -131,7 +131,7 @@ In most cases, users try their best to properly handle sensitive or confidential
 
 ### Offensive behavior that violates corporate policies
 
-User-to-user communications are often a source of inadvertent or malicious violations of corporate policies. These violations can include offensive language, threats, and harassment between users. This type of activity contributes to a hostile work environment and can result in legal actions against both users and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the [Offensive language in email]((insider-risk-management-policies.md#offensive-language-in-email)) policy template to help minimize these risks. This policy template helps you quickly configure and enable a policy to automatically detect and alert you of this kind of behavior in your organization.
+User-to-user communications are often a source of inadvertent or malicious violations of corporate policies. These violations can include offensive language, threats, and harassment between users. This type of activity contributes to a hostile work environment and can result in legal actions against both users and the larger organization. Insider risk management uses new built-in Microsoft 365 classifiers and the [Offensive language in email](insider-risk-management-policies.md#offensive-language-in-email) policy template to help minimize these risks. This policy template helps you quickly configure and enable a policy to automatically detect and alert you of this kind of behavior in your organization.
 
 ## Intentional or unintentional security policy violations (preview)
 
