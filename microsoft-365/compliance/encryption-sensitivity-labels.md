@@ -207,10 +207,9 @@ For more information, see [Rights Management issuer and Rights Management owner]
 
 This feature is currently in public preview.
 
-Select this option only after you have configured the Double Key Encryption service and you need to use this key for the documents and emails that this label encrypts, rather than use the default [root key for your tenant](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
+Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for the documents and emails that will have this label applied.
 
-For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE) (public preview)](double-key-encryption.md)
-
+For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE)](double-key-encryption.md).
 
 ## Let users assign permissions
 
