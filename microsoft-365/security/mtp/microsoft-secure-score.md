@@ -160,6 +160,6 @@ If you have any issues, please let us know by posting in the [Security, Privacy 
 
 ## Related resources
 
-- [Gain visibility into your security posture](microsoft-secure-score-improvement-actions.md)
+- [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
