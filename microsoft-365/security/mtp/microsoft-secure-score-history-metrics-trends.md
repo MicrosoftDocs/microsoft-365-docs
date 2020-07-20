@@ -71,5 +71,5 @@ If you have any issues, please let us know by posting in the [Security, Privacy 
 ## Related resources
 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
-- [Gain visibility into your security posture](microsoft-secure-score-improvement-actions.md)
+- [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
