@@ -52,6 +52,8 @@ Policy indicators are segmented into the following areas. You can choose the ind
 - **Security policy violation indicator**: These include indicators from Microsoft Defender ATP related to unapproved or malicious software installation or bypassing security controls. To receive alerts in insider risk management, you must have an active Microsoft Defender ATP license and insider risk integration enabled. For more information on configuring Microsoft Defender ATP for insider risk management integration, see [Configure advanced features in Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Risk score boosters**: These include raising the risk score for unusual activities or past policy violations. Enabling risk score boosters increase risk scores and the likelihood of alerts for these types of activities.  settings can only be selected if indicators above are selected as well.
 
+![Insider risk management indicator settings](../media/insider-risk-settings-indicators.png)
+
 In some cases, you may want to limit the insider risk policy indicators that are applied to insider risk policies in your organization. You can turn off the policy indicators for specific areas by disabling them from all insider risk policies. Triggering events cannot be modified for insider risk policy templates.
 
 To define the insider risk policy indicators that are enabled in all insider risk policies, navigate to **Insider risk settings** > **Indicators** and select one or more policy indicators. The indicators selected on the Indicators settings page cannot be individually configured when creating or editing an insider risk policy in the policy wizard.
@@ -65,7 +67,7 @@ When creating a policy in the policy wizard, you can configure how the daily num
 
 For example, you decide to enable SharePoint indicators in the insider risk policy settings and to set custom thresholds for SharePoint events when configuring indicators for a new insider risk *Data leaks* policy. While in the insider risk policy wizard, you configure three different daily event levels for each SharePoint indicator to influence the risk score for alerts associated with these events.
 
-SCREENSHOT OF SAMPLE INDICATOR SETTINGS
+![Insider risk management custom indicator settings](../media/insider-risk-custom-indicators.png)
 
 - For the first daily event level, you set the threshold at *10 or fewer events per day* for a lower impact to the risk score for the events, *11 or more events per day* for a medium impact to the risk score for the events*,* and *30 or more events per day* a higher impact to the risk score for the events. These settings effectively mean:
 
@@ -80,9 +82,13 @@ Policy timeframes allow you to define past and future review periods that are tr
 - **Activation window**: Available for all policy templates, the *Activation window* is the defined number of days that the window activates **after** a triggering event. The window activates for 1 to 30 days after a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Activation window* to 30 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Activation window* and the policy is active for that user for 30 days after the triggering event occurred.
 - **Past activity detection**: Available for all policy templates, the *Past activity detection* is the defined number of days that the window activates **before** a triggering event. The window activates for 0 to 180 days before a triggering event occurs for any user assigned to the policy. For example, you've configured an insider risk management policy and set the *Past activity detection* to 90 days. Several months have passed since you configured the policy and a triggering event occurs for one of the users included in the policy. The triggering event activates the *Past activity detection* and the policy gathers historic activities for that user for 90 days prior to the triggering event.
 
+![Insider risk management timeframe settings](../media/insider-risk-settings-timeframes.png)
+
 ## Intelligent detections
 
 Intelligent detection settings help refine how the detections of risky activities are processed for alerts. In certain circumstances, you may need to define files types to ignore or you want to enforce a detection level for files to help define a minimum bar for alerts. When using offensive language policies, you may need to increase or decrease the detection sensitivity to control the amount of reported policy matches. Use these settings to control overall alert volume, file type exclusions, file volume limits, and the offensive language detection sensitivity.
+
+![Insider risk management intelligent detections settings](../media/insider-risk-settings-detections.png)
 
 ### Anomaly detections
 
@@ -139,9 +145,13 @@ For each of the following domain settings, you can enter up to 500 domains:
 
 Insider risk management alert information is exportable to security information and event management (SIEM) services via the [Office 365 Management Activity APIs](https://docs.microsoft.com/office/office-365-management-api/). You can use the Office 365 Management Activity APIs to export alert information to other applications your organization may use to manage or aggregate insider risk information. To use the APIs to access insider risk alert information, enable Office 365 Management Activity API support in the global settings. By default, this setting is disabled for your Microsoft 365 organization.
 
+![Insider risk management export alert settings](../media/insider-risk-settings-export.png)
+
 ## Priority user groups (preview)
 
 Users in your organization may have different levels of risk depending on their position, level of access to sensitive information, or risk history. Prioritizing the examination and scoring of the activities of these users can help alert you to potential risks that may have higher consequences for your organization. Priority user groups in insider risk management help define the users in your organization that need closer inspection and more sensitive risk scoring. Coupled with the *Security policy violations by priority users* and *Data leaks by priority users* policy templates, users added to a priority user group have an increased likelihood of insider risk alerts and alerts with higher severity levels.
+
+![Insider risk management priority user group settings](../media/insider-risk-settings-priority-users.png)
 
 For example, you need to protect against data leaks for a highly confidential project where users have access to sensitive information. You choose to create *Confidential Project* *Users* priority user group for users in your organization that work on this project. Using the policy wizard and the *Data leaks by priority users* policy template, you create a new policy and assign the *Confidential Project Users* priority users group to the policy. Activities examined by the policy for members of the *Confidential Project Users* priority user group are more sensitive to risk and activities by these users will be more likely to generate an alert and have alerts with higher severity levels.
 
