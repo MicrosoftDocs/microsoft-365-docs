@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
  Use this topic if you're using classification labels as part of your GDPR protection plan. 
 
-If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](labels.md). With retention labels, you can:
+If you're using labels for protection of personal data in Microsoft 365, Microsoft recommends you start with [retention labels](retention.md#retention-labels). With retention labels, you can:
 - Use Advanced Data Governance to automatically apply labels based on sensitive information types or other criteria.
 - Use retention labels with data loss prevention to apply protection. 
 - Use labels with eDiscovery and Content Search. 

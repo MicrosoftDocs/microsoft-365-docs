@@ -1,5 +1,5 @@
 ---
-title: Gain visibility into your security posture through Microsoft Secure Score
+title: Assess your security posture through Microsoft Secure Score
 description: Describes how to take action to improve your Microsoft Secure Score in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
@@ -22,7 +22,7 @@ ms.custom:
 - seo-marvel-jun2020
 ---
 
-# Gain visibility into your security posture through Microsoft Secure Score
+# Assess your security posture with Microsoft Secure Score
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
