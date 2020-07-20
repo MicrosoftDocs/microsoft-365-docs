@@ -12,9 +12,10 @@ ms.collection:
 - M365solutions
 ms.custom: 
 - seo-marvel-apr2020
+- seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: "Learn how to configure Microsoft 365 for collaboration with people outside your organization."
+description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.
 ---
 
 # Collaborating with people outside your organization
