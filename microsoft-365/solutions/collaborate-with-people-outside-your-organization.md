@@ -15,12 +15,12 @@ ms.custom:
 - seo-marvel-jun2020
 localization_priority: Normal
 f1.keywords: NOCSH
-description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for external collaboration with people outside your organization.
+description: Learn how to configure Microsoft 365 apps like Teams, OneDrive, and SharePoint for collaboration with people outside your organization.
 ---
 
 # Collaborating with people outside your organization
 
-The external sharing capabilities in Microsoft 365 provide an opportunity for people in your organization to collaborate with partners, vendors, customers, and other external users who don't have an account in your directory. You can share entire teams or sites with people outside your organization, or just individual files.
+The external sharing capabilities in Microsoft 365 provide an opportunity for people in your organization to collaborate with partners, vendors, customers, and others who don't have an account in your directory. You can share entire teams or sites with people outside your organization, or just individual files.
 
 Collaborating with people outside your organization consists of two major components:
 
@@ -32,7 +32,7 @@ Collaborating with people outside your organization consists of two major compon
 By default, in Microsoft 365, sharing with people outside your organization is enabled for SharePoint and OneDrive, but disabled for Teams. Many SharePoint and OneDrive external sharing scenarios work without further configuration. To confirm the settings for a scenario that you're using, or enable a new one, choose from the following options:
 
 - [Collaborate on documents](collaborate-on-documents.md) - Learn how to configure Microsoft 365 to allow sharing and collaboration with people outside your organization (both guests and unauthenticated users) on files and folders.
-- [Collaborate in a site](collaborate-in-site.md) - Learn how to configure Microsoft 365 to enable sharing SharePoint sites with external users.
+- [Collaborate in a site](collaborate-in-site.md) - Learn how to configure Microsoft 365 to enable sharing SharePoint sites with guests.
 - [Collaborate as a team](collaborate-as-team.md) - Learn how to configure Microsoft 365 to enable guest collaboration in Teams.
 
 For a comprehensive look at the guest sharing settings available across Microsoft 365, see [Microsoft 365 guest sharing settings reference](microsoft-365-guest-settings.md).
@@ -47,7 +47,7 @@ Once you've enabled the scenario that you want to use for sharing with people ou
 
 ## Collaborate with partner companies
 
-When you're working on a large project that involves many guests from another organization, or if you have an ongoing vendor relationship in which external users are often changing, you can use entitlement management in Azure Active Directory to simplify guest management and allow the partner company to share in that responsibility. See [Create a B2B extranet with managed guests](b2b-extranet.md) for details.
+When you're working on a large project that involves many guests from another organization, or if you have an ongoing vendor relationship in which guests are often changing, you can use entitlement management in Azure Active Directory to simplify guest management and allow the partner company to share in that responsibility. See [Create a B2B extranet with managed guests](b2b-extranet.md) for details.
 
 ## Limit sharing
 
