@@ -74,6 +74,8 @@ Conditional Access is available for customers who have purchased Azure AD Premiu
 
 Risk-based conditional access is available through Azure AD Premium P2 license, or licences that include this, such as Microsoft 365 E5. For more information, see [risk-based Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
+For more information about the Azure AD P1 and P2, see [Azure Active Directory pricing](https://azure.microsoft.com/pricing/details/active-directory/).
+
 ### Turn on Modern authentication for your organization
 
 For most subscriptions modern authentication is automatically turned on, but if you purchased your subscription a long time ago, it might not be. This has to be turned on before MFA works appropriately with Office apps.
