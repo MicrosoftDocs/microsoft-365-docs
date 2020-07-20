@@ -131,7 +131,7 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
-During the preview period, the following apps support trainable classifiers for sensitivity labels:
+During the preview period for trainable classifiers, the following apps support trainable classifiers for sensitivity labels:
 
 - Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows, now rolling out to the [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) in version 2006 and later:
     - Word
