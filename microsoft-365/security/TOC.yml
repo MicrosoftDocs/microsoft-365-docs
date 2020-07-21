@@ -47,6 +47,8 @@
           href: mtp/microsoft-secure-score-history-metrics-trends.md
         - name: What's coming
           href: mtp/microsoft-secure-score-whats-coming.md
+        - name: What's new
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft Threat Protection
       items: 
         - name: Overview
