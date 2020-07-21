@@ -23,7 +23,7 @@ Please pay in USD only and reference invoice number(s) on your payment remittanc
 
 ## Electronic Funds Transfer
 
-**Bank:** Citibank
-**SWIFT Code:** CITIJPJT
-**Account Number:** 160609028
+**Bank:** Citibank  
+**SWIFT Code:** CITIJPJT  
+**Account Number:** 160609028  
 **Account Name:** Microsoft
