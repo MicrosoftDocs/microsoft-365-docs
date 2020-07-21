@@ -23,7 +23,7 @@ Please pay in JPY only and reference invoice number(s) on your payment remittanc
 
 ## Electronic Funds Transfer
 
-**Bank:** Citibank, N.A
+**Bank:** Citibank, N.A  
 **Bank ID:** 0401  
 **Branch:** Tokyo Branch  
 **Branch code:** 730  
