@@ -86,6 +86,13 @@ When you're done, you can encrypt documents and files using DKE. For information
 
 ### Install software prerequisites
 
+There are two types of software prerequisites for Double Key Encryption
+
+- [Double Key Encryption service prerequisites](#double-key-encryption-service-prerequisites)
+- [Software prerequisites for client computers](#software-prerequisites-for-client-computers)
+
+#### Double Key Encryption service prerequisites
+
 Install these prerequisites on the computer where you want to install the DKE service.
 
 **.NET Core 3.1 SDK**. Download and install the SDK from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
@@ -107,6 +114,8 @@ Install these prerequisites on the computer where you want to install the DKE se
 - [GitHub Enterprise](https://github.com/enterprise)
 
 **OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE.
+
+#### Double Key Encryption prerequisites for client computers
 
 Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
