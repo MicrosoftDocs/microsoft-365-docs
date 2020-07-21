@@ -113,7 +113,7 @@ Install these prerequisites on the computer where you want to install the DKE se
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
-**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE.
+**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE. In addition, make sure you are invoking it correctly from your environment variables path. For example, see "Add the installation directory to PATH" at https://www.osradar.com/install-openssl-windows/ for details.
 
 #### Double Key Encryption prerequisites for client computers
 
@@ -151,45 +151,64 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
     :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio Code master branch":::
 
-6. Select the word **master,** and then select **public_preview** from the list of branches. Selecting the **public_preview** branch ensures that you have the correct files to build the project.
+6. Select the word **master,** and then select **public_preview** from the list of branches. Selecting the public_preview branch ensures that you have the correct files to build the project.
 
 You now have your DKE source repository set up locally. Next, [modify application settings](#modifying-application-settings) for your organization.
 
 ### Modify application settings
 
-To deploy DKE, you must modify the following types of application settings:
+To deploy the DKE service, you must modify the following types of application settings:
 
 - [Key access settings](#key-access-settings)
 - [Tenant and key settings](#tenant-and-key-settings)
+
+You modify application settings in the appsettings.json file. This file is located in the DoubleKeyEncryptionService repo you cloned locally under DoubleKeyEncryptionService\src\customer-key-store. For example, in Visual Studio Code, you can browse to the file as shown in the following picture.
+
+:::image type="content" source="../media/dke-appsettingsjson.png" alt-text="Locating the appsettings.json file for DKE.":::
 
 #### Key access settings
 
 Choose whether to use email or role authorization. DKE supports only one of these authentication methods at a time.
 
-**Email authorization**. Allows your organization to authorize access to keys based on email addresses only.
+- **Email authorization**. Allows your organization to authorize access to keys based on email addresses only.
 
-**Role authorization**. Allows your organization to authorize access to keys based on Active Directory groups, and requires that the web service can query LDAP.
+- **Role authorization**. Allows your organization to authorize access to keys based on Active Directory groups, and requires that the web service can query LDAP.
 
-In the **appsettings.json** file, define one of the following keys. Remove the key that isn't relevant for your chosen authorization method.
+To set key access settings for DKE:
 
-|Key  |Description  |
-|---------|---------|
-|**AuthorizedEmailAddresses**     | Used for email authorization only.<br></br>Define with the email address you want to authorize. </br>For example: **" ‘AuthorizedEmailAddresses’ ": ["email1@company.com", "email2@company.com ", email3@company.com]**</br></br>Remove for role authorization.        |
-|**AuthorizedRoles**    | Used for role authorization only.</br> </br>Define with the ActiveDirectory group names you want to authorize. </br>For example: **"AuthorizedRoles": ["group1", "group2", "group3"]**</br><br>Remove for email authorization.        |
+1. In the **appsettings.json** file, define only one of these settings:
+
+   - For email authorization, locate the **AuthorizedEmailAddresses** setting. Add the email address that you want to authorize. Separate multiple email addresses with double quotes and commas. For example: **" ‘AuthorizedEmailAddresses’ ": ["email1@company.com", "email2@company.com ", email3@company.com]**
+
+   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="appsettings.json file showing email authorization method":::
+
+   - For role authorization, locate the **AuthorizedRoles** setting. Define with the ActiveDirectory group names you want to authorize. For example: **"AuthorizedRoles": ["group1", "group2", "group3"]**
+
+   :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.json file showing role authorization method":::
+
+2. Remove the setting that isn't relevant for your chosen authorization method.
 
 #### Tenant and key settings
 
-DKE tenant and key settings are located in the **appsettings.json** file.
+DKE tenant and key settings are located in the **appsettings.json** file and the **startup.cs** file.
 
 In the **appsettings.json** file, modify the following values:
 
-|Name  |Description  |
-|---------|---------|
-|**ValidIssuers**     | Replace `<tenantid>` with your tenant ID GUID.        |
-|**JwtAudience**     | Replace `<yourhostname>` with the hostname of the machine where the DKE service will be running.</br></br>- This value must match the actual name of your host.</br>- If you are debugging, you may want to define this value as **localhost:5000** </br>- If you later deploy to a server, make sure to update this value to the server's hostname.</br> </br>[Later in the deployment](#publishing-a-customer-key-store-to-azure), you'll define this hostname as the Azure App Service instance name.        |
-|**LDAPPath**     | Set the value as follows:</br></br>- If you are using role authorization, enter the LDAP domain.</br>- If you are not using role authorization, leave this value empty. </br></br>For more information, see [Key access settings](#key-access-settings)      |
-|**TestKeys:Name**     |  Enter a name for your key. Example: **TestKey1**       |
-|**TestKeys:Id**     |   Create a GUID and enter it as the **TestKeys:ID** value. Example: **DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE**|
+- **ValidIssuers**. Replace `<tenantid>` with your tenant GUID.
+- **JwtAudience**. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
+
+  > [!IMPORTANT]
+  > The value for JwtAudience must match the name of your host *exactly*. You may use **localhost:5000** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
+
+- **LDAPPath**. Set the value as follows:
+
+  - If you're using role authorization, enter the LDAP domain.
+  - If you're using email authorization, leave this value empty.
+
+   For more information, see [Key access settings](#key-access-settings).
+
+- **TestKeys:Name**. Enter a name for your key. Example: **TestKey1**
+- **TestKeys:Id**. Create a GUID and enter it as the **TestKeys:ID** value. For example, **DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE**. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
 
 ### Generate test keys
 
@@ -197,34 +216,52 @@ Once you have your application settings defined, you're ready to generate public
 
 To generate keys:
 
-1. Make sure that you're invoking OpenSSL correctly from your environment variables path. <!--For example, see [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/).-->
+1. From the Windows Start menu, run the OpenSSL Command Prompt.
 
-1. Run the following commands:
+1. Change to the folder where you want to save the test keys. The files you create by completing the steps in this task are stored in this folder.
 
-        openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
-        openssl rsa -in key.pem -out privkeynopass.pem
-        openssl rsa -in key.pem -pubout > pubkeyonly.pem
+1. Generate the new test key.
 
-1. Copy all of the content in the **pubkeyonly.pem** file, except the beginning and end lines, into the **PublicPem** section of the **appsettings.json** file.
+   ```dos
+   openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
+   ```
 
-1. Copy all of the content in the **privkeynopass.pem** file, except the beginning and end lines, into the **PrivatePem** in **appsettings.json** file.
+2. Generate the private key.
 
-1. Ensure that all whitespaces and newlines in both the **PublicPem** and **PrivatePem** sections are removed. 
+   ```dos
+   openssl rsa -in key.pem -out privkeynopass.pem
+   ```
+
+1. Generate the public key.
+
+   ```dos
+   openssl rsa -in key.pem -pubout > pubkeyonly.pem
+   ```
+
+1. In a text editor, open **pubkeyonly.pem**. Copy all of the content in the **pubkeyonly.pem** file, except the first and last lines, into the **PublicPem** section of the **appsettings.json** file.
+
+1. In a text editor, open **privkeynopass.pem**. Copy all of the content in the **privkeynopass.pem** file, except the first and last lines, into the **PrivatePem** section of the **appsettings.json** file.
+
+1. Remove all blank spaces and newlines in both the **PublicPem** and **PrivatePem** sections.
 
     > [!IMPORTANT]
-    > When you remove this content, make sure not delete any of the actual PEM data.
+    > When you copy this content, do not delete any of the PEM data.
 
 1. Open the **Startup.cs** file, and locate the following lines:
 
+   ```c#
         #if USE_TEST_KEYS
-        #error !!!!!!!!!!!!!!!!!!!!!! Use of test keys is only supported for testing, 
+        #error !!!!!!!!!!!!!!!!!!!!!! Use of test keys is only supported for testing,
         DO NOT USE  FOR PRODUCTION !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
         #endif
+   ```
 
 1. Replace these lines with the following text:
 
-        services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
+   ```c#
+   services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
+   ```
 
 Now you're ready to [build your DKE project](#building-the-project).
 
@@ -242,9 +279,11 @@ Use the following instructions to build the DKE project locally:
 
     1. In the build section, locate the path to the **customerkeystore.csproj** file.
 
-        If it's not there, add the following line:
+       If it's not there, add the following line:
 
-            "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
+       ```
+       "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
+       ```
 
 1. If needed, press **CTRL+SHIFT+B** > **ENTER** again to run the build. Verify that there are no red errors in the output window.
 
