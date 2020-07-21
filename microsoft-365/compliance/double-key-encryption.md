@@ -155,7 +155,7 @@ When you're done, [generate a set of test keys](#generate-test-keys), and then [
 
 #### Key access settings
 
-Consider whether you're going to use email or role authorization. DKE supports only one of these authentication methods at a time.
+Choose whether to use email or role authorization. DKE supports only one of these authentication methods at a time.
 
 - **Email authorization**. Allows your organization to authorize access to keys based on email addresses only. Enabled with the **AuthorizedEmailAddresses** key.
 
