@@ -64,7 +64,9 @@ This public preview release of Double Key Encryption for Microsoft 365 is availa
 
 There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins can successfully deploy the service. If you're experienced with the common technologies, such as git, shared by the deployment methods described in this article, you can choose to use your own methods.
 
-For public preview, we've included step-by-step instructions on how to deploy the Double Key Encryption service to Azure. You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to configure the application settings to suit your deployment needs and publish the key store to the appropriate location.
+For public preview, we've included step-by-step instructions on how to deploy the Double Key Encryption service to Azure. While this scenario isn't something you'd likely do in production, for public preview it provides a quick way for you to deploy so that you can get started using Double Key Encryption right away.
+
+You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to configure the application settings to suit your deployment needs and publish the key store to the appropriate location.
 
 ## Deploy Double Key Encryption
 
@@ -151,15 +153,13 @@ To deploy DKE, you must modify the following types of application settings:
 - [Key access settings](#key-access-settings)
 - [Tenant and key settings](#tenant-and-key-settings)
 
-When you're done, [generate a set of test keys](#generate-test-keys), and then [build your project](#building-the-project).
-
 #### Key access settings
 
 Choose whether to use email or role authorization. DKE supports only one of these authentication methods at a time.
 
-- **Email authorization**. Allows your organization to authorize access to keys based on email addresses only. Enabled with the **AuthorizedEmailAddresses** key.
+**Email authorization**. Allows your organization to authorize access to keys based on email addresses only.
 
-- **Role authorization**. Allows your organization to authorize access to keys based on Active Directory groups, and requires that the web service can query LDAP. Enabled with the **AuthorizedRoles** key.
+**Role authorization**. Allows your organization to authorize access to keys based on Active Directory groups, and requires that the web service can query LDAP.
 
 In the **appsettings.json** file, define one of the following keys. Remove the key that isn't relevant for your chosen authorization method.
 
