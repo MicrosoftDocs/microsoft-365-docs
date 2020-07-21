@@ -159,17 +159,18 @@ To enable the new capabilities, use the [Set-SPOTenant](https://docs.microsoft.c
     ```
 3. For Microsoft 365 Multi-Geo: Repeat steps 1 and 2 for each of your remaining geo-locations.
 
-## Schedule roll-out after you create or change a sensitivity label
+## Publishing and changing sensitivity labels
 
-After you create or change a sensitivity label in the Microsoft 365 compliance center, publish it in stages. If you publish labels that haven't fully synchronized, when users apply the labels to files and upload them to SharePoint, the files can’t be opened in the web versions of the Office apps. Search and eDiscovery also don't work for the files.
+When you use sensitivity labels with SharePoint and OneDrive, keep in mind that you need to allow for replication time when you publish new sensitivity labels or update existing sensitivity labels. This is especially important for new labels that apply encryption.
 
-We recommend that you follow these steps:
+For example: You create and publish a new sensitivity label that applies encryption and it very quickly appears in a user's desktop app. The user applies this label to a document and then uploads it to SharePoint or OneDrive. If the label replication hasn't completed for the service, the new capabilities won't be applied to that document on upload. As a result, the document won't be returned in search or for eDiscovery and the document can't be opened in Office for the web.
 
-1. Publish the new or modified sensitivity label only to one or two people.
+- The following changes replicate within one hour: New and deleted sensitivity labels, and sensitivity label policy settings that include which labels are in the policy.
 
-2. Wait for at least 24 hours after initial publication. Verify that the label has fully synchronized.
+- The following changes replicate within 24 hours: Changes to sensitivity label settings for existing labels.
 
-3. Publish the label more broadly.
+Because the replication delay is now only one hour for new sensitivity labels, you are unlikely to run into the scenario in the example. But as a safeguard, we recommend publishing new labels to just a few test users first, wait for an hour, and then verify the label behavior on SharePoint and OneDrive. As the final step, make the label available to more users by either adding more users to the existing label policy, or add the label to an existing label policy for your standard users. At the time your standard users see the label, it has already synchronized to SharePoint and OneDrive.
+
 
 ## SharePoint Information Rights Management (IRM) and sensitivity labels
 
