@@ -21,34 +21,12 @@ In the Project Cortex Topic Center, a knowledge manager can review topics that h
 
 ## Requirements
 
-In order to work in the topic center, you need to have the required permissions. Your admin can add you during knowledge management setup, or new users can be added afterwards.
+In order to work in the topic center, you need to have the required permissions. Your admin can add you during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-topic-center.md).
 
 Topic center users can be given two sets of permissions:
 
 - Create and edit topics: Create new topics or update topic content such as the description, documents and associated persons
 - Manage topics: Use the Topic management dashboard to review topics across the organization. Users can perform actions such as confirm and reject topics
-
-
-
-
-To give a user permissions to manage topics:
-
-1. In the Microsoft 365 admin center, in the navigation pane, select **Set up**.
-2. In the **Organizational Knowledge** section, under **Connect people to knowledge**, select **View**.
-3. On the **Connect people to knowledge** page, select **Manage**.
-4. On the **Knowledge Network** page, select the **Topic permissions** tab.
-5. On the **Topic permissions** tab, under **Who can manage topics**, select **View**.
-6.  On the **Who can manage topics** page, add the user to the **Only selected users or security groups** box.
-7. After adding your user, select **Add**.
-3. Under the **Who can create and edit topics**, select **View**.
-4. Add the user to the **Only selected users or security groups** box.
-5. Select **Add**.
-
-To give a user permissions to create and edit topics:
-
-1. On the **Topic permissions** tab, under the **Who can create and edit topics**, select **View**.
-2. Add the user to the **Only selected users or security groups** box.
-3. Select **Add**.
 
 
 ## Reviewing unconfirmed topics
