@@ -19,7 +19,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 [Find another country or region](../billing-and-payments/pay-for-your-subscription.md).
 
-Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.
+Please pay in JPY only and reference invoice number(s) on your payment remittance.
 
 ## Electronic Funds Transfer
 
