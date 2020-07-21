@@ -41,11 +41,37 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 - **No 3-character terms** — Avoid comparing or filtering using three-character terms, which are not indexed.
 - **Project selectively** — When joining tables, project only the columns you need.
 
-## Operator specific guidance
+## Optimize the join operator
+The [join operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator) merges rows from two tables my matching values in specified columns. Apply the following tips to optimize queries that use this operator:
+
+- **Smaller table to your left** — Place the smaller on the left side of the join [MORE INFO WHY] 
+    ```kusto
+    <EXAMPLE>
+    ```
+- **Hints to performance** — The `join` operator supports hints that can help improve performance [MORE INFO WHY]. [Learn more about join hints](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-hints)
+    ```kusto
+    <EXAMPLE>
+    ```
+
+- **Nondeterministic by default** — With the default [join flavor](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator#join-flavors) (other flavors specified using `kind`) returns non-deterministic results [MORE INFO NEEDED]
+    ```kusto
+    <EXAMPLE>
+    ```
+## Optimize the summarize operator
+The [summarize operator](https://docs.microsoft.com/azure/data-explorer/kusto/query/summarizeoperator) generates a table that aggregates the contents of another table. Apply the following tips to optimize queries that use this operator:
+
+- **Non-distinct values** — Using the `summarize` operator with common values helps... [MORE INFO NEEDED]
+    ```kusto
+    <EXAMPLE>
+    ```
+- **Shuffle the query** — By shuffling a query, you can distribute processing load across cluster nodes to improve query performance [MORE INFO NEEDED -- does this really apply to advanced hunting?]
+    ```kusto
+    <EXAMPLE>
+    ```
 
 ## Query tips and pitfalls
 
-### Queries with process IDs
+### Identify unique processes with process IDs
 Process IDs (PIDs) are recycled in Windows and reused for new processes. On their own, they can't serve as unique identifiers for specific processes.
 
 To get a unique identifier for a process on a specific machine, use the process ID together with the process creation time. When you join or summarize data around processes, include columns for the machine identifier (either `DeviceId` or `DeviceName`), the process ID (`ProcessId` or `InitiatingProcessId`), and the process creation time (`ProcessCreationTime` or `InitiatingProcessCreationTime`)
@@ -62,20 +88,21 @@ DeviceNetworkEvents
 
 The query summarizes by both `InitiatingProcessId` and `InitiatingProcessCreationTime` so that it looks at a single process, without mixing multiple processes with the same process ID.
 
-### Queries with command lines
+### Query command-lines
 
-Command lines can vary. When applicable, filter on file names and do fuzzy matching.
+Command-lines can vary. When applicable, filter on file names and do fuzzy matching.
 
-There are numerous ways to construct a command line to accomplish a task. For example, an attacker could reference an image file with or without a path, without a file extension, using environment variables, or with quotes. In addition, the attacker could also change the order of parameters or add multiple quotes and spaces.
+There are numerous ways to construct a command-line to accomplish a task. For example, an attacker could reference an image file with or without a path, without a file extension, using environment variables, or with quotes. In addition, the attacker could also change the order of parameters or add multiple quotes and spaces.
 
-To create more durable queries using command lines, apply the following practices:
+To create more durable queries around command-lines, apply the following practices:
 
 - Identify the known processes (such as *net.exe* or *psexec.exe*) by matching on the filename fields, instead of filtering on the command-line field.
+- Parse command-line sections using the [parse_command_line() function](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) 
 - When querying for command-line arguments, don't look for an exact match on multiple unrelated arguments in a certain order. Instead, use regular expressions or use multiple separate contains operators.
 - Use case insensitive matches. For example, use `=~`, `in~`, and `contains` instead of `==`, `in`, and `contains_cs`
 - To mitigate DOS command-line obfuscation techniques, consider removing quotes, replacing commas with spaces, and replacing multiple consecutive spaces with a single space. Note that there are more complex DOS obfuscation techniques that require other approaches, but these can help address the most common ones.
 
-The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Windows Defender Firewall service:
+The following examples show various ways to construct a query that looks for the file *net.exe* to stop the Microsoft Defender Firewall service:
 
 ```kusto
 // Non-durable query - do not use
@@ -93,6 +120,17 @@ DeviceProcessEvents
 | extend CanonicalCommandLine=replace("\"", "", ProcessCommandLine)
 | where CanonicalCommandLine contains "stop" and CanonicalCommandLine contains "MpsSvc" 
 ```
+### Parse strings quickly
+There are various functions you can use to efficiently handle strings that need parsing.
+
+| String | Function | Notes |
+| -- | -- | -- |
+| Command-lines | [parse_command_line()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-command-line) | [NEEDS MORE INFO] |
+| Paths | [parse_path()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsepathfunction) | [NEEDS MORE INFO] |
+| Version numbers | [parse_version()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-versionfunction) | [NEEDS MORE INFO] |
+| IPv4 addresses | [parse_ipv4()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parse-ipv4function), [ipv4_compare()](https://docs.microsoft.com/azure/data-explorer/kusto/query/ipv4-comparefunction) |  [NEEDS MORE INFO] |
+
+
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
