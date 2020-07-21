@@ -30,7 +30,7 @@ This public preview version of Double Key Encryption (DKE) enables you to use th
 
 Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure, and you hold the other key.
 
-Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque regardless of where you store the protected data.
+Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
@@ -38,7 +38,7 @@ Double Key Encryption is similar to a safety deposit box that requires both a ba
 
 The following video shows how Double Key Encryption works to secure your content.
 
-If your organizations has any of the following requirements, you can use DKE to help secure your content:
+If your organizations have any of the following requirements, you can use DKE to help secure your content:
 
 - You want to ensure that *only you* can ever decrypt protected content, under all circumstances.
 - You don't want Microsoft to have access to protected data on its own.
@@ -62,15 +62,15 @@ This public preview release of Double Key Encryption for Microsoft 365 is availa
 
 ## About this public preview article
 
-There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins can successfully deploy the service. If you're experienced with the common technologies, such as git, shared by the deployment methods described in this article, you can choose to use your own methods.
+There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins successfully deploy the service. If you're experienced with the common technologies, such as git, shared by the deployment methods described in this article, you can choose to use your own methods.
 
-For public preview, we've included step-by-step instructions on how to deploy the Double Key Encryption service to Azure. While this scenario isn't something you'd likely do in production, for public preview it provides a quick way for you to deploy so that you can get started using Double Key Encryption right away.
+For public preview, we've included step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. For public preview using Azure is a quick way to deploy that lets you get started using Double Key Encryption right away.
 
-You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to configure the application settings to suit your deployment needs and publish the key store to the appropriate location.
+You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to configure the application settings and publish the key store to the appropriate location.
 
 ## Deploy Double Key Encryption
 
-These are the general steps you'll take to set up Double Key Encryption for your organization. The example in this article uses Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+You'll follow these general steps to set up Double Key Encryption for your organization. The example in this article uses Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
 1. [Install software prerequisites](#install-software-prerequisites)
 1. [Clone the Double Key Encryption GitHub repository](#clone-the-dke-github-repository)
@@ -113,7 +113,7 @@ Install these prerequisites on the computer where you want to install the DKE se
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
-**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE. In addition, make sure you are invoking it correctly from your environment variables path. For example, see "Add the installation directory to PATH" at https://www.osradar.com/install-openssl-windows/ for details.
+**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE. Make sure you're invoking it correctly from your environment variables path. For example, see "Add the installation directory to PATH" at https://www.osradar.com/install-openssl-windows/ for details.
 
 #### Double Key Encryption prerequisites for client computers
 
@@ -218,7 +218,7 @@ To generate keys:
 
 1. From the Windows Start menu, run the OpenSSL Command Prompt.
 
-1. Change to the folder where you want to save the test keys. The files you create by completing the steps in this task are stored in this folder.
+1. Change to the folder where you want to save the test keys. The files you create by completing the steps in this task are stored in the same folder.
 
 1. Generate the new test key.
 
@@ -263,7 +263,7 @@ To generate keys:
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
    ```
 
-   The end results should look similar to this.
+   The end results should look similar to the following picture.
 
    :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="startup.cs file for public preview":::
 
@@ -321,7 +321,7 @@ To create an Azure Web App instance to host your DKE deployment:
 
 1. Select your subscription and resource group and define your instance details.
 
-    - Enter the hostname of the computer where you want to install the DKE service. Make sure it's the same name as the one defined for the JwtAudience setting in the [**appsettings.json**](#tenant-and-key-settings) file. This is also the <WebAppInstanceName>.
+    - Enter the hostname of the computer where you want to install the DKE service. Make sure it's the same name as the one defined for the JwtAudience setting in the [**appsettings.json**](#tenant-and-key-settings) file. The value you provide for the name is also the WebAppInstanceName.
 
     - For **Publish**, select **code**, and for **Runtime stack**, select **.NET Core 3.1**.
 
@@ -487,7 +487,7 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 
 ### Enabling DKE in your client
 
-If your DKE labels do not appear under the Sensitivity ribbon in Microsoft Office, your client may not yet have DKE enabled. 
+If your DKE labels don't appear under the Sensitivity ribbon in Microsoft Office, your client may not have DKE enabled.
 
 Enable DKE for your client by adding the following registry keys:
 
