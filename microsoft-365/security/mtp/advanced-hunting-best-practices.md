@@ -24,20 +24,24 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-
-
 ## Optimize query performance
-Apply these recommendations to get results faster and avoid timeouts while running complex queries:
-- When trying new queries, always use `limit` to avoid extremely large result sets. You can also initially assess the size of the result set using `count`.
-- Use time filters first. Ideally, limit your queries to even days.
-- Put filters that are expected to remove most of the data in the beginning of the query, right after the time filter.
-- Use the `has` operator over `contains` when looking for full tokens.
-- Look in a specific column rather than running full text searches across all columns.
-- When joining tables, specify the table with fewer rows first.
-- `project` only the necessary columns from tables you've joined.
+Apply these recommendations to get results faster and avoid timeouts while running complex queries. For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
 
->[!Tip]
->For more guidance on improving query performance, read [Kusto query best practices](https://docs.microsoft.com/azure/kusto/query/best-practices).
+## General guidance
+
+- **Size new queries** — Assess the size of the result set using `count`. Use `limit` to avoid extremely large result sets.
+- **Apply filters early** — Apply time filters and other filters early in the query, especially if you are using conversion [EXAMPLES] and parsing [EXAMPLES] operators
+
+    ```kusto
+    <EXAMPLE>
+    ``` 
+- **Has beats contains** — Avoid searching substrings unnecessarily by using the `has` operator instead of `contains`.
+- **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*`.
+- **Filter tables not expressions** — Don't filter on a calculated column if you can filter on a table column.
+- **No 3-character terms** — Avoid comparing or filtering using three-character terms, which are not indexed.
+- **Project selectively** — When joining tables, project only the columns you need.
+
+## Operator specific guidance
 
 ## Query tips and pitfalls
 
