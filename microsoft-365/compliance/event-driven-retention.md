@@ -367,7 +367,7 @@ Response codes:
 | 401               | Authorization Failed                                 |
 | 403               | Authentication Failed                                |
 
-## Use PowerShell or any HTTP client to create the event
+### Use PowerShell or any HTTP client to create the event
 
 PowerShell must be version 6 or later.
 
