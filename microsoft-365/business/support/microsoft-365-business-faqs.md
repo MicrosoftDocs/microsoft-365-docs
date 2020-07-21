@@ -152,8 +152,8 @@ All the add-ons that can be added to Microsoft 365 Business Standard can be adde
 ### Can I add Phone System and Calling Plans to Microsoft 365 Business Premium? 
 No, Phone System and Calling Plan are reserved for customers who have more advanced needs. Customers who require these capabilities should look at Microsoft 365 Enterprise offerings. 
  
-### Can Microsoft 365 Business Premium customers use Windows Defender Advanced Threat Protection? 
-No, customers that require Windows Defender Advanced Threat Protection need either Windows 10 Enterprise E5 or Microsoft 365 Enterprise E5. 
+### Can Microsoft 365 Business Premium customers use  Microsoft Defender Advanced Threat Protection? 
+Yes, Microsoft Defender Advanced Threat Protection is available as an Add-on to M365 Business premium customers.
 
 ## Partner opportunity
 
