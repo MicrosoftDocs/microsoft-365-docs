@@ -259,37 +259,49 @@ To generate keys:
 
 1. Replace these lines with the following text:
 
-   ```c#
+   ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
    ```
 
-Now you're ready to [build your DKE project](#building-the-project).
+   The end results should look similar to this.
 
-### Building the project
+   :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="startup.cs file for public preview":::
+
+Now you're ready to [build your DKE project](#build-the-project).
+
+### Build the project
 
 Use the following instructions to build the DKE project locally:
 
-1. In Visual Studio Code, ensure that you have your local DKE repository open.
+1. In Visual Studio Code, in the DKE service repository, select **View** \> **Command Palette** and then type **build** at the prompt.
 
-1. Press **CTRL+SHIFT+B** > **ENTER** to start building the project.
+1. From the list, choose **Tasks: Run build task**.
 
-    If there are no build tasks found, create one for .NET core as follows:
+   If there are no build tasks found, select **Configure Build Task** and create one for .NET core as follows.
 
-    1. Open the **tasks.json** file.
+   :::image type="content" source="../media/dke-configurebuildtask.png" alt-text="Configure missing build task for .NET":::
 
-    1. In the build section, locate the path to the **customerkeystore.csproj** file.
+   1. Choose **Create tasks.json from template**.
 
-       If it's not there, add the following line:
+   :::image type="content" source="../media/dke-createtasksjsonfromtemplate.png" alt-text="Create tasks.json file from template for DKE":::
 
-       ```
-       "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
-       ```
+   2. From the list of template types, select **.NET Core**.
 
-1. If needed, press **CTRL+SHIFT+B** > **ENTER** again to run the build. Verify that there are no red errors in the output window.
+   :::image type="content" source="../media/dke-tasksjsontemplate.png" alt-text="Create tasks.json file from template for DKE":::
 
-    If there are red errors, check the console output. Ensure that all the previous steps were done correctly and the correct build versions are present.
+   3. In the build section, locate the path to the **customerkeystore.csproj** file. If it's not there, add the following line:
 
-1. Press **F5** to debug the process. If you're prompted to select an environment, select **.NET core**.
+      ```json
+      "${workspaceFolder}/src/customer-key-store/customerkeystore.csproj",
+      ```
+
+  4. Run the build again.
+
+1. Verify that there are no red errors in the output window.
+
+   If there are red errors, check the console output. Ensure that you completed all the previous steps correctly and the correct build versions are present.
+
+1. **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
 
 The .NET core debugger typically launches to **https://localhost:5001**. To view your test key, go to **https://localhost:5001**, and append a forward slash (/) and the name of your key.
 
@@ -297,9 +309,9 @@ For example: **https://localhost:5001/TestKey1**
 
 The key should display in JSON format.
 
-Your setup is now complete. Continue with [publishing your key to Azure](#publishing-a-customer-key-store-to-azure).
+Your setup is now complete. Before you publish the keystore, in appsettings.json, for the JwtAudience setting, ensure the value for hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build.
 
-### Publishing a customer key store to Azure
+### Publish the key store
 
 The following steps describe how to create an Azure App Service instance to host your DKE deployment, and how to publish your generated keys to Azure.
 
@@ -311,7 +323,7 @@ To create an Azure App Service instance to host your DKE deployment:
 
     - The name you define here will be the hostname of the machine where you deploy DKE. Make sure it's the same name as the one defined in the [**appsettings.json**](#tenant-and-key-settings) file.
 
-    - For the **Publish** option, select **code,** and for the **Runtime stack** option, select **.NET Core 3.1**.
+    - For the **Publish** option, select **code**, and for the **Runtime stack** option, select **.NET Core 3.1**.
 
     For example:
 
@@ -330,7 +342,7 @@ To create an Azure App Service instance to host your DKE deployment:
     > You may prefer other methods to deploy your keys. Select the method that works best for your organization.
     
     > [!TIP]
-    > [Publishing via Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/) and to an [on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=netcore-cli) are described in the [ASP .NET documentation](https://docs.microsoft.com/aspnet/core/). If you use one of these methods, open the instructions in a separate tab so that you can return here easily when you're done.
+    > [Publishing via Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/) and to an [on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=netcore-cli) is described in the [ASP .NET documentation](https://docs.microsoft.com/aspnet/core/). If you use one of these methods, open the instructions in a separate tab so that you can return here easily when you're done.
 
 #### Publish via ZipDeployUI
 
@@ -338,7 +350,7 @@ To create an Azure App Service instance to host your DKE deployment:
 
     For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
-1. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** directory, and verify that this directory contains the **customerkeystore.csproj** file.
+1. In the codebase for the key store, go to the **customer-key-store\src\customer-key-store** folder, and verify that this folder contains the **customerkeystore.csproj** file.
 
 1. Run: **dotnet publish**
 
