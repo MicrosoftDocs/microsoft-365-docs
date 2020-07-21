@@ -37,7 +37,7 @@ Sensitivity and retention labels can then be automatically applied to make the c
 
 ## Trainable classifiers
 
-This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the positives, negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content.
+This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the true positives, true negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content.
 
 ### Where you can use trainable classifiers
 Both built-in classifiers and trainable classifiers are available as a condition for [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and [communication compliance](communication-compliance-configure.md). 
@@ -59,7 +59,7 @@ To access trainable classifiers in the UI:
 
 You'll need accounts with these permissions to use trainable classifiers in these scenarios:
 
-- Retention label policy scenario: RecordManagement and Retention Management roles 
+- Retention label policy scenario: Record Management and Retention Management roles 
 - Sensitivity label policy scenario: Security Administrator, Compliance Administrator, Compliance Data Administrator
 - Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator 
 
