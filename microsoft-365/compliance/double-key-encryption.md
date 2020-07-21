@@ -6,7 +6,7 @@ description: DKE enables you to protect highly sensitive data while maintaining 
 author: kccross
 ms.author: krowley
 manager: laurawi
-ms.date: 07/11/2020
+ms.date: 07/21/2020
 ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
@@ -41,7 +41,7 @@ The following video shows how Double Key Encryption works to secure your content
 If your organizations has any of the following requirements, you can use DKE to help secure your content:
 
 - You want to ensure that *only you* can ever decrypt protected content, under all circumstances.
-- You don't want Microsoft to have access protected data on its own.
+- You don't want Microsoft to have access to protected data on its own.
 - You have regulatory requirements to hold keys within a geographical boundary. All customer-held keys for data encryption and decryption are maintained in your data center.
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
@@ -66,34 +66,37 @@ These are the general steps you'll take to set up DKE for your organization.
 To deploy DKE:
 
 1. [Install software prerequisites](#installing-software-prerequisites)
-2. [Clone the DKE GitHub repository](#cloning-the-dke-git-repository)
-3. [Modify application settings](#modifying-application-settings)
-4. [Generate test keys](#generate-test-keys)
-5. [Build the project](#building-the-project)
-6. [Publish a key store to Azure](#publishing-a-key-store-to-azure)
+1. [Clone the Double Key Encryption GitHub repository](#clone-the-dke-GitHub-repository)
+1. [Modify application settings](#modifying-application-settings)
+1. [Generate test keys](#generate-test-keys)
+1. [Build the project](#building-the-project)
+1. [Publish a key store to Azure](#publishing-a-key-store-to-azure)
+1. [Validate your deployment](#validate-your-deployment)
+1. [Register your key store](#register-your-key-store)
+1. [Create sensitivity labels](#create-labels-using-dke)
 
-Make sure to [validate your deployment](#validate-your-deployment) and then [register your key store](#register-your-key-store).
-
-When you're done, [create sensitivity labels to encrypt content using DKE](#create-labels-using-dke).
+When you're done, use Office Apps to encrypt content using DKE. ***link
 
 ### Install software prerequisites
 
-Install prerequisites on the DKE service host computer:
+Install these prerequisites on the DKE service host computer:
 
-**.NET Core 3.1 SDK** Download and install the SDK from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
+**.NET Core 3.1 SDK**. Download and install the SDK from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
-**Visual Studio code and relevant extensions** Download Visual Studio code from [https://code.visualstudio.com/](https://code.visualstudio.com/). Once installed, press **CTRL+SHIFT** to open the extensions window. Download the following extensions:
+**Visual Studio Code**. Download Visual Studio Code from [https://code.visualstudio.com/](https://code.visualstudio.com). Once installed, run Visual Studio Code and select **View** \> **Extensions**. Install these extensions.
 
 - C# for Visual Studio Code
 
 - NuGet Package Manager
 
 **Microsoft Office** versions *.12711 or later
-**Git resources** Download and install one of the following installations:</br>
+
+**Git resources** Download and install one of the following.
 
 - [Git](https://git-scm.com/downloads)
 
-- [GitHub](https://desktop.github.com/)
+- [GitHub Desktop](https://desktop.github.com/)
+
 - [GitHub Enterprise](https://github.com/enterprise)
 
 **Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
@@ -108,7 +111,7 @@ Install prerequisites on each client computer where you want to protect and cons
 
 ### Cloning the DKE GitHub repository
 
-Microsoft supplies the DKE source files in a GitHub repository. You'll clone the repository to build the project locally for your organization's use. The DKE GitHub repository is located at [https://github.com/Azure-Samples/customer-key-store](https://github.com/Azure-Samples/customer-key-store).
+Microsoft supplies the DKE source files in a GitHub repository. You'll clone the repository to build the project locally for your organization's use. The DKE GitHub repository is located at [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
 
 The following instructions are intended for inexperienced git or Visual Studio Code users who need to deploy DKE:
 
@@ -125,7 +128,7 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
     :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Visual Studio Code GIT:Clone option":::
 
-4. In the text box, paste the URL that you'd copied from Git and press **ENTER.**
+4. In the text box, paste the URL that you copied from Git and press **ENTER.**
 
 5. In the **Select Folder** dialog that appears, browse to and select a location to store the repository. At the prompt, select **Open**.
 
