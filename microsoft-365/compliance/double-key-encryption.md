@@ -26,9 +26,9 @@ ms.collection:
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-This public preview version of Double Key Encryption (DKE) enables you to use the unified labeling client to protect highly sensitive content while maintaining full control of your key.
+This public preview version of Double Key Encryption (DKE) enables you to use the Azure Information Protection Unified Labeling Client to protect highly sensitive content while maintaining full control of your key.
 
-Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure Key Vault, and you hold the other key.
+Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure, and you hold the other key.
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque regardless of where you store the protected data.
 
@@ -48,38 +48,43 @@ If your organizations has any of the following requirements, you can use DKE to 
 
 ## System and licensing requirements for DKE
 
-**Public preview**. This is the public preview version of DKE. For licensing information about this release, see ***
+This public preview release of Double Key Encryption for Microsoft 365 is available as part of Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](http://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
-**Azure Information Protection**. DKE works with sensitivity labels and requires of Azure Information Protection. For more information about the software required to deploy DKE, see [Installing software prerequisites](#installing-software-prerequisites).
+**Office Insider** To use the public preview, you must be a member of the Office Insider program. To join Office Insider, go to [https://insider.office.com](https://insider.office.com). Once you're a member, prepare your environment to deploy Office Insider builds by choosing the right deployment method for your organization. For instructions, see [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
+
+**Azure Information Protection**. DKE works with sensitivity labels and requires Azure Information Protection.
 
 ## Supported environments for storing and viewing DKE-protected content
 
-| Support | Description |
-|---------|-------------|
-|**Supported applications** | [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients with Windows, including Word, Excel, and PowerPoint. |
-|**Online content support** | Documents and files stored online in both Microsoft SharePoint and OneDrive for Business. Encrypted content can be shared by email. You can't view encrypted documents online. Instead, you must view protected content locally because you must provide the second key to decrypt the content. ||
+**Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
 
-## Deploy DKE
+**Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but for public preview you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
 
-These are the general steps you'll take to set up DKE for your organization.
+## About this public preview article
 
-To deploy DKE:
+There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins can successfully deploy the service. If you're experienced with the common technologies, such as git, shared by the deployment methods described in this article, you can choose to use your own methods.
 
-1. [Install software prerequisites](#installing-software-prerequisites)
-1. [Clone the Double Key Encryption GitHub repository](#clone-the-dke-GitHub-repository)
-1. [Modify application settings](#modifying-application-settings)
+For public preview, we've included step-by-step instructions on how to deploy the Double Key Encryption service to Azure. You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to configure the application settings to suit your deployment needs and publish the key store to the appropriate location.
+
+## Deploy Double Key Encryption
+
+These are the general steps you'll take to set up Double Key Encryption for your organization. The example in this article uses Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+
+1. [Install software prerequisites](#install-software-prerequisites)
+1. [Clone the Double Key Encryption GitHub repository](#clone-the-dke-github-repository)
+1. [Modify application settings](#modify-application-settings)
 1. [Generate test keys](#generate-test-keys)
-1. [Build the project](#building-the-project)
-1. [Publish a key store to Azure](#publishing-a-key-store-to-azure)
+1. [Build the project](#build-the-project)
+1. [Publish the key store](#publish-the-key-store)
 1. [Validate your deployment](#validate-your-deployment)
 1. [Register your key store](#register-your-key-store)
 1. [Create sensitivity labels](#create-labels-using-dke)
 
-When you're done, use Office Apps to encrypt content using DKE. ***link
+When you're done, you can encrypt documents and files using DKE. For information, see [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 ### Install software prerequisites
 
-Install these prerequisites on the DKE service host computer:
+Install these prerequisites on the computer where you want to install the DKE service.
 
 **.NET Core 3.1 SDK**. Download and install the SDK from [Download .NET Core 3.1](https://dotnet.microsoft.com/download/dotnet-core/3.1).
 
@@ -89,9 +94,9 @@ Install these prerequisites on the DKE service host computer:
 
 - NuGet Package Manager
 
-**Microsoft Office** versions *.12711 or later
+**Microsoft Office Insider**. Set up at least one [deployment method](https://insider.office.com/business/deploy).
 
-**Git resources** Download and install one of the following.
+**Git resources**. Download and install one of the following.
 
 - [Git](https://git-scm.com/downloads)
 
@@ -99,40 +104,37 @@ Install these prerequisites on the DKE service host computer:
 
 - [GitHub Enterprise](https://github.com/enterprise)
 
-**Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed to [generate test keys](#generate-test-keys) after you deploy DKE.
 
-**OpenSSL** You must have [OpenSSL](https://slproweb.com/products/Win32OpenSSL.html) installed in order to [generate test keys](#generate-test-keys) after deploying DKE.
+Install these prerequisites on each client computer where you want to protect and consume protected documents.
 
-Install prerequisites on each client computer where you want to protect and consume protected documents:
-
-**Microsoft Office** versions *.12711 or later
+**Microsoft Office** version *.12711 or later.
 
 **Azure Information Protection Unified Labeling Client** versions 2.7.93.0 or later. Download and install the Unified Labeling client from [Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
 
-### Cloning the DKE GitHub repository
+### Clone the DKE GitHub repository
 
-Microsoft supplies the DKE source files in a GitHub repository. You'll clone the repository to build the project locally for your organization's use. The DKE GitHub repository is located at [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
+Microsoft supplies the DKE source files in a GitHub repository. You clone the repository to build the project locally for your organization's use. The DKE GitHub repository is located at [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService).
 
-The following instructions are intended for inexperienced git or Visual Studio Code users who need to deploy DKE:
+The following instructions are intended for inexperienced git or Visual Studio Code users:
 
-1. In your browser, go to: [https://github.com/Azure-Samples/customer-key-store](https://github.com/Azure-Samples/customer-key-store)
-2. Towards the right side of the screen, select the green **Clone or download** button. Then, in the dropdown that appears, select the copy button to copy the URL to your clipboard.
+1. In your browser, go to: [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService)
+
+1. Towards the right side of the screen, select **Code**. Your version of the UI might show a **Clone or download** button. Then, in the dropdown that appears, select the copy icon to copy the URL to your clipboard.
 
     For example:
 
     :::image type="content" source="../media/dke-clone.png" alt-text="Clone the Double Key Encryption service repository from GitHub":::
 
-3. Open Visual Studio Code. Press **CTRL+SHFT+P,** and select the **Git:Clone** option. If you need to, enter **git:clone** in the textbox to find the option.
-
-    For example:
+3. In Visual Studio Code, select **View** \> **Command Palette** and select **Git: Clone**. To jump to the option in the list, start typing `git: clone` to filter the entries and then select it from the drop-down. For example:
 
     :::image type="content" source="../media/dke-vscode-clone.png" alt-text="Visual Studio Code GIT:Clone option":::
 
-4. In the text box, paste the URL that you copied from Git and press **ENTER.**
+4. In the text box, paste the URL that you copied from Git and select **Clone from GitHub**.
 
 5. In the **Select Folder** dialog that appears, browse to and select a location to store the repository. At the prompt, select **Open**.
 
-    The repository is opened in Visual Studio code, and displays the current Git branch at the bottom left. Your current branch should be **master**.
+    The repository is opened in Visual Studio Code, and displays the current Git branch at the bottom left. Your current branch should be **master**.
 
     For example:
 
@@ -140,16 +142,16 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 6. Select the word **master,** and then select **public_preview** from the list of branches. Selecting the **public_preview** branch ensures that you have the correct files to build the project.
 
-You now have your DKE source repository set up locally. Continue with [modifying application settings](#modifying-application-settings) for your organization.
+You now have your DKE source repository set up locally. Next, [modify application settings](#modifying-application-settings) for your organization.
 
-### Modifying application settings
+### Modify application settings
 
 To deploy DKE, you must modify the following types of application settings:
 
 - [Key access settings](#key-access-settings)
 - [Tenant and key settings](#tenant-and-key-settings)
 
-When you're done, [generate a set of test keys](#generate-test-keys), and then continue with [building your project](#building-the-project).
+When you're done, [generate a set of test keys](#generate-test-keys), and then [build your project](#building-the-project).
 
 #### Key access settings
 
@@ -412,7 +414,7 @@ Your DKE key store is now registered. Continue  by [creating labels using DKE](#
 
 ## Create labels using DKE
 
-Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center and apply double key encryption to those labels. <!-- This said security center, but you set up labels in the compliance center then use DKE encryption>
+Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center and apply double key encryption to those labels. <!-- This said security center, but you set up labels in the compliance center then use DKE encryption -->
 
 In the label creation UI, select the **Use Double Key Encryption** option and enter the endpoint URL for your key.
 
