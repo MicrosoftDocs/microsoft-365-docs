@@ -1,5 +1,5 @@
 ---
-title: What's coming to Microsoft Secure Score?
+title: What's coming to Microsoft Secure Score
 description: Describes what new changes are coming to Microsoft Secure Score in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 ---
 
-# What's coming to Microsoft Secure Score?
+# What's coming to Microsoft Secure Score
 
 To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score may change.
 
@@ -39,3 +39,4 @@ These these changes may be coming to your Microsoft Secure Score soon, depending
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
 - [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
+- [What's new](microsoft-secure-score-whats-new.md)
