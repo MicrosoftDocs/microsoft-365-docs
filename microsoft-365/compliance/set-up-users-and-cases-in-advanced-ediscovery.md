@@ -1,5 +1,5 @@
 ---
-title: "Set up users and cases in Advanced eDiscovery"
+title: Set up users and cases in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -10,7 +10,7 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: 
+search.appverid:
 - MOE150
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c

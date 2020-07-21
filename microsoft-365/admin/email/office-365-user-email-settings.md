@@ -39,4 +39,4 @@ This table explains the various email settings you can change for a user in Micr
 
 > [!NOTE]
 >
-> <sup>1</sup> You can only manage email apps for mailboxes that are hosted fully in Office 365. You cannot use this feature to manage email apps for mailboxes that are hosted on-premises.
+> <sup>1</sup> You can only manage email apps for mailboxes that are hosted fully in Microsoft 365. You cannot use this feature to manage email apps for mailboxes that are hosted on-premises.

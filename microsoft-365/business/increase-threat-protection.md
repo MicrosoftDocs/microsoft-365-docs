@@ -131,7 +131,7 @@ To create an ATP anti-phishing policy, watch  [this short training video](https:
     
 4. On the **Anti-phishing** page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
     
-5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#learn-about-atp-anti-phishing-policy-options). 
+5. Specify the name, description, and settings for your policy as recommended in the following table. For more details, see [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies). 
     
 6. After you've reviewed your settings, choose **Create this policy** or **Save**, as appropriate.
     

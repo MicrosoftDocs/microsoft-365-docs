@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -15,7 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365solutions
 ms.custom: 
-description: Learn how to use Complance Score and Compliance Manager to improve your level of protection for personal data.
+description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---
 
 # Use Compliance Score and Compliance Manager to manage improvement actions
@@ -23,6 +23,8 @@ description: Learn how to use Complance Score and Compliance Manager to improve 
 Microsoft Compliance Score and Compliance Manager can be used together to manage improvements related to data privacy regulations such as the European Union [General Data Protection Regulation (GDPR)](../compliance/gdpr.md), [California Consumer Protection Act CCPA)](../compliance/ccpa-faq.md), HIPAA-HITECH (US health care privacy act), and the Brazil Data Protection Act (LGPD). 
 
 This article provides guidance on the use of these tools for data privacy purposes.
+
+![Compliance Score and Compliance Manager to manage improvement actions](../media/information-protection-deploy-compliance/information-protection-deploy-compliance-grid.png)
 
 >[!Note]
 >The customer actions provided in Compliance Manager are recommendations. It is up to you to evaluate the effectiveness of these recommendations in your regulatory environments prior to implementation. Compliance Manager recommendations should not be interpreted as a guarantee of compliance.
@@ -104,7 +106,7 @@ You can also add a new template customized for your organization based on an exi
 
 ## Compliance Score
 
-Once the assessments and review specifications are performed in Compliance Manager, you can now go to the [Compliance Score](../compliance/working-with-compliance-score.md) tool and review the score and slice and dice the data further, including by control area.
+Once the assessments and review specifications are performed in Compliance Manager, you can now go to the [Compliance Score](../compliance/compliance-score.md) tool and review the score and slice and dice the data further, including by control area.
 
 The Compliance Score tool in the Microsoft 365 Compliance admin center provides several approaches to review and filter compliance data obtained from Compliance Manager and various Microsoft 365 services. This tool is automatically updated when various configuration settings are implemented and shares signals with the Microsoft Secure Score so that many improvement actions will show up in both scores. 
  
@@ -136,7 +138,7 @@ Here are a few important tips for the use of Compliance Score and Compliance Man
 
 - Each data privacy regulation has a combination of technical controls, documentation specifications, and operational, process, and reporting requirements. All of these show up in the improvement actions. 
 
-- This article focuses on a subset of the technical controls specified for data privacy in Compliance Manager and Compliance Score. Refer to the Compliance Manager tool and [documentation](../compliance/working-with-compliance-score.md) for more information on non-technical administrative controls.
+- This article focuses on a subset of the technical controls specified for data privacy in Compliance Manager and Compliance Score. Refer to the Compliance Manager tool and [documentation](../compliance/compliance-score.md) for more information on non-technical administrative controls.
 
 - To focus the view of improvement actions to your area of interest, you can filter by action type in the **Solutions** tab in the Compliance Score admin.
 

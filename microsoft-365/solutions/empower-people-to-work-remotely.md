@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 06/08/2020
+ms.date: 07/14/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -63,6 +63,13 @@ To meet the criteria for remote workers, use these Microsoft 365 capabilities an
 | Windows Autopilot	| Set up and pre-configure new Windows 10 devices for productive use.	| Microsoft 365 E3 and E5 |
 | Microsoft Teams, Exchange Online, SharePoint Online and OneDrive, Microsoft 365 Apps, Microsoft Power Platform, Yammer, Power Apps | Create, communicate, and collaborate. | Microsoft 365 E3 and E5 |
 ||||
+
+<a name="poster"></a>
+For a 2-page summary of this scenario, see the [Empower remote workers poster](../downloads/empower-remote-workers.pdf).
+
+[![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
+
+You can also download this poster in [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pdf) or [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/empower-remote-workers.pptx) formats and print it on letter, legal, or tabloid (11 x 17) size paper.
 
 Use these steps to secure and optimize access to your organization's servers, data, and cloud services and enable maximum worker productivity.
 

@@ -32,11 +32,14 @@ Compliance Manager is accessible from the Microsoft Service Trust Portal. Anyone
 2. Sign in with your Microsoft service account, which is your Office 365, Microsoft 365, or Azure Active Directory (Azure AD) user account.
 
 > [!NOTE]
-> In the Service Trust Portal, select **Compliance Manager**, which is the preview version with the most current features. Do not select **Compliance Manager (Classic)**, which contains early-release features not covered by this documentation.
+> In the Service Trust Portal, select **Compliance Manager**, which is the preview version with the most current features. Do not select **Compliance Manager (classic)**, which contains early-release features not covered by this documentation.
 
 ## Administration
 
-There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. The global administrator can assign user permissions and turn on automatic Secure Score updates.
+There are specific administrative functions that are only available to the global administrator and only visible when logged in with a global administrator account. The global administrator can:
+- [Assign user roles](#assigning-compliance-manager-roles-to-users)
+- [Turn on and off automatic Secure Score updates](#controlling-automatic-secure-score-updates)
+- [Configure user privacy settings](#configuring-user-privacy-settings)
   
 ### Assigning Compliance Manager roles to users
 
@@ -89,6 +92,92 @@ If you choose **set per action,** take these additional steps to turn on Secure 
 8. Select **Save.** Secure Score continuous monitoring is now turned on for that action.
 
 **Note:** Only the global administrator can turn on or off automatic updates for all actions. The Compliance Manager administrator can turn on automatic updates for individual actions, but not for all actions globally.
+
+### Configuring user privacy settings
+
+Certain regulations require an organization to be able to delete user history data. To enable this, the **User Privacy Settings** functions allow administrators to:
+  
+- [Search for a user](#search-for-a-user)
+
+- [Export a report of account data history](#export-a-report-of-account-data-history)
+
+- [Reassign action items](#reassign-action-items)
+
+- [Delete user data history](#delete-user-data-history)
+    
+![Compliance Manager Admin — User Privacy Settings functions](../media/067d6c6a-712a-4dc2-9b99-de2fa4417dc3.png)
+  
+#### Search for a user
+
+To search for a user account:
+  
+1. Enter the user email address by typing in the alias (the information to the left of the @ symbol) and choosing the domain name by clicking the domain suffix list on the right. If your organization has multiple registered domains, you can double check the email address domain name suffix to ensure that it is correct.
+    
+2. When you have the username correctly entered, select **Search**.
+    
+3. If the user account is not found, the error message 'User not found' will be displayed on the page. Check the user's email address information, make corrections as necessary and select **Search** to try again.
+    
+4. If user account is found, the text of the button changes from **Search** to **Clear**, which indicates that the returned user account is the operating context for the additional functions that will be displayed below, that running those functions will apply to this user account.
+    
+5. To clear search results and search for a different user, select **Clear**.
+    
+#### Export a report of account data history
+
+Once the user account has been identified, you may wish to generate a report of dependencies that exist linked to this account. This information allows you to reassign open action items or ensure access to previously uploaded evidence.
+  
+ To generate and export a report:
+  
+1. select **Export** to generate and download a report of the Compliance Manager control action items currently assigned to the returned user account and the list of documents uploaded by that user. If there are no assigned actions or uploaded documents, an error message displays "No data for this user."
+
+2. The report downloads in the background of the active browser window. If you don't see a download pop up, check your browser download history.
+
+3. Open the document to review the report data.
+
+> [!NOTE]
+> This is not a historical report that retains and displays state changes to action item assignment history. The generated report is a snapshot of the control action items assigned at the time that the report is run (date and time stamp written into the report). For instance, any subsequent reassignment of action items will result in different snapshot report data if this report is generated again for the same user.
+  
+#### Reassign action items
+
+This function enables an organization to remove any active or outstanding dependencies on the user account by reassigning all action item ownership (which includes both active and completed action items) from the returned user account to a new user selected below. This action does not change document upload history for the returned user account.
+  
+ To reassign action items to another user:
+  
+1. Click the input box to browse for and select another user within the organization to whom the returned user's action items should be assigned.
+    
+2. Select **Replace** to reassign all control action items from the returned user to the newly selected user.
+    
+3. A confirmation dialog box appears stating, "This will reassign all control action items from the current user to the selected user. This action cannot be undone. Are you sure you want to continue?"
+    
+4. To continue, select **OK**, otherwise select **Cancel**.
+    
+> [!NOTE]
+> All action items (both active and completed) will be assigned to the newly selected user. However, this action does not affect the document upload history; any documents uploaded by the previously assigned user will still show the date/time and name of the previously assigned user. 
+  
+Changing the document upload history to remove the previously assigned user will have to be done as a manual process. In that case, the administrator will need to:
+  
+1. Open the previously downloaded Export report.
+  
+2. Identify and navigate to the desired control action item.
+  
+3. Select **Manage Documents** to navigate to the evidence repository for that control.
+  
+4. Download the document.
+  
+5. Delete the document in the evidence repository.
+  
+6. Re-upload the document. The document will now have a new upload date, time, and "Uploaded by" username.
+  
+#### Delete user data history
+
+This sets control action items to 'unassigned' for all action items assigned to the returned user. This also sets uploaded by value to 'user removed' for any documents uploaded by the returned user
+  
+ To delete the user account action item and document upload history:
+  
+1. Select **Delete**.
+
+2. A confirmation dialog displays: "This will remove all control action item assignments and the document upload history for the selected user. This action cannot be undone. Are you sure you want to continue?"
+    
+3. To continue, select **OK**, otherwise select **Cancel**.
 
 ## Groups
 
@@ -191,6 +280,9 @@ Any actions that are not supported by Secure Score integration can be manually i
 ## Assessments
 
 This section explains how to view and work with your Assessments, including how to add new ones, export them, copy information from existing Assessments, and keep them updated through versioning.
+
+> [!NOTE]
+> You can now create assessments in Compliance Score. [View guidance and instructions](compliance-score-assessments.md).
 
 ### View an Assessment and Action details
   
@@ -404,13 +496,16 @@ The dashboard displays each Template, along with the Certification and Product a
 
 There are three ways to work with Templates to create Assessments:
 
-1. Use one of the pre-configured Templates provided by Microsoft.
-2. Customize a pre-configured Template with your own actions and controls through the extension process.
+1. Use one of the ready to use Templates provided by Microsoft.
+2. Customize a ready to use Template with your own actions and controls through the extension process.
 3. Create your own Template and import it into Compliance Manager.
 
-#### Use a Microsoft pre-configured Template
+> [!NOTE]
+> When you upload a template into Compliance Manager, it must be approved by two users who hold an admin role before it is published and available for use.
 
-The pre-configured templates are available on your **Templates** dashboard. View the current [list of templates](compliance-manager-overview.md#templates), which is updated each time a new template is available.
+#### Use a ready to use Template
+
+Ready to use templates are available on your **Templates** dashboard. View the current [list of templates](compliance-score-templates.md), which is updated each time a new template is available.
 
 #### Customize a Template through the extension process
 
@@ -419,21 +514,23 @@ The pre-configured templates are available on your **Templates** dashboard. View
 3. Select the template you want to extend from the drop-down menu.
 4. If you have not already formatted your template data in Excel, select the link in the flyout pane to download an Excel file. Fill out the spreadsheet according to the [Import Template data with Excel](#import-template-data-with-excel) instructions below and save it to your local drive.
 5. Import your customized template data by selecting **Browse** to upload your Excel file.
-6. Select **Add to Dashboard**. You will then see your new template added to your **Templates** dashboard.
+6. Select **Add to Dashboard**.
+7. The changes to the template require approval of two users who hold an admin role. Those users receive a notification of the template updates. One the changes are approved by two admins, you'll see your updated template on your **Templates** dashboard.
 
 #### Create your own Template and import it into Compliance Manager
 
 1. Open the **Templates** dashboard and select **+ Add Template**.
 2. On the Template flyout pane, select **Create a new template**.
 3. Import your template data by selecting **Browse** to upload your Excel file containing the data (see [Import Template data with Excel](#import-template-data-with-excel) below).
-4. Select **Add to Dashboard**. You will then see your new template added to your **Templates** dashboard.
+4. Select **Add to Dashboard**.
+5. The new template requires approval of two users who hold an admin role. Those users receive a notification that a new template is ready for approval. One the template is approved by two admins, you'll see your new template on your **Templates** dashboard.
 
 #### Import Template data with Excel
 
 To modify a template or create your own template, you'll use an [Excel spreadsheet](https://go.microsoft.com/fwlink/?linkid=2124865) to capture the necessary data and upload it to Compliance Manager. This spreadsheet template has a specific format and schema that must be used or it will not import into Compliance Manager.
 
 > [!IMPORTANT]
-> If you've created or customized templates in Compliance Manager before, **this process has been updated** as part of the April 2020 release of Compliance Manager (Preview). **Please review this section carefully.**
+> If you've created or customized templates in Compliance Manager before, **this process has been recently updated. Please review this section carefully.**
 
 The spreadsheet contains four tabs, three of which are required:
 
@@ -492,7 +589,7 @@ The **Actions** tab is required.  It designates actions of your organization and
 
 - **actionDescription**: Provide a description of the action. You can apply formatting such as bold text and hyperlinks. This is required field.
 
-- **dimension-Action Purpose**: This is an optional field. If you include it, the header must include the "dimension-" prefix. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the [improvement actions details page in Compliance Score](working-with-compliance-score.md#view-your-improvement-actions).
+- **dimension-Action Purpose**: This is an optional field. If you include it, the header must include the "dimension-" prefix. Any dimensions you include here will be used as [filters in Compliance Score](compliance-score-setup.md#filtering-your-dashboard-view) and appear on the improvement actions details page in Compliance Score.
 
 ##### Dimensions tab
 
