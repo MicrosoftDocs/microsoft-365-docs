@@ -21,13 +21,13 @@ search.appverid:
 
 # What's coming to Microsoft Secure Score?
 
-To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score will change. However, this does not imply a change in your security posture.
+To make [Microsoft Secure Score](microsoft-secure-score.md) a better representative of your security posture and improve usability, we are making some changes in the near future. Your score and the maximum possible score may change.
 
-To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
+## Proposed changes
 
-## August 2020
+These these changes may be coming to your Microsoft Secure Score soon, depending on your license. To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
 
-### Add improvement actions for Azure Advanced Threat Protection
+### Adding improvement actions for Azure Advanced Threat Protection
 
 - Risky lateral movement paths
 - Unsecure account attributes
