@@ -315,15 +315,15 @@ Your setup is now complete. Before you publish the keystore, in appsettings.json
 
 The following steps describe how to create an Azure App Service instance to host your DKE deployment, and how to publish your generated keys to Azure.
 
-To create an Azure App Service instance to host your DKE deployment:
+To create an Azure Web App instance to host your DKE deployment:
 
 1. In your browser, sign in to the [Microsoft Azure portal](https://ms.portal.azure.com), and go to **App Services** > **Add**.
 
 1. Select your subscription and resource group and define your instance details.
 
-    - The name you define here will be the hostname of the machine where you deploy DKE. Make sure it's the same name as the one defined in the [**appsettings.json**](#tenant-and-key-settings) file.
+    - Enter the hostname of the computer where you want to install the DKE service. Make sure it's the same name as the one defined for the JwtAudience setting in the [**appsettings.json**](#tenant-and-key-settings) file. This is also the <WebAppInstanceName>.
 
-    - For the **Publish** option, select **code**, and for the **Runtime stack** option, select **.NET Core 3.1**.
+    - For **Publish**, select **code**, and for **Runtime stack**, select **.NET Core 3.1**.
 
     For example:
 
@@ -340,13 +340,13 @@ To create an Azure App Service instance to host your DKE deployment:
 
     > [!NOTE]
     > You may prefer other methods to deploy your keys. Select the method that works best for your organization.
-    
+
     > [!TIP]
     > [Publishing via Visual Studio](https://docs.microsoft.com/aspnet/core/tutorials/) and to an [on-premises system](https://docs.microsoft.com/aspnet/core/tutorials/publish-to-iis?view=aspnetcore-3.1&tabs=netcore-cli) is described in the [ASP .NET documentation](https://docs.microsoft.com/aspnet/core/). If you use one of these methods, open the instructions in a separate tab so that you can return here easily when you're done.
 
 #### Publish via ZipDeployUI
 
-1. Go to `https://<appservicename>.scm.azurewebsites.net/ZipDeployUI`.
+1. Go to `https://<WebAppInstanceName>.scm.azurewebsites.net/ZipDeployUI`.
 
     For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
@@ -368,9 +368,9 @@ DKE is deployed and you can browse to the test keys you've created. Continue wit
 
 1. Connect to the App Service you created [above](#publishing-a-customer-key-store-to-azure).
 
-    In your browser, go to: **Azure portal** > **App Service** **> Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard.**
+    In your browser, go to: **Azure portal** > **App Service** > **Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard**.
 
-1. Copy the connection strings displayed to a local file. You'll use these strings to connect to the App Service and upload files via FTP.
+1. Copy the connection strings displayed to a local file. You'll use these strings to connect to the Web App Service and upload files via FTP.
 
     For example:
 
@@ -388,7 +388,7 @@ DKE is deployed and you can browse to the test keys you've created. Continue wit
 
 1. Send all files in the publish directory to a zip file. When creating the .zip file, make sure that all files in the directory are at the root level of the .zip file.
 
-1. From your FTP client, use the connection information you copied to connect to your App Service. Upload the .zip file you created in the previous step to the root directory of your App Service.
+1. From your FTP client, use the connection information you copied to connect to your App Service. Upload the .zip file you created in the previous step to the root directory of your Web App.
 
 DKE is deployed and you can browse to the test keys you'd created. Continue with [Validating your deployment](#validating-your-deployment) below.
 
@@ -398,23 +398,23 @@ After deploying DKE using one of the methods described above, validate the deplo
 
 Run:
 
-    src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
+src\customer-key-store\scripts\key_store_tester.ps1 mykeystoreurl/mykey
 
 For example:
 
-    key_store_tester.ps1 https://mycustomerkeystore.com/mykey
+key_store_tester.ps1 https://mycustomerkeystore.com/mykey
 
-Ensure that no errors appear in the output. When you're ready, continue on with [registering your key store](#registering-your-key-store).
+Ensure that no errors appear in the output. When you're ready, [register your key store](#registering-your-key-store).
 
-## Registering your key store
+## Register your key store
 
-The following steps enable you to register the key store you've deployed to Azure. Registering your key store is the last step in deploying DKE before you can start creating labels.
+The following steps enable you to register your key store. Registering your key store is the last step in deploying DKE before you can start creating labels.
 
 To register your key store:
 
 1. In your browser, open the [Microsoft Azure portal](https://ms.portal.azure.com/), and go to **All Services -> Identity -> App Registrations**.
 
-2. Select **New registration,** and enter a meaningful name.
+2. Select **New registration**, and enter a meaningful name.
 
 3. Select an account type from the options displayed.
 
@@ -426,9 +426,7 @@ To register your key store:
 
 4. At the bottom of the page, select **Register** to create the new App Registration.
 
-5. In your new App Registration, in the left pane, under **Manage,** select **Authentication**.
-
-    If available, select the **Switch to the old experience** button.
+5. In your new App Registration, in the left pane, under **Manage**, select **Authentication**.
 
 6. In the **Implicit grant** area, choose the **ID tokens** checkbox.
 
@@ -444,7 +442,7 @@ To register your key store:
     - If you're testing locally with Visual Studio, use **https://localhost:5001**.
     - In all cases, the scheme must be **https**.
 
-    Select **Save** at the top to save your changes.
+    Select **Save** at the top to save your changes. Ensure the hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build. In appsettings.json, this is the hostname you identified as the value for the JwtAudience setting.
 
 9. Still on the **Expose an API** page, in the **Scopes defined by this API** area, select **Add a scope**. In the new scope:
 
@@ -474,7 +472,7 @@ Your DKE key store is now registered. Continue  by [creating labels using DKE](#
 
 ## Create labels using DKE
 
-Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center and apply double key encryption to those labels. <!-- This said security center, but you set up labels in the compliance center then use DKE encryption -->
+Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center and apply double key encryption to those labels.
 
 In the label creation UI, select the **Use Double Key Encryption** option and enter the endpoint URL for your key.
 
