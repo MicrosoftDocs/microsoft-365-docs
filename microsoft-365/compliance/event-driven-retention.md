@@ -220,6 +220,8 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 Check the response code. If it's 302, get the redirected URL from the Location property of the response header and use that URL instead of `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` in the instructions that follow.
 
+The events that get automatically created can be confirmed by viewing them in the Microsoft 365 compliance center > **Records management** >  **Events**.
+
 ### Use Microsoft Power Automate to create the event
 
 Create a flow that creates an event using the Microsoft 365 REST API:
@@ -449,12 +451,4 @@ $event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "ap
 $event | fl *
 
 ```
-
-### Verify the event creation
-
-1. Sign in to the Microsoft 365 compliance center.
-
-2. Navigate to **Records management** >  **Events**.
-
-3. Verify that the event is created.
 
