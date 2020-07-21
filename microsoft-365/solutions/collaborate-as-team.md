@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Collaborate with guests in a team"
 ms.author: mikeplum
 author: MikePlumleyMSFT
