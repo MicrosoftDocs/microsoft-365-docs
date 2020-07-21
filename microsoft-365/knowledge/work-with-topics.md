@@ -1,6 +1,6 @@
 ---
 title: 'Work with topics (Preview) '
-description: 'How to work with topics in the Knowledge Center.'
+description: 'How to work with topics in the Topic Center.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
@@ -12,16 +12,48 @@ search.appverid:
 localization_priority: Normal
 
 ---
-# Work with topics in the Knowledge Center (Preview)
+# Work with topics in the Topic Center (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
 
-In the Project Cortex Knowledge Center, a knowledge manager can review topics that have been mined and discovered in the SharePoint source locations you specified, and can either confirm or reject them.
+In the Project Cortex Topic Center, a knowledge manager can review topics that have been mined and discovered in the SharePoint source locations you specified, and can either confirm or reject them. A knowledge manager can also create and publish new topic pages if one was not found in topic discovery.
+
+## Requirements
+
+In order to work in the topic center, you need to have the required permissions. Your admin can add you during knowledge management setup, or new users can be added afterwards.
+
+Topic center users can be given two sets of permissions:
+
+- Create and edit topics: Create new topics or update topic content such as the description, documents and associated persons
+- Manage topics: Use the Topic management dashboard to review topics across the organization. Users can perform actions such as confirm and reject topics
+
+
+
+
+To give a user permissions to manage topics:
+
+1. In the Microsoft 365 admin center, in the navigation pane, select **Set up**.
+2. In the **Organizational Knowledge** section, under **Connect people to knowledge**, select **View**.
+3. On the **Connect people to knowledge** page, select **Manage**.
+4. On the **Knowledge Network** page, select the **Topic permissions** tab.
+5. On the **Topic permissions** tab, under **Who can manage topics**, select **View**.
+6.  On the **Who can manage topics** page, add the user to the **Only selected users or security groups** box.
+7. After adding your user, select **Add**.
+3. Under the **Who can create and edit topics**, select **View**.
+4. Add the user to the **Only selected users or security groups** box.
+5. Select **Add**.
+
+To give a user permissions to create and edit topics:
+
+1. On the **Topic permissions** tab, under the **Who can create and edit topics**, select **View**.
+2. Add the user to the **Only selected users or security groups** box.
+3. Select **Add**.
+
 
 ## Reviewing unconfirmed topics
 
-On the Knowledge Center home page, topics that were discovered in your specified SharePoint source locations will be listed in the **Unconfirmed** tab.
+On the Knowledge Center home page, topics that were discovered in your specified SharePoint source locations will be listed in the **Unconfirmed** tab. A user with permissions to manage topics can review unconfirmed topics and choose to confirm or reject them.
 
 
 To review an unconfirmed topic:
@@ -42,16 +74,26 @@ To review an unconfirmed topic:
    
 ## Create a new topic
 
-A knowledge center admin can create a new topic if needed. You might need to do this if the topic was not discovered through discovery or if the AI technology did not find enough evidence to establish it as a topic.
+A user with create or edit topic permissions can create a new topic if needed. You might need to do this if the topic was not discovered through discovery or if the AI technology did not find enough evidence to establish it as a topic.
 
 To create a new topic:
 1. On the Knowledge Center page, select **New**, then select **Topic Page**.</br>
 
     ![New topic](../media/content-understanding/k-new-topic.png) </br>
 
-2. 
-    ![New topic page](../media/content-understanding/k-new-topic-page.png) </br>
+2. On the new topic page, you can fill in the information on the new topic template:</br>
+    a. In the **Name this topic** section, type the name of the new topic.</br>
+    b. In the **Alternate names** section, type names or acronyms that are also used to refer to the topic.</br>
+    c. In the **Short description** section, type a one or two sentence description of the topic. This text will be used for the associated topic card.</br>
+    d. In the **People** section, type the names of subject matter experts for the topic.</br>
+    e. In the **Files and pages** section, select **Add** and then on the next page you can select associated OneDrive files or SharePoint Online pages.</br>
+    f. In the **Sites** section, select **Add**. In the  **Sites** pane that displays, select the sites that are associated to the topic.</br>
 
+    ![New topic page](../media/content-understanding/k-new-topic-page.png) </br>
+3. When you are done, select **Publish** to publish the topic page. Published topic pages will display in the **Pages** tab.
+
+> [!Note] 
+> The new topic page is made up of web parts that are knowledge network aware. As AI gathers more information on the topic, the information in the web parts will be updated with suggestions to make the page more useful to users.
 
 
 ## See also
