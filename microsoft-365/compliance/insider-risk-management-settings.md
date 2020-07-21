@@ -69,7 +69,7 @@ For example, you decide to enable SharePoint indicators in the insider risk poli
 
 ![Insider risk management custom indicator settings](../media/insider-risk-custom-indicators.png)
 
-- For the first daily event level, you set the threshold at *10 or more events per day* for a lower impact to the risk score for the events, *20 or more events per day* for a medium impact to the risk score for the events*,* and *30 or more events per day* a higher impact to the risk score for the events. These settings effectively mean:
+For the first daily event level, you set the threshold at *10 or more events per day* for a lower impact to the risk score for the events, *20 or more events per day* for a medium impact to the risk score for the events, and *30 or more events per day* a higher impact to the risk score for the events. These settings effectively mean:
 
 - If there are 1-9 SharePoint events that take place after triggering event, risk scores are minimally impacted and would tend not to generate an alert.
 - If there are 10-19  SharePoint events that take place after a triggering event, the risk score is inherently lower and alert severity levels would tend to be at a low level.
