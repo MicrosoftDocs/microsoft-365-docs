@@ -85,17 +85,17 @@ You can find the expiration date for your free trial subscription on the **Your 
 
 If your school doesn't qualify as a Microsoft Qualified Academic Institution, you can still buy commercial offers in the admin center on the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page. If your organization is a nonprofit group, your group might be eligible for subscriptions for non-profits. To learn more, see [Discounts and donations for nonprofits](https://www.microsoft.com/nonprofits/eligibility).
 
-If you have questions about your school's academic eligibility decision, [contact support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+If you have questions about your school's academic eligibility decision, [contact support](../../admin/contact-support-for-business-products.md).
 
 ## Next steps
 
-To learn how to deploy Microsoft 365 for your school, visit [Microsoft 365 Education documentation and resources](https://docs.microsoft.com/microsoft-365/education/deploy/). Next, you can [add users and assign licenses at the same time](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users?view=o365-worldwide). If you need to, you can also [buy more licenses for your subscription](https://docs.microsoft.com/microsoft-365/commerce/licenses/buy-licenses?view=o365-worldwide).
+To learn how to deploy Microsoft 365 for your school, visit [Microsoft 365 Education documentation and resources](https://docs.microsoft.com/microsoft-365/education/deploy/). Next, you can [add users and assign licenses at the same time](../../admin/add-users/add-users.md). If you need to, you can also [buy more licenses for your subscription](../licenses/buy-licenses.md).
 
 ## Related content
 
 [Microsoft 365 Education Documentation for IT Admins](https://docs.microsoft.com/education/itadmins) (article links)\
-[Microsoft Teams for Education](http://microsoft.com/education/products/teams/default.aspx) (article)\
+[Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (article)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\
-[Assign licenses to users](../../admin/manage/assign-licenses-to-users?view=o365-worldwide) (article)\
-[Buy or remove subscription licenses](../licenses/buy-licenses?view=o365-worldwide) (article)\
-[Move users to a different subscription](../subscriptions/move-users-different-subscription?view=o365-worldwide) (article)
+[Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
+[Buy or remove subscription licenses](../licenses/buy-licenses.md) (article)\
+[Move users to a different subscription](move-users-different-subscription.md) (article)
