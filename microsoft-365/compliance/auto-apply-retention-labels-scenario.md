@@ -107,7 +107,7 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
-The following screenshot shows the settings when you create the Product Specification [retention label](retention.md#retention-labels) in the security and compliance center. You can create the **Product Cessation** event type when you create the retention label. See the steps below.
+The following screenshot shows the settings when you create the Product Specification [retention label](retention.md#retention-labels) in the Microsoft 365 compliance center. You can create the **Product Cessation** event type when you create the retention label. See the steps below.
 
 ![Retention settings for Product Specification label](../media/SPRetention5.png)
 
