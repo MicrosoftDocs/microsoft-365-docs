@@ -58,7 +58,7 @@ This public preview release of Double Key Encryption for Microsoft 365 is availa
 
 **Supported applications**. [Microsoft 365 Apps for enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
 
-**Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but for public preview you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
+**Online content support**. Documents and files stored online in both Microsoft SharePoint and OneDrive for Business are supported. You can share encrypted content by email, but you can't view encrypted documents and files online. Instead, you must view protected content using the desktop apps on your local computer.
 
 ## About this public preview article
 
@@ -362,11 +362,11 @@ To create an Azure Web App instance to host your DKE deployment:
 
 1. Drag and drop the .zip file you create to the ZipDeployUI site you opened above. For example: https://customerkeystoreforpublicpreview.scm.azurewebsites.net/ZipDeployUI
 
-DKE is deployed and you can browse to the test keys you've created. Continue with [Validating your deployment](#validating-your-deployment) below.
+DKE is deployed and you can browse to the test keys you've created. Continue to [Validate your deployment](#validate-your-deployment) below.
 
 #### Publish via FTP
 
-1. Connect to the App Service you created [above](#publishing-a-customer-key-store-to-azure).
+1. Connect to the App Service you created [above](#publish-a-customer-key-store-to-azure).
 
     In your browser, go to: **Azure portal** > **App Service** > **Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard**.
 
