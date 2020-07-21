@@ -212,7 +212,7 @@ There are two options for using the REST API:
 
 - **PowerShell or an HTTP client to call the REST API** to create events by using PowerShell (version 6 or later), which is part of a custom solution.
 
-Before you use the REST API for either method, as a global administrator, confirm the URL to use for the retention event call. To do this, run a GET retention event call by using the REST API URL:
+Before you use the REST API, as a global administrator, confirm the URL to use for the retention event call. To do this, run a GET retention event call by using the REST API URL:
 
 ```
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
