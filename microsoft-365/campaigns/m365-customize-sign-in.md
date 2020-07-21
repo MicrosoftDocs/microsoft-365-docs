@@ -20,7 +20,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: "Customize your sig-in page with with a privacy and consent notice for Microsoft 365 for campaigns."
+description: "Customize your sign-in page with a privacy and consent notice for Microsoft 365 for campaigns."
 ---
 
 # Customize your sign-in page with a privacy and consent notice
@@ -31,16 +31,15 @@ You can customize your sign-in page with your branding, and you can also add tex
 
 ## Customize the text on your sign-in page
 
-To update the customizable elements on the sign-in you have to be a global admin. For specific instructions, see [add company branding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) article.
+To update the customizable elements on the sign-in page, you have to be a global admin. For specific instructions, see [add company branding](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) article.
 
 The elements you can update are:
 
 - **Sign-in page text**
 
     This is an easy place to add the privacy and consent statement.
-- Sing-in page background image
+- Sign-in page background image
 - Banner logo
 - Username hint
 
 For examples of privacy and consent notices, see [Searching and Seizing Computers and Obtaining Electronic Evidence in Criminal Investigations](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf) PDF file, specifically **Appendix A: Sample Network Banner Language**.
-
