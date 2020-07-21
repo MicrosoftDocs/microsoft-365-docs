@@ -497,8 +497,10 @@ If your DKE labels don't appear under the Sensitivity ribbon in Microsoft Office
 
 Enable DKE for your client by adding the following registry keys:
 
+```ini
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
+```
