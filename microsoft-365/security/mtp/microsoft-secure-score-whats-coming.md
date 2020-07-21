@@ -37,5 +37,5 @@ To learn about recent changes, see [What's new in Microsoft Secure Score?](micro
 ## Related resources
 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
-- [Gain visibility into your security posture](microsoft-secure-score-improvement-actions.md)
+- [Assess your security posture](microsoft-secure-score-improvement-actions.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
