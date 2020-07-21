@@ -37,7 +37,7 @@ The elements you can update are:
 
 - **Sign-in page text**
 
-    This is an easy place to add the privacy and consent statement.
+     An easy place to add the privacy and consent statement.
 - Sign-in page background image
 - Banner logo
 - Username hint
