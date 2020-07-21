@@ -1,4 +1,4 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
 title: Microsoft Bookings # < 60 chars
 summary: Learn how to set up Microsoft Bookings to provide services to customers on an appointment basis. # < 160 chars
@@ -26,27 +26,27 @@ productDirectory:
     # Card
     - title: cardtitle1
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./media/index/image1.svg OR https://docs.microsoft.com/media/logos/image1.svg
+      imageSrc: https://docs.microsoft.com/media/logos/image1.svg
       links:
-        - url: file1a.md OR https://docs.microsoft.com/file1a
+        - url: https://docs.microsoft.com/file1a
           text: linktext1a
-        - url: file1b.md OR https://docs.microsoft.com/file1b
+        - url: https://docs.microsoft.com/file1b
           text: linktext1b
     # Card
     - title: cardtitle2
-      imageSrc: ./media/index/image2.svg OR https://docs.microsoft.com/media/logos/image2.svg
+      imageSrc: https://docs.microsoft.com/media/logos/image2.svg
       links:
-        - url: file2a.md OR https://docs.microsoft.com/file2a
+        - url: https://docs.microsoft.com/file2a
           text: linktext2a
-        - url: file2b.md OR https://docs.microsoft.com/file2b
+        - url: https://docs.microsoft.com/file2b
           text: linktext2b
     # Card
     - title: cardtitle3
-      imageSrc: ./media/index/image3.svg OR https://docs.microsoft.com/media/logos/image3.svg
+      imageSrc: https://docs.microsoft.com/media/logos/image3.svg
       links:
-        - url: file3a.md OR https://docs.microsoft.com/file3a
+        - url: https://docs.microsoft.com/file3a
           text: linktext3a
-        - url: file3b.md OR https://docs.microsoft.com/file3b
+        - url: https://docs.microsoft.com/file3b
           text: linktext3b
 
 # conceptualContent section (optional)
@@ -58,46 +58,38 @@ conceptualContent:
     # Card
     - title: cardtitle1
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: concept
           text: linktext1
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: learn
           text: linktext2
-        - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: get-started
           text: linktext3
-      # footerLink (optional)
-      footerLink:
-        url: filefooter.md OR https://docs.microsoft.com/filefooter
-        text: See more
     # Card
     - title: cardtitle2
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: concept
           text: linktext1
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: learn
           text: linktext2
-        - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: get-started
           text: linktext3
-      # footerLink (optional)
-      footerLink:
-        url: filefooter.md OR https://docs.microsoft.com/filefooter
-        text: See more
     # Card
     - title: cardtitle3
       links:
-        - url: file1.md OR https://docs.microsoft.com/file1
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: concept
           text: linktext1
-        - url: file2.md OR https://docs.microsoft.com/file2
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: learn
           text: linktext2
-        - url: file3.md OR https://docs.microsoft.com/file3
-          itemType: itemType
+        - url: https://docs.microsoft.com/file1
+          itemType: get-started
           text: linktext3
 
 
@@ -113,13 +105,13 @@ additionalContent:
         # Card
         - title: cardtitle1
           summary: cardsummary1
-          url: file1.md OR https://docs.microsoft.com/file1
+          url: https://docs.microsoft.com/file1
         # Card
         - title: cardtitle2
           summary: cardsummary2
-          url: file1.md OR https://docs.microsoft.com/file2
+          url: https://docs.microsoft.com/file1
         # Card
         - title: cardtitle3
           summary: cardsummary3
-          url: file1.md OR https://docs.microsoft.com/file3
+          url: https://docs.microsoft.com/file1
 
