@@ -96,13 +96,7 @@ SE Labs tests a range of solutions used by products and services to detect and/o
 
 Microsoft Defender ATP [endpoint detection and response](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview-endpoint-detection-response) capabilities provide advanced attack detections that are near real-time and actionable. Security analysts can prioritize alerts effectively, gain visibility into the full scope of a breach, and take response actions to remediate threats.
 
-### SC Labs: 5/5 stars with zero weaknesses
-
-SC Labs assessed endpoint security tools on features, documentation, value for money, performance, support, and ease of use. In their introduction to the [endpoint security product review](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/), they also acknowledged the convergence of endpoint protection with endpoint detection and response functionality, because the attack chain now gets fully covered by solutions.
-
-- SC Product Reviews: Endpoint Security — June 2020: [5/5 stars](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/)
-
-    The verdict was that Microsoft Defender ATP is a holistic, unified endpoint security solution that addresses the entire set of security capabilities necessary to protect against the modern threat landscape.
+Microsoft Defender ATP's EDR and endpoint protection capabilities have received positive results from industry tests and publications. [SC Labs assessed endpoint security tools](https://www.scmagazine.com/home/reviews/sc-product-reviews-endpoint-security/) in June 2020, and gave Microsoft Defender ATP [5/5 stars](https://www.scmagazine.com/review/microsoft-defender-advanced-threat-protection/). They also called out Microsoft Defender ATP's ability to protect organizations against the modern threat landscape using a full set of security capabilities, and identified the endpoint security solution as holistic and unified. They also acknowledged the convergence of endpoint protection with endpoint detection and response functionality, because the attack chain now gets fully covered by solutions.
 
 ### MITRE: Industry-leading optics and detection capabilities
 
