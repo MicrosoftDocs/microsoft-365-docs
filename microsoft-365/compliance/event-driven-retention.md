@@ -286,7 +286,7 @@ Sample code to call the REST API:
 |<d:EventDateTime></d:EventDateTime>|Event Date and Time|Format: yyyy-MM-ddTHH:mm:ssZ, Example: 2018-12-01T00:00:00Z
 |
 
-Response codes:
+###### Response codes
 
 | Response Code | Description       |
 | ----------------- | --------------------- |
@@ -310,7 +310,7 @@ Response codes:
 - **Password**: "Compliancepassword"
 
 
-Response codes:
+###### Response codes
 
 | Response Code | Description                   |
 | ----------------- | --------------------------------- |
@@ -334,7 +334,7 @@ Response codes:
 
 - **Password**: "Compliancepassword"
 
-Response codes:
+###### Response codes
 
 | Response Code | Description                                      |
 | ----------------- | ---------------------------------------------------- |
@@ -359,7 +359,7 @@ Response codes:
 - **Password**: "Compliancepassword"
 
 
-Response codes:
+###### Response codes
 
 | Response Code | Description                                      |
 | ----------------- | ---------------------------------------------------- |
