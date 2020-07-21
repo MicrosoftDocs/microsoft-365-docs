@@ -33,10 +33,9 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `Timestamp` | datetime | Date and time when the event was recorded |
 | `ActionType` | string | Type of activity that triggered the event |
 | `Application` | string | Application that performed the recorded action |
-| `QueryType` | string | Type of query: QueryGroup, QueryUser, or EnumerateUsers |
+| `QueryType` | string | Type of query, such as QueryGroup, QueryUser, or EnumerateUsers |
 | `QueryTarget` | string | Name of user, group, device, domain, or any other entity type being queried |
 | `Query` | string | String used to run the query |
-| `QueryObject` | string | Name of the user, group, device, domain, or any other entity type being queried |
 | `Protocol` | string | Protocol used during the communication |
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
@@ -52,7 +51,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `TargetAccountUpn` | string | User principal name (UPN) of the account that the recorded action was applied to |
 | `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
 | `Location` | string | City, country, or other geographic location associated with the event |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `ReportId` | long | Unique identifier for the event |
 | `AdditionalFields` | string | Additional information about the entity or event |
 
 ## Related topics

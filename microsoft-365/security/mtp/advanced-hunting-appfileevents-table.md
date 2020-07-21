@@ -51,7 +51,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `DestinationIPAddress` | string | IP address of the device running the server application that processed the recorded action |
 | `Location` | string | City, country, or other geographic location associated with the event |
 | `Isp` | string | Internet service provider (ISP) associated with the endpoint IP address |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `ReportId` | long | Unique identifier for the event |
 | `AdditionalFields` | string | Additional information about the entity or event |
 
 ## Related topics

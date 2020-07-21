@@ -27,7 +27,7 @@ ms.topic: article
 The `IdentityLogonEvents` table in the [advanced hunting](advanced-hunting-overview.md) schema contains information about authentication activities made through your on-premises Active Directory captured by Azure ATP and authentication activities related to Microsoft online services captured by Microsoft Cloud App Security. Use this reference to construct queries that return information from this table.
 
 >[!NOTE]
->This table currently doesn't cover all Azure Active Directory (AD) authentication events. It only covers activities tracked by Cloud App Security, specifically interactive logons through Azure AD using ActiveSync and other legacy protocols.
+>This table covers Azure Active Directory (AD) logon activities tracked by Cloud App Security, specifically interactive sign-ins and authentication activities using ActiveSync and other legacy protocols. Non-interactive logons that are not available in this table can be viewed in the Azure AD audit log. [Learn more about connecting Cloud App Security to Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 For information on other tables in the advanced hunting schema, [see the advanced hunting reference](advanced-hunting-schema-tables.md).
 
@@ -55,7 +55,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `TargetAccountDisplayName` | string | Display name of the account that the recorded action was applied to |
 | `Location` | string | City, country, or other geographic location associated with the event |
 | `Isp` | string | Internet service provider (ISP) associated with the endpoint IP address |
-| `ReportId` | long | Event identifier based on a repeating counter. To identify unique events, this column must be used in conjunction with the DeviceName and Timestamp columns. |
+| `ReportId` | long | Unique identifier for the event |
 | `AdditionalFields` | string | Additional information about the entity or event |
 
 ## Related topics
