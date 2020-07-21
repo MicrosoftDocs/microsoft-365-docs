@@ -24,10 +24,10 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-When using advanced hunting queries, you might encounter various errors. See the 
+When using advanced hunting queries, you might encounter various errors. Use this reference to understand these errors and learn how to address them by making adjustments to your query.  
 
 >[!TIP]
-> You can avoid errors by using the correct [Kusto syntax](https://docs.microsoft.com/data-explorer/kusto/query/), using supported [schema names][advanced-hunting-schema-tables.md], applying [best practices for optimization](advanced-hunting-best-practices.md) 
+> Most errors can be avoided by using the correct [Kusto syntax](https://docs.microsoft.com/data-explorer/kusto/query/), using supported [schema names](advanced-hunting-schema-tables.md), and applying [best practices for optimization](advanced-hunting-best-practices.md).
 
 ## Semantics and syntax
 
