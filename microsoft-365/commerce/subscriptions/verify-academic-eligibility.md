@@ -64,7 +64,7 @@ After you have a Microsoft 365 Education trial, you can check the status of your
 After your school's eligibility is verified, you can buy subscriptions at academic prices. You can also [convert your free trial to a paid subscription](https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial). If you want to convert your trial subscription, you must do so before the end of the trial period.
 
 1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
-2. To view academic offers, select the **Education** tab.\
+2. To view academic offers, select the **Education** tab.
 
     > [!NOTE]
     > The **Education** tab isn't displayed if your eligibility is pending.
@@ -94,7 +94,7 @@ To learn how to deploy Microsoft 365 for your school, visit [Microsoft 365 Educa
 ## Related content
 
 [Microsoft 365 Education Documentation for IT Admins](https://docs.microsoft.com/education/itadmins) (article links)\
-[Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (article)\
+[Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (product page)\
 [Understand subscriptions and licenses in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (article)\
 [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md) (article)\
 [Buy or remove subscription licenses](../licenses/buy-licenses.md) (article)\
