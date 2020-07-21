@@ -84,8 +84,9 @@ Use [Migrate to SharePoint](https://docs.microsoft.com/sharepointmigration/migra
 
 For a better understanding of security in SharePoint, review the following resources:
 
--     [How SharePoint and OneDrive safeguard your data in the cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--     [Data Encryption in OneDrive and SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+[How SharePoint and OneDrive safeguard your data in the cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+
+[Data Encryption in OneDrive and SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### Result
 
