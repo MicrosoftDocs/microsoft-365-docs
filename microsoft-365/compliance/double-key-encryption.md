@@ -66,7 +66,7 @@ There are several ways you can complete some of the steps to deploy Double Key E
 
 For public preview, we've included step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. For public preview using Azure is a quick way to deploy that lets you get started using Double Key Encryption right away.
 
-You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to configure the application settings and publish the key store to the appropriate location.
+You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to publish the key store using methods appropriate for that location.
 
 ## Deploy Double Key Encryption
 
@@ -151,7 +151,10 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
     :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio Code master branch":::
 
-6. Select the word **master,** and then select **public_preview** from the list of branches. Selecting the public_preview branch ensures that you have the correct files to build the project.
+6. Select the word **master,** and then select **public_preview** from the list of branches. 
+
+   > [!IMPORTANT]
+   > Selecting the public_preview branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
 
 You now have your DKE source repository set up locally. Next, [modify application settings](#modifying-application-settings) for your organization.
 
@@ -412,7 +415,7 @@ The following steps enable you to register your key store. Registering your key 
 
 To register your key store:
 
-1. In your browser, open the [Microsoft Azure portal](https://ms.portal.azure.com/), and go to **All Services -> Identity -> App Registrations**.
+1. In your browser, open the [Microsoft Azure portal](https://ms.portal.azure.com/), and go to **All Services** \> **Identity** \> **App Registrations**.
 
 2. Select **New registration**, and enter a meaningful name.
 
@@ -428,13 +431,11 @@ To register your key store:
 
 5. In your new App Registration, in the left pane, under **Manage**, select **Authentication**.
 
-6. In the **Implicit grant** area, choose the **ID tokens** checkbox.
-
-    :::image type="content" source="../media/dke-select-id-tokens.png" alt-text="Select ID tokens checkbox":::
-
-7. On the left pane, under **Manage,** select **Expose an API**.
-
-8. Select the **Set** link next to the Application ID URI field. Enter the App Service URL, including both the hostname and domain.
+6. Select **Add a platform**.
+ 
+7. On the **Configure platforms** popup select **Web**.
+ 
+8. Under **Redirect URIs** enter the URI of your double key encryption service. Enter the App Service URL, including both the hostname and domain.
 
     For example: https://mycustomerkeystoretest.com
 
@@ -442,7 +443,13 @@ To register your key store:
     - If you're testing locally with Visual Studio, use **https://localhost:5001**.
     - In all cases, the scheme must be **https**.
 
-    Select **Save** at the top to save your changes. Ensure the hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build. In appsettings.json, this is the hostname you identified as the value for the JwtAudience setting.
+    Ensure the hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build. In appsettings.json, this is the hostname you identified as the value for the JwtAudience setting.
+
+6. Under **Implicit grant**, select the **ID tokens** checkbox.
+
+1. Select **Save** to save your changes.
+
+7. On the left pane, select **Expose an API**, then next to Application ID URI, select **Set**.
 
 9. Still on the **Expose an API** page, in the **Scopes defined by this API** area, select **Add a scope**. In the new scope:
 
@@ -485,7 +492,7 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 > [!NOTE]
 > It may take up to 24 hours for the clients to refresh with the new labels.
 
-### Enabling DKE in your client
+### Enable DKE in your client
 
 If your DKE labels don't appear under the Sensitivity ribbon in Microsoft Office, your client may not have DKE enabled.
 
