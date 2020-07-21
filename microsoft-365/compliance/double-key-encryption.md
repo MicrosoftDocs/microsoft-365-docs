@@ -11,7 +11,6 @@ ms.topic: conceptual
 ms.service: information-protection
 audience: Admin
 ms.reviewer: esaggese
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -22,7 +21,7 @@ ms.collection:
 
 > *Applies to: [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *Instructions for: [Azure Information Protection unified labeling client for Windows](faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Instructions for: [Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -48,7 +47,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 ## System and licensing requirements for DKE
 
-This public preview release of Double Key Encryption for Microsoft 365 is available as part of Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](http://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+This public preview release of Double Key Encryption for Microsoft 365 is available as part of Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Office Insider** To use the public preview, you must be a member of the Office Insider program. To join Office Insider, go to [https://insider.office.com](https://insider.office.com). Once you're a member, prepare your environment to deploy Office Insider builds by choosing the right deployment method for your organization. For instructions, see [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
@@ -89,7 +88,7 @@ When you're done, you can encrypt documents and files using DKE. For information
 There are two types of software prerequisites for Double Key Encryption
 
 - [Double Key Encryption service prerequisites](#double-key-encryption-service-prerequisites)
-- [Software prerequisites for client computers](#software-prerequisites-for-client-computers)
+- [Double Key Encryption prerequisites for client computers](#double-key-encryption-prerequisites-for-client-computers)
 
 #### Double Key Encryption service prerequisites
 
@@ -156,7 +155,7 @@ The following instructions are intended for inexperienced git or Visual Studio C
    > [!IMPORTANT]
    > Selecting the public_preview branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
 
-You now have your DKE source repository set up locally. Next, [modify application settings](#modifying-application-settings) for your organization.
+You now have your DKE source repository set up locally. Next, [modify application settings](#modify-application-settings) for your organization.
 
 ### Modify application settings
 
@@ -369,7 +368,7 @@ DKE is deployed and you can browse to the test keys you've created. Continue to 
 
 #### Publish via FTP
 
-1. Connect to the App Service you created [above](#publish-a-customer-key-store-to-azure).
+1. Connect to the App Service you created [above](#publish-the-key-store).
 
     In your browser, go to: **Azure portal** > **App Service** > **Deployment Center** > **Manual Deployment** > **FTP** > **Dashboard**.
 
@@ -393,9 +392,9 @@ DKE is deployed and you can browse to the test keys you've created. Continue to 
 
 1. From your FTP client, use the connection information you copied to connect to your App Service. Upload the .zip file you created in the previous step to the root directory of your Web App.
 
-DKE is deployed and you can browse to the test keys you'd created. Continue with [Validating your deployment](#validating-your-deployment) below.
+DKE is deployed and you can browse to the test keys you'd created. Next, [Validate your deployment](#validate-your-deployment).
 
-### Validating your deployment
+### Validate your deployment
 
 After deploying DKE using one of the methods described above, validate the deployment and the key store settings.
 
@@ -407,7 +406,7 @@ For example:
 
 key_store_tester.ps1 https://mycustomerkeystore.com/mykey
 
-Ensure that no errors appear in the output. When you're ready, [register your key store](#registering-your-key-store).
+Ensure that no errors appear in the output. When you're ready, [register your key store](#register-your-key-store).
 
 ## Register your key store
 
