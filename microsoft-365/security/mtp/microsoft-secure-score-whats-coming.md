@@ -25,7 +25,7 @@ To make [Microsoft Secure Score](microsoft-secure-score.md) a better representat
 
 ## Proposed changes
 
-These these changes may be coming to your Microsoft Secure Score soon, depending on your license. To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score.md#whats-new)
+These these changes may be coming to your Microsoft Secure Score soon, depending on your license. To learn about recent changes, see [What's new in Microsoft Secure Score?](microsoft-secure-score-whats-new)
 
 ### Adding improvement actions for Azure Advanced Threat Protection
 
