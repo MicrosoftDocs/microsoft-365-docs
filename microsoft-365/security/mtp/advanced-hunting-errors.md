@@ -33,11 +33,13 @@ When using advanced hunting queries, you might encounter various errors. See the
 
 | Error string | Details | Solution |
 | -- | -- | -- |
+| [MORE INFO] | -- | -- |
 
 ## Timeouts
 
 | Error string | Details | Solution |
 | -- | -- | -- |
+| [MORE INFO] | -- | -- |
 
 ## Excessive resource consumption
 
@@ -55,10 +57,12 @@ When using advanced hunting queries, you might encounter various errors. See the
 ## Quota throttling
 | Error string | Details | Solution |
 | -- | -- | -- |
+| [MORE INFO] | -- | -- |
 
 ## Unknown errors
 | Error string | Details | Solution |
 | -- | -- | -- |
+| [MORE INFO] | -- | -- |
 
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)

@@ -30,15 +30,16 @@ Apply these recommendations to get results faster and avoid timeouts while runni
 ## General guidance
 
 - **Size new queries** — Assess the size of the result set using `count`. Use `limit` to avoid extremely large result sets.
-- **Apply filters early** — Apply time filters and other filters early in the query, especially if you are using conversion [EXAMPLES] and parsing [EXAMPLES] operators
-
+- **Apply filters early** — Apply time filters and other filters early in the query, especially if you are using conversion [MORE INFO - EXAMPLES] and parsing [MORE INFO - EXAMPLES] operators
     ```kusto
     <EXAMPLE>
     ``` 
 - **Has beats contains** — Avoid searching substrings unnecessarily by using the `has` operator instead of `contains`.
 - **Search specific columns** — Look in a specific column rather than running full text searches across all columns. Don't use `*`.
+- **Case-sensitive for speed** — Case-sensitive searches are more specific and generally more performant.
+- **Parse, don't extract** — Whenever possible, use parse functions such as [parse_json()](https://docs.microsoft.com/azure/data-explorer/kusto/query/parsejsonfunction) instead of [extract()](https://docs.microsoft.com/azure/data-explorer/kusto/query/extractfunction) or similar functions that use regular expression. Reserve regex use for more complex scenarios. 
 - **Filter tables not expressions** — Don't filter on a calculated column if you can filter on a table column.
-- **No 3-character terms** — Avoid comparing or filtering using three-character terms, which are not indexed.
+- **No 3-character terms** — Avoid comparing or filtering with three-character terms, which are not indexed.
 - **Project selectively** — When joining tables, project only the columns you need.
 
 ## Optimize the join operator
