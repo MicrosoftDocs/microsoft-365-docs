@@ -226,7 +226,7 @@ DKE tenant and key settings are located in the **appsettings.json** file.
 
 In the **appsettings.json** file, modify the following values:
 
-- `ValidIssuers`. Replace `<tenantid>` with your tenant GUID.
+Under `ValidIssuers`, replace `<tenantid>` with your tenant ID. You can locate your tenant ID by going to the Azure Portal and viewing the [tenant properties blade](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
 - `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
 
   > [!IMPORTANT]
@@ -263,9 +263,9 @@ To generate keys:
    openssl rsa -in key.pem -pubout > pubkeyonly.pem
    ```
 
-1. In a text editor, open **pubkeyonly.pem**. Copy all of the content in the **pubkeyonly.pem** file, except the first and last lines, into the **PublicPem** section of the **appsettings.json** file.
+1. In a text editor, open **pubkeyonly.pem**. Copy all of the content in the **pubkeyonly.pem** file, except the first and last lines, into the `PublicPem` section of the **appsettings.json** file.
 
-1. In a text editor, open **privkeynopass.pem**. Copy all of the content in the **privkeynopass.pem** file, except the first and last lines, into the **PrivatePem** section of the **appsettings.json** file.
+1. In a text editor, open **privkeynopass.pem**. Copy all of the content in the **privkeynopass.pem** file, except the first and last lines, into the `PrivatePem` section of the **appsettings.json** file.
 
 1. Remove all blank spaces and newlines in both the **PublicPem** and **PrivatePem** sections.
 
@@ -288,7 +288,7 @@ To generate keys:
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
    ```
 
-   The end results should look similar to the following picture.
+   The end results should look similar to the following.
 
    :::image type="content" source="../media/dke-startupcs-usetestkeys.png" alt-text="startup.cs file for public preview":::
 
@@ -499,13 +499,13 @@ To register your key store:
 
     4. Select **Save** at the top to save your changes.
 
-Your DKE key store is now registered. Continue  by [creating labels using DKE](#create-labels-using-dke).
+Your DKE key store is now registered. Continue by [creating labels using DKE](#create-labels-using-dke).
 
 ## Create labels using DKE
 
 Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center and apply double key encryption to those labels.
 
-In the label creation UI, select the **Use Double Key Encryption** option and enter the endpoint URL for your key.
+In the sensitivity label creation UI, select **Use Double Key Encryption** and enter the endpoint URL for your key.
 
 For example:
 
