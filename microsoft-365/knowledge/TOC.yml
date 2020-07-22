@@ -26,16 +26,8 @@
     
     - name: Adoption
       items: 
-        - name: Overview
-          href: .md
-        - name: Phase 1 - Get comfortable with topics
-          href: .md 
-        - name: Phase 2 - Build out the knowledge base
-          href: .md   
-        - name: Phase 3 - scale
-          href: .md 
-
-
+        - name: Get started
+          href: knowledge-adoption-getstarted.md
 
 
 
