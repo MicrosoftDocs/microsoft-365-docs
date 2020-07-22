@@ -51,10 +51,9 @@ Since October 31, 2018, Office 365 no longer supports TLS 1.0 and 1.1. This mean
 
 This doesn't mean Office 365 will block TLS 1.0 and 1.1 connections.
 
-TLS 1.0 and TLS 1.1 was officially deprecated on these dates.
+Although we originally set a date of June 1, 2020 for TLS 1.0 and TLS 1.1 deprecation for WorldWide and GCC environments, this date is no longer valid. This was due to COVID-19. When we have a new date for this deprecation, we will publish it here. 
 
-- June 1, 2020 in the WorldWide and GCC environments.
-- January 15, 2020 in the GCC High and DoD environments.
+For GCC High and DoD environments, official deprecation occurred on January 15, 2020.
 
 You should make sure that all client-server and browser-server combinations use TLS 1.2 and modern cipher suites to maintain a secure connection to Office 365 and Microsoft 365 services. You might have to update certain client-server and browser-server combinations. For information about how this impacts you, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   

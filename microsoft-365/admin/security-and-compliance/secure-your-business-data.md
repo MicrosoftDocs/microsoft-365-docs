@@ -248,7 +248,7 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
     
 4. On the Anti-phishing page, select **+ Create**. A wizard launches that steps you through defining your anti-phishing policy.
     
-5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409) for more details. 
+5. Specify the name, description, and settings for your policy as recommended in the chart below. See [Learn about ATP anti-phishing policy options](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies) for more details. 
     
 6. After you have reviewed your settings, select **Create this policy** or **Save**, as appropriate.
 
@@ -265,7 +265,7 @@ To create an ATP anti-phishing policy, view a [short training video](https://sup
 |Applied to  <br/> |Select **The recipient domain is**. Under **Any of these**, select **Choose**. Select **+ Add**. Select the check box next to the name of the domain, for example, contoso.com, in the list, and then select **Add**. Select **Done**.  <br/> |
 |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## 9: Protect against malicious attachments and files with ATP Safe Attachments
 <a name="atp"> </a>
@@ -298,7 +298,7 @@ To create an ATP safe attachment policy, view a [short training video](https://s
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
 |
    
-For more information, see [Set up Office 365 ATP anti-phishing policies](https://go.microsoft.com/fwlink/?linkid=2016505&amp;clcid=0x409).
+For more information, see [Set up Office 365 ATP anti-phishing policies](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
   
 ## 10: Protect against phishing attacks with ATP Safe Links
 <a name="phishingatp"> </a>
@@ -321,15 +321,17 @@ To get to ATP Safe Links, view a [short training video](https://support.microsof
     
 To modify the default policy:
   
-1. On the Safe links page, under **Policies that apply to the entire organization**, select the **Default** policy. 
+1. On the Safe links page, under **Policies that apply to the entire organization**, double-click the **Default** policy. 
     
-2. Under **Settings that apply to content except email**, select **Microsoft 365 Apps for enterprise, Office for iOS and Android**.
+2. Under **Settings that apply to content across Office 365**, enter a URL to be blocked, such as _example.com_, and select **+**.
+
+3. Under **Settings that apply to content except email**, select **Office 365 applications**, **Do not track when users click safe links**, and **Do not let users click through safe links to original URL**.
     
-3. Select **Save**. 
+4. Select **Save**. 
     
 To create a new policy targeted to all recipients in your domain:
   
-1. On the Safe links page, under **Policies that apply to the entire organization**, select **+** to create a new policy. 
+1. On the Safe links page, under **Policies that apply to specific recipients**, select **+** to create a new policy. 
     
 2. Apply the settings listed in the following table.
     
@@ -339,7 +341,7 @@ To create a new policy targeted to all recipients in your domain:
 |:-----|:-----|
 |Name  <br/> |Safe links policy for all recipients in the domain  <br/> |
 |Select the action for unknown potentially malicious URLs in messages  <br/> |Select **On - URLs will be rewritten and checked against a list of known malicious links when user clicks on the link**.  <br/> |
-|Use Safe Attachments to scan downloadable content  <br/> |Select this box.  <br/> |
+|Apply real-time URL scanning for suspicious links and links that point to files  <br/> |Select this box.  <br/> |
 |Applied to  <br/> |The recipient domain is . . . select your domain.  <br/> |
 |
    

@@ -29,12 +29,12 @@ productDirectory:
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Practical guidance and go to market resources for partners for securing remote work.
-      url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+      url: https://aka.ms/SMBSecurityKit
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Azure AD Premium P1 is coming to Microsoft 365 Business Premium!
+      summary: Azure AD Premium P1 is now included in Microsoft 365 Business Premium!
       url: https://aka.ms/aadp1smbblog
 # conceptualContent section (optional)
 conceptualContent:
@@ -91,6 +91,12 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
           itemType: download
           text: Checklist for securing remote work
+        - url: https://cct.transform.microsoft.com/
+          itemType: deploy
+          text: Customer Consulting Tool
+        - url: https://vc.transform.microsoft.com/
+          itemType: learn
+          text: Value Calculator
   # Card
     - title: Manage users
       links:
