@@ -69,7 +69,11 @@ You can choose to deploy the service wherever you want, whether it's locally on 
 
 ## Deploy Double Key Encryption
 
-You'll follow these general steps to set up Double Key Encryption for your organization. The example in this article uses Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+You'll follow these general steps to set up Double Key Encryption for your organization. The example in this article and in the following video uses Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+
+The video provides a step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
+
+> [!VIDEO https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e]
 
 1. [Install software prerequisites](#install-software-prerequisites)
 1. [Clone the Double Key Encryption GitHub repository](#clone-the-dke-github-repository)
@@ -236,7 +240,9 @@ DKE tenant and key settings are located in the **appsettings.json** file.
    ]
    ```
 
-- `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
+Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run. For example:
+
+
 
   > [!IMPORTANT]
   > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5000** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
@@ -285,7 +291,9 @@ To generate keys:
     > [!IMPORTANT]
     > When you copy this content, do not delete any of the PEM data.
 
-1. Open the **Startup.cs** file, and locate the following lines:
+1. In Visual Studio Code, browse to the **Startup.cs** file. This file is located in the DoubleKeyEncryptionService repo you cloned locally under DoubleKeyEncryptionService\src\customer-key-store\.
+
+2. Locate the following lines:
 
    ```c#
         #if USE_TEST_KEYS
@@ -295,7 +303,7 @@ To generate keys:
         #endif
    ```
 
-1. Replace these lines with the following text:
+3. Replace these lines with the following text:
 
    ```csharp
    services.AddSingleton<ippw.IKeyStore, ippw.TestKeyStore>();
@@ -355,7 +363,7 @@ Your setup is now complete. Before you publish the keystore, in appsettings.json
 
 The following steps describe how to create an Azure App Service instance to host your DKE deployment, and how to publish your generated keys to Azure.
 
-To create an Azure Web App instance to host your DKE deployment:
+**To create an Azure Web App instance to host your DKE deployment**
 
 1. In your browser, sign in to the [Microsoft Azure portal](https://ms.portal.azure.com), and go to **App Services** > **Add**.
 
