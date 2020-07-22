@@ -33,7 +33,7 @@ When content is marked as a record:
 
 - You have proof of disposition when the items are deleted at the end of their retention period.
 
-You use [retention labels](retention.md#labels) to mark content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
+You use [retention labels](retention.md#retention-labels) to mark content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
 
 By using retention labels to mark content as records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 
