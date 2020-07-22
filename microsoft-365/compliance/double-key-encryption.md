@@ -245,7 +245,7 @@ Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the mach
 
 
   > [!IMPORTANT]
-  > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5000** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
+  > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5001** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
 
 - `TestKeys:Name`. Enter a name for your key. For example: `TestKey1`
 - `TestKeys:Id`. Create a GUID and enter it as the `TestKeys:ID` value. For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
