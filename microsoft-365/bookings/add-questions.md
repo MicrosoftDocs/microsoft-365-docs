@@ -41,7 +41,7 @@ For more information about how to personalize and customize your booking page, s
 
    ![Image of custom questions screen](../media/bookings-questions-custom-fields.png)
 
-1. To make the question required, tick the **Required** checkbox. Your customer won't be able to complete the booking until they've answered the required questions.
+1. To make the question required, select the **Required** checkbox. Your customer won't be able to complete the booking until they've answered the required questions.
 
 1. To create a custom question, select **Add a question** from the top of the panel. Write your question, and then select **Save**.
 
