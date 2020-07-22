@@ -33,7 +33,7 @@ Auto-applying retention labels are powerful because:
     
 - Users no longer need to know about data governance policies - they can focus on their work.
     
-You can apply retention labels to content automatically when that content contains sensitive information, keywords, or a match for [trainable classifiers](classifier-getting-started-with.md).
+You can apply retention labels to content automatically when that content contains sensitive information, keywords, or a match for [trainable classifiers](classifier-learn-about.md).
     
 The processes to automatically apply a retention label based on these conditions:
 
@@ -164,7 +164,7 @@ When you choose the option for a trainable classifier, you can select one of the
 
 To automatically apply a label by using this option, SharePoint Online sites and mailboxes must have at least 10 MB of data.
 
-For more information about trainable classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+For more information about trainable classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 For an example configuration, see [How to prepare for and use a built-in classifier](classifier-using-a-ready-to-use-classifier.md#how-to-verify-that-a-built-in-classifier-will-meet-your-needs).
 

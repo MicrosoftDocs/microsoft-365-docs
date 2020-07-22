@@ -1,10 +1,11 @@
 ---
-title: "Getting started with trainable classifiers (preview)"
+title: "Learn about trainable classifiers (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,7 +17,7 @@ search.appverid:
 description: "A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it positive and negative samples to look at. Once the classifier is trained, you confirm that its results are accurate. Then you use it to search through your organization's content and classify it to apply retention or sensitivity labels or include it in data loss prevention (DLP) or retention policies."
 ---
 
-# Getting started with trainable classifiers (preview)
+# Learn about trainable classifiers (preview)
 
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
@@ -37,12 +38,12 @@ Sensitivity and retention labels can then be automatically applied to make the c
 
 ## Trainable classifiers
 
-This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the true positives, true negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content.
+This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A trainable classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The trainable classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the true positives, true negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content. After you publish the trainable classifier, you can continue to train it using a feedback process that is similar to the initial training process. 
 
 ### Where you can use trainable classifiers
-Both built-in classifiers and trainable classifiers are available as a condition for [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and [communication compliance](communication-compliance-configure.md). 
+Trainable classifiers are available as a condition for [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and [communication compliance](communication-compliance-configure.md). 
 
-Sensitivity labels can use built-in and build-your-own classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+Sensitivity labels can use trainable classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are not encrypted and are in English.
@@ -65,28 +66,45 @@ You'll need accounts with these permissions to use trainable classifiers in thes
 
 ## Types of classifiers
 
-There are built-in classifiers and trainable classifiers. Getting a trainable classifier to a publishable state requires a time investment to train it. To help you get started using classifiers, Microsoft 365 comes with a few built-in classifiers.
+To help you get started using trainable classifiers, Microsoft 365 comes with a few pre-trained **built-in trainable classifiers**. If you have needs beyond what the built in classifiers provide, you can create and train your own **custom trainable classifiers**. 
 
 > [!NOTE]
 > Before using any built-in classifier in your classification and labeling workflow, you should test it against a sample of your organizations content that you feel fits the category to verify that its classification predictions meet your expectations.
 
 ### Understanding built-in classifiers
 
-Microsoft 365 comes with five recommended built-in classifiers:
+Microsoft 365 comes with five built-in classifiers:
 
 > [!CAUTION]
-> We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
+> We are deprecating the **Offensive Language** built-in trainable classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in trainable classifiers instead.
 
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub
-
-  |language name|||||
-  |---------|---------|---------|---------|---------|
-  |ActionScript|C        |C#       |C++     |Clojure  |
-  |CoffeeScript|CSS     |Go       |Haskell |HTML     |
-  |Java     |JavaScript|Lua      |MATLAB   |Objective-C|
-  |Perl     |PHP      |Python   |R        |Ruby     |
-  |Scala    |Shell    |Swift    |Tex      |Vim Script|
+    - ActionScript
+    - C
+    - C#
+    - C++
+    - Clojure
+    - CoffeeScript
+    - CSS
+    - Go
+    - Haskell
+    - HTML
+    - Java
+    - JavaScript
+    - Lua
+    - MATLAB
+    - Objective-C
+    - Perl
+    - PHP
+    - Python
+    - R
+    - Ruby
+    - Scala
+    - Shell
+    - Swift
+    - Tex
+    - Vim Script
 
 > [!NOTE]
 > Source Code is trained to detect when the bulk of the text is source code. It does not detect source code text that is interspersed with plain text.

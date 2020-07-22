@@ -233,8 +233,8 @@
           href: data-classification-activity-explorer.md
         - name: Data classification release notes
           href: data-classification-pub-preview-relnotes.md
-        - name: Get started with trainable classifiers (preview)
-          href: classifier-getting-started-with.md
+        - name: Learn about trainable classifiers (preview)
+          href: classifier-learn-about.md
         - name: Using a built-in classifier (preview)
           href: classifier-using-a-ready-to-use-classifier.md
         - name: Creating and training a classifier (preview)

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,7 +21,7 @@ description: "Use trainable classifiers when one of the built-in classifiers won
 
 Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the predictions by giving it a mix of positive and negative samples.
 
-To learn more about the different types of classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
+To learn more about the different types of classifiers, see [Getting started with trainable classifiers (preview)](classifier-learn-about.md)
 
 This timeline reflects a sample deployment.
 
@@ -120,5 +121,5 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 ## See also
 
-- [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
+- [Learn about trainable classifiers (preview)](classifier-learn-about.md)
 - [Default crawled file name extensions and parsed file types in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

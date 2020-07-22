@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
+ms.date:
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -23,7 +24,7 @@ Microsoft has trained and tested five classifiers which can help to identify cer
 > [!IMPORTANT]
 > Before using built-in classifiers in your classification and labeling workflow, you should test it against a sample of your organization's content that you feel fits the category to verify that its classification predictions meet your expectations.
 
-For more information on trainable classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
+For more information on trainable classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 Microsoft 365 comes with five recommended built-in classifiers:
 
@@ -100,6 +101,6 @@ Microsoft 365 comes with five recommended built-in classifiers:
 
 See also:
 
-- [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)
+- [Learn about trainable classifiers (preview)](classifier-learn-about.md)
 - [Learn about retention policies and retention labels](retention.md)
 - [Automatically apply a retention label to retain or delete content](apply-retention-labels-automatically.md)

@@ -130,7 +130,7 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 
 ### Trainable classifiers
 
-[Getting started with trainable classifiers (preview)](classifier-getting-started-with.md) (updated)<br>Added info about how the Offensive Language template is being deprecated. Also added a table listing the top 25 code languages used in the Source Code built-in classifier.
+[Learn about trainable classifiers (preview)](classifier-learn-about.md) (updated)<br>Added info about how the Offensive Language template is being deprecated. Also added a table listing the top 25 code languages used in the Source Code built-in classifier.
 
 ## February 2020
 
