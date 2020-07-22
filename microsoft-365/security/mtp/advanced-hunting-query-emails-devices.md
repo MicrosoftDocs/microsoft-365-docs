@@ -35,15 +35,35 @@ When constructing queries across [tables that cover devices and emails](advanced
 AccountName = tostring(split(SenderFromAddress, "@")[0])
 ```
 
+## Use IdentityInfo table to find identity information
+
+ 
+
 This normalization technique is used in the succeeding scenarios.
 
 ## Hunting scenarios
+
+### Summarize logon activities of users that received emails that were not zapped successfully
+
+//Generate line chart showing logon activities of users that received emails that were not zapped successfully
+EmailPostDeliveryEvents 
+| where Timestamp > ago(30d)
+| where ActionTrigger == "ZAP"
+| where ActionResult contains "fail"
+| join
+    IdentityInfo 
+on $left.RecipientEmailAddress == $right.EmailAddress
+| project AccountName
+| join 
+    IdentityLogonEvents
+    on AccountName 
+| render linechart
 
 ### Check if files from a known malicious sender are on your devices
 Assuming you know of an email address sending malicious files, you can run this query to determine if files from this sender exist on your devices. You can use this query, for example, to determine the number of devices affected by a malware distribution campaign.
 
 ```kusto
-//Get prevalence of files sent by a malicious sender in your organization
+//Check if files from a known malicious sender are on your devices
 EmailAttachmentInfo
 | where SenderFromAddress =~ "MaliciousSender@example.com"
 | where isnotempty(SHA256)
@@ -51,7 +71,29 @@ EmailAttachmentInfo
 DeviceFileEvents
 | project FileName, SHA256
 ) on SHA256
+| project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
 ```
+### Check for cloud app activity involving files from a known malicious sender
+
+//Check for cloud app activity involving files from a known malicious sender
+let MaliciousSender = "MaliciousSender@example.com";
+EmailAttachmentInfo
+| where SenderFromAddress =~ MaliciousSender and isnotempty(SHA256)
+| project NetworkMessageId, SenderFromAddress, RecipientEmailAddress , FileName  
+| join (
+AppFileEvents 
+| project Timestamp , FileName , Application , FolderPath , AccountDisplayName , AccountObjectId  
+) on FileName
+| project Timestamp , FileName , Application , FolderPath , AccountDisplayName , AccountObjectId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
+
+### Identify uncommon malware received through email
+// Get more details on the malware received on email using FileProfile function enrichment
+EmailAttachmentInfo
+| where Timestamp > ago(7d)
+| where MalwareFilterVerdict == "Malware"
+| distinct SHA256
+| invoke FileProfile(SHA256)
+| project SHA1, SHA256 , FileSize , GlobalFirstSeen , GlobalLastSeen , GlobalPrevalence , IsExecutable 
 
 ### Review logon attempts after receipt of malicious emails
 This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails. You can use this query to check whether the accounts of the email recipients have been compromised.
@@ -63,7 +105,7 @@ let MaliciousEmail=EmailEvents
 | project TimeEmail = Timestamp, Subject, SenderFromAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 MaliciousEmail
 | join (
-DeviceLogonEvents
+IdentityLogonEvents
 | project LogonTime = Timestamp, AccountName, DeviceName
 ) on AccountName 
 | where (LogonTime - TimeEmail) between (0min.. 30min)
