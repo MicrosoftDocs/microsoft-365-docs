@@ -54,6 +54,9 @@ In Microsoft 365, group members typically create their own groups, add themselve
 
 ::: moniker-end
 
+> [!NOTE]
+> You need to be a Global admin or a Groups admin to make changes to a group in the M365 admin center.
+
 ::: moniker range="o365-germany"
 
 1. In the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>, go to the **Groups** \> **Groups** page.  
