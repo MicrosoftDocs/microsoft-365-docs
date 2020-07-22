@@ -37,6 +37,18 @@
           href: ../enterprise/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft Secure Score
+      items: 
+        - name: Secure Score overview
+          href: mtp/microsoft-secure-score.md
+        - name: Assess your security posture
+          href: mtp/microsoft-secure-score-improvement-actions.md
+        - name: Track your score history and meet goals
+          href: mtp/microsoft-secure-score-history-metrics-trends.md
+        - name: What's coming
+          href: mtp/microsoft-secure-score-whats-coming.md
+        - name: What's new
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft Threat Protection
       items: 
         - name: Overview
@@ -187,16 +199,6 @@
                       href: mtp/custom-detections-overview.md
                     - name: Create & manage detection rules
                       href: mtp/custom-detection-rules.md
-            - name: Microsoft Secure Score
-              items: 
-                - name: Secure Score overview
-                  href: mtp/microsoft-secure-score.md
-                - name: Gain visibility into your security posture
-                  href: mtp/microsoft-secure-score-improvement-actions.md
-                - name: Track your score history and meet goals
-                  href: mtp/microsoft-secure-score-history-metrics-trends.md
-                - name: What's coming
-                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
               items: 
                 - name: Monitor and view reports
