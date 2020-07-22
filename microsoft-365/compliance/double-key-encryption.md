@@ -27,7 +27,7 @@ ms.collection:
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Double Key Encryption (DKE) requires two keys, used together, to access protected content. You store one key in Microsoft Azure, and you hold the other key. You use the Azure Information Protection unified labeling client to protect highly sensitive content while maintaining full control of one of your keys.
+Double Key Encryption (DKE) uses two keys together to access protected content. You store one key in Microsoft Azure, and you hold the other key. The Azure Information Protection unified labeling client protects highly sensitive content while you maintain full control of one of your keys.
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
@@ -63,7 +63,7 @@ There are several ways you can complete some of the steps to deploy Double Key E
 
 This article includes step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. For public preview, using Azure is a quick way to deploy DKE. Deploying to Azure lets you get started using Double Key Encryption right away.
 
-You can deploy the service wherever you want, either locally on your network or with another provider. You'll need to publish the key store using methods appropriate for that location.
+You can deploy the service locally on your network or with another provider. You'll need to publish the key store using methods that are appropriate for that location.
 
 ## Deploy Double Key Encryption
 
