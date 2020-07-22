@@ -130,7 +130,7 @@ Customers who wish to experience the complete capabilities of Microsoft 365 Busi
 The most direct path to a successful Microsoft 365 Business Premium deployment is to engage with a Microsoft Partner. They have extensive training and experience with a wide variety of customer scenarios and are best equipped to understand your environment and needs. Customers that have experienced IT on staff can use the <a href="https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview" target="_blank">Microsoft 365 Business Premium Getting Started</a> to assist them in their Microsoft 365 Business Premium deployment. 
 
 ### Does Microsoft 365 Business Premium include the full capabilities of Microsoft Intune? 
-Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, macOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management and configuration of WiFi profiles, VPN certificates, can be managed in the full Intune console. 
+Yes, Microsoft 365 Business Premium subscribers are licensed to use full Intune capabilities for iOS, Android, macOS, and other cross-platform device management. Features not available in the simplified management console in Microsoft 365 Business Premium, like third-party app management, configuration of Wi-Fi profiles, and VPN certificates, can be managed in the full Intune console. 
   
 
 ### Does Azure Active Directory (Azure AD) Premium P1 come with Microsoft 365 Business Premium? 
