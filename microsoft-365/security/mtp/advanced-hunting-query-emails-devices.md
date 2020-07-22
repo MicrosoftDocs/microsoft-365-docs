@@ -19,23 +19,61 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ---
 
-# Hunt for threats across devices and emails
+# Hunt for threats across devices, emails, apps, and identities
 
 **Applies to:**
 - Microsoft Threat Protection
 
+[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across:
+- Devices managed by Microsoft Defender ATP
+- Emails processed by Microsoft 365
+- Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Azure ATP
 
+With these kind of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices. 
 
-[Advanced hunting](advanced-hunting-overview.md) in Microsoft Threat Protection allows you to proactively hunt for threats across your Windows devices and Microsoft emails. Here are some hunting scenarios and sample queries that can help you explore how you might construct queries covering both devices and emails.
+Here are some hunting scenarios and sample queries that can help you explore how you might construct queries when hunting for such sophisticated threats.
+
+## Identify users and devices using the IdentityInfo and DeviceInfo tables
+You can quickly understand...
+
+```kusto
+//Get display names and locations of phishing recipients
+EmailEvents
+| where Timestamp > ago(7d)
+| where PhishFilterVerdict == "Phish"
+| join IdentityInfo 
+on $left.RecipientEmailAddress == $right.EmailAddress
+| project EmailAddress, AccountDisplayName, City, Country
+```
+
+```kusto
+//List domain authentication events from credential theft targets 
+EmailEvents
+| where Timestamp > ago(7d)
+| where PhishFilterVerdict == "Phish"
+| join IdentityInfo 
+on $left.RecipientEmailAddress == $right.EmailAddress
+| project EmailAddress, AccountDisplayName, City, Country
+```
+```kusto
+//Get logon activities from targeted credentials
+AlertInfo
+| where Timestamp > ago(30d)
+| where AttackTechniques == "CredentialAccess"
+| join AlertEvidence on AlertId
+//Get latest alert per distinct AccountName
+| where AccountDomain == "on"
+| distinct AccountName
+```
 
 ## Obtain user accounts from email addresses
 When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. To do this use the *local-host* from the email address:
 
 ```kusto
-AccountName = tostring(split(SenderFromAddress, "@")[0])
+AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
 
-## Use IdentityInfo table to find identity information
+
 
  
 
@@ -45,6 +83,7 @@ This normalization technique is used in the succeeding scenarios.
 
 ### Summarize logon activities of users that received emails that were not zapped successfully
 
+```kusto
 //Generate line chart showing logon activities of users that received emails that were not zapped successfully
 EmailPostDeliveryEvents 
 | where Timestamp > ago(30d)
@@ -58,6 +97,7 @@ on $left.RecipientEmailAddress == $right.EmailAddress
     IdentityLogonEvents
     on AccountName 
 | render linechart
+```
 
 ### Check if files from a known malicious sender are on your devices
 Assuming you know of an email address sending malicious files, you can run this query to determine if files from this sender exist on your devices. You can use this query, for example, to determine the number of devices affected by a malware distribution campaign.
@@ -75,6 +115,7 @@ DeviceFileEvents
 ```
 ### Check for cloud app activity involving files from a known malicious sender
 
+```kusto
 //Check for cloud app activity involving files from a known malicious sender
 let MaliciousSender = "MaliciousSender@example.com";
 EmailAttachmentInfo
@@ -85,8 +126,11 @@ AppFileEvents
 | project Timestamp , FileName , Application , FolderPath , AccountDisplayName , AccountObjectId  
 ) on FileName
 | project Timestamp , FileName , Application , FolderPath , AccountDisplayName , AccountObjectId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
+```
 
 ### Identify uncommon malware received through email
+
+```kusto
 // Get more details on the malware received on email using FileProfile function enrichment
 EmailAttachmentInfo
 | where Timestamp > ago(7d)
@@ -94,6 +138,7 @@ EmailAttachmentInfo
 | distinct SHA256
 | invoke FileProfile(SHA256)
 | project SHA1, SHA256 , FileSize , GlobalFirstSeen , GlobalLastSeen , GlobalPrevalence , IsExecutable 
+```
 
 ### Review logon attempts after receipt of malicious emails
 This query finds the 10 latest logons performed by email recipients within 30 minutes after they received known malicious emails. You can use this query to check whether the accounts of the email recipients have been compromised.
