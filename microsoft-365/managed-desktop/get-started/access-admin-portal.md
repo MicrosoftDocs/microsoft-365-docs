@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 
 # Access the admin portal
 
-Your gateway to the Microsoft Managed Desktop service is the Microsoft [Azure portal](https://portal.azure.com). For more about using and customizing your Azure portal experience generally, see the [Azure portal documentation](https://docs.microsoft.com/azure/azure-portal/). 
+Your gateway to the Microsoft Managed Desktop service is the Microsoft [Azure portal](https://portal.azure.com). For more about using and customizing your Azure portal experience generally, see the [Azure portal documentation](https://docs.microsoft.com/azure/azure-portal/). Available in preview now, you can also find Microsoft Managed Desktop in the [Microsoft Endpoint Manager](http://endpoint.microsoft.com/). If you are unfamiliar with the capabilities of this portal for device management see the [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/).
 
 Your administrative account needs specific permissions in order to access the Microsoft Managed Desktop Admin portal. You can manage admin access to these features within your organization by using Role-based Access Control (RBAC). For more information about Azure Active Directory roles, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 
