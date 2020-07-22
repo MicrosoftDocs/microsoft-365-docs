@@ -146,7 +146,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
       > EDM Schema for the data store 'patientrecords' will be updated.
       >
       > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
-
+      
       > [!TIP]
       > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
 
@@ -346,6 +346,10 @@ You'll see a list of data stores and when they were last updated.
 Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).
 
 At this point, you are ready to use EDM-based classification with your Microsoft cloud services. For example, you can [set up a DLP policy using EDM-based classification](#to-create-a-dlp-policy-with-edm).
+
+      > [!NOTE]
+      > The Throttling limit to upload data into the same data store using an EDM agent is set to 2 per day.
+
 
 #### Refreshing your sensitive information database
 
