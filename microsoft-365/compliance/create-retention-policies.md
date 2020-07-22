@@ -16,7 +16,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "Use a retention policy to decide proactively whether to retain content, delete content, or both - retain and then delete the content; apply a single policy to the entire organization or specific locations or users; and apply a policy to all content or content meeting certain conditions."
+description: "Use a retention policy to very efficiently keep control of the content that users generate with email, documents, and conversations. Keep what you want and get rid of what you don't."
 ---
 
 # Create and configure retention policies
@@ -56,20 +56,18 @@ When you have more than one retention policy, and when you also use retention la
 
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
 
-2. Select **New retention policy** to create a new retention policy.
+2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
 
-3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
-    
-    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
-    
-    Do not select **Use advanced retention settings** because this option isn't supported for Teams locations. 
-
-4. For the **Choose locations** page, select **Let me choose specific locations**. Then toggle on one or both of the locations for Teams: **Teams channel message** and **Teams chats**.
+3. For the **Choose locations to apply the policy** page, select one or both of the locations for Teams: **Teams channel message** and **Teams chats**.
      
     For **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
     
-    By default, all teams are selected, but you can refine this by specifying teams to be included, or teams to be excluded.
+    By default, [all teams are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by [specifying teams to be included, or teams to be excluded](#a-policy-with-specific-inclusions-or-exclusions).
 
+4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
+    
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
+    
 5. Complete the wizard to save your settings.
 
 For more information about retention policies for Teams, see [Retention policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies) from the Teams documentation.
@@ -94,23 +92,19 @@ It's possible that a retention policy that's applied to Microsoft 365 groups, Sh
 
 1. From the [Microsoft 365 compliance center](https://compliance.microsoft.com/), select **Policies** > **Retention**.
 
-2. Select **New retention policy** to create a new retention policy.
+2. Select **New retention policy** to start the Create retention policy wizard, and name your new retention policy.
 
-3. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content. 
-    
-    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
-    
-    Then, decide whether the retention policy should apply to all content, or content that meets specific conditions. For more information about these advanced retention settings, see [Advanced settings to identify content that meets specific conditions](#advanced-settings-to-identify-content-that-meets-specific-conditions) on this page. 
-
-4. For the **Choose locations** page, select whether the retention policy should apply to all supported locations across your organization, or you want to specify the locations. If you choose specific locations, you can also specify includes and excludes. 
-    
-    For more information about choosing between a retention policy for the organization or for specific locations, see [Applying a retention policy to an entire organization or specific locations](#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) on this page.
+3. For the **Choose locations** page, toggle on or off any of the locations except the locations for Teams. For each location, you can leave it at the default to [apply the policy to the entire location](#a-policy-that-applies-to-entire-locations), or [specify includes and excludes](#a-policy-with-specific-inclusions-or-exclusions). 
     
     Information specific to locations:
     - [Exchange email and Exchange public folders](#configuration-information-for-exchange-email-and-exchange-public-folders)
     - [SharePoint sites and OneDrive accounts](#configuration-information-for-sharepoint-sites-and-onedrive-accounts)
     - [Office 365 groups](#configuration-information-for-microsoft-365-groups)
     - [Skype for Business](#configuration-information-for-skype-for-business)
+
+4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
+    
+    You can create a retention policy that just retains content without deleting, retains and then deletes after a specified period of time, or just deletes content after a specified period of time. For more information, see [Settings for retaining and deleting content](#settings-for-retaining-and-deleting-content) on this page.
 
 5. Complete the wizard to save your settings.
 
@@ -153,12 +147,9 @@ Unlike Exchange email, you can't toggle the status of the Skype location on to i
 
 ![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
   
-When you select **Choose users**, you can quickly include all users by selecting the **Name** box in the column header. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if an org-wide policy were able to include all Skype users by default. 
-  
-![Choose Skype users page](../media/f1742493-741a-4142-a564-d7d41ab0236a.png)
-  
-Note that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
+When you select **Choose user**, you can quickly include all users by selecting the **Select all** box. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if you leave the default of **All** for this location.
 
+Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
 ## Settings for retaining and deleting content
 
@@ -196,66 +187,12 @@ Therefore, before you assign a retention policy to a site collection for the fir
   
 ![Warning about deleting content](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
   
-## Advanced settings to identify content that meets specific conditions
 
-A retention policy can apply to all content in the locations that it includes, or you can choose to apply a retention policy only to content that contains specific keywords or [specific types of sensitive information](what-the-sensitive-information-types-look-for.md).
-  
-![Advanced retention options](../media/e8d9dd42-c062-4e8b-a2ca-bffe3ea298e0.png)
-  
-### Identify content that contains specific keywords
-
-You can apply a retention policy only to content that meets specific conditions, and then take retention actions on just that content. The conditions available support applying a retention policy to content that contains specific words or phrases. You can refine your query by using search operators like AND, OR, and NOT. For more information on these operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-Support for adding searchable properties (for example, **subject:**) is coming soon.
-  
-Query-based retention uses the search index to identify content.
-  
-![Query editor](../media/2c31b412-922e-4a88-89e4-5175c23d9b5f.png)
-  
-### Identify content that contains sensitive information
-
-You can also apply a retention policy only to content that contains [specific types of sensitive information](what-the-sensitive-information-types-look-for.md). For example, you can choose to apply unique retention requirements only to content that contains personal information, such as taxpayer identification numbers, social security numbers, or passport numbers.
-  
-![Sensitive information types page](../media/8b104819-d185-4d58-b6b3-d06e82686a05.png)
-  
-Notes:
-  
-- Advanced retention for sensitive information doesn't apply to Exchange public folders or Skype for Business because those locations don't support sensitive information types.
-    
-- Exchange Online uses mail flow rules (also known as transport rules) to identify sensitive information, so this works only on messages in transit—not on all items already stored in a mailbox. For Exchange Online, this means that a retention policy can identify sensitive information and take retention actions only on messages that are received **after** the policy is applied to the mailbox. Query-based retention described in the previous section doesn't have this limitation because it uses the search index to identify content. 
-    
-## Applying a retention policy to an entire organization or specific locations
-
-You can easily apply a retention policy to an entire organization, entire locations, or only to specific locations or users.
-  
-### Org-wide policy
-
-One of the most powerful features of a retention policy is that it can apply to locations across Microsoft 365, including:
-  
-- Exchange email
-    
-- SharePoint site collections
-    
-- OneDrive accounts
-    
-- Microsoft 365 groups
-    
-- Exchange public folders
-    
-
-![All locations option](../media/retention-policies-all-locations.png)
-
-Other important features of an org-wide retention policy include:
-  
-- There is no limit to the number of mailboxes or sites the policy can include.
-    
-- For Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
-  
 ### A policy that applies to entire locations
 
 When you choose locations, you can easily include or exclude an entire location, such as Exchange email or OneDrive accounts. To do so, toggle the **Status** of that location on or off. 
   
-Like an org-wide policy, if a policy applies to any combination of entire locations, there is no limit to the number of mailboxes or sites the policy can include. 
+If a policy applies to any combination of entire locations, there is no limit to the number of mailboxes or sites the policy can include. 
 
 For example, if a policy includes all Exchange email and all SharePoint sites, all sites and mailboxes will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
 
@@ -273,7 +210,7 @@ However, using this configuration, there are some limits when your retention pol
 
 There is a maximum number of policies that are supported for a tenant: 10,000. These items include retention policies, retention label policies, and auto-apply retention policies.
 
-If your retention policies are likely to be subject to these limitations, choose the configuration options that apply to entire locations, or use an org-wide policy.
+If your retention policies are likely to be subject to these limitations, choose the configuration options that apply to entire locations.
 
 ## Updating retention policies
 
