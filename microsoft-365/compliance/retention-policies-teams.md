@@ -94,10 +94,6 @@ We're continuously working on optimizing retention functionality in Teams. In th
   
 - **Teams requires a separate retention policy**. When you create a retention policy and toggle on the Teams locations, all other locations toggle off. A retention policy that includes Teams can include only Teams and no other locations.
 
-- **Teams isn't included in an org-wide policy**. If you create an org-wide policy, Teams channel messages and Teams chats aren't included because these require a separate retention policy.
-
-- **Teams doesn't support advanced retention**. When you create a retention policy, if you choose the [Advanced settings to identify content that meets specific conditions](create-retention-policies.md#advanced-settings-to-identify-content-that-meets-specific-conditions), the Teams locations are not available. Currently, retention in Teams applies to all the chat and channel message content when you select those locations.
-
 - **Teams messages in private channels aren't included when you configure a retention policy for Teams channel messages**. Currently, private channels aren't supported by retention policies. 
 
 - **Teams may take up to seven days to clean up expired messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take between three and seven days to clean up these messages and permanently delete them. Also, chat and channel messages will be searchable with eDiscovery tools during the time after the retention period expires and when messages are permanently deleted.
