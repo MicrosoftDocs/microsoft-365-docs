@@ -69,11 +69,13 @@ You can choose to deploy the service wherever you want, whether it's locally on 
 
 ## Deploy Double Key Encryption
 
-You'll follow these general steps to set up Double Key Encryption for your organization. The example in this article and in the following video uses Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+The example in this article and in the following video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
 The video provides a step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
 
 > [!VIDEO https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e]
+
+You'll follow these general steps to set up Double Key Encryption for your organization.
 
 1. [Install software prerequisites](#install-software-prerequisites)
 1. [Clone the Double Key Encryption GitHub repository](#clone-the-dke-github-repository)
