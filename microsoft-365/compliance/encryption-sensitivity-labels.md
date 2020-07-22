@@ -205,7 +205,7 @@ For more information, see [Rights Management issuer and Rights Management owner]
 
 ### Double Key Encryption
 
-This feature is currently in public preview.
+This feature is currently rolling out in public preview. For more information, see [Announcing public preview of Double Key Encryption for Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-public-preview-of-double-key-encryption-for-microsoft/ba-p/1534451).
 
 Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for the documents and emails that will have this label applied.
 
