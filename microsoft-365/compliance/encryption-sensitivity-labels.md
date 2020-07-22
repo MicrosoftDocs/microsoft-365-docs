@@ -116,9 +116,9 @@ Choosing whether to assign permissions now or let users assign permissions:
 
 Use the following options to control who can access email or documents to which this label is applied. You can:
 
-1. **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won't be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
+- **Allow access to labeled content to expire**, either on a specific date or after a specific number of days after the label is applied. After this time, users won't be able to open the labeled item. If you specify a date, it is effective midnight on that date in your current time zone. (Note that some email clients might not enforce expiration and show emails past their expiration date, due to their caching mechanisms.)
 
-2. **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
+- **Allow offline access** never, always, or for a specific number of days after the label is applied. If you restrict offline access to never or a number of days, when that threshold is reached, users must be reauthenticated and their access is logged. For more information, see the next section on the Rights Management use license.
 
 Settings for access control for encrypted content:
 
@@ -203,6 +203,14 @@ The Rights Management issuer is always granted Full Control permissions for the 
 
 For more information, see [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
+### Double Key Encryption
+
+This feature is currently in public preview.
+
+Select this option only after you have configured the Double Key Encryption service and you need to use this double key encryption for the documents and emails that will have this label applied.
+
+For more information, prerequisites, and configuration instructions, see [Double Key Encryption (DKE)](double-key-encryption.md).
+
 ## Let users assign permissions
 
 You can use these options to let users assign permissions when they manually apply a sensitivity label to content:
@@ -211,9 +219,9 @@ You can use these options to let users assign permissions when they manually app
 
 - In Word, PowerPoint, and Excel, a user is prompted to select their own permissions for specific users, groups, or organizations. 
     > [!NOTE]
-    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, support is currently in [preview for Windows and Mac](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint). 
+    > This option for Word, PowerPoint, and Excel is supported by the Azure Information Protection unified labeling client. For apps that use built-in labeling, [check which apps support it](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
     > 
-    > If this option is selected but isn't supported for a user's app, either that label doesn't display to the user, or (currently rolling out in preview for iOS and Android) the label displays for consistency, but it can't be applied with an explanation message to users.
+    > If this option is selected but isn't supported for a user's app, either that label doesn't display to the user, or the label displays for consistency, but it can't be applied with an explanation message to users.
 
 When the options are supported, use the following table to identify when users see the sensitivity label:
 

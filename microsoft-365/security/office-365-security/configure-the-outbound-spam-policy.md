@@ -131,26 +131,10 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 
    - **Notify specific people if a sender is blocked due to sending outbound spam**:
 
-     > [!NOTE]
-     > The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. We recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users). <br/><br/> This setting only works in the default outbound spam policy. It doesn't work in custom outbound spam policies that you create.
-
-     To enable this setting:
-
-     a. Select the check box to enable the setting.
-
-     b. Click **Add people**. In the **Add or remove recipients** flyout that appears:
-
-     c. Enter the sender's email address. You can specify multiple email addresses separated by semicolons (;) or one recipient per line.
-
-     d. Click ![Add icon](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) to add the recipients.
-
-        Repeat these steps as many times as necessary.
-
-        The recipients you added appear in the **Recipient list** section on the flyout. To delete a recipient, click ![Remove button](../../media/scc-remove-icon.png).
-
-     e. When you're finished, click **Save**.
-
-     To disable this setting, clear the check box.
+     > [!IMPORTANT]
+     > This setting is in the process of being deprecated from outbound spam policies.
+     > 
+     > The default [alert policy](../../compliance/alert-policies.md) named **User restricted from sending email** already sends email notifications to members of the **TenantAdmins** (**Global admins**) group when users are blocked due to exceeding the limits in the **Recipient Limits** section. **We strongly recommend that you use the alert policy rather than this setting in the outbound spam policy to notify admins and other users**. For instructions, see [Verify the alert settings for restricted users](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users).
 
 5. (Optional) Expand the **Recipient Limits** section to configure the limits and actions for suspicious outbound email messages:
 
@@ -183,12 +167,12 @@ Creating a custom outbound spam policy in the Security & Compliance Center creat
 6. (Optional) Expand **Automatic Forwarding** section to configure controls over how automatic forwarding by users is controlled.
 
    > [!NOTE]
-   > These settings are only applicable to cloud-based mailboxes.
-   
+   > These settings only apply to cloud-based mailboxes.
+
    - **Automatic Forwarding**
   
       Select one of the options to control how automatic forwarding is handled.
-    
+
       - **Automatic**: Default setting that allows the system to control automatic forwarding with automatic forwarding disabled by default.
       - **On**: External forwarding is enabled within the policy without restriction.
       - **Off**: External forwarding is disabled and will be blocked

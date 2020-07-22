@@ -4,14 +4,14 @@
 
     - name: Get started with Knowledge Management
       items: 
-        - name: Plan for Knowledge Management 
+        - name: Understand topic discovery 
           href: .md
-        - name: Knowledge Center Overview 
-          href: .md 
+        - name: Topic Center overview 
+          href: topic-center-overview.md 
         - name: Work with topics in the Knowledge Center
           href: work-with-topics.md   
-        - name: How to add sites for topic analysis
-          href: .md 
+        - name: Give users permissions to the Topic Center
+          href: give-user-permissions-to-the-topic-center.md 
         - name: How to edit a topic page or card
           href: .md 
         - name: How to add or remove people from accessing a topic
