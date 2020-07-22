@@ -25,25 +25,23 @@ ms.collection:
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-This public preview version of Double Key Encryption (DKE) enables you to use the Azure Information Protection Unified Labeling Client to protect highly sensitive content while maintaining full control of your key.
-
-Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure, and you hold the other key.
+Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure, and you hold the other key. This public preview version of Double Key Encryption (DKE) enables you to use the Azure Information Protection unified labeling client to protect highly sensitive content while maintaining full control of one of your keys.
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
-Double Key Encryption is similar to a safety deposit box that requires both a bank key and a customer key to gain access. To decrypt protected content, you must use both the Microsoft managed key and the customer-held key.
+Double Key Encryption is similar to a safety deposit box that requires both a bank key and a customer key to gain access. To decrypt protected content, you must use both the key in Microsoft Azure and the key that you manage.
 
 The following video shows how Double Key Encryption works to secure your content.
+
+> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
 
 If your organizations have any of the following requirements, you can use DKE to help secure your content:
 
 - You want to ensure that *only you* can ever decrypt protected content, under all circumstances.
 - You don't want Microsoft to have access to protected data on its own.
-- You have regulatory requirements to hold keys within a geographical boundary. All customer-held keys for data encryption and decryption are maintained in your data center.
-
-> [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+- You have regulatory requirements to hold keys within a geographical boundary. All of the keys that you hold for data encryption and decryption are maintained in your data center.
 
 ## System and licensing requirements for DKE
 
@@ -526,9 +524,7 @@ Your DKE key store is now registered. Continue by [creating labels using DKE](#c
 
 ## Create labels using DKE
 
-Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center and apply double key encryption to those labels.
-
-In the sensitivity label creation UI, select **Use Double Key Encryption** and enter the endpoint URL for your key.
+Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center to apply encryption as you would otherwise. For the encryption settings that you apply now, select **Use Double Key Encryption** and enter the endpoint URL for your key.
 
 For example:
 
