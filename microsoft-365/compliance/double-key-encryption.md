@@ -202,7 +202,7 @@ This image shows the **appsettings.json** file correctly formatted for email aut
 
 1. Open the **appsettings.json** file and locate the `AuthorizedRoles` setting.
 
-2. Add the ActiveDirectory group names you want to authorize. Separate multiple email addresses with double quotes and commas. For example:
+2. Add the Active Directory group names you want to authorize. Separate multiple group names with double quotes and commas. For example:
 
    ```json
    "AuthorizedRoles": ["group1", "group2", "group3"]
@@ -211,36 +211,29 @@ This image shows the **appsettings.json** file correctly formatted for email aut
 3. Locate the `LDAPPath` setting and add the LDAP domain. For example:
 
    ```json
-   "LDAPPath": ""
+   "LDAPPath": "contoso.com"
    ```
 
 4. Locate the `AuthorizedEmailAddress` setting and delete the entire line.
 
-This image shows the **appsettings.json** file correctly formatted for email authorization.
+This image shows the **appsettings.json** file correctly formatted for role authorization.
 
    :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.json file showing role authorization method":::
 
 #### Tenant and key settings
 
-DKE tenant and key settings are located in the **appsettings.json** file and the **startup.cs** file.
+DKE tenant and key settings are located in the **appsettings.json** file.
 
 In the **appsettings.json** file, modify the following values:
 
-- **ValidIssuers**. Replace `<tenantid>` with your tenant GUID.
-- **JwtAudience**. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
+- `ValidIssuers`. Replace `<tenantid>` with your tenant GUID.
+- `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
 
   > [!IMPORTANT]
   > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5000** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
 
-- **LDAPPath**. Set the value as follows:
-
-  - If you're using role authorization, enter the LDAP domain.
-  - If you're using email authorization, leave this value empty.
-
-   For more information, see [Key access settings](#key-access-settings).
-
-- **TestKeys:Name**. Enter a name for your key. Example: **TestKey1**
-- **TestKeys:Id**. Create a GUID and enter it as the **TestKeys:ID** value. For example, **DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE**. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
+- `TestKeys:Name`. Enter a name for your key. For example: `TestKey1`
+- `TestKeys:Id`. Create a GUID and enter it as the `TestKeys:ID` value. For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
 
 ### Generate test keys
 
