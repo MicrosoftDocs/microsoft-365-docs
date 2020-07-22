@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: tracyp
 author: MSFTTracyP
-ms.date: 12/12/2019
+ms.date:
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -24,6 +24,8 @@ description: "What are best practices for Exchange Online Protection (EOP) and A
 
 Although we empower security administrators to customize their security settings, there are two security levels in EOP and Office 365 ATP that we recommend: **Standard** and **Strict**. Each customer's environment and needs are different, but we believe that these levels of mail filtering configurations will help prevent unwanted mail from reaching your employees' inbox in most situations.
 
+To automatically apply the Standard or Strict settings to users, see [Preset security policies in EOP and Office 365 ATP](preset-security-policies.md).
+
 > [!IMPORTANT]
 > The junk email rule needs to be enabled on a mailbox in order for filtering to work properly. It's enabled by default, but you should check it if filtering does not seem to be working. For more information, see [Configure junk email settings on Exchange Online mailboxes in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
@@ -40,7 +42,7 @@ Anti-spam, anti-malware, and anti-phishing are features of EOP that can be confi
 
 To create and configure anti-spam policies, see [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Spam** detection action <br/><br/> _SpamAction_|**Move message to Junk Email folder** <br/><br/> `MoveToJmf`|**Quarantine message** <br/><br/> `Quarantine`||
 |**High confidence spam** detection action <br/><br/> _HighConfidenceSpamAction_|**Quarantine message** <br/><br/> `Quarantine`|**Quarantine message** <br/><br/> `Quarantine`||
@@ -65,7 +67,7 @@ There are several other Advanced Spam Filter (ASF) settings in anti-spam policie
 
 We recommend that you turn these ASF settings **Off** for both **Standard** and **Strict** levels. For more information about ASF settings, see [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
-| Security feature name | Comment |
+|Security feature name|Comment|
 |---|---|
 |**Image links to remote sites** (_IncreaseScoreWithImageLinks_)||
 |**Numeric IP address in URL** (_IncreaseScoreWithNumericIps_)||
@@ -90,7 +92,7 @@ To create and configure outbound spam policies, see [Configure outbound spam fil
 
 For more information about the default sending limits in the service, see [Sending limits](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1)
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Maximum number of recipients per user: External hourly limit** <br/><br/> _RecipientLimitExternalPerHour_|500|400||
 |**Maximum number of recipients per user: Internal hourly limit** <br/><br/> _RecipientLimitInternalPerHour_|1000|800||
@@ -102,7 +104,7 @@ For more information about the default sending limits in the service, see [Sendi
 
 To create and configure anti-malware policies, see [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Do you want to notify recipients if their messages are quarantined?** <br/><br/> _Action_|No <br/><br/> _DeleteMessage_|No <br/><br/> _DeleteMessage_|If malware is detected in an email attachment, the message is quarantined and can be released only by an admin.|
 |**Common Attachment Types Filter** <br/><br/> _EnableFileFilter_|On <br/><br/> `$true`|On <br/><br/> `$true`|This setting quarantines messages that contain executable attachments based on file type, regardless of the attachment content.|
@@ -115,7 +117,7 @@ To create and configure anti-malware policies, see [Configure anti-malware polic
 
 For more information about these settings, see [Spoof settings](set-up-anti-phishing-policies.md#spoof-settings). To configure these settings, see [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
@@ -141,7 +143,7 @@ EOP customers get basic anti-phishing as previously described, but Office 365 AT
 
 For more information about these settings, see [Impersonation settings in ATP anti-phishing policies](set-up-anti-phishing-policies.md#impersonation-settings-in-atp-anti-phishing-policies). To configure these settings, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |Protected users: **Add users to protect** <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|On <br/><br/> `$true` <br/><br/> \<list of users\>|On <br/><br/> `$true` <br/><br/> \<list of users\>|Depends on your organization, but we recommend adding users in key roles. Internally, these might be your CEO, CFO, and other senior leaders. Externally, these could include council members or your board of directors.|
 |Protected domains: **Automatically include the domains I own** <br/><br/> _EnableOrganizationDomainsProtection_|On <br/><br/> `$true`|On <br/><br/> `$true`||
@@ -162,7 +164,7 @@ For more information about these settings, see [Impersonation settings in ATP an
 
 Note that these are the same settings that are available in [anti-spam policy settings in EOP](#eop-anti-spam-policy-settings).
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Enable anti-spoofing protection** <br/><br/> _EnableAntispoofEnforcement_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Enable Unauthenticated Sender** <br/><br/> _EnableUnauthenticatedSender_|On <br/><br/> `$true`|On <br/><br/> `$true`|Adds a question mark (?) to the sender's photo in Outlook for unidentified spoofed senders. For more information, see [Spoof settings in anti-phishing policies](set-up-anti-phishing-policies.md).|
@@ -173,7 +175,7 @@ Note that these are the same settings that are available in [anti-spam policy se
 
 For more information about this setting, see [Advanced phishing thresholds in ATP anti-phishing policies](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-atp-anti-phishing-policies). To configure this setting, see [Configure ATP anti-phishing policies](configure-atp-anti-phishing-policies.md).
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Advanced phishing thresholds** <br/><br/> _PhishThresholdLevel_|**2 - Aggressive** <br/><br/> `2`|**3 - More aggressive** <br/><br/> `3`||
 
@@ -185,7 +187,7 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 
 **Note**: In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office 365 Apps, Office for iOS and Android.|
 |**Do not track when users click safe links** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`||
@@ -196,7 +198,7 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 
 **Note**: In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicycmdlet cmdlets for these settings.
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Select the action for unknown potentially malicious URLs in messages** <br/><br/> _IsEnabled_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Select the action for unknown or potentially malicious URLs within Microsoft Teams** <br/><br/> _EnableSafeLinksForTeams_|On <br/><br/> `$true`|On <br/><br/> `$true`||
@@ -215,7 +217,7 @@ To configure these settings, see [Set up Office 365 ATP Safe Attachments policie
 
 **Note**: In PowerShell, you use the [Set-AtpPolicyForO365](https://docs.microsoft.com/powershell/module/exchange/set-atppolicyforo365) cmdlet for these settings.
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Turn on ATP for SharePoint, OneDrive, and Microsoft Teams** <br/><br/> _EnableATPForSPOTeamsODB_|On <br/><br/> `$true`|On <br/><br/> `$true`||
 |**Turn on Safe Documents for Office clients** <bt/><br/> _EnableSafeDocs_|On <br/><br/> `$true`|On <br/><br/> `$true`||This setting is only available with Microsoft 365 E5 or Microsoft 365 E5 Security licenses. For more information, see [Safe Documents in Office 365 Advanced Threat Protection](safe-docs.md).|
@@ -226,7 +228,7 @@ To configure these settings, see [Set up Office 365 ATP Safe Attachments policie
 
 **Note**: In PowerShell, you use the [New-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safeattachmentpolicy) and [Set-SafeAttachmentPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy) cmdlets for these settings.
 
-| Security feature name | Standard | Strict | Comment |
+|Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
 |**Safe Attachments unknown malware response** <br/><br/> _Action_|Block <br/><br/> `Block`|Block <br/><br/> `Block`||
 |**Redirect attachment on detection** : **Enable redirect** <br/><br/> _Redirect_ <br/><br/> _RedirectAddress_|On and specify an email address. <br/><br/> `$true` <br/><br/> an email address|On and specify an email address. <br/><br/> `$true` <br/><br/> an email address|Redirect messages to a security admin for review.|
