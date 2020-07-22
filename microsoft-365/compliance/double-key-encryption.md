@@ -19,19 +19,19 @@ ms.collection:
 
 # Double Key Encryption (DKE)
 
+> *Release: public preview*
+
 > *Applies to: [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Service description for: [Microsoft 365 Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Double Key Encryption requires two keys, used together, to access protected content. You store one key in Microsoft Azure, and you hold the other key. This public preview version of Double Key Encryption (DKE) enables you to use the Azure Information Protection unified labeling client to protect highly sensitive content while maintaining full control of one of your keys.
+Double Key Encryption (DKE) requires two keys, used together, to access protected content. You store one key in Microsoft Azure, and you hold the other key. You use the Azure Information Protection unified labeling client to protect highly sensitive content while maintaining full control of one of your keys.
 
 Double Key Encryption supports both cloud and on-premises deployments. These deployments help to ensure that encrypted data remains opaque wherever you store the protected data.
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
-
-Double Key Encryption is similar to a safety deposit box that requires both a bank key and a customer key to gain access. To decrypt protected content, you must use both the key in Microsoft Azure and the key that you manage.
 
 The following video shows how Double Key Encryption works to secure your content.
 
@@ -45,7 +45,7 @@ If your organizations have any of the following requirements, you can use DKE to
 
 ## System and licensing requirements for DKE
 
-This public preview release of Double Key Encryption for Microsoft 365 is available as part of Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Double Key Encryption for Microsoft 365 part of Microsoft 365 E5 and Office 365 E5. If you don’t have a Microsoft 365 E5 license, you can sign up for a [trial](https://aka.ms/M365E5ComplianceTrial). For more information about these licenses, see [Microsoft 365 licensing guidance for security & compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Office Insider** To use the public preview, you must be a member of the Office Insider program. To join Office Insider, go to [https://insider.office.com](https://insider.office.com). Once you're a member, prepare your environment to deploy Office Insider builds by choosing the right deployment method for your organization. For instructions, see [Getting started on deploying Office Insider builds](https://insider.office.com/business/deploy).
 
@@ -59,15 +59,15 @@ This public preview release of Double Key Encryption for Microsoft 365 is availa
 
 ## About this public preview article
 
-There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins successfully deploy the service. If you're experienced with the common technologies, such as git, shared by the deployment methods described in this article, you can choose to use your own methods.
+There are several ways you can complete some of the steps to deploy Double Key Encryption. This article provides detailed instructions so that less experienced admins successfully deploy the service. If you're comfortable doing so, you can choose to use your own methods.
 
-For public preview, we've included step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. For public preview using Azure is a quick way to deploy that lets you get started using Double Key Encryption right away.
+This article includes step-by-step instructions on how to deploy the Double Key Encryption service to Azure. This scenario isn't something you'd likely do in production. For public preview, using Azure is a quick way to deploy DKE. Deploying to Azure lets you get started using Double Key Encryption right away.
 
-You can choose to deploy the service wherever you want, whether it's locally on your network or with another provider. You'll need to publish the key store using methods appropriate for that location.
+You can deploy the service wherever you want, either locally on your network or with another provider. You'll need to publish the key store using methods appropriate for that location.
 
 ## Deploy Double Key Encryption
 
-The example in this article and in the following video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+This article and the following video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
 The video provides a step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
 
@@ -148,13 +148,13 @@ The following instructions are intended for inexperienced git or Visual Studio C
 
 5. In the **Select Folder** dialog that appears, browse to and select a location to store the repository. At the prompt, select **Open**.
 
-    The repository is opened in Visual Studio Code, and displays the current Git branch at the bottom left. Your current branch should be **master**.
+    The repository is opened in Visual Studio Code, and displays the current Git branch at the bottom left. The branch should be **master**.
 
     For example:
 
     :::image type="content" source="../media/dke-vscode-master.png" alt-text="Visual Studio Code master branch":::
 
-6. Select the word **master,** and then select **public_preview** from the list of branches. 
+6. Select the word **master,** and then select **public_preview** from the list of branches.
 
    > [!IMPORTANT]
    > Selecting the public_preview branch ensures that you have the correct files to build the project. If you do not choose the correct branch your deployment will fail.
@@ -232,7 +232,7 @@ DKE tenant and key settings are located in the **appsettings.json** file.
 
 1. Open the **appsettings.json** file.
 
-2. Locate the `ValidIssuers` setting and replace `<tenantid>` with your tenant ID. You can locate your tenant ID by going to the Azure Portal and viewing the [tenant properties blade](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). For example:
+2. Locate the `ValidIssuers` setting and replace `<tenantid>` with your tenant ID. You can locate your tenant ID by going to the Azure portal and viewing the [tenant properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). For example:
 
    ```json
    "ValidIssuers": [
@@ -250,7 +250,7 @@ Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the mach
 - `TestKeys:Name`. Enter a name for your key. For example: `TestKey1`
 - `TestKeys:Id`. Create a GUID and enter it as the `TestKeys:ID` value. For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
 
-This image shows the **appsettings.json** file correctly formatted for tenant and key settings. The LDAPPath setting in this screenshot is configured for RoleAuthorization.
+This image shows the correct format for tenant and keys settings in **appsettings.json**. `LDAPPath` is configured for role authorization.
 
 :::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="Shows correct tenant and key settings for DKE in the appsettings.json file.":::
 
@@ -286,7 +286,7 @@ To generate keys:
 
 1. In a text editor, open **privkeynopass.pem**. Copy all of the content in the **privkeynopass.pem** file, except the first and last lines, into the `PrivatePem` section of the **appsettings.json** file.
 
-1. Remove all blank spaces and newlines in both the **PublicPem** and **PrivatePem** sections.
+1. Remove all blank spaces and newlines in both the `PublicPem` and `PrivatePem` sections.
 
     > [!IMPORTANT]
     > When you copy this content, do not delete any of the PEM data.
@@ -361,7 +361,7 @@ Your setup is now complete. Before you publish the keystore, in appsettings.json
 
 ### Publish the key store
 
-The following steps describe how to create an Azure App Service instance to host your DKE deployment, and how to publish your generated keys to Azure.
+To publish the key store, you'll create an Azure App Service instance to host your DKE deployment. Next, you'll publish your generated keys to Azure.
 
 **To create an Azure Web App instance to host your DKE deployment**
 
@@ -478,9 +478,9 @@ To register your key store:
 
 6. Select **Add a platform**.
  
-7. On the **Configure platforms** popup select **Web**.
+7. On the **Configure platforms** popup, select **Web**.
  
-8. Under **Redirect URIs** enter the URI of your double key encryption service. Enter the App Service URL, including both the hostname and domain.
+8. Under **Redirect URIs**, enter the URI of your double key encryption service. Enter the App Service URL, including both the hostname and domain.
 
     For example: https://mycustomerkeystoretest.com
 
@@ -488,7 +488,7 @@ To register your key store:
     - If you're testing locally with Visual Studio, use **https://localhost:5001**.
     - In all cases, the scheme must be **https**.
 
-    Ensure the hostname exactly matches your App Service host name. You may have changed it to localhost to troubleshoot the build. In appsettings.json, this is the hostname you identified as the value for the JwtAudience setting.
+    Ensure the hostname exactly matches your App Service host name. You may have changed it to `localhost` to troubleshoot the build. In **appsettings.json**, this value is the hostname you set for `JwtAudience`.
 
 6. Under **Implicit grant**, select the **ID tokens** checkbox.
 
@@ -524,7 +524,7 @@ Your DKE key store is now registered. Continue by [creating labels using DKE](#c
 
 ## Create labels using DKE
 
-Once you've registered your key store, set up sensitivity labels in the Microsoft 365 compliance center to apply encryption as you would otherwise. For the encryption settings that you apply now, select **Use Double Key Encryption** and enter the endpoint URL for your key.
+In the Microsoft 365 compliance center, create a new sensitivity label and apply encryption as you would otherwise. Select **Use Double Key Encryption** and enter the endpoint URL for your key.
 
 For example:
 
