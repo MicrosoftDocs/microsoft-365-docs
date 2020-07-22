@@ -80,12 +80,11 @@ Before you begin technical planning, determine whether you want to use FastTrack
 
 If you are doing your own planning, or in conjunction with FastTrack, you need to determine if your network and organization are ready for SharePoint. It is especially important that you meet the [exit criteria for networking](networking-exit-criteria.md) in your foundation infrastructure, with special attention to Internet bandwidth, throughput, and traffic delays to maximize performance for the additional traffic for SharePoint-based documents.
 
-Use [Migrate to SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) to prepare for your SharePoint rollout: 
+Use [Migrate to SharePoint](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) to prepare for your SharePoint rollout.
 
 For a better understanding of security in SharePoint, review the following resources:
-
--     [How SharePoint and OneDrive safeguard your data in the cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
--     [Data Encryption in OneDrive and SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
+- [How SharePoint and OneDrive safeguard your data in the cloud](https://docs.microsoft.com/sharepoint/safeguarding-your-data)
+- [Data Encryption in OneDrive and SharePoint](https://docs.microsoft.com/microsoft-365/compliance/data-encryption-in-odb-and-spo)
 
 #### Result
 

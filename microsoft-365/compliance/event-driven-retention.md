@@ -1,5 +1,5 @@
 ---
-title: Overview of event-driven retention
+title: Start retention when an event occurs
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -22,7 +22,7 @@ ms.custom:
 description: Typically part of a records management solution, you can configure a retention label to start the retention period based on an event that you identify.
 ---
 
-# Overview of event-driven retention
+# Start retention when an event occurs
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
@@ -39,12 +39,13 @@ Examples for using event-driven retention:
 Event-driven retention is typically used as part of a records-management process. This means that:
   
 - Labels based on events also usually classify content as a record. For more information, see [Learn about records](records.md).
-    
+
 - A document that's been classified as a record but whose event trigger has not yet happened is retained indefinitely (records can't be permanently deleted), until an event triggers that document's retention period.
     
 - Retention labels based on events usually trigger a disposition review at the end of the retention period, so that a records manager can manually review and dispose of the content. For more information, see [Disposition of content](disposition.md).
     
-A retention label based on an event has the same capabilities as any retention label in Microsoft 365. For more information, see [Learn about retention labels](labels.md).
+
+A label based on an event has the same capabilities as any retention label in Microsoft  365. For more information, see [Learn about retention policies and retention labels](retention.md).
 
 ## Understanding the relationship between event types, labels, events, and asset IDs
 
@@ -100,17 +101,22 @@ Event-driven retention requires retention settings that:
 In the label settings, after you choose the option to base the label on an **event**, you'll see the option to **Choose an event type**. An event type is simply a general description of an event that you want to associate a label with.
   
 For example, if you create an event type named Product Lifetime, you'll create event-based retention labels with names that describe what types of content you want the labels to be applied to, such as "Product development files" or "Product business decision records".
-  
+
+Select one of the built-in event types, or create your own and then select it.
+
 After you choose an event type and save the retention label, the event type cannot be changed.
   
 ![Options to create or choose an event type](../media/8b7afe79-72cb-462e-81d4-b5ddbe899dbc.png)
   
 ### Step 3: Publish or auto-apply the event-based retention labels
 
-Just like any retention label, you need to [publish or auto-apply](create-retention-labels.md) an event-based label, so that it's manually or automatically applied to content.
+Just like any retention label, you need to publish or auto-apply an event-based label, for it to be manually or automatically applied to content:
+- [Create retention labels and apply them in apps](create-apply-retention-labels.md)
+- [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
+
 
 > [!NOTE]
-> If you select an event-driven retention label from **Records Management** > **File plan** tab or **Data governance** > **Labels** tab, the **Auto-apply a label** button is not available.
+> If you select an event-based retention label from **Records Management** > **File plan** tab or **Data governance** > **Labels** tab, the **Auto-apply a label** button is not available.
 > 
 > Instead of this button, use the **Auto-apply a label** option above the list of labels or policies from one of the following locations:
 > - **Records management** > **Label policies** tab
@@ -121,7 +127,7 @@ Just like any retention label, you need to [publish or auto-apply](create-retent
 
 ### Step 4: Enter an asset ID
 
-After an event-driven label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
+After an event-based label is applied to content, you can enter an asset ID for each item. For example, your organization might use:
   
 - Product codes that you can use to retain content for only a specific product.
     
@@ -129,13 +135,13 @@ After an event-driven label is applied to content, you can enter an asset ID for
     
 - Employee IDs that you can use to retain content for only a specific person.
     
-Asset ID is simply another document property in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 that follows. The important point is that your organization must use some property:value combination in the document properties to associate that item with an event type.
+Asset ID is simply another document property that's available in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 that follows. The important point is that you must use some *property:value* combination in the document properties to associate that item with an event type.
   
 ![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
 ### Step 5: Create an event
 
-When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft 365 compliance center and create an event. You need to manually trigger an event by creating it.
+When a particular instance of that event type occurs, such as a product reaches its end of life, go to the **Records management** > **Events** page in the Microsoft 365 compliance center and create an event. You trigger an event by creating it.
   
 ### Step 6: Choose the same event type used by the label in step 2
 
@@ -145,28 +151,27 @@ When you create the event, choose the same event type used by the retention labe
   
 ### Step 7: Enter keywords or an asset ID
 
-Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified property:value pair. If an asset ID is not entered, **all content** with labels of that event type get the same retention date applied to them. 
+Now you narrow the scope of the content by specifying asset IDs for SharePoint and OneDrive content, or keywords for Exchange content. For asset IDs, retention will be enforced only on content with the specified *property:value* pair. If an asset ID is not entered, all content with labels of that event type get the same retention date applied to them.
+
+For example: If you're using the Asset ID property, enter `ComplianceAssetID:<value>` in the box for asset IDs shown below.
   
-Asset ID is simply another document property in SharePoint and OneDrive. If you're using the Asset ID property, you would enter `ComplianceAssetID:<value>` in the box for asset IDs shown below.
+Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter `ProductID:XYZ` in the box for asset IDs shown in the following picture.
   
-Your organization might have applied other properties and IDs to the documents related to this event type. For example, if you need to detect a specific product's records, the ID might be a combination of your custom property ProductID and the value "XYZ". In this case, you'd enter `ProductID:XYZ` in the box for asset IDs shown below.
+For Exchange items, use keywords. You can use a query by using search operators such as AND, OR, and NOT. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
-For Exchange items, you can include keywords. You can refine your query by using search operators like AND, OR, and NOT. For more information on operators, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
-  
-Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords. Like any retention label, this synchronization can take up to seven days.
+Finally, choose the date when the event occurred; this date is used as the start of the retention period. After you create an event, that event date is synchronized to all the content with a retention label of that event type, asset ID, and keywords. As with any retention label, this synchronization can take up to seven days.
   
 ![Event settings page](../media/40d3c9db-f624-49a5-b38a-d16bcce20231.png)
 
-> [!NOTE]
-> After creating an event, the retention settings take effect for the content that's already labeled and indexed. If the retention label is added to new content after the event is created, you must create a new event with the same details.
+After creating an event, the retention settings take effect for the content that's already labeled and indexed. If the retention label is added to new content after the event is created, you must create a new event with the same details.
 
-Deleting an event doesn't cancel the retention settings that are now in effect for the labeled content that's already labeled. To do that, create a new event with the same details, but leave the date blank. 
+Deleting an event doesn't cancel the retention settings that are now in effect for the content that's already labeled. To do that, create a new event with the same details, but leave the date blank. 
 
 ## Use Content Search to find all content with a specific label or asset ID
 
 After retention labels are assigned to content, you can use content search to find all content that's classified with a specific retention label or that contains a specific asset ID:
   
-- To find all content with a specific retention label, choose the **Compliance label** condition, and then enter the complete label name or part of the label name and use a wildcard. 
+- To find all content with a specific retention label, choose the **Retention label** condition, and then enter the complete label name or part of the label name and use a wildcard. 
     
 - To find all content with a specific asset ID, enter the **ComplianceAssetID** property and a value, using the format `ComplianceAssetID:<value>`. 
     
@@ -182,7 +187,7 @@ For more information, see [Give users access to the Office 365 Security &amp; Co
 
 The Microsoft 365 compliance center lets you create events manually and doesn't support automatically triggering an event when it occurs. However, you can use a Rest API to trigger events automatically. For more information, see [Automate event-based retention](automate-event-driven-retention.md).
 
-You can also use a PowerShell script to automate event-based retention from your business applications. The PowerShell cmdlets available for event-driven retention:
+You can also use a PowerShell script to automate event-based retention from your business applications. The PowerShell cmdlets available for event-based retention:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     

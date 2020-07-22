@@ -20,8 +20,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
-description: "Learn about unindexed items in Exchange and SharePoint that you can include in a Content Search run via the Security & Compliance Center.
-"
+description: "Learn about unindexed items in Exchange and SharePoint that you can include in a Content Search run via the Security & Compliance Center."
 ---
 
 # Partially indexed items in Content Search

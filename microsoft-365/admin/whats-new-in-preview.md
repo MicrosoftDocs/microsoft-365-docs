@@ -346,7 +346,7 @@ There have been a lot of changes for Roles in the admin center since we started 
 
 - **Favorites** - You can add a star to your favorite or most-used roles, so that you can easily find them by sorting the column or creating a filter.
 - **Active users** > **Manage roles** - This has been updated to align with the changes in Roles. As with the Roles list, we've scoped the default list of roles to the most useful, but you can see all roles by expanding **Show all by category**.
-- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md#azure-ad-roles-available-in-the-microsoft-365-admin-center) role!
+- **Global reader role** - You asked for it! You got it! The [Global reader](add-users/about-admin-roles.md) role!
 
 ### Report an issue
 

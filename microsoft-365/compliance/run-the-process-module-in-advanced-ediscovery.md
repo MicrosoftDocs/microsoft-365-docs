@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: "Learn the guidelines for preparing case files of data for analysis with Advanced eDiscovery. 
-"
+description: "Learn the guidelines for preparing case files of data for analysis with Advanced eDiscovery."
 ---
 
 # Run the Process module in Advanced eDiscovery (classic)

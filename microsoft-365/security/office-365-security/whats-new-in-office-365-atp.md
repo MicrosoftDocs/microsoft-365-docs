@@ -30,6 +30,10 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## July/August 2020 
+
+- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
 ## March/April 2020
 
 - The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.
@@ -54,6 +58,11 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 - [Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
 
 - [Use Campaign Views in Office 365 ATP (**preview**)](campaigns.md)
+
+## July 2020 
+ 
+- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+
 
 ## November 2019
 
@@ -89,4 +98,4 @@ Did you know that Office 365 ATP is available in two plans? [Learn more about wh
 
 [Office 365 ATP Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+
