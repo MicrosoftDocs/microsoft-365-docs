@@ -224,9 +224,18 @@ This image shows the **appsettings.json** file correctly formatted for role auth
 
 DKE tenant and key settings are located in the **appsettings.json** file.
 
-In the **appsettings.json** file, modify the following values:
+**To configure tenant and key settings for DKE**
 
-Under `ValidIssuers`, replace `<tenantid>` with your tenant ID. You can locate your tenant ID by going to the Azure Portal and viewing the [tenant properties blade](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties).
+1. Open the **appsettings.json** file.
+
+2. Locate the `ValidIssuers` setting and replace `<tenantid>` with your tenant ID. You can locate your tenant ID by going to the Azure Portal and viewing the [tenant properties blade](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties). For example:
+
+   ```json
+   "ValidIssuers": [
+     "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
+   ]
+   ```
+
 - `JwtAudience`. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
 
   > [!IMPORTANT]
@@ -234,6 +243,10 @@ Under `ValidIssuers`, replace `<tenantid>` with your tenant ID. You can locate y
 
 - `TestKeys:Name`. Enter a name for your key. For example: `TestKey1`
 - `TestKeys:Id`. Create a GUID and enter it as the `TestKeys:ID` value. For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
+
+This image shows the **appsettings.json** file correctly formatted for tenant and key settings. The LDAPPath setting in this screenshot is configured for RoleAuthorization.
+
+:::image type="content" source="../media/dke-appsettingsjson-tenantkeysettings.png" alt-text="Shows correct tenant and key settings for DKE in the appsettings.json file.":::
 
 ### Generate test keys
 
