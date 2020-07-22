@@ -71,7 +71,6 @@ The following limits apply to Microsoft 365 Groups:
 |Groups a user can create|250|
 |Groups an admin can create|Up to default tenant limit of 500K|
 |Number of members|More than 1,000, though only 1,000 can access the Group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in very large groups in Outlook.|
-|Number of Groups a user can be a member of|1,000|
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
