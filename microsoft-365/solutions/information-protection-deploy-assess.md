@@ -5,7 +5,7 @@ author: brendacarter
 f1.keywords:
 - NOCSH
 manager: laurawi
-ms.date: 06/09/2020
+ms.date: 07/13/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -94,6 +94,8 @@ To address data privacy regulations, you can’t rely on general notions of wher
 
 If you have not already assessed your overall readiness and risk associated with data privacy regulations, use the following 3-step framework to get started. 
 
+![Steps to assess your overall readiness and risk associated with data privacy regulations](../media/information-protection-deploy-assess/information-protection-deploy-assess-grid.png)
+
 >[!Note]
 >This article and its content are not meant to take the place of legal advisory services. It just provides some basic guidance and links to tools that may be of assistance in the early stages of your assessment.
 >
@@ -128,7 +130,7 @@ It's also important to think about the following common data privacy compliance 
 
 ### Employee data required to carry out day-to-day business functions
 
-Organizations by nature need to collect data on employees for electronic identity and HR purposes, subject to what they agree to in their employee agreements. As long as a person works for a company, this is typically not an issue. The organization may want to put mechanisms in place to prevent malicious actors from exfiltrating or leaking employee personal data. 
+Organizations by nature need to collect data on employees for electronic identity and HR purposes, subject to what they agree to in their employee agreements. As long as a person works for a company, this is typically not an issue. The organization may want to put mechanisms in place to prevent malicious actors from exfiltration or leaking employee personal data. 
 
 If a person leaves a company, organizations typically have processes, procedures, and retention and deletion schedules for removing user accounts, decommissioning mailboxes and personal drives, and changing the employee status in things like human resources systems. For situations where litigation is involved, an employee or another party to a legal investigation may have valid reasons for obtaining information about personal data stored in the organization's systems. On some occasions, that party may request that such data be removed or anonymized. 
 
@@ -146,7 +148,7 @@ Typically, contracts with external customers, partners, and the other entities w
 
 ### Data the organization has about consumers who provide information to online services that the organization manages in the B2C scenario
 
-This category is the one most people think about for data privacy, due to many public instances of customer data leakage. This can be intentional, such as a third party under contract to the provider, or unintentional, such as exfiltrated by a malicious actor. Consumer data protection is one of the primary reasons the EU and others enacted these regulations. Data privacy regulations like GDPR and CCPA require you to do planning for:
+This category is the one most people think about for data privacy, due to many public instances of customer data leakage. This can be intentional, such as a third party under contract to the provider, or unintentional, such as exfiltration by a malicious actor. Consumer data protection is one of the primary reasons the EU and others enacted these regulations. Data privacy regulations like GDPR and CCPA require you to do planning for:
 
 - [Action plans](../compliance/gdpr-action-plan.md) and [accountability readiness checklists](../compliance/gdpr-arc-office365.md)
 - [Data Protection Impact Assessments](../compliance/gdpr-data-protection-impact-assessments.md)
@@ -173,19 +175,19 @@ Organizations subject to other data privacy regulations, such as CCPA in the Uni
 
 GDPR assessment consists of these sections:
 
-| | |
+| Section | Description |
 |:-------|:-----|
 | Governance | <ol><li>Does your privacy policy explicitly state what data information is being processed? </li><li>Do you regularly run Privacy Impact Assessments (PIAs)? </li><li> Do you use a tool to manage personal information (PI)? </li><li> Do you have legal authority to conduct business using PI data on any given individual? Do you track consent for data? </li><li> Do you track, implement, and manage audit controls? Do you monitor for data leaks? </li></ol>|
-| Deletion & Notification | <ol><li>Do you give explicit instructions on how users' data can be accessed? </li><li> Do you have documented processes in place for handling opt out consent? </li><li>	Do you have an Automated Deletion process for data? </li><li>	Do you have a process to validate identity when engaging with a customer? </li></ol>|
-| Risk Mitigation and Information Security | <ol><li>Do you use tools to scan unstructured data? </li><li>Are all servers up to date, and do you leverage firewalls to protect them? </li><li>Do you run regular backups of your servers? </li><li>Do you actively monitor for data leaks? </li><li>Do you encrypt your data at rest and in transmission? </li></ol>|
-| Policy Management | <ol><li>How do you manage your Binding Corporate Rules (BCRs)? </li><li>Do you track consent for data? </li><li> On a scale of 1 to 5, 5 being completely covered, do your contracts cover data classifications and handling requirements? </li><li>Do you have and regularly test an incident response plan? </li><li>What policy do you use to manage access? </li></ol>|
+| Deletion and notification | <ol><li>Do you give explicit instructions on how users' data can be accessed? </li><li> Do you have documented processes in place for handling opt out consent? </li><li>	Do you have an Automated Deletion process for data? </li><li>	Do you have a process to validate identity when engaging with a customer? </li></ol>|
+| Risk mitigation and information security | <ol><li>Do you use tools to scan unstructured data? </li><li>Are all servers up to date, and do you leverage firewalls to protect them? </li><li>Do you run regular backups of your servers? </li><li>Do you actively monitor for data leaks? </li><li>Do you encrypt your data at rest and in transmission? </li></ol>|
+| Policy management | <ol><li>How do you manage your Binding Corporate Rules (BCRs)? </li><li>Do you track consent for data? </li><li> On a scale of 1 to 5, 5 being completely covered, do your contracts cover data classifications and handling requirements? </li><li>Do you have and regularly test an incident response plan? </li><li>What policy do you use to manage access? </li></ol>|
 |||
  
 ## Step 3: Identify sensitive information types that occur in your Microsoft 365 environment. 
 
 This step involves identification of particular sensitive information types that are subject to specific regulatory controls, as well as the occurrence of them in your Microsoft 365 environment. 
 
-Finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, Advanced eDiscovery DLP, and auditing. 
+Finding content in your environment containing personal can be a formidable task, formerly involving a combination of using Compliance Search, eDiscovery, Advanced eDiscovery, DLP, and auditing. 
 
 With the new **Data Classification** solution in the Microsoft Compliance admin center, this has become much easier with the [Content Explorer](../compliance/data-classification-content-explorer.md) capability, which works with either built-in or custom sensitive information types, including those related to personal data.
  

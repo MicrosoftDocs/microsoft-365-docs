@@ -42,7 +42,7 @@ Guest access in groups is often used as part of a broader scenario that includes
 
 If you want to enable or disable guest access in groups, you can do so in the Microsoft 365 admin center.
 
-1. In the admin center, go to the **Settings** \> **Org settings** and on the **Services** tab, select **Microsoft 365 groups**.
+1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the **Services** tab, select **Microsoft 365 groups**.
   
 2. On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
 
@@ -109,7 +109,7 @@ For more information, see [Allow or block invitations to B2B users from specific
 
 ## Add guests to the global address list
 
-By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list.
+By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list. Be sure the guest is visible in the Exchange Online admin center. New guests may take a short time to appear there after they're added.
 
 Find the guest user's ObjectID by running:
 

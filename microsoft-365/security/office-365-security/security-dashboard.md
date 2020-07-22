@@ -15,12 +15,14 @@ search.appverid:
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
+ms.custom:
+- seo-marvel-apr2020
 description: "Use the new Security Dashboard to review Office 365 Threat Protection Status, and view and act on security alerts."
 ---
 
 # Security Dashboard
 
-## Overview
+## Basic functions and how to open Security Dashboard
 
 The [Security & Compliance Center](../../compliance/go-to-the-securitycompliance-center.md) enables your organization to manage data protection and compliance. Assuming you have the necessary permissions, the Security Dashboard enables you to review your Threat Protection Status, as well as view and act on security alerts.
 

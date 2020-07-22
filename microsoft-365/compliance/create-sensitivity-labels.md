@@ -48,17 +48,29 @@ The global admin for your organization has full permissions to create and manage
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
-2. On the **Labels** tab, select **+ Create a label** to start the **New sensitivity label** wizard.
-
-3. Follow the prompts for the label settings.
+2. On the **Labels** page, select **+ Create a label** to start the New sensitivity label wizard. 
     
-    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information.
+    For example, from the Microsoft 365 compliance center:
+    
+    ![Create a sensitivity label](../media/create-sensitivity-label-full.png)
+    
+    Note: By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
+
+3. Follow the prompts in the wizard for the label settings.
+    
+    For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the wizard for individual settings.
 
 4. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
 
 5. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
 
-To edit an existing label, select it, and then select **Edit label**. This starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3. 
+To edit an existing label, select it, and then select the **Edit label** button:
+
+![Edit a sensitivity label](../media/edit-sensitivity-label-full.png)
+
+This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3.
+
+Don't delete a label unless you understand the impact for users. For more information, see the [Removing and deleting labels](#removing-and-deleting-labels) section. 
 
 > [!NOTE]
 > If you edit a label that's already published by using a label policy, no extra steps are needed when you finish the wizard. For example, you don't need to add it to a new label policy for the changes to become available to the same users. However, allow up to 24 hours for the changes to replicate to users and services.
@@ -120,20 +132,24 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     - Security & Compliance Center:
         - **Classification** > **Sensitivity labels**
 
-2. Select the **Label policies** tab.
-
-3. Select **Publish labels** to start the **Create policy wizard**.
-
-4. Select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
+2. Select the **Label policies** tab, and then **Publish labels** to start the Create policy wizard:
     
-    > [!NOTE]
+    For example, from the Microsoft 365 compliance center:
+        
+    ![Publish labels](../media/publish-sensitivity-labels-full.png)
+    
+    Note: By default, tenants don't have any label policies and you must create them. 
+
+3. In the wizard, select **Choose sensitivity labels to publish**. Select the labels that you want to make available in apps and to services, and then select **Add**.
+    
+    > [!IMPORTANT]
     > If you select a sublabel, make sure you also select its parent label.
     
-5. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
+4. Review the selected labels and to make any changes, select **Edit**. Otherwise, select **Next**.
 
-6. Follow the prompts to configure the policy settings.
+5. Follow the prompts to configure the policy settings.
     
-    For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information.
+    For more information about these settings, see [What label policies can do](sensitivity-labels.md#what-label-policies-can-do) from the overview information and use the help in the wizard for individual settings.
 
 7. Repeat these steps if you need different policy settings for different users or locations. For example, you want additional labels for a group of users, or a different default label for a subset of users.
 
@@ -141,9 +157,13 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 Completing the wizard automatically publishes the label policy. To make changes to a published policy, simply edit it. There is no specific publish or republish action for you to select.
 
-To edit an existing label policy, select it, and then select **Edit Policy**. This starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
+To edit an existing label policy, select it, and then select the **Edit Policy** button: 
 
-Typically, users see the labels in their Office apps within a couple of hours. However, allow up to 24 hours for your label policies and any changes to them to replicate to all users and services.
+![Edit a sensitivity label](../media/edit-sensitivity-label-policy-full.png)
+
+This button starts the **Create policy** wizard, which lets you edit which labels are included and the label settings. When you complete the wizard, any changes are automatically replicated to the selected users and services.
+
+Users see new labels in their Office apps within one hour. However, allow up to 24 hours for changes to existing labels to replicate to all users and services.
 
 ### Additional label policy settings with Security & Compliance Center PowerShell
 
@@ -169,7 +189,9 @@ In comparison, when you delete a label:
 
 - For desktop apps: The label information in the metadata remains, but because a label ID to name mapping is no longer possible, users don't see the applied label name displayed (for example, on the status bar) so users will assume the content isn't labeled. If the label applied encryption, the encryption remains and when the content is opened, uses still see the name and description of the now archived protection template.
 
-- For Office on the web: Users don't see the label name on status bar or in the **Sensitivity** column. The label information in the metadata remains only if the label didn't apply encryption. If the label applied encryption, and you've enabled [sensitivity labels for SharePoint and Onedrive](sensitivity-labels-sharepoint-onedrive-files.md), the label information in the metadata is removed and the encryption is removed. 
+- For Office on the web: Users don't see the label name on status bar or in the **Sensitivity** column. The label information in the metadata remains only if the label didn't apply encryption. If the label applied encryption, and you've enabled [sensitivity labels for SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md), the label information in the metadata is removed and the encryption is removed. 
+
+When you remove a sensitivity label from a label policy, or delete a sensitivity label, these changes can take up to one hour to replicate to all users and services.
 
 ## Next steps
 

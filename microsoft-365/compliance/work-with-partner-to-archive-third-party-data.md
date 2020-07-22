@@ -13,7 +13,9 @@ localization_priority: Normal
 search.appverid: 
 - MET150
 ms.collection: M365-security-compliance
-description: "Your organization can work with a Microsoft Partner to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer. This lets you archive data from third-party data sources so you can use Microsoft 365 compliance features such as legal hold, content search, and retention policies to manage the governance of your organization's third-party data."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to set up a custom connector to import third-party data from  data sources such as Salesforce Chatter, Yahoo Messenger, or Yammer. 
 ---
 
 # Work with a partner to archive third-party data
@@ -492,7 +494,7 @@ Here are the steps for creating and configuring a third-party data mailbox for i
     
       - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-      - [Overview of retention policies](retention-policies.md)
+      - [Learn about retention policies and retention labels](retention.md)
     
     - Enable mailbox audit logging for owner, delegate, and admin access to the third-party data mailbox; see [Enable mailbox auditing](enable-mailbox-auditing.md). This allows you to audit all activity performed by any user who has access to the third-party data mailbox.
 
@@ -506,7 +508,7 @@ The next step is to configure user mailboxes to support third-party data. Comple
     
     - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=404420)
     
-    - [Overview of retention policies](retention-policies.md)
+    - [Learn about retention policies and retention labels](retention.md)
     
     As previously stated, when you place mailboxes on hold, you can set a duration for how long to hold items from the third-party data source or you can choose to hold items indefinitely.
 

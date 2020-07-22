@@ -12,7 +12,8 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "With Customer Key, you control your organization's encryption keys and then configure Microsoft 365 to use them to encrypt your data at rest in Microsoft's data centers."
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn about how service encryption works with the customer key in Microsoft 365."
 ---
 
 # Service encryption with Customer Key

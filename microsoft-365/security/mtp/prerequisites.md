@@ -55,7 +55,7 @@ Go to Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.
 > You need to be assigned either the **Billing admin** or **Global reader** [role in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) to be able to see license information. If you encounter access problems, contact a global admin.
 
 ## Required permissions
-For the list of required roles and how access to data is regulated, read about [managing access to Microsoft Threat Protection](mtp-permissions.md).
+You must be a **global administrator** or a **security administrator** in Azure Active Directory to turn on Microsoft Threat Protection. For the list of roles required to use Microsoft Threat Protection and information on how access to data is regulated, read about [managing access to Microsoft Threat Protection](mtp-permissions.md).
 
 ## Browser requirements
 Access Microsoft Threat Protection in the Microsoft 365 security center using Microsoft Edge, Internet Explorer 11, or any HTML 5 compliant web browser.

@@ -14,14 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: "The Compliance Manager in the Microsoft Service Trust Portal provides tools to track, implement, and manage the controls to help your organization reach compliance with security and data protection industry standards (such as GDPR, ISO 27001 and 27018, and HIPAA) when measured against Microsoft cloud services, such as Office 365 and Microsoft Azure. The Compliance Manager helps the person who oversees the data protection and privacy strategy for your organization manage your compliance and risk assessment process."
+description: Learn how to use Compliance Manager in the Microsoft Service Trust Portal to satisfy data protection and regulatory requirements.
 ms.custom: seo-marvel-apr2020
 ---
 
-# Microsoft Compliance Manager (Classic)
+# Microsoft Compliance Manager (classic)
 
 > [!NOTE]
-> This documentation describes a previous version of this product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new [Microsoft Compliance Score](compliance-score.md).
+> This documentation describes a previous version of this product. Users are *strongly discouraged from using this version of Compliance Manager*. **If you're using the current preview version of Compliance Manager, refer to the [Compliance Manager (preveiw) documentation](working-with-compliance-manager.md).**
 
  *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
   
@@ -222,7 +222,7 @@ By evaluating each control using these factors, we determine the essence of the 
   
  **Threat**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**Mandatory** <br/> |**Discretionary** <br/> |
 |**Preventative** <br/> |High risk  <br/> |Medium risk  <br/> |
@@ -239,7 +239,7 @@ Threat refers to anything that poses a risk to the fundamental, universally-acce
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**Internal**<br/>||**External**<br/>||||
+|<br>|**Internal**<br/>|<br>|**External**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*Malicious*<br/>|*Accidental*<br/>|*Malicious*<br/>|*Accidental*<br/>|||
 |**Confidentiality**<br/>|(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)|

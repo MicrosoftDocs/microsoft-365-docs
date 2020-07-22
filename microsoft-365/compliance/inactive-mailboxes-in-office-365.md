@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: "Learn about retaining mailbox content for former employees by turning the mailbox into an inactive mailbox. You can do this by placing the mailbox on Litigation Hold or applying a Microsoft 365 retention policy to the mailbox and then removing the corresponding Microsoft 365 account."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to retain mailbox content for former employees by turning the mailbox into an inactive mailbox.
 ---
 
 # Overview of inactive mailboxes
@@ -43,7 +45,7 @@ In addition to Litigation Hold, using the new Microsoft 365 retention policy fea
   
 - It can be query-based so that it retains only items that match a search query.
 
-For more information about configuring retention policies, see [Overview of retention policies](retention-policies.md).
+For more information about retention policies, see [Learn about retention policies and retention labels](retention.md).
   
 If you use a retention policy to make an inactive mailbox, Microsoft 365 continues to process the retention policy on the inactive mailbox. This means if the retention policy is configured to retain and then delete content, items will be moved to the Recoverable Items folder when the retention duration expires, and then eventually purged from the inactive mailbox. If retention policy isn't configured to deleted items, then items that haven't been permanently deleted by the user (before the mailbox was made inactive) won't be moved to the Recoverable Items folder and will be retained indefinitely after the mailbox becomes inactive. 
   
@@ -68,9 +70,9 @@ For more information about eDiscovery cases and holds, see [eDiscovery cases](ed
 
 ## Inactive mailboxes and labels
 
-Labels help you classify email data in your organization for governance, and enforce retention rules based on that classification. A label can be applied to an email item either manually by users or automatically by administrators, and an email item can only have single label assigned to it. If a single email item in a user's mailbox has a label assigned to it (and it's configured to retain or retain and then delete the item) and the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. Similar to eDiscovery case holds, we don't recommend using labels to make a mailbox inactive. Instead, we recommend that you use a Litigation Hold or a retention policy. In the case of labels, you might not realize that a label has been applied to an email item and then inadvertently make an inactive mailbox when you delete the user's account. 
+Retention labels help you classify email data in your organization for governance, and enforce retention rules based on that classification. A retention label can be applied to an email item either manually by users or automatically by administrators, and an email item can only have single label assigned to it. If a single email item in a user's mailbox has a label assigned to it (and it's configured to retain or retain and then delete the item) and the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. Similar to eDiscovery case holds, we don't recommend using retention labels to make a mailbox inactive. Instead, we recommend that you use a Litigation Hold or a retention policy. In the case of retention labels, you might not realize that a retention label has been applied to an email item and then inadvertently make an inactive mailbox when you delete the user's account. 
   
-For more information about labels, see [Overview of labels in Office 365](labels.md).
+For more information about retention policies and retention labels, see [Learn about retention policies and retention labels in Office 365](retention.md).
   
 ## Inactive mailboxes and auto-expanding archives
 

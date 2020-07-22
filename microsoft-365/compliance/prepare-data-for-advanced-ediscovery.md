@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: "Learn how to use the Security &amp; Compliance Center to prepare data for analysis with Advanced eDiscovery.
-"
+description: "Learn how to use the Security &amp; Compliance Center to prepare data for analysis with Advanced eDiscovery."
 ---
 
 # Prepare data for Advanced eDiscovery (classic)

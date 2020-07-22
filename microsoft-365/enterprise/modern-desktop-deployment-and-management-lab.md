@@ -21,7 +21,7 @@ description: Learn about and where to access the Windows and Office Deployment L
 
 These labs are designed to help you plan, test and validate your deployment and management of desktops running Windows 10 Enterprise and Microsoft 365 Apps for enterprise. The labs cover the steps and tools outlined in the Desktop Deployment wheel, spanning Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot and more.
 
-This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you're currently using Windows 10 and Office 365 Plus or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
+This training is highly recommended for organizations preparing for Windows 7 end of life, and also applies if you're currently using Windows 10 and Microsoft 365 Apps for enterprise (formerly Office 365 ProPlus) or Office 2019. Additionally, as an isolated environment, the lab is ideal for exploring deployment tool updates and testing your deployment-related automation.
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -29,9 +29,9 @@ This training is highly recommended for organizations preparing for Windows 7 en
 
 The lab provides you with an automatically provisioned virtual lab environment, including domain-joined desktop clients, domain controller, Internet gateway and a fully configured Configuration Manager instance. The lab contains the latest Evaluation Versions of the following products:
 
-  - Windows 10 Enterprise
+  - NEW! Windows 10 Enterprise, Version 2004
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager
+  - NEW! Microsoft Endpoint Configuration Manager, Version 2002
   - Windows Assessment and Deployment Kit for Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -47,12 +47,13 @@ PLUS, the lab is designed to be connected to trials for:
 
 ## Step-by-step labs
 
-Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager (Version 1910). 
+Detailed lab guides take you through multiple deployment and management scenarios. The labs have been updated for the latest versions of Intune and Configuration Manager. 
 
 ### Device and App Readiness
 
   - Desktop Analytics
   - NEW! Deploy and update the new Microsoft Edge 
+  - NEW! Install and configure the Cloud Management Gateway (CMG) 
   - Internet Explorer Mode 
   - Application Guard 
 
@@ -68,6 +69,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Enterprise Managed Deployment using Configuration Manager and Microsoft Intune
   - Application deployment and management using Microsoft Intune
   - App deployment and self-service installation using Microsoft Store for Business
+  - NEW! Install Microsoft Teams 
 
 ### User File and Settings Migration
 
@@ -87,6 +89,7 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Windows Defender Exploit Guard
   - Windows Defender Application Control
   - Windows Defender Advanced Threat Protection
+  - NEW! Endpoint Security 
 
 ### OS Deployment and Feature Updates
 
@@ -100,7 +103,8 @@ Detailed lab guides take you through multiple deployment and management scenario
   - Manage Windows Updates using Group Policy
   - Servicing Windows 10 with Configuration Manager and Intune
   - Servicing Microsoft 365 Apps for enterprise with Configuration Manager
-
+  - NEW! Office updates with Configuration Manager and Intune
+  
 ### NEW! Windows Virtual Desktop
   - Windows Virtual Desktop: Prepare, Deploy, Optimize 
 
@@ -108,7 +112,7 @@ Detailed lab guides take you through multiple deployment and management scenario
 
 [Download the Windows and Office Deployment Lab Kit](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires July 5, 2020. A new version will be published prior to expiration.*
+*Please use a broad bandwidth to download this content to enhance your downloading experience and allow 30-45 minutes for automatic provisioning. The lab environment requires a minimum of 16 GB of available memory and 150 GB of free disk space. For optimal performance, 32 GB of available memory is recommended. The lab expires September 12, 2020. A new version will be published prior to expiration.*
 
 ## Additional guidance
 
