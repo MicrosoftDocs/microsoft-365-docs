@@ -176,19 +176,49 @@ Choose whether to use email or role authorization. DKE supports only one of thes
 
 - **Role authorization**. Allows your organization to authorize access to keys based on Active Directory groups, and requires that the web service can query LDAP.
 
-To set key access settings for DKE:
+**To set key access settings for DKE using email authorization**
 
-1. In the **appsettings.json** file, define only one of these settings:
+1. Open the **appsettings.json** file and locate the `AuthorizedEmailAddress` setting.
 
-   - For email authorization, locate the **AuthorizedEmailAddresses** setting. Add the email address that you want to authorize. Separate multiple email addresses with double quotes and commas. For example: **" ‘AuthorizedEmailAddresses’ ": ["email1@company.com", "email2@company.com ", email3@company.com]**
+2. Add the email address or addresses that you want to authorize. Separate multiple email addresses with double quotes and commas. For example:
 
-   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="appsettings.json file showing email authorization method":::
+   ```json
+   "AuthorizedEmailAddress": ["email1@company.com", "email2@company.com ", "email3@company.com"]
+   ```
 
-   - For role authorization, locate the **AuthorizedRoles** setting. Define with the ActiveDirectory group names you want to authorize. For example: **"AuthorizedRoles": ["group1", "group2", "group3"]**
+3. Locate the `LDAPPath` setting and remove the text `If role authorization is used then this is the LDAP path` between the double quotes. Leave the double quotes in place. When you're finished, the setting should look like this.
+
+   ```json
+   "LDAPPath": ""
+   ```
+
+4. Locate the `AuthorizedRoles` setting and delete the entire line.
+
+This image shows the **appsettings.json** file correctly formatted for email authorization.
+
+   :::image type="content" source="../media/dke-email-accesssetting.png" alt-text="The appsettings.json file showing email authorization method":::
+
+**To set key access settings for DKE using role authorization**
+
+1. Open the **appsettings.json** file and locate the `AuthorizedRoles` setting.
+
+2. Add the ActiveDirectory group names you want to authorize. Separate multiple email addresses with double quotes and commas. For example:
+
+   ```json
+   "AuthorizedRoles": ["group1", "group2", "group3"]
+   ```
+
+3. Locate the `LDAPPath` setting and add the LDAP domain. For example:
+
+   ```json
+   "LDAPPath": ""
+   ```
+
+4. Locate the `AuthorizedEmailAddress` setting and delete the entire line.
+
+This image shows the **appsettings.json** file correctly formatted for email authorization.
 
    :::image type="content" source="../media/dke-role-accesssetting.png" alt-text="appsettings.json file showing role authorization method":::
-
-2. Remove the setting that isn't relevant for your chosen authorization method.
 
 #### Tenant and key settings
 
@@ -200,7 +230,7 @@ In the **appsettings.json** file, modify the following values:
 - **JwtAudience**. Replace `<yourhostname>` with the hostname of the machine where the DKE service will run.
 
   > [!IMPORTANT]
-  > The value for JwtAudience must match the name of your host *exactly*. You may use **localhost:5000** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
+  > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5000** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
 
 - **LDAPPath**. Set the value as follows:
 
@@ -303,11 +333,13 @@ Use the following instructions to build the DKE project locally:
 
    If there are red errors, check the console output. Ensure that you completed all the previous steps correctly and the correct build versions are present.
 
-1. **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
+2. Select **Run** \> **Start Debugging** to debug the process. If you're prompted to select an environment, select **.NET core**.
 
-The .NET core debugger typically launches to **https://localhost:5001**. To view your test key, go to **https://localhost:5001**, and append a forward slash (/) and the name of your key.
+The .NET core debugger typically launches to ``https://localhost:5001`. To view your test key, go to `https://localhost:5001` and append a forward slash (/) and the name of your key. For example:
 
-For example: **https://localhost:5001/TestKey1**
+```https
+https://localhost:5001/TestKey1
+```
 
 The key should display in JSON format.
 
