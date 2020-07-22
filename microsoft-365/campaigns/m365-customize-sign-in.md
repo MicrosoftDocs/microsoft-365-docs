@@ -27,7 +27,7 @@ description: "Customize your sign-in page with a privacy and consent notice for 
 
 Your political campaign can make it easier for law enforcement agencies to file legal charges against online criminals by adding a privacy and consent notice to your sign-in page.
 
-You can customize your sign-in page with your branding, and you can also add text to help your users sign in, or to point out legal requirements or restrictions for getting access to Microsoft 365 for campaigns resources.
+You can customize your sign-in page with your branding. You can also add text to help your users sign in, or to point out legal requirements or restrictions for getting access to Microsoft 365 for campaigns resources.
 
 ## Customize the text on your sign-in page
 
