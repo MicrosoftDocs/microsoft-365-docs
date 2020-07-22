@@ -196,7 +196,7 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 
 #### Safe Links policy settings in custom policies for specific users
 
-**Note**: In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicycmdlet cmdlets for these settings.
+**Note**: In PowerShell, you use the [New-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/new-safelinkspolicy) and [Set-SafeLinksPolicy](https://docs.microsoft.com/powershell/module/exchange/set-safelinkspolicy] cmdlets for these settings.
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
