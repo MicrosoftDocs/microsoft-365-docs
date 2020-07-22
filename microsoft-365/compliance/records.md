@@ -25,7 +25,7 @@ description: "Learn about records to help you implement a records management sol
 
 Managing records in Microsoft 365 helps your organization comply with corporate policies and legal or regulatory obligations, while also reducing risk and legal liability.
 
-When content is marked as an record:
+When content is marked as a record:
 
 - The item becomes immutable, which means that it can't be modified or deleted.
 
