@@ -89,19 +89,20 @@ When you create a retention label, you have the option to use the retention labe
     
     - [Apply a retention label to content automatically](apply-retention-labels-automatically.md)
 
-When this retention label is in label policy so users can apply them:
+### Applying the configured retention label to content
 
-- For Exchange, any user with write-access to the mailbox can apply the retention label. 
-- For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply this retention label.
+When retention labels that mark content as a record are made available for users to apply them in apps:
 
-Here's what this looks like when a record label is applied to a document on a SharePoint site:
-<br/><br/>
+- For Exchange, any user with write-access to the mailbox can apply these labels. 
+- For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.
+
+Example of a document marked as record by using a retention label:
 
 ![Details pane for document tagged as a record](../media/recordversioning7.png)
 
 ## Record versioning
 
-An essential part of records management is the ability to mark a document as a record and restrict what actions can be performed on the records. At the same time, however, collaboration might be needed for people to create subsequent versions. 
+The ability to mark a document as a record and restrict actions that can be performed on the record is an essential goal for any records management solution. However, collaboration might also be needed for people to create subsequent versions.
 
 For example, you might mark a sales contract as a record, but then need to update the contract with new terms and mark the latest version as a new record while still retaining the previous record version. For these types of scenarios, SharePoint and OneDrive support *record versioning*. OneNote notebook folders don't support record versioning.
 
