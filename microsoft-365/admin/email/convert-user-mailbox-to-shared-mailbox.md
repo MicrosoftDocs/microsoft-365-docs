@@ -90,6 +90,9 @@ If the mailbox is smaller than 50GB, you can [remove the license from the user](
     
 For everything else you need to know about shared mailboxes, see [About shared mailboxes](about-shared-mailboxes.md) and [Create a shared mailbox](create-a-shared-mailbox.md).
 
+> [!NOTE]
+> Shared mailboxes don’t require a separate license. However, if you want to enable In-Place Archive or put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign an Exchange Online Plan 1 with Exchange Online Archiving or Exchange Online Plan 2 license to the mailbox.
+
 
 ## Convert the mailbox of a deleted user
 
@@ -108,6 +111,7 @@ Let's say you've deleted a user account and now you want to convert their old ma
 6. After that's done, you can remove the license from the user's mailbox. Don't delete the user's old mailbox. The shared mailbox needs it there as an anchor.
     
 7. Add members to the shared mailbox.
+
 
 ## Convert a shared mailbox back to a user's (private) mailbox
 
