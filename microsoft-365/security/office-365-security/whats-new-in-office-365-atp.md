@@ -15,7 +15,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/15/2020
+ms.date: 07/23/2020
 ms.custom: seo-marvel-apr2020
 ---
 
@@ -32,8 +32,8 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 ## July/August 2020 
 
-- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-- [Easily apply recommended settings using Preset Security Policies](preset-security-policies.md)
+- [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Easily apply recommended settings using preset security policies](preset-security-policies.md)
 
 ## March/April 2020
 
@@ -41,7 +41,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 ## January/February 2020
 
-- [General Availability of Campaign Views in Office 365 ATP](campaigns.md)
+- [General availability of Campaign Views in Office 365 ATP](campaigns.md)
 - Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
     - Delivery location and special actions
     - Directionality (inbound, outbound, or intra-org)
@@ -59,11 +59,6 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 - [Export URL click data for offline analysis](threat-explorer.md#new-features-in-threat-explorer-and-real-time-detections) (Office 365 ATP Plan 1 or Plan 2)
 
 - [Use Campaign Views in Office 365 ATP (**preview**)](campaigns.md)
-
-## July 2020 
- 
-- [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
-
 
 ## November 2019
 
