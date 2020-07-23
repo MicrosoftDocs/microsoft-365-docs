@@ -352,7 +352,7 @@ When a spam filtering verdict quarantines a message, you can configure end-user 
      > [!NOTE]
      > If we missed a notification during a previous cycle, a subsequent cycle will push the notification. This may give the appearance of multiple notifications within the same day.
 
-   - **Notification language**: Click the drop down an select an available language from the list. The default value is **Default**, which means the default language of the cloud-based organization.
+   - **Notification language**: Click the drop down an select an available language from the list. The default value is **Default**, which means English.
 
    When you're finished, click **Save**.
 
