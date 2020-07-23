@@ -315,14 +315,10 @@
           href: use-exchange-online-to-comply-with-sec-rule-17a-4.md
         - name: Create retention labels with PowerShell
           href: bulk-create-publish-labels-using-powershell.md
-        - name: Use event-based retention
-          items: 
-            - name: Start retention when an event occurs
-              href: event-driven-retention.md
-            - name: Automate event-based retention
-              href: automate-event-driven-retention.md
-            - name: Manage the lifecycle of SharePoint documents
-              href: auto-apply-retention-labels-scenario.md
+        - name: Start retention when an event occurs
+          href: event-driven-retention.md
+        - name: Manage the lifecycle of SharePoint documents
+          href: auto-apply-retention-labels-scenario.md
     - name: Dispose of data
       href: disposition.md
     - name: Manage inactive mailboxes
