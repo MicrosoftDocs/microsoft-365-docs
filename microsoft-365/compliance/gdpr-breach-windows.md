@@ -50,9 +50,9 @@ The detection processes used by Microsoft data processor service for Windows Ent
 
 | **Category**             | **Definition**                                                                                                                   |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
-| ***None***               | No information was exfiltrated, changed, deleted, or otherwise compromised. |
-| ***Privacy Breach***     | Sensitive personal data of taxpayers, employees, beneficiaries, etc. was accessed or exfiltrated. |
-| ***Proprietary Breach*** | Unclassified proprietary information, such as protected critical infrastructure information (PCII), was accessed or exfiltrated. |
+| ***None***               | No information was removed, changed, deleted, or otherwise compromised. |
+| ***Privacy Breach***     | Sensitive personal data of taxpayers, employees, beneficiaries, etc. was accessed or removed. |
+| ***Proprietary Breach*** | Unclassified proprietary information, such as protected critical infrastructure information (PCII), was accessed or removed. |
 | ***Integrity Loss***     | Sensitive or proprietary information was changed or deleted. |
 
 The Security Response Team works with Microsoft data processor service for Windows Enterprise Security Engineers and SMEs to classify the event based on factual data from the evidence. A security event may be classified as: 
@@ -68,7 +68,7 @@ Throughout the investigation, the security response team works closely with glob
 
 Microsoft verifies that customer and business risk is successfully contained, and that corrective measures are implemented. If necessary, emergency mitigation steps to resolve immediate security risks associated with the event are taken. 
 
-Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the Security Incident Response SOP or related processes are identified and implemented. Internal post-mortems for data breaches are highly confidential records not available to customers. Post-mortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of the data processor service for Windows Enterprise routine audit cycle. 
+Microsoft also completes an internal post-mortem for data breaches. As a part of this exercise, sufficiency of response and operating procedures are evaluated, and any updates that may be necessary to the Security Incident Response SOP or related processes are identified and implemented. Internal postmortems for data breaches are highly confidential records not available to customers. Postmortems may, however, be summarized and included in other customer event notifications. These reports are provided to external auditors for review as part of the data processor service for Windows Enterprise routine audit cycle. 
 
 ## Customer Notice
 
