@@ -32,7 +32,7 @@ Microsoft 365 offers several ways that your organization can prevent mailbox con
 
 - **[In-Place Hold](https://docs.microsoft.com/Exchange/security-and-compliance/create-or-remove-in-place-holds):** Holds that are applied to user mailboxes by using the In-Place eDiscovery & Hold tool in the Exchange admin center in Exchange Online.
 
-- **[Microsoft 365 retention policies](retention-policies.md):** Can be configured to retain (or retain and then delete) content in user mailboxes in Exchange Online and in the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams. You can also create a retention policy to retain Skype for Business Conversations, which are stored in user mailboxes.
+- **[Microsoft 365 retention policies](retention.md):** Can be configured to retain (or retain and then delete) content in user mailboxes in Exchange Online and in the corresponding mailbox for Microsoft 365 Groups and Microsoft Teams. You can also create a retention policy to retain Skype for Business Conversations, which are stored in user mailboxes.
 
   There are two types of Microsoft 365 retention policies that can be assigned to mailboxes.
 
@@ -42,7 +42,7 @@ Microsoft 365 offers several ways that your organization can prevent mailbox con
     
   For more information, see [Applying a retention policy to an entire organization or specific locations](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations) section .
 
-- **[Microsoft 365 retention labels](labels.md):** If a user applies a Microsoft 365 retention label (one that's configured to retain content or retain and then delete content) to *any* folder or item in their mailbox, a hold is placed on the mailbox as if the mailbox was placed on Litigation Hold or assigned to a Microsoft 365 retention policy. For more information, see the [Identifying mailboxes on hold because a retention label has been applied to a folder or item](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section in this article.
+- **[Microsoft 365 retention labels](retention.md):** If a user applies a Microsoft 365 retention label (one that's configured to retain content or retain and then delete content) to *any* folder or item in their mailbox, a hold is placed on the mailbox as if the mailbox was placed on Litigation Hold or assigned to a Microsoft 365 retention policy. For more information, see the [Identifying mailboxes on hold because a retention label has been applied to a folder or item](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) section in this article.
 
 To manage mailboxes on hold, you may have to identify the type of hold that's placed on a mailbox so that you can perform tasks such as changing the hold duration, temporarily or permanently removing the hold, or excluding a mailbox from a Microsoft 365 retention policy. In these cases, the first step is to identify the type of hold placed on the mailbox. And because multiple holds (and different types of holds) can be placed on a single mailbox, you have to identify all holds placed on a mailbox if you want to remove or change a hold.
 
@@ -96,7 +96,7 @@ The following table describes the different types of organization-wide holds and
 |Microsoft 365 retention policies applied to Exchange mailboxes, Exchange public folders, and Teams chats    |      `mbx7cfb30345d454ac0a989ab3041051209:2`   |   Organization-wide retention policies applied to Exchange mailboxes, Exchange public folders, and 1xN chats in Microsoft Teams are identified by GUIDs that start with the `mbx` prefix. Note 1xN chats are stored in the mailbox of the individual chat participants.      |
 |Microsoft 365 retention policy applied to Microsoft 365 Groups and Teams channel messages     |   `grp1a0a132ee8944501a4bb6a452ec31171:3`      |    Organization-wide retention policies applied to Microsoft 365 groups and channel messages in Microsoft Teams are identified by GUIDs that start with the `grp` prefix. Note channel messages are stored in the group mailbox that is associated with a Microsoft Team.     |
 
-For more information retention policies applied to Microsoft Teams, see the "Teams location" section [Overview of retention policies](create-retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+For more information about retention policies applied to Microsoft Teams, see [Learn about retention policies for Microsoft Teams](retention-policies-teams.md).
 
 ### Understanding the format of the InPlaceHolds value for retention policies
 
@@ -116,7 +116,7 @@ The following table defines the three possible retention actions:
 |**2**    |    Indicates that the retention policy is configured to hold items. The policy doesn't delete items after the retention period expires.     |
 |**3**     |   Indicates that the retention policy is configured to hold items and then delete them after the retention period expires.      |
 
-For more information about retention actions, see the "Retaining content for a specific period of time" section in [Overview of retention policies](create-retention-policies.md#retaining-content-for-a-specific-period-of-time).
+For more information about retention actions, see the [Retaining content for a specific period of time](create-retention-policies.md#retaining-content-for-a-specific-period-of-time) section.
    
 ## Step 2: Use the GUID to identify the hold
 
@@ -175,7 +175,7 @@ To view the value of the *ComplianceTagHoldApplied* property, run the following 
 Get-Mailbox <username> |FL ComplianceTagHoldApplied
 ```
 
-For more information about retention labels, see [Overview of Microsoft 365 retention labels](labels.md).
+For more information about retention labels, see [retention labels](retention.md#retention-labels).
 
 ## Managing mailboxes on delay hold
 

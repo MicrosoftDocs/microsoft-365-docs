@@ -33,16 +33,16 @@ This category of classification mechanisms includes finding content by:
 - Recognizing an item because it's a variation on a template [(document finger printing)](document-fingerprinting.md).
 - Using the presence of exact strings [(exact data match)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [retention policies](retention-policies.md).
+Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
 
 ## Trainable classifiers
 
 This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the positives, negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content.
 
 ### Where you can use trainable classifiers
-Both built-in classifiers and trainable classifiers are available as a condition for [auto-apply retention label policy based on a condition](labels.md#applying-a-retention-label-automatically-based-on-conditions) and [communication compliance](communication-compliance-configure.md). 
+Both built-in classifiers and trainable classifiers are available as a condition for [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and [communication compliance](communication-compliance-configure.md). 
 
-Sensitivity labels can use built-in and build-your-own classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md), and [auto-labeling for Office apps](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps).
+Sensitivity labels can use built-in and build-your-own classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
 > Trainable classifiers only work with items that are not encrypted and are in English.
@@ -124,8 +124,7 @@ Creating and publishing a trainable classifier for use in compliance solutions, 
 ## See also
 
 
-- [Retention labels](labels.md)
-- [Retention policies](retention-policies.md)
+- [Retention labels](retention.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
 - [Sensitivity labels](sensitivity-labels.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)

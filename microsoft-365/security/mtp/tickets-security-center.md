@@ -49,9 +49,7 @@ Learn common errors you may encounter in the connection process, and how to miti
 
 ## Create a task and share it to ServiceNow
 
-Once the integration is set up, create ServiceNow tasks based on specific Microsoft Secure Score improvement actions. Go to any improvement action in Secure Score in the Microsoft 365 security center portal, and select the "share" icon. One of the dropdown options is ServiceNow.
-
-![ServiceNow sharing in Secure Score](../../media/servicenow-share.png)
+Once the integration is set up, create ServiceNow tasks based on specific [Microsoft Secure Score](microsoft-secure-score.md) improvement actions. Go to any improvement action in Secure Score in the Microsoft 365 security center portal, and select **Share**. One of the dropdown options is ServiceNow.
 
 A task is generated where you can set the priority and edit the name, description, or due date. Once all the required fields are filled in, send the task to ServiceNow.
 
