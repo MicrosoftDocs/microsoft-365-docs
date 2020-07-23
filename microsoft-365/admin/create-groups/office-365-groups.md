@@ -69,13 +69,13 @@ The following limits apply to Microsoft 365 Groups:
 |:---------|:----|
 |Owners per group|100|
 |Groups a user can create|250|
-|Groups an admin can create|Up to default tenant limit of 300K|
+|Groups an admin can create|Up to default tenant limit of 500K|
 |Number of members|More than 1,000, though only 1,000 can access the Group conversations concurrently. <br>Users might notice delays when accessing the calendar and conversations in very large groups in Outlook.|
 |Number of Groups a user can be a member of|1,000|
 |File storage|1 Terabyte + 10 GB per subscribed user + any additional storage purchased. You can purchase an unlimited amount of additional storage.|
 |Group Mailbox size|50 GB|
 
-The default maximum number of Microsoft 365 groups that an organization can have is 300,000. To go beyond the default quota, you must contact Microsoft Support. For more information on Microsoft 365 Groups limits, see [Microsoft 365 Groups - Admin help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+The default maximum number of Microsoft 365 groups that an organization can have is 500,000. To go beyond the default quota, you must contact Microsoft Support. For more information on Microsoft 365 Groups limits, see [Microsoft 365 Groups - Admin help](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 Managing your Microsoft 365 groups is more effective when you have actionable information about groups usage. The Microsoft 365 admin center has a reporting tool that can let you see things such as storage use, how many active groups you have and even how your users are using the groups. See: [Microsoft 365 Reports in the admin center](../activity-reports/office-365-groups.md) for more information.
 
