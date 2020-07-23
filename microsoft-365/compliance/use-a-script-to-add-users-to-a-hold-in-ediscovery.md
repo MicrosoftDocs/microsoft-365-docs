@@ -26,7 +26,7 @@ description: "Learn how to run a script to add mailboxes & OneDrive for Business
 
 The Security & Compliance Center provides PowerShell cmdlets that let you automate time-consuming tasks related to creating and managing eDiscovery cases. Currently, using the eDiscovery case tool in the Security & Compliance Center to place a large number of custodian content locations on hold takes time and preparation. For example, before you create a hold, you have to collect the URL for each OneDrive for Business site that you want to place on hold. Then for each user you want to place on hold, you have to add their mailbox and their OneDrive for Business site to the hold. In future releases of the Security & Compliance Center, this will get easier to do. Until then, you can use the script in this article to automate this process.
   
-The script prompts you for the name of your organization's MySite domain (for example, **contoso** in the URL https://contoso-my.sharepoint.com), the name of an existing eDiscovery case, the name of the new hold that associated with the case, a list of email addresses of the users you want to put on hold, and a search query to use if you want to create a query-based hold. The script then gets the URL for the OneDrive for Business site for each user in the list, creates the new hold, and then adds the mailbox and OneDrive for Business site for each user in the list to the hold. The script also generates log files that contain information about the new hold.
+The script prompts you for the name of your organization's My Site domain (for example, **contoso** in the URL https://contoso-my.sharepoint.com), the name of an existing eDiscovery case, the name of the new hold that associated with the case, a list of email addresses of the users you want to put on hold, and a search query to use if you want to create a query-based hold. The script then gets the URL for the OneDrive for Business site for each user in the list, creates the new hold, and then adds the mailbox and OneDrive for Business site for each user in the list to the hold. The script also generates log files that contain information about the new hold.
   
 Here are the steps to make this happen:
   
@@ -45,6 +45,16 @@ Here are the steps to make this happen:
 - Be sure to save the list of users that you create in Step 2 and the script in Step 3 to the same folder. That will make it easier to run the script.
 
 - The script adds the list of users to a new hold that is associated with an existing case. Be sure the case that you want to associate the hold with is created before you run the script.
+
+- Each time you run the script, new Security & Compliance PowerShell and SharePoint Online PowerShell sessions are created. So you could use up all the PowerShell sessions available to you. To prevent this from happening, you can run the following commands to disconnect your active PowerShell sessions.
+
+  ```powershell
+  Get-PSSession | Remove-PSSession
+  ```
+
+   ```powershell
+   Disconnect-SPOService
+   ```
 
 - The script includes minimal error handling. Its primary purpose is to quickly and easily place the mailbox and OneDrive for Business site of each user on hold.
 
@@ -74,7 +84,7 @@ When you run the script in this step, it will prompt you for the following infor
   
 - **Your user credentials:** The script will use your credentials to connect to the Security & Compliance Center with remote PowerShell. It will also use these credentials to access SharePoint Online to get the OneDrive for Business URLs for the list of users.
 
-- **Name of your MySite domain:** The MySite domain is the domain that contains all the OneDrive for Business sites in your organization. For example, if the URL for your MySite domain is **https://contoso-my.sharepoint.com**, then you would enter  `contoso` when the script prompts you for the name of your MySite domain.
+- **Name of your My Site domain:** The My Site domain is the domain that contains all the OneDrive for Business sites in your organization. For example, if the URL for your My Site domain is **https://contoso-my.sharepoint.com**, then you would enter  `contoso` when the script prompts you for the name of your My Site domain.
 
 - **Name of the case:** The name of an existing case. The script will create a new hold that is associated with this case.
 
@@ -82,7 +92,7 @@ When you run the script in this step, it will prompt you for the following infor
 
 - **Search query for a query-based hold:** You can create a query-based hold so that only the content that meets the specified search criteria is placed on hold. To place all content on hold, just press **Enter** when you're prompted for a search query.
 
-- **Whether or not to turn on the hold:** You can have the script turn on the hold after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the Security & Compliance Center or by running the following PowerShell commands:
+- **Turning on the hold or not:** You can have the script turn on the hold after it's created or you can have the script create the hold without enabling it. If you don't have the script turn on the hold, you can turn it on later in the Security & Compliance Center or by running the following PowerShell commands:
 
   ```powershell
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
