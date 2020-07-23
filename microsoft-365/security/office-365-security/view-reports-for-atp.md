@@ -194,7 +194,9 @@ The **Threat protection status** report is a single view that brings together in
 
 The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [ATP Safe Links](atp-safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection report**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
+
+![URL protection report widget in the Reports dashboard](../../media/url-protection-report-widget.png)
 
 > [!NOTE]
 > This is a *protection trend report*, meaning data represents trends in a larger dataset. As a result, the data in the aggregate view is not available in real time here, but the data in the details table view is, so you may see a slight discrepancy between the two views.
@@ -266,7 +268,7 @@ In addition to the ATP reports described in this article, several other reports 
 
 In order to view and use the reports described in this article, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.
 
-- For the Security &amp; Compliance Center, you must have one of the following roles assigned:
+- For the Security & Compliance Center, you must have one of the following roles assigned:
 
   - Organization Management
   - Security Administrator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
@@ -282,7 +284,7 @@ In order to view and use the reports described in this article, **you must have 
 
 To learn more, see the following resources:
 
-- [Permissions in the Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 
 - [Feature permissions in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
 
