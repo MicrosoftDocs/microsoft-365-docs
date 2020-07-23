@@ -210,7 +210,7 @@ This image shows the **appsettings.json** file correctly formatted for email aut
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. Locate the `LDAPPath` setting and add the LDAP domain. For example:
+3. Locate the `LDAPPath` setting and add the Active Directory domain. For example:
 
    ```json
    "LDAPPath": "contoso.com"
