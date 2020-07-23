@@ -279,7 +279,7 @@ To import a key directly into your key vault, you need to have a nCipher nShield
   
 Some organizations prefer this approach to establish the provenance of their keys, and the this method also provides the following:
   
-- The tool set used for import includes attestation from nCipher that the Key Exchange Key (KEK) that is used to encrypt the key you generate is not exportable and is generated inside a genuine HSM that was manufactured by nCipher.
+- The toolset used for import includes attestation from nCipher that the Key Exchange Key (KEK) that is used to encrypt the key you generate is not exportable and is generated inside a genuine HSM that was manufactured by nCipher.
 
 - The toolset includes attestation from nCipher that the Azure Key Vault security world was also generated on a genuine HSM manufactured by nCipher. This attestation proves to you that Microsoft is also using genuine nCipher hardware.
 
