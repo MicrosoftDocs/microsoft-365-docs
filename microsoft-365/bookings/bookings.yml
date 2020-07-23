@@ -1,0 +1,62 @@
+### YamlMime:Landing
+
+title: Microsoft Bookings # < 60 chars
+summary: summary # < 160 chars
+
+metadata:
+  title: Microsoft Bookings # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: description # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: bookings #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: landing-page # Required
+  author: dmaguire #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dmaguire #Required; microsoft alias of author; optional team alias.
+  manager: serdars
+  audience: Admin
+  ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About [service]
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What is [service]?
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: quickstart
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+      - linkListType: how-to-guide
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md
+
+  # Card
+  - title: cardtitle3
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: linktext1
+            url: file1.md
+          - text: linktext2
+            url: file2.md

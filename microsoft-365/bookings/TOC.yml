@@ -1,0 +1,8 @@
+- name: Microsoft Bookings
+  items:
+  - name: Overview
+    href: bookings-overview.md
+  - name: Setup
+    href: bookings-setup-guide.md
+  - name: Get the Bookings app
+    href: get-bookings-app.md
