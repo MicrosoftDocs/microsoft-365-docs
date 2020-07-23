@@ -19,9 +19,7 @@ ms.collection:
 
 # Double Key Encryption (DKE)
 
-> *Release: public preview*
-
-> *Applies to: [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Applies to: Double Key Encryption for Microsoft 365 public preview, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
 > *Instructions for: [Azure Information Protection unified labeling client for Windows](https://docs.microsoft.com/azure/information-protection/faqs.md#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
@@ -67,11 +65,9 @@ You can deploy the service locally on your network or with another provider. You
 
 ## Deploy Double Key Encryption
 
-This article and the following video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
+This article and the deployment video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
-The video provides a step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
-
-> [!VIDEO https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e]
+Watch the [Double Key Encryption deployment video](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e) to see step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
 
 You'll follow these general steps to set up Double Key Encryption for your organization.
 
@@ -212,7 +208,7 @@ This image shows the **appsettings.json** file correctly formatted for email aut
    "AuthorizedRoles": ["group1", "group2", "group3"]
    ```
 
-3. Locate the `LDAPPath` setting and add the LDAP domain. For example:
+3. Locate the `LDAPPath` setting and add the Active Directory domain. For example:
 
    ```json
    "LDAPPath": "contoso.com"
@@ -245,7 +241,7 @@ Locate the `JwtAudience`. Replace `<yourhostname>` with the hostname of the mach
 
 
   > [!IMPORTANT]
-  > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5000** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
+  > The value for `JwtAudience` must match the name of your host *exactly*. You may use **localhost:5001** while debugging. However, When you're done debugging, make sure to update this value to the server's hostname.
 
 - `TestKeys:Name`. Enter a name for your key. For example: `TestKey1`
 - `TestKeys:Id`. Create a GUID and enter it as the `TestKeys:ID` value. For example, `DCE1CC21-FF9B-4424-8FF4-9914BD19A1BE`. You can use a site like [Online GUID Generator](https://guidgenerator.com/) to randomly generate a GUID.
