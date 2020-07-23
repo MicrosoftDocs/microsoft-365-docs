@@ -348,7 +348,7 @@ Proceed to set up your process and schedule for [Refreshing your sensitive info
 At this point, you are ready to use EDM-based classification with your Microsoft cloud services. For example, you can [set up a DLP policy using EDM-based classification](#to-create-a-dlp-policy-with-edm).
 
 > [!NOTE]
-      > The Throttling limit to upload data into the same data store using an EDM agent is set to 2 per day.
+> The throttling limit to upload data into the same data store using an EDM agent is set to two per day.
 
 
 #### Refreshing your sensitive information database
