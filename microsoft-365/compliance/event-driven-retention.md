@@ -61,11 +61,11 @@ To successfully use event-driven retention, it's important to understand the rel
     
 3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs - in this case, when a product reaches its end of life - you create an event that specifies:
     
-  - An asset ID (for SharePoint and OneDrive documents)
+   - An asset ID (for SharePoint and OneDrive documents)
     
-  - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
+   - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
     
-  - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
+   - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
 
 4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to seven days. In the previous diagram, all the items circled in red have their retention period triggered by this event. In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
 
@@ -214,9 +214,9 @@ There are two options for using the REST API:
 
 Before you use the REST API, as a global administrator, confirm the URL to use for the retention event call. To do this, run a GET retention event call by using the REST API URL:
 
-```
+```console
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
-````
+```
 
 Check the response code. If it's 302, get the redirected URL from the Location property of the response header and use that URL instead of `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` in the instructions that follow.
 
@@ -270,6 +270,7 @@ Sample code to call the REST API:
     
     </entry>
     ```
+    
 - **Authentication**: Basic
 - **Username**: "Complianceuser"
 - **Password**:	"Compliancepassword"
