@@ -1,5 +1,5 @@
 ---
-title: Gain visibility into your security posture through Microsoft Secure Score
+title: Assess your security posture through Microsoft Secure Score
 description: Describes how to take action to improve your Microsoft Secure Score in the Microsoft 365 security center.
 keywords: security, malware, Microsoft 365, M365, secure score, security center, improvement actions
 ms.prod: microsoft-365-enterprise
@@ -22,7 +22,7 @@ ms.custom:
 - seo-marvel-jun2020
 ---
 
-# Gain visibility into your security posture through Microsoft Secure Score
+# Assess your security posture with Microsoft Secure Score
 
 Microsoft Secure Score is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken. It can be found at https://security.microsoft.com/securescore in the [Microsoft 365 security center](overview-security-center.md).
 
@@ -35,7 +35,7 @@ To help you the information you need more quickly, Microsoft improvement actions
 * Infrastructure (no improvement actions for now)
 
 >[!NOTE]
->In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score.md#incompatibility-with-identity-secure-score-and-graph-api)
+>In the recent release of Microsoft Secure Score, an improved scoring model has been released which made Microsoft Secure Score temporarily incompatible with Identity Secure Score and the Graph API. [View details](microsoft-secure-score-whats-new.md)
 
 In the Microsoft Secure Score overview page, you can see how points are split between these groups and what points are available. The overview page is also the place to get an all-up view of the total score, historical trend of your secure score with benchmark comparisons, and prioritized improvement actions that can be taken to improve your score.
 
@@ -116,3 +116,4 @@ If you have any issues, please let us know by posting in the [Security, Privacy 
 - [Microsoft Secure Score overview](microsoft-secure-score.md)
 - [Track your Microsoft Secure Score history and meet goals](microsoft-secure-score-history-metrics-trends.md)
 - [What's coming](microsoft-secure-score-whats-coming.md)
+- [What's new](microsoft-secure-score-whats-new.md)
