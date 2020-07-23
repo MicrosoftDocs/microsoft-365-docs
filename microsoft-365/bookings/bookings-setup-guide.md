@@ -89,102 +89,88 @@ Next, add staff from your Microsoft 365 tenant, or add staff external to your or
 
 ## Define services and appointment types to be booked
 
-Define the services that your organization provides and which customers will book through Bookings.
+Define the services that your organization provides, which customers will book through Bookings.
 
 1.  Select the **Add a service** button.
-1. 
-1. 
-1. 
-1. xxxxxxxxxxxxxxxxxxxxxxx
-1. 
 
-2.  Service name – The name of the service that is bookable. This name will show in the drop-down menu on the Calendar page, when manually adding an appointment on the Calendar page, and as a tile on the Self-Service page.
+2.  **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
 
-3.  Description – This text will display when the information icon is clicked on the Self-Service page.
+3.  **Description**: The description you enter is what will appear when a user clicks the information icon on the Self-service page.
 
-4.  Default location – This will display on the confirmation and reminder emails for both staff and customers, as well as on the calendar even created for the booking.
+4.  **Default location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
 
-5.  “Add online meeting” toggle – Enables online meetings for each appointment via Teams or Skype, whichever is configured as the default client for the staff member.
+5.  **Add online meeting**: This setting enables or disables online meetings for each appointment, either via Teams or Skype, depending on which one you configure as the default client for the staff member.
     
-    1.  Toggle ON –
+    - Enabled:
+        - A link to a Teams or Skype meeting, unique to the booking, will be added to the calendar event on both the staff's and the customers' calendars, along with dial-in information.
+        - The link to join the meeting will be added to all confirmation and reminder emails, as shown in the following example:
         
-        1.  Teams/Skype link unique to the booking will be added to the calendar event on both the staff and customer’s calendar, along with dial-in information
+        :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Example of link to join Teams meeting in Bookings"::: 
         
-        2.  Teams/Skype meeting join link (“Join Teams meeting”) will be added to all confirmation and reminder emails
-            
-            1.  ![](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image6.png)
+        > [!NOTE]
+        > Teams meetings can be joined via the Teams mobile app, the Teams desktop app, in a Web browser, or via the phone dial-in. We strongly recommend enabling Teams as the default online meeting service for your tenant, for the best experience booking virtual appointments.
+    
+    - Disabled: 
+        - Appointments will not contain a meeting option, and all of the meeting-related fields that appear when **Add online meeting** is enabled will not be shown.
+
+6.  **Default duration**: This is how long all meetings will be booked for. The time is blocked beginning from the start time, which is selected during booking. The full appointment time will be blocked on the staff's calendars.
+
+7.  **Buffer time your customer can’t book**: Enabling this setting allows for the addition of extra time to the staff’s calendar every time an appointment is booked.
+    
+    The time will be blocked on the staff’s calendar and impact free/busy information. This means if an appointment ends at 3:00 pm and 10 minutes of buffer time has been added to the end of the meeting, the staff’s calendar will show as busy and non-bookable until 3:10pm. This can be useful if your staff needs time before a meeting to prepare, such as a doctor reviewing a patient’s chart, or a financial advisor preparing relevant account information. It can also be useful after a meeting, such as when someone needs time to travel to another location.
+
+8.  **Let the customer manage their booking**: This setting determines whether or notthe customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
+    
+    - Enabled: 
+    
+        The **Manage Booking** button appears on the customer confirmation email. When this button is selected by the customer, three options appear:
+        - **Reschedule** Selecting this option brings the user to a service-specific self-service page, where they can select a new time and/or date for the same service and same staff member from the original booking. Note that even though the original staff member is attached to the rescheduled booking by default, the user does have the option of changing the staff member as well.
+        - **Cancel booking** This cancels the booking and removes it from the staff's calendar.
+        - **New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.
+
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="The Manage Bookings button in Bookings":::
+
+        We only recommend leaving this setting enabled if you are comfortable with customers accessing the Self-Service page.
+
+    - Disabled:
+    
+        The user will have no ability to reschedule or cancel their booking when they book through the Calendar tab on the Bookings Web app. When booking through the Self-Service page, however, customers will still have the **Manage Booking** button and all of its options, even when this setting is disabled.
+    
+        We recommend disabling this setting if you want to limit access to the Self-Service page. Additionally, we suggest adding text to your confirmation and reminder emails that tells your customers how to make changes to their booking through other means, such as by calling the office or emailing the help desk.
+
+9. **Maximum attendees per event** This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app.
+
+:::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+
+10. **Default price**  This is the price will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
+
+11. **Notes** This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
+
+12. **Custom Fields** This section allows questions to be added, or removed, if the customer needs to answer any in order to successfully book.
+    
+    - Customer email, phone number, address, and notes are non-removable fields, but you can make them optional by deselecting **Required** beside each field.
+    
+    - You can add a multiple choice or text-response question by selecting **Add a question**.
         
-        3.  Teams meetings can be joined via the Teams mobile or desktop app, in a web browser, or via the phone dial-in
+        Custom fields can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews.
+
+14. **Reminders and Confirmations** Both types of emails are sent out to customers, staff members, or both, at a specified time period before the appointment. Multiple messages can be created for each appointment, according to your preference.
     
-    2.  Toggle OFF – Appointments will not contain a virtual option and all related fields that appear when the toggle is ON will not be shown.
+    - The default confirmation and reminder emails include basic information about the appointment, such as the customer/client name, staff member's name, the service or appointment booked, and the time of the appointment. For online meetings, a link to join will also be included. The ability to manage the booking can also be included, if this setting is enabled (as described above in step 8).
+
+        :::image type="content" source="media/bookings-remind-confirm.jpg" alt-text="A confirmation email from Bookings":::
+
+    - Optionally, you can include any additional text you would like here, such as information about rescheduling or what customers should bring for the appointment. The following is an example of customized text added to the original confirmation email, seen in the **Additional information for Email Confirmation** field:
+
+        :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Additional information in a Bookings email":::
+
+14. **Enable text message notifications for your customer** If selected, SMS messages are sent to the customer, but only if they opt-in.
     
-    3.  *We strongly recommend enabling Teams as the default online meeting service for the tenant to enhance the experience of booking virtual appointments.*
+    - Opt-in box on the manual booking and Self-Service Page:
 
-6.  Default Duration – How long the meeting will be booked for. The time is blocked from the start time selected when booking, and the full appointment time will be blocked on the staff’s calendar.
+        :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings":::
 
-7.  Buffer time your customer can’t book – Turning this toggle ON allows extra time to be added to the staff’s calendar every time an appointment is booked.
-    
-    4.  The time will be blocked on the staff’s calendar and impact free/busy, meaning if an appointment ends at 3:00pm and 10 minutes of buffer time is added to the end of the meeting, the staff’s calendar will show busy and non-bookable until 3:10pm.
-    
-    5.  This can be useful if staff need time before a meeting to prepare, like a doctor reviewing a patient’s chart or financial advisor preparing relevant account information, or after a meeting, like when traveling to another location.
-
-8.  Let the customer manage their booking toggle – Impacts if the customer can modify or cancel their booking when booked through the Calendar tab on the Bookings web app.
-    
-    6.  Toggle ON – “Manage Booking” button appears on customer confirmation email
-        
-        4.  When selected, the customer can:
-            
-            2.  Reschedule – Bring user to service-specific Self-Service Page to select a new time/date for the same service and staff member of original booking (note: staff member is defaulted to original booking but can be changed by the customer in this scenario)
-            
-            3.  Cancel – cancels booking and removes from staff calendar
-            
-            4.  New booking – bring user to Self-Service page with all services/staff listed to schedule a booking
-                
-                ![A screenshot of a cell phone
-                Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image7.png)
-        
-        5.  We only recommend leaving this toggle on if you are comfortable with the customer accessing the Self-Service Page.
-
-9.  Toggle OFF – No ability to reschedule or cancel booking when booked through the Calendar tab on the Bookings web app. When booking through the Self-Service Page, customers will still have the “manage booking” button appear, even when the toggle is off.
-    
-    6.  We recommend this setting if you want to limit access to the Self-Service page, and we suggest adding text in confirmation/reminder emails to inform the customer of how to make changes to their booking, such as calling the office or emailing the help desk.
-
-10. Maximum attendees per event – This setting allows you to create class-style services that require the ability for multiple people to book the same appointment time and staff. The appointment timeslot for the selected service, staff, and time will be available to book until maximum number of attendees has been reached. Current appointment capacity and attendees can be viewed within the calendar in the Bookings web app.
-    
-    7.  ![](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image8.png)
-
-11. Default price – This price will show on the Self-Service Page. If “Price not set” is selected, then no price or reference to cost/pricing will appear.
-
-12. Notes – This field will appear in the booking event for booked staff, as well as on the event that appear on the Calendar tab in the Bookings web app.
-
-13. Custom Fields – This section allows questions to be added or removed as those that are required for customer to answer to successfully book.
-    
-    8.  Customer email, phone number, address, and notes are non-removable fields; however, they can be made optional by deselecting “Required” next to the respective question.
-    
-    9.  Add a multiple choice or text-response question by selecting “+ Add a question” at the top of the page.
-        
-        7.  Custom fields can be useful when collecting information that is needed every time the specific appointment is booked. Examples could include insurance provider for a clinic visit, loan type for loan consultation, major of study for academic advising, applicant ID for candidate interviews, etc.
-
-14. Reminders and Confirmations – Emails that are sent out to the customer or staff member, or both, at a specified time period before the appointment. Multiple messages can be created for each appointment to your preference.
-    
-    10. The default confirmation and reminder emails include basic information about the appointment, such as the customer/client name, staff name, service/appointment booked, time of appointment, meeting link to join (if online meeting), and ability to manage the booking (if selected as an option).
-
-> ![A screenshot of a cell phone
-> Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image9.png)
-
-11. As an optional way to customize, you can include any additional text you would like here, such as information on rescheduling or what to bring for the appointment. Here is an example of customized text added to the original confirmation email, seen in the “Additional Information” section:
-
-> ![A screenshot of a cell phone
-> Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image10.png)
-
-15. Enable text message notifications for your customer – SMS messages are sent to the customer only if they opt-in.
-    
-    12. Opt-in box on the manual booking and Self-Service Page:
-
-> ![A screenshot of a cell phone
-> Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image11.png)
-
-13. Text message notifications will look like this (Note: SMS notifications are currently only available in North America):
+    - Text message notifications will look like this (Note: SMS notifications are currently only available in North America):
 
 > ![A screenshot of a cell phone
 > Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image12.jpeg)
