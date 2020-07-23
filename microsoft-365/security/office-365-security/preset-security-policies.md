@@ -18,9 +18,6 @@ description: "Admins can learn how to apply Standard and Strict policy settings 
 
 # Preset security policies in EOP and Office 365 ATP
 
-> [!NOTE]
-> The features described in this topic are currently in Preview, aren't available to everyone, and are subject to change.
-
 Preset security policies provide a centralized location for applying all of the recommended spam, malware, and phishing policies to users at once. The policy settings are not configurable. Instead, they are set by us and are based on our observations and experiences in the datacenters for a balance between keeping harmful content away from users without disrupting their work.
 
 The rest of this topic describes preset security policies and how to configure them.
@@ -54,7 +51,7 @@ The available conditions and exceptions are:
 
 ### Policies in preset security policies
 
-Preset security policies use corresponding built-policies from the various protection features in EOP and Office 365 ATP. You can't modify these policies:
+Preset security policies use the corresponding policies from the various protection features in EOP and Office 365 ATP. These policies are created _after_ you assign the **Standard protection** or **Strict protection** preset security policies to users. You can't modify these policies.
 
 - **Exchange Online Protection (EOP) policies**: This includes Microsoft 365 organizations with Exchange Online mailboxes and standalone EOP organizations without Exchange Online mailboxes:
   
