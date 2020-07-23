@@ -17,7 +17,7 @@ search.appverid:
 description: "A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it positive and negative samples to look at. Once the classifier is trained, you confirm that its results are accurate. Then you use it to search through your organization's content and classify it to apply retention or sensitivity labels or include it in data loss prevention (DLP) or retention policies."
 ---
 
-# Learn about trainable classifiers (preview)
+# Learn about classifiers (preview)
 
 Classifying and labeling content so it can be protected and handled properly is the starting place for the information protection discipline. Microsoft 365 has three ways to classify content.
 
@@ -36,29 +36,29 @@ This category of classification mechanisms includes finding content by:
 
 Sensitivity and retention labels can then be automatically applied to make the content available for use in [data loss prevention (DLP)](data-loss-prevention-policies.md) and [auto-apply polices for retention labels](apply-retention-labels-automatically.md).
 
-## Trainable classifiers
+## Classifiers
 
-This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A trainable classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The trainable classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the true positives, true negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the trained classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content. After you publish the trainable classifier, you can continue to train it using a feedback process that is similar to the initial training process. 
+This classification method is particularly well suited to content that isn't easily identified by either the manual or automated pattern matching methods. This method of classification is more about training a classifier to identify an item based on what the item is, not by elements that are in the item (pattern matching). A classifier learns how to identify a type of content by looking at hundreds of examples of the content you're interested in classifying. You start by feeding it examples that are definitely in the category. Once it processes those, you test it by giving it a mix of both matching and non-matching examples. The classifier then makes predictions as to whether any given item falls into the category you're building. You then confirm its results, sorting out the true positives, true negatives, false positives, and false negatives to help increase the accuracy of its predictions. When you publish the classifier, it sorts through items in locations like SharePoint Online, Exchange, and OneDrive, and classifies the content. After you publish the classifier, you can continue to train it using a feedback process that is similar to the initial training process.
 
-### Where you can use trainable classifiers
-Trainable classifiers are available as a condition for [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and [communication compliance](communication-compliance-configure.md). 
+### Where you can use classifiers
+Classifiers are available as a condition for [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and [communication compliance](communication-compliance-configure.md). 
 
-Sensitivity labels can use trainable classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
+Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
-> Trainable classifiers only work with items that are not encrypted and are in English.
+> Classifiers only work with items that are not encrypted and are in English.
 
 ### Licensing requirements
 
-Trainable classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
+Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
 
 ### Pre-requisites
 
-To access trainable classifiers in the UI: 
+To access classifiers in the UI: 
 - the Global admin needs to opt in for the tenant
 - Compliance admin role or Compliance Data Administrator is required to train a classifier
 
-You'll need accounts with these permissions to use trainable classifiers in these scenarios:
+You'll need accounts with these permissions to use classifiers in these scenarios:
 
 - Retention label policy scenario: Record Management and Retention Management roles 
 - Sensitivity label policy scenario: Security Administrator, Compliance Administrator, Compliance Data Administrator
@@ -66,17 +66,15 @@ You'll need accounts with these permissions to use trainable classifiers in thes
 
 ## Types of classifiers
 
-To help you get started using trainable classifiers, Microsoft 365 comes with a few pre-trained **built-in trainable classifiers**. If you have needs beyond what the built in classifiers provide, you can create and train your own **custom trainable classifiers**. 
+- **pre-trained classifiers** - Microsoft has created and pre-trained a number of classifiers that you can start using without training them. These classifiers will appear with the status of `Ready to use`.
+- **custom classifiers** - If you have classification needs that extend beyond what the pre-trained classifiers cover, you can create and train your own classifiers.
 
-> [!NOTE]
-> Before using any built-in classifier in your classification and labeling workflow, you should test it against a sample of your organizations content that you feel fits the category to verify that its classification predictions meet your expectations.
+### Pre-trained classifiers
 
-### Understanding built-in classifiers
-
-Microsoft 365 comes with five built-in classifiers:
+Microsoft 365 comes with five pre-trained classifiers:
 
 > [!CAUTION]
-> We are deprecating the **Offensive Language** built-in trainable classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in trainable classifiers instead.
+> We are deprecating the **Offensive Language** pre-trained classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** pre-trained classifiers instead.
 
 - **Resumes**: detects items that are textual accounts of an applicant's personal, educational, professional qualifications, work experience, and other personally identifying information
 - **Source Code**: detects items that contain a set of instructions and statements written in the top 25 used computer programming languages on GitHub
@@ -120,27 +118,24 @@ These appear in the **Microsoft 365 compliance center** > **Data classification 
 > [!IMPORTANT]
 > Please note that the offensive language, harassment, profanity, and threat classifiers only work with searchable text are not exhaustive or complete.  Further, language and cultural standards continually change, and in light of these realities, Microsoft reserves the right to update these classifiers in its discretion. While the classifiers may assist your organization in monitoring offensive and other language used, the classifiers do not address consequences of such language and are not intended to provide your organization's sole means of monitoring or responding to the use of such language. Your organization, and not Microsoft or its subsidiaries, remains responsible for all decisions related to monitoring, enforcement, blocking, removal and retention of any content identified by a pre-trained classifier.
 
-#### Process flow for using built-in classifiers
+### Custom classifiers
 
-Built-in classifiers don't need to be trained, but you do need to confirm that they will identify the types of content that you need them to before you use them in compliance solutions. Testing a pre-trained classifier follows this flow.
-
-![process flow testing a built in classifier](../media/classifier-pre-trained-classifier-flow.png)
-
-### Understanding trainable classifiers
-
-When the built-in trainable classifiers don't meet your needs, you can create and train your own trainable classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a built in classifier, see [Using a built-in classifier](classifier-using-a-ready-to-use-classifier.md)
+When the pre-trained classifiers don't meet your needs, you can create and train your own classifiers. There's significantly more work involved with creating your own, but they'll be much better tailored to your organizations needs. For more detail on how to use a pre-trained classifier, see [Using a pre-trained classifier](classifier-using-a-ready-to-use-classifier.md).
 
 > [!IMPORTANT]
-> Only the user who creates a trainable classifier can train and review predictions made by that classifier.
+> Only the user who creates a custom classifier can train and review predictions made by that classifier.
 
-#### Process flow for creating trainable classifiers
+#### Process flow for creating custom classifiers
 
-Creating and publishing a trainable classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a custom trainable classifier see, [Creating a trainable classifier](classifier-creating-a-trainable-classifier.md).
+Creating and publishing a classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a custom trainable classifier see, [Creating a custom classifier](classifier-creating-a-trainable-classifier.md).
 
-![process flow trainable classifier](../media/classifier-trainable-classifier-flow.png)
+![process flow custom classifier](../media/classifier-trainable-classifier-flow.png)
+
+### Retraining classifiers
+
+
 
 ## See also
-
 
 - [Retention labels](retention.md)
 - [Data loss prevention (DLP)](data-loss-prevention-policies.md)
