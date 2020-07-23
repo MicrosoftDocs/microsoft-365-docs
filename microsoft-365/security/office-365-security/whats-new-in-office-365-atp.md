@@ -33,6 +33,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 ## July/August 2020 
 
 - [Experience Improvements to Hunting Experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Easily apply recommended settings using Preset Security Policies](preset-security-policies.md)
 
 ## March/April 2020
 
