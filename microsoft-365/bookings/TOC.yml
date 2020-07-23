@@ -1,8 +1,14 @@
 - name: Microsoft Bookings
+  href: bookings.yml
   items:
   - name: Overview
     href: bookings-overview.md
   - name: Setup
-    href: bookings-setup-guide.md
+    items:
+    - name: Setting up Microsoft Bookings
+      href: bookings-setup-guide.md
+    - name: Create and staff your bookings
+      href: create-and-staff.md
   - name: Get the Bookings app
     href: get-bookings-app.md
+
