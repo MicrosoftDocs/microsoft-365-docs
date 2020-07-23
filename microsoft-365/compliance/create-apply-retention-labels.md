@@ -87,7 +87,7 @@ Publish retention labels so that they can be applied by users in apps, such as S
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section. 
 
-To edit an existing retention label policy (the policy type is **Publish**) select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+To edit an existing retention label policy (the policy type is **Publish**), select it, and then select the **Edit** option to start the Edit retention policy. This wizard lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
 
 ## When retention labels become available to apply

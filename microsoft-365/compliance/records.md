@@ -25,7 +25,7 @@ description: "Learn about records to help you implement a records management sol
 
 Managing records in Microsoft 365 helps your organization comply with corporate policies and legal or regulatory obligations, while also reducing risk and legal liability.
 
-When content is marked as a record:
+When items are marked as a record:
 
 - Restrictions are placed on the items in terms of what [actions are allowed or blocked](#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
@@ -33,7 +33,7 @@ When content is marked as a record:
 
 - You have proof of disposition when the items are deleted at the end of their retention period.
 
-You use [retention labels](retention.md#retention-labels) to mark content as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
+You use [retention labels](retention.md#retention-labels) to mark items as a record. You can either publish those labels so that users and administrators can manually apply them to content, or auto-apply those labels to content that you want to mark as a record.
 
 By using retention labels to mark content as records, you can implement a single and consistent strategy for managing records across your Microsoft 365 environment.
 
@@ -75,13 +75,13 @@ Containers include SharePoint document libraries and Exchange mailboxes.
 
 ## Using retention labels to declare records
 
-When you create a retention label, you have the option to use the retention label to mark the content as a record:
+When you create a retention label, you have the option to use the retention label to mark items as a record:
 
 1. In the Microsoft 365 compliance center, go to **Records Management** \> **File Plan**. On the **File plan** page, select **Create a label**.
 
-2. On the **Label settings** page in the wizard, choose the option to classify content as a record.
+2. On the **Label settings** page in the wizard, select the option to mark items as a record.
     
-   ![Click Use label to classify content as a Record checkbox](../media/recordversioning6.png)
+   ![Retention label option to mark items as a record](../media/recordversioning6.png)
 
 3. Apply the retention label to SharePoint or OneDrive documents and Exchange emails, as needed. For instructions:
     
@@ -91,7 +91,7 @@ When you create a retention label, you have the option to use the retention labe
 
 ### Applying the configured retention label to content
 
-When retention labels that mark content as a record are made available for users to apply them in apps:
+When retention labels that mark items as a record are made available for users to apply them in apps:
 
 - For Exchange, any user with write-access to the mailbox can apply these labels. 
 - For SharePoint and OneDrive, any user in the default Members group (the Contribute permission level) can apply these labels.

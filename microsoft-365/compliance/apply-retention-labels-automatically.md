@@ -75,9 +75,9 @@ Navigation instructions depend on whether you're using [records management](reco
     
     - For information about the file plan descriptors, see [Use file plan to manage retention labels](file-plan-manager.md)
     
-    - To use the retention label to declare content as a record, enable the checkbox **Use label to classify content as a "Record"**.
+    - To use the retention label to mark content as a [record](records.md), enable the option **Mark items as a record**.
 
-To edit an existing label, select it, and then select **Edit label** to start the same wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
+To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
 
 
 ### Step 2: Create an auto-apply policy
@@ -94,13 +94,14 @@ When you create an auto-apply policy, you select a retention label to automatica
     
     Don't immediately see your option? First select **Show all**. 
 
-2. Follow the prompts in the wizard.
+2. Follow the prompts in the Create auto-labeling wizard.
     
     For information about configuring the conditions that automatically apply the retention label, see the [Configuring conditions for auto-apply retention labels](#configuring-conditions-for-auto-apply-retention-labels) section on this page.
     
     For information about the locations supported by retention labels, see the [Retention labels and locations](retention.md#retention-label-policies-and-locations) section.
 
-To edit an existing auto-apply label policy, select it, and then select **Edit policy** to start the same wizard that lets you change the policy description and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2. Alternatively, select any of the available **Edit** options to go directly to the relevant page to make your update.
+To edit an existing label, select it, and then select the **Edit label** option to start the Edit retention wizard that lets you change the label descriptions and any [eligible settings](#updating-retention-labels-and-their-policies) from step 2.
+
 
 ### Configuring conditions for auto-apply retention labels
 
@@ -180,7 +181,7 @@ When you edit a retention label or auto-apply policy, and the retention label is
 
 Some settings can't be changed after the label or policy is created and saved, which include:
 - The retention settings except the retention period, unless you've configured the label to retain or delete the content based on when it was created.
-- The option to classify as a record.
+- The option to mark items as a record.
 
 ## Next steps
 
