@@ -109,7 +109,7 @@ For more information, see [Allow or block invitations to B2B users from specific
 
 ## Add guests to the global address list
 
-By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list.
+By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list. Be sure the guest is visible in the Exchange Online admin center. New guests may take a short time to appear there after they're added.
 
 Find the guest user's ObjectID by running:
 
