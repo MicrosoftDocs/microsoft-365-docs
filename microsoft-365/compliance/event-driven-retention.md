@@ -59,7 +59,7 @@ To successfully use event-driven retention, it's important to understand the rel
     
 2. Users (typically records managers) apply those retention labels to content and (for SharePoint and OneDrive documents) enter an asset ID for each item. In this example, the asset ID is a product name or code used by the organization. Thus, each product's records are assigned a retention label, and each record has a property that contains an asset ID. The diagram represents **all of the content** for all product records in an organization, and each item bears the asset ID of the product whose record it is. 
     
-3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs - in this case, when a product reaches its end of life - you create an event that specifies:
+3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs—in this case, when a product reaches its end of life—you create an event that specifies:
     
    - An asset ID (for SharePoint and OneDrive documents)
     
@@ -135,7 +135,7 @@ After an event-based label is applied to content, you can enter an asset ID for 
     
 - Employee IDs that you can use to retain content for only a specific person.
     
-Asset ID is simply another document property that's available in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 that follows. The important point is that you must use some *property:value* combination in the document properties to associate that item with an event type.
+Asset ID is simply another document property that's available in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event—see step 6 that follows. The important point is that you must use some *property:value* combination in the document properties to associate that item with an event type.
   
 ![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
@@ -145,7 +145,7 @@ When a particular instance of that event type occurs, such as a product reaches 
   
 ### Step 6: Choose the same event type used by the label in step 2
 
-When you create the event, choose the same event type used by the retention label in step 2 - for example, Product Lifetime. Only content with retention labels applied to it of that event type will have its retention period triggered.
+When you create the event, choose the same event type used by the retention label in step 2—for example, Product Lifetime. Only content with retention labels applied to it of that event type will have its retention period triggered.
   
 ![Option in Event settings to choose an event type](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
