@@ -27,7 +27,7 @@
     - name: Adoption
       items: 
         - name: Get started
-          href: knowledge-adoption-getstarted.md
+          href: .md
 
 
 

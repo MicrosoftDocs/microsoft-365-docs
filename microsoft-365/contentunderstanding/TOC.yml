@@ -30,7 +30,7 @@
       items:
 
         - name: Get started driving adoption
-          href: contentunderstanding-adoption-getstarted.md
+          href: .md
 
     - name: Training videos
       items: 
