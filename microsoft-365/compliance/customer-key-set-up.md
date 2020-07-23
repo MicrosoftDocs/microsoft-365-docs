@@ -277,7 +277,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 To import a key directly into your key vault, you need to have a nCipher nShield Hardware Security Module.
   
-Some organizations prefer this approach to establish the provenance of their keys, and the this method also provides the following:
+Some organizations prefer this approach to establish the provenance of their keys, and then this method also provides the following:
   
 - The toolset used for import includes attestation from nCipher that the Key Exchange Key (KEK) that is used to encrypt the key you generate is not exportable and is generated inside a genuine HSM that was manufactured by nCipher.
 
