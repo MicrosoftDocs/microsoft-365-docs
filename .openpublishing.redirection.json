@@ -895,7 +895,7 @@
     {
       "source_path": "microsoft-365/business/set-up-conditional-access-policies.md",
       "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     }
   ]
 }
