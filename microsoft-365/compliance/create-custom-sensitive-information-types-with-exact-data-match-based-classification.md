@@ -28,7 +28,7 @@ DoD - https://download.microsoft.com/download/7/c/6/7c6f43c3-957d-41a7-9fa3-aecb
 
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the [Security & Compliance Center](create-a-custom-sensitive-information-type.md) or [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
+[Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the Security & Compliance Center or PowerShell to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
 
 But what if you wanted a custom sensitive information type that uses exact data values, instead of matching only with generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
 
@@ -53,6 +53,16 @@ EDM-based classification is included in these subscriptions
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
 - Microsoft E5/A5 Information Protection and Governance
+
+## Portal links for your subscription
+
+
+|Portal  |World Wide/GCC  |GCC-High  |DOD  |
+|---------|---------|---------|---------|
+|Office SCC     |  protection.office.com       |scc.office365.us         |[scc.protection.apps.mil](https://scc.protections.apps.mil)         |
+|Microsoft 365 Security center     |security.microsoft.com         |security.microsoft.us         |[security.apps.mil](security.apps.mil)         |
+|Microsoft 365 Compliance center     |compliance.microsoft.com         |compliance.microsoft.us         |[compliance.apps.mil](compliance.apps.mil)|
+
 
 ## The work flow at a glance
 
