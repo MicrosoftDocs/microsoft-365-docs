@@ -31,9 +31,11 @@ Double Key Encryption supports both cloud and on-premises deployments. These dep
 
 For more information about the default, cloud-based tenant root keys, see [Planning and implementing your Azure Information Protection tenant key](https://docs.microsoft.com/azure/information-protection/plan-implement-tenant-key).
 
+<!--
 The following video shows how Double Key Encryption works to secure your content.
 
 > [!VIDEO https://msit.microsoftstream.com/embed/video/f466a1ff-0400-a936-221c-f1eab45dc756]
+-->
 
 If your organizations have any of the following requirements, you can use DKE to help secure your content:
 
@@ -67,7 +69,7 @@ You can deploy the service locally on your network or with another provider. You
 
 This article and the deployment video use Azure as the deployment destination for the DKE service. If you're deploying to another location, you'll need to provide your own values.
 
-Watch the [Double Key Encryption deployment video](https://msit.microsoftstream.com/video/cfdda3ff-0400-a521-1579-f1eacc37fc7e) to see step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
+Watch the [Double Key Encryption deployment video](https://youtu.be/vDWfHN_kygg) to see step-by-step overview of concepts in the article. The video takes about 18 minutes to complete.
 
 You'll follow these general steps to set up Double Key Encryption for your organization.
 
