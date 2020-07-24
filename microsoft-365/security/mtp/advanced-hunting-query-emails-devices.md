@@ -29,49 +29,67 @@ ms.topic: article
 - Emails processed by Microsoft 365
 - Cloud app activities, authentication events, and domain controller activities tracked by Microsoft Cloud App Security and Azure ATP
 
-With these kind of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices. 
+With this level of visibility, you can quickly hunt for threats that traverse sections of your network, including sophisticated intrusions that arrive on email or the web, elevate local privileges, acquire privileged domain credentials, and move laterally to across your devices. 
 
 Here are some hunting scenarios and sample queries that can help you explore how you might construct queries when hunting for such sophisticated threats.
 
-## Identify users and devices using the IdentityInfo and DeviceInfo tables
-You can quickly understand...
-
-```kusto
-//Get display names and locations of phishing recipients
-EmailEvents
-| where Timestamp > ago(7d)
-| where PhishFilterVerdict == "Phish"
-| join IdentityInfo 
-on $left.RecipientEmailAddress == $right.EmailAddress
-| project EmailAddress, AccountDisplayName, City, Country
-```
-
-```kusto
-//List domain authentication events from credential theft targets 
-EmailEvents
-| where Timestamp > ago(7d)
-| where PhishFilterVerdict == "Phish"
-| join IdentityInfo 
-on $left.RecipientEmailAddress == $right.EmailAddress
-| project EmailAddress, AccountDisplayName, City, Country
-```
-```kusto
-//Get logon activities from targeted credentials
-AlertInfo
-| where Timestamp > ago(30d)
-| where AttackTechniques == "CredentialAccess"
-| join AlertEvidence on AlertId
-//Get latest alert per distinct AccountName
-| where AccountDomain == "on"
-| distinct AccountName
-```
-
 ## Obtain user accounts from email addresses
-When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. To do this use the *local-host* from the email address:
+When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. You can generally do this for either recipient or sender address using the *local-host* from the email address.
+
+In this query, we use the [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host before the `@` in the recipient email address.
 
 ```kusto
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
+You can also get the account names and other account information by merging or joining the `IdentityInfo` table. In the example below, we use `kind=inner` to specify an [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication for the same recipient email addresses. 
+
+```kusto
+//Get email events with more recipient account information
+EmailEvents
+| where Timestamp > ago(1d)
+| join kind=inner IdentityInfo on $left.RecipientEmailAddress == $right.EmailAddress
+| project Timestamp, NetworkMessageId, SenderFromAddress, RecipientEmailAddress, 
+AccountName, JobTitle, Department, Subject, PhishFilterVerdict, MalwareFilterVerdict 
+```
+## Getting device information
+
+## Identify users and devices using the IdentityInfo and DeviceInfo tables
+You can quickly understand...
+
+
+
+
+### Get information about users who received phishing email
+This query obtains the list of phishing detections from the `EmailEvents` table and joins or merges that information with the `IdentityInfo` table to get detailed information about each recipient. It summarizes results by showing only the subject of each phishing message as well as some pertinent information about each recipient. You can use this query to identify attempts to target users in your organization.
+
+```kusto
+//Get full name, title, department, and location of phishing recipients
+EmailEvents
+| where Timestamp > ago(7d)
+| where PhishFilterVerdict == "Phish"
+| join IdentityInfo 
+on $left.RecipientEmailAddress == $right.EmailAddress
+| project PhishingMessage=Subject, EmailAddress, GivenName, Surname, JobTitle, Department, City, Country
+```
+### Get logon attempts by domain accounts targeted by credential theft
+This query first identifies all credential access alerts in the `AlertInfo` table. It then merges or joins the `AlertEvidence` table, which it parses for the names of the targeted accounts and filters for domain-joined accounts only. Finally, it joins the `IdentityLogonEvents` table to get all logon activities by domain-joined targeted accounts.
+
+```kusto
+AlertInfo
+| where Timestamp > ago(7d)
+| where Category has "CredentialAccess"
+| join AlertEvidence on AlertId
+| extend IsJoined=(parse_json(AdditionalFields).Account.IsDomainJoined)
+| extend TargetAccountName=tostring(parse_json(AdditionalFields).Account.Name)
+| where IsJoined has "true"
+| join kind=inner IdentityLogonEvents on $left.TargetAccountName == $right.AccountName
+```
+
+
+### Get detailed information about domain accounts targeted by credential theft
+
+
+
 
 
 
