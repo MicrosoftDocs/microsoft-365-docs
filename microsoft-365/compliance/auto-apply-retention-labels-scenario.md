@@ -1,5 +1,5 @@
 ---
-title: "Manage the lifecycle of product documents stored in SharePoint Online with retention labels"
+title: "Manage the lifecycle of product documents stored in SharePoint Online by using retention labels"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -18,17 +18,19 @@ search.appverid:
 description: "This solution scenario illustrates how to manage the lifecycle of product-related documents stored in SharePoint Online using retention labels. This is done by using document metadata to classify content, and specifically by auto-applying retention labels and configuring event-based retention."
 ---
 
-# Manage the lifecycle of SharePoint documents with retention labels
+# Manage the lifecycle of SharePoint documents by using retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-This article describes how you can manage the lifecycle of product-related documents stored in SharePoint Online by using retention labels, and specifically by auto-applying labels and configuring event-based retention. The auto-apply functionality leverages document classification by the use of SharePoint metadata. The scenario in this article is based on product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could manage the lifecycle of documents related to physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you can manage documents related to bank accounts, mortgages, or insurance contracts. In the public sector, you can manage documents related to construction permits or tax forms.
+This article describes how to manage the lifecycle of product-related documents stored in SharePoint Online by auto-applying retention labels and configuring event-based retention.
 
-Let's look at the scenario for this article. We'll look at the information architecture and the definition of the retention labels. Then we'll look at classifying documents by auto-applying the labels, and finally generating the events that initiate the start of the retention period.
+The auto-apply functionality uses SharePoint metadata for document classification. The scenario in this article is based on product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could manage the lifecycle of documents related to physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you could manage bank account, mortgage, or insurance contract documents. In the public sector, you could manage documents related to construction permits or tax forms.
+
+In this article, we'll look at the information architecture and definition of the retention labels. Then we'll classify documents by auto-applying the labels, and finally we'll generate the events that initiate the start of the retention period.
 
 ## Information architecture
 
-The scenario for this article is based on a manufacturing company that uses SharePoint Online to store all the documents related to the products the company develops. These documents include product specifications, agreements with suppliers, and user manuals. When these documents are stored in SharePoint as part of the Enterprise Content Management policies, document metadata is defined and used to classify them. Each document has the following metadata properties:
+The scenario for this article is based on a manufacturing company that uses SharePoint Online to store all the documents about the products that the company develops. These documents include product specifications, agreements with suppliers, and user manuals. When these documents are stored in SharePoint as part of Enterprise Content Management policies, document metadata is defined and used to classify them. Each document has the following metadata properties:
 
 - **Doc Type** (such as product specification, agreement, and user manual)
 
@@ -41,7 +43,7 @@ This metadata forms the base content type called **Production Document** for all
 ![Metadata for product documentation](../media/SPRetention1.png)
 
 > [!NOTE]
-> The **Doc Type** and **Status** properties are used by retention policies later in the scenario to classify and auto-apply retention labels.
+> The **Doc Type** and **Status** properties are used by retention policies later in this scenario to classify and auto-apply retention labels.
 
 We can have several content types that represent different types of documents, but let's focus on the Product Documentation.
 
@@ -49,9 +51,9 @@ In this scenario, we use the Managed Metadata service and the Term store to crea
 
 ![Term set for product documentation in Term store](../media/SPRetention2.png)
 
-Content Type can be created and published using the [Content Type Hub](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). A content type can also be created and published using site provisioning tools such as the [PnP provisioning framework](https://docs.microsoft.com/sharepoint/dev/solution-guidance/pnp-provisioning-framework) or the [site design JSON schema](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
+*Content Type* can be created and published using the [Content Type Hub](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). A content type can also be created and published by using site provisioning tools such as the [PnP provisioning framework](https://docs.microsoft.com/sharepoint/dev/solution-guidance/pnp-provisioning-framework) or [site design JSON schema](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
 
-Each product has a dedicated SharePoint Online site that contains one document library, with the right content types enabled. All documents are stored in this document library.
+Each product has a dedicated SharePoint Online site that contains one document library that has the right content types enabled. All documents are stored in this document library.
 
 ![Document library for product documentation](../media/SPRetention3.png)
 
@@ -62,24 +64,23 @@ Here's a view of the document library for the Spinning Widget product:
 
 ![Spinning Widget document library](../media/SPRetention4.png)
 
-Now that we have the basic information architecture in place for document management, let's look at the retention and disposal strategy of the documents that use the metadata and classification of documents.
+Now that we have the basic information architecture in place for document management, let's look at the retention and disposal strategy for the documents that use the metadata and classification of documents.
 
 ## Retention and disposition
 
-The manufacturing company's compliance and data governance policies dictate the way data is preserved and disposed of. Product-related documents must be kept for as long as the product is manufactured, and for a certain period after that. This period is different for product specifications, agreements, and user manuals. The following table indicates the retention and disposition requirements:
+The manufacturing company's compliance and data governance policies dictate the way data is preserved and discarded. Product-related documents must be kept for as long as the product is manufactured, and for a certain period after that. This period differs for product specifications, agreements, and user manuals. The following table indicates the retention and disposition requirements:
 
 | **Document type**          | **Retention**                          | **Disposition**                              |
 | -------------------------- | -------------------------------------- | -------------------------------------------- |
 | Product specification      | 5 years after cessation of production  | Delete                                       |
 | Product agreement          | 10 years after cessation of production | Review                                       |
 | User manual                | 5 years after cessation of production  | Delete                                       |
-| All other types of documents | Don't actively retain other documents  | Delete when document is older than 3 years<sup>\*</sup>  |
+| All other types of documents | Don't actively retain  | Delete when document is older than 3 years<sup>\*</sup>  |
 |||
 
-> [!NOTE]
-> <sup>\*</sup> A document is considered older than 3 years if it hasn't been modified within the last 3 years.
+   <sup>\*</sup>A document is considered older than 3 years if it hasn't been modified within the last 3 years.
 
-Using the security and compliance center, we create the following retention labels:
+We use the security and compliance center to create the following retention labels:
 
   - Product Specification
 
@@ -87,32 +88,32 @@ Using the security and compliance center, we create the following retention labe
 
   - User Manual
 
-In this article, we only show how to create and auto-apply the Product Specification retention label. To implement the complete scenario, you would create and auto-apply retention labels for the other two document types.
+In this article, we only show how to create and auto-apply the Product Specification retention label. To implement the complete scenario, you would also create and auto-apply retention labels for the other two document types.
 
 ### Settings for the Product Specification retention label
 
-Here's the [file plan](file-plan-manager.md) for the Product Specification retention label: 
+Here's the [file plan](file-plan-manager.md) for the Product Specification retention label:
 
 - **Name:** Product Specification
 
-- **Description for admins:** Product Specification Label, retain for five years after cessation of production, auto delete, event-based retention, event type is Product Cessation.
+- **Description for admins:** Retain for 5 years after cessation of production, auto delete, event-based retention, event type is *Product Cessation*.
 
-- **Description for users:** Retain for five years after cessation of production.
+- **Description for users:** Retain for 5 years after cessation of production.
 
-- **Retention action:** Keep and delete
+- **Retention action:** Keep and delete.
 
-- **Retention duration:** Five years (1825 days)
+- **Retention duration:** 5 years (1,825 days).
 
-- **Record label**: Configure the retention label to classify content as a [record](records.md) (documents that are classified as a record can't be modified or deleted by users)
+- **Record label**: Configure the retention label to classify content as a [*record*](records.md). (Documents that are classified as a record can't be modified or deleted by users.)
 
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
-The following screenshot shows the settings when you create the Product Specification [retention label](retention.md#retention-labels) in the Microsoft 365 compliance center. You can create the **Product Cessation** event type when you create the retention label. See the steps below.
+The following screenshot shows the settings when you create the Product Specification [retention label](retention.md#retention-labels) in the Microsoft 365 compliance center. You can create the *Product Cessation* event type when you create the retention label. See the following steps.
 
 ![Retention settings for Product Specification label](../media/SPRetention5.png)
 
 > [!NOTE]
-> For the practical purposes and to avoid having to wait 5 years to see a document automatically deleted, set the retention duration to 1 day if you're recreating this scenario in your test environment.
+> For practicality and to avoid waiting 5 years to see a document automatically deleted, set the retention duration to 1 day if you're recreating this scenario in a test environment.
 
 ### Create an event type when creating a retention label
 
