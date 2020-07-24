@@ -45,7 +45,7 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
     
 2. Select the user's name, and then on the **Account** tab select **Manage username**.
     
-3. In the first box, type the first part of the new email address. If you added your own domain to Office 365, you can choose the domain for the new email alias by using the drop-down list. 
+3. In the first box, type the first part of the new email address. If you added your own domain to Microsoft 365, choose the domain for the new email alias by using the drop-down list. 
 
 4. Select **Save changes**.
 
@@ -58,7 +58,7 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 2. Select the user. In the flyout pane, next to **Username / Email**, select **Edit**.
 
-3. In the first box, type the first part of the new email address. If you added your own domain to Office 365, you can choose the domain for the new email alias by using the drop-down list.
+3. In the first box, type the first part of the new email address. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list.
 
 4. Select **Save**.
 
@@ -70,7 +70,7 @@ You must be a [global admin](about-admin-roles.md) to do these steps.
 
 2. Select the user. In the flyout pane, next to **Username / Email**, select **Edit**.
 
-3. In the first box, type the first part of the new email address. If you added your own domain to Office 365, you can choose the domain for the new email alias by using the drop-down list.
+3. In the first box, type the first part of the new email address. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list.
 
 4. Select **Save**.
 
@@ -89,23 +89,23 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
 
 3. Select **Set as Primary** for the email address that you want to set as the primary email address for that person. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
 4. You'll see a big yellow warning that you're about to change the person's sign-in information. Select **Save**, then **Close**.
     
-5. Tell the person the following information:
+5. Give the person the following information:
  
-  - This change may take a while to take effect.
+  - This change could take a while.
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - Their new username. They'll need it to sign in to Microsoft 365.
     
-  - If they are using Skype for Business Online, tell them they will need to reschedule any Skype for Business Online meetings that they organized, and that they will need to tell their external contacts to update the old contact information.
+  - If they are using Skype for Business Online, they must reschedule any Skype for Business Online meetings that they organized, and tell their external contacts to update their contact information.
 
-  - If they are using OneDrive, tell them that the URL to this location has been changed. If they have OneNote notebooks in their OneDrive, then they may need to close and reopen them in OneNote. If they have shared files from their OneDrive, then the links to the files may not work and the user can reshare.    
+  - If they are using OneDrive, the URL to this location has changed. If they have OneNote notebooks in their OneDrive, they might need to close and reopen them in OneNote. If they have shared files from their OneDrive, the links to the files might not work and the user can reshare.    
   
-  - If their password changed too, tell them that they will be prompted to enter the new password on their mobile device, or it won't sync.
+  - If their password changed too, they are prompted to enter the new password on their mobile device, or it won't sync.
   
 ::: moniker-end
 
@@ -117,7 +117,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
 
 3. Select **Set as Primary** for the email address that you want to set as the primary email address for that person. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
@@ -127,7 +127,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
  
   - This change may take a while to take effect.
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - If they are using Skype for Business Online, tell them they will need to reschedule any Skype for Business Online meetings that they organized, and that they will need to tell their external contacts to update the old contact information.
 
@@ -145,7 +145,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
 
 3. Select **Set as Primary** for the email address that you want to set as the primary email address for that person. 
     
-    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Office 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
+    **IMPORTANT**: You won't see this option to Set as Primary if you purchased Microsoft 365 from GoDaddy or another Partner service that provides a management console. Instead, sign in to the GoDaddy / partner's management console to set the primary alias. 
     
     Also, you'll only see this option if you're a global admin. If you don't see the option, you don't have permissions to change a user's name and primary email address.
   
@@ -155,7 +155,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
  
   - This change may take a while to take effect.
   
-  - What their new username is. They'll need it to sign in to Office 365.
+  - What their new username is. They'll need it to sign in to Microsoft 365.
     
   - If they are using Skype for Business Online, tell them they will need to reschedule any Skype for Business Online meetings that they organized, and that they will need to tell their external contacts to update the old contact information.
 
@@ -177,7 +177,7 @@ If you get an error message, see [Resolve error messages](#resolve-error-message
 
     If you get the error message "**We're sorry, the user couldn't be edited. Review the user information and try again**, see [Resolve error messages](#resolve-error-messages).
 
-It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username, so be sure to tell them about this change.
+It might take up to 24 hours for this change to take effect across all services. After the change has taken effect, the person will have to sign in to Outlook, Skype for Business and SharePoint with their updated username.
 
 ::: moniker-end
 
@@ -213,7 +213,7 @@ It might take up to 24 hours for this change to take effect across all services.
 
 ### "A parameter cannot be found that matches parameter name 'EmailAddresses"
 
-If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
+If you get the error message " **A parameter cannot be found that matches parameter name 'EmailAddresses**" it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call [support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products) and ask them to do a full sync for you.
   
 ### "We're sorry, the user couldn't be edited. Review the user information and try again"
 
@@ -224,13 +224,13 @@ If you get the error message " **We're sorry, the user couldn't be edited. Revie
 
 A person's previous primary email address is retained as an additional email address. **We strongly recommend that you don't remove the old email address.**
   
-Some people will likely continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft will automatically route it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
+Some people might continue to send email to the person's old email address and deleting it may result in NDR failures. Microsoft automatically routes it to the new one. Also, do not reuse old SMTP email addresses and apply them to new accounts. This can also cause NDR failures or delivery to an unintended mailbox.
    
 ## What if the person's offline address book won't sync with the Global Address List?
 
-If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you may see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
+If they are using Exchange Online or if their account is linked with your organization's on-premises Exchange environment, you might see this error when you try to change a username and email address: "This user is synchronized with your local Active Directory. Some details can be edited only through your local Active Directory."
   
-This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Office 365. You can subsequently change the username in the Active Directory, but it will not change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
+This is due to the Microsoft Online Email Routing Address (MOERA). The MOERA is constructed from the person's  _userPrincipalName_ attribute in Active Directory and is automatically assigned to the cloud account during the initial sync and once created, it cannot be modified or removed in Microsoft 365. You can subsequently change the username in the Active Directory, but it doesn't change the MOERA and you may run into issues displaying the newly changed name in the Global Address List. 
   
 To fix this, log in to the [Azure Active Directory Module for PowerShell]( https://go.microsoft.com/fwlink/?LinkId=823193) with your Microsoft 365 administrator credentials. and use the following syntax: 
   

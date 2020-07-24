@@ -107,7 +107,7 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 [Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites (public preview)](sensitivity-labels-teams-groups-sites.md) (updated)<br>Changes include:
 
 - Removed Azure AD instructions and instead linked to the [Azure AD authoritative information](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
-- Updated the [How to configure site and group settings when you create or edit sensitivity labels](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings-when-you-create-or-edit-sensitivity-labels) section with information about the **Privacy of Office 365 group-connected teams sites** setting, which includes the new **None** option.
+- Updated the [How to configure site and group settings](sensitivity-labels-teams-groups-sites.md#how-to-configure-site-and-group-settings) section with information about the **Privacy of Office 365 group-connected teams sites** setting, which includes the new **None** option.
 - Added a note describing how only labels with site and group settings will be available to select when users create teams, groups, and sites. This functionality is gradually rolling out to organizations.
 
 [Restrict access to content by using sensitivity labels to apply encryption](encryption-sensitivity-labels.md) (updated)<br>[New section](encryption-sensitivity-labels.md#example-configurations-for-the-encryption-settings) with example encryption settings for some of the most commonly used configurations to protect documents and emails.
@@ -145,7 +145,7 @@ All [Compliance Score](compliance-score.md) and [Compliance Manager](compliance-
 
 [Manage mailbox auditing](enable-mailbox-auditing.md#logon-types-and-mailbox-actions) (updated)<br>Added info about the new MailItemsAccessed mailbox action, which was introduced with advanced audit.
 
-[Search the audit log](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (updated)<br>Added new descriptions for sensitivity label activities and additional info about auditing [Forms collaboration activities](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-co-authors-and-anonymous-responders).
+[Search the audit log](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) (updated)<br>Added new descriptions for sensitivity label activities and additional info about auditing [Forms collaboration activities](search-the-audit-log-in-security-and-compliance.md#forms-activities-performed-by-coauthors-and-anonymous-responders).
 
 ### Compliance offerings
 
@@ -197,7 +197,7 @@ Updated the following articles to support the official release of insider risk m
 
 ### Records management
 
-[Overview of retention labels](labels.md) (updated)<br>The section for applying a retention label based on conditions now includes the option to use trainable classifiers.
+[Overview of retention labels](retention.md) (updated)<br>The section for applying a retention label based on conditions now includes the option to use trainable classifiers.
 
 ### Sensitivity labels
 

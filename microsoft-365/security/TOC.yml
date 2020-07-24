@@ -37,6 +37,18 @@
           href: ../enterprise/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft Secure Score
+      items: 
+        - name: Secure Score overview
+          href: mtp/microsoft-secure-score.md
+        - name: Assess your security posture
+          href: mtp/microsoft-secure-score-improvement-actions.md
+        - name: Track your score history and meet goals
+          href: mtp/microsoft-secure-score-history-metrics-trends.md
+        - name: What's coming
+          href: mtp/microsoft-secure-score-whats-coming.md
+        - name: What's new
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft Threat Protection
       items: 
         - name: Overview
@@ -115,6 +127,8 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Apply query best practices
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Use shared queries
@@ -179,20 +193,12 @@
                   items: 
                     - name: FileProfile()
                       href: mtp/advanced-hunting-fileprofile-function.md
-                - name: Apply query best practices
-                  href: mtp/advanced-hunting-best-practices.md
                 - name: Custom detections
                   items: 
                     - name: Custom detections overview
                       href: mtp/custom-detections-overview.md
                     - name: Create & manage detection rules
                       href: mtp/custom-detection-rules.md
-            - name: Microsoft Secure Score
-              items: 
-                - name: Secure Score overview
-                  href: mtp/microsoft-secure-score.md
-                - name: What's coming
-                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
               items: 
                 - name: Monitor and view reports
@@ -215,11 +221,15 @@
               href: mtp/device-profile.md
             - name: Provide feedback
               href: mtp/feedback.md
-            - name: Manage tickets through ServiceNow
-              href: ./mtp/tickets.md
+            - name: Create ServiceNow tickets and tasks
+              items:
+                - name: ServiceNow integration overview 
+                  href: ./mtp/tickets.md
+                - name: ServiceNow tickets in the security center
+                  href: ./mtp/tickets-security-center.md
 
 
-    - name: Office 365 Advanced Threat Protection
+    - name: Office 365 security
       items: 
         - name: Get started
           items: 
@@ -303,6 +313,8 @@
                       href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: Submit malware and non-malware to Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                - name: Preset security policies
+                  href: ./office-365-security/preset-security-policies.md
                 - name: Anti-spam message headers
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: How policies and protections are combined
@@ -368,7 +380,7 @@
               href: ./office-365-security/security-dashboard.md
             - name: View information about malicious files
               href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Advanced Threat Protection
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items: 
             - name: See what's new
@@ -409,8 +421,10 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Investigate and remediate malicious email
+            - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
+            - name: Remediate malicious email
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
             - name: View and read your ATP reports
               href: ./office-365-security/view-reports-for-atp.md
             - name: Understanding latest attacks with threat analytics
@@ -467,6 +481,8 @@
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: View email security reports in the Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
+            - name: View mail flow reports in the Security & Compliance Center
+              href: ./office-365-security/view-mail-flow-reports.md
             - name: Mail flow insights in the Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items: 
