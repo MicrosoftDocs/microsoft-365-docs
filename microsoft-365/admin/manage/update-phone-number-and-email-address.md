@@ -41,7 +41,7 @@ Use the **Settings and Privacy** page to change your name, mobile phone number, 
   
 1. Browse to the Microsoft 365 admin center.
 
-2. In the header, select your profile icon \> **My account** \> **Settings and Prvicay**.
+2. In the header, select your profile icon \> **My account** \> **Settings and Privacy**.
 
 3. In the **Contact Preferences** section, select **Manage and expand Contact preferences**. Update your mobile, phone, and alternate email address. Make sure you use something different from your Microsoft email address for your alternate email address.
 
