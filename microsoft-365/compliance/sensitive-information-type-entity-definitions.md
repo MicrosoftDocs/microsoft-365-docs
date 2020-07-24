@@ -366,30 +366,19 @@ Yes
 
 ### Definition
 
-A DLP policy is 95% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - The function Func_australian_medical_account_number finds content that matches the pattern.
 - A keyword from Keyword_Australia_Medical_Account_Number is found.
 - The checksum passes.
 
-A DLP policy is 85% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- The function Func_australian_medical_account_number finds content that matches the pattern.
-- The checksum passes.
 
 ```xml
   <!-- Australia Medical Account Number -->
 <Entity id="104a99a0-3d3b-4542-a40d-ab0b9e1efe63" recommendedConfidence="85" patternsProximity="300">
-    <Pattern confidenceLevel="95">
+    <Pattern confidenceLevel="85">
      <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="1">
      <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
-<Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_australian_medical_account_number"/>
-     <Any minMatches="0" maxMatches="0">
-  <Match idRef="Keyword_Australia_Medical_Account_Number"/>
-     </Any>
-  </Pattern>
+    </Pattern>
 </Entity>
 ```
 
@@ -11752,6 +11741,10 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
 - A keyword from Keyword_taiwanese_national_id is found.
 - The checksum passes.
 
+A DLP policy is 75% confident that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- The function Func_taiwanese_national_id finds content that matches the pattern.
+- The checksum passes.
+
 ```xml
 <!-- Taiwanese National ID -->
 <Entity id="4C7BFC34-8DD1-421D-8FB7-6C6182C2AF03" patternsProximity="300" recommendedConfidence="85">
@@ -11759,6 +11752,9 @@ A DLP policy is 85% confident that it's detected this type of sensitive informat
           <IdMatch idRef="Func_taiwanese_national_id" />
           <Match idRef="Keyword_taiwanese_national_id" />
       </Pattern>
+       <Pattern confidenceLevel="75">
+         <IdMatch idRef="Func_taiwanese_national_id" />
+       </Pattern>
 </Entity>
 ```
 
