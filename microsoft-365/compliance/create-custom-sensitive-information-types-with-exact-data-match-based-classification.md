@@ -305,7 +305,7 @@ During this phase, you set up a custom security group and user account, and set 
 >[!NOTE]
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group and a local admin on your machine.
 
-##### Links to EDM upload agent by subscription type
+#### Links to EDM upload agent by subscription type
 
 - [Commercial + GCC](https://download.microsoft.com/download/8/c/5/8c5344ab-e8a0-4191-a96c-7e25243f12c5/EdmUploadAgent.msi)
 - [GCC-High](https://download.microsoft.com/download/5/2/c/52c0ad46-5d09-44cb-947d-b0baadcab68e/EdmUploadAgentGccHi.msi)
