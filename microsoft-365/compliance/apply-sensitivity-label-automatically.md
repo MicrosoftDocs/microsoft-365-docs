@@ -72,7 +72,7 @@ Use the following table to help you identify the differences in behavior for the
 |:-----|:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Restrict by location|No |Yes |
-|Conditions: Trainable classifiers|Yes |No |
+|Conditions: Trainable classifiers|Yes |Yes |
 |Conditions: Sharing options and additional options for email|No |Yes |
 |Recommendations, policy tooltip, and user overrides|Yes |No |
 |Simulation mode|No |Yes |
