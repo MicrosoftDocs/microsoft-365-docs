@@ -294,7 +294,7 @@ During this phase, you set up a custom security group and user account, and set 
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#-portal-links-for-your-subscription) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
 
 2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
@@ -311,7 +311,7 @@ During this phase, you set up a custom security group and user account, and set 
 - [GCC-High](https://download.microsoft.com/download/5/2/c/52c0ad46-5d09-44cb-947d-b0baadcab68e/EdmUploadAgentGccHi.msi)
 - [DoD](https://download.microsoft.com/download/7/c/6/7c6f43c3-957d-41a7-9fa3-aecbf5ff3371/EdmUploadAgentDoD.msi)
 
-1. Download and install the appropriate [EDM Upload Agent](#-links-to-edm-upload-agent-by-subscription-type) for your subscription. By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
+1. Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription. By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
 
       > [!TIP]
       > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
@@ -472,7 +472,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 #### To create a DLP policy with EDM
 
-1. Go to the Security & Compliance Center using the appropriate [link for your subscription](#-portal-links-for-your-subscription).
+1. Go to the Security & Compliance Center using the appropriate [link for your subscription](#portal-links-for-your-subscription).
 
 2. Choose **Data loss prevention** \> **Policy**.
 
