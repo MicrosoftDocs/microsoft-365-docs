@@ -50,9 +50,7 @@ EmailEvents
 | where Timestamp > ago(7d)
 | project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
 ```
-| RecipientEmailAddress | AccountName |
-| --- | --- |
-| john@example.com | john 
+![Query results with the account name extracted from the local-host of the recipient address](../../media/mtp-ah/local-host-extracted.png)
 
 
 ### Merge the IdentityInfo table
