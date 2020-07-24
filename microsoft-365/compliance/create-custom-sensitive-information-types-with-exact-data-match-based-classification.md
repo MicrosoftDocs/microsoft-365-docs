@@ -316,6 +316,9 @@ During this phase, you set up a custom security group and user account, and set 
       > [!TIP]
       > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
 
+> [!NOTE]
+> You can upload data with the EDMUploadAgent to any given data store only twice per day.
+
 2. To authorize the EDM Upload Agent, open Windows Command Prompt (as an administrator), and then run the following command:
 
     `EdmUploadAgent.exe /Authorize`
