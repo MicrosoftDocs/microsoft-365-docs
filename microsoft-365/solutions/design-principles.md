@@ -1,5 +1,5 @@
 ---
-title: Enterprise resource planning - architecture design principles
+title: Microsoft 365 Enterprise architecture design principles
 description: Learn about Microsoft Enterprise architecture from experts in identity, cybersecurity, and networking.
 ms.author: samanro
 author: samanro
