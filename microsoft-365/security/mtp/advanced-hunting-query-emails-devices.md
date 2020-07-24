@@ -33,25 +33,43 @@ With this level of visibility, you can quickly hunt for threats that traverse se
 
 Here are some hunting scenarios and sample queries that can help you explore how you might construct queries when hunting for such sophisticated threats.
 
-## Obtain user accounts from email addresses
+## Get entity info
+
+### Obtain user accounts from email addresses
 When constructing queries across [tables that cover devices and emails](advanced-hunting-schema-tables.md), you will likely need to obtain user account names from sender or recipient email addresses. You can generally do this for either recipient or sender address using the *local-host* from the email address.
 
-In this query, we use the [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host before the `@` in the recipient email address.
+In this snippet below, we use the [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto function to extract the local-host right before the `@` from recipien email addresses in the column `RecipientEmailAddress`.
 
 ```kusto
 AccountName = tostring(split(RecipientEmailAddress, "@")[0])
 ```
-You can also get the account names and other account information by merging or joining the `IdentityInfo` table. In the example below, we use `kind=inner` to specify an [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication for the same recipient email addresses. 
+The query below shows how this snippet can be used:
+
+```kusto
+EmailEvents
+| where Timestamp > ago(7d)
+| project RecipientEmailAddress, AccountName = tostring(split(RecipientEmailAddress, "@")[0]);
+```
+| RecipientEmailAddress | AccountName |
+| --- | --- |
+| john@example.com | john 
+
+
+### Merge the IdentityInfo table
+
+You can get the account names and other account information by merging or joining the `IdentityInfo` table. The query below uses `kind=inner` to specify an [inner-join](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor), which prevents deduplication for the same recipient email addresses.
 
 ```kusto
 //Get email events with more recipient account information
 EmailEvents
 | where Timestamp > ago(1d)
 | join kind=inner IdentityInfo on $left.RecipientEmailAddress == $right.EmailAddress
-| project Timestamp, NetworkMessageId, SenderFromAddress, RecipientEmailAddress, 
-AccountName, JobTitle, Department, Subject, PhishFilterVerdict, MalwareFilterVerdict 
+| project Timestamp, NetworkMessageId, Subject, PhishFilterVerdict, MalwareFilterVerdict, SenderFromAddress, RecipientEmailAddress, AccountName, JobTitle, Department, 
 ```
-## Getting device information
+
+
+### Get information about devices
+
 
 ## Identify users and devices using the IdentityInfo and DeviceInfo tables
 You can quickly understand...
