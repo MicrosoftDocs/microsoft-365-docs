@@ -83,7 +83,8 @@ When multiple policies are applied to a user, the following order is applied fro
 
 1. **Strict protection** preset security policy
 2. **Standard protection** preset security policy
-3. Any other related policies.
+3. Custom policies
+4. Default Policy
 
 In other words, the settings of the **Strict protection** policy override the settings of the **Standard protection** policy, which overrides the settings from any other related policies.
 
