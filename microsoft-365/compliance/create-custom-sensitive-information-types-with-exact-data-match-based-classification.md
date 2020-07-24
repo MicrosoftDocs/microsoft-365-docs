@@ -313,8 +313,8 @@ During this phase, you set up a custom security group and user account, and set 
 
 1. Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription. By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
 
-      > [!TIP]
-      > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
+> [!TIP]
+> To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
 
 > [!NOTE]
 > You can upload data with the EDMUploadAgent to any given data store only twice per day.
