@@ -18,14 +18,6 @@ search.appverid:
 description: Learn how to create custom sensitive information types with Exact Data Match based classification.
 ms.custom: seo-marvel-apr2020
 ---
-
-<!-- Here are the links to the gov cloud EDM Upload agent installers.
-
-Commercial + GCC - https://download.microsoft.com/download/8/c/5/8c5344ab-e8a0-4191-a96c-7e25243f12c5/EdmUploadAgent.msi
-GCCH - https://download.microsoft.com/download/5/2/c/52c0ad46-5d09-44cb-947d-b0baadcab68e/EdmUploadAgentGccHi.msi
-DoD - https://download.microsoft.com/download/7/c/6/7c6f43c3-957d-41a7-9fa3-aecbf5ff3371/EdmUploadAgentDoD.msi
--->
-
 # Create custom sensitive information types with Exact Data Match based classification
 
 [Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the Security & Compliance Center or PowerShell to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
@@ -302,7 +294,7 @@ During this phase, you set up a custom security group and user account, and set 
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#-portal-links-for-your-subscription) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
 
 2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
@@ -313,7 +305,13 @@ During this phase, you set up a custom security group and user account, and set 
 >[!NOTE]
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group and a local admin on your machine.
 
-1. Download and install the [EDM Upload Agent](https://go.microsoft.com/fwlink/?linkid=2088639). By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
+##### Links to EDM upload agent by subscription type
+
+- [Commercial + GCC](https://download.microsoft.com/download/8/c/5/8c5344ab-e8a0-4191-a96c-7e25243f12c5/EdmUploadAgent.msi)
+- [GCC-High](https://download.microsoft.com/download/5/2/c/52c0ad46-5d09-44cb-947d-b0baadcab68e/EdmUploadAgentGccHi.msi)
+- [DoD](https://download.microsoft.com/download/7/c/6/7c6f43c3-957d-41a7-9fa3-aecbf5ff3371/EdmUploadAgentDoD.msi)
+
+1. Download and install the appropriate [EDM Upload Agent](#-links-to-edm-upload-agent-by-subscription-type) for your subscription. By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
 
       > [!TIP]
       > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
@@ -471,7 +469,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 #### To create a DLP policy with EDM
 
-1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com/)).
+1. Go to the Security & Compliance Center using the appropriate [link for your subscription](#-portal-links-for-your-subscription).
 
 2. Choose **Data loss prevention** \> **Policy**.
 
