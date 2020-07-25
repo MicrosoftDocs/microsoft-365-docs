@@ -163,6 +163,13 @@ The output from this cmdlet includes:
 
   - **Rolling:** A key roll is in progress. If the key for the geo is rolling, you'll also be shown information on what percentage of sites have completed the key roll operation so that you can monitor progress.
 
+## Unassign DEP from a mailbox
+
+You can unassign a Customer Key DEP from a mailbox by assigning $NULL DEP to the mailbox. Doing so will unassign the currently assigned Customer Key DEP and reencrypt the mailbox using the default Microsoft managed keys DEP. You can not unassign the Microsoft managed keys DEP. You can reassign another Customer Key DEP to the same mailbox.
+
+```powershell
+Set-Mailbox -Identity <mailbox> -DataEncryptionPolicy $NULL
+```
 ## Revoke your keys and start the data purge path process
 
 You control the revocation of all root keys including the availability key. Customer Key provides control of the exit planning aspect of the regulatory requirements for you. If you decide to revoke your keys to purge your data and exit the service, the service deletes the availability key once the data purge process completes.
