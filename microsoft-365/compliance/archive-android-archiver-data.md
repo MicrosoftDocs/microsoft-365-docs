@@ -11,7 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: "Admins can set up a connector to import and archive SMS, MMS, and voice calls from Android mobile phones. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
+description: "Admins can set up a TeleMessage connector to import and archive SMS, MMS, and voice calls from Android mobile phones. This lets you archive data from third-party data sources in Microsoft 365 so you can use compliance features such as legal hold, content search, and retention policies to manage your organization's third-party data."
 ---
 
 # Set up a connector to archive Android mobile data
@@ -42,7 +42,7 @@ Many of the implementation steps required to archive Android communication data 
 
 - Register all users that require the Android Archiver service in the TeleMessage account. When registering users, be sure to use the same email address that's used for their Microsoft 365 account.
 
-- Install and activate the TeleMessage Android Archiver app on the mobile phones of your employees. 
+- Install and activate the TeleMessage Android Archiver app on the mobile phones of your employees.
 
 - Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. You will need to provide this consent when you create the connector. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request. You have to complete this step before you can successfully create an AT&T Network connector.
 
@@ -68,9 +68,13 @@ The last step is to create an Android Archiver connector in the Microsoft 365 co
 
 6. On the **User mapping** page, enable automatic user mapping and click **Next**. In case you need custom mapping upload a CSV file, and click **Next**.
 
-7. Provide admin consent, by clicking **Next**. Review your settings, and then click **Finish** to create the connector.
+7. Provide admin consent and then click **Next**.
 
-8. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
+   To provide admin consent, you must be signed in with the credentials of an Office 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign-in using global admin credentials to accept the request.
+
+8. Review your settings, and then click **Finish** to create the connector.
+
+9. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Known issues
 

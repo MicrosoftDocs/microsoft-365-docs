@@ -36,19 +36,19 @@ The following overview explains the process of using a connector to archive Ente
 
 Many of the implementation steps required to archive Enterprise Number Archiver data are external to Microsoft 365 and must be completed before you can create the connector in the compliance center.
 
-- Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. To consent to this request, go to [<span class="underline">this page</span>](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request. You have to complete this step before you can successfully create the Enterprise Number Archiver connector in Step 3.
+- Order the [Enterprise Number Archiver service from TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365) and get a valid administration account for your organization. You'll need to sign into this account when you create the connector in the compliance center.
 
-- The user who creates an Enterprise Number Archiver connector in Step 3 must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [<span class="underline">Create role groups</span>](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [<span class="underline">Modify role groups</span>](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
+- Register all users that require Enterprise Number SMS/MMS Network archiving in the TeleMessage account. When registering users, be sure to use the same email address that's used for their Microsoft 365 account.
 
-- You will also need to [order the service from TeleMessage](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365/) and get a valid company administration account.
+- Install and activate the TeleMessage Enterprise Number Archiver app on the mobile phones of your employees.
 
-- Register all users that require Enterprise Number SMS/MMS Network archiving in the TeleMessage account with the same email as configured in the Microsoft 365 account.
+- Your organization must consent to allow the Office 365 Import service to access mailbox data in your organization. You will need to provide this consent when you create the connector. To consent to this request, go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent), sign in with the credentials of an Office 365 global admin, and then accept the request. You have to complete this step before you can successfully create a Bell Network connector.
 
-- You’ll need to install the TeleMessage Enterprise Number Archiver app on the mobile phones of your employees and activate it.
+- The user who creates a Enterprise Number Archiver connector must be assigned the Mailbox Import Export role in Exchange Online. This is required to add connectors in the **Data connectors** page in the Microsoft 365 compliance center. By default, this role isn't assigned to any role group in Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group in Exchange Online. Or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. For more information, see the [Create role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) or [Modify role groups](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) sections in the article "Manage role groups in Exchange Online".
 
 ## Create an Enterprise Number Archiver connector
 
-The last step is to create an Enterprise Number Archiver connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the TeleMessage site and transfer SMS,MMS, and Voice Call messages to the corresponding user mailbox boxes in Microsoft 365.
+After you've completed the prerequisites described in the previous section, you can create an Enterprise Number Archiver connector in the Microsoft 365 compliance center. The connector uses the information you provide to connect to the TeleMessage site and transfer SMS, MMS, and voice call messages to the corresponding user mailbox boxes in Microsoft 365.
 
 1. Go to [https://compliance.microsoft.com](https://compliance.microsoft.com/) and then click **Data connectors** \> **Enterprise Number Archiver**.
 
@@ -57,21 +57,23 @@ The last step is to create an Enterprise Number Archiver connector in the Micros
 3. On the **Terms of service** page, click **Accept**.
 
 4. On the **Login to TeleMessage** page, under Step 3, enter the required information in the following boxes and then click **Next**.
-    
-    - **Username :** Your TeleMessage Username
-    
-    - **Password:** Your TeleMessage password
 
-<!-- end list -->
+   - **Username:** Your TeleMessage username.
 
-1. Once the connector is created, you can close the pop up window and move forward.
+   - **Password:** Your TeleMessage password.
 
-2. On the **User mapping** page, enable automatic user mapping and click **Next**. In case you need custom mapping upload a CSV file, and click **Next**.
+5. After the connector is created, you can close the pop-up window and go to the next page.
 
-3. Provide admin consent, by clicking **Next**. Review your settings, and then click **Finish** to create the connector.
+6. On the **User mapping** page, enable automatic user mapping. To enable custom mapping, upload a CSV file that contains the user mapping information, and then click **Next**.
 
-4. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
+7. Provide admin consent and then click **Next**.
+
+   To provide admin consent, you must be signed in with the credentials of an Office 365 global admin, and then accept the consent request. If you aren't signed in as a global admin, you can go to [this page](https://login.microsoftonline.com/common/oauth2/authorize?client_id=570d0bec-d001-4c4e-985e-3ab17fdc3073&response_type=code&redirect_uri=https://portal.azure.com/&nonce=1234&prompt=admin_consent) and sign-in using global admin credentials to accept the request.
+
+8. Review your settings, and then click **Finish** to create the connector.
+
+9. Go to the Connectors tab in **Data connectors** page to see the progress of the import process for the new connector.
 
 ## Known issues
 
-This connector doesn’t archive any attachment larger than 10 MB.
+- The connector doesn’t import any item larger than 10 MB.
