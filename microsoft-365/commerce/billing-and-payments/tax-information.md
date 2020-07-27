@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,10 +15,7 @@ ms.collection:
 - Adm_TOC
 - commerce
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 description: "Find out how much tax you will be charged for your Microsoft 365 for business subscription in different regions. "
 ms.custom:
 - okr_SMB
@@ -117,7 +114,7 @@ You might qualify for VAT zero-rating:
 
 3. In the **Settings & Actions** section, select **Edit service usage address**.
 
-4. On the **Edit your service usage address** page, enter your VAT ID in the **VAT number** box, and then select **Save**.
+4. On the **Edit your service usage address** page, enter your VAT ID, including the prefix and without any spaces, in the **VAT number** box, and then select **Save**.
 
 ::: moniker-end
 
