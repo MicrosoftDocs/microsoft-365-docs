@@ -5,9 +5,8 @@ f1.keywords:
 ms.author: samanro
 author: samanro
 manager: scotv
-layout: LandingPage
 ms.audience: Admin
-ms.topic: landing-page
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -56,122 +55,25 @@ For more information about what's included, see [Microsoft 365 Business Premium]
 Get started
 --------------------------
 
-<ul class="panelContent cardsJ">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.svg" alt="Roadmap" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <p><b>Follow these steps to get started:</b></p>
-                        <P><a href="get-microsoft-365-campaigns.md">Get Microsoft 365 campaigns</a></p>
-                        <P><a href="m365-campaigns-users.md">Learn how your users will work with Microsoft 365</a></p>
-                        <P><a href="microsoft-365-campaigns-setup-overview.md">Set up Microsoft 365 campaigns</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+![Roadmap](https://docs.microsoft.com/office/media/icons/walkthrough-map-blue.png) **Follow these steps to get started:**  
+
+- [Get Microsoft 365 campaigns](get-microsoft-365-campaigns.md)
+- [Learn how your users will work with Microsoft 365](m365-campaigns-users.md)
+- [Set up Microsoft 365 campaigns](microsoft-365-campaigns-setup-overview.md)
+
+
 
 Solutions for your campaign or small business
 --------------------------
 
 After you set up your secure Microsoft 365 environment, you can use the following solutions to get working:
 
-<ul class="panelContent cardsW cols cols2">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-teams-collab.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Create teams for collaboration</h3>
-                        <p>Make a space for communication and collaboration with specific teams for key staff, all staff, and partners or vendors with Microsoft Teams.</p>
-                        <p><a href="create-teams-for-collaboration.md">Create your team</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-meetings.png" alt="an online meeting" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Set up online meetings</h3>
-                        <p>Schedule a meeting with audio, video, and sharing with Microsoft Teams.</p>
-                        <p><a href="set-up-meetings.md">Set up a meeting</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-campaign-email-encrypt.png" alt="Encrypted and labeled email" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Encrypt or label your sensitive email</h3>
-                        <p>Use encryption and sensitivity labels to protect email that contains confidential or sensitive information.</p>
-                        <p><a href="send-encrypted-email.md">Send encrypted email</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/sm-m365-democracy-comms-site.png" alt="a SharePoint communications site" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Create a communications site</h3>
-                        <p>Share events, message, images, and more with your team in an internal communications site created with SharePoint.</p>
-                        <p><a href="create-communications-site.md">Create your site</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/m365-democracy-teams-sharefiles.png" alt="sharing a file in Microsoft Teams" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Share files and videos</h3>
-                        <p>Save your files and videos to the cloud so they're available to all of the appropriate people.</p>
-                        <p><a href="share-files-and-videos.md">Start sharing</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
+|               |               |
+| ------------- | ------------- |
+| ![a SharePoint communication site](../media/sm-m365-democracy-teams-collab.png) | ![an online meeting](../media/m365-democracy-teams-meetings.png) |
+| **Create teams for collaboration**  Make a space for communication and collaboration with specific teams for key staff, all staff, and partners or vendors with Microsoft Teams. [Create your team](create-teams-for-collaboration.md) | **Set up online meetings**  Schedule a meeting with audio, video, and sharing with Microsoft Teams. [Set up a meeting](set-up-meetings.md) |
+| ![Encrypted and labeled email](../media/sm-m365-campaign-email-encrypt.png) | ![a SharePoint communications site](../media/sm-m365-democracy-comms-site.png) |
+| **Encrypt or label your sensitive email**  Use encryption and sensitivity labels to protect email that contains confidential or sensitive information. [Send encrypted email](send-encrypted-email.md) | **Create a communications site**  Share events, message, images, and more with your team in an internal communications site created with SharePoint. [Create your site](create-communications-site.md) |
+| ![sharing a file in Microsoft Teams](../media/m365-democracy-teams-sharefiles.png) | |
+| **Share files and videos**  Save your files and videos to the cloud so they're available to all of the appropriate people. [Start sharing](share-files-and-videos.md) | |
+
