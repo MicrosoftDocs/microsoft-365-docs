@@ -261,7 +261,7 @@
       items: 
         - name: Overview of archiving third-party data
           href: archiving-third-party-data.md
-        - name: Microsoft connectors
+        - name: Microsoft data connectors
           items:  
             - name: Bloomberg Message
               href: archive-bloomberg-message-data.md 
@@ -277,7 +277,7 @@
               href: archive-linkedin-data.md
             - name: Twitter
               href: archive-twitter-data-with-sample-connector.md
-        - name: TeleMessage connectors
+        - name: TeleMessage data connectors
           items:  
             - name: AT&T Network
               href: archive-att-network-archiver-data.md
