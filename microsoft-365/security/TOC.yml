@@ -85,10 +85,13 @@
               href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
+        - name: Run a proof-of-concept
         - name: How-to guides
           items: 
             - name: Create a trial lab environment
-              href: mtp/mtp-evaluation.md             
+              href: mtp/mtp-evaluation.md
+            - name: Run a pilot
+              href: mtp/mtp-evaluation.md
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
