@@ -92,7 +92,7 @@ PS C:\> Connect-SecMgmtAccount
 PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device Management'
 ```
 
-The first command will establish a connection with the Microsoft cloud, and when you are prompted specify your Microsoft 365 Business Premium global admin credentials.
+The first command will establish a connection with the Microsoft cloud, and when you are prompted, specify your Microsoft 365 Business Premium global admin credentials.
 
 ## 5. Link the Group Policy
 
