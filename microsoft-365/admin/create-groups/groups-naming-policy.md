@@ -76,6 +76,9 @@ It's recommended that you use attributes that have values filled in for all user
 
 - Prefixes and suffixes can contain special characters supported in group name and group alias. When the prefixes and suffixes contain special characters that are not allowed in the group alias, they are only applied to the group name. So in this case, the prefixes and suffixes applied to group name would be different from the ones applied to the group alias.
 
+  > [!NOTE]
+  > A period (.) or a hyphen (-) is permitted anywhere in the group name, except at the beginning or end of the name. An underscore (_) is permitted anywhere in the group name, including at the beginning or end of the name.
+
 - If you are using Yammer Microsoft 365 connected groups, avoid using the following characters in your naming policy: @, \#, \[, \], \<, and \>. If these characters are in the naming policy, regular Yammer users will not be able to create groups.
 
 ## Custom blocked words

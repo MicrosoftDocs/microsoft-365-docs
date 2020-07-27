@@ -1,5 +1,5 @@
 ---
-title: "Manage protected devices with Microsoft 365 for business"
+title: "Manage protected devices with Microsoft 365 Business Premium"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -39,5 +39,7 @@ For more information on the tasks you can use to manage devices, see these artic
 [Remove company data from devices](remove-company-data.md)
   
 [Reset Windows 10 devices to their factory settings](reset-devices-to-factory-settings.md)
+
+[Add a managed device](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
   
 

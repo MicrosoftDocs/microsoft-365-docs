@@ -39,8 +39,12 @@ landingContent:
             url: ../manage/assign-licenses-to-users.md  
           - text: Remove licenses from users
             url: ../manage/remove-licenses-from-users.md
+          - text: Guest users
+            url: about-guest-users.md
           - text: Use your custom domain
             url: ../email/change-email-address.md
+          - text: Upgrade users to the latest apps 
+            url: ../setup/upgrade-users-to-latest-office-client.md
   # Card
   - title: Manage groups
     linkLists:

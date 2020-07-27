@@ -82,7 +82,7 @@ Click OK.
 
 20. In the **Add App** pane, select **App Suite Settings**.
 
-21. For **Update Channel**, select **Semi-Annual**, and then click **OK**.
+21. For **Update Channel**, select **Semi-Annual Enterprise**, and then click **OK**.
 
 22. In the **Add app** pane, click **Add**.
 

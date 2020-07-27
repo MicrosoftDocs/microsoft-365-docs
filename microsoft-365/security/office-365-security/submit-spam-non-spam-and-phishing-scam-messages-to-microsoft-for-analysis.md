@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
-description: "Admins and en-users can learn how to email messages (good mail marked as bad or bad mail allowed) to Microsoft for analysis."
+description: "Admins and end users can learn how to email messages (good mail marked as bad or bad mail allowed) to Microsoft for analysis."
 ms.custom: seo-marvel-apr2020
 ---
 

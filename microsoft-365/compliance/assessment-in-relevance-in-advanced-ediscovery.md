@@ -15,7 +15,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: "Get an overview of the Assessment stage and its role in determining the richness of issues during Relevance training in Advanced eDiscovery."
+description: "Get an overview of the Assessment stage and its role in determining the richness of issues during Relevance training in Microsoft 365 Advanced eDiscovery."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Understand Assessment in Relevance in Advanced eDiscovery (classic)
@@ -48,7 +49,7 @@ You can accept the Relevance recommendations or adjust the current margin of err
 > [!NOTE]
 > The Assessment stage can be bypassed, in the **Relevance \> Track** tab in the expanded view for an issue, by clearing the **Assessment** check box per issue and then for "all issues". However, as a result, there will be no statistics for this issue. > Clearing the **Assessment** check box can only be done before assessment is performed. Where multiple issues exist in a case, assessment is bypassed only if the check box is cleared for each issue 
   
-## See also
+## Related topics
 
 [Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   

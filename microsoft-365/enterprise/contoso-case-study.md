@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 11/18/2019
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -67,6 +67,10 @@ See these articles for the details:
 - [Team for a top-secret project](../solutions/contoso-team-for-top-secret-project.md)
 
   To create a secure collaboration environment for a top secret project, Contoso used a team with security isolation.
+
+- [Teams voice migration overview](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+
+  Learn how Contoso migrated their on-premises users to Teams for unified communication, collaboration, and voice.
 
 ## Next step
 

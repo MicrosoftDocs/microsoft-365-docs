@@ -17,8 +17,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
-description: "Use the new Intelligent Import feature in the Office 365 Import service to filter the items that actually get imported to the target mailboxes. Intelligent Import lets you proactively decide what data to import and what to leave behind. Intelligent Import also provides insights on the data that you're importing to Office 365.
-"
+ms.custom: seo-marvel-apr2020
+description: "Learn how to filter data using the intelligent import feature in the Office 365 import service when you import PST files to Office 365."
 ---
 
 # Filter data when importing PST files
@@ -43,7 +43,7 @@ The following graphic shows the Intelligent Import process, and highlights the t
   
 ![The Intelligent Import process in Office 365](../media/f2ec309b-11f5-48f2-939c-a6ff72152d14.png)
   
-## Before you begin
+## Create a PST import job
 
 - The steps in this topic assume that you've created a PST import job in the Office 365 Import service by using network upload or drive shipping. For step-by-step instructions, see one of the following topics:
     

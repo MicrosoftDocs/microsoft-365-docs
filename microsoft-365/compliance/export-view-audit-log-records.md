@@ -16,7 +16,8 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: "After you export and download the results of an audit log search to a CSV file, you can use the JSON transform feature in the Power Query Editor in Excel to split each property in the JSON object in the AuditData column into its own column. This can help you quickly locate the specific auditing data you're looking for. You can also use PowerShell to search and export audit log records."
+ms.custom: seo-marvel-apr2020
+description: "In this article, you will learn how to export, configure, and view Microsoft 365 audit log records."
 ---
 
 # Export, configure, and view audit log records

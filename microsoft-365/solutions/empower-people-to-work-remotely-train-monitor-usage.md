@@ -25,7 +25,7 @@ Train your remote workers on:
 
 - Proper sign-in procedures using MFA, including registering an additional verification method.
 - The use of devices and how endpoint management policies can be used to block access for non-compliant devices.
-- The use of allowed apps and how endpoint management app polices can be used to block the use of apps.
+- The use of allowed apps and how endpoint management application polices can be used to block the use of apps.
 - Windows 10 Enterprise security features.
 - How to use [Teams](https://docs.microsoft.com/microsoftteams/training-microsoft-teams-landing-page) for chat, video-based conferencing, document sharing, and threaded conversations.
 - How to use [Outlook](https://support.office.com/article/outlook-training-8a5b816d-9052-4190-a5eb-494512343cca) for email and scheduling.
@@ -38,7 +38,7 @@ In the weeks after training:
 - Quickly address remote worker feedback and fine tune policies and configurations.
 - Analyze usage for teams, email, SharePoint sites, and OneDrive folders and compare it with usage expectations.
 
-Retrain your users as needed.
+Then, retrain your users as needed.
 
 ## Results of Step 6
 

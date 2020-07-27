@@ -52,7 +52,16 @@ Information that is critical to your organization's success, or has stringent se
 
 For all the scenarios noted above, you can use teams in Microsoft Teams to store, share, and collaborate on the information. 
 
-## Using Teams for all kinds of data
+To configure secure collabration, you use these Microsoft 365 capabilities and features.
+
+| Product or component | Capability or feature | Licensing |
+|:-------|:-----|:-------|
+| Office 365 Advanced Threat Protection	| ATP Safe Attachments for SPO, OneDrive and Teams; ATP Safe Documents; ATP Safe Links for Teams	| Microsoft 365 E1, E3 and E5 |
+| SharePoint	| Site and file sharing policies, Site sharing permissions, Sharing links, Access requests, Site guest sharing settings	| Microsoft 365 E1, E3 and E5 |
+| Microsoft Teams	| Guest access, private teams, private channels	| Microsoft 365 E1, E3 and E5 |
+| Microsoft 365 Compliance	| Sensitivity labels	| Microsoft 365 E3 and E5 |
+
+### Using Teams for all kinds of data
 
 To manage access to information with different sensitivities, we've developed [three different tiers of protection for Teams](configure-teams-three-tiers-protection.md). You can customize any of these tiers to better address the needs or your business. 
 
@@ -86,7 +95,7 @@ Start with the baseline tier, and then add teams that use the *sensitive* and *h
 
 If you have a highly sensitive project that requires additional protection from sharing even within your organization, you can configure a team that uses its own sensitivity label to encrypt files so that only team members can read them. See [Configure a team with security isolation](secure-teams-security-isolation.md) for details.
 
-## Sharing with people outside your organization
+### Sharing with people outside your organization
 
 You may need to [share information of any sensitivity with people outside your organization](collaborate-with-people-outside-your-organization.md). This could range from sharing a single document with a single person to collaborating on a major project with a large partner organization or freelancers from around the world. In Microsoft 365, this range of external sharing can be done easily and with the appropriate safeguards to help protect your sensitive information.
 
@@ -103,6 +112,12 @@ Depending on the sensitivity of the information being shared, you can add safegu
 - [Create a secure guest sharing environment](create-secure-guest-sharing-environment.md)
 
 If you have a major project with a partner organization, you can use Azure Entitlement Management to manage the guests from that organization in a team that you set up for the project. See [Create a B2B extranet with managed guests](b2b-extranet.md) for details.
+
+## Deploy the secure collaboration solution
+
+When you're ready to deploy this solution, continue with these steps:
+1. Configure the [three different tiers of protection for Teams](configure-teams-three-tiers-protection.md).
+2. Configure settings for [sharing information of any sensitivity with people outside your organization](collaborate-with-people-outside-your-organization.md).
 
 ## See also
 

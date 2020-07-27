@@ -11,7 +11,9 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
-description: "Learn how to create an In-Place Hold for a soft-deleted mailbox to make it inactive and preserve its contents. Then you can use Microsoft eDiscovery tools to search the inactive mailbox."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to create an In-Place Hold for a soft-deleted mailbox to make it inactive and preserve its contents.
 ---
 
 # Put an In-Place Hold on a soft-deleted mailbox in Exchange Online
@@ -26,7 +28,7 @@ You might have a situation where a person has left your organization, and their 
 > [!NOTE]
 > In Exchange Online, a soft-deleted mailbox is a mailbox that's been deleted but can be recovered within a specific retention period. The soft-deleted mailbox retention period in Exchange Online is 30 days. This means that the mailbox can be recovered (or made an inactive mailbox) within 30 days of being deleted. After 30 days, a soft-deleted mailbox is marked for permanent deletion and can't be recovered or made inactive. 
   
-## Before you begin
+## Requirements for In-Place Holds
 
 - You have to use the **New-MailboxSearch** cmdlet in Windows PowerShell to put an In-Place Hold on a soft-deleted mailbox. You can't use the Exchange admin center (EAC) or the eDiscovery Center in SharePoint Online. 
 

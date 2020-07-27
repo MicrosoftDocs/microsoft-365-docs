@@ -24,7 +24,7 @@ description: "Learn how to upgrade one or many distribution lists to Microsoft 3
 
 # Upgrade distribution lists to Microsoft 365 Groups in Outlook
 
-You can upgrade distribution lists to Microsoft 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/en-us/office/why-you-should-upgrade-your-distribution-lists-to-groups-in-outlook-7fb3d880-593b-4909-aafa-950dd50ce188)
+You can upgrade distribution lists to Microsoft 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 You can upgrade DLs one at a time, or several at the same time.
 
@@ -47,7 +47,7 @@ You must be a global admin or Exchange admin to upgrade a distribution list. To 
 7. If you selected a DL for upgrade, but it's still appears on the page as Available to upgrade, then it failed to upgrade. See [What to do if the upgrade doesn't work](#what-to-do-if-the-upgrade-doesnt-work).
 
 > [!NOTE]
-> If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/en-us/office/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
+> If you're getting the groups digest emails you may notice at the bottom that it will sometimes offer to let you upgrade any eligible distribution lists that you're the owner of. See [Have a group conversation in Outlook](https://support.microsoft.com/office/a0482e24-a769-4e39-a5ba-a7c56e828b22) for more information about digest emails.
 
 
 ## What to do if the upgrade doesn't work
@@ -66,11 +66,15 @@ If you're experienced at using PowerShell, you might want to go this route inste
 
 To upgrade a single DL run the following command:
 
-`Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
+```
 
 For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run the following command:
 
-`Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```PowerShell
+Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
+```
 
 > [!NOTE]
 > You can also upgrade a single distribution list to a Microsoft 365 group using the [New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379) PowerShell cmdlet
@@ -79,9 +83,8 @@ For example, if you want to upgrade a DLs with SMTP address dl1@contoso.com, run
 
 You can also pass multiple DLs as a batch and upgrade them together:
 
-```
+```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
@@ -98,7 +101,7 @@ There are two ways in which you can upgrade all the eligible DLs.
 
 1. Get the eligible DLs in the tenant and upgrade them using the upgrade command:
 
-```
+```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -106,7 +109,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 
 2. Get the list of all DLs and upgrade only the eligible DLs:
 
-```
+```PowerShell
 Get-DistributionGroup| Foreach-Object{
     Upgrade-DistributionGroup -DlIdentities $_.PrimarySMTPAddress
 }
@@ -151,7 +154,7 @@ People with global admin or Exchange admin rights.
 
 - For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. The contact card of the recipient will be the distribution lists contact card. This is because of the recipient cache or nick name cache in Outlook. The email will be sent successfully to the group, but might cause confusion to the sender.<br/>You can perform the steps in this topic, [Information about the Outlook AutoComplete list](https://go.microsoft.com/fwlink/?LinkID=798736) to reset the cache, which will fix this issue.
 
-- For Outlook on the web: In case of Outlook on the web, the distribution list recipient will still remain in the cache. You can follow the steps in [Remove suggested name or email address from the Auto-Complete List](https://support.office.com/article/9E1419D9-E88F-445B-B07F-F558B8A37C58.aspx) to refresh the cache to see the group contact card.
+- For Outlook on the web: In case of Outlook on the web, the distribution list recipient will still remain in the cache. You can follow the steps in [Remove suggested name or email address from the Auto-Complete List](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) to refresh the cache to see the group contact card.
 
 ### Do new group members get a welcome email in their inbox?
 

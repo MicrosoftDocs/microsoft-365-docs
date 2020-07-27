@@ -11,6 +11,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the Slow mail flow rules insight in the mail flow dashboard in the Security & Compliance Center."
 ---
 
@@ -32,6 +34,6 @@ When you click **View details**, a flyout pane appears where you can review the 
 
 ![Flyout pane after clicking View details in a slow mail flow rules insight in the mail flow dashboard](../../media/2cbd43b7-1f21-4338-a70c-7b50de5c69cd.png)
 
-## See also
+## Related topics
 
 For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

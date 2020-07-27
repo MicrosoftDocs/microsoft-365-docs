@@ -46,9 +46,9 @@ Filters and breakdowns of the information allow for more granular categorization
 
 |||
 |---|---|
-|By detection type|What policy helped catch these threats?|
+|By policy type|What policy helped catch these threats?|
 |By detection technology|What underlying Microsoft technology caught the threat?|
-|By delivery status|What happened to the email messages detected as threats?|
+|By delivery status|What was the final delivery status of email messages detected as threats?|
 |
 
 > [!TIP]
@@ -60,7 +60,8 @@ These views give you the option to export, via a button click (in **Email** \> *
 
 ![This graphic shows Export as an option in the menu for the Malware view, right between Create Schedule, and Request Report.](../../media/tp-threatProtectStatRpt-BreakDownByExport.png)
 
-**Note**: The maximum number of entries that can be exported for **Phish** and **Malware** is just under 10000. If you export a view, only the most recent 10000 entries are exported.
+> [!NOTE]
+> The maximum number of entries that can be exported for **Phish** and **Malware** is just under 10000. If you export a view, only the most recent 10000 entries are exported. On the exported data, the _message count_ column represents the number of messages detected by the detection technology and policy type.    
 
 The Overview and Emails views will display information within hours of processing rather than in 24 hours (demand re. increased speeds here has been a clear signal)!
 
@@ -75,7 +76,7 @@ To get detailed status for a day, hover over the graph.
 
 ![ATP Threat Protection Status data for a day](../../media/d5c2c6ad-c002-4985-a032-c866e46fdea8.png)
 
-By default, the Threat Protection Status report shows data for the past seven days. However, you can choose **Filters** and change the date range to view data for up to 90 days. (If you are using a trial subscription, you might be limited to 30 days' of data.)
+By default, the Threat Protection Status report shows data for the past seven days. However, you can choose **Filters** and change the date range to view data for up to 90 days for the aggregate view and 30 days for the detail view. (If you are using a trial subscription, you might be limited to 30 days' of data.)
 
 ![ATP Threat Protection Status filters](../../media/4f703369-642b-402b-9758-b9c828283410.png)
 
@@ -106,7 +107,7 @@ To view this report, in the [Security &amp; Compliance Center](https://protectio
 
 ![ATP File Types report](../../media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
-When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection](anti-spam-and-anti-malware-protection.md).
+When you hover over a particular day, you can see the breakdown of types of malicious files that were detected by [ATP Safe Attachments](atp-safe-attachments.md) and [anti-spam &amp; anti-malware protection](anti-spam-and-anti-malware-protection.md). The aggregate view of the report allows for 90 days of filtering, while the detail view only allows for ten days of filtering. 
   
 ![ATP File Types report data for a day](../../media/10d18428-699a-41d2-a73e-be3a8214ada1.png)
 
@@ -147,7 +148,7 @@ In order to view and use the reports described in this article, **you must have 
   - Security Operator (this can be assigned in the Azure Active Directory admin center ([https://aad.portal.azure.com](https://aad.portal.azure.com)))
   - Security Reader
 
-- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell)):
+- For Exchange Online, you must have one of the following roles assigned in either the Exchange admin center ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) or with PowerShell cmdlets (See [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)):
 
   - Organization Management
   - View-only Organization Management
@@ -168,8 +169,4 @@ If you are not seeing data in your ATP reports, double-check that your policies 
 
 [Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
-[Create a schedule for a report in the Security &amp; Compliance Center](create-a-schedule-for-a-report.md)
-
-[Set up and download a custom report in the Security &amp; Compliance Center](set-up-and-download-a-custom-report.md)
-
 [Role permissions (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)

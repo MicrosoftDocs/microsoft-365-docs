@@ -34,7 +34,7 @@ The **Send on Behalf** permission lets a user send email on behalf of a Microsof
 > You can configure **Send as** or **Send on behalf** for a given user, but not both. If you configure both, it will default to **Send as**.
 
 > [!TIP]
-> See [Send email from or on behalf of a Microsoft 365 group](https://support.office.com/article/0f4964af-aec6-484b-a65c-0434df8cdb6b.aspx) to learn how to use Outlook and Outlook on the Web to send email from a group.
+> See [Send email from or on behalf of a Microsoft 365 group](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) to learn how to use Outlook and Outlook on the Web to send email from a group.
     
 ## Allow members to send email as a group
 
@@ -71,10 +71,13 @@ This section explains how to allow users to send email on behalf of a group in t
 5. Type to search or pick a user from the list. Select **OK** and **Save**.
     
     ![Type to search or pick a user from the list](../../media/522919cf-664c-4a25-8076-c51c8c9fbe43.png)
+    
+> [!NOTE]
+> It may take up to two hours for changes to take effect.
 
 ## Related articles
 
-[Learn more about Microsoft 365 groups](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+[Learn more about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 [Add-RecipientPermission](https://go.microsoft.com/fwlink/p/?LinkId=723960)
 

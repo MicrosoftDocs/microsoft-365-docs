@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Productivity score"
+title: "Microsoft Productivity Score"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -21,7 +21,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of Microsoft productivity score."
 ---
 
-# Microsoft Productivity score (Preview)
+# Microsoft Productivity Score (Preview)
 
 Productivity Score helps organizations transform how work gets done with insights about how people use Microsoft 365 and the technology experiences that support them. The score reflects your organization’s performance against employee and technology experience measures and compares your score with organizations like yours.
 
@@ -84,7 +84,7 @@ You can access the experience from Microsoft 365 Admin home under **Reports** > 
 
 The Productivity Score home page shows your total score and score history as well as the primary insight for each category
 
-![Productivity score home page](../../media/pslanding.png)
+![Productivity Score home page](../../media/pslanding.png)
 
 **Your score** is shown as a percent value as well as in points so you can see your points (numerator) and maximum possible points (denominator).
 
@@ -130,6 +130,22 @@ The primary insight for mobility is the number of people who access files and us
 
 We measure the percentage and absolute number of people who used at least one Microsoft 365 productivity app across two or more platforms, including desktop, mobile and web. The productivity apps we measure are Outlook, Teams, Word, Excel, PowerPoint, OneNote, Yammer, and Skype. People must have Microsoft 365 apps for enterprise, Exchange, Yammer, Skype, or Teams licenses to be measured. 
 
-## we want to hear from you
+## Business continuity special report
+
+The Business continuity report is a limited-time Workplace Intelligence report available to all Microsoft 365 customers to help them guide their organizations during this challenging time.  
+
+This report helps business leaders understand: 
+
+- How collaboration and communication is affected by the shift to remote work. 
+
+- The impact on work-life balance as people adjust to working from home. 
+
+- If remote meetings support effective decision-making.
+
+[Learn more about the Business continuity report](https://aka.ms/bcrps)
+
+[Learn more about Microsoft Graph](https://docs.microsoft.com/graph/)
+
+## We want to hear from you
 
 Please share your thoughts about Productivity Score and your ideas about how to improve it. Use the **Feedback** sections within the product and/or reach out to the Productivity Score team at ProductivityScorePreview@service.microsoft.com.

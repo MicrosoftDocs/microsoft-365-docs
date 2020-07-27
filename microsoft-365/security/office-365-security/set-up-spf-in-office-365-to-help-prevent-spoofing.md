@@ -44,7 +44,7 @@ Before you update the TXT record in DNS, you need to gather some information and
 
 Gather this information:
 
-- The current SPF TXT record for your custom domain. For instructions, see [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/office365/admin/get-help-with-domains/information-for-dns-records).
+- The current SPF TXT record for your custom domain. For instructions, see [Gather the information you need to create Office 365 DNS records](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
 
 - External IP addresses of all on-premises messaging servers. For example, **131.107.2.200**.
 
@@ -54,7 +54,7 @@ Gather this information:
 
 ### To add or update your SPF TXT record
 
-1. Ensure that you're familiar with the SFP syntax in the following table.
+1. Ensure that you're familiar with the SPF syntax in the following table.
 
    ||**If you're using...**|**Common for customers?**|**Add this...**|
    |:-----|:-----|:-----|:-----|
@@ -80,7 +80,7 @@ Gather this information:
 
    If you're already deployed in Office 365 and have set up your SPF TXT records for your custom domain, and you're migrating to Office 365 Germany, you need to update your SPF TXT record. To do this, change **include:spf.protection.outlook.com** to **include:spf.protection.outlook.de**.
 
-3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), and then click the link for your DNS host.
+3. Once you have formed your SPF TXT record, you need to update the record in DNS. You can only have one SPF TXT record for a domain. If an SPF TXT record exists, instead of adding a new record, you need to update the existing record. Go to [Create DNS records for Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider), and then click the link for your DNS host.
 
 4. Test your SPF TXT record.
 

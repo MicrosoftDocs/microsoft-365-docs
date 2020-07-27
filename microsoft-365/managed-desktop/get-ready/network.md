@@ -28,32 +28,33 @@ Also, to optimize performance to Microsoft Managed Desktop cloud-based services,
 
 The proxy or firewall must support TLS 1.2. Otherwise, you might have to disable protocol detection.
 
-### Endpoints allowed - specific for Microsoft Managed Desktop
+### Endpoints allowed that are necessary for Microsoft Managed Desktop
 
-Microsoft Managed Desktop uses the Azure Portal to host its web console. The following URLs in the table below need to be on the allowed list of your proxy and firewall so that Microsoft Managed Desktop devices can communicate with Microsoft Services.  
+Microsoft Managed Desktop uses the Azure Portal to host its web console. The following URLs must be on the allowed list of your proxy and firewall so that Microsoft Managed Desktop devices can communicate with Microsoft Services.  
 
-Note that the Microsoft Managed Desktop URL below is used for anything our service runs on the customer API. You must ensure this URL is always accessible on your corporate network.
+The Microsoft Managed Desktop URL is used for anything our service runs on the customer API. You must ensure this URL is always accessible on your corporate network.
 
 Microsoft service  | URLs required on allow list 
---- | --- | ---
+--- | ---
 Microsoft Managed Desktop | prod-mwaas-services-customerapi.azurewebsites.net
 Get Help | \*.support.services.microsoft.com  <br>inprod.support.services.microsoft.com  <br>supportchannels.services.microsoft.com  <br>graph.windows.net  <br>login.windows.net  <br>prod-mwaas-services-customerapi.azurewebsites.net
 Quick Assist | remoteassistance.support.services.microsoft.com <br>relay.support.services.microsoft.com <br>channelwebsdks.azureedge.net  <br>web.vortex.data.microsoft.com  <br>gateway.channelservices.microsoft.com <br>\*.lync.com
 Microsoft Support and Recovery Assistant | \*.apibasic.diagnostics.office.com  <br>\*.api.diagnostics.office.com
  
 
-### Endpoints allowed - other Microsoft products
+### Endpoints allowed used by other Microsoft products
 
 There are URLs from several Microsoft products that need to be in the allowed list so that Microsoft Managed Desktop devices can communicate with those Microsoft Services. Use the links to see the complete list for each product. 
 
-Microsoft service | Documentation source - URLs required on allow list
+Microsoft service | Documentation
 --- | ---
-Windows 10 Enterprise including Windows Update for Business | [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>time.windows.com
+Windows 10 Enterprise including Windows Update for Business | [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)<br><br>[Manage connection endpoints for Windows 10, version 2004](https://docs.microsoft.com/windows/privacy/manage-windows-2004-endpoints)
 Delivery Optimization | [Configure Delivery Optimization for Windows 10 updates](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)
 Microsoft 365 | [Microsoft 365 URL and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
 Azure Active Directory | [Hybrid identity required ports and protocols](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-ports) and [Active Directory and Active Directory Domain Services Port Requirements](https://aka.ms/AA26ygm) 
 Microsoft Intune | [Intune network configuration requirements](https://docs.microsoft.com/intune/network-bandwidth-use)<br>[Network endpoints for Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/intune-endpoints)
 Microsoft Defender Advanced Threat Protection (ATP) | [Microsoft Defender ATP endpoints](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+Windows Autopilot | [Windows Autopilot Networking Requirements](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-requirements#networking-requirements)
 
 <!---
 Microsoft service  | URLs required on allow list | Documentation source

@@ -5,6 +5,9 @@ _site/
 _themes*/
 _repo.*/
 .vscode/
+*.ini
+.DS_Store
+*.db
 
 .openpublishing.buildcore.ps1
 .vs/slnx.sqlite

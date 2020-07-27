@@ -18,11 +18,10 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: "Use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. "
+ms.custom: seo-marvel-apr2020
 ---
 
 # Search the audit log in the Security & Compliance Center
-
-## Introduction
 
 Need to find if a user viewed a specific document or purged an item from their mailbox? If so, you can use the Security & Compliance Center to search the unified audit log to view user and administrator activity in your organization. Why a unified audit log? Because you can search for the following types of [user and admin activity](#audited-activities) in Office 365:
 
@@ -60,7 +59,7 @@ Need to find if a user viewed a specific document or purged an item from their m
 
 - User and admin activity for sensitivity labels for sites that use SharePoint Online or Microsoft Teams
 
-## Before you begin
+## Requirements to search the audit log
 
 Be sure to read the following items before you start searching the audit log.
 
@@ -331,7 +330,7 @@ The following table describes the file and page activities in SharePoint Online 
 |Deleted record compliance policy label|ComplianceRecordDelete|A document that was classified as a record was deleted. A document is considered a record when a retention label that classifies content as a record is applied to the document.|
 |Detected document sensitivity mismatch|DocumentSensitivityMismatchDetected|User uploads a document to a site that's protected with a sensitivity label and the document has a higher priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled Confidential is uploaded to a site labeled General. <br/><br/> This event isn't triggered if the document has a lower priority sensitivity label than the sensitivity label applied to the site. For example, a document labeled General is uploaded to a site labeled Confidential. For more information about sensitivity label priority, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters).|
 |Detected malware in file|FileMalwareDetected|SharePoint anti-virus engine detects malware in a file.|
-|Discarded file checkout|FileCheckOutDiscarded|User discards (or undos) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
+|Discarded file checkout|FileCheckOutDiscarded|User discards (or undoes) a checked out file. That means any changes they made to the file when it was checked out are discarded, and not saved to the version of the document in the document library.|
 |Downloaded file|FileDownloaded|User downloads a document from a site.|
 |Modified file|FileModified|User or system account modifies the content or the properties of a document on a site.|
 |(none)|FileModifiedExtended|This is related to the "Modified file" (FileModified) activity. A FileModifiedExtended event is logged when the same person continually modifies a file for an extended period (up to 3 hours). <br/><br/> The purpose of logging FileModifiedExtended events is to reduce the number of FileModified events that are logged when a file is continually modified. This helps reduce the noise of multiple FileModified records for what is essentially the same user activity, and lets you focus on the initial (and more important) FileModified event.|
@@ -364,7 +363,7 @@ Here are a few other scenarios where app@sharepoint may be identified in an audi
 
 - Compliance features. When an admin implements compliance features, such as retention policies, eDiscovery holds, and auto-applying sensitivity labels.
 
-In these and other scenarios, you'll also notice that multiple audit records with app@sharepoint as the specified user were created within a very short time frame, often within a few seconds of each other. This also indicates they were probably triggered by the same user-initiated task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or application that triggered the event.
+In these and other scenarios, you'll also notice that multiple audit records with app@sharepoint as the specified user were created within a short time frame, often within a few seconds of each other. This also indicates they were probably triggered by the same user-initiated task. Also, the ApplicationDisplayName and EventData fields in the audit record may help you identify the scenario or application that triggered the event.
 
 ### Folder activities
 
@@ -475,7 +474,7 @@ The following table lists events related to assigning permissions in SharePoint 
 |Deleted group|GroupRemoved|User deletes a group from a site.|
 |Modified access request setting|WebRequestAccessModified|The access request settings were modified on a site.|
 |Modified 'Members Can Share' setting|WebMembersCanShareModified|The **Members Can Share** setting was modified on a site.|
-|Modified permission level on site collection|PermissionLevelModified|A permission level was changed on a site collection.|
+|Modified permission level on a site collection|PermissionLevelModified|A permission level was changed on a site collection.|
 |Modified site permissions|SitePermissionsModified|Site administrator or owner (or system account) changes the permission level that is assigned to a group on a site. This activity is also logged if all permissions are removed from a group. <br/><br/> **NOTE**: This operation has been deprecated in SharePoint Online. To find related events, you can search for other permission-related activities such as **Added site collection admin**, **Added user or group to SharePoint group**, **Allowed user to create groups**, **Created group**, and **Deleted group.**|
 |Removed permission level from site collection|PermissionLevelRemoved|A permission level was removed from a site collection.|
 |Removed site collection admin|SiteCollectionAdminRemoved|Site collection administrator or owner removes a person as a site collection administrator for a site. This activity is also logged when an admin removes themselves from the list of site collection administrators for a user's OneDrive account (by editing the user profile in the SharePoint admin center).  To return this activity in the audit log search results, you have to search for all activities.|
@@ -495,7 +494,7 @@ The following table lists events that result from site administration tasks in S
 |Added exempt user agent|ExemptUserAgentSet|A SharePoint or global administrator added a user agent to the list of exempt user agents in the SharePoint admin center.|
 |Added geo location admin|GeoAdminAdded|A SharePoint or global administrator added a user as a geo admin of a location.|
 |Allowed user to create groups|AllowGroupCreationSet|Site administrator or owner adds a permission level to a site that allows a user assigned that permission to create a group for that site.|
-|Cancelled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online](https://go.microsoft.com/fwlink/?linkid=860840).|
+|Canceled site geo move|SiteGeoMoveCancelled|A SharePoint or global administrator successfully cancels a SharePoint or OneDrive site geo move. The Multi-Geo capability lets an organization span multiple Microsoft datacenter geographies, which are called geos. For more information, see [Multi-Geo Capabilities in OneDrive and SharePoint Online](https://go.microsoft.com/fwlink/?linkid=860840).|
 |Changed a sharing policy|SharingPolicyChanged|A SharePoint or global administrator changed a SharePoint sharing policy by using the Microsoft 365 admin portal, SharePoint admin portal, or SharePoint Online Management Shell. Any change to the settings in the sharing policy in your organization will be logged. The policy that was changed is identified in the **ModifiedProperties** field in the detailed properties of the event record.|
 |Changed device access policy|DeviceAccessPolicyChanged|A SharePoint or global administrator changed the unmanaged devices policy for your organization. This policy controls access to SharePoint, OneDrive, and Microsoft 365 from devices that aren't joined to your organization. Configuring this policy requires an Enterprise Mobility + Security subscription. For more information, see [Control access from unmanaged devices](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices).|
 |Changed exempt user agents|CustomizeExemptUsers|A SharePoint or global administrator customized the list of exempt user agents in the SharePoint admin center. You can specify which user agents to exempt from receiving an entire web page to index. This means when a user agent you've specified as exempt encounters an InfoPath form, the form will be returned as an XML file, instead of an entire web page. This makes indexing InfoPath forms faster.|
@@ -556,7 +555,7 @@ The following table lists the activities that can be logged by mailbox audit log
 
 ### Sway activities
 
-The following table lists user and admin activities in Sway. Sway is an Microsoft 365 app that helps users gather, format, and share ideas, stories, and presentations on an interactive, web-based canvas. For more information, see [Frequently asked questions about Sway - Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
+The following table lists user and admin activities in Sway. Sway is a Microsoft 365 app that helps users gather, format, and share ideas, stories, and presentations on an interactive, web-based canvas. For more information, see [Frequently asked questions about Sway - Admin Help](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -582,12 +581,12 @@ The following table lists user administration activities that are logged when an
 
 |**Activity**|**Operation**|**Description**|
 |:-----|:-----|:-----|
-|Added user|Add user|An user account was created.|
+|Added user|Add user|A user account was created.|
 |Changed user license|Change user license|The license assigned to a user what changed. To see what licenses were changes, see the corresponding **Updated user** activity.|
 |Changed user password|Change user password|A user changes their password. Self-service password reset has to be enabled (for all or selected users) in your organization to allow users to reset their password. You can also track self-service password reset activity in Azure Active Directory. For more information, see [Reporting options for Azure AD password management](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-reporting).
 |Deleted user|Delete user|A user account was deleted.|
 |Reset user password|Reset user password|Administrator resets the password for a user.|
-|Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user sign in to Office 365.|
+|Set property that forces user to change password|Set force change user password|Administrator set the property that forces a user to change their password the next time the user signs in to Office 365.|
 |Set license properties|Set license properties|Administrator modifies the properties of a licensed assigned to a user.|
 |Updated user|Update user|Administrator changes one or more properties of a user account. For a list of the user properties that can be updated, see the "Update user attributes" section in [Azure Active Directory Audit Report Events](https://go.microsoft.com/fwlink/p/?LinkID=616549).|
 ||||
@@ -668,38 +667,11 @@ Content Search and eDiscovery-related activities that are performed in the secur
 For a list and detailed description of the eDiscovery activities that are logged, see [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md).
 
 > [!NOTE]
-> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
+> It takes up to 30 minutes for events that result from the activities listed under **eDiscovery activities** and **Advanced eDiscovery activities** in the **Activities** drop-down list to be displayed in the search results. Conversely, it takes up to 24 hours for the corresponding events from eDiscovery cmdlet activities to appear in the search results.
 
 ### Advanced eDiscovery activities
 
-The following table lists activities that result from IT and legal professionals performing tasks in Advanced eDiscovery in Microsoft 365. For more information, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
-
-|**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
-|Added data to another review set|AddWorkingSetQueryToWorkingSet|User added documents from one review set to a different review set.|
-|Added data to review set|AddQueryToWorkingSet|User added the search results from a content search associated with an Advanced eDiscovery case to a review set.|
-|Added non-Microsoft 365 data to review set|AddNonOffice365DataToWorkingSet|User added non-Microsoft 365 data to a review set.|
-|Added remediated documents to review set|AddRemediatedData|User uploads documents that had indexing errors that were fixed to a review set.|
-|Analyzed data in review set|RunAlgo|User ran  analytics on the  documents in a review set.|
-|Annotated document in review set|AnnotateDocument|User annotated a document in a review set. Annotation includes redacting content in a document.|
-|Compared load sets|LoadComparisonJob|User compared two different load sets in a review set. A load set is when data from a content search that associated with the case is added to a review set.|
-|Converted redacted documents to PDF|BurnJob|User converted all the redacted documents in a review set to PDF files.|
-|Created review set|CreateWorkingSet|User created a review set.|
-|Created review set search|CreateWorkingSetSearch|User created a search query that searches the documents in a review set.|
-|Created tag|CreateTag|User created a tag group in a review set. A tag group can contain one or more child tags. These tags are then used to tag documents in the review set.|
-|Deleted review set search|DeleteWorkingSetSearch|User deleted a search query in a review set.|
-|Deleted tag|DeleteTag|User deleted a tag or a tag group in a review set.|
-|Downloaded document|DownloadDocument|User downloaded a document from a review set.|
-|Edited tag|UpdateTag|User changed a tag in a review set.|
-|Exported documents from review set|ExportJob|User exported documents from a review set.|
-|Modified case setting|UpdateCaseSettings|User modified the settings for a case. Case settings include case information, access permissions, and settings that control search and analytics behavior.|
-|Modified review set search|UpdateWorkingSetSearch|User edited a search query in a review set.|
-|Previewed review set search|PreviewWorkingSetSearch|User previewed the results of a search query in a review set.|
-|Remediated error documents|ErrorRemediationJob|User fixes files that contained indexing errors.|
-|Tagged document|TagFiles|User tags a document in a review set.|
-|Tagged results of a query|TagJob|User tags all of the documents that match the criteria of search query in a review set.|
-|Viewed document in review set|ViewDocument|User viewed a document in a review set.|
-|||
+You can also search the audit log for activities in Advanced eDiscovery. For a description of these activities, see the "Advanced eDiscovery activities" section in [Search for eDiscovery activities in the audit log](search-for-ediscovery-activities-in-the-audit-log.md#advanced-ediscovery-activities).
 
 ### Power BI activities
 
@@ -727,34 +699,7 @@ Workplace Analytics provides insight into how groups collaborate across your org
 
 ### Microsoft Teams activities
 
-The following table lists the user and admin activities in Microsoft Teams that are logged in the audit log. Microsoft Teams is a chat-centered workspace in Office 365. It brings a team's conversations, meetings, files, and notes together into a single place. For more information and links to help topics, see:
-
-- [Frequently asked questions about Microsoft Teams - Admin Help](https://docs.microsoft.com/MicrosoftTeams/teams-overview)
-
-- [Microsoft Teams help](https://support.office.com/teams)
-
-|**Friendly name**|**Operation**|**Description**|
-|:-----|:-----|:-----|
-|Added bot to team|BotAddedToTeam|A user adds a bot to a team.|
-|Added channel|ChannelAdded|A user adds a channel to a team.|
-|Added connector|ConnectorAdded|A user adds a connector to a channel.|
-|Added members|MemberAdded|A team owner adds members to a team, channel, or group chat.|
-|Added tab|TabAdded|A user adds a tab to a channel.|
-|Changed channel setting|ChannelSettingChanged|The ChannelSettingChanged operation is logged when the following activities are performed by a team member. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Changes the name of a team channel (**Channel name**). <br/><br/>• Changes the description of a team channel (**Channel description**).|
-|Changed organization setting|TeamsTenantSettingChanged|The TeamsTenantSettingChanged operation is logged when the following activities are performed by a global admin (using the Microsoft 365 admin center); note that these activities affect organization-wide Microsoft Teams settings. For more information, see [Administrator settings for Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/enable-features-office-365). <br/> For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Enables or disables Microsoft Teams for the organization (**Microsoft Teams**). <br/><br/>• Enables or disables interoperability between Microsoft Teams and Skype for Business for the organization (**Skype for Business interoperability**). <br/><br/>• Enables or disables the organizational chart view in Microsoft Teams clients (Org chart view**). <br/><br/>• Enables or disables the ability for team members to schedule private meetings (**Private meeting scheduling**). <br/><br/>• Enables or disables the ability for team members to schedule channel meetings (Channel meeting scheduling**). <br/><br/>• Enables or disables video calling in Teams meetings (Video for Skype meetings**). <br/><br/>• Enables or disables screen sharing in Microsoft Teams meetups for the organization (**Screen sharing for Skype meetings**). <br/><br/>• Enables or disables that ability to add animated images (called Giphys) to Teams conversations (Animated images**). <br/><br/>• Changes the content rating setting for the organization (**Content rating**). The content rating restricts the type of animated image that can be displayed in conversations. <br/><br/>• Enables or disables the ability for team members to add customizable images (called custom memes) from the Internet to team conversations (Customizable images from the Internet**). <br/><br/>• Enables or disables the ability for team members to add editable images (called stickers) to team conversations (**Editable images**).<br/><br/>• Enables or disables that ability for team members to use bots in Microsoft Teams chats and channels (Org-wide bots). <br/><br/>• Enables specific bots for Microsoft Teams. This doesn't include the T-Bot, which is Teams help bot that's available when bots are enabled for the organization (**Individual bots**). <br/><br/>• Enables or disables the ability for team members to add extensions or tabs (**Extensions or tabs**). <br/><br/>• Enables or disables the side-loading of proprietary Bots for Microsoft Teams (**Side loading of Bots**). <br/><br/>• Enables or disables the ability for users to send email messages to a Microsoft Teams channel (**Channel email**).|
-|Changed role of members in team|MemberRoleChanged|A team owner changes the role of members in a team. The following values indicate the Role type assigned to the user. <br/><br/> **1** - Indicates the Owner role.<br/>**2** - Indicates the Member role. <br/>**3** - Indicates the Guest role. <br/><br/> The Members property also includes the name of your organization, and the member's email address.|
-|Changed team setting|TeamSettingChanged|The TeamSettingChanged operation is logged when the following activities are performed by a team owner. For each of these activities, a description of the setting that was changed (shown in parentheses below) is displayed in the **Item** column in the audit log search results. <br/><br/>• Changes the access type for a team. Teams can be set as Private or Public (**Team access type**). When a team is private (the default setting), users can access the team only by invitation. When a team is public, it's discoverable by anyone. <br/><br/>• Changes the information classification of a team (**Team classification**). <br/> For example, team data can be classified as high business impact, medium business impact, or low business impact.<br/><br/>• Changes the name of a team (**Team name**). <br/><br/>• Changes the team description (Team description**). <br/><br/>• Changes made to any of the team settings. A team owner can access these settings in a Teams client by right-clicking a team, clicking **Manage team**, and then clicking the **Settings** tab. For these activities, the name of the setting that was changed is displayed in the **Item** column in the audit log search results.|
-|Created team|TeamCreated|A user creates a team.|
-|Deleted channel|ChannelDeleted|A user deletes a channel from a team.|
-|Deleted team|TeamDeleted|A team owner deletes a team.|
-|Removed bot from team|BotRemovedFromTeam|A user removes a bot from a team.|
-|Removed connector|ConnectorRemoved|A user removes connector from a channel.|
-|Removed members|MemberRemoved|A team owner removes members from a team, channel, or group chat.|
-|Removed tab|TabRemoved|A user removes a tab from a channel.|
-|Updated connector|ConnectorUpdated|A user modified a connector in a channel.|
-|Updated tab|TabUpdated|A user modified a tab in a channel.|
-|User signed in to Teams|TeamsSessionStarted|A user signs in to a Microsoft Teams client. This event doesn't capture token refresh activities.|
-||||
+You can search the audit log for user and admin activities in Microsoft Teams. Teams is a chat-centered workspace in Office 365. It brings a team's conversations, meetings, files, and notes together into a single place. For descriptions of the Teams activities that are audited, see [Search the audit log for events in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities).
 
 ### Microsoft Teams Healthcare activities
 
@@ -766,7 +711,7 @@ For a description of the Patients app activities, see [Audit logs for Patients a
 
 ### Microsoft Teams Shifts activities
 
-If you organization is using the Shifts app in Microsoft Teams, you can search the audit log for activities related to the using the Shifts app. If your environment is configured to support Shifts app, an additional activity group for these activities is available in the **Activities** picker list.
+If your organization is using the Shifts app in Microsoft Teams, you can search the audit log for activities related to the using the Shifts app. If your environment is configured to support Shifts apps, an additional activity group for these activities is available in the **Activities** picker list.
 
 For a description of Shifts app activities, see [Search the audit log for events in Microsoft Teams](https://docs.microsoft.com/microsoftteams/audit-log-events#shifts-in-teams-activities).
 
@@ -836,7 +781,7 @@ The following table lists the user and admin activities in Microsoft Forms that 
 Where noted below in the descriptions, some operations contain additional activity parameters.
 
 > [!NOTE]
-> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-co-authors-and-anonymous-responders) section.
+> If a Forms activity is performed by a co-author or an anonymous responder, it will be logged slightly differently. For more information, see the [Forms activities performed by co-authors and anonymous responders](#forms-activities-performed-by-coauthors-and-anonymous-responders) section.
 
 |**Friendly name**|**Operation**|**Description**|
 |:-----|:-----|:-----|
@@ -850,8 +795,8 @@ Where noted below in the descriptions, some operations contain additional activi
 |Exported form|ExportForm|Form owner exports results to Excel. <br><br>Property ExportFormat:string indicates if the Excel file is Download or Online.|
 |Allowed share form for copy|AllowShareFormForCopy|Form owner creates a template link to share the form with other users. This event is logged when the form owner clicks to generate template URL.|
 |Disallowed share form for copy|DisallowShareFormForCopy|Form owner deletes template link.|
-|Added form co-author|AddFormCoauthor|A user uses a collaboration link to help design for/view responses. This event is logged when a user uses a collab URL (not when collab URL is first generated).|
-|Removed form co-author|RemoveFormCoauthor|Form owner deletes a collaboration link.|
+|Added form coauthor|AddFormCoauthor|A user uses a collaboration link to help design for/view responses. This event is logged when a user uses a collab URL (not when collab URL is first generated).|
+|Removed form coauthor|RemoveFormCoauthor|Form owner deletes a collaboration link.|
 |Viewed response page|ViewRuntimeForm|User has opened a response page to view. This event is logged regardless of whether the user submits a response or not.|
 |Created response|CreateResponse|Similar to receiving a new response.  A user has submitted a response to a form. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
 |Updated response|UpdateResponse|Form owner has updated a comment or score on a quiz. <br><br>Property ResponseId:string and Property ResponderId:string indicates which result is being viewed. <br><br>For an anonymous responder, the ResponderId property will be null.|
@@ -869,17 +814,17 @@ Where noted below in the descriptions, some operations contain additional activi
 |Submitted response|SubmitResponse|A user submits a response to a form. <br><br>Property IsInternalForm:boolean indicates if the responder is within the same organization as the form owner.|
 ||||
 
-#### Forms activities performed by co-authors and anonymous responders
+#### Forms activities performed by coauthors and anonymous responders
 
-Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborator is known as a *co-author*. Co-authors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
+Forms supports collaboration when forms are being designed and when analyzing responses. A form collaborator is known as a *coauthor*. Coauthors can do everything a form owner can do, except delete or move a form. Forms also allows you to create a form that can be responded to anonymously. This means the responder doesn't have to be signed into your organization to respond to a form. 
 
-The following table describes the auditing activities and information in the audit record for activities performed by co-authors and anonymous responders.
+The following table describes the auditing activities and information in the audit record for activities performed by coauthors and anonymous responders.
 
 |**Activity type**|**Internal or external user**|**User Id that's logged**|**Organization logged in to**|**Forms user type**|
 |:-----|:-----|:-----|:-----|:-----|
-|Co-authoring activities|Internal|UPN|Form owner's org|Co-author|
-|Co-authoring activities|External|UPN<br>|Co-author's org<br>|Co-author|
-|Co-authoring activities|External|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(The second part of the Id is a hash, which will differ for different users)|Form owner's org<br>|Co-author|
+|Coauthoring activities|Internal|UPN|Form owner's org|Coauthor|
+|Coauthoring activities|External|UPN<br>|Coauthor's org<br>|Coauthor|
+|Coauthoring activities|External|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(The second part of the Id is a hash, which will differ for different users)|Form owner's org<br>|Coauthor|
 |Response activities|External|UPN<br>|Responder's org<br>|Responder|
 |Response activities|External|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
 |Response activities|Anonymous|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(The second part of the User Id is a hash, which will differ for different users)|Form owner's org|Responder|
@@ -938,7 +883,7 @@ See the [Audited activities](#audited-activities) section in this article for a 
 
 **How long does it take for an auditing record to be available after an event has occurred?**
 
-Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Before you begin](#before-you-begin) section of this article that shows the time it takes for events in the different services to be available.
+Most auditing data is available within 30 minutes but it may take up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. See the table in the [Requirements to search the audit log](#requirements-to-search-the-audit-log) section of this article that shows the time it takes for events in the different services to be available.
 
 **How long are the audit records retained for?**
 
@@ -954,7 +899,7 @@ No. These are the only two ways to get data from the auditing service.
 
 **Do I need to individually enable auditing in each service that I want to capture audit logs for?**
 
-In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Before you begin](#before-you-begin) section in this article).
+In most services, auditing is enabled by default after you initially turn on auditing for your organization (as described in the [Requirements to search the audit log](#requirements-to-search-the-audit-log) section in this article).
 
 **Does the auditing service support de-duplication of records?**
 

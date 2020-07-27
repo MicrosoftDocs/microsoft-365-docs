@@ -54,7 +54,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Upgrade your organization to the latest apps
+          - text: Upgrade users to the latest apps
             url: ../setup/upgrade-users-to-latest-office-client.md
           - text: Customize the app launcher
             url: customize-the-app-launcher.md
@@ -70,11 +70,11 @@ landingContent:
           - text: Microsoft Teams admin documentation
             url: https://docs.microsoft.com/en-us/microsoftteams/
           - text: Use Outlook and Teams together 
-            url: https://support.office.com/article/9bc459c4-ce13-479b-b88b-b8ae49092732
+            url: https://support.microsoft.com/office/9bc459c4-ce13-479b-b88b-b8ae49092732
       - linkListType: learn
         links:
           - text: Microsoft Teams training
-            url: https://support.office.com/article/4f108e54-240b-4351-8084-b1089f0d21d7
+            url: https://support.microsoft.com/office/4f108e54-240b-4351-8084-b1089f0d21d7
    # Card
   - title: OneDrive and SharePoint
     linkLists:

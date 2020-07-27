@@ -29,12 +29,12 @@ productDirectory:
     - title: Get the free partner kit
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
       summary: Practical guidance and go to market resources for partners for securing remote work.
-      url: https://www.microsoft.com/microsoft-365/partners/videos/secure-your-smb-customers-as-they-cope-with-covid-19
+      url: https://aka.ms/SMBSecurityKit
     # Card
     - title: What's new?
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-      summary: Azure AD Premium P1 is coming to Microsoft 365 Business Premium!
+      summary: Azure AD Premium P1 is now included in Microsoft 365 Business Premium!
       url: https://aka.ms/aadp1smbblog
 # conceptualContent section (optional)
 conceptualContent:
@@ -46,7 +46,7 @@ conceptualContent:
         - url: microsoft-365-business-overview.md
           itemType: overview
           text: Overview
-        - url: https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
+        - url: https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816
           itemType: video
           text: Microsoft 365 Business Premium training
         - url: https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/licensing-microsoft-365-in-smb
@@ -70,7 +70,7 @@ conceptualContent:
         - url: https://docs.microsoft.com/MicrosoftTeams/get-started-with-teams-quick-start
           itemType: video
           text: 3. Set up Teams
-        - url: https://support.office.com/article/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
+        - url: https://support.microsoft.com/office/4d2a1b69-6d8c-45d1-88e0-6676a8efa5f1
           itemType: get-started
           text: 4. Install Office
   #Card
@@ -91,6 +91,12 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
           itemType: download
           text: Checklist for securing remote work
+        - url: https://cct.transform.microsoft.com/
+          itemType: deploy
+          text: Customer Consulting Tool
+        - url: https://vc.transform.microsoft.com/
+          itemType: learn
+          text: Value Calculator
   # Card
     - title: Manage users
       links:
@@ -132,13 +138,13 @@ conceptualContent:
         - url: https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies
           itemType: overview
           text: Data Loss Prevention 
-        - url: https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
+        - url: https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980
           itemType: how-to-guide
           text: Send encrypted email
         - url: https://docs.microsoft.com/microsoft-365/business/set-up-compliance#set-up-email-retention-with-exchange-online-archiving
           itemType: how-to-guide
           text: Set up email retention
-        - url: https://support.office.com/article/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
+        - url: https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9
           itemType: video
           text: Create and use sensitivity labels
       # footerLink (optional)
@@ -195,7 +201,7 @@ conceptualContent:
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business-Blog/bg-p/Microsoft365BusinessBlog
           itemType: whats-new
           text: Announcements
-        - url: https://support.office.com/article/7f681212-c649-4a3e-a43b-32b1d1e58988
+        - url: https://support.microsoft.com/office/7f681212-c649-4a3e-a43b-32b1d1e58988
           itemType: video
           text: Get help
         - url: https://techcommunity.microsoft.com/t5/Microsoft-365-Business/bd-p/Microsoft365business
