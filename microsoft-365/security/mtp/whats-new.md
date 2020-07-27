@@ -26,6 +26,7 @@ RSS feed: Get notified when this page is updated by copying and pasting the foll
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
 ## July 2020
+- [FileProfile() function](advanced-hunting-fileprofile-function.md) <br> Use this function in your [advanced hunting](advanced-hunting-overview.md) queries to enrich results with comprehensive file information.
 - [Identity and app tables](advanced-hunting-schema-tables.md)<br> Get visibility into authentication events, Active Directory queries, and app-related activity with the [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md), [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md), and [AppFileEvents](advanced-hunting-appfileevents-table.md) tables in the advanced hunting schema.
 
 ## June 2020
