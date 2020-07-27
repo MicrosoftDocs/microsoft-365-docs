@@ -96,7 +96,7 @@ The first command will establish a connection with the Microsoft cloud, and when
 
 ## 5. Link the Group Policy
 
-1. In the Group Policy Management Console (GPMC) right click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu
+1. In the Group Policy Management Console (GPMC), right-click on the location where you want to link the policy and select *Link an existing GPO...* from the context menu.
 2. Select the policy created in the above step then click **OK**
 
 ## Get the latest Administrative Templates
