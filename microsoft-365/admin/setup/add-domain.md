@@ -1,12 +1,12 @@
 ---
-title: "Add a domain to Office 365"
+title: "Add a domain to Microsoft 365"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -19,15 +19,24 @@ ms.custom:
 - SaRA
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
-description: "Add your domain to Office 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host. The setup wizard walks you through the process."
+description: "Add your domain to Microsoft 365 in the Microsoft 365 admin center by adding a DNS record at your DNS host. The setup wizard walks you through the process."
 ---
 
-# Add a domain to Office 365
+# Add a domain to Microsoft 365
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
  **[Check the Domains FAQ](domains-faq.md)** if you don't find what you're looking for. 
   
@@ -70,7 +79,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
     
 5. Choose how you want to verify that you own the domain.
     
-    1. If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Office 365 [will set up your records automatically](../get-help-with-domains/domain-connect.md).
+    1. If your domain is registered at GoDaddy or 1&amp;1, select **Sign in** > **Next** and Microsoft [will set up your records automatically](../get-help-with-domains/domain-connect.md).
     
     2. You can have an email sent to the registered contact for the domain with a verification code. If you don't recognize or have access to the email on record, you can use the third option.
     
@@ -81,7 +90,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
     1. Choose **Add the DNS records for me** if you want Office to configure your DNS automatically. 
     
   
-    2. Choose **I'll add the DNS records myself** if you want to attach only specific Office 365 services to your domain or if you want to skip this for now and do this later. **Choose this option if you know exactly what you're doing.**
+    2. Choose **I'll add the DNS records myself** if you want to attach only specific Microsoft 365 services to your domain or if you want to skip this for now and do this later. **Choose this option if you know exactly what you're doing.**
     
 7. If you chose to  *add DNS records yourself*  , select **Next** and you'll see a page with all the records that you need to add to your registrars website to set up your domain. 
     
@@ -89,7 +98,7 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
   
     If the portal doesn't recognize your registrar, you can [follow these general instructions.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
     
-    Check our list of [host-specific instructions](https://support.office.com/article/ae950c9e-e8d9-4108-b0cb-449156998580) to find your host and follow the steps to add all the records you need. 
+    Check our list of [host-specific instructions](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/set-up-your-domain-host-specific-instructions) to find your host and follow the steps to add all the records you need. 
     
     If you don't know the DNS hosting provider or domain registrar for your domain, see [Find your domain registrar or DNS hosting provider](../get-help-with-domains/find-your-domain-registrar.md).
     
@@ -97,14 +106,57 @@ description: "Add your domain to Office 365 in the Microsoft 365 admin center by
     
 8. Select **Finish** - you're done! 
 
+## Add or edit custom DNS records
+
+Follow the steps below to add a custom record for a website or 3rd party service.
+
+1. Sign in to the Microsoft admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+2. Go to the **Settings**  > **Domains** page.
+
+3. On the **Domains** page, select a domain. 
+    
+4. Under **DNS settings**, select **Custom Records**; then select **New custom record**.
+
+5. Select the type of DNS record you want to add and type the information for the new record.
+    
+6. Select **Save**.
+
+## Registrars with Domain Connect
+
+[Domain Connect](https://www.domainconnect.org/) enabled registrars let you add your domain to Microsoft 365 in a three-step process that takes minutes. 
+  
+In the wizard, we'll just confirm that you own the domain, and then automatically set up your domain's records, so email comes to Microsoft 365 and other Microsoft 365 services, like Teams, work with your domain.
+  
+> [!NOTE]
+> Make sure you disable any popup blockers in your browser before you start the setup wizard.
+  
+### Domain Connect registrars integrating with Microsoft 365
+
+- [1&amp;1 IONOS](https://www.1and1.com/)
+- [123Reg](https://www.123-reg.co.uk/)
+- [GoDaddy](https://www.godaddy.com/)
+- [WordPress](https://wordpress.com/)
+- [Plesk](https://www.plesk.com/)
+- [MediaTemple](https://mediatemple.net/)
+- SecureServer or WildWestDomains (GoDaddy resellers using SecureServer DNS hosting)
+    - [MadDog Domains](https://www.maddogdomains.com/)
+    - [CheapNames](https://www.cheapnames.com)
+
+### What happens to my email and website?
+
+After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!
+  
+If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.
+
 ## Related articles
 
 [Domains FAQ](domains-faq.md)
 
 [What is a domain?](../get-help-with-domains/what-is-a-domain.md)
 
-[Buy a domain name in Office 365](../get-help-with-domains/buy-a-domain-name.md)
+[Buy a domain name in Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
 
 [Set up your domain (host-specific instructions)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md)
 
-[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.md)
+[Get help with domains](../get-help-with-domains/get-help-with-domains.md)

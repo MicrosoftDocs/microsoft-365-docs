@@ -49,7 +49,3 @@ Find [conformance reports](https://cloudblogs.microsoft.com/industry-blog/govern
 - [Enterprise Disability Answer Desk](https://go.microsoft.com/fwlink/p/?linkid=2050890): Dedicated support for enterprise customers with accessibility questions about our products and services or compliance.
 - [DHS Trusted Tester Program](https://go.microsoft.com/fwlink/?linkid=2052171): Get information about the U.S. Department of Homeland Security (DHS) Trusted Tester Program, in which Microsoft participates.
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/E/1/3E10CC43-036D-4DB5-ACBA-8665A752C8F7/Accessibility-Compliance.pdf).

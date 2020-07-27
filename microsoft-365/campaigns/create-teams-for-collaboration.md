@@ -43,7 +43,7 @@ You can also create teams for specific projects and apply the right amount of pr
 
 When you create a team, here's what else gets created:
 
-- A new [Office 365 group](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
+- A new [Microsoft 365 group](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - A [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) site and document library to store team files
 - An [Exchange Online](https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact) shared mailbox and calendar
 - A OneNote notebook
@@ -80,5 +80,5 @@ Learn more about Microsoft Teams at [Microsoft Teams technical documentation](ht
 
 ## Admin settings
 
-You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Office 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
+You must be an admin to create an organization-wide team. For more information, see [What is an Admin in Microsoft 365?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US).
   

@@ -1,5 +1,5 @@
 ---
-title: "Automated investigation and response (AIR) in Office 365"
+title: "Automated investigation and response (AIR) overview"
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -14,23 +14,25 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: "Get an overview of automated investigation and response capabilities in Office 365 Advanced Threat Protection Plan 2."
+ms.custom: air
+ - seo-marvel-mar2020
 ---
 
-# Automated investigation and response (AIR) in Office 365
+# An overview of Automated investigation and response (AIR) in Microsoft 365
 
-As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities in Office 365 can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
+As security alerts are triggered, it's up to your security operations team to look into those alerts and take steps to protect your organization. Sometimes, security operations teams can feel overwhelmed by the volume of alerts that are triggered. Automated investigation and response (AIR) capabilities can help. AIR enables your security operations team to operate more efficiently and effectively. AIR capabilities include automated investigation processes in response to well known threats that exist today. Appropriate remediation actions await approval, enabling your security operations team to respond to detected threats. 
 
-This article provides an overview of AIR and its components. When you're ready to get started using AIR, see [Automatically investigate and respond to threats in Office 365](office-365-air.md).
+This article provides an overview of AIR. When you're ready to get started using AIR, see [Automatically investigate and respond to threats](office-365-air.md).
 
 ## At a high level
 
-As alerts are triggered, security playbooks go into effect. Depending on the situation, an [automated investigation process](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) can begin. During and after an automated investigation, [remediation actions](air-remediation-actions.md) are recommended. No actions are taken automatically in Office 365 Advanced Threat Protection. Your security operations team reviews, and then [approves or rejects each remediation action](air-remediation-actions.md#approve-or-reject-pending-actions), and when this is done, each investigation completes. All of these activities are tracked and viewable in the Office 365 Security & Compliance Center (see [View details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation)).
+As alerts are triggered, security playbooks go into effect. Depending on the situation, an [automated investigation process](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) can begin. During and after an automated investigation, [remediation actions](air-remediation-actions.md) are recommended. No actions are taken automatically in Office 365 Advanced Threat Protection. Your security operations team reviews, and then [approves or rejects each remediation action](air-review-approve-pending-completed-actions.md), and when this is done, each investigation completes. All of these activities are tracked and viewable in the Security & Compliance Center (see [View details of an investigation](air-view-investigation-results.md#view-details-of-an-investigation)).
 
 The following sections provide more details about alerts, security playbooks, and examples of AIR in action.
 
 ## Alerts
 
-[Alerts](../../compliance/alert-policies.md#viewing-alerts) represent triggers for security operations team workflows for incident response. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, Security Operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows can be very time consuming and involve multiple tools and systems. With AIR, investigation and response for Office 365 security events are automated by having key security and threat management alerts trigger security response playbooks automatically. 
+[Alerts](../../compliance/alert-policies.md#viewing-alerts) represent triggers for security operations team workflows for incident response. Prioritizing the right set of alerts for investigation, while making sure no threats are unaddressed is challenging. When investigations into alerts are performed manually, Security Operations teams must hunt and correlate entities (such as content, devices and users) at risk from threats. Such tasks and workflows can be very time consuming and involve multiple tools and systems. With AIR, investigation and response for security events are automated by having key security and threat management alerts trigger security response playbooks automatically. 
 
 Currently for AIR, alerts generated from the following kinds of alert policies are auto-investigated:  
 
@@ -49,7 +51,7 @@ To view alerts, in the Security & Compliance Center, choose **Alerts** > **View 
 > [!NOTE]
 > Informational alerts are hidden in the alert view by default. To see them, change the alert filtering to include informational alerts.
 
-If your organization manages your security alerts through an alert management system, service management system, or Security Information and Event Management (SIEM) system, you can send Office 365 alerts to that system via either email notification or via the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). The investigation alert notifications via email or API include links to access the alerts in the Security & Compliance Center, enabling the assigned security administrator to navigate quickly to the investigation.
+If your organization manages your security alerts through an alert management system, service management system, or Security Information and Event Management (SIEM) system, you can send alerts to that system via either email notification or via the [Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). The investigation alert notifications via email or API include links to access the alerts in the Security & Compliance Center, enabling the assigned security administrator to navigate quickly to the investigation.
 
 ![Alerts that link to investigations](../../media/air-alerts-page-details.png) 
 
@@ -62,6 +64,7 @@ The security playbooks you'll get with AIR are designed to tackle the most frequ
 ### Security playbooks are rolling out in phases
 
 As part of AIR, security playbooks are rolling out in phases. Phase 1 is now generally available and includes several playbooks that provide recommendations for actions that security administrators can review and approve:
+
 - User-reported phish message
 - URL click verdict change
 - Malware detected post-delivery (Malware ZAP)
@@ -70,6 +73,7 @@ As part of AIR, security playbooks are rolling out in phases. Phase 1 is now gen
 Phase 1 also includes support for administrator triggered e-mail investigations (using [Threat Explorer](threat-explorer.md)).
 
 Phase 2 is now progress with the following playbooks in **public preview**, providing recommendations for actions and aiding security administrators in investigating issues:
+
 - User reported as compromised (public preview)
 
 Further playbooks will be released as they are completed. Visit the [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap) to see what else is planned and coming soon.
@@ -77,6 +81,7 @@ Further playbooks will be released as they are completed. Visit the [Microsoft 3
 ### Playbooks include investigation and recommendations
 
 In AIR, each security playbook includes: 
+
 - a root investigation of an email's entities (files, URLs, recipients, IP addresses, etc.),
 - further hunting for similar emails received by the organization 
 - steps taken to identify and correlate other potential threats, and 
@@ -86,9 +91,10 @@ Each high-level step includes a number of substeps that are executed to provide 
 
 ## Example: A user-reported phish message launches an investigation playbook
 
-When a user in your organization submits an email message and reports it to Microsoft by using the [Report Message add-in for Outlook or Outlook Web App](enable-the-report-message-add-in.md), the report is also sent to your system and is visible in Explorer in the User-reported view. This user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
+Suppose that a user in your organization receives an email that they think is a phishing attempt. The user, trained to report such messages, uses the [Report Message add-in](enable-the-report-message-add-in.md) to send it to Microsoft for analysis. The submission is also sent to your system and is visible in Explorer in the **Submissions** view (formerly referred to as the **User-reported** view). In addition, the user-reported message now triggers a system-based informational alert, which automatically launches the investigation playbook.
 
 During the root investigation phase, various aspects of the email are assessed. These include:
+
 - A determination about what type of threat it might be;
 - Who sent it;
 - Where the email was sent from (sending infrastructure);
@@ -104,8 +110,8 @@ Next, several threat investigation and hunting steps are executed:
 - Similar email messages are identified via email cluster searches.
 - The signal is shared with other platforms, such as [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - A determination is made on whether any users have clicked through any malicious links in suspicious email messages.
-- A check is done across Office 365 Exchange Online Protection ([EOP](exchange-online-protection-eop.md)) and Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) to see if there are any other similar messages reported by users.
-- A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security), and [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlating any related user activity anomalies. 
+- A check is done across Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) and Office 365 Advanced Threat Protection ([ATP](office-365-atp.md)) to see if there are any other similar messages reported by users.
+- A check is done to see if a user has been compromised. This check leverages signals across Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security), and [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlating any related user activity anomalies.
 
 During the hunting phase, risks and threats are assigned to various hunting steps. 
 
@@ -115,19 +121,18 @@ Remediation is the final phase of the playbook. During this phase, remediation s
 
 In addition to automatic investigations that are triggered by an alert, your organization's security operations team can trigger an automatic investigation from a view in [Threat Explorer](threat-explorer.md).
 
-For example, suppose that you are viewing data in Explorer about user-reported messages. You can select an item in the list of results, and then click **Investigate** from the action menu (assuming you have appropriate remediation permissions).
+For example, suppose that you are using the **Malware** view in Threat Explorer. Using the tabs below the chart, you select the **Email** tab. If you select one or more items in the list, the **+ Actions** button activates. 
 
-![User-reported messages in Explorer with Investigate button](../../media/Explorer-UserReported-Investigate.png)
+:::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="Explorer with selected messages":::
 
-As another example, suppose you are viewing data about email messages detected as containing malware, and there are several email messages detected as containing malware. You can select the **Email** tab, select one or more email messages, and then, on the **Actions** menu, select **Investigate**. 
+Using the **Actions** menu, you can select **Trigger investigation**.
 
-![Starting an investigation for malware in Explorer](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
+:::image type="content" source="../../media/explorer-malwareview-selectedemails-actions.jpg" alt-text="Actions menu for selected messages":::
 
 Similar to playbooks triggered by an alert, automatic investigations that are triggered from a view in Explorer include a root investigation, steps to identify and correlate threats, and recommended actions to mitigate those threats.
 
 ## Next steps
 
-- [Get started using AIR in Office 365](office-365-air.md)
+- [Get started using AIR](office-365-air.md)
 
 - [Visit the Microsoft 365 Roadmap to see what's coming soon and rolling out](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-

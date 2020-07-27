@@ -1,5 +1,5 @@
 ---
-title: "Set up mobile devices for Microsoft 365 Business users"
+title: "Set up mobile devices for Microsoft 365 for business users"
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -19,16 +19,17 @@ ms.custom:
 - OKR_SMB_M365
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: "Install Office on an iPhone or an Android phone, and your work files in Office apps will be protected by Microsoft 365 Business."
+description: "Install Office on an iPhone or an Android phone, and your work files in Office apps will be protected by Microsoft 365 for business."
 ---
 
-# Set up mobile devices for Microsoft 365 Business users
+# Set up mobile devices for Microsoft 365 for business users
 
-Follow the instructions in the tabs to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 Business.
+Follow the instructions in the tabs to install Office on an iPhone or an Android phone. After you follow these steps, your work files created in Office apps will be protected by Microsoft 365 for business.
 
 The example is for Outlook, but applies for any other Office apps you want to install also.
   
@@ -36,11 +37,11 @@ The example is for Outlook, but applies for any other Office apps you want to in
 
 ## [iPhone](#tab/iPhone)
   
-Watch a short video on how to set up Office apps on iOS devices with Microsoft 365 Business.<br><br>
+Watch a short video on how to set up Office apps on iOS devices with Microsoft 365 for business.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWee2n] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 Go to **App store**, and in the search field type in Microsoft Outlook.
   
@@ -54,7 +55,7 @@ When the installation is done, tap the **Open** button to open Outlook and then 
   
 ![Screenshot of Outlook with Get Started button](../media/005bedec-ae50-4d75-b3bb-e7cef9e2561c.png)
   
-Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 Business credentials \> **Sign in**.
+Enter your work email address on the **Add Email Account** screen \> **Add Account**, and then enter your Microsoft 365 for business credentials \> **Sign in**.
   
 ![Sign in to your work account](../media/3cef1fb5-7bec-4d3d-8542-872b731ce19f.png)
   
@@ -72,7 +73,7 @@ Watch a video about installing Outlook and Office on Android devices.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ecc2e9c0-bc7e-4f26-8b14-91d84dbcfef0] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 To begin setup on your Android phone, go to the Play Store.
   
@@ -82,7 +83,7 @@ Enter Microsoft Outlook in the Google Play search box and tap **Install**. Once 
   
 ![Tap Open to open Outlook app](../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
-In the Outlook app, tap **Get Started**, then add your Microsoft 365 Business email account \> **Continue**, and sign in with your organization credentials.
+In the Outlook app, tap **Get Started**, then add your Microsoft 365 for business email account \> **Continue**, and sign in with your organization credentials.
   
 ![Sign in to your organizational account in Outlook](../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
@@ -100,6 +101,6 @@ Open Outlook again, and enter and confirm a PIN. Your Outlook app is now ready f
 
 ## See also
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
 
 ---

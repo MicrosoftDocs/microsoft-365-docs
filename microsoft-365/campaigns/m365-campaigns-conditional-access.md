@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: "Learn how to require MFA and set up conditional access policies for Microsoft 365 Business."
+description: "Learn how to require MFA and set up conditional access policies for Microsoft 365 for business."
 ---
 
 # Require multi-factor authentication and set up conditional access policies

@@ -16,11 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Manage custodians in an Advanced eDiscovery case."
+description: Learn how to view details, edit, and bulk edit the list of custodians in an Advanced eDiscovery case.
+ms.custom: seo-marvel-apr2020
 ---
 # Manage custodians in an Advanced eDiscovery case
 
-The Custodians tab in Advanced eDiscovery contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
+The Custodians page on the **Sources** tab in an Advanced eDiscovery case contains a list of all custodians that have been added to the case. After you add custodians to a case, details about each custodian are automatically collected from Azure Active Directory and are viewable in Advanced eDiscovery.
 
 ![Manage Custodians](../media/CustodianDetails.PNG)
 
@@ -30,25 +31,25 @@ To view the details about a custodian, click the custodian from the list on the 
 
 - Contact information
 
-  - **Display Name** - The name displayed in the address book for the custodian. This is usually the combination of the custodian’s first name, middle initial, and last name.
+  - **Display Name** - The name displayed in the address book for the custodian. This is usually the combination of the custodian's first name, middle initial, and last name.
   
    - **Mail/SMTP** - The primary SMTP address for the custodian, for example, brianj@contoso.onmicrosoft.com. The custodian's user principal name (UPN) is also listed.
 
-  - **Title** - The custodian’s job title.
+  - **Title** - The custodian's job title.
 
   - **Department** - The name for the department in which the custodian works.
 
-  - **Manager** - The custodian’s manager. The designated manager will receive any escalation communications for this custodian.
+  - **Manager** - The custodian's manager. The designated manager will receive any escalation communications for this custodian.
   
 - Location information
 
   - **City** - The city in which the custodian is located.
 
-  - **State** - The state or province in the custodian’s address.
+  - **State** - The state or province in the custodian's address.
 
   - **Country/Region** - The country/region where the custodian is located.
 
-  - **Office** - The office location in the custodian’s place of business.
+  - **Office** - The office location in the custodian's place of business.
 
 - Case information
 
@@ -73,9 +74,9 @@ To update the data sources that are associated with a custodian:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
   
-2. Click the **Custodians** tab.
+2. Click the **Sources** tab.
   
-3. Select a custodian from the list and click **Edit** on the flyout page.
+3. On the **Custodians** page, select a custodian from the list and click **Edit** on the flyout page.
 
     ![Edit Data Sources](../media/EditCustodianDataSource.PNG)
   
@@ -97,9 +98,11 @@ To trigger the re-indexing process to address partially indexed items:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
 
-2. Click to **Custodians tab**, and then select a custodian whose data must be reindexed. 
+2. Click the **Sources** tab.
 
-3. On the flyout page, click **Update index**.
+3. On the **Custodians** page, select a custodian whose data must be reindexed.
+
+4. On the flyout page, click **Update index**.
 
    A dialog is displayed saying the index job has been created.
 
@@ -121,13 +124,13 @@ To release a custodian:
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
 
-2.	Go to the **Custodians** tab.
+2. Click the **Sources** tab.
 
-3.	Click to **Custodians tab**, and then select the custodian who is being released from the case.
+3. On the **Custodians** page, and then select the custodian who is being released from the case.
 
 4. On the flyout page, click **Release custodian**.
 
-   A warning page is displayed explaining that if a hold is placed on a data source associated with the custodian, the hold will be removed, and that any other hold associated with a different Advanced eDiscovery case will still apply. That includes other types of preservation and retention features in Office 365 (such as an Office 365 retention policy).
+   A warning page is displayed explaining that if a hold is placed on a data source associated with the custodian, the hold will be removed, and that any other hold associated with a different Advanced eDiscovery case will still apply. That includes other types of preservation and retention features (such as a Microsoft 365 retention policy).
 
 5. Click **Yes** to confirm that you want to release the custodian. 
 

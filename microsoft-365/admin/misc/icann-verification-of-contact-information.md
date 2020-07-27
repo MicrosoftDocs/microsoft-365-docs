@@ -6,13 +6,14 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -31,6 +32,6 @@ For validation, an email is sent to the registrant's address.
 
 The email will look like this:
 
-![Email example](../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
+![Email example](../../media/8bf27c08-510c-4d49-b152-8d047d038f1f.jpg)
 
 

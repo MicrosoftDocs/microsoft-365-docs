@@ -1,5 +1,5 @@
 ---
-title: "Use Compliance Manager to help meet data protection and regulatory requirements when using Microsoft cloud services"
+title: Meet data protection and regulatory requirements with Compliance Manager for Microsoft cloud services
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,17 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
-description: "The Compliance Manager in the Microsoft Service Trust Portal provides tools to track, implement, and manage the controls to help your organization reach compliance with security and data protection industry standards (such as GDPR, ISO 27001 and 27018, and HIPAA) when measured against Microsoft cloud services, such as Office 365 and Microsoft Azure. The Compliance Manager helps the person who oversees the data protection and privacy strategy for your organization manage your compliance and risk assessment process."
+description: Learn how to use Compliance Manager in the Microsoft Service Trust Portal to satisfy data protection and regulatory requirements.
+ms.custom: seo-marvel-apr2020
 ---
 
-# Microsoft Compliance Manager (Classic)
+# Microsoft Compliance Manager (classic)
 
 > [!NOTE]
-> This documentation describes a legacy product. Users are strongly discouraged from using this version of Compliance Manager and instead encouraged to use the new  [Microsoft Compliance Score](compliance-score.md).
+> This documentation describes a previous version of this product. Users are *strongly discouraged from using this version of Compliance Manager*. **If you're using the current preview version of Compliance Manager, refer to the [Compliance Manager (preveiw) documentation](working-with-compliance-manager.md).**
 
- *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.* 
+ *Compliance Manager isn't available in Office 365 operated by 21Vianet, Office 365 Germany, Office 365 U.S. Government Community High (GCC High), or Office 365 Department of Defense.*
   
-Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](https://support.office.com/article/f30e2353-0bd6-41ed-8347-eea1fb8d2662), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure. 
+Compliance Manager, a workflow-based risk assessment tool in the Microsoft [Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal), enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft Professional Services and Microsoft cloud services, such as Microsoft Office 365, Microsoft Dynamics 365, and Microsoft Azure. 
 
 Compliance Manager:
   
@@ -221,7 +222,7 @@ By evaluating each control using these factors, we determine the essence of the 
   
  **Threat**
   
-||||
+|<br>|<br>|<br>|
 |:-----|:-----|:-----|
 ||**Mandatory** <br/> |**Discretionary** <br/> |
 |**Preventative** <br/> |High risk  <br/> |Medium risk  <br/> |
@@ -238,7 +239,7 @@ Threat refers to anything that poses a risk to the fundamental, universally-acce
     
 A failure of any of these characteristics is considered a compromise of the system as a whole. Threats can come from both internal and external sources, and an actor's intent can be accidental or malicious. These factors are estimated in a threat matrix that assigns threat levels of either High, Moderate, or Low to each combination of scenarios.
 
-||**Internal**<br/>||**External**<br/>||||
+|<br>|**Internal**<br/>|<br>|**External**<br/>|<br>|<br>|<br>|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||*Malicious*<br/>|*Accidental*<br/>|*Malicious*<br/>|*Accidental*<br/>|||
 |**Confidentiality**<br/>|(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)  <br/> |(H, M, or L)|
@@ -695,7 +696,7 @@ Compliance Manager is designed to be regularly updated to keep pace with changes
     
 - A **Minor** change is an insignificant change to a Customer Actions, such as fixing a typo or formatting issues, or updating or correcting hyperlinks. Minor changes generally do not require the control to be re-evaluated; however, we do recommend that you review the updated Customer Action.
   
-### Office 365 Customer-Managed Controls - Change Log for July 2018
+### Customer-managed controls - Change Log for July 2018
 
 |**Control ID**|**Assessment**|**Type of change**|**Description of change**|**Recommended actions for customers**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -705,7 +706,7 @@ Compliance Manager is designed to be regularly updated to keep pace with changes
 45 C.F.R.  § 164.316(b)(2)(iii)| Office 365: HIPAA|Major|Added HITECH control to HIPAA Assessment for Office 365|Review the added control and recommended Customer Actions<br/>|
 |
 
-### Office 365 Customer-Managed Controls - Change Log for April 2018
+### Customer-managed controls - Change Log for April 2018
 
 |**GDPR**|**HIPAA**|**ISO 27001**|**ISO 27018**|**NIST 800-53**|**NIST 800-171**|**Type of change**|**Description of change**|**Recommended actions for customers**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|

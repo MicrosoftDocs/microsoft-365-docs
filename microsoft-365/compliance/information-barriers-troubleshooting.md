@@ -12,7 +12,8 @@ ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
-description: "Use this article as a guide for troubleshooting information barriers."
+description: Use this article as a guide for troubleshooting information barriers.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Troubleshooting information barriers
@@ -22,7 +23,7 @@ description: "Use this article as a guide for troubleshooting information barrie
 In the event that people run into unexpected issues after information barriers are in place, there are some steps you can take to resolve those issues. Use this article as a guide.
 
 > [!IMPORTANT]
-> To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br/>- Microsoft 365 Enterprise Global Administrator<br/>- Office 365 Global Administrator<br/>- Compliance Administrator<br/>- IB Compliance Management (this is a new role!)<p>To learn more about prerequisites for information barriers, see [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Make sure to [connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+> To perform the tasks described in this article, you must be assigned an appropriate role, such as one of the following:<br/>- Microsoft 365 Enterprise Global Administrator<br/>- global administrator<br/>- Compliance Administrator<br/>- IB Compliance Management (this is a new role!)<p>To learn more about prerequisites for information barriers, see [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Make sure to [connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ## Issue: Users are unexpectedly blocked from communicating with others in Microsoft Teams 
 
@@ -157,7 +158,7 @@ Make sure that your organization does not have [Exchange address book policies](
 
 1. Connect to [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps). 
 
-2. Run the [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/email-addresses-and-address-books/get-addressbookpolicy?view=exchange-ps) cmdlet, and review the results.
+2. Run the [Get-AddressBookPolicy](https://docs.microsoft.com/powershell/module/exchange/get-addressbookpolicy?view=exchange-ps) cmdlet, and review the results.
 
     |Results  |Next step  |
     |---------|---------|
@@ -166,11 +167,46 @@ Make sure that your organization does not have [Exchange address book policies](
 
 3. [View status of user accounts, segments, policies, or policy application](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).
 
+## Issue: Information barrier policy not applied to all designated users
+
+After you have defined segments, defined information barrier policies, and have attempted to apply those policies, you may find that the policy is applying to some recipients, but not to others.
+When you run the `Get-InformationBarrierPoliciesApplicationStatus` cmdlet, search the output for text like this.
+
+> Identity: `<application guid>`
+>
+> Total Recipients: 81527
+>
+> Failed Recipients: 2
+>
+> Failure Category: None
+>
+> Status: Complete
+
+### What to do
+
+1. Search in the audit log for `<application guid>`. You can copy this PowerShell code and modify for your variables.
+
+```powershell
+$DetailedLogs = Search-UnifiedAuditLog -EndDate <yyyy-mm-ddThh:mm:ss>  -StartDate <yyyy-mm-ddThh:mm:ss> -RecordType InformationBarrierPolicyApplication -ResultSize 1000 |?{$_.AuditData.Contains(<application guid>)} 
+```
+
+2. Check the detailed output from the audit log for the values of the `"UserId"` and `"ErrorDetails"` fields. This will give you the reason for the failure. You can copy this PowerShell code and modify for your variables.
+
+```powershell
+   $DetailedLogs[1] |fl
+```
+ For example:
+
+> "UserId":  User1
+> 
+>"ErrorDetails":"Status: IBPolicyConflict. Error: IB  segment               "segment id1" and IB segment "segment id2" has conflict and cannot be assigned to the recipient. 
+
+3. Usually, you will find that a user has been included in more than one segment. You can fix this by updating the `-UserGroupFilter` value in `OrganizationSegments`.
+
+4. Re-apply information barrier policies using these procedures [Information Barriers policies](information-barriers-policies.md#part-3-apply-information-barrier-policies).
+
 ## Related topics
 
 [Define policies for information barriers in Microsoft Teams](information-barriers-policies.md)
 
 [Information barriers](information-barriers.md)
-
-
-

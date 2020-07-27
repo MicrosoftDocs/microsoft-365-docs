@@ -13,22 +13,24 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Learn about the limits in effect for the Advanced eDiscovery solution in Microsoft 365. This includes case limits, indexing limits, and search limits when using the search tool to collect case data."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn about the case limits, indexing limits, and search limits in effect for the Advanced eDiscovery solution in Microsoft 365.
 ---
 
 # Limits in Advanced eDiscovery
 
 This article describes the limits in the Advanced eDiscovery solution in Microsoft 365.
 
-## Case limits
+## Case and review set limits
 
-The following table lists the limits for cases in Advanced eDiscovery.
+The following table lists the limits for cases and review sets in Advanced eDiscovery.
 
 |**Description of limit**|**Limit**|
 |:-----|:-----|
-|Total number of documents that can be added to a case (for all review sets in a case).  <br/> |1 million  <br/> |
-|Total file size per load set.  <br/> |100 GB  <br/> |
-|Total amount of data loaded into a case per day.<br/> |2 TB <br/> |
+|Total number of documents that can be added to a case (for all review sets in a case).  <br/> |3 million <br/> |
+|Total file size per load set. This includes loading non-Office 365 into a review set.  <br/> |300 GB <br/> |
+|Total amount of data loaded into all review sets in the organization per day.<br/> |2 TB <br/> |
 |Maximum number of loads sets per case.  <br/> |15 <br/> |
 |Maximum number of review sets per case.  <br/> |20 <br/> |
 |||
@@ -56,7 +58,7 @@ The limits described in this section are related to using the search tool on the
 |Maximum number of searches that a single user can start at the same time.  <br/> |10  <br/> | 
 |Maximum number of characters for a search query (including operators and conditions).  <br/> |**Mailboxes**: 10,000<br/>**Sites**: 4,000 when searching all sites or 2,000 when searching up to 20 sites <sup>2</sup> <br/> |
 |Minimum number of alpha characters for prefix wildcards; for example **one\*** or **set\***. <br/> |3  <br/> |  
-|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** or **ONEAR** Boolean operator.  <br/> |10,000 <sup>3</sup> <br/> |
+|Maximum variants returned when using prefix wildcard to search for an exact phrase or when using a prefix wildcard and the **NEAR** Boolean operator.  <br/> |10,000 <sup>3</sup> <br/> |
 |Maximum number of items per user mailbox that are displayed on preview page for searches. The newest items are displayed.   <br/> |100  <br/> |
 |Maximum number of items from all mailboxes displayed on preview page for searches.  <br/> |1,000  <br/> |
 |Maximum number of mailboxes that can be previewed for search results.  If there are more than 1000 mailboxes that contain items that match the search query, only the top 1,000 mailboxes with the most results are available for preview.<br/> |1,000  <br/> |

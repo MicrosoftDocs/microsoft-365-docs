@@ -23,7 +23,7 @@ We categorize device activity in the context of Windows Update with these terms:
 
 - <strong>Active:</strong> Devices that have met the minimum usage criteria (six hours, two continuous) for the most recent security update release and have checked in with Microsoft Intune at least every five days
 - <strong>Synced:</strong> Devices that have checked in with Intune within the last 28 days
-- <strong>Out of sync</strong> – Devices that have <i>not</i> checked in with Intune in the last 28 days
+- <strong>Out of sync:</strong> Devices that have <i>not</i> checked in with Intune in the last 28 days
 
 
 

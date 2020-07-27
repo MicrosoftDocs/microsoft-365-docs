@@ -1,10 +1,10 @@
 ---
-title: "Detect and Remediate Illicit Consent Grants in Office 365"
+title: "Detect and Remediate Illicit Consent Grants"
 f1.keywords:
 - NOCSH
-ms.author: chrfox
-author: chrfox
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
 ms.date:
 audience: ITPro
 ms.topic: article
@@ -15,39 +15,49 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: "Learn how to recognize and remediate the illicit consent grants attack in Office 365."
+description: Learn how to recognize and remediate the illicit consent grants attack in Microsoft Office 365.
+ms.custom: seo-marvel-apr2020
 ---
-# Detect and Remediate Illicit Consent Grants in Office 365
+# Detect and Remediate Illicit Consent Grants
 
 **Summary**  Learn how to recognize and remediate the illicit consent grants attack in Office 365.
 
 ## What is the illicit consent grant attack in Office 365?
 
-In an illicit consent grant attack, the attacker creates an Azure-registered application that requests access to data such as contact information, email, or documents. The attacker then tricks an end user into granting that application consent to access their data either through a phishing attack, or by injecting illicit code into a trusted website. After the illicit application has been granted consent, it has account-level access to data without the need for an organizational account. Normal remediation steps, like resetting passwords for breached accounts or requiring Multi-Factor Authentication (MFA) on accounts, are not effective against this type of attack, since these are third-party applications and are external to the organization. These attacks leverage an interaction model which presumes the entity that is calling the information is automation and not a human.
+In an illicit consent grant attack, the attacker creates an Azure-registered application that requests access to data such as contact information, email, or documents. The attacker then tricks an end user into granting that application consent to access their data either through a phishing attack, or by injecting illicit code into a trusted website. After the illicit application has been granted consent, it has account-level access to data without the need for an organizational account. Normal remediation steps, like resetting passwords for breached accounts or requiring Multi-Factor Authentication (MFA) on accounts, are not effective against this type of attack, since these are third-party applications and are external to the organization.
+
+These attacks leverage an interaction model which presumes the entity that is calling the information is automation and not a human.
+
+> [!IMPORTANT]
+> Do you suspect you're experiencing problems with illicit consent-grants from an app, right now? Microsoft Cloud App Security (MCAS) has tools to detect, investigate, and remediate your OAuth apps. This MCAS article has a tutorial that outlines how to go about [investigating risky OAuth apps](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). You can also set [OAuth app policies](https://docs.microsoft.com/cloud-app-security/app-permission-policy) to investigate app-requested permissions, which users are authorizing these apps, and widely approve or ban these permissions requests.
 
 ## What does an illicit consent grant attack look like in Office 365?
 
-You need to search the Office 365 **audit log** to find signs, also called Indicators of Compromise (IOC) of this attack. For organizations with many Azure-registered applications and a large user base, the best practice is to review your organizations consent grants on a weekly basis.
+You need to search the **audit log** to find signs, also called Indicators of Compromise (IOC) of this attack. For organizations with many Azure-registered applications and a large user base, the best practice is to review your organizations consent grants on a weekly basis.
 
 ### Steps for finding signs of this attack
 
-1. Open the **Security and Compliance Center** in your Office 365 tenant.
+1. Open the **Security & Compliance Center** at <https://protection.office.com>.
 
 2. Navigate to **Search** and select **Audit log search**.
 
-3. Search (all activities and all users) and enter the start date and end date if required and then click **Search**. 
+3. Search (all activities and all users) and enter the start date and end date if required and then click **Search**.
 
-4. Filter the results for Consent to application, and Add OAuth2PermissionGrant.
+4. Click **Filter results** and enter Consent to application in the **Activity** field.
 
 5. Click on the result to see the details of the activity. Click **More Information** to get details of the activity. Check to see if IsAdminContent is set to True.
 
 > [!NOTE]
-> • It can take up to 30 minutes or up to 24 hours after an event occurs for the corresponding audit log entry to be displayed in the search results. <br/><br/> • The length of time that an audit record is retained and searchable in the audit log depends on your Office 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
-If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take steps to [confirm an attack](#how-to-confirm-an-attack).
+> 
+> It can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.
+> 
+> The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user. For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> 
+> If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data. If this is unexpected, take steps to [confirm an attack](#how-to-confirm-an-attack).
 
 ## How to confirm an attack
 
-If you have one or more instances of the IOCs listed above, you need to do further investigation to positively confirm that the attack occurred. You can use any of these three methods to confirm the attack.
+If you have one or more instances of the IOCs listed above, you need to do further investigation to positively confirm that the attack occurred. You can use any of these three methods to confirm the attack:
 
 - Inventory applications and their permissions using the Azure Active Directory portal. This method is thorough, but you can only check one user at a time which can be very time consuming if you have many users to check.
 
@@ -73,7 +83,7 @@ You can look up the applications to which any individual user has granted permis
 
 5. Select **Applications**.
 
-This will show you the apps that are assigned to the user and what permissions the applcations have.
+This will show you the apps that are assigned to the user and what permissions the applications have.
 
 ### Steps for having your users enumerate their application access
 
@@ -92,11 +102,11 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 - Local Administrator on the computer from which will run the scripts.
 
 > [!IMPORTANT]
-> We highly recommend that you require multi-factor authentication on your administrative account. This script supports MFA authentication.
+> We ***highly recommend*** that you require multi-factor authentication on your administrative account. This script supports MFA authentication.
 
 1. Sign in to the computer that you will run the script from with local administrator rights.
 
-2. Download or copy the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the scruipt. This will be the same folder to which the output "permissions.csv" file will be written.
+2. Download or copy the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the script. This will be the same folder to which the output "permissions.csv" file will be written.
 
 3. Open a PowerShell instance as an administrator and open to the folder you saved the script to.
 
@@ -110,7 +120,7 @@ The simplest way to verify the Illicit Consent Grant attack is to run [Get-Azure
 
 The script produces one file named Permissions.csv. Follow these steps to look for illicit application permission grants:
 
-1. In the ConsentType column (column G) search for the value "AllPrinciples". The AllPrincipals permission allows the client application to access everyone's content in the tenancy. Native Office 365 applications need this permission to work correctly. Every non-Microsoft application with this permission should be reviewed carefully.
+1. In the ConsentType column (column G) search for the value "AllPrinciples". The AllPrincipals permission allows the client application to access everyone's content in the tenancy. Native Microsoft 365 applications need this permission to work correctly. Every non-Microsoft application with this permission should be reviewed carefully.
 
 2. In the Permission column (column F) review the permissions that each delegated application has to content. Look for "Read" and "Write" permission or "*.All" permission, and review these carefully because they may not be appropriate.
 
@@ -120,7 +130,7 @@ The script produces one file named Permissions.csv. Follow these steps to look f
 
 ## Determine the scope of the attack
 
-After you have finished inventorying application access, review the Office 365 **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Microsoft 365 Security and Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach. Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had. You can search the **audit log** in the [Microsoft 365 Security and Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
 
 > [!IMPORTANT]
 > [Mailbox auditing](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) and [Activity auditing for admins and users](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) must have been enabled prior to the attack for you to get this information.
@@ -145,11 +155,11 @@ After you have identified an application with illicit permissions, you have seve
 
 - You can also disable sign-in for the affected account altogether, which will in turn disable app access to data in that account. This isn't ideal for the end user's productivity, of course, but if you are working to limit impact quickly, it can be a viable short-term remediation.
 
-- You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications. You can do this by following the steps in [Turning Integrated Apps on or off](https://docs.microsoft.com/office365/admin/misc/integrated-apps).
+- You can turn integrated applications off for your tenancy. This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis. This prevents your users from inadvertently granting access to a malicious application. This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications. You can do this by following the steps in [Turning Integrated Apps on or off](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
 
-## Secure Office 365 like a cybersecurity pro
+## Secure Microsoft 365 like a cybersecurity pro
 
-Your Office 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Office 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Office 365 tenant.
+Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users. Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.
 
 - Tasks to accomplish in the first 30 days. These have immediate affect and are low-impact to your users.
 

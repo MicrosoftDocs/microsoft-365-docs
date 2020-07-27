@@ -16,14 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "When a custodian is added to an Advanced eDiscovery case, any content in Office 365 that was deemed as partially indexed is re-processed to make it fully searchable."
+description: "When a custodian is added to an Advanced eDiscovery case, any content that was deemed as partially indexed is re-processed to make it fully searchable."
 ---
 
 # Advanced indexing of custodian data
 
-When a custodian is added to an Advanced eDiscovery case, any content in Office 365 that was deemed as partially indexed is re-processed to make it fully searchable.  This process is called *Advanced indexing*. Content can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered.
+When a custodian is added to an Advanced eDiscovery case, any content that was deemed as partially indexed is re-processed to make it fully searchable.  This process is called *Advanced indexing*. Content can be partially indexed for a number of reasons including the existence of images, unsupported file types or when indexing file size limits are encountered.
 
-To learn more about processing support in Office 365 and partially indexed items, see:
+To learn more about processing support and partially indexed items, see:
 
 - [Supported file types in Advanced eDiscovery](supported-filetypes-ediscovery20.md)
 

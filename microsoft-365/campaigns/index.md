@@ -36,21 +36,21 @@ In our current world, keeping data and communications secure is a priority, part
 
 
 **What is Microsoft 365 for Campaigns?** 
-It's a recommended secure configuration that includes Microsoft 365 Business so that you can:
+It's a recommended secure configuration that includes Microsoft 365 Business Premium so that you can:
 - Rely on trusted business productivity and collaboration tools, such as Outlook, Word, Excel, and other Office products 
 - Protect your work files on all of your iOS, Android, and Windows 10 devices with enterprise-grade security that is simple to manage 
 - Apply extra protection for user accounts and identity 
 
-![Microsoft 365 Business protects your productivity tools, collaboration tools, file storage, email, devices, and identity](../media/M365-WhatIsIt-SecurityFocus.png)
+![Microsoft 365 Business Premium protects your productivity tools, collaboration tools, file storage, email, devices, and identity](../media/M365-WhatIsIt-SecurityFocus.png)
 
-While federal election campaigns in the United States qualify for special pricing for Microsoft 365 Business, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
+While federal election campaigns in the United States qualify for special pricing for Microsoft 365 Business Premium, any organization with this plan can take advantage of this guidance to configure increased security and learn how to collaborate securely.
 
 This library includes the following:
 - Prescriptive setup guidance for adding increased security.
 - Help for users to setup devices for secure access.
 - Guidance on how to collaborate and share securely.
 
-For more information about what's included, see [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business). 
+For more information about what's included, see [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business). 
 
 
 Get started

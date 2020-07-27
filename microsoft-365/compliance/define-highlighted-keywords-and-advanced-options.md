@@ -1,5 +1,5 @@
 ---
-title: "Define highlighted keywords and advanced options in Office 365 Advanced eDiscovery"
+title: "Define highlighted keywords and advanced options in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,11 +14,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
-description: "Learn how to add user-defined keywords to Relevance to help identify relevant files while tagging in Office 365 Advanced eDiscovery and to specify cost parameters. 
-"
+description: "Learn how to add user-defined keywords to Relevance to help identify relevant files while tagging in Advanced eDiscovery and to specify cost parameters."
 ---
 
-# Define highlighted keywords and advanced options in Office 365 Advanced eDiscovery
+# Define highlighted keywords and advanced options in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -70,7 +69,7 @@ These settings affect the Track and Decide graphs in Relevance.
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Defining issues and assigning users](define-issues-and-assign-users.md)
   

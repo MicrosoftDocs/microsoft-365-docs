@@ -41,7 +41,7 @@ If you want to configure privileged access management in a simulated enterprise,
 
 In this phase, you configure an approvers group and enable privileged access management for your Microsoft 365 Enterprise test environment. For additional details and an overview of privileged access management, see [Privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview).
 
-Follow these steps to set up and use privileged access in your Office 365 organization:
+Follow these steps to set up and use privileged access in your organization:
 
 - [Step 1: Create an approver's group](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-1-create-an-approvers-group)
 
@@ -49,7 +49,7 @@ Follow these steps to set up and use privileged access in your Office 365 organi
 
 - [Step 2: Enable privileged access](https://docs.microsoft.com/microsoft-365/compliance/privileged-access-management-configuration#step-2-enable-privileged-access)
 
-    Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control. Be sure to enable privileged access in your Office 365 organization before starting Phase 3 of this guide.
+    Privileged access needs to be explicitly turned on in Office 365 with the default approver group and including a set of system accounts that you’d want to be excluded from the privileged access management access control. Be sure to enable privileged access in your organization before starting Phase 3 of this guide.
 
 ## Phase 3: Verify that approval is required for elevated and privileged tasks
 
@@ -57,7 +57,7 @@ In this phase, you verify that the privileged access policy is working and users
 
 ### Test ability to execute a task NOT defined in a privileged access policy
 
-First, connect to Exchange Management PowerShell with the credentials of a user configured as a Global Administrator in your test environment and attempt to create a new Journal rule. The [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-journalrule?view=exchange-ps) task is not currently defined in a privileged access policy for your organization.
+First, connect to Exchange Management PowerShell with the credentials of a user configured as a Global Administrator in your test environment and attempt to create a new Journal rule. The [New-JournalRule](https://docs.microsoft.com/powershell/module/exchange/new-journalrule?view=exchange-ps) task is not currently defined in a privileged access policy for your organization.
 
 1. On your local computer, open and sign into the Exchange Online Remote PowerShell Module at **Microsoft Corporation** > **Microsoft Exchange Online Remote PowerShell Module** using the Global Admin account for your test environment.
 

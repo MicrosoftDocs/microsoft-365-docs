@@ -41,10 +41,11 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `RemoteUrl` | string | URL or fully qualified domain name (FQDN) that was being connected to |
 | `LocalIP` | string | IP address assigned to the local machine used during communication |
 | `LocalPort` | int | TCP port on the local machine used during communication |
-| `Protocol` | string | IP protocol used, whether TCP or UDP |
+| `Protocol` | string | Protocol used during the communication |
 | `LocalIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `RemoteIPType` | string | Type of IP address, for example Public, Private, Reserved, Loopback, Teredo, FourToSixMapping, and Broadcast |
 | `InitiatingProcessSHA1` | string | SHA-1 of the process (image file) that initiated the event |
+| `InitiatingProcessSHA256` | string | SHA-256 of the process (image file) that initiated the event. This field is usually not populated — use the SHA1 column when available. |
 | `InitiatingProcessMD5` | string | MD5 hash of the process (image file) that initiated the event |
 | `InitiatingProcessFileName` | string | Name of the process that initiated the event |
 | `InitiatingProcessId` | int | Process ID (PID) of the process that initiated the event |
@@ -63,7 +64,7 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AppGuardContainerId` | string | Identifier for the virtualized container used by Application Guard to isolate browser activity |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)

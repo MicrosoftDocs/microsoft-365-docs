@@ -2,8 +2,8 @@
 title: "Share calendars with external users"
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twernermsft
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,7 +26,7 @@ description: "Learn how to let your users share their calendars with external us
 
 # Share calendars with external users
 
-It's often necessary to schedule meetings with people outside your organization. To simplify the process of finding mutually agreeable meeting times, Office 365 enables you to make calendars available to "external users," those who need to see free/busy time but don't have user accounts for your Office 365 environment.
+It's often necessary to schedule meetings with people outside your organization. To simplify the process of finding mutually agreeable meeting times, Microsoft 365 enables you to make calendars available to "external users," those who need to see free/busy time but don't have user accounts for your Microsoft 365 environment.
   
 Calendar sharing is a global setting, meaning that you, the admin, can enable it for all users in the tenant. Once sharing is enabled, users can use Outlook Web App to share their calendars with anyone inside or outside the organization. People inside the organization can view the shared calendar side-by-side with their own. People outside the organization will be sent a URL that they can use to view the calendar. Users decide when to share, how much to share, and when to keep their calendars private.
   
@@ -34,12 +35,11 @@ Calendar sharing is a global setting, meaning that you, the admin, can enable it
   
 ## Enable calendar sharing using the Microsoft 365 admin center
 
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services & add-ins</a> page. 
+1. In the admin center, go to **Settings** \> **Org Settings**. 
     
+2. On the **Services** tab, select **Calendar**.
   
-2. On the **Services &amp; add-ins** page, select **Calendar**.
-  
-3. On the **Calendar** page that opens, choose whether you want to let your users share their calendars with people outside of your organization who have Office 365 or Exchange.
+3. On the **Calendar** page that opens, choose whether you want to let your users share their calendars with people outside of your organization who have Microsoft 365 or Exchange.
     
 4. Choose whether you want to allow anonymous users (users without logon credentials) to access calendars via an email invitation.
 
@@ -48,6 +48,5 @@ Calendar sharing is a global setting, meaning that you, the admin, can enable it
     
 ## Invite people to access calendars
 
-Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5.aspx) for instructions. 
+Once sharing is enabled for the tenant, calendar owners can extend invitations to specific users. See [Sharing your calendar in Outlook Web App](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5) for instructions. 
   
-

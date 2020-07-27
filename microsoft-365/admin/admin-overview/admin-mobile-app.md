@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -28,7 +29,7 @@ description: "Get the Microsoft 365 Admin app and learn to manage your online or
 
 Are you an admin who's usually on the go? Then check out the [Microsoft 365 Admin app](https://go.microsoft.com/fwlink/?LinkID=627216). You can use the app to manage your online organization from your phone or tablet. You can get the app from the Apple Store, and from Google Play. <br> 
 
-![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../media/admin-mobile-app-darkbg.png)
+![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../../media/admin-mobile-app-darkbg.png)
 
 The admin app is a feature-rich app that has over 80 features to help you manage your org when you can't get to a computer. Here's a list of just a few of the tasks you can do from the app:
 
@@ -52,7 +53,7 @@ Watch a short video about installing the admin mobile app.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
  
 ## Frequently asked questions
@@ -61,11 +62,11 @@ Below are answers to some frequently asked questions people ask about the app.
   
 ### What do I need to do to be able to use the app?
 
-You need to have a valid Office 365 for business or Microsoft 365 Business subscription with admin privileges to sign in and use the app. The Admin mobile app isn't an email client. It's a rich administrative app with over 80 features to help you support your org while your on the go.
+You need to have a valid Microsoft 365 Apps for business or Microsoft 365 Business Premium subscription with admin privileges to sign in and use the app. The Admin mobile app isn't an email client. It's a rich administrative app with over 80 features to help you support your org while your on the go.
   
-### Can I use the app with my Office 365 for home subscription?
+### Can I use the app with my Microsoft 365 Family subscription?
 
-No, the app only works with Office 365 for business and Microsoft 365 Business subscriptions. 
+No, the app only works with Microsoft 365 Apps for business and Microsoft 365 Business Premium subscriptions. 
   
 ### Will the app work if my organization has directory synchronization enabled?
 
@@ -99,4 +100,4 @@ Email [feedback365@microsoft.com](mailto:feedback365@microsoft.com) to report an
   
 ## See also
 
-[Microsoft 365 Business training videos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 for business training videos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)

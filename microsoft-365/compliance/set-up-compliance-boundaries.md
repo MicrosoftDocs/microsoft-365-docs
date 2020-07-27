@@ -1,5 +1,5 @@
 ---
-title: "Set up compliance boundaries for eDiscovery investigations in Office 365"
+title: "Set up compliance boundaries for eDiscovery investigations"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,18 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
-description: "Use compliance boundaries to create logical boundaries within an Office 365 organization that control the user content locations that an eDiscovery manager can search. Compliance boundaries use search permissions filtering (also called compliance security filters) to control what mailboxes, SharePoint sites, and OneDrive accounts can be searched by specific users."
+description: Learn how to use compliance boundaries to create logical boundaries that control the user content locations that an eDiscovery manager can search in Microsoft 365.
+ms.custom: seo-marvel-apr2020
 ---
 
-# Set up compliance boundaries for eDiscovery investigations in Office 365
+# Set up compliance boundaries for eDiscovery investigations
 
-Compliance boundaries create logical boundaries within an Office 365 organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Office 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
+The guidance in this article can be applied when using either Core eDiscovery or Advanced eDiscovery to manage investigations.
+
+Compliance boundaries create logical boundaries within an organization that control the user content locations (such as mailboxes, SharePoint sites, and OneDrive accounts) that eDiscovery managers can search. Also, compliance boundaries control who can access eDiscovery cases used to manage the legal, human resources, or other investigations within your organization. The need for compliance boundaries is often necessary for multi-national corporations that have to respect geographical boarders and regulations and for governments, which are often divided into different agencies. In Microsoft 365, compliance boundaries help you meet these requirements when performing content searches and managing investigations with eDiscovery cases.
   
 We use the example in the following illustration to explain how compliance boundaries work.
   
-![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
+![Compliance boundaries consist of search permissions filters that control access to agencies and admin role groups that control access to eDiscovery cases](../media/M365_ComplianceBoundary_OrgChart_v2.png)
   
-In this example, Contoso LTD is an Office 365 organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
+In this example, Contoso LTD is an organization that consists of two subsidiaries, Fourth Coffee and Coho Winery. The business requires that eDiscovery mangers and investigators can only search the Exchange mailboxes, OneDrive accounts, and SharePoint sites in their agency. Also, eDiscovery managers and investigators can only see eDiscovery cases in their agency, and they can only access the cases that they're a member of. Here's how compliance boundaries meet these requirements.
   
 - The search permissions filtering functionality in Content Search controls the content locations that eDiscovery managers and investigators can search. This means eDiscovery managers and investigators in the Fourth Coffee agency can only search content locations in the Fourth Coffee subsidiary. The same restriction applies to the Coho Winery subsidiary.
     
@@ -56,7 +59,7 @@ Here's a list of Azure Active Directory user attributes that you can use for com
   
 - Company
     
-- CustomAttribute1 — CustomAttribute15
+- CustomAttribute1 - CustomAttribute15
     
 - Department
     
@@ -68,19 +71,20 @@ Although more user attributes are available, particularly for Exchange mailboxes
   
 ## Step 2: File a request with Microsoft Support to synchronize the user attribute to OneDrive accounts
 
-The next step is to file a request with Microsoft Support to synchronize the Azure Active Directory attribute that you chose in Step 1 to all OneDrive accounts in your organization. After this synchronization occurs, the attribute (and its value) that you chose in Step 1 will be mapped to a hidden managed property in SharePoint named  `ComplianceAttribute`. You use this attribute to create the search permissions filter for OneDrive in Step 4.
+The next step is to file a request with Microsoft Support to synchronize the Azure Active Directory attribute that you chose in Step 1 to all OneDrive accounts in your organization. After this synchronization occurs, the attribute (and its value) that you chose in Step 1 will be mapped to a hidden managed property named `ComplianceAttribute`. You use this attribute to create the search permissions filter for OneDrive in Step 4.
   
 Include the following information when you submit the request to Microsoft support:
   
-- The default domain name of your Office 365 organization
-    
+- The default domain name of your organization
+
 - The name of the Azure Active Directory attribute (from Step 1)
-    
-- The following title or description of the purpose of the support request: "Enable OneDrive for Business Synchronization with Azure Active Directory for Compliance Security Filters". This helps route the request to the Office 365 eDiscovery engineering team who implements the request.
-    
+
+- The following title or description of the purpose of the support request: "Enable OneDrive for Business Synchronization with Azure Active Directory for Compliance Security Filters". This helps route the request to the eDiscovery engineering team who implements the request.
+
 After the engineering change is made and the attribute is synchronized to OneDrive, Microsoft Support will send you the build number that the change was made in and an estimated deployment date. The deployment process usually takes 4–6 weeks after you submit the support request.
   
- **Important:** You can complete Step 3 through Step 5 before the change is deployed. But running content searches won't return documents from OneDrive sites specified in the search permissions filter until after the change is deployed. 
+> [!IMPORTANT]
+> You can complete Step 3 through Step 5 before this attribute change is deployed. But running content searches won't return documents from OneDrive sites specified in the search permissions filter until after the change is deployed.
   
 ## Step 3: Create a role group for each agency
 
@@ -152,29 +156,29 @@ The final step is to create a eDiscovery case in the Security & Compliance Cente
 - When a member of the role group assigned to a case runs a search associated with the case, they will only be able to search the content locations within their agency (which is defined by the search permissions filter that you created in Step 4.)
 
 To create a case and assign members:
-    
-1. Go to the **eDiscovery** page in the Security & Compliance Center and create a case. 
-    
+
+1. Go to the **eDiscovery** or **Advanced eDiscovery** page in the Security & Compliance Center and create a case. 
+
 2. In the list of eDiscovery cases, click the name of the case you created.
-    
+
 3. In the **Manage this case** flyout page, under **Manage role groups**, click ![Add icon](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Add**.
-    
+
     ![Add a role group as a member of an eDiscovery case](../media/f8b4b557-01b9-4388-85be-b5b5ab7c5629.png)
   
 4. In the list of role groups, select one of the role groups that you created in Step 3, and click **Add**.
-    
+
 5. Click **Save** on the **Manage this case** flyout to save the change. 
 
 ## Compliance boundary limitations
 
 Keep the following limitations in mind when managing eDiscovery cases and investigations that use of compliance boundaries.
   
-- When creating and running a Content Search, you can select content locations that are outside of your agency. However, because of the search permissions filter, content from those locations isn't included in the search results.
-    
+- When creating and running a search, you can select content locations that are outside of your agency. However, because of the search permissions filter, content from those locations isn't included in the search results.
+
 - Compliance boundaries don't apply to holds in eDiscovery cases. That means an eDiscovery manager in one agency can place a user in a different agency on hold. However, the compliance boundary will be enforced if the eDiscovery manager searches the content locations of the user who was placed on hold. That means the eDiscovery manager won't be able search the user's content locations, even though they were able to place the user on hold.
-    
+
     Also, hold statistics will only apply to content locations in the agency.
-    
+
 - Search permissions filters aren't applied to Exchange public folders.
 
 ## Searching and exporting content in Multi-Geo environments
@@ -213,8 +217,10 @@ Search permissions filters also let you control where content is routed for expo
 
    If you don't specify the **Region** parameter for a search permissions filter, the organization's default SharePoint region will be searched. Search results are exported to the closest datacenter.
 
-> [!TIP]
-> To simplify the concept, the **Region** parameter controls the datacenter that is used to search for content in SharePoint and OneDrive. This doesn't apply to searching for content in Exchange because Exchange content searches aren't bound by the geographic location of datacenters. Also, the same **Region** parameter value may also dictate the datacenter that exports are routed through. This is often necessary to control the movement of data across geographic boarders.<br/><br/>If you're using Advanced eDiscovery, searching for content in SharePoint and OneDrive isn't bound by the geographic location of datacenters. All datacenters are searched. For more information about Advanced eDiscovery, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
+   To simplify the concept, the **Region** parameter controls the datacenter that is used to search for content in SharePoint and OneDrive. This doesn't apply to searching for content in Exchange because Exchange content searches aren't bound by the geographic location of datacenters. Also, the same **Region** parameter value may also dictate the datacenter that exports are routed through. This is often necessary to control the movement of data across geographic boarders.
+
+> [!NOTE]
+> If you're using Advanced eDiscovery, the **Region** parameter doesn't control the region that data is exported from. Also, searching for content in SharePoint and OneDrive isn't bound by the geographic location of datacenters. All datacenters are searched. For more information about Advanced eDiscovery, see [Overview of the Advanced eDiscovery solution in Microsoft 365](overview-ediscovery-20.md).
 
 Here are examples of using the **Region** parameter when creating search permission filters for compliance boundaries. This assumes that the Fourth Coffee subsidiary is located in North America and that Coho Winery is in Europe. 
   
@@ -230,11 +236,11 @@ Keep the following things in mind when searching and exporting content in multi-
   
 - The **Region** parameter doesn't control searches of Exchange mailboxes. All data centers will be searched when you search mailboxes. To limit the scope of which Exchange mailboxes are searched, use the **Filters** parameter when creating or changing a search permissions filter. 
     
-- If it's necessary for an eDiscovery Manager to search across multiple SharePoint regions, you need to create a different user account for that eDiscovery manager to use in the search permissions filter to specify the region where the SharePoint sites or OneDrive accounts are located. For more information about setting this up, see the "Searching for content in a SharePoint Multi-Geo environment" section in [Content Search in Office 365](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
+- If it's necessary for an eDiscovery Manager to search across multiple SharePoint regions, you need to create a different user account for that eDiscovery manager to use in the search permissions filter to specify the region where the SharePoint sites or OneDrive accounts are located. For more information about setting this up, see the "Searching for content in a SharePoint Multi-Geo environment" section in [Content Search](content-search.md#searching-for-content-in-a-sharepoint-multi-geo-environment).
     
 - When searching for content in SharePoint and OneDrive, the **Region** parameter directs searches to either the main or satellite location where the eDiscovery manager will conduct eDiscovery investigations. If an eDiscovery manager searches SharePoint and OneDrive sites outside of the region that's specified in the search permissions filter, no search results are returned. 
     
-- When exporting search results, content from all content locations (including Exchange, Skype for Business, SharePoint, OneDrive, and other Office 365 services that you can search by using the Content Search tool) are uploaded to the Azure Storage location in the datacenter that's specified by the **Region** parameter. This helps organizations stay within compliance by not allowing content to be exported across controlled borders. If no region is specified in the search permissions filter, content is uploaded to the organization's default region. 
+- When exporting search results, content from all content locations (including Exchange, Skype for Business, SharePoint, OneDrive, and other services that you can search by using the Content Search tool) are uploaded to the Azure Storage location in the datacenter that's specified by the **Region** parameter. This helps organizations stay within compliance by not allowing content to be exported across controlled borders. If no region is specified in the search permissions filter, content is uploaded to the organization's default region. 
     
 - You can edit an existing search permissions filter to add or change the region by running the following command:
 
@@ -254,13 +260,13 @@ The eDiscovery manager can add parameters to their search query that restrict th
   
  **What happens if the value of the attribute that's used as the compliance attribute in a search permissions filter is changed?**
   
-It takes up to three days for a search permissions filter to enforce the compliance boundary if the value of the attribute that's used in the filter is changed. For example, in the Contoso scenario let's say that a user in the Fourth Coffee agency is transferred to the Coho Winery agency. As a result, the value of the **Department** attribute on the user object is changed from *FourthCoffee* to *CohoWinery*. In this situation, Fourth Coffee eDiscovery and investors will get search results for that user for up three days after the attribute is changed. Similarly, it takes up to three days before Coho Winery eDiscovery managers and investigators get search results for the user. 
+It takes up to three days for a search permissions filter to enforce the compliance boundary if the value of the attribute that's used in the filter is changed. For example, in the Contoso scenario let's say that a user in the Fourth Coffee agency is transferred to the Coho Winery agency. As a result, the value of the **Department** attribute on the user object is changed from *FourthCoffee* to *CohoWinery*. In this situation, Fourth Coffee eDiscovery and investors will get search results for that user for up three days after the attribute is changed. Similarly, it takes up to three days before Coho Winery eDiscovery managers and investigators get search results for the user.
   
  **Can an eDiscovery manager see content from two separate compliance boundaries?**
   
-Yes. This can be done by adding the user to role groups that have visibility to both agencies.
+Yes, this can be done when searching Exchange mailboxes by adding the eDiscovery manager to role groups that have visibility to both agencies. However when searching SharePoint sites and OneDrive accounts, an eDiscovery manager can search for content in different compliance boundaries only if the agencies are in the same region or geo location. **Note:** This limitation for sites doesn't apply in Advanced eDiscovery because searching for content in SharePoint and OneDrive isn't bound by geographic location.
   
- **Do search permissions filters work for eDiscovery case holds, Office 365 retention policies, or DLP?**
+ **Do search permissions filters work for eDiscovery case holds, Microsoft 365 retention policies, or DLP?**
   
 No, not at this time.
   

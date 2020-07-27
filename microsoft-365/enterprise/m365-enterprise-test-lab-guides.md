@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 - Ent_TLGs
+- seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Use these Test Lab Guides to set up demonstration, proof of concept, or dev/test environments for Microsoft 365 for enterprise.
 ---
@@ -31,7 +32,7 @@ You can also use TLGs to create representative environments for development and 
   
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
+Go to the [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
 
 [![The Microsoft 365 for enterprise Test Lab Guide stack](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf)
 
@@ -111,16 +112,16 @@ To demonstrate mobile device management-related features and capabilities, see:
 
 To demonstrate information protection-related features and capabilities, see:
 
-- [Increased Office 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
+- [Increased Microsoft 365 security](increased-o365-security-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure settings for increased Office 365 security and investigate built-in security tools.
+   Configure settings for increased Microsoft 365 security and investigate built-in security tools.
   
 - [Data classification](data-classification-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure and apply Office 365 labels to a document in a SharePoint Online team site.
+   Configure and apply labels to a document in a SharePoint Online team site.
     
 - [Privileged access management](privileged-access-microsoft-365-enterprise-dev-test-environment.md)
     
-   Configure privileged access management for just-in-time access to elevated and privileged tasks in your Office 365 organization.
+   Configure privileged access management for just-in-time access to elevated and privileged tasks in your organization.
 
 

@@ -16,19 +16,28 @@ ms.collection:
 ms.custom:
 - MSStore_Link
 - okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: "Learn how you can have more than one email address, called email alias, associated with your Office 365 for business account. "
+description: "Learn how you can have more than one email address, called email alias, associated with your Microsoft 365 for business account. "
 ---
 
 # Add another email alias for a user
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
-This article is for Office 365 administrators who have business subscriptions. It's not for home users.
+This article is for Microsoft 365 administrators who have business subscriptions. It's not for home users.
   
-A primary email address in Office 365 is usually the email address a user was assigned when their account was created. When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. They can also have more than one email address associated with their Office 365 for business account. These additional addresses are called aliases. 
+A primary email address in Microsoft 365 is usually the email address a user was assigned when their account was created. When the user sends email to someone else, their primary email address is what typically appears in the  *From*  field in email apps. They can also have more than one email address associated with their Microsoft 365 for business account. These additional addresses are called aliases. 
   
 For example, let's say Jenna has the email address jenna@contosoco.com, but she also wants to receive email at jen@contosoco.com because some people refer to her by that name. You can create aliases for her so that both email addresses go to Jenna's inbox.
 <br><br>  
@@ -46,9 +55,6 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
   
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 2. On the **Active Users** page, select the user > **Manage email aliases**. You won't see this option if the person doesn't have a license assigned to them. 
@@ -63,12 +69,12 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
   
      
 5. When you're done, choose **Save changes**.
     
-6. Wait 24 hours for the new aliases to populate throughout Office 365.
+6. Wait 24 hours for the new aliases to populate throughout Microsoft 365.
     
     The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
     
@@ -89,17 +95,17 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > [!Important] 
     > If you get the error message "**A parameter cannot be found that matches parameter name 'EmailAddresses**," it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
 
-4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Office 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
+4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
 
     > [!IMPORTANT]
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. When you're done, select **Save**.
 
-6. Wait 24 hours for the new aliases to populate throughout Office 365. 
+6. Wait 24 hours for the new aliases to populate throughout Microsoft 365. 
     
     The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
     
@@ -120,17 +126,17 @@ You must have [admin permissions](../add-users/about-admin-roles.md) to do this.
     > [!Important] 
     > If you get the error message "**A parameter cannot be found that matches parameter name 'EmailAddresses**," it means that it's taking a bit longer to finish setting up your tenant, or your custom domain if you recently added one. The setup process can take up to 4 hours to complete. Wait a while so the set up process has time to finish, and then try again. If the problem persists, call Support and they will do a full sync for you.
 
-4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Office 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
+4. In the text box under **Alias**, type the first part of the new email alias. If you added your own domain to Microsoft 365, you can choose the domain for the new email alias by using the drop-down list. Then select **Add**.
 
     > [!IMPORTANT]
     > If you purchased your subscription from GoDaddy or another Partner, to set the new alias as the primary, you must go to the GoDaddy/partner management console. 
   
     > [!TIP]
-    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Office 365](https://support.office.com/article/2d2fa996-b760-411d-a5cc-190d63f13207.aspx). 
+    > The email alias must end with a domain from the drop-down list. To add another domain name to the list, see [Add a domain to Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
 
 5. When you're done, select **Save**.
 
-6. Wait 24 hours for the new aliases to populate throughout Office 365. 
+6. Wait 24 hours for the new aliases to populate throughout Microsoft 365. 
     
     The user will now have a primary address and an alias. For example, all mail sent to Eliza Hoffman's primary address, Eliza@NodPublishers.com, and her  alias, Sales@NodPublishers.com, will go to Eliza's Inbox.
     
@@ -152,7 +158,7 @@ If you purchased your subscription from GoDaddy or another Partner, to set the n
   
 ## Related articles
 
-[Send email from a different address](https://support.office.com/article/ccba89cb-141c-4a36-8c56-6d16a8556d2e.aspx)
+[Send email from a different address](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e)
 
 [Change a user name and email address](../add-users/change-a-user-name-and-email-address.md)
   

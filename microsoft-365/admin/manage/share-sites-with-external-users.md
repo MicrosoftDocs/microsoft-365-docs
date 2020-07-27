@@ -1,7 +1,6 @@
 ---
-title: "Share sites and files externally"
-f1.keywords:
-- NOCSH
+title: "Share sites and files with guest users"
+f1.keywords: NOCSH
 ms.author: twerner
 author: twernermsft
 manager: scotv
@@ -14,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - SPO_Content
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,13 +23,21 @@ ROBOTS: NOINDEX
 description: "Learn how to share sites and files with people outside the organization. "
 ---
 
-# Share sites and files externally
+# Share sites and files with guest users
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 To collaborate with people outside your organization, you can share entire sites or specific files externally. If you want to get straight to setting up sharing, choose the scenario you want to enable:
 
-- [Collaborate with guests on a document](https://docs.microsoft.com/Office365/Enterprise/collaborate-on-documents)
-- [Collaborate with guests in a site](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Collaborate with guests in a team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Collaborate with guests on a document](../../solutions/collaborate-on-documents.md)
+- [Collaborate with guests in a site](../../solutions/collaborate-in-site.md)
+- [Collaborate with guests in a team](../../solutions/collaborate-as-team.md)
   
 ## Deciding how to share your content
 
@@ -50,7 +58,7 @@ The answers to these questions will help you plan your strategy for content shar
 |Share a document, but don't require authentication.  <br/> |Share a link to a non-sensitive or non-confidential document with people outside your organization so that they can either view it or update it with feedback. These people do not require access to content on the site.  <br/> |
    
 > [!IMPORTANT]
-> When you disable external sharing, people outside the organization who currently have access will no longer have access. If you later turn external sharing back on, access will be restored for these people. To prevent a user from accessing a shared content, [remove them from the Office 365 group](/office365/admin/create-groups/add-or-remove-members-from-groups), remove their permissions from the site, or [stop sharing the file or folder with them](https://support.office.com/article/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
+> When you disable external sharing, people outside the organization who currently have access will no longer have access. If you later turn external sharing back on, access will be restored for these people. To prevent a user from accessing a shared content, [remove them from the Microsoft 365 group](/office365/admin/create-groups/add-or-remove-members-from-groups), remove their permissions from the site, or [stop sharing the file or folder with them](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323). 
   
 ## Enable external sharing at the organization level
 

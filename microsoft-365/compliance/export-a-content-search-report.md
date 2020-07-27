@@ -21,6 +21,7 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: "Instead of exporting the actual results of a Content Search in the Security & Compliance Center in Office 365, you can export a search results report. The report contains a summary of the search results and a document with detailed information about each item that would be exported."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Export a Content Search report
@@ -29,10 +30,10 @@ Instead of exporting the full set of search results from a Content Search in the
   
 When you export a report, it's downloaded to a folder that has the same name as the Content Search, but that's appended with *_ReportsOnly*. For example, if the Content Search is named  *ContosoCase0815*, then the report is downloaded to a folder named *ContosoCase0815_ReportsOnly*. For a list of documents that are included in the report, see [What's included in the report](#whats-included-in-the-report).
 
-## Before you begin
+## Assign roles and check system requirements
 
-- To export a Content Search report, you have to be assigned the Compliance Search management role in the Security & Compliance Center. This role is assigned to the built-in eDiscovery Manager and Organization Management role groups. It isn't assigned by default to the Organization Management role group. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
-    
+- To export a Content Search report, you have to be assigned the Compliance Search management role in the Security & Compliance Center. This role is assigned by default to the built-in eDiscovery Manager and Organization Management role groups. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
+
 - When you export a report, the data is temporarily stored in a unique Azure Storage area in the Microsoft cloud before it's downloaded to your local computer. Be sure that your organization can connect to the endpoint in Azure, which is **\*.blob.core.windows.net** (the wildcard represents a unique identifier for your export). The search results data is deleted from the Azure Storage area two weeks after it's created. 
     
 - The computer you use to export the search results has to meet the following system requirements:
@@ -51,7 +52,7 @@ When you export a report, it's downloaded to a folder that has the same name as 
 
   > [!NOTE]
   > <sup>1</sup> Microsoft doesn't manufacture third-party extensions or add-ons for ClickOnce applications. Exporting search results using an unsupported browser with third-party extensions or add-ons isn't supported.<br/>
-  > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the Office 365 eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
+  > <sup>2</sup> As a result of recent changes to Microsoft Edge, ClickOnce support is no longer enabled by default. For instructions on enabling ClickOnce support in Edge, see [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
 
 - If the estimated total size of the results returned by a Content Search exceeds 2 TB, exporting the report fails. To successfully export the report, try to narrow the scope and rerun the search so the estimated size of the results is less than 2 TB.
 
@@ -67,7 +68,7 @@ The first step is to prepare the report for downloading to your computer exporti
   
 1. Go to [https://protection.office.com](https://protection.office.com).
     
-2. Sign in to Office 365 using your work or school account.
+2. Sign in using your work or school account.
     
 3. In the left pane of the Security & Compliance Center, click **Search** \> **Content search**.
     
@@ -122,7 +123,7 @@ The next step is to download the report from the Azure Storage area to your loca
   
 3. Click **Download report**.
     
-4. If you're prompted to install the **MicrosoftOffice 365 eDiscovery Export Tool**, click **Install**.
+4. If you're prompted to install the **eDiscovery Export Tool**, click **Install**.
     
 5. In the **eDiscovery Export Tool**, paste the export key that you copied in step 2 in the appropriate box.
     

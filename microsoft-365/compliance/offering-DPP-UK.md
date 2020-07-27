@@ -51,7 +51,3 @@ The Azure Broadcast mark is valid for one year and renewed annually.
 - [DPP Committed to Security Programme Broadcast Checklist User Guide](https://dpp-assets.s3.amazonaws.com/wp-content/uploads/2017/10/CTS_BroadcastChecklistUserGuide.pdf)
 - [NABA and DPP Broadcasters Unite to Promote Cyber Security Requirements for Suppliers](https://nabanet.com/wp-content/uploads/2017/08/NABAcaster-Issue_26.pdf)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/C/6/3C63143B-41BA-4ED7-A2A8-DDE6B0B04036/DPP-Compliance.pdf).

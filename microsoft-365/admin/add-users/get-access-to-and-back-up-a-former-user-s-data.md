@@ -16,6 +16,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -32,14 +33,11 @@ When an employee leaves your organization, you probably want to access their dat
     
 ## Access a former user's OneDrive documents
 
-If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user’s OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
+If you remove a user's license but don't delete the account, you can give yourself access to the content in the user's OneDrive. If you delete the user's account, you have 30 days by default to access the former user's OneDrive data. [Learn how to set the OneDrive retention for deleted users](/onedrive/set-retention). If you don't [restore a user account](/office365/admin/add-users/restore-user) within this time, their OneDrive content is deleted. 
 
 To preserve a former user's OneDrive files, first give yourself access to their OneDrive, and then move the files you want to keep. 
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.  
     
@@ -89,33 +87,37 @@ To preserve a former user's OneDrive files, first give yourself access to their 
     
 
 
-## Revoke admin access to a user’s OneDrive
+## Revoke admin access to a user's OneDrive
 
-As global admin, you can give yourself access to the content in a user’s OneDrive, but you may want to remove your access when you no longer need it. 
+As global admin, you can give yourself access to the content in a user's OneDrive, but you may want to remove your access when you no longer need it. 
 
 ::: moniker range="o365-worldwide"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>  as a global admin or SharePoint admin. 
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a> as a global admin or SharePoint admin. 
+
+    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a>  as a global admin or SharePoint admin.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">admin center</a> as a global admin or SharePoint admin.
+
+    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>  as a global admin or SharePoint admin.
+1. Sign in to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a> as a global admin or SharePoint admin.
+
+    If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
 
 ::: moniker-end
 
-   If you get a message that you don't have permission to access the admin center, then you don't have administrator permissions in your organization.
-
 2. In the left pane, select **Admin centers** \> **SharePoint**. (You might need to select **Show all** to see the list of admin centers.)
 
-3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the new SharePoint admin center.
+3. If the classic SharePoint admin center appears, select **Open it now** at the top of the page to open the SharePoint admin center.
 
 4. In the left pane, select **More features**.
 
@@ -134,19 +136,19 @@ As global admin, you can give yourself access to the content in a user’s OneDr
 
 To save the email messages, calendar, tasks, and contacts of the former employee, export the information to an Outlook Data File (.pst).
   
-1. [Add the former employee's email](https://support.office.com/article/6e27792a-9267-4aa4-8bb6-c84ef146101b.aspx) to your Outlook (If you [reset the user's password](reset-passwords.md), you can set it to something only you know.)
+1. [Add the former employee's email](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) to your Outlook (If you [reset the user's password](reset-passwords.md), you can set it to something only you know.)
     
 2. In Outlook, select **File**.
     
-    ![This is what the ribbon looks like in Outlook 2016.](../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
+    ![This is what the ribbon looks like in Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
 3. Select **Open &amp; Export** \> **Import/Export**.
     
-    ![Import/Export command in the Backstage view](../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
+    ![Import/Export command in the Backstage view](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
 4. Select **Export to a file**, and then select **Next**.
     
-    ![Export to a file option in the Import and Export Wizard](../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
+    ![Export to a file option in the Import and Export Wizard](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
 5. Select **Outlook Data File (.pst)**, and then select **Next**.
     
@@ -155,7 +157,7 @@ To save the email messages, calendar, tasks, and contacts of the former employee
     > [!NOTE]
     > You can export one account at a time. If you want to export multiple accounts, after one account is exported, repeat these steps. 
   
-    ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked](../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
+    ![Export Outlook Data File dialog box with top folder selected and Include subfolders checked](../../media/ce36616f-d76d-4ce2-b517-8ac4874e0971.jpg)
   
 7. Select **Next**.
     
@@ -174,8 +176,12 @@ Outlook begins the export immediately unless a new Outlook Data File (.pst) is c
     
   - If you're exporting to an existing Outlook Data File (.pst) that is password protected, in the **Outlook Data File Password** dialog box, type the  *password*, and then select **OK**.
     
-See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx) in Outlook 2010. 
+See how to [Export or backup email, contacts, and calendar to an Outlook .pst file](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) in Outlook 2010. 
   
+  
+  > [!NOTE]
+  > By default, your email is available offline for a period of 12 months. If required, see how to [increase the data available offline](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized).
+ 
 ## Give another user access to a former user's email 
 
 To give access to the email messages, calendar, tasks, and contacts of the former employee to another employee, import the information to another employee's Outlook inbox.
@@ -190,7 +196,7 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
     
 2. Select **Import from another program or file**, and then select **Next**.
     
-    ![Import and Export Wizard](../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
+    ![Import and Export Wizard](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
 3. Select **Outlook Data File (.pst)**, and select **Next**.
     
@@ -205,6 +211,9 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
 8. Set the options for importing items. The default settings usually don't need to be changed.
     
 9. Select **Finish**.
+
+> [!NOTE]
+> The steps remain the same for accessing an existing user's OneDrive and email data.
     
 > [!TIP]
 > If you want to import or restore only a few items from an Outlook Data File (.pst), you can open the Outlook Data File. Then, in the navigation pane, drag the items from Outlook Data File folders to your existing Outlook folders. 
@@ -219,4 +228,3 @@ To give access to the email messages, calendar, tasks, and contacts of the forme
   
 [OneDrive retention and deletion](/onedrive/retention-and-deletion)
   
-

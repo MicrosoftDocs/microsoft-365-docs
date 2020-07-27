@@ -9,7 +9,7 @@ ms.collection: M365-modern-desktop
 ---
 
 # Deploy apps to devices
-Part of onboarding to Microsoft Managed Desktop includes adding and deploying apps to your user’s devices. Once you're using the Microsoft Managed Desktop portal, you can add and deploy your apps. 
+Part of onboarding to Microsoft Managed Desktop includes adding and deploying apps to your user's devices. Once you're using the Microsoft Managed Desktop portal, you can add and deploy your apps. 
 
 The overall process looks like this:
 1. [Add apps to Microsoft Managed Desktop portal](#1) - This can be existing line-of-business (LOB) apps, or apps from Microsoft Store for Business that you've synced with Intune. 
@@ -33,10 +33,10 @@ In this procedure, you'll select which kind of app you want to add, and then con
 
 You can sign in to Microsoft Managed Desktop portal, or sign in to Intune and then search for Microsoft Managed Desktop. We'll show signing in to Microsoft Managed Desktop portal. 
 
-1.	Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal). 
-2.	Under **Inventory**, select **Apps**.
-3.	In the Apps workload, select **Add**.
-4.	In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
+1.    Sign in to [Microsoft Managed Desktop Admin portal](https://aka.ms/mmdportal). 
+2.    Under **Inventory**, select **Apps**.
+3.    In the Apps workload, select **Add**.
+4.    In **Add app**, select **Line-of-business app** or **Windows app (Win32)**.
     - If you selected **Line-of-business app**, see [Add a Windows line-of-business app to Microsoft Intune](https://docs.microsoft.com/intune/lob-apps-windows) for instruction on adding and configuring line-of-business apps.
     - If you selected **Windows app (Win32)**, see [Win32 app management](https://docs.microsoft.com/intune/apps-win32-app-management) for instruction on adding and configuring Windows apps.
 
@@ -51,7 +51,7 @@ If you haven't signed up with Microsoft Store for Business, you can sign up when
 2. Select **Shop for my group**.
 3. Use Search to find that the app that you want, and select the app.
 4. On the product details, select **Get the App**. 
-Microsoft Store adds the app to **Products & services** for your organization.
+Microsoft Store adds the app to **Your products** for your organization.
 
 **To force a sync between Intune and Microsoft Store for Business**
 1. Sign in to [Azure Portal](https://portal.azure.com/) as Intune Admin or Global Admin for your tenant
@@ -76,7 +76,7 @@ Intune is in the Monitoring + Management section.
 
 Create three Azure AD groups for each app. This table outlines the groups you'll need (Available, Required, and Uninstall). 
 
-App assignment type |	Group use	| Example Azure AD name
+App assignment type |    Group use    | Example Azure AD name
 --- | --- | ---
 Available |  The app will be available from Company Portal app or website. | MMD – *app name* – Available
 Required |  The app is installed on devices in the selected groups. | MMD – *app name* – Required

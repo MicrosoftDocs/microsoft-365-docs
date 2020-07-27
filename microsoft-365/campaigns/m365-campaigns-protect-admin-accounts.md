@@ -30,12 +30,12 @@ Because admin accounts come with elevated privileges, they're valuable targets f
 - How to set up an additional administrator account for emergencies.
 - How to protect these accounts.
  
-When you sign up for Microsoft 365 Business and enter your information, you automatically become the global admin. A global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
+When you sign up for Microsoft 365 and enter your information, you automatically become the global admin. A global admin has the ultimate control of user accounts and all the other settings in the Microsoft admin center, but there are many different kinds of admin accounts with varying degrees of access. See [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) for information about the different access levels for each kind of admin role.
 
 
 ## Create additional admin accounts
 
-Use admin accounts only for administration. Admins should have a separate user account for regular use of Office apps and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 Business license from the admin accounts so you don't have to pay for them.
+Use admin accounts only for administration. Admins should have a separate user account for regular use of Office apps and only use their administrative account when necessary to manage accounts and devices, and while working on other admin functions. It's also a good idea to remove the Microsoft 365 license from the admin accounts so you don't have to pay for them.
 
 You'll want to set up at least one additional global admin account to give admin access to another trusted employee. You can also create separate admin accounts for user management (this role is called **User management administrator**). For more information, see [about admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 

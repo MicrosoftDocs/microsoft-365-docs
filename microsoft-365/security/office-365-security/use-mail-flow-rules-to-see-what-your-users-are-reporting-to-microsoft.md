@@ -2,8 +2,8 @@
 title: "Use mail flow rules to see what your users are reporting to Microsoft"
 f1.keywords:
 - NOCSH
-ms.author: tracyp
-author: MSFTTracyP
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -14,45 +14,82 @@ search.appverid:
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
-description: "You can create an Exchange mail flow rule to prevent your users from sending email messages to Microsoft for analysis and use them in your own security processes"
+description: "Admins can learn how to use mail flow rules (also known as transport rules) to receive copies of messages that users report to Microsoft."
 ---
 
 # Use mail flow rules to see what your users are reporting to Microsoft
 
-There are multiple ways you can send false positive and false negative messages to Microsoft for analysis. As an administrator, you can use mail flow rules to see what your users are reporting to Microsoft as spam, non-spam, and phishing scams. For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Conversely, you can create an Exchange mail flow rule (also known as a transport rule) to prevent your users from sending email messages to Microsoft for analysis and use them in your own security processes.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, there are multiple ways for users to report messages to Microsoft for analysis as described in [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
+
+You can create a mail flow rule (also known as a transport rule) that looks for messages that users report to Microsoft, and you can configure Bcc recipients to receive copies of these reported messages.
+
+You can create the mail flow rule in the Exchange admin center (EAC) and PowerShell (Exchange Online PowerShell for Microsoft 365 organizations with mailboxes in Exchange Online; standalone EOP PowerShell for organizations without Exchange Online mailboxes).
 
 ## What do you need to know before you begin?
 
-Estimated time to complete: 5 minutes
+- You need to be assigned permissions in Exchange Online or EOP before you can do these procedures. Specifically, you need to be assigned the **Transport Rules** role, which is assigned to the **Organization Management**, **Compliance Management**, and **Records Management** roles by default. For more information, see [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
 
-You need to be assigned permissions before you can perform this procedure or procedures. To see what permissions you need, see the "Mail flow"  and "Outlook on the web mailbox policies" entries in [Exchange Online permissions](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions#exchange-online-permissions).
+- To open the EAC, see [Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center) or [Exchange admin center in standalone EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-For information about keyboard shortcuts that may apply to the procedures in this topic, see [Keyboard shortcuts for the Exchange admin center in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
+- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-## Use the EAC to create a mail flow rule to view users' manual junk, phishing, and not junk reports
+- For more information about mail flow rules in Exchange Online and standalone EOP, see the following topics:
 
-1. In the EAC, navigate to **Mail flow** \> **Rules**.
+  - [Mail flow rules (transport rules) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
-2. Click ![Add Icon](../../media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
+  - [Mail flow rule conditions and exceptions (predicates) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
-3. Give the rule a name and then click **More options**.
+  - [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-4. Under **Apply this rule if**, select **The recipient** and then choose **address includes any of these words**.
+## Use the EAC to create a mail flow rule to receive copies of reported messages
 
-5. In the **specify words or phrases** box, do the following steps:
+1. In the EAC, go to **Mail flow** \> **Rules**.
 
-   - Type `abuse@messaging.microsoft.com`, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif), type `junk@office365.microsoft.com` and then click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif). These email addresses are used to submit false negative messages to Microsoft.
+2. Click **Add** ![Add icon](../../media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
 
-   - Type `phish@office365.microsoft.com` and then click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif). This email address is used to submit missed phishing messages to Microsoft.
+3. In the **New rule** page that opens, configure the following settings:
 
-   - Type `false_positive@messaging.microsoft.com`, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif), type `not_junk@office365.microsoft.com`, and then click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.gif). These email addresses are used to submit false positive messages to Microsoft.
+   - **Name**: Enter a unique, descriptive name for the rule. For example, Bcc Messages Reported to Microsoft.
 
-   - Click **OK**.
+   - Click **More Options**.
 
-6. Under **Do the following**, select **Bcc the message to...** and then and then select the mailboxes where you'd like to receive the messages.
+   - **Apply this rule if**: Select **The recipient** \> **address includes any of these words**: In the **Specify words or phrases** dialog that appears, enter one of the following values, click **Add** ![Add Icon](../../media/ITPro-EAC-AddIcon.png), and repeat until you've entered all the values.
 
-7. If you'd like, you can make selections to audit the rule, test the rule, activate the rule during a specific time period, and other selections. We recommend testing the rule for a period before you enforce it. See [Procedures for mail flow rules](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures).
+     - `junk@office365.microsoft.com`
+     - `abuse@messaging.microsoft.com`
+     - `phish@office365.microsoft.com`
+     - `false_positive@messaging.microsoft.com`
 
-8. Click the **save** button to save the rule. It appears in your list of rules.
+     To edit an entry, select it and click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png). To remove an entry, select it and click **Remove** ![Remove icon](../../media/ITPro-EAC-DeleteIcon.png).
 
-After you create and enforce the rule, any messages that are sent from your organization to specified email addresses will be copied to the specified mailbox.
+     When you're finished, click **OK**.
+
+   - **Do the following**: Select **Add recipients** \> **to the Bcc box**. In the dialog that appears, find and select the recipients that you want to add. When you're finished, click **OK**.
+
+4. You can make additional selections to audit the rule, test the rule, activate the rule during a specific time period, and other settings. We recommend testing the rule before you enforce it.
+
+5. When you're finished, click **Save**.
+
+## Use PowerShell to create a mail flow rule to receive copies of reported messages
+
+This example creates a new mail flow rule named Bcc Messages Reported to Microsoft that looks for email messages that are reported to Microsoft by using the methods described in this topic, and adds the users laura@contoso.com and julia@contoso.com as Bcc recipients.
+
+```powershell
+New-TransportRule -Name "Bcc Messages Reported to Microsoft" -RecipientAddressContainsWords "junk@office365.microsoft.com","abuse@messaging.microsoft.com","phish@office365.microsoft.com","false_positive@messaging.microsoft.com" -BlindCopyTo "laura@contoso.com","julia@contoso.com".
+```
+
+For detailed syntax and parameter information, see [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/new-transportrule).
+
+## How do you know this worked?
+
+To verify that you've configured a mail flow rules to receive copies of reported messages, do any of the following steps:
+
+- In the EAC, go to **Mail flow** \> **Rules** \> select the rule \> click **Edit** ![Edit icon](../../media/ITPro-EAC-EditIcon.png), and verify the settings.
+
+- In PowerShell, run the following command to verify the settings:
+
+  ```powershell
+  Get-TransportRule -Identity "Bcc Messages Reported to Microsoft" | Format-List
+  ```
+
+- Send a test messages to one of the reporting email addresses and verify the results.

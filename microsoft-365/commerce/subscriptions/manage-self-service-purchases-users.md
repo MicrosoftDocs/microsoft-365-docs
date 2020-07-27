@@ -11,6 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce 
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Users can learn how to manage their self-service purchases."
@@ -18,20 +19,26 @@ description: "Users can learn how to manage their self-service purchases."
 
 # Manage self-service purchases (Users)
 
-As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You are responsible for paying for any self-service purchases you make. You can manage your subscriptions in the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
+::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> You must turn on the new admin center experience.
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
+As a user, you can buy subscriptions to certain products and assign licenses for those subscriptions to people in your team. You are responsible for paying for any self-service purchases you make. You can manage your subscriptions in the Microsoft 365 admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com</a>.
+
 
 Your admin has a read-only view into any subscriptions that you buy. They can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each subscription that you buy.
 
 ## View your subscriptions
 
-You can view a list of all self-service purchased subscriptions that you bought. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+You can view a list of all self-service purchased subscriptions that you bought. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 ## How to buy more or reduce licenses
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to buy more or reduce licenses for.
 
@@ -71,7 +78,7 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ## Cancel a subscription
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Find the subscription that you want to cancel.
 
@@ -94,9 +101,9 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### Update an existing payment method
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-2. To edit an existing payment method, choose it from the list.
+2. On the **Payment methods** tab, choose an existing payment method from the list.
 
 3. In the right pane, choose **Edit**. You can change the security code, expiration date, name on the card, and address.
 
@@ -104,20 +111,20 @@ For example, if you have 100 licenses and you need to add 5 more, enter 105.
 
 ### Add a new payment method
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-2. Choose **Add a payment method**.
+2. On the **Payment methods** tab, choose **Add a payment method**.
 
 3. In the **Add a payment method** pane, enter the information for the new payment method, then choose **Add**.
 
 ## View your invoices
 
-1. In the admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848039" target="_blank">Bills & payments</a> page.
+1. In the admin center, go to **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
 
-2. Under **Invoices** select the invoice that you want to view.
+2. On the **Invoices** tab, select the invoice that you want to view. If no invoices are visible, change **Past 3 months** to either **Past 6 months** or **Specify a date range**.
 
 ## Need help? Contact us.
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
 
-If you have questions or need help with self-service purchases, [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+If you have questions or need help with self-service purchases, [contact support](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).

@@ -1,5 +1,5 @@
 ---
-title: "Buy or edit an add-on for Office 365 for business"
+title: "Buy or edit an add-on"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,21 +20,23 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: 4e7b57d6-b93b-457d-aecd-0ea58bff07a6
-description: "Learn how to purchase an add-on to add additional functionality to your Office 365 for business subscription. You can also update and remove an add-on."
-ms.custom: okr_SMB
+description: "Learn how to purchase an add-on to add additional functionality to your Microsoft 365 for business subscription. You can also update and remove an add-on."
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 ---
 
-# Buy or edit an add-on for Office 365 for business
+# Buy or edit an add-on
 
-Several of the Office 365 for business plans have add-ons that you can buy for your subscription. An add-on provides additional functionality to the subscription that you buy it for.
-
-
-::: moniker range="o365-worldwide"
+::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
 
-::: moniker-end 
+::: moniker-end
+
+Several of the Microsoft 365 for business plans have add-ons that you can buy for your subscription. An add-on provides additional functionality to the subscription that you buy it for.
 
 ## Buy an add-on
 
@@ -64,7 +66,7 @@ Several of the Office 365 for business plans have add-ons that you can buy for y
 
 3. On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.
 
-    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.
 
@@ -86,7 +88,7 @@ Several of the Office 365 for business plans have add-ons that you can buy for y
 
 3. On the bottom-left corner of the subscription details, select **Add-ons** \> **Buy add-ons**.
 
-    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../admin/media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
+    ![Buy add-ons link on the Subscriptions page of the Microsoft 365 admin center.](../media/f5cbc3fa-90f7-4299-976d-2482f2c69755.png)
   
 4. On the **Purchase services** page, mouse over or tap the add-on subscription that you want to buy, and then select **Buy now**.
 
@@ -100,22 +102,21 @@ Several of the Office 365 for business plans have add-ons that you can buy for y
 
 ::: moniker-end
 
-
 ## Update an add-on
 
-The steps that you use to update an add-on depend on whether the add-on is a traditional add-on, or a standalone add-on. 
+The steps that you use to update an add-on depend on whether the add-on is a traditional add-on, or a standalone add-on.
 
 *Traditional add-ons* are linked to a specific subscription. If you cancel the subscription, the associated add-on is also cancelled.
   
-*Standalone add-ons* are not linked to a specific subscription. Standalone add-ons appear as a separate subscription on the **Subscriptions** page (or on the **Products & services** page in the new admin center), and have their own expiration date. You manage a standalone add-on the same way that you manage any other subscription.
+*Standalone add-ons* are not linked to a specific subscription. Standalone add-ons appear as a separate subscription on the **Your products** page, and have their own expiration date. You manage a standalone add-on the same way that you manage any other subscription.
   
 ### Update a traditional add-on
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, select the subscription for which you want to update an add-on.
+2. On the **Your products** page, select the subscription for which you want to update an add-on.
 
 3. Select **Add-ons**. The add-ons that you have purchased are shown.
 
@@ -124,7 +125,6 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 5. Enter the quantity change you want for the subscription, then select **Submit change**.
 
 ::: moniker-end
-
 
 ::: moniker range="o365-germany"
 
@@ -136,16 +136,16 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 
     The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.
 
-4. Select the **Change quantity** link for the add-on that you want to update. 
+4. Select the **Change quantity** link for the add-on that you want to update.
 
-    ![Add-ons link and the change quantity link.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Enter the number of user licenses that you need in the box, and then select **Submit**.
 
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -159,16 +159,16 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 
     The add-ons that you have purchased are shown and each of the add-ons will have a **Change quantity** link below it.
 
-4. Select the **Change quantity** link for the add-on that you want to update. 
+4. Select the **Change quantity** link for the add-on that you want to update.
 
-    ![Add-ons link and the change quantity link.](../admin/media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
+    ![Add-ons link and the change quantity link.](../media/fa7c39f4-5256-49bb-9a26-70f1a52ae926.png)
   
 5. Enter the number of user licenses that you need in the box, and then select **Submit**.
 
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of user licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 
 ::: moniker-end
@@ -177,9 +177,9 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
 
 ::: moniker range="o365-worldwide"
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-2. On the **Products & services** page, select the add-on subscription that you want to update, and then select **Add/Remove licenses**.
+2. On the **Your products** page, select the add-on subscription that you want to update, and then select **Add/Remove licenses**.
 
 3. Enter the number of licenses that you need in the box, and then select **Submit change**.
 
@@ -196,7 +196,7 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
 
@@ -211,10 +211,9 @@ The steps that you use to update an add-on depend on whether the add-on is a tra
     > [!TIP]
     > You can also use the up-arrow and down-arrow to change the quantity of licenses or just enter the number you want in the box.
   
-    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../admin/media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
+    ![Total licenses box and the submit button on the Add or remove licenses dialog box.](../media/dfee31e0-092d-4565-9bf5-ff3909b771e1.png)
 
 ::: moniker-end
-
 
 ## Remove an add-on
 
@@ -222,7 +221,7 @@ You can cancel a standalone add-on the same way that you [cancel a subscription]
   
 ## Available add-ons
 
-The following table lists add-ons that are available for different editions of Office 365 for business.
+The following table lists add-ons that are available for different editions of Microsoft 365 for business.
   
 For information about Skype for Business add-ons, see [Skype for Business and Microsoft Teams add-on licensing](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing).
   
@@ -232,15 +231,15 @@ For information about Skype for Business add-ons, see [Skype for Business and Mi
 |:-----|:-----|
 |Customer Lockbox  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |[Office 365 Online Advanced Threat Protection](https://go.microsoft.com/fwlink/p/?LinkId=691156) <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Office 365 Business Essentials  <br/>  Office 365 Business Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
+|[Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=691157) <br/> | Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise F1  <br/> |
 |Microsoft MyAnalytics  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
 |Office 365 Advanced Compliance  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/> |
-|Office 365 Extra File Storage  <br/> | Office 365 Business  <br/>  Office 365 Business Essentials  <br/>  Office 365 Business Premium  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office for the web with SharePoint Plan 1  <br/>  Office for the web with SharePoint Plan 2  <br/>  SharePoint Online Plan 1  <br/>  SharePoint Online Plan 2  <br/> |
-|Phone System in Office 365  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
-|Audio Conferencing in Office 365  <br/> |  Office 365 Business Essentials <br/> Office 365 Business Premium <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 without Audio Conferencing <br/> Microsoft 365 Business <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
-|Communications Credits in Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|Domestic Calling Plan in Office 365  <br/> | Office 365 Enterprise E5  <br/> |
-|International Calling Plan in Office 365  <br/> | Office 365 Enterprise E5  <br/> |
+|Office 365 Extra File Storage  <br/> | Microsoft 365 Apps for business  <br/>  Microsoft 365 Business Basic  <br/>  Microsoft 365 Business Standard  <br/>  Office 365 Enterprise E1  <br/>  Office 365 Enterprise E2  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/>  Office for the web with SharePoint Plan 1  <br/>  Office for the web with SharePoint Plan 2  <br/>  SharePoint Online Plan 1  <br/>  SharePoint Online Plan 2  <br/> |
+|Phone System  <br/> | Office 365 Enterprise E1  <br/>  Office 365 Enterprise E3  <br/>  Office 365 Enterprise E4  <br/>  Office 365 Enterprise E5  <br/> |
+|Audio Conferencing  <br/> |  Microsoft 365 Business Basic <br/> Microsoft 365 Business Standard <br/> Office 365 Enterprise E1 <br/> Office 365 Enterprise E3 <br/> Office 365 Enterprise E4 <br/> Office 365 Enterprise E5 without Audio Conferencing <br/> Microsoft 365 Business Premium <br/> Microsoft 365 E3 <br/> Microsoft 365 E5  <br/> |
+|Communications Credits  <br/> | Office 365 Enterprise E5  <br/> |
+|Domestic Calling Plan <br/> | Office 365 Enterprise E5  <br/> |
+|International Calling Plan  <br/> | Office 365 Enterprise E5  <br/> |
   
 ## Related articles
 

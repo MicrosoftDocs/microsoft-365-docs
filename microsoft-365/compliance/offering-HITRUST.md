@@ -44,7 +44,7 @@ Learn how to accelerate your HITRUST deployment with our Azure Security and Comp
 
 The HITRUST CSF certification of Azure and Office 365 is valid for two years.
 
-- [Azure HITRUST Letter of Certification](https://aka.ms/AzureHiTrustLetterofCertification)
+- [Azure HITRUST Letter of Certification](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 - [Office 365 HITRUST Letter of Certification](https://aka.ms/O365HITRUSTcertification)
 
 ## Accelerate your deployment of HIPAA/HITRUST solutions on Azure
@@ -73,14 +73,14 @@ Yes. If your business requires a HITRUST certification for implementations deplo
 
 **How can I get a copy of the HITRUST certification?**
 
-You can download a copy of letter of certification for [Azure](https://aka.ms/AzureHiTrustLetterofCertification) and [Office 365](https://aka.ms/O365HITRUSTcertification).
+You can download a copy of letter of certification for [Azure](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=02eaae7a-9d65-42e6-aec8-a8e22de1a494&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports) and [Office 365](https://aka.ms/O365HITRUSTcertification).
 
 **What are the in-scope services for Office 365?**
 
-The in-scope services of HITRUST CSF certification are Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive for Business, Office Online, MyAnalytics, Microsoft Teams, Office ProPlus in Office 365 Multi-tenant cloud and Office 365 GCC.
+The in-scope services of HITRUST CSF certification are Exchange Online Archiving, Exchange Online Protection, Exchange Online, Skype for Business, Admin Center, SharePoint Online, Project Online, OneDrive for Business, Office Online, MyAnalytics, Microsoft Teams, Microsoft 365 Apps for enterprise in Office 365 Multi-tenant cloud and Office 365 GCC.
 
 > [!NOTE]
-> Office 365 ProPlus enables access to various cloud services, such as Roaming Settings, Licensing, and OneDrive consumer cloud storage, and may enable access to additional cloud services in the future. Roaming Settings and Licensing support the standards for HITRUST. OneDrive consumer cloud storage does not, and other cloud services that are accessible through Office 365 ProPlus and that Microsoft may offer in the future also may not, support these standards.*
+> Microsoft 365 Apps for enterprise enables access to various cloud services, such as Roaming Settings, Licensing, and OneDrive consumer cloud storage, and may enable access to additional cloud services in the future. Roaming Settings and Licensing support the standards for HITRUST. OneDrive consumer cloud storage does not, and other cloud services that are accessible through Microsoft 365 Apps for enterprise and that Microsoft may offer in the future also may not, support these standards.*
 
 **Why are some Office 365 services not in the scope of this certification?**
 
@@ -101,11 +101,7 @@ Log in to the HITRUST MyCSF® tool and pre-populate your assessment for your sol
 ## Resources
 
 - [HITRUST Alliance](https://hitrustalliance.net/)
-- [HITRUST CSF 8.1](https://hitrustalliance.net/csf-license-agreement/)
+- [HITRUST CSF 9.3](https://hitrustalliance.net/csf-license-agreement/)
 - [Understanding and Leveraging the CSF](https://hitrustalliance.net/understanding-leveraging-csf/)
 - [Find out more about the HITRUST Shared Responsibility Program](https://go.microsoft.com/fwlink/p/?linkid=2100268)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/2/6/7265470A-862D-4665-91E8-E17BF0C8A1E2/HITRUST-Compliance.pdf).

@@ -13,17 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: "Get a periodic report of how people in your organization are using Office 365 services. Usage Overview dashboard lets you drill into each chart for more insights."
+description: "Get a periodic report of how people in your organization are using Microsoft 365 services. Usage Overview dashboard lets you drill into each chart for more insights."
 ---
 
-# Activity Reports in the Microsoft 365 admin center
+# Microsoft 365 Reports in the admin center
 
-You can easily see how people in your business are using Office 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Office 365 license at all.
+You can easily see how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need an Microsoft 365 license at all.
   
 Reports are available for the last 7 days, 30 days, 90 days, and 180 days. Data won't exist for all reporting periods right away. The reports become available within 48 hours.
   
@@ -53,7 +54,7 @@ Watch this video for on overview: on how you can use the reports:
 ::: moniker-end
 
    
-2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (email, OneDrive, etc) to see more information. <br/>![The Office 365 Usage dashboard](../media/usage-report-dashboard.png)
+2. Select **Select a report** at the top of the dashboard to select from a list of all available reports. Or, select an at-a-glance activity widget for a service (such as email or OneDrive) to see more information. <br/>![The Usage dashboard](../../media/usage-report-dashboard.png)
   
 ## Who can see reports
 
@@ -70,6 +71,10 @@ People who have the following permissions:
 - Global reader
     
 - Reports reader
+
+- Teams Service Administrator
+
+- Teams Communications Administrator
     
 To learn more, see [About admin roles](../add-users/about-admin-roles.md) and [Assign admin roles](../add-users/assign-admin-roles.md).
   
@@ -86,12 +91,18 @@ Depending on your subscription, here are the available reports.
 - [Active Users](active-users.md)
   
 - [Email apps usage](email-apps-usage.md)
+
+- [Forms activity](forms-activity.md)
+
+- [Forms Pro activity](forms-pro-activity.md)
   
-- [Office 365 groups](office-365-groups.md)
+- [Microsoft 365 groups](office-365-groups.md)
   
 - [OneDrive for Business user activity](onedrive-for-business-activity.md)
   
 - [OneDrive for Business usage](onedrive-for-business-usage.md)
+
+- [Microsoft 365 Apps usage](microsoft365-apps-usage.md)
   
 - [SharePoint site usage](sharepoint-site-usage.md)
   
@@ -159,7 +170,7 @@ If you want to hide user level information when you're generating your reports, 
   
 Your user list will look like this:
   
-![Office 365 reports - anonymized user list](../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
+![Reports - anonymized user list](../../media/2ed99bce-4978-4ee3-9ea2-4a8db26eef02.png)
   
 It'll take a few minutes for these changes to take effect on the reports in the reports dashboard. This setting also applies to the reports API.
   
@@ -171,6 +182,5 @@ However, when you select a particular day (see number 3), up to 28 days from the
   
 ## Related articles
 
-[Reports in the Security &amp; Compliance Center](https://support.office.com/article/7acd33ce-1ec8-49fb-b625-43bac7b58c5a)
+[Reports in the Security &amp; Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/reports-in-security-and-compliance)
   
-

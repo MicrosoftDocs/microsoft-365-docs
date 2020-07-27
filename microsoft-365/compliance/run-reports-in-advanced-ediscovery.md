@@ -1,5 +1,5 @@
 ---
-title: "Run reports in Office 365 Advanced eDiscovery"
+title: "Run reports in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b270243e-99a0-4c34-9b21-acb1512d56c6
-description: "Learn how to run a report and then download its .csv file in Office 365 Advanced eDiscovery. 
-"
+description: Learn how to run a report for your selected process and then download its .csv file in Advanced eDiscovery. 
+ms.custom: seo-marvel-apr2020
 ---
 
-# Run reports in Office 365 Advanced eDiscovery
+# Run reports in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -38,7 +38,6 @@ You can download a .csv file with a report for the selected process.
     
 3. Click **Download CSV**. The requested report is generated and downloaded.
     
-## See also
+## Related topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
-
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)

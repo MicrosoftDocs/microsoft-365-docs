@@ -1,5 +1,5 @@
 ---
-title: "S/MIME for message signing and encryption in Exchange Online"
+title: S/MIME for encryption in Exchange Online - Office 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,7 +13,8 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
-description: "Admins can learn about using S/MIME in Exchange Online."
+description: Admins can learn about using S/MIME (Secure/Multipurpose Internet Mail Extensions) in Exchange Online to encrypt emails and digitally sign them.
+ms.custom: seo-marvel-apr2020
 ---
 
 # S/MIME for message signing and encryption in Exchange Online
@@ -45,7 +46,7 @@ The steps that you follow to set up S/MIME with each of these end points is slig
 5. Set up the Outlook or EAS end point to use S/MIME.
 
 > [!NOTE]
-> You can't install S/MIME control in Outlook on the web on Mac, iOS, Android, or other non-Windows devices. For more information, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.office.com/article/878c79fc-7088-4b39-966f-14512658f480).
+> You can't install S/MIME control in Outlook on the web on Mac, iOS, Android, or other non-Windows devices. For more information, see [Encrypt messages by using S/MIME in Outlook on the web](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480).
 
 ## Setup S/MIME with Outlook on the web
 
@@ -63,7 +64,7 @@ As message security becomes more important, admins need to understand the princi
 
 - **Transport Layer Security (TLS)** encrypts the tunnel or the route between email servers in order to help prevent snooping and eavesdropping.
 
-- **Secure Sockets Layer (SSL)** encrypts the connection between email clients and Office 365 servers.
+- **Secure Sockets Layer (SSL)** encrypts the connection between email clients and Microsoft 365 servers.
 
 - **BitLocker** encrypts the data on a hard drive in a datacenter so that if someone gets unauthorized access, they can't read it.
 

@@ -10,14 +10,17 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
-description: "Check your keyword query for Content Search for errors and typos, such as unsupported characters and lowercase Boolean operators, before you run the search. If we find an error, we'll suggest a revised query."
+ms.custom: seo-marvel-apr2020
+description: "Learn how to detect errors and typos in your keyword query for content search, before running the search."
 ---
 
 # Check your Content Search query for errors
 
-When you create or edit a Content Search, you can have Office 365 check your query for unsupported characters and lowercase Boolean operators. How? Just click **Check query for typos** on the query page of a Content Search. 
+When you create or edit a Content Search, you can have Microsoft 365 check your query for unsupported characters and lowercase Boolean operators. How? Just click **Check query for typos** on the query page of a Content Search. 
   
 ![Click "Check query for typos" to check your search query for unsupported characters](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   

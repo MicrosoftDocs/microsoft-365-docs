@@ -1,6 +1,6 @@
 ---
 title: GDPR for SharePoint Server
-description: "Learn about how to address GDPR requirements in on-premises SharePoint Server."
+description: Learn how to address General Data Protection Regulations (GDPR) requirements in on-premises SharePoint Server.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
 # GDPR for SharePoint Server
@@ -104,15 +105,15 @@ The search query history and usage records contain references to user names.
 
 ### Query history and favorite queries
 
-In SharePoint Server, query histories and ‘favorite’ queries automatically expire after 365 days. If a user leaves your organization, it is possible to remove references to a user's name from the query history using the steps below.
+In SharePoint Server, query histories and 'favorite' queries automatically expire after 365 days. If a user leaves your organization, it is possible to remove references to a user's name from the query history using the steps below.
 
 The following SQL queries apply to SharePoint Server and make it possible to:
 
--   Export a user’s query history or favorite queries
+-   Export a user's query history or favorite queries
 
 -   Remove references to user names in the query history
 
-#### Export a user’s queries since a specific date 
+#### Export a user's queries since a specific date 
 
 Use the following procedure to export queries from the Link Store query log tables, performed by @UserName since @StartTime.
 
@@ -138,7 +139,7 @@ END 
 GO 
 ```
 
-#### Export a user’s queries from the past 100 days
+#### Export a user's queries from the past 100 days
 
 ```sql
 DECLARE @FROMDATE datetime 
@@ -146,7 +147,7 @@ SET @FROMDATE = DATEADD(day, -100, GETUTCDATE()) 
 EXECUTE proc_MSS_GetQueryTermsForUser '0#.w|domain\username', @FROMDATE 
 ```
 
-#### Export a user’s favorite queries
+#### Export a user's favorite queries
 
 Use the following procedure to export a user's favorite queries from the Search Admin DB personal result tables, performed by @UserName, since <DateTime>.
 
@@ -174,7 +175,7 @@ END 
 GO 
 ```
 
-#### Export a user’s favorite queries from the past 100 days 
+#### Export a user's favorite queries from the past 100 days 
 
 ```sql
 DECLARE @FROMDATE datetime 
@@ -211,7 +212,7 @@ END 
 GO 
 ```
 
-#### Remove references to a specific user name that’s more than X days old
+#### Remove references to a specific user name that's more than X days old
 
 Use the following procedure to remove references to a *specific* user name from the Links Store query log tables, where the references are more than @Days old. The procedure only removes references backwards in time until it reaches the @LastCleanupTime.
 
@@ -295,15 +296,15 @@ While migrating data from SharePoint Server to SharePoint Online, duplicate data
 
 The User Profile Service allows for import of profile data from a variety of external sources. Queries for and update of such user profile data should be handled in the systems in which the data is mastered. If you make updates to the external system, be sure to synchronize the user profiles in SharePoint Server again.
 
-Follow these basic steps to remove a user’s personal information from their SharePoint Server user profile:
+Follow these basic steps to remove a user's personal information from their SharePoint Server user profile:
 
 1.  Remove the user information from any external systems that feed into the SharePoint Server user profile. If you are using directory synchronization, the user must be removed from the on-premises Active Directory environment.
 
 2.  Run a [profile synchronization](https://docs.microsoft.com/sharepoint/administration/start-profile-synchronization-manually) on SharePoint Server.
 
-3.  Delete the profile from SharePoint Server. Once this is done, SharePoint Server will fully remove the profile from the User Profile Database in 30 days. The user’s profile page and personal site will be deleted.
+3.  Delete the profile from SharePoint Server. Once this is done, SharePoint Server will fully remove the profile from the User Profile Database in 30 days. The user's profile page and personal site will be deleted.
 
-After deleting a user’s profile, some limited information (such as user ID) may still be recorded in site collections that the user has visited. If you choose to delete this data from a given site collection, this can be done using CSOM. A sample script is provided below:
+After deleting a user's profile, some limited information (such as user ID) may still be recorded in site collections that the user has visited. If you choose to delete this data from a given site collection, this can be done using CSOM. A sample script is provided below:
 
 ```powershell
 $username = "<admin@company.sharepoint.com>"

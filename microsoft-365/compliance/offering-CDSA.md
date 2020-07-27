@@ -71,7 +71,3 @@ Yes. You can build on Azure CPS certification within your own CPS certification 
 - [How Azure Media Services earned CDSA security certification](https://johndeutscher.com/2015/04/14/how-azure-media-services-earned-cdsa-security-certification/)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
 - Understanding CDSA and Azure compliance
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/2/6/3/263C244E-20A8-41B1-B2DA-2835E30CE92E/CDSA_Compliance_Backgrounder.pdf).

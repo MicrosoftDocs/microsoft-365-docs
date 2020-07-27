@@ -1,5 +1,5 @@
 ---
-title: Overview of advanced hunting in Microsoft Threat Protection
+title: Overview - Advanced hunting
 description: Learn about advanced hunting queries in Microsoft 365 and how to use them to proactively find threats and weaknesses in your network
 keywords: advanced hunting, threat hunting, cyber threat hunting, microsoft threat protection, microsoft 365, mtp, m365, search, query, telemetry, custom detections, schema, kusto, microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -17,6 +17,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance 
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Proactively hunt for threats with advanced hunting in Microsoft Threat Protection
@@ -24,11 +25,13 @@ ms.topic: article
 **Applies to:**
 - Microsoft Threat Protection
 
-
+[!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
 Advanced hunting is a query-based threat-hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate interesting indicators and entities. The flexible access to data facilitates unconstrained hunting for both known and potential threats.
 
-In the Microsoft 365 security center, advanced hunting supports queries that look into data from both Microsoft Defender ATP, covering data from onboarded devices, and Office 365 ATP, providing data from emails. To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
+You can use the same threat-hunting queries to build custom detection rules. These rules run automatically to check for and respond to various events and system states, including suspected breach activity and misconfigured machines.
+
+In the Microsoft 365 security center, advanced hunting supports queries that look into data from various workspaces, including data about devices, emails, apps, and identities from Microsoft Defender ATP, Office 365 ATP, Microsoft Cloud App Security, and Azure ATP. To use advanced hunting, [turn on Microsoft Threat Protection](mtp-enable.md).
 
 ## Get started with advanced hunting
 
@@ -36,40 +39,27 @@ We recommend going through several steps to quickly get up and running with adva
 
 | Learning goal | Description | Resource |
 |--|--|--|
-| **Get a feel for the language** | Advanced hunting is based on the [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
+| **Get a feel for the language** | Advanced hunting is based on [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
+| **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries and drill down to get richer information. | [Work with query results](advanced-hunting-query-results.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-tables.md) |
-| **Use predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | [Use shared queries](advanced-hunting-shared-queries.md)
-| **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | [Query best practices](advanced-hunting-shared-queries.md), [Hunt across devices and emails](advanced-hunting-best-practices.md)
+| **Leverage predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | - [Use shared queries](advanced-hunting-shared-queries.md)<br>- [Go hunt](advanced-hunting-go-hunt.md) |
+| **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | - [Query best practices](advanced-hunting-shared-queries.md) <br>- [Hunt across devices and emails](advanced-hunting-best-practices.md) |
+| **Create custom detection rules** | Understand how you can use advanced hunting queries to trigger alerts and apply response actions automatically. | - [Custom detections overview](custom-detections-overview.md)<br>- [Custom detection rules](custom-detection-rules.md) |
 
-## Get help as you write queries
-Take advantage of the following functionality to write queries faster:
-- **Autosuggest** — as you write queries, advanced hunting provides suggestions. 
-- **Schema reference** — a schema reference that includes the list of tables and their columns is provided next to your working area. For more information, hover over an item. Double-click an item to insert it to the query editor.
+## Get access
+To use advanced hunting or other [Microsoft Threat Protection](microsoft-threat-protection.md) capabilities, you need to be assigned an appropriate role in Azure AD. Note that your access to endpoint data is influenced by role-based access control settings in Microsoft Defender ATP. [Read about managing access to Microsoft Threat Protection](mtp-permissions.md)
 
-## Drilldown from query results
-To view more information about entities, such as machines, files, users, IP addresses, and URLs, in your query results, simply click the entity identifier. This opens a detailed profile page for the selected entity in Microsoft Defender Security Center.
+## Data freshness and update frequency
+Advanced hunting data can be categorized into two distinct types, each consolidated differently.
 
-## Tweak your queries from the results
-Right-click a value in the result set to quickly enhance your query. You can use the options to:
-
-- Explicitly look for the selected value (`==`)
-- Exclude the selected value from the query (`!=`)
-- Get more advanced operators for adding the value to your query, such as `contains`, `starts with` and `ends with` 
-
-![Image of Microsoft Defender ATP advanced hunting result set](../../media/advanced-hunting-results-filter.png)
-
-## Filter the query results
-The filters displayed to the right provide a summary of the result set. Each column has its own section that lists the distinct values found for that column and the number of instances.
-
-Refine your query by selecting the "+" or "-" buttons on the values that you want to include or exclude and then selecting **Run query**.
-
-![Image of advanced hunting filter](../../media/advanced-hunting-filter.png)
-
-Once you apply the filter to modify the query and then run the query, the results are updated accordingly.
+- **Event or activity data** — populates tables about alerts, security events, system events, and routine assessments. Advanced hunting receives this data almost immediately after the sensors that collect them successfully transmit them to the corresponding cloud services. For example, you can start to query event data from healthy sensors on workstations or domain controllers almost immediately after they are available on Microsoft Defender ATP and Azure ATP.
+- **Entity data** — populates tables with consolidated information about users and devices. This data comes from both relatively static data sources, such as Active Directory entries, and dynamic sources, such as event logs. To provide fresh data, tables are updated every 15 minutes with any new information, adding rows that might not be fully populated. Every 24 hours, data is consolidated to insert a record that contains the latest, most comprehensive data set about each entity.
 
 ## Related topics
 - [Learn the query language](advanced-hunting-query-language.md)
+- [Work with query results](advanced-hunting-query-results.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
+- [Custom detections overview](custom-detections-overview.md)

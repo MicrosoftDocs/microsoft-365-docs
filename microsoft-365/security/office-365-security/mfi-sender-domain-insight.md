@@ -10,22 +10,24 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the fix sender domain insight in the mail flow dashboard in the Security & Compliance Center."
 ---
 
 # Fix sender domain insight
 
-Office 365 requires messages sending from internal on-premises email environments to Office 365 to meet certain security criteria:
+Microsoft 365 requires messages sending from internal on-premises email environments to Microsoft 365 to meet certain security criteria:
 
-- You've created an inbound connector in Office 365 to authenticate SMTP connections from your on-premises email server by using the source IP address or a certificate.
+- You've created an inbound connector in Microsoft 365 to authenticate SMTP connections from your on-premises email server by using the source IP address or a certificate.
 
-- You've configured your on-premises email server to relay email via Office 365 to external world.
+- You've configured your on-premises email server to relay email via Microsoft 365 to external world.
 
 - In your configuration, one of the following statements is true:
 
-  - The sender's email domain is registered in your Office 365 organization. For more information, see Add Domains in Office 365.
+  - The sender's email domain is registered in your organization. For more information, see Add Domains in Office 365.
 
-  - Your on-premises email server is configured to use a certificate to send email to Office 365, the certificate contains or exactly matches a domain name that you've registered in Office 365, and you've created a certificate based connector in Office 365 with that domain. 
+  - Your on-premises email server is configured to use a certificate to send email to Microsoft 365, the certificate contains or exactly matches a domain name that you've registered in Microsoft 365, and you've created a certificate based connector in Microsoft 365 with that domain. 
 
 Messages that don't meet the criteria will not be attributed to the organization and could be rejected.
 
@@ -41,6 +43,6 @@ You'll see the inbound connector that was used to deliver the messages to Office
 
 ![View sample message ids in the Fix sender domain insight](../../media/sender-domain-view-sample-message-ids.png)
 
-## See also
+## Related topics
 
 For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

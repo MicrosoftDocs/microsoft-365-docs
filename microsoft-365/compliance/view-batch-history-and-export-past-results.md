@@ -1,5 +1,5 @@
 ---
-title: "View batch history and export past results in Office 365 Advanced eDiscovery"
+title: "View batch history and export past results in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
-description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Office 365 Advanced eDiscovery. 
-"
+description: "Learn how to view detailed information for selected export batch sessions and how to undo the last export session in Advanced eDiscovery."
+ms.custom: seo-marvel-apr2020
 ---
 
-# View batch history and export past results in Office 365 Advanced eDiscovery
+# View batch history and export past results in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -44,7 +44,7 @@ The Export history dialog provides detailed information of selected export batch
     
 4. If you want to download data at any time from a previously executed export batch session, click the **Download** icon ![Export batch history download icon](../media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) next to the desired export batch to be exported. 
     
-5. When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**. The Office 365 Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed. 
+5. When the **Shared access signature** dialog is displayed, click **Copy to clipboard** to copy the export session data to the local machine, and then click **Close**. The Security &amp; Compliance Center **eDiscovery Export Tool** dialog is displayed. 
     
     ![Export eDiscovery dialog](../media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   
@@ -56,9 +56,9 @@ The Export history dialog provides detailed information of selected export batch
     
 3. Click **Start**. The export files are downloaded to the local machine. 
     
-## See also
+## Related topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Exporting results ](export-results-in-advanced-ediscovery.md)
 

@@ -1,5 +1,5 @@
 ---
-title: "How DLP works between the Security & Compliance Center and Exchange admin center"
+title: How DLP works with Security & Compliance Center & Exchange admin center
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: "Learn how DLP in the Security & Compliance Center works with DLP and mail flow rules (transport rules) in the Exchange admin center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # How DLP works between the Security & Compliance Center and Exchange admin center

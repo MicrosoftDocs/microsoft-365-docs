@@ -1,5 +1,5 @@
 ---
-title: "Use your Office 365 promo code to reduce price"
+title: "Use your promo code to reduce price"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -15,17 +15,19 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: 
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: "Learn how to apply a promotional code to your Office 365 subscription to reduce price, and how to troubleshoot promo code in case of an error."
-ms.custom: okr_SMB
+description: "Learn how to apply a promotional code to your Microsoft 365 subscription to reduce price, and how to troubleshoot promo code in case of an error."
 ---
 
-# Use your Office 365 promo code to reduce price
+# Use your promo code to reduce price
 
 When you purchase a subscription, you can use a promotional code to reduce the price. Read this article to learn how to apply a promo code to your subscription, to learn about the [Promo code terms](#promo-code-terms), and to [Troubleshoot promo codes](#troubleshooting-promo-codes).
   
@@ -43,7 +45,7 @@ At any time after you complete your purchase, you can see the discount created b
   
 ## Promo code terms
 
-The following guidelines apply to promo codes for Office 365 for business subscriptions.
+The following guidelines apply to promo codes for Microsoft 365 for business subscriptions.
   
 - **Number of promo codes per subscription** You can use a promo code for multiple subscriptions in the same order, but you cannot use multiple promo codes for the same subscription. 
     

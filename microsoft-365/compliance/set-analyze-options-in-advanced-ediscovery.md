@@ -1,5 +1,5 @@
 ---
-title: "Set Analyze options in Office 365 Advanced eDiscovery"
+title: "Set Analyze options in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,11 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
-description: "Review the steps to set up options for the Analyze process in Office 365 Advanced eDiscovery, including near-duplicates, email threads, and themes. 
-"
+description: "Review the steps to set up options for the Analyze process in Advanced eDiscovery, including near-duplicates, email threads, and themes."
+ms.custom: seo-marvel-apr2020
 ---
 
-# Set Analyze options in Office 365 Advanced eDiscovery
+# Set Analyze options in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -72,9 +72,9 @@ You can also [set ignore text](set-ignore-text-in-advanced-ediscovery.md) and [s
   
 After you've set these options, click **Analyze** to run. [View Analyze results](view-analyze-results-in-advanced-ediscovery.md) are displayed. 
   
-## See also
+## Related topics
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding document similarity](understand-document-similarity-in-advanced-ediscovery.md)
   

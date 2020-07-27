@@ -1,6 +1,6 @@
 ---
 title: What's new in Office 365 Advanced Threat Protection
-description: Lists the new features and functionality in Office 365 ATP
+description: Learn about the new features and functionality available in the latest release of Microsoft Office 365 ATP.
 keywords: what's new in Office 365 atp, ga, generally available, capabilities, available, new
 search.appverid: met150
 ms.service: O365-seccomp
@@ -15,7 +15,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 02/21/2020
+ms.date: 07/23/2020
+ms.custom: seo-marvel-apr2020
 ---
 
 # What's new in Office 365 ATP
@@ -29,8 +30,18 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 > [!TIP]
 > Don't have Office 365 ATP yet? [Contact sales to start a trial](https://go.microsoft.com/fwlink/p/?LinkId=518644).
 
+## July/August 2020 
+
+- [Experience improvements to the hunting experience](threat-explorer.md#experience-improvements-to-threat-explorer-and-real-time-detections)
+- [Easily apply recommended settings using preset security policies](preset-security-policies.md)
+
+## March/April 2020
+
+- The ability to [address compromised user accounts with automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/address-compromised-users-quickly?view=o365-worldwide) is now generally available.
+
 ## January/February 2020
 
+- [General availability of Campaign Views in Office 365 ATP](campaigns.md)
 - Enhancements to [Threat Explorer](threat-explorer.md) to enable security operations teams to search and filter on multiple fields while [investigating email](investigate-malicious-email-that-was-delivered.md):
     - Delivery location and special actions
     - Directionality (inbound, outbound, or intra-org)
@@ -39,9 +50,9 @@ This article lists new features in the latest release of Office 365 ATP. Feature
     - Advanced NOT filters (these are advanced filtering options that include does not contain, does not include, etc.)
     - Granular time filters (day, hour, half-hour) 
 
-- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Office 365 Security & Compliance Center, go to **Threat management** > **Review**.)
+- The **Incidents** widget is now the **Action Center** widget. (To view your security widgets, in the Security & Compliance Center, go to **Threat management** > **Review**.)
 
-- [Safe Documents in Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**
+- [Safe Documents in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs) **(preview)**
 
 ## December 2019
 
@@ -55,7 +66,7 @@ This article lists new features in the latest release of Office 365 ATP. Feature
 
 ## September 2019
 
-- [Employ automated investigation and response capabilities in Office 365](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
+- [Employ automated investigation and response capabilities](automated-investigation-response-office.md) (Office 365 ATP Plan 2)
 
 - [Integrate with Office 365 ATP automated investigation and response events using the Office 365 Management Activity API](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#office-365-advanced-threat-protection-and-threat-investigation-and-response-schema) (Office 365 ATP Plan 2)
 
@@ -83,4 +94,4 @@ Did you know that Office 365 ATP is available in two plans? [Learn more about wh
 
 [Office 365 ATP Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-[Automated investigation and response in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+

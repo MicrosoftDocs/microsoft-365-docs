@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-ms.assetid:  
+ROBOTS: NOINDEX, NOFOLLOW 
 description: ""
 ---
 
@@ -40,7 +40,7 @@ To access the Advanced eDiscovery reports:
 
 1. Go to https://protection.office.com
   
-2. Sign into Office 365 using your work or school account.
+2. Sign in using your work or school account.
   
 3. In the Security & Compliance Center, click **eDiscovery > Advanced eDiscovery**.
   

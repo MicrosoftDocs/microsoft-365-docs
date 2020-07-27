@@ -1,5 +1,5 @@
 ---
-title: "Configuring privileged access management in Office 365"
+title: "Get started with privileged access management"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,25 +14,44 @@ search.appverid:
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 
-description: "Use this topic to learn more about configuring privileged access management in Office 365"
+description: Use this article to learn more about enabling and configuring privileged access management in Office 365.
 ---
 
-# Configuring privileged access management in Office 365
+# Get started with privileged access management
+
+This topic guides you through enabling and configuring privileged access management in your organization. You can use either the Microsoft 365 admin center or Exchange Management PowerShell to manage and use privileged access.
+
+## Before you begin
+
+Before you get started with privileged access management, you should confirm your [Microsoft 365 subscription](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) and any add-ons. To access and use privileged access management, your organization must have one of the following subscriptions or add-ons:
+
+- Microsoft 365 E5 subscription (paid or trial version)
+- Microsoft 365 E3 subscription (or Office 365 E3 subscription + Enterprise Mobility and Security E3 subscription) + the Microsoft 365 E5 Compliance add-on
+- Any Microsoft 365, Office 365, Exchange, SharePoint, or OneDrive for Business subscription + the Microsoft 365 E5 Insider Risk Management add-on  
+- Microsoft 365 A5 subscription (paid or trial version)
+- Microsoft 365 A3 subscription (or Office 365 A3 subscription + Enterprise Mobility and Security A3 subscription) + the Microsoft A5 Compliance add-on
+- Any Microsoft 365, Office 365, Exchange, SharePoint, or OneDrive for Education subscription + the Microsoft 365 A5 Insider Risk Management add-on
+- Office 365 Enterprise E5 subscription (paid or trial version)
+- Office 365 Enterprise E3 subscription + the Office 365 Advanced Compliance add-on (no longer available for new subscriptions, see note)
+
+Users submitting and responding to privileged access management requests must be assigned one of the licenses above.
 
 >[!IMPORTANT]
->This topic covers deployment and configuration guidance for features only currently available in Office 365 E5 and Advanced Compliance SKUs.
+>Office 365 Advanced Compliance is no longer sold as a standalone subscription. When current subscriptions expire, customers should transition to one of the subscriptions above, which contain the same or additional compliance features.
 
-This topic guides you through enabling and configuring privileged access management in your Office 365 organization. You can use either the Microsoft 365 Admin Center or Exchange Management PowerShell to manage and use privileged access. 
+If you don't have an existing Office 365 Enterprise E5 plan and want to try privileged access management, you can [add Microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) to your existing Office 365 subscription or [sign up for a trial](https://www.microsoft.com/microsoft-365/enterprise) of Microsoft 365 Enterprise E5.
 
 ## Enable and configure privileged access management
 
-Follow these steps to set up and use privileged access in your Office 365 organization:
+Follow these steps to set up and use privileged access in your organization:
 
 - [Step 1: Create an approver's group](privileged-access-management-configuration.md#step1)
 
-    Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers’ group is able to approve access requests. This group is enabled by creating a mail-enabled security group in Office 365.
+    Before you start using privilege access, determine who needs approval authority for incoming requests for access to elevated and privileged tasks. Any user who is part of the Approvers' group is able to approve access requests. This group is enabled by creating a mail-enabled security group in Office 365.
 
 - [Step 2: Enable privileged access](privileged-access-management-configuration.md#step2)
 
@@ -49,13 +68,13 @@ Follow these steps to set up and use privileged access in your Office 365 organi
 After approval is granted, the requesting user can execute the intended task and privileged access will authorize and execute the task on behalf of the user. The approval remains valid for the requested duration (default duration is 4 hours), during which the requester can execute the intended task multiple times. All such executions are logged and made available for security and compliance auditing. 
 
 >[!NOTE]
->If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials. You do not need to enable multi-factor authentication for your Office 365 organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell. Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.
+>If you want to use Exchange Management PowerShell to enable and configure privileged access, follow the steps in [Connect to Exchange Online PowerShell using Multi-Factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps) to connect to Exchange Online PowerShell with your Office 365 credentials. You do not need to enable multi-factor authentication for your organization to use the steps to enable privileged access while connecting to Exchange Online PowerShell. Connecting with multi-factor authentication creates an OAuth token that is used by privileged access for signing your requests.
 
 <a name="step1"> </a>
 
 ## Step 1: Create an approver's group
 
-1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.
+1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
 2. In the Admin Center, go to **Groups** > **Add a group**.
 
@@ -75,7 +94,7 @@ After approval is granted, the requesting user can execute the intended task and
 
 1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings > Settings > Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Enable the **Require approvals for privileged tasks** control.
 
@@ -104,13 +123,13 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## Step 3: Create an access policy
 
-You can create and configure up to 30 privileged access policies for your Office 365 organization.
+You can create and configure up to 30 privileged access policies for your organization.
 
 ### In the Microsoft 365 Admin Center
 
 1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -156,7 +175,7 @@ Requests for privileged access are valid for up to 24 hours after the request is
 
 1. Sign into the [Microsoft 365 Admin Center](https://admin.microsoft.com) using your credentials.
 
-2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -196,7 +215,7 @@ After an approval request is created, elevation request status can be reviewed i
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.
 
-2. In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the admin center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -224,7 +243,7 @@ When an approval request is created, members of the relevant approver group rece
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with your credentials.
 
-2. In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the admin center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -266,7 +285,7 @@ If it is no longer needed in your organization, you can delete a privileged acce
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) using credentials for an admin account in your organization.
 
-2. In the admin center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the admin center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Select **Manage access policies and requests**.
 
@@ -292,7 +311,7 @@ If needed, you can disable privileged access management for your organization. D
 
 1. Sign into the [Microsoft 365 admin center](https://admin.microsoft.com) with credentials for an admin account in your organization.
 
-2. In the Admin Center, go to **Settings** > **Security & Privacy** > **Privileged access**.
+2. In the Admin Center, go to **Settings** > **Org Settings** > **Security & Privacy** > **Privileged access**.
 
 3. Enable the **Require approvals for privileged access** control.
 

@@ -29,7 +29,7 @@ All applications and drivers installed on Microsoft Managed Devices must be depl
 
 Certain application types are not permitted on Microsoft Managed Desktop devices:
 - 3rd party anti-virus, security, or audit software
-- Versions of Microsoft Office prior to Office 365 ProPlus
+- Versions of Microsoft Office prior to Microsoft 365 Apps for enterprise
 - Applications that install or bundle other 3rd party software
 
 ## Restricted app behaviors
@@ -54,5 +54,5 @@ Security:
 
 Microsoft Managed Desktop only supports device drivers that are available through Windows Update or installed inbox with the Microsoft Managed Device. 
 
-If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an  to be deployed to Microsoft Managed Desktop. 
+If an application requires a specific driver(s) to run it is considered a Restricted Application and requires an exception before being deployed to Microsoft Managed Desktop. 
 

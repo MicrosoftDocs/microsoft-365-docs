@@ -26,10 +26,8 @@ To learn more about licensing requirements, see [Microsoft 365 Tenant-Level Serv
 
 ## Overview of DLP for Microsoft Teams
 
-Recently, [data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities were extended to include Microsoft Teams chat and channel messages.
+Recently, [data loss prevention](data-loss-prevention-policies.md) (DLP) capabilities were extended to include Microsoft Teams chat and channel messages, **including private channel messages**.
 
-> [!NOTE]
-> DLP is not supported, at this time, for private channel messages.
 
 If your organization has DLP, you can now define policies that prevent people from sharing sensitive information in a Microsoft Teams channel or chat session. Here are some examples of how this protection works:
 
@@ -62,7 +60,7 @@ The **What's this?** link opens an [article](data-loss-prevention-policies.md) a
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Choose **Data loss prevention** > **Policy**.
 
@@ -82,7 +80,7 @@ Allow approximately one hour for your changes to work their way through your dat
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Choose **Data loss prevention** > **Policy**.
 
@@ -100,7 +98,7 @@ Allow approximately one hour for your changes to work their way through your dat
 
 To perform this task, you must be assigned a role that has permissions to edit DLP policies. To learn more, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-1. Go to the Office 365 Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
+1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com)) and sign in.
 
 2. Choose **Data loss prevention** > **Policy** > **+ Create a policy**.
 
@@ -110,8 +108,8 @@ To perform this task, you must be assigned a role that has permissions to edit D
 
 5. On the **Choose locations** tab, keep the default setting of all locations, or select **Let me choose specific locations**, and then choose **Next**.<br/>If you chose specific locations, select them for your DLP policy, and then choose **Next**.<br/>![DLP policy locations](../media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
-    > If you want to make sure documents that contain sensitive information are not shared inappropriately, make sure **SharePoint sites** and **OneDrive accounts** are turned on, along with **Teams chat and channel messages**.
-    > Channels in Microsoft Teams are strongly dependent on Exchange Online functionality. Make sure that **Exchange email** location is also enabled for the policies that should be applied for the content of the channels.  
+    > If you want to make sure documents that contain sensitive information are not shared inappropriately in Teams, make sure **SharePoint sites** and **OneDrive accounts** are turned on, along with **Teams chat and channel messages**.
+
 <br/>
 
 6. On the **Policy settings** tab, under **Customize the type of content you want to protect**, keep the default simple settings, or choose **Use advanced settings**, and then choose **Next**. If you choose advanced settings, you can create or edit rules for your policy. (To get help with this, see [Simple settings vs. advanced settings](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)

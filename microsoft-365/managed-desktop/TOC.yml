@@ -10,6 +10,8 @@
           href: intro/technologies.md
         - name: Microsoft Managed Desktop and ITIL
           href: MMD-and-ITSM.md
+        - name: Compliance
+          href: intro/compliance.md
     - name: Microsoft Managed Desktop service description
       href: service-description/index.md
       items: 
@@ -36,6 +38,8 @@
           href: service-description/operations-and-monitoring.md
         - name: Application requirements
           href: service-description/mmd-app-requirements.md
+        - name: Application control
+          href: service-description/app-control.md
         - name: Service changes and communication
           href: service-description/servicechanges.md
         - name: Exceptions to the service plan
@@ -47,12 +51,14 @@
           href: get-ready/prerequisites.md
         - name: Prepare network
           href: get-ready/network.md
-        - name: Prepare on-premises resources access for Microsoft Managed Desktop
+        - name: Prepare on-premises resources access
           href: get-ready/authentication.md
-        - name: Prepare mapped drives for Microsoft Managed Desktop
+        - name: Prepare mapped drives
           href: get-ready/mapped-drives.md
-        - name: Prepare certificates and network profiles for Microsoft Managed Desktop
+        - name: Prepare certificates and network profiles
           href: get-ready/certs-wifi-lan.md
+        - name: Prepare printing resources
+          href: get-ready/printing.md
         - name: Prepare apps
           href: get-ready/apps.md
           items: 
@@ -61,6 +67,8 @@
     - name: Get started with Microsoft Managed Desktop
       href: get-started/index.md
       items: 
+        - name: Access the Admin portal
+          href: get-started/access-admin-portal.md
         - name: Add and verify admin contacts in the Admin portal
           href: get-started/add-admin-contacts.md
         - name: Adjust conditional access
@@ -83,11 +91,15 @@
               href: get-started/register-reused-devices-self.md
         - name: Get your users ready to use devices
           href: get-started/get-started-devices.md
+        - name: Get started with app control
+          href: get-started/get-started-app-control.md
         - name: Deploy apps
           href: get-started/deploy-apps.md
           items: 
             - name: Microsoft Project and Microsoft Visio
               href: get-started/project-visio.md
+            - name: New Microsoft Edge apps
+              href: get-started/edge-browser-app.md
     - name: Working with Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
       items: 
@@ -108,6 +120,8 @@
           href: working-with-managed-desktop/end-user-support.md
         - name: Manage apps
           href: working-with-managed-desktop/manage-apps.md
+        - name: Work with app control
+          href: working-with-managed-desktop/work-with-app-control.md
         - name: Configurable settings
           href: working-with-managed-desktop/config-setting-overview.md
           items: 

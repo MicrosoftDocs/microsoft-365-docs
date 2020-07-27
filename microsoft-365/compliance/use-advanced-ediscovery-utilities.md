@@ -1,5 +1,5 @@
 ---
-title: "Use Office 365 Advanced eDiscovery utilities"
+title: "Use Advanced eDiscovery utilities"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 66ca9993-75f4-4724-aea2-5a0719b660c1
-description: "Learn about the utilities in Office 365 Advanced eDiscovery, including case log, clear data, process errors, modify Relevance, and transparency analysis. 
-"
+description: "Learn about the utilities in Advanced eDiscovery, including case log, clear data, process errors, modify Relevance, and transparency analysis."
 ---
 
-# Use Office 365 Advanced eDiscovery utilities
+# Use Advanced eDiscovery (classic) utilities
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -105,7 +104,7 @@ In a multiple-issue case scenario, a Transparency analysis report can be generat
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Defining case and tenant settings](define-case-and-tenant-settings-in-advanced-ediscovery.md)
 

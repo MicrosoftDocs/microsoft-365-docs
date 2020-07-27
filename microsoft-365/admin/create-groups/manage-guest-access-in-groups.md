@@ -1,12 +1,10 @@
 ---
-title: "Manage guest access in Office 365 Groups"
+title: "Manage guest access in Microsoft 365 groups"
 ms.reviewer: arvaradh
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.date: 12/18/2019
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,49 +13,46 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
-description: "Learn how to add guests to an Office 365 Group, view guest users, and use PowerShell to control guest access."
+description: "Learn how to add guests to a Microsoft 365 group, view guest users, and use PowerShell to control guest access."
 ---
 
-# Manage guest access in Office 365 Groups
+# Manage guest access in Microsoft 365 groups
 
-By default, guest access for Office 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
+By default, guest access for Microsoft 365 groups is turned on for your organization. Admins can control whether to allow guest access to groups for their whole organization or for individual groups.
 
-When it's turned on, group members can invite guest users to an Office 365 group through Outlook on Web. Invitations are sent to the group owner for approval.
-
-> [!Note]
-> Yammer Enterprise networks that are in Native Mode or the [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) do not support network guests.
-> Office 365 Connected Yammer Groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](https://support.office.com/article/9ccd15ce-0efc-4dc1-81bc-4a424ab6f92a.aspx) for instructions.
-
-### Edit guest information
+When it's turned on, group members can invite guest users to a Microsoft 365 group through Outlook on Web. Invitations are sent to the group owner for approval.
 
 Once approved, the guest user is added to the directory and the group.
 
+> [!Note]
+> Yammer Enterprise networks that are in Native Mode or the [EU Geo](https://go.microsoft.com/fwlink/?linkid=2107357) do not support network guests.
+> Microsoft 365 Connected Yammer groups do not currently support guest access, but you can create non-connected, external groups in your Yammer network. See [Create and manage external groups in Yammer](https://docs.microsoft.com/yammer/work-with-external-users/create-and-manage-external-groups) for instructions.
+
 Guest access in groups is often used as part of a broader scenario that includes SharePoint or Teams. These services have their own guest sharing settings. For complete instructions for setting up guest sharing across groups, SharePoint, and Teams, see:
 
-- [Collaborate with guests in a site](https://docs.microsoft.com/Office365/Enterprise/collaborate-in-a-site)
-- [Collaborate with guests in a team](https://docs.microsoft.com/Office365/Enterprise/collaborate-as-a-team)
+- [Collaborate with guests in a site](../../solutions/collaborate-in-site.md)
+- [Collaborate with guests in a team](../../solutions/collaborate-as-team.md)
 
 ## Manage groups guest access
 
 If you want to enable or disable guest access in groups, you can do so in the Microsoft 365 admin center.
 
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">Services & add-ins</a> page.
-
-2. Select **Office 365 Groups**.
+1. In the admin center, go to **Show all** \> **Settings** \> **Org settings** and on the **Services** tab, select **Microsoft 365 groups**.
   
-3. On the **Office 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
+2. On the **Microsoft 365 Groups** page, choose whether you want to let people outside your organization access group resources or let group owners add people outside your organization to groups.
 
-## Add guests to an Office 365 group from the admin center
+## Add guests to a Microsoft 365 group from the admin center
 
 If the guest already exists in your directory, you can add them to your groups from the Microsoft 365 admin center.
   
 1. In the admin center, go to the **Groups** > **Groups** page.
   
-2. Select the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
+2. Click the group you want to add the guest to, and select **View all and manage members** on the **Members** tab. 
   
 4. Select **Add members**, and choose the name of the guest you want to add.
     
@@ -71,7 +66,7 @@ If you want to edit any of a guest's information, you can [Add or update a user'
 
 If you want to allow guest access to most groups, but have some where you want to prevent guest access, you can block guest access for individual groups by using Microsoft PowerShell.
 
-You must use the preview version of [Azure Active Directory PowerShell for Graph (AzureAD)](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
+You must use the preview version of [Azure Active Directory PowerShell for Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) (module name **AzureADPreview**) to change the group-level guest access setting:
 
 - If you haven't installed any version of the Azure AD PowerShell module before, see [Installing the Azure AD Module](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview#installing-the-azure-ad-module) and follow the instructions to install the public preview release.
 
@@ -104,7 +99,7 @@ Get-AzureADObjectSetting -TargetObjectId $groupID -TargetType Groups | fl Values
 
 The verification looks like this:
     
-![Screenshot of PowerShell window showing that guest group access has been set to false.](../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
+![Screenshot of PowerShell window showing that guest group access has been set to false.](../../media/09ebfb4f-859f-44c3-a29e-63a59fd6ef87.png)
   
 ## Allow or block guest access based on their domain
 
@@ -114,7 +109,7 @@ For more information, see [Allow or block invitations to B2B users from specific
 
 ## Add guests to the global address list
 
-By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list.
+By default, guests aren't visible in the Exchange Global Address List. Use the steps listed below to make a guest visible in the global address list. Be sure the guest is visible in the Exchange Online admin center. New guests may take a short time to appear there after they're added.
 
 Find the guest user's ObjectID by running:
 
@@ -130,7 +125,7 @@ Set-AzureADUser -ObjectId cfcbd1a0-ed18-4210-9b9d-cf0ba93cf6b2 -ShowInAddressLis
 
 ## Related articles
 
-[Manage Group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md)
+[Manage group membership in the Microsoft 365 admin center](add-or-remove-members-from-groups.md)
   
 [Azure Active Directory access reviews](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-perform-access-review)
 

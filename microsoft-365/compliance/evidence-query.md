@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to create and run a query within your evidence in a data investigation, adding conditions and filters to narrow your results.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Query the data in evidence

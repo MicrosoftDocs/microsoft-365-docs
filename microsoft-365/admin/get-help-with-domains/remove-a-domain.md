@@ -1,12 +1,12 @@
 ---
-title: "Remove a domain from Office 365"
+title: "Remove a domain"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -14,31 +14,35 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: "Learn how to remove an old domain from Office 365 and move users and groups to another domain."
+description: "Learn how to remove an old domain from Microsoft 365 and move users and groups to another domain."
 ---
 
-# Remove a domain from Office 365
+# Remove a domain
 
-Contributors: [![Peter Baumgartner](../media/e70dc696-c5f8-4717-a48b-9087431503e7.png)](https://go.microsoft.com/fwlink/p/?linkid=847121)
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
   
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
-Are you removing your domain because you want to add it to a different Office 365 subscription plan? Or do you just want to cancel your subscription? You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).
+Are you removing your domain because you want to add it to a different Microsoft 365 subscription plan? Or do you just want to cancel your subscription? You can [change your plan or subscription](../../commerce/subscriptions/switch-to-a-different-plan.md) or [cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### Step 1: Move users to another domain
 
 #### Move users
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin center</a>.
 
@@ -89,9 +93,6 @@ You'll need to do this for yourself, too, if you're on the domain that you want 
 #### Move yourself
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">admin center</a>.
 
@@ -205,7 +206,7 @@ You can also use PowerShell to move users to another domain. See [Set-MsolUserPr
 
 ## How long does it take for a domain to be removed?
 
-It can take as little as 5 minutes for Office 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Office 365 groups. If there are many references that use the domain it can take several hours (a day) for the domain to be removed.
+It can take as little as 5 minutes for Microsoft 365 to remove a domain if it's not referenced in a lot of places such as security groups, distribution lists, users, and Microsoft 365 groups. If there are many references that use the domain it can take several hours (a day) for the domain to be removed.
   
 If you have hundreds or thousands of users, use PowerShell to query for all users and then move them to another domain. Otherwise, it's possible for a handful of users to be missed in the UI, and then when you go to remove the domain, you won't be able to and you won't know why. See [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0) for more information. To set the default domain, use [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -214,7 +215,7 @@ If you have hundreds or thousands of users, use PowerShell to query for all user
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> You can't remove the [".onmicrosoft.com"](https://support.office.com/article/b9fc3018-8844-43f3-8db1-1b3a8e9cfd5a.aspx) domain from your account.
+> You can't remove the [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) domain from your account.
   
 Still not working? Your domain might need to be manually removed. [Give us a call](../contact-support-for-business-products.md) and we'll help you take care of it!
   
@@ -224,8 +225,8 @@ Still not working? Your domain might need to be manually removed. [Give us a cal
 
 [Domains FAQ](../setup/domains-faq.md)
 
-[Get help with Office 365 domains](get-help-with-domains.md)
+[Get help with Microsoft 365 domains](get-help-with-domains.md)
 
-[Switch to a different Office 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Switch to a different Microsoft 365 for business plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
 
 [Cancel your subscription](../../commerce/subscriptions/cancel-your-subscription.md)

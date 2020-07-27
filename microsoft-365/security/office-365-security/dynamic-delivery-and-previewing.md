@@ -1,5 +1,5 @@
 ---
-title: "Dynamic Delivery and previewing with Office 365 ATP Safe Attachments"
+title: "Dynamic Delivery and previewing with ATP Safe Attachments"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -17,11 +17,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: "When you set up your ATP safe attachments policies, you choose Dynamic Delivery to avoid message delays and enable people to preview attachments that are being scanned."
+ms.custom: seo-marvel-apr2020
 ---
 
-# Dynamic Delivery and previewing with Office 365 ATP Safe Attachments
+# Dynamic Delivery and previewing with ATP Safe Attachments
 
-## Overview
+## Basic features of Dynamic Delivery
 
 Dynamic Delivery is an option that can be selected for [ATP Safe Attachments](atp-safe-attachments.md). Read this article to learn about Dynamic Delivery and attachment preview capabilities in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
 
@@ -33,16 +34,16 @@ Dynamic Delivery eliminates email delays by sending the body of an email message
 
 - As each attachment is cleared, it is available to open or download.
 
-- If an attachment is determined to be malicious, it is sent to quarantine, where someone on your organization's security team (such as an Office 365 global administrator or security administrator) can [manage quarantined messages in Office 365](manage-quarantined-messages-and-files.md).
+- If an attachment is determined to be malicious, it is sent to quarantine, where someone on your organization's security team (such as a global administrator or security administrator) can [manage quarantined messages in Office 365](manage-quarantined-messages-and-files.md).
 
 Most PDFs and Office documents can be previewed in safe mode while ATP scanning is underway. If an attachment is not compatible with the Dynamic Delivery previewer, email recipients see an attachment placeholder until ATP Safe Attachments scanning is complete.
 
 > [!TIP]
-> If you're using a mobile device, and PDFs are not rendering in Dynamic Delivery previewer at first, try signing into Office 365 using your mobile browser.
+> If you're using a mobile device, and PDFs are not rendering in Dynamic Delivery previewer at first, try signing in using your mobile browser.
 
 With Dynamic Delivery, people can read and respond to their email messages right away, while their attachments are being analyzed.
 
-ATP Safe Attachments scanning takes place in the same region where your Office 365 data resides. For more information about data center geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
+ATP Safe Attachments scanning takes place in the same region where your Microsoft 365 data resides. For more information about data center geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All)
 
 ## What happens when someone forwards an email that contains an attachment?
 
@@ -74,7 +75,7 @@ There are certain scenarios in which Dynamic Delivery is not supported. These in
 
 - A user's mailbox search folder that is in an error state
 
-- Environments in which an Exchange Online admin has enabled Exclaimer. To resolve this, see [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
+- Environments in which an Exchange Online admin has enabled Exclaimer. To resolve this, see [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/help/4014438)
 
 - Messages encrypted with [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
 

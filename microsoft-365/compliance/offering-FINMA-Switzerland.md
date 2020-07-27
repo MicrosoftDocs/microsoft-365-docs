@@ -22,7 +22,7 @@ titleSuffix: Microsoft Compliance
 
 The [Financial Market Supervisory Authority](https://www.finma.ch/en) ([Eidgenössische Finanzmarktaufsicht](https://www.finma.ch/de/), FINMA) is the regulator of independent financial markets in Switzerland and is responsible for ensuring that Swiss financial markets function effectively. It has prudential supervision over banks, insurance companies, exchanges, securities dealers, and other financial institutions.
 
-The FINMA published [Circular 2018/3 Outsourcing–banks and insurers](https://www.finma.ch/en/~/media/finma/dokumente/dokumentencenter/myfinma/rundschreiben/finma-rs-2018-03.pdf?la=en) to define the requirements that banks, securities dealers, and insurance companies must abide by when they outsource to a service provider any functions that are significant to the company’s business activities. Any company that outsources its business activities is accountable to the FINMA just as it would be if it carried out the outsourced functions itself.
+The FINMA published [Circular 2018/3 Outsourcing–banks and insurers](https://www.finma.ch/en/~/media/finma/dokumente/rundschreiben-archiv/2018/rs-18-03/finma-rs-2018-03---20170921.pdf?la=en) to define the requirements that banks, securities dealers, and insurance companies must abide by when they outsource to a service provider any functions that are significant to the company’s business activities. Any company that outsources its business activities is accountable to the FINMA just as it would be if it carried out the outsourced functions itself.
 
 ## Microsoft and FINMA
 
@@ -64,7 +64,3 @@ Yes. In Part 2 of the Compliance Checklist, we have mapped these terms against t
 - [Financial services compliance in Azure](https://azure.microsoft.com/resources/videos/azurecon-2015-financial-services-compliance-in-azure/)
 - [Azure Financial Services Cloud Risk Assessment Tool](https://aka.ms/FFIEC-CSDT)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/4/6/A/46AE2B08-49ED-478F-8E64-6BDE9B56C5F4/FINMA-Compliance.pdf).

@@ -1,5 +1,5 @@
 ---
-title: "Investigating partially indexed items in Office 365 eDiscovery"
+title: "Investigating partially indexed items in eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,12 +11,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-search.appverid: MOE150
+search.appverid: 
+- MOE150
+- MET150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
-description: "Partially indexed items (also call unindexed items) are Exchange mailbox items and documents on SharePoint and OneDrive sites that for some reason weren't completely indexed for Content Search. In this article, you can learn why items can't be indexed for search and are returned as partially indexed items, identify search errors for partially indexed items, and use a PowerShell script to determine your organization's exposure to partially indexed email items."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to manage partially indexed (or unindexed) items from Exchange, SharePoint, and OneDrive within your organization.
 ---
 
-# Investigating partially indexed items in Office 365 eDiscovery
+# Investigating partially indexed items in eDiscovery
 
 A Content Search that you run from the Security & Compliance Center automatically includes partially indexed items in the estimated search results when you run a search. Partially indexed items are Exchange mailbox items and documents on SharePoint and OneDrive for Business sites that for some reason weren't completely indexed for search. Most email messages and site documents are successfully indexed because they fall within the [Indexing limits for email messages](limits-for-content-search.md#indexing-limits-for-email-messages). However, some items may exceed these indexing limits, and will be partially indexed. Here are other reasons why items can't be indexed for search and are returned as partially indexed items when you run a Content Search:
   
@@ -30,7 +34,7 @@ A Content Search that you run from the Security & Compliance Center automaticall
     
 - The file type is supported for indexing but an indexing error occurred for a specific file
     
-Although it varies, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
+Although it varies, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed. The reason for the difference between the volume versus size is that larger files have a higher probability of containing content that can't be completely indexed.
   
 ## Why does the partially indexed item count change for a search?
 
@@ -65,7 +69,7 @@ By using the search results from the previous example, .84% of all mailboxes ite
 
 `(316 MB/4830 MB) x 100 = 6.54%`
 
-So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most Office 365 organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
+So in the previous example, 6.54% of the total size of mailbox items are from partially indexed items. As previously stated, most organizations customers have less than 1% of content by volume and less than 12% of content by size that is partially indexed.
 
 ## Working with partially indexed items
 
@@ -98,12 +102,12 @@ The following is a list of indexing errors and a description of the possible cau
 | `attachmentsize` <br/> |A file attached to an email message was too large and couldn't be processed.  <br/> |
 | `indexingtruncated` <br/> |When writing the processed email message to the index, one of the indexable properties was too large and was truncated. The truncated properties are listed in Error Properties field.  <br/> |
 | `invalidunicode` <br/> |An email message contained text that couldn't be processed as valid Unicode. Indexing for this item may be incomplete.  <br/> |
-| `parserencrypted` <br/> |The content of attachment or email message is encrypted, and Office 365 couldn't decode the content.  <br/> |
+| `parserencrypted` <br/> |The content of attachment or email message is encrypted, and Microsoft 365 couldn't decode the content.  <br/> |
 | `parsererror` <br/> |An unknown error occurred during parsing. This typically results from a software bug or a service crash.  <br/> |
 | `parserinputsize` <br/> |An attachment was too large for the parser to handle, and the parsing of that attachment didn't happen or wasn't completed.  <br/> |
 | `parsermalformed` <br/> |An attachment was malformed and couldn't be handled by the parser. This result from can old file formats, files created by incompatible software, or viruses pretending to be something other than claimed.  <br/> |
 | `parseroutputsize` <br/> |The output from the parsing of an attachment was too large and had to be truncated.  <br/> |
-| `parserunknowntype` <br/> |An attachment had a file type that Office 365 couldn't detect.  <br/> |
+| `parserunknowntype` <br/> |An attachment had a file type that Microsoft 365 couldn't detect.  <br/> |
 | `parserunsupportedtype` <br/> |An attachment had a file type that Office 365could detect, but parsing that file type isn't supported.  <br/> |
 | `propertytoobig` <br/> |The value of an email property in Exchange Store was too large to be retrieved and the message couldn't be processed. This typically only happens to the body property of an email message.  <br/> |
 | `retrieverrms` <br/> |The content retriever failed to decode an RMS-protected message.  <br/> |

@@ -19,12 +19,14 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: "Learn to create, edit, delete, or remove AutoPilot profiles."
+description: "Learn to create an AutoPilot profile and apply it to a device, as well as edit or delete a profile or remove a profile from a device."
 ---
 
 # Create and edit AutoPilot profiles
@@ -33,7 +35,7 @@ description: "Learn to create, edit, delete, or remove AutoPilot profiles."
 
 A profile applies to a device, or a group of devices,
   
-1. In the Microsoft 365 Business Admin center, choose **Devices** \> **AutoPilot**.
+1. In the Microsoft 365 admin center, choose **Devices** \> **AutoPilot**.
   
 2. On the **AutoPilot** page, choose the **Profiles** tab \> **Create profile**.
     

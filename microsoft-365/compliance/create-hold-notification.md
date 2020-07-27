@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: "Use the Communications tab in an Advanced eDiscovery case to manage the custodian notification workflow."
+description: Use the Communications tool in an Advanced eDiscovery case to send, collect, and track legal hold notifications.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Create a legal hold notice

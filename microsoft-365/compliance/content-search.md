@@ -1,5 +1,5 @@
 ---
-title: "Content Search in Office 365"
+title: "Content Search"
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,12 +18,14 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in mailboxes, SharePoint Online sites, OneDrive accounts, Microsoft Teams, Office 365 groups, Yammer Groups, and Skype for Business Conversations. You can use keyword search queries and search conditions to narrow the search results. Then you can preview and export search results. Content Search is also an effective tool to search for content related to a GDPR data subject request."
+ms.custom:
+- seo-marvel-apr2020
+description: "Use the Content Search tool in the compliance center in Office 365 or Microsoft 365 to search for content in a variety of Office 365 services."
 ---
 
-# Content Search in Office 365
+# Content Search
 
-You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your Office 365 organization. Use this tool to search for items in these Office 365 services:
+You can use the Content Search eDiscovery tool in the compliance center in Office 365 or Microsoft 365 to search for in-place items such as email, documents, and instant messaging conversations in your organization. Use this tool to search for items in these services:
   
 - Exchange Online mailboxes and public folders
     
@@ -33,7 +35,7 @@ You can use the Content Search eDiscovery tool in the compliance center in Offic
     
 - Microsoft Teams 
 
-- Office 365 Groups
+- Microsoft 365 Groups
 
 - Yammer Groups 
     
@@ -43,7 +45,7 @@ After you run a Content Search, the number of content locations and an estimated
 
 To have access to the **Content search** page to run searches and preview and export search results, an administrator, compliance officer, or eDiscovery manager must be a member of the eDiscovery Manager role group in the Security & Compliance Center. For more information, see [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your Office 365 email address and password.
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your Microsoft email address and password.
     
 2. Click **Search** \> **Content search**.
     
@@ -80,7 +82,7 @@ To have access to the **Content search** page to run searches and preview and ex
     
        - **Locations:** Choose the content locations to search.
     
-      - **All locations:** Use this option to search all content locations in your organization. This includes email in all Exchange mailboxes (including all inactive mailboxes, and mailboxes for all Microsoft Teams, Yammer Groups, and Office 365 Groups), all Skype for Business conversations, all SharePoint and OneDrive for Business sites (including the sites for all Microsoft Teams, Yammer Groups, and Office 365 Groups), and items in all Exchange public folders.
+      - **All locations:** Use this option to search all content locations in your organization. This includes email in all Exchange mailboxes (including all inactive mailboxes, and mailboxes for all Microsoft Teams, Yammer Groups, and Microsoft 365 Groups), all Skype for Business conversations, all SharePoint and OneDrive for Business sites (including the sites for all Microsoft Teams, Yammer Groups, and Microsoft 365 Groups), and items in all Exchange public folders.
     
       - **Specific locations:** Use this option to search specific content locations. You can search all content locations for a specific Office 365 service (such as searching all Exchange mailboxes or search all SharePoint sites) or you can search for content in specific locations of any of the Office 365 services that are displayed. 
     
@@ -133,13 +135,13 @@ To view search statistics:
     
 3. In the **Individual results** drop down list, click **Search statistics**.
     
-4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view. 
+4. In the **Type** drop down list, click one of the following options depending on the search statistics you want to view:
     
-  - **Summary:** Displays statistics for each type of content locations searched. This contents the number of content locations that contained items that matched the search query, and the total number and size of search result items. This is the default setting.
-    
-  - **Queries:** Displays statistics about the search query. This includes the type of content location the query statistics are applicable to, part of the search query the statistics are applicable to (note that **Primary** indicates the entire search query), the number of the content locations that contain items that match the search query, and the total number and size and items that were found (in the specified content location) that match the search query. Statistics for unindexed items (also called *partially indexed items*) are also displayed. However, only partially indexed items from mailboxes are included in the statistics. Partially indexed items from SharePoint and OneDrive are not included in the statistics.
-    
-  - **Top locations:** Displays statistics about the number of items that match the search query in each content location. The top 1,000 locations are displayed.
+    - **Summary:** Displays statistics for each type of content locations searched. This contents the number of content locations that contained items that matched the search query, and the total number and size of search result items. This is the default setting.
+
+    - **Queries:** Displays statistics about the search query. This includes the type of content location the query statistics are applicable to, part of the search query the statistics are applicable to (note that **Primary** indicates the entire search query), the number of the content locations that contain items that match the search query, and the total number and size and items that were found (in the specified content location) that match the search query. Statistics for unindexed items (also called *partially indexed items*) are also displayed. However, only partially indexed items from mailboxes are included in the statistics. Partially indexed items from SharePoint and OneDrive are not included in the statistics.
+
+    - **Top locations:** Displays statistics about the number of items that match the search query in each content location. The top 1,000 locations are displayed.
     
 For more detailed information about search statistics, see [View keyword statistics for Content Search results](view-keyword-statistics-for-content-search.md).
   
@@ -173,7 +175,7 @@ See the following sections for more information about content searches.
   
 [Searching OneDrive accounts](#searching-onedrive-accounts)
   
-[Searching Microsoft Teams and Office 365 Groups](#searching-microsoft-teams-and-office-365-groups)
+[Searching Microsoft Teams and Microsoft 365 Groups](#searching-microsoft-teams-and-microsoft-365-groups)
 
 [Searching Yammer Groups](#searching-yammer-groups)
   
@@ -191,7 +193,7 @@ See the following sections for more information about content searches.
 
 - For a description of the limits that are applied to the Content Search feature, see [Limits for Content Search](limits-for-content-search.md).
     
-- Microsoft collects performance information for Content Searches run by all Office 365 organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
+- Microsoft collects performance information for Content Searches run by all organizations. While the complexity of the search query can impact search times, the biggest factor that affects how long searches take is the number of mailboxes searched. Although Microsoft doesn't provide a Service Level Agreement for search times, the following table lists average search times for a Content Search based on the number of mailboxes included in the search.
     
 |**Number of mailboxes**|**Average search time**|
 |:-----|:-----|
@@ -224,25 +226,27 @@ Keep the following things in mind when using the keyword list to create a search
     
     ![Example of the query that's created when using the keyword list and a condition](../media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- When you run a content search, Office 365 automatically checks your search query for unsupported characters and for Boolean operators that may not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
+- When you run a content search, Microsoft 365 automatically checks your search query for unsupported characters and for Boolean operators that may not be capitalized. Unsupported characters are often hidden and typically cause a search error or return unintended results. For more information about the unsupported characters that are checked, see [Check your Content Search query for errors](check-your-content-search-query-for-errors.md).
     
 - If you have a search query that contains keywords for non-English characters (such as Chinese characters), you can click **Query language-country/region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) and select a language-country culture code value for the search. The default language/region is neutral. How can you tell if you need to change the language setting for a content search? If you're certain content locations contain the non-English characters you're searching for, but the search returns no results, the language setting may be the cause. 
   
 ### Searching OneDrive accounts
 
-- To collect a list of the URLs for the OneDrive sites in your organization, see [Create a list of all OneDrive locations in your organization](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). This script in this article creates a text file that contains a list of all OneDrive sites. To run this script, you have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive site that you want to search. This is the domain that contains all your OneDrive; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- To collect a list of the URLs for the OneDrive sites in your organization, see [Create a list of all OneDrive locations in your organization](https://docs.microsoft.com/onedrive/list-onedrive-urls). This script in this article creates a text file that contains a list of all OneDrive sites. To run this script, you have to install and use the SharePoint Online Management Shell. Be sure to append the URL for your organization's MySite domain to each OneDrive site that you want to search. This is the domain that contains all your OneDrive; for example,  `https://contoso-my.sharepoint.com`. Here's an example of a URL for a user's OneDrive site:  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-    In the rare case of a person's user principal name (UPN) being changed, the URL for their OneDrive location is changed to incorporate the new UPN. If this happens, you have to modify a content search by adding the user's new OneDrive URL and removing the old one.
+    In the rare case of a person's user principal name (UPN) being changed, the URL for their OneDrive location is changed to incorporate the new UPN. If this happens, you have to modify a content search by adding the user's new OneDrive URL and removing the old one. For more information, see [How UPN changes affect the OneDrive URL](https://docs.microsoft.com/onedrive/upn-changes).
   
-### Searching Microsoft Teams and Office 365 Groups
+### Searching Microsoft Teams and Microsoft 365 Groups
 
-You can search the mailbox that's associated with an Office 365 Group or a Microsoft Team. Because Microsoft Teams is built on Office 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
+You can search the mailbox that's associated with an Microsoft 365 Group or a Microsoft Team. Because Microsoft Teams is built on Microsoft 365 Groups, searching them is similar. In both cases, only the group or team mailbox is searched. The mailboxes of the group or team members aren't searched. To search them, you have to specifically add them to the search.
   
-Keep the following things in mind when searching for content in Microsoft Teams and Office 365 Groups.
+Keep the following things in mind when searching for content in Microsoft Teams and Microsoft 365 Groups.
   
-- To search for content located in Teams and Office 365 Groups, you have to specify the mailbox and SharePoint site that are associated with a team or group.
+- To search for content located in Teams and Microsoft 365 Groups, you have to specify the mailbox and SharePoint site that are associated with a team or group.
+
+- Content from private channels is stored in each user's mailbox, not the team mailbox. To search for content in private channels, see [eDiscovery of private channels](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
-- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or an Office 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Office 365 Group named Senior Leadership Team: 
+- Run the **Get-UnifiedGroup** cmdlet in Exchange Online to view properties for a team or an Microsoft 365 Group. This is a good way to get the URL for the site that's associated with a team or a group. For example, the following command displays selected properties for an Microsoft 365 Group named Senior Leadership Team: 
     
   ```text
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -255,9 +259,9 @@ Keep the following things in mind when searching for content in Microsoft Teams 
     > [!NOTE]
     > To run the **Get-UnifiedGroup** cmdlet, you have to be assigned the View-Only Recipients role in Exchange Online or be a member of a role group that's assigned the View-Only Recipients role. 
   
-- When a user's mailbox is searched, any team or Office 365 Group that the user is a member of won't be searched. Similarly, when you search a team or an Office 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
+- When a user's mailbox is searched, any team or Microsoft 365 Group that the user is a member of won't be searched. Similarly, when you search a team or an Microsoft 365 Group, only the group mailbox and group site that you specify is searched. The mailboxes and OneDrive for Business accounts of group members aren't searched unless you explicitly add them to the search.
     
-- To get a list of the members of a team or an Office 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
+- To get a list of the members of a team or an Microsoft 365 Group, you can view the properties on the **Home \> Groups** page in the Microsoft 365 admin center. Alternatively, you can run the following command in Exchange Online PowerShell: 
     
   ```powershell
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -295,6 +299,8 @@ Keep the following things in mind when searching for content in Microsoft Teams 
   In the search results, meeting summaries are identified as **Meeting** in the **Type field**, and call summaries are identified as **Call**. Also, conversations that are part of a Teams channel and 1xN chats are identified as **IM** in the **Type** field.
   
   ![Teams meetings, calls, and 1xN chats are identified in the Type field](../media/O365-ContentSearch-Teams-MessageKind.png)
+
+   For more information, see [Microsoft Teams launches eDiscovery for calls and meetings](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
 - You can use the **Kind** email property or the **Message kind** search condition to search specifically for content in Teams. 
   
@@ -353,7 +359,7 @@ Here are a few things to keep in mind when searching inactive mailboxes.
 
 ### Searching disconnected or de-licensed mailboxes
 
-If the Exchange Online license (or the entire Office 365 license) is removed from a user account in Office 365 or in Azure Active Directory, the user's mailbox becomes a *disconnected* mailbox. This means that the mailbox is no longer associated with the user account. Here's what happens when searching disconnected mailboxes:
+If the Exchange Online license (or the entire Microsoft 365 license) is removed from a user account or in Azure Active Directory, the user's mailbox becomes a *disconnected* mailbox. This means that the mailbox is no longer associated with the user account. Here's what happens when searching disconnected mailboxes:
 
 - If the license is removed from a mailbox, the mailbox is no longer searchable. 
 

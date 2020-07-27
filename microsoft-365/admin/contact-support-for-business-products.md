@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection:
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,20 +23,16 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: "Get technical and billing support using phone numbers listed for your region or locale, or by submitting your service request online, or by visiting a Microsoft store."
+description: "Get technical and billing support using phone numbers listed for your country or region, or by submitting your service request online, or by visiting a Microsoft store."
 feedback_system: None
 ---
 # Contact support for business products - Admin Help
 
 ::: moniker range="o365-worldwide"
 
-
 ## [Online support](#tab/online)
 
 Save time by starting your service request online. We'll help you find a solution or connect you to an expert who will contact you by email or phone. [Learn about initial support response times](https://go.microsoft.com/fwlink/p/?LinkId=518251).
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. If you get a message that says you don't have permission to access this page or perform this action, then you aren't an admin. [Who has admin permissions in my business?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
 
@@ -49,7 +46,9 @@ Save time by starting your service request online. We'll help you find a solutio
 
 ## [Phone support ](#tab/phone)
 
-Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.  <br/>Technical support is provided in English 24 hours a day, 7 days a week. <br/> Admins, have your account details ready when you call.<br/>
+Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), Monday-Friday.\
+Technical support is provided in English 24 hours a day, 7 days a week.\
+Admins, have your account details ready when you call.\
 
 - **In the United States, call 1 800 865 9408.**
 
@@ -59,7 +58,7 @@ Billing support is provided in English from 9 AM-5 PM (9 AM-6 PM in Australia), 
 
 - **In the United Kingdom, call 0800 032 6417.**
 
-If your Office 365 or Microsoft 365 Business support phone number isn't listed above, use the drop-down menu below to choose your country or region.
+If your Microsoft 365 for business support phone number isn't listed above, use the drop-down menu below to choose your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
@@ -67,7 +66,7 @@ To learn how to open a service request, select the **Online support** tab above.
 
 ## [In-store support](#tab/instore)
 
-You can now make an appointment at your local Microsoft Store with an Answer Desk expert to help resolve your Office 365 or Microsoft 365 issue.
+You can now make an appointment at your local Microsoft Store with an Answer Desk expert to help resolve your Microsoft 365 issue.
 
 1. Go to the [Microsoft Stores schedule](https://go.microsoft.com/fwlink/?LinkID=2041482) page, and select **Schedule an appointment**.
 
@@ -85,11 +84,11 @@ With every subscription of Office 365 operated by 21Vianet, 21Vianet support pro
 
 Authorized administrators can use the Office 365 operated by 21Vianet portal to submit service requests online and access support telephone numbers. For instructions, see [Contact support](#contact-support).
 
-The 21Vianet Office 365 technical support team troubleshoots only those issues that are related to Office 365 operated by 21Vianet. Issues that originate in customer networks fall outside of the Office 365 support boundaries, and in these cases, customers must work with their networking team for assistance.
+The Office 365 operated by 21Vianet technical support team troubleshoots only those issues that are related to Office 365 operated by 21Vianet. Issues that originate in customer networks fall outside of the Office 365 support boundaries, and in these cases, customers must work with their networking team for assistance.
 
 ### Community and self-service support options
 
-Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](/services-in-china/services-in-china.md).
+Self-service support is available for all Office 365 operated by 21Vianet users, and includes troubleshooting tools and videos, help articles and videos, as well as forums and wikis in the [Office 365 community](https://go.microsoft.com/fwlink/p/?linkid=842838). For more self-help resources, see [Learn about Office 365 operated by 21Vianet](services-in-china/services-in-china.md).
 
 ### Pre-sales support
 
@@ -119,7 +118,7 @@ Technical support for Office 365 operated by 21Vianet subscriptions provides ass
 
 | Support category | Examples |
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Installation and setup | Exchange Online  <ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul> SharePoint Online <ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul> Skype for Business Online  <ul><li>Installation and creating contacts</li></ul> Office 365 ProPlus  <ul><li>Installation and setup</li></ul> |
+| Installation and setup | Exchange Online  <ul><li>Office 365 mailbox migration</li><li>Recipient configuration (mailbox permissions, configuring mail forwarding, configuring shared mailbox)</li><li>Autodiscover configuration</li></ul> SharePoint Online <ul><li>Permissions and user groups</li><li>Configuration of external users</li></ul> Skype for Business Online  <ul><li>Installation and creating contacts</li></ul> Microsoft 365 Apps for enterprise  <ul><li>Installation and setup</li></ul> |
 | Configuration | Service configuration issues  <ul><li>Single sign-on (SSO)</li><li>Active Directory synchronization</li></ul> |
 
 > [!NOTE]
@@ -177,7 +176,7 @@ Call support. If you encounter any problem with online request, phone support is
 
 People with administrator roles are the only ones in the customer's organization authorized to access the Admin section of the Office 365 operated by 21Vianet portal and to communicate directly with 21Vianet about Office 365 service requests.
 
-With Office 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Office 365 for business](add-users/assign-admin-roles.md).
+With Office 365 you can designate several types of administrators who serve different functions. This service description uses the generic title administrator to refer to all categories of administrators. For more information about the types of administrator roles, see [Assign admin roles in Microsoft 365 for business](add-users/assign-admin-roles.md).
 
 The administrator is:
 
@@ -225,7 +224,7 @@ To view feature availability across Office 365 plans, see [Office 365 Service De
 
 Scan this QR code to follow us on WeChat and get the latest updates for Office 365 operated by 21Vianet.
 
-![QR Code for updates for Office 365 operated by 21Vianet](media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![QR Code for updates for Office 365 operated by 21Vianet](../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
 ::: moniker-end
 
@@ -236,7 +235,7 @@ This article applies to customers of Office 365 Germany, which has domains endin
 As an admin for Office 365 Germany, you get free access to our knowledgeable support agents for help resolving technical issues, as well as for pre-sales, account, and billing support. You can also contact us on behalf of Office 365 Germany users in your organization.
 
 > [!NOTE]
-> All of the support options below are for Microsoft Cloud Germany. For more information about how Microsoft uses the data that you provide when you contact Microsoft Office 365 support, please see the [privacy statement](https://go.microsoft.com/fwlink/p/?LinkId=512132).
+> All of the support options below are for Microsoft Cloud Germany. For more information about how Microsoft uses the data that you provide when you contact Microsoft support, please see the [privacy statement](https://go.microsoft.com/fwlink/p/?LinkId=512132).
 
 ### Get assisted support
 
@@ -253,6 +252,6 @@ Assisted support options are for admins of Office 365 Germany subscribed organiz
 
 ### Let our community help
 
-You can also [search the Office 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
+You can also [search the Microsoft 365 for business community forums](https://go.microsoft.com/fwlink/p/?LinkId=518605) to find known issues and trending topics, or to post a new question. The community forums are monitored by trained Microsoft support agents who can help resolve your issue.
 
 ::: moniker-end

@@ -16,7 +16,9 @@ search.appverid:
 ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection: 
 - M365-security-compliance
-description: "Before you even create your first data loss prevention (DLP) policy, DLP is helping to protect your sensitive information with a default policy. This default policy and its recommendation (shown below) help keep your sensitive content secure by notifying you when email or documents containing a credit card number were shared with someone outside your organization."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to use the report to refine your organization's default data loss prevention (DLP) policy.
 ---
 
 # Get started with the default DLP policy
@@ -57,11 +59,11 @@ If you want to change these options later, you can edit the default DLP policy a
   
 ## Edit the default DLP policy
 
-This policy is named **Default Office 365 DLP policy** and appears under **Data loss prevention** on the **Policy** page of the Security &amp; Compliance Center. 
+This policy is named **Default DLP policy** and appears under **Data loss prevention** on the **Policy** page of the Security &amp; Compliance Center. 
   
 This policy is fully customizable, the same as any DLP policy that you create yourself from scratch. You can also turn off or delete the policy, so that your users no longer receive policy tips or email notifications.
   
-![DLP policy named Default Office 365 DLP policy](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
+![DLP policy named Default DLP policy](../media/260731e8-4d57-4c98-abec-07b052ec48d5.png)
   
 ## When the widget does and does not appear
 

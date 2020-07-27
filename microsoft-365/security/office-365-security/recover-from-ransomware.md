@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: "Office 365 admins can learn how to recover from a ransomware attack."
+description: "Microsoft 365 admins can learn how to recover from a ransomware attack."
 ---
 
-# Recover from a ransomware attack in Office 365
+# Recover from a ransomware attack in Microsoft 365
 
-Even if you take every precaution to protect your Office 365 organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are verify sophisticated.
+Even if you take every precaution to protect your organization, you can still fall victim to a [ransomware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) attack. Ransomware is big business, and the attacks are verify sophisticated.
 
-The steps in this topic will give you the best chance to recover data that was encrypted by the ransomware, and will help stop the spread of the infection in your Office 365 organization. Before you get started, consider the following items:
+The steps in this topic will give you the best chance to recover data that was encrypted by the ransomware, and will help stop the spread of the infection in your organization. Before you get started, consider the following items:
 
 - There's no guarantee that paying the ransom will return access to your files. In fact, paying the ransom can make you a target for more ransomware. If you've already paid, but you were able to successfully recover your files without having to use the attacker's resolution, you should call your bank to see if they can block the transaction. We also recommend that you report the ransomware attack to law enforcement, scam reporting websites and Microsoft as described later in this topic.
 
@@ -37,7 +37,7 @@ The key point here is to stop the spread of data encryption by the ransomware.
 
 If you suspect that email is a target, you should temporarily disable user access to mailboxes. Exchange ActiveSync is used by mobile devices to synchronize data between the device and the Exchange Online mailbox.
 
-To disable ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Office 365](https://support.microsoft.com/help/2795303/how-to-disable-exchange-activesync-for-users-in-office-365).
+To disable ActiveSync for a mailbox, see [How to disable Exchange ActiveSync for users in Exchange Online](https://support.microsoft.com/help/2795303).
 
 To disable other types of access to a mailbox, see:
 
@@ -45,7 +45,7 @@ To disable other types of access to a mailbox, see:
 
 - [Enable or Disable POP3 or IMAP4 access for a user](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-Pausing OneDrive sync will help protect your cloud data from being updated by potentially infected devices. For more information, see [How to Pause and Resume sync in OneDrive](https://support.office.com/article/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
+Pausing OneDrive sync will help protect your cloud data from being updated by potentially infected devices. For more information, see [How to Pause and Resume sync in OneDrive](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e).
 
 ## Step 3: Remove the malware from the affected devices
 
@@ -55,11 +55,11 @@ You can use [Windows Defender](https://www.microsoft.com/windows/comprehensive-s
 
 An alternative that will also help you remove ransomware or malware is the [Malicious Software Removal Tool (MSRT)](https://www.microsoft.com/download/details.aspx?id=9905).
 
-If these options don't work, you can try [Windows Defender Offline](https://support.microsoft.com/help/17466/windows-defender-offline-help-protect-my-pc) or [Troubleshoot problems with detecting and removing malware](https://support.microsoft.com/help/4466982/windows-10-troubleshoot-problems-with-detecting-and-removing-malware).
+If these options don't work, you can try [Windows Defender Offline](https://support.microsoft.com/help/17466) or [Troubleshoot problems with detecting and removing malware](https://support.microsoft.com/help/4466982).
 
 ## Step 4: Recover files on a cleaned computer or device
 
-After you've completed the previous step to remove the ransomware payload from your environment (which will prevent the ransomware from encrypting or removing your files), you can use [File History](https://support.microsoft.com/help/17128/windows-8-file-history) in Windows 10 and Windows 8.1 or System Protection in Windows 7 to attempt to recover your local files and folders.
+After you've completed the previous step to remove the ransomware payload from your environment (which will prevent the ransomware from encrypting or removing your files), you can use [File History](https://support.microsoft.com/help/17128) in Windows 10 and Windows 8.1 or System Protection in Windows 7 to attempt to recover your local files and folders.
 
 **Notes**:
 
@@ -69,11 +69,7 @@ After you've completed the previous step to remove the ransomware payload from y
 
 ## Step 5: Recover your files in your OneDrive for Business
 
-OneDrive for Business will allow you to recover any files you have stored in it. You have two options:
-
-- Use the [OneDrive website](https://support.office.com/article/159cad6d-d76e-4981-88ef-de6e96c93893).
-
-- If a large number of files were affected, you can create a support request for a "Site Collection Restore". This request can restore files from up to 14 days in the past.
+Files Restore in OneDrive for Business allows you to restore your entire OneDrive to a previous point in time within the last 30 days. For more information, see [Restore your OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15).
 
 ## Step 6: Recover deleted email
 
@@ -81,7 +77,7 @@ In the rare case that the ransomware deleted all your email, you can probably re
 
 - [Recover deleted messages in a user's mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
-- [Recover deleted items in Outlook for Windows](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
+- [Recover deleted items in Outlook for Windows](https://support.microsoft.com/office/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)
 
 ## Step 7: Re-enable Exchange ActiveSync and OneDrive sync
 
@@ -121,7 +117,7 @@ If your country isn't listed, ask your local or federal law enforcement agencies
 
 ### Submit email messages to Microsoft
 
-You can report phishing message that contain ransomware by following the instructions in [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://docs.microsoft.com/microsoft-365/security/office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+You can report phishing message that contain ransomware by using one of several methods. For more information, see [Report messages and files to Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## See also
 
@@ -131,11 +127,11 @@ You can report phishing message that contain ransomware by following the instruc
 
 - [Norsk Hydro responds to ransomware attack with transparency](https://www.microsoft.com/security/blog/2019/12/17/norsk-hydro-ransomware-attack-transparency/)
 
-- [Ransomware detection and recovering your files in OneDrive](https://support.office.com/article/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
+- [Ransomware detection and recovering your files in OneDrive](https://support.microsoft.com/office/0d90ec50-6bfd-40f4-acc7-b8c12c73637f)
 
 - [Microsoft Security Intelligence Report](https://www.microsoft.com/securityinsights/)
 
-- [Enable or disable macros in Office files](https://support.office.com/article/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
+- [Enable or disable macros in Office files](https://support.microsoft.com/office/12b036fd-d140-4e74-b45e-16fed1a7e5c6)
 
 - [Recommended settings for EOP and Office 365 ATP security](https://docs.microsoft.com/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365-atp)
 

@@ -34,18 +34,14 @@ Microsoft provided its Standard Contractual Clauses to the EU's Article 29 Worki
 
 The group determined that implementation of the provisions in Microsoft agreements was in line with their stringent requirements. (Microsoft was the first cloud service provider to receive a letter of endorsement and approval from the group.) Approval covered the engagements reflected in Model Clauses 2010/87/EU but not in the appendices, which describe the transfers of data and the security measures implemented by the data importer. The appendices may be analyzed separately by the DPA.
 
-Learn about the benefits of European Union Model Clauses on the Microsoft Cloud
-
-[Download the European Union model clauses backgrounder](https://aka.ms/eu-model-backgrounder)
-
 ## Microsoft in-scope cloud services
 
 - [Azure and Azure Government](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for Medium Business and Enterprise customers of Office 365
+- Microsoft Cloud App Security
+- Microsoft Professional Services: Premier and On Premises for Azure, Dynamics 365, Intune, and for Medium Business and Enterprise customers of Microsoft 365 for business
 - [Dynamics 365](https://aka.ms/d365-compliance-list)
 - Intune: Cloud service portion of the Intune Add-on Product and Mobile Device Management for Office 365
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - [Office 365](https://go.microsoft.com/fwlink/p/?LinkID=2077751)
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
@@ -70,11 +66,11 @@ A service provider that commits contractually to the Model Clauses gives its cus
 
 Compliance is a contractual commitment. Microsoft Standard Contractual Clauses are available to all cloud customers in the [Online Services Terms](https://aka.ms/Online-Services-Terms); for other services, see your existing agreement with Microsoft.
 
-**What is a "sub-processor"?**
+**What is a 'sub-processor'?**
 
-A "sub-processor" is someone who processes personal data following the data controller’s instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
+A sub-processor is someone who processes personal data following the data controller's instructions, and the terms of the EU Model Clauses and the subcontract. Microsoft customers—independent software vendors (ISVs), in particular — are sometimes themselves data processors. In those instances, Microsoft is the sub-processor.
 
-**Where do I start with my own organization’s compliance efforts?**
+**Where do I start with my own organization's compliance efforts?**
 
 You can enter an agreement such, as the [Online Services Terms](https://aka.ms/Online-Services-Terms), or explore amending your existing agreement to incorporate the Standard Contractual Clauses.
 
@@ -85,11 +81,7 @@ You can enter an agreement such, as the [Online Services Terms](https://aka.ms/O
 - [EU Data Protection Directive](https://aka.ms/EU-DPD)
 - [European Data Protection Board](https://edpb.europa.eu/)
 - [EU Model Clauses FAQ for Dynamics 365 and Office 365](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
-- [Microsoft and the EU-U.S. Privacy Shield](https://go.microsoft.com/fwlink/p/?linkid=2099701)
+- [Microsoft and the EU-U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/E/5/F/E5FA8D11-07A4-4496-82B3-0BCFABAA2FB7/EU_Model_Clauses_Compliance_Backgrounder.pdf).

@@ -16,19 +16,19 @@ description: "Microsoft provides help for EOP in a variety of places and methods
 
 # Help and support for EOP
 
-The technical support resources listed here will help you find answers if you are having difficulty with Microsoft Exchange Online Protection (EOP). Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
+In Microsoft 365 organizations with mailboxes in Exchange Online or standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes, the technical support resources listed in this topic will help you find answers if you are having difficulty with EOP. Microsoft provides help for EOP in a variety of places and methods including self-support and assisted-support.
 
 ## Self-support options
 
-Upon logging in, the Office 365 portal provides information about the status of your organization's services. Also, the service health section of Office 365 shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Office 365 portal also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area of Office 365, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums and community sites listed here.
+Upon logging in, the Microsoft 365 admin center provides information about the status of your organization's services. Also, the service health section shows the current status of your services, details about disruptions and outages, and lists planned maintenance times. The Microsoft 365 admin center also provides information about known issues and expected resolutions. If you're affected by a service-wide event, then you should see a communication alert (typically accompanied by a bell icon). We recommend that you read and act on any items as appropriate. For more information about the service health area, see [Service health and continuity](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). You might be able to find more help on your own by using the tools, forums and community sites listed here.
 
 [Product Overview for Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
-[Contact support for business products - Admin Help](https://docs.microsoft.com/office365/admin/contact-support-for-business-products)
+[Contact support for business products - Admin Help](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
-[Office 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365 community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft Support and Recovery Assistant (SaRA)](https://support.office.com/article/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Support and Recovery Assistant (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Mail flow troubleshooter](https://aka.ms/FixEmail)
 
@@ -58,11 +58,11 @@ For more information about how Premier Support can help your organization maximi
 
    For questions before you buy EOP, or questions about billing and subscriptions, go to **Support** \> **Ask for Customer Support** \> **Call billing and subscription support**.
 
-3. Use the Virtual Agent for Microsoft Office 365 to search for the most current appropriate telephone number.
+3. Use the Virtual Agent to search for the most current appropriate telephone number.
 
 ## Support telephone numbers
 
-Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent for Microsoft Office 365 as described above to find your local support telephone number.
+Microsoft provides local or toll-free telephone numbers for product support around the world. Many of these support centers provide help in your local language during business hours or in English 24 hours a day, every day. If you don't see your location listed below, use the Virtual Agent as described above to find your local support telephone number.
 
 |**Country or region**|**Pre-purchase and billing questions**|**Technical Support questions**|
 |:-----|:-----|:-----|

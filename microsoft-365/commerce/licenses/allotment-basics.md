@@ -12,7 +12,7 @@ localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - commerce
-ms.custom:
+ms.custom: AdminSurgePortfolio
 description: "Learn about the new allotments feature."
 ---
 
@@ -28,13 +28,13 @@ You can also delegate management of your allotments. Delegated allotment owners 
 
 You must meet the licensing requirements for [group-based licensing](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal#licensing-requirements).
 
-You can use allotments with any Office 365 product available to users:
+You can use allotments with any product available to users:
 
 - Office suites and standalone products
 - Enterprise and Mobility products
 - Dynamics 365 products
 
-The following products can’t be used with allotments:
+The following products can't be used with allotments:
 
 - Microsoft Store apps
 - Perpetual software, or software that is directly assigned to a user if there is no license involved.

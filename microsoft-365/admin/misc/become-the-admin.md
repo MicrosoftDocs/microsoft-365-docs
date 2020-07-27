@@ -1,27 +1,28 @@
 ---
-title: "Perform an internal admin takeover in Office 365"
+title: "Perform an internal admin takeover"
 f1.keywords:
 - CSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: "Learn how to verify your email and domain ownership to take over an unmanaged tenant in Office 365"
+description: "Learn how to verify your email and domain ownership to take over an unmanaged tenant in Microsoft 365"
 ---
 
-# Perform an internal admin takeover in Office 365
+# Perform an internal admin takeover
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
 
@@ -58,15 +59,15 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
 4. Once you've added the TXT record to your registrar site, return to the wizard and select **Okay, I've added the record**.
     
 > [!NOTE]
-> Taking over the shadow tenant will not impact any existing information or services. However, if any users in the domain have signed up for services that require a license, you'll be asked to buy licenses for them as part of taking over the admin role. You can add or remove licenses once the admin setup process is finished. 
+> Taking over the shadow tenant will not impact any existing information or services. However, if any users in the domain have signed up for services that require a license, you'll be asked to buy licenses for them as part of taking over the admin role. You can buy or remove licenses once the admin setup process is finished.
   
 ## Related articles
 
-YouTube: [3 steps to do an IT Admin Takeover for Power BI and Office 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 steps to do an IT Admin Takeover for Power BI and Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Admin takeover in Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
-[Get help with Office 365 domains](../get-help-with-domains/get-help-with-domains.md)
+[Get help with domains](../get-help-with-domains/get-help-with-domains.md)
 
 [Using self-service sign up in your organization](self-service-sign-up.md)
   

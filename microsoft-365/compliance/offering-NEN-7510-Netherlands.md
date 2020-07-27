@@ -24,7 +24,7 @@ Organizations in the Netherlands that process patient health information must de
 
 ## Microsoft and NEN 7510:2011
 
-Microsoft has analyzed our current certifications and assurance statements and created a [NEN 7510 coverage report](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf) (available on the Service Trust Platform), which maps those certifications and assurance statements against the NEN 7510 controls for which Microsoft is responsible as a cloud service provider. This document can help customers determine which additional controls they must implement to ensure that their use of Microsoft cloud services for the storage or processing of patient health information complies with NEN 7510.
+Microsoft has analyzed our current certifications and assurance statements and created a [NEN 7510 coverage report](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=3285c45c-921c-49ad-b881-be43e0b70490&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides) (available on the Service Trust Platform), which maps those certifications and assurance statements against the NEN 7510 controls for which Microsoft is responsible as a cloud service provider. This document can help customers determine which additional controls they must implement to ensure that their use of Microsoft cloud services for the storage or processing of patient health information complies with NEN 7510.
 
 Learn how to accelerate your NEN 7510 deployment with our Azure Security and Compliance Blueprints: [Download the Microsoft Cloud — Azure and Office 365 NEN7510-2011 Standard Coverage User Guide](https://aka.ms/Azure-NEN7510-2011)
 
@@ -36,8 +36,7 @@ Learn how to accelerate your NEN 7510 deployment with our Azure Security and Com
 
 ## Audits, reports, and certificates
 
-- [Azure and Office 365 NEN 7510:2011 Standard Coverage](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage/pdf)
-- [Azure and Office 365 NEN 7510:2011 Standard Coverage User Guide](https://protection.office.com/DownloadFile/ServiceAssurance/Document/compliance/Azure%20and%20Office%20365%20NEN7510-2011%20Standard%20Coverage%20User%20Guide/DOCX)
+- [Azure and Office 365 NEN 7510:2011 Standard Coverage](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?command=Download&downloadType=Document&downloadId=15d5a5fa-fbb6-4ea6-8126-2a2c684ae789&tab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb&docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_GRC_Assessment_Reports)
 
 ## Frequently asked questions
 
@@ -75,7 +74,3 @@ Customers can share the report with their own internal or external auditor as pa
 - [About NEN](https://www.nen.nl/About-NEN.htm)
 - [NEN 7510:2011 standard](https://www.nen.nl/NEN-Shop-2/Standard/NEN-75102011-nl.htm)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/3/D/E/3DE55FFB-0B45-49BC-851E-3696C8BD5FB7/NEN7510-Compliance.pdf).

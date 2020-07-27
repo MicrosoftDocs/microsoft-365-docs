@@ -1,5 +1,5 @@
 ---
-title: "View Process module results in Office 365 Advanced eDiscovery"
+title: "View Process module results in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: "Learn about how to find the results of a Process Module run in Office 365 Advanced eDiscovery, including task status and process summary. 
-"
+description: "Learn about how to find the results of a Process Module run in Advanced eDiscovery, including task status and process summary."
 ---
 
-# View Process module results in Office 365 Advanced eDiscovery
+# View Process module results in Advanced eDiscovery (classic)
 
 After **Prepare** \> **Process** is initiated, you can view progress and results. 
   
@@ -106,7 +105,7 @@ In Prepare \> Process \> Results \> Last process errors, details of the errors i
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Running the Process module and loading data](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

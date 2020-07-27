@@ -1,12 +1,12 @@
 ---
-title: "Why can't I switch Office 365 for business plans?"
+title: "Why can't I switch Microsoft 365 for business plans?"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: troubleshooting
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,23 +26,23 @@ ROBOTS: NOINDEX
 description: "Understand the reasons why sometimes switching plans has to be done manually or by calling support."
 ---
 
-# Why can't I switch Office 365 for business plans?
+# Why can't I switch Microsoft 365 for business plans?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> This article applies to the old admin center. To view the article about the admin center (preview), see [Why can't I upgrade plans?](why-cant-i-change-plans.md). The preview is available to all Microsoft 365 admins, you can opt in by selecting **Try the preview** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md).
+> This article applies to the old admin center. To view the article about the admin center (preview), see [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans). The preview is available to all Microsoft 365 admins, you can opt in by selecting **Try the preview** toggle located at the top of the Home page. For more information, see [About the new Microsoft 365 admin center](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 If you don't see the **Switch plans** button, your plan can't be switched automatically. In some cases, you might be able to resolve the issue so that you can use the **Switch plans** button, or you might be able to [switch plans manually](switch-plans-manually.md), instead. Position your mouse over the info icon to view a message that explains why the **Switch plans** button is not available. Use the information in this article to resolve the issue.
   
 ::: moniker range="o365-worldwide"
 
- **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../subscriptions-and-billing.md) | [Call support](../../admin/contact-support-for-business-products.md)
+ **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../index.yml) | [Call support](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../subscriptions-and-billing.md) | [Call support](../../admin/contact-support-for-business-products.md)
+ **Need something else?** [Buy another subscription](../buy-another-subscription.md) | [Cancel your subscription](cancel-your-subscription.md) | [Subscriptions and billing](../index.yml) | [Call support](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 

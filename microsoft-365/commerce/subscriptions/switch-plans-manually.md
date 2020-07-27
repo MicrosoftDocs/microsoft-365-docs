@@ -1,5 +1,5 @@
 ---
-title: "Switch Office 365 for business plans manually"
+title: "Switch Microsoft 365 for business plans manually"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,10 +22,10 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: "Switch Office 365 for business subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
+description: "Switch Microsoft 365 for business subscriptions manually by buying a new subscription and ensuring that both the subscriptions are listed and active."
 ---
 
-# Switch Office 365 for business plans manually
+# Switch Microsoft 365 for business plans manually
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
@@ -49,33 +50,41 @@ To continue with a manual switch, read [Step 2: Buy a new subscription](#step-2-
   
 - OR -
   
- **Purchase a new subscription and licenses:** Follow the steps in [Buy another Office 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
+ **Purchase a new subscription and licenses:** Follow the steps in [Buy another Microsoft 365 for business subscription](../buy-another-subscription.md) to buy a new subscription.
   
 Make sure you purchase a subscription for the same organization that the users are in now. For example, check the email addresses for the users you want to move. If their email addresses include @contoso.com, you must purchase a new subscription for contoso.com. Include a license for each user that you want to move.
   
- **If you need help choosing a plan**, see the [Office 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page, or [call support](../../admin/contact-support-for-business-products.md).
+ **If you need help choosing a plan**, see the [Microsoft 365 for business product comparison](https://go.microsoft.com/fwlink/p/?linkid=842056) page, or [call support](../../admin/contact-support-for-business-products.md).
   
 ## Step 3: Check your new subscription and licenses
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Subscriptions</a> page.
 
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
+::: moniker-end
 
-    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.
+
+::: moniker-end
 
 2. **Verify that both subscriptions are listed and active**
 
     The subscription that you're moving users from and the subscription that you're moving users to must be listed together. If the new subscription isn't there when you first check, try again later. Check that both subscriptions are listed under **ACTIVE**. [The new subscription isn't listed, or isn't active](#the-new-subscription-isnt-listed-or-isnt-active).
 
-   **The new Office 365 for business subscription with available licenses**
-
-    ![The subscription page showing the number of licenses for the new subscription.](../../admin/media/65a73e96-7c95-4daa-b6ec-71a4bf74dda5.png)
-  
 3. **Check that you have enough licenses for each user**
 
-    Each user needs a license that matches their subscription. So if you want to move ten users to Office 365 Enterprise E5, you'll need to make sure ten licenses are available. In the picture here, ten licenses were purchased for Office 365 Enterprise E5, and all ten licenses are available for assignment.
+    Each user needs a license that matches their subscription. So if you want to move ten users to Microsoft 365 Business Premium, you'll need to make sure ten licenses are available. 
 
-4. **Need more licenses for the new subscription?** Go to the **Subscriptions** page and [Buy licenses for your Office 365 for business subscription](../licenses/buy-licenses.md).
+4. **Need more licenses for the new subscription?** Go to the **Subscriptions** page and [Buy licenses for your Microsoft 365 for business subscription](../licenses/buy-licenses.md).
   
     [What about the old licenses?](#what-about-the-old-licenses)
 
@@ -95,11 +104,23 @@ The licenses for the current subscription will be removed later; you'll only pay
 
 ### Reassign a license for one user
 
+::: moniker range="o365-worldwide"
+
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+::: moniker-end
 
-    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Users** > <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+
+::: moniker-end
 
 2. On the **Active users** page, select the box next to the name of the user who you want to assign a license to.
 
@@ -110,19 +131,29 @@ The licenses for the current subscription will be removed later; you'll only pay
     > [!TIP]
     > To limit which services are available to the user, switch the toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
   
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
-  
 5. Switch the toggle to the **Off** position for licenses that this user no longer needs.
 
 6. At the bottom of the **Product licenses** pane, select **Assign** \> **Close** \> **Close**.
 
 ### Reassign licenses for multiple users at once
 
-1. In the Admin center, go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page, or select **Users** \> **Active users**.
+::: moniker range="o365-worldwide"
 
-    If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+1. In the Admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
-    If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Active users</a> page.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Active users</a> page.
+
+::: moniker-end
 
 2. Select the boxes next to the names of the users who you want to replace existing licenses for.
 
@@ -135,8 +166,6 @@ The licenses for the current subscription will be removed later; you'll only pay
     > [!TIP]
     > - To limit which services are available to the user, switch to toggles to the **Off** position for the services that you want to remove for that user. For example, if you want the user to have access to all available services except Skype for Business Online, you can switch the toggle for the Skype for Business Online service to the **Off** position.
     > - Any previous license assignments for the selected users will be removed.
-  
-    ![Setting license assignments for a user.](../../admin/media/5e53a979-6b08-4981-bb0b-fa657146334b.png)
   
 6. At the bottom of the **Replace existing products** pane, select **Replace** \> **Close**.
 

@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn about methods to review the data in your evidence, such as viewing in native, text, or near-native formats.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Review the data in evidence

@@ -17,13 +17,13 @@ description: "Admins can learn about queue alerts and Queues in the mail flow da
 
 ## Queue alerts
 
-When messages can't be sent from your Office 365 organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365. Common examples that cause this condition are:
+When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Office 365. Common examples that cause this condition are:
 
 - The connector is incorrectly configured.
 
 - There have been networking or firewall changes in your on-premises environment.
 
-Office 365 will continue to retry to delivery for 24 hours. After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).
+Microsoft 365 will continue to retry to delivery for 24 hours. After 24 hours, the messages will expire and will be returned to the senders in non-delivery reports (also known as a NDRs or bounce messages).
 
 If the queued email volume exceeds the pre-defined threshold (the default value is 2000 messages), the alerts will be available in the mail flow dashboard at **Recent alerts**, and admins will receive an email notification (to their alternative email address). To configure the alert threshold, daily notification limit, and/or recipients of the alert, see the **Customize queue alerts** section below.
 

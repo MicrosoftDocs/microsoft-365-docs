@@ -2,10 +2,10 @@
 title: "Views in Threat Explorer and real-time detections"
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
-ms.date: 08/07/2019
+ms.date: 05/15/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,7 +13,8 @@ localization_priority: Normal
 search.appverid:
 ms.collection: 
 - M365-security-compliance
-description: "Learn about the various kinds of views available in Threat Explorer and real-time detections."
+description: Learn about how to use Threat Explorer and the real-time detections report to investigate and respond to threats in the Security &amp; Compliance Center.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Views in Threat Explorer and real-time detections
@@ -25,7 +26,15 @@ description: "Learn about the various kinds of views available in Threat Explore
 - If you have [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2, then you have Explorer.
 - If you have Office 365 ATP Plan 1, then you have real-time detections.
 
-When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show ATP detections, such as malicious URLs detected by [Safe Links](atp-safe-links.md), and malicious files detected by [Safe Attachments](atp-safe-attachments.md). This report can be modified to show data for the past 30 days (unless you are using a trial subscription). Trial subscriptions will include data for the past seven days only.
+When you first open Explorer (or the real-time detections report), the default view shows email malware detections for the past 7 days. This report can also show ATP detections, such as malicious URLs detected by [Safe Links](atp-safe-links.md), and malicious files detected by [Safe Attachments](atp-safe-attachments.md). This report can be modified to show data for the past 30 days (with an ATP P2 paid subscription). Trial subscriptions will include data for the past seven days only.
+
+|Subscription  |Utility  |Days of Data  |
+|---------|---------|---------|
+|ATP P1 trial     | Real-time detections        |   7      |
+|ATP P1 paid     |   Real-time detections      |    30     |
+|ATP P1 paid testing ATP P2 trial     | Threat Explorer   |   7   |
+|ATP P2 trial     |  Threat Explorer       |     7    |
+|ATP P2 paid     |     Threat Explorer    |  30       |
 
 Use the **View** menu to change what information is displayed. Tooltips help you determine which view to use.
   

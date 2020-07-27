@@ -1,5 +1,5 @@
 ---
-title: "Import non-Office 365 content for Advanced eDiscovery analysis"
+title: "Import non-Microsoft 365 content for Advanced eDiscovery analysis"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,20 +14,21 @@ search.appverid:
 - OEC150
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
-description: "How to steps to import content that is not stored in O365 into an Azure blob so that it can be analyzed with AeD"
+description: "How to steps to import content that is not stored in Microsoft 365 into an Azure blob so that it can be analyzed with AeD"
+ms.custom: seo-marvel-apr2020
 ---
 
-# Import non-Office 365 content for Advanced eDiscovery analysis
+# Import non-Microsoft 365 content for Advanced eDiscovery (classic) analysis
 
-Not all documents that you may need to analyze with Office 365 Advanced eDiscovery will live in Office 365. With the Non-Office 365 content import feature in Advanced eDiscovery you can upload documents that don't live in Office 365 (except PST files) into a case linked, Azure storage blob and analyze them with Advanced eDiscovery. This procedure shows you how to bring your non-Office 365 documents into Advanced eDiscovery for analysis.
+Not all documents that you may need to analyze with Advanced eDiscovery will live in Microsoft 365. With the Non-Microsoft 365 content import feature in Advanced eDiscovery you can upload documents that don't live in Microsoft 365 (except PST files) into a case linked, Azure storage blob and analyze them with Advanced eDiscovery. This procedure shows you how to bring your non-Microsoft 365 documents into Advanced eDiscovery for analysis.
   
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 > [!NOTE]
-> You can purchase an Office 365 Advanced eDiscovery data storage add-on subscription for your non-Office 365 content. This is exclusively available for content that is to be analyzed with Advanced eDiscovery. Follow the steps in [Buy or edit and add-on for Office 365 for business](https://support.office.com/article/Buy-or-edit-an-add-on-for-Office-365-for-business-4e7b57d6-b93b-457d-aecd-0ea58bff07a6) and purchase the Office 365 Advanced eDiscovery storage add-on. 
+> You can purchase an Advanced eDiscovery data storage add-on subscription for your non-Microsoft 365 content. This is exclusively available for content that is to be analyzed with Advanced eDiscovery. Follow the steps in [Buy or edit an add-on for Microsoft 365 for business](https://docs.microsoft.com/microsoft-365/commerce/buy-or-edit-an-add-on) and purchase the Advanced eDiscovery storage add-on. 
   
-## Before you begin
+## Requirements to upload non-Office 365 content
 
 Using the upload Non-Office 365 feature as described in this procedure requires that you have:
   
@@ -46,7 +47,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
 ## Upload non-Office 365 content into Advanced eDiscovery
 
 
-1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Office 365 Security &amp; Compliance Center](ediscovery-cases.md)
+1. As an eDiscovery Manager or eDiscovery Administrator, open **eDiscovery**, and open the case that the non-Office 365 data will be uploaded to. If you need to create a case, see [Manage eDiscovery cases in the Security &amp; Compliance Center](ediscovery-cases.md)
     
 2. Click **Switch to Advanced eDiscovery**
     
@@ -77,7 +78,7 @@ Using the upload Non-Office 365 feature as described in this procedure requires 
     > [!IMPORTANT]
     > There must be one root folder per user and the folder name must be in the  *alias@domainname*  format. 
   
-8. Once the folders have finished uploading, switch back to Advanced eDiscovery. The content in the folders you uploaded is now ready to be processed in Advanced eDiscovery. Select the container and click the Process button. For more details on Advanced eDiscovery Processing see, [Run the Process module and load data in Office 365 Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+8. Once the folders have finished uploading, switch back to Advanced eDiscovery. The content in the folders you uploaded is now ready to be processed in Advanced eDiscovery. Select the container and click the Process button. For more details on Advanced eDiscovery Processing see, [Run the Process module and load data in Advanced eDiscovery](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
     
     > [!IMPORTANT]
     > Once the container is successfully processed in Advanced eDiscovery, you will no longer be able to add new content to the SAS storage in Azure. If you collect additional content and you want to add it to the case for Advanced eDiscovery analysis, you must create a new **Non-Office 365 data** container and repeat this procedure. 

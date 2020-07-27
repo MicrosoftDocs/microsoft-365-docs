@@ -19,7 +19,7 @@
               href: networking-avoid-network-hairpins.md
             - name: Step 4 - Configure traffic bypass
               href: networking-configure-proxies-firewalls.md
-            - name: Step 5 - Optimize client and Office 365 service performance
+            - name: Step 5 - Optimize client and service performance
               href: networking-optimize-tcp-performance.md
             - name: Networking exit criteria
               href: networking-exit-criteria.md
@@ -55,10 +55,10 @@
               href: windows10-enable-security-features.md
             - name: Windows 10 Enterprise exit criteria
               href: windows10-exit-criteria.md
-        - name: Phase 4 - Office 365 ProPlus
+        - name: Phase 4 - Microsoft 365 Apps for enterprise
           href: office365proplus-infrastructure.md
           items: 
-            - name: Office 365 ProPlus exit criteria
+            - name: Microsoft 365 Apps for enterprise exit criteria
               href: office365proplus-exit-criteria.md
         - name: Phase 5 - Mobile device management
           href: mobility-infrastructure.md
@@ -76,7 +76,7 @@
               href: infoprotect-configure-increased-security-office-365.md
             - name: Step 4 - Configure Windows Information Protection
               href: infoprotect-deploy-windows-information-protection.md
-            - name: Step 5 - Configure Office 365 Data Loss Prevention
+            - name: Step 5 - Configure Data Loss Prevention
               href: infoprotect-data-loss-prevention.md
             - name: Step 6 - Configure email encryption
               href: infoprotect-email-encryption.md
@@ -88,9 +88,14 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: Deploy with existing infrastructure
           href: deploy-with-existing-infrastructure.md
+        - name: Deployment and update channel example configurations
+          href: deploy-update-channels-examples.md
+          items: 
+             - name: Broad deployment of the latest releases
+               href: deploy-update-channels-examples-rapid-deploy.md
         - name: Deploy for non-enterprises
           href: deploy-foundation-infrastructure-non-enterprises.md
-    - name: Deploy workloads and scenarios
+    - name: Deploy workloads
       href: deploy-workloads.md
       items: 
         - name: Microsoft Teams
@@ -101,12 +106,6 @@
           href: sharepoint-online-onedrive-workload.md
         - name: Migration
           href: migration-microsoft-365-enterprise-workload.md
-        - name: Empower remote workers
-          href: empower-people-to-work-remotely.md
-        - name: Teams for highly regulated data
-          href: secure-teams-highly-regulated-data-scenario.md
-        - name: SharePoint sites for highly regulated data
-          href: teams-sharepoint-online-sites-highly-regulated-data.md
     - name: Test Lab Guides
       href: m365-enterprise-test-lab-guides.md
       items: 
@@ -174,7 +173,7 @@
           href: contoso-identity.md
         - name: Windows 10 Enterprise
           href: contoso-win10.md
-        - name: Office 365 ProPlus
+        - name: Microsoft 365 Apps for enterprise
           href: contoso-o365pp.md
         - name: Mobile device management
           href: contoso-mdm.md
@@ -182,12 +181,8 @@
           href: contoso-info-protect.md
         - name: Security summary
           href: contoso-security-summary.md
-        - name: Team for a top-secret project
-          href: contoso-team-for-top-secret-project.md
-        - name: SharePoint site for highly regulated data
-          href: contoso-sharepoint-online-site-for-highly-confidential-assets.md
-    - name: Changes to Microsoft 365 for enterprise deployment content
-      href: microsoft-365-deploment-guide-changes.md
+    - name: Microsoft 365 service health status
+      href: microsoft-365-service-health.md
 - name: Desktop Deployment Center
   href: desktop-deployment-center-home.md
   items: 

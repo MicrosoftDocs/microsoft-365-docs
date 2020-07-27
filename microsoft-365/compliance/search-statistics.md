@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Search statistics are an effective way to validate your search results, and display under Status on the search details flyout page.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Search statistics

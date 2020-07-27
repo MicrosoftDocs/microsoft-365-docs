@@ -18,7 +18,7 @@ search.appverid: met150
 
 # Overview of the Microsoft 365 security center
 
-Managing the security of your business to protect against an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls and don’t know which controls are the most effective and which will introduce new challenges for your workforce. It can be difficult for security teams to find the right balance of security and productivity.
+Managing the security of your business to protect against an ever-evolving threat landscape brings many challenges. You might have too many security solutions with various places to configure lots of controls and don't know which controls are the most effective and which will introduce new challenges for your workforce. It can be difficult for security teams to find the right balance of security and productivity.
 
 Enter Microsoft 365 security center -- the new home for monitoring and managing security across your Microsoft identities, data, devices, apps, and infrastructure. Here you can easily view the security health of your organization, act to configure devices, users, and apps, and get alerts for suspicious activity. The Microsoft 365 security center is specifically intended for security admins and security operations teams to better manage and protect their organization.
 
@@ -40,10 +40,10 @@ The Microsoft 365 security center includes:
 
 * **Home** – Get at-a-glance view of the overall security health of your organization.
 * **Incidents** - See the broader story of an attack by connecting the dots seen on individual alerts on entities. You'll know exactly where an attack started, what devices are impacted, who are affected, and where the threat has gone.
-* **Alerts** – Have greater visibility into all the alerts across your Microsoft 356 environment, including alerts from Microsoft Cloud App Security, Office 365 ATP, Azure AD, Azure ATP, and Microsoft Defender ATP. Available to E3 and E5 customers.  
+* **Alerts** – Have greater visibility into all the alerts across your Microsoft 365 environment, including alerts from Microsoft Cloud App Security, Office 365 ATP, Azure AD, Azure ATP, and Microsoft Defender ATP. Available to E3 and E5 customers.  
 * **Action center** - Reduce the volume of alerts your security team must address manually, allowing your security operations team to focus on more sophisticated threats and other high-value initiatives.
 * **Reports** – Get the detail and information you need to better protect your users, devices, apps, and more.
-* **Secure score** – Improve your overall security posture with Microsoft Secure Score. This page provides an all up summary of the different security features and capabilities you’ve enabled and includes recommendations for areas to improve.
+* **Secure score** – Improve your overall security posture with Microsoft Secure Score. This page provides an all up summary of the different security features and capabilities you've enabled and includes recommendations for areas to improve.
 * **Advanced hunting** – Proactively search for malware, suspicious files, and activities in your Microsoft 365 organization.
 * **Classification** – Help protect data loss by adding labels to classify documents, email messages, documents, sites, and more. When a label is applied (automatically or by the user), the content or site is protected based on the settings you choose. For example, you can create labels that encrypt files, add content marking, and control user access to specific sites.
 * **Policies** - Set up policies to manage devices, protect against threats, and receive alerts about various activities in your org.
@@ -55,6 +55,10 @@ Explore these topics about monitoring, reviewing, and responding to your securit
 - Connect the dots on alerts through [Incidents](incident-queue.md)
 - Automatically remediate threats using [Automated investigation and remediation](mtp-autoir.md)
 - Review and improve your security posture holistically with [Microsoft Secure Score](microsoft-secure-score.md)
+- View [devices](device-profile.md) on your network
 - [Report](monitoring-and-reporting.md) the status of your identities, data, devices, apps, and infrastructure
 - [Proactively hunt for threats](advanced-hunting-overview.md) for intrusion attempts and breach activity affecting your email, data, devices, and accounts
 - [Understand the latest attack campaigns](latest-attack-campaigns.md) and techniques with threat analytics
+
+## Related topics
+- [Microsoft security portals](portals.md)

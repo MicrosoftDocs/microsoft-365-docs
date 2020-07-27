@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -24,7 +25,7 @@ description: "Admin roles map to business functions and give permissions to do s
 
 On the Roles page, you can give users permissions to do tasks in the admin centers. This helps your organization spread tasks to the appropriate people and helps keep your data secure.
 
-:::image type="content" source="../media/roles-main-page.png" alt-text="A figure that shows admin roles":::
+:::image type="content" source="../../media/roles-main-page.png" alt-text="A figure that shows admin roles":::
 
 > [!TIP]
 > Looking for the detailed role descriptions? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) and [About admin roles](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
@@ -33,7 +34,7 @@ On the Roles page, you can give users permissions to do tasks in the admin cente
 
 You can export the admin list as well as search and filter by role.
 
-:::image type="content" source="../media/admin-role-page-options.png" alt-text="Filter or import admin roles":::
+:::image type="content" source="../../media/admin-role-page-options.png" alt-text="Filter or import admin roles":::
 
 |||
 |:-----|:-----|
@@ -46,11 +47,11 @@ You can export the admin list as well as search and filter by role.
 Read the content below to learn about the different admin roles and what tasks the roles can perform in your organization.
 
 > [!NOTE]
-This isn’t an exhaustive list of all the permissions that these roles have. Select the **Learn more** link for more information about each role.
+This isn't an exhaustive list of all the permissions that these roles have. Select the **Learn more** link for more information about each role.
 
 ### Exchange admin
 
-Assign the Exchange admin role to users who need to view and manage your user’s email mailboxes, Office 365 groups and Exchange Online. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups and Exchange Online. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### Global admin
 
@@ -70,15 +71,15 @@ Assign the service admin role to users who need to create service requests for A
 
 ### SharePoint admin
 
-When you purchase a Microsoft 365 or Office 365 subscription, a team site is automatically created, and the global admin is set as the primary site collection administrator. Assign the SharePoint admin role to users who you want to access to the SharePoint admin center. Users with the SharePoint admin role can create and manage site collections, designate site collection administrators and manage user profiles. Users with the SharePoint admin role can also manage Office 365 groups and open service requests through Microsoft support. [Learn more](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+When you purchase a Microsoft 365 subscription, a team site is automatically created, and the global admin is set as the primary site collection administrator. Assign the SharePoint admin role to users who you want to access to the SharePoint admin center. Users with the SharePoint admin role can create and manage site collections, designate site collection administrators and manage user profiles. Users with the SharePoint admin role can also manage Microsoft 365 groups and open service requests through Microsoft support. [Learn more](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
 ### Teams service admin
 
-Assign the Teams admin role to users who you want to access and manage the Teams & Skype admin center. Users with the Teams admin role can also manage Office 365 groups and open service requests through Microsoft support. [Learn more](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+Assign the Teams admin role to users who you want to access and manage the Teams & Skype admin center. Users with the Teams admin role can also manage Microsoft 365 groups and open service requests through Microsoft support. [Learn more](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
 
 ### User admin
 
-Assign the user admin role to users who you want to access and manage user password resets and manage Office 365 users and groups. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assign the user admin role to users who you want to access and manage user password resets and manage users and groups. They can also open and manage service requests to Microsoft support. [Learn more](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 
@@ -90,6 +91,12 @@ In the admin center:
 
 - Select up to 3 roles and choose **Compare roles** to see the permissions each role has.
 
-:::image type="content" source="../media/compare-roles-list.png" alt-text="A figure that shows a comparison of admin roles":::
+:::image type="content" source="../../media/compare-roles-list.png" alt-text="A figure that shows a comparison of admin roles":::
 
 ::: moniker-end
+
+## Related topics
+
+[About Microsoft 365 admin roles](about-admin-roles.md)
+
+[Assign admin roles](assign-admin-roles.md)

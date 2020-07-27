@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,6 +23,14 @@ description: "Learn how to start collecting data for your tenant by using the Mi
 ---
 
 # Enable Microsoft 365 usage analytics
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
 
 Microsoft 365 usage analytics is also available for Microsoft 365 US Government Community.
   
@@ -65,17 +74,17 @@ To initiate the template app, you have to be either a **global administrator**, 
   
 3. In the **Apps** tab, type Microsoft 365 in the search box and then select **Microsoft 365 usage analytics** \> **Get it now**.
 
-    [![Select Get it now](../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
+    [![Select Get it now](../../media/78102250-9874-4a32-8365-436f13560b52.png)](https://app.powerbi.com/groups/me/getapps/services/cia_microsoft365.microsoft-365-usage-analytics)
     
 4.	Once the app is installed. Click on the tile to open it.
 
 5.	Click **Explore app** to view the app with sample data. Click **Connect** to connect the app to your organization’s data.
 
-6.	After clicking **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, type in the tenant Id you copied in step (1) \> **Next**.
+6.	After clicking **Connect**, on the **Connect to Microsoft 365 usage analytics** screen, type in the tenant Id (without dashes) you copied in step (1), and select **Next**.
     
 7. On the next screen, select **oAuth2** as the **Authentication method** \> **Sign in**. If you choose any other authentication method, the connection to the template app will fail.
     
-    ![Choose oAuth2 as authentication method](../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
+    ![Choose oAuth2 as authentication method](../../media/ac85a360-c278-4c60-8aa3-68f4828f1d96.png)
   
 8. Once the template app is instantiated the Microsoft 365 usage analytics dashboard will be available in Power BI on the web. The initial loading of the dashboard will take between 2 to 30 minutes.
   
@@ -85,7 +94,7 @@ Tenant level aggregates will be available in all reports. **User-level details w
 
 To make the data that is collected for all reports anonymous, you have to be a global administrator. This will hide identifiable information such as user, group and site names in reports and in the template app .
   
-1. In the admin center, go to the **Settings** \> **Settings**, and under **Services** tab, choose **Reports**.
+1. In the admin center, go to the **Settings** \> **Org Settings**, and under **Services** tab, choose **Reports**.
     
 2. Select **Reports**, and then choose to **Display anonymous identifiers**. This setting gets applied both to the usage reports as well as to the template app.
   

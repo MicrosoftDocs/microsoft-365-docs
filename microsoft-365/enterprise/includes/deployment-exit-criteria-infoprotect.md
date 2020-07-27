@@ -14,7 +14,7 @@ If needed, [Step 1](../infoprotect-define-sec-infoprotect-levels.md) can help yo
 <a name="crit-infoprotect-step3"></a>
 ### Required: Increased security for Microsoft 365 is configured
 
-You've configured the following settings for [Office 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
+You've configured the following settings for [Microsoft 365 increased security](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security):
 
 - Threat management policies in the Microsoft 365 security Center
 - Additional Exchange Online tenant-wide settings
@@ -28,7 +28,7 @@ If needed, [Step 3](../infoprotect-configure-increased-security-office-365.md) c
 <a name="crit-infoprotect-step2"></a>
 ### Optional: Classification is configured across your environment
 
-You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization’s data governance and security policies. 
+You've worked with your legal and compliance teams to develop an appropriate classification and labeling scheme for your organization's data governance and security policies. 
 
 Those policies correspond to the configuration and deployment of:
 
@@ -52,11 +52,11 @@ Your enrolled Windows 10 Enterprise devices have an Intune policy deployed and a
 If needed, [Step 4](../infoprotect-deploy-windows-information-protection.md) can help you meet this requirement. 
 
 <a name="crit-infoprotect-step5"></a>
-### Optional: Office 365 Data Loss Prevention (DLP) is deployed
+### Optional: Data Loss Prevention (DLP) is deployed
 
 You have analyzed, tested, and then rolled out the set of DLP policies—with locations and rules with conditions and actions—that your organization requires to protect customer and other types of private data and to adhere to industry and regional regulations and requirements.
 
-Your data compliance and security staff are using the Office 365 Security & Compliance dashboard to monitor DLP incidents.
+Your data compliance and security staff are using the Security & Compliance dashboard to monitor DLP incidents.
 
 If needed, [Step 5](../infoprotect-data-loss-prevention.md) can help you meet this requirement. 
 

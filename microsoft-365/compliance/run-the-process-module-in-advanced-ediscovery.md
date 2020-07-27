@@ -1,5 +1,5 @@
 ---
-title: "Run the Process module in Office 365 Advanced eDiscovery"
+title: "Run the Process module in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
-description: "Learn the guidelines for preparing case files of Office 365 data for analysis with Office 365 Advanced eDiscovery. 
-"
+description: "Learn the guidelines for preparing case files of data for analysis with Advanced eDiscovery."
 ---
 
-# Run the Process module in Office 365 Advanced eDiscovery
+# Run the Process module in Advanced eDiscovery (classic)
 
 Case files are loaded into the Advanced eDiscovery during **Prepare** \> **Process**. 
   
@@ -70,7 +69,7 @@ A user-defined label can be associated with a set of files to exclude them from 
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Running the Process module and loading data](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
   

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -31,13 +32,6 @@ To go to the Message center, go to the [admin center](https://go.microsoft.com/f
 
 Select a message title to open it in the reading pane. Every message contains a summary of the change, a statement of how the change may affect you, information about how you can prepare your organization for the change, and (in most cases) an additional information link where you can learn more. The additional information continues to be available, even after a message expires.
 
-::: moniker range="o365-worldwide"
- 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-::: moniker-end
-
 ## Filter and sort
 
 ::: moniker range="o365-worldwide"
@@ -46,7 +40,7 @@ Use the **Filter** drop-down menu to select a filtered view of messages.
 
 You can select any column heading to sort messages in ascending or descending order. For example, in this diagram the messages are sorted on the **Act by** date.
 
-![Message center view sorted by Act by date](../media/message-center-filter-act-by.png)
+![Message center view sorted by Act by date](../../media/message-center-filter-act-by.png)
 
 ::: moniker-end
 
@@ -56,7 +50,7 @@ Use the **Views** drop-down menu to select a filtered view of messages.
  
 You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
 
-![Message center view sorted by Act by date](../media/message-center-old-admin-center1.png)
+![Message center view sorted by Act by date](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -66,7 +60,7 @@ Use the **Views** drop-down menu to select a filtered view of messages.
  
 You can select any column heading to sort messages in ascending or descending order. For example, in this illustration the messages are sorted on the **Act by** date.
 
-![Message center view sorted by Act by date](../media/message-center-old-admin-center1.png)
+![Message center view sorted by Act by date](../../media/message-center-old-admin-center1.png)
 
 ::: moniker-end
 
@@ -82,13 +76,13 @@ See a message that someone else needs to act on? You can share the contents of t
   
 1. Select the message to open it, and then select **Share**.
   
-2. To share the message, enter up to two email addresses separated by a colon. You can send to individual and to group email addresses. Optionally, you can choose to receive a copy of the message in email (the message will go to your primary email address in Office 365) or add a personal message to provide recipients with more context.
+2. To share the message, enter up to two email addresses separated by a colon. You can send to individual and to group email addresses. Optionally, you can choose to receive a copy of the message in email (the message will go to your primary email address) or add a personal message to provide recipients with more context.
   
 3. Select **Share** to send the email.
     
 ## Get a link
 
-Need to follow up with another admin to make sure they're aware of a change and taking action? You can generate a link to share in email or instant messaging, for example, that will connect the user directly to that message. The person you share the link with has to be an admin in Office 365 for your organization or they won't have access to the linked message.
+Need to follow up with another admin to make sure they're aware of a change and taking action? You can generate a link to share in email or instant messaging, for example, that will connect the user directly to that message. The person you share the link with has to be an admin in Microsoft 365 for your organization or they won't have access to the linked message.
 
 ::: moniker range="o365-worldwide"
 
@@ -158,19 +152,19 @@ Any message in Message center that is unread will appear in bold. Opening a mess
 
 ::: moniker-end
 
-## Dismiss and restore
+## Archive and restore
 
-If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can dismiss the message to remove it from the Message center view. The view that you see in Message center is specific to your user account, so dismissing it from your view doesn't affect other admins.
+If you see a message that doesn't pertain to you, or maybe you've already acted on it, you can archive the message to remove it from the Message center view. The view that you see in the Message center is specific to your user account, so archiving it from your view doesn't affect other admins.
 
 ::: moniker range="o365-worldwide"
 
-- On the main page of the message center, select a message, and then select **Dismiss** above the list of messages.
+- On the main page of the Message center, select a message, and then select **Archive** above the list of messages.
 
-- Open the message, and then select **Dismiss** at the bottom of the message.
+- Open the message, and then select **Archive** at the bottom of the message.
 
-Need to get a dismissed message back? No problem.
+Need to get a archived message back? No problem.
   
-1. Select the **Dismissed messages** tab at the top of the Message center. A list of dismissed messages appears. 
+1. Select the **Archived messages** tab at the top of the Message center. A list of archived messages appears. 
 
 2. Select the message, select **Restore**, and the message is restored to active messages.
 
@@ -178,15 +172,15 @@ Need to get a dismissed message back? No problem.
 
 ::: moniker range="o365-germany"
 
-There are two ways to dismiss a message.
+There are two ways to archive a message.
   
 - Select the X that appears to the right of the Message ID. The message is removed from your list. Or,
 
-- Open the message, and then select **Dismiss** at the top of the message.
+- Open the message, and then select **Archive** at the top of the message.
 
 Need to get a dismissed message back? No problem.
   
-1. Select the **Dismissed messages** filter from the **Views** drop-down menu. A list of dismissed messages appears.
+1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
 
 2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
 
@@ -194,19 +188,19 @@ Need to get a dismissed message back? No problem.
 
 ::: moniker range="o365-21vianet"
 
-There are two ways to dismiss a message.
+There are two ways to archive a message.
   
 - Select the X that appears to the right of the Message ID. The message is removed from your list. Or,
 
-- Open the message, and then select **Dismiss** at the top of the message.
+- Open the message, and then select **Archive** at the top of the message.
 
-Need to get a dismissed message back? No problem.
+Need to get a archived message back? No problem.
   
-1. Select the **Dismissed messages** filter from the **Views** drop-down menu. A list of dismissed messages appears.
+1. Select the **Archived messages** filter from the **Views** drop-down menu. A list of archived messages appears.
 
 2. Select **Restore** to the right of the Message ID, and the message is restored to active messages.
 
 ::: moniker-end
 
-For an overview of Message center, see [Message center in Office 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message Center communications, please reference [Office 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
+For an overview of Message center, see [Message center in Microsoft 365](message-center.md). Or, to learn how to set your language preferences to enable machine translation for Message center posts, see [Language translation for Message center posts](language-translation-for-message-center-posts.md). If you'd like to program an alternative way to get real-time service health information and Message Center communications, please reference [Microsoft 365 Service Communications API Overview](https://go.microsoft.com/fwlink/p/?linkid=848507).
   

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -43,7 +44,7 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 3. Select the user mailbox. Under **Convert to Shared Mailbox**, select **Convert**.
 
-4. If the mailbox is smaller than 50GB, you can remove the [license from the user](../manage/remove-licenses-from-users.md), and stop paying for it. Don't delete the user's old mailbox. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. Please see [Remove a former employee from Office 365](../add-users/remove-former-employee.md).
+4. If the mailbox is smaller than 50GB, you can remove the [license from the user](../manage/remove-licenses-from-users.md), and stop paying for it. Don't delete the user's account. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. Please see [Remove a former employee from Microsoft 365](../add-users/remove-former-employee.md).
     
 5. For everything else you need to know about shared mailboxes, see [About shared mailboxes](about-shared-mailboxes.md) and [Create a shared mailbox](create-a-shared-mailbox.md).
 
@@ -85,9 +86,12 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 ::: moniker-end
 
 
-If the mailbox is smaller than 50GB, you can [remove the license from the user](../manage/remove-licenses-from-users.md), and stop paying for it. Don't delete the user's old mailbox. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. See [Remove a former employee from Office 365](../add-users/remove-former-employee.md).
+If the mailbox is smaller than 50GB, you can [remove the license from the user](../manage/remove-licenses-from-users.md), and stop paying for it. Don't delete the user's old mailbox. The shared mailbox needs it there as an anchor. If you are converting the mailbox of an employee that is leaving your organization, you should take additional steps to make sure that they cannot log in anymore. See [Remove a former employee from Microsoft 365](../add-users/remove-former-employee.md).
     
 For everything else you need to know about shared mailboxes, see [About shared mailboxes](about-shared-mailboxes.md) and [Create a shared mailbox](create-a-shared-mailbox.md).
+
+> [!NOTE]
+> Shared mailboxes don’t require a separate license. However, if you want to enable In-Place Archive or put an In-Place Hold or a Litigation Hold on a shared mailbox, you must assign an Exchange Online Plan 1 with Exchange Online Archiving or Exchange Online Plan 2 license to the mailbox.
 
 
 ## Convert the mailbox of a deleted user
@@ -96,7 +100,7 @@ Let's say you've deleted a user account and now you want to convert their old ma
 
 1. [Restore the user's account](../add-users/restore-user.md).
 
-2. Make sure an Office 365 license is assigned to it.
+2. Make sure a Microsoft 365 license is assigned to it.
 
 3. Reset the user's password.
     
@@ -107,6 +111,7 @@ Let's say you've deleted a user account and now you want to convert their old ma
 6. After that's done, you can remove the license from the user's mailbox. Don't delete the user's old mailbox. The shared mailbox needs it there as an anchor.
     
 7. Add members to the shared mailbox.
+
 
 ## Convert a shared mailbox back to a user's (private) mailbox
 

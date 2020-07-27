@@ -1,5 +1,5 @@
 ---
-title: "Deprecating Office 365 Message Encryption Viewer App"
+title: "Deprecating Message Encryption Viewer App"
 f1.keywords:
 - NOCSH
 ms.author: krowley
@@ -15,10 +15,12 @@ search.appverid:
 ms.assetid: 6336cabb-b06e-402f-9e85-8bb9eb4ce68f
 ms.collection:
 - M365-security-compliance
-description: "On August 15, 2018, we will be removing the Office 365 Message Encryption (OME) Viewer mobile app from Android and Apple stores. The Office 365 Message Encryption Viewer mobile app was required to read email messages and attachments that were encrypted with the previous version of OME on Apple and Android phones. Apart from removing the OME Viewer app, we are not making any other changes to the previous version of OME."
+ms.custom:
+- seo-marvel-apr2020
+description: The Office 365 Message Encryption (OME) Viewer app was removed from Android and Apple stores in 2018.
 ---
 
-# Deprecating Office 365 Message Encryption Viewer App
+# Deprecating Message Encryption Viewer App
 
 On August 15, 2018, we removed the Office 365 Message Encryption (OME) Viewer mobile app from Android and Apple stores. The Office 365 Message Encryption Viewer mobile app was required to read email messages and attachments that were encrypted with the previous version of OME on Apple and Android phones. Apart from removing the OME Viewer app, we are not making any other changes to the previous version of OME.
   
@@ -34,13 +36,13 @@ With this change, users will no longer be able to download the Office 365 Messag
   
 ## Why this change was made
 
-The new version of OME no longer requires a mobile app to read protected email messages and attachments. Office 365 customers using the new OME capabilities can view the protected message in Outlook mobile and non-Office 365 customers can view protected messages in a browser.
+The new version of OME no longer requires a mobile app to read protected email messages and attachments. Customers using the new OME capabilities can view the protected message in Outlook mobile and non-customers can view protected messages in a browser.
   
 Requiring users to download a mobile app is another hurdle for customers to view protected messages. The new Office 365 Message Encryption capabilities provide a better mobile experience.
   
 ## Can I still use the previous version of Office 365 Message Encryption
 
-The previous version of Office 365 Message Encryption will not be deprecated at this time, however, we have made significant enhancements to the new version of Office 365 Message Encryption, which make it easier to encrypt and rights protect sensitive data to anyone and on any device - including the ability for Office 365 users to read protected messages directly in Outlook (desktop, mobile, and web). 
+The previous version of Office 365 Message Encryption will not be deprecated at this time, however, we have made significant enhancements to the new version of Office 365 Message Encryption, which make it easier to encrypt and rights protect sensitive data to anyone and on any device - including the ability for users to read protected messages directly in Outlook (desktop, mobile, and web). 
   
 ## What do I need to do to prepare for this change
 

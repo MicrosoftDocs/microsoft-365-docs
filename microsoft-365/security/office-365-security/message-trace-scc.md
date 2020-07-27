@@ -10,23 +10,25 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can use message trace in the Security & Compliance Center to find out what happened to messages."
 ---
 
 # Message trace in the Security & Compliance Center
 
-## Overview
+## Message trace features
 
-Message trace in the Office 365 Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
+Message trace in the Security & Compliance Center follows email messages as they travel through your Exchange Online organization. You can determine if a message was received, rejected, deferred, or delivered by the service. It also shows what actions were taken on the message before it reached its final status.
 
 Message trace in the Security & Compliance Center improves upon the original message trace that was available in the Exchange admin center (EAC). You can use the information from message trace to efficiently answer user questions about what happened to messages, troubleshoot mail flow issues, and validate policy changes.
 
 > [!NOTE]
-> • To perform a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/reporting/get-historicalsearch) cmdlet in Exchange Online PowerShell or Exchange Online Protection PowerShell returns all messages in the results.
+> • To do a message trace, you need to be a member of the Organization Management, Compliance Management or Help Desk role groups. For more information, see [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). <br/><br/>• The maximum number of messages that are displayed in the results depends on the report type you selected (see the [Choose report type](#choose-report-type) section for details). The [Get-HistoricalSearch](https://docs.microsoft.com/powershell/module/exchange/get-historicalsearch) cmdlet in Exchange Online PowerShell or standalone EOP PowerShell returns all messages in the results.
 
 ## Open message trace
 
-1. Open the Office 365 Security & Compliance Center at <https://protection.office.com>.
+1. Open the Security & Compliance Center at <https://protection.office.com>.
 
 2. Expand **Mail flow**, and then select **Message trace**.
 
@@ -34,7 +36,7 @@ Message trace in the Security & Compliance Center improves upon the original mes
 
 From here you can start a new default trace by clicking on the **Start a trace** button. This will search for all messages for all senders and recipients for the last two days. Or you can use one of the stored queries from the available query categories and either run them as-is or use them as starting points for your own queries:
 
-- **Default queries**: Built-in queries provided by Office 365.
+- **Default queries**: Built-in queries provided by Microsoft 365.
 
 - **Custom queries**: Queries saved by admins in your organization for future use.
 
@@ -89,11 +91,11 @@ You can leave the default value **All** selected, or you can select one of the f
 
 - **Failed**: The message was not delivered.
 
-- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantine email messages in Office 365](quarantine-email-messages.md).
+- **Quarantined**: The message was quarantined (as spam, bulk mail, or phishing). For more information, see [Quarantined email messages in EOP](quarantine-email-messages.md).
 
 - **Filtered as spam**: The message was identified spam, and was rejected or blocked (not quarantined).
 
-- **Getting status:** The message was recently received by Office 365, but no other status data is yet available. Check back in a few minutes.
+- **Getting status:** The message was recently received by Microsoft 365, but no other status data is yet available. Check back in a few minutes.
 
 **Note**: The values **Pending,** **Quarantined**, and **Filter as spam** are only available for searches less than 10 days. Also, there might be a 5 to 10 minute delay between the actual and reported delivery status.
 
@@ -101,7 +103,7 @@ You can leave the default value **All** selected, or you can select one of the f
 
 This is the internet message ID (also known as the Client ID) that's found in the **Message-ID:** header field in the message header. Users can give you this value to investigate specific messages.
 
-This value is constant for the lifetime of the message. For messages created in Office 365 or Exchange, the value is in the format `<GUID@ServerFQDN>`, including the angle brackets (\< \>). For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Other messaging systems might use different syntax or values. This value is supposed to be unique, but not all email systems strictly follow this requirement. If the **Message-ID:** header field doesn't exist or is blank for incoming messages from external sources, an arbitrary value is assigned.
+This value is constant for the lifetime of the message. For messages created in Microsoft 365 or Exchange, the value is in the format `<GUID@ServerFQDN>`, including the angle brackets (\< \>). For example, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Other messaging systems might use different syntax or values. This value is supposed to be unique, but not all email systems strictly follow this requirement. If the **Message-ID:** header field doesn't exist or is blank for incoming messages from external sources, an arbitrary value is assigned.
 
 When you use **Message ID** to filter the results, be sure to include the full string, including any angle brackets.
 
@@ -328,17 +330,17 @@ A **custom_data** value that starts with `S:SFA` is from the spam filter agent. 
 |**Value**|**Description**|
 |:-----|:-----|
 |`SFV=NSPM`|The message was marked as non-spam and was sent to the intended recipients.|
-|`SFV=SPM`|The message was marked as spam by the content filter.|
+|`SFV=SPM`|The message was marked as spam by anti-spam filtering (also known as content filtering).|
 |`SFV=BLK`|Filtering was skipped and the message was blocked because it originated from a blocked sender.|
-|`SFV=SKS`|The message was marked as spam prior to being processed by the content filter. This includes messages where the message matched a Transport rule to automatically mark it as spam and bypass all additional filtering.|
+|`SFV=SKS`|The message was marked as spam prior to being processed by anti-spam filtering. This includes messages where the message matched a mail flow rule (also known as a transport rule) to automatically mark it as spam and bypass all additional filtering.|
 |`SCL=<number>`|For more information about the different SCL values and what they mean, see [Spam confidence levels](spam-confidence-levels.md).|
 |`PCL=<number>`|The Phishing Confidence Level (PCL) value of the message. These can be interpreted the same way as the SCL values documented in [Spam confidence levels](spam-confidence-levels.md).|
 |`DI=SB`|The sender of the message was blocked.|
 |`DI=SQ`|The message was quarantined.|
 |`DI=SD`|The message was deleted.|
 |`DI=SJ`|The message was sent to the recipient's Junk Email folder.|
-|`DI=SN`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
-|`DI=SO`|The message was routed through the normal outbound delivery pool.|
+|`DI=SN`|The message was routed through the normal outbound delivery pool.|
+|`DI=SO`|The message was routed through the higher risk delivery pool. For more information, see [High-risk delivery pool for outbound messages](high-risk-delivery-pool-for-outbound-messages.md).|
 |`SFS=[a]|SFS=[b]`|This denotes that spam rules were matched.|
 |`IPV=CAL`|The message was allowed through the spam filters because the IP address was specified in an IP Allow list in the connection filter.|
 |`H=<EHLOstring>`|The HELO or EHLO string of the connecting email server.|
@@ -380,7 +382,7 @@ A **custom_data** value that starts with`S:TRA` is from the Transport Rule agent
 |`ETR|ruleId=<guid>`|The rule ID that was matched.|
 |`St=<datetime>`|The date and time in UTC when the rule match occurred.|
 |`Action=<ActionDefinition>`|The action that was applied. For a list of available actions, see [Mail flow rule actions in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|The mode of the rule. Valid values are: <br/>• **Enforce**: All actions on the rule will be enforced. <br/>• **Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>• **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
+|`Mode=<Mode>`|The mode of the rule. Valid values are: <br/>* **Enforce**: All actions on the rule will be enforced. <br/>* **Test with Policy Tips:**: Any Policy Tip actions will be sent, but other enforcement actions will not be acted on. <br/>* **Test without Policy Tips**: Actions will be listed in a log file, but senders will not be notified in any way, and enforcement actions will not be acted on.|
 
 An example **custom_data** value for a messages that matches the conditions of a mail flow rule looks like this:
 

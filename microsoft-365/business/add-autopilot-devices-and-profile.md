@@ -17,12 +17,14 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: "Learn how to use Windows AutoPilot to set up new Windows 10 devices for your business."
+description: "Learn how to use Windows AutoPilot to set up new Windows 10 devices for your business so they're ready for employee use."
 ---
 
 # Use the step-by-step guide to add Autopilot devices and profile
@@ -63,7 +65,7 @@ If you haven't created device groups or profiles yet, the best way to get starte
     
     You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) to generate a CSV file. 
     
-    For more information, see [Device list CSV-file](https://support.office.com/article/932e3676-2491-49f0-9177-d893d2f5276e). You can also download a sample file on the **Upload .csv file with list of devices** page. 
+    For more information, see [Device list CSV-file](https://docs.microsoft.com/microsoft-365/admin/misc/device-list). You can also download a sample file on the **Upload .csv file with list of devices** page. 
     
 4. On the **Assign a profile** page, you can either pick an existing profile or create a new one. If you don't have one yet, you'll be prompted to create one. 
     
@@ -75,7 +77,7 @@ If you haven't created device groups or profiles yet, the best way to get starte
     
     - Create sign-in experience with your company brand.
     
-    - Connect your devices to Azure Active Directory accounts, and automatically enroll them to be managed by Microsoft 365 Business.
+    - Connect your devices to Azure Active Directory accounts, and automatically enroll them to be managed by Microsoft 365 Business Premium.
     
     For more information, see [About AutoPilot Profile settings](autopilot-profile-settings.md). 
     

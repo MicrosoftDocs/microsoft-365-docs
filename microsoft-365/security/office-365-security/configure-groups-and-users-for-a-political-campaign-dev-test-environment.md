@@ -1,5 +1,5 @@
 ---
-title: "Configure groups and users for a political campaign dev/test environment"
+title: Configure groups & users - Political campaign dev/test environment
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: "Summary: Create Office 365 and Enterprise Mobility + Security (EMS) trial subscriptions with users and groups for a political campaign dev/test environment."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure groups and users for a political campaign dev/test environment
@@ -29,11 +30,11 @@ Use the instructions in this article to create a dev/test environment that inclu
 
 In this phase, you obtain trial subscriptions for Office 365 E5 and Enterprise Mobility + Security (EMS) E5 for a fictional organization that represents a political campaign.
 
-First, follow the instructions in **Phase 2** of the [Office 365 dev/test environment](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
+First, follow the instructions in **Phase 2** of [The lightweight base configuration](https://docs.microsoft.com/microsoft-365/enterprise/lightweight-base-configuration-microsoft-365-enterprise).
 
-Next, sign up for the EMS E5 trial subscription and add it to the same organization as your Office 365 trial subscription.
+Next, sign up for the EMS E5 trial subscription and add it to the same organization as your trial subscription.
 
-1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. If needed, sign in to the admin center with the credentials of the global administrator account of your trial subscription. For help, see [Where to sign in](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
 2. Click the **Admin** tile.
 
@@ -186,7 +187,7 @@ Record these values for working with the Office 365 and EMS trial subscriptions 
 
   For example, for the trial subscription domain name of contoso.onmicrosoft.com, the organization name is "contoso".
 
-- The Office 365 global administrator name: ![Underline](../../media/Common-Images/TableLine.png).onmicrosoft.com
+- The global administrator name: ![Underline](../../media/Common-Images/TableLine.png).onmicrosoft.com
 
   Record the password for this account and the common initial password for the other user accounts in a secure location.
 

@@ -38,7 +38,7 @@ Microsoft 365 includes many protections to guard against attacks, but there are 
 
 **Reduce spam mail**
 
-Follow these [10 tips on how to help reduce spam](https://support.office.com/article/10-tips-on-how-to-help-reduce-spam-55F756E8-688B-41C3-A086-8F68CCC592F6).
+Follow these [10 tips on how to help reduce spam](https://support.microsoft.com/en-us/office/10-tips-on-how-to-help-reduce-spam-55f756e8-688b-41c3-a086-8f68ccc592f6).
 
 **Report it!**
 
@@ -70,6 +70,6 @@ Download this infographic with tips for you and the members of your campaign tea
 ## Set it up
 
 Learn more about how to:
-- [Keep your files and communications safe with Office](https://support.office.com/article/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
+- [Keep your files and communications safe with Office](https://support.microsoft.com/en-us/office/keep-your-files-and-communications-safe-with-office-c4ddc381-7395-42da-887c-8836a3bb975f).
 - [Stay secure and private at work](https://support.office.com/article/stay-secure-and-private-at-work-104c7d91-b25a-453d-beee-ba64b6c6fc2d).
   

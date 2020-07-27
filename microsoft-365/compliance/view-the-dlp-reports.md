@@ -15,12 +15,13 @@ localization_priority: Normal
 search.appverid: 
 - MOE150
 - MET150
-description: "With the DLP reports in Office 365, you can quickly view the number of DLP policy matches, overrides, or false positives; see whether they're trending up or down over time; filter the report in different ways; and view additional details by selecting a point on a line on the graph."
+ms.custom: seo-marvel-apr2020
+description: Use the DLP reports in Office 365 to view the number of DLP policy matches, overrides, or false positives and see whether they're trending up or down over time.
 ---
 
 # View the reports for data loss prevention
 
-After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Office 365 Security &amp; Compliance Center, you can quickly view:
+After you create your data loss prevention (DLP) policies, you'll want to verify that they're working as you intended and helping you to stay compliant. With the DLP reports in the Security &amp; Compliance Center, you can quickly view:
   
 - **DLP policy matches** This report shows the count of DLP policy matches over time. You can filter the report by date, location, policy, or action. You can use this report to: 
     
@@ -82,9 +83,9 @@ To view DLP reports in the Security & Compliance Center, you have to be assigned
 
 To use most of the cmdlets for the Security &amp; Compliance Center, you need to:
   
-1. [Connect to the Office 365 Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connect to the Security &amp; Compliance Center using remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Use any of these [Office 365 Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Use any of these [Security &amp; Compliance Center cmdlets](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 However, DLP reports need pull data from across Office 365, including Exchange Online. For this reason, the cmdlets for the DLP reports are available in Exchange Online Powershell—not in Security &amp; Compliance Center Powershell. Therefore, to use the cmdlets for the DLP reports, you need to:
   

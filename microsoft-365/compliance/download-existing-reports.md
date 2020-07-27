@@ -24,22 +24,20 @@ In the [Security &amp; Compliance Center](https://protection.office.com), severa
 ## Download existing reports
 
 > [!IMPORTANT]
-> Make sure that you have the necessary [permissions assigned in the Office 365 Security &amp; Compliance Center](../security/office-365-security/protect-against-threats.md). In general, Office 365 global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
+> Make sure that you have the necessary [permissions assigned in the Security &amp; Compliance Center](../security/office-365-security/protect-against-threats.md). In general, global administrators, security administrators, and security readers can access reports in the Security &amp; Compliance Center. 
   
 1. In the [Security &amp; Compliance Center](https://protection.office.com), go to **Reports** \> **Reports for download**.
-    
+
 2. Select one or more items in the list.
-    
+
 3. Click **Download report**, and then click **Close**.
-    
+
 ## Related topics
 
-[Reports and insights in the Office 365 Security &amp; Compliance Center](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
+[Reports and insights in the Security &amp; Compliance Center](../security/office-365-security/reports-and-insights-in-security-and-compliance.md)
   
 [Create a schedule for a report in the Security &amp; Compliance Center](../security/office-365-security/create-a-schedule-for-a-report.md)
   
 [Manage schedules for reports in the Security &amp; Compliance Center](../security/office-365-security/manage-schedules-for-multiple-reports.md)
   
 [Download a custom report in the Security &amp; Compliance Center](../security/office-365-security/set-up-and-download-a-custom-report.md)
-  
-

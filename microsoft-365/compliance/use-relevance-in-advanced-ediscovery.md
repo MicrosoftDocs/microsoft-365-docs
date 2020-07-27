@@ -1,5 +1,5 @@
 ---
-title: "Use the Relevance module in Office 365 Advanced eDiscovery"
+title: "Use the Relevance module in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
-description: "Learn about the Relevance module in Office 365 Advanced eDiscovery, including a workflow and guidelines and steps for training and file review. 
-"
+description: "Learn about the Relevance module in Advanced eDiscovery, including a workflow and guidelines and steps for training and file review."
 ---
 
-# Use the Relevance module in Office 365 Advanced eDiscovery
+# Use the Relevance module in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -129,7 +128,7 @@ It is possible to accept or override Advanced eDiscovery Next step processing ch
   
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   

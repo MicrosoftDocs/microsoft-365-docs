@@ -1,6 +1,6 @@
 ---
 title: "GDPR for Office Servers"
-description: "Learn about how to address GDPR requirements in Office on-premises servers."
+description: Learn how to address General Data Protection Regulation (GDPR) requirements in Office on-premises servers.
 f1.keywords:
 - NOCSH
 ms.author: mikeplum
@@ -11,6 +11,7 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 titleSuffix: Microsoft GDPR
+ms.custom: seo-marvel-apr2020
 ---
 
 # GDPR for Office on-premises Servers
@@ -29,7 +30,8 @@ The General Data Protection Regulation (GDPR) introduces requirements for organi
 
 -   [On-premises file shares](gdpr-for-on-premises-file-shares.md)
 
-For more information about the GDPR and how Microsoft can help you, see the [Microsoft Trust Center](https://www.microsoft.com/TrustCenter/Privacy/gdpr/default.aspx).
+For more information about the GDPR and how Microsoft can help you, see the [Microsoft Trust Center](https://www.microsoft.com/trust-center/privacy/gdpr-overview
+).
 
 Before doing any work with on-premises data, consult with your legal and compliance teams to seek guidance and to learn about existing classification schemas and approaches to working with personal data. Microsoft provides recommendations for developing and extending classifications schemas in the Microsoft GDPR Data Discovery Toolkit at [https://aka.ms/gdprpartners](<https://aka.ms/gdprpartners>). This toolkit also describes approaches for moving on-premises data to the cloud where you can use more sophisticated data governance capabilities, if this is desired. The articles in this section provide recommendations for data that is intended to remain on premises.
 
@@ -48,4 +50,4 @@ For accessibility, the following table provides the same examples in the illustr
 |Protect||Exchange Server data loss prevention rules; Permissions, IRM-protection for libraries|Exchange Server data loss prevention rules; IRM integration with Exchange Server|||
 |Monitor|Integrate logs with SIEM tools|Integrate logs with SIEM tools|Integrate logs with SIEM tools|Integrate logs with SIEM tools|Integrate logs with SIEM tools|
 
-*Note that protection encrypts the file. Consequently, SharePoint Server can’t find the sensitive information types in protected files.
+*Note that protection encrypts the file. Consequently, SharePoint Server can't find the sensitive information types in protected files.

@@ -13,9 +13,9 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
-ms.custom:
+ms.custom: seo-marvel-apr2020
 
-description: Understand the resources you can use to deploy Microsoft 365 for enterprise in your organization.
+description: Learn about the different resources you can use to deploy Microsoft 365 for enterprise in your organization.
 ---
 
 # Deploy Microsoft 365 for enterprise
@@ -51,27 +51,27 @@ To deploy Microsoft 365 for enterprise yourself, you can:
 
 - Deploy the [foundation infrastructure](deploy-foundation-infrastructure.md) for built-in security and integration for simplified management, which makes it easier to ensure your client software is updated with the latest productivity and security enhancements. 
  
-  The foundation infrastructure is organized as a series of numbered phases that build upon each other and towards an environment that supports Microsoft 365 for enterprise workloads and scenarios. 
+  The foundation infrastructure is organized as a series of numbered phases that build upon each other and towards an environment that supports Microsoft 365 for enterprise workloads. 
 
   **If you are a smaller or newer organization**, follow the phases in order to methodically build out your infrastructure.
 
-  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. For a simplified deployment for non-enterprises, click [here](deploy-foundation-infrastructure-non-enterprises.md).
+  However, you can deploy phases or the portions of phases of this infrastructure in any order as needed, [one after the other or in parallel](deployment-strategies-microsoft-365-enterprise.md), to integrate with your current infrastructure, fit your IT plans and resources, and meet your business needs. For a simplified deployment for non-enterprises, go to [foundation infrastructure for non-enterprises](deploy-foundation-infrastructure-non-enterprises.md).
 
   **If you are an enterprise organization**, view the phases as layers of IT infrastructure, rather than a defined path, and determine how to best work toward eventual adherence to the requirements of each layer across your organization.
 
-- Deploy key productivity [workloads and scenarios](deploy-workloads.md) on top of your infrastructure. These unlock creativity and teamwork in your organization.
+- Deploy key productivity [workloads](deploy-workloads.md) on top of your infrastructure. These unlock creativity and teamwork in your organization.
 
-Here's the relationship between the foundation infrastructure and the workloads and scenarios.
+Here's the relationship between the foundation infrastructure and the workloads.
 
-![The relationship between the foundation infrastructure and the workloads and scenarios](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
+![The relationship between the foundation infrastructure and the workloads](../media/deploy-microsoft-365-enterprise/m365-deploy-content-arch.png)
 
-Workloads and scenarios operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
+Workloads operate over the top of the foundation infrastructure. However, you do not have to have all of the foundation infrastructure phases built out to begin using workloads for productivity and collaboration.
 
-Get self-started on your end-to-end deployment journey [here](deploy-foundation-infrastructure.md).
+Get self-started on your end-to-end deployment journey at [Microsoft 365 for enterprise foundation infrastructure](deploy-foundation-infrastructure.md).
 
 ## Take a test drive
 
-“*For the things we have to learn before we can do them, we learn by doing them.*” - Aristotle
+"*For the things we have to learn before we can do them, we learn by doing them.*" - Aristotle
 
 If you're new to Microsoft 365 for enterprise or to a specific product or feature, one of the best ways to gain understanding is to build it out yourself and see it working.
 
@@ -91,7 +91,7 @@ To get a better picture of how to move your entire organization to the products 
 
 This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
-You can also [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/enterprise/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
+You can also [download the transition poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
 ## How did others do it?
 
@@ -113,18 +113,14 @@ Defining a digital culture is a major priority for every leader who strives to f
 
 At the same time, intelligent security features and product integration helps streamline management needs and minimize the total cost of ownership across the IT lifecycle. 
 
-Learn how Core Services Engineering and Operations (formerly Microsoft IT) [planned and deployed a foundation](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365) to support the applications and services that unlock creativity and foster teamwork in a secure environment.
+Learn how Core Services Engineering and Operations (formerly Microsoft IT) has [built a modern workplace with Microsoft 365](https://www.microsoft.com/en-us/itshowcase/microsoft-365).
 
 > [!Note]
 > This web page is only available in English.
 
 ### How the Contoso Corporation deployed Microsoft 365 for enterprise
 
-The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how [Contoso deployed Microsoft 365 for enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Office 365 ProPlus, mobile device management, information protection, and security. 
-
-## Stay current with deployment content
-
-For the latest changes in content, see [this article](microsoft-365-deploment-guide-changes.md).
+The Contoso Corporation is a fictional but representative global manufacturing conglomerate with its headquarters in Paris, France. See how [Contoso deployed Microsoft 365 for enterprise](contoso-case-study.md) and addressed major design decisions and implementation details for networking, identity, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, mobile device management, information protection, and security. 
 
 ## Next step
 

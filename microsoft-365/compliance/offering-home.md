@@ -123,7 +123,6 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-nbb-fsma-belgium.md">NBB + FSMA (Belgium)</a></p>
                         <p><a href="offering-nen-7510-netherlands.md">NEN-7510 (Netherlands)</a></p>
                         <p><a href="offering-nerc-cip.md">NERC</a></p>
-                        <p><a href="offering-nhs-ig-toolkit-uk.md">NHS IG Toolkit (UK)</a></p>
                         <p><a href="offering-osfi-canada.md">OSFI (Canada)</a></p>
                         <p><a href="offering-pci-dss.md">PCI DSS</a></p>
                         <p><a href="offering-rbi-irdai-india.md">RBI + IRDAI (India)</a></p>
@@ -177,6 +176,7 @@ Microsoft offers a comprehensive set of compliance offerings to help your organi
                         <p><a href="offering-nz-cc-framework-nz.md">NZ CC Framework (New Zealand)</a></p>
                         <p><a href="offering-pasf-uk.md">PASF (UK)</a></p>
                         <p><a href="offering-pdpa-argentina.md">PDPA (Argentina)</a></p>
+                        <p><a href="offering-russia-data-localization.md">Personal Data Localization (Russia)</a></p>
                         <p><a href="https://aka.ms/TRUCS-Compliance">TRUCS (China)</a></p>
                     </div>
                 </div>

@@ -32,11 +32,14 @@ In Microsoft 365 Enterprise, WIP is a combination of Windows 10 Enterprise and M
 To deploy WIP in your organization with Microsoft 365 Enterprise:
 
 1. Enroll your Windows devices in Intune. You should have done this in [Phase 5: Mobile Device Management](mobility-infrastructure.md).
-2. Create an [Intune policy for WIP](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure).
-  -	Ensure that you have filled out your Protected apps list.
-  - Choose your WIP protection level.
 
-You can also use WIP with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/overview-create-wip-policy-sccm). 
+2. Create an [Intune policy for WIP](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure).
+
+   -	Ensure that you have filled out your Protected apps list.
+  
+   - Choose your WIP protection level.
+
+You can also use WIP with [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-configmgr). 
 
 See [WIP best practices]( https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip) for more information.
 
@@ -46,6 +49,6 @@ As an interim checkpoint, see the [exit criteria](infoprotect-exit-criteria.md#c
 
 |||
 |:-------|:-----|
-|![Step 5](../media/stepnumbers/Step5.png)|[Configure Office 365 Data Loss Prevention](infoprotect-data-loss-prevention.md)|
+|![Step 5](../media/stepnumbers/Step5.png)|[Configure Data Loss Prevention](infoprotect-data-loss-prevention.md)|
 
 

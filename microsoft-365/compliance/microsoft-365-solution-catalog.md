@@ -40,7 +40,7 @@ The **Information protection & governance** section shows you at a glance how yo
 From here, you'll see cards for the following solutions:
 
 - [Data loss prevention](data-loss-prevention-policies.md): Detects sensitive content as it's used and shared throughout your organization, in the cloud and on devices, and helps prevent accidental data loss.
-- [Information governance](manage-information-governance.md): Manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don’t.​
+- [Information governance](manage-information-governance.md): Manages your content lifecycle using solutions to import, store, and classify business-critical data so you can keep what you need and delete what you don't.​
 - [Information protection](protect-information.md): Discovers, classifies, and protects sensitive and business-critical content throughout its lifecycle across your organization.
 - [Records management](records-management.md): Uses intelligent classification to automate and simplify the retention schedule for regulatory, legal, and business-critical records in your organization.
 
@@ -65,10 +65,10 @@ From here, you'll see cards for the following solutions:
 
 - [Audit](search-the-audit-log-in-security-and-compliance.md): Records user and admin activity from your organization so you can search the audit log and investigate a comprehensive list of activities across all locations and services.
 - [Data investigations](overview-data-investigations.md): Searches across content locations to identify sensitive, malicious, or misplaced data across Microsoft 365 locations so you can investigate and remediate any incidents, such as data spillage.
-- [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Finds and exports a user’s personal data to help you respond to data subject requests for GDPR.
+- [Data subject requests](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md): Finds and exports a user's personal data to help you respond to data subject requests for GDPR.
 - [eDiscovery](manage-legal-investigations.md)
     - [Core eDiscovery](ediscovery-cases.md): Searches across content locations to identify, preserve, and export data in response to legal discovery requests and eDiscovery cases.
-    - [Advanced eDiscovery](overview-ediscovery-20.md): Builds on eDiscovery capabilities by providing intelligent analytics and  machine learning to help you further analyze data that’s relevant to discovery requests.
+    - [Advanced eDiscovery](overview-ediscovery-20.md): Builds on eDiscovery capabilities by providing intelligent analytics and  machine learning to help you further analyze data that's relevant to discovery requests.
 
 ## How do I get this?
 
@@ -84,7 +84,7 @@ First, make sure that you have the appropriate licenses and permissions. Then, s
 
 We're always working to add new functionality to the Microsoft 365 compliance center and the solution catalog. If you can't find a specific solution in the navigation area, it will be accessible when the solution is available in your subscription.
 
-If you are looking for an existing compliance solution and it’s not available in the Microsoft 365 compliance center yet, you can always access solutions in the existing Office 365 security and compliance center by going to [https://protection.office.com](https://protection.office.com). Alternatively, you can click on the **More resources** tab in the left navigation of the Microsoft 365 compliance center and select the Office 365 security and compliance center card.  
+If you are looking for an existing compliance solution and it's not available in the Microsoft 365 compliance center yet, you can always access solutions in the existing Security &amp; Compliance Center by going to [https://protection.office.com](https://protection.office.com). Alternatively, you can click on the **More resources** tab in the left navigation of the Microsoft 365 compliance center and select the Office 365 security and compliance center card.  
 
 ## Next steps
 

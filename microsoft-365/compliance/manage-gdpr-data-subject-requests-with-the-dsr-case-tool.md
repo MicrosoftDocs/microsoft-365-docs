@@ -1,5 +1,5 @@
 ---
-title: "Manage GDPR data subject requests with the DSR case tool in the Security & Compliance Center"
+title: Manage GDPR data subject requests with DSR case tool in Security & Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,8 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: "The GDPR gives EU citizens (called data subjects) specific rights to their personal data; these rights include obtaining copies of it, requesting changes to it, restricting the processing of it, deleting it, or receiving it in an electronic format. A formal request by a data subject to take an action on their personal data is called a Data Subject Request or DSR. You can use DSR Cases in the compliance center in Office 365 and Microsoft 365 to manage your organization's DSR investigations."
+description: Learn how to manage EU General Data Protection Regulation (GDPR) data subject requests with the DSR case tool.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Manage GDPR data subject requests with the DSR case tool in the Security & Compliance Center
@@ -28,11 +29,11 @@ To manage investigations in response to a DSR submitted by a person in your orga
   
 - Any user mailbox in your organization. This includes Skype for Business conversations and one-to-one chats in Microsoft Teams
     
-- All mailboxes associated with an Office 365 Group and all team mailboxes in Microsoft Teams
+- All mailboxes associated with an Microsoft 365 Group and all team mailboxes in Microsoft Teams
     
 - All SharePoint Online sites and OneDrive for Business accounts in your organization
     
-- All Teams sites and Office 365 Group sites in your organization
+- All Teams sites and Microsoft 365 Group sites in your organization
     
 - All public folders in Exchange Online
     
@@ -71,18 +72,18 @@ Here's the high-level process for using the DSR case tool to manage DSR investig
   
 ## Step 1: Assign eDiscovery permissions to potential case members
 
-By default, an Office 365 global administrator can access the DSR case tool in the Security & Compliance Center. By design, other users such as a data privacy officer, a human resources manager, or other people involved in DSR investigations don't have access to the DSR case tool and will have to be assigned the appropriate permissions to access the tool. The easiest way to do this is to go to the **Permissions** page in the Security & Compliance Center and add users to the eDiscovery Manager role group. You also have to assign these permissions so you can add them as members of the DSR case that you create in Step 2. 
+By default, a global administrator can access the DSR case tool in the Security & Compliance Center. By design, other users such as a data privacy officer, a human resources manager, or other people involved in DSR investigations don't have access to the DSR case tool and will have to be assigned the appropriate permissions to access the tool. The easiest way to do this is to go to the **Permissions** page in the Security & Compliance Center and add users to the eDiscovery Manager role group. You also have to assign these permissions so you can add them as members of the DSR case that you create in Step 2. 
   
 For step-by-step instructions, see [Assign eDiscovery permissions in the Office‍ 365 Security & Compliance Center](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> By default, an Office 365 global administrator (or other members of the Organization Management role group in the Security & Compliance Center don't have the necessary permissions to export Content Search results (see Step 4 in this article). To address this, an admin can add themselves as a member of the eDiscovery Manager role group. 
+> By default, a global administrator (or other members of the Organization Management role group in the Security & Compliance Center don't have the necessary permissions to export Content Search results (see Step 4 in this article). To address this, an admin can add themselves as a member of the eDiscovery Manager role group. 
   
 ## Step 2: Create a DSR case and add members
 
 The next step is to create a DSR case. When you create a case, you can choose to start the built-in search or you can create the case without starting the search. The following procedure instructs you to create the case without starting the search and then show you how to add members to the case.
   
-1. Go to [https://protection.office.com](https://protection.office.com) and sign in to Office 365 using your work or school account. 
+1. Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account. 
     
 2. In the Security & Compliance Center, click **Data privacy** \> **Data subject requests**, and then click ![Add Icon](../media/ITPro-EAC-AddIcon.gif) **New DSR case**.
     
@@ -165,7 +166,7 @@ After you run the built-in search, you can export the search results. Alternativ
 When you export search results, mailbox items can be downloaded in PST files or as individual messages. When you export content from SharePoint and OneDrive accounts, copies of native Office documents and other documents are exported. A results file that contains information about every exported item is included with the search results. For more detailed information about exporting, see [Export Content Search results](export-search-results.md).
   
 > [!NOTE]
-> By default, an Office 365 global administrator (or other members of the Organization Management role group in the Security & Compliance Center) don't have the necessary permissions to export Content Search results. To address this, an admin can add themselves as a member of the eDiscovery Manager role group. 
+> By default, a global administrator (or other members of the Organization Management role group in the Security & Compliance Center) don't have the necessary permissions to export Content Search results. To address this, an admin can add themselves as a member of the eDiscovery Manager role group. 
   
 The computer you use to export data has to meet the following system requirements:
   
@@ -216,7 +217,7 @@ The computer you use to export data has to meet the following system requirement
     
 9. Click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Download results** at the top of the export flyout page. 
     
-10. In the pop-up window at the bottom of the page, click **Open** to open the **Microsoft Office 365 eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
+10. In the pop-up window at the bottom of the page, click **Open** to open the **eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
     
 11. In the **eDiscovery Export Tool**, paste the export key that you copied in step 8 in the appropriate box.
     
@@ -241,7 +242,7 @@ Here are some examples of the conditions that you can add to the built-in search
     
 - **Message type ( `kind`)** – Specifies the type of email item to search for. For example, you can use the syntax  `kind:email OR kind:im` to return only email messages and Skype for Business conversations or one-to-one chats in Microsoft Teams. 
     
-- **Compliance tag (`compliancetag`)** – Specifies a label assigned to an email message or a document. This condition returns items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Overview of labels in Office 365](labels.md).
+- **Compliance tag (`compliancetag`)** – Specifies a label assigned to an email message or a document. This condition returns items that are classified with a specific label. Labels are used to classify email and documents for data governance and enforce retention rules based on the classification defined by the label. This is a useful condition for DSR investigations because your organization may be using labels to classify content related to data privacy or that contains personal data or sensitive information. For the value of this condition, use the complete label name or the first part of the label name with a wildcard. For more information, see [Learn about retention policies and retention labels in Office 365](retention.md).
     
 For a list and description of all the conditions available in the DSR case tool, see [Search conditions](keyword-queries-and-search-conditions.md#search-conditions) in the "Keyword queries and search conditions for Content Search" article. 
   
@@ -280,7 +281,7 @@ The following sections contain more information about using the DSR case tool to
 
 [Exporting partially indexed items](#exporting-partially-indexed-items)
 
-[Searching and exporting data from Microsoft Teams and Office 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-office-365-groups)
+[Searching and exporting data from Microsoft Teams and Microsoft 365 Groups](#searching-and-exporting-data-from-microsoft-teams-and-microsoft-365-groups)
 
 [Searching Exchange public folders](#searching-exchange-public-folders)
   
@@ -347,7 +348,7 @@ When you export data from the Office Roaming Service, the data is saved to a sep
     
 8. Click ![Export search results icon](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Download results** at the top of the export flyout page. 
     
-9. In the pop-up window at the bottom of the page, click **Open** to open the **Microsoft Office 365 eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
+9. In the pop-up window at the bottom of the page, click **Open** to open the **eDiscovery Export Tool**. The **eDiscovery Export Tool** will be installed the first time you download search results. 
     
 10. In the **eDiscovery Export Tool**, paste the export key that you copied in step 7 in the appropriate box.
     
@@ -390,15 +391,15 @@ For more information about partially indexed items, see:
 
 - [Exporting partially indexed items](export-search-results.md#exporting-partially-indexed-items)
     
-### Searching and exporting data from Microsoft Teams and Office 365 Groups
+### Searching and exporting data from Microsoft Teams and Microsoft 365 Groups
 
 Conversations that are part of the Chat list in Microsoft Teams (called Team chats or one-to-one chats) are stored in the Exchange Online mailbox of the users who participate in the chats. Also, the files a person shares in a one-to-one chat are stored in the OneDrive account of the person who shares the file. Because the built-in search searches all mailboxes and OneDrive accounts in the organization, team chats and documents shared in a chat session (that the data subject created or uploaded) are returned by built-in search in a DSR case.
   
 Alternatively, conversations that are part of a Teams channel (also called channel messages) are stored in the mailbox that's associated with a team. These types of conversations that the data subject participated in are also returned by the built-in search because all mailboxes associated with Teams are searched. Additionally, files that a data subject shares in a Teams channel are stored on the team's SharePoint site. Files created or uploaded by the data subject are returned by the built-in search in a DSR case because the sites associated with Teams are included in the search.
   
-Similarly, mailboxes and SharePoint sites that correspond to an Office 365 Group are also included in the built-in search. This means that email messages sent or received by the data subject and files created or uploaded by the data subject are returned. 
+Similarly, mailboxes and SharePoint sites that correspond to an Microsoft 365 Group are also included in the built-in search. This means that email messages sent or received by the data subject and files created or uploaded by the data subject are returned. 
   
-For more information about using Content Search to search for items in Microsoft Teams and Office 365 Groups or to see how to get a list of members, see the "Searching Microsoft Teams and Office 365 Groups" section in [Content Search in Office 365](content-search.md#searching-microsoft-teams-and-office-365-groups). 
+For more information about using Content Search to search for items in Microsoft Teams and Microsoft 365 Groups or to see how to get a list of members, see the "Searching Microsoft Teams and Microsoft 365 Groups" section in [Content Search in Microsoft 365](content-search.md#searching-microsoft-teams-and-microsoft-365-groups). 
   
 ### Searching Exchange public folders
 

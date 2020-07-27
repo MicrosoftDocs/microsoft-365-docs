@@ -1,5 +1,5 @@
 ---
-title: "How Office 365 ATP Safe Attachments works"
+title: "How ATP Safe Attachments works"
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -10,14 +10,16 @@ ms.date: 05/17/2019
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection:
 - M365-security-compliance
-description: "The Safe Attachments feature provides time-of-click verification of email attachments. Use Safe Attachments to protect your organization from malicious files people send or receive in email."
+ms.custom:
+- seo-marvel-apr2020
+description: "Learn how can you keep your organization safe from malicious files using ATP Safe Attachments for Office 365."
 ---
 
-# How Office 365 ATP Safe Attachments works
-
-## How it works
+# How ATP Safe Attachments works
 
 The ATP Safe Attachments feature checks email attachments for people in your organization. When an ATP Safe Attachments policy is in place and someone covered by that policy views their email in Office 365, their email attachments are checked and appropriate actions are taken, based on your ATP Safe Attachments policies. Depending on how your policies are defined, people can continue working without ever knowing they were sent malicious files.
   
@@ -30,5 +32,5 @@ Here are two examples of ATP Safe Attachments at work.
 ATP Safe Attachments policies can be applied to specific people or groups in your organization, or to your entire domain. In addition, ATP Safe Attachments policies can be configured to use placeholder attachments while actual attachments are being scanned. To learn more, see **[Set up ATP Safe Attachments policies in Office 365](set-up-atp-safe-attachments-policies.md)**.
 
 > [!NOTE]
-> ATP Safe Attachments scanning takes place in the same region where your Office 365 data resides. For more information about data center geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All) 
+> ATP Safe Attachments scanning takes place in the same region where your data resides. For more information about data center geography, see [Where is your data located?](https://products.office.com/where-is-your-data-located?geo=All) 
 

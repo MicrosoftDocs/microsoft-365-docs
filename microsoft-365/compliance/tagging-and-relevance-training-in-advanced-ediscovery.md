@@ -1,5 +1,5 @@
 ---
-title: "Tagging and Relevance training in Office 365 Advanced eDiscovery"
+title: "Tagging and Relevance training in Advanced eDiscovery"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,11 +15,10 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
-description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of Office 365 Advanced eDiscovery. 
-"
+description: "Learn the steps to tag and then work with a training sample of 40 files during the Relevance training stage of Advanced eDiscovery."
 ---
 
-# Tagging and Relevance training in Office 365 Advanced eDiscovery
+# Tagging and Relevance training in Advanced eDiscovery (classic)
 
 > [!NOTE]
 > Advanced eDiscovery requires an Office 365 E3 with the Advanced Compliance add-on or an E5 subscription for your organization. If you don't have that plan and want to try Advanced eDiscovery, you can [sign up for a trial of Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -96,7 +95,7 @@ The sample files list allows you to view a list of the files in a training sampl
     
 ## See also
 
-[Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md)
+[Advanced eDiscovery (classic)](office-365-advanced-ediscovery.md)
   
 [Understanding Assessment in Relevance](assessment-in-relevance-in-advanced-ediscovery.md)
   

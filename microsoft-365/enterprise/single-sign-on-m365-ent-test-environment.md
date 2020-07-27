@@ -30,8 +30,8 @@ This article describes how you can configure your Microsoft 365 test environment
 
 There are two phases to setting this up:
 
-1.	Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
-2.	Configure Azure AD Connect on APP1 for Azure AD Seamless SSO.
+1.    Create the Microsoft 365 simulated enterprise test environment with password hash synchronization.
+2.    Configure Azure AD Connect on APP1 for Azure AD Seamless SSO.
     
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
@@ -48,7 +48,7 @@ This configuration consists of:
   
 - Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 or Office 365 subscription periodically.
+- Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 subscription periodically.
 
 ## Phase 2: Configure Azure AD Connect on APP1 for Azure AD Seamless SSO
 
@@ -105,7 +105,7 @@ This configuration consists of:
 
 - Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
-- Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Microsoft 365 or Office 365 subscription to the TESTLAB AD DS domain. 
+- Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Microsoft 365 subscription to the TESTLAB AD DS domain. 
 - Azure AD Seamless SSO is enabled so that computers on the simulated intranet can sign in to Microsoft 365 cloud resources without specifing a user account password.
 
 See the [Simplify user sign-in](identity-secure-your-passwords.md#identity-sso) step in the Identity phase for information and links to configure Azure AD Seamless SSO in production.

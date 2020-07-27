@@ -71,7 +71,8 @@
         "managed-desktop/**/*.md": "Microsoft Managed Desktop",
         "enterprise/**/*.md": "Microsoft 365 Enterprise",
         "campaigns/**/*.md": "Microsoft 365 for Campaigns",
-        "business/**/*.md": "Microsoft 365 Business"
+        "business/**/*.md": "Microsoft 365 Business",
+        "admin/**/*.md": "Microsoft 365 admin"
       },
       "feedback_product_url": {
         "compliance/**/*.md":"https://office365.uservoice.com/forums/289138-office-365-security-compliance",

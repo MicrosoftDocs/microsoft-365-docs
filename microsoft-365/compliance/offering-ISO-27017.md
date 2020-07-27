@@ -26,7 +26,7 @@ This international standard provides additional cloud-specific implementation gu
 
 - Shared roles and responsibilities within a cloud computing environment
 - Removal and return of cloud service customer assets upon contract termination
-- Protection and separation of a customer’s virtual environment from that of other customers
+- Protection and separation of a customer’s virtual environment from environments of other customers
 - Virtual machine hardening requirements to meet business needs
 - Procedures for administrative operations of a cloud computing environment
 - Enabling customers to monitor relevant activities within a cloud computing environment
@@ -36,31 +36,31 @@ This international standard provides additional cloud-specific implementation gu
 
 ISO/IEC 27017 is unique in providing guidance for both cloud service providers and cloud service customers. It also provides cloud service customers with practical information on what they should expect from cloud service providers. Customers can benefit directly from ISO/IEC 27017 by ensuring they understand the shared responsibilities in the cloud.
 
-Learn about the benefits of ISO/IEC 27017 on the Microsoft Cloud: [Download the ISO/IEC 27017: Code of Practice for Information Security Controls](https://aka.ms/iso27017-backgrounder)
-
 ## Microsoft in-scope cloud services
 
 - [Azure, Azure Government, and Azure Germany](https://aka.ms/AzureCompliance)
-- Cloud App Security
-- [Dynamics 365](https://aka.ms/d365-compliance-list)
-- Genomics
-- Graph
+- Microsoft Cloud App Security
+- [Dynamics 365, Dynamics 365, and Dynamics 365 Germany](https://aka.ms/d365-compliance-list)
+- Microsoft Defender Advanced Threat Protection
+- Microsoft Graph
+- Microsoft Healthcare Bot
 - Intune
 - Microsoft Managed Desktop
-- Microsoft Flow cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
+- Power Automate (formerly Microsoft Flow) cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Office 365, Office 365 U.S. Government, Office 365 U.S. Government Defense, and Office 365 Germany
 - PowerApps cloud service either as a standalone service or as included in an Office 365 or Dynamics 365 branded plan or suite
 - Power BI cloud service either as a standalone service or as included in an Office 365 branded plan or suite
+- Power BI Embedded
+- Microsoft Stream
 - See a [detailed list](https://go.microsoft.com/fwlink/p/?linkid=2077751) of covered services in Office 365
 
 ## Audits, reports, and certificates
 
 Microsoft cloud services are audited once a year for the ISO/IEC 27017:2015 code of practice as part of the certification process for ISO/IEC 27001:2013.
 
-- [Azure ISO 27017 Certificate](https://go.microsoft.com/fwlink/p/?linkid=2078005)
-- [Azure ISO 27017 Assessment report](https://go.microsoft.com/fwlink/p/?linkid=2078010)
-- [Azure ISO 27017 Statement of Applicability](https://aka.ms/AzureISO27017StatementofApplicability)
-- [Office 365 ISO 27001, 27018, and 27017 Audit Assessment Report](https://aka.ms/o365isoreport)
+- [Azure ISO 27017 Certificate](https://aka.ms/azureiso27017cert)
+- [Azure ISO 27017 Assessment report](https://aka.ms/azureiso27017report)
+- [Office 365: ISO 27001, 27018, and 27017 Audit Assessment Report](https://aka.ms/o365isoreport)
 
 ## Frequently asked questions
 
@@ -85,7 +85,3 @@ The [Service Trust Portal](https://aka.ms/stphelp) provides independent, third-p
 - [ISO/IEC 27017:2015 code of practice](https://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43757)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/7/7/9/7799D02B-A97A-48E0-A057-C19DD543BB24/ISO-IEC-27017_backgrounder.pdf).

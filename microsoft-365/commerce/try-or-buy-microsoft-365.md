@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -23,13 +24,21 @@ description: "Learn how to get a free trial or buy a subscription for Microsoft 
 
 # Try or buy a Microsoft 365 subscription
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 Microsoft 365 is a complete solution that combines Office 365 and Windows 10 with advanced security and device management. If you already have a subscription and you want to trial or buy a Microsoft 365 subscription, the best way to do it is through the admin center. The following Microsoft 365 subscriptions are available in the admin center for you to try or buy now:
   
-- Microsoft 365 Business
+- Microsoft 365 Business Premium
 
-- Microsoft 365 Enterprise E3
+- Office 365 Enterprise E3
 
-- Microsoft 365 Enterprise E5
+- Office 365 Enterprise E5
 
 When you add a subscription through the admin center, the new subscription is associated with the same organization (domain namespace) as your existing subscription. This makes it easier to move users in your organization between subscriptions, or to assign them a license for the additional subscription they need.
   
@@ -37,8 +46,6 @@ When you add a subscription through the admin center, the new subscription is as
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. Sign in to the admin center at [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339), and then go to **Billing** \> **Purchase services**.
 
@@ -65,9 +72,6 @@ When you add a subscription through the admin center, the new subscription is as
 
 11. On the **order receipt** page, select **continue**.
 
-#### Not using the new admin center yet?
-
-If you have new admin center turned off, watch the videos in this article to learn how to sign up for a trial Microsoft 365 subscription: [Sign up for a subscription](https://support.office.com/article/sign-up-for-a-microsoft-subscription-9ac1a0f1-789b-4143-b954-5821d5d89298)
 
 ::: moniker-end
 
@@ -134,9 +138,9 @@ After you get the new subscription, you have to assign a license to the users wh
 
 ## Related articles
 
-[Buy another Office 365 for business subscription](buy-another-subscription.md)
+[Buy another Microsoft 365 for business subscription](buy-another-subscription.md)
 
-[Buy or edit an add-on for Office 365 for business](buy-or-edit-an-add-on.md)
+[Buy or edit an add-on for Microsoft 365 for business](buy-or-edit-an-add-on.md)
 
 [Add storage space for your subscription](add-storage-space.md)
 

@@ -16,71 +16,40 @@ search.appverid:
 description: "Release notes and known issues for Microsoft Compliance Score (preview), a feature in the M365 compliance center that helps simplify and automate risk assessments."
 ---
 
-# Microsoft Compliance Score (Preview) release notes
+# Microsoft Compliance Score (preview) release notes
 
-The public preview of Microsoft Compliance Score provides you with early access to upcoming functionality and updates. Check this page frequently to learn what's new.
+**In this article:** This page shows **what's new** in the public preview of [Microsoft Compliance Score](compliance-score.md), which provides you with early access to new functionality.
 
-Compliance Score is a new feature in the [Microsoft 365 compliance center](microsoft-365-compliance-center.md) that calculates a risk-based score, measuring your progress towards completing recommended actions that help reduce compliance risks.
+## Assessment creation and management functionality
 
-## What's new
+The June 2020 release adds functionality for users to create, delete, and manage their assessments directly in Compliance Score. Previously, all assessment management resided in Compliance Manager. When you create or modify an assessment in Compliance Score, the updates will surface in Compliance Manager. Likewise, any assessment work performed in Compliance Manager will surface in Compliance Score. Learn how to [manage assessments in Compliance Score](compliance-score-assessments.md). Note that template creation and modification is still managed in Compliance Manager.
 
-### New templates for assessments
+## New templates for assessments
 
-New pre-configured templates for assessments are released into production for Compliance Score (Preview) as they become available. Check the [full list of templates here](compliance-score.md#templates). Recently-added templates include:
+New ready to use templates for assessments are released in Compliance Score as they become available. Check the [full list of templates here](compliance-score-templates.md). Recently added:
 
-- Brazil General Data Protection Law (LGPD)
-- IRAP / Australian Government ISM (Preview)
-- ISO 27701:2019
-- SOC 1
-- SOC 2
+- Dubai Information Security Resolution (DGISR)
 
-### Compliance Score relationship to Compliance Manager
+## Compliance Score relationship to Compliance Manager
 
-Many of the compliance functions handled in Compliance Manager can now be done in Compliance Score. However some functionality still resides only in Compliance Manager, and some previous functionality in Compliance Manager is altered during the public preview period. 
+Many of the functions handled in Compliance Manager can now be done in Compliance Score. However some functions still live in Compliance Manager. Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
 
-Keep these points in mind as you work with Compliance Score and Compliance Manager during public preview:
-
-- **Managing assessments**: users can view assessments and their status details in Compliance Score. However users can only perform assessment management tasks in Compliance Manager ([view instructions](working-with-compliance-manager.md#assessments)), and tasks are limited to the following:
-    - Upload new assessments, but not modify existing assessments. If you need to modify an existing assessment, you will need to upload a new template.
-    - Export assessments
-    - Archive assessments
-    - View archived assessments
  - **Creating templates for assessments**: 
-   - Users must go to Compliance Manager to create new templates and export existing templates. 
-   - Existing templates cannot be customized. Read instructions for [managing templates in Compliance Manager](working-with-compliance-manager.md#templates).
-   - When creating a template, you must include Dimensions for both **Product** and **Certification** to ensure your template displays in Compliance Score.
- - **Setting permissions**: Compliance Score users who were not previously granted permissions in Compliance Manager must have their permissions set in the Microsoft 365 compliance center ([learn more](compliance-score-setup.md#set-user-permissions-and-assign-roles)). Users whose roles were previously set in Compliance Manager can use that same level of access when working in Compliance Score.
-- **Transfer of data**: organizations with data residing in Compliance Manger will see that data in Compliance Score, and vice-versa.
-- **Signing in to Compliance Manager from Compliance Score**: if a user is signed in to Compliance Score and selects a link to go to Compliance Manager, the user will not have to sign in again. After clicking the link, a new tab opens in your browser featuring a dialogue box. In the top section with the header, “Already a Microsoft cloud services customer? Sign in to your account,” select the **Sign In** button to automatically sign in to Compliance Manager.
+   - Users must go to Compliance Manager to [create new templates and modify existing templates](working-with-compliance-manager.md#templates).
+   - New templates must include Dimensions for both **Product** and **Certification**.
+ - **Setting permissions**: Compliance Score users who didn't already have permissions in Compliance Manager need their permissions set in the Microsoft 365 compliance center ([learn more](compliance-score-setup.md#set-user-permissions-and-assign-roles)).
+- **Transfer of data**: organizations with data in Compliance Manager will see that data in Compliance Score, and the same is true the other way around.
+- **Signing in to Compliance Manager from Compliance Score**: if a user is signed in to Compliance Score and selects a link to go to Compliance Manager, the user won't have to sign in again. After clicking the link, a new tab opens in your browser featuring a dialogue box. In the top section with the header, "Already a Microsoft cloud services customer? Sign in to your account," select the **Sign In** button to automatically sign in to Compliance Manager.
 
 ## Known issues in Compliance Score (Preview)
 
 The following sections cover known issues to be resolved in upcoming releases of Compliance Score.
 
-### Launch Now links in certain improvement actions
-
-In certain improvement actions, selecting the **Launch Now** link that appears underneath the implementation instructions gives an error. To access the proper destination, which is the SharePoint admin center, follow these steps:
-
-1. Go to the [Microsoft 365 Admin Center](https://admin.microsoft.com).
-2. On the left navigation menu, select **Show all**.
-3. Under **Admin centers,** select **SharePoint**.
-
-Below are the affected improvement actions, which all reside in the **Protect information** category:
-  - Apply encryption to SharePoint Library
-  - Classify Data in SharePoint Online
-  - Configure External Sharing Links to Expire
-  - Enable Versioning for Document Libraries
-
 ### Long load times for non-admin users
-Compliance Score users who hold roles other than an admin role may experience long load times when trying to a sign in. Refreshing your browser will resolve this issue. (Learn more about [Compliance Score roles](compliance-score-setup.md#set-user-permissions-and-assign-roles).)
+Compliance Score users who hold roles other than an admin role may experience long load times when trying to a sign in. Refreshing your browser will resolve this issue. Learn more about [Compliance Score roles](compliance-score-setup.md#set-user-permissions-and-assign-roles).
 
 ### Supported browsers
 
 - The latest versions of Microsoft Edge, Chrome, and Safari are supported.
-- There may be instances where updated data does not appear until your browser is refreshed.
-- The preview version of Microsoft Edge is not supported but has no known issues.
+- Updated data sometimes doesn't appear until your browser is refreshed.
 - Internet Explorer is not supported.
- 
-### Language support
-
-- Compliance Score is only available in U.S. English.

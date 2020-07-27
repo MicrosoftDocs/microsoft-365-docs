@@ -16,12 +16,13 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to create, save, and run a search to identify data relevant to your investigation, then add the results to your evidence.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Search for data in an investigation
 
-On the **Search** tab in a data investigation, you can search for misplaced, confidential, or sensitive data in content locations in Office 365 using keywords and conditions. 
+On the **Search** tab in a data investigation, you can search for misplaced, confidential, or sensitive data in content locations using keywords and conditions. 
 
 After you run a search, you can view statistics on the items returned by the search, such as the content locations that had the most items that matched the search query. You can also preview a subset of the results. After you've identified the set of documents to investigate further, you can add the results of the search to an evidence set to further process and analyze.
 
@@ -37,7 +38,7 @@ After you run a search, you can view statistics on the items returned by the sea
 
 4. Choose the content locations (data sources) to search. You can scope the search by selecting the content locations of specific people of interest (if you added any to the investigation). If you have added people of interest to the investigation, you can add them by following the steps in [Manage people of interest](manage-people-of-interest.md#add-people-of-interest).
  
-   Sometimes you may first need to search all content locations in your organization. Alternatively, you may need to search locations that aren't owned by a specific person. In this scenario, you can choose to search your entire organization, or all locations for a specific Office 365 services (such as Exchange, SharePoint, OneDrive of Business, or Teams.
+   Sometimes you may first need to search all content locations in your organization. Alternatively, you may need to search locations that aren't owned by a specific person. In this scenario, you can choose to search your entire organization, or all locations for a specific services (such as Exchange, SharePoint, OneDrive of Business, or Teams.
 
 5. Save and run the search.
 
@@ -76,10 +77,10 @@ One advantage of copying the live data to an evidence set in Azure is that for t
 
 Copying the original data to the evidence set also facilitates your investigation by providing you with advanced analytics tools such as themes detection, near-duplicate detection, and email thread identification.
 
-If necessary, you can also add data from non-Office 365 data sources to an evidence set so that it's stored along with the data you collect from Office 365.
+If necessary, you can also add data from non-Microcsoft 365 data sources to an evidence set so that it's stored along with the data you collect from Microsoft 365.
 
 To add data to an evidence set, select a search on the **Searches** tab, and then clicking **Add results to evidence** on the flyout page. You can add data to an existing evidence set or create a new evidence set on the fly.
 
 ### Tracking the progress of adding search results to evidence
 
-Adding data to an evidence set is a long-running process. The process includes collecting the items the original data source from Office 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then re-indexing the items. You can either track the progress on the **Jobs** tab or on the **Searches** tab in the **Added data to evidence** column. After the processing of evidence processing is completed, you can go to the **Evidence** tab, click the evidence set, and then start your investigation by searching, reviewing, tagging, and exporting the relevant data as necessary.
+Adding data to an evidence set is a long-running process. The process includes collecting the items the original data source from Microsoft 365 (for example, from mailboxes and sites), copying them to the Azure Storage location (this copying process is also called *ingestion*), and then re-indexing the items. You can either track the progress on the **Jobs** tab or on the **Searches** tab in the **Added data to evidence** column. After the processing of evidence processing is completed, you can go to the **Evidence** tab, click the evidence set, and then start your investigation by searching, reviewing, tagging, and exporting the relevant data as necessary.

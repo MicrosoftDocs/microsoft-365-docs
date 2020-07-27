@@ -15,14 +15,15 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: "This topic shows you how to configure IRM to use an AD RMS server."
+description: Learn how to configure Information Rights Management (IRM) in Exchange Online to use an Active Directory Rights Management Service (AD RMS) server.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Configure IRM to use an on-premises AD RMS server
   
 For use with on-premises deployments, Information Rights Management (IRM) in Exchange Online uses Active Directory Rights Management Services (AD RMS), an information protection technology in Windows Server 2008 and later. IRM protection is applied to email by applying an AD RMS rights policy template to an email message. Rights are attached to the message itself so that protection occurs online and offline and inside and outside of your organization's firewall.
   
-This topic shows you how to configure IRM to use an AD RMS server. For information about using the new capabilities for Office 365 Message Encryption with Azure Active Directory and Azure Rights Management, see the [Office 365 Message Encryption FAQ](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+This topic shows you how to configure IRM to use an AD RMS server. For information about using the new capabilities for Office 365 Message Encryption with Azure Active Directory and Azure Rights Management, see the [Office 365 Message Encryption FAQ](https://docs.microsoft.com/microsoft-365/compliance/ome-faq).
   
 To learn more about IRM in Exchange Online, see [Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md).
   

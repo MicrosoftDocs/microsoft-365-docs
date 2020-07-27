@@ -16,6 +16,7 @@ ms.collection:
 ms.custom:
 - TRN_M365B
 - OKR_SMB_Videos
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -32,7 +33,7 @@ description: "Learn to add email signature, legal disclaimer, or disclosure stat
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
-If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+If you found this video helpful, check out the [complete training series for small businesses and those new to Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
 ## Create a signature that applies to all messages
 
@@ -57,9 +58,9 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 
 ::: moniker-end
 
-1. Select the app launcher ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png), and then select **Admin**.
+1. Select the app launcher ![The app launcher icon](../../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png), and then select **Admin**.
    
-    Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app. 
+    Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the apps available to you. From there, you can search for a specific app. 
     
 2. Select **Admin centers**, and then choose **Exchange**.
     
@@ -72,14 +73,14 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
 6. Under **Apply this rule**, select **[Apply to all messages]**.
     
     > [!TIP]
-    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) about applying conditions if you don't want the disclaimer applied to all messages. (This scoping article is for Exchange Server, but it also applies to Office 365.) 
+    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#Scoping) about applying conditions if you don't want the disclaimer applied to all messages. (This scoping article is for Exchange Server, but it also applies to Microsoft 365.) 
   
 7. Under Do the following, leave **Append the disclaimer** selected. 
     
 8.  Select **Enter text** and type your disclaimer. 
     
     > [!TIP]
-    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) about formatting disclaimers. (This formatting article is for Exchange Server, but it also applies to Office 365.) 
+    > [Learn more](https://docs.microsoft.com/Exchange/policy-and-compliance/mail-flow-rules/signatures#FormatDisclaimer) about formatting disclaimers. (This formatting article is for Exchange Server, but it also applies to Microsoft 365.) 
 
 9. Select **Select one** and choose **Wrap** as a fallback option. Then **OK**. This means that if the disclaimer can't be added because of encryption or another mail setting, it will be wrapped in a message envelope.
     
@@ -91,9 +92,9 @@ Go to the admin center at <a href="https://go.microsoft.com/fwlink/p/?linkid=850
     
 13. Choose **Save** when finished. 
     
-## Limitations of Office 365 organization wide signatures
+## Limitations of organization wide signatures
 
-You can't do the following with Office 365 signatures:
+You can't do the following with Microsoft 365 signatures:
   
 - Insert the signature directly under the latest email reply or forward
     
@@ -107,6 +108,6 @@ To gain these and other capabilities, use a third-party tool. Please do an inter
   
 ## More resources
 
-- See [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell. 
+- See [Organization-wide message disclaimers, signatures, footers, or headers in Microsoft 365](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) for information about using PowerShell. 
     
 

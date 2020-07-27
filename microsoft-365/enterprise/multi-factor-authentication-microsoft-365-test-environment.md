@@ -1,5 +1,5 @@
 ---
-title: "Multi-factor authentication for your Microsoft 365 Enterprise test environment"
+title: Microsoft 365 Enterprise test environment multi-factor authentication
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,6 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom: 
 - TLG
 - Ent_TLGs
+- seo-marvel-apr2020
 description: "Configure multi-factor authentication using text messages sent to a smart phone in your Microsoft 365 Enterprise test environment."
 ---
 
@@ -23,7 +24,7 @@ description: "Configure multi-factor authentication using text messages sent to 
 
 For an additional level of security for signing in to Microsoft 365 or any service or application that uses the Azure AD tenant for your subscription, you can enable Azure multi-factor authentication, which requires more than just a username and password to verify an account. 
 
-With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or specify an app password on their smart phones after correctly entering their passwords. They can sign in only after this second authentication factor has been satisfied. 
+With multi-factor authentication, users are required to acknowledge a phone call, type a verification code sent in a text message, or verify the authentication with an app on their smart phones after correctly entering their passwords. They can sign in only after this second authentication factor has been satisfied. 
   
 This article describes how to enable and test text message-based authentication for a specific user account.
   
@@ -38,7 +39,7 @@ There are two phases to setting up multi-factor authentication for an account in
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+> Go to [Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
   
 ## Phase 1: Build out your Microsoft 365 Enterprise test environment
 
@@ -91,7 +92,7 @@ Complete the configuration for the User 2 account to use a text message for vali
     
 6. Enter the verification code from the text message received on your smart phone, and then click **Verify**.
     
-7. On the **Step 3: Keep your existing applications** page, record the displayed app password for the User 2 account in a secure location, and then click **Done**.
+7. On the **Step 3: Keep your existing applications** page, click **Done**.
     
 8. If this is the first time you signed in with the User 2 account, you are prompted to change the password. Type the original password and a new password twice, and then click **Update password and sign in**. Record the new password in a secure location.
     

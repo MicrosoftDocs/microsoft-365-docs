@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -23,7 +24,7 @@ description: "Learn to configure Focused Inbox for all or specific users of your
 
 # Configure Focused Inbox for everyone in your organization
 
-  If you're responsible for configuring how email works for EVERYONE in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).  <br/> If you would like to turn off Focused Inbox for just yourself, please see [Turn off Focused Inbox](https://support.office.com/article/f714d94d-9e63-4217-9ccb-6cb2986aa1b2.aspx).  
+  If you're responsible for configuring how email works for EVERYONE in a business this article is for you! It explains how to customize it or turn it off for your business, and answers [frequently asked questions](#faq-for-focused-inbox).  <br/> If you would like to turn off Focused Inbox for just yourself, please see [Turn off Focused Inbox](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
    
 If you want to be sure that your users receive business-specific email messages, for example, from HR or payroll, you can configure Focused Inbox so these messages reach the Focused view. You can also control whether users in your organization see the Focused Inbox in their mailbox.
   
@@ -47,7 +48,7 @@ Get-OrganizationConfig
 
 4. Look for **FocusedInboxOn** to view its current setting: 
     
-    ![Response from PowerShell on state of Focused Inbox.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Response from PowerShell on state of Focused Inbox.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Run the following cmdlet to turn Focused Inbox off.
     
@@ -69,11 +70,11 @@ Get-OrganizationConfig
 
 Your users will see the Focused view only after they close and restart Outlook. When they restart Outlook, they'll see a Tip in the Outlook user interface giving them to the option to use the new Focused Inbox.
   
-![An image of what Focused Inbox looks like when a user first opens Outlook on the web.](../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
+![An image of what Focused Inbox looks like when a user first opens Outlook on the web.](../../media/f6ef79e7-0f4c-4a23-b6f0-7c15d927b5f0.png)
   
 If you're switching from Clutter to Focused Inbox, they can decide to enable it ("Try it") or dismiss the feature. If the user has multiple (supported) clients, they can enable/disable Focused Inbox individually on each one. The tip looks like this:
   
-![An image of what Focused Inbox looks like when it's rolled out to your users and Outlook is re-opened.](../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
+![An image of what Focused Inbox looks like when it's rolled out to your users and Outlook is re-opened.](../../media/c034f969-d650-4333-88f1-dd10ade0a94c.png)
   
 When a user decides to start using Focused Inbox, Clutter gets disabled automatically. The Clutter folder gets converted into a standard folder, that allows the user to rename or delete it.
   
@@ -93,7 +94,7 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 4. Look for FocusedInboxOn to view its current setting:
     
-    ![Response from PowerShell on state of Focused Inbox.](../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
+    ![Response from PowerShell on state of Focused Inbox.](../../media/419d8caa-89b9-45c5-91d9-8c023297456e.png)
   
 5. Run the following cmdlet to turn Focused Inbox off:
     
@@ -111,13 +112,13 @@ This example turns Focused Inbox **Off** for Tim Matthews in the Contoso organiz
 
 1. Go to the <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange admin center</a>.
     
-2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon](../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
+2. Navigate to **mail flow** \> **Rules**. Select ![EAC Add icon](../../media/795e5bdd-48bb-433f-8e07-3c7a19f8eca2.gif) and then select **Create a new rule...**. 
     
 3. After you're done creating the new rule, select **Save** to start the rule. 
     
     The following image shows an example where all messages From "Payroll Department" are to be delivered to the Focused Inbox.
     
-    ![focusedinbox payroll](../media/focusedinbox-transport-rule.PNG)
+    ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
   
 ## Use PowerShell to create a transport rule to direct email messages to the Focused view for all your users
 

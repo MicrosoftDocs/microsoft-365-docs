@@ -24,7 +24,7 @@ description: "Advanced Audit in Microsoft 365 provides new auditing capabilities
 The [unified auditing functionality](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 provides organizations with visibility into many types of audited activities across many different services in Microsoft 365. Now with the release of Advanced Audit in Microsoft 365, we're adding new auditing capabilities that can help your organization with forensic and compliance investigations.
 
 > [!NOTE]
-> Advanced Audit is available for organizations with an Office 365 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on subscription can be assigned to users for when per-user licensing is required for Advanced Audit features as is the case for long-term retention of audit logs and access to crucial events for investigations.
+> Advanced Audit is available for organizations with an Office 365 E5 or Microsoft 365 Enterprise E5 subscription. Additionally, a Microsoft 365 E5 Compliance add-on license can be assigned to users for when per-user licensing is required for Advanced Audit features as is the case for long-term retention of audit logs and access to crucial events for investigations.
 
 This article provides an overview of these Advanced Audit capabilities.
 
@@ -56,15 +56,15 @@ The new MailItemsAccessed mailbox action replaces MessageBind in mailbox auditin
 
 - MessageBind actions would trigger the creation of multiple audit records when the same email message was accessed, which resulted in auditing "noise". In contrast, MailItemsAccessed events are aggregated into fewer audit records.
 
-For more information about mailbox auditing logging, see [Manage mailbox auditing](enable-mailbox-auditing.md).
+For information about audit records for MailItemsAccessed activities, see [Use Advanced Audit to investigate compromised accounts](mailitemsaccessed-forensics-investigations.md).
 
 ### Search for MailItemsAccessed audit records
 
-To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Office 365 security and compliance center.
+To search for MailItemsAccessed audit records, you can search for the **Accessed mailbox items** activity in the **Exchange mailbox activities** drop-down list in the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Security & Compliance Center.
 
 ![Searching for MailItemsAccessed actions in the audit log search tool](../media/MailItemsAccessedSCC1.png)
 
-You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) commands in Exchange Online PowerShell.
+You can also run the [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) or [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) commands in Exchange Online PowerShell.
 
 ## High-bandwidth access to the Office 365 Management Activity API
 
@@ -80,7 +80,7 @@ For more information, see the "API throttling" section in [Office 365 Management
 
 **Where can I access Advanced Audit?**
 
-After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Office 365 Security & Compliance Center](https://protection.office.com). We're working to roll out Advanced Audit to the [Microsoft 365 compliance center](https://compliance.microsoft.com) in the coming weeks.
+After Advanced Audit is rolled out to your organization, you will be able to create audit log retention policies and search for MailItemsAccessed audit records using the Audit log search tool in the [Security & Compliance Center](https://protection.office.com). We're working to roll out Advanced Audit to the [Microsoft 365 compliance center](https://compliance.microsoft.com) in the coming weeks.
 
 **Does every user need an E5 license to benefit from Advanced Audit?**
 
@@ -88,7 +88,7 @@ To benefit from user-level Advanced Audit capabilities, a user needs to be assig
 
 **Why don't I see Advanced Audit in my organization, even though we have an E5 subscription and users that are assigned E5 licenses?**
 
-It's possible that Advanced Audit features (such as the ability to create audit log retention policies and the logging of MailItemsAccessed audit records) aren't available in your organization, even with the correct licensing in place. If this is happening to you, it's because the Advanced Audit package hasn't been rolled out to your organization yet. This is a temporary licensing backfill issue, which should be resolved for affected organizations in the next few weeks. To mitigate this issue, please perform the following steps for each E5 user:
+It's possible that Advanced Audit features (such as the ability to create audit log retention policies and the logging of MailItemsAccessed audit records) aren't available in your organization, even with the correct licensing in place. If this is happening to you, it's because the Advanced Audit package hasn't been rolled out to your organization yet. This is a temporary licensing backfill issue, which should be resolved for affected organizations soon. To mitigate this issue, please perform the following steps for each E5 user:
 
 1. In the Microsoft 365 admin center, go to **Users > Active users**, and then select a user.
 
@@ -101,6 +101,8 @@ It's possible that Advanced Audit features (such as the ability to create audit 
    b. If the **Microsoft 365 Advanced Auditing** checkbox is selected, clear it, and then click **Save changes.** See step 4.
 
 4. If you cleared the checkbox in step 3, wait 60 minutes, and then repeat step 3a to enable the Microsoft 365 Advanced Auditing app.
+
+For organizations that assign licenses to groups of users by using group-based licensing, you have to turn off the licensing assignment for Microsoft 365 Advanced Auditing for the group. After you save your changes, verify that Microsoft 365 Advanced Auditing is turned off for the group. Then turn the licensing assignment for the group back on. For instructions about group-based licensing, see [Assign licenses to users by group membership in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 **What happens if my organization was in the private preview for one-year retention of audit records?**
 

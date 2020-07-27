@@ -42,7 +42,7 @@ Software providers and partners with sensitive workloads can now rely on Azure I
 
 ## Microsoft Office 365
 
-To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a leading independent law firm that specializes in regulatory issues, Covington & Burling, LLP. In the resulting report, Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 compliance, Covington validated that [Office 365 with Preservation Lock](https://docs.microsoft.com/office365/securitycompliance/retention-policies#locking-a-retention-policy) includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with FINRA requirements for records retention.
+To evaluate Office 365 compliance with FINRA Rule 4511(c), Microsoft retained a leading independent law firm that specializes in regulatory issues, Covington & Burling, LLP. In the resulting report, Archiving in Microsoft Office 365, Data Retention, and Rule 17a-4 compliance, Covington validated that [Office 365 with Preservation Lock](retention.md#use-preservation-lock-to-comply-with-regulatory-requirements) includes archiving features that enable regulated customers, including broker-dealers, to store data in a manner that helps them comply with FINRA requirements for records retention.
 
 Archiving in Office 365 helps preserve a wide range of data, including email, voicemail, shared documents, instant messages, and third-party data. In particular, archiving in Office 365 enables customers to set global or granular messaging retention policies to store data for a defined period and beyond in a non-rewriteable, non-erasable format.
 
@@ -76,7 +76,3 @@ Archiving in Office 365 helps preserve a wide range of data, including email, vo
 - [Microsoft Office 365 Retention Policies](https://docs.microsoft.com/office365/securitycompliance/retention-policies)
 - [Microsoft Financial Services Blog](https://techcommunity.microsoft.com/t5/Financial-Services-Blog/bg-p/FinancialServicesBlog)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/6/B/2/6B20520B-E264-4B58-9EE2-DD6C87D9E254/FINRA-Compliance.pdf).

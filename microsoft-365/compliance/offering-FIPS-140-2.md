@@ -56,7 +56,7 @@ Microsoft validates cryptographic modules on a representative sample of hardware
 
 If you are required to use cryptographic modules validated through FIPS 140-2, you need to verify that the version you use appears on the validation list. The CMVP and Microsoft maintain a list of validated cryptographic modules, organized by product release, along with instructions for identifying which modules are installed on a Windows system. For more information on configuring systems to be compliant, see the [Windows and Windows Server FIPS 140-2 content](https://aka.ms/AA6ehud).
 
-**What does "When operated in FIPS mode" mean on a certificate?**
+**What does 'When operated in FIPS mode' mean on a certificate?**
 
 This caveat informs the reader that required configuration and security rules must be followed to use the cryptographic module in a way that is consistent with its FIPS 140-2 security policy. Each module has its own security policy — a precise specification of the security rules under which it will operate — and employs approved cryptographic algorithms, cryptographic key management, and authentication techniques. The security rules are defined in the security policy for each module. For more information, including links to the security policy for each module validated through the CMVP, see the [Windows and Windows Server FIPS 140-2 content](https://aka.ms/AA6ehud).
 
@@ -82,7 +82,3 @@ These are two separate security standards with different, but complementary, pur
 - [NIST Cryptographic Module Validation Program](https://csrc.nist.gov/groups/STM/cmvp/index.html)
 - [Windows, Windows Server, and FIPS 140-2](https://docs.microsoft.com/windows/security/threat-protection/fips-140-validation)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/B/7/2/B7226B91-1A56-41E4-AC01-43FCFEE50B7F/FIPS_Compliance_Backgrounder.pdf).

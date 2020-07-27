@@ -16,7 +16,10 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use error remediation to correct data issues in Data Investigations (Preview) that might prevent proper processing of content.
+ms.custom: 
+ - seo-marvel-mar2020
+ - seo-marvel-apr2020
 ---
 
 # Error remediation when processing data for an investigation
@@ -52,7 +55,7 @@ Use the following workflow to remediate files with errors in Data Investigations
     >We recommend that you use a local file path instead of a remote network path for optimal performance.
 
     > [!NOTE]
-    > If you haven't installed AzCopy, you can install it from here: https://docs.microsoft.com/azure/storage/common/storage-use-azcopy
+    > If you haven't installed AzCopy, go to [Get started with AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy) to install it.
 
 6. Copy the predefined command by clicking **Copy to clipboard**. Start a windows command prompt, paste the command, and then press **Enter**.  
 

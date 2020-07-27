@@ -6,20 +6,21 @@ ms.author: sirkkuw
 author: Sirkkuw
 manager: scotv
 audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: "Learn how to add a subscription advisor partner as partner of record at the time of Office 365 purchase, change the partner, or delete a partner from a subscription."
+description: "Learn how to add a subscription advisor partner as partner of record at the time of Microsoft 365 purchase, change the partner, or delete a partner from a subscription."
 ---
 
 # Add, change, or delete a subscription advisor partner
@@ -32,13 +33,13 @@ description: "Learn how to add a subscription advisor partner as partner of reco
 
 ::: moniker range="o365-worldwide"
 
-An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Office 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website. 
+An authorized partner of Microsoft who serves as your subscription advisor provides the sales, support, and technical expertise you need to help you set up and maintain your subscription. You can add a subscription advisor partner as a partner of record when you purchase Microsoft 365 or at another time. If you're not currently working with a partner, you can also find one on the [Microsoft Pinpoint](https://pinpoint.microsoft.com) website. 
 
 ::: moniker-end
 
 ::: moniker range="o365-worldwide"
 
-The partner you choose depends on the Office 365 services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
+The partner you choose depends on the Microsoft services you use and the country or region where you'll use those services. If you are adding a partner, or changing the partner for your subscription, first you need to get the partner's Microsoft Partner ID by asking the partner for it.
 
 ::: moniker-end
 
@@ -63,9 +64,6 @@ As an admin for Office 365, you can create or edit users, reset user passwords, 
 ::: moniker range="o365-worldwide"
 
 ## Add a partner at the time of purchase
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
     
@@ -106,10 +104,7 @@ Follow the steps on the providers page to either search for, or to get matched w
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
     
 2. If you have more than one subscription, select the subscription you want to edit.
   
@@ -153,10 +148,7 @@ To accept this offer
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
     
 2. If you have multiple subscriptions, select the name of the subscription you want to edit.
     
@@ -201,10 +193,7 @@ To accept this offer
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
-1.  In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1.  In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
     
 2. If you have multiple subscriptions, select the name of the subscription you want to edit.
     
@@ -261,10 +250,10 @@ If you are removing a reseller relationship the **Delete** option is grayed out,
 
 You can't remove a reseller relationship yourself.
   
-If you are removing a reseller relationship the **Delete** option is grayed out, and you will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
+You will have to ask your reseller partner to follow these instructions: [Remove a reseller relationship with partner](https://docs.microsoft.com/partner-center/remove-a-relationship).
   
 ::: moniker-end
 
 ## Related articles
 
-[Find your Office 365 partner or reseller](../manage/find-your-partner-or-reseller.md)
+[Find your Microsoft 365 partner or reseller](../manage/find-your-partner-or-reseller.md)

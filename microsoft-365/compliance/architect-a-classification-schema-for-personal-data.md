@@ -16,25 +16,26 @@ ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-description: "Determine whether your organization will implement labels as part of your GDPR plan."
+description: Determine whether your organization will implement labels as part of your General Data Protection Regulation (GDPR) plan.
+ms.custom: seo-marvel-apr2020
 ---
 # Architect a classification schema for personal data
 
 Previous articles in this series focus on using sensitive information types to identify personal data that is subject to GDPR. Sensitive information types are a form of classification. This might be all the classification you need. However, many organizations implement a broader data governance strategy using labels. Use this topic to decide if you also want to implement labels as part of your GDPR plan. If you do, this topic provides some guidance and examples.
 
-Note: Defining a classification schema for an organization and configuring policies, labels, and conditions requires careful planning and preparation. It's important to realize that this isn't an IT driven process. Be sure to work with your legal and compliance team to develop an appropriate classification and labeling schema for your organization’s data.
+Note: Defining a classification schema for an organization and configuring policies, labels, and conditions requires careful planning and preparation. It's important to realize that this isn't an IT driven process. Be sure to work with your legal and compliance team to develop an appropriate classification and labeling schema for your organization's data.
 
 ## Decide if you're using labels in addition to sensitive data types
 
-You can take one of two approaches for classification in Office 365 for personal information. Either of these can be used for GDPR protection. If you decide to use only sensitive information types for classification, you can skip the rest of this topic.
+You can take one of two approaches for classification in Microsoft 365 for personal information. Either of these can be used for GDPR protection. If you decide to use only sensitive information types for classification, you can skip the rest of this topic.
 
 Choose one of the following options.
 
-### Option 1: Use only Office 365 sensitive information types
+### Option 1: Use only Microsoft 365 sensitive information types
 
 - Sensitive information types work well to identify and protect personal data subject to GDPR and other types of regulations.
 
-- These are simpler to use if your organization doesn’t already have or plan to implement a broader data governance plan using labels.
+- These are simpler to use if your organization doesn't already have or plan to implement a broader data governance plan using labels.
 
 - These work with DLP rules (so do retention labels).
 
@@ -42,7 +43,7 @@ Choose one of the following options.
 
 ### Option 2: Use sensitive information types + retention labels
 
-- You’ll need sensitive information types to automatically apply labels to personal data that is subject to GDPR, so these are a prerequisite.
+- You'll need sensitive information types to automatically apply labels to personal data that is subject to GDPR, so these are a prerequisite.
 
 - Using retention labels allows you to include personal data that is subject to GDPR into a broader data governance plan for your organization.
 
@@ -113,7 +114,7 @@ When designing and implementing policies, labels and conditions, consider follow
 
 ## Define a taxonomy and search criteria for each label
 
-After developing a classification schema for your organization, the next step is to develop the taxonomy and search criteria for finding this data. For personal data, you’ve already completed this work by identifying sensitive information types and customizing or creating new sensitive information types for your environment.
+After developing a classification schema for your organization, the next step is to develop the taxonomy and search criteria for finding this data. For personal data, you've already completed this work by identifying sensitive information types and customizing or creating new sensitive information types for your environment.
 
 The following table provides an example schema, taxonomy, and search criteria for an organization. The labels are ordered by sensitivity level from least sensitive to most sensitive to ensure that data that matches multiple label conditions is assigned the appropriate label.
 

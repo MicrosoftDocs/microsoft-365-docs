@@ -10,6 +10,8 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid: 
+- MET150
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Administrators can set up a native connector to import and archive Twitter data to Microsoft 365. After this data is imported to Microsoft 365, you can use compliance features such as legal hold, content search, and retention policies to manage the governance of your organization's Twitter data."
@@ -21,7 +23,7 @@ This article contains the step-by-step process to deploy a connector that uses t
 
 ## Step 1: Create an app in Azure Active Directory
 
-1. Go to <https://portal.azure.com> and sign in using the credentials of an Office 365 global admin account.
+1. Go to <https://portal.azure.com> and sign in using the credentials of a global admin account.
 
    ![Sign in to Azure](../media/TCimage01.png)
 
@@ -93,11 +95,11 @@ This article contains the step-by-step process to deploy a connector that uses t
 
    ![Enter info about the app](../media/TCimage27.png)
 
-4. On the Twitter developer dashboard, select the app that you just created and copy the App ID that's displayed  and save it to a text file or other storage location. Then click **Details**.
+4. On the Twitter developer dashboard, select the app that you just created and then click **Details**.
    
    ![Copy and save the App Id](../media/TCimage28.png)
 
-5. On the **Keys and tokens** tab, under **Consumer API keys** copy the API secret key and save it to a text file or other storage location. Then click **Create** to generate an access token and an access token secret, and copy these to a text file or other storage location.
+5. On the **Keys and tokens** tab, under **Consumer API keys** copy both the API Key and the API secret key and save them to a text file or other storage location. Then click **Create** to generate an access token and access token secret and copy these to a text file or other storage location.
    
    ![Copy and save to API secret key](../media/TCimage29.png)
 
@@ -137,7 +139,7 @@ The Twitter developer app is now ready to use.
 
 4. Enter the following configuration settings 
 
-   - **Twitter Api Key:** The app ID for the Twitter application that you created in Step 3.
+   - **Twitter Api Key:** The API key for the Twitter application that you created in Step 3.
    
    - **Twitter Api Secret Key:** The API secret key for the Twitter application that you created in Step 3.
    
@@ -179,7 +181,7 @@ The Twitter developer app is now ready to use.
 
 8. Click **Login with Twitter**.
 
-9. On the Twitter sign in page, sign in using the credentials for your organization’s Twitter account.
+9. On the Twitter sign in page, sign in using the credentials for your organization's Twitter account.
 
    ![Sign in to Twitter account](../media/TCimage42.png)
 

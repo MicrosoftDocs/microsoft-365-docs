@@ -69,7 +69,3 @@ Financial organizations, or SCI entities, that are subject to this regulation ca
 - [Microsoft Financial Services](https://aka.ms/FinServ-Compliance)
 - [Microsoft and SEC Rule 17a-4](offering-SEC-17a-4.md)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/8/1/a/81aa04eb-3c1f-4c1a-ba7d-9d30032acc52/SEC_Reg_SCI-Compliance.pdf).

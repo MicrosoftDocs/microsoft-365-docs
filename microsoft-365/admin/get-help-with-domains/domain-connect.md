@@ -6,14 +6,16 @@ ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -47,6 +49,6 @@ In the wizard, we'll just confirm that you own the domain, and then automaticall
 
 ## What happens to my email and website?
 
-After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Office 365 for everyone who gets email on your domain!
+After you finish setup, the MX record for your domain is updated to point to Microsoft 365 and all email for your domain will start coming to Microsoft 365. Make sure you've added users and set up mailboxes in Microsoft 365 for everyone who gets email on your domain!
   
 If you have a website that you use with your business, it will keep working where it is. The Domain Connect setup steps don't affect your website.

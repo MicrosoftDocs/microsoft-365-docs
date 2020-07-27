@@ -1,5 +1,5 @@
 ---
-title: "Move domains and settings from one EOP organization to another EOP organization"
+title: Move domains & settings from one EOP organization to another
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,10 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
-description: "Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization."
+ms.custom:
+- seo-marvel-apr2020
+description: "In this article, you'll learn how to move domains and settings from one Microsoft Exchange Online Protection (EOP) organization (tenant) to another."
 ---
 
-# Move domains and settings from one EOP organization to another EOP organization
+# Move domains and settings from one EOP organization to another
 
 Changing business requirements can sometimes require splitting one Microsoft Exchange Online Protection (EOP) organization (tenant) into two separate organizations, merging two organizations into one, or moving your domains and EOP settings from one organization to another organization. Moving from one EOP organization to a second EOP organization can be challenging, but with a few basic remote Windows PowerShell scripts and a small amount of preparation, this can be achieved with a relatively small maintenance window.
 
@@ -37,9 +39,13 @@ In order to re-create the source organization in the target organization, make s
 
 - Groups
 
-- Anti-spam content filters
+- Anti-spam
 
-- Anti-malware content filters
+  - Anti-spam policies (also known as content filter policies)
+  - Outbound spam filter policies
+  - Connection filter policies
+
+- Anti-malware policies
 
 - Connectors
 
@@ -48,11 +54,11 @@ In order to re-create the source organization in the target organization, make s
   > [!NOTE]
   > Cmdlet support for the export and import of the mail flow rule collection is currently only supported for EOP Premium subscription plans.
 
-The easiest way to collect all of your settings is to use PowerShell. To connect to Exchange Online Protection PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-eop/connect-to-exchange-online-protection-powershell).
+The easiest way to collect all of your settings is to use PowerShell. To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Next, you can collect all your settings and export them to an .xml file to be imported into the target tenant. In general, you can pipe the output of the **Get** cmdlet for each setting to the **Export-Clixml** cmdlet to save the settings in .xml files, as shown in the following code sample.
 
-In Exchange Online Protection PowerShell, create a directory called Export in a location that's easy to find and change to that directory. For example:
+In standalone EOP PowerShell, create a directory called Export in a location that's easy to find and change to that directory. For example:
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -118,7 +124,7 @@ Get-HostedContentFilterPolicy | Export-Clixml HostedContentFilterPolicy.xml
 Get-HostedContentFilterRule | Export-Clixml HostedContentFilterRule.xml
 Get-HostedOutboundSpamFilterPolicy | Export-Clixml HostedOutboundSpamFilterPolicy.xml
 #****************************************************************************
-# Anti-malware content filters
+# Anti-malware policies
 #****************************************************************************
 Get-MalwareFilterPolicy | Export-Clixml MalwareFilterPolicy.xml
 Get-MalwareFilterRule | Export-Clixml MalwareFilterRule.xml
@@ -168,9 +174,11 @@ Foreach ($domain in $Domains) {
 
 Now you can review and collect the information from the Microsoft 365 admin center of your target organization so you can quickly verify your domains when the time comes:
 
-1. Sign in to the Microsoft 365 admin center at [https://portal.office.com](https://portal.office.com).
+1. Sign in to the Microsoft 365 admin center at <https://portal.office.com>.
 
 2. Click **Domains**.
+
+   If you don't see domains, click **Customize navigtion**, select **Setup**, and then click **Save**.
 
 3. Click each **Start setup** link, and then proceed through the setup wizard.
 
@@ -178,7 +186,7 @@ Now you can review and collect the information from the Microsoft 365 admin cent
 
 5. Record the MX record or TXT record that you'll use to verify your domain, and finish the setup wizard.
 
-6. Add the verification TXT records to your DNS records. This will let you more quickly verify the domains in the source organization after they're removed from the target organization. For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Add the verification TXT records to your DNS records. This will let you more quickly verify the domains in the source organization after they're removed from the target organization. For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 ## Step 3: Force senders to queue mail
 
@@ -188,8 +196,7 @@ One option to force senders to queue mail is to update your MX records to point 
 
 Another option is to put an invalid MX record in each domain where the DNS records for your domain are kept (also known as your DNS hosting service). This will cause the sender to queue your mail and retry (typical retry attempts are for 48 hours, but this might vary from provider to provider). You can use invalid.outlook.com as an invalid MX target. Lowering the Time to Live (TTL) value to five minutes on the MX record will help the change propagate to DNS providers more quickly.
 
-For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
-
+For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
 
 > [!IMPORTANT]
 > Different providers queue mail for different periods of time. You'll need to set up your new tenant quickly and revert your DNS settings to avoid non-delivery reports (NDRs) from being sent to the sender if the queuing time expires.
@@ -919,4 +926,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## Step 8: Revert your DNS settings to stop mail queuing
 
-If you chose to set your MX records to an invalid address to cause the senders to queue mail during your transition, you'll need to set them back to the correct value as specified in the [admin center](https://admin.microsoft.com). For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Office 365](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+If you chose to set your MX records to an invalid address to cause the senders to queue mail during your transition, you'll need to set them back to the correct value as specified in the [admin center](https://admin.microsoft.com). For more information about configuring DNS, see [Create DNS records at any DNS hosting provider for Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).

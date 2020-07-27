@@ -11,6 +11,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,7 +27,7 @@ The Microsoft 365 **Reports** dashboard shows you the activity overview across t
 The Yammer device usage reports give you information about which devices your users are using Yammer on. You can view the number of daily users by device type, and number of users by device type. You can view both over a selected time period. You can also view details per user.
   
 > [!NOTE]
-> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, or Skype for Business administrator to see reports. 
+> You must be a global administrator, global reader or reports reader in Microsoft 365 or an Exchange, SharePoint, Teams Service, Teams Communications, or Skype for Business administrator to see reports. 
   
 ## How do I get to the Yammer device usage report?
 
@@ -45,9 +46,9 @@ The device usage report contains the following information.
     
 - Each report has a date for when the report was generated. The reports usually reflect a 24 to 48 hour latency from time of activity.
     
-- You can view the **Users** chart to see the number of daily users by device type.<br/>![Users view in the Yammer device usage chart](../media/ecfba1ec-fbea-4491-88da-1fb19b4d5629.png)<br/>![Yammer device usage report showing the Users view](../media/f396865a-ad6e-4f8b-a145-cc3865b352f4.png)
+- You can view the **Users** chart to see the number of daily users by device type.<br/>![Users view in the Yammer device usage chart](../../media/ecfba1ec-fbea-4491-88da-1fb19b4d5629.png)<br/>![Yammer device usage report showing the Users view](../../media/f396865a-ad6e-4f8b-a145-cc3865b352f4.png)
   
-- You can view the **Distribution** chart to see the number of users by device type.<br/>![Distribution view in the Yammer device usage report](../media/7a0b152e-2d2b-4d23-8dc2-046be53b724f.png)<br/>![Yammer device usage report](../media/780c351d-7a1d-451d-8c16-4c454ef58aa8.png)
+- You can view the **Distribution** chart to see the number of users by device type.<br/>![Distribution view in the Yammer device usage report](../../media/7a0b152e-2d2b-4d23-8dc2-046be53b724f.png)<br/>![Yammer device usage report](../../media/780c351d-7a1d-451d-8c16-4c454ef58aa8.png)
   
 - The **Details** table under the graph shows you a breakdown of the Yammer device usage at the per-user level. 
     

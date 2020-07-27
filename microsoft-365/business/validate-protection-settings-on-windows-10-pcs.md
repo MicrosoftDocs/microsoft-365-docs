@@ -16,11 +16,13 @@ ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
 - MSB365
+- seo-marvel-mar
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: "Learn how to validate Microsoft 365 Business app protection settings in Windows 10 devices."
+description: "Validate Microsoft 365 Business Premium app protection settings on Windows 10 devices and verify users cannot copy company data to personal files or non-managed apps."
 ---
 
 # Validate app protection settings on Windows 10 PCs
@@ -31,7 +33,7 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
   
  **Verify connection settings**
   
-1. After you sign in with Microsoft 365 Business credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
+1. After you sign in with Microsoft 365 Business Premium credentials and connect to Azure AD as described in [Set up Windows devices for Microsoft 365 Business Premium users](set-up-windows-devices.md), go to **Windows Settings** \> **Accounts** \> **Access work or school**. Choose **Connected to \<tenant name\> Azure AD**, and then choose **Info**.
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -41,7 +43,7 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
   
  **Verify that you cannot paste company data in a non-managed app**
   
-1. Open Outlook 2016 that was installed by Microsoft 365 Business.
+1. Open Outlook 2016 that was installed by Microsoft 365 Business Premium.
     
 2. Open an email and copy some content from it.
     
@@ -61,7 +63,7 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
     
 2. Under the **Access work or school**, choose **Connect**.
     
-3. Enter your Microsoft 365 Business credential into the **Set up a work or school account dialog** \> **Sign in**.
+3. Enter your Microsoft 365 Business Premium credential into the **Set up a work or school account dialog** \> **Sign in**.
     
 4. On the **Access work or school** page, choose the **Work or school account**, and then choose **Info**.
     
@@ -73,7 +75,7 @@ After you [set up app protection policies](protection-settings-for-windows-10-de
   
  **Verify that you cannot paste company data in a non-managed app**
   
-1. Open Outlook 2016 and add your Microsoft 365 Business account if necessary and sign in with your Microsoft 365 Business credentials.
+1. Open Outlook 2016 and add your Microsoft 365 Business Premium account if necessary and sign in with your Microsoft 365 Business Premium credentials.
     
 2. Open an email and copy some content from it.
     

@@ -15,19 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: "This article describes the new Data Investigations (Preview) tool in Microsoft 365."
+ms.custom:
+- seo-marvel-mar2020
+- seo-marvel-apr2020
+description: In this article, you will find release notes that contain changes and new features for the Data Investigations (Preview) tool in Microsoft 365.
 ---
 
 # Release notes for Data Investigations (Preview) in Microsoft 365
 
 You can use the new Data Investigations (Preview) tool in in Microsoft 365 to triage, investigate, and remediate data related incidents, such as a data spillage incident or an internal investigation. The Public Preview of Data Investigations provides you with early access to the upcoming functionality and updates. To get early access to the newest features, create a new investigation in Data Investigations (Preview) in the Security & Compliance Center. To learn how, see [Manage a data spillage incident in Microsoft 365](manage-data-spillage-incidents.md).
 
-## What’s new 
+## What's new 
 
 - **Investigations** - You can group searches and incidents by creating an investigation. Manage who can access the investigation by adding or removing members.  You can also select and mark your favorite investigations. Track and monitor activity within and across investigations using new dashboards. After you complete your investigation, you can close or delete it.
 
-- **People of interest** – When you add users to investigations as people of interest, you can see their mailbox, OneDrive for Business account, and Microsoft Teams sites. You can use them to scope your investigative content searches. To further investigate a person of interest, you can also view audit records related to their activities in Office 365 and other Microsoft services.
+- **People of interest** – When you add users to investigations as people of interest, you can see their mailbox, OneDrive for Business account, and Microsoft Teams sites. You can use them to scope your investigative content searches. To further investigate a person of interest, you can also view audit records related to their activities in Microsoft 365 and other Microsoft services.
 
 - **Searches** – Create a organization-wide search using various search condition. If you know users or sites that you want to search, you can do so by adding those users as people of interest or specifying site locations in search creation wizard. 
 
@@ -43,4 +45,4 @@ You can use the new Data Investigations (Preview) tool in in Microsoft 365 to tr
 
 - **Jobs** – Track status of long-running processes.
 
-- **Hard-delete mailbox items** - In urgent situations, you may need to permanently delete misplaced items. To do this, you can run the **New-ComplianceSearchAction -Purge -PurgeType HardDelete** command in Security & Compliance Center PowerShell to permanently remove items from mailboxes. For more information, see [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/new-compliancesearchaction).
+- **Hard-delete mailbox items** - In urgent situations, you may need to permanently delete misplaced items. To do this, you can run the **New-ComplianceSearchAction -Purge -PurgeType HardDelete** command in Security & Compliance Center PowerShell to permanently remove items from mailboxes. For more information, see [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/new-compliancesearchaction).

@@ -11,9 +11,11 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
-ms.custom: Ent_Solutions
+ms.custom: 
+ - Ent_Solutions
+ - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: "Summary: Deploy a new isolated SharePoint Online team site with these step-by-step instructions."
+description: Use this step-by-step deployment guide to create and configure an isolated SharePoint Online team site in Microsoft Office 365.
 ---
 
 # Deploy an isolated SharePoint Online team site
@@ -33,19 +35,19 @@ In this phase, you create the three Azure AD-based access groups for the three d
 
 Determine the set of user accounts corresponding to the SharePoint Online admins for the isolated team site.
   
-If you are managing user accounts and groups through Office 365 and want to use Windows PowerShell, make a list of their user principal names (UPNs) (example UPN: belindan@contoso.com).
+If you are managing user accounts and groups through Microsoft 365 and want to use Windows PowerShell, make a list of their user principal names (UPNs) (example UPN: belindan@contoso.com).
   
 ### Step 2: List the members for the site
 
 Determine the set of user accounts corresponding to the members for the isolated team site, those who will be collaborating on resources stored within the site.
   
-If you are managing user accounts and groups through Office 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
+If you are managing user accounts and groups through Microsoft 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
   
 ### Step 3: List the viewers for the site
 
 Determine the set of user accounts corresponding to the viewers of the isolated team site, those who can view the resources stored in the site but not modify them or directly collaborate on their contents.
   
-If you are managing user accounts and groups through Office 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
+If you are managing user accounts and groups through Microsoft 365 and want to use PowerShell, make a list of their UPNs. If there are a lot of site members, you can store the list of UPNs in a text file and add them all with a single PowerShell command.
   
 Viewers for the site might include executive management, legal counsel, or inter-departmental stakeholders.
   
@@ -67,13 +69,13 @@ You need to create the following access groups in Azure AD:
     
 4. On the **New Group** blade:
     
-  - Select **Security** in **Group type**.
-    
-  - Type the group name in **Name**.
-    
-  - Type a description of the group in **Group description**.
-    
-  - Select **Assigned** in **Membership type**.
+    - Select **Security** in **Group type**.
+
+    - Type the group name in **Name**.
+
+    - Type a description of the group in **Group description**.
+
+    - Select **Assigned** in **Membership type**.
     
 5. Click **Create**, and then close the **Group** blade.
     
@@ -96,7 +98,7 @@ In this step, do the following:
     
 3. Add the list of users from step 3 to the site viewers access group
     
-If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Office 365 subscription.
+If you are managing user accounts and groups through Active Directory Domain Services (AD DS), add users to the appropriate access groups using your normal AD DS user and group management procedures and wait for synchronization with your Microsoft 365 subscription.
   
 If you are managing user accounts and groups through Office 365, you can use the Microsoft 365 admin center or PowerShell. If you have duplicate group names for any of the access groups, you should use the Microsoft 365 admin center.
   
@@ -150,59 +152,63 @@ Here is your resulting configuration with the three site access groups populated
   
 ## Phase 2: Create and configure the isolated team site
 
-In this phase, you create the isolated SharePoint Online site and configure the permissions for the default SharePoint Online permission levels to use your new Azure AD-based access groups.
+In this phase, you create the isolated SharePoint Online site and configure the permissions for the default SharePoint Online permission levels to use your new Azure AD-based access groups. By default, new team sites include a Microsoft 365 group and other related resources, but in this case, we'll create a team site without a Microsoft 365 group. This allows maintaining permissions entirely through SharePoint.
   
 First, create the SharePoint Online team site with these steps.
   
-1. Sign in to the admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.office.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Sign in to the Microsoft 365 admin center with an account that will also be used to administer the SharePoint Online team site (a SharePoint Online administrator). For help, see [Where to sign in to Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+
+2. In the Microsoft 365 admin center, under **Admin centers**, click **SharePoint**.
+
+3. In the SharePoint admin center, expand **Sites** and click **Active sites**.
+
+4. Click **Create**, and then choose **Other options**.
+
+5. In the **Choose a template** list, choose **Team site**.
+   
+6. In **Site name**, type a name for the team site. 
     
-2. In the list of tiles, click **SharePoint**.
-    
-3. In the new **SharePoint** tab of your browser, click **+ Create site**.
-    
-4. On the **Create a site** page, click **Team site**.
-    
-5. In **Site name**, type a name for the team site. 
-    
-6. In **Team site description,** type an optional description of the purpose of the site.
-    
-7. In **Privacy settings**, select **Private - only members can access this site**, and then click **Next**.
-    
-8. On the **Who do you want to add?** pane, click **Finish**.
+7. In **Primary administrator**, type the account that you are logged in with.
+ 
+8. Click **Finish**.
     
 Next, from the new SharePoint Online team site, configure permissions.
   
 1. In the tool bar, click the settings icon, and then click **Site permissions**.
+
+2. Under **Site sharing**, click **Change how members can share**.
+
+3. Choose the **Only site owners can share files, folders, and the site**.
+
+4. Set **Allow access requests** to **Off**.
+
+5. Click **Save**.
     
-2. In the **Site permissions** pane, click **Advanced permissions settings**.
+6. In the **Permissions** pane, click **Advanced permissions settings**.
     
-3. On the new **Permissions** tab of your browser, click **Access Request Settings**.
+7. On the **Permissions** tab of your browser, click **\<site name> Members** in the list.
     
-4. In the **Access Requests Settings** dialog box, clear **Allow member to share the site and individual files and folders** and **Allow access requests** (so that all three check boxes are cleared), and then click **OK**.
+8. In **People and Groups**, click **New**.
     
-5. On the **Permissions** tab of your browser, click **\<site name> Members** in the list.
+9. In the **Share** dialog box, type the name of the site members access group, select it, and then click **Share**.
     
-6. In **People and Groups**, click **New**.
+10. Click the back button on your browser.
     
-7. In the **Share** dialog box, type the name of the site members access group, select it, and then click **Share**.
+11. Click **\<site name> Owners** in the list.
     
-8. Click the back button on your browser.
+12. In **People and Groups**, click **New**.
     
-9. Click **\<site name> Owners** in the list.
+13. In the **Share** dialog box, type the name of the site admins access group, select it, and then click **Share**.
     
-10. In **People and Groups**, click **New**.
+14. Click the back button on your browser.
     
-11. In the **Share** dialog box, type the name of the site admins access group, select it, and then click **Share**.
+15. Click **\<site name> Visitors** in the list.
     
-12. Click the back button on your browser.
+16. In **People and Groups**, click **New**.
     
-13. Click **\<site name> Visitors** in the list.
+17. In the **Share** dialog box, type the name of the site viewers access group, select it, and then click **Share**.
     
-14. In **People and Groups**, click **New**.
-    
-15. In the **Share** dialog box, type the name of the site viewers access group, select it, and then click **Share**.
-    
-16. Close the **Permissions** tab of your browser.
+18. Close the **Permissions** tab of your browser.
     
 The results of these permission settings are:
   

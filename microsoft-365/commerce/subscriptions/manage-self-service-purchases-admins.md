@@ -11,6 +11,7 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - commerce 
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Admins can learn how to manage self-service purchases made by users in their organization."
@@ -18,13 +19,21 @@ description: "Admins can learn how to manage self-service purchases made by user
 
 # Manage self-service purchases (Admin)
 
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> The admin center is changing. If your experience doesn't match the details presented here, see 
+[About the new Microsoft 365 admin center](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+
+::: moniker-end
+
 As an admin, you can see self-service purchases made by people in your organization. You can see the product, purchaser name, subscriptions purchased, expiry date, purchase price, and assigned users for each self-service purchase. If required for your organization, you can turn off self-service purchasing on a per product basis via PowerShell. You have the same data management and access policies over products bought through self-service purchase or centrally.
 
 You can also control whether users in your organization can make self-service purchases. For more information, see [Use AllowSelfServicePurchase for the MSCommerce PowerShell module](allowselfservicepurchase-powershell.md).
 
 ## View self-service subscriptions
 
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
+1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
 2. Next to **Refine results**, from the **Account type** drop-down, choose **Self-service**.
 
@@ -71,7 +80,7 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 5. Follow the steps in [View who has licenses for a self-service purchased subscription](#view-who-has-licenses-for-a-self-service-purchase-subscription) to export a list of users to reference in step 6.
 
-6. Assign licenses to everyone who has a license in the other subscription. For full steps, see [Assign licenses to users](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+6. Assign licenses to everyone who has a license in the other subscription. For full steps, see [Assign licenses to users](../../admin/manage/assign-licenses-to-users.md).
 
 7. Contact the person who bought the self-service purchase subscription and ask them to cancel it.
 
@@ -79,4 +88,4 @@ You can assign existing licenses or purchase additional subscriptions through ex
 
 For common questions about self-service purchases, see [Self-service purchases FAQ](self-service-purchase-faq.md).
 
-If you have questions or need help with self-service purchases, [contact support](https://docs.microsoft.com/office365/admin/contact-support-for-business-products).
+If you have questions or need help with self-service purchases, [contact support](../../admin/contact-support-for-business-products.md).

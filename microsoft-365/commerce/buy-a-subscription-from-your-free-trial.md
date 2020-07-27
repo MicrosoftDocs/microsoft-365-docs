@@ -1,5 +1,5 @@
 ---
-title: "Buy a subscription to Office 365 for business from your free trial"
+title: "Buy a subscription to Microsoft 365 for business from your free trial"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,21 +20,25 @@ ms.custom:
 - TopSMBIssues
 - MSStore_Link
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 - BEA160
 ms.assetid: 485fee6d-b22e-440a-9053-a4e7fa509c92
-description: "Purchase an Office 365 for business subscription. You can buy the same type of subscription that you tried, or a different plan."
+description: "Purchase a Microsoft 365 for business subscription. You can buy the same type of subscription that you tried, or a different plan."
 ---
 
-# Buy a subscription to Office 365 for business from your free trial
+# Buy a subscription to Microsoft 365 for business from your free trial
 
-You've tried Office 365, and now you're ready to buy. You have two options when buying Office 365 from your trial version:
+You've tried Microsoft 365, and now you're ready to buy. You have two options when buying Microsoft 365 from your trial version:
   
 - [Buy the same plan as your trial](#buy-the-same-plan-as-your-trial)
 - [Buy a different plan than your trial](#buy-a-different-plan-than-your-trial)
+
+> [!NOTE]
+> At the end of your free trial period, your trial subscription will automatically convert to a paid subscription. The paid subscription will default to the plan you are currently signed up for. You can still buy a different plan by following the steps in the [Buy a different plan than your trial](#buy-a-different-plan-than-your-trial) section below.
 
 ## Buy the same plan as your trial
 
@@ -42,12 +46,9 @@ It's easy, and, when you buy the same type of subscription as your trial version
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Products & services</a> page.
-
-2. On the **Products & services** page, find the subscription that you want to buy. In the **Licenses** section, select **Purchase subscription**.
+2. On the **Your products** page, find the subscription that you want to buy. In the **Licenses** section, select **Purchase subscription**.
 
 3. Choose either a monthly or annual commitment for your subscription, then select **Checkout**.
 
@@ -89,12 +90,10 @@ It's easy, and, when you buy the same type of subscription as your trial version
 
 ## Buy a different plan than your trial
 
-If you purchase a different type of subscription that your trial, you will have to reassign your user licenses from your trial plan to your new plan (before your 90-day grace period ends after your trial plan expires) in order to retain your data, accounts, and configuration.
+If you purchase a different type of subscription than your trial, you will have to reassign your user licenses from your trial plan to your new plan (before your 90-day grace period ends after your trial plan expires) in order to retain your data, accounts, and configuration.
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
 
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 
@@ -160,6 +159,6 @@ If you purchase a different type of subscription that your trial, you will have 
 
 [Extend your trial](extend-your-trial.md)
   
-[Sign up for Office 365](../admin/admin-overview/sign-up-for-office-365.md)
+[Sign up for Microsoft 365](../admin/admin-overview/sign-up-for-office-365.md)
   
-[Switch to a different Office 365 plan or subscription](subscriptions/switch-to-a-different-plan.md)
+[Switch to a different Microsoft 365 plan or subscription](subscriptions/switch-to-a-different-plan.md)

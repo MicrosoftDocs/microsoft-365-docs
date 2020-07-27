@@ -1,5 +1,5 @@
 ---
-title: "Exchange admin center in Exchange Online Protection"
+title: "Exchange admin center in standalone EOP"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,24 +15,34 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: "The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP)."
+description: "Learn about the web management interface in standalone Exchange Online Protection (EOP)."
 ---
 
-# Exchange admin center in Exchange Online Protection
+# Exchange admin center in standalone EOP
 
-The Exchange admin center (EAC) is the web-based management console for Microsoft Exchange Online Protection (EOP).
-
-Looking for the Exchange Server version of this topic? See [Exchange admin center in Exchange Server](https://docs.microsoft.com/exchange/architecture/client-access/exchange-admin-center).
+The Exchange admin center (EAC) is a web-based management console for standalone Exchange Online Protection (EOP).
 
 Looking for the Exchange Online version of this topic? See [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
-## Accessing the EAC
+## Open the EAC in EOP
 
-In most cases, EOP customers will access the EAC through the Microsoft 365 admin center. You can find a link to EOP in the drop-down menu in the **Admin** tile, which is next to the **Me** tile. Click the **Admin** tile and select **Exchange Online Protection** from the drop down menu to be taken to the EAC.
+Standalone EOP customers can access the EAC by using the following methods:
 
-You can also access the EAC sign in page directly via the following URL: `https://admin.protection.outlook.com/ecp/<companydomain>`. For example, `https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com`. After specifying your user credentials you will be taken directly into the EAC.
+- **From the Microsoft 365 admin center**:
 
-## Common user interface elements in the EAC
+  1. Go to <https://admin.microsoft.com> and click **Show all**.
+
+     ![Click Show all in the Microsoft 365 admin center](../../media/m365-center-show-all.png)
+
+  2. In the **Admin centers** section that appears, click **All admin centers**.
+
+     ![Click All admin centers in the Microsoft 365 admin center](../../media/m365-center-select-all-admin-centers.png)
+
+  3. On the **All admin centers** page that appears, click **Exchange Online Protection**.
+
+- Go directly to `https://admin.protection.outlook.com/ecp/`.
+
+## Common user interface elements in the EAC in EOP
 
 This section describes the user interface elements that are found in the EAC.
 
@@ -42,15 +52,20 @@ This section describes the user interface elements that are found in the EAC.
 
 This is the first level of navigation for most of the tasks you'll perform in the EAC. The feature pane is organized by feature areas.
 
-1. **Recipients**: This is where you'll view internal users and external contacts.
+- **Recipients**: This is where you'll view groups and external contacts.
 
-2. **Permissions**: This where you'll manage administrator roles.
+- **Permissions**: This where you'll manage admin roles.
 
-3. **Compliance Management**: This is where you'll find audit logs and reports, such as the administrator role group report.
+- **Compliance Management**: This is where you'll find the administrator role group report and the admin audit log report.
 
-4. **Protection**: This is where you'll manage anti-malware and anti-spam protection for your organization, as well as manage messages in quarantine.
+- **Protection**: This is where you can manage anti-malware policies, the default connection filter policy, and DKIM.
 
-5. **Mail Flow**: This is where you'll manage rules, accepted domains, and connectors, as well as where you'll go to perform message trace.
+  > [!NOTE]
+  > You should manage anti-malware policies and the default connection filter policy in the Security & Compliance Center. For more information, see [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) and [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
+
+- **Mail Flow**: This is where you'll manage mail flow rules (also known as transport rules), accepted domains, and connectors, as well as where you can go to run message trace.
+
+- **Hybrid**: This is where you can run the [Hybrid Configuration Wizard](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard), and where you can install the [Exchange Online PowerShell module](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
 
 ### Tabs
 
@@ -60,8 +75,9 @@ The tabs are your second level of navigation. Each of the feature areas contains
 
 When you click most tabs, you'll see a toolbar. The toolbar has icons that perform a specific action. The following table describes the icons and their actions.
 
+||||
+|---|---|---|
 |**Icon**|**Name**|**Action**|
-|:-----|:-----|:-----|
 |![Add Icon](../../media/ITPro-EAC-AddIcon.gif)|Add, New|Use this icon to create a new object. Some of these icons have an associated down arrow you can click to show additional objects you can create.|
 |![Edit icon](../../media/ITPro-EAC-EditIcon.gif)|Edit|Use this icon to edit an object.|
 |![Delete icon](../../media/ITPro-EAC-DeleteIcon.gif)|Delete|Use this icon to delete an object. Some delete icons have a down arrow you can click to show additional options.|
@@ -70,6 +86,7 @@ When you click most tabs, you'll see a toolbar. The toolbar has icons that perfo
 |![More Options Icon](../../media/ITPro-EAC-MoreOptionsIcon.gif)|More options|Use this icon to view more actions you can perform for that tab's objects. For example, in **Recipients \> Users** clicking this icon shows the option to perform an **Advanced Search**.|
 |![Up Arrow Icon](../../media/ITPro-EAC-UpArrowIcon.gif)![Down Arrow Icon](../../media/ITPro-EAC-DownArrowIcon.gif)|Up arrow and down arrow|Use these icons to move an object's priority up or down.|
 |![Remove icon](../../media/ITPro-EAC-RemoveIcon.gif)|Remove|Use this icon to remove objects from a list.|
+|
 
 ### List View
 
@@ -83,21 +100,23 @@ When you select an object from the list view, information about that object is d
 
 The **Me** tile allows you to sign out the EAC and sign in as a different user. From the **Help**![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) drop-down menu, you can perform the following actions:
 
-1. **Help**: Click ![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) to view the online help content.
+- **Help**: Click ![Help Icon](../../media/ITPro-EAC-HelpIcon.gif) to view the online help content.
 
-2. **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been disabled.
+- **Feedback**: Leave feedback.
 
-3. **Copyright**: Click this link to read the copyright notice for Exchange Online Protection.
+- **Community**: Post a question for find answers in the community forums.
 
-4. **Privacy**: Click to read the privacy policy for Exchange Online Protection.
+- **Disable Help bubble**: The Help bubble displays contextual help for fields when you create or edit an object. You can turn off the Help bubble or turn it on if it has been disabled.
+
+- **Show Command Logging**: A new window opens that shows the equivalent PowerShell commands based on what you configured in EAC.
 
 ## Supported Browsers
 
 For the best experience using the EAC, we recommend that you always use the latest browsers, Office clients, and apps. We also recommend that you install software updates when they become available. For more information about the supported browsers and system requirements for the service, see [System requirements for Office](https://products.office.com/office-system-requirements).
 
-## Supported languages in EOP
+## Supported languages
 
-The following languages are supported and available for Exchange Online Protection.
+The following languages are supported and available for the EAC in standalone EOP.
 
 - Amharic
 
@@ -222,5 +241,3 @@ The following languages are supported and available for Exchange Online Protecti
 - Vietnamese
 
 - Welsh
-
-

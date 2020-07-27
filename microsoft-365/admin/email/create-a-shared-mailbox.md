@@ -6,7 +6,7 @@ ms.author: cmcatee
 author: cmcatee-MSFT
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: 
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -27,7 +28,7 @@ description: "Create a shared mailbox to enable multiple users in your business 
 
 > [!NOTE]
 > If your organization uses a hybrid Exchange environment, you should use the on-premises Exchange admin center (EAC) to create and manage shared mailboxes. See [Create shared mailboxes in the Exchange admin center](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019.)<br><br>
-> If you're not sure if you should create a shared mailbox or an Office 365 Group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. Note that currently, it's not possible to migrate a shared mailbox to an Office 365 Group. If this is something you want, let us know by [voting here](https://go.microsoft.com/fwlink/?linkid=871518).
+> If you're not sure if you should create a shared mailbox or a Microsoft 365 group for Outlook, see [Compare groups](../create-groups/compare-groups.md) for some guidance. Note that currently, it's not possible to migrate a shared mailbox to a Microsoft 365 group. If this is something you want, let us know by [voting here](https://go.microsoft.com/fwlink/?linkid=871518).
 
 It's easy to create shared mailboxes so a group of people can monitor and send email from a common email addresses, like info@contoso.com. When a person in the group replies to a message sent to the shared mailbox, the email appears to be from the shared mailbox, not from the individual user.
 
@@ -37,7 +38,7 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
 
 ## Create a shared mailbox and add members
   
-1. Sign in with an Office 365 global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin. 
+1. Sign in with a global admin account or Exchange admin account. If you get the message "**You don't have permission to access this page or perform this action**," then you aren't an admin. 
 
 ::: moniker range="o365-worldwide"
 
@@ -59,17 +60,17 @@ Before creating a shared mailbox, be sure to read [About shared mailboxes](about
     
 3. On the **Shared mailboxes** page, select **+ Add a mailbox**. Enter a name for the shared mailbox. Then the wizard chooses the email address, but you can edit it.
     
-    ![Name your shared mailbox.](../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
+    ![Name your shared mailbox.](../../media/e3035132-8986-4ec7-b7c0-f2752080d2c0.png)
   
 4. Select **Add**. It may take a few minutes before you can add members.
 
 5. Under **Next steps**, select **Add members to this mailbox**. Members are the people who will be able to view the incoming mail to this shared mailbox, and the outgoing replies.
 
-   ![Select Add Members](../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
+   ![Select Add Members](../../media/a2a72e3d-6170-40fe-a94f-0af8fbef8ab2.png)
 
 6. Select the **+Add members** button. Put a check mark next to the people who you want to use this shared mailbox, and select **Save**.
 
-   ![Assign members to the shared mailbox](../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
+   ![Assign members to the shared mailbox](../../media/e6c58953-f6d7-4f0b-97ba-308516bf2a94.png)
 
 7. Select **Close**.
 
@@ -83,14 +84,11 @@ But what if an admin simply resets the password of the shared mailbox user accou
 
 ::: moniker range="o365-worldwide"
 
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
-
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
 
 2. In the list of user accounts, find the account for the shared mailbox (for example, change the filter to **Unlicensed users**).
 
-3. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon](../media/block-user-icon.png).
+3. Select the user to open their properties pane, and then select the **Block this user** icon ![Screen shot of the Block this user icon](../../media/block-user-icon.png).
 
    **Note**: If the account is already blocked, **Sign in blocked** will appear at the top and the icon will read **Unblock this user**.
 
@@ -135,15 +133,15 @@ Automapping is set on the user's mailbox, not the shared mailbox. This means if 
 
 To learn more about shared mailboxes in Outlook, see:
 
-- <a href="https://support.office.com/article/d94a8e9e-21f1-4240-808b-de9c9c088afd.aspx" target="_blank">Open and use a shared mailbox in Outlook</a>
+- <a href="https://support.microsoft.com/office/d94a8e9e-21f1-4240-808b-de9c9c088afd" target="_blank">Open and use a shared mailbox in Outlook</a>
 
-- <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Add a shared mailbox to Outlook on the web</a>
+- <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Add a shared mailbox to Outlook on the web</a>
 
-- <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Add a shared mailbox to Outlook mobile</a>
+- <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Add a shared mailbox to Outlook mobile</a>
 
-- <a href="https://support.office.com/article/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2.aspx" target="_blank">Open a shared folder or mailbox in Outlook for Mac</a>
+- <a href="https://support.microsoft.com/office/6ecc39c5-5577-4a1d-b18c-bbdc92972cb2" target="_blank">Open a shared folder or mailbox in Outlook for Mac</a>
 
-- <a href="https://support.office.com/article/b0963400-2a51-4c64-afc7-b816d737d164.aspx" target="_blank">Add rules to a shared mailbox</a>
+- <a href="https://support.microsoft.com/office/b0963400-2a51-4c64-afc7-b816d737d164" target="_blank">Add rules to a shared mailbox</a>
 
 
 ## Use a shared mailbox on a mobile device (phone or tablet)
@@ -151,11 +149,11 @@ To learn more about shared mailboxes in Outlook, see:
 You can access a shared mailbox on a mobile device in two ways:
 - Add the shared mailbox in the <a href="https://apps.apple.com/us/app/microsoft-outlook/id951937596" target="_blank">Outlook for iOS app</a> or the <a href="https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en_US" target="_blank">Outlook for Android mobile app</a>. 
     
-    For instructions, see <a href="https://support.office.com/article/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Add a shared mailbox to Outlook mobile</a>.
+    For instructions, see <a href="https://support.microsoft.com/office/f866242c-81b2-472e-8776-6c49c5473c9f" target="_blank">Add a shared mailbox to Outlook mobile</a>.
 
-- Open your browser, sign in to Office 365, and then go to Outlook on the web. From Outlook on the web you'll be able to access the shared mailbox.
+- Open your browser, sign in, and then go to Outlook on the web. From Outlook on the web you'll be able to access the shared mailbox.
 
-    For instructions, see <a href="https://support.office.com/article/98b5a90d-4e38-415d-a030-f09a4cd28207.aspx" target="_blank">Add a shared mailbox to Outlook on the web</a>.
+    For instructions, see <a href="https://support.microsoft.com/office/98b5a90d-4e38-415d-a030-f09a4cd28207" target="_blank">Add a shared mailbox to Outlook on the web</a>.
 
 ## Use the shared calendar
 

@@ -16,7 +16,8 @@ search.appverid:
 - MET150
 ms.assetid: 
 
-description: ""
+description: Learn how to use the Conversation Reconstruction feature in Advanced eDiscovery to reconstruct, review, and export threaded conversations.
+ms.custom: seo-marvel-mar2020
 ---
 
 # Review conversations in Advanced eDiscovery 
@@ -75,8 +76,6 @@ When you add data from conversations to a review set, you can use the conversati
   
 3. After the items have been added to the review set, you can review all the individual messages from *CRC1*. 
 
-
-
 To enable conversation retrieval:
   
 1. On the **Searches** tab in the Advanced eDiscovery case, select a search, and then click **Add to review set** on the flyout page.
@@ -87,7 +86,7 @@ To enable conversation retrieval:
   
 4. After the **Add to review set** job on the **Jobs** tab has finished, you can start reviewing the conversations.
 
-## Step 4: Review conversations in the review set
+## Step 4: Review and export conversations in a review set
 
 After the content has been processed and added to the review set, you can start reviewing the data in the review set. The review capabilities are different depending on whether the content was added to a standard review set or a conversation review set. 
 
@@ -125,7 +124,6 @@ In a conversation review set, you can use the following options to facilitate th
 
 - **Rerun conversation conversion:** When messages are added to a conversation review set, a conversion job is automatically run to create the threaded summary and annotate views. If the Conversation Reconstruction job fails, you can rerun this job by clicking **Action > Create conversation PDFs** in the review set.
 
-
 #### Exporting conversations
 
 In a conversation review set, you can set the following options to export conversations:
@@ -157,7 +155,7 @@ c. Other options
 
 To learn more about how to review case data in Advanced eDiscovery, see the following articles:
 
-- [View case data](view-documents-in-review-set.md) 
+- [View case data](view-documents-in-review-set.md)
 
 - [Analyze case data](analyzing-data-in-review-set.md)
 

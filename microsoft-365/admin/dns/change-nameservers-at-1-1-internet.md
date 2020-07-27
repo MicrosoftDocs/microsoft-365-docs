@@ -1,12 +1,12 @@
 ---
-title: "Change nameservers to set up Office 365 with 1&1 IONOS"
+title: "Change nameservers to set up Microsoft with 1&1 IONOS"
 f1.keywords:
 - NOCSH
 ms.author: pebaum
 author: pebaum
 manager: mnirkhe
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - Adm_O365_Setup
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,23 +23,23 @@ ms.assetid: 31efc571-c8b9-46fb-b42d-203c2fb25289
 description: "Learn how you can set up Office 365 operated by 21Vianet to manage your DNS records, when 1&1 Internet is the DNS hosting provider."
 ---
 
-# Change nameservers to set up Office 365 with 1&1 IONOS
+# Change nameservers to set up Microsoft 365 with 1&1 IONOS
 
  **[Check the Domains FAQ](../setup/domains-faq.md)** if you don't find what you're looking for. 
   
-Follow these instructions if you want Office 365 to manage your Office 365 DNS records for you. (If you prefer, you can [manage all your Office 365 DNS records at 1&1 IONOS](create-dns-records-at-1-1-internet.md).) 
+Follow these instructions if you want Microsoft 365 to manage your Microsoft 365 DNS records for you. (If you prefer, you can [manage all your Microsoft 365 DNS records at 1&1 IONOS](create-dns-records-at-1-1-internet.md).) 
   
 
     
 ## Add a TXT record for verification
 
 
-Before you use your domain with Office 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Office 365 that you own the domain.
+Before you use your domain with Microsoft 365, we have to make sure that you own it. Your ability to log in to your account at your domain registrar and create the DNS record proves to Microsoft 365 that you own the domain.
   
 > [!NOTE]
 > This record is used only to verify that you own your domain; it doesn't affect anything else. You can delete it later, if you like. 
   
-Follow the steps below or [watch the video (start at 0:42)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+Follow the steps below or [watch the video (start at 0:42)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 1. To get started, go to your domains page at 1&1 IONOS via [this link](https://account.1and1.com/?redirect_url=https%3A%2F%2Fmy.1and1.com%2F). You'll be prompted to log in. 
     
@@ -57,7 +58,7 @@ Follow the steps below or [watch the video (start at 0:42)](https://support.offi
 ||||
 |:-----|:-----|:-----|
 |**Type** <br/> |**Prefix** <br/> |**Name Value** <br/> |
-|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Office 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) <br/> |
+|TXT  <br/> |(Leave this field empty.)  <br/> |MS=ms *XXXXXXXX* <br/> **Note**: This is an example. Use your specific **Destination or Points to Address** value here, from the table in Microsoft 365. [How do I find this?](../get-help-with-domains/information-for-dns-records.md) <br/> |
 
    
 7. Select **Save**, and then **Save** again. 
@@ -66,9 +67,9 @@ Follow the steps below or [watch the video (start at 0:42)](https://support.offi
     
 9. Wait a few minutes before you continue, so that the record you just created can update across the Internet.
     
-Now that you've added the record at your domain registrar's site, you'll go back to Office 365 and request Office 365 to look for the record.
+Now that you've added the record at your domain registrar's site, you'll go back to Microsoft 365 and request Microsoft 365 to look for the record.
   
-When Office 365 finds the correct TXT record, your domain is verified.
+When Microsoft 365 finds the correct TXT record, your domain is verified.
   
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
     
@@ -79,16 +80,16 @@ When Office 365 finds the correct TXT record, your domain is verified.
 4. On the **Verify domain** page, select **Verify**.
     
 > [!NOTE]
-> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Office 365](../get-help-with-domains/find-and-fix-issues.md). 
+> Typically it takes about 15 minutes for DNS changes to take effect. However, it can occasionally take longer for a change you've made to update across the Internet's DNS system. If you're having trouble with mail flow or other issues after adding DNS records, see [Find and fix issues after adding your domain or DNS records in Microsoft 365](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## Change your domain's nameserver (NS) records
 
-To complete setting up your domain with Office 365, you change your domain's NS records at your domain registrar to point to the Office 365 primary and secondary name servers. This sets up Office 365 to update the domain's DNS records for you. We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.
+To complete setting up your domain with Microsoft 365, you change your domain's NS records at your domain registrar to point to the Microsoft 365 primary and secondary name servers. This sets up Microsoft 365 to update the domain's DNS records for you. We'll add all records so that email, Skype for Business Online, and your public website work with your domain, and you'll be all set.
   
 > [!CAUTION]
-> When you change your domain's NS records to point to the Office 365 name servers, all the services that are currently associated with your domain are affected. For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Office 365 after you make this change. 
+> When you change your domain's NS records to point to the Microsoft 365 name servers, all the services that are currently associated with your domain are affected. For example, all email sent to your domain (like rob@ *your_domain*  .com) will start coming to Microsoft 365 after you make this change. 
   
-Ready to change your NS records so Office 365 can set up your domain? Follow the steps below or [watch the video (start at 2:47)](https://support.office.com/article/Video-Change-nameservers-to-set-up-Office-365-with-1-1-Internet-0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3?ui=en-US&amp;rs=en-US&amp;ad=US).
+Ready to change your NS records so Microsoft 365 can set up your domain? Follow the steps below or [watch the video (start at 2:47)](https://support.microsoft.com/office/0ef1b3b5-d27a-4004-8ca1-fbe0453a0ea3).
   
 > [!IMPORTANT]
 >  The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already listed. >  When you have completed the steps in this section, the only nameservers that should be listed are these four: >  ns1.bdm.microsoftonline.com >  ns2.bdm.microsoftonline.com >  ns3.bdm.microsoftonline.com >  ns4.bdm.microsoftonline.com 
@@ -119,11 +120,11 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |:-----|:-----|
 |**Name server 1** <br/> |ns1.bdm.microsoftonline.com  <br/> |
    
-   ![Entering a value in the Name server 1 box](../media/34509935-461f-427f-9796-c3cf840bd9be.png)
+   ![Entering a value in the Name server 1 box](../../media/34509935-461f-427f-9796-c3cf840bd9be.png)
   
 2. In the **Additional name servers** drop-down list, choose **My secondary name servers**.
     
-    ![Choosing My secondary name servers in the list](../media/7eb14856-86da-45c2-910c-c72312250a18.png)
+    ![Choosing My secondary name servers in the list](../../media/7eb14856-86da-45c2-910c-c72312250a18.png)
   
 3. In the **Name server 2, 3, and 4** boxes, type or copy and paste the value from the following table. 
     
@@ -133,18 +134,18 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-    ![Entering name server values](../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
+![Entering name server values](../../media/0f15880c-88b6-4133-8f31-62f0d98ee63f.png)
   
 4. Select **Save**.
     
-    ![Selecting Save on the Name Server Settings page](../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
+    ![Selecting Save on the Name Server Settings page](../../media/864f7927-7127-4784-b8d2-dadfea2f9dc8.png)
   
 5. In the **Edit DNS Settings** dialog box, select **Yes**.
     
-    ![Selecting Save in the Edit DNS Settings dialog box](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Selecting Save in the Edit DNS Settings dialog box](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
 ### If there ARE nameservers already listed
 
@@ -153,7 +154,7 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
   
 1. If there are already nameservers listed in the **Name server** boxes, delete each one by selecting it and then pressing the **Delete** key on your keyboard. 
     
-    ![Deleting name servers](../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
+    ![Deleting name servers](../../media/af0a68cc-b058-4925-b3b1-52dfded003c1.png)
   
 2. In the **Name server 1, 2, 3, and 4** boxes, type or copy and paste the values from the following table. 
     
@@ -164,18 +165,18 @@ Ready to change your NS records so Office 365 can set up your domain? Follow the
 |**Name server 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name server 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Entering name server values](../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
+   ![Entering name server values](../../media/52826bd1-0596-4103-a728-d5d28b9610d2.png)
   
 3. Select **Save**.
     
-    ![Selecting Save on the Name Server Settings page](../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
+    ![Selecting Save on the Name Server Settings page](../../media/cd10e4fb-b7fa-480f-855b-a443f2705cf2.png)
   
 4. In the **Edit DNS Settings** dialog box, select **Yes**.
     
-    ![Selecting Save in the Edit DNS Settings dialog box](../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
+    ![Selecting Save in the Edit DNS Settings dialog box](../../media/0558e24c-17cd-428c-9ec1-5ed46481af7c.png)
   
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Office 365 email and other services will be all set to work with your domain. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
 
 

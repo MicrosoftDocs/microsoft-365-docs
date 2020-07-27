@@ -53,7 +53,3 @@ Contact your Microsoft account representative.
 - [Azure Government](https://azure.microsoft.com/features/gov/)
 - [Office 365 U.S. Government](https://products.office.com/government/office-365-web-services-for-government)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)
-
-## Download the offering backgrounder
-
-Do you need the backgrounder document for this offering? Download the [PDF](https://download.microsoft.com/download/A/7/4/A74AFF71-6EAC-4CFD-A09B-51852E1A1200/ITAR-Compliance.pdf).

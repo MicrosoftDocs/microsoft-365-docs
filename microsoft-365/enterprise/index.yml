@@ -52,7 +52,7 @@ conceptualContent:
           text: Foundation infrastructure
         - url: deploy-workloads.md
           itemType: how-to-guide
-          text: Workloads and scenarios
+          text: Workloads
         - url: desktop-deployment-center-home.md
           itemType: get-started
           text: Desktop Deployment Center
@@ -65,42 +65,27 @@ conceptualContent:
         - url: https://docs.microsoft.com/windows/deployment/
           itemType: get-started
           text: Windows 10 Enterprise
-        - url: https://docs.microsoft.com/deployoffice/plan-office-365-proplus
+        - url: https://docs.microsoft.com/deployoffice/plan-microsoft-365-apps
           itemType: deploy
-          text: Office 365 ProPlus
+          text: Microsoft 365 Apps for enterprise
         - url: https://docs.microsoft.com/intune/fundamentals/planning-guide
           itemType: deploy
           text: Microsoft Intune
-    # Card
-    - title: Deploy key scenarios
-      links:
-        - url: secure-teams-highly-regulated-data-scenario.md
-          itemType: how-to-guide
-          text: Microsoft Teams for highly regulated data
-        - url: teams-sharepoint-online-sites-highly-regulated-data.md
-          itemType: how-to-guide
-          text: SharePoint sites for highly regulated data
-        - url: empower-people-to-work-remotely.md
-          itemType: how-to-guide
-          text: Remote workers
-        - url: migration-microsoft-365-enterprise-workload.md
-          itemType: deploy
-          text: Office client and server and Windows migration
     # Card
     - title: Manage Microsoft 365 for enterprise
       links:
         - url: https://docs.microsoft.com/windows/deployment/update/
           itemType: how-to-guide
           text: Windows 10 Enterprise
-        - url: https://docs.microsoft.com/deployoffice/overview-of-update-channels-for-office-365-proplus
+        - url: https://docs.microsoft.com/deployoffice/overview-update-channels
           itemType: concept
-          text: Office 365 ProPlus
+          text: Microsoft 365 Apps for enterprise
         - url: https://docs.microsoft.com/intune/apps/app-management
           itemType: get-started
           text: Apps with Intune
         - url: https://docs.microsoft.com/office365/
           itemType: get-started
-          text: Office 365 services
+          text: Microsoft 365 services
 
 # additionalContent section (optional)
 # Card with summary style
