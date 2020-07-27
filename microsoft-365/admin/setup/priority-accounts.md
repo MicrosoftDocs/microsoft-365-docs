@@ -17,11 +17,11 @@ description: "Monitor failed and delayed emailed messages sent to or from accoun
 
 # Manage and monitor priority accounts
 
-As the admin of a Microsoft 365 organization, you can now monitor failed or delayed email messages sent to your users who have a high business impact, like your CEO. You can enable this by adding users to your priority accounts list. Priority accounts are accounts who are essential to running your organization. Add executives, leaders, managers or other users who have access to sensitive or high priority information.
+As the admin of a Microsoft 365 organization, you can now monitor failed or delayed email messages sent to your users who have a high business impact, like your CEO. You can enable this by adding users to your priority accounts list. Priority accounts are accounts that are essential to running your organization. Add executives, leaders, managers or other users who have access to sensitive or high priority information.
 
 ## Access priority accounts
 
-The Priority accounts feature is available to use by default for Office 365 Education A3, Office 365 A5, and Office 365 Business Premium subscriptions. (PLACEHOLDER - NEED UPDATED INFO)
+The Priority accounts feature is available to use, by default, for Office 365 Education A3, Office 365 A5, and Office 365 Business Premium subscriptions. (PLACEHOLDER - NEED UPDATED INFO)
 
 ## Add priority accounts from the Setup page
 
