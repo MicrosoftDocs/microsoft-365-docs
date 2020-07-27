@@ -85,7 +85,7 @@ Install-Module SecMgmt
 > [!IMPORTANT]
 > It is recommended that you install this module on the Windows Server running Azure AD Connect.
 
-To create the required service connection point and group policy, you will invoke the  [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet. You will need your Microsoft 365 Business Premium global admin credentials when performing this task. When you are ready to create the resources invoke the following
+To create the required service connection point and group policy, you will invoke the  [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet. You will need your Microsoft 365 Business Premium global admin credentials when performing this task. When you are ready to create the resources, invoke the following:
 
 ```powershell
 PS C:\> Connect-SecMgmtAccount
