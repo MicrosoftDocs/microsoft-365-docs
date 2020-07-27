@@ -76,8 +76,8 @@ Teams uses Microsoft 365 Groups for team membership. The Microsoft 365 Groups gu
 
 To set Microsoft 365 Groups guest settings
 
-1. In the Microsoft 365 admin center, in the left navigation, expand **Settings**.
-2. Click **Services & add-ins**.
+1. In the Microsoft 365 admin center, in the left navigation, expand **Org Settings**.
+2. Click **Services**.
 3. In the list, click **Microsoft 365 Groups**.
 4. Ensure that the **Let group members outside your organization access group content** and **Let group owners add people outside your organization to groups** check boxes are both checked.
 5. If you made changes, click **Save changes**.
