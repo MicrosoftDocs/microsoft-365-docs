@@ -15,7 +15,7 @@ localization_priority: Normal
 # Set up Content Understanding (Preview)
 
 > [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 Admins can use the Microsoft 365 admin center to set up and configure Content Understanding. 
 
@@ -24,7 +24,7 @@ Admins can use the Microsoft 365 admin center to set up and configure Content Un
 
 
 ## Requirements 
-You must have Global Admin permissions to be able to access the Microsoft 365 admin center and set up Content Understanding.
+You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Content Understanding.
 
 
 ## To set up Content Understanding
@@ -38,42 +38,40 @@ You must have Global Admin permissions to be able to access the Microsoft 365 ad
 
     ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
-4. On the **Turn on image tagging** page, you can choose how images stored in SharePoint and OneDrive are automatically tagged with descriptive words. You can select:</br>
-    - **Basic tagging** to use a limited set of business-focuses tags.</br>
-    - **Enhanced tagging** to add a broader set of descriptive tags.</br>
-    - **Off** to turn off image tagging.</br>
- 
-    ![Image tagging](../media/content-understanding/admin-cu-image-tagging.png)</br> 
 
-5. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create Form Processing models in SharePoint document libraries.  For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
+4. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create Form Processing models in specific SharePoint document libraries. A menu option will be available to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+ 
+> [Note!]
+> Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
+
+ 
+For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
     - **All SharePoint libraries** to make it available to all SharePoint libraries in your tenant.</br>
     - **Only libraries in selected sites**, and then select the sites in which you want to make it available.</br>
     - **No SharePoint libraries** if you currently don't want to make it available to any sites (you can change this after setup).</br>
 
-        ![Configure form processing](../media/content-understanding/admin-configforms.png)</br>
+   ![Configure form processing](../media/content-understanding/admin-configforms.png)</br>
+
 
     
-6. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
+5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
     a. For **Site name**, type the name you want to give your content center site.</br>
     b. The **Site address** will show the URL for your site, based on what you selected for the site name.</br>
-    c. For **Primary administrator**, type the user who will own and manage this site.</br>
-    d. For **Language**, select the language that you want the site to display in.  </br>
 
     > [!Note] 
     > While you can select any supported language, note that content understanding models can only be created for English.</br>
 
-      ![Configure form processing](../media/content-understanding/admin-cu-create-cc.png)</br>
+      ![Create content center](../media/content-understanding/admin-cu-create-cc.png)</br>
 
 
     Select **Next**.
-7. On the **Finish and review** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Apply settings**.
+6. On the **Finish and review** page, you can look at your selected setting and choose to make changes. If you are satisfied with your selections, select **Activate**.
 
 
 
+7. The **Content understanding activated** page will display, confirming that the system has added your form processing preferences and creating the Content Center site. Select **Done**.
 
-8. The **Content understanding settings applied** page will display, confirming that the system has added your form processing preferences and creating the Content Center site. Select **Done**.
-
-9. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
+8. You'll be returned to your **Automate content understanding** page. From this page, you can select **Manage** to make any changes to your configuration settings. 
 
 ## See also
 
