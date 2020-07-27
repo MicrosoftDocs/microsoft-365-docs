@@ -63,7 +63,7 @@ Suppose that an organization is using Dynamic Delivery for their [ATP Safe Attac
 
 ## Additional considerations
 
-There are certain scenarios in which Dynamic Delivery is not supported. These include the following:
+There are certain scenarios in which Safe attachments including Dynamic Delivery is not supported. These include the following:
 
 - Email messages that are in public folders
 
