@@ -31,7 +31,7 @@ Microsoft 365 has the capabilities to empower your workers to work remotely.
 
 ![Empower your remote workers with Microsoft 365](../media/empower-people-to-work-remotely/2-m365-remoteworker-solution-businessoverview.png)
 
-| | |
+| Key capability | Description |
 |:-------|:-----|
 | Connected | From anywhere in the world and at any time, remote workers are able to access: <ul><li>Cloud-based services and data in your Microsoft 365 subscription. </li><li>Organization resources, such those offered by on-premises application datacenters.</li></ul> |
 | Secure | Sign-ins are secured with multi-factor authentication (MFA) and built-in security features of Microsoft 365 and Windows 10 protect against malware, malicious attacks, and data loss. |
