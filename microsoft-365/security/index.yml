@@ -37,7 +37,7 @@ landingContent:
         links:
           - text: Evaluate Microsoft Threat Protection
             url: mtp/mtp-evaluation.md
-          - text: Run a proof-of-concept and start your pilot project
+          - text: Transitioning proof-of-concept into a pilot
             url: mtp/mtp-evaluation.md
   # Card
   - title: Secure your remote workforce
