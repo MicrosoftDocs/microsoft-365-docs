@@ -60,7 +60,7 @@ Admins, have your account details ready when you call.
 
 ### Phone numbers for other countries
 
-If your support phone number isn't listed above, use the drop-down menu below to choose your country or region.
+If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
