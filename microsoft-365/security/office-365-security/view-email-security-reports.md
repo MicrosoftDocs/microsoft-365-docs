@@ -460,3 +460,7 @@ If you are not seeing data in your reports, double-check that your policies are 
 [Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
 
 [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+
+[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)
+
+[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)

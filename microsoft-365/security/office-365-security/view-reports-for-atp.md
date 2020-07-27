@@ -36,6 +36,9 @@ To view the report, open the [Security & Compliance Center](https://protection.o
 
 ![Office ATP file types widget in the Reports dashboard](../../media/atp-file-types-report-widget.png)
 
+> [!NOTE]
+> The information in this report is also available in the [Advanced Threat Protection message disposition report](#advanced-threat-protection-message-disposition-report).
+
 ### Report view for the Advanced Threat Protection file types report
 
 The following views are available:
@@ -114,6 +117,9 @@ The **ATP Message Disposition** report shows you the actions that were taken for
 To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Office ATP message disposition**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPMessageReport>.
 
 ![Office 365 ATP message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
+
+> [!NOTE]
+> The information in this report is also available in the [Advanced Threat Protection file types report](#advanced-threat-protection-file-types-report).
 
 ### Report view for the Advanced Threat Protection message disposition report
 
@@ -252,21 +258,20 @@ To get back to the reports view, click **View report**.
 
 ## Additional reports to view
 
-In addition to the ATP reports described in this article, several other reports are available, as described in the following table:
+In addition to the ATP reports described in this topic, several other reports are available, as described in the following table:
 
-|||
+|Report|Topic|
 |---|---|
-|**Report(s)**|**Details**|
-|**Explorer** or **real-time detections**: (Office 365 ATP Plan 2 customers have Explorer; Office 365 ATP Plan 1 customers have real-time detections.)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
-|**Email security reports**, such as a Top Senders and Recipients report, a Spoof Mail report, and a Spam Detections report.|[View email security reports in the Security &amp; Compliance Center](view-email-security-reports.md)|
-|**ATP Safe Links URL trace**: (This is a report you generate by using PowerShell.) This report shows the results of ATP Safe Links actions over the past seven (7) days.|[Get-UrlTrace cmdlet reference](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
-|**EOP and ATP results**: (This is a custom report you generate by using PowerShell). This report contains information, such as Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport cmdlet reference](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport)|
-|**EOP and ATP detections**: (This is a custom report you generate by using PowerShell). This report contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.|[Get-MailDetailATPReport cmdlet reference](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
-|
+|**Explorer** (ATP Plan 2) or **real-time detections** (ATP Plan 1)|[Threat Explorer (and real-time detections)](threat-explorer.md)|
+|**Email security reports**, such as the Top senders and recipients report, the Spoof mail report, and the Spam detections report.|[View email security reports in the Security & Compliance Center](view-email-security-reports.md)|
+|**Mail flow reports**, such as the Forwarding report, the Mailflow status report, and the Top senders and recipients report.|[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)|
+|**URL trace for ATP Safe Links** (PowerShell only). The output of this cmdlet shows you the results of ATP Safe Links actions over the past seven days.|[Get-UrlTrace](https://docs.microsoft.com/powershell/module/exchange/get-urltrace)|
+|**Mail traffic results for EOP and ATP** (PowerShell only). The output of this cmdlet contains information about Domain, Date, Event Type, Direction, Action, and Message Count.|[Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/get-mailtrafficatpreport) <br/><br/> |
+|**Mail detail reports for EOP and ATP detections** (PowerShell only). The output of this cmdlet contains details about malicious files or URLs, phishing attempts, impersonation, and other potential threats in email or files.|[Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/get-maildetailatpreport)|
 
 ## What permissions are needed to view the ATP reports?
 
-In order to view and use the reports described in this article, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.
+In order to view and use the reports described in this topic, **you must have an appropriate role assigned for both the Security &amp; Compliance Center and the Exchange admin center**.
 
 - For the Security & Compliance Center, you must have one of the following roles assigned:
 
@@ -294,6 +299,6 @@ If you are not seeing data in your ATP reports, double-check that your policies 
 
 ## Related topics
 
-[Reports and insights in the Security &amp; Compliance Center](reports-and-insights-in-security-and-compliance.md)
+[Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
   
 [Role permissions (Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-permissions)
