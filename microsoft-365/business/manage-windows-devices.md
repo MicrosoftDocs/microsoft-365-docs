@@ -76,7 +76,7 @@ On the Microsoft Intune page, select **Device enrollment** and on the **Overview
 
 Performing the required tasks to [configure hybrid Azure AD join](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#configure-hybrid-azure-ad-join) has been simplified through the use of the [Initialize-SecMgmtHybirdDeviceEnrollment](https://github.com/microsoft/secmgmt-open-powershell/blob/master/docs/help/Initialize-SecMgmtHybirdDeviceEnrollment.md) cmdlet found in the [SecMgmt](https://www.powershellgallery.com/packages/SecMgmt) PowerShell module. When you invoke this cmdlet it will create and configure the required service connection point and group policy.
 
-You can install this module by invoking the following from an instance of PowerShell
+You can install this module by invoking the following from an instance of PowerShell:
 
 ```powershell
 Install-Module SecMgmt
