@@ -114,7 +114,7 @@ You might qualify for VAT zero-rating:
 
 3. In the **Settings & Actions** section, select **Edit service usage address**.
 
-4. On the **Edit your service usage address** page, enter your VAT ID, including the prefix and without any spaces, in the **VAT number** box, and then select **Save**.
+4. On the **Edit your service usage address** page, in the **VAT number** box,enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ You might qualify for VAT zero-rating:
 
 2. Select the subscription name, and then select **More actions** \> **Edit VAT number**.
   
-3. On the **Edit your service usage address** page, enter your VAT ID in the **VAT number** box, and then select **Submit**.
+3. On the **Edit your service usage address** page, in the **VAT number** box,enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
 
 ::: moniker-end
 
@@ -176,8 +176,7 @@ Have the following documentation ready:
 | International organizations that hold tax exemption | Certification / letter confirmation from local tax authorities |
 | Puerto Rico | Certificado de Compras Exentas |
   
-## Related articles
+## Related content
   
-[View your bill or invoice](view-your-bill-or-invoice.md)
-  
-[Understand your bill or invoice](understand-your-invoice.md)
+[View your bill or invoice](view-your-bill-or-invoice.md) (article)\
+[Understand your bill or invoice](understand-your-invoice.md) (article)
