@@ -4,8 +4,8 @@
 
     - name: Get started with Knowledge Management
       items: 
-        - name: Understand topic discovery 
-          href: .md
+        - name: Knowledge management overivew
+          href: knowledge-management-overview.md 
         - name: Topic Center overview 
           href: topic-center-overview.md 
         - name: Work with topics in the Knowledge Center
@@ -23,53 +23,6 @@
 
         - name: Set up Knowledge Management
           href: set-up-knowledge-network.md
+        - name: Manage your Knowledge Management network
+          href: manage-knowledge-network.md
     
-    - name: Adoption
-      items: 
-        - name: Get started
-          href: .md
-
-
-
-    - name: Training videos
-      items: 
-        - name: What is Content Understanding? 
-          href: .md
-        - name: Get started with the content center - building models to automate classification of documents and extraction of information
-          href: .md
-        - name: Create a document understanding model
-          href: .md
-        - name: Get started building a document understanding model - labeling
-          href: .md
-        - name: Get started building a document understanding model - training with explanations
-          href: .md    
-        - name: Model creation tips and tricks
-          href: .md
-        - name: Testing a model
-          href: .md
-        - name: Applying a published queue
-          href: .md
-        - name: Queue existing items for processing by an applied model
-          href: .md
-        - name: What is a form processing model and how is it different?
-          href: .md
-        - name: Overview of the form processing model creation process
-          href: .md
-        - name: Managing your models in the content center and AI Builder
-          href: .md
-        - name: Model usage analytics
-          href: .md
-        - name: Leveraging taxonomy in document understanding models
-          href: .md
-        - name: Applying a retention label to a document understanding model
-          href: .md
-        - name: Push custom content types to hub sites
-          href: .md
-        - name: Manage content types  in a list/library
-          href: .md
-        - name: Manage taxonomies in the admin center
-          href: .md
-        - name: Configure and import a SKOS-formatted term set
-          href: .md
-        - name: Term store analytics
-          href: .md

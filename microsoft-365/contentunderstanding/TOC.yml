@@ -25,12 +25,9 @@
 
         - name: Set up Content Understanding
           href: set-up-content-understanding.md
+        - name: Manage Content Understanding
+          href: manage-content-understanding.md          
 
-    - name: Adoption
-      items:
-
-        - name: Get started driving adoption
-          href: .md
 
     - name: Training videos
       items: 

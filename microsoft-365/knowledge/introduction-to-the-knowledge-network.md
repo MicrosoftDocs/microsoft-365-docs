@@ -1,5 +1,5 @@
 ---
-title: "Plan for Knowledge Management"
+title: "Introduction to the Knowledge Network"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -10,29 +10,48 @@ ms.service:
 search.appverid: 
 
 localization_priority: Normal
-description: "Learn about how to plan for the Knowledge Management feature in Microsoft Broadsight."
+description: "Get an overview of Knowledge Management in Project Cortex."
 ---
 
-# Plan for Knowledge Management in Microsoft Broadsight
+# Introduction to the Knowledge Network
 
-Before you configure Microsoft Broadsight's [Knowledge Management feature](knowledge-management-overview.md), you should plan for the following:
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](aka.ms/projectcortex).
 
-- How you plan to roll this out.
-- Select your source sites.
-- Users you will give access to.
-- Understand the role of the knowledge manager.
+Knowledge Management 
 
-## Plan your rollout
+   ![Knowledge Management flow](../media/content-understanding/knowledge-management-flowchart.png) </br> 
 
 
-## Select your source sites
+Topic Cards 
 
+Knowledge Management uses Topic Cards and Topic Pages for topic definitions. Topic Cards appear automatically when a topic is detected, showing you a description, experts, resources, and other information about the topic. Topic cards appear automatically in Outlook, Word, SharePoint and Microsoft Teams, and will appear in results in Microsoft Search. 
 
-## Plan for user access
+[topic card image] 
 
+In the case of SharePoint, Topic Cards will only be displayed on Modern Pages. 
 
-## The Knowledge Manager role
+Topic Pages 
 
+[topic page image] 
+
+In addition to Topic Cards, Topic pages are automatically created by Project Cortex using the source content as a point of reference. The pages can be curated by subject matter experts who can edit or create new topics with wiki-like simplicity, incorporating their knowledge and additional resources, whilst training Project Cortex at the same time. Until a topic or page has been curated the knowledge presented should be taken as suggested and not authoritative. 
+
+People Cards 
+
+[people card image] 
+
+Project Cortex enhances the existing People card experience by prompting you to add topics based on the work you are doing. These topics are not the same as the terms used by the Professional Information App (PIA). As is the case with Concept Search the topics on a People card will compliment those selected through the PIA. They will be subject to the same curation process. 
+
+Topic Center
+
+[knowledge centre image] 
+
+Topic pages are aggregated into a Topic Center. The Topic Center delivers a personalized view of relevant knowledge across the organization, including trending relevant topics, and open questions. Through the Topic Center, staff with knowledge curation roles will be able to curate topics and gain insight into the application, usage and distribution of topics. 
+
+In time we will create additional, topic-specific Knowledge Centres that support specific knowledge sharing scenarios, such as major projects, Practices, policies and procedures, or customers. 
+
+Project Cortex includes additional SharePoint web parts that we will use to integrate knowledge and training in destinations such as Compass. 
 
 
 
