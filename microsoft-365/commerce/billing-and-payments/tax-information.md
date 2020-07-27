@@ -114,7 +114,7 @@ You might qualify for VAT zero-rating:
 
 3. In the **Settings & Actions** section, select **Edit service usage address**.
 
-4. On the **Edit your service usage address** page, in the **VAT number** box,enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
+4. On the **Edit your service usage address** page, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
 
 ::: moniker-end
 
@@ -126,7 +126,7 @@ You might qualify for VAT zero-rating:
 
 2. Select the subscription name, and then select **More actions** \> **Edit VAT number**.
   
-3. On the **Edit your service usage address** page, in the **VAT number** box,enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
+3. On the **Edit your service usage address** page, in the **VAT number** box, enter your VAT ID, including the prefix, and without any spaces. Select **Save**.
 
 ::: moniker-end
 
