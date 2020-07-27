@@ -69,7 +69,7 @@ There are two different methods for automatically applying a sensitivity label:
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:
 
 |Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |Yes |
