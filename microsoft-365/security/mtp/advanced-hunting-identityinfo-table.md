@@ -45,13 +45,13 @@ For information on other tables in the advanced hunting schema, [see the advance
 | `AccountName` | string | User name of the account |
 | `AccountDomain` | string | Domain of the account |
 | `EmailAddress` | string | SMTP address of the account |
-| `SipProxyAddress` | string | Voice of over IP (VOIP) session initiation protocol (SIP) address of the account |
+| `SipProxyAddress` | string | Voice over IP (VOIP) session initiation protocol (SIP) address of the account |
 | `City` | string | City where the account user is located |
 | `Country` | string | Country/Region where the account user is located |
 | `IsAccountEnabled` | boolean | Indicates whether the account is enabled or not |
 
 ## Related topics
-- [Proactively hunt for threats](advanced-hunting-overview.md)
+- [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)

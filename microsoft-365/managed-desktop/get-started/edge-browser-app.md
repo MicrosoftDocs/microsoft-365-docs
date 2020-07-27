@@ -1,12 +1,17 @@
 ---
-title: New Microsoft Edge app
+title: New Microsoft Edge
 description:  
 keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
+ms.author: jaimeo
+manager: laurawi
+audience: ITpro
+ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ---
+
 
 # New Microsoft Edge app
 
@@ -33,7 +38,7 @@ The security baseline for Microsoft Edge on Microsoft Managed Desktop devices se
 #### Extension installation blocklist
 **Default value:** All
 
-Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risksassociated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices. 
+Microsoft Managed Desktop sets this policy to prevent Chrome extensions from being installed on managed endpoints. There are known risk sassociated with the Chromium extension model including data loss protection, privacy, and other risks that can compromise devices. 
 
 #### Allow user-level native messaging hosts (installed without admin permissions)
 
@@ -81,7 +86,7 @@ We do not recommend disabling this setting since that would allow users to ignor
 
 **Default value:** Disabled
 
-We don't recommend using Flash because of associated security risks. If you still have processes which depend on Flash, set the **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** policy to enable Flash for sites which need it. If can't maintain an allowed list of sites to use Flash, file a change request to change the value to **Click to Play**, which allows users choose when it's appropriate to run Flash.
+We don't recommend using Flash because of associated security risks. If you still have processes which depend on Flash, set the **[PluginsAllowedForUrls](https://docs.microsoft.com/deployedge/microsoft-edge-policies#pluginsallowedforurls)** policy to enable Flash for sites which need it. If you can't maintain an allowed list of sites to use Flash, file a change request to change the value to **Click to Play**, which allows users choose when it's appropriate to run Flash.
 
 ### Password manager
 
@@ -114,7 +119,7 @@ With this policy applied, the First Run Experience will skip the import section,
 
 ## Settings you manage
 
-You can deploy any Microsft Edge settings not previously described by using the Administrative Templates profile in Microsoft Intune. For details, see [Configure Microsoft Edge policy settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). If you want to evaluate a policy that is not currently included in the Microsoft Edge Administrative Templates in Intune you can use custom settings for Windows 10 devices in Intune.
+You can deploy any Microsoft Edge settings not previously described by using the Administrative Templates profile in Microsoft Intune. For details, see [Configure Microsoft Edge policy settings with Microsoft Intune](https://docs.microsoft.com/deployedge/configure-edge-with-intune). If you want to evaluate a policy that is not currently included in the Microsoft Edge Administrative Templates in Intune you can use custom settings for Windows 10 devices in Intune.
 
 ### Enabling specific Chrome extensions
 

@@ -331,7 +331,7 @@ After you create the import job in Step 5, Microsoft 365 analyzes the data in th
     
   - Using Microsoft [eDiscovery tools](search-for-content.md) to search the data that you imported. 
     
-  - Using [Microsoft 365 retention policies](retention-policies.md) to control how long the data that you imported will be retained, and what action to take after the retention period expires. 
+  - Using [Microsoft 365 retention policies](retention.md) to control how long the data that you imported will be retained, and what action to take after the retention period expires. 
     
   - Searching the [audit log](search-the-audit-log-in-security-and-compliance.md) for mailbox-related events that affect the data that you imported. 
     

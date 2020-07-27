@@ -33,11 +33,11 @@ Microsoft 365 makes it possible for you to retain the contents of deleted mailbo
 
 - To make a mailbox inactive, it must be assigned an Exchange Online Plan 2 license so that a Litigation Hold or a retention policy can be applied to the mailbox before it's deleted. Exchange Online Plan 2 licenses are part of an Office 365 Enterprise E3 and E5 subscription. If a mailbox is assigned an Exchange Online Plan 1 or Exchange Online Kiosk license (which are part of an Office 365 E1 and F1 subscription respectively), you would have to assign it a separate Exchange Online Archiving license so that a hold can be applied to the mailbox before it's deleted. For more information, see [Exchange Online Archiving](https://go.microsoft.com/fwlink/p/?LinkId=286153).
 
-- The licenses associated with the deleted Exchange Online mailbox will be available after you delete the corresponding user account. You can then [assign those licenses to another user](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users). 
+- The licenses associated with the deleted Exchange Online mailbox will be available after you delete the corresponding user account. You can then [assign those licenses to another user](../admin/manage/assign-licenses-to-users.md).
 
 - If a Litigation Hold or a retention policy (that's configured to retain or retain and then delete content) isn't applied to a mailbox before it's deleted, the contents of the mailbox won't be retained or discoverable. However, the deleted mailbox can be recovered within 30 days of deletion, but the mailbox and its contents will be permanently deleted after 30 days if it isn't recovered.
 
-- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). For more information about retention policies, see [Overview of retention policies in Microsoft 365](retention-policies.md).
+- For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). For more information about retention policies, see [Learn about retention policies and retention labels](retention.md).
   
 ## Create an inactive mailbox
 
@@ -53,7 +53,7 @@ For step-by-step procedures for placing a mailbox on Litigation Hold or applying
   
 - [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
     
-- [Overview of retention policies in Office 365](retention-policies.md)
+- [Learn about retention policies and retention labels in Office 365](retention.md)
     
 > [!NOTE]
 > For Litigation Holds and retention policies, you can create an indefinite hold or on a time-based hold. In an indefinite hold, the contents of the inactive mailbox will be retained forever, or until the hold is removed or until the hold duration is changed. After the hold or retention policy is removed (assuming that the mailbox was deleted more than 30 days ago), the inactive mailbox will be marked for permanent deletion and the contents of the mailbox will no longer be retained or discoverable. In a time-based hold or retention policy, you specify the duration of the hold. This duration is on a per-item basis and is calculated from the date a mailbox item was received or created. After the hold expires for a mailbox item, and that item moved to or is located in the Recoverable Items folder in the inactive mailbox, the item is permanently deleted (purged) from the inactive mailbox after the deleted item retention period expires. 

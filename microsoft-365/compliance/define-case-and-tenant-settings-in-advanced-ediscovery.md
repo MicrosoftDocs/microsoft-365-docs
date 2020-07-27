@@ -14,8 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 383809de-7f5e-4a1d-9098-c525f67b7a9a
-description: "Learn about the labels, cross module, and tenant settings that you can define at the case level in Advanced eDiscovery. 
-"
+description: "Learn about the labels, cross module, and tenant settings that you can define at the case level in Advanced eDiscovery."
 ---
 
 # Define case and tenant settings in Advanced eDiscovery (classic)

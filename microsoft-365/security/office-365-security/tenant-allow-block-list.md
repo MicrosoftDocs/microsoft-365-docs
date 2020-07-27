@@ -14,7 +14,6 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX, NOFOLLOW
 description: "Admins can learn how to configure URL and file entries in the Tenant Allow/Block List in the Security & Compliance Center."
 ---
 

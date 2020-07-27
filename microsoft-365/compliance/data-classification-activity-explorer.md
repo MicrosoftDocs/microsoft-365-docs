@@ -70,7 +70,7 @@ The value of understanding what actions are being taken with your sensitive labe
 > Activity explorer doesn't currently monitor retention activities for Exchange Online.
 
 ## See also
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](labels.md)
+- [Learn about sensitivity labels](sensitivity-labels.md)
+- [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [Overview of retention policies](retention-policies.md)
+
