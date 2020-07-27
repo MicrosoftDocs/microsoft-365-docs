@@ -1,10 +1,10 @@
 ---
-title: "Contact support for business products - Admin Help"
+title: "Ways to contact support for business products - Admin Help"
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,11 @@ ms.custom:
 - MSStore_Link
 - AdminSurgePortfolio
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-- GEA150
-ms.assetid: 32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-description: "Get technical and billing support using phone numbers listed for your country or region, or by submitting your service request online, or by visiting a Microsoft store."
+description: "Get technical and billing support by using phone numbers listed for your country or region, or submitting your service request online, or contacting a Microsoft store for virtual customer support."
 feedback_system: None
 ---
-# Contact support for business products - Admin Help
+# Ways to contact support for business products - Admin Help
 
 ::: moniker range="o365-worldwide"
 
@@ -47,7 +42,7 @@ Save time by starting your service request online. We'll help you find a solutio
 
 4. If the results don't help, select **Contact support**.
 
-5. Enter a description if you like, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Need help?** pane.
+5. Enter a description of your issue, confirm your contact number and email address, select your preferred contact method, and then select **Contact me**. The expected wait time is indicated in the **Need help?** pane.
 
 ## Phone support
 
@@ -69,19 +64,11 @@ If your support phone number isn't listed above, use the drop-down menu below to
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-To learn how to open a service request, see [Online support](#online-support).
+## Virtual support from the Microsoft Store
 
-## In-store support
+You can contact Microsoft Store Sales and Customer Support to speak with an Answer Desk expert to help resolve your Microsoft 365 issue.
 
-You can now make an appointment at your local Microsoft Store with an Answer Desk expert to help resolve your Microsoft 365 issue.
-
-1. Go to the [Microsoft Stores schedule](https://go.microsoft.com/fwlink/?LinkID=2041482) page, and select **Schedule an appointment**.
-
-2. Enter your location and search to find a Microsoft Store near you.
-
-3. Choose your store, then select **Schedule service appointment now**.
-
----
+Go to the [Contact Microsoft Store Support](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020) page for quick help links and phone numbers.
 
 ::: moniker-end
 
