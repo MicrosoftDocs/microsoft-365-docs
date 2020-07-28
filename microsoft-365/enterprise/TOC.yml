@@ -6,78 +6,78 @@
   href: microsoft-365-overview.md
 
 - name: Networking
-- items: 
+  items 
    - name: Networking for Microsoft 365 roadmap
    - href: networking-infrastructure.md
    - name: Plan
-   - items: 
+     items 
      - name: Overview
      - href: networking-infrastructure.md
    - name: Deploy
-   - items: 
+     items 
      - name: Overview
      - href: networking-infrastructure.md
    - name: Manage
-   - items: 
+     items 
      - name: Overview
      - href: networking-infrastructure.md
 
 - name: Tenant
-- items: 
+  items 
   - name: Tenants for Microsoft 365 roadmap
   - href: networking-infrastructure.md
   - name: Plan
-  - items: 
+    items 
     - name: Overview
     - href: networking-infrastructure.md
   - name: Deploy
-  - items: 
+    items 
     - name: Overview
     - href: networking-infrastructure.md
   - name: Manage
-  - items: 
+    items 
     - name: Overview
     - href: networking-infrastructure.md
   - name: Multi-Geo
-  - items: 
+    items 
     - name: Overview
     - href: networking-infrastructure.md
   - name: Move to a new Microsoft 365 datacenter geo
-  - items: 
+    items 
     - name: Overview
     - href: networking-infrastructure.md
 
 - name: Identity
-- items: 
+  items 
   - name: Identity for Microsoft 365 roadmap
   - href: identity-infrastructure.md
   - name: Plan
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
   - name: Deploy
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
   - name: Manage
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
 
 - name: Client and server software
-- items: 
+  items 
   - name: Client and server software roadmap
   - href: identity-infrastructure.md
   - name: Plan
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
   - name: Deploy
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
   - name: Manage
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
 
@@ -85,19 +85,19 @@
 - href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
 
 - name: Cloud services
-- items: 
+  items 
   - name: Cloud services roadmap
   - href: identity-infrastructure.md
   - name: Plan
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
   - name: Deploy
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
   - name: Manage
-  - items: 
+    items 
     - name: Overview
     - href: identity-infrastructure.md
 
@@ -108,18 +108,18 @@
 - href: https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps
 
 - name: Deployment and update channel example configurations
-- items: 
+  items 
   - name: Overview
   - href: deploy-update-channels-examples.md
   - name: Broad deployment of the latest releases
   - href: deploy-update-channels-examples-rapid-deploy.md
 
 - name: Device management
-- items: 
+  items 
   - name: Intune
   - href: https://docs.microsoft.com/mem/intune/fundamentals/planning-guide
   - name: Device management
-  - items: 
+    items 
     - name: Set up
     - href: https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd 
     - name: Manage device access settings
