@@ -157,7 +157,7 @@ For example, here are some additional steps that might be required for email and
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-2. On the Domains page, Click on the domain and click on DNS Records tab.
+2. On the **Domains** page, select the domain and then choose **DNS Records**.
 
 3. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
 
@@ -168,4 +168,3 @@ For example, here are some additional steps that might be required for email and
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
-
