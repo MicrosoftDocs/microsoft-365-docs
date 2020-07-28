@@ -132,7 +132,7 @@
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
                 - name: Take action on query results
-                  href: mtp/advanced-take-action.md
+                  href: mtp/advanced-hunting-take-action.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
