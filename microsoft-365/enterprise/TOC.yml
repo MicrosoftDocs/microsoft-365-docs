@@ -108,11 +108,11 @@
 - href: https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps
 
 - name: Deployment and update channel example configurations
-  - items: 
+- items: 
   - name: Overview
-    href: deploy-update-channels-examples.md
+  - href: deploy-update-channels-examples.md
   - name: Broad deployment of the latest releases
-    href: deploy-update-channels-examples-rapid-deploy.md
+  - href: deploy-update-channels-examples-rapid-deploy.md
 
 - name: Device management
 - items: 
