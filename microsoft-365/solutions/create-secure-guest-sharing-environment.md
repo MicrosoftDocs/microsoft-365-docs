@@ -97,6 +97,9 @@ To create a conditional access policy
 
 Now, the first time a guest user attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
 
+> [!NOTE]
+> Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+
 ### More information
 [Azure Active Directory terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
 
