@@ -79,11 +79,11 @@ Reports update in real-time, providing you with the latest insights. These repor
 
 - [Threat Explorer (or real-time detections)](threat-explorer.md)
 
-- [Threat Protection Status report](view-reports-for-atp.md#threat-protection-status-report)
+- [Threat protection status report](view-reports-for-atp.md#threat-protection-status-report)
 
-- [ATP File Types report](view-reports-for-atp.md#atp-file-types-report)
+- [Advanced Threat Protection file types report](view-reports-for-atp.md#advanced-threat-protection-file-types-report)
 
-- [ATP Message Disposition report](view-reports-for-atp.md#atp-message-disposition-report)
+- [Advanced Threat Protection message disposition report](view-reports-for-atp.md#advanced-threat-protection-message-disposition-report)
 
 - ... and several more.
 
