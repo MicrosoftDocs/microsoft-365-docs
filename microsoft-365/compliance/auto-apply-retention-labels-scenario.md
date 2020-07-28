@@ -15,22 +15,22 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This solution scenario illustrates how to manage the lifecycle of product-related documents stored in SharePoint Online using retention labels. This is done by using document metadata to classify content, and specifically by auto-applying retention labels and configuring event-based retention."
+description: "This article shows how to manage the lifecycle of product-related documents stored in SharePoint Online by using retention labels. This process uses document metadata to classify content by auto-applying retention labels and configuring event-based retention."
 ---
 
 # Manage the lifecycle of SharePoint documents by using retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-This article describes how to manage the lifecycle of product-related documents that are stored in SharePoint Online by auto-applying retention labels and configuring event-based retention.
+This article describes how to manage the lifecycle of product-related documents that are stored in SharePoint Online by using automatically applied retention labels and configuring event-based retention.
 
-The auto-apply functionality uses SharePoint metadata for document classification. The scenario in this article is based on product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could manage the lifecycle of documents about physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you could manage bank account, mortgage, or insurance contract documents. In the public sector, you could manage documents related to construction permits or tax forms.
+The auto-apply functionality uses SharePoint metadata for document classification. The scenario in this article is for product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could use it to manage the lifecycle of documents about physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you could manage bank account, mortgage, or insurance contract documents. In the public sector, you could manage documents related to construction permits or tax forms.
 
-In this article, we'll look at the information architecture and definition of the retention labels. Then we'll classify documents by auto-applying the labels, and finally we'll generate the events that initiate the retention period.
+In this article, we'll look at the information architecture and definition of the retention labels. Then we'll classify documents by auto-applying the labels. And finally we'll generate the events that initiate the retention period.
 
 ## Information architecture
 
-The scenario for this article is a manufacturing company that uses SharePoint Online to store all the documents about the products that the company develops. These documents include product specifications, agreements with suppliers, and user manuals. When these documents are stored in SharePoint as part of Enterprise Content Management policies, document metadata is defined and used to classify them. Each document has the following metadata properties:
+Our scenario is a manufacturing company that uses SharePoint Online to store all the documents about the products that the company develops. These documents include product specifications, agreements with suppliers, and user manuals. When these documents are stored in SharePoint as part of Enterprise Content Management policies, document metadata is defined and used to classify them. Each document has the following metadata properties:
 
 - **Doc Type** (such as product specification, agreement, and user manual)
 
@@ -38,43 +38,43 @@ The scenario for this article is a manufacturing company that uses SharePoint On
 
 - **Status** (draft or final)
 
-This metadata forms the base content type called **Production Document** for all documents.
+This metadata forms a base content type called *Production Document* for all documents.
 
 ![Metadata for product documentation](../media/SPRetention1.png)
 
 > [!NOTE]
-> The **Doc Type** and **Status** properties are used by retention policies later in this scenario to classify and auto-apply retention labels.
+> The *Doc Type* and *Status* properties are used by retention policies later in this scenario to classify and auto-apply retention labels.
 
-We can have several content types that represent different types of documents, but let's focus on the Product Documentation.
+We might have several content types that represent different types of documents, but let's focus on the Product Documentation.
 
-In this scenario, we use the Managed Metadata service and the Term store to create a term set for **Doc Type** and another one for **Product Name**. For each term set, we create a term for each value. It would look like something like this in Term store for your SharePoint organization:
+In this scenario, we use the Managed Metadata service and the Term Store to create a term set for *Doc Type* and another one for *Product Name*. For each term set, we create a term for each value. It would look like something like this in Term Store for your SharePoint organization:
 
 ![Term set for product documentation in Term store](../media/SPRetention2.png)
 
-*Content Type* can be created and published using the [Content Type Hub](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). A content type can also be created and published by using site provisioning tools such as the [PnP provisioning framework](https://docs.microsoft.com/sharepoint/dev/solution-guidance/pnp-provisioning-framework) or [site design JSON schema](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
+*Content Type* can be created and published by using the [Content Type Hub](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). You can also create and publish a content type by using site provisioning tools, such as the [PnP provisioning framework](https://docs.microsoft.com/sharepoint/dev/solution-guidance/pnp-provisioning-framework) or [site design JSON schema](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
 
 Each product has a dedicated SharePoint Online site that contains one document library that has the right content types enabled. All documents are stored in this document library.
 
 ![Document library for product documentation](../media/SPRetention3.png)
 
 > [!NOTE]
-> Instead of having a SharePoint Online site per product, the manufacturing company in this scenario could use a Microsoft Team per product that would support collaboration with members of the team, such as persistent chat and use the **Files** tab in the team for document management. In this article we only focus on documents, therefore we will only use a site.
+> Instead of having a SharePoint Online site per product, the manufacturing company in this scenario could use a Microsoft Team per product to support collaboration among members of the team, such as through persistent chat and use the **Files** tab in Teams for document management. In this article we only focus on documents, so, we'll only use a site.
 
 Here's a view of the document library for the Spinning Widget product:
 
 ![Spinning Widget document library](../media/SPRetention4.png)
 
-Now that we have the basic information architecture in place for document management, let's look at the retention and disposal strategy for the documents that use the metadata and classification of documents.
+Now that we have the basic information architecture in place for document management, let's look at the retention and disposal strategy for the documents that use the metadata and the classification of those documents.
 
 ## Retention and disposition
 
-The manufacturing company's compliance and data governance policies dictate the way data is preserved and discarded. Product-related documents must be kept for as long as the product is manufactured, and for a certain period after that. This period differs for product specifications, agreements, and user manuals. The following table indicates the retention and disposition requirements:
+The manufacturing company's compliance and data governance policies dictate the way that data is preserved and discarded. Product-related documents must be kept for as long as the product is manufactured, and for a certain period after that. This period differs for product specifications, agreements, and user manuals. The following table indicates the retention and disposition requirements:
 
 | **Document type**          | **Retention**                          | **Disposition**                              |
 | -------------------------- | -------------------------------------- | -------------------------------------------- |
-| Product specification      | 5 years after cessation of production  | Delete                                       |
-| Product agreement          | 10 years after cessation of production | Review                                       |
-| User manual                | 5 years after cessation of production  | Delete                                       |
+| Product specifications      | 5 years after production stops  | Delete                                       |
+| Product agreements          | 10 years after production stops | Review                                       |
+| User manuals                | 5 years after production stops  | Delete                                       |
 | All other types of documents | Don't actively retain  | Delete when document is older than 3 years<sup>\*</sup>  |
 |||
 
@@ -96,28 +96,28 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **Name:** Product Specification
 
-- **Description for admins:** Retain for 5 years after cessation of production, auto delete, event-based retention, event type is *Product Cessation*.
+- **Description for admins:** Retain for 5 years after production stops, auto delete, event-based retention, event type is *Product Cessation*.
 
-- **Description for users:** Retain for 5 years after cessation of production.
+- **Description for users:** Retain for 5 years after production stops.
 
 - **Retention action:** Keep and delete.
 
 - **Retention duration:** 5 years (1,825 days).
 
-- **Record label**: Configure the retention label to classify content as a [*record*](records.md). (Documents that are classified as a record can't be modified or deleted by users.)
+- **Record label**: Configure the retention label to classify content as a [*record*](records.md). (Documents that are classified as a *record* can't be modified or deleted by users.)
 
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
 The following screenshot shows the settings when you create the Product Specification [retention label](retention.md#retention-labels) in the Microsoft 365 compliance center. You can create the *Product Cessation* event type when you create the retention label. See the following steps.
 
-![Retention settings for Product Specification label](../media/SPRetention5.png)
+![Retention settings for the Product Specification label](../media/SPRetention5.png)
 
 > [!NOTE]
-> To avoid a 5 year wait for document deletion, set the retention duration to 1 day if you're recreating this scenario in a test environment.
+> To avoid a 5-year wait for document deletion, set the retention duration to 1 day if you're recreating this scenario in a test environment.
 
 ### Create an event type when you create a retention label
 
-1. In the **Retain or delete content based** on dropdown list, select **an event**.
+1. From the **Retain or delete content based** on menu, select **an event**.
 
 2. Select **Choose an event type**.
     
@@ -125,7 +125,7 @@ The following screenshot shows the settings when you create the Product Specific
 
 3. Select **Choose an event type** and then select **Create new event types** on the **Choose an event type** page.
 
-4. Create an event type named **Product Cessation**, enter a description, and select **Finish** to create it. 
+4. Create an event type named **Product Cessation**, enter a description, and select **Finish** to create it.
 
 5. Back on the **Choose an event type** page, select the **Product Cessation** event type that you created, and then select **Add**.
 
@@ -138,11 +138,11 @@ Here's what the settings look like for the Product Specification retention label
 
 Now let's look at auto-applying the retention label to product-specification content.
 
-## Classifying content by auto-applying retention labels
+## Classify content by auto-applying retention labels
 
-We're going to [auto-apply](apply-retention-labels-automatically.md) the retention labels that created for this scenario by using Keyword Query Language (KQL). KQL is the language used to build search queries. In KQL, you can search by using keywords or managed properties. For more information about KQL, see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
+We're going to [auto-apply](apply-retention-labels-automatically.md) the retention labels that we created by using Keyword Query Language (KQL). KQL is the language used to build search queries. In KQL, you can search by using keywords or managed properties. For more information, see [Keyword Query Language (KQL) syntax reference](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
 
-Basically, we want to tell Microsoft 365 to "apply the **Product Specification** retention label to all documents that have a **Status** of ***Final*** and a **Doc Type** of ***Product Specification***. Recall that **Status** and **Doc Type** are the site columns that we defined for the Product Documentation content type in the [Information architecture](#information-architecture) section. To do this, we need to configure the search schema.
+Basically, we want to tell Microsoft 365 to "apply the *Product Specification* retention label to all documents that have a **Status** of ***Final*** and a **Doc Type** of ***Product Specification***. Recall that **Status** and **Doc Type** are the site columns that we defined for the Product Documentation content type in the [Information architecture](#information-architecture) section. To do this, we need to configure the search schema.
 
 When SharePoint indexes content, it automatically generates crawled properties for each site column. For this scenario, we're interested in the **Doc Type** and **Status** properties. We need documents in the library that are the right content type and have the site columns filled in for search to create the crawled properties.
 
@@ -154,26 +154,26 @@ If we type **status** in the **Crawled properties** box and select the green arr
 
 ![The ows_Status crawled property](../media/SPRetention9.png)
 
-The property **ows\_\_Status** (notice the double underscore) is the one that interests us. It maps to the **Status** property of the Production Document content type.
+The *ows\_\_Status* property (notice the double underscore) is the one that interests us. It maps to the *Status* property of the Production Document content type.
 
-Now, if we type **ows\_doc** and select the green arrow we should see something like this:
+Now, if we type **ows\_doc** and select the green arrow, we should see something like this:
 
 ![The ows_Doc_Type crawled property](../media/SPRetention10.png)
 
-The property **ows\_Doc\_x0020\_Type** is the second property that interests us. It maps to the **Doc Type** property of the Production Document content type.
+The *ows\_Doc\_x0020\_Type* property is the second property that interests us. It maps to the *Doc Type* property of the Production Document content type.
 
 > [!TIP]
-> To identify the name of a crawled property for this scenario, go the document library that contains the production documents and then go to the library settings. In the **Columns**, select the name of the column (for example, **Status** or **Doc Type**) to open the site column page. The **Field** parameter in the URL for that page contains the name of the field. This field name, prefixed with "ows_", is the name of the crawled property. For example, the URL `https://tenantname.sharepoint.com/sites/SpinningWidget/_layouts/15/FldEdit.aspx?List=%7BC38C2F45-3BD6-4C3B-AA3B-EF5DF6B3D172%7D&Field=_Status` corresponds to the **ows\_\_Status** crawled property.
+> To identify the name of a crawled property for this scenario, go the document library that contains the production documents and go to the library settings. For **Columns**, select the name of the column (for example, **Status** or **Doc Type**) to open the site column page. The **Field** parameter in the URL for that page contains the name of the field. This field name, prefixed with "ows_", is the name of the crawled property. For example, the URL `https://tenantname.sharepoint.com/sites/SpinningWidget/_layouts/15/FldEdit.aspx?List=%7BC38C2F45-3BD6-4C3B-AA3B-EF5DF6B3D172%7D&Field=_Status` corresponds to the *ows\_\_Status* crawled property.
 
-If the crawled properties you're looking for don't appear in the Manage Search Schema section in the SharePoint admin center, it could be for one of the following reasons:
+If the crawled properties you're looking for don't appear in the Manage Search Schema section in SharePoint admin center, it could be for one of the following reasons:
 
-- The documents haven't been indexed. You can force a reindex of the library by going to Document library settings > Advanced Settings.
+- The documents haven't been indexed. You can force a reindex of the library by going to **Document library settings** > **Advanced Settings**.
 
 - If the document library is in a modern site, make sure that the SharePoint admin is also a site collection admin.
 
 For more information about crawled and managed properties, see [Automatically created managed properties in SharePoint Server](https://docs.microsoft.com/sharepoint/technical-reference/automatically-created-managed-properties-in-sharepoint).
 
-### Mapping crawled properties to pre-defined managed properties
+### Map crawled properties to pre-defined managed properties
 
 KQL can't use crawled properties in search queries. It has to use a managed property. In a normal search scenario, we create a managed property and map it to the crawled property that we need. However, for auto-applying retention labels, you can only specify in KQL pre-defined managed properties and not custom managed properties. There's a set of predefined managed properties in the system for string RefinableString00 to RefinableString199 that you use. For a complete list, see [Default unused managed properties](https://docs.microsoft.com/sharepoint/manage-search-schema#default-unused-managed-properties). These defaults managed properties are typically used for defining search refiners.
 
