@@ -34,9 +34,9 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
 
 1. Go to  **eDiscovery > Advanced eDiscovery** and open the case.
   
-2. Click the **Custodians** tab.
+2. Click the **Sources** tab.
   
-3. Select a custodian from the list, and then click **View custodian activity** on the flyout page.
+3. On the **Custodians** page, select a custodian from the list, and then click **View custodian activity** on the flyout page.
 
     The Custodian activities search page is displayed. Note the custodian you selected in the previous step is displayed in the **Custodian** drop-down box. You can select different custodians in the drop-down box, but you can only search for activities for one custodian at a time.
 
@@ -44,15 +44,15 @@ You have to be assigned the View-Only Audit Logs or Audit Logs role in Exchange 
    
 4. Configure the following search criteria:
       
-   a. **Activities** - Click the drop-down list to display the activities that you can search for. After you run the search, only the audit records for the selected activities are displayed. Selecting **Show results for all activities** will display results for all activities performed by the custodian that match the other search criteria.
+   1. **Activities** - Click the drop-down list to display the activities that you can search for. After you run the search, only the audit records for the selected activities are displayed. Selecting **Show results for all activities** will display results for all activities performed by the custodian that match the other search criteria.
 
       ![List of Activities](../media/CustodianActivityAudit.PNG)
       
-      b. **Start date and End date** - Select a date and time range to display the events that occurred within that period. The last seven days are selected by default. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is one year.
+   1. **Start date and End date** - Select a date and time range to display the events that occurred within that period. The last seven days are selected by default. The date and time are presented in Coordinated Universal Time (UTC) format. The maximum date range that you can specify is one year.
       
-      c. **Custodians** - Click in this box and then select a specific custodian to display search results for. Audit records for the selected activity performed by the users you select in this box are displayed in the list of results.
+   1. **Custodians** - Click in this box and then select a specific custodian to display search results for. Audit records for the selected activity performed by the users you select in this box are displayed in the list of results.
       
-   5. Click   ![Search Button](../media/SearchButton.PNG)  to run the search using your search criteria. The search results are loaded, and after a few moments they are displayed under Results on the Custodian Activities search page. 
+5. Click ![Search Button](../media/SearchButton.PNG)  to run the search using your search criteria. The search results are loaded, and after a few moments they are displayed under Results on the Custodian Activities search page. 
 
 ## Step 2: View the audit log search results
 

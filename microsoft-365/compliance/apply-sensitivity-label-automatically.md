@@ -42,7 +42,7 @@ There are two different methods for automatically applying a sensitivity label:
 
 - **Service-side labeling when content is already saved (in SharePoint or OneDrive) or emailed (processed by Exchange Online)**: Use an auto-labeling policy. 
     
-    This method is referred to as auto classification with sensitivity labels. You might also hear it referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
+    You might also hear this method referred to as auto-labeling for data at rest (documents in SharePoint and OneDrive) and data in transit (email that is sent or received by Exchange). For Exchange, it doesn't include emails at rest (mailboxes). 
     
     Because this labeling is applied by services rather than by applications, you don't need to worry about what apps users have and what version. As a result, this capability is immediately available throughout your organization and suitable for labeling at scale. Auto-labeling policies don't support recommended labeling because the user doesn't interact with the labeling process. Instead, the administrator runs the policies in simulation mode to help ensure the correct labeling of content before actually applying the label.
     
@@ -69,7 +69,7 @@ There are two different methods for automatically applying a sensitivity label:
 Use the following table to help you identify the differences in behavior for the two complementary automatic labeling methods:
 
 |Feature or behavior|Label setting: Auto-labeling for Office apps |Policy: Auto-labeling|
-|:-----|:-----|:-----|:-----|
+|:-----|:-----|:-----|
 |App dependency|[Yes](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps) |No |
 |Restrict by location|No |Yes |
 |Conditions: Trainable classifiers|Yes |No |
@@ -110,7 +110,7 @@ When this sensitivity label is automatically applied, the user sees a notificati
 
 ### Configuring sensitive info types for a label
 
-When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personally identifiable information (PII), such as credit card numbers, social security numbers, or passport numbers:
+When you select the **Sensitive info types** option, you see the same list of sensitive information types as when you create a data loss prevention (DLP) policy. So you can, for example, automatically apply a Highly Confidential label to any content that contains customers' personal information, such as credit card numbers, social security numbers, or passport numbers:
 
 ![Sensitive info types for auto-labeling in Office apps](../media/sensitivity-labels-sensitive-info-types.png)
 
@@ -122,6 +122,8 @@ Further, you can choose whether a condition must detect all sensitive informatio
 
 ### Configuring trainable classifiers for a label
 
+This option is currently in preview.
+
 When you select the **Trainable classifiers** option, select one or more of the built-in trainable classifiers from Microsoft. If you've created your own custom trainable classifiers, these are also available to select:
 
 ![Options for trainable classifiers and sensitivity labels](../media/sensitivity-labels-classifers.png)
@@ -131,9 +133,9 @@ When you select the **Trainable classifiers** option, select one or more of the 
 
 For more information about these classifiers, see [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md).
 
-During the preview period, the following apps support trainable classifiers for sensitivity labels:
+During the preview period for this option, the following apps support trainable classifiers for sensitivity labels:
 
-- Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows, from the [Beta Channel](https://office.com/insider) ([formerly Office Insider](https://docs.microsoft.com/deployoffice/update-channels-changes)):
+- Microsoft 365 Apps for enterprise ([formerly Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) for Windows, now rolling out to the [Current Channel](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) in version 2006 and later:
     - Word
     - Excel
     - PowerPoint
@@ -186,7 +188,7 @@ Make sure you're aware of the prerequisites before you configure auto-labeling p
 
 - Simulation mode:
     - Auditing for Microsoft 365 must be turned on. If you need to turn on auditing or you're not sure whether auditing is already on, see [Turn audit log search on or off](turn-audit-log-search-on-or-off.md).
-    - To view file contents in the source view, you must have the **Content Explorer Content viewer** role if you're not a global admin. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
+    - To view file contents in the source view, you must have the **Content Explorer Content Viewer** role. Global admins don't have this role by default. If you don't have this permission, you don't see the previewer pane when you select an item from the **Matched Items** tab.
 
 - To auto-label files in SharePoint and OneDrive:
     - You have [enabled sensitivity labels for Office files in SharePoint and OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
@@ -300,8 +302,8 @@ You can modify your policy directly from this interface:
 Your auto-policies run continuously until they are deleted. For example, new and modified documents will be included with the current policy settings.
 
 You can also see the results of your auto-labeling policy by using [content explorer](data-classification-content-explorer.md) when you have the appropriate [permissions](data-classification-content-explorer.md#permissions):
-- **Content Explorer List viewer** lets you see a file's label but not the file's contents.
-- **Content Explorer Content viewer** lets you see the file's contents.
+- **Content Explorer List Viewer** lets you see a file's label but not the file's contents.
+- **Content Explorer Content Viewer** lets you see the file's contents.
 
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.

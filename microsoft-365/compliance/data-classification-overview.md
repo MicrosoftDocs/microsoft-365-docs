@@ -20,7 +20,7 @@ description: "The data classification dashboard gives you visibility into how mu
 
 # Know your data - data classification overview
 
-As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](labels.md), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
+As a Microsoft 365 administrator or compliance administrator, you can evaluate and then tag content in your organization in order to control where it goes, protect it no matter where it is and to ensure that it is preserved and deleted according your your organizations needs. You do this through the application of [sensitivity labels](sensitivity-labels.md), [retention labels](retention.md#retention-labels), and sensitive information type classification. There are various ways to do the discovery, evaluation and tagging, but the end result is that you may have very large number of documents and emails that are tagged and classified with one or both of these labels. After you apply your retention labels and sensitivity labels, you'll want to see how the labels are being used across your tenant and what is being done with those items. The data classification page provides visibility into that body of content, specifically:
 
 - the number items that have been classified as a sensitive information type and what those classifications are
 - the top applied sensitivity labels in both Microsoft 365 and Azure Information Protection
@@ -74,8 +74,8 @@ To find out how many items are in any given classification category, hover over 
 
 > [!NOTE]
 > If the card displays the message "No data found with sensitive information". It means that there are no items in your organization that have been classified as being a sensitive information type or no items that have been crawled. To get started with labels, see:
->- [Sensitivity labels](sensitivity-labels.md)
->- [Retention labels](labels.md)
+>- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md)
+>- [Get started with retention policies and retention labels](get-started-with-retention.md)
 >- [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
 
 ## Top sensitivity labels applied to content
@@ -99,7 +99,7 @@ The sensitivity label card shows the number of items (email or document) by sens
 
 ## Top retention labels applied to content
 
-Retention labels are used to manage the disposition of content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion, when it's retention period expires, or whether it should be marked as a record which can never be deleted. For more information see, [Overview of retention labels](labels.md).
+Retention labels are used to manage the disposition of content in your organization. When applied, they can be used to control how long a document will be kept before deletion, whether it should be reviewed prior to deletion, when it's retention period expires, or whether it should be marked as a record which can never be deleted. For more information see, [Learn about retention policies and retention labels](retention.md).
 
 The top applied retention labels card shows you how many items have a given retention label.
 
@@ -107,7 +107,7 @@ The top applied retention labels card shows you how many items have a given rete
 
 > [!NOTE]
 > If this card displays the message, "No retention labels detected, it means you haven't created or published any retention  labels or no content has had a retention label applied. To get started with retention labels, see:
->- [Overview of retention labels](labels.md)
+>- [Get started with retention policies and retention lables](get-started-with-retention.md)
 
 ## Top activities detected
 
@@ -127,10 +127,9 @@ The point of the data classification reporting is to provide visibility into the
 
 ## See also
 
-- [View label activity (preview)](data-classification-activity-explorer.md)
-- [View labeled content (preview)](data-classification-content-explorer.md)
-- [Sensitivity labels](sensitivity-labels.md)
-- [Retention labels](labels.md)
+- [View label activity](data-classification-activity-explorer.md)
+- [View labeled content](data-classification-content-explorer.md)
+- [Learn about sensitivity labels](sensitivity-labels.md)
+- [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
-- [Overview of retention policies](retention-policies.md)
 - [Getting started with trainable classifiers (preview)](classifier-getting-started-with.md)

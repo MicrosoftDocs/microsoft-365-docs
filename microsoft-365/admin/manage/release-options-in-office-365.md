@@ -38,6 +38,9 @@ With Microsoft 365, you receive new product updates and features as they become 
   
 > [!IMPORTANT]
 > The Microsoft 365 updates described in this article apply to Microsoft 365, SharePoint Online, and Exchange Online. They do not apply to Skype for Business and related services. These release options are targeted, best effort ways to release changes to Microsoft 365 but cannot be guaranteed at all times or for all updates. 
+
+> [!NOTE]
+> For information about update channels for applications, see [Overview of update channels for Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/overview-update-channels). 
   
 ## How it works - release validation
 

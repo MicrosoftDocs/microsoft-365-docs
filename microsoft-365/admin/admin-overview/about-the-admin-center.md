@@ -84,7 +84,7 @@ Here are the features and settings you'll find in the left-hand navigation of th
    
 ## Common tasks in the admin center
 
-- Manage users: [Add users individually](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
+- Manage users: [Add users and assign licenses at the same time](../add-users/add-users.md), [Delete or restore users](../add-users/delete-a-user.md), or [Reset a user's password](../add-users/reset-passwords.md).
 
 - Get help with billing: [Billing](../../commerce/index.yml)
 
