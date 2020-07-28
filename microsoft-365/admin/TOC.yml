@@ -222,14 +222,14 @@
            href: setup/upgrade-users-to-latest-office-client.md
          - name: Requirements for centralized deployment of add-ins
            href: manage/centralized-deployment-of-add-ins.md
-         - name: Install and manage add-ins by using Centralized Deployment
+         - name: Deploy add-ins in the admin center 
            href: manage/manage-deployment-of-add-ins.md
+         - name: Manage add-ins in the admin center 
+           href: manage/manage-addins-in-the-admin-center.md
          - name: Centralized Deployment FAQ
            href: manage/centralized-deployment-faq.md
          - name: Find a partner or a re-seller
            href: manage/find-your-partner-or-reseller.md
-         - name: About Message center
-           href: manage/message-center.md
          - name: Manage Message center messages
            href: manage/manage-messages.md
          - name: Set up release options
@@ -294,12 +294,12 @@
           href: ../business/device-states.md
         - name: App protection settings for Windows 10 PCs
           href: ../business/protection-settings-for-windows-10-devices.md
-        - name: App protection settings for Android and iOS
+        - name: Set app protection settings for Android and iOS
           href: ../business/app-protection-settings-for-android-and-ios.md
           items: 
             - name: Validate settings on Android or iOS
               href: ../business/validate-settings-on-android-or-ios.md
-        - name: Device protection settings  for Windows 10 PCs
+        - name: Set device protection settings  for Windows 10 PCs
           href: ../business/protection-settings-for-windows-10-pcs.md
           items: 
             - name: Validate settings on Windows 10 PCs

@@ -27,7 +27,7 @@ Managing security and compliance is a partnership. You are responsible for prote
 
 Orient yourself to the information protection capabilities in the Information Protection for Office 365 poster. 
   
-[PDF](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.pdf) | [Visio](https://download.microsoft.com/download/2/3/D/23D91386-8349-4F7A-9470-FD5AED861F16/MSFT_cloud_architecture_informationprotection.vsd)
+[Deploy information protection for data privacy regulations with Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/information-protection-deploy?view=o365-worldwide)
   
 ## Step 2: Check your Secure Score
 

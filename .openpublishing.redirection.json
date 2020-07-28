@@ -863,6 +863,21 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "microsoft-365/compliance/labels.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/retention",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/retention-policies.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/retention",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/create-retention-labels.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "microsoft-365/security/mtp/microsoft-secure-score-new.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score",
       "redirect_document_id": false
@@ -875,6 +890,16 @@
     {
       "source_path": "microsoft-365/compliance/working-with-compliance-score.md",
       "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/compliance-score",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/compliance/automate-event-driven-retention.md",
+      "redirect_url": "https://docs.microsoft.com/microsoft-365/compliance/event-driven-retention#automate-events-by-using-a-rest-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "microsoft-365/business/set-up-conditional-access-policies.md",
+      "redirect_url": "https://docs.microsoft.com/azure/active-directory/conditional-access/overview",
       "redirect_document_id": false
     }
   ]
