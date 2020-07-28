@@ -30,7 +30,7 @@ Topic center users can be given two sets of permissions:
 - Manage topics: Use the Topic management dashboard to review topics across the organization. Users can perform actions such as confirm and reject topics
 
 
-## Reviewing unconfirmed topics
+## Review unconfirmed topics
 
 On the Knowledge Center home page, topics that were discovered in your specified SharePoint source locations will be listed in the **Unconfirmed** tab. A user with permissions to manage topics can review unconfirmed topics and choose to confirm or reject them.
 
@@ -84,12 +84,12 @@ Existing topic pages can be found in the **Pages** page.
 1. On the Topic Center page, select **Pages**.
 2. On the **Pages** page, you will see a list of topic pages. Use the Search box to find the topic page you want to update. Click on the name of the topic page that you want to edit.
 3. On the topic page, select **Edit**. 
-4. Make the changes you need to the page. This includes updates to the following fields:
-    a. Alternate names
-    b. Description
-    c. People
-    d. Files and pages
-    e. Sites
+4. Make the changes you need to the page. This includes updates to the following fields:</br>
+    a. Alternate names</br>
+    b. Description</br>
+    c. People</br>
+    d. Files and pages</br>
+    e. Sites</br>
     You can also add static items to the page - such as text, images, or link - by selecting the canvas icon (show image of icon).
 5. Select **Republish** to save your changes.
 

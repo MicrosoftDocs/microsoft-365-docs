@@ -4,7 +4,7 @@
 
     - name: Get started with Knowledge Management
       items: 
-        - name: Knowledge management overivew
+        - name: Knowledge management overview
           href: knowledge-management-overview.md 
         - name: Topic Center overview 
           href: topic-center-overview.md 
@@ -12,10 +12,7 @@
           href: work-with-topics.md   
         - name: Give users permissions to the Topic Center
           href: give-user-permissions-to-the-topic-center.md 
-        - name: How to edit a topic page or card
-          href: .md 
-        - name: How to add or remove people from accessing a topic
-          href: .md 
+ 
 
     
     - name: Get started with setup

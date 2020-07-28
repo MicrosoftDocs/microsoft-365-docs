@@ -1,5 +1,5 @@
 ---
-title: "Give user permissions to the Topic Center"
+title: "Give user permissions to the topic center"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -12,7 +12,7 @@ localization_priority: Normal
 description: "Learn how to give users permissions to do tasks in the Topic Center"
 ---
 
-# Give user permissions to the Topic Center
+# Give user permissions to the topic center
 
 In order to work in the topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be added afterwards.
 
