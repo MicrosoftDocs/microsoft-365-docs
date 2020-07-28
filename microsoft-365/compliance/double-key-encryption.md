@@ -537,7 +537,7 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 
 Enable DKE for your client by adding the following registry keys:
 
-```ini
+```properties
     [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]
     "DoubleKeyProtection"=dword:00000001
 
