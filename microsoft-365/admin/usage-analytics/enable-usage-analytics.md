@@ -32,7 +32,7 @@ description: "Learn how to start collecting data for your tenant by using the Mi
 
 ::: moniker-end
 
-Microsoft 365 usage analytics is also available for Microsoft 365 US Government Community.
+Microsoft 365 usage analytics is not yet available for Microsoft 365 US Government Community.
   
 ## Steps to enable Microsoft 365 usage analytics
 
