@@ -29,7 +29,7 @@ To understand your data landscape and identify important data across your hybrid
  
 |Capability|What problems does it solve?|Documentation|
 |:------|:------------|:--------------------|:-----------------------------|
-|[Trainable classifers](classifier-creating-a-trainable-classifier.md)| Classifies data for you, using one of the built-in classifiers or train a classifer with your own content | [Getting started with trainable classifiers (preview)](classifier-creating-a-trainable-classifier.md) |
+|[Trainable classifiers](classifier-creating-a-trainable-classifier.md)| Classifies data for you, using one of the built-in classifiers or train a classier with your own content | [Getting started with trainable classifiers (preview)](classifier-creating-a-trainable-classifier.md) |
 |[Sensitive information types](what-the-sensitive-information-types-look-for.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
 |[Content explorer](data-classification-content-explorer.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization  | [Get started with content explorer](data-classification-content-explorer.md) |
 |[Activity explorer](data-classification-activity-explorer.md) |Identifies what's being done with your labeled content | [Get started with activity explorer](data-classification-activity-explorer.md)|
