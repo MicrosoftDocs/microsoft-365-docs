@@ -50,7 +50,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Dec 31, 2020 | Dec 31, 2023 |
 | [HP Z2 Mini G4 Workstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Jan 31, 2021 | Jan 31, 2024 |
 | [HP ZBook 14u/15u G6 Mobile Workstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS02AV, IR camera required | Nov 30, 2020 | Nov 30, 2023 |
-| **\*[Surface Book 3](https://www.microsoft.com/en-us/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB / Intel i5 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
+| **\*[Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab)** | 256 GB / Intel i5 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
 | **\*[Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab)** | 128 GB / Intel Core M3 / 8GB RAM | None | May 21, 2022 | May 21, 2027 |
 | [Surface Laptop 2](https://www.microsoft.com/p/surface-laptop-2-for-business/8xlk0g60tlb6/hkq9?cid=msft_web_collection&CustomerIntent=Consumer) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 16, 2020 | Oct 16, 2023 |
 | [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB / Intel i5 / 8 GB RAM | None | Oct 22, 2021 | Oct 22, 2024 |
