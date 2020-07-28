@@ -15,7 +15,7 @@ metadata:
   ms.collection: M365-subscription-management
   author: robmazz #Required; your GitHub user alias, with correct capitalization.
   ms.author: robmazz #Required; microsoft alias of author; optional team alias.
-  ms.date: 11/29/2019 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -53,9 +53,6 @@ conceptualContent:
         - url: deploy-workloads.md
           itemType: how-to-guide
           text: Workloads
-        - url: desktop-deployment-center-home.md
-          itemType: get-started
-          text: Desktop Deployment Center
     # Card
     - title: Deploy key elements
       links:
