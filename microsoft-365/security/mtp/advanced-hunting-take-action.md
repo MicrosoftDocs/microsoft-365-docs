@@ -66,14 +66,11 @@ To take any of the described actions, select one or more records in your query r
 ![Image of selected record with panel for inspecting the record](../../media/mtp-ah/inspect-record.png)
 
 ## Review actions taken
-Each action is individually recorded in the action center under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.
+Each action is individually recorded in the [action center](mtp-action-center.md) under **Action center** > **History** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)). Go to the action center to check the status of each action.
  
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
-- [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
-- [Apply query best practices](advanced-hunting-best-practices.md)
-- [Custom detections overview](custom-detections-overview.md)
+- [Action center overview](mtp-action-center.md)
