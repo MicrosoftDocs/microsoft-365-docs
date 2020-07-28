@@ -535,8 +535,6 @@ Any DKE labels you add will start appearing for users in the latest versions of 
 
 ### Enable DKE in your client
 
-If your DKE labels don't appear under the Sensitivity ribbon in Microsoft Office, your client may not have DKE enabled.
-
 Enable DKE for your client by adding the following registry keys:
 
 ```ini
