@@ -55,7 +55,7 @@ To prevent an employee from logging in:
 
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
     
-4. Select the user's name to go to their properties pane, and on the **OneDrive** tab, select **Initiate sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
 
 ::: moniker-end
 
@@ -67,7 +67,7 @@ To prevent an employee from logging in:
 
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
 
-4. Select the user again, expand **OneDrive Settings**, and then select **Initiate** next to **Sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
 
 ::: moniker-end
 
@@ -79,9 +79,12 @@ To prevent an employee from logging in:
 
 3. Enter a new password, and then select **Reset**. (Don't send it to them.)
 
-4. Select the user again, expand **OneDrive Settings**, and then select **Initiate** next to **Sign-out**.
+4. Select the user's name to go to their properties pane, and on the **Account** tab, select **Initiate sign-out**.
 
 ::: moniker-end
+
+> [!NOTE]
+> You need to be a Global Administrator to Intiate Sign-out.
 
     
 Within an hour - or after they leave the current Microsoft 365 page they are on - they will be prompted to sign in again. (An access token is good for an hour, so the timeline depends on how much time is left on that token and whether they navigate out of their current webpage.)
