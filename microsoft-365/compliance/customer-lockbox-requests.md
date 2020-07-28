@@ -71,7 +71,7 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
 2. Choose **Settings > Org Settings**.
 
-3. Click **Services** and Click on **Customer Lockbox**, Then choose **Edit**, and then move the toggle to **On** or **Off** to turn the feature on or off.
+3. Select **Services** > **Customer Lockbox** > **Edit**, and then move the toggle to **On** or **Off** to turn the feature on or off.
 
     ![Require approval for Customer Lockbox](../media/CustomerLockbox4.png)
 
