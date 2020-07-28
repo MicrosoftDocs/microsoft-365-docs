@@ -27,24 +27,24 @@ Discovering and managing data is challenging. Use Microsoft Information Protecti
 
 To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
  
-|Capability|What problems does it solve?|Documentation|
+|Capability|What problem does it solve?|Documentation|
 |:------|:------------|:--------------------|:-----------------------------|
-|[Trainable classifiers](classifier-creating-a-trainable-classifier.md)| Classifies data for you, using one of the built-in classifiers or train a classier with your own content | [Getting started with trainable classifiers (preview)](classifier-creating-a-trainable-classifier.md) |
-|[Sensitive information types](what-the-sensitive-information-types-look-for.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
+|[Trainable classifiers](classifier-creating-a-trainable-classifier.md)| Classify data for you, using one of the built-in classifiers or train a classier with your own content | [Getting started with trainable classifiers (preview)](classifier-creating-a-trainable-classifier.md) |
+|[Sensitive information types](what-the-sensitive-information-types-look-for.md)| Identify sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
 |[Content explorer](data-classification-content-explorer.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization  | [Get started with content explorer](data-classification-content-explorer.md) |
-|[Activity explorer](data-classification-activity-explorer.md) |Identifies what's being done with your labeled content | [Get started with activity explorer](data-classification-activity-explorer.md)|
+|[Activity explorer](data-classification-activity-explorer.md) |Identify how your labeled content is used | [Get started with activity explorer](data-classification-activity-explorer.md)|
 
 ## Protect your data
 
 To apply flexible protection actions including encryption, access restrictions, and visual markings, use the following capabilities:
 
-|Capability|What problems does it solve?|Documentation|
+|Capability|What problem does it solve?|Documentation|
 |:------|:------------|---------------------|:----------------------------|
 |[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization|[ Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends sensitivity labels for additional features and functionality that includes labeling and protecting all file types from File Explorer and PowerShell| [Azure Information Protection unified labeling client administrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[Double Key Encryption](double-key-encryption.md)| Under all circumstances, only you can ever decrypt protected content, or for regulatory requirements you must hold encryption keys within a geographical boundary | [Deploy Double Key Encryption](double-key-encryption.md#deploy-double-key-encryption)|
-|[Office 365 Message Encryption](ome.md) (OME)| Encrypts email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information | [Get started with Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md)|
-|[Service encryption with Customer Key](customer-key-overview.md) | Protects against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters | [Set up Customer Key for Office 365](customer-key-set-up.md)|
+|[Office 365 Message Encryption](ome.md) (OME)| Encrypt email messages and attached documents that are sent to any user on any device, so only authorized recipients can read emailed information | [Get started with Office 365 Message Encryption](set-up-new-message-encryption-capabilities.md)|
+|[Service encryption with Customer Key](customer-key-overview.md) | Protect against viewing of data by unauthorized systems or personnel, and complements BitLocker disk encryption in Microsoft datacenters | [Set up Customer Key for Office 365](customer-key-set-up.md)|
 |[SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)|Protect SharePoint lists and libraries so that when a user checks out a document, the downloaded file is protected so that only authorized people can view and use the file according to policies that you specify | [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md)|
 [Rights Management connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector) |Protection-only for existing on-premises deployments that use Exchange or SharePoint Server, or file servers that run Windows Server and File Classification Infrastructure (FCI) | [Steps to deploy the RMS connector](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector#steps-to-deploy-the-rms-connector)
 |[Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)| Discover, label, and protect sensitive information that resides in data stores that are on premises | [Configuring and installing the Azure Information Protection unified labeling scanner](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)|
@@ -56,7 +56,7 @@ To apply flexible protection actions including encryption, access restrictions, 
 To detect risky behavior and prevent accidental oversharing of sensitive information, use the following capabilities:
 
 
-|Capability|What problems does it solve?|Documentation|
+|Capability|What problem does it solve?|Documentation|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Prevents data leaking from your organization's boundaries | [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) <br /><br /> [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
-|[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Help prevents risky behavior that might compromise sensitive items that are used and shared on Windows 10 computers. | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
+|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Prevent data leaking from your organization's boundaries | [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) <br /><br /> [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Prevents risky behavior that might compromise sensitive items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
