@@ -74,6 +74,12 @@ Users with permissions to the group mailbox can send as or send on behalf of the
 
 Currently it's not possible to migrate a shared mailbox to a Microsoft 365 group. Is this something you want? Let us know. **[Vote here](https://go.microsoft.com/fwlink/?linkid=871518)**.
 
+# Upgrade distribution lists to Microsoft 365 Groups in Outlook
+
+You can upgrade distribution lists to Microsoft 365 Groups with Outlook. This is a great way to give your organization's distribution lists all the features and functionality of Microsoft 365 Groups. [Why you should upgrade your distribution lists to groups in Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+
+You can upgrade DLs one at a time, or several at the same time. For more information, See [Upgrade distribution lists to Microsoft 365 Groups in Outlook](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists?view=o365-worldwide)
+
 ## Related articles
 
 [Learn about Microsoft 365 groups](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
