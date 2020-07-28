@@ -39,13 +39,13 @@
       - name: Overview
       - href: networking-infrastructure.md
     - name: Multi-Geo
-    items:
-      - name: Overview
-      - href: networking-infrastructure.md
+      items:
+        - name: Overview
+        - href: networking-infrastructure.md
     - name: Move to a new Microsoft 365 datacenter geo
       items:
-      - name: Overview
-      - href: networking-infrastructure.md
+        - name: Overview
+        - href: networking-infrastructure.md
 
 - name: Identity
   items:
