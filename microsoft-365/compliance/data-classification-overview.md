@@ -127,8 +127,8 @@ The point of the data classification reporting is to provide visibility into the
 
 ## See also
 
-- [View label activity (preview)](data-classification-activity-explorer.md)
-- [View labeled content (preview)](data-classification-content-explorer.md)
+- [View label activity](data-classification-activity-explorer.md)
+- [View labeled content](data-classification-content-explorer.md)
 - [Learn about sensitivity labels](sensitivity-labels.md)
 - [Learn about retention policies and retention labels](retention.md)
 - [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md)
