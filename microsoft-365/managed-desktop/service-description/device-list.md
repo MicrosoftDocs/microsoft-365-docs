@@ -46,7 +46,7 @@ The links to devices here are for your reference only. If you want to order devi
 | [HP EliteBook x360 830 G6 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-830-g6-notebook-pc) | 128 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera or fingerprint sensor required | Nov 30, 2020 | Nov 30, 2023 |
 | [HP Elite x2 G4 Tablet](https://store.hp.com/us/en/mdp/laptops/hp-elite-x2-3074457345617405170--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS03AV | July 31, 2021 | July 31, 2024 |
 | [HP EliteBook x360 1030 G4 Notebook PC](https://store.hp.com/us/en/pdp/hp-elitebook-x360-1030-g4-notebook-pc) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV | Feb 28, 2021 | Feb 28, 2024 |
-| [HP EliteBook x360 1040 G6](http://www.hp.com/go/elitebookx360-1040) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV| Nov 30, 2020 | Nov 30, 2023 |
+| [HP EliteBook x360 1040 G6](https://www.hp.com/go/elitebookx360-1040) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV| Nov 30, 2020 | Nov 30, 2023 |
 | [HP Elite DragonFly](https://www8.hp.com/us/en/laptops/2-in-1s/elite-dragonfly-convertible.html) | 256 GB / Intel i5 / 8 GB RAM | SKU with 9MZ21AV | Dec 31, 2020 | Dec 31, 2023 |
 | [HP Z2 Mini G4 Workstation](https://store.hp.com/us/en/mdp/hp-z2-mini-workstation-451004--1) | 256 GB / Intel i5 / 8 GB RAM | SKU with 8QR48AV| Jan 31, 2021 | Jan 31, 2024 |
 | [HP ZBook 14u/15u G6 Mobile Workstation](https://store.hp.com/us/en/mdp/hp-zbook-14u-mobile-workstation) | 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS02AV, IR camera required | Nov 30, 2020 | Nov 30, 2023 |
