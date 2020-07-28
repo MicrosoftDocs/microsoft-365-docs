@@ -125,6 +125,12 @@ When the pre-trained classifiers don't meet your needs, you can create and train
 > [!IMPORTANT]
 > Only the user who creates a custom classifier can train and review predictions made by that classifier.
 
+### Lifecycle of a classifier
+
+
+
+You can help improve the accuracy of all custom classifiers and some pre-trained classifiers by providing them with feedback on the quality of the classification that they perform.  
+
 #### Process flow for creating custom classifiers
 
 Creating and publishing a classifier for use in compliance solutions, such as retention policies and communication supervision, follows this flow. For more detail on creating a custom trainable classifier see, [Creating a custom classifier](classifier-creating-a-trainable-classifier.md).
