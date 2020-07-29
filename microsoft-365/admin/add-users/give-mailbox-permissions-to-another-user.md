@@ -53,7 +53,7 @@ Once you've set up the permissions, it can take up to 60 minutes for the changes
 There are a few different ways you can access a mailbox once you've been given access. For help on this, refer to this article: [Access another person's mailbox](https://support.microsoft.com/office/A909AD30-E413-40B5-A487-0EA70B763081).
 
 > [!NOTE]
-> The Permissions can be setup only within the current organization tenant. It is not possible to setup mailbox permissions with out of tenant Users.
+> The permissions can be set up only within the current organization tenant. It is not possible to set up mailbox permissions with out of tenant users.
   
 ## Send email from another user's mailbox
 
