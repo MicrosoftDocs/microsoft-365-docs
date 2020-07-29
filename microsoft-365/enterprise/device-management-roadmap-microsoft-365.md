@@ -1,32 +1,31 @@
 ---
-title: Phase 5 - Mobile device management 
-description: Microsoft 365 Enterprise includes mobile device management using Microsoft Intune. Review the requirements and prerequisites, set up Intune using your Azure Active Directory resource, enroll iOS, macOS, Android, and Windows devices, deploy apps, create a configure profile, use a compliance policy, and enable conditional access for mobile device management with Microsoft 365 Enterprise.
+title: Device management roadmap for Microsoft 365 
 keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, mobile device management, Intune
 author: JoeDavies-MSFT 
-f1.keywords:
-- NOCSH
 ms.author: josephd
 manager: laurawi
 ms.date: 10/03/2019
 ms.topic: conceptual 
-
+f1.keywords:
+- NOCSH
 ms.prod: microsoft-365-enterprise
 ms.service: 
 ms.technology: 
 ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
+description: The roadmap to set up device management for Microsoft 365.
 ---
 
-# Phase 5: Mobile device management for Microsoft 365 Enterprise
-
-![Phase 5: Mobile Device Management](../media/deploy-foundation-infrastructure/mobiledevicemgmt_icon.png)
-
-*This feature applies to the E3 and E5 versions of Microsoft 365 Enterprise*
+# Device management roadmap for Microsoft 365
 
 Microsoft 365 Enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. 
 
-In this phase, you enroll your devices in Intune, and create and enforce policies to help keep your data secure and protected. The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune). It's also good practice to review the [Intune deployment planning, design and implementation guide](https://docs.microsoft.com/intune/planning-guide) before you get started.
+Enroll your devices in Intune and create and enforce policies to help keep your data secure and protected. 
+
+The entire library of Intune documentation is [available online](https://docs.microsoft.com/intune). 
+
+It's also good practice to review the [Intune deployment planning, design and implementation guide](https://docs.microsoft.com/intune/planning-guide) before you get started.
 
 ## Step 1: Plan for your scenario
 
@@ -78,12 +77,6 @@ To manage devices, the devices must be enrolled in Intune. As an administrator, 
 
 Enrollment is a key step when using Intune. [Enroll devices](https://docs.microsoft.com/intune/device-enrollment) lists the steps for the different devices.
 
-|||
-|:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: iOS and Android device enrollment](enroll-ios-and-android-devices-in-your-microsoft-enterprise-365-dev-test-environ.md) |
-|||
-
-
 ## Step 5: Add and deploy apps
 
 Apps on mobile devices are often the quickest way users get access to your corporate resources. 
@@ -95,11 +88,6 @@ Intune can manage apps, including add apps, assign them to different users or gr
 When users get a mobile device, one of the first tasks is to access organizational email and documents. Using Intune, you can [create and deploy email settings](https://docs.microsoft.com/intune/email-settings-configure) using email apps that are pre-installed on the devices. 
 
 The [Add apps](https://docs.microsoft.com/intune/apps/apps-add) article lists the steps to add, deploy, monitor, configure, and protect apps on devices within your org.
-
-|||
-|:-------|:-----|
-|![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon-small.png)| [Test Lab Guide: Device compliance policies](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md) |
-|||
 
 ## Step 6: Turn on compliance and conditional access
 
@@ -147,11 +135,11 @@ Microsoft provides a set of recommendations for [identity and device access](mic
 - [Prerequisites](identity-access-prerequisites.md)
 - [Common identity and device access policies](identity-access-policies.md)
 
-## How Microsoft does Microsoft 365 Enterprise
+## How Microsoft does device management for Microsoft 365
 
 Learn how IT experts at Microsoft [manage devices with EMS](https://www.microsoft.com/itshowcase/deploying-and-managing-microsoft-365#primaryR8).
 
-## How Contoso did Microsoft 365 Enterprise
+## How Contoso did device management for Microsoft 365
 
 See how the Contoso Corporation, a fictional but representative multi-national business, [deployed their mobile device management infrastructure](contoso-mdm.md) with Microsoft 365 cloud services.
 
@@ -159,5 +147,6 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 ## Next step
 
-[Mobile device management infrastructure exit criteria](mobility-infrastructure-exit-criteria.md)
+TBD
+
 

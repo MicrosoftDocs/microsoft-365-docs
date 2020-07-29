@@ -1,5 +1,5 @@
 ---
-title: Client and server software for Microsoft 365
+title: Client and server software roadmap for Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -12,9 +12,23 @@ ms.service: o365-solutions
 localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
-description: Description TBD.
+description: The roadmap to set up client and server software for Microsoft 365.
 ---
 
 # Client and server software roadmap for Microsoft 365
 
 Client and server software roadmap content
+
+## How Microsoft does client and server software for Microsoft 365
+
+TBD
+
+## How Contoso did Client and server software for Microsoft 365
+
+TBD
+
+![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
+
+## Next step
+
+TBD

@@ -1,5 +1,5 @@
 ---
-title: "Migration to Microsoft 365 Enterprise"
+title: "Migration roadmap for Microsoft 365"
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/23/2019
@@ -11,10 +11,10 @@ ms.collection:
 - M365-modern-desktop
 - Strat_O365_Enterprise
 ms.custom:
-description: Step through the process of migrating versions of Microsoft Office, Office servers, and Windows to Microsoft 365 Enterprise across your organization.
+description: The roadmap for migrating versions of Microsoft Office, Office servers, and Windows to Microsoft 365 across your organization.
 ---
 
-# Migration to Microsoft 365 Enterprise
+# Migration roadmap for Microsoft 365
 
 Most enterprise organizations have a heterogeneous environment with multiple releases of operating systems, client software, and server software. Microsoft 365 Enterprise includes the most secure versions of these key components of your IT infrastructure with productivity features that are designed to take advantage of cloud technologies.
 
@@ -54,7 +54,7 @@ Rather than upgrading your computers running Office 2007 with Office 2010, Offic
 
 1. Obtaining and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2007 on their computers.
-3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md).
+3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 Microsoft 365 Apps for enterprise installs updates automatically and can take advantage of cloud-based services for enhanced security and productivity.
 
@@ -66,7 +66,7 @@ Rather than upgrading your computers running Office 2010 with Office 2013 or Off
 
 1. Obtaining and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2010 on their computers.
-3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md).
+3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 Microsoft 365 Apps for enterprise installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
@@ -78,7 +78,7 @@ Rather than keep updating your computers with the latest security updates for Of
 
 1. Obtaining and assigning a Microsoft 365 license for your users.
 2. Uninstalling Office 2013 or Office 2016 on their computers.
-3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Phase 4: Microsoft 365 Apps for enterprise](office365proplus-infrastructure.md).
+3. Installing Microsoft 365 Apps for enterprise, either individually or in conjunction with an IT rollout. For more information, see [Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps).
 
 Microsoft 365 Apps for enterprise installs both security and new feature updates automatically and can take advantage of cloud-based services in Microsoft 365 for enhanced security and productivity.
 
@@ -139,7 +139,7 @@ For server products in the Office 2016 release, the end of support has not been 
 
 ## Migration for Microsoft Windows 7 and 8.1
 
-Windows 7 reached end of support on **January 14, 2020**. To migrate your devices running Windows 7 or Windows 8.1, you can perform an [in-place upgrade](https://docs.microsoft.com/microsoft-365/enterprise/windows10-deploy-inplaceupgrade). 
+Windows 7 reached end of support on **January 14, 2020**. To migrate your devices running Windows 7 or Windows 8.1, you can perform an [in-place upgrade](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). 
 
 For additional methods, see [Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios). You can also [plan for Windows 10 deployment](https://aka.ms/planforwin10deployment) on your own.
 
@@ -173,6 +173,6 @@ This two-page poster is a quick way to inventory your existing infrastructure an
 
 You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/deploy-microsoft-365-enterprise/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
-## Result
+## Next step
 
-Your organization has migrated older versions of Microsoft Office, Office servers, and Windows to Microsoft 365 Enterprise.
+TBD
