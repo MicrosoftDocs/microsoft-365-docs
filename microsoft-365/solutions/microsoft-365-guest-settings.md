@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-3tiersprotection
 f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
