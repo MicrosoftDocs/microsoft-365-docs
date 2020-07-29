@@ -129,3 +129,5 @@ To filter the results, click **Filter**. In the **Filters** flyout that appears,
 - **Standard protection** or **Strict protection**
 
 To export the results to a .csv file, click **Export**.
+
+![Configuration drift analysis and history view in the Configuration analyzer](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
