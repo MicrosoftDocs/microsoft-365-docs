@@ -95,7 +95,7 @@ If you have previously turned on per person MFA, you must turn it off before ena
 
 If you have security defaults turned Off and donot want to turn on MFA for the entire organization
 
-1. In the Microsoft 365 admin center, in the left nav choose **Users** > **Active users**. 
+1. In the Microsoft 365 admin center, in the left nav, choose **Users** > **Active users**. 
 1. On the **Active users** page, choose **Multi-factor authentication**.
 1. On the multi-factor authentication page, select each user and set their Multi-Factor auth status to **Enabled**.
 
@@ -106,7 +106,6 @@ If you have security defaults turned Off and donot want to turn on MFA for the e
 - [How to change their additional verification method](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
 - [How to deal with situations like a new smart phone](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
 - [Troubleshoot MFA sign-ins](https://support.microsoft.com/office/6951be76-af50-49a4-847f-21391eaa59f2)
-
 
 
 
