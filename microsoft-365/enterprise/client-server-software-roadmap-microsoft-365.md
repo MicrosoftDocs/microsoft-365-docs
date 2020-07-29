@@ -23,12 +23,6 @@ Client and server software roadmap content
 
 TBD
 
-## How Contoso did Client and server software for Microsoft 365
-
-TBD
-
-![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
 ## Next step
 
 TBD

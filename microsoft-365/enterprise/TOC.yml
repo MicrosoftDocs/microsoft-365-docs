@@ -222,4 +222,7 @@
       href: ebcm-developing-your-ebcm-plan.md
     - name: Service incident mitigation scenarios
       href: ebcm-microsoft-365-mitigations.md
-   
+
+- name: Microsoft 365 for Business
+  href: https://docs.microsoft.com/office365/admin/admin-home
+

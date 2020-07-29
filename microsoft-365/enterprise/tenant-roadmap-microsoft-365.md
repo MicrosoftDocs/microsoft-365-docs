@@ -23,12 +23,6 @@ Tenant roadmap content
 
 TBD
 
-## How Contoso did tenant configuration for Microsoft 365
-
-TBD
-
-![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
-
 ## Next step
 
 TBD
