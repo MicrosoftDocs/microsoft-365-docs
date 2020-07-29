@@ -71,9 +71,9 @@ Here is Contoso's mobile device management deployment architecture.
 
 ## See also
 
-[Mobile device management for Microsoft 365 Enterprise](mobility-infrastructure.md)
+[Device management for Microsoft 365](device-management-roadmap-microsoft-365.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
 

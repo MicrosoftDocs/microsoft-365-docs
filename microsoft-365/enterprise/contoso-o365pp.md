@@ -79,8 +79,8 @@ Here is Contoso’s Microsoft 365 Apps for enterprise installation and ongoing u
 
 ## See also
 
-[Microsoft 365 Apps for enterprise for Microsoft 365 Enterprise](office365proplus-infrastructure.md)
+[Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

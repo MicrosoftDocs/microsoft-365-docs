@@ -85,10 +85,10 @@ In time you should see the:
 - **Group memberships** property updated with the **Sales** group.
 - **Product licenses** property updated with the **Microsoft 365 E5** license.
 
-See these steps in the Identity phase for information and links to deploy dynamic group membership and automatic licensing in production:
+See these articles to deploy dynamic group membership and automatic licensing in production:
 
-- [Set up automatic licensing](identity-use-group-management.md#identity-group-license)
-- [Set up dynamic group membership](identity-use-group-management.md#identity-dyn-groups)
+- LINK TBD
+- LINK TBD
 
 ## Next step
 
@@ -96,10 +96,10 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 ## See also
 
-[Phase 2: Identity](identity-infrastructure.md)
+[Identity roadmap](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise deployment](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 Enterprise overview](microsoft-365-enterprise-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

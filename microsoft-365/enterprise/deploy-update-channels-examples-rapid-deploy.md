@@ -104,6 +104,6 @@ Here are the products, their channels, and the deployment groups used by this ex
 
 [Deployment and update channel example configurations](deploy-update-channels-examples.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

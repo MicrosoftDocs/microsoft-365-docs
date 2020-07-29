@@ -25,7 +25,7 @@ Although designed for large organizations, Microsoft 365 for enterprise can also
 
 Microsoft 365 for enterprise consists of:
 
-|||
+| Services | Description |
 |:-------|:-----|
 | Local and cloud-based apps and productivity services | Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more. |
 | Windows 10 Enterprise | Addresses the needs of both large and midsize organizations, providing users with the most productive and secure version of Windows and IT professionals with comprehensive deployment, device, and app management. |
@@ -36,7 +36,7 @@ Microsoft 365 for enterprise consists of:
 
 Microsoft 365 for enterprise is available in three plans.
 
-|||
+| Plan name | Capabilities |
 |:-------|:-----|
 | E3 | Access core products and features within Microsoft 365 to enhance workplace productivity and drive innovation, securely. |
 | E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools.. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
@@ -60,7 +60,6 @@ The [Microsoft 365 for enterprise poster](../media/m365-poster/Microsoft365Enter
 - Microsoft 365 for enterprise plans and which components they contain 
 - The key components of the Modern Workplace, which Microsoft 365 for enterprise enables
 - The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments
-- The adoption roadmap that highlights the Microsoft 365 for enterprise [Deployment Guide](deploy-microsoft-365-enterprise.md)
 
 [![Image for the Microsoft 365 for enterprise poster](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
 
@@ -110,7 +109,7 @@ There are three ways to deploy the products, features, and components of Microso
 
 3. Do it yourself
 
-   The [Microsoft 365 for enterprise deployment guide](deploy-microsoft-365-enterprise.md) takes you step by step through building out the infrastructure and productivity workloads. 
+   Start with [Networking roadmap](networking-roadmap-microsoft-365.md) to build out or verify your existing infrastructure and productivity workloads. 
 
 For more deployment information, see how:
 
@@ -134,15 +133,10 @@ For more deployment information, see how:
 
 ## Microsoft 365 training
 
-|||
-|:-------|:-----|
-![Microsoft 365 Fundamentals training](../media/m365-poster/m365-fundamentals.svg)| Get yourself trained and work towards a Microsoft 365 certification. <BR> Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
-|||
+![Microsoft 365 Fundamentals training](../media/m365-poster/m365-fundamentals.svg)
 
+Get yourself trained and work towards a Microsoft 365 certification. Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 
-## Next step
-
-If you're doing the deployment yourself, start your [Microsoft 365 for enterprise deployment journey](deploy-microsoft-365-enterprise.md).
 
 ## See also
 

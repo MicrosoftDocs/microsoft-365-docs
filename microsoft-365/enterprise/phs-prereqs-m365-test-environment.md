@@ -115,10 +115,10 @@ Use [Common identity and device access policies](identity-access-policies.md) to
 
 [Additional identity Test Lab Guides](m365-enterprise-test-lab-guides.md#identity)
 
-[Phase 2: Identity](identity-infrastructure.md)
+[Identity roadmap](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise deployment](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 Enterprise overview](microsoft-365-enterprise-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

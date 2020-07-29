@@ -28,18 +28,17 @@ Before moving their sensitive and most valuable digital assets to the cloud, the
 
 Contoso performed an analysis of their data and determined the following levels.
 
-||||
+| Level 1: Baseline | Level 2: Sensitive | Level 3: Highly regulated |
 |:-------|:-----|:-----|
-| **Level 1: Baseline** | **Level 2: Sensitive** | **Level 3: Highly regulated** |
 | Data is encrypted and available only to authenticated users. <BR> <BR> Provided for all data stored on-premises and in cloud-based storage and workloads, such as Office 365. Data is encrypted while it resides in the service and in transit between the service and client devices. <BR><BR> Examples of Level 1 data are normal business communications (email) and files for administrative, sales, and support workers. | Level 1 plus strong authentication and data loss protection. <BR> <BR> Strong authentication includes Azure Multi-Factor Authentication (MFA) with SMS validation. Data loss prevention ensures that sensitive or critical information does not travel outside the Microsoft cloud. <BR><BR> Examples of Level 2 data are financial and legal information and research and development data for new products. | Level 2 plus the highest levels of encryption, authentication, and auditing. <BR> <BR>  The highest levels of encryption for data at rest and in the cloud, compliant with regional regulations, combined with MFA with smart cards and granular auditing and alerting. <BR> <BR> Examples of Level 3 data are customer and partner personally identifiable information, product engineering specifications, and proprietary manufacturing techniques.  |
 ||||
 
 ## Contoso's information policies
 The following table lists Contoso's information policies.
 
-|||||
+
+|  | Access | Data retention | Information protection |
 |:-------|:-----|:-----|:-----|
-|  | **Access** | **Data retention** | **Information protection** |
 | Low business value (Level 1: Baseline) | Allow access to all  | 6 months | Use encryption. |
 | Medium business value (Level 2: Sensitive) | Allow access to Contoso employees, subcontractors, and partners <BR> <BR> Use MFA, Transport Layer Security (TLS), and Mobile Application Management (MAM). | 2 years  | Use hash values for data integrity.  |
 | High business value (Level 3: Highly regulated) | Allow access to executives and leads in engineering and manufacturing. <BR> <BR> Rights Management System (RMS) with managed network devices only.  | 7 years  | Use digital signatures for non-repudiation.  |
@@ -97,9 +96,8 @@ These policies ensure that:
 
 The following table maps Contoso's data levels to information protection features in Microsoft 365 Enterprise.
 
-|||||
+| | Microsoft 365 cloud services | Windows 10 and Microsoft 365 Apps for enterprise | Security and compliance |
 |:-------|:-----|:-----|:-----|
-| | **Office 365** | **Windows 10 and Microsoft 365 Apps for enterprise** | **EMS** |
 | Level 1: Baseline  | SharePoint and Exchange Online Conditional Access policies <BR> Permissions on SharePoint sites | Sensitivity labels <BR> BitLocker <BR> Windows Information Protection | Device Conditional Access policies and Mobile Application Management policies |
 | Level 2: Sensitive | Level 1 plus: <BR> <BR> Sensitivity labels <BR> Microsoft 365 retention labels on SharePoint sites <BR> Data Loss Prevention for SharePoint and Exchange Online <BR> Isolated SharePoint sites  | Level 1 plus: <BR> <BR> Sensitivity labels on digital assets  | Level 1 |
 | Level 3: Highly regulated | Level 2 plus: <BR><BR> Bring Your Own Key (BYOK) encryption and protection for trade secret information <BR> Azure Key Vault for line of business applications that interact with Microsoft 365 services | Level 2 | Level 1 |
@@ -115,9 +113,9 @@ Here is Contoso's resulting information protection configuration.
 
 ## See also
 
-[Information protection for Microsoft 365 Enterprise](infoprotect-infrastructure.md)
+[Security roadmap](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
 

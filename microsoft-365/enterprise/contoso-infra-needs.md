@@ -112,9 +112,9 @@ Management:
 
 Contoso's IT department determined the following mapping of business needs to Microsoft 365 E5 features prior to deployment:
 
-||||
+
+| Category | Business need | Microsoft 365 Enterprise products or features |
 |:-------|:-----|:-----|
-| **Category** | **Business need** | **Microsoft 365 Enterprise products or features** |
 | Productivity |  |  |
 |  | Make collaboration easier | Microsoft Teams, SharePoint, OneDrive |
 |  | Improve productivity for remote and mobile workers | Microsoft 365 workloads and cloud-based data |
@@ -140,6 +140,6 @@ Contoso's IT department determined the following mapping of business needs to Mi
 
 ## See also
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)
