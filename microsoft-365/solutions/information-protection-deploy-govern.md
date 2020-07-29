@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: 
 description: Use Microsoft 365 retention labels and policies to manage personal data in your Microsoft 365 environment.
 ---

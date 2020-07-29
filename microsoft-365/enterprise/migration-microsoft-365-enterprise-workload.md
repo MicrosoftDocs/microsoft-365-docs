@@ -18,9 +18,9 @@ description: Step through the process of migrating versions of Microsoft Office,
 
 
 >[!Note]
->Looking for tools to help you migrate your *content* to Microsoft 365?  Whether migrating content from network file shares, SharePoint Server, or other cloud providers, we have a free migration tool to meet your needs. Learn more about our FREE migration tools at:</br>
+>Looking for tools to help you migrate your *content* to Microsoft 365?  Whether migrating content from network file shares, SharePoint Server, or other cloud providers, we have a free migration tool to meet your needs. Learn more about our FREE migration tools at:
 >
->[Migrate your content to Microsoft 365](https://docs.microsoft.com/en-us/sharepointmigration/migrate-to-sharepoint-online)
+>[Migrate your content to Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
 
 Most enterprise organizations have a heterogeneous environment with multiple releases of operating systems, client software, and server software. Microsoft 365 Enterprise includes the most secure versions of these key components of your IT infrastructure with productivity features that are designed to take advantage of cloud technologies.
 
