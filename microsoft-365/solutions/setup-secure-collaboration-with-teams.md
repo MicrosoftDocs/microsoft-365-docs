@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
 ms.custom: 
 f1.keywords: NOCSH
 description: "Learn how to set up Teams to protect your data based on its sensitivity"

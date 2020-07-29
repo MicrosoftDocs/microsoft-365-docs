@@ -10,6 +10,7 @@ ms.collection:
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Normal

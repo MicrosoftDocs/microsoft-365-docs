@@ -10,6 +10,7 @@ ms.collection:
 - SPO_Content
 - M365-collaboration
 - m365solution-3tiersprotection
+- m365solution-securecollab
 f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
