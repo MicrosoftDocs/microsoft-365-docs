@@ -77,5 +77,5 @@ Explore additional [mobile device management](m365-enterprise-test-lab-guides.md
   
 [Device compliance policies for your Microsoft 365 Enterprise test environment](mam-policies-for-your-microsoft-365-enterprise-dev-test-environment.md)
   
-[Microsoft 365 Enterprise overview](microsoft-365-enterprise-overview.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
