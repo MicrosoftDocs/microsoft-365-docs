@@ -63,7 +63,7 @@ Select the **Topic discovery** tab if you want to update your choices for  for S
 Select the **Topic discovery** tab if you want to update who in your organization can see discovered topics in search results and when topics are highlighted in content like SharePoint pages.
 
 1. On the **Topic discovery** tab, under **Who can see topics in the knowledge network**, select **Edit**.
-2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:
+2. On the **Who can see topics in the knowledge network** page, you choose who will have access to topic details, such as highlighted topics, topic cards, topic answers in search, and topic pages. You can select:</br>
     a. **Everyone in your organization**</br>
     b. **Only selected people or security groups**</br>
     c. **No one**</br>
@@ -71,6 +71,9 @@ Select the **Topic discovery** tab if you want to update who in your organizatio
     ![Who can see topics](../media/content-understanding/k-manage-who-can-see-topics.png) </br> 
 3. Select **Save**.  
  
+> [!Note] 
+> While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics.
+
 ## Change who has permissions to do tasks on the topic center
 
 Select the **Topic permissions** tab if you want to update who has permissions to do the following in the topic center page:
@@ -107,7 +110,7 @@ Select the **Topic center** tab if you want to update the name of your topic cen
 2. On the **Edit topic center name** page, in the **Topic center name** box, type the new name for your topic center.
 3. Select **Save**
 
-    ![Edit topic center name](../media/content-understanding/manage-topic-center-name) </br> 
+    ![Edit topic center name](../media/content-understanding/manage-topic-center-name.png) </br> 
 
 
 

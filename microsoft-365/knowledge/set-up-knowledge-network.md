@@ -75,7 +75,9 @@ To set up your knowledge network:
     c. **No one**</br>
 
     ![Who can see topics](../media/content-understanding/k-who-can-see.png) </br> 
-   
+
+ > [!Note] 
+ > While this setting allows you to select any user in your organization, only users who have knowledge management licenses assigned to them will be able to view topics. 
 
 7. In the **Permissions for topic management** page, you choose who will be able to create, edit, or manage topics. In the **Who can create and edit topics** section, you can select:</br>
     a. **Everyone in your organization**</br>
