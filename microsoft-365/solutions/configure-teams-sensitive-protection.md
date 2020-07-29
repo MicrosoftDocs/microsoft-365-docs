@@ -13,7 +13,7 @@ search.appverid:
 ms.collection: 
 - Ent_O365
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-3tiersprotection
 ms.custom:
 - Ent_Solutions
 description: "Learn how to deploy teams with protection for sensitive data."
