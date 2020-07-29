@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-security-compliance
-- M365solutions
+- m365solution-3tiersprotection
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Priority
