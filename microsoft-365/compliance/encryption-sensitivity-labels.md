@@ -274,7 +274,7 @@ For built-in labeling, users see the same dialog box if they select the followin
 
 ## Example configurations for the encryption settings
 
-For each example that follows, do the configuration from the **Encryption** page of the wizard when you [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels). First make sure that the **Encryption** is set to **Apply**:
+For each example that follows, do the configuration from the **Encryption** page of the wizard when **Configure encryption settings** is selected:
 
 ![Apply encryption option in the sensitivity label wizard](../media/apply-encryption-option.png)
 
