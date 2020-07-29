@@ -14,7 +14,6 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-- M365solutions
 - m365solution-3tiersprotection
 - m365solution-overview
 ms.custom:
