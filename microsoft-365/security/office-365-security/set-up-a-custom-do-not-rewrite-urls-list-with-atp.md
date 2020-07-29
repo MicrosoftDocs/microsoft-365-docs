@@ -55,11 +55,13 @@ To edit (or define) ATP policies, you must be assigned an appropriate role. The 
 
 4. Specify a name and description for your policy.
 
-5. In the **Do not rewrite the following URLs** section, select the **Enter a valid URL** box, and then type a URL, and then choose the plus sign (+).
+5. Turn **ON** URLs will be rewritten and checked against a list of known malicious links when user clicks on the link.
 
-6. In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
+6. In the **Do not rewrite the following URLs** section, select the **Enter a valid URL** box, enter a URL, and then choose the plus sign (+).
 
-7. When you are finished adding URLs, in the lower right corner of the screen, choose **Save**.
+7. In the **Applied To** section, choose **The recipient is a member of**, and then choose the group(s) you want to include in your policy. Choose **Add**, and then choose **OK**.
+
+8. When you are finished adding URLs, in the lower right corner of the screen, choose **Save**.
 
 > [!NOTE]
 > Make sure to review your organization's custom list of blocked URLs. See [Set up a custom blocked URLs list using ATP Safe Links](set-up-a-custom-blocked-urls-list-atp.md).

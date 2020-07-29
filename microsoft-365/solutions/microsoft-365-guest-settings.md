@@ -32,7 +32,7 @@ Azure Active Directory is the directory service used by Microsoft 365. The Azure
 
 ### Organizational relationships settings
 
-**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > Organizational relationships > Settings
+**Navigation:** [Azure Active Directory admin center](https://aad.portal.azure.com) > Azure Active Directory > External Identities > External collaboration settings
 
 ![Screenshot of Azure Active Directory Organizational Relationships Settings page](../media/azure-ad-organizational-relationships-settings.png)
 
@@ -55,7 +55,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 ### Sharing
 
-**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Security & privacy tab > Sharing
+**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Org Settings > Security & privacy tab > Sharing
 
 ![Screenshot of the security and privacy guest sharing setting in the  Microsoft 365 admin center](../media/sharepoint-security-privacy-sharing-setting.png)
 
