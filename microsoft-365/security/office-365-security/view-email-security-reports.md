@@ -29,7 +29,7 @@ A variety of reports are available in the [Security & Compliance Center](https:/
 ## Compromised users report
 
 > [!NOTE]
-> This report is available in Microsoft 365 organizations with Exchange Online mailboxes. It's not available in standalone Exchange Online Protection (EOP) organizations without Exchange Online mailboxes.
+> This report is available in Microsoft 365 organizations with Exchange Online mailboxes. It's not available in standalone Exchange Online Protection (EOP) organizations.
 
 The **Compromised users** report shows shows the number of user accounts that were marked as **Suspicious** or **Restricted** within the last 7 days. Accounts in either of these states are problematic or even compromised. With frequent use, you can use the report to spot spikes, and even trends, in suspicious or restricted accounts. For more information about compromised users, see [Responding to a compromised email account](responding-to-a-compromised-email-account.md).
 
@@ -134,7 +134,7 @@ To go back to the report view, click **View report**.
 
 The **Mailflow status report** contains information about malware, spam, phishing and edge blocked messages. For more details, see [Mailflow status report](view-mail-flow-reports.md#mailflow-status-report).
 
-## Malware detection in email report
+## Malware detections in email report
 
 The **Malware detections in email** report shows information about malware detections in incoming and outgoing email messages (malware detected by Exchange Online Protection or EOP). For more information about malware protection in EOP, see [Anti-malware protection in EOP](anti-malware-protection.md).
 
@@ -157,7 +157,7 @@ If you click **View details table**, you can see the following details:
 - **Date**
 - **Sender address**
 - **Recipient address**
-- **Message ID**
+- **Message ID**: Available in the **Message-ID** header field in the message header and should be unique. An example value is `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (note the angle brackets).
 - **Subject**
 - **Filename**
 - **Malware name**
@@ -262,11 +262,14 @@ To go back to the report view, click **View report**.
 
 ## Threat protection status report
 
-The **Threat protection status** report is available in both EOP and Office 365 ATP; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md). For more information about Office 365 ATP reports, see [View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md).
+The **Threat protection status** report is available in both EOP and Office 365 ATP; however, the reports contain different data. For example, EOP customers can view information about malware detected in email, but not information about [malicious files detected in SharePoint Online, OneDrive, or Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-This is a smart report that shows malicious email that was detected and blocked, and it enables security admins to identify trends or determine whether organization policies need adjustment.
+The report provides an aggregated count of unique email messages with malicious content, such as files or website addresses (URLs) that were blocked by the anti-malware engine, [zero-hour auto purge (ZAP)](zero-hour-auto-purge.md), and ATP features like [ATP Safe Links](atp-safe-links.md), [ATP Safe Attachments](atp-safe-attachments.md), and [ATP anti-phishing](set-up-anti-phishing-policies.md). You can use this information to identify trends or determine whether organization policies need adjustment.
 
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Threat protection status**. To go directly to the report, open <https://protection.office.com/reportv2?id=ATPV2AggregateReport>.
+To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **Threat protection status**. To go directly to the report, open one of the following URLs:
+
+- Office 365 ATP: <https://protection.office.com/reportv2?id=ATPV2AggregateReport>.
+- EOP: <https://protection.office.com/reportv2?id=ATPAggregateLightReport>
 
 ![Threat protection status widget in the Reports dashboard](../../media/threat-protection-status-report-widget.png)
 
@@ -406,61 +409,7 @@ If you click **Filters** in the report view or details table view, you can speci
 
 ## URL threat protection report
 
-> [!NOTE]
-> This report is available only in Office 365 Advanced Threat Protection (ATP). For example, a Microsoft 365 E5 subscription, or an ATP Plan 1 or ATP Plan 2 add-on.
-
-The **URL threat protection report** provides summary and trend views for threats detected and actions taken on URL clicks as part of [ATP Safe Links](atp-safe-links.md). This report will not have click data from users where the Safe Links policy applied has the **Do not track user clicks** option selected.
-
-To view the report, open the [Security & Compliance Center](https://protection.office.com), go to **Reports** \> **Dashboard** and select **URL protection**. To go directly to the report, open <https://protection.office.com/reportv2?id=URLProtectionActionReport>.
-
-### Report view for the URL threat protection report
-
-The **URL threat protection** report has two aggregated views that are refreshed once every four hours that shows data for the last 90 days:
-
-- **URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:
-
-  - **Blocked**
-  - **Blocked and clicked through**
-  - **Clicked through during scan**
-
-  A click indicates that the user has clicked through the block page to the malicious website (admins can disable click through in Safe Links policies).
-
-  If you click **Filters**, you can modify the report with the following filters:
-
-  - **Start date** and **End date**
-  - The available click protection actions, plus the value **Allowed** to see information for all URL clicks (not just blocked clicks).
-
-  ![URL click protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
-
-- **URL click by application**: Shows the number of URL clicks by applications that support Office 365 ATP Safe Links:
-
-  - **Email client**
-  - **PowerPoint**
-  - **Word**
-  - **Excel**
-  - **OneNote**
-  - **Visio**
-  - **Teams**
-  - **Other**
-
-  If you click **Filters**, you can modify the report with the following filters:
-
-  - **Start date** and **End date**
-  - The available applications.
-
-### Details table view for the threat protection report
-
-If you click **View details table**, the report provides a near-real-time view of all clicks that happen within the organization for the last 7 days with the following details:
-
-- **Click time**
-- **User**
-- **URL**
-- **Action**
-- **App**
-
-If you click **Filters** in the details table view, you can filter by the same criteria as in the report view, and also by **Domains** or **Recipients** separated by commas.
-
-To get back to the reports view, click **View report**.
+The **URL threat protection report** is available in Office 365 Advanced Threat Protection (ATP). For more information, see [URL threat protection report](view-reports-for-atp.md#url-threat-protection-report).
 
 ## User-reported messages report
 
@@ -511,3 +460,7 @@ If you are not seeing data in your reports, double-check that your policies are 
 [Anti-spam and anti-malware protection in EOP](anti-spam-and-anti-malware-protection.md)
 
 [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+
+[View mail flow reports in the Security & Compliance Center](view-mail-flow-reports.md)
+
+[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)

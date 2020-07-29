@@ -189,7 +189,8 @@ To configure these settings, see [Set up Office 365 ATP Safe Links policies](set
 
 |Security feature name|Standard|Strict|Comment|
 |---|---|---|---|
-|**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office 365 Apps, Office for iOS and Android.|
+|**Use Safe Links in: Office 365 applications** <br/><br/> _EnableSafeLinksForO365Clients_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office 365 desktop and mobile (iOS and Android) clients.|
+|**Use Safe Links in: Office Web Access Companions** <br/><br/> _EnableSafeLinksForWebAccessCompanion_|On <br/><br/> `$true`|On <br/><br/> `$true`|Use ATP Safe Links in Office Web Apps.|
 |**Do not track when users click safe links** <br/><br/> _TrackClicks_|Off <br/><br/> `$true`|Off <br/><br/> `$true`||
 |**Do not let users click through safe links to original URL** <br/><br/> _AllowClickThrough_|On <br/><br/> `$false`|On <br/><br/> `$false`||
 |

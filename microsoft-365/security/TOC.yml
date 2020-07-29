@@ -137,6 +137,8 @@
                   href: mtp/advanced-hunting-query-emails-devices.md
                 - name: Go hunt
                   href: mtp/advanced-hunting-go-hunt.md
+                - name: Extend data coverage
+                  href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
                   items: 
                     - name: Understand the schema
@@ -425,7 +427,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Remediate malicious email
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: View and read your ATP reports
+            - name: View ATP reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: Understanding latest attacks with threat analytics
               href: ./mtp/latest-attack-campaigns.md
