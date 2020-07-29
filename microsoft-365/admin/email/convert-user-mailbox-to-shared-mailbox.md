@@ -58,8 +58,8 @@ When you convert a user's mailbox to a shared mailbox, all of the existing email
 
 3. Reset the user's password.
 
-> [!NOTE]
-> It's not required to reset the user's password during mailbox conversion. However, if the password is not reset, **the original username and password continue to work** after the mailbox conversion is finished.
+   > [!NOTE]
+   > It's not required to reset the user's password during mailbox conversion. However, if the password is not reset, **the original username and password continue to work** after the mailbox conversion is finished.
 
 4. On the **Mail** tab, under **More actions**, select **Convert to shared mailbox**. 
 
@@ -139,7 +139,7 @@ We've addressed most of the reasons why this happens but it still CAN happen, al
 > If you are a member of the Organization Management or Recipient Management role group, you can use the Exchange Management shell to change a user mailbox to a shared mailbox on-premises. For example, `Set-Mailbox -Identity mailbox1@contoso.onmicrosoft.com -Type Shared`.
 
 > [!TIP]
-> See the workaround in this support solution for instances when [shared mailboxes are unexpectedly converted to user mailboxes](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di)
+> See the workaround in this support solution for instances when [shared mailboxes are unexpectedly converted to user mailboxes](https://support.microsoft.com/help/2710029/shared-mailboxes-are-unexpectedly-converted-to-user-mailboxes-after-di).
   
 ## Related articles
 
