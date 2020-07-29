@@ -38,6 +38,9 @@ To be enrolled in Microsoft Managed Desktop a device must be one of the followin
 |HP EliteBook x360 1030 G3| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required |**May 14, 2023** |
 |HP EliteBook x360 1040 G5| 256 GB / Intel i5 / 8 GB RAM | SKU with 5VS01AV, IR camera required | **Oct 23, 2023** |
 |HP ProBook x360 440 G1| 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV, IR camera or fingerprint reader required | **Jun 6, 2023** |
+|HP EliteDesk 800 G4 DM | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | **Jul 18, 2023** |
+|HP EliteDesk 800 G4 SFF | 128 GB / Intel i3 / 8 GB RAM | SKU with 5VS04AV | **Jul 18, 2023** |
+|HP EliteOne 800 G4 23.8in AIO |128 GB / Intel i3 / 8 GB RAM |SKU with 5VS04AV| **Jul 18, 2023** |
 |Surface Book 2| 256 GB / Intel i5 / 8 GB RAM | None | **Nov 16, 2022** |
 |Surface Go| 128 GB / Intel 4415Y / 8GB RAM | None | **Aug 2, 2023** |
 |Surface Laptop| 256 GB / Intel i5 / 8 GB RAM | None | **May 20, 2022** |
