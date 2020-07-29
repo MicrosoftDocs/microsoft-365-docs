@@ -56,13 +56,19 @@ The global admin for your organization has full permissions to create and manage
     
     Note: By default, tenants don't have any labels and you must create them. The labels in the example picture show default labels that were [migrated from Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels).
 
-3. Follow the prompts in the wizard for the label settings.
+3. On the **Decide where this label will be used** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they are published:
+    
+    If **Files and emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. These settings include encryption, content markings such as headers and footers, and auto-labeling for Office apps to recommend or automatically apply a label after detecting sensitivity information. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select in these apps.
+    
+    If **Groups and sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups and sites. These settings include privacy and external user access, and the level of access for unmanged devices. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select for groups and sites.
+
+4. Follow the prompts in the wizard for the label settings.
     
     For more information about the label settings, see [What sensitivity labels can do](sensitivity-labels.md#what-sensitivity-labels-can-do) from the overview information and use the help in the wizard for individual settings.
 
-4. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
+5. Repeat these steps to create more labels. However, if you want to create a sublabel, first select the parent label and select **...** for **More actions**, and then select **Add sub label**.
 
-5. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
+6. When you have created all the labels you need, review their order and if necessary, move them up or down. To change the order of a label, select **...** for **More actions**, and then select **Move up** or **Move down**. For more information, see [Label priority (order matters)](sensitivity-labels.md#label-priority-order-matters) from the overview information.
 
 To edit an existing label, select it, and then select the **Edit label** button:
 
