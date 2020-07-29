@@ -76,7 +76,7 @@ To edit an existing label, select it, and then select the **Edit label** button:
 
 ![Edit a sensitivity label](../media/edit-sensitivity-label-full.png)
 
-This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 3.
+This button starts the **Edit sensitivity label** wizard, which lets you change all the label settings in step 4.
 
 Don't delete a label unless you understand the impact for users. For more information, see the [Removing and deleting labels](#removing-and-deleting-labels) section. 
 

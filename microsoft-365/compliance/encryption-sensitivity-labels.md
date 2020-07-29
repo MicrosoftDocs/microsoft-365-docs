@@ -62,13 +62,12 @@ When you use this encryption solution, the **super user** feature ensures that a
     
     - **Remove encryption if the file is encrypted**: For more information about this scenario, see the [What happens to existing encryption when a label's applied](#what-happens-to-existing-encryption-when-a-labels-applied) section. It's important to understand that this setting can result in a sensitivity label that users might not be able to apply when they don't have sufficient permissions.
     
-    - **Configure encryption settings**: Turns on encryption, and you then specify encryption settings.
-
-
-Configuring the encryption options:
-
-![Sensitivity label options for encryption](../media/encrytion-options-sensitivity-label.png)
-
+    - **Configure encryption settings**: Turns on encryption and makes the encryption settings visible:
+    
+    ![Sensitivity label options for encryption](../media/encrytion-options-sensitivity-label.png)
+    
+    Instructions for these settings are in the following [Configure encryption settings](#configure-encryption-settings) section.
+    
 ### What happens to existing encryption when a label's applied
 
 If a sensitivity label is applied to unencrypted content, the outcome of the encryption options you can select is self-explanatory. For example, if you didn't select **Encrypt files and emails**, the content remains unencrypted.
