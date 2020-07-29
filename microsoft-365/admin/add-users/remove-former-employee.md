@@ -84,7 +84,7 @@ To prevent an employee from logging in:
 ::: moniker-end
 
 > [!NOTE]
-> You need to be a Global Administrator to Intiate Sign-out.
+> You need to be a global administrator to initiate sign-out.
 
     
 Within an hour - or after they leave the current Microsoft 365 page they are on - they will be prompted to sign in again. (An access token is good for an hour, so the timeline depends on how much time is left on that token and whether they navigate out of their current webpage.)
