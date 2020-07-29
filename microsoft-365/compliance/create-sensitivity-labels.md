@@ -58,9 +58,11 @@ The global admin for your organization has full permissions to create and manage
 
 3. On the **Decide where this label will be used** page, the options selected determine the label's scope for the settings that you can configure and where they will be visible when they are published:
     
-    If **Files and emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. These settings include encryption, content markings such as headers and footers, and auto-labeling for Office apps to recommend or automatically apply a label after detecting sensitivity information. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select in these apps.
+    ![Scopes for sensitivity labels](../media/sensitivity-labels-scopes.png)
     
-    If **Groups and sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups and sites. These settings include privacy and external user access, and the level of access for unmanged devices. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select for groups and site.
+    - If **Files and emails** is selected, you can configure settings in this wizard that apply to apps that support sensitivity labels, such as Office Word and Outlook. These settings include encryption, content markings such as headers and footers, and auto-labeling for Office apps to recommend or automatically apply a label after detecting sensitivity information. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select in these apps.
+    
+    - If **Groups and sites** is selected, you can configure settings in this wizard that apply to Microsoft 365 groups and sites. These settings include privacy and external user access, and the level of access for unmanged devices. If this option isn't selected, the wizard displays the settings but you can't configure them and the labels won't be available for users to select for groups and site.
 
 4. Follow the prompts in the wizard for the label settings.
     
