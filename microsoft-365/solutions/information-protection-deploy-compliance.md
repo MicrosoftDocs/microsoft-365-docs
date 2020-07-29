@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: 
 description: Learn how to use Compliance Score and Compliance Manager to improve your level of protection for personal data.
 ---
