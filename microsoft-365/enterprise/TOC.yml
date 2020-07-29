@@ -5,97 +5,99 @@
 
 - name: Networking
   items:
-    - name: Networking for Microsoft 365 roadmap
-      href: networking-infrastructure.md
+    - name: Networking roadmap
+      href: networking-roadmap-microsoft-365.md
     - name: Plan
       items:
       - name: Overview
-        href: networking-infrastructure.md
+        href: placeholder.md
     - name: Deploy
       items:
       - name: Overview
-        href: networking-infrastructure.md
+        href: placeholder.md
     - name: Manage
       items:
       - name: Overview
-        href: networking-infrastructure.md
+        href: placeholder.md
 - name: Tenant
   items:
+    - name: Roadmap
+      href: tenant-roadmap-microsoft-365.md
     - name: Plan
-      href: networking-infrastructure.md
+      href: placeholder.md
       items:
       - name: Overview
-        href: networking-infrastructure.md
+        href: placeholder.md
     - name: Deploy
       items:
       - name: Overview
-        href: networking-infrastructure.md
+        href: placeholder.md
     - name: Manage
       items:
       - name: Overview
-        href: networking-infrastructure.md
+        href: placeholder.md
     - name: Multi-Geo
       items:
         - name: Overview
-          href: networking-infrastructure.md
+          href: placeholder.md
     - name: Move to a new Microsoft 365 datacenter geo
       items:
         - name: Overview
-          href: networking-infrastructure.md
+          href: placeholder.md
 
 - name: Identity
   items:
-    - name: Identity for Microsoft 365 roadmap
-      href: identity-infrastructure.md
+    - name: Roadmap
+      href: identity-roadmap-microsoft-365.md
     - name: Plan
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
     - name: Deploy
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
     - name: Manage
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
 
 - name: Client and server software
   items:
-    - name: Client and server software roadmap
-      href: identity-infrastructure.md
+    - name: Roadmap
+      href: client-server-software-roadmap-microsoft-365.md
     - name: Plan
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
     - name: Deploy
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
     - name: Manage
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
 
 - name: Security and compliance
   href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
 
 - name: Cloud services
   items:
-    - name: Cloud services roadmap
-      href: identity-infrastructure.md
+    - name: Roadmap
+      href: cloud-services-roadmap-microsoft-365.md
     - name: Plan
       items:
       - name: Overview
-      href: identity-infrastructure.md
+      href: placeholder.md
     - name: Deploy
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
     - name: Manage
       items:
       - name: Overview
-        href: identity-infrastructure.md
+        href: placeholder.md
 
 - name: Windows 10
   href: https://docs.microsoft.com/windows/deployment/
@@ -112,9 +114,11 @@
 
 - name: Device management
   items:
+    - name: Roadmap
+      href: device-management-roadmap-microsoft-365.md
     - name: Intune
       href: https://docs.microsoft.com/mem/intune/fundamentals/planning-guide
-    - name: Device management
+    - name: Device management with Microsoft 365
       items:
       - name: Set up
         href: https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd 
