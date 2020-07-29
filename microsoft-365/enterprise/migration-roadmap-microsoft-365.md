@@ -32,9 +32,9 @@ Accomplishing all of these migrations over time gets your organization closer to
 
 For information about migrating users and data for specific Office 365 workloads:
 
-- User mailboxes from Exchange Server to Exchange Online, see the [Exchange Online workload](exchangeonline-workload.md).
-- SharePoint data from SharePoint Server to SharePoint Online, see the [SharePoint Online workload](sharepoint-online-onedrive-workload.md).
-- Skype for Business Online to Microsoft Teams, see the [Microsoft Teams workload](teams-workload.md).
+- User mailboxes from Exchange Server to Exchange Online, see [Move mailboxes](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
+- SharePoint data from SharePoint Server to SharePoint Online, see [Migrate your content](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online).
+- Skype for Business Online to Microsoft Teams, see [Upgrade from Skype for Business to Teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview).
 
 ## Migration for Microsoft Office client products
 

@@ -128,8 +128,6 @@ Next, create a new document in the SensitiveFiles site and change its retention 
     
 7. In the **Document.docx** pane, under **Apply retention label**, select the **Highly Confidential** label, and then click **Save**.
 
-See the [Configure classification for your environment](infoprotect-configure-classification.md) step in the **Information protection** phase for information and links to how to deploy retention labels in production.
-
 ## Next step
 
 Explore additional [information protection](m365-enterprise-test-lab-guides.md#information-protection) features and capabilities in your test environment.

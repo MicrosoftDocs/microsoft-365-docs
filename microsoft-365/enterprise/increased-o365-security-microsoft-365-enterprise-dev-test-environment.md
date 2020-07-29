@@ -110,8 +110,6 @@ For more information, see [Microsoft Secure Score](https://docs.microsoft.com/mi
 
 ## Next steps
 
-See the [Configure increased security for Microsoft 365](infoprotect-configure-increased-security-office-365.md) step in the **Information protection** phase for information and links to configure these settings in production.
-
 Explore additional [information protection](m365-enterprise-test-lab-guides.md#information-protection) features and capabilities in your test environment.
 
 ## See also

@@ -128,8 +128,6 @@ This configuration consists of:
 - Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Microsoft 365 subscription to the TESTLAB AD DS domain. 
 - Password writeback is enabled so that users can change their passwords through Azure AD without having to be connected to the simplified intranet.
 
-See the [Simplify password updates](identity-add-user-accounts.md#identity-pw-writeback) step in the Identity phase for information and links to configure password writeback in production.
-
 ## Next step
 
 Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
