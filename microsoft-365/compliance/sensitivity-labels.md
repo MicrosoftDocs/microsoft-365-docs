@@ -99,6 +99,24 @@ After a sensitivity label is applied to an email or document, any configured pro
     
     For more information about the **Auto-labeling for Office apps** settings when you create or edit a sensitivity label, see [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
+### Label scopes
+
+When you create a sensitivity label, you're asked to configure the label's scope which determines two things:
+- Which label settings you can configure for that label
+- Where the label will be visible to users
+
+This scope configuration lets you have sensitivity labels that are just for documents and emails and can't be selected for containers. And similarly, sensitivity labels that are just for containers and can't be selected for documents and emails. By default, both scopes are selected:
+
+![Scope options for sensitivity labels](../media/sensitivity-labels-scopes.png)
+
+When you change this default and select just one scope, you still see the configuration settings for the other scopes but you can't configure them. For example, if you clear the scope for files and emails, their settings become unavailable:
+
+![Unavailable options for sensitivity labels](../media/sensitivity-labels-unavailable-settings.png)
+
+
+
+
+
 ### Label priority (order matters)
 
 When you create your sensitivity labels in your admin center, they appear in a list on the **Sensitivity** tab on the **Labels** page. In this list, the order of the labels is important because it reflects their priority. You want your most restrictive sensitivity label, such as Highly Confidential, to appear at the **bottom** of the list, and your least restrictive sensitivity label, such as Public, to appear at the **top**.
