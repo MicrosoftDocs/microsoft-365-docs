@@ -73,7 +73,7 @@ You're now ready to create or edit sensitivity labels that you want to be availa
 
 1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups and sites** for the label's scope: 
     
-    ![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![Sensitivity label scope options for files and emails](../media/groupsandsites-scope-options-sensitivity-label.png)
 
 2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
