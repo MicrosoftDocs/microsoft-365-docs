@@ -97,6 +97,10 @@ You can turn on Customer Lockbox controls in the Microsoft 365 admin center. Whe
 
     ![Approve or deny Customer Lockbox requests](../media/CustomerLockbox8.png)
 
+> [!Note]
+> Use the Set-AccessToCustomerDataRequest cmdlet to approve, deny, or cancel Microsoft 365 customer lockbox requests that control access to your data by Microsoft support engineers. For more information, See [Set-AccessToCustomerDataRequest](https://docs.microsoft.compowershell/module/exchange/set-accesstocustomerdatarequest?view=exchange-ps)
+
+
 ## Auditing Customer Lockbox requests
 
 Audit records that correspond to the Customer Lockbox requests are logged in the audit log. You can access these logs by using the [audit log search tool](search-the-audit-log-in-security-and-compliance.md) in the Security & Compliance Center. Actions related to a accepting or denying a Customer Lockbox request and actions performed by Microsoft engineers (when access requests are approved) are also logged in the audit log. You can search for and review these audit records.
