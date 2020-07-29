@@ -12,7 +12,6 @@ metadata:
   ms.topic: hub-page # Required
   ms.collection: 
   - m365-security-compliance
-  - M365solutions
   author: samanro #Required; your GitHub user alias, with correct capitalization.
   ms.author: samanro #Required; microsoft alias of author; optional team alias.
   manager: bcarter
