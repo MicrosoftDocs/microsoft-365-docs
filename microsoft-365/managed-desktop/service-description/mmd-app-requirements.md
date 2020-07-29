@@ -28,7 +28,7 @@ Microsoft Managed Desktop requires that we manage devices using a specific appro
 |Network security     | See [Network security](security.md#network-security)        |
 |Information security     |  See [Information security](security.md#information-security)       |
 |Data recovery     | OneDrive for Business        |
-|Core productivity     | Office 365 Pro Plus (64 bit)        |
+|Core productivity     | Microsoft 365 Apps for enterprise    |
 |Browser     | Microsoft Edge        |
 
 
