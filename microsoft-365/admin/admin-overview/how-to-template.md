@@ -1,14 +1,17 @@
 ---
-title: "Admin center overview"
+# This template provides a structure for Office how-to articles.
+# For details about MAX content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
+
+title: "Article title goes here"      # Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: YourMicrosoftAlias         # Your Microsoft alias without @microsoft.com
+author: YourGitHubUserName            # Your GitHub alias, not your Microsoft alias
 manager: mnirkhe
-audience: Admin
+audience: Target audience goes here   # Choose from: Admin, ITPro, Developer
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Normal         # Choose from: Normal, Priority, None
 ms.collection: 
 - M365-subscription-management
 - Adm_O365
