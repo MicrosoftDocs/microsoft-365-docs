@@ -2,7 +2,7 @@
 title: "Migration to Microsoft 365 Enterprise"
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 09/23/2019
+ms.date: 07/29/2020
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
