@@ -71,32 +71,37 @@ After you enable and configure sensitivity labels for containers, users can addi
 
 You're now ready to create or edit sensitivity labels that you want to be available for sites and groups. Enabling sensitivity labels for containers makes a new page visible in the sensitivity labeling wizards: **Site and group settings**
 
-If you need help with creating or editing a sensitivity label, see the instructions from [Create and configure sensitivity labels](create-sensitivity-labels.md#create-and-configure-sensitivity-labels).
-
-On this new **Site and group settings** page, configure the settings:
-
-- **Privacy of Office 365 group-connected teams sites**: Keep the default of **Public - anyone in the organization can access the site** if you want anyone in your organization to access the team site or group where this label is applied.
+1. Follow the general instructions to [create or edit a sensitivity label](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) and make sure you select **Groups and sites** for the label's scope: 
     
-    Select **Private** if you want access to be restricted to only approved members in your organization.
+    ![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
+
+2. Then, on the **Define protection settings for groups and sites** page, select one or both of the available options:
     
-    Select **None - let user chose who can access the site** when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
+    - **Protection settings for groups** to configure the **Privacy of Office 365 group-connected teams sites** and **External users access** settings. 
+    - **Protection settings for sites** to configure the **Unmanaged devices** setting.
+
+3. If you selected **Protection settings for groups**, now configure the following settings:
     
-    The settings of **Public** or **Private** set and lock the privacy setting when you apply this label to the container. Your chosen setting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
+    - **Privacy of Office 365 group-connected teams sites**: Keep the default of **Public - anyone in the organization can access the site** if you want anyone in your organization to access the team site or group where this label is applied.
+        
+        Select **Private** if you want access to be restricted to only approved members in your organization.
+        
+        Select **None - let user chose who can access the site** when you want to protect content in the container by using the sensitivity label, but still let users configure the privacy setting themselves.
+        
+        The settings of **Public** or **Private** set and lock the privacy setting when you apply this label to the container. Your chosen setting replaces any previous privacy setting that might be configured for the team or group, and locks the privacy value so it can be changed only by first removing the sensitivity label from the container. After you remove the sensitivity label, the privacy setting from the label remains and users can now change it again.
+    
+    - **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
 
-- **External users access**: Control whether the group owner can [add guests to the group](/office365/admin/create-groups/manage-guest-access-in-groups).
+4. If you selected **Protection settings for sites**, now configure the single setting:
+    
+    - **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. If you have configured this setting at the tenant level or for a specific site, the setting you specify here will be applied only if it's more restrictive.
 
-- **Unmanaged devices**: For [unmanaged devices](/sharepoint/control-access-from-unmanaged-devices), allow full access, web only access, or block access completely. If you have configured this setting at the tenant level or for a specific site, the setting you specify here will be applied only if it's more restrictive.
-
-![The site and group settings tab](../media/edit-sensitivity-label-site-group2.png)
 
 > [!IMPORTANT]
-> Only these site and group settings take effect when you apply the label to a team, group, or site. Other label settings, such as encryption and content marking, aren't applied to the content within the team, group, or site.
-> 
-> Gradually rolling out to tenants: Only labels with the site and group settings will be available to select when users create teams, groups, and sites. If you can currently apply a label to a container when the label doesn't have the site and group settings enabled, only the label name is applied to the container.
+> Only these site and group settings take effect when you apply the label to a team, group, or site. If the [label's scope](sensitivity-labels.md#label-scopes) includes files and emails, other label settings such as encryption and content marking aren't applied to the content within the team, group, or site.
+
 
 If your sensitivity label isn't already published, now publish it by [adding it to a sensitivity label policy](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy). The users who are assigned a sensitivity label policy that includes this label will be able to select it for sites and groups.
-
-From the label policy, only the policy setting **Apply this label by default to documents and email** is applicable when you apply this label to containers. Other policy settings are not applied, which include mandatory labeling, requiring user justification, and a link to the custom help page.
 
 ## Sensitivity label management
 
