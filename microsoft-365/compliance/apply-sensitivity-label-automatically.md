@@ -100,7 +100,11 @@ For more information on parent labels and sublabels, see [Sublabels (grouping la
 
 Automatic labeling in Office apps for Windows is supported by the Azure Information Protection unified labeling client. For built-in labeling in Office apps, this capability is in [different stages of availability for different apps](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps).
 
-The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). You can choose to apply sensitivity labels to content automatically when sensitive information is detected. Choose from a list of sensitive info types or trainable classifiers:
+The auto-labeling settings for Office apps are available when you [create or edit a sensitivity label](create-sensitivity-labels.md). Make sure you select **Files and emails** for the label's scope: 
+
+![Sensitivity label scope options for files and emails](../media/filesandemails-scope-options-sensitivity-label.png)
+
+After you've configured your encryption options, you see the **Auto-labeling for Office apps** page where you can choose from a list of sensitive info types or trainable classifiers:
 
 ![Label conditions for auto-labeling in Office apps](../media/sensitivity-labels-conditions.png)
 
