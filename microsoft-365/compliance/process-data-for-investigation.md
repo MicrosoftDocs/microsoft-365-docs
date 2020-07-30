@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 
-
-description: ""
+description: "Process data for a data investigation."
 ---
 
 # Process data for an investigation
@@ -30,4 +29,5 @@ The **Processing** tab in Data Investigations (Preview) provides transparency in
 See the following articles for more details.
 
 - [Advanced indexing of data for an investigation](index-data-people-of-interest.md)
+
 - [Error remediation when processing data](error-remediation.md)
