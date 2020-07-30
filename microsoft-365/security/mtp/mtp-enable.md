@@ -1,6 +1,6 @@
 ---
-title: Turn on Microsoft Threat Protection in the Microsoft 365 security center
-description: Learn how to enable Microsoft Threat Protection and start integrating your security incident and response. 
+title: Turn on Microsoft Threat Protection - Microsoft 365 security
+description: Learn how to enable Microsoft Threat Protection (MTP) and start integrating your security incident and response. 
 keywords: get started, enable MTP, Microsoft Threat Protection, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
 ms.prod: microsoft-365-enterprise
@@ -30,6 +30,9 @@ search.appverid:
 
 Microsoft Threat Protection automatically turns on when eligible customers with the required permissions visit Microsoft 365 security center. Read this article to understand various prerequisites and how Microsoft Threat Protection is provisioned.
 
+>[!NOTE]
+>To learn about Advanced Threat Protection, see [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).
+
 ## Check license eligibility and required permissions
 A license to a Microsoft 365 security product generally entitles you to use Microsoft Threat Protection in Microsoft 365 security center without additional licensing cost. We do recommend getting a Microsoft 365 E5, E5 Security, A5, or A5 Security license or a valid combination of licenses that provides access to all supported services.
 
@@ -46,7 +49,7 @@ To get the best protection and optimize Microsoft Threat Protection, we recommen
 ## Before starting the service
 Before you turn on the service, the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)) shows the Microsoft Threat Protection settings page when you select **Incidents**, **Action center**, or **Hunting** from the navigation pane. These navigation items are not shown if you are not eligible to use Microsoft Threat Protection.
 
-![Image of the Microsoft Threat Protection settings page shown if Microsoft Threat Protection has not been turned on](../../media/mtp-enable/mtp-settings.png)
+![Image of the Microsoft Threat Protection settings page shown if feature turned off](../../media/mtp-enable/mtp-settings.png)
 *Microsoft Threat Protection settings in Microsoft 365 security center*
 
 ## Starting the service
