@@ -91,6 +91,12 @@ conceptualContent:
         - url: https://www.microsoft.com/microsoft-365/partners/resources/securing-remote-work-checklist
           itemType: download
           text: Checklist for securing remote work
+        - url: https://cct.transform.microsoft.com/
+          itemType: deploy
+          text: Customer Consulting Tool
+        - url: https://vc.transform.microsoft.com/
+          itemType: learn
+          text: Value Calculator
   # Card
     - title: Manage users
       links:

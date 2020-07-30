@@ -1,5 +1,5 @@
 ---
-title: Data processor service for Windows Data Subject Requests for the GDPR and CCPA
+title: Data processor service for Windows Enterprise Data Subject Requests for the GDPR and CCPA
 description: Learn how to use Microsoft products, services, and admin tools to find and act on personal data to respond to DSRs.
 keywords: Microsoft 365, Microsoft 365 Education, Microsoft 365 documentation, GDPR
 localization_priority: Priority
@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 ---
 
-# Data processor service for Windows Data Subject Requests for the GDPR and CCPA 
+# Data processor service for Windows Enterprise Data Subject Requests for the GDPR and CCPA 
 
 >[!NOTE]
->This topic is intended for participants in the data processor service for Windows preview program and requires acceptance of specific terms of use. To learn
-more about the program and agree to the terms of use, see [https://aka.ms/dpswpublicpreview](https://aka.ms/dpswpublicpreview).
+>This topic is intended for participants in the data processor service for Windows Enterprise preview program and requires acceptance of specific terms of use. To learn
+more about the program and agree to the terms of use, see [https://aka.ms/WindowsEnterprisePublicPreview](https://aka.ms/WindowsEnterprisePublicPreview).
 
 ## Introduction to Data Subject Requests (DSRs) 
 The EU General Data Protection Regulation (GDPR) gives rights to people (known in the regulation as _data subjects_) to manage the personal data that has been collected by an employer or other type of agency or organization (known as the _data controller_ or just _controller_). Personal data is defined very broadly under the GDPR as any data that relates to an identified or identifiable natural person. The GDPR gives data subjects specific rights to their personal data; these rights include obtaining copies of personal data, requesting corrections to it, restricting the processing of it, deleting it, or receiving it in an electronic format so it can be moved to another controller. A formal request by a data subject to a controller to take an action on their personal data is called a _Data Subject Request_ or DSR. 
@@ -53,11 +53,11 @@ The following provides definitions of terms that are relevant to this guide.
 
 ## How to use this guide 
 
-When you use data processor service for Windows enrolled devices, Windows generates some information, known as Windows Diagnostic Data, in order to provide the service.
+When you use data processor service for Windows Enterprise enrolled devices, Windows generates some information, known as Windows Diagnostic Data, in order to provide the service.
 
 ## Windows Diagnostic Data 
 
-Microsoft provides you with the ability to access, delete and export Windows Diagnostic Data associated with a user’s use of the data processor service for Windows.
+Microsoft provides you with the ability to access, delete and export Windows Diagnostic Data associated with a user’s use of the data processor service for Windows Enterprise.
 
 >[!IMPORTANT]
 >The ability to rectify Windows Diagnostic Data is not supported. Windows Diagnostic Data constitutes factual actions conducted within Windows, and modifications to such data would compromise the historical record of actions, increasing security risks and harming reliability. All data covered in this document is considered Windows Diagnostic Data. 
@@ -68,7 +68,7 @@ Microsoft provides the ability to access, delete, and export certain Windows dia
 
 ### Step 1: Access 
 
-The tenant admin is the only person within your organization who can access Windows Diagnostic Data associated with a particular user’s use of a data processor service for Windows enrolled device. The data retrieved for an access request will be provided, via export, in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. 
+The tenant admin is the only person within your organization who can access Windows Diagnostic Data associated with a particular user’s use of a data processor service for Windows Enterprise enrolled device. The data retrieved for an access request will be provided, via export, in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. 
 
 Microsoft offers a portal experience, providing the enterprise customer’s tenant administrator the capability to manage DSR access requests. [Azure DSR, Part 2, Step 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), describes how to execute a DSR access request, via export, through the Azure Portal.
 
@@ -87,7 +87,7 @@ Microsoft provides the ability to delete users, which in turn will delete Custom
 
 ### Step 3: Export 
 
-The tenant admin is the only person within your organization who can access Windows diagnostic data associated with a particular user’s use of a data processor service for Windows enrolled device. The data retrieved for an export request will be provided in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. [Azure DSR, Part 2, Step 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), describes how to execute a DSR export request through the Azure Portal. 
+The tenant admin is the only person within your organization who can access Windows diagnostic data associated with a particular user’s use of a data processor service for Windows Enterprise enrolled device. The data retrieved for an export request will be provided in a machine-readable format and will be provided in files that will allow the user to know which devices and services the data is associated with. As noted above, the data retrieved will not include data that may compromise the security or stability of the Windows device. [Azure DSR, Part 2, Step 3: Export](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-azure#step-3-export), describes how to execute a DSR export request through the Azure Portal. 
 
 Microsoft provides the ability to export Customer Data directly via a pre-existing application programming interface (API). Details are described in the [API reference documentation](https://docs.microsoft.com/graph/api/user-exportpersonaldata?view=graph-rest-1.0).
 

@@ -16,6 +16,7 @@ ms.custom:
 ms.collection: 
 - M365-identity-device-management
 - M365-security-compliance
+- m365solution-identitydevice
 
 ---
 # Identity and device access configurations
@@ -28,7 +29,7 @@ Microsoft understands that some organizations have unique environment requiremen
 
 ## Intended audience
 
-These recommendations are intended for enterprise architects and IT professionals who are familiar with [Office 365](https://technet.microsoft.com/library/dn127064(v=office.14).aspx) and [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), which includes, among others, Azure Active Directory (identity), Microsoft Intune (device management), and Azure Information Protection (data protection).
+These recommendations are intended for enterprise architects and IT professionals who are familiar with [Office 365](https://docs.microsoft.com/microsoft-365/admin) and [Microsoft Enterprise Mobility + Security](https://microsoft.com/ems), which includes, among others, Azure Active Directory (identity), Microsoft Intune (device management), and Azure Information Protection (data protection).
 
 ### Customer environment
 
@@ -40,7 +41,7 @@ For those organizations who do not have Enterprise Mobility + Security E5 licens
 
 ### Caveats
 
-Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that have not historically been available. We recommend these controls, because we believe they represent a balance between security and productivity.  
+Your organization may be subject to regulatory or other compliance requirements, including specific recommendations that may require you to apply policies that diverge from these recommended configurations. These configurations recommend usage controls that have not historically been available. We recommend these controls because we believe they represent a balance between security and productivity.  
 
 We have done our best to account for a wide variety of organizational protection requirements, but we're not able to account for all possible requirements or for all the unique aspects of your organization.
 
@@ -52,7 +53,7 @@ Each industry also has their own set of specialized regulations. Rather than pro
 
 - **Baseline protection**: We recommend you establish a minimum standard for protecting data, as well as the identities and devices that access your data. You can follow these baseline recommendations to provide strong default protection that meets the needs of many organizations.
 - **Sensitive protection**: Some customers have a subset of data that must be protected at higher levels, or they may require all data to be protected at a higher level. You can apply increased protection to all or specific data sets in your Microsoft 365 environment. We recommend protecting identities and devices that access sensitive data with comparable levels of security.  
-- **Highly regulated**: Some organizations may have a small amount of data that is highly classified, consititutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
+- **Highly regulated**: Some organizations may have a small amount of data that is highly classified, constitutes trade secrets, or is regulated data. Microsoft provides capabilities to help organizations meet these requirements, including added protection for identities and devices.
 
 ![Security cone - All customers > Some customers > Specific customers. Broad application to specific application](../media/M365-idquality-threetiers.png)
 
@@ -89,7 +90,7 @@ This section provides an overview of the Microsoft 365 services and capabilities
 
 Azure AD provides a full suite of identity management capabilities. For securing access we recommend using the following capabilities:
 
-- **[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: Allow your users to reset their passwords securely and without helpdesk intervention, by providing verification of multiple authentication methods that the administrator can control.
+- **[Self-service password reset (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)**: Allow your users to reset their passwords securely and without help-desk intervention, by providing verification of multiple authentication methods that the administrator can control.
 
 - **[Multi-factor authentication (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)**: MFA requires users to provide two forms of verification, such as a user password plus a notification from the Microsoft Authenticator app or a phone call. MFA greatly reduces the risk that a stolen identity can be used to access your environment.
 

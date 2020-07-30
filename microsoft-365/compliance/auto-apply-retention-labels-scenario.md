@@ -107,7 +107,7 @@ Here's the [file plan](file-plan-manager.md) for the Product Specification reten
 
 - **File plan descriptors:** (for simplifying the scenario, no file descriptors are provided)
 
-The following screenshot shows the settings when you create the Product Specification [retention label](retention.md#retention-labels) in the security and compliance center. You can create the **Product Cessation** event type when you create the retention label. See the steps below.
+The following screenshot shows the settings when you create the Product Specification [retention label](retention.md#retention-labels) in the Microsoft 365 compliance center. You can create the **Product Cessation** event type when you create the retention label. See the steps below.
 
 ![Retention settings for Product Specification label](../media/SPRetention5.png)
 
@@ -119,10 +119,10 @@ The following screenshot shows the settings when you create the Product Specific
 1. In the **Retain or delete content based** on dropdown list, select **an event**.
 
 2. Select **Choose an event type**.
+    
+    ![Create a new event type for Product Specification label](../media/SPRetention6.png)
 
-   ![Create a new event type for Product Specification label](../media/SPRetention6.png)
-
-3. On the **Choose an event type** page, select **You can create new event types here**.
+3. Select **Choose an event type** and then. on the **Choose an event type** page, select **Create new event types**.
 
 4. Create an event type named **Product Cessation**, give a description, and select **Finish** to create it. 
 
@@ -247,7 +247,7 @@ Now that we verified that the KQL query is working correctly, let's create the l
 
 ### Verifying the retention label was automatically applied
 
-After seven days, use the [Label activity explorer](view-label-activity-for-documents.md) in the compliance center to see that the label policy that we created has automatically applied the retention labels in this scenario to the product documents. 
+After seven days, use the [activity explorer](data-classification-activity-explorer.md) in the compliance center to see that the label policy that we created has automatically applied the retention labels in this scenario to the product documents. 
 
 Another verification step is to look at the properties of the document in the Document Library. In the information panel, you can see that the retention label is applied to a selected document.
 

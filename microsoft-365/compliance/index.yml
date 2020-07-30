@@ -42,10 +42,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Retention labels
+          - text: Retention policies and labels
             url: retention.md         
-          - text: Retention policies
-            url: retention.md
           - text: Records management
             url: records-management.md
           - text: File plan manager

@@ -47,6 +47,8 @@
           href: mtp/microsoft-secure-score-history-metrics-trends.md
         - name: What's coming
           href: mtp/microsoft-secure-score-whats-coming.md
+        - name: What's new
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft Threat Protection
       items: 
         - name: Overview
@@ -137,6 +139,8 @@
                   href: mtp/advanced-hunting-go-hunt.md
                 - name: Handle errors
                   href: mtp/advanced-hunting-errors.md
+                - name: Extend data coverage
+                  href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
                   items: 
                     - name: Understand the schema
@@ -313,6 +317,8 @@
                       href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: Submit malware and non-malware to Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                - name: Preset security policies
+                  href: ./office-365-security/preset-security-policies.md
                 - name: Anti-spam message headers
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: How policies and protections are combined
@@ -423,7 +429,7 @@
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
             - name: Remediate malicious email
               href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
-            - name: View and read your ATP reports
+            - name: View ATP reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: Understanding latest attacks with threat analytics
               href: ./mtp/latest-attack-campaigns.md
