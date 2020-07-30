@@ -100,14 +100,6 @@
   items:
     - name: Roadmap
       href: device-management-roadmap-microsoft-365.md
-    - name: Intune
-      href: https://docs.microsoft.com/mem/intune/fundamentals/planning-guide
-    - name: Device management with Microsoft 365
-      items:
-      - name: Set up
-        href: https://support.office.com/article/set-up-mobile-device-management-mdm-in-office-365-dd892318-bc44-4eb1-af00-9db5430be3cd 
-      - name: Manage device access settings
-        href: https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe
 
 - name: Test Lab Guides
   href: m365-enterprise-test-lab-guides.md
