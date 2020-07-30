@@ -9,7 +9,7 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
-- M365solutions
+- m365solution-securecollab
 f1.keywords: NOCSH
 ms.custom: 
 - seo-marvel-apr2020
@@ -55,7 +55,7 @@ The Microsoft 365 admin center has organization-level settings for sharing and f
 
 ### Sharing
 
-**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Settings > Security & privacy tab > Sharing
+**Navigation:** [Microsoft 365 admin center](https://admin.microsoft.com) > Settings > Org Settings > Security & privacy tab > Sharing
 
 ![Screenshot of the security and privacy guest sharing setting in the  Microsoft 365 admin center](../media/sharepoint-security-privacy-sharing-setting.png)
 

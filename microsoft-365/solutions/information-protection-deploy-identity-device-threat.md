@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: 
 description: Prevent personal data breaches with identity, device, and threat protection services of Microsoft 365.
 ---
