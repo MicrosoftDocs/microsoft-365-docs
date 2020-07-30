@@ -57,7 +57,7 @@ If you haven't signed up with Microsoft Store for Business, you can sign up when
 Microsoft Store adds the app to **Your products** for your organization.
 
 **To force a sync between Intune and Microsoft Store for Business**
-1. Sign in to [Azure Portal](https://portal.azure.com/) as Intune Admin or Global Admin for your tenant
+1. Sign in to [Azure portal](https://portal.azure.com/) as Intune Admin or Global Admin for your tenant
 2. Select **All services > Intune**. 
 Intune is in the Monitoring + Management section.
 3. In the Intune pane, select **Client Apps**, and then select **Microsoft Store for Business**.
@@ -85,7 +85,7 @@ Available |  The app will be available from Company Portal app or website. | MMD
 Required |  The app is installed on devices in the selected groups. | MMD – *app name* – Required
 Uninstall |  The app is uninstalled from devices in the selected groups. | MMD – *app name* – Uninstall
 
-Add your users to these groups to either make the app availabe, install the app, or remove the app from their Microsoft Managed Desktop device. 
+Add your users to these groups to either make the app available, install the app, or remove the app from their Microsoft Managed Desktop device. 
 
 <span id="3" />
 
