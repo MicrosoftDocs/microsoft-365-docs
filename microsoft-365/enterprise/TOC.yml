@@ -32,10 +32,6 @@
       items:
       - name: Overview
         href: placeholder.md
-    - name: Manage
-      items:
-      - name: Overview
-        href: placeholder.md
     - name: Multi-Geo
       items:
         - name: Overview
@@ -70,14 +66,6 @@
       items:
       - name: Overview
         href: placeholder.md
-    - name: Deploy
-      items:
-      - name: Overview
-        href: placeholder.md
-    - name: Manage
-      items:
-      - name: Overview
-        href: placeholder.md
 
 - name: Security and compliance
   href: https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap
@@ -86,10 +74,6 @@
   items:
     - name: Roadmap
       href: cloud-services-roadmap-microsoft-365.md
-    - name: Plan
-      items:
-      - name: Overview
-      href: placeholder.md
     - name: Deploy
       items:
       - name: Overview
@@ -210,6 +194,9 @@
 
 - name: Microsoft 365 security
   href: ../security/index.yml
+
+- name: Microsoft 365 architecture and solutions
+  href: ../solutions/index.yml
 
 - name: Enterprise Business Continuity Management (EBCM) with cloud services
   href: ebcm-understanding-ebcm-with-cloud-services.md
