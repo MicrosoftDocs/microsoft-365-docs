@@ -119,9 +119,9 @@ Content awaiting a disposition review is deleted only after a reviewer chooses t
 ## Disposition of records
 
 > [!NOTE]
->We have completed the roll out of proof of disposal for records in SharePoint and OneDrive. You will now be able to see the list of record labels from SharePoint and OneDrive in the ‘Disposition’ section of the Records Management solution within the Microsoft 365 Compliance Center. Under these labels, you will be able to see the list of items in SharePoint and ODB that are disposed automatically or through a disposition review.
+>The rollout for proof of disposal for records in SharePoint and OneDrive is complete. You will see the list of retention labels that marked content as records for SharePoint and OneDrive in the Disposition section of the Records Management page in the Microsoft 365 compliance center. Under these labels, you can see the list of items in SharePoint and OneDrive that were disposed automatically or after a disposition review.
 
-We have hit a snag and paused the roll-out of this change for email records in Exchange at this moment. We are actively working to address it and will update when we are have completed this roll-out.
+Proof of disposal for records in Exchange is not yet active. When this rollout begins and when it is complete, we will update this note.
 
 Use the **Disposition** tab from the **Records Management** page to identify records that are automatically deleted. These items display **Records Disposed** in the **Type** column. For example:
 
