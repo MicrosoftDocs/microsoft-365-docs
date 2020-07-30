@@ -15,6 +15,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - remotework
 - m365solution-remotework
+- m365solution-overview
 ms.custom: 
 description: Configure the security and service infrastructure that allows your workers to work remotely from anywhere and at any time.
 ---
