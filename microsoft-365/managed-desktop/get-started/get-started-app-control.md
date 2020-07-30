@@ -10,7 +10,6 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.topic: article
 ---
 
 # Get started with app control

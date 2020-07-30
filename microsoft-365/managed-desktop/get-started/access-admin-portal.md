@@ -10,7 +10,6 @@ audience: ITPro
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
-ms.topic: article
 ---
 
 # Access the admin portal
