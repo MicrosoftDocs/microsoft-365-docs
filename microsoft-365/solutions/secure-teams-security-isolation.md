@@ -10,6 +10,7 @@ localization_priority: Priority
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
+- m365solution-3tiersprotection
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
