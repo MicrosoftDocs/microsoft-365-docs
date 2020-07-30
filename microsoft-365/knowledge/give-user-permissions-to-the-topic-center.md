@@ -40,7 +40,7 @@ To give a user permissions to manage topics:
 
 To give a user permissions to create and edit topics:
 
-1. On the **Topic permissions** tab, under the **Who can create and edit topics**, select **View**.
+1. On the **Topic permissions** tab, under **Who can create and edit topics**, select **View**.
 2. Add the user to the **Only selected users or security groups** box.
 3. Select **Add**.
 

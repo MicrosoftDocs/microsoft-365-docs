@@ -84,7 +84,7 @@ Select the **Topic permissions** tab if you want to update who has permissions t
 To update who has permissions to create and edit topics:
 
 1. On the **Topic permissions** tab, under **Who can create and edit topics**, select **Edit**.</br>
-2. On the **Who can create and edit topics** page, you can select:
+2. On the **Who can create and edit topics** page, you can select:</br>
     a. **Everyone in your organization**</br>
     b. **Only selected people or security groups**</br>
     ![Create and edit topics](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
