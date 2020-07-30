@@ -13,7 +13,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
 - Strat_O365_Enterprise
-- M365solutions
+- m365solution-infoprotection
 ms.custom: 
 description: Use auditing and alert policies and data subject requests to monitor and respond to personal data incidents.
 ---

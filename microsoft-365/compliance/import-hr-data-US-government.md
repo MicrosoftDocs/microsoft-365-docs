@@ -82,7 +82,7 @@ The next step is to create an HR connector in the Microsoft 365 compliance cente
 
    b. Type a name for the HR connector.
 
-5. On the **File mapping** page, type the three column header names (also called *parameters* from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
+5. On the **File mapping** page, type the names of the three column headers (also called *parameters*) from the CSV file that you created in Step 2 in each of the appropriate boxes. The names are not case-sensitive. As previously explained, the names that you type in these boxes must match the parameter names in your CSV file. For example, the following screenshot shows the parameter names from the example in sample CSV file shown in Step 2.
 
    ![Column heading names match the ones in the CSV file](../media/HRConnectorWizard3.png)
 
