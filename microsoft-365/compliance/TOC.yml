@@ -279,10 +279,10 @@
               href: archive-twitter-data-with-sample-connector.md
         - name: TeleMessage data connectors
           items:  
-            - name: AT&T Network
-              href: archive-att-network-archiver-data.md
             - name: Android
               href: archive-android-archiver-data.md
+            - name: AT&T Network
+              href: archive-att-network-archiver-data.md
             - name: Bell Network
               href: archive-bell-network-data.md
             - name: Enterprise Number 
