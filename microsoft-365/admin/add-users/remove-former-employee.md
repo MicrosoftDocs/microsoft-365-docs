@@ -339,6 +339,12 @@ For more information about managing user licenses for Microsoft 365 for business
 When you remove a user's license from Office 365, the PSTN calling number associated with the user will be released. You can assign it to another user.
   
 If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
+
+## Setup Call forwarding to people in your organization
+
+If you need to setup call forwarding for the terminated employees phone number, the call forwarding setting under calling policues can setup forwarding  where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, See [Calling policies](https://docs.microsoft.com/microsoftteams/teams-calling-policy)
+
+ https://docs.microsoft.com/en-us/microsoftteams/teams-calling-policy
   
 ## Delete a former employee's user account
 <a name="bkmk_delete"> </a>
