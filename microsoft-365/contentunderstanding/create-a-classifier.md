@@ -23,9 +23,9 @@ A classifier is a type of model that automates identification and classification
 
 ![Contract Renewal document](../media/content-understanding/contract-renewal.png)
 
-Creating a classifier model will create a new [SharePoint Content Type](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that will be associated to the model.
+Creating a classifier will create a new [SharePoint Content Type](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) that will be associated to the model.
 
-When creating the classifier model, you need to create *explanations* that help to define the model by noting common data that you would expect to find consistently for this document type. 
+When creating the classifier, you need to create *explanations* that help to define the model by noting common data that you would expect to find consistently for this document type. 
 
 You use examples of the document type ("example files") to help "train" your model to identify files that have the same content type.
 
@@ -37,7 +37,7 @@ To create a classifier, you need to:
 5. Test your model 
 
 > [!Note]
-> When creating a classifier model, you can optionally [add extractors](create-an-extractor.md) to pull specific pieces of information from each file identified by the model. 
+> While a classifier is used by your model to identify and classify document types, you can also choose to pull specific pieces of information from each file identified by the model. You do this by creating an **extractor** to add to your model, and this is described in [Create an extractor](create-an-extractor.md).
 
 ## Name your model
 
@@ -51,22 +51,23 @@ The first step is to create your model in your Content Center by giving it a nam
 
 When you create a model, you are creating a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint Content Types are managed through the [Content types gallery](). For our example, when we create the model, we will be creating a new *Contract Renewal* content type.
 
-Click **Advanced settings** if you want to map this model to an existing content type in the SharePoint Content types gallery to use its schema. 
-
+Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint Content types gallery to use its schema. Note that while you can use an existing content type to leverage its schema to help with identification and classification, you will still need to train your model to extract information from files it identifies.
 ![Advanced settings](../media/content-understanding/advanced-settings.png)
 
 ## Add your example files
 
 On the model home page, you can add your examples files you will need to help train the model to identify your document type. 
 
+**Note: Embed the "Add your training set" video here.**
+
 > [!Note]
-> The same files should be used for both classifier and [extractor training](). You always have the option to add more later, but typically you should add a full set of example files. You will label some to train your model, and test the remaining unlabeled ones to evaluate model fitness. 
+> The same files should be used for both classifier and [extractor training](create-an-extractor.md). You always have the option to add more later, but typically you should add a full set of example files. You will label some to train your model, and test the remaining unlabeled ones to evaluate model fitness. 
 
 For your training set, you will want to use both positive examples, and negative examples:
 - Positive example: Documents that represent the document type. They contain strings and information that would always be in this type of document.
 - Negative example: Documents that do not represent the document type.  They are missing strings and information that needs to be present in this type of document.
 
-You will want to use at least five positive examples and one negative examples to train your model.  You will want to have additional ones to test your model.
+You will want to use at least five positive examples and one negative examples to train your model.  You will want to have additional ones to test your model after training.
 
 To add sample files:
 
@@ -75,6 +76,7 @@ To add sample files:
 3. After selecting your example files to use to train the model, click **Add**.
 
     ![Select example files](../media/content-understanding/select-sample.png) 
+
 ## Label your example files
 
 After adding your example files, you then need to label them as either positive examples or negative examples.
@@ -129,7 +131,10 @@ If you received a match on your labeled example files, you can now test your mod
 
 
 ## See Also
-  
+[Create an extractor](create-an-extractor.md)</br>
+[Document Understanding overview](document-understanding-overview.md)</br>
+[Create a form processing model](create-a-form-processing-model.md)</br>
+[Apply a model](apply-a-model.md) 
 
 
 

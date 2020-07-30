@@ -28,8 +28,11 @@ When files are added to libraries with document understanding models and they fi
 
 
 ## See Also
-[Create a classifier model](create-a-classifier.md)</br>
+[Create a classifier](create-a-classifier.md)</br>
 [Create an extractor](create-an-extractor.md)</br>
+[Create a content center](create-a-content-center.md)
+[Create a form processing model](create-a-form-processing-model.md)</br>
+[Apply a model](apply-a-model.md)   
 [Difference between a document understanding and a form processing model](difference-between-document-understanding-and-form-processing-model.md)  
 [Form processing overview](form-processing-overview.md)
 

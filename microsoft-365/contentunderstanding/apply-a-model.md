@@ -1,9 +1,9 @@
 ---
-title: "Apply a model (Preview)"
+title: "Apply a model to a document library (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 6/29/2020
+ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.service: 
@@ -15,9 +15,9 @@ description: "Learn how to apply a published model to a SharePoint document libr
 # Apply a model (Preview)
 
 > [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-After publishing your content understanding model, you can apply it to a SharePoint document library in your Microsoft 365 tenant.
+After publishing your document understanding model, you can apply it to a SharePoint document library in your Microsoft 365 tenant.
 
 > [!Note]
 > You will only be able to apply the model to document libraries that you have access to.
@@ -67,7 +67,10 @@ The model will identify any files with model’s associated content type and wil
 
 
 ## See Also
-  
+[Create a classifier](create-a-classifier.md)</br>
+[Create an extractor](create-an-extractor.md)</br>
+[Document Understanding overview](document-understanding-overview.md)</br>
+[Create a form processing model](create-a-form-processing-model.md)  
 
 
 

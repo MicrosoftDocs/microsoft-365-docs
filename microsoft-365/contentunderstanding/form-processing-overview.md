@@ -33,6 +33,8 @@ An Office 365 admin needs to [enable Form processing]() for the SharePoint docum
 ## See Also
   
 [Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
+[Create a form processing model](create-a-form-processing-model.md)</br>
+[Document understanding overview](document-understanding-overview.md)
 
 
 
