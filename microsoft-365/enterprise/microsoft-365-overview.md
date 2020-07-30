@@ -54,16 +54,16 @@ For more information, see [Features and capabilities for each plan](https://www.
 
 ## Get the big picture
 
-The [Microsoft 365 for enterprise poster](../media/m365-poster/Microsoft365Enterprise.pdf) is a central location for you to view:
+The [Microsoft 365 for enterprise poster](../downloads/Microsoft365Enterprise.pdf) is a central location for you to view:
 
 - The benefits of Microsoft 365 for enterprise and how apps and services map to its value pillars
 - Microsoft 365 for enterprise plans and which components they contain 
 - The key components of the Modern Workplace, which Microsoft 365 for enterprise enables
 - The [Microsoft 365 Productivity Library](https://www.microsoft.com/microsoft-365/success/) and representative scenarios for some common organization departments
 
-[![Image for the Microsoft 365 for enterprise poster](../media/m365-poster/m365e-poster.png)](../media/m365-poster/Microsoft365Enterprise.pdf)
+[![Image for the Microsoft 365 for enterprise poster](../media/microsoft-365-overview/m365e-poster.png)](../downloads/Microsoft365Enterprise.pdf)
 
-To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/m365-poster/Microsoft365Enterprise.pdf).
+To download a copy of the poster, click [here](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft365Enterprise.pdf).
 
 
 ## Transition your entire organization
@@ -129,7 +129,7 @@ See how the [The Contoso Corporation](contoso-overview.md), a fictional but repr
 
 ## Microsoft 365 training
 
-![Microsoft 365 Fundamentals training](../media/m365-poster/m365-fundamentals.svg)
+![Microsoft 365 Fundamentals training](../media/microsoft-365-overview/m365-fundamentals.svg)
 
 Get yourself trained and work towards a Microsoft 365 certification. Start with [Microsoft 365 Fundamentals](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
 
