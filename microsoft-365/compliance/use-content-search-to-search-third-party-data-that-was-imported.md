@@ -42,7 +42,7 @@ When creating queries to search and hold third-party data, you can also use cond
   
 ## Creating a query to search specific types of third-party data
 
-Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message *property:value* pair in the keyword box for a Content Search:
+Instead of searching all types of third-party data, you can create queries that only search for a specify type of third-party data by using the following message *property: value* pair in the keyword box for a Content Search:
   
 ```powershell
 itemclass:ipm.externaldata.<third-party data type>* 

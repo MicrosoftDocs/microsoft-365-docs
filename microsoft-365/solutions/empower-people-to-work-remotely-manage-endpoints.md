@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
 ms.custom: 
 description: Use Microsoft Endpoint Manager to manage your manage devices, PCs, and other endpoints.
 ---
