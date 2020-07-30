@@ -45,8 +45,7 @@ See [Synchronize domain users to Microsoft](manage-domain-users.md) for the step
 
 ## 1. Verify MDM Authority in Intune
 
-Go to portal.azure.com and on the top of the page search for Intune.
-On the Microsoft Intune page, select **Device enrollment** and on the **Overview** page make sure **MDM authority** is **Intune**.
+Go to [Endpoint Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) and On the Microsoft Intune page, select **Device enrollment** and on the **Overview** page make sure **MDM authority** is **Intune**.
 
 - If **MDM authority** is **None**, click the **MDM authority** to set it to **Intune**.
 - If **MDM authority** is **Microsoft Office 365**,go to **Devices** > **Enroll devices** and use the **Add MDM authority** dialog on the right to add **Intune MDM** authority (the **Add MDM Authority** dialog is only available if the **MDM Authority** is set to Microsoft Office 365).
