@@ -20,7 +20,7 @@ Microsoft 365 allows the administrators to import and archive third-party data f
 
 After Zoom Meetings data is stored in user mailboxes, you can apply Microsoft 365 compliance features such as Litigation Hold, Content Search, and Microsoft 365 retention policies. Using a Zoom Meetings connector to import and archive data in Microsoft 365 can help your organization stay compliant with government and regulatory policies.
 
-## Overview of archiving data Zoom Meetings date
+## Overview of archiving Zoom Meetings data
 
 The following overview explains the process of using a connector to archive Zoom Meetings data in Microsoft 365.
 
@@ -30,9 +30,9 @@ The following overview explains the process of using a connector to archive Zoom
 
 2. Once every 24 hours, meeting items from Zoom Meetings are copied to the Globanet Merge1 site. The connector also converts the content of the meetings to an email message format.
 
-3. The Zoom Meetings connector that you create in the Microsoft 365 compliance center, connects to the Globanet Merge1 every day, and transfers that messages to a secure Azure Storage location in the Microsoft cloud.
+3. The Zoom Meetings connector that you create in the Microsoft 365 compliance center, connects to the Globanet Merge1 every day, and transfers the meeting messages to a secure Azure Storage location in the Microsoft cloud.
 
-4. The connector imports the converted meeting items to the mailboxes of specific users using the value of the *Email* property of the automatic user mapping as described in Step 3. A new subfolder in the Inbox folder named **Zoom Meetings** will be created in the user mailboxes, and the meeting items will be imported to that folder. The connector does this by using the value of the *Email* property. Every meeting item contains this property, which is populated with the email address of every participant of the meeting.
+4. The connector imports the converted meeting items to the mailboxes of specific users using the value of the *Email* property and automatic user mapping, as described in Step 3. A new subfolder in the Inbox folder named **Zoom Meetings** is created in user mailboxes, and the meeting items are imported to that folder. The connector does this by using the value of the *Email* property. Every meeting item contains this property, which is populated with the email address of every participant of the meeting.
 
 ## Before you begin
 
@@ -76,7 +76,7 @@ After you click **Save & Finish,** you are directed back to the Microsoft 365 co
 
 ## Step 3: Map users and complete the connector setup
 
-1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping. 
+1. On the **Map external users to Microsoft 365 users** page, enable automatic user mapping.
 
    Zoom Meetings items include a property called *Email* that contains email addresses for users in your organization. If the connector can associate this address with a Microsoft 365 user, the items are imported to that user's mailbox
 
@@ -100,4 +100,4 @@ After you create the Zoom Meetings connector, you can view the connector status 
 
 - The connector doesn’t import any item larger than 10 MB.
 
-- For the Zoom connector to work, you enable recordings in Zoom Meetings during setup.
+- For the Zoom Meetings connector to work, you must enable recordings in Zoom Meetings during setup.
