@@ -34,7 +34,7 @@ User and device grouping | Microsoft Managed Desktop operations team will create
 
 ## Your roles and responsibilities
 
-Below is an additional set of common roles and responsibilities that are not provided by Microsoft, but are required for a successful deployment. It’s not exhaustive but is applicable for most organizations. There are a few items below that both Microsoft and the customer share responsibilties. 
+Below is an additional set of common roles and responsibilities that are not provided by Microsoft, but are required for a successful deployment. It’s not exhaustive but is applicable for most organizations. There are a few items below that both Microsoft and the customer share responsibilities. 
 
 Role or responsibility | Description
 --- | ---
