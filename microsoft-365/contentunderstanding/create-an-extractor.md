@@ -17,7 +17,7 @@ description: "Learn how to create an extractor"
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-(Add **Create an Extractor** video here when available.)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL2G]  
 
 Either before or after you create a classifier model to automate identification and classification of specific document types, you can optionally choose to add extractors to your model to pull out specific information from these documents. For example, you may want your model not only to identify all *Contract Renewal* documents that are added to your document library, but to also display the *Service Start date* for each document as a column in the document library.
 
@@ -85,7 +85,7 @@ For creating explanations for things such as dates, it is much easier to use the
 
 For our *Service Start Date* example, it is more efficient to use the pre-built explanation for *Date* in the explanation library:
 
-1. In the Explanation section, select **New**, and then select **From explanation library**.
+1. In the **Explanation section**,** select **New**, and then select **From explanation library**.
 2. From the explanation library, select **Date**. You can view all variations of date that will be recognized.
 3. Select **Add**.</br>
 

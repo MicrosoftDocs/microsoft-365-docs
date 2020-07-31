@@ -13,10 +13,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to apply a published a model to a SharePoint document library."
 ---
 
-# Apply a Document understanding model (Preview)
+# Apply a document understanding model (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]  
 
 After publishing your document understanding model, you can apply it to a SharePoint document library in your Microsoft 365 tenant.
 

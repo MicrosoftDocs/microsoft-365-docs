@@ -18,7 +18,7 @@ description: "Learn how to create a content center."
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-(Add **Create a Content Center** video here)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CPSF] 
 
 To create and manage document understanding models, you first need a content center. The content center is the model creation interface and also contains information about which document libraries published models have been applied.</br>
 

@@ -18,7 +18,7 @@ description: "Learn how to create a classifier"
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-(Add **Create a Classifier** video here)
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CL0R]  
 
 A classifier is a type of model that automates identification and classification of a document type. For example, you may want to identify all *Contract Renewal* documents that are added to your document library, such as the following.
 
@@ -60,7 +60,7 @@ Select **Advanced settings** if you want to map this model to an existing conten
 
 On the model home page, you can add your examples files you will need to help train the model to identify your document type. 
 
-**Note: Embed the "Add your training set" video here.**
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D0iX] 
 
 > [!Note]
 > The same files should be used for both classifier and [extractor training](create-an-extractor.md). You always have the option to add more later, but typically you should add a full set of example files. You will label some to train your model, and test the remaining unlabeled ones to evaluate model fitness. 

@@ -18,10 +18,10 @@ description: "Describes key difference between document understanding and form p
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-Content Understanding in Project Cortex allows you to identify and classify documents that are uploaded to SharePoint document libraries, as well as extracting relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such and displayed in a custom document library view in which they are displayed. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it in a column in your document library view. 
+Content understanding in Project Cortex allows you to identify and classify documents that are uploaded to SharePoint document libraries, as well as extracting relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such and displayed in a custom document library view in which they are displayed. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it in a column in your document library view. 
 
 
-Content Understanding lets you create *models* to identify and extract the information you need.  There are two types of models that can be used:
+Content understanding lets you create *models* to identify and extract the information you need.  There are two types of models that can be used:
 
 - [Document understanding models](document-understanding-overview.md)
 - [Form processing models](form-processing-overview.md)
@@ -58,7 +58,7 @@ Form processing models can currently only be applied to the SharePoint document 
 [Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
 [Create a classifier](create-a-classifier.md)</br>
 [Create an extractor](create-an-extractor)</br>
-[Apply a Document understanding model](apply-a-model.md)</br>
+[Apply a document understanding model](apply-a-model.md)</br>
 [Create a form processing model](create-a-form-processing-model.md)</br>
 
 
