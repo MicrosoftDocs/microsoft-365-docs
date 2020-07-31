@@ -33,7 +33,7 @@ description: "Find your invoice or billing statement in the Microsoft 365 admin 
 
 This article is for people who have a Microsoft 365 for business subscription.
   
-If you need help interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
+If you need help with interpreting the charges you see on your bill, see [Understand your bill or invoice](understand-your-invoice2.md) for a detailed walkthrough.
   
 **Have a problem with your bill?** [Contact support for business products](../../admin/contact-support-for-business-products.md).
 
@@ -55,14 +55,14 @@ You must be a Global or Billing admin to do the steps described in this article.
 You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:
 
 - An email is sent to both the primary and alternate email address for every person listed as a notification recipient.
-- You receive two separate emails: one that lets you know that your bill is ready, with instructions to log on to the admin center to view it, and a second email that contains the billing statement as an attachment.
+- You receive two separate emails: one that lets you know that your bill is ready, with instructions to sign in to the admin center to view it, and a second email that contains the billing statement as an attachment.
 
 ### To receive your billing statement in email
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
     - If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
     - If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
-1. Under **Receive billing statement as email attachment?**, switch the toggle to **On**.
+1. Under **Receive billing statement as email attachment?** switch the toggle to **On**.
 
     You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
 
