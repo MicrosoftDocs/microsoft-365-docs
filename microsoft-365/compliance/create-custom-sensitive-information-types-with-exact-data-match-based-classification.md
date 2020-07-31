@@ -227,7 +227,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
             </Pattern>
             <Pattern confidenceLevel="75">
               <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-              <Any minMatches ="3" maxMatches ="100">
+              <Any minMatches ="3" maxMatches ="6">
                 <match matches="PatientID" />
                 <match matches="MRN"/>
                 <match matches="FirstName"/>
@@ -307,9 +307,9 @@ During this phase, you set up a custom security group and user account, and set 
 
 #### Links to EDM upload agent by subscription type
 
-- [Commercial + GCC](https://download.microsoft.com/download/8/c/5/8c5344ab-e8a0-4191-a96c-7e25243f12c5/EdmUploadAgent.msi)
-- [GCC-High](https://download.microsoft.com/download/5/2/c/52c0ad46-5d09-44cb-947d-b0baadcab68e/EdmUploadAgentGccHi.msi)
-- [DoD](https://download.microsoft.com/download/7/c/6/7c6f43c3-957d-41a7-9fa3-aecbf5ff3371/EdmUploadAgentDoD.msi)
+- [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
 
 1. Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription. By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
 
@@ -323,7 +323,7 @@ During this phase, you set up a custom security group and user account, and set 
 
     `EdmUploadAgent.exe /Authorize`
 
-3. Sign in with your work or school account for Office 365.
+3. Sign in with your work or school account for Office 365 that was added to the EDM_DataUploaders security group.
 
 The next step is to use the EDM Upload Agent to index the sensitive data, and then upload the indexed data.
 
@@ -355,11 +355,15 @@ For example:
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
-To verify your sensitive data has been uploaded, run the following command in Windows Command Prompt:
+To verify that your sensitive data has been uploaded, run the following command in Windows command prompt:
 
 `EdmUploadAgent.exe /GetDataStore`
 
 You'll see a list of data stores and when they were last updated.
+
+If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt:
+
+`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
 Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).
 
