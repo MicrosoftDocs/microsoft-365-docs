@@ -1,5 +1,5 @@
 ---
-title: "Form Processing Overview (Preview)"
+title: "Form processing overview (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen

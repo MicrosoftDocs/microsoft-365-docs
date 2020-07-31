@@ -1,5 +1,5 @@
 ---
-title: 'Set up Content Understanding (Preview) '
+title: 'Set up content understanding (Preview) '
 description: 'How to set up Project Cortex.'
 author: efrene
 ms.author: efrene
@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 
 ---
-# Set up Content Understanding (Preview)
+# Set up content understanding (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
-Admins can use the Microsoft 365 admin center to set up and configure Content Understanding. 
+Admins can use the Microsoft 365 admin center to set up and configure content understanding. 
 
 > [!Important]
 
@@ -30,7 +30,7 @@ An admin can also make changes to your selected settings anytime after setup thr
 
 
 ## Requirements 
-You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up Content Understanding.
+You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.
 
 
 ## To set up Content Understanding
@@ -45,7 +45,7 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
     ![Begin setup](../media/content-understanding/admin-content-understanding-get-started.png)</br>
 
 
-4. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create Form Processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
+4. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
 > [Note!]
 > Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 

@@ -1,5 +1,5 @@
 ---
-title: "Create a Form Processing model (Preview)"
+title: "Create a form processing model (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -10,10 +10,10 @@ ms.service:
 search.appverid: 
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Create a Form Processing model in Project Cortex."
+description: "Create a form processing model in Project Cortex."
 ---
 
-# Create a Form Processing model (Preview)
+# Create a form processing model (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).

@@ -1,5 +1,5 @@
 ---
-title: "Document Understanding overview (Preview)"
+title: "Document understanding overview (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Get an overview of the Document Understanding feature in Project Cortex."
 ---
 
-# Document Understanding overview (Preview)
+# Document nnderstanding overview (Preview)
 > [!Note] 
 > Project Cortex is currently in Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).</br>
 
