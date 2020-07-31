@@ -59,7 +59,10 @@ The first step in creating a form processing model is to name it to create the d
 
 ## Step 2: Add and analyze documents
 
-After you create your new form processing model, your browser will open a new PowerApps AI Builder forms processing model page. </br>
+After you create your new form processing model, your browser will open a new PowerApps AI Builder forms processing model page. On this page you can add and analyze your example documents. </br>
+
+> [!Note]
+> When looking for example files to use, see the [form processing model input document requirements and optimization tips](https://docs.microsoft.com/en-us/ai-builder/form-processing-model-requirements). 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
@@ -131,6 +134,8 @@ After publishing your model and creating it's PowerAutomate flow, you can use yo
 
 ## See Also
   
+[Power Automate documentation](https://docs.microsoft.com/power-automate/)</br>
+[Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
 
 
 

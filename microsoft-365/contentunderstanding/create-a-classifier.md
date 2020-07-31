@@ -46,13 +46,14 @@ The first step is to create your model in your Content Center by giving it a nam
 
 1. In your Content Center, click **New**, and then click **Create a model**.
 2. In the **New document understanding model** pane, in the **Name** field, type the name of the model. For our example, if we want to identify contract renewal documents, we might name this model *Contract Renewal*.
-3. Click **Create**. This will create a home page for the model.
+3. Click **Create**. This will create a home page for the model.</br>
 
     ![Classifier model home page](../media/content-understanding/model-home.png)
 
 When you create a model, you are creating a new SharePoint content type. A SharePoint content type represents a category of documents that have common characteristics and share a collection of columns or metadata properties for that particular content. SharePoint Content Types are managed through the [Content types gallery](). For our example, when we create the model, we will be creating a new *Contract Renewal* content type.
 
-Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint Content types gallery to use its schema. Note that while you can use an existing content type to leverage its schema to help with identification and classification, you will still need to train your model to extract information from files it identifies.
+Select **Advanced settings** if you want to map this model to an existing content type in the SharePoint Content types gallery to use its schema. Note that while you can use an existing content type to leverage its schema to help with identification and classification, you will still need to train your model to extract information from files it identifies.</br>
+
 ![Advanced settings](../media/content-understanding/advanced-settings.png)
 
 ## Add your example files
