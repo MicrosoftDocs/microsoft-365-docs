@@ -340,7 +340,7 @@ When you remove a user's license from Office 365, the PSTN calling number associ
   
 If the user belongs to a queue group, they will no longer be a viable target of the call queue agents. So, we recommend also removing the user from the groups associated with the call queue. 
 
-## Setup Call forwarding to people in your organization
+## Set up call forwarding to people in your organization
 
 If you need to setup call forwarding for the terminated employees phone number, the call forwarding setting under calling policues can setup forwarding  where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, See [Calling policies](https://docs.microsoft.com/microsoftteams/teams-calling-policy)
 
