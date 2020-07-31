@@ -9,6 +9,9 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Prepare certificates and network profiles for Microsoft Managed Desktop  

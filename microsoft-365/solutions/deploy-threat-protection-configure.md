@@ -10,7 +10,7 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- M365solutions
+- m365solution-threatprotection
 ms.custom: 
 f1.keywords: NOCSH
 ---
