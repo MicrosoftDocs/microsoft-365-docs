@@ -9,7 +9,7 @@ ms.date: 09/19/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Normal
+localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Provides an introduction to the components, plans, and deployment paths for Microsoft 365 for enterprise.
