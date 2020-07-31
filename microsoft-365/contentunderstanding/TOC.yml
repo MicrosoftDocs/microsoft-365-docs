@@ -5,6 +5,8 @@
       items: 
         - name: Document Understanding overview
           href: document-understanding-overview.md
+        - name: Difference between a document understanding and form processing models 
+          href: difference-between-document-understanding-and-form-processing-model.md   
         - name: Form Processing overview 
           href: form-processing-overview.md
         - name: Create a Content Center 
@@ -17,29 +19,14 @@
           href: apply-a-model.md
         - name: Create a Form Processing model 
           href: create-a-form-processing-model.md
-        - name: Difference between a document understanding and form processing models 
-          href: difference-between-document-understanding-and-form-processing-model.md 
+
 
     - name: Get started with setup
       items:
 
         - name: Set up Content Understanding
           href: set-up-content-understanding.md
-        - name: Manage Content Understanding
-          href: manage-content-understanding.md          
+        
 
 
-    - name: Training videos
-      items: 
-        - name: Create a Content Center 
-          href: .md
-        - name: Create a document understanding model
-          href: .md
-        - name: Create an extractor
-          href: .md
-        - name: Import a training set
-          href: .md    
-        - name: Model creation tips and tricks
-          href: .md
-        - name: Apply a model to a document library
-          href: .md
+
