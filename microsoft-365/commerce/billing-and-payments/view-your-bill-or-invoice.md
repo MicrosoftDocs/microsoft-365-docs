@@ -43,15 +43,9 @@ You must be a Global or Billing admin to do the steps described in this article.
   
 ## View a bill or invoice
 
-::: moniker range="o365-worldwide"
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-::: moniker-end
-::: moniker range="o365-germany"
-1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
-::: moniker-end
-::: moniker range="o365-21vianet"
-1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.
-::: moniker-end
+    - If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
+    - If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.
 2. On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.
 3. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
