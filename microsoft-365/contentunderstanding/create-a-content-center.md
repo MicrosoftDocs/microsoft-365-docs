@@ -57,7 +57,7 @@ After the site is created, you can give additional users access to the site thro
 [Create a classifier](create-a-classifier.md)</br>
 [Create an extractor](create-an-extractor.md)</br>
 [Create a content center](create-a-content-center.md)
-[Document Understanding overview](document-understanding-overview.md)</br>
+[Document understanding overview](document-understanding-overview.md)</br>
 [Create a form processing model](create-a-form-processing-model.md)</br>
 [Apply a model](apply-a-model.md)    
 

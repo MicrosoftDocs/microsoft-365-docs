@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: "Get an overview of the Document Understanding feature in Project Cortex."
 ---
 
-# Document nnderstanding overview (Preview)
+# Document understanding overview (Preview)
 > [!Note] 
 > Project Cortex is currently in Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
