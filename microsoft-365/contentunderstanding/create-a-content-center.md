@@ -28,7 +28,7 @@ To create and manage document understanding models, you first need a content cen
 
    ![Select a doc library](../media/content-understanding/content-center-page.png)</br>
 
-An initial content center is created during [setup](set-up-content-understanding), but a SharePoint admin can choose to create additional ones as needed. While a single content center may be fine for environments in which you want to see a roll-up of all model activity, you may want to have additional ones if your have multiple departments within your organization that may have different needs and requirements for their models.
+An initial content center is created during [setup](set-up-content-understanding.md), but a SharePoint admin can choose to create additional ones as needed. While a single content center may be fine for environments in which you want to see a roll-up of all model activity, you may want to have additional ones if your have multiple departments within your organization that may have different needs and requirements for their models.
 
 A SharePoint admin can create a content center site like they would [create any other SharePoint site](https://docs.microsoft.com/sharepoint/create-site-collection) - through a site template.
 
