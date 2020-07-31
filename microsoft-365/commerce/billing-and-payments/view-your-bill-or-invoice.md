@@ -60,7 +60,9 @@ You can choose to receive a copy of your billing statement as an email attachmen
 ### To receive your billing statement in email
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=853212" target="_blank">Billing notifications</a> page.
-2. Under **Receive billing statement as email attachment?**, switch the toggle to **On**.
+    - If you're using Office 365 Germany, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853213" target="_blank">Billing notifications</a> page.
+    - If you're using Office 365 operated by 21Vianet, go to this <a href="https://go.microsoft.com/fwlink/p/?linkid=853215" target="_blank">Billing notifications</a> page.
+1. Under **Receive billing statement as email attachment?**, switch the toggle to **On**.
 
     You can stop receiving the billing statement emails at any time by switching the toggle to **Off**.
 
