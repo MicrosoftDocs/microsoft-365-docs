@@ -58,9 +58,9 @@ Select **Advanced settings** if you want to map this model to an existing conten
 
 ## Add your example files
 
-On the model home page, you can add your examples files you will need to help train the model to identify your document type. 
+On the model home page, you can add your examples files you will need to help train the model to identify your document type. </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D0iX] 
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4D0iX] </br>
 
 > [!Note]
 > The same files should be used for both classifier and [extractor training](create-an-extractor.md). You always have the option to add more later, but typically you should add a full set of example files. You will label some to train your model, and test the remaining unlabeled ones to evaluate model fitness. 
