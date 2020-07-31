@@ -342,7 +342,7 @@ If the user belongs to a queue group, they will no longer be a viable target of 
 
 ## Set up call forwarding to people in your organization
 
-If you need to setup call forwarding for the terminated employees phone number, the call forwarding setting under calling policues can setup forwarding  where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, See [Calling policies](https://docs.microsoft.com/microsoftteams/teams-calling-policy)
+If you need to set up call forwarding for the terminated employee's phone number, the call forwarding setting under calling policies can set up forwarding where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, see [Calling policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
 
  https://docs.microsoft.com/en-us/microsoftteams/teams-calling-policy
   
