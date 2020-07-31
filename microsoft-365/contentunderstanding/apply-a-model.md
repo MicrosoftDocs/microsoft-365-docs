@@ -18,7 +18,7 @@ description: "Learn how to apply a published a model to a SharePoint document li
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).</br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]  </br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4CSoL]</br>
 
 After publishing your document understanding model, you can apply it to a SharePoint document library in your Microsoft 365 tenant.
 
