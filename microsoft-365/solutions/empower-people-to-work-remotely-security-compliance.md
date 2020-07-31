@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - remotework
-- M365solutions
+- m365solution-remotework
 ms.custom:
 description: Use Microsoft 365 security and compliance services to protect your apps, data, and devices for remote workers.
 ---

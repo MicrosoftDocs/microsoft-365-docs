@@ -9,6 +9,8 @@ f1.keywords:
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
 ---
 
 # Microsoft Managed Desktop operations and monitoring

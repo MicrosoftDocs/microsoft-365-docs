@@ -14,7 +14,6 @@ search.appverid:
 - MET150
 ms.collection: 
 - M365-security-compliance
-- M365solutions
 ms.custom: Ent_Architecture
 description: "Summary: How Contoso used a team with security isolation for a top-secret project to develop a new suite of products and services."
 ---
