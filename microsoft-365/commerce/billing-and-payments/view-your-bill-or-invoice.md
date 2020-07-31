@@ -44,35 +44,27 @@ You must be a Global or Billing admin to do the steps described in this article.
 ## View a bill or invoice
 
 ::: moniker range="o365-worldwide"
-
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Bills & payments</a> page.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Bills & payments</a> page.
-
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
 1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Bills & payments</a> page.
-
 ::: moniker-end
 
 2. On the **Invoices** tab, select a date range from the drop-down list, and then choose the order that you want to view.
-
 3. On the summary page, you can see the items, quantity, price, discount, and total for all items in the invoice.
-
 4. To print or save a PDF copy of the invoice, select **Download PDF**.
 
 ## Receive a copy of your billing statement in email
 
 You can choose to receive a copy of your billing statement as an email attachment. If you do, be aware that:
 
-1. An email is sent to both the primary and alternate email address for every person listed as a notification recipient.
-2. You receive two separate emails: one that lets you know that your bill is ready, with instructions to log on to the admin center to view it, and a second email that contains the billing statement as an attachment.
+- An email is sent to both the primary and alternate email address for every person listed as a notification recipient.
+- You receive two separate emails: one that lets you know that your bill is ready, with instructions to log on to the admin center to view it, and a second email that contains the billing statement as an attachment.
 
 ### To receive your billing statement in email
 
