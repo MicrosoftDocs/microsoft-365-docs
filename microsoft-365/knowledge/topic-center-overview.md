@@ -16,7 +16,7 @@ localization_priority: Normal
 # Topic center overview (Preview)
 
 > [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]https://aka.ms/projectcortex).
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 The topic center is a Modern SharePoint site that serves as a center of knowledge for your organization​. It is created during [Knowledge Management setup](set-up-knowledge-network.md) in the Microsoft 365 admin center.
 
@@ -31,7 +31,7 @@ Through the topic center, users with the proper permissions can do the following
 
 ## Where is the topic center
 
-Your topic center is created during Knowledge Management setup. After setup completes, an admin can find the URL on the Knowledge Center Management page.
+Your topic center is created during Knowledge Management setup. After setup completes, an admin can find the URL on the [knowledge center management page](manage-knowledge-network.md).
 
 1.In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.
 

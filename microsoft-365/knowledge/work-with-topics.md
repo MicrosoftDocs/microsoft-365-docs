@@ -1,5 +1,5 @@
 ---
-title: 'Work with topics in the Topic Center(Preview) '
+title: 'Work with topics in the topic center(Preview) '
 description: 'How to work with topics in the Topic Center.'
 author: efrene
 ms.author: efrene
@@ -13,13 +13,13 @@ ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: Normal
 
 ---
-# Work with topics in the Topic Center (Preview)
+# Work with topics in the topic center (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 
-In the Project Cortex Topic Center, a knowledge manager can review topics that have been mined and discovered in the SharePoint source locations you specified, and can either confirm or reject them. A knowledge manager can also create and publish new topic pages if one was not found in topic discovery, or edit existing ones if they need to be updated.
+In the Project Cortex topic center, a knowledge manager can review topics that have been mined and discovered in the SharePoint source locations you specified, and can either confirm or reject them. A knowledge manager can also create and publish new topic pages if one was not found in topic discovery, or edit existing ones if they need to be updated.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ To review an unconfirmed topic:
 A user with create or edit topic permissions can create a new topic if needed. You might need to do this if the topic was not discovered through discovery or if the AI technology did not find enough evidence to establish it as a topic.
 
 To create a new topic:
-1. On the Knowledge Center page, select **New**, then select **Topic Page**.</br>
+1. On the topic center page, select **New**, then select **Topic Page**.</br>
 
     ![New topic](../media/content-understanding/k-new-topic.png) </br>
 
@@ -91,7 +91,7 @@ Existing topic pages can be found in the **Pages** page.
     c. People</br>
     d. Files and pages</br>
     e. Sites</br>
-    You can also add static items to the page - such as text, images, or link - by selecting the canvas icon (show image of icon).
+    You can also add static items to the page - such as text, images, or link - by selecting the canvas icon.
 5. Select **Republish** to save your changes.
 
 ## See also

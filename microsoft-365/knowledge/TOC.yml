@@ -1,16 +1,12 @@
-- name: Knowledge Management  help
-  href: knowledge-management-overview.md
-  items: 
-
-    - name: Get started with Knowledge Management
+    - name: Get started with knowledge management
       items: 
         - name: Knowledge management overview
           href: knowledge-management-overview.md 
-        - name: Topic Center overview 
+        - name: Topic center overview 
           href: topic-center-overview.md 
-        - name: Work with topics in the Knowledge Center
+        - name: Work with topics in the topic center
           href: work-with-topics.md   
-        - name: Give users permissions to the Topic Center
+        - name: Give users permissions to the topic center
           href: give-user-permissions-to-the-topic-center.md 
  
 
@@ -18,8 +14,8 @@
     - name: Get started with setup
       items:
 
-        - name: Set up Knowledge Management
+        - name: Set up knowledge management
           href: set-up-knowledge-network.md
-        - name: Manage your Knowledge Management network
+        - name: Manage your knowledge management network
           href: manage-knowledge-network.md
     
