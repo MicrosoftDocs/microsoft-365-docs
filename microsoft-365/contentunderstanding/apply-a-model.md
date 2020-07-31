@@ -1,5 +1,5 @@
 ---
-title: "Apply a model to a document library (Preview)"
+title: "Apply a Document understanding model to a document library (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -9,10 +9,11 @@ ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Normal
-description: "Learn how to apply a published model to a SharePoint document library."
+ROBOTS: NOINDEX, NOFOLLOW
+description: "Learn how to apply a published a model to a SharePoint document library."
 ---
 
-# Apply a model (Preview)
+# Apply a Document understanding model (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).

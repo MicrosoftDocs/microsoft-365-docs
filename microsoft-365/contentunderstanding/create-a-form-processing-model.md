@@ -3,19 +3,20 @@ title: "Create a Form Processing model (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 7/20/2020
+ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Create a Form Processing model in Project Cortex."
 ---
 
 # Create a Form Processing model (Preview)
 
 > [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 Using [AI Builder](https://docs.microsoft.com/ai-builder/overview) - a feature in Microsoft PowerApps - Project Cortex users can create a [form processing model](form-processing-overview.md) directly from a SharePoint document library. 
 

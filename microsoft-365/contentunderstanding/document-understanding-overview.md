@@ -9,6 +9,7 @@ ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Get an overview of the Document Understanding feature in Project Cortex."
 ---
 

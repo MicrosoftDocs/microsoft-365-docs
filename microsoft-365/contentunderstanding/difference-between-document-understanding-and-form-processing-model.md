@@ -3,12 +3,13 @@ title: "Difference between document understanding and form processing models (Pr
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 07/21/2020
+ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Describes key difference between document understanding and form processing models."
 ---
 

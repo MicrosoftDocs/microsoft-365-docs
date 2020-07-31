@@ -4,11 +4,12 @@ description: 'How to set up Knowledge Management.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
-ms.date: 07/21/2020
+ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.service: 
 search.appverid: 
+ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: Normal
 
 ---

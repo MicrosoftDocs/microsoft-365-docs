@@ -3,19 +3,20 @@ title: "Knowledge Management Overview (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 7/20/2020
+ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Overview of the Knowledge Management feature available in Project Cortex."
 ---
 
 # Knowledge Management Overview (Preview)
 
 > [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex) in your Microsoft 365 environment. 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex) 
 
 Knowledge Management uses Microsoft AI technology, Microsoft 365, Delve, Search, and other components and services to build a knowledge network in your Microsoft 365 environment. 
 

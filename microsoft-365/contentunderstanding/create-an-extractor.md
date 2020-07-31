@@ -3,18 +3,19 @@ title: "Create an extractor (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 6/29/2020
+ms.date: 8/1/2020
 audience: admin
 ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to create an extractor"
 ---
 
 # Create an extractor (Preview)
 > [!Note] 
-> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex]().
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
 
 (Add **Create an Extractor** video here when available.)
 

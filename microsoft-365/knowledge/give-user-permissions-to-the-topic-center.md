@@ -1,5 +1,5 @@
 ---
-title: "Give user permissions to the topic center"
+title: "Give user permissions to the topic center (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -9,10 +9,14 @@ ms.topic: article
 ms.service: 
 search.appverid: 
 localization_priority: Normal
+ROBOTS: NOINDEX, NOFOLLOW
 description: "Learn how to give users permissions to do tasks in the Topic Center"
 ---
 
-# Give user permissions to the topic center
+# Give user permissions to the topic center (Preview)
+
+> [!Note] 
+> The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex) 
 
 In order to work in the topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be added afterwards.
 
