@@ -1,30 +1,30 @@
 - name: Content Understanding help
   href: what-is-content-understanding.md
   items: 
-    - name: Get started with Content Understanding
+    - name: Get started with content understanding
       items: 
-        - name: Document Understanding overview
+        - name: Document understanding overview
           href: document-understanding-overview.md
-        - name: Form Processing overview 
+        - name: Form processing overview 
           href: form-processing-overview.md
         - name: Difference between a document understanding and form processing models 
           href: difference-between-document-understanding-and-form-processing-model.md   
-        - name: Create a Content Center 
+        - name: Create a content center 
           href: create-a-content-center.md
-        - name: Create a classifier model
+        - name: Create a classifier
           href: create-a-classifier.md
         - name: Create an extractor
           href: create-an-extractor.md
         - name: Apply a model
           href: apply-a-model.md
-        - name: Create a Form Processing model 
+        - name: Create a form processing model 
           href: create-a-form-processing-model.md
 
 
     - name: Get started with setup
       items:
 
-        - name: Set up Content Understanding
+        - name: Set up content understanding
           href: set-up-content-understanding.md
         
 
