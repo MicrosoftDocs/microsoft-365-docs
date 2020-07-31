@@ -19,7 +19,6 @@ description: "Describes key difference between document understanding and form p
 
 Content Understanding in Project Cortex allows you to identify and classify documents that are uploaded to SharePoint document libraries, as well as extracting relevant information from each file.  For example, as files are uploaded to a SharePoint document library, all files that are identified as *Purchase Orders* are classified as such and displayed in a custom document library view in which they are displayed. Additionally, you can pull specific information from each file (for example, *PO Number* and *Total*) and display it in a column in your document library view. 
 
-Add image from video here.
 
 Content Understanding lets you create *models* to identify and extract the information you need.  There are two types of models that can be used:
 
