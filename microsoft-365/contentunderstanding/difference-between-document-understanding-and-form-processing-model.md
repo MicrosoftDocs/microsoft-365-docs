@@ -41,7 +41,7 @@ Document understanding models are created and managed in a SharePoint content ce
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. You can optionally use existing content types to define your model if needed.
 
-Form processing models are created in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), but the creation is initiated directly from a SharePoint Document library. Form processing model creation needs to be enabled on your document library in order for a user to create a form processing model for it, and an admin can do this in the [Knowledge Management admin settings](manage-knowledge-network.md).
+Form processing models are created in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), but the creation is initiated directly from a SharePoint Document library. Form processing model creation needs to be enabled on your document library in order for a user to create a form processing model for it, and an admin can do this in the content understanding admin settings.
 
 Form processing models also create new [SharePoint content types](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), which are also stored in the SharePoint Content Types gallery.
 
@@ -57,7 +57,7 @@ Form processing models can currently only be applied to the SharePoint document 
  ## See Also
 [Training: Improve business performance with AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)</br>
 [Create a classifier](create-a-classifier.md)</br>
-[Create an extractor](create-an-extractor)</br>
+[Create an extractor](create-an-extractor.md)</br>
 [Apply a document understanding model](apply-a-model.md)</br>
 [Create a form processing model](create-a-form-processing-model.md)</br>
 

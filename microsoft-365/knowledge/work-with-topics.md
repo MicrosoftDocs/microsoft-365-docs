@@ -23,7 +23,7 @@ In the Project Cortex Topic Center, a knowledge manager can review topics that h
 
 ## Requirements
 
-In order to work in the topic center, you need to have the required permissions. Your admin can add you during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-topic-center.md).
+In order to work in the topic center, you need to have the required permissions. Your admin can add you during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md).
 
 Topic center users can be given two sets of permissions:
 

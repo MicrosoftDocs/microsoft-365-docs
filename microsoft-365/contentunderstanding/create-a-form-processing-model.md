@@ -62,7 +62,7 @@ The first step in creating a form processing model is to name it to create the d
 After you create your new form processing model, your browser will open a new PowerApps AI Builder forms processing model page. On this page you can add and analyze your example documents. </br>
 
 > [!Note]
-> When looking for example files to use, see the [form processing model input document requirements and optimization tips](https://docs.microsoft.com/en-us/ai-builder/form-processing-model-requirements). 
+> When looking for example files to use, see the [form processing model input document requirements and optimization tips](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  

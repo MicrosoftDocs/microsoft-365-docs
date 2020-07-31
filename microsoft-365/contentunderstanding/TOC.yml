@@ -1,6 +1,3 @@
-- name: Content Understanding help
-  href: what-is-content-understanding.md
-  items: 
     - name: Get started with content understanding
       items: 
         - name: Document understanding overview

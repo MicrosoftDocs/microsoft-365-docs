@@ -77,5 +77,5 @@ Additionally, users with proper permissions can tag items such as Teams conversa
 
 
 ## See also
-[Set up knowledge management](set-up-knowledge-management.md)</br>
+[Set up knowledge management](set-up-knowledge-network.md)</br>
 [Topic center overview](topic-center-overview.md)
