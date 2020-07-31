@@ -50,11 +50,22 @@ AssignedIPAddresses(x, y)
 
 ## Examples
 
-### Get the list of IP addresses used by a specific device as of 24 hours ago
+### Get the list of IP addresses used by a device as of 24 hours ago
 
 ```kusto
-AssignedIPAddresses('example-device', ago(1d))
+AssignedIPAddresses('example-device-name', ago(1d))
 ```
+
+### Get latest IP addresses used by a device and check if it received any network connections
+
+```kusto
+AssignedIPAddresses("daa142544612.sys-sqlsvr.local")
+// List IP addresses only
+| project IPAddress
+// Get all network events on devices with the returned IP addresses as the destination addresses
+| join kind=inner DeviceNetworkEvents on $left.IPAddress == $right.RemoteIP
+```
+
 ## Related topics
 - [Advanced hunting overview](advanced-hunting-overview.md)
 - [Learn the query language](advanced-hunting-query-language.md)
