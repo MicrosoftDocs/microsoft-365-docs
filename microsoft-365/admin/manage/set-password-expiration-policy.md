@@ -71,13 +71,18 @@ Here are some things to know about how this feature currently works as of Januar
     
 ## Prevent last password from being used again
 
-If you want to prevent your users from recycling old passwords, you can do so in Azure AD. See [Enforce password history](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/enforce-password-history).
-
-In addition, if an employee used a mobile device to access Microsoft 365, you can wipe it to ensure the password is no longer stored and recycled from there. To learn more, see [Wipe and block a former employee's mobile device](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee?view=o365-worldwide#wipe-and-block-a-former-employees-mobile-device).
-
+If you want to prevent your users from recycling old passwords, you can do so by enforcing password history in Azure AD. See [Create a custom password policy](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
 ## Synchronize user passwords hashes from an on-premises Active Directory to Azure AD (Microsoft 365)
 
 This article is for setting the expiration policy for cloud-only users (Azure AD). It doesn't apply to hybrid identity users who use password hash sync, pass-through authentication or on-premises federation like ADFS.
   
 To learn how to synchronize user password hashes from on premises AD to Azure AD, see [Implement password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
+
+
+## Powershell to update password Policy
+
+The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant. Two settings are required, the first is to indicate the length of time that a password remains valid before it must be changed and the second is to indicate the number of days before the password expiration date that will trigger when users will receive their first notification that their password will soon expire.
+
+To learn how to update password policy for a speicifc domain or tenant, See [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0)
+
