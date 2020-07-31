@@ -5,40 +5,39 @@
 
 - name: Networking
   items:
-    - name: Networking roadmap
+    - name: Roadmap
       href: networking-roadmap-microsoft-365.md
     - name: Plan
       items:
-      - name: Overview
+      - name: Place Networking-Plan TOC entries here
         href: placeholder.md
     - name: Deploy
       items:
-      - name: Overview
+      - name: Place Networking-Deploy TOC entries here
         href: placeholder.md
     - name: Manage
       items:
-      - name: Overview
+      - name: Place Networking-Manage TOC entries here
         href: placeholder.md
 - name: Tenant
   items:
     - name: Roadmap
       href: tenant-roadmap-microsoft-365.md
     - name: Plan
-      href: placeholder.md
       items:
-      - name: Overview
+      - name: Place Tenant-Plan TOC entries here
         href: placeholder.md
     - name: Deploy
       items:
-      - name: Overview
+      - name: Place Tenant-Deploy TOC entries here
         href: placeholder.md
     - name: Multi-Geo
       items:
-        - name: Overview
+        - name: Place Tenant-Multi-geo TOC entries here
           href: placeholder.md
     - name: Move to a new Microsoft 365 datacenter geo
       items:
-        - name: Overview
+        - name: Place Tenant-Move to a new Microsoft 365 datacenter geo TOC entries here
           href: placeholder.md
 
 - name: Identity
@@ -47,15 +46,15 @@
       href: identity-roadmap-microsoft-365.md
     - name: Plan
       items:
-      - name: Overview
+      - name: Place Identity-Plan TOC entries here
         href: placeholder.md
     - name: Deploy
       items:
-      - name: Overview
+      - name: Place Identity-Deploy TOC entries here
         href: placeholder.md
     - name: Manage
       items:
-      - name: Overview
+      - name: Place Identity-Manage TOC entries here
         href: placeholder.md
 
 - name: Client and server software
@@ -64,7 +63,7 @@
       href: client-server-software-roadmap-microsoft-365.md
     - name: Plan
       items:
-      - name: Overview
+      - name: Place Client and server software-Plan TOC entries here
         href: placeholder.md
 
 - name: Security and compliance
@@ -76,11 +75,11 @@
       href: cloud-services-roadmap-microsoft-365.md
     - name: Deploy
       items:
-      - name: Overview
+      - name: Place Cloud services-Plan TOC entries here
         href: placeholder.md
     - name: Manage
       items:
-      - name: Overview
+      - name: Place Cloud services-Manage TOC entries here
         href: placeholder.md
 
 - name: Windows 10
