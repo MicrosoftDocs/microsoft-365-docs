@@ -37,7 +37,7 @@ Contoso performed an analysis of their data and determined the following levels.
 The following table lists Contoso's information policies.
 
 
-|  | Access | Data retention | Information protection |
+| Value | Access | Data retention | Information protection |
 |:-------|:-----|:-----|:-----|
 | Low business value (Level 1: Baseline) | Allow access to all  | 6 months | Use encryption. |
 | Medium business value (Level 2: Sensitive) | Allow access to Contoso employees, subcontractors, and partners <BR> <BR> Use MFA, Transport Layer Security (TLS), and Mobile Application Management (MAM). | 2 years  | Use hash values for data integrity.  |
@@ -96,7 +96,7 @@ These policies ensure that:
 
 The following table maps Contoso's data levels to information protection features in Microsoft 365 Enterprise.
 
-| | Microsoft 365 cloud services | Windows 10 and Microsoft 365 Apps for enterprise | Security and compliance |
+| Level | Microsoft 365 cloud services | Windows 10 and Microsoft 365 Apps for enterprise | Security and compliance |
 |:-------|:-----|:-----|:-----|
 | Level 1: Baseline  | SharePoint and Exchange Online Conditional Access policies <BR> Permissions on SharePoint sites | Sensitivity labels <BR> BitLocker <BR> Windows Information Protection | Device Conditional Access policies and Mobile Application Management policies |
 | Level 2: Sensitive | Level 1 plus: <BR> <BR> Sensitivity labels <BR> Microsoft 365 retention labels on SharePoint sites <BR> Data Loss Prevention for SharePoint and Exchange Online <BR> Isolated SharePoint sites  | Level 1 plus: <BR> <BR> Sensitivity labels on digital assets  | Level 1 |

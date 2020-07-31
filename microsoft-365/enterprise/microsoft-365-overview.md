@@ -29,7 +29,7 @@ Microsoft 365 for enterprise consists of:
 |:-------|:-----|
 | Local and cloud-based apps and productivity services | Includes both Microsoft 365 Apps for enterprise, the latest Office apps for your PC and Mac (such as Word, Excel, PowerPoint, Outlook, and others), and a full suite of online services for email, file storage and collaboration, meetings, and more. |
 | Windows 10 Enterprise | Addresses the needs of both large and midsize organizations, providing users with the most productive and secure version of Windows and IT professionals with comprehensive deployment, device, and app management. |
-| Device management and advanced security services | Includes Microsoft Intune, which is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while keeping your corporate data protected. |
+| Device management and advanced security services | Includes Microsoft Intune, which is a cloud-based enterprise mobility management (EMM) service that helps enable your workforce to be productive while protecting your organization data. |
 |||
 
 ## Plans
@@ -39,8 +39,7 @@ Microsoft 365 for enterprise is available in three plans.
 | Plan name | Capabilities |
 |:-------|:-----|
 | E3 | Access core products and features within Microsoft 365 to enhance workplace productivity and drive innovation, securely. |
-| E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools.. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
-| F3 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
+| E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
 |||
 
 If you have Microsoft 365 E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
