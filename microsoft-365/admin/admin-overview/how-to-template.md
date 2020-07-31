@@ -2,39 +2,33 @@
 # This template provides a structure for M365 admin SMB articles.
 # For details about MAX content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
 
-title: "Article title goes here"      # Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
+title: "Article title goes here"      # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
 f1.keywords:
 - NOCSH
-ms.author: YourMicrosoftAlias         # Your Microsoft alias without @microsoft.com
-author: YourGitHubUserName            # Your GitHub alias, not your Microsoft alias
-manager: MicrosoftAliasOfManager      # Your manager's Microsoft alias without @microsoft.com
-audience: TargetAudience              # Choose from: Admin, ITPro, Developer
-ms.topic: article                     # Choose from: article, overview, reference 
-ms.service: o365-administration
-localization_priority: Normal         # Choose from: Normal, Priority, None
-ms.collection: 
-- M365-subscription-management
+ms.author: YourMicrosoftAlias         # (Required) Your Microsoft alias without @microsoft.com
+author: YourGitHubUserName            # (Required) Your GitHub alias, not your Microsoft alias
+manager: MicrosoftAliasOfManager      # (Required for MARVEL) Your manager's Microsoft alias without @microsoft.com
+audience: Admin                       # (Required) Always Admin for admin SMB articles (options: Admin, ITPro, Developer)
+ms.topic: article                     # (Required) Choose from: article, overview, reference 
+ms.service: o365-administration       # (Required) Always o365-administration for admin SMB articles 
+localization_priority: Normal         # (Required) Choose from: Normal, Priority, None
+ms.collection:                        # (Required) Always M365-subscription-management for admin SMB articles   
+- M365-subscription-management        # See metadata requirements link above for additional allowed values; not more than 2 allowed
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
+ms.custom: AdminSurgePortfolio        # (Optional) To help with reporting, always include AdminSurgePortfolio for admin SMB articles
+search.appverid:                      # (Required for Minimaven content) Always MET150 for admin SMB articles
 - MET150
-description: "Set up email forwarding to one or more email accounts using Office365."
+description: "Brief summary of article here"   # (Optional) Helps with SEO. Recommended character length is 120-158 characters.
 ---
 
 # Title
 
-Habitasse platea dictumst quisque sagittis purus sit. Morbi tristique senectus et netus et malesuada. Sem integer vitae justo eget. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Eu ultrices vitae auctor eu. Odio morbi quis commodo odio aenean sed adipiscing diam. Id donec ultrices tincidunt arcu. Dolor sit amet consectetur adipiscing elit duis tristique sollicitudin. Erat imperdiet sed euismod nisi porta lorem.
+Add intro text here, if needed.
 
 ## Before you begin
 
-Note the following: 
-
-- Once you set up email forwarding, only **new** emails sent to the  *from*  mailbox will be forwarded. 
-    
-- The  *from*  account must have a license. If you're setting up email forwarding because the user has left your organization, another option is to [convert their mailbox to a shared mailbox](convert-user-mailbox-to-shared-mailbox.md). This way several people can access it. However, a shared mailbox cannot exceed 50GB.
-
-- You must be an Exchange administrator or Global administrator in Microsoft 365. For more information, see the topic [About admin roles](../add-users/about-admin-roles.md).
+Include this section for how-to articles. List anything that's required before the user begins the task. If there are multiple requirements, add them as a bulleted list. Include things like required permissions or admin roles, required licenses, links to tasks that must be completed before beginning this one, etc.
 
 ## Configure email forwarding
 
