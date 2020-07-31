@@ -40,12 +40,15 @@ Microsoft 365 for enterprise is available in three plans.
 |:-------|:-----|
 | E3 | Access core products and features within Microsoft 365 to enhance workplace productivity and drive innovation, securely. |
 | E5 | Access the latest products and features within Microsoft 365, including advanced threat protection, security and collaboration tools. Includes all of E3's capabilities plus advanced security, voice, and data analysis tools. |
+| F3 | Connect with your Firstline Workers through purpose-built tools and resources that allow them to do their best work. |
 |||
 
-If you have Microsoft 365 E3, you can also get these [offerings](https://www.microsoft.com/microsoft-365/blog/2019/01/02/introducing-new-advanced-security-and-compliance-offerings-for-microsoft-365/):
+If you have Microsoft 365 E3, you can also get these add-ons:
 
 - Identity & Threat Protection
 - Information Protection & Compliance
+- [Microsoft 365 E5 Compliance](https://www.microsoft.com/microsoft-365/business/e5-compliance)
+- Microsoft 365 E5 Insider Risk
 
 These offerings contain additional features that are included with Microsoft 365 E5.
 
@@ -71,15 +74,15 @@ To get a better picture of how to move your entire organization to the products 
 
 [![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
-This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
+This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance and move to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
 You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
-## Avoid end of support for Windows 7 and Office 2010 clients and servers
+## End of support for Windows 7 and Office 2010 clients and servers
 
 [Windows 7](https://aka.ms/win7upgrade) reached end of support on **January 14, 2020**.
 
-The following products will reach end of support on **October 13, 2020**:
+These products will reach end of support on **October 13, 2020**:
 
 - [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](https://docs.microsoft.com/office365/enterprise/exchange-2010-end-of-support)
@@ -94,9 +97,9 @@ This one-page poster is a quick way to understand the various paths you can take
 
 You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
-## Deploy
+## Plan for and deploy
 
-There are three ways to deploy the products, features, and components of Microsoft 365 for enterprise:
+There are three ways to plan for deploy the products, features, and components of Microsoft 365 for enterprise:
 
 1. In partnership with FastTrack
   
@@ -112,7 +115,7 @@ There are three ways to deploy the products, features, and components of Microso
 
 See how the [The Contoso Corporation](contoso-overview.md), a fictional but representative multinational organization, has deployed Microsoft 365 for enterprise.
 
-## Additional Microsoft 365 solutions
+## Additional Microsoft 365 products
 
 - [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
  
