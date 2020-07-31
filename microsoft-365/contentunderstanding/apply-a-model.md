@@ -60,7 +60,15 @@ After applying the model to the document library, you can begin uploading docume
 
 The model will identify any files with model’s associated content type and will list them in your view. If your model has any extractors, the view will display columns for the data you are extracting from each file.
 
+### Apply the model to files already in the document library
 
+While an applied model will process all files uploaded to the document library after it is applied, you can also do the following to run the model on files that already existed in the document library prior to the model being applied:
+
+1. In your document library, select the files that you want to be processed by your model.
+2. After selecting your files, **Classify and extract** will appear in the document library ribbon. Select **Classify and extract**.
+3. The files you selected will be added to the queue to be processed.
+
+      ![Classify and extract](../media/content-understanding/extract-classify.png)</br> 
 
 
 

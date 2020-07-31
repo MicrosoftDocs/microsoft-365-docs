@@ -3,7 +3,7 @@ title: "Document Understanding overview (Preview)"
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.date: 07/20/2020
+ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.service: 

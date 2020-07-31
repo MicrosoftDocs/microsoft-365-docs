@@ -1,10 +1,10 @@
 ---
-title: 'Set up Knowledge Management (Preview) '
+title: 'Set up Content Understanding (Preview) '
 description: 'How to set up Project Cortex.'
 author: efrene
 ms.author: efrene
 manager: pamgreen
-ms.date: 06/15/2020
+ms.date: 08/1/2020
 audience: admin
 ms.topic: article
 ms.service: 
@@ -20,7 +20,12 @@ localization_priority: Normal
 Admins can use the Microsoft 365 admin center to set up and configure Content Understanding. 
 
 > [!Important]
-> It is important to plan the best way to set up and configure Content Understanding in your environment. For example, which sites should you allow forms processing and who is primary owner of the Content Center?  Much of this type of information is needed during the setup steps. Before going through the setup steps, make sure to [make all your planning considerations]().
+
+> It is important to plan the best way to set up and configure Content understanding in your environment. For example, you will need to make considerations about the following:
+- Which SharePoint sites will you enable form processing?
+- Who will be the primary owner of the content center?
+
+An admin can also make changes to your selected settings anytime after setup through the Content Understanding Manage settings in the Microsoft 365 admin center.
 
 
 ## Requirements 
