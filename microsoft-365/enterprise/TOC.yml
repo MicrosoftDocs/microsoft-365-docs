@@ -100,6 +100,11 @@
     - name: Roadmap
       href: device-management-roadmap-microsoft-365.md
 
+- name: Microsoft 365 PowerShell
+  items: 
+    - name: Place PowerShell TOC entries here
+      href: placeholder.md
+
 - name: Test Lab Guides
   href: m365-enterprise-test-lab-guides.md
   items: 
@@ -202,5 +207,4 @@
       href: ebcm-microsoft-365-mitigations.md
 
 - name: Microsoft 365 for Business
-  href: https://docs.microsoft.com/office365/admin/admin-home
-
+  href: ../microsoft-365/admin/index.yml
