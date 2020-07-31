@@ -1,5 +1,5 @@
 ---
-title: "Create a trainable classifier (preview)"
+title: "Get started with classifiers (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,10 +14,33 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Use trainable classifiers when one of the built-in classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create a custom classifier."
+description: "Use trainable classifiers when one of the built-in classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create and train a custom classifier and how to improve the accuracy of classifiers over their lifetime through retraining."
 ---
 
-# Creating a trainable classifier (preview)
+# Get started with classifiers (preview)
+
+
+
+## Prerequisites
+
+### Licensing requirements
+
+Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
+
+### Permissions
+
+To access classifiers in the UI: 
+- the Global admin needs to opt in for the tenant
+- Compliance admin role or Compliance Data Administrator is required to train a classifier
+
+You'll need accounts with these permissions to use classifiers in these scenarios:
+
+- Retention label policy scenario: Record Management and Retention Management roles 
+- Sensitivity label policy scenario: Security Administrator, Compliance Administrator, Compliance Data Administrator
+- Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator 
+
+
+
 
 Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the predictions by giving it a mix of positive and negative samples.
 

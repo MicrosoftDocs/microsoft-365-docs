@@ -50,21 +50,7 @@ Sensitivity labels can use classifiers as conditions, see [Apply a sensitivity l
 > [!IMPORTANT]
 > Classifiers only work with items that are not encrypted and are in English.
 
-### Licensing requirements
 
-Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one of these subscriptions to make use of them.
-
-### Pre-requisites
-
-To access classifiers in the UI: 
-- the Global admin needs to opt in for the tenant
-- Compliance admin role or Compliance Data Administrator is required to train a classifier
-
-You'll need accounts with these permissions to use classifiers in these scenarios:
-
-- Retention label policy scenario: Record Management and Retention Management roles 
-- Sensitivity label policy scenario: Security Administrator, Compliance Administrator, Compliance Data Administrator
-- Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator 
 
 ## Types of classifiers
 
