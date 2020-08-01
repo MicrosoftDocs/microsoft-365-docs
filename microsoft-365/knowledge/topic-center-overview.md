@@ -39,7 +39,7 @@ Your topic center is created during Knowledge Management setup. After setup comp
 
 2. On the **Connect people to knowledge** page, in the **At a glance** section, see **Topic center address** for the site URL.
 
-## Permissions to use the Topic Center
+## Permissions to use the topic center
 
 To work in the topic center, you need to have the required permissions. Your admin can assign these permissions to users during [knowledge management setup](set-up-knowledge-network.md), or new users can be [added afterwards](give-user-permissions-to-the-topic-center.md) by an admin through the Microsoft 365 admin center.
 
