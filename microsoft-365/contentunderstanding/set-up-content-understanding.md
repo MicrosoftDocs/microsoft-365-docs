@@ -53,8 +53,9 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 
    ![Configure form processing](../media/content-understanding/admin-configforms.png)
 </br>
-    > [!Note]
-    > Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
+
+   > [!Note]
+   > Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
 
     
 5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>
