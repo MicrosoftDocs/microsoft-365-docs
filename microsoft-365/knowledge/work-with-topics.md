@@ -40,12 +40,10 @@ To review an unconfirmed topic:
 
 1. On the **Unconfirmed** tab, select the topic to open the topic page.</br>
 
-    ![Unconfirmed topics](../media/content-understanding/k-unconfirmed-topics.png) </br>
-
-1. On the topic page, review the topic page, and select **Edit** if you need to make any changes to the page.
-2. On the Knowledge Center home page, for the selected topic, you can:</br>
+2. On the topic page, review the topic page, and select **Edit** if you need to make any changes to the page.
+3. On the Knowledge Center home page, for the selected topic, you can:</br>
     a. Select the check to confirm that you want to keep the topic.</br>
-    b. Select the x if you want to reject the topic.</br>
+    b. Select the **x** if you want to reject the topic.</br>
 
     Confirmed topics will be removed from the **Unconfirmed** list and will now display in the **Confirmed** tab.</br>
 
@@ -70,28 +68,31 @@ To create a new topic:
     f. In the **Sites** section, select **Add**. In the  **Sites** pane that displays, select the sites that are associated to the topic.</br>
 
     ![New topic page](../media/content-understanding/k-new-topic-page.png) </br>
-3. When you are done, select **Publish** to publish the topic page. Published topic pages will display in the **Pages** tab.
+3. If you need to add other components to the page, such as text, images, webparts, links, etc., select the canvas icon in the middle of the page to locate and add them.
+    ![Add items to page](../media/content-understanding/static-icon.png) </br> 
+
+4. When you are done, select **Publish** to publish the topic page. Published topic pages will display in the **Pages** tab.
 
 > [!Note] 
 > The new topic page is made up of web parts that are *knowledge network aware*. This means that as AI gathers more information on the topic, the information in these web parts will be updated with suggestions to make the page more useful to users.
-
-Efren's note: Need info about user canvas. Check for latest info on this.
 
 
 ## Edit an existing topic page
 
 Existing topic pages can be found in the **Pages** page. 
 
-1. On the Topic Center page, select **Pages**.
-2. On the **Pages** page, you will see a list of topic pages. Use the Search box to find the topic page you want to update. Click on the name of the topic page that you want to edit.
-3. On the topic page, select **Edit**. 
+1. On the Topic Center page, select **Pages**.</br>
+2. On the **Pages** page, you will see a list of topic pages. Use the Search box to find the topic page you want to update. Click on the name of the topic page that you want to edit.</br>
+3. On the topic page, select **Edit**. </br>
 4. Make the changes you need to the page. This includes updates to the following fields:</br>
     a. Alternate names</br>
     b. Description</br>
     c. People</br>
     d. Files and pages</br>
     e. Sites</br>
-    You can also add static items to the page - such as text, images, or link - by selecting the canvas icon.
+    f. 
+    You can also add static items to the page - such as text, images, or link - by selecting the canvas icon.</br>
+
 5. Select **Republish** to save your changes.
 
 ## See also
