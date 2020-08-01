@@ -80,7 +80,7 @@ This article is for setting the expiration policy for cloud-only users (Azure AD
 To learn how to synchronize user password hashes from on premises AD to Azure AD, see [Implement password hash synchronization with Azure AD Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
 
 
-## Powershell to update password Policy
+## Update password Policy
 
 The Set-MsolPasswordPolicy cmdlet updates the password policy of a specified domain or tenant. Two settings are required, the first is to indicate the length of time that a password remains valid before it must be changed and the second is to indicate the number of days before the password expiration date that will trigger when users will receive their first notification that their password will soon expire.
 
