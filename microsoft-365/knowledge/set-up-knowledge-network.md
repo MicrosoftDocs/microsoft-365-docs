@@ -64,7 +64,7 @@ To set up your knowledge network:
 
     ![Choose how to find topics](../media/content-understanding/ksetup1.png) </br>
    
-5. In the **Exclude topics by name** section, you can choose to includes names of topics you don't want to be in the discovered results. Use this setting to prevent sensitive topics from being included as part of the knowledge network.Your options include:</br>
+5. In the **Exclude topics by name** section, you can choose to includes names of topics you don't want to be in the discovered results. Use this setting to prevent sensitive topics from being included as part of the knowledge network. Your options include:</br>
     a. **Don't exclude any topics** </br>
     b. **Exclude topic that contain these terms**:  If you have topics you don’t want shown to users as part of the knowledge network.
         - Download the provided template.
@@ -89,10 +89,11 @@ To set up your knowledge network:
 8. In the **Who can manage topics** section, you can select:</br>
     a. **Everyone in your organization**</br>
     b. **Selected people or security groups**</br>
+
     ![Permissions for topic management](../media/content-understanding/ksetup3.png) </br>
 
     Select **Next**.</br>
-9. On the **Create Topic  Center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed.  In the **Topic center name** box, type a name for your Topic center. You can optionally type a short description in the **Site description** box. 
+9. On the **Create Topic  Center** page, you can create your topic center site in which topic pages can be viewed and topics can be managed.  In the **Topic center name** box, type a name for your Topic center. You can optionally type a short description in the **Site description** box. </br>
 
 Select **Next**.</br>
 
