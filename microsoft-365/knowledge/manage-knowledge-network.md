@@ -1,5 +1,5 @@
 ---
-title: 'Manage your Knowledge Management network(Preview) '
+title: 'Manage your knowledge management network(Preview) '
 description: 'How to set up Knowledge Management.'
 author: efrene
 ms.author: efrene
@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: Normal
 
 ---
-# Manage your Knowledge Management network (Preview)
+# Manage your knowledge management network (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
