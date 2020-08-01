@@ -79,9 +79,6 @@ To help identify the *Service Start Date* you can create a pattern explanation.
     - 00/00/0000
 4. Select **Save**.
 
-### Explanation types
-
-(Need to explain explanation types here before getting into the explanation library)
 
 ### Use the Explanation library
 

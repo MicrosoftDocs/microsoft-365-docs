@@ -33,7 +33,7 @@ Through the topic center, users with the proper permissions can do the following
 
 Your topic center is created during Knowledge Management setup. After setup completes, an admin can find the URL on the [knowledge center management page](manage-knowledge-network.md).
 
-1.In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.
+1. In the Microsoft 365 admin center, select **Setup** in the navigation pane, and in the **Organizational Knowledge** section, select **Connect people to knowledge**.
 
    ![Connect people to knowledge](../media/content-understanding/manage-connect-people-to-knowledge.png) </br>
 
