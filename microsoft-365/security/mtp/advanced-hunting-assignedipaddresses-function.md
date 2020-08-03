@@ -56,14 +56,16 @@ AssignedIPAddresses(x, y)
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### Get latest IP addresses used by a device and check if it received any network connections
+### Get latest IP addresses used by a device and find devices communicating with it
 
 ```kusto
-AssignedIPAddresses("daa142544612.sys-sqlsvr.local")
-// List IP addresses only
+// List IP addresses used on or before a specific date
+AssignedIPAddresses("daa142544612.sys-sqlsvr.local", 2020-08-02)
 | project IPAddress
 // Get all network events on devices with the returned IP addresses as the destination addresses
 | join kind=inner DeviceNetworkEvents on $left.IPAddress == $right.RemoteIP
+// Get only events from a specific period
+| where Timestamp between (datetime(2020-08-01) .. datetime(2020-08-02))
 ```
 
 ## Related topics
