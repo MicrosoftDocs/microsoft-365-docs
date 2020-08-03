@@ -1,5 +1,5 @@
 ---
-title: "Get started with classifiers (preview)"
+title: "Get started with trainable classifiers (preview)"
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,12 +14,16 @@ ms.collection: M365-security-compliance
 search.appverid: 
 - MOE150
 - MET150
-description: "Use trainable classifiers when one of the built-in classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create and train a custom classifier and how to improve the accuracy of classifiers over their lifetime through retraining."
+description: "A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. This topic shows you how to create and train a custom classifier and how to improve the accuracy of classifiers over their lifetime through retraining."
 ---
 
-# Get started with classifiers (preview)
+# Get started with trainable classifiers (preview)
 
+A Microsoft 365 trainable classifier is a tool you can train to recognize various types of content by giving it samples to look at. Once trained you can use it to identify items in Office sensitivity labels, Communications compliance policies and retention label policies.
 
+Creating a custom trainable classifier first involves giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the predictions by giving it a mix of positive and negative samples. This article shows you how to create and train a custom classifier and how to improve the accuracy of custom trainable classifiers and pre-trained classifiers over their lifetime through retraining.
+
+To learn more about the different types of classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md).
 
 ## Prerequisites
 
@@ -30,6 +34,7 @@ Classifiers are a Microsoft 365 E5, or E5 Compliance feature. You must have one 
 ### Permissions
 
 To access classifiers in the UI: 
+
 - the Global admin needs to opt in for the tenant
 - Compliance admin role or Compliance Data Administrator is required to train a classifier
 
@@ -39,28 +44,31 @@ You'll need accounts with these permissions to use classifiers in these scenario
 - Sensitivity label policy scenario: Security Administrator, Compliance Administrator, Compliance Data Administrator
 - Communication compliance policy scenario: Insider Risk Management Admin, Supervisory Review Administrator 
 
+## Prepare for a custom trainable classifier 
 
+It's helpful to understand what's involved in creating a custom trainable classifier before you dive in. 
 
+### Timeline
 
-Use trainable classifiers when one of the out of the box classifiers won't meet your needs. A Microsoft 365 classifier is a tool you can train to recognize various types of content by giving it samples to look at. Training the classifier involves first giving it samples that are human picked and positively match the category. Then, after it has processed those, you test the predictions by giving it a mix of positive and negative samples.
-
-To learn more about the different types of classifiers, see [Learn about trainable classifiers (preview)](classifier-learn-about.md)
-
-This timeline reflects a sample deployment.
+This timeline reflects a sample deployment of trainable classifiers.
 
 ![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
 > Opt-in is required the first time for trainable classifiers. It takes twelve days for Microsoft 365 to complete a baseline evaluation of your organizations content. Contact your global administrator to kick off the opt-in process.
 
-## Seed content
+### Overall workflow
+
+To understand more about the overall workflow of creating custom trainable classifiers, see [Process flow for creating customer trainable classifiers](classifier-learn-about.md#process-flow-for-creating-custom-classifiers)
+
+### Seed content
 
 When you want a trainable classifier to independently and accurately identify an item as being in particular category of content, you first have to present it with many samples of the type of content that are in the category. This feeding of samples to the trainable classifier is known as *seeding*. Seed content is selected by a human and is judged to represent the category of content.
 
 > [!TIP]
 > You need to have at least 50 positive samples and as many as 500. The trainable classifier will process up to the 500 most recent created samples (by file created date/time stamp). The more samples you provide, the more accurate the predictions the classifier will make.
 
-## Testing content
+### Testing content
 
 Once the trainable classifier has processed enough positive samples to build a prediction model, you need to test the predictions it makes to see if the classifier can correctly distinguish between items that match the category and items that don't. You do this by feeding it another, hopefully larger, set of human picked content that consists of samples that should fall into the category and samples that won't. Once it processes those, you manually go through the results and verify whether each prediction is correct, incorrect, or you aren't sure. The trainable classifier uses this feedback to improve its prediction model.
 
