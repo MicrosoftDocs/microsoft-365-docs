@@ -1,5 +1,5 @@
 ---
-title: 'Manage your Knowledge Management network(Preview) '
+title: 'Manage your knowledge management network(Preview) '
 description: 'How to set up Knowledge Management.'
 author: efrene
 ms.author: efrene
@@ -13,7 +13,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: Normal
 
 ---
-# Manage your Knowledge Management network (Preview)
+# Manage your knowledge management network (Preview)
 
 > [!Note] 
 > The content in this article is for Project Cortex Private Preview. [Find out more about Project Cortex](https://aka.ms/projectcortex).
@@ -32,7 +32,7 @@ For example, you may need to adjust your settings for any of the following:
 You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and manage Organizational knowledge tasks.
 
 
-To access knowledge management settings:
+## To access knowledge management settings:
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational Knowledge** section.
 2. In the **Organizational Knowledge** section, click **Connect people to knowledge**.<br/>
@@ -88,6 +88,7 @@ To update who has permissions to create and edit topics:
 2. On the **Who can create and edit topics** page, you can select:</br>
     a. **Everyone in your organization**</br>
     b. **Only selected people or security groups**</br>
+
     ![Create and edit topics](../media/content-understanding/k-manage-who-can-create-and-edit.png) </br> 
 
 3. Select **Save**.</br>
@@ -95,9 +96,10 @@ To update who has permissions to create and edit topics:
 To update who has permissions to manage topics:
 
 1. On the **Topic permissions** tab, under **Who can manage topics**, select **Edit**.</br>
-2. On the **Who can manage topics** page, you can select:
+2. On the **Who can manage topics** page, you can select:</br>
     a. **Everyone in your organization**</br>
     b. **Selected people or security groups**</br>
+
     ![Manage topics](../media/content-understanding/k-manage-who-can-manage-topics.png) </br> 
 
 3. Select **Save**.</br>

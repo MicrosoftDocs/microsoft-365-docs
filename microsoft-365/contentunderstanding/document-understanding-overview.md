@@ -10,7 +10,7 @@ ms.service:
 search.appverid: 
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Get an overview of the Document Understanding feature in Project Cortex."
+description: "Get an overview of the document understanding in Project Cortex."
 ---
 
 # Document understanding overview (Preview)
@@ -27,13 +27,15 @@ Document understanding uses AI models to automate classification of files and ex
 
 Document understanding models are created and managed in a type of SharePoint site called a content center. When applied to a SharePoint document library, the model is associated with a content type which has columns to store the information extracted. The content type you create is stored in the SharePoint content type gallery. You can also choose to use existing content types in order to use their schema.
 
-Document understanding models use *classifiers* and *extractors*. 
+You can add *classifiers* and *extractors* to your document understanding models to do the following: 
 
-When files are added to libraries with document understanding models and they fit the classification, the information is automatically extracted and written to columns in the library.
+- Classifiers are used to identify and classify documents that are uploaded to the document library. For example, a classifier can be "trained" to identify all *contract renewal* documents that are uploaded to the library. The contract renewal content type is defined by you when you create your classifier.
 
+- Extractors pull information from these documents. For example, for all contract renewal documents that are identified in your document library, columns will display in your view that will also show the *Service Start Date* and  *Client* for each contract renewal document. 
 
+You use example files to train and test your classifiers and extractors in your model. Example files provide your model examples of what to look for when trying to identify and extract data from files. For example, you would train your contract renewal classifiers and extractors with examples of contract renewal documents your company works with. You can also use example files to test the effectiveness of your model.
 
-
+After publishing your model, use the content center to apply it to any SharePoint document library that you have access to.  
 
 
 ## See Also

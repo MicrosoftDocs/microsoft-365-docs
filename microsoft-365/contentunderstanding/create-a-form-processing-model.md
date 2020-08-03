@@ -35,8 +35,6 @@ You can only create a form processing model in SharePoint document libraries in 
 
  ![Create an AI Builder model](../media/content-understanding/create-ai-builder-model.png)</br>
 
-(Note: Need to add information about who can create form processing models)
-
 
 ## Step 1: Create a Form Processing model
 

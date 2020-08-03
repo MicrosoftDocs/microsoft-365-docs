@@ -31,9 +31,9 @@ While both models are used for generally the same purpose, there are key differe
 
 ## Structured versus unstructured and semi-structured content
 
-Use document understanding models to identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract reside in sentences or specific regions of the document. For example, an unstructured document could be a contract renewal letters that can be written in different ways. However, there is information that is consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.   
+Use document understanding models to identify and extract data from unstructured documents, such as letters or contracts, where the text entities you want to extract reside in sentences or specific regions of the document. For example, an unstructured document could be a contract renewal letter that can be written in different ways. However, there is information that is consistently in the body of each contract renewal document, such as the text string "Service start date of" followed by an actual date.   
 
-Use form processing models to identify files and extract data from structured or semi-structured documents, such as forms or invoices, where you have clear key-value pairs (for example, *Date: 10/1/2020*)* or table data. As an example, a good candidate for form processing would be a company's order request form in which clients need to provide their information for specific fields which are located in the same area of the document layout, such as *Name*, *Phone Number*, *Total Cost*, etc.   
+Use form processing models to identify files and extract data from structured or semi-structured documents, such as forms or invoices, where you have clear key-value pairs (for example, *Date: 10/1/2020*)* or table data. As an example, a good candidate for form processing would be a company's order request form in which clients need to provide their information for specific fields which are located in the same area of the document layout, such as *Name*, *Phone Number*, *Total Cost*, etc.  A tax form is a good example of a structured document. 
 
 ## Where they are created
 
@@ -41,15 +41,15 @@ Document understanding models are created and managed in a SharePoint content ce
 
 When you create a document understanding model, you create a new [SharePoint content type](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) that is saved to the SharePoint Content Types gallery. You can optionally use existing content types to define your model if needed.
 
-Form processing models are created in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), but the creation is initiated directly from a SharePoint Document library. Form processing model creation needs to be enabled on your document library in order for a user to create a form processing model for it, and an admin can do this in the content understanding admin settings.
+Form processing models are created in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), but the creation is initiated directly from a SharePoint Document library. Form processing model creation needs to be enabled on your document library in order for a user to create a form processing model for it, and an admin can do this in the content understanding admin settings. Form processing models use PowerAutomate flows to process files when they are uploaded to the document library.
 
 Form processing models also create new [SharePoint content types](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978), which are also stored in the SharePoint Content Types gallery.
 
 ## Where they can be applied
 
-Document understanding models can be applied to different SharePoint document libraries that you have access to. You can use the content center to not only create a document understanding model, but also to apply it to different document libraries.
+Document understanding models can be applied to different SharePoint document libraries that you have access to. You can use the content center to not only create a document understanding model, but also to apply it to different document libraries. The content center gives a more central control of how document understanding models are used and where they are applied, since this information must roll up to a content center.
 
-Form processing models can currently only be applied to the SharePoint document library from which they were created.
+Form processing models can currently only be applied to the SharePoint document library from which they were created. This allows any licensed user who has access to the site to create a form processing model.
 
 
 

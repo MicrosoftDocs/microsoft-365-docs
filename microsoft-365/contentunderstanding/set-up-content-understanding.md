@@ -20,20 +20,18 @@ ROBOTS: NOINDEX, NOFOLLOW
 
 Admins can use the Microsoft 365 admin center to set up and configure content understanding. 
 
-> [!Important]
-
-> It is important to plan the best way to set up and configure Content understanding in your environment. For example, you will need to make considerations about the following:
+Prior to setup, make sure to plan for the best way to set up and configure content understanding in your environment. For example, you will need to make considerations about the following:
 - Which SharePoint sites will you enable form processing? All of them, some, or select sites?
 - Name of your content center, and who is the primary site admin?
 
-An admin can also make changes to your selected settings anytime after setup through the Content Understanding Manage settings in the Microsoft 365 admin center.
+An admin can also make changes to your selected settings anytime after setup through the content understanding management settings in the Microsoft 365 admin center.
 
 
 ## Requirements 
 You must have Global Admin or SharePoint admin permissions to be able to access the Microsoft 365 admin center and set up content understanding.
 
 
-## To set up Content Understanding
+## To set up content understanding
 
 1. In the Microsoft 365 admin center, select **Setup**, and then view the **Organizational knowledge** section.
 2. In the **Organizational knowledge** section, select **Automate content understanding**.<br/>
@@ -47,17 +45,17 @@ You must have Global Admin or SharePoint admin permissions to be able to access 
 
 4. On the **Configure Form Processing** page, you can choose if you want to let users be able to use AI Builder to create form processing models in specific SharePoint document libraries. A menu option will be available in the document library ribbon to **Create a form processing model** in SharePoint document libraries in which it is enabled.
  
-> [Note!]
-> Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
-
- 
-For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
+     For **Which SharePoint libraries should show option to create a form processing model**, you can select:</br>
     - **All SharePoint libraries** to make it available to all SharePoint libraries in your tenant.</br>
     - **Only libraries in selected sites**, and then select the sites in which you want to make it available.</br>
-    - **No SharePoint libraries** if you currently don't want to make it available to any sites (you can change this after setup).</br>
+    - **No SharePoint libraries** if you currently don't want to make it available to any sites (you can change this after setup).
+</br>
 
-   ![Configure form processing](../media/content-understanding/admin-configforms.png)</br>
+   ![Configure form processing](../media/content-understanding/admin-configforms.png)
+</br>
 
+   > [!Note]
+   > Enabling this setting on a SharePoint document library does not affect existing models applied to the library or the ability to apply document understanding models to a library. 
 
     
 5. On the **Create Content Center** page, you can create a SharePoint content center site on which your users can create and manage document understanding models. </br>

@@ -28,7 +28,7 @@ Either before or after you create a classifier model to automate identification 
 You need to create an extractor for each entity in the document that you want to extract. In our example, we want to extract the *Service Start Date* for each *Contract Renewal* document that is identified by the model. We want to be able to see a view in the document library of all *Contract Renewal* documents, with a column that shows the Service Start date value of each document.
 
 > [!Note]
-> Before creating an extractor, you need to [add your example files]() you will need to help train the model to identify the information you want to extract. Use the same example files you used to create your classifier.
+> Before creating an extractor, you need to [add your example files](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-classifier?view=o365-worldwide#add-your-example-files) you will need to help train the model to identify the information you want to extract. Use the same example files you used to create your classifier.
 
 
 ## Name your extractor
@@ -79,9 +79,6 @@ To help identify the *Service Start Date* you can create a pattern explanation.
     - 00/00/0000
 4. Select **Save**.
 
-### Explanation types
-
-(Need to explain explanation types here before getting into the explanation library)
 
 ### Use the Explanation library
 
