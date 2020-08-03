@@ -1,8 +1,15 @@
 {:allowed-branchname-matches ["master"]
  :allowed-filename-matches ["microsoft-365/"]
  
- :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
+  :targets 
+   {
+     :scores {
+              :min-score 65
+             }
+   }
  
+ :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
+
  :acrolinx-check-settings
  {
   "languageId" "en"
@@ -16,11 +23,10 @@
  }
  
  :template-header
-
  "
 ## Acrolinx Scorecards
  
-**A minimum Acrolinx score of 20 is required.**
+**A minimum Acrolinx score of 65 is required.**
  
 Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
 
