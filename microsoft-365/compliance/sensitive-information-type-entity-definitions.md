@@ -12702,3 +12702,9 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 - Passeport# 
 - PasseportNon 
 - Passeportn ° 
+
+
+# What is New?
+
+This section will have the newly added.Changed items to make it easier to keep track of changes to the Sensitive Info Types
+
