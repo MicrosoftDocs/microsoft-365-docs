@@ -40,7 +40,7 @@ We recommend going through several steps to quickly get up and running with adva
 | Learning goal | Description | Resource |
 |--|--|--|
 | **Get a feel for the language** | Advanced hunting is based on [Kusto query language](https://docs.microsoft.com/azure/kusto/query/), supporting the same syntax and operators. Start learning the query language by running your first query. | [Query language overview](advanced-hunting-query-language.md) |
-| **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries and drill down to get richer information. | [Work with query results](advanced-hunting-query-results.md) |
+| **Learn how to use the query results** | Learn about charts and various ways you can view or export your results. Explore how you can quickly tweak queries, drill down to get richer information, and take response actions. | - [Work with query results](advanced-hunting-query-results.md)<br>- [Take action on query results](advanced-hunting-take-action.md) |
 | **Understand the schema** | Get a good, high-level understanding of the tables in the schema and their columns. This will help you determine where to look for data and how to construct your queries. | [Schema reference](advanced-hunting-schema-tables.md) |
 | **Leverage predefined queries** | Explore collections of predefined queries covering different threat hunting scenarios. | - [Use shared queries](advanced-hunting-shared-queries.md)<br>- [Go hunt](advanced-hunting-go-hunt.md) |
 | **Optimize queries** | Understand how to create efficient queries and queries that combine data from emails and devices. | - [Query best practices](advanced-hunting-shared-queries.md) <br>- [Hunt across devices and emails](advanced-hunting-best-practices.md) |
@@ -58,6 +58,7 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 ## Related topics
 - [Learn the query language](advanced-hunting-query-language.md)
 - [Work with query results](advanced-hunting-query-results.md)
+- [Take action on query results](advanced-hunting-take-action.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
 - [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
