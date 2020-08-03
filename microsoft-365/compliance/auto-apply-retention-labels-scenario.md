@@ -15,14 +15,14 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "This article shows how to manage the lifecycle of product-related documents in SharePoint Online by using retention labels. This process uses document metadata to classify content, automatically applies retention labels, and configures event-based retention."
+description: "This article shows how to manage the lifecycle of product-related documents in SharePoint by using retention labels. This process uses document metadata to classify content, automatically applies retention labels, and configures event-based retention."
 ---
 
 # Manage the lifecycle of product documents stored in SharePoint with retention labels
 
 >*[Microsoft 365 licensing guidance for security & compliance](https://aka.ms/ComplianceSD).*
 
-This article describes how to manage the lifecycle of product-related documents that are stored in SharePoint Online by using automatically applied retention labels and configuring event-based retention.
+This article describes how to manage the lifecycle of product-related documents that are stored in SharePoint by using automatically applied retention labels and configuring event-based retention.
 
 The auto-apply functionality uses SharePoint metadata for document classification. The example in this article is for product-related documents, but the same concepts can be used for other scenarios. For example, in the oil and gas industry, you could use it to manage the lifecycle of documents about physical assets such as oil platforms, well logs, or production licenses. In the financial services industry, you could manage bank account, mortgage, or insurance contract documents. In the public sector, you could manage construction permits or tax forms.
 
@@ -30,7 +30,7 @@ In this article, we'll look at the information architecture and definition of th
 
 ## Information architecture
 
-Our scenario is a manufacturing company that uses SharePoint Online to store all the documents about the products that the company develops. These documents include product specifications, agreements with suppliers, and user manuals. When these documents are stored in SharePoint through Enterprise Content Management policies, document metadata is defined, which is used to classify them. Each document has the following metadata properties:
+Our scenario is a manufacturing company that uses SharePoint to store all the documents about the products that the company develops. These documents include product specifications, agreements with suppliers, and user manuals. When these documents are stored in SharePoint through Enterprise Content Management policies, document metadata is defined, which is used to classify them. Each document has the following metadata properties:
 
 - **Doc Type** (such as product specification, agreement, or user manual)
 
@@ -53,12 +53,12 @@ In this scenario, we use the Managed Metadata service and the Term Store to crea
 
 *Content Type* can be created and published by using the [Content Type Hub](https://support.office.com/article/manage-content-type-publishing-06f39ac0-5576-4b68-abbc-82b68334889b). You can also create and publish a content type by using site provisioning tools, such as the [PnP provisioning framework](https://docs.microsoft.com/sharepoint/dev/solution-guidance/pnp-provisioning-framework) or [site design JSON schema](https://docs.microsoft.com/sharepoint/dev/declarative-customization/site-design-json-schema#define-a-new-content-type).
 
-Each product has a dedicated SharePoint Online site that contains one document library that has the right content types enabled. All documents are stored in this document library.
+Each product has a dedicated SharePoint site that contains one document library that has the right content types enabled. All documents are stored in this document library.
 
 ![Document library for product documentation](../media/SPRetention3.png)
 
 > [!NOTE]
-> Instead of having a SharePoint Online site per product, the manufacturing company in this scenario could use a Microsoft Team per product to support collaboration among members of the team, such as through persistent chat, and use the **Files** tab in Teams for document management. In this article we only focus on documents, so, we'll only use a site.
+> Instead of having a SharePoint site per product, the manufacturing company in this scenario could use a Microsoft Team per product to support collaboration among members of the team, such as through persistent chat, and use the **Files** tab in Teams for document management. In this article we only focus on documents, so, we'll only use a site.
 
 Here's a view of the document library for the Spinning Widget product:
 
