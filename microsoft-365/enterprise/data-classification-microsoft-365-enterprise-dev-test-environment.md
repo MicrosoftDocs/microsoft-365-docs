@@ -86,7 +86,7 @@ In this phase, you discover the default retention label behavior for files in th
 
 First, create a sensitive-level SharePoint Online team site:
   
-1. Using a private instance of your browser, sign in to the [Office 365 portal](https://portal.office.com) using your global admin account.
+1. Using a private instance of your browser, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global admin account.
     
 2. In the list of tiles, click **SharePoint**.
     

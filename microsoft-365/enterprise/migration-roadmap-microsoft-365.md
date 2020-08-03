@@ -21,7 +21,7 @@ Most enterprise organizations have a heterogeneous environment with multiple rel
 To maximize the business value of the Microsoft 365 Enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
 
 - The Office client installed on your computers to Microsoft 365 Apps for enterprise
-- Office servers installed on your servers to their equivalent services in Office 365
+- Office servers installed on your servers to their equivalent services in Microsoft 365
 - Windows 7 and Windows 8.1 on your devices to Windows 10 Enterprise
 
 >[!Note]
@@ -30,7 +30,7 @@ To maximize the business value of the Microsoft 365 Enterprise integrated suite 
 
 Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 Enterprise. 
 
-For information about migrating users and data for specific Office 365 workloads:
+For information about migrating users and data for specific Microsoft 365 workloads:
 
 - User mailboxes from Exchange Server to Exchange Online, see [Move mailboxes](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes).
 - SharePoint data from SharePoint Server to SharePoint Online, see [Migrate your content](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online).
@@ -91,7 +91,7 @@ In many organizations both large and small, you might be using a combination of 
 - Do not include new productivity applications, such as Microsoft Teams.
 - Do not include the latest security features, such as Exchange Advanced Threat Protection.
 
-Microsoft 365 Enterprise includes Office 365, which includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software. 
+Microsoft 365 Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software. 
 
 ### Office Server 2007
 
@@ -105,7 +105,7 @@ For server products in the Office 2007 release, the end of support has already p
 
 Rather than upgrading your server products in the Office 2007 release with server products in the Office 2010, Office 2013, or Office 2016 releases, consider:
 
-1. Migrating the data on your Office 2007 servers to Office 365. To help with this, hire a Microsoft partner.
+1. Migrating the data on your Office 2007 servers to Microsoft 365. To help with this, hire a Microsoft partner.
 2. Rolling out the new functionality and work processes to your users.
 3. When there is no longer a need for the on-premises servers running Office 2007 server products, decommissioning them.
 
@@ -125,7 +125,7 @@ Rather than upgrading these server products in the Office 2010 release with serv
 
 For server products in the Office 2013 release, the end of support has not been determined. Rather than upgrading your server products in the Office 2013 release with server products in the Office 2016 release, consider:
 
-1. Migrating the data on your Office 2013 servers to Office 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
+1. Migrating the data on your Office 2013 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
 2. Rolling out the new functionality and work processes to your users.
 3. When there is no longer a need for the on-premises servers running Office 2013 server products, decommissioning them.
 
@@ -133,7 +133,7 @@ For server products in the Office 2013 release, the end of support has not been 
 
 For server products in the Office 2016 release, the end of support has not been determined. To take advantage of the cloud-based service and enhancements to digitally transform your business, consider:
 
-1. Migrating the data on your Office 2016 servers to Office 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
+1. Migrating the data on your Office 2016 servers to Microsoft 365. To help with this, see [FastTrack for Microsoft 365](https://fasttrack.microsoft.com/microsoft365) or hire a Microsoft partner.
 2. Rolling out the new functionality and work processes to your users.
 3. When there is no longer a need for the on-premises servers running Office 2016 server products, decommissioning them.
 

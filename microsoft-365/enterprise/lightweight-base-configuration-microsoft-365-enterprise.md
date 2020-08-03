@@ -35,11 +35,11 @@ Use the resulting environment to test the features and functionality of [Microso
 > [!TIP]
 > Click [Microsoft 365 Enterprise Test Lab Guide Stack](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
 
-## Phase 1: Create your Office 365 E5 subscription
+## Phase 1: Create your Microsoft 365 E5 subscription
 
-We start with an Office 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
+We start with an Microsoft 365 E5 trial subscription and then add the Microsoft 365 E5 subscription to it.
 
-To start your Office 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
+To start your Microsoft 365 E5 trial subscription, you first need a fictitious company name and a new Microsoft account.
   
 1. We recommend that you use a variant of the company name Contoso for your company name, which is a fictitious company used in Microsoft sample content, but it isn't required. Record your fictitious company name here: ![Line](../media/Common-Images/TableLine.png)
     
@@ -186,7 +186,7 @@ Your test environment now has:
 - A Microsoft 365 E5 trial subscription.
 - All your appropriate user accounts (either just the global administrator or all five user accounts) are enabled to use Microsoft 365 E5.
     
-Here is your resulting configuration, which adds Microsoft 365 E5, which includes both Office 365 and Enterprise Security + Management (EMS).
+Here is your resulting configuration, which adds Microsoft 365 E5.
   
 ![Phase 3 of the Microsoft 3656 Enterprise test environment](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase2.png)
   
@@ -289,7 +289,7 @@ Next, join the WIN10 computer to the Azure AD tenant of your Microsoft 365 E5 su
     
 Next, install Microsoft 365 Apps for enterprise on the WIN10 computer.
   
-1. Open the Microsoft Edge browser and sign in to the Office portal with your global administrator account credentials. For help, see [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Open the Microsoft Edge browser and sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with your global administrator account credentials.
     
 2. On the **Microsoft Office Home** tab, click **Install Office**.
     

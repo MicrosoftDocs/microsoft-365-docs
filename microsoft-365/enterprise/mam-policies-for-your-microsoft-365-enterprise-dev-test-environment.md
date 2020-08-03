@@ -41,7 +41,7 @@ If you want to configure MAM policies in a simulated enterprise, follow the inst
 
 In this phase, you create a device compliance policy for Windows 10 devices.
   
-1. Go to the Office 365 portal at ([https://portal.office.com](https://portal.office.com)) and sign in to your Office 365 test lab subscription with your global administrator account.
+1. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in to your Microsoft 365 test lab subscription with your global administrator account.
     
 2. On a new tab of your browser, open the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 
@@ -53,7 +53,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
     
 6. In the **Groups-All groups** pane, click **+ New Group**.
     
-7. In the **Group** pane, select **Office 365** or **Security** for **Group type?**, type **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
+7. In the **Group** pane, select **Microsoft 365** or **Security** for **Group type?**, type **Managed Windows 10 device users** in **Name**, select **Assigned** in **Membership type**,  and then click **Create**. 
     
 8. Click **Microsoft Intune**. In the **Microsoft Intune** pane, in the **Quick tasks** list, click **Create a compliance policy**.
     
@@ -71,7 +71,7 @@ In this phase, you create a device compliance policy for Windows 10 devices.
     
 15. In the **Client Apps** pane, click **Apps**, and then click **Add**. 
 
-16. In the **Add app** pane, select **App type**, and then select **Windows 10** under **Office 365 Suite**.
+16. In the **Add app** pane, select **App type**, and then select **Windows 10** under **Microsoft 365 Suite**.
 
 17. In the **Add App** pane, select **App Suite Information**.
  
@@ -86,7 +86,7 @@ Click OK.
 
 22. In the **Add app** pane, click **Add**.
 
-You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. Please note that selecting Office 365 as the group type will create additional resources. 
+You now have a device compliance policy for testing the selected apps in the **Windows 10** device compliance policy and for members of the **Managed Windows 10 device users** group. Please note that selecting Microsoft 365 as the group type will create additional resources. 
   
 ## Next step
 

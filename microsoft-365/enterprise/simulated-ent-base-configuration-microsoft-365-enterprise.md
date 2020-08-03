@@ -375,7 +375,7 @@ To configure your new Office 365 E5 trial subscription, perform the instructions
 
 If all you need is an Office 365 test environment, you can stop here. 
 
-See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Office 365 and Microsoft 365.
+See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Microsoft 365 and Office 365.
 
 ### Add a Microsoft 365 E5 trial subscription
 

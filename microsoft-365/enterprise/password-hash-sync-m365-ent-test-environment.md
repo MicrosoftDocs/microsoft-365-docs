@@ -45,7 +45,7 @@ Follow the instructions in [simulated enterprise base configuration for Microsof
   
 This configuration consists of: 
   
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
+- A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines in an Azure virtual network. DC1 is a domain controller for the testlab.\<your public domain name> AD DS domain.
 
 ## Phase 2: Create and register the testlab domain
@@ -54,7 +54,7 @@ In this phase you add a public DNS domain and add it to your subscription.
 
 First, work with your public DNS registration provider to create a new public DNS domain name based on your current domain name and add it to your subscription. We recommend using the name **testlab.**\<your public domain>. For example, if your public domain name is **<span>contoso</span>.com**, add the public domain name **<span>testlab</span>.contoso.com**.
   
-Next, you add the **testlab.**\<your public domain> domain to your Microsoft 365 or Office 365 trial or paid subscription by going through the domain registration process. This consists of adding additional DNS records to the **testlab.**\<your public domain> domain. For more information, see [Add a domain to Office 365](https://docs.microsoft.com/office365/admin/setup/add-domain). 
+Next, you add the **testlab.**\<your public domain> domain to your Microsoft 365 trial or paid subscription by going through the domain registration process. This consists of adding additional DNS records to the **testlab.**\<your public domain> domain. For more information, see [Add a domain to Microsoft 365](../admin/setup/add-domain.md). 
 
 Here is your resulting configuration.
   
@@ -62,7 +62,7 @@ Here is your resulting configuration.
   
 This configuration consists of:
 
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your public domain name> registered.
+- A Microsoft 365 E5 trial or paid subscription with the DNS domain testlab.\<your public domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network.
 
 Notice how the testlab.\<your public domain name> is now:

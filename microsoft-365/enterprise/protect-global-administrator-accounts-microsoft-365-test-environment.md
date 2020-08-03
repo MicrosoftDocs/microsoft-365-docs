@@ -51,7 +51,7 @@ First, create a new user account as a dedicated global administrator.
 3. In the **Add user** pane, type **DedicatedAdmin** in **First name**, **Display name**, and **Username**.
 4. Click **Password**, click **Let me create the password**, and then type a strong password. Record the password for this new account in a secure location.
 5. Click **Next**.
-6. In the **Assign product licenses** pane, select **Microsoft 365 E5** or **Office 365 E5**, and then click **Next**.
+6. In the **Assign product licenses** pane, select **Microsoft 365 E5**, and then click **Next**.
 7. In the **Optional settings** pane, click **Roles**, and then select **Admin center access** and **Global admin**. Click **Next**.
 8. On the **You're almost done** pane, click **Finish adding**, and then click **Close**.
 

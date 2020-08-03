@@ -76,7 +76,7 @@ Complete the configuration for the User 2 account to use a text message for vali
   
 1. Open a new, private instance of your browser.
     
-2. Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in with the User 2 account name and password.
+2. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with the User 2 account name and password.
     
 3. After signing in, you are prompted to set up the account for more information. Click **Next**.
     
