@@ -67,7 +67,7 @@ While an investigation is running, any other related alerts that arise are added
 
 ## Requirements for automated investigation and response in Microsoft Threat Protection
 
-| | |
+|Requirement |Details |
 |--|--|
 |Subscription requirements |One of the following: <br/>- Microsoft 365 E5 <br/>- Microsoft 365 A5 <br/>- Microsoft 365 E5 Security<br/>- Microsoft 365 A5 Security<br/>- Office 365 E5 plus Enterprise Mobility + Security E5 plus Windows E5<br/><br/>See [Microsoft Threat Protection licensing requirements](https://docs.microsoft.com/microsoft-365/security/mtp/prerequisites?#licensing-requirements).|
 |Network requirements |- [Azure ATP](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) enabled<br/>- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) (MCAS) configured<br/>- [MCAS integrated with Azure ATP](https://docs.microsoft.com/cloud-app-security/aatp-integration) |
