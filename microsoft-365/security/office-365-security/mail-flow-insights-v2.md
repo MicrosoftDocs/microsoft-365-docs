@@ -20,27 +20,27 @@ Admins can use mail flow dashboard in the Security & Compliance Center to discov
 
 The insights, reports, and widgets that are available in the mail flow dashboard are:
 
+- [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md)
+
 - [Mail flow map report](mfi-mail-flow-map-report.md)
 
-- [Domain mail flow status insight](mfi-domain-mail-flow-status-insight.md)
-
-- [SMTP Auth clients report](mfi-smtp-auth-clients-report.md)
-
-- [Sender domain insight](mfi-sender-domain-insight.md)
-
-- [Non-delivery report](mfi-non-delivery-report.md)
+- [Mail loop insight](mfi-mail-loop-insight.md)
 
 - [Non-accepted domain report](mfi-non-accepted-domain-report.md)
+
+- [Non-delivery report](mfi-non-delivery-report.md)
 
 - [Outbound and inbound mail flow](mfi-outbound-and-inbound-mail-flow.md)
 
 - [Queue alerts and Queues](mfi-queue-alerts-and-queues.md)
 
-- [Auto-forwarded messages report](mfi-auto-forwarded-messages-report.md)
+- [SMTP Auth clients report](mfi-smtp-auth-clients-report.md)
 
-- [Mail loop insight](mfi-mail-loop-insight.md)
+- [Sender domain insight](mfi-sender-domain-insight.md)
 
 - [Slow mail flow rules insight](mfi-slow-mail-flow-rules-insight.md)
+
+- [Top domain mail flow status insight](mfi-domain-mail-flow-status-insight.md)
 
 ## Permissions required to view the mail flow dashboard
 
