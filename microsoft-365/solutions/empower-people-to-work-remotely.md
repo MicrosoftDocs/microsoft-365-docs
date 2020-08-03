@@ -67,7 +67,7 @@ To meet the criteria for remote workers, use these Microsoft 365 capabilities an
 For security and compliance criteria for remote workers, see [Deploy security and compliance for remote workers](empower-people-to-work-remotely-security-compliance.md)
 
 <a name="poster"></a>
-For a 2-page summary of this scenario, see the [Empower remote workers poster](../downloads/empower-remote-workers.pdf).
+For a 2-page summary of this solution, see the [Empower remote workers poster](../downloads/empower-remote-workers.pdf).
 
 [![Empower remote workers poster](../media/empower-people-to-work-remotely/empower-remote-workers-poster.png)](../downloads/empower-remote-workers.pdf)
 
