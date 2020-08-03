@@ -27,7 +27,7 @@ ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: "Follow this checklist to remove an employee from Microsoft 365 and secure data. "
 ---
 
-# Remove a former employee
+# Remove or Delete a former employee
 
 ::: moniker range="o365-21vianet"
 
