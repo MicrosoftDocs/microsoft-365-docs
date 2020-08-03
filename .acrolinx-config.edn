@@ -32,6 +32,22 @@
 ## Acrolinx Scorecards 
  
 **The minimum Acrolinx topic score of 65 is required for all MARVEL content merged to master.**
+ 
+Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
+| Article | Score | Issues | Scorecard | Processed |
+| ------- | ----- | ------ | --------- | --------- |
+"
+ 
+ :template-change
+ "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | [link](${acrolinx/scorecard}) | ${s/status} |
+"
+
+ :template-footer
+ 
+ "
+**More info about Acrolinx**
+
+Use the Acrolinx extension, or sidebar, in Visual Studio Code to check spelling, grammar, style, tone, clarity, and key terminology when you’re creating or updating content. For more information, see [Use the Visual Studio Code extension to run Acrolinx locally]( https://review.docs.microsoft.com/office-authoring-guide/acrolinx-vscode?branch=master).
 
 If you need a scoring exception for content in this PR, add the *Sign off* and the *Acrolinx exception* labels to the PR. The PubOps Team will review the exception request and may take one or more of the following actions:
 
@@ -40,18 +56,6 @@ If you need a scoring exception for content in this PR, add the *Sign off* and t
 -	Approve the exception and work with GitHub Admin Team to merge the PR to the master branch.
 
 For more information about exception criteria and the exception process, see [Minimum Acrolinx topic scores for publishing]( https://review.docs.microsoft.com/office-authoring-guide/acrolinx-min-score?branch=master).
-"
 
- :template-change
- "
-| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | [link](${acrolinx/scorecard}) | ${s/status} |
-"
- 
- :template-footer
- 
- "
-**More info about Acrolinx**
- 
-Use the Acrolinx extension, or sidebar, in Visual Studio Code to check spelling, grammar, style, tone, clarity, and key terminology when you’re creating or updating content. For more information, see [Use the Visual Studio Code extension to run Acrolinx locally]( https://review.docs.microsoft.com/office-authoring-guide/acrolinx-vscode?branch=master).
 "
 }
