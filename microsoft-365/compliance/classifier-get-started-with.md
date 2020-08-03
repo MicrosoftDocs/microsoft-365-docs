@@ -137,18 +137,49 @@ Once the trainable classifier has processed enough positive samples to build a p
 
 19. Review *at least* 200 items.
 
-<!-- insert Analyze steps here-->
-
 20. Continue to review until the accuracy reaches at least 70% and the `Publish the classifier` status is `Ready to use`.
 
 ![accuracy and ready to publish](../media/classifier-trainable-review-ready-to-publish.png)
 
 21. Publish the classifier.
 
-22. Once published your classifier will be available as a condition in [Office autolabeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
+22. Once published your classifier will be available as a condition in [Office auto-labeling with sensitivity labels](apply-sensitivity-label-automatically.md), [auto-apply retention label policy based on a condition](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) and in [Communication compliance](communication-compliance.md).
 
-> [!CAUTION]
-> Once a classifier is published, it can't go through any additional training, so be very sure that you have tested and reviewed as many items as possible to ensure that the accuracy is as high as possible.
+## Retraining classifiers in used Communication compliance policies (preview)
+
+> [!IMPORTANT]
+> You provide feedback in the compliance solution that is using the classifier as a condition. For this preview, the retraining feedback loop is being rolled out in communication compliance first. **If you don't have a communications compliance policy that uses a classifier as a condition, stop here.**
+
+As you use your classifiers, you may want to increase the accuracy of the classifications that they are making. You can do this by evaluating the items it has identified as being a match or not a match. After you make 30 such evaluations for a classifier it takes that feedback and automatically retrains itself.
+
+To understand more about the overall workflow of retraining a classifier, see [Process flow for retraining a classifier](classifier-learn-about.md#retraining-classifiers).
+
+> [!NOTE]
+> A classifier must already be published and in use before it can be retrained.
+
+### How to re-train a classifier (preview)
+
+1. Open the Communication compliance policy that uses a classifier as a condition and choose one of the identified items from the **Pending** list.
+2. Choose the elipsis and **Provide detailed feedback**.
+3. In the **Detailed feedback** pane, if the item is a true positive, choose, **Match**.  If the item is a false positive, that is it was incorrectly included in the category, choose **Not a match**.
+4. If there is another classifier that would be more appropriate for the item you can choose it from the **Suggest other trainable classifiers** list for evaluation by that other classifier.
+5. Choose **Send feeedback** to send your evaluation of match, not a match, and suggest other trainable classifiers to the classifiers. When you have provided 30 instances of feedback to a classifier, it will automatically start retraining. Retraining can take from 1-4 hours. Classifiers can only be retrained twice per day.
+ > [!IMPORTANT]
+> This information goes to the classifier in your tenant, **it does not go back to Microsoft**.
+6.  Open the Data classification page in the **Microsoft 365 compliance center** or **Microsoft 365 security center** > **Classification** > **Data Classification**.
+7. Open **Trainable classifiers (preview)**.
+8. The classifier that was used in your Commmunications compliance policy will appear under the **Re-training** heading.
+1
+GET SCREENSHOT OF RE-TRAINING SCREEN
+
+9. Once retraining completes, choose the classifier to open the side by side comparison view.
+
+GET SCREENSHOT OF SxS COMPARISON SCREEN
+
+10. Review the prediction comparisons of the retrained and currently published versions of the classifier.
+11. If you satisfied with the results of the retraining, choose **Re-publish**.
+12. If you are not satisfied with the results of the retraining, you can either choose to provide additional feedback on classified items to the classifier in the Communications compliance interface and start another retraining cycle or do nothing in which case the currently published version of the classifier will continue to be used. 
+
 
 ## See also
 
