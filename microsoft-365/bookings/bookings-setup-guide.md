@@ -154,7 +154,7 @@ Define the services that your organization provides, which customers will book t
         
         Custom fields can be useful when collecting information that is needed every time the specific appointment is booked. Examples include insurance provider prior to a clinic visit, loan type for loan consultations, major of study for academic advising, or applicant ID for candidate interviews.
 
-14. **Reminders and Confirmations** Both types of emails are sent out to customers, staff members, or both, at a specified time period before the appointment. Multiple messages can be created for each appointment, according to your preference.
+13. **Reminders and Confirmations** Both types of emails are sent out to customers, staff members, or both, at a specified time period before the appointment. Multiple messages can be created for each appointment, according to your preference.
     
     - The default confirmation and reminder emails include basic information about the appointment, such as the customer/client name, staff member's name, the service or appointment booked, and the time of the appointment. For online meetings, a link to join will also be included. The ability to manage the booking can also be included, if this setting is enabled (as described above in step 8).
 
@@ -171,15 +171,14 @@ Define the services that your organization provides, which customers will book t
         :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings":::
 
     - Text message notifications will look like this (Note: SMS notifications are currently only available in North America):
+    
+:::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
-> ![A screenshot of a cell phone
-> Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image12.jpeg)
+15. Publishing options – Choose whether or not to have this service appear as bookable on the Self-Service Page, or keep it to only bookable on the Calendar tab within the Bookings web app.
 
-16. Publishing options – Choose whether or not to have this service appear as bookable on the Self-Service Page, or keep it to only bookable on the Calendar tab within the Bookings web app.
+16. Scheduling Policy – Determine how appointment times are viewed and the time period in which bookings can be made or cancelled.
 
-17. Scheduling Policy – Determine how appointment times are viewed and the time period in which bookings can be made or cancelled.
-
-18. Email notifications – Determine when emails are sent to organization staff and customers.
+17. Email notifications – Determine when emails are sent to organization staff and customers.
 
 19. Staff checkbox – Allow customers to choose a specific staff member for their appointment.
     
