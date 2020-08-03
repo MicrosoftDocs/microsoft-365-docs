@@ -51,8 +51,8 @@ There are two different methods for automatically applying a sensitivity label:
     Specific to auto-labeling for SharePoint and OneDrive:
     - Office files for Word, PowerPoint, and Excel are supported.
     - Maximum of 25,000 automatically labeled files in your tenant per day.
-    - Maximum of 10 sites collections across all policies.
-    - Maximum of 10 policies across your tenant.
+    - Maximum of 10 sites collections for each auto-labeling policy.
+    - Maximum of 10 auto-labeling policies across your tenant.
     - Existing values for modified, modified by, and the date are not changed as a result of auto-labeling policies—for both simulation mode and when labels are applied.
     - When the label applies encryption, the [Rights Management issuer and Rights Management owner](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) is the person who created the sensitivity label.
 

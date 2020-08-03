@@ -8,6 +8,9 @@ f1.keywords:
 - NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
+ms.collection: M365-modern-desktop
+manager: laurawi
+ms.topic: article
 ---
 
 # Microsoft Managed Desktop archived devices

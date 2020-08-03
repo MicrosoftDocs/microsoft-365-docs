@@ -5,6 +5,9 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Microsoft Managed Desktop devices 
