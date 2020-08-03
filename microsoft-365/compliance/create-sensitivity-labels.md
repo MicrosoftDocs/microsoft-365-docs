@@ -176,7 +176,6 @@ Using this cmdlet, you can specify [advanced settings](https://docs.microsoft.co
 You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) to create new sensitivity labels and new sensitivity label policies, as well as modify existing labels and policies. See the following documentation for supported parameters and values:
 
 - [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
-
 - [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
 
 ## Removing and deleting labels
