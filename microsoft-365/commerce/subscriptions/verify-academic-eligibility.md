@@ -18,6 +18,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
+ms.date: 07/21/2020
 ---
 
 # Verify academic eligibility for Microsoft 365 Education subscriptions

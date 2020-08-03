@@ -131,6 +131,8 @@
                   href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
+                - name: Take action on query results
+                  href: mtp/advanced-hunting-take-action.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
@@ -329,7 +331,7 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Use the delist portal to remove yourself from the blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: Manage URLs and files in the Tenant Allow/Block List
+                - name: Manage URLs in the Tenant Allow/Block List
                   href: ./office-365-security/tenant-allow-block-list.md
             - name: Anti-phishing protection
               href: ./office-365-security/anti-phishing-protection.md

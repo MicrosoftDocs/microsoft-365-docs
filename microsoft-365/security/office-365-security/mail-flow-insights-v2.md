@@ -52,7 +52,7 @@ The mail flow dashboard is available to:
 
 - Members of the **Mail flow administrator role** in the Security & Compliance Center. If this role is explicitly assigned to a user who isn't a member of the global administrator or Exchange administrator roles:
 
-  - The user must log in to the Security & Compliance Center directly at [https://protection.office.com](https://protection.office.com).
+  - The user must log in to the Security & Compliance Center directly at <https://protection.office.com>.
 
   - The user will only have read-only permission to the mail flow dashboard.
 

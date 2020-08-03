@@ -27,6 +27,7 @@ ms.custom:
 - OKR_SMB_Videos
 - AdminSurgePortfolio
 description: "Find your invoice or billing statement in the Microsoft 365 admin center. You can also save and print a copy of your bill."
+ms.date: 07/31/2020
 ---
 
 # View your bill or invoice
