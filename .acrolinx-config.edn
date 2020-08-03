@@ -4,11 +4,11 @@
  :use-gh-statuses true
  
  :targets 
-   {
-     :scores {
-              :min-score 65
-             }
-   }
+  {
+    :scores {
+             :min-score 65
+            }
+  }
  
  :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
 
@@ -27,6 +27,7 @@
  
  :template-header
  "
+
 ## Acrolinx Scorecards 
  
 ** The minimum Acrolinx topic score of 65 is required for all MARVEL content merged to master.**
