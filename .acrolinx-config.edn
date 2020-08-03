@@ -44,8 +44,7 @@ For more information about exception criteria and the exception process, see [Mi
 
  :template-change
  
- "
- | ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | [link](${acrolinx/scorecard}) | ${s/status} |
+ "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | [link](${acrolinx/scorecard}) | ${s/status} |
 "
  
  :template-footer
