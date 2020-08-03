@@ -317,6 +317,8 @@
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
                 - name: Preset security policies
                   href: ./office-365-security/preset-security-policies.md
+                - name: Configuration analyzer for preset security policies
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: Anti-spam message headers
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: How policies and protections are combined
@@ -327,7 +329,7 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Use the delist portal to remove yourself from the blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                - name: Manage URLs and files in the Tenant Allow/Block List
+                - name: Manage URLs in the Tenant Allow/Block List
                   href: ./office-365-security/tenant-allow-block-list.md
             - name: Anti-phishing protection
               href: ./office-365-security/anti-phishing-protection.md
