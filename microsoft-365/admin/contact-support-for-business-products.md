@@ -18,7 +18,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: "Get technical and billing support by using phone numbers listed for your country or region, or submitting your service request online, or contacting a Microsoft store for virtual customer support."
+description: "Get technical and billing support by using phone numbers listed for your country or region, or submitting your service request online."
 feedback_system: None
 ---
 # Ways to contact support for business products - Admin Help
@@ -64,11 +64,6 @@ If your support phone number isn't listed above, use the drop-down menu below to
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
 
-## Virtual support from the Microsoft Store
-
-You can contact Microsoft Store Sales and Customer Support to speak with an Answer Desk expert to help resolve your Microsoft 365 issue.
-
-Go to the [Contact Microsoft Store Support](https://support.microsoft.com/help/28808/microsoft-store-contact-support?icid=bm_support_5292020) page for quick help links and phone numbers.
 
 ::: moniker-end
 

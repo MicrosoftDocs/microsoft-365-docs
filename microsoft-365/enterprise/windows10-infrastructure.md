@@ -51,7 +51,7 @@ You can learn more about Windows 10 with these articles:
 ## Additional services and features
 As part of your deployment of Windows 10 Enterprise, you can add these additional services and features.
 
-### Windows Analytics
+### Desktop Analytics
 
 Windows uses diagnostics data to provide rich, actionable information to help you gain deep insights into operational efficiency and the health of Windows 10 devices in your environment.
 
@@ -59,7 +59,7 @@ Windows uses diagnostics data to provide rich, actionable information to help yo
 * Update Compliance - Update Compliance is targeted to the IT admin who wants to gain a holistic view of all their Windows 10 devices, without any additional infrastructure requirements.
 * Device Health - You can use Device Health to proactively detect and remediate end-user impacting issues.
 
-See [Windows Analytics Overview](https://docs.microsoft.com/windows/deployment/update/windows-analytics-overview) for more information.
+See [Desktop Analytics Overview](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview) for more information.
 
 ### Windows security
 
