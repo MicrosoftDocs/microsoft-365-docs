@@ -345,10 +345,6 @@ Instead of using the default **Asset Id** property as we do in this scenario, yo
 
 In the previous screenshot, you can see that there's another managed property related to retention labels called **ComplianceTag** that's mapped to a crawled property. The **ComplianceAssetId** managed property is also mapped to a crawled property. This means that you can use these managed properties in advanced search to retrieve all documents that have been tagged with a retention label.
 
-## Summary
-
-This article illustrated a document management scenario where we automatically applied a retention label based on a site column in SharePoint. Then we used event-based retention and Power Automate to automatically trigger the start of the retention period based on an external event.
-
 ## Credits
 
 This scenario was authored by: 
