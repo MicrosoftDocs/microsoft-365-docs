@@ -53,8 +53,6 @@ landingContent:
     linkLists:
       - linkListType: video
         links:
-          - text: Learn about the benefits of Microsoft Managed Desktop
-            url: https://youtu.be/GXVRu49Gmxc
           - text: Highlights of Microsoft Managed Desktop in the annual Ignite conference
             url: /microsoft-365/managed-desktop/service-description
 
