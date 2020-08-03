@@ -6,7 +6,7 @@
  :targets 
   {
     :scores {
-             :min-score 65
+             ;;:min-score 65 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
             }
   }
  
