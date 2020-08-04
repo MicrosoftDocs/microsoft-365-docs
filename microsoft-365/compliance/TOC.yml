@@ -317,7 +317,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
-        - name: Use retention labels to manage the lifecycle of SharePoint documents
+        - name: Use retention labels to manage document lifecycles
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
