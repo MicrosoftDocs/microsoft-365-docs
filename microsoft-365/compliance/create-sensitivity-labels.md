@@ -88,7 +88,7 @@ For example:
 
 - Use the *LocaleSettings* parameter for multinational deployments so that users see the label name and tooltip in their local language. See the following section for an example configuration. 
 
-- Use the *ApplyContentMarkingFooterFontName* parameter to specify your choice of font to use for your specified footer.
+- Use the *ApplyContentMarkingFooterFontName* parameter to specify your choice of font for your specified footer.
 
 - Use the *ApplyContentMarkingHeaderFontColor* parameter to specify your custom color choice for your specified header, using a hex triplet code for the red, green, and blue (RGB) components. For example, #40e0d0 is the RGB hex value for turquoise. You'll find these codes in many applications that let you edit pictures. For example, Microsoft Paint lets you choose a custom color from a palette and the RGB values are automatically displayed, which you can then copy.
 
