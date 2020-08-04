@@ -18,79 +18,6 @@ metadata:
 
 
 
-# productDirectory section (optional)
-productDirectory:
-  title: sectiontitle # < 60 chars (optional)
-  summary: sectionsummary # < 160 chars (optional)
-  items:
-    # Card
-    - title: cardtitle1
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/media/logos/image1.svg
-      links:
-        - url: https://docs.microsoft.com/file1a
-          text: linktext1a
-        - url: https://docs.microsoft.com/file1b
-          text: linktext1b
-    # Card
-    - title: cardtitle2
-      imageSrc: https://docs.microsoft.com/media/logos/image2.svg
-      links:
-        - url: https://docs.microsoft.com/file2a
-          text: linktext2a
-        - url: https://docs.microsoft.com/file2b
-          text: linktext2b
-    # Card
-    - title: cardtitle3
-      imageSrc: https://docs.microsoft.com/media/logos/image3.svg
-      links:
-        - url: https://docs.microsoft.com/file3a
-          text: linktext3a
-        - url: https://docs.microsoft.com/file3b
-          text: linktext3b
-
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: sectiontitle # < 60 chars (optional)
-  summary: sectionsummary # < 160 chars (optional)
-  items:
-    # Card
-    - title: cardtitle1
-      links:
-        - url: https://docs.microsoft.com/file1
-          itemType: concept
-          text: linktext1
-        - url: https://docs.microsoft.com/file1
-          itemType: learn
-          text: linktext2
-        - url: https://docs.microsoft.com/file1
-          itemType: get-started
-          text: linktext3
-    # Card
-    - title: cardtitle2
-      links:
-        - url: https://docs.microsoft.com/file1
-          itemType: concept
-          text: linktext1
-        - url: https://docs.microsoft.com/file1
-          itemType: learn
-          text: linktext2
-        - url: https://docs.microsoft.com/file1
-          itemType: get-started
-          text: linktext3
-    # Card
-    - title: cardtitle3
-      links:
-        - url: https://docs.microsoft.com/file1
-          itemType: concept
-          text: linktext1
-        - url: https://docs.microsoft.com/file1
-          itemType: learn
-          text: linktext2
-        - url: https://docs.microsoft.com/file1
-          itemType: get-started
-          text: linktext3
 
 
 
@@ -99,19 +26,17 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: sectiontitle # < 60 chars (optional)
-      summary: sectionsummary # < 160 chars (optional)
-      items:
+    - items:
         # Card
-        - title: cardtitle1
-          summary: cardsummary1
-          url: https://docs.microsoft.com/file1
+        - title: What is Microsoft Bookings?
+          summary: Schedule and manage appointments with a web-based booking calendar and app, including Outlook integration for your staff and automated notification emails.
+          url: bookings-overview.md
         # Card
-        - title: cardtitle2
-          summary: cardsummary2
-          url: https://docs.microsoft.com/file1
+        - title: Set up Microsoft Bookings
+          summary: Enter your business information, set your schedule, offerings, and staff, and publish your page so your customers can start booking appointments.
+          url: set-up.md
         # Card
-        - title: cardtitle3
-          summary: cardsummary3
-          url: https://docs.microsoft.com/file1
+        - title: Get the Bookings app
+          summary: Get the app for iOS or Android so you and your staff can see their own and their colleagues' schedules and appointment details.
+          url: get-bookings-app.md
 

@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Microsoft Bookings # < 60 chars
-summary: summary # < 160 chars
+summary: Schedule and manage appointments with Microsoft Bookings. Includes integration with Outlook and automated notifications.  # < 160 chars
 
 metadata:
   title: Microsoft Bookings # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: description # Required; article description that is displayed in search results. < 160 chars.
+  description: Schedule and manage appointments with Microsoft Bookings. Includes integration with Outlook and automated notifications. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: bookings #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: landing-page # Required
   author: dmaguire #Required; your GitHub user alias, with correct capitalization.
@@ -20,43 +20,45 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: About [service]
+  - title: About Microsoft Bookings
     linkLists:
       - linkListType: overview
         links:
-          - text: What is [service]?
-            url: file1.md
-          - text: linktext2
-            url: file2.md
-      - linkListType: quickstart
+          - text: What is Microsoft Bookings?
+            url: bookings-overview.md
+      - linkListType: download
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
+          - text: Get the Bookings app
+            url: get-bookings-app.md
 
   # Card (optional)
-  - title: Get started
+  - title: Set up Microsoft Bookings
     linkLists:
-      - linkListType: concept
-        links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
       - linkListType: how-to-guide
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
+          - text: Set up Microsoft Bookings
+            url: set-up.md
+          - text: Enter your business information
+            url: enter-business-information.md
+          - text: Set your scheduling policies
+            url: set-scheduling-policies.md
+          - text: Define your service offerings
+            url: define-service-offerings.md
+          - text: Create your staff list
+            url: create-staff-list.md
+          - text: Set employee working hours
+            url: employee-hours.md
+          - text: Publish or unpublish your booking page
+            url: publish-booking-page.md
+          - text: Create and staff your bookings
+            url: create-and-staff.md
 
   # Card
-  - title: cardtitle3
+  - title: Invite people to book appointments
     linkLists:
-      - linkListType: learn
+      - linkListType: how-to-guide
         links:
-          - text: linktext1
-            url: file1.md
-          - text: linktext2
-            url: file2.md
+          - text: Customize your booking page
+            url: customize-booking-page.md
+          - text: Connect to Facebook
+            url: connect-to-facebook.md
