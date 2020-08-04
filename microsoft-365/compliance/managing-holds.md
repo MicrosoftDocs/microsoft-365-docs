@@ -41,7 +41,7 @@ To view the custodian hold policy:
 4. On the flyout page, you can see hold statistics for the policy. You can also perform actions like apply a query to your custodian-based hold. For more information about creating a hold query and using conditions, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
 
 > [!NOTE]
-> Custodial Holds cannot be turned ON or OFF from the Security & Compliance center Admin center. Aministrator needs to use Powershell to make this change. For more information, See [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps)
+> Custodial holds cannot be turned on or off from the Security & Compliance admin center. Administrators need to use PowerShell to make this change. For more information, see [Set-CaseHoldPolicy](https://docs.microsoft.com/powershell/module/exchange/set-caseholdpolicy?view=exchange-ps).
 
 ## Manage non-custodial holds
 
