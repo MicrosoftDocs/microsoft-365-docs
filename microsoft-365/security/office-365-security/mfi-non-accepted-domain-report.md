@@ -12,24 +12,52 @@ localization_priority: Normal
 ms.assetid:
 ms.custom:
 - seo-marvel-apr2020
-description: "Admins can learn about the non-accepted domain report in the mail flow dashboard in the Security & Compliance Center."
+description: "Admins can learn how to use the Non-accepted domain report in the Security & Compliance Center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
 ---
 
-# Non-accepted domain report
+# Non-accepted domain report in the Security & Compliance Center
 
-Similar to the **Sender domain** insight, the **Non-accepted domain** insight identifies messages from your on-premises email organization, but the sender's domain isn't configured as an accepted domain in your organization.
+The **Non-accepted domain** report in the Security & Compliance Center displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.
 
 Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious. Therefore, it's important for you to understand what's happening and to fix the issue.
 
-![The Non-accepted domain report in the mail flow dashboard in the Security & Compliance Center](../../media/non-accepted-domain-report-selected.png)
+![Non-accepted domain widget in the mail flow dashboard in the Security & Compliance Center](../../media/mfi-non-accepted-domain-report-widget.png)
 
-When you click on the widget, you're taken to the full report. In the full report, where you can click **View details** to view the information in a table as shown in the following diagram:
+## Report view for the Non-accepted domain report
 
-![View details table in the Non-accepted domain report](../../media/non-accepted-domain-report-view-details.png)
+Clicking on the **Non-accepted domain** widget will take you to the **Non-accepted domain** report.
 
-When you select a row in the table, a flyout will show you more details. You can click **view sample messages** to see some of the identified messages.
+By default, the activity for all affected connectors is shown. If you click **Show data for**, you can select a specific connector from the dropdown.
 
-![Select a row in the details table in the Non-accepted domain report](../../media/non-accepted-domain-report-select-row-in-table.png)
+If you hover over a data point (day) in the chart, you'll see the total number of messages for the connector.
+
+![Report view in the Non-accepted domain report](../../media/mfi-non-accepted-domain-report-overview-view.png)
+
+## Details table view for the Non-accepted domain report
+
+If you click **View details table** in a report view, the following information is shown:
+
+- **Date**
+- **Inbound connector name**
+- **Sender domain**
+- **Message count**
+- **Sample messages**: The message IDs of a sample of affected messages.
+
+If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
+
+To email the report for a specific date range to one or more recipients, click **Request download**.
+
+When you select a row in the table, a flyout appears with the following information:
+
+- **Date**
+- **Inbound connector name**
+- **Sender domain**
+- **Message count**
+- **Sample messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the affected messages.
+
+![Details flyout after selecting a row in Details table view in the Non-accepted domain report](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+
+To go back to the reports view, click **View report**.
 
 ## Related topics
 

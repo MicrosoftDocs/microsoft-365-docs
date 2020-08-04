@@ -197,6 +197,47 @@ If you click **Filters** in a details table view, you can specify a date range w
 
 To go back to the reports view, click **View report**.
 
+## Forwarding modifications report
+
+The **Forwarding report** shows your organization's automatically forwarded messages by new accounts to external domains or accounts to new domains that have never been forwarding targets for other users in your organization. These types of forwarded messages can pose a security or compliance risk, and might indicate a compromised account.
+
+The report contains data for up to 90 days. By default, the report shows data for the last 7 days.
+
+This report isn't directly available in the reports dashboard. You get to it by:
+
+- Clicking the **Forwarding modifications report** link in the details of the [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md).
+- Clicking the **See report associated with the insight** link in the details of the [New users forwarding email insight](mfi-new-users-forwarding-email.md).
+- Opening <https://protection.office.com/reportv2?id=MailFlowNewForwarding>.
+
+## Report view for the Forwarding modifications report
+
+The following charts are available in the report view:
+
+- **Show data for: New forwarding users**:
+
+  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarding-users.png)
+
+- **Show data for: New forwarding domains**:
+
+  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
+
+If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
+
+### Details table view for the Forwarding modifications report
+
+If you click **View details table** in a report view, the following information is shown:
+
+- **Name**
+- **Forwarding type**
+- **Recipient address**
+- **Details**
+- **Count**
+- **First forward date**
+
+If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
+
+To go back to the reports view, click **View report**.
+
 ## Mailflow status report
 
 The **Mailflow status report** is similar to the [Sent and received email report](#sent-and-received-email-report), with additional information about email allowed or blocked on the edge. This is the only report that contains edge protection information, and shows just how much email is blocked before being allowed into the service for evaluation by Exchange Online Protection (EOP).
