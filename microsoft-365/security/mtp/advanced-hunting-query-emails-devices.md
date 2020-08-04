@@ -1,6 +1,6 @@
 ---
 title: Hunt for threats across devices, emails, apps, and identities using advanced hunting
-description: Study common hunting scenarios and sample queries that cover devices and emails.
+description: Study common hunting scenarios and sample queries that cover devices, emails, apps, and identities.
 keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, apps, identities, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -109,7 +109,7 @@ EmailAttachmentInfo
 ## Hunting scenarios
 
 ### List logon activities of users that received emails that were not zapped successfully
-[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge) addresses malicious emails after they have been received. If ZAP fails, malicious code might eventually run on the device and leave accounts compromised. This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.
+[Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) addresses malicious emails after they have been received. If ZAP fails, malicious code might eventually run on the device and leave accounts compromised. This query checks for logon activity made by the recipients of emails that were not successfully addressed by ZAP.
 
 ```kusto
 EmailPostDeliveryEvents 
