@@ -12706,4 +12706,4 @@ A DLP policy is 75% confident that it's detected this type of sensitive informat
 
 # What is new?
 
-This section will have the newly added.Changed items to make it easier to keep track of changes to the Sensitive Info Types
+This section will contain newly added changed items to make it easier to keep track of changes to the sensitive info types.
