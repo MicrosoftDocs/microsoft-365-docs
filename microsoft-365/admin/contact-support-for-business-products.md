@@ -20,6 +20,7 @@ search.appverid:
 - MET150
 description: "Get technical and billing support by using phone numbers listed for your country or region, or submitting your service request online."
 feedback_system: None
+ms.date: 7/28/2020
 ---
 # Ways to contact support for business products - Admin Help
 
@@ -58,12 +59,9 @@ Admins, have your account details ready when you call.
 
 - **In the United Kingdom, call 0800 032 6417.**
 
-### Phone numbers for other countries
-
 If your support phone number isn't listed above, use the drop-down menu below to find the number for your country or region.
 
 [!INCLUDE [country-region-support-dropdown-list](includes/country-region-support-dropdown-list.md)]
-
 
 ::: moniker-end
 
