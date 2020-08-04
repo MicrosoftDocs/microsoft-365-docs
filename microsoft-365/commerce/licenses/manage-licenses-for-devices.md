@@ -15,7 +15,9 @@ ms.collection:
 - Adm_TOC
 - commerce
 description: "Learn how to assign licenses to groups for use with devices."
-ms.custom: okr_SMB
+ms.custom: 
+- okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 ---

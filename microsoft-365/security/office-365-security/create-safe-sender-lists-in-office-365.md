@@ -113,7 +113,7 @@ A standard SMTP email message consists of a *message envelope* and message conte
 
 - The `5322.From` (also known as the **From** address or P2 sender) is the email address in the **From** header field, and is the sender's email address that's displayed in email clients.
 
-Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses are frequently different. This usually happens most often for bulk email messages.
+Frequently, the `5321.MailFrom` and `5322.From` addresses are the same (person-to-person communication). However, when email is sent on behalf of someone else, the addresses can be different. This happens most often for bulk email messages.
 
 For example, suppose that Blue Yonder Airlines has hired Margie's Travel to send out its email advertising. The message you receive in your Inbox has the following properties:
 
@@ -121,7 +121,7 @@ For example, suppose that Blue Yonder Airlines has hired Margie's Travel to send
 
 - The `5322.From` address is blueyonder@news.blueyonderairlines.com, which is what you'll see in Outlook.
 
-Safe sender lists and safe domain lists in anti-spam policies in EOP inspect both the `5321.MailFrom` and `5322.From` addresses. Outlook Safe Senders only uses the `5322.From` address.
+Safe sender lists and safe domain lists in anti-spam policies in EOP inspect only the `5322.From` addresses, this is similar to Outlook Safe Senders that uses the `5322.From` address.
 
 To prevent this message from being filtered, you can take the following steps:
 

@@ -13,6 +13,7 @@ metadata:
   ms.author: sirkkuw #Required; microsoft alias of author; optional team alias.
   ms.date: 01/27/2020 #Required; mm/dd/yyyy format.
   localization_priority: Priority
+  ms.custom: AdminSurgePortfolio
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -38,8 +39,12 @@ landingContent:
             url: ../manage/assign-licenses-to-users.md  
           - text: Remove licenses from users
             url: ../manage/remove-licenses-from-users.md
+          - text: Guest users
+            url: about-guest-users.md
           - text: Use your custom domain
             url: ../email/change-email-address.md
+          - text: Upgrade users to the latest apps 
+            url: ../setup/upgrade-users-to-latest-office-client.md
   # Card
   - title: Manage groups
     linkLists:

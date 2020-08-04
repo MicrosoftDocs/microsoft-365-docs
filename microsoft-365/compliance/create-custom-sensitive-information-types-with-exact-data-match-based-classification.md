@@ -18,12 +18,9 @@ search.appverid:
 description: Learn how to create custom sensitive information types with Exact Data Match based classification.
 ms.custom: seo-marvel-apr2020
 ---
-
 # Create custom sensitive information types with Exact Data Match based classification
 
-## Overview
-
-[Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the [Security & Compliance Center](create-a-custom-sensitive-information-type.md) or [PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md) to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
+[Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the Security & Compliance Center or PowerShell to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
 
 But what if you wanted a custom sensitive information type that uses exact data values, instead of matching only with generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
 
@@ -36,18 +33,28 @@ But what if you wanted a custom sensitive information type that uses exact data 
 
 ![EDM-based classification](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily or weekly, and it can contain up to 10 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily or weekly, and it can contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 ## Required licenses and permissions
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
-When generally available, EDM-based classification will be included in these subscriptions
+EDM-based classification is included in these subscriptions
 
 - Office 365 E5
 - Microsoft 365 E5
 - Microsoft 365 E5 Compliance
 - Microsoft E5/A5 Information Protection and Governance
+
+## Portal links for your subscription
+
+
+|Portal  |World Wide/GCC  |GCC-High  |DOD  |
+|---------|---------|---------|---------|
+|Office SCC     |  protection.office.com       |scc.office365.us         |scc.protection.apps.mil |
+|Microsoft 365 Security center     |security.microsoft.com         |security.microsoft.us         |security.apps.mil|
+|Microsoft 365 Compliance center     |compliance.microsoft.com         |compliance.microsoft.us         |compliance.apps.mil|
+
 
 ## The work flow at a glance
 
@@ -64,7 +71,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
 #### Define the schema for your database of sensitive information
 
 1. Identify the sensitive information you want to use. Export the data to an app, such as Microsoft Excel, and save the file in .csv format. The data file can include a maximum of:
-      - Up to 10 million rows of sensitive data
+      - Up to 100 million rows of sensitive data
       - Up to 32 columns (fields) per data source
       - Up to 5 columns (fields) marked as searchable
 
@@ -97,7 +104,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
       </EdmSchema>
       ```
 
-4. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 5. To upload the database schema, run the following cmdlets, one at a time:
 
@@ -130,7 +137,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
 
-2. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 3. To update your database schema, run the following cmdlets, one at a time:
 
@@ -159,7 +166,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
 
 (As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
 
-1. [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 2. Run the following PowerShell cmdlets, substituting the data store name of "patientrecords" with the one you want to remove:
 
@@ -220,7 +227,7 @@ If you want to make changes to your **edm.xml** file, such as changing which fie
             </Pattern>
             <Pattern confidenceLevel="75">
               <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
-              <Any minMatches ="3" maxMatches ="100">
+              <Any minMatches ="3" maxMatches ="6">
                 <match matches="PatientID" />
                 <match matches="MRN"/>
                 <match matches="FirstName"/>
@@ -287,7 +294,7 @@ During this phase, you set up a custom security group and user account, and set 
 
 #### Set up the security group and user account
 
-1. As a global administrator, go to the admin center ([https://admin.microsoft.com](https://admin.microsoft.com/)) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
+1. As a global administrator, go to the admin center using the appropriate [link for your subscription](#portal-links-for-your-subscription) and [create a security group](https://docs.microsoft.com/office365/admin/email/create-edit-or-delete-a-security-group?view=o365-worldwide) called **EDM\_DataUploaders**.
 
 2. Add one or more users to the **EDM\_DataUploaders** security group. (These users will manage the database of sensitive information.)
 
@@ -298,16 +305,25 @@ During this phase, you set up a custom security group and user account, and set 
 >[!NOTE]
 > Before you begin this procedure, make sure that you are a member of the **EDM\_DataUploaders** security group and a local admin on your machine.
 
-1. Download and install the [EDM Upload Agent](https://go.microsoft.com/fwlink/?linkid=2088639). By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
+#### Links to EDM upload agent by subscription type
 
-      > [!TIP]
-      > To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
+- [Commercial + GCC](https://go.microsoft.com/fwlink/?linkid=2088639)
+- [GCC-High](https://go.microsoft.com/fwlink/?linkid=2137521)
+- [DoD](https://go.microsoft.com/fwlink/?linkid=2137807)
+
+1. Download and install the appropriate [EDM Upload Agent](#links-to-edm-upload-agent-by-subscription-type) for your subscription. By default, the installation location should be **C:\\Program Files\\Microsoft\\EdmUploadAgent**.
+
+> [!TIP]
+> To a get a list out of the supported command parameters, run the agent no arguments. For example 'EdmUploadAgent.exe'.
+
+> [!NOTE]
+> You can upload data with the EDMUploadAgent to any given data store only twice per day.
 
 2. To authorize the EDM Upload Agent, open Windows Command Prompt (as an administrator), and then run the following command:
 
     `EdmUploadAgent.exe /Authorize`
 
-3. Sign in with your work or school account for Office 365.
+3. Sign in with your work or school account for Office 365 that was added to the EDM_DataUploaders security group.
 
 The next step is to use the EDM Upload Agent to index the sensitive data, and then upload the indexed data.
 
@@ -339,11 +355,15 @@ For example:
 
 > **EdmUploadAgent.exe /UploadHash /DataStoreName PatientRecords /HashFile C:\\Edm\\Hash\\PatientRecords.EdmHash**
 
-To verify your sensitive data has been uploaded, run the following command in Windows Command Prompt:
+To verify that your sensitive data has been uploaded, run the following command in Windows command prompt:
 
 `EdmUploadAgent.exe /GetDataStore`
 
 You'll see a list of data stores and when they were last updated.
+
+If you want to see all the data uploads to a particular store, run the following command in a Windows command prompt:
+
+`EdmUploadAgent.exe /GetSession /DataStoreName <DataStoreName>`
 
 Proceed to set up your process and schedule for [Refreshing your sensitive information database](#refreshing-your-sensitive-information-database).
 
@@ -442,16 +462,21 @@ Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $us
 
 ### Part 3: Use EDM-based classification with your Microsoft cloud services
 
-DLP for Exchange Online (email), OneDrive for Business (files), Microsoft Teams (conversations) and Microsoft Cloud App Security DLP policies will support EDM sensitive information types.
+These locations are support EDM sensitive information types:
+
+- DLP for Exchange Online (email)
+- OneDrive for Business (files)
+- Microsoft Teams (conversations)
+- DLP for SharePoint (files)
+- Microsoft Cloud App Security DLP policies
 
 EDM sensitive information types for following scenarios are currently in development, but not yet available:
 
-- DLP for SharePoint (files)
 - Auto-classification of sensitivity labels and retention labels
 
 #### To create a DLP policy with EDM
 
-1. Go to the Security & Compliance Center ([https://protection.office.com](https://protection.office.com/)).
+1. Go to the Security & Compliance Center using the appropriate [link for your subscription](#portal-links-for-your-subscription).
 
 2. Choose **Data loss prevention** \> **Policy**.
 
@@ -461,7 +486,7 @@ EDM sensitive information types for following scenarios are currently in develop
 
 5. On the **Choose locations** tab, select **Let me choose specific locations**, and then choose **Next**.
 
-6. In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message** , and then choose **Next**. (Note: EDM is currently not supported in SharePoint sites and DLP policy will not detect files in Sharepoint for EDM)
+6. In the **Status** column, select **Exchange email, OneDrive accounts, Teams chat and channel message** , and then choose **Next**.
 
 7. On the **Policy settings** tab, choose **Use advanced settings**, and then choose **Next**.
 
@@ -489,16 +514,9 @@ EDM sensitive information types for following scenarios are currently in develop
 
 ## Related articles
 
-[Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
-
-[Custom sensitive information types](custom-sensitive-info-types.md)
-
-[Overview of DLP policies](data-loss-prevention-policies.md)
-
-[Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
-
-[New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
-
-## Feedback
-
-GitHub feedback is enabled, but adding issues is only available on the public site.
+- [Sensitive information type-entity definitions](sensitive-information-type-entity-definitions.md)
+- [Custom sensitive information types](custom-sensitive-info-types.md)
+- [Overview of DLP policies](data-loss-prevention-policies.md)
+- [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
+- [New-DlpEdmSchema](https://docs.microsoft.com/powershell/module/exchange/new-dlpedmschema?view=exchange-ps)
+- [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).

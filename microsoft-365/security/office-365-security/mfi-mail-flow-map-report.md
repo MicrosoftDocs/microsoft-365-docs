@@ -10,6 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the mail flow map report in the mail flow dashboard in the Security & Compliance Center."
 ---
 
@@ -25,7 +27,7 @@ By default, the mail flow map shows the high level mail flow pattern from the pr
 
 ![Left and right arrows in the Mail flow map widget](../../media/mail-flow-map-widget.png)
 
-## Overview
+## Mail flow map basics
 
 Clicking on the **Mail flow map** widget will take you to the **Mail flow map** report. Here you can see more granular level of report, you can click View details table to see detailed data. You can also download the detailed report by clicking Request report.
 

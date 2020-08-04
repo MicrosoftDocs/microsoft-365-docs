@@ -19,7 +19,8 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
-description: "Sharing is a key activity in SharePoint Online and OneDrive for Business. Administrators can now use sharing auditing in the audit log to identify resources shared with users outside of their organization. "
+description: Admin can learn how to use sharing auditing in the Microsoft 365 audit log to identify resources shared with users outside of their organization.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Use sharing auditing in the audit log

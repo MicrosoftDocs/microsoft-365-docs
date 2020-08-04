@@ -17,6 +17,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -26,7 +27,7 @@ description: "View device policies and actions by signing in to Microsoft 365 fo
 
 # View and manage policies and devices
 
-[![Label to let you know the admin center is changing and you can find more details at aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+This article applies to Microsoft 365 Business Premium.
 
 ## View and edit device policies
 

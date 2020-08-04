@@ -36,12 +36,14 @@
       href: subscriptions/manage-self-service-purchases-admins.md
 - name: Manage licenses
   items:
-    - name: Manage subscription licenses
+    - name: Buy or remove subscription licenses
       href: licenses/buy-licenses.md
     - name: Assign licenses to users
       href: ../admin/manage/assign-licenses-to-users.md
     - name: Unassign licenses from users
       href: ../admin/manage/remove-licenses-from-users.md
+    - name: Move users to a different subscription
+      href: subscriptions/move-users-different-subscription.md
     - name: Understand subscriptions and licenses
       href: licenses/subscriptions-and-licenses.md
 - name: Bills and payments
@@ -56,7 +58,7 @@
       href: billing-and-payments/pay-for-your-subscription.md
     - name: Change how you pay
       href: billing-and-payments/change-payment-method.md
-    - name: Change payment frequency
+    - name: Change billing frequency
       href: billing-and-payments/change-payment-frequency.md
     - name: Manage billing profiles
       href: billing-and-payments/manage-billing-profiles.md

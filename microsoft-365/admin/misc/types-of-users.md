@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
@@ -20,7 +23,6 @@ search.appverid:
 ms.assetid: 0dc55430-98d6-4cbe-ba69-1a4ad29a967d
 ROBOTS: NOINDEX
 description: "Learn about types of users in the admin center. "
-ms.custom: okr_smb
 ---
 
 # Quick help: Types of users
@@ -44,7 +46,7 @@ On the **Active users** page in the Microsoft 365 admin center, you can filter b
    
 ## Related articles
 
-[Add users in Microsoft 365](../add-users/add-users.md)
+[Add users and assign licenses at the same time](../add-users/add-users.md)
     
 [Assign licenses to users in Microsoft 365 for business](../manage/assign-licenses-to-users.md)
     

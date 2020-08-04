@@ -10,7 +10,6 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
-- M365solutions
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -24,6 +23,7 @@ This solution and architecture center brings together the technical guidance you
 - [Empower remote workers with Microsoft 365](empower-people-to-work-remotely.md)
 - [Set up secure collaboration with Microsoft 365](setup-secure-collaboration-with-teams.md)
 - [Deploy threat protection across Microsoft 365](deploy-threat-protection.md)
+- [Deploy information protection for data privacy regulations](information-protection-deploy.md)
 
 ![objects](https://docs.microsoft.com/office/media/icons/objects-blue.png) **[Workload solution and scenario guidance](workload-solutions-scenarios-overview.md)**  These scenarios and solutions help you accomplish a specific business objective. You can add them onto the foundational solutions to add capabilities to your environment.
 

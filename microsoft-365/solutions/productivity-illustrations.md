@@ -11,7 +11,6 @@ localization_priority: Normal
 ms.collection: 
 - M365-collaboration
 - M365-security-compliance
-- M365solutions
 ms.custom: 
 f1.keywords: NOCSH
 ---
@@ -33,7 +32,7 @@ What IT architects need to know about groups in Microsoft 365
 
 |**Item**|**Description**|
 |:-----|:-----|
-|[![Thumb image for groups infographic](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Updated June 2019|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
+|[![Thumb image for groups infographic](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Updated May 2020|These illustrations detail the different types of groups, how these are created and managed, and a few governance recommendations.|
 
 ### Security and Information Protection for Multi-Region Organizations
 Security and information protection for multi-region organizations with a single microsoft 365 tenant

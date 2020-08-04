@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ms.assetid: ba780859-0297-4114-a258-2b2809bab9e6
 ROBOTS: NOINDEX, NOFOLLOW
@@ -22,7 +23,7 @@ description: "Learn how to access email from your mobile device."
 
 Your organization has configured settings which control what mobile apps you can use to access your work account for email, calendar and contacts.
   
-The Outlook for Android and Outlook for iOS mobile apps are designed for your work or school email, and are the only apps to provide features like [Focused Inbox](https://support.office.com/article/f445ad7f-02f4-4294-a82e-71d8964e3978.aspx), which keeps important emails front and center, and [Scheduling Assistant](https://www.microsoft.com/?ref=go), which helps you find meeting times that work with colleagues and simply finds available conference rooms.
+The Outlook for Android and Outlook for iOS mobile apps are designed for your work or school email, and are the only apps to provide features like [Focused Inbox](https://support.microsoft.com/office/f445ad7f-02f4-4294-a82e-71d8964e3978), which keeps important emails front and center, and [Scheduling Assistant](https://www.microsoft.com/?ref=go), which helps you find meeting times that work with colleagues and simply finds available conference rooms.
   
 ## End user experience
 
@@ -32,7 +33,7 @@ Your organization requires that you use the Outlook for Android or Outlook for i
   
 ![Example email to use Outlook to sync email](../../media/798d942a-4181-4dcb-8039-cd9f2edd9723.png)
   
-Check out [Optimize the Outlook mobile app for your iOS or Android phone](https://support.office.com/article/de075b19-b73c-4d8a-841b-459982c7e890.aspx) for more Outlook features. And go to [Outlook for iOS and Android Help Center](https://support.office.com/article/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6.aspx) if you run into any issues. 
+Check out [Optimize the Outlook mobile app for your iOS or Android phone](https://support.microsoft.com/office/de075b19-b73c-4d8a-841b-459982c7e890) for more Outlook features. And go to [Outlook for iOS and Android Help Center](https://support.microsoft.com/office/cd84214e-a5ac-4e95-9ea3-e07f78d0cde6) if you run into any issues. 
   
  **Any email app**
   

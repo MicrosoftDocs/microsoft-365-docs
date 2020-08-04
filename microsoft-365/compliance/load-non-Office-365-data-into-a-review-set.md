@@ -24,7 +24,7 @@ ms.custom: seo-marvel-apr2020
 
 Not all documents that you need to analyze in Advanced eDiscovery are located in Microsoft 365. With the non-Microsoft 365 data import feature in Advanced eDiscovery, you can upload documents that aren't located in Microsoft 365 to a review set. This article shows you how to bring your non-Microsoft 365 documents into Advanced eDiscovery for analysis.
 
-## Before you begin
+## Requirements to upload non-Office 365 content
 
 Using the upload non-Microsoft 365 feature described in this article requires that you have the following:
 

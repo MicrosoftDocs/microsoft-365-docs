@@ -17,7 +17,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
-description: "Learn about retaining mailbox content for former employees by turning the mailbox into an inactive mailbox. You can do this by placing the mailbox on Litigation Hold or applying a Microsoft 365 retention policy to the mailbox and then removing the corresponding Microsoft 365 account."
+ms.custom:
+- seo-marvel-apr2020
+description: Learn how to retain mailbox content for former employees by turning the mailbox into an inactive mailbox.
 ---
 
 # Overview of inactive mailboxes
@@ -39,20 +41,20 @@ In addition to Litigation Hold, using the new Microsoft 365 retention policy fea
   
 - It has to be configured to retain content or retain and then delete content. If a retention policy is configured to only delete content, a mailbox that the policy is applied to won't become inactive when the mailbox is deleted.
 
-- It has to be applied to Exchange mailboxes or Skype for Business locations (because Skype-related content is stored in the user's mailbox). 
-    
-- It can be query-based so that it retains only items that match a search query. 
-    
-For more information about configuring retention policies, see [Overview of retention policies](retention-policies.md).
+- It has to be applied to Exchange mailboxes or Skype for Business locations (because Skype-related content is stored in the user's mailbox).
+  
+- It can be query-based so that it retains only items that match a search query.
+
+For more information about retention policies, see [Learn about retention policies and retention labels](retention.md).
   
 If you use a retention policy to make an inactive mailbox, Microsoft 365 continues to process the retention policy on the inactive mailbox. This means if the retention policy is configured to retain and then delete content, items will be moved to the Recoverable Items folder when the retention duration expires, and then eventually purged from the inactive mailbox. If retention policy isn't configured to deleted items, then items that haven't been permanently deleted by the user (before the mailbox was made inactive) won't be moved to the Recoverable Items folder and will be retained indefinitely after the mailbox becomes inactive. 
   
 You might consider creating a Microsoft 365 retention policy specifically for inactive mailboxes. Here are some reasons for doing this and things to keep in mind.
   
 - You can configure the retention policy to retain mailbox content only as long as necessary to meet your organization's requirement for former employees.
-    
+
 - It's a good way to identify inactive mailboxes because the retention policy will only be applied to inactive mailboxes.
-    
+
 - You are able to quickly identify the retention policy that's assigned to inactive mailboxes in your organization. This makes it easier to change the retention (or deletion) settings if necessary. It will also make it easier to permanently delete an inactive mailbox because you can remove it from the policy by using the Security & Compliance Center. Otherwise, you have to use Exchange Online PowerShell to remove a Litigation Hold from an inactive mailbox or use Security & Compliance Center PowerShell to exclude an inactive mailbox from an organization-wide Microsoft 365 retention policy.
     
 - If you create a Microsoft 365 retention policy specifically for inactive mailboxes, you can add a maximum of 1,000 mailboxes to the policy. If you're a large organization, you might have to create more than one Microsoft 365 retention policy to use for inactive mailboxes.
@@ -68,9 +70,9 @@ For more information about eDiscovery cases and holds, see [eDiscovery cases](ed
 
 ## Inactive mailboxes and labels
 
-Labels help you classify email data in your organization for governance, and enforce retention rules based on that classification. A label can be applied to an email item either manually by users or automatically by administrators, and an email item can only have single label assigned to it. If a single email item in a user's mailbox has a label assigned to it (and it's configured to retain or retain and then delete the item) and the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. Similar to eDiscovery case holds, we don't recommend using labels to make a mailbox inactive. Instead, we recommend that you use a Litigation Hold or a retention policy. In the case of labels, you might not realize that a label has been applied to an email item and then inadvertently make an inactive mailbox when you delete the user's account. 
+Retention labels help you classify email data in your organization for governance, and enforce retention rules based on that classification. A retention label can be applied to an email item either manually by users or automatically by administrators, and an email item can only have single label assigned to it. If a single email item in a user's mailbox has a label assigned to it (and it's configured to retain or retain and then delete the item) and the mailbox or the user's account is deleted, the mailbox becomes an inactive mailbox. Similar to eDiscovery case holds, we don't recommend using retention labels to make a mailbox inactive. Instead, we recommend that you use a Litigation Hold or a retention policy. In the case of retention labels, you might not realize that a retention label has been applied to an email item and then inadvertently make an inactive mailbox when you delete the user's account. 
   
-For more information about labels, see [Overview of labels in Office 365](labels.md).
+For more information about retention policies and retention labels, see [Learn about retention policies and retention labels in Office 365](retention.md).
   
 ## Inactive mailboxes and auto-expanding archives
 
@@ -103,13 +105,16 @@ The following table summarizes the process of making an inactive mailbox for dif
 
 After you make a mailbox inactive, you can perform various management tasks on inactive mailboxes.
   
-- **Change the hold duration for an inactive mailbox** After a mailbox is made inactive, you can change the hold duration of the Litigation Hold or Microsoft 365 retention policy applied to the inactive mailbox. For step-by-step procedures, see [Change the hold duration for an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md).
+- **Change the hold duration for an inactive mailbox.** After a mailbox is made inactive, you can change the hold duration of the Litigation Hold or Microsoft 365 retention policy applied to the inactive mailbox. For step-by-step procedures, see [Change the hold duration for an inactive mailbox](change-the-hold-duration-for-an-inactive-mailbox.md).
 
   > [!NOTE]
   > You can't apply other retention policies to an inactive mailbox. You can only change the retention duration of an existing retention policy applied to the inactive mailbox.
     
-- **Recover an inactive mailbox** If a former employee (or an employee on a leave of absence) returns to your organization, or if a new employee is hired to take on the job responsibilities of the former employee, you can recover the contents of the inactive mailbox. When you recover an inactive mailbox, the mailbox is converted to a new mailbox, the contents and the folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists. For step-by-step procedures and information about what happens when you recover an inactive mailbox, see [Recover an inactive mailbox](recover-an-inactive-mailbox.md).
+- **Recover an inactive mailbox.** If a former employee (or an employee on a leave of absence) returns to your organization, or if a new employee is hired to take on the job responsibilities of the former employee, you can recover the contents of the inactive mailbox. When you recover an inactive mailbox, the mailbox is converted to a new mailbox, the contents and the folder structure of the inactive mailbox are retained, and the mailbox is linked to a new user account. After it's recovered, the inactive mailbox no longer exists. For step-by-step procedures and information about what happens when you recover an inactive mailbox, see [Recover an inactive mailbox](recover-an-inactive-mailbox.md).
+
+  > [!NOTE]
+  > If you recover an inactive mailbox that was assigned to a retention policy with Preservation Lock (called a *locked retention policy*), the recovered mailbox is assigned to the same locked retention policy. If you recover an inactive mailbox that was assigned to a retention policy without Preservation Lock, the recovered mailbox is removed from the unlocked retention policy. However, Litigation Hold is enabled on the recovered mailbox to prevent the deletion of mailbox content based on any organization-wide retention policies that delete content older than a specific age.
+
+- **Restore an inactive mailbox.** If another employee takes on the job responsibilities of a former employee, or if another person needs access to the contents of the inactive mailbox, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox. When you restore an inactive mailbox, the contents are copied to another mailbox. The inactive mailbox is retained and remains an inactive mailbox. The inactive mailbox can still be searched using eDiscovery tools, its contents can be restored to another mailbox, and it can be recovered or deleted later. For step-by-step procedures, see [Restore an inactive mailbox](restore-an-inactive-mailbox.md).
     
-- **Restore an inactive mailbox** If another employee takes on the job responsibilities of a former employee, or if another person needs access to the contents of the inactive mailbox, you can restore (or merge) the contents of the inactive mailbox to an existing mailbox. When you restore an inactive mailbox, the contents are copied to another mailbox. The inactive mailbox is retained and remains an inactive mailbox. The inactive mailbox can still be searched using eDiscovery tools, its contents can be restored to another mailbox, and it can be recovered or deleted later. For step-by-step procedures, see [Restore an inactive mailbox](restore-an-inactive-mailbox.md).
-    
-- **Delete an inactive mailbox** When you no longer need to retain the contents of an inactive mailbox, you can permanently delete it by removing all holds or Microsoft 365 retention policies applied to the inactive mailbox. If a mailbox was made inactive more than 30 days ago, it will be marked for permanent deletion after you remove the hold. If the mailbox was made inactive within the last 30 days, you can make it active again after removing the hold or retention policy. For step-by-step procedures, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).
+- **Delete an inactive mailbox.** When you no longer need to retain the contents of an inactive mailbox, you can permanently delete it by removing all holds or Microsoft 365 retention policies applied to the inactive mailbox. If a mailbox was made inactive more than 30 days ago, it will be marked for permanent deletion after you remove the hold. If the mailbox was made inactive within the last 30 days, you can make it active again after removing the hold or retention policy. For step-by-step procedures, see [Delete an inactive mailbox](delete-an-inactive-mailbox.md).

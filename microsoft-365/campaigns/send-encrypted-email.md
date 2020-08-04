@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - M365-subscription-management 
 - M365-Campaigns
+- m365solution-smb
 ms.custom:
 - Adm_O365
 - Core_O365Admin_Migration
@@ -47,7 +48,7 @@ If you want to encrypt a message that doesn't meet a pre-defined rule or your ad
 
 ## Admin settings
 
-You can learn all about setting up email encryption at [Email encryption in Office 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
+You can learn all about setting up email encryption at [Email encryption in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/email-encryption).
 
 ### Automatically encrypt email messages
 
@@ -55,11 +56,11 @@ Admins can create mail flow rules to automatically protect email messages that a
 
 You create mail flow rules to encrypt email messages with the new Office 365 Message Encryption (OME) capabilities. Define mail flow rules for triggering message encryption with the new OME capabilities by using the Exchange Admin Center (EAC). 
 
-1. In a web browser, using a work or school account that has been granted global administrator permissions, sign in to Office 365. 
+1. In a web browser, using a work or school account that has been granted global administrator permissions, sign in. 
 2. Choose the Admin tile. 
 3. In the admin center, choose **Admin centers > Exchange**. 
 
-For more information, see [Define mail flow rules to encrypt email messages in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
+For more information, see [Define mail flow rules to encrypt email messages](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email).
 
 ### Brand your encryption messages
 
