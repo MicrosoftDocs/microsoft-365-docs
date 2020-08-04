@@ -1,5 +1,5 @@
 ---
-title: "Setting up Bookings"
+title: "Setting up Microsoft Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
