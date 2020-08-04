@@ -216,7 +216,8 @@ If your former employee had a organization phone, you can use the Exchange admin
     
 6. Select **Save**. 
     
-    **Tip**: Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
+   > [!TIP]
+   > Be sure you remove or disable the user from your on-premises Blackberry Enterprise Service. You should also disable any Blackberry devices for the user. Refer to the Blackberry Business Cloud Services Administration Guide if you need specific steps on how to disable the user. 
     
 ## Block a former employee's access to Microsoft 365 data
 <a name="bkmk_block"> </a>
@@ -346,8 +347,6 @@ If the user belongs to a queue group, they will no longer be a viable target of 
 ## Set up call forwarding to people in your organization
 
 If you need to set up call forwarding for the terminated employee's phone number, the call forwarding setting under calling policies can set up forwarding where incoming calls can be forwarded to other users or can ring another person at the same time. For more information, see [Calling policies in Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-calling-policy).
-
- https://docs.microsoft.com/microsoftteams/teams-calling-policy
   
 ## Delete a former employee's user account
 <a name="bkmk_delete"> </a>
