@@ -83,4 +83,4 @@ If for some reason none of the owners or admins renew the group before it expire
 
 [Configure Microsoft 365 groups expiration](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
 
-[Activity-based automatic renewal(https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
+[Activity-based automatic renewal](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
