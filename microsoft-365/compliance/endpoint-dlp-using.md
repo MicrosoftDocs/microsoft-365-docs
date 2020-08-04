@@ -104,15 +104,14 @@ These scenarios require that you already have devices onboarded and reporting in
 3. For this scenario, choose **Privacy**, then **U.S. Personally Identifiable Information (PII) Data** and choose **Next**.
 4. Toggle the **Status** field to off for all locations except **Devices**. Choose **Next**.
 5. Accept the default **Review and customize settings from the template** selection and choose **Next**.
-6. Accept the default **Detect when this content is shared** and **With people outside my organization** selections and choose **Next**.
-7. Accept the default **Protection actions** values and choose **Next**.
-8. Select **Audit or restrict activities on Windows devices** and leave the actions set to **Audit only**. Choose **Next**.
-9. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
-10. Review your settings and choose **Submit**.
-11. The new DLP policy will appear in the policy list.
-12. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
-13. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
-14. Check Activity explorer for the event.
+6. Accept the default **Protection actions** values and choose **Next**.
+7. Select **Audit or restrict activities on Windows devices** and leave the actions set to **Audit only**. Choose **Next**.
+8. Accept the default **I'd like to test it out first** value and choose **Show policy tips while in test mode**. Choose **Next**.
+9. Review your settings and choose **Submit**.
+10. The new DLP policy will appear in the policy list.
+11. Check Activity explorer for data from the monitored endpoints. Set the location filter for devices and add the policy, then filter by policy name to see the impact of this policy. See, [Get started with activity explorer](data-classification-activity-explorer.md) if needed.
+12. Attempt to share a test that contains content that will trigger the U.S. Personally Identifiable Information (PII) Data condition with someone outside your organization. This should trigger the policy.
+13. Check Activity explorer for the event.
 
 ### Scenario 2: Modify the existing policy, set an alert
 
