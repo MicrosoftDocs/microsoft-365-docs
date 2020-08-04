@@ -10,6 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the SMTP Auth clients report in the mail flow dashboard in the Security & Compliance Center."
 ---
 
@@ -45,6 +47,6 @@ You can also download a more detailed version of the report by clicking Request 
 
 ![Details table for TLS Usage in the SMTP Auth Clients Report](../../media/smtp-auth-clients-report-details-tls-usage.png)
 
-## See also
+## Related topics
 
 For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

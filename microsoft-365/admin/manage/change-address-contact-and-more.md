@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -43,7 +44,7 @@ To change the address associated with your bill or subscription, see [Change you
 
 To change other information on your company's profile page:
   
-1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2118715" target="_blank">**Org settings**</a> page.
+1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**Org settings**</a> page.
 
 2. On the **Organization profile** tab, select **Organization information**.
 
@@ -76,8 +77,8 @@ As an admin, you can change your your alternate email address for resetting pass
 
 5. Edit the address in the **Alternate email** box, then select **Save**.
 
-To learn about changing other profile information, see [Change your contact preferences](change-contact-preferences.md) or [Change your display language](https://support.office.com/article/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
+To learn about changing other profile information, see [Change your contact preferences](change-contact-preferences.md) or [Change your display language](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b.aspx).
   
 ### Email signatures
   
-You can change your email signature in Outlook Web App. For more information, see [Mail settings](https://support.office.com/article/30c69a79-efc6-42d2-b740-4bf1c1f8a01c.aspx).
+You can change your email signature in Outlook Web App. For more information, see [Mail settings](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).

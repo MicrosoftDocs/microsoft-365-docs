@@ -32,13 +32,13 @@ In Microsoft 365 organizations with mailboxes in Exchange Online or standalone E
 
 See the following resources for more information:
 
-- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](https://docs.microsoft.com/office365/admin/activity-reports/office-365-groups)
+- [Microsoft 365 Reports in the admin center - Microsoft 365 groups](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
 
-- [Microsoft 365 Reports in the admin center - Email activity](https://docs.microsoft.com/office365/admin/activity-reports/email-activity)
+- [Microsoft 365 Reports in the admin center - Email activity](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
 
-- [Microsoft 365 Reports in the admin center - Email apps usage](https://docs.microsoft.com/office365/admin/activity-reports/email-apps-usage)
+- [Microsoft 365 Reports in the admin center - Email apps usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
 
-- [Microsoft 365 Reports in the admin center - Mailbox usage](https://docs.microsoft.com/office365/admin/activity-reports/mailbox-usage)
+- [Microsoft 365 Reports in the admin center - Mailbox usage](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
 
 ## Security & compliance reports in the Microsoft 365 admin center
 

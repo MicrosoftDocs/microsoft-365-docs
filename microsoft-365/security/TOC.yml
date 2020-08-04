@@ -37,6 +37,18 @@
           href: ../enterprise/secure-email-recommended-policies.md
         - name: Recommended SharePoint Online access policies
           href: ../enterprise/sharepoint-file-access-policies.md
+    - name: Microsoft Secure Score
+      items: 
+        - name: Secure Score overview
+          href: mtp/microsoft-secure-score.md
+        - name: Assess your security posture
+          href: mtp/microsoft-secure-score-improvement-actions.md
+        - name: Track your score history and meet goals
+          href: mtp/microsoft-secure-score-history-metrics-trends.md
+        - name: What's coming
+          href: mtp/microsoft-secure-score-whats-coming.md
+        - name: What's new
+          href: mtp/microsoft-secure-score-whats-new.md
     - name: Microsoft Threat Protection
       items: 
         - name: Overview
@@ -67,31 +79,22 @@
               href: mtp/prepare-mtpeval.md
             - name: Setup
               href: mtp/setup-mtpeval.md
-            - name: Configure and onboard endpoints
+            - name: Configure and onboard
               href: mtp/config-mtpeval.md
-            - name: Turn on Microsoft Threat Protection
-              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
+            - name: Start the Microsoft Threat Protection service
+              href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#start-the-microsoft-threat-protection-service
             - name: Generate a test alert
               href: mtp/generate-test-alert.md
         - name: How-to guides
           items: 
             - name: Create a trial lab environment
-              href: mtp/mtp-evaluation.md
-              items: 
-                - name: Prepare
-                  href: mtp/prepare-mtpeval.md
-                - name: Setup
-                  href: mtp/setup-mtpeval.md
-                - name: Configure and onboard endpoints
-                  href: mtp/config-mtpeval.md
-                - name: Turn on Microsoft Threat Protection
-                  href: https://docs.microsoft.com/microsoft-365/security/mtp/config-mtpeval?view=o365-worldwide#turn-on-microsoft-threat-protection
-                - name: Generate a test alert
-                  href: mtp/generate-test-alert.md
+              href: mtp/mtp-evaluation.md             
             - name: Deploy supported services
               href: mtp/deploy-supported-services.md
             - name: Turn on Microsoft Threat Protection
               href: mtp/mtp-enable.md
+            - name: Turn on FAQ
+              href: mtp/mtp-enable-faq.md
             - name: Incidents
               items: 
                 - name: Overview
@@ -124,12 +127,20 @@
                   href: mtp/advanced-hunting-overview.md
                 - name: Learn the query language
                   href: mtp/advanced-hunting-query-language.md
+                - name: Apply query best practices
+                  href: mtp/advanced-hunting-best-practices.md
                 - name: Work with query results
                   href: mtp/advanced-hunting-query-results.md
+                - name: Take action on query results
+                  href: mtp/advanced-hunting-take-action.md
                 - name: Use shared queries
                   href: mtp/advanced-hunting-shared-queries.md
                 - name: Hunt on devices and emails
                   href: mtp/advanced-hunting-query-emails-devices.md
+                - name: Go hunt
+                  href: mtp/advanced-hunting-go-hunt.md
+                - name: Extend data coverage
+                  href: mtp/advanced-hunting-extend-data.md
                 - name: Data schema
                   items: 
                     - name: Understand the schema
@@ -172,6 +183,8 @@
                       href: mtp/advanced-hunting-emailattachmentinfo-table.md
                     - name: EmailEvents
                       href: mtp/advanced-hunting-emailevents-table.md
+                    - name: EmailPostDeliveryEvents
+                      href: mtp/advanced-hunting-emailpostdeliveryevents-table.md
                     - name: EmailUrlInfo
                       href: mtp/advanced-hunting-emailurlinfo-table.md
                     - name: IdentityInfo
@@ -180,24 +193,16 @@
                       href: mtp/advanced-hunting-identitylogonevents-table.md
                     - name: IdentityQueryEvents
                       href: mtp/advanced-hunting-identityqueryevents-table.md
-                - name: Apply query best practices
-                  href: mtp/advanced-hunting-best-practices.md
+                - name: Functions
+                  items: 
+                    - name: FileProfile()
+                      href: mtp/advanced-hunting-fileprofile-function.md
                 - name: Custom detections
                   items: 
                     - name: Custom detections overview
                       href: mtp/custom-detections-overview.md
                     - name: Create & manage detection rules
                       href: mtp/custom-detection-rules.md
-            - name: Secure Score
-              items: 
-                - name: Secure Score (new)
-                  href: mtp/microsoft-secure-score-new.md
-                - name: Secure Score (previous iteration)
-                  href: mtp/microsoft-secure-score.md
-                - name: Secure Score (preview)
-                  href: mtp/microsoft-secure-score-preview.md
-                - name: What's coming
-                  href: mtp/microsoft-secure-score-whats-coming.md
             - name: Reports
               items: 
                 - name: Monitor and view reports
@@ -220,11 +225,15 @@
               href: mtp/device-profile.md
             - name: Provide feedback
               href: mtp/feedback.md
-            - name: Manage tickets through ServiceNow
-              href: ./mtp/tickets.md
+            - name: Create ServiceNow tickets and tasks
+              items:
+                - name: ServiceNow integration overview 
+                  href: ./mtp/tickets.md
+                - name: ServiceNow tickets in the security center
+                  href: ./mtp/tickets-security-center.md
 
 
-    - name: Microsoft 365 Security
+    - name: Office 365 security
       items: 
         - name: Get started
           items: 
@@ -285,7 +294,7 @@
                   items: 
                     - name: Configure outbound spam filtering
                       href: ./office-365-security/configure-the-outbound-spam-policy.md
-                    - name: High-risk delivery pool for outbound messages
+                    - name: Outbound delivery pools
                       href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
                     - name: Remove blocked users from the Restricted Users portal
                       href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
@@ -308,6 +317,10 @@
                       href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
                     - name: Submit malware and non-malware to Microsoft
                       href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+                - name: Preset security policies
+                  href: ./office-365-security/preset-security-policies.md
+                - name: Configuration analyzer for preset security policies
+                  href: ./office-365-security/configuration-analyzer-for-security-policies.md
                 - name: Anti-spam message headers
                   href: ./office-365-security/anti-spam-message-headers.md
                 - name: How policies and protections are combined
@@ -318,6 +331,8 @@
                   href: ./office-365-security/safety-tips-in-office-365.md
                 - name: Use the delist portal to remove yourself from the blocked senders list
                   href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+                - name: Manage URLs in the Tenant Allow/Block List
+                  href: ./office-365-security/tenant-allow-block-list.md
             - name: Anti-phishing protection
               href: ./office-365-security/anti-phishing-protection.md
               items: 
@@ -328,8 +343,6 @@
                     href: ./office-365-security/configure-anti-phishing-policies-eop.md
                   - name: Configure ATP anti-phishing policies
                     href: ./office-365-security/configure-atp-anti-phishing-policies.md
-                - name: Unverified sender - preventing phishing messages from coming in
-                  href: ./office-365-security/unverified-sender-feature.md
                 - name: How Office 365 validates the From address to prevent phishing
                   href: ./office-365-security/how-office-365-validates-the-from-address.md
                 - name: Tune anti-phishing protection
@@ -369,27 +382,11 @@
                   href: ./office-365-security/use-dmarc-to-validate-email.md
             - name: Smart reports and insights in the Security & Compliance Center
               href: ./office-365-security/reports-and-insights-in-security-and-compliance.md
-              items: 
-                - name: Security Dashboard overview
-                  href: ./office-365-security/security-dashboard.md
-                  items: 
-                    - name: Walkthrough - From a detailed report to an insight
-                      href: ./office-365-security/from-a-detailed-report-to-an-insight.md
-                    - name: Walkthrough - From an insight to a detailed report
-                      href: ./office-365-security/from-an-insight-to-a-detailed-report.md
-                    - name: Walkthrough - From a dashboard to an insight
-                      href: ./office-365-security/from-a-dashboard-to-an-insight.md
-                    - name: Create a schedule for a report
-                      href: ./office-365-security/create-a-schedule-for-a-report.md
-                    - name: Manage schedules for multiple reports
-                      href: ./office-365-security/manage-schedules-for-multiple-reports.md
-                    - name: Set up and download a custom report
-                      href: ./office-365-security/set-up-and-download-a-custom-report.md
-                    - name: Download existing reports
-                      href: ./office-365-security/download-existing-reports.md
-                - name: View information about malicious files
-                  href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
-        - name: Advanced Threat Protection
+            - name: Security Dashboard overview
+              href: ./office-365-security/security-dashboard.md
+            - name: View information about malicious files
+              href: ./office-365-security/malicious-files-detected-in-spo-odb-or-teams.md
+        - name: Office 365 Advanced Threat Protection
           href: ./office-365-security/office-365-atp.md
           items: 
             - name: See what's new
@@ -430,9 +427,11 @@
                   href: ./office-365-security/air-custom-reporting.md
             - name: Detect and address compromised user accounts quickly
               href: ./office-365-security/address-compromised-users-quickly.md
-            - name: Investigate and remediate malicious email
+            - name: Investigate malicious email
               href: ./office-365-security/investigate-malicious-email-that-was-delivered.md
-            - name: View and read your ATP reports
+            - name: Remediate malicious email
+              href: ./office-365-security/remediate-malicious-email-delivered-office-365.md
+            - name: View ATP reports in the Security & Compliance Center
               href: ./office-365-security/view-reports-for-atp.md
             - name: Understanding latest attacks with threat analytics
               href: ./mtp/latest-attack-campaigns.md
@@ -488,6 +487,8 @@
               href: ./office-365-security/support-for-anonymous-inbound-email-messages-over-ipv6.md
             - name: View email security reports in the Security & Compliance Center
               href: ./office-365-security/view-email-security-reports.md
+            - name: View mail flow reports in the Security & Compliance Center
+              href: ./office-365-security/view-mail-flow-reports.md
             - name: Mail flow insights in the Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items: 
@@ -522,17 +523,7 @@
                   href: ./office-365-security/configure-groups-and-users-for-a-political-campaign-dev-test-environment.md
                 - name: Create team sites in a political campaign dev/test environment
                   href: ./office-365-security/create-team-sites-in-a-political-campaign-dev-test-environment.md
-            - name: Secure files in Microsoft Teams
-              items: 
-                - name: Secure Teams for files in a dev/test environment
-                  href: ./office-365-security/secure-team-for-files-in-a-dev-test-environment.md
-
-            - name: Secure SharePoint Online sites in a dev/test environment
-
-              href: ./office-365-security/secure-sharepoint-online-sites-in-a-dev-test-environment.md
-
-              items: 
-
+             
             - name: SIEM server integration
               href: ./office-365-security/siem-server-integration.md
             - name: Exchange Online Protection overview

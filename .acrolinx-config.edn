@@ -1,6 +1,19 @@
 {:allowed-branchname-matches ["master"]
  :allowed-filename-matches ["microsoft-365/"]
+ 
+ :use-gh-statuses true
+ 
+ :targets 
+  {
+    :scores {
+             ;;:min-score 65 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+            }
+  }
+ 
+ :guidance-profile "d2b6c2c8-00ee-47f1-8d10-b280cc3434c1" ;; Profile ID for "M365-specific"
+
  :acrolinx-check-settings
+ 
  {
   "languageId" "en"
   "ruleSetName" "Standard"
@@ -15,24 +28,25 @@
  :template-header
 
  "
-## Acrolinx Scorecards
+
+## Acrolinx Scorecards 
  
-**A minimum Acrolinx score of 20 is required.**
+**The minimum Acrolinx topic score of 20 is required for all MARVEL content merged to master.**
  
 Click the scorecard links for each article to review the Acrolinx feedback on grammar, spelling, punctuation, writing style, and terminology:
-
 | Article | Score | Issues | Scorecard | Processed |
 | ------- | ----- | ------ | --------- | --------- |
 "
-
+ 
  :template-change
  "| ${s/file} | ${acrolinx/qualityscore} | ${acrolinx/flags/issues} | [link](${acrolinx/scorecard}) | ${s/status} |
 "
- 
+
  :template-footer
+ 
  "
 **More info about Acrolinx**
- 
-We have set the minimum score to 20. This is effectively *not* setting a minimum score. If you need to bypass this score, please contact krowley. Thanks for your patience while we continue with roll out!
+
+We have set the minimum score to 20. This is effectively *not* setting a minimum score. If you need to bypass this score, please contact MARVEL PubOps.
 "
 }

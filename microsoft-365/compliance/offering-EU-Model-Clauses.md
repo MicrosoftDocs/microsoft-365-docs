@@ -81,7 +81,7 @@ You can enter an agreement such, as the [Online Services Terms](https://aka.ms/O
 - [EU Data Protection Directive](https://aka.ms/EU-DPD)
 - [European Data Protection Board](https://edpb.europa.eu/)
 - [EU Model Clauses FAQ for Dynamics 365 and Office 365](https://products.office.com/business/office-365-trust-center-eu-model-clauses-faq)
-- [Microsoft and the EU-U.S. Privacy Shield](https://go.microsoft.com/fwlink/p/?linkid=2099701)
+- [Microsoft and the EU-U.S. Privacy Shield](offering-eu-us-privacy-shield.md)
 - [Microsoft Common Controls Hub Compliance Framework](https://www.microsoft.com/trustcenter/common-controls-hub)
 - [Microsoft Online Services Terms](https://aka.ms/Online-Services-Terms)
 - [Compliance on the Microsoft Trust Center](https://www.microsoft.com/trust-center/compliance/compliance-overview)

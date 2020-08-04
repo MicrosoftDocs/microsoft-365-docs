@@ -9,7 +9,8 @@ ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-security-compliance
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-securecollab
 ms.custom: 
 - seo-marvel-apr2020
 localization_priority: Priority
@@ -35,7 +36,7 @@ This scenario includes:
 
 Some of the options discussed in this article require guests to have an account in Azure Active Directory. To ensure that guests are included in the directory when you share files and folders with them, use the [SharePoint and OneDrive integration with Azure AD B2B Preview](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
 
-Note that we won't discuss enabling guest sharing settings in this article. See [Collaborating with people outside your organization](https://docs.microsoft.com/Office365/Enterprise/collaborate-with-people-outside-your-organization) for details about enabling guest sharing for different scenarios.
+Note that we won't discuss enabling guest sharing settings in this article. See [Collaborating with people outside your organization](collaborate-with-people-outside-your-organization.md) for details about enabling guest sharing for different scenarios.
 
 ## Set up multi-factor authentication for guests
 
@@ -48,10 +49,12 @@ To set up multi-factor authentication for guests
 2. On the **Conditional Access - Policies** blade, click **New policy**.
 3. In the **Name** field, type *Guest MFA*.
 4. Under **Assignments**, click **Users and groups**.
-5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box, and then click **Done**.
-4. Under **Access controls**, click **Grant**.
-5. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
-6. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
+5. On the **Users and groups** blade, select **Select users and groups**, select the **All guests and external users** check box.
+6. Under **Assignments**, click **Cloud apps or actions**.
+7. On the **Cloud apps or actions** blade, select **All cloud apps** on the **Include** tab.
+8. Under **Access controls**, click **Grant**.
+9. On the **Grant** blade, select the **Require multi-factor authentication** check box, and then click **Select**.
+10. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
 Now, guest will be required to enroll in multi-factor authentication before they can access shared content, sites, or teams.
 
@@ -94,6 +97,9 @@ To create a conditional access policy
 12. On the **New** blade, under **Enable policy**, click **On**, and then click **Create**.
 
 Now, the first time a guest user attempts to access content or a team or site in your organization, they will be required to accept the terms of use.
+
+> [!NOTE]
+> Using Conditional Access requires an Azure AD Premium P1 license. For more information, see [What is Conditional Access](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
 
 ### More information
 [Azure Active Directory terms of use](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)

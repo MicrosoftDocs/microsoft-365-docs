@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
-manager: mnirkhe
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,14 +13,13 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: 
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
 ms.assetid: 4f8712ff-9346-4c6c-bb63-a21ad7a62cbd
-description: "Learn about the Microsoft 365 self-service sign up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Financials."
-ms.custom: okr_SMB
+description: "Learn about the Microsoft 365 self-service sign up and available self-service programs such as Microsoft Power Apps, Microsoft Flow, and Dynamics 365 for Finance."
 ---
 
 # Using self-service sign up in your organization
@@ -61,3 +60,4 @@ Following are the currently available self-service programs. This list will be u
 |**Microsoft Stream** <br/> |Upload and share videos across your organization to improve communication, participation, and learning.  <br/> |[Sign up &amp; Day 0 experience](https://go.microsoft.com/fwlink/p/?linkid=841472) <br/> |[Microsoft Stream](https://go.microsoft.com/fwlink/p/?linkid=841473) <br/> |
 |**Power Automate** <br/> |Power Automate is a product to help you set up automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.  <br/> |[Sign up and sign in for Power Automate](https://docs.microsoft.com/power-automate/sign-up-sign-in) <br/> |[Power Automate](https://go.microsoft.com/fwlink/p/?linkid=841465) <br/> |
 |**Power Virtual Agents** <br/> |Power Virtual Agents empowers teams to easily create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers. Power Virtual Agents addresses many of the major issues with bot building in the industry today. It eliminates the gap between the subject matter experts and the development teams building the bots, and the long latency between teams recognizing an issue and updating the bot to address it.  <br/> |[Licensing and access details](https://go.microsoft.com/fwlink/?linkid=2113708) <br/> |[Sign up for Power Virtual Agents](https://aka.ms/TryPVA) <br/> |
+|**Azure AD B2B** <br/> |Azure Active Directory (Azure AD) business-to-business (B2B) collaboration lets you invite External Users (or "guest users") to use your paid Azure AD services. Some features are free, but for any paid Azure AD features, you can invite up to five guest users for each Azure AD edition license that you own for an employee or a non-guest user in your tenant. <br/> |[Self-service for Azure AD B2B collaboration sign-up](https://docs.microsoft.com/azure/active-directory/b2b/self-service-portal) <br/> |[Azure Active Directory B2B collaboration licensing guidance](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance) <br/> |

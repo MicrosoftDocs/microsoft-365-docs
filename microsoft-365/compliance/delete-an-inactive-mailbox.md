@@ -15,7 +15,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
-description: "When you no longer need to preserve the contents of an Microsoft 365 inactive mailbox, you can permanently delete the inactive mailbox by removing the hold. After removing the hold, the inactive mailbox is marked for deletion and is permanently deleted after it's processed."
+ms.custom:
+- seo-marvel-apr2020
+description: When you no longer need to preserve the contents of an Microsoft 365 inactive mailbox, you can permanently delete the inactive mailbox.
 ---
 
 # Delete an inactive mailbox
@@ -27,7 +29,7 @@ An inactive mailbox is used to preserve a former employee's email after he or sh
   
 See the [More information](#more-information) section for a description of what happens after holds are removed from an inactive mailbox.
   
-## Before you begin
+## Before you delete an inactive mailbox
 
 - You have to use Exchange Online PowerShell to remove a Litigation Hold from an inactive mailbox. You can't use the Exchange admin center (EAC). For step-by-step instructions, see [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). You can use Exchange Online PowerShell or the EAC to remove an In-Place Hold from an inactive mailbox. 
     

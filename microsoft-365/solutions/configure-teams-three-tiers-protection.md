@@ -14,7 +14,9 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 - M365-security-compliance
-- M365solutions
+- m365solution-3tiersprotection
+- m365solution-overview
+- m365solution-securecollab
 ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
@@ -45,7 +47,7 @@ For more information about these tiers and capabilities recommended for each tie
 
 The following table summarizes the configurations for each tier. Use these configurations as starting point recommendations and adjust the configurations to meet the needs of your organization. You may not need every tier.
 
-||**Baseline (Public)**|**Baseline (Private)**|**Sensitive**|**Highly sensitive**|
+||Baseline (Public)|Baseline (Private)|Sensitive|Highly sensitive|
 |:-----|:-----|:-----|:-----|:-----|
 |Private or public team|Public|Private|Private|Private|
 |Who has access?|Everybody in the organization, including B2B users.|Only members of the team. Others can request access to the associated site.|Only members of the team.|Only members of the team.|
@@ -53,7 +55,7 @@ The following table summarizes the configurations for each tier. Use these confi
 |Site-level guest access|**New and existing guests** (default).|**New and existing guests** (default).|**New and existing guests** or **Only people in your organization** depending on team needs.|**New and existing guests** or **Only people in your organization** depending on team needs.|
 |Site sharing settings|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Site owners and members, and people with Edit permissions can share files and folders, but only site owners can share the site**.|**Only site owners can share files, folders, and the site**.<br>Access requests **Off**.|
 |Site-level unmanaged device access|**Full access from desktop apps, mobile apps, and the web** (default).|**Full access from desktop apps, mobile apps, and the web** (default).|**Allow limited, web-only access**.|**Block access**.|
-|Default sharing link type|**Ony people in your organization**|**Ony people in your organization**|**Specific people**|**People with existing access**|
+|Default sharing link type|**Only people in your organization**|**Only people in your organization**|**Specific people**|**People with existing access**|
 |Sensitivity labels|None|None|Sensitivity label used to classify the team and control guest sharing and unmanaged device access.|Sensitivity label used to classify the team and control guest sharing and unmanaged device access. Label can also be used on files to encrypt files.|
 
 A variation of the Highly sensitive option, [Teams with security isolation](secure-teams-security-isolation.md) uses a unique sensitivity label for one team, which provides additional security. You can use this label to encrypt files, and only members of that team will be able to read them.

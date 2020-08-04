@@ -10,6 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid:
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the fix sender domain insight in the mail flow dashboard in the Security & Compliance Center."
 ---
 
@@ -41,6 +43,6 @@ You'll see the inbound connector that was used to deliver the messages to Office
 
 ![View sample message ids in the Fix sender domain insight](../../media/sender-domain-view-sample-message-ids.png)
 
-## See also
+## Related topics
 
 For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

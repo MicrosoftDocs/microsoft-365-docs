@@ -15,8 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: "Learn how to use the Security &amp; Compliance Center to prepare data for analysis with Advanced eDiscovery.
-"
+description: "Learn how to use the Security &amp; Compliance Center to prepare data for analysis with Advanced eDiscovery."
 ---
 
 # Prepare data for Advanced eDiscovery (classic)
@@ -47,7 +46,7 @@ After you prepare the search results in the Security &amp; Compliance Center for
     
 4. Click **Open** next to the case that you want to load data in to in Advanced eDiscovery. 
     
-5. On the **Home** page for the case, click **Advanced eDiscovery**. 
+5. On the **Home** page for the case, click **Switch to Advanced eDiscovery**. 
     
     ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

@@ -5,7 +5,7 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 06/17/2020
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,7 +13,6 @@ localization_priority: Priority
 ms.collection: 
 - Strat_O365_Enterprise
 - M365-subscription-management
-- M365solutions
 ms.custom:
 description: How a fictional but representative global organization has deployed Microsoft 365 solutions.
 ---
@@ -26,4 +25,9 @@ The overall goal of Contoso for Microsoft 365 Enterprise is to accelerate their 
 
 First, learn about the [Contoso Corporation](../enterprise/contoso-overview.md), their worldwide offices, and the design considerations that were addressed when they deployed Microsoft 365 Enterprise.
 
-Next, see [this article](contoso-team-for-top-secret-project.md) to learn how Contoso deployed an isolated team for a top-secret project.
+Next, see how Contoso used Microsoft 365 for these solutions and scenarios:
+
+- [An isolated team for a top-secret project](contoso-team-for-top-secret-project.md)
+
+- [Migration of their on-premises users to Teams for unified communication, collaboration, and voice](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+

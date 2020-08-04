@@ -14,6 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 - Adm_O365_Setup
+ms.custom: 
+- okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,7 +25,6 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: "Learn how to add and set up your domain in Microsoft 365 so that your services like email and Skype for Business Online use your own domain name."
-ms.custom: okr_smb
 ---
 
 # Change nameservers to set up Microsoft 365 with any domain registrar
@@ -155,15 +157,14 @@ For example, here are some additional steps that might be required for email and
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-3. On the Domains page, select a domain.
+2. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-4. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
+3. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
 
-5. Select the type of DNS record you want to add, and type the information for the new record.
+4. Select the type of DNS record you want to add, and type the information for the new record.
 
-6. Select **Save**.
+5. Select **Save**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
-

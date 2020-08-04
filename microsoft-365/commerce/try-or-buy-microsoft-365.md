@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - commerce
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -35,7 +36,9 @@ Microsoft 365 is a complete solution that combines Office 365 and Windows 10 wit
   
 - Microsoft 365 Business Premium
 
-- Office 365 Enterprise E3
+- Microsoft 365 E5
+
+- Microsoft 365 E3
 
 - Office 365 Enterprise E5
 

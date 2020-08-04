@@ -42,7 +42,7 @@ The following table lists the metadata fields for documents in a review set in a
 |Author|Author|Doc_authors|Author from the document metadata.|
 |BCC|Bcc|Email_bcc|Bcc field for message types. Format is **DisplayName \<SMTPAddress>**.|
 |CC|Cc|Email_cc|Cc field for message types. Format is **DisplayName \<SMTPAddress>**.|
-|Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](labels.md) applied to content in Office 365.|
+|Compliance labels|ComplianceLabels|Compliance_labels|[Retention labels](retention.md) applied to content in Office 365.|
 |Compound Path|CompoundPath|Compound_path|Human readable path that describes the source of the item.|
 |Content*|Content||Extracted text of the item.|
 |Conversation Body|Conversation Body||Conversation body of the item.|
@@ -109,7 +109,8 @@ The following table lists the metadata fields for documents in a review set in a
 |Message kind|MessageKind|Message_kind|The type of message to search for. Possible values: **<br /><br />contacts <br />docs <br />email <br />externaldata <br />faxes <br />im <br />journals <br />meetings <br />microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br />notes <br />posts <br />rssfeeds <br />tasks <br />voicemail**| 
 |Native Extension|NativeExtension|Native_extension|Native extension of the item.|
 |Native file name|NativeFileName|Native_file_name|Native file name of the item.|
-|NativeMD5||Native_MD5|MD5 hash of file stream.|
+|NativeMD5||Native_MD5|MD5 hash (128-bit hash value) of the file stream.|
+|NativeSHA256||Native_SHA_256|SHA256 hash (256-bit hash value) of the file stream.|
 |ND/ET Sort: Excluding attachments|NdEtSortExclAttach|ND_ET_sort_excl_attach|Concatenation of the email thread (ET) set and Near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets.|
 |ND/ET Sort: Including attachments|NdEtSortInclAttach|ND_ET_sort_incl_attach|Concatenation of an email thread (ET) set and near-duplicate (ND) set. This field is used for efficient sorting at review time. A **D** is prefixed to ND sets and an **E** is prefixed to ET sets. Each email item in an ET set is followed by its appropriate attachments.|
 |Normalized relevance score Case issue 1||Normalized_relevance_score_case_issue_1|Normalized relevance score Case issue 1 from Relevance.|

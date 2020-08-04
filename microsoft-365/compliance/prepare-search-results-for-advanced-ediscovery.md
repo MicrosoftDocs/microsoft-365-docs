@@ -19,6 +19,7 @@ search.appverid:
 - MET150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: "Learn how to prepare the results of a Content Search in the Security & Compliance Center for further analysis with the Advanced eDiscovery tool."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Prepare search results for Advanced eDiscovery (classic)
@@ -46,7 +47,7 @@ After a search that's associated with an eDiscovery case in the Security & Compl
     
 - **Exporting data for review applications**  - You can export data from Advanced eDiscovery and Microsoft 365 after you've completed your analysis and reduced the data set. The export package includes a CSV file that contains the properties from the exported content and analytics metadata. This export package can then be imported to an eDiscovery review application. 
     
-## Before you begin
+## Get licenses and permissions
 
 - To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 license. Alternatively, users with an Office 365 E1 or E3 license can be assigned an Advanced eDiscovery standalone license. Administrators and compliance officers who are assigned to cases and use Advanced eDiscovery to analyze data don't need an E5 license. 
     
@@ -93,7 +94,7 @@ When the preparation is finished, the next step is to go to Advanced eDiscovery 
     
 2. Click **Open** next to the case that you want to load data in to in Advanced eDiscovery. 
     
-3. On the **Home** page for the case, click **Advanced eDiscovery**. 
+3. On the **Home** page for the case, click **Switch to Advanced eDiscovery**. 
     
     ![Click Switch to Advanced eDiscovery to open the case in Advanced eDiscovery](../media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

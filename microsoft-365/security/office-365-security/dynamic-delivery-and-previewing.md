@@ -22,7 +22,7 @@ ms.custom: seo-marvel-apr2020
 
 # Dynamic Delivery and previewing with ATP Safe Attachments
 
-## Overview
+## Basic features of Dynamic Delivery
 
 Dynamic Delivery is an option that can be selected for [ATP Safe Attachments](atp-safe-attachments.md). Read this article to learn about Dynamic Delivery and attachment preview capabilities in [ATP Safe Attachments in Office 365](atp-safe-attachments.md).
 
@@ -63,20 +63,20 @@ Suppose that an organization is using Dynamic Delivery for their [ATP Safe Attac
 
 ## Additional considerations
 
-There are certain scenarios in which Dynamic Delivery is not supported. These include the following:
+There are certain scenarios in which Safe Attachments (including Dynamic Delivery is not supported). These include:
 
-- Email messages that are in public folders
+- Email messages that are in public folders.
 
-- Email messages that are routed out of and then back into the user's mailbox using custom rules
+- Email messages that are routed out of and then back into the user's mailbox using custom rules.
 
-- Email messages that are moved (automatically or manually) out of the hosted mailbox and into other locations, including archive folders
+- Email messages that are moved (automatically or manually) out of the hosted mailbox and into other locations, including archive folders.
 
-- Email messages that are deleted
+- Email messages that are deleted.
 
-- A user's mailbox search folder that is in an error state
+- A user's mailbox search folder that is in an error state.
 
-- Environments in which an Exchange Online admin has enabled Exclaimer. To resolve this, see [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
+- Environments in which an Exchange Online admin has enabled Exclaimer. To resolve this, see [Messages with attachments are not delivered when ATP Dynamic Delivery and Exclaimer are used](https://support.microsoft.com/help/4014438).
 
-- Messages encrypted with [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md))
+- Messages encrypted with [Secure/Multipurpose Internet Mail Extensions (S/MIME)](s-mime-for-message-signing-and-encryption.md)).
 
-- In cases where Dynamic Delivery is not supported, ATP Safe Attachments will not scan email messages. However, delivering email messages with attachments that contain URLs will be checked, depending on how your [ATP Safe Links policies](set-up-atp-safe-links-policies.md) are configured. In these cases, URLs in email messages and Office files are checked.
+- In cases where Dynamic Delivery is not supported, Safe Attachments will not scan email messages. However, delivering email messages with attachments that contain URLs will be checked, depending on how your [ATP Safe Links policies](set-up-atp-safe-links-policies.md) are configured. In these cases, URLs in email messages and Office files are checked.

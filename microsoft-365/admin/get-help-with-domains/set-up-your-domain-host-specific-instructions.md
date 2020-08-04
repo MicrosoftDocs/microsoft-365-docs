@@ -13,6 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: 
+- okr_smb
+- AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
@@ -20,19 +23,18 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: "Learn how to manage your own DNS records or let Microsoft manage your DNS records for you."
-ms.custom: okr_smb
 ---
 
 # Set up your domain (host-specific instructions)
 
-To start using a custom domain (contoso.com) with Office 365, you need to verify your domain and configure your domain's DNS records. 
+To start using a custom domain (contoso.com) with Microsoft 365, you need to verify your domain and configure your domain's DNS records. 
   
 You can add and manage DNS records using the administrative tools at your domain host, or give Microsoft control of your domain records and we'll set them up for you.
   
 Select your domain host below for the exact steps. If you're not sure who your host is, see [Find your domain registrar](find-your-domain-registrar.md).
   
 
-## Let Office 365 manage your DNS records
+## Let Microsoft 365 manage your DNS records
 
 ||
 |---|---|
@@ -45,7 +47,7 @@ Select your domain host below for the exact steps. If you're not sure who your h
 |[Namecheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
 
-Or, learn how to [change nameservers to set up Office 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md).
+Or, learn how to [change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md).
 
 ## Manage your own DNS records
 
@@ -61,7 +63,7 @@ Or, learn how to [change nameservers to set up Office 365 with any domain regist
 |[DNSMadeEasy](../dns/create-dns-records-at-dnsmadeeasy.md) | [Network   Solutions](../dns/create-dns-records-at-network-solutions.md) |
 |[Dreamhost](../dns/create-dns-records-at-dreamhost.md)  | [OVH](../dns/create-dns-records-at-ovh.md) |
 |  [Dyn.com](../dns/create-dns-records-at-dyn-com.md) | [Register.com](../dns/create-dns-records-at-register-com.md) |
-| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 for Office 365](../dns/create-dns-records-at-register365.md)  |
+| [eNomCentral](../dns/create-dns-records-at-enomcentral.md)| [Register365 for Microsoft 365](../dns/create-dns-records-at-register365.md)  |
 | [Freenom](../dns/create-dns-records-at-freenom.md) | [ web.com ](../dns/create-dns-records-at-web-com.md)|
 |[GoDaddy](../dns/create-dns-records-at-godaddy.md)|[ Windows-based DNS](../dns/create-dns-records-using-windows-based-dns.md)   |
 | [Google Domains](../dns/create-dns-records-at-google-domains.md) |[Wix](../dns/create-dns-records-at-wix.md) |
