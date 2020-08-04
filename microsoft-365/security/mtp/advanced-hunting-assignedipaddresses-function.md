@@ -56,16 +56,19 @@ AssignedIPAddresses(x, y)
 AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
-### Get latest IP addresses used by a device and find devices communicating with it
+### Get IP addresses used by a device and find devices communicating with it
+This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`date`). It then uses the IP addresses to find connections to the device initiated by other devices. 
 
 ```kusto
-// List IP addresses used on or before a specific date
-AssignedIPAddresses("daa142544612.sys-sqlsvr.local", 2020-08-02)
-| project IPAddress
-// Get all network events on devices with the returned IP addresses as the destination addresses
+let Date = datetime(date);
+let DeviceName = "device-name";
+// List IP addresses used on or before the specified date
+AssignedIPAddresses(DeviceName, Date)
+| project DeviceName, IPAddress, AssignedTime = Timestamp 
+// Get all network events on devices with the assigned IP addresses as the destination addresses
 | join kind=inner DeviceNetworkEvents on $left.IPAddress == $right.RemoteIP
-// Get only events from a specific period
-| where Timestamp between (datetime(2020-08-01) .. datetime(2020-08-02))
+// Get only network events around the time the IP address was assigned
+| where Timestamp between ((AssignedTime - 1h) .. (AssignedTime + 1h))
 ```
 
 ## Related topics
