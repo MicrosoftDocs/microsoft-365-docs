@@ -75,7 +75,7 @@ The manufacturing company's compliance and data governance policies dictate how 
 | Product specifications      | 5 years after production stops  | Delete                                       |
 | Product agreements          | 10 years after production stops | Review                                       |
 | User manuals                | 5 years after production stops  | Delete                                       |
-| All other types of documents | Don't actively retain  | Delete when document is older than 3 years <br /><br /> A document is considered older than 3 years if it hasn't been modified within the last 3 years |
+| All other types of documents | Don't actively retain  | Delete when document is older than 3 years <br /><br /> A document is considered older than 3 years if it hasn't been modified within the last 3 years. |
 |||
 
 We use the Microsoft 365 compliance center to create the following [retention labels](retention.md#retention-labels):
