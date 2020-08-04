@@ -24,7 +24,7 @@ description: "Brief summary of article here"   # (Optional) Helps with SEO. Reco
 
 # Title
 
-Add intro text here, if needed.
+<!-- Add intro text here, if needed. -->
 
 ## Before you begin
 
