@@ -63,9 +63,6 @@ You can set the policy for all of your groups, only selected groups, or turn it 
 
 ![Screenshot of Groups expiration settings in Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
-> [!IMPORTANT]
-> Activity-based utomatic group renewal is now enabled by default, and cannot be administratively disabled. For more information on automatic renewal see [Activity-based automatic renewal(https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/groups-lifecycle)
-
 ## How expiry works with the retention policy
 
 If you have setup retention policy in Security and Compliance center for groups, expiration policy works seamlessly with retention policy. When a group expires, the group's conversations in mail box and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users will not see the group, or its content, after expiration however.
@@ -78,19 +75,6 @@ Group owners will only be notified via email. If the group was created via Plann
 
 If for some reason none of the owners or admins renew the group before it expires, and automatic renewal does not occur due to the group not meeting the requirements to be automatically renewed, the admin can still restore the group for up to 30 days after expiration. For details see: [Restore a deleted Microsoft 365 group](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
-## How automatic renewal fits into the group expiration timeline
-
-Automatic renewal checks occur starting 40 days in advance from the group's expiration date. The service will continually check for activity from this point until the group expires, is manually renewed, or meets the requirements for automatic renewal and is thus renewed. If the service determines the group has been active at any point during the group's lifecycle, the service will begin the automatic renewal process. For example, if activity occurred 60 days from expiration, the activity check performed 40 days from expiration would indicate the group is active, and the automatic group renewal process would immediately begin.
-
-This also means that if no activity is detected within the group's lifecycle when, 40 days from expiration, the automatic renewal service first begins searching for activity meeting the requirements for automatic renewal, the group may not be automatically immediately renewed 40 days from expiration. For example, if the group is inactive until 35 days from renewal, the automatic renewal process would not occur 40 days from expiration, and would instead begin 35 days from renewal.
-
-> [!NOTE]
-> The service that checks to see if a group should be automatically renewed can take up to 48 hours to process and finish the automatic renewal procedure. In very rare cases, this can lead to the group failing to automatically renew, if no activity meeting the automatic renewal requirements occurs within the group's lifecycle until < 48 hours of the group's expiration time.
-
-## How email notifications work with automatic group renewal
-
-If a group is renewed prior to the scheduled time for an expiration reminder email being sent to the group owners or administrators, then further reminder emails will not be sent. For example, if the group is automatically renewed 40 days from expiration, then the 30 day, 15 day, and one day reminder emails will not be sent. If the group was renewed 12 days from expiration, both the 30 day and the 15 day reminder emails would be sent, but not the one day reminder.
-
 ## Related articles
 
 [Overview of retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
@@ -98,4 +82,5 @@ If a group is renewed prior to the scheduled time for an expiration reminder ema
 [Assign a new owner to an orphaned group](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
 [Configure Microsoft 365 groups expiration](https://docs.microsoft.com/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
-'
+
+[Activity-based automatic renewal(https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle)
