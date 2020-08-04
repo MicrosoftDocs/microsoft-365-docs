@@ -58,7 +58,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
    ![Report as phishing dialog](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
+3. The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder if it was reported as spam and delete if it was reported as phish. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
 ## Use the Junk Email Reporting add-in to report non-spam and phishing messages from the Junk Email folder
 
@@ -82,7 +82,7 @@ This topic explains how to install and use the Junk Email Reporting add-in.
 
    ![Report as phishing dialog](../../media/junk-email-reporting-report-as-phishing-dialog.png)
 
-3. The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
+3. The selected messages will be sent to Microsoft for analysis and moved to the Junk Email folder if it was reported as spam and delete if it was reported as phish. To confirm that the messages have been submitted, open your **Sent Items** folder to view the submitted messages.
 
 ## Install the Junk Email Reporting add-in
 
