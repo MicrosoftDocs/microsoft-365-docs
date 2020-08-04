@@ -172,52 +172,57 @@ Define the services that your organization provides, which customers will book t
 
     - Text message notifications will look like this (Note: SMS notifications are currently only available in North America):
     
-:::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
+        :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
-15. Publishing options – Choose whether or not to have this service appear as bookable on the Self-Service Page, or keep it to only bookable on the Calendar tab within the Bookings web app.
+15. **Publishing options** – Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
 
-16. Scheduling Policy – Determine how appointment times are viewed and the time period in which bookings can be made or cancelled.
+16. **Scheduling Policy** This setting determines how appointment times are viewed, and the time period in which bookings can be made or cancelled.
 
-17. Email notifications – Determine when emails are sent to organization staff and customers.
+17. **Email notifications** Sets when emails are sent to organization staff and to customers or clients.
 
-19. Staff checkbox – Allow customers to choose a specific staff member for their appointment.
+18. **Staff** Selecting this checkbox allows customers or clients to choose a specific staff member for their appointment.
     
-    14. Checked/selected – Customers can choose between all staff assigned to the apointment when booking on the Self-Service Page. “Anyone” can be chosen and an available staff member will be chosen at random and assigned the appointment.
+    - Enabled: 
+
+        Customers can choose from all staff assigned to the appointment when booking on the Self-Service page. Selecting the option of **Anyone** will make Bookings choose an available staff member at random to assign to the appointment.
     
-    15. Unchecked/deselected – Customers booking via the Self-Service Page select a service and time/date, and the available staff will be booked at random. Specific staff can still be selected when booked through the Calendar tab in the Bookings web app.
+    - Disabled:
 
-20. Availability – Choose when the service can be booked
+        Customers booking via the Self-Service page can select a service and a time and date. The available staff will be booked at random. Note that specific staff can still be selected when booked through the Calendar tab in the Bookings Web app.
+
+19. **Availability** The following options determine when the service can be booked:
     
-    16. Bookable when staff are free – Service maintains availability based on when staff are free within business hours, with no extra time restrictions.
+    - **Bookable when staff are free** The service maintains availability based on when staff are free within business hours, with no extra time restrictions.
     
-    17. Custom hours (recurring weekly) – Service has an added layer of availability that can be further restricted (in addition to business hours or staff hours). This should be used when a service can only be done at a specific time.
+    - **Custom hours (recurring weekly)** The service has an added layer of availability that can be further restricted (in addition to restricting by business hours or with staff hours). Use this option when your service can only be provided or performed at a specific time.
     
-    18. “+ Set different availability for a date range” – This impacts availability at a specific point in time, instead of a recurring basis. For example, this could be used when a machine that is needed for the service is temporarily being serviced and unavailable, or when an organization is closed for the holidays.
+    - **Set different availability for a date range** This setting impacts availability at a specific point in time, instead of a recurring basis. For example, this could be used when a machine that is needed for the service is temporarily being serviced and unavailable, or when an organization is closed for a holiday.
 
-21. Assign Staff – Select which staff (that have been added to the Staff tab) will be bookable for that specific service. Selecting no staff will result in all staff being assigned to the service.
+20. **Assign Staff** Select the staff (provided you have added staff members to the Staff tab) who will be bookable for that specific service. Selecting no individual staff will result in all staff being assigned to the service.
 
-**<span class="underline">BOOKING PAGE – Self-Service Page</span>**
+## Self-service page
 
-Page outside of the Bookings web app where appointments can be scheduled.
+Self-Service is a page outside of the Bookings Web app where appointments can be scheduled. It contains the following information and configuration options:
 
-1.  Booking page status – Publish your calendar and make it live to be bookable. Options to share the link via email, Twitter, and even add as a “Book Now” button to a Facebook page. The link can also be embedded into your organization’s website. The Self-Service page looks like this:
+- **Booking page status** Publish your calendar live to make your service bookable. You have the options to share the link to your calendar via email and Twitter, and to add a **Book Now** button to a Facebook page. The link can also be embedded in your organization’s Web site. 
+    
+    The Self-Service page looks like this:
 
-> ![A screenshot of a cell phone
-> Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image13.png)
+    :::image type="content" source="media/bookings-self-service.jpg" alt-text="The Bookings Self-service page":::
 
-2.  Booking page access control: Require an Office 365 account from my organization to book – Only allow those within your organization to view your page and book services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
+- **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
-3.  Booking page access control: Disable direct search engine indexing of booking page – Ensure your page is not shown in Google, Bing, or other search engine results. Deselecting this box will ensure access to the page is limited to the generated page link.
+- **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page in the search results for Google, Bing, or other search engines. Deselecting this box will ensure access to the page is limited to the generated page link.
 
-4.  Customer data usage consent – When this is selected, the text will appear on the Self-Service Page and must be checked by the user to complete the booking.
+- **Customer data usage consent** When selected, text requesting the user's or customer's consent for your organization to use their data will appear on the Self-service page. The box will have to be checked by the user in order to to complete the booking.
 
-5.  Scheduling policy, Email notifications, and Staff – Similar settings to those that appear in each service on the Services tab.
+- Scheduling policy, Email notifications, and Staff – Similar settings to those that appear in each service on the Services tab.
 
-6.  Availability – This defaults to business hours but can be changed for page-wide availability for bookings. Option to set specific date ranges for different availability, such as holidays or extended hours.
+- Availability – This defaults to business hours but can be changed for page-wide availability for bookings. Option to set specific date ranges for different availability, such as holidays or extended hours.
 
-7.  Customize your page – Choose colors and logos that appear on the Self-Service Page for brand consistency.
+- Customize your page – Choose colors and logos that appear on the Self-Service Page for brand consistency.
 
-8.  Region and time zone settings – Set the time zone and language preferences for what is displayed on the Self-Service Page. We recommend having these settings reflect the time zone in which your business operates. The Self-Service Page will automatically detect the visitor’s time zone and show availability in the native time zone without any extra work. For example, if an appointment is available at 1:00pm PST, someone in CST will see the available timeslot displayed as available at 3:00pm CST.
+- Region and time zone settings – Set the time zone and language preferences for what is displayed on the Self-Service Page. We recommend having these settings reflect the time zone in which your business operates. The Self-Service Page will automatically detect the visitor’s time zone and show availability in the native time zone without any extra work. For example, if an appointment is available at 1:00pm PST, someone in CST will see the available timeslot displayed as available at 3:00pm CST.
 
 **<span class="underline">CALENDAR</span>**
 
