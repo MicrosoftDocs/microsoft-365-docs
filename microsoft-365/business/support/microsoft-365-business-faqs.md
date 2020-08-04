@@ -150,7 +150,7 @@ Windows AutoPilot is a service that streamlines the deployment of new Windows 10
 All the add-ons that can be added to Microsoft 365 Business Standard can be added to Microsoft 365 Business Premium. This means that you can purchase Office 365 Cloud App Security, Advanced Compliance, Threat Intelligence, MyAnalytics, Power BI Pro, and Audio Conferencing. 
  
 ### Can I add Phone System and Calling Plans to Microsoft 365 Business Premium? 
-No, Phone System and Calling Plan are reserved for customers who have more advanced needs. Customers who require these capabilities should look at Microsoft 365 Enterprise offerings. 
+Yes, you can purchase a Business Voice subscription. [Business Voice](../business-voice/whats-business-voice.md) is a telephony solution designed for small and medium businesses of up to 300 users that bundles Phone System, Audio Conferencing, a Domestic Calling Plan, and more. Phone System capabilities that you'll get include voicemail, caller ID, call park, call forwarding, auto attendants, and call queues. <br> To find out whether Business Voice is available in your country or region, see [Country and region availability for Business Voice](../business-voice/country-region-availability.md). For pricing information, see [Pricing for Business Voice](https://go.microsoft.com/fwlink/?linkid=2127221).
  
 ### Can Microsoft 365 Business Premium customers use  Microsoft Defender Advanced Threat Protection? 
 Yes, Microsoft Defender Advanced Threat Protection is available as an add-on to Microsoft 365 Business Premium customers.
