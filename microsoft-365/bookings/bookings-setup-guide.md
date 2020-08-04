@@ -24,11 +24,11 @@ Begin by creating a Bookings page for your organization.
     
     :::image type="content" source="media/bookings-microsoft-365-apps.jpg" alt-text="Microsoft 365 apps page":::
 
-2. Create a new Bookings calendar and fill out the business name and business category fields.
+2. Create a new Bookings calendar and fill out the business name and business category fields, and then click **Continue**.
     
-    - Business name: This is what your Bookings calendar will be titled. This can be your actual business name, the name of your business department, the high-level service you are providing, or another name that fits your scenario. For large enterprises, we recommend creating a Bookings calendar at the department level.
+    - **Business name** This is what your Bookings calendar will be titled. This can be your actual business name, the name of your business department, the high-level service you are providing, or another name that fits your scenario. For large enterprises, we recommend creating a Bookings calendar at the department level.
     
-    - Business category: Select the category that best fits your business or organization.
+    - **Business category** Select the category that best fits your business or organization.
 
     :::image type="content" source="media/bookings-create-new-calendar.jpg" alt-text="Creating a calendar in Microsoft Bookings":::
 
@@ -42,7 +42,7 @@ Begin by creating a Bookings page for your organization.
     - Terms and conditions URL, which is the location that the **Terms of Sale** link in the footer will point to
     - Business logo, which is an image that will appear in the header of confirmations and reminder emails
 
-    The following image is an example confirmation after the above fields are filled out.
+    The following image is an example confirmation, after the above fields are filled out.
 
     :::image type="content" source="media/bookings-business -info.jpg" alt-text="Example of a Bookings confirmation":::
 
@@ -75,7 +75,9 @@ Next, add staff from your Microsoft 365 tenant, or add staff external to your or
 
 6.  Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
     
-    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
+    For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view.
+
+    The following example shows a Bookings calendar displaying the varying availability of staff members:
 
     :::image type="content" source="media/bookings-busy-tentative-view.jpg" alt-text="A view of a Bookings calendar":::
 
@@ -93,15 +95,16 @@ Define the services that your organization provides, which customers will book t
 
 1.  Select the **Add a service** button.
 
-2.  **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-service page.
+2.  **Service name**: enter the name of your service. This is the name that will appear in the drop-down menu on the Calendar page. This name will also appear when anyone manually adds an appointment on the Calendar page, and it will appear as a tile on the Self-Service page.
 
-3.  **Description**: The description you enter is what will appear when a user clicks the information icon on the Self-service page.
+3.  **Description**: The description you enter is what will appear when a user clicks the information icon on the Self-Service page.
 
 4.  **Default location**: This location is what will be displayed on confirmation and reminder emails for both staff and customers, and it will be displayed on the calendar event created for the booking.
 
 5.  **Add online meeting**: This setting enables or disables online meetings for each appointment, either via Teams or Skype, depending on which one you configure as the default client for the staff member.
     
     - Enabled:
+    
         - A link to a Teams or Skype meeting, unique to the booking, will be added to the calendar event on both the staff's and the customers' calendars, along with dial-in information.
         - The link to join the meeting will be added to all confirmation and reminder emails, as shown in the following example:
         
@@ -119,12 +122,12 @@ Define the services that your organization provides, which customers will book t
     
     The time will be blocked on the staff’s calendar and impact free/busy information. This means if an appointment ends at 3:00 pm and 10 minutes of buffer time has been added to the end of the meeting, the staff’s calendar will show as busy and non-bookable until 3:10pm. This can be useful if your staff needs time before a meeting to prepare, such as a doctor reviewing a patient’s chart, or a financial advisor preparing relevant account information. It can also be useful after a meeting, such as when someone needs time to travel to another location.
 
-8.  **Let the customer manage their booking**: This setting determines whether or notthe customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
+8.  **Let the customer manage their booking**: This setting determines whether or not the customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
     
     - Enabled: 
     
         The **Manage Booking** button appears on the customer confirmation email. When this button is selected by the customer, three options appear:
-        - **Reschedule** Selecting this option brings the user to a service-specific self-service page, where they can select a new time and/or date for the same service and same staff member from the original booking. Note that even though the original staff member is attached to the rescheduled booking by default, the user does have the option of changing the staff member as well.
+        - **Reschedule** Selecting this option brings the user to a service-specific Self-Service page, where they can select a new time and/or date for the same service and same staff member from the original booking. Note that even though the original staff member is attached to the rescheduled booking by default, the user does have the option of changing the staff member as well.
         - **Cancel booking** This cancels the booking and removes it from the staff's calendar.
         - **New booking** This option brings the user to the Self-Service page with all services and staff listed, for scheduling a new booking.
 
@@ -140,9 +143,9 @@ Define the services that your organization provides, which customers will book t
 
 9. **Maximum attendees per event** This setting allows you to create services that require the ability for multiple people to book the same appointment time and the same staff (such as a fitness class). The appointment time slot for the selected service, staff, and time will be available to book until the maximum number of attendees, specified by you, has been reached. Current appointment capacity and attendees can be viewed in the Calendar tab in the Bookings Web app.
 
-:::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
+    :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Example of setting maximum attendees in Bookings":::
 
-10. **Default price**  This is the price will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
+10. **Default price**  This is the price that will display on the Self-Service page. If **Price not set** is selected, then no price or reference to cost or pricing will appear.
 
 11. **Notes** This field appears in the booking event for booked staff, as well as on the event that appears on the Calendar tab in the Bookings web app.
 
@@ -170,11 +173,11 @@ Define the services that your organization provides, which customers will book t
 
         :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="The opt-in box in Bookings":::
 
-    - Text message notifications will look like this (Note: SMS notifications are currently only available in North America):
+    - Text message notifications will look like the following (note that SMS notifications are currently only available in North America):
     
         :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="A text notification from Bookings":::
 
-15. **Publishing options** – Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
+15. **Publishing options** Choose whether to have this service appear as bookable on the Self-Service page, or to make the service bookable only on the Calendar tab within the Bookings Web app.
 
 16. **Scheduling Policy** This setting determines how appointment times are viewed, and the time period in which bookings can be made or cancelled.
 
@@ -200,7 +203,7 @@ Define the services that your organization provides, which customers will book t
 
 20. **Assign Staff** Select the staff (provided you have added staff members to the Staff tab) who will be bookable for that specific service. Selecting no individual staff will result in all staff being assigned to the service.
 
-## Self-service page
+## Self-Service page
 
 Self-Service is a page outside of the Bookings Web app where appointments can be scheduled. It contains the following information and configuration options:
 
@@ -208,54 +211,48 @@ Self-Service is a page outside of the Bookings Web app where appointments can be
     
     The Self-Service page looks like this:
 
-    :::image type="content" source="media/bookings-self-service.jpg" alt-text="The Bookings Self-service page":::
+    :::image type="content" source="media/bookings-Self-Service.jpg" alt-text="The Bookings Self-Service page":::
 
 - **Booking page access control: Require a Microsoft 365 account from my organization to book**  Selecting this option will only allow those within your organization to view your page or book any services. Access to the page is authorized via credential checks to ensure the visitor belongs to an account within the tenant.
 
-- **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page in the search results for Google, Bing, or other search engines. Deselecting this box will ensure access to the page is limited to the generated page link.
+- **Booking page access control: Disable direct search engine indexing of booking page** This setting prevents your page from appearing in the search results for Google, Bing, or other search engines. Deselecting this box will ensure access to the page is limited to the generated page link.
 
-- **Customer data usage consent** When selected, text requesting the user's or customer's consent for your organization to use their data will appear on the Self-service page. The box will have to be checked by the user in order to to complete the booking.
+- **Customer data usage consent** When selected, text requesting the user's or customer's consent for your organization to use their data will appear on the Self-Service page. The box will have to be checked by the user in order to to complete the booking.
 
-- Scheduling policy, Email notifications, and Staff – Similar settings to those that appear in each service on the Services tab.
+- **Scheduling policy**, **Email notifications**, and **Staff** All of these settings are similar to the ones available for each service on the Services tab. 
 
-- Availability – This defaults to business hours but can be changed for page-wide availability for bookings. Option to set specific date ranges for different availability, such as holidays or extended hours.
+- **Availability** This is an option to set specific time and date ranges of availability for a service. Otherwise, Bookings will default to your business hours. You can use the **Availability** option here for scenarios such as holidays or extended hours.
 
-- Customize your page – Choose colors and logos that appear on the Self-Service Page for brand consistency.
+- **Customize your page** Choose colors and logos that appear on the Self-Service page, such as for brand consistency.
 
-- Region and time zone settings – Set the time zone and language preferences for what is displayed on the Self-Service Page. We recommend having these settings reflect the time zone in which your business operates. The Self-Service Page will automatically detect the visitor’s time zone and show availability in the native time zone without any extra work. For example, if an appointment is available at 1:00pm PST, someone in CST will see the available timeslot displayed as available at 3:00pm CST.
+- **Region and time zone settings** Here you can set your time zone and language preferences for the Self-Service page. We recommend setting your local time zone. For visitors to your Self-Service page, Bookings automatically detects their local time zones and will show availability to them in their own time zones. For example, if an appointment is available at 1:00pm PST, someone in CST will see the available time displayed as 3:00pm CST.
 
-**<span class="underline">CALENDAR</span>**
+## Calendar tab
 
-A calendar view of all staff with respective free/busy and appointments that have been scheduled via Bookings. New appointments can be booked directly from this page.
+The Calendar tab in Bookings contains a view of all staff and their respective free/busy information, as well as appointments that have been scheduled via Bookings. New appointments can be booked directly from this page.
 
-1.  Create a new booking two different ways:
+Create a new booking two different ways:
+
+1. Select the **New booking** button at the top-left of the page.
     
-    1.  Select the “+ New booking” button on the top left of the page
+    a) Select the service you would like to book from the drop-down menu. These are the services that have been created in the Services tab.
+
+    b) Fill out the customer information, choose a time for the service, and then select an available staff member.
         
-        1.  Select the service you would like to book from the drop-down menu. These are the services that have been created in the Services tab.
-        
-        2.  Fill out customer information, choose a time for the service, and select an available staff member.
+2.  Click or select directly within the calendar.
+
+    a) The time of the appointment and assigned staff member will auto-populate, based on where the calendar was initially clicked or selected, but these options can be changed.
+
+    b) Fill out customer information and select the service from the drop-down menu.
     
-    2.  Click directly within the calendar
-        
-        3.  The time and staff member will auto-populate based on where the calendar was clicked but can be changed.
-        
-        4.  Fill out customer information and select the service from the drop-down menu in “Service details”
-    
-    3.  Note: All fields and settings will populate based on what was set as the default service experience in the Services page, but edits to these field can still be made in the booking window when creating a booking within the Calendar tab.
+    Note that all fields and settings will populate based on configurations made in the Services page, but edits to these field can still be made in the booking window when creating a booking within the Calendar tab.
 
-2.  View/edit an existing booking – Select the event from the calendar and click “Edit” or “Open Booking” in the top right corner of the event window.
+Additional configuration options on the Calendar tab include:
 
-3.  View calendar by day, work week, week, or month. Bookings are differentiated by staff member via color (as chosen in the Staff tab), and staff calendars can be view side-by-side in the “Day” view.
+- **View/edit an existing booking** Select the event from the calendar and click **Edit** or **Open Booking** in the top-right corner of the event window.
 
-4.  Time off can be added directly to the calendar to easily block staff calendars and ensure they are not bookable specific days. This can be used for time off, vacation, sick days, etc.
+- **View calendar by day, work week, week, or month** Appointments are differentiated by staff member by color (colors are assigned to staff members in the Staff tab). Staff calendars can be viewed side-by-side in the “Day” view.
 
-5.  Agenda and calendar-view of the schedule can be printed using the Print button in the top ribbon.
+- Time off can be added directly to the calendar, in order to block staff calendars and ensure those individuals are not bookable on specific days. This can be used for time off, vacation, or sick days.
 
-**<span class="underline">CUSTOMERS</span>**
-
-Those that book an appointment will have their information stored in this tab. Contact information and relevant notes can be added and edited here.
-
-**<span class="underline">HOME</span>**
-
-Easy navigation to tabs and sections within the Bookings web app. Data from bookings made can be exported here via a TSV file.
+- Agenda and calendar-view of the schedule can be printed using the **Print** button in the top ribbon.
