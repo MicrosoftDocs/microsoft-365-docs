@@ -86,9 +86,9 @@ Additional label settings are available with the [Set-Label](https://docs.micros
 
 For example:
 
-- Use the *LocaleSettings* parameter for multinational deployments so that users see the label name and tooltip in their local language. See the following section for an example configuration. 
+- Use the *LocaleSettings* parameter for multinational deployments so that users see the label name and tooltip in their local language. The [following section](#example-configuration-to-configure-a-sensitivity-label-for-different-languages) has an example configuration that specifies the label name and tooltip text for French, Italian, and German.
 
-- Use the *ApplyContentMarkingFooterFontName* parameter to specify your choice of font for your specified footer.
+- Use the *ApplyContentMarkingFooterFontName* parameter to specify your choice of font for your specified footer. Calibri is the default font for headers, footers, and watermark text. If your alternative font name is not available to the service or device that displays the labels, the font falls back to Calibri.
 
 - Use the *ApplyContentMarkingHeaderFontColor* parameter to specify your custom color choice for your specified header, using a hex triplet code for the red, green, and blue (RGB) components. For example, #40e0d0 is the RGB hex value for turquoise. You'll find these codes in many applications that let you edit pictures. For example, Microsoft Paint lets you choose a custom color from a palette and the RGB values are automatically displayed, which you can then copy.
 
