@@ -309,7 +309,7 @@ You can also see the results of your auto-labeling policy by using [content expl
 > [!TIP]
 > You can also use content explorer to identify locations that have documents with sensitive information, but are unlabeled. Using this information, consider adding these locations to your auto-labeling policy, and include the identified sensitive information types as rules.
 
-## Use PowerShell for auto-labeling policies
+### Use PowerShell for auto-labeling policies
 
 You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) to create and configure auto-labeling policies. This means you can now fully script the creation and maintenance of your auto-labeling policies, which also provides a more efficient method of specifying multiple URLs for OneDrive and SharePoint locations.
 
