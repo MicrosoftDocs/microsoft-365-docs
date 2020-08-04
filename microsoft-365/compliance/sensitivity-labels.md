@@ -34,8 +34,6 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 
 ![Sensitivity label on Excel ribbon and status bar](../media/Sensitivity-label-in-Excel.png)
 
-Sensitivity labels are supported for tenants in the global (public) cloud only. Currently, sensitivity labels aren't supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
-
 To apply sensitivity labels, users must be signed in to Office with their work or school account.
 
 You can use sensitivity labels to:
