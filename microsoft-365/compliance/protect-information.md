@@ -58,5 +58,5 @@ To detect risky behavior and prevent accidental oversharing of sensitive informa
 
 |Capability|What problems does it solve?|Documentation|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Prevents data leaking from your organization's boundaries | [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) <br /><br /> [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Prevents data leaking from your organization's boundaries <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) <br /><br /> [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
 |[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Prevents risky behavior that might compromise sensitive items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
