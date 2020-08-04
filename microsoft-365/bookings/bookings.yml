@@ -37,7 +37,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Set up Microsoft Bookings
-            url: set-up.md
+            url: bookings-setup-guide.md
           - text: Enter your business information
             url: enter-business-information.md
           - text: Set your scheduling policies

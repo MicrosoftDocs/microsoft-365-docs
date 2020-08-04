@@ -34,7 +34,7 @@ additionalContent:
         # Card
         - title: Set up Microsoft Bookings
           summary: Enter your business information, set your schedule, offerings, and staff, and publish your page so your customers can start booking appointments.
-          url: set-up.md
+          url: bookings-setup-guide.md
         # Card
         - title: Get the Bookings app
           summary: Get the app for iOS or Android so you and your staff can see their own and their colleagues' schedules and appointment details.
