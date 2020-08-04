@@ -76,9 +76,9 @@ When you have [Office 365 Advanced Threat Protection](office-365-atp.md), you wi
     
 6. Choose **Save**.
     
-## Step 3: Add (or edit) ATP Safe Links policies that apply to specific email recipients
+## Step 3: Add (or edit) ATP Safe Links policies that apply to all or specific email recipients
 
-After you have reviewed (or edited) the default ATP Safe Links policy that applies to everyone, your next step is to define additional policies that would apply to specific recipients. For example, you can specify exceptions to your default policy by defining an additional policy. 
+After you have reviewed (or edited) the default ATP Safe Links policy that applies to everyone, your next step is to define additional policies that would apply to all or specific email recipients. For example, you can specify exceptions to your default policy by defining an additional policy or create more granular restrictions for all employees.
   
 1. Go to [https://protection.office.com](https://protection.office.com) and sign in with your work or school account. 
     
@@ -109,7 +109,7 @@ After you have reviewed (or edited) the default ATP Safe Links policy that appli
 6. Choose **Save**.
 
 > [!NOTE]
-> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more polices, only the higher priority policy will take effect.
+> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more polices, only the higher priority policy will take effect. If you want the customer policy to trake precedence, please raise the priority of the policy.
     
 ## Step 4: Learn about ATP Safe Links policy options
 
