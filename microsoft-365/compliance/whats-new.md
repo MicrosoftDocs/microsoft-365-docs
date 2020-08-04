@@ -285,21 +285,4 @@ When configuring encryption for a sensitivity label, you now have two options th
 
 ### Update to data investigations
 
-When performing a data investigation, you can now delete items from their original locations. This means you can delete items from Exchange mailboxes, SharePoint sites, and OneDrive accounts across your organization. Because you collected the items as evidence, you'll have copies of them retained in the evidence set to you can investigate further or just keep as a reference. [Learn more](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data) 
-
-## July 2019
-
-### New admin roles
-
-We released two new admin roles to help manage security and compliance in your org. Tell all your friends.
-
-- **Compliance data admin**. Users with this role have permissions to protect and track data in the Microsoft 365 compliance center, Microsoft 365 admin center, and Azure. They can also manage everything the Exchange admin center, Compliance Manager, Teams & Skype for Business admin center and create support tickets for Azure and Microsoft 365.
-- **Security operator**. Users with this role can manage alerts and have global read-only access to security-related features, including everything in the Microsoft 365 security center, Azure Active Directory, Identity Protection, Privileged Identity Management and Office 365 Security & Compliance Center.
-
-[Learn more about these roles](https://docs.microsoft.com/microsoft-365/security//office-365-security/permissions-microsoft-365-compliance-security)
-
-### Search and filtering for reports
-
-No more scrolling through a sea of reports to find the ones you want. You can now search for reports (based on their titles) and filter on categories like 'Labels' and 'Compliance' and sources like 'Office 365' and 'Microsoft Cloud App Security'.
-
-![Screen capture of the search and filter buttons for reports with an applied filter](../media/mcc_report_filtering.png)
+When performing a data investigation, you can now delete items from their original locations. This means you can delete items from Exchange mailboxes, SharePoint sites, and OneDrive accounts across your organization. Because you collected the items as evidence, you'll have copies of them retained in the evidence set to you can investigate further or just keep as a reference. [Learn more](manage-data-spillage-incidents.md#step-4-delete-the-spilled-data)
