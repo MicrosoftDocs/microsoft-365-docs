@@ -329,7 +329,7 @@ $spoLocations = @("<SharePointSiteLocation1>","<SharePointSiteLocation2>")
 Set-AutoSensitivityLabelPolicy -Identity <AutoLabelingPolicyName> -AddSharePointLocation $spoLocations -ApplySensitivityLabel <Label> -Mode TestWithoutNotifications
 ```
 
-This command specifies the additional SharePoint URLs in a variable that are then added to an existing auto-labeling policy. To add OneDrive locations, use the *AddOneDriveLocation* parameter with a different variable, such as *$OneDriveLocations*.
+This command specifies the additional SharePoint URLs in a variable that is then added to an existing auto-labeling policy. To add OneDrive locations instead, use the *AddOneDriveLocation* parameter with a different variable, such as *$OneDriveLocations*.
 
 To create a new auto-labeling policy rule:
 
@@ -337,7 +337,7 @@ To create a new auto-labeling policy rule:
 New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelingRuleName> -ContentContainsSensitiveInformation @{"name"= "a44669fe-0d48-453d-a9b1-2cc83f2cba77"; "mincount" = "2"} -Workload SharePoint
 ```
 
-For an existing auto-labeling policy, this command creates a new policy rule to detect the information type of **U.S. Social Security Number**, which has an entity ID of a44669fe-0d48-453d-a9b1-2cc83f2cba77. To find the entity IDs for other sensitive information types, refer to [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
+For an existing auto-labeling policy, this command creates a new policy rule to detect the sensitive information type of **U.S. social security number (SSN)**, which has an entity ID of a44669fe-0d48-453d-a9b1-2cc83f2cba77. To find the entity IDs for other sensitive information types, refer to [Sensitive information type entity definitions](sensitive-information-type-entity-definitions.md).
 
 For more information about the available parameters and some examples, see the following cmdlet help:
 
