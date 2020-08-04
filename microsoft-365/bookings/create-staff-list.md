@@ -16,7 +16,7 @@ description: "Use this page to create your staff list and to manage staff member
 The Staff page in the Microsoft Bookings app is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from this part of the app.
 
 > [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To turn it on, see [Get access to Microsoft Bookings](get-access.md).
+> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
 ## Add staff
 

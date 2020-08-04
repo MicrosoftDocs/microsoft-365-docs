@@ -16,7 +16,7 @@ description: "Learn how to integrate Bookings with Facebook so customers can boo
 Microsoft Bookings integrates with Facebook to make it easy for your customers to schedule appointments with you from your Facebook business page. This article explains how you can direct customers to your Microsoft Bookings page by adding a Book Now button to your Facebook business page.
 
 > [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To turn it on, see [Get Access to Microsoft Bookings](get-access.md).
+> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
 ## Setup steps
 

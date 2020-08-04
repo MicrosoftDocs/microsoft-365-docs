@@ -18,7 +18,7 @@ You can optionally allow a staff member's work calendar to block their availabil
 When your staff member creates an appointment on their Microsoft 365 or Office 365 work calendar, it will block their availability in Bookings. Likewise, when a booking is made by a customer using the Bookings app and that customer is within your Microsoft 365 or Office 365 organization, that booking shows up as blocked on the customer's work calendar. Bookings does not show any personal information in the Bookings calendar and only shows that the time isn't available for appointments.
 
 > [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To turn it on, see [Get access to Microsoft Bookings](get-access.md).
+> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
 ## Sync work calendars to Bookings
 

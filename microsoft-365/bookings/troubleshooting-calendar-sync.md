@@ -16,7 +16,7 @@ description: "Troubleshooting procedures for resolving errors when a staff membe
 If you receive the error, "This staff member's calendar can't be synced", this article contains several troubleshooting procedures to help you resolve the error.
 
 > [!NOTE]
-> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To turn it on, see [Get access to Microsoft Bookings](get-access.md).
+> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
 If you are looking for information on syncing your staff's calendar, see [Sync staff's work calendar with Microsoft Bookings](sync-staff-work-calendar.md).
 
