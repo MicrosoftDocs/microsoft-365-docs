@@ -15,7 +15,7 @@ ms.collection:
 search.appverid: 
 - MOE150
 - MET150
-description: "How you can use retention labels to manage the lifecycle of product-related documents in SharePoint by using metadata to classify the content, automatically apply the labels, and use event-based retention to start the retention period."
+description: "How you can use retention labels to manage the lifecycle of documents in SharePoint by using metadata to classify the content, automatically apply the labels, and use event-based retention to start the retention period."
 ---
 
 # Use retention labels to manage the lifecycle of documents stored in SharePoint
