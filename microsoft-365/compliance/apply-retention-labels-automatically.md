@@ -186,4 +186,4 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 Consider using retention labels with another form of automation, [event-driven retention](event-driven-retention.md). When you use this configuration, the start of retention is triggered by an event that you identify. You can use event-driven retention with an auto-policy or a label policy.
 
-See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
+See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.

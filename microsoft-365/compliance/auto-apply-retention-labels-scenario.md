@@ -1,5 +1,5 @@
 ---
-title: "Manage the lifecycle of product documents stored in SharePoint with retention labels"
+title: "Use retention labels to manage the lifecycle of documents stored in SharePoint"
 f1.keywords:
 - NOCSH
 ms.author: cabailey
