@@ -177,7 +177,7 @@ Additional label policy settings are available with the [Set-LabelPolicy](https:
 
 Using this cmdlet, you can specify [advanced settings](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations) for the Azure Information Protection unified labeling client. These advanced settings include setting a different default label for Outlook, and implement pop-up messages in Outlook that warn, justify, or block emails being sent. For the full list, see [Available advanced settings for labels](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels). 
 
-## Use PowerShell to manage all aspects of sensitivity labels and policies
+## Use PowerShell to create and configure sensitivity labels and their policies
 
 You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) to create new sensitivity labels and new sensitivity label policies, as well as modify existing labels and policies. See the following documentation for supported parameters and values:
 
