@@ -17,6 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: "Assign the permissions required to perform eDiscovery-related tasks using the Security & Compliance Center."
+ms.custom: seo-marvel-apr2020
 ---
 
 # Assign eDiscovery permissions in the Security & Compliance Center
@@ -38,9 +39,9 @@ The primary eDiscovery-related role group in Security & Compliance Center is cal
   See the [More information](#more-information) section for reasons why you might want eDiscovery Administrators in your organization.
 
 > [!NOTE]
-> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft E5 license. Alternatively, users with an E1 or E3 license can be assigned an E5 add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about licensing, see [Microsoft 365 licensing guidance for security & compliance](https://aka.ms/complianceSD).
+> To analyze a user's data using Advanced eDiscovery, the user (the custodian of the data) must be assigned an Office 365 E5 or Microsoft 365 E5 license. Alternatively, users with an Office 365 E1 or a Office 365 or Microsoft 365 E3 license can be assigned an Microsoft 365 E5 Compliance or Microsoft 365 eDiscovery and Audit add-on license. Administrators, compliance officers, or legal personnel who are assigned to cases as members and use Advanced eDiscovery to collect, view, and analyze data don't need an E5 license. For more information about Advanced eDiscovery licensing, see [Get started with Advanced eDiscovery](get-started-with-advanced-ediscovery.md).
   
-## Before you begin
+## Confirm your roles
 
 - You have to be a member of the Organization Management role group or be assigned the Role Management role to assign eDiscovery permissions in the Security & Compliance Center.
     

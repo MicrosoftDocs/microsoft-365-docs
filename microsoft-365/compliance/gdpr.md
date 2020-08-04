@@ -120,7 +120,7 @@ The GDPR mandates that a DPIA includes:
 Under the GDPR, as a controller you are required to undertake DPIAs prior to data processing that is likely to result in a high risk to the rights and freedoms of individuals—in particular, processing using new technologies. The GDPR provides the following non-exhaustive list of cases in which DPIAs must be carried out:
 
 - Automated processing for the purposes of profiling and similar activities that has legal effects or similarly significantly affects data subjects;  
-- Processing on a large scale of special categories of personal data – data revealing racial or ethnic origin, political opinion, and the like—or of data relating to criminal convictions and offences;  
+- Processing on a large scale of special categories of personal data – data revealing racial or ethnic origin, political opinion, and the like—or of data relating to criminal convictions and offenses;  
 - Systematic monitoring of a publicly accessible area on a large scale.  
 
 The GDPR also requires that you must consult with your Data Protection Authority (DPA) before you begin any processing if you cannot identify sufficient processes to minimize high risks to data subjects.
@@ -288,7 +288,6 @@ Personal data is any information relating to an identified or identifiable perso
 - Tax file number
 - Work address
 - Credit/Debit card numbers
-- Social media posts
 - Social media posts
 - IP address (EU region)
 - Location / GPS data

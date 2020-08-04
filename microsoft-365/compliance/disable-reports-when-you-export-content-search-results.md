@@ -14,7 +14,9 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: "Edit the Windows Registry on your local computer to disable reports when you export the results of a Content Search from the Security & Compliance Center in Office 365. Disabling these reports can speed up the download time and save disk space."
+ms.custom:
+- seo-marvel-apr2020
+description: Edit the Windows Registry on your local computer to disable reports when you export the results of a Content Search from the Security & Compliance Center.
 ---
 
 # Disable reports when you export Content Search results

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -52,7 +53,7 @@ Once the group has been created, you can add members and configure additional se
 
 ::: moniker range="o365-worldwide"
 
-Users can [add themselves or request approval](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
+Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
 
 1. In the admin center, refresh the page so your new group appears, and then select the name of the group that you want to add members to.
     
@@ -70,7 +71,7 @@ The group will appear in Outlook with members assigned to it.
 
 ::: moniker range="o365-germany"
 
-Users can [add themselves or request approval](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
+Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
 1. In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.
     
 2. Next to **Members**, select **Edit**.
@@ -86,7 +87,7 @@ The group will appear in Outlook with members assigned to it.
 
 ::: moniker range="o365-21vianet"
 
-Users can [add themselves or request approval](https://support.microsoft.com/en-us/office/join-a-group-in-outlook-2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
+Users can [add themselves or request approval](https://support.microsoft.com/office/2e59e19c-b872-44c8-ae84-0acc4b79c45d), or you can add them now.
 1. In the admin center, refresh the page so your new group appears, select **Groups** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Groups</a>, and then select the group that you want to add members to.
     
 2. Next to **Members**, select **Edit**.
@@ -114,7 +115,7 @@ After creating a new group and adding members, you can further configure your gr
 
 ## Related articles
 
-[Manage guest access to Microsoft 365 groups](https://support.office.com/article/adding-guests-to-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6)
+[Manage guest access to Microsoft 365 groups](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6)
 
 [Choose the domain to use when creating Microsoft 365 groups](choose-domain-to-create-groups.md)
 

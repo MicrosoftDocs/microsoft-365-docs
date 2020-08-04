@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management 
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -58,7 +59,7 @@ If you are an admin and want to take over an unmanaged tenant created by a self-
 4. Once you've added the TXT record to your registrar site, return to the wizard and select **Okay, I've added the record**.
     
 > [!NOTE]
-> Taking over the shadow tenant will not impact any existing information or services. However, if any users in the domain have signed up for services that require a license, you'll be asked to buy licenses for them as part of taking over the admin role. You can add or remove licenses once the admin setup process is finished. 
+> Taking over the shadow tenant will not impact any existing information or services. However, if any users in the domain have signed up for services that require a license, you'll be asked to buy licenses for them as part of taking over the admin role. You can buy or remove licenses once the admin setup process is finished.
   
 ## Related articles
 

@@ -88,6 +88,11 @@
           href: deployment-strategies-microsoft-365-enterprise.md
         - name: Deploy with existing infrastructure
           href: deploy-with-existing-infrastructure.md
+        - name: Deployment and update channel example configurations
+          href: deploy-update-channels-examples.md
+          items: 
+             - name: Broad deployment of the latest releases
+               href: deploy-update-channels-examples-rapid-deploy.md
         - name: Deploy for non-enterprises
           href: deploy-foundation-infrastructure-non-enterprises.md
     - name: Deploy workloads

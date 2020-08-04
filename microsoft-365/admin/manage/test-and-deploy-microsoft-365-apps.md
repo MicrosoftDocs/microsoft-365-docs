@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: 
+ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Find, test, and deploy Microsoft and Microsoft partner apps for users and groups in your organization from the Integrated apps portal in the Microsoft 365 admin center."

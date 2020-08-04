@@ -15,18 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: "Learn how to search the audit log for events that are logged when compliance administrators perform Content Search and eDiscovery case tasks in the Security & Compliance Center."
+description: Learn what events are logged when users assigned eDiscovery permissions perform Content Search and Core eDiscovery tasks in the Security & Compliance Center.
+ms.custom: seo-marvel-apr2020
 ---
 
 # Search for eDiscovery activities in the audit log
 
-Content Search and eDiscovery-related activities that are performed in Security & Compliance Center or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Security & Compliance Center:
+Content Search and eDiscovery-related activities (for Core eDiscovery and Advanced eDiscovery) that are performed in Security & Compliance Center or by running the corresponding PowerShell cmdlets are logged in the audit log. Events are logged when administrators or eDiscovery managers (or any user assigned eDiscovery permissions) perform the following Content Search and Core eDiscovery tasks in the Security & Compliance Center:
   
-- Creating and managing eDiscovery cases
+- Creating and managing Core and Advanced eDiscovery cases
 
 - Creating, starting, and editing Content Searches
 
 - Performing Content Search actions, such as previewing, exporting, and deleting search results
+
+- Managing custodians and review sets in Advanced eDiscovery
 
 - Configuring permissions filtering for Content Search
 
@@ -42,31 +45,33 @@ For more information about searching the audit log, the permissions that are req
 Currently, you have to do a few specific things to view eDiscovery activities in the audit log. Here's how.
   
 1. Go to [https://protection.office.com](https://protection.office.com).
-    
+
 2. Sign in using your work or school account.
-    
+
 3. In the left pane, click **Search**, and then click **Audit log search**.
-    
-4. In the **Activities** drop-down list, under **eDiscovery activities**, click one or more activities to search for. Or you can click **eDiscovery activities** to search for all eDiscovery-related activities. 
-    
+
+4. In the **Activities** drop-down list, under **eDiscovery activities** or **Advanced eDiscovery activities**, click one or more activities to search for.
+
     > [!NOTE]
-    > The Activities drop-down list also includes a group of activities named **eDiscovery cmdlet activities** that will return records from the cmdlet audit log. 
+    > The **Activities** drop-down list also includes a group of activities named **eDiscovery cmdlet activities** that will return records from the cmdlet audit log.
   
-5.  Select a date and time range to display eDiscovery events that occurred within that period. 
-    
-6. In the **Users** box, select one or more users to display search results for. Leave this box blank to return entries for all users. 
-    
-7. Click **Search** to run the search using your search criteria. 
-    
+5. Select a date and time range to display eDiscovery events that occurred within that period. 
+
+6. In the **Users** box, select one or more users to display search results for. Leave this box blank to return entries for all users.
+
+7. Click **Search** to run the search using your search criteria.
+
 8. After the search results are displayed, you can click **Filter results** to filter or sort the resulting activity records. Unfortunately, you can't use filtering to explicitly exclude certain activities. 
-    
+
 9. To view details about an activity, click the activity record in the list of search results. 
-    
-    A **Details** fly out page is displayed that contains the detailed properties from the event record. To display additional details, click **More information**. For a description of these properties, see the [Detailed properties for eDiscovery activities](#detailed-properties-for-ediscovery-activities) section. 
+
+    A **Details** fly out page is displayed that contains the detailed properties from the event record. To display additional details, click **More information**. For a description of these properties, see the [Detailed properties for eDiscovery activities](#detailed-properties-for-ediscovery-activities) section.
+
+10. If desired, you can export the audit log search results to a CSV file, and then use the Excel Power Query feature to format and filter these records. For more information, see [Export, configure, and view audit log records](export-view-audit-log-records.md).
 
 ## eDiscovery activities
 
-The following table describes the Content Search and Core eDiscovery activities that are logged when an administrator or eDiscovery manager performs an eDiscovery-related activity using the Security & Compliance Center or running the corresponding cmdlet in Security & Compliance Center PowerShell. 
+The following table describes the Content Search and Core eDiscovery activities that are logged when an administrator or eDiscovery manager performs an eDiscovery-related activity using the Security & Compliance Center or running the corresponding cmdlet in Security & Compliance Center PowerShell. Note also that some activities performed in Advanced will be returned when you search for activities in this list.
   
 > [!NOTE]
 > The eDiscovery activities described in this section provide similar information to the eDiscovery cmdlet activities described in the next section. We recommend that you use the eDiscovery activities described in this section because they will appear in the audit log search results within 30 minutes. It takes up to 24 hours for the eDiscovery cmdlet activities to appear in audit log search results. 
@@ -113,9 +118,40 @@ The following table describes the Content Search and Core eDiscovery activities 
 |(none)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|A user previews the results of a content search in the security and compliance center or by running the cmdlet.|
 |||||
   
+## Advanced eDiscovery activities
+
+The following table describes the Advanced eDiscovery activities logged in the audit log. These activities (in addition to relevant eDiscovery activities can be used to help you track the progression of activity in an Advanced eDiscovery case.
+
+|**Friendly name**|**Operation**|**Description**|
+|:-----|:-----|:-----|
+|Added data to another review set|AddWorkingSetQueryToWorkingSet|User added documents from one review set to a different review set.|
+|Added data to review set|AddQueryToWorkingSet|User added the search results from a content search associated with an Advanced eDiscovery case to a review set.|
+|Added non-Microsoft 365 data to review set|AddNonOffice365DataToWorkingSet|User added non-Microsoft 365 data to a review set.|
+|Added remediated documents to review set|AddRemediatedData|User uploads documents that had indexing errors that were fixed to a review set.|
+|Analyzed data in review set|RunAlgo|User ran  analytics on the  documents in a review set.|
+|Annotated document in review set|AnnotateDocument|User annotated a document in a review set. Annotation includes redacting content in a document.|
+|Compared load sets|LoadComparisonJob|User compared two different load sets in a review set. A load set is when data from a content search that associated with the case is added to a review set.|
+|Converted redacted documents to PDF|BurnJob|User converted all the redacted documents in a review set to PDF files.|
+|Created review set|CreateWorkingSet|User created a review set.|
+|Created review set search|CreateWorkingSetSearch|User created a search query that searches the documents in a review set.|
+|Created tag|CreateTag|User created a tag group in a review set. A tag group can contain one or more child tags. These tags are then used to tag documents in the review set.|
+|Deleted review set search|DeleteWorkingSetSearch|User deleted a search query in a review set.|
+|Deleted tag|DeleteTag|User deleted a tag or a tag group in a review set.|
+|Downloaded document|DownloadDocument|User downloaded a document from a review set.|
+|Edited tag|UpdateTag|User changed a tag in a review set.|
+|Exported documents from review set|ExportJob|User exported documents from a review set.|
+|Modified case setting|UpdateCaseSettings|User modified the settings for a case. Case settings include case information, access permissions, and settings that control search and analytics behavior.|
+|Modified review set search|UpdateWorkingSetSearch|User edited a search query in a review set.|
+|Previewed review set search|PreviewWorkingSetSearch|User previewed the results of a search query in a review set.|
+|Remediated error documents|ErrorRemediationJob|User fixes files that contained indexing errors.|
+|Tagged document|TagFiles|User tags a document in a review set.|
+|Tagged results of a query|TagJob|User tags all of the documents that match the criteria of search query in a review set.|
+|Viewed document in review set|ViewDocument|User viewed a document in a review set.|
+|||
+
 ## eDiscovery cmdlet activities
 
-The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the Security & Compliance Center or by running the corresponding cmdlet in remote PowerShell that's connected to your organization's Security & Compliance Center. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section. 
+The following table lists the cmdlet audit log records that are logged when an administrator or user performs an eDiscovery-related activity by using the Security & Compliance Center or by running the corresponding cmdlet in remote PowerShell that's connected to your organization's Security & Compliance Center. The detailed information in the audit log record is different for the cmdlet activities listed in this table and the eDiscovery activities described in the previous section.
   
 As previously stated, it takes up to 24 hours for eDiscovery cmdlet activities to appear in the audit log search results.
   

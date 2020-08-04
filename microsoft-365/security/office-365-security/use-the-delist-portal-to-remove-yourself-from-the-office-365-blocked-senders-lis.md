@@ -56,4 +56,4 @@ where  _IP address_ is the IP address of the computer on which the mail server r
     > [!NOTE]
     > It may take up to 24 hours or results can vary widely before restrictions are removed.
 
-See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-controls.md) to prevent IP from being blacklisted.
+See [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md) and [Outbound spam protection in EOP](outbound-spam-controls.md) to prevent an IP from being blocked.

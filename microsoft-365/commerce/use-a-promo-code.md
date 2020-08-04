@@ -15,6 +15,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - commerce
+ms.custom: 
+- AdminSurgePortfolio
+- okr_SMB
 search.appverid:
 - BCS160
 - MET150
@@ -22,7 +25,6 @@ search.appverid:
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
 description: "Learn how to apply a promotional code to your Microsoft 365 subscription to reduce price, and how to troubleshoot promo code in case of an error."
-ms.custom: okr_SMB
 ---
 
 # Use your promo code to reduce price

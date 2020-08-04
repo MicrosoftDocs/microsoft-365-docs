@@ -12,6 +12,7 @@ localization_priority: Normal
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - PWB150
@@ -165,9 +166,6 @@ To allow your existing users to sign up for Power BI, run the opposite command a
 If a user signed up for Power BI but you no longer want them to have access to Power BI, you can remove the Power BI license for that user.
 
 ::: moniker range="o365-worldwide"
-
-> [!NOTE]
-> If you're not using the new Microsoft 365 admin center, you can turn it on by selecting the **Try the new admin center** toggle located at the top of the Home page.
   
 1. In the admin center, go to the **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Active users</a> page.
     

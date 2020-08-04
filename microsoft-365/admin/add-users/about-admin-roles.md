@@ -13,13 +13,15 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: 
+- AdminSurgePortfolio
+- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: "Admin roles map to business functions and give permissions to do specific tasks in the admin center. For example, the Service admin opens support tickets with Microsoft."
-ms.custom: okr_smb
 ---
 
 # About admin roles
@@ -28,13 +30,13 @@ Your Microsoft 365 or Office 365 subscription comes with a set of admin roles th
 
 The Microsoft 365 admin center lets you manage Azure AD roles and Microsoft Intune roles. However, these roles are a subset of the roles available in the Azure AD portal and the Intune admin center.
 
-Looking for the detailed role descriptions for Azure AD? Check out [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+Looking for the full list of detailed Azure AD role descriptions you can manage in the Microsoft 365 admin center? Check out Administrator role permissions in Azure Active Directory. [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
-Looking for the detailed role descriptions for Microsoft Intune? Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+Looking for the full list of detailed Intune role descriptions you can manage in the Microsoft 365 admin center?  Check out [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
 
 For more information on assigning roles in the Microsoft 365 admin center, see [Assign admin roles](assign-admin-roles.md).
 
-## Things to consider...
+## Security guidelines for assigning roles
 
 Because admins have access to sensitive data and files, we recommend that you follow these guidelines to keep your organization's data more secure.
 
@@ -46,11 +48,7 @@ Because admins have access to sensitive data and files, we recommend that you fo
 
 If you get a message in the admin center telling you that you don't have permissions to edit a setting or page, it's because you are assigned a role that doesn't have that permission.
 
-## Azure AD Roles available in the Microsoft 365 admin center
-
-The Microsoft 365 admin center lets you manage over 30 Azure AD roles. However, these roles are a subset of the roles available in the Azure portal. If you have a large business, there might be roles in the Azure portal that meet your organizational needs.
-
-A user who is assigned an admin role will have the same level of access to cloud services that your organization has subscribed to, regardless of whether you assign the role in the Microsoft 365 admin center or the Azure portal, or by using the Azure AD module for Windows PowerShell.
+## Commonly used Microsoft 365 admin center roles
 
 ::: moniker range="o365-worldwide"
 
@@ -58,14 +56,14 @@ In the Microsoft 365 admin center, you can go to **Roles**, and then select any 
 
 ::: moniker-end
 
-You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **See more roles**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
+You'll probably only need to assign the following roles in your organization. By default, we first show roles that most organizations use. If you can't find a role, go to the bottom of the list and select **Show all by Category**. (For detailed information, including the cmdlets associated with a role, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).)
 
 |Admin role     |Who should be assigned this role?  |
 |---------|---------|
 |Exchange admin     |   Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups, and Exchange Online. <br><br> Exchange admins can also:<br> - Recover deleted items in a user's mailbox <br> - Set up "Send As" and "Send on behalf" delegates <br>  |
 |Global admin     |   Assign the Global admin role to users who need global access to most management features and data across Microsoft online services. <br><br> Giving too many users global access is a security risk and we recommend that you have between 2 and 4 Global admins. <br><br> Only global admins can:<br> - Reset passwords for all users <br> - Add and manage domains <br> <br> **Note:**   The person who signed up for Microsoft online services automatically becomes a Global admin. |
 |Global reader    |   Assign the global reader role to users who need to view admin features and settings in admin centers that the global admin can view. The global reader admin can't edit any settings.   |
-|Groups admin     |   Assign the groups admin role to users who need to manage all groups settings across admin centers, including the Microsoft 365 Admin Center and Azure Active Directory portal. <br><br> Groups admins can:<br> - Create, edit, delete, and restore Microsoft 365 groups <br> - Create and update group creation, expiration, and naming policies <br> - Create, edit, delete, and restore Azure Active Directory security groups| 
+|Groups admin     |   Assign the groups admin role to users who need to manage all groups settings across admin centers, including the Microsoft 365 admin center and Azure Active Directory portal. <br><br> Groups admins can:<br> - Create, edit, delete, and restore Microsoft 365 groups <br> - Create and update group creation, expiration, and naming policies <br> - Create, edit, delete, and restore Azure Active Directory security groups| 
 |Helpdesk admin     |   Assign the Helpdesk admin role to users who need to do the following:<br> - Reset passwords <br> - Force users to sign out <br> - Manage service requests <br> - Monitor service health <br> <br> **Note**: The Helpdesk admin can only help non-admin users and users assigned these roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, and Reports reader.      |
 |Office Apps admin    |   Assign the Office Apps admin role to users who need to do the following: <br> - Use the Office cloud policy service to create and manage cloud-based policies for Office <br> - Create and manage service requests <br> - Manage the What's New content that users see in their Office apps   <br> - Monitor service health  |
 |Service admin    |   Assign the Service admin role as an additional role to admins or users whose role doesn't include the following, but still need to do the following: <br> - Open and manage service requests <br> - View and share message center posts   |
@@ -73,82 +71,24 @@ You'll probably only need to assign the following roles in your organization. By
 |Teams service admin    |   Assign the Teams service admin role to users who need to access and manage the Teams admin center. <br><br>Teams service admins can also: <br> - Manage meetings <br> - Manage conference bridges <br> - Manage all org-wide settings, including federation, teams upgrade, and teams client settings   |
 |User admin     |    Assign the User admin role to users who need to do the following for all users: <br> - Add users and groups <br> - Assign licenses <br> - Manage most users properties <br> - Create and manage user views <br> - Update password expiration policies <br> - Manage service requests <br> - Monitor service health <br><br>  The user admin can also do the following actions for users who aren't admins and for users assigned the following roles: Directory reader, Guest inviter, Helpdesk admin, Message center reader, Reports reader: <br> - Manage usernames<br> - Delete and restore users<br> - Reset passwords <br> - Force users to sign out <br> - Update (FIDO) device keys   |
 
-### All Azure AD roles
-
- Here's a list of all the admin roles available in the Microsoft 365 admin center.
-
-|Admin role     |Description  |
-|---------|---------|
-|Application admin     |    Full access to enterprise applications, application registrations, and application proxy settings.     |
-|Application developer     |    Create application registrations and consent to app access on their own behalf.     |
-|Authentication admin     |    Can require users to re-register authentication for non-password credentials, like MFA.     |
-|Azure Information Protection admin     |   Manages labels for the Azure Information Protection policy, manages protection templates, and activates protection.       |
-|Billing admin     |    Makes purchases, manages subscriptions, manages service requests, and monitors service health.     |
-|Cloud application admin     | Full access to enterprise applications and application registrations. No application proxy.     |
-|Cloud device admin     |    Enables, disables, and deletes devices and can read Windows 10 BitLocker keys.     |
-|Compliance admin     |    Manages regulatory requirements and eDiscovery cases, maintains data governance for locations, identities, and apps.     |
-|Compliance data admin     |    Keeps track of data, makes sure it's protected, gets insights into issues, and helps mitigate risk.     |
-|Conditional Access admin     |   Manages Azure Active Directory conditional access settings, but not Exchange ActiveSync conditional access policy.      |
-|Customer Lockbox access approver     |      Manages Customer Lockbox requests, can turn Customer Lockbox on or off.   |
-|Desktop Analytics admin     |   Can access and manage Desktop management tools and services.      |
-|Dynamics 365 admin     |  Full access to Microsoft Dynamics 365 Online, manages service requests, monitors service health.       |
-|Exchange admin     |  Full access to Exchange Online, creates and manages groups, manages service requests, and monitors service health.    |
-|External identity provider admin    |     Configure identity providers for use in direct federation.    |
-|Global admin     |    Has unlimited access to all management features and most data in all admin centers.     |
-|Global reader     |    Has read-only access to all management features and most data in admin centers. For a detailed description of access rights and limitations of this role, please see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
-|Groups admin   |Creates groups and manages all groups settings across admin centers.|
-|Guest inviter     |    Manages Azure Active Directory B2B guest user invitations.     |
-|Helpdesk admin     | Resets passwords and re-authenticates for all non-admins and some admin roles, manages service requests, and monitors service health.      |
-|Intune admin     | Full access to Intune, manages users and devices to associate policies, creates and manages groups.      |
-|Kaizala admin     |    Full access to all Kaizala management features and data, manages service requests.     |
-|License admin     |     Assigns and removes licenses from users and edits their usage location.    |
-|Message center privacy reader     |    Access to data privacy messages in Message center, gets email notifications.     |
-|Message center reader     | Reads and shares regular messages in Message center, gets weekly email digests, has read-only access to users, groups, domains, and subscriptions.     |
-|Office Apps admin    |   Manages cloud-based policies for Office and the What's New content that users see in their Office apps.   |
-|Power BI admin    |   Full access to Power Bl management tasks, manages service requests, and monitors service health.   |
-|Power platform admin     |    Full access to Microsoft Dynamics 365, PowerApps, data loss prevention policies, and Microsoft Flow.     |
-|Privileged role admin     |    Manages role assignments and all access control features of Privileged Identity Management.     |
-|Privileged authentication admin     |    Resets passwords, updates non-password credentials, forces uses to sign out and monitors service health and manages service requests.     |
-|Reports reader     |   Reads usage reporting data from the reports dashboard, PowerBI adoption content pack, sign-in reports, and Microsoft Graph reporting API.      |
-|Search admin     |    Full access to Microsoft Search, assigns the Search admin and Search editor roles, manages editorial content, monitors service health, and creates service requests.     |
-|Search editor     |    Can only create, edit, and delete content for Microsoft Search, like bookmarks, Q&A, and locations.     |
-|Security admin     |    Controls organization's security, manages security policies, reviews security analytics and reports, monitors the threat landscape.     |
-|Security operator     |    Investigates and responds to security alerts, manages features in Identity Protection center, monitors service health.     |
-|Security reader     |    Read-only access to security features, sign-in reports, and audit logs.     |
-|Service support admin     |    Creates service requests for Azure, Microsoft 365, and Office 365 services, and monitors service health.     |
-|SharePoint admin     |    Full access to SharePoint Online, manages Microsoft 365 groups, manages service requests, and monitors service health.     |
-|Skype for Business admin     | Full access to all Teams and Skype features, Skype user attributes, manages service requests, and monitors service health.      |
-|Teams admin     |    Full access to Teams & Skype admin center, manages Microsoft 365 groups and service requests, and monitors service health.     |
-|Teams communication manager     |    Assigns telephone numbers, creates and manages voice and meeting policies, and reads call analytics.     |
-|Teams communication support engineer     |    Reads call record details for all call participants to troubleshoot communication issues.     |
-|Teams communication support specialist     |    Reads user call details only for a specific user to troubleshoot communication issues.|
-|User admin     |   Resets user passwords, creates and manages users and groups, including filters, manages service requests, and monitors service health.|
-
-## Microsoft Intune Roles available in the Microsoft 365 admin center
-
-|Admin role     |Who should be assigned this role?  |
-|---------|---------|
-|Application manager     |   Assign the Application manager role to users who mangage the application lifecycle for mobile apps, configures policy-managed apps and views device info and configuration profiles.  |
-|Help desk operator     |   Assign the help desk operator role to users who assign apps and policies to users and devices. |
-|Intune role administrator    |   Assign the Intune role administrator to users who can assign Intune permissions to other admins and can manage custom and built in Intune roles.   |
-|Policy and profile manager     |   Assign the policy and profile manager role to users manage compliance policy, configuration profiles and Apple enrollment.   |
-|Read only operator     |   Assign the read only operator role to users who can only view users, devices, enrollment details and configurations.   |
-|School administrator     |   Assign the school administrator role to users for full access to manage Windows 10 and iOS devices, apps and configurations in Intune for Education.   |
-
 ## Delegated administration for Microsoft Partners
 
-If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company - or their company - admin roles. You might want them to do this, for example, if they are setting up and managing your online organization for you.
+If you're working with a Microsoft partner, you can assign them admin roles. They, in turn, can assign users in your company, or their company, admin roles. You might want them to do this, for example, if they are setting up and managing your online organization for you.
   
 A partner can assign these roles:
   
-- Full administration, which has privileges equivalent to a global admin, with the exception of managing multi-factor authentication through the Partner Center.
-    
-- Limited administration, which has privileges equivalent to a helpdesk admin.
+- **Full administration** Privileges equivalent to a global admin, with the exception of managing multi-factor authentication through the Partner Center.
+
+- **Limited administration** Privileges equivalent to a helpdesk admin.
 
 Before the partner can assign these roles to users, you must add the partner as a delegated admin to your account. This process is initiated by an authorized partner. The partner sends you an email to ask you if you want to give them permission to act as a delegated admin. For instructions, see [Authorize or remove partner relationships](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
   
 ## Related articles
 
 [Assign admin roles](assign-admin-roles.md)
+
+[Azure AD roles in the Microsoft 365 admin center](azure-ad-roles-in-the-mac.md)
+
+[Exchange Online admin role](about-exchange-online-admin-role.md)
   
 [Activity reports in the Microsoft 365 admin center](../activity-reports/activity-reports.md)

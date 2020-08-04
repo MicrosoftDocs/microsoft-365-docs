@@ -103,15 +103,15 @@ To submit an offer to activate Customer Key, complete these steps:
 
 2. Once you're logged in, browse to the **Dashboard**.
 
-3. Choose **Offers**, and review the list of current offers.
+3. Choose **Deploy** from the navigation bar **OR** select **View all deployment resources** on the **Deploy** information card, and review the list of current offers.
 
-4. Choose **Learn More** for the offer that applies to you:
+4. Choose the information card for the offer that applies to you:
 
-   - **Exchange Online and Skype for Business:** Choose **Learn More** on the **Customer Key for Exchange** offer.
+   - **Exchange Online and Skype for Business:** Choose the **Request encryption key help for Exchange online** offer.
 
-   - **SharePoint Online, OneDrive for Business, and Teams files:** Choose **Learn More** on the **Customer Key for SharePoint and OneDrive for Business** offer.
+   - **SharePoint Online, OneDrive, and Teams files:** Choose the **Request encryption key help for Sharepoint and OneDrive** offer.
 
-5. On the **Offer details** page, choose **Create Request**.
+5. Once you've reviewed the offer details, choose **Continue to step 2**.
 
 6. Fill out all applicable details and requested information on the offer form. Pay particular attention to your selections for which officers of your organization you want to authorize to approve the permanent and irreversible destruction of encryption keys and data. Once you've completed the form, choose **Submit**.
 
@@ -444,7 +444,15 @@ Assign the DEP to a mailbox by using the Set-Mailbox cmdlet. Once you assign the
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 ```
 
-Where *MailboxIdParameter* specifies a mailbox. For more information about the Set-Mailbox cmdlet, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox?view=exchange-ps).
+Where *MailboxIdParameter* specifies a mailbox. For more information about the Set-Mailbox cmdlet, see [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/set-mailbox).
+
+For [on-premises mailboxes using Outlook for iOS and Android with hybrid Modern Authentication](https://docs.microsoft.com/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth), the on-premises mailbox data that is synchronized into your Exchange Online tenant can have DEP assigned using the Set-MailUser cmdlet. 
+
+```powershell
+Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
+```
+
+Where *MailUserIdParameter* specifies a mail user (also known as a mail-enabled user). For more information about the Set-MailUser cmdlet, see [Set-MailUser](https://docs.microsoft.com/powershell/module/exchange/set-mailuser).
   
 ### Validate mailbox encryption
 

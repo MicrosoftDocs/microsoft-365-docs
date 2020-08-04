@@ -49,7 +49,7 @@ If you want to mark specific messages as spam before they're even scanned by spa
 
    - **Do the following**: Select **Modify the message properties** \> **set the spam confidence level (SCL)**. In the **Specify SCL** dialog that appears, configure one of the following values:
 
-   - **Bypass spam filtering**: This sets the SCL to -1, which means the messages will skip spam filtering.
+   - **Bypass spam filtering**: The messages will skip spam filtering.
 
      > [!CAUTION]
      > Be very careful about allowing messages to skip spam filtering. Attackers can use this vulnerability to send phishing and other malicious messages into your organization. The mail flow rules requires more than just the sender's email address or domain. For more information, see [Create safe sender lists in EOP](create-safe-sender-lists-in-office-365.md).

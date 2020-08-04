@@ -12,6 +12,7 @@ localization_priority: Priority
 ms.collection:
 - Adm_O365
 - Adm_NonTOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,6 +26,8 @@ description: "Learn how to make your organization more secure against password a
 As the admin of an organization, you're responsible for setting password policy for users in your organization. Setting password policy can be complicated and confusing, and this article provides recommendations to make your organization more secure against password attacks.
   
 To determine how often Microsoft 365 passwords expire in your organization, see [Set password expiration policy for Microsoft 365](../manage/set-password-expiration-policy.md).
+
+For more information about Microsoft 365 passwords, see these [related articles](#related-articles).
   
 ## Understanding password recommendations
 
@@ -125,3 +128,13 @@ Risk-based multi-factor authentication ensures that when our system detects susp
 - [Worst Passwords of 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
 - [Download files from the web](https://go.microsoft.com/fwlink/p/?linkid=861029)
+
+## Related articles
+
+[Reset passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+
+[Set an individual user's password to never expire](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+
+[Let users reset their own passwords](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+
+[Resend a user's password - Admin Help](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)

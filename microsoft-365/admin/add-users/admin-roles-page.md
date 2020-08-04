@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -93,3 +94,9 @@ In the admin center:
 :::image type="content" source="../../media/compare-roles-list.png" alt-text="A figure that shows a comparison of admin roles":::
 
 ::: moniker-end
+
+## Related topics
+
+[About Microsoft 365 admin roles](about-admin-roles.md)
+
+[Assign admin roles](assign-admin-roles.md)

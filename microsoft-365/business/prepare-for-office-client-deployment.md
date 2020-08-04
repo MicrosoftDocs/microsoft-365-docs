@@ -16,6 +16,7 @@ ms.custom:
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -25,9 +26,11 @@ description: "Learn how to automatically install the 32-bit Office apps on Windo
 
 # Prepare for Office client deployment by Microsoft 365 for business
 
+This article applies to Microsoft 365 Business Premium.
+
 ## Prepare to automatically install Office apps to client computers
 
-You can use Microsoft 365 for business to automatically install the 32-bit Office apps on Windows 10 computers and keep them current with updates.
+You can use Microsoft 365 Business Premium to automatically install the 32-bit Office apps on Windows 10 computers and keep them current with updates.
   
 Automatic installation works best if the end user's computer is on Windows 10 Business and:
   

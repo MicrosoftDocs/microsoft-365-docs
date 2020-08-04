@@ -18,6 +18,7 @@ ms.collection:
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -41,6 +42,9 @@ description: "Learn to add and reduce file storage in your Microsoft 365 subscri
 ::: moniker-end
 
 If you start to run out of storage for your SharePoint Online site collections, you can add storage to your subscription if your plan is eligible. If you don't see the **Office 365 Extra File Storage** in the list of available add-ons, it means your plan is not eligible. For more information, see [Is my plan eligible?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+
+> [!NOTE]
+> If you bought your subscription through Volume Licensing or a CSP, you can't buy **Office 365 Extra File Storage** for your organization directly from Microsoft. Contact your representative or partner for help.
 
 ## View available storage
 

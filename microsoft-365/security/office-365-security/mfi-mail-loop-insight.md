@@ -10,6 +10,8 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
+ms.custom:
+- seo-marvel-apr2020
 description: "Admins can learn about the mail loop insight in the mail flow dashboard in the Security & Compliance Center."
 ---
 
@@ -23,6 +25,6 @@ You can click **View details** to see the details in a flyout pane. We also iden
 
 ![Flyout pane after clicking View details in a mal loop insight in the mail flow dashboard](../../media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
 
-## See also
+## Related topics
 
 For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

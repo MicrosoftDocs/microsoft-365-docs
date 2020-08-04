@@ -18,7 +18,8 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
-description: "You can turn on the Audit log search feature in the Security & Compliance Center. If you change you mind, you can turn if off at any time. When Audit log search is off, admins can't search the Microsoft 365 audit log for user and admin activity in your organization."
+ms.custom: seo-marvel-apr2020
+description: How to turn on or off the Audit log search feature in the Security & Compliance Center to enable or disable the ability of admins to search the audit log.
 ---
 
 # Turn audit log search on or off
@@ -28,7 +29,7 @@ You (or another admin) must turn on audit logging before you can start searching
 > [!IMPORTANT]
 > If you turn off audit log search in Microsoft 365, you can't use the Office 365 Management Activity API or Azure Sentinel to access auditing data for your organization. Turning off audit log search by following the steps in this article means that no results will be returned when you search the audit log using the Security & Compliance Center or when you run the **Search-UnifiedAuditLog** cmdlet in Exchange Online PowerShell. This also means that audit logs won't be available through the Office 365 Management Activity API or Azure Sentinel.
   
-## Before you begin
+## Before you turn audit log search on or off
 
 - You have to be assigned the Audit Logs role in Exchange Online to turn audit log search on or off in your Microsoft 365 organization. By default, this role is assigned to the Compliance Management and Organization Management role groups on the **Permissions** page in the Exchange admin center. Global admins in Microsoft 365 are members of the Organization Management role group in Exchange Online. 
     
