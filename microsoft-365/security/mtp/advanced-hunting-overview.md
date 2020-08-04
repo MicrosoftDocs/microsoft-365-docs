@@ -63,7 +63,7 @@ Advanced hunting data can be categorized into two distinct types, each consolida
 - [Work with query results](advanced-hunting-query-results.md)
 - [Take action on query results](advanced-hunting-take-action.md)
 - [Use shared queries](advanced-hunting-shared-queries.md)
-- [Hunt for threats across devices and emails](advanced-hunting-query-emails-devices.md)
+- [Hunt across devices, emails, apps, and identities](advanced-hunting-query-emails-devices.md)
 - [Understand the schema](advanced-hunting-schema-tables.md)
 - [Apply query best practices](advanced-hunting-best-practices.md)
 - [Custom detections overview](custom-detections-overview.md)
