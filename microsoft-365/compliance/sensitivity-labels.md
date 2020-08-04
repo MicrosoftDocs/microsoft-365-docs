@@ -36,11 +36,6 @@ Example showing available sensitivity labels in Excel, from the **Home** tab on 
 
 Sensitivity labels are supported for tenants in the global (public) cloud only. Currently, sensitivity labels aren't supported for tenants in other clouds such as [national clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud).
 
-> [!NOTE]
-> Sensitivity labels aren't yet available in US Government Community (GCC) organizations.
-
-To apply sensitivity labels, users must be signed in to Office with their work or school account.
-
 You can use sensitivity labels to:
   
 - **Enforce protection settings such as encryption or watermarks on labeled content.** For example, your users can apply a Confidential label to a document or email, and that label can encrypt the content and apply a Confidential watermark.

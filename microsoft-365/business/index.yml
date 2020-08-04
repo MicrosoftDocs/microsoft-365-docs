@@ -40,7 +40,7 @@ productDirectory:
     - title: Join the partner webinar – Driving profit and reducing risk in the remote work world!
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
-      summary:  Aug 19, 8-9 p.m. Pacific time.
+      summary:  Aug 19, 8-9 a.m. Pacific time.
       url: https://aka.ms/GrowwithMicrosoft365 
 # conceptualContent section (optional)
 conceptualContent:
