@@ -75,6 +75,23 @@ Group owners will only be notified via email. If the group was created via Plann
 
 If for some reason none of the owners or admins renew the group before it expires, and automatic renewal does not occur due to the group not meeting the requirements to be automatically renewed, the admin can still restore the group for up to 30 days after expiration. For details see: [Restore a deleted Microsoft 365 group](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
+## How automatic renewal fits into the group expiration timeline
+
+Automatic renewal checks occur continuously during a group's lifecycle. If any activity is detected in the group prior to 30 days before expiration, then the group will be automatically renewed.
+
+> [!NOTE]
+> The service that checks to see if a group should be automatically renewed can take up to 48 hours to process and finish the automatic renewal procedure. In very rare cases, this can lead to the group failing to automatically renew, if no activity meeting the automatic renewal requirements occurs within the group's lifecycle until < 48 hours of the group's expiration time.
+
+If no activity is detected in the group when it reaches 30 days from expiration, then group owners will receive an e-mail requesting manual renewal of the group. Similar e-mail notifications will also be sent 15 days and one day prior to expiration. During this time, automatic renewal checks will continue to occur and will automatically renew the group if an activity is detected up to 48 hours prior to group expiry.
+
+## How email notifications work with automatic group renewal
+
+If a group is renewed prior to the scheduled time for an expiration reminder email being sent to the group owners or administrators, then further reminder emails will not be sent. For example, if the group is automatically renewed 30 days from expiration, then the 30 day, 15 day, and one day reminder emails will not be sent. If the group was manually or automatically renewed 12 days from expiration, both the 30 day and the 15 day reminder emails would be sent, but not the one day reminder.
+
+## Group lifecycle and the renewal process
+
+When a group is renewed, the expiration date for the group is updated based on the expiration policy set by the administrator.  For instance, if an administrator defines a 365 day expiration policy such that a group is set to expire on December 30, and the group is renewed either manually or automatically 30 days prior to this on November 30, the group's updated expiration date will be November 30 next year (365 days from when renewal occurred).
+
 ## Related articles
 
 [Overview of retention policies](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
