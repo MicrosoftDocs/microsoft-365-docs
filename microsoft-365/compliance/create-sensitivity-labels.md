@@ -179,10 +179,14 @@ For the Azure Information Protection unified labeling client only, you can speci
 
 ## Use PowerShell to create and configure sensitivity labels and their policies
 
-You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) to create new sensitivity labels and new sensitivity label policies, as well as modify existing labels and policies. See the following documentation for supported parameters and values:
+You can now use [Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/office-365-scc-powershell?view=exchange-ps) to create and configure all the settings you see in your labeling admin center. This means that in addition to using PowerShell for settings that aren't available in the labeling admin centers, you can now fully script the creation and maintenance of sensitivity labels and their policies. 
+
+See the following documentation for supported parameters and values:
 
 - [New-Label](https://docs.microsoft.com/powershell/module/exchange/new-label?view=exchange-ps)
 - [New-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-labelpolicy?view=exchange-ps)
+- [Set-Label](https://docs.microsoft.com/powershell/module/exchange/set-label?view=exchange-ps)
+- [Set-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-labelpolicy?view=exchange-ps)
 
 You can also use [Remove-Label](https://docs.microsoft.com/powershell/module/exchange/remove-label?view=exchange-ps) and [Remove-LabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-labelpolicy?view=exchange-ps) if you need to script the deletion of sensitivity labels or sensitivity label policies. However, before you delete sensitivity labels, make sure you read the following section.
 
