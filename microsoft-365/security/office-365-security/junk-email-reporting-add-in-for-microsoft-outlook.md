@@ -292,7 +292,7 @@ For other methods that you can use to submit messages to Microsoft, see [Report 
 
 #### Problem: Users selected not to receive a confirmation prompt when they report messages, and now they want the prompt back
 
-1. Create the `ConfirmReportJunk`registry key wih the value "True":
+1. Create the `ConfirmReportJunk`registry key with the value "True":
 
    ```text
    Windows Registry Editor Version 5.00
