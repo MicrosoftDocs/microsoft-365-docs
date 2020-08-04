@@ -157,15 +157,14 @@ For example, here are some additional steps that might be required for email and
 
 1. In the admin center, go to the **Settings** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domains</a> page.
 
-3. On the Domains page, select a domain.
+2. On the **Domains** page, select the domain and then choose **DNS Records**.
 
-4. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
+3. Under **DNS settings**, select **Custom Records**, and then choose **New custom record**.
 
-5. Select the type of DNS record you want to add, and type the information for the new record.
+4. Select the type of DNS record you want to add, and type the information for the new record.
 
-6. Select **Save**.
+5. Select **Save**.
     
 > [!NOTE]
 > Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Then your Microsoft email and other services will be all set to work with your domain. 
   
-
