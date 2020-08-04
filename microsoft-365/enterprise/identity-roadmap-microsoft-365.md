@@ -35,16 +35,41 @@ This two-page poster is a quick way to ramp up on identity concepts and configur
 
 You can also [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/M365E-ID-Infra.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
-## Plan, deploy, and manage identity for Microsoft 365
+<!--
+Add links to articles after merge
+--> 
 
-TBD
+## Plan
 
-## Identity and device access recommendations
+In the planning phase of your identity implementation:
+
+- Understand the different identity models
+- Plan for hybrid identity and directory synchronization
+- Understand which tools you can use to manage Microsoft 365 accounts
+
+## Deploy
+
+In the deployment phase of your identity implementation:
+
+- Protect your global administrator accounts
+- Configure and use cloud-only identities
+- Configure and use hybrid identities
+- Set up directory synchronization
+- If needed, deploy hybrid identity scenarios
+
+### Identity and device access recommendations
 
 Microsoft provides a set of recommendations for [identity and device access](microsoft-365-policies-configurations.md) to ensure a secure and productive workforce. For identity, use the recommendations and settings in the following articles along with the steps in this phase:
 
 - [Prerequisites](identity-access-prerequisites.md)
 - [Common identity and device access policies](identity-access-policies.md)
+
+## Manage
+
+In the management phase of your identity implementation:
+
+- Assign licenses and manage user accounts
+- Monitor directory synchronization
 
 ## How Microsoft does identity for Microsoft 365
 
@@ -60,7 +85,7 @@ See how the Contoso Corporation, a fictional but representative multi-national b
 
 ![The Contoso Corporation](../media/contoso-overview/contoso-icon.png)
 
-
 ## Next step
 
-TBD
+Start your identity planning with Identity models.
+
