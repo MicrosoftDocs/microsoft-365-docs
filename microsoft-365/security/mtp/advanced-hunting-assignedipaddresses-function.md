@@ -57,11 +57,11 @@ AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
 ### Get IP addresses used by a device and find devices communicating with it
-This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`date`). It then uses the IP addresses to find connections to the device initiated by other devices. 
+This query uses the `AssignedIPAddresses()` function to get assigned IP addresses for the device (`example-device-name`) on or before a specific date (`example-date`). It then uses the IP addresses to find connections to the device initiated by other devices. 
 
 ```kusto
-let Date = datetime(date);
-let DeviceName = "device-name";
+let Date = datetime(example-date);
+let DeviceName = "example-device-name";
 // List IP addresses used on or before the specified date
 AssignedIPAddresses(DeviceName, Date)
 | project DeviceName, IPAddress, AssignedTime = Timestamp 
