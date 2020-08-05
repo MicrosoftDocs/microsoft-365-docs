@@ -27,7 +27,7 @@ Use a retention policy to decide proactively whether to retain content, delete c
 
 A retention policy lets you do this very efficiently by assigning the same retention settings for content by location, at a site or mailbox level. If you're not sure whether to use a retention policy or a retention label, see [Retention policies and retention labels](retention.md#retention-policies-and-retention-labels).
 
-For more information about retention policies and how retention works, see [Learn about retention](retention.md).
+For more information about retention policies and how retention works, see [Learn about retention policies and retention labels](retention.md).
 
 ## Before you begin
 
@@ -62,7 +62,7 @@ When you have more than one retention policy, and when you also use retention la
      
     For **Teams channel messages**, message from standard channels but not [private channels](https://docs.microsoft.com/microsoftteams/private-channels) are included. Currently, private channels aren't supported by retention policies.
     
-    By default, [all teams are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by [specifying teams to be included, or teams to be excluded](#a-policy-with-specific-inclusions-or-exclusions).
+    By default, [all teams and all users are selected](#a-policy-that-applies-to-entire-locations), but you can refine this by selecting the [**Choose** and **Exclude** options](#a-policy-with-specific-inclusions-or-exclusions).
 
 4. For **Decide if you want to retain content, delete it, or both** page of the wizard, specify the configuration options for retaining and deleting content.
     
@@ -143,11 +143,11 @@ A retention policy applied to a Microsoft 365 group includes both the group mail
 
 ### Configuration information for Skype for Business
 
-Unlike Exchange email, you can't toggle the status of the Skype location on to include all users, but when you turn on that location, you then manually choose the users whose conversations you want to retain:
+Unlike Exchange email, you can't toggle the status of the Skype location on to automatically include all users, but when you turn on that location, you must then manually choose the users whose conversations you want to retain:
 
 ![Choose Skype location for retention policies](../media/skype-location-retention-policies.png)
   
-When you select **Choose user**, you can quickly include all users by selecting the **Select all** box. However, it's important to understand that each user counts as a specific inclusion in the policy. Therefore, if you include over 1,000 users, the limits noted in the previous section apply. Selecting all Skype users here is not the same as if you leave the default of **All** for this location.
+When you select **Choose user**, you can quickly include all users by selecting the **Select all** box. However, it's important to understand that each user counts as a specific inclusion in the policy. So if you include 1,000 users by selecting the **Select all** box, it's the same as if you manually selected 1,000 users to include, which is the maximum supported for Skype for Business.
 
 Be aware that **Conversation History**, a folder in Outlook, is a feature that has nothing to do with Skype archiving. **Conversation History** can be turned off by the end user, but archiving for Skype is done by storing a copy of Skype conversations in a hidden folder that is inaccessible to the user but available to eDiscovery.
 
@@ -156,18 +156,28 @@ Be aware that **Conversation History**, a folder in Outlook, is a feature that h
 By choosing the settings for retaining and deleting content in your retention policy, your retention policy will have one of the following configurations for a specified period of time:
 
 - Retain-only
+    
+    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Do nothing**. Or, select **Retain items forever**.
+
 - Retain and then delete
+    
+    For this configuration, choose **Retain items for a specific period** and **At end of the retention period: Delete items automatically**.
+
 - Delete-only
+    
+    For this configuration, choose **Only delete items when they reach a certain age**.
 
 ### Retaining content for a specific period of time
 
-When you configure a retention policy, you choose to retain content indefinitely or for a specific number of days, months, or years. The duration for how long content is retained is calculated from the age of the content, not from when the retention policy is applied. You can choose whether the age is based on when the content was created or (for OneDrive and SharePoint) when it was last modified.
+When you configure a retention policy, you choose to retain items for a specific number of days, months, or years. Or alternatively, retain the items forever.
+
+When you choose to retain items for a specific period, the duration is calculated from the age of the content, not from when the retention policy is applied. You can choose whether the age is based on when the item was created or (for OneDrive and SharePoint) when it was last modified.
 
 Examples:
   
-- SharePoint: If you want to retain content in a site collection for seven years since it was last modified, and a document in that site collection hasn't been modified in six years, the document will be retained for only another year if it's not modified. If the document is edited again, the age of the document is calculated from the new last modified date, and it will be retained for another seven years.
+- SharePoint: If you want to retain items in a site collection for seven years after this content is last modified, and a document in that site collection hasn't been modified in six years, the document will be retained for only another year if it's not modified. If the document is edited again, the age of the document is calculated from the new last modified date, and it will be retained for another seven years.
   
-- Exchange: If you want to retain content in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange content, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining content based on when it was last modified applies only to site content in OneDrive and SharePoint.
+- Exchange: If you want to retain items in a mailbox for seven years, and a message was sent six years ago, the message will be retained for only one year. For Exchange items, the age is based on the date received for incoming email, or the date sent for outgoing email. Retaining items based on when it was last modified applies only to site content in OneDrive and SharePoint.
   
 At the end of the retention period, you choose whether you want the content to be permanently deleted:
   
@@ -175,32 +185,27 @@ At the end of the retention period, you choose whether you want the content to b
   
 ### Deleting content that's older than a specific age
 
-A retention policy can both retain and then delete content, or delete old content without retaining it.
+A retention policy can both retain and then delete items, or delete old items without retaining them.
   
-If your retention policy deletes content, it's important to understand that the time period specified for a retention policy is calculated from the time when the content was created or modified, not the time since the policy was assigned.
-  
-![Deletion settings](../media/042f9571-96f4-458f-8f38-fad3ed68ed31.png)
-  
+In both cases, if your retention policy deletes items, it's important to understand that the time period specified for a retention policy is calculated from the time when the item was created or modified, and not the time since the policy was assigned.
+
 For example, suppose that you create a retention policy that deletes content after three years, and then assign that policy to all OneDrive accounts, which contain a lot of content that was created four or five years ago. In this case, a lot of content will be deleted soon after assigning the retention policy for the first time. For this reason, it's important to understand that a retention policy that deletes content can have a considerable impact on your content. 
   
-Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You may also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact. Note this warning that appears when you review the settings for your retention policy just before creating it.
-  
-![Warning about deleting content](../media/59c26b19-3628-4cc1-9a73-a05127a8e81b.png)
-  
+Therefore, before you assign a retention policy to a site collection for the first time, you should first consider the age of the existing content and how the policy may impact that content. You might also want to communicate the new policy to your users before assigning it, to give them time to assess the possible impact.
 
 ### A policy that applies to entire locations
 
-When you choose locations, you can easily include or exclude an entire location, such as Exchange email or OneDrive accounts. To do so, toggle the **Status** of that location on or off. 
+When you choose locations, with the exception of Skype for Business, the default setting is **All** when the status of the location is **On**.
   
-If a policy applies to any combination of entire locations, there is no limit to the number of mailboxes or sites the policy can include. 
+When a retention policy applies to any combination of entire locations, there is no limit to the number of recipients, sites, accounts, groups etc that the policy can include. 
 
-For example, if a policy includes all Exchange email and all SharePoint sites, all sites and mailboxes will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
+For example, if a policy includes all Exchange email and all SharePoint sites, all sites and recipients will be included, no matter how many. And for Exchange, any new mailbox created after the policy is applied will automatically inherit the policy.
 
 ### A policy with specific inclusions or exclusions
 
-You can also apply a retention policy to specific users, specific Microsoft 365 groups, or specific sites. To do so, toggle the **Status** of that location on, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites. 
+You can also apply a retention policy to specific users, specific Microsoft 365 groups, or specific sites. To do so, make sure the **Status** of that location is **On**, and then use the links to include or exclude specific users, Microsoft 365 groups, or sites. 
   
-However, using this configuration, there are some limits when your retention policy includes or excludes over 1,000 specific locations:
+However, using this configuration, there are some limits when your retention policy includes or excludes over 1,000 specific objects:
   
 - Maximum numbers for the retention policy:
     - 1,000 mailboxes
@@ -214,7 +219,7 @@ If your retention policies are likely to be subject to these limitations, choose
 
 ## Updating retention policies
 
-If you edit a retention policy and content is already subject to the original settings in your retention policy, your updated settings will be automatically applied to this content in addition to content that's newly identified.
+If you edit a retention policy and items are already subject to the original settings in your retention policy, your updated settings will be automatically applied to these items in addition to items that are newly identified.
 
 Usually this update is fairly quick but can take several days. When the policy replication across your Microsoft 365 locations is complete, you'll see the status of the retention policy in the Microsoft 365 compliance center change from **On (Pending)** to **On (Success)**.
 
