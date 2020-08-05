@@ -61,7 +61,7 @@ Use the following table to help you map your business requirements to retention 
 |Let users automatically apply a retention label to emails by using Outlook rules|[Create retention labels and apply them in apps](create-apply-retention-labels.md)|
 |Automatically apply a set of retain and delete actions to documents and emails |[Apply a retention label to content automatically](apply-retention-labels-automatically.md)|
 |Start the retention period when an event occurs, such as:  <br />- Employees leave the organization <br />- Contracts expire <br />- End of product lifetime| [Start retention when an event occurs](event-driven-retention.md)|
-|Manage the lifecycle of different document types in SharePoint| [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md)|
+|Manage the lifecycle of different document types in SharePoint| [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)|
 |Use a single records management solution for both documents and emails |[Records management in Microsoft 365](records-management.md) |
 |Comply with SEC Rule 17a-4|[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
