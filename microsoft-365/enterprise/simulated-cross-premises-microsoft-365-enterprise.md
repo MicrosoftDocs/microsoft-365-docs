@@ -9,7 +9,7 @@ ms.date: 11/14/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: 
@@ -214,6 +214,6 @@ Explore these additional sets of Test Lab Guides:
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

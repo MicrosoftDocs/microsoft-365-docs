@@ -9,7 +9,7 @@ ms.date: 11/22/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -46,7 +46,7 @@ First, follow the instructions in [password hash synchronization](password-hash-
   
 This configuration consists of: 
   
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
+- A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription.
 
@@ -123,12 +123,10 @@ Here is your resulting configuration:
 
 This configuration consists of:
 
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
+- A Microsoft 365 E5 trial or paid subscriptions with the DNS domain TESTLAB.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the list of accounts and groups from the Azure AD tenant of your Microsoft 365 subscription to the TESTLAB AD DS domain. 
 - Password writeback is enabled so that users can change their passwords through Azure AD without having to be connected to the simplified intranet.
-
-See the [Simplify password updates](identity-add-user-accounts.md#identity-pw-writeback) step in the Identity phase for information and links to configure password writeback in production.
 
 ## Next step
 
@@ -138,7 +136,7 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
 

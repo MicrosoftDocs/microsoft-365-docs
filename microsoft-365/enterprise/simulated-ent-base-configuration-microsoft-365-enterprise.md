@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -367,7 +367,7 @@ In this phase, you create a new Microsoft 365 E5 subscription that uses a new Az
 
 Connect to CLIENT1 with the CORP\User1 account from the Azure portal.
 
-To create a new Office 365 E5 trial subscription, perform the instructions in [Phase 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-office-365-e5-subscription) of the lightweight base configuration Test Lab Guide.
+To create a new Office 365 E5 trial subscription, perform the instructions in [Phase 1](lightweight-base-configuration-microsoft-365-enterprise.md#phase-1-create-your-microsoft-365-e5-subscription) of the lightweight base configuration Test Lab Guide.
 
 To configure your new Office 365 E5 trial subscription, perform the instructions in [Phase 2](lightweight-base-configuration-microsoft-365-enterprise.md#phase-2-configure-your-office-365-trial-subscription) of the lightweight base configuration Test Lab Guide.
 
@@ -375,7 +375,7 @@ To configure your new Office 365 E5 trial subscription, perform the instructions
 
 If all you need is an Office 365 test environment, you can stop here. 
 
-See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Office 365 and Microsoft 365.
+See [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md) for additional Test Lab Guides that apply to both Microsoft 365 and Office 365.
 
 ### Add a Microsoft 365 E5 trial subscription
 
@@ -408,6 +408,6 @@ Explore these additional sets of Test Lab Guides:
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

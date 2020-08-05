@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - Strat_O365_Enterprise
@@ -117,8 +117,8 @@ Successful adoption of Microsoft 365 Enterprise services by Contoso’s users de
 
 ## See also
 
-[Networking for Microsoft 365 Enterprise](networking-infrastructure.md)
+[Networking roadmap for Microsoft 365](networking-roadmap-microsoft-365.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

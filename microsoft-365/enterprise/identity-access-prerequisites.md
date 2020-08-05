@@ -109,7 +109,7 @@ For more information, see [Baseline security policy for Azure AD admin accounts]
 
 Additional recommendations include the following:
 - Use Azure AD Privileged Identity Management to reduce the number of persistent administrative accounts. See [Start using PIM](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started). 
-- [Use privileged access management in Office 365](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-overview) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
+- [Use privileged access management](../compliance/privileged-access-management-overview.md) to protect your organization from breaches that may use existing privileged admin accounts with standing access to sensitive data or access to critical configuration settings. 
 - Use administrator accounts only for administration. Admins should have a separate user account for regular non-administrative use and only use their administrative account when necessary to complete a task associated with their job function. [Microsoft 365 administrator](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) roles have substantially more privileges than Microsoft 365 services.
 - Follow best practices for securing privileged accounts in Azure AD as described in this [article](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices).
 

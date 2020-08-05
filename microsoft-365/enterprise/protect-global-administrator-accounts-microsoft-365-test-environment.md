@@ -51,7 +51,7 @@ First, create a new user account as a dedicated global administrator.
 3. In the **Add user** pane, type **DedicatedAdmin** in **First name**, **Display name**, and **Username**.
 4. Click **Password**, click **Let me create the password**, and then type a strong password. Record the password for this new account in a secure location.
 5. Click **Next**.
-6. In the **Assign product licenses** pane, select **Microsoft 365 E5** or **Office 365 E5**, and then click **Next**.
+6. In the **Assign product licenses** pane, select **Microsoft 365 E5**, and then click **Next**.
 7. In the **Optional settings** pane, click **Roles**, and then select **Admin center access** and **Global admin**. Click **Next**.
 8. On the **You're almost done** pane, click **Finish adding**, and then click **Close**.
 
@@ -91,18 +91,16 @@ This second policy blocks access to global administrator account authentication 
 
 To test the first policy, sign out and sign in with the DedicatedAdmin account. You should be prompted to configure MFA. This demonstrates that the first policy is being applied.
 
-See the [Protect global administrator accounts](identity-create-protect-global-admins.md#identity-global-admin) step in the Identity phase for information and links to protect your global administrator accounts in production.
-
 ## Next step
 
 Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
 
 ## See also
 
-[Phase 2: Identity](identity-infrastructure.md)
+[Identity roadmap](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise deployment](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

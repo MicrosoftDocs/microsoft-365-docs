@@ -9,7 +9,7 @@ ms.date: 11/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -46,7 +46,7 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
   
 This configuration consists of: 
   
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
+- Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscription periodically.
 
 ## Phase 2: Configure Azure AD Connect on APP1 for pass-through authentication
@@ -89,7 +89,7 @@ Here is your resulting configuration:
  
 This configuration consists of:
 
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your domain name> registered.
+- A Microsoft 365 E5 trial or paid subscriptions with the DNS domain testlab.\<your domain name> registered.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. An Authentication Agent runs on APP1 to handle pass-through authentication requests from the Azure AD tenant of your Microsoft 365 subscription.
 
 ## Next step
@@ -100,6 +100,6 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

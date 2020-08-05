@@ -9,7 +9,7 @@ ms.date: 12/13/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -45,7 +45,7 @@ First, follow the instructions in [password hash synchronization](password-hash-
   
 This configuration consists of: 
   
-- Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
+- A Microsoft 365 E5 trial or paid subscription.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. 
 - Azure AD Connect runs on APP1 to synchronize the TESTLAB Active Directory Domain Services (AD DS) domain to the Azure AD tenant of your Microsoft 365 subscription.
 
@@ -84,8 +84,6 @@ Next, you test password reset for the User 3 account.
 11. In **Get back into your account**, type a new password for the User 3 account, and then click **Finish**. Note the changed password of the User 3 account and store it in a safe location.
 12. In a separate tab of the same browser, go to [https://portal.office.com](https://portal.office.com), and then sign in with the User 3 account name and its new password. You should see the **Microsoft Office Home** page.
 
-See the [Simplify password resets](identity-secure-your-passwords.md#identity-pw-reset) step in the Identity phase for information and links to configure password resets in production.
-
 ## Next step
 
 Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
@@ -94,6 +92,6 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

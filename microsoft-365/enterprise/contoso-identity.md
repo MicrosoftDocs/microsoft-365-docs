@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-identity-device-management
 - Strat_O365_Enterprise
@@ -77,8 +77,8 @@ Here is Contoso's resulting set of identity and device Conditional Access polici
 
 ## See also
 
-[Identity for Microsoft 365 Enterprise](identity-infrastructure.md)
+[Identity roadmap for Microsoft 365](identity-roadmap-microsoft-365.md)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

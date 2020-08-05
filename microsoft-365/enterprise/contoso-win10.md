@@ -9,7 +9,7 @@ ms.date: 10/01/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 ms.collection: 
 - M365-modern-desktop
 - Strat_O365_Enterprise
@@ -91,8 +91,8 @@ This infrastructure consists of:
 
 ## See also
 
-[Windows 10 Enterprise for Microsoft 365 Enterprise](windows10-infrastructure.md)
+[Windows 10 Enterprise](https://docs.microsoft.com/windows/deployment/)
 
-[Deployment guide](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Test lab guides](m365-enterprise-test-lab-guides.md)

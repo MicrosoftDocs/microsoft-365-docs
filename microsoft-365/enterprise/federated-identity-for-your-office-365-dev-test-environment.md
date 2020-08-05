@@ -9,7 +9,7 @@ ms.date: 05/26/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
-localization_priority: Priority
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: 
@@ -28,15 +28,15 @@ description: "Summary: Configure federated authentication for your Microsoft 365
 
 Microsoft 365 supports federated identity. This means that instead of performing the validation of credentials itself, Microsoft 365 refers the connecting user to a federated authentication server that Microsoft 365 trusts. If the user's credentials are correct, the federated authentication server issues a security token that the client then sends to Microsoft 365 as proof of authentication. Federated identity allows for the offloading and scaling up of authentication for a Microsoft 365 subscription and advanced authentication and security scenarios.
   
-This article describes how you can configure federated authentication for your Microsoft 365 or Office 365 test environment, resulting in the following:
+This article describes how you can configure federated authentication for your Microsoft 365 test environment, resulting in the following:
 
 ![The federated authentication for Microsoft 365 test environment](../media/federated-identity-for-your-office-365-dev-test-environment/federated-tlg-phase3.png)
   
 This configuration consists of: 
   
-- A Microsoft 365 E5 or Office 365 E5 trial or production subscription.
+- A Microsoft 365 E5 trial or production subscription.
     
-- A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Office 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
+- A simplified organization intranet connected to the Internet, consisting of five virtual machines on a subnet of an Azure virtual network (DC1, APP1, CLIENT1, ADFS1, and PROXY1). Azure AD Connect runs on APP1 to synchronize the list of accounts in the Active Directory Domain Services domain to Microsoft 365. PROXY1 receives the incoming authentication requests. ADFS1 validates credentials with DC1 and issues security tokens.
     
 There are five phases to setting up this test environment:
   
@@ -61,7 +61,7 @@ Follow the instructions in [password hash synchronization for Microsoft 365](pas
   
 This configuration consists of: 
   
-- A Microsoft 365 E5 or Office 365 E5 trial or paid subscriptions.
+- A Microsoft 365 E5 trial or paid subscriptions.
 - A simplified organization intranet connected to the Internet, consisting of the DC1, APP1, and CLIENT1 virtual machines on a subnet of an Azure virtual network. Azure AD Connect runs on APP1 to synchronize the TESTLAB AD DS domain to the Azure AD tenant of your Microsoft 365 subscriptions periodically.
 
 ## Phase 2: Create the AD FS server
@@ -416,5 +416,5 @@ Your trial subscription is now configured with federated authentication. You can
   
 ## Next step
 
-When you are ready to deploy production-ready, high availability federated authentication for Microsoft 365 or Office 365 in Azure, see [Deploy high availability federated authentication for Microsoft 365 in Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
+When you are ready to deploy production-ready, high availability federated authentication for Microsoft 365 in Azure, see [Deploy high availability federated authentication for Microsoft 365 in Azure](https://docs.microsoft.com/office365/enterprise/deploy-high-availability-federated-authentication-for-office-365-in-azure).
   

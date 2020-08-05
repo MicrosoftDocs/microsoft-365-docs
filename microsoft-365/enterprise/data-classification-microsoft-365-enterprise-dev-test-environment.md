@@ -86,7 +86,7 @@ In this phase, you discover the default retention label behavior for files in th
 
 First, create a sensitive-level SharePoint Online team site:
   
-1. Using a private instance of your browser, sign in to the [Office 365 portal](https://portal.office.com) using your global admin account.
+1. Using a private instance of your browser, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) using your global admin account.
     
 2. In the list of tiles, click **SharePoint**.
     
@@ -128,8 +128,6 @@ Next, create a new document in the SensitiveFiles site and change its retention 
     
 7. In the **Document.docx** pane, under **Apply retention label**, select the **Highly Confidential** label, and then click **Save**.
 
-See the [Configure classification for your environment](infoprotect-configure-classification.md) step in the **Information protection** phase for information and links to how to deploy retention labels in production.
-
 ## Next step
 
 Explore additional [information protection](m365-enterprise-test-lab-guides.md#information-protection) features and capabilities in your test environment.
@@ -138,7 +136,7 @@ Explore additional [information protection](m365-enterprise-test-lab-guides.md#i
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Deploy Microsoft 365 Enterprise](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
 

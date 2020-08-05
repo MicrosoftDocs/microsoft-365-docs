@@ -76,7 +76,7 @@ Complete the configuration for the User 2 account to use a text message for vali
   
 1. Open a new, private instance of your browser.
     
-2. Go to the Office 365 portal ([https://portal.office.com](https://portal.office.com)) and sign in with the User 2 account name and password.
+2. Go to the [Microsoft 365 admin center](https://admin.microsoft.com) and sign in with the User 2 account name and password.
     
 3. After signing in, you are prompted to set up the account for more information. Click **Next**.
     
@@ -131,18 +131,16 @@ Next, create a conditional access policy to require multifactor authentication f
 
 To test this policy, sign out and sign in with the User 3 account. You should be prompted to configure MFA. This demonstrates that the MFAUsers policy is being applied.
 
-See the [Set up multi-factor authentication](identity-secure-user-sign-ins.md#identity-mfa) step in the Identity phase for information and links to deploy multi-factor authentication in production.
-    
 ## Next step
 
 Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) features and capabilities in your test environment.
 
 ## See also
 
-[Phase 2: Identity](identity-infrastructure.md)
+[Identity roadmap](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise deployment](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)

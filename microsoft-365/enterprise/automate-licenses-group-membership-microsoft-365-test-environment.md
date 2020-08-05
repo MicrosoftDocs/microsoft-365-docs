@@ -46,11 +46,11 @@ If you want to test automated licensing and group membership in a simulated ente
 
 First, you create a new Sales group and add a dynamic group membership rule so that user accounts with the Department set to Sales are automatically added to the Sales group.
 
-1. Using a private instance of your Internet browser, sign in to the Office 365 portal at [https://portal.office.com](https://portal.office.com) with the global administrator account of your Microsoft 365 E5 test lab subscription.
+1. Using a private instance of your Internet browser, sign in to the [Microsoft 365 admin center](https://admin.microsoft.com) with the global administrator account of your Microsoft 365 E5 test lab subscription.
 2. On a separate tab of your browser, go to the Azure portal at [https://portal.azure.com](https://portal.azure.com).
 3. In the Azure portal, type **groups** in the search box, and then click **Groups**.
 4. in the **All groups** pane, click **New group**.
-5. In **Group type**, select **Office 365**.
+5. In **Group type**, select **Microsoft 365**.
 6. In **Group name**, type **Sales**.
 7. In **Membership type**, select **Dynamic user**.
 8. Click **Dynamic user members**.
@@ -85,10 +85,10 @@ In time you should see the:
 - **Group memberships** property updated with the **Sales** group.
 - **Product licenses** property updated with the **Microsoft 365 E5** license.
 
-See these steps in the Identity phase for information and links to deploy dynamic group membership and automatic licensing in production:
+See these articles to deploy dynamic group membership and automatic licensing in production:
 
-- [Set up automatic licensing](identity-use-group-management.md#identity-group-license)
-- [Set up dynamic group membership](identity-use-group-management.md#identity-dyn-groups)
+- LINK TBD
+- LINK TBD
 
 ## Next step
 
@@ -96,10 +96,10 @@ Explore additional [identity](m365-enterprise-test-lab-guides.md#identity) featu
 
 ## See also
 
-[Phase 2: Identity](identity-infrastructure.md)
+[Identity roadmap](identity-roadmap-microsoft-365.md)
 
 [Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
-[Microsoft 365 Enterprise deployment](deploy-microsoft-365-enterprise.md)
+[Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
 [Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
