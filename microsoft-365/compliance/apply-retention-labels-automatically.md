@@ -87,10 +87,10 @@ When you create an auto-apply policy, you select a retention label to automatica
 1. In the [Microsoft 365 compliance center](https://compliance.microsoft.com/), navigate to one of the following locations:
     
     - If you are using records management: **Information governance**:
-        - **Solutions** > **Records management** > **Label policies** tab > **Auto-apply label**
+        - **Solutions** > **Records management** > **Label policies** tab > **Auto-apply a label**
     
     - If you are not using records management:
-        - **Solutions** > **Information governance** > **Label policies** tab > **Auto-apply label**
+        - **Solutions** > **Information governance** > **Label policies** tab > **Auto-apply a label**
     
     Don't immediately see your option? First select **Show all**. 
 
