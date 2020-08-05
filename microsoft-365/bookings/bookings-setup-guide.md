@@ -51,29 +51,29 @@ If you haven't already created your Bookings page, create a Bookings page for yo
 
 Next, add staff from your Microsoft 365 tenant, or add staff external to your organization, to your Bookings page.
 
-1.  Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff** 
+1. Go to the [Manage staff page](https://outlook.office.com/bookings/staff) and select **Add staff** 
 
 2. Select the **Add Staff** button.
 
-3.  When adding staff from within your tenant, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
+3. When adding staff from within your tenant, type their name in the **Add people** field and select them when they appear in the drop-down menu. The other fields will automatically populate.
 
     Once a staff member is added, you can edit the name that appears on all Bookings communications by selecting the **x** next to their name and editing the **Add people** field. This can be useful if you would like staff members to have a specific title or name displayed for customers, such as listing Adele Vance as “Dr. Vance, MD.”
 
-4.  To add staff from outside of your tenant, manually fill in their email and other information. 
+4. To add staff from outside of your tenant, manually fill in their email and other information. 
 
     > [!NOTE]
     > Staff from outside your tenant will not be able to share free/busy information with Bookings.
 
-5.  For each staff member, select a role: Administrator, Viewer, or Guest.
+5. For each staff member, select a role: Administrator, Viewer, or Guest.
     - **Administrators** can edit all settings, add and remove staff, and create, edit, or delete bookings.
     - **Viewers** can see all the bookings on the calendar, but they can’t modify or delete them. They have read-only access to settings.
     - **Guests** can be assigned to bookings, but they can’t open the booking mailbox.
 
-6.  Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
+6. Select **Notify all staff via email when a booking assigned to them is created or changed** to enable staff emails. The following is an example email:
 
     :::image type="content" source="media/bookings-notify-all-email.jpg" alt-text="A notification email from Bookings":::
 
-7.  Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
+7. Select **Events on Office 365 calendar affect availability** if you want the free/busy information from staff members’ calendars to impact availability for bookings services through Bookings.
 
     For example, if a staff member has a team meeting or a personal appointment scheduled for 3pm on a Wednesday, Bookings will show that staff member as unavailable to be booked in that time slot. That time will appear as busy or tentative in the Bookings calendar view, as shown in the below example.
 
