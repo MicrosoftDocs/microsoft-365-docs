@@ -23,7 +23,7 @@ This article provides you with recommendations and steps to configure a private 
 
 Beyond the private access, this article describes how to configure the associated SharePoint site, which you can access from the **Files** section of a team channel, for the additional security needed to store highly regulated data.
 
-The elements of configuration for a team for highly regulated data are:
+The elements of configuration for a team with security isolation are:
 
 - A private team
 - Additional security on the associated SharePoint site for the team that:
@@ -222,7 +222,7 @@ Microsoft 365 offers additional methods for securing your content. Consider if t
 
 With the team in place, it's time to drive the adoption of this team and its additional security to team members.
 
-## Train your users
+### Train your users
 
 Members of the team can access the team and all of its resources, including chats, meetings, and other apps. When working with files from the **Files** section of a channel, members of the team should assign the sensitivity label to the files they create.
 
