@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -63,34 +63,25 @@ You can set the policy for all of your groups, only selected groups, or turn it 
 
 ![Screenshot of Groups expiration settings in Azure Active Directory](../../media/azure-groups-expiration-settings.png)
 
-## How expiry works with the retention policy
+## How expiration and renewal work
 
-If you have setup retention policy in Security and Compliance center for groups, expiration policy works seamlessly with retention policy. When a group expires, the group's conversations in mail box and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users will not see the group, or its content, after expiration however.
+The expiration policy works as follows: 
 
-## How and when a group owner learns if their groups are going to expire
+- About a month before expiration, the system will check to see if there has been any group activity since the group was created or since the beginning of the current renewal cycle.
 
-Group owners will only be notified via email. If the group was created via Planner, SharePoint, or any other app, the expiration notifications will always come via email. If the group was created via Teams, the group owner will receive a notification to renew through the activity section. It's not recommended that you enable expiration on a group if your group owner doesn't have a valid email address.
+- If prior activity is detected, then the expiration date is advanced at that time by the number of days specified in the expiration policy.
 
-30 days before the group expires, the group owners (or the email addresses that you specified for groups that don't have an owner) will receive an email allowing them to easily renew the group. If they don't renew it, they'll receive another renewal email 15 days before expiration. If they still haven't renewed it, they will receive one more email notification the day before expiration.
+- If prior activity is not detected, the system will continue to watch for activity until the expiration date. If activity is detected, the system will advance the expiration date by the specified amount at that time.
+
+30 days before the group expires, the group owners (or the email addresses that you specified for groups that don't have an owner) will receive an email allowing them to easily renew the group. If they don't renew it, they'll receive another renewal email 15 days before expiration. If they still haven't renewed it, they will receive one more email notification the day before expiration. (Once the group has been renewed, no further email reminders are sent until 30 days before the new expiration date.)
+
+Group owners will be notified via email. If the group was created via Planner, SharePoint, or any other app, the expiration notifications will always come via email. If the group was created via Teams, the group owner will receive a notification to renew through the activity section. It's not recommended that you enable expiration on a group if your group owner doesn't have a valid email address.
 
 If for some reason none of the owners or admins renew the group before it expires, and automatic renewal does not occur due to the group not meeting the requirements to be automatically renewed, the admin can still restore the group for up to 30 days after expiration. For details see: [Restore a deleted Microsoft 365 group](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
-## How automatic renewal fits into the group expiration timeline
+## How expiry works with retention policies
 
-Automatic renewal checks occur continuously during a group's lifecycle. If any activity is detected in the group prior to 30 days before expiration, then the group will be automatically renewed.
-
-> [!NOTE]
-> The service that checks to see if a group should be automatically renewed can take up to 48 hours to process and finish the automatic renewal procedure. In very rare cases, this can lead to the group failing to automatically renew, if no activity meeting the automatic renewal requirements occurs within the group's lifecycle until < 48 hours of the group's expiration time.
-
-If no activity is detected in the group when it reaches 30 days from expiration, then group owners will receive an e-mail requesting manual renewal of the group. Similar e-mail notifications will also be sent 15 days and one day prior to expiration. During this time, automatic renewal checks will continue to occur and will automatically renew the group if an activity is detected up to 48 hours prior to group expiry.
-
-## How email notifications work with automatic group renewal
-
-If a group is renewed prior to the scheduled time for an expiration reminder email being sent to the group owners or administrators, then further reminder emails will not be sent. For example, if the group is automatically renewed 30 days from expiration, then the 30 day, 15 day, and one day reminder emails will not be sent. If the group was manually or automatically renewed 12 days from expiration, both the 30 day and the 15 day reminder emails would be sent, but not the one day reminder.
-
-## Group lifecycle and the renewal process
-
-When a group is renewed, the expiration date for the group is updated based on the expiration policy set by the administrator.  For instance, if an administrator defines a 365 day expiration policy such that a group is set to expire on December 30, and the group is renewed either manually or automatically 30 days prior to this on November 30, the group's updated expiration date will be November 30 next year (365 days from when renewal occurred).
+If you have setup retention policy in Security and Compliance center for groups, expiration policy works seamlessly with retention policy. When a group expires, the group's conversations in mail box and files in the group site are retained in the retention container for the specific number of days defined in the retention policy. Users will not see the group, or its content, after expiration however.
 
 ## Related articles
 
