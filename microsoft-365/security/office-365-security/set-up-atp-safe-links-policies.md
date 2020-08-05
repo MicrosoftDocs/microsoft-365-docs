@@ -109,7 +109,7 @@ After you have reviewed (or edited) the default ATP Safe Links policy that appli
 6. Choose **Save**.
 
 > [!NOTE]
-> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more polices, only the higher priority policy will take effect. If you want the customer policy to trake precedence, please raise the priority of the policy.
+> ATP Safe Links policies with higher priority will take precedence. If a user is subject to two or more policies, only the higher priority policy will take effect. If you want the customer policy to take precedence, you need to raise the priority of the policy.
     
 ## Step 4: Learn about ATP Safe Links policy options
 
