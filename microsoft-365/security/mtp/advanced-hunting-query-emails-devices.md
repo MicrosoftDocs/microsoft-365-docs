@@ -1,5 +1,5 @@
 ---
-title: Hunt for threats across devices, emails, apps, and identities using advanced hunting
+title: Hunt for threats across devices, emails, apps, and identities with advanced hunting
 description: Study common hunting scenarios and sample queries that cover devices, emails, apps, and identities.
 keywords: advanced hunting, Office365 data, Windows devices, Office365 emails normalize, emails, apps, identities, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
@@ -68,12 +68,14 @@ EmailEvents
 //Get email processing events where the messages were identified as either phishing or malware
 | where MalwareFilterVerdict == 'Malware' or PhishFilterVerdict == 'Phish'
 //Merge email events with identity info to get recipient details
-| join kind=inner IdentityInfo on $left.RecipientEmailAddress == $right.EmailAddress
+| join (IdentityInfo | distinct AccountUpn, AccountDisplayName, JobTitle, 
+Department, City, Country) on $left.RecipientEmailAddress == $right.AccountUpn 
 //Show important message and recipient details
 | project Timestamp, NetworkMessageId, Subject, PhishFilterVerdict, MalwareFilterVerdict,
-SenderFromAddress, RecipientEmailAddress, AccountName, GivenName, Surname, JobTitle, 
+SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle, 
 Department, City, Country
 ```
+
 ### Get device information
 The [advanced hunting schema](advanced-hunting-schema-tables.md) provides extensive device information in various tables. For example, the [DeviceInfo table](advanced-hunting-deviceinfo-table.md) provides comprehensive device information based on event data aggregated regularly. This query uses the `DeviceInfo` table to check if a potentially compromised user (`<account-name>`) has logged on to any devices and then lists the alerts that have been triggered on those devices.
 
@@ -97,10 +99,10 @@ This query uses the [FileProfile() function](advanced-hunting-fileprofile-functi
 EmailAttachmentInfo
 | where Timestamp > ago(7d)
 //Get SHA-256 values of all distinct email attachments detected as malware
-| where MalwareFilterVerdict == 'Malware'
+| where MalwareFilterVerdict == "Malware"
 | distinct SHA256
 //Use FileProfile() function to enrich file information
-| invoke FileProfile(SHA256)
+| invoke FileProfile("SHA256")
 //Show file information including global prevalence (encounter count) and sort by this count
 | project SHA1, SHA256, FileSize, GlobalFirstSeen, GlobalLastSeen, GlobalPrevalence, IsExecutable
 | sort by GlobalPrevalence desc
@@ -115,14 +117,14 @@ EmailAttachmentInfo
 EmailPostDeliveryEvents 
 | where Timestamp > ago(7d)
 //List malicious emails that were not zapped successfully
-| where ActionTrigger == "ZAP"
-| where ActionResult contains "fail"
-//Get identity details of recipients
-| join IdentityInfo on $left.RecipientEmailAddress == $right.EmailAddress
-//Get logon activity of recipients using account name info from IdentityInfo
-| join kind=inner IdentityLogonEvents on AccountName
+| where ActionType has "ZAP" and ActionResult == "Error"
+| project ZapTime = Timestamp, ActionType, NetworkMessageId , RecipientEmailAddress 
+//Get logon activity of recipients using RecipientEmailAddress and AccountUpn
+| join kind=inner IdentityLogonEvents on $left.RecipientEmailAddress == $right.AccountUpn
+| where Timestamp between ((ZapTime-24h) .. (ZapTime+24h))
 //Show only pertinent info, such as account name, the app or service, protocol, the target device, and type of logon
-| project AccountName, Application, Protocol, TargetDeviceName, LogonType
+| project ZapTime, ActionType, NetworkMessageId , RecipientEmailAddress, AccountUpn, 
+LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
 ### Get logon attempts by domain accounts targeted by credential theft
@@ -130,19 +132,19 @@ This query first identifies all credential access alerts in the `AlertInfo` tabl
 
 ```kusto
 AlertInfo
-| where Timestamp > ago(7d)
+| where Timestamp > ago(30d)
 //Get all credential access alerts
-| where Category has "CredentialAccess"
-//Get more info from AlertEvidence table to get target account name of the credential access activity
+| where Category == "CredentialAccess"
+//Get more info from AlertEvidence table to get the SID of the target accounts
 | join AlertEvidence on AlertId
 | extend IsJoined=(parse_json(AdditionalFields).Account.IsDomainJoined)
-| extend TargetAccountName=tostring(parse_json(AdditionalFields).Account.Name)
+| extend TargetAccountSid=tostring(parse_json(AdditionalFields).Account.Sid)
 //Filter for domain-joined accounts only
 | where IsJoined has "true"
 //Merge with IdentityLogonEvents to get all logon attempts by the potentially compromised target accounts
-| join kind=inner IdentityLogonEvents on $left.TargetAccountName == $right.AccountName
-//Show only pertinent info, such as account name, the app or service, protocol, the target device, and type of logon
-| project TargetAccountName, Application, Protocol, TargetDeviceName, LogonType
+| join kind=inner IdentityLogonEvents on $left.TargetAccountSid == $right.AccountSid
+//Show only pertinent info, such as account name, the app or service, protocol, the accessed device, and type of logon
+| project AccountDisplayName, TargetAccountSid, Application, Protocol, DeviceName, LogonType
 ```
 
 ### Check if files from a known malicious sender are on your devices
@@ -159,22 +161,6 @@ DeviceFileEvents
 | project FileName, SHA256
 ) on SHA256
 | project Timestamp, FileName , SHA256, DeviceName, DeviceId,  NetworkMessageId, SenderFromAddress, RecipientEmailAddress
-```
-### Check for cloud app activity involving files from a known malicious sender
-This query checks for any cloud app activity involving potentially malicious files received from a known malicious sender (`MaliciousSender@example.com`).
-
-```kusto
-EmailAttachmentInfo
-| where SenderFromAddress =~ "MaliciousSender@example.com"
-//Get emails with attachments identified by a SHA-256
-| where isnotempty(SHA256)
-| join (
-//Check devices for any activity involving the attachments
-DeviceFileEvents
-| project FileName, SHA256, DeviceName, DeviceId
-) on SHA256
-| project Timestamp, FileName, SHA256, DeviceName, DeviceId, NetworkMessageId,
-SenderFromAddress, RecipientEmailAddress
 ```
 
 ### Review logon attempts after receipt of malicious emails
