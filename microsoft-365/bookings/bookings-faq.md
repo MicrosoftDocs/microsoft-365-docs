@@ -20,59 +20,99 @@ Microsoft Bookings is a Microsoft 365 app that makes scheduling and managing app
 
 **How do I use Microsoft Bookings?**
 
-Bookings is an online service, no need to download anything. Just go to the app chooser within the Microsoft 365 web experience. The admin can also use the Bookings companion app to stay up to date on the latest information for customers and appointments.
+Bookings is an online service, so you don't need to download anything. Just go to the app chooser within the Microsoft 365 Web experience. Administrators can also use the Bookings companion app to stay current with the latest information about customers and their appointments.
 
 **Who has access to Microsoft Bookings?**
 
-Bookings is available as on by default for Microsoft 365 Business Premium, A3, A5, E3, and E5 customers worldwide. For special cloud instances, Bookings is currently available in Gallatin.
+Bookings is available and active by default for Microsoft 365 Business Premium, A3, A5, E3, and E5 customers worldwide. Bookings is also available in Office 365 operated by 21Vianet.
 
 **Will my customers see my personal or business calendar?**
 
-Your customers will only see the Bookings calendar that you publish online for the services, times, and staff you register.
+Your customers will only see the Bookings calendar that you publish online for the services, times, and staff that you choose to register.
 
-**How do end users access the app? **
+**How do end users access the Bookings app?**
 
-Anyone who is licensed for Microsoft 365 Business Premium, A3, A5, E3, E5, or is added as Staff in either an “Administrator” or “Viewer” roles can access Bookings in the app chooser within the Microsoft 365 web experience. There is also a companion app available for iOS and Android.
+Anyone who is licensed for Microsoft 365 Business Premium, A3, A5, E3, E5, or is added as a staff member in either the Administrator or Viewer roles can access Bookings in the app chooser within the Microsoft 365 Web experience. There is also a companion app available for iOS and Android.
 
-**Can I use Bookings in my own website?**
+**Can I use Bookings in my own Web site?**
 
-Yes. We provide a way for you to embed your Bookings calendar in your site via an iFrame. Link embedding code is located in the “Bookings page” tab within the Bookings app.
+Yes. We provide a way for you to embed your Bookings calendar in your site via an iFrame. Link embedding code is located in the **Bookings page** tab within the Bookings app.
 
-**Can I use Bookings even if I don’t have a web page for my business?**
+**Can I use Bookings even if I don’t have a Web page for my business?**
 
-Yes. We provide a link to your booking page within the “Booking page” tab in the web app. You just need to provide that link to your customers or clients, and they will see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page by disabling direct search engine indexing and restricting access to only those within your organization.
+Yes. We provide a link to your booking page within the **Booking page** tab in the Web app. You just need to provide that link to your customers or clients, and they will see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page by disabling direct search engine indexing and restricting access to only those within your organization.
 
-**  
-Can our IT department control whether end users have access to Bookings? **
+**Can our IT department control whether end users have access to Bookings?**
 
-Bookings is available in Business Premium, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](https://support.microsoft.com/en-us/office/turn-microsoft-bookings-on-or-off-for-your-organization-c27537fa-525e-47a8-aadf-9b07ee75c227).
+Bookings is available in Business Premium, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](https://support.microsoft.com/office/turn-microsoft-bookings-on-or-off-for-your-organization-c27537fa-525e-47a8-aadf-9b07ee75c227).
 
-If a customer wants to disable access to this product for certain eligible licenses in their tenant, they can either user a group policy to restrict licenses or implement an OWA Mailbox Policy that will restrict who is able to create new Bookings calendars.
+If a customer wants to disable access to Bookings for certain eligible licenses in their tenant, they can either user a group policy to restrict licenses or implement an OWA Mailbox policy that will restrict who is able to create new Bookings calendars.
 
-With the OWA Mailbox Policy, all users will have a Bookings license, when they attempt to access the app, they will only be successful if they are part of the policy or have been added to an existing Bookings calendar as staff. Details [here](https://support.microsoft.com/en-us/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce?ui=en-us&rs=en-us&ad=us) in the “Allow only selected users to create Bookings calendars” section.
+If you use an OWA Mailbox policy to disable access to Bookings, all users will have a Bookings license, however when they attempt to access the app, they will only be successful if they are part of the policy or if they have been added to an existing Bookings calendar as staff. Details [here](https://support.microsoft.com/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce?ui=en-us&rs=en-us&ad=us) in the “Allow only selected users to create Bookings calendars” section.
 
-**Is it customizable?**
+**Is Bookings customizable?**
 
-Bookings is extremely customizable and can be used for a variety of different scenarios. When setting up a Bookings calendar, many aspects of the web-based scheduling page, business information, staff detail, service types, and scheduling policies can be customized.
+Yes, Bookings is customizable and can be used for a variety of different scenarios. When setting up a Bookings calendar, many aspects of the Web-based scheduling page, your business information, staff details, service types, and scheduling policies can be customized.
 
-**  
-Is all the functionality of the original Bookings web app available in Teams?**
+**Is all the functionality of the original Bookings Web app available in Microsoft Teams?**
 
-A lightweight version of Bookings is now available via an app in Teams. Please find the initial announcement [here](https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). There is deep link functionality to pop out in the web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
+A lightweight version of Bookings is now available as an app in Teams. Please find the initial announcement [here](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). There is deep link functionality to pop out in the Web app, and after setup, day-to-day use of Bookings can be done without ever leaving Teams. Information flows across platforms.
 
 **Is Bookings a small business offering or an Enterprise offering or both?**
 
-Bookings is an ideal solution for both Enterprise and SMB customers across a variety of industries. Use cases include:
+Bookings is an ideal solution for both Enterprise and small business customers, across a variety of industries. Use cases include:
 
-![](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image1.png)
+- Financial services
+    - consultations
+    - banking and insurance services
+    - tax filings
 
-<span id="Pricing" class="anchor"></span>**Pricing/Licensing**
+- Human resources (HR)
+    - candidate interviews
+    - onboarding
+    - benefits assistance
+    - training and seminars
+
+- Healthcare
+    - patient visits
+    - provider-to-provider collaboration
+    - insurance consults
+
+- Government & Public Sector
+    - court hearings and trials
+    - public services
+    - department appointments
+
+- Education -- K-12
+    - parent-teacher conferences
+    - school town hall
+    - student-counselor visits
+
+- Education -- Higher Ed
+    - office hours
+    - tutoring
+    - student services
+    - exam sign-up
+
+- Retail
+    - assisted shopping
+    - contractor scheduling
+    - design services
+
+- General Enterprise and small business needs
+    - customer and client meetings
+    - tech support
+    - legal reviews
+    - facilities
+
+
+## Pricing and licensing
 
 **How do I get Microsoft Bookings?**
 
-Bookings is available for customers with Business Premium, A3, A5, E3, and E5 licenses. Bookings is not available standalone and is only available as a web app, with an iOS and Android companion app. OWA must be enabled to use Bookings, as it sits within Outlook on the web. Details on obtaining a license can be found [here](https://support.microsoft.com/en-us/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce?ui=en-us&rs=en-us&ad=us).
+Bookings is available for customers with Business Premium, A3, A5, E3, and E5 licenses, along with an iOS and Android companion app. Bookings is not available as a standalone app. Outlook Web App or Outlook on the web must be enabled to use Bookings, as it stores data within Outlook. Details on obtaining a license can be found [here](https://support.microsoft.com/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce).
 
-A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability to view/edit existing calendars when added as staff in a “administrator” or “viewer” role.
+A Bookings license provides full functionality to the product, including creating and managing calendars. It also enables the ability for users to view and edit existing calendars, when those users are added as staff in an Administrator or Viewer role.
 
 **Do I need to migrate my email account from my current provider to Microsoft 365?**
 
@@ -84,7 +124,7 @@ Yes. You can add your staff with any email, and they will still get the email co
 
 **Can I create more than one Bookings calendar under the same Microsoft 365 account and switch between them?**
 
-Yes. You can create and manage more than one Bookings calendar with one account. You can switch between them using the caret next to the business name in the Bookings web app.
+Yes. You can create and manage more than one Bookings calendar with one account. You can switch between them using the caret next to the business name in the Bookings Web app.
 
 **What if my organization has mixed licenses with F1/F3, E1, and E3/E5?**
 
@@ -94,11 +134,11 @@ The HQ employees with an M365 E3 license will have full access to Bookings, whic
 
 The store employees with E1/F1/F3 licenses, or with no licenses, can still be added as staff to calendars in a "guest" role to be booked and will receive confirmation emails when booked. They can still be booked during their available/scheduled hours as listed in the staff tab. The Bookings calendar availability constrains bookable times by their set hours and service hours.
 
-They will also still be triggered as unavailable in Bookings if an appointment has already been scheduled through the Bookings web app or page. Appointments booked via Bookings will reflect as busy on a staff’s calendar within Bookings. Staff with a non-Bookings enabled license can still have their personal/work calendar impact Bookings availability if they are within the same tenant.
+They will also still be triggered as unavailable in Bookings if an appointment has already been scheduled through the Bookings Web app or page. Appointments booked via Bookings will reflect as busy on a staff’s calendar within Bookings. Staff with a non-Bookings enabled license can still have their personal/work calendar impact Bookings availability if they are within the same tenant.
 
 “Guests” can view any of the information the customer has provided within the initial appointment creation. For example, if the Store Representative who is booked for the appointment is required to call the customer prior to the appointment, they will have access to the information the customer provides during the scheduling process. The staff member that is booked will have access to all information that appears in the confirmation email, as well as the .ics calendar event (such as the customer phone number if it was inputted when bookings).
 
-These “guest” users will not have the ability to access the Bookings web app to change settings or view and manage appointments (add/cancel/reschedule); however, they can make appointments on behalf of customers using the self-service page, as a customer would.
+These “guest” users will not have the ability to access the Bookings Web app to change settings or view and manage appointments (add/cancel/reschedule); however, they can make appointments on behalf of customers using the self-service page, as a customer would.
 
 We would recommend licensing a business manager/admin of each store with a Bookings-eligible license to set up and manage pages and appointments. The rest of the staff would then work with the employee licensed with Bookings to reschedule or cancel a booking.
 
@@ -114,7 +154,7 @@ In order to delete a Bookings calendar you must delete the associated mailbox wi
 
 **If I create a calendar and someone else has access to Bookings, would they be able to see my calendar? **
 
-The only people who have access to the Bookings calendar you have created (through the web app) is anyone added as Staff in either an “Administrator” or “Viewer” role. Tenant admins will be able to see a list of all Bookings mailboxes in Exchange/AAD.
+The only people who have access to the Bookings calendar you have created (through the Web app) is anyone added as Staff in either an “Administrator” or “Viewer” role. Tenant admins will be able to see a list of all Bookings mailboxes in Exchange/AAD.
 
 **Are video conferencing meetings integrated into the Bookings app? **
 
@@ -146,7 +186,7 @@ The booking confirmation is sent to both the service provider’s and customer�
 
 **What triggers service provider/staff and customer emails?**
 
-Emails are triggered based on setting in the Services tab in the Bookings web app. A booking made by the customer on the self-service page or via the Calendar tab on the Bookings web app, or a change to that booking made by either party (via the “Manage booking” button in the confirmation email or within the web app), will trigger confirmation and/or reminder emails. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings web app.
+Emails are triggered based on setting in the Services tab in the Bookings Web app. A booking made by the customer on the self-service page or via the Calendar tab on the Bookings Web app, or a change to that booking made by either party (via the “Manage booking” button in the confirmation email or within the Web app), will trigger confirmation and/or reminder emails. Reminder emails are sent at a specified time period prior to an appointment, as detailed in the Services tab in the Bookings Web app.
 
 **Can I book class-style appointments that are 1:many instead of 1:1? **
 
@@ -154,18 +194,18 @@ Yes, we have a group bookings functionality that allows multiple people to book 
 
 **Can calendars not be published (i.e. public facing) but still accessible to designated users?**
 
-Yes. There is a check box on the “Booking page” tab in the web app (below) that can restrict self-service page access to only those that are within the tenant. The Bookings calendar that sits within the web app for creation and management can only be access by those added as Staff to the page with “Administrator” or “Viewer” roles.
+Yes. There is a check box on the “Booking page” tab in the Web app (below) that can restrict self-service page access to only those that are within the tenant. The Bookings calendar that sits within the Web app for creation and management can only be access by those added as Staff to the page with “Administrator” or “Viewer” roles.
 
 ![A picture containing knife, table
 Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image4.png)
 
 **How frequently does state of the Home page update?**
 
-It is fetched whenever the web app is loaded in real-time. For further details, visit this [support link](https://support.office.com/en-us/article/bookings-what-do-these-numbers-mean-060a9781-c8a2-4e85-a769-31e6417d05b3?ui=en-US&rs=en-US&ad=US).
+It is fetched whenever the Web app is loaded in real-time. For further details, visit this [support link](https://support.office.com/en-us/article/bookings-what-do-these-numbers-mean-060a9781-c8a2-4e85-a769-31e6417d05b3?ui=en-US&rs=en-US&ad=US).
 
 **Can I turn off the email notifications for Time Off?**
 
-Recording Time Off within the Bookings web app will always trigger a notification email to staff members. If they are confusing to the staff member, we suggest you add more detail in the notes or title of the Time Off to better inform staff about what is occurring on the admin side.
+Recording Time Off within the Bookings Web app will always trigger a notification email to staff members. If they are confusing to the staff member, we suggest you add more detail in the notes or title of the Time Off to better inform staff about what is occurring on the admin side.
 
 **Can Bookings calendars be cloned/duplicated and templatized for easy scaling?**
 
@@ -191,7 +231,7 @@ The staff selection by customer can be removed altogether by unchecking “All c
 
 **Can the “Manage Booking” option be removed from the customer confirmation email? **
 
-When a customer books their own appointment (or an appointment is booked on behalf of them) on the self-service page, they will always have the “Manage Booking” option regardless of the setting. The “Let the customer manage their booking” check in the Services option only impacts if customers will see “Manage Booking” when a booking is made for them via a staff member on the Calendar tab of the Bookings web app.
+When a customer books their own appointment (or an appointment is booked on behalf of them) on the self-service page, they will always have the “Manage Booking” option regardless of the setting. The “Let the customer manage their booking” check in the Services option only impacts if customers will see “Manage Booking” when a booking is made for them via a staff member on the Calendar tab of the Bookings Web app.
 
 **Can Bookings support many concurrent booking requests and self-service page visits?  **
 
@@ -209,7 +249,7 @@ Each Bookings calendar is maintained independently. There is no consolidated vie
 
 **How are users authenticated?**
 
-Access to the Bookings web app involves authentication via the regular AAD authentication. The self-service booking page can be made available to everyone with the webpage link; however, when the “Require a Microsoft 365 or Office 365 account from my organization to book” setting is selected, the page is restricted for use only within the tenant (using AAD authentication).
+Access to the Bookings Web app involves authentication via the regular AAD authentication. The self-service booking page can be made available to everyone with the Webpage link; however, when the “Require a Microsoft 365 or Office 365 account from my organization to book” setting is selected, the page is restricted for use only within the tenant (using AAD authentication).
 
 ![A picture containing knife, table
 Description automatically generated](c:\\GitHub\\microsoft-365-docs-pr\\microsoft-365\\bookings/media/image5.png)
