@@ -114,7 +114,7 @@ For more information about DMARC, see [Use DMARC to validate email in Microsoft 
 
 ## Reports of how many messages were marked as spoofed
 
-EOP organizations can use the **Spoof detections** report in the reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
+EOP organizations can use the **Spoof detections** report in the Reports dashboard in the Security & Compliance Center. For more information, see [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 
 Office 365 ATP organization can use Threat Explorer in the Security & Compliance Center to view information about phishing attempts. For more information, see [Microsoft 365 threat investigation and response](office-365-ti.md).
 
