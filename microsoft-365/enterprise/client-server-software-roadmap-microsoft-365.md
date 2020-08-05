@@ -38,11 +38,6 @@ To maximize the business value of the Microsoft 365 for enterprise integrated su
 
 Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 for enterprise. 
 
-For information about migrating users and data for specific Microsoft 365 workloads:
-
-- User mailboxes from Exchange Server to Exchange Online, see the [Exchange Online workload](exchangeonline-workload.md).
-- SharePoint data from SharePoint Server to SharePoint Online, see the [SharePoint Online workload](sharepoint-online-onedrive-workload.md).
-- Skype for Business Online to Microsoft Teams, see the [Microsoft Teams workload](teams-workload.md).
 
 ## Migration for Microsoft Office client products
 
@@ -100,6 +95,12 @@ In many organizations both large and small, you might be using a combination of 
 - Do not include the latest security features, such as Exchange Advanced Threat Protection.
 
 Microsoft 365 for enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software. 
+
+For information about migrating users and data for specific Microsoft 365 workloads:
+
+- User mailboxes from Exchange Server to Exchange Online, see [Move mailboxes between on-premises and Exchange Online organizations](https://docs.microsoft.com/exchange/hybrid-deployment/move-mailboxes.md).
+- SharePoint data from SharePoint Server to SharePoint Online, see [Migrate your content to Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online).
+- Skype for Business Online to Microsoft Teams, see [Migration and interoperability guidance](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype).
 
 ### Office Server 2007
 
