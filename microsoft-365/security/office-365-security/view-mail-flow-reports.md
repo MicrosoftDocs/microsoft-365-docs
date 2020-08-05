@@ -1,5 +1,5 @@
 ---
-title: View mail flow reports in the Security & Compliance Center
+title: View mail flow reports in the Reports dashboard
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,15 +16,15 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Learn how to find and use mail flow security reports for your organization. Mail flow reports are available in the Security & Compliance Center."
+description: "Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center."
 ms.custom:
 ---
 
-# View mail flow reports in the reports dashboard in Security & Compliance Center
+# View mail flow reports in the Reports dashboard in Security & Compliance Center
 
-In addition to the mail flow reports that are available in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center, a variety of additional mail flow reports are available in the reports dashboard to help you monitor your Microsoft 365 organization.
+In addition to the mail flow reports that are available in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center, a variety of additional mail flow reports are available in the Reports dashboard to help you monitor your Microsoft 365 organization.
 
-If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://office.protection.com) by going to **Reports** \> **Dashboard**. To go directly to the reports dashboard, open <https://office.protection.office.com/insightdashboard>.
+If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://office.protection.com) by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://office.protection.office.com/insightdashboard>.
 
 ![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -192,47 +192,6 @@ If you click **View details table** in a report view, the following information 
 - **Recipient name**
 - **Recipient domain**
 - **Details**: This is the GUID value of the mail flow rule, or the RuleIdentity value of the Inbox rule.
-- **Count**
-- **First forward date**
-
-If you click **Filters** in a details table view, you can specify a date range with **Start date** and **End date**.
-
-To go back to the reports view, click **View report**.
-
-## Forwarding modifications report
-
-The **Forwarding report** shows your organization's automatically forwarded messages by new accounts to external domains or accounts to new domains that have never been forwarding targets for other users in your organization. These types of forwarded messages can pose a security or compliance risk, and might indicate a compromised account.
-
-The report contains data for up to 90 days. By default, the report shows data for the last 7 days.
-
-This report isn't directly available in the reports dashboard. You get to it by:
-
-- Clicking the **Forwarding modifications report** link in the details of the [New domains being forwarded email insight](mfi-new-domains-being-forwarded-email.md).
-- Clicking the **See report associated with the insight** link in the details of the [New users forwarding email insight](mfi-new-users-forwarding-email.md).
-- Opening <https://protection.office.com/reportv2?id=MailFlowNewForwarding>.
-
-### Report view for the Forwarding modifications report
-
-The following charts are available in the report view:
-
-- **Show data for: New forwarding users**:
-
-  ![New forwarding users view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarding-users.png)
-
-- **Show data for: New forwarding domains**:
-
-  ![New forwarded domains view in the Forwarding modifications report](../../media/forwarding-modificiations-report-new-forwarded-domains.png)
-
-If you click **Filters** in a report view, you can specify a date range with **Start date** and **End date**.
-
-### Details table view for the Forwarding modifications report
-
-If you click **View details table** in a report view, the following information is shown:
-
-- **Name**
-- **Forwarding type**
-- **Recipient address**
-- **Details**
 - **Count**
 - **First forward date**
 
@@ -460,6 +419,8 @@ For more information, see [Permissions in Exchange Online](https://docs.microsof
 ## Related topics
 
 [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
+
+[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)
 
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
 

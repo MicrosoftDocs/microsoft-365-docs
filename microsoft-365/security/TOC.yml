@@ -489,16 +489,16 @@
               href: ./office-365-security/view-email-security-reports.md
             - name: View mail flow reports in the Security & Compliance Center
               href: ./office-365-security/view-mail-flow-reports.md
-            - name: Mail flow dashboard in the Security & Compliance Center
+            - name: Mail flow insights in the Security & Compliance Center
               href: ./office-365-security/mail-flow-insights-v2.md
               items: 
-                - name: Auto-forwarded messages report
+                - name: Auto-forwarded messages insight
                   href: ./office-365-security/mfi-auto-forwarded-messages-report.md
                 - name: Fix possible mail loop insight
                   href: ./office-365-security/mfi-mail-loop-insight.md
                 - name: Fix slow mail flow rules insight
                   href: ./office-365-security/mfi-slow-mail-flow-rules-insight.md  
-                - name: Mail flow map report
+                - name: Mail flow map
                   href: ./office-365-security/mfi-mail-flow-map-report.md
                 - name: New domains being forwarded email insight
                   href: ./office-365-security/mfi-new-domains-being-forwarded-email.md
@@ -508,13 +508,13 @@
                   href: ./office-365-security/mfi-non-accepted-domain-report.md
                 - name: Non-delivery report
                   href: ./office-365-security/mfi-non-delivery-report.md
-                - name: Outbound and inbound mail flow report
+                - name: Outbound and inbound mail flow insight
                   href: ./office-365-security/mfi-outbound-and-inbound-mail-flow.md
-                - name: Queues report
+                - name: Queues insight
                   href: ./office-365-security/mfi-queue-alerts-and-queues.md
-                - name: SMTP Auth clients report
+                - name: SMTP Auth clients insight and report
                   href: ./office-365-security/mfi-smtp-auth-clients-report.md
-                - name: Top domain mail flow status report
+                - name: Top domain mail flow status insight
                   href: ./office-365-security/mfi-domain-mail-flow-status-insight.md
         - name: Security solutions
           items: 

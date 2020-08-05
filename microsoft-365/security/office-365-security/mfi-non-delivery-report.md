@@ -1,5 +1,5 @@
 ---
-title: "Non-delivery report"
+title: "Non-delivery report in the Mail flow dashboard"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,14 +12,14 @@ localization_priority: Normal
 ms.assetid:
 ms.custom:
 - seo-marvel-apr2020
-description: "Admins can learn how to use the Non-delivery details report in the mail flow dashboard in the Security & Compliance Center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization."
+description: "Admins can learn how to use the Non-delivery details report in the Mail flow dashboard in the Security & Compliance Center to monitor the most frequently encountered error codes in non-delivery reports (also known as NDRs or bounce messages) from senders in your organization."
 ---
 
-# Non-delivery report in the mail flow dashboard Security & Compliance Center
+# Non-delivery report in the Security & Compliance Center
 
-The **Non-delivery report** in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization. This report shows the details of NDRs so you can troubleshoot email delivery problems.
+The **Non-delivery report** in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center shows the most-encountered error codes in non-delivery reports (also known as NDRs or bounce messages) for users in your organization. This report shows the details of NDRs so you can troubleshoot email delivery problems.
 
-![Non-delivery report widget in the mail flow dashboard in the Security & Compliance Center](../../media/mfi-non-delivery-report-widget.png)
+![Non-delivery report widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-non-delivery-report-widget.png)
 
 ## Report view for the Non-delivery report
 
@@ -55,4 +55,4 @@ When you select a row in the table, a flyout appears with the following informat
 
 ## Related topics
 
-For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

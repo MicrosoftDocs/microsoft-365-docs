@@ -1,5 +1,5 @@
 ---
-title: "Queues report"
+title: "Queues insight in the Mail flow dashboard"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -10,10 +10,10 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: "Admins can learn how to use the Queues widget in the mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors."
+description: "Admins can learn how to use the Queues widget in the Mail flow dashboard in the Security & Compliance Center to monitor unsuccessful mail flow to their on-premises or partner organizations over outbound connectors."
 ---
 
-# Queues report in the mail flow dashboard in the Security & Compliance Center
+# Queues insight in the Security & Compliance Center
 
 When messages can't be sent from your organization to your on-premises or partner email servers using connectors, the messages are queued in Microsoft 365. Common examples that cause this condition are:
 
@@ -24,7 +24,7 @@ Microsoft 365 will continue to retry to delivery for 24 hours. After 24 hours, t
 
 If the queued email volume exceeds the pre-defined threshold (the default value is 200 messages), the information is available in the following locations:
 
-- The **Queues** widget in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center. For more information, see the [Queues widget in the mail flow dashboard](#queues-widget-in-the-mail-flow-dashboard) section in this topic.
+- The **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center. For more information, see the [Queues insight in the Mail flow dashboard](#queues-insight-in-the-mail-flow-dashboard) section in this topic.
   
 - An alert is displayed in **Recent alerts** the Alerts dashboard in the [Security & Compliance Center](https://protection.office.com) (**Alerts** \> **Dashboard** or <https://protection.office.com/alertsdashboard>).
 
@@ -59,13 +59,13 @@ If the queued email volume exceeds the pre-defined threshold (the default value 
 
 5. When you're finished, click **Save** and **Close**.
 
-## Queues widget in the mail flow dashboard
+## Queues insight in the Mail flow dashboard
 
-Even if the queued message volume hasn't exceeded the threshold and generated an alert, you can still use the **Queues** widget in the [mail flow dashboard](mail-flow-insights-v2.md) to see messages that have been queued for more than one hour, and take action before the number of queued messages becomes too large.
+Even if the queued message volume hasn't exceeded the threshold and generated an alert, you can still use the **Queues** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) to see messages that have been queued for more than one hour, and take action before the number of queued messages becomes too large.
 
-![Queues widget in the mail flow dashboard in the Security & Compliance Center](../../media/mfi-queues-widget.png)
+![Queues widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-queues-widget.png)
 
-If you click on the number of queued messages in the widget, a **Messages queued** flyout appears with the following information:
+If you click the number of messages on the widget, a **Messages queued** flyout appears with the following information:
 
 - **Number of queued messages**
 - **Connector name**: Click on the connector name to manage the connector in the Exchange admin center (EAC).
@@ -76,7 +76,7 @@ If you click on the number of queued messages in the widget, a **Messages queued
 - **Last error**
 - **How to fix**: Common issues and solutions are available. If is a **Fix it now** link is available, click it to fix the problem. Otherwise, click on any available links for more information about the error and possible solutions.
 
-![Details after clicking on the Queues widget in the mail flow dashboard](../../media/mfi-queues-details.png)
+![Details after clicking on the Queues insight in the Mail flow dashboard](../../media/mfi-queues-details.png)
 
 The same flyout is displayed after you click **View queue** in the details of a **Messages have been delayed** alert.
 
@@ -84,4 +84,4 @@ The same flyout is displayed after you click **View queue** in the details of a 
 
 ## See also
 
-For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

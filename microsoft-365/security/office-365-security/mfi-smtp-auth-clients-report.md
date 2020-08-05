@@ -1,5 +1,5 @@
 ---
-title: "SMTP Auth clients report"
+title: "SMTP Auth clients insight and report in the Mail flow dashboard"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -12,20 +12,20 @@ localization_priority: Normal
 ms.assetid:
 ms.custom:
 - seo-marvel-apr2020
-description: "Admins can learn how to use the SMTP AUTH report in the mail flow dashboard in the Security & Compliance Center to monitor email senders in your organization that use authenticated SMTP (SMTP AUTH) to send email messages."
+description: "Admins can learn how to use the SMTP Auth insight and report in the Mail flow dashboard in the Security & Compliance Center to monitor email senders in their organization that use authenticated SMTP (SMTP AUTH) to send email messages."
 ---
 
-# SMTP Auth clients report in the mail flow dashboard in the Security & Compliance Center
+# SMTP Auth clients insight and report in the Security & Compliance Center
 
-The **SMTP AUTH clients** report in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center highlights the use of the SMTP AUTH client submission protocol by users or system accounts in your organization. This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email. This report allows you to check for unusual activity. It also shows the TLS usage data for clients or devices using SMTP AUTH.
+The **SMTP Auth clients** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) and the associated [SMTP Auth clients report](#smtp-auth-clients-report) highlight the use of the SMTP AUTH client submission protocol by users or system accounts in your organization. This legacy protocol (which uses the endpoint smtp.office365.com) only offers Basic authentication, and is susceptible to being used by compromised accounts to send email. The insight and report allow you to check for unusual activity for SMTP AUTH email submissions. It also shows the TLS usage data for clients or devices using SMTP AUTH.
 
-The **SMTP AUTH clients** widget indicates the number of users or service accounts that have used the SMTP Auth protocol in the last 7 days.
+The widget indicates the number of users or service accounts that have used the SMTP Auth protocol in the last 7 days.
 
-![SMTP Auth clients report widget in the mail flow dashboard in the Security & Compliance Center](../../media/mfi-smtp-auth-clients-report-widget.png)
+![SMTP Auth clients widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-smtp-auth-clients-report-widget.png)
 
-If you click on the number of SMTP Auth messages in the widget, an **SMTP Auth clients** flyout appears. The flyout provides an aggregated view of the TLS usage and volumes for the last week.
+If you click the number of messages on the widget, an **SMTP Auth clients** flyout appears. The flyout provides an aggregated view of the TLS usage and volumes for the last week.
 
-![Details flyout after clicking on the SMTP Auth clients report widget in the mail flow dashboard](../../media/mfi-smtp-auth-clients-report-details.png)
+![Details flyout after clicking on the SMTP Auth clients widget in the Mail flow dashboard](../../media/mfi-smtp-auth-clients-report-details.png)
 
 You can click the **SMTP Auth clients report** link to go to the SMTP Auth clients report as described in the next section.
 
@@ -74,7 +74,7 @@ If you click **Filters** in a details table view, you can specify a date range w
 
 If you select a row, similar details are shown in a flyout:
 
-![Details flyout in details table view in TLS usage view in the SMTP Auth clients report in the Security & Compliance Cente](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+![Details flyout from the details table of the TLS usage view in the SMTP Auth clients report](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
 
 Click **Request report** to receive a more detailed version of the report in an email message. You can specify the date range and the recipients to receive the report.
 
@@ -82,4 +82,4 @@ To go back to the reports view, click **View report**.
 
 ## Related topics
 
-For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

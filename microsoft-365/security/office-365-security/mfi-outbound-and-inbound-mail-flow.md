@@ -1,5 +1,5 @@
 ---
-title: "Outbound and inbound mail flow rport"
+title: "Outbound and inbound mail flow insight in the Mail flow dashboard"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -11,16 +11,16 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: "Admins can learn about the Outbound and inbound mail flow widget in the mail flow dashboard in the Security & Compliance Center."
+description: "Admins can learn about the Outbound and inbound mail flow insight in the Mail flow dashboard in the Security & Compliance Center."
 ---
 
-# Outbound and inbound mail flow report in the mail flow dashboard in the Security & Compliance Center
+# Outbound and inbound mail flow insight in the Security & Compliance Center
 
-The **Outbound and inbound mail flow** report in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center combines the information from the [Connector report](view-mail-flow-reports.md#connector-report) and the former **TLS overview report** in one place.
+The **Outbound and inbound mail flow** insight in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center combines the information from the [Connector report](view-mail-flow-reports.md#connector-report) and the former **TLS overview report** in one place.
 
 The widget displays the TLS encryption that's used for the connection when messages are delivered to and from your organization. The connections that are established with other email services are encrypted by TLS when TLS is offered by both sides. The widget offers a snapshot of the last week of mail flow.
 
-![Outbound and inbound mail flow widget in the mail flow dashboard in the Security & Compliance Center](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
+![Outbound and inbound mail flow widget in the Mail flow dashboard in the Security & Compliance Center](../../media/mfi-outbound-and-inbound-mail-flow-report-widget.png)
 
 The information in the widget is related to connectors and TLS message protection in Microsoft 365. For more information, see these topics:
 
@@ -30,15 +30,17 @@ The information in the widget is related to connectors and TLS message protectio
 
 ## Message protected in transit (by TLS)
 
-When you click **View Details**, the **Message protected in transit (by TLS)** flyout shows you the TLS protection for messages entering and leaving your organization.
+When you click **View Details** on the widget, the **Message protected in transit (by TLS)** flyout shows you the TLS protection for messages entering and leaving your organization.
 
 ![Messages protected in transit (by TLS) flyout that appears after you click View details on the Outbound and inbound email widget](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
 Currently, TLS 1.2 is the most secure version of TLS that's offered by Microsoft 365. Often, you'll need to know the TLS encryption that's being used for compliance audits. You probably don't have a direct relationship with most of the source and destination email servers (you don't own them, and neither does Microsoft), so you don't have many options to improve the TLS encryption that's used by those servers.
 
-But, you can use [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) to ensure the best available TLS protection for messages that are sent between your email servers and Microsoft 365. Mail flow between Microsoft 365 and your own email servers or servers that belong to your partners is often more important and sensitive than regular messages, so you'll want to apply extra security and vigilance to those messages. You can upgrade or fix your own email servers to improve the TLS encryption that's being used, or reach out to your partners to do the same. The **Connector Report** displays both mail flow volume and TLS encryption for messages that use your Microsoft 365 connectors.
+But, you can use [connectors](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) to ensure the best available TLS protection for messages that are sent between your email servers and Microsoft 365. Mail flow between Microsoft 365 and your own email servers or servers that belong to your partners is often more important and sensitive than regular messages, so you'll want to apply extra security and vigilance to those messages.
 
-You can click the **Connector report** link to go to the [Connector report](view-mail-flow-reports.md#connector-report). The following insights might be available on the **Connector report** page for each affected connector:
+You can upgrade or fix your own email servers to improve the TLS encryption that's being used, or reach out to your partners to do the same. The **Connector Report** displays both mail flow volume and TLS encryption for messages that use your Microsoft 365 connectors.
+
+You can click the **Connector report** link to go to the [Connector report](view-mail-flow-reports.md#connector-report). The following insights might be available on the **Connector report** page if the associated condition has been detected:
 
 - **Inbound Partner connector seeing significant TLS1.0 mail flow**
 - **Inbound OnPremises connector seeing significant TLS1.0 mail flow**
@@ -47,4 +49,4 @@ For TLS 1.0 connections, you really need to get your email server or your partne
 
 ## See also
 
-For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
