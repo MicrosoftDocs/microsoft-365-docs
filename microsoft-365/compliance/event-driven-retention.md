@@ -59,18 +59,18 @@ To successfully use event-driven retention, it's important to understand the rel
     
 2. Users (typically records managers) apply those retention labels to content and (for SharePoint and OneDrive documents) enter an asset ID for each item. In this example, the asset ID is a product name or code used by the organization. Thus, each product's records are assigned a retention label, and each record has a property that contains an asset ID. The diagram represents **all of the content** for all product records in an organization, and each item bears the asset ID of the product whose record it is. 
     
-3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs - in this case, when a product reaches its end of life - you create an event that specifies:
+3. Product Lifetime is the event type; a specific product reaching end of life is an event. When an event of that event type occurs—in this case, when a product reaches its end of life—you create an event that specifies:
     
-  - An asset ID (for SharePoint and OneDrive documents)
+   - An asset ID (for SharePoint and OneDrive documents)
     
-  - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
+   - Keywords (for Exchange items). In this example, the organization uses a product code in messages containing product records, so the keyword for Exchange items is the same as the asset ID for SharePoint and OneDrive documents.
     
-  - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
-    
-4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to 7 days. In the previous diagram, all the items circled in red have their retention period triggered by this event. In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
-    
+   - The date when the event occurred. This date is used as the start of the retention period. This date can be the current, a past, or a future date.
+
+4. After you create an event, that event date is synchronized to all the content that has a retention label of that event type and that contains the specified asset ID or keyword. Like any retention label, this synchronization can take up to seven days. In the previous diagram, all the items circled in red have their retention period triggered by this event. In other words, when this product reaches its end of life, that event triggers the retention period for that product's records.
+
 It's important to understand that if you don't specify an asset ID or keywords for an event, **all content** with a label of that event type will have its retention period triggered by the event. This means that in the previous diagram, all content would start being retained. This might not be what you intend. 
-  
+
 Finally, remember that each retention label has its own retention settings. In this example, they all specify 10 years, but it's possible for an event to trigger retention labels where each label has a different retention period.
   
 ## How to set up event-driven retention
@@ -80,7 +80,7 @@ High-level workflow for event-driven retention:
 ![Diagram of workflow for setting up event-driven retention](../media/event-based-retention-process.png)
   
 > [!TIP]
-> See [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
+> See [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md) for a detailed scenario about using managed properties in SharePoint to auto-apply retention labels and implement event-driven retention.
 
 ### Step 1: Create a label whose retention period is based on an event
 
@@ -135,7 +135,7 @@ After an event-based label is applied to content, you can enter an asset ID for 
     
 - Employee IDs that you can use to retain content for only a specific person.
     
-Asset ID is simply another document property that's available in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event - see step 6 that follows. The important point is that you must use some *property:value* combination in the document properties to associate that item with an event type.
+Asset ID is simply another document property that's available in SharePoint and OneDrive. Your organization might already use other document properties and IDs to classify content. If so, you can also use those properties and values when you create an event—see step 6 that follows. The important point is that you must use some *property:value* combination in the document properties to associate that item with an event type.
   
 ![Text box to enter an Asset ID](../media/6d31628e-7162-4370-a8d7-de704aafa350.png)
   
@@ -145,7 +145,7 @@ When a particular instance of that event type occurs, such as a product reaches 
   
 ### Step 6: Choose the same event type used by the label in step 2
 
-When you create the event, choose the same event type used by the retention label in step 2 - for example, Product Lifetime. Only content with retention labels applied to it of that event type will have its retention period triggered.
+When you create the event, choose the same event type used by the retention label in step 2—for example, Product Lifetime. Only content with retention labels applied to it of that event type will have its retention period triggered.
   
 ![Option in Event settings to choose an event type](../media/11663591-5628-419e-9537-61eb8f5c741f.png)
   
@@ -185,9 +185,7 @@ For more information, see [Give users access to the Office 365 Security &amp; Co
   
 ## Automate events by using PowerShell
 
-The Microsoft 365 compliance center lets you create events manually and doesn't support automatically triggering an event when it occurs. However, you can use a Rest API to trigger events automatically. For more information, see [Automate event-based retention](automate-event-driven-retention.md).
-
-You can also use a PowerShell script to automate event-based retention from your business applications. The PowerShell cmdlets available for event-based retention:
+You can use a PowerShell script to automate event-based retention from your business applications. The PowerShell cmdlets available for event-based retention:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
@@ -201,4 +199,257 @@ You can also use a PowerShell script to automate event-based retention from your
     
 - [New-ComplianceRetentionEvent](https://go.microsoft.com/fwlink/?linkid=873003)
     
+
+## Automate events by using a REST API
+
+You can use a REST API to automatically create the events that trigger the start of the retention time.
+
+A REST API is a service endpoint that supports sets of HTTP operations (methods), which provide create/retrieve/update/delete access to the service's resources. For more information, see [Components of a REST API request/response](https://docs.microsoft.com/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse). By using the Microsoft 365 REST API, events can be created and retrieved using the POST and GET methods.
+
+There are two options for using the REST API:
+
+- **Microsoft Power Automate or a similar application** to trigger the occurrence of an event automatically. Microsoft Power Automate is an orchestrator for connecting to other systems, so you don't need to write a custom solution. For more information, see the [Power Automate website](https://flow.microsoft.com/en-us/).
+
+- **PowerShell or an HTTP client to call the REST API** to create events by using PowerShell (version 6 or later), which is part of a custom solution.
+
+Before you use the REST API, as a global administrator, confirm the URL to use for the retention event call. To do this, run a GET retention event call by using the REST API URL:
+
+```console
+https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
+```
+
+Check the response code. If it's 302, get the redirected URL from the Location property of the response header and use that URL instead of `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` in the instructions that follow.
+
+The events that get automatically created can be confirmed by viewing them in the Microsoft 365 compliance center > **Records management** >  **Events**.
+
+### Use Microsoft Power Automate to create the event
+
+Create a flow that creates an event using the Microsoft 365 REST API:
+
+![Using Flow to create an event](../media/automate-event-driven-retention-flow-1.png)
+
+![Using flow to call the REST API](../media/automate-event-driven-retention-flow-2.png)
+
+#### Create an event
+
+Sample code to call the REST API:
+
+- **Method**: POST
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+- **Body**:
+    
+    ```xml
+    <?xml version='1.0' encoding='utf-8' standalone='yes'?>
+    
+    <entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+    
+    xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+    
+    xmlns='http://www.w3.org/2005/Atom'>
+    
+    <category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+    
+    <updated>9/9/2017 10:50:00 PM</updated>
+    
+    <content type='application/xml'>
+    
+    <m:properties>
+    
+    <d:Name>Employee Termination </d:Name>
+    
+    <d:EventType>99e0ae64-a4b8-40bb-82ed-645895610f56</d:EventType>
+    
+    <d:SharePointAssetIdQuery>1234</d:SharePointAssetIdQuery>
+    
+    <d:EventDateTime>2018-12-01T00:00:00Z </d:EventDateTime>
+    
+    </m:properties>
+    
+    </content>
+    
+    </entry>
+    ```
+    
+- **Authentication**: Basic
+- **Username**: "Complianceuser"
+- **Password**:	"Compliancepassword"
+
+
+##### Available parameters
+
+
+|Parameters|Description|Notes|
+|--- |--- |--- |
+|<d:Name></d:Name>|Provide a unique name for the event,|Cannot contain trailing spaces or the following characters: % * \ & < \> \| # ? , : ;|
+|<d:EventType></d:EventType>|Enter event type name (or Guid),|Example: "Employee termination". Event type has to be associated with a retention label.|
+|<d:SharePointAssetIdQuery></d:SharePointAssetIdQuery>|Enter "ComplianceAssetId:" + employee ID|Example: "ComplianceAssetId:12345"|
+|<d:EventDateTime></d:EventDateTime>|Event Date and Time|Format: yyyy-MM-ddTHH:mm:ssZ, Example: 2018-12-01T00:00:00Z
+|
+
+###### Response codes
+
+| Response Code | Description       |
+| ----------------- | --------------------- |
+| 302               | Redirect              |
+| 201               | Created               |
+| 403               | Authorization Failed  |
+| 401               | Authentication Failed |
+
+##### Get events based on a time range
+
+- **Method**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent?BeginDateTime=2019-01-11&EndDateTime=2019-01-16`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+
+###### Response codes
+
+| Response Code | Description                   |
+| ----------------- | --------------------------------- |
+| 200               | OK, A list of events in atom+ xml |
+| 404               | Not found                         |
+| 302               | Redirect                          |
+| 401               | Authorization Failed              |
+| 403               | Authentication Failed             |
+
+##### Get an event by ID
+
+- **Method**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent('174e9a86-74ff-4450-8666-7c11f7730f66')`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+###### Response codes
+
+| Response Code | Description                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | OK, The response body contains the event in atom+xml |
+| 404               | Not found                                            |
+| 302               | Redirect                                             |
+| 401               | Authorization Failed                                 |
+| 403               | Authentication Failed                                |
+
+##### Get an event by name
+
+- **Method**: GET
+
+- **URL**: `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent`
+
+- **Headers**: Key = Content-Type, Value = application/atom+xml
+
+- **Authentication**: Basic
+
+- **Username**: "Complianceuser"
+
+- **Password**: "Compliancepassword"
+
+
+###### Response codes
+
+| Response Code | Description                                      |
+| ----------------- | ---------------------------------------------------- |
+| 200               | OK, The response body contains the event in atom+xml |
+| 404               | Not found                                            |
+| 302               | Redirect                                             |
+| 401               | Authorization Failed                                 |
+| 403               | Authentication Failed                                |
+
+### Use PowerShell or any HTTP client to create the event
+
+PowerShell must be version 6 or later.
+
+In a PowerShell session, run the following script:
+
+```powershell
+param([string]$baseUri)
+
+$userName = "UserName"
+
+$password = "Password"
+
+$securePassword = ConvertTo-SecureString $password -AsPlainText -Force
+
+$credentials = New-Object System.Management.Automation.PSCredential($userName, $securePassword)
+
+$EventName="EventByRESTPost-$(([Guid]::NewGuid()).ToString('N'))"
+
+Write-Host "Start to create an event with name: $EventName"
+
+$body = "<?xml version='1.0' encoding='utf-8' standalone='yes'?>
+
+<entry xmlns:d='http://schemas.microsoft.com/ado/2007/08/dataservices'
+
+xmlns:m='http://schemas.microsoft.com/ado/2007/08/dataservices/metadata'
+
+xmlns='http://www.w3.org/2005/Atom'>
+
+<category scheme='http://schemas.microsoft.com/ado/2007/08/dataservices/scheme' term='Exchange.ComplianceRetentionEvent' />
+
+<updated>7/14/2017 2:03:36 PM</updated>
+
+<content type='application/xml'>
+
+<m:properties>
+
+<d:Name>$EventName</d:Name>
+
+<d:EventType>e823b782-9a07-4e30-8091-034fc01f9347</d:EventType>
+
+<d:SharePointAssetIdQuery>'ComplianceAssetId:123'</d:SharePointAssetIdQuery>
+
+</m:properties>
+
+</content>
+
+</entry>"
+
+$event = $null
+
+try
+
+{
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri "$baseUri/ComplianceRetentionEvent" -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+catch
+
+{
+
+$response = $_.Exception.Response
+
+if($response.StatusCode -eq "Redirect")
+
+{
+
+$url = $response.Headers.Location
+
+Write-Host "redirected to $url"
+
+$event = Invoke-RestMethod -Body $body -Method 'POST' -Uri $url -ContentType "application/atom+xml" -Authentication Basic -Credential $credentials -MaximumRedirection 0
+
+}
+
+}
+
+$event | fl *
+
+```
 

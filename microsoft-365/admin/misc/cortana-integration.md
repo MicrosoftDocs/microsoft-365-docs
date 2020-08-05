@@ -28,7 +28,7 @@ Cortana, your personal productivity assistant, offers AI-powered experiences to 
 
 As a personal productivity assistant, Cortana is designed to deliver features that safely and securely process and reason over Office 365 data like emails, files, chats, etc., to save time, increase efficiency, and enhance your users’ productivity.
 
-Moving forward, we're focusing Cortana on enterprise productivity. 
+Moving forward, we're focusing Cortana on enterprise productivity.
 
 - Consistent with other Office 365 services, Cortana enterprise services meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products).
 
@@ -154,7 +154,7 @@ Turn off Cortana access to your organization's Microsoft hosted data
 
 1. In the Microsoft 365 admin center, select **Settings** > **Org Settings** and select **Cortana**.
 
-2. Unselect the checkbox for **Allow these Cortana optional connected experiences to use your organization's Microsoft hosted data** to disable Cortana connected experiences.
+2. Unselect the checkbox for **Allow Cortana in Windows 10 (version 1909 and earlier), and the Cortana app on iOS and Android, to access Microsoft-hosted data on behalf of people in your organization** to disable Cortana connected experiences.
 
 3. Select **Save changes**.
 

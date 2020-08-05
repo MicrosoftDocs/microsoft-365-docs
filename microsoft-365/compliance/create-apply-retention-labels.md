@@ -258,4 +258,4 @@ Event-based retention is another supported scenario for retention labels. For mo
 
 - [Start retention when an event occurs](event-driven-retention.md)
 - [Automate event-based retention](automate-event-driven-retention.md)
-- [Manage the lifecycle of SharePoint documents with retention labels](auto-apply-retention-labels-scenario.md)
+- [Use retention labels to manage the lifecycle of documents stored in SharePoint](auto-apply-retention-labels-scenario.md)
