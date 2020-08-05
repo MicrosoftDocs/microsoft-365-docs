@@ -171,7 +171,7 @@ Although the main purpose of retention labels is to retain or delete content, yo
   
 For example, you can create and apply a retention label named "Review later" with no actions, and then use that label to find that content later.
   
-![Label settings page with retention turned off](../media/retention-label-retentionoff.png)
+![Label settings to classify-only](../media/retention-label-retentionoff.png)
 
 #### Using a retention label as a condition in a DLP policy
 
