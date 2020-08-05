@@ -10,31 +10,29 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
-description: Admins can learn about the mail flow dashboard in the Security & Compliance Center, including insights, reports, and widgets.
+description: "Admins can learn about the insights and reports that are available in the mail flow dashboard in the Security & Compliance Center."
 ms.custom: seo-marvel-apr2020
 ---
 
-# Mail flow insights in the Security & Compliance Center
+# Mail flow dashboard in the Security & Compliance Center
 
 Admins can use mail flow dashboard in the Security & Compliance Center to discover trends, insights and take actions to fix issues related to mail flow in their organization.
 
 ![The mail flow dashboard in the Security & Compliance Center](../../media/mail-flow-dashboard-v2.png)
 
-The available widgets and insights are:
+The available reports and insights are:
 
 - [Auto-forwarded messages](mfi-auto-forwarded-messages-report.md)
 
-- [Fix slow mail flow rules](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
-
 - [Fix possible mail loop](mfi-mail-loop-insight.md)<sup>1</sup>
 
-- [Fix sender domain](mfi-sender-domain-insight.md)<sup>1</sup>
+- [Fix slow mail flow rules](mfi-slow-mail-flow-rules-insight.md)<sup>1</sup>
 
 - [Mail flow map](mfi-mail-flow-map-report.md)
 
-- [New users forwarding email](mfi-new-users-forwarding-email.md)<sup>2</sup>
-
 - [New domains being forwarded email](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
+
+- [New users forwarding email](mfi-new-users-forwarding-email.md)<sup>2</sup>
 
 - [Non-accepted domain](mfi-non-accepted-domain-report.md)
 
@@ -50,7 +48,7 @@ The available widgets and insights are:
 
 <sup>1</sup> This insight appears in the **Recommended for you** area of the mail flow dashboard only after the issue is detected. Otherwise, you won't see it.
 
-<sup>2</sup> This widget isn't visible in the mail flow dashboard, but is visible on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page after the issue is detected. Otherwise, you won't see it.
+<sup>2</sup> This insight doesn't appear on the mail flow dashboard, but is visible on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page after the issue is detected. Otherwise, you won't see it.
 
 ## Permissions required to view the mail flow dashboard
 

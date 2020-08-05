@@ -17,7 +17,7 @@ description: "Admins can learn how to use the New domains being forwarded email 
 
 Although you might have valid business reasons to forward email messages to external recipients in specific domains, it's suspicious when users in your organization suddenly start forwarding messages to external domains, and no one in the organization has ever forwarded messages to those domains (new domains).
 
-The **New domains being forwarded email** insight in the Security & Compliance Center notifies you when users in your organization are forwarding messages to new domains.
+The **New domains being forwarded email** insight notifies you when users in your organization are forwarding messages to new domains.
 
 This insight appears only when the issue is detected, and it appears on the [Forwarding report](view-mail-flow-reports.md#forwarding-report) page.
 
@@ -35,4 +35,4 @@ If you suspect the accounts have been compromised, see [Responding to a compromi
 
 ## Related topics
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

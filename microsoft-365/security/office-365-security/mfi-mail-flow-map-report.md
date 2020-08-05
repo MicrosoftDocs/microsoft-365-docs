@@ -1,5 +1,5 @@
 ---
-title: "Mail flow map"
+title: "Mail flow map report"
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,9 +15,9 @@ ms.custom:
 description: "Admins can learn about the mail flow map report in the mail flow dashboard in the Security & Compliance Center."
 ---
 
-# Mail flow map in the Security & Compliance Center
+# Mail flow map report in the mail flow dashboard Security & Compliance Center
 
-The **Mail flow map** in the Security & Compliance Center gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
+The **Mail flow map** report in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center gives insight as to how mail flows through your organization. You can use this information to learn patterns, identify anomalies, and fix issues as they occur.
 
 ![Mail flow map widget in the mail flow dashboard in the Security & Compliance Center](../../media/mfi-mail-flow-map-report-widget.png)
 
@@ -41,7 +41,7 @@ If you click **Filters** in a report view, you can specify a date range with **S
 
 To email the report for a specific date range to one or more recipients, click **Request download**.
 
-Related insights are shown beneath the Mail flow map if they're available (for example, the [Sender domain insight](mfi-sender-domain-insight.md) or the [Mail loop insight](mfi-mail-loop-insight.md)).
+Related insights are shown beneath the Mail flow map if they're available (for example, the [Fix possible mail loop insight](mfi-mail-loop-insight.md)).
 
 ## Details table view for the Mail flow map report
 
@@ -61,4 +61,4 @@ To go back to the reports view, click **View report**.
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

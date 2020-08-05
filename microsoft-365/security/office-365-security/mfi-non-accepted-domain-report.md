@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.assetid:
 ms.custom:
 - seo-marvel-apr2020
-description: "Admins can learn how to use the Non-accepted domain report in the Security & Compliance Center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
+description: "Admins can learn how to use the Non-accepted domain report in the mail flow dashboard in the Security & Compliance Center to monitor messages from your on-premises organization where the sender's domain isn't configured in Microsoft 365."
 ---
 
-# Non-accepted domain report in the Security & Compliance Center
+# Non-accepted domain report in the mail flow dashboard in the Security & Compliance Center
 
-The **Non-accepted domain** report in the Security & Compliance Center displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.
+The **Non-accepted domain** report in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center displays information about messages from your on-premises email organization where the sender's domain isn't configured as an accepted domain in your Microsoft 365 organization.
 
 Microsoft 365 might throttle these messages if we have data to prove that the intent of these messages is malicious. Therefore, it's important for you to understand what's happening and to fix the issue.
 
@@ -61,4 +61,4 @@ To go back to the reports view, click **View report**.
 
 ## Related topics
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

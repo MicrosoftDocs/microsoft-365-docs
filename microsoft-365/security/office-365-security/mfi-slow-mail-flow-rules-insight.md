@@ -24,7 +24,7 @@ Inefficient mail flow rules (also known as transport rules) can lead to mail flo
 - Conditions that use complex regular expression (regex) pattern matching.
 - Conditions that use content checking in attachments.
 
-The **Fix slow mail flow rules** insight in the **Recommended for you** area of the mail flow dashboard in the Security & Compliance Center notifies you when a mail flow rule is taking too long to complete. You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
+The **Fix slow mail flow rules** insight in the **Recommended for you** area of the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center notifies you when a mail flow rule is taking too long to complete. You can use this notification to help you to identify and fine-tune mail flow rules to help reduce mail flow delays.
 
 ![Fix slow mail flow rules insight in the Recommended for you area of the mail flow dashboard](../../media/mfi-fix-slow-mail-flow-rules.png)
 
@@ -35,11 +35,10 @@ When you click **View details** on the widget, a flyout appears with more inform
 - **Average time spent on each message**
 - **Median time spent on a message**: The middle value separating the upper half from the lower half.
 
-
 ![Details flyout that appears after clicking View details on the Fix slow mail flow rules insight](../../media/mfi-fix-slow-mail-flow-rules-details.png)
 
 For more information about conditions and exceptions in mail flow rules in Exchange Online, see [Mail flow rule conditions and exceptions (predicates) in Exchange Online](../../security-and-compliance/mail-flow-rules/conditions-and-exceptions.md).
 
 ## Related topics
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).

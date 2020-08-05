@@ -13,9 +13,9 @@ ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: "Admins can learn about the Auto-forwarded messages report in the mail flow dashboard in the Security & Compliance Center."
 ---
 
-# Auto-forwarded messages report
+# Auto-forwarded messages report in the mail flow dashboard in the Security & Compliance Center
 
-The **Auto-forwarded messages** report in the mail flow dashboard displays information on messages that are automatically forwarded from your organization to recipients in external domains.
+The **Auto-forwarded messages** report in the [mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center displays information on messages that are automatically forwarded from your organization to recipients in external domains.
 
 ![Auto-forwarded messages report in the Security & Compliance Center](../../media/mfi-auto-forwarded-messages.png)
 
@@ -50,4 +50,4 @@ Two insights are generated based on the report data:
 
 ## See also
 
-For more information about other mail flow insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+For information about other mail flow reports and insights in the mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).
