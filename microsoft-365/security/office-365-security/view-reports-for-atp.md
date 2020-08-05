@@ -213,7 +213,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
 
 - **URL click protection action**: Shows the number of URL clicks by users in the organization and the results of the click:
 
-  - **Blocked**
+  - **Blocked** (the user was blocked from navigating to the URL)
   - **Blocked and clicked through**
   - **Clicked through during scan**
 
@@ -222,7 +222,7 @@ The **URL threat protection** report has two aggregated views that are refreshed
   If you click **Filters**, you can modify the report with the following filters:
 
   - **Start date** and **End date**
-  - The available click protection actions, plus the value **Allowed** to see information for all URL clicks (not just blocked clicks).
+  - The available click protection actions, plus the value **Allowed** (the user was allowed to navigate to the URL).
 
   ![URL click protection action view in the URL threat protection report](../../media/url-threat-protection-report-url-click-protection-action-view.png)
 

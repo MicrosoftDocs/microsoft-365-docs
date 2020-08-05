@@ -5,8 +5,10 @@ keywords: Microsoft Managed Desktop, Microsoft 365, service, documentation
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
-ms.date: 09/24/2018
 ms.collection: M365-modern-desktop
+ms.author: jaimeo
+manager: laurawi
+ms.topic: article
 ---
 
 # Microsoft Managed Desktop roles and responsibilities
@@ -32,7 +34,7 @@ User and device grouping | Microsoft Managed Desktop operations team will create
 
 ## Your roles and responsibilities
 
-Below is an additional set of common roles and responsibilities that are not provided by Microsoft, but are required for a successful deployment. It’s not exhaustive but is applicable for most organizations. There are a few items below that both Microsoft and the customer share responsibilties. 
+Below is an additional set of common roles and responsibilities that are not provided by Microsoft, but are required for a successful deployment. It’s not exhaustive but is applicable for most organizations. There are a few items below that both Microsoft and the customer share responsibilities. 
 
 Role or responsibility | Description
 --- | ---
