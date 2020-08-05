@@ -23,7 +23,7 @@ ms.custom: seo-marvel-apr2020
 
 If your organization has [Office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP), and you have the [necessary permissions](#required-licenses-and-permissions), you have either **Explorer** or **real-time detections** (formerly *real-time reports* — [see what's new](#new-features-in-threat-explorer-and-real-time-detections)!). In the Security & Compliance Center, go to **Threat management**, and then choose **Explorer** _or_ **Real-time detections**.
 
-| With ATP Plan 2, you see: | With ATP Plan 1, you see: |
+|With ATP Plan 2, you see:|With ATP Plan 1, you see:|
 |---|---|
 |![Threat explorer](../../media/threatmgmt-explorer.png)|![Real-time detections](../../media/threatmgmt-realtimedetections.png)|
 |
@@ -41,37 +41,37 @@ With this report, you can:
 
 ## Experience Improvements to Threat Explorer and Real-Time Detections
 
-As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-Time Detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below: 
+As part of improving the hunting process, we have made a few updates to Threat Explorer and Real-Time Detections. These are ‘experience’ improvements, with the focus on making the hunting experience more consistent. These changes are outlined below:
 
 - [Timezone improvements](#timezone-improvements)
 - [Update in the Refresh process](#update-in-the-refresh-process)
 - [Chart drilldown to add to filters](#chart-drilldown-to-add-to-filters)
 - [In product information updates](#in-product-information-updates)
 
-### Timezone improvements 
+### Timezone improvements
 
-We will show the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user. 
+We will show the timezone for the email records within the Portal, as well as for Exported data. The timezone will be visible across experiences like Email Grid, Details Flyout, Email Timeline, and Similar Emails, so that the timezone for the result set is clear to the user.
 
-![View Timezone in Explorer](../media/TimezoneImprovements.png)
+![View Timezone in Explorer](../../media/TimezoneImprovements.png)
 
-### Update in the Refresh process 
+### Update in the Refresh process
 
 We have heard feedback around confusion with automatic refresh (e.g. for date, as soon as you change the date, the page would refresh) and manual refresh (for other filters). Similarly, removing filters leads to automatic refresh, this causes situations where changing the different filters while modifying the query can cause inconsistent search experiences. To solve this, we are moving to a manual filtering mechanism.
-From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they are done with defining the query. The refresh button has also been updated to call it out clearly on the screen. We have also updated tooltips and in-product documentation around this change. 
+From an experience standpoint, the user can apply and remove the different range of filters (from the filter set, and date), and press the refresh button to filter the results once they are done with defining the query. The refresh button has also been updated to call it out clearly on the screen. We have also updated tooltips and in-product documentation around this change.
 
-![Click on Refresh to filter results](../media/ManualRefresh.png)
+![Click on Refresh to filter results](../../media/ManualRefresh.png)
 
 ### Chart drilldown to add to filters
 
 You will now be able to click on the chart legend values to add that value as a filter. Note that you will still have to click on the refresh button to filter the results as part of the change described above.
 
-![Drilldown through charts to Filter](../media/ChartDrilldown.png)
+![Drilldown through charts to Filter](../../media/ChartDrilldown.png)
 
-### In product information updates 
+### In product information updates
 
-You should also see additional details within the product. For example, the total number of search results within grid (see below), as well as improvements around labels, error messages and tooltips, to give more information around filters, search experience, and result set. 
+You should also see additional details within the product. For example, the total number of search results within grid (see below), as well as improvements around labels, error messages and tooltips, to give more information around filters, search experience, and result set.
 
-![View In-product Info](../media/ProductInfo.png)
+![View In-product Info](../../media/ProductInfo.png)
 
 
 ## New features in real-time detections
@@ -99,19 +99,18 @@ How is this done? Delivery Status is now broken out into two columns:
 
 Delivery Action is the action taken on an email due to existing policies or detections. Here are the possible actions an email can take:
 
-|Delivered  |Junked  |Blocked  |Replaced  |
-|---------|---------|---------|---------|
-|Email was delivered to Inbox or folder of a user and the user can directly access it.    | Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.       | Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!     | Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.     |
-    
-
-| Delivered | Junked | Blocked | Replaced |
+|Delivered|Junked|Blocked|Replaced|
 |---|---|---|---|
-|Email was delivered to the user's inbox or another folder, and the user can directly access it.| Email was sent to either user's Junk folder or Deleted folder, and the user has access to email messages in those folders.| Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.| Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.|
+|Email was delivered to Inbox or folder of a user and the user can directly access it.|Email was sent to either user’s Junk folder or Deleted folder, and the user has access to emails in those folders.|Any emails that are quarantined, that  failed, or were dropped. This is completely inaccessible by the user!|Any email where malicious attachments are replaced by .txt files that state the attachment was malicious.|
+
+|Delivered|Junked|Blocked|Replaced|
+|---|---|---|---|
+|Email was delivered to the user's inbox or another folder, and the user can directly access it.|Email was sent to either user's Junk folder or Deleted folder, and the user has access to email messages in those folders.|Any email messages that are quarantined, that failed, or were dropped, and are not accessible by the user.|Any email messages where malicious attachments were replaced by .txt files that state the attachments were malicious.|
 |
 
 And here is what the user can see, and what they can't:
 
-| Accessible to end users | Inaccessible to end users |
+|Accessible to end users|Inaccessible to end users|
 |---|---|
 |Delivered|Blocked|
 |Junked|Replaced|
@@ -200,7 +199,7 @@ To review phish URLs in messages and clicks on URLs in phish messages, use the [
    ![Explorer URLs that were blocked](../../media/ExplorerPhishClickVerdictURLs.png)
 
    Select a URL to view more detailed information.
-   
+
    > [!NOTE]
    > In the URL flyout dialog, the filtering on email messages is removed to show you the full view of the URL's exposure in your environment. This lets you filter down email messages in Explorer to ones you are concerned about, find specific URLs that are potential threats, then expand your understanding of the URL exposure in your environment (via the URL details dialog) without having to add URL filters to the Explorer view itself.
 
