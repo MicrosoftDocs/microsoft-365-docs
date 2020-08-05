@@ -85,6 +85,7 @@ All scenarios require you to [Create and configure sensitivity labels and their 
 |Discover, label, and protect files stored in data stores that are in the cloud|[Discover, classify, label, and protect regulated and sensitive data stored in the cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |Apply and view sensitivity labels in Power BI, and protect data when it is exported|[Data protection in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|
 |Monitor and understand how sensitivity labels are being used in my organization|[Know your data - data classification overview](data-classification-overview.md) <br /><br /> [View label usage with label analytics](label-analytics.md)|
+|Extend sensitivity labels to third-party apps and services|[Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
 
 ## End-user documentation for sensitivity labels
 

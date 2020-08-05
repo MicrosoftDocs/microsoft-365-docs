@@ -22,6 +22,19 @@ Microsoft Managed Desktop simplifies app control by taking care of the more chal
 
 When you first deploy apps, Microsoft Managed Desktop needs to assess their current behavior. The exact steps for enabling app control depend on whether devices have already been deployed in your environment.
 
+### Devices not yet in use
+
+If you don't yet have any devices in use, open a service ticket with Microsoft Managed Desktop Operations requesting that we turn on app control. Operations will progressively deploy policies to deployment groups following this schedule:
+
+|Deployment group  |Policy type  |Timing  |
+|---------|---------|---------|
+|Test     |  Audit       |  Day 0       |
+|First     | Enforced        | Day 1        |
+|Fast     | Enforced        |  Day 2       |
+|Broad     | Enforced        |  Day 3       |
+
+You can always open another service request to pause or roll back part of this deployment at any time during the rollout.
+
 ### Devices already in use
 
 If already have at least one Microsoft Managed Desktop device in use, follow these steps:
@@ -34,21 +47,10 @@ If already have at least one Microsoft Managed Desktop device in use, follow the
 |---------|---------|---------|
 |Test     |  Audit       |  Day 0       |
 |First     | Enforced        | Day 1        |
-|Fast     | Enforced        |  Day 3       |
-|Broad     | Enforced        |  Day 7       |
+|Fast     | Enforced        |  Paused, rollout on request       |
+|Broad     | Enforced        |  Paused, rollout on request       |
 
 You can always open another service request to pause or roll back part of this deployment at any time during the rollout.
 
-### Devices not yet in use
 
-If you don't yet have any devices in use, open a service ticket with Microsoft Managed Desktop Operations requesting that we turn on app control. Operations will progressively deploy policies to deployment groups following this schedule:
-
-|Deployment group  |Policy type  |Timing  |
-|---------|---------|---------|
-|Test     |  Audit       |  Day 0       |
-|First     | Enforced        | Day 1        |
-|Fast     | Enforced        |  Day 3       |
-|Broad     | Enforced        |  Day 7       |
-
-You can always open another service request to pause or roll back part of this deployment at any time during the rollout.
 

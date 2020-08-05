@@ -80,6 +80,10 @@ While you add URLs to your list, keep the following points in mind:
 |`https://contoso.com/a*`|Blocks a site `https://contoso.com/a` and additional subpaths like `https://contoso.com/a/b`|
 |`https://toys.contoso.com*`|Blocks a subdomain ("toys" in this case) but allow clicks to other domain URLs (like `https://contoso.com` or `https://home.contoso.com`).|
 
+
+> [!NOTE]
+> By default, you can only add 500 URLs to the blocked URL list in the Office 365 ATP Safe Links default policy.
+
 ## How to define exceptions for certain users in an organization
 
 If you want certain groups to be able to view URLs that might be blocked for others, you can specify an ATP Safe Links policy that applies to specific recipients. See [Set up a custom "do not rewrite" URLs list using ATP Safe Links](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
