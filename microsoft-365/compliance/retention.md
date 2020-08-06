@@ -230,16 +230,16 @@ An explicitly assigned retention label takes precedence over an implicitly assig
 
 #### Monitoring retention labels
 
-Use [data classification](data-classification-overview.md) from the Microsoft 365 compliance center to monitor how your retention labels are being used across your tenant, where your labeled items are, and what is being done with them. 
+Use [data classification](data-classification-overview.md) from the Microsoft 365 compliance center to monitor how your retention labels are being used in your tenant, and where your labeled items are. 
 
 For example, from **Data classification** > **Overview**, you can see the top retention labels applied to content, all the retention labels applied, and the locations that retention labels are applied.
 
 You can then drill down into details by using [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md).
 
->![TIP]
+> [!TIP]
 >Consider using some of the other data classification insights, such as trainable classifiers and sensitive info types, to help you identify content that you might need to label for retention, deletion, or records management.
 
-If you are still using the Office 365 Security & Compliance Center, you can find the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and details from **Information governance** > **Label activity explorer**. For more information, see the following documentation:
+The Office 365 Security & Compliance Center has the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and details from **Information governance** > **Label activity explorer**. For more information about this older admin center, see the following documentation:
 - [View the data governance reports](view-the-data-governance-reports.md)
 - [View label activity for documents](view-label-activity-for-documents.md)
 - [View label usage with label analytics](label-analytics.md)
