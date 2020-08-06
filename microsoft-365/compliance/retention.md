@@ -239,9 +239,8 @@ You can then drill down into details by using [content explorer](data-classifica
 
 The Office 365 Security & Compliance Center has the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and details from **Information governance** > **Label activity explorer**. For more information about monitoring retention labels from this older admin center, see the following documentation:
 - [View the data governance reports](view-the-data-governance-reports.md)
-- [View label activity for documents](view-label-activity-for-documents.md)
 - [View label usage with label analytics](label-analytics.md)
-
+- [View label activity for documents](view-label-activity-for-documents.md)
 
 #### Using Content Search to find all content with a specific retention label
 
