@@ -90,9 +90,8 @@ Microsoft Threat Protection unifies alerts, incidents, automated investigation a
 
 [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) (Office 365 ATP) safeguards your organization against malicious threats in email messages (attachments and URLs), Office documents, and collaboration tools. The following table lists Office 365 ATP features and capabilities that are included in Microsoft 365 E5:
 
-|||
-|---|---|
 |Configuration, protection, and detection capabilities|Automation, investigation, remediation, and education capabilities|
+|---|---|
 |[Safe Attachments](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br/>[Safe Links](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)<br/>[Safe Documents](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)<br/>[ATP for SharePoint, OneDrive, and Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)<br/>[ATP anti-phishing protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies#exclusive-settings-in-atp-anti-phishing-policies)|[Threat Trackers](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-trackers)<br/>[Threat Explorer](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer)<br/>[Automated investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)<br/>[Attack Simulator](https://docs.microsoft.com/microsoft-365/security/office-365-security/attack-simulator)|
 |
 
