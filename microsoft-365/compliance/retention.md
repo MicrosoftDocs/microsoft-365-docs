@@ -230,14 +230,12 @@ An explicitly assigned retention label takes precedence over an implicitly assig
 
 #### Monitoring retention labels
 
-Use [data classification](data-classification-overview.md) from the Microsoft 365 compliance center to monitor how your retention labels are being used in your tenant, and where your labeled items are. 
-
-For example, from **Data classification** > **Overview**, you can see the top retention labels applied to content, all the retention labels applied, and the locations that retention labels are applied.
+From the Microsoft 365 compliance center, use **Data classification** > **Overview** to monitor how your retention labels are being used in your tenant, and identify where your labeled items are located. For more information, including important prerequisites, see [Know your data - data classification overview](data-classification-overview.md).
 
 You can then drill down into details by using [content explorer](data-classification-content-explorer.md) and [activity explorer](data-classification-activity-explorer.md).
 
 > [!TIP]
->Consider using some of the other data classification insights, such as trainable classifiers and sensitive info types, to help you identify content that you might need to label for retention, deletion, or records management.
+>Consider using some of the other data classification insights, such as trainable classifiers and sensitive info types, to help you identify content that you might need to retain or delete, or manage as records.
 
 The Office 365 Security & Compliance Center has the equivalent overview information for retention labels from **Information governance** > **Dashboard**, and details from **Information governance** > **Label activity explorer**. For more information about this older admin center, see the following documentation:
 - [View the data governance reports](view-the-data-governance-reports.md)
