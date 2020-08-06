@@ -67,7 +67,6 @@ Use the following table to help you map your business requirements to retention 
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
 | Monitor how and where retention labels are applied | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
-| Audit admin activities related to retention | [Auditing retention configuration](retention.md#auditing-retention-configuration) | 
 
 ## End-user documentation for retention labels
 
