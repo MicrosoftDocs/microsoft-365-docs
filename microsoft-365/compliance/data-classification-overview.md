@@ -94,8 +94,8 @@ The sensitivity label card shows the number of items (email or document) by sens
 ![breakdown of content by sensitivity label classification placeholder screenshot](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with labels, see:
->- [sensitivity labels](sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/azure/information-protection/configure-policy)
+> If you haven't created or published any sensitivity labels or no content has had a sensitivity label applied, this card will display the message "No sensitivity labels detected". To get started with sensitivity labels, see:
+>- [Get started with sensitivity labels](get-started-with-sensitivity-labels.md) or for AIP [Configure the Azure information protection policy](https://docs.microsoft.com/azure/information-protection/configure-policy)
 
 ## Top retention labels applied to content
 
@@ -106,8 +106,8 @@ The top applied retention labels card shows you how many items have a given rete
 ![top applied retention labels placeholder screenshot](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> If this card displays the message, "No retention labels detected, it means you haven't created or published any retention  labels or no content has had a retention label applied. To get started with retention labels, see:
->- [Get started with retention policies and retention lables](get-started-with-retention.md)
+> If this card displays the message, "No retention labels detected", it means you haven't created or published any retention labels or no content has had a retention label applied. To get started with retention labels, see:
+>- [Get started with retention policies and retention labels](get-started-with-retention.md)
 
 ## Top activities detected
 
