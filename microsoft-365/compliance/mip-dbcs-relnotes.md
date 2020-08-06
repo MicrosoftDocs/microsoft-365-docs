@@ -42,3 +42,21 @@ The following conditions are not supported for Communication Compliance at this 
 •	“Attachment contains any of these words”
 •	“Attachment contains any of these words”
 Instead we recommend creating a custom Sensitive Information Type (SIT) with keyword dictionary which will detect patterns across messages and attachments, and using this custom SIT as a Communication Compliance policy condition, as shown below:
+
+
+<!-- this is a draft of the note that will be placed in the 4 topics above -->
+> [!NOTE]
+> Microsoft 365 Information Protection is releasing preview support for double byte character set languages for:
+- Chinese (simplified)
+- Chinese (traditional)
+- Korean
+- Japanese
+
+This preview is only in the commercial cloud and the rollout is limited to:
+- Japan
+- Korea
+- China
+- Hong Kong
+- Macau
+- Taiwan
+
