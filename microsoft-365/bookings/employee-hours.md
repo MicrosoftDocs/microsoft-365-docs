@@ -26,13 +26,7 @@ If you want to book time off for staff members so customers can't book them whil
 
 Watch this video or follow the steps below to set an employee's working hours.
 
-**-**
-**Remove XML below and insert video link**
-**-**
-<mediaLink>
-	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
-	<video videoid="RWuXUq" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
-</mediaLink>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
 1. In Microsoft 365, select the app launcher, and then select **Bookings**.
 
@@ -48,13 +42,7 @@ Watch this video or follow the steps below to set an employee's working hours.
 
 1. Click **+** to add start- and end-time selectors.
 
-**Needs new screenshot here**
-
-   ![Image of Bookings staff time selectors]()
-
 1. Select Save.
-
-   ![Image of save button](../media/bookings-save-button.png)
 
 ## Set an employee's days off
 

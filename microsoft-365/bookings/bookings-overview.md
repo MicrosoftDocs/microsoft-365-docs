@@ -56,4 +56,6 @@ Watch this video or follow the steps below to set up Bookings.
 
 8. [Publish or unpublish your booking page](publish-booking-page.md)
 
-9. [Create and staff your bookings](create-and-staff.md)
+9. [Create a manual booking](create-a-manual-booking.md)
+
+10. [Connect to Facebook](connect-to-facebook.md)

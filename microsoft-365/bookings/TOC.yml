@@ -8,7 +8,7 @@
     - name: Setting up Microsoft Bookings
       href: bookings-setup-guide.md
     - name: Create and staff your bookings
-      href: create-and-staff.md
+      href: create-a-manual-booking
   - name: Get the Bookings app
     href: get-bookings-app.md
 

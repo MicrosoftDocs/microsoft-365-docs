@@ -51,7 +51,7 @@ landingContent:
           - text: Publish or unpublish your booking page
             url: publish-booking-page.md
           - text: Create and staff your bookings
-            url: create-and-staff.md
+            url: create-a-manual-booking.md
 
   # Card
   - title: Invite people to book appointments

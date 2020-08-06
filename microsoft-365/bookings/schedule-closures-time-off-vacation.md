@@ -20,13 +20,7 @@ Occasionally, you'll want to close your business for holidays or team events, or
 
 Watch this video or follow the steps below to schedule business closures or employee off.
 
-**-**
-**Remove XML below and insert video link**
-**-**
-<mediaLink>
-	<image xlink:href="4873755a-8b1e-497e-bc54-101d1e75d3e7" />
-	<video videoid="RE2TxDC" channel="ALTENUS_MS_OFFICE" videotype="single" player="ocvideo" />
-</mediaLink>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2TxDC]
 
 ## Schedule ad hoc business closures
 
