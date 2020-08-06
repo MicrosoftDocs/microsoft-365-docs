@@ -100,6 +100,8 @@ We're continuously working on optimizing retention functionality in Teams. In th
 
 - **Teams messages in private channels aren't included when you configure a retention policy for Teams channel messages**. Currently, private channels aren't supported by retention policies. 
 
+- **Likes and other reactions are not retained for Teams chat and channel messages**. Reactions from others in the form of emoticons aren't supported by retention policies.
+
 - **Teams may take up to seven days to clean up expired messages**. A retention policy applied to Teams will delete chat and channel messages when the retention period expires. However, it may take between three and seven days to clean up these messages and permanently delete them. Also, chat and channel messages will be searchable with eDiscovery tools during the time after the retention period expires and when messages are permanently deleted.
     
     > [!NOTE]
