@@ -21,7 +21,7 @@ description: "Identify the Microsoft 365 capabilities and supporting documentati
 
 >*[Licensing for Microsoft 365 Security & Compliance](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
-Discovering and managing data is challenging. Use Microsoft Information Protection capabilities to help discover, classify, and protect sensitive information wherever it lives or travels.
+Use Microsoft Information Protection capabilities to help discover, classify, and protect sensitive information wherever it lives or travels.
 
 ## Know your data
 
@@ -29,10 +29,9 @@ To understand your data landscape and identify important data across your hybrid
  
 |Capability|What problems does it solve?|Documentation|
 |:------|:------------|:--------------------|:-----------------------------|
-|[Sensitive information types](what-the-sensitive-information-types-look-for.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
-|[Trainable classifiers](classifier-creating-a-trainable-classifier.md)| Classifies data for you, using one of the built-in classifiers or train a classier with your own content | [Getting started with trainable classifiers (preview)](classifier-creating-a-trainable-classifier.md) |
-|[Content explorer](data-classification-content-explorer.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization  | [Get started with content explorer](data-classification-content-explorer.md) |
-|[Activity explorer](data-classification-activity-explorer.md) |Identifies how your labeled content is used | [Get started with activity explorer](data-classification-activity-explorer.md)|
+|[Sensitive information types](sensitive-information-type-entity-definitions.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
+|[Trainable classifiers (preview)](classifier-getting-started-with.md)| Classifies data for you, using one of the built-in classifiers or train a classier with your own content | [Create a trainable classifier (preview)](classifier-creating-a-trainable-classifier.md) |
+|[Data classification](data-classification-overview.md) | Identifies items that have a sensitivity label, a retention label, or have been classified as a sensitive information type in your organization and the actions that your users are taking on them  | [Get started with content explorer](data-classification-content-explorer.md), [Get started with activity explorer](data-classification-activity-explorer.md) |
 
 ## Protect your data
 
@@ -53,10 +52,10 @@ To apply flexible protection actions that include encryption, access restriction
 
 ## Prevent data loss
 
-To detect risky behavior and prevent accidental oversharing of sensitive information, use the following capabilities:
+To help prevent accidental oversharing of sensitive information, use the following capabilities:
 
 
 |Capability|What problems does it solve?|Documentation|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Prevents data leaking from your organization's boundaries <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) <br /><br /> [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
-|[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Prevents risky behavior that might compromise sensitive items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
+|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) <br /><br /> [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
