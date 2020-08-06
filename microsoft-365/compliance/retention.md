@@ -253,6 +253,7 @@ Use the following table to help you identify whether to use a retention policy o
 |Start the retention period when labeled or based on an event | No | Yes |
 |Disposition review | No| Yes |
 |Proof of disposition for up to 7 years | No |Yes, when item is declared a record|
+|Audit admin activities| Yes | Yes|
 |Identify items subject to retention: <br /> - Content Search <br /> - Data classification page, content explorer, activity explorer | <br /> No <br /> No | <br /> Yes <br /> Yes|
 
 Note that you can use both retention policies and retention labels as complementary retention methods. For example:
@@ -287,6 +288,10 @@ Explanation for the four different levels:
 4. **The shortest deletion period wins.** Similarly, if content is subject to multiple retention settings that delete content without a retention period, that content will be deleted at the end of the shortest retention period. 
 
 Finally, a retention policy or retention label cannot permanently delete any content that's on hold for eDiscovery. When that hold is released, the content again becomes eligible for the cleanup process in the secured locations for the workload.
+
+## Auditing retention configuration
+
+Administrator actions for retention policies and retention labels are saved to the audit log when [auditing is enabled](turn-audit-log-search-on-or-off.md). For example, an audit event is created when a retention policy or label is created, configured, or deleted. For the full list, see [Retention policy and retention label activities](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
 
 ## PowerShell cmdlets for retention policies and retention labels
 
