@@ -13,18 +13,24 @@ description: "The Bookings mobile apps are not yet available worldwide. This art
 
 # Get the Microsoft Bookings app for iOS and Android
 
-Microsoft Bookings is available as a mobile app for iOS and Android.
+Thanks for downloading the Microsoft Bookings app! Microsoft Bookings is available as a mobile app for iOS and Android. The Bookings app for iOS is available in all regions and countries that Apple supports. You can download the app from the [iTunes App Store](https://apps.apple.com/app/microsoft-bookings/id1065657468). The Bookings app for Android is available for download from the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) in the US and Canada.
+
+Before getting started, you need to set up Bookings on the web.
 
 > [!NOTE]
-> The Bookings mobile apps are not yet available worldwide. This article lists those locales where the apps are available now.
+> Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
-## Bookings app for iOS
+1. Can't find the app you're looking for? From the app launcher, select All apps to see an alphabetical list of the Microsoft 365 apps available to you. From there, you can search for a specific app
 
-The Bookings app for iOS is available in all regions and countries that Apple supports. You can download the app from the [iTunes App Store](https://apps.apple.com/app/microsoft-bookings/id1065657468).
+   ![Image of app launcher](../media/bookings-all-apps-launcher.png)
 
-## Bookings app for Android (US and Canada)
+2. Got to [the Office home page](https://office.com) and from the app launcher, select **Bookings**.
 
-The Bookings app for Android is available for download from the [Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings) in the US and Canada.
+3. Select **Get it now**.
+
+4. Provide the name and type of business you run, such as hair salon or dental practice, and select **To Bookings**.
+
+5. You're now ready to set up Bookings for your organization. Follow the steps in the [Setting up Microsoft Bookings](bookings-setup-guide.md) topic to finish setting up Bookings. Go back to your mobile device and log out of the mobile app. Log back in to go to your new booking calendar.
 
 ## View-only mode
 

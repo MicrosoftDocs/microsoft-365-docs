@@ -1,5 +1,5 @@
 ---
-title: "Create your staff list"
+title: "Add staff to Bookings"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -11,7 +11,7 @@ ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
 description: "Use this page to create your staff list and to manage staff member details such as name, phone number, and email address."
 ---
 
-# Create your staff list
+# Add staff to Bookings
 
 The Staff page in Bookings is where you create your staffing list and manage staff member details such as name, phone number, and email address. You can also set working hours for each staff member from here.
 

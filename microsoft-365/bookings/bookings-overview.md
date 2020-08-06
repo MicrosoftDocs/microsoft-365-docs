@@ -40,18 +40,20 @@ Watch this video or follow the steps below to set up Bookings.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q]
 
-Step 1: [Enter your business information](enter-business-information.md)
+1. [Get access to Microsoft Bookings](get-access.md)
 
-Step 2: [Create your staff list](create-staff-list.md)
+2. [Enter your business information](enter-business-information.md)
 
-Step 3: [Define your service offerings](define-service-offerings.md)
+3. [Add staff to Bookings](add-staff.md)
 
-Step 4: [Set your scheduling policies](set-scheduling-policies.md)
+4. [Define your service offerings](define-service-offerings.md)
 
-Step 5: [Set employee working hours](employee-hours.md)
+5. [Set your scheduling policies](set-scheduling-policies.md)
 
-Step 6: [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
+6. [Set employee working hours](employee-hours.md)
 
-Step 7: [Publish or unpublish your booking page](publish-booking-page.md)
+7. [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
 
-Step 8: [Create and staff your bookings](create-and-staff.md)
+8. [Publish or unpublish your booking page](publish-booking-page.md)
+
+9. [Create and staff your bookings](create-and-staff.md)
