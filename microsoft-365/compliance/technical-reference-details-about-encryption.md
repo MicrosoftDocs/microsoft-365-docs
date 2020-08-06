@@ -47,13 +47,7 @@ TLS version 1.3 (TLS 1.3) is currently not supported.
   
 ## Support for TLS 1.0 and 1.1 deprecation and what this means for you
 
-Since October 31, 2018, Office 365 no longer supports TLS 1.0 and 1.1. This means that Microsoft will not fix new issues that are found in clients, devices, or services that connect to Office 365 by using TLS 1.0 and 1.1.
-
-This doesn't mean Office 365 will block TLS 1.0 and 1.1 connections.
-
-Although we originally set a date of June 1, 2020 for TLS 1.0 and TLS 1.1 deprecation for WorldWide and GCC environments, this date is no longer valid. This was due to COVID-19. When we have a new date for this deprecation, we will publish it here. 
-
-For GCC High and DoD environments, official deprecation occurred on January 15, 2020.
+Since October 31, 2018, Office 365 no longer supports TLS 1.0 and 1.1. This means that Microsoft will not fix new issues that are found in clients, devices, or services that connect to Office 365 by using TLS 1.0 and 1.1. Official deprecation for GCC High and DoD environments began January 15, 2020. Deprecation of TLS 1.0 and 1.1 for Worldwide and GCC environments begins October 15, 2020. 
 
 You should make sure that all client-server and browser-server combinations use TLS 1.2 and modern cipher suites to maintain a secure connection to Office 365 and Microsoft 365 services. You might have to update certain client-server and browser-server combinations. For information about how this impacts you, see [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
   
@@ -67,21 +61,40 @@ As of June 2016, Office 365 no longer accepts a SHA-1 certificate for outbound o
   
 ## TLS cipher suites supported by Office 365
 
-A cipher suite is a collection of encryption algorithms that TLS uses to establish secure connections. Cipher suites supported by Office 365 are listed in the following table in order of strength, with the strongest cipher suite listed first. When Office 365 receives a connection request, Office 365 first attempts to connect using the topmost cipher suite. Then, if unsuccessful, Office 365 tries the second cipher suite in the list and so on down the list. When Office 365 sends a connection request to another server or to a client, it's up to the receiving server or client to choose the cipher suite or whether TLS will be used at all.
+A cipher suite is a collection of encryption algorithms that TLS uses to establish secure connections. Cipher suites supported by Office 365 are listed in the following table. When Office 365 sends a connection request to another server or to a client, it's up to the receiving server or client to choose the cipher suite or whether TLS will be used at all.
 
 > [!IMPORTANT]
 > Be aware that TLS versions deprecate, and that deprecated versions *should not be used* where newer versions are available. TLS 1.3 is currently not supported. If your legacy services do not require TLS 1.0 or 1.1 you should disable them.
-  
+
+|**Cipher suite**|**Key exchange algorithm/strength**|**Perfect Forward Secrecy**|**Cipher/strength**|**Authentication algorithm**|
+|:-----|:-----|:-----|:-----|:-----|
+|TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384 <br/>|ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256 <br/>|ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384 <br/>   |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256 <br/>   |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|ECDSA <br/>   |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384 <br/>|ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256 <br/>|ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA <br/>        |ECDH/192 <br/>|Yes <br/>|AES/256 <br/>|RSA/112 <br/> |
+|TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA <br/>        |ECDH/128 <br/>|Yes <br/>|AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_GCM_SHA384 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA256 <br/>           |RSA/112 <br/> |No <br/> |AES/128 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_256_CBC_SHA <br/>              |RSA/112 <br/> |No <br/> |AES/256 <br/>|RSA/112 <br/> |
+|TLS_RSA_WITH_AES_128_CBC_SHA <br/>              |RSA/112 <br/> |No <br/> |AES/128 <br/>|RSA/112 <br/> |
+
+These are the following cipher suites which will still support TLS 1.0 and 1.1 protocols until their deprecation date. For GCC High and DoD environments, that deprecation date was Jan 15, 2020 and for Worldwide and GCC environments that date is October 15, 2020.
 |**Protocols**|**Cipher suite name**|**Key exchange algorithm/Strength**|**Perfect Forward Secrecy support**|**Authentication algorithm/Strength**|**Cipher/Strength**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Yes  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA_P256  <br/> |ECDH/128  <br/> |Yes  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA256  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/256  <br/> |
-|TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
    
