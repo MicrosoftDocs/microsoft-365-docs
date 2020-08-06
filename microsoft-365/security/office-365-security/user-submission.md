@@ -38,8 +38,6 @@ Delivering user reported messages to a custom mailbox instead of directly to Mic
 
 - You open the Security & Compliance Center at <https://protection.office.com/>. To go directly to the **User submissions** page, use <https://protection.office.com/userSubmissionsReportMessage>.
 
-- To connect to Exchange Online PowerShell, see [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). To connect to standalone EOP PowerShell, see [Connect to Exchange Online Protection PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
-
 - You need to be assigned permissions before you can do the procedures in this topic:
 
   - To modify the configuration for User submissions, you need to be a member of one of the following role groups:

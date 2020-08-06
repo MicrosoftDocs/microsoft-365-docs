@@ -66,6 +66,7 @@ Use the following table to help you map your business requirements to retention 
 |Comply with SEC Rule 17a-4|[Use Exchange Online and the Security & Compliance Center to comply with SEC Rule 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md) |
 |Make sure somebody reviews and approves before content is deleted at the end of its retention period|[Disposition reviews](disposition.md#disposition-reviews) |
 |Have proof of disposition for content that is deleted at the end of its retention period|[Disposition of records](disposition.md#disposition-of-records) |
+| Monitor how and where retention labels are applied | [Monitoring retention labels](retention.md#monitoring-retention-labels) |
 
 ## End-user documentation for retention labels
 

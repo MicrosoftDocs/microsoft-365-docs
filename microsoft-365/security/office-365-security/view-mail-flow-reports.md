@@ -1,5 +1,5 @@
 ---
-title: View mail flow reports in the Security & Compliance Center
+title: View mail flow reports in the Reports dashboard
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -16,13 +16,15 @@ search.appverid:
 ms.assetid:
 ms.collection:
 - M365-security-compliance
-description: "Learn how to find and use mail flow security reports for your organization. Mail flow reports are available in the Security & Compliance Center."
+description: "Admins can learn about the mail flow reports that are available in the Reports dashboard in the Security & Compliance Center."
 ms.custom:
 ---
 
-# View mail flow reports in the Security & Compliance Center
+# View mail flow reports in the Reports dashboard in Security & Compliance Center
 
-In addition to the [Mail flow insights](mail-flow-insights-v2.md) that are available in the Security & Compliance Center, a variety of mail flow reports are also available to help you monitor your Microsoft 365 organization. If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the Security & Compliance Center at <https://office.protection.com> by going to **Reports** \> **Dashboard**. To go directly to the reports dashboard, open <https://office.protection.office.com/insightdashboard>.
+In addition to the mail flow reports that are available in the [Mail flow dashboard](mail-flow-insights-v2.md) in the Security & Compliance Center, a variety of additional mail flow reports are available in the Reports dashboard to help you monitor your Microsoft 365 organization.
+
+If you have the [necessary permissions](#what-permissions-are-needed-to-view-these-reports), you can view these reports in the [Security & Compliance Center](https://office.protection.com) by going to **Reports** \> **Dashboard**. To go directly to the Reports dashboard, open <https://office.protection.office.com/insightdashboard>.
 
 ![Reports dashboard in the Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
@@ -400,7 +402,6 @@ To view and use the reports, you need to be a member of the specified role group
 - In the Security & Compliance Center, you need to be a member of one of the following role groups:
 
   -Organization Management
-
   -Security Administrator (you can also do this in the [Azure Active Directory admin center](https://aad.portal.azure.com)
   -Security Reader
 
@@ -409,11 +410,8 @@ To view and use the reports, you need to be a member of the specified role group
 - In Exchange Online, you need to be a member of one of the following role groups:
 
   -Organization Management
-
   -View-only Organization Management
-
   -View-Only Recipients
-
   -Compliance Management
 
 For more information, see [Permissions in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo) and [Manage role groups in Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/role-groups).
@@ -422,4 +420,8 @@ For more information, see [Permissions in Exchange Online](https://docs.microsof
 
 [Smart reports and insights in the Security & Compliance Center](reports-and-insights-in-security-and-compliance.md)
 
+[Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md)
+
 [View email security reports in the Security & Compliance Center](view-email-security-reports.md)
+
+[View reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md)
