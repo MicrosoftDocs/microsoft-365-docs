@@ -1,5 +1,5 @@
 ---
-title: "Customize your booking page"
+title: "Customize and publish your Booking Page"
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -11,14 +11,24 @@ ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: "Change the color theme of you booking page in the Microsoft Bookings app."
 ---
 
-# Customize your booking page
+# Customize and publish your Booking Page
 
 The booking page is your customer-facing, web-based appointment calendar. Your customers will use it to book appointments with you. It's an extension of your business' image and brand.
 
 > [!NOTE]
 > Bookings is turned on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, or Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
-To customize your booking page, sign in to Microsoft 365, and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options:
+To customize your booking page, sign in to [Office.com](https://office.com), and then go to **Bookings** \> **Booking page**. You can customize the booking page with the following options. Once you've setup up your Booking Page, you can publish it so customers can start booking appointments with you.
+
+1. In Microsoft 365, select the app launcher, and then select **Bookings**.
+
+   ![Image of Bookings in App launcher](../media/bookings-applauncher.png)
+
+1. In the navigation pane, select **Booking page**.
+
+   ![Image of booking page in navigation pane](../media/bookings-navpane-booking-page.png)
+
+The section below gives you information about setting up your bookings page and how to publish your page.
 
 |||
 |---|---|
@@ -34,3 +44,27 @@ To customize your booking page, sign in to Microsoft 365, and then go to **Booki
 ## Other ways to customize
 
 You can also add questions to ask your customers at booking time. For more information, see [Add custom and required questions to the booking page](add-questions.md).
+
+## Publish the booking page
+
+Watch this video or follow the steps below to publish or unpublish your booking page.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuYil]
+
+1. In Microsoft 365, select the app launcher, and then select **Bookings**.
+
+   ![Image of Bookings in App launcher](../media/bookings-applauncher.png)
+
+1. In the navigation pane, select **Booking page**.
+
+   ![Image of booking page in navigation pane](../media/bookings-navpane-booking-page.png)
+
+1. Verify your scheduling policies are correct. See [Set your scheduling policies](set-scheduling-policies.md) for more information.
+
+1. Select **Save and publish**. You'll see a confirmation message.
+
+1. Select **Open published page** to see your page in a web browser.
+
+## Unpublish the booking page
+
+To unpublish the booking page, browse to the booking page and select **Unpublish**.
