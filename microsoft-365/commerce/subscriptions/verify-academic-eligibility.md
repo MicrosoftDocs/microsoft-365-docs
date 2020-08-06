@@ -18,6 +18,7 @@ ms.custom:
 search.appverid:
 - MET150
 description: "Learn how to verify your school's eligibility for Microsoft 365 Education academic pricing."
+ms.date: 07/21/2020
 ---
 
 # Verify academic eligibility for Microsoft 365 Education subscriptions
@@ -39,7 +40,7 @@ If you're not sure if you have a Microsoft 365 Education trial subscription, use
 
 ## Verify your school's academic eligibility
 
-In most cases, when you sign up for a free trial and complete the eligibility verification wizard to provide your school's domain, you receive an immediate approval or denial of your school's eligibility. In some cases, we require more information to complete a manual eligibility review. This review can take up to 10 business days. After we review your school's eligibility information, we send an email that notifies you of your school's status.
+In most cases, when you sign up for a free trial and complete the eligibility verification wizard to provide your school's domain, you receive an immediate approval or denial of your school's eligibility. In some cases, we require more information to complete a manual eligibility review and will reach out to you with a questionnaire to complete. This review can take up to 10 business days. After we review your school's eligibility information, we send an email that notifies you of your school's status.
 
 You can close the academic verification wizard before entering a domain and start using the trial subscription right away. However, you aren't eligible for academic prices until you complete the verification process. You must complete the process before the end of your free trial to convert to a paid subscription and continue to use it. This also applies when you convert to the free A1 subscription.
 

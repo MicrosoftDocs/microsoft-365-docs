@@ -1,8 +1,8 @@
 ---
 title: Deploy threat protection capabilities across Microsoft 365
 description: Learn how to deploy threat protection services and capabilities across Microsoft 365 E5.
-ms.author: bcarter
-author: brendacarter
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 ms.topic: article
@@ -10,17 +10,17 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Normal
 ms.collection: 
 - M365-security-compliance
-- m365solution-threatprotection
 - m365solution-overview
+- m365solution-threatprotection
 ms.custom: 
 f1.keywords: NOCSH
 ---
 
 # Deploy threat protection capabilities across Microsoft 365
 
-[Malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers. Such attacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. 
+[Malware](https://docs.microsoft.com/windows/security/threat-protection/intelligence/understanding-malware), and sophisticated cyberattacks, such as [fileless threats](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats), are a common occurrence. Businesses need to protect themselves and their customers. Cyber security attacks can cause major problems for your organization, ranging from a loss of trust to financial woes, business-threatening downtime, and more. Protecting against threats is important, but it can be challenging to determine where to focus your organization's time, effort, and resources. 
 
-Microsoft security solutions are built into our products and services. Automation and machine learning capabilities reduce the load on your security teams to make sure the right items are addressed. And the strength of Microsoft security solutions is built on trillions of signals we process every day in our [Intelligent Security Graph](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph). Microsoft 365 security solutions include [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), a solution that brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
+Microsoft security solutions are built into our products and services. Automation and machine learning capabilities reduce the load on your security teams to make sure the right items are addressed. And the strength of Microsoft security solutions is built on trillions of signals we process every day in our [Intelligent Security Graph](https://cloud-platform-assets.azurewebsites.net/intelligent-security-graph). Microsoft 365 security solutions include [Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection), which brings together signals across your email, data, devices, and identities to paint a picture of advanced threats against your organization.
 
 Watch this video for an overview of the deployment process.
 
@@ -30,7 +30,7 @@ Use this article as a guide for implementing your threat protection solution.
 
 ## Threat protection in Microsoft 365 E5
 
-[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) enables you to protect your organization with adaptive, built-in intelligence. With the threat protection features in Microsoft 365 E5, you can detect and investigate advanced threats, compromised identities, and malicious actions across your on-premises and cloud environments.
+[Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise-e5-business-software?activetab=pivot%3aoverviewtab) enables you to protect your organization with adaptive, built-in intelligence. With the threat protection features in Microsoft 365 E5, you can detect and investigate advanced threats, compromised identities, and malicious actions across your on-premises and cloud environment.
 
 In Microsoft 365 E5, threat protection capabilities are integrated by default. Signals from each capability add strength to the overall ability to detect and respond to threats. The combined set of capabilities offers the best protection for organizations, especially multi-national organizations, compared to running non-Microsoft products. The following image depicts the threat protection services and capabilities in Microsoft 365 E5 that are described in this article.
 
@@ -47,10 +47,10 @@ The following illustration depicts a recommended path for deploying these indivi
 |Solution/capabilities  |Description  |
 |---------|---------|
 |Multi-factor authentication and conditional access     |Protect against compromised identities and devices. Begin with this protection because it's foundational. The configuration recommended in this guidance includes Azure AD Identity Protection as a prerequisite.     |
-|Azure Advanced Threat Protection     |  A cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on this next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.       | 
-|Office 365 Advanced Threat Protection     | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protections for malware, phishing, spoofing, and other attack types. This is recommended next because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. <br><br>Note: Be sure you also configure the threat protection capabilities included in all Office 365 subscriptions (Exchange Online Protection).       |
-|Microsoft Defender Advanced Threat Protection    | An endpoint protection platform that helps prevent, detect, investigate, and respond to advanced threats. This takes longer to deploy, but can be done in parallel with the other capabilities if other admins are responsible.   |
-|Microsoft Cloud App Security     |   A cloud access security broker for discovery, investigation, and governance. You can enable this early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time.       | 
+|Azure Advanced Threat Protection     |  A cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization. Focus on Azure Advanced Threat Protection next because it protects your on-prem and your cloud infrastructure, has no dependencies or prerequisites, and can provide immediate benefit.       | 
+|Office 365 Advanced Threat Protection     | Safeguards your organization against malicious threats posed by email messages, links (URLs), and collaboration tools. Protections for malware, phishing, spoofing, and other attack types. Configuring Office 365 Advanced Threat Protection is recommended next because change control, migrating settings from incumbent system, and other considerations can take longer to deploy. <br><br>Note: Make sure to configure the threat protection capabilities that are included in all Office 365 subscriptions (Exchange Online Protection).       |
+|Microsoft Defender Advanced Threat Protection    | An endpoint protection platform that helps prevent, detect, investigate, and respond to advanced threats. Microsoft Defender Advanced Threat Protection can take some time to deploy, but configuration can be done in parallel with other capabilities.   |
+|Microsoft Cloud App Security     |   A cloud access security broker for discovery, investigation, and governance. You can enable Microsoft Cloud App Security early to begin collecting data and insights. Implementing information and other targeted protection across your SaaS apps involves planning and can take more time.       | 
 
 > [!TIP]
 > Organizations with multiple security teams can implement these capabilities in parallel.

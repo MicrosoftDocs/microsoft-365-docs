@@ -2,13 +2,14 @@
 title: "Best practices for unauthenticated sharing"
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: pamgreen
+manager: serdars
 audience: ITPro
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection: 
 - SPO_Content
 - M365-collaboration
+- m365solution-3tiersprotection
 - m365solution-securecollab
 ms.custom: 
 - seo-marvel-apr2020
@@ -40,6 +41,8 @@ To set an expiration date for Anyone links
 4. Type a number of days in the box, and then click **Save**.
 
 Note that once an *Anyone* link expires, the file or folder can be re-shared with a new *Anyone* link.
+
+You can set *Anyone* link expiration for a specific site or OneDrive by using [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite).
 
 ## Set link permissions
 

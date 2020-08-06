@@ -317,7 +317,7 @@
           href: bulk-create-publish-labels-using-powershell.md
         - name: Start retention when an event occurs
           href: event-driven-retention.md
-        - name: Manage the lifecycle of SharePoint documents
+        - name: Use retention labels to manage document lifecycles
           href: auto-apply-retention-labels-scenario.md
         - name: Manage disposition of data
           href: disposition.md
@@ -335,14 +335,6 @@
           href: restore-an-inactive-mailbox.md
         - name: Delete an inactive mailbox
           href: delete-an-inactive-mailbox.md
-    - name: Monitor data governance
-      items: 
-        - name: View label activity for documents
-          href: view-label-activity-for-documents.md
-        - name: View label usage with label analytics
-          href: label-analytics.md
-        - name: View the data governance reports
-          href: view-the-data-governance-reports.md
     - name: More information about data governance
       items: 
         - name: Watch videos from the Microsoft Data Governance team
