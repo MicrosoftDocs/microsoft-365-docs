@@ -1,6 +1,6 @@
 ---
 title: Device management roadmap for Microsoft 365 
-keywords: Microsoft 365, Microsoft 365 Enterprise, Microsoft 365 documentation, mobile device management, Intune
+keywords: Microsoft 365, Microsoft 365 for enterprise, Microsoft 365 documentation, mobile device management, Intune
 author: JoeDavies-MSFT 
 ms.author: josephd
 manager: laurawi
@@ -28,7 +28,7 @@ ADD section on M365
 
 [Manage device access settings](https://support.office.com/article/28dd276b-beeb-4c5b-8b22-7551186127fe)
 
-Microsoft 365 Enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. 
+Microsoft 365 for enterprise includes features to help manage devices, and their apps, within your organization. Using Microsoft Intune, you can manage iOS, Android, macOS, and Windows devices to protect access to your organization's resources, including your data. 
 
 Enroll your devices in Intune and create and enforce policies to help keep your data secure and protected. 
 

@@ -1,5 +1,5 @@
 ---
-title: "Microsoft 365 Enterprise Business Continuity Management Mitigations"
+title: "Microsoft 365 for enterprise Business Continuity Management Mitigations"
 author: chrfox
 f1.keywords:
 - NOCSH

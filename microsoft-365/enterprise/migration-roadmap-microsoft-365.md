@@ -22,9 +22,9 @@ description: The roadmap for migrating versions of Microsoft Office, Office serv
 >
 >[Migrate your content to Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online)
 
-Most enterprise organizations have a heterogeneous environment with multiple releases of operating systems, client software, and server software. Microsoft 365 Enterprise includes the most secure versions of these key components of your IT infrastructure with productivity features that are designed to take advantage of cloud technologies.
+Most enterprise organizations have a heterogeneous environment with multiple releases of operating systems, client software, and server software. Microsoft 365 for enterprise includes the most secure versions of these key components of your IT infrastructure with productivity features that are designed to take advantage of cloud technologies.
 
-To maximize the business value of the Microsoft 365 Enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
+To maximize the business value of the Microsoft 365 for enterprise integrated suite of products, begin planning and implementing a strategy to migrate releases of:
 
 - The Office client installed on your computers to Microsoft 365 Apps for enterprise
 - Office servers installed on your servers to their equivalent services in Microsoft 365
@@ -34,7 +34,7 @@ To maximize the business value of the Microsoft 365 Enterprise integrated suite 
 >Windows 7 reached end of support on **January 14, 2020**. For more information, click [here](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020).
 >
 
-Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 Enterprise. 
+Accomplishing all of these migrations over time gets your organization closer to the [modern workplace](https://www.microsoft.com/microsoft-365/blog/2018/04/27/making-it-simpler-with-a-modern-workplace/), a secure and integrated environment that unlocks teamwork and creativity in your organization, all of which is enabled and empowered by Microsoft 365 for enterprise. 
 
 For information about migrating users and data for specific Microsoft 365 workloads:
 
@@ -50,7 +50,7 @@ In many organizations both large and small, you might be using a combination of 
 - Are not optimally enabled to leverage Microsoft’s cloud technologies and help you digitally transform your business.
 - Do not contain new features.
  
-Microsoft 365 Enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products that is available with a Microsoft 365 Enterprise license and is installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. See [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps) for more information.
+Microsoft 365 for enterprise includes Microsoft 365 Apps for enterprise, a version of the Office client products that is available with a Microsoft 365 for enterprise license and is installed and updated from the Microsoft cloud. Microsoft 365 Apps for enterprise includes security updates and the latest features. See [About Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/about-microsoft-365-apps) for more information.
 
 ### Office 2007
 
@@ -97,7 +97,7 @@ In many organizations both large and small, you might be using a combination of 
 - Do not include new productivity applications, such as Microsoft Teams.
 - Do not include the latest security features, such as Exchange Advanced Threat Protection.
 
-Microsoft 365 Enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software. 
+Microsoft 365 for enterprise includes cloud-based versions of Office server services that use some of the same tools as on-premises versions of Office server software, such as web browsers and the Outlook client. These services are continually updated for security without involving IT, saving you the time it takes to maintain and update on-premises servers. These services also have new features enhancements that are not present in Office server software. 
 
 ### Office Server 2007
 
@@ -155,13 +155,13 @@ For a visual summary of the upgrade, migrate, and move-to-the-cloud options for 
 
 [![Image for the end of support for Office 2010 clients and servers and Windows 7 poster](../media/microsoft-365-overview/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-This one-page poster is a quick way to understand the various paths you can take to prevent Office 2010 client and server products and Windows 7 from reaching end of support, with preferred paths and resulting destination support in Microsoft 365 Enterprise highlighted.
+This one-page poster is a quick way to understand the various paths you can take to prevent Office 2010 client and server products and Windows 7 from reaching end of support, with preferred paths and resulting destination support in Microsoft 365 for enterprise highlighted.
 
 You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 
-## How Microsoft does Microsoft 365 Enterprise
+## How Microsoft does Microsoft 365 for enterprise
 
-See how IT experts at Microsoft migrated the company to Microsoft 365 Enterprise with these resources: 
+See how IT experts at Microsoft migrated the company to Microsoft 365 for enterprise with these resources: 
 
 - [Deploying and updating Microsoft Microsoft 365 Apps for enterprise](https://www.microsoft.com/itshowcase/Article/Content/757/Deploying-and-updating-Microsoft-Office-365-ProPlus)
 - [Microsoft migrates 150,000 mailboxes to Exchange Online](https://www.microsoft.com/itshowcase/Article/Content/577/Microsoft-migrates-150000-mailboxes-to-Exchange-Online)
@@ -171,11 +171,11 @@ See how IT experts at Microsoft migrated the company to Microsoft 365 Enterprise
 
 ## Transition your entire organization
 
-To get a better picture of how to move your entire organization to the products and services in Microsoft 365 Enterprise, see the [transition poster](../downloads/transition-org-to-m365.pdf).
+To get a better picture of how to move your entire organization to the products and services in Microsoft 365 for enterprise, see the [transition poster](../downloads/transition-org-to-m365.pdf).
 
 [![Image for the Transition to Microsoft 365 poster](../media/microsoft-365-overview/transition-org-to-m365.png)](../downloads/transition-org-to-m365.pdf)
 
-This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 Enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
+This two-page poster is a quick way to inventory your existing infrastructure and get to the guidance for moving to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements such as device management, identity, and information and threat protection.
 
 You can [download this poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/transition-org-to-m365.pdf) and print it in letter, legal, or tabloid (11 x 17) formats.
 

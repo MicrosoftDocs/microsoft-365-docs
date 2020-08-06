@@ -15,18 +15,18 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom:
 
-description: Understand how Contoso uses Microsoft Intune in Microsoft 365 Enterprise to manage its devices and the apps that run on them.
+description: Understand how Contoso uses Microsoft Intune in Microsoft 365 for enterprise to manage its devices and the apps that run on them.
 ---
 
 # Mobile device management for Contoso
 
-Microsoft 365 Enterprise includes Intune and a set of Azure services to support mobile device and application management and security.
+Microsoft 365 for enterprise includes Intune and a set of Azure services to support mobile device and application management and security.
 
 Contoso has many mobile-enabled employees, some of which have offices in Contoso locations and some of which have no offices. Contoso needed a way to enable employee productivity but keep the devices, the Contoso data stored on those devices, and application behavior secure.
 
 ## Plan
 
-Early in the analysis of mobile device management for Microsoft 365 Enterprise, Contoso identified the following Intune use cases:
+Early in the analysis of mobile device management for Microsoft 365 for enterprise, Contoso identified the following Intune use cases:
 
 - Protect Exchange Online email and data so it can be safely accessed by mobile devices
 - Implement a bring your own device (BYOD) program for Contoso employees
@@ -67,7 +67,7 @@ Here is Contoso's mobile device management deployment architecture.
 
 ## Next step
 
-[Learn](contoso-info-protect.md) how Contoso uses the information protection capabilities of Microsoft 365 Enterprise to classify, identify, and protect crucial digital assets across its organization.
+[Learn](contoso-info-protect.md) how Contoso uses the information protection capabilities of Microsoft 365 for enterprise to classify, identify, and protect crucial digital assets across its organization.
 
 ## See also
 

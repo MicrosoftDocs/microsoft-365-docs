@@ -1,5 +1,5 @@
 ---
-title: "Privileged access management for your Microsoft 365 Enterprise test environment"
+title: "Privileged access management for your Microsoft 365 for enterprise test environment"
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -14,21 +14,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-security-compliance
 ms.custom: Ent_TLGs
-description: Use this Test Lab Guide to enable privileged access management your Microsoft 365 Enterprise test environment.
+description: Use this Test Lab Guide to enable privileged access management your Microsoft 365 for enterprise test environment.
 ---
 
-# Privileged access management for your Microsoft 365 Enterprise test environment
+# Privileged access management for your Microsoft 365 for enterprise test environment
 
-*This Test Lab Guide can be used for both Microsoft 365 Enterprise and Office 365 Enterprise test environments.*
+*This Test Lab Guide can be used for both Microsoft 365 for enterprise and Office 365 Enterprise test environments.*
 
-With the instructions in this article, you configure privileged access management to increase security in your Microsoft 365 Enterprise test environment.
+With the instructions in this article, you configure privileged access management to increase security in your Microsoft 365 for enterprise test environment.
 
 ![Test Lab Guides for the Microsoft cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 >[!TIP]
->Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 Enterprise Test Lab Guide stack.
+>Click [here](../media/m365-enterprise-test-lab-guides/Microsoft365EnterpriseTLGStack.pdf) for a visual map to all the articles in the Microsoft 365 for enterprise Test Lab Guide stack.
   
-## Phase 1: Build out your Microsoft 365 Enterprise test environment
+## Phase 1: Build out your Microsoft 365 for enterprise test environment
 
 If you just want to configure privileged access management in a lightweight way with the minimum requirements, follow the instructions in [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -39,7 +39,7 @@ If you want to configure privileged access management in a simulated enterprise,
 
 ## Phase 2: Configure privileged access management
 
-In this phase, you configure an approvers group and enable privileged access management for your Microsoft 365 Enterprise test environment. For additional details and an overview of privileged access management, see [Privileged access management](../compliance/privileged-access-management-overview.md).
+In this phase, you configure an approvers group and enable privileged access management for your Microsoft 365 for enterprise test environment. For additional details and an overview of privileged access management, see [Privileged access management](../compliance/privileged-access-management-overview.md).
 
 Follow these steps to set up and use privileged access in your organization:
 
@@ -166,8 +166,8 @@ Explore additional [information protection](m365-enterprise-test-lab-guides.md#i
 
 ## See also
 
-[Microsoft 365 Enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
+[Microsoft 365 for enterprise Test Lab Guides](m365-enterprise-test-lab-guides.md)
 
 [Microsoft 365 for enterprise overview](microsoft-365-overview.md)
 
-[Microsoft 365 Enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Microsoft 365 for enterprise documentation](https://docs.microsoft.com/microsoft-365-enterprise/)
