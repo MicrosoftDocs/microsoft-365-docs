@@ -243,10 +243,10 @@ The Office 365 Security & Compliance Center has the equivalent overview informat
 - [View label usage with label analytics](label-analytics.md)
 
 
-#### Using Content Search to find all content with a specific retention label applied to it
+#### Using Content Search to find all content with a specific retention label
 
-After retention labels are assigned to content, either by users or auto-applied, you can use content search to find all content that's classified with a specific retention label.
-  
+After retention labels are applied to content, either by users or auto-applied, you can use content search to find all items that have a specific retention label applied.
+
 When you create a content search, choose the **Retention label** condition, and then enter the complete retention label name or part of the label name and use a wildcard. For more information, see [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
   
 ![Retention label condition](../media/retention-label-condition.png)
