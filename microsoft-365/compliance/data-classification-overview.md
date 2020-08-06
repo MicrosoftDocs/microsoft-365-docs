@@ -99,7 +99,7 @@ The sensitivity label card shows the number of items (email or document) by sens
 
 ## Top retention labels applied to content
 
-Retention labels are used to manage the retention and disposition of content in your organization. When applied, they can be used to control how an item will be kept before deletion, whether it should be reviewed prior to deletion, when its retention period expires, and whether it should be marked as a record. For more information see, [Learn about retention policies and retention labels](retention.md).
+Retention labels are used to manage the retention and disposition of content in your organization. When applied, they can be used to control how an item will be kept before deletion, whether it should be reviewed prior to deletion, when its retention period expires, and whether it should be marked as a record. For more information, see [Learn about retention policies and retention labels](retention.md).
 
 The top applied retention labels card shows you how many items have a given retention label.
 
