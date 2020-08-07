@@ -1,23 +1,23 @@
 ---
-# This template provides a structure for M365 admin SMB articles.
+# This template provides a structure for M365 SMB admin articles.
 # For details about MAX content metadata requirements, see https://review.docs.microsoft.com/office-authoring-guide/metadata-for-max-content-on-dmc
 
-title: "Article title goes here"      # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
-f1.keywords:
+title: "Article title goes here"   # (Required) Very important for SEO. See https://aka.ms/seo-for-writers-cheat-sheet
+f1.keywords:   # (Optional) Choose from: CSH (if article is called from in-app UX), NOCSH (if article is not called from in-app UX)
 - NOCSH
-ms.author: YourMicrosoftAlias         # (Required) Your Microsoft alias without @microsoft.com
-author: YourGitHubUserName            # (Required) Your GitHub alias, not your Microsoft alias
-manager: MicrosoftAliasOfManager      # (Required for MARVEL) Your manager's Microsoft alias without @microsoft.com
-audience: Admin                       # (Required) Always Admin for admin SMB articles (options: Admin, ITPro, Developer)
-ms.topic: article                     # (Required) Choose from: article, overview, reference 
-ms.service: o365-administration       # (Required) Always o365-administration for admin SMB articles 
-localization_priority: Normal         # (Required) Choose from: Normal, Priority, None
-ms.collection:                        # (Required) Always M365-subscription-management for admin SMB articles   
-- M365-subscription-management        # See metadata requirements link above for additional allowed values; not more than 2 allowed
+ms.author: YourMicrosoftAlias      # (Required) Your Microsoft alias without @microsoft.com
+author: YourGitHubUserName         # (Required) Your GitHub alias, not your Microsoft alias
+manager: MicrosoftAliasOfManager   # (Required for MARVEL) Your manager's Microsoft alias without @microsoft.com
+audience: Admin                    # (Required) Always Admin for SMB admin articles (options: Admin, ITPro, Developer)
+ms.topic: article                  # (Required) Choose from: article, overview, reference 
+ms.service: o365-administration    # (Required) Always o365-administration for SMB admin articles 
+localization_priority: Normal      # (Required) Choose from: Normal, Priority, None
+ms.collection:                     # (Required) Always M365-subscription-management for SMB admin articles   
+- M365-subscription-management     # See metadata requirements link above for additional allowed values; not more than 2 allowed
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio        # (Optional) To help with reporting, always include AdminSurgePortfolio for admin SMB articles
-search.appverid:                      # (Optional) Use MET150 if you want the article to show up in Minimaven in the admin center
+ms.custom: AdminSurgePortfolio     # (Optional) To help with reporting, always include AdminSurgePortfolio for SMB admin articles
+search.appverid:                   # (Optional) Use MET150 if you want the article to show up in Minimaven in the admin center
 - MET150
 description: "Brief summary of article here"   # (Optional) Helps with SEO. Recommended character length is 120-158 characters.
 ---
