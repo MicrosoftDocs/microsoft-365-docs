@@ -27,7 +27,7 @@ The [Beta Channel] (https://docs.microsoft.com/en-us/deployedge/microsoft-edge-c
 
 Microsoft Managed Desktop deploys the [Stable channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge which is auto-updated about every six weeks. Updates on the Stable channel are rolled out [progressively](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group in order to ensure the best experience for customers. 
 
-The [Beta Channel] (https://docs.microsoft.com/en-us/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in both the Test and First groups for representative validation within the organization. This channel is fully supported and is auto-updated with new features approximately every six weeks. The 
+The [Beta Channel] (https://docs.microsoft.com/en-us/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in both the Test and First groups for representative validation within the organization. This channel is fully supported and is auto-updated with new features approximately every six weeks.
 
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
@@ -104,17 +104,17 @@ We don't recommend using Flash because of associated security risks. If you stil
 We do not recommend allowing end users to save passwords on their device.
 
 ### Internet Explorer Mode in Microsoft Edge
-IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for modern sites, and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for legacy sites. [Learn more] (https://docs.microsoft.com/en-us/DeployEdge/edge-ie-mode) 
+IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for sites that are compatible with the Chromium rendering engine and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for sites that aren't or have dependencies on IE functionality. [Learn more] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
 
 Microsoft Managed Desktop enables Internet Explorer mode for your devices by default 
 
 #### Internet Explorer mode integration
 **Default Value:** Internet Explorer mode
 
-By default devices are configured to use Internet Explorer mode but, if desired, can be configured to open sites in a standalone Internet Explorer 11 window instead. In order to do so file a change request.  
+By default, devices are set to use Internet Explorer mode, but you can set them to open sites in a standalone Internet Explorer 11 window instead. To change this, file a support request.
 
-#### Configure Sites on the Enterprise Mode Site List
-For sites to open in Internet Explorer mode they must be [configured on the Enterprise Site list] (https://docs.microsoft.com/en-us/DeployEdge/edge-ie-mode-sitelist). Maintaining and deploying the Enterprise Site list is a customer responsibility. For details, see [Configure using the Configure Enterprise Mode Site List policy](https://docs.microsoft.com/en-us/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+#### Add sites to the Enterprise Mode Site list
+For sites to open in Internet Explorer mode you must include them on the [Enterprise Site list](https://docs.microsoft.com/DeployEdge/edge-ie-mode-sitelist). Maintaining and deploying the Enterprise Site list is your responsibility. For details, see [Configure using the Configure Enterprise Mode Site List policy](https://docs.microsoft.com/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### Other settings
 
