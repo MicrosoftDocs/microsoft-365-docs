@@ -4,7 +4,7 @@ keywords: Microsoft 365, Microsoft 365 for enterprise, Microsoft 365 documentati
 author: JoeDavies-MSFT 
 ms.author: josephd
 manager: laurawi
-ms.date: 10/10/2020
+ms.date: 08/10/2020
 ms.topic: conceptual 
 f1.keywords:
 - NOCSH
