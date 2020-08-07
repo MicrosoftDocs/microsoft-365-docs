@@ -18,7 +18,7 @@ This view shows the percentage of your Microsoft Managed Desktop devices that co
 ![Report showing percentage of devices conforming to policies](../../media/mmd-device-compliance-percent.png)
 
 
-Select **View details** to view specific information for either all of your Microsoft Managed Desktop devices or only those that do not conform to compliance policies. Use the pulldown menu to switch between these views. To appear in this view, a device must be a physical machine and have synced with Intune in the last 30 days.
+Select **View details** to view specific information for either all of your Microsoft Managed Desktop devices or only devices that do not conform to compliance policies. Use the pulldown menu to switch between these views. To appear in this view, a device must be a physical machine and have synced with Intune in the last 30 days.
 
 ![Details pane with tabs for all devices or non-compliant devices. Shows detailed schema including serial number, device name, compliance state, and other information. Download full data button at bottom.](../../media/mmd-device-compliance-detail.png)
 

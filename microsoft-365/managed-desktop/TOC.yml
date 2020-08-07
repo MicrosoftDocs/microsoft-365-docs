@@ -108,6 +108,8 @@
           items:
             - name: Device compliance report
               href: working-with-managed-desktop/device-compliance-report.md
+            - name: Device inventory report
+              href: working-with-managed-desktop/device-inventory-report.md
         - name: Work with insights
           href: working-with-managed-desktop/insights.md
           items: 
