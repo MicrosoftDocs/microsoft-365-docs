@@ -31,8 +31,8 @@ description: "Learn how to get a free trial or buy a subscription for Microsoft 
 
 Microsoft 365 for business is a subscription service that lets you run
 your organization in the cloud while Microsoft takes care of the IT for
-you, managing devices, protecting against real-world threats, and
-providing your organization with the latest in business software. You
+you. Microsoft manages devices, protects against real-world threats, and
+provides your organization with the latest in business software. You
 can sign up for a free trial subscription for Microsoft 365 Business
 Standard, Microsoft 365 Business Premium, or Microsoft 365 Apps for
 business and try it out for 30 days.
@@ -48,8 +48,8 @@ Billing admin for your organization. For more information, see [About admin rol
 
 ## Try a free trial subscription
 
-If you're a new customer, and you don't already have an account with
-Microsoft, use these steps to create an account and sign up for a free
+Are you a new customer, and you don't already have an account with
+Microsoft? Use these steps to create an account and sign up for a free
 trial subscription of Microsoft 365 Business Standard, Microsoft 365
 Business Premium, or Microsoft 365 Apps for business.
 
@@ -58,12 +58,12 @@ Business Premium, or Microsoft 365 Apps for business.
 3. On the next page, follow the steps to set up your account.
 4. The signup process may take several minutes to complete. After > it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
-## Buy a subscription from free trial
+## Buy a subscription from your free trial
 
 At the end of your free trial period, your trial subscription
 automatically converts to a paid subscription. The paid subscription
 defaults to the plan you currently have. You can buy a different plan by
-following the steps in [Buy a different Microsoft 365 for business subscription](#buy-a-different-microsoft-365-for-business-subscription).
+following the steps in [Buy a different subscription](#buy-a-different-subscription).
 
 If you want to buy your subscription before your trial is over, use
 these steps:
@@ -79,24 +79,21 @@ these steps:
 ## Cancel your free trial subscription
 
 If you decide to cancel your trial subscription before the free trial
-period ends, go to the Microsoft 365 admin center and [turn Recurring billing off](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). The trial will automatically expire when your month ends, and your
-credit card won\'t be charged.
+period ends, go to the Microsoft 365 admin center and [turn off Recurring billing](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). The trial will automatically expire when your month ends, and your credit card won\'t be charged.
 
 ## Try a different subscription
 
-If you already have a Microsoft 365 for business subscription and you
-want to try a different subscription, you can do that through the
-Microsoft 365 admin center.
+If you already have a Microsoft 365 for business subscription, you can use the Microsoft 365 admin center to try a different subscription.
 
-When you add a subscription through the admin center, the new
+When you add a subscription through the Microsoft 365 admin center, the new
 subscription is associated with the same organization (domain namespace)
-as your existing subscription. This makes it easier to move users in
+as your existing subscription. This association makes it easier to move users in
 your organization between subscriptions, or to assign them a license for
-the additional subscription they need.
+the additional products they need.
 
 1. In the admin center, go to the **Billing** \> [[Purchase services](https://go.microsoft.com/fwlink/p/?linkid=868433) page.
 2. On the **Purchase services** page, you see the plans that are available to your organization. Choose the Microsoft 365 plan that you want to try.
-3. On the next page, select **Get free trial**. This gives you 25 user licenses for a one-month term.
+3. On the next page, select **Get free trial**. The trial gives you 25 user licenses for a one-month term.
 4. Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.
 5. Enter the verification code, then select **Start your free trial**.
 6. On the **Check out** page, select **Try now**.
@@ -104,9 +101,7 @@ the additional subscription they need.
 
 ## Buy a different subscription
 
-If you already have a Microsoft 365 for business subscription and you
-want to buy a different subscription for your organization, you can do
-that through the admin center.
+If you already have a Microsoft 365 for business subscription, you can go through the Microsoft 365 admin center to buy a different subscription for your organization.
 
 When you buy another subscription through the admin center, the new
 subscription is associated with the same organization (domain name
