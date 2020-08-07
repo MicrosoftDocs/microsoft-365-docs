@@ -233,15 +233,22 @@
                 - name: ServiceNow tickets in the security center
                   href: ./mtp/tickets-security-center.md
     - name: Office 365 security
-      expanded: true
       items: 
         - name: Get started
-        - name: OldStructure
           expanded: true
+          items: 
+            - name: Security roadmap
+              href: ./office-365-security/security-roadmap.md
+            - name: Give users access to the Security center
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
+            - name: Permissions in the Security & Compliance Center
+              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+            - name: Configure your tenant for increased security
+              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
+        - name: OldStructure
           items: 
             - name: Protect against threats
               href: ./office-365-security/protect-against-threats.md
-              expanded: true
               items: 
                 - name: Anti-spam and anti-malware protection
                   href: ./office-365-security/anti-spam-and-anti-malware-protection.md
@@ -542,16 +549,10 @@
         - name: Overview
           expanded: true
           items: 
-            - name: Security roadmap
-              href: ./office-365-security/security-roadmap.md
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
         - name: Evaluate
         - name: Plan
-          expanded: true
-          items: 
-            - name: Permissions in the Security & Compliance Center
-              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
         - name: Deploy
           expanded: true
           items: 
@@ -579,8 +580,6 @@
               href: ./office-365-security/admin-submission.md
             - name: Remove blocked users from the Restricted Users portal
               href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
-            - name: Give users access to the Security center
-              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Use mail flow rules to set the SCL in messages
               href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
             - name: Use the delist portal to remove yourself from the blocked senders list
@@ -594,8 +593,6 @@
               href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
             - name: Recover from a ransomware attack
               href: ./office-365-security/recover-from-ransomware.md
-            - name: Configure your tenant for increased security
-              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
             - name: Use mail flow rules to see what your users are reporting to Microsoft
               href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
             - name: Submit malware and non-malware to Microsoft
