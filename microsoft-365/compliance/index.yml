@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Manage information protection and governance
+  - title: Manage information protection & governance
     linkLists:
       - linkListType: overview
         links:
