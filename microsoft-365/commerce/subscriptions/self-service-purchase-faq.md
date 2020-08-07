@@ -33,15 +33,15 @@ Self-service purchase is available for Power Platform (Power BI, Power Apps, and
 
 ### How does a customer make a self-service purchase?
 
-Customers can make a self-service purchase online from the product websites or from in-app purchase prompts. Customers are first asked to enter an email address to ensure that they're a user in an existing Azure Active Directory (AD) tenant. Next, they're directed to log in by using their Azure AD credentials. After signing in, the customer is asked to select how many subscriptions they want to buy, and to provide credit card payment. When the purchase is complete, they can start using their subscription. The purchaser can also access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can assign licenses to the product to other people in their organization.
+Customers can make a self-service purchase online from the product websites or from in-app purchase prompts. Customers are first asked to enter an email address to ensure that they're a user in an existing Azure Active Directory (AD) tenant. Next, they're directed to sign in by using their Azure AD credentials. After signing in, the customer is asked to select how many subscriptions they want to buy, and to provide credit card payment. When the purchase is complete, they can start using their subscription. The purchaser has access to a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> where they can assign licenses to the product to other people in their organization.
 
 ### What are the payment options for self-service purchases?
 
-Currently, credit card is the only available payment method. Payment through invoicing is not supported.
+Currently, credit card is the only available payment method. Payment through invoicing isn't supported.
 
 ### Who can buy through self-service purchase?
 
-Any user with a non-guest user account in a managed Azure AD tenant can make a self-service purchase. This capability isn’t available to tenants that are government or education organizations. If this applies to your organization, then no additional action is required to control self-service purchase.
+Any user with a non-guest user account in a managed Azure AD tenant can make a self-service purchase. Self-service purchasing isn’t available to tenants that are government or education organizations. If this applies to your organization, then no additional action is required to control self-service purchase.
 
 Users in organizations or markets who aren’t eligible for self-service purchase see a message asking them to contact their IT admin.
 
@@ -55,21 +55,21 @@ If a user has an active user account in an eligible Azure AD tenant, they can co
 
 ### Who can self-service purchasers assign licenses to?
 
-Self-service purchasers can only assign licenses to users in the same Azure AD tenant. The purchaser can access a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>r to assign licenses. They only have visibility, can assign licenses to those products that they've bought through self-service purchase, and can only assign those licenses to users in the same Azure AD tenant.
+Self-service purchasers can only assign licenses to users in the same Azure AD tenant. The purchaser has access to a limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> to assign licenses. Purchasers can assign licenses to those products that they've bought through self-service purchase, and can only assign those licenses to users in the same Azure AD tenant.
 
 ### Where does the self-service purchaser see and manage their purchases?
 
-Self-service purchasers can manage their purchases in the limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Purchasers can always get to the admin center from the **Admin** tile in the app launcher built into all Microsoft 365 and Dynamics online apps. They can view the purchases they've made, buy additional subscriptions to the same service, and assign licenses for those subscriptions to other users in their organization. Additionally, purchasers can view and pay their bill, update their payment method, and cancel their subscription.
+Self-service purchasers can manage their purchases in the limited view of the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. Purchasers can always get to the admin center from the **Admin** tile in the app launcher built into all Microsoft 365 and Dynamics online apps. Purchasers can view the purchases they've made, buy additional subscriptions to the same service, and assign licenses for those subscriptions to other users in their organization. Additionally, purchasers can view and pay their bill, update their payment method, and cancel their subscription.
 
 ## Pricing
 
 ### What is the pricing for self-service purchases?
 
-Pricing for each of the products for self-service purchase is available on the Microsoft website and is also displayed as part of the checkout experience while making a self-service purchase. These prices may differ from the prices an organization pays when making central purchases or prices offered through a partner.
+Pricing for each of the products for self-service purchase is available on the Microsoft website. Prices are also displayed as part of the checkout experience when users make a self-service purchase. These prices may differ from the prices an organization pays when making central purchases or prices offered through a partner.
 
 ### Who is responsible for payment?
 
-The person who buys the subscription through self-service purchase is the person billed and is responsible for payment based on the terms and pricing of the purchase.
+The person who buys the subscription through self-service purchase is the person who is billed and who is responsible for payment based on the terms and pricing of the purchase.
 
 ## Admin capabilities
 
@@ -81,7 +81,7 @@ Admins can also control whether users in their organization can make self-servic
 
 ### How is Microsoft respecting data governance and compliance by enabling self-service purchase?
 
-Admins maintain control over what services and products are available within their tenant based on their data governance and compliance requirements. All data management and access policies which your organization turned on apply to available self-service purchased services.
+Admins maintain control over what services and products are available within their tenant based on their data governance and compliance requirements. All data management and access policies that your organization turned on apply to available self-service purchased services.
 
 ### Who owns the product data created from self-service purchases?
 
@@ -89,11 +89,11 @@ Data created from products bought through self-service purchase is owned and con
 
 ### How do I centralize the purchases made through self-service purchase?
 
-Admins can assign existing licenses or purchase additional subscriptions of self-service purchase products through existing agreements and pricing for users assigned to self-service purchases. After assigning these centrally purchased licenses, admins can then request that the purchasers cancel their existing subscriptions. 
+Admins can assign existing licenses or buy additional subscriptions of self-service purchase products through existing agreements and pricing for users assigned to self-service purchases. After assigning these centrally purchased licenses, admins can then request that the purchasers cancel their existing subscriptions.
 
 ### Where does the admin see self-service purchases?
 
-Global and billing admins can see subscriptions bought through self-service purchase in **Billing** > **Your products** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a> together with all other subscriptions purchased through central procurement. They can filter the list to just the subscriptions purchased through central procurement or include subscriptions bought through self-service purchase.
+Global and billing admins can see subscriptions bought through self-service purchase in **Billing** > **Your products** in the <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 admin center</a>. They can filter the products list to only show the subscriptions purchased through central procurement, or to include subscriptions bought through self-service purchase.
 
 Admins can see the product, purchaser name, subscription purchased, expiry date, order history, the purchase price, and assigned users.
 
@@ -103,9 +103,9 @@ Admins can see the product, purchaser name, subscription purchased, expiry date,
 
 IT departments and partners aren't expected to provide support for products bought through self-service purchase. Microsoft provides standard support for self-service purchasers.
 
-### If a self-service purchaser calls support, does that use the customer's Premier support incidents?
+### If a self-service purchaser calls support, does that use the customer's Premier Support incidents?
 
-Self-service purchasers won't use a customer's Premier support incidents for receiving support for their self-service purchases.
+Self-service purchasers won't use a customer's Premier Support incidents for receiving support for their self-service purchases.
 
 ### How are users expected to receive training on the products they buy through self-service purchase?
 
@@ -113,7 +113,7 @@ Extensive training for users is provided on the product websites. The products h
 
 ### What happens to a self-service purchase if a user leaves the organization?
 
-If the person who originally bought the self-service purchase product leaves the organization, valid users continue to have full use of the product for the duration of the subscription. The subscription remains active until the purchaser directly cancels it or an admin requests that the subscription be canceled through customer support. Admins may also choose to assign a centrally purchased license to users of the canceled subscription.
+If the person who originally bought the self-service purchase product leaves the organization, valid users continue to have full use of the product for the duration of the subscription. The subscription remains active until the purchaser directly cancels it or an admin requests cancellation of the subscription through customer support. Admins may also choose to assign a centrally purchased license to users of the canceled subscription.
 
 ## Partners
 
