@@ -235,107 +235,25 @@
     - name: Office 365 security
       expanded: true
       items: 
+        - name: Get started
         - name: OldStructure
+          expanded: true
           items: 
-            - name: Get started
-              expanded: true
-              items: 
-                - name: Security roadmap
-                  href: ./office-365-security/security-roadmap.md
-                - name: Configure your tenant for increased security
-                  href: ./office-365-security/tenant-wide-setup-for-increased-security.md
-                - name: New Microsoft 365 security center
-                  href: ./mtp/overview-security-center.md
-                - name: Permissions in the Security & Compliance Center
-                  href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-                - name: Give users access to the Security center
-                  href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
             - name: Protect against threats
               href: ./office-365-security/protect-against-threats.md
+              expanded: true
               items: 
                 - name: Anti-spam and anti-malware protection
                   href: ./office-365-security/anti-spam-and-anti-malware-protection.md
                   items: 
                     - name: Anti-malware protection
                       href: ./office-365-security/anti-malware-protection.md
-                      items: 
-                        - name: Anti-malware protection FAQ
-                          href: ./office-365-security/anti-malware-protection-faq-eop.md
-                        - name: Configure anti-malware policies
-                          href: ./office-365-security/configure-anti-malware-policies.md
-                        - name: Recover from a ransomware attack
-                          href: ./office-365-security/recover-from-ransomware.md
-                        - name: Virus detection in SharePoint Online
-                          href: ./office-365-security/virus-detection-in-spo.md
                     - name: Anti-spam protection
                       href: ./office-365-security/anti-spam-protection.md
-                      items: 
-                        - name: Anti-spam protection FAQ
-                          href: ./office-365-security/anti-spam-protection-faq.md
-                        - name: Configure anti-spam policies
-                          href: ./office-365-security/configure-your-spam-filter-policies.md
-                        - name: Configure connection filtering
-                          href: ./office-365-security/configure-the-connection-filter-policy.md
-                        - name: Create block sender lists
-                          href: ./office-365-security/Create-block-sender-lists-in-office-365.md
-                        - name: Create safe sender lists
-                          href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
-                        - name: Spam confidence level (SCL)
-                          href: ./office-365-security/spam-confidence-levels.md
-                        - name: Bulk complaint level (SCL)
-                          href: ./office-365-security/bulk-complaint-level-values.md
-                        - name: What's the difference between junk email and bulk email?
-                          href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
-                        - name: Configure junk email settings on Exchange Online mailboxes
-                          href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
-                        - name: Use mail flow rules to set the SCL in messages
-                          href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
-                        - name: Advanced Spam Filter (ASF) settings
-                          href: ./office-365-security/advanced-spam-filtering-asf-options.md
                     - name: Outbound spam protection
                       href: ./office-365-security/outbound-spam-controls.md
-                      items: 
-                        - name: Configure outbound spam filtering
-                          href: ./office-365-security/configure-the-outbound-spam-policy.md
-                        - name: Outbound delivery pools
-                          href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
-                        - name: Remove blocked users from the Restricted Users portal
-                          href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
                     - name: Report messages and files to Microsoft
                       href: ./office-365-security/report-junk-email-messages-to-microsoft.md
-                      items: 
-                        - name: Use Admin Submission
-                          href: ./office-365-security/admin-submission.md
-                        - name: Specify a mailbox for user submissions
-                          href: ./office-365-security/user-submission.md
-                        - name: Enable the Report Message add-in
-                          href: ./office-365-security/enable-the-report-message-add-in.md
-                        - name: Install and use the Junk Email Reporting add-in
-                          href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
-                        - name: Report junk email and phishing in Outlook on the web
-                          href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-                        - name: Manually submit messages to Microsoft
-                          href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
-                        - name: Use mail flow rules to see what your users are reporting to Microsoft
-                          href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
-                        - name: Submit malware and non-malware to Microsoft
-                          href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
-                    - name: Preset security policies
-                      href: ./office-365-security/preset-security-policies.md
-                    - name: Configuration analyzer for preset security policies
-                      href: ./office-365-security/configuration-analyzer-for-security-policies.md
-                    - name: Anti-spam message headers
-                      href: ./office-365-security/anti-spam-message-headers.md
-                    - name: How policies and protections are combined
-                      href: ./office-365-security/how-policies-and-protections-are-combined.md
-                    - name: Zero-hour auto purge - protection against spam and malware
-                      href: ./office-365-security/zero-hour-auto-purge.md
-                    - name: Safety tips in email messages
-                      href: ./office-365-security/safety-tips-in-office-365.md
-                    - name: Use the delist portal to remove yourself from the blocked senders list
-                      href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
-                    - name: Manage URLs in the Tenant Allow/Block List
-                      href: ./office-365-security/tenant-allow-block-list.md
                 - name: Anti-phishing protection
                   href: ./office-365-security/anti-phishing-protection.md
                   items: 
@@ -622,15 +540,109 @@
                     - name: Set up virtual certificate collection to validate S/MIME
                       href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
         - name: Overview
+          expanded: true
+          items: 
+            - name: Security roadmap
+              href: ./office-365-security/security-roadmap.md
+            - name: New Microsoft 365 security center
+              href: ./mtp/overview-security-center.md
         - name: Evaluate
         - name: Plan
+          expanded: true
+          items: 
+            - name: Permissions in the Security & Compliance Center
+              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
         - name: Deploy
+          expanded: true
+          items: 
+            - name: Configure anti-malware policies
+              href: ./office-365-security/configure-anti-malware-policies.md
+            - name: Configure anti-spam policies
+              href: ./office-365-security/configure-your-spam-filter-policies.md
+            - name: Configure connection filtering
+              href: ./office-365-security/configure-the-connection-filter-policy.md
+            - name: Create block sender lists
+              href: ./office-365-security/Create-block-sender-lists-in-office-365.md
+            - name: Configure junk email settings on Exchange Online mailboxes
+              href: ./office-365-security/configure-junk-email-settings-on-exo-mailboxes.md
+            - name: Configure outbound spam filtering
+              href: ./office-365-security/configure-the-outbound-spam-policy.md
+            - name: Specify a mailbox for user submissions
+              href: ./office-365-security/user-submission.md
+            - name: Create safe sender lists
+              href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
         - name: Migrate
         - name: Security administration
+          expanded: true
+          items: 
+            - name: Use Admin Submission
+              href: ./office-365-security/admin-submission.md
+            - name: Remove blocked users from the Restricted Users portal
+              href: ./office-365-security/removing-user-from-restricted-users-portal-after-spam.md
+            - name: Give users access to the Security center
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
+            - name: Use mail flow rules to set the SCL in messages
+              href: ./office-365-security/use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md
+            - name: Use the delist portal to remove yourself from the blocked senders list
+              href: ./office-365-security/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
+            - name: Manage URLs in the Tenant Allow/Block List
+              href: ./office-365-security/tenant-allow-block-list.md
         - name: Security operations
+          expanded: true
+          items: 
+            - name: Manually submit messages to Microsoft
+              href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
+            - name: Recover from a ransomware attack
+              href: ./office-365-security/recover-from-ransomware.md
+            - name: Configure your tenant for increased security
+              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
+            - name: Use mail flow rules to see what your users are reporting to Microsoft
+              href: ./office-365-security/use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md
+            - name: Submit malware and non-malware to Microsoft
+              href: ./office-365-security/submitting-malware-and-non-malware-to-microsoft-for-analysis.md
+            - name: Configuration analyzer for preset security policies
+              href: ./office-365-security/configuration-analyzer-for-security-policies.md
+            - name: Zero-hour auto purge - protection against spam and malware
+              href: ./office-365-security/zero-hour-auto-purge.md
         - name: How-to
+          expanded: true
+          items: 
+            - name: Install and use the Junk Email Reporting add-in
+              href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
+            - name: Report junk email and phishing in Outlook on the web
+              href: ./office-365-security/report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
+            - name: Enable the Report Message add-in
+              href: ./office-365-security/enable-the-report-message-add-in.md
         - name: FAQ
+          expanded: true
+          items: 
+            - name: Anti-malware protection FAQ
+              href: ./office-365-security/anti-malware-protection-faq-eop.md
+            - name: Anti-spam protection FAQ
+              href: ./office-365-security/anti-spam-protection-faq.md
         - name: Reference
+          expanded: true
+          items: 
+            - name: Virus detection in SharePoint Online
+              href: ./office-365-security/virus-detection-in-spo.md
+            - name: Spam confidence level (SCL)
+              href: ./office-365-security/spam-confidence-levels.md
+            - name: Bulk complaint level (SCL)
+              href: ./office-365-security/bulk-complaint-level-values.md
+            - name: Advanced Spam Filter (ASF) settings
+              href: ./office-365-security/advanced-spam-filtering-asf-options.md
+            - name: Outbound delivery pools
+              href: ./office-365-security/high-risk-delivery-pool-for-outbound-messages.md
+            - name: Preset security policies
+              href: ./office-365-security/preset-security-policies.md
+            - name: Anti-spam message headers
+              href: ./office-365-security/anti-spam-message-headers.md
+            - name: How policies and protections are combined
+              href: ./office-365-security/how-policies-and-protections-are-combined.md
+            - name: Safety tips in email messages
+              href: ./office-365-security/safety-tips-in-office-365.md
+        - name: What's the difference between junk email and bulk email?
+          href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
