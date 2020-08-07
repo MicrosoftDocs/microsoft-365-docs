@@ -21,11 +21,18 @@ The new [Microsoft Edge browser](https://www.microsoft.com/edge) provides world-
 
 To migrate your Microsoft Managed Desktop devices to the new Microsoft Edge browser, file an IT Support Ticket through the Microsoft Managed Desktop Portal. We will deploy the Edge Stable channel to the Test Group when you file the ticket, and then deploy it in each subsequent deployment group every 24 hours. To pause the deployment, file another ticket asking Operations to hold.
 
+The [Beta Channel] (https://docs.microsoft.com/en-us/deployedge/microsoft-edge-channels#beta-channel) is also available upon request for representative validation within your organization. Microsoft Managed Desktop will deploy the application as required to the Test and First Groups so that all of those users have the Beta Channel in addition to the Stable Channel. For any additional users who need access to the Beta Channel please add them to the **Modern Workplace - Edge Beta Users** group and have them install it from the Company Portal
+
 ## Updates to Microsoft Edge
 
-Microsoft Managed Desktop deploys the [Stable channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge which is auto-updated about every six weeks. Updates on the Stable channel are rolled out [progressively](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group in order to ensure the best experience for customers. The Microsoft Edge Beta channel is not currently available.
+Microsoft Managed Desktop deploys the [Stable channel](https://docs.microsoft.com/deployedge/microsoft-edge-channels#stable-channel) of Microsoft Edge which is auto-updated about every six weeks. Updates on the Stable channel are rolled out [progressively](https://docs.microsoft.com/deployedge/microsoft-edge-update-progressive-rollout) by the Microsoft Edge product group in order to ensure the best experience for customers. 
+
+The [Beta Channel] (https://docs.microsoft.com/en-us/deployedge/microsoft-edge-channels#beta-channel) is deployed to devices in both the Test and First groups for representative validation within the organization. This channel is fully supported and is auto-updated with new features approximately every six weeks. The 
 
 To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
+
+### Microsoft Edge Beta Channel
+
 
 ## Settings managed by Microsoft Managed Desktop
 
@@ -96,6 +103,19 @@ We don't recommend using Flash because of associated security risks. If you stil
 
 We do not recommend allowing end users to save passwords on their device.
 
+### Internet Explorer Mode in Microsoft Edge
+IE mode on Microsoft Edge makes it easy to use all of the sites your organization needs in a single browser. It uses the integrated Chromium engine for modern sites, and it uses the Trident MSHTML engine from Internet Explorer 11 (IE11) for legacy sites. [Learn more] (https://docs.microsoft.com/en-us/DeployEdge/edge-ie-mode) 
+
+Microsoft Managed Desktop enables Internet Explorer mode for your devices by default 
+
+#### Internet Explorer mode integration
+**Default Value:** Internet Explorer mode
+
+By default devices are configured to use Internet Explorer mode but, if desired, can be configured to open sites in a standalone Internet Explorer 11 window instead. In order to do so file a change request.  
+
+#### Configure Sites on the Enterprise Mode Site List
+For sites to open in Internet Explorer mode they must be [configured on the Enterprise Site list] (https://docs.microsoft.com/en-us/DeployEdge/edge-ie-mode-sitelist). Maintaining and deploying the Enterprise Site list is a customer responsibility. For details, see [Configure using the Configure Enterprise Mode Site List policy](https://docs.microsoft.com/en-us/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+
 ### Other settings
 
 #### Enable site isolation for every site
@@ -128,6 +148,9 @@ The Administrative Template offers a setting to deploy particular Chrome extensi
 ### Install extensions silently
 
 You can also use the Administrative Template to set Microsoft Edge to install extensions without alerting the user. You can find it in **Computer Configuration > Microsoft Edge > Extensions > Control which extensions are installed silently**.
+
+### Microsoft Edge update policies
+To ensure that Microsoft Edge updates correctly, do not modify the Microsoft Edge [update policies](https://docs.microsoft.com/deployedge/microsoft-edge-update-policies).
 
 ### Other common enterprise policies
 
