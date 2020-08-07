@@ -52,9 +52,21 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try insi
 >[!Important]
 >By default, Global Administrators do not have access to communication compliance features. The roles assigned in this step are required before any communication compliance features will be accessible.
 
-To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the **Supervisory Review Administrator** role. You must create a new role group for reviewers with the **Supervisory Review Administrator**, **Case Management**, **Compliance Administrator**, and **Review** roles to investigate and remediate messages with policy matches.
+There are five roles used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned the *Communication Compliance Admin* role.
 
-### Create a new role group
+Depending on how you wish to manage communication policies and alerts, you'll need to create one or more new role groups for administrators, reviewers, and investigators. Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple groups to best fit your compliance management requirements.
+
+Choose from these role options when configuring your communication compliance role groups:
+
+|**Role**|**Role permissions**|
+|:-----|:-----|
+| **Communication Compliance Admin** | Users assigned this role can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned this role cannot view message alerts. |
+| **Communication Compliance Analysis** | Users assigned this role can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Investigation** | Users assigned this role can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Viewer** | Users assigned this role can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+| **Communication Compliance Case Management** | Users assigned this role can manage cases and act on alerts. This role is required for when creating custom role groups for administrators, analysts, and investigators. Custom groups for viewers do not need this role assigned. |
+
+### Create a new role group with all communication compliance roles
 
 1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
@@ -64,13 +76,45 @@ To make **Communication compliance** available as a menu option in Microsoft 365
 
 4. In the **Name** field, give the new role group a friendly name. Select **Next**.
 
-5. Select **Choose roles** and then select **Add**. Select the checkbox for **Supervisory Review Administrator**, **Case Management**, **Compliance Administrator**, and **Review**, then select **Add** and **Done**. Select **Next**.
+5. Select **Choose roles** and then select **Add**. Select the checkbox for the following roles:
 
-    ![Communication compliance required role groups](../media/communication-compliance-role-groups-1.png)
+    - Communication Compliance Admin
+    - Communication Compliance Analysis
+    - Communication Compliance Investigation
+    - Communication Compliance Viewer
+    - Communication Compliance Case Management
 
-6. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
+    ![Communication compliance roles](../media/communication-compliance-case-roles.png)
 
-7. Select **Create role group** to finish.
+6. select **Add** and **Done**, then select **Next** to continue.
+
+7. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
+
+8. Select **Create role group** to finish.
+
+### Create new role groups with different communication compliance roles
+
+Create multiple role groups to segment communication compliance access and responsibilities among different users in your organization. For each new role group, you'll assign different communication compliance roles.
+
+1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
+
+2. In the Security &amp; Compliance Center, go to **Permissions**. Select the link to view and manage roles in Office 365.
+
+3. Select **Create**.
+
+4. In the **Name** field, give the new role group a friendly name. Select **Next**.
+
+5. Select **Choose roles** and then select **Add**. Select the checkbox for the communication compliance roles you want to assign to this group. For example, if this role group is for compliance analysts in your organization, you would select the *Communication Compliance Analysis* and *Communication Compliance Case Management* roles. If this role group is for compliance investigators, you would select the *Communication Compliance Investigation* and *Communication Compliance Case Management* roles.
+
+    ![Communication compliance roles](../media/communication-compliance-analysts-role-group.png)
+
+6. select **Add** and **Done**, then select **Next** to continue.
+
+7. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
+
+8. Select **Create role group** to finish.
+
+9. Create additional communication compliance role groups as needed.
 
 For more information about role groups and permissions, see [Permissions in the Compliance Center](../security/office-365-security/protect-against-threats.md).
 
@@ -141,10 +185,10 @@ For more information about configuring Yammer in Native Mode, see:
     - Choose the communication direction to monitor, including inbound, outbound, or internal communications.
     - Define the communication compliance policy [conditions](communication-compliance-feature-reference.md#ConditionalSettings). You can choose from message address, keyword, file types, and size match conditions.
     - Choose if you'd like to include sensitive information types. This step is where you can select default and custom sensitive info types. Pick from existing custom sensitive information types or custom keyword dictionaries in the communication compliance policy wizard. You can create these items before running the wizard if needed. You can also create new sensitive information types from within the communication compliance policy wizard.
-    - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language sent or received in the body of email messages or other types of text.
+    - Choose if you'd like to enable classifiers. Classifiers can detect inappropriate language and images sent or received in the body of email messages or other types of text. You can choose the following built-in classifiers: *Threat*, *Profanity*, *Targeted harassment*, *Adult images*, *Racy images*, and *Gory images*.
 
     >[!CAUTION]
-    >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Harassment** built-in classifiers instead.
+    >We are deprecating the **Offensive Language** built-in classifier because it has been producing a high number of false positives. Don't use it and if you are currently using it, you should move your business processes off of it. We recommend using the **Threat**, **Profanity**, and **Targeted harassment** built-in classifiers instead.
 
     - Define the percentage of communications to review.
     - Review your policy selections and create the policy.
@@ -153,25 +197,33 @@ For more information about configuring Yammer in Native Mode, see:
 
 6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
-## Step 6 (optional): Create employee notice templates
+## Step 6 (optional): Create employee notice templates and configure user anonymization
 
 If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
+
+You can also choose to enable anonymization for displayed usernames when investigating policy matches and taking action on messages.
 
 1. Sign into [https://compliance.microsoft.com](https://compliance.microsoft.com) using credentials for an admin account in your Microsoft 365 organization.
 
 2. In the Microsoft 365 compliance center, go to **Communication compliance**.
 
-3. Select the **Notice templates** tab and then select **Create notice template**.
+3. To configure anonymization for usernames, select the **Privacy** tab.
 
-4. On the **Modify a notice template** page, complete the following fields:
+4. To enable anonymization, select **Show anonymized versions of usernames**.
 
-    - Notice template name (required)
+5. Select **Save**.
+
+6. Navigate to the **Notice templates** tab and then select **Create notice template**.
+
+7. On the **Modify a notice template** page, complete the following fields:
+
+    - Template name (required)
     - Send from (required)
     - Cc and Bcc (optional)
     - Subject (required)
     - Message body (required)
 
-5. Select **Save** to create and save the notice template.
+8. Select **Save** to create and save the notice template.
 
 ## Step 7 (optional): Test your communication compliance policy
 
@@ -188,3 +240,9 @@ Follow these steps to test your communication compliance policy:
 3. Sign in to Microsoft 365 as a reviewer designated in the communication compliance policy. Navigate to **Communication compliance** > **Alerts** to view the alerts for your policies.
 
 4. Remediate the alert using the remediation controls and verify that the alert is properly resolved.
+
+## Next steps
+
+After you've completed these steps to create your first communication compliance policy, you'll start to receive alerts from activity indicators after about 24 hours. Configure additional policies as needed using the guidance in Step 5 of this article.
+
+To learn more about investigating communication compliance alerts, see [Investigate and remediate communication compliance alerts](communication-compliance-investigate-remediate.md).
