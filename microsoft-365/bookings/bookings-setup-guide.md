@@ -59,7 +59,7 @@ Next, add staff from your Microsoft 365 tenant, or add staff external to your or
 
     Once a staff member is added, you can edit the name that appears on all Bookings communications by selecting the **x** next to their name and editing the **Add people** field. This can be useful if you would like staff members to have a specific title or name displayed for customers, such as listing Adele Vance as “Dr. Vance, MD.”
 
-4. To add staff from outside of your tenant, manually fill in their email and other information. 
+4. To add staff from outside of your tenant, manually fill in their email and other information.
 
     > [!NOTE]
     > Staff from outside your tenant will not be able to share free/busy information with Bookings.
@@ -121,7 +121,7 @@ Define the services that your organization provides, which customers will book t
 
 8. **Let the customer manage their booking**: This setting determines whether or notthe customer can modify or cancel their booking, provided it was booked through the Calendar tab on the Bookings Web app.
 
-    - Enabled: 
+    - Enabled:
 
         The **Manage Booking** button appears on the customer confirmation email. When this button is selected by the customer, three options appear:
         - **Reschedule** Selecting this option brings the user to a service-specific Self-Service page, where they can select a new time and/or date for the same service and same staff member from the original booking. Note that even though the original staff member is attached to the rescheduled booking by default, the user does have the option of changing the staff member as well.
@@ -226,7 +226,7 @@ The Booking Page is where you set up what your external customer facing booking 
 
 Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking pag looks like this:
 
-:::image type="content" source="media/bookings-self-service_2.jpg" alt-text="Customer facing booking page":::
+:::image type="content" source="media/bookings-self-service.jpg" alt-text="Customer facing booking page":::
 
 ## Calendar tab
 
