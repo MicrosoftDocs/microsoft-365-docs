@@ -56,7 +56,7 @@ The next update to this article will be on opening day of our first online-only 
 
 There has been a lot of work done in the subscriptions management in the Microsoft 365 admin center to increase the performance, make it faster to find what you're looking for, and to meet the [WCAG 2.1 guidelines](http://www.w3.org/TR/WCAG21/).
 
-- **Table redesigned**: The list table where you can view all of your products you subscribe to was redesigned to group similar subscriptions. Got to **Billing** > **Your products**.
+- **Table redesign**: The list table where you can view all of your products you subscribe to was redesigned to group similar subscriptions. Got to **Billing** > **Your products**.
 - **Product details**: Get more details than ever about your subscriptions by selecting the product in the list.
 - **Do it all from here**: And you don't have to go to jump around several pages to manage one product. For example, if you need to cancel a subscription, the panel will open to do the action right there.
 
@@ -70,7 +70,7 @@ Domain management can be complicated, and we've released a new feature to make t
 
 ### Docs, training, and videos
 
-[What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover the new Yammer experience for web and mobile, how to integrate the Yammer Communities app for Microsoft Teams, new policy packages to support firstline workers and managers, and more. 
+[What's new with Microsoft 365](https://youtu.be/m1Nu8WJgCDY) video series: This month, we cover the new Yammer experience for web and mobile, how to integrate the Yammer Communities app for Microsoft Teams, new policy packages to support firstline workers and managers, and more.
 
 ## June 2020
 
@@ -79,6 +79,8 @@ Domain management can be complicated, and we've released a new feature to make t
 A few months ago, we added a setting that lets you manage the [What's New messages that show up in a user's Office apps](#office-whats-new-management). This month, we released a new Home page card that will help you act quickly and keep track of the **What's New** messages that you want shown to the users in your organization.
 
 ### Docs, training, and videos (June)
+
+- [Getting started with Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
 
 ## May 2020
 
@@ -118,7 +120,7 @@ Just this month, we released a new site on [https://docs.microsoft.com](https://
 
 ### Docs, training, and videos (May)
 
-- **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. [What's New in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
+- **What's new in Microsoft 365 video series**: This month, we cover the new support experience in the Teams admin and Security and Compliance Centers, Planner integration with the Message Center, and the new 3x3 video layout in Microsoft Teams. 
 - The [Microsoft 365 admin center help](https://docs.microsoft.com/microsoft-365/admin/) hub page was updated to help you find what you need more quickly. And if you go look at that page right now, we've added a card to inform you of important updates and changes.
 
 ## April 2020
