@@ -15,6 +15,8 @@ description: "An overview of the Microsoft Bookings app, which includes a web-ba
 
 Microsoft Bookings makes scheduling and managing appointments a breeze. Bookings includes a web-based booking calendar and integrates with Outlook to optimize your staff’s calendar and give your customers flexibility to book a time that works best for them. Automated notification emails reduce no-shows and enhance customer satisfaction, and organizations save time with a reduction in repetitive scheduling tasks. With built in flexibility and ability to customize, Bookings can be designed to fit the situation and needs of many different parts of an organization.
 
+You can use Bookings to schedule online appointments through [Microsoft Teams](https://support.microsoft.com/office/overview-of-the-bookings-app-in-teams-7b8569e1-0c8a-444e-b712-d9968b05110b) or Skype.
+
 > [!NOTE]
 > Bookings is on by default for customers who have the Microsoft 365 Business Standard, Microsoft 365 A3, and Microsoft 365 A5 subscriptions. Bookings is also available to customers who have Office 365 Enterprise E3 and Office 365 Enterprise E5, but it is turned off by default. To get started, see [Get access to Microsoft Bookings](get-access.md). To turn Bookings on or off, see [Turn Bookings on or off for your organization](turn-bookings-on-or-off.md).
 
@@ -30,7 +32,7 @@ Bookings has three primary components:
 
 As with all of the Microsoft 365 apps, Bookings is a tile in the app launcher. Click the tile to launch the app or select the app launcher, and then select **Bookings**.
 
-The first time you open the app, you'll see the home page, which includes tabs on the left to navigate between pages and several prominent tiles that guide you through setup and introduce new features.
+The first time you open the app, you'll see the home page, which includes tabs on the left to navigate between pages and several prominent tiles that guide you through setup and introduce new features. To get started, see [Get access to Microsoft Bookings](get-access.md).
 
 ![Image of Microsoft Bookings with callouts explaining the user interface](../media/bookings-overview.png)
 
@@ -54,7 +56,7 @@ Watch this video or follow the steps below to set up Bookings.
 
 7. [Schedule business closures, time off, and vacation time](schedule-closures-time-off-vacation.md)
 
-8. [Publish or unpublish your booking page](publish-booking-page.md)
+8. [Customize and publish your booking page](customize-booking-page)
 
 9. [Create a manual booking](create-a-manual-booking.md)
 
