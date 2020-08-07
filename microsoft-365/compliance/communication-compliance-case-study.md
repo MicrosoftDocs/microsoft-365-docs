@@ -23,7 +23,7 @@ search.appverid:
 
 # Case study - Contoso quickly configures an offensive language policy for Microsoft Teams, Exchange, and Yammer communications
 
-Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and take remediation actions for inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
+Communication compliance in Microsoft 365 helps minimize communication risks by helping you detect, capture, and act on inappropriate messages in your organization. Pre-defined and custom policies allow you to scan internal and external communications for policy matches so they can be examined by designated reviewers. Reviewers can investigate scanned email, Microsoft Teams, Yammer, or third-party communications in your organization and take appropriate remediation actions to make sure they're compliant with your organization's message standards.
 
 The Contoso Corporation is a fictional organization that needs to quickly configure a policy to monitor for offensive language. They have been using Microsoft 365 primarily for email, Microsoft Teams, and Yammer support for their employees but have new requirements to enforce company policy around workplace harassment. Contoso IT administrators and compliance specialists have a basic understanding of the fundamentals of working with Microsoft 365 and are looking for end-to-end guidance for how to quickly get started with communication compliance.
 
@@ -74,11 +74,23 @@ Contoso IT administrators take the following steps to verify the licensing suppo
 
 ### Permissions for communication compliance
 
-By default, Global Administrators do not have access to communication compliance features. [Permissions must be configured](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance-configure?view=o365-worldwide#step-1-required-enable-permissions-for-communication-compliance) so that Contoso IT administrators and compliance specialists have access to communication compliance.
+There are five roles used to configure permissions to manage communication compliance features. To make Communication compliance available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, Contoso administrators are assigned the Communication Compliance Admin role.
+
+Contoso decides to create one role group and assign all the communication compliance roles to the group. This makes it easier for them to get started quickly and best fits their compliance management requirements.
+
+Contoso will create one role group that contains all the communication compliance roles:
+
+|**Role**|**Role permissions**|
+|:-----|:-----|
+| **Communication Compliance Admin** | Users assigned this role can create, read, update, and delete communication compliance policies, global settings, and role group assignments. Users assigned this role cannot view message alerts. |
+| **Communication Compliance Analysis** | Users assigned this role can view policies where they are assigned as Reviewers, view message metadata (not message content), escalate to additional reviewers, or send notifications to users. Analysts cannot resolve pending alerts. |
+| **Communication Compliance Investigation** | Users assigned this role can view message metadata and content, escalate to additional reviewers, escalate to an Advanced eDiscovery case, send notifications to users, and resolve the alert. |
+| **Communication Compliance Viewer** | Users assigned this role can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
+| **Communication Compliance Case Management** | Users assigned this role can manage cases and act on alerts. This role is required for when creating custom role groups for administrators, analysts, and investigators. Custom groups for viewers do not need this role assigned. |
 
 1. Contoso IT administrators sign into the **Office 365 Security and Compliance center** permissions page [(https://protection.office.com/permissions)](https://protection.office.com/permissions) using credentials for a global administrator account and select the link to view and manage roles in Microsoft 365.
-2. After selecting **Create**, they give the new role group a friendly name of "*Communication compliance*" and select **Next**.
-3. They select **Choose roles** and then select **Add**. They add the required roles by selecting the checkbox for *Supervisory Review Administrator*, *Case Management*, *Compliance Administrator*, and *Review*, then they select **Add**, **Done,** and **Next**.
+2. After selecting **Create**, they give the new role group a friendly name of "*Communication Compliance*" and select **Next**.
+3. They select **Choose roles** and then select **Add**. They add the required roles by selecting the checkbox for *Communication Compliance Admin*, *Communication Compliance Analysis*, *Communication Compliance Investigation*, *Communication Compliance Viewer*, and *Communication Compliance Case Management*, then they select **Add**, **Done,** and **Next**.
 
 ![Communication compliance roles](../media/communication-compliance-case-roles.png)
 
@@ -120,7 +132,7 @@ To access communication compliance when starting from the Microsoft 365 admin ce
 
 ![Communication compliance link](../media/communication-compliance-case-compliance-link.png)
 
-This opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft 365 compliance center** provided in the banner at the top of the page.
+This action opens the **Office 365 Security and Compliance center**, and they must select the link to the **Microsoft 365 compliance center** provided in the banner at the top of the page.
 
 ![Office 365 security and compliance center](../media/communication-compliance-case-scc.png)
 
@@ -146,11 +158,11 @@ Contoso IT administrators review and complete the [step-by-step instructions](ht
 
 Communication compliance requires that the Yammer tenant for an organization is in Native Mode to monitor for offensive language in private messages and public community conversations.
 
-Contoso IT administrators make sure they review the information in the [Overview of Yammer Native Mode in Microsoft 365 topic](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Yammer network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) topic.
+Contoso IT administrators make sure they review the information in the [Overview of Yammer Native Mode in Microsoft 365 article](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) and follow the steps for running the migration tool in the [Configure your Yammer network for Native Mode for Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/native-mode) topic.
 
 ### Setting up a group for in-scope users
 
-Contoso compliance specialists want to add all employee to the communication policy that will monitor for offensive language. They could decide to add each employee user account to the policy separately, but they've decided it is much easier and saves a lot of time to use an **All Employees** distribution group for the users for this policy.
+Contoso compliance specialists want to add all employee to the communication policy that will monitor for offensive language. They could decide to add each employee user account to the policy separately, but they've decided it is much easier and saves time to use an **All Employees** distribution group for the users for this policy.
 
 They need to create a new group to include all Contoso employees, so they take the following steps:
 
