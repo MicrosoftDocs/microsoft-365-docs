@@ -18,7 +18,23 @@ description: "Learn about information governance in Microsoft 365."
 
 # Manage information governance
 
- Manage your content lifecycle using Microsoft 365 features to import, store, and classify business-critical data so you can keep what you need and delete what you don't.
+Use Microsoft information governance capabilities to govern your data for compliance or regulatory requirements.
+
+## Information governance
+
+To keep what you want and delete what you don't:
+ 
+|Capability|What problems does it solve?|Get started|
+|:------|:------------|:--------------------|:-----------------------------|
+|[Policy management and deletion workflow](retention.md)| Retain or delete content that includes email, documents, instant messages, and more | [Get started with retention policies and retention labels](get-started-with-retention.md)|
+
+## Records management
+
+To manage high-value content for legal, business, or regulatory obligations, use records management:
+
+|Capability|What problems does it solve?|Get started|
+|:------|:------------|---------------------|:----------------------------|
+|[Records management](records-management.md)| A single solution for email and documents that incorporates retention schedules and requirements into a file plan that manages retention, records declaration, and disposition to support the full lifecycle of your content|[ Learn about records](records.md) |
 
 
 
