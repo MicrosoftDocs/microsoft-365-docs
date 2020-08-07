@@ -54,7 +54,7 @@ If you don't have an existing Office 365 Enterprise E5 plan and want to try insi
 
 There are five roles used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center and to continue with these configuration steps, you must be assigned the *Communication Compliance Admin* role.
 
-Depending on how you wish to manage communication policies and alerts, you'll need to create one or more new role groups for administrators, reviewers, and investigators. Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple groups to best fit your compliance management requirements.
+Depending on how you wish to manage communication policies and alerts, you'll need to create one or more new role groups for administrators, reviewers, and investigators. You have the option to assign users to specific role groups to manage different areas of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple role groups to best fit your compliance management requirements.
 
 Choose from these role options when configuring your communication compliance role groups:
 
@@ -66,7 +66,7 @@ Choose from these role options when configuring your communication compliance ro
 | **Communication Compliance Viewer** | Users assigned this role can access all reporting widgets on the communication compliance home page and can view all communication compliance reports. |
 | **Communication Compliance Case Management** | Users assigned this role can manage cases and act on alerts. This role is required for when creating custom role groups for administrators, analysts, and investigators. Custom groups for viewers do not need this role assigned. |
 
-### Create a new role group with all communication compliance roles
+### Option 1: Create a new role group with all communication compliance roles
 
 1. Sign into [https://protection.office.com/permissions](https://protection.office.com/permissions) using credentials for an admin account in your Microsoft 365 organization.
 
@@ -76,7 +76,7 @@ Choose from these role options when configuring your communication compliance ro
 
 4. In the **Name** field, give the new role group a friendly name. Select **Next**.
 
-5. Select **Choose roles** and then select **Add**. Select the checkbox for the following roles:
+5. Select **Choose roles** and then select **Add**. Select the checkboxes for the following roles:
 
     - Communication Compliance Admin
     - Communication Compliance Analysis
@@ -92,7 +92,7 @@ Choose from these role options when configuring your communication compliance ro
 
 8. Select **Create role group** to finish.
 
-### Create new role groups with different communication compliance roles
+### Option 2: Create new role groups with different communication compliance roles
 
 Create multiple role groups to segment communication compliance access and responsibilities among different users in your organization. For each new role group, you'll assign different communication compliance roles.
 
@@ -108,7 +108,7 @@ Create multiple role groups to segment communication compliance access and respo
 
     ![Communication compliance roles](../media/communication-compliance-analysts-role-group.png)
 
-6. select **Add** and **Done**, then select **Next** to continue.
+6. Select **Add** and **Done**, then select **Next** to continue.
 
 7. Select **Choose members** and then select **Add**. Select the checkbox for all the users and groups you want create policies and manage messages with policy matches, then select **Add** and **Done**. Select **Next**.
 
@@ -197,7 +197,7 @@ For more information about configuring Yammer in Native Mode, see:
 
 6. The **Your policy was created** page is displayed with guidelines on when policy will be activated and which communications will be captured.
 
-## Step 6 (optional): Create employee notice templates and configure user anonymization
+## Step 6 (optional): Create notice templates and configure user anonymization
 
 If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
 
