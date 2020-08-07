@@ -53,10 +53,10 @@ Microsoft? Use these steps to create an account and sign up for a free
 trial subscription of Microsoft 365 Business Standard, Microsoft 365
 Business Premium, or Microsoft 365 Apps for business.
 
-1. Go to the [Microsoft 365 Products site](https://www.aka.ms/office365signup).
+1. Go to the <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 Products site</a>.
 2. Select the plan that you want to sign up for, such as **Microsoft 365 Business Standard**, scroll down the page, and select **Try free for 1 month**.
 3. On the next page, follow the steps to set up your account.
-4. The signup process may take several minutes to complete. After > it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
+4. The signup process may take several minutes to complete. After it\'s complete, you're ready to start the setup wizard for your subscription. For more information about setting up your subscription, see [Next steps](#next-steps).
 
 ## Buy a subscription from your free trial
 
@@ -68,7 +68,7 @@ following the steps in [Buy a different subscription](#buy-a-different-subscript
 If you want to buy your subscription before your trial is over, use
 these steps:
 
-1. In the Microsoft 365 admin center, go to the **Billing** \> [Your products](https://go.microsoft.com/fwlink/p/?linkid=842054) page.
+1. In the Microsoft 365 admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.
 2. On the **Your products** page, find the subscription that you want to buy.
 3. In the **Licenses** section, select **Purchase subscription**.
 4. Choose either a monthly or annual commitment for your subscription, then select **Checkout**.
@@ -91,7 +91,7 @@ as your existing subscription. This association makes it easier to move users in
 your organization between subscriptions, or to assign them a license for
 the additional products they need.
 
-1. In the admin center, go to the **Billing** \> [[Purchase services](https://go.microsoft.com/fwlink/p/?linkid=868433) page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, you see the plans that are available to your organization. Choose the Microsoft 365 plan that you want to try.
 3. On the next page, select **Get free trial**. The trial gives you 25 user licenses for a one-month term.
 4. Choose to receive a text or a call, enter your phone number, then choose **Text me** or **Call me**.
@@ -109,7 +109,7 @@ space) as your existing subscription. This makes it easier to move users
 in your organization between subscriptions or assign them a license for
 the additional subscription they need.
 
-1. In the admin center, go to the **Billing** \> [[Purchase services](https://go.microsoft.com/fwlink/p/?linkid=868433) page.
+1. In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Purchase services</a> page.
 2. On the **Purchase services** page, select the plan that you want to buy, select **Details**, then select **Buy**.
 3. Enter the number of licenses that you need and choose whether to pay each month or for the whole year. Choose whether you want to automatically assign licenses to everyone who does not currently have a license. Then select **Check out now**.
 4. Review the pricing information and select **Next**.
@@ -124,7 +124,7 @@ If you have a new account and are setting up your first subscription,
 you can use the guided setup articles to help you get started.
 
 - [Set up Microsoft 365 Business Basic](../admin/setup/setup-business-basic.md)
-- [Set up Microsoft Business Standard](../admin/setup/setup-business-standard.md)
+- [Set up Microsoft 365 Business Standard](../admin/setup/setup-business-standard.md)
 - [Set up Microsoft 365 Business Premium](../business/set-up.md)
 - [Set up Microsoft 365 Apps for business](../admin/setup/setup-apps-for-business.md)
 
