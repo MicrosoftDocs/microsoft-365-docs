@@ -20,6 +20,9 @@ description: "Learn about information governance in Microsoft 365."
 
  Manage your content lifecycle using Microsoft 365 features to import, store, and classify business-critical data so you can keep what you need and delete what you don't.
 
+
+
+
 |**Capability**|**More information**|
 |:-----|:-----|
 | **Manage data** | Use [retention polices and retention labels](retention.md) to keep the data that you need to retain and delete what you don't need to keep or must delete for regulatory or compliance reasons.<br /><br /> Use the [import service](importing-pst-files-to-office-365.md) to quickly bulk-import PST files to Exchange Online mailboxes in your organization and configure [unlimited archiving](unlimited-archiving.md) to provide users with additional mailbox storage space.|
