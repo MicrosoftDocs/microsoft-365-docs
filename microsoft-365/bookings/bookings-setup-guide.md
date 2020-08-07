@@ -226,7 +226,7 @@ The Booking Page is where you set up what your external customer facing booking 
 
 Once you publish your booking page, customers will see your booking page where they can book appointments with you. The customer facing booking pag looks like this:
 
-    :::image type="content" source="media/bookings-Self-Service.jpg" alt-text="The Bookings Page":::
+:::image type="content" source="media/bookings-self-service_2.jpg" alt-text="Customer facing booking page":::
 
 ## Calendar tab
 
