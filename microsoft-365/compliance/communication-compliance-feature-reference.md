@@ -46,7 +46,7 @@ Policy templates are pre-defined policy settings that you can use to quickly cre
 
 There are five roles used to configure permissions to manage communication compliance features. To make **Communication compliance** available as a menu option in Microsoft 365 compliance center, you must be assigned the *Communication Compliance Admin* role.
 
-Depending on how you wish to manage communication policies and alerts, you’ll need to create one or more new role groups for administrators, reviewers, and investigators. Depending on the structure of your compliance management team, you have options to assign users to specific role groups to manage different sets of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple groups to best fit your compliance management requirements.
+Depending on how you wish to manage communication policies and alerts, you'll need to create one or more new role groups for administrators, reviewers, and investigators. You have the option to assign users to specific role groups to manage different sets of communication compliance features. Or you may decide to create one role group and assign all the communication compliance roles to the group. Create a single role group or multiple groups to best fit your compliance management requirements.
 
 Choose from these role options when configuring your communication compliance role groups:
 
@@ -311,9 +311,9 @@ If you'd like to change the severity level assigned in an alert policy for a spe
 
 ## Reports (preview)
 
-The new Reports dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable. 
+The new **Reports** dashboard is the central location for viewing all communication compliance reports. Report widgets provide a quick view of insights most needed for an overall assessment of the status of communication compliance activities. Information contained in the report widgets is not exportable.
 
-The Reports dashboard contains the following report widgets:
+The **Reports** dashboard contains the following report widgets:
 
 - **Recent policy matches**: displays the number of matches by active policy over time.
 - **Resolved items by policy**: displays the the number of policy match alerts resolved by policy over time.
