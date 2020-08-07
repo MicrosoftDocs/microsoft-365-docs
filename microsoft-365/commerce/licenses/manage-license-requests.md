@@ -2,7 +2,6 @@
 title: "Manage license requests"
 f1.keywords:
 - CSH
-- MACBillingLicensesRequests
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -13,7 +12,7 @@ localization_priority: Normal
 ms.collection: 
 - M365-subscription-management
 - commerce
-ms.custom:
+ms.custom: MACBillingLicensesRequests
 search.appverid:
 - MET150
 description: "Learn how to review and approve or deny license requests from users for your Microsoft 365 for business subscription."
@@ -41,11 +40,11 @@ You must be a Global admin to perform the tasks in this article. For more inform
 If your organization has its own request process, you can use it instead. You create a message that is displayed to users when they request a license.
 
 > [!IMPORTANT]
-> If you use your own request process, no requests are displayed on the **Requests** tab.
+> If you use your own request process, no requests are displayed on the **Requests** tab. Existing requests from before you added your message continue to appear until you approve or decline them.
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page, then select the **Requests** tab.
 2. Select **Use your existing request process instead**.
-3. In the right pane, in the *Message** box, type the message you want users to see when they request a license. If you want to also include a link to your organizations policy or other documentation, enter the URL in the **Link to documentation (optional)** text box.
+3. In the right pane, in the **Message** box, type the message you want users to see when they request a license. If you want to also include a link to your organizations policy or other documentation, enter the URL in the **Link to documentation (optional)** text box.
 4. Select **Save**.
 
 When you return to the **Requests** list, you see the message **You’re using your own license request process**. To make changes to the message that is sent to users, select **Use your existing request process instead**.
@@ -53,7 +52,7 @@ When you return to the **Requests** list, you see the message **You’re using y
 ## Stop using your own request process
 
 1. In the admin center, go to the **Billing** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenses</a> page, then select the **Requests** tab.
-2. Select Use your existing request process instead.
+2. Select **Use your existing request process instead**.
 3. In the right pane, clear the **Use my organization’s request process** check box.
 4. Select **Save**.
 
