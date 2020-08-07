@@ -42,7 +42,7 @@ Yes. We provide a way for you to embed your Bookings calendar in your site via a
 
 Yes. We provide a link to your booking page within the **Booking page** tab in the Web app. You just need to provide that link to your customers or clients, and they will see the latest availability information for your business. Alternatively, you can share the booking page in social media or even use the embed feature to host it in an iFrame. You also have the ability to control who can access the page by disabling direct search engine indexing and restricting access to only those within your organization.
 
-**Can our IT department control whether end users have access to Bookings?**
+**Can our IT department control whether end users can access Bookings?**
 
 Bookings is available in Business Premium, M365 A3/A5 and E3/E5 tenants by default, but administrators can turn it off in the Microsoft 365 admin center if they choose. To do so, [follow these instructions](https://support.microsoft.com/office/turn-microsoft-bookings-on-or-off-for-your-organization-c27537fa-525e-47a8-aadf-9b07ee75c227).
 

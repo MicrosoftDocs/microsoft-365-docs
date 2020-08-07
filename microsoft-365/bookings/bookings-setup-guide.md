@@ -82,7 +82,7 @@ Next, add staff from your Microsoft 365 tenant, or add staff external to your or
 > [!IMPORTANT]
 > We highly recommend leaving this setting on (it is turned on by default) to avoid double-bookings and to optimize the availability of your staff members.
 
-8. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours you defined in the **Business hours** section on the Business Information page.
+8. Select **Use business hours** to set all bookable times for your staff members to be only within the business hours that you set in the **Business hours** section on the Business Information page.
 
     By deselecting this box, staff can be given custom hours that further limit when they can be booked. This is helpful for scenarios where a staff member may only be on site Tuesdays and Wednesdays, or they dedicate their mornings for one type of appointments and their afternoons for other types.
 
