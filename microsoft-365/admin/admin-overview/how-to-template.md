@@ -47,15 +47,16 @@ description: "Brief summary of article here"   # (Optional) Helps with SEO. Reco
 
 ## Watch: Name of video (optional)
 
-<!-- If you include a video in your article, put it under its own H1 heading so it shows up in the "In this article" list on the right-hand side of the article. -->
+<!-- If you include a video in your article, put it under its own H1 heading so it shows up in the "In this article" list on the right side of the article. -->
 
 ## Next steps (optional)
 
 <!-- Include this section for how-to articles only, if needed. Recommend the next logical action or actions to take after completing the task(s) outlined in the article. Include links to relevant how-to articles (such as the next task to complete in a scenario), links to recommended reading, or any other info that you think users should or might want to do next. -->
 
 ## Related content
-<!-- Include a list of links, but do NOT use bullets. Next to each link, include the content type (choose from: article, video, blog post) in parentheses. See examples below. -->
+<!-- Include a list of links, but do NOT use bullets. Next to each link, include the content type (choose from: article, video, blog post, link page) in parentheses. See examples below. -->
 
-[Article title](https://docs.microsoft.com) (article)
-[Video title](https://docs.microsoft.com) (video)
-[Blog post title](https://docs.microsoft.com) (blog post)
+[Article title](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center) (article)
+[Video title](https://www.aka.ms/M365Btraining) (video)
+[Blog post title](https://techcommunity.microsoft.com/t5/office-365-blog/office-365-groups-ignite-recap/ba-p/1036796) (blog post)
+[Landing page title](https://www.aka.ms/M365Btraining) (link page)
