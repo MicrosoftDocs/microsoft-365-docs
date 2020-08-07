@@ -27,7 +27,7 @@ Use Microsoft Information Protection capabilities to help discover, classify, an
 
 To understand your data landscape and identify important data across your hybrid environment, use the following capabilities:
  
-|Capability|What problems does it solve?|Documentation|
+|Capability|What problems does it solve?|Get started|
 |:------|:------------|:--------------------|:-----------------------------|
 |[Sensitive information types](sensitive-information-type-entity-definitions.md)| Identifies sensitive data by using built-in or custom regular expressions or a function, together with corroborative evidence that includes keywords, confidence levels, and proximity.| [Customize a built-in sensitive information type](customize-a-built-in-sensitive-information-type.md)|
 |[Trainable classifiers (preview)](classifier-getting-started-with.md)| Classifies data for you, using one of the built-in classifiers or train a classier with your own content | [Create a trainable classifier (preview)](classifier-creating-a-trainable-classifier.md) |
@@ -37,7 +37,7 @@ To understand your data landscape and identify important data across your hybrid
 
 To apply flexible protection actions that include encryption, access restrictions, and visual markings, use the following capabilities:
 
-|Capability|What problems does it solve?|Documentation|
+|Capability|What problems does it solve?|Get started|
 |:------|:------------|---------------------|:----------------------------|
 |[Sensitivity labels](sensitivity-labels.md)| A single solution across apps, services, and devices to label and protect your data as it travels inside and outside your organization <br /><br />Example scenario: [Apply and view sensitivity labels in Power BI, and protect data when it is exported](https://docs.microsoft.com/power-bi/admin/service-security-data-protection-overview)|[ Get started with sensitivity labels](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)| For Windows computers, extends sensitivity labels for additional features and functionality that includes labeling and protecting all file types from File Explorer and PowerShell<br /><br /> Example additional features: [Custom configurations for the Azure Information Protection unified labeling client](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations)| [Azure Information Protection unified labeling client administrator guide](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide)|
@@ -55,7 +55,7 @@ To apply flexible protection actions that include encryption, access restriction
 To help prevent accidental oversharing of sensitive information, use the following capabilities:
 
 
-|Capability|What problems does it solve?|Documentation|
+|Capability|What problems does it solve?|Get started|
 |:------|:------------|:---------------------|:-----------------------------|
-|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with DLP policy recommendations](get-started-with-dlp-policy-recommendations.md) <br /><br /> [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
+|[Data loss prevention](data-loss-prevention-policies.md) (DLP)| Helps prevent unintentional sharing of sensitive items <br /><br />Example scenario: [Protect sensitive information in Microsoft Teams chat and channel messages](dlp-microsoft-teams.md) | [Get started with the default DLP policy](get-started-with-the-default-dlp-policy.md)|
 |[Endpoint data loss prevention (preview)](endpoint-dlp-learn-about.md)| Extends DLP capabilities to items that are used and shared on Windows 10 computers | [Get started with Endpoint data loss prevention (preview)](endpoint-dlp-getting-started.md)|
