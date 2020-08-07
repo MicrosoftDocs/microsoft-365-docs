@@ -20,22 +20,31 @@ ms.custom: seo-marvel-apr2020
 ---
 # Create custom sensitive information types with Exact Data Match based classification
 
-[Custom sensitive information types](custom-sensitive-info-types.md) are used to help prevent inadvertent or inappropriate sharing of sensitive information. As an administrator, you can use the Security & Compliance Center or PowerShell to define a custom sensitive information type based on patterns, evidence (keywords such as *employee*, *badge*, *ID*, and so on), character proximity (how close evidence is to characters in a particular pattern), and confidence levels. Such custom sensitive information types meet business needs for many organizations.
+[Custom sensitive information types](custom-sensitive-info-types.md) are used to help identify sensitive items so that you can prevent them from being inadvertently or inappropriately shared. You define a custom sensitive information type based on:
 
-But what if you wanted a custom sensitive information type that uses exact data values, instead of matching only with generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
+- patterns
+- keyword evidence such as *employee*, *badge*, or *ID*
+- character proximity to evidence in a particular pattern
+- confidence levels
 
-- be dynamic and refreshable;
-- be more scalable;
-- result in fewer false-positives;
-- work with structured sensitive data;
-- handle sensitive information more securely; and
-- be used with several Microsoft cloud services.
+ Such custom sensitive information types meet business needs for many organizations.
+
+But what if you wanted a custom sensitive information type that uses exact data values, instead of one that found matches based on generic patterns? With Exact Data Match (EDM)-based classification, you can create a custom sensitive information type that is designed to:
+
+- be dynamic and refreshable
+- be more scalable
+- result in fewer false-positives
+- work with structured sensitive data
+- handle sensitive information more securely
+- be used with several Microsoft cloud services
 
 ![EDM-based classification](../media/EDMClassification.png)
 
-EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily or weekly, and it can contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+EDM-based classification enables you to create custom sensitive information types that refer to exact values in a database of sensitive information. The database can be refreshed daily, and it can contain up to 100 million rows of data. So as employees, patients, or clients come and go, and records change, your custom sensitive information types remain current and applicable. And, you can use EDM-based classification with policies, such as [data loss prevention policies](data-loss-prevention-policies.md) (DLP) or [Microsoft Cloud App Security file policies](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 ## Required licenses and permissions
+
+THIS REQUIRES CLARIFICATION FOR THE SCHEMA ADMIN AND THE EDMUPLOAD AGENT PERMISSIONS
 
 You must be a global admin, compliance administrator, or Exchange Online administrator to perform the tasks described in this article. To learn more about DLP permissions, see [Permissions](data-loss-prevention-policies.md#permissions).
 
@@ -66,16 +75,23 @@ EDM-based classification is included in these subscriptions
 
 ### Part 1: Set up EDM-based classification
 
-Setting up and configuring EDM-based classification involves saving sensitive data in .csv format, defining a schema for your database of sensitive information, creating a rule package, and then uploading the schema and rule package.
+Setting up and configuring EDM-based classification involves:
 
-#### Define the schema for your database of sensitive information
+1. [Saving sensitive data in .csv format](#save-sensitive-data-in-csv-format)
+2. [Define your sensitive information database schema](#define-the-schema-for-your-database-of-sensitive-information)
+3. [Create a rule package](#set-up-a-rule-package)
+
+
+#### Save sensitive data in .csv format
 
 1. Identify the sensitive information you want to use. Export the data to an app, such as Microsoft Excel, and save the file in .csv format. The data file can include a maximum of:
       - Up to 100 million rows of sensitive data
       - Up to 32 columns (fields) per data source
       - Up to 5 columns (fields) marked as searchable
 
-2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname", and so on. Please note that column headers can't include spaces or underscores in their names. As an example, our .csv file is called *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
+2. Structure the sensitive data in the .csv file such that the first row includes the names of the fields used for EDM-based classification. In your .csv file, you might have field names, such as "ssn", "birthdate", "firstname", "lastname". The column header names can't include spaces or underscores. For example, the sample .csv file that we use in this article is names *PatientRecords.csv*, and its columns include *PatientID*, *MRN*, *LastName*, *FirstName*, *SSN*, and more.
+
+#### Define the schema for your database of sensitive information
 
 3. Define the schema for the database of sensitive information in .xml format (similar to our example below). Name this schema file **edm.xml**, and configure it such that for each column in the database, there is a line that uses the syntax: 
 
@@ -129,65 +145,7 @@ Setting up and configuring EDM-based classification involves saving sensitive da
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
-Now that the schema for your database of sensitive information is defined, the next step is to set up a rule package. Proceed to the section [Set up a rule package](#set-up-a-rule-package).
-
-#### Editing the schema for EDM-based classification
-
-If you want to make changes to your **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
-
-1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
-
-2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
-
-3. To update your database schema, run the following cmdlets, one at a time:
-
-      ```powershell
-      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
-      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
-      ```
-
-      You will be prompted to confirm, as follows:
-
-      > Confirm
-      >
-      > Are you sure you want to perform this action?
-      >
-      > EDM Schema for the data store 'patientrecords' will be updated.
-      >
-      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
-
-      > [!TIP]
-      > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
-
-      > [!NOTE]
-      > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
-
-## Removing the schema for EDM-based classification
-
-(As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
-
-1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
-
-2. Run the following PowerShell cmdlets, substituting the data store name of "patientrecords" with the one you want to remove:
-
-      ```powershell
-      Remove-DlpEdmSchema -Identity patientrecords
-      ```
-
-      You will be prompted to confirm, as follows:
-
-      > Confirm
-      >
-      > Are you sure you want to perform this action?
-      >
-      > EDM Schema for the data store 'patientrecords' will be removed.
-      >
-      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
-
-      > [!TIP]
-      >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
-
-### Set up a rule package
+#### Set up a rule package
 
 1. Create a rule package in .xml format (with Unicode encoding), similar to the following example. (You can copy, modify, and use our example.)
 
@@ -288,6 +246,63 @@ In this example, note the following:
 > [!NOTE]
 > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
 
+#### Editing the schema for EDM-based classification
+
+If you want to make changes to your **edm.xml** file, such as changing which fields are used for EDM-based classification, follow these steps:
+
+1. Edit your **edm.xml** file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
+
+2. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+3. To update your database schema, run the following cmdlets, one at a time:
+
+      ```powershell
+      $edmSchemaXml=Get-Content .\\edm.xml -Encoding Byte -ReadCount 0
+      Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true
+      ```
+
+      You will be prompted to confirm, as follows:
+
+      > Confirm
+      >
+      > Are you sure you want to perform this action?
+      >
+      > EDM Schema for the data store 'patientrecords' will be updated.
+      >
+      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
+
+      > [!TIP]
+      > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: Set-DlpEdmSchema -FileData $edmSchemaXml
+
+      > [!NOTE]
+      > It can take between 10-60 minutes to update the EDMSchema with additions. The update must complete before you execute steps that use the additions.
+
+#### Removing the schema for EDM-based classification
+
+(As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
+
+1. Connect to the Security & Compliance center using the procedures in [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+
+2. Run the following PowerShell cmdlets, substituting the data store name of "patientrecords" with the one you want to remove:
+
+      ```powershell
+      Remove-DlpEdmSchema -Identity patientrecords
+      ```
+
+      You will be prompted to confirm, as follows:
+
+      > Confirm
+      >
+      > Are you sure you want to perform this action?
+      >
+      > EDM Schema for the data store 'patientrecords' will be removed.
+      >
+      > \[Y\] Yes \[A\] Yes to All \[N\] No \[L\] No to All \[?\] Help (default is "Y"):
+
+      > [!TIP]
+      >  If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false
+
+
 ### Part 2: Index and upload the sensitive data
 
 During this phase, you set up a custom security group and user account, and set up the EDM Upload Agent tool. Then, you use the tool to index the sensitive data, and upload the indexed data.
@@ -371,7 +386,7 @@ At this point, you are ready to use EDM-based classification with your Microsoft
 
 #### Refreshing your sensitive information database
 
-You can refresh your sensitive information database daily or weekly, and the EDM Upload Tool can reindex the sensitive data and then reupload the indexed data.
+You can refresh your sensitive information database daily, and the EDM Upload Tool can reindex the sensitive data and then reupload the indexed data.
 
 1. Determine your process and frequency (daily or weekly) for refreshing the database of sensitive information.
 
