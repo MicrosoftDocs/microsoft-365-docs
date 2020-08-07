@@ -18,6 +18,7 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: "Learn how to get a free trial or buy a subscription for Microsoft 365 for business."
+ms.date: 08/07/2020
 ---
 
 # Try or buy a Microsoft 365 for business subscription
