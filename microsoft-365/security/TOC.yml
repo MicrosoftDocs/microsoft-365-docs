@@ -276,8 +276,6 @@
                 - name: Quarantine
                   href: ./office-365-security/quarantine-email-messages.md
                   items: 
-                    - name: Quarantine FAQ
-                      href: ./office-365-security/quarantine-faq.md
                     - name: Manage quarantined messages and files as an admin
                       href: ./office-365-security/manage-quarantined-messages-and-files.md
                     - name: Find and release quarantined messages as a user
@@ -610,6 +608,8 @@
               href: ./office-365-security/anti-malware-protection-faq-eop.md
             - name: Anti-spam protection FAQ
               href: ./office-365-security/anti-spam-protection-faq.md
+            - name: Quarantine FAQ
+              href: ./office-365-security/quarantine-faq.md
         - name: Reference
           items: 
             - name: Virus detection in SharePoint Online
