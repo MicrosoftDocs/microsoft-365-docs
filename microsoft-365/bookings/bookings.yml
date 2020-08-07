@@ -48,8 +48,8 @@ landingContent:
             url: create-staff-list.md
           - text: Set employee working hours
             url: employee-hours.md
-          - text: Publish or unpublish your booking page
-            url: publish-booking-page.md
+          - text: Customize and publish your booking page
+            url: customize-booking-page.md
           - text: Create and staff your bookings
             url: create-a-manual-booking.md
 
