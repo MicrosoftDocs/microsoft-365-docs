@@ -234,17 +234,6 @@
                   href: ./mtp/tickets-security-center.md
     - name: Office 365 security
       items: 
-        - name: Get started
-          expanded: true
-          items: 
-            - name: Security roadmap
-              href: ./office-365-security/security-roadmap.md
-            - name: Give users access to the Security center
-              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
-            - name: Permissions in the Security & Compliance Center
-              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
-            - name: Configure your tenant for increased security
-              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
         - name: OldStructure
           items: 
             - name: Protect against threats
@@ -546,15 +535,23 @@
                       href: ./office-365-security/sync-user-certificates-to-office-365-for-s-mime.md
                     - name: Set up virtual certificate collection to validate S/MIME
                       href: ./office-365-security/set-up-virtual-certificate-collection-to-validate-s-mime.md
+        - name: Get started
+          items: 
+            - name: Security roadmap
+              href: ./office-365-security/security-roadmap.md
+            - name: Give users access to the Security center
+              href: ./office-365-security/grant-access-to-the-security-and-compliance-center.md
+            - name: Permissions in the Security & Compliance Center
+              href: ./office-365-security/permissions-in-the-security-and-compliance-center.md
+            - name: Configure your tenant for increased security
+              href: ./office-365-security/tenant-wide-setup-for-increased-security.md
         - name: Overview
-          expanded: true
           items: 
             - name: New Microsoft 365 security center
               href: ./mtp/overview-security-center.md
         - name: Evaluate
         - name: Plan
         - name: Deploy
-          expanded: true
           items: 
             - name: Configure anti-malware policies
               href: ./office-365-security/configure-anti-malware-policies.md
@@ -574,7 +571,6 @@
               href: ./office-365-security/Create-safe-sender-lists-in-office-365.md
         - name: Migrate
         - name: Security administration
-          expanded: true
           items: 
             - name: Use Admin Submission
               href: ./office-365-security/admin-submission.md
@@ -587,7 +583,6 @@
             - name: Manage URLs in the Tenant Allow/Block List
               href: ./office-365-security/tenant-allow-block-list.md
         - name: Security operations
-          expanded: true
           items: 
             - name: Manually submit messages to Microsoft
               href: ./office-365-security/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md
@@ -602,7 +597,6 @@
             - name: Zero-hour auto purge - protection against spam and malware
               href: ./office-365-security/zero-hour-auto-purge.md
         - name: How-to
-          expanded: true
           items: 
             - name: Install and use the Junk Email Reporting add-in
               href: ./office-365-security/junk-email-reporting-add-in-for-microsoft-outlook.md
@@ -611,14 +605,12 @@
             - name: Enable the Report Message add-in
               href: ./office-365-security/enable-the-report-message-add-in.md
         - name: FAQ
-          expanded: true
           items: 
             - name: Anti-malware protection FAQ
               href: ./office-365-security/anti-malware-protection-faq-eop.md
             - name: Anti-spam protection FAQ
               href: ./office-365-security/anti-spam-protection-faq.md
         - name: Reference
-          expanded: true
           items: 
             - name: Virus detection in SharePoint Online
               href: ./office-365-security/virus-detection-in-spo.md
@@ -638,8 +630,8 @@
               href: ./office-365-security/how-policies-and-protections-are-combined.md
             - name: Safety tips in email messages
               href: ./office-365-security/safety-tips-in-office-365.md
-        - name: What's the difference between junk email and bulk email?
-          href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: What's the difference between junk email and bulk email?
+              href: ./office-365-security/what-s-the-difference-between-junk-email-and-bulk-email.md
         - name: Employee training resources
     - name: Microsoft 365 for Enterprise
       href: https://docs.microsoft.com/microsoft-365/enterprise
