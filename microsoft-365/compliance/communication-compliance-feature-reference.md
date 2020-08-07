@@ -222,14 +222,14 @@ For users with a communication compliance match, you can choose one of the follo
 
 ## Notice templates
 
-You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the employee email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
+You can create notice templates if you want to send users an email reminder notice for policy matches as part of the issue resolution process. Notices can only be sent to the user email address associated with the policy match that generated the specific alert for remediation. When selecting a notice template to apply to a policy violation as part of the remediation workflow, you can choose to accept the field values defined in the template or overwrite the fields as needed.
 
 Notices templates are custom email templates where you can define the following message fields in the **Communication compliance settings** area:
 
 |**Field**|**Required**| **Details** |
 |:-----|:-----|:-----|
 |**Template name** | Yes | Friendly name for the notice template that you'll select in the notify workflow during remediation, supports text characters. |
-| **Sender address** | Yes | The address of one or more users or groups that send the message to the employee with a policy match, selected from the Active Directory for your subscription. |
+| **Sender address** | Yes | The address of one or more users or groups that send the message to the user with a policy match, selected from the Active Directory for your subscription. |
 | **CC and BCC addresses** | No | Optional users or groups to be notified of the policy match, selected from the Active Directory for your subscription. |
 | **Subject** | Yes | Information that appears in the subject line of the message, supports text characters. |
 | **Message body** | Yes | Information that appears in the message body, supports text or HTML values. |
@@ -322,7 +322,7 @@ The **Reports** dashboard contains the following report widgets:
 
 ## Audit
 
-In some instances, you must provide information to regulatory or compliance auditors to prove supervision of employee activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
+In some instances, you must provide information to regulatory or compliance auditors to prove supervision of user activities and communications. This information may be a summary of all activities associated with a defined organizational policy or anytime a communication compliance policy changes. Communication compliance policies have built-in audit trails for complete readiness for internal or external audits. Detailed audit histories of every create, edit, and delete action are captured by your communication policies to provide proof of supervisory procedures.
 
 >[!Important]
 >Auditing must be enabled for your organization before communication compliance events will be recorded. To enable auditing, see [Enable the audit log](communication-compliance-configure.md#step-2-required-enable-the-audit-log).

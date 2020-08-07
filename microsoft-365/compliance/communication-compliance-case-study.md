@@ -162,9 +162,9 @@ Contoso IT administrators make sure they review the information in the [Overview
 
 ### Setting up a group for in-scope users
 
-Contoso compliance specialists want to add all employee to the communication policy that will monitor for offensive language. They could decide to add each employee user account to the policy separately, but they've decided it is much easier and saves time to use an **All Employees** distribution group for the users for this policy.
+Contoso compliance specialists want to add all users to the communication policy that will monitor for offensive language. They could decide to add each user account to the policy separately, but they've decided it is much easier and saves time to use an **All Users** distribution group for the users for this policy.
 
-They need to create a new group to include all Contoso employees, so they take the following steps:
+They need to create a new group to include all Contoso users, so they take the following steps:
 
 1. Contoso IT administrators IT sign in to the **Microsoft 365 admin center** [(https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center** > **Groups** > **Groups**.
 2. They select **Add a group** and complete the wizard to create a new *Microsoft 365 group* or *Distribution group*.

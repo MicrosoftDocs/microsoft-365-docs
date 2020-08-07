@@ -1,6 +1,6 @@
 ---
 title: "Get started with communication compliance"
-description: "Set up communication compliance policies to configure employee communications for review."
+description: "Set up communication compliance policies to configure user communications for review."
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -22,7 +22,7 @@ search.appverid:
 
 # Get started with communication compliance
 
-Use communication compliance policies to capture employee communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
+Use communication compliance policies to identify user communications for examination by internal or external reviewers. For more information about how communication compliance policies can help you monitor communications in your organization, see [communication compliance policies in Microsoft 365](communication-compliance.md). If you'd like to review how Contoso quickly configured a communication compliance policy to monitor for offensive language in Microsoft Teams, Exchange Online, and Yammer communications, check out this [case study](communication-compliance-case-study.md).
 
 ## Before you begin
 
@@ -199,7 +199,7 @@ For more information about configuring Yammer in Native Mode, see:
 
 ## Step 6 (optional): Create notice templates and configure user anonymization
 
-If you want to have the option of responding to a policy alert by sending a reminder notice to the associated employee, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
+If you want to have the option of responding to a policy alert by sending a reminder notice to the associated user, you'll need to create at least one notice template in your organization. The notice template fields are editable before they're sent as part of the alert remediation process, and creating a customized notice template for each communication compliance policy is recommended.
 
 You can also choose to enable anonymization for displayed usernames when investigating policy matches and taking action on messages.
 
